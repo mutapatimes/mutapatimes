@@ -279,7 +279,8 @@ body {
 
 a {
   color: #3a362b;
-  text-decoration: none;
+  text-decoration: bold;
+  font-weight: bold;
 }
 
 .paper {
@@ -336,7 +337,7 @@ a {
 
 .title {
   text-align: center;
-  font-size: 4em;
+  font-size: 3.6em;
   text-align: center;
   font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
@@ -487,7 +488,7 @@ svg {
 }
 .image {
   display: block;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   border: solid 2px black;
   background-size: cover;
@@ -576,7 +577,7 @@ a:hover {
 
 @media (max-width: 600px) {
   body {
-    font-size: 10px;
+  
     font-family: "Noto Serif", serif;
   }
 
@@ -728,7 +729,7 @@ padding:3px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.8em;
+
   transition: all 0.3s;
   text-align: center;
   color: var(--dark-color)
