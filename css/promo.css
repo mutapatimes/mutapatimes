@@ -273,7 +273,7 @@ body {
 
 	background-color: rgb(235, 234, 231);
   background-image: url("https://c.pxhere.com/images/0c/2f/fae05cc5fff7d36ba1aa6690b0fc-1430893.jpg");
-  font-family: "Noto Serif", serif;
+  font-family: "Helvetica Neue";
   cursor: url('cursor.cur'), auto;
 }
 
@@ -457,6 +457,7 @@ a {
 
 .storyTitle3 {
   font-size: 24px;
+
 }
 
 .weatherTitle {
@@ -466,13 +467,14 @@ a {
 .story {
   padding: 0 5%;
   font-size: 17px;
-  font-family: "Helvetica Neue"
+  font-family: "Helvetica Neue";
 }
 .storyfooter {
   padding: 0 5%;
   font-size: 17px;
   text-align: justify;
   text-justify: inter-word;
+  font-family: "Helvetica Neue";
 }
 .by {
   font-size: 11px;
@@ -579,7 +581,7 @@ a:hover {
 @media (max-width: 600px) {
   body {
   
-    font-family: "Noto Serif", serif;
+    font-family: "Helvetica Neue";
   }
 
   .aboutTitle {
