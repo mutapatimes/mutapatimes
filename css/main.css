@@ -501,7 +501,7 @@ svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 0.85;
 
   filter: sepia(70%);
   filter: grayscale(50%);
@@ -952,4 +952,7 @@ h4{
     margin-right:0;
     font-weight:600
   }
+}
+#google_translate_element img{
+  display: none;
 }
