@@ -367,16 +367,16 @@ a {
 }
 .vol {
   position: absolute;
-  left: 5%;
+  right: 2.5%;
 }
 .day {
   position: absolute;
-  left: 5%;
+  left: 2.5%;
 }
 
 .date {
   position: absolute;
-  left: 5%;
+  left: 2.5%;
 }
 .category{
   text-align: center;
@@ -384,9 +384,14 @@ a {
 
 .price {
   position: absolute;
-  right: 5%;
+  right: 2.5%;
   top: 0;
 
+}
+
+.goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {
+    color: #00897b;
+ 
 }
 @-webkit-keyframes blinker {
   from {opacity: 1.0;}

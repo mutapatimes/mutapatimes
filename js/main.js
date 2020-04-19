@@ -13,6 +13,8 @@ $(document).ready(function() {
     let milisec = date.getTime() - startDate.getTime();
     let volNum = Math.round(milisec / (1000 * 60 * 60 * 24));
     let currDate = date.toDateString();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
     var d = new Date();
     var n = d.toISOString();
     var z = n.split("T")[0];
@@ -49,8 +51,8 @@ $(document).ready(function() {
     }
   
     function insertData() {
-      $(".date").append(currDate);
-      $(".vol").append("Issue Number " + volNum);
+      $(".date").append(date.toLocaleDateString("en-US", options));
+      $(".vol").append("Issue # " + volNum + " | Page 4");
       for (let i = 1; i < newsArr[0].articles.length; i++) {
         index = i - 1;
         let news = newsArr[0].articles[index];
@@ -72,14 +74,14 @@ $(document).ready(function() {
     function printData(news) {
       $(".storyTitle" + count).append(news.title);
       $(".story" + count).append(news.description);
-      $(".by" + count).append("By: " + news.source.name);
+      $(".by" + count).append("Source: " + news.source.name);
       $(".a" + count).attr("href", news.url);
       count++;
     }
     function printDatatest(news) {
         $(".storyTitletest" + count).append(news.title);
         $(".storytest" + count).append(news.description);
-        $(".bytest" + count).append("By: " + news.source.name);
+        $(".bytest" + count).append("Source: " + news.source.name);
         $(".atest" + count).attr("href", news.url);
         count++;
       }
