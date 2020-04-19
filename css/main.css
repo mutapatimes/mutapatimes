@@ -374,6 +374,9 @@ a {
   left: 2.5%;
 }
 
+.goog-te-gadget-icon{
+  display: none;
+}
 .date {
   position: absolute;
   left: 2.5%;
