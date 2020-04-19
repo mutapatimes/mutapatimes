@@ -367,11 +367,11 @@ a {
 }
 .vol {
   position: absolute;
-  right: 2.5%;
+  right: 2%;
 }
 .day {
   position: absolute;
-  left: 2.5%;
+  left: 2%;
 }
 
 .goog-te-gadget-icon{
@@ -379,7 +379,7 @@ a {
 }
 .date {
   position: absolute;
-  left: 2.5%;
+  left: 2%;
 }
 .category{
   text-align: center;
@@ -387,7 +387,7 @@ a {
 
 .price {
   position: absolute;
-  right: 2.5%;
+  right: 2%;
   top: 0;
 
 }
