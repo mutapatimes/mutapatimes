@@ -52,7 +52,7 @@ $(document).ready(function() {
   
     function insertData() {
       $(".date").append(date.toLocaleDateString("en-US", options));
-      $(".vol").append("Issue # " + volNum + " | Page 4");
+      $(".vol").append("Issue # " + volNum + " | Page 1");
       for (let i = 1; i < newsArr[0].articles.length; i++) {
         index = i - 1;
         let news = newsArr[0].articles[index];
