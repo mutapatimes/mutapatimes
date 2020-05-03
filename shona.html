@@ -41,6 +41,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
   </head>
   
   <body>
@@ -48,7 +50,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-   <div class="paper">
+   <div class="paper" id="item90">
       <div class="aboutTitle">
           <div class="" id="google_translate_element"><div ></div> </div>
           <div class=""><a href="https://uk.gofundme.com/f/covid-zimbabwe"></a>&nbsp;</a></div>
@@ -173,21 +175,21 @@
     <div class="item" id="item1">
       <a class="a1" href="" target="_blank">
         <h4 class="storyTitle1"></h4>
-        <p class="by by1 notranslate"></p><img class="image image1" src="">
+        
         <p class="story story1"></p>
       </a>
     </div>
     <div class="item" id="item2">
       <a class="a2" href="" target="_blank">
         <h4 class="storyTitle storyTitle2"></h4>
-        <p class="by by2 notranslate"></p><img class="image image2" src="">
+     
         <p class="story story2"></p>
       </a>
     </div>
     <div class="item" id="item3">
       <a class=" a3" href="" target="_blank">
         <h4 class="storyTitle storyTitle3"></h4>
-        <p class="by by3 notranslate"></p><img class="image image3" src="">
+       
         <p class="story story3"></p>
       </a>
     </div>
@@ -211,6 +213,14 @@
         <p class="by by6 notranslate"></p>
         <p class="story story6"></p>
       </a>
+  
+    </div>
+        <img src="images/test.jpg" />  <!--here is the picture-->
+      <input id="btn-Preview-Image" type="button" value="Preview" />
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <br />
+    <h3>Preview :</h3>
+    <div id="previewImage">
     </div>
     <div class="item" id="item7">
       <a class="a7" href="" target="_blank">
@@ -261,13 +271,13 @@
 
 <!-- GTranslate: https://gtranslate.io/ -->
 <style type="text/css">
-<!--
+
 #goog-gt-tt {display:none !important;}
 .goog-te-banner-frame {display:none !important;}
 .goog-te-menu-value:hover {text-decoration:none !important;}
 .goog-te-gadget-icon {background-image:url(//gtranslate.net/flags/gt_logo_19x19.gif) !important;background-position:0 0 !important;}
 body {top:0 !important;}
--->
+
 </style>
 <div id="google_translate_element"></div>
 <script type="text/javascript">
@@ -340,6 +350,32 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
 
   gtag('config', 'UA-163383690-1');
 </script>
+<script>
+$(document).ready(function(){
+
+
+var element = $("#item6"); // global variable
+var getCanvas; // global variable
+
+    $("#btn-Preview-Image").on('click', function () {
+         html2canvas(element, {
+         onrendered: function (canvas) {
+                $("#previewImage").append(canvas);
+                getCanvas = canvas;
+             }
+         });
+    });
+
+  $("#btn-Convert-Html2Image").on('click', function () {
+    var imgageData = getCanvas.toDataURL("image/png");
+    // Now browser starts downloading it instead of just showing it
+    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+    $("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+  });
+
+});
+
+    </script>
 
 </body>
 

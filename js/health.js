@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiKey = "1c1d44f6ac4d40c0813076818071a1a2";
+    const apiKey = "c6d01d8f0e094baeaf21a3966cfecdb6";
     const apiUrl = "https://newsapi.org/v2/everything?q=zimbabwe%20covid&from=";
     let newsArr = [];
     let count = 1;
@@ -21,6 +21,7 @@ $(document).ready(function() {
     var yesb = yesd.setDate(yesd.getDate() - 1);
     console.log(yesb);
     console.log(z);
+    var full = apiUrl + test1+"&to="+z+"&"+"apiKey=" + apiKey;
     
     const today = new Date()
     const yesterday = new Date(today)
@@ -48,24 +49,15 @@ $(document).ready(function() {
         }
       });
     }
+    console.log(full);
   
     function insertData() {
       $(".date").append(date.toLocaleDateString("en-US", options));
-      $(".vol").append("Issue # " + volNum + " | Page 4");
+      $(".vol").append("Edition # " + volNum + " | Page 4");
       for (let i = 1; i < newsArr[0].articles.length; i++) {
         index = i - 1;
         let news = newsArr[0].articles[index];
-        if (news.description && news.source.id != "fox-news") {
-          if (count < 4 && news.urlToImage) {
-            $(".image" + count).attr("src", news.urlToImage);
-            printData(news);
-          } else if (count >= 4) {
-            printData(news);
-          }
-          if (count === 8) {
-            return true;
-          }
-        }
+        
       }
     }
   
