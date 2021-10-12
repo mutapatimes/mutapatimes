@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  const apiKey = "1c1d44f6ac4d40c0813076818071a1a2";
-  const apiUrl = "https://newsapi.org/v2/everything?q=zimbabwe%20business&from=";
+  const apiKey = "pub_173261c41e8bf5f13903030807c00d2b6d86";
+  const apiUrl = "https://newsdata.io/api/1/news?apikey=";
+  const apiUrl2 = "&q=zimbabwe&language=en";
   let newsArr = [];
   let count = 1;
   let index;
@@ -41,7 +42,7 @@ $(document).ready(function() {
   function getData() {
     $.ajax({
       type: "GET",
-      url: apiUrl + test1+"&to="+z+"&"+"apiKey=" + apiKey,
+      url: apiUrl + apiKey + apiUrl2,
       datatype: "jsonp",
       success: function(data) {
         newsArr.push(data);
@@ -53,12 +54,12 @@ $(document).ready(function() {
     function insertData() {
       $(".date").append(date.toLocaleDateString("en-US", options));
       $(".vol").append("Edition # " + volNum + " | Page 2");
-      for (let i = 1; i < newsArr[0].articles.length; i++) {
+      for (let i = 1; i < newsArr[0].results.length; i++) {
         index = i - 1;
-        let news = newsArr[0].articles[index];
-        if (news.description && news.source.id != "fox-news") {
+        let news = newsArr[0].results[index];
+        if (news.description && news.source_id != "fox-news") {
           if (count < 4 && news.urlToImage) {
-            $(".image" + count).attr("src", news.urlToImage);
+            $(".image" + count).attr("src", news.image_url);
             printData(news);
           } else if (count >= 4) {
             printData(news);
@@ -73,8 +74,8 @@ $(document).ready(function() {
     function printData(news) {
       $(".storyTitle" + count).append(news.title);
       $(".story" + count).append(news.description);
-      $(".by" + count).append("Source: " + news.source.name);
-      $(".a" + count).attr("href", news.url);
+      $(".by" + count).append("Source: " + news.source_id);
+      $(".a" + count).attr("href", news.link);
       count++;
     }
   
