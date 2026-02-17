@@ -1,13 +1,15 @@
 /*
  * The Mutapa Times - Configuration
- * Uses Google News RSS feeds via rss2json.com - no API key needed!
+ * Main stories: GNews API via static JSON (fetched hourly by GitHub Action)
+ * Extra stories: Google News RSS via rss2json.com (client-side, no key needed)
  */
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000, // 30 minutes
-  RSS_API: "https://api.rss2json.com/v1/api.json?rss_url="
+  RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
+  DATA_PATH: "data/"
 };
 
-// Google News RSS feed URLs for each category
+// Google News RSS feed URLs for extra stories
 var NEWS_FEEDS = {
   home: "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
   business: "https://news.google.com/rss/search?q=Zimbabwe+business+economy&hl=en&gl=US&ceid=US:en",
@@ -93,45 +95,6 @@ function displayCityWeather(cityId, weather) {
   }
 }
 
-// Shared news fetching function using Google News RSS via rss2json
-function fetchNews(feedKey, cacheKey, pageNum, insertDataFn) {
-  var date = new Date();
-  var startDate = new Date("2020-04-18");
-  var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
-  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
-  $(".date").text(date.toLocaleDateString("en-US", options));
-  $(".vol").text("Edition # " + volNum + " | Page " + pageNum);
-
-  fetchWeather();
-
-  var cached = getCache(cacheKey);
-  if (cached) {
-    insertDataFn(cached);
-    return;
-  }
-
-  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
-
-  $.ajax({
-    type: "GET",
-    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
-    success: function (data) {
-      if (data && data.status === "ok") {
-        setCache(cacheKey, data);
-        insertDataFn(data);
-      } else {
-        $(".storyTitle1").text("Unable to load news");
-        $(".story1").text("Please try again later.");
-      }
-    },
-    error: function () {
-      $(".storyTitle1").text("Unable to load news");
-      $(".story1").text("Please try again later.");
-    }
-  });
-}
-
 // Extract source name from Google News title format "Headline - Source Name"
 function extractSource(title) {
   var lastDash = title.lastIndexOf(" - ");
@@ -151,7 +114,7 @@ function stripHtml(html) {
   return tmp.textContent || tmp.innerText || "";
 }
 
-// Simple hash to generate a deterministic seed from a string
+// Simple hash for deterministic placeholder images
 function hashCode(str) {
   var hash = 0;
   for (var i = 0; i < str.length; i++) {
@@ -161,8 +124,144 @@ function hashCode(str) {
   return Math.abs(hash);
 }
 
-// Standard article renderer used by all pages
-function renderArticles(data) {
+// ============================================================
+// Main entry point - called by each page's JS
+// ============================================================
+function fetchNews(feedKey, cacheKey, pageNum) {
+  var date = new Date();
+  var startDate = new Date("2020-04-18");
+  var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+  $(".date").text(date.toLocaleDateString("en-US", options));
+  $(".vol").text("Edition # " + volNum + " | Page " + pageNum);
+
+  fetchWeather();
+
+  // Load GNews static data for main grid (with images)
+  loadGnewsData(feedKey);
+
+  // Load Google News RSS for extra stories below
+  loadExtraStories(feedKey);
+}
+
+// ============================================================
+// GNews static JSON (main grid with images)
+// ============================================================
+function loadGnewsData(feedKey) {
+  var cacheKey = "gnews_" + feedKey;
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderGnewsArticles(cached);
+    return;
+  }
+
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.DATA_PATH + feedKey + ".json",
+    dataType: "json",
+    success: function (data) {
+      if (data && data.articles && data.articles.length > 0) {
+        setCache(cacheKey, data);
+        renderGnewsArticles(data);
+      } else {
+        loadRssFallback(feedKey);
+      }
+    },
+    error: function () {
+      loadRssFallback(feedKey);
+    }
+  });
+}
+
+// Fallback: if GNews data isn't available yet, use RSS for main grid
+function loadRssFallback(feedKey) {
+  var cacheKey = "rss_main_" + feedKey;
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderRssArticles(cached);
+    return;
+  }
+
+  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+    success: function (data) {
+      if (data && data.status === "ok") {
+        setCache(cacheKey, data);
+        renderRssArticles(data);
+      } else {
+        $(".storyTitle1").text("Unable to load news");
+        $(".story1").text("Please try again later.");
+      }
+    },
+    error: function () {
+      $(".storyTitle1").text("Unable to load news");
+      $(".story1").text("Please try again later.");
+    }
+  });
+}
+
+// ============================================================
+// Google News RSS (extra stories section)
+// ============================================================
+function loadExtraStories(feedKey) {
+  var cacheKey = "rss_extra_" + feedKey;
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderExtraStories(cached);
+    return;
+  }
+
+  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+    success: function (data) {
+      if (data && data.status === "ok") {
+        setCache(cacheKey, data);
+        renderExtraStories(data);
+      }
+    }
+  });
+}
+
+// ============================================================
+// Renderers
+// ============================================================
+
+// Render GNews articles into the main newspaper grid (with images)
+function renderGnewsArticles(data) {
+  if (!data.articles || data.articles.length === 0) {
+    $(".storyTitle1").text("No articles found at this time");
+    return;
+  }
+
+  var count = 1;
+  for (var i = 0; i < data.articles.length && count <= 7; i++) {
+    var article = data.articles[i];
+    var headline = article.title || "";
+    var desc = article.description || article.content || "";
+    var image = article.image || "";
+    var source = article.source ? article.source.name : "";
+    var url = article.url || "";
+
+    if (headline) {
+      if (count < 4 && image) {
+        $(".image" + count).attr("src", image);
+      }
+      $(".storyTitle" + count).text(headline);
+      $(".story" + count).text(desc);
+      $(".by" + count).text(source ? "Source: " + source : "");
+      $(".a" + count).attr("href", url);
+      count++;
+    }
+  }
+}
+
+// Render RSS articles into the main grid (fallback when GNews data unavailable)
+function renderRssArticles(data) {
   var count = 1;
   if (!data.items || data.items.length === 0) {
     $(".storyTitle1").text("No articles found at this time");
@@ -172,7 +271,6 @@ function renderArticles(data) {
     var item = data.items[i];
     var parsed = extractSource(item.title || "");
     var desc = stripHtml(item.description || item.content || "");
-    // Clean up Google News description format
     if (desc.length < 10) {
       desc = "Click to read the full article.";
     }
@@ -183,7 +281,6 @@ function renderArticles(data) {
         if (image) {
           $(".image" + count).attr("src", image);
         } else {
-          // Use picsum.photos with a title-based seed for a deterministic placeholder
           var seed = "mutapa-" + hashCode(parsed.headline);
           $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/400/300");
         }
@@ -194,5 +291,49 @@ function renderArticles(data) {
       $(".a" + count).attr("href", item.link);
       count++;
     }
+  }
+}
+
+// Render extra stories from RSS below the main grid
+function renderExtraStories(data) {
+  var container = $("#extra-stories-list");
+  if (!container.length || !data.items || data.items.length === 0) return;
+
+  // Collect main grid headlines for deduplication
+  var mainHeadlines = [];
+  for (var j = 1; j <= 7; j++) {
+    var h = $(".storyTitle" + j).text().toLowerCase().trim();
+    if (h && h.length > 5) mainHeadlines.push(h.substring(0, 40));
+  }
+
+  var count = 0;
+  for (var i = 0; i < data.items.length && count < 15; i++) {
+    var item = data.items[i];
+    var parsed = extractSource(item.title || "");
+    if (!parsed.headline) continue;
+
+    // Skip if headline overlaps with a main grid article
+    var lower = parsed.headline.toLowerCase().trim();
+    var isDupe = false;
+    for (var k = 0; k < mainHeadlines.length; k++) {
+      if (lower.indexOf(mainHeadlines[k]) !== -1 || mainHeadlines[k].indexOf(lower.substring(0, 40)) !== -1) {
+        isDupe = true;
+        break;
+      }
+    }
+    if (isDupe) continue;
+
+    var div = $('<div class="extra-story-item">');
+    var link = $('<a>').attr('href', item.link || '#').attr('target', '_blank');
+    var title = $('<h5 class="extra-story-title">').text(parsed.headline);
+    var source = $('<p class="extra-story-source">').text(parsed.source ? 'Source: ' + parsed.source : '');
+    link.append(title).append(source);
+    div.append(link);
+    container.append(div);
+    count++;
+  }
+
+  if (count > 0) {
+    $("#extra-stories").show();
   }
 }

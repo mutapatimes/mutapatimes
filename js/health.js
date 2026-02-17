@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  fetchNews("health", "health", 4, renderArticles);
+  fetchNews("health", "health", 4);
 });
