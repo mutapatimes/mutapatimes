@@ -288,14 +288,12 @@ a {
 
 .paper {
   position: relative;
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
   color: var(--text);
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 0 10px;
   background: #faf9f7;
-  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12);
 }
 
 .titleDiv {
@@ -495,13 +493,13 @@ svg {
 }
 .image {
   display: block;
-  width: 100%;
-  max-height: 280px;
+  width: 90%;
+  max-height: 300px;
   object-fit: cover;
   margin: 8px auto;
   border: none;
-  opacity: 0.92;
-  filter: grayscale(15%);
+  opacity: 0.95;
+  filter: grayscale(10%);
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
@@ -511,13 +509,13 @@ svg {
 }
 
 .image1 {
-  max-height: 220px;
-  width: 60%;
+  max-height: 320px;
+  width: 50%;
 }
 
 .image3 {
   margin-top: 8px;
-  max-height: 200px;
+  max-height: 220px;
 }
 
 a:hover {
@@ -586,7 +584,7 @@ a:hover {
 
 @media (max-width: 850px) {
   .paper {
-    width: 95%;
+    width: 100%;
   }
 
   .aboutTitle {
@@ -838,27 +836,28 @@ nav p:last-child {
   border-right: none;
 }
 .site-footer {
-  padding: 30px 0 15px;
-  border-top: 1px dashed var(--border);
+  padding: 0;
   margin-top: 10px;
+  border-top: 2px solid var(--dark-color);
+  background: var(--dark-color);
+  color: #b0b0b0;
 }
 .site-footer hr {
-  border-top-color: var(--border);
-  opacity: 0.5;
-}
-.site-footer hr.small {
-  margin: 20px 0;
+  border-top-color: rgba(255,255,255,0.1);
+  margin: 15px 0;
 }
 h4 {
   color: var(--dark-color);
   font-weight: 700;
 }
-.site-footer h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-top: 5px;
-  letter-spacing: 2px;
-  color: var(--accent);
+.site-footer .storyTitleCat {
+  color: #fff;
+  font-size: 0.7em;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+.site-footer a {
+  color: #b0b0b0;
 }
 .site-footer a:hover {
   color: var(--accent);
@@ -866,22 +865,31 @@ h4 {
 }
 .footer-links {
   text-align: center !important;
-  padding: 0 5%;
+  padding: 0;
   font-size: 0.85em;
+  list-style: none;
 }
 .footer-links li {
   display: block;
   text-align: center !important;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 .footer-links a {
-  color: var(--text);
+  color: #b0b0b0;
 }
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
   color: var(--accent);
   text-decoration: none;
+}
+.storyfooter {
+  padding: 0 5%;
+  font-size: 0.85em;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #b0b0b0;
 }
 .footer-links.inline li
 {
@@ -903,8 +911,11 @@ h4 {
 }
 .copyright-text {
   margin: 0;
-  font-size: 0.8em;
-  color: var(--text-light);
+  font-size: 0.75em;
+  color: #888;
+}
+.copyright-text a {
+  color: #999;
 }
 @media (max-width:991px)
 {
@@ -1003,34 +1014,39 @@ h4 {
 .weather-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-  padding: 8px 0;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 12px 5px;
 }
 
 .weather-city {
   text-align: center;
-  padding: 6px;
-  min-width: 80px;
+  padding: 10px 8px;
+  min-width: 90px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: rgba(0,0,0,0.02);
 }
 
 .weather-city strong {
   display: block;
-  font-size: 11px;
-  letter-spacing: 0.05em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   color: var(--accent);
+  font-weight: 700;
 }
 
 .weather-temp {
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: 700;
   color: var(--dark-color);
+  margin-bottom: 2px;
 }
 
 .weather-desc {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-light);
 }
 
@@ -1070,4 +1086,46 @@ h4 {
   letter-spacing: 0.05em;
   color: var(--accent);
   margin: 0;
+}
+
+/* Cookie consent banner */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark-color);
+  color: #ccc;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10000;
+  font-size: 0.8em;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+.cookie-consent p {
+  margin: 0;
+  flex: 1;
+  max-width: 700px;
+}
+.cookie-consent a {
+  color: var(--accent);
+}
+.cookie-consent-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+.cookie-consent-btn:hover {
+  background: #00a18a;
 }

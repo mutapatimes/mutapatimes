@@ -11,7 +11,7 @@ var MUTAPA_CONFIG = {
 
 // Google News RSS feed URLs for extra stories
 var NEWS_FEEDS = {
-  home: "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
+  home: "https://news.google.com/rss/search?q=Zimbabwe+business+economy&hl=en&gl=US&ceid=US:en",
   business: "https://news.google.com/rss/search?q=Zimbabwe+business+economy&hl=en&gl=US&ceid=US:en",
   politics: "https://news.google.com/rss/search?q=Zimbabwe+politics+government&hl=en&gl=US&ceid=US:en",
   health: "https://news.google.com/rss/search?q=Zimbabwe+health&hl=en&gl=US&ceid=US:en",
@@ -244,14 +244,26 @@ function renderGnewsArticles(data) {
   for (var i = 0; i < data.articles.length && count <= 7; i++) {
     var article = data.articles[i];
     var headline = article.title || "";
-    var desc = article.description || article.content || "";
+    // Use full content first, fall back to description
+    var desc = article.content || article.description || "";
     var image = article.image || "";
     var source = article.source ? article.source.name : "";
     var url = article.url || "";
 
     if (headline) {
-      if (count < 4 && image) {
-        $(".image" + count).attr("src", image);
+      if (count < 4) {
+        if (image) {
+          $(".image" + count).attr("src", image);
+          // Add error handler for broken images
+          $(".image" + count).on("error", function() {
+            var seed = "mutapa-" + hashCode(headline);
+            $(this).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
+            $(this).off("error");
+          });
+        } else {
+          var seed = "mutapa-" + hashCode(headline);
+          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
+        }
       }
       $(".storyTitle" + count).text(headline);
       $(".story" + count).text(desc);
@@ -272,7 +284,7 @@ function renderRssArticles(data) {
   for (var i = 0; i < data.items.length && count <= 7; i++) {
     var item = data.items[i];
     var parsed = extractSource(item.title || "");
-    var desc = stripHtml(item.description || item.content || "");
+    var desc = stripHtml(item.content || item.description || "");
     if (desc.length < 10) {
       desc = "Click to read the full article.";
     }
@@ -282,9 +294,14 @@ function renderRssArticles(data) {
       if (count < 4) {
         if (image) {
           $(".image" + count).attr("src", image);
+          $(".image" + count).on("error", function() {
+            var seed = "mutapa-" + hashCode(parsed.headline);
+            $(this).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
+            $(this).off("error");
+          });
         } else {
           var seed = "mutapa-" + hashCode(parsed.headline);
-          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/400/300");
+          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
         }
       }
       $(".storyTitle" + count).text(parsed.headline);

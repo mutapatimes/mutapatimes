@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  fetchNews("home", "home", 1);
+  fetchNews("business", "business", 1);
 });
