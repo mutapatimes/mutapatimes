@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  fetchNews("zimbabwe business economy", "business", 2, renderArticles);
+  fetchNews("business", "business", 2, renderArticles);
 });

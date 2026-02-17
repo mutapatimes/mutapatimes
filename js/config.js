@@ -1,12 +1,18 @@
 /*
  * The Mutapa Times - Configuration
- *
- * SETUP: Get your free API key at https://gnews.io
- * Then replace YOUR_API_KEY_HERE below with your key.
+ * Uses Google News RSS feeds via rss2json.com - no API key needed!
  */
 var MUTAPA_CONFIG = {
-  GNEWS_API_KEY: "65a557d301d31bfc563f971e515eceb5",
-  CACHE_DURATION: 30 * 60 * 1000 // 30 minutes
+  CACHE_DURATION: 30 * 60 * 1000, // 30 minutes
+  RSS_API: "https://api.rss2json.com/v1/api.json?rss_url="
+};
+
+// Google News RSS feed URLs for each category
+var NEWS_FEEDS = {
+  home: "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
+  business: "https://news.google.com/rss/search?q=Zimbabwe+business+economy&hl=en&gl=US&ceid=US:en",
+  politics: "https://news.google.com/rss/search?q=Zimbabwe+politics+government&hl=en&gl=US&ceid=US:en",
+  health: "https://news.google.com/rss/search?q=Zimbabwe+health&hl=en&gl=US&ceid=US:en"
 };
 
 // Zimbabwe cities for weather
@@ -87,19 +93,8 @@ function displayCityWeather(cityId, weather) {
   }
 }
 
-// Show message when API key is not configured
-function showApiKeyMessage() {
-  $(".storyTitle1").text("Welcome to The Mutapa Times");
-  $(".story1").html(
-    'To get started, sign up for a free API key at ' +
-    '<a href="https://gnews.io" target="_blank">gnews.io</a> ' +
-    'and add it to <code>js/config.js</code>'
-  );
-}
-
-// Shared news fetching function
-function fetchNews(searchQuery, cacheKey, pageNum, insertDataFn) {
-  var apiKey = MUTAPA_CONFIG.GNEWS_API_KEY;
+// Shared news fetching function using Google News RSS via rss2json
+function fetchNews(feedKey, cacheKey, pageNum, insertDataFn) {
   var date = new Date();
   var startDate = new Date("2020-04-18");
   var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
@@ -110,49 +105,77 @@ function fetchNews(searchQuery, cacheKey, pageNum, insertDataFn) {
 
   fetchWeather();
 
-  if (apiKey === "YOUR_API_KEY_HERE") {
-    showApiKeyMessage();
-    return;
-  }
-
   var cached = getCache(cacheKey);
   if (cached) {
     insertDataFn(cached);
     return;
   }
 
+  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
+
   $.ajax({
     type: "GET",
-    url: "https://gnews.io/api/v4/search?q=" + encodeURIComponent(searchQuery) +
-      "&lang=en&max=10&apikey=" + apiKey,
+    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
     success: function (data) {
-      setCache(cacheKey, data);
-      insertDataFn(data);
+      if (data && data.status === "ok") {
+        setCache(cacheKey, data);
+        insertDataFn(data);
+      } else {
+        $(".storyTitle1").text("Unable to load news");
+        $(".story1").text("Please try again later.");
+      }
     },
     error: function () {
       $(".storyTitle1").text("Unable to load news");
-      $(".story1").text("Please check your API key or try again later.");
+      $(".story1").text("Please try again later.");
     }
   });
+}
+
+// Extract source name from Google News title format "Headline - Source Name"
+function extractSource(title) {
+  var lastDash = title.lastIndexOf(" - ");
+  if (lastDash > 0 && lastDash > title.length * 0.3) {
+    return {
+      headline: title.substring(0, lastDash),
+      source: title.substring(lastDash + 3)
+    };
+  }
+  return { headline: title, source: "" };
+}
+
+// Strip HTML tags from a string
+function stripHtml(html) {
+  var tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
 }
 
 // Standard article renderer used by all pages
 function renderArticles(data) {
   var count = 1;
-  if (!data.articles || data.articles.length === 0) {
+  if (!data.items || data.items.length === 0) {
     $(".storyTitle1").text("No articles found at this time");
     return;
   }
-  for (var i = 0; i < data.articles.length && count <= 7; i++) {
-    var news = data.articles[i];
-    if (news.description) {
-      if (count < 4 && news.image) {
-        $(".image" + count).attr("src", news.image);
+  for (var i = 0; i < data.items.length && count <= 7; i++) {
+    var item = data.items[i];
+    var parsed = extractSource(item.title || "");
+    var desc = stripHtml(item.description || item.content || "");
+    // Clean up Google News description format
+    if (desc.length < 10) {
+      desc = "Click to read the full article.";
+    }
+    var image = item.thumbnail || (item.enclosure && item.enclosure.link) || "";
+
+    if (parsed.headline) {
+      if (count < 4 && image) {
+        $(".image" + count).attr("src", image);
       }
-      $(".storyTitle" + count).text(news.title);
-      $(".story" + count).text(news.description);
-      $(".by" + count).text("Source: " + news.source.name);
-      $(".a" + count).attr("href", news.url);
+      $(".storyTitle" + count).text(parsed.headline);
+      $(".story" + count).text(desc);
+      $(".by" + count).text(parsed.source ? "Source: " + parsed.source : "");
+      $(".a" + count).attr("href", item.link);
       count++;
     }
   }
