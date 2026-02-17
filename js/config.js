@@ -151,6 +151,16 @@ function stripHtml(html) {
   return tmp.textContent || tmp.innerText || "";
 }
 
+// Simple hash to generate a deterministic seed from a string
+function hashCode(str) {
+  var hash = 0;
+  for (var i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
 // Standard article renderer used by all pages
 function renderArticles(data) {
   var count = 1;
@@ -169,8 +179,14 @@ function renderArticles(data) {
     var image = item.thumbnail || (item.enclosure && item.enclosure.link) || "";
 
     if (parsed.headline) {
-      if (count < 4 && image) {
-        $(".image" + count).attr("src", image);
+      if (count < 4) {
+        if (image) {
+          $(".image" + count).attr("src", image);
+        } else {
+          // Use picsum.photos with a title-based seed for a deterministic placeholder
+          var seed = "mutapa-" + hashCode(parsed.headline);
+          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/400/300");
+        }
       }
       $(".storyTitle" + count).text(parsed.headline);
       $(".story" + count).text(desc);
