@@ -5,7 +5,7 @@
  * Then replace YOUR_API_KEY_HERE below with your key.
  */
 var MUTAPA_CONFIG = {
-  GNEWS_API_KEY: "YOUR_API_KEY_HERE",
+  GNEWS_API_KEY: "65a557d301d31bfc563f971e515eceb5",
   CACHE_DURATION: 30 * 60 * 1000 // 30 minutes
 };
 
