@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  fetchNews("sport", "sport", 6);
+  fetchNews("arts", "arts", 5);
 });

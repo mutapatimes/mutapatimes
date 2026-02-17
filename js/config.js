@@ -14,7 +14,9 @@ var NEWS_FEEDS = {
   home: "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
   business: "https://news.google.com/rss/search?q=Zimbabwe+business+economy&hl=en&gl=US&ceid=US:en",
   politics: "https://news.google.com/rss/search?q=Zimbabwe+politics+government&hl=en&gl=US&ceid=US:en",
-  health: "https://news.google.com/rss/search?q=Zimbabwe+health&hl=en&gl=US&ceid=US:en"
+  health: "https://news.google.com/rss/search?q=Zimbabwe+health&hl=en&gl=US&ceid=US:en",
+  arts: "https://news.google.com/rss/search?q=Zimbabwe+arts+culture+music&hl=en&gl=US&ceid=US:en",
+  sport: "https://news.google.com/rss/search?q=Zimbabwe+sport+cricket+football+rugby&hl=en&gl=US&ceid=US:en"
 };
 
 // Zimbabwe cities for weather
