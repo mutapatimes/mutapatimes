@@ -167,6 +167,36 @@ function loadGnewsData(feedKey) {
         setCache(cacheKey, data);
         renderGnewsArticles(data);
       } else {
+        loadGnewsFallbackHome(feedKey);
+      }
+    },
+    error: function () {
+      loadGnewsFallbackHome(feedKey);
+    }
+  });
+}
+
+// Fallback: try home.json which always has images
+function loadGnewsFallbackHome(feedKey) {
+  if (feedKey === "home") {
+    loadRssFallback(feedKey);
+    return;
+  }
+  var cacheKey = "gnews_home";
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderGnewsArticles(cached);
+    return;
+  }
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.DATA_PATH + "home.json",
+    dataType: "json",
+    success: function (data) {
+      if (data && data.articles && data.articles.length > 0) {
+        setCache(cacheKey, data);
+        renderGnewsArticles(data);
+      } else {
         loadRssFallback(feedKey);
       }
     },
@@ -233,6 +263,32 @@ function loadExtraStories(feedKey) {
 // Renderers
 // ============================================================
 
+// Set image with fallback - handles broken images
+function setImageWithFallback(selector, imageUrl, headline) {
+  var el = $(selector);
+  if (!el.length) return;
+  var fallbackSeed = "mutapa-" + hashCode(headline);
+  var fallbackUrl = "https://picsum.photos/seed/" + fallbackSeed + "/600/400";
+
+  if (imageUrl) {
+    el.attr("src", imageUrl);
+    el.off("error").on("error", function() {
+      $(this).off("error");
+      $(this).attr("src", fallbackUrl);
+    });
+  } else {
+    el.attr("src", fallbackUrl);
+  }
+}
+
+// Get the longest available text from an article
+function getFullText(content, description) {
+  var c = content || "";
+  var d = description || "";
+  // Use whichever is longer
+  return c.length >= d.length ? c : d;
+}
+
 // Render GNews articles into the main newspaper grid (with images)
 function renderGnewsArticles(data) {
   if (!data.articles || data.articles.length === 0) {
@@ -244,26 +300,14 @@ function renderGnewsArticles(data) {
   for (var i = 0; i < data.articles.length && count <= 7; i++) {
     var article = data.articles[i];
     var headline = article.title || "";
-    // Use full content first, fall back to description
-    var desc = article.content || article.description || "";
+    var desc = getFullText(article.content, article.description);
     var image = article.image || "";
     var source = article.source ? article.source.name : "";
     var url = article.url || "";
 
     if (headline) {
       if (count < 4) {
-        if (image) {
-          $(".image" + count).attr("src", image);
-          // Add error handler for broken images
-          $(".image" + count).on("error", function() {
-            var seed = "mutapa-" + hashCode(headline);
-            $(this).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
-            $(this).off("error");
-          });
-        } else {
-          var seed = "mutapa-" + hashCode(headline);
-          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
-        }
+        setImageWithFallback(".image" + count, image, headline);
       }
       $(".storyTitle" + count).text(headline);
       $(".story" + count).text(desc);
@@ -284,7 +328,7 @@ function renderRssArticles(data) {
   for (var i = 0; i < data.items.length && count <= 7; i++) {
     var item = data.items[i];
     var parsed = extractSource(item.title || "");
-    var desc = stripHtml(item.content || item.description || "");
+    var desc = stripHtml(getFullText(item.content, item.description));
     if (desc.length < 10) {
       desc = "Click to read the full article.";
     }
@@ -292,17 +336,7 @@ function renderRssArticles(data) {
 
     if (parsed.headline) {
       if (count < 4) {
-        if (image) {
-          $(".image" + count).attr("src", image);
-          $(".image" + count).on("error", function() {
-            var seed = "mutapa-" + hashCode(parsed.headline);
-            $(this).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
-            $(this).off("error");
-          });
-        } else {
-          var seed = "mutapa-" + hashCode(parsed.headline);
-          $(".image" + count).attr("src", "https://picsum.photos/seed/" + seed + "/600/400");
-        }
+        setImageWithFallback(".image" + count, image, parsed.headline);
       }
       $(".storyTitle" + count).text(parsed.headline);
       $(".story" + count).text(desc);

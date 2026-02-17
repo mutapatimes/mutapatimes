@@ -41,7 +41,7 @@ jobs:
             fi
           }
 
-          fetch_category "home" "Zimbabwe"
+          fetch_category "home" "Zimbabwe+business+economy"
           sleep 2
           fetch_category "business" "Zimbabwe+business+economy"
           sleep 2
