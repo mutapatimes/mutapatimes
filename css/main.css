@@ -618,14 +618,17 @@ a:hover {
   margin: 4px 0;
 }
 
-/* Hamburger menu — hidden on desktop */
+/* Hamburger menu — hidden on desktop, top-right on mobile */
 .hamburger {
   display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
   background: var(--dark-color);
   border: none;
   padding: 10px 14px;
   cursor: pointer;
-  margin: 10px auto 6px;
   border-radius: 0;
   -webkit-tap-highlight-color: transparent;
 }
@@ -651,6 +654,17 @@ a:hover {
 }
 .hamburger.is-active span:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Title links to home */
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.title-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 850px) {
@@ -769,11 +783,16 @@ a:hover {
     display: block;
     padding: 10px 16px;
     text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
   #mainNav a:hover,
   #mainNav a.active {
     background: var(--dark-color);
     color: #fff;
+  }
+  #mainNav a.economy-btn {
+    text-align: left;
   }
 
   /* Fix footer alignment on mobile */

@@ -134,14 +134,17 @@ function getFullText(content, description) {
   return c.length >= d.length ? c : d;
 }
 
-// Reading time estimate — uses truncation marker [xxx chars] if present
+// Reading time estimate — only shown when we have real data
 function getReadingTime(text) {
-  if (!text) return "1 min read";
+  if (!text) return "";
   var totalChars = text.length;
   // GNews truncates content with "[xxx chars]" — use full char count
   var match = text.match(/\[(\d+)\s*chars?\]\s*$/);
   if (match) {
     totalChars = parseInt(match[1], 10);
+  } else if (totalChars < 500) {
+    // Short snippet (RSS) — not enough data to estimate read time
+    return "";
   }
   // Average word length ~5 chars + space = ~6 chars per word
   var words = Math.round(totalChars / 6);
@@ -360,10 +363,23 @@ function normalizeRssArticles(items) {
     var desc = stripHtml(getFullText(item.content, item.description));
     if (desc.length < 10) desc = "";
 
+    // Try to get image from RSS item
+    var image = item.thumbnail || "";
+    if (!image && item.enclosure && item.enclosure.link) {
+      image = item.enclosure.link;
+    }
+    if (!image) {
+      // Try extracting from HTML content/description
+      var html = item.content || item.description || "";
+      var imgMatch = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+      if (imgMatch) image = imgMatch[1];
+    }
+
     result.push({
       title: parsed.headline,
       url: item.link || "",
       description: desc,
+      image: image,
       source: parsed.source,
       publishedAt: item.pubDate || ""
     });
