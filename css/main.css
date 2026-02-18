@@ -482,8 +482,8 @@ a {
 }
 
 .main-article-img {
-  flex: 0 0 280px;
-  max-width: 280px;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .main-article-img img {
@@ -610,8 +610,8 @@ a:hover {
   }
 
   .main-article-img {
-    flex: 0 0 200px;
-    max-width: 200px;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .main-article-img img {
