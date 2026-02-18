@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch news from GNews (US, UK, AU, CA sources)
+      - name: Fetch Zimbabwe news from GNews
         env:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: python3 scripts/fetch_news.py
