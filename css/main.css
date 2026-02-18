@@ -491,15 +491,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent);
+  border-left: 1px solid var(--border);
+  padding: 24px 0;
+}
+
+.rank-left .main-article-rank {
+  border-left: none;
+  border-right: 1px solid var(--border);
 }
 
 .main-article-rank .rank-number {
   font-family: 'Playfair Display', serif;
-  font-size: 5.5em;
-  font-weight: 900;
-  color: #fff;
+  font-size: 6em;
+  font-weight: 700;
+  color: var(--dark-color);
   line-height: 1;
+  opacity: 0.12;
 }
 
 /* Alternating: odd articles (1, 3, 5) rank on right */
@@ -520,13 +527,42 @@ a {
 
 /* First article (rank #1) gets special treatment */
 .main-article.rank-featured .rank-number {
-  font-size: 7em;
+  font-size: 8em;
+  opacity: 0.15;
 }
 .main-article.rank-featured .main-article-title {
   font-size: 1.45em;
 }
 .main-article.rank-featured .main-article-desc {
   font-size: 0.92em;
+}
+
+/* Press type markers */
+.press-marker {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 2px 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+.press-marker.local-press {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.press-marker.foreign-press {
+  color: var(--text-light);
+  border: 1px solid var(--border);
+}
+
+/* Sidebar press markers */
+.sidebar-meta .press-marker {
+  margin-left: 6px;
+  font-size: 7px;
+  padding: 1px 5px;
 }
 
 /* --- Sidebar column (right 1/3) --- */
@@ -717,10 +753,10 @@ a:hover {
   }
 
   .main-article-rank .rank-number {
-    font-size: 4em;
+    font-size: 5em;
   }
   .main-article.rank-featured .rank-number {
-    font-size: 5em;
+    font-size: 6em;
   }
 }
 
@@ -766,11 +802,11 @@ a:hover {
   }
 
   .main-article-rank .rank-number {
-    font-size: 3em !important;
+    font-size: 3.5em !important;
   }
 
   .main-article.rank-featured .rank-number {
-    font-size: 4em !important;
+    font-size: 4.5em !important;
   }
   .main-article.rank-featured .main-article-title {
     font-size: 1.15em;
