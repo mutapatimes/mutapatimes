@@ -403,6 +403,13 @@ function renderMainStories(articles) {
 
     card.append(link);
     container.append(card);
+
+    // Insert placeholder images after articles 3 and 7
+    if (rank === 3 || rank === 7) {
+      var ph = $('<div class="editorial-placeholder placeholder-inline">');
+      ph.append($('<span class="editorial-placeholder-label">').text("The Mutapa Times"));
+      container.append(ph);
+    }
   }
 }
 
