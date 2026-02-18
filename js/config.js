@@ -29,15 +29,29 @@ var WEATHER_CITIES = [
 
 function getWeatherDescription(code) {
   var descriptions = {
-    0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
-    45: "Fog", 48: "Rime fog",
-    51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle",
-    61: "Light rain", 63: "Rain", 65: "Heavy rain",
-    71: "Light snow", 73: "Snow", 75: "Heavy snow",
-    80: "Light showers", 81: "Showers", 82: "Heavy showers",
-    95: "Thunderstorm", 96: "Thunderstorm", 99: "Thunderstorm"
+    0: { text: "Clear sky", emoji: "\u2600\ufe0f" },
+    1: { text: "Mainly clear", emoji: "\ud83c\udf24\ufe0f" },
+    2: { text: "Partly cloudy", emoji: "\u26c5" },
+    3: { text: "Overcast", emoji: "\u2601\ufe0f" },
+    45: { text: "Fog", emoji: "\ud83c\udf2b\ufe0f" },
+    48: { text: "Rime fog", emoji: "\ud83c\udf2b\ufe0f" },
+    51: { text: "Light drizzle", emoji: "\ud83c\udf26\ufe0f" },
+    53: { text: "Drizzle", emoji: "\ud83c\udf27\ufe0f" },
+    55: { text: "Heavy drizzle", emoji: "\ud83c\udf27\ufe0f" },
+    61: { text: "Light rain", emoji: "\ud83c\udf26\ufe0f" },
+    63: { text: "Rain", emoji: "\ud83c\udf27\ufe0f" },
+    65: { text: "Heavy rain", emoji: "\ud83c\udf27\ufe0f" },
+    71: { text: "Light snow", emoji: "\ud83c\udf28\ufe0f" },
+    73: { text: "Snow", emoji: "\u2744\ufe0f" },
+    75: { text: "Heavy snow", emoji: "\u2744\ufe0f" },
+    80: { text: "Light showers", emoji: "\ud83c\udf26\ufe0f" },
+    81: { text: "Showers", emoji: "\ud83c\udf27\ufe0f" },
+    82: { text: "Heavy showers", emoji: "\u26c8\ufe0f" },
+    95: { text: "Thunderstorm", emoji: "\u26a1" },
+    96: { text: "Thunderstorm", emoji: "\u26a1" },
+    99: { text: "Thunderstorm", emoji: "\u26a1" }
   };
-  return descriptions[code] || "Unknown";
+  return descriptions[code] || { text: "Unknown", emoji: "\ud83c\udf21\ufe0f" };
 }
 
 // LocalStorage cache helpers
@@ -87,8 +101,10 @@ function fetchWeather() {
 function displayCityWeather(cityId, weather) {
   var el = $("#weather-" + cityId);
   if (el.length) {
+    var w = getWeatherDescription(weather.weathercode);
+    el.find(".weather-emoji").text(w.emoji);
     el.find(".weather-temp").text(Math.round(weather.temperature) + "\u00B0C");
-    el.find(".weather-desc").text(getWeatherDescription(weather.weathercode));
+    el.find(".weather-desc").text(w.text);
   }
 }
 
@@ -118,10 +134,17 @@ function getFullText(content, description) {
   return c.length >= d.length ? c : d;
 }
 
-// Reading time estimate
+// Reading time estimate — uses truncation marker [xxx chars] if present
 function getReadingTime(text) {
   if (!text) return "1 min read";
-  var words = text.split(/\s+/).length;
+  var totalChars = text.length;
+  // GNews truncates content with "[xxx chars]" — use full char count
+  var match = text.match(/\[(\d+)\s*chars?\]\s*$/);
+  if (match) {
+    totalChars = parseInt(match[1], 10);
+  }
+  // Average word length ~5 chars + space = ~6 chars per word
+  var words = Math.round(totalChars / 6);
   var mins = Math.max(1, Math.ceil(words / 200));
   return mins + " min read";
 }
@@ -159,6 +182,13 @@ function fetchNews(feedKey) {
   $(".date").text(date.toLocaleDateString("en-US", options));
   $(".vol").text("Edition # " + volNum);
   fetchWeather();
+
+  // Duplicate weather cities for infinite ticker scroll
+  var ticker = document.querySelector('.weather-ticker');
+  if (ticker) {
+    var items = ticker.innerHTML;
+    ticker.innerHTML = items + items;
+  }
 
   // Load main stories from GNews JSON
   loadMainStories(feedKey);

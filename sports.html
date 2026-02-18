@@ -59,7 +59,10 @@
     <h4 class="sub notranslate">Zimbabwe outside-in.</h4>
 
 
-  <nav>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="document.getElementById('mainNav').classList.toggle('nav-open');this.classList.toggle('is-active');">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
       <p>
           <a target="_self" class="notranslate" href="index.html">Business</a>
       </p>
@@ -165,34 +168,40 @@
 
   <hr class="dateHr">
 
-  <!-- Weather -->
+  <!-- Weather ticker -->
   <div id="weather" class="weather-section">
-    <h4 class="storyTitleCat">Current Weather</h4>
-    <div class="weather-grid">
-      <div class="weather-city" id="weather-harare">
-        <strong>Harare</strong>
-        <div class="weather-temp">--</div>
-        <div class="weather-desc">Loading...</div>
-      </div>
-      <div class="weather-city" id="weather-bulawayo">
-        <strong>Bulawayo</strong>
-        <div class="weather-temp">--</div>
-        <div class="weather-desc">Loading...</div>
-      </div>
-      <div class="weather-city" id="weather-mutare">
-        <strong>Mutare</strong>
-        <div class="weather-temp">--</div>
-        <div class="weather-desc">Loading...</div>
-      </div>
-      <div class="weather-city" id="weather-vicfalls">
-        <strong class="notranslate">Victoria Falls</strong>
-        <div class="weather-temp">--</div>
-        <div class="weather-desc">Loading...</div>
-      </div>
-      <div class="weather-city" id="weather-gweru">
-        <strong>Gweru</strong>
-        <div class="weather-temp">--</div>
-        <div class="weather-desc">Loading...</div>
+    <div class="weather-ticker-wrap">
+      <div class="weather-ticker">
+        <div class="weather-city" id="weather-harare">
+          <strong>Harare</strong>
+          <div class="weather-emoji"></div>
+          <div class="weather-temp">--</div>
+          <div class="weather-desc">Loading...</div>
+        </div>
+        <div class="weather-city" id="weather-bulawayo">
+          <strong>Bulawayo</strong>
+          <div class="weather-emoji"></div>
+          <div class="weather-temp">--</div>
+          <div class="weather-desc">Loading...</div>
+        </div>
+        <div class="weather-city" id="weather-mutare">
+          <strong>Mutare</strong>
+          <div class="weather-emoji"></div>
+          <div class="weather-temp">--</div>
+          <div class="weather-desc">Loading...</div>
+        </div>
+        <div class="weather-city" id="weather-vicfalls">
+          <strong class="notranslate">Victoria Falls</strong>
+          <div class="weather-emoji"></div>
+          <div class="weather-temp">--</div>
+          <div class="weather-desc">Loading...</div>
+        </div>
+        <div class="weather-city" id="weather-gweru">
+          <strong>Gweru</strong>
+          <div class="weather-emoji"></div>
+          <div class="weather-temp">--</div>
+          <div class="weather-desc">Loading...</div>
+        </div>
       </div>
     </div>
   </div>
@@ -254,7 +263,7 @@
 </style>
 <div id="google_translate_element"></div>
 <script type="text/javascript">
-function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, includedLanguages: 'sn,en,zu'}, 'google_translate_element');}
+function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, includedLanguages: 'sn,en,nd'}, 'google_translate_element');}
 </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
