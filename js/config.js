@@ -177,6 +177,7 @@ function formatDate(dateStr) {
 // Main entry point
 // ============================================================
 function fetchNews(feedKey) {
+  _activeCategory = feedKey;
   var date = new Date();
   var startDate = new Date("2020-04-18");
   var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
@@ -387,6 +388,69 @@ function normalizeRssArticles(items) {
   return result;
 }
 
+// Build a styled placeholder for articles without images
+function buildPlaceholder(label) {
+  var cat = _activeCategory || "business";
+  var colors = CATEGORY_COLORS[cat] || CATEGORY_COLORS.business;
+  var initial = (label || cat).charAt(0).toUpperCase();
+  var catLabel = cat.charAt(0).toUpperCase() + cat.slice(1);
+
+  var ph = $('<div class="placeholder-img">');
+  ph.css({
+    "background": "linear-gradient(135deg, " + colors.bg + " 0%, " + colors.accent + "33 100%)",
+    "display": "flex",
+    "flex-direction": "column",
+    "align-items": "center",
+    "justify-content": "center",
+    "width": "100%",
+    "height": "185px",
+    "position": "relative",
+    "overflow": "hidden"
+  });
+
+  // Large initial letter
+  var letterEl = $('<span>').text(initial).css({
+    "font-family": "'Playfair Display', serif",
+    "font-size": "4em",
+    "font-weight": "700",
+    "color": colors.accent,
+    "opacity": "0.25",
+    "line-height": "1",
+    "position": "absolute",
+    "top": "50%",
+    "left": "50%",
+    "transform": "translate(-50%, -50%)"
+  });
+
+  // Category label
+  var labelEl = $('<span>').text(catLabel).css({
+    "font-size": "10px",
+    "font-weight": "600",
+    "text-transform": "uppercase",
+    "letter-spacing": "0.15em",
+    "color": colors.accent,
+    "opacity": "0.6",
+    "position": "absolute",
+    "bottom": "12px"
+  });
+
+  ph.append(letterEl).append(labelEl);
+  return ph;
+}
+
+// Category placeholder colors for articles without images
+var CATEGORY_COLORS = {
+  business:      { bg: "#1a1a2e", accent: "#00b894" },
+  technology:    { bg: "#0a1628", accent: "#0984e3" },
+  entertainment: { bg: "#2d1b3d", accent: "#e17055" },
+  sports:        { bg: "#1b2d1b", accent: "#00b894" },
+  science:       { bg: "#1b2636", accent: "#74b9ff" },
+  health:        { bg: "#2d1b1b", accent: "#ff7675" }
+};
+
+// Active category for placeholder images
+var _activeCategory = "business";
+
 // ============================================================
 // RENDER: Main stories — text on left, image on right
 // ============================================================
@@ -427,14 +491,21 @@ function renderMainStories(articles) {
 
     link.append(textCol);
 
-    // Image on right
+    // Image on right — real image or styled placeholder
+    var imgCol = $('<div class="main-article-img">');
     if (a.image) {
-      var imgCol = $('<div class="main-article-img">');
       var imgEl = $('<img>').attr('src', a.image);
-      imgEl.on('error', function() { $(this).parent().hide(); });
+      imgEl.on('error', function() {
+        // Replace broken image with placeholder
+        var ph = buildPlaceholder($(this).closest('.main-article').find('.main-article-meta').text());
+        $(this).replaceWith(ph);
+      });
       imgCol.append(imgEl);
-      link.append(imgCol);
+    } else {
+      // Styled placeholder with source initial
+      imgCol.append(buildPlaceholder(a.source || _activeCategory));
     }
+    link.append(imgCol);
 
     card.append(link);
     container.append(card);
