@@ -253,18 +253,68 @@ function loadSidebarStories(feedKey) {
 }
 
 // ============================================================
-// Normalize articles
+// Normalize articles — filter out local Zimbabwean news platforms
 // ============================================================
+
+// Local Zim sources to exclude from main GNews feed
+var LOCAL_ZIM_SOURCES = [
+  "the zimbabwe mail", "zimbabwe situation", "nehanda radio", "bulawayo24",
+  "new zimbabwe", "newzimbabwe", "263chat", "the herald", "herald online",
+  "heraldonline", "chronicle", "newsday", "daily news", "zimmorning post",
+  "zim morning post", "zimbabwe independent", "the standard", "zimlive",
+  "pindula", "techzim", "zbcnews", "zbc news", "zimdiaspora",
+  "kubatana", "the insider", "cite", "cite.org", "myzimbabwe",
+  "zimbo jam", "zimbabwe broadcasting", "radio dialogue",
+  "zimfieldguide", "iharare", "hmetro", "h-metro", "b-metro",
+  "manica post", "southern eye", "zimpapers", "zimbabwe today",
+  "the patriot", "kwayedza", "umthunywa", "zimmorningpost"
+];
+
+function isLocalZimSource(source, url) {
+  if (!source && !url) return false;
+  var s = (source || "").toLowerCase();
+  var u = (url || "").toLowerCase();
+  for (var i = 0; i < LOCAL_ZIM_SOURCES.length; i++) {
+    if (s.indexOf(LOCAL_ZIM_SOURCES[i]) !== -1) return true;
+  }
+  // Also check URL domains
+  if (u.indexOf("zimbabwemail.com") !== -1 ||
+      u.indexOf("zimbabwesituation.com") !== -1 ||
+      u.indexOf("nehandaradio.com") !== -1 ||
+      u.indexOf("bulawayo24.com") !== -1 ||
+      u.indexOf("newzimbabwe.com") !== -1 ||
+      u.indexOf("263chat.com") !== -1 ||
+      u.indexOf("heraldonline.co.zw") !== -1 ||
+      u.indexOf("herald.co.zw") !== -1 ||
+      u.indexOf("chronicle.co.zw") !== -1 ||
+      u.indexOf("newsday.co.zw") !== -1 ||
+      u.indexOf("zimlive.com") !== -1 ||
+      u.indexOf("pindula.co.zw") !== -1 ||
+      u.indexOf("techzim.co.zw") !== -1 ||
+      u.indexOf("cite.org.zw") !== -1 ||
+      u.indexOf("iharare.com") !== -1 ||
+      u.indexOf("zimmorningpost.com") !== -1) {
+    return true;
+  }
+  return false;
+}
+
 function normalizeJsonArticles(articles) {
   var result = [];
   for (var i = 0; i < articles.length; i++) {
     var a = articles[i];
+    var source = (a.source && a.source.name) ? a.source.name : (a.source_name || "");
+    var url = a.url || a.link || "";
+
+    // Skip local Zimbabwean news sources
+    if (isLocalZimSource(source, url)) continue;
+
     result.push({
       title: a.title || "",
-      url: a.url || a.link || "",
+      url: url,
       description: getFullText(a.content, a.description),
       image: a.image || a.image_url || "",
-      source: (a.source && a.source.name) ? a.source.name : (a.source_name || ""),
+      source: source,
       publishedAt: a.publishedAt || a.pubDate || ""
     });
   }
