@@ -1,6 +1,6 @@
 /*
  * The Mutapa Times - Configuration
- * Primary: Static JSON from NewsData.io (fetched by GitHub Action)
+ * Primary: Static JSON from GNews/NewsData.io (fetched by GitHub Action)
  * Fallback: Google News RSS via rss2json.com (client-side, no key needed)
  */
 var MUTAPA_CONFIG = {
@@ -106,18 +106,16 @@ function stripHtml(html) {
   return tmp.textContent || tmp.innerText || "";
 }
 
-function hashCode(str) {
-  var hash = 0;
-  for (var i = 0; i < str.length; i++) {
-    hash = ((hash << 5) - hash) + str.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash);
+// Clean up GNews truncation markers like "... [2105 chars]"
+function cleanText(text) {
+  if (!text) return "";
+  return text.replace(/\s*\[\d+ chars\]\s*$/, '').trim();
 }
 
+// Get the longest available text, cleaned up
 function getFullText(content, description) {
-  var c = content || "";
-  var d = description || "";
+  var c = cleanText(content);
+  var d = cleanText(description);
   return c.length >= d.length ? c : d;
 }
 
@@ -149,7 +147,7 @@ function loadContent(feedKey) {
     return;
   }
 
-  // Try static JSON from GitHub Action
+  // Try static JSON from GitHub Action (has images from API)
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.DATA_PATH + feedKey + ".json",
@@ -236,20 +234,21 @@ function normalizeRssArticles(items) {
 // ============================================================
 // Unified renderer: articles[] → main grid + extra stories
 // ============================================================
-function setImageWithFallback(selector, imageUrl, headline) {
+
+// Set image from API - only show real images, hide if none available
+function setArticleImage(selector, imageUrl) {
   var el = $(selector);
   if (!el.length) return;
-  var fallbackSeed = "mutapa-" + hashCode(headline);
-  var fallbackUrl = "https://picsum.photos/seed/" + fallbackSeed + "/600/400";
 
   if (imageUrl) {
     el.attr("src", imageUrl);
+    el.show();
     el.off("error").on("error", function() {
       $(this).off("error");
-      $(this).attr("src", fallbackUrl);
+      $(this).hide();
     });
   } else {
-    el.attr("src", fallbackUrl);
+    el.hide();
   }
 }
 
@@ -266,7 +265,7 @@ function renderArticles(articles) {
     var num = i + 1;
 
     if (num <= 3) {
-      setImageWithFallback(".image" + num, a.image, a.title);
+      setArticleImage(".image" + num, a.image);
     }
     $(".storyTitle" + num).text(a.title);
     $(".story" + num).text(a.description);
