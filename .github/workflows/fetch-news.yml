@@ -1,6 +1,5 @@
 name: Fetch News Data
 
-# Runs every 3 hours — 6 categories via GNews
 on:
   schedule:
     - cron: '0 */3 * * *'
@@ -14,117 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch news data from GNews
+      - name: Fetch news from GNews (US, UK, AU, CA sources)
         env:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
-        run: |
-          mkdir -p data
-
-          # Fetch from multiple western countries, merge and deduplicate
-          # Priority: US, UK, then others (France, Russia, China, Belgium, Australia, Canada)
-          # GNews only allows one country per request, so we fetch top sources and merge
-
-          fetch_and_merge() {
-            local category="$1"
-            local topic="$2"
-            local search_query="$3"
-            local merged
-            merged=$(mktemp)
-            echo '{"articles":[]}' > "$merged"
-
-            # Fetch top-headlines from key western countries
-            for country in us gb au ca; do
-              local tmp
-              tmp=$(mktemp)
-              local url="https://gnews.io/api/v4/top-headlines?topic=${topic}&apikey=${GNEWS_API_KEY}&lang=en&country=${country}&max=10&nullable=image"
-
-              echo "  Fetching ${category} from country=${country}..."
-              if curl -sf "$url" -o "$tmp"; then
-                # Merge articles into combined file
-                python3 -c "
-import json, sys
-with open('$merged') as f:
-    existing = json.load(f)
-with open('$tmp') as f:
-    new_data = json.load(f)
-seen = set(a.get('url','') for a in existing.get('articles',[]))
-for a in new_data.get('articles',[]):
-    if a.get('url','') not in seen:
-        existing['articles'].append(a)
-        seen.add(a.get('url',''))
-with open('$merged','w') as f:
-    json.dump(existing, f)
-" 2>/dev/null
-              fi
-              rm -f "$tmp"
-              sleep 1
-            done
-
-            # Check if we got any articles
-            local count
-            count=$(python3 -c "import json; f=open('$merged'); d=json.load(f); print(len(d.get('articles',[])))" 2>/dev/null)
-
-            if [ "$count" -gt 0 ]; then
-              # Sort by publishedAt descending, keep top 10
-              python3 -c "
-import json
-with open('$merged') as f:
-    data = json.load(f)
-articles = data.get('articles', [])
-articles.sort(key=lambda a: a.get('publishedAt', ''), reverse=True)
-data['articles'] = articles[:10]
-with open('data/${category}.json', 'w') as f:
-    json.dump(data, f)
-"
-              echo "  OK: ${category} (${count} articles merged, top 10 saved)"
-              rm -f "$merged"
-              return 0
-            fi
-
-            rm -f "$merged"
-
-            # Fallback: search endpoint (no country filter = global English)
-            local tmp2
-            tmp2=$(mktemp)
-            local surl="https://gnews.io/api/v4/search?q=${search_query}&apikey=${GNEWS_API_KEY}&lang=en&max=10&sortby=publishedAt&nullable=image"
-            echo "  Fallback search for ${category}..."
-            if curl -sf "$surl" -o "$tmp2"; then
-              if python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d.get('articles',[])) > 0" < "$tmp2"; then
-                mv "$tmp2" "data/${category}.json"
-                echo "  OK: ${category} (search fallback)"
-                return 0
-              fi
-              rm -f "$tmp2"
-            else
-              rm -f "$tmp2"
-            fi
-
-            echo "  FAIL: ${category}"
-            return 1
-          }
-
-          echo "=== Fetching Business ==="
-          fetch_and_merge "business" "business" "business OR economy OR finance OR markets"
-          sleep 2
-
-          echo "=== Fetching Technology ==="
-          fetch_and_merge "technology" "technology" "technology OR AI OR software OR startups"
-          sleep 2
-
-          echo "=== Fetching Entertainment ==="
-          fetch_and_merge "entertainment" "entertainment" "entertainment OR movies OR music OR celebrity"
-          sleep 2
-
-          echo "=== Fetching Sports ==="
-          fetch_and_merge "sports" "sports" "sports OR football OR basketball OR tennis"
-          sleep 2
-
-          echo "=== Fetching Science ==="
-          fetch_and_merge "science" "science" "science OR research OR space OR climate"
-          sleep 2
-
-          echo "=== Fetching Health ==="
-          fetch_and_merge "health" "health" "health OR medical OR disease OR WHO"
+        run: python3 scripts/fetch_news.py
 
       - name: Commit and push updated data
         run: |
