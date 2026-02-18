@@ -151,129 +151,69 @@
   <!-- TradingView Widget END -->
 
   <h4 class="storyTitleCat" style="margin: 20px 0 6px; text-align: center;">Zimbabwe Economic Indicators</h4>
-  <p style="text-align: center; font-size: 0.85em; color: #666; margin: 0 0 16px;">Live data powered by TradingView</p>
+  <p style="text-align: center; font-size: 0.85em; color: #666; margin: 0 0 16px;">Data from the World Bank Open Data &mdash; <a href="https://www.tradingview.com/markets/world-economy/countries/zimbabwe/" target="_blank" style="color: var(--accent);">View on TradingView</a></p>
 
   <!-- Economy widgets grid -->
   <div class="economy-grid">
 
-    <!-- GDP Growth -->
+    <!-- GDP Growth (annual %) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWGDPYY",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWGDPYY"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">GDP Growth (Annual %)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=NY.GDP.MKTP.KD.ZG&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <!-- Interest Rate -->
+    <!-- GDP (current US$) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWINTR",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWINTR"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">GDP (Current US$)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=NY.GDP.MKTP.CD&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <!-- Inflation Rate -->
+    <!-- GDP Per Capita (current US$) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWIRYY",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWIRYY"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">GDP Per Capita (US$)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=NY.GDP.PCAP.CD&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <!-- Unemployment Rate -->
+    <!-- Inflation, consumer prices (annual %) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWUR",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWUR"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">Inflation Rate (Annual %)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=FP.CPI.TOTL.ZG&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <!-- Balance of Trade -->
+    <!-- Unemployment (% of total labor force) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWBOT",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWBOT"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">Unemployment Rate (%)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=SL.UEM.TOTL.ZS&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <!-- Government Debt to GDP -->
+    <!-- Trade (% of GDP) -->
     <div class="economy-widget">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "ECONOMICS:ZWGDG",
-          "width": "100%",
-          "height": "100%",
-          "locale": "en",
-          "dateRange": "12M",
-          "colorTheme": "light",
-          "isTransparent": true,
-          "autosize": true,
-          "largeChartUrl": "https://www.tradingview.com/chart/?symbol=ECONOMICS%3AZWGDG"
-        }
-        </script>
-      </div>
+      <h5 class="economy-widget-title">Trade (% of GDP)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=NE.TRD.GNFS.ZS&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Central government debt (% of GDP) -->
+    <div class="economy-widget">
+      <h5 class="economy-widget-title">Government Debt (% of GDP)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=GC.DOD.TOTL.GD.ZS&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Foreign direct investment, net inflows (% of GDP) -->
+    <div class="economy-widget">
+      <h5 class="economy-widget-title">Foreign Direct Investment (% of GDP)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=BX.KLT.DINV.WD.GD.ZS&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Current account balance (% of GDP) -->
+    <div class="economy-widget">
+      <h5 class="economy-widget-title">Current Account Balance (% of GDP)</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=BN.CAB.XOKA.GD.ZS&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Population, total -->
+    <div class="economy-widget">
+      <h5 class="economy-widget-title">Population</h5>
+      <iframe src="https://data.worldbank.org/share/widget?indicators=SP.POP.TOTL&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
     </div>
 
   </div>
