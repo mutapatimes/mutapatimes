@@ -195,6 +195,9 @@ function fetchNews(feedKey) {
     ticker.innerHTML = items + items;
   }
 
+  // Init editorial images (sidebar portrait + landscape)
+  initEditorialImages();
+
   // Load main stories from Google News RSS (sorted by newest)
   loadMainStories(feedKey);
   // Load sidebar stories from Google News RSS (generic order)
@@ -346,6 +349,37 @@ function normalizeRssArticles(items) {
 
 var _activeCategory = "business";
 
+// Editorial images for sidebar portrait and inline placeholders
+// Add image filenames to this array (placed in img/ folder)
+var EDITORIAL_IMAGES = [
+  "editorial-1.jpg",
+  "editorial-2.jpg",
+  "editorial-3.jpg",
+  "editorial-4.jpg",
+  "editorial-5.jpg"
+];
+
+function getRandomEditorialImage() {
+  var idx = Math.floor(Math.random() * EDITORIAL_IMAGES.length);
+  return "img/" + EDITORIAL_IMAGES[idx];
+}
+
+function initEditorialImages() {
+  // Sidebar portrait image
+  var portrait = document.querySelector(".editorial-portrait-img");
+  if (portrait) {
+    portrait.src = getRandomEditorialImage();
+    portrait.onerror = function() { this.style.display = "none"; };
+  }
+
+  // Landscape image between ticker and content
+  var landscape = document.querySelector(".editorial-landscape-img");
+  if (landscape) {
+    landscape.src = getRandomEditorialImage();
+    landscape.onerror = function() { this.style.display = "none"; };
+  }
+}
+
 // ============================================================
 // RENDER: Main stories — text + ranking number (alternating sides)
 // ============================================================
@@ -404,10 +438,12 @@ function renderMainStories(articles) {
     card.append(link);
     container.append(card);
 
-    // Insert placeholder images after articles 3 and 7
+    // Insert editorial images after articles 3 and 7
     if (rank === 3 || rank === 7) {
-      var ph = $('<div class="editorial-placeholder placeholder-inline">');
-      ph.append($('<span class="editorial-placeholder-label">').text("The Mutapa Times"));
+      var ph = $('<div class="editorial-inline-wrap">');
+      var img = $('<img class="editorial-inline-img">').attr('src', getRandomEditorialImage()).attr('alt', 'The Mutapa Times');
+      img.on('error', function() { $(this).parent().hide(); });
+      ph.append(img);
       container.append(ph);
     }
   }
