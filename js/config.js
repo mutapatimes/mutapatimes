@@ -1,7 +1,7 @@
 /*
  * The Mutapa Times - Configuration
- * GNews-only data source (fetched by GitHub Action)
- * Fallback: Google News RSS via rss2json.com
+ * Main stories: GNews API (fetched by GitHub Action) — reputable western publishers with images
+ * Sidebar: Google News RSS via rss2json.com — text-only headlines
  */
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
@@ -10,12 +10,12 @@ var MUTAPA_CONFIG = {
 };
 
 var CATEGORIES = {
-  business:      { label: "Business",      topic: "business",      rss: "https://news.google.com/rss/search?q=Zimbabwe+business+economy+finance&hl=en&gl=US&ceid=US:en" },
-  technology:    { label: "Technology",     topic: "technology",    rss: "https://news.google.com/rss/search?q=Zimbabwe+technology+tech+digital&hl=en&gl=US&ceid=US:en" },
-  entertainment: { label: "Entertainment",  topic: "entertainment", rss: "https://news.google.com/rss/search?q=Zimbabwe+entertainment+music+arts+culture&hl=en&gl=US&ceid=US:en" },
-  sports:        { label: "Sports",         topic: "sports",        rss: "https://news.google.com/rss/search?q=Zimbabwe+sports+cricket+football+rugby&hl=en&gl=US&ceid=US:en" },
-  science:       { label: "Science",        topic: "science",       rss: "https://news.google.com/rss/search?q=Zimbabwe+science+research+environment&hl=en&gl=US&ceid=US:en" },
-  health:        { label: "Health",         topic: "health",        rss: "https://news.google.com/rss/search?q=Zimbabwe+health+medical&hl=en&gl=US&ceid=US:en" }
+  business:      { label: "Business",      topic: "business",      rss: "https://news.google.com/rss/search?q=Zimbabwe+business+economy+finance+trade&hl=en&gl=US&ceid=US:en" },
+  technology:    { label: "Technology",     topic: "technology",    rss: "https://news.google.com/rss/search?q=Zimbabwe+technology+tech+digital+innovation&hl=en&gl=US&ceid=US:en" },
+  entertainment: { label: "Entertainment",  topic: "entertainment", rss: "https://news.google.com/rss/search?q=Zimbabwe+entertainment+music+arts+culture+film&hl=en&gl=US&ceid=US:en" },
+  sports:        { label: "Sports",         topic: "sports",        rss: "https://news.google.com/rss/search?q=Zimbabwe+sports+cricket+football+rugby+athletics&hl=en&gl=US&ceid=US:en" },
+  science:       { label: "Science",        topic: "science",       rss: "https://news.google.com/rss/search?q=Zimbabwe+science+research+environment+wildlife&hl=en&gl=US&ceid=US:en" },
+  health:        { label: "Health",         topic: "health",        rss: "https://news.google.com/rss/search?q=Zimbabwe+health+medical+hospital+disease&hl=en&gl=US&ceid=US:en" }
 };
 
 // Zimbabwe cities for weather
@@ -118,7 +118,7 @@ function getFullText(content, description) {
   return c.length >= d.length ? c : d;
 }
 
-// Reading time estimate from text length
+// Reading time estimate
 function getReadingTime(text) {
   if (!text) return "1 min read";
   var words = text.split(/\s+/).length;
@@ -126,7 +126,7 @@ function getReadingTime(text) {
   return mins + " min read";
 }
 
-// Format publish date
+// Format publish date — relative
 function formatDate(dateStr) {
   if (!dateStr) return "";
   try {
@@ -160,17 +160,20 @@ function fetchNews(feedKey) {
   $(".vol").text("Edition # " + volNum);
   fetchWeather();
 
-  loadContent(feedKey);
+  // Load main stories from GNews JSON
+  loadMainStories(feedKey);
+  // Load sidebar stories from Google News RSS
+  loadSidebarStories(feedKey);
 }
 
 // ============================================================
-// Content loading: JSON first, RSS fallback
+// MAIN STORIES — GNews JSON (text-left, image-right)
 // ============================================================
-function loadContent(feedKey) {
-  var cacheKey = "content_" + feedKey;
+function loadMainStories(feedKey) {
+  var cacheKey = "main_" + feedKey;
   var cached = getCache(cacheKey);
   if (cached) {
-    renderArticles(cached);
+    renderMainStories(cached);
     return;
   }
 
@@ -182,19 +185,28 @@ function loadContent(feedKey) {
       if (data && data.articles && data.articles.length > 0) {
         var articles = normalizeJsonArticles(data.articles);
         setCache(cacheKey, articles);
-        renderArticles(articles);
+        renderMainStories(articles);
       } else {
-        loadFromRss(feedKey);
+        $("#main-stories").html('<p class="loading-msg">No main stories available.</p>');
       }
     },
     error: function () {
-      loadFromRss(feedKey);
+      $("#main-stories").html('<p class="loading-msg">Unable to load main stories.</p>');
     }
   });
 }
 
-function loadFromRss(feedKey) {
-  var cacheKey = "content_" + feedKey;
+// ============================================================
+// SIDEBAR — Google News RSS (text-only headlines)
+// ============================================================
+function loadSidebarStories(feedKey) {
+  var cacheKey = "sidebar_" + feedKey;
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderSidebarStories(cached);
+    return;
+  }
+
   var cat = CATEGORIES[feedKey];
   var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
 
@@ -205,19 +217,19 @@ function loadFromRss(feedKey) {
       if (data && data.status === "ok" && data.items && data.items.length > 0) {
         var articles = normalizeRssArticles(data.items);
         setCache(cacheKey, articles);
-        renderArticles(articles);
+        renderSidebarStories(articles);
       } else {
-        $("#news-grid").html('<p style="text-align:center;padding:40px;color:#999;">Unable to load news. Please try again later.</p>');
+        $("#sidebar-stories").html('<p class="loading-msg">No additional stories.</p>');
       }
     },
     error: function () {
-      $("#news-grid").html('<p style="text-align:center;padding:40px;color:#999;">Unable to load news. Please try again later.</p>');
+      $("#sidebar-stories").html('<p class="loading-msg">Unable to load stories.</p>');
     }
   });
 }
 
 // ============================================================
-// Normalize to standard: { title, url, description, image, source, publishedAt }
+// Normalize articles
 // ============================================================
 function normalizeJsonArticles(articles) {
   var result = [];
@@ -242,14 +254,12 @@ function normalizeRssArticles(items) {
     var parsed = extractSource(item.title || "");
     if (!parsed.headline) continue;
     var desc = stripHtml(getFullText(item.content, item.description));
-    if (desc.length < 10) desc = "Click to read the full article.";
-    var image = item.thumbnail || (item.enclosure && item.enclosure.link) || "";
+    if (desc.length < 10) desc = "";
 
     result.push({
       title: parsed.headline,
       url: item.link || "",
       description: desc,
-      image: image,
       source: parsed.source,
       publishedAt: item.pubDate || ""
     });
@@ -258,51 +268,89 @@ function normalizeRssArticles(items) {
 }
 
 // ============================================================
-// Renderer: two-column card grid
+// RENDER: Main stories — text on left, image on right
 // ============================================================
-function renderArticles(articles) {
-  var grid = $("#news-grid");
-  if (!grid.length) return;
-  grid.empty();
+function renderMainStories(articles) {
+  var container = $("#main-stories");
+  if (!container.length) return;
+  container.empty();
 
   if (!articles || articles.length === 0) {
-    grid.html('<p style="text-align:center;padding:40px;color:#999;">No articles found at this time.</p>');
+    container.html('<p class="loading-msg">No articles found.</p>');
     return;
   }
 
-  for (var i = 0; i < articles.length && i < 20; i++) {
+  for (var i = 0; i < articles.length && i < 10; i++) {
     var a = articles[i];
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
 
-    var card = $('<div class="article-card">');
+    var card = $('<div class="main-article">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
 
-    // Image
-    if (a.image) {
-      var imgEl = $('<img class="article-image">').attr('src', a.image);
-      imgEl.on('error', function() { $(this).hide(); });
-      link.append(imgEl);
-    }
+    var textCol = $('<div class="main-article-text">');
+    textCol.append($('<h3 class="main-article-title">').text(a.title));
 
-    // Headline
-    link.append($('<h4 class="article-title">').text(a.title));
-
-    // Meta line: source + date + reading time
-    var meta = $('<p class="article-meta">');
+    // Meta: source · date · reading time
+    var meta = $('<p class="main-article-meta">');
     var parts = [];
     if (a.source) parts.push(a.source);
     if (pubDate) parts.push(pubDate);
     parts.push(readTime);
-    meta.text(parts.join(" · "));
-    link.append(meta);
+    meta.text(parts.join(" \u00b7 "));
+    textCol.append(meta);
 
     // Description
     var desc = a.description;
-    if (desc && desc.length > 200) desc = desc.substring(0, 200) + "...";
-    link.append($('<p class="article-desc">').text(desc));
+    if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
+    if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
+
+    link.append(textCol);
+
+    // Image on right
+    if (a.image) {
+      var imgCol = $('<div class="main-article-img">');
+      var imgEl = $('<img>').attr('src', a.image);
+      imgEl.on('error', function() { $(this).parent().hide(); });
+      imgCol.append(imgEl);
+      link.append(imgCol);
+    }
 
     card.append(link);
-    grid.append(card);
+    container.append(card);
+  }
+}
+
+// ============================================================
+// RENDER: Sidebar — text-only stacked headlines
+// ============================================================
+function renderSidebarStories(articles) {
+  var container = $("#sidebar-stories");
+  if (!container.length) return;
+  container.empty();
+
+  if (!articles || articles.length === 0) {
+    container.html('<p class="loading-msg">No stories available.</p>');
+    return;
+  }
+
+  for (var i = 0; i < articles.length && i < 15; i++) {
+    var a = articles[i];
+    var pubDate = formatDate(a.publishedAt);
+
+    var item = $('<div class="sidebar-item">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+
+    link.append($('<h4 class="sidebar-title">').text(a.title));
+
+    var meta = $('<p class="sidebar-meta">');
+    var parts = [];
+    if (a.source) parts.push(a.source);
+    if (pubDate) parts.push(pubDate);
+    meta.text(parts.join(" \u00b7 "));
+    link.append(meta);
+
+    item.append(link);
+    container.append(item);
   }
 }

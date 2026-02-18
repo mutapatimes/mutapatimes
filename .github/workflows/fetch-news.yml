@@ -1,6 +1,6 @@
 name: Fetch News Data
 
-# Runs every 3 hours — 6 categories via GNews only
+# Runs every 3 hours — 6 categories via GNews
 on:
   schedule:
     - cron: '0 */3 * * *'
@@ -20,10 +20,11 @@ jobs:
         run: |
           mkdir -p data
 
+          # Fetch top-headlines by topic (no country filter = global/western sources)
           fetch_gnews() {
             local category="$1"
             local topic="$2"
-            local url="https://gnews.io/api/v4/top-headlines?topic=${topic}&token=${GNEWS_API_KEY}&lang=en&country=zw&max=10"
+            local url="https://gnews.io/api/v4/top-headlines?topic=${topic}&token=${GNEWS_API_KEY}&lang=en&max=10"
             local tmp
             tmp=$(mktemp)
 
