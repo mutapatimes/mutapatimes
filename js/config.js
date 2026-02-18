@@ -221,6 +221,8 @@ function loadMainStories(feedKey) {
     success: function (data) {
       if (data && data.status === "ok" && data.items && data.items.length > 0) {
         var articles = normalizeRssArticles(data.items);
+        // Filter to recent articles only
+        articles = articles.filter(function(a) { return isRecentArticle(a.publishedAt); });
         // Sort by date — newest first
         articles.sort(function(a, b) {
           var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
@@ -284,6 +286,43 @@ function loadSidebarStories(feedKey) {
 // Normalize articles
 // ============================================================
 
+// Known Zimbabwean news sources
+var LOCAL_ZIM_SOURCES = [
+  "the zimbabwe mail", "zimbabwe situation", "nehanda radio", "bulawayo24",
+  "new zimbabwe", "newzimbabwe", "263chat", "the herald", "herald online",
+  "heraldonline", "chronicle", "newsday", "daily news", "zimmorning post",
+  "zim morning post", "zimbabwe independent", "the standard", "zimlive",
+  "pindula", "techzim", "zbcnews", "zbc news", "zimdiaspora",
+  "kubatana", "the insider", "cite", "myzimbabwe",
+  "zimbo jam", "zimbabwe broadcasting", "radio dialogue",
+  "zimfieldguide", "iharare", "hmetro", "h-metro", "b-metro",
+  "manica post", "southern eye", "zimpapers", "zimbabwe today",
+  "the patriot", "kwayedza", "umthunywa", "zimmorningpost"
+];
+
+function isLocalZimSource(source) {
+  if (!source) return false;
+  var s = source.toLowerCase();
+  for (var i = 0; i < LOCAL_ZIM_SOURCES.length; i++) {
+    if (s.indexOf(LOCAL_ZIM_SOURCES[i]) !== -1) return true;
+  }
+  return false;
+}
+
+// Max age for main headlines (30 days)
+var MAX_ARTICLE_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+
+function isRecentArticle(dateStr) {
+  if (!dateStr) return false;
+  try {
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return false;
+    return (Date.now() - d.getTime()) < MAX_ARTICLE_AGE_MS;
+  } catch (e) {
+    return false;
+  }
+}
+
 function normalizeRssArticles(items) {
   var result = [];
   for (var i = 0; i < items.length; i++) {
@@ -298,14 +337,13 @@ function normalizeRssArticles(items) {
       url: item.link || "",
       description: desc,
       source: parsed.source,
-      publishedAt: item.pubDate || ""
+      publishedAt: item.pubDate || "",
+      isLocal: isLocalZimSource(parsed.source)
     });
   }
   return result;
 }
 
-
-// Active category for placeholder images
 var _activeCategory = "business";
 
 // ============================================================
@@ -344,6 +382,12 @@ function renderMainStories(articles) {
     if (pubDate) parts.push(pubDate);
     if (readTime) parts.push(readTime);
     meta.text(parts.join(" \u00b7 "));
+    // Press type marker
+    if (a.isLocal) {
+      meta.append($('<span class="press-marker local-press">').text("Local"));
+    } else if (a.source) {
+      meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
+    }
     textCol.append(meta);
 
     var desc = a.description;
@@ -389,6 +433,11 @@ function renderSidebarStories(articles) {
     if (a.source) parts.push(a.source);
     if (pubDate) parts.push(pubDate);
     meta.text(parts.join(" \u00b7 "));
+    if (a.isLocal) {
+      meta.append($('<span class="press-marker local-press">').text("Local"));
+    } else if (a.source) {
+      meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
+    }
     link.append(meta);
 
     item.append(link);
