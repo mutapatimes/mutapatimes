@@ -1,7 +1,8 @@
 /*
  * The Mutapa Times - Configuration
- * Main stories: GNews API (fetched by GitHub Action) — reputable western publishers with images
- * Sidebar: Google News RSS via rss2json.com — text-only headlines
+ * All stories sourced from Google News RSS via rss2json.com
+ * Main stories: sorted by newest, with ranking numbers
+ * Sidebar: additional headlines, generic order
  */
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
@@ -194,14 +195,14 @@ function fetchNews(feedKey) {
     ticker.innerHTML = items + items;
   }
 
-  // Load main stories from GNews JSON
+  // Load main stories from Google News RSS (sorted by newest)
   loadMainStories(feedKey);
-  // Load sidebar stories from Google News RSS
+  // Load sidebar stories from Google News RSS (generic order)
   loadSidebarStories(feedKey);
 }
 
 // ============================================================
-// MAIN STORIES — GNews JSON first, RSS fallback
+// MAIN STORIES — Google News RSS, sorted by newest
 // ============================================================
 function loadMainStories(feedKey) {
   var cacheKey = "main_" + feedKey;
@@ -211,13 +212,21 @@ function loadMainStories(feedKey) {
     return;
   }
 
+  var cat = CATEGORIES[feedKey];
+  var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
+
   $.ajax({
     type: "GET",
-    url: MUTAPA_CONFIG.DATA_PATH + feedKey + ".json",
-    dataType: "json",
+    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
     success: function (data) {
-      if (data && data.articles && data.articles.length > 0) {
-        var articles = normalizeJsonArticles(data.articles);
+      if (data && data.status === "ok" && data.items && data.items.length > 0) {
+        var articles = normalizeRssArticles(data.items);
+        // Sort by date — newest first
+        articles.sort(function(a, b) {
+          var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+          var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+          return dateB - dateA;
+        });
         setCache(cacheKey, articles);
         renderMainStories(articles);
       } else {
@@ -231,8 +240,17 @@ function loadMainStories(feedKey) {
 }
 
 // ============================================================
-// SIDEBAR — Google News RSS (text-only headlines)
+// SIDEBAR — Google News RSS (generic order, not sorted by date)
 // ============================================================
+var SIDEBAR_RSS = {
+  business:      "https://news.google.com/rss/search?q=Zimbabwe+economy+trade+investment&hl=en&gl=US&ceid=US:en",
+  technology:    "https://news.google.com/rss/search?q=Zimbabwe+tech+startup+digital&hl=en&gl=US&ceid=US:en",
+  entertainment: "https://news.google.com/rss/search?q=Zimbabwe+culture+music+film+art&hl=en&gl=US&ceid=US:en",
+  sports:        "https://news.google.com/rss/search?q=Zimbabwe+cricket+rugby+football+athletics&hl=en&gl=US&ceid=US:en",
+  science:       "https://news.google.com/rss/search?q=Zimbabwe+environment+wildlife+conservation&hl=en&gl=US&ceid=US:en",
+  health:        "https://news.google.com/rss/search?q=Zimbabwe+medical+disease+healthcare&hl=en&gl=US&ceid=US:en"
+};
+
 function loadSidebarStories(feedKey) {
   var cacheKey = "sidebar_" + feedKey;
   var cached = getCache(cacheKey);
@@ -241,8 +259,7 @@ function loadSidebarStories(feedKey) {
     return;
   }
 
-  var cat = CATEGORIES[feedKey];
-  var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
+  var rssUrl = SIDEBAR_RSS[feedKey] || SIDEBAR_RSS.business;
 
   $.ajax({
     type: "GET",
@@ -250,6 +267,7 @@ function loadSidebarStories(feedKey) {
     success: function (data) {
       if (data && data.status === "ok" && data.items && data.items.length > 0) {
         var articles = normalizeRssArticles(data.items);
+        // No date sorting — keep generic RSS order
         setCache(cacheKey, articles);
         renderSidebarStories(articles);
       } else {
@@ -340,95 +358,29 @@ function normalizeRssArticles(items) {
     var desc = stripHtml(getFullText(item.content, item.description));
     if (desc.length < 10) desc = "";
 
-    // Try to get image from RSS item
-    var image = item.thumbnail || "";
-    if (!image && item.enclosure && item.enclosure.link) {
-      image = item.enclosure.link;
-    }
-    if (!image) {
-      // Try extracting from HTML content/description
-      var html = item.content || item.description || "";
-      var imgMatch = html.match(/<img[^>]+src=["']([^"']+)["']/i);
-      if (imgMatch) image = imgMatch[1];
-    }
+    var source = parsed.source;
+    var url = item.link || "";
+
+    // Skip local Zimbabwean news sources
+    if (isLocalZimSource(source, url)) continue;
 
     result.push({
       title: parsed.headline,
-      url: item.link || "",
+      url: url,
       description: desc,
-      image: image,
-      source: parsed.source,
+      source: source,
       publishedAt: item.pubDate || ""
     });
   }
   return result;
 }
 
-// Build a styled placeholder for articles without images
-function buildPlaceholder(label) {
-  var cat = _activeCategory || "business";
-  var colors = CATEGORY_COLORS[cat] || CATEGORY_COLORS.business;
-  var initial = (label || cat).charAt(0).toUpperCase();
-  var catLabel = cat.charAt(0).toUpperCase() + cat.slice(1);
-
-  var ph = $('<div class="placeholder-img">');
-  ph.css({
-    "background": "linear-gradient(135deg, " + colors.bg + " 0%, " + colors.accent + "33 100%)",
-    "display": "flex",
-    "flex-direction": "column",
-    "align-items": "center",
-    "justify-content": "center",
-    "width": "100%",
-    "height": "185px",
-    "position": "relative",
-    "overflow": "hidden"
-  });
-
-  // Large initial letter
-  var letterEl = $('<span>').text(initial).css({
-    "font-family": "'Playfair Display', serif",
-    "font-size": "4em",
-    "font-weight": "700",
-    "color": colors.accent,
-    "opacity": "0.25",
-    "line-height": "1",
-    "position": "absolute",
-    "top": "50%",
-    "left": "50%",
-    "transform": "translate(-50%, -50%)"
-  });
-
-  // Category label
-  var labelEl = $('<span>').text(catLabel).css({
-    "font-size": "10px",
-    "font-weight": "600",
-    "text-transform": "uppercase",
-    "letter-spacing": "0.15em",
-    "color": colors.accent,
-    "opacity": "0.6",
-    "position": "absolute",
-    "bottom": "12px"
-  });
-
-  ph.append(letterEl).append(labelEl);
-  return ph;
-}
-
-// Category placeholder colors for articles without images
-var CATEGORY_COLORS = {
-  business:      { bg: "#1a1a2e", accent: "#00b894" },
-  technology:    { bg: "#0a1628", accent: "#0984e3" },
-  entertainment: { bg: "#2d1b3d", accent: "#e17055" },
-  sports:        { bg: "#1b2d1b", accent: "#00b894" },
-  science:       { bg: "#1b2636", accent: "#74b9ff" },
-  health:        { bg: "#2d1b1b", accent: "#ff7675" }
-};
 
 // Active category for placeholder images
 var _activeCategory = "business";
 
 // ============================================================
-// RENDER: Main stories — text on left, image on right
+// RENDER: Main stories — text + ranking number (alternating sides)
 // ============================================================
 function renderMainStories(articles) {
   var container = $("#main-stories");
@@ -442,46 +394,40 @@ function renderMainStories(articles) {
 
   for (var i = 0; i < articles.length && i < 10; i++) {
     var a = articles[i];
+    var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
 
-    var card = $('<div class="main-article">');
+    // Alternating: odd ranks (1,3,5...) on right, even (2,4,6...) on left
+    var posClass = (rank % 2 === 1) ? "rank-right" : "rank-left";
+    var card = $('<div class="main-article">').addClass(posClass);
+    if (rank === 1) card.addClass("rank-featured");
+
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
 
+    // Text column
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
 
-    // Meta: source · date · reading time
     var meta = $('<p class="main-article-meta">');
     var parts = [];
     if (a.source) parts.push(a.source);
     if (pubDate) parts.push(pubDate);
-    parts.push(readTime);
+    if (readTime) parts.push(readTime);
     meta.text(parts.join(" \u00b7 "));
     textCol.append(meta);
 
-    // Description
     var desc = a.description;
     if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
     if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
 
     link.append(textCol);
 
-    // Image on right — real image or styled placeholder
-    var imgCol = $('<div class="main-article-img">');
-    if (a.image) {
-      var imgEl = $('<img>').attr('src', a.image);
-      imgEl.on('error', function() {
-        // Replace broken image with placeholder
-        var ph = buildPlaceholder($(this).closest('.main-article').find('.main-article-meta').text());
-        $(this).replaceWith(ph);
-      });
-      imgCol.append(imgEl);
-    } else {
-      // Styled placeholder with source initial
-      imgCol.append(buildPlaceholder(a.source || _activeCategory));
-    }
-    link.append(imgCol);
+    // Ranking number column (replaces image)
+    var rankCol = $('<div class="main-article-rank">');
+    rankCol.append($('<span class="rank-number">').text(rank));
+    rankCol.append($('<span class="rank-label">').text(rank));
+    link.append(rankCol);
 
     card.append(link);
     container.append(card);
