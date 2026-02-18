@@ -1,3 +1,0 @@
-$(document).ready(function () {
-  fetchNews("sport", "sport", 6);
-});

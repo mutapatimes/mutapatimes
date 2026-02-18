@@ -1,9 +1,9 @@
 name: Fetch GNews Data
 
-# Runs every 2 hours (6 categories x 12 runs = 72 requests/day, within GNews free tier of 100/day)
+# Runs every 3 hours (4 categories x 8 runs = 32 requests/day, well within GNews free tier of 100/day)
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -41,17 +41,13 @@ jobs:
             fi
           }
 
-          fetch_category "home" "Zimbabwe+business+economy"
+          fetch_category "home" "Zimbabwe+economy+finance+trade"
           sleep 2
-          fetch_category "business" "Zimbabwe+business+economy"
-          sleep 2
-          fetch_category "politics" "Zimbabwe+politics+government"
+          fetch_category "property" "Zimbabwe+property+real+estate+housing"
           sleep 2
           fetch_category "health" "Zimbabwe+health"
           sleep 2
-          fetch_category "arts" "Zimbabwe+arts+culture+music"
-          sleep 2
-          fetch_category "sport" "Zimbabwe+sport+cricket+football+rugby"
+          fetch_category "arts" "Zimbabwe+arts+culture+entertainment"
 
       - name: Commit and push updated data
         run: |
