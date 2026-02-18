@@ -288,12 +288,13 @@ a {
 
 .paper {
   position: relative;
+  max-width: 1200px;
   width: 100%;
   color: var(--text);
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 0 10px;
-  background: #faf9f7;
+  padding: 20px 24px 10px;
+  background: #fff;
 }
 
 .titleDiv {
@@ -650,6 +651,10 @@ a:hover {
 
   .image1 {
     width: 90%;
+  }
+
+  #extra-stories-list {
+    grid-template-columns: 1fr;
   }
 
   nav {
@@ -1054,18 +1059,20 @@ h4 {
   color: var(--text-light);
 }
 
-/* Extra stories section */
+/* Extra stories section - 2 column grid on desktop */
 #extra-stories {
   padding: 0 4%;
 }
 
-.extra-story-item {
-  border-bottom: 1px dashed var(--border);
-  padding: 10px 0;
+#extra-stories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
 }
 
-.extra-story-item:last-child {
-  border-bottom: none;
+.extra-story-item {
+  border-bottom: 1px dashed var(--border);
+  padding: 12px 0;
 }
 
 .extra-story-item a {

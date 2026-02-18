@@ -1,7 +1,7 @@
 /*
  * The Mutapa Times - Configuration
- * Main stories: GNews API via static JSON (fetched hourly by GitHub Action)
- * Extra stories: Google News RSS via rss2json.com (client-side, no key needed)
+ * Primary: Static JSON from NewsData.io (fetched by GitHub Action)
+ * Fallback: Google News RSS via rss2json.com (client-side, no key needed)
  */
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000, // 30 minutes
@@ -9,7 +9,7 @@ var MUTAPA_CONFIG = {
   DATA_PATH: "data/"
 };
 
-// Google News RSS feed URLs for extra stories
+// Google News RSS feed URLs (fallback when JSON data unavailable)
 var NEWS_FEEDS = {
   home: "https://news.google.com/rss/search?q=Zimbabwe+economy+finance+trade&hl=en&gl=US&ceid=US:en",
   property: "https://news.google.com/rss/search?q=Zimbabwe+property+real+estate+housing+land&hl=en&gl=US&ceid=US:en",
@@ -26,7 +26,6 @@ var WEATHER_CITIES = [
   { id: "gweru", name: "Gweru", lat: -19.45, lon: 29.82 }
 ];
 
-// WMO weather code descriptions
 function getWeatherDescription(code) {
   var descriptions = {
     0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
@@ -64,15 +63,12 @@ function setCache(key, data) {
   } catch (e) {}
 }
 
-// Fetch and display weather for all Zimbabwe cities
+// Weather
 function fetchWeather() {
   WEATHER_CITIES.forEach(function (city) {
     var cacheKey = "weather_" + city.id;
     var cached = getCache(cacheKey);
-    if (cached) {
-      displayCityWeather(city.id, cached);
-      return;
-    }
+    if (cached) { displayCityWeather(city.id, cached); return; }
     $.ajax({
       type: "GET",
       url: "https://api.open-meteo.com/v1/forecast?latitude=" + city.lat +
@@ -95,26 +91,21 @@ function displayCityWeather(cityId, weather) {
   }
 }
 
-// Extract source name from Google News title format "Headline - Source Name"
+// Helpers
 function extractSource(title) {
   var lastDash = title.lastIndexOf(" - ");
   if (lastDash > 0 && lastDash > title.length * 0.3) {
-    return {
-      headline: title.substring(0, lastDash),
-      source: title.substring(lastDash + 3)
-    };
+    return { headline: title.substring(0, lastDash), source: title.substring(lastDash + 3) };
   }
   return { headline: title, source: "" };
 }
 
-// Strip HTML tags from a string
 function stripHtml(html) {
   var tmp = document.createElement("div");
   tmp.innerHTML = html;
   return tmp.textContent || tmp.innerText || "";
 }
 
-// Simple hash for deterministic placeholder images
 function hashCode(str) {
   var hash = 0;
   for (var i = 0; i < str.length; i++) {
@@ -124,8 +115,14 @@ function hashCode(str) {
   return Math.abs(hash);
 }
 
+function getFullText(content, description) {
+  var c = content || "";
+  var d = description || "";
+  return c.length >= d.length ? c : d;
+}
+
 // ============================================================
-// Main entry point - called by each page's JS
+// Main entry point
 // ============================================================
 function fetchNews(feedKey, cacheKey, pageNum) {
   var date = new Date();
@@ -135,92 +132,55 @@ function fetchNews(feedKey, cacheKey, pageNum) {
 
   $(".date").text(date.toLocaleDateString("en-US", options));
   $(".vol").text("Edition # " + volNum + " | Page " + pageNum);
-
   fetchWeather();
 
-  // Load GNews static data for main grid (with images)
-  loadGnewsData(feedKey);
-
-  // Load Google News RSS for extra stories below
-  loadExtraStories(feedKey);
+  // Try JSON data first (from GitHub Action), fall back to RSS
+  loadContent(feedKey);
 }
 
 // ============================================================
-// GNews static JSON (main grid with images)
+// Content loading: JSON first, RSS fallback
 // ============================================================
-function loadGnewsData(feedKey) {
-  var cacheKey = "gnews_" + feedKey;
+function loadContent(feedKey) {
+  var cacheKey = "content_" + feedKey;
   var cached = getCache(cacheKey);
   if (cached) {
-    renderGnewsArticles(cached);
+    renderArticles(cached);
     return;
   }
 
+  // Try static JSON from GitHub Action
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.DATA_PATH + feedKey + ".json",
     dataType: "json",
     success: function (data) {
       if (data && data.articles && data.articles.length > 0) {
-        setCache(cacheKey, data);
-        renderGnewsArticles(data);
+        var articles = normalizeJsonArticles(data.articles);
+        setCache(cacheKey, articles);
+        renderArticles(articles);
       } else {
-        loadGnewsFallbackHome(feedKey);
+        loadFromRss(feedKey);
       }
     },
     error: function () {
-      loadGnewsFallbackHome(feedKey);
+      loadFromRss(feedKey);
     }
   });
 }
 
-// Fallback: try home.json which always has images
-function loadGnewsFallbackHome(feedKey) {
-  if (feedKey === "home") {
-    loadRssFallback(feedKey);
-    return;
-  }
-  var cacheKey = "gnews_home";
-  var cached = getCache(cacheKey);
-  if (cached) {
-    renderGnewsArticles(cached);
-    return;
-  }
-  $.ajax({
-    type: "GET",
-    url: MUTAPA_CONFIG.DATA_PATH + "home.json",
-    dataType: "json",
-    success: function (data) {
-      if (data && data.articles && data.articles.length > 0) {
-        setCache(cacheKey, data);
-        renderGnewsArticles(data);
-      } else {
-        loadRssFallback(feedKey);
-      }
-    },
-    error: function () {
-      loadRssFallback(feedKey);
-    }
-  });
-}
-
-// Fallback: if GNews data isn't available yet, use RSS for main grid
-function loadRssFallback(feedKey) {
-  var cacheKey = "rss_main_" + feedKey;
-  var cached = getCache(cacheKey);
-  if (cached) {
-    renderRssArticles(cached);
-    return;
-  }
-
+function loadFromRss(feedKey) {
+  var cacheKey = "content_" + feedKey;
   var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
+
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
     success: function (data) {
-      if (data && data.status === "ok") {
-        setCache(cacheKey, data);
-        renderRssArticles(data);
+      if (data && data.status === "ok" && data.items && data.items.length > 0) {
+        var articles = normalizeRssArticles(data.items);
+        setCache(cacheKey, articles);
+        renderArticles(articles);
       } else {
         $(".storyTitle1").text("Unable to load news");
         $(".story1").text("Please try again later.");
@@ -234,34 +194,48 @@ function loadRssFallback(feedKey) {
 }
 
 // ============================================================
-// Google News RSS (extra stories section)
+// Normalize different API formats to one standard format
+// Standard: { title, url, description, image, source }
 // ============================================================
-function loadExtraStories(feedKey) {
-  var cacheKey = "rss_extra_" + feedKey;
-  var cached = getCache(cacheKey);
-  if (cached) {
-    renderExtraStories(cached);
-    return;
+function normalizeJsonArticles(articles) {
+  var result = [];
+  for (var i = 0; i < articles.length; i++) {
+    var a = articles[i];
+    result.push({
+      title: a.title || "",
+      url: a.url || a.link || "",
+      description: getFullText(a.content, a.description),
+      image: a.image || a.image_url || "",
+      source: (a.source && a.source.name) ? a.source.name : (a.source_name || "")
+    });
   }
+  return result;
+}
 
-  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
-  $.ajax({
-    type: "GET",
-    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
-    success: function (data) {
-      if (data && data.status === "ok") {
-        setCache(cacheKey, data);
-        renderExtraStories(data);
-      }
-    }
-  });
+function normalizeRssArticles(items) {
+  var result = [];
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var parsed = extractSource(item.title || "");
+    if (!parsed.headline) continue;
+    var desc = stripHtml(getFullText(item.content, item.description));
+    if (desc.length < 10) desc = "Click to read the full article.";
+    var image = item.thumbnail || (item.enclosure && item.enclosure.link) || "";
+
+    result.push({
+      title: parsed.headline,
+      url: item.link || "",
+      description: desc,
+      image: image,
+      source: parsed.source
+    });
+  }
+  return result;
 }
 
 // ============================================================
-// Renderers
+// Unified renderer: articles[] → main grid + extra stories
 // ============================================================
-
-// Set image with fallback - handles broken images
 function setImageWithFallback(selector, imageUrl, headline) {
   var el = $(selector);
   if (!el.length) return;
@@ -279,112 +253,42 @@ function setImageWithFallback(selector, imageUrl, headline) {
   }
 }
 
-// Get the longest available text from an article
-function getFullText(content, description) {
-  var c = content || "";
-  var d = description || "";
-  // Use whichever is longer
-  return c.length >= d.length ? c : d;
-}
-
-// Render GNews articles into the main newspaper grid (with images)
-function renderGnewsArticles(data) {
-  if (!data.articles || data.articles.length === 0) {
+function renderArticles(articles) {
+  if (!articles || articles.length === 0) {
     $(".storyTitle1").text("No articles found at this time");
     return;
   }
 
-  var count = 1;
-  for (var i = 0; i < data.articles.length && count <= 7; i++) {
-    var article = data.articles[i];
-    var headline = article.title || "";
-    var desc = getFullText(article.content, article.description);
-    var image = article.image || "";
-    var source = article.source ? article.source.name : "";
-    var url = article.url || "";
+  // First 7 → main grid
+  var gridMax = Math.min(articles.length, 7);
+  for (var i = 0; i < gridMax; i++) {
+    var a = articles[i];
+    var num = i + 1;
 
-    if (headline) {
-      if (count < 4) {
-        setImageWithFallback(".image" + count, image, headline);
+    if (num <= 3) {
+      setImageWithFallback(".image" + num, a.image, a.title);
+    }
+    $(".storyTitle" + num).text(a.title);
+    $(".story" + num).text(a.description);
+    $(".by" + num).text(a.source ? "Source: " + a.source : "");
+    $(".a" + num).attr("href", a.url);
+  }
+
+  // Remaining → extra stories (2-column grid via CSS)
+  if (articles.length > 7) {
+    var container = $("#extra-stories-list");
+    if (container.length) {
+      for (var j = 7; j < articles.length && j < 22; j++) {
+        var ex = articles[j];
+        var div = $('<div class="extra-story-item">');
+        var link = $('<a>').attr('href', ex.url || '#').attr('target', '_blank');
+        var title = $('<h5 class="extra-story-title">').text(ex.title);
+        var source = $('<p class="extra-story-source">').text(ex.source ? 'Source: ' + ex.source : '');
+        link.append(title).append(source);
+        div.append(link);
+        container.append(div);
       }
-      $(".storyTitle" + count).text(headline);
-      $(".story" + count).text(desc);
-      $(".by" + count).text(source ? "Source: " + source : "");
-      $(".a" + count).attr("href", url);
-      count++;
+      $("#extra-stories").show();
     }
-  }
-}
-
-// Render RSS articles into the main grid (fallback when GNews data unavailable)
-function renderRssArticles(data) {
-  var count = 1;
-  if (!data.items || data.items.length === 0) {
-    $(".storyTitle1").text("No articles found at this time");
-    return;
-  }
-  for (var i = 0; i < data.items.length && count <= 7; i++) {
-    var item = data.items[i];
-    var parsed = extractSource(item.title || "");
-    var desc = stripHtml(getFullText(item.content, item.description));
-    if (desc.length < 10) {
-      desc = "Click to read the full article.";
-    }
-    var image = item.thumbnail || (item.enclosure && item.enclosure.link) || "";
-
-    if (parsed.headline) {
-      if (count < 4) {
-        setImageWithFallback(".image" + count, image, parsed.headline);
-      }
-      $(".storyTitle" + count).text(parsed.headline);
-      $(".story" + count).text(desc);
-      $(".by" + count).text(parsed.source ? "Source: " + parsed.source : "");
-      $(".a" + count).attr("href", item.link);
-      count++;
-    }
-  }
-}
-
-// Render extra stories from RSS below the main grid
-function renderExtraStories(data) {
-  var container = $("#extra-stories-list");
-  if (!container.length || !data.items || data.items.length === 0) return;
-
-  // Collect main grid headlines for deduplication
-  var mainHeadlines = [];
-  for (var j = 1; j <= 7; j++) {
-    var h = $(".storyTitle" + j).text().toLowerCase().trim();
-    if (h && h.length > 5) mainHeadlines.push(h.substring(0, 40));
-  }
-
-  var count = 0;
-  for (var i = 0; i < data.items.length && count < 15; i++) {
-    var item = data.items[i];
-    var parsed = extractSource(item.title || "");
-    if (!parsed.headline) continue;
-
-    // Skip if headline overlaps with a main grid article
-    var lower = parsed.headline.toLowerCase().trim();
-    var isDupe = false;
-    for (var k = 0; k < mainHeadlines.length; k++) {
-      if (lower.indexOf(mainHeadlines[k]) !== -1 || mainHeadlines[k].indexOf(lower.substring(0, 40)) !== -1) {
-        isDupe = true;
-        break;
-      }
-    }
-    if (isDupe) continue;
-
-    var div = $('<div class="extra-story-item">');
-    var link = $('<a>').attr('href', item.link || '#').attr('target', '_blank');
-    var title = $('<h5 class="extra-story-title">').text(parsed.headline);
-    var source = $('<p class="extra-story-source">').text(parsed.source ? 'Source: ' + parsed.source : '');
-    link.append(title).append(source);
-    div.append(link);
-    container.append(div);
-    count++;
-  }
-
-  if (count > 0) {
-    $("#extra-stories").show();
   }
 }

@@ -1,6 +1,6 @@
-name: Fetch GNews Data
+name: Fetch News Data
 
-# Runs every 3 hours (4 categories x 8 runs = 32 requests/day, well within GNews free tier of 100/day)
+# Runs every 3 hours (4 categories x 8 runs = 32 requests/day)
 on:
   schedule:
     - cron: '0 */3 * * *'
@@ -14,40 +14,127 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch news data from GNews
+      - name: Fetch news data
         env:
+          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: |
           mkdir -p data
 
-          fetch_category() {
+          # Normalize NewsData.io response to standard format
+          normalize_newsdata() {
+            python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          articles = []
+          for r in data.get('results', []):
+              if not r.get('title'):
+                  continue
+              articles.append({
+                  'title': r.get('title', ''),
+                  'url': r.get('link', ''),
+                  'description': r.get('description', ''),
+                  'content': r.get('content', ''),
+                  'image': r.get('image_url', ''),
+                  'source': {'name': r.get('source_name', r.get('source_id', ''))},
+                  'publishedAt': r.get('pubDate', '')
+              })
+          if not articles:
+              sys.exit(1)
+          json.dump({'articles': articles}, sys.stdout)
+          "
+          }
+
+          fetch_newsdata() {
+            local category="$1"
+            local params="$2"
+            local url="https://newsdata.io/api/1/latest?apikey=${NEWSDATA_API_KEY}&${params}&language=en&size=10"
+            local tmp
+            tmp=$(mktemp)
+
+            echo "Fetching ${category} from NewsData.io..."
+            if curl -sf "$url" -o "$tmp"; then
+              if normalize_newsdata < "$tmp" > "data/${category}.json.tmp" 2>/dev/null; then
+                mv "data/${category}.json.tmp" "data/${category}.json"
+                echo "  OK: ${category}"
+                rm -f "$tmp"
+                return 0
+              fi
+              rm -f "$tmp" "data/${category}.json.tmp"
+            else
+              rm -f "$tmp"
+            fi
+            echo "  SKIP: ${category} from NewsData.io"
+            return 1
+          }
+
+          # Fallback: GNews API
+          fetch_gnews() {
             local category="$1"
             local query="$2"
             local url="https://gnews.io/api/v4/search?q=${query}&token=${GNEWS_API_KEY}&lang=en&max=10"
             local tmp
             tmp=$(mktemp)
 
+            echo "Trying GNews fallback for ${category}..."
             if curl -sf "$url" -o "$tmp"; then
               if python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d.get('articles',[])) > 0" < "$tmp"; then
                 mv "$tmp" "data/${category}.json"
-                echo "OK: ${category}"
-              else
-                rm -f "$tmp"
-                echo "SKIP: ${category} (no articles or API error, keeping existing data)"
+                echo "  OK: ${category} (GNews)"
+                return 0
               fi
+              rm -f "$tmp"
             else
               rm -f "$tmp"
-              echo "FAIL: ${category} (network error, keeping existing data)"
             fi
+            echo "  FAIL: ${category}"
+            return 1
           }
 
-          fetch_category "home" "Zimbabwe+economy+finance+trade"
+          fetch_category() {
+            local category="$1"
+            local newsdata_params="$2"
+            local gnews_query="$3"
+
+            # Try NewsData.io first (better category filtering)
+            if [ -n "$NEWSDATA_API_KEY" ]; then
+              if fetch_newsdata "$category" "$newsdata_params"; then
+                return 0
+              fi
+            fi
+
+            # Fallback to GNews
+            if [ -n "$GNEWS_API_KEY" ]; then
+              fetch_gnews "$category" "$gnews_query"
+              return $?
+            fi
+
+            echo "  SKIP: ${category} (no API keys configured)"
+            return 1
+          }
+
+          # Home = Business/Economy news about Zimbabwe
+          fetch_category "home" \
+            "q=Zimbabwe&category=business" \
+            "Zimbabwe+economy+finance+trade"
           sleep 2
-          fetch_category "property" "Zimbabwe+property+real+estate+housing"
+
+          # Property = Real estate, housing, land
+          fetch_category "property" \
+            "q=Zimbabwe+property+OR+real+estate+OR+housing+OR+land" \
+            "Zimbabwe+property+real+estate+housing"
           sleep 2
-          fetch_category "health" "Zimbabwe+health"
+
+          # Health
+          fetch_category "health" \
+            "q=Zimbabwe&category=health" \
+            "Zimbabwe+health"
           sleep 2
-          fetch_category "arts" "Zimbabwe+arts+culture+entertainment"
+
+          # Arts & Culture
+          fetch_category "arts" \
+            "q=Zimbabwe&category=entertainment" \
+            "Zimbabwe+arts+culture+entertainment"
 
       - name: Commit and push updated data
         run: |
