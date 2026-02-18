@@ -1,48 +1,162 @@
 #!/usr/bin/env python3
 """
-Fetch Zimbabwe news from GNews API for all categories.
-Everything is Zimbabwe-focused — search endpoint with Zimbabwe keywords.
+Fetch Zimbabwe news for all categories.
+1. Try GNews API (if GNEWS_API_KEY is set)
+2. Fall back to Google News RSS + og:image scraping from article pages
 """
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
 import urllib.error
 import urllib.parse
+import xml.etree.ElementTree as ET
 
 API_KEY = os.environ.get("GNEWS_API_KEY", "")
 DATA_DIR = "data"
 
 CATEGORIES = {
-    "business":      {"query": "Zimbabwe business OR Zimbabwe economy OR Zimbabwe finance OR Zimbabwe trade"},
-    "technology":    {"query": "Zimbabwe technology OR Zimbabwe tech OR Zimbabwe digital OR Zimbabwe innovation"},
-    "entertainment": {"query": "Zimbabwe entertainment OR Zimbabwe music OR Zimbabwe arts OR Zimbabwe culture OR Zimbabwe film"},
-    "sports":        {"query": "Zimbabwe sports OR Zimbabwe cricket OR Zimbabwe football OR Zimbabwe rugby OR Zimbabwe athletics"},
-    "science":       {"query": "Zimbabwe science OR Zimbabwe research OR Zimbabwe environment OR Zimbabwe wildlife"},
-    "health":        {"query": "Zimbabwe health OR Zimbabwe medical OR Zimbabwe hospital OR Zimbabwe disease"},
+    "business":      {
+        "query": "Zimbabwe business OR Zimbabwe economy OR Zimbabwe finance OR Zimbabwe trade",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+business+economy+finance+trade&hl=en&gl=US&ceid=US:en"
+    },
+    "technology":    {
+        "query": "Zimbabwe technology OR Zimbabwe tech OR Zimbabwe digital OR Zimbabwe innovation",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+technology+tech+digital+innovation&hl=en&gl=US&ceid=US:en"
+    },
+    "entertainment": {
+        "query": "Zimbabwe entertainment OR Zimbabwe music OR Zimbabwe arts OR Zimbabwe culture OR Zimbabwe film",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+entertainment+music+arts+culture+film&hl=en&gl=US&ceid=US:en"
+    },
+    "sports":        {
+        "query": "Zimbabwe sports OR Zimbabwe cricket OR Zimbabwe football OR Zimbabwe rugby OR Zimbabwe athletics",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+sports+cricket+football+rugby+athletics&hl=en&gl=US&ceid=US:en"
+    },
+    "science":       {
+        "query": "Zimbabwe science OR Zimbabwe research OR Zimbabwe environment OR Zimbabwe wildlife",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+science+research+environment+wildlife&hl=en&gl=US&ceid=US:en"
+    },
+    "health":        {
+        "query": "Zimbabwe health OR Zimbabwe medical OR Zimbabwe hospital OR Zimbabwe disease",
+        "rss": "https://news.google.com/rss/search?q=Zimbabwe+health+medical+hospital+disease&hl=en&gl=US&ceid=US:en"
+    },
 }
 
+HEADERS = {"User-Agent": "MutapaTimes/1.0 (news aggregator)"}
 
-def fetch_url(url):
-    """Fetch JSON from URL, return parsed dict or None."""
+
+def fetch_url(url, as_json=True):
+    """Fetch content from URL."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read().decode("utf-8"))
+            data = resp.read().decode("utf-8", errors="replace")
+            return json.loads(data) if as_json else data
     except Exception as e:
         print(f"    fetch error: {e}")
         return None
 
 
-def fetch_search(query):
-    """Fetch via search endpoint — Zimbabwe-focused, global English."""
+def extract_og_image(url):
+    """Fetch a page and extract og:image meta tag."""
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            # Read only first 50KB to find meta tags quickly
+            html = resp.read(50000).decode("utf-8", errors="replace")
+        # Look for og:image meta tag
+        match = re.search(
+            r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+            html, re.IGNORECASE
+        )
+        if not match:
+            match = re.search(
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+                html, re.IGNORECASE
+            )
+        if match:
+            return match.group(1)
+    except Exception:
+        pass
+    return ""
+
+
+def extract_source(title):
+    """Extract source name from 'Headline - Source' format."""
+    idx = title.rfind(" - ")
+    if idx > 0 and idx > len(title) * 0.3:
+        return title[:idx].strip(), title[idx + 3:].strip()
+    return title, ""
+
+
+# ============================================================
+# GNews API path
+# ============================================================
+def fetch_gnews(query):
+    """Fetch via GNews search endpoint."""
     encoded_q = urllib.parse.quote(query)
     url = (
         f"https://gnews.io/api/v4/search"
         f"?q={encoded_q}&apikey={API_KEY}&lang=en&max=10&sortby=publishedAt&nullable=image"
     )
     return fetch_url(url)
+
+
+# ============================================================
+# RSS fallback path
+# ============================================================
+def fetch_rss(rss_url):
+    """Fetch Google News RSS and parse into articles with og:image."""
+    xml_text = fetch_url(rss_url, as_json=False)
+    if not xml_text:
+        return []
+
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        print(f"    RSS parse error: {e}")
+        return []
+
+    articles = []
+    items = root.findall(".//item")
+    for item in items[:10]:
+        title_el = item.find("title")
+        link_el = item.find("link")
+        pub_el = item.find("pubDate")
+        desc_el = item.find("description")
+
+        title = title_el.text if title_el is not None else ""
+        link = link_el.text if link_el is not None else ""
+        pub_date = pub_el.text if pub_el is not None else ""
+        desc_html = desc_el.text if desc_el is not None else ""
+
+        if not title:
+            continue
+
+        headline, source = extract_source(title)
+        # Strip HTML from description
+        desc_clean = re.sub(r'<[^>]+>', '', desc_html).strip()
+
+        # Try to get og:image from the article URL
+        image = ""
+        if link:
+            print(f"    Fetching og:image from: {link[:80]}...")
+            image = extract_og_image(link)
+            time.sleep(0.5)  # Be polite
+
+        articles.append({
+            "title": headline,
+            "url": link,
+            "description": desc_clean,
+            "content": desc_clean,
+            "image": image,
+            "publishedAt": pub_date,
+            "source": {"name": source} if source else {"name": ""},
+        })
+
+    return articles
 
 
 def deduplicate(articles):
@@ -58,28 +172,42 @@ def deduplicate(articles):
     return unique[:10]
 
 
+def save_articles(name, articles):
+    """Save articles to JSON file."""
+    outpath = os.path.join(DATA_DIR, f"{name}.json")
+    with open(outpath, "w") as f:
+        json.dump({"articles": articles}, f)
+    print(f"  OK: {name} — {len(articles)} articles saved")
+
+
 def fetch_category(name, config):
     """Fetch Zimbabwe articles for a category."""
     print(f"\n=== {name.upper()} ===")
 
-    data = fetch_search(config["query"])
-    if data and data.get("articles"):
-        articles = deduplicate(data["articles"])
-        output = {"articles": articles}
-        outpath = os.path.join(DATA_DIR, f"{name}.json")
-        with open(outpath, "w") as f:
-            json.dump(output, f)
-        print(f"  OK: {name} — {len(articles)} articles saved")
+    # Try GNews API first
+    if API_KEY:
+        data = fetch_gnews(config["query"])
+        if data and data.get("articles"):
+            articles = deduplicate(data["articles"])
+            save_articles(name, articles)
+            return True
+        print(f"  GNews returned no results for {name}, trying RSS...")
+
+    # Fall back to Google News RSS with og:image scraping
+    print(f"  Using RSS fallback for {name}...")
+    articles = fetch_rss(config["rss"])
+    if articles:
+        articles = deduplicate(articles)
+        save_articles(name, articles)
         return True
 
-    print(f"  FAIL: {name} — no articles found")
+    print(f"  FAIL: {name} — no articles found from any source")
     return False
 
 
 def main():
     if not API_KEY:
-        print("ERROR: GNEWS_API_KEY not set")
-        sys.exit(1)
+        print("WARNING: GNEWS_API_KEY not set — using RSS fallback with og:image scraping")
 
     os.makedirs(DATA_DIR, exist_ok=True)
 
