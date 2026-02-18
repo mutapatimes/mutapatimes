@@ -167,7 +167,7 @@ function fetchNews(feedKey) {
 }
 
 // ============================================================
-// MAIN STORIES — GNews JSON (text-left, image-right)
+// MAIN STORIES — GNews JSON first, RSS fallback
 // ============================================================
 function loadMainStories(feedKey) {
   var cacheKey = "main_" + feedKey;
@@ -187,11 +187,35 @@ function loadMainStories(feedKey) {
         setCache(cacheKey, articles);
         renderMainStories(articles);
       } else {
-        $("#main-stories").html('<p class="loading-msg">No main stories available.</p>');
+        // JSON empty — fall back to RSS for main stories too
+        loadMainFromRss(feedKey);
       }
     },
     error: function () {
-      $("#main-stories").html('<p class="loading-msg">Unable to load main stories.</p>');
+      loadMainFromRss(feedKey);
+    }
+  });
+}
+
+function loadMainFromRss(feedKey) {
+  var cacheKey = "main_" + feedKey;
+  var cat = CATEGORIES[feedKey];
+  var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
+
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+    success: function (data) {
+      if (data && data.status === "ok" && data.items && data.items.length > 0) {
+        var articles = normalizeRssArticles(data.items);
+        setCache(cacheKey, articles);
+        renderMainStories(articles);
+      } else {
+        $("#main-stories").html('<p class="loading-msg">No stories available at this time.</p>');
+      }
+    },
+    error: function () {
+      $("#main-stories").html('<p class="loading-msg">Unable to load stories. Please try again later.</p>');
     }
   });
 }
