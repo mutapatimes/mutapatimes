@@ -1,6 +1,6 @@
 name: Fetch News Data
 
-# Runs every 3 hours (4 categories x 8 runs = 32 requests/day)
+# Runs every 3 hours — 6 categories via GNews only
 on:
   schedule:
     - cron: '0 */3 * * *'
@@ -14,95 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch news data
+      - name: Fetch news data from GNews
         env:
-          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: |
           mkdir -p data
 
-          # Normalize NewsData.io response to our standard format
-          normalize_newsdata() {
-            python3 -c "
-          import json, sys
-          data = json.load(sys.stdin)
-          articles = []
-          for r in data.get('results', []):
-              if not r.get('title'):
-                  continue
-              articles.append({
-                  'title': r.get('title', ''),
-                  'url': r.get('link', ''),
-                  'description': r.get('description', ''),
-                  'content': r.get('content', ''),
-                  'image': r.get('image_url', ''),
-                  'source': {'name': r.get('source_name', r.get('source_id', ''))},
-                  'publishedAt': r.get('pubDate', '')
-              })
-          if not articles:
-              sys.exit(1)
-          json.dump({'articles': articles}, sys.stdout)
-          "
-          }
-
-          # NewsData.io - supports country + category params
-          fetch_newsdata() {
-            local category="$1"
-            local params="$2"
-            local url="https://newsdata.io/api/1/latest?apikey=${NEWSDATA_API_KEY}&${params}&language=en&size=10"
-            local tmp
-            tmp=$(mktemp)
-
-            echo "Trying NewsData.io for ${category}..."
-            if curl -sf "$url" -o "$tmp"; then
-              if normalize_newsdata < "$tmp" > "data/${category}.json.tmp" 2>/dev/null; then
-                mv "data/${category}.json.tmp" "data/${category}.json"
-                echo "  OK: ${category} (NewsData.io)"
-                rm -f "$tmp"
-                return 0
-              fi
-              rm -f "$tmp" "data/${category}.json.tmp"
-            else
-              rm -f "$tmp"
-            fi
-            return 1
-          }
-
-          # GNews top-headlines with topic param (proper category filtering)
-          fetch_gnews_topic() {
+          fetch_gnews() {
             local category="$1"
             local topic="$2"
             local url="https://gnews.io/api/v4/top-headlines?topic=${topic}&token=${GNEWS_API_KEY}&lang=en&country=zw&max=10"
             local tmp
             tmp=$(mktemp)
 
-            echo "Trying GNews top-headlines (topic=${topic}) for ${category}..."
+            echo "Fetching GNews topic=${topic} for ${category}..."
             if curl -sf "$url" -o "$tmp"; then
               if python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d.get('articles',[])) > 0" < "$tmp"; then
                 mv "$tmp" "data/${category}.json"
-                echo "  OK: ${category} (GNews topic=${topic})"
-                return 0
-              fi
-              rm -f "$tmp"
-            else
-              rm -f "$tmp"
-            fi
-            return 1
-          }
-
-          # GNews search fallback
-          fetch_gnews_search() {
-            local category="$1"
-            local query="$2"
-            local url="https://gnews.io/api/v4/search?q=${query}&token=${GNEWS_API_KEY}&lang=en&max=10"
-            local tmp
-            tmp=$(mktemp)
-
-            echo "Trying GNews search for ${category}..."
-            if curl -sf "$url" -o "$tmp"; then
-              if python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d.get('articles',[])) > 0" < "$tmp"; then
-                mv "$tmp" "data/${category}.json"
-                echo "  OK: ${category} (GNews search)"
+                echo "  OK: ${category}"
                 return 0
               fi
               rm -f "$tmp"
@@ -113,62 +42,17 @@ jobs:
             return 1
           }
 
-          fetch_category() {
-            local category="$1"
-            local newsdata_params="$2"
-            local gnews_topic="$3"
-            local gnews_search="$4"
-
-            # 1. Try NewsData.io (best: has country + category params)
-            if [ -n "$NEWSDATA_API_KEY" ]; then
-              if fetch_newsdata "$category" "$newsdata_params"; then
-                return 0
-              fi
-            fi
-
-            # 2. Try GNews top-headlines with topic (proper category, Zimbabwe country)
-            if [ -n "$GNEWS_API_KEY" ] && [ -n "$gnews_topic" ]; then
-              if fetch_gnews_topic "$category" "$gnews_topic"; then
-                return 0
-              fi
-            fi
-
-            # 3. Last resort: GNews keyword search
-            if [ -n "$GNEWS_API_KEY" ]; then
-              fetch_gnews_search "$category" "$gnews_search"
-              return $?
-            fi
-
-            echo "  SKIP: ${category} (no API keys configured)"
-            return 1
-          }
-
-          # Home = Business/Economy
-          fetch_category "home" \
-            "q=Zimbabwe&category=business" \
-            "business" \
-            "Zimbabwe+economy+finance+trade"
+          fetch_gnews "business" "business"
           sleep 2
-
-          # Property
-          fetch_category "property" \
-            "q=Zimbabwe+property+OR+real+estate+OR+housing" \
-            "" \
-            "Zimbabwe+property+real+estate+housing"
+          fetch_gnews "technology" "technology"
           sleep 2
-
-          # Health
-          fetch_category "health" \
-            "q=Zimbabwe&category=health" \
-            "health" \
-            "Zimbabwe+health"
+          fetch_gnews "entertainment" "entertainment"
           sleep 2
-
-          # Arts & Culture
-          fetch_category "arts" \
-            "q=Zimbabwe&category=entertainment" \
-            "entertainment" \
-            "Zimbabwe+arts+culture+entertainment"
+          fetch_gnews "sports" "sports"
+          sleep 2
+          fetch_gnews "science" "science"
+          sleep 2
+          fetch_gnews "health" "health"
 
       - name: Commit and push updated data
         run: |

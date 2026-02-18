@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  fetchNews("business");
+  fetchNews("science");
 });

@@ -1,20 +1,21 @@
 /*
  * The Mutapa Times - Configuration
- * Primary: Static JSON from GNews/NewsData.io (fetched by GitHub Action)
- * Fallback: Google News RSS via rss2json.com (client-side, no key needed)
+ * GNews-only data source (fetched by GitHub Action)
+ * Fallback: Google News RSS via rss2json.com
  */
 var MUTAPA_CONFIG = {
-  CACHE_DURATION: 30 * 60 * 1000, // 30 minutes
+  CACHE_DURATION: 30 * 60 * 1000,
   RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
   DATA_PATH: "data/"
 };
 
-// Google News RSS feed URLs (fallback when JSON data unavailable)
-var NEWS_FEEDS = {
-  home: "https://news.google.com/rss/search?q=Zimbabwe+economy+finance+trade&hl=en&gl=US&ceid=US:en",
-  property: "https://news.google.com/rss/search?q=Zimbabwe+property+real+estate+housing+land&hl=en&gl=US&ceid=US:en",
-  health: "https://news.google.com/rss/search?q=Zimbabwe+health+medical&hl=en&gl=US&ceid=US:en",
-  arts: "https://news.google.com/rss/search?q=Zimbabwe+arts+culture+entertainment+music&hl=en&gl=US&ceid=US:en"
+var CATEGORIES = {
+  business:      { label: "Business",      topic: "business",      rss: "https://news.google.com/rss/search?q=Zimbabwe+business+economy+finance&hl=en&gl=US&ceid=US:en" },
+  technology:    { label: "Technology",     topic: "technology",    rss: "https://news.google.com/rss/search?q=Zimbabwe+technology+tech+digital&hl=en&gl=US&ceid=US:en" },
+  entertainment: { label: "Entertainment",  topic: "entertainment", rss: "https://news.google.com/rss/search?q=Zimbabwe+entertainment+music+arts+culture&hl=en&gl=US&ceid=US:en" },
+  sports:        { label: "Sports",         topic: "sports",        rss: "https://news.google.com/rss/search?q=Zimbabwe+sports+cricket+football+rugby&hl=en&gl=US&ceid=US:en" },
+  science:       { label: "Science",        topic: "science",       rss: "https://news.google.com/rss/search?q=Zimbabwe+science+research+environment&hl=en&gl=US&ceid=US:en" },
+  health:        { label: "Health",         topic: "health",        rss: "https://news.google.com/rss/search?q=Zimbabwe+health+medical&hl=en&gl=US&ceid=US:en" }
 };
 
 // Zimbabwe cities for weather
@@ -106,33 +107,59 @@ function stripHtml(html) {
   return tmp.textContent || tmp.innerText || "";
 }
 
-// Clean up GNews truncation markers like "... [2105 chars]"
 function cleanText(text) {
   if (!text) return "";
   return text.replace(/\s*\[\d+ chars\]\s*$/, '').trim();
 }
 
-// Get the longest available text, cleaned up
 function getFullText(content, description) {
   var c = cleanText(content);
   var d = cleanText(description);
   return c.length >= d.length ? c : d;
 }
 
+// Reading time estimate from text length
+function getReadingTime(text) {
+  if (!text) return "1 min read";
+  var words = text.split(/\s+/).length;
+  var mins = Math.max(1, Math.ceil(words / 200));
+  return mins + " min read";
+}
+
+// Format publish date
+function formatDate(dateStr) {
+  if (!dateStr) return "";
+  try {
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return "";
+    var now = new Date();
+    var diffMs = now - d;
+    var diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+    if (diffHrs < 1) return "Just now";
+    if (diffHrs < 24) return diffHrs + "h ago";
+    var diffDays = Math.floor(diffHrs / 24);
+    if (diffDays === 1) return "Yesterday";
+    if (diffDays < 7) return diffDays + " days ago";
+    var options = { month: 'short', day: 'numeric', year: 'numeric' };
+    return d.toLocaleDateString("en-US", options);
+  } catch (e) {
+    return "";
+  }
+}
+
 // ============================================================
 // Main entry point
 // ============================================================
-function fetchNews(feedKey, cacheKey, pageNum) {
+function fetchNews(feedKey) {
   var date = new Date();
   var startDate = new Date("2020-04-18");
   var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   $(".date").text(date.toLocaleDateString("en-US", options));
-  $(".vol").text("Edition # " + volNum + " | Page " + pageNum);
+  $(".vol").text("Edition # " + volNum);
   fetchWeather();
 
-  // Try JSON data first (from GitHub Action), fall back to RSS
   loadContent(feedKey);
 }
 
@@ -147,7 +174,6 @@ function loadContent(feedKey) {
     return;
   }
 
-  // Try static JSON from GitHub Action (has images from API)
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.DATA_PATH + feedKey + ".json",
@@ -169,7 +195,8 @@ function loadContent(feedKey) {
 
 function loadFromRss(feedKey) {
   var cacheKey = "content_" + feedKey;
-  var rssUrl = NEWS_FEEDS[feedKey] || NEWS_FEEDS.home;
+  var cat = CATEGORIES[feedKey];
+  var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
 
   $.ajax({
     type: "GET",
@@ -180,20 +207,17 @@ function loadFromRss(feedKey) {
         setCache(cacheKey, articles);
         renderArticles(articles);
       } else {
-        $(".storyTitle1").text("Unable to load news");
-        $(".story1").text("Please try again later.");
+        $("#news-grid").html('<p style="text-align:center;padding:40px;color:#999;">Unable to load news. Please try again later.</p>');
       }
     },
     error: function () {
-      $(".storyTitle1").text("Unable to load news");
-      $(".story1").text("Please try again later.");
+      $("#news-grid").html('<p style="text-align:center;padding:40px;color:#999;">Unable to load news. Please try again later.</p>');
     }
   });
 }
 
 // ============================================================
-// Normalize different API formats to one standard format
-// Standard: { title, url, description, image, source }
+// Normalize to standard: { title, url, description, image, source, publishedAt }
 // ============================================================
 function normalizeJsonArticles(articles) {
   var result = [];
@@ -204,7 +228,8 @@ function normalizeJsonArticles(articles) {
       url: a.url || a.link || "",
       description: getFullText(a.content, a.description),
       image: a.image || a.image_url || "",
-      source: (a.source && a.source.name) ? a.source.name : (a.source_name || "")
+      source: (a.source && a.source.name) ? a.source.name : (a.source_name || ""),
+      publishedAt: a.publishedAt || a.pubDate || ""
     });
   }
   return result;
@@ -225,69 +250,59 @@ function normalizeRssArticles(items) {
       url: item.link || "",
       description: desc,
       image: image,
-      source: parsed.source
+      source: parsed.source,
+      publishedAt: item.pubDate || ""
     });
   }
   return result;
 }
 
 // ============================================================
-// Unified renderer: articles[] → main grid + extra stories
+// Renderer: two-column card grid
 // ============================================================
-
-// Set image from API - only show real images, hide if none available
-function setArticleImage(selector, imageUrl) {
-  var el = $(selector);
-  if (!el.length) return;
-
-  if (imageUrl) {
-    el.attr("src", imageUrl);
-    el.show();
-    el.off("error").on("error", function() {
-      $(this).off("error");
-      $(this).hide();
-    });
-  } else {
-    el.hide();
-  }
-}
-
 function renderArticles(articles) {
+  var grid = $("#news-grid");
+  if (!grid.length) return;
+  grid.empty();
+
   if (!articles || articles.length === 0) {
-    $(".storyTitle1").text("No articles found at this time");
+    grid.html('<p style="text-align:center;padding:40px;color:#999;">No articles found at this time.</p>');
     return;
   }
 
-  // First 7 → main grid
-  var gridMax = Math.min(articles.length, 7);
-  for (var i = 0; i < gridMax; i++) {
+  for (var i = 0; i < articles.length && i < 20; i++) {
     var a = articles[i];
-    var num = i + 1;
+    var readTime = getReadingTime(a.description);
+    var pubDate = formatDate(a.publishedAt);
 
-    if (num <= 3) {
-      setArticleImage(".image" + num, a.image);
-    }
-    $(".storyTitle" + num).text(a.title);
-    $(".story" + num).text(a.description);
-    $(".by" + num).text(a.source ? "Source: " + a.source : "");
-    $(".a" + num).attr("href", a.url);
-  }
+    var card = $('<div class="article-card">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
 
-  // Remaining → extra stories (2-column grid via CSS)
-  if (articles.length > 7) {
-    var container = $("#extra-stories-list");
-    if (container.length) {
-      for (var j = 7; j < articles.length && j < 22; j++) {
-        var ex = articles[j];
-        var div = $('<div class="extra-story-item">');
-        var link = $('<a>').attr('href', ex.url || '#').attr('target', '_blank');
-        var title = $('<h5 class="extra-story-title">').text(ex.title);
-        var source = $('<p class="extra-story-source">').text(ex.source ? 'Source: ' + ex.source : '');
-        link.append(title).append(source);
-        div.append(link);
-        container.append(div);
-      }
-      $("#extra-stories").show();
+    // Image
+    if (a.image) {
+      var imgEl = $('<img class="article-image">').attr('src', a.image);
+      imgEl.on('error', function() { $(this).hide(); });
+      link.append(imgEl);
     }
+
+    // Headline
+    link.append($('<h4 class="article-title">').text(a.title));
+
+    // Meta line: source + date + reading time
+    var meta = $('<p class="article-meta">');
+    var parts = [];
+    if (a.source) parts.push(a.source);
+    if (pubDate) parts.push(pubDate);
+    parts.push(readTime);
+    meta.text(parts.join(" · "));
+    link.append(meta);
+
+    // Description
+    var desc = a.description;
+    if (desc && desc.length > 200) desc = desc.substring(0, 200) + "...";
+    link.append($('<p class="article-desc">').text(desc));
+
+    card.append(link);
+    grid.append(card);
   }
 }
