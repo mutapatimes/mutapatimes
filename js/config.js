@@ -382,13 +382,14 @@ function getRandomEditorialImage() {
 }
 
 function initEditorialImages() {
+  // Only set random images for elements that don't already have a src
   var portrait = document.querySelector(".editorial-portrait-img");
-  if (portrait) {
+  if (portrait && !portrait.getAttribute("src")) {
     portrait.src = getRandomEditorialImage();
     portrait.onerror = function() { this.style.display = "none"; };
   }
   var landscape = document.querySelector(".editorial-landscape-img");
-  if (landscape) {
+  if (landscape && !landscape.getAttribute("src")) {
     landscape.src = getRandomEditorialImage();
     landscape.onerror = function() { this.style.display = "none"; };
   }
