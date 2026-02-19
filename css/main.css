@@ -1468,6 +1468,26 @@ h4 {
   margin: 0;
 }
 
+.subscribe-fine a {
+  color: #999;
+  text-decoration: underline;
+}
+
+.subscribe-fine a:hover {
+  color: var(--accent);
+}
+
+.subscribe-status {
+  font-size: 0.85em;
+  margin: 0 0 10px;
+  transition: color 0.3s ease;
+}
+
+.subscribe-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* Cookie consent banner */
 .cookie-consent {
   position: fixed;
