@@ -531,18 +531,16 @@ a {
 
 /* --- Editorial images --- */
 
-/* Landscape image between ticker and content */
+/* Banner image between ticker and content */
 .editorial-landscape-wrap {
   width: 100%;
-  height: 200px;
   overflow: hidden;
   position: relative;
   background: #e8e6e3;
 }
 .editorial-landscape-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -824,7 +822,7 @@ a:hover {
     display: none;
   }
 
-  .editorial-landscape-wrap { height: 150px; }
+  .editorial-landscape-wrap { /* auto height from image */ }
   .editorial-portrait-wrap { height: 220px; }
   .editorial-inline-wrap { height: 100px; }
 
