@@ -1,12 +1,14 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Mutapa Times",
+  "name": "The Mutapa Times",
+  "description": "Business and intelligence newspaper delivering curated Zimbabwean news for the diaspora.",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/index.html",
+  "display": "standalone",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "theme_color": "#1a1a1a"
 }
