@@ -309,6 +309,7 @@ a {
   text-align: center;
   font-size: 3.2em;
   font-family: 'Playfair Display', serif;
+  margin-top: 0;
   margin-bottom: 5px;
   line-height: 1.2;
   letter-spacing: 0.08em;
@@ -1364,61 +1365,30 @@ h4 {
   flex-shrink: 0;
 }
 
-/* Proverb section between spotlight and sidebar */
-.proverb-section {
-  position: relative;
+/* Sidebar portrait image between spotlight and more stories */
+.sidebar-portrait {
   width: 100%;
-  min-height: 180px;
-  overflow: hidden;
   background: var(--dark-color);
 }
 
-.proverb-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.sidebar-portrait-img {
   width: 100%;
-  height: 100%;
-}
-
-.proverb-bg-img {
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
-  opacity: 0.35;
 }
 
-.proverb-overlay {
-  position: relative;
-  z-index: 1;
-  padding: 28px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 180px;
-}
-
-.proverb-text {
+.sidebar-portrait-caption {
   font-family: 'Playfair Display', serif;
-  font-size: 1.05em;
+  font-size: 0.82em;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.5;
-  color: #fff;
-  margin: 0 0 8px;
-  letter-spacing: 0.02em;
-}
-
-.proverb-attr {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 9px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: rgba(255,255,255,0.5);
+  line-height: 1.45;
+  color: rgba(255,255,255,0.7);
   margin: 0;
+  padding: 10px 14px 12px;
+  background: var(--dark-color);
+  letter-spacing: 0.01em;
 }
 
 /* ============================================================

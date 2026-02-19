@@ -1,9 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
     <head>
     <meta charset="utf-8">
     <title>THE MUTAPA TIMES</title>
+    <link rel="canonical" href="https://www.mutapatimes.com/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,6 +19,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" as="image" href="img/banner.png">
     <meta name="title" content="The Mutapa Times">
 <meta name="description" content="The Mutapa Times is a business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.">
 <meta name="keywords" content="The Mutapa Times, newspaper, Zimbabwean, news, Zimbabwean diaspora, Harare, Bulawayo, Gweru, Zimbabwe, business, health, politics">
@@ -30,14 +32,15 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Mutapa Times">
 <meta property="og:description" content="Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.">
-<meta property="og:image" content="img/banner.png">
+<meta property="og:image" content="https://www.mutapatimes.com/img/banner.png">
 <meta property="og:url" content="https://www.mutapatimes.com/">
+<meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@mutapatimes">
 <meta name="twitter:title" content="The Mutapa Times">
 <meta name="twitter:description" content="Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.">
-<meta name="twitter:image" content="img/banner.png">
+<meta name="twitter:image" content="https://www.mutapatimes.com/img/banner.png">
 
     <meta name="theme-color" content="#fafafa">
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -56,6 +59,41 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Mutapa Times",
+  "url": "https://www.mutapatimes.com",
+  "logo": "https://www.mutapatimes.com/img/logo.png",
+  "description": "Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.",
+  "sameAs": [
+    "https://twitter.com/mutapatimes"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "mutapatimes@gmail.com",
+    "contactType": "customer service"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The Mutapa Times",
+  "url": "https://www.mutapatimes.com",
+  "description": "Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Mutapa Times",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.mutapatimes.com/img/logo.png"
+    }
+  }
+}
+</script>
   </head>
 
   <body>
@@ -68,7 +106,7 @@
         </div>
   <a href="index.html" class="title-link">
     <div class="titleDiv">
-      <div class="title notranslate">THE MUTAPA TIMES</div>
+      <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
     <h4 class="sub notranslate">Zimbabwe outside-in.</h4>
   </a>
@@ -149,33 +187,28 @@
 
   <!-- Banner image -->
   <div class="editorial-landscape-wrap">
-    <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline">
+    <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline" width="1000" height="200">
   </div>
 
   <!-- Main layout: stories + sidebar -->
   <div class="content-layout">
-    <div id="main-stories">
-      <p class="loading-msg">Loading stories...</p>
+    <div id="main-stories" role="region" aria-live="polite" aria-label="Main news stories">
+      <p class="loading-msg">Fetching the latest Zimbabwe headlines&#8230;</p>
     </div>
     <div class="sidebar">
       <div class="spotlight-section">
         <h4 class="spotlight-header">Spotlight</h4>
-        <div id="spotlight-stories">
-          <p class="loading-msg" style="color: rgba(255,255,255,0.6);">Loading...</p>
+        <div id="spotlight-stories" role="region" aria-live="polite" aria-label="Spotlight stories">
+          <p class="loading-msg" style="color: rgba(255,255,255,0.6);">Fetching spotlight coverage&#8230;</p>
         </div>
       </div>
-      <div class="proverb-section">
-        <div class="proverb-bg">
-          <img class="proverb-bg-img" src="" alt="The Mutapa Times" loading="lazy">
-        </div>
-        <div class="proverb-overlay">
-          <p class="proverb-text">&ldquo;If you want to go fast, go alone. If you want to go far, go together.&rdquo;</p>
-          <p class="proverb-attr">&mdash; African Proverb</p>
-        </div>
+      <div class="sidebar-portrait">
+        <img class="sidebar-portrait-img" src="img/harare-palms.jpg" alt="Palm trees line a Harare boulevard, framing the city skyline against a clear blue sky" loading="lazy" width="600" height="800">
+        <p class="sidebar-portrait-caption">Harare&rsquo;s First Street palms tower over the capital&rsquo;s skyline &mdash; a city forever reaching upward.</p>
       </div>
       <h4 class="sidebar-header">More Zimbabwe Stories</h4>
-      <div id="sidebar-stories">
-        <p class="loading-msg">Loading...</p>
+      <div id="sidebar-stories" role="region" aria-live="polite" aria-label="More Zimbabwe stories">
+        <p class="loading-msg">Fetching more stories&#8230;</p>
       </div>
     </div>
   </div>
@@ -288,7 +321,17 @@
 <div id="google_translate_element"></div>
 <script type="text/javascript">
 function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, includedLanguages: 'sn,en,nd'}, 'google_translate_element');}
-</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script><script type="text/javascript">
+(function() {
+  function loadGoogleTranslate() {
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(s);
+  }
+  if (document.readyState === 'complete') loadGoogleTranslate();
+  else window.addEventListener('load', loadGoogleTranslate);
+})();
+</script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
