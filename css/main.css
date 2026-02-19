@@ -447,6 +447,48 @@ a {
   margin: 0;
 }
 
+/* Share button */
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin-left: 8px;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+.share-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.share-btn svg {
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Spotlight share button (white variant) */
+.spotlight-meta .share-btn {
+  color: rgba(255,255,255,0.45);
+  border-color: rgba(255,255,255,0.2);
+}
+.spotlight-meta .share-btn:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.5);
+}
+
 /* --- Ranking number column --- */
 .main-article-rank {
   flex: 0 0 50%;

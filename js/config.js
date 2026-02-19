@@ -504,6 +504,39 @@ function initEditorialImages() {
 }
 
 // ============================================================
+// Share button — uses native Web Share API, clipboard fallback
+// ============================================================
+var SHARE_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>';
+
+function createShareBtn(title, url) {
+  var btn = $('<button class="share-btn" title="Share this article">').html(SHARE_ICON_SVG);
+  btn.on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var shareData = {
+      title: title,
+      text: title + ' — via The Mutapa Times',
+      url: url
+    };
+    if (navigator.share) {
+      navigator.share(shareData).catch(function() {});
+    } else {
+      // Clipboard fallback for desktop
+      var temp = document.createElement('textarea');
+      temp.value = url;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      var original = btn.html();
+      btn.text('Copied!');
+      setTimeout(function() { btn.html(original); }, 1500);
+    }
+  });
+  return btn;
+}
+
+// ============================================================
 // RENDER: Main stories — text + ranking number (alternating sides)
 // ============================================================
 function renderMainStories(articles) {
@@ -554,6 +587,7 @@ function renderMainStories(articles) {
     } else if (a.source) {
       meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
+    meta.append(createShareBtn(a.title, a.url));
     textCol.append(meta);
 
     var desc = a.description;
@@ -678,6 +712,7 @@ function renderSpotlightStories(articles) {
       if (a.source) meta.append(document.createTextNode(" \u00b7 "));
       meta.append(document.createTextNode(pubDate));
     }
+    meta.append(createShareBtn(a.title, a.url));
     link.append(meta);
 
     item.append(link);
@@ -722,6 +757,7 @@ function renderSidebarStories(articles) {
     } else if (a.source) {
       meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
+    meta.append(createShareBtn(a.title, a.url));
     link.append(meta);
 
     item.append(link);
