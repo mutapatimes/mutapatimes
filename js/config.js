@@ -378,10 +378,10 @@ function isTitleRepeat(title, desc) {
   if (!title || !desc) return true;
   var t = title.toLowerCase().replace(/[^a-z0-9]/g, '');
   var d = desc.toLowerCase().replace(/[^a-z0-9]/g, '');
-  // If desc is mostly contained in title or very short, it's a repeat
-  if (d.length < 30) return true;
-  if (t.indexOf(d.substring(0, 40)) !== -1) return true;
-  if (d.indexOf(t.substring(0, 40)) !== -1) return true;
+  // Only filter if extremely short or nearly identical to title
+  if (d.length < 15) return true;
+  if (t === d) return true;
+  if (t.length > 0 && d.length > 0 && t.indexOf(d) !== -1) return true;
   return false;
 }
 
@@ -495,11 +495,11 @@ function initEditorialImages() {
     landscape.src = getRandomQuoteImage();
     landscape.onerror = function() { this.style.display = "none"; };
   }
-  // Quote image between Spotlight and More Zimbabwe Stories
-  var quoteImg = document.querySelector(".editorial-quote-img");
-  if (quoteImg && !quoteImg.getAttribute("src")) {
-    quoteImg.src = getRandomQuoteImage();
-    quoteImg.onerror = function() { this.parentElement.style.display = "none"; };
+  // Proverb background image
+  var proverbImg = document.querySelector(".proverb-bg-img");
+  if (proverbImg && !proverbImg.getAttribute("src")) {
+    proverbImg.src = getRandomQuoteImage();
+    proverbImg.onerror = function() { this.style.display = "none"; };
   }
 }
 
@@ -539,7 +539,9 @@ function renderMainStories(articles) {
     var meta = $('<p class="main-article-meta">');
     if (a.source) {
       meta.append($('<span>').text(a.source));
-      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      }
     }
     var extras = [];
     if (pubDate) extras.push(pubDate);
@@ -582,16 +584,19 @@ function renderMainStories(articles) {
     }
   }
 
-  // Subscribe banner at end of main news
-  var subscribe = $('<div class="subscribe-banner">');
-  subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
-  subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
-  var form = $('<div class="subscribe-form">');
-  form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
-  form.append($('<button class="subscribe-btn">').text("Subscribe"));
-  subscribe.append(form);
-  subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
-  container.append(subscribe);
+  // Subscribe banner — render full-width after the content-layout grid
+  var contentLayout = $(".content-layout");
+  if (contentLayout.length) {
+    var subscribe = $('<div class="subscribe-banner">');
+    subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
+    subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
+    var form = $('<div class="subscribe-form">');
+    form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
+    form.append($('<button class="subscribe-btn">').text("Subscribe"));
+    subscribe.append(form);
+    subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
+    contentLayout.after(subscribe);
+  }
 }
 
 // ============================================================
@@ -705,7 +710,9 @@ function renderSidebarStories(articles) {
     var meta = $('<p class="sidebar-meta">');
     if (a.source) {
       meta.append($('<span>').text(a.source));
-      meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
+      }
     }
     if (pubDate) {
       meta.append(document.createTextNode(" \u00b7 " + pubDate));

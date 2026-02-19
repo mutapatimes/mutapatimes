@@ -841,13 +841,23 @@ a:hover {
     overflow: hidden;
   }
 
-  .editorial-landscape-wrap { /* auto height from image */ }
+  /* Full-bleed images on mobile — break out of .paper padding */
+  .editorial-landscape-wrap {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+  .break-section {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
   .break-caption { font-size: 0.72em; padding: 8px 14px; }
 
   .live-cam-embed { padding-bottom: 56.25%; }
   .live-cam-header { padding: 8px 12px; }
 
-  .subscribe-banner { padding: 28px 16px; }
+  .subscribe-banner { padding: 28px 16px; margin-left: -10px; margin-right: -10px; width: calc(100% + 20px); }
   .subscribe-title { font-size: 1.2em; }
   .subscribe-form { flex-direction: column; gap: 8px; }
   .subscribe-input { border-right: 1px solid var(--border); }
@@ -1312,18 +1322,61 @@ h4 {
   flex-shrink: 0;
 }
 
-/* Quote image between spotlight and sidebar */
-.editorial-quote-wrap {
-  width: 100%;
-  overflow: hidden;
+/* Proverb section between spotlight and sidebar */
+.proverb-section {
   position: relative;
-  background: #e8e6e3;
+  width: 100%;
+  min-height: 180px;
+  overflow: hidden;
+  background: var(--dark-color);
 }
 
-.editorial-quote-img {
+.proverb-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.proverb-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  opacity: 0.35;
+}
+
+.proverb-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 28px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.proverb-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.proverb-attr {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
 }
 
 /* ============================================================
@@ -1334,6 +1387,7 @@ h4 {
   padding: 40px 30px;
   text-align: center;
   background: #fff8f0;
+  width: 100%;
 }
 
 .subscribe-title {
