@@ -18,7 +18,7 @@ BREVO_LIST_ID = int(os.environ.get("BREVO_LIST_ID", "2"))
 DATA_DIR = "data"
 
 SENDER_NAME = "The Mutapa Times"
-SENDER_EMAIL = "briefing@mutapatimes.com"
+SENDER_EMAIL = "news@mutapatimes.com"
 SITE_URL = "https://www.mutapatimes.com"
 
 CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"]
