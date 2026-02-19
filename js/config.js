@@ -14,13 +14,16 @@ var MAIN_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
-  "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en"
+  "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=site:zimlive.com+OR+site:newsday.co.zw+OR+site:herald.co.zw+OR+site:bulawayo24.com+OR+site:263chat.com&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=site:pindula.co.zw+OR+site:nehanda radio+OR+site:newzimbabwe.com+OR+site:thezimbabwemail.com&hl=en&gl=US&ceid=US:en"
 ];
 
 // Sidebar feeds — more local-focused
 var SIDEBAR_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
-  "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en"
+  "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en"
 ];
 
 // Spotlight feeds — reputable international sources only
@@ -359,14 +362,40 @@ function isRecentArticle(dateStr) {
   }
 }
 
+function extractDescriptionFromHtml(html) {
+  if (!html) return "";
+  // Google News RSS wraps actual snippets in <font> tags or after <br> tags
+  // Try to extract text after the last </a> tag which is often the real snippet
+  var afterLinks = html.replace(/<a[^>]*>.*?<\/a>/gi, '').replace(/<ol>.*?<\/ol>/gi, '');
+  var stripped = stripHtml(afterLinks).trim();
+  // Also try the full stripped version
+  var full = stripHtml(html).trim();
+  // Return the longer meaningful one
+  return stripped.length > full.length * 0.3 ? stripped : full;
+}
+
+function isTitleRepeat(title, desc) {
+  if (!title || !desc) return true;
+  var t = title.toLowerCase().replace(/[^a-z0-9]/g, '');
+  var d = desc.toLowerCase().replace(/[^a-z0-9]/g, '');
+  // If desc is mostly contained in title or very short, it's a repeat
+  if (d.length < 30) return true;
+  if (t.indexOf(d.substring(0, 40)) !== -1) return true;
+  if (d.indexOf(t.substring(0, 40)) !== -1) return true;
+  return false;
+}
+
 function normalizeRssArticles(items) {
   var result = [];
   for (var i = 0; i < items.length; i++) {
     var item = items[i];
     var parsed = extractSource(item.title || "");
     if (!parsed.headline) continue;
-    var desc = stripHtml(getFullText(item.content, item.description));
-    if (desc.length < 10) desc = "";
+
+    // Try to get a real description, not just a headline repeat
+    var rawDesc = getFullText(item.content, item.description);
+    var desc = extractDescriptionFromHtml(rawDesc);
+    if (isTitleRepeat(parsed.headline, desc)) desc = "";
 
     result.push({
       title: parsed.headline,
@@ -433,28 +462,25 @@ function deduplicateByTopic(articles) {
   return result;
 }
 
-// Quote images for inline editorial breaks
-var QUOTE_IMAGES = [
-  "editorial-3.jpg",
-  "editorial-4.jpg",
-  "editorial-5.jpg",
-  "editorial-6.jpg",
-  "editorial-7.jpg"
+// Break images between news stories — with captions
+var BREAK_IMAGES = [
+  { src: "break-1.jpg", caption: "Business and intelligence \u2014 building the Zimbabwe of tomorrow" },
+  { src: "break-2.jpg", caption: "Staying connected and informed \u2014 powering Africa\u2019s future" },
+  { src: "break-3.jpg", caption: "Enterprise and ambition \u2014 the spirit of a nation rising" },
+  { src: "break-4.jpg", caption: "Bridging distance and diaspora \u2014 one story at a time" }
 ];
 
-// Shuffle array to get non-repeating sequence
-var _quoteIdx = 0;
-var _shuffledQuotes = QUOTE_IMAGES.slice().sort(function() { return Math.random() - 0.5; });
+var _breakIdx = 0;
 
-function getNextQuoteImage() {
-  var img = _shuffledQuotes[_quoteIdx % _shuffledQuotes.length];
-  _quoteIdx++;
-  return "img/" + img;
+function getNextBreakImage() {
+  var item = BREAK_IMAGES[_breakIdx % BREAK_IMAGES.length];
+  _breakIdx++;
+  return item;
 }
 
 function getRandomQuoteImage() {
-  var idx = Math.floor(Math.random() * QUOTE_IMAGES.length);
-  return "img/" + QUOTE_IMAGES[idx];
+  var idx = Math.floor(Math.random() * BREAK_IMAGES.length);
+  return "img/" + BREAK_IMAGES[idx].src;
 }
 
 function initEditorialImages() {
@@ -506,11 +532,16 @@ function renderMainStories(articles) {
     textCol.append($('<h3 class="main-article-title">').text(a.title));
 
     var meta = $('<p class="main-article-meta">');
-    var parts = [];
-    if (a.source) parts.push(a.source);
-    if (pubDate) parts.push(pubDate);
-    if (readTime) parts.push(readTime);
-    meta.text(parts.join(" \u00b7 "));
+    if (a.source) {
+      meta.append($('<span>').text(a.source));
+      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+    }
+    var extras = [];
+    if (pubDate) extras.push(pubDate);
+    if (readTime) extras.push(readTime);
+    if (extras.length) {
+      meta.append(document.createTextNode(" \u00b7 " + extras.join(" \u00b7 ")));
+    }
     if (a.isLocal) {
       meta.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
@@ -531,12 +562,14 @@ function renderMainStories(articles) {
     card.append(link);
     container.append(card);
 
-    // Insert quote image after every 2 articles
+    // Insert break image with caption after every 2 articles
     if (rank % 2 === 0 && rank < 15) {
-      var ph = $('<div class="editorial-inline-wrap">');
-      var img = $('<img class="editorial-inline-img">').attr('src', getNextQuoteImage()).attr('alt', 'The Mutapa Times');
-      img.on('error', function() { $(this).parent().hide(); });
+      var breakData = getNextBreakImage();
+      var ph = $('<div class="break-section">');
+      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times');
+      img.on('error', function() { $(this).closest('.break-section').hide(); });
       ph.append(img);
+      ph.append($('<p class="break-caption">').text(breakData.caption));
       container.append(ph);
     }
   }
@@ -662,10 +695,13 @@ function renderSidebarStories(articles) {
     link.append($('<h4 class="sidebar-title">').text(a.title));
 
     var meta = $('<p class="sidebar-meta">');
-    var parts = [];
-    if (a.source) parts.push(a.source);
-    if (pubDate) parts.push(pubDate);
-    meta.text(parts.join(" \u00b7 "));
+    if (a.source) {
+      meta.append($('<span>').text(a.source));
+      meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
+    }
+    if (pubDate) {
+      meta.append(document.createTextNode(" \u00b7 " + pubDate));
+    }
     if (a.isLocal) {
       meta.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
