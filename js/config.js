@@ -1,8 +1,7 @@
 /*
  * The Mutapa Times - Configuration
- * All stories sourced from Google News RSS via rss2json.com
- * Main stories: sorted by newest, with ranking numbers
- * Sidebar: additional headlines, generic order
+ * Single-page news aggregator: all Zimbabwe news, sorted by newest
+ * Pulls from multiple Google News RSS feeds for broad coverage
  */
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
@@ -10,14 +9,19 @@ var MUTAPA_CONFIG = {
   DATA_PATH: "data/"
 };
 
-var CATEGORIES = {
-  business:      { label: "Business",      topic: "business",      rss: "https://news.google.com/rss/search?q=Zimbabwe+business+economy+finance+trade&hl=en&gl=US&ceid=US:en" },
-  technology:    { label: "Technology",     topic: "technology",    rss: "https://news.google.com/rss/search?q=Zimbabwe+technology+tech+digital+innovation&hl=en&gl=US&ceid=US:en" },
-  entertainment: { label: "Entertainment",  topic: "entertainment", rss: "https://news.google.com/rss/search?q=Zimbabwe+entertainment+music+arts+culture+film&hl=en&gl=US&ceid=US:en" },
-  sports:        { label: "Sports",         topic: "sports",        rss: "https://news.google.com/rss/search?q=Zimbabwe+sports+cricket+football+rugby+athletics&hl=en&gl=US&ceid=US:en" },
-  science:       { label: "Science",        topic: "science",       rss: "https://news.google.com/rss/search?q=Zimbabwe+science+research+environment+wildlife&hl=en&gl=US&ceid=US:en" },
-  health:        { label: "Health",         topic: "health",        rss: "https://news.google.com/rss/search?q=Zimbabwe+health+medical+hospital+disease&hl=en&gl=US&ceid=US:en" }
-};
+// Multiple RSS feeds to pull from — broad, less selective, prioritizing recency
+var MAIN_RSS_FEEDS = [
+  "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en"
+];
+
+// Sidebar feeds — more local-focused
+var SIDEBAR_RSS_FEEDS = [
+  "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en"
+];
 
 // Zimbabwe cities for weather
 var WEATHER_CITIES = [
@@ -135,25 +139,20 @@ function getFullText(content, description) {
   return c.length >= d.length ? c : d;
 }
 
-// Reading time estimate — only shown when we have real data
 function getReadingTime(text) {
   if (!text) return "";
   var totalChars = text.length;
-  // GNews truncates content with "[xxx chars]" — use full char count
   var match = text.match(/\[(\d+)\s*chars?\]\s*$/);
   if (match) {
     totalChars = parseInt(match[1], 10);
   } else if (totalChars < 500) {
-    // Short snippet (RSS) — not enough data to estimate read time
     return "";
   }
-  // Average word length ~5 chars + space = ~6 chars per word
   var words = Math.round(totalChars / 6);
   var mins = Math.max(1, Math.ceil(words / 200));
   return mins + " min read";
 }
 
-// Format publish date — relative
 function formatDate(dateStr) {
   if (!dateStr) return "";
   try {
@@ -177,8 +176,7 @@ function formatDate(dateStr) {
 // ============================================================
 // Main entry point
 // ============================================================
-function fetchNews(feedKey) {
-  _activeCategory = feedKey;
+function fetchNews() {
   var date = new Date();
   var startDate = new Date("2020-04-18");
   var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
@@ -198,95 +196,100 @@ function fetchNews(feedKey) {
   // Init editorial images (sidebar portrait + landscape)
   initEditorialImages();
 
-  // Load main stories from Google News RSS (sorted by newest)
-  loadMainStories(feedKey);
-  // Load sidebar stories from Google News RSS (generic order)
-  loadSidebarStories(feedKey);
+  // Load all stories from multiple RSS feeds
+  loadMainStories();
+  loadSidebarStories();
 }
 
 // ============================================================
-// MAIN STORIES — Google News RSS, sorted by newest
+// MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
-function loadMainStories(feedKey) {
-  var cacheKey = "main_" + feedKey;
+function loadMainStories() {
+  var cacheKey = "main_all";
   var cached = getCache(cacheKey);
   if (cached) {
     renderMainStories(cached);
     return;
   }
 
-  var cat = CATEGORIES[feedKey];
-  var rssUrl = cat ? cat.rss : CATEGORIES.business.rss;
+  var allArticles = [];
+  var completed = 0;
+  var total = MAIN_RSS_FEEDS.length;
 
-  $.ajax({
-    type: "GET",
-    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
-    success: function (data) {
-      if (data && data.status === "ok" && data.items && data.items.length > 0) {
-        var articles = normalizeRssArticles(data.items);
-        // Filter to recent articles only
-        articles = articles.filter(function(a) { return isRecentArticle(a.publishedAt); });
-        // Sort by date — newest first
-        articles.sort(function(a, b) {
-          var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
-          var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
-          return dateB - dateA;
-        });
-        setCache(cacheKey, articles);
-        renderMainStories(articles);
-      } else {
-        $("#main-stories").html('<p class="loading-msg">No stories available at this time.</p>');
+  MAIN_RSS_FEEDS.forEach(function(rssUrl) {
+    $.ajax({
+      type: "GET",
+      url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+      success: function (data) {
+        if (data && data.status === "ok" && data.items && data.items.length > 0) {
+          var articles = normalizeRssArticles(data.items);
+          allArticles = allArticles.concat(articles);
+        }
+      },
+      complete: function() {
+        completed++;
+        if (completed === total) {
+          // All feeds loaded — deduplicate, filter, sort
+          allArticles = deduplicateArticles(allArticles);
+          allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
+          allArticles.sort(function(a, b) {
+            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+            return dateB - dateA;
+          });
+          setCache(cacheKey, allArticles);
+          renderMainStories(allArticles);
+        }
       }
-    },
-    error: function () {
-      $("#main-stories").html('<p class="loading-msg">Unable to load stories. Please try again later.</p>');
-    }
+    });
   });
 }
 
 // ============================================================
-// SIDEBAR — Google News RSS (generic order, not sorted by date)
+// SIDEBAR — additional feeds, broader coverage
 // ============================================================
-var SIDEBAR_RSS = {
-  business:      "https://news.google.com/rss/search?q=Zimbabwe+economy+trade+investment&hl=en&gl=US&ceid=US:en",
-  technology:    "https://news.google.com/rss/search?q=Zimbabwe+tech+startup+digital&hl=en&gl=US&ceid=US:en",
-  entertainment: "https://news.google.com/rss/search?q=Zimbabwe+culture+music+film+art&hl=en&gl=US&ceid=US:en",
-  sports:        "https://news.google.com/rss/search?q=Zimbabwe+cricket+rugby+football+athletics&hl=en&gl=US&ceid=US:en",
-  science:       "https://news.google.com/rss/search?q=Zimbabwe+environment+wildlife+conservation&hl=en&gl=US&ceid=US:en",
-  health:        "https://news.google.com/rss/search?q=Zimbabwe+medical+disease+healthcare&hl=en&gl=US&ceid=US:en"
-};
-
-function loadSidebarStories(feedKey) {
-  var cacheKey = "sidebar_" + feedKey;
+function loadSidebarStories() {
+  var cacheKey = "sidebar_all";
   var cached = getCache(cacheKey);
   if (cached) {
     renderSidebarStories(cached);
     return;
   }
 
-  var rssUrl = SIDEBAR_RSS[feedKey] || SIDEBAR_RSS.business;
+  var allArticles = [];
+  var completed = 0;
+  var total = SIDEBAR_RSS_FEEDS.length;
 
-  $.ajax({
-    type: "GET",
-    url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
-    success: function (data) {
-      if (data && data.status === "ok" && data.items && data.items.length > 0) {
-        var articles = normalizeRssArticles(data.items);
-        // No date sorting — keep generic RSS order
-        setCache(cacheKey, articles);
-        renderSidebarStories(articles);
-      } else {
-        $("#sidebar-stories").html('<p class="loading-msg">No additional stories.</p>');
+  SIDEBAR_RSS_FEEDS.forEach(function(rssUrl) {
+    $.ajax({
+      type: "GET",
+      url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+      success: function (data) {
+        if (data && data.status === "ok" && data.items && data.items.length > 0) {
+          var articles = normalizeRssArticles(data.items);
+          allArticles = allArticles.concat(articles);
+        }
+      },
+      complete: function() {
+        completed++;
+        if (completed === total) {
+          allArticles = deduplicateArticles(allArticles);
+          // Sort sidebar by newest too for recency
+          allArticles.sort(function(a, b) {
+            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+            return dateB - dateA;
+          });
+          setCache(cacheKey, allArticles);
+          renderSidebarStories(allArticles);
+        }
       }
-    },
-    error: function () {
-      $("#sidebar-stories").html('<p class="loading-msg">Unable to load stories.</p>');
-    }
+    });
   });
 }
 
 // ============================================================
-// Normalize articles
+// Normalize & deduplicate articles
 // ============================================================
 
 // Known Zimbabwean news sources
@@ -300,7 +303,10 @@ var LOCAL_ZIM_SOURCES = [
   "zimbo jam", "zimbabwe broadcasting", "radio dialogue",
   "zimfieldguide", "iharare", "hmetro", "h-metro", "b-metro",
   "manica post", "southern eye", "zimpapers", "zimbabwe today",
-  "the patriot", "kwayedza", "umthunywa", "zimmorningpost"
+  "the patriot", "kwayedza", "umthunywa", "zimmorningpost",
+  "zimetro", "the zimbabwean", "zimbabwe observer", "zim eye",
+  "zimeye", "mbare times", "harare live", "harare news",
+  "zvishavane news", "masvingo star", "the mirror"
 ];
 
 function isLocalZimSource(source) {
@@ -312,8 +318,8 @@ function isLocalZimSource(source) {
   return false;
 }
 
-// Max age for main headlines (30 days)
-var MAX_ARTICLE_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+// Max age for headlines (14 days — tighter for recency)
+var MAX_ARTICLE_AGE_MS = 14 * 24 * 60 * 60 * 1000;
 
 function isRecentArticle(dateStr) {
   if (!dateStr) return false;
@@ -347,10 +353,21 @@ function normalizeRssArticles(items) {
   return result;
 }
 
-var _activeCategory = "business";
+// Deduplicate by title similarity
+function deduplicateArticles(articles) {
+  var seen = {};
+  var result = [];
+  for (var i = 0; i < articles.length; i++) {
+    var key = articles[i].title.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 60);
+    if (!seen[key]) {
+      seen[key] = true;
+      result.push(articles[i]);
+    }
+  }
+  return result;
+}
 
 // Editorial images for sidebar portrait and inline placeholders
-// Add image filenames to this array (placed in img/ folder)
 var EDITORIAL_IMAGES = [
   "editorial-1.jpg",
   "editorial-2.jpg",
@@ -365,14 +382,11 @@ function getRandomEditorialImage() {
 }
 
 function initEditorialImages() {
-  // Sidebar portrait image
   var portrait = document.querySelector(".editorial-portrait-img");
   if (portrait) {
     portrait.src = getRandomEditorialImage();
     portrait.onerror = function() { this.style.display = "none"; };
   }
-
-  // Landscape image between ticker and content
   var landscape = document.querySelector(".editorial-landscape-img");
   if (landscape) {
     landscape.src = getRandomEditorialImage();
@@ -393,20 +407,18 @@ function renderMainStories(articles) {
     return;
   }
 
-  for (var i = 0; i < articles.length && i < 10; i++) {
+  for (var i = 0; i < articles.length && i < 15; i++) {
     var a = articles[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
 
-    // Alternating: odd ranks (1,3,5...) on right, even (2,4,6...) on left
     var posClass = (rank % 2 === 1) ? "rank-right" : "rank-left";
     var card = $('<div class="main-article">').addClass(posClass);
     if (rank === 1) card.addClass("rank-featured");
 
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
 
-    // Text column
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
 
@@ -416,7 +428,6 @@ function renderMainStories(articles) {
     if (pubDate) parts.push(pubDate);
     if (readTime) parts.push(readTime);
     meta.text(parts.join(" \u00b7 "));
-    // Press type marker
     if (a.isLocal) {
       meta.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
@@ -430,7 +441,6 @@ function renderMainStories(articles) {
 
     link.append(textCol);
 
-    // Ranking number column (replaces image)
     var rankCol = $('<div class="main-article-rank">');
     rankCol.append($('<span class="rank-number">').text(rank));
     link.append(rankCol);
@@ -438,8 +448,8 @@ function renderMainStories(articles) {
     card.append(link);
     container.append(card);
 
-    // Insert editorial images after articles 3 and 7
-    if (rank === 3 || rank === 7) {
+    // Insert editorial images after articles 4 and 10
+    if (rank === 4 || rank === 10) {
       var ph = $('<div class="editorial-inline-wrap">');
       var img = $('<img class="editorial-inline-img">').attr('src', getRandomEditorialImage()).attr('alt', 'The Mutapa Times');
       img.on('error', function() { $(this).parent().hide(); });
@@ -462,7 +472,7 @@ function renderSidebarStories(articles) {
     return;
   }
 
-  for (var i = 0; i < articles.length && i < 15; i++) {
+  for (var i = 0; i < articles.length && i < 20; i++) {
     var a = articles[i];
     var pubDate = formatDate(a.publishedAt);
 
