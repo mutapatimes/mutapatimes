@@ -1,0 +1,19 @@
+name: Send Newsletter
+
+on:
+  schedule:
+    # 1st and 15th of every month at 08:00 UTC (10:00 AM CAT)
+    - cron: '0 8 1,15 * *'
+  workflow_dispatch:  # Manual trigger for testing
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send biweekly newsletter
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+        run: python3 scripts/send_newsletter.py
