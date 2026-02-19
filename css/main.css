@@ -559,20 +559,25 @@ a {
   display: block;
 }
 
-/* Inline images between articles */
+/* Inline images between articles — parallax */
 .editorial-inline-wrap {
   width: 100%;
-  height: 160px;
+  height: 280px;
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--border);
   background: #e8e6e3;
+  clip-path: inset(0);
 }
 .editorial-inline-img {
   width: 100%;
-  height: 100%;
+  height: 140%;
   object-fit: cover;
   display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  will-change: transform;
 }
 
 /* Press type markers */
@@ -804,12 +809,16 @@ a:hover {
     padding: 14px 12px;
   }
 
+  .main-article-rank {
+    flex: 0 0 25%;
+  }
+
   .main-article-rank .rank-number {
-    font-size: 4em !important;
+    font-size: 2.8em !important;
   }
 
   .main-article.rank-featured .rank-number {
-    font-size: 5em !important;
+    font-size: 3.5em !important;
   }
   .main-article.rank-featured .main-article-title {
     font-size: 1.15em;
@@ -819,13 +828,17 @@ a:hover {
     font-size: 1em;
   }
   .main-article-desc {
-    display: none;
+    display: block;
+    font-size: 0.8em;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .editorial-landscape-wrap { /* auto height from image */ }
-  .editorial-portrait-wrap { height: 220px; }
-  .editorial-inline-wrap { height: auto; max-height: 280px; }
-  .editorial-inline-img { height: auto; object-fit: contain; }
+  .editorial-inline-wrap { height: 200px; }
 
   .live-cam-embed { padding-bottom: 56.25%; }
   .live-cam-header { padding: 8px 12px; }
@@ -1362,6 +1375,29 @@ h4 {
   letter-spacing: 0.06em;
   color: rgba(255,255,255,0.55);
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.verified-source {
+  color: rgba(255,255,255,0.55);
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #1d9bf0;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  margin-left: 4px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 /* Quote image between spotlight and sidebar */
