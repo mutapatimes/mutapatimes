@@ -23,6 +23,32 @@ var SIDEBAR_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en"
 ];
 
+// Spotlight feeds — reputable international sources only
+var SPOTLIGHT_RSS_FEEDS = [
+  "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en"
+];
+
+// Reputable sources for spotlight matching
+var REPUTABLE_SOURCES = [
+  "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
+  "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
+  "bloomberg", "associated press", "ap news", "apnews", "washington post",
+  "cnn", "sky news", "the telegraph", "the independent", "france 24",
+  "dw", "deutsche welle"
+];
+
+function isReputableSource(source) {
+  if (!source) return false;
+  var s = source.toLowerCase();
+  for (var i = 0; i < REPUTABLE_SOURCES.length; i++) {
+    if (s.indexOf(REPUTABLE_SOURCES[i]) !== -1) return true;
+  }
+  return false;
+}
+
+// Max age for spotlight articles (30 days — up to a month old)
+var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+
 // Zimbabwe cities for weather
 var WEATHER_CITIES = [
   { id: "harare", name: "Harare", lat: -17.83, lon: 31.05 },
@@ -198,6 +224,7 @@ function fetchNews() {
 
   // Load all stories from multiple RSS feeds
   loadMainStories();
+  loadSpotlightStories();
   loadSidebarStories();
 }
 
@@ -367,31 +394,47 @@ function deduplicateArticles(articles) {
   return result;
 }
 
-// Editorial images for sidebar portrait and inline placeholders
-var EDITORIAL_IMAGES = [
-  "editorial-1.jpg",
-  "editorial-2.jpg",
+// Quote images for inline editorial breaks
+var QUOTE_IMAGES = [
   "editorial-3.jpg",
   "editorial-4.jpg",
-  "editorial-5.jpg"
+  "editorial-5.jpg",
+  "editorial-6.jpg",
+  "editorial-7.jpg"
 ];
 
-function getRandomEditorialImage() {
-  var idx = Math.floor(Math.random() * EDITORIAL_IMAGES.length);
-  return "img/" + EDITORIAL_IMAGES[idx];
+// Shuffle array to get non-repeating sequence
+var _quoteIdx = 0;
+var _shuffledQuotes = QUOTE_IMAGES.slice().sort(function() { return Math.random() - 0.5; });
+
+function getNextQuoteImage() {
+  var img = _shuffledQuotes[_quoteIdx % _shuffledQuotes.length];
+  _quoteIdx++;
+  return "img/" + img;
+}
+
+function getRandomQuoteImage() {
+  var idx = Math.floor(Math.random() * QUOTE_IMAGES.length);
+  return "img/" + QUOTE_IMAGES[idx];
 }
 
 function initEditorialImages() {
   // Only set random images for elements that don't already have a src
   var portrait = document.querySelector(".editorial-portrait-img");
   if (portrait && !portrait.getAttribute("src")) {
-    portrait.src = getRandomEditorialImage();
+    portrait.src = getRandomQuoteImage();
     portrait.onerror = function() { this.style.display = "none"; };
   }
   var landscape = document.querySelector(".editorial-landscape-img");
   if (landscape && !landscape.getAttribute("src")) {
-    landscape.src = getRandomEditorialImage();
+    landscape.src = getRandomQuoteImage();
     landscape.onerror = function() { this.style.display = "none"; };
+  }
+  // Quote image between Spotlight and More Zimbabwe Stories
+  var quoteImg = document.querySelector(".editorial-quote-img");
+  if (quoteImg && !quoteImg.getAttribute("src")) {
+    quoteImg.src = getRandomQuoteImage();
+    quoteImg.onerror = function() { this.parentElement.style.display = "none"; };
   }
 }
 
@@ -449,14 +492,107 @@ function renderMainStories(articles) {
     card.append(link);
     container.append(card);
 
-    // Insert editorial images after articles 4 and 10
-    if (rank === 4 || rank === 10) {
+    // Insert quote image after every 2 articles
+    if (rank % 2 === 0 && rank < 15) {
       var ph = $('<div class="editorial-inline-wrap">');
-      var img = $('<img class="editorial-inline-img">').attr('src', getRandomEditorialImage()).attr('alt', 'The Mutapa Times');
+      var img = $('<img class="editorial-inline-img">').attr('src', getNextQuoteImage()).attr('alt', 'The Mutapa Times');
       img.on('error', function() { $(this).parent().hide(); });
       ph.append(img);
       container.append(ph);
     }
+  }
+
+  // Subscribe banner at end of main news
+  var subscribe = $('<div class="subscribe-banner">');
+  subscribe.append($('<h3 class="subscribe-title">').text("Stay informed. Stay ahead."));
+  subscribe.append($('<p class="subscribe-text">').text("The Mutapa Times delivers essential Zimbabwean news and economic intelligence to readers across the diaspora. Subscribe to receive our daily briefing directly to your inbox."));
+  var form = $('<div class="subscribe-form">');
+  form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
+  form.append($('<button class="subscribe-btn">').text("Subscribe"));
+  subscribe.append(form);
+  subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
+  container.append(subscribe);
+}
+
+// ============================================================
+// SPOTLIGHT — reputable international sources
+// ============================================================
+function loadSpotlightStories() {
+  var cacheKey = "spotlight_all";
+  var cached = getCache(cacheKey);
+  if (cached) {
+    renderSpotlightStories(cached);
+    return;
+  }
+
+  var allArticles = [];
+  var completed = 0;
+  var total = SPOTLIGHT_RSS_FEEDS.length;
+
+  SPOTLIGHT_RSS_FEEDS.forEach(function(rssUrl) {
+    $.ajax({
+      type: "GET",
+      url: MUTAPA_CONFIG.RSS_API + encodeURIComponent(rssUrl),
+      success: function (data) {
+        if (data && data.status === "ok" && data.items && data.items.length > 0) {
+          var articles = normalizeRssArticles(data.items);
+          allArticles = allArticles.concat(articles);
+        }
+      },
+      complete: function() {
+        completed++;
+        if (completed === total) {
+          // Filter to reputable sources only, up to 30 days old
+          allArticles = allArticles.filter(function(a) {
+            if (!a.publishedAt) return false;
+            try {
+              var d = new Date(a.publishedAt);
+              if (isNaN(d.getTime())) return false;
+              return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS && isReputableSource(a.source);
+            } catch (e) { return false; }
+          });
+          allArticles = deduplicateArticles(allArticles);
+          allArticles.sort(function(a, b) {
+            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+            return dateB - dateA;
+          });
+          setCache(cacheKey, allArticles);
+          renderSpotlightStories(allArticles);
+        }
+      }
+    });
+  });
+}
+
+function renderSpotlightStories(articles) {
+  var container = $("#spotlight-stories");
+  if (!container.length) return;
+  container.empty();
+
+  if (!articles || articles.length === 0) {
+    container.html('<p class="loading-msg" style="color: rgba(255,255,255,0.6);">No spotlight stories available.</p>');
+    return;
+  }
+
+  for (var i = 0; i < articles.length && i < 3; i++) {
+    var a = articles[i];
+    var pubDate = formatDate(a.publishedAt);
+
+    var item = $('<div class="spotlight-item">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+
+    link.append($('<h4 class="spotlight-title">').text(a.title));
+
+    var meta = $('<p class="spotlight-meta">');
+    var parts = [];
+    if (a.source) parts.push(a.source);
+    if (pubDate) parts.push(pubDate);
+    meta.text(parts.join(" \u00b7 "));
+    link.append(meta);
+
+    item.append(link);
+    container.append(item);
   }
 }
 
