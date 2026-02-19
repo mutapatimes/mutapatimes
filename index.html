@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" as="image" href="img/banner.png">
     <meta name="title" content="The Mutapa Times">
 <meta name="description" content="The Mutapa Times is a business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.">
 <meta name="keywords" content="The Mutapa Times, newspaper, Zimbabwean, news, Zimbabwean diaspora, Harare, Bulawayo, Gweru, Zimbabwe, business, health, politics">
@@ -186,7 +187,7 @@
 
   <!-- Banner image -->
   <div class="editorial-landscape-wrap">
-    <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline">
+    <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline" width="1000" height="200">
   </div>
 
   <!-- Main layout: stories + sidebar -->
@@ -202,7 +203,7 @@
         </div>
       </div>
       <div class="sidebar-portrait">
-        <img class="sidebar-portrait-img" src="img/harare-palms.jpg" alt="Palm trees line a Harare boulevard, framing the city skyline against a clear blue sky" loading="lazy">
+        <img class="sidebar-portrait-img" src="img/harare-palms.jpg" alt="Palm trees line a Harare boulevard, framing the city skyline against a clear blue sky" loading="lazy" width="600" height="800">
         <p class="sidebar-portrait-caption">Harare&rsquo;s First Street palms tower over the capital&rsquo;s skyline &mdash; a city forever reaching upward.</p>
       </div>
       <h4 class="sidebar-header">More Zimbabwe Stories</h4>
@@ -320,7 +321,17 @@
 <div id="google_translate_element"></div>
 <script type="text/javascript">
 function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, includedLanguages: 'sn,en,nd'}, 'google_translate_element');}
-</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script><script type="text/javascript">
+(function() {
+  function loadGoogleTranslate() {
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(s);
+  }
+  if (document.readyState === 'complete') loadGoogleTranslate();
+  else window.addEventListener('load', loadGoogleTranslate);
+})();
+</script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
