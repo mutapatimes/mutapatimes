@@ -482,10 +482,10 @@ function deduplicateByTopic(articles) {
 
 // Break images between news stories — with captions
 var BREAK_IMAGES = [
-  { src: "break-1.jpg", caption: "Business and intelligence, building the Zimbabwe of tomorrow" },
-  { src: "break-2.jpg", caption: "Staying connected and informed, powering Zimbabwe\u2019s future" },
-  { src: "break-3.jpg", caption: "Enterprise and ambition, the spirit of a nation rising" },
-  { src: "break-4.jpg", caption: "Bridging distance and diaspora, one story at a time" }
+  { src: "break-1.jpg", caption: "Business, intelligence \u2014 building the Zimbabwe of tomorrow" },
+  { src: "break-2.jpg", caption: "Staying connected, staying informed \u2014 powering Zimbabwe\u2019s future" },
+  { src: "break-3.jpg", caption: "Enterprise, ambition \u2014 the spirit of a nation rising" },
+  { src: "break-4.jpg", caption: "Bridging distance, bridging diaspora \u2014 one story at a time" }
 ];
 
 var _breakIdx = 0;
