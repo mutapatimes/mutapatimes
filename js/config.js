@@ -513,21 +513,27 @@ function createShareBtn(title, url) {
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
+    var shareText = title + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
     var shareData = {
-      title: title,
-      text: title + ' — via The Mutapa Times',
+      title: title + ' | The Mutapa Times',
+      text: shareText,
       url: url
     };
     if (navigator.share) {
       navigator.share(shareData).catch(function() {});
     } else {
-      // Clipboard fallback for desktop
-      var temp = document.createElement('textarea');
-      temp.value = url;
-      document.body.appendChild(temp);
-      temp.select();
-      document.execCommand('copy');
-      document.body.removeChild(temp);
+      // Clipboard fallback — copy full formatted text
+      var clipText = title + '\n' + url + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(clipText);
+      } else {
+        var temp = document.createElement('textarea');
+        temp.value = clipText;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+      }
       var original = btn.html();
       btn.text('Copied!');
       setTimeout(function() { btn.html(original); }, 1500);
