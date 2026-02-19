@@ -495,12 +495,6 @@ function initEditorialImages() {
     landscape.src = getRandomQuoteImage();
     landscape.onerror = function() { this.style.display = "none"; };
   }
-  // Proverb background image
-  var proverbImg = document.querySelector(".proverb-bg-img");
-  if (proverbImg && !proverbImg.getAttribute("src")) {
-    proverbImg.src = getRandomQuoteImage();
-    proverbImg.onerror = function() { this.style.display = "none"; };
-  }
 }
 
 // ============================================================
