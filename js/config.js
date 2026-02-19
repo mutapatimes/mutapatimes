@@ -464,10 +464,10 @@ function deduplicateByTopic(articles) {
 
 // Break images between news stories — with captions
 var BREAK_IMAGES = [
-  { src: "break-1.jpg", caption: "Business and intelligence \u2014 building the Zimbabwe of tomorrow" },
-  { src: "break-2.jpg", caption: "Staying connected and informed \u2014 powering Africa\u2019s future" },
-  { src: "break-3.jpg", caption: "Enterprise and ambition \u2014 the spirit of a nation rising" },
-  { src: "break-4.jpg", caption: "Bridging distance and diaspora \u2014 one story at a time" }
+  { src: "break-1.jpg", caption: "Business and intelligence, building the Zimbabwe of tomorrow" },
+  { src: "break-2.jpg", caption: "Staying connected and informed, powering Africa\u2019s future" },
+  { src: "break-3.jpg", caption: "Enterprise and ambition, the spirit of a nation rising" },
+  { src: "break-4.jpg", caption: "Bridging distance and diaspora, one story at a time" }
 ];
 
 var _breakIdx = 0;
@@ -566,9 +566,12 @@ function renderMainStories(articles) {
     if (rank % 2 === 0 && rank < 15) {
       var breakData = getNextBreakImage();
       var ph = $('<div class="break-section">');
+      var imgWrap = $('<div class="break-img-wrap">');
       var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times');
       img.on('error', function() { $(this).closest('.break-section').hide(); });
-      ph.append(img);
+      imgWrap.append(img);
+      imgWrap.append($('<span class="break-brand">').text("The Mutapa Times"));
+      ph.append(imgWrap);
       ph.append($('<p class="break-caption">').text(breakData.caption));
       container.append(ph);
     }
