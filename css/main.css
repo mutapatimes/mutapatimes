@@ -329,13 +329,16 @@ a {
 }
 
 .aboutTitle {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--text-light);
+  padding: 4px 0;
 }
 .sub {
   text-align: center;
@@ -346,62 +349,16 @@ a {
   color: var(--text-light);
   margin: 0 0 10px;
 }
-.vol {
-  position: absolute;
-  right: 2%;
-}
-.day {
-  position: absolute;
-  left: 2%;
-}
-
 .goog-te-gadget-icon{
   display: none;
-}
-.date {
-  position: absolute;
-  left: 2%;
 }
 .category{
   text-align: center;
 }
 
-.price {
-  position: absolute;
-  right: 2%;
-  top: 0;
-
-}
-
 .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {
     color: #00897b;
  
-}
-@-webkit-keyframes blinker {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
-}
-.resp {
-  position: absolute;
-  right: 5%;
-  top: 0;
-  color: #00897b;
-  text-decoration: blink;
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 1.4s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-direction: alternate;
-}
-.covid {
-  top: 0;
-  color: #00897b;
-  text-decoration: blink;
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 1.4s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-direction: alternate;
 }
 .tradingview-widget-container {
   height: 46px;
@@ -711,6 +668,17 @@ a {
   font-size: 0.9em;
 }
 
+.feed-updated {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  text-align: right;
+  padding: 6px 16px 0;
+  margin: 0;
+}
+
 .storyfooter {
   padding: 0 5%;
   font-size: 0.9em;
@@ -718,13 +686,6 @@ a {
   text-align: justify;
   text-justify: inter-word;
   color: var(--text);
-}
-
-.label-13XFthDT {
-  display: NONE;
-}
-svg {
-  display: none;
 }
 
 a:hover {
@@ -912,71 +873,6 @@ a:hover {
   }
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  position: relative;
-
-}
-/* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-  opacity: 0.3;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color:grey;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
 table {
   table-layout: fixed ;
   width: 100% ;
@@ -1007,33 +903,6 @@ th, td {
 *, ::after, ::before {
   box-sizing: border-box;
 }
-.marquee{
-  display:block;
-position:relative;
-width:800px;
-
-animation:scroll 10s linear infinite;
-padding:3px;
-}
-
-.marquee:hover {
-    animation-play-state: paused
-}
-
-.img1 {
-  width:150px;
-  height:150px;
-
-  margin:3px;
-  float:left;
-}
-
-/* Make it move */
-@keyframes scroll{
-0% {left:600px;}
-100% {left:-600px;}
-}
-
 .storyTitleCat {
   text-transform: uppercase;
   text-decoration: none;

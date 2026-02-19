@@ -516,6 +516,11 @@ function renderMainStories(articles) {
     return;
   }
 
+  // Show last-updated timestamp
+  var now = new Date();
+  var timeStr = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
+  container.append($('<p class="feed-updated">').text("Last updated " + timeStr));
+
   for (var i = 0; i < articles.length && i < 15; i++) {
     var a = articles[i];
     var rank = i + 1;
@@ -567,7 +572,7 @@ function renderMainStories(articles) {
       var breakData = getNextBreakImage();
       var ph = $('<div class="break-section">');
       var imgWrap = $('<div class="break-img-wrap">');
-      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times');
+      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times').attr('loading', 'lazy');
       img.on('error', function() { $(this).closest('.break-section').hide(); });
       imgWrap.append(img);
       imgWrap.append($('<span class="break-brand">').text("The Mutapa Times"));
@@ -579,8 +584,8 @@ function renderMainStories(articles) {
 
   // Subscribe banner at end of main news
   var subscribe = $('<div class="subscribe-banner">');
-  subscribe.append($('<h3 class="subscribe-title">').text("Stay informed. Stay ahead."));
-  subscribe.append($('<p class="subscribe-text">').text("The Mutapa Times delivers essential Zimbabwean news and economic intelligence to readers across the diaspora. Subscribe to receive our daily briefing directly to your inbox."));
+  subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
+  subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
   var form = $('<div class="subscribe-form">');
   form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
   form.append($('<button class="subscribe-btn">').text("Subscribe"));
