@@ -37,7 +37,9 @@ var REPUTABLE_SOURCES = [
   "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
   "bloomberg", "associated press", "ap news", "apnews", "washington post",
   "cnn", "sky news", "the telegraph", "the independent", "france 24",
-  "dw", "deutsche welle"
+  "dw", "deutsche welle",
+  "allafrica", "all africa", "daily maverick", "mail & guardian",
+  "news24", "the east african"
 ];
 
 function isReputableSource(source) {
@@ -177,7 +179,7 @@ function getReadingTime(text) {
   } else if (totalChars < 500) {
     return "";
   }
-  var words = Math.round(totalChars / 6);
+  var words = Math.round(totalChars / 5);
   var mins = Math.max(1, Math.ceil(words / 200));
   return mins + " min read";
 }
@@ -246,6 +248,13 @@ function loadMainStories() {
   var completed = 0;
   var total = MAIN_RSS_FEEDS.length;
 
+  var _mainTimeout = setTimeout(function() {
+    if (document.querySelector('#main-stories .loading-msg')) {
+      document.querySelector('#main-stories').innerHTML =
+        '<p class="loading-msg">We couldn\u2019t load stories right now. Please refresh the page to try again.</p>';
+    }
+  }, 15000);
+
   MAIN_RSS_FEEDS.forEach(function(rssUrl) {
     $.ajax({
       type: "GET",
@@ -259,6 +268,7 @@ function loadMainStories() {
       complete: function() {
         completed++;
         if (completed === total) {
+          clearTimeout(_mainTimeout);
           // All feeds loaded — deduplicate, filter, sort
           allArticles = deduplicateArticles(allArticles);
           allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
@@ -290,6 +300,13 @@ function loadSidebarStories() {
   var completed = 0;
   var total = SIDEBAR_RSS_FEEDS.length;
 
+  var _sidebarTimeout = setTimeout(function() {
+    if (document.querySelector('#sidebar-stories .loading-msg')) {
+      document.querySelector('#sidebar-stories').innerHTML =
+        '<p class="loading-msg">Unable to load additional stories. Please refresh to try again.</p>';
+    }
+  }, 15000);
+
   SIDEBAR_RSS_FEEDS.forEach(function(rssUrl) {
     $.ajax({
       type: "GET",
@@ -303,6 +320,7 @@ function loadSidebarStories() {
       complete: function() {
         completed++;
         if (completed === total) {
+          clearTimeout(_sidebarTimeout);
           allArticles = deduplicateArticles(allArticles);
           // Sort sidebar by newest too for recency
           allArticles.sort(function(a, b) {
@@ -326,7 +344,7 @@ function loadSidebarStories() {
 var LOCAL_ZIM_SOURCES = [
   "the zimbabwe mail", "zimbabwe situation", "nehanda radio", "bulawayo24",
   "new zimbabwe", "newzimbabwe", "263chat", "the herald", "herald online",
-  "heraldonline", "chronicle", "newsday", "daily news", "zimmorning post",
+  "heraldonline", "chronicle", "newsday", "daily news",
   "zim morning post", "zimbabwe independent", "the standard", "zimlive",
   "pindula", "techzim", "zbcnews", "zbc news", "zimdiaspora",
   "kubatana", "the insider", "cite", "myzimbabwe",
@@ -465,7 +483,7 @@ function deduplicateByTopic(articles) {
 // Break images between news stories — with captions
 var BREAK_IMAGES = [
   { src: "break-1.jpg", caption: "Business and intelligence, building the Zimbabwe of tomorrow" },
-  { src: "break-2.jpg", caption: "Staying connected and informed, powering Africa\u2019s future" },
+  { src: "break-2.jpg", caption: "Staying connected and informed, powering Zimbabwe\u2019s future" },
   { src: "break-3.jpg", caption: "Enterprise and ambition, the spirit of a nation rising" },
   { src: "break-4.jpg", caption: "Bridging distance and diaspora, one story at a time" }
 ];
@@ -514,7 +532,9 @@ function createShareBtn(title, url) {
       url: url
     };
     if (navigator.share) {
-      navigator.share(shareData).catch(function() {});
+      navigator.share(shareData).catch(function(err) {
+        if (err.name !== 'AbortError') console.warn('Share failed:', err);
+      });
     } else {
       // Clipboard fallback — copy full formatted text
       var clipText = title + '\n' + url + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
@@ -648,6 +668,13 @@ function loadSpotlightStories() {
   var completed = 0;
   var total = SPOTLIGHT_RSS_FEEDS.length;
 
+  var _spotlightTimeout = setTimeout(function() {
+    if (document.querySelector('#spotlight-stories .loading-msg')) {
+      document.querySelector('#spotlight-stories').innerHTML =
+        '<p class="loading-msg" style="color: rgba(255,255,255,0.6);">Spotlight stories are temporarily unavailable.</p>';
+    }
+  }, 15000);
+
   SPOTLIGHT_RSS_FEEDS.forEach(function(rssUrl) {
     $.ajax({
       type: "GET",
@@ -661,6 +688,7 @@ function loadSpotlightStories() {
       complete: function() {
         completed++;
         if (completed === total) {
+          clearTimeout(_spotlightTimeout);
           // Filter to reputable sources only, up to 30 days old
           allArticles = allArticles.filter(function(a) {
             if (!a.publishedAt) return false;

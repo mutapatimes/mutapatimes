@@ -191,14 +191,14 @@
 
   <!-- Main layout: stories + sidebar -->
   <div class="content-layout">
-    <div id="main-stories">
-      <p class="loading-msg">Loading stories...</p>
+    <div id="main-stories" role="region" aria-live="polite" aria-label="Main news stories">
+      <p class="loading-msg">Fetching the latest Zimbabwe headlines&#8230;</p>
     </div>
     <div class="sidebar">
       <div class="spotlight-section">
         <h4 class="spotlight-header">Spotlight</h4>
-        <div id="spotlight-stories">
-          <p class="loading-msg" style="color: rgba(255,255,255,0.6);">Loading...</p>
+        <div id="spotlight-stories" role="region" aria-live="polite" aria-label="Spotlight stories">
+          <p class="loading-msg" style="color: rgba(255,255,255,0.6);">Fetching spotlight coverage&#8230;</p>
         </div>
       </div>
       <div class="sidebar-portrait">
@@ -206,8 +206,8 @@
         <p class="sidebar-portrait-caption">Harare&rsquo;s First Street palms tower over the capital&rsquo;s skyline &mdash; a city forever reaching upward.</p>
       </div>
       <h4 class="sidebar-header">More Zimbabwe Stories</h4>
-      <div id="sidebar-stories">
-        <p class="loading-msg">Loading...</p>
+      <div id="sidebar-stories" role="region" aria-live="polite" aria-label="More Zimbabwe stories">
+        <p class="loading-msg">Fetching more stories&#8230;</p>
       </div>
     </div>
   </div>
