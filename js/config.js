@@ -378,10 +378,10 @@ function isTitleRepeat(title, desc) {
   if (!title || !desc) return true;
   var t = title.toLowerCase().replace(/[^a-z0-9]/g, '');
   var d = desc.toLowerCase().replace(/[^a-z0-9]/g, '');
-  // If desc is mostly contained in title or very short, it's a repeat
-  if (d.length < 30) return true;
-  if (t.indexOf(d.substring(0, 40)) !== -1) return true;
-  if (d.indexOf(t.substring(0, 40)) !== -1) return true;
+  // Only filter if extremely short or nearly identical to title
+  if (d.length < 15) return true;
+  if (t === d) return true;
+  if (t.length > 0 && d.length > 0 && t.indexOf(d) !== -1) return true;
   return false;
 }
 
@@ -495,12 +495,51 @@ function initEditorialImages() {
     landscape.src = getRandomQuoteImage();
     landscape.onerror = function() { this.style.display = "none"; };
   }
-  // Quote image between Spotlight and More Zimbabwe Stories
-  var quoteImg = document.querySelector(".editorial-quote-img");
-  if (quoteImg && !quoteImg.getAttribute("src")) {
-    quoteImg.src = getRandomQuoteImage();
-    quoteImg.onerror = function() { this.parentElement.style.display = "none"; };
+  // Proverb background image
+  var proverbImg = document.querySelector(".proverb-bg-img");
+  if (proverbImg && !proverbImg.getAttribute("src")) {
+    proverbImg.src = getRandomQuoteImage();
+    proverbImg.onerror = function() { this.style.display = "none"; };
   }
+}
+
+// ============================================================
+// Share button — uses native Web Share API, clipboard fallback
+// ============================================================
+var SHARE_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>';
+
+function createShareBtn(title, url) {
+  var btn = $('<button class="share-btn" title="Share this article">').html(SHARE_ICON_SVG);
+  btn.on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var shareText = title + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
+    var shareData = {
+      title: title + ' | The Mutapa Times',
+      text: shareText,
+      url: url
+    };
+    if (navigator.share) {
+      navigator.share(shareData).catch(function() {});
+    } else {
+      // Clipboard fallback — copy full formatted text
+      var clipText = title + '\n' + url + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(clipText);
+      } else {
+        var temp = document.createElement('textarea');
+        temp.value = clipText;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+      }
+      var original = btn.html();
+      btn.text('Copied!');
+      setTimeout(function() { btn.html(original); }, 1500);
+    }
+  });
+  return btn;
 }
 
 // ============================================================
@@ -539,7 +578,9 @@ function renderMainStories(articles) {
     var meta = $('<p class="main-article-meta">');
     if (a.source) {
       meta.append($('<span>').text(a.source));
-      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      }
     }
     var extras = [];
     if (pubDate) extras.push(pubDate);
@@ -552,6 +593,7 @@ function renderMainStories(articles) {
     } else if (a.source) {
       meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
+    meta.append(createShareBtn(a.title, a.url));
     textCol.append(meta);
 
     var desc = a.description;
@@ -582,16 +624,19 @@ function renderMainStories(articles) {
     }
   }
 
-  // Subscribe banner at end of main news
-  var subscribe = $('<div class="subscribe-banner">');
-  subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
-  subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
-  var form = $('<div class="subscribe-form">');
-  form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
-  form.append($('<button class="subscribe-btn">').text("Subscribe"));
-  subscribe.append(form);
-  subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
-  container.append(subscribe);
+  // Subscribe banner — render full-width after the content-layout grid
+  var contentLayout = $(".content-layout");
+  if (contentLayout.length) {
+    var subscribe = $('<div class="subscribe-banner">');
+    subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
+    subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
+    var form = $('<div class="subscribe-form">');
+    form.append($('<input class="subscribe-input" type="email" placeholder="Enter your email address">'));
+    form.append($('<button class="subscribe-btn">').text("Subscribe"));
+    subscribe.append(form);
+    subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
+    contentLayout.after(subscribe);
+  }
 }
 
 // ============================================================
@@ -673,6 +718,7 @@ function renderSpotlightStories(articles) {
       if (a.source) meta.append(document.createTextNode(" \u00b7 "));
       meta.append(document.createTextNode(pubDate));
     }
+    meta.append(createShareBtn(a.title, a.url));
     link.append(meta);
 
     item.append(link);
@@ -705,7 +751,9 @@ function renderSidebarStories(articles) {
     var meta = $('<p class="sidebar-meta">');
     if (a.source) {
       meta.append($('<span>').text(a.source));
-      meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
+      }
     }
     if (pubDate) {
       meta.append(document.createTextNode(" \u00b7 " + pubDate));
@@ -715,6 +763,7 @@ function renderSidebarStories(articles) {
     } else if (a.source) {
       meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
+    meta.append(createShareBtn(a.title, a.url));
     link.append(meta);
 
     item.append(link);
