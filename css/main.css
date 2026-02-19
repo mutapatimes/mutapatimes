@@ -1375,6 +1375,29 @@ h4 {
   letter-spacing: 0.06em;
   color: rgba(255,255,255,0.55);
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.verified-source {
+  color: rgba(255,255,255,0.55);
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #1d9bf0;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  margin-left: 4px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 /* Quote image between spotlight and sidebar */

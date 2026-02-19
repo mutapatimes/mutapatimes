@@ -394,6 +394,45 @@ function deduplicateArticles(articles) {
   return result;
 }
 
+// Topic-level deduplication — avoids two articles about the same subject
+var STOP_WORDS = ["the","a","an","in","on","at","to","for","of","and","or","is","are","was","were","be","been","has","have","had","do","does","did","will","would","could","should","may","might","can","shall","not","no","but","if","so","by","from","with","as","its","it","this","that","than","then","their","they","them","he","she","his","her","we","our","us","you","your","who","what","which","when","where","how","all","each","every","both","few","more","most","some","any","new","old","over","after","before","about","up","out","says","said","also","just","into","back"];
+
+function getTopicWords(title) {
+  return title.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(function(w) {
+    return w.length > 2 && STOP_WORDS.indexOf(w) === -1;
+  });
+}
+
+function topicOverlap(wordsA, wordsB) {
+  if (wordsA.length === 0 || wordsB.length === 0) return 0;
+  var shared = 0;
+  for (var i = 0; i < wordsA.length; i++) {
+    if (wordsB.indexOf(wordsA[i]) !== -1) shared++;
+  }
+  var smaller = Math.min(wordsA.length, wordsB.length);
+  return shared / smaller;
+}
+
+function deduplicateByTopic(articles) {
+  var result = [];
+  var topicCache = [];
+  for (var i = 0; i < articles.length; i++) {
+    var words = getTopicWords(articles[i].title);
+    var isDupe = false;
+    for (var j = 0; j < topicCache.length; j++) {
+      if (topicOverlap(words, topicCache[j]) > 0.4) {
+        isDupe = true;
+        break;
+      }
+    }
+    if (!isDupe) {
+      result.push(articles[i]);
+      topicCache.push(words);
+    }
+  }
+  return result;
+}
+
 // Quote images for inline editorial breaks
 var QUOTE_IMAGES = [
   "editorial-3.jpg",
@@ -551,7 +590,7 @@ function loadSpotlightStories() {
               return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS && isReputableSource(a.source);
             } catch (e) { return false; }
           });
-          allArticles = deduplicateArticles(allArticles);
+          allArticles = deduplicateByTopic(allArticles);
           allArticles.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
@@ -585,10 +624,14 @@ function renderSpotlightStories(articles) {
     link.append($('<h4 class="spotlight-title">').text(a.title));
 
     var meta = $('<p class="spotlight-meta">');
-    var parts = [];
-    if (a.source) parts.push(a.source);
-    if (pubDate) parts.push(pubDate);
-    meta.text(parts.join(" \u00b7 "));
+    if (a.source) {
+      meta.append($('<span class="verified-source">').text(a.source));
+      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+    }
+    if (pubDate) {
+      if (a.source) meta.append(document.createTextNode(" \u00b7 "));
+      meta.append(document.createTextNode(pubDate));
+    }
     link.append(meta);
 
     item.append(link);
