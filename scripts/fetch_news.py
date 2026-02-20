@@ -127,7 +127,6 @@ def backfill_descriptions(articles):
             if generated:
                 article["description"] = generated
                 print(f"    AI desc: {article['title'][:50]}...")
-            time.sleep(1)
 
 
 def fetch_category(name, config):
@@ -180,6 +179,9 @@ def parse_rss_feed(xml_bytes):
     return articles
 
 
+MAX_NEW_DESCRIPTIONS = 30  # Cap per run to keep workflow under 2 min
+
+
 def fetch_rss_descriptions():
     """Fetch Google News RSS feeds, generate AI descriptions, save lookup."""
     if not GEMINI_API_KEY:
@@ -208,24 +210,23 @@ def fetch_rss_descriptions():
             for a in articles:
                 if a["url"] not in all_articles:
                     all_articles[a["url"]] = a["title"]
-        time.sleep(1)
 
     print(f"  Found {len(all_articles)} unique RSS articles")
 
-    # Generate descriptions for articles not already in lookup
+    # Generate descriptions for articles not already in lookup (capped)
     new_count = 0
     descriptions = {}
     for url, title in all_articles.items():
         if url in existing and existing[url]:
             descriptions[url] = existing[url]
             continue
-        # Generate from title (RSS doesn't give us content)
+        if new_count >= MAX_NEW_DESCRIPTIONS:
+            continue
         generated = generate_description(title)
         if generated:
             descriptions[url] = generated
             new_count += 1
             print(f"    AI desc: {title[:50]}...")
-        time.sleep(1)
 
     # Save lookup
     with open(lookup_path, "w") as f:
