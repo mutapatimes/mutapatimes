@@ -1525,6 +1525,15 @@ h4 {
   color: #fff;
 }
 
+.spotlight-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  display: block;
+}
+
 .spotlight-title {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.05em;

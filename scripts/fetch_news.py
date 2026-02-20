@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GNEWS_API_KEY = os.environ.get("GNEWS_API_KEY", "")
 DATA_DIR = "data"
 
 # Category-specific Google News RSS feeds (replace GNews API)
@@ -239,6 +240,48 @@ def fetch_rss_descriptions():
     print(f"  OK: {len(descriptions)} descriptions ({new_count} new)")
 
 
+def fetch_spotlight():
+    """Fetch 3 spotlight articles from GNews API (images + descriptions included)."""
+    print("\n=== SPOTLIGHT ===")
+    if not GNEWS_API_KEY:
+        print("  SKIP: GNEWS_API_KEY not set")
+        return
+
+    url = (
+        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=3"
+        f"&apikey={GNEWS_API_KEY}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  FAIL: GNews API error: {e}")
+        return
+
+    articles = data.get("articles", [])
+    if not articles:
+        print("  FAIL: no articles returned")
+        return
+
+    # Keep only the fields we need
+    spotlight = []
+    for a in articles:
+        spotlight.append({
+            "title": a.get("title", ""),
+            "description": a.get("description", ""),
+            "url": a.get("url", ""),
+            "image": a.get("image", ""),
+            "publishedAt": a.get("publishedAt", ""),
+            "source": a.get("source", {}).get("name", ""),
+        })
+
+    outpath = os.path.join(DATA_DIR, "spotlight.json")
+    with open(outpath, "w") as f:
+        json.dump({"articles": spotlight}, f)
+    print(f"  OK: {len(spotlight)} spotlight articles saved")
+
+
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -246,9 +289,8 @@ def main():
     for name, feeds in CATEGORIES.items():
         fetch_category(name, feeds)
 
-    # AI descriptions disabled — Gemini free tier 429s too aggressively.
-    # Re-enable when a paid API key is available.
-    # fetch_rss_descriptions()
+    # Fetch spotlight articles from GNews API (1 call, includes images + descriptions)
+    fetch_spotlight()
 
     print("\nDone.")
 
