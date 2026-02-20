@@ -440,6 +440,9 @@ function isTitleRepeat(title, desc) {
 // AI-generated descriptions lookup (loaded from data/rss_descriptions.json)
 var _aiDescriptions = {};
 
+// Track spotlight article URLs to avoid repeating them in main/sidebar feeds
+var _spotlightUrls = {};
+
 function loadAiDescriptions(callback) {
   $.ajax({
     type: "GET",
@@ -655,8 +658,13 @@ function renderMainStories(articles) {
     return;
   }
 
-  for (var i = 0; i < articles.length && i < 15; i++) {
-    var a = articles[i];
+  // Filter out articles already shown in spotlight
+  var filtered = articles.filter(function(a) {
+    return !a.url || !_spotlightUrls[a.url];
+  });
+
+  for (var i = 0; i < filtered.length && i < 15; i++) {
+    var a = filtered[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
@@ -874,6 +882,12 @@ function renderSpotlightStories(articles) {
     return;
   }
 
+  // Track spotlight URLs so main/sidebar feeds can skip duplicates
+  _spotlightUrls = {};
+  for (var i = 0; i < articles.length && i < 3; i++) {
+    if (articles[i].url) _spotlightUrls[articles[i].url] = true;
+  }
+
   for (var i = 0; i < articles.length && i < 3; i++) {
     var a = articles[i];
     var pubDate = formatDate(a.publishedAt);
@@ -923,8 +937,13 @@ function renderSidebarStories(articles) {
     return;
   }
 
-  for (var i = 0; i < articles.length && i < 20; i++) {
-    var a = articles[i];
+  // Filter out articles already shown in spotlight
+  var filtered = articles.filter(function(a) {
+    return !a.url || !_spotlightUrls[a.url];
+  });
+
+  for (var i = 0; i < filtered.length && i < 20; i++) {
+    var a = filtered[i];
     var pubDate = formatDate(a.publishedAt);
 
     var item = $('<div class="sidebar-item">');
