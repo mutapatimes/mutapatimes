@@ -796,67 +796,22 @@ function loadSpotlightStories() {
     return;
   }
 
-  // Try GNews data files first, fall back to RSS
-  var allArticles = [];
-  var completed = 0;
-  var total = GNEWS_CATEGORIES.length;
-
-  GNEWS_CATEGORIES.forEach(function(cat) {
-    $.ajax({
-      type: "GET",
-      url: MUTAPA_CONFIG.DATA_PATH + cat + ".json",
-      dataType: "json",
-      success: function(data) {
-        if (data && data.articles && data.articles.length > 0) {
-          data.articles.forEach(function(a) {
-            var sourceName = (a.source && typeof a.source === "object") ? a.source.name : (a.source || "");
-            var desc = a.description || "";
-            var url = a.url || "";
-            if (!desc && url && _aiDescriptions[url]) {
-              desc = _aiDescriptions[url];
-            }
-            allArticles.push({
-              title: a.title || "",
-              url: url,
-              description: desc,
-              source: sourceName,
-              publishedAt: a.publishedAt || "",
-              isLocal: isLocalZimSource(sourceName)
-            });
-          });
-        }
-      },
-      complete: function() {
-        completed++;
-        if (completed === total) {
-          // Filter to reputable sources within last 30 days, deduplicate, sort
-          var now = Date.now();
-          var reputable = allArticles.filter(function(a) {
-            if (!isReputableSource(a.source)) return false;
-            if (!a.publishedAt) return false;
-            try {
-              var d = new Date(a.publishedAt);
-              if (isNaN(d.getTime())) return false;
-              return (now - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
-            } catch (e) { return false; }
-          });
-          reputable = deduplicateByTopic(reputable, 0.25);
-          reputable.sort(function(a, b) {
-            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
-            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
-            return dateB - dateA;
-          });
-
-          if (reputable.length > 0) {
-            setCache(cacheKey, reputable);
-            renderSpotlightStories(reputable);
-          } else {
-            // Fall back to RSS if no GNews data
-            loadSpotlightFromRSS();
-          }
-        }
+  // Load pre-fetched spotlight articles (GNews API — includes images + descriptions)
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.DATA_PATH + "spotlight.json",
+    dataType: "json",
+    success: function(data) {
+      if (data && data.articles && data.articles.length > 0) {
+        setCache(cacheKey, data.articles);
+        renderSpotlightStories(data.articles);
+      } else {
+        loadSpotlightFromRSS();
       }
-    });
+    },
+    error: function() {
+      loadSpotlightFromRSS();
+    }
   });
 }
 
@@ -925,6 +880,12 @@ function renderSpotlightStories(articles) {
 
     var item = $('<div class="spotlight-item">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+
+    // Article image
+    if (a.image) {
+      var img = $('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || '');
+      link.append(img);
+    }
 
     link.append($('<h4 class="spotlight-title">').text(a.title));
 
