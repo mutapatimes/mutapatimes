@@ -273,8 +273,6 @@ body {
   --text: #2c2c2c;
   --text-light: #6b6b6b;
   --border: #c8c8c8;
-  overflow-x: hidden;
-
 	background-color: #e8e6e3;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -876,11 +874,29 @@ a:hover {
 @media (max-width: 600px) {
   .paper {
     width: 100%;
-    padding: 12px 10px 10px;
+    padding: 12px 0 10px;
   }
 
+  /* Inset padding for elements that need it */
   .aboutTitle {
     font-size: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .titleDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .topHr, .bottomHr, .dateHr {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .title {
@@ -980,38 +996,13 @@ a:hover {
     overflow: hidden;
   }
 
-  /* Full-bleed images on mobile — break out of .paper padding */
-  .editorial-landscape-wrap {
-    margin-left: -10px;
-    margin-right: -10px;
-    width: calc(100% + 20px);
-  }
-  .break-section {
-    margin-left: -10px;
-    margin-right: -10px;
-    width: calc(100% + 20px);
-  }
+  /* Full-bleed: no hacks needed, .paper has 0 horizontal padding */
   .break-caption { font-size: 0.72em; padding: 8px 14px; }
 
   .live-cam-embed { padding-bottom: 56.25%; }
   .live-cam-header { padding: 8px 12px; }
 
-  /* Full-bleed spotlight + portrait on mobile */
-  .content-layout {
-    overflow: visible;
-  }
-  .spotlight-section {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .sidebar-portrait {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  /* Spotlight + portrait are naturally full-bleed now */
 
   /* Sidebar items — more breathing room on mobile */
   .sidebar-item a {
@@ -1042,7 +1033,7 @@ a:hover {
     margin-top: 6px;
   }
 
-  .subscribe-banner { padding: 28px 16px; margin-left: -10px; margin-right: -10px; width: calc(100% + 20px); }
+  .subscribe-banner { padding: 28px 16px; }
   .subscribe-title { font-size: 1.2em; }
   .subscribe-form { flex-direction: column; gap: 8px; }
   .subscribe-input { border-right: 1px solid var(--border); }
