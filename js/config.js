@@ -829,9 +829,16 @@ function loadSpotlightStories() {
       complete: function() {
         completed++;
         if (completed === total) {
-          // Filter to reputable sources, deduplicate, sort
+          // Filter to reputable sources within last 30 days, deduplicate, sort
+          var now = Date.now();
           var reputable = allArticles.filter(function(a) {
-            return isReputableSource(a.source);
+            if (!isReputableSource(a.source)) return false;
+            if (!a.publishedAt) return false;
+            try {
+              var d = new Date(a.publishedAt);
+              if (isNaN(d.getTime())) return false;
+              return (now - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
+            } catch (e) { return false; }
           });
           reputable = deduplicateByTopic(reputable, 0.25);
           reputable.sort(function(a, b) {
