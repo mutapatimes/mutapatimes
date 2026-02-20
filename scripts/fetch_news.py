@@ -241,14 +241,26 @@ def fetch_rss_descriptions():
 
 
 def fetch_spotlight():
-    """Fetch 3 spotlight articles from GNews API (images + descriptions included)."""
+    """Fetch spotlight articles from GNews API — reputable western sources only."""
     print("\n=== SPOTLIGHT ===")
     if not GNEWS_API_KEY:
         print("  SKIP: GNEWS_API_KEY not set")
         return
 
+    # Reputable source domains to filter for
+    reputable_domains = [
+        "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
+        "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
+        "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
+        "news.sky.com", "telegraph.co.uk", "independent.co.uk",
+        "france24.com", "dw.com",
+        "allafrica.com", "dailymaverick.co.za", "mg.co.za",
+        "news24.com", "theeastafrican.co.ke",
+    ]
+
+    # Fetch 20 to cast a wide net, then filter to reputable sources
     url = (
-        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=3"
+        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=20"
         f"&apikey={GNEWS_API_KEY}"
     )
     try:
@@ -264,9 +276,12 @@ def fetch_spotlight():
         print("  FAIL: no articles returned")
         return
 
-    # Keep only the fields we need
+    # Filter to reputable sources only, keep first 3
     spotlight = []
     for a in articles:
+        source_url = a.get("source", {}).get("url", "")
+        if not any(d in source_url for d in reputable_domains):
+            continue
         spotlight.append({
             "title": a.get("title", ""),
             "description": a.get("description", ""),
@@ -275,11 +290,16 @@ def fetch_spotlight():
             "publishedAt": a.get("publishedAt", ""),
             "source": a.get("source", {}).get("name", ""),
         })
+        if len(spotlight) >= 3:
+            break
+
+    if not spotlight:
+        print("  WARN: no reputable-source articles found in results")
 
     outpath = os.path.join(DATA_DIR, "spotlight.json")
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight}, f)
-    print(f"  OK: {len(spotlight)} spotlight articles saved")
+    print(f"  OK: {len(spotlight)} spotlight articles saved (filtered from {len(articles)})")
 
 
 def main():
