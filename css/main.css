@@ -1223,6 +1223,79 @@ h4 {
 .copyright-text a {
   color: #999;
 }
+
+/* --- Personalisation touches --- */
+
+/* On This Day */
+.on-this-day {
+  text-align: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 12px;
+}
+
+.on-this-day-label {
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.on-this-day-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.82em;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Shona Proverb */
+.shona-proverb {
+  text-align: center;
+  padding: 14px 15px 10px;
+}
+
+.shona-proverb-label {
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.3);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.shona-proverb-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95em;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.shona-proverb-translation {
+  font-size: 0.72em;
+  color: rgba(255,255,255,0.4);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+/* Reader Location */
+.reader-location-text {
+  font-size: 0.7em;
+  color: rgba(255,255,255,0.3);
+  text-align: center;
+  margin: 0;
+  padding: 2px 0 10px;
+  letter-spacing: 0.06em;
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
