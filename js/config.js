@@ -234,12 +234,11 @@ function formatDate(dateStr) {
 // ============================================================
 function fetchNews() {
   var date = new Date();
-  var startDate = new Date("2020-04-18");
-  var volNum = Math.round((date.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   $(".date").text(date.toLocaleDateString("en-US", options));
-  $(".vol").text("Edition # " + volNum);
+  var timeStr = date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
+  $(".vol").text("Updated " + timeStr);
   fetchWeather();
 
   // Duplicate weather cities for infinite ticker scroll
@@ -594,16 +593,12 @@ function renderMainStories(articles) {
     return;
   }
 
-  // Show last-updated timestamp
-  var now = new Date();
-  var timeStr = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
-  container.append($('<p class="feed-updated">').text("Last updated " + timeStr));
-
   for (var i = 0; i < articles.length && i < 15; i++) {
     var a = articles[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
+    var isJustNow = (pubDate === "Just now");
 
     var posClass = (rank % 2 === 1) ? "rank-right" : "rank-left";
     var card = $('<div class="main-article">').addClass(posClass);
@@ -635,6 +630,9 @@ function renderMainStories(articles) {
     var category = inferCategory(a.title);
     if (category) {
       meta.append($('<span class="category-tag">').text(category));
+    }
+    if (isJustNow) {
+      meta.append($('<span class="just-now-badge">').text("Just in"));
     }
     meta.append(createShareBtn(a.title, a.url));
     textCol.append(meta);
@@ -725,8 +723,10 @@ function renderMainStories(articles) {
 }
 
 // ============================================================
-// SPOTLIGHT — reputable international sources
+// SPOTLIGHT — GNews data with RSS fallback
 // ============================================================
+var GNEWS_CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"];
+
 function loadSpotlightStories() {
   var cacheKey = "spotlight_all";
   var cached = getCache(cacheKey);
@@ -735,6 +735,60 @@ function loadSpotlightStories() {
     return;
   }
 
+  // Try GNews data files first, fall back to RSS
+  var allArticles = [];
+  var completed = 0;
+  var total = GNEWS_CATEGORIES.length;
+
+  GNEWS_CATEGORIES.forEach(function(cat) {
+    $.ajax({
+      type: "GET",
+      url: MUTAPA_CONFIG.DATA_PATH + cat + ".json",
+      dataType: "json",
+      success: function(data) {
+        if (data && data.articles && data.articles.length > 0) {
+          data.articles.forEach(function(a) {
+            var sourceName = (a.source && typeof a.source === "object") ? a.source.name : (a.source || "");
+            allArticles.push({
+              title: a.title || "",
+              url: a.url || "",
+              description: a.description || "",
+              source: sourceName,
+              publishedAt: a.publishedAt || "",
+              isLocal: isLocalZimSource(sourceName)
+            });
+          });
+        }
+      },
+      complete: function() {
+        completed++;
+        if (completed === total) {
+          // Filter to reputable sources, deduplicate, sort
+          var reputable = allArticles.filter(function(a) {
+            return isReputableSource(a.source);
+          });
+          reputable = deduplicateByTopic(reputable);
+          reputable.sort(function(a, b) {
+            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+            return dateB - dateA;
+          });
+
+          if (reputable.length > 0) {
+            setCache(cacheKey, reputable);
+            renderSpotlightStories(reputable);
+          } else {
+            // Fall back to RSS if no GNews data
+            loadSpotlightFromRSS();
+          }
+        }
+      }
+    });
+  });
+}
+
+function loadSpotlightFromRSS() {
+  var cacheKey = "spotlight_all";
   var allArticles = [];
   var completed = 0;
   var total = SPOTLIGHT_RSS_FEEDS.length;
@@ -760,7 +814,6 @@ function loadSpotlightStories() {
         completed++;
         if (completed === total) {
           clearTimeout(_spotlightTimeout);
-          // Filter to reputable sources only, up to 30 days old
           allArticles = allArticles.filter(function(a) {
             if (!a.publishedAt) return false;
             try {

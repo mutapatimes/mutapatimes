@@ -380,13 +380,26 @@ a {
 .content-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 0;
   border-top: 1px solid var(--border);
 }
 
 /* --- Main stories column (left 2/3) --- */
 #main-stories {
+  grid-column: 1;
+  grid-row: 1 / -1;
   border-right: 1px solid var(--border);
+}
+
+.content-layout > .spotlight-section {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.content-layout > .sidebar {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .main-article {
@@ -648,6 +661,28 @@ a {
   color: #fff;
 }
 
+/* "Just now" developing story indicator */
+@keyframes just-now-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.just-now-badge {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  margin-left: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  line-height: 1.4;
+  background: #c62828;
+  color: #fff;
+  animation: just-now-pulse 2.5s ease-in-out infinite;
+}
+
 /* Sidebar press markers */
 .sidebar-meta .press-marker {
   margin-left: 6px;
@@ -848,17 +883,29 @@ a:hover {
     font-size: 0.7em;
   }
 
-  /* Stack main + sidebar on mobile */
+  /* Stack on mobile: spotlight → main → sidebar */
   .content-layout {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .content-layout > .spotlight-section {
+    grid-column: 1;
+    grid-row: auto;
+    order: -1;
   }
 
   #main-stories {
+    grid-column: 1;
+    grid-row: auto;
     border-right: none;
+    order: 0;
   }
 
   .sidebar {
     border-top: 2px solid var(--dark-color);
+    order: 1;
+    overflow: visible;
   }
 
   .main-article a {
@@ -920,6 +967,9 @@ a:hover {
   .live-cam-header { padding: 8px 12px; }
 
   /* Full-bleed spotlight + portrait on mobile */
+  .content-layout {
+    overflow: visible;
+  }
   .spotlight-section {
     margin-left: -10px;
     margin-right: -10px;
