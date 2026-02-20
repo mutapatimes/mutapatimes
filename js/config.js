@@ -615,6 +615,7 @@ function renderMainStories(articles) {
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
 
+    // Line 1: source, time, read time
     var meta = $('<p class="main-article-meta">');
     if (a.source) {
       meta.append($('<span>').text(a.source));
@@ -628,20 +629,24 @@ function renderMainStories(articles) {
     if (extras.length) {
       meta.append(document.createTextNode(" \u00b7 " + extras.join(" \u00b7 ")));
     }
+    textCol.append(meta);
+
+    // Line 2: tags, badges, share
+    var tagRow = $('<div class="main-article-tags">');
     if (a.isLocal) {
-      meta.append($('<span class="press-marker local-press">').text("Local"));
+      tagRow.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
-      meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
+      tagRow.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
     var category = inferCategory(a.title);
     if (category) {
-      meta.append($('<span class="category-tag">').text(category));
+      tagRow.append($('<span class="category-tag">').text(category));
     }
     if (isJustNow) {
-      meta.append($('<span class="just-now-badge">').text("Just in"));
+      tagRow.append($('<span class="just-now-badge">').text("Just in"));
     }
-    meta.append(createShareBtn(a.title, a.url));
-    textCol.append(meta);
+    tagRow.append(createShareBtn(a.title, a.url));
+    textCol.append(tagRow);
 
     var desc = a.description;
     if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
