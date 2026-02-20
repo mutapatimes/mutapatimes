@@ -471,7 +471,12 @@ var STOP_WORDS = ["the","a","an","in","on","at","to","for","of","and","or","is",
 function getTopicWords(title) {
   return title.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(function(w) {
     return w.length > 2 && STOP_WORDS.indexOf(w) === -1;
-  });
+  }).map(function(w) {
+    // Basic stemming to catch "detained/detention", "arrested/arrest", etc.
+    return w.replace(/(tion|sion|ment|ness|ity|ies|ing|ated|ised|ized|ened|ered|ling|ally|ful|less|able|ible|ous|ive|ant|ent|ure)$/, '')
+            .replace(/(ed|er|ly|es|al|en)$/, '')
+            .replace(/s$/, '');
+  }).filter(function(w) { return w.length > 2; });
 }
 
 function topicOverlap(wordsA, wordsB) {
@@ -484,14 +489,15 @@ function topicOverlap(wordsA, wordsB) {
   return shared / smaller;
 }
 
-function deduplicateByTopic(articles) {
+function deduplicateByTopic(articles, threshold) {
+  var thresh = threshold || 0.4;
   var result = [];
   var topicCache = [];
   for (var i = 0; i < articles.length; i++) {
     var words = getTopicWords(articles[i].title);
     var isDupe = false;
     for (var j = 0; j < topicCache.length; j++) {
-      if (topicOverlap(words, topicCache[j]) > 0.4) {
+      if (topicOverlap(words, topicCache[j]) > thresh) {
         isDupe = true;
         break;
       }
@@ -767,7 +773,7 @@ function loadSpotlightStories() {
           var reputable = allArticles.filter(function(a) {
             return isReputableSource(a.source);
           });
-          reputable = deduplicateByTopic(reputable);
+          reputable = deduplicateByTopic(reputable, 0.25);
           reputable.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
@@ -822,7 +828,7 @@ function loadSpotlightFromRSS() {
               return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS && isReputableSource(a.source);
             } catch (e) { return false; }
           });
-          allArticles = deduplicateByTopic(allArticles);
+          allArticles = deduplicateByTopic(allArticles, 0.25);
           allArticles.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
