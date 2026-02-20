@@ -26,9 +26,10 @@ var SIDEBAR_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en"
 ];
 
-// Spotlight feeds — reputable international sources only
+// Spotlight feeds — reputable international sources preferred, broad fallback
 var SPOTLIGHT_RSS_FEEDS = [
-  "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en"
+  "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en"
 ];
 
 // Reputable sources for spotlight matching
@@ -849,12 +850,13 @@ function loadSpotlightFromRSS() {
         completed++;
         if (completed === total) {
           clearTimeout(_spotlightTimeout);
+          // Filter to recent articles only
           allArticles = allArticles.filter(function(a) {
             if (!a.publishedAt) return false;
             try {
               var d = new Date(a.publishedAt);
               if (isNaN(d.getTime())) return false;
-              return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS && isReputableSource(a.source);
+              return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
             } catch (e) { return false; }
           });
           allArticles = deduplicateByTopic(allArticles, 0.25);
@@ -863,8 +865,15 @@ function loadSpotlightFromRSS() {
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
           });
-          setCache(cacheKey, allArticles);
-          renderSpotlightStories(allArticles);
+          // Prefer reputable sources, then fill remaining slots from any source
+          var reputable = allArticles.filter(function(a) { return isReputableSource(a.source); });
+          var others = allArticles.filter(function(a) { return !isReputableSource(a.source); });
+          var merged = reputable.slice(0, 3);
+          if (merged.length < 3) {
+            merged = merged.concat(others.slice(0, 3 - merged.length));
+          }
+          setCache(cacheKey, merged);
+          renderSpotlightStories(merged);
         }
       }
     });

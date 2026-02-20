@@ -276,30 +276,71 @@ def fetch_spotlight():
         print("  FAIL: no articles returned")
         return
 
-    # Filter to reputable sources only, keep first 3
-    spotlight = []
+    # Build new candidates — prefer reputable sources, then any source
+    reputable = []
+    others = []
     for a in articles:
-        source_url = a.get("source", {}).get("url", "")
-        if not any(d in source_url for d in reputable_domains):
-            continue
-        spotlight.append({
+        item = {
             "title": a.get("title", ""),
             "description": a.get("description", ""),
             "url": a.get("url", ""),
             "image": a.get("image", ""),
             "publishedAt": a.get("publishedAt", ""),
             "source": a.get("source", {}).get("name", ""),
-        })
-        if len(spotlight) >= 3:
-            break
+        }
+        source_url = a.get("source", {}).get("url", "")
+        if any(d in source_url for d in reputable_domains):
+            reputable.append(item)
+        else:
+            others.append(item)
+
+    new_articles = reputable + others
+
+    # Load existing spotlight to preserve stories that are still fresh
+    outpath = os.path.join(DATA_DIR, "spotlight.json")
+    existing = []
+    if os.path.exists(outpath):
+        try:
+            with open(outpath) as f:
+                existing = json.load(f).get("articles", [])
+        except (json.JSONDecodeError, IOError):
+            existing = []
+
+    # Merge: new articles first, then existing ones (deduped by URL)
+    seen_urls = set()
+    merged = []
+    for a in new_articles + existing:
+        url = a.get("url", "")
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        # Drop articles older than spotlight max age (30 days)
+        pub = a.get("publishedAt", "")
+        if pub:
+            try:
+                from datetime import datetime, timezone
+                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+                age_days = (datetime.now(timezone.utc) - dt).days
+                if age_days > 30:
+                    continue
+            except Exception:
+                pass
+        merged.append(a)
+
+    # Sort by date (newest first), then pick top 3 preferring reputable
+    merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
+    reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in ["bbc", "reuters", "nytimes", "guardian", "al jazeera", "bloomberg", "ap news", "associated press", "financial times", "economist", "cnn", "washington post", "sky news", "france 24", "allafrica", "daily maverick", "news24"])]
+    others_merged = [a for a in merged if a not in reputable_merged]
+    spotlight = reputable_merged[:3]
+    if len(spotlight) < 3:
+        spotlight.extend(others_merged[:3 - len(spotlight)])
 
     if not spotlight:
-        print("  WARN: no reputable-source articles found in results")
+        print("  WARN: no articles found in results")
 
-    outpath = os.path.join(DATA_DIR, "spotlight.json")
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight}, f)
-    print(f"  OK: {len(spotlight)} spotlight articles saved (filtered from {len(articles)})")
+    print(f"  OK: {len(spotlight)} spotlight articles saved (merged from {len(articles)} new + {len(existing)} existing)")
 
 
 def main():
