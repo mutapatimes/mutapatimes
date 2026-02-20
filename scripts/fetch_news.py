@@ -258,9 +258,9 @@ def fetch_spotlight():
         "news24.com", "theeastafrican.co.ke",
     ]
 
-    # Fetch more than 3 so we can filter to reputable sources
+    # Fetch 20 to cast a wide net, then filter to reputable sources
     url = (
-        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=10"
+        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=20"
         f"&apikey={GNEWS_API_KEY}"
     )
     try:
