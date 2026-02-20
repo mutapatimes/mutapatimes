@@ -259,13 +259,12 @@ function fetchNews() {
   // Personalisation touches (proverb, location, on this day)
   initPersonalisation();
 
-  // Load AI descriptions lookup (for RSS articles missing descriptions)
-  loadAiDescriptions();
-
-  // Load all stories from multiple RSS feeds
-  loadMainStories();
-  loadSpotlightStories();
-  loadSidebarStories();
+  // Load AI descriptions first, then start loading stories
+  loadAiDescriptions(function() {
+    loadMainStories();
+    loadSpotlightStories();
+    loadSidebarStories();
+  });
 }
 
 // ============================================================
@@ -441,7 +440,7 @@ function isTitleRepeat(title, desc) {
 // AI-generated descriptions lookup (loaded from data/rss_descriptions.json)
 var _aiDescriptions = {};
 
-function loadAiDescriptions() {
+function loadAiDescriptions(callback) {
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.DATA_PATH + "rss_descriptions.json",
@@ -449,8 +448,11 @@ function loadAiDescriptions() {
     success: function(data) {
       if (data && typeof data === "object") {
         _aiDescriptions = data;
-        console.log("AI descriptions loaded:", Object.keys(data).length);
       }
+    },
+    complete: function() {
+      // Always fire callback — stories load even if descriptions file fails
+      if (callback) callback();
     }
   });
 }
