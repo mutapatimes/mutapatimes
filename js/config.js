@@ -659,9 +659,8 @@ function renderMainStories(articles) {
     }
     textCol.append(meta);
 
-    // Line 2: share first (bottom-left), then tags + badges
+    // Line 2: tags + badges, then share (bottom-right for thumb access)
     var tagRow = $('<div class="main-article-tags">');
-    tagRow.append(createShareGroup(a.title, a.url));
     if (a.isLocal) {
       tagRow.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
@@ -674,6 +673,7 @@ function renderMainStories(articles) {
     if (isJustNow) {
       tagRow.append($('<span class="just-now-badge">').text("Just in"));
     }
+    tagRow.append(createShareGroup(a.title, a.url));
     textCol.append(tagRow);
 
     var desc = a.description;
