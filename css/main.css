@@ -633,6 +633,21 @@ a {
   border: 1px solid var(--border);
 }
 
+.category-tag {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 6px;
+  margin-left: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  line-height: 1.4;
+  background: #1a5632;
+  color: #fff;
+}
+
 /* Sidebar press markers */
 .sidebar-meta .press-marker {
   margin-left: 6px;
@@ -853,22 +868,26 @@ a:hover {
   }
 
   .main-article-text {
-    padding: 14px 12px;
+    padding: 16px 14px;
   }
 
   .main-article-rank {
-    flex: 0 0 25%;
+    flex: 0 0 18%;
   }
 
   .main-article-rank .rank-number {
-    font-size: 2.8em !important;
+    font-size: 2em !important;
   }
 
   .main-article.rank-featured .rank-number {
-    font-size: 3.5em !important;
+    font-size: 2.6em !important;
   }
   .main-article.rank-featured .main-article-title {
     font-size: 1.15em;
+  }
+
+  .main-article {
+    min-height: 90px;
   }
 
   .main-article-title {

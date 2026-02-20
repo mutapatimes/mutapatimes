@@ -51,6 +51,31 @@ function isReputableSource(source) {
   return false;
 }
 
+// Infer article category from headline keywords
+var CATEGORY_RULES = [
+  { tag: "Politics", words: ["president", "government", "parliament", "minister", "election", "vote", "party", "zanu", "mdc", "opposition", "sanctions", "diplomat", "embassy", "policy", "political", "coup", "mugabe", "mnangagwa", "chamisa", "cabinet", "senate", "constitutional"] },
+  { tag: "Business", words: ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve"] },
+  { tag: "Crime", words: ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"] },
+  { tag: "Sport", words: ["cricket", "football", "soccer", "rugby", "match", "score", "championship", "tournament", "athlete", "stadium", "coach", "team", "league", "olympic", "fifa", "icc", "qualifier", "wicket", "goal"] },
+  { tag: "Health", words: ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"] },
+  { tag: "Tech", words: ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash"] },
+  { tag: "Culture", words: ["music", "film", "artist", "culture", "festival", "concert", "album", "entertainment", "award", "celebrity", "dance", "theatre", "theater"] },
+  { tag: "Environment", words: ["climate", "drought", "flood", "wildlife", "conservation", "environment", "cyclone", "rainfall", "dam", "water crisis", "deforestation", "national park", "safari", "poach"] },
+  { tag: "Education", words: ["school", "university", "student", "teacher", "education", "exam", "graduate", "scholarship", "literacy"] }
+];
+
+function inferCategory(title) {
+  if (!title) return "";
+  var t = " " + title.toLowerCase() + " ";
+  for (var i = 0; i < CATEGORY_RULES.length; i++) {
+    var rule = CATEGORY_RULES[i];
+    for (var j = 0; j < rule.words.length; j++) {
+      if (t.indexOf(rule.words[j]) !== -1) return rule.tag;
+    }
+  }
+  return "";
+}
+
 // Max age for spotlight articles (30 days — up to a month old)
 var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 
@@ -606,6 +631,10 @@ function renderMainStories(articles) {
       meta.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
       meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
+    }
+    var category = inferCategory(a.title);
+    if (category) {
+      meta.append($('<span class="category-tag">').text(category));
     }
     meta.append(createShareBtn(a.title, a.url));
     textCol.append(meta);
