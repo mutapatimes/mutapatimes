@@ -591,7 +591,7 @@ function createShareBtn(title, url) {
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var shareText = title + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
+    var shareText = title + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
     var shareData = {
       title: title + ' | The Mutapa Times',
       text: shareText,
@@ -603,7 +603,7 @@ function createShareBtn(title, url) {
       });
     } else {
       // Clipboard fallback — copy full formatted text
-      var clipText = title + '\n' + url + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com';
+      var clipText = title + '\n' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(clipText);
       } else {
@@ -629,7 +629,7 @@ function createWhatsAppBtn(title, url) {
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var text = encodeURIComponent(title + '\n\n' + url + '\n\nRead more on The Mutapa Times \u2014 Zimbabwe outside-in.\nhttps://www.mutapatimes.com');
+    var text = encodeURIComponent(title + '\n\n\ud83d\udd17 ' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com');
     window.open('https://wa.me/?text=' + text, '_blank');
   });
   return btn;
@@ -643,7 +643,7 @@ function createShareGroup(title, url) {
 }
 
 // ============================================================
-// RENDER: Main stories — text + ranking number (alternating sides)
+// RENDER: Main stories — single column layout
 // ============================================================
 function renderMainStories(articles) {
   var container = $("#main-stories");
@@ -662,8 +662,7 @@ function renderMainStories(articles) {
     var pubDate = formatDate(a.publishedAt);
     var isJustNow = (pubDate === "Just now");
 
-    var posClass = (rank % 2 === 1) ? "rank-right" : "rank-left";
-    var card = $('<div class="main-article">').addClass(posClass);
+    var card = $('<div class="main-article">');
     if (rank === 1) card.addClass("rank-featured");
 
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
@@ -709,11 +708,6 @@ function renderMainStories(articles) {
     if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
 
     link.append(textCol);
-
-    var rankCol = $('<div class="main-article-rank">');
-    rankCol.append($('<span class="rank-number">').text(rank));
-    link.append(rankCol);
-
     card.append(link);
     container.append(card);
 
@@ -835,9 +829,16 @@ function loadSpotlightStories() {
       complete: function() {
         completed++;
         if (completed === total) {
-          // Filter to reputable sources, deduplicate, sort
+          // Filter to reputable sources within last 30 days, deduplicate, sort
+          var now = Date.now();
           var reputable = allArticles.filter(function(a) {
-            return isReputableSource(a.source);
+            if (!isReputableSource(a.source)) return false;
+            if (!a.publishedAt) return false;
+            try {
+              var d = new Date(a.publishedAt);
+              if (isNaN(d.getTime())) return false;
+              return (now - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
+            } catch (e) { return false; }
           });
           reputable = deduplicateByTopic(reputable, 0.25);
           reputable.sort(function(a, b) {

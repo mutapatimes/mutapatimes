@@ -54,7 +54,7 @@ ALL_RSS_FEEDS = [
     "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
 ]
 
-MAX_NEW_DESCRIPTIONS = 15  # Cap per run to stay within Gemini free-tier rate limits
+MAX_NEW_DESCRIPTIONS = 10  # Cap per run to stay within Gemini free-tier rate limits
 
 
 def fetch_url(url):
@@ -136,35 +136,29 @@ def generate_description(title, content=""):
         "generationConfig": {"maxOutputTokens": 100, "temperature": 0.2}
     }).encode("utf-8")
 
-    max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            req = urllib.request.Request(
-                f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-                data=payload,
-                headers={"Content-Type": "application/json"},
-                method="POST"
-            )
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                result = json.loads(resp.read().decode("utf-8"))
-                text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
-                text = text.strip('"\'')
-                # Rate limit: wait 4s between successful calls (free tier ~15 RPM)
-                time.sleep(4)
-                return text[:250] if len(text) > 250 else text
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                wait = 2 ** (attempt + 2)  # 4s, 8s, 16s
-                print(f"    Rate limited, waiting {wait}s (attempt {attempt + 1}/{max_retries})")
-                time.sleep(wait)
-            else:
-                print(f"    Gemini error: {e}")
-                return ""
-        except Exception as e:
+    try:
+        req = urllib.request.Request(
+            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+            text = text.strip('"\'')
+            # Rate limit: wait 5s between calls (free tier ~15 RPM)
+            time.sleep(5)
+            return text[:250] if len(text) > 250 else text
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            # Don't retry — just skip this article and slow down for the next one
+            print(f"    Rate limited, skipping: {title[:50]}")
+            time.sleep(10)
+        else:
             print(f"    Gemini error: {e}")
-            return ""
-
-    print(f"    Gemini: gave up after {max_retries} retries for: {title[:50]}")
+    except Exception as e:
+        print(f"    Gemini error: {e}")
     return ""
 
 
@@ -187,19 +181,6 @@ def fetch_category(name, feed_urls):
         return False
 
     articles = deduplicate(all_articles)
-
-    # Generate AI descriptions for articles missing them (max 5 per category)
-    if GEMINI_API_KEY:
-        generated = 0
-        for a in articles:
-            if generated >= 5:
-                break
-            if not a.get("description"):
-                desc = generate_description(a["title"])
-                if desc:
-                    a["description"] = desc
-                    generated += 1
-                    print(f"    AI desc: {a['title'][:50]}...")
 
     outpath = os.path.join(DATA_DIR, f"{name}.json")
     with open(outpath, "w") as f:
