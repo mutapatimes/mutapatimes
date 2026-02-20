@@ -383,9 +383,31 @@ a {
   border-top: 1px solid var(--border);
 }
 
-/* --- Main stories column (left 2/3) --- */
-#main-stories {
+/* --- Main column wrapper (left 2/3) --- */
+.main-column {
   border-right: 1px solid var(--border);
+}
+
+/* Spotlight in main area — horizontal 3-col grid on desktop */
+.main-column .spotlight-section {
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+}
+
+.main-column #spotlight-stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-column .spotlight-item {
+  border-bottom: none;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.main-column .spotlight-item:last-child {
+  border-right: none;
+}
+
+#main-stories {
 }
 
 .main-article {
@@ -701,9 +723,29 @@ a {
   padding: 1px 5px;
 }
 
-/* --- Sidebar column (right 1/3) --- */
+/* --- Sidebar column (right 1/3) — "Live on the Ground" local news --- */
 .sidebar {
   padding: 0;
+}
+
+.local-news-header {
+  background: var(--dark-color);
+  padding: 14px 18px 12px;
+}
+
+.local-news-header .sidebar-header {
+  color: #fff;
+  border-bottom: none;
+  padding: 0;
+  margin: 0 0 6px;
+}
+
+.local-news-desc {
+  font-size: 0.75em;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  letter-spacing: 0.02em;
 }
 
 .sidebar-header {
@@ -913,36 +955,27 @@ a:hover {
     font-size: 0.7em;
   }
 
-  /* Stack on mobile: spotlight → main → rest of sidebar */
+  /* Stack on mobile: main column (spotlight + stories) then sidebar */
   .content-layout {
     grid-template-columns: 1fr;
   }
 
-  #main-stories {
+  .main-column {
     border-right: none;
-    order: 1;
   }
 
-  /* Flatten sidebar so its children become direct grid items */
-  .sidebar {
-    display: contents;
+  /* Spotlight stacks to single column on mobile */
+  .main-column #spotlight-stories {
+    grid-template-columns: 1fr;
   }
 
-  .spotlight-section {
-    order: 0;
+  .main-column .spotlight-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
-  .sidebar-portrait {
-    order: 2;
-  }
-
-  .sidebar-header {
-    order: 3;
-    border-top: 2px solid var(--dark-color);
-  }
-
-  #sidebar-stories {
-    order: 4;
+  .main-column .spotlight-item:last-child {
+    border-bottom: none;
   }
 
   .main-article a {

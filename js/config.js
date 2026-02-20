@@ -937,9 +937,10 @@ function renderSidebarStories(articles) {
     return;
   }
 
-  // Filter out articles already shown in spotlight
+  // "Live on the Ground" — local Zimbabwean sources only, no spotlight dupes
   var filtered = articles.filter(function(a) {
-    return !a.url || !_spotlightUrls[a.url];
+    if (a.url && _spotlightUrls[a.url]) return false;
+    return a.isLocal;
   });
 
   for (var i = 0; i < filtered.length && i < 20; i++) {
@@ -964,11 +965,6 @@ function renderSidebarStories(articles) {
     }
     if (pubDate) {
       meta.append(document.createTextNode(" \u00b7 " + pubDate));
-    }
-    if (a.isLocal) {
-      meta.append($('<span class="press-marker local-press">').text("Local"));
-    } else if (a.source) {
-      meta.append($('<span class="press-marker foreign-press">').text("Foreign"));
     }
     meta.append(createShareGroup(a.title, a.url));
     link.append(meta);
