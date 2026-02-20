@@ -239,6 +239,11 @@ function fetchNews() {
   $(".date").text(date.toLocaleDateString("en-US", options));
   var timeStr = date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
   $(".vol").text("Updated " + timeStr);
+
+  // Harare time in header
+  updateHarareTime();
+  setInterval(updateHarareTime, 60000);
+
   fetchWeather();
 
   // Duplicate weather cities for infinite ticker scroll
@@ -250,6 +255,9 @@ function fetchNews() {
 
   // Init editorial images (sidebar portrait + landscape)
   initEditorialImages();
+
+  // Personalisation touches (proverb, location, on this day)
+  initPersonalisation();
 
   // Load all stories from multiple RSS feeds
   loadMainStories();
@@ -926,4 +934,184 @@ function renderSidebarStories(articles) {
     item.append(link);
     container.append(item);
   }
+}
+
+// ============================================================
+// PERSONALISATION TOUCHES
+// ============================================================
+
+// Harare time in header
+function updateHarareTime() {
+  try {
+    var now = new Date();
+    var harareTime = now.toLocaleTimeString("en-US", {
+      hour: "2-digit", minute: "2-digit",
+      timeZone: "Africa/Harare"
+    });
+    $(".price").text(harareTime + " in Harare");
+  } catch (e) {}
+}
+
+// --- Shona Proverbs ---
+var SHONA_PROVERBS = [
+  { shona: "Chara chimwe hachitswanyi inda.", english: "One finger cannot crush a louse." },
+  { shona: "Kudzidza hakuperi.", english: "Learning never ends." },
+  { shona: "Rume rimwe harikombi churu.", english: "One man cannot surround an anthill." },
+  { shona: "Chirere chigokurerawo.", english: "Raise a child and it will raise you too." },
+  { shona: "Rina manyanga hariputirwi.", english: "That which has horns cannot be wrapped." },
+  { shona: "Chisi hachieri chisingabudi rimwe.", english: "A day of rest doesn't end without another dawning." },
+  { shona: "Mugoni wepwere ndeasinayo.", english: "The one who knows how to raise children is one who has none." },
+  { shona: "Kufa kwendega kufa kusingachemerwe.", english: "To die alone is to die without being mourned." },
+  { shona: "Mwana asingachemi anofira mumbereko.", english: "A child who does not cry dies on its mother's back." },
+  { shona: "Kugarira nhaka kuona bvute.", english: "To inherit is to see the dust settle." },
+  { shona: "Gudo guru peta muswe vadiki vakutye.", english: "Great baboon, curl your tail so the little ones may fear you." },
+  { shona: "Kuziva mbuya huudzwa.", english: "To know grandmother is to be told about her." },
+  { shona: "Chakafukidza dzimba matenga.", english: "What covers houses is the roof." },
+  { shona: "Zviri muvanhu hazvienzani.", english: "What is in people is not equal." },
+  { shona: "Murombo munhu.", english: "A poor person is still a person." },
+  { shona: "Zano pangwa une rako.", english: "Accept advice, but keep your own counsel." },
+  { shona: "Mvura ngainaye; hapana anodzivisa.", english: "Let the rain fall; no one can stop it." },
+  { shona: "Nzara haina hama.", english: "Hunger has no relatives." },
+  { shona: "Chitsva chiri murutsoka.", english: "What is new is underfoot." },
+  { shona: "Dura rinokanganwa gejo.", english: "The granary forgets the hoe." },
+  { shona: "Nhamo yeumwe hairambirwi sadza.", english: "Another's troubles don't stop you from eating." },
+  { shona: "Gonzo redziva harityi mvura.", english: "A rat of the river does not fear water." },
+  { shona: "Harisi zuva rimwe guru rakasakara.", english: "The great baobab did not grow in a single day." },
+  { shona: "Kure kwegava ndokusina mugariri.", english: "The distance of the vulture is because no one stays there." },
+  { shona: "Kutsva kwendebvu varume vanodzimurana.", english: "When a beard catches fire, men help each other put it out." },
+  { shona: "Atsemhira zuva anochembera.", english: "One who races with the sun grows old." },
+  { shona: "Chinonzi mhosva kana matakadya.", english: "What is called a crime depends on whether you have eaten." },
+  { shona: "Mbudzi kudya mufenje haina mhosva.", english: "When a goat eats a baboon's food, there is no crime." },
+  { shona: "Shiri huru haigarire dendere rimwe.", english: "A great bird does not sit in one nest." },
+  { shona: "Chinono chinogara chiuru.", english: "The small and steady accumulates a thousand." }
+];
+
+function initShonaProverb() {
+  var el = document.getElementById("shona-proverb");
+  if (!el) return;
+  var dayIndex = Math.floor(Date.now() / 86400000) % SHONA_PROVERBS.length;
+  var p = SHONA_PROVERBS[dayIndex];
+  el.innerHTML =
+    '<span class="shona-proverb-label">Tsumo of the Day</span>' +
+    '<p class="shona-proverb-text">\u201c' + p.shona + '\u201d</p>' +
+    '<p class="shona-proverb-translation">' + p.english + '</p>';
+}
+
+// --- Reader Location + Distance from Harare ---
+var HARARE_LAT = -17.83;
+var HARARE_LON = 31.05;
+var LOCATION_CACHE_KEY = "reader_location_24h";
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  var R = 6371;
+  var dLat = (lat2 - lat1) * Math.PI / 180;
+  var dLon = (lon2 - lon1) * Math.PI / 180;
+  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function initReaderLocation() {
+  var el = document.getElementById("reader-location");
+  if (!el) return;
+  try {
+    var raw = localStorage.getItem("mutapa_" + LOCATION_CACHE_KEY);
+    if (raw) {
+      var parsed = JSON.parse(raw);
+      if (Date.now() - parsed.timestamp < 24 * 60 * 60 * 1000) {
+        displayReaderLocation(parsed.data);
+        return;
+      }
+    }
+  } catch (e) {}
+  $.ajax({
+    url: "https://ipapi.co/json/",
+    type: "GET",
+    dataType: "json",
+    timeout: 5000,
+    success: function(data) {
+      if (data && data.city && data.country_name) {
+        var loc = {
+          city: data.city,
+          country: data.country_name,
+          lat: data.latitude,
+          lon: data.longitude
+        };
+        try {
+          localStorage.setItem("mutapa_" + LOCATION_CACHE_KEY, JSON.stringify({
+            timestamp: Date.now(),
+            data: loc
+          }));
+        } catch (e) {}
+        displayReaderLocation(loc);
+      }
+    }
+  });
+}
+
+function displayReaderLocation(loc) {
+  var el = document.getElementById("reader-location");
+  if (!el) return;
+  var text = 'Reading from <span class="notranslate">' + loc.city + ', ' + loc.country + '</span>';
+  if (loc.lat && loc.lon) {
+    var distKm = Math.round(haversineKm(loc.lat, loc.lon, HARARE_LAT, HARARE_LON));
+    if (distKm > 100) {
+      text += ' &mdash; ' + distKm.toLocaleString() + ' km from Harare';
+    }
+  }
+  el.innerHTML = '<p class="reader-location-text">' + text + '</p>';
+}
+
+// --- On This Day in Zimbabwe ---
+var ZIM_ON_THIS_DAY = {
+  "01-01": { year: 2009, text: "Zimbabwe adopted the multi-currency system, effectively abandoning the hyperinflated Zimbabwean dollar." },
+  "01-21": { year: 2009, text: "Morgan Tsvangirai was sworn in as Prime Minister under the Global Political Agreement." },
+  "02-01": { year: 2009, text: "The Government of National Unity officially began between ZANU-PF and the MDC formations." },
+  "02-20": { year: 1959, text: "The Southern Rhodesian African National Congress was banned by colonial authorities." },
+  "02-21": { year: 2000, text: "Zimbabweans voted in a constitutional referendum, rejecting a government-proposed draft." },
+  "03-08": { year: 2013, text: "A new Constitution was overwhelmingly approved by referendum with over 94% voting yes." },
+  "03-28": { year: 1980, text: "Robert Mugabe was sworn in as the first Prime Minister of independent Zimbabwe." },
+  "04-05": { year: 1966, text: "Two ZANLA guerrillas fell at Chinhoyi in what became the first battle of the liberation war." },
+  "04-17": { year: 1980, text: "The British flag was lowered for the last time in Salisbury as Zimbabwe's independence was proclaimed at midnight." },
+  "04-18": { year: 1980, text: "Zimbabwe Independence Day \u2014 the nation formally gained independence from the United Kingdom." },
+  "04-28": { year: 1980, text: "Zimbabwe was admitted as the 153rd member of the United Nations." },
+  "05-25": { year: 1963, text: "The Organisation of African Unity was founded in Addis Ababa; Zimbabwe would join after independence." },
+  "06-14": { year: 2008, text: "Morgan Tsvangirai withdrew from the presidential runoff election citing escalating violence." },
+  "06-27": { year: 2008, text: "The controversial presidential runoff election took place despite widespread international condemnation." },
+  "07-31": { year: 2013, text: "Zimbabwe held harmonised elections; ZANU-PF won a two-thirds parliamentary majority." },
+  "08-01": { year: 2018, text: "Post-election protests in Harare turned violent, with the military deployed to the streets." },
+  "08-11": { year: 1980, text: "Zimbabwe competed in its first Olympic Games as an independent nation, winning gold in women's hockey in Moscow." },
+  "08-12": { year: 1980, text: "Heroes' Day was declared a national holiday to honour those who fought in the liberation struggle." },
+  "08-13": { year: 1980, text: "Defence Forces Day was established the day after Heroes' Day." },
+  "09-07": { year: 2019, text: "Former President Robert Mugabe died in Singapore at the age of 95." },
+  "09-15": { year: 2008, text: "The Global Political Agreement was signed between ZANU-PF and the MDC formations." },
+  "10-01": { year: 2016, text: "Zimbabweans launched the #ThisFlag movement, one of the largest citizen-led protests in decades." },
+  "11-15": { year: 2017, text: "The Zimbabwe Defence Forces intervened, placing President Mugabe under house arrest in Operation Restore Legacy." },
+  "11-18": { year: 2017, text: "Massive peaceful demonstrations in Harare and across Zimbabwe called for President Mugabe to step down." },
+  "11-21": { year: 2017, text: "Robert Mugabe resigned as President after 37 years in power." },
+  "11-24": { year: 2017, text: "Emmerson Mnangagwa was sworn in as the third President of Zimbabwe." },
+  "12-22": { year: 1987, text: "The Unity Accord was signed between ZANU-PF and PF-ZAPU, ending the Gukurahundi conflict and establishing Unity Day." }
+};
+
+function initOnThisDay() {
+  var el = document.getElementById("on-this-day");
+  if (!el) return;
+  var now = new Date();
+  var mm = String(now.getMonth() + 1).padStart(2, "0");
+  var dd = String(now.getDate()).padStart(2, "0");
+  var key = mm + "-" + dd;
+  var entry = ZIM_ON_THIS_DAY[key];
+  if (!entry) { el.style.display = "none"; return; }
+  el.style.display = "block";
+  el.innerHTML =
+    '<span class="on-this-day-label">On This Day</span>' +
+    '<p class="on-this-day-text">In ' + entry.year + ': ' + entry.text + '</p>';
+}
+
+// --- Init all personalisation ---
+function initPersonalisation() {
+  initShonaProverb();
+  initOnThisDay();
+  initReaderLocation();
 }
