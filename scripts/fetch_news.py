@@ -246,8 +246,9 @@ def main():
     for name, feeds in CATEGORIES.items():
         fetch_category(name, feeds)
 
-    # Generate AI descriptions for main/sidebar RSS articles
-    fetch_rss_descriptions()
+    # AI descriptions disabled — Gemini free tier 429s too aggressively.
+    # Re-enable when a paid API key is available.
+    # fetch_rss_descriptions()
 
     print("\nDone.")
 
