@@ -234,17 +234,17 @@ def fetch_rss_descriptions():
 
 
 def main():
-    if not API_KEY:
-        print("ERROR: GNEWS_API_KEY not set")
-        sys.exit(1)
-
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    for name, config in CATEGORIES.items():
-        fetch_category(name, config)
-        time.sleep(2)
+    # Fetch GNews categories (requires GNEWS_API_KEY)
+    if API_KEY:
+        for name, config in CATEGORIES.items():
+            fetch_category(name, config)
+            time.sleep(2)
+    else:
+        print("GNEWS_API_KEY not set — skipping GNews categories")
 
-    # Generate AI descriptions for Google News RSS articles
+    # Generate AI descriptions for Google News RSS articles (requires GEMINI_API_KEY)
     fetch_rss_descriptions()
 
     print("\nDone.")
