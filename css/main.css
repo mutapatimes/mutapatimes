@@ -902,7 +902,9 @@ a:hover {
     order: 0;
   }
 
-  .sidebar {
+  .content-layout > .sidebar {
+    grid-column: 1;
+    grid-row: auto;
     border-top: 2px solid var(--dark-color);
     order: 1;
     overflow: visible;
