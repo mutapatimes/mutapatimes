@@ -643,7 +643,7 @@ function createShareGroup(title, url) {
 }
 
 // ============================================================
-// RENDER: Main stories — text + ranking number (alternating sides)
+// RENDER: Main stories — single column layout
 // ============================================================
 function renderMainStories(articles) {
   var container = $("#main-stories");
@@ -662,8 +662,7 @@ function renderMainStories(articles) {
     var pubDate = formatDate(a.publishedAt);
     var isJustNow = (pubDate === "Just now");
 
-    var posClass = (rank % 2 === 1) ? "rank-right" : "rank-left";
-    var card = $('<div class="main-article">').addClass(posClass);
+    var card = $('<div class="main-article">');
     if (rank === 1) card.addClass("rank-featured");
 
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
@@ -709,11 +708,6 @@ function renderMainStories(articles) {
     if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
 
     link.append(textCol);
-
-    var rankCol = $('<div class="main-article-rank">');
-    rankCol.append($('<span class="rank-number">').text(rank));
-    link.append(rankCol);
-
     card.append(link);
     container.append(card);
 

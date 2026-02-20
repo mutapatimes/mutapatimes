@@ -551,44 +551,7 @@ a {
   border-color: #25d366;
 }
 
-/* --- Ranking number column --- */
-.main-article-rank {
-  flex: 0 0 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-left: 1px solid var(--border);
-  padding: 32px 0;
-}
-
-.rank-left .main-article-rank {
-  border-left: none;
-  border-right: 1px solid var(--border);
-}
-
-.main-article-rank .rank-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 7em;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--dark-color);
-  line-height: 1;
-  opacity: 0.08;
-}
-
-/* Alternating: odd articles (1, 3, 5) rank on right */
-.main-article.rank-right .main-article-rank { order: 2; }
-.main-article.rank-right .main-article-text { order: 1; }
-
-/* Even articles (2, 4, 6) rank on left */
-.main-article.rank-left .main-article-rank { order: 1; }
-.main-article.rank-left .main-article-text { order: 2; }
-
-/* First article (rank #1) */
-.main-article.rank-featured .rank-number {
-  font-size: 10em;
-  opacity: 0.06;
-}
+/* First article styling */
 .main-article.rank-featured .main-article-title {
   font-size: 1.65em;
   line-height: 1.3;
@@ -909,12 +872,6 @@ a:hover {
     font-size: 0.65em;
   }
 
-  .main-article-rank .rank-number {
-    font-size: 5.5em;
-  }
-  .main-article.rank-featured .rank-number {
-    font-size: 7em;
-  }
   .main-article-text {
     padding: 20px 18px;
   }
@@ -998,17 +955,6 @@ a:hover {
     padding: 18px 16px;
   }
 
-  .main-article-rank {
-    flex: 0 0 18%;
-  }
-
-  .main-article-rank .rank-number {
-    font-size: 2em !important;
-  }
-
-  .main-article.rank-featured .rank-number {
-    font-size: 2.6em !important;
-  }
   .main-article.rank-featured .main-article-title {
     font-size: 1.2em;
     line-height: 1.4;
