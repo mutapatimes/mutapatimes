@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Fetch Zimbabwe news from GNews API for all categories.
-Also fetches Google News RSS feeds and generates AI descriptions
-for articles missing them (using Gemini free tier).
+Fetch Zimbabwe news from Google News RSS for all categories.
+Replaces GNews API (unreliable free tier) with free, unlimited RSS.
+Optionally generates AI descriptions via Gemini free tier.
 """
 import json
 import os
@@ -14,59 +14,95 @@ import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-API_KEY = os.environ.get("GNEWS_API_KEY", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 DATA_DIR = "data"
 
-# Google News RSS feeds — same as config.js
-RSS_FEEDS = [
+# Category-specific Google News RSS feeds (replace GNews API)
+CATEGORIES = {
+    "business": [
+        "https://news.google.com/rss/search?q=Zimbabwe+business+OR+Zimbabwe+economy+OR+Zimbabwe+finance&hl=en&gl=US&ceid=US:en",
+    ],
+    "technology": [
+        "https://news.google.com/rss/search?q=Zimbabwe+technology+OR+Zimbabwe+tech+OR+Zimbabwe+digital&hl=en&gl=US&ceid=US:en",
+    ],
+    "entertainment": [
+        "https://news.google.com/rss/search?q=Zimbabwe+entertainment+OR+Zimbabwe+music+OR+Zimbabwe+arts+OR+Zimbabwe+culture&hl=en&gl=US&ceid=US:en",
+    ],
+    "sports": [
+        "https://news.google.com/rss/search?q=Zimbabwe+sports+OR+Zimbabwe+cricket+OR+Zimbabwe+football+OR+Zimbabwe+rugby&hl=en&gl=US&ceid=US:en",
+    ],
+    "science": [
+        "https://news.google.com/rss/search?q=Zimbabwe+science+OR+Zimbabwe+research+OR+Zimbabwe+environment+OR+Zimbabwe+wildlife&hl=en&gl=US&ceid=US:en",
+    ],
+    "health": [
+        "https://news.google.com/rss/search?q=Zimbabwe+health+OR+Zimbabwe+medical+OR+Zimbabwe+hospital&hl=en&gl=US&ceid=US:en",
+    ],
+}
+
+# All RSS feeds for description generation (same as config.js)
+ALL_RSS_FEEDS = [
     "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=site:zimlive.com+OR+site:newsday.co.zw+OR+site:herald.co.zw+OR+site:bulawayo24.com+OR+site:263chat.com&hl=en&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=site:pindula.co.zw+OR+site:nehanda radio+OR+site:newzimbabwe.com+OR+site:thezimbabwemail.com&hl=en&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:pindula.co.zw+OR+site:nehanda+radio+OR+site:newzimbabwe.com+OR+site:thezimbabwemail.com&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
 ]
 
-CATEGORIES = {
-    "business":      {"query": "Zimbabwe business OR Zimbabwe economy OR Zimbabwe finance OR Zimbabwe trade"},
-    "technology":    {"query": "Zimbabwe technology OR Zimbabwe tech OR Zimbabwe digital OR Zimbabwe innovation"},
-    "entertainment": {"query": "Zimbabwe entertainment OR Zimbabwe music OR Zimbabwe arts OR Zimbabwe culture OR Zimbabwe film"},
-    "sports":        {"query": "Zimbabwe sports OR Zimbabwe cricket OR Zimbabwe football OR Zimbabwe rugby OR Zimbabwe athletics"},
-    "science":       {"query": "Zimbabwe science OR Zimbabwe research OR Zimbabwe environment OR Zimbabwe wildlife"},
-    "health":        {"query": "Zimbabwe health OR Zimbabwe medical OR Zimbabwe hospital OR Zimbabwe disease"},
-}
+MAX_NEW_DESCRIPTIONS = 30  # Cap per run to keep workflow fast
 
 
-def fetch_url(url, as_json=True):
-    """Fetch from URL, return parsed JSON or raw bytes."""
+def fetch_url(url):
+    """Fetch raw bytes from URL."""
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
         with urllib.request.urlopen(req, timeout=15) as resp:
-            data = resp.read()
-            return json.loads(data.decode("utf-8")) if as_json else data
+            return resp.read()
     except Exception as e:
         print(f"    fetch error: {e}")
         return None
 
 
-def fetch_search(query):
-    """Fetch via search endpoint — Zimbabwe-focused, global English."""
-    encoded_q = urllib.parse.quote(query)
-    url = (
-        f"https://gnews.io/api/v4/search"
-        f"?q={encoded_q}&apikey={API_KEY}&lang=en&max=10&sortby=publishedAt&nullable=image"
-    )
-    return fetch_url(url)
+def parse_rss_feed(xml_bytes):
+    """Parse Google News RSS XML into article dicts matching GNews format."""
+    articles = []
+    try:
+        root = ET.fromstring(xml_bytes)
+        for item in root.iter("item"):
+            title_el = item.find("title")
+            link_el = item.find("link")
+            pub_el = item.find("pubDate")
+            if title_el is None or link_el is None:
+                continue
+
+            raw_title = title_el.text or ""
+            # Google News format: "Headline - Source Name"
+            parts = raw_title.rsplit(" - ", 1)
+            headline = parts[0].strip()
+            source_name = parts[1].strip() if len(parts) > 1 else ""
+            url = (link_el.text or "").strip()
+            pub_date = (pub_el.text or "").strip() if pub_el is not None else ""
+
+            if headline and url:
+                articles.append({
+                    "title": headline,
+                    "url": url,
+                    "description": "",
+                    "publishedAt": pub_date,
+                    "source": {"name": source_name, "url": ""},
+                })
+    except ET.ParseError as e:
+        print(f"    XML parse error: {e}")
+    return articles
 
 
-def deduplicate(articles):
-    """Deduplicate by URL, sort by date descending, return top 10."""
+def deduplicate(articles, limit=10):
+    """Deduplicate by URL, sort by date descending, return top N."""
     seen = set()
     unique = []
     for a in articles:
@@ -75,7 +111,7 @@ def deduplicate(articles):
             seen.add(url)
             unique.append(a)
     unique.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
-    return unique[:10]
+    return unique[:limit]
 
 
 def generate_description(title, content=""):
@@ -113,77 +149,44 @@ def generate_description(title, content=""):
         return ""
 
 
-def backfill_descriptions(articles):
-    """Fill missing/short descriptions with AI-generated summaries."""
-    if not GEMINI_API_KEY:
-        return
-    for article in articles:
-        desc = (article.get("description") or "").strip()
-        if len(desc) < 20:
-            generated = generate_description(
-                article.get("title", ""),
-                article.get("content", "")
-            )
-            if generated:
-                article["description"] = generated
-                print(f"    AI desc: {article['title'][:50]}...")
-
-
-def fetch_category(name, config):
-    """Fetch Zimbabwe articles for a category."""
+def fetch_category(name, feed_urls):
+    """Fetch Zimbabwe articles for a category via Google News RSS."""
     print(f"\n=== {name.upper()} ===")
 
-    data = fetch_search(config["query"])
-    if data and data.get("articles"):
-        articles = deduplicate(data["articles"])
-        backfill_descriptions(articles)
-        output = {"articles": articles}
+    all_articles = []
+    for feed_url in feed_urls:
+        xml_data = fetch_url(feed_url)
+        if xml_data:
+            all_articles.extend(parse_rss_feed(xml_data))
+
+    if not all_articles:
+        print(f"  FAIL: {name} — no articles found")
+        # Write empty so file exists
         outpath = os.path.join(DATA_DIR, f"{name}.json")
         with open(outpath, "w") as f:
-            json.dump(output, f)
-        print(f"  OK: {name} — {len(articles)} articles saved")
-        return True
+            json.dump({"articles": []}, f)
+        return False
 
-    print(f"  FAIL: {name} — no articles found")
-    return False
+    articles = deduplicate(all_articles)
 
+    # Generate AI descriptions for articles missing them
+    if GEMINI_API_KEY:
+        for a in articles:
+            if not a.get("description"):
+                desc = generate_description(a["title"])
+                if desc:
+                    a["description"] = desc
+                    print(f"    AI desc: {a['title'][:50]}...")
 
-def strip_html(html):
-    """Remove HTML tags and decode entities."""
-    text = re.sub(r"<[^>]+>", " ", html)
-    text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-    text = text.replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " ")
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def parse_rss_feed(xml_bytes):
-    """Parse Google News RSS XML, return list of {title, url} dicts."""
-    articles = []
-    try:
-        root = ET.fromstring(xml_bytes)
-        for item in root.iter("item"):
-            title_el = item.find("title")
-            link_el = item.find("link")
-            if title_el is None or link_el is None:
-                continue
-            raw_title = title_el.text or ""
-            # Google News format: "Headline - Source Name"
-            # Extract just the headline
-            parts = raw_title.rsplit(" - ", 1)
-            headline = parts[0].strip()
-            url = (link_el.text or "").strip()
-            if headline and url:
-                articles.append({"title": headline, "url": url})
-    except ET.ParseError as e:
-        print(f"    XML parse error: {e}")
-    return articles
-
-
-MAX_NEW_DESCRIPTIONS = 30  # Cap per run to keep workflow under 2 min
+    outpath = os.path.join(DATA_DIR, f"{name}.json")
+    with open(outpath, "w") as f:
+        json.dump({"articles": articles}, f)
+    print(f"  OK: {name} — {len(articles)} articles saved")
+    return True
 
 
 def fetch_rss_descriptions():
-    """Fetch Google News RSS feeds, generate AI descriptions, save lookup."""
+    """Generate AI descriptions for main/sidebar RSS articles."""
     if not GEMINI_API_KEY:
         print("\n=== RSS DESCRIPTIONS ===")
         print("  SKIP: GEMINI_API_KEY not set")
@@ -201,19 +204,18 @@ def fetch_rss_descriptions():
         except (json.JSONDecodeError, IOError):
             existing = {}
 
-    # Collect all unique articles from all RSS feeds
+    # Collect unique articles from all RSS feeds
     all_articles = {}
-    for feed_url in RSS_FEEDS:
-        xml_data = fetch_url(feed_url, as_json=False)
+    for feed_url in ALL_RSS_FEEDS:
+        xml_data = fetch_url(feed_url)
         if xml_data:
-            articles = parse_rss_feed(xml_data)
-            for a in articles:
+            for a in parse_rss_feed(xml_data):
                 if a["url"] not in all_articles:
                     all_articles[a["url"]] = a["title"]
 
     print(f"  Found {len(all_articles)} unique RSS articles")
 
-    # Generate descriptions for articles not already in lookup (capped)
+    # Generate descriptions for new articles (capped)
     new_count = 0
     descriptions = {}
     for url, title in all_articles.items():
@@ -228,7 +230,6 @@ def fetch_rss_descriptions():
             new_count += 1
             print(f"    AI desc: {title[:50]}...")
 
-    # Save lookup
     with open(lookup_path, "w") as f:
         json.dump(descriptions, f)
     print(f"  OK: {len(descriptions)} descriptions ({new_count} new)")
@@ -237,15 +238,11 @@ def fetch_rss_descriptions():
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # Fetch GNews categories (requires GNEWS_API_KEY)
-    if API_KEY:
-        for name, config in CATEGORIES.items():
-            fetch_category(name, config)
-            time.sleep(2)
-    else:
-        print("GNEWS_API_KEY not set — skipping GNews categories")
+    # Fetch category articles from Google News RSS
+    for name, feeds in CATEGORIES.items():
+        fetch_category(name, feeds)
 
-    # Generate AI descriptions for Google News RSS articles (requires GEMINI_API_KEY)
+    # Generate AI descriptions for main/sidebar RSS articles
     fetch_rss_descriptions()
 
     print("\nDone.")
