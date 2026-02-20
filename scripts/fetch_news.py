@@ -121,10 +121,14 @@ def generate_description(title, content=""):
 
     source_text = content[:1500] if content else title
     prompt = (
-        "Write a 1-2 sentence news summary (under 200 characters) for this article. "
-        "Be factual and neutral. Do not start with 'This article'. Just state what happened.\n\n"
-        f"Title: {title}\n"
-        f"Content: {source_text}"
+        "You are a Financial Times sub-editor writing a brief for the digest. "
+        "Paraphrase the headline below into a 1-2 sentence summary (under 200 characters). "
+        "Tone: authoritative, concise, matter-of-fact. No editorialising. "
+        "Preserve the core meaning — do not add, speculate, or omit key facts. "
+        "Do not start with 'This article' or 'The article'. "
+        "Just state what happened or what is happening.\n\n"
+        f"Headline: {title}\n"
+        f"Context: {source_text}"
     )
 
     payload = json.dumps({
