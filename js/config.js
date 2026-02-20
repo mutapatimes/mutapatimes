@@ -816,10 +816,15 @@ function loadSpotlightStories() {
         if (data && data.articles && data.articles.length > 0) {
           data.articles.forEach(function(a) {
             var sourceName = (a.source && typeof a.source === "object") ? a.source.name : (a.source || "");
+            var desc = a.description || "";
+            var url = a.url || "";
+            if (!desc && url && _aiDescriptions[url]) {
+              desc = _aiDescriptions[url];
+            }
             allArticles.push({
               title: a.title || "",
-              url: a.url || "",
-              description: a.description || "",
+              url: url,
+              description: desc,
               source: sourceName,
               publishedAt: a.publishedAt || "",
               isLocal: isLocalZimSource(sourceName)
@@ -922,6 +927,10 @@ function renderSpotlightStories(articles) {
 
     link.append($('<h4 class="spotlight-title">').text(a.title));
 
+    var desc = a.description;
+    if (desc && desc.length > 200) desc = desc.substring(0, 200) + "...";
+    if (desc) link.append($('<p class="spotlight-desc">').text(desc));
+
     var meta = $('<p class="spotlight-meta">');
     if (a.source) {
       meta.append($('<span class="verified-source">').text(a.source));
@@ -960,6 +969,10 @@ function renderSidebarStories(articles) {
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
 
     link.append($('<h4 class="sidebar-title">').text(a.title));
+
+    var desc = a.description;
+    if (desc && desc.length > 150) desc = desc.substring(0, 150) + "...";
+    if (desc) link.append($('<p class="sidebar-desc">').text(desc));
 
     var meta = $('<p class="sidebar-meta">');
     if (a.source) {
