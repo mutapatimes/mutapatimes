@@ -53,7 +53,6 @@ function isReputableSource(source) {
 
 // Infer article category from headline keywords
 var CATEGORY_RULES = [
-  { tag: "Politics", words: ["president", "government", "parliament", "minister", "election", "vote", "party", "zanu", "mdc", "opposition", "sanctions", "diplomat", "embassy", "policy", "political", "coup", "mugabe", "mnangagwa", "chamisa", "cabinet", "senate", "constitutional"] },
   { tag: "Business", words: ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve"] },
   { tag: "Crime", words: ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"] },
   { tag: "Sport", words: ["cricket", "football", "soccer", "rugby", "match", "score", "championship", "tournament", "athlete", "stadium", "coach", "team", "league", "olympic", "fifa", "icc", "qualifier", "wicket", "goal"] },
@@ -901,11 +900,13 @@ function renderSpotlightStories(articles) {
       link.append(img);
     }
 
-    link.append($('<h4 class="spotlight-title">').text(a.title));
+    // Text content wrapped for 2-col layout
+    var textWrap = $('<div class="spotlight-text">');
+    textWrap.append($('<h4 class="spotlight-title">').text(a.title));
 
     var desc = a.description;
     if (desc && desc.length > 200) desc = desc.substring(0, 200) + "...";
-    if (desc) link.append($('<p class="spotlight-desc">').text(desc));
+    if (desc) textWrap.append($('<p class="spotlight-desc">').text(desc));
 
     var meta = $('<p class="spotlight-meta">');
     if (a.source) {
@@ -917,8 +918,9 @@ function renderSpotlightStories(articles) {
       meta.append(document.createTextNode(pubDate));
     }
     meta.append(createShareGroup(a.title, a.url));
-    link.append(meta);
+    textWrap.append(meta);
 
+    link.append(textWrap);
     item.append(link);
     container.append(item);
   }
