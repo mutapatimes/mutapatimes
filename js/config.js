@@ -482,10 +482,10 @@ function deduplicateByTopic(articles) {
 
 // Break images between news stories — with captions
 var BREAK_IMAGES = [
-  { src: "break-1.jpg", caption: "Business and intelligence, building the Zimbabwe of tomorrow" },
-  { src: "break-2.jpg", caption: "Staying connected and informed, powering Zimbabwe\u2019s future" },
-  { src: "break-3.jpg", caption: "Enterprise and ambition, the spirit of a nation rising" },
-  { src: "break-4.jpg", caption: "Bridging distance and diaspora, one story at a time" }
+  { src: "break-1.jpg", caption: "Business, intelligence \u2014 building the Zimbabwe of tomorrow" },
+  { src: "break-2.jpg", caption: "Staying connected, staying informed \u2014 powering Zimbabwe\u2019s future" },
+  { src: "break-3.jpg", caption: "Enterprise, ambition \u2014 the spirit of a nation rising" },
+  { src: "break-4.jpg", caption: "Bridging distance, bridging diaspora \u2014 one story at a time" }
 ];
 
 var _breakIdx = 0;
@@ -639,51 +639,58 @@ function renderMainStories(articles) {
   }
 
   // Subscribe banner — render full-width after the content-layout grid
-  // Form POSTs to Brevo hosted form endpoint for subscriber collection.
+  // Form POSTs to Brevo hosted form via hidden iframe (bypasses CORS).
   // Replace BREVO_FORM_URL below with your actual Brevo form action URL
   // (e.g. "https://XXXXX.sibforms.com/serve/YYYYY") after creating the
   // form in the Brevo dashboard under Contacts > Forms > Sign-up.
-  var BREVO_FORM_URL = "";  // TODO: paste your Brevo form action URL here
+  var BREVO_FORM_URL = "";  // Paste your Brevo sibforms URL here
   var contentLayout = $(".content-layout");
   if (contentLayout.length) {
+    // Create hidden iframe target for cross-origin form submission
+    var iframeName = "brevo-subscribe-frame";
+    var iframe = $('<iframe>').attr({
+      name: iframeName,
+      style: "display:none;width:0;height:0;border:0;"
+    });
+    $("body").append(iframe);
+
     var subscribe = $('<div class="subscribe-banner">');
     subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
     subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
     var form = $('<form class="subscribe-form">');
-    if (BREVO_FORM_URL) form.attr({ method: "POST", action: BREVO_FORM_URL });
-    form.append($('<input class="subscribe-input" type="email" name="EMAIL" placeholder="Enter your email address" required>'));
+    if (BREVO_FORM_URL) {
+      form.attr({ method: "POST", action: BREVO_FORM_URL, target: iframeName });
+    }
+    form.append($('<input class="subscribe-input" type="email" name="EMAIL" placeholder="Enter your email address" required autocomplete="email">'));
     form.append($('<button class="subscribe-btn" type="submit">').text("Subscribe"));
     subscribe.append(form);
     var statusMsg = $('<p class="subscribe-status">').hide();
     subscribe.append(statusMsg);
-    subscribe.append($('<p class="subscribe-fine">').text("By subscribing you agree to our Terms & Conditions. You may unsubscribe at any time."));
+    subscribe.append($('<p class="subscribe-fine">').html('By subscribing you agree to our <a href="terms.html">Terms &amp; Conditions</a>. You may unsubscribe at any time.'));
     contentLayout.after(subscribe);
 
     // Handle subscribe form submission
     form.on("submit", function(e) {
       var emailVal = form.find('input[name="EMAIL"]').val();
-      if (!emailVal || !BREVO_FORM_URL) {
-        if (!BREVO_FORM_URL) statusMsg.text("Subscriptions coming soon.").css("color", "#6b6b6b").show();
+      if (!emailVal) {
         e.preventDefault();
         return;
       }
-      e.preventDefault();
+      if (!BREVO_FORM_URL) {
+        e.preventDefault();
+        statusMsg.text("Subscriptions coming soon.").css("color", "#6b6b6b").show();
+        return;
+      }
+      // Form submits to hidden iframe — show success after short delay
+      var btn = form.find('button');
+      btn.prop('disabled', true).text("Subscribing\u2026");
       statusMsg.text("Subscribing\u2026").css("color", "#6b6b6b").show();
-      $.ajax({
-        url: BREVO_FORM_URL,
-        method: "POST",
-        data: { EMAIL: emailVal },
-        success: function() {
-          statusMsg.text("Thank you for subscribing!").css("color", "#00897b");
-          form.find("input").val("");
-        },
-        error: function() {
-          // Brevo sibforms may not return CORS headers — treat as success
-          // since the POST still reaches Brevo's server
-          statusMsg.text("Thank you for subscribing!").css("color", "#00897b");
-          form.find("input").val("");
-        }
-      });
+
+      setTimeout(function() {
+        statusMsg.text("Thank you for subscribing!").css("color", "#00897b");
+        form.find("input").val("");
+        btn.prop('disabled', false).text("Subscribe");
+      }, 2000);
     });
   }
 }
