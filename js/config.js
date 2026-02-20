@@ -259,6 +259,9 @@ function fetchNews() {
   // Personalisation touches (proverb, location, on this day)
   initPersonalisation();
 
+  // Load AI descriptions lookup (for RSS articles missing descriptions)
+  loadAiDescriptions();
+
   // Load all stories from multiple RSS feeds
   loadMainStories();
   loadSpotlightStories();
@@ -435,6 +438,23 @@ function isTitleRepeat(title, desc) {
   return false;
 }
 
+// AI-generated descriptions lookup (loaded from data/rss_descriptions.json)
+var _aiDescriptions = {};
+
+function loadAiDescriptions() {
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.DATA_PATH + "rss_descriptions.json",
+    dataType: "json",
+    success: function(data) {
+      if (data && typeof data === "object") {
+        _aiDescriptions = data;
+        console.log("AI descriptions loaded:", Object.keys(data).length);
+      }
+    }
+  });
+}
+
 function normalizeRssArticles(items) {
   var result = [];
   for (var i = 0; i < items.length; i++) {
@@ -447,9 +467,15 @@ function normalizeRssArticles(items) {
     var desc = extractDescriptionFromHtml(rawDesc);
     if (isTitleRepeat(parsed.headline, desc)) desc = "";
 
+    // Fall back to AI-generated description if available
+    var url = item.link || "";
+    if (!desc && url && _aiDescriptions[url]) {
+      desc = _aiDescriptions[url];
+    }
+
     result.push({
       title: parsed.headline,
-      url: item.link || "",
+      url: url,
       description: desc,
       source: parsed.source,
       publishedAt: item.pubDate || "",
