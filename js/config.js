@@ -240,9 +240,9 @@ function fetchNews() {
   var timeStr = date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
   $(".vol").text("Updated " + timeStr);
 
-  // Harare time in header
-  updateHarareTime();
-  setInterval(updateHarareTime, 60000);
+  // Zimbabwe time in header
+  updateZimbabweTime();
+  setInterval(updateZimbabweTime, 60000);
 
   fetchWeather();
 
@@ -940,15 +940,15 @@ function renderSidebarStories(articles) {
 // PERSONALISATION TOUCHES
 // ============================================================
 
-// Harare time in header
-function updateHarareTime() {
+// Zimbabwe time (CAT) in header
+function updateZimbabweTime() {
   try {
     var now = new Date();
-    var harareTime = now.toLocaleTimeString("en-US", {
+    var zimTime = now.toLocaleTimeString("en-US", {
       hour: "2-digit", minute: "2-digit",
       timeZone: "Africa/Harare"
     });
-    $(".price").text(harareTime + " in Harare");
+    $(".price").text(zimTime + " Zimbabwe");
   } catch (e) {}
 }
 
@@ -997,9 +997,7 @@ function initShonaProverb() {
     '<p class="shona-proverb-translation">' + p.english + '</p>';
 }
 
-// --- Reader Location + Distance from Harare ---
-var HARARE_LAT = -17.83;
-var HARARE_LON = 31.05;
+// --- Reader Location + Distance from Zimbabwe ---
 var LOCATION_CACHE_KEY = "reader_location_24h";
 
 function haversineKm(lat1, lon1, lat2, lon2) {
@@ -1050,14 +1048,24 @@ function initReaderLocation() {
   });
 }
 
+function nearestZimCity(lat, lon) {
+  var closest = null;
+  var minDist = Infinity;
+  WEATHER_CITIES.forEach(function(city) {
+    var d = haversineKm(lat, lon, city.lat, city.lon);
+    if (d < minDist) { minDist = d; closest = city; }
+  });
+  return { name: closest.name, dist: Math.round(minDist) };
+}
+
 function displayReaderLocation(loc) {
   var el = document.getElementById("reader-location");
   if (!el) return;
   var text = 'Reading from <span class="notranslate">' + loc.city + ', ' + loc.country + '</span>';
   if (loc.lat && loc.lon) {
-    var distKm = Math.round(haversineKm(loc.lat, loc.lon, HARARE_LAT, HARARE_LON));
-    if (distKm > 100) {
-      text += ' &mdash; ' + distKm.toLocaleString() + ' km from Harare';
+    var nearest = nearestZimCity(loc.lat, loc.lon);
+    if (nearest.dist > 100) {
+      text += ' &mdash; ' + nearest.dist.toLocaleString() + ' km from ' + nearest.name;
     }
   }
   el.innerHTML = '<p class="reader-location-text">' + text + '</p>';
