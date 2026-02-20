@@ -782,6 +782,13 @@ a {
   transition: color 0.2s ease;
 }
 
+.sidebar-desc {
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: var(--text-light);
+  margin: 0 0 6px;
+}
+
 .sidebar-meta {
   font-size: 10px;
   font-weight: 600;
@@ -1579,6 +1586,15 @@ h4 {
   letter-spacing: 0.01em;
   margin: 0 0 8px;
   color: #fff;
+  font-weight: 400;
+}
+
+.spotlight-desc {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 8px;
   font-weight: 400;
 }
 
