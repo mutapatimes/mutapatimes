@@ -1107,13 +1107,8 @@ function loadSpotlightFromRSS() {
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
           });
-          // Prefer reputable sources only, fall back to others if not enough
-          var reputable = allArticles.filter(function(a) { return isReputableSource(a.source); });
-          var others = allArticles.filter(function(a) { return !isReputableSource(a.source); });
-          var merged = reputable.slice(0, 3);
-          if (merged.length < 3) {
-            merged = merged.concat(others.slice(0, 3 - merged.length));
-          }
+          // Reputable sources only — no fallback to unvetted sources
+          var merged = allArticles.filter(function(a) { return isReputableSource(a.source); }).slice(0, 3);
           setCache(cacheKey, merged);
           renderSpotlightStories(merged);
         }
@@ -1132,10 +1127,12 @@ function renderSpotlightStories(articles) {
     return;
   }
 
-  // Prefer reputable sources — push non-reputable to the end as fallback only
-  var reputable = articles.filter(function(a) { return isReputableSource(a.source); });
-  var others = articles.filter(function(a) { return !isReputableSource(a.source); });
-  articles = reputable.concat(others);
+  // Reputable sources only — strip out any non-reputable articles
+  articles = articles.filter(function(a) { return isReputableSource(a.source); });
+  if (articles.length === 0) {
+    container.html('<p class="loading-msg" style="color: rgba(255,255,255,0.6);">No spotlight stories available.</p>');
+    return;
+  }
 
   // Track spotlight URLs so main/sidebar feeds can skip duplicates
   _spotlightUrls = {};
