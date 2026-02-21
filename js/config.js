@@ -356,6 +356,8 @@ function loadSidebarStories() {
         if (completed === total) {
           clearTimeout(_sidebarTimeout);
           allArticles = deduplicateArticles(allArticles);
+          // Filter out old articles
+          allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
           // Sort sidebar by newest too for recency
           allArticles.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
@@ -408,6 +410,8 @@ function isRecentArticle(dateStr) {
   try {
     var d = new Date(dateStr);
     if (isNaN(d.getTime())) return false;
+    // Hard floor: nothing before 2025
+    if (d.getFullYear() < 2025) return false;
     return (Date.now() - d.getTime()) < MAX_ARTICLE_AGE_MS;
   } catch (e) {
     return false;
@@ -865,6 +869,7 @@ function loadSpotlightFromRSS() {
             try {
               var d = new Date(a.publishedAt);
               if (isNaN(d.getTime())) return false;
+              if (d.getFullYear() < 2025) return false;
               return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
             } catch (e) { return false; }
           });
