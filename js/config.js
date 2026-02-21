@@ -1029,6 +1029,16 @@ function renderSidebarStories(articles) {
 // ============================================================
 
 // Zimbabwe time (CAT) in header
+function getZimTimeOfDay() {
+  var h = parseInt(new Date().toLocaleTimeString("en-GB", {
+    hour: "2-digit", timeZone: "Africa/Harare"
+  }), 10);
+  if (h >= 5 && h < 12) return "Morning";
+  if (h >= 12 && h < 17) return "Afternoon";
+  if (h >= 17 && h < 21) return "Evening";
+  return "Night";
+}
+
 function updateZimbabweTime() {
   try {
     var now = new Date();
@@ -1037,6 +1047,12 @@ function updateZimbabweTime() {
       timeZone: "Africa/Harare"
     });
     $(".price").text(zimTime + " Zimbabwe");
+
+    // Live cam time
+    var camEl = document.getElementById("live-cam-time");
+    if (camEl) {
+      camEl.textContent = zimTime + " \u00b7 " + getZimTimeOfDay() + " in Zimbabwe";
+    }
   } catch (e) {}
 }
 
@@ -1153,7 +1169,7 @@ function displayReaderLocation(loc) {
   if (loc.lat && loc.lon) {
     var nearest = nearestZimCity(loc.lat, loc.lon);
     if (nearest.dist > 100) {
-      text += ' &mdash; ' + nearest.dist.toLocaleString() + ' km from ' + nearest.name;
+      text += ' · ' + nearest.dist.toLocaleString() + ' km from ' + nearest.name;
     }
   }
   el.innerHTML = '<p class="reader-location-text">' + text + '</p>';
