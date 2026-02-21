@@ -76,8 +76,8 @@ function inferCategory(title) {
   return "";
 }
 
-// Max age for spotlight articles (30 days — up to a month old)
-var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+// Max age for spotlight articles (3 days — keeps stories fresh)
+var SPOTLIGHT_MAX_AGE_MS = 3 * 24 * 60 * 60 * 1000;
 
 // Zimbabwe cities for weather
 var WEATHER_CITIES = [
@@ -670,10 +670,10 @@ function renderMainStories(articles) {
     var pubDate = formatDate(a.publishedAt);
     var isJustNow = (pubDate === "Just now");
 
-    var card = $('<div class="main-article">');
+    var card = $('<article class="main-article">');
     if (rank === 1) card.addClass("rank-featured");
 
-    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
@@ -686,11 +686,17 @@ function renderMainStories(articles) {
         meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
       }
     }
-    var extras = [];
-    if (pubDate) extras.push(pubDate);
-    if (readTime) extras.push(readTime);
-    if (extras.length) {
-      meta.append(document.createTextNode(" \u00b7 " + extras.join(" \u00b7 ")));
+    if (pubDate) {
+      meta.append(document.createTextNode(" \u00b7 "));
+      var timeEl = $('<time>').text(pubDate);
+      try {
+        var dt = new Date(a.publishedAt);
+        if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
+      } catch (e) {}
+      meta.append(timeEl);
+    }
+    if (readTime) {
+      meta.append(document.createTextNode(" \u00b7 " + readTime));
     }
     textCol.append(meta);
 
@@ -733,6 +739,9 @@ function renderMainStories(articles) {
       container.append(ph);
     }
   }
+
+  // Inject structured data for SEO
+  injectArticleSchema(filtered, 'main');
 
   // Subscribe banner — render full-width after the content-layout grid
   // Form POSTs to Brevo hosted form via hidden iframe (bypasses CORS).
@@ -865,12 +874,25 @@ function loadSpotlightFromRSS() {
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
           });
-          // Prefer reputable sources, then fill remaining slots from any source
+          // Interleave: lead with freshest reputable, then alternate with fresh general stories
           var reputable = allArticles.filter(function(a) { return isReputableSource(a.source); });
           var others = allArticles.filter(function(a) { return !isReputableSource(a.source); });
-          var merged = reputable.slice(0, 3);
-          if (merged.length < 3) {
-            merged = merged.concat(others.slice(0, 3 - merged.length));
+          var merged = [];
+          var ri = 0, oi = 0;
+          // Slot 1: reputable if available, slot 2: freshest overall, slot 3: next best
+          if (reputable.length > 0) merged.push(reputable[ri++]);
+          if (others.length > 0) merged.push(others[oi++]);
+          // Fill 3rd slot from whichever pool has the newer article
+          while (merged.length < 3 && (ri < reputable.length || oi < others.length)) {
+            var nextR = ri < reputable.length ? reputable[ri] : null;
+            var nextO = oi < others.length ? others[oi] : null;
+            if (nextR && nextO) {
+              var dateR = nextR.publishedAt ? new Date(nextR.publishedAt).getTime() : 0;
+              var dateO = nextO.publishedAt ? new Date(nextO.publishedAt).getTime() : 0;
+              if (dateR >= dateO) { merged.push(nextR); ri++; }
+              else { merged.push(nextO); oi++; }
+            } else if (nextR) { merged.push(nextR); ri++; }
+            else { merged.push(nextO); oi++; }
           }
           setCache(cacheKey, merged);
           renderSpotlightStories(merged);
@@ -900,8 +922,8 @@ function renderSpotlightStories(articles) {
     var a = articles[i];
     var pubDate = formatDate(a.publishedAt);
 
-    var item = $('<div class="spotlight-item">');
-    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+    var item = $('<article class="spotlight-item">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     // Article image
     if (a.image) {
@@ -924,7 +946,12 @@ function renderSpotlightStories(articles) {
     }
     if (pubDate) {
       if (a.source) meta.append(document.createTextNode(" \u00b7 "));
-      meta.append(document.createTextNode(pubDate));
+      var timeEl = $('<time>').text(pubDate);
+      try {
+        var dt = new Date(a.publishedAt);
+        if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
+      } catch (e) {}
+      meta.append(timeEl);
     }
     meta.append(createShareGroup(a.title, a.url));
     textWrap.append(meta);
@@ -933,6 +960,9 @@ function renderSpotlightStories(articles) {
     item.append(link);
     container.append(item);
   }
+
+  // Inject structured data for SEO
+  injectArticleSchema(articles, 'spotlight');
 }
 
 // ============================================================
@@ -958,8 +988,8 @@ function renderSidebarStories(articles) {
     var a = filtered[i];
     var pubDate = formatDate(a.publishedAt);
 
-    var item = $('<div class="sidebar-item">');
-    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank');
+    var item = $('<article class="sidebar-item">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     link.append($('<h4 class="sidebar-title">').text(a.title));
 
@@ -975,7 +1005,13 @@ function renderSidebarStories(articles) {
       }
     }
     if (pubDate) {
-      meta.append(document.createTextNode(" \u00b7 " + pubDate));
+      meta.append(document.createTextNode(" \u00b7 "));
+      var timeEl = $('<time>').text(pubDate);
+      try {
+        var dt = new Date(a.publishedAt);
+        if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
+      } catch (e) {}
+      meta.append(timeEl);
     }
     meta.append(createShareGroup(a.title, a.url));
     link.append(meta);
@@ -983,6 +1019,9 @@ function renderSidebarStories(articles) {
     item.append(link);
     container.append(item);
   }
+
+  // Inject structured data for SEO
+  injectArticleSchema(filtered, 'sidebar');
 }
 
 // ============================================================
@@ -1164,6 +1203,74 @@ function initOnThisDay() {
   el.innerHTML =
     '<span class="on-this-day-label">On This Day</span>' +
     '<p class="on-this-day-text">In ' + entry.year + ': ' + entry.text + '</p>';
+}
+
+// ============================================================
+// SEO: Inject per-article NewsArticle JSON-LD structured data
+// ============================================================
+function injectArticleSchema(articles, sectionName) {
+  if (!articles || articles.length === 0) return;
+
+  var limit = sectionName === 'spotlight' ? 3 : (sectionName === 'sidebar' ? 20 : 15);
+  var schemaItems = [];
+
+  for (var i = 0; i < Math.min(articles.length, limit); i++) {
+    var a = articles[i];
+    if (!a.title || !a.url) continue;
+
+    var item = {
+      "@type": "NewsArticle",
+      "headline": a.title.substring(0, 110),
+      "url": a.url,
+      "mainEntityOfPage": a.url
+    };
+
+    if (a.publishedAt) {
+      try {
+        var d = new Date(a.publishedAt);
+        if (!isNaN(d.getTime())) item["datePublished"] = d.toISOString();
+      } catch (e) {}
+    }
+    if (a.source) {
+      item["publisher"] = { "@type": "Organization", "name": a.source };
+      item["author"] = { "@type": "Organization", "name": a.source };
+    }
+    if (a.description) {
+      item["description"] = a.description.substring(0, 200);
+    }
+    if (a.image) {
+      item["image"] = a.image;
+    }
+
+    schemaItems.push({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": item
+    });
+  }
+
+  if (schemaItems.length === 0) return;
+
+  var listName = sectionName === 'spotlight' ? "Spotlight Stories" :
+                 (sectionName === 'sidebar' ? "Local Zimbabwe News" : "Latest Zimbabwe Headlines");
+
+  var schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": listName,
+    "itemListElement": schemaItems
+  };
+
+  // Remove previously injected schema for this section
+  var existingId = 'mutapa-schema-' + sectionName;
+  var existing = document.getElementById(existingId);
+  if (existing) existing.parentNode.removeChild(existing);
+
+  var script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = existingId;
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 }
 
 // --- Init all personalisation ---
