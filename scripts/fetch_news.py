@@ -314,26 +314,42 @@ def fetch_spotlight():
         if url in seen_urls:
             continue
         seen_urls.add(url)
-        # Drop articles older than spotlight max age (30 days)
+        # Drop articles older than spotlight max age (3 days — keeps stories fresh)
         pub = a.get("publishedAt", "")
         if pub:
             try:
                 from datetime import datetime, timezone
                 dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
                 age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 30:
+                if age_days > 3:
                     continue
             except Exception:
                 pass
         merged.append(a)
 
-    # Sort by date (newest first), then pick top 3 preferring reputable
+    # Sort by date (newest first), then interleave reputable + general for variety
     merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in ["bbc", "reuters", "nytimes", "guardian", "al jazeera", "bloomberg", "ap news", "associated press", "financial times", "economist", "cnn", "washington post", "sky news", "france 24", "allafrica", "daily maverick", "news24"])]
     others_merged = [a for a in merged if a not in reputable_merged]
-    spotlight = reputable_merged[:3]
-    if len(spotlight) < 3:
-        spotlight.extend(others_merged[:3 - len(spotlight)])
+    # Slot 1: freshest reputable, Slot 2: freshest general, Slot 3: next newest overall
+    spotlight = []
+    ri, oi = 0, 0
+    if reputable_merged:
+        spotlight.append(reputable_merged[ri]); ri += 1
+    if others_merged:
+        spotlight.append(others_merged[oi]); oi += 1
+    while len(spotlight) < 3 and (ri < len(reputable_merged) or oi < len(others_merged)):
+        nr = reputable_merged[ri] if ri < len(reputable_merged) else None
+        no = others_merged[oi] if oi < len(others_merged) else None
+        if nr and no:
+            if nr.get("publishedAt", "") >= no.get("publishedAt", ""):
+                spotlight.append(nr); ri += 1
+            else:
+                spotlight.append(no); oi += 1
+        elif nr:
+            spotlight.append(nr); ri += 1
+        else:
+            spotlight.append(no); oi += 1
 
     if not spotlight:
         print("  WARN: no articles found in results")
