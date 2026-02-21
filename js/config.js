@@ -1107,25 +1107,12 @@ function loadSpotlightFromRSS() {
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
           });
-          // Interleave: lead with freshest reputable, then alternate with fresh general stories
+          // Prefer reputable sources only, fall back to others if not enough
           var reputable = allArticles.filter(function(a) { return isReputableSource(a.source); });
           var others = allArticles.filter(function(a) { return !isReputableSource(a.source); });
-          var merged = [];
-          var ri = 0, oi = 0;
-          // Slot 1: reputable if available, slot 2: freshest overall, slot 3: next best
-          if (reputable.length > 0) merged.push(reputable[ri++]);
-          if (others.length > 0) merged.push(others[oi++]);
-          // Fill 3rd slot from whichever pool has the newer article
-          while (merged.length < 3 && (ri < reputable.length || oi < others.length)) {
-            var nextR = ri < reputable.length ? reputable[ri] : null;
-            var nextO = oi < others.length ? others[oi] : null;
-            if (nextR && nextO) {
-              var dateR = nextR.publishedAt ? new Date(nextR.publishedAt).getTime() : 0;
-              var dateO = nextO.publishedAt ? new Date(nextO.publishedAt).getTime() : 0;
-              if (dateR >= dateO) { merged.push(nextR); ri++; }
-              else { merged.push(nextO); oi++; }
-            } else if (nextR) { merged.push(nextR); ri++; }
-            else { merged.push(nextO); oi++; }
+          var merged = reputable.slice(0, 3);
+          if (merged.length < 3) {
+            merged = merged.concat(others.slice(0, 3 - merged.length));
           }
           setCache(cacheKey, merged);
           renderSpotlightStories(merged);
@@ -1144,6 +1131,11 @@ function renderSpotlightStories(articles) {
     container.html('<p class="loading-msg" style="color: rgba(255,255,255,0.6);">No spotlight stories available.</p>');
     return;
   }
+
+  // Prefer reputable sources — push non-reputable to the end as fallback only
+  var reputable = articles.filter(function(a) { return isReputableSource(a.source); });
+  var others = articles.filter(function(a) { return !isReputableSource(a.source); });
+  articles = reputable.concat(others);
 
   // Track spotlight URLs so main/sidebar feeds can skip duplicates
   _spotlightUrls = {};
