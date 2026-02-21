@@ -631,6 +631,8 @@ function createShareBtn(title, url) {
 
 var WHATSAPP_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
 
+var IMAGE_SHARE_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>';
+
 function createWhatsAppBtn(title, url) {
   var btn = $('<button class="whatsapp-btn" title="Share on WhatsApp">').html(WHATSAPP_ICON_SVG);
   btn.on('click', function(e) {
@@ -642,10 +644,233 @@ function createWhatsAppBtn(title, url) {
   return btn;
 }
 
-function createShareGroup(title, url) {
+// ============================================================
+// Share-as-image — canvas-rendered branded share card
+// ============================================================
+
+function shareCardWrapText(ctx, text, x, y, maxWidth, lineHeight, maxY, maxLines) {
+  var words = text.split(' ');
+  var line = '';
+  var lines = 0;
+  maxLines = maxLines || 99;
+  for (var i = 0; i < words.length; i++) {
+    var test = line + (line ? ' ' : '') + words[i];
+    if (ctx.measureText(test).width > maxWidth && line) {
+      lines++;
+      if (maxY && y + lineHeight > maxY) {
+        ctx.fillText(line.replace(/\s+$/, '') + '...', x, y);
+        return y + lineHeight;
+      }
+      if (lines >= maxLines) {
+        ctx.fillText(line.replace(/\s+$/, '') + '...', x, y);
+        return y + lineHeight;
+      }
+      ctx.fillText(line, x, y);
+      line = words[i];
+      y += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  if (line) {
+    ctx.fillText(line, x, y);
+    y += lineHeight;
+  }
+  return y;
+}
+
+function shareCardDrawPill(ctx, x, y, text, bgColor, textColor) {
+  ctx.font = '700 13px "Helvetica Neue", Arial, sans-serif';
+  var tw = ctx.measureText(text).width;
+  var padX = 10, padY = 4, h = 22, r = 4;
+  var w = tw + padX * 2;
+  // Rounded rect
+  ctx.fillStyle = bgColor;
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+  ctx.fill();
+  // Text
+  ctx.fillStyle = textColor;
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x + padX, y + h / 2 + 1);
+  return w + 10; // return width used + gap
+}
+
+function downloadBlob(blob, filename) {
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function() { URL.revokeObjectURL(url); }, 5000);
+}
+
+function generateShareImage(articleData) {
+  var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+  return fontsReady.then(function() {
+    var W = 1200, H = 675;
+    var canvas = document.createElement('canvas');
+    canvas.width = W;
+    canvas.height = H;
+    var ctx = canvas.getContext('2d');
+
+    // Background
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, W, H);
+
+    // Header strip
+    var headerH = 56;
+    ctx.fillStyle = '#1a1a1a';
+    ctx.fillRect(0, 0, W, headerH);
+
+    // Gold accent line
+    ctx.fillStyle = '#c8a96e';
+    ctx.fillRect(0, headerH, W, 3);
+
+    // Masthead text
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 20px "Playfair Display", Georgia, serif';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('THE MUTAPA TIMES', 48, headerH / 2);
+
+    // Tagline right-aligned
+    ctx.font = '400 13px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.5)';
+    var tagline = 'Zimbabwe outside-in.';
+    var tagW = ctx.measureText(tagline).width;
+    ctx.fillText(tagline, W - 48 - tagW, headerH / 2);
+
+    // Content area
+    var contentLeft = 48;
+    var contentWidth = W - 96;
+    var y = headerH + 3 + 40;
+    ctx.textBaseline = 'top';
+
+    // Category / Local-Foreign pills
+    var pillX = contentLeft;
+    if (articleData.isLocal) {
+      pillX += shareCardDrawPill(ctx, pillX, y, 'LOCAL', '#00897b', '#ffffff');
+    } else if (articleData.source) {
+      pillX += shareCardDrawPill(ctx, pillX, y, 'FOREIGN', '#6b6b6b', '#ffffff');
+    }
+    if (articleData.category) {
+      shareCardDrawPill(ctx, pillX, y, articleData.category.toUpperCase(), '#1a5632', '#ffffff');
+    }
+    if (articleData.isLocal || articleData.source || articleData.category) {
+      y += 36;
+    }
+
+    // Headline — dynamic font size
+    var titleLen = (articleData.title || '').length;
+    var headlineSize = titleLen > 100 ? 32 : (titleLen > 70 ? 36 : (titleLen > 45 ? 40 : 46));
+    var headlineLineH = Math.round(headlineSize * 1.3);
+    ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
+    ctx.fillStyle = '#1a1a1a';
+    y = shareCardWrapText(ctx, articleData.title || '', contentLeft, y, contentWidth, headlineLineH, H - 120, 4);
+    y += 12;
+
+    // Source + date meta
+    ctx.font = '600 15px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = '#6b6b6b';
+    var metaParts = [];
+    if (articleData.source) metaParts.push(articleData.source);
+    var pubDate = formatDate(articleData.publishedAt);
+    if (pubDate) metaParts.push(pubDate);
+    if (metaParts.length) {
+      ctx.fillText(metaParts.join('  \u00b7  '), contentLeft, y);
+      y += 30;
+    }
+
+    // Description
+    if (articleData.description) {
+      ctx.font = '400 17px "Helvetica Neue", Arial, sans-serif';
+      ctx.fillStyle = '#444444';
+      var desc = articleData.description;
+      if (desc.length > 200) desc = desc.substring(0, 200) + '...';
+      shareCardWrapText(ctx, desc, contentLeft, y, contentWidth, 26, H - 60);
+    }
+
+    // Footer strip
+    var footerH = 44;
+    ctx.fillStyle = '#1a5632';
+    ctx.fillRect(0, H - footerH, W, footerH);
+
+    // Footer text
+    ctx.font = '600 13px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('mutapatimes.com', 48, H - footerH / 2);
+
+    var footerRight = 'Zimbabwe news, outside-in';
+    var frW = ctx.measureText(footerRight).width;
+    ctx.fillText(footerRight, W - 48 - frW, H - footerH / 2);
+
+    // Convert to blob
+    return new Promise(function(resolve) {
+      canvas.toBlob(function(blob) { resolve(blob); }, 'image/png');
+    });
+  });
+}
+
+function createImageShareBtn(articleData) {
+  var btn = $('<button class="image-share-btn" title="Share as image">').html(IMAGE_SHARE_ICON_SVG);
+  btn.on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var original = btn.html();
+    btn.text('\u2026');
+
+    generateShareImage(articleData).then(function(blob) {
+      var shareText = articleData.title + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
+
+      // Try Web Share API with files
+      if (navigator.canShare) {
+        var file = new File([blob], 'mutapatimes-headline.png', { type: 'image/png' });
+        var shareData = {
+          title: articleData.title + ' | The Mutapa Times',
+          text: shareText,
+          files: [file]
+        };
+        try {
+          if (navigator.canShare(shareData)) {
+            navigator.share(shareData).catch(function(err) {
+              if (err.name !== 'AbortError') downloadBlob(blob, 'mutapatimes-headline.png');
+            }).finally(function() { btn.html(original); });
+            return;
+          }
+        } catch (ex) { /* canShare threw — fall through to download */ }
+      }
+
+      // Fallback: download image + copy text to clipboard
+      downloadBlob(blob, 'mutapatimes-headline.png');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareText);
+      }
+      btn.html(original);
+    }).catch(function() {
+      btn.html(original);
+    });
+  });
+  return btn;
+}
+
+function createShareGroup(title, url, articleData) {
   var group = $('<span class="share-group">');
   group.append(createShareBtn(title, url));
   group.append(createWhatsAppBtn(title, url));
+  if (articleData) group.append(createImageShareBtn(articleData));
   return group;
 }
 
@@ -718,11 +943,14 @@ function renderMainStories(articles) {
     if (isJustNow) {
       tagRow.append($('<span class="just-now-badge">').text("Just in"));
     }
-    tagRow.append(createShareGroup(a.title, a.url));
-    textCol.append(tagRow);
-
     var desc = a.description;
     if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
+    tagRow.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: desc,
+      url: a.url, category: category, isLocal: a.isLocal,
+      publishedAt: a.publishedAt
+    }));
+    textCol.append(tagRow);
     if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
 
     link.append(textCol);
@@ -958,7 +1186,11 @@ function renderSpotlightStories(articles) {
       } catch (e) {}
       meta.append(timeEl);
     }
-    meta.append(createShareGroup(a.title, a.url));
+    meta.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: desc,
+      url: a.url, category: '', isLocal: false,
+      publishedAt: a.publishedAt
+    }));
     textWrap.append(meta);
 
     link.append(textWrap);
@@ -1018,7 +1250,11 @@ function renderSidebarStories(articles) {
       } catch (e) {}
       meta.append(timeEl);
     }
-    meta.append(createShareGroup(a.title, a.url));
+    meta.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: desc,
+      url: a.url, category: '', isLocal: a.isLocal,
+      publishedAt: a.publishedAt
+    }));
     link.append(meta);
 
     item.append(link);
