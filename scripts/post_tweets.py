@@ -127,12 +127,16 @@ def post_tweet(text):
         print(f"    FAIL ({e.code}): {body[:200]}")
         if e.code == 429:
             print("    Rate limited. Stopping run.")
-            return False, {"rate_limited": True}
+            return False, {"abort": True}
+        if e.code == 402:
+            print("    Credits depleted — X API requires purchased credits.")
+            print("    Check developer.x.com billing or consider Basic plan ($200/mo).")
+            return False, {"abort": True}
         if e.code == 403:
             if "oauth1" in body.lower() and "permission" in body.lower():
                 print("    App permissions error — Access Token needs Read+Write.")
                 print("    Regenerate token after enabling Write in app settings.")
-                return False, {"rate_limited": True}  # abort run
+                return False, {"abort": True}
             print("    Forbidden (possibly duplicate). Skipping.")
             return False, {"forbidden": True}
         return False, {"error": e.code}
@@ -288,8 +292,8 @@ def main():
             tweeted[url] = datetime.now(timezone.utc).isoformat()
         else:
             fail_count += 1
-            if resp.get("rate_limited"):
-                print("  Stopping due to rate limit.")
+            if resp.get("abort"):
+                print("  Aborting run.")
                 break
 
         # Sleep between tweets
