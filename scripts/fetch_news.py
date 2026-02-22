@@ -332,10 +332,8 @@ def fetch_spotlight():
     reputable_kw = ["bbc", "reuters", "nytimes", "guardian", "al jazeera", "bloomberg", "ap news", "associated press", "financial times", "economist", "cnn", "washington post", "sky news", "france 24", "allafrica", "daily maverick", "news24", "the east african"]
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
     others_merged = [a for a in merged if a not in reputable_merged]
-    # Fill spotlight with reputable sources first, only fall back to others if needed
+    # Reputable sources only — no fallback to unvetted sources
     spotlight = reputable_merged[:3]
-    if len(spotlight) < 3:
-        spotlight.extend(others_merged[:3 - len(spotlight)])
 
     if not spotlight:
         print("  WARN: no articles found in results")
