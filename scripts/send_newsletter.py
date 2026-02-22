@@ -23,9 +23,14 @@ SENDER_NAME = "The Mutapa Times"
 SENDER_EMAIL = "news@mutapatimes.com"
 SITE_URL = "https://www.mutapatimes.com"
 
-CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"]
+# Primary categories first — editorial focus for business & intelligence service
+PRIMARY_CATEGORIES = ["business", "politics", "policy", "technology"]
+SECONDARY_CATEGORIES = ["health", "entertainment", "sports", "science"]
+CATEGORIES = PRIMARY_CATEGORIES + SECONDARY_CATEGORIES
 MAX_PER_CATEGORY = 2
 MAX_TOTAL = 12
+MAX_ARTICLE_AGE_DAYS = 14  # Reject articles older than this
+SPOTLIGHT_MAX_AGE_DAYS = 30
 
 DAY_GREETINGS = {
     0: "Monday morning",
@@ -56,19 +61,75 @@ def brevo_request(endpoint, payload=None, method="POST"):
 
 
 # ── Data loading ────────────────────────────────────────────
+def parse_article_date(date_str):
+    """Parse various date formats into datetime, return None on failure."""
+    if not date_str:
+        return None
+    try:
+        # ISO 8601 format (GNews)
+        clean = date_str.replace("Z", "+00:00")
+        return datetime.fromisoformat(clean)
+    except (ValueError, TypeError):
+        pass
+    try:
+        # RFC 2822 format (RSS feeds) — e.g. "Wed, 28 Jan 2026 15:31:13 GMT"
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(date_str)
+    except Exception:
+        pass
+    return None
+
+
+def is_article_fresh(article, max_age_days):
+    """Check if article is within max_age_days of now. Reject unparseable dates."""
+    dt = parse_article_date(article.get("publishedAt", ""))
+    if dt is None:
+        return False
+    try:
+        age = (datetime.now(timezone.utc) - dt).days
+        return age <= max_age_days
+    except Exception:
+        return False
+
+
+def normalize_title(title):
+    """Lowercase, strip punctuation/whitespace for comparison."""
+    import re
+    t = title.lower().strip()
+    t = re.sub(r"[^\w\s]", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def titles_are_similar(t1, t2, threshold=0.65):
+    """Check if two titles are about the same story using word overlap (Jaccard)."""
+    w1 = set(normalize_title(t1).split())
+    w2 = set(normalize_title(t2).split())
+    if not w1 or not w2:
+        return False
+    n1, n2 = normalize_title(t1), normalize_title(t2)
+    if n1 in n2 or n2 in n1:
+        return True
+    intersection = w1 & w2
+    union = w1 | w2
+    return len(intersection) / len(union) >= threshold
+
+
 def load_spotlight():
-    """Read spotlight articles from data/spotlight.json (GNews API data with images)."""
+    """Read spotlight articles from data/spotlight.json — max 30 days old, reputable only."""
     filepath = os.path.join(DATA_DIR, "spotlight.json")
     if not os.path.exists(filepath):
         return []
     with open(filepath) as f:
         data = json.load(f)
     articles = data.get("articles", [])
-    return articles[:3]
+    # Strict date filter — no old content in spotlight
+    fresh = [a for a in articles if is_article_fresh(a, SPOTLIGHT_MAX_AGE_DAYS)]
+    return fresh[:3]
 
 
 def load_articles(exclude_urls=None):
-    """Read all data/*.json files, merge, deduplicate, sort by date."""
+    """Read all data/*.json files, merge, deduplicate, filter by date, sort by recency."""
     if exclude_urls is None:
         exclude_urls = set()
     all_articles = []
@@ -82,31 +143,74 @@ def load_articles(exclude_urls=None):
             a["_category"] = cat
         all_articles.extend(data.get("articles", []))
 
-    # Deduplicate by URL and exclude spotlight URLs
-    seen = set()
+    # Deduplicate by URL, exclude spotlight URLs, filter by date, and dedup by title similarity
+    seen_urls = set()
     unique = []
     for a in all_articles:
         url = a.get("url", "")
-        if url and url not in seen and url not in exclude_urls:
-            seen.add(url)
-            unique.append(a)
+        title = a.get("title", "")
+        if url and url in seen_urls:
+            continue
+        if url and url in exclude_urls:
+            continue
+        # Reject articles older than MAX_ARTICLE_AGE_DAYS
+        if not is_article_fresh(a, MAX_ARTICLE_AGE_DAYS):
+            continue
+        # Title similarity deduplication — skip near-duplicate headlines
+        if title and any(titles_are_similar(title, u.get("title", "")) for u in unique):
+            continue
+        if url:
+            seen_urls.add(url)
+        unique.append(a)
 
     unique.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
     return unique
 
 
 def pick_top_articles(articles):
-    """Pick top articles with category diversity."""
+    """Pick top articles prioritizing primary categories (business, politics, policy, tech).
+
+    Strategy:
+    1. Fill primary categories first (up to MAX_PER_CATEGORY each)
+    2. Then fill remaining slots with secondary categories
+    3. Within each category, articles are already sorted by date (newest first)
+    """
     cat_counts = {c: 0 for c in CATEGORIES}
     picked = []
+    picked_urls = set()
+
+    # Pass 1: primary categories first
     for a in articles:
         cat = a.get("_category", "")
+        url = a.get("url", "")
+        if cat not in PRIMARY_CATEGORIES:
+            continue
         if cat_counts.get(cat, 0) >= MAX_PER_CATEGORY:
             continue
+        if url in picked_urls:
+            continue
         picked.append(a)
+        picked_urls.add(url)
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
+        if len(picked) >= MAX_TOTAL:
+            return picked
+
+    # Pass 2: secondary categories fill remaining slots
+    for a in articles:
+        cat = a.get("_category", "")
+        url = a.get("url", "")
+        if cat in PRIMARY_CATEGORIES:
+            continue
+        if cat_counts.get(cat, 0) >= MAX_PER_CATEGORY:
+            continue
+        if url in picked_urls:
+            continue
+        picked.append(a)
+        picked_urls.add(url)
         cat_counts[cat] = cat_counts.get(cat, 0) + 1
         if len(picked) >= MAX_TOTAL:
             break
+
     return picked
 
 

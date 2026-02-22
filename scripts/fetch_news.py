@@ -20,12 +20,22 @@ GNEWS_API_KEY = os.environ.get("GNEWS_API_KEY", "")
 DATA_DIR = "data"
 
 # Category-specific Google News RSS feeds (replace GNews API)
+# Primary categories listed first — these are the editorial focus
 CATEGORIES = {
     "business": [
-        "https://news.google.com/rss/search?q=Zimbabwe+business+OR+Zimbabwe+economy+OR+Zimbabwe+finance&hl=en&gl=US&ceid=US:en",
+        "https://news.google.com/rss/search?q=Zimbabwe+business+OR+Zimbabwe+economy+OR+Zimbabwe+finance+OR+Zimbabwe+investment+OR+Zimbabwe+mining&hl=en&gl=US&ceid=US:en",
+    ],
+    "politics": [
+        "https://news.google.com/rss/search?q=Zimbabwe+politics+OR+Zimbabwe+government+OR+Zimbabwe+ZANU+OR+Zimbabwe+election+OR+Zimbabwe+parliament+OR+Zimbabwe+Mnangagwa&hl=en&gl=US&ceid=US:en",
+    ],
+    "policy": [
+        "https://news.google.com/rss/search?q=Zimbabwe+policy+OR+Zimbabwe+regulation+OR+Zimbabwe+law+OR+Zimbabwe+reform+OR+Zimbabwe+sanctions+OR+Zimbabwe+SADC&hl=en&gl=US&ceid=US:en",
     ],
     "technology": [
-        "https://news.google.com/rss/search?q=Zimbabwe+technology+OR+Zimbabwe+tech+OR+Zimbabwe+digital&hl=en&gl=US&ceid=US:en",
+        "https://news.google.com/rss/search?q=Zimbabwe+technology+OR+Zimbabwe+tech+OR+Zimbabwe+digital+OR+Zimbabwe+startup+OR+Zimbabwe+telecoms&hl=en&gl=US&ceid=US:en",
+    ],
+    "health": [
+        "https://news.google.com/rss/search?q=Zimbabwe+health+OR+Zimbabwe+medical+OR+Zimbabwe+hospital&hl=en&gl=US&ceid=US:en",
     ],
     "entertainment": [
         "https://news.google.com/rss/search?q=Zimbabwe+entertainment+OR+Zimbabwe+music+OR+Zimbabwe+arts+OR+Zimbabwe+culture&hl=en&gl=US&ceid=US:en",
@@ -35,9 +45,6 @@ CATEGORIES = {
     ],
     "science": [
         "https://news.google.com/rss/search?q=Zimbabwe+science+OR+Zimbabwe+research+OR+Zimbabwe+environment+OR+Zimbabwe+wildlife&hl=en&gl=US&ceid=US:en",
-    ],
-    "health": [
-        "https://news.google.com/rss/search?q=Zimbabwe+health+OR+Zimbabwe+medical+OR+Zimbabwe+hospital&hl=en&gl=US&ceid=US:en",
     ],
 }
 
@@ -295,10 +302,12 @@ def fetch_spotlight():
         "iol.co.za", "timeslive.co.za",
     ]
 
-    # Multiple queries to cast a wider net for reputable sources
-    # Note: queries are already URL-safe — use urllib.parse.quote for special chars
+    # Primary-category-focused queries for spotlight — business, politics, policy, tech first
     import urllib.parse
     queries = [
+        urllib.parse.quote("Zimbabwe business economy finance investment"),
+        urllib.parse.quote("Zimbabwe politics government policy reform"),
+        urllib.parse.quote("Zimbabwe technology digital"),
         "Zimbabwe",
         urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
     ]
