@@ -26,21 +26,28 @@ var SIDEBAR_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en"
 ];
 
-// Spotlight feeds — reputable international sources preferred, broad fallback
+// Spotlight feeds — multiple targeted searches to ensure enough reputable results
 var SPOTLIGHT_RSS_FEEDS = [
-  "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
-  "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en"
+  "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=%22Southern+Africa%22+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en"
 ];
 
 // Reputable sources for spotlight matching
 var REPUTABLE_SOURCES = [
+  // Major international wire services & broadcasters
   "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
   "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
   "bloomberg", "associated press", "ap news", "apnews", "washington post",
   "cnn", "sky news", "the telegraph", "the independent", "france 24",
-  "dw", "deutsche welle",
+  "dw", "deutsche welle", "npr", "pbs", "abc news", "time magazine",
+  "foreign policy", "the conversation",
+  // International outlets with strong Africa desks
+  "voa", "voice of america", "rfi", "africanews",
+  // Reputable African outlets
   "allafrica", "all africa", "daily maverick", "mail & guardian",
-  "news24", "the east african"
+  "news24", "the east african", "sabc", "nation africa", "the citizen",
+  "eyewitness news", "iol", "timeslive", "sunday times"
 ];
 
 function isReputableSource(source) {
