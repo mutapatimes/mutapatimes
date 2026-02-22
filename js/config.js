@@ -1098,7 +1098,7 @@ function renderMainStories(articles) {
   // Replace BREVO_FORM_URL below with your actual Brevo form action URL
   // (e.g. "https://XXXXX.sibforms.com/serve/YYYYY") after creating the
   // form in the Brevo dashboard under Contacts > Forms > Sign-up.
-  var BREVO_FORM_URL = "";  // Paste your Brevo sibforms URL here
+  var BREVO_FORM_URL = "https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==";
   var contentLayout = $(".content-layout");
   if (contentLayout.length) {
     // Create hidden iframe target for cross-origin form submission

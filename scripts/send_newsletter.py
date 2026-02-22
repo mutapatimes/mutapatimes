@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Send the biweekly Mutapa Times newsletter via Brevo API.
-Reads data/*.json, builds an HTML email, creates a campaign, and sends it.
-Stdlib only — no pip dependencies.
+Send The Mutapa Times newsletter via Brevo API (Mon/Wed/Sat).
+Reads data/spotlight.json and data/*.json category files, builds an HTML email
+with a featured spotlight section and category headlines, creates a campaign,
+and sends it. Stdlib only — no pip dependencies.
 """
 import json
 import os
@@ -48,8 +49,21 @@ def brevo_request(endpoint, payload=None, method="POST"):
 
 
 # ── Data loading ────────────────────────────────────────────
-def load_articles():
+def load_spotlight():
+    """Read spotlight articles from data/spotlight.json (GNews API data with images)."""
+    filepath = os.path.join(DATA_DIR, "spotlight.json")
+    if not os.path.exists(filepath):
+        return []
+    with open(filepath) as f:
+        data = json.load(f)
+    articles = data.get("articles", [])
+    return articles[:3]
+
+
+def load_articles(exclude_urls=None):
     """Read all data/*.json files, merge, deduplicate, sort by date."""
+    if exclude_urls is None:
+        exclude_urls = set()
     all_articles = []
     for cat in CATEGORIES:
         filepath = os.path.join(DATA_DIR, f"{cat}.json")
@@ -61,12 +75,12 @@ def load_articles():
             a["_category"] = cat
         all_articles.extend(data.get("articles", []))
 
-    # Deduplicate by URL
+    # Deduplicate by URL and exclude spotlight URLs
     seen = set()
     unique = []
     for a in all_articles:
         url = a.get("url", "")
-        if url and url not in seen:
+        if url and url not in seen and url not in exclude_urls:
             seen.add(url)
             unique.append(a)
 
@@ -114,14 +128,93 @@ def format_date(date_str):
         return ""
 
 
-def build_html(articles):
-    """Build inline-CSS HTML email matching The Mutapa Times style."""
+def build_spotlight_html(spotlight_articles):
+    """Build the dark-green spotlight section HTML."""
+    if not spotlight_articles:
+        return ""
+
+    spotlight_rows = ""
+    for a in spotlight_articles:
+        title = escape_html(a.get("title", "No title"))
+        url = escape_html(a.get("url", "#"))
+        desc = a.get("description", "")
+        if desc and len(desc) > 200:
+            desc = desc[:197] + "..."
+        desc = escape_html(desc)
+        image = a.get("image", "")
+        source = a.get("source", "")
+        source_name = escape_html(source if isinstance(source, str) else source.get("name", ""))
+        pub_date = format_date(a.get("publishedAt", ""))
+        meta_parts = [p for p in [source_name, pub_date] if p]
+        meta_line = " &middot; ".join(meta_parts)
+
+        image_html = ""
+        if image:
+            image_html = (
+                '<tr>'
+                '<td style="padding:0;">'
+                f'<a href="{url}" target="_blank" style="text-decoration:none;">'
+                f'<img src="{escape_html(image)}" alt="{title}" width="600" '
+                'style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
+                '</a>'
+                '</td>'
+                '</tr>'
+            )
+
+        desc_html = ""
+        if desc:
+            desc_html = (
+                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;'
+                f'color:rgba(255,255,255,0.8);margin:8px 0 0;line-height:1.5;">{desc}</p>'
+            )
+
+        spotlight_rows += (
+            f'{image_html}'
+            '<tr>'
+            '<td style="padding:16px 24px 20px;border-bottom:1px solid rgba(255,255,255,0.15);">'
+            f'<a href="{url}" target="_blank" '
+            'style="font-family:\'Playfair Display\',Georgia,\'Times New Roman\',serif;'
+            'font-size:20px;font-weight:700;color:#ffffff;'
+            f'text-decoration:none;line-height:1.3;">{title}</a>'
+            f'{desc_html}'
+            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+            'color:rgba(255,255,255,0.5);margin:8px 0 0;'
+            f'text-transform:uppercase;letter-spacing:0.05em;">{meta_line}</p>'
+            '</td>'
+            '</tr>'
+        )
+
+    return (
+        '<!-- Spotlight Section -->'
+        '<tr>'
+        '<td style="background:#1a5632;padding:0;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        'style="border-collapse:collapse;">'
+        '<tr>'
+        '<td style="padding:20px 24px 10px;">'
+        '<h2 style="font-family:\'Playfair Display\',Georgia,\'Times New Roman\',serif;'
+        'font-size:13px;font-weight:700;color:rgba(255,255,255,0.7);'
+        'margin:0;text-transform:uppercase;letter-spacing:0.1em;">'
+        '&#9679; Spotlight</h2>'
+        '</td>'
+        '</tr>'
+        f'{spotlight_rows}'
+        '</table>'
+        '</td>'
+        '</tr>'
+    )
+
+
+def build_html(spotlight_articles, category_articles):
+    """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
 
-    # Build article rows
+    spotlight_html = build_spotlight_html(spotlight_articles)
+
+    # Build category article rows
     rows = ""
-    for i, a in enumerate(articles):
+    for i, a in enumerate(category_articles):
         title = escape_html(a.get("title", "No title"))
         url = escape_html(a.get("url", "#"))
         desc = a.get("description", "")
@@ -214,7 +307,7 @@ def build_html(articles):
               <span style="font-family:Helvetica,Arial,sans-serif;
                            font-size:11px;color:#6b6b6b;
                            text-transform:uppercase;letter-spacing:0.08em;">
-                {date_display} &nbsp;&middot;&nbsp; Biweekly Newsletter
+                {date_display} &nbsp;&middot;&nbsp; Published Mon &middot; Wed &middot; Sat
               </span>
             </td>
           </tr>
@@ -224,15 +317,17 @@ def build_html(articles):
             <td style="padding:24px 30px 16px;text-align:center;">
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:15px;color:#2c2c2c;line-height:1.6;margin:0;">
-                Your biweekly briefing of the most important Zimbabwe headlines
-                from foreign press. Curated for the diaspora.
+                Your briefing of the most important Zimbabwe headlines
+                from foreign press. Curated for the diaspora, three times a week.
               </p>
             </td>
           </tr>
 
+          {spotlight_html}
+
           <!-- Section header -->
           <tr>
-            <td style="padding:0 30px;">
+            <td style="padding:20px 30px 0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td style="border-top:2px solid #1a1a1a;padding-top:10px;">
@@ -259,7 +354,7 @@ def build_html(articles):
                         font-family:Helvetica,Arial,sans-serif;
                         font-size:13px;font-weight:700;
                         text-transform:uppercase;letter-spacing:0.1em;
-                        color:#ffffff;background:#1a1a1a;
+                        color:#ffffff;background:#00897b;
                         text-decoration:none;">
                 Read More at mutapatimes.com
               </a>
@@ -279,7 +374,7 @@ def build_html(articles):
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:12px;color:#6b6b6b;line-height:1.6;margin:0 0 8px;">
                 The Mutapa Times delivers curated Zimbabwean news from foreign press
-                for the diaspora.
+                for the diaspora &mdash; every Monday, Wednesday, and Saturday.
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:11px;color:#999999;margin:0 0 8px;">
@@ -352,17 +447,24 @@ def main():
         print("ERROR: BREVO_API_KEY not set")
         sys.exit(1)
 
-    print("Loading articles...")
-    articles = load_articles()
-    if not articles:
+    print("Loading spotlight articles...")
+    spotlight = load_spotlight()
+    print(f"  Found {len(spotlight)} spotlight articles")
+
+    # Collect spotlight URLs to avoid duplicates in category headlines
+    spotlight_urls = {a.get("url", "") for a in spotlight if a.get("url")}
+
+    print("Loading category articles...")
+    articles = load_articles(exclude_urls=spotlight_urls)
+    if not articles and not spotlight:
         print("No articles found in data/*.json — skipping newsletter")
         sys.exit(0)
 
     top = pick_top_articles(articles)
-    print(f"  Selected {len(top)} articles for newsletter")
+    print(f"  Selected {len(top)} category articles for newsletter")
 
     print("Building email HTML...")
-    html = build_html(top)
+    html = build_html(spotlight, top)
 
     print("Creating and sending campaign via Brevo...")
     create_and_send_campaign(html)
