@@ -736,17 +736,37 @@ function downloadBlob(blob, filename) {
 function generateShareImage(articleData) {
   var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
 
-  // Pre-load the Harare skyline image
+  // Pre-load: article image (if available) with skyline fallback
   var imgPromise = new Promise(function(resolve) {
-    var img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = function() { resolve(img); };
-    img.onerror = function() { resolve(null); };
-    img.src = 'img/banner.png';
+    var articleImg = null;
+    var skylineImg = null;
+
+    function tryArticleImage() {
+      if (articleData.image) {
+        articleImg = new Image();
+        articleImg.crossOrigin = 'anonymous';
+        articleImg.onload = function() { resolve({ article: articleImg, skyline: null }); };
+        articleImg.onerror = function() { loadSkyline(); };
+        articleImg.src = articleData.image;
+      } else {
+        loadSkyline();
+      }
+    }
+
+    function loadSkyline() {
+      skylineImg = new Image();
+      skylineImg.crossOrigin = 'anonymous';
+      skylineImg.onload = function() { resolve({ article: null, skyline: skylineImg }); };
+      skylineImg.onerror = function() { resolve({ article: null, skyline: null }); };
+      skylineImg.src = 'img/banner.png';
+    }
+
+    tryArticleImage();
   });
 
   return Promise.all([fontsReady, imgPromise]).then(function(results) {
-    var skylineImg = results[1];
+    var images = results[1];
+    var heroImg = images.article || images.skyline;
 
     // Portrait format — tall card like Guardian/Semafor examples
     var W = 1080, H = 1350;
@@ -760,11 +780,11 @@ function generateShareImage(articleData) {
     ctx.fillStyle = '#1a1a1a';
     ctx.fillRect(0, 0, W, H);
 
-    // ─── Harare skyline image at top with gradient fade ───
-    var imgH = 400;
-    if (skylineImg) {
-      // Draw the skyline image covering the top portion
-      var srcRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
+    // ─── Hero image at top (article image or Harare skyline) with gradient fade ───
+    var imgH = images.article ? 520 : 400;
+    if (heroImg) {
+      // Cover-fit the image into the top portion
+      var srcRatio = heroImg.naturalWidth / heroImg.naturalHeight;
       var drawW = W;
       var drawH = W / srcRatio;
       var drawY = 0;
@@ -773,18 +793,20 @@ function generateShareImage(articleData) {
         drawW = imgH * srcRatio;
       }
       var drawX = (W - drawW) / 2;
-      ctx.drawImage(skylineImg, drawX, drawY, drawW, drawH);
+      // Centre-crop vertically for article images
+      if (drawH > imgH) drawY = -(drawH - imgH) / 3;
+      ctx.drawImage(heroImg, drawX, drawY, drawW, drawH + Math.abs(drawY));
 
-      // Warm overlay tint on skyline
-      ctx.fillStyle = 'rgba(26, 26, 26, 0.25)';
+      // Subtle dark overlay so masthead reads clearly
+      ctx.fillStyle = images.article ? 'rgba(26, 26, 26, 0.35)' : 'rgba(26, 26, 26, 0.25)';
       ctx.fillRect(0, 0, W, imgH);
 
       // Gradient fade from image into dark background
-      var grad = ctx.createLinearGradient(0, imgH - 160, 0, imgH);
+      var grad = ctx.createLinearGradient(0, imgH - 180, 0, imgH);
       grad.addColorStop(0, 'rgba(26, 26, 26, 0)');
       grad.addColorStop(1, '#1a1a1a');
       ctx.fillStyle = grad;
-      ctx.fillRect(0, imgH - 160, W, 160);
+      ctx.fillRect(0, imgH - 180, W, 180);
     }
 
     // ─── Masthead: "THE MUTAPA TIMES" — big, top-left over the image ───
@@ -1020,7 +1042,7 @@ function renderMainStories(articles) {
     tagRow.append(createShareGroup(a.title, a.url, {
       title: a.title, source: a.source, description: desc,
       url: a.url, category: category, isLocal: a.isLocal,
-      publishedAt: a.publishedAt
+      publishedAt: a.publishedAt, image: a.image || ''
     }));
     textCol.append(tagRow);
     if (desc) textCol.append($('<p class="main-article-desc">').text(desc));
@@ -1126,6 +1148,10 @@ function loadSpotlightStories() {
       if (data && data.articles && data.articles.length > 0) {
         setCache(cacheKey, data.articles);
         renderSpotlightStories(data.articles);
+        // Render remaining GNews articles below spotlight
+        if (data.more && data.more.length > 0) {
+          renderGnewsMore(data.more);
+        }
       } else {
         loadSpotlightFromRSS();
       }
@@ -1250,7 +1276,7 @@ function renderSpotlightStories(articles) {
     meta.append(createShareGroup(a.title, a.url, {
       title: a.title, source: a.source, description: desc,
       url: a.url, category: '', isLocal: false,
-      publishedAt: a.publishedAt
+      publishedAt: a.publishedAt, image: a.image || ''
     }));
     textWrap.append(meta);
 
@@ -1261,6 +1287,75 @@ function renderSpotlightStories(articles) {
 
   // Inject structured data for SEO
   injectArticleSchema(articles, 'spotlight');
+}
+
+// ============================================================
+// RENDER: GNews More — secondary articles below spotlight
+// ============================================================
+function renderGnewsMore(articles) {
+  var container = $("#gnews-more");
+  if (!container.length) return;
+  container.empty();
+
+  if (!articles || articles.length === 0) return;
+
+  // Filter out any already shown in spotlight
+  var filtered = articles.filter(function(a) {
+    return !a.url || !_spotlightUrls[a.url];
+  });
+  if (filtered.length === 0) return;
+
+  for (var i = 0; i < filtered.length && i < 10; i++) {
+    var a = filtered[i];
+    var pubDate = formatDate(a.publishedAt);
+    var readTime = getReadingTime(a.description);
+
+    var card = $('<article class="gnews-more-item">');
+    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+
+    // Article image (GNews provides images)
+    if (a.image) {
+      var imgWrap = $('<div class="gnews-more-img-wrap">');
+      var img = $('<img class="gnews-more-img">').attr('src', a.image).attr('alt', a.title || '').attr('loading', 'lazy');
+      img.on('error', function() { $(this).parent().hide(); });
+      imgWrap.append(img);
+      link.append(imgWrap);
+    }
+
+    var textCol = $('<div class="gnews-more-text">');
+    textCol.append($('<h4 class="gnews-more-title">').text(a.title));
+
+    var desc = a.description;
+    if (desc && desc.length > 160) desc = desc.substring(0, 160) + "...";
+    if (desc) textCol.append($('<p class="gnews-more-desc">').text(desc));
+
+    var meta = $('<p class="gnews-more-meta">');
+    if (a.source) {
+      meta.append($('<span>').text(a.source));
+    }
+    if (pubDate) {
+      if (a.source) meta.append(document.createTextNode(" \u00b7 "));
+      var timeEl = $('<time>').text(pubDate);
+      try {
+        var dt = new Date(a.publishedAt);
+        if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
+      } catch (e) {}
+      meta.append(timeEl);
+    }
+    if (readTime) {
+      meta.append(document.createTextNode(" \u00b7 " + readTime));
+    }
+    meta.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: desc,
+      url: a.url, category: inferCategory(a.title), isLocal: false,
+      publishedAt: a.publishedAt, image: a.image || ''
+    }));
+    textCol.append(meta);
+
+    link.append(textCol);
+    card.append(link);
+    container.append(card);
+  }
 }
 
 // ============================================================
@@ -1316,7 +1411,7 @@ function renderSidebarStories(articles) {
     meta.append(createShareGroup(a.title, a.url, {
       title: a.title, source: a.source, description: desc,
       url: a.url, category: '', isLocal: a.isLocal,
-      publishedAt: a.publishedAt
+      publishedAt: a.publishedAt, image: a.image || ''
     }));
     link.append(meta);
 

@@ -378,13 +378,15 @@ def fetch_spotlight():
 
     # Reputable sources only — no fallback to unvetted sources
     spotlight = reputable_merged[:3]
+    # Save remaining articles (non-reputable) as secondary feed below spotlight
+    more = others_merged[:15]
 
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
 
     with open(outpath, "w") as f:
-        json.dump({"articles": spotlight}, f)
-    print(f"  OK: {len(spotlight)} spotlight articles saved (merged from {len(articles)} new + {len(existing)} existing)")
+        json.dump({"articles": spotlight, "more": more}, f)
+    print(f"  OK: {len(spotlight)} spotlight + {len(more)} more articles saved (merged from {len(articles)} new + {len(existing)} existing)")
 
 
 def main():
