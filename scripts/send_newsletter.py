@@ -10,6 +10,7 @@ import os
 import sys
 import urllib.request
 import urllib.error
+import urllib.parse
 from datetime import datetime, timezone
 
 # ── Configuration ───────────────────────────────────────────
@@ -25,6 +26,12 @@ SITE_URL = "https://www.mutapatimes.com"
 CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"]
 MAX_PER_CATEGORY = 2
 MAX_TOTAL = 12
+
+DAY_GREETINGS = {
+    0: "Monday morning",
+    2: "Wednesday midweek",
+    5: "Saturday weekend",
+}
 
 
 # ── Brevo API helper ───────────────────────────────────────
@@ -118,7 +125,6 @@ def format_date(date_str):
     if not date_str:
         return ""
     try:
-        # Handle both ISO formats: "2026-02-17T22:12:33Z" and "2026-02-17 22:12:33"
         clean = date_str.replace("Z", "+00:00").replace(" ", "T")
         if "+" not in clean and clean.count("T") == 1:
             clean += "+00:00"
@@ -126,6 +132,31 @@ def format_date(date_str):
         return dt.strftime("%B %d, %Y")
     except (ValueError, TypeError):
         return ""
+
+
+def whatsapp_share_url(title, url):
+    """Build a wa.me share URL with pre-populated Mutapa Times copy."""
+    text = (
+        f"{title}\n\n"
+        f"\U0001f517 {url}\n\n"
+        f"\U0001f1ff\U0001f1fc Stay informed on Zimbabwe \u2014 follow @MutapaTimes "
+        f"for daily news, analysis & more.\n"
+        f"\U0001f4f0 https://www.mutapatimes.com"
+    )
+    return "https://wa.me/?text=" + urllib.parse.quote(text, safe="")
+
+
+def whatsapp_share_link(title, url, color="rgba(255,255,255,0.5)", size="11px"):
+    """Build an inline WhatsApp share link for an article."""
+    wa_url = whatsapp_share_url(title, url)
+    return (
+        f'<a href="{wa_url}" target="_blank" '
+        f'style="font-family:Helvetica,Arial,sans-serif;font-size:{size};'
+        f'color:{color};text-decoration:none;white-space:nowrap;" '
+        f'title="Share on WhatsApp">'
+        f'WhatsApp'
+        f'</a>'
+    )
 
 
 def build_spotlight_html(spotlight_articles):
@@ -136,7 +167,9 @@ def build_spotlight_html(spotlight_articles):
     spotlight_rows = ""
     for a in spotlight_articles:
         title = escape_html(a.get("title", "No title"))
+        raw_title = a.get("title", "No title")
         url = escape_html(a.get("url", "#"))
+        raw_url = a.get("url", "#")
         desc = a.get("description", "")
         if desc and len(desc) > 200:
             desc = desc[:197] + "..."
@@ -148,11 +181,13 @@ def build_spotlight_html(spotlight_articles):
         meta_parts = [p for p in [source_name, pub_date] if p]
         meta_line = " &middot; ".join(meta_parts)
 
+        wa_link = whatsapp_share_link(raw_title, raw_url, color="rgba(255,255,255,0.5)", size="11px")
+
         image_html = ""
         if image:
             image_html = (
                 '<tr>'
-                '<td style="padding:0;">'
+                '<td style="padding:0;font-size:0;line-height:0;">'
                 f'<a href="{url}" target="_blank" style="text-decoration:none;">'
                 f'<img src="{escape_html(image)}" alt="{title}" width="600" '
                 'style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
@@ -164,22 +199,25 @@ def build_spotlight_html(spotlight_articles):
         desc_html = ""
         if desc:
             desc_html = (
-                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;'
-                f'color:rgba(255,255,255,0.8);margin:8px 0 0;line-height:1.5;">{desc}</p>'
+                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+                f'color:rgba(255,255,255,0.75);margin:6px 0 0;line-height:1.5;">{desc}</p>'
             )
 
         spotlight_rows += (
             f'{image_html}'
             '<tr>'
-            '<td style="padding:16px 24px 20px;border-bottom:1px solid rgba(255,255,255,0.15);">'
+            '<td style="padding:14px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.12);">'
             f'<a href="{url}" target="_blank" '
-            'style="font-family:\'Playfair Display\',Georgia,\'Times New Roman\',serif;'
-            'font-size:20px;font-weight:700;color:#ffffff;'
+            'style="font-family:Georgia,\'Times New Roman\',serif;'
+            'font-size:18px;font-weight:700;color:#ffffff;'
             f'text-decoration:none;line-height:1.3;">{title}</a>'
             f'{desc_html}'
             '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-            'color:rgba(255,255,255,0.5);margin:8px 0 0;'
-            f'text-transform:uppercase;letter-spacing:0.05em;">{meta_line}</p>'
+            'color:rgba(255,255,255,0.45);margin:6px 0 0;'
+            f'text-transform:uppercase;letter-spacing:0.04em;">'
+            f'{meta_line}'
+            f' &nbsp;&middot;&nbsp; {wa_link}'
+            '</p>'
             '</td>'
             '</tr>'
         )
@@ -191,9 +229,9 @@ def build_spotlight_html(spotlight_articles):
         '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
         'style="border-collapse:collapse;">'
         '<tr>'
-        '<td style="padding:20px 24px 10px;">'
-        '<h2 style="font-family:\'Playfair Display\',Georgia,\'Times New Roman\',serif;'
-        'font-size:13px;font-weight:700;color:rgba(255,255,255,0.7);'
+        '<td style="padding:16px 20px 8px;">'
+        '<h2 style="font-family:Georgia,\'Times New Roman\',serif;'
+        'font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);'
         'margin:0;text-transform:uppercase;letter-spacing:0.1em;">'
         '&#9679; Spotlight</h2>'
         '</td>'
@@ -209,6 +247,13 @@ def build_html(spotlight_articles, category_articles):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
+    total_count = len(spotlight_articles) + len(category_articles)
+
+    # Preheader: top spotlight headline or fallback
+    if spotlight_articles:
+        preheader = escape_html(spotlight_articles[0].get("title", ""))
+    else:
+        preheader = f"Top Zimbabwe headlines from foreign press &mdash; {date_display}"
 
     spotlight_html = build_spotlight_html(spotlight_articles)
 
@@ -216,7 +261,9 @@ def build_html(spotlight_articles, category_articles):
     rows = ""
     for i, a in enumerate(category_articles):
         title = escape_html(a.get("title", "No title"))
+        raw_title = a.get("title", "No title")
         url = escape_html(a.get("url", "#"))
+        raw_url = a.get("url", "#")
         desc = a.get("description", "")
         if desc and len(desc) > 200:
             desc = desc[:197] + "..."
@@ -230,71 +277,109 @@ def build_html(spotlight_articles, category_articles):
         meta_parts = [p for p in [source_name, category, pub_date] if p]
         meta_line = " &middot; ".join(meta_parts)
 
+        wa_link = whatsapp_share_link(raw_title, raw_url, color="#6b6b6b", size="11px")
+
         bg = "#ffffff" if i % 2 == 0 else "#fafafa"
 
         desc_html = ""
         if desc:
             desc_html = (
-                f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;'
-                f'color:#2c2c2c;margin:8px 0 0;line-height:1.5;">{desc}</p>'
+                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+                f'color:#2c2c2c;margin:6px 0 0;line-height:1.5;">{desc}</p>'
             )
 
-        rows += f"""
-        <tr>
-          <td style="padding:20px 30px;background:{bg};border-bottom:1px solid #e8e6e3;">
-            <a href="{url}" target="_blank"
-               style="font-family:'Playfair Display',Georgia,'Times New Roman',serif;
-                      font-size:18px;font-weight:700;color:#1a1a1a;
-                      text-decoration:none;line-height:1.3;">
-              {title}
-            </a>
-            <p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;
-                      color:#6b6b6b;margin:6px 0 0;line-height:1.4;">
-              {meta_line}
-            </p>
-            {desc_html}
-          </td>
-        </tr>"""
+        rows += (
+            '<tr>'
+            f'<td style="padding:14px 20px;background:{bg};border-bottom:1px solid #e8e6e3;">'
+            f'<a href="{url}" target="_blank" '
+            'style="font-family:Georgia,\'Times New Roman\',serif;'
+            'font-size:16px;font-weight:700;color:#1a1a1a;'
+            f'text-decoration:none;line-height:1.3;">{title}</a>'
+            f'{desc_html}'
+            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+            f'color:#6b6b6b;margin:6px 0 0;line-height:1.4;">'
+            f'{meta_line}'
+            f' &nbsp;&middot;&nbsp; {wa_link}'
+            '</p>'
+            '</td>'
+            '</tr>'
+        )
+
+    # WhatsApp share URL for the general Mutapa Times share in footer
+    general_wa_text = (
+        "\U0001f4f0 The Mutapa Times \u2014 Zimbabwe outside-in.\n\n"
+        "Curated news from foreign press, delivered Mon/Wed/Sat.\n\n"
+        "\U0001f1ff\U0001f1fc Subscribe free: https://www.mutapatimes.com"
+    )
+    general_wa_url = "https://wa.me/?text=" + urllib.parse.quote(general_wa_text, safe="")
 
     html = f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>The Mutapa Times Newsletter</title>
   <!--[if mso]>
   <style>* {{ font-family: Georgia, serif !important; }}</style>
   <![endif]-->
+  <style>
+    @media only screen and (max-width: 620px) {{
+      .outer-wrap {{ padding: 0 !important; }}
+      .main-table {{ width: 100% !important; }}
+      .masthead-title {{ font-size: 22px !important; letter-spacing: 0.02em !important; }}
+      .tagline {{ font-size: 12px !important; }}
+      .masthead-cell {{ padding: 20px 16px 8px !important; }}
+      .date-cell {{ padding: 8px 16px !important; }}
+      .intro-cell {{ padding: 14px 16px 10px !important; }}
+      .intro-text {{ font-size: 13px !important; }}
+      .spotlight-header-cell {{ padding: 12px 16px 6px !important; }}
+      .spotlight-text-cell {{ padding: 12px 16px 14px !important; }}
+      .spotlight-title {{ font-size: 16px !important; }}
+      .spotlight-desc {{ font-size: 12px !important; }}
+      .section-header-cell {{ padding: 14px 16px 0 !important; }}
+      .article-cell {{ padding: 12px 16px !important; }}
+      .article-title {{ font-size: 15px !important; }}
+      .article-desc {{ font-size: 12px !important; }}
+      .cta-cell {{ padding: 20px 16px !important; }}
+      .divider-cell {{ padding: 0 16px !important; }}
+      .footer-cell {{ padding: 16px 16px 24px !important; }}
+      .share-cell {{ padding: 16px 16px 4px !important; }}
+    }}
+  </style>
 </head>
 <body style="margin:0;padding:0;background-color:#e8e6e3;
              font-family:Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
 
   <!-- Preheader -->
   <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
-    Top Zimbabwe headlines from foreign press &mdash; {date_display}
+    {preheader}
   </div>
 
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
          style="background-color:#e8e6e3;">
     <tr>
-      <td align="center" style="padding:20px 10px;">
+      <td align="center" class="outer-wrap" style="padding:16px 8px;">
 
         <!-- Main container -->
         <table role="presentation" width="600" cellpadding="0" cellspacing="0"
+               class="main-table"
                style="max-width:600px;width:100%;background:#ffffff;border-collapse:collapse;">
 
           <!-- Masthead -->
           <tr>
-            <td style="padding:30px 30px 10px;text-align:center;
+            <td class="masthead-cell" style="padding:24px 20px 8px;text-align:center;
                        border-bottom:2px solid #1a1a1a;">
-              <h1 style="font-family:'Playfair Display',Georgia,'Times New Roman',serif;
-                         font-size:32px;font-weight:900;color:#1a1a1a;
-                         margin:0;letter-spacing:0.04em;text-transform:uppercase;">
+              <h1 class="masthead-title"
+                  style="font-family:Georgia,'Times New Roman',serif;
+                         font-size:26px;font-weight:900;color:#1a1a1a;
+                         margin:0;letter-spacing:0.03em;text-transform:uppercase;">
                 THE MUTAPA TIMES
               </h1>
-              <p style="font-family:'Playfair Display',Georgia,'Times New Roman',serif;
-                        font-size:14px;font-style:italic;color:#6b6b6b;
-                        margin:6px 0 0;">
+              <p class="tagline"
+                 style="font-family:Georgia,'Times New Roman',serif;
+                        font-size:12px;font-style:italic;color:#6b6b6b;
+                        margin:4px 0 0;">
                 Zimbabwe outside-in.
               </p>
             </td>
@@ -302,11 +387,11 @@ def build_html(spotlight_articles, category_articles):
 
           <!-- Date bar -->
           <tr>
-            <td style="padding:12px 30px;text-align:center;
+            <td class="date-cell" style="padding:10px 20px;text-align:center;
                        border-bottom:1px solid #c8c8c8;">
               <span style="font-family:Helvetica,Arial,sans-serif;
-                           font-size:11px;color:#6b6b6b;
-                           text-transform:uppercase;letter-spacing:0.08em;">
+                           font-size:10px;color:#6b6b6b;
+                           text-transform:uppercase;letter-spacing:0.06em;">
                 {date_display} &nbsp;&middot;&nbsp; Published Mon &middot; Wed &middot; Sat
               </span>
             </td>
@@ -314,9 +399,10 @@ def build_html(spotlight_articles, category_articles):
 
           <!-- Intro -->
           <tr>
-            <td style="padding:24px 30px 16px;text-align:center;">
-              <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:15px;color:#2c2c2c;line-height:1.6;margin:0;">
+            <td class="intro-cell" style="padding:18px 20px 12px;text-align:center;">
+              <p class="intro-text"
+                 style="font-family:Helvetica,Arial,sans-serif;
+                        font-size:14px;color:#2c2c2c;line-height:1.5;margin:0;">
                 Your briefing of the most important Zimbabwe headlines
                 from foreign press. Curated for the diaspora, three times a week.
               </p>
@@ -327,14 +413,14 @@ def build_html(spotlight_articles, category_articles):
 
           <!-- Section header -->
           <tr>
-            <td style="padding:20px 30px 0;">
+            <td class="section-header-cell" style="padding:16px 20px 0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td style="border-top:2px solid #1a1a1a;padding-top:10px;">
-                    <h2 style="font-family:'Playfair Display',Georgia,'Times New Roman',serif;
-                               font-size:20px;font-weight:700;color:#1a1a1a;
-                               margin:0 0 4px;text-transform:uppercase;
-                               letter-spacing:0.05em;">
+                  <td style="border-top:2px solid #1a1a1a;padding-top:8px;">
+                    <h2 style="font-family:Georgia,'Times New Roman',serif;
+                               font-size:16px;font-weight:700;color:#1a1a1a;
+                               margin:0 0 2px;text-transform:uppercase;
+                               letter-spacing:0.04em;">
                       Top Headlines
                     </h2>
                   </td>
@@ -348,12 +434,12 @@ def build_html(spotlight_articles, category_articles):
 
           <!-- CTA -->
           <tr>
-            <td style="padding:28px 30px;text-align:center;">
+            <td class="cta-cell" style="padding:24px 20px;text-align:center;">
               <a href="{SITE_URL}" target="_blank"
-                 style="display:inline-block;padding:12px 32px;
+                 style="display:inline-block;padding:10px 28px;
                         font-family:Helvetica,Arial,sans-serif;
-                        font-size:13px;font-weight:700;
-                        text-transform:uppercase;letter-spacing:0.1em;
+                        font-size:12px;font-weight:700;
+                        text-transform:uppercase;letter-spacing:0.08em;
                         color:#ffffff;background:#00897b;
                         text-decoration:none;">
                 Read More at mutapatimes.com
@@ -361,23 +447,57 @@ def build_html(spotlight_articles, category_articles):
             </td>
           </tr>
 
+          <!-- Share with a friend -->
+          <tr>
+            <td class="share-cell" style="padding:20px 20px 6px;text-align:center;
+                       border-top:1px solid #c8c8c8;">
+              <p style="font-family:Georgia,'Times New Roman',serif;
+                        font-size:15px;font-weight:700;color:#1a1a1a;
+                        margin:0 0 6px;">
+                Share the news
+              </p>
+              <p style="font-family:Helvetica,Arial,sans-serif;
+                        font-size:12px;color:#6b6b6b;line-height:1.5;margin:0 0 12px;">
+                Know someone who should be reading this? Send them The Mutapa Times.
+              </p>
+              <a href="{general_wa_url}" target="_blank"
+                 style="display:inline-block;padding:8px 20px;
+                        font-family:Helvetica,Arial,sans-serif;
+                        font-size:12px;font-weight:700;
+                        color:#ffffff;background:#25d366;
+                        text-decoration:none;letter-spacing:0.02em;">
+                Share on WhatsApp
+              </a>
+              &nbsp;&nbsp;
+              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%20%E2%80%94%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mon%2FWed%2FSat.%0A%0Ahttps%3A%2F%2Fwww.mutapatimes.com"
+                 target="_blank"
+                 style="display:inline-block;padding:8px 20px;
+                        font-family:Helvetica,Arial,sans-serif;
+                        font-size:12px;font-weight:700;
+                        color:#ffffff;background:#1a1a1a;
+                        text-decoration:none;letter-spacing:0.02em;">
+                Share via Email
+              </a>
+            </td>
+          </tr>
+
           <!-- Divider -->
           <tr>
-            <td style="padding:0 30px;">
-              <hr style="border:none;border-top:1px solid #c8c8c8;margin:0;">
+            <td class="divider-cell" style="padding:0 20px;">
+              <hr style="border:none;border-top:1px solid #c8c8c8;margin:16px 0 0;">
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="padding:20px 30px 30px;text-align:center;background:#fafafa;">
+            <td class="footer-cell" style="padding:16px 20px 24px;text-align:center;background:#fafafa;">
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:12px;color:#6b6b6b;line-height:1.6;margin:0 0 8px;">
+                        font-size:11px;color:#6b6b6b;line-height:1.5;margin:0 0 6px;">
                 The Mutapa Times delivers curated Zimbabwean news from foreign press
                 for the diaspora &mdash; every Monday, Wednesday, and Saturday.
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:11px;color:#999999;margin:0 0 8px;">
+                        font-size:10px;color:#999999;margin:0 0 6px;">
                 <a href="{SITE_URL}" style="color:#00897b;text-decoration:none;">
                   mutapatimes.com
                 </a>
@@ -387,7 +507,7 @@ def build_html(spotlight_articles, category_articles):
                 </a>
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:11px;color:#999999;margin:0;">
+                        font-size:10px;color:#999999;margin:0;">
                 <a href="{{{{ unsubscribe }}}}" style="color:#999999;text-decoration:underline;">
                   Unsubscribe
                 </a>
@@ -406,14 +526,13 @@ def build_html(spotlight_articles, category_articles):
   </table>
 </body>
 </html>"""
-    return html
+    return html, total_count
 
 
 # ── Brevo campaign ──────────────────────────────────────────
-def create_and_send_campaign(html_content):
+def create_and_send_campaign(html_content, subject):
     """Create email campaign in Brevo and send immediately."""
     today = datetime.now(timezone.utc)
-    subject = f"The Mutapa Times \u2014 {today.strftime('%B %d, %Y')}"
     campaign_name = f"Newsletter {today.strftime('%Y-%m-%d')}"
 
     # Create campaign
@@ -464,10 +583,17 @@ def main():
     print(f"  Selected {len(top)} category articles for newsletter")
 
     print("Building email HTML...")
-    html = build_html(spotlight, top)
+    html, total_count = build_html(spotlight, top)
+
+    # Dynamic subject line: "Monday morning briefing — 15 new headlines from Zimbabwe"
+    today = datetime.now(timezone.utc)
+    day_label = DAY_GREETINGS.get(today.weekday(), today.strftime("%A"))
+    subject = f"{day_label} briefing \u2014 {total_count} new headlines from Zimbabwe"
+
+    print(f"  Subject: {subject}")
 
     print("Creating and sending campaign via Brevo...")
-    create_and_send_campaign(html)
+    create_and_send_campaign(html, subject)
 
     print("\nNewsletter sent successfully.")
 
