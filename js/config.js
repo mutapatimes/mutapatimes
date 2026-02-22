@@ -76,8 +76,8 @@ function inferCategory(title) {
   return "";
 }
 
-// Max age for spotlight articles (3 days — keeps stories fresh)
-var SPOTLIGHT_MAX_AGE_MS = 3 * 24 * 60 * 60 * 1000;
+// Max age for spotlight articles (30 days — reputable sources only)
+var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 
 // Zimbabwe cities for weather
 var WEATHER_CITIES = [
@@ -356,8 +356,15 @@ function loadSidebarStories() {
         if (completed === total) {
           clearTimeout(_sidebarTimeout);
           allArticles = deduplicateArticles(allArticles);
-          // Filter out old articles
-          allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
+          // Filter — Live on the Ground allows up to 2 years of local stories
+          allArticles = allArticles.filter(function(a) {
+            if (!a.publishedAt) return false;
+            try {
+              var d = new Date(a.publishedAt);
+              if (isNaN(d.getTime())) return false;
+              return (Date.now() - d.getTime()) < SIDEBAR_MAX_AGE_MS;
+            } catch (e) { return false; }
+          });
           // Sort sidebar by newest too for recency
           allArticles.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
@@ -402,8 +409,11 @@ function isLocalZimSource(source) {
   return false;
 }
 
-// Max age for headlines (14 days — tighter for recency)
+// Max age for main feed headlines (14 days — tighter for recency)
 var MAX_ARTICLE_AGE_MS = 14 * 24 * 60 * 60 * 1000;
+
+// Max age for Live on the Ground / sidebar (2 years — local stories stay relevant longer)
+var SIDEBAR_MAX_AGE_MS = 2 * 365 * 24 * 60 * 60 * 1000;
 
 function isRecentArticle(dateStr) {
   if (!dateStr) return false;
@@ -1224,6 +1234,8 @@ function renderSidebarStories(articles) {
     if (desc) link.append($('<p class="sidebar-desc">').text(desc));
 
     var meta = $('<p class="sidebar-meta">');
+    // All Live on the Ground articles tagged as LOCAL
+    meta.append($('<span class="press-marker local-press">').text("Local"));
     if (a.source) {
       meta.append($('<span>').text(a.source));
       if (isReputableSource(a.source)) {
@@ -1395,7 +1407,7 @@ function nearestZimCity(lat, lon) {
 function displayReaderLocation(loc) {
   var el = document.getElementById("reader-location");
   if (!el) return;
-  var text = 'Reading from <span class="notranslate">' + loc.city + ', ' + loc.country + '</span>';
+  var text = 'Reading from <span class="notranslate">' + loc.country + '</span>';
   if (loc.lat && loc.lon) {
     var nearest = nearestZimCity(loc.lat, loc.lon);
     if (nearest.dist > 100) {

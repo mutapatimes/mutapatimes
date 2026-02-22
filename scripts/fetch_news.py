@@ -314,14 +314,14 @@ def fetch_spotlight():
         if url in seen_urls:
             continue
         seen_urls.add(url)
-        # Drop articles older than spotlight max age (3 days — keeps stories fresh)
+        # Drop articles older than spotlight max age (30 days — reputable sources only)
         pub = a.get("publishedAt", "")
         if pub:
             try:
                 from datetime import datetime, timezone
                 dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
                 age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 3:
+                if age_days > 30:
                     continue
             except Exception:
                 pass
