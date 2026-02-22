@@ -736,37 +736,29 @@ function downloadBlob(blob, filename) {
 function generateShareImage(articleData) {
   var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
 
-  // Pre-load: article image (if available) with skyline fallback
-  var imgPromise = new Promise(function(resolve) {
-    var articleImg = null;
-    var skylineImg = null;
-
-    function tryArticleImage() {
-      if (articleData.image) {
-        articleImg = new Image();
-        articleImg.crossOrigin = 'anonymous';
-        articleImg.onload = function() { resolve({ article: articleImg, skyline: null }); };
-        articleImg.onerror = function() { loadSkyline(); };
-        articleImg.src = articleData.image;
-      } else {
-        loadSkyline();
-      }
+  // Pre-load: Harare skyline (always) + article image (if available)
+  var skylinePromise = new Promise(function(resolve) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() { resolve(img); };
+    img.onerror = function() { resolve(null); };
+    img.src = 'img/banner.png';
+  });
+  var articleImgPromise = new Promise(function(resolve) {
+    if (articleData.image) {
+      var img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = function() { resolve(img); };
+      img.onerror = function() { resolve(null); };
+      img.src = articleData.image;
+    } else {
+      resolve(null);
     }
-
-    function loadSkyline() {
-      skylineImg = new Image();
-      skylineImg.crossOrigin = 'anonymous';
-      skylineImg.onload = function() { resolve({ article: null, skyline: skylineImg }); };
-      skylineImg.onerror = function() { resolve({ article: null, skyline: null }); };
-      skylineImg.src = 'img/banner.png';
-    }
-
-    tryArticleImage();
   });
 
-  return Promise.all([fontsReady, imgPromise]).then(function(results) {
-    var images = results[1];
-    var heroImg = images.article || images.skyline;
+  return Promise.all([fontsReady, skylinePromise, articleImgPromise]).then(function(results) {
+    var skylineImg = results[1];
+    var articleImg = results[2];
 
     // Portrait format — tall card like Guardian/Semafor examples
     var W = 1080, H = 1350;
@@ -780,11 +772,10 @@ function generateShareImage(articleData) {
     ctx.fillStyle = '#1a1a1a';
     ctx.fillRect(0, 0, W, H);
 
-    // ─── Hero image at top (article image or Harare skyline) with gradient fade ───
-    var imgH = images.article ? 520 : 400;
-    if (heroImg) {
-      // Cover-fit the image into the top portion
-      var srcRatio = heroImg.naturalWidth / heroImg.naturalHeight;
+    // ─── Harare skyline at top with gradient fade ───
+    var imgH = 400;
+    if (skylineImg) {
+      var srcRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
       var drawW = W;
       var drawH = W / srcRatio;
       var drawY = 0;
@@ -793,20 +784,18 @@ function generateShareImage(articleData) {
         drawW = imgH * srcRatio;
       }
       var drawX = (W - drawW) / 2;
-      // Centre-crop vertically for article images
-      if (drawH > imgH) drawY = -(drawH - imgH) / 3;
-      ctx.drawImage(heroImg, drawX, drawY, drawW, drawH + Math.abs(drawY));
+      ctx.drawImage(skylineImg, drawX, drawY, drawW, drawH);
 
-      // Subtle dark overlay so masthead reads clearly
-      ctx.fillStyle = images.article ? 'rgba(26, 26, 26, 0.35)' : 'rgba(26, 26, 26, 0.25)';
+      // Warm overlay tint
+      ctx.fillStyle = 'rgba(26, 26, 26, 0.25)';
       ctx.fillRect(0, 0, W, imgH);
 
-      // Gradient fade from image into dark background
-      var grad = ctx.createLinearGradient(0, imgH - 180, 0, imgH);
+      // Gradient fade into dark background
+      var grad = ctx.createLinearGradient(0, imgH - 160, 0, imgH);
       grad.addColorStop(0, 'rgba(26, 26, 26, 0)');
       grad.addColorStop(1, '#1a1a1a');
       ctx.fillStyle = grad;
-      ctx.fillRect(0, imgH - 180, W, 180);
+      ctx.fillRect(0, imgH - 160, W, 160);
     }
 
     // ─── Masthead: "THE MUTAPA TIMES" — big, top-left over the image ───
@@ -856,10 +845,45 @@ function generateShareImage(articleData) {
       y += 36;
     }
 
+    // ─── Article image (from GNews) ───
+    if (articleImg) {
+      var artImgW = contentWidth;
+      var artImgH = Math.round(artImgW * 0.52); // ~16:8.3 wide ratio
+      var maxImgH = H - y - 220; // leave room for footer
+      if (artImgH > maxImgH) artImgH = maxImgH;
+      if (artImgH > 100) {
+        // Draw with rounded corners
+        var r = 8;
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(pad + r, y);
+        ctx.lineTo(pad + artImgW - r, y);
+        ctx.quadraticCurveTo(pad + artImgW, y, pad + artImgW, y + r);
+        ctx.lineTo(pad + artImgW, y + artImgH - r);
+        ctx.quadraticCurveTo(pad + artImgW, y + artImgH, pad + artImgW - r, y + artImgH);
+        ctx.lineTo(pad + r, y + artImgH);
+        ctx.quadraticCurveTo(pad, y + artImgH, pad, y + artImgH - r);
+        ctx.lineTo(pad, y + r);
+        ctx.quadraticCurveTo(pad, y, pad + r, y);
+        ctx.closePath();
+        ctx.clip();
+        // Cover-fit the image
+        var aRatio = articleImg.naturalWidth / articleImg.naturalHeight;
+        var adW = artImgW, adH = artImgW / aRatio;
+        if (adH < artImgH) { adH = artImgH; adW = artImgH * aRatio; }
+        var adX = pad + (artImgW - adW) / 2;
+        var adY = y + (artImgH - adH) / 2;
+        ctx.drawImage(articleImg, adX, adY, adW, adH);
+        ctx.restore();
+        y += artImgH + 20;
+      }
+    }
+
     // ─── Description snippet ───
     if (articleData.description) {
       ctx.font = '400 20px "Helvetica Neue", Arial, sans-serif';
       ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      ctx.textBaseline = 'top';
       var desc = articleData.description;
       if (desc.length > 180) desc = desc.substring(0, 180) + '...';
       shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, H - 200);
