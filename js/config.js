@@ -735,103 +735,158 @@ function downloadBlob(blob, filename) {
 
 function generateShareImage(articleData) {
   var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
-  return fontsReady.then(function() {
-    var W = 1200, H = 675;
+
+  // Pre-load the Harare skyline image
+  var imgPromise = new Promise(function(resolve) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() { resolve(img); };
+    img.onerror = function() { resolve(null); };
+    img.src = 'img/banner.png';
+  });
+
+  return Promise.all([fontsReady, imgPromise]).then(function(results) {
+    var skylineImg = results[1];
+
+    // Portrait format — tall card like Guardian/Semafor examples
+    var W = 1080, H = 1350;
     var canvas = document.createElement('canvas');
     canvas.width = W;
     canvas.height = H;
     var ctx = canvas.getContext('2d');
+    var pad = 64;
 
-    // Background
-    ctx.fillStyle = '#ffffff';
+    // ─── Full background: dark charcoal ───
+    ctx.fillStyle = '#1a1a1a';
     ctx.fillRect(0, 0, W, H);
 
-    // Header strip
-    var headerH = 56;
-    ctx.fillStyle = '#1a1a1a';
-    ctx.fillRect(0, 0, W, headerH);
+    // ─── Harare skyline image at top with gradient fade ───
+    var imgH = 400;
+    if (skylineImg) {
+      // Draw the skyline image covering the top portion
+      var srcRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
+      var drawW = W;
+      var drawH = W / srcRatio;
+      var drawY = 0;
+      if (drawH < imgH) {
+        drawH = imgH;
+        drawW = imgH * srcRatio;
+      }
+      var drawX = (W - drawW) / 2;
+      ctx.drawImage(skylineImg, drawX, drawY, drawW, drawH);
 
-    // Gold accent line
-    ctx.fillStyle = '#c8a96e';
-    ctx.fillRect(0, headerH, W, 3);
+      // Warm overlay tint on skyline
+      ctx.fillStyle = 'rgba(26, 26, 26, 0.25)';
+      ctx.fillRect(0, 0, W, imgH);
 
-    // Masthead text
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '700 20px "Playfair Display", Georgia, serif';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('THE MUTAPA TIMES', 48, headerH / 2);
+      // Gradient fade from image into dark background
+      var grad = ctx.createLinearGradient(0, imgH - 160, 0, imgH);
+      grad.addColorStop(0, 'rgba(26, 26, 26, 0)');
+      grad.addColorStop(1, '#1a1a1a');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, imgH - 160, W, 160);
+    }
 
-    // Tagline right-aligned
-    ctx.font = '400 13px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.5)';
-    var tagline = 'Zimbabwe outside-in.';
-    var tagW = ctx.measureText(tagline).width;
-    ctx.fillText(tagline, W - 48 - tagW, headerH / 2);
-
-    // Content area
-    var contentLeft = 48;
-    var contentWidth = W - 96;
-    var y = headerH + 3 + 40;
+    // ─── Masthead: "THE MUTAPA TIMES" — big, top-left over the image ───
     ctx.textBaseline = 'top';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 52px "Playfair Display", Georgia, serif';
+    ctx.fillText('THE MUTAPA TIMES', pad, 48);
 
-    // Category / Local-Foreign pills
-    var pillX = contentLeft;
+    // Gold accent line under masthead
+    ctx.fillStyle = '#c8a96e';
+    ctx.fillRect(pad, 116, 80, 3);
+
+    // ─── Category / Local-Foreign pill ───
+    var y = imgH + 16;
+    var pillX = pad;
     if (articleData.isLocal) {
       pillX += shareCardDrawPill(ctx, pillX, y, 'LOCAL', '#00897b', '#ffffff');
     } else if (articleData.source) {
-      pillX += shareCardDrawPill(ctx, pillX, y, 'FOREIGN', '#6b6b6b', '#ffffff');
+      pillX += shareCardDrawPill(ctx, pillX, y, 'FOREIGN', 'rgba(255,255,255,0.15)', 'rgba(255,255,255,0.7)');
     }
     if (articleData.category) {
       shareCardDrawPill(ctx, pillX, y, articleData.category.toUpperCase(), '#1a5632', '#ffffff');
     }
     if (articleData.isLocal || articleData.source || articleData.category) {
-      y += 36;
+      y += 40;
     }
 
-    // Headline — dynamic font size
+    // ─── Headline — large, white, serif ───
+    var contentWidth = W - pad * 2;
     var titleLen = (articleData.title || '').length;
-    var headlineSize = titleLen > 100 ? 32 : (titleLen > 70 ? 36 : (titleLen > 45 ? 40 : 46));
-    var headlineLineH = Math.round(headlineSize * 1.3);
+    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 42 : (titleLen > 50 ? 48 : 54));
+    var headlineLineH = Math.round(headlineSize * 1.35);
     ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
-    ctx.fillStyle = '#1a1a1a';
-    y = shareCardWrapText(ctx, articleData.title || '', contentLeft, y, contentWidth, headlineLineH, H - 120, 4);
-    y += 12;
+    ctx.fillStyle = '#ffffff';
+    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 280, 5);
+    y += 20;
 
-    // Source + date meta
-    ctx.font = '600 15px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = '#6b6b6b';
+    // ─── Source + date line ───
+    ctx.font = '500 18px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = '#c8a96e';
     var metaParts = [];
     if (articleData.source) metaParts.push(articleData.source);
     var pubDate = formatDate(articleData.publishedAt);
     if (pubDate) metaParts.push(pubDate);
     if (metaParts.length) {
-      ctx.fillText(metaParts.join('  \u00b7  '), contentLeft, y);
-      y += 30;
+      ctx.fillText(metaParts.join('  \u00b7  '), pad, y);
+      y += 36;
     }
 
-    // Description
+    // ─── Description snippet ───
     if (articleData.description) {
-      ctx.font = '400 17px "Helvetica Neue", Arial, sans-serif';
-      ctx.fillStyle = '#444444';
+      ctx.font = '400 20px "Helvetica Neue", Arial, sans-serif';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
       var desc = articleData.description;
-      if (desc.length > 200) desc = desc.substring(0, 200) + '...';
-      shareCardWrapText(ctx, desc, contentLeft, y, contentWidth, 26, H - 60);
+      if (desc.length > 180) desc = desc.substring(0, 180) + '...';
+      shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, H - 200);
     }
 
-    // Footer strip
-    var footerH = 44;
-    ctx.fillStyle = '#1a5632';
-    ctx.fillRect(0, H - footerH, W, footerH);
+    // ─── Footer area: CTA + branding ───
+    var footerY = H - 140;
 
-    // Footer text
-    ctx.font = '600 13px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    // Subtle separator line
+    ctx.fillStyle = 'rgba(200, 169, 110, 0.3)';
+    ctx.fillRect(pad, footerY, contentWidth, 1);
+    footerY += 28;
+
+    // Domain
+    ctx.font = '700 22px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = '#ffffff';
+    ctx.textBaseline = 'top';
+    ctx.fillText('mutapatimes.com', pad, footerY);
+
+    // "Sign up for free" CTA pill
+    var ctaText = 'Sign up for free';
+    ctx.font = '700 16px "Helvetica Neue", Arial, sans-serif';
+    var ctaW = ctx.measureText(ctaText).width + 32;
+    var ctaH = 36;
+    var ctaX = W - pad - ctaW;
+    var ctaY = footerY - 4;
+    var ctaR = 18;
+    ctx.fillStyle = '#c8a96e';
+    ctx.beginPath();
+    ctx.moveTo(ctaX + ctaR, ctaY);
+    ctx.lineTo(ctaX + ctaW - ctaR, ctaY);
+    ctx.quadraticCurveTo(ctaX + ctaW, ctaY, ctaX + ctaW, ctaY + ctaR);
+    ctx.lineTo(ctaX + ctaW, ctaY + ctaH - ctaR);
+    ctx.quadraticCurveTo(ctaX + ctaW, ctaY + ctaH, ctaX + ctaW - ctaR, ctaY + ctaH);
+    ctx.lineTo(ctaX + ctaR, ctaY + ctaH);
+    ctx.quadraticCurveTo(ctaX, ctaY + ctaH, ctaX, ctaY + ctaH - ctaR);
+    ctx.lineTo(ctaX, ctaY + ctaR);
+    ctx.quadraticCurveTo(ctaX, ctaY, ctaX + ctaR, ctaY);
+    ctx.closePath();
+    ctx.fill();
+    ctx.fillStyle = '#1a1a1a';
     ctx.textBaseline = 'middle';
-    ctx.fillText('mutapatimes.com', 48, H - footerH / 2);
+    ctx.fillText(ctaText, ctaX + 16, ctaY + ctaH / 2 + 1);
 
-    var footerRight = 'Zimbabwe news, outside-in';
-    var frW = ctx.measureText(footerRight).width;
-    ctx.fillText(footerRight, W - 48 - frW, H - footerH / 2);
+    // Tagline below
+    ctx.textBaseline = 'top';
+    ctx.font = '400 16px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.4)';
+    ctx.fillText('Zimbabwe news, outside-in', pad, footerY + 40);
 
     // Convert to blob
     return new Promise(function(resolve) {
