@@ -102,15 +102,45 @@ def parse_rss_feed(xml_bytes):
     return articles
 
 
+def normalize_title(title):
+    """Lowercase, strip punctuation/whitespace for comparison."""
+    t = title.lower().strip()
+    t = re.sub(r"[^\w\s]", "", t)          # strip punctuation
+    t = re.sub(r"\s+", " ", t).strip()      # collapse whitespace
+    return t
+
+
+def titles_are_similar(t1, t2, threshold=0.65):
+    """Check if two titles are about the same story using word overlap (Jaccard)."""
+    w1 = set(normalize_title(t1).split())
+    w2 = set(normalize_title(t2).split())
+    if not w1 or not w2:
+        return False
+    # Also catch substring matches (wire stories with minor edits)
+    n1, n2 = normalize_title(t1), normalize_title(t2)
+    if n1 in n2 or n2 in n1:
+        return True
+    intersection = w1 & w2
+    union = w1 | w2
+    return len(intersection) / len(union) >= threshold
+
+
 def deduplicate(articles, limit=10):
-    """Deduplicate by URL, sort by date descending, return top N."""
-    seen = set()
+    """Deduplicate by URL AND title similarity, sort by date descending, return top N."""
+    seen_urls = set()
     unique = []
     for a in articles:
         url = a.get("url", "")
-        if url and url not in seen:
-            seen.add(url)
-            unique.append(a)
+        title = a.get("title", "")
+        # Skip exact URL dupes
+        if url and url in seen_urls:
+            continue
+        # Skip if a very similar headline already accepted
+        if title and any(titles_are_similar(title, u.get("title", "")) for u in unique):
+            continue
+        if url:
+            seen_urls.add(url)
+        unique.append(a)
     unique.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
     return unique[:limit]
 
@@ -331,12 +361,16 @@ def fetch_spotlight():
         except (json.JSONDecodeError, IOError):
             existing = []
 
-    # Merge: new articles first, then existing ones (deduped by URL)
+    # Merge: new articles first, then existing ones (deduped by URL + title similarity)
     seen_urls = set()
     merged = []
     for a in new_articles + existing:
         url = a.get("url", "")
+        title = a.get("title", "")
         if url in seen_urls:
+            continue
+        # Skip if a very similar headline already accepted (same story, different outlet)
+        if title and any(titles_are_similar(title, m.get("title", "")) for m in merged):
             continue
         seen_urls.add(url)
         # Drop articles older than spotlight max age (30 days — reputable sources only)
@@ -365,7 +399,14 @@ def fetch_spotlight():
         "sunday times",
     ]
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
-    others_merged = [a for a in merged if a not in reputable_merged]
+    # Others: exclude stories already covered by reputable sources
+    others_merged = []
+    for a in merged:
+        if a in reputable_merged:
+            continue
+        if any(titles_are_similar(a.get("title", ""), r.get("title", "")) for r in reputable_merged):
+            continue
+        others_merged.append(a)
 
     # Log what passed vs what was filtered out
     print(f"  Reputable matches: {len(reputable_merged)}, Non-reputable filtered out: {len(others_merged)}")
