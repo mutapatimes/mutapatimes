@@ -129,6 +129,10 @@ def post_tweet(text):
             print("    Rate limited. Stopping run.")
             return False, {"rate_limited": True}
         if e.code == 403:
+            if "oauth1" in body.lower() and "permission" in body.lower():
+                print("    App permissions error — Access Token needs Read+Write.")
+                print("    Regenerate token after enabling Write in app settings.")
+                return False, {"rate_limited": True}  # abort run
             print("    Forbidden (possibly duplicate). Skipping.")
             return False, {"forbidden": True}
         return False, {"error": e.code}
