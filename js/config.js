@@ -60,16 +60,22 @@ function isReputableSource(source) {
 }
 
 // Infer article category from headline keywords
+// Primary categories (business, politics, policy, tech) listed first — editorial focus
 var CATEGORY_RULES = [
-  { tag: "Business", words: ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve"] },
+  { tag: "Business", words: ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve", "industry", "commerce", "entrepreneur"] },
+  { tag: "Politics", words: ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "senator", "cabinet", "coalition"] },
+  { tag: "Policy", words: ["policy", "regulation", "reform", "legislation", "bill", "amendment", "sanctions", "sadc", "african union", "treaty", "compliance", "governance", "mandate", "directive", "statutory"] },
+  { tag: "Tech", words: ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash", "fintech", "innovation"] },
+  { tag: "Health", words: ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"] },
   { tag: "Crime", words: ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"] },
   { tag: "Sport", words: ["cricket", "football", "soccer", "rugby", "match", "score", "championship", "tournament", "athlete", "stadium", "coach", "team", "league", "olympic", "fifa", "icc", "qualifier", "wicket", "goal"] },
-  { tag: "Health", words: ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"] },
-  { tag: "Tech", words: ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash"] },
   { tag: "Culture", words: ["music", "film", "artist", "culture", "festival", "concert", "album", "entertainment", "award", "celebrity", "dance", "theatre", "theater"] },
   { tag: "Environment", words: ["climate", "drought", "flood", "wildlife", "conservation", "environment", "cyclone", "rainfall", "dam", "water crisis", "deforestation", "national park", "safari", "poach"] },
   { tag: "Education", words: ["school", "university", "student", "teacher", "education", "exam", "graduate", "scholarship", "literacy"] }
 ];
+
+// Primary categories — editorial focus areas for the business & intelligence service
+var PRIMARY_CATEGORIES = ["Business", "Politics", "Policy", "Tech"];
 
 function inferCategory(title) {
   if (!title) return "";
@@ -223,8 +229,10 @@ function formatDate(dateStr) {
     if (isNaN(d.getTime())) return "";
     var now = new Date();
     var diffMs = now - d;
+    var diffMins = Math.floor(diffMs / (1000 * 60));
     var diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
-    if (diffHrs < 1) return "Just now";
+    if (diffMins < 5) return "Just now";
+    if (diffMins < 60) return diffMins + "m ago";
     if (diffHrs < 24) return diffHrs + "h ago";
     var diffDays = Math.floor(diffHrs / 24);
     if (diffDays === 1) return "Yesterday";
@@ -234,6 +242,15 @@ function formatDate(dateStr) {
   } catch (e) {
     return "";
   }
+}
+
+function isBreakingRecent(dateStr) {
+  if (!dateStr) return false;
+  try {
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return false;
+    return (Date.now() - d.getTime()) < 60 * 60 * 1000; // < 1 hour
+  } catch (e) { return false; }
 }
 
 // ============================================================
@@ -310,9 +327,10 @@ function loadMainStories() {
         completed++;
         if (completed === total) {
           clearTimeout(_mainTimeout);
-          // All feeds loaded — deduplicate, filter, sort
+          // All feeds loaded — deduplicate, filter by date, remove topic dupes, sort
           allArticles = deduplicateArticles(allArticles);
           allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
+          allArticles = deduplicateByTopic(allArticles, 0.4);
           allArticles.sort(function(a, b) {
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
@@ -419,8 +437,8 @@ function isLocalZimSource(source) {
 // Max age for main feed headlines (14 days — tighter for recency)
 var MAX_ARTICLE_AGE_MS = 14 * 24 * 60 * 60 * 1000;
 
-// Max age for Live on the Ground / sidebar (2 years — local stories stay relevant longer)
-var SIDEBAR_MAX_AGE_MS = 2 * 365 * 24 * 60 * 60 * 1000;
+// Max age for Live on the Ground / sidebar (14 days — keep content fresh)
+var SIDEBAR_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000;
 
 function isRecentArticle(dateStr) {
   if (!dateStr) return false;
@@ -428,7 +446,7 @@ function isRecentArticle(dateStr) {
     var d = new Date(dateStr);
     if (isNaN(d.getTime())) return false;
     // Hard floor: nothing before 2025
-    if (d.getFullYear() < 2025) return false;
+    if (d.getFullYear() < 2025) return false; // hard floor — no archival content
     return (Date.now() - d.getTime()) < MAX_ARTICLE_AGE_MS;
   } catch (e) {
     return false;
@@ -666,32 +684,43 @@ function createWhatsAppBtn(title, url) {
 // ============================================================
 
 function shareCardWrapText(ctx, text, x, y, maxWidth, lineHeight, maxY, maxLines) {
-  var words = text.split(' ');
-  var line = '';
+  // Handle explicit line breaks first, then word-wrap each paragraph
+  var paragraphs = text.replace(/\r\n/g, '\n').split('\n');
   var lines = 0;
   maxLines = maxLines || 99;
-  for (var i = 0; i < words.length; i++) {
-    var test = line + (line ? ' ' : '') + words[i];
-    if (ctx.measureText(test).width > maxWidth && line) {
-      lines++;
-      if (maxY && y + lineHeight > maxY) {
-        ctx.fillText(line.replace(/\s+$/, '') + '...', x, y);
-        return y + lineHeight;
-      }
-      if (lines >= maxLines) {
-        ctx.fillText(line.replace(/\s+$/, '') + '...', x, y);
-        return y + lineHeight;
-      }
-      ctx.fillText(line, x, y);
-      line = words[i];
-      y += lineHeight;
-    } else {
-      line = test;
+
+  for (var p = 0; p < paragraphs.length; p++) {
+    var words = paragraphs[p].split(' ').filter(function(w) { return w.length > 0; });
+    if (words.length === 0) {
+      // Empty line — add half-height spacing
+      y += Math.round(lineHeight * 0.6);
+      continue;
     }
-  }
-  if (line) {
-    ctx.fillText(line, x, y);
-    y += lineHeight;
+    var line = '';
+    for (var i = 0; i < words.length; i++) {
+      var test = line + (line ? ' ' : '') + words[i];
+      if (ctx.measureText(test).width > maxWidth && line) {
+        lines++;
+        if (maxY && y + lineHeight > maxY) {
+          ctx.fillText(line.replace(/\s+$/, '') + '\u2026', x, y);
+          return y + lineHeight;
+        }
+        if (lines >= maxLines) {
+          ctx.fillText(line.replace(/\s+$/, '') + '\u2026', x, y);
+          return y + lineHeight;
+        }
+        ctx.fillText(line, x, y);
+        line = words[i];
+        y += lineHeight;
+      } else {
+        line = test;
+      }
+    }
+    if (line) {
+      ctx.fillText(line, x, y);
+      y += lineHeight;
+      lines++;
+    }
   }
   return y;
 }
@@ -809,7 +838,8 @@ function generateShareImage(articleData) {
     ctx.fillRect(pad, 116, 80, 3);
 
     // ─── Category / Local-Foreign pill ───
-    var y = imgH + 16;
+    var y = imgH + 24;
+    var contentWidth = W - pad * 2;
     var pillX = pad;
     if (articleData.isLocal) {
       pillX += shareCardDrawPill(ctx, pillX, y, 'LOCAL', '#00897b', '#ffffff');
@@ -820,18 +850,17 @@ function generateShareImage(articleData) {
       shareCardDrawPill(ctx, pillX, y, articleData.category.toUpperCase(), '#1a5632', '#ffffff');
     }
     if (articleData.isLocal || articleData.source || articleData.category) {
-      y += 40;
+      y += 44;
     }
 
     // ─── Headline — large, white, serif ───
-    var contentWidth = W - pad * 2;
     var titleLen = (articleData.title || '').length;
-    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 42 : (titleLen > 50 ? 48 : 54));
-    var headlineLineH = Math.round(headlineSize * 1.35);
+    var headlineSize = titleLen > 120 ? 36 : (titleLen > 80 ? 40 : (titleLen > 50 ? 46 : 52));
+    var headlineLineH = Math.round(headlineSize * 1.4);
     ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
     ctx.fillStyle = '#ffffff';
-    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 280, 5);
-    y += 20;
+    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 300, 5);
+    y += 24;
 
     // ─── Source + date line ───
     ctx.font = '500 18px "Helvetica Neue", Arial, sans-serif';
@@ -842,17 +871,16 @@ function generateShareImage(articleData) {
     if (pubDate) metaParts.push(pubDate);
     if (metaParts.length) {
       ctx.fillText(metaParts.join('  \u00b7  '), pad, y);
-      y += 36;
+      y += 40;
     }
 
     // ─── Article image (from GNews) ───
     if (articleImg) {
       var artImgW = contentWidth;
-      var artImgH = Math.round(artImgW * 0.52); // ~16:8.3 wide ratio
-      var maxImgH = H - y - 220; // leave room for footer
+      var artImgH = Math.round(artImgW * 0.52);
+      var maxImgH = H - y - 240; // leave room for footer
       if (artImgH > maxImgH) artImgH = maxImgH;
       if (artImgH > 100) {
-        // Draw with rounded corners
         var r = 8;
         ctx.save();
         ctx.beginPath();
@@ -867,7 +895,6 @@ function generateShareImage(articleData) {
         ctx.quadraticCurveTo(pad, y, pad + r, y);
         ctx.closePath();
         ctx.clip();
-        // Cover-fit the image
         var aRatio = articleImg.naturalWidth / articleImg.naturalHeight;
         var adW = artImgW, adH = artImgW / aRatio;
         if (adH < artImgH) { adH = artImgH; adW = artImgH * aRatio; }
@@ -875,27 +902,26 @@ function generateShareImage(articleData) {
         var adY = y + (artImgH - adH) / 2;
         ctx.drawImage(articleImg, adX, adY, adW, adH);
         ctx.restore();
-        y += artImgH + 20;
+        y += artImgH + 24;
       }
     }
 
     // ─── Description snippet ───
-    if (articleData.description) {
+    var footerY = H - 150;
+    if (articleData.description && y < footerY - 60) {
       ctx.font = '400 20px "Helvetica Neue", Arial, sans-serif';
       ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
       ctx.textBaseline = 'top';
       var desc = articleData.description;
-      if (desc.length > 180) desc = desc.substring(0, 180) + '...';
-      shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, H - 200);
+      if (desc.length > 180) desc = desc.substring(0, 177) + '...';
+      y = shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, footerY - 20, 3);
     }
 
     // ─── Footer area: CTA + branding ───
-    var footerY = H - 140;
-
     // Subtle separator line
     ctx.fillStyle = 'rgba(200, 169, 110, 0.3)';
     ctx.fillRect(pad, footerY, contentWidth, 1);
-    footerY += 28;
+    footerY += 30;
 
     // Domain
     ctx.font = '700 22px "Helvetica Neue", Arial, sans-serif';
@@ -928,11 +954,11 @@ function generateShareImage(articleData) {
     ctx.textBaseline = 'middle';
     ctx.fillText(ctaText, ctaX + 16, ctaY + ctaH / 2 + 1);
 
-    // Tagline below
+    // Tagline below — with breathing room
     ctx.textBaseline = 'top';
     ctx.font = '400 16px "Helvetica Neue", Arial, sans-serif';
     ctx.fillStyle = 'rgba(255,255,255,0.4)';
-    ctx.fillText('Zimbabwe news, outside-in', pad, footerY + 40);
+    ctx.fillText('Business & intelligence \u2014 Zimbabwe, outside-in', pad, footerY + 44);
 
     // Convert to blob
     return new Promise(function(resolve) {
@@ -1015,7 +1041,7 @@ function renderMainStories(articles) {
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
-    var isJustNow = (pubDate === "Just now");
+    var isJustNow = isBreakingRecent(a.publishedAt);
 
     var card = $('<article class="main-article">');
     if (rank === 1) card.addClass("rank-featured");
@@ -1059,7 +1085,7 @@ function renderMainStories(articles) {
       tagRow.append($('<span class="category-tag">').text(category));
     }
     if (isJustNow) {
-      tagRow.append($('<span class="just-now-badge">').text("Just in"));
+      tagRow.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
     }
     var desc = a.description;
     if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
@@ -1219,7 +1245,7 @@ function loadSpotlightFromRSS() {
             try {
               var d = new Date(a.publishedAt);
               if (isNaN(d.getTime())) return false;
-              if (d.getFullYear() < 2025) return false;
+              if (d.getFullYear() < 2025) return false; // hard floor — no archival content
               return (Date.now() - d.getTime()) < SPOTLIGHT_MAX_AGE_MS;
             } catch (e) { return false; }
           });
@@ -1404,6 +1430,7 @@ function renderSidebarStories(articles) {
   for (var i = 0; i < filtered.length && i < 20; i++) {
     var a = filtered[i];
     var pubDate = formatDate(a.publishedAt);
+    var sidebarJustNow = isBreakingRecent(a.publishedAt);
 
     var item = $('<article class="sidebar-item">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
@@ -1417,6 +1444,9 @@ function renderSidebarStories(articles) {
     var meta = $('<p class="sidebar-meta">');
     // All Live on the Ground articles tagged as LOCAL
     meta.append($('<span class="press-marker local-press">').text("Local"));
+    if (sidebarJustNow) {
+      meta.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
+    }
     if (a.source) {
       meta.append($('<span>').text(a.source));
       if (isReputableSource(a.source)) {
