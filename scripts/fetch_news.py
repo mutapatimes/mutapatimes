@@ -249,31 +249,44 @@ def fetch_spotlight():
 
     # Reputable source domains to filter for
     reputable_domains = [
+        # Major international
         "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
         "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
         "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
         "news.sky.com", "telegraph.co.uk", "independent.co.uk",
-        "france24.com", "dw.com",
+        "france24.com", "dw.com", "npr.org", "pbs.org", "abcnews.go.com",
+        "time.com", "foreignpolicy.com", "theconversation.com",
+        # International with Africa desks
+        "voanews.com", "rfi.fr", "africanews.com",
+        # Reputable African outlets
         "allafrica.com", "dailymaverick.co.za", "mg.co.za",
-        "news24.com", "theeastafrican.co.ke",
+        "news24.com", "theeastafrican.co.ke", "sabc.co.za",
+        "nation.africa", "citizen.co.za", "ewn.co.za",
+        "iol.co.za", "timeslive.co.za",
     ]
 
-    # Fetch 20 to cast a wide net, then filter to reputable sources
-    url = (
-        "https://gnews.io/api/v4/search?q=Zimbabwe&lang=en&max=20"
-        f"&apikey={GNEWS_API_KEY}"
-    )
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"  FAIL: GNews API error: {e}")
-        return
+    # Multiple queries to cast a wider net for reputable sources
+    queries = [
+        "Zimbabwe",
+        "Zimbabwe OR %22Southern Africa%22 OR SADC",
+    ]
+    articles = []
+    for q in queries:
+        url = (
+            f"https://gnews.io/api/v4/search?q={q}&lang=en&max=20"
+            f"&apikey={GNEWS_API_KEY}"
+        )
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            articles.extend(data.get("articles", []))
+            print(f"  Fetched {len(data.get('articles', []))} articles for query: {q}")
+        except Exception as e:
+            print(f"  WARN: GNews query '{q}' failed: {e}")
 
-    articles = data.get("articles", [])
     if not articles:
-        print("  FAIL: no articles returned")
+        print("  FAIL: no articles returned from any query")
         return
 
     # Build new candidates — prefer reputable sources, then any source
@@ -329,7 +342,16 @@ def fetch_spotlight():
 
     # Sort by date (newest first), prefer reputable sources only
     merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
-    reputable_kw = ["bbc", "reuters", "nytimes", "guardian", "al jazeera", "bloomberg", "ap news", "associated press", "financial times", "economist", "cnn", "washington post", "sky news", "france 24", "allafrica", "daily maverick", "news24", "the east african"]
+    reputable_kw = [
+        "bbc", "reuters", "nytimes", "new york times", "guardian", "al jazeera",
+        "bloomberg", "ap news", "associated press", "financial times", "economist",
+        "cnn", "washington post", "sky news", "france 24", "dw", "deutsche welle",
+        "npr", "pbs", "abc news", "time magazine", "foreign policy", "the conversation",
+        "voa", "voice of america", "rfi", "africanews",
+        "allafrica", "daily maverick", "mail & guardian", "news24", "the east african",
+        "sabc", "nation africa", "the citizen", "eyewitness news", "iol", "timeslive",
+        "sunday times",
+    ]
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
     others_merged = [a for a in merged if a not in reputable_merged]
     # Reputable sources only — no fallback to unvetted sources
