@@ -266,9 +266,11 @@ def fetch_spotlight():
     ]
 
     # Multiple queries to cast a wider net for reputable sources
+    # Note: queries are already URL-safe — use urllib.parse.quote for special chars
+    import urllib.parse
     queries = [
         "Zimbabwe",
-        "Zimbabwe OR %22Southern Africa%22 OR SADC",
+        urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
     ]
     articles = []
     for q in queries:
@@ -280,14 +282,24 @@ def fetch_spotlight():
             req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
             with urllib.request.urlopen(req, timeout=15) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
-            articles.extend(data.get("articles", []))
-            print(f"  Fetched {len(data.get('articles', []))} articles for query: {q}")
+            batch = data.get("articles", [])
+            articles.extend(batch)
+            print(f"  Fetched {len(batch)} articles for query: {q}")
         except Exception as e:
             print(f"  WARN: GNews query '{q}' failed: {e}")
 
     if not articles:
         print("  FAIL: no articles returned from any query")
         return
+
+    # --- Log all raw headlines for audit ---
+    print(f"\n  --- All {len(articles)} raw headlines from GNews ---")
+    for i, a in enumerate(articles):
+        src = a.get("source", {}).get("name", "?")
+        src_url = a.get("source", {}).get("url", "")
+        title = a.get("title", "")[:100]
+        print(f"  [{i+1:2d}] {src:<30s} | {title}")
+    print("  ---\n")
 
     # Build new candidates — prefer reputable sources, then any source
     reputable = []
@@ -354,11 +366,21 @@ def fetch_spotlight():
     ]
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
     others_merged = [a for a in merged if a not in reputable_merged]
+
+    # Log what passed vs what was filtered out
+    print(f"  Reputable matches: {len(reputable_merged)}, Non-reputable filtered out: {len(others_merged)}")
+    for a in reputable_merged:
+        print(f"    PASS: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
+    for a in others_merged[:5]:
+        print(f"    SKIP: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
+    if len(others_merged) > 5:
+        print(f"    ... and {len(others_merged) - 5} more non-reputable skipped")
+
     # Reputable sources only — no fallback to unvetted sources
     spotlight = reputable_merged[:3]
 
     if not spotlight:
-        print("  WARN: no articles found in results")
+        print("  WARN: no reputable articles found — spotlight will be empty")
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight}, f)
