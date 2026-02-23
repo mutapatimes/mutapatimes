@@ -14,6 +14,8 @@ var _allMainArticles = [];
 var _allSidebarArticles = [];
 var _gnewsMoreArticles = [];
 var _activeCategory = "all";
+var _currentPage = 1;
+var ARTICLES_PER_PAGE = 20;
 
 // Multiple RSS feeds to pull from — broad, less selective, prioritizing recency
 var MAIN_RSS_FEEDS = [
@@ -312,19 +314,19 @@ function fetchNews() {
 }
 
 function filterByCategory(category) {
-  var mainFiltered = _allMainArticles;
-  var sidebarFiltered = _allSidebarArticles;
+  _currentPage = 1;
+  renderMainStories(_allMainArticles);
 
-  if (category !== "all") {
-    mainFiltered = _allMainArticles.filter(function(a) {
-      return inferCategory(a.title) === category;
-    });
+  var sidebarFiltered = _allSidebarArticles;
+  if (category === "_verified") {
+    sidebarFiltered = _allSidebarArticles.filter(function(a) { return isReputableSource(a.source); });
+  } else if (category === "_local") {
+    sidebarFiltered = _allSidebarArticles.filter(function(a) { return a.isLocal || isLocalZimSource(a.source); });
+  } else if (category !== "all") {
     sidebarFiltered = _allSidebarArticles.filter(function(a) {
       return inferCategory(a.title) === category;
     });
   }
-
-  renderMainStories(mainFiltered);
   renderSidebarStories(sidebarFiltered);
 }
 
@@ -343,6 +345,8 @@ function loadMainStories() {
   var allArticles = [];
   var completed = 0;
   var total = MAIN_RSS_FEEDS.length;
+  var archiveLoaded = false;
+  var rssComplete = false;
 
   var _mainTimeout = setTimeout(function() {
     if (document.querySelector('#main-stories .loading-msg')) {
@@ -351,6 +355,58 @@ function loadMainStories() {
     }
   }, 15000);
 
+  function finalizeMainStories() {
+    if (!rssComplete || !archiveLoaded) return;
+    clearTimeout(_mainTimeout);
+    allArticles = deduplicateArticles(allArticles);
+    allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
+    allArticles = deduplicateByTopic(allArticles, 0.4);
+    allArticles.sort(function(a, b) {
+      var aVerified = isReputableSource(a.source) ? 1 : 0;
+      var bVerified = isReputableSource(b.source) ? 1 : 0;
+      if (bVerified !== aVerified) return bVerified - aVerified;
+      var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+      var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+      return dateB - dateA;
+    });
+    setCache(cacheKey, allArticles);
+    _allMainArticles = allArticles;
+    _currentPage = 1;
+    renderMainStories(allArticles);
+  }
+
+  // Load archived articles from data/archive.json
+  $.ajax({
+    type: "GET",
+    url: MUTAPA_CONFIG.DATA_PATH + "archive.json",
+    dataType: "json",
+    success: function(data) {
+      if (data && data.articles) {
+        var archived = data.articles.map(function(a) {
+          // Normalize source format (archive may store {name:...} objects)
+          var srcName = a.source;
+          if (typeof a.source === 'object' && a.source !== null) {
+            srcName = a.source.name || '';
+          }
+          return {
+            title: a.title || '',
+            url: a.url || '',
+            description: a.description || '',
+            publishedAt: a.publishedAt || '',
+            source: srcName,
+            isLocal: false
+          };
+        });
+        allArticles = allArticles.concat(archived);
+      }
+    },
+    complete: function() {
+      archiveLoaded = true;
+      finalizeMainStories();
+    }
+  });
+
+  // Load live RSS feeds in parallel
   MAIN_RSS_FEEDS.forEach(function(rssUrl) {
     $.ajax({
       type: "GET",
@@ -364,22 +420,8 @@ function loadMainStories() {
       complete: function() {
         completed++;
         if (completed === total) {
-          clearTimeout(_mainTimeout);
-          // All feeds loaded — deduplicate, filter by date, remove topic dupes, sort
-          allArticles = deduplicateArticles(allArticles);
-          allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
-          allArticles = deduplicateByTopic(allArticles, 0.4);
-          allArticles.sort(function(a, b) {
-            var aVerified = isReputableSource(a.source) ? 1 : 0;
-            var bVerified = isReputableSource(b.source) ? 1 : 0;
-            if (bVerified !== aVerified) return bVerified - aVerified;
-            var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
-            var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
-            return dateB - dateA;
-          });
-          setCache(cacheKey, allArticles);
-          _allMainArticles = allArticles;
-          renderMainStories(allArticles);
+          rssComplete = true;
+          finalizeMainStories();
         }
       }
     });
@@ -424,15 +466,7 @@ function loadSidebarStories() {
         if (completed === total) {
           clearTimeout(_sidebarTimeout);
           allArticles = deduplicateArticles(allArticles);
-          // Filter — Live on the Ground allows up to 2 years of local stories
-          allArticles = allArticles.filter(function(a) {
-            if (!a.publishedAt) return false;
-            try {
-              var d = new Date(a.publishedAt);
-              if (isNaN(d.getTime())) return false;
-              return (Date.now() - d.getTime()) < SIDEBAR_MAX_AGE_MS;
-            } catch (e) { return false; }
-          });
+          allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
           // Sort sidebar: verified sources first, then by recency
           allArticles.sort(function(a, b) {
             var aVerified = isReputableSource(a.source) ? 1 : 0;
@@ -481,20 +515,12 @@ function isLocalZimSource(source) {
   return false;
 }
 
-// Max age for main feed headlines (14 days — tighter for recency)
-var MAX_ARTICLE_AGE_MS = 14 * 24 * 60 * 60 * 1000;
-
-// Max age for Live on the Ground / sidebar (14 days — keep content fresh)
-var SIDEBAR_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000;
-
-function isRecentArticle(dateStr) {
+// Date validation — accept any article with a parseable date (no age cap for archive)
+function isValidArticle(dateStr) {
   if (!dateStr) return false;
   try {
     var d = new Date(dateStr);
-    if (isNaN(d.getTime())) return false;
-    // Hard floor: nothing before 2025
-    if (d.getFullYear() < 2025) return false; // hard floor — no archival content
-    return (Date.now() - d.getTime()) < MAX_ARTICLE_AGE_MS;
+    return !isNaN(d.getTime());
   } catch (e) {
     return false;
   }
@@ -1083,31 +1109,35 @@ function renderMainStories(articles) {
     return !a.url || !_spotlightUrls[a.url];
   });
 
-  // Integrate verified GNews articles at the top, then rest by date
-  var gnewsFiltered = _gnewsMoreArticles.filter(function(a) {
-    return !a.url || !_spotlightUrls[a.url];
-  });
-  // Deduplicate GNews against main articles
-  var mainUrls = {};
-  for (var u = 0; u < filtered.length; u++) {
-    if (filtered[u].url) mainUrls[filtered[u].url] = true;
+  // Apply category filter
+  if (_activeCategory === "_verified") {
+    filtered = filtered.filter(function(a) { return isReputableSource(a.source); });
+  } else if (_activeCategory === "_local") {
+    filtered = filtered.filter(function(a) { return a.isLocal || isLocalZimSource(a.source); });
+  } else if (_activeCategory !== "all") {
+    filtered = filtered.filter(function(a) {
+      return inferCategory(a.title) === _activeCategory;
+    });
   }
-  gnewsFiltered = gnewsFiltered.filter(function(a) {
-    return !a.url || !mainUrls[a.url];
-  });
 
-  // GNews verified articles first, then main feed articles by date
-  var combined = gnewsFiltered.concat(filtered);
+  // Pagination
+  var totalArticles = filtered.length;
+  var totalPages = Math.ceil(totalArticles / ARTICLES_PER_PAGE);
+  if (_currentPage > totalPages) _currentPage = totalPages;
+  if (_currentPage < 1) _currentPage = 1;
+  var startIdx = (_currentPage - 1) * ARTICLES_PER_PAGE;
+  var endIdx = Math.min(startIdx + ARTICLES_PER_PAGE, totalArticles);
+  var pageArticles = filtered.slice(startIdx, endIdx);
 
-  for (var i = 0; i < combined.length && i < 25; i++) {
-    var a = combined[i];
+  for (var i = 0; i < pageArticles.length; i++) {
+    var a = pageArticles[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
     var isJustNow = isBreakingRecent(a.publishedAt);
 
     var card = $('<article class="main-article">');
-    if (rank === 1) card.addClass("rank-featured");
+    if (rank === 1 && _currentPage === 1) card.addClass("rank-featured");
 
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
@@ -1164,8 +1194,8 @@ function renderMainStories(articles) {
     card.append(link);
     container.append(card);
 
-    // Insert break image with caption after every 2 articles
-    if (rank % 2 === 0 && rank < 15) {
+    // Insert break image with caption after every 4 articles (page 1 only)
+    if (_currentPage === 1 && rank % 4 === 0 && rank < 16) {
       var breakData = getNextBreakImage();
       var ph = $('<div class="break-section">');
       var imgWrap = $('<div class="break-img-wrap">');
@@ -1179,8 +1209,56 @@ function renderMainStories(articles) {
     }
   }
 
+  // Pagination controls
+  if (totalPages > 1) {
+    var pager = $('<div class="pagination">');
+    var info = $('<span class="pagination-info">').text(
+      "Page " + _currentPage + " of " + totalPages + " (" + totalArticles + " articles)"
+    );
+    pager.append(info);
+
+    var controls = $('<div class="pagination-controls">');
+    if (_currentPage > 1) {
+      var prevBtn = $('<button class="pagination-btn">').html("&laquo; Previous");
+      prevBtn.on("click", function() {
+        _currentPage--;
+        renderMainStories(_allMainArticles);
+        $("html, body").animate({ scrollTop: container.offset().top - 80 }, 300);
+      });
+      controls.append(prevBtn);
+    }
+
+    // Page number buttons (show up to 5 around current)
+    var startPage = Math.max(1, _currentPage - 2);
+    var endPage = Math.min(totalPages, startPage + 4);
+    if (endPage - startPage < 4) startPage = Math.max(1, endPage - 4);
+    for (var p = startPage; p <= endPage; p++) {
+      var pageBtn = $('<button class="pagination-btn pagination-num">').text(p);
+      if (p === _currentPage) pageBtn.addClass("active");
+      pageBtn.data("page", p);
+      pageBtn.on("click", function() {
+        _currentPage = $(this).data("page");
+        renderMainStories(_allMainArticles);
+        $("html, body").animate({ scrollTop: container.offset().top - 80 }, 300);
+      });
+      controls.append(pageBtn);
+    }
+
+    if (_currentPage < totalPages) {
+      var nextBtn = $('<button class="pagination-btn">').html("Next &raquo;");
+      nextBtn.on("click", function() {
+        _currentPage++;
+        renderMainStories(_allMainArticles);
+        $("html, body").animate({ scrollTop: container.offset().top - 80 }, 300);
+      });
+      controls.append(nextBtn);
+    }
+    pager.append(controls);
+    container.append(pager);
+  }
+
   // Inject structured data for SEO
-  injectArticleSchema(filtered, 'main');
+  injectArticleSchema(pageArticles, 'main');
 
   // Subscribe banner — render full-width after the content-layout grid (only once)
   if ($(".subscribe-banner").length) return;
@@ -1257,15 +1335,11 @@ function loadSpotlightStories() {
     success: function(data) {
       if (data && data.articles && data.articles.length > 0) {
         setCache(cacheKey, data.articles);
-        renderSpotlightStories(data.articles);
-        // Store remaining verified GNews articles for main feed integration
+        // Populate verified GNews extras before rendering so spotlight can use them
         if (data.more && data.more.length > 0) {
           _gnewsMoreArticles = data.more.filter(function(a) { return isReputableSource(a.source); });
-          // Re-render main stories if already loaded to integrate GNews articles
-          if (_allMainArticles.length > 0) {
-            renderMainStories(_allMainArticles);
-          }
         }
+        renderSpotlightStories(data.articles);
       } else {
         loadSpotlightFromRSS();
       }
@@ -1406,6 +1480,46 @@ function renderSpotlightStories(articles) {
     link.append(textWrap);
     item.append(link);
     container.append(item);
+  }
+
+  // Append up to 2 verified Google News RSS articles with green accent
+  var gnewsExtras = _gnewsMoreArticles.filter(function(a) {
+    return a.url && !_spotlightUrls[a.url];
+  }).slice(0, 2);
+  for (var j = 0; j < gnewsExtras.length; j++) {
+    var g = gnewsExtras[j];
+    if (g.url) _spotlightUrls[g.url] = true;
+    var gDate = formatDate(g.publishedAt);
+    var gItem = $('<article class="spotlight-item spotlight-gnews">');
+    var gLink = $('<a>').attr('href', g.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+    if (g.image) {
+      gLink.append($('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || ''));
+    }
+    var gText = $('<div class="spotlight-text">');
+    gText.append($('<h4 class="spotlight-title">').text(g.title));
+    var gDesc = g.description;
+    if (gDesc && gDesc.length > 200) gDesc = gDesc.substring(0, 200) + "...";
+    if (gDesc) gText.append($('<p class="spotlight-desc">').text(gDesc));
+    var gMeta = $('<p class="spotlight-meta">');
+    if (g.source) {
+      gMeta.append($('<span class="verified-source">').text(g.source));
+      gMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+    }
+    if (gDate) {
+      if (g.source) gMeta.append(document.createTextNode(" \u00b7 "));
+      var gTimeEl = $('<time>').text(gDate);
+      try { var gDt = new Date(g.publishedAt); if (!isNaN(gDt.getTime())) gTimeEl.attr('datetime', gDt.toISOString()); } catch (e) {}
+      gMeta.append(gTimeEl);
+    }
+    gMeta.append(createShareGroup(g.title, g.url, {
+      title: g.title, source: g.source, description: gDesc,
+      url: g.url, category: '', isLocal: false,
+      publishedAt: g.publishedAt, image: g.image || ''
+    }));
+    gText.append(gMeta);
+    gLink.append(gText);
+    gItem.append(gLink);
+    container.append(gItem);
   }
 
   // Inject structured data for SEO

@@ -224,7 +224,7 @@ def fetch_category(name, feed_urls):
     with open(outpath, "w") as f:
         json.dump({"articles": articles}, f)
     print(f"  OK: {name} — {len(articles)} articles saved")
-    return True
+    return articles or []
 
 
 def fetch_rss_descriptions():
@@ -439,15 +439,57 @@ def fetch_spotlight():
     print(f"  OK: {len(spotlight)} spotlight + {len(more)} more articles saved (merged from {len(articles)} new + {len(existing)} existing)")
 
 
+def update_archive(new_articles):
+    """Append new articles to archive.json, deduplicating by URL and title similarity."""
+    archive_path = os.path.join(DATA_DIR, "archive.json")
+    existing = []
+    if os.path.exists(archive_path):
+        try:
+            with open(archive_path) as f:
+                existing = json.load(f).get("articles", [])
+        except (json.JSONDecodeError, IOError):
+            existing = []
+
+    # Build URL index of existing archive
+    seen_urls = {a.get("url", "") for a in existing if a.get("url")}
+
+    added = 0
+    for a in new_articles:
+        url = a.get("url", "")
+        title = a.get("title", "")
+        if not url or url in seen_urls:
+            continue
+        # Skip near-duplicate headlines already in archive
+        if title and any(titles_are_similar(title, e.get("title", "")) for e in existing[-200:]):
+            continue
+        seen_urls.add(url)
+        existing.append(a)
+        added += 1
+
+    # Sort by date descending
+    existing.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
+
+    with open(archive_path, "w") as f:
+        json.dump({"articles": existing}, f)
+    print(f"\n=== ARCHIVE ===")
+    print(f"  Added {added} new articles, total archive: {len(existing)}")
+
+
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # Fetch category articles from Google News RSS
+    all_new = []
     for name, feeds in CATEGORIES.items():
-        fetch_category(name, feeds)
+        result = fetch_category(name, feeds)
+        if result:
+            all_new.extend(result)
 
     # Fetch spotlight articles from GNews API (1 call, includes images + descriptions)
     fetch_spotlight()
+
+    # Append all new articles to persistent archive
+    update_archive(all_new)
 
     print("\nDone.")
 
