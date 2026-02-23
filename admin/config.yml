@@ -2,8 +2,6 @@ backend:
   name: github
   repo: mutapatimes/mutapatimes
   branch: main
-  auth_type: pkce
-  app_id: Ov23liwBjTZRj59xqMvf
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
