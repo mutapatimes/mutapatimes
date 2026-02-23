@@ -13,9 +13,11 @@
   var CACHE_KEY = "mutapa_people_cache";
   var CACHE_DURATION = 60 * 60 * 1000; // 1 hour
 
-  // SPARQL query: Zimbabwean business people
+  var WIKIPEDIA_API = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
+
+  // SPARQL query: Zimbabwean business people + Wikipedia sitelink
   var SPARQL_QUERY = [
-    'SELECT ?person ?personLabel ?personDescription ?image ?occupationLabel ?birthDate WHERE {',
+    'SELECT ?person ?personLabel ?personDescription ?image ?occupationLabel ?birthDate ?article WHERE {',
     '  ?person wdt:P31 wd:Q5.',
     '  ?person wdt:P27 wd:Q954.',
     '  ?person wdt:P106 ?occupation.',
@@ -23,6 +25,7 @@
     '  ?occupation wdt:P279* ?occType.',
     '  OPTIONAL { ?person wdt:P18 ?image. }',
     '  OPTIONAL { ?person wdt:P569 ?birthDate. }',
+    '  OPTIONAL { ?article schema:about ?person. ?article schema:isPartOf <https://en.wikipedia.org/>. }',
     '  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }',
     '}'
   ].join('\n');
@@ -140,6 +143,8 @@
       if (!label || label === qid) continue;
 
       if (!map[qid]) {
+        var wpUrl = b.article ? b.article.value : '';
+        var wpTitle = wpUrl ? decodeURIComponent(wpUrl.split('/wiki/').pop()) : '';
         map[qid] = {
           id: qid,
           source: 'wikidata',
@@ -148,7 +153,10 @@
           image: b.image ? b.image.value : '',
           occupation: b.occupationLabel ? b.occupationLabel.value : '',
           birthDate: b.birthDate ? b.birthDate.value : '',
-          wikidataUrl: uri
+          wikidataUrl: uri,
+          wikipediaTitle: wpTitle,
+          wikipediaUrl: wpUrl,
+          wikiBio: ''
         };
       } else {
         // Append additional occupation
@@ -334,13 +342,68 @@
     document.body.style.overflow = 'hidden';
   }
 
+  // === Wikipedia bio fetch ===
+
+  function fetchWikipediaBio(person, bioEl) {
+    // Already fetched
+    if (person.wikiBio) {
+      bioEl.textContent = person.wikiBio;
+      return;
+    }
+    // CMS body takes priority
+    if (person.body && person.body.trim()) {
+      bioEl.textContent = person.body.trim();
+      return;
+    }
+    // No Wikipedia article available
+    if (!person.wikipediaTitle) {
+      bioEl.textContent = person.description || '';
+      return;
+    }
+
+    bioEl.innerHTML = '<span class="person-bio-loading">Loading biography&#8230;</span>';
+
+    var url = WIKIPEDIA_API + encodeURIComponent(person.wikipediaTitle);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.timeout = 10000;
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+            var extract = data.extract || '';
+            if (extract) {
+              person.wikiBio = extract;
+              bioEl.textContent = extract;
+            } else {
+              bioEl.textContent = person.description || '';
+            }
+          } catch (e) {
+            bioEl.textContent = person.description || '';
+          }
+        } else {
+          bioEl.textContent = person.description || '';
+        }
+      }
+    };
+    xhr.ontimeout = function () {
+      bioEl.textContent = person.description || '';
+    };
+    xhr.send();
+  }
+
   function renderDetail(container, person) {
     var imgHtml = person.image
       ? '<img src="' + escapeHtml(person.image) + '" alt="' + escapeHtml(person.name) + '" class="person-detail-img">'
       : '';
-    var wikiLink = person.wikidataUrl
-      ? '<a href="' + escapeHtml(person.wikidataUrl) + '" target="_blank" rel="noopener" class="person-detail-link">View on Wikidata &rarr;</a>'
-      : '';
+    var links = '';
+    if (person.wikipediaUrl) {
+      links += '<a href="' + escapeHtml(person.wikipediaUrl) + '" target="_blank" rel="noopener" class="person-detail-link">Wikipedia &rarr;</a>';
+    }
+    if (person.wikidataUrl) {
+      links += (links ? ' &middot; ' : '') + '<a href="' + escapeHtml(person.wikidataUrl) + '" target="_blank" rel="noopener" class="person-detail-link">Wikidata &rarr;</a>';
+    }
     var birthStr = '';
     if (person.birthDate) {
       var bd = new Date(person.birthDate);
@@ -361,9 +424,13 @@
       + '<p class="person-detail-role">' + escapeHtml(person.occupation || '') + '</p>'
       + (person.company ? '<p class="person-detail-company">' + escapeHtml(person.company) + '</p>' : '')
       + birthStr
-      + '<p class="person-detail-bio">' + escapeHtml(person.description || '') + '</p>'
-      + wikiLink
+      + '<p class="person-detail-bio" id="person-bio-text"></p>'
+      + (links ? '<p class="person-detail-links">' + links + '</p>' : '')
       + '</div></div></div>';
+
+    // Lazy-load Wikipedia bio
+    var bioEl = container.querySelector('#person-bio-text');
+    fetchWikipediaBio(person, bioEl);
 
     container.querySelector('.person-detail-close').addEventListener('click', closeDetail);
     container.querySelector('.person-detail-backdrop').addEventListener('click', closeDetail);
