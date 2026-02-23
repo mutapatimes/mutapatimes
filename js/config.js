@@ -9,12 +9,19 @@ var MUTAPA_CONFIG = {
   DATA_PATH: "data/"
 };
 
+// Stored article data for category filtering
+var _allMainArticles = [];
+var _allSidebarArticles = [];
+var _activeCategory = "all";
+
 // Multiple RSS feeds to pull from — broad, less selective, prioritizing recency
 var MAIN_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+health+education+sport+crime&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+mining+agriculture+tourism&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=site:zimlive.com+OR+site:newsday.co.zw+OR+site:herald.co.zw+OR+site:bulawayo24.com+OR+site:263chat.com&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=site:pindula.co.zw+OR+site:nehanda radio+OR+site:newzimbabwe.com+OR+site:thezimbabwemail.com&hl=en&gl=US&ceid=US:en"
 ];
@@ -23,7 +30,9 @@ var MAIN_RSS_FEEDS = [
 var SIDEBAR_RSS_FEEDS = [
   "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
-  "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en"
+  "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+crime+court+police&hl=en&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Zimbabwe+culture+music+festival+education&hl=en&gl=US&ceid=US:en"
 ];
 
 // Spotlight feeds — multiple targeted searches to ensure enough reputable results
@@ -291,6 +300,31 @@ function fetchNews() {
     loadSpotlightStories();
     loadSidebarStories();
   });
+
+  // Category filter chip clicks
+  $(".category-filter").on("click", ".category-chip", function() {
+    $(".category-chip").removeClass("active");
+    $(this).addClass("active");
+    _activeCategory = $(this).data("category");
+    filterByCategory(_activeCategory);
+  });
+}
+
+function filterByCategory(category) {
+  var mainFiltered = _allMainArticles;
+  var sidebarFiltered = _allSidebarArticles;
+
+  if (category !== "all") {
+    mainFiltered = _allMainArticles.filter(function(a) {
+      return inferCategory(a.title) === category;
+    });
+    sidebarFiltered = _allSidebarArticles.filter(function(a) {
+      return inferCategory(a.title) === category;
+    });
+  }
+
+  renderMainStories(mainFiltered);
+  renderSidebarStories(sidebarFiltered);
 }
 
 // ============================================================
@@ -300,6 +334,7 @@ function loadMainStories() {
   var cacheKey = "main_all";
   var cached = getCache(cacheKey);
   if (cached) {
+    _allMainArticles = cached;
     renderMainStories(cached);
     return;
   }
@@ -342,6 +377,7 @@ function loadMainStories() {
             return dateB - dateA;
           });
           setCache(cacheKey, allArticles);
+          _allMainArticles = allArticles;
           renderMainStories(allArticles);
         }
       }
@@ -356,6 +392,7 @@ function loadSidebarStories() {
   var cacheKey = "sidebar_all";
   var cached = getCache(cacheKey);
   if (cached) {
+    _allSidebarArticles = cached;
     renderSidebarStories(cached);
     return;
   }
@@ -405,6 +442,7 @@ function loadSidebarStories() {
             return dateB - dateA;
           });
           setCache(cacheKey, allArticles);
+          _allSidebarArticles = allArticles;
           renderSidebarStories(allArticles);
         }
       }
@@ -1044,7 +1082,7 @@ function renderMainStories(articles) {
     return !a.url || !_spotlightUrls[a.url];
   });
 
-  for (var i = 0; i < filtered.length && i < 15; i++) {
+  for (var i = 0; i < filtered.length && i < 25; i++) {
     var a = filtered[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
@@ -1067,7 +1105,10 @@ function renderMainStories(articles) {
         meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
       }
     }
-    if (pubDate) {
+    if (isJustNow) {
+      meta.append(document.createTextNode(" \u00b7 "));
+      meta.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
+    } else if (pubDate) {
       meta.append(document.createTextNode(" \u00b7 "));
       var timeEl = $('<time>').text(pubDate);
       try {
@@ -1091,9 +1132,6 @@ function renderMainStories(articles) {
     var category = inferCategory(a.title);
     if (category) {
       tagRow.append($('<span class="category-tag">').text(category));
-    }
-    if (isJustNow) {
-      tagRow.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
     }
     var desc = a.description;
     if (desc && desc.length > 250) desc = desc.substring(0, 250) + "...";
@@ -1435,7 +1473,7 @@ function renderSidebarStories(articles) {
     return a.isLocal;
   });
 
-  for (var i = 0; i < filtered.length && i < 20; i++) {
+  for (var i = 0; i < filtered.length && i < 30; i++) {
     var a = filtered[i];
     var pubDate = formatDate(a.publishedAt);
     var sidebarJustNow = isBreakingRecent(a.publishedAt);
@@ -1452,16 +1490,16 @@ function renderSidebarStories(articles) {
     var meta = $('<p class="sidebar-meta">');
     // All Live on the Ground articles tagged as LOCAL
     meta.append($('<span class="press-marker local-press">').text("Local"));
-    if (sidebarJustNow) {
-      meta.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
-    }
     if (a.source) {
       meta.append($('<span>').text(a.source));
       if (isReputableSource(a.source)) {
         meta.append($('<span class="verified-badge verified-badge-sm" title="Verified source">').html('&#10003;'));
       }
     }
-    if (pubDate) {
+    if (sidebarJustNow) {
+      meta.append(document.createTextNode(" \u00b7 "));
+      meta.append($('<span class="just-now-badge">').html('&#9679; JUST NOW'));
+    } else if (pubDate) {
       meta.append(document.createTextNode(" \u00b7 "));
       var timeEl = $('<time>').text(pubDate);
       try {
@@ -1688,7 +1726,7 @@ function initOnThisDay() {
 function injectArticleSchema(articles, sectionName) {
   if (!articles || articles.length === 0) return;
 
-  var limit = sectionName === 'spotlight' ? 3 : (sectionName === 'sidebar' ? 20 : 15);
+  var limit = sectionName === 'spotlight' ? 3 : (sectionName === 'sidebar' ? 30 : 25);
   var schemaItems = [];
 
   for (var i = 0; i < Math.min(articles.length, limit); i++) {
