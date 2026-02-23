@@ -287,19 +287,20 @@
 
   function renderCard(person, index) {
     var imgHtml = person.image
-      ? '<img src="' + escapeHtml(person.image) + '" alt="' + escapeHtml(person.name) + '" class="person-card-img" loading="lazy">'
+      ? '<img src="' + escapeHtml(person.image) + '" alt="' + escapeHtml(person.name) + ', ' + escapeHtml(person.occupation || '') + '" class="person-card-img" loading="lazy">'
       : '<div class="person-card-img person-card-placeholder"><svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-7 8-7s8 3 8 7"/></svg></div>';
     var sourceTag = person.source === 'cms'
       ? '<span class="press-marker original-press">Original</span>'
       : '';
-    return '<button class="person-card" data-index="' + index + '" aria-expanded="false">'
+    var personUrl = 'person.html?id=' + encodeURIComponent(person.id);
+    return '<a href="' + personUrl + '" class="person-card" data-index="' + index + '" aria-expanded="false">'
       + imgHtml
       + '<div class="person-card-body">'
       + '<h3 class="person-card-name">' + escapeHtml(person.name) + '</h3>'
       + '<p class="person-card-role">' + escapeHtml(person.occupation || person.title || '') + '</p>'
       + (person.company ? '<p class="person-card-company">' + escapeHtml(person.company) + '</p>' : '')
       + sourceTag
-      + '</div></button>';
+      + '</div></a>';
   }
 
   // === Detail expand ===
@@ -317,6 +318,7 @@
   }
 
   function handleCardClick(e) {
+    e.preventDefault();
     var card = e.currentTarget;
     var index = parseInt(card.getAttribute('data-index'), 10);
     var detail = document.getElementById('person-detail');
@@ -415,6 +417,8 @@
       }
     }
 
+    var profileUrl = 'person.html?id=' + encodeURIComponent(person.id);
+
     container.innerHTML = '<div class="person-detail-backdrop"></div>'
       + '<div class="person-detail-inner">'
       + '<button class="person-detail-close" aria-label="Close detail">&times;</button>'
@@ -427,6 +431,7 @@
       + birthStr
       + '<p class="person-detail-bio" id="person-bio-text"></p>'
       + (links ? '<p class="person-detail-links">' + links + '</p>' : '')
+      + '<a href="' + profileUrl + '" class="person-detail-profile-link">View full profile &rarr;</a>'
       + '</div></div></div>';
 
     // Lazy-load Wikipedia bio
