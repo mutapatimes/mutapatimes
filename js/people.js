@@ -13,9 +13,11 @@
   var CACHE_KEY = "mutapa_people_cache";
   var CACHE_DURATION = 60 * 60 * 1000; // 1 hour
 
-  // SPARQL query: Zimbabwean business people
+  var WIKIPEDIA_API = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
+
+  // SPARQL query: Zimbabwean business people + Wikipedia sitelink
   var SPARQL_QUERY = [
-    'SELECT ?person ?personLabel ?personDescription ?image ?occupationLabel ?birthDate WHERE {',
+    'SELECT ?person ?personLabel ?personDescription ?image ?occupationLabel ?birthDate ?article WHERE {',
     '  ?person wdt:P31 wd:Q5.',
     '  ?person wdt:P27 wd:Q954.',
     '  ?person wdt:P106 ?occupation.',
@@ -23,6 +25,7 @@
     '  ?occupation wdt:P279* ?occType.',
     '  OPTIONAL { ?person wdt:P18 ?image. }',
     '  OPTIONAL { ?person wdt:P569 ?birthDate. }',
+    '  OPTIONAL { ?article schema:about ?person. ?article schema:isPartOf <https://en.wikipedia.org/>. }',
     '  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }',
     '}'
   ].join('\n');
@@ -140,6 +143,8 @@
       if (!label || label === qid) continue;
 
       if (!map[qid]) {
+        var wpUrl = b.article ? b.article.value : '';
+        var wpTitle = wpUrl ? decodeURIComponent(wpUrl.split('/wiki/').pop()) : '';
         map[qid] = {
           id: qid,
           source: 'wikidata',
@@ -148,7 +153,10 @@
           image: b.image ? b.image.value : '',
           occupation: b.occupationLabel ? b.occupationLabel.value : '',
           birthDate: b.birthDate ? b.birthDate.value : '',
-          wikidataUrl: uri
+          wikidataUrl: uri,
+          wikipediaTitle: wpTitle,
+          wikipediaUrl: wpUrl,
+          wikiBio: ''
         };
       } else {
         // Append additional occupation
@@ -255,6 +263,7 @@
 
   var _allPeople = [];
   var _activeIndex = -1;
+  var _activeFilter = 'all';
 
   function renderGrid(container, people) {
     _allPeople = people;
@@ -295,6 +304,18 @@
 
   // === Detail expand ===
 
+  function closeDetail() {
+    var detail = document.getElementById('person-detail');
+    detail.classList.remove('person-detail-open');
+    document.body.style.overflow = '';
+    var prev = document.querySelector('.person-card-active');
+    if (prev) {
+      prev.classList.remove('person-card-active');
+      prev.setAttribute('aria-expanded', 'false');
+    }
+    _activeIndex = -1;
+  }
+
   function handleCardClick(e) {
     var card = e.currentTarget;
     var index = parseInt(card.getAttribute('data-index'), 10);
@@ -302,10 +323,7 @@
 
     // Toggle closed if clicking same card
     if (_activeIndex === index) {
-      detail.style.display = 'none';
-      card.setAttribute('aria-expanded', 'false');
-      card.classList.remove('person-card-active');
-      _activeIndex = -1;
+      closeDetail();
       return;
     }
 
@@ -321,17 +339,72 @@
     card.setAttribute('aria-expanded', 'true');
 
     renderDetail(detail, _allPeople[index]);
-    detail.style.display = 'block';
-    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    detail.classList.add('person-detail-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // === Wikipedia bio fetch ===
+
+  function fetchWikipediaBio(person, bioEl) {
+    // Already fetched
+    if (person.wikiBio) {
+      bioEl.textContent = person.wikiBio;
+      return;
+    }
+    // CMS body takes priority
+    if (person.body && person.body.trim()) {
+      bioEl.textContent = person.body.trim();
+      return;
+    }
+    // No Wikipedia article available
+    if (!person.wikipediaTitle) {
+      bioEl.textContent = person.description || '';
+      return;
+    }
+
+    bioEl.innerHTML = '<span class="person-bio-loading">Loading biography&#8230;</span>';
+
+    var url = WIKIPEDIA_API + encodeURIComponent(person.wikipediaTitle);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.timeout = 10000;
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+            var extract = data.extract || '';
+            if (extract) {
+              person.wikiBio = extract;
+              bioEl.textContent = extract;
+            } else {
+              bioEl.textContent = person.description || '';
+            }
+          } catch (e) {
+            bioEl.textContent = person.description || '';
+          }
+        } else {
+          bioEl.textContent = person.description || '';
+        }
+      }
+    };
+    xhr.ontimeout = function () {
+      bioEl.textContent = person.description || '';
+    };
+    xhr.send();
   }
 
   function renderDetail(container, person) {
     var imgHtml = person.image
       ? '<img src="' + escapeHtml(person.image) + '" alt="' + escapeHtml(person.name) + '" class="person-detail-img">'
       : '';
-    var wikiLink = person.wikidataUrl
-      ? '<a href="' + escapeHtml(person.wikidataUrl) + '" target="_blank" rel="noopener" class="person-detail-link">View on Wikidata &rarr;</a>'
-      : '';
+    var links = '';
+    if (person.wikipediaUrl) {
+      links += '<a href="' + escapeHtml(person.wikipediaUrl) + '" target="_blank" rel="noopener" class="person-detail-link">Wikipedia &rarr;</a>';
+    }
+    if (person.wikidataUrl) {
+      links += (links ? ' &middot; ' : '') + '<a href="' + escapeHtml(person.wikidataUrl) + '" target="_blank" rel="noopener" class="person-detail-link">Wikidata &rarr;</a>';
+    }
     var birthStr = '';
     if (person.birthDate) {
       var bd = new Date(person.birthDate);
@@ -342,7 +415,8 @@
       }
     }
 
-    container.innerHTML = '<div class="person-detail-inner">'
+    container.innerHTML = '<div class="person-detail-backdrop"></div>'
+      + '<div class="person-detail-inner">'
       + '<button class="person-detail-close" aria-label="Close detail">&times;</button>'
       + '<div class="person-detail-layout">'
       + (imgHtml ? '<div class="person-detail-img-wrap">' + imgHtml + '</div>' : '')
@@ -351,37 +425,92 @@
       + '<p class="person-detail-role">' + escapeHtml(person.occupation || '') + '</p>'
       + (person.company ? '<p class="person-detail-company">' + escapeHtml(person.company) + '</p>' : '')
       + birthStr
-      + '<p class="person-detail-bio">' + escapeHtml(person.description || '') + '</p>'
-      + wikiLink
+      + '<p class="person-detail-bio" id="person-bio-text"></p>'
+      + (links ? '<p class="person-detail-links">' + links + '</p>' : '')
       + '</div></div></div>';
 
-    container.querySelector('.person-detail-close').addEventListener('click', function () {
-      container.style.display = 'none';
-      var prev = document.querySelector('.person-card-active');
-      if (prev) {
-        prev.classList.remove('person-card-active');
-        prev.setAttribute('aria-expanded', 'false');
-      }
-      _activeIndex = -1;
-    });
+    // Lazy-load Wikipedia bio
+    var bioEl = container.querySelector('#person-bio-text');
+    fetchWikipediaBio(person, bioEl);
+
+    container.querySelector('.person-detail-close').addEventListener('click', closeDetail);
+    container.querySelector('.person-detail-backdrop').addEventListener('click', closeDetail);
   }
 
-  // === Search ===
+  // Close modal on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && _activeIndex !== -1) closeDetail();
+  });
+
+  // === Filters ===
+
+  function buildFilters(people) {
+    var filtersEl = document.getElementById('people-filters');
+    if (!filtersEl) return;
+
+    // Collect unique occupations and count them
+    var occMap = {};
+    for (var i = 0; i < people.length; i++) {
+      var occs = (people[i].occupation || '').split(',');
+      for (var j = 0; j < occs.length; j++) {
+        var occ = occs[j].trim().toLowerCase();
+        if (!occ) continue;
+        // Normalise to title case for display
+        var display = occ.charAt(0).toUpperCase() + occ.substring(1);
+        if (!occMap[occ]) occMap[occ] = { label: display, count: 0 };
+        occMap[occ].count++;
+      }
+    }
+
+    // Sort by count descending, keep top categories
+    var sorted = [];
+    for (var key in occMap) {
+      if (occMap.hasOwnProperty(key)) sorted.push(occMap[key]);
+    }
+    sorted.sort(function (a, b) { return b.count - a.count; });
+    // Keep roles with 2+ people, max 12 chips
+    var chips = sorted.filter(function (o) { return o.count >= 2; }).slice(0, 12);
+
+    var html = '<button class="category-chip active" data-filter="all">All</button>';
+    for (var c = 0; c < chips.length; c++) {
+      html += '<button class="category-chip" data-filter="' + escapeHtml(chips[c].label.toLowerCase()) + '">'
+        + escapeHtml(chips[c].label) + '</button>';
+    }
+    filtersEl.innerHTML = html;
+
+    // Click handlers
+    var btns = filtersEl.querySelectorAll('.category-chip');
+    for (var b = 0; b < btns.length; b++) {
+      btns[b].addEventListener('click', function () {
+        var prev = filtersEl.querySelector('.category-chip.active');
+        if (prev) prev.classList.remove('active');
+        this.classList.add('active');
+        _activeFilter = this.getAttribute('data-filter');
+        applyFilters();
+      });
+    }
+  }
+
+  function applyFilters() {
+    var input = document.getElementById('people-search');
+    var query = input ? input.value.toLowerCase().trim() : '';
+    var cards = document.querySelectorAll('.person-card');
+    for (var i = 0; i < cards.length; i++) {
+      var idx = parseInt(cards[i].getAttribute('data-index'), 10);
+      var person = _allPeople[idx];
+      var searchable = (person.name + ' ' + person.occupation + ' ' +
+                       (person.company || '') + ' ' + person.description).toLowerCase();
+      var matchesSearch = !query || searchable.indexOf(query) !== -1;
+      var matchesFilter = _activeFilter === 'all' ||
+        (person.occupation || '').toLowerCase().indexOf(_activeFilter) !== -1;
+      cards[i].style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+    }
+  }
 
   function setupSearch() {
     var input = document.getElementById('people-search');
     if (!input) return;
-    input.addEventListener('input', function () {
-      var query = input.value.toLowerCase().trim();
-      var cards = document.querySelectorAll('.person-card');
-      for (var i = 0; i < cards.length; i++) {
-        var idx = parseInt(cards[i].getAttribute('data-index'), 10);
-        var person = _allPeople[idx];
-        var searchable = (person.name + ' ' + person.occupation + ' ' +
-                         (person.company || '') + ' ' + person.description).toLowerCase();
-        cards[i].style.display = searchable.indexOf(query) !== -1 ? '' : 'none';
-      }
-    });
+    input.addEventListener('input', applyFilters);
   }
 
   // === Init ===
@@ -399,6 +528,7 @@
       if (completed === 2) {
         var merged = mergePeople(wikidataResult || [], cmsResult || []);
         renderGrid(container, merged);
+        buildFilters(merged);
         setupSearch();
       }
     }
