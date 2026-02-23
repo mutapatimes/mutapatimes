@@ -801,6 +801,10 @@ a {
   color: var(--accent);
   border: 1px solid var(--accent);
 }
+.press-marker.original-press {
+  color: #c8a96e;
+  border: 1px solid #c8a96e;
+}
 .press-marker.foreign-press {
   color: var(--text-light);
   border: 1px solid var(--border);

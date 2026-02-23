@@ -6,7 +6,9 @@
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
   RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
-  DATA_PATH: "data/"
+  DATA_PATH: "data/",
+  GITHUB_REPO: "mutapatimes/mutapatimes",
+  GITHUB_BRANCH: "main"
 };
 
 // Stored article data for category filtering
@@ -47,6 +49,8 @@ var SPOTLIGHT_RSS_FEEDS = [
 
 // Reputable sources for spotlight matching
 var REPUTABLE_SOURCES = [
+  // The Mutapa Times (original content)
+  "the mutapa times", "mutapa times",
   // Major international wire services & broadcasters
   "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
   "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
@@ -331,6 +335,124 @@ function filterByCategory(category) {
 }
 
 // ============================================================
+// CMS ARTICLES — load original articles published via CMS
+// ============================================================
+function loadCmsArticles(callback) {
+  var apiUrl = "https://api.github.com/repos/" + MUTAPA_CONFIG.GITHUB_REPO +
+    "/contents/content/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
+  var rawBase = "https://raw.githubusercontent.com/" + MUTAPA_CONFIG.GITHUB_REPO +
+    "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/content/articles/";
+
+  $.ajax({
+    type: "GET",
+    url: apiUrl,
+    dataType: "json",
+    timeout: 8000,
+    success: function(entries) {
+      if (!entries || !entries.length) { callback([]); return; }
+
+      var mdFiles = [];
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].name && /\.md$/.test(entries[i].name)) {
+          mdFiles.push(entries[i].name);
+        }
+      }
+      if (!mdFiles.length) { callback([]); return; }
+
+      var pending = mdFiles.length;
+      var articles = [];
+
+      mdFiles.forEach(function(filename) {
+        $.ajax({
+          type: "GET",
+          url: rawBase + filename,
+          dataType: "text",
+          timeout: 8000,
+          success: function(raw) {
+            var parsed = parseCmsFrontmatter(raw);
+            if (parsed.meta.title) {
+              articles.push({
+                title: parsed.meta.title,
+                url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
+                description: parsed.meta.summary || "",
+                source: "The Mutapa Times",
+                publishedAt: parsed.meta.date || "",
+                isLocal: false,
+                isCmsArticle: true
+              });
+            }
+          },
+          complete: function() {
+            pending--;
+            if (pending === 0) callback(articles);
+          }
+        });
+      });
+    },
+    error: function() {
+      // Fallback: try local index.json
+      $.ajax({
+        type: "GET",
+        url: "content/articles/index.json",
+        dataType: "json",
+        timeout: 5000,
+        success: function(files) {
+          if (!files || !files.length) { callback([]); return; }
+          var pending = files.length;
+          var articles = [];
+          files.forEach(function(filename) {
+            $.ajax({
+              type: "GET",
+              url: "content/articles/" + filename,
+              dataType: "text",
+              timeout: 5000,
+              success: function(raw) {
+                var parsed = parseCmsFrontmatter(raw);
+                if (parsed.meta.title) {
+                  articles.push({
+                    title: parsed.meta.title,
+                    url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
+                    description: parsed.meta.summary || "",
+                    source: "The Mutapa Times",
+                    publishedAt: parsed.meta.date || "",
+                    isLocal: false,
+                    isCmsArticle: true
+                  });
+                }
+              },
+              complete: function() {
+                pending--;
+                if (pending === 0) callback(articles);
+              }
+            });
+          });
+        },
+        error: function() { callback([]); }
+      });
+    }
+  });
+}
+
+function parseCmsFrontmatter(raw) {
+  var match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+  if (!match) return { meta: {}, body: raw };
+  var meta = {};
+  var lines = match[1].split("\n");
+  for (var i = 0; i < lines.length; i++) {
+    var colon = lines[i].indexOf(":");
+    if (colon === -1) continue;
+    var key = lines[i].substring(0, colon).trim();
+    var val = lines[i].substring(colon + 1).trim();
+    if ((val.charAt(0) === '"' && val.charAt(val.length - 1) === '"') ||
+        (val.charAt(0) === "'" && val.charAt(val.length - 1) === "'")) {
+      val = val.substring(1, val.length - 1);
+    }
+    meta[key] = val;
+  }
+  return { meta: meta, body: match[2] };
+}
+
+// ============================================================
 // MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
 function loadMainStories() {
@@ -347,6 +469,7 @@ function loadMainStories() {
   var total = MAIN_RSS_FEEDS.length;
   var archiveLoaded = false;
   var rssComplete = false;
+  var cmsLoaded = false;
 
   var _mainTimeout = setTimeout(function() {
     if (document.querySelector('#main-stories .loading-msg')) {
@@ -356,7 +479,7 @@ function loadMainStories() {
   }, 15000);
 
   function finalizeMainStories() {
-    if (!rssComplete || !archiveLoaded) return;
+    if (!rssComplete || !archiveLoaded || !cmsLoaded) return;
     clearTimeout(_mainTimeout);
     allArticles = deduplicateArticles(allArticles);
     allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
@@ -404,6 +527,15 @@ function loadMainStories() {
       archiveLoaded = true;
       finalizeMainStories();
     }
+  });
+
+  // Load CMS articles (original content published via Sveltia CMS)
+  loadCmsArticles(function(cmsArticles) {
+    if (cmsArticles && cmsArticles.length) {
+      allArticles = allArticles.concat(cmsArticles);
+    }
+    cmsLoaded = true;
+    finalizeMainStories();
   });
 
   // Load live RSS feeds in parallel
@@ -1139,7 +1271,8 @@ function renderMainStories(articles) {
     var card = $('<article class="main-article">');
     if (rank === 1 && _currentPage === 1) card.addClass("rank-featured");
 
-    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+    var link = $('<a>').attr('href', a.url || '#');
+    if (!a.isCmsArticle) link.attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
@@ -1171,7 +1304,9 @@ function renderMainStories(articles) {
 
     // Line 2: tags + badges, then share (bottom-right for thumb access)
     var tagRow = $('<div class="main-article-tags">');
-    if (a.isLocal) {
+    if (a.isCmsArticle) {
+      tagRow.append($('<span class="press-marker original-press">').text("Original"));
+    } else if (a.isLocal) {
       tagRow.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
       tagRow.append($('<span class="press-marker foreign-press">').text("Foreign"));
