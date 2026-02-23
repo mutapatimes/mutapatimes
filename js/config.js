@@ -327,9 +327,14 @@ function fetchNews() {
 }
 
 // Sort articles based on active sort mode
+// Featured CMS articles with a headline_position are always pinned to the top
 function sortArticles(articles) {
   if (_activeSort === "verified") {
     articles.sort(function(a, b) {
+      // Featured articles always first
+      var aPin = a.featured ? (a.headlinePosition || 999) : Infinity;
+      var bPin = b.featured ? (b.headlinePosition || 999) : Infinity;
+      if (aPin !== bPin) return aPin - bPin;
       var aVerified = isReputableSource(a.source) ? 1 : 0;
       var bVerified = isReputableSource(b.source) ? 1 : 0;
       if (bVerified !== aVerified) return bVerified - aVerified;
@@ -338,8 +343,11 @@ function sortArticles(articles) {
       return dateB - dateA;
     });
   } else {
-    // Default: newest first
+    // Default: newest first, but featured articles pinned to top
     articles.sort(function(a, b) {
+      var aPin = a.featured ? (a.headlinePosition || 999) : Infinity;
+      var bPin = b.featured ? (b.headlinePosition || 999) : Infinity;
+      if (aPin !== bPin) return aPin - bPin;
       var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
       var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
       return dateB - dateA;
@@ -408,7 +416,9 @@ function loadCmsArticles(callback) {
                 source: "The Mutapa Times",
                 publishedAt: parsed.meta.date || "",
                 isLocal: false,
-                isCmsArticle: true
+                isCmsArticle: true,
+                featured: parsed.meta.featured === true || parsed.meta.featured === "true",
+                headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
               });
             }
           },
@@ -446,7 +456,9 @@ function loadCmsArticles(callback) {
                     source: "The Mutapa Times",
                     publishedAt: parsed.meta.date || "",
                     isLocal: false,
-                    isCmsArticle: true
+                    isCmsArticle: true,
+                    featured: parsed.meta.featured === true || parsed.meta.featured === "true",
+                    headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
                   });
                 }
               },

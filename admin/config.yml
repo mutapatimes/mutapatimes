@@ -33,6 +33,15 @@ collections:
           - "Opinion"
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Summary", name: "summary", widget: "text", pattern: ['.{0,280}', "Must be 280 characters or fewer"] }
+      - { label: "Featured on Headlines", name: "featured", widget: "boolean", default: false, hint: "Pin this article to the top of the headlines page" }
+      - label: "Headline Position"
+        name: "headline_position"
+        widget: "number"
+        required: false
+        default: 0
+        min: 0
+        max: 10
+        hint: "1 = top spot, 2 = second, etc. Leave at 0 for normal date-based ordering."
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "people"
