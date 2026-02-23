@@ -47,7 +47,9 @@ var REPUTABLE_SOURCES = [
   // Reputable African outlets
   "allafrica", "all africa", "daily maverick", "mail & guardian",
   "news24", "the east african", "sabc", "nation africa", "the citizen",
-  "eyewitness news", "iol", "timeslive", "sunday times"
+  "eyewitness news", "iol", "timeslive", "sunday times",
+  // Asia-Pacific
+  "south china morning post", "scmp"
 ];
 
 function isReputableSource(source) {
@@ -332,6 +334,9 @@ function loadMainStories() {
           allArticles = allArticles.filter(function(a) { return isRecentArticle(a.publishedAt); });
           allArticles = deduplicateByTopic(allArticles, 0.4);
           allArticles.sort(function(a, b) {
+            var aVerified = isReputableSource(a.source) ? 1 : 0;
+            var bVerified = isReputableSource(b.source) ? 1 : 0;
+            if (bVerified !== aVerified) return bVerified - aVerified;
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
@@ -390,8 +395,11 @@ function loadSidebarStories() {
               return (Date.now() - d.getTime()) < SIDEBAR_MAX_AGE_MS;
             } catch (e) { return false; }
           });
-          // Sort sidebar by newest too for recency
+          // Sort sidebar: verified sources first, then by recency
           allArticles.sort(function(a, b) {
+            var aVerified = isReputableSource(a.source) ? 1 : 0;
+            var bVerified = isReputableSource(b.source) ? 1 : 0;
+            if (bVerified !== aVerified) return bVerified - aVerified;
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
