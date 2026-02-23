@@ -318,7 +318,11 @@ function filterByCategory(category) {
   renderMainStories(_allMainArticles);
 
   var sidebarFiltered = _allSidebarArticles;
-  if (category !== "all") {
+  if (category === "_verified") {
+    sidebarFiltered = _allSidebarArticles.filter(function(a) { return isReputableSource(a.source); });
+  } else if (category === "_local") {
+    sidebarFiltered = _allSidebarArticles.filter(function(a) { return a.isLocal || isLocalZimSource(a.source); });
+  } else if (category !== "all") {
     sidebarFiltered = _allSidebarArticles.filter(function(a) {
       return inferCategory(a.title) === category;
     });
@@ -1106,7 +1110,11 @@ function renderMainStories(articles) {
   });
 
   // Apply category filter
-  if (_activeCategory !== "all") {
+  if (_activeCategory === "_verified") {
+    filtered = filtered.filter(function(a) { return isReputableSource(a.source); });
+  } else if (_activeCategory === "_local") {
+    filtered = filtered.filter(function(a) { return a.isLocal || isLocalZimSource(a.source); });
+  } else if (_activeCategory !== "all") {
     filtered = filtered.filter(function(a) {
       return inferCategory(a.title) === _activeCategory;
     });
