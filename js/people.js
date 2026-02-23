@@ -295,6 +295,18 @@
 
   // === Detail expand ===
 
+  function closeDetail() {
+    var detail = document.getElementById('person-detail');
+    detail.classList.remove('person-detail-open');
+    document.body.style.overflow = '';
+    var prev = document.querySelector('.person-card-active');
+    if (prev) {
+      prev.classList.remove('person-card-active');
+      prev.setAttribute('aria-expanded', 'false');
+    }
+    _activeIndex = -1;
+  }
+
   function handleCardClick(e) {
     var card = e.currentTarget;
     var index = parseInt(card.getAttribute('data-index'), 10);
@@ -302,10 +314,7 @@
 
     // Toggle closed if clicking same card
     if (_activeIndex === index) {
-      detail.style.display = 'none';
-      card.setAttribute('aria-expanded', 'false');
-      card.classList.remove('person-card-active');
-      _activeIndex = -1;
+      closeDetail();
       return;
     }
 
@@ -321,8 +330,8 @@
     card.setAttribute('aria-expanded', 'true');
 
     renderDetail(detail, _allPeople[index]);
-    detail.style.display = 'block';
-    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    detail.classList.add('person-detail-open');
+    document.body.style.overflow = 'hidden';
   }
 
   function renderDetail(container, person) {
@@ -342,7 +351,8 @@
       }
     }
 
-    container.innerHTML = '<div class="person-detail-inner">'
+    container.innerHTML = '<div class="person-detail-backdrop"></div>'
+      + '<div class="person-detail-inner">'
       + '<button class="person-detail-close" aria-label="Close detail">&times;</button>'
       + '<div class="person-detail-layout">'
       + (imgHtml ? '<div class="person-detail-img-wrap">' + imgHtml + '</div>' : '')
@@ -355,16 +365,14 @@
       + wikiLink
       + '</div></div></div>';
 
-    container.querySelector('.person-detail-close').addEventListener('click', function () {
-      container.style.display = 'none';
-      var prev = document.querySelector('.person-card-active');
-      if (prev) {
-        prev.classList.remove('person-card-active');
-        prev.setAttribute('aria-expanded', 'false');
-      }
-      _activeIndex = -1;
-    });
+    container.querySelector('.person-detail-close').addEventListener('click', closeDetail);
+    container.querySelector('.person-detail-backdrop').addEventListener('click', closeDetail);
   }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && _activeIndex !== -1) closeDetail();
+  });
 
   // === Search ===
 
