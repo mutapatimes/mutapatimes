@@ -1,10 +1,10 @@
 ---
-title: "Welcome to Mutapa Times Original Content"
+title: Welcome to Mutapa Times Original Content
 date: 2026-02-23T12:00:00.000Z
-author: "Mutapa Times Staff"
-category: "Business"
-image: ""
-summary: "The Mutapa Times is expanding beyond aggregation. We are now publishing original articles, analysis, and opinion pieces covering Zimbabwe and the region."
+author: Mutapa Times Staff
+category: Business
+image: ''
+summary: The Mutapa Times is expanding beyond aggregation. We are now publishing original articles, analysis, and opinion pieces covering Zimbabwe and the region.
 ---
 
 The Mutapa Times has always been committed to delivering curated Zimbabwean news from international and local press. Today, we are taking the next step — publishing our own original content.
