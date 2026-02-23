@@ -6,7 +6,9 @@
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
   RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
-  DATA_PATH: "data/"
+  DATA_PATH: "data/",
+  GITHUB_REPO: "mutapatimes/mutapatimes",
+  GITHUB_BRANCH: "main"
 };
 
 // Stored article data for category filtering
@@ -47,6 +49,8 @@ var SPOTLIGHT_RSS_FEEDS = [
 
 // Reputable sources for spotlight matching
 var REPUTABLE_SOURCES = [
+  // The Mutapa Times (original content)
+  "the mutapa times", "mutapa times",
   // Major international wire services & broadcasters
   "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
   "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
@@ -331,6 +335,124 @@ function filterByCategory(category) {
 }
 
 // ============================================================
+// CMS ARTICLES — load original articles published via CMS
+// ============================================================
+function loadCmsArticles(callback) {
+  var apiUrl = "https://api.github.com/repos/" + MUTAPA_CONFIG.GITHUB_REPO +
+    "/contents/content/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
+  var rawBase = "https://raw.githubusercontent.com/" + MUTAPA_CONFIG.GITHUB_REPO +
+    "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/content/articles/";
+
+  $.ajax({
+    type: "GET",
+    url: apiUrl,
+    dataType: "json",
+    timeout: 8000,
+    success: function(entries) {
+      if (!entries || !entries.length) { callback([]); return; }
+
+      var mdFiles = [];
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].name && /\.md$/.test(entries[i].name)) {
+          mdFiles.push(entries[i].name);
+        }
+      }
+      if (!mdFiles.length) { callback([]); return; }
+
+      var pending = mdFiles.length;
+      var articles = [];
+
+      mdFiles.forEach(function(filename) {
+        $.ajax({
+          type: "GET",
+          url: rawBase + filename,
+          dataType: "text",
+          timeout: 8000,
+          success: function(raw) {
+            var parsed = parseCmsFrontmatter(raw);
+            if (parsed.meta.title) {
+              articles.push({
+                title: parsed.meta.title,
+                url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
+                description: parsed.meta.summary || "",
+                source: "The Mutapa Times",
+                publishedAt: parsed.meta.date || "",
+                isLocal: false,
+                isCmsArticle: true
+              });
+            }
+          },
+          complete: function() {
+            pending--;
+            if (pending === 0) callback(articles);
+          }
+        });
+      });
+    },
+    error: function() {
+      // Fallback: try local index.json
+      $.ajax({
+        type: "GET",
+        url: "content/articles/index.json",
+        dataType: "json",
+        timeout: 5000,
+        success: function(files) {
+          if (!files || !files.length) { callback([]); return; }
+          var pending = files.length;
+          var articles = [];
+          files.forEach(function(filename) {
+            $.ajax({
+              type: "GET",
+              url: "content/articles/" + filename,
+              dataType: "text",
+              timeout: 5000,
+              success: function(raw) {
+                var parsed = parseCmsFrontmatter(raw);
+                if (parsed.meta.title) {
+                  articles.push({
+                    title: parsed.meta.title,
+                    url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
+                    description: parsed.meta.summary || "",
+                    source: "The Mutapa Times",
+                    publishedAt: parsed.meta.date || "",
+                    isLocal: false,
+                    isCmsArticle: true
+                  });
+                }
+              },
+              complete: function() {
+                pending--;
+                if (pending === 0) callback(articles);
+              }
+            });
+          });
+        },
+        error: function() { callback([]); }
+      });
+    }
+  });
+}
+
+function parseCmsFrontmatter(raw) {
+  var match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+  if (!match) return { meta: {}, body: raw };
+  var meta = {};
+  var lines = match[1].split("\n");
+  for (var i = 0; i < lines.length; i++) {
+    var colon = lines[i].indexOf(":");
+    if (colon === -1) continue;
+    var key = lines[i].substring(0, colon).trim();
+    var val = lines[i].substring(colon + 1).trim();
+    if ((val.charAt(0) === '"' && val.charAt(val.length - 1) === '"') ||
+        (val.charAt(0) === "'" && val.charAt(val.length - 1) === "'")) {
+      val = val.substring(1, val.length - 1);
+    }
+    meta[key] = val;
+  }
+  return { meta: meta, body: match[2] };
+}
+
+// ============================================================
 // MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
 function loadMainStories() {
@@ -347,6 +469,7 @@ function loadMainStories() {
   var total = MAIN_RSS_FEEDS.length;
   var archiveLoaded = false;
   var rssComplete = false;
+  var cmsLoaded = false;
 
   var _mainTimeout = setTimeout(function() {
     if (document.querySelector('#main-stories .loading-msg')) {
@@ -356,7 +479,7 @@ function loadMainStories() {
   }, 15000);
 
   function finalizeMainStories() {
-    if (!rssComplete || !archiveLoaded) return;
+    if (!rssComplete || !archiveLoaded || !cmsLoaded) return;
     clearTimeout(_mainTimeout);
     allArticles = deduplicateArticles(allArticles);
     allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
@@ -404,6 +527,15 @@ function loadMainStories() {
       archiveLoaded = true;
       finalizeMainStories();
     }
+  });
+
+  // Load CMS articles (original content published via Sveltia CMS)
+  loadCmsArticles(function(cmsArticles) {
+    if (cmsArticles && cmsArticles.length) {
+      allArticles = allArticles.concat(cmsArticles);
+    }
+    cmsLoaded = true;
+    finalizeMainStories();
   });
 
   // Load live RSS feeds in parallel
@@ -870,74 +1002,54 @@ function generateShareImage(articleData) {
     var ctx = canvas.getContext('2d');
     var pad = 64;
 
-    // ─── Full background: dark charcoal ───
-    ctx.fillStyle = '#1a1a1a';
+    // ─── Full background: warm paper white ───
+    ctx.fillStyle = '#fafaf7';
     ctx.fillRect(0, 0, W, H);
 
-    // ─── Harare skyline at top with gradient fade ───
-    var imgH = 400;
-    if (skylineImg) {
-      var srcRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
-      var drawW = W;
-      var drawH = W / srcRatio;
-      var drawY = 0;
-      if (drawH < imgH) {
-        drawH = imgH;
-        drawW = imgH * srcRatio;
-      }
-      var drawX = (W - drawW) / 2;
-      ctx.drawImage(skylineImg, drawX, drawY, drawW, drawH);
+    // ─── Oxford rule at top ───
+    ctx.fillStyle = '#121212';
+    ctx.fillRect(pad, 40, W - pad * 2, 4);
+    ctx.fillRect(pad, 48, W - pad * 2, 1);
 
-      // Warm overlay tint
-      ctx.fillStyle = 'rgba(26, 26, 26, 0.25)';
-      ctx.fillRect(0, 0, W, imgH);
-
-      // Gradient fade into dark background
-      var grad = ctx.createLinearGradient(0, imgH - 160, 0, imgH);
-      grad.addColorStop(0, 'rgba(26, 26, 26, 0)');
-      grad.addColorStop(1, '#1a1a1a');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, imgH - 160, W, 160);
-    }
-
-    // ─── Masthead: "THE MUTAPA TIMES" — big, top-left over the image ───
+    // ─── Masthead: "THE MUTAPA TIMES" ───
     ctx.textBaseline = 'top';
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '700 52px "Playfair Display", Georgia, serif';
-    ctx.fillText('THE MUTAPA TIMES', pad, 48);
+    ctx.fillStyle = '#121212';
+    ctx.font = '900 56px "Playfair Display", Georgia, serif';
+    var mastheadText = 'THE MUTAPA TIMES';
+    var mastheadW = ctx.measureText(mastheadText).width;
+    ctx.fillText(mastheadText, (W - mastheadW) / 2, 62);
 
-    // Gold accent line under masthead
-    ctx.fillStyle = '#c8a96e';
-    ctx.fillRect(pad, 116, 80, 3);
+    // Thin rule under masthead
+    ctx.fillStyle = '#121212';
+    ctx.fillRect(pad, 134, W - pad * 2, 1);
 
-    // ─── Category / Local-Foreign pill ───
-    var y = imgH + 24;
+    // ─── Category / Source label ───
+    var y = 156;
     var contentWidth = W - pad * 2;
-    var pillX = pad;
-    if (articleData.isLocal) {
-      pillX += shareCardDrawPill(ctx, pillX, y, 'LOCAL', '#00897b', '#ffffff');
-    } else if (articleData.source) {
-      pillX += shareCardDrawPill(ctx, pillX, y, 'FOREIGN', 'rgba(255,255,255,0.15)', 'rgba(255,255,255,0.7)');
-    }
-    if (articleData.category) {
-      shareCardDrawPill(ctx, pillX, y, articleData.category.toUpperCase(), '#1a5632', '#ffffff');
-    }
-    if (articleData.isLocal || articleData.source || articleData.category) {
-      y += 44;
+    ctx.font = '600 16px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = '#777';
+    ctx.letterSpacing = '0.1em';
+    var labelParts = [];
+    if (articleData.isLocal) labelParts.push('LOCAL');
+    else if (articleData.source) labelParts.push('FOREIGN');
+    if (articleData.category) labelParts.push(articleData.category.toUpperCase());
+    if (labelParts.length) {
+      ctx.fillText(labelParts.join('  \u2022  '), pad, y);
+      y += 36;
     }
 
-    // ─── Headline — large, white, serif ───
+    // ─── Headline — large, ink black, serif ───
     var titleLen = (articleData.title || '').length;
-    var headlineSize = titleLen > 120 ? 36 : (titleLen > 80 ? 40 : (titleLen > 50 ? 46 : 52));
-    var headlineLineH = Math.round(headlineSize * 1.4);
+    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 42 : (titleLen > 50 ? 48 : 54));
+    var headlineLineH = Math.round(headlineSize * 1.32);
     ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#121212';
     y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 300, 5);
-    y += 24;
+    y += 20;
 
     // ─── Source + date line ───
-    ctx.font = '500 18px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = '#c8a96e';
+    ctx.font = '500 18px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = '#777';
     var metaParts = [];
     if (articleData.source) metaParts.push(articleData.source);
     var pubDate = formatDate(articleData.publishedAt);
@@ -947,25 +1059,17 @@ function generateShareImage(articleData) {
       y += 40;
     }
 
-    // ─── Article image (from GNews) ───
+    // ─── Article image ───
     if (articleImg) {
       var artImgW = contentWidth;
       var artImgH = Math.round(artImgW * 0.52);
-      var maxImgH = H - y - 240; // leave room for footer
+      var maxImgH = H - y - 240;
       if (artImgH > maxImgH) artImgH = maxImgH;
       if (artImgH > 100) {
-        var r = 8;
+        // Sharp corners with thin border — print feel
         ctx.save();
         ctx.beginPath();
-        ctx.moveTo(pad + r, y);
-        ctx.lineTo(pad + artImgW - r, y);
-        ctx.quadraticCurveTo(pad + artImgW, y, pad + artImgW, y + r);
-        ctx.lineTo(pad + artImgW, y + artImgH - r);
-        ctx.quadraticCurveTo(pad + artImgW, y + artImgH, pad + artImgW - r, y + artImgH);
-        ctx.lineTo(pad + r, y + artImgH);
-        ctx.quadraticCurveTo(pad, y + artImgH, pad, y + artImgH - r);
-        ctx.lineTo(pad, y + r);
-        ctx.quadraticCurveTo(pad, y, pad + r, y);
+        ctx.rect(pad, y, artImgW, artImgH);
         ctx.closePath();
         ctx.clip();
         var aRatio = articleImg.naturalWidth / articleImg.naturalHeight;
@@ -975,6 +1079,10 @@ function generateShareImage(articleData) {
         var adY = y + (artImgH - adH) / 2;
         ctx.drawImage(articleImg, adX, adY, adW, adH);
         ctx.restore();
+        // Thin border
+        ctx.strokeStyle = '#d4d4d4';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(pad, y, artImgW, artImgH);
         y += artImgH + 24;
       }
     }
@@ -982,8 +1090,8 @@ function generateShareImage(articleData) {
     // ─── Description snippet ───
     var footerY = H - 150;
     if (articleData.description && y < footerY - 60) {
-      ctx.font = '400 20px "Helvetica Neue", Arial, sans-serif';
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      ctx.font = '400 20px "Inter", "Helvetica Neue", sans-serif';
+      ctx.fillStyle = '#555';
       ctx.textBaseline = 'top';
       var desc = articleData.description;
       if (desc.length > 180) desc = desc.substring(0, 177) + '...';
@@ -991,39 +1099,27 @@ function generateShareImage(articleData) {
     }
 
     // ─── Footer area: CTA + branding ───
-    // Subtle separator line
-    ctx.fillStyle = 'rgba(200, 169, 110, 0.3)';
-    ctx.fillRect(pad, footerY, contentWidth, 1);
-    footerY += 30;
+    // Thin ink rule
+    ctx.fillStyle = '#121212';
+    ctx.fillRect(pad, footerY, contentWidth, 2);
+    footerY += 28;
 
     // Domain
-    ctx.font = '700 22px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 22px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = '#121212';
     ctx.textBaseline = 'top';
     ctx.fillText('mutapatimes.com', pad, footerY);
 
-    // "Sign up for free" CTA pill
-    var ctaText = 'Sign up for free';
-    ctx.font = '700 16px "Helvetica Neue", Arial, sans-serif';
+    // "Read more" CTA pill — rectangular, dark
+    var ctaText = 'Read more';
+    ctx.font = '600 15px "Inter", "Helvetica Neue", sans-serif';
     var ctaW = ctx.measureText(ctaText).width + 32;
-    var ctaH = 36;
+    var ctaH = 34;
     var ctaX = W - pad - ctaW;
-    var ctaY = footerY - 4;
-    var ctaR = 18;
-    ctx.fillStyle = '#c8a96e';
-    ctx.beginPath();
-    ctx.moveTo(ctaX + ctaR, ctaY);
-    ctx.lineTo(ctaX + ctaW - ctaR, ctaY);
-    ctx.quadraticCurveTo(ctaX + ctaW, ctaY, ctaX + ctaW, ctaY + ctaR);
-    ctx.lineTo(ctaX + ctaW, ctaY + ctaH - ctaR);
-    ctx.quadraticCurveTo(ctaX + ctaW, ctaY + ctaH, ctaX + ctaW - ctaR, ctaY + ctaH);
-    ctx.lineTo(ctaX + ctaR, ctaY + ctaH);
-    ctx.quadraticCurveTo(ctaX, ctaY + ctaH, ctaX, ctaY + ctaH - ctaR);
-    ctx.lineTo(ctaX, ctaY + ctaR);
-    ctx.quadraticCurveTo(ctaX, ctaY, ctaX + ctaR, ctaY);
-    ctx.closePath();
-    ctx.fill();
-    ctx.fillStyle = '#1a1a1a';
+    var ctaY = footerY - 2;
+    ctx.fillStyle = '#121212';
+    ctx.fillRect(ctaX, ctaY, ctaW, ctaH);
+    ctx.fillStyle = '#fafaf7';
     ctx.textBaseline = 'middle';
     ctx.fillText(ctaText, ctaX + 16, ctaY + ctaH / 2 + 1);
 
@@ -1139,7 +1235,8 @@ function renderMainStories(articles) {
     var card = $('<article class="main-article">');
     if (rank === 1 && _currentPage === 1) card.addClass("rank-featured");
 
-    var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+    var link = $('<a>').attr('href', a.url || '#');
+    if (!a.isCmsArticle) link.attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     var textCol = $('<div class="main-article-text">');
     textCol.append($('<h3 class="main-article-title">').text(a.title));
@@ -1171,7 +1268,9 @@ function renderMainStories(articles) {
 
     // Line 2: tags + badges, then share (bottom-right for thumb access)
     var tagRow = $('<div class="main-article-tags">');
-    if (a.isLocal) {
+    if (a.isCmsArticle) {
+      tagRow.append($('<span class="press-marker original-press">').text("Original"));
+    } else if (a.isLocal) {
       tagRow.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
       tagRow.append($('<span class="press-marker foreign-press">').text("Foreign"));
@@ -1359,7 +1458,7 @@ function loadSpotlightFromRSS() {
   var _spotlightTimeout = setTimeout(function() {
     if (document.querySelector('#spotlight-stories .loading-msg')) {
       document.querySelector('#spotlight-stories').innerHTML =
-        '<p class="loading-msg" style="color: rgba(255,255,255,0.6);">Spotlight stories are temporarily unavailable.</p>';
+        '<p class="loading-msg">Spotlight stories are temporarily unavailable.</p>';
     }
   }, 15000);
 
@@ -1416,7 +1515,7 @@ function renderSpotlightStories(articles) {
   container.empty();
 
   if (!articles || articles.length === 0) {
-    container.html('<p class="loading-msg" style="color: rgba(255,255,255,0.6);">No spotlight stories available.</p>');
+    container.html('<p class="loading-msg">No spotlight stories available.</p>');
     return;
   }
 
@@ -1425,7 +1524,7 @@ function renderSpotlightStories(articles) {
   var rest = articles.filter(function(a) { return !isReputableSource(a.source) && inferCategory(a.title) === "Business"; });
   articles = reputable.concat(rest).slice(0, 3);
   if (articles.length === 0) {
-    container.html('<p class="loading-msg" style="color: rgba(255,255,255,0.6);">No spotlight stories available.</p>');
+    container.html('<p class="loading-msg">No spotlight stories available.</p>');
     return;
   }
 
