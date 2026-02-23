@@ -15,13 +15,13 @@
   overlay.style.pointerEvents = "none";
   overlay.innerHTML =
     '<div class="gate-card">' +
-      '<div class="gate-badge">Friends &amp; Family Beta</div>' +
+      '<div class="gate-badge">Early Access</div>' +
       '<h1 class="gate-logo">THE MUTAPA TIMES</h1>' +
       '<p class="gate-tagline">Zimbabwe outside-in.</p>' +
       '<hr class="gate-rule">' +
       '<h2 class="gate-headline">Coming Soon</h2>' +
       '<p class="gate-copy">' +
-        'I\u2019m building Zimbabwe\u2019s sharpest news briefing for friends and family \u2014 curated headlines ' +
+        'I\u2019m building Zimbabwe\u2019s sharpest news briefing \u2014 curated headlines ' +
         'from the world\u2019s most trusted newsrooms, original reporting, and market intelligence, all in one place.' +
       '</p>' +
       '<ul class="gate-perks">' +
@@ -35,7 +35,7 @@
         '<input type="email" class="gate-input" id="gate-email" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">' +
         '<button type="submit" class="gate-btn">Get Early Access</button>' +
       '</form>' +
-      '<p class="gate-fine">Invite-only. Friends &amp; family only \u2014 no spam, just news that matters.</p>' +
+      '<p class="gate-fine">Currently testing with friends &amp; family. No spam \u2014 just news that matters.</p>' +
     '</div>';
 
   document.body.appendChild(overlay);
