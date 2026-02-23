@@ -858,7 +858,7 @@ function createShareBtn(title, url) {
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var shareText = title + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
+    var shareText = title + '\n\n\ud83d\udd17 ' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
     var shareData = {
       title: title + ' | The Mutapa Times',
       text: shareText,
@@ -1045,15 +1045,15 @@ function generateShareImage(articleData) {
 
     // ─── Masthead overlay on image ───
     ctx.textBaseline = 'top';
-    ctx.fillStyle = 'rgba(255,255,255,0.9)';
-    ctx.font = '900 48px "Playfair Display", Georgia, serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.95)';
+    ctx.font = '900 68px "Playfair Display", Georgia, serif';
     var mastheadText = 'THE MUTAPA TIMES';
     var mastheadW = ctx.measureText(mastheadText).width;
-    ctx.fillText(mastheadText, (W - mastheadW) / 2, 36);
+    ctx.fillText(mastheadText, (W - mastheadW) / 2, 32);
 
     // Thin rule under masthead
     ctx.fillStyle = 'rgba(255,255,255,0.3)';
-    ctx.fillRect(pad, 100, contentWidth, 1);
+    ctx.fillRect(pad, 116, contentWidth, 1);
 
     // ─── Category / Source pill ───
     var y = skyH + 30;
@@ -1192,7 +1192,7 @@ function createImageShareBtn(articleData) {
     btn.text('\u2026');
 
     generateShareImage(articleData).then(function(blob) {
-      var shareText = articleData.title + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
+      var shareText = articleData.title + '\n\n\ud83d\udd17 ' + (articleData.url || 'https://www.mutapatimes.com') + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
 
       // Try Web Share API with files
       if (navigator.canShare) {
