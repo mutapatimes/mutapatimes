@@ -1238,6 +1238,15 @@ th, td { width:20%; text-align:center; }
   gap: 20px;
 }
 
+/* Filter chips */
+.people-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
 /* Individual card */
 .person-card {
   display: flex;

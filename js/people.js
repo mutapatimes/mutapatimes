@@ -263,6 +263,7 @@
 
   var _allPeople = [];
   var _activeIndex = -1;
+  var _activeFilter = 'all';
 
   function renderGrid(container, people) {
     _allPeople = people;
@@ -441,22 +442,75 @@
     if (e.key === 'Escape' && _activeIndex !== -1) closeDetail();
   });
 
-  // === Search ===
+  // === Filters ===
+
+  function buildFilters(people) {
+    var filtersEl = document.getElementById('people-filters');
+    if (!filtersEl) return;
+
+    // Collect unique occupations and count them
+    var occMap = {};
+    for (var i = 0; i < people.length; i++) {
+      var occs = (people[i].occupation || '').split(',');
+      for (var j = 0; j < occs.length; j++) {
+        var occ = occs[j].trim().toLowerCase();
+        if (!occ) continue;
+        // Normalise to title case for display
+        var display = occ.charAt(0).toUpperCase() + occ.substring(1);
+        if (!occMap[occ]) occMap[occ] = { label: display, count: 0 };
+        occMap[occ].count++;
+      }
+    }
+
+    // Sort by count descending, keep top categories
+    var sorted = [];
+    for (var key in occMap) {
+      if (occMap.hasOwnProperty(key)) sorted.push(occMap[key]);
+    }
+    sorted.sort(function (a, b) { return b.count - a.count; });
+    // Keep roles with 2+ people, max 12 chips
+    var chips = sorted.filter(function (o) { return o.count >= 2; }).slice(0, 12);
+
+    var html = '<button class="category-chip active" data-filter="all">All</button>';
+    for (var c = 0; c < chips.length; c++) {
+      html += '<button class="category-chip" data-filter="' + escapeHtml(chips[c].label.toLowerCase()) + '">'
+        + escapeHtml(chips[c].label) + '</button>';
+    }
+    filtersEl.innerHTML = html;
+
+    // Click handlers
+    var btns = filtersEl.querySelectorAll('.category-chip');
+    for (var b = 0; b < btns.length; b++) {
+      btns[b].addEventListener('click', function () {
+        var prev = filtersEl.querySelector('.category-chip.active');
+        if (prev) prev.classList.remove('active');
+        this.classList.add('active');
+        _activeFilter = this.getAttribute('data-filter');
+        applyFilters();
+      });
+    }
+  }
+
+  function applyFilters() {
+    var input = document.getElementById('people-search');
+    var query = input ? input.value.toLowerCase().trim() : '';
+    var cards = document.querySelectorAll('.person-card');
+    for (var i = 0; i < cards.length; i++) {
+      var idx = parseInt(cards[i].getAttribute('data-index'), 10);
+      var person = _allPeople[idx];
+      var searchable = (person.name + ' ' + person.occupation + ' ' +
+                       (person.company || '') + ' ' + person.description).toLowerCase();
+      var matchesSearch = !query || searchable.indexOf(query) !== -1;
+      var matchesFilter = _activeFilter === 'all' ||
+        (person.occupation || '').toLowerCase().indexOf(_activeFilter) !== -1;
+      cards[i].style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+    }
+  }
 
   function setupSearch() {
     var input = document.getElementById('people-search');
     if (!input) return;
-    input.addEventListener('input', function () {
-      var query = input.value.toLowerCase().trim();
-      var cards = document.querySelectorAll('.person-card');
-      for (var i = 0; i < cards.length; i++) {
-        var idx = parseInt(cards[i].getAttribute('data-index'), 10);
-        var person = _allPeople[idx];
-        var searchable = (person.name + ' ' + person.occupation + ' ' +
-                         (person.company || '') + ' ' + person.description).toLowerCase();
-        cards[i].style.display = searchable.indexOf(query) !== -1 ? '' : 'none';
-      }
-    });
+    input.addEventListener('input', applyFilters);
   }
 
   // === Init ===
@@ -474,6 +528,7 @@
       if (completed === 2) {
         var merged = mergePeople(wikidataResult || [], cmsResult || []);
         renderGrid(container, merged);
+        buildFilters(merged);
         setupSearch();
       }
     }
