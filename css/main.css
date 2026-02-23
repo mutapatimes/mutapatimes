@@ -1659,6 +1659,372 @@ a.person-card:hover { text-decoration: none; color: var(--text); }
 .person-profile-back a:hover { text-decoration: underline; }
 
 /* ==========================================================================
+   Businesses page (businesses.html)
+   ========================================================================== */
+.businesses-page {
+  padding: 36px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.businesses-page-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.businesses-page-desc {
+  text-align: center;
+  color: var(--text-mid);
+  font-size: 0.9em;
+  margin-bottom: 24px;
+}
+.businesses-empty {
+  text-align: center;
+  color: var(--text-mid);
+  padding: 40px 0;
+}
+
+/* Search bar */
+.businesses-search-bar {
+  max-width: 480px;
+  margin: 0 auto 28px;
+}
+.businesses-search-input {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 0.88em;
+  font-family: "Inter", system-ui, sans-serif;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.businesses-search-input:focus {
+  border-color: var(--ink);
+}
+
+/* Card grid */
+.businesses-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Filter chips */
+.businesses-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Individual card */
+.business-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px 20px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text);
+  width: 100%;
+  text-decoration: none;
+}
+a.business-card { text-decoration: none; color: var(--text); }
+a.business-card:hover { text-decoration: none; color: var(--text); }
+.business-card:hover {
+  border-color: var(--ink);
+}
+.business-card-active {
+  border-color: var(--ink);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Card image */
+.business-card-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 14px;
+  border: 2px solid var(--rule);
+  padding: 8px;
+  background: #fff;
+}
+.business-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text-light);
+  border: 2px solid var(--rule);
+}
+
+/* Card text */
+.business-card-body { width: 100%; }
+.business-card-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05em;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.business-card:hover .business-card-name { color: var(--accent); }
+.business-card-industry {
+  font-size: 0.78em;
+  color: var(--text-mid);
+  margin: 0 0 2px;
+  text-transform: capitalize;
+}
+.business-card-hq {
+  font-size: 0.72em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 6px;
+}
+.business-card .press-marker { margin-top: 8px; font-size: 8px; }
+
+/* Detail modal overlay */
+.business-detail {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.business-detail-open {
+  display: flex;
+}
+.business-detail-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.business-detail-inner {
+  position: relative;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  padding: 36px;
+  max-width: 640px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  z-index: 1;
+  animation: modalFadeIn 0.15s ease;
+}
+.business-detail-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: var(--text-light);
+  padding: 0;
+  line-height: 1;
+}
+.business-detail-close:hover { color: var(--ink); }
+
+.business-detail-layout {
+  display: flex;
+  gap: 24px;
+}
+.business-detail-img-wrap { flex-shrink: 0; }
+.business-detail-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+  padding: 8px;
+  background: #fff;
+}
+.business-detail-content {
+  flex: 1;
+  min-width: 0;
+}
+.business-detail-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.business-detail-industry {
+  font-size: 0.85em;
+  color: var(--text-mid);
+  text-transform: capitalize;
+  margin: 0 0 2px;
+}
+.business-detail-hq {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+.business-detail-founded {
+  font-size: 0.82em;
+  color: var(--text-mid);
+  margin: 0 0 10px;
+}
+.business-detail-bio {
+  font-size: 0.88em;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+.business-detail-link {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+}
+.business-detail-links {
+  margin: 0;
+  font-size: 0.82em;
+}
+.business-detail-profile-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.business-detail-profile-link:hover { text-decoration: underline; }
+.business-bio-loading {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Business profile page (business.html)
+   ========================================================================== */
+.business-profile {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 36px 20px 48px;
+}
+.business-profile-breadcrumb {
+  font-size: 0.78em;
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+.business-profile-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.business-profile-breadcrumb a:hover { text-decoration: underline; }
+.business-profile-breadcrumb span { color: var(--text-light); }
+
+.business-profile-header {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+.business-profile-img-wrap { flex-shrink: 0; }
+.business-profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border: 2px solid var(--rule);
+  padding: 12px;
+  background: #fff;
+}
+.business-profile-info { flex: 1; min-width: 0; }
+.business-profile-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.business-profile-industry {
+  font-size: 0.9em;
+  color: var(--text-mid);
+  text-transform: capitalize;
+  margin: 0 0 4px;
+}
+.business-profile-hq {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+.business-profile-founded {
+  font-size: 0.85em;
+  color: var(--text-mid);
+  margin: 0 0 12px;
+}
+.business-profile-extlinks {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.business-profile-extlink {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 4px 12px;
+}
+.business-profile-extlink:hover { border-color: var(--accent); text-decoration: none; color: var(--accent); }
+
+.business-profile-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.business-profile-share-label {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.business-profile-bio {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+.business-profile-bio p { margin-bottom: 18px; }
+
+.business-profile-back {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.business-profile-back a { font-size: 0.88em; color: var(--accent); font-weight: 600; text-decoration: none; }
+.business-profile-back a:hover { text-decoration: underline; }
+
+/* ==========================================================================
    Article share buttons & breadcrumb
    ========================================================================== */
 .article-breadcrumb {
@@ -1786,6 +2152,26 @@ a.person-card:hover { text-decoration: none; color: var(--text); }
   .person-detail-layout { flex-direction: column; gap: 16px; }
   .person-detail-img { width: 100%; height: auto; max-height: 260px; }
   .person-detail-name { font-size: 1.3em; }
+
+  /* Business profile responsive */
+  .business-profile { padding: 20px 12px 30px; }
+  .business-profile-header { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+  .business-profile-img { width: 140px; height: 140px; }
+  .business-profile-name { font-size: 1.5em; }
+  .business-profile-extlinks { justify-content: center; }
+  .business-profile-share { justify-content: center; }
+
+  /* Businesses page responsive */
+  .businesses-page { padding: 24px 12px; }
+  .businesses-page-title { font-size: 1.5em; }
+  .businesses-card-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+  .business-card { padding: 18px 12px 16px; }
+  .business-card-img { width: 90px; height: 90px; }
+  .business-card-name { font-size: 0.95em; }
+  .business-detail-inner { padding: 24px 16px; width: 95%; }
+  .business-detail-layout { flex-direction: column; gap: 16px; }
+  .business-detail-img { width: 100%; height: auto; max-height: 260px; }
+  .business-detail-name { font-size: 1.3em; }
 }
 
 @media (max-width:767px) {
