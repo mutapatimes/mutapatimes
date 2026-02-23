@@ -1700,6 +1700,11 @@ h4 {
   border-bottom: none;
 }
 
+/* Google News RSS verified articles — lighter green accent */
+.spotlight-gnews {
+  background: #236b3e;
+}
+
 /* (spotlight-item a and spotlight-img styles are in the main-column section above) */
 
 .spotlight-title {

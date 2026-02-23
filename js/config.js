@@ -1083,24 +1083,8 @@ function renderMainStories(articles) {
     return !a.url || !_spotlightUrls[a.url];
   });
 
-  // Integrate verified GNews articles at the top, then rest by date
-  var gnewsFiltered = _gnewsMoreArticles.filter(function(a) {
-    return !a.url || !_spotlightUrls[a.url];
-  });
-  // Deduplicate GNews against main articles
-  var mainUrls = {};
-  for (var u = 0; u < filtered.length; u++) {
-    if (filtered[u].url) mainUrls[filtered[u].url] = true;
-  }
-  gnewsFiltered = gnewsFiltered.filter(function(a) {
-    return !a.url || !mainUrls[a.url];
-  });
-
-  // GNews verified articles first, then main feed articles by date
-  var combined = gnewsFiltered.concat(filtered);
-
-  for (var i = 0; i < combined.length && i < 25; i++) {
-    var a = combined[i];
+  for (var i = 0; i < filtered.length && i < 25; i++) {
+    var a = filtered[i];
     var rank = i + 1;
     var readTime = getReadingTime(a.description);
     var pubDate = formatDate(a.publishedAt);
@@ -1257,15 +1241,11 @@ function loadSpotlightStories() {
     success: function(data) {
       if (data && data.articles && data.articles.length > 0) {
         setCache(cacheKey, data.articles);
-        renderSpotlightStories(data.articles);
-        // Store remaining verified GNews articles for main feed integration
+        // Populate verified GNews extras before rendering so spotlight can use them
         if (data.more && data.more.length > 0) {
           _gnewsMoreArticles = data.more.filter(function(a) { return isReputableSource(a.source); });
-          // Re-render main stories if already loaded to integrate GNews articles
-          if (_allMainArticles.length > 0) {
-            renderMainStories(_allMainArticles);
-          }
         }
+        renderSpotlightStories(data.articles);
       } else {
         loadSpotlightFromRSS();
       }
@@ -1406,6 +1386,46 @@ function renderSpotlightStories(articles) {
     link.append(textWrap);
     item.append(link);
     container.append(item);
+  }
+
+  // Append up to 2 verified Google News RSS articles with green accent
+  var gnewsExtras = _gnewsMoreArticles.filter(function(a) {
+    return a.url && !_spotlightUrls[a.url];
+  }).slice(0, 2);
+  for (var j = 0; j < gnewsExtras.length; j++) {
+    var g = gnewsExtras[j];
+    if (g.url) _spotlightUrls[g.url] = true;
+    var gDate = formatDate(g.publishedAt);
+    var gItem = $('<article class="spotlight-item spotlight-gnews">');
+    var gLink = $('<a>').attr('href', g.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+    if (g.image) {
+      gLink.append($('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || ''));
+    }
+    var gText = $('<div class="spotlight-text">');
+    gText.append($('<h4 class="spotlight-title">').text(g.title));
+    var gDesc = g.description;
+    if (gDesc && gDesc.length > 200) gDesc = gDesc.substring(0, 200) + "...";
+    if (gDesc) gText.append($('<p class="spotlight-desc">').text(gDesc));
+    var gMeta = $('<p class="spotlight-meta">');
+    if (g.source) {
+      gMeta.append($('<span class="verified-source">').text(g.source));
+      gMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+    }
+    if (gDate) {
+      if (g.source) gMeta.append(document.createTextNode(" \u00b7 "));
+      var gTimeEl = $('<time>').text(gDate);
+      try { var gDt = new Date(g.publishedAt); if (!isNaN(gDt.getTime())) gTimeEl.attr('datetime', gDt.toISOString()); } catch (e) {}
+      gMeta.append(gTimeEl);
+    }
+    gMeta.append(createShareGroup(g.title, g.url, {
+      title: g.title, source: g.source, description: gDesc,
+      url: g.url, category: '', isLocal: false,
+      publishedAt: g.publishedAt, image: g.image || ''
+    }));
+    gText.append(gMeta);
+    gLink.append(gText);
+    gItem.append(gLink);
+    container.append(gItem);
   }
 
   // Inject structured data for SEO

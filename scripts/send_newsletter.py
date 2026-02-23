@@ -39,6 +39,29 @@ DAY_GREETINGS = {
 }
 
 
+REPUTABLE_SOURCES = [
+    "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
+    "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
+    "bloomberg", "associated press", "ap news", "apnews", "washington post",
+    "cnn", "sky news", "the telegraph", "the independent", "france 24",
+    "dw", "deutsche welle", "npr", "pbs", "abc news", "time magazine",
+    "foreign policy", "the conversation",
+    "voa", "voice of america", "rfi", "africanews",
+    "allafrica", "all africa", "daily maverick", "mail & guardian",
+    "news24", "the east african", "sabc", "nation africa", "the citizen",
+    "eyewitness news", "iol", "timeslive", "sunday times",
+    "south china morning post", "scmp",
+]
+
+
+def is_reputable_source(source):
+    """Check if source matches a known reputable outlet."""
+    if not source:
+        return False
+    s = source.lower() if isinstance(source, str) else str(source).lower()
+    return any(r in s for r in REPUTABLE_SOURCES)
+
+
 # ── Brevo API helper ───────────────────────────────────────
 def brevo_request(endpoint, payload=None, method="POST"):
     """Make authenticated request to Brevo API."""
@@ -116,16 +139,28 @@ def titles_are_similar(t1, t2, threshold=0.65):
 
 
 def load_spotlight():
-    """Read spotlight articles from data/spotlight.json — max 30 days old, reputable only."""
+    """Read spotlight articles + verified extras from data/spotlight.json.
+
+    Returns (main_spotlight, gnews_extras) where gnews_extras are up to 2
+    verified Google News RSS articles for the green accent section.
+    """
     filepath = os.path.join(DATA_DIR, "spotlight.json")
     if not os.path.exists(filepath):
-        return []
+        return [], []
     with open(filepath) as f:
         data = json.load(f)
     articles = data.get("articles", [])
     # Strict date filter — no old content in spotlight
     fresh = [a for a in articles if is_article_fresh(a, SPOTLIGHT_MAX_AGE_DAYS)]
-    return fresh[:3]
+    main = fresh[:3]
+    main_urls = {a.get("url", "") for a in main if a.get("url")}
+
+    # Load up to 2 verified extras from the "more" array
+    more = data.get("more", [])
+    extras = [a for a in more if is_article_fresh(a, SPOTLIGHT_MAX_AGE_DAYS)
+              and a.get("url") not in main_urls
+              and is_reputable_source(a.get("source", ""))][:2]
+    return main, extras
 
 
 def load_articles(exclude_urls=None):
@@ -263,8 +298,8 @@ def whatsapp_share_link(title, url, color="rgba(255,255,255,0.5)", size="11px"):
     )
 
 
-def build_spotlight_html(spotlight_articles):
-    """Build the dark-green spotlight section HTML."""
+def build_spotlight_html(spotlight_articles, gnews_extras=None):
+    """Build the dark-green spotlight section HTML with optional green-accent extras."""
     if not spotlight_articles:
         return ""
 
@@ -326,6 +361,65 @@ def build_spotlight_html(spotlight_articles):
             '</tr>'
         )
 
+    # Build green-accent rows for verified Google News RSS extras
+    extras_rows = ""
+    if gnews_extras:
+        for a in gnews_extras:
+            title = escape_html(a.get("title", "No title"))
+            raw_title = a.get("title", "No title")
+            url = escape_html(a.get("url", "#"))
+            raw_url = a.get("url", "#")
+            desc = a.get("description", "")
+            if desc and len(desc) > 200:
+                desc = desc[:197] + "..."
+            desc = escape_html(desc)
+            image = a.get("image", "")
+            source = a.get("source", "")
+            source_name = escape_html(source if isinstance(source, str) else source.get("name", ""))
+            pub_date = format_date(a.get("publishedAt", ""))
+            meta_parts = [p for p in [source_name, pub_date] if p]
+            meta_line = " &middot; ".join(meta_parts)
+            wa_link = whatsapp_share_link(raw_title, raw_url, color="rgba(255,255,255,0.5)", size="11px")
+
+            image_html = ""
+            if image:
+                image_html = (
+                    '<tr>'
+                    '<td style="padding:0;font-size:0;line-height:0;">'
+                    f'<a href="{url}" target="_blank" style="text-decoration:none;">'
+                    f'<img src="{escape_html(image)}" alt="{title}" width="600" '
+                    'style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
+                    '</a>'
+                    '</td>'
+                    '</tr>'
+                )
+
+            desc_html = ""
+            if desc:
+                desc_html = (
+                    '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+                    f'color:rgba(255,255,255,0.75);margin:6px 0 0;line-height:1.5;">{desc}</p>'
+                )
+
+            extras_rows += (
+                f'{image_html}'
+                '<tr>'
+                '<td style="padding:14px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.12);">'
+                f'<a href="{url}" target="_blank" '
+                'style="font-family:Georgia,\'Times New Roman\',serif;'
+                'font-size:18px;font-weight:700;color:#ffffff;'
+                f'text-decoration:none;line-height:1.3;">{title}</a>'
+                f'{desc_html}'
+                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+                'color:rgba(255,255,255,0.45);margin:6px 0 0;'
+                f'text-transform:uppercase;letter-spacing:0.04em;">'
+                f'{meta_line}'
+                f' &nbsp;&middot;&nbsp; {wa_link}'
+                '</p>'
+                '</td>'
+                '</tr>'
+            )
+
     return (
         '<!-- Spotlight Section -->'
         '<tr>'
@@ -344,14 +438,25 @@ def build_spotlight_html(spotlight_articles):
         '</table>'
         '</td>'
         '</tr>'
+        + (
+            '<tr>'
+            '<td style="background:#236b3e;padding:0;">'
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            'style="border-collapse:collapse;">'
+            f'{extras_rows}'
+            '</table>'
+            '</td>'
+            '</tr>'
+            if extras_rows else ''
+        )
     )
 
 
-def build_html(spotlight_articles, category_articles):
+def build_html(spotlight_articles, category_articles, gnews_extras=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
-    total_count = len(spotlight_articles) + len(category_articles)
+    total_count = len(spotlight_articles) + len(category_articles) + len(gnews_extras or [])
 
     # Preheader: top spotlight headline or fallback
     if spotlight_articles:
@@ -359,7 +464,7 @@ def build_html(spotlight_articles, category_articles):
     else:
         preheader = f"Top Zimbabwe headlines from foreign press &mdash; {date_display}"
 
-    spotlight_html = build_spotlight_html(spotlight_articles)
+    spotlight_html = build_spotlight_html(spotlight_articles, gnews_extras=gnews_extras)
 
     # Build category article rows
     rows = ""
@@ -671,11 +776,11 @@ def main():
         sys.exit(1)
 
     print("Loading spotlight articles...")
-    spotlight = load_spotlight()
-    print(f"  Found {len(spotlight)} spotlight articles")
+    spotlight, gnews_extras = load_spotlight()
+    print(f"  Found {len(spotlight)} spotlight articles + {len(gnews_extras)} verified extras")
 
-    # Collect spotlight URLs to avoid duplicates in category headlines
-    spotlight_urls = {a.get("url", "") for a in spotlight if a.get("url")}
+    # Collect spotlight + extras URLs to avoid duplicates in category headlines
+    spotlight_urls = {a.get("url", "") for a in spotlight + gnews_extras if a.get("url")}
 
     print("Loading category articles...")
     articles = load_articles(exclude_urls=spotlight_urls)
@@ -687,7 +792,7 @@ def main():
     print(f"  Selected {len(top)} category articles for newsletter")
 
     print("Building email HTML...")
-    html, total_count = build_html(spotlight, top)
+    html, total_count = build_html(spotlight, top, gnews_extras=gnews_extras)
 
     # Dynamic subject line: "Monday morning briefing — 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)
