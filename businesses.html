@@ -4,8 +4,8 @@
     <head>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />
-    <title>Articles | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/articles.html">
+    <title>Mutapa Businesses | The Mutapa Times</title>
+    <link rel="canonical" href="https://www.mutapatimes.com/businesses.html">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,9 +20,9 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <meta name="title" content="Articles | The Mutapa Times">
-<meta name="description" content="Original articles, analysis, and opinion from The Mutapa Times covering Zimbabwe business, politics, technology, and culture.">
-<meta name="keywords" content="The Mutapa Times, articles, Zimbabwe, opinion, analysis, business, politics">
+    <meta name="title" content="Mutapa Businesses | The Mutapa Times">
+<meta name="description" content="Notable Zimbabwean businesses, companies, and organisations. Profiles powered by Wikidata and The Mutapa Times editorial team.">
+<meta name="keywords" content="The Mutapa Times, Zimbabwe, businesses, companies, organisations, economy, corporate">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
@@ -30,16 +30,16 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Articles | The Mutapa Times">
-<meta property="og:description" content="Original articles, analysis, and opinion from The Mutapa Times.">
+<meta property="og:title" content="Mutapa Businesses | The Mutapa Times">
+<meta property="og:description" content="Notable Zimbabwean businesses, companies, and organisations.">
 <meta property="og:image" content="https://www.mutapatimes.com/img/banner.png">
-<meta property="og:url" content="https://www.mutapatimes.com/articles.html">
+<meta property="og:url" content="https://www.mutapatimes.com/businesses.html">
 <meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@mutapatimes">
-<meta name="twitter:title" content="Articles | The Mutapa Times">
-<meta name="twitter:description" content="Original articles, analysis, and opinion from The Mutapa Times.">
+<meta name="twitter:title" content="Mutapa Businesses | The Mutapa Times">
+<meta name="twitter:description" content="Notable Zimbabwean businesses, companies, and organisations.">
 <meta name="twitter:image" content="https://www.mutapatimes.com/img/banner.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -80,13 +80,13 @@
           <a target="_self" class="economy-btn" href="economy.html">Live Economy Data</a>
       </p>
       <p>
-          <a target="_self" class="active notranslate" href="articles.html">Articles</a>
+          <a target="_self" class="notranslate" href="articles.html">Articles</a>
       </p>
       <p>
           <a target="_self" class="notranslate" href="people.html">People</a>
       </p>
       <p>
-          <a target="_self" class="notranslate" href="businesses.html">Businesses</a>
+          <a target="_self" class="active notranslate" href="businesses.html">Businesses</a>
       </p>
   </nav>
   <hr class="topHr">
@@ -98,16 +98,21 @@
   </div>
   <hr class="dateHr">
 
-  <!-- Articles listing -->
+  <!-- Businesses listing -->
   <main>
-    <div class="articles-page">
-      <h2 class="articles-page-title">Original Articles</h2>
-      <p class="articles-page-desc">Analysis, opinion, and original reporting from The Mutapa Times.</p>
-      <div id="articles-list">
-        <p class="loading-msg">Loading articles&#8230;</p>
+    <div class="businesses-page">
+      <h2 class="businesses-page-title">Mutapa Businesses</h2>
+      <p class="businesses-page-desc">Notable Zimbabwean businesses, companies, and organisations.</p>
+      <div class="businesses-search-bar">
+        <input type="text" id="businesses-search" class="businesses-search-input" placeholder="Search by name, industry, or location..." aria-label="Search businesses">
+      </div>
+      <div id="businesses-filters" class="businesses-filters" role="navigation" aria-label="Filter businesses by industry"></div>
+      <div id="businesses-grid">
+        <p class="loading-msg">Loading businesses&#8230;</p>
       </div>
     </div>
   </main>
+  <div id="business-detail" class="business-detail" role="dialog" aria-modal="true" aria-live="polite"></div>
 
   <hr class="dateHr">
 
@@ -167,7 +172,7 @@
 </div>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="js/articles.js"></script>
+  <script src="js/businesses.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
