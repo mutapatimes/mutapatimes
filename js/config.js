@@ -994,41 +994,51 @@ function generateShareImage(articleData) {
     var skylineImg = results[1];
     var articleImg = results[2];
 
-    // Portrait format — tall card like Guardian/Semafor examples
+    // Portrait format — dark card with skyline image fade
     var W = 1080, H = 1350;
     var canvas = document.createElement('canvas');
     canvas.width = W;
     canvas.height = H;
     var ctx = canvas.getContext('2d');
     var pad = 64;
+    var contentWidth = W - pad * 2;
 
-    // ─── Full background: warm paper white ───
-    ctx.fillStyle = '#fafaf7';
+    // ─── Dark background ───
+    ctx.fillStyle = '#0f1a12';
     ctx.fillRect(0, 0, W, H);
 
-    // ─── Oxford rule at top ───
-    ctx.fillStyle = '#121212';
-    ctx.fillRect(pad, 40, W - pad * 2, 4);
-    ctx.fillRect(pad, 48, W - pad * 2, 1);
+    // ─── Skyline image at top with gradient fade ───
+    var skyH = 420;
+    if (skylineImg) {
+      var sRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
+      var sW = W, sH = W / sRatio;
+      if (sH < skyH) { sH = skyH; sW = skyH * sRatio; }
+      var sX = (W - sW) / 2, sY = 0;
+      ctx.drawImage(skylineImg, sX, sY, sW, sH);
+      // Gradient fade from image into dark bg
+      var fadeGrd = ctx.createLinearGradient(0, skyH * 0.3, 0, skyH);
+      fadeGrd.addColorStop(0, 'rgba(15,26,18,0)');
+      fadeGrd.addColorStop(1, 'rgba(15,26,18,1)');
+      ctx.fillStyle = fadeGrd;
+      ctx.fillRect(0, 0, W, skyH);
+    }
 
-    // ─── Masthead: "THE MUTAPA TIMES" ───
+    // ─── Masthead overlay on image ───
     ctx.textBaseline = 'top';
-    ctx.fillStyle = '#121212';
-    ctx.font = '900 56px "Playfair Display", Georgia, serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.9)';
+    ctx.font = '900 48px "Playfair Display", Georgia, serif';
     var mastheadText = 'THE MUTAPA TIMES';
     var mastheadW = ctx.measureText(mastheadText).width;
-    ctx.fillText(mastheadText, (W - mastheadW) / 2, 62);
+    ctx.fillText(mastheadText, (W - mastheadW) / 2, 36);
 
     // Thin rule under masthead
-    ctx.fillStyle = '#121212';
-    ctx.fillRect(pad, 134, W - pad * 2, 1);
+    ctx.fillStyle = 'rgba(255,255,255,0.3)';
+    ctx.fillRect(pad, 100, contentWidth, 1);
 
-    // ─── Category / Source label ───
-    var y = 156;
-    var contentWidth = W - pad * 2;
-    ctx.font = '600 16px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = '#777';
-    ctx.letterSpacing = '0.1em';
+    // ─── Category / Source pill ───
+    var y = skyH + 30;
+    ctx.font = '600 15px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.5)';
     var labelParts = [];
     if (articleData.isLocal) labelParts.push('LOCAL');
     else if (articleData.source) labelParts.push('FOREIGN');
@@ -1038,18 +1048,18 @@ function generateShareImage(articleData) {
       y += 36;
     }
 
-    // ─── Headline — large, ink black, serif ───
+    // ─── Headline — large, white, serif ───
     var titleLen = (articleData.title || '').length;
-    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 42 : (titleLen > 50 ? 48 : 54));
-    var headlineLineH = Math.round(headlineSize * 1.32);
+    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 44 : (titleLen > 50 ? 50 : 58));
+    var headlineLineH = Math.round(headlineSize * 1.3);
     ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
-    ctx.fillStyle = '#121212';
-    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 300, 5);
-    y += 20;
+    ctx.fillStyle = '#ffffff';
+    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 340, 5);
+    y += 24;
 
     // ─── Source + date line ───
     ctx.font = '500 18px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = '#777';
+    ctx.fillStyle = 'rgba(255,255,255,0.6)';
     var metaParts = [];
     if (articleData.source) metaParts.push(articleData.source);
     var pubDate = formatDate(articleData.publishedAt);
@@ -1059,17 +1069,26 @@ function generateShareImage(articleData) {
       y += 40;
     }
 
-    // ─── Article image ───
+    // ─── Article image (if available) ───
     if (articleImg) {
       var artImgW = contentWidth;
-      var artImgH = Math.round(artImgW * 0.52);
+      var artImgH = Math.round(artImgW * 0.5);
       var maxImgH = H - y - 240;
       if (artImgH > maxImgH) artImgH = maxImgH;
       if (artImgH > 100) {
-        // Sharp corners with thin border — print feel
         ctx.save();
+        // Rounded corners
+        var r = 8;
         ctx.beginPath();
-        ctx.rect(pad, y, artImgW, artImgH);
+        ctx.moveTo(pad + r, y);
+        ctx.lineTo(pad + artImgW - r, y);
+        ctx.quadraticCurveTo(pad + artImgW, y, pad + artImgW, y + r);
+        ctx.lineTo(pad + artImgW, y + artImgH - r);
+        ctx.quadraticCurveTo(pad + artImgW, y + artImgH, pad + artImgW - r, y + artImgH);
+        ctx.lineTo(pad + r, y + artImgH);
+        ctx.quadraticCurveTo(pad, y + artImgH, pad, y + artImgH - r);
+        ctx.lineTo(pad, y + r);
+        ctx.quadraticCurveTo(pad, y, pad + r, y);
         ctx.closePath();
         ctx.clip();
         var aRatio = articleImg.naturalWidth / articleImg.naturalHeight;
@@ -1079,55 +1098,62 @@ function generateShareImage(articleData) {
         var adY = y + (artImgH - adH) / 2;
         ctx.drawImage(articleImg, adX, adY, adW, adH);
         ctx.restore();
-        // Thin border
-        ctx.strokeStyle = '#d4d4d4';
-        ctx.lineWidth = 1;
-        ctx.strokeRect(pad, y, artImgW, artImgH);
         y += artImgH + 24;
       }
     }
 
     // ─── Description snippet ───
-    var footerY = H - 150;
+    var footerY = H - 160;
     if (articleData.description && y < footerY - 60) {
       ctx.font = '400 20px "Inter", "Helvetica Neue", sans-serif';
-      ctx.fillStyle = '#555';
+      ctx.fillStyle = 'rgba(255,255,255,0.55)';
       ctx.textBaseline = 'top';
       var desc = articleData.description;
       if (desc.length > 180) desc = desc.substring(0, 177) + '...';
       y = shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, footerY - 20, 3);
     }
 
-    // ─── Footer area: CTA + branding ───
-    // Thin ink rule
-    ctx.fillStyle = '#121212';
-    ctx.fillRect(pad, footerY, contentWidth, 2);
-    footerY += 28;
+    // ─── Footer area ───
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    ctx.fillRect(pad, footerY, contentWidth, 1);
+    footerY += 24;
 
     // Domain
     ctx.font = '700 22px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = '#121212';
+    ctx.fillStyle = '#ffffff';
     ctx.textBaseline = 'top';
     ctx.fillText('mutapatimes.com', pad, footerY);
 
-    // "Read more" CTA pill — rectangular, dark
+    // "Read more" CTA pill — brand green
     var ctaText = 'Read more';
     ctx.font = '600 15px "Inter", "Helvetica Neue", sans-serif';
     var ctaW = ctx.measureText(ctaText).width + 32;
     var ctaH = 34;
     var ctaX = W - pad - ctaW;
     var ctaY = footerY - 2;
-    ctx.fillStyle = '#121212';
-    ctx.fillRect(ctaX, ctaY, ctaW, ctaH);
-    ctx.fillStyle = '#fafaf7';
+    var ctaR = 4;
+    ctx.fillStyle = '#2e7d42';
+    ctx.beginPath();
+    ctx.moveTo(ctaX + ctaR, ctaY);
+    ctx.lineTo(ctaX + ctaW - ctaR, ctaY);
+    ctx.quadraticCurveTo(ctaX + ctaW, ctaY, ctaX + ctaW, ctaY + ctaR);
+    ctx.lineTo(ctaX + ctaW, ctaY + ctaH - ctaR);
+    ctx.quadraticCurveTo(ctaX + ctaW, ctaY + ctaH, ctaX + ctaW - ctaR, ctaY + ctaH);
+    ctx.lineTo(ctaX + ctaR, ctaY + ctaH);
+    ctx.quadraticCurveTo(ctaX, ctaY + ctaH, ctaX, ctaY + ctaH - ctaR);
+    ctx.lineTo(ctaX, ctaY + ctaR);
+    ctx.quadraticCurveTo(ctaX, ctaY, ctaX + ctaR, ctaY);
+    ctx.closePath();
+    ctx.fill();
+    ctx.fillStyle = '#ffffff';
     ctx.textBaseline = 'middle';
     ctx.fillText(ctaText, ctaX + 16, ctaY + ctaH / 2 + 1);
 
-    // Tagline below — with breathing room
+    // Tagline
     ctx.textBaseline = 'top';
     ctx.font = '400 16px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.4)';
-    ctx.fillText('Business & intelligence \u2014 Zimbabwe, outside-in', pad, footerY + 44);
+    ctx.fillStyle = 'rgba(255,255,255,0.35)';
+    ctx.fillText('Business & intelligence \u2014 Zimbabwe, outside-in', pad, footerY + 48);
 
     // Convert to blob
     return new Promise(function(resolve) {
@@ -1137,7 +1163,7 @@ function generateShareImage(articleData) {
 }
 
 function createImageShareBtn(articleData) {
-  var btn = $('<button class="image-share-btn" title="Share as image">').html(IMAGE_SHARE_ICON_SVG);
+  var btn = $('<button class="image-share-btn" title="Share">').html(SHARE_ICON_SVG);
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -1181,9 +1207,13 @@ function createImageShareBtn(articleData) {
 
 function createShareGroup(title, url, articleData) {
   var group = $('<span class="share-group">');
-  group.append(createShareBtn(title, url));
   group.append(createWhatsAppBtn(title, url));
-  if (articleData) group.append(createImageShareBtn(articleData));
+  // Share icon = image card by default
+  if (articleData) {
+    group.append(createImageShareBtn(articleData));
+  } else {
+    group.append(createShareBtn(title, url));
+  }
   return group;
 }
 
