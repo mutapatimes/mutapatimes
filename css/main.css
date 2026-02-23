@@ -803,9 +803,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 5px 6px;
-  padding: 14px 18px;
+  padding: 12px 20px;
   background: #faf8f5;
   border-bottom: 1px solid rgba(200, 169, 110, 0.3);
+  border-top: 1px solid rgba(200, 169, 110, 0.3);
 }
 
 .category-chip {
