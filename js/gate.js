@@ -1,7 +1,8 @@
 /**
- * Email gate — friends & family beta wall.
+ * Email gate — early access wall.
  * Shows content for 3 seconds, then blurs it and slides in the gate.
- * Header stays visible above the overlay.
+ * On mobile: bottom sheet covering 3/4 of screen.
+ * On desktop: centered card.
  */
 (function () {
   var STORAGE_KEY = "mutapa_gate_email";
@@ -16,26 +17,15 @@
   overlay.innerHTML =
     '<div class="gate-card">' +
       '<div class="gate-badge">Early Access</div>' +
-      '<h1 class="gate-logo">THE MUTAPA TIMES</h1>' +
-      '<p class="gate-tagline">Zimbabwe outside-in.</p>' +
-      '<hr class="gate-rule">' +
       '<h2 class="gate-headline">Coming Soon</h2>' +
       '<p class="gate-copy">' +
-        'I\u2019m building Zimbabwe\u2019s sharpest news briefing \u2014 curated headlines ' +
-        'from the world\u2019s most trusted newsrooms, original reporting, and market intelligence, all in one place.' +
+        'Zimbabwe\u2019s sharpest news briefing \u2014 trusted sources, original reporting, and market intelligence in one place.' +
       '</p>' +
-      '<ul class="gate-perks">' +
-        '<li>Curated Zimbabwe news from BBC, Reuters, Bloomberg &amp; more</li>' +
-        '<li>Original articles &amp; exclusive analysis</li>' +
-        '<li>Live economic data &amp; market indicators</li>' +
-        '<li>Notable Zimbabwean leaders &amp; executives directory</li>' +
-      '</ul>' +
-      '<p class="gate-cta-label">Enter your email to get early access:</p>' +
       '<form class="gate-form" id="gate-form">' +
         '<input type="email" class="gate-input" id="gate-email" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">' +
-        '<button type="submit" class="gate-btn">Get Early Access</button>' +
+        '<button type="submit" class="gate-btn">Get Access</button>' +
       '</form>' +
-      '<p class="gate-fine">Currently testing with friends &amp; family. No spam \u2014 just news that matters.</p>' +
+      '<p class="gate-fine">Currently testing with friends &amp; family.</p>' +
     '</div>';
 
   document.body.appendChild(overlay);
