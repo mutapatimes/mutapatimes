@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: mutapatimes/mutapatimes
-  branch: claude/mutapa-times-research-bTrVj
+  branch: main
   auth_type: pkce
   app_id: Ov23liwBjTZRj59xqMvf
 
