@@ -65,6 +65,8 @@ var REPUTABLE_SOURCES = [
   "allafrica", "all africa", "daily maverick", "mail & guardian",
   "news24", "the east african", "sabc", "nation africa", "the citizen",
   "eyewitness news", "iol", "timeslive", "sunday times",
+  // Major digital news platforms
+  "yahoo", "yahoo news",
   // Asia-Pacific
   "south china morning post", "scmp"
 ];
