@@ -1117,19 +1117,35 @@ h4 { color: var(--ink); font-weight: 700; }
 .cookie-consent-btn:hover { background: #a01818; }
 
 /* ── Email gate overlay ── */
+
+/* When gate is active: blur everything below the header */
+body.gate-active main,
+body.gate-active main ~ *,
+body.gate-active .tradingview-widget-container,
+body.gate-active footer,
+body.gate-active .back-to-top {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+  transition: filter 0.6s ease;
+}
+
 #gate-overlay {
-  position: fixed; inset: 0; z-index: 99999;
-  background: rgba(15,12,8,0.92);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  background: rgba(255,255,255,0.7);
   display: flex; align-items: center; justify-content: center;
   padding: 24px;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.5s ease;
 }
 .gate-card {
   background: #fff; color: var(--ink, #1a1a1a);
   max-width: 520px; width: 100%;
   padding: 48px 40px 40px;
   text-align: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  border: 1px solid var(--rule, #ddd);
 }
 .gate-badge {
   display: inline-block;

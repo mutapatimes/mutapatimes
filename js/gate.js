@@ -1,18 +1,18 @@
 /**
  * Email gate — friends & family beta wall.
- * Stores email in localStorage so returning readers pass through.
+ * Shows content for 3 seconds, then blurs it and slides in the gate.
+ * Header stays visible above the overlay.
  */
 (function () {
   var STORAGE_KEY = "mutapa_gate_email";
 
   if (localStorage.getItem(STORAGE_KEY)) return; // already admitted
 
-  // Block scrolling
-  document.documentElement.style.overflow = "hidden";
-
-  // Build overlay
+  // Build overlay (hidden initially — fades in after 3s)
   var overlay = document.createElement("div");
   overlay.id = "gate-overlay";
+  overlay.style.opacity = "0";
+  overlay.style.pointerEvents = "none";
   overlay.innerHTML =
     '<div class="gate-card">' +
       '<div class="gate-badge">Friends &amp; Family Beta</div>' +
@@ -21,11 +21,11 @@
       '<hr class="gate-rule">' +
       '<h2 class="gate-headline">Coming Soon</h2>' +
       '<p class="gate-copy">' +
-        'We\u2019re building Zimbabwe\u2019s sharpest news briefing \u2014 curated headlines from the world\u2019s ' +
-        'most trusted newsrooms, original reporting, and market intelligence, delivered in one place.' +
+        'I\u2019m building Zimbabwe\u2019s sharpest news briefing for friends and family \u2014 curated headlines ' +
+        'from the world\u2019s most trusted newsrooms, original reporting, and market intelligence, all in one place.' +
       '</p>' +
       '<ul class="gate-perks">' +
-        '<li>Daily briefing of Zimbabwe news from BBC, Reuters, Bloomberg &amp; more</li>' +
+        '<li>Curated Zimbabwe news from BBC, Reuters, Bloomberg &amp; more</li>' +
         '<li>Original articles &amp; exclusive analysis</li>' +
         '<li>Live economic data &amp; market indicators</li>' +
         '<li>Notable Zimbabwean leaders &amp; executives directory</li>' +
@@ -35,10 +35,17 @@
         '<input type="email" class="gate-input" id="gate-email" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">' +
         '<button type="submit" class="gate-btn">Get Early Access</button>' +
       '</form>' +
-      '<p class="gate-fine">Invite-only. No spam \u2014 just news that matters.</p>' +
+      '<p class="gate-fine">Invite-only. Friends &amp; family only \u2014 no spam, just news that matters.</p>' +
     '</div>';
 
   document.body.appendChild(overlay);
+
+  // After 3 seconds: blur content, show overlay
+  setTimeout(function () {
+    document.body.classList.add("gate-active");
+    overlay.style.opacity = "1";
+    overlay.style.pointerEvents = "";
+  }, 3000);
 
   // Handle submit
   document.getElementById("gate-form").addEventListener("submit", function (e) {
@@ -48,11 +55,12 @@
 
     localStorage.setItem(STORAGE_KEY, email);
 
-    // Fade out
+    // Fade out & unblur
     overlay.style.opacity = "0";
-    document.documentElement.style.overflow = "";
+    overlay.style.pointerEvents = "none";
+    document.body.classList.remove("gate-active");
     setTimeout(function () {
       overlay.parentNode.removeChild(overlay);
-    }, 400);
+    }, 500);
   });
 })();
