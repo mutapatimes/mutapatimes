@@ -3,8 +3,8 @@
 
     <head>
     <meta charset="utf-8">
-    <title>Article | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/article.html">
+    <title>Mutapa People | The Mutapa Times</title>
+    <link rel="canonical" href="https://www.mutapatimes.com/people.html">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,10 +19,27 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <meta name="robots" content="index, follow">
+    <meta name="title" content="Mutapa People | The Mutapa Times">
+<meta name="description" content="Notable Zimbabwean business leaders, entrepreneurs, and executives. Profiles powered by Wikidata and The Mutapa Times editorial team.">
+<meta name="keywords" content="The Mutapa Times, Zimbabwe, business, entrepreneurs, leaders, executives, people">
+<meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="author" content="Valentine Eluwasi">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mutapa People | The Mutapa Times">
+<meta property="og:description" content="Notable Zimbabwean business leaders, entrepreneurs, and executives.">
+<meta property="og:image" content="https://www.mutapatimes.com/img/banner.png">
+<meta property="og:url" content="https://www.mutapatimes.com/people.html">
+<meta property="og:site_name" content="The Mutapa Times">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@mutapatimes">
+<meta name="twitter:title" content="Mutapa People | The Mutapa Times">
+<meta name="twitter:description" content="Notable Zimbabwean business leaders, entrepreneurs, and executives.">
+<meta name="twitter:image" content="https://www.mutapatimes.com/img/banner.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -61,10 +78,10 @@
           <a target="_self" class="economy-btn" href="economy.html">Live Economy Data</a>
       </p>
       <p>
-          <a target="_self" class="active notranslate" href="articles.html">Articles</a>
+          <a target="_self" class="notranslate" href="articles.html">Articles</a>
       </p>
       <p>
-          <a target="_self" class="notranslate" href="people.html">People</a>
+          <a target="_self" class="active notranslate" href="people.html">People</a>
       </p>
   </nav>
   <hr class="topHr">
@@ -76,11 +93,19 @@
   </div>
   <hr class="dateHr">
 
-  <!-- Single article view -->
+  <!-- People listing -->
   <main>
-    <article class="article-full" id="article-content">
-      <p class="loading-msg">Loading article&#8230;</p>
-    </article>
+    <div class="people-page">
+      <h2 class="people-page-title">Mutapa People</h2>
+      <p class="people-page-desc">Notable Zimbabwean business leaders, entrepreneurs, and executives.</p>
+      <div class="people-search-bar">
+        <input type="text" id="people-search" class="people-search-input" placeholder="Search by name, company, or role..." aria-label="Search people">
+      </div>
+      <div id="people-grid">
+        <p class="loading-msg">Loading profiles&#8230;</p>
+      </div>
+      <div id="person-detail" class="person-detail" style="display:none;" aria-live="polite"></div>
+    </div>
   </main>
 
   <hr class="dateHr">
@@ -140,7 +165,7 @@
 </div>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="js/articles.js"></script>
+  <script src="js/people.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163383690-1"></script>

@@ -34,3 +34,17 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Summary", name: "summary", widget: "text", pattern: ['.{0,280}', "Must be 280 characters or fewer"] }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "people"
+    label: "People"
+    folder: "content/people"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Full Name", name: "name", widget: "string" }
+      - { label: "Title / Role", name: "title", widget: "string", hint: "e.g. CEO, Founder, Managing Director" }
+      - { label: "Company", name: "company", widget: "string", required: false }
+      - { label: "Photo", name: "image", widget: "image", required: false }
+      - { label: "Short Bio", name: "bio", widget: "text", pattern: ['.{0,500}', "Must be 500 characters or fewer"], hint: "Brief biography for the card display" }
+      - { label: "Wikidata ID", name: "wikidata_id", widget: "string", required: false, hint: "e.g. Q7623883 — links to and enriches Wikidata data" }
+      - { label: "Extended Bio", name: "body", widget: "markdown", required: false }
