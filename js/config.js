@@ -16,6 +16,7 @@ var _allMainArticles = [];
 var _allSidebarArticles = [];
 var _gnewsMoreArticles = [];
 var _activeCategory = "all";
+var _activeSort = "newest";
 var _currentPage = 1;
 var ARTICLES_PER_PAGE = 20;
 
@@ -315,6 +316,35 @@ function fetchNews() {
     _activeCategory = $(this).data("category");
     filterByCategory(_activeCategory);
   });
+
+  // Sort control
+  $("#sort-select").on("change", function() {
+    _activeSort = $(this).val();
+    sortArticles(_allMainArticles);
+    _currentPage = 1;
+    renderMainStories(_allMainArticles);
+  });
+}
+
+// Sort articles based on active sort mode
+function sortArticles(articles) {
+  if (_activeSort === "verified") {
+    articles.sort(function(a, b) {
+      var aVerified = isReputableSource(a.source) ? 1 : 0;
+      var bVerified = isReputableSource(b.source) ? 1 : 0;
+      if (bVerified !== aVerified) return bVerified - aVerified;
+      var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+      var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+      return dateB - dateA;
+    });
+  } else {
+    // Default: newest first
+    articles.sort(function(a, b) {
+      var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+      var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+      return dateB - dateA;
+    });
+  }
 }
 
 function filterByCategory(category) {
@@ -484,14 +514,7 @@ function loadMainStories() {
     allArticles = deduplicateArticles(allArticles);
     allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
     allArticles = deduplicateByTopic(allArticles, 0.4);
-    allArticles.sort(function(a, b) {
-      var aVerified = isReputableSource(a.source) ? 1 : 0;
-      var bVerified = isReputableSource(b.source) ? 1 : 0;
-      if (bVerified !== aVerified) return bVerified - aVerified;
-      var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
-      var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
-      return dateB - dateA;
-    });
+    sortArticles(allArticles);
     setCache(cacheKey, allArticles);
     _allMainArticles = allArticles;
     _currentPage = 1;
@@ -599,11 +622,8 @@ function loadSidebarStories() {
           clearTimeout(_sidebarTimeout);
           allArticles = deduplicateArticles(allArticles);
           allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
-          // Sort sidebar: verified sources first, then by recency
+          // Sort sidebar by recency
           allArticles.sort(function(a, b) {
-            var aVerified = isReputableSource(a.source) ? 1 : 0;
-            var bVerified = isReputableSource(b.source) ? 1 : 0;
-            if (bVerified !== aVerified) return bVerified - aVerified;
             var dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
             var dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
             return dateB - dateA;
