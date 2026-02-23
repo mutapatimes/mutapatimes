@@ -1536,6 +1536,156 @@ th, td { width:20%; text-align:center; }
   font-style: italic;
 }
 
+/* "View full profile" link in modal */
+.person-detail-profile-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.person-detail-profile-link:hover { text-decoration: underline; }
+
+/* Person card as <a> tag */
+a.person-card { text-decoration: none; color: var(--text); }
+a.person-card:hover { text-decoration: none; color: var(--text); }
+
+/* ==========================================================================
+   Person profile page (person.html)
+   ========================================================================== */
+.person-profile {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 36px 20px 48px;
+}
+.person-profile-breadcrumb {
+  font-size: 0.78em;
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+.person-profile-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.person-profile-breadcrumb a:hover { text-decoration: underline; }
+.person-profile-breadcrumb span { color: var(--text-light); }
+
+.person-profile-header {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+.person-profile-img-wrap { flex-shrink: 0; }
+.person-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: sepia(0.15) contrast(0.95);
+  border: 2px solid var(--rule);
+}
+.person-profile-info { flex: 1; min-width: 0; }
+.person-profile-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.person-profile-role {
+  font-size: 0.9em;
+  color: var(--text-mid);
+  text-transform: capitalize;
+  margin: 0 0 4px;
+}
+.person-profile-company {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+.person-profile-birth {
+  font-size: 0.85em;
+  color: var(--text-mid);
+  margin: 0 0 12px;
+}
+.person-profile-extlinks {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.person-profile-extlink {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 4px 12px;
+}
+.person-profile-extlink:hover { border-color: var(--accent); text-decoration: none; color: var(--accent); }
+
+.person-profile-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.person-profile-share-label {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.person-profile-bio {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+.person-profile-bio p { margin-bottom: 18px; }
+
+.person-profile-back {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.person-profile-back a { font-size: 0.88em; color: var(--accent); font-weight: 600; text-decoration: none; }
+.person-profile-back a:hover { text-decoration: underline; }
+
+/* ==========================================================================
+   Article share buttons & breadcrumb
+   ========================================================================== */
+.article-breadcrumb {
+  font-size: 0.78em;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+.article-breadcrumb a { color: var(--accent); text-decoration: none; }
+.article-breadcrumb a:hover { text-decoration: underline; }
+
+.article-share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.article-share-label {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
 /* ==========================================================================
    Responsive: tablet
    ========================================================================== */
@@ -1616,6 +1766,14 @@ th, td { width:20%; text-align:center; }
   .article-card-img { width:100%; height:180px; }
   .article-title { font-size:1.6em; }
   .article-full { padding:20px 12px 30px; }
+
+  /* Person profile responsive */
+  .person-profile { padding: 20px 12px 30px; }
+  .person-profile-header { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+  .person-profile-img { width: 140px; height: 140px; }
+  .person-profile-name { font-size: 1.5em; }
+  .person-profile-extlinks { justify-content: center; }
+  .person-profile-share { justify-content: center; }
 
   /* People page responsive */
   .people-page { padding: 24px 12px; }
