@@ -245,7 +245,17 @@ nav a.economy-btn.active {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: var(--paper);
+  background: #0f1a12;
+}
+.editorial-landscape-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, #0f1a12 100%);
+  pointer-events: none;
 }
 .editorial-landscape-img {
   width: 100%;
