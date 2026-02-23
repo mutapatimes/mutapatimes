@@ -5,7 +5,10 @@
  */
 
 (function () {
-  var ARTICLES_INDEX = "content/articles/index.json";
+  var GITHUB_REPO = "mutapatimes/mutapatimes";
+  var GITHUB_BRANCH = "main";
+  var ARTICLES_API = "https://api.github.com/repos/" + GITHUB_REPO + "/contents/content/articles?ref=" + GITHUB_BRANCH;
+  var ARTICLES_RAW = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/content/articles/";
   var ARTICLES_PATH = "content/articles/";
 
   // Simple frontmatter parser: splits --- delimited YAML header from markdown body
@@ -116,7 +119,53 @@
     var container = document.getElementById("articles-list");
     if (!container) return;
 
-    fetchJSON(ARTICLES_INDEX, function (err, files) {
+    // Use GitHub API to auto-discover articles (no manual index needed)
+    fetchJSON(ARTICLES_API, function (err, entries) {
+      if (err || !entries || !entries.length) {
+        // Fallback: try local path for dev/preview
+        fetchLocalArticles(container);
+        return;
+      }
+
+      // Filter to .md files only (skip index.json etc.)
+      var mdFiles = [];
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].name && entries[i].name.match(/\.md$/)) {
+          mdFiles.push(entries[i].name);
+        }
+      }
+
+      if (!mdFiles.length) {
+        container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
+        return;
+      }
+
+      var pending = mdFiles.length;
+      var articles = [];
+
+      mdFiles.forEach(function (filename) {
+        fetchText(ARTICLES_RAW + filename, function (err2, raw) {
+          if (!err2 && raw) {
+            var parsed = parseFrontmatter(raw);
+            parsed.meta.filename = filename;
+            parsed.meta.slug = filename.replace(/\.md$/, "");
+            articles.push(parsed.meta);
+          }
+          pending--;
+          if (pending === 0) {
+            articles.sort(function (a, b) {
+              return new Date(b.date || 0) - new Date(a.date || 0);
+            });
+            renderList(container, articles);
+          }
+        });
+      });
+    });
+  }
+
+  // Fallback for local/preview: try loading from local index.json
+  function fetchLocalArticles(container) {
+    fetchJSON("content/articles/index.json", function (err, files) {
       if (err || !files || !files.length) {
         container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
         return;
@@ -135,7 +184,6 @@
           }
           pending--;
           if (pending === 0) {
-            // Sort by date descending
             articles.sort(function (a, b) {
               return new Date(b.date || 0) - new Date(a.date || 0);
             });
@@ -184,11 +232,23 @@
     }
 
     var filename = slug + ".md";
-    fetchText(ARTICLES_PATH + filename, function (err, raw) {
+    // Try remote raw content first, fall back to local path
+    fetchText(ARTICLES_RAW + filename, function (err, raw) {
       if (err || !raw) {
-        container.innerHTML = '<p>Article not found. <a href="articles.html">Back to articles</a></p>';
+        fetchText(ARTICLES_PATH + filename, function (err2, raw2) {
+          if (err2 || !raw2) {
+            container.innerHTML = '<p>Article not found. <a href="articles.html">Back to articles</a></p>';
+            return;
+          }
+          displayArticle(container, raw2);
+        });
         return;
       }
+      displayArticle(container, raw);
+    });
+  }
+
+  function displayArticle(container, raw) {
 
       var parsed = parseFrontmatter(raw);
       var meta = parsed.meta;
@@ -219,7 +279,6 @@
       html += '<div class="article-back"><a href="articles.html">&larr; All articles</a></div>';
 
       container.innerHTML = html;
-    });
   }
 
   // Escape HTML entities
