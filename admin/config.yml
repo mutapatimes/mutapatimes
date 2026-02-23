@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: mutapatimes/mutapatimes
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Mutapa Times Staff" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Business"
+          - "Politics"
+          - "Policy"
+          - "Tech"
+          - "Health"
+          - "Crime"
+          - "Sport"
+          - "Culture"
+          - "Environment"
+          - "Education"
+          - "Opinion"
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text", pattern: ['.{0,280}', "Must be 280 characters or fewer"] }
+      - { label: "Body", name: "body", widget: "markdown" }
