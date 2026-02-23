@@ -867,7 +867,7 @@ a {
 /* "Just now" breaking story indicator — red with blink */
 @keyframes just-now-blink {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.15; }
+  50% { opacity: 0.45; }
 }
 
 /* Slow gentle blink for header icons */
@@ -896,8 +896,45 @@ a {
   line-height: 1.4;
   background: #d32f2f;
   color: #fff;
-  animation: just-now-blink 1.5s ease-in-out infinite;
+  animation: just-now-blink 3s ease-in-out infinite;
   box-shadow: 0 0 6px rgba(211, 47, 47, 0.4);
+}
+
+/* Category filter chips */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 12px;
+}
+
+.category-chip {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.category-chip:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.category-chip.active {
+  background: #1a3a2a;
+  color: #fff;
+  border-color: #1a3a2a;
 }
 
 /* Sidebar press markers */
