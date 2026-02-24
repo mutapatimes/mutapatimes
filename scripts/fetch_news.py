@@ -964,9 +964,9 @@ def fetch_spotlight():
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
 
-    # Import API-sourced articles with images into CMS as wire articles
-    api_articles = [a for a in merged if a.get("_source_api", "") != "RSS fallback" and a.get("image", "").strip()]
-    write_articles_to_cms(api_articles)
+    # Import API-sourced articles into CMS as wire articles
+    api_articles = [a for a in merged if a.get("_source_api", "") != "RSS fallback"]
+    write_articles_to_cms(api_articles, label="CMS WIRE IMPORT (spotlight)")
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)
@@ -1066,10 +1066,14 @@ def _get_existing_source_urls():
     return urls
 
 
-def write_articles_to_cms(api_articles):
-    """Import API-sourced articles as CMS markdown files (wire articles)."""
+def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT"):
+    """Import API-sourced articles as CMS markdown files (wire articles).
+
+    All articles are written with source_type: wire so they are never
+    displayed as original Mutapa Times content.
+    """
     from datetime import datetime, timezone
-    print("\n=== CMS WIRE IMPORT ===")
+    print(f"\n=== {label} ===")
     cms_dir = "content/articles"
     os.makedirs(cms_dir, exist_ok=True)
 
@@ -1083,15 +1087,13 @@ def write_articles_to_cms(api_articles):
 
     imported = 0
     for a in api_articles:
-        if imported >= 10:
-            break
         url = a.get("url", "")
         title = a.get("title", "")
         image = a.get("image", "").strip()
         desc = a.get("description", "").strip()
         source = a.get("source", "")
 
-        if not url or not title or not image:
+        if not url or not title:
             continue
         if url in existing_urls:
             continue
@@ -1156,6 +1158,34 @@ spotlight: false
     print(f"  Total imported this run: {imported}")
 
 
+def import_guardian_nyt_to_cms():
+    """Fetch ALL Guardian and NYT Zimbabwe articles and import them to CMS.
+
+    These are always written as wire articles (source_type: wire) so they
+    are never attributed as original Mutapa Times content.
+    """
+    print("\n=== GUARDIAN + NYT FULL IMPORT ===")
+    wire_articles = []
+
+    guardian = fetch_from_guardian()
+    if guardian:
+        # Filter to Zimbabwe-relevant articles
+        guardian = [a for a in guardian if is_zw_relevant(a)]
+        wire_articles.extend(guardian)
+        print(f"  Guardian: {len(guardian)} Zimbabwe articles to import")
+
+    nyt = fetch_from_nyt()
+    if nyt:
+        nyt = [a for a in nyt if is_zw_relevant(a)]
+        wire_articles.extend(nyt)
+        print(f"  NYT: {len(nyt)} Zimbabwe articles to import")
+
+    if wire_articles:
+        write_articles_to_cms(wire_articles, label="CMS WIRE IMPORT (Guardian + NYT)")
+    else:
+        print("  No Guardian/NYT articles to import")
+
+
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -1166,7 +1196,10 @@ def main():
         if result:
             all_new.extend(result)
 
-    # Fetch spotlight articles from GNews API (1 call, includes images + descriptions)
+    # Import ALL Guardian + NYT articles to CMS as wire content
+    import_guardian_nyt_to_cms()
+
+    # Fetch spotlight articles from multi-API cascade
     fetch_spotlight()
 
     # Append all new articles to persistent archive

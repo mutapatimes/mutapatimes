@@ -411,7 +411,7 @@ function loadCmsArticles(callback) {
           success: function(raw) {
             var parsed = parseCmsFrontmatter(raw);
             if (parsed.meta.title) {
-              var isWire = parsed.meta.source_type === "wire";
+              var isWire = parsed.meta.source_type === "wire" || !!parsed.meta.source_url;
               articles.push({
                 title: parsed.meta.title,
                 url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
@@ -452,7 +452,7 @@ function loadCmsArticles(callback) {
               success: function(raw) {
                 var parsed = parseCmsFrontmatter(raw);
                 if (parsed.meta.title) {
-                  var isWire = parsed.meta.source_type === "wire";
+                  var isWire = parsed.meta.source_type === "wire" || !!parsed.meta.source_url;
                   articles.push({
                     title: parsed.meta.title,
                     url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
