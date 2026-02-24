@@ -505,14 +505,15 @@ def fetch_from_nyt():
         headline = d.get("headline", {})
         title = headline.get("main", "") if isinstance(headline, dict) else str(headline)
 
-        # Find the best image from multimedia array
+        # Find the best image from multimedia array (items can be dicts or strings)
         image_url = ""
-        for m in d.get("multimedia", []):
+        media = [m for m in d.get("multimedia", []) if isinstance(m, dict)]
+        for m in media:
             if m.get("subtype") in ("xlarge", "superJumbo", "master675"):
                 image_url = NYT_IMAGE_BASE + m.get("url", "")
                 break
         if not image_url:
-            for m in d.get("multimedia", []):
+            for m in media:
                 if m.get("url"):
                     image_url = NYT_IMAGE_BASE + m.get("url", "")
                     break
