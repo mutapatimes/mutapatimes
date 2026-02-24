@@ -42,6 +42,9 @@ collections:
         min: 0
         max: 10
         hint: "1 = top spot, 2 = second, etc. Leave at 0 for normal date-based ordering."
+      - { label: "Source URL", name: "source_url", widget: "string", required: false, hint: "Original article URL (for wire/aggregated articles)" }
+      - { label: "Source Type", name: "source_type", widget: "select", required: false, default: "original", options: ["original", "wire"], hint: "How this article was sourced" }
+      - { label: "Spotlight", name: "spotlight", widget: "boolean", default: false, required: false, hint: "Show in spotlight section" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "people"
