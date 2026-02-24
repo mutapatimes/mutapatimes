@@ -1,0 +1,32 @@
+name: Post to Reddit
+
+on:
+  schedule:
+    # Daily at 06:00 UTC (08:00 CAT) — offset from Twitter/Bluesky/Telegram
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  post-reddit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post headlines to Reddit
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
+          REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
+          REDDIT_SUBREDDIT: ${{ secrets.REDDIT_SUBREDDIT }}
+        run: python3 scripts/post_reddit.py
+
+      - name: Commit updated post tracker
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/.posted_reddit.json
+          git diff --cached --quiet || (git commit -m "Update Reddit post tracker [automated]" && git push)
