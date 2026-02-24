@@ -84,7 +84,7 @@ function isReputableSource(source) {
 // Primary categories (business, politics, policy, tech) listed first — editorial focus
 var CATEGORY_RULES = [
   { tag: "Business", words: ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve", "industry", "commerce", "entrepreneur"] },
-  { tag: "Politics", words: ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "senator", "cabinet", "coalition"] },
+  { tag: "Politics", words: ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"] },
   { tag: "Policy", words: ["policy", "regulation", "reform", "legislation", "bill", "amendment", "sanctions", "sadc", "african union", "treaty", "compliance", "governance", "mandate", "directive", "statutory"] },
   { tag: "Tech", words: ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash", "fintech", "innovation"] },
   { tag: "Health", words: ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"] },

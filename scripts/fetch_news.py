@@ -1016,7 +1016,7 @@ def update_archive(new_articles):
 # Category inference rules — mirrors js/config.js CATEGORY_RULES
 _CMS_CATEGORY_RULES = [
     ("Business", ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve", "industry", "commerce", "entrepreneur"]),
-    ("Politics", ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "senator", "cabinet", "coalition"]),
+    ("Politics", ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"]),
     ("Policy", ["policy", "regulation", "reform", "legislation", "bill", "amendment", "sanctions", "sadc", "african union", "treaty", "compliance", "governance", "mandate", "directive", "statutory"]),
     ("Tech", ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash", "fintech", "innovation"]),
     ("Health", ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"]),
