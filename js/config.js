@@ -1482,21 +1482,38 @@ function renderMainStories(articles) {
 // ============================================================
 var GNEWS_CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"];
 
+// Check if all spotlight articles are stale (older than 48 hours)
+function spotlightIsStale(articles) {
+  var maxAge = 48 * 60 * 60 * 1000; // 48 hours
+  for (var i = 0; i < articles.length; i++) {
+    var pub = articles[i].publishedAt;
+    if (pub) {
+      try {
+        var d = new Date(pub);
+        if (!isNaN(d.getTime()) && (Date.now() - d.getTime()) < maxAge) {
+          return false; // at least one article is fresh
+        }
+      } catch (e) {}
+    }
+  }
+  return true; // all articles are stale or have no date
+}
+
 function loadSpotlightStories() {
   var cacheKey = "spotlight_all";
   var cached = getCache(cacheKey);
-  if (cached) {
+  if (cached && !spotlightIsStale(cached)) {
     renderSpotlightStories(cached);
     return;
   }
 
-  // Load pre-fetched spotlight articles (GNews API — includes images + descriptions)
+  // Load pre-fetched spotlight articles (GNews API / RSS — includes images + descriptions)
   $.ajax({
     type: "GET",
     url: MUTAPA_CONFIG.DATA_PATH + "spotlight.json",
     dataType: "json",
     success: function(data) {
-      if (data && data.articles && data.articles.length > 0) {
+      if (data && data.articles && data.articles.length > 0 && !spotlightIsStale(data.articles)) {
         setCache(cacheKey, data.articles);
         // Populate verified GNews extras before rendering so spotlight can use them
         if (data.more && data.more.length > 0) {
@@ -1504,6 +1521,7 @@ function loadSpotlightStories() {
         }
         renderSpotlightStories(data.articles);
       } else {
+        // Data file missing, empty, or stale — fall back to live RSS
         loadSpotlightFromRSS();
       }
     },

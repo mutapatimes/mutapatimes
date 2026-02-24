@@ -278,87 +278,124 @@ def fetch_rss_descriptions():
 
 
 def fetch_spotlight():
-    """Fetch spotlight articles from GNews API — reputable western sources only."""
+    """Fetch spotlight articles from GNews API with RSS fallback for reputable sources."""
     print("\n=== SPOTLIGHT ===")
-    if not GNEWS_API_KEY:
-        print("  SKIP: GNEWS_API_KEY not set")
-        return
 
-    # Reputable source domains to filter for
-    reputable_domains = [
-        # Major international
-        "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
-        "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
-        "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
-        "news.sky.com", "telegraph.co.uk", "independent.co.uk",
-        "france24.com", "dw.com", "npr.org", "pbs.org", "abcnews.go.com",
-        "time.com", "foreignpolicy.com", "theconversation.com",
-        # International with Africa desks
-        "voanews.com", "rfi.fr", "africanews.com",
-        # Reputable African outlets
-        "allafrica.com", "dailymaverick.co.za", "mg.co.za",
-        "news24.com", "theeastafrican.co.ke", "sabc.co.za",
-        "nation.africa", "citizen.co.za", "ewn.co.za",
-        "iol.co.za", "timeslive.co.za",
+    # Reputable source keywords for filtering
+    reputable_kw = [
+        "bbc", "reuters", "nytimes", "new york times", "guardian", "al jazeera",
+        "bloomberg", "ap news", "associated press", "financial times", "economist",
+        "cnn", "washington post", "sky news", "france 24", "dw", "deutsche welle",
+        "npr", "pbs", "abc news", "time magazine", "foreign policy", "the conversation",
+        "voa", "voice of america", "rfi", "africanews",
+        "allafrica", "daily maverick", "mail & guardian", "news24", "the east african",
+        "sabc", "nation africa", "the citizen", "eyewitness news", "iol", "timeslive",
+        "sunday times",
     ]
 
-    # Primary-category-focused queries for spotlight — business, politics, policy, tech first
-    import urllib.parse
-    queries = [
-        urllib.parse.quote("Zimbabwe business economy finance investment"),
-        urllib.parse.quote("Zimbabwe politics government policy reform"),
-        urllib.parse.quote("Zimbabwe technology digital"),
-        "Zimbabwe",
-        urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
-    ]
     articles = []
-    for q in queries:
-        url = (
-            f"https://gnews.io/api/v4/search?q={q}&lang=en&max=20"
-            f"&apikey={GNEWS_API_KEY}"
-        )
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-            batch = data.get("articles", [])
-            articles.extend(batch)
-            print(f"  Fetched {len(batch)} articles for query: {q}")
-        except Exception as e:
-            print(f"  WARN: GNews query '{q}' failed: {e}")
+    gnews_ok = False
+
+    # --- Try GNews API first (provides images + descriptions) ---
+    if GNEWS_API_KEY:
+        reputable_domains = [
+            "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
+            "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
+            "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
+            "news.sky.com", "telegraph.co.uk", "independent.co.uk",
+            "france24.com", "dw.com", "npr.org", "pbs.org", "abcnews.go.com",
+            "time.com", "foreignpolicy.com", "theconversation.com",
+            "voanews.com", "rfi.fr", "africanews.com",
+            "allafrica.com", "dailymaverick.co.za", "mg.co.za",
+            "news24.com", "theeastafrican.co.ke", "sabc.co.za",
+            "nation.africa", "citizen.co.za", "ewn.co.za",
+            "iol.co.za", "timeslive.co.za",
+        ]
+
+        queries = [
+            urllib.parse.quote("Zimbabwe business economy finance investment"),
+            urllib.parse.quote("Zimbabwe politics government policy reform"),
+            urllib.parse.quote("Zimbabwe technology digital"),
+            "Zimbabwe",
+            urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
+        ]
+        for q in queries:
+            url = (
+                f"https://gnews.io/api/v4/search?q={q}&lang=en&max=20"
+                f"&apikey={GNEWS_API_KEY}"
+            )
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                batch = data.get("articles", [])
+                articles.extend(batch)
+                print(f"  GNews: {len(batch)} articles for query: {q[:40]}...")
+            except Exception as e:
+                print(f"  WARN: GNews query failed: {e}")
+
+        if articles:
+            gnews_ok = True
+            print(f"\n  --- All {len(articles)} raw headlines from GNews ---")
+            for i, a in enumerate(articles):
+                src = a.get("source", {}).get("name", "?")
+                title = a.get("title", "")[:100]
+                print(f"  [{i+1:2d}] {src:<30s} | {title}")
+            print("  ---\n")
+
+            # Normalise GNews articles
+            reputable = []
+            others = []
+            for a in articles:
+                item = {
+                    "title": a.get("title", ""),
+                    "description": a.get("description", ""),
+                    "url": a.get("url", ""),
+                    "image": a.get("image", ""),
+                    "publishedAt": a.get("publishedAt", ""),
+                    "source": a.get("source", {}).get("name", ""),
+                }
+                source_url = a.get("source", {}).get("url", "")
+                if any(d in source_url for d in reputable_domains):
+                    reputable.append(item)
+                else:
+                    others.append(item)
+            articles = reputable + others
+        else:
+            print("  GNews returned no articles")
+    else:
+        print("  GNEWS_API_KEY not set — using RSS fallback")
+
+    # --- RSS fallback: always run if GNews returned nothing ---
+    if not gnews_ok:
+        print("  Fetching spotlight from RSS feeds...")
+        spotlight_rss = [
+            "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
+            'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
+        ]
+        for rss_url in spotlight_rss:
+            raw = fetch_url(rss_url)
+            if raw:
+                parsed = parse_rss_feed(raw)
+                for a in parsed:
+                    src_name = a.get("source", {}).get("name", "") if isinstance(a.get("source"), dict) else a.get("source", "")
+                    articles.append({
+                        "title": a.get("title", ""),
+                        "description": a.get("description", ""),
+                        "url": a.get("url", ""),
+                        "image": "",
+                        "publishedAt": a.get("publishedAt", ""),
+                        "source": src_name,
+                    })
+        print(f"  RSS fallback: {len(articles)} articles collected")
 
     if not articles:
-        print("  FAIL: no articles returned from any query")
+        print("  FAIL: no articles from GNews or RSS — writing empty spotlight")
+        outpath = os.path.join(DATA_DIR, "spotlight.json")
+        with open(outpath, "w") as f:
+            json.dump({"articles": [], "more": []}, f)
         return
-
-    # --- Log all raw headlines for audit ---
-    print(f"\n  --- All {len(articles)} raw headlines from GNews ---")
-    for i, a in enumerate(articles):
-        src = a.get("source", {}).get("name", "?")
-        src_url = a.get("source", {}).get("url", "")
-        title = a.get("title", "")[:100]
-        print(f"  [{i+1:2d}] {src:<30s} | {title}")
-    print("  ---\n")
-
-    # Build new candidates — prefer reputable sources, then any source
-    reputable = []
-    others = []
-    for a in articles:
-        item = {
-            "title": a.get("title", ""),
-            "description": a.get("description", ""),
-            "url": a.get("url", ""),
-            "image": a.get("image", ""),
-            "publishedAt": a.get("publishedAt", ""),
-            "source": a.get("source", {}).get("name", ""),
-        }
-        source_url = a.get("source", {}).get("url", "")
-        if any(d in source_url for d in reputable_domains):
-            reputable.append(item)
-        else:
-            others.append(item)
-
-    new_articles = reputable + others
 
     # Load existing spotlight to preserve stories that are still fresh
     outpath = os.path.join(DATA_DIR, "spotlight.json")
@@ -373,42 +410,31 @@ def fetch_spotlight():
     # Merge: new articles first, then existing ones (deduped by URL + title similarity)
     seen_urls = set()
     merged = []
-    for a in new_articles + existing:
+    for a in articles + existing:
         url = a.get("url", "")
         title = a.get("title", "")
         if url in seen_urls:
             continue
-        # Skip if a very similar headline already accepted (same story, different outlet)
         if title and any(titles_are_similar(title, m.get("title", "")) for m in merged):
             continue
         seen_urls.add(url)
-        # Drop articles older than spotlight max age (30 days — reputable sources only)
+        # Drop articles older than 7 days
         pub = a.get("publishedAt", "")
         if pub:
             try:
                 from datetime import datetime, timezone
                 dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
                 age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 30:
+                if age_days > 7:
                     continue
             except Exception:
                 pass
         merged.append(a)
 
-    # Sort by date (newest first), prefer reputable sources only
+    # Sort by date (newest first)
     merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
-    reputable_kw = [
-        "bbc", "reuters", "nytimes", "new york times", "guardian", "al jazeera",
-        "bloomberg", "ap news", "associated press", "financial times", "economist",
-        "cnn", "washington post", "sky news", "france 24", "dw", "deutsche welle",
-        "npr", "pbs", "abc news", "time magazine", "foreign policy", "the conversation",
-        "voa", "voice of america", "rfi", "africanews",
-        "allafrica", "daily maverick", "mail & guardian", "news24", "the east african",
-        "sabc", "nation africa", "the citizen", "eyewitness news", "iol", "timeslive",
-        "sunday times",
-    ]
+
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
-    # Others: exclude stories already covered by reputable sources
     others_merged = []
     for a in merged:
         if a in reputable_merged:
@@ -417,18 +443,12 @@ def fetch_spotlight():
             continue
         others_merged.append(a)
 
-    # Log what passed vs what was filtered out
-    print(f"  Reputable matches: {len(reputable_merged)}, Non-reputable filtered out: {len(others_merged)}")
-    for a in reputable_merged:
+    print(f"  Reputable matches: {len(reputable_merged)}, Non-reputable: {len(others_merged)}")
+    for a in reputable_merged[:10]:
         print(f"    PASS: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
-    for a in others_merged[:5]:
-        print(f"    SKIP: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
-    if len(others_merged) > 5:
-        print(f"    ... and {len(others_merged) - 5} more non-reputable skipped")
 
-    # Reputable sources only — no fallback to unvetted sources
+    # Reputable sources only for spotlight
     spotlight = reputable_merged[:3]
-    # Save remaining articles (non-reputable) as secondary feed below spotlight
     more = others_merged[:15]
 
     if not spotlight:
@@ -436,7 +456,8 @@ def fetch_spotlight():
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)
-    print(f"  OK: {len(spotlight)} spotlight + {len(more)} more articles saved (merged from {len(articles)} new + {len(existing)} existing)")
+    source_label = "GNews" if gnews_ok else "RSS fallback"
+    print(f"  OK: {len(spotlight)} spotlight + {len(more)} more ({source_label})")
 
 
 def update_archive(new_articles):
