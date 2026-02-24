@@ -159,6 +159,35 @@ def deduplicate(articles, limit=10):
     return unique[:limit]
 
 
+# Keywords that indicate an article is about Zimbabwe / relevant region
+_ZW_KEYWORDS = [
+    "zimbabwe", "harare", "bulawayo", "mutare", "gweru", "masvingo",
+    "chitungwiza", "kwekwe", "kadoma", "chegutu", "chinhoyi", "bindura",
+    "mnangagwa", "zanu", "zanupf", "mdc", "chamisa", "chiwenga",
+    "zim", "zimra", "rbz", "zimdollar", "zig", "ziggold",
+    "sadc", "southern africa",
+    "nyamandlovu", "hwange", "kariba", "victoria falls", "great zimbabwe",
+    "mthuli ncube", "mushayavanhu",
+]
+
+# Zimbabwean publishers — articles from these sources pass without keyword check
+_ZW_SOURCES = [
+    "herald", "newsday", "zimbabwe mail", "bulawayo24", "263chat",
+    "pindula", "nehanda", "newzimbabwe", "zimlive", "chronicle",
+    "b-metro", "the standard", "daily news", "zbcnews", "cite",
+    "the mutapa times",
+]
+
+
+def is_zw_relevant(article):
+    """Check if an article is about Zimbabwe (keyword in title/desc or from a ZW source)."""
+    source = (article.get("source", "") or "").lower()
+    if any(s in source for s in _ZW_SOURCES):
+        return True
+    text = ((article.get("title", "") or "") + " " + (article.get("description", "") or "")).lower()
+    return any(kw in text for kw in _ZW_KEYWORDS)
+
+
 def generate_description(title, content=""):
     """Generate a 1-2 sentence summary using Gemini free tier with rate limiting."""
     if not GEMINI_API_KEY:
@@ -418,7 +447,7 @@ def fetch_from_newsdata():
 
     url = (
         f"https://newsdata.io/api/1/latest?country=zw&language=en"
-        f"&apikey={NEWSDATA_API_KEY}"
+        f"&q=Zimbabwe&apikey={NEWSDATA_API_KEY}"
     )
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
@@ -658,6 +687,11 @@ def fetch_spotlight():
     for fetcher, name in api_cascade:
         result = fetcher()
         if result:
+            # Filter out non-Zimbabwe articles (game trailers, foreign sports, etc.)
+            before = len(result)
+            result = [a for a in result if is_zw_relevant(a)]
+            if before != len(result):
+                print(f"  >> {name}: {before - len(result)} non-Zimbabwe articles filtered out")
             articles.extend(result)
             if not source_used or source_used == "none":
                 source_used = name
