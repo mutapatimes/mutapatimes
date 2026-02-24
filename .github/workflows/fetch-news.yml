@@ -25,9 +25,20 @@ jobs:
           PERIGON_API_KEY: ${{ secrets.PERIGON_API_KEY }}
         run: python3 scripts/fetch_news.py
 
+      - name: Generate sitemap and RSS feed
+        run: |
+          python3 scripts/generate_sitemap.py
+          python3 scripts/generate_rss.py
+
       - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/
+          git add data/ content/articles/ sitemap.xml feed.xml
           git diff --cached --quiet || (git commit -m "Update news data [automated]" && git push)
+
+      - name: Send push notification for breaking news
+        env:
+          FIREBASE_SERVER_KEY: ${{ secrets.FIREBASE_SERVER_KEY }}
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: python3 scripts/send_push.py

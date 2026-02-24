@@ -2178,3 +2178,48 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .site-footer { padding-bottom:0; }
   .site-footer .copyright-text, .site-footer .social-icons { text-align:center; }
 }
+
+/* ==========================================================================
+   Push Notification Banner
+   ========================================================================== */
+
+.push-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+  color: #fafafa;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 10000;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.9rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+}
+.push-banner-visible { transform: translateY(0); }
+.push-banner-hidden { transform: translateY(100%); }
+.push-banner-text { margin: 0; }
+.push-banner-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.push-banner-btn {
+  padding: 6px 18px;
+  border: 1.5px solid #fafafa;
+  background: transparent;
+  color: #fafafa;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.push-banner-enable { background: #fafafa; color: #1a1a1a; }
+.push-banner-enable:hover { background: #d4d0c8; }
+.push-banner-dismiss:hover { background: rgba(255,255,255,0.1); }
+
+@media (max-width: 600px) {
+  .push-banner { flex-direction: column; gap: 10px; padding: 12px 16px; text-align: center; }
+}

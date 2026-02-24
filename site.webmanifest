@@ -2,13 +2,50 @@
   "short_name": "Mutapa Times",
   "name": "The Mutapa Times",
   "description": "Business and intelligence newspaper delivering curated Zimbabwean news for the diaspora.",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
   "start_url": "/index.html",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#fafafa",
-  "theme_color": "#1a1a1a"
+  "theme_color": "#1a1a1a",
+  "orientation": "any",
+  "icons": [
+    { "src": "/img/android-icon-36x36.png", "sizes": "36x36", "type": "image/png" },
+    { "src": "/img/android-icon-48x48.png", "sizes": "48x48", "type": "image/png" },
+    { "src": "/img/android-icon-72x72.png", "sizes": "72x72", "type": "image/png" },
+    { "src": "/img/android-icon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/img/android-icon-144x144.png", "sizes": "144x144", "type": "image/png" },
+    { "src": "/img/android-icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/ms-icon-310x310.png", "sizes": "310x310", "type": "image/png" },
+    { "src": "/img/android-icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Latest News",
+      "short_name": "News",
+      "url": "/index.html",
+      "icons": [{ "src": "/img/android-icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Live Economy Data",
+      "short_name": "Economy",
+      "url": "/economy.html",
+      "icons": [{ "src": "/img/android-icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Articles",
+      "short_name": "Articles",
+      "url": "/articles.html",
+      "icons": [{ "src": "/img/android-icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "share_target": {
+    "action": "/index.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "categories": ["news", "business"]
 }
