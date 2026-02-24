@@ -6,13 +6,14 @@
 (function() {
   'use strict';
 
-  // Firebase config — replace with your actual project values
   var FIREBASE_CONFIG = {
-    apiKey: '',
-    authDomain: '',
-    projectId: '',
-    messagingSenderId: '',
-    appId: ''
+    apiKey: 'AIzaSyBpNRGC_BbDrvSHSwFIX91Pc0sKavUmkTc',
+    authDomain: 'mutapa-times.firebaseapp.com',
+    projectId: 'mutapa-times',
+    storageBucket: 'mutapa-times.firebasestorage.app',
+    messagingSenderId: '346417036009',
+    appId: '1:346417036009:web:004b77c399f830654a4e78',
+    measurementId: 'G-3TVRM7E0GC'
   };
 
   // VAPID public key from Firebase Cloud Messaging settings
