@@ -17,7 +17,14 @@ import xml.etree.ElementTree as ET
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 GNEWS_API_KEY = os.environ.get("GNEWS_API_KEY", "")
+NEWSDATA_API_KEY = os.environ.get("NEWSDATA_API_KEY", "")
+NEWSAPI_API_KEY = os.environ.get("NEWSAPI_API_KEY", "")
+MEDIASTACK_API_KEY = os.environ.get("MEDIASTACK_API_KEY", "")
+PERIGON_API_KEY = os.environ.get("PERIGON_API_KEY", "")
 DATA_DIR = "data"
+
+# Minimum articles from cascade before stopping early
+MIN_SPOTLIGHT_ARTICLES = 10
 
 # Category-specific Google News RSS feeds (replace GNews API)
 # Primary categories listed first — these are the editorial focus
@@ -318,8 +325,308 @@ def get_cms_spotlight_articles():
     return articles
 
 
+### ---------------------------------------------------------------------------
+### Spotlight API fetchers — each returns list[dict] in standard schema or []
+### Schema: {title, description, url, image, publishedAt, source}
+### ---------------------------------------------------------------------------
+
+def fetch_from_gnews():
+    """Fetch Zimbabwe articles from GNews API (5 queries, up to 100 articles)."""
+    if not GNEWS_API_KEY:
+        print("  GNews: API key not set, skipping")
+        return []
+
+    reputable_domains = [
+        "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
+        "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
+        "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
+        "news.sky.com", "telegraph.co.uk", "independent.co.uk",
+        "france24.com", "dw.com", "npr.org", "pbs.org", "abcnews.go.com",
+        "time.com", "foreignpolicy.com", "theconversation.com",
+        "voanews.com", "rfi.fr", "africanews.com",
+        "allafrica.com", "dailymaverick.co.za", "mg.co.za",
+        "news24.com", "theeastafrican.co.ke", "sabc.co.za",
+        "nation.africa", "citizen.co.za", "ewn.co.za",
+        "iol.co.za", "timeslive.co.za",
+    ]
+
+    queries = [
+        urllib.parse.quote("Zimbabwe business economy finance investment"),
+        urllib.parse.quote("Zimbabwe politics government policy reform"),
+        urllib.parse.quote("Zimbabwe technology digital"),
+        "Zimbabwe",
+        urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
+    ]
+
+    raw_articles = []
+    for q in queries:
+        url = (
+            f"https://gnews.io/api/v4/search?q={q}&lang=en&max=20"
+            f"&apikey={GNEWS_API_KEY}"
+        )
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            batch = data.get("articles", [])
+            raw_articles.extend(batch)
+            print(f"  GNews: {len(batch)} articles for query: {q[:40]}...")
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                print("  GNews: rate limited (429), stopping queries")
+                break
+            print(f"  GNews: HTTP error {e.code}")
+        except Exception as e:
+            print(f"  GNews: error: {e}")
+
+    if not raw_articles:
+        print("  GNews: returned 0 articles")
+        return []
+
+    print(f"\n  --- All {len(raw_articles)} raw headlines from GNews ---")
+    for i, a in enumerate(raw_articles):
+        src = a.get("source", {}).get("name", "?")
+        title = a.get("title", "")[:100]
+        print(f"  [{i+1:2d}] {src:<30s} | {title}")
+    print("  ---\n")
+
+    # Normalise and sort reputable sources first
+    reputable = []
+    others = []
+    for a in raw_articles:
+        item = {
+            "title": a.get("title", ""),
+            "description": a.get("description", ""),
+            "url": a.get("url", ""),
+            "image": a.get("image", ""),
+            "publishedAt": a.get("publishedAt", ""),
+            "source": a.get("source", {}).get("name", ""),
+        }
+        source_url = a.get("source", {}).get("url", "")
+        if any(d in source_url for d in reputable_domains):
+            reputable.append(item)
+        else:
+            others.append(item)
+    return reputable + others
+
+
+def fetch_from_newsdata():
+    """Fetch Zimbabwe articles from Newsdata.io (1 query, up to 50 articles)."""
+    if not NEWSDATA_API_KEY:
+        print("  Newsdata.io: API key not set, skipping")
+        return []
+
+    url = (
+        f"https://newsdata.io/api/1/latest?country=zw&language=en"
+        f"&apikey={NEWSDATA_API_KEY}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  Newsdata.io: rate limited (429)")
+        else:
+            print(f"  Newsdata.io: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  Newsdata.io: error: {e}")
+        return []
+
+    results = data.get("results", [])
+    if not results:
+        print("  Newsdata.io: returned 0 articles")
+        return []
+
+    normalized = []
+    for a in results:
+        normalized.append({
+            "title": a.get("title", "") or "",
+            "description": a.get("description", "") or "",
+            "url": a.get("link", "") or "",
+            "image": a.get("image_url", "") or "",
+            "publishedAt": a.get("pubDate", "") or "",
+            "source": a.get("source_name", "") or a.get("source_id", "") or "",
+        })
+    print(f"  Newsdata.io: {len(normalized)} articles fetched")
+    return normalized
+
+
+def fetch_from_newsapi():
+    """Fetch Zimbabwe articles from NewsAPI.org (1 query, up to 50 articles)."""
+    if not NEWSAPI_API_KEY:
+        print("  NewsAPI.org: API key not set, skipping")
+        return []
+
+    url = (
+        f"https://newsapi.org/v2/everything?q=Zimbabwe&language=en"
+        f"&sortBy=publishedAt&pageSize=50&apiKey={NEWSAPI_API_KEY}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  NewsAPI.org: rate limited (429)")
+        elif e.code == 426:
+            print("  NewsAPI.org: requires paid plan for this endpoint")
+        else:
+            print(f"  NewsAPI.org: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  NewsAPI.org: error: {e}")
+        return []
+
+    if data.get("status") != "ok":
+        print(f"  NewsAPI.org: status={data.get('status')}, message={data.get('message', '')}")
+        return []
+
+    raw_articles = data.get("articles", [])
+    if not raw_articles:
+        print("  NewsAPI.org: returned 0 articles")
+        return []
+
+    normalized = []
+    for a in raw_articles:
+        title = a.get("title", "") or ""
+        if title == "[Removed]":
+            continue
+        source_obj = a.get("source", {}) or {}
+        normalized.append({
+            "title": title,
+            "description": a.get("description", "") or "",
+            "url": a.get("url", "") or "",
+            "image": a.get("urlToImage", "") or "",
+            "publishedAt": a.get("publishedAt", "") or "",
+            "source": source_obj.get("name", "") or "",
+        })
+    print(f"  NewsAPI.org: {len(normalized)} articles fetched")
+    return normalized
+
+
+def fetch_from_mediastack():
+    """Fetch Zimbabwe articles from Mediastack (1 query). NOTE: 100 requests/month."""
+    if not MEDIASTACK_API_KEY:
+        print("  Mediastack: API key not set, skipping")
+        return []
+
+    # Mediastack free tier uses HTTP only (no HTTPS)
+    url = (
+        f"http://api.mediastack.com/v1/news?access_key={MEDIASTACK_API_KEY}"
+        f"&countries=zw&languages=en&limit=50"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  Mediastack: rate limited (429)")
+        else:
+            print(f"  Mediastack: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  Mediastack: error: {e}")
+        return []
+
+    if "error" in data:
+        print(f"  Mediastack: API error: {data['error'].get('message', '')}")
+        return []
+
+    raw_articles = data.get("data", [])
+    if not raw_articles:
+        print("  Mediastack: returned 0 articles")
+        return []
+
+    normalized = []
+    for a in raw_articles:
+        normalized.append({
+            "title": a.get("title", "") or "",
+            "description": a.get("description", "") or "",
+            "url": a.get("url", "") or "",
+            "image": a.get("image", "") or "",
+            "publishedAt": a.get("published_at", "") or "",
+            "source": a.get("source", "") or "",
+        })
+    print(f"  Mediastack: {len(normalized)} articles fetched")
+    return normalized
+
+
+def fetch_from_perigon():
+    """Fetch Zimbabwe articles from Perigon (1 query). NOTE: 150 requests/month."""
+    if not PERIGON_API_KEY:
+        print("  Perigon: API key not set, skipping")
+        return []
+
+    url = (
+        f"https://api.goperigon.com/v1/all?q=Zimbabwe&language=en"
+        f"&sortBy=date&size=50&apiKey={PERIGON_API_KEY}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  Perigon: rate limited (429)")
+        else:
+            print(f"  Perigon: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  Perigon: error: {e}")
+        return []
+
+    raw_articles = data.get("articles", [])
+    if not raw_articles:
+        print("  Perigon: returned 0 articles")
+        return []
+
+    normalized = []
+    for a in raw_articles:
+        source_obj = a.get("source", {}) or {}
+        normalized.append({
+            "title": a.get("title", "") or "",
+            "description": a.get("description", "") or "",
+            "url": a.get("url", "") or "",
+            "image": a.get("imageUrl", "") or "",
+            "publishedAt": a.get("pubDate", "") or "",
+            "source": source_obj.get("domain", "") or "",
+        })
+    print(f"  Perigon: {len(normalized)} articles fetched")
+    return normalized
+
+
+def fetch_from_rss():
+    """Fetch spotlight articles from Google News RSS. Always works (no API key)."""
+    print("  RSS fallback: fetching from Google News RSS...")
+    spotlight_rss = [
+        "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
+        "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
+        'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
+    ]
+    articles = []
+    for rss_url in spotlight_rss:
+        raw = fetch_url(rss_url)
+        if raw:
+            parsed = parse_rss_feed(raw)
+            for a in parsed:
+                src_name = a.get("source", {}).get("name", "") if isinstance(a.get("source"), dict) else a.get("source", "")
+                articles.append({
+                    "title": a.get("title", ""),
+                    "description": a.get("description", ""),
+                    "url": a.get("url", ""),
+                    "image": "",
+                    "publishedAt": a.get("publishedAt", ""),
+                    "source": src_name,
+                })
+    print(f"  RSS fallback: {len(articles)} articles collected")
+    return articles
+
+
 def fetch_spotlight():
-    """Fetch spotlight articles from GNews API with RSS fallback for reputable sources."""
+    """Fetch spotlight articles using multi-API cascade with RSS fallback."""
     print("\n=== SPOTLIGHT ===")
 
     # Reputable source keywords for filtering
@@ -334,105 +641,35 @@ def fetch_spotlight():
         "sunday times",
     ]
 
+    # --- API Cascade: try each source until we have enough articles ---
+    # Daily-limited APIs first, then monthly-limited, then RSS (always works)
+    api_cascade = [
+        (fetch_from_gnews,      "GNews"),
+        (fetch_from_newsdata,   "Newsdata.io"),
+        (fetch_from_newsapi,    "NewsAPI.org"),
+        (fetch_from_mediastack, "Mediastack"),
+        (fetch_from_perigon,    "Perigon"),
+        (fetch_from_rss,        "RSS fallback"),
+    ]
+
     articles = []
-    gnews_ok = False
+    source_used = "none"
 
-    # --- Try GNews API first (provides images + descriptions) ---
-    if GNEWS_API_KEY:
-        reputable_domains = [
-            "bbc.com", "bbc.co.uk", "reuters.com", "nytimes.com",
-            "theguardian.com", "aljazeera.com", "ft.com", "economist.com",
-            "bloomberg.com", "apnews.com", "washingtonpost.com", "cnn.com",
-            "news.sky.com", "telegraph.co.uk", "independent.co.uk",
-            "france24.com", "dw.com", "npr.org", "pbs.org", "abcnews.go.com",
-            "time.com", "foreignpolicy.com", "theconversation.com",
-            "voanews.com", "rfi.fr", "africanews.com",
-            "allafrica.com", "dailymaverick.co.za", "mg.co.za",
-            "news24.com", "theeastafrican.co.ke", "sabc.co.za",
-            "nation.africa", "citizen.co.za", "ewn.co.za",
-            "iol.co.za", "timeslive.co.za",
-        ]
-
-        queries = [
-            urllib.parse.quote("Zimbabwe business economy finance investment"),
-            urllib.parse.quote("Zimbabwe politics government policy reform"),
-            urllib.parse.quote("Zimbabwe technology digital"),
-            "Zimbabwe",
-            urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
-        ]
-        for q in queries:
-            url = (
-                f"https://gnews.io/api/v4/search?q={q}&lang=en&max=20"
-                f"&apikey={GNEWS_API_KEY}"
-            )
-            try:
-                req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
-                with urllib.request.urlopen(req, timeout=15) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
-                batch = data.get("articles", [])
-                articles.extend(batch)
-                print(f"  GNews: {len(batch)} articles for query: {q[:40]}...")
-            except Exception as e:
-                print(f"  WARN: GNews query failed: {e}")
-
-        if articles:
-            gnews_ok = True
-            print(f"\n  --- All {len(articles)} raw headlines from GNews ---")
-            for i, a in enumerate(articles):
-                src = a.get("source", {}).get("name", "?")
-                title = a.get("title", "")[:100]
-                print(f"  [{i+1:2d}] {src:<30s} | {title}")
-            print("  ---\n")
-
-            # Normalise GNews articles
-            reputable = []
-            others = []
-            for a in articles:
-                item = {
-                    "title": a.get("title", ""),
-                    "description": a.get("description", ""),
-                    "url": a.get("url", ""),
-                    "image": a.get("image", ""),
-                    "publishedAt": a.get("publishedAt", ""),
-                    "source": a.get("source", {}).get("name", ""),
-                }
-                source_url = a.get("source", {}).get("url", "")
-                if any(d in source_url for d in reputable_domains):
-                    reputable.append(item)
-                else:
-                    others.append(item)
-            articles = reputable + others
-        else:
-            print("  GNews returned no articles")
-    else:
-        print("  GNEWS_API_KEY not set — using RSS fallback")
-
-    # --- RSS fallback: always run if GNews returned nothing ---
-    if not gnews_ok:
-        print("  Fetching spotlight from RSS feeds...")
-        spotlight_rss = [
-            "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
-            "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
-            'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
-        ]
-        for rss_url in spotlight_rss:
-            raw = fetch_url(rss_url)
-            if raw:
-                parsed = parse_rss_feed(raw)
-                for a in parsed:
-                    src_name = a.get("source", {}).get("name", "") if isinstance(a.get("source"), dict) else a.get("source", "")
-                    articles.append({
-                        "title": a.get("title", ""),
-                        "description": a.get("description", ""),
-                        "url": a.get("url", ""),
-                        "image": "",
-                        "publishedAt": a.get("publishedAt", ""),
-                        "source": src_name,
-                    })
-        print(f"  RSS fallback: {len(articles)} articles collected")
+    for fetcher, name in api_cascade:
+        result = fetcher()
+        if result:
+            articles.extend(result)
+            if not source_used or source_used == "none":
+                source_used = name
+            else:
+                source_used += f" + {name}"
+            print(f"  >> {name}: {len(result)} articles (total: {len(articles)})")
+            if len(articles) >= MIN_SPOTLIGHT_ARTICLES:
+                print(f"  >> Sufficient articles ({len(articles)}) — skipping remaining APIs")
+                break
 
     if not articles:
-        print("  FAIL: no articles from GNews or RSS — writing empty spotlight")
+        print("  FAIL: no articles from any API or RSS — writing empty spotlight")
         outpath = os.path.join(DATA_DIR, "spotlight.json")
         with open(outpath, "w") as f:
             json.dump({"articles": [], "more": []}, f)
@@ -504,8 +741,7 @@ def fetch_spotlight():
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)
-    source_label = "GNews" if gnews_ok else "RSS fallback"
-    print(f"  OK: {len(spotlight)} spotlight + {len(more)} more ({source_label})")
+    print(f"  OK: {len(spotlight)} spotlight + {len(more)} more ({source_used})")
 
 
 def update_archive(new_articles):
