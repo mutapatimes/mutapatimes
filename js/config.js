@@ -1484,7 +1484,7 @@ var GNEWS_CATEGORIES = ["business", "technology", "entertainment", "sports", "sc
 
 // Check if all spotlight articles are stale (older than 48 hours)
 function spotlightIsStale(articles) {
-  var maxAge = 48 * 60 * 60 * 1000; // 48 hours
+  var maxAge = 7 * 24 * 60 * 60 * 1000; // 7 days — international outlets don't cover Zimbabwe daily
   for (var i = 0; i < articles.length; i++) {
     var pub = articles[i].publishedAt;
     if (pub) {
