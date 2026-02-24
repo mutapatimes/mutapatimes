@@ -164,6 +164,7 @@ _ZW_KEYWORDS = [
     "zimbabwe", "harare", "bulawayo", "mutare", "gweru", "masvingo",
     "chitungwiza", "kwekwe", "kadoma", "chegutu", "chinhoyi", "bindura",
     "mnangagwa", "zanu", "zanupf", "mdc", "chamisa", "chiwenga",
+    "mugabe",
     "zim", "zimra", "rbz", "zimdollar", "zig", "ziggold",
     "sadc", "southern africa",
     "nyamandlovu", "hwange", "kariba", "victoria falls", "great zimbabwe",
