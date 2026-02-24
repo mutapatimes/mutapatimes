@@ -199,6 +199,7 @@
     for (var i = 0; i < articles.length; i++) {
       var a = articles[i];
       var dateStr = formatArticleDate(a.date);
+      var isWire = a.source_type === "wire";
       var categoryHtml = a.category
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';

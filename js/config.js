@@ -411,14 +411,15 @@ function loadCmsArticles(callback) {
           success: function(raw) {
             var parsed = parseCmsFrontmatter(raw);
             if (parsed.meta.title) {
+              var isWire = parsed.meta.source_type === "wire";
               articles.push({
                 title: parsed.meta.title,
                 url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
                 description: parsed.meta.summary || "",
-                source: "The Mutapa Times",
+                source: isWire ? (parsed.meta.author || "Wire") : "The Mutapa Times",
                 publishedAt: parsed.meta.date || "",
                 isLocal: false,
-                isCmsArticle: true,
+                isCmsArticle: !isWire,
                 featured: parsed.meta.featured === true || parsed.meta.featured === "true",
                 headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
               });
@@ -451,14 +452,15 @@ function loadCmsArticles(callback) {
               success: function(raw) {
                 var parsed = parseCmsFrontmatter(raw);
                 if (parsed.meta.title) {
+                  var isWire = parsed.meta.source_type === "wire";
                   articles.push({
                     title: parsed.meta.title,
                     url: "article.html?slug=" + encodeURIComponent(filename.replace(/\.md$/, "")),
                     description: parsed.meta.summary || "",
-                    source: "The Mutapa Times",
+                    source: isWire ? (parsed.meta.author || "Wire") : "The Mutapa Times",
                     publishedAt: parsed.meta.date || "",
                     isLocal: false,
-                    isCmsArticle: true,
+                    isCmsArticle: !isWire,
                     featured: parsed.meta.featured === true || parsed.meta.featured === "true",
                     headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
                   });
