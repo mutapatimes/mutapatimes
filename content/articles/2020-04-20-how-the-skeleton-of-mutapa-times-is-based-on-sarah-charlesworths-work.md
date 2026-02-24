@@ -7,6 +7,9 @@ image: /img/uploads/imageedit_1_5381951801.jpg
 summary: Conceptual artist Sarah Charlesworth's 1979 study of how newspapers covered a solar eclipse inspired the framework behind The Mutapa Times.
 featured: true
 headline_position: 1
+source_url: ''
+source_type: original
+spotlight: true
 ---
 
 A total solar eclipse occurred in North America on February 26, 1979 in which the central shadow of the moon passed through the American states of Washington, Oregon, Idaho, Montana and through the major Canadian provinces. The eclipse was the talk of the continent and was documented through photography and editorial by local newspapers throughout the states.
