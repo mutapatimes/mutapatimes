@@ -17,7 +17,7 @@
   };
 
   // VAPID public key from Firebase Cloud Messaging settings
-  var VAPID_KEY = '';
+  var VAPID_KEY = 'BH48fgsoLTsqyu-JH2E_oPatyr12f585pf_wtO9xnZccC6Pjt5glObY4V-8WL3eD6Uwvy22P2E2kpwM8hn1OlNg';
 
   var DISMISS_KEY = 'mutapa_push_dismissed';
   var SUBSCRIBED_KEY = 'mutapa_push_subscribed';
