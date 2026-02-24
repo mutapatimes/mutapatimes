@@ -98,7 +98,12 @@
       var msgScript = document.createElement('script');
       msgScript.src = 'https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging-compat.js';
       msgScript.onload = function() {
-        initFirebase(banner);
+        var fsScript = document.createElement('script');
+        fsScript.src = 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js';
+        fsScript.onload = function() {
+          initFirebase(banner);
+        };
+        document.head.appendChild(fsScript);
       };
       document.head.appendChild(msgScript);
     };
@@ -110,10 +115,18 @@
       firebase.initializeApp(FIREBASE_CONFIG);
     }
     var messaging = firebase.messaging();
+    var db = firebase.firestore();
     messaging.getToken({ vapidKey: VAPID_KEY }).then(function(token) {
       if (token) {
         localStorage.setItem(SUBSCRIBED_KEY, '1');
         localStorage.setItem('mutapa_fcm_token', token);
+        // Save token to Firestore for server-side push delivery
+        db.collection('push_tokens').doc(token).set({
+          token: token,
+          created: firebase.firestore.FieldValue.serverTimestamp()
+        }).catch(function(e) {
+          console.warn('Failed to save push token:', e);
+        });
         // Update banner to success state
         banner.innerHTML = '<p class="push-banner-text">News alerts enabled!</p>';
         setTimeout(function() {
