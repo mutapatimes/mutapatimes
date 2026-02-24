@@ -1126,7 +1126,7 @@ def write_articles_to_cms(api_articles):
         frontmatter = f'''---
 title: "{safe_title}"
 date: {date_str}
-author: Wire
+author: {source}
 category: {category}
 image: {image}
 summary: "{safe_desc}"
