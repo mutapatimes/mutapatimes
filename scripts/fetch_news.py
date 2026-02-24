@@ -179,16 +179,59 @@ _ZW_SOURCES = [
 ]
 
 
+def _parse_date(datestr):
+    """Parse ISO 8601 or RFC 2822 date string into a timezone-aware datetime, or None."""
+    from datetime import datetime, timezone
+    if not datestr:
+        return None
+    # Try ISO 8601 first (API responses)
+    try:
+        return datetime.fromisoformat(datestr.replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        pass
+    # Try RFC 2822 (RSS feeds: "Wed, 28 Nov 2018 12:00:00 GMT")
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(datestr)
+    except Exception:
+        pass
+    return None
+
+
+# Patterns that indicate a homepage / landing page, not a real article
+_JUNK_TITLE_PATTERNS = [
+    "latest breaking news",
+    "latest news & updates",
+    "live & breaking",
+    "breaking world and u.s. news",
+    "top stories today",
+    "| latest news",
+    "| breaking news",
+    "| top stories",
+    "| home",
+]
+
+
 def is_zw_relevant(article):
-    """Check if an article is about Zimbabwe (keyword in title/desc or from a ZW source)
-    and was published within the last 30 days."""
+    """Check if an article is a real Zimbabwe story published within the last 30 days."""
     from datetime import datetime, timezone
 
-    # Reject articles older than 30 days
+    title = (article.get("title", "") or "").strip()
+
+    # Reject empty titles
+    if not title:
+        return False
+
+    # Reject homepage/landing-page titles (not real articles)
+    title_lower = title.lower()
+    if any(pat in title_lower for pat in _JUNK_TITLE_PATTERNS):
+        return False
+
+    # Reject articles older than 30 days (handles both ISO 8601 and RFC 2822)
     pub = article.get("publishedAt", "") or ""
-    if pub:
+    dt = _parse_date(pub)
+    if dt:
         try:
-            dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
             if (datetime.now(timezone.utc) - dt).days > 30:
                 return False
         except Exception:
@@ -197,7 +240,7 @@ def is_zw_relevant(article):
     source = (article.get("source", "") or "").lower()
     if any(s in source for s in _ZW_SOURCES):
         return True
-    text = ((article.get("title", "") or "") + " " + (article.get("description", "") or "")).lower()
+    text = (title_lower + " " + ((article.get("description", "") or "")).lower())
     return any(kw in text for kw in _ZW_KEYWORDS)
 
 
@@ -732,6 +775,9 @@ def fetch_spotlight():
         except (json.JSONDecodeError, IOError):
             existing = []
 
+    # Filter existing/cached articles through relevance check too (purges stale junk)
+    existing = [a for a in existing if is_zw_relevant(a)]
+
     # Merge: new articles first, then existing ones (deduped by URL + title similarity)
     seen_urls = set()
     merged = []
@@ -743,14 +789,12 @@ def fetch_spotlight():
         if title and any(titles_are_similar(title, m.get("title", "")) for m in merged):
             continue
         seen_urls.add(url)
-        # Drop articles older than 7 days
-        pub = a.get("publishedAt", "")
-        if pub:
+        # Drop articles older than 30 days (handles ISO 8601 + RFC 2822)
+        dt = _parse_date(a.get("publishedAt", ""))
+        if dt:
+            from datetime import datetime, timezone
             try:
-                from datetime import datetime, timezone
-                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
-                age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 30:
+                if (datetime.now(timezone.utc) - dt).days > 30:
                     continue
             except Exception:
                 pass
