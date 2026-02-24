@@ -716,14 +716,21 @@ def fetch_spotlight():
 
     # Reputable source keywords for filtering
     reputable_kw = [
+        # International
         "bbc", "reuters", "nytimes", "new york times", "guardian", "al jazeera",
         "bloomberg", "ap news", "associated press", "financial times", "economist",
         "cnn", "washington post", "sky news", "france 24", "dw", "deutsche welle",
         "npr", "pbs", "abc news", "time magazine", "foreign policy", "the conversation",
-        "voa", "voice of america", "rfi", "africanews",
-        "allafrica", "daily maverick", "mail & guardian", "news24", "the east african",
-        "sabc", "nation africa", "the citizen", "eyewitness news", "iol", "timeslive",
-        "sunday times",
+        "voa", "voice of america", "rfi",
+        "the independent", "the telegraph", "cbs news", "nbc news",
+        "politico", "the atlantic", "axios", "euronews",
+        # Africa-focused
+        "africanews", "allafrica", "daily maverick", "mail & guardian", "news24",
+        "the east african", "sabc", "nation africa", "the citizen", "eyewitness news",
+        "iol", "timeslive", "sunday times",
+        "africa confidential", "the africa report", "business day", "ground up",
+        # Zimbabwe
+        "herald",
     ]
 
     # --- API Cascade: try each source until we have enough articles ---
@@ -748,6 +755,8 @@ def fetch_spotlight():
             result = [a for a in result if is_zw_relevant(a)]
             if before != len(result):
                 print(f"  >> {name}: {before - len(result)} non-Zimbabwe articles filtered out")
+            for a in result:
+                a["_source_api"] = name
             articles.extend(result)
             if not source_used or source_used == "none":
                 source_used = name
@@ -771,7 +780,8 @@ def fetch_spotlight():
     if os.path.exists(outpath):
         try:
             with open(outpath) as f:
-                existing = json.load(f).get("articles", [])
+                prev = json.load(f)
+                existing = prev.get("articles", []) + prev.get("more", [])
         except (json.JSONDecodeError, IOError):
             existing = []
 
@@ -804,6 +814,8 @@ def fetch_spotlight():
     merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
 
     reputable_merged = [a for a in merged if any(d in a.get("source", "").lower() for d in reputable_kw)]
+    # Float articles with images to the top (stable sort preserves date order within each group)
+    reputable_merged.sort(key=lambda a: (0 if a.get("image", "").strip() else 1))
     others_merged = []
     for a in merged:
         if a in reputable_merged:
@@ -829,6 +841,10 @@ def fetch_spotlight():
 
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
+
+    # Import API-sourced articles with images into CMS as wire articles
+    api_articles = [a for a in merged if a.get("_source_api", "") != "RSS fallback" and a.get("image", "").strip()]
+    write_articles_to_cms(api_articles)
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)
@@ -869,6 +885,153 @@ def update_archive(new_articles):
         json.dump({"articles": existing}, f)
     print(f"\n=== ARCHIVE ===")
     print(f"  Added {added} new articles, total archive: {len(existing)}")
+
+
+### ---------------------------------------------------------------------------
+### CMS wire article import
+### ---------------------------------------------------------------------------
+
+# Category inference rules — mirrors js/config.js CATEGORY_RULES
+_CMS_CATEGORY_RULES = [
+    ("Business", ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve", "industry", "commerce", "entrepreneur"]),
+    ("Politics", ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "senator", "cabinet", "coalition"]),
+    ("Policy", ["policy", "regulation", "reform", "legislation", "bill", "amendment", "sanctions", "sadc", "african union", "treaty", "compliance", "governance", "mandate", "directive", "statutory"]),
+    ("Tech", ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash", "fintech", "innovation"]),
+    ("Health", ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"]),
+    ("Crime", ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"]),
+    ("Sport", ["cricket", "football", "soccer", "rugby", "match", "score", "championship", "tournament", "athlete", "stadium", "coach", "team", "league", "olympic", "fifa", "icc", "qualifier", "wicket", "goal"]),
+    ("Culture", ["music", "film", "artist", "culture", "festival", "concert", "album", "entertainment", "award", "celebrity", "dance", "theatre", "theater"]),
+    ("Environment", ["climate", "drought", "flood", "wildlife", "conservation", "environment", "cyclone", "rainfall", "dam", "water crisis", "deforestation", "national park", "safari", "poach"]),
+    ("Education", ["school", "university", "student", "teacher", "education", "exam", "graduate", "scholarship", "literacy"]),
+]
+
+
+def _slugify(text, max_len=60):
+    """Convert text to a URL-safe slug."""
+    s = text.lower().strip()
+    s = re.sub(r'[^\w\s-]', '', s)
+    s = re.sub(r'[\s_]+', '-', s)
+    s = re.sub(r'-+', '-', s).strip('-')
+    return s[:max_len].rstrip('-')
+
+
+def _infer_cms_category(title):
+    """Infer CMS category from title keywords (mirrors frontend inferCategory)."""
+    t = " " + title.lower() + " "
+    for tag, words in _CMS_CATEGORY_RULES:
+        for w in words:
+            if w in t:
+                return tag
+    return "Business"  # default for Zimbabwe news
+
+
+def _get_existing_source_urls():
+    """Scan content/articles/*.md for source_url values to avoid re-importing."""
+    import glob as glob_mod
+    urls = set()
+    for filepath in glob_mod.glob("content/articles/*.md"):
+        try:
+            with open(filepath) as f:
+                for line in f:
+                    if line.startswith("---") and urls:
+                        break
+                    if line.startswith("source_url:"):
+                        val = line.split(":", 1)[1].strip().strip('"').strip("'")
+                        if val:
+                            urls.add(val)
+        except IOError:
+            continue
+    return urls
+
+
+def write_articles_to_cms(api_articles):
+    """Import API-sourced articles as CMS markdown files (wire articles)."""
+    from datetime import datetime, timezone
+    print("\n=== CMS WIRE IMPORT ===")
+    cms_dir = "content/articles"
+    os.makedirs(cms_dir, exist_ok=True)
+
+    existing_urls = _get_existing_source_urls()
+    index_path = os.path.join(cms_dir, "index.json")
+    try:
+        with open(index_path) as f:
+            index = json.load(f)
+    except (IOError, json.JSONDecodeError):
+        index = []
+
+    imported = 0
+    for a in api_articles:
+        if imported >= 10:
+            break
+        url = a.get("url", "")
+        title = a.get("title", "")
+        image = a.get("image", "").strip()
+        desc = a.get("description", "").strip()
+        source = a.get("source", "")
+
+        if not url or not title or not image:
+            continue
+        if url in existing_urls:
+            continue
+
+        # Parse date for slug and frontmatter
+        dt = _parse_date(a.get("publishedAt", ""))
+        if not dt:
+            dt = datetime.now(timezone.utc)
+        date_str = dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        date_prefix = dt.strftime("%Y-%m-%d")
+
+        slug = _slugify(title)
+        filename = f"{date_prefix}-{slug}.md"
+        filepath = os.path.join(cms_dir, filename)
+
+        # Skip if file already exists
+        if os.path.exists(filepath):
+            continue
+
+        category = _infer_cms_category(title)
+        # Escape quotes in YAML values
+        safe_title = title.replace('"', '\\"')
+        safe_desc = desc[:280].replace('"', '\\"') if desc else safe_title[:280]
+
+        body_lines = []
+        if desc:
+            body_lines.append(desc)
+            body_lines.append("")
+        body_lines.append(f"*Originally published by {source}.*")
+        body_lines.append(f"[Read original article]({url})")
+        body = "\n".join(body_lines)
+
+        frontmatter = f'''---
+title: "{safe_title}"
+date: {date_str}
+author: Wire
+category: {category}
+image: {image}
+summary: "{safe_desc}"
+featured: false
+headline_position: 0
+source_url: "{url}"
+source_type: wire
+spotlight: false
+---
+
+{body}
+'''
+
+        with open(filepath, "w") as f:
+            f.write(frontmatter)
+
+        if filename not in index:
+            index.append(filename)
+        existing_urls.add(url)
+        imported += 1
+        print(f"  Imported: {source} — {title[:60]}")
+
+    with open(index_path, "w") as f:
+        json.dump(index, f, indent=2)
+
+    print(f"  Total imported this run: {imported}")
 
 
 def main():
