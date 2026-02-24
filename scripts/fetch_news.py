@@ -159,6 +159,91 @@ def deduplicate(articles, limit=10):
     return unique[:limit]
 
 
+# Keywords that indicate an article is about Zimbabwe / relevant region
+_ZW_KEYWORDS = [
+    "zimbabwe", "harare", "bulawayo", "mutare", "gweru", "masvingo",
+    "chitungwiza", "kwekwe", "kadoma", "chegutu", "chinhoyi", "bindura",
+    "mnangagwa", "zanu", "zanupf", "mdc", "chamisa", "chiwenga",
+    "zim", "zimra", "rbz", "zimdollar", "zig", "ziggold",
+    "sadc", "southern africa",
+    "nyamandlovu", "hwange", "kariba", "victoria falls", "great zimbabwe",
+    "mthuli ncube", "mushayavanhu",
+]
+
+# Zimbabwean publishers — articles from these sources pass without keyword check
+_ZW_SOURCES = [
+    "herald", "newsday", "zimbabwe mail", "bulawayo24", "263chat",
+    "pindula", "nehanda", "newzimbabwe", "zimlive", "chronicle",
+    "b-metro", "the standard", "daily news", "zbcnews", "cite",
+    "the mutapa times",
+]
+
+
+def _parse_date(datestr):
+    """Parse ISO 8601 or RFC 2822 date string into a timezone-aware datetime, or None."""
+    from datetime import datetime, timezone
+    if not datestr:
+        return None
+    # Try ISO 8601 first (API responses)
+    try:
+        return datetime.fromisoformat(datestr.replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        pass
+    # Try RFC 2822 (RSS feeds: "Wed, 28 Nov 2018 12:00:00 GMT")
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(datestr)
+    except Exception:
+        pass
+    return None
+
+
+# Patterns that indicate a homepage / landing page, not a real article
+_JUNK_TITLE_PATTERNS = [
+    "latest breaking news",
+    "latest news & updates",
+    "live & breaking",
+    "breaking world and u.s. news",
+    "top stories today",
+    "| latest news",
+    "| breaking news",
+    "| top stories",
+    "| home",
+]
+
+
+def is_zw_relevant(article):
+    """Check if an article is a real Zimbabwe story published within the last 30 days."""
+    from datetime import datetime, timezone
+
+    title = (article.get("title", "") or "").strip()
+
+    # Reject empty titles
+    if not title:
+        return False
+
+    # Reject homepage/landing-page titles (not real articles)
+    title_lower = title.lower()
+    if any(pat in title_lower for pat in _JUNK_TITLE_PATTERNS):
+        return False
+
+    # Reject articles older than 30 days (handles both ISO 8601 and RFC 2822)
+    pub = article.get("publishedAt", "") or ""
+    dt = _parse_date(pub)
+    if dt:
+        try:
+            if (datetime.now(timezone.utc) - dt).days > 30:
+                return False
+        except Exception:
+            pass
+
+    source = (article.get("source", "") or "").lower()
+    if any(s in source for s in _ZW_SOURCES):
+        return True
+    text = (title_lower + " " + ((article.get("description", "") or "")).lower())
+    return any(kw in text for kw in _ZW_KEYWORDS)
+
+
 def generate_description(title, content=""):
     """Generate a 1-2 sentence summary using Gemini free tier with rate limiting."""
     if not GEMINI_API_KEY:
@@ -418,7 +503,7 @@ def fetch_from_newsdata():
 
     url = (
         f"https://newsdata.io/api/1/latest?country=zw&language=en"
-        f"&apikey={NEWSDATA_API_KEY}"
+        f"&q=Zimbabwe&apikey={NEWSDATA_API_KEY}"
     )
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
@@ -658,6 +743,11 @@ def fetch_spotlight():
     for fetcher, name in api_cascade:
         result = fetcher()
         if result:
+            # Filter out non-Zimbabwe articles (game trailers, foreign sports, etc.)
+            before = len(result)
+            result = [a for a in result if is_zw_relevant(a)]
+            if before != len(result):
+                print(f"  >> {name}: {before - len(result)} non-Zimbabwe articles filtered out")
             articles.extend(result)
             if not source_used or source_used == "none":
                 source_used = name
@@ -685,6 +775,9 @@ def fetch_spotlight():
         except (json.JSONDecodeError, IOError):
             existing = []
 
+    # Filter existing/cached articles through relevance check too (purges stale junk)
+    existing = [a for a in existing if is_zw_relevant(a)]
+
     # Merge: new articles first, then existing ones (deduped by URL + title similarity)
     seen_urls = set()
     merged = []
@@ -696,14 +789,12 @@ def fetch_spotlight():
         if title and any(titles_are_similar(title, m.get("title", "")) for m in merged):
             continue
         seen_urls.add(url)
-        # Drop articles older than 7 days
-        pub = a.get("publishedAt", "")
-        if pub:
+        # Drop articles older than 30 days (handles ISO 8601 + RFC 2822)
+        dt = _parse_date(a.get("publishedAt", ""))
+        if dt:
+            from datetime import datetime, timezone
             try:
-                from datetime import datetime, timezone
-                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
-                age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 7:
+                if (datetime.now(timezone.utc) - dt).days > 30:
                     continue
             except Exception:
                 pass
