@@ -180,7 +180,20 @@ _ZW_SOURCES = [
 
 
 def is_zw_relevant(article):
-    """Check if an article is about Zimbabwe (keyword in title/desc or from a ZW source)."""
+    """Check if an article is about Zimbabwe (keyword in title/desc or from a ZW source)
+    and was published within the last 30 days."""
+    from datetime import datetime, timezone
+
+    # Reject articles older than 30 days
+    pub = article.get("publishedAt", "") or ""
+    if pub:
+        try:
+            dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+            if (datetime.now(timezone.utc) - dt).days > 30:
+                return False
+        except Exception:
+            pass
+
     source = (article.get("source", "") or "").lower()
     if any(s in source for s in _ZW_SOURCES):
         return True
@@ -737,7 +750,7 @@ def fetch_spotlight():
                 from datetime import datetime, timezone
                 dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
                 age_days = (datetime.now(timezone.utc) - dt).days
-                if age_days > 7:
+                if age_days > 30:
                     continue
             except Exception:
                 pass
