@@ -1517,7 +1517,7 @@ function loadSpotlightStories() {
         setCache(cacheKey, data.articles);
         // Populate verified GNews extras before rendering so spotlight can use them
         if (data.more && data.more.length > 0) {
-          _gnewsMoreArticles = data.more.filter(function(a) { return isReputableSource(a.source); });
+          _gnewsMoreArticles = data.more.filter(function(a) { return a.cms || isReputableSource(a.source); });
         }
         renderSpotlightStories(data.articles);
       } else {
@@ -1663,16 +1663,25 @@ function renderSpotlightStories(articles) {
     container.append(item);
   }
 
-  // Append up to 2 verified Google News RSS articles with green accent
+  // Render green spotlight items: CMS-promoted articles first, then regular extras
+  var cmsExtras = _gnewsMoreArticles.filter(function(a) {
+    return a.cms && a.url && !_spotlightUrls[a.url];
+  });
   var gnewsExtras = _gnewsMoreArticles.filter(function(a) {
-    return a.url && !_spotlightUrls[a.url];
+    return !a.cms && a.url && !_spotlightUrls[a.url];
   }).slice(0, 2);
-  for (var j = 0; j < gnewsExtras.length; j++) {
-    var g = gnewsExtras[j];
+  var greenItems = cmsExtras.concat(gnewsExtras);
+
+  for (var j = 0; j < greenItems.length; j++) {
+    var g = greenItems[j];
     if (g.url) _spotlightUrls[g.url] = true;
     var gDate = formatDate(g.publishedAt);
     var gItem = $('<article class="spotlight-item spotlight-gnews">');
-    var gLink = $('<a>').attr('href', g.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
+    var gLink = $('<a>').attr('href', g.url || '#');
+    // CMS articles are internal links; external articles open in new tab
+    if (!g.cms) {
+      gLink.attr('target', '_blank').attr('rel', 'noopener nofollow');
+    }
     if (g.image) {
       gLink.append($('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || ''));
     }
@@ -1694,7 +1703,7 @@ function renderSpotlightStories(articles) {
     }
     gMeta.append(createShareGroup(g.title, g.url, {
       title: g.title, source: g.source, description: gDesc,
-      url: g.url, category: '', isLocal: false,
+      url: g.url, category: '', isLocal: g.cms || false,
       publishedAt: g.publishedAt, image: g.image || ''
     }));
     gText.append(gMeta);
@@ -1705,6 +1714,138 @@ function renderSpotlightStories(articles) {
 
   // Inject structured data for SEO
   injectArticleSchema(articles, 'spotlight');
+
+  // Load CMS spotlight articles live (fallback if not yet in spotlight.json)
+  if (!cmsExtras.length) {
+    loadCmsSpotlightArticles(container);
+  }
+}
+
+// ============================================================
+// CMS Spotlight: fetch articles with spotlight: true from GitHub
+// ============================================================
+function loadCmsSpotlightArticles(container) {
+  if (!container || !container.length) return;
+
+  var cacheKey = "cms_spotlight_cache";
+  var cached = getCache(cacheKey);
+  if (cached && cached.length) {
+    appendCmsSpotlightItems(container, cached);
+    return;
+  }
+
+  var apiUrl = "https://api.github.com/repos/" + MUTAPA_CONFIG.GITHUB_REPO
+    + "/contents/content/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
+
+  $.getJSON(apiUrl, function(entries) {
+    if (!entries || !entries.length) return;
+    var mdFiles = [];
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].name && /\.md$/.test(entries[i].name)) {
+        mdFiles.push(entries[i].name);
+      }
+    }
+    if (!mdFiles.length) return;
+
+    var pending = mdFiles.length;
+    var spotlightItems = [];
+    var rawBase = "https://raw.githubusercontent.com/" + MUTAPA_CONFIG.GITHUB_REPO
+      + "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/content/articles/";
+
+    for (var j = 0; j < mdFiles.length; j++) {
+      (function(filename) {
+        $.ajax({
+          type: "GET",
+          url: rawBase + filename,
+          dataType: "text",
+          success: function(raw) {
+            var match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
+            if (!match) return;
+            var lines = match[1].split('\n');
+            var meta = {};
+            for (var k = 0; k < lines.length; k++) {
+              var ci = lines[k].indexOf(':');
+              if (ci === -1) continue;
+              var key = lines[k].substring(0, ci).trim();
+              var val = lines[k].substring(ci + 1).trim();
+              if ((val.charAt(0) === '"' && val.charAt(val.length - 1) === '"') ||
+                  (val.charAt(0) === "'" && val.charAt(val.length - 1) === "'")) {
+                val = val.substring(1, val.length - 1);
+              }
+              meta[key] = val;
+            }
+            if (meta.spotlight && meta.spotlight.toLowerCase() === 'true') {
+              var slug = filename.replace(/\.md$/, '');
+              spotlightItems.push({
+                title: meta.title || '',
+                description: meta.summary || '',
+                url: 'article.html?slug=' + encodeURIComponent(slug),
+                image: meta.image || '',
+                publishedAt: meta.date || '',
+                source: 'The Mutapa Times',
+                cms: true
+              });
+            }
+          },
+          complete: function() {
+            pending--;
+            if (pending === 0 && spotlightItems.length > 0) {
+              setCache(cacheKey, spotlightItems);
+              appendCmsSpotlightItems(container, spotlightItems);
+            }
+          }
+        });
+      })(mdFiles[j]);
+    }
+  });
+}
+
+function appendCmsSpotlightItems(container, articles) {
+  for (var i = 0; i < articles.length; i++) {
+    var a = articles[i];
+    if (_spotlightUrls[a.url]) continue;
+    _spotlightUrls[a.url] = true;
+
+    var aDate = formatDate(a.publishedAt);
+    var aItem = $('<article class="spotlight-item spotlight-gnews">');
+    var aLink = $('<a>').attr('href', a.url || '#');
+    if (a.image) {
+      aLink.append($('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || ''));
+    }
+    var aText = $('<div class="spotlight-text">');
+    aText.append($('<h4 class="spotlight-title">').text(a.title));
+    var aDesc = a.description;
+    if (aDesc && aDesc.length > 200) aDesc = aDesc.substring(0, 200) + "...";
+    if (aDesc) aText.append($('<p class="spotlight-desc">').text(aDesc));
+    var aMeta = $('<p class="spotlight-meta">');
+    if (a.source) {
+      aMeta.append($('<span class="verified-source">').text(a.source));
+      aMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+    }
+    if (aDate) {
+      if (a.source) aMeta.append(document.createTextNode(" \u00b7 "));
+      var aTimeEl = $('<time>').text(aDate);
+      try { var aDt = new Date(a.publishedAt); if (!isNaN(aDt.getTime())) aTimeEl.attr('datetime', aDt.toISOString()); } catch (e) {}
+      aMeta.append(aTimeEl);
+    }
+    aMeta.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: aDesc,
+      url: a.url, category: '', isLocal: true,
+      publishedAt: a.publishedAt, image: a.image || ''
+    }));
+    aText.append(aMeta);
+    aLink.append(aText);
+    aItem.append(aLink);
+    // Insert CMS items before the first regular green item
+    var firstGnews = container.find('.spotlight-gnews').first();
+    if (firstGnews.length && !firstGnews.data('cms')) {
+      aItem.data('cms', true);
+      firstGnews.before(aItem);
+    } else {
+      aItem.data('cms', true);
+      container.append(aItem);
+    }
+  }
 }
 
 // ============================================================
