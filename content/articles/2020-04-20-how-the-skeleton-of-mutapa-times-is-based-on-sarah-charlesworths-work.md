@@ -4,7 +4,7 @@ date: 2020-04-20T00:00:00.000Z
 author: Valentine Eluwasi
 category: Opinion
 image: /img/uploads/imageedit_1_5381951801.jpg
-summary: Conceptual artist Sarah Charlesworth's 1979 study of how newspapers covered a solar eclipse inspired the visual framework behind The Mutapa Times.
+summary: Conceptual artist Sarah Charlesworth's 1979 study of how newspapers covered a solar eclipse inspired the framework behind The Mutapa Times.
 featured: true
 headline_position: 1
 ---
