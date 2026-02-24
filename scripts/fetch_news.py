@@ -415,6 +415,124 @@ def get_cms_spotlight_articles():
 ### Schema: {title, description, url, image, publishedAt, source}
 ### ---------------------------------------------------------------------------
 
+
+### --- Direct publisher APIs (highest quality, used first) ---
+
+
+def fetch_from_guardian():
+    """Fetch Zimbabwe articles from The Guardian Open Platform API."""
+    api_key = os.environ.get("GUARDIAN_API_KEY", "")
+    if not api_key:
+        print("  Guardian: API key not set, skipping")
+        return []
+
+    # Search for Zimbabwe content, show fields needed for spotlight
+    url = (
+        f"https://content.guardianapis.com/search"
+        f"?q=Zimbabwe&order-by=newest&page-size=20"
+        f"&show-fields=headline,trailText,thumbnail,byline"
+        f"&api-key={api_key}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  Guardian: rate limited (429)")
+        else:
+            print(f"  Guardian: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  Guardian: error: {e}")
+        return []
+
+    results = data.get("response", {}).get("results", [])
+    if not results:
+        print("  Guardian: returned 0 articles")
+        return []
+
+    articles = []
+    for r in results:
+        fields = r.get("fields", {})
+        articles.append({
+            "title": fields.get("headline", r.get("webTitle", "")),
+            "description": fields.get("trailText", ""),
+            "url": r.get("webUrl", ""),
+            "image": fields.get("thumbnail", ""),
+            "publishedAt": r.get("webPublicationDate", ""),
+            "source": "The Guardian",
+        })
+
+    print(f"  Guardian: {len(articles)} articles")
+    return articles
+
+
+def fetch_from_nyt():
+    """Fetch Zimbabwe articles from NYT Article Search API."""
+    api_key = os.environ.get("NYT_API_KEY", "")
+    if not api_key:
+        print("  NYT: API key not set, skipping")
+        return []
+
+    url = (
+        f"https://api.nytimes.com/svc/search/v2/articlesearch.json"
+        f"?q=Zimbabwe&sort=newest&fl=headline,abstract,web_url,pub_date,multimedia,source"
+        f"&api-key={api_key}"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print("  NYT: rate limited (429)")
+        else:
+            print(f"  NYT: HTTP error {e.code}")
+        return []
+    except Exception as e:
+        print(f"  NYT: error: {e}")
+        return []
+
+    docs = data.get("response", {}).get("docs", [])
+    if not docs:
+        print("  NYT: returned 0 articles")
+        return []
+
+    NYT_IMAGE_BASE = "https://static01.nyt.com/"
+    articles = []
+    for d in docs:
+        headline = d.get("headline", {})
+        title = headline.get("main", "") if isinstance(headline, dict) else str(headline)
+
+        # Find the best image from multimedia array
+        image_url = ""
+        for m in d.get("multimedia", []):
+            if m.get("subtype") in ("xlarge", "superJumbo", "master675"):
+                image_url = NYT_IMAGE_BASE + m.get("url", "")
+                break
+        if not image_url:
+            for m in d.get("multimedia", []):
+                if m.get("url"):
+                    image_url = NYT_IMAGE_BASE + m.get("url", "")
+                    break
+
+        articles.append({
+            "title": title,
+            "description": d.get("abstract", ""),
+            "url": d.get("web_url", ""),
+            "image": image_url,
+            "publishedAt": d.get("pub_date", ""),
+            "source": "The New York Times",
+        })
+
+    print(f"  NYT: {len(articles)} articles")
+    return articles
+
+
+### --- Aggregator APIs (GNews, Newsdata, etc.) ---
+
+
 def fetch_from_gnews():
     """Fetch Zimbabwe articles from GNews API (5 queries, up to 100 articles)."""
     if not GNEWS_API_KEY:
@@ -734,8 +852,10 @@ def fetch_spotlight():
     ]
 
     # --- API Cascade: try each source until we have enough articles ---
-    # Daily-limited APIs first, then monthly-limited, then RSS (always works)
+    # Publisher APIs first (highest quality), then aggregators, then RSS fallback
     api_cascade = [
+        (fetch_from_guardian,   "Guardian"),
+        (fetch_from_nyt,        "NYT"),
         (fetch_from_gnews,      "GNews"),
         (fetch_from_newsdata,   "Newsdata.io"),
         (fetch_from_newsapi,    "NewsAPI.org"),
