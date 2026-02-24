@@ -488,9 +488,10 @@ def fetch_spotlight():
     for a in reputable_merged[:10]:
         print(f"    PASS: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
 
-    # Reputable sources only for spotlight
+    # Reputable sources for main spotlight; overflow reputable + non-reputable for green section
     spotlight = reputable_merged[:3]
-    more = others_merged[:15]
+    overflow_reputable = reputable_merged[3:18]  # extra reputable articles beyond top 3
+    more = others_merged[:15] if others_merged else overflow_reputable[:15]
 
     # Inject CMS-promoted articles into the green spotlight section
     cms_spotlight = get_cms_spotlight_articles()

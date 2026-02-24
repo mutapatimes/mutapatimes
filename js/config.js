@@ -1517,7 +1517,7 @@ function loadSpotlightStories() {
         setCache(cacheKey, data.articles);
         // Populate verified GNews extras before rendering so spotlight can use them
         if (data.more && data.more.length > 0) {
-          _gnewsMoreArticles = data.more.filter(function(a) { return isReputableSource(a.source); });
+          _gnewsMoreArticles = data.more.filter(function(a) { return a.cms || isReputableSource(a.source); });
         }
         renderSpotlightStories(data.articles);
       } else {
