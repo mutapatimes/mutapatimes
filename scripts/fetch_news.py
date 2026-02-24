@@ -1161,24 +1161,30 @@ spotlight: false
 def import_guardian_nyt_to_cms():
     """Fetch ALL Guardian and NYT Zimbabwe articles and import them to CMS.
 
-    These are always written as wire articles (source_type: wire) so they
-    are never attributed as original Mutapa Times content.
+    Articles are interleaved (NYT first in each pair, as the more reputable
+    source) so the CMS doesn't end up with a block of one source at the top.
+    All articles are written as wire (source_type: wire).
     """
     print("\n=== GUARDIAN + NYT FULL IMPORT ===")
-    wire_articles = []
 
     guardian = fetch_from_guardian()
-    if guardian:
-        # Filter to Zimbabwe-relevant articles
-        guardian = [a for a in guardian if is_zw_relevant(a)]
-        wire_articles.extend(guardian)
-        print(f"  Guardian: {len(guardian)} Zimbabwe articles to import")
+    guardian = [a for a in guardian if is_zw_relevant(a)] if guardian else []
+    print(f"  Guardian: {len(guardian)} Zimbabwe articles")
 
     nyt = fetch_from_nyt()
-    if nyt:
-        nyt = [a for a in nyt if is_zw_relevant(a)]
-        wire_articles.extend(nyt)
-        print(f"  NYT: {len(nyt)} Zimbabwe articles to import")
+    nyt = [a for a in nyt if is_zw_relevant(a)] if nyt else []
+    print(f"  NYT: {len(nyt)} Zimbabwe articles")
+
+    # Interleave with NYT first in each pair (more reputable)
+    wire_articles = []
+    gi, ni = 0, 0
+    while gi < len(guardian) or ni < len(nyt):
+        if ni < len(nyt):
+            wire_articles.append(nyt[ni])
+            ni += 1
+        if gi < len(guardian):
+            wire_articles.append(guardian[gi])
+            gi += 1
 
     if wire_articles:
         write_articles_to_cms(wire_articles, label="CMS WIRE IMPORT (Guardian + NYT)")
