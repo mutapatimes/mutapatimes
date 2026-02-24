@@ -227,9 +227,13 @@ def format_tweet(title, url):
     if len(title) > max_title_len:
         title = title[: max_title_len - 1].rstrip() + "\u2026"
 
+    # Add UTM tracking to URL
+    sep = "?" if "?" not in url else "&"
+    tracked_url = f"{url}{sep}utm_source=twitter&utm_medium=social&utm_campaign=auto_post"
+
     return (
         f"{title}\n\n"
-        f"\U0001f517 {url}\n\n"
+        f"\U0001f517 {tracked_url}\n\n"
         f"\U0001f1ff\U0001f1fc via @MutapaTimes #Zimbabwe"
     )
 

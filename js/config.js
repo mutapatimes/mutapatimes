@@ -869,29 +869,34 @@ function initEditorialImages() {
 // ============================================================
 var SHARE_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>';
 
+function addUtm(url, medium) {
+  if (!url) return url;
+  var sep = url.indexOf('?') === -1 ? '?' : '&';
+  return url + sep + 'utm_source=mutapatimes&utm_medium=' + (medium || 'share') + '&utm_campaign=reader_share';
+}
+
 function createShareBtn(title, url) {
   var btn = $('<button class="share-btn" title="Share this article">').html(SHARE_ICON_SVG);
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var shareText = title + '\n\n\ud83d\udd17 ' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
+    var trackedUrl = addUtm(url, 'share');
+    var shareText = title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://www.mutapatimes.com?utm_source=mutapatimes&utm_medium=share&utm_campaign=reader_share';
     var shareData = {
       title: title + ' | The Mutapa Times',
       text: shareText,
-      url: url
+      url: trackedUrl
     };
     if (navigator.share) {
       navigator.share(shareData).catch(function(err) {
         if (err.name !== 'AbortError') console.warn('Share failed:', err);
       });
     } else {
-      // Clipboard fallback — copy full formatted text
-      var clipText = title + '\n' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(clipText);
+        navigator.clipboard.writeText(shareText);
       } else {
         var temp = document.createElement('textarea');
-        temp.value = clipText;
+        temp.value = shareText;
         document.body.appendChild(temp);
         temp.select();
         document.execCommand('copy');
@@ -914,7 +919,8 @@ function createWhatsAppBtn(title, url) {
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var text = encodeURIComponent(title + '\n\n\ud83d\udd17 ' + url + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com');
+    var trackedUrl = addUtm(url, 'whatsapp');
+    var text = encodeURIComponent(title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://www.mutapatimes.com?utm_source=mutapatimes&utm_medium=whatsapp&utm_campaign=reader_share');
     window.open('https://wa.me/?text=' + text, '_blank');
   });
   return btn;

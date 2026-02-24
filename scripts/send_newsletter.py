@@ -273,14 +273,20 @@ def format_date(date_str):
         return ""
 
 
+def add_utm(url, medium="email"):
+    """Add UTM tracking parameters to a URL."""
+    sep = "?" if "?" not in url else "&"
+    return f"{url}{sep}utm_source=newsletter&utm_medium={medium}&utm_campaign=newsletter"
+
+
 def whatsapp_share_url(title, url):
     """Build a wa.me share URL with pre-populated Mutapa Times copy."""
+    tracked_url = add_utm(url, "whatsapp_from_newsletter")
     text = (
         f"{title}\n\n"
-        f"\U0001f517 {url}\n\n"
-        f"\U0001f1ff\U0001f1fc Stay informed on Zimbabwe \u2014 follow @MutapaTimes "
-        f"for daily news, analysis & more.\n"
-        f"\U0001f4f0 https://www.mutapatimes.com"
+        f"\U0001f517 {tracked_url}\n\n"
+        f"via The Mutapa Times \u2014 Zimbabwe news from 100+ sources \U0001f1ff\U0001f1fc\n"
+        f"\U0001f4f0 https://www.mutapatimes.com?utm_source=newsletter&utm_medium=whatsapp&utm_campaign=newsletter"
     )
     return "https://wa.me/?text=" + urllib.parse.quote(text, safe="")
 
