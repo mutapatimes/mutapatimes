@@ -131,8 +131,12 @@ def format_post(title, url):
     if len(title) > max_title_len:
         title = title[: max_title_len - 1].rstrip() + "\u2026"
 
+    # Add UTM tracking to URL
+    sep = "?" if "?" not in url else "&"
+    tracked_url = f"{url}{sep}utm_source=bluesky&utm_medium=social&utm_campaign=auto_post"
+
     text = f"{title}{suffix}"
-    facet = build_link_facet(text, link_text, url)
+    facet = build_link_facet(text, link_text, tracked_url)
     facets = [facet] if facet else []
 
     return text, facets
