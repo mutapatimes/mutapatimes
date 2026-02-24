@@ -29,6 +29,8 @@
 <meta property="og:title" content="How It Works | The Mutapa Times">
 <meta property="og:description" content="Learn how The Mutapa Times aggregates Zimbabwean news from foreign press using news APIs and curated data sources.">
 <meta property="og:image" content="https://www.mutapatimes.com/img/banner.png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="200">
 <meta property="og:url" content="https://www.mutapatimes.com/how.html">
 <meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
@@ -54,6 +56,10 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://www.mutapatimes.com/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.mutapatimes.com/"},{"@type":"ListItem","position":3,"name":"How It Works","item":"https://www.mutapatimes.com/how.html"}]}
+</script>
   </head>
   
   <body>
@@ -84,7 +90,7 @@
       
       <div class="item" id="item4">
           <h4 class="storyTitleCat">How?</h4>
-          <img class="image image4" src="https://cdn.dribbble.com/users/320114/screenshots/2575134/code_dribbble.gif" alt="Animated code illustration showing the technology behind The Mutapa Times">
+          <img class="image image4" src="https://cdn.dribbble.com/users/320114/screenshots/2575134/code_dribbble.gif" alt="Animated code illustration showing the technology behind The Mutapa Times" loading="lazy">
           <p class="story">The Mutapa Times was built by @eluwasi using the News API. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web with code.</p>
           <p class="story">The paper features the most popular news stories featuring &ldquo;Zimbabwe&rdquo; over the last 7 days. The paper searches the web every 15 minutes looking for new articles, should one of those become popular (a lot of clicks) it will end up on the paper.</p>
       </div>
@@ -112,11 +118,18 @@
 <!-- Site footer -->
 
 </div>
-<script src="js/plugins.js"></script>
-<script src="js/health.js"></script>
+<script defer src="js/plugins.js"></script>
+<script defer src="js/health.js"></script>
 
   
 
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 
 
