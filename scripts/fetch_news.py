@@ -277,6 +277,47 @@ def fetch_rss_descriptions():
     print(f"  OK: {len(descriptions)} descriptions ({new_count} new)")
 
 
+def get_cms_spotlight_articles():
+    """Scan content/articles/*.md for articles with spotlight: true in frontmatter."""
+    import glob as glob_mod
+    articles = []
+    for filepath in sorted(glob_mod.glob("content/articles/*.md")):
+        try:
+            with open(filepath) as f:
+                content = f.read()
+        except IOError:
+            continue
+
+        match = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+        if not match:
+            continue
+
+        meta = {}
+        for line in match.group(1).split('\n'):
+            idx = line.find(':')
+            if idx == -1:
+                continue
+            key = line[:idx].strip()
+            val = line[idx + 1:].strip().strip('"').strip("'")
+            meta[key] = val
+
+        if meta.get('spotlight', '').lower() != 'true':
+            continue
+
+        slug = os.path.basename(filepath).replace('.md', '')
+        articles.append({
+            "title": meta.get('title', ''),
+            "description": meta.get('summary', ''),
+            "url": "article.html?slug=" + slug,
+            "image": meta.get('image', ''),
+            "publishedAt": meta.get('date', ''),
+            "source": "The Mutapa Times",
+            "cms": True,
+        })
+        print(f"  CMS spotlight: {meta.get('title', filepath)}")
+    return articles
+
+
 def fetch_spotlight():
     """Fetch spotlight articles from GNews API with RSS fallback for reputable sources."""
     print("\n=== SPOTLIGHT ===")
@@ -450,6 +491,12 @@ def fetch_spotlight():
     # Reputable sources only for spotlight
     spotlight = reputable_merged[:3]
     more = others_merged[:15]
+
+    # Inject CMS-promoted articles into the green spotlight section
+    cms_spotlight = get_cms_spotlight_articles()
+    if cms_spotlight:
+        cms_urls = {c["url"] for c in cms_spotlight}
+        more = cms_spotlight + [a for a in more if a.get("url") not in cms_urls]
 
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
