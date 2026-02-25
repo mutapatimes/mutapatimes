@@ -884,6 +884,15 @@ nav a.economy-btn.active {
 /* ==========================================================================
    Weather
    ========================================================================== */
+/* ==========================================================================
+   Dark green lower section — everything below the main content grid
+   ========================================================================== */
+.lower-section {
+  background: #0f1a12;
+  color: rgba(255,255,255,0.85);
+}
+.lower-section .dateHr { display: none; }
+
 .weather-section {
   text-align: center;
   padding: 8px 0;
@@ -915,17 +924,21 @@ nav a.economy-btn.active {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 2px;
-  color: var(--text-mid);
+  color: rgba(255,255,255,0.5);
   font-weight: 600;
 }
+.lower-section .weather-city { border-right-color: rgba(255,255,255,0.08); }
 .weather-emoji { font-size: 1.8em; line-height: 1; margin: 2px 0; }
 .weather-temp { font-size: 1.2em; font-weight: 700; color: var(--ink); margin-bottom: 0; }
+.lower-section .weather-temp { color: #fff; }
 .weather-desc { font-size: 10px; color: var(--text-light); }
+.lower-section .weather-desc { color: rgba(255,255,255,0.4); }
 
 /* ==========================================================================
    Victoria Falls Live Cam
    ========================================================================== */
 .live-cam-section { margin: 0; border-bottom: 1px solid var(--rule); }
+.lower-section .live-cam-section { border-bottom-color: rgba(255,255,255,0.08); }
 .live-cam-header {
   display: flex;
   align-items: center;
@@ -969,7 +982,7 @@ nav a.economy-btn.active {
   justify-content: center;
   min-height: 92vh;
   padding: 80px 48px;
-  background: var(--ink);
+  background: transparent;
   color: #fff;
   width: 100%;
   box-sizing: border-box;
@@ -1085,8 +1098,8 @@ nav a.economy-btn.active {
 
 /* Infographic panel */
 .subscribe-infographic {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
   padding: 28px;
 }
@@ -1150,6 +1163,60 @@ nav a.economy-btn.active {
 .subscribe-ig-card:hover .subscribe-spark-svg polyline {
   stroke: rgba(255,255,255,0.45);
 }
+/* Animated progress bars */
+.subscribe-ig-bar {
+  margin-top: 12px;
+  height: 3px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.subscribe-ig-bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.35));
+  border-radius: 2px;
+  transition: width 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.subscribe-ig-card:hover .subscribe-ig-bar-fill {
+  background: linear-gradient(90deg, rgba(255,255,255,0.25), rgba(255,255,255,0.5));
+}
+
+/* Live update indicator */
+.subscribe-ig-live {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+}
+.subscribe-ig-live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4caf50;
+  animation: ig-pulse 2s ease-in-out infinite;
+}
+@keyframes ig-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(76,175,80,0.4); }
+  50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(76,175,80,0); }
+}
+.subscribe-ig-pulse {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Counter animation */
+.subscribe-ig-counter {
+  font-variant-numeric: tabular-nums;
+}
+
 .subscribe-ig-footnote {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.62em;
@@ -1166,6 +1233,18 @@ nav a.economy-btn.active {
   padding: 20px 0;
   border-top: 1px solid var(--rule);
   background: var(--paper);
+}
+.lower-section .back-to-top-wrap {
+  background: transparent;
+  border-top-color: rgba(255,255,255,0.08);
+}
+.lower-section .back-to-top-btn {
+  color: rgba(255,255,255,0.4);
+  border-color: rgba(255,255,255,0.15);
+}
+.lower-section .back-to-top-btn:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
 }
 .back-to-top-btn {
   display: inline-flex;
@@ -1192,19 +1271,19 @@ nav a.economy-btn.active {
 .site-footer {
   padding: 0;
   margin-top: 0;
-  border-top: 3px solid var(--ink);
-  background: #1a1a1a;
-  color: #bbb;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.15);
+  color: rgba(255,255,255,0.5);
 }
-.site-footer hr { border-top-color: rgba(255,255,255,0.08); margin: 16px 0; }
+.site-footer hr { border-top-color: rgba(255,255,255,0.06); margin: 16px 0; }
 .site-footer .storyTitleCat {
-  color: #fff;
+  color: rgba(255,255,255,0.7);
   font-size: 0.72em;
   letter-spacing: 0.15em;
   margin-bottom: 10px;
 }
-.site-footer a { color: #bbb; }
-.site-footer a:hover { color: var(--accent); text-decoration: none; }
+.site-footer a { color: rgba(255,255,255,0.5); }
+.site-footer a:hover { color: #fff; text-decoration: none; }
 h4 { color: var(--ink); font-weight: 700; }
 
 .storyTitleCat {
@@ -1220,13 +1299,13 @@ h4 { color: var(--ink); font-weight: 700; }
 
 .footer-links { text-align:center !important; padding:0; font-size:0.9em; list-style:none; }
 .footer-links li { display:block; text-align:center !important; padding:5px 0; }
-.footer-links a { color:#bbb; }
-.footer-links a:active, .footer-links a:focus, .footer-links a:hover { color:var(--accent); text-decoration:none; }
-.storyfooter { padding:0 5%; font-size:0.88em; line-height:1.7; text-align:justify; text-justify:inter-word; color:#bbb; }
+.footer-links a { color:rgba(255,255,255,0.5); }
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover { color:#fff; text-decoration:none; }
+.storyfooter { padding:0 5%; font-size:0.88em; line-height:1.7; text-align:justify; text-justify:inter-word; color:rgba(255,255,255,0.45); }
 .footer-links.inline li { display:inline-block; }
 .site-footer .social-icons { text-align:right; }
-.copyright-text { margin:0; font-size:0.78em; color:#777; }
-.copyright-text a { color:#999; }
+.copyright-text { margin:0; font-size:0.78em; color:rgba(255,255,255,0.25); }
+.copyright-text a { color:rgba(255,255,255,0.35); }
 
 /* ==========================================================================
    Personalisation: proverbs, on this day, location
@@ -2388,11 +2467,12 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
    Newsletter Signup Banner
    ========================================================================== */
 .newsletter-banner {
-  background: var(--dark-color, #393027);
+  background: rgba(255,255,255,0.04);
   color: #fafafa;
-  padding: 32px 20px;
+  padding: 40px 20px;
   text-align: center;
-  margin: 0 -1px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .newsletter-banner-inner { max-width: 520px; margin: 0 auto; }
 .newsletter-banner-title {
