@@ -5,7 +5,7 @@ author: NewZimbabwe.com
 category: Crime
 image: https://s3-eu-west-2.amazonaws.com/newzimlive/wp-content/uploads/2020/02/23132207/Gavel-court.jpg
 summary: The Constitutional Court of Zimbabwe has dismissed an application seeking to invalidate the Private Voluntary Organisations Act 2025 and hold the President of Zimbabwe accountable for allegedly assenting to a law passed without proper public participation, ruling that no constitu
-featured: true
+featured: false
 headline_position: 0
 source_url: https://www.newzimbabwe.com/constitutional-court-throws-out-bid-to-overturn-pvo-act/
 source_type: wire
