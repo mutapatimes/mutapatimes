@@ -199,7 +199,7 @@ def _parse_date(datestr):
     return None
 
 
-# Patterns that indicate a homepage / landing page, not a real article
+# Patterns that indicate a homepage / landing page / recurring show, not a real article
 _JUNK_TITLE_PATTERNS = [
     "latest breaking news",
     "latest news & updates",
@@ -210,6 +210,8 @@ _JUNK_TITLE_PATTERNS = [
     "| breaking news",
     "| top stories",
     "| home",
+    "live talk: the connection",
+    "livetalk: the connection",
 ]
 
 

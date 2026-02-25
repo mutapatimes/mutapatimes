@@ -127,7 +127,12 @@ def get_access_token(sa_info):
         data=data,
         headers={"Content-Type": "application/x-www-form-urlencoded"},
     )
-    resp = urllib.request.urlopen(req, timeout=15)
+    try:
+        resp = urllib.request.urlopen(req, timeout=15)
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode("utf-8", errors="replace")
+        print(f"OAuth2 token error ({e.code}): {err_body}")
+        raise
     return json.loads(resp.read().decode("utf-8"))["access_token"]
 
 
@@ -219,6 +224,9 @@ def main():
         return
 
     sa_info = json.loads(FIREBASE_SA_JSON)
+    # GitHub secrets may double-escape newlines in the PEM key
+    if "private_key" in sa_info:
+        sa_info["private_key"] = sa_info["private_key"].replace("\\n", "\n")
     project_id = sa_info["project_id"]
 
     if not os.path.exists(SPOTLIGHT_PATH):
