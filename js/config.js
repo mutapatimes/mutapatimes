@@ -65,6 +65,12 @@ var REPUTABLE_SOURCES = [
   "allafrica", "all africa", "daily maverick", "mail & guardian",
   "news24", "the east african", "sabc", "nation africa", "the citizen",
   "eyewitness news", "iol", "timeslive", "sunday times",
+  // Major Zimbabwean outlets
+  "the herald", "herald", "heraldonline", "h-metro",
+  "newsday", "the standard", "dailynews", "daily news",
+  "bulawayo24", "263chat", "nehanda radio", "nehandaradio",
+  "the zimbabwe mail", "zimbabwe mail", "zimetro",
+  "chronicle", "manica post", "sunday mail",
   // Major digital news platforms
   "yahoo", "yahoo news",
   // Asia-Pacific

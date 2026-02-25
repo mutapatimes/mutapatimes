@@ -118,7 +118,7 @@ def get_access_token(sa_info):
     jwt_token = (signing_input + b"." + _b64url(signature)).decode("utf-8")
 
     data = urllib.parse.urlencode({
-        "grant_type": "urn:ietf:params:oauth:grant_type:jwt-bearer",
+        "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
         "assertion": jwt_token,
     }).encode("utf-8")
 
