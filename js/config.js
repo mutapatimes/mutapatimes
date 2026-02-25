@@ -119,6 +119,9 @@ function inferCategory(title) {
 // Max age for spotlight articles (30 days — reputable sources only)
 var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 
+// Max age for main/sidebar articles (7 days — prevents ancient articles from appearing)
+var FEED_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+
 // Zimbabwe cities for weather
 var WEATHER_CITIES = [
   { id: "harare", name: "Harare", lat: -17.83, lon: 31.05 },
@@ -536,7 +539,11 @@ function loadMainStories() {
     if (!rssComplete || !archiveLoaded || !cmsLoaded) return;
     clearTimeout(_mainTimeout);
     allArticles = deduplicateArticles(allArticles);
-    allArticles = allArticles.filter(function(a) { return isValidArticle(a.publishedAt); });
+    allArticles = allArticles.filter(function(a) {
+      // CMS/featured articles bypass age filter — they are editorially managed
+      if (a.isCmsArticle || a.featured) return true;
+      return isValidArticle(a.publishedAt);
+    });
     allArticles = deduplicateByTopic(allArticles, 0.4);
     sortArticles(allArticles);
     setCache(cacheKey, allArticles);
@@ -692,12 +699,16 @@ function isLocalZimSource(source) {
   return false;
 }
 
-// Date validation — accept any article with a parseable date (no age cap for archive)
+// Date validation — reject articles older than FEED_MAX_AGE_MS or with unparseable dates
 function isValidArticle(dateStr) {
   if (!dateStr) return false;
   try {
     var d = new Date(dateStr);
-    return !isNaN(d.getTime());
+    if (isNaN(d.getTime())) return false;
+    // Hard floor: reject anything before 2024 to block archival content
+    if (d.getFullYear() < 2024) return false;
+    // Reject articles older than the feed max age (7 days)
+    return (Date.now() - d.getTime()) < FEED_MAX_AGE_MS;
   } catch (e) {
     return false;
   }
