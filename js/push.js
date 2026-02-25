@@ -40,14 +40,29 @@
     return elapsed < DISMISS_DAYS * 24 * 60 * 60 * 1000;
   }
 
+  // Allow ?push=reset in URL to clear push state and re-show banner
+  function checkPushReset() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('push') === 'reset') {
+        localStorage.removeItem(DISMISS_KEY);
+        localStorage.removeItem(SUBSCRIBED_KEY);
+        localStorage.removeItem('mutapa_fcm_token');
+        return true;
+      }
+    } catch (e) {}
+    return false;
+  }
+
   function shouldShow() {
     if (!('serviceWorker' in navigator)) return false;
     if (!('Notification' in window)) return false;
-    if (Notification.permission === 'denied') return false;
-    if (Notification.permission === 'granted' && isAlreadySubscribed()) return false;
-    if (isAlreadySubscribed()) return false;
-    if (wasDismissedRecently()) return false;
     if (!isConfigured()) return false;
+    var wasReset = checkPushReset();
+    if (Notification.permission === 'denied') return false;
+    if (!wasReset && Notification.permission === 'granted' && isAlreadySubscribed()) return false;
+    if (!wasReset && isAlreadySubscribed()) return false;
+    if (!wasReset && wasDismissedRecently()) return false;
     return true;
   }
 
@@ -151,8 +166,9 @@
       createBanner();
     }
 
-    // Show after delay OR after scrolling past threshold
-    var timer = setTimeout(showOnce, SHOW_DELAY_MS);
+    // Show immediately if reset, otherwise after delay or scroll
+    var isReset = window.location.search.indexOf('push=reset') !== -1;
+    var timer = setTimeout(showOnce, isReset ? 500 : SHOW_DELAY_MS);
 
     window.addEventListener('scroll', function onScroll() {
       var scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
