@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 FIREBASE_SA_JSON = os.environ.get("FIREBASE_SERVICE_ACCOUNT", "")
 SPOTLIGHT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "spotlight.json")
 MAX_AGE_HOURS = 3  # Match the cron interval
+FORCE_PUSH = os.environ.get("FORCE_PUSH", "") == "1"
 
 
 def _b64url(data):
@@ -238,9 +239,11 @@ def main():
     )
     now = datetime.now(timezone.utc)
 
-    if pub_date and (now - pub_date).total_seconds() > MAX_AGE_HOURS * 3600:
+    if not FORCE_PUSH and pub_date and (now - pub_date).total_seconds() > MAX_AGE_HOURS * 3600:
         print(f"Top article too old ({pub_date}), skipping push.")
         return
+    if FORCE_PUSH:
+        print("FORCE_PUSH enabled, bypassing age check.")
 
     print("Authenticating with Firebase service account...")
     access_token = get_access_token(sa_info)
