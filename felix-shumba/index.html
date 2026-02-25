@@ -16,14 +16,14 @@
 <body>
   <a href="#main-content" class="fs-skip-link">Skip to content</a>
 
-  <header class="fs-header">
+  <header class="fs-header fs-header-transparent">
     <nav class="fs-nav">
       <a href="index.html" class="fs-nav-name">Felix Shumba</a>
       <ul class="fs-nav-links">
         <li><a href="works.html">Selected Works</a></li>
-        <li><a href="#">Bio</a></li>
-        <li><a href="#">Text</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="fs-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -32,18 +32,61 @@
     </nav>
     <div class="fs-mobile-overlay">
       <a href="works.html">Selected Works</a>
-      <a href="#">Bio</a>
-      <a href="#">Text</a>
-      <a href="#">Contact</a>
+      <a href="bio.html">Bio</a>
+      <a href="text.html">Text</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <main class="fs-main" id="main-content">
-    <section class="fs-hero">
-      <div class="fs-hero-image"></div>
-      <div class="fs-hero-overlay">
+    <!-- Hero Slider -->
+    <section class="fs-slider" aria-label="Featured artworks slideshow">
+      <div class="fs-slider-track">
+        <div class="fs-slide fs-slide-active">
+          <div class="fs-slide-img" style="background-color: #d4cdc5;">
+            <img src="https://placehold.co/1600x900/d4cdc5/999999?text=Painting" alt="Featured painting by Felix Shumba" loading="eager">
+          </div>
+          <div class="fs-slide-caption">
+            <p class="fs-slide-title">Musha Wedu I</p>
+            <p class="fs-slide-details">2025, Oil on canvas, 150 &times; 120 cm</p>
+          </div>
+        </div>
+        <div class="fs-slide">
+          <div class="fs-slide-img" style="background-color: #c5c9cd;">
+            <img src="https://placehold.co/1600x900/c5c9cd/999999?text=Mixed+Media" alt="Featured mixed media work by Felix Shumba" loading="lazy">
+          </div>
+          <div class="fs-slide-caption">
+            <p class="fs-slide-title">Kudzoka I</p>
+            <p class="fs-slide-details">2025, Found objects, acrylic, and soil on board</p>
+          </div>
+        </div>
+        <div class="fs-slide">
+          <div class="fs-slide-img" style="background-color: #cdc5c5;">
+            <img src="https://placehold.co/1600x900/cdc5c5/999999?text=Sculpture" alt="Featured sculpture by Felix Shumba" loading="lazy">
+          </div>
+          <div class="fs-slide-caption">
+            <p class="fs-slide-title">Chimurenga</p>
+            <p class="fs-slide-details">2025, Welded steel and stone</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider overlay info -->
+      <div class="fs-slider-overlay">
         <h1 class="fs-hero-name">Felix Shumba</h1>
         <p class="fs-hero-tagline">Painting &middot; Mixed Media &middot; Sculpture</p>
+      </div>
+
+      <!-- Slider controls -->
+      <div class="fs-slider-controls">
+        <button class="fs-slider-prev" aria-label="Previous slide">&larr;</button>
+        <div class="fs-slider-dots" role="tablist" aria-label="Slide navigation"></div>
+        <button class="fs-slider-next" aria-label="Next slide">&rarr;</button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="fs-slider-progress">
+        <div class="fs-slider-progress-bar"></div>
       </div>
     </section>
 
