@@ -420,6 +420,7 @@ function loadCmsArticles(callback) {
                 publishedAt: parsed.meta.date || "",
                 isLocal: false,
                 isCmsArticle: !isWire,
+                hasCmsPage: true,
                 featured: parsed.meta.featured === true || parsed.meta.featured === "true",
                 headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
               });
@@ -461,6 +462,7 @@ function loadCmsArticles(callback) {
                     publishedAt: parsed.meta.date || "",
                     isLocal: false,
                     isCmsArticle: !isWire,
+                    hasCmsPage: true,
                     featured: parsed.meta.featured === true || parsed.meta.featured === "true",
                     headlinePosition: parseInt(parsed.meta.headline_position, 10) || 0
                   });
@@ -569,9 +571,10 @@ function loadMainStories() {
   });
 
   // Load CMS articles (original content published via Sveltia CMS)
+  // Prepend so CMS articles appear first and win deduplication over RSS duplicates
   loadCmsArticles(function(cmsArticles) {
     if (cmsArticles && cmsArticles.length) {
-      allArticles = allArticles.concat(cmsArticles);
+      allArticles = cmsArticles.concat(allArticles);
     }
     cmsLoaded = true;
     finalizeMainStories();
@@ -770,15 +773,18 @@ function normalizeRssArticles(items) {
   return result;
 }
 
-// Deduplicate by title similarity
+// Deduplicate by title similarity — CMS articles (with local pages) always win
 function deduplicateArticles(articles) {
-  var seen = {};
+  var seen = {};     // key -> index in result
   var result = [];
   for (var i = 0; i < articles.length; i++) {
     var key = articles[i].title.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 60);
-    if (!seen[key]) {
-      seen[key] = true;
+    if (seen[key] === undefined) {
+      seen[key] = result.length;
       result.push(articles[i]);
+    } else if (articles[i].hasCmsPage && !result[seen[key]].hasCmsPage) {
+      // Replace external duplicate with the CMS version that has a local page
+      result[seen[key]] = articles[i];
     }
   }
   return result;
@@ -813,6 +819,12 @@ function deduplicateByTopic(articles, threshold) {
   var result = [];
   var topicCache = [];
   for (var i = 0; i < articles.length; i++) {
+    // Never remove CMS articles — they were intentionally published
+    if (articles[i].hasCmsPage) {
+      result.push(articles[i]);
+      topicCache.push(getTopicWords(articles[i].title));
+      continue;
+    }
     var words = getTopicWords(articles[i].title);
     var isDupe = false;
     for (var j = 0; j < topicCache.length; j++) {
