@@ -1,0 +1,563 @@
+/* ============================================================
+   Felix Shumba — Portfolio Stylesheet
+   Inspired by Marian Goodman Gallery's minimalist aesthetic
+   ============================================================ */
+
+/* --- Design Tokens --- */
+:root {
+  --fs-white: #ffffff;
+  --fs-off-white: #fafafa;
+  --fs-light-gray: #f0f0f0;
+  --fs-mid-gray: #999999;
+  --fs-dark-gray: #333333;
+  --fs-black: #111111;
+  --fs-border: #e0e0e0;
+
+  --fs-font: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --fs-max-width: 1200px;
+  --fs-content-width: 800px;
+  --fs-transition: 0.25s ease;
+}
+
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--fs-font);
+  font-weight: 400;
+  color: var(--fs-dark-gray);
+  background-color: var(--fs-white);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--fs-black);
+  text-decoration: none;
+  transition: opacity var(--fs-transition);
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: var(--fs-font);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* --- Skip Link --- */
+.fs-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 8px 16px;
+  background: var(--fs-black);
+  color: var(--fs-white);
+  font-size: 0.8rem;
+}
+
+.fs-skip-link:focus {
+  left: 0;
+}
+
+/* --- Header / Navigation --- */
+.fs-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--fs-white);
+  border-bottom: 1px solid var(--fs-border);
+}
+
+.fs-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--fs-max-width);
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+.fs-nav-name {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.fs-nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.fs-nav-links a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fs-dark-gray);
+  padding-bottom: 2px;
+}
+
+.fs-nav-links a:hover {
+  opacity: 1;
+  color: var(--fs-black);
+}
+
+.fs-nav-links a.fs-nav-active {
+  border-bottom: 1px solid var(--fs-black);
+}
+
+/* Hamburger */
+.fs-nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px;
+}
+
+.fs-nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--fs-black);
+  transition: var(--fs-transition);
+}
+
+/* Mobile nav overlay */
+.fs-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--fs-white);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.fs-mobile-overlay a {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fs-dark-gray);
+}
+
+.fs-mobile-overlay a:hover {
+  color: var(--fs-black);
+  opacity: 1;
+}
+
+.fs-nav-open .fs-mobile-overlay {
+  display: flex;
+}
+
+.fs-nav-open .fs-nav-toggle span:first-child {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+.fs-nav-open .fs-nav-toggle span:last-child {
+  transform: rotate(-45deg) translate(2px, -2px);
+}
+
+/* --- Footer --- */
+.fs-footer {
+  padding: 64px 32px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--fs-mid-gray);
+  letter-spacing: 0.08em;
+  border-top: 1px solid var(--fs-border);
+}
+
+/* --- Main Content --- */
+.fs-main {
+  min-height: calc(100vh - 200px);
+}
+
+/* --- Hero (Home Page) --- */
+.fs-hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-color: var(--fs-light-gray);
+  overflow: hidden;
+}
+
+.fs-hero-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fs-hero-image::after {
+  content: 'Hero Image';
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fs-mid-gray);
+}
+
+.fs-hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 32px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.4));
+  color: var(--fs-white);
+}
+
+.fs-hero-name {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.fs-hero-tagline {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Intro section */
+.fs-intro {
+  max-width: var(--fs-content-width);
+  margin: 0 auto;
+  padding: 96px 32px;
+  text-align: center;
+}
+
+.fs-intro p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--fs-dark-gray);
+  margin-bottom: 40px;
+}
+
+.fs-link-arrow {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fs-dark-gray);
+  border-bottom: 1px solid var(--fs-dark-gray);
+  padding-bottom: 2px;
+}
+
+.fs-link-arrow:hover {
+  opacity: 0.6;
+}
+
+/* --- Works Page --- */
+.fs-works-header {
+  text-align: center;
+  padding: 64px 32px 32px;
+}
+
+.fs-works-header h1 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Filter */
+.fs-works-filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 32px 48px;
+}
+
+.fs-filter-btn {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fs-mid-gray);
+  padding-bottom: 2px;
+  transition: color var(--fs-transition);
+}
+
+.fs-filter-btn:hover {
+  color: var(--fs-dark-gray);
+}
+
+.fs-filter-btn.fs-filter-active {
+  color: var(--fs-black);
+  border-bottom: 1px solid var(--fs-black);
+}
+
+/* Works Grid */
+.fs-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: var(--fs-max-width);
+  margin: 0 auto;
+  padding: 0 32px 96px;
+}
+
+.fs-work-item {
+  transition: opacity var(--fs-transition);
+}
+
+.fs-work-item.fs-hidden {
+  display: none;
+}
+
+.fs-work-link {
+  display: block;
+}
+
+.fs-work-img-wrap {
+  overflow: hidden;
+  background-color: var(--fs-light-gray);
+}
+
+.fs-work-img-wrap img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.fs-work-link:hover .fs-work-img-wrap img {
+  transform: scale(1.03);
+}
+
+.fs-work-link:hover {
+  opacity: 1;
+}
+
+.fs-work-caption {
+  padding: 12px 0;
+}
+
+.fs-work-title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--fs-dark-gray);
+  font-style: italic;
+}
+
+.fs-work-details {
+  font-size: 0.7rem;
+  color: var(--fs-mid-gray);
+  margin-top: 2px;
+}
+
+/* --- Lightbox --- */
+.fs-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.92);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fs-lightbox.fs-lightbox-open {
+  display: flex;
+  opacity: 1;
+}
+
+.fs-lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  color: var(--fs-white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 201;
+  opacity: 0.7;
+  transition: opacity var(--fs-transition);
+  background: none;
+  border: none;
+  font-family: var(--fs-font);
+  letter-spacing: 0.05em;
+}
+
+.fs-lightbox-close:hover {
+  opacity: 1;
+}
+
+.fs-lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+.fs-lightbox-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.fs-lightbox-info {
+  text-align: center;
+  color: var(--fs-white);
+  padding: 20px 0;
+}
+
+.fs-lightbox-title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.fs-lightbox-details {
+  font-size: 0.75rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+/* Lightbox navigation arrows */
+.fs-lightbox-prev,
+.fs-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--fs-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity var(--fs-transition);
+  padding: 16px;
+  z-index: 201;
+}
+
+.fs-lightbox-prev:hover,
+.fs-lightbox-next:hover {
+  opacity: 1;
+}
+
+.fs-lightbox-prev {
+  left: 16px;
+}
+
+.fs-lightbox-next {
+  right: 16px;
+}
+
+/* --- Responsive --- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .fs-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-hero-name {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .fs-nav-links {
+    display: none;
+  }
+
+  .fs-nav-toggle {
+    display: flex;
+  }
+
+  .fs-nav {
+    padding: 16px 20px;
+  }
+
+  .fs-works-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 20px 64px;
+  }
+
+  .fs-works-header {
+    padding: 48px 20px 24px;
+  }
+
+  .fs-works-filter {
+    gap: 16px;
+    padding: 0 20px 32px;
+    flex-wrap: wrap;
+  }
+
+  .fs-hero {
+    height: 70vh;
+  }
+
+  .fs-hero-name {
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+  }
+
+  .fs-hero-overlay {
+    padding: 32px 20px;
+  }
+
+  .fs-intro {
+    padding: 64px 20px;
+  }
+
+  .fs-footer {
+    padding: 48px 20px;
+  }
+
+  .fs-lightbox-prev,
+  .fs-lightbox-next {
+    display: none;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+  .fs-work-img-wrap img {
+    transform: none !important;
+  }
+}
