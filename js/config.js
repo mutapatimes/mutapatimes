@@ -1486,7 +1486,13 @@ function renderMainStories(articles) {
     var statusMsg = $('<p class="subscribe-status">').hide();
     subscribe.append(statusMsg);
     subscribe.append($('<p class="subscribe-fine">').html('By subscribing you agree to our <a href="terms.html">Terms &amp; Conditions</a>. You may unsubscribe at any time.'));
-    contentLayout.after(subscribe);
+    // Place after weather section so it's separated from the static newsletter banner
+    var weatherSection = $(".weather-section");
+    if (weatherSection.length) {
+      weatherSection.after(subscribe);
+    } else {
+      contentLayout.after(subscribe);
+    }
 
     // Handle subscribe form submission
     form.on("submit", function(e) {
