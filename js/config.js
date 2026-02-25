@@ -1460,55 +1460,158 @@ function renderMainStories(articles) {
   // Inject structured data for SEO
   injectArticleSchema(pageArticles, 'main');
 
-  // Subscribe banner — render full-width after the content-layout grid (only once)
+  // Subscribe banner — full-height CTA after weather (only once)
   if ($(".subscribe-banner").length) return;
   var BREVO_FORM_URL = "https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==";
   var contentLayout = $(".content-layout");
   if (contentLayout.length) {
-    // Create hidden iframe target for cross-origin form submission
+    // Hidden iframe for cross-origin form
     var iframeName = "brevo-subscribe-frame";
-    var iframe = $('<iframe>').attr({
-      name: iframeName,
-      style: "display:none;width:0;height:0;border:0;"
-    });
-    $("body").append(iframe);
+    $("body").append($('<iframe>').attr({ name: iframeName, style: "display:none;width:0;height:0;border:0;" }));
 
-    var subscribe = $('<div class="subscribe-banner">');
-    subscribe.append($('<h3 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
-    subscribe.append($('<p class="subscribe-text">').text("Curated news, economic data, and analysis from foreign press \u2014 delivered to your inbox. Join readers in over 30 countries."));
+    // Build the full-height subscribe section
+    var subscribe = $('<section class="subscribe-banner">');
+
+    // Left column — copy + form
+    var leftCol = $('<div class="subscribe-col-left">');
+    leftCol.append($('<p class="subscribe-label">').text("The Mutapa Times Newsletter"));
+    leftCol.append($('<h2 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
+    leftCol.append($('<p class="subscribe-text">').text("Curated foreign press coverage, economic data, and original analysis\u2014delivered three times a week to readers in over 30 countries."));
+
+    // Value prop pills
+    var pills = $('<div class="subscribe-pills">');
+    var pillData = [
+      { icon: "\ud83c\udf0d", text: "Foreign press coverage" },
+      { icon: "\ud83d\udcc8", text: "Live market data" },
+      { icon: "\ud83d\udcdd", text: "Original analysis" },
+      { icon: "\u26a1", text: "3\u00d7 per week" }
+    ];
+    pillData.forEach(function(p) {
+      pills.append($('<span class="subscribe-pill">').html('<span class="subscribe-pill-icon">' + p.icon + '</span> ' + p.text));
+    });
+    leftCol.append(pills);
+
+    // Form
     var form = $('<form class="subscribe-form">');
     if (BREVO_FORM_URL) {
       form.attr({ method: "POST", action: BREVO_FORM_URL, target: iframeName });
     }
     form.append($('<input class="subscribe-input" type="email" name="EMAIL" placeholder="Enter your email address" required autocomplete="email">'));
-    form.append($('<button class="subscribe-btn" type="submit">').text("Subscribe"));
-    subscribe.append(form);
-    var statusMsg = $('<p class="subscribe-status">').hide();
-    subscribe.append(statusMsg);
-    subscribe.append($('<p class="subscribe-fine">').html('By subscribing you agree to our <a href="terms.html">Terms &amp; Conditions</a>. You may unsubscribe at any time.'));
-    contentLayout.after(subscribe);
+    form.append($('<button class="subscribe-btn" type="submit">').text("Subscribe \u2014 It\u2019s Free"));
+    leftCol.append(form);
 
-    // Handle subscribe form submission
+    var statusMsg = $('<p class="subscribe-status">').hide();
+    leftCol.append(statusMsg);
+    leftCol.append($('<p class="subscribe-fine">').html('Free forever \u00b7 No spam \u00b7 Unsubscribe anytime \u00b7 <a href="terms.html">Terms</a>'));
+
+    // Right column — interactive infographic
+    var rightCol = $('<div class="subscribe-col-right">');
+    rightCol.append(
+      '<div class="subscribe-infographic">' +
+        '<div class="subscribe-ig-header">Today\u2019s Zimbabwe at a Glance</div>' +
+        '<div class="subscribe-ig-grid">' +
+          '<div class="subscribe-ig-card" data-ig="usd">' +
+            '<div class="subscribe-ig-value">\u2014</div>' +
+            '<div class="subscribe-ig-label">USD / ZiG rate</div>' +
+            '<div class="subscribe-ig-spark" data-spark="usd"></div>' +
+          '</div>' +
+          '<div class="subscribe-ig-card" data-ig="inflation">' +
+            '<div class="subscribe-ig-value">\u2014</div>' +
+            '<div class="subscribe-ig-label">Inflation (YoY)</div>' +
+            '<div class="subscribe-ig-spark" data-spark="inflation"></div>' +
+          '</div>' +
+          '<div class="subscribe-ig-card" data-ig="stories">' +
+            '<div class="subscribe-ig-value">\u2014</div>' +
+            '<div class="subscribe-ig-label">Stories today</div>' +
+          '</div>' +
+          '<div class="subscribe-ig-card" data-ig="sources">' +
+            '<div class="subscribe-ig-value">\u2014</div>' +
+            '<div class="subscribe-ig-label">Global sources</div>' +
+          '</div>' +
+        '</div>' +
+        '<p class="subscribe-ig-footnote">Live data from Mutapa Times intelligence feeds</p>' +
+      '</div>'
+    );
+
+    subscribe.append(leftCol).append(rightCol);
+
+    // Place after weather
+    var weatherSection = $(".weather-section");
+    if (weatherSection.length) {
+      weatherSection.after(subscribe);
+    } else {
+      contentLayout.after(subscribe);
+    }
+
+    // Populate infographic with live data from the page
+    setTimeout(function() {
+      // Story count — count rendered articles on the page
+      var storyCount = $(".storyBlock, .story-card, .headline-item").length;
+      if (storyCount > 0) {
+        subscribe.find('[data-ig="stories"] .subscribe-ig-value').text(storyCount);
+      }
+
+      // Sources — count unique source domains
+      var sources = {};
+      $(".storyBlock .storySource, .story-source, .headline-source").each(function() {
+        var s = $(this).text().trim();
+        if (s) sources[s] = true;
+      });
+      var srcCount = Object.keys(sources).length;
+      if (srcCount > 0) {
+        subscribe.find('[data-ig="sources"] .subscribe-ig-value').text(srcCount + "+");
+      }
+
+      // USD/ZiG — pull from economy bar if present
+      var zigEl = $(".econ-val").filter(function() {
+        return $(this).closest('.econ-item').find('.econ-label').text().match(/ZiG|USD/i);
+      }).first();
+      if (zigEl.length) {
+        subscribe.find('[data-ig="usd"] .subscribe-ig-value').text(zigEl.text().trim());
+      }
+
+      // Inflation — pull from economy bar if present
+      var inflEl = $(".econ-val").filter(function() {
+        return $(this).closest('.econ-item').find('.econ-label').text().match(/inflat/i);
+      }).first();
+      if (inflEl.length) {
+        subscribe.find('[data-ig="inflation"] .subscribe-ig-value').text(inflEl.text().trim());
+      }
+
+      // Draw mini sparklines on the cards
+      subscribe.find('.subscribe-ig-spark').each(function() {
+        var el = $(this);
+        var type = el.data('spark');
+        // Generate a gentle upward-trending sparkline
+        var svg = '<svg viewBox="0 0 80 24" class="subscribe-spark-svg">';
+        var points = [];
+        var y = 18;
+        for (var i = 0; i < 10; i++) {
+          y = Math.max(4, Math.min(20, y + (Math.random() * 6 - 2.5)));
+          points.push(i * 9 + "," + y);
+        }
+        svg += '<polyline points="' + points.join(" ") + '" />';
+        svg += '</svg>';
+        el.html(svg);
+      });
+    }, 3000);
+
+    // Form submission handler
     form.on("submit", function(e) {
       var emailVal = form.find('input[name="EMAIL"]').val();
-      if (!emailVal) {
-        e.preventDefault();
-        return;
-      }
+      if (!emailVal) { e.preventDefault(); return; }
       if (!BREVO_FORM_URL) {
         e.preventDefault();
         statusMsg.text("Subscriptions coming soon.").css("color", "#6b6b6b").show();
         return;
       }
-      // Form submits to hidden iframe — show success after short delay
       var btn = form.find('button');
       btn.prop('disabled', true).text("Subscribing\u2026");
       statusMsg.text("Subscribing\u2026").css("color", "#6b6b6b").show();
-
       setTimeout(function() {
-        statusMsg.text("Thank you for subscribing!").css("color", "#00897b");
+        statusMsg.text("Welcome to the Mutapa Times.").css("color", "#00897b");
         form.find("input").val("");
-        btn.prop('disabled', false).text("Subscribe");
+        btn.prop('disabled', false).text("Subscribe \u2014 It\u2019s Free");
       }, 2000);
     });
   }
