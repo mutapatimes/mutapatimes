@@ -631,8 +631,6 @@ def build_person_of_day_html(person):
     occupation = escape_html(person.get("occupation", ""))
     birth_year = person.get("birth_year", "")
     image = person.get("image", "")
-    wikipedia_url = person.get("wikipedia_url", "")
-    wikidata_url = person.get("wikidata_url", "")
 
     # Build subtitle: occupation + birth year
     subtitle_parts = []
@@ -666,20 +664,14 @@ def build_person_of_day_html(person):
             '</td>'
         )
 
-    # Link — prefer Wikipedia, fall back to Wikidata
-    link_url = wikipedia_url or wikidata_url
-    link_html = ""
-    if link_url:
-        people_url = f"{SITE_URL}/people.html"
-        link_html = (
-            f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-            f'margin:8px 0 0;">'
-            f'<a href="{escape_html(link_url)}" target="_blank" '
-            f'style="color:#00897b;text-decoration:none;">Wikipedia</a>'
-            f' &nbsp;&middot;&nbsp; '
-            f'<a href="{escape_html(people_url)}" target="_blank" '
-            f'style="color:#00897b;text-decoration:none;">Mutapa People</a>'
-            f'</p>'
+    # Link — always drive traffic to Mutapa People page
+    people_url = add_utm(f"{SITE_URL}/people.html")
+    link_html = (
+        f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        f'margin:8px 0 0;">'
+        f'<a href="{escape_html(people_url)}" target="_blank" '
+        f'style="color:#00897b;text-decoration:none;">Read more on Mutapa People &rarr;</a>'
+        f'</p>'
         )
 
     return (
