@@ -1484,7 +1484,7 @@ function renderMainStories(articles) {
       { icon: "\ud83c\udf0d", text: "Foreign press coverage" },
       { icon: "\ud83d\udcc8", text: "Live market data" },
       { icon: "\ud83d\udcdd", text: "Original analysis" },
-      { icon: "\u26a1", text: "3\u00d7 per week" }
+      { icon: "\u26a1", text: "3\u00d7 briefings per week" }
     ];
     pillData.forEach(function(p) {
       pills.append($('<span class="subscribe-pill">').html('<span class="subscribe-pill-icon">' + p.icon + '</span> ' + p.text));
@@ -1515,10 +1515,10 @@ function renderMainStories(articles) {
             '<div class="subscribe-ig-label">Articles on site</div>' +
             '<div class="subscribe-ig-bar"><div class="subscribe-ig-bar-fill" data-fill="85"></div></div>' +
           '</div>' +
-          '<div class="subscribe-ig-card" data-ig="people">' +
-            '<div class="subscribe-ig-value"><span class="subscribe-ig-counter" data-target="0">-</span></div>' +
-            '<div class="subscribe-ig-label">People in directory</div>' +
-            '<div class="subscribe-ig-bar"><div class="subscribe-ig-bar-fill" data-fill="60"></div></div>' +
+          '<div class="subscribe-ig-card" data-ig="countdown">' +
+            '<div class="subscribe-ig-value"><span class="subscribe-ig-countdown">-</span></div>' +
+            '<div class="subscribe-ig-label">Next briefing</div>' +
+            '<div class="subscribe-ig-countdown-day"></div>' +
           '</div>' +
           '<div class="subscribe-ig-card" data-ig="sources">' +
             '<div class="subscribe-ig-value"><span class="subscribe-ig-counter" data-target="0">-</span>+</div>' +
@@ -1553,17 +1553,40 @@ function renderMainStories(articles) {
         subscribe.find('[data-ig="articles"] .subscribe-ig-counter').attr('data-target', articleCount);
       }
 
-      // People count — fetch from cache or count via API
-      var peopleCache = null;
-      try { peopleCache = JSON.parse(localStorage.getItem("mutapa_people_cache")); } catch(e) {}
-      if (peopleCache && peopleCache.data && peopleCache.data.length) {
-        subscribe.find('[data-ig="people"] .subscribe-ig-counter').attr('data-target', peopleCache.data.length);
-      } else {
-        // Fallback: count from the people page if cached data not available
-        $.getJSON("data/archive.json").done(function(d) {
-          // Just use a reasonable estimate from archive
-        });
+      // Countdown to next briefing — Mon, Wed, Sat at 07:00 UTC
+      function updateCountdown() {
+        var now = new Date();
+        var sendDays = [1, 3, 6]; // Mon=1, Wed=3, Sat=6
+        var sendHour = 7; // 07:00 UTC
+        var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var best = null;
+        for (var d = 0; d <= 7; d++) {
+          var candidate = new Date(now.getTime() + d * 86400000);
+          candidate.setUTCHours(sendHour, 0, 0, 0);
+          if (sendDays.indexOf(candidate.getUTCDay()) !== -1 && candidate > now) {
+            best = candidate;
+            break;
+          }
+        }
+        if (!best) return;
+        var diff = best - now;
+        var hours = Math.floor(diff / 3600000);
+        var mins = Math.floor((diff % 3600000) / 60000);
+        var countdownStr;
+        if (hours >= 24) {
+          var days = Math.floor(hours / 24);
+          var remHrs = hours % 24;
+          countdownStr = days + "d " + remHrs + "h";
+        } else if (hours > 0) {
+          countdownStr = hours + "h " + mins + "m";
+        } else {
+          countdownStr = mins + "m";
+        }
+        subscribe.find('.subscribe-ig-countdown').text(countdownStr);
+        subscribe.find('.subscribe-ig-countdown-day').text(dayNames[best.getUTCDay()] + " 07:00 UTC");
       }
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
 
       // Unique sources — count across all loaded articles
       var sources = {};
