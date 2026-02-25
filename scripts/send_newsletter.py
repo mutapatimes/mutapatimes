@@ -39,6 +39,41 @@ DAY_GREETINGS = {
 }
 
 
+# ── Shona proverbs (same list as config.js, same daily rotation) ──
+SHONA_PROVERBS = [
+    {"shona": "Chara chimwe hachitswanyi inda.", "english": "One finger cannot crush a louse."},
+    {"shona": "Kudzidza hakuperi.", "english": "Learning never ends."},
+    {"shona": "Rume rimwe harikombi churu.", "english": "One man cannot surround an anthill."},
+    {"shona": "Chirere chigokurerawo.", "english": "Raise a child and it will raise you too."},
+    {"shona": "Rina manyanga hariputirwi.", "english": "That which has horns cannot be wrapped."},
+    {"shona": "Chisi hachieri chisingabudi rimwe.", "english": "A day of rest doesn\u2019t end without another dawning."},
+    {"shona": "Mugoni wepwere ndeasinayo.", "english": "The one who knows how to raise children is one who has none."},
+    {"shona": "Kufa kwendega kufa kusingachemerwe.", "english": "To die alone is to die without being mourned."},
+    {"shona": "Mwana asingachemi anofira mumbereko.", "english": "A child who does not cry dies on its mother\u2019s back."},
+    {"shona": "Kugarira nhaka kuona bvute.", "english": "To inherit is to see the dust settle."},
+    {"shona": "Gudo guru peta muswe vadiki vakutye.", "english": "Great baboon, curl your tail so the little ones may fear you."},
+    {"shona": "Kuziva mbuya huudzwa.", "english": "To know grandmother is to be told about her."},
+    {"shona": "Chakafukidza dzimba matenga.", "english": "What covers houses is the roof."},
+    {"shona": "Zviri muvanhu hazvienzani.", "english": "What is in people is not equal."},
+    {"shona": "Murombo munhu.", "english": "A poor person is still a person."},
+    {"shona": "Zano pangwa une rako.", "english": "Accept advice, but keep your own counsel."},
+    {"shona": "Mvura ngainaye; hapana anodzivisa.", "english": "Let the rain fall; no one can stop it."},
+    {"shona": "Nzara haina hama.", "english": "Hunger has no relatives."},
+    {"shona": "Chitsva chiri murutsoka.", "english": "What is new is underfoot."},
+    {"shona": "Dura rinokanganwa gejo.", "english": "The granary forgets the hoe."},
+    {"shona": "Nhamo yeumwe hairambirwi sadza.", "english": "Another\u2019s troubles don\u2019t stop you from eating."},
+    {"shona": "Gonzo redziva harityi mvura.", "english": "A rat of the river does not fear water."},
+    {"shona": "Harisi zuva rimwe guru rakasakara.", "english": "The great baobab did not grow in a single day."},
+    {"shona": "Kure kwegava ndokusina mugariri.", "english": "The distance of the vulture is because no one stays there."},
+    {"shona": "Kutsva kwendebvu varume vanodzimurana.", "english": "When a beard catches fire, men help each other put it out."},
+    {"shona": "Atsemhira zuva anochembera.", "english": "One who races with the sun grows old."},
+    {"shona": "Chinonzi mhosva kana matakadya.", "english": "What is called a crime depends on whether you have eaten."},
+    {"shona": "Mbudzi kudya mufenje haina mhosva.", "english": "When a goat eats a baboon\u2019s food, there is no crime."},
+    {"shona": "Shiri huru haigarire dendere rimwe.", "english": "A great bird does not sit in one nest."},
+    {"shona": "Chinono chinogara chiuru.", "english": "The small and steady accumulates a thousand."},
+]
+
+
 REPUTABLE_SOURCES = [
     "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
     "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
@@ -60,6 +95,109 @@ def is_reputable_source(source):
         return False
     s = source.lower() if isinstance(source, str) else str(source).lower()
     return any(r in s for r in REPUTABLE_SOURCES)
+
+
+# ── Tsumo of the Day ──────────────────────────────────────
+def get_tsumo_of_the_day():
+    """Return today's Shona proverb using the same daily rotation as config.js."""
+    import time
+    day_index = int(time.time() // 86400) % len(SHONA_PROVERBS)
+    return SHONA_PROVERBS[day_index]
+
+
+# ── Zimbabwean of the Day (Wikidata birthday match) ───────
+WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
+
+BIRTHDAY_SPARQL = """
+SELECT ?person ?personLabel ?personDescription ?image ?birthDate ?occupationLabel ?article WHERE {{
+  ?person wdt:P31 wd:Q5.
+  ?person wdt:P27 wd:Q954.
+  ?person wdt:P569 ?birthDate.
+  FILTER(MONTH(?birthDate) = {month} && DAY(?birthDate) = {day})
+  OPTIONAL {{ ?person wdt:P18 ?image. }}
+  OPTIONAL {{ ?person wdt:P106 ?occupation. }}
+  OPTIONAL {{
+    ?article schema:about ?person.
+    ?article schema:isPartOf <https://en.wikipedia.org/>.
+  }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+LIMIT 20
+"""
+
+
+def fetch_birthday_zimbabweans(today=None):
+    """Query Wikidata for Zimbabweans born on today's date. Returns list of dicts."""
+    if today is None:
+        today = datetime.now(timezone.utc)
+    query = BIRTHDAY_SPARQL.format(month=today.month, day=today.day)
+    url = WIKIDATA_ENDPOINT + "?" + urllib.parse.urlencode({
+        "query": query,
+        "format": "json",
+    })
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "MutapaTimesNewsletter/1.0 (news@mutapatimes.com)",
+        "Accept": "application/sparql-results+json",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  Wikidata query failed: {e}")
+        return []
+
+    results = []
+    seen_ids = set()
+    for binding in data.get("results", {}).get("bindings", []):
+        person_uri = binding.get("person", {}).get("value", "")
+        qid = person_uri.split("/")[-1] if person_uri else ""
+        if not qid or qid in seen_ids:
+            continue
+        seen_ids.add(qid)
+
+        name = binding.get("personLabel", {}).get("value", "")
+        # Skip if label is just the QID (no English label)
+        if name.startswith("Q") and name[1:].isdigit():
+            continue
+
+        description = binding.get("personDescription", {}).get("value", "")
+        image = binding.get("image", {}).get("value", "")
+        birth_date = binding.get("birthDate", {}).get("value", "")
+        occupation = binding.get("occupationLabel", {}).get("value", "")
+        wiki_url = binding.get("article", {}).get("value", "")
+        wikidata_url = person_uri
+
+        # Parse birth year
+        birth_year = ""
+        if birth_date:
+            try:
+                birth_year = str(datetime.fromisoformat(birth_date.replace("Z", "+00:00")).year)
+            except (ValueError, TypeError):
+                pass
+
+        results.append({
+            "qid": qid,
+            "name": name,
+            "description": description,
+            "image": image,
+            "birth_year": birth_year,
+            "occupation": occupation,
+            "wikipedia_url": wiki_url,
+            "wikidata_url": wikidata_url,
+        })
+
+    return results
+
+
+def pick_person_of_the_day(people, today=None):
+    """Pick one person from the birthday list. Rotate deterministically if multiple."""
+    if not people:
+        return None
+    if today is None:
+        today = datetime.now(timezone.utc)
+    # Deterministic daily rotation among birthday matches
+    day_of_year = today.timetuple().tm_yday
+    return people[day_of_year % len(people)]
 
 
 # ── Brevo API helper ───────────────────────────────────────
@@ -458,7 +596,124 @@ def build_spotlight_html(spotlight_articles, gnews_extras=None):
     )
 
 
-def build_html(spotlight_articles, category_articles, gnews_extras=None):
+def build_tsumo_html(proverb):
+    """Build the Tsumo of the Day section for the newsletter."""
+    if not proverb:
+        return ""
+    shona = escape_html(proverb["shona"])
+    english = escape_html(proverb["english"])
+    return (
+        '<!-- Tsumo of the Day -->'
+        '<tr>'
+        '<td style="background:#1a1a1a;padding:18px 20px;text-align:center;">'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:9px;'
+        'font-weight:600;color:rgba(255,255,255,0.25);margin:0 0 6px;'
+        'text-transform:uppercase;letter-spacing:0.15em;">'
+        'Tsumo of the Day</p>'
+        f'<p style="font-family:Georgia,\'Times New Roman\',serif;'
+        f'font-style:italic;font-size:15px;color:rgba(255,255,255,0.75);'
+        f'margin:0 0 4px;line-height:1.5;">'
+        f'\u201c{shona}\u201d</p>'
+        f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        f'color:rgba(255,255,255,0.35);margin:0;letter-spacing:0.04em;">'
+        f'{english}</p>'
+        '</td>'
+        '</tr>'
+    )
+
+
+def build_person_of_day_html(person):
+    """Build the Zimbabwean of the Day section. Neutral, factual tone."""
+    if not person:
+        return ""
+    name = escape_html(person.get("name", ""))
+    description = escape_html(person.get("description", ""))
+    occupation = escape_html(person.get("occupation", ""))
+    birth_year = person.get("birth_year", "")
+    image = person.get("image", "")
+
+    # Build subtitle: occupation + birth year
+    subtitle_parts = []
+    if occupation:
+        subtitle_parts.append(occupation.capitalize())
+    if birth_year:
+        subtitle_parts.append(f"b.\u2009{birth_year}")
+    subtitle = " &middot; ".join(subtitle_parts)
+
+    # Use description as the bio line (Wikidata short description)
+    bio_html = ""
+    if description:
+        bio_html = (
+            f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+            f'color:#2c2c2c;margin:6px 0 0;line-height:1.5;">'
+            f'{description[0].upper()}{description[1:] if len(description) > 1 else ""}.</p>'
+            if not description.endswith(".")
+            else f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+            f'color:#2c2c2c;margin:6px 0 0;line-height:1.5;">'
+            f'{description[0].upper()}{description[1:] if len(description) > 1 else ""}</p>'
+        )
+
+    # Image (if available from Wikidata)
+    image_html = ""
+    if image:
+        image_html = (
+            '<td style="padding:0 0 0 14px;vertical-align:top;" width="72">'
+            f'<img src="{escape_html(image)}" alt="{name}" width="72" height="72" '
+            'style="display:block;width:72px;height:72px;object-fit:cover;'
+            'border-radius:50%;">'
+            '</td>'
+        )
+
+    # Link — always drive traffic to Mutapa People page
+    people_url = add_utm(f"{SITE_URL}/people.html")
+    link_html = (
+        f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        f'margin:8px 0 0;">'
+        f'<a href="{escape_html(people_url)}" target="_blank" '
+        f'style="color:#00897b;text-decoration:none;">Read more on Mutapa People &rarr;</a>'
+        f'</p>'
+        )
+
+    return (
+        '<!-- Zimbabwean of the Day -->'
+        '<tr>'
+        '<td style="padding:0 20px;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"'
+        ' style="border-collapse:collapse;">'
+        '<tr><td style="border-top:2px solid #1a1a1a;padding-top:8px;">'
+        '<p style="font-family:Georgia,\'Times New Roman\',serif;'
+        'font-size:11px;font-weight:700;color:#6b6b6b;margin:0 0 10px;'
+        'text-transform:uppercase;letter-spacing:0.1em;">'
+        'Zimbabwean of the Day</p>'
+        '</td></tr>'
+        '</table>'
+        '</td>'
+        '</tr>'
+        '<tr>'
+        '<td style="padding:0 20px 16px;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"'
+        ' style="border-collapse:collapse;">'
+        '<tr>'
+        '<td style="vertical-align:top;">'
+        f'<p style="font-family:Georgia,\'Times New Roman\',serif;'
+        f'font-size:17px;font-weight:700;color:#1a1a1a;margin:0;line-height:1.3;">'
+        f'{name}</p>'
+        f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        f'color:#6b6b6b;margin:3px 0 0;text-transform:uppercase;'
+        f'letter-spacing:0.04em;">{subtitle}</p>'
+        f'{bio_html}'
+        f'{link_html}'
+        '</td>'
+        f'{image_html}'
+        '</tr>'
+        '</table>'
+        '</td>'
+        '</tr>'
+    )
+
+
+def build_html(spotlight_articles, category_articles, gnews_extras=None,
+               tsumo=None, person_of_day=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
@@ -471,6 +726,8 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None):
         preheader = f"Top Zimbabwe headlines from foreign press &mdash; {date_display}"
 
     spotlight_html = build_spotlight_html(spotlight_articles, gnews_extras=gnews_extras)
+    tsumo_html = build_tsumo_html(tsumo)
+    person_html = build_person_of_day_html(person_of_day)
 
     # Build category article rows
     rows = ""
@@ -625,6 +882,10 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None):
           </tr>
 
           {spotlight_html}
+
+          {tsumo_html}
+
+          {person_html}
 
           <!-- Section header -->
           <tr>
@@ -797,8 +1058,22 @@ def main():
     top = pick_top_articles(articles)
     print(f"  Selected {len(top)} category articles for newsletter")
 
+    # Tsumo of the Day — same daily rotation as the website
+    tsumo = get_tsumo_of_the_day()
+    print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
+
+    # Zimbabwean of the Day — Wikidata birthday match
+    print("Fetching Zimbabwean of the Day from Wikidata...")
+    birthday_people = fetch_birthday_zimbabweans()
+    person_of_day = pick_person_of_the_day(birthday_people)
+    if person_of_day:
+        print(f"  Featured: {person_of_day['name']} (b. {person_of_day.get('birth_year', '?')})")
+    else:
+        print("  No Zimbabwean birthday match for today — section will be omitted")
+
     print("Building email HTML...")
-    html, total_count = build_html(spotlight, top, gnews_extras=gnews_extras)
+    html, total_count = build_html(spotlight, top, gnews_extras=gnews_extras,
+                                   tsumo=tsumo, person_of_day=person_of_day)
 
     # Dynamic subject line: "Monday morning briefing — 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)
