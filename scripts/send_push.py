@@ -117,10 +117,12 @@ def get_access_token(sa_info):
     signature = _rsa_sign_pkcs1_sha256(sa_info["private_key"], signing_input)
     jwt_token = (signing_input + b"." + _b64url(signature)).decode("utf-8")
 
-    data = urllib.parse.urlencode({
-        "grant_type": "urn:ietf:params:oauth:grant_type:jwt-bearer",
-        "assertion": jwt_token,
-    }).encode("utf-8")
+    # Build form body without urllib.parse.urlencode — it percent-encodes
+    # colons in the grant-type URN (%3A) which Google's token endpoint rejects.
+    data = (
+        "grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer"
+        "&assertion=" + jwt_token
+    ).encode("utf-8")
 
     req = urllib.request.Request(
         "https://oauth2.googleapis.com/token",
