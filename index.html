@@ -7,9 +7,14 @@
     <title>Zimbabwe News Today | The Mutapa Times</title>
     <link rel="canonical" href="https://www.mutapatimes.com/">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <link rel="manifest" href="site.webmanifest">
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mutapa Times">
+    <meta name="format-detection" content="telephone=no">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- DNS prefetch for external domains -->
     <link rel="dns-prefetch" href="https://s3.tradingview.com">
@@ -65,7 +70,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#1a1a1a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -483,6 +488,75 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js');
   });
 }
+
+// PWA Install Prompt — works on Android (beforeinstallprompt) and iOS (manual guide)
+(function() {
+  var DISMISS_KEY = 'pwa_install_dismissed';
+  var DISMISS_DAYS = 14;
+  var banner = document.getElementById('pwaInstallBanner');
+  var installBtn = document.getElementById('pwaInstallBtn');
+  var dismissBtn = document.getElementById('pwaInstallDismiss');
+  if (!banner || !installBtn || !dismissBtn) return;
+
+  // Don't show if already installed as standalone
+  if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) return;
+
+  // Don't show if recently dismissed
+  var dismissed = localStorage.getItem(DISMISS_KEY);
+  if (dismissed && Date.now() - parseInt(dismissed, 10) < DISMISS_DAYS * 86400000) return;
+
+  var deferredPrompt = null;
+
+  // Android / Chrome: capture the native install prompt
+  window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    showBanner();
+  });
+
+  // iOS: detect Safari and show manual instructions
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isIOS && isSafari) {
+    installBtn.textContent = 'How to install';
+    setTimeout(showBanner, 8000);
+  }
+
+  function showBanner() {
+    banner.style.display = 'flex';
+    // Force reflow then animate in
+    banner.offsetHeight;
+    banner.classList.add('visible');
+  }
+
+  installBtn.addEventListener('click', function() {
+    if (deferredPrompt) {
+      // Android: trigger native install prompt
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(result) {
+        deferredPrompt = null;
+        hideBanner();
+      });
+    } else if (isIOS) {
+      // iOS: show share sheet instructions
+      banner.querySelector('.pwa-install-body').innerHTML =
+        '<p class="pwa-install-title">Tap the share button</p>' +
+        '<p class="pwa-install-desc">Then tap <strong>"Add to Home Screen"</strong></p>';
+      installBtn.style.display = 'none';
+    }
+  });
+
+  dismissBtn.addEventListener('click', function() {
+    localStorage.setItem(DISMISS_KEY, String(Date.now()));
+    hideBanner();
+  });
+
+  function hideBanner() {
+    banner.classList.remove('visible');
+    setTimeout(function() { banner.style.display = 'none'; }, 400);
+  }
+})();
 </script>
 <script defer src="js/push.js"></script>
 <script>
@@ -509,6 +583,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Contentsquare / Hotjar -->
 <script src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
+
+<!-- PWA Install Prompt -->
+<div class="pwa-install-banner" id="pwaInstallBanner">
+  <img class="pwa-install-icon" src="img/android-icon-192x192.png" alt="Mutapa Times" width="44" height="44">
+  <div class="pwa-install-body">
+    <p class="pwa-install-title">Add Mutapa Times to your home screen</p>
+    <p class="pwa-install-desc">Faster access, works offline, and gets news alerts.</p>
+  </div>
+  <div class="pwa-install-actions">
+    <button class="pwa-install-btn pwa-install-btn-primary" id="pwaInstallBtn">Install</button>
+    <button class="pwa-install-btn pwa-install-btn-dismiss" id="pwaInstallDismiss">Not now</button>
+  </div>
+</div>
 
 <!-- Floating WhatsApp Share Button (mobile) -->
 <a href="https://wa.me/?text=Check%20out%20The%20Mutapa%20Times%20%E2%80%93%20curated%20Zimbabwe%20news%20from%20100%2B%20sources%20%F0%9F%87%BF%F0%9F%87%BC%0A%0Ahttps%3A%2F%2Fwww.mutapatimes.com%3Futm_source%3Dwhatsapp%26utm_medium%3Dfloating_btn%26utm_campaign%3Dviral" target="_blank" rel="noopener" class="fab-whatsapp" id="fabWhatsApp" title="Share on WhatsApp" aria-label="Share The Mutapa Times on WhatsApp">
