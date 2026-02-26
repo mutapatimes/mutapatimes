@@ -50,8 +50,6 @@ var SPOTLIGHT_RSS_FEEDS = [
 
 // Reputable sources for spotlight matching
 var REPUTABLE_SOURCES = [
-  // The Mutapa Times (original content)
-  "the mutapa times", "mutapa times",
   // Major international wire services & broadcasters
   "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
   "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
@@ -65,12 +63,8 @@ var REPUTABLE_SOURCES = [
   "allafrica", "all africa", "daily maverick", "mail & guardian",
   "news24", "the east african", "sabc", "nation africa", "the citizen",
   "eyewitness news", "iol", "timeslive", "sunday times",
-  // Major Zimbabwean outlets
-  "the herald", "herald", "heraldonline", "h-metro",
-  "newsday", "the standard", "dailynews", "daily news",
-  "bulawayo24", "nehanda radio", "nehandaradio",
-  "the zimbabwe mail", "zimbabwe mail", "zimetro",
-  "chronicle", "manica post", "sunday mail",
+  // Zimbabwean — only The Herald is verified
+  "the herald", "herald", "heraldonline",
   // Major digital news platforms
   "yahoo", "yahoo news",
   // Asia-Pacific
@@ -687,7 +681,8 @@ var LOCAL_ZIM_SOURCES = [
   "the patriot", "kwayedza", "umthunywa", "zimmorningpost",
   "zimetro", "the zimbabwean", "zimbabwe observer", "zim eye",
   "zimeye", "mbare times", "harare live", "harare news",
-  "zvishavane news", "masvingo star", "the mirror"
+  "zvishavane news", "masvingo star", "the mirror",
+  "zimbabwe news", "zimbabwean news", "zimbabwean"
 ];
 
 function isLocalZimSource(source) {
@@ -1840,7 +1835,9 @@ function renderSpotlightStories(articles) {
     var meta = $('<p class="spotlight-meta">');
     if (a.source) {
       meta.append($('<span class="verified-source">').text(a.source));
-      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      }
     }
     if (pubDate) {
       if (a.source) meta.append(document.createTextNode(" \u00b7 "));
@@ -1893,7 +1890,9 @@ function renderSpotlightStories(articles) {
     var gMeta = $('<p class="spotlight-meta">');
     if (g.source) {
       gMeta.append($('<span class="verified-source">').text(g.source));
-      gMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(g.source)) {
+        gMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      }
     }
     if (gDate) {
       if (g.source) gMeta.append(document.createTextNode(" \u00b7 "));
@@ -2020,7 +2019,9 @@ function appendCmsSpotlightItems(container, articles) {
     var aMeta = $('<p class="spotlight-meta">');
     if (a.source) {
       aMeta.append($('<span class="verified-source">').text(a.source));
-      aMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      if (isReputableSource(a.source)) {
+        aMeta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
+      }
     }
     if (aDate) {
       if (a.source) aMeta.append(document.createTextNode(" \u00b7 "));
