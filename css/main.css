@@ -1287,7 +1287,7 @@ nav a.economy-btn.active {
   padding: 0;
   margin-top: 0;
   border-top: 1px solid rgba(255,255,255,0.08);
-  background: rgba(0,0,0,0.2);
+  background: #0a1310;
   color: rgba(255,255,255,0.7);
 }
 .site-footer hr { border-top-color: rgba(255,255,255,0.08); margin: 16px 0; }
@@ -2618,6 +2618,72 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 @media (max-width: 850px) {
   .mobile-newsletter { display: block; }
   .sidebar-newsletter { display: none; }
+}
+
+/* ==========================================================================
+   Footer Subscribe Banner (all pages)
+   ========================================================================== */
+.footer-subscribe {
+  background: #0f1a12;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-subscribe-inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.footer-subscribe-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 6px;
+}
+.footer-subscribe-copy {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.6);
+  margin: 0 0 16px;
+}
+.footer-subscribe-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.footer-subscribe-input {
+  flex: 1;
+  padding: 11px 14px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  outline: none;
+}
+.footer-subscribe-input::placeholder { color: rgba(255,255,255,0.4); }
+.footer-subscribe-input:focus { border-color: rgba(255,255,255,0.4); }
+.footer-subscribe-btn {
+  padding: 11px 22px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f0;
+  color: #1a1a1a;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.footer-subscribe-btn:hover { background: #e8e8e5; }
+.footer-subscribe-fine {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.3);
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .footer-subscribe-form { flex-direction: column; }
+  .footer-subscribe { padding: 30px 16px; }
 }
 
 /* ==========================================================================
