@@ -2,7 +2,7 @@
   "short_name": "Mutapa Times",
   "name": "The Mutapa Times",
   "description": "Business and intelligence newspaper delivering curated Zimbabwean news for the diaspora.",
-  "start_url": "/index.html",
+  "start_url": "/index.html?utm_source=pwa&utm_medium=homescreen",
   "scope": "/",
   "display": "standalone",
   "background_color": "#fafafa",
@@ -15,8 +15,17 @@
     { "src": "/img/android-icon-96x96.png", "sizes": "96x96", "type": "image/png" },
     { "src": "/img/android-icon-144x144.png", "sizes": "144x144", "type": "image/png" },
     { "src": "/img/android-icon-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/img/ms-icon-310x310.png", "sizes": "310x310", "type": "image/png" },
+    { "src": "/img/ms-icon-310x310.png", "sizes": "512x512", "type": "image/png" },
     { "src": "/img/android-icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/banner.png",
+      "sizes": "1000x200",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "The Mutapa Times homepage with curated Zimbabwe news"
+    }
   ],
   "shortcuts": [
     {
