@@ -68,7 +68,7 @@ var REPUTABLE_SOURCES = [
   // Major Zimbabwean outlets
   "the herald", "herald", "heraldonline", "h-metro",
   "newsday", "the standard", "dailynews", "daily news",
-  "bulawayo24", "263chat", "nehanda radio", "nehandaradio",
+  "bulawayo24", "nehanda radio", "nehandaradio",
   "the zimbabwe mail", "zimbabwe mail", "zimetro",
   "chronicle", "manica post", "sunday mail",
   // Major digital news platforms
@@ -1314,6 +1314,16 @@ function renderMainStories(articles) {
   } else if (_activeCategory !== "all") {
     filtered = filtered.filter(function(a) {
       return inferCategory(a.title) === _activeCategory;
+    });
+  }
+
+  // Exclude local-only sources from default "all" view — they belong in the
+  // sidebar ("Live on the Ground"). Users can still see them via the Local filter.
+  // Featured CMS articles are always kept regardless of source.
+  if (_activeCategory === "all") {
+    filtered = filtered.filter(function(a) {
+      if (a.featured) return true;
+      return !a.isLocal && !isLocalZimSource(a.source);
     });
   }
 
