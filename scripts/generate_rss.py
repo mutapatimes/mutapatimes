@@ -46,6 +46,8 @@ def collect_cms_articles(base):
         date = re.search(r"^date:\s*['\"]?(\S+)", fm, re.MULTILINE)
         summary = re.search(r'^summary:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
         category = re.search(r'^category:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
+        author = re.search(r'^author:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
+        image = re.search(r'^image:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
         dt = _parse_date(date.group(1)) if date else None
         items.append({
             "title": title.group(1) if title else slug,
@@ -53,6 +55,8 @@ def collect_cms_articles(base):
             "description": (summary.group(1) if summary else body[:200].strip()),
             "pubDate": dt,
             "category": category.group(1) if category else "News",
+            "author": author.group(1) if author else None,
+            "image": image.group(1) if image else None,
         })
     return items
 
@@ -106,6 +110,10 @@ def build_rss(items):
     for item in items:
         pub = format_datetime(item["pubDate"]) if item.get("pubDate") else now
         cat = f"      <category>{escape(item.get('category', 'News'))}</category>\n" if item.get("category") else ""
+        author = f"      <dc:creator>{escape(item.get('author', 'The Mutapa Times'))}</dc:creator>\n" if item.get("author") else ""
+        image = ""
+        if item.get("image"):
+            image = f'      <media:content url="{escape(item["image"])}" medium="image"/>\n'
         entries.append(
             f"    <item>\n"
             f"      <title>{escape(item['title'])}</title>\n"
@@ -113,13 +121,16 @@ def build_rss(items):
             f"      <description>{escape(item.get('description', ''))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
             f"      <guid isPermaLink=\"true\">{escape(item['link'])}</guid>\n"
-            f"{cat}"
+            f"{cat}{author}{image}"
             f"    </item>"
         )
 
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        '<rss version="2.0"\n'
+        '     xmlns:atom="http://www.w3.org/2005/Atom"\n'
+        '     xmlns:dc="http://purl.org/dc/elements/1.1/"\n'
+        '     xmlns:media="http://search.yahoo.com/mrss/">\n'
         "  <channel>\n"
         "    <title>The Mutapa Times</title>\n"
         f"    <link>{BASE_URL}</link>\n"
@@ -127,6 +138,14 @@ def build_rss(items):
         "    <language>en</language>\n"
         f"    <lastBuildDate>{now}</lastBuildDate>\n"
         f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
+        "    <image>\n"
+        f"      <title>The Mutapa Times</title>\n"
+        f"      <url>{BASE_URL}/img/logo.png</url>\n"
+        f"      <link>{BASE_URL}</link>\n"
+        "    </image>\n"
+        "    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>\n"
+        "    <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>\n"
+        "    <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>\n"
         "\n".join(entries) + "\n"
         "  </channel>\n"
         "</rss>\n"
