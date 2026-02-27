@@ -113,9 +113,40 @@
     <div class="articles-page">
       <h2 class="articles-page-title">Articles</h2>
       <p class="articles-page-desc">Wire reports, analysis, and opinion curated by The Mutapa Times.</p>
+
+      <!-- Search, filter & sort controls -->
+      <div class="articles-toolbar">
+        <div class="articles-search-wrap">
+          <input type="text" id="articles-search" class="articles-search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+        <div class="articles-controls">
+          <div class="articles-category-chips" id="articles-category-chips">
+            <button class="articles-chip active" data-cat="all">All</button>
+            <button class="articles-chip" data-cat="Business">Business</button>
+            <button class="articles-chip" data-cat="Politics">Politics</button>
+            <button class="articles-chip" data-cat="Crime">Crime</button>
+            <button class="articles-chip" data-cat="Tech">Tech</button>
+            <button class="articles-chip" data-cat="Health">Health</button>
+            <button class="articles-chip" data-cat="Sport">Sport</button>
+            <button class="articles-chip" data-cat="Culture">Culture</button>
+            <button class="articles-chip" data-cat="Policy">Policy</button>
+            <button class="articles-chip" data-cat="Opinion">Opinion</button>
+            <button class="articles-chip" data-cat="Environment">Environment</button>
+          </div>
+          <select id="articles-sort" class="articles-sort" aria-label="Sort articles">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="az">A &ndash; Z</option>
+            <option value="za">Z &ndash; A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="articles-count" id="articles-count"></div>
       <div id="articles-list">
         <p class="loading-msg">Loading articles&#8230;</p>
       </div>
+      <div class="articles-pagination" id="articles-pagination"></div>
     </div>
   </main>
 
