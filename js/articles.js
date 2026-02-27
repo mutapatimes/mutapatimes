@@ -343,7 +343,7 @@
       var categoryHtml = a.category
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';
-      html += '<a href="article.html?slug=' + encodeURIComponent(a.slug) + '" class="article-card">';
+      html += '<a href="articles/' + encodeURIComponent(a.slug) + '.html" class="article-card">';
       if (a.image) {
         html += '<img src="' + escapeHtml(a.image) + '" alt="" class="article-card-img">';
       }
@@ -568,6 +568,13 @@
   if (document.getElementById("articles-list")) {
     renderArticlesList();
   } else if (document.getElementById("article-content")) {
-    renderSingleArticle();
+    // Redirect old ?slug= URLs to new static /articles/{slug}.html pages
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get("slug");
+    if (slug) {
+      window.location.replace("articles/" + encodeURIComponent(slug) + ".html");
+    } else {
+      renderSingleArticle();
+    }
   }
 })();

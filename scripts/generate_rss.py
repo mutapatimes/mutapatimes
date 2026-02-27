@@ -51,7 +51,7 @@ def collect_cms_articles(base):
         dt = _parse_date(date.group(1)) if date else None
         items.append({
             "title": title.group(1) if title else slug,
-            "link": f"{BASE_URL}/article.html?slug={slug}",
+            "link": f"{BASE_URL}/articles/{slug}.html",
             "description": (summary.group(1) if summary else body[:200].strip()),
             "pubDate": dt,
             "category": category.group(1) if category else "News",

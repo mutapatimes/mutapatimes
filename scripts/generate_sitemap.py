@@ -67,7 +67,7 @@ def generate():
         if not slug or slug == "index":
             continue
         lastmod = date_str or now_str[:10]
-        loc = f"{BASE_URL}/article.html?slug={slug}"
+        loc = f"{BASE_URL}/articles/{slug}.html"
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
