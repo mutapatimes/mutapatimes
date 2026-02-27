@@ -1467,8 +1467,64 @@ body.gate-active .back-to-top {
    ========================================================================== */
 .articles-page { padding:36px 20px; max-width:800px; margin:0 auto; }
 .articles-page-title { font-family:'Playfair Display',Georgia,serif; font-size:2em; font-weight:900; text-align:center; margin-bottom:6px; color:var(--ink); }
-.articles-page-desc { text-align:center; color:var(--text-light); font-size:0.9em; margin-bottom:32px; }
+.articles-page-desc { text-align:center; color:var(--text-light); font-size:0.9em; margin-bottom:24px; }
 .articles-empty { text-align:center; color:var(--text-light); padding:40px 0; }
+
+/* Articles toolbar: search, filter chips, sort */
+.articles-toolbar { margin-bottom:20px; }
+.articles-search-wrap { margin-bottom:14px; }
+.articles-search {
+  width:100%; padding:10px 14px; font-size:0.88rem;
+  border:1px solid var(--rule); border-radius:4px;
+  background:var(--paper); color:var(--ink); outline:none;
+}
+.articles-search::placeholder { color:var(--text-light); }
+.articles-search:focus { border-color:var(--ink); }
+.articles-controls { display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap; }
+.articles-category-chips {
+  flex:1; display:flex; flex-wrap:wrap; gap:6px; min-width:0;
+}
+.articles-chip {
+  padding:5px 12px; font-size:0.75rem; font-weight:500;
+  border:1px solid var(--rule); border-radius:20px;
+  background:transparent; color:var(--text-mid); cursor:pointer;
+  white-space:nowrap; transition:all 0.15s;
+}
+.articles-chip:hover { border-color:var(--ink); color:var(--ink); }
+.articles-chip.active {
+  background:var(--ink); color:var(--paper); border-color:var(--ink);
+}
+.articles-sort {
+  padding:5px 10px; font-size:0.78rem; border:1px solid var(--rule);
+  border-radius:4px; background:var(--paper); color:var(--ink);
+  cursor:pointer; flex-shrink:0;
+}
+.articles-count {
+  font-size:0.78rem; color:var(--text-light); margin-bottom:8px;
+}
+
+/* Articles pagination */
+.articles-pagination {
+  display:flex; align-items:center; justify-content:center;
+  gap:4px; padding:28px 0 8px; flex-wrap:wrap;
+}
+.articles-page-btn {
+  padding:6px 12px; font-size:0.8rem; border:1px solid var(--rule);
+  border-radius:4px; background:transparent; color:var(--text-mid);
+  cursor:pointer; transition:all 0.15s;
+}
+.articles-page-btn:hover:not(.disabled):not(.active) {
+  border-color:var(--ink); color:var(--ink);
+}
+.articles-page-btn.active {
+  background:var(--ink); color:var(--paper); border-color:var(--ink);
+}
+.articles-page-btn.disabled {
+  opacity:0.35; cursor:default;
+}
+.articles-page-dots {
+  padding:0 4px; font-size:0.8rem; color:var(--text-light);
+}
 
 .article-card { display:flex; gap:20px; padding:24px 0; border-bottom:1px solid var(--rule); color:var(--text); text-decoration:none; transition:background 0.15s ease; }
 .article-card:hover { background:rgba(0,0,0,0.015); color:var(--text); text-decoration:none; }
@@ -2387,6 +2443,10 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 
   .economy-grid { grid-template-columns:1fr; }
   .economy-widget { height:280px; }
+
+  .articles-controls { flex-direction:column; }
+  .articles-category-chips { gap:5px; }
+  .articles-chip { padding:4px 10px; font-size:0.7rem; }
 
   .article-card { flex-direction:column; gap:12px; }
   .article-card-img { width:100%; height:180px; }
