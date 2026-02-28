@@ -2,19 +2,22 @@
 (function () {
   'use strict';
 
+  if (typeof PROPERTY_DATA === 'undefined') return;
   var D = PROPERTY_DATA;
   var chart = null;
 
   /* ── Helpers ── */
   function fmt(n) {
-    if (n === 0 || n === '0' || n === '-') return '-';
+    if (n == null || n === 0 || n === '0' || n === '-') return '-';
     return '$' + Number(n).toLocaleString('en-US');
   }
   function pctBadge(pct, dir) {
-    if (pct === 0 && dir === 0) return '<span class="prop-pct flat">0.0%</span>';
-    var cls = dir > 0 ? 'up' : (dir < 0 ? 'down' : 'flat');
-    var arrow = dir > 0 ? ' &#9650;' : (dir < 0 ? ' &#9660;' : '');
-    return '<span class="prop-pct ' + cls + '">' + pct.toFixed(1) + '%' + arrow + '</span>';
+    var p = Number(pct) || 0;
+    var d = Number(dir) || 0;
+    if (p === 0 && d === 0) return '<span class="prop-pct flat">0.0%</span>';
+    var cls = d > 0 ? 'up' : (d < 0 ? 'down' : 'flat');
+    var arrow = d > 0 ? ' &#9650;' : (d < 0 ? ' &#9660;' : '');
+    return '<span class="prop-pct ' + cls + '">' + p.toFixed(1) + '%' + arrow + '</span>';
   }
 
   /* ── Colour palette ── */
@@ -24,7 +27,7 @@
   ];
 
   /* ── Init ── */
-  document.addEventListener('DOMContentLoaded', function () {
+  function init() {
     buildMovers();
     buildViewedBars();
     populateSelects();
@@ -33,7 +36,13 @@
     buildCatTable();
     buildHistoryTable();
     bindEvents();
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 
   /* ── Biggest movers ── */
   function buildMovers() {
@@ -88,7 +97,7 @@
   /* ── Chart ── */
   function buildChart() {
     var ctx = document.getElementById('propertyChart');
-    if (!ctx) return;
+    if (!ctx || typeof Chart === 'undefined') return;
 
     var labels = D.years.slice().reverse();
     var datasets = getChartDatasets();
@@ -207,11 +216,15 @@
 
   /* ── Region data table ── */
   function buildTable() {
-    var year = document.getElementById('tableYear').value || '2025';
-    var type = document.getElementById('tableType').value;
-    var search = (document.getElementById('propSearch').value || '').toLowerCase();
+    var yearEl = document.getElementById('tableYear');
+    var typeEl = document.getElementById('tableType');
+    var searchEl = document.getElementById('propSearch');
     var tbody = document.getElementById('propTableBody');
-    if (!tbody) return;
+    if (!tbody || !yearEl || !typeEl) return;
+
+    var year = yearEl.value || D.years[0];
+    var type = typeEl.value || 'sale';
+    var search = (searchEl ? searchEl.value : '').toLowerCase();
 
     var regionData = D.regionData[year];
     if (!regionData) return;
@@ -252,9 +265,10 @@
 
   /* ── Category table ── */
   function buildCatTable() {
-    var year = document.getElementById('tableYear').value || '2025';
+    var yearEl = document.getElementById('tableYear');
     var tbody = document.getElementById('catTableBody');
-    if (!tbody) return;
+    if (!tbody || !yearEl) return;
+    var year = yearEl.value || D.years[0];
     var catData = D.categoryData[year];
     if (!catData) return;
 
