@@ -9,7 +9,7 @@ featured: false
 headline_position: 0
 source_url: https://www.theguardian.com/world/2026/feb/23/robert-mugabe-son-bellarmine-mugabe-charged-with-crimes
 source_type: wire
-spotlight: true
+spotlight: false
 ---
 
 Bellarmine Chatunga Mugabe, known for lavish lifestyle, also accused of theft and being illegal immigrant after man allegedly shot in back
