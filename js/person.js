@@ -398,6 +398,10 @@
       return;
     }
 
+    // Redirect old ?id= URLs to new static /people/{id}.html pages
+    window.location.replace('people/' + encodeURIComponent(id) + '.html');
+    return;
+
     // CMS-only person
     if (id.indexOf('cms-') === 0) {
       fetchCmsPerson(id, function (err, person) {

@@ -292,7 +292,7 @@
     var sourceTag = person.source === 'cms'
       ? '<span class="press-marker original-press">Original</span>'
       : '';
-    var personUrl = 'person.html?id=' + encodeURIComponent(person.id);
+    var personUrl = 'people/' + encodeURIComponent(person.id) + '.html';
     return '<a href="' + personUrl + '" class="person-card" data-index="' + index + '" aria-expanded="false">'
       + imgHtml
       + '<div class="person-card-body">'

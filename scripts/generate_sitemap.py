@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Auto-generate sitemap.xml for The Mutapa Times."""
+"""Auto-generate sitemap.xml and news-sitemap.xml for The Mutapa Times."""
 import glob
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from xml.sax.saxutils import escape
 
 BASE_URL = "https://www.mutapatimes.com"
 
@@ -23,23 +24,29 @@ STATIC_PAGES = [
 
 
 def extract_frontmatter(path):
-    """Extract date and slug from a markdown article's frontmatter."""
+    """Extract date, title, and category from a markdown article's frontmatter."""
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
     if not m:
-        return None, None
+        return None, None, None, None
     fm = m.group(1)
-    date_match = re.search(r"^date:\s*['\"]?(\d{4}-\d{2}-\d{2})", fm, re.MULTILINE)
+    date_match = re.search(r"^date:\s*['\"]?(\S+)", fm, re.MULTILINE)
     date_str = date_match.group(1) if date_match else None
-    # Slug is the filename without .md
+    title_match = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
+    title = title_match.group(1) if title_match else None
+    cat_match = re.search(r'^category:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
+    category = cat_match.group(1) if cat_match else None
     slug = os.path.splitext(os.path.basename(path))[0]
-    return slug, date_str
+    return slug, date_str, title, category
 
 
 def generate():
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    now = datetime.now(timezone.utc)
+    now_str = now.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    two_days_ago = now - timedelta(days=2)
     urls = []
+    news_urls = []
 
     # Static pages
     for page, priority, freq in STATIC_PAGES:
@@ -47,7 +54,7 @@ def generate():
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
-            f"    <lastmod>{now}</lastmod>\n"
+            f"    <lastmod>{now_str}</lastmod>\n"
             f"    <changefreq>{freq}</changefreq>\n"
             f"    <priority>{priority}</priority>\n"
             f"  </url>"
@@ -56,30 +63,67 @@ def generate():
     # CMS articles
     articles_dir = os.path.join(os.path.dirname(__file__), "..", "content", "articles")
     for md_path in sorted(glob.glob(os.path.join(articles_dir, "*.md"))):
-        slug, date_str = extract_frontmatter(md_path)
+        slug, date_str, title, category = extract_frontmatter(md_path)
         if not slug or slug == "index":
             continue
-        lastmod = date_str or now[:10]
+        lastmod = date_str or now_str[:10]
+        loc = f"{BASE_URL}/articles/{slug}.html"
         urls.append(
             f"  <url>\n"
-            f"    <loc>{BASE_URL}/article.html?slug={slug}</loc>\n"
+            f"    <loc>{loc}</loc>\n"
             f"    <lastmod>{lastmod}</lastmod>\n"
             f"    <changefreq>weekly</changefreq>\n"
             f"    <priority>0.7</priority>\n"
             f"  </url>"
         )
 
+        # Google News sitemap: only articles from last 2 days
+        if date_str:
+            try:
+                art_date = datetime.strptime(date_str[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                if art_date >= two_days_ago and title:
+                    keywords = escape(category) if category else ""
+                    news_urls.append(
+                        f"  <url>\n"
+                        f"    <loc>{escape(loc)}</loc>\n"
+                        f"    <news:news>\n"
+                        f"      <news:publication>\n"
+                        f"        <news:name>The Mutapa Times</news:name>\n"
+                        f"        <news:language>en</news:language>\n"
+                        f"      </news:publication>\n"
+                        f"      <news:publication_date>{date_str[:10]}</news:publication_date>\n"
+                        f"      <news:title>{escape(title)}</news:title>\n"
+                        + (f"      <news:keywords>{keywords}</news:keywords>\n" if keywords else "")
+                        + f"    </news:news>\n"
+                        f"  </url>"
+                    )
+            except ValueError:
+                pass
+
+    # Write main sitemap
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "\n".join(urls)
         + "\n</urlset>\n"
     )
-
     out = os.path.join(os.path.dirname(__file__), "..", "sitemap.xml")
     with open(out, "w", encoding="utf-8") as f:
         f.write(sitemap)
     print(f"sitemap.xml written with {len(urls)} URLs")
+
+    # Write Google News sitemap
+    news_sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
+        + "\n".join(news_urls)
+        + "\n</urlset>\n"
+    )
+    news_out = os.path.join(os.path.dirname(__file__), "..", "news-sitemap.xml")
+    with open(news_out, "w", encoding="utf-8") as f:
+        f.write(news_sitemap)
+    print(f"news-sitemap.xml written with {len(news_urls)} URLs")
 
 
 if __name__ == "__main__":
