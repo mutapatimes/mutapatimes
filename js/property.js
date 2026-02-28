@@ -7,13 +7,15 @@
   var chart = null;
 
   /* ── Currency config ── */
+  var FALLBACK_RATES = { GBP: 0.79, ZAR: 18.10, AUD: 1.53 };
   var CURRENCIES = {
-    USD: { symbol: '$',  rate: 1,     locale: 'en-US' },
-    GBP: { symbol: '£',  rate: 0.79,  locale: 'en-GB' },
-    ZAR: { symbol: 'R',  rate: 18.10, locale: 'en-ZA' },
-    AUD: { symbol: 'A$', rate: 1.53,  locale: 'en-AU' }
+    USD: { symbol: '$',  rate: 1,              locale: 'en-US' },
+    GBP: { symbol: '£',  rate: FALLBACK_RATES.GBP, locale: 'en-GB' },
+    ZAR: { symbol: 'R',  rate: FALLBACK_RATES.ZAR, locale: 'en-ZA' },
+    AUD: { symbol: 'A$', rate: FALLBACK_RATES.AUD, locale: 'en-AU' }
   };
   var activeCurrency = 'USD';
+  var ratesLoaded = false;
 
   /* ── Helpers ── */
   function convert(n) {
@@ -47,8 +49,47 @@
     '#1d9bf0', '#e65100', '#6a1b9a', '#00838f'
   ];
 
+  /* ── Live FX rates ── */
+  var FX_CACHE_KEY = 'mutapa_fx_rates';
+  var FX_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
+
+  function applyRates(rates) {
+    if (rates.GBP) CURRENCIES.GBP.rate = rates.GBP;
+    if (rates.ZAR) CURRENCIES.ZAR.rate = rates.ZAR;
+    if (rates.AUD) CURRENCIES.AUD.rate = rates.AUD;
+    ratesLoaded = true;
+  }
+
+  function loadFxRates() {
+    // Check localStorage cache first
+    try {
+      var cached = JSON.parse(localStorage.getItem(FX_CACHE_KEY));
+      if (cached && (Date.now() - cached.ts) < FX_CACHE_TTL) {
+        applyRates(cached.rates);
+        return;
+      }
+    } catch (e) { /* ignore */ }
+
+    // Fetch live rates (no API key required)
+    fetch('https://open.er-api.com/v6/latest/USD')
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data && data.rates) {
+          var rates = { GBP: data.rates.GBP, ZAR: data.rates.ZAR, AUD: data.rates.AUD };
+          applyRates(rates);
+          try {
+            localStorage.setItem(FX_CACHE_KEY, JSON.stringify({ ts: Date.now(), rates: rates }));
+          } catch (e) { /* quota exceeded */ }
+          // Re-render if user already switched away from USD
+          if (activeCurrency !== 'USD') refreshAll();
+        }
+      })
+      .catch(function () { /* keep fallback rates */ });
+  }
+
   /* ── Init ── */
   function init() {
+    loadFxRates();
     buildHighlights();
     buildMovers();
     buildViewedBars();

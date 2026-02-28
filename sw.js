@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v7';
+var CACHE_VERSION = 'mutapa-v8';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 
@@ -51,7 +51,8 @@ var EXTERNAL_NETWORK_ONLY = [
   'api.open-meteo.com',
   's3.tradingview.com',
   'query.wikidata.org',
-  'translate.google.com'
+  'translate.google.com',
+  'open.er-api.com'
 ];
 
 // Install — pre-cache app shell
