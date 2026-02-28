@@ -2920,6 +2920,48 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
    Property page
    ========================================================================== */
 
+/* Currency selector */
+.prop-currency-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px 16px;
+}
+.prop-currency-label {
+  font-size: 0.75em;
+  color: #888;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.prop-currency-options {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.prop-currency-btn {
+  background: var(--paper);
+  border: none;
+  border-right: 1px solid var(--rule);
+  padding: 5px 12px;
+  font-size: 0.72em;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.02em;
+}
+.prop-currency-btn:last-child { border-right: none; }
+.prop-currency-btn:hover { background: var(--bg); }
+.prop-currency-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 /* Highlight cards */
 .prop-highlights {
   display: grid;
@@ -3198,4 +3240,6 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .prop-search { min-width: 100%; }
   .prop-table { font-size: 0.78em; }
   .prop-table th, .prop-table td { padding: 8px; }
+  .prop-currency-bar { padding: 0 12px 12px; }
+  .prop-currency-btn { padding: 4px 9px; font-size: 0.68em; }
 }

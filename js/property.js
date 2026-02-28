@@ -6,10 +6,33 @@
   var D = PROPERTY_DATA;
   var chart = null;
 
+  /* ── Currency config ── */
+  var FALLBACK_RATES = { GBP: 0.79, ZAR: 18.10, AUD: 1.53 };
+  var CURRENCIES = {
+    USD: { symbol: '$',  rate: 1,              locale: 'en-US' },
+    GBP: { symbol: '£',  rate: FALLBACK_RATES.GBP, locale: 'en-GB' },
+    ZAR: { symbol: 'R',  rate: FALLBACK_RATES.ZAR, locale: 'en-ZA' },
+    AUD: { symbol: 'A$', rate: FALLBACK_RATES.AUD, locale: 'en-AU' }
+  };
+  var activeCurrency = 'USD';
+  var ratesLoaded = false;
+
   /* ── Helpers ── */
+  function convert(n) {
+    return Number(n) * CURRENCIES[activeCurrency].rate;
+  }
   function fmt(n) {
     if (n == null || n === 0 || n === '0' || n === '-') return '-';
-    return '$' + Number(n).toLocaleString('en-US');
+    var cur = CURRENCIES[activeCurrency];
+    var val = convert(n);
+    var parts = val.toLocaleString(cur.locale, { maximumFractionDigits: 0 });
+    return cur.symbol + parts;
+  }
+  function fmtRaw(n) {
+    if (n == null || n === 0) return '-';
+    var cur = CURRENCIES[activeCurrency];
+    var parts = Number(n).toLocaleString(cur.locale, { maximumFractionDigits: 0 });
+    return cur.symbol + parts;
   }
   function pctBadge(pct, dir) {
     var p = Number(pct) || 0;
@@ -26,8 +49,48 @@
     '#1d9bf0', '#e65100', '#6a1b9a', '#00838f'
   ];
 
+  /* ── Live FX rates ── */
+  var FX_CACHE_KEY = 'mutapa_fx_rates';
+  var FX_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
+
+  function applyRates(rates) {
+    if (rates.GBP) CURRENCIES.GBP.rate = rates.GBP;
+    if (rates.ZAR) CURRENCIES.ZAR.rate = rates.ZAR;
+    if (rates.AUD) CURRENCIES.AUD.rate = rates.AUD;
+    ratesLoaded = true;
+  }
+
+  function loadFxRates() {
+    // Check localStorage cache first
+    try {
+      var cached = JSON.parse(localStorage.getItem(FX_CACHE_KEY));
+      if (cached && (Date.now() - cached.ts) < FX_CACHE_TTL) {
+        applyRates(cached.rates);
+        return;
+      }
+    } catch (e) { /* ignore */ }
+
+    // Fetch live rates (no API key required)
+    fetch('https://open.er-api.com/v6/latest/USD')
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data && data.rates) {
+          var rates = { GBP: data.rates.GBP, ZAR: data.rates.ZAR, AUD: data.rates.AUD };
+          applyRates(rates);
+          try {
+            localStorage.setItem(FX_CACHE_KEY, JSON.stringify({ ts: Date.now(), rates: rates }));
+          } catch (e) { /* quota exceeded */ }
+          // Re-render if user already switched away from USD
+          if (activeCurrency !== 'USD') refreshAll();
+        }
+      })
+      .catch(function () { /* keep fallback rates */ });
+  }
+
   /* ── Init ── */
   function init() {
+    loadFxRates();
+    buildHighlights();
     buildMovers();
     buildViewedBars();
     populateSelects();
@@ -42,6 +105,48 @@
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
+  }
+
+  /* ── Refresh everything when currency changes ── */
+  function refreshAll() {
+    buildHighlights();
+    buildTable();
+    buildCatTable();
+    buildHistoryTable();
+    updateChart();
+  }
+
+  /* ── Highlight cards ── */
+  function buildHighlights() {
+    var el = document.getElementById('highlightCards');
+    if (!el) return;
+    var m = D.market[D.years[0]];
+    if (!m) return;
+    var salePctCls = m.saleDir > 0 ? 'up' : (m.saleDir < 0 ? 'down' : 'flat');
+    var saleArrow = m.saleDir > 0 ? ' <span>&#9650;</span>' : (m.saleDir < 0 ? ' <span>&#9660;</span>' : '');
+    var rentPctCls = m.rentDir > 0 ? 'up' : (m.rentDir < 0 ? 'down' : 'flat');
+    var rentArrow = m.rentDir > 0 ? ' <span>&#9650;</span>' : (m.rentDir < 0 ? ' <span>&#9660;</span>' : '');
+    el.innerHTML =
+      '<div class="prop-highlight-card">' +
+        '<div class="prop-highlight-value">' + fmt(m.sale) + '</div>' +
+        '<div class="prop-highlight-label">Avg. Sale Price (' + D.years[0] + ')</div>' +
+        '<div class="prop-highlight-change ' + salePctCls + '">' + m.salePct + '%' + saleArrow + '</div>' +
+      '</div>' +
+      '<div class="prop-highlight-card">' +
+        '<div class="prop-highlight-value">' + fmt(m.rent) + '</div>' +
+        '<div class="prop-highlight-label">Avg. Monthly Rent (' + D.years[0] + ')</div>' +
+        '<div class="prop-highlight-change ' + rentPctCls + '">' + m.rentPct + '%' + rentArrow + '</div>' +
+      '</div>' +
+      '<div class="prop-highlight-card">' +
+        '<div class="prop-highlight-value">51%</div>' +
+        '<div class="prop-highlight-label">Most Searched: Houses</div>' +
+        '<div class="prop-highlight-sub">followed by Land (27%)</div>' +
+      '</div>' +
+      '<div class="prop-highlight-card">' +
+        '<div class="prop-highlight-value">31%</div>' +
+        '<div class="prop-highlight-label">Top Region: Harare North</div>' +
+        '<div class="prop-highlight-sub">followed by Harare West (16%)</div>' +
+      '</div>';
   }
 
   /* ── Biggest movers ── */
@@ -126,7 +231,7 @@
             padding: 12,
             callbacks: {
               label: function (ctx) {
-                return ctx.dataset.label + ': ' + fmt(ctx.parsed.y);
+                return ctx.dataset.label + ': ' + fmtRaw(ctx.raw);
               }
             }
           }
@@ -137,7 +242,7 @@
             grid: { color: 'rgba(0,0,0,0.06)' },
             ticks: {
               font: { family: 'Inter, system-ui, sans-serif', size: 10 },
-              callback: function (val) { return fmt(val); }
+              callback: function (val) { return fmtRaw(val); }
             }
           },
           x: {
@@ -156,7 +261,7 @@
     var datasets = [];
 
     if (view === 'market') {
-      var data = labels.map(function (y) { return D.market[y][metric]; });
+      var data = labels.map(function (y) { return convert(D.market[y][metric]); });
       datasets.push({
         label: 'Overall Market',
         data: data,
@@ -172,7 +277,7 @@
       D.categories.forEach(function (cat, ci) {
         var data = labels.map(function (y) {
           var d = D.categoryData[y][cat];
-          return d ? d[metric] : 0;
+          return d ? convert(d[metric]) : 0;
         });
         datasets.push({
           label: cat,
@@ -189,7 +294,7 @@
       var region = document.getElementById('chartRegion').value;
       var data = labels.map(function (y) {
         var d = D.regionData[y][region];
-        return d ? d[metric] : 0;
+        return d ? convert(d[metric]) : 0;
       });
       datasets.push({
         label: region,
@@ -211,6 +316,12 @@
     if (!chart) return;
     var datasets = getChartDatasets();
     chart.data.datasets = datasets;
+    chart.options.scales.y.ticks.callback = function (val) {
+      return fmtRaw(val);
+    };
+    chart.options.plugins.tooltip.callbacks.label = function (ctx) {
+      return ctx.dataset.label + ': ' + fmtRaw(ctx.raw);
+    };
     chart.update();
   }
 
@@ -359,6 +470,18 @@
         th.classList.add(dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
 
         buildTable();
+      });
+    });
+
+    // Currency selector
+    document.querySelectorAll('.prop-currency-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.prop-currency-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        activeCurrency = btn.getAttribute('data-currency');
+        refreshAll();
       });
     });
   }

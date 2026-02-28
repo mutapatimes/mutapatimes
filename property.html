@@ -115,29 +115,19 @@
   <p style="text-align: center; font-size: 0.85em; color: #666; margin: 0 0 6px;">Historical real estate prices &amp; trends across 20 regions (2015&ndash;2025)</p>
   <p style="text-align: center; font-size: 0.72em; color: #999; margin: 0 0 16px;">Data source: <a href="https://www.property.co.zw/property-index" target="_blank" rel="noopener" style="color: var(--accent);">property.co.zw</a></p>
 
-  <!-- Highlights cards -->
-  <div class="prop-highlights">
-    <div class="prop-highlight-card">
-      <div class="prop-highlight-value">$120,000</div>
-      <div class="prop-highlight-label">Avg. Sale Price (2025)</div>
-      <div class="prop-highlight-change up">14.3% <span>&#9650;</span></div>
-    </div>
-    <div class="prop-highlight-card">
-      <div class="prop-highlight-value">$900</div>
-      <div class="prop-highlight-label">Avg. Monthly Rent (2025)</div>
-      <div class="prop-highlight-change flat">0.0%</div>
-    </div>
-    <div class="prop-highlight-card">
-      <div class="prop-highlight-value">51%</div>
-      <div class="prop-highlight-label">Most Searched: Houses</div>
-      <div class="prop-highlight-sub">followed by Land (27%)</div>
-    </div>
-    <div class="prop-highlight-card">
-      <div class="prop-highlight-value">31%</div>
-      <div class="prop-highlight-label">Top Region: Harare North</div>
-      <div class="prop-highlight-sub">followed by Harare West (16%)</div>
+  <!-- Currency selector -->
+  <div class="prop-currency-bar">
+    <span class="prop-currency-label">View prices in</span>
+    <div class="prop-currency-options" id="currencyOptions">
+      <button class="prop-currency-btn active" data-currency="USD">USD $</button>
+      <button class="prop-currency-btn" data-currency="GBP">GBP &pound;</button>
+      <button class="prop-currency-btn" data-currency="ZAR">ZAR R</button>
+      <button class="prop-currency-btn" data-currency="AUD">AUD A$</button>
     </div>
   </div>
+
+  <!-- Highlights cards -->
+  <div class="prop-highlights" id="highlightCards"></div>
 
   <!-- Biggest price changes -->
   <div class="prop-movers">
