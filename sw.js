@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v5';
+var CACHE_VERSION = 'mutapa-v6';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 
@@ -21,6 +21,7 @@ var APP_SHELL = [
   '/why.html',
   '/how.html',
   '/terms.html',
+  '/property.html',
   '/offline.html',
   '/css/normalize.css',
   '/css/main.css',
@@ -34,6 +35,8 @@ var APP_SHELL = [
   '/js/business.js',
   '/js/businesses.js',
   '/js/people.js',
+  '/js/property-data.js',
+  '/js/property.js',
   '/site.webmanifest',
   '/img/android-icon-192x192.png',
   '/img/favicon-32x32.png',
@@ -100,8 +103,14 @@ self.addEventListener('fetch', function(event) {
     return;
   }
 
-  // Cache First: app shell (HTML, CSS, JS)
-  event.respondWith(cacheFirstShell(event.request));
+  // HTML pages — network first so deploys take effect immediately
+  if (event.request.mode === 'navigate' || /\.html$/.test(url.pathname) || url.pathname === '/') {
+    event.respondWith(networkFirstShell(event.request));
+    return;
+  }
+
+  // CSS & JS — stale while revalidate (fast load, background refresh)
+  event.respondWith(staleWhileRevalidateShell(event.request));
 });
 
 function networkFirstData(request) {
@@ -138,23 +147,38 @@ function staleWhileRevalidateImg(request) {
   });
 }
 
-function cacheFirstShell(request) {
-  return caches.match(request).then(function(cached) {
-    if (cached) return cached;
-    return fetch(request).then(function(response) {
-      if (response && response.ok) {
-        var clone = response.clone();
-        caches.open(CACHE_VERSION).then(function(cache) {
-          cache.put(request, clone);
-        });
-      }
-      return response;
-    });
-  }).catch(function() {
-    // Offline fallback for navigation requests
-    if (request.mode === 'navigate') {
-      return caches.match('/offline.html');
+// HTML — always try network first so deploys/purges work
+function networkFirstShell(request) {
+  return fetch(request).then(function(response) {
+    if (response && response.ok) {
+      var clone = response.clone();
+      caches.open(CACHE_VERSION).then(function(cache) {
+        cache.put(request, clone);
+      });
     }
+    return response;
+  }).catch(function() {
+    return caches.match(request).then(function(cached) {
+      if (cached) return cached;
+      if (request.mode === 'navigate') return caches.match('/offline.html');
+    });
+  });
+}
+
+// CSS & JS — serve cached instantly, refresh in background for next visit
+function staleWhileRevalidateShell(request) {
+  return caches.open(CACHE_VERSION).then(function(cache) {
+    return cache.match(request).then(function(cached) {
+      var fetched = fetch(request).then(function(response) {
+        if (response && response.ok) {
+          cache.put(request, response.clone());
+        }
+        return response;
+      }).catch(function() {
+        return cached;
+      });
+      return cached || fetched;
+    });
   });
 }
 
