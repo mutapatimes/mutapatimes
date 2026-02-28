@@ -259,7 +259,7 @@ var PROPERTY_DATA = {
       "Harare South": { sale: 67000, rent: 400, salePct: 4.3, saleDir: -1, rentPct: 14.3, rentDir: 1 },
       "Harare West": { sale: 65000, rent: 500, salePct: 0.0, saleDir: 0, rentPct: 0.0, rentDir: 0 },
       "Kadoma": { sale: 25000, rent: 800, salePct: 23.1, saleDir: -1, rentPct: 220.0, rentDir: 1 },
-      "Marondera": { sale: 45000, rent: 1300, salePct: 10.9, saleDir: -1, rentPct: 129,900.0, rentDir: 1 },
+      "Marondera": { sale: 45000, rent: 1300, salePct: 10.9, saleDir: -1, rentPct: 129900.0, rentDir: 1 },
       "Mutare": { sale: 65000, rent: 750, salePct: 44.4, saleDir: 1, rentPct: 31.8, rentDir: -1 },
       "Norton": { sale: 24000, rent: 425, salePct: 5.9, saleDir: -1, rentPct: 13.3, rentDir: 1 },
       "Nyabira": { sale: 0, rent: 0, salePct: 0.0, saleDir: 0, rentPct: 0.0, rentDir: 0 },
