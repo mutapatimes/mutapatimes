@@ -1,0 +1,18 @@
+---
+title: "Leaked Video Reveals Chamisa’s Links to ZANU-PF"
+date: 2026-03-29T16:17:11.000Z
+author: Zimbabwe Mail
+category: Politics
+image: 
+summary: "HARARE &#8211; A heated social media confrontation between Zimbabwean political figures has escalated into a wider national debate following a series of explosive allegations concerning purported clandestine engagements between the beleaguered opposition leader Nelson Chamisa and"
+featured: false
+headline_position: 0
+source_url: "https://thezimbabwemail.com/leaked-video-reveals-chamisas-links-to-zanu-pf/"
+source_type: wire
+spotlight: false
+---
+
+HARARE &#8211; A heated social media confrontation between Zimbabwean political figures has escalated into a wider national debate following a series of explosive allegations concerning purported clandestine engagements between the beleaguered opposition leader Nelson Chamisa and President Emmerson Mnangagwa. The controversy emerged from an online dispute involving political activist Jealousy Mawarire and UK-based lawyer Brighton [&#8230;]The post Leaked Video Reveals Chamisa&#8217;s Links to ZANU-PF appeared first on The Zimbabwe Mail.
+
+*Originally published by Zimbabwe Mail.*
+[Read original article](https://thezimbabwemail.com/leaked-video-reveals-chamisas-links-to-zanu-pf/)
