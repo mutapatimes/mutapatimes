@@ -29,7 +29,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=4">
     <meta name="title" content="Live Economy Data | The Mutapa Times">
 <meta name="description" content="Live Zimbabwe economic indicators including GDP, inflation, unemployment, and trade data from the World Bank.">
 <meta name="keywords" content="The Mutapa Times, Zimbabwe economy, GDP, inflation, unemployment, World Bank, economic data, Zimbabwe finance">
@@ -180,6 +180,89 @@
   </div>
   <!-- TradingView Widget END -->
 
+  <!-- GDP by sector — quarterly, ZimStat. Headline section. -->
+  <section class="gdp-section" id="gdpSection">
+    <h4 class="storyTitleCat" style="margin: 20px 0 6px; text-align: center;">Quarterly GDP by Sector</h4>
+    <p class="gdp-subtitle">
+      Zimbabwe gross value added per sector, USD
+      &middot; <span id="gdpRangeLabel">loading&hellip;</span>
+      &middot; <a href="data/gdp-zimbabwe-quarterly.csv">Download CSV</a>
+    </p>
+
+    <!-- Highlight cards -->
+    <div class="gdp-highlights" id="gdpHighlights"></div>
+
+    <!-- Filter + control bar -->
+    <div class="gdp-controls">
+      <div class="gdp-control-group">
+        <span class="gdp-control-label">Period</span>
+        <div class="gdp-pill-group" id="gdpPeriodGroup">
+          <button class="gdp-pill active" data-period="all">All time</button>
+          <button class="gdp-pill" data-period="post">Post-2024 (current)</button>
+          <button class="gdp-pill" data-period="pre">Pre-2024</button>
+          <button class="gdp-pill" data-period="last4">Last 4 quarters</button>
+        </div>
+      </div>
+
+      <div class="gdp-control-group">
+        <span class="gdp-control-label">Chart</span>
+        <select class="gdp-select" id="gdpChartType">
+          <option value="line">Line</option>
+          <option value="stacked">Stacked area</option>
+          <option value="latest">Latest quarter (bar)</option>
+        </select>
+      </div>
+
+      <div class="gdp-control-group" id="gdpSeriesGroup">
+        <span class="gdp-control-label">Series</span>
+        <select class="gdp-select" id="gdpSeries">
+          <option value="total">Total GDP only</option>
+          <option value="top">Top 6 sectors</option>
+          <option value="all">All sectors</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="gdp-chart-wrap">
+      <canvas id="gdpChart"></canvas>
+    </div>
+
+    <!-- 2024 series break disclaimer -->
+    <div class="gdp-break-callout">
+      <strong>Why the 2024 break?</strong>
+      <span id="gdpBreakNote"></span>
+    </div>
+
+    <!-- Latest-quarter sector ranking table -->
+    <div class="gdp-table-section">
+      <div class="gdp-table-header">
+        <h5 class="prop-section-title">Sector Ranking &mdash; <span id="gdpTableQuarter">latest quarter</span></h5>
+        <input type="text" id="gdpSectorSearch" class="gdp-search" placeholder="Search sectors&hellip;" autocomplete="off">
+      </div>
+      <div class="gdp-table-wrap">
+        <table class="gdp-table" id="gdpSectorTable">
+          <thead>
+            <tr>
+              <th class="gdp-th-sortable" data-sort="rank" style="width:40px;">#</th>
+              <th class="gdp-th-sortable" data-sort="name">Sector</th>
+              <th class="gdp-th-sortable" data-sort="value">Value (USD)</th>
+              <th class="gdp-th-sortable" data-sort="share">Share of GDP</th>
+              <th class="gdp-th-sortable" data-sort="yoy">YoY change</th>
+            </tr>
+          </thead>
+          <tbody id="gdpSectorTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="gdp-attribution">
+      Source: National Statistics Agency, Zimbabwe (ZimStat). Public Domain.
+    </p>
+  </section>
+
+  <hr class="dateHr">
+
   <h4 class="storyTitleCat" style="margin: 20px 0 6px; text-align: center;">Zimbabwe Economic Indicators</h4>
   <p style="text-align: center; font-size: 0.85em; color: #666; margin: 0 0 16px;">Data from the World Bank Open Data · <a href="https://www.tradingview.com/markets/world-economy/countries/zimbabwe/" target="_blank" style="color: var(--accent);">View on TradingView</a></p>
 
@@ -246,41 +329,6 @@
       <iframe src="https://data.worldbank.org/share/widget?indicators=SP.POP.TOTL&locations=ZW" width="100%" height="100%" frameBorder="0" scrolling="no" loading="lazy"></iframe>
     </div>
 
-  </div>
-
-  <hr class="dateHr">
-
-  <!-- GDP by sector — quarterly, ZimStat -->
-  <div class="gdp-section">
-    <div class="gdp-header">
-      <h4 class="storyTitleCat" style="margin: 0 0 4px;">Quarterly GDP by Sector</h4>
-      <p class="gdp-subtitle">Zimbabwe gross value added per sector, USD &mdash; <span id="gdpRangeLabel"></span></p>
-    </div>
-
-    <div class="gdp-controls">
-      <div class="gdp-control-group">
-        <label class="gdp-control-label">View</label>
-        <div class="gdp-toggle" id="gdpViewToggle">
-          <button class="gdp-toggle-btn active" data-view="total">Total GDP</button>
-          <button class="gdp-toggle-btn" data-view="top">Top sectors</button>
-          <button class="gdp-toggle-btn" data-view="all">All sectors</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="gdp-chart-wrap">
-      <canvas id="gdpChart"></canvas>
-    </div>
-
-    <div class="gdp-break-callout">
-      <strong>Note on the 2024 series break:</strong>
-      <span id="gdpBreakNote"></span>
-    </div>
-
-    <p class="gdp-attribution">
-      Source: National Statistics Agency, Zimbabwe (ZimStat).
-      Public Domain. <a href="data/gdp-zimbabwe-quarterly.csv">Download CSV</a>.
-    </p>
   </div>
 
   <hr class="dateHr">
@@ -376,7 +424,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-  <script src="js/gdp-chart.js?v=1"></script>
+  <script src="js/gdp-chart.js?v=2"></script>
 
 <script>
 if ('serviceWorker' in navigator) {
