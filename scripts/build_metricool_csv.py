@@ -65,11 +65,15 @@ SCHEDULE_CAT = {
     "Instagram": ["18:00", "19:30", "21:00", "10:00", "16:00"],  # IG less aggressive
 }
 
-# Twitter takes a different cadence: 3 daily slots stretched across every
-# day of the batch window, not 5 slots packed into the first day. Cold-start
-# X needs daily presence to seed algorithm signals, and X uniquely rewards
-# (rather than penalises) higher posting frequency.
-TWITTER_DAILY_SLOTS_CAT = ["08:00", "13:00", "19:00"]
+# Twitter takes a different cadence: 6 daily slots stretched across every
+# day of the batch window, not 5 slots packed into the first day. X uniquely
+# rewards (rather than penalises) higher posting frequency, and at 0
+# followers we need volume to seed algorithm signals across diaspora time
+# zones (Zim, UK, US East Coast). Slots cover early-morning to late-evening
+# CAT, every ~3h. With Mon batch=3 days and Thu batch=4 days, this produces
+# ~18 X article posts Mon-Wed and ~24 X article posts Thu-Sun (≈42/week
+# article-driven, more once threads multiply by 4 tweets each).
+TWITTER_DAILY_SLOTS_CAT = ["07:00", "10:00", "12:00", "15:00", "18:00", "21:00"]
 
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
@@ -731,7 +735,9 @@ def caption_for(platform, art, mutapa_url):
 
 
 # ── Twitter thread generation ─────────────────────────────────
-THREAD_THRESHOLD = 300  # description length above which we generate a thread
+THREAD_THRESHOLD = 180  # description length above which we generate a thread
+                         # (lowered from 300 so more articles thread — threads
+                         # are the highest-organic-reach format on X)
 
 
 def gemini_thread(art, mutapa_url):
