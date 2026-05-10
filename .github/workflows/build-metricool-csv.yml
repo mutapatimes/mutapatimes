@@ -2,8 +2,11 @@ name: Build Metricool CSV
 
 on:
   schedule:
-    # Daily at 06:00 UTC (08:00 CAT) — runs after fetch-news has refreshed spotlight
-    - cron: '0 6 * * *'
+    # Mon & Thu at 05:00 UTC (07:00 CAT) — early morning so you can review
+    # the queue before the first scheduled post (LinkedIn ~09:00 CAT).
+    # Mon's batch covers Mon/Tue/Wed (3 days, 15 articles).
+    # Thu's batch covers Thu/Fri/Sat/Sun (4 days, 20 articles).
+    - cron: '0 5 * * 1,4'
   workflow_dispatch:
 
 jobs:

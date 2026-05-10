@@ -48,6 +48,10 @@ CATEGORY_FILES = ["business", "technology", "entertainment", "sports", "science"
 ARTICLES_PER_DAY = 5
 PRUNE_AFTER_DAYS = 30  # how long to keep dedup entries
 
+# How many days of content this run should cover (Mon = 3, Thu = 4, manual = 1).
+# Used to size the article slate so the queue stretches to the next run.
+DAYS_BY_WEEKDAY = {0: 3, 3: 4}  # Mon, Thu
+
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
@@ -284,53 +288,107 @@ def save_queued(queued):
 
 # ── Caption generation (Gemini, with fallback) ────────────────
 _SHARED_RULES = (
-    "RULES (must follow):\n"
-    " - The clickable URL in the post MUST be the MUTAPA_URL (the Mutapa Times "
-    "landing page). DO NOT include the SOURCE_URL anywhere in the post.\n"
-    " - Always credit the original publisher in the text using the phrase "
-    "'via {SOURCE_NAME}' (or similar). Never omit credit.\n"
-    " - Do not invent facts not in the headline or description."
+    "HARD RULES (must follow):\n"
+    " - The clickable URL MUST be the MUTAPA_URL. NEVER include SOURCE_URL.\n"
+    " - Always credit the publisher inline with 'via {SOURCE_NAME}' or "
+    "similar attribution. Never omit credit.\n"
+    " - Never invent facts not in the headline/description. If the description "
+    "is empty, stick strictly to what the headline says.\n"
+    " - The post is for The Mutapa Times — a Zimbabwe news outlet for the "
+    "diaspora. Audience is informed, mostly Zimbabwean or Africa-watchers.\n"
+    " - Do NOT use clickbait phrases like 'You won't believe', 'This will "
+    "shock you', 'BREAKING:' (unless genuinely breaking), all-caps shouting.\n"
+    " - Output ONLY the post text. No commentary, no markdown code fences."
 )
 
 PROMPTS = {
     "LinkedIn": (
-        "Rewrite this Zimbabwe news headline as a LinkedIn post. "
-        "Professional tone, lead with the most newsworthy fact, no emojis, "
-        "100-180 chars of body text. Credit the source inline with 'via {SOURCE_NAME}'. "
-        "End with the MUTAPA_URL on a new line. "
-        "Add 2-3 relevant hashtags on a final new line.\n\n"
+        "Write a LinkedIn post about this Zimbabwe news story to maximise "
+        "engagement and reach professional readers (diaspora, Africa "
+        "investors, journalists, NGO/dev workers).\n\n"
+        "STRUCTURE (in order, with line breaks between):\n"
+        "  1. HOOK line (under 90 chars) — a sharp, surprising fact OR an "
+        "implication, NOT just the headline restated.\n"
+        "  2. CONTEXT (1-2 short paragraphs) — why this matters, who it "
+        "affects, the underlying tension. Use specifics from the description.\n"
+        "  3. INVITATION line — open question OR 'What this means for X:' "
+        "framing. Encourages comments.\n"
+        "  4. Attribution: 'Source: {SOURCE_NAME}' on its own line.\n"
+        "  5. The MUTAPA_URL on its own line.\n"
+        "  6. 3-5 hashtags on the final line, mixing #Zimbabwe with one "
+        "topic-specific tag (#Mining, #Lithium, #ICT, #Education, etc.).\n\n"
+        "TONE: Confident, analytical, no emojis (or at most one 🇿🇼 in hook). "
+        "Length: 350-700 chars. Don't pad — be punchy.\n\n"
         + _SHARED_RULES
     ),
     "Facebook": (
-        "Rewrite this Zimbabwe news headline as a Facebook post. "
-        "Warm, community-framed tone, plain language, 1-2 short sentences "
-        "(max 200 chars). Credit the source as 'via {SOURCE_NAME}'. "
-        "Then the MUTAPA_URL on a new line. No hashtags.\n\n"
+        "Write a Facebook Page post about this Zimbabwe news story for a "
+        "general diaspora + Zimbabwean audience.\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (one short sentence) — emotional or relatable framing, "
+        "NOT just the headline. Examples: 'Big news for Zim's mining sector.' "
+        "or 'Something's shifting in Bulawayo.'\n"
+        "  2. BODY (2-3 sentences) — explain plainly what happened and "
+        "why it matters. Conversational, like talking to a friend.\n"
+        "  3. ENGAGEMENT prompt — a clear question to invite comments. "
+        "Examples: 'What do you think?' 'Have you noticed this?' "
+        "'Tag someone who needs to see this.'\n"
+        "  4. 'via {SOURCE_NAME}' on its own line.\n"
+        "  5. The MUTAPA_URL on its own line.\n\n"
+        "TONE: Warm, plain language, conversational. NO hashtags (Facebook "
+        "doesn't reward them). Light emoji OK (1 max). Length: 200-450 chars.\n\n"
         + _SHARED_RULES
     ),
     "Threads": (
-        "Rewrite this Zimbabwe news headline as a Threads post. "
-        "Punchy, conversational, max 480 chars. Credit the source with "
-        "'via {SOURCE_NAME}' inline. End with the MUTAPA_URL on a new line. "
-        "Optionally one line of 1-2 hashtags.\n\n"
+        "Write a Threads post about this Zimbabwe news story. Threads "
+        "rewards casual, opinion-tinged voice — like a smart friend sharing "
+        "a take. Audience skews younger and more conversational.\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (under 80 chars) — your TAKE on the news, framed casually. "
+        "Examples: 'Zim just made a huge bet on lithium 🇿🇼' or "
+        "'Watching this unfold in real time…'\n"
+        "  2. CONTEXT (1-2 short lines, line breaks between) — the key facts.\n"
+        "  3. ANGLE — what's interesting/risky/surprising about it.\n"
+        "  4. 'via {SOURCE_NAME}' on its own line.\n"
+        "  5. The MUTAPA_URL on its own line.\n"
+        "  6. (Optional) 1-2 hashtags on a final line.\n\n"
+        "TONE: Slightly opinionated, conversational, has a point of view. "
+        "1-2 emojis OK. Max 480 chars. Use line breaks generously.\n\n"
         + _SHARED_RULES
     ),
     "Twitter": (
-        "Rewrite this Zimbabwe news headline as an X/Twitter post. "
-        "STRICT 280 character TOTAL limit including URL — URLs count as 23 "
-        "chars regardless of length. Sharp, newsy, no fluff. Lead with the "
-        "fact, credit the source as 'via {SOURCE_NAME}'. Append the "
-        "MUTAPA_URL on a new line. Optionally end with one hashtag like "
-        "#Zimbabwe. Do not exceed 280 chars.\n\n"
+        "Write an X/Twitter post about this Zimbabwe news story. X rewards "
+        "speed, sharpness, and a clear angle. Strict 280 char limit including "
+        "URL (URLs count as 23 chars regardless of length).\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK line — the most newsworthy fact or implication. NOT a "
+        "verbatim headline restate. Get to the point.\n"
+        "  2. (Optional) one line of context if the hook needs unpacking.\n"
+        "  3. Inline attribution: 'via {SOURCE_NAME}' (or '— {SOURCE_NAME}').\n"
+        "  4. MUTAPA_URL on its own line.\n"
+        "  5. (Optional) 1 hashtag like #Zimbabwe at the end if it fits.\n\n"
+        "TONE: Sharp, factual, slight POV welcome. No emoji unless adds info. "
+        "ABSOLUTE max 280 chars total (URL = 23). Be concise — count chars.\n\n"
         + _SHARED_RULES
     ),
     "Instagram": (
-        "Rewrite this Zimbabwe news headline as an Instagram caption. "
-        "Hook in the first line (under 100 chars). "
-        "Then a short body (1-2 sentences) crediting the source as "
-        "'via {SOURCE_NAME}'. "
-        "End with: 'Read the full story → mutapatimes.com (link in bio)' on its own line. "
-        "Then 5-8 relevant hashtags on a final line.\n\n"
+        "Write an Instagram caption about this Zimbabwe news story. IG "
+        "rewards story-style captions where the first line is a hook because "
+        "the rest is hidden behind 'more'.\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (FIRST LINE, under 100 chars) — must work standalone in "
+        "the feed preview. Surprising, emotional, or curiosity-inducing.\n"
+        "  2. STORY (2-3 short paragraphs with line breaks between) — "
+        "tell the story: what happened, who it affects, why it matters. "
+        "Use specifics. Don't summarize — narrate.\n"
+        "  3. CTA line: 'Read the full briefing → mutapatimes.com (link in bio)'.\n"
+        "  4. 'via {SOURCE_NAME}' on its own line.\n"
+        "  5. Final line: 8-12 hashtags mixing core (#Zimbabwe #ZimbabweNews "
+        "#Africa #ZimDiaspora) with topic-specific tags relevant to the story "
+        "(e.g. #Mining #Lithium #Harare #Bulawayo). Separate with spaces.\n\n"
+        "TONE: Story-driven, emotive without being saccharine. 1-3 emojis OK "
+        "in body. Length: 600-1100 chars (IG allows 2200, but ~800 is the "
+        "engagement sweet spot). NEVER include the URL inline — IG strips it.\n\n"
         + _SHARED_RULES
     ),
 }
@@ -373,30 +431,63 @@ def gemini_rewrite(prompt, headline, description, source, mutapa_url, source_url
         return None
 
 
-def fallback_caption(platform, headline, source, mutapa_url):
-    """Plain template if Gemini is unavailable. Always uses Mutapa URL +
-    credits the source by name in the body text."""
+def fallback_caption(platform, headline, description, source, mutapa_url):
+    """Used when Gemini is unavailable. Tries to be reasonably engaging
+    even without AI rewriting — uses description for context if present."""
     src = source or "the original publisher"
+    summary = (description or "").strip()
+    if len(summary) > 200:
+        summary = summary[:199].rstrip() + "…"
+
     if platform == "LinkedIn":
-        return (f"{headline}\n\nvia {src}\n\n{mutapa_url}\n\n"
-                f"#Zimbabwe #News #Africa")
+        body_lines = [headline]
+        if summary:
+            body_lines.append("")  # blank line
+            body_lines.append(summary)
+        body_lines += [
+            "",
+            "What does this mean for Zimbabwe? Share your thoughts below.",
+            "",
+            f"Source: {src}",
+            mutapa_url,
+            "",
+            "#Zimbabwe #Africa #News",
+        ]
+        return "\n".join(body_lines)
+
     if platform == "Facebook":
-        return f"{headline}\n\nvia {src}. Read more: {mutapa_url}"
+        body = headline
+        if summary:
+            body += f"\n\n{summary}"
+        body += "\n\nWhat do you think?\n"
+        body += f"\nvia {src}\n{mutapa_url}"
+        return body
+
     if platform == "Threads":
-        return f"{headline}\n\nvia {src}\n{mutapa_url}"
+        body = headline
+        if summary:
+            body += f"\n\n{summary}"
+        body += f"\n\nvia {src}\n{mutapa_url}\n\n#Zimbabwe"
+        return body
+
     if platform == "Twitter":
-        # 280 char budget; URLs count as 23 via t.co. Reserve URL (23) +
-        # newline (1) + " via {src}" (≈ 5 + len(src)) + safety margin.
+        # Strict 280-char budget with t.co URL counting as 23.
         attribution = f" via {src}"
         OVERHEAD = 23 + 2 + len(attribution) + 4
         title = headline
         if len(title) + OVERHEAD > 280:
             title = title[: 280 - OVERHEAD - 1].rstrip() + "…"
         return f"{title}{attribution}\n{mutapa_url}"
+
     if platform == "Instagram":
-        return (f"{headline}\n\nThe full story via {src}.\n\n"
-                f"Read more → mutapatimes.com (link in bio)\n\n"
-                f"#Zimbabwe #ZimbabweNews #Africa #News #DiasporaNews")
+        body = headline
+        if summary:
+            body += f"\n\n{summary}"
+        body += "\n\nRead the full briefing → mutapatimes.com (link in bio)"
+        body += f"\nvia {src}"
+        body += "\n\n#Zimbabwe #ZimbabweNews #Africa #ZimDiaspora #News #Harare #ZimbabweanDiaspora #AfricaNews"
+        return body
+
     return headline
 
 
@@ -429,7 +520,9 @@ def caption_for(platform, art, mutapa_url):
         mutapa_url,
         art["url"],
     )
-    text = rewritten or fallback_caption(platform, art["title"], art["source"], mutapa_url)
+    text = rewritten or fallback_caption(
+        platform, art["title"], art["description"], art["source"], mutapa_url
+    )
     if platform == "Twitter":
         text = _twitter_safe(text, mutapa_url, art["source"])
     return text
@@ -444,13 +537,31 @@ def slugify(s, max_len=60):
     return s or "post"
 
 
-def schedule_for(platform, slot_index, run_date_utc):
-    """Compute UTC datetime for a post given platform + slot."""
-    cat_time = SCHEDULE_CAT[platform][slot_index % len(SCHEDULE_CAT[platform])]
+def schedule_for(platform, article_idx, run_date_utc):
+    """Compute UTC datetime for a post.
+
+    Articles are spread across multiple days. With 5 articles/day:
+    - idx 0-4   → day 0 (today)
+    - idx 5-9   → day 1 (tomorrow)
+    - idx 10-14 → day 2
+    Slots within a day come from each platform's SCHEDULE_CAT array.
+    """
+    day_offset = article_idx // ARTICLES_PER_DAY
+    slot_in_day = article_idx % ARTICLES_PER_DAY
+    cat_time = SCHEDULE_CAT[platform][slot_in_day]
     h, m = map(int, cat_time.split(":"))
-    cat_dt = datetime(run_date_utc.year, run_date_utc.month, run_date_utc.day,
+    target_date = run_date_utc + timedelta(days=day_offset)
+    cat_dt = datetime(target_date.year, target_date.month, target_date.day,
                       h, m, tzinfo=timezone(CAT_OFFSET))
     return cat_dt.astimezone(timezone.utc)
+
+
+def articles_for_this_run():
+    """Pick the slate size based on what day the run fires.
+    Mon: covers Mon-Wed (3 days). Thu: covers Thu-Sun (4 days)."""
+    weekday = datetime.now(timezone.utc).weekday()
+    days = DAYS_BY_WEEKDAY.get(weekday, 1)
+    return days * ARTICLES_PER_DAY
 
 
 # ── Metricool row builder ─────────────────────────────────────
@@ -520,8 +631,9 @@ def main():
             csv.writer(f, quoting=csv.QUOTE_ALL).writerow(METRICOOL_COLUMNS)
         return
 
-    selected = new_articles[:ARTICLES_PER_DAY]
-    print(f"  Selected top {len(selected)} for this run")
+    slate_size = articles_for_this_run()
+    selected = new_articles[:slate_size]
+    print(f"  Selected top {len(selected)} articles ({slate_size}-article slate for this run)")
 
     os.makedirs(CARDS_DIR, exist_ok=True)
     today_utc = datetime.now(timezone.utc).date()
