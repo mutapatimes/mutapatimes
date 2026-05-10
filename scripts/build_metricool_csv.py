@@ -2,9 +2,13 @@
 """
 Build a daily Metricool import CSV from spotlight + category news JSONs.
 
-Picks the top 5 unqueued articles, generates platform-specific captions
-(LinkedIn, Facebook, Threads, Instagram), generates a 1080x1080 branded
-headline card per article, and writes data/metricool-queue.csv.
+For each top unqueued article, generates platform-specific captions
+(LinkedIn, Facebook, Threads, Twitter, Instagram, TikTok), renders portrait
+1080x1350 branded cards, and writes data/metricool-queue.csv.
+
+Instagram and TikTok get 4-slide carousels (hook / story / why-it-matters /
+read-the-full-story CTA). Twitter expands long-description articles into
+4-tweet threads. All other platforms get the single headline card.
 
 The user reviews + imports the CSV via Metricool's Planner > Import CSV.
 Headline cards are committed to img/cards/ and served by GitHub Pages.
@@ -64,6 +68,7 @@ SCHEDULE_CAT = {
     "Threads":   ["12:00", "14:00", "16:00", "18:00", "20:00"],
     "Twitter":   ["08:00", "11:00", "13:00", "17:00", "20:00"],
     "Instagram": ["18:00", "19:30", "21:00", "10:00", "16:00"],  # IG less aggressive
+    "TikTok":    ["11:00", "13:30", "17:00", "19:30", "21:30"],  # prime TT slots
 }
 
 # Twitter takes a different cadence: 6 daily slots stretched across every
@@ -137,6 +142,7 @@ PLATFORM_TO_FLAG = {
     "Threads": "Threads",
     "Twitter": "Twitter/X",
     "Instagram": "Instagram",
+    "TikTok": "TikTok",
 }
 
 # All boolean platform columns — used to default-zero each row
@@ -152,7 +158,12 @@ SUBSCRIBE_URL = "https://www.mutapatimes.com/subscribe.html"
 EVENING_START_CAT = os.environ.get("METRICOOL_EVENING_START", "")
 EVENING_ARTICLES = int(os.environ.get("METRICOOL_EVENING_ARTICLES", "2"))
 EVENING_INTERVAL_MIN = int(os.environ.get("METRICOOL_EVENING_INTERVAL", "30"))
-PLATFORMS_ORDERED = ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram")
+PLATFORMS_ORDERED = ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram", "TikTok")
+# Platforms that consume the multi-slide carousel rendering. Other platforms
+# still get a single image (the article image, or the first card slide).
+CAROUSEL_PLATFORMS = ("Instagram", "TikTok")
+# How many slides in the carousel per article (hook + context + takeaway + cta).
+CAROUSEL_SLIDE_COUNT = 4
 
 # ── Newsletter-driver posts ───────────────────────────────────
 # 4 distinct value propositions per run × 5 platforms = 20 sub posts/run.
@@ -341,6 +352,204 @@ def render_card(headline, source, output_path, color_idx=0):
     img.save(output_path, "PNG", optimize=True)
 
 
+# ── Carousel slide renderer (IG + TikTok multi-slide posts) ───
+def render_text_slide(eyebrow, body, footer, output_path, color_idx=0,
+                       body_size=58, body_line_h=72):
+    """Generic narrative slide: small eyebrow label at top, wrapped body in
+    the middle, brand footer at bottom. Used for slides 2/3 of the carousel
+    (context + takeaway). Layout matches render_card's chrome."""
+    bg = card_bg(color_idx)
+    img = Image.new("RGB", (CARD_W, CARD_H), bg)
+    draw = ImageDraw.Draw(img)
+
+    masthead_font = load_font("serif_bold", 36)
+    eyebrow_font = load_font("sans_bold", 26)
+    body_font = load_font("serif_bold", body_size)
+    footer_font = load_font("sans", 26)
+
+    draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
+    draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 124), eyebrow.upper(), font=eyebrow_font, fill=ACCENT)
+
+    # Body — wrapped serif, vertically centred in the middle band
+    available_width = CARD_W - 120
+    lines = wrap_text(body, body_font, available_width, draw)
+    if len(lines) > 12:
+        lines = lines[:11] + [lines[11] + "…"]
+    block_h = len(lines) * body_line_h
+    available_h = CARD_H - 380
+    y = 220 + (available_h - block_h) // 2
+    for ln in lines:
+        draw.text((60, y), ln, font=body_font, fill=CARD_FG)
+        y += body_line_h
+
+    footer_y = CARD_H - 110
+    draw.text((60, footer_y), footer, font=footer_font, fill=CARD_FG_MUTED)
+    draw.text((60, footer_y + 40), "mutapatimes.com", font=footer_font, fill=ACCENT)
+
+    img.save(output_path, "PNG", optimize=True)
+
+
+def render_cta_slide(headline, output_path, color_idx=0):
+    """Final carousel slide — big CTA to drive readers to mutapatimes.com
+    + follow @mutapatimes prompt. Headline shown small at the bottom so
+    the viewer remembers what story they're on."""
+    bg = card_bg(color_idx)
+    img = Image.new("RGB", (CARD_W, CARD_H), bg)
+    draw = ImageDraw.Draw(img)
+
+    masthead_font = load_font("serif_bold", 36)
+    big_font = load_font("serif_bold", 120)
+    # URL gets a smaller font — mutapatimes.com is 15 chars + arrow; at
+    # 120pt it overflows past the 1080px canvas. 64pt fits cleanly.
+    url_font = load_font("serif_bold", 64)
+    sub_font = load_font("sans", 32)
+    cta_font = load_font("sans_bold", 26)
+    small_font = load_font("sans", 24)
+
+    draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
+    draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 124), "READ THE FULL BRIEFING", font=cta_font, fill=ACCENT)
+
+    # Big CTA stack — first two lines big, URL line smaller so it fits
+    big_y = (CARD_H // 2) - 200
+    draw.text((60, big_y), "READ THE", font=big_font, fill=CARD_FG)
+    draw.text((60, big_y + 140), "FULL STORY", font=big_font, fill=CARD_FG)
+    draw.text((60, big_y + 300), "→ mutapatimes.com", font=url_font, fill=ACCENT)
+
+    # Follow CTA
+    follow_y = big_y + 400
+    draw.text((60, follow_y), "Follow @mutapatimes for the next story.",
+              font=sub_font, fill=CARD_FG_MUTED)
+
+    # Headline reminder at the bottom
+    short = headline if len(headline) <= 120 else headline[:117].rstrip() + "…"
+    short_lines = wrap_text(short, small_font, CARD_W - 120, draw)[:3]
+    sy = CARD_H - 30 - len(short_lines) * 30
+    for ln in short_lines:
+        draw.text((60, sy), ln, font=small_font, fill=CARD_FG_MUTED)
+        sy += 30
+
+    img.save(output_path, "PNG", optimize=True)
+
+
+def _shorten_to_sentences(text, max_chars=240):
+    """Trim text to whole sentences while staying under max_chars."""
+    text = re.sub(r"\s+", " ", (text or "")).strip()
+    if not text:
+        return ""
+    if len(text) <= max_chars:
+        return text
+    # Break on sentence boundary
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    out = ""
+    for p in parts:
+        if len(out) + len(p) + 1 > max_chars:
+            break
+        out = (out + " " + p).strip()
+    if not out:
+        out = text[: max_chars - 1].rstrip() + "…"
+    return out
+
+
+def gemini_carousel_text(art):
+    """Return {context, takeaway} for the carousel slides 2 and 3.
+    Falls back to using the article description on failure."""
+    desc = (art.get("description") or "").strip()
+    headline = (art.get("title") or "").strip()
+    fallback_context = _shorten_to_sentences(desc, 240) or headline
+    fallback_takeaway = "This is why we cover Zimbabwe outside-in — for the diaspora that still cares what happens at home."
+
+    if not GEMINI_API_KEY:
+        return {"context": fallback_context, "takeaway": fallback_takeaway}
+
+    prompt = (
+        "You are writing two short carousel slides about a Zimbabwe news "
+        "story for The Mutapa Times (Instagram + TikTok).\n\n"
+        f"HEADLINE: {headline}\n"
+        f"DESCRIPTION: {desc or '(none)'}\n\n"
+        "Return ONLY a JSON object with two keys:\n"
+        "  context — 1-3 short sentences (max 220 chars total) plainly "
+        "summarising what happened. Specific, no fluff.\n"
+        "  takeaway — 1 sentence (max 160 chars) on WHY IT MATTERS — the "
+        "implication, the angle, what the diaspora reader should care about. "
+        "Sharp, slight POV welcome. No hashtags, no URL, no emoji.\n\n"
+        "STRICT: no markdown fences, no commentary. JSON only."
+    )
+    body = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 400,
+                             "responseMimeType": "application/json"},
+    }
+    try:
+        req = urllib.request.Request(
+            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.load(resp)
+        text = (data.get("candidates") or [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text).strip()
+        payload = json.loads(text)
+        return {
+            "context": _shorten_to_sentences(payload.get("context", "") or fallback_context, 240),
+            "takeaway": _shorten_to_sentences(payload.get("takeaway", "") or fallback_takeaway, 200),
+        }
+    except (urllib.error.URLError, urllib.error.HTTPError,
+            json.JSONDecodeError, KeyError):
+        return {"context": fallback_context, "takeaway": fallback_takeaway}
+
+
+def build_carousel_slides(art, slug, color_idx=0):
+    """Render the 4-slide carousel for one article. Returns a list of
+    (public_url, alt_text) tuples in slide order, or empty list on failure."""
+    paths = [os.path.join(CARDS_DIR, f"{slug}-{i + 1}.png") for i in range(CAROUSEL_SLIDE_COUNT)]
+    headline = art.get("title", "")
+    source = art.get("source", "the source")
+
+    # Slide 1 — reuse the existing headline card design
+    try:
+        render_card(headline, source, paths[0], color_idx=color_idx)
+    except Exception as e:
+        print(f"    Carousel slide 1 FAILED: {e}")
+        return []
+
+    # Slides 2 + 3 — context + takeaway (Gemini-distilled with fallback)
+    text = gemini_carousel_text(art)
+    try:
+        render_text_slide("THE STORY", text["context"], f"VIA {source.upper()}",
+                          paths[1], color_idx=(color_idx + 1) % len(CARD_BACKGROUNDS))
+    except Exception as e:
+        print(f"    Carousel slide 2 FAILED: {e}")
+        return []
+    try:
+        render_text_slide("WHY IT MATTERS", text["takeaway"], "THE MUTAPA TIMES — ZIMBABWE OUTSIDE-IN",
+                          paths[2], color_idx=(color_idx + 2) % len(CARD_BACKGROUNDS))
+    except Exception as e:
+        print(f"    Carousel slide 3 FAILED: {e}")
+        return []
+
+    # Slide 4 — CTA
+    try:
+        render_cta_slide(headline, paths[3], color_idx=(color_idx + 3) % len(CARD_BACKGROUNDS))
+    except Exception as e:
+        print(f"    Carousel slide 4 FAILED: {e}")
+        return []
+
+    alts = [
+        f"{headline} — headline card",
+        f"The story: {text['context'][:160]}",
+        f"Why it matters: {text['takeaway'][:160]}",
+        f"Read the full briefing at mutapatimes.com — {headline[:100]}",
+    ]
+    return [
+        (f"{CARDS_PUBLIC_BASE}/{os.path.basename(p)}", a)
+        for p, a in zip(paths, alts)
+    ]
+
+
 # ── Data loading ──────────────────────────────────────────────
 def load_articles():
     """Load articles from spotlight + categories, deduped by URL."""
@@ -506,6 +715,25 @@ PROMPTS = {
         "TONE: Story-driven, emotive without being saccharine. 1-3 emojis OK "
         "in body. Length: 600-1100 chars (IG allows 2200, but ~800 is the "
         "engagement sweet spot). NEVER include the URL inline — IG strips it.\n\n"
+        + _SHARED_RULES
+    ),
+    "TikTok": (
+        "Write a TikTok photo-carousel caption about this Zimbabwe news "
+        "story. TikTok rewards short hooks + heavy, specific hashtags. "
+        "Audience skews younger; tone is sharp and a little informal.\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (FIRST LINE, under 80 chars) — must hit fast. Punchy "
+        "fact or framing, not a verbatim headline.\n"
+        "  2. ONE short context line (under 120 chars).\n"
+        "  3. CTA line: 'Full story → mutapatimes.com (link in bio)'.\n"
+        "  4. 'via {SOURCE_NAME}' on its own line.\n"
+        "  5. Final line: 10-15 hashtags. Mix core "
+        "(#Zimbabwe #ZimbabweNews #Africa #ZimTok #ZimTikTok #FYP "
+        "#ZimDiaspora) with topic-specific tags chosen from the headline. "
+        "Separate with spaces.\n\n"
+        "TONE: Sharp, current, slight POV welcome. 1-2 emojis OK. Length: "
+        "200-450 chars total. NEVER include the URL inline — TikTok strips "
+        "links in captions.\n\n"
         + _SHARED_RULES
     ),
 }
@@ -704,6 +932,26 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
         body += "\n\nRead the full briefing → mutapatimes.com (link in bio)"
         body += f"\nvia {src}"
         body += f"\n\n{ig_tags}"
+        return body
+
+    if platform == "TikTok":
+        # TikTok loves dense hashtag stacks for discovery — 12 tags
+        topic = topic_hashtags(headline, max_tags=4).split()
+        discovery = ["#ZimbabweNews", "#ZimTok", "#ZimTikTok", "#FYP",
+                     "#ZimDiaspora", "#Africa", "#AfricaNews", "#News"]
+        seen = set(t.lower() for t in topic)
+        tt_tags_list = list(topic)
+        for t in discovery:
+            if t.lower() not in seen:
+                tt_tags_list.append(t)
+                seen.add(t.lower())
+        tt_tags = " ".join(tt_tags_list)
+        body = headline
+        if summary:
+            body += f"\n\n{summary[:120]}"
+        body += "\n\nFull story → mutapatimes.com (link in bio)"
+        body += f"\nvia {src}"
+        body += f"\n\n{tt_tags}"
         return body
 
     return headline
@@ -1596,9 +1844,39 @@ def newsletter_schedule_for(angle_idx, run_date_utc, batch_days):
 
 
 # ── Metricool row builder ─────────────────────────────────────
+def _normalize_images(image_url, article):
+    """Accept either a single URL string or a list of (url, alt) tuples.
+    Returns a list of (url, alt) tuples, capped at 10 (Metricool max)."""
+    default_alt = (article.get("title") or "").strip()
+    if len(default_alt) > 200:
+        default_alt = default_alt[:199].rstrip() + "…"
+
+    if not image_url:
+        return []
+    if isinstance(image_url, str):
+        return [(image_url, default_alt)]
+    out = []
+    for item in image_url:
+        if isinstance(item, (tuple, list)) and len(item) >= 1:
+            url = item[0]
+            alt = item[1] if len(item) > 1 and item[1] else default_alt
+        else:
+            url = item
+            alt = default_alt
+        if not url:
+            continue
+        if len(alt) > 200:
+            alt = alt[:199].rstrip() + "…"
+        out.append((url, alt))
+    return out[:10]
+
+
 def build_metricool_row(platform, caption, article, date_str, time_str, image_url):
     """Build one CSV row in Metricool's import format. All columns present;
-    most stay empty since we're publishing a basic image-with-caption post."""
+    most stay empty since we're publishing a basic image-with-caption post.
+
+    `image_url` accepts a string (single image) or a list of (url, alt)
+    tuples — used to build Instagram + TikTok carousels."""
     row = {col: "" for col in METRICOOL_COLUMNS}
 
     # Core fields
@@ -1612,20 +1890,18 @@ def build_metricool_row(platform, caption, article, date_str, time_str, image_ur
         row[flag] = "false"
     row[PLATFORM_TO_FLAG[platform]] = "true"
 
-    # Image (single image per post — Picture Url 1 + alt text)
-    if image_url:
-        row["Picture Url 1"] = image_url
-        # Alt text: headline truncated to 200 chars (Metricool/IG limit-friendly)
-        alt = (article.get("title") or "").strip()
-        if len(alt) > 200:
-            alt = alt[:199].rstrip() + "…"
-        row["Alt text picture 1"] = alt
+    # Images — Metricool supports up to 10 Picture URL columns
+    images = _normalize_images(image_url, article)
+    for i, (url, alt) in enumerate(images, start=1):
+        row[f"Picture Url {i}"] = url
+        row[f"Alt text picture {i}"] = alt
 
     # Per-platform Post Type defaults (Metricool wants these explicit)
     if platform == "Facebook":
         row["Facebook Post Type"] = "POST"
     elif platform == "Instagram":
-        row["Instagram Post Type"] = "POST"
+        # Metricool routes 2+ images to CAROUSEL automatically, but be explicit.
+        row["Instagram Post Type"] = "CAROUSEL" if len(images) >= 2 else "POST"
     elif platform == "Threads":
         row["Threads Post Type"] = "POST"
     elif platform == "LinkedIn":
@@ -1634,6 +1910,21 @@ def build_metricool_row(platform, caption, article, date_str, time_str, image_ur
         row["LinkedIn Show link preview"] = "true"
     elif platform == "Twitter":
         row["Twitter/X Type"] = "POST"
+    elif platform == "TikTok":
+        # TikTok photo-carousel post — needs ≥2 images. Cover = slide 1.
+        tt_title = (article.get("title") or "").strip()
+        if len(tt_title) > 90:  # TikTok title limit ~90 chars
+            tt_title = tt_title[:89].rstrip() + "…"
+        row["TikTok Title"] = tt_title
+        row["TikTok Post Privacy"] = "PUBLIC_TO_EVERYONE"
+        row["TikTok Photo Cover Index"] = "0"
+        row["TikTok disable comments"] = "false"
+        row["TikTok disable duet"] = "false"
+        row["TikTok disable stitch"] = "false"
+        row["TikTok Branded Content"] = "false"
+        row["TikTok Your Brand"] = "false"
+        row["TikTok Auto Add Music"] = "true"
+        row["TikTok Ai generated content"] = "false"
 
     row["Brand name"] = BRAND_NAME
     return row
@@ -1692,7 +1983,7 @@ def main():
         card_path = os.path.join(CARDS_DIR, f"{slug}.png")
         card_url = f"{CARDS_PUBLIC_BASE}/{slug}.png"
 
-        # Render the headline card (used for IG; available for others if you want)
+        # Render the headline card (used for non-carousel platforms)
         try:
             render_card(art["title"], art["source"], card_path, color_idx=idx)
             print(f"    Card: {card_path}")
@@ -1700,10 +1991,27 @@ def main():
             print(f"    Card FAILED: {e}")
             card_url = ""
 
+        # Render the 4-slide carousel for IG + TikTok. If it fails, the
+        # platforms fall back to the single headline card so they still post.
+        try:
+            carousel = build_carousel_slides(art, slug, color_idx=idx)
+            if carousel:
+                print(f"    Carousel: {len(carousel)} slides")
+        except Exception as e:
+            print(f"    Carousel FAILED: {e}")
+            carousel = []
+
         # One row per platform (Twitter may emit multiple if it's a thread)
-        for platform in ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram"):
+        for platform in PLATFORMS_ORDERED:
             # Skip Twitter once we exceed the daily-cadence slot cap
             if platform == "Twitter" and idx >= twitter_cap:
+                continue
+
+            # TikTok needs ≥2 photos to post a carousel. If the carousel
+            # build failed, skip TikTok entirely for this article rather
+            # than emit an invalid single-photo TikTok row.
+            if platform == "TikTok" and len(carousel) < 2:
+                print(f"    TikTok skipped (no carousel slides)")
                 continue
 
             sched_utc = schedule_for(platform, idx,
@@ -1712,9 +2020,11 @@ def main():
             if sched_utc <= datetime.now(timezone.utc):
                 sched_utc += timedelta(days=1)
 
-            # IG must use the headline card; others use the article image (or card if missing)
-            if platform == "Instagram":
-                media = card_url
+            # IG + TikTok use the carousel; others use article image (or card)
+            if platform in CAROUSEL_PLATFORMS and carousel:
+                media = carousel  # list of (url, alt) tuples
+            elif platform == "Instagram":
+                media = card_url  # carousel failed — fall back to single card
             else:
                 media = art["image"] or card_url
 
@@ -1782,6 +2092,8 @@ def main():
     weekday = datetime.now(timezone.utc).weekday()
     batch_days = DAYS_BY_WEEKDAY.get(weekday, 1)
 
+    # Newsletter promos stay single-image (one promo card per angle).
+    # TikTok requires ≥2 photos for a carousel, so skip it here.
     for platform in ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram"):
         for angle_idx, angle in enumerate(NEWSLETTER_ANGLES):
             print(f"    {platform} · {angle['key']}…", end=" ", flush=True)
