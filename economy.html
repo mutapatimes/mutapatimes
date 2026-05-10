@@ -29,7 +29,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=3">
     <meta name="title" content="Live Economy Data | The Mutapa Times">
 <meta name="description" content="Live Zimbabwe economic indicators including GDP, inflation, unemployment, and trade data from the World Bank.">
 <meta name="keywords" content="The Mutapa Times, Zimbabwe economy, GDP, inflation, unemployment, World Bank, economic data, Zimbabwe finance">
@@ -250,6 +250,41 @@
 
   <hr class="dateHr">
 
+  <!-- GDP by sector — quarterly, ZimStat -->
+  <div class="gdp-section">
+    <div class="gdp-header">
+      <h4 class="storyTitleCat" style="margin: 0 0 4px;">Quarterly GDP by Sector</h4>
+      <p class="gdp-subtitle">Zimbabwe gross value added per sector, USD &mdash; <span id="gdpRangeLabel"></span></p>
+    </div>
+
+    <div class="gdp-controls">
+      <div class="gdp-control-group">
+        <label class="gdp-control-label">View</label>
+        <div class="gdp-toggle" id="gdpViewToggle">
+          <button class="gdp-toggle-btn active" data-view="total">Total GDP</button>
+          <button class="gdp-toggle-btn" data-view="top">Top sectors</button>
+          <button class="gdp-toggle-btn" data-view="all">All sectors</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gdp-chart-wrap">
+      <canvas id="gdpChart"></canvas>
+    </div>
+
+    <div class="gdp-break-callout">
+      <strong>Note on the 2024 series break:</strong>
+      <span id="gdpBreakNote"></span>
+    </div>
+
+    <p class="gdp-attribution">
+      Source: National Statistics Agency, Zimbabwe (ZimStat).
+      Public Domain. <a href="data/gdp-zimbabwe-quarterly.csv">Download CSV</a>.
+    </p>
+  </div>
+
+  <hr class="dateHr">
+
 <!-- Subscribe banner -->
 <div class="footer-subscribe">
   <div class="footer-subscribe-inner">
@@ -340,6 +375,8 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="js/gdp-chart.js?v=1"></script>
 
 <script>
 if ('serviceWorker' in navigator) {
