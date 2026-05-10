@@ -185,10 +185,24 @@ PROMO_CARDS_DIR = "img/cards"
 PROMO_CARD_BASE = "https://www.mutapatimes.com/img/cards"
 
 # ── Headline card rendering ───────────────────────────────────
-CARD_SIZE = 1080
-CARD_BG = (13, 13, 13)
-CARD_FG = (245, 245, 240)
-ACCENT = (192, 57, 43)
+CARD_W = 1080
+CARD_H = 1350  # portrait 4:5 — Instagram-optimal
+CARD_FG = (26, 26, 26)         # ink — dark text on light bg
+CARD_FG_MUTED = (95, 92, 84)   # secondary text
+ACCENT = (192, 57, 43)         # brand red
+
+# Brand-appropriate faded palette — rotated per card so the feed looks varied
+# but stays consistent. Each tone is muted/dusty, paper-like.
+CARD_BACKGROUNDS = [
+    (242, 218, 213),  # faded red — warm dusty rose
+    (216, 230, 213),  # faded green — sage
+    (245, 232, 200),  # faded yellow — soft butter
+    (236, 226, 207),  # faded beige — warm cream
+]
+
+
+def card_bg(index):
+    return CARD_BACKGROUNDS[index % len(CARD_BACKGROUNDS)]
 
 # Font discovery — checks bundled fonts/ first, then OS-specific locations.
 # Each role lists candidates from highest to lowest preference.
@@ -246,47 +260,47 @@ def wrap_text(text, font, max_width, draw):
     return lines
 
 
-def render_card(headline, source, output_path):
-    """Generate a 1080x1080 branded headline card."""
-    img = Image.new("RGB", (CARD_SIZE, CARD_SIZE), CARD_BG)
+def render_card(headline, source, output_path, color_idx=0):
+    """Generate a 1080x1350 portrait headline card with rotating bg color."""
+    bg = card_bg(color_idx)
+    img = Image.new("RGB", (CARD_W, CARD_H), bg)
     draw = ImageDraw.Draw(img)
 
-    # Top brand bar
-    masthead_font = load_font("serif_bold", 38)
-    headline_font = load_font("serif_bold", 64)
-    source_font = load_font("sans", 24)
-    label_font = load_font("sans_bold", 20)
+    masthead_font = load_font("serif_bold", 42)
+    headline_font = load_font("serif_bold", 78)
+    source_font = load_font("sans", 28)
+    label_font = load_font("sans_bold", 22)
 
     # Accent bar top-left
-    draw.rectangle([(0, 0), (140, 8)], fill=ACCENT)
+    draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
 
     # Masthead
-    draw.text((60, 60), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((60, 110), "Zimbabwe outside-in", font=source_font, fill=(160, 160, 155))
+    draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 124), "Zimbabwe outside-in", font=source_font, fill=CARD_FG_MUTED)
 
-    # Headline (wrapped)
-    available_width = CARD_SIZE - 120  # 60px margin both sides
+    # Headline (wrapped, vertically centered in the middle band)
+    available_width = CARD_W - 120
     lines = wrap_text(headline, headline_font, available_width, draw)
-    # Cap to 6 lines, ellipsize last if too long
-    if len(lines) > 6:
-        lines = lines[:5] + [lines[5] + "…"]
+    if len(lines) > 7:
+        lines = lines[:6] + [lines[6] + "…"]
 
-    # Vertical center the headline block
-    line_height = 78
+    line_height = 96
     block_h = len(lines) * line_height
-    y = (CARD_SIZE - block_h) // 2 - 30
+    # Center between header (~210px) and footer (~150px from bottom)
+    available_h = CARD_H - 360
+    y = 230 + (available_h - block_h) // 2
     for ln in lines:
         draw.text((60, y), ln, font=headline_font, fill=CARD_FG)
         y += line_height
 
     # Footer source attribution + read more cue
-    footer_y = CARD_SIZE - 110
-    draw.text((60, footer_y), "VIA", font=label_font, fill=(120, 120, 115))
-    draw.text((60, footer_y + 26), source.upper(), font=source_font, fill=CARD_FG)
+    footer_y = CARD_H - 140
+    draw.text((60, footer_y), "VIA", font=label_font, fill=CARD_FG_MUTED)
+    draw.text((60, footer_y + 32), source.upper(), font=source_font, fill=CARD_FG)
     cue = "READ MORE → mutapatimes.com"
     bbox = draw.textbbox((0, 0), cue, font=source_font)
     cue_w = bbox[2] - bbox[0]
-    draw.text((CARD_SIZE - 60 - cue_w, footer_y + 26), cue,
+    draw.text((CARD_W - 60 - cue_w, footer_y + 32), cue,
               font=source_font, fill=ACCENT)
 
     img.save(output_path, "PNG", optimize=True)
@@ -354,6 +368,12 @@ _SHARED_RULES = (
     "similar attribution. Never omit credit.\n"
     " - Never invent facts not in the headline/description. If the description "
     "is empty, stick strictly to what the headline says.\n"
+    " - HASHTAGS must be DERIVED FROM THE SPECIFIC HEADLINE TOPIC, not just "
+    "generic. Examples: a lithium-export story → #Lithium #Mining #Zimbabwe; "
+    "a cricket match story → #Cricket #ZimCricket #Zimbabwe; a Mnangagwa "
+    "policy story → #Mnangagwa #ZanuPF #Zimbabwe; a Harare infrastructure "
+    "story → #Harare #Infrastructure #Zimbabwe. ALWAYS include #Zimbabwe as "
+    "the anchor tag, plus 2-3 specific topic tags chosen from the headline.\n"
     " - The post is for The Mutapa Times — a Zimbabwe news outlet for the "
     "diaspora. Audience is informed, mostly Zimbabwean or Africa-watchers.\n"
     " - Do NOT use clickbait phrases like 'You won't believe', 'This will "
@@ -426,7 +446,9 @@ PROMPTS = {
         "  2. (Optional) one line of context if the hook needs unpacking.\n"
         "  3. Inline attribution: 'via {SOURCE_NAME}' (or '— {SOURCE_NAME}').\n"
         "  4. MUTAPA_URL on its own line.\n"
-        "  5. (Optional) 1 hashtag like #Zimbabwe at the end if it fits.\n\n"
+        "  5. MANDATORY: 2-3 hashtags on the LAST line. Must include "
+        "#Zimbabwe plus 1-2 headline-specific topic tags. Examples: "
+        "#Zimbabwe #Lithium #Mining for a mining story.\n\n"
         "TONE: Sharp, factual, slight POV welcome. No emoji unless adds info. "
         "ABSOLUTE max 280 chars total (URL = 23). Be concise — count chars.\n\n"
         + _SHARED_RULES
@@ -491,6 +513,91 @@ def gemini_rewrite(prompt, headline, description, source, mutapa_url, source_url
         return None
 
 
+# ── Headline → topic hashtags (used by fallback templates) ────
+# Keyword-to-tag map. First word match wins (sorted longest-first below).
+TOPIC_HASHTAG_MAP = {
+    "lithium": "#Lithium",
+    "mining": "#Mining",
+    "minerals": "#Mining",
+    "gold": "#Gold",
+    "diamond": "#Diamonds",
+    "platinum": "#Mining",
+    "tobacco": "#Tobacco",
+    "cricket": "#Cricket",
+    "rugby": "#Rugby",
+    "afcon": "#AFCON",
+    "football": "#Football",
+    "soccer": "#Football",
+    "warriors": "#Warriors",
+    "zifa": "#ZIFA",
+    "election": "#ZimbabweElections",
+    "mnangagwa": "#Mnangagwa",
+    "zanu-pf": "#ZanuPF",
+    "zanu pf": "#ZanuPF",
+    "ccc": "#CCC",
+    "chamisa": "#Chamisa",
+    "parliament": "#ZimParliament",
+    "harare": "#Harare",
+    "bulawayo": "#Bulawayo",
+    "mutare": "#Mutare",
+    "victoria falls": "#VicFalls",
+    "zig": "#ZiG",
+    "currency": "#ZiG",
+    "inflation": "#Economy",
+    "rbz": "#RBZ",
+    "reserve bank": "#RBZ",
+    "ecocash": "#FinTech",
+    "telecel": "#Telecoms",
+    "econet": "#Telecoms",
+    "diaspora": "#Diaspora",
+    "tourism": "#Tourism",
+    "music": "#ZimMusic",
+    "sungura": "#Sungura",
+    "education": "#Education",
+    "health": "#Health",
+    "hospital": "#Health",
+    "drought": "#Climate",
+    "climate": "#Climate",
+    "flood": "#Climate",
+    "trade": "#Trade",
+    "exports": "#Trade",
+    "imports": "#Trade",
+    "ai ": "#AI",
+    "tech": "#Tech",
+    "ict": "#ICT",
+    "court": "#Justice",
+    "police": "#Crime",
+    "arrest": "#Crime",
+    "wildlife": "#Wildlife",
+    "rhino": "#Wildlife",
+    "elephant": "#Wildlife",
+    "lion": "#Wildlife",
+}
+
+
+def topic_hashtags(headline, max_tags=3):
+    """Pick #Zimbabwe + up to (max_tags-1) topic-specific tags from the
+    headline. Falls back to #Africa #News if nothing matches."""
+    h = headline.lower()
+    found = ["#Zimbabwe"]
+    # Sort keys by length desc so multi-word keys win over substrings
+    for keyword in sorted(TOPIC_HASHTAG_MAP.keys(), key=len, reverse=True):
+        if len(found) >= max_tags:
+            break
+        if keyword in h:
+            tag = TOPIC_HASHTAG_MAP[keyword]
+            if tag not in found:
+                found.append(tag)
+    while len(found) < max_tags:
+        for fallback in ("#Africa", "#News", "#Diaspora"):
+            if fallback not in found:
+                found.append(fallback)
+                break
+        else:
+            break
+    return " ".join(found)
+
+
 def fallback_caption(platform, headline, description, source, mutapa_url):
     """Used when Gemini is unavailable. Tries to be reasonably engaging
     even without AI rewriting — uses description for context if present."""
@@ -499,10 +606,13 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
     if len(summary) > 200:
         summary = summary[:199].rstrip() + "…"
 
+    # Headline-derived hashtags (3 tags for short posts, 4 for X)
+    short_tags = topic_hashtags(headline, max_tags=3)
+
     if platform == "LinkedIn":
         body_lines = [headline]
         if summary:
-            body_lines.append("")  # blank line
+            body_lines.append("")
             body_lines.append(summary)
         body_lines += [
             "",
@@ -511,7 +621,7 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
             f"Source: {src}",
             mutapa_url,
             "",
-            "#Zimbabwe #Africa #News",
+            short_tags,
         ]
         return "\n".join(body_lines)
 
@@ -527,25 +637,38 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
         body = headline
         if summary:
             body += f"\n\n{summary}"
-        body += f"\n\nvia {src}\n{mutapa_url}\n\n#Zimbabwe"
+        body += f"\n\nvia {src}\n{mutapa_url}\n\n{short_tags}"
         return body
 
     if platform == "Twitter":
-        # Strict 280-char budget with t.co URL counting as 23.
+        # Strict 280-char budget with t.co URL counting as 23. We budget the
+        # URL (23) + " via {src}" + headline + 2 newlines + hashtag line.
+        tags = short_tags  # e.g. "#Zimbabwe #Lithium #Mining"
         attribution = f" via {src}"
-        OVERHEAD = 23 + 2 + len(attribution) + 4
+        OVERHEAD = 23 + 4 + len(attribution) + len(tags) + 4
         title = headline
         if len(title) + OVERHEAD > 280:
             title = title[: 280 - OVERHEAD - 1].rstrip() + "…"
-        return f"{title}{attribution}\n{mutapa_url}"
+        return f"{title}{attribution}\n{mutapa_url}\n\n{tags}"
 
     if platform == "Instagram":
+        # IG gets a richer hashtag set — 8-10 tags for discovery, deduped
+        topic = topic_hashtags(headline, max_tags=4).split()
+        discovery = ["#ZimbabweNews", "#Africa", "#ZimDiaspora",
+                     "#ZimbabweanDiaspora", "#AfricaNews", "#News"]
+        seen = set(t.lower() for t in topic)
+        ig_tags_list = list(topic)
+        for t in discovery:
+            if t.lower() not in seen:
+                ig_tags_list.append(t)
+                seen.add(t.lower())
+        ig_tags = " ".join(ig_tags_list)
         body = headline
         if summary:
             body += f"\n\n{summary}"
         body += "\n\nRead the full briefing → mutapatimes.com (link in bio)"
         body += f"\nvia {src}"
-        body += "\n\n#Zimbabwe #ZimbabweNews #Africa #ZimDiaspora #News #Harare #ZimbabweanDiaspora #AfricaNews"
+        body += f"\n\n{ig_tags}"
         return body
 
     return headline
@@ -633,27 +756,28 @@ def articles_for_this_run():
 
 
 # ── Newsletter promo cards ────────────────────────────────────
-def render_promo_card(angle, output_path):
-    """Generate a 1080x1080 newsletter-promo card for one angle."""
-    img = Image.new("RGB", (CARD_SIZE, CARD_SIZE), CARD_BG)
+def render_promo_card(angle, output_path, color_idx=0):
+    """Generate a 1080x1350 portrait newsletter-promo card for one angle."""
+    bg = card_bg(color_idx)
+    img = Image.new("RGB", (CARD_W, CARD_H), bg)
     draw = ImageDraw.Draw(img)
 
-    title_font = load_font("serif_bold", 92)
-    sub_font = load_font("sans", 26)
-    masthead_font = load_font("serif_bold", 32)
-    cta_font = load_font("sans_bold", 22)
+    title_font = load_font("serif_bold", 108)
+    sub_font = load_font("sans", 30)
+    masthead_font = load_font("serif_bold", 36)
+    cta_font = load_font("sans_bold", 24)
 
     # Accent bar
-    draw.rectangle([(0, 0), (140, 8)], fill=ACCENT)
-    draw.text((60, 60), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((60, 100), "BRIEFING — FREE NEWSLETTER", font=cta_font, fill=ACCENT)
+    draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
+    draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 120), "BRIEFING — FREE NEWSLETTER", font=cta_font, fill=ACCENT)
 
     # Big headline (centered)
     headline = angle["headline"]
-    lines = wrap_text(headline, title_font, CARD_SIZE - 120, draw)
-    line_h = 110
+    lines = wrap_text(headline, title_font, CARD_W - 120, draw)
+    line_h = 130
     block_h = len(lines) * line_h
-    y = (CARD_SIZE - block_h) // 2 - 20
+    y = (CARD_H - block_h) // 2 - 30
     for ln in lines:
         draw.text((60, y), ln, font=title_font, fill=CARD_FG)
         y += line_h
@@ -663,29 +787,30 @@ def render_promo_card(angle, output_path):
         "Curated Zimbabwe news from foreign press.",
         "Mondays + Thursdays. 5-minute read.",
     ]
-    sy = y + 14
+    sy = y + 18
     for sl in sub_lines:
-        draw.text((60, sy), sl, font=sub_font, fill=(190, 190, 185))
-        sy += 38
+        draw.text((60, sy), sl, font=sub_font, fill=CARD_FG_MUTED)
+        sy += 44
 
     # Bottom CTA
-    cta_y = CARD_SIZE - 120
+    cta_y = CARD_H - 140
     draw.text((60, cta_y), "SUBSCRIBE FREE", font=cta_font, fill=ACCENT)
-    draw.text((60, cta_y + 30), "mutapatimes.com/subscribe", font=sub_font, fill=CARD_FG)
+    draw.text((60, cta_y + 36), "mutapatimes.com/subscribe", font=sub_font, fill=CARD_FG)
 
     img.save(output_path, "PNG", optimize=True)
 
 
 def ensure_promo_cards():
-    """Render all 4 promo cards if any are missing. Returns angle_key -> URL."""
+    """Render all 4 promo cards if any are missing. Each angle gets its own
+    background color for visual variety in the feed. Returns angle_key -> URL."""
     os.makedirs(PROMO_CARDS_DIR, exist_ok=True)
     urls = {}
-    for angle in NEWSLETTER_ANGLES:
+    for color_idx, angle in enumerate(NEWSLETTER_ANGLES):
         filename = f"newsletter-promo-{angle['key']}.png"
         path = os.path.join(PROMO_CARDS_DIR, filename)
         if not os.path.isfile(path):
             try:
-                render_promo_card(angle, path)
+                render_promo_card(angle, path, color_idx=color_idx)
                 print(f"    Promo card: {path}")
             except Exception as e:
                 print(f"    Promo card FAILED for {angle['key']}: {e}")
@@ -945,7 +1070,7 @@ def main():
 
         # Render the headline card (used for IG; available for others if you want)
         try:
-            render_card(art["title"], art["source"], card_path)
+            render_card(art["title"], art["source"], card_path, color_idx=idx)
             print(f"    Card: {card_path}")
         except Exception as e:
             print(f"    Card FAILED: {e}")
