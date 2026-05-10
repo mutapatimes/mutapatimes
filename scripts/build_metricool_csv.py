@@ -64,6 +64,13 @@ SCHEDULE_CAT = {
     "Twitter":   ["08:00", "11:00", "13:00", "17:00", "20:00"],
     "Instagram": ["18:00", "19:30", "21:00", "10:00", "16:00"],  # IG less aggressive
 }
+
+# Twitter takes a different cadence: 3 daily slots stretched across every
+# day of the batch window, not 5 slots packed into the first day. Cold-start
+# X needs daily presence to seed algorithm signals, and X uniquely rewards
+# (rather than penalises) higher posting frequency.
+TWITTER_DAILY_SLOTS_CAT = ["08:00", "13:00", "19:00"]
+
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
 # ── Metricool CSV format ──────────────────────────────────────
@@ -724,6 +731,8 @@ def schedule_for(platform, article_idx, run_date_utc):
     """Compute UTC datetime for a post.
 
     Default: articles spread across multiple days using SCHEDULE_CAT slots.
+    Twitter override: 3 daily slots stretched across every batch day so X
+    gets daily presence (cold-start algorithm needs consistency).
     Evening-mode override (EVENING_START_CAT set): all posts staggered
     tonight from EVENING_START_CAT, 5 min apart per platform, INTERVAL apart
     per article.
@@ -736,9 +745,18 @@ def schedule_for(platform, article_idx, run_date_utc):
                           h, m, tzinfo=timezone(CAT_OFFSET)) + timedelta(minutes=total_min)
         return cat_dt.astimezone(timezone.utc)
 
-    day_offset = article_idx // ARTICLES_PER_DAY
-    slot_in_day = article_idx % ARTICLES_PER_DAY
-    cat_time = SCHEDULE_CAT[platform][slot_in_day]
+    if platform == "Twitter":
+        # 3 slots/day across all batch days. article_idx ranges 0..N-1; we
+        # walk Day0/Slot0, Day0/Slot1, Day0/Slot2, Day1/Slot0, ...
+        slots = TWITTER_DAILY_SLOTS_CAT
+        day_offset = article_idx // len(slots)
+        slot_idx = article_idx % len(slots)
+        cat_time = slots[slot_idx]
+    else:
+        day_offset = article_idx // ARTICLES_PER_DAY
+        slot_in_day = article_idx % ARTICLES_PER_DAY
+        cat_time = SCHEDULE_CAT[platform][slot_in_day]
+
     h, m = map(int, cat_time.split(":"))
     target_date = run_date_utc + timedelta(days=day_offset)
     cat_dt = datetime(target_date.year, target_date.month, target_date.day,
@@ -1055,6 +1073,15 @@ def main():
     today_utc = datetime.now(timezone.utc).date()
     rows = []
 
+    # Twitter cap: 3 slots/day × batch_days. Outside evening mode this avoids
+    # over-spilling X posts into days that aren't part of the current run.
+    weekday_now = datetime.now(timezone.utc).weekday()
+    batch_days_for_x = DAYS_BY_WEEKDAY.get(weekday_now, 1)
+    twitter_cap = (
+        EVENING_ARTICLES if EVENING_START_CAT
+        else batch_days_for_x * len(TWITTER_DAILY_SLOTS_CAT)
+    )
+
     for idx, art in enumerate(selected):
         print(f"\n  [{idx + 1}/{len(selected)}] {art['title'][:70]}")
 
@@ -1078,6 +1105,9 @@ def main():
 
         # One row per platform
         for platform in ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram"):
+            # Skip Twitter once we exceed the daily-cadence slot cap
+            if platform == "Twitter" and idx >= twitter_cap:
+                continue
             print(f"    Captioning for {platform}…", end=" ", flush=True)
             caption = caption_for(platform, art, mutapa_url)
             print("OK" if caption else "FAIL")

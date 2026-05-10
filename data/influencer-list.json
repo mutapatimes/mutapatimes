@@ -1,0 +1,38 @@
+{
+  "_doc": "Zim Twitter handles to engage with from the @mutapatimes brand account. Tier 1 = high-traffic mainstream, Tier 2 = beat reporters / mid-tier outlets, Tier 3 = niche/specialist. The build_engagement_queue.py script draws daily reply prompts from these. Edit handles freely; the script will pick up changes on the next run.",
+  "tier1": [
+    {"handle": "daddyhope",        "name": "Hopewell Chin'ono",     "topic": "politics, journalism"},
+    {"handle": "advocatemahere",   "name": "Fadzayi Mahere",        "topic": "politics, law"},
+    {"handle": "ZimLive",          "name": "ZimLive",               "topic": "news"},
+    {"handle": "NewsHawksLive",    "name": "The NewsHawks",         "topic": "investigative news"},
+    {"handle": "NewsDayZimbabwe",  "name": "NewsDay Zimbabwe",      "topic": "news"},
+    {"handle": "HeraldZimbabwe",   "name": "The Herald",            "topic": "state news"},
+    {"handle": "ZBCNewsonline",    "name": "ZBC News",              "topic": "broadcasting"},
+    {"handle": "TheStandardZW",    "name": "The Standard",          "topic": "news"}
+  ],
+  "tier2": [
+    {"handle": "BulawayoNews24",   "name": "Bulawayo News24",       "topic": "Bulawayo news"},
+    {"handle": "263Chat",          "name": "263Chat",               "topic": "news, lifestyle"},
+    {"handle": "TweetJongwe",      "name": "Jongwe News",           "topic": "politics"},
+    {"handle": "Wamagaisa",        "name": "Alex Magaisa",          "topic": "politics, law"},
+    {"handle": "AlanTatambiwa",    "name": "Alan Tatambiwa",        "topic": "business journalism"},
+    {"handle": "ZimEye",           "name": "ZimEye",                "topic": "news"},
+    {"handle": "NewZimbabwe_com",  "name": "NewZimbabwe.com",       "topic": "news"},
+    {"handle": "TheZimMail",       "name": "The Zimbabwe Mail",     "topic": "news"},
+    {"handle": "BustopTV",         "name": "Bustop TV",             "topic": "satire, comedy"}
+  ],
+  "tier3": [
+    {"handle": "MiningZimbabwe",   "name": "Mining Zimbabwe",       "topic": "mining"},
+    {"handle": "techzim",          "name": "Techzim",               "topic": "tech"},
+    {"handle": "ZSE_official",     "name": "Zimbabwe Stock Exchange","topic": "markets"},
+    {"handle": "RBZinfo",          "name": "Reserve Bank of Zimbabwe","topic": "monetary policy"},
+    {"handle": "MoFEDZim",         "name": "Ministry of Finance ZW","topic": "fiscal policy"},
+    {"handle": "ZimStat",          "name": "ZimStat",               "topic": "statistics"},
+    {"handle": "ZimCricketv",      "name": "Zimbabwe Cricket",      "topic": "cricket"},
+    {"handle": "ZIFAOfficial",     "name": "ZIFA",                  "topic": "football"},
+    {"handle": "WarriorsZim",      "name": "Warriors Zimbabwe",     "topic": "football"},
+    {"handle": "ZTAuthority",      "name": "Zimbabwe Tourism",      "topic": "tourism"},
+    {"handle": "EMAeep",           "name": "Environmental Management","topic": "environment"},
+    {"handle": "ZRP_Headquarters", "name": "ZRP",                   "topic": "police"}
+  ]
+}

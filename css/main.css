@@ -1594,6 +1594,44 @@ h4 { color: var(--ink); font-weight: 700; }
 }
 .news-cta-btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .news-cta-btn span { margin-left: 6px; }
+.news-cta-secondary {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85em;
+  color: var(--text-light);
+  margin: 14px 0 0;
+}
+.news-cta-secondary .follow-x-cta { margin-left: 4px; }
+
+/* ── Follow @mutapatimes on X — site-wide CTA ── */
+.follow-x-cta {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #fff !important;
+  background: #000;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.88em;
+  letter-spacing: 0.01em;
+  transition: background 0.15s, transform 0.15s;
+}
+.follow-x-cta:hover {
+  background: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.follow-x-glyph { margin-right: 4px; font-weight: 700; }
+.subscribe-follow-row {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85em;
+  color: var(--text-light);
+  margin: 14px 0 0;
+}
+.footer-follow-line { margin: 0 0 8px; }
+.footer-follow-x { font-size: 0.78em; padding: 5px 12px; }
+
 .news-disclaimer {
   font-size: 0.78em;
   color: var(--text-light);

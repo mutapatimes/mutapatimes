@@ -176,6 +176,13 @@ def render_page(article):
         f'Continue reading at {esc(source)} <span aria-hidden="true">→</span>'
         f'</a>'
     )
+    parts.append(
+        '    <p class="news-cta-secondary">'
+        'Get the next story first &mdash; '
+        '<a class="follow-x-cta" href="https://twitter.com/intent/follow?screen_name=mutapatimes" '
+        'target="_blank" rel="noopener">Follow @mutapatimes on X</a>'
+        '</p>'
+    )
     parts.append("  </div>")
     parts.append('  <p class="news-disclaimer">')
     parts.append(

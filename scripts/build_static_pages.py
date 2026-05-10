@@ -280,10 +280,16 @@ def page_footer(depth=1):
           </div>
 
           <div class="col-sm-6 col-md-2">
-            <h4 class="storyTitleCat">Contact</h4>
+            <h4 class="storyTitleCat">Follow</h4>
+            <p class="footer-follow-line">
+              <a class="follow-x-cta footer-follow-x" href="https://twitter.com/intent/follow?screen_name=mutapatimes"
+                 target="_blank" rel="noopener">
+                <span class="follow-x-glyph" aria-hidden="true">𝕏</span> Follow @mutapatimes
+              </a>
+            </p>
             <ul class="footer-links">
-              <li><a target="_blank" href="https://twitter.com/mutapatimes">Twitter</a></li>
               <li><a href="mailto:news@mutapatimes.com">Email</a></li>
+              <li><a href="{prefix}subscribe.html">Newsletter</a></li>
               <li><a href="{prefix}terms.html">Terms &amp; Conditions</a></li>
             </ul>
           </div>

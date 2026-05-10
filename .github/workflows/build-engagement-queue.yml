@@ -1,0 +1,34 @@
+name: Build Engagement Queue
+
+on:
+  schedule:
+    # Daily at 04:30 UTC (06:30 CAT) — before user's morning. Outputs
+    # data/engagement-plan.md committed to repo. User opens on phone.
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Build engagement plan
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/build_engagement_queue.py
+
+      - name: Commit engagement-plan.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/engagement-plan.md
+          git diff --cached --quiet || (git commit -m "Update engagement queue [automated]" && git push)
