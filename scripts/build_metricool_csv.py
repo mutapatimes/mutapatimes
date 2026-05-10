@@ -123,6 +123,60 @@ PLATFORM_FLAGS = [
 ]
 
 BRAND_NAME = "The Mutapa Times"
+SUBSCRIBE_URL = "https://www.mutapatimes.com/subscribe.html"
+
+# ── Newsletter-driver posts ───────────────────────────────────
+# 4 distinct value propositions per run × 5 platforms = 20 sub posts/run.
+# Rotated through different angles to avoid repetition fatigue.
+NEWSLETTER_ANGLES = [
+    {
+        "key": "curation",
+        "headline": "30+ sources, one briefing",
+        "core": (
+            "Sell the editorial curation. The pitch: 'We read The Guardian, "
+            "Reuters, NYT, Bloomberg, Al Jazeera, the Herald, and 30+ other "
+            "outlets so you don't have to.' Filter down to the ~10-15 "
+            "stories that genuinely matter for Zimbabwe each week."
+        ),
+    },
+    {
+        "key": "time",
+        "headline": "5 minutes. Twice a week.",
+        "core": (
+            "Sell the time-saving. The pitch: '5-minute briefing, Mondays "
+            "and Thursdays. No fluff, no 14 tabs to keep open.' Aimed at "
+            "busy professionals who want to stay informed in minimum time."
+        ),
+    },
+    {
+        "key": "diaspora",
+        "headline": "Zimbabwe outside-in",
+        "core": (
+            "Sell belonging. The pitch: 'For Zimbabweans living abroad — in "
+            "the UK, US, SA, Australia. Stay connected to Harare, Bulawayo, "
+            "the economy, the rugby squad, the music charts. From wherever "
+            "you are.' Emotional, identity-first."
+        ),
+    },
+    {
+        "key": "insider",
+        "headline": "Know what's moving — first",
+        "core": (
+            "Sell the analytical edge. The pitch: 'For analysts, investors, "
+            "journalists, NGO/dev workers tracking Zimbabwe. Lithium bans, "
+            "ZiG monetary policy, mining licenses, Cabinet shuffles — "
+            "before the herd catches up.' Authoritative, dry, factual."
+        ),
+    },
+]
+
+# Off-peak slot for newsletter posts so they don't collide with article slots.
+NEWSLETTER_SLOT_CAT = "16:30"
+NEWSLETTER_SLOT_EVENING_CAT = "19:30"
+
+# Promo card filenames (one per angle, regenerated on first run, then static)
+PROMO_CARDS_DIR = "img/cards"
+PROMO_CARD_BASE = "https://www.mutapatimes.com/img/cards"
 
 # ── Headline card rendering ───────────────────────────────────
 CARD_SIZE = 1080
@@ -564,6 +618,229 @@ def articles_for_this_run():
     return days * ARTICLES_PER_DAY
 
 
+# ── Newsletter promo cards ────────────────────────────────────
+def render_promo_card(angle, output_path):
+    """Generate a 1080x1080 newsletter-promo card for one angle."""
+    img = Image.new("RGB", (CARD_SIZE, CARD_SIZE), CARD_BG)
+    draw = ImageDraw.Draw(img)
+
+    title_font = load_font("serif_bold", 92)
+    sub_font = load_font("sans", 26)
+    masthead_font = load_font("serif_bold", 32)
+    cta_font = load_font("sans_bold", 22)
+
+    # Accent bar
+    draw.rectangle([(0, 0), (140, 8)], fill=ACCENT)
+    draw.text((60, 60), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 100), "BRIEFING — FREE NEWSLETTER", font=cta_font, fill=ACCENT)
+
+    # Big headline (centered)
+    headline = angle["headline"]
+    lines = wrap_text(headline, title_font, CARD_SIZE - 120, draw)
+    line_h = 110
+    block_h = len(lines) * line_h
+    y = (CARD_SIZE - block_h) // 2 - 20
+    for ln in lines:
+        draw.text((60, y), ln, font=title_font, fill=CARD_FG)
+        y += line_h
+
+    # Sub text (under headline)
+    sub_lines = [
+        "Curated Zimbabwe news from foreign press.",
+        "Mondays + Thursdays. 5-minute read.",
+    ]
+    sy = y + 14
+    for sl in sub_lines:
+        draw.text((60, sy), sl, font=sub_font, fill=(190, 190, 185))
+        sy += 38
+
+    # Bottom CTA
+    cta_y = CARD_SIZE - 120
+    draw.text((60, cta_y), "SUBSCRIBE FREE", font=cta_font, fill=ACCENT)
+    draw.text((60, cta_y + 30), "mutapatimes.com/subscribe", font=sub_font, fill=CARD_FG)
+
+    img.save(output_path, "PNG", optimize=True)
+
+
+def ensure_promo_cards():
+    """Render all 4 promo cards if any are missing. Returns angle_key -> URL."""
+    os.makedirs(PROMO_CARDS_DIR, exist_ok=True)
+    urls = {}
+    for angle in NEWSLETTER_ANGLES:
+        filename = f"newsletter-promo-{angle['key']}.png"
+        path = os.path.join(PROMO_CARDS_DIR, filename)
+        if not os.path.isfile(path):
+            try:
+                render_promo_card(angle, path)
+                print(f"    Promo card: {path}")
+            except Exception as e:
+                print(f"    Promo card FAILED for {angle['key']}: {e}")
+        urls[angle["key"]] = f"{PROMO_CARD_BASE}/{filename}"
+    return urls
+
+
+# ── Newsletter caption generation ─────────────────────────────
+NEWSLETTER_PROMPTS = {
+    "LinkedIn": (
+        "Write a LinkedIn post promoting The Mutapa Times Briefing — a "
+        "free, twice-weekly Zimbabwe news email — to a professional "
+        "diaspora/Africa-watcher audience.\n\n"
+        "ANGLE FOR THIS POST:\n{angle_core}\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (under 90 chars) — the angle distilled.\n"
+        "  2. CONTEXT (2-3 short paragraphs with line breaks) — what subscribers get.\n"
+        "  3. INVITATION line — soft CTA, 'free, 6 seconds, unsubscribe anytime' framing.\n"
+        "  4. URL: {SUBSCRIBE_URL} on its own line.\n"
+        "  5. 3-5 hashtags including #Zimbabwe.\n\n"
+        "TONE: Confident, no emojis (maybe one 🇿🇼). 350-650 chars. Output ONLY the post text."
+    ),
+    "Facebook": (
+        "Write a Facebook Page post promoting The Mutapa Times Briefing — "
+        "a free, twice-weekly Zimbabwe news email — for the diaspora.\n\n"
+        "ANGLE FOR THIS POST:\n{angle_core}\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (one short sentence, conversational) — the angle.\n"
+        "  2. BODY (2-3 sentences) — what's in the briefing, who it's for.\n"
+        "  3. ENGAGEMENT prompt — invite shares: 'Tag someone who'd love this' / "
+        "'Share with a friend abroad'.\n"
+        "  4. URL: {SUBSCRIBE_URL} on its own line.\n"
+        "No hashtags. 1 emoji max. 200-400 chars. Output ONLY the post text."
+    ),
+    "Threads": (
+        "Write a Threads post promoting The Mutapa Times Briefing.\n\n"
+        "ANGLE: {angle_core}\n\n"
+        "STRUCTURE: Conversational hot-take (under 80 chars), then a short "
+        "explainer with line breaks, then the URL: {SUBSCRIBE_URL} on its own line. "
+        "Optionally 1-2 hashtags. Max 480 chars. 1-2 emojis OK. Output ONLY post text."
+    ),
+    "Twitter": (
+        "Write an X/Twitter post promoting The Mutapa Times Briefing.\n\n"
+        "ANGLE: {angle_core}\n\n"
+        "Sharp hook + the URL: {SUBSCRIBE_URL} on its own line. STRICT 280 chars TOTAL "
+        "including URL (URLs count as 23 chars). Optionally 1 hashtag like #Zimbabwe. "
+        "Output ONLY post text."
+    ),
+    "Instagram": (
+        "Write an Instagram caption promoting The Mutapa Times Briefing for "
+        "the Zimbabwean diaspora.\n\n"
+        "ANGLE FOR THIS POST:\n{angle_core}\n\n"
+        "STRUCTURE:\n"
+        "  1. HOOK (FIRST LINE, under 100 chars).\n"
+        "  2. STORY (2-3 short paragraphs with line breaks) — what they get, "
+        "why it matters.\n"
+        "  3. CTA: 'Tap the link in our bio to subscribe — it's free.'\n"
+        "  4. Final line: 8-12 hashtags mixing #Zimbabwe, #ZimbabweNews, "
+        "#ZimDiaspora, #Africa with topic tags. NEVER include the URL inline.\n"
+        "TONE: Story-driven, emotive. 1-3 emojis OK. 600-1100 chars. Output ONLY caption."
+    ),
+}
+
+
+def fallback_newsletter(platform, angle):
+    """Plain-template newsletter caption when Gemini is unavailable."""
+    headline = angle["headline"]
+    short = angle["core"].split(".")[0] + "."
+
+    if platform == "LinkedIn":
+        return (
+            f"{headline}.\n\n"
+            f"The Mutapa Times Briefing curates Zimbabwean news from 30+ foreign "
+            f"sources. Mondays + Thursdays. Free. 5-minute read.\n\n"
+            f"Built for the diaspora and informed Africa-watchers.\n\n"
+            f"{SUBSCRIBE_URL}\n\n"
+            f"#Zimbabwe #Africa #News #Diaspora"
+        )
+    if platform == "Facebook":
+        return (
+            f"{headline}.\n\n"
+            f"The Mutapa Times Briefing — free, twice a week, 5-minute read. "
+            f"Curated Zimbabwe news for the diaspora.\n\n"
+            f"Tag a friend who needs this.\n\n"
+            f"{SUBSCRIBE_URL}"
+        )
+    if platform == "Threads":
+        return (
+            f"{headline} 🇿🇼\n\n"
+            f"The Mutapa Times Briefing. Curated Zim news. Free. Mon + Thu.\n\n"
+            f"{SUBSCRIBE_URL}\n\n"
+            f"#Zimbabwe"
+        )
+    if platform == "Twitter":
+        body = f"{headline} 🇿🇼 The Mutapa Times Briefing. Free Zim news, twice a week."
+        OVERHEAD = 23 + 4
+        if len(body) + OVERHEAD > 280:
+            body = body[: 280 - OVERHEAD - 1].rstrip() + "…"
+        return f"{body}\n{SUBSCRIBE_URL}"
+    if platform == "Instagram":
+        return (
+            f"{headline} 🇿🇼\n\n"
+            f"The Mutapa Times Briefing is a free, twice-weekly Zimbabwe news email. "
+            f"30+ sources, curated down to the 10-15 stories that actually matter.\n\n"
+            f"Mondays and Thursdays. 5-minute read.\n\n"
+            f"Tap the link in our bio to subscribe — it's free.\n\n"
+            f"#Zimbabwe #ZimbabweNews #Africa #ZimDiaspora #Newsletter "
+            f"#Harare #Bulawayo #ZimbabweanDiaspora #News #SouthernAfrica"
+        )
+    return f"{headline}\n{SUBSCRIBE_URL}"
+
+
+def newsletter_caption(platform, angle):
+    """Build a newsletter-driver caption — Gemini if available, else fallback."""
+    if not GEMINI_API_KEY:
+        return fallback_newsletter(platform, angle)
+
+    prompt = NEWSLETTER_PROMPTS[platform].format(
+        angle_core=angle["core"],
+        SUBSCRIBE_URL=SUBSCRIBE_URL,
+    )
+    user_msg = (
+        f"{prompt}\n\n"
+        f"SUBSCRIBE_URL: {SUBSCRIBE_URL}\n"
+        f"Output ONLY the post text, no commentary."
+    )
+    body = {
+        "contents": [{"role": "user", "parts": [{"text": user_msg}]}],
+        "generationConfig": {"temperature": 0.8, "maxOutputTokens": 500},
+    }
+    req = urllib.request.Request(
+        f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.load(resp)
+        candidates = data.get("candidates", [])
+        if not candidates:
+            return fallback_newsletter(platform, angle)
+        parts = candidates[0].get("content", {}).get("parts", [])
+        text = parts[0].get("text", "").strip() if parts else ""
+        if not text:
+            return fallback_newsletter(platform, angle)
+        if platform == "Twitter":
+            text = _twitter_safe(text, SUBSCRIBE_URL, "")
+        return text
+    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, KeyError):
+        return fallback_newsletter(platform, angle)
+
+
+def newsletter_schedule_for(angle_idx, run_date_utc, batch_days):
+    """Schedule one newsletter post per day of the batch window.
+    angle_idx 0..3. For 3-day batches, the 4th post lands evening of day 2."""
+    if angle_idx < 3 or batch_days >= 4:
+        day_offset = min(angle_idx, batch_days - 1)
+        cat_time = NEWSLETTER_SLOT_CAT
+    else:
+        day_offset = batch_days - 1
+        cat_time = NEWSLETTER_SLOT_EVENING_CAT
+    h, m = map(int, cat_time.split(":"))
+    target_date = run_date_utc + timedelta(days=day_offset)
+    cat_dt = datetime(target_date.year, target_date.month, target_date.day,
+                      h, m, tzinfo=timezone(CAT_OFFSET))
+    return cat_dt.astimezone(timezone.utc)
+
+
 # ── Metricool row builder ─────────────────────────────────────
 def build_metricool_row(platform, caption, article, date_str, time_str, image_url):
     """Build one CSV row in Metricool's import format. All columns present;
@@ -691,6 +968,40 @@ def main():
             time.sleep(0.4)
 
         queued[art["url"]] = datetime.now(timezone.utc).isoformat()
+
+    # ── Append newsletter-driver posts ──────────────────────
+    # 4 posts per platform per run, one per value-prop angle.
+    print(f"\n  Generating newsletter-driver posts (4 angles × 5 platforms)…")
+    promo_card_urls = ensure_promo_cards()
+    weekday = datetime.now(timezone.utc).weekday()
+    batch_days = DAYS_BY_WEEKDAY.get(weekday, 1)
+
+    for platform in ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram"):
+        for angle_idx, angle in enumerate(NEWSLETTER_ANGLES):
+            print(f"    {platform} · {angle['key']}…", end=" ", flush=True)
+            caption = newsletter_caption(platform, angle)
+            print("OK" if caption else "FAIL")
+
+            sched_utc = newsletter_schedule_for(
+                angle_idx,
+                datetime.combine(today_utc, datetime.min.time()),
+                batch_days,
+            )
+            if sched_utc <= datetime.now(timezone.utc):
+                sched_utc += timedelta(days=batch_days)
+
+            # Image: angle-specific promo card
+            media = promo_card_urls.get(angle["key"], "")
+
+            rows.append(build_metricool_row(
+                platform=platform,
+                caption=caption,
+                article={"title": f"Subscribe — {angle['headline']}"},
+                date_str=sched_utc.strftime("%Y-%m-%d"),
+                time_str=sched_utc.strftime("%H:%M:%S"),
+                image_url=media,
+            ))
+            time.sleep(0.4)
 
     # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:

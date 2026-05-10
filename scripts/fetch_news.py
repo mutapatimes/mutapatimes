@@ -952,10 +952,23 @@ def fetch_spotlight():
     for a in reputable_merged[:10]:
         print(f"    PASS: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
 
+    # Spotlight requires images — drop anything without an image URL.
+    # An article with no thumbnail is a dead-feeling card on the homepage and
+    # in the social CSV. Better to skip than embarrass ourselves.
+    def _has_image(a):
+        img = (a.get("image") or "").strip()
+        return bool(img) and not img.startswith("data:")
+
+    reputable_with_images = [a for a in reputable_merged if _has_image(a)]
+    others_with_images = [a for a in others_merged if _has_image(a)]
+    dropped = (len(reputable_merged) - len(reputable_with_images)) + (len(others_merged) - len(others_with_images))
+    if dropped:
+        print(f"  Filtered {dropped} articles missing images out of spotlight")
+
     # Reputable sources for main spotlight; overflow reputable + non-reputable for green section
-    spotlight = reputable_merged[:3]
-    overflow_reputable = reputable_merged[3:18]  # extra reputable articles beyond top 3
-    more = others_merged[:15] if others_merged else overflow_reputable[:15]
+    spotlight = reputable_with_images[:3]
+    overflow_reputable = reputable_with_images[3:18]  # extra reputable articles beyond top 3
+    more = others_with_images[:15] if others_with_images else overflow_reputable[:15]
 
     # Inject CMS-promoted articles into the green spotlight section
     cms_spotlight = get_cms_spotlight_articles()

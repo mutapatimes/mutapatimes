@@ -713,7 +713,7 @@ def build_person_of_day_html(person):
 
 
 def build_html(spotlight_articles, category_articles, gnews_extras=None,
-               tsumo=None, person_of_day=None):
+               tsumo=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
@@ -727,7 +727,6 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
 
     spotlight_html = build_spotlight_html(spotlight_articles, gnews_extras=gnews_extras)
     tsumo_html = build_tsumo_html(tsumo)
-    person_html = build_person_of_day_html(person_of_day)
 
     # Build category article rows
     rows = ""
@@ -884,8 +883,6 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           {spotlight_html}
 
           {tsumo_html}
-
-          {person_html}
 
           <!-- Section header -->
           <tr>
@@ -1062,18 +1059,9 @@ def main():
     tsumo = get_tsumo_of_the_day()
     print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
 
-    # Zimbabwean of the Day — Wikidata birthday match
-    print("Fetching Zimbabwean of the Day from Wikidata...")
-    birthday_people = fetch_birthday_zimbabweans()
-    person_of_day = pick_person_of_the_day(birthday_people)
-    if person_of_day:
-        print(f"  Featured: {person_of_day['name']} (b. {person_of_day.get('birth_year', '?')})")
-    else:
-        print("  No Zimbabwean birthday match for today — section will be omitted")
-
     print("Building email HTML...")
     html, total_count = build_html(spotlight, top, gnews_extras=gnews_extras,
-                                   tsumo=tsumo, person_of_day=person_of_day)
+                                   tsumo=tsumo)
 
     # Dynamic subject line: "Monday morning briefing — 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)

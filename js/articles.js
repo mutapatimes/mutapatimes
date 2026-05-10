@@ -122,60 +122,32 @@
   var _articlesSort = "newest";
   var _articlesSearch = "";
 
+  // Cap how many recent articles we hydrate. With ~5000 .md files in the
+  // repo, fetching them all at page-load time was the bug — and the GitHub
+  // contents API silently truncates at 1000 alphabetically (= oldest first),
+  // so the listing was permanently stuck in early 2026.
+  var ARTICLES_RECENT_CAP = 200;
+
   function renderArticlesList() {
     var container = document.getElementById("articles-list");
     if (!container) return;
-
-    // Use GitHub API to auto-discover articles (no manual index needed)
-    fetchJSON(ARTICLES_API, function (err, entries) {
-      if (err || !entries || !entries.length) {
-        // Fallback: try local path for dev/preview
-        fetchLocalArticles(container);
-        return;
-      }
-
-      // Filter to .md files only (skip index.json etc.)
-      var mdFiles = [];
-      for (var i = 0; i < entries.length; i++) {
-        if (entries[i].name && entries[i].name.match(/\.md$/)) {
-          mdFiles.push(entries[i].name);
-        }
-      }
-
-      if (!mdFiles.length) {
-        container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
-        return;
-      }
-
-      var pending = mdFiles.length;
-      var articles = [];
-
-      mdFiles.forEach(function (filename) {
-        fetchText(ARTICLES_RAW + filename, function (err2, raw) {
-          if (!err2 && raw) {
-            var parsed = parseFrontmatter(raw);
-            parsed.meta.filename = filename;
-            parsed.meta.slug = filename.replace(/\.md$/, "");
-            articles.push(parsed.meta);
-          }
-          pending--;
-          if (pending === 0) {
-            _allArticlesMeta = articles;
-            initArticlesControls(container);
-            applyArticlesFilters(container);
-          }
-        });
-      });
-    });
+    fetchLocalArticles(container);
   }
 
-  // Fallback for local/preview: try loading from local index.json
+  // Primary loader: read content/articles/index.json (always fresh — committed
+  // by fetch_news.py). Filenames are date-prefixed so reverse-sorting them
+  // gives newest first. We then hydrate only the most recent N for speed.
   function fetchLocalArticles(container) {
     fetchJSON("content/articles/index.json", function (err, files) {
       if (err || !files || !files.length) {
         container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
         return;
       }
+
+      // Filter to .md files only and sort newest first by filename prefix
+      files = files.filter(function (f) { return /\.md$/.test(f); });
+      files.sort(function (a, b) { return b.localeCompare(a); });
+      files = files.slice(0, ARTICLES_RECENT_CAP);
 
       var pending = files.length;
       var articles = [];
