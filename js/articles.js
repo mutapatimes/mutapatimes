@@ -315,10 +315,7 @@
       var categoryHtml = a.category
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';
-      html += '<a href="articles/' + encodeURIComponent(a.slug) + '.html" class="article-card">';
-      if (a.image) {
-        html += '<img src="' + escapeHtml(a.image) + '" alt="" class="article-card-img">';
-      }
+      html += '<a href="articles/' + encodeURIComponent(a.slug) + '.html" class="article-card article-card--text">';
       html += '<div class="article-card-body">';
       html += categoryHtml;
       html += '<h3 class="article-card-title">' + escapeHtml(a.title || "Untitled") + '</h3>';

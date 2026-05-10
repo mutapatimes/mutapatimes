@@ -746,7 +746,14 @@ def build_people():
 
 # ─── Main ─────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    import sys
     print("=== The Mutapa Times: Static Page Builder ===\n")
     article_count = build_articles()
-    people_count = build_people()
-    print(f"\nDone. {article_count} articles + {people_count} people pages generated.")
+    # Skip Wikidata/Wikipedia rebuild on every 3h fetch run — it's stable and
+    # costs ~30s of network calls. Use a full run (no flag) when you actually
+    # want to refresh people pages.
+    if "--articles-only" in sys.argv:
+        print(f"\nDone. {article_count} articles generated (--articles-only).")
+    else:
+        people_count = build_people()
+        print(f"\nDone. {article_count} articles + {people_count} people pages generated.")

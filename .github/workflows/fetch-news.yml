@@ -28,6 +28,9 @@ jobs:
       - name: Build news landing pages
         run: python3 scripts/build_news_pages.py
 
+      - name: Build static article pages
+        run: python3 scripts/build_static_pages.py --articles-only
+
       - name: Generate sitemap and RSS feed
         run: |
           python3 scripts/generate_sitemap.py
@@ -37,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/ news/ sitemap.xml feed.xml
+          git add data/ content/articles/ news/ articles/ sitemap.xml feed.xml
           git diff --cached --quiet || (git commit -m "Update news data [automated]" && git push)
 
       - name: Send push notification for breaking news
