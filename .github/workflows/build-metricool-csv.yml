@@ -1,0 +1,36 @@
+name: Build Metricool CSV
+
+on:
+  schedule:
+    # Daily at 06:00 UTC (08:00 CAT) — runs after fetch-news has refreshed spotlight
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-csv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pillow
+        run: pip install Pillow
+
+      - name: Build Metricool CSV + headline cards
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/build_metricool_csv.py
+
+      - name: Commit CSV, cards, and queue tracker
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/metricool-queue.csv data/.metricool_queued.json img/cards/
+          git diff --cached --quiet || (git commit -m "Build Metricool CSV [automated]" && git push)
