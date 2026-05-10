@@ -17,11 +17,9 @@
 
 ### 2. @daddyhope (Hopewell Chin'ono)
 
-**Their tweet:** This video has been extremely painful to watch for any sane Zimbabwean. It has made Zimbabweans the butt of jokes across the region, especially in Southern Africa and other African countries on social media.
+**Their tweet:** It is actually very silly to think you can fundamentally change public opinion in Zimbabwe using paid trolls, bots, and ghost accounts. Zimbabweans are living the reality of unemployment, collapsed hospitals, corruption, power cuts, poor ro
 
-I have written extensively abou
-
-**Open:** https://twitter.com/daddyhope/status/2053508088439652761
+**Open:** https://twitter.com/daddyhope/status/2053567215337681097
 
 **Suggested reply:** (Gemini draft unavailable — write a one-sentence value-add: a stat, a counter-angle, or a specific question. No empty agreement.)
 
@@ -64,7 +62,7 @@ https://www.zimeye..."
 - **Follow** [@263Chat](https://twitter.com/263Chat) — 263Chat (news, lifestyle)
 - **Follow** [@RBZinfo](https://twitter.com/RBZinfo) — Reserve Bank of Zimbabwe (monetary policy)
 - **Like** this tweet from @ZimLive: https://twitter.com/zimlive/status/2053548181556781350
-- **Like** this tweet from @daddyhope: https://twitter.com/daddyhope/status/2053508088439652761
+- **Like** this tweet from @daddyhope: https://twitter.com/daddyhope/status/2053567215337681097
 
 ---
 
@@ -79,4 +77,4 @@ _Skim r/Zimbabwe for a high-engagement thread. Cross-post the link to @mutapatim
 Spend 30 seconds checking @mutapatimes notifications. Reply to anyone who engaged with our posts in the last 24h — that's how the first 100 followers actually arrive.
 
 
-_Generated 2026-05-10T19:37:20.138353+00:00 by build_engagement_queue.py_
+_Generated 2026-05-10T20:31:24.035864+00:00 by build_engagement_queue.py_
