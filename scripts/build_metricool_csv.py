@@ -75,6 +75,12 @@ SCHEDULE_CAT = {
 # article-driven, more once threads multiply by 4 tweets each).
 TWITTER_DAILY_SLOTS_CAT = ["07:00", "10:00", "12:00", "15:00", "18:00", "21:00"]
 
+# Additional X-only "Did you know?" slots — short data-bite tweets pulled
+# from property + GDP datasets. These slot BETWEEN the article slots so the
+# X feed has constant momentum throughout the day. 4 DYK posts/day adds
+# ~12-16 X tweets per batch.
+TWITTER_DYK_SLOTS_CAT = ["09:00", "14:00", "17:00", "20:00"]
+
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
 # ── Metricool CSV format ──────────────────────────────────────
@@ -1242,6 +1248,162 @@ def render_weekly_econ_card(stat, output_path):
     )
 
 
+# ── "Did you know?" X-only data-bite tweets ──────────────────
+def build_dyk_pool():
+    """Compute a pool of 'did you know?' stat candidates from property + GDP
+    data. Each entry is {topic, text}. The runtime picks a deterministic
+    subset based on today's date so each batch shows different stats."""
+    pool = []
+
+    # Property stats
+    listings = load_property_listings()
+    if listings:
+        prices = [p for p in (_parse_price_usd(l.get("price", "")) for l in listings) if p]
+        if prices:
+            sorted_p = sorted(prices)
+            median = sorted_p[len(sorted_p) // 2]
+            pool.append({
+                "topic": "property",
+                "text": f"Median asking price for a Zim house this week: ${median/1000:.0f}K. {len(listings)} active listings on the market. 🏘️",
+            })
+            pool.append({
+                "topic": "property",
+                "text": f"Zim property spread today: cheapest listing ${min(prices)/1000:.0f}K, priciest ${max(prices)/1e6:.1f}M. That's a {max(prices)/min(prices):.0f}× gap.",
+            })
+            # Quartiles
+            q1 = sorted_p[len(sorted_p) // 4]
+            q3 = sorted_p[3 * len(sorted_p) // 4]
+            pool.append({
+                "topic": "property",
+                "text": f"Middle 50% of Zim houses for sale this week priced ${q1/1000:.0f}K – ${q3/1000:.0f}K. 📊",
+            })
+        # Suburbs
+        from collections import Counter
+        suburbs = [
+            (l.get("location") or "").split(",")[0].strip()
+            for l in listings
+        ]
+        suburbs = [s for s in suburbs if s]
+        if suburbs:
+            top = Counter(suburbs).most_common(3)
+            if top:
+                pool.append({
+                    "topic": "property",
+                    "text": f"Top 3 most-listed suburbs in Zim this week: {', '.join(s for s,_ in top)}. 📍",
+                })
+            top1, count1 = top[0]
+            pool.append({
+                "topic": "property",
+                "text": f"{top1} alone has {count1} of the {len(listings)} active Zim listings — {count1/len(listings)*100:.0f}% of the market this week.",
+            })
+        # Bedrooms
+        beds = [int(l["beds"]) for l in listings
+                if (l.get("beds") or "").isdigit()]
+        if beds:
+            avg_beds = sum(beds) / len(beds)
+            pool.append({
+                "topic": "property",
+                "text": f"Average Zim home for sale: {avg_beds:.1f} bedrooms. Range from {min(beds)}-bed flats to {max(beds)}-bed compounds.",
+            })
+        # Bulawayo vs Harare share
+        loc_text = " ".join(l.get("location", "") for l in listings).lower()
+        harare_n = loc_text.count("harare")
+        bulawayo_n = loc_text.count("bulawayo")
+        if harare_n + bulawayo_n > 0:
+            harare_pct = harare_n / (harare_n + bulawayo_n) * 100
+            pool.append({
+                "topic": "property",
+                "text": f"Of Zim listings split between Harare & Bulawayo this week: {harare_pct:.0f}% Harare, {100-harare_pct:.0f}% Bulawayo. 🇿🇼",
+            })
+
+    # Economic stats
+    gdp = load_gdp_data()
+    if gdp:
+        quarters = gdp.get("quarters", [])
+        sectors = gdp.get("sectors", {})
+        agg = (gdp.get("aggregates") or {}).get("GDP at Market Prices") or []
+        if quarters and agg:
+            last = len(quarters) - 1
+            quarter = quarters[last]
+            latest = agg[last]
+            pool.append({
+                "topic": "economy",
+                "text": f"Zim GDP at market prices, {quarter}: ${latest/1e9:.1f}B. 📊",
+            })
+            if last >= 4 and agg[last - 4]:
+                yoy = (latest - agg[last - 4]) / agg[last - 4] * 100
+                arrow = "↗️" if yoy >= 0 else "↘️"
+                pool.append({
+                    "topic": "economy",
+                    "text": f"Zim GDP {quarter}: {arrow} {yoy:+.1f}% YoY. Now ${latest/1e9:.1f}B vs ${agg[last-4]/1e9:.1f}B same quarter last year.",
+                })
+            # QoQ change
+            if last >= 1 and agg[last - 1]:
+                qoq = (latest - agg[last - 1]) / agg[last - 1] * 100
+                arrow = "↗️" if qoq >= 0 else "↘️"
+                pool.append({
+                    "topic": "economy",
+                    "text": f"Zim GDP {arrow} {qoq:+.1f}% QoQ. {quarter} ${latest/1e9:.1f}B, prior quarter ${agg[last-1]/1e9:.1f}B.",
+                })
+            # Per-sector share + growth
+            sector_shares = []
+            for name, vals in sectors.items():
+                if not vals or vals[last] is None or not latest:
+                    continue
+                share = vals[last] / latest * 100
+                short = _short_sector(name)
+                sector_shares.append((short, share, vals[last]))
+                pool.append({
+                    "topic": "economy",
+                    "text": f"{short} = {share:.1f}% of Zim GDP in {quarter} — ${vals[last]/1e9:.1f}B.",
+                })
+                if last >= 4 and vals[last - 4]:
+                    sec_yoy = (vals[last] - vals[last - 4]) / vals[last - 4] * 100
+                    arrow = "↗️" if sec_yoy >= 0 else "↘️"
+                    pool.append({
+                        "topic": "economy",
+                        "text": f"Zim {short} sector {arrow} {sec_yoy:+.1f}% YoY. {quarter}: ${vals[last]/1e9:.1f}B.",
+                    })
+            # Top 3 share combined
+            sector_shares.sort(key=lambda x: -x[1])
+            if len(sector_shares) >= 3:
+                top3_pct = sum(s[1] for s in sector_shares[:3])
+                top3_names = ", ".join(s[0] for s in sector_shares[:3])
+                pool.append({
+                    "topic": "economy",
+                    "text": f"Top 3 Zim sectors = {top3_pct:.0f}% of GDP: {top3_names}.",
+                })
+    return pool
+
+
+def did_you_know_caption(stat):
+    """Format one stat as a tweet — '🇿🇼 Did you know?' opener, URL, hashtags."""
+    topic = stat["topic"]
+    text = stat["text"]
+    if topic == "property":
+        url = PROPERTY_PAGE_URL
+        tags = "#Zimbabwe #Property #RealEstate"
+    else:
+        url = ECONOMY_PAGE_URL
+        tags = "#Zimbabwe #Economy #GDP"
+    body = f"🇿🇼 Did you know?\n\n{text}\n{url}\n\n{tags}"
+    return _twitter_safe(body, url, "")
+
+
+def schedule_dyk(idx, run_date_utc):
+    """Compute UTC datetime for DYK slot idx (0..N).
+    Day 0/Slot 0..3, Day 1/Slot 0..3, ... — same striping as Twitter article slots."""
+    slots = TWITTER_DYK_SLOTS_CAT
+    day_offset = idx // len(slots)
+    slot_idx = idx % len(slots)
+    cat_time = slots[slot_idx]
+    h, m = map(int, cat_time.split(":"))
+    target = run_date_utc + timedelta(days=day_offset)
+    cat_dt = datetime(target.year, target.month, target.day,
+                      h, m, tzinfo=timezone(CAT_OFFSET))
+    return cat_dt.astimezone(timezone.utc)
+
+
 # ── Newsletter caption generation ─────────────────────────────
 NEWSLETTER_PROMPTS = {
     "LinkedIn": (
@@ -1687,6 +1849,37 @@ def main():
                 ))
         else:
             print(f"\n  No GDP data — skipping weekly econ post")
+
+    # ── X-only "Did you know?" data-bite tweets ─────────────
+    # 4 dedicated DYK slots per day, striped across the batch window so
+    # the X feed has constant momentum. Pool is generated deterministically
+    # from today's date, so each batch picks a different subset.
+    dyk_cap = batch_days_for_x * len(TWITTER_DYK_SLOTS_CAT)
+    if dyk_cap > 0:
+        pool = build_dyk_pool()
+        if pool:
+            import random as _random
+            seed = int(datetime.now(timezone.utc).strftime("%Y%m%d"))
+            rng = _random.Random(seed)
+            rng.shuffle(pool)
+            selected = pool[:dyk_cap]
+            print(f"\n  Generating {len(selected)} 'Did you know?' X tweets…")
+            run_date = datetime.combine(today_utc, datetime.min.time())
+            for i, stat in enumerate(selected):
+                cap = did_you_know_caption(stat)
+                slot_utc = schedule_dyk(i, run_date)
+                if slot_utc <= datetime.now(timezone.utc):
+                    slot_utc += timedelta(days=batch_days_for_x)
+                rows.append(build_metricool_row(
+                    platform="Twitter",
+                    caption=cap,
+                    article={"title": f"DYK: {stat['topic']}"},
+                    date_str=slot_utc.strftime("%Y-%m-%d"),
+                    time_str=slot_utc.strftime("%H:%M:%S"),
+                    image_url="",  # text-first; no image so X gives full reach
+                ))
+        else:
+            print("\n  No DYK pool data — skipping")
 
     # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
