@@ -34,6 +34,7 @@ except ImportError:
 # pages that build_news_pages.py creates.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_news_pages import landing_url as mutapa_landing_url  # noqa: E402
+from send_newsletter import SHONA_PROVERBS  # noqa: E402
 
 # ── Config ────────────────────────────────────────────────────
 DATA_DIR = "data"
@@ -80,6 +81,11 @@ TWITTER_DAILY_SLOTS_CAT = ["07:00", "10:00", "12:00", "15:00", "18:00", "21:00"]
 # X feed has constant momentum throughout the day. 4 DYK posts/day adds
 # ~12-16 X tweets per batch.
 TWITTER_DYK_SLOTS_CAT = ["09:00", "14:00", "17:00", "20:00"]
+
+# Daily Shona proverb on X — drops at 08:00 CAT (before the 09:00 DYK and
+# after the 07:00 article slot). Brand-distinctive content tying social
+# back to the newsletter's signature Tsumo of the Day section.
+TSUMO_TIME_CAT = "08:00"
 
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
@@ -1404,6 +1410,29 @@ def schedule_dyk(idx, run_date_utc):
     return cat_dt.astimezone(timezone.utc)
 
 
+# ── Tsumo of the Day (Shona proverb, X-only) ──────────────────
+def tsumo_for_date(target_date):
+    """Return the Shona proverb for a given calendar date.
+    Uses the same daily rotation as the website + newsletter, so the
+    tweet matches what the newsletter shows on the same day."""
+    epoch = (target_date - target_date.fromordinal(target_date.toordinal())).days  # noqa
+    # Use day-of-year × year as a stable index — gives a different rotation
+    # offset each year while keeping the daily cadence consistent.
+    day_index = (target_date.toordinal()) % len(SHONA_PROVERBS)
+    return SHONA_PROVERBS[day_index]
+
+
+def tsumo_caption(proverb):
+    """Format the day's proverb as an X tweet."""
+    body = (
+        f"Tsumo yezuva 🇿🇼\n\n"
+        f"“{proverb['shona']}”\n"
+        f"— {proverb['english']}\n\n"
+        f"#Zimbabwe #Shona #Tsumo"
+    )
+    return body  # already short; no _twitter_safe needed
+
+
 # ── Newsletter caption generation ─────────────────────────────
 NEWSLETTER_PROMPTS = {
     "LinkedIn": (
@@ -1880,6 +1909,31 @@ def main():
                 ))
         else:
             print("\n  No DYK pool data — skipping")
+
+    # ── Tsumo of the Day on X — daily Shona proverb at 08:00 CAT ─
+    # One per day in the batch window. Same rotation logic as the
+    # newsletter so the X post matches what subscribers receive that day.
+    if batch_days_for_x > 0:
+        print(f"\n  Generating {batch_days_for_x} 'Tsumo of the Day' X tweets…")
+        h, m = map(int, TSUMO_TIME_CAT.split(":"))
+        run_date = datetime.combine(today_utc, datetime.min.time())
+        for day_off in range(batch_days_for_x):
+            target = run_date + timedelta(days=day_off)
+            tsumo = tsumo_for_date(target.date() if hasattr(target, 'date') else target)
+            cat_dt = datetime(target.year, target.month, target.day,
+                              h, m, tzinfo=timezone(CAT_OFFSET))
+            slot_utc = cat_dt.astimezone(timezone.utc)
+            if slot_utc <= datetime.now(timezone.utc):
+                slot_utc += timedelta(days=batch_days_for_x)
+            cap = tsumo_caption(tsumo)
+            rows.append(build_metricool_row(
+                platform="Twitter",
+                caption=cap,
+                article={"title": "Tsumo of the Day"},
+                date_str=slot_utc.strftime("%Y-%m-%d"),
+                time_str=slot_utc.strftime("%H:%M:%S"),
+                image_url="",  # text-only — Shona proverbs work better unadorned
+            ))
 
     # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
