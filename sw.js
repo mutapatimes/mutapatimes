@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v13';
+var CACHE_VERSION = 'mutapa-v14';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 
@@ -48,6 +48,7 @@ var EXTERNAL_NETWORK_ONLY = [
   'googletagmanager.com',
   'google-analytics.com',
   'contentsquare.net',
+  'tracker.metricool.com',
   'api.rss2json.com',
   'api.open-meteo.com',
   's3.tradingview.com',
