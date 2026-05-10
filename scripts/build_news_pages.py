@@ -103,7 +103,7 @@ def load_articles():
 
 
 # ── Page rendering ─────────────────────────────────────────────
-def render_page(article):
+def render_page(article, related=None):
     title = article["title"]
     summary = article["description"] or f"{title} — full story at {article['source']}."
     image = article["image"] or f"{BASE_URL}/img/banner.png"
@@ -120,12 +120,23 @@ def render_page(article):
 
     # JSON-LD structured data — proper NewsArticle markup so search engines
     # treat the landing page as the canonical reference for the headline.
+    # Google News surfaces require dateModified; articleSection drives the
+    # "Topics" listing on news.google.com; keywords help long-tail discovery.
+    section_label = (category or "news").title()
+    keywords = [w for w in [
+        "Zimbabwe",
+        section_label,
+        source,
+    ] if w]
     structured = {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
         "headline": title,
         "image": [image],
         "datePublished": pub_iso,
+        "dateModified": datetime.now(timezone.utc).isoformat(),
+        "articleSection": section_label,
+        "keywords": ", ".join(keywords),
         "author": {"@type": "Organization", "name": source},
         "publisher": {
             "@type": "Organization",
@@ -184,6 +195,21 @@ def render_page(article):
         '</p>'
     )
     parts.append("  </div>")
+
+    # Related stories — internal links boost PageRank for long-tail SEO.
+    if related:
+        parts.append('  <section class="news-related">')
+        parts.append('    <h3 class="news-related-title">More from this category</h3>')
+        parts.append('    <ul class="news-related-list">')
+        for r in related[:3]:
+            r_url = landing_url(r)
+            parts.append(
+                f'      <li><a href="{esc(r_url)}">{esc(r["title"])}</a> '
+                f'<span class="news-related-source">&middot; {esc(r.get("source",""))}</span></li>'
+            )
+        parts.append('    </ul>')
+        parts.append('  </section>')
+
     parts.append('  <p class="news-disclaimer">')
     parts.append(
         f'    The Mutapa Times aggregates Zimbabwean news from foreign press. '
@@ -198,6 +224,53 @@ def render_page(article):
     return "\n".join(parts)
 
 
+# ── IndexNow (Bing/Yandex) — optional, env-controlled ────────
+INDEXNOW_KEY = os.environ.get("INDEXNOW_KEY", "")
+INDEXNOW_HOST = "www.mutapatimes.com"
+
+
+def indexnow_ping(urls):
+    """POST a batch of URLs to IndexNow so Bing/Yandex can crawl
+    immediately. No-op if INDEXNOW_KEY env var isn't set."""
+    if not INDEXNOW_KEY or not urls:
+        return
+    payload = {
+        "host": INDEXNOW_HOST,
+        "key": INDEXNOW_KEY,
+        "keyLocation": f"https://{INDEXNOW_HOST}/{INDEXNOW_KEY}.txt",
+        "urlList": urls,
+    }
+    try:
+        import urllib.request
+        req = urllib.request.Request(
+            "https://api.indexnow.org/indexnow",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json; charset=utf-8"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            print(f"  IndexNow ping ({len(urls)} URLs): HTTP {resp.status}")
+    except Exception as e:
+        print(f"  IndexNow ping failed: {e}")
+
+
+def pick_related(article, all_articles, max_count=3):
+    """Find up to N other articles in the same category, most recent first.
+    Falls back to any other article if the category doesn't have enough."""
+    same_cat = [
+        a for a in all_articles
+        if a.get("category") == article.get("category")
+        and a["url"] != article["url"]
+    ]
+    same_cat.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
+    if len(same_cat) >= max_count:
+        return same_cat[:max_count]
+    seen = {a["url"] for a in same_cat} | {article["url"]}
+    fallbacks = [a for a in all_articles if a["url"] not in seen]
+    fallbacks.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
+    return (same_cat + fallbacks)[:max_count]
+
+
 # ── Main ───────────────────────────────────────────────────────
 def main():
     print("=== BUILD NEWS LANDING PAGES ===")
@@ -206,6 +279,7 @@ def main():
 
     os.makedirs(NEWS_OUT, exist_ok=True)
     written = skipped = 0
+    new_urls = []
     for art in articles:
         slug = make_slug(art)
         out_path = os.path.join(NEWS_OUT, f"{slug}.html")
@@ -213,15 +287,22 @@ def main():
             skipped += 1
             continue
         try:
-            page_html = render_page(art)
+            related = pick_related(art, articles)
+            page_html = render_page(art, related=related)
         except Exception as e:
             print(f"  ERROR rendering {slug}: {e}")
             continue
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page_html)
         written += 1
+        new_urls.append(landing_url(art))
 
     print(f"  Wrote {written} new pages, skipped {skipped} existing")
+
+    # Notify Bing/Yandex of fresh URLs (no-op without INDEXNOW_KEY)
+    if new_urls:
+        indexnow_ping(new_urls[:100])  # IndexNow caps at 10000 but be polite
+
     print("=== DONE ===")
 
 

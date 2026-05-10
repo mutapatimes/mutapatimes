@@ -718,6 +718,89 @@ def caption_for(platform, art, mutapa_url):
     return text
 
 
+# ── Twitter thread generation ─────────────────────────────────
+THREAD_THRESHOLD = 300  # description length above which we generate a thread
+
+
+def gemini_thread(art, mutapa_url):
+    """Return list of 4 tweet bodies, or None on any failure.
+    Tweets 1-3: HOOK / CONTEXT / TAKEAWAY — NO LINKS (algorithm penalty).
+    Tweet 4: read-more CTA with the Mutapa URL + 2 hashtags."""
+    if not GEMINI_API_KEY:
+        return None
+    desc = (art.get("description") or "").strip()
+    if len(desc) < THREAD_THRESHOLD:
+        return None
+    headline = art.get("title", "")
+    source = art.get("source", "the source")
+    tags = topic_hashtags(headline, max_tags=2)
+
+    prompt = (
+        "Write a 4-tweet X/Twitter thread about this Zimbabwe news story "
+        "for @mutapatimes (a Zimbabwe news brand for the diaspora).\n\n"
+        f"HEADLINE: {headline}\n"
+        f"DESCRIPTION: {desc}\n"
+        f"SOURCE_NAME: {source}\n"
+        f"MUTAPA_URL: {mutapa_url}\n"
+        f"HASHTAGS: {tags}\n\n"
+        "STRICT STRUCTURE — return ONLY a JSON object with key 'tweets':\n"
+        "  Tweet 1 (HOOK): Sharp, opinion-tinged or surprising-fact angle. "
+        "ABSOLUTELY NO LINKS in this tweet (X penalises link-in-first-tweet "
+        "for sub-1k accounts). Max 240 chars. Should make someone want to "
+        "tap to expand.\n"
+        "  Tweet 2 (CONTEXT): One key data point, quote, or detail from the "
+        "story. NO LINKS. Max 240 chars.\n"
+        "  Tweet 3 (TAKEAWAY): What this means / why it matters / a thought-"
+        "provoking implication. NO LINKS. Max 240 chars.\n"
+        f"  Tweet 4 (CTA): Format EXACTLY as:\n"
+        f"    'Read the full briefing — {mutapa_url}\\n\\nvia {source}\\n{tags}'\n"
+        "    (Substitute the actual URL/source/tags. This tweet is the only "
+        "one with a link.)\n\n"
+        "Output ONLY a JSON object, no commentary, no markdown fences:\n"
+        '  {"tweets": ["tweet1", "tweet2", "tweet3", "tweet4"]}'
+    )
+    body = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800,
+                             "responseMimeType": "application/json"},
+    }
+    try:
+        req = urllib.request.Request(
+            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.load(resp)
+        candidates = data.get("candidates", [])
+        if not candidates:
+            return None
+        parts = candidates[0].get("content", {}).get("parts", [])
+        text = parts[0].get("text", "").strip() if parts else ""
+        # Strip markdown fences just in case
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text).strip()
+        try:
+            payload = json.loads(text)
+        except json.JSONDecodeError:
+            return None
+        tweets = payload.get("tweets") or []
+        if not isinstance(tweets, list) or len(tweets) < 3 or len(tweets) > 5:
+            return None
+        # Length-clamp each tweet (URL = 23 chars to X)
+        cleaned = []
+        for t in tweets:
+            if not isinstance(t, str) or not t.strip():
+                continue
+            cleaned.append(_twitter_safe(t.strip(), mutapa_url, source))
+        if len(cleaned) < 3:
+            return None
+        return cleaned
+    except (urllib.error.URLError, urllib.error.HTTPError,
+            json.JSONDecodeError, KeyError):
+        return None
+
+
 # ── Slug + scheduling helpers ─────────────────────────────────
 def slugify(s, max_len=60):
     s = s.lower()
@@ -1103,14 +1186,11 @@ def main():
             print(f"    Card FAILED: {e}")
             card_url = ""
 
-        # One row per platform
+        # One row per platform (Twitter may emit multiple if it's a thread)
         for platform in ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram"):
             # Skip Twitter once we exceed the daily-cadence slot cap
             if platform == "Twitter" and idx >= twitter_cap:
                 continue
-            print(f"    Captioning for {platform}…", end=" ", flush=True)
-            caption = caption_for(platform, art, mutapa_url)
-            print("OK" if caption else "FAIL")
 
             sched_utc = schedule_for(platform, idx,
                                      datetime.combine(today_utc, datetime.min.time()))
@@ -1123,6 +1203,36 @@ def main():
                 media = card_url
             else:
                 media = art["image"] or card_url
+
+            # Twitter: if the article description is long enough, emit a
+            # multi-tweet thread instead of a single tweet. Hook tweet has
+            # no link (algorithm penalty); only the final tweet has the URL.
+            if platform == "Twitter":
+                print(f"    Twitter thread attempt…", end=" ", flush=True)
+                thread = gemini_thread(art, mutapa_url)
+                if thread:
+                    print(f"OK ({len(thread)} tweets)")
+                    for i, tweet_text in enumerate(thread):
+                        tweet_dt = sched_utc + timedelta(minutes=i)
+                        row = build_metricool_row(
+                            platform=platform,
+                            caption=tweet_text,
+                            article=art,
+                            date_str=tweet_dt.strftime("%Y-%m-%d"),
+                            time_str=tweet_dt.strftime("%H:%M:%S"),
+                            # Image only on the head tweet
+                            image_url=media if i == 0 else "",
+                        )
+                        if i == 0:
+                            row["Twitter/X Type"] = "THREAD"
+                        rows.append(row)
+                    time.sleep(0.4)
+                    continue
+                print("fallback to single tweet")
+
+            print(f"    Captioning for {platform}…", end=" ", flush=True)
+            caption = caption_for(platform, art, mutapa_url)
+            print("OK" if caption else "FAIL")
 
             rows.append(build_metricool_row(
                 platform=platform,

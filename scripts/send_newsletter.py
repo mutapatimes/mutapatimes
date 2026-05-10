@@ -942,7 +942,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                 Share on WhatsApp
               </a>
               &nbsp;&nbsp;
-              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%20%E2%80%94%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mon%2FWed%2FSat.%0A%0Ahttps%3A%2F%2Fwww.mutapatimes.com"
+              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%20%E2%80%94%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mondays%20%26%20Thursdays.%0A%0AIf%20a%20friend%20forwarded%20this%20to%20you%2C%20subscribe%20at%3A%0Ahttps%3A%2F%2Fwww.mutapatimes.com%2Fsubscribe.html%3Fref%3Dnewsletter-share"
                  target="_blank"
                  style="display:inline-block;padding:8px 20px;
                         font-family:Helvetica,Arial,sans-serif;
@@ -950,6 +950,33 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                         color:#ffffff;background:#1a1a1a;
                         text-decoration:none;letter-spacing:0.02em;">
                 Share via Email
+              </a>
+              <p style="font-family:Helvetica,Arial,sans-serif;
+                        font-size:11px;color:#6b6b6b;margin:14px 0 0;
+                        font-style:italic;">
+                Forward to a friend &mdash; it's how we grow. If this was
+                forwarded to you, <a href="https://www.mutapatimes.com/subscribe.html?ref=newsletter-forward"
+                style="color:#c0392b;font-weight:700;">subscribe free</a>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Follow @mutapatimes on X — pushes brand-account growth -->
+          <tr>
+            <td class="follow-cell" style="padding:6px 20px 16px;text-align:center;">
+              <p style="font-family:Helvetica,Arial,sans-serif;
+                        font-size:12px;color:#6b6b6b;line-height:1.5;margin:0 0 10px;">
+                Between briefings, follow us on X for breaking stories.
+              </p>
+              <a href="https://twitter.com/intent/follow?screen_name=mutapatimes"
+                 target="_blank"
+                 style="display:inline-block;padding:8px 20px;
+                        font-family:Helvetica,Arial,sans-serif;
+                        font-size:12px;font-weight:700;
+                        color:#ffffff;background:#000000;
+                        text-decoration:none;letter-spacing:0.02em;
+                        border-radius:999px;">
+                𝕏  Follow @mutapatimes
               </a>
             </td>
           </tr>
@@ -967,7 +994,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:11px;color:#6b6b6b;line-height:1.5;margin:0 0 6px;">
                 The Mutapa Times delivers curated Zimbabwean news from foreign press
-                for the diaspora &mdash; every Monday, Wednesday, and Saturday.
+                for the diaspora &mdash; every Monday and Thursday.
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:10px;color:#999999;margin:0 0 6px;">
