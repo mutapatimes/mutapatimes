@@ -122,8 +122,14 @@ PLATFORM_FLAGS = [
     "Pinterest", "TikTok", "Youtube", "Threads", "Bluesky",
 ]
 
-BRAND_NAME = "The Mutapa Times"
+BRAND_NAME = os.environ.get("METRICOOL_BRAND_NAME", "")
 SUBSCRIBE_URL = "https://www.mutapatimes.com/subscribe.html"
+
+# ── Evening-mode override (ad-hoc smoke-test runs) ────────────
+EVENING_START_CAT = os.environ.get("METRICOOL_EVENING_START", "")
+EVENING_ARTICLES = int(os.environ.get("METRICOOL_EVENING_ARTICLES", "2"))
+EVENING_INTERVAL_MIN = int(os.environ.get("METRICOOL_EVENING_INTERVAL", "30"))
+PLATFORMS_ORDERED = ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram")
 
 # ── Newsletter-driver posts ───────────────────────────────────
 # 4 distinct value propositions per run × 5 platforms = 20 sub posts/run.
@@ -594,12 +600,19 @@ def slugify(s, max_len=60):
 def schedule_for(platform, article_idx, run_date_utc):
     """Compute UTC datetime for a post.
 
-    Articles are spread across multiple days. With 5 articles/day:
-    - idx 0-4   → day 0 (today)
-    - idx 5-9   → day 1 (tomorrow)
-    - idx 10-14 → day 2
-    Slots within a day come from each platform's SCHEDULE_CAT array.
+    Default: articles spread across multiple days using SCHEDULE_CAT slots.
+    Evening-mode override (EVENING_START_CAT set): all posts staggered
+    tonight from EVENING_START_CAT, 5 min apart per platform, INTERVAL apart
+    per article.
     """
+    if EVENING_START_CAT:
+        h, m = map(int, EVENING_START_CAT.split(":"))
+        plat_off = PLATFORMS_ORDERED.index(platform) * 5
+        total_min = (article_idx * EVENING_INTERVAL_MIN) + plat_off
+        cat_dt = datetime(run_date_utc.year, run_date_utc.month, run_date_utc.day,
+                          h, m, tzinfo=timezone(CAT_OFFSET)) + timedelta(minutes=total_min)
+        return cat_dt.astimezone(timezone.utc)
+
     day_offset = article_idx // ARTICLES_PER_DAY
     slot_in_day = article_idx % ARTICLES_PER_DAY
     cat_time = SCHEDULE_CAT[platform][slot_in_day]
@@ -611,8 +624,9 @@ def schedule_for(platform, article_idx, run_date_utc):
 
 
 def articles_for_this_run():
-    """Pick the slate size based on what day the run fires.
-    Mon: covers Mon-Wed (3 days). Thu: covers Thu-Sun (4 days)."""
+    """Pick the slate size based on the run mode."""
+    if EVENING_START_CAT:
+        return EVENING_ARTICLES
     weekday = datetime.now(timezone.utc).weekday()
     days = DAYS_BY_WEEKDAY.get(weekday, 1)
     return days * ARTICLES_PER_DAY
@@ -971,6 +985,19 @@ def main():
 
     # ── Append newsletter-driver posts ──────────────────────
     # 4 posts per platform per run, one per value-prop angle.
+    # Skipped in evening mode — no time to fit 20 promos in one evening.
+    if EVENING_START_CAT:
+        print(f"\n  Skipping newsletter-driver posts (evening-mode override)")
+        with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=METRICOOL_COLUMNS, quoting=csv.QUOTE_ALL)
+            w.writeheader()
+            for r in rows:
+                w.writerow(r)
+        print(f"\n  Wrote {OUTPUT_CSV} ({len(rows)} rows)")
+        save_queued(queued)
+        print("\n=== DONE ===")
+        return
+
     print(f"\n  Generating newsletter-driver posts (4 angles × 5 platforms)…")
     promo_card_urls = ensure_promo_cards()
     weekday = datetime.now(timezone.utc).weekday()

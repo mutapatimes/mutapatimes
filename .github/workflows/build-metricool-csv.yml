@@ -8,6 +8,23 @@ on:
     # Thu's batch covers Thu/Fri/Sat/Sun (4 days, 20 articles).
     - cron: '0 5 * * 1,4'
   workflow_dispatch:
+    inputs:
+      evening_start:
+        description: 'Ad-hoc evening run — start time in CAT (HH:MM, e.g. 21:00). Leave blank for the normal multi-day schedule.'
+        required: false
+        default: ''
+      evening_articles:
+        description: 'Evening run: how many articles (each posts to all 5 platforms)'
+        required: false
+        default: '2'
+      evening_interval:
+        description: 'Evening run: minutes between articles'
+        required: false
+        default: '30'
+      brand_name:
+        description: 'Override Metricool brand name. Leave blank to omit (Metricool routes to your default brand).'
+        required: false
+        default: ''
 
 jobs:
   build-csv:
@@ -29,6 +46,10 @@ jobs:
       - name: Build Metricool CSV + headline cards
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          METRICOOL_EVENING_START: ${{ inputs.evening_start }}
+          METRICOOL_EVENING_ARTICLES: ${{ inputs.evening_articles || '2' }}
+          METRICOOL_EVENING_INTERVAL: ${{ inputs.evening_interval || '30' }}
+          METRICOOL_BRAND_NAME: ${{ inputs.brand_name }}
         run: python3 scripts/build_metricool_csv.py
 
       - name: Commit CSV, cards, and queue tracker
