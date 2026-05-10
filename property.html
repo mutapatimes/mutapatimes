@@ -70,7 +70,6 @@
   </head>
 
   <body>
-    <script src="js/gate.js"></script>
    <div class="paper">
       <div class="aboutTitle">
         <div class="" id="google_translate_element"><div ></div> </div>
@@ -128,6 +127,22 @@
 
   <!-- Highlights cards -->
   <div class="prop-highlights" id="highlightCards"></div>
+
+  <!-- Live listings feed (scraped from property.co.zw) -->
+  <div class="prop-listings-section">
+    <div class="prop-listings-header">
+      <h5 class="prop-section-title">Latest Houses for Sale</h5>
+      <span class="prop-listings-meta" id="listingsMeta"></span>
+    </div>
+    <div class="prop-listings-grid" id="listingsGrid">
+      <p class="prop-listings-loading">Loading latest listings&hellip;</p>
+    </div>
+    <p class="prop-listings-attribution">
+      Listings sourced from
+      <a href="https://www.property.co.zw/houses-for-sale" target="_blank" rel="noopener">property.co.zw</a>
+      &mdash; click any card to view full details on the original site.
+    </p>
+  </div>
 
   <!-- Biggest price changes -->
   <div class="prop-movers">
@@ -250,7 +265,7 @@
 <div class="footer-subscribe">
   <div class="footer-subscribe-inner">
     <h4 class="footer-subscribe-title">Stay informed on Zimbabwe</h4>
-    <p class="footer-subscribe-copy">Curated news, market data &amp; analysis delivered 3&times; a week.</p>
+    <p class="footer-subscribe-copy">Curated news, market data &amp; analysis delivered 2&times; a week.</p>
     <form class="footer-subscribe-form" method="POST" action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==" target="brevo-footer-frame">
       <input type="email" class="footer-subscribe-input" name="EMAIL" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">
       <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
@@ -339,6 +354,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
   <script src="js/property-data.js"></script>
   <script src="js/property.js"></script>
+  <script src="js/property-listings.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {

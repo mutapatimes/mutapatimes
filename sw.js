@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v8';
+var CACHE_VERSION = 'mutapa-v10';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 
@@ -29,7 +29,6 @@ var APP_SHELL = [
   '/js/plugins.js',
   '/js/config.js',
   '/js/main.js',
-  '/js/gate.js',
   '/js/articles.js',
   '/js/person.js',
   '/js/business.js',
@@ -37,6 +36,7 @@ var APP_SHELL = [
   '/js/people.js',
   '/js/property-data.js',
   '/js/property.js',
+  '/js/property-listings.js',
   '/site.webmanifest',
   '/img/android-icon-192x192.png',
   '/img/favicon-32x32.png',

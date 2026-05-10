@@ -1481,7 +1481,7 @@ function renderMainStories(articles) {
     var leftCol = $('<div class="subscribe-col-left">');
     leftCol.append($('<p class="subscribe-label">').text("The Mutapa Times Newsletter"));
     leftCol.append($('<h2 class="subscribe-title">').text("Essential intelligence for the Zimbabwean diaspora."));
-    leftCol.append($('<p class="subscribe-text">').text("Curated foreign press coverage, economic data, and original analysis\u2014delivered three times a week to readers in over 30 countries."));
+    leftCol.append($('<p class="subscribe-text">').text("Curated foreign press coverage, economic data, and original analysis\u2014delivered twice a week to readers in over 30 countries."));
 
     // Value prop pills
     var pills = $('<div class="subscribe-pills">');

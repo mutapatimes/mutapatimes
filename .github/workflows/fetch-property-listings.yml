@@ -1,0 +1,26 @@
+name: Fetch Property Listings
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: '15 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-listings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scrape property.co.zw houses for sale
+        run: python3 scripts/fetch_property_listings.py
+
+      - name: Commit updated listings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/property-listings.json
+          git diff --cached --quiet || (git commit -m "Update property listings [automated]" && git push)

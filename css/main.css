@@ -1346,108 +1346,6 @@ h4 { color: var(--ink); font-weight: 700; }
 .cookie-consent-btn { background:var(--accent); color:#fff; border:none; padding:8px 24px; font-size:0.85em; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; cursor:pointer; white-space:nowrap; transition:background 0.15s ease; }
 .cookie-consent-btn:hover { background: #a01818; }
 
-/* ── Email gate overlay ── */
-
-/* When gate is active: blur everything below the header */
-body.gate-active main,
-body.gate-active main ~ *,
-body.gate-active .tradingview-widget-container,
-body.gate-active footer,
-body.gate-active .back-to-top {
-  filter: blur(6px);
-  pointer-events: none;
-  user-select: none;
-  transition: filter 0.6s ease;
-}
-
-#gate-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 9999;
-  background: rgba(255,255,255,0.55);
-  display: flex; align-items: center; justify-content: center;
-  padding: 24px;
-  transition: opacity 0.5s ease;
-}
-.gate-card {
-  background: var(--paper, #fff); color: var(--ink, #1a1a1a);
-  max-width: 440px; width: 100%;
-  padding: 36px 36px 32px;
-  text-align: center;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.12);
-  border-top: 3px solid var(--ink, #1a1a1a);
-}
-.gate-badge {
-  display: inline-block;
-  background: var(--ink, #1a1a1a); color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.6em; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.18em;
-  padding: 4px 14px; margin-bottom: 16px;
-}
-.gate-headline {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.6em; font-weight: 700;
-  margin: 0 0 10px;
-}
-.gate-copy {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85em; line-height: 1.6;
-  color: #555; margin: 0 0 22px;
-}
-.gate-form {
-  display: flex; gap: 0; margin: 0 0 14px;
-}
-.gate-input {
-  flex: 1; border: 2px solid #ddd; border-right: none;
-  padding: 12px 14px; font-size: 0.9em;
-  font-family: 'Inter', sans-serif;
-  outline: none; transition: border-color 0.2s;
-  background: #fff;
-}
-.gate-input:focus { border-color: var(--ink, #1a1a1a); }
-.gate-btn {
-  background: var(--accent, #c0392b); color: #fff;
-  border: none; padding: 12px 22px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8em; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.06em;
-  cursor: pointer; white-space: nowrap;
-  transition: background 0.15s ease;
-}
-.gate-btn:hover { background: #a01818; }
-.gate-fine {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.68em; color: #999; margin: 0;
-  letter-spacing: 0.02em;
-}
-
-/* Mobile: bottom sheet, full width, 75vh */
-@media (max-width: 640px) {
-  #gate-overlay {
-    align-items: flex-end;
-    padding: 0;
-    background: rgba(0,0,0,0.3);
-  }
-  .gate-card {
-    max-width: none;
-    width: 100%;
-    min-height: 75vh;
-    padding: 32px 24px 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 -4px 30px rgba(0,0,0,0.15);
-    border-top: 3px solid var(--ink, #1a1a1a);
-    border-radius: 16px 16px 0 0;
-  }
-  .gate-headline { font-size: 1.4em; }
-  .gate-copy { font-size: 0.82em; }
-  .gate-form { flex-direction: column; gap: 10px; }
-  .gate-input { border-right: 2px solid #ddd; }
-  .gate-btn { width: 100%; padding: 14px; font-size: 0.85em; }
-}
-
 /* Google translate */
 .goog-te-gadget-icon { display:none; }
 .category { text-align:center; }
@@ -3015,6 +2913,108 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   margin: 0 0 12px;
 }
 
+/* Live listings feed (scraped from property.co.zw) */
+.prop-listings-section {
+  padding: 20px 20px 16px;
+  border-top: 1px solid var(--rule);
+}
+.prop-listings-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.prop-listings-header .prop-section-title { margin: 0; }
+.prop-listings-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7em;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+.prop-listings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.prop-listings-loading,
+.prop-listings-error {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85em;
+  color: var(--text-light);
+  padding: 24px 0;
+  margin: 0;
+}
+.prop-listing-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.prop-listing-card:hover {
+  border-color: var(--ink);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.prop-listing-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #f3f3f0;
+  background-size: cover;
+  background-position: center;
+}
+.prop-listing-body { padding: 10px 12px 12px; }
+.prop-listing-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+.prop-listing-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.prop-listing-location {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72em;
+  color: var(--text-light);
+  margin: 0 0 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prop-listing-amenities {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7em;
+  color: #666;
+  letter-spacing: 0.02em;
+}
+.prop-listing-amenities span { margin-right: 10px; }
+.prop-listings-attribution {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68em;
+  color: var(--text-light);
+  text-align: center;
+  margin: 14px 0 0;
+}
+.prop-listings-attribution a { color: var(--accent); }
+
 /* Biggest movers */
 .prop-movers {
   padding: 20px 20px 16px;
@@ -3222,6 +3222,7 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 @media (max-width: 900px) {
   .prop-highlights { grid-template-columns: repeat(2, 1fr); }
   .prop-movers-grid { grid-template-columns: repeat(2, 1fr); }
+  .prop-listings-grid { grid-template-columns: repeat(3, 1fr); }
   .prop-viewed-section { grid-template-columns: 1fr; }
   .prop-viewed-col:first-child { border-right: none; border-bottom: 1px solid var(--rule); }
   .prop-chart-header { flex-direction: column; align-items: flex-start; }
@@ -3231,6 +3232,8 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .prop-highlight-value { font-size: 1.3em; }
   .prop-movers { padding: 16px 12px; }
   .prop-movers-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .prop-listings-section { padding: 16px 12px; }
+  .prop-listings-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .prop-chart-section { padding: 16px 12px; }
   .prop-chart-wrap { height: 280px; }
   .prop-viewed-col { padding: 16px 12px; }

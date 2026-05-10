@@ -876,7 +876,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                  style="font-family:Helvetica,Arial,sans-serif;
                         font-size:14px;color:#2c2c2c;line-height:1.5;margin:0;">
                 Your briefing of the most important Zimbabwe headlines
-                from foreign press. Curated for the diaspora, three times a week.
+                from foreign press. Curated for the diaspora, twice a week.
               </p>
             </td>
           </tr>

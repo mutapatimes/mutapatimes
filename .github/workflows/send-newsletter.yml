@@ -2,8 +2,8 @@ name: Send Newsletter
 
 on:
   schedule:
-    # Monday, Wednesday, Saturday at 07:00 UTC (09:00 CAT)
-    - cron: '0 7 * * 1,3,6'
+    # Monday & Thursday at 07:00 UTC (09:00 CAT)
+    - cron: '0 7 * * 1,4'
   workflow_dispatch:  # Manual trigger for testing
 
 jobs:
