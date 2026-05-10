@@ -979,9 +979,11 @@ def fetch_spotlight():
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
 
-    # Import API-sourced articles into CMS as wire articles
-    api_articles = [a for a in merged if a.get("_source_api", "") != "RSS fallback"]
-    write_articles_to_cms(api_articles, label="CMS WIRE IMPORT (spotlight)")
+    # Import all spotlight + overflow articles into CMS as wire content.
+    # Previously we excluded RSS-fallback articles, but that left articles.html
+    # starved when API quotas were exhausted (RSS is most of the volume).
+    # write_articles_to_cms() dedupes by URL so re-imports are safe.
+    write_articles_to_cms(merged, label="CMS WIRE IMPORT (spotlight)")
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)
@@ -1081,11 +1083,13 @@ def _get_existing_source_urls():
     return urls
 
 
-def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT"):
-    """Import API-sourced articles as CMS markdown files (wire articles).
+def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=None):
+    """Import wire articles as CMS markdown files.
 
     All articles are written with source_type: wire so they are never
-    displayed as original Mutapa Times content.
+    displayed as original Mutapa Times content. category_hint, if given,
+    overrides title-based inference (used by category RSS imports where
+    we already know the bucket).
     """
     from datetime import datetime, timezone
     print(f"\n=== {label} ===")
@@ -1104,9 +1108,15 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT"):
     for a in api_articles:
         url = a.get("url", "")
         title = a.get("title", "")
-        image = a.get("image", "").strip()
-        desc = a.get("description", "").strip()
-        source = a.get("source", "")
+        image = (a.get("image") or "").strip()
+        desc = (a.get("description") or "").strip()
+        # source comes through as either a string (Guardian/NYT/etc.) or as
+        # {"name": ..., "url": ...} (NewsAPI / Google News RSS shape).
+        raw_source = a.get("source") or ""
+        if isinstance(raw_source, dict):
+            source = (raw_source.get("name") or "").strip()
+        else:
+            source = str(raw_source).strip()
 
         if not url or not title:
             continue
@@ -1128,7 +1138,7 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT"):
         if os.path.exists(filepath):
             continue
 
-        category = _infer_cms_category(title)
+        category = category_hint or _infer_cms_category(title)
         # Escape quotes in YAML values
         safe_title = title.replace('"', '\\"')
         safe_desc = desc[:280].replace('"', '\\"') if desc else safe_title[:280]
@@ -1212,10 +1222,31 @@ def main():
 
     # Fetch category articles from Google News RSS
     all_new = []
+    # Categories come from Google News and feed both data/{cat}.json (used by
+    # the homepage feed) AND content/articles/ (used by /articles.html).
+    # Map fetch_news category labels to the category buckets shown in the
+    # articles UI (Title-cased to match articles.html chip labels).
+    CATEGORY_LABEL_MAP = {
+        "business": "Business",
+        "technology": "Tech",
+        "entertainment": "Culture",
+        "sports": "Sport",
+        "science": "Tech",
+        "health": "Health",
+        "politics": "Politics",
+        "policy": "Policy",
+    }
     for name, feeds in CATEGORIES.items():
         result = fetch_category(name, feeds)
         if result:
             all_new.extend(result)
+            # Also import these to the CMS so /articles.html has volume.
+            cat_label = CATEGORY_LABEL_MAP.get(name, name.title())
+            write_articles_to_cms(
+                result,
+                label=f"CMS WIRE IMPORT ({name})",
+                category_hint=cat_label,
+            )
 
     # Import ALL Guardian + NYT articles to CMS as wire content
     import_guardian_nyt_to_cms()
