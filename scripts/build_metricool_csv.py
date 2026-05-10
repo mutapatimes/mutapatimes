@@ -62,6 +62,64 @@ SCHEDULE_CAT = {
 }
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
+# ── Metricool CSV format ──────────────────────────────────────
+# Mirrors Metricool's import template (data/metricool-template-reference.csv).
+# DO NOT REORDER — Metricool relies on column position for some imports.
+METRICOOL_COLUMNS = [
+    "Text", "Date", "Time", "Draft",
+    "Facebook", "Twitter/X", "LinkedIn", "GBP", "Instagram",
+    "Pinterest", "TikTok", "Youtube", "Threads", "Bluesky",
+    "Picture Url 1", "Picture Url 2", "Picture Url 3", "Picture Url 4", "Picture Url 5",
+    "Picture Url 6", "Picture Url 7", "Picture Url 8", "Picture Url 9", "Picture Url 10",
+    "Alt text picture 1", "Alt text picture 2", "Alt text picture 3", "Alt text picture 4", "Alt text picture 5",
+    "Alt text picture 6", "Alt text picture 7", "Alt text picture 8", "Alt text picture 9", "Alt text picture 10",
+    "Document title", "Shortener",
+    "Video Thumbnail Url", "Video Cover Frame",
+    "Twitter/X Can reply", "Twitter/X Type",
+    "Twitter/X Poll Duration minutes",
+    "Twitter/X Poll Option 1", "Twitter/X Poll Option 2",
+    "Twitter/X Poll Option 3", "Twitter/X Poll Option 4",
+    "Pinterest Board", "Pinterest Pin Title", "Pinterest Pin Link", "Pinterest Pin New Format",
+    "Instagram Post Type", "Instagram Show Reel On Feed",
+    "Youtube Video Title", "Youtube Video Type", "Youtube Video Privacy",
+    "Youtube video for kids", "Youtube Video Category", "Youtube Video Tags", "Youtube playlist",
+    "GBP Post Type",
+    "Facebook Post Type", "Facebook Title", "First Comment Text",
+    "TikTok Title",
+    "TikTok disable comments", "TikTok disable duet", "TikTok disable stitch",
+    "TikTok Post Privacy", "TikTok Branded Content", "TikTok Your Brand",
+    "TikTok Auto Add Music", "TikTok Photo Cover Index",
+    "TikTok musicId", "TikTok music title", "TikTok music author",
+    "TikTok music previewUrl", "TikTok music thumbnailUrl",
+    "TikTok music soundVolume", "TikTok music originalVolume",
+    "TikTok music startMillis", "TikTok music endMillis",
+    "TikTok Ai generated content",
+    "LinkedIn Type", "LinkedIn Poll Question",
+    "LinkedIn Poll Option 1", "LinkedIn Poll Option 2",
+    "LinkedIn Poll Option 3", "LinkedIn Poll Option 4",
+    "LinkedIn Poll Duration",
+    "LinkedIn Show link preview", "LinkedIn Images as Carousel",
+    "Threads Reply Control", "Threads Is Spoiler", "Threads Post Type",
+    "Brand name",
+]
+
+# Map internal platform identifier → Metricool boolean column to flip "true"
+PLATFORM_TO_FLAG = {
+    "LinkedIn": "LinkedIn",
+    "Facebook": "Facebook",
+    "Threads": "Threads",
+    "Twitter": "Twitter/X",
+    "Instagram": "Instagram",
+}
+
+# All boolean platform columns — used to default-zero each row
+PLATFORM_FLAGS = [
+    "Facebook", "Twitter/X", "LinkedIn", "GBP", "Instagram",
+    "Pinterest", "TikTok", "Youtube", "Threads", "Bluesky",
+]
+
+BRAND_NAME = "The Mutapa Times"
+
 # ── Headline card rendering ───────────────────────────────────
 CARD_SIZE = 1080
 CARD_BG = (13, 13, 13)
@@ -395,6 +453,50 @@ def schedule_for(platform, slot_index, run_date_utc):
     return cat_dt.astimezone(timezone.utc)
 
 
+# ── Metricool row builder ─────────────────────────────────────
+def build_metricool_row(platform, caption, article, date_str, time_str, image_url):
+    """Build one CSV row in Metricool's import format. All columns present;
+    most stay empty since we're publishing a basic image-with-caption post."""
+    row = {col: "" for col in METRICOOL_COLUMNS}
+
+    # Core fields
+    row["Text"] = caption
+    row["Date"] = date_str
+    row["Time"] = time_str
+    row["Draft"] = "false"
+
+    # Platform flags — set ours to true, all others to false
+    for flag in PLATFORM_FLAGS:
+        row[flag] = "false"
+    row[PLATFORM_TO_FLAG[platform]] = "true"
+
+    # Image (single image per post — Picture Url 1 + alt text)
+    if image_url:
+        row["Picture Url 1"] = image_url
+        # Alt text: headline truncated to 200 chars (Metricool/IG limit-friendly)
+        alt = (article.get("title") or "").strip()
+        if len(alt) > 200:
+            alt = alt[:199].rstrip() + "…"
+        row["Alt text picture 1"] = alt
+
+    # Per-platform Post Type defaults (Metricool wants these explicit)
+    if platform == "Facebook":
+        row["Facebook Post Type"] = "POST"
+    elif platform == "Instagram":
+        row["Instagram Post Type"] = "POST"
+    elif platform == "Threads":
+        row["Threads Post Type"] = "POST"
+    elif platform == "LinkedIn":
+        row["LinkedIn Type"] = "POST"
+        # Render the URL preview card on LinkedIn — much higher CTR
+        row["LinkedIn Show link preview"] = "true"
+    elif platform == "Twitter":
+        row["Twitter/X Type"] = "POST"
+
+    row["Brand name"] = BRAND_NAME
+    return row
+
+
 # ── Main ──────────────────────────────────────────────────────
 def main():
     print("=== BUILD METRICOOL CSV ===")
@@ -412,9 +514,10 @@ def main():
 
     if not new_articles:
         print("  Nothing new to queue. Done.")
-        # Still write an empty CSV so importers don't choke
-        with open(OUTPUT_CSV, "w", encoding="utf-8") as f:
-            csv.writer(f).writerow(["caption", "date", "time", "networks", "media_url", "post_type"])
+        # Still write an empty CSV with the proper Metricool header so a stale
+        # download doesn't crash their importer.
+        with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
+            csv.writer(f, quoting=csv.QUOTE_ALL).writerow(METRICOOL_COLUMNS)
         return
 
     selected = new_articles[:ARTICLES_PER_DAY]
@@ -463,24 +566,23 @@ def main():
             else:
                 media = art["image"] or card_url
 
-            rows.append({
-                "caption": caption,
-                "date": sched_utc.strftime("%Y-%m-%d"),
-                "time": sched_utc.strftime("%H:%M"),
-                "networks": platform,
-                "media_url": media,
-                "post_type": "image" if media else "text",
-            })
+            rows.append(build_metricool_row(
+                platform=platform,
+                caption=caption,
+                article=art,
+                date_str=sched_utc.strftime("%Y-%m-%d"),
+                time_str=sched_utc.strftime("%H:%M:%S"),
+                image_url=media,
+            ))
 
             # Mild rate limit on Gemini
             time.sleep(0.4)
 
         queued[art["url"]] = datetime.now(timezone.utc).isoformat()
 
-    # Write CSV
-    fieldnames = ["caption", "date", "time", "networks", "media_url", "post_type"]
+    # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+        w = csv.DictWriter(f, fieldnames=METRICOOL_COLUMNS, quoting=csv.QUOTE_ALL)
         w.writeheader()
         for r in rows:
             w.writerow(r)
