@@ -191,6 +191,18 @@ NEWSLETTER_SLOT_EVENING_CAT = "19:30"
 PROMO_CARDS_DIR = "img/cards"
 PROMO_CARD_BASE = "https://www.mutapatimes.com/img/cards"
 
+# ── Weekly thematic posts (property + economic data) ──────────
+# Mon batch emits a property "houses on the market" post for Wed.
+# Thu batch emits an economic "stat of the week" post for Sat.
+# One per platform per run (5 posts/week per theme).
+WEEKLY_DAY_OFFSET = 2          # Day-2 of the batch window (Wed for Mon, Sat for Thu)
+WEEKLY_PROPERTY_TIME_CAT = "12:00"
+WEEKLY_ECON_TIME_CAT = "14:00"
+PROPERTY_PAGE_URL = "https://www.mutapatimes.com/property.html"
+ECONOMY_PAGE_URL = "https://www.mutapatimes.com/economy.html"
+PROPERTY_LISTINGS_FILE = os.path.join(DATA_DIR, "property-listings.json")
+GDP_FILE = os.path.join(DATA_DIR, "gdp-zimbabwe-quarterly.json")
+
 # ── Headline card rendering ───────────────────────────────────
 CARD_W = 1080
 CARD_H = 1350  # portrait 4:5 — Instagram-optimal
@@ -919,6 +931,311 @@ def ensure_promo_cards():
     return urls
 
 
+# ── Generic stat-card renderer (used for weekly economic + property cards) ──
+def render_stat_card(eyebrow, big_text, sub_text, footer_cta, output_path, color_idx=0):
+    """Generic 1080x1350 portrait card with one big number/headline.
+    Used for "stat of the week" and "property snapshot" weekly posts."""
+    bg = card_bg(color_idx)
+    img = Image.new("RGB", (CARD_W, CARD_H), bg)
+    draw = ImageDraw.Draw(img)
+
+    masthead_font = load_font("serif_bold", 36)
+    eyebrow_font = load_font("sans_bold", 22)
+    big_font = load_font("serif_bold", 132)
+    sub_font = load_font("sans", 30)
+    cta_font = load_font("sans_bold", 22)
+
+    draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
+    draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((60, 120), eyebrow.upper(), font=eyebrow_font, fill=ACCENT)
+
+    # Big text — wrapped, centered vertically in the middle band
+    big_lines = wrap_text(big_text, big_font, CARD_W - 120, draw)
+    if len(big_lines) > 4:
+        big_lines = big_lines[:4]
+    line_h = 152
+    block_h = len(big_lines) * line_h
+    available_h = CARD_H - 460
+    y = 200 + (available_h - block_h) // 2
+    for ln in big_lines:
+        draw.text((60, y), ln, font=big_font, fill=CARD_FG)
+        y += line_h
+
+    # Sub text (under big number) — wrapped to 2 lines max
+    sub_lines = wrap_text(sub_text, sub_font, CARD_W - 120, draw)[:3]
+    sy = y + 18
+    for sl in sub_lines:
+        draw.text((60, sy), sl, font=sub_font, fill=CARD_FG_MUTED)
+        sy += 44
+
+    # Footer CTA
+    cta_y = CARD_H - 130
+    draw.text((60, cta_y), footer_cta, font=cta_font, fill=ACCENT)
+    draw.text((60, cta_y + 32), "mutapatimes.com", font=sub_font, fill=CARD_FG)
+
+    img.save(output_path, "PNG", optimize=True)
+
+
+# ── Weekly property snapshot ──────────────────────────────────
+def load_property_listings():
+    """Returns top listings from data/property-listings.json or [] if missing."""
+    if not os.path.exists(PROPERTY_LISTINGS_FILE):
+        return []
+    try:
+        d = json.load(open(PROPERTY_LISTINGS_FILE))
+        return d.get("listings") or []
+    except (json.JSONDecodeError, IOError):
+        return []
+
+
+def _parse_price_usd(price_str):
+    """Extract numeric value from 'USD 450,000' style. Returns None if unparseable."""
+    if not price_str:
+        return None
+    m = re.search(r"[\d,]+(?:\.\d+)?", price_str)
+    if not m:
+        return None
+    try:
+        return float(m.group(0).replace(",", ""))
+    except ValueError:
+        return None
+
+
+def property_summary():
+    """Compute summary stats from current listings: count, price range, top suburbs."""
+    listings = load_property_listings()
+    if not listings:
+        return None
+    prices = [v for v in (_parse_price_usd(l.get("price", "")) for l in listings) if v]
+    suburbs = []
+    for l in listings:
+        loc = l.get("location") or ""
+        if loc:
+            suburbs.append(loc.split(",")[0].strip())
+    # Top 5 suburbs by frequency
+    from collections import Counter
+    top_suburbs = [s for s, _ in Counter(suburbs).most_common(5)]
+    return {
+        "count": len(listings),
+        "min_price": min(prices) if prices else None,
+        "max_price": max(prices) if prices else None,
+        "median_price": sorted(prices)[len(prices) // 2] if prices else None,
+        "top_suburbs": top_suburbs,
+        "sample": listings[:5],
+    }
+
+
+def _fmt_usd_short(v):
+    if v is None:
+        return "—"
+    if v >= 1e6:
+        return f"${v/1e6:.1f}M"
+    if v >= 1e3:
+        return f"${v/1e3:.0f}K"
+    return f"${int(v)}"
+
+
+def weekly_property_caption(platform, summary):
+    """Per-platform copy for the weekly property snapshot."""
+    rng_lo = _fmt_usd_short(summary["min_price"])
+    rng_hi = _fmt_usd_short(summary["max_price"])
+    suburbs = ", ".join(summary["top_suburbs"][:4])
+    n = summary["count"]
+    if platform == "LinkedIn":
+        return (
+            f"Zimbabwe housing market — what's on right now.\n\n"
+            f"{n} active listings, asking prices {rng_lo}–{rng_hi}. "
+            f"Concentration in {suburbs}.\n\n"
+            f"Live snapshot updated every 6h, sourced from property.co.zw, "
+            f"with our economic-context overlay.\n\n"
+            f"Browse: {PROPERTY_PAGE_URL}\n\n"
+            f"#Zimbabwe #Property #RealEstate #Harare"
+        )
+    if platform == "Facebook":
+        return (
+            f"Zimbabwe houses for sale this week 🏠\n\n"
+            f"{n} listings on the market. Asking prices range from {rng_lo} "
+            f"to {rng_hi}. Hotspots: {suburbs}.\n\n"
+            f"Would you live in any of these?\n\n"
+            f"Browse all: {PROPERTY_PAGE_URL}"
+        )
+    if platform == "Threads":
+        return (
+            f"Zim property snapshot 🏘️\n\n"
+            f"{n} listings · {rng_lo}–{rng_hi} · mostly {suburbs.split(',')[0]}\n\n"
+            f"Live feed: {PROPERTY_PAGE_URL}\n\n"
+            f"#Zimbabwe #Property"
+        )
+    if platform == "Twitter":
+        body = f"Zim property this week: {n} active listings, {rng_lo}–{rng_hi}. Hotspots: {suburbs.split(',')[0]}, {(suburbs.split(',')[1].strip() if ',' in suburbs else 'Bulawayo')}."
+        body = _twitter_safe(body, PROPERTY_PAGE_URL, "")
+        return f"{body}\n{PROPERTY_PAGE_URL}\n\n#Zimbabwe #Property #RealEstate"
+    if platform == "Instagram":
+        return (
+            f"Zimbabwe houses for sale this week 🏠🇿🇼\n\n"
+            f"{n} active listings on the market right now, asking prices "
+            f"from {rng_lo} all the way to {rng_hi}. The big hotspots: "
+            f"{suburbs}.\n\n"
+            f"From townhouses in Vainona to family homes in Bulawayo — "
+            f"see the live feed with photos and prices on our property "
+            f"index.\n\n"
+            f"Tap the link in bio → property page (live, updates every 6h).\n\n"
+            f"#Zimbabwe #ZimbabweProperty #Harare #Bulawayo #ZimRealEstate "
+            f"#PropertyZW #ZimDiaspora #AfricaProperty"
+        )
+    return f"Zim property snapshot — {PROPERTY_PAGE_URL}"
+
+
+# ── Weekly economic stat ──────────────────────────────────────
+def load_gdp_data():
+    """Returns the parsed GDP JSON or None if missing."""
+    if not os.path.exists(GDP_FILE):
+        return None
+    try:
+        return json.load(open(GDP_FILE))
+    except (json.JSONDecodeError, IOError):
+        return None
+
+
+def economic_stat_of_the_week():
+    """Compute one interesting headline stat from the GDP data."""
+    g = load_gdp_data()
+    if not g:
+        return None
+    quarters = g.get("quarters", [])
+    if not quarters:
+        return None
+    last_idx = len(quarters) - 1
+    quarter = quarters[last_idx]
+    gdp = (g.get("aggregates") or {}).get("GDP at Market Prices") or []
+    if not gdp:
+        return None
+    latest = gdp[last_idx]
+    yoy = None
+    if last_idx >= 4 and gdp[last_idx - 4]:
+        yoy = ((latest - gdp[last_idx - 4]) / gdp[last_idx - 4]) * 100
+    # Top sector by latest-quarter value
+    sectors = g.get("sectors") or {}
+    top_name, top_val = None, -1
+    for name, vals in sectors.items():
+        if vals and vals[last_idx] > top_val:
+            top_name, top_val = name, vals[last_idx]
+    return {
+        "quarter": quarter,
+        "gdp_latest_usd": latest,
+        "yoy_pct": yoy,
+        "top_sector": top_name,
+        "top_sector_value": top_val,
+    }
+
+
+def _fmt_gdp_big(v):
+    if v >= 1e9:
+        return f"${v/1e9:.1f}B"
+    if v >= 1e6:
+        return f"${v/1e6:.0f}M"
+    return f"${int(v)}"
+
+
+def _short_sector(name):
+    if not name:
+        return ""
+    swap = {
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles": "Wholesale & retail",
+        "Public administration and defence; compulsory social security": "Public admin",
+        "Activities of Households as Employers Producing Activities of Households for own use": "Household employers",
+        "Water supply; sewerage, waste management and remediation activities": "Water & waste",
+        "Electricity, gas, steam and air conditioning supply": "Electricity & gas",
+        "Agiculture, Hunting and Fishing and forestry": "Agriculture & forestry",
+        "Information and communication": "ICT",
+        "Financial and insurance activities": "Finance",
+        "Mining and quarrying": "Mining",
+    }
+    return swap.get(name, name)
+
+
+def weekly_econ_caption(platform, stat):
+    """Per-platform copy for the weekly economic stat."""
+    gdp_disp = _fmt_gdp_big(stat["gdp_latest_usd"])
+    quarter = stat["quarter"]
+    top = _short_sector(stat["top_sector"])
+    top_val = _fmt_gdp_big(stat["top_sector_value"]) if stat["top_sector_value"] else ""
+    yoy_str = ""
+    if stat["yoy_pct"] is not None:
+        sign = "+" if stat["yoy_pct"] >= 0 else "−"
+        yoy_str = f"{sign}{abs(stat['yoy_pct']):.1f}% YoY"
+
+    if platform == "LinkedIn":
+        return (
+            f"Zimbabwe GDP — {quarter}: {gdp_disp}{(' (' + yoy_str + ')') if yoy_str else ''}.\n\n"
+            f"Top contributing sector: {top} at {top_val}.\n\n"
+            f"What's actually moving in Zimbabwe's economy — sector by "
+            f"sector, quarter by quarter. Live charts: {ECONOMY_PAGE_URL}\n\n"
+            f"#Zimbabwe #Economy #GDP #Africa"
+        )
+    if platform == "Facebook":
+        return (
+            f"Zimbabwe's economy in one number 📊\n\n"
+            f"Q4 2025 GDP: {gdp_disp}. Top sector this quarter: {top}.\n\n"
+            f"Full breakdown by 20 sectors: {ECONOMY_PAGE_URL}"
+        )
+    if platform == "Threads":
+        return (
+            f"Zim economy stat of the week 📊\n\n"
+            f"GDP {quarter}: {gdp_disp}\n"
+            f"Top sector: {top} ({top_val})\n\n"
+            f"{ECONOMY_PAGE_URL}\n\n"
+            f"#Zimbabwe #Economy"
+        )
+    if platform == "Twitter":
+        body = f"Zim GDP {quarter}: {gdp_disp}. Top sector this quarter: {top} ({top_val})."
+        body = _twitter_safe(body, ECONOMY_PAGE_URL, "")
+        return f"{body}\n{ECONOMY_PAGE_URL}\n\n#Zimbabwe #Economy #GDP"
+    if platform == "Instagram":
+        return (
+            f"Zimbabwe's economy in one number 📊🇿🇼\n\n"
+            f"Q4 2025 GDP at market prices: {gdp_disp}. The top contributing "
+            f"sector this quarter was {top}, weighing in at {top_val}.\n\n"
+            f"Full quarterly chart with all 20 sectors, plus historical "
+            f"trends back to 2019, lives on our economy page.\n\n"
+            f"Tap the link in bio → economy dashboard.\n\n"
+            f"#Zimbabwe #ZimbabweEconomy #GDP #Africa #ZimDiaspora #Economy "
+            f"#AfricaEconomics #ZimbabweNews"
+        )
+    return f"Zim GDP {quarter}: {gdp_disp} — {ECONOMY_PAGE_URL}"
+
+
+def render_weekly_property_card(summary, output_path):
+    """Stat-card style for weekly property post — uses faded green bg."""
+    rng = f"{_fmt_usd_short(summary['min_price'])} – {_fmt_usd_short(summary['max_price'])}"
+    sub = f"{summary['count']} listings · " + ", ".join(summary["top_suburbs"][:3])
+    render_stat_card(
+        eyebrow="HOUSING MARKET — THIS WEEK",
+        big_text=rng,
+        sub_text=sub,
+        footer_cta="BROWSE ALL → MUTAPATIMES.COM/PROPERTY",
+        output_path=output_path,
+        color_idx=1,  # faded green
+    )
+
+
+def render_weekly_econ_card(stat, output_path):
+    """Stat-card style for weekly econ post — uses faded yellow bg."""
+    big = _fmt_gdp_big(stat["gdp_latest_usd"])
+    sub_parts = [f"{stat['quarter']} GDP at market prices"]
+    top = _short_sector(stat["top_sector"])
+    if top:
+        sub_parts.append(f"Top sector: {top}")
+    render_stat_card(
+        eyebrow=f"ZIMBABWE ECONOMY — {stat['quarter']}",
+        big_text=big,
+        sub_text=" · ".join(sub_parts),
+        footer_cta="LIVE CHARTS → MUTAPATIMES.COM/ECONOMY",
+        output_path=output_path,
+        color_idx=2,  # faded yellow
+    )
+
+
 # ── Newsletter caption generation ─────────────────────────────
 NEWSLETTER_PROMPTS = {
     "LinkedIn": (
@@ -1294,6 +1611,76 @@ def main():
                 image_url=media,
             ))
             time.sleep(0.4)
+
+    # ── Weekly thematic posts ───────────────────────────────
+    # Mon batch → property snapshot (5 posts, all platforms, scheduled Wed)
+    # Thu batch → economic stat (5 posts, all platforms, scheduled Sat)
+    weekday_now = datetime.now(timezone.utc).weekday()
+    if weekday_now == 0:  # Monday: emit property post
+        prop_summary = property_summary()
+        if prop_summary and prop_summary["count"] > 0:
+            print(f"\n  Generating weekly PROPERTY post (1 × 5 platforms)…")
+            card_path = os.path.join(CARDS_DIR, "weekly-property-snapshot.png")
+            try:
+                render_weekly_property_card(prop_summary, card_path)
+                print(f"    Card: {card_path}")
+                card_url = f"{CARDS_PUBLIC_BASE}/weekly-property-snapshot.png"
+            except Exception as e:
+                print(f"    Card FAILED: {e}")
+                card_url = ""
+
+            target_dt_cat = datetime.combine(today_utc, datetime.min.time())
+            target_dt_cat += timedelta(days=WEEKLY_DAY_OFFSET)
+            h, m = map(int, WEEKLY_PROPERTY_TIME_CAT.split(":"))
+            sched_utc = datetime(target_dt_cat.year, target_dt_cat.month, target_dt_cat.day,
+                                 h, m, tzinfo=timezone(CAT_OFFSET)).astimezone(timezone.utc)
+
+            for plat_idx, platform in enumerate(("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram")):
+                cap = weekly_property_caption(platform, prop_summary)
+                slot = sched_utc + timedelta(minutes=plat_idx * 10)  # stagger by 10 min
+                rows.append(build_metricool_row(
+                    platform=platform,
+                    caption=cap,
+                    article={"title": "Zim property snapshot"},
+                    date_str=slot.strftime("%Y-%m-%d"),
+                    time_str=slot.strftime("%H:%M:%S"),
+                    image_url=card_url,
+                ))
+        else:
+            print(f"\n  No property listings — skipping weekly property post")
+
+    if weekday_now == 3:  # Thursday: emit economic stat post
+        stat = economic_stat_of_the_week()
+        if stat:
+            print(f"\n  Generating weekly ECONOMIC post (1 × 5 platforms)…")
+            card_path = os.path.join(CARDS_DIR, "weekly-econ-stat.png")
+            try:
+                render_weekly_econ_card(stat, card_path)
+                print(f"    Card: {card_path}")
+                card_url = f"{CARDS_PUBLIC_BASE}/weekly-econ-stat.png"
+            except Exception as e:
+                print(f"    Card FAILED: {e}")
+                card_url = ""
+
+            target_dt_cat = datetime.combine(today_utc, datetime.min.time())
+            target_dt_cat += timedelta(days=WEEKLY_DAY_OFFSET)
+            h, m = map(int, WEEKLY_ECON_TIME_CAT.split(":"))
+            sched_utc = datetime(target_dt_cat.year, target_dt_cat.month, target_dt_cat.day,
+                                 h, m, tzinfo=timezone(CAT_OFFSET)).astimezone(timezone.utc)
+
+            for plat_idx, platform in enumerate(("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram")):
+                cap = weekly_econ_caption(platform, stat)
+                slot = sched_utc + timedelta(minutes=plat_idx * 10)
+                rows.append(build_metricool_row(
+                    platform=platform,
+                    caption=cap,
+                    article={"title": f"Zim GDP {stat['quarter']}"},
+                    date_str=slot.strftime("%Y-%m-%d"),
+                    time_str=slot.strftime("%H:%M:%S"),
+                    image_url=card_url,
+                ))
+        else:
+            print(f"\n  No GDP data — skipping weekly econ post")
 
     # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
