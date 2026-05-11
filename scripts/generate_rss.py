@@ -326,15 +326,18 @@ def build_fx_snapshot_item(base):
         title_bits.append(f"best from UK £100 → ${best_uk_amount:.2f} via {best_uk_name}")
     title = " · ".join(title_bits)
 
+    # Metricool's preview layer HTML-escapes apostrophes to &#39; in the
+    # post body, so avoid them entirely. Use straight phrasing instead of
+    # contractions and "today's".
     desc_lines = [
-        f"Today's official interbank rate: 1 USD = {zwg:.4f} ZWG.",
+        f"Official interbank rate today — 1 USD = {zwg:.4f} ZWG.",
     ]
     if best_uk_name and best_uk_amount:
         desc_lines.append(
-            f"Sending £100 from the UK? {best_uk_name} lands ${best_uk_amount:.2f} — best of "
+            f"Sending £100 from the UK: {best_uk_name} lands ${best_uk_amount:.2f}, best of "
             f"{len((providers.get('corridors') or {}).get('GBP', {}).get('providers', []))} providers."
         )
-    desc_lines.append("Compare all corridors at mutapatimes.com/fx")
+    desc_lines.append("Compare every corridor at mutapatimes.com/fx")
 
     return {
         "title": title,
