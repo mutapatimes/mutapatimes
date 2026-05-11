@@ -159,7 +159,7 @@ def render_card(rates, providers, out_path):
             draw.text((60, y + 50), "(no providers configured)",
                       font=route_via_font, fill=CARD_FG_MUTED)
         else:
-            recv_str = f"→ ${fmt_money(best['recipient_usd'], 2)}"
+            recv_str = f"${fmt_money(best['recipient_usd'], 2)}"
             via_str = f"via {best['name']}  ·  beats {best['count'] - 1} other"
             via_str += "s" if best['count'] > 2 else ""
             draw.text((60, y + 50), recv_str, font=route_amt_font, fill=ACCENT)
