@@ -21,6 +21,7 @@ from xml.sax.saxutils import escape
 # Reuse the canonical slug + landing-page URL logic from build_news_pages
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_news_pages import make_slug as news_make_slug  # noqa: E402
+from twitter_mentions import all_mentions  # noqa: E402
 
 BASE_URL = "https://www.mutapatimes.com"
 FEED_URL = f"{BASE_URL}/feed.xml"
@@ -210,9 +211,29 @@ def build_rss(items):
                 f'      <media:content url="{escape(item["image"])}" medium="image"/>\n'
                 f'      <enclosure url="{escape(item["image"])}" type="image/jpeg" length="0"/>\n'
             )
+        # Append @mentions to the title so the Metricool Autolist tweet
+        # template — ${title}\n\n${link}\n\n#Zimbabwe — naturally includes
+        # them. Source publisher mention (e.g. @Reuters) + up to 2 entity
+        # mentions (e.g. @CyrilRamaphosa @ZANUPF_Official). Capped so we
+        # leave room for the URL (23 chars) and #Zimbabwe inside X's 280.
+        title_text = item["title"]
+        mentions = all_mentions(
+            title_text, item.get("description", ""), item.get("author") or "",
+        )
+        if mentions:
+            budget = 280 - 23 - len("\n\n") - len("\n\n#Zimbabwe") - len(title_text) - 1
+            joined = []
+            for m in mentions:
+                cost = len(m) + 1  # leading space
+                if cost > budget:
+                    break
+                joined.append(m)
+                budget -= cost
+            if joined:
+                title_text = f"{title_text} {' '.join(joined)}"
         entries.append(
             "    <item>\n"
-            f"      <title>{escape(item['title'])}</title>\n"
+            f"      <title>{escape(title_text)}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
             f"      <description>{escape(item.get('description', ''))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"

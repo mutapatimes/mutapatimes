@@ -39,6 +39,7 @@ except ImportError:
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_news_pages import landing_url as mutapa_landing_url  # noqa: E402
 from send_newsletter import SHONA_PROVERBS  # noqa: E402
+from twitter_mentions import all_mentions, source_mention  # noqa: E402
 
 # ── Config ────────────────────────────────────────────────────
 DATA_DIR = "data"
@@ -1017,6 +1018,48 @@ def _twitter_safe(text, mutapa_url, source):
     return f"{body}{attribution}\n{mutapa_url}"
 
 
+def _inject_twitter_mentions(caption, art, mutapa_url):
+    """Append @handles for source publisher + any named entities in the
+    article. X notifies @mentioned accounts → higher chance of a reply or
+    repost from accounts much bigger than ours. Mention budget respects
+    X's 280-char limit (URL = 23). Source mention also rewrites an inline
+    'via Reuters' into 'via @Reuters' when known."""
+    if not caption:
+        return caption
+
+    # 1) Replace inline source name with the @handle when we know it
+    sh = source_mention(art.get("source", ""))
+    if sh and art.get("source") and art["source"] in caption:
+        caption = caption.replace(art["source"], sh, 1)
+
+    # 2) Append remaining mentions at the end (before any trailing hashtags
+    #    so the hashtag line stays last and visually contained)
+    mentions = all_mentions(
+        art.get("title", ""), art.get("description", ""), art.get("source", "")
+    )
+    # Drop the source handle since (1) already injected it inline
+    if sh:
+        mentions = [m for m in mentions if m != sh]
+    if not mentions:
+        return caption
+
+    # Measure current length with URL substitution (t.co = 23 chars)
+    url_pattern = re.compile(r"https?://\S+")
+    sentinel = "x" * 23
+
+    def _measure(s):
+        return len(url_pattern.sub(sentinel, s))
+
+    current = _measure(caption)
+    for m in mentions:
+        cost = len(m) + 1  # leading space
+        if current + cost > 278:  # leave 2 chars safety margin
+            break
+        caption = f"{caption} {m}"
+        current += cost
+    return caption
+
+
 def caption_for(platform, art, mutapa_url):
     rewritten = gemini_rewrite(
         PROMPTS[platform],
@@ -1030,6 +1073,7 @@ def caption_for(platform, art, mutapa_url):
         platform, art["title"], art["description"], art["source"], mutapa_url
     )
     if platform == "Twitter":
+        text = _inject_twitter_mentions(text, art, mutapa_url)
         text = _twitter_safe(text, mutapa_url, art["source"])
     return text
 
