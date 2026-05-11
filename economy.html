@@ -28,7 +28,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=6">
+    <link rel="stylesheet" href="css/main.css?v=7">
     <meta name="title" content="Zimbabwe's Economy in Numbers | The Mutapa Times">
 <meta name="description" content="An interactive briefing on Zimbabwe's economy — quarterly GDP, the trade gap, remittance flows, and the missing money. Sourced entirely from ZimStat and the Reserve Bank of Zimbabwe.">
 <meta name="keywords" content="Zimbabwe economy, ZimStat, RBZ, GDP, balance of payments, remittances, trade balance, current account, mining, agriculture, services">
@@ -173,7 +173,7 @@
         </div>
       </div>
 
-      <div class="econ-chart-wrap"><canvas id="ch1Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch1Chart" class="econ-chart-target"></div></div>
 
       <div class="econ-break-callout">
         <strong>Why the 2024 break?</strong>
@@ -221,7 +221,7 @@
         between the two lines, quarter by quarter, in millions of
         US dollars.
       </p>
-      <div class="econ-chart-wrap"><canvas id="ch2Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch2Chart" class="econ-chart-target"></div></div>
       <p class="econ-attribution">
         Source: Reserve Bank of Zimbabwe / ZimStat, <em>Balance of Payments</em>.
         Goods only &mdash; services excluded.
@@ -241,7 +241,7 @@
         be higher once informal channels (cross-border traders, cash
         couriers) are counted.
       </p>
-      <div class="econ-chart-wrap"><canvas id="ch3Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch3Chart" class="econ-chart-target"></div></div>
       <p class="econ-attribution">
         Source: Reserve Bank of Zimbabwe / ZimStat, <em>Balance of Payments
         &mdash; Personal Transfers</em>.
@@ -259,7 +259,7 @@
         annual rainfall lottery. Then lithium happened. Below: the two
         sectors plotted against each other quarter by quarter.
       </p>
-      <div class="econ-chart-wrap"><canvas id="ch4Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch4Chart" class="econ-chart-target"></div></div>
       <p class="econ-attribution">
         Source: ZimStat, <em>Quarterly GDP &mdash; Agriculture &amp;
         Mining Sectors</em>.
@@ -278,7 +278,7 @@
         not by design, but because the productive base is hollowing
         out under it.
       </p>
-      <div class="econ-chart-wrap"><canvas id="ch5Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch5Chart" class="econ-chart-target"></div></div>
       <p class="econ-attribution">
         Source: ZimStat, <em>Quarterly Gross Domestic Product Tables</em>.
         Top six sectors by latest-quarter contribution.
@@ -298,7 +298,7 @@
         statistical admission that the informal economy moves real money
         the books cannot fully see.
       </p>
-      <div class="econ-chart-wrap"><canvas id="ch6Chart"></canvas></div>
+      <div class="econ-chart-wrap"><div id="ch6Chart" class="econ-chart-target"></div></div>
       <p class="econ-attribution">
         Source: Reserve Bank of Zimbabwe, <em>Balance of Payments &mdash;
         Current Account &amp; Net Errors &amp; Omissions</em>.
@@ -420,8 +420,8 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-  <script src="js/economy.js?v=1"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/economy.js?v=2"></script>
 
 <script>
 if ('serviceWorker' in navigator) {

@@ -4215,197 +4215,217 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 }
 
 /* ─────────────────────────────────────────────────────────────
- * Economy page — scrollytelling narrative.
- * All data on the page is ZimStat / RBZ; styling mirrors a
- * long-form magazine spread (NYT/Reuters dataviz aesthetic).
+ * Economy page — long-form briefing.
+ * Two fonts only: Playfair Display for headlines, Inter for
+ * everything else. Zero italics anywhere. ZimStat / RBZ only.
+ * Google Charts handles all data viz.
  * ───────────────────────────────────────────────────────────── */
 .econ-narrative {
-  max-width: 880px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 12px 24px 40px;
+  padding: 16px 28px 48px;
   color: var(--text);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.65;
+  font-style: normal;
 }
+.econ-narrative em { font-style: normal; }
 
 /* ─── Hero ─── */
 .econ-hero {
-  padding: 36px 0 28px;
+  padding: 40px 0 32px;
   border-bottom: 1px solid var(--rule);
   margin-bottom: 36px;
 }
 .econ-eyebrow {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-mid);
-  font-weight: 600;
-  margin: 0 0 16px;
+  font-weight: 700;
+  margin: 0 0 18px;
 }
 .econ-eyebrow-src { color: var(--accent); }
 .econ-headline {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 1.02;
   color: var(--ink);
-  margin: 0 0 16px;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
 }
 .econ-headline em {
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 900;
   color: var(--accent);
 }
 .econ-deck {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 1.12rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.18rem;
+  font-weight: 400;
   color: var(--text-mid);
-  line-height: 1.6;
-  margin: 0 0 26px;
-  max-width: 640px;
+  line-height: 1.55;
+  margin: 0 0 30px;
+  max-width: 680px;
 }
 .econ-hero-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  margin: 24px 0 18px;
+  margin: 28px 0 20px;
 }
 .econ-stat-card {
-  background: var(--paper);
+  background: #fff;
   border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: 14px 14px 12px;
+  border-radius: 4px;
+  padding: 16px 16px 14px;
 }
 .econ-stat-label {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-mid);
-  margin: 0 0 6px;
+  font-weight: 600;
+  margin: 0 0 8px;
 }
 .econ-stat-value {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.4rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--ink);
   margin: 0 0 4px;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
 }
 .econ-stat-sub {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--text-light);
   margin: 0;
 }
 .econ-stat-meta {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.72rem;
-  margin: 4px 0 0;
+  font-size: 0.74rem;
+  font-weight: 600;
+  margin: 6px 0 0;
 }
-.econ-stat-delta.up { color: #1a7f37; font-weight: 600; }
-.econ-stat-delta.down { color: var(--accent); font-weight: 600; }
+.econ-stat-delta.up { color: #1a7f37; }
+.econ-stat-delta.down { color: var(--accent); }
 .econ-hero-tip {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-light);
-  margin: 16px 0 0;
+  margin: 18px 0 0;
 }
 
 /* ─── Chapters ─── */
 .econ-chapter {
-  padding: 38px 0 32px;
+  padding: 44px 0 36px;
   border-bottom: 1px solid var(--rule);
 }
 .econ-chapter:last-of-type { border-bottom: none; }
 .econ-chapter-no {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
   font-weight: 700;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 .econ-chapter-kicker {
   color: var(--text-mid);
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 .econ-chapter-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: var(--ink);
-  margin: 0 0 18px;
-  line-height: 1.15;
+  margin: 0 0 20px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 .econ-pullquote {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--ink);
   line-height: 1.4;
-  border-left: 3px solid var(--accent);
-  padding: 6px 0 6px 18px;
-  margin: 0 0 22px;
+  border-left: 4px solid var(--accent);
+  padding: 6px 0 6px 20px;
+  margin: 0 0 24px;
 }
 .econ-pullquote strong {
-  font-style: normal;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
+  font-style: normal;
 }
 .econ-lead {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: normal;
   font-size: 1.05rem;
   color: var(--text);
-  line-height: 1.75;
-  margin: 0 0 22px;
+  line-height: 1.7;
+  margin: 0 0 24px;
+  max-width: 720px;
 }
-.econ-lead em { color: var(--accent); font-style: italic; }
+.econ-lead em {
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 600;
+}
 
-/* ─── Chart wrap (responsive height) ─── */
+/* ─── Chart wrap (Google Charts target) ─── */
 .econ-chart-wrap {
   position: relative;
   width: 100%;
-  height: 420px;
-  margin: 20px 0 14px;
-  background: var(--paper);
+  height: 440px;
+  margin: 22px 0 14px;
+  background: #fff;
   border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: 14px 12px 8px;
+  border-radius: 4px;
+  padding: 16px 12px 10px;
+  overflow: hidden;
 }
+/* Google Charts injects an svg/div tree — force it to fill the wrap. */
+.econ-chart-wrap > div { width: 100% !important; height: 100% !important; }
 
-/* ─── Period / chart-type pill controls (Chapter 1) ─── */
+/* ─── Period / chart-type pill controls ─── */
 .econ-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px 22px;
+  gap: 14px 24px;
   align-items: flex-end;
   margin: 6px 0 14px;
 }
-.econ-control-group { display: flex; flex-direction: column; gap: 4px; }
+.econ-control-group { display: flex; flex-direction: column; gap: 6px; }
 .econ-control-label {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-mid);
-  font-weight: 600;
+  font-weight: 700;
 }
 .econ-pill-group { display: inline-flex; flex-wrap: wrap; gap: 6px; }
 .econ-pill {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.82rem;
-  background: var(--paper);
+  font-weight: 500;
+  background: #fff;
   border: 1px solid var(--rule);
   border-radius: 999px;
-  padding: 5px 12px;
+  padding: 6px 14px;
   cursor: pointer;
   color: var(--text-mid);
   transition: background 120ms, border-color 120ms, color 120ms;
@@ -4414,53 +4434,55 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .econ-pill.active {
   background: var(--ink);
   border-color: var(--ink);
-  color: var(--paper);
+  color: #fff;
 }
 .econ-select {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.85rem;
-  background: var(--paper);
+  font-weight: 500;
+  background: #fff;
   border: 1px solid var(--rule);
   border-radius: 4px;
-  padding: 6px 10px;
+  padding: 7px 12px;
   color: var(--text);
   cursor: pointer;
 }
 .econ-select:focus { outline: none; border-color: var(--ink); }
 
-/* ─── 2024 break callout (Chapter 1) ─── */
+/* ─── 2024 break callout ─── */
 .econ-break-callout {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-mid);
   background: rgba(196,30,30,0.04);
   border-left: 3px solid var(--accent);
-  padding: 10px 14px;
+  padding: 12px 16px;
   margin: 14px 0 18px;
   border-radius: 0 4px 4px 0;
+  line-height: 1.55;
 }
 .econ-break-callout strong { color: var(--ink); margin-right: 6px; }
 
 /* ─── Attribution line ─── */
 .econ-attribution {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-light);
-  margin: 12px 0 0;
-  font-style: italic;
+  margin: 14px 0 0;
+  font-style: normal;
 }
-.econ-attribution a { color: var(--accent); text-decoration: none; }
+.econ-attribution a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .econ-attribution a:hover { text-decoration: underline; }
 
 /* ─── Closing strip ─── */
 .econ-closing {
-  margin-top: 32px;
-  padding: 28px 22px;
+  margin-top: 36px;
+  padding: 30px 24px;
   background: var(--bg);
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: 4px;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--text-mid);
   line-height: 1.65;
 }
@@ -4468,31 +4490,37 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .econ-closing p:last-child { margin-bottom: 0; }
 .econ-closing-eyebrow {
   font-size: 0.7rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
   font-weight: 700;
-  margin-bottom: 10px !important;
+  margin-bottom: 12px !important;
 }
-.econ-closing-cta { color: var(--ink); font-weight: 500; }
-.econ-closing a { color: var(--accent); text-decoration: none; }
+.econ-closing-cta { color: var(--ink); font-weight: 600; }
+.econ-closing a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .econ-closing a:hover { text-decoration: underline; }
+
+/* Recycle the gdp-table classes used in Chapter 1 for the sector ranking. */
+.econ-chapter .gdp-table { font-family: 'Inter', system-ui, sans-serif; }
+.econ-chapter .gdp-table th,
+.econ-chapter .gdp-table td { font-family: 'Inter', system-ui, sans-serif; }
 
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
   .econ-narrative {
-    padding: 4px 14px 32px;
+    padding: 6px 16px 36px;
     font-size: 0.97rem;
   }
-  .econ-headline { font-size: 2.2rem; }
-  .econ-deck { font-size: 1rem; }
+  .econ-headline { font-size: 2.4rem; }
+  .econ-deck { font-size: 1.05rem; }
   .econ-hero-stats { grid-template-columns: repeat(2, 1fr); }
-  .econ-chapter-title { font-size: 1.7rem; }
-  .econ-pullquote { font-size: 1.18rem; padding-left: 12px; }
-  .econ-chart-wrap { height: 320px; padding: 8px 6px 4px; }
-  .econ-stat-value { font-size: 1.15rem; }
+  .econ-chapter-title { font-size: 1.85rem; }
+  .econ-pullquote { font-size: 1.1rem; padding-left: 14px; }
+  .econ-chart-wrap { height: 360px; padding: 10px 6px 6px; }
+  .econ-stat-value { font-size: 1.2rem; }
 }
 @media (max-width: 420px) {
-  .econ-headline { font-size: 1.9rem; }
-  .econ-chapter-title { font-size: 1.5rem; }
+  .econ-headline { font-size: 2rem; }
+  .econ-chapter-title { font-size: 1.55rem; }
+  .econ-chart-wrap { height: 320px; }
 }

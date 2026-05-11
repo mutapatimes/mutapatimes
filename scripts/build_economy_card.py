@@ -453,13 +453,15 @@ def render_card(chapter, out_path, date_label, day_name):
     img = Image.new("RGB", (CARD_W, CARD_H), bg)
     draw = ImageDraw.Draw(img)
 
+    # Two fonts only: Playfair Display (headlines) + Inter (everything
+    # else). No italics anywhere.
     masthead_font = load_font("serif_bold", 38)
     date_font = load_font("sans_bold", 22)
     eyebrow_font = load_font("sans_bold", 22)
     head_font = load_font("serif_bold", 58)
-    big_font = load_font("serif_bold", 152)
-    big_lbl_font = load_font("serif_italic", 36)
-    sub_font = load_font("sans", 26)
+    big_font = load_font("serif_bold", 168)
+    big_lbl_font = load_font("sans_bold", 34)
+    sub_font = load_font("sans", 27)
     footer_font = load_font("sans_bold", 22)
     footer_src_font = load_font("sans", 20)
 
@@ -471,37 +473,37 @@ def render_card(chapter, out_path, date_label, day_name):
               font=date_font, fill=ACCENT)
 
     # ── Eyebrow + analytical headline ──
-    draw.text((60, 188), f"{day_name.upper()} · {chapter['eyebrow']}",
+    draw.text((60, 198), f"{day_name.upper()} · {chapter['eyebrow']}",
               font=eyebrow_font, fill=CARD_FG_MUTED)
     head_lines = wrap_text(draw, chapter["headline"], head_font, CARD_W - 120)[:2]
-    hy = 232
+    hy = 244
     for ln in head_lines:
         draw.text((60, hy), ln, font=head_font, fill=CARD_FG)
-        hy += 70
+        hy += 72
 
     # ── The big number ──
-    big_y = hy + 20
+    big_y = hy + 26
     draw.text((60, big_y), chapter["big_num"],
               font=big_font, fill=CARD_FG)
-    # Big label sits right under the number
-    draw.text((60, big_y + 170), chapter["big_lbl"],
+    # Bold sans-serif label in red, right below the number.
+    draw.text((60, big_y + 188), chapter["big_lbl"].upper(),
               font=big_lbl_font, fill=ACCENT)
 
     # ── Sub caption ──
-    sub_y = big_y + 230
+    sub_y = big_y + 248
     sub_lines = wrap_text(draw, chapter["sub"], sub_font, CARD_W - 120)[:3]
     for ln in sub_lines:
         draw.text((60, sub_y), ln, font=sub_font, fill=CARD_FG)
-        sub_y += 36
+        sub_y += 38
 
     # ── Divider ──
-    div_y = sub_y + 18
+    div_y = sub_y + 22
     draw.line([(60, div_y), (CARD_W - 60, div_y)],
               fill=CARD_FG_MUTED, width=1)
 
     # ── Mini-chart ──
     chart_x0 = 60
-    chart_y0 = div_y + 24
+    chart_y0 = div_y + 28
     chart_w = CARD_W - 120
     chart_h = min(260, CARD_H - chart_y0 - 180)
     draw_mini_chart(draw, chapter["bars"], chart_x0, chart_y0,
