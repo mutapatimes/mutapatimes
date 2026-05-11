@@ -347,6 +347,42 @@ def build_fx_snapshot_item(base):
     }
 
 
+def write_fx_feed(base):
+    """Write a dedicated fx-feed.xml containing only today's FX snapshot
+    item. Lets the user configure a SEPARATE Metricool autolist for FX
+    with its own template + cadence, without mixing into the high-volume
+    news feed."""
+    fx_item = build_fx_snapshot_item(base)
+    if not fx_item:
+        print("  fx-feed.xml SKIPPED — data/fx-rates.json missing or empty")
+        return False
+
+    # Re-use build_rss with a single-item list; channel-level metadata
+    # carries through. The autolist will see a 1-item feed where the URL
+    # changes once per CAT day, so it posts exactly once a day.
+    rss = build_rss([fx_item])
+    # Patch the channel title + atom:self for the dedicated feed.
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Daily Zimbabwe FX Snapshot</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/fx-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Daily Zimbabwe FX snapshot — official USD/ZWG rate plus the best money-transfer provider per diaspora corridor. One item per day, dedicated for the Mutapa Times FX autolist.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "fx-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  fx-feed.xml written ({fx_item['title'][:80]}…)")
+    return True
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -366,19 +402,15 @@ def main():
             seen_titles.add(t_norm)
         unique.append(item)
 
-    # Prepend today's FX snapshot item so it sits at the top of the feed
-    # and gets picked up by the Metricool autolist before any news items.
-    fx_item = build_fx_snapshot_item(base)
-    if fx_item:
-        unique = [fx_item] + unique
-
     rss = build_rss(unique)
     out = os.path.join(base, "feed.xml")
     with open(out, "w", encoding="utf-8") as f:
         f.write(rss)
-    suffix = " (incl. daily FX snapshot)" if fx_item else ""
     print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items "
-          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old){suffix}")
+          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old)")
+
+    # Separate single-item feed for the FX autolist
+    write_fx_feed(base)
 
 
 if __name__ == "__main__":

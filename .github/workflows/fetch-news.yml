@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/ news/ articles/ sitemap.xml feed.xml
+          git add data/ content/articles/ news/ articles/ sitemap.xml feed.xml fx-feed.xml
           git diff --cached --quiet || (git commit -m "Update news data [automated]" && git push)
 
       - name: Send push notification for breaking news
