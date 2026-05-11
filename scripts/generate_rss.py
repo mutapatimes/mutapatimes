@@ -22,6 +22,7 @@ from xml.sax.saxutils import escape
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_news_pages import make_slug as news_make_slug  # noqa: E402
 from twitter_mentions import all_mentions  # noqa: E402
+from build_feed_cards import card_public_url as feed_card_url  # noqa: E402
 
 BASE_URL = "https://www.mutapatimes.com"
 FEED_URL = f"{BASE_URL}/feed.xml"
@@ -108,14 +109,18 @@ def collect_cms_articles(base):
         dt = _parse_date(date.group(1)) if date else None
         if not _is_fresh(dt):
             continue
+        link = f"{BASE_URL}/articles/{slug}.html"
         items.append({
             "title": title.group(1) if title else slug,
-            "link": f"{BASE_URL}/articles/{slug}.html",
+            "link": link,
             "description": (summary.group(1) if summary else body[:240].strip()),
             "pubDate": dt,
             "category": category.group(1) if category else "News",
             "author": author.group(1) if author else None,
-            "image": image.group(1) if image else None,
+            # Every feed item now points to the on-brand headline card we
+            # render in build_feed_cards.py — Metricool autolists pick this
+            # up as the post image, replacing scraped source thumbnails.
+            "image": feed_card_url(link),
         })
     return items
 
@@ -178,7 +183,10 @@ def collect_news_landing_articles(base):
                     "pubDate": dt,
                     "category": fname.replace(".json", "").title() if fname != "spotlight.json" else "News",
                     "author": source_name or None,
-                    "image": (a.get("image") or "").strip() or None,
+                    # On-brand card image — same renderer as build_metricool_csv
+                    # produces, keyed by the landing URL hash so the same
+                    # article always gets the same card.
+                    "image": feed_card_url(landing),
                 })
     return items
 

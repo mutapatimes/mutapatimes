@@ -31,7 +31,13 @@ jobs:
       - name: Build static article pages
         run: python3 scripts/build_static_pages.py --articles-only
 
-      - name: Generate sitemap and RSS feed
+      - name: Install Pillow (for branded feed cards)
+        run: pip install --quiet Pillow
+
+      - name: Render branded card per feed item (cached by URL hash)
+        run: python3 scripts/build_feed_cards.py
+
+      - name: Generate sitemap and RSS feeds
         run: |
           python3 scripts/generate_sitemap.py
           python3 scripts/generate_rss.py
@@ -40,8 +46,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/ news/ articles/ sitemap.xml feed.xml fx-feed.xml
-          git diff --cached --quiet || (git commit -m "Update news data [automated]" && git push)
+          git add data/ content/articles/ news/ articles/ img/cards/news/ sitemap.xml feed.xml fx-feed.xml weather-feed.xml
+          git diff --cached --quiet || (git commit -m "Update news data + feed cards [automated]" && git push)
 
       - name: Send push notification for breaking news
         env:
