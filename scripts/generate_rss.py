@@ -24,18 +24,34 @@ from build_news_pages import make_slug as news_make_slug  # noqa: E402
 
 BASE_URL = "https://www.mutapatimes.com"
 FEED_URL = f"{BASE_URL}/feed.xml"
-MAX_ITEMS = 50
+# Bumped from 50 → 500 so a high-cadence Metricool Autolist on Twitter
+# (~20/day) has enough fresh inventory to never starve before the next
+# fetch-news run refills the feed.
+MAX_ITEMS = 500
 MAX_ITEM_AGE_DAYS = 30  # Autolists shouldn't ever republish stale wires
 
 
 def _parse_date(s):
-    """Try to parse ISO 8601 or RFC 2822 into a tz-aware datetime."""
+    """Try to parse ISO 8601 or RFC 2822 into a tz-aware datetime.
+    Handles fractional seconds ('2026-05-10T17:46:27.000Z') used by CMS
+    timestamps — the previous strptime patterns silently dropped these,
+    so every CMS article fell out of the feed."""
     if not s:
         return None
-    # ISO 8601 variants first
+    s = s.strip()
+    # ISO 8601 via fromisoformat — accepts most variants once we normalise
+    # the trailing Z to a UTC offset.
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except ValueError:
+        pass
+    # Fallbacks: strptime patterns for date-only or simple ISO forms
     for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d"):
         try:
-            dt = datetime.strptime(s.strip(), fmt)
+            dt = datetime.strptime(s, fmt)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return dt
@@ -79,12 +95,15 @@ def collect_cms_articles(base):
         if not m:
             continue
         fm, body = m.group(1), m.group(2)
-        title = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
-        date = re.search(r"^date:\s*['\"]?(\S+)", fm, re.MULTILINE)
-        summary = re.search(r'^summary:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
-        category = re.search(r'^category:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
-        author = re.search(r'^author:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
-        image = re.search(r'^image:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
+        # Use [^\S\n] (space/tab but NOT newline) so an empty 'image: ' line
+        # doesn't greedily swallow the newline and steal the next field's
+        # value. Same defensive change for the other fields.
+        title = re.search(r'^title:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
+        date = re.search(r"^date:[^\S\n]*['\"]?(\S+)", fm, re.MULTILINE)
+        summary = re.search(r'^summary:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
+        category = re.search(r'^category:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
+        author = re.search(r'^author:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
+        image = re.search(r'^image:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
         dt = _parse_date(date.group(1)) if date else None
         if not _is_fresh(dt):
             continue
@@ -230,16 +249,29 @@ def build_rss(items):
     )
 
 
+def _norm_title(s):
+    """Lowercase + collapse non-alphanumerics so 'Foo!' and 'Foo' match."""
+    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
+    # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
+    # landing variant when the same story appears in both (the CMS page has
+    # the full body text — better for SEO and reader experience).
     items = collect_cms_articles(base) + collect_news_landing_articles(base)
-    # Deduplicate by canonical link (mutapatimes.com URL)
-    seen = set()
+    seen_links = set()
+    seen_titles = set()
     unique = []
     for item in items:
-        if item["link"] not in seen:
-            seen.add(item["link"])
-            unique.append(item)
+        link = item["link"]
+        t_norm = _norm_title(item.get("title", ""))
+        if link in seen_links or (t_norm and t_norm in seen_titles):
+            continue
+        seen_links.add(link)
+        if t_norm:
+            seen_titles.add(t_norm)
+        unique.append(item)
     rss = build_rss(unique)
     out = os.path.join(base, "feed.xml")
     with open(out, "w", encoding="utf-8") as f:
