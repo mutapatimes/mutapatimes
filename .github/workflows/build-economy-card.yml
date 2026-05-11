@@ -1,0 +1,34 @@
+name: Build Economy Card
+
+on:
+  schedule:
+    # 04:35 UTC = 06:35 CAT — well before any morning social slot so the
+    # day's card is ready by the time Metricool's autolist polls.
+    - cron: '35 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-economy-card:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pillow (for the snapshot card)
+        run: pip install --quiet Pillow
+
+      - name: Render today's economy card (day-of-week rotation)
+        run: python3 scripts/build_economy_card.py
+
+      - name: Regenerate feeds so the autolist picks up today's economy item
+        run: python3 scripts/generate_rss.py
+
+      - name: Commit updated economy card + feeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add img/cards/economy-snapshot.png feed.xml economy-feed.xml \
+                  fx-feed.xml weather-feed.xml
+          git diff --cached --quiet || (git commit -m "Update economy card + feed [automated]" && git push)

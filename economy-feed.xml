@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>The Mutapa Times — Daily Zimbabwe Economy</title>
+    <link>https://www.mutapatimes.com</link>
+    <description>Daily Zimbabwe economy briefing — one analytical infographic per day rotating through GDP, trade, remittances, mining, services, and the unrecorded balance. All data from ZimStat and the Reserve Bank of Zimbabwe.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 May 2026 22:30:39 +0000</lastBuildDate>
+    <atom:link href="https://www.mutapatimes.com/economy-feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <title>The Mutapa Times</title>
+      <url>https://www.mutapatimes.com/img/logo.png</url>
+      <link>https://www.mutapatimes.com</link>
+    </image>
+    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
+    <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
+    <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zim trade balance 2025 Q4: $486M trade surplus on goods. Exports $3.2B, imports $2.7B.</title>
+      <link>https://www.mutapatimes.com/economy.html?d=2026-05-12</link>
+      <description>Zimbabwe exported $3.2B of goods and imported $2.7B in 2025 Q4 — a trade surplus of $486M. The goods balance flipped to surplus in 2024 on lithium, gold and tobacco. Full briefing: mutapatimes.com/economy</description>
+      <pubDate>Mon, 11 May 2026 22:30:39 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mutapatimes.com/economy.html?d=2026-05-12</guid>
+      <category>Economy</category>
+      <dc:creator>The Mutapa Times</dc:creator>
+      <media:content url="https://www.mutapatimes.com/img/cards/economy-snapshot.png?v=2026-05-12" medium="image"/>
+      <enclosure url="https://www.mutapatimes.com/img/cards/economy-snapshot.png?v=2026-05-12" type="image/jpeg" length="0"/>
+    </item>
+  </channel>
+</rss>
