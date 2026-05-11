@@ -275,6 +275,78 @@ def _norm_title(s):
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
 
 
+def build_fx_snapshot_item(base):
+    """Build one RSS item for today's FX snapshot card, if the data file
+    exists. The link is date-tagged so Metricool's autolist (which dedupes
+    by URL) treats each day as a new post — without that, the snapshot
+    would post once and never again."""
+    fx_path = os.path.join(base, "data", "fx-rates.json")
+    prov_path = os.path.join(base, "data", "remittance-providers.json")
+    if not os.path.exists(fx_path):
+        return None
+    try:
+        fx = json.load(open(fx_path))
+    except (json.JSONDecodeError, OSError):
+        return None
+    rates = fx.get("rates") or {}
+    zwg = rates.get("ZWG")
+    if zwg is None:
+        return None
+
+    # Compute the best-from-UK provider as the headline hook for the
+    # tweet/post body (matches the card visual).
+    best_uk_name = None
+    best_uk_amount = None
+    if os.path.exists(prov_path):
+        try:
+            providers = json.load(open(prov_path))
+            corridor = (providers.get("corridors") or {}).get("GBP") or {}
+            mid_usd_per_gbp = 1 / rates["GBP"] if rates.get("GBP") else None
+            if mid_usd_per_gbp:
+                best = None
+                for p in corridor.get("providers", []):
+                    net = max(0, 100 - p.get("fee", 0))
+                    recv = net * mid_usd_per_gbp * (1 - p.get("fx_margin_pct", 0) / 100)
+                    if best is None or recv > best[1]:
+                        best = (p["name"], recv)
+                if best:
+                    best_uk_name, best_uk_amount = best
+        except (json.JSONDecodeError, OSError, KeyError):
+            pass
+
+    # Date-tagged URL → unique per day so autolist re-posts daily.
+    now = datetime.now(timezone.utc)
+    date_str = now.strftime("%Y-%m-%d")
+    pretty_date = now.strftime("%-d %b %Y") if hasattr(now, "strftime") else date_str
+    link = f"{BASE_URL}/fx.html?d={date_str}"
+    image = f"{BASE_URL}/img/cards/fx-snapshot.png?v={date_str}"
+
+    title_bits = [f"Zim FX snapshot {pretty_date}: 1 USD = {zwg:.2f} ZWG"]
+    if best_uk_name and best_uk_amount:
+        title_bits.append(f"best from UK £100 → ${best_uk_amount:.2f} via {best_uk_name}")
+    title = " · ".join(title_bits)
+
+    desc_lines = [
+        f"Today's official interbank rate: 1 USD = {zwg:.4f} ZWG.",
+    ]
+    if best_uk_name and best_uk_amount:
+        desc_lines.append(
+            f"Sending £100 from the UK? {best_uk_name} lands ${best_uk_amount:.2f} — best of "
+            f"{len((providers.get('corridors') or {}).get('GBP', {}).get('providers', []))} providers."
+        )
+    desc_lines.append("Compare all corridors at mutapatimes.com/fx")
+
+    return {
+        "title": title,
+        "link": link,
+        "description": " ".join(desc_lines),
+        "pubDate": now,
+        "category": "FX",
+        "author": "The Mutapa Times",
+        "image": image,
+    }
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -293,12 +365,20 @@ def main():
         if t_norm:
             seen_titles.add(t_norm)
         unique.append(item)
+
+    # Prepend today's FX snapshot item so it sits at the top of the feed
+    # and gets picked up by the Metricool autolist before any news items.
+    fx_item = build_fx_snapshot_item(base)
+    if fx_item:
+        unique = [fx_item] + unique
+
     rss = build_rss(unique)
     out = os.path.join(base, "feed.xml")
     with open(out, "w", encoding="utf-8") as f:
         f.write(rss)
+    suffix = " (incl. daily FX snapshot)" if fx_item else ""
     print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items "
-          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old)")
+          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old){suffix}")
 
 
 if __name__ == "__main__":
