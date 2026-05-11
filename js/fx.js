@@ -229,34 +229,46 @@
       };
     }).sort(function (a, b) { return b.recipient - a.recipient; });
 
-    // Best row gets a "Best value" badge
+    // Best row (top after sort) gets the accent left-bar + badge.
+    // Others show a "−X.XX%" delta vs best so the cost of choosing
+    // a worse provider is legible at a glance.
     var best = rows.length ? rows[0].recipient : 0;
 
     var rowsHtml = rows.map(function (r, i) {
       var isBest = i === 0 && rows.length > 1;
       var delta = best > 0 ? ((r.recipient - best) / best) * 100 : 0;
-      var deltaHtml = isBest
-        ? '<span class="fx-send-best">Best</span>'
-        : '<span class="fx-send-delta">' + (delta >= 0 ? '+' : '') + delta.toFixed(2) + '%</span>';
-      var feeHtml = r.fee ? sendCur + ' ' + fmtMoney(r.fee, 2) : 'No fee';
+      var deltaHtml = !isBest
+        ? '<span class="fx-send-delta">' + (delta >= 0 ? '+' : '') + delta.toFixed(2) + '% vs best</span>'
+        : '';
+      var feeText = r.fee
+        ? 'Fee ' + sendCur + ' ' + fmtMoney(r.fee, 2)
+        : 'No fee';
+      var metaParts = [
+        feeText,
+        'FX margin ' + r.margin.toFixed(1) + '%',
+      ];
+      if (r.payout) metaParts.push(r.payout);
+      if (r.speed) metaParts.push(r.speed);
+
       return (
-        '<a class="fx-send-row" href="' + escapeHtml(appendSendUrlParams(r.url, sendCur, amount)) +
-        '" target="_blank" rel="noopener">' +
+        '<a class="fx-send-row' + (isBest ? ' is-best' : '') + '" ' +
+          'href="' + escapeHtml(appendSendUrlParams(r.url, sendCur, amount)) +
+          '" target="_blank" rel="noopener">' +
           '<div class="fx-send-provider">' +
-            '<span class="fx-send-name">' + escapeHtml(r.name) + '</span>' +
-            (r.notes ? '<span class="fx-send-note">' + escapeHtml(r.notes) + '</span>' : '') +
+            '<div class="fx-send-name-row">' +
+              '<span class="fx-send-name">' + escapeHtml(r.name) + '</span>' +
+              (isBest ? '<span class="fx-send-best">Best value</span>' : '') +
+            '</div>' +
+            '<div class="fx-send-meta">' +
+              metaParts.map(function (p) { return '<span>' + escapeHtml(p) + '</span>'; }).join('') +
+            '</div>' +
+            (r.notes ? '<p class="fx-send-note">' + escapeHtml(r.notes) + '</p>' : '') +
           '</div>' +
           '<div class="fx-send-amount">' +
             '<span class="fx-send-recipient">$' + fmtMoney(r.recipient, 2) + '</span>' +
-            '<span class="fx-send-recipient-lbl">recipient gets (USD)</span>' +
+            '<span class="fx-send-recipient-lbl">recipient gets</span>' +
+            deltaHtml +
           '</div>' +
-          '<div class="fx-send-meta">' +
-            '<span>FX margin ' + r.margin.toFixed(1) + '%</span>' +
-            '<span>Fee ' + escapeHtml(feeHtml) + '</span>' +
-            (r.payout ? '<span>' + escapeHtml(r.payout) + '</span>' : '') +
-            (r.speed ? '<span>' + escapeHtml(r.speed) + '</span>' : '') +
-          '</div>' +
-          '<div class="fx-send-badge">' + deltaHtml + '<span class="fx-send-cta">Send →</span></div>' +
         '</a>'
       );
     }).join('');
