@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>The Mutapa Times — Daily Zimbabwe Weather + Tsumo</title>
+    <link>https://www.mutapatimes.com</link>
+    <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 May 2026 19:06:57 +0000</lastBuildDate>
+    <atom:link href="https://www.mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <title>The Mutapa Times</title>
+      <url>https://www.mutapatimes.com/img/logo.png</url>
+      <link>https://www.mutapatimes.com</link>
+    </image>
+    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
+    <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
+    <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zim weather 11 May: Harare overcast · high 27° / low 15°</title>
+      <link>https://www.mutapatimes.com/fx.html?w=2026-05-11</link>
+      <description>Harare: high 27°, low 15° (overcast) · Bulawayo: high 27°, low 14° (clear sky) · Mutare: high 29°, low 16° (overcast) · Gweru: high 26°, low 15° (mainly clear) · Masvingo: high 30°, low 18° (partly cloudy) · Victoria Falls: high 32°, low 16° (overcast)  Tsumo yezuva: Zingizi gonyera pamwe maruva enyika haaperi. (Settle with one; the world’s flowers are endless.)</description>
+      <pubDate>Mon, 11 May 2026 19:06:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mutapatimes.com/fx.html?w=2026-05-11</guid>
+      <category>Weather</category>
+      <dc:creator>The Mutapa Times</dc:creator>
+      <media:content url="https://www.mutapatimes.com/img/cards/weather-1-cover.png?v=2026-05-11" medium="image"/>
+      <enclosure url="https://www.mutapatimes.com/img/cards/weather-1-cover.png?v=2026-05-11" type="image/jpeg" length="0"/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+name: Fetch Weather + Build Daily Carousel
+
+on:
+  schedule:
+    # 04:30 UTC = 06:30 CAT — fresh by the time Zim wakes up.
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-weather:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch weather for Zim cities
+        run: python3 scripts/fetch_weather.py
+
+      - name: Install Pillow + pilmoji (Twemoji color rendering)
+        run: pip install --quiet Pillow pilmoji
+
+      - name: Render daily weather carousel (8 slides)
+        run: python3 scripts/build_weather_card.py
+
+      - name: Regenerate feeds so the autolist picks up today's cover
+        run: python3 scripts/generate_rss.py
+
+      - name: Commit weather data + carousel + feeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/weather.json data/weather-carousel.json img/cards/weather-*.png feed.xml fx-feed.xml weather-feed.xml
+          git diff --cached --quiet || (git commit -m "Update weather carousel + feeds [automated]" && git push)

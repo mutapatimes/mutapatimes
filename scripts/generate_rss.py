@@ -350,6 +350,104 @@ def build_fx_snapshot_item(base):
     }
 
 
+def build_weather_snapshot_item(base):
+    """Build today's weather item for the dedicated /weather-feed.xml.
+    Same date-tagged-URL trick as the FX snapshot so the autolist
+    treats every CAT-day as a new post."""
+    weather_path = os.path.join(base, "data", "weather.json")
+    if not os.path.exists(weather_path):
+        return None
+    try:
+        weather = json.load(open(weather_path))
+    except (json.JSONDecodeError, OSError):
+        return None
+    cities = weather.get("cities") or []
+    if not cities:
+        return None
+
+    # Headline city for the title hook (Harare if present, else first).
+    headline_city = next((c for c in cities if c.get("city") == "Harare"), cities[0])
+
+    # Today's tsumo (mirrors the card + newsletter rotation).
+    try:
+        sys.path.insert(0, os.path.join(base, "scripts"))
+        from send_newsletter import SHONA_PROVERBS as _PROVERBS  # noqa: E402
+        import time as _time
+        day_index = int(_time.time() // 86400) % len(_PROVERBS)
+        tsumo = _PROVERBS[day_index]
+    except Exception:
+        tsumo = None
+
+    now = datetime.now(timezone.utc)
+    date_str = now.strftime("%Y-%m-%d")
+    pretty_date = now.strftime("%-d %b") if hasattr(now, "strftime") else date_str
+
+    title = (
+        f"Zim weather {pretty_date}: {headline_city['city']} "
+        f"{headline_city.get('label', '').lower() or 'today'} · high "
+        f"{round(headline_city['high'])}° / low {round(headline_city['low'])}°"
+    )
+
+    # Description: short city summaries + today's tsumo at the end.
+    city_lines = []
+    for c in cities:
+        if c.get("high") is None or c.get("low") is None:
+            continue
+        city_lines.append(
+            f"{c['city']}: high {round(c['high'])}°, low {round(c['low'])}° "
+            f"({c.get('label', '').lower()})"
+        )
+    desc = " · ".join(city_lines)
+    if tsumo:
+        desc += f"  Tsumo yezuva: {tsumo['shona']} ({tsumo['english']})"
+
+    link = f"{BASE_URL}/fx.html?w={date_str}"  # land on fx page for now (no /weather.html yet)
+    # Cover slide is the beautiful lead image — same file is duplicated as
+    # weather-snapshot.png for legacy single-image consumers, but pointing
+    # the feed at weather-1-cover.png is more honest about what it is.
+    image = f"{BASE_URL}/img/cards/weather-1-cover.png?v={date_str}"
+
+    return {
+        "title": title,
+        "link": link,
+        "description": desc,
+        "pubDate": now,
+        "category": "Weather",
+        "author": "The Mutapa Times",
+        "image": image,
+    }
+
+
+def write_weather_feed(base):
+    """Write /weather-feed.xml as a single-item feed for a dedicated
+    Metricool autolist (own template, own daily cadence)."""
+    item = build_weather_snapshot_item(base)
+    if not item:
+        print("  weather-feed.xml SKIPPED — data/weather.json missing or empty")
+        return False
+
+    rss = build_rss([item])
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Daily Zimbabwe Weather + Tsumo</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/weather-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "weather-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  weather-feed.xml written ({item['title'][:80]}…)")
+    return True
+
+
 def write_fx_feed(base):
     """Write a dedicated fx-feed.xml containing only today's FX snapshot
     item. Lets the user configure a SEPARATE Metricool autolist for FX
@@ -412,8 +510,9 @@ def main():
     print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items "
           f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old)")
 
-    # Separate single-item feed for the FX autolist
+    # Separate single-item feeds for the dedicated autolists
     write_fx_feed(base)
+    write_weather_feed(base)
 
 
 if __name__ == "__main__":
