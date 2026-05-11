@@ -208,6 +208,12 @@ def page_nav(active="articles", depth=1):
           <a target="_self"{eco_cls} href="{prefix}economy.html">Live Economy Data</a>
       </p>
       <p>
+          <a target="_self"{cls("property")} href="{prefix}property.html">Property</a>
+      </p>
+      <p>
+          <a target="_self"{cls("jobs")} href="{prefix}jobs.html">Jobs</a>
+      </p>
+      <p>
           <a target="_self"{cls("articles")} href="{prefix}articles.html">Articles</a>
       </p>
   </nav>
@@ -263,6 +269,8 @@ def page_footer(depth=1):
             <ul class="footer-links">
               <li><a href="{prefix}index.html">News</a></li>
               <li><a href="{prefix}economy.html">Live Economy Data</a></li>
+              <li><a href="{prefix}property.html">Property</a></li>
+              <li><a href="{prefix}jobs.html">Jobs</a></li>
               <li><a href="{prefix}articles.html">Articles</a></li>
             </ul>
           </div>
