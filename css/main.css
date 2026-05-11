@@ -4152,3 +4152,64 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .weather-carousel { padding: 0 12px; }
   .weather-slide { border-radius: 8px; }
 }
+
+/* ── Terms & Conditions page ── */
+.terms-content {
+  max-width: 760px; margin: 0 auto;
+  padding: 40px 24px 64px;
+  color: #1a1a1a;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem; line-height: 1.75;
+}
+.terms-content h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.2rem; font-weight: 900;
+  color: #1a1a1a; margin: 0 0 6px; line-height: 1.15;
+}
+.terms-meta {
+  color: #555; font-size: 0.88rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0 0 32px; letter-spacing: 0.02em;
+}
+.terms-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem; font-weight: 700;
+  color: #1a1a1a;
+  margin: 38px 0 10px; line-height: 1.3;
+}
+.terms-content p {
+  color: #1a1a1a; margin: 0 0 14px;
+}
+.terms-content ul {
+  color: #1a1a1a; margin: 0 0 16px 1.2em; padding: 0;
+}
+.terms-content ul li { margin-bottom: 8px; }
+.terms-content strong { color: #1a1a1a; font-weight: 700; }
+.terms-content em { color: #333; font-style: italic; }
+.terms-content a {
+  color: #c0392b; text-decoration: underline;
+}
+.terms-content a:hover { text-decoration: none; }
+.terms-content .terms-toc {
+  background: #f7f5f1; border: 1px solid #e6e0d4;
+  border-radius: 8px; padding: 18px 24px; margin: 0 0 32px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.92rem; line-height: 1.7;
+}
+.terms-content .terms-toc strong { display: block; margin-bottom: 6px; }
+.terms-content .terms-toc ol {
+  columns: 2; column-gap: 28px;
+  margin: 0; padding: 0 0 0 22px;
+}
+.terms-content .terms-toc li { margin-bottom: 4px; }
+.terms-content .terms-callout {
+  background: #f5ecd9; border-left: 3px solid #c0392b;
+  padding: 14px 18px; margin: 18px 0;
+  font-size: 0.95rem;
+}
+@media (max-width: 640px) {
+  .terms-content { padding: 28px 18px 48px; font-size: 0.95rem; }
+  .terms-content h1 { font-size: 1.7rem; }
+  .terms-content h2 { font-size: 1.15rem; }
+  .terms-content .terms-toc ol { columns: 1; }
+}
