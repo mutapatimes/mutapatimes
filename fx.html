@@ -127,6 +127,37 @@
     </div>
   </div>
 
+  <!-- Send-money calculator: compares the major remittance providers -->
+  <div class="fx-send-section">
+    <h5 class="fx-section-title">Send Money to Zimbabwe</h5>
+    <p class="fx-converter-help">Compare what your recipient actually receives across Mukuru, Wise, WorldRemit, Remitly &amp; Western Union. Click any row to send.</p>
+    <div class="fx-send-input">
+      <label class="fx-send-amt">
+        <span class="fx-conv-lbl">You send</span>
+        <input type="number" id="fxSendAmount" class="fx-conv-input" inputmode="decimal" min="1" step="1" value="100">
+      </label>
+      <label class="fx-send-cur">
+        <span class="fx-conv-lbl">From</span>
+        <select id="fxSendCurrency" class="jobs-select">
+          <option value="GBP">🇬🇧 GBP — UK</option>
+          <option value="USD">🇺🇸 USD — United States</option>
+          <option value="ZAR">🇿🇦 ZAR — South Africa</option>
+          <option value="AUD">🇦🇺 AUD — Australia</option>
+          <option value="CAD">🇨🇦 CAD — Canada</option>
+          <option value="EUR">🇪🇺 EUR — Eurozone</option>
+        </select>
+      </label>
+    </div>
+    <div class="fx-send-results" id="fxSendResults">
+      <p class="fx-loading">Loading providers&hellip;</p>
+    </div>
+    <p class="fx-send-disclaimer">
+      Recipient amounts shown in USD (the standard pay-out for Zim remittances). Margins and fees are typical
+      public-tier figures &mdash; promotional rates, first-transfer discounts, or pay-in method changes can move the
+      result by 1&ndash;3%. Always confirm on the provider site before sending.
+    </p>
+  </div>
+
   <!-- Rates table: USD against all -->
   <div class="fx-table-section">
     <h5 class="fx-section-title">Today&rsquo;s USD Cross-Rates</h5>
@@ -238,7 +269,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
-  <script src="js/fx.js?v=1"></script>
+  <script src="js/fx.js?v=2"></script>
 
 <script>
 if ('serviceWorker' in navigator) {

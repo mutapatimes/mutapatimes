@@ -28,10 +28,13 @@
   // Currencies shown in the converter (smaller, focused set).
   var CONVERTER_ORDER = ['USD', 'ZWG', 'GBP', 'ZAR', 'EUR', 'BWP'];
 
-  var heroEl   = document.getElementById('fxHero');
-  var metaEl   = document.getElementById('fxMeta');
-  var convEl   = document.getElementById('fxConverterGrid');
-  var tableEl  = document.getElementById('fxTableBody');
+  var heroEl     = document.getElementById('fxHero');
+  var metaEl     = document.getElementById('fxMeta');
+  var convEl     = document.getElementById('fxConverterGrid');
+  var tableEl    = document.getElementById('fxTableBody');
+  var sendAmtEl  = document.getElementById('fxSendAmount');
+  var sendCurEl  = document.getElementById('fxSendCurrency');
+  var sendResEl  = document.getElementById('fxSendResults');
   if (!heroEl) return;
 
   function escapeHtml(s) {
@@ -164,6 +167,115 @@
     }).join('');
   }
 
+  // ── Send-money calculator ───────────────────────────────
+  // Math: given mid-market rate (open.er-api.com, which is what Wise also
+  // quotes), each provider's recipient amount is:
+  //   net_send = max(0, send_amount - fee)
+  //   provider_usd_per_send = (1 / rates[send_currency]) * (1 - margin_pct/100)
+  //   recipient_usd = net_send * provider_usd_per_send
+  // Sorted by recipient_usd DESC so the best deal sits at the top.
+  function appendSendUrlParams(url, sendCur, sendAmt) {
+    if (!url) return url;
+    var sep = url.indexOf('?') === -1 ? '?' : '&';
+    return url + sep +
+      'utm_source=mutapatimes&utm_medium=fx_calculator' +
+      '&amount=' + encodeURIComponent(sendAmt) +
+      '&source=' + encodeURIComponent(sendCur);
+  }
+
+  function fmtMoney(n, decimals) {
+    if (n == null || isNaN(n) || !isFinite(n)) return '—';
+    return Number(n).toLocaleString('en-US', {
+      minimumFractionDigits: decimals == null ? 2 : decimals,
+      maximumFractionDigits: decimals == null ? 2 : decimals,
+    });
+  }
+
+  function renderSendResults(rates, providersData) {
+    if (!sendResEl) return;
+    var amount = parseFloat(sendAmtEl && sendAmtEl.value);
+    var sendCur = sendCurEl && sendCurEl.value;
+    if (!amount || amount <= 0 || !sendCur) {
+      sendResEl.innerHTML = '<p class="fx-loading">Enter an amount to compare providers.</p>';
+      return;
+    }
+    var corridor = (providersData && providersData.corridors || {})[sendCur];
+    if (!corridor) {
+      sendResEl.innerHTML = '<p class="fx-loading">No providers configured for that corridor yet.</p>';
+      return;
+    }
+    var midRate = rates[sendCur];
+    if (!midRate || !isFinite(midRate)) {
+      sendResEl.innerHTML = '<p class="fx-loading">FX rate for ' + escapeHtml(sendCur) + ' is unavailable right now.</p>';
+      return;
+    }
+    var mid_usd_per_send = 1 / midRate; // 1 unit of send currency in USD at mid-market
+
+    var rows = corridor.providers.map(function (p) {
+      var net = Math.max(0, amount - (p.fee || 0));
+      var providerRate = mid_usd_per_send * (1 - (p.fx_margin_pct || 0) / 100);
+      var recipient = net * providerRate;
+      return {
+        id: p.id,
+        name: p.name,
+        margin: p.fx_margin_pct || 0,
+        fee: p.fee || 0,
+        rate: providerRate,
+        recipient: recipient,
+        payout: p.payout || '',
+        speed: p.speed || '',
+        url: p.url || '',
+        notes: p.notes || '',
+      };
+    }).sort(function (a, b) { return b.recipient - a.recipient; });
+
+    // Best row gets a "Best value" badge
+    var best = rows.length ? rows[0].recipient : 0;
+
+    var rowsHtml = rows.map(function (r, i) {
+      var isBest = i === 0 && rows.length > 1;
+      var delta = best > 0 ? ((r.recipient - best) / best) * 100 : 0;
+      var deltaHtml = isBest
+        ? '<span class="fx-send-best">Best</span>'
+        : '<span class="fx-send-delta">' + (delta >= 0 ? '+' : '') + delta.toFixed(2) + '%</span>';
+      var feeHtml = r.fee ? sendCur + ' ' + fmtMoney(r.fee, 2) : 'No fee';
+      return (
+        '<a class="fx-send-row" href="' + escapeHtml(appendSendUrlParams(r.url, sendCur, amount)) +
+        '" target="_blank" rel="noopener">' +
+          '<div class="fx-send-provider">' +
+            '<span class="fx-send-name">' + escapeHtml(r.name) + '</span>' +
+            (r.notes ? '<span class="fx-send-note">' + escapeHtml(r.notes) + '</span>' : '') +
+          '</div>' +
+          '<div class="fx-send-amount">' +
+            '<span class="fx-send-recipient">$' + fmtMoney(r.recipient, 2) + '</span>' +
+            '<span class="fx-send-recipient-lbl">recipient gets (USD)</span>' +
+          '</div>' +
+          '<div class="fx-send-meta">' +
+            '<span>FX margin ' + r.margin.toFixed(1) + '%</span>' +
+            '<span>Fee ' + escapeHtml(feeHtml) + '</span>' +
+            (r.payout ? '<span>' + escapeHtml(r.payout) + '</span>' : '') +
+            (r.speed ? '<span>' + escapeHtml(r.speed) + '</span>' : '') +
+          '</div>' +
+          '<div class="fx-send-badge">' + deltaHtml + '<span class="fx-send-cta">Send →</span></div>' +
+        '</a>'
+      );
+    }).join('');
+
+    sendResEl.innerHTML = rowsHtml || '<p class="fx-loading">No matching providers.</p>';
+  }
+
+  function wireSendCalculator(rates, providersData) {
+    if (!sendAmtEl || !sendCurEl || !sendResEl) return;
+    var refresh = function () { renderSendResults(rates, providersData); };
+    var debouncer;
+    sendAmtEl.addEventListener('input', function () {
+      clearTimeout(debouncer);
+      debouncer = setTimeout(refresh, 150);
+    });
+    sendCurEl.addEventListener('change', refresh);
+    refresh();
+  }
+
   function render(data) {
     var rates = (data && data.rates) || {};
     if (!rates.ZWG && !rates.USD) {
@@ -178,6 +290,17 @@
       var asOf = data.as_of ? ' &middot; ECB ref: ' + escapeHtml(data.as_of) : '';
       metaEl.innerHTML = (age ? 'Updated ' + age : '') + asOf;
     }
+
+    // Fetch the provider config and wire up the send-money calculator.
+    fetch('data/remittance-providers.json', { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (providersData) { wireSendCalculator(rates, providersData); })
+      .catch(function (err) {
+        if (sendResEl) {
+          sendResEl.innerHTML = '<p class="fx-loading">Provider data temporarily unavailable.</p>';
+        }
+        if (window.console) console.warn('Remittance provider fetch failed:', err);
+      });
   }
 
   fetch(DATA_URL, { cache: 'no-cache' })

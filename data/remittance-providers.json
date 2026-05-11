@@ -1,0 +1,286 @@
+{
+  "_about": "Hand-curated remittance provider config for the /fx.html Send-Money-to-Zimbabwe calculator. Numbers are TYPICAL public-tier fees as of early 2026 — re-verify quarterly. Each entry's fx_margin_pct is the spread the provider takes against mid-market for that corridor; fees are flat charges in the send currency.",
+  "_last_reviewed": "2026-05-11",
+  "_disclaimer": "Indicative only. Real fees vary by pay-in method (debit card vs bank transfer), pay-out method (cash pickup vs USD bank vs EcoCash), and promotional offers. Always verify on the provider site before sending.",
+
+  "corridors": {
+    "GBP": {
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "providers": [
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.5,
+          "fee": 1.85,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/gb/send-money/send-money-to-zimbabwe",
+          "notes": "Mid-market rate. No cash pickup in Zim."
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.2,
+          "fee": 1.99,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe",
+          "notes": "Cash pickup at Mukuru, ZB Bank, OK Mart branches."
+        },
+        {
+          "id": "mukuru",
+          "name": "Mukuru",
+          "fx_margin_pct": 3.0,
+          "fee": 0,
+          "payout": "Cash pickup (1,300+ Zim branches)",
+          "speed": "Minutes",
+          "url": "https://www.mukuru.com/uk/en/calculate?to=zw",
+          "notes": "Largest Zim pickup network. No upfront fee — margin is the cost."
+        },
+        {
+          "id": "western_union",
+          "name": "Western Union",
+          "fx_margin_pct": 3.5,
+          "fee": 2.90,
+          "payout": "Cash pickup",
+          "speed": "Minutes",
+          "url": "https://www.westernunion.com/gb/en/send-money-to-zimbabwe.html",
+          "notes": "Fastest cash pickup. Premium pricing."
+        },
+        {
+          "id": "remitly",
+          "name": "Remitly",
+          "fx_margin_pct": 1.5,
+          "fee": 1.99,
+          "payout": "Cash pickup / bank",
+          "speed": "Minutes (Express) / 3-5 days (Economy)",
+          "url": "https://www.remitly.com/gb/en/zimbabwe",
+          "notes": "First-transfer promotional rates sometimes."
+        }
+      ]
+    },
+    "USD": {
+      "name": "United States",
+      "flag": "🇺🇸",
+      "providers": [
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.5,
+          "fee": 2.30,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/us/send-money/send-money-to-zimbabwe"
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.2,
+          "fee": 2.99,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe"
+        },
+        {
+          "id": "remitly",
+          "name": "Remitly",
+          "fx_margin_pct": 1.5,
+          "fee": 3.99,
+          "payout": "Cash pickup / bank",
+          "speed": "Minutes / Economy",
+          "url": "https://www.remitly.com/us/en/zimbabwe"
+        },
+        {
+          "id": "mukuru",
+          "name": "Mukuru",
+          "fx_margin_pct": 3.0,
+          "fee": 0,
+          "payout": "Cash pickup (1,300+ Zim branches)",
+          "speed": "Minutes",
+          "url": "https://www.mukuru.com/us/en/calculate?to=zw"
+        },
+        {
+          "id": "western_union",
+          "name": "Western Union",
+          "fx_margin_pct": 3.5,
+          "fee": 4.99,
+          "payout": "Cash pickup",
+          "speed": "Minutes",
+          "url": "https://www.westernunion.com/us/en/send-money-to-zimbabwe.html"
+        }
+      ]
+    },
+    "ZAR": {
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "providers": [
+        {
+          "id": "mukuru",
+          "name": "Mukuru",
+          "fx_margin_pct": 2.0,
+          "fee": 30,
+          "payout": "Cash pickup (1,300+ Zim branches)",
+          "speed": "Minutes",
+          "url": "https://www.mukuru.com/sa/en/calculate?to=zw",
+          "notes": "Dominant in SA→ZW corridor."
+        },
+        {
+          "id": "mama_money",
+          "name": "Mama Money",
+          "fx_margin_pct": 0.0,
+          "fee": 45,
+          "payout": "Cash pickup / EcoCash",
+          "speed": "Minutes",
+          "url": "https://mamamoney.co.za/send-money-to-zimbabwe",
+          "notes": "Zero-margin headline; recovers cost via flat fee. SA-focused fintech."
+        },
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.6,
+          "fee": 35,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/za/send-money/send-money-to-zimbabwe"
+        },
+        {
+          "id": "sasai",
+          "name": "Sasai Remit",
+          "fx_margin_pct": 1.5,
+          "fee": 20,
+          "payout": "EcoCash / cash pickup",
+          "speed": "Minutes",
+          "url": "https://www.sasai.global/remit",
+          "notes": "Cassava/Econet — direct EcoCash payout."
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.5,
+          "fee": 40,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe"
+        }
+      ]
+    },
+    "AUD": {
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "providers": [
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.5,
+          "fee": 3.20,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/au/send-money/send-money-to-zimbabwe"
+        },
+        {
+          "id": "remitly",
+          "name": "Remitly",
+          "fx_margin_pct": 1.5,
+          "fee": 2.99,
+          "payout": "Cash pickup / bank",
+          "speed": "Minutes / Economy",
+          "url": "https://www.remitly.com/au/en/zimbabwe"
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.2,
+          "fee": 3.99,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe"
+        },
+        {
+          "id": "western_union",
+          "name": "Western Union",
+          "fx_margin_pct": 3.5,
+          "fee": 5.90,
+          "payout": "Cash pickup",
+          "speed": "Minutes",
+          "url": "https://www.westernunion.com/au/en/send-money-to-zimbabwe.html"
+        }
+      ]
+    },
+    "CAD": {
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "providers": [
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.5,
+          "fee": 3.10,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/ca/send-money/send-money-to-zimbabwe"
+        },
+        {
+          "id": "remitly",
+          "name": "Remitly",
+          "fx_margin_pct": 1.5,
+          "fee": 2.99,
+          "payout": "Cash pickup / bank",
+          "speed": "Minutes / Economy",
+          "url": "https://www.remitly.com/ca/en/zimbabwe"
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.2,
+          "fee": 3.99,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe"
+        }
+      ]
+    },
+    "EUR": {
+      "name": "Eurozone",
+      "flag": "🇪🇺",
+      "providers": [
+        {
+          "id": "wise",
+          "name": "Wise",
+          "fx_margin_pct": 0.5,
+          "fee": 2.10,
+          "payout": "USD bank deposit",
+          "speed": "Within hours",
+          "url": "https://wise.com/eu/send-money/send-money-to-zimbabwe"
+        },
+        {
+          "id": "worldremit",
+          "name": "WorldRemit",
+          "fx_margin_pct": 1.2,
+          "fee": 2.99,
+          "payout": "Cash pickup / mobile money / bank",
+          "speed": "Minutes",
+          "url": "https://www.worldremit.com/en/zimbabwe"
+        },
+        {
+          "id": "remitly",
+          "name": "Remitly",
+          "fx_margin_pct": 1.5,
+          "fee": 1.99,
+          "payout": "Cash pickup / bank",
+          "speed": "Minutes / Economy",
+          "url": "https://www.remitly.com/de/en/zimbabwe"
+        },
+        {
+          "id": "western_union",
+          "name": "Western Union",
+          "fx_margin_pct": 3.5,
+          "fee": 3.90,
+          "payout": "Cash pickup",
+          "speed": "Minutes",
+          "url": "https://www.westernunion.com/de/en/send-money-to-zimbabwe.html"
+        }
+      ]
+    }
+  }
+}
