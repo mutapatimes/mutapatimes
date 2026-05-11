@@ -401,10 +401,10 @@ def build_weather_snapshot_item(base):
     if tsumo:
         desc += f"  Tsumo yezuva: {tsumo['shona']} ({tsumo['english']})"
 
-    link = f"{BASE_URL}/fx.html?w={date_str}"  # land on fx page for now (no /weather.html yet)
-    # Cover slide is the beautiful lead image — same file is duplicated as
-    # weather-snapshot.png for legacy single-image consumers, but pointing
-    # the feed at weather-1-cover.png is more honest about what it is.
+    # Date-tagged weather.html so Metricool's URL dedupe treats each day
+    # as a new post, AND so the landing page Metricool scrapes for OG
+    # metadata serves the weather cover (not fx.html's FX card).
+    link = f"{BASE_URL}/weather.html?d={date_str}"
     image = f"{BASE_URL}/img/cards/weather-1-cover.png?v={date_str}"
 
     return {

@@ -273,6 +273,7 @@ def page_footer(depth=1):
               <li><a href="{prefix}index.html">News</a></li>
               <li><a href="{prefix}economy.html">Live Economy Data</a></li>
               <li><a href="{prefix}fx.html">FX Rates</a></li>
+              <li><a href="{prefix}weather.html">Weather</a></li>
               <li><a href="{prefix}property.html">Property</a></li>
               <li><a href="{prefix}jobs.html">Jobs</a></li>
               <li><a href="{prefix}articles.html">Articles</a></li>
