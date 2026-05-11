@@ -79,11 +79,11 @@ def best_provider(rates, providers, send_currency, send_amount):
     if send_currency not in rates:
         return None
     mid_usd_per_send = 1 / rates[send_currency]
-    corridor = providers.get("corridors", {}).get(send_currency)
-    if not corridor:
+    route = providers.get("routes", {}).get(send_currency)
+    if not route:
         return None
     best = None
-    for p in corridor.get("providers", []):
+    for p in route.get("providers", []):
         net = max(0, send_amount - p.get("fee", 0))
         prate = mid_usd_per_send * (1 - p.get("fx_margin_pct", 0) / 100)
         recv = net * prate
@@ -95,7 +95,7 @@ def best_provider(rates, providers, send_currency, send_amount):
                 "margin": p.get("fx_margin_pct", 0),
             }
     if best:
-        best["count"] = len(corridor.get("providers", []))
+        best["count"] = len(route.get("providers", []))
     return best
 
 
@@ -109,9 +109,9 @@ def render_card(rates, providers, out_path):
     big_currency_font = load_font("serif_bold", 64)
     big_rate_font = load_font("serif_bold", 150)
     sub_font = load_font("sans", 28)
-    corridor_lbl_font = load_font("sans_bold", 30)
-    corridor_amt_font = load_font("serif_bold", 48)
-    corridor_via_font = load_font("sans", 24)
+    route_lbl_font = load_font("sans_bold", 30)
+    route_amt_font = load_font("serif_bold", 48)
+    route_via_font = load_font("sans", 24)
     cta_font = load_font("sans_bold", 28)
     small_font = load_font("sans", 22)
 
@@ -139,11 +139,11 @@ def render_card(rates, providers, out_path):
     # Divider
     draw.line([(60, 510), (CARD_W - 60, 510)], fill=CARD_FG_MUTED, width=1)
 
-    # ── BEST PROVIDER BY CORRIDOR ──
+    # ── BEST PROVIDER BY COUNTRY ──
     draw.text((60, 540), "BEST RATE TO SEND",
               font=eyebrow_font, fill=ACCENT)
 
-    corridors_to_show = [
+    countries_to_show = [
         ("GBP", 100, "🇬🇧", "£100 from UK"),
         ("USD", 100, "🇺🇸", "$100 from US"),
         ("ZAR", 1000, "🇿🇦", "R1,000 from SA"),
@@ -151,19 +151,19 @@ def render_card(rates, providers, out_path):
 
     y = 600
     row_h = 200
-    for code, amount, flag, label in corridors_to_show:
+    for code, amount, flag, label in countries_to_show:
         best = best_provider(rates, providers, code, amount)
         # Label column
-        draw.text((60, y), label, font=corridor_lbl_font, fill=CARD_FG)
+        draw.text((60, y), label, font=route_lbl_font, fill=CARD_FG)
         if best is None:
             draw.text((60, y + 50), "(no providers configured)",
-                      font=corridor_via_font, fill=CARD_FG_MUTED)
+                      font=route_via_font, fill=CARD_FG_MUTED)
         else:
             recv_str = f"→ ${fmt_money(best['recipient_usd'], 2)}"
             via_str = f"via {best['name']}  ·  beats {best['count'] - 1} other"
             via_str += "s" if best['count'] > 2 else ""
-            draw.text((60, y + 50), recv_str, font=corridor_amt_font, fill=ACCENT)
-            draw.text((60, y + 120), via_str, font=corridor_via_font, fill=CARD_FG_MUTED)
+            draw.text((60, y + 50), recv_str, font=route_amt_font, fill=ACCENT)
+            draw.text((60, y + 120), via_str, font=route_via_font, fill=CARD_FG_MUTED)
         y += row_h
 
     # ── CTA footer ──

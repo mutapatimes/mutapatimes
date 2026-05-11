@@ -199,9 +199,9 @@
       sendResEl.innerHTML = '<p class="fx-loading">Enter an amount to compare providers.</p>';
       return;
     }
-    var corridor = (providersData && providersData.corridors || {})[sendCur];
-    if (!corridor) {
-      sendResEl.innerHTML = '<p class="fx-loading">No providers configured for that corridor yet.</p>';
+    var route = (providersData && providersData.routes || {})[sendCur];
+    if (!route) {
+      sendResEl.innerHTML = '<p class="fx-loading">No providers configured for that country yet.</p>';
       return;
     }
     var midRate = rates[sendCur];
@@ -211,7 +211,7 @@
     }
     var mid_usd_per_send = 1 / midRate; // 1 unit of send currency in USD at mid-market
 
-    var rows = corridor.providers.map(function (p) {
+    var rows = route.providers.map(function (p) {
       var net = Math.max(0, amount - (p.fee || 0));
       var providerRate = mid_usd_per_send * (1 - (p.fx_margin_pct || 0) / 100);
       var recipient = net * providerRate;

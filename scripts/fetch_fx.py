@@ -25,8 +25,8 @@ SOURCE_URL = "https://open.er-api.com/v6/latest/USD"
 USER_AGENT = "Mozilla/5.0 (compatible; MutapaTimesBot/1.0; +https://www.mutapatimes.com)"
 
 # Currencies we surface on /fx.html — keep narrow so the page stays
-# scannable. SADC neighbours + major diaspora corridors + Zim's own ZWG.
-# Order matters for display.
+# scannable. SADC neighbours + major diaspora send countries + Zim's
+# own ZWG. Order matters for display.
 DISPLAY_CURRENCIES = [
     # Headline
     "ZWG",  # Zim Gold (current official Zimbabwe currency)
@@ -35,7 +35,7 @@ DISPLAY_CURRENCIES = [
     "BWP",  # Botswana pula
     "MZN",  # Mozambican metical
     "ZMW",  # Zambian kwacha
-    # Major diaspora corridors
+    # Major diaspora send countries
     "GBP",  # UK
     "EUR",  # Eurozone
     "AUD",  # Australia

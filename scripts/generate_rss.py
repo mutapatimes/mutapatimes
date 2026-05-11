@@ -300,11 +300,11 @@ def build_fx_snapshot_item(base):
     if os.path.exists(prov_path):
         try:
             providers = json.load(open(prov_path))
-            corridor = (providers.get("corridors") or {}).get("GBP") or {}
+            uk_route = (providers.get("routes") or {}).get("GBP") or {}
             mid_usd_per_gbp = 1 / rates["GBP"] if rates.get("GBP") else None
             if mid_usd_per_gbp:
                 best = None
-                for p in corridor.get("providers", []):
+                for p in uk_route.get("providers", []):
                     net = max(0, 100 - p.get("fee", 0))
                     recv = net * mid_usd_per_gbp * (1 - p.get("fx_margin_pct", 0) / 100)
                     if best is None or recv > best[1]:
@@ -335,9 +335,9 @@ def build_fx_snapshot_item(base):
     if best_uk_name and best_uk_amount:
         desc_lines.append(
             f"Sending £100 from the UK: {best_uk_name} lands ${best_uk_amount:.2f}, best of "
-            f"{len((providers.get('corridors') or {}).get('GBP', {}).get('providers', []))} providers."
+            f"{len((providers.get('routes') or {}).get('GBP', {}).get('providers', []))} providers."
         )
-    desc_lines.append("Compare every corridor at mutapatimes.com/fx")
+    desc_lines.append("Compare every country at mutapatimes.com/fx")
 
     return {
         "title": title,
@@ -375,7 +375,7 @@ def write_fx_feed(base):
         1,
     ).replace(
         "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
-        "<description>Daily Zimbabwe FX snapshot — official USD/ZWG rate plus the best money-transfer provider per diaspora corridor. One item per day, dedicated for the Mutapa Times FX autolist.</description>",
+        "<description>Daily Zimbabwe FX snapshot — official USD/ZWG rate plus the best money-transfer provider for each diaspora country. One item per day, dedicated for the Mutapa Times FX autolist.</description>",
         1,
     )
 

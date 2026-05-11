@@ -1,9 +1,9 @@
 {
-  "_about": "Hand-curated remittance provider config for the /fx.html Send-Money-to-Zimbabwe calculator. Numbers are TYPICAL public-tier fees as of early 2026 — re-verify quarterly. Each entry's fx_margin_pct is the spread the provider takes against mid-market for that corridor; fees are flat charges in the send currency.",
+  "_about": "Hand-curated remittance provider config for the /fx.html Send-Money-to-Zimbabwe calculator. Numbers are TYPICAL public-tier fees as of early 2026 — re-verify quarterly. Each entry's fx_margin_pct is the spread the provider takes against mid-market for that send route; fees are flat charges in the send currency.",
   "_last_reviewed": "2026-05-11",
   "_disclaimer": "Indicative only. Real fees vary by pay-in method (debit card vs bank transfer), pay-out method (cash pickup vs USD bank vs EcoCash), and promotional offers. Always verify on the provider site before sending.",
 
-  "corridors": {
+  "routes": {
     "GBP": {
       "name": "United Kingdom",
       "flag": "🇬🇧",
@@ -123,7 +123,7 @@
           "payout": "Cash pickup (1,300+ Zim branches)",
           "speed": "Minutes",
           "url": "https://www.mukuru.com/sa/en/calculate?to=zw",
-          "notes": "Dominant in SA→ZW corridor."
+          "notes": "Dominant for SA→Zim transfers."
         },
         {
           "id": "mama_money",
