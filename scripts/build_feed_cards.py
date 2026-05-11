@@ -176,6 +176,27 @@ def collect_articles():
     return out
 
 
+def prune_stale_cards(active_url_hashes):
+    """Delete any card PNG whose article URL is no longer in the active
+    corpus. Keeps img/cards/news/ tracking the live feed window
+    (~30 days) instead of growing forever — without this, the repo
+    breaks GitHub Pages' 1 GB site-size cap in ~3 months."""
+    pruned = 0
+    for path in glob.glob(os.path.join(OUT_DIR, "*.png")):
+        name = os.path.splitext(os.path.basename(path))[0]
+        # Cards we own follow the 12-char-md5 naming convention. Anything
+        # else (manual uploads, legacy assets) we leave alone.
+        if len(name) != 12 or not all(c in "0123456789abcdef" for c in name):
+            continue
+        if name not in active_url_hashes:
+            try:
+                os.remove(path)
+                pruned += 1
+            except OSError as e:
+                print(f"    prune FAIL {name}: {e}")
+    return pruned
+
+
 def main():
     print("=== BUILD FEED CARDS ===")
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -187,12 +208,16 @@ def main():
     skipped_existing = 0
     skipped_stale = 0
     failed = 0
+    # URLs that survived the 30-day freshness filter — these are the
+    # *only* cards that should remain on disk after the prune pass.
+    active_hashes = set()
 
     for art in articles:
         dt = _parse_pub_date(art.get("publishedAt"))
         if not _is_fresh(dt):
             skipped_stale += 1
             continue
+        active_hashes.add(card_hash(art["url"]))
         out_path = os.path.join(OUT_DIR, card_filename(art["url"]))
         if os.path.exists(out_path):
             skipped_existing += 1
@@ -209,9 +234,13 @@ def main():
             failed += 1
             print(f"    FAIL {art['title'][:50]}: {e}")
 
+    # ── Cleanup pass: delete cards whose article is no longer active ──
+    pruned = prune_stale_cards(active_hashes)
+
     print(f"  Rendered  {rendered} new cards")
     print(f"  Cached    {skipped_existing} existing")
     print(f"  Stale     {skipped_stale} (>{MAX_AGE_DAYS}d old, skipped)")
+    print(f"  Pruned    {pruned} stale card files")
     if failed:
         print(f"  Failed    {failed}")
     print(f"\n  Output:   {OUT_DIR}")
