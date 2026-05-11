@@ -313,6 +313,15 @@ def fetch_category(name, feed_urls):
             json.dump({"articles": []}, f)
         return False
 
+    # Drop stale Google News resurfaces (it sometimes returns 5+ year-old
+    # stories in the RSS feed for niche queries). is_zw_relevant() enforces
+    # the 30-day publishedAt window.
+    before = len(all_articles)
+    all_articles = [a for a in all_articles if is_zw_relevant(a)]
+    dropped = before - len(all_articles)
+    if dropped:
+        print(f"  >> filtered {dropped} stale/off-topic articles (kept {len(all_articles)})")
+
     articles = deduplicate(all_articles)
 
     outpath = os.path.join(DATA_DIR, f"{name}.json")

@@ -1,22 +1,38 @@
 #!/usr/bin/env python3
-"""Generate RSS 2.0 feed (feed.xml) for The Mutapa Times."""
+"""Generate RSS 2.0 feed (feed.xml) for The Mutapa Times.
+
+Every item links to a page on mutapatimes.com (a /news/{slug}.html landing
+page for spotlight/category articles, or /articles/{slug}.html for CMS-
+authored articles). This is what Metricool's Autolist will repost, so each
+item MUST drive traffic to us rather than to the source publisher.
+
+Items older than MAX_ITEM_AGE_DAYS are filtered out so a stale Google News
+resurface can't auto-publish through Autolists.
+"""
 import glob
 import json
 import os
 import re
-from datetime import datetime, timezone
+import sys
+from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
+
+# Reuse the canonical slug + landing-page URL logic from build_news_pages
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_news_pages import make_slug as news_make_slug  # noqa: E402
 
 BASE_URL = "https://www.mutapatimes.com"
 FEED_URL = f"{BASE_URL}/feed.xml"
 MAX_ITEMS = 50
+MAX_ITEM_AGE_DAYS = 30  # Autolists shouldn't ever republish stale wires
 
 
 def _parse_date(s):
-    """Try to parse an ISO-ish date string into a datetime."""
+    """Try to parse ISO 8601 or RFC 2822 into a tz-aware datetime."""
     if not s:
         return None
+    # ISO 8601 variants first
     for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d"):
         try:
             dt = datetime.strptime(s.strip(), fmt)
@@ -25,11 +41,32 @@ def _parse_date(s):
             return dt
         except ValueError:
             continue
-    return None
+    # RFC 2822 (e.g., "Wed, 23 Jan 2019 08:00:00 GMT") used by Google News RSS
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        return None
+
+
+def _is_fresh(dt):
+    if dt is None:
+        return False
+    try:
+        return (datetime.now(timezone.utc) - dt).days <= MAX_ITEM_AGE_DAYS
+    except (TypeError, ValueError):
+        return False
+
+
+def _normalize_source(src):
+    if isinstance(src, dict):
+        return (src.get("name") or "").strip()
+    return str(src or "").strip()
 
 
 def collect_cms_articles(base):
-    """Read CMS markdown articles and return list of dicts."""
+    """Read CMS markdown articles and return list of dicts. Links point to
+    /articles/{slug}.html on mutapatimes.com."""
     items = []
     articles_dir = os.path.join(base, "content", "articles")
     for md in glob.glob(os.path.join(articles_dir, "*.md")):
@@ -49,10 +86,12 @@ def collect_cms_articles(base):
         author = re.search(r'^author:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
         image = re.search(r'^image:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
         dt = _parse_date(date.group(1)) if date else None
+        if not _is_fresh(dt):
+            continue
         items.append({
             "title": title.group(1) if title else slug,
             "link": f"{BASE_URL}/articles/{slug}.html",
-            "description": (summary.group(1) if summary else body[:200].strip()),
+            "description": (summary.group(1) if summary else body[:240].strip()),
             "pubDate": dt,
             "category": category.group(1) if category else "News",
             "author": author.group(1) if author else None,
@@ -61,70 +100,109 @@ def collect_cms_articles(base):
     return items
 
 
-def collect_json_articles(base):
-    """Read data/*.json news files and return list of dicts."""
+def collect_news_landing_articles(base):
+    """Read data/spotlight.json + data/{category}.json and emit one feed item
+    per article, linking to the mutapatimes.com /news/{slug}.html landing
+    page (NOT the source publisher's URL). Old articles are dropped."""
     items = []
     data_dir = os.path.join(base, "data")
-    for jf in glob.glob(os.path.join(data_dir, "*.json")):
-        fname = os.path.basename(jf)
-        if fname in ("rss_descriptions.json",):
+    # Same set of feeds that build_news_pages reads + spotlight
+    candidates = ["spotlight.json"] + [
+        f"{cat}.json"
+        for cat in ("business", "technology", "entertainment", "sports", "science", "health")
+    ]
+    seen_source_urls = set()
+    for fname in candidates:
+        path = os.path.join(data_dir, fname)
+        if not os.path.exists(path):
             continue
         try:
-            with open(jf, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
-        # Handle both flat list and object with "articles"/"more" keys
-        articles = []
-        if isinstance(data, list):
-            articles = data
-        elif isinstance(data, dict):
-            for key in ("articles", "more", "items"):
-                articles.extend(data.get(key, []))
-            if not articles and "title" in data:
-                articles = [data]
-        for a in articles:
-            title = a.get("title", "")
-            url = a.get("url") or a.get("link", "")
-            if not title or not url:
-                continue
-            dt = _parse_date(a.get("publishedAt") or a.get("published_at") or a.get("date", ""))
-            items.append({
-                "title": title,
-                "link": url,
-                "description": a.get("description") or a.get("summary", ""),
-                "pubDate": dt,
-                "category": a.get("category", "News"),
-            })
+        if not isinstance(data, dict):
+            continue
+        for key in ("articles", "more"):
+            for a in data.get(key) or []:
+                if not isinstance(a, dict):
+                    continue
+                source_url = (a.get("url") or "").strip()
+                title = (a.get("title") or "").strip()
+                if not source_url or not title:
+                    continue
+                if source_url in seen_source_urls:
+                    continue
+                seen_source_urls.add(source_url)
+                dt = _parse_date(a.get("publishedAt") or a.get("published_at") or "")
+                if not _is_fresh(dt):
+                    continue
+                source_name = _normalize_source(a.get("source"))
+                # Build the canonical mutapatimes.com landing URL — matches
+                # what build_news_pages.py renders for the same article.
+                landing = (
+                    f"{BASE_URL}/news/"
+                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}.html"
+                )
+                desc = (a.get("description") or "").strip()
+                # Add inline attribution so Autolist posts credit the source
+                # while still linking to us. (Metricool's Autolist template
+                # variables — ${title}, ${description}, ${link} — pull from
+                # these three.)
+                if source_name and source_name.lower() not in desc.lower():
+                    desc = f"{desc} (via {source_name})" if desc else f"{title} — via {source_name}"
+                items.append({
+                    "title": title,
+                    "link": landing,
+                    "description": desc,
+                    "pubDate": dt,
+                    "category": fname.replace(".json", "").title() if fname != "spotlight.json" else "News",
+                    "author": source_name or None,
+                    "image": (a.get("image") or "").strip() or None,
+                })
     return items
 
 
 def build_rss(items):
     """Build RSS 2.0 XML string."""
     now = format_datetime(datetime.now(timezone.utc))
-    # Sort by date descending, take top MAX_ITEMS
-    items.sort(key=lambda x: x.get("pubDate") or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    items.sort(
+        key=lambda x: x.get("pubDate") or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
     items = items[:MAX_ITEMS]
 
     entries = []
     for item in items:
         pub = format_datetime(item["pubDate"]) if item.get("pubDate") else now
-        cat = f"      <category>{escape(item.get('category', 'News'))}</category>\n" if item.get("category") else ""
-        author = f"      <dc:creator>{escape(item.get('author', 'The Mutapa Times'))}</dc:creator>\n" if item.get("author") else ""
+        cat = (
+            f"      <category>{escape(item.get('category', 'News'))}</category>\n"
+            if item.get("category") else ""
+        )
+        author = (
+            f"      <dc:creator>{escape(item.get('author') or 'The Mutapa Times')}</dc:creator>\n"
+            if item.get("author") else ""
+        )
         image = ""
         if item.get("image"):
-            image = f'      <media:content url="{escape(item["image"])}" medium="image"/>\n'
+            # media:content + enclosure — Metricool's Autolist picks up
+            # whichever it understands. Both are commonly supported.
+            image = (
+                f'      <media:content url="{escape(item["image"])}" medium="image"/>\n'
+                f'      <enclosure url="{escape(item["image"])}" type="image/jpeg" length="0"/>\n'
+            )
         entries.append(
-            f"    <item>\n"
+            "    <item>\n"
             f"      <title>{escape(item['title'])}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
             f"      <description>{escape(item.get('description', ''))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
-            f"      <guid isPermaLink=\"true\">{escape(item['link'])}</guid>\n"
+            f'      <guid isPermaLink="true">{escape(item["link"])}</guid>\n'
             f"{cat}{author}{image}"
-            f"    </item>"
+            "    </item>"
         )
 
+    body = "\n".join(entries) + ("\n" if entries else "")
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0"\n'
@@ -139,14 +217,14 @@ def build_rss(items):
         f"    <lastBuildDate>{now}</lastBuildDate>\n"
         f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
         "    <image>\n"
-        f"      <title>The Mutapa Times</title>\n"
+        "      <title>The Mutapa Times</title>\n"
         f"      <url>{BASE_URL}/img/logo.png</url>\n"
         f"      <link>{BASE_URL}</link>\n"
         "    </image>\n"
         "    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>\n"
         "    <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>\n"
         "    <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>\n"
-        "\n".join(entries) + "\n"
+        f"{body}"
         "  </channel>\n"
         "</rss>\n"
     )
@@ -154,8 +232,8 @@ def build_rss(items):
 
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
-    items = collect_cms_articles(base) + collect_json_articles(base)
-    # Deduplicate by link
+    items = collect_cms_articles(base) + collect_news_landing_articles(base)
+    # Deduplicate by canonical link (mutapatimes.com URL)
     seen = set()
     unique = []
     for item in items:
@@ -166,7 +244,8 @@ def main():
     out = os.path.join(base, "feed.xml")
     with open(out, "w", encoding="utf-8") as f:
         f.write(rss)
-    print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items")
+    print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items "
+          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old)")
 
 
 if __name__ == "__main__":

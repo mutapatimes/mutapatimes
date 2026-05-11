@@ -551,12 +551,47 @@ def build_carousel_slides(art, slug, color_idx=0):
 
 
 # ── Data loading ──────────────────────────────────────────────
+# Refuse to post any article whose publishedAt is older than this. Belt &
+# braces against fetch_news letting a stale Google News resurface through.
+MAX_ARTICLE_AGE_DAYS = 30
+
+
+def _parse_pub_date(s):
+    """Parse ISO 8601 or RFC 2822 into a tz-aware datetime, or None."""
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        pass
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        return None
+
+
+def _is_fresh_enough(article):
+    """Reject articles older than MAX_ARTICLE_AGE_DAYS. If publishedAt is
+    missing/unparseable, keep the article (fetch_news has already gated)."""
+    pub = article.get("publishedAt") or ""
+    dt = _parse_pub_date(pub)
+    if not dt:
+        return True
+    try:
+        return (datetime.now(timezone.utc) - dt).days <= MAX_ARTICLE_AGE_DAYS
+    except (TypeError, ValueError):
+        return True
+
+
 def load_articles():
     """Load articles from spotlight + categories, deduped by URL."""
     seen = set()
     out = []
+    stale = 0
 
     def take(filepath, source_label):
+        nonlocal stale
         if not os.path.isfile(filepath):
             return
         try:
@@ -566,6 +601,9 @@ def load_articles():
         for a in data.get("articles", []):
             url = (a.get("url") or "").strip()
             if not url or url in seen:
+                continue
+            if not _is_fresh_enough(a):
+                stale += 1
                 continue
             seen.add(url)
             # source is sometimes a string (spotlight), sometimes {name, url} (categories)
@@ -585,6 +623,8 @@ def load_articles():
     take(SPOTLIGHT_FILE, "spotlight")
     for cat in CATEGORY_FILES:
         take(os.path.join(DATA_DIR, f"{cat}.json"), cat)
+    if stale:
+        print(f"  >> Dropped {stale} stale articles (>{MAX_ARTICLE_AGE_DAYS}d old)")
     return out
 
 

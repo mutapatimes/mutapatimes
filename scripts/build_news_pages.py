@@ -63,18 +63,50 @@ def landing_url(article):
 
 
 # ── Article loading ────────────────────────────────────────────
+# Don't render a landing page for articles older than this. Stops Google
+# News RSS resurfaces (e.g., a 2019 story reappearing in the tech feed)
+# from getting a fresh-looking /news/{slug}.html.
+MAX_ARTICLE_AGE_DAYS = 30
+
+
 def normalize_source(src):
     if isinstance(src, dict):
         return (src.get("name") or "").strip()
     return str(src or "").strip()
 
 
+def _parse_pub_date(s):
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        pass
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        return None
+
+
+def _is_fresh_enough(article):
+    dt = _parse_pub_date(article.get("publishedAt") or "")
+    if not dt:
+        return True
+    try:
+        return (datetime.now(timezone.utc) - dt).days <= MAX_ARTICLE_AGE_DAYS
+    except (TypeError, ValueError):
+        return True
+
+
 def load_articles():
     """Read spotlight + category JSONs into a flat list, deduped by URL."""
     seen = set()
     out = []
+    stale = 0
 
     def take(filepath, label):
+        nonlocal stale
         if not os.path.isfile(filepath):
             return
         try:
@@ -84,6 +116,9 @@ def load_articles():
         for a in data.get("articles", []):
             url = (a.get("url") or "").strip()
             if not url or url in seen:
+                continue
+            if not _is_fresh_enough(a):
+                stale += 1
                 continue
             seen.add(url)
             out.append({
@@ -99,6 +134,8 @@ def load_articles():
     take(SPOTLIGHT_FILE, "spotlight")
     for cat in CATEGORY_FILES:
         take(os.path.join(DATA_DIR, f"{cat}.json"), cat)
+    if stale:
+        print(f"  Dropped {stale} stale articles (>{MAX_ARTICLE_AGE_DAYS}d old)")
     return out
 
 
