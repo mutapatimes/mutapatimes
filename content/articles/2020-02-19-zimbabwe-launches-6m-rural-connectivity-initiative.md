@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe launches $6m rural connectivity initiative"
+date: 2020-02-19T08:00:00.000Z
+author: Developing Telecoms
+category: Tech
+image: 
+summary: "Zimbabwe launches $6m rural connectivity initiative"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdDZTb2xvd1J4ZmdPY2l1bkRoZEtydUF4QmJncURkdlBiUlhKRlU5bURuSVR5YXFWby1kcjA4dDNsSENtc2JyNU1FNmRMd1RxVFQ3ZXd2RC1YbGEwWHZlbUlaZEtwaXoyZk14eWNWRE8zcDFLRy1GdVY3cFhqcW9HS3R6Ylg0S0J3dEl5bndOUXRTdVRoV3ZtWmJBX1lZLUFwakF3Z1N0ckR5OEU0Y1kteEt6alpOZ09IdkI4NmZYWVlRZmJHUENFQ0JlSFg0d2VM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Developing Telecoms.*
+[Read original article](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdDZTb2xvd1J4ZmdPY2l1bkRoZEtydUF4QmJncURkdlBiUlhKRlU5bURuSVR5YXFWby1kcjA4dDNsSENtc2JyNU1FNmRMd1RxVFQ3ZXd2RC1YbGEwWHZlbUlaZEtwaXoyZk14eWNWRE8zcDFLRy1GdVY3cFhqcW9HS3R6Ylg0S0J3dEl5bndOUXRTdVRoV3ZtWmJBX1lZLUFwakF3Z1N0ckR5OEU0Y1kteEt6alpOZ09IdkI4NmZYWVlRZmJHUENFQ0JlSFg0d2VM?oc=5)

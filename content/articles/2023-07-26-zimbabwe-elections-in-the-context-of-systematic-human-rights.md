@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe: Elections in the context of systematic human rights violations and criminalization of state critics"
+date: 2023-07-26T07:00:00.000Z
+author: Amnesty International
+category: Health
+image: 
+summary: "Zimbabwe: Elections in the context of systematic human rights violations and criminalization of state critics"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRnpTek5ldXM2OUVYcGNCaDlGNEl0X2c5VmxPMFpZSGhneVl0UG45MXFvNEhQY2FERFNFVmpoWFB3ZUVndFc5RnI1b0xTdjh2cW8tZkNKcjBzZHlub3FBdndQQ08xX3ZmMkZaNmh1bWtfODdiVWlOc0pzYllZX0hlZXE2X3FTM2RxVWNWLWt0YkdkN3JsaXIzQW5Hd29lTDdQUFR2dTdlTDZjdFhsREFHeDh5OUQtQm5BMUx3VVN4YTZwaVlBTGNOVWtwSm9fZEFnWVpPVWpJNi0zZ3pOMTJDQXQ5b3U2WFhER1lmeA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Amnesty International.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRnpTek5ldXM2OUVYcGNCaDlGNEl0X2c5VmxPMFpZSGhneVl0UG45MXFvNEhQY2FERFNFVmpoWFB3ZUVndFc5RnI1b0xTdjh2cW8tZkNKcjBzZHlub3FBdndQQ08xX3ZmMkZaNmh1bWtfODdiVWlOc0pzYllZX0hlZXE2X3FTM2RxVWNWLWt0YkdkN3JsaXIzQW5Hd29lTDdQUFR2dTdlTDZjdFhsREFHeDh5OUQtQm5BMUx3VVN4YTZwaVlBTGNOVWtwSm9fZEFnWVpPVWpJNi0zZ3pOMTJDQXQ5b3U2WFhER1lmeA?oc=5)

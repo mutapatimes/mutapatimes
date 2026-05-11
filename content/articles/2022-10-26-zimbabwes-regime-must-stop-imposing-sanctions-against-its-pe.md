@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe’s regime must stop imposing sanctions against its people"
+date: 2022-10-26T07:00:00.000Z
+author: Al Jazeera
+category: Policy
+image: 
+summary: "Zimbabwe’s regime must stop imposing sanctions against its people"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMkhzODRNeDF0empUeGpQcjdBODhNMnB5S3NQc2t3TUY1bUZIeFJVVW56Vmx5X19GLWo5X2N3MEl6QU9PTHJ6Q2Nfd2ZvcEdtamFXd1BsR1o2RzNBcmxmWVBneEpGQ09Wc0xZTjA1alVPUmxuTGRRZ2dYR3NQYXZpTjJOQk_SAYoBQVVfeXFMUFdNU2tTeDZ0cmYwYlNLN19fbVE3YWRYdm10eUJ3RV9Qcm83eGJJSG1zdnAwYXZXRi14enRJcmRjSGRtekZleTRXZ01rU0N3UXp0dHhVQnFzQ0piZEc5cHNTWmNjWEJ3T2E3cHZRSnFYV2R1eUs0cjFiQzhQYnVSSUxnVDRFVWJ1M2NB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMihAFBVV95cUxPMkhzODRNeDF0empUeGpQcjdBODhNMnB5S3NQc2t3TUY1bUZIeFJVVW56Vmx5X19GLWo5X2N3MEl6QU9PTHJ6Q2Nfd2ZvcEdtamFXd1BsR1o2RzNBcmxmWVBneEpGQ09Wc0xZTjA1alVPUmxuTGRRZ2dYR3NQYXZpTjJOQk_SAYoBQVVfeXFMUFdNU2tTeDZ0cmYwYlNLN19fbVE3YWRYdm10eUJ3RV9Qcm83eGJJSG1zdnAwYXZXRi14enRJcmRjSGRtekZleTRXZ01rU0N3UXp0dHhVQnFzQ0piZEc5cHNTWmNjWEJ3T2E3cHZRSnFYV2R1eUs0cjFiQzhQYnVSSUxnVDRFVWJ1M2NB?oc=5)

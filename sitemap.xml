@@ -2,73 +2,355 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.mutapatimes.com/</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/index.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/articles.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.mutapatimes.com/people.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.mutapatimes.com/businesses.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.mutapatimes.com/economy.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/who.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/what.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/why.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/how.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.mutapatimes.com/terms.html</loc>
-    <lastmod>2026-05-10T21:42:17+00:00</lastmod>
+    <lastmod>2026-05-11T02:41:44+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2017-06-14-the-day-after-in-zimbabwe.html</loc>
+    <lastmod>2017-06-14T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2017-08-23-endangered-african-wild-dogs-find-safety-in-zimbabwe.html</loc>
+    <lastmod>2017-08-23T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2017-11-15-zimbabwe-coup.html</loc>
+    <lastmod>2017-11-15T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2020-02-19-zimbabwe-launches-6m-rural-connectivity-initiative.html</loc>
+    <lastmod>2020-02-19T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2020-03-25-zimbabwe-doctors-and-nurses-down-tools-over-lack-of-protecti.html</loc>
+    <lastmod>2020-03-25T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2020-04-20-how-the-skeleton-of-mutapa-times-is-based-on-sarah-charlesworths-work.html</loc>
     <lastmod>2020-04-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2021-03-31-zimbabwe-data-driven-decisions-maintain-availability-and-acc.html</loc>
+    <lastmod>2021-03-31T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2021-04-28-rich-or-poor-in-zimbabwe-crumbling-healthcare-is-deadly-for.html</loc>
+    <lastmod>2021-04-28T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2022-01-19-its-time-for-the-sadc-region-to-hold-zimbabwe-to-account.html</loc>
+    <lastmod>2022-01-19T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2022-07-20-econets-cassava-spin-off-wants-to-be-the-tencent-of-zimbabwe.html</loc>
+    <lastmod>2022-07-20T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2022-08-31-new-ranger-station-will-help-elephants-flourish-in-zimbabwes.html</loc>
+    <lastmod>2022-08-31T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2022-10-12-zimbabwes-telecel-to-be-placed-under-corporate-rescue.html</loc>
+    <lastmod>2022-10-12T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2022-10-26-zimbabwes-regime-must-stop-imposing-sanctions-against-its-pe.html</loc>
+    <lastmod>2022-10-26T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2023-03-22-iwd-2023-digital-anti-poaching-tools-elevate-zimbabwes-women.html</loc>
+    <lastmod>2023-03-22T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2023-05-17-telecel-zimbabwe-to-receive-corporate-rescue.html</loc>
+    <lastmod>2023-05-17T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2023-07-26-zimbabwe-elections-in-the-context-of-systematic-human-rights.html</loc>
+    <lastmod>2023-07-26T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2023-08-30-zimbabwes-troubled-election-might-southern-african-leaders-f.html</loc>
+    <lastmod>2023-08-30T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2023-10-11-sadc-attempts-to-navigate-zimbabwes-disputed-election.html</loc>
+    <lastmod>2023-10-11T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-02-14-zimbabwe-digital-rights-activists-fear-misuse-of-surveillanc.html</loc>
+    <lastmod>2024-02-14T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-05-15-zimbabwe-to-allow-mobile-money-agents-to-operate-again.html</loc>
+    <lastmod>2024-05-15T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-07-17-in-zimbabwe-free-cancer-screenings-are-widely-available-trea.html</loc>
+    <lastmod>2024-07-17T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-08-21-sadc-holds-44th-annual-summit-in-zimbabwe-as-regional-impera.html</loc>
+    <lastmod>2024-08-21T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-10-09-zimbabwe-the-rise-of-the-mbingas.html</loc>
+    <lastmod>2024-10-09T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2024-11-27-drought-imperils-zimbabwes-ancient-rock-art-spurring-efforts.html</loc>
+    <lastmod>2024-11-27T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-03-26-cedarville-students-improve-water-filtration-in-zimbabwe.html</loc>
+    <lastmod>2025-03-26T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-04-30-zimbabwetracking-elephants-with-technology.html</loc>
+    <lastmod>2025-04-30T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-05-21-engineering-team-creates-road-solution-for-zimbabwe-mission.html</loc>
+    <lastmod>2025-05-21T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-06-25-celebrating-partnership-and-progress-a-look-back-at-europe-d.html</loc>
+    <lastmod>2025-06-25T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-06-25-children-team-up-to-help-sick-kids-in-zimbabwe.html</loc>
+    <lastmod>2025-06-25T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-07-09-africa-sables-storm-into-rugby-africa-cup-semis-with-command.html</loc>
+    <lastmod>2025-07-09T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-07-16-namib-minerals-to-invest-300m-to-restart-two-gold-mines-in-z.html</loc>
+    <lastmod>2025-07-16T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-07-23-2026-nations-cup-will-be-a-game-changer-for-zimbabwe-rugby.html</loc>
+    <lastmod>2025-07-23T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-07-23-as-wetlands-cop15-opens-in-zimbabwe-its-time-to-rethink-how.html</loc>
+    <lastmod>2025-07-23T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-07-30-impossible-not-to-be-emotional-how-ian-prior-came-out-of-ret.html</loc>
+    <lastmod>2025-07-30T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-09-10-fao-and-sadc-convene-forum-to-accelerate-agricultural-invest.html</loc>
+    <lastmod>2025-09-10T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-09-17-high-gold-prices-entice-mining-companies-into-more-explorati.html</loc>
+    <lastmod>2025-09-17T05:31:19.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-09-17-zambia-and-zimbabwe-launch-lake-kariba-blue-economy-strategy.html</loc>
+    <lastmod>2025-09-17T00:33:15.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-09-24-a-hundred-kilometres-to-myself-what-zimbabwes-wilderness-and.html</loc>
+    <lastmod>2025-09-24T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-10-15-iucn-welcomes-back-zimbabwe-as-a-state-member-at-iucn-world.html</loc>
+    <lastmod>2025-10-15T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-10-29-unicef-zimbabwe-and-wild-horizons-partner-to-build-climate-r.html</loc>
+    <lastmod>2025-10-29T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-11-26-tackling-digital-violence-against-women-in-zimbabwe-a-crucia.html</loc>
+    <lastmod>2025-11-26T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-03-englands-record-against-2027-rugby-world-cup-pool-draw-oppon.html</loc>
+    <lastmod>2025-12-03T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-03-zimbabwe-get-tough-rugby-world-cup-2027-draw.html</loc>
+    <lastmod>2025-12-03T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-03-zimbabwe-to-face-england-wales-at-rugby-world-cup.html</loc>
+    <lastmod>2025-12-03T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-10-supporting-zimbabwean-cultural-and-creative-industries-in-th.html</loc>
+    <lastmod>2025-12-10T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-17-econet-wireless-zimbabwe-moves-to-voluntarily-delist-from-zs.html</loc>
+    <lastmod>2025-12-17T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-17-zimbabwe-rugby-union-mourns-springbok-women-captain-lusanda.html</loc>
+    <lastmod>2025-12-17T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-17-zimbabwe-scraps-gold-royalty-hike-sets-higher-threshold-for.html</loc>
+    <lastmod>2025-12-17T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2025-12-31-telecel-subscriber-base-shrinks.html</loc>
+    <lastmod>2025-12-31T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-01-21-caledonia-secures-150m-for-zimbabwe-gold-mine-in-rare-intern.html</loc>
+    <lastmod>2026-01-21T08:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -787,6 +1069,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-t20-world-cup-zimbabwes-battle-back-from-wilderness-to-impre.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-terms-of-reference-zimbabwe-circular-economy-taskforce-propo.html</loc>
     <lastmod>2026-02-25T21:37:39.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -823,8 +1111,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-us-company-secures-150m-funding-for-zimbabwe-gold-mine.html</loc>
+    <lastmod>2026-02-25T19:18:25.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-us-embassy-confirms-its-shutting-down-lifesaving-hiv-tb-and.html</loc>
     <lastmod>2026-02-25T06:04:48.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-us-to-end-health-aid-to-zimbabwe-after-funding-talks-collaps.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -847,6 +1147,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-bans-exports-of-all-raw-minerals-and-lithium-concen.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-explains-why-it-rejected-us367m-us-health-funding-f.html</loc>
     <lastmod>2026-02-25T19:18:41.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -855,6 +1161,18 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-halts-lithium-concentrate-exports-as-government-tig.html</loc>
     <lastmod>2026-02-25T14:00:59.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-imposes-ban-on-exports-of-all-raw-minerals-and-lith.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-owes-valterra-platinum-100-million-in-unpaid-export.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -871,6 +1189,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-rejects-us-health-deal-over-sensitive-data-concerns.html</loc>
+    <lastmod>2026-02-25T08:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-sables-receive-vehicle-sponsorship-ahead-of-austral.html</loc>
     <lastmod>2026-02-25T09:23:34.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -879,6 +1203,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-suspends-all-raw-mineral-and-lithium-concentrate-ex.html</loc>
     <lastmod>2026-02-25T08:52:25.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-02-25-zimbabwe-suspends-lithium-concentrate-exports.html</loc>
+    <lastmod>2026-02-25T17:18:05.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -5959,6 +6289,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-03-11-zimbabwes-gems-boost-ties-with-hong-kong.html</loc>
+    <lastmod>2026-03-11T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-03-11-zimbabwes-persecution-of-blessed-mhlanga-is-more-damaging-to.html</loc>
     <lastmod>2026-03-11T11:00:01.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -10717,6 +11053,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-03-25-mater-dei-hospital-powers-healthcare-with-solar-and-battery.html</loc>
+    <lastmod>2026-03-25T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-03-25-mining-sector-urged-to-end-child-labour.html</loc>
     <lastmod>2026-03-25T19:16:51.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -10995,6 +11337,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-03-25-zimbabwe-holds-interest-rates-at-35-to-shield-cpi-amid-iran.html</loc>
     <lastmod>2026-03-25T00:04:41.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-03-25-zimbabwe-launches-national-artificial-intelligence-strategy.html</loc>
+    <lastmod>2026-03-25T07:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -16261,6 +16609,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-08-zimbabwe-plans-1000-free-wi-fi-hotspots-to-power-ai-future.html</loc>
+    <lastmod>2026-04-08T10:18:22.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-08-zimbabwe-ready-to-host-2027-cricket-world-cup-president-mnan.html</loc>
     <lastmod>2026-04-08T17:36:36.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -19111,6 +19465,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-japan-zimbabwe-and-un-agencies-unite-to-strengthen-zimbabwes.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-15-machakaire-hits-back-as-mliswa-claims-youth-league-is-failin.html</loc>
     <lastmod>2026-04-15T11:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -19167,6 +19527,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-15-only-dembare-can-soothe-utetes-agony.html</loc>
     <lastmod>2026-04-15T09:47:10.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-opinion-how-rassie-erasmus-should-utilise-south-africa-a-cla.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -19237,8 +19603,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-south-africa-a-vs-zimbabwe-zimbabwe-vs-south-africa-a-rugby.html</loc>
+    <lastmod>2026-04-15T05:04:55.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-south-africa-returns-looted-historic-sculpture-human-remains.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-15-south-africa-returns-stolen-human-remains-sacred-bird-carvin.html</loc>
     <lastmod>2026-04-15T03:37:08.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-south-africa-returns-stolen-zimbabwe-artifacts.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -19327,6 +19711,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-zimbabwe-bird-return-beginning-of-cultural-healing-journey.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-15-zimbabwe-churches-oppose-mnangagwa-term-extension-bid-after.html</loc>
     <lastmod>2026-04-15T05:44:52.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -19395,6 +19785,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-15-zimbabwe-sprinters-eye-gaborone-showdown.html</loc>
     <lastmod>2026-04-15T23:59:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-15-zimbabwes-bizarre-economic-boom.html</loc>
+    <lastmod>2026-04-15T07:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -21669,6 +22065,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-04-22-leon-casino-review-features-games-and-player-experience.html</loc>
     <lastmod>2026-04-22T02:44:38.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-04-22-life-saving-drone-deliveries-expand-across-zimbabwe-and-sadc.html</loc>
+    <lastmod>2026-04-22T07:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26401,6 +26803,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-belarus-zimbabwe-to-strengthen-ties-in-sports.html</loc>
+    <lastmod>2026-05-06T13:31:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-brazil-joins-morocco-zimbabwe-ethiopia-tunisia-south-africa.html</loc>
+    <lastmod>2026-05-06T10:30:53.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-bulawayo-woman-loses-us16k-in-facebook-car-scam.html</loc>
     <lastmod>2026-05-06T07:49:32.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -26449,6 +26863,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-da-questions-ramaphosas-zimbabwe-visit.html</loc>
+    <lastmod>2026-05-06T18:26:02.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-death-toll-rises-to-17-in-hararenyamapanda-crash-involving-m.html</loc>
     <lastmod>2026-05-06T23:30:50.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -26493,6 +26913,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-gettyimages-2261732285.html</loc>
     <lastmod>2026-05-06T16:17:40.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-good-catching-up-with-my-brother-ramaphosamnangagwa-summit-p.html</loc>
+    <lastmod>2026-05-06T19:06:24.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26557,8 +26983,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-presidency-clarifies-ramaphosa-had-no-knowledge-of-controver.html</loc>
+    <lastmod>2026-05-06T15:21:21.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-presidency-defends-ramaphosas-visit-to-zimbabwe.html</loc>
+    <lastmod>2026-05-06T16:36:07.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-prosecutor-general-matanda-moyo-says-prosecutions-must-be-ap.html</loc>
     <lastmod>2026-05-06T08:28:36.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-ramaphosas-quiet-zimbabwe-visit-sparks-political-storm-as-pr.html</loc>
+    <lastmod>2026-05-06T18:23:05.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26605,6 +27049,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-were-now-in-4th-chimurengaliberation-struggle-continues-in-c.html</loc>
+    <lastmod>2026-05-06T20:10:05.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-why-is-zimbabwes-intelligence-agency-allowing-this-serious-q.html</loc>
     <lastmod>2026-05-06T16:17:55.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -26631,6 +27081,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-zigs-future-depends-on-purchasing-power-not-paper-quality-sa.html</loc>
     <lastmod>2026-05-06T03:48:22.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-zim-turns-new-leaf-president-secures-place-in-global-value-c.html</loc>
+    <lastmod>2026-05-06T22:20:16.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26679,6 +27135,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-06-zimbabwe-to-audit-zambian-medical-schools.html</loc>
     <lastmod>2026-05-06T19:32:39.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-06-zimbabwe-vs-namibia-commentary-international-test-match-2025.html</loc>
+    <lastmod>2026-05-06T14:29:33.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -27775,6 +28237,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-afdb-mission-raises-stakes-for-bulawayos-us100-million-glass.html</loc>
+    <lastmod>2026-05-10T13:06:47.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-10-bar-brawl-ends-in-fatal-stabbing.html</loc>
     <lastmod>2026-05-10T04:57:13.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -27783,6 +28251,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-10-bcc-tightens-burial-rules-as-pressure-mounts-on-cemetery-spa.html</loc>
     <lastmod>2026-05-10T04:00:04.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-chiwenga-to-represent-mnangagwa-at-museveni-inauguration.html</loc>
+    <lastmod>2026-05-10T13:05:49.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -27807,6 +28281,12 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-10-european-union-condemns-escalation-of-global-conflicts-harmi.html</loc>
     <lastmod>2026-05-10T05:27:02.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-gas-prices-go-up-again.html</loc>
+    <lastmod>2026-05-10T13:19:01.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -27847,8 +28327,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-iran-sends-official-response-to-us-peace-proposal-as-fragile.html</loc>
+    <lastmod>2026-05-10T13:05:23.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-10-kwekwe-serial-paedophile-gets-75-years.html</loc>
     <lastmod>2026-05-10T07:49:59.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-man-fatally-stabs-wife-during-family-mediation-meeting.html</loc>
+    <lastmod>2026-05-10T13:05:19.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -27861,6 +28353,24 @@
   <url>
     <loc>https://www.mutapatimes.com/articles/2026-05-10-new-ipec-powers-to-deepen-zims-global-financial-integration.html</loc>
     <lastmod>2026-05-10T03:16:37.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-paul-tungwarara-and-daughter-a-lesson-in-elite-detachment.html</loc>
+    <lastmod>2026-05-10T14:28:41.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-rbz-releases-zig669-million-in-new-banknotes.html</loc>
+    <lastmod>2026-05-10T14:34:31.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/articles/2026-05-10-torerayi-moyo-announces-heritage-based-curriculum-rollout.html</loc>
+    <lastmod>2026-05-10T14:33:57.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -28467,6 +28977,366 @@
   <url>
     <loc>https://www.mutapatimes.com/news/2026-05-10-zru-interim-management-committee-unveils-rugby-reform-roadma-b0972f.html</loc>
     <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-2026-nations-cup-will-be-a-game-changer-for-zimbabwe-rugby-d48222.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-a-hundred-kilometres-to-myself-what-zimbabwe-s-wilderness-an-50283b.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-africa-sables-storm-into-rugby-africa-cup-semis-with-command-79d6b0.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-as-wetlands-cop15-opens-in-zimbabwe-it-s-time-to-rethink-how-561249.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-belarus-zimbabwe-to-strengthen-ties-in-sports-5acd9a.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-brazil-joins-morocco-zimbabwe-ethiopia-tunisia-south-africa-702bc7.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-caledonia-secures-150m-for-zimbabwe-gold-mine-in-rare-intern-a5b4b6.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-cedarville-students-improve-water-filtration-in-zimbabwe-04351b.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-celebrating-partnership-and-progress-a-look-back-at-europe-d-3c867b.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-children-team-up-to-help-sick-kids-in-zimbabwe-510c90.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-drought-imperils-zimbabwe-s-ancient-rock-art-spurring-effort-d21b8d.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-econet-s-cassava-spin-off-wants-to-be-the-tencent-of-zimbabw-39d244.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-econet-wireless-zimbabwe-moves-to-voluntarily-delist-from-zs-4c9658.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-endangered-african-wild-dogs-find-safety-in-zimbabwe-873b89.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-engineering-team-creates-road-solution-for-zimbabwe-mission-e776ab.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-england-s-record-against-2027-rugby-world-cup-pool-draw-oppo-51fe0f.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-high-gold-prices-entice-mining-companies-into-more-explorati-b2759d.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-impossible-not-to-be-emotional-how-ian-prior-came-out-of-ret-a79be1.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-in-zimbabwe-free-cancer-screenings-are-widely-available-trea-7817e9.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-iucn-welcomes-back-zimbabwe-as-a-state-member-at-iucn-world-8cbe52.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-iwd-2023-digital-anti-poaching-tools-elevate-zimbabwe-s-wome-9328a6.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-japan-zimbabwe-and-un-agencies-unite-to-strengthen-zimbabwe-a711a6.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-mater-dei-hospital-powers-healthcare-with-solar-and-battery-0c8ef7.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-namib-minerals-to-invest-300m-to-restart-two-gold-mines-in-z-d2f6ad.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-new-ranger-station-will-help-elephants-flourish-in-zimbabwe-3a63e8.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-opinion-how-rassie-erasmus-should-utilise-south-africa-a-cla-89c5be.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-rich-or-poor-in-zimbabwe-crumbling-healthcare-is-deadly-for-1b80cc.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-south-africa-a-vs-zimbabwe-zimbabwe-vs-south-africa-a-rugby-688788.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-south-africa-returns-looted-historic-sculpture-human-remains-cdcd57.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-south-africa-returns-stolen-zimbabwe-artifacts-008107.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-supporting-zimbabwean-cultural-and-creative-industries-in-th-b38df6.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-t20-world-cup-zimbabwe-s-battle-back-from-wilderness-to-impr-4fecdb.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-tackling-digital-violence-against-women-in-zimbabwe-a-crucia-dd43b3.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-telecel-subscriber-base-shrinks-310cd8.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-telecel-zimbabwe-to-receive-corporate-rescue-d58126.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-unicef-zimbabwe-and-wild-horizons-partner-to-build-climate-r-13723c.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-us-company-secures-150m-funding-for-zimbabwe-gold-mine-74b718.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zambia-and-zimbabwe-launch-lake-kariba-blue-economy-strategy-6d3b53.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-bans-exports-of-all-raw-minerals-and-lithium-concen-fabd6c.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-bird-return-beginning-of-cultural-healing-journey-e99bb0.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-data-driven-decisions-maintain-availability-and-acc-ae4901.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-digital-rights-activists-fear-misuse-of-surveillanc-f94806.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-doctors-and-nurses-down-tools-over-lack-of-protecti-691991.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-elections-in-the-context-of-systematic-human-rights-167b31.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-get-tough-rugby-world-cup-2027-draw-27a510.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-imposes-ban-on-exports-of-all-raw-minerals-and-lith-11c99c.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-launches-6m-rural-connectivity-initiative-b471b3.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-owes-valterra-platinum-100-million-in-unpaid-export-f0f16c.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-plans-1-000-free-wi-fi-hotspots-to-power-ai-future-738f7d.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-rugby-union-mourns-springbok-women-captain-lusanda-9aa011.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-s-bizarre-economic-boom-567911.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-s-gems-boost-ties-with-hong-kong-6d6fcc.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-s-telecel-to-be-placed-under-corporate-rescue-32cb09.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-scraps-gold-royalty-hike-sets-higher-threshold-for-43ffe4.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-suspends-lithium-concentrate-exports-62c491.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-the-rise-of-the-mbingas-d22779.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-to-allow-mobile-money-agents-to-operate-again-d3b29d.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-to-face-england-wales-at-rugby-world-cup-3d2253.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-tracking-elephants-with-technology-96aa93.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mutapatimes.com/news/2026-05-11-zimbabwe-vs-namibia-commentary-international-test-match-2025-3cd55c.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -1,0 +1,16 @@
+---
+title: "It’s time for the SADC region to hold Zimbabwe to account"
+date: 2022-01-19T08:00:00.000Z
+author: Al Jazeera
+category: Policy
+image: 
+summary: "It’s time for the SADC region to hold Zimbabwe to account"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMGRGb29Bd0xiZ0g4NTlmYVhnQzVHOWRLamtQWEdZOXNqbi1DSFdvMWctV254UmJaWGF3SC1fLVZaUGo1aGoyQ0FuWS1ITzJ0dGJFSFd5OWt5Z1B6NnNzN1pwWU0zYURfN1N4NGxlM19OZ2xuTWotTDVRUnJKZ3QzZ3NPc3Z2N3NHOGFKaGVVcXhUQUNWR3R5OVhyVUlhSHPSAaQBQVVfeXFMTjd4SHQ0NF84U3NUZUw5WVhqRWFIN2FzX1FiWEFIc2t3bFRKRDBsY09vMFZONExQc3o3Um1xVF9NN09mWkNtc3RsOG1pSGhpRlhnMFVkTEwxMEhRZHRCdHpwb2Z4cEdxQ28zaFJkcXpUR1ZMdWNpS3psTmh3aEdmSm5TVjlOazJVMVJVSFNEbUZXalhmY2JZdk9qZUZ2SUhuajlpZnA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMinwFBVV95cUxQMGRGb29Bd0xiZ0g4NTlmYVhnQzVHOWRLamtQWEdZOXNqbi1DSFdvMWctV254UmJaWGF3SC1fLVZaUGo1aGoyQ0FuWS1ITzJ0dGJFSFd5OWt5Z1B6NnNzN1pwWU0zYURfN1N4NGxlM19OZ2xuTWotTDVRUnJKZ3QzZ3NPc3Z2N3NHOGFKaGVVcXhUQUNWR3R5OVhyVUlhSHPSAaQBQVVfeXFMTjd4SHQ0NF84U3NUZUw5WVhqRWFIN2FzX1FiWEFIc2t3bFRKRDBsY09vMFZONExQc3o3Um1xVF9NN09mWkNtc3RsOG1pSGhpRlhnMFVkTEwxMEhRZHRCdHpwb2Z4cEdxQ28zaFJkcXpUR1ZMdWNpS3psTmh3aEdmSm5TVjlOazJVMVJVSFNEbUZXalhmY2JZdk9qZUZ2SUhuajlpZnA?oc=5)

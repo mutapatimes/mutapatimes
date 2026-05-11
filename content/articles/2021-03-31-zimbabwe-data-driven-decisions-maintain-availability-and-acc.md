@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe: Data-driven decisions maintain availability and access to essential health services during the COVID-19 response"
+date: 2021-03-31T07:00:00.000Z
+author: World Health Organization (WHO)
+category: Health
+image: 
+summary: "Zimbabwe: Data-driven decisions maintain availability and access to essential health services during the COVID-19 response"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAJBVV95cUxQclBOUEtLRkpHSUFHcS1Hb0RTMzUyR2t1TEJ1WnR2MV9Zc1N4VzV5YnVKQTJodERMZTNxWU94Uk9sZVV2bjV1azI1dDJ2SXYzQkRTX2VyMkRtRVFNU1NXVm5lNU44dlh0UVRveG04dlkzbVZGVTA3WlgxWkJWeVRiQzdoS0hCZWVzMTZoRnFQaHlJX0tRU2RtUXFTbWt5cXljdmVjZ0hJV2dORkR3ckc4bElGOTJBT1ZPZzFpTGZCbUYwb3lGVTNzdUdiWTVyUG9xR1FzT0w2amJWdjhxRXkzNVFuRDV3YlAyNmxqZG1yNUhOWUNDYmQ2RXJ2bXpvMU54WDhpVA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by World Health Organization (WHO).*
+[Read original article](https://news.google.com/rss/articles/CBMihAJBVV95cUxQclBOUEtLRkpHSUFHcS1Hb0RTMzUyR2t1TEJ1WnR2MV9Zc1N4VzV5YnVKQTJodERMZTNxWU94Uk9sZVV2bjV1azI1dDJ2SXYzQkRTX2VyMkRtRVFNU1NXVm5lNU44dlh0UVRveG04dlkzbVZGVTA3WlgxWkJWeVRiQzdoS0hCZWVzMTZoRnFQaHlJX0tRU2RtUXFTbWt5cXljdmVjZ0hJV2dORkR3ckc4bElGOTJBT1ZPZzFpTGZCbUYwb3lGVTNzdUdiWTVyUG9xR1FzT0w2amJWdjhxRXkzNVFuRDV3YlAyNmxqZG1yNUhOWUNDYmQ2RXJ2bXpvMU54WDhpVA?oc=5)
