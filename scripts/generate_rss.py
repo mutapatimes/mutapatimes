@@ -403,9 +403,9 @@ def build_weather_snapshot_item(base):
 
     # Date-tagged weather.html so Metricool's URL dedupe treats each day
     # as a new post, AND so the landing page Metricool scrapes for OG
-    # metadata serves the weather cover (not fx.html's FX card).
+    # metadata serves the weather card (not fx.html's FX card).
     link = f"{BASE_URL}/weather.html?d={date_str}"
-    image = f"{BASE_URL}/img/cards/weather-1-cover.png?v={date_str}"
+    image = f"{BASE_URL}/img/cards/weather-snapshot.png?v={date_str}"
 
     return {
         "title": title,

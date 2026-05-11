@@ -21,15 +21,15 @@ jobs:
       - name: Install Pillow + pilmoji (Twemoji color rendering)
         run: pip install --quiet Pillow pilmoji
 
-      - name: Render daily weather carousel (8 slides)
+      - name: Render daily weather card
         run: python3 scripts/build_weather_card.py
 
-      - name: Regenerate feeds so the autolist picks up today's cover
+      - name: Regenerate feeds so the autolist picks up today's card
         run: python3 scripts/generate_rss.py
 
-      - name: Commit weather data + carousel + feeds
+      - name: Commit weather data + card + feeds
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/weather.json data/weather-carousel.json img/cards/weather-*.png feed.xml fx-feed.xml weather-feed.xml
-          git diff --cached --quiet || (git commit -m "Update weather carousel + feeds [automated]" && git push)
+          git add data/weather.json img/cards/weather-snapshot.png img/cards/weather-1-cover.png feed.xml fx-feed.xml weather-feed.xml
+          git diff --cached --quiet || (git commit -m "Update weather card + feeds [automated]" && git push)
