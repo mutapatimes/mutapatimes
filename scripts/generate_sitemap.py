@@ -13,6 +13,7 @@ STATIC_PAGES = [
     ("index.html", 1.0, "hourly"),
     ("articles.html", 0.9, "daily"),
     ("economy.html", 0.8, "daily"),
+    ("fx.html", 0.9, "daily"),
     ("property.html", 0.8, "daily"),
     ("jobs.html", 0.9, "hourly"),
     ("who.html", 0.4, "yearly"),

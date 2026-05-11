@@ -3863,3 +3863,118 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .job-card { padding: 14px; }
   .job-card-logo { width: 44px; height: 44px; }
 }
+
+/* ───── FX rates page ───── */
+.fx-hero {
+  max-width: 720px; margin: 8px auto 24px; padding: 0 20px;
+}
+.fx-hero-loading {
+  text-align: center; color: var(--text-mid); font-size: 0.92em;
+  padding: 28px 16px;
+}
+.fx-hero-card {
+  background: linear-gradient(135deg, #f5e3e1 0%, #f5ecd9 100%);
+  border: 1px solid var(--rule); border-radius: 10px;
+  padding: 28px 22px; text-align: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+}
+.fx-hero-label {
+  font-size: 0.72em; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 12px;
+}
+.fx-hero-big {
+  font-family: 'Playfair Display', Georgia, serif;
+  display: flex; align-items: baseline; justify-content: center;
+  gap: 14px; flex-wrap: wrap; margin: 0 0 10px;
+}
+.fx-hero-from, .fx-hero-to {
+  font-size: 2.4em; font-weight: 700; color: var(--ink); line-height: 1.1;
+}
+.fx-hero-to { color: var(--accent); }
+.fx-hero-eq { font-size: 1.6em; color: var(--text-light); }
+.fx-hero-sub {
+  font-size: 0.82em; color: var(--text-mid); margin: 4px 0 0;
+}
+
+.fx-converter, .fx-table-section {
+  max-width: 900px; margin: 0 auto 28px; padding: 0 20px;
+}
+.fx-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15em; font-weight: 700; color: var(--ink);
+  margin: 0 0 6px;
+}
+.fx-converter-help {
+  font-size: 0.82em; color: var(--text-mid); margin: 0 0 14px;
+}
+.fx-converter-grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.fx-loading {
+  grid-column: 1 / -1; text-align: center; color: var(--text-mid);
+  padding: 20px; font-size: 0.92em;
+}
+.fx-conv-field {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px;
+  background: #fff;
+  transition: border-color 0.15s ease;
+}
+.fx-conv-field:focus-within { border-color: var(--accent); }
+.fx-conv-lbl {
+  font-size: 0.72em; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--text-mid); text-transform: uppercase;
+}
+.fx-conv-flag { display: inline-block; margin-right: 4px; }
+.fx-conv-name {
+  text-transform: none; letter-spacing: 0; font-weight: 400;
+  color: var(--text-light); font-size: 0.85em;
+}
+.fx-conv-input {
+  border: 0; outline: none; padding: 4px 0; font-size: 1.15em;
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  color: var(--ink); background: transparent;
+  width: 100%; -moz-appearance: textfield;
+}
+.fx-conv-input::-webkit-outer-spin-button,
+.fx-conv-input::-webkit-inner-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+.fx-table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; }
+.fx-table {
+  width: 100%; border-collapse: collapse; font-size: 0.92em;
+}
+.fx-table th, .fx-table td {
+  padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--rule);
+}
+.fx-table thead th {
+  background: #f7f5f1; font-size: 0.78em; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-mid); font-weight: 600;
+}
+.fx-table tbody tr:last-child td { border-bottom: 0; }
+.fx-table tbody tr:hover { background: rgba(0,0,0,0.015); }
+.fx-flag { display: inline-block; margin-right: 6px; }
+.fx-code {
+  font-family: 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em; color: var(--text-mid);
+}
+.fx-num {
+  font-family: 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+  font-weight: 600; color: var(--ink); text-align: right;
+}
+.fx-num--muted { color: var(--text-mid); font-weight: 400; }
+.fx-attribution {
+  max-width: 900px; margin: 8px auto 24px; padding: 0 20px;
+  font-size: 0.75em; color: var(--text-light); text-align: center;
+  line-height: 1.5;
+}
+.fx-attribution a { color: var(--text-mid); text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .fx-hero-card { padding: 20px 14px; }
+  .fx-hero-from, .fx-hero-to { font-size: 1.7em; }
+  .fx-hero-eq { font-size: 1.2em; }
+  .fx-converter-grid { grid-template-columns: 1fr 1fr; }
+  .fx-table th, .fx-table td { padding: 8px 10px; font-size: 0.85em; }
+}

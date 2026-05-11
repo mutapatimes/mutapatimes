@@ -208,6 +208,9 @@ def page_nav(active="articles", depth=1):
           <a target="_self"{eco_cls} href="{prefix}economy.html">Live Economy Data</a>
       </p>
       <p>
+          <a target="_self"{cls("fx")} href="{prefix}fx.html">FX</a>
+      </p>
+      <p>
           <a target="_self"{cls("property")} href="{prefix}property.html">Property</a>
       </p>
       <p>
@@ -269,6 +272,7 @@ def page_footer(depth=1):
             <ul class="footer-links">
               <li><a href="{prefix}index.html">News</a></li>
               <li><a href="{prefix}economy.html">Live Economy Data</a></li>
+              <li><a href="{prefix}fx.html">FX Rates</a></li>
               <li><a href="{prefix}property.html">Property</a></li>
               <li><a href="{prefix}jobs.html">Jobs</a></li>
               <li><a href="{prefix}articles.html">Articles</a></li>
