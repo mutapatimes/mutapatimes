@@ -493,208 +493,47 @@ def write_fx_feed(base):
 
 
 # ─────────────────────────────────────────────────────────────
-# Economy feed — daily rotating one-stat card. The day-of-week
-# rotation is computed in lockstep with build_economy_card.py so
-# the autolist post body matches the card image.
+# Economy feed — daily rotating one-stat card. The day-of-year
+# rotation is computed in lockstep with build_economy_card.py via
+# scripts/economy_chapters.py — a 31-chapter rotation that ensures
+# no fact repeats within any 30-day window.
 # ─────────────────────────────────────────────────────────────
-ECON_CHAPTERS = [
-    # (eyebrow, hook builder) — Mon=0
-    ("gdp_composition",  "Where the money lives"),
-    ("goods_trade",      "Zimbabwe's trade balance"),
-    ("fastest_growing",  "Fastest growing sector"),
-    ("mining_vs_agri",   "Mining vs agriculture"),
-    ("remittances",      "The diaspora dividend"),
-    ("services_trade",   "Services trade"),
-    ("missing_money",    "Net errors & omissions"),
-]
-
-
-def _econ_short(name):
-    overrides = {
-        "Wholesale and retail trade; repair of motor vehicles and motorcycles": "Wholesale & retail",
-        "Public administration and defence; compulsory social security": "Public administration",
-        "Agiculture, Hunting and Fishing and forestry": "Agriculture",
-        "Mining and quarrying": "Mining",
-    }
-    return overrides.get(name, name)
-
-
-def _fmt_usd_compact(n):
-    if n is None:
-        return "—"
-    abs_v = abs(n)
-    sign = "−" if n < 0 else ""
-    if abs_v >= 1e9: return f"{sign}${abs_v / 1e9:.1f}B"
-    if abs_v >= 1e6: return f"{sign}${abs_v / 1e6:.0f}M"
-    if abs_v >= 1e3: return f"{sign}${abs_v / 1e3:.0f}K"
-    return f"{sign}${abs_v:,.0f}"
-
-
-def _fmt_bop(n_millions):
-    if n_millions is None:
-        return "—"
-    return _fmt_usd_compact(n_millions * 1e6)
-
-
-def _econ_headline(weekday, gdp, bop):
-    """Build the title + description for today's economy autolist post.
-    Mirrors the chapter rotation in build_economy_card.py."""
-    if gdp is None or bop is None:
-        return None, None
-
-    if weekday == 0:  # Mon — GDP composition
-        last = len(gdp["quarters"]) - 1
-        q = gdp["quarters"][last]
-        total = gdp["aggregates"]["GDP at Market Prices"][last]
-        pairs = sorted(
-            [(n, gdp["sectors"][n][last]) for n in gdp["sector_order"]],
-            key=lambda p: p[1], reverse=True)
-        top_name, top_val = pairs[0]
-        share = (top_val / total) * 100 if total else 0
-        title = (f"Zim economy {q}: {_econ_short(top_name)} is the largest "
-                 f"sector — {_fmt_usd_compact(top_val)}, {share:.1f}% of GDP.")
-        desc = (f"ZimStat quarterly GDP — {_econ_short(top_name)} contributed "
-                f"{_fmt_usd_compact(top_val)} in {q}. The top five sectors "
-                f"together account for over half of Zimbabwes economy. "
-                f"Read the full briefing at mutapatimes.com/economy")
-        return title, desc
-
-    if weekday == 1:  # Tue — trade balance
-        n = len(bop["quarters"])
-        last = n - 1
-        q = bop["quarters"][last]
-        exp = bop["series"]["exports_goods"][last]
-        imp = bop["series"]["imports_goods"][last]
-        gap = (imp or 0) - (exp or 0)
-        in_surplus = gap < 0
-        kind = "trade surplus" if in_surplus else "trade deficit"
-        title = (f"Zim trade balance {q}: {_fmt_bop(abs(gap))} {kind} on "
-                 f"goods. Exports {_fmt_bop(exp)}, imports {_fmt_bop(imp)}.")
-        desc = (f"Zimbabwe exported {_fmt_bop(exp)} of goods and imported "
-                f"{_fmt_bop(imp)} in {q} — a {kind} of {_fmt_bop(abs(gap))}. "
-                f"The goods balance flipped to surplus in 2024 on lithium, "
-                f"gold and tobacco. Full briefing: mutapatimes.com/economy")
-        return title, desc
-
-    if weekday == 2:  # Wed — fastest growing sector
-        last = len(gdp["quarters"]) - 1
-        q = gdp["quarters"][last]
-        movers = []
-        for n in gdp["sector_order"]:
-            v_now = gdp["sectors"][n][last]
-            v_ago = gdp["sectors"][n][last - 4] if last - 4 >= 0 else None
-            if v_ago and v_ago > 0:
-                movers.append((n, ((v_now - v_ago) / v_ago) * 100, v_now))
-        movers.sort(key=lambda x: x[1], reverse=True)
-        top_name, top_yoy, _ = movers[0]
-        title = (f"Zim economy {q}: {_econ_short(top_name)} is the fastest "
-                 f"growing sector at +{top_yoy:.1f}% YoY.")
-        desc = (f"Across 19 tracked ZimStat sectors, {_econ_short(top_name)} "
-                f"led growth in {q} with a +{top_yoy:.1f}% year-on-year "
-                f"increase. Full sector ranking and chart at "
-                f"mutapatimes.com/economy")
-        return title, desc
-
-    if weekday == 3:  # Thu — Mining vs Agri
-        last = len(gdp["quarters"]) - 1
-        q = gdp["quarters"][last]
-        mining = gdp["sectors"]["Mining and quarrying"][last]
-        agri = gdp["sectors"]["Agiculture, Hunting and Fishing and forestry"][last]
-        leader = "Mining" if mining > agri else "Agriculture"
-        diff = abs(mining - agri)
-        title = (f"Zim economy {q}: {leader} leads agriculture by "
-                 f"{_fmt_usd_compact(diff)}. Mining {_fmt_usd_compact(mining)}, "
-                 f"agri {_fmt_usd_compact(agri)}.")
-        desc = (f"Mining contributed {_fmt_usd_compact(mining)} and "
-                f"agriculture {_fmt_usd_compact(agri)} in {q}. Lithium has "
-                f"powered mining sharply since 2022. Full charts at "
-                f"mutapatimes.com/economy")
-        return title, desc
-
-    if weekday == 4:  # Fri — Remittances
-        n = len(bop["quarters"])
-        last = n - 1
-        q = bop["quarters"][last]
-        pt = bop["series"]["personal_transfers"]
-        latest = pt[last]
-        sum4 = sum((pt[i] or 0) for i in range(max(0, n - 4), n))
-        title = (f"Zim remittances {q}: diaspora sent home {_fmt_bop(latest)} "
-                 f"officially. Trailing four quarters: {_fmt_bop(sum4)}.")
-        desc = (f"Personal Transfers — money sent home by Zimbabweans abroad — "
-                f"reached {_fmt_bop(latest)} in {q}. Over the last four "
-                f"quarters, {_fmt_bop(sum4)} flowed in via official channels. "
-                f"Informal channels add more. Full chart: mutapatimes.com/economy")
-        return title, desc
-
-    if weekday == 5:  # Sat — Services trade
-        n = len(bop["quarters"])
-        last = n - 1
-        q = bop["quarters"][last]
-        exp = bop["series"]["exports_services"][last]
-        imp = bop["series"]["imports_services"][last]
-        bal = (exp or 0) - (imp or 0)
-        kind = "surplus" if bal > 0 else "deficit"
-        title = (f"Zim services trade {q}: {_fmt_bop(abs(bal))} {kind}. "
-                 f"Sold {_fmt_bop(exp)} abroad, bought {_fmt_bop(imp)}.")
-        desc = (f"In {q} Zimbabwe sold {_fmt_bop(exp)} of services (tourism, "
-                f"transport, business services) and imported {_fmt_bop(imp)} — "
-                f"a structural services {kind}. Full briefing: "
-                f"mutapatimes.com/economy")
-        return title, desc
-
-    # weekday == 6 — Sun — Missing money
-    n = len(bop["quarters"])
-    # Walk back to find the latest quarter with real (non-null, non-zero)
-    # NE&O data — ZimStat ships a zero placeholder for the latest quarter.
-    ne_series = bop["series"]["net_errors_omissions"]
-    idx = n - 1
-    while idx > 0 and (ne_series[idx] is None or ne_series[idx] == 0):
-        idx -= 1
-    q = bop["quarters"][idx]
-    ne = ne_series[idx]
-    ca = bop["series"]["current_account"][idx]
-    title = (f"Zim economy {q}: official current account {_fmt_bop(ca)}, "
-             f"net errors & omissions {_fmt_bop(ne)}. The unrecorded gap.")
-    desc = (f"Every Balance of Payments has a residual line — Net Errors and "
-            f"Omissions. In Zimbabwe it is structurally large: {_fmt_bop(ne)} "
-            f"in {q}, against an official current account of {_fmt_bop(ca)}. "
-            f"A quiet statistical admission that the informal economy moves "
-            f"real money the books cannot fully see. Read more: "
-            f"mutapatimes.com/economy")
-    return title, desc
-
-
 def build_economy_snapshot_item(base):
     """Build today's one-item entry for /economy-feed.xml. Date-tagged URL
     so Metricool's URL dedupe treats every CAT day as a fresh post."""
+    # Import lazily — economy_chapters reads from data/ which may not
+    # exist on a fresh checkout before fetch_news has run.
+    try:
+        sys.path.insert(0, os.path.join(base, "scripts"))
+        from economy_chapters import pick_chapter_for_today
+    except ImportError as e:
+        print(f"  economy-feed.xml SKIPPED — chapter module import failed: {e}")
+        return None
+
     gdp_path = os.path.join(base, "data", "gdp-zimbabwe-quarterly.json")
     bop_path = os.path.join(base, "data", "zimstat-bop-quarterly.json")
     if not (os.path.exists(gdp_path) and os.path.exists(bop_path)):
         return None
+
     try:
-        gdp = json.load(open(gdp_path))
-        bop = json.load(open(bop_path))
-    except (json.JSONDecodeError, OSError):
-        return None
-    if not gdp.get("quarters") or not bop.get("quarters"):
+        idx, day_name, chapter = pick_chapter_for_today()
+    except (FileNotFoundError, json.JSONDecodeError, KeyError) as e:
+        print(f"  economy-feed.xml SKIPPED — chapter build failed: {e}")
         return None
 
-    # CAT (UTC+2) — match the card's weekday calculation exactly.
+    if not chapter.get("rss_title") or not chapter.get("rss_desc"):
+        return None
+
     now_utc = datetime.now(timezone.utc)
     cat = now_utc.astimezone(timezone(timedelta(hours=2)))
-    wd = cat.weekday()  # Mon=0
-    title, desc = _econ_headline(wd, gdp, bop)
-    if not title:
-        return None
-
     date_str = cat.strftime("%Y-%m-%d")
     link = f"{BASE_URL}/economy.html?d={date_str}"
     image = f"{BASE_URL}/img/cards/economy-snapshot.png?v={date_str}"
 
     return {
-        "title": title,
+        "title": chapter["rss_title"],
         "link": link,
-        "description": desc,
+        "description": chapter["rss_desc"],
         "pubDate": now_utc,
         "category": "Economy",
         "author": "The Mutapa Times",
