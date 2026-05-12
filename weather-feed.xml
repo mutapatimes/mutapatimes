@@ -8,11 +8,11 @@
     <link>https://www.mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 12 May 2026 09:14:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 14:49:26 +0000</lastBuildDate>
     <atom:link href="https://www.mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
-      <url>https://www.mutapatimes.com/img/logo.png</url>
+      <url>https://www.mutapatimes.com/img/brand/mark-512.png</url>
       <link>https://www.mutapatimes.com</link>
     </image>
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
@@ -20,10 +20,10 @@
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
       <title>Zim weather 12 May: Harare overcast · high 26° / low 16°</title>
-      <link>https://www.mutapatimes.com/weather.html?d=2026-05-12</link>
+      <link>https://www.mutapatimes.com/weather?d=2026-05-12</link>
       <description>Harare: high 26°, low 16° (overcast) · Bulawayo: high 28°, low 14° (clear sky) · Mutare: high 28°, low 15° (overcast) · Gweru: high 27°, low 15° (clear sky) · Masvingo: high 28°, low 13° (clear sky) · Victoria Falls: high 31°, low 14° (clear sky)  Tsumo yezuva: Zvikoni zvikoni mimba haibvi negosoro. (Some things have no simple solution.)</description>
       <pubDate>Mon, 11 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mutapatimes.com/weather.html?d=2026-05-12</guid>
+      <guid isPermaLink="true">https://www.mutapatimes.com/weather?d=2026-05-12</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
       <media:content url="https://www.mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-12" medium="image"/>
