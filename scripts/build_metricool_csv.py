@@ -748,14 +748,16 @@ PROMPTS = {
         "  2. STORY (2-3 short paragraphs with line breaks between) — "
         "tell the story: what happened, who it affects, why it matters. "
         "Use specifics. Don't summarize — narrate.\n"
-        "  3. CTA line: 'Read the full briefing → mutapatimes.com (link in bio)'.\n"
+        "  3. CTA line: 'Full briefing — link in bio.'\n"
         "  4. 'via {SOURCE_NAME}' on its own line.\n"
         "  5. Final line: 8-12 hashtags mixing core (#Zimbabwe #ZimbabweNews "
         "#Africa #ZimDiaspora) with topic-specific tags relevant to the story "
         "(e.g. #Mining #Lithium #Harare #Bulawayo). Separate with spaces.\n\n"
         "TONE: Story-driven, emotive without being saccharine. 1-3 emojis OK "
         "in body. Length: 600-1100 chars (IG allows 2200, but ~800 is the "
-        "engagement sweet spot). NEVER include the URL inline — IG strips it.\n\n"
+        "engagement sweet spot). HARD RULE: never include any URL, domain, "
+        "or 'mutapatimes.com' anywhere — IG strips clickable links and bare "
+        "URLs in captions look spammy. 'Link in bio' is the only pointer.\n\n"
         + _SHARED_RULES
     ),
     "TikTok": (
@@ -766,12 +768,15 @@ PROMPTS = {
         "  1. HOOK (FIRST LINE, under 80 chars) — must hit fast. Punchy "
         "fact or framing, not a verbatim headline.\n"
         "  2. ONE short context line (under 120 chars).\n"
-        "  3. CTA line: 'Full story → mutapatimes.com (link in bio)'.\n"
+        "  3. CTA line: 'Full story — link in bio.'\n"
         "  4. 'via {SOURCE_NAME}' on its own line.\n"
         "  5. Final line: 10-15 hashtags. Mix core "
         "(#Zimbabwe #ZimbabweNews #Africa #ZimTok #ZimTikTok #FYP "
         "#ZimDiaspora) with topic-specific tags chosen from the headline. "
         "Separate with spaces.\n\n"
+        "HARD RULE: never include a URL or 'mutapatimes.com' anywhere in "
+        "the caption — TikTok doesn't make them clickable and bare URLs "
+        "look spammy. 'Link in bio' is the only pointer.\n\n"
         "TONE: Sharp, current, slight POV welcome. 1-2 emojis OK. Length: "
         "200-450 chars total. NEVER include the URL inline — TikTok strips "
         "links in captions.\n\n"
@@ -970,7 +975,7 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
         body = headline
         if summary:
             body += f"\n\n{summary}"
-        body += "\n\nRead the full briefing → mutapatimes.com (link in bio)"
+        body += "\n\nFull briefing — link in bio."
         body += f"\nvia {src}"
         body += f"\n\n{ig_tags}"
         return body
@@ -990,7 +995,7 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
         body = headline
         if summary:
             body += f"\n\n{summary[:120]}"
-        body += "\n\nFull story → mutapatimes.com (link in bio)"
+        body += "\n\nFull story — link in bio."
         body += f"\nvia {src}"
         body += f"\n\n{tt_tags}"
         return body
@@ -1060,6 +1065,22 @@ def _inject_twitter_mentions(caption, art, mutapa_url):
     return caption
 
 
+def _strip_urls_for_ig(text):
+    """IG + TikTok captions: no clickable links, bare URLs look spammy.
+    Strip http(s) URLs, bare mutapatimes.com mentions, and the 'Read the
+    full briefing → URL' arrow pattern Gemini sometimes re-introduces."""
+    if not text:
+        return text
+    text = re.sub(r"https?://\S+", "", text)
+    text = re.sub(r"(?:→|->|—)\s*(?:www\.)?mutapatimes\.com\S*", "link in bio", text, flags=re.IGNORECASE)
+    text = re.sub(r"\(?\b(?:www\.)?mutapatimes\.com\S*\)?", "link in bio", text, flags=re.IGNORECASE)
+    text = re.sub(r"\(link in bio\)+", "link in bio", text, flags=re.IGNORECASE)
+    text = re.sub(r"link in bio[\s,.;:]+link in bio", "link in bio", text, flags=re.IGNORECASE)
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n[ \t]+", "\n", text)
+    return text.strip()
+
+
 def caption_for(platform, art, mutapa_url):
     rewritten = gemini_rewrite(
         PROMPTS[platform],
@@ -1075,6 +1096,8 @@ def caption_for(platform, art, mutapa_url):
     if platform == "Twitter":
         text = _inject_twitter_mentions(text, art, mutapa_url)
         text = _twitter_safe(text, mutapa_url, art["source"])
+    elif platform in ("Instagram", "TikTok"):
+        text = _strip_urls_for_ig(text)
     return text
 
 

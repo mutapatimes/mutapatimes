@@ -1786,6 +1786,21 @@ function loadSpotlightFromRSS() {
   });
 }
 
+// Spotlight image placeholder — small brand mark + "VIA {source}" caption.
+// Used when an article's source photo 404s/hotlink-blocks. The mark is
+// deliberately small (and not centred-dominant) so a reader cannot mistake
+// the card for original Mutapa Times content.
+function makeSpotlightPlaceholder(source) {
+  var div = $('<div class="spotlight-img spotlight-img--placeholder" role="img">');
+  div.attr('aria-label', source ? 'The Mutapa Times — via ' + source : 'The Mutapa Times');
+  div.append($('<img class="placeholder-mark">').attr('src', '/img/brand/mark-1080.png').attr('alt', ''));
+  var via = $('<p class="placeholder-via">');
+  via.append($('<span class="placeholder-via-lbl">').text('via'));
+  via.append($('<span class="placeholder-via-src">').text(source || 'external publisher'));
+  div.append(via);
+  return div;
+}
+
 function renderSpotlightStories(articles) {
   var container = $("#spotlight-stories");
   if (!container.length) return;
@@ -1818,21 +1833,19 @@ function renderSpotlightStories(articles) {
     var item = $('<article class="spotlight-item">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
-    // Article image — always render. Source photo first; a single
-    // minimal-text square brand panel takes over when the source 404s
-    // or hotlink-blocks, so spotlight is never imageless.
-    var primarySrc = a.image || '/img/brand/mark-1080.png';
-    var img = $('<img class="spotlight-img">').attr('src', primarySrc).attr('alt', a.title || '');
-    if (primarySrc !== '/img/brand/mark-1080.png') {
+    // Article image — always render. Source photo first; if it 404s,
+    // swap to a small brand mark + "VIA {source}" placeholder so it can
+    // never be mistaken for original Mutapa Times content.
+    if (a.image) {
+      var img = $('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || '');
       img[0].addEventListener('error', function onErr() {
         this.removeEventListener('error', onErr);
-        this.src = '/img/brand/mark-1080.png';
-        this.classList.add('spotlight-img--placeholder');
+        $(this).replaceWith(makeSpotlightPlaceholder(a.source));
       });
+      link.append(img);
     } else {
-      img.addClass('spotlight-img--placeholder');
+      link.append(makeSpotlightPlaceholder(a.source));
     }
-    link.append(img);
 
     // Text content wrapped for 2-col layout
     var textWrap = $('<div class="spotlight-text">');
@@ -1889,18 +1902,16 @@ function renderSpotlightStories(articles) {
     if (!g.cms) {
       gLink.attr('target', '_blank').attr('rel', 'noopener nofollow');
     }
-    var gPrimary = g.image || '/img/brand/mark-1080.png';
-    var gImg = $('<img class="spotlight-img">').attr('src', gPrimary).attr('alt', g.title || '');
-    if (gPrimary !== '/img/brand/mark-1080.png') {
+    if (g.image) {
+      var gImg = $('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || '');
       gImg[0].addEventListener('error', function onErr() {
         this.removeEventListener('error', onErr);
-        this.src = '/img/brand/mark-1080.png';
-        this.classList.add('spotlight-img--placeholder');
+        $(this).replaceWith(makeSpotlightPlaceholder(g.source));
       });
+      gLink.append(gImg);
     } else {
-      gImg.addClass('spotlight-img--placeholder');
+      gLink.append(makeSpotlightPlaceholder(g.source));
     }
-    gLink.append(gImg);
     var gText = $('<div class="spotlight-text">');
     gText.append($('<h4 class="spotlight-title">').text(g.title));
     var gDesc = g.description;

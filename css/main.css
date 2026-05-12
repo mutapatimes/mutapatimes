@@ -349,15 +349,48 @@ nav a.economy-btn.active {
   flex-shrink: 0;
   border: 1px solid rgba(255,255,255,0.1);
 }
-/* When the source photo is missing/broken we swap to the cream M·T mark.
-   The image is square (1080×1080) — contain it inside the slot and tint
-   the slot cream so it reads as a quiet brand panel, not a stretched logo. */
+/* When the source photo is missing/broken we render a small M·T mark
+   plus a "VIA {source}" caption so the cell reads as an external article
+   without an image — never as original Mutapa Times content. */
 .spotlight-img--placeholder {
-  object-fit: contain;
+  width: 45%;
+  min-height: 180px;
+  flex-shrink: 0;
   background: #FAFAF7;
-  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.1);
   aspect-ratio: 1 / 1;
-  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+}
+.spotlight-img--placeholder .placeholder-mark {
+  width: 64px;
+  height: 64px;
+  display: block;
+  opacity: 0.9;
+}
+.spotlight-img--placeholder .placeholder-via {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #555;
+  text-align: center;
+  line-height: 1.4;
+}
+.spotlight-img--placeholder .placeholder-via-lbl {
+  color: #999;
+  margin-right: 6px;
+  font-weight: 600;
+}
+.spotlight-img--placeholder .placeholder-via-src {
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
 .spotlight-text {
@@ -4239,6 +4272,28 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .fx-send-amount { align-items: flex-start; text-align: left; padding-right: 0; }
   .fx-send-recipient { font-size: 1.3em; }
   .fx-table th, .fx-table td { padding: 10px 6px; font-size: 0.88em; }
+
+  /* Width bleed defence: grid items must allow shrinking below content,
+     and inputs/selects must be capped at 100% of their cell. The native
+     <select> in particular widens to fit its longest option (e.g.
+     "🇿🇦 ZAR — South Africa") and was the main culprit on narrow screens. */
+  .fx-converter-grid,
+  .fx-send-input,
+  .fx-send-row,
+  .fx-send-results,
+  .fx-conv-field,
+  .fx-send-amt,
+  .fx-send-cur,
+  .fx-send-provider,
+  .fx-send-amount { min-width: 0; }
+  .fx-conv-input,
+  .fx-send-cur select.jobs-select,
+  .fx-send-recipient,
+  .fx-send-name { max-width: 100%; min-width: 0; }
+  .fx-send-cur select.jobs-select { width: 100%; }
+  .fx-send-name-row { max-width: 100%; }
+  .fx-send-meta { white-space: normal; }
+  .fx-send-meta span { white-space: normal; }
 }
 
 /* ── Weather carousel display (weather.html) ── */
