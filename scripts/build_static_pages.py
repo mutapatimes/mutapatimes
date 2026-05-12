@@ -10,9 +10,18 @@ import glob
 import json
 import os
 import re
+import sys
 import html as html_mod
 from datetime import datetime, timezone
 from urllib.parse import quote
+
+# Brand headline card — used as og:image on every CMS article so social
+# previews show the on-brand card, not the scraped article photo.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from build_feed_cards import card_public_url as _feed_card_url  # noqa: E402
+except ImportError:
+    _feed_card_url = None
 
 BASE_URL = "https://www.mutapatimes.com"
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
@@ -150,8 +159,8 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{esc(og_image)}">
-<meta property="og:image:width" content="1000">
-<meta property="og:image:height" content="200">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
 <meta property="og:url" content="{esc(canonical_url)}">
 <meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
@@ -388,7 +397,12 @@ def build_articles():
         summary = meta.get("summary", "")
         source_url = meta.get("source_url", "")
         canonical = f"{BASE_URL}/articles/{slug}.html"
-        og_image = image if image else f"{BASE_URL}/img/banner.png"
+        # Brand headline card as og:image so Metricool / X / Facebook show
+        # the on-brand card instead of the scraped article hero. The
+        # in-body hero photo (if any) still uses `image` further down.
+        og_image = _feed_card_url(canonical) if _feed_card_url else (
+            image if image else f"{BASE_URL}/img/banner.png"
+        )
 
         date_display = format_date(date_str)
         body_html = markdown_to_html(body)

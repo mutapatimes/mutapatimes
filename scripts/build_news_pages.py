@@ -22,6 +22,11 @@ from build_static_pages import (  # noqa: E402
     BASE_URL, esc, format_date, iso_date,
     page_head, page_nav, page_footer,
 )
+# Brand headline-card URL — Metricool, X, Facebook etc. fetch og:image
+# from the landing page, NOT the RSS enclosure. To make every social
+# preview show the on-brand card (not the scraped source thumbnail),
+# we emit the brand card as og:image instead of the article's hero photo.
+from build_feed_cards import card_public_url as feed_card_url  # noqa: E402
 
 DATA_DIR = "data"
 NEWS_OUT = "news"
@@ -143,8 +148,12 @@ def load_articles():
 def render_page(article, related=None):
     title = article["title"]
     summary = article["description"] or f"{title} — full story at {article['source']}."
-    image = article["image"] or f"{BASE_URL}/img/banner.png"
     canonical = landing_url(article)
+    # og:image + Schema.org image point at the brand headline card so social
+    # previews are uniformly on-brand. The in-body hero <img> below still
+    # uses article["image"] (the scraped source photo) so readers see real
+    # editorial imagery on the page itself.
+    image = feed_card_url(canonical)
     pub_iso = iso_date(article.get("publishedAt", "")) or datetime.now(timezone.utc).isoformat()
     pub_human = format_date(article.get("publishedAt", "")) or ""
     source = article["source"] or "Source"
@@ -311,8 +320,12 @@ def pick_related(article, all_articles, max_count=3):
 # ── Main ───────────────────────────────────────────────────────
 def main():
     print("=== BUILD NEWS LANDING PAGES ===")
+    # --force rebuilds existing pages — useful when og:image / chrome /
+    # JSON-LD shape changes and every page needs to refresh. Default is
+    # skip-existing so the routine fetch-news cron stays cheap.
+    force = "--force" in sys.argv
     articles = load_articles()
-    print(f"  {len(articles)} unique articles loaded")
+    print(f"  {len(articles)} unique articles loaded (force={force})")
 
     os.makedirs(NEWS_OUT, exist_ok=True)
     written = skipped = 0
@@ -320,7 +333,7 @@ def main():
     for art in articles:
         slug = make_slug(art)
         out_path = os.path.join(NEWS_OUT, f"{slug}.html")
-        if os.path.exists(out_path):
+        if not force and os.path.exists(out_path):
             skipped += 1
             continue
         try:
@@ -334,7 +347,7 @@ def main():
         written += 1
         new_urls.append(landing_url(art))
 
-    print(f"  Wrote {written} new pages, skipped {skipped} existing")
+    print(f"  Wrote {written} pages, skipped {skipped} existing")
 
     # Notify Bing/Yandex of fresh URLs (no-op without INDEXNOW_KEY)
     if new_urls:

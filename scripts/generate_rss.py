@@ -191,6 +191,16 @@ def collect_news_landing_articles(base):
     return items
 
 
+def _swap_apostrophes(s):
+    """Metricool's autolist preview HTML-escapes ASCII apostrophes to
+    &#39; — visible as literal '&#39;' in tweet/post previews. Swap them
+    for U+2019 (typographically-correct right single quotation mark)
+    which Metricool leaves alone. Applies to titles + descriptions only."""
+    if not s:
+        return s
+    return s.replace("'", "’")
+
+
 def build_rss(items):
     """Build RSS 2.0 XML string."""
     now = format_datetime(datetime.now(timezone.utc))
@@ -224,7 +234,7 @@ def build_rss(items):
         # them. Source publisher mention (e.g. @Reuters) + up to 2 entity
         # mentions (e.g. @CyrilRamaphosa @ZANUPF_Official). Capped so we
         # leave room for the URL (23 chars) and #Zimbabwe inside X's 280.
-        title_text = item["title"]
+        title_text = _swap_apostrophes(item["title"])
         mentions = all_mentions(
             title_text, item.get("description", ""), item.get("author") or "",
         )
@@ -243,7 +253,7 @@ def build_rss(items):
             "    <item>\n"
             f"      <title>{escape(title_text)}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
-            f"      <description>{escape(item.get('description', ''))}</description>\n"
+            f"      <description>{escape(_swap_apostrophes(item.get('description', '')))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
             f'      <guid isPermaLink="true">{escape(item["link"])}</guid>\n'
             f"{cat}{author}{image}"
