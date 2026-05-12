@@ -19,14 +19,11 @@ CARD_FG = (26, 26, 26)
 CARD_FG_MUTED = (95, 92, 84)
 ACCENT = (192, 57, 43)  # brand red
 
-# Faded brand palette — rotated per card so the feed alternates but stays
-# consistent. Each tone is muted, paper-like.
-CARD_BACKGROUNDS = [
-    (242, 218, 213),  # dusty rose
-    (216, 230, 213),  # sage green
-    (245, 232, 200),  # soft butter
-    (236, 226, 207),  # warm cream
-]
+# Brand background — every card (feeds + CSVs + economy + jobs + property)
+# renders on butter #F5E8C8. Kept as a single-element list so existing
+# call-sites that do `CARD_BACKGROUNDS[idx % len(...)]` still resolve.
+BUTTER = (245, 232, 200)
+CARD_BACKGROUNDS = [BUTTER]
 
 
 def card_bg(index):

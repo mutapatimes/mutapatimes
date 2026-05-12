@@ -29,10 +29,12 @@ GDP_FILE = os.path.join(ROOT, "data", "gdp-zimbabwe-quarterly.json")
 BOP_FILE = os.path.join(ROOT, "data", "zimstat-bop-quarterly.json")
 
 # Brand palette — exposed so the card script can pass these through
+# Locked to butter #F5E8C8 across every chapter — same as the rest of
+# the card library. Aliases retained so chapter declarations don't churn.
 CARD_BG_BUTTER = (245, 232, 200)
-CARD_BG_SAGE = (216, 230, 213)
-CARD_BG_ROSE = (242, 218, 213)
-CARD_BG_CREAM = (236, 226, 207)
+CARD_BG_SAGE = CARD_BG_BUTTER
+CARD_BG_ROSE = CARD_BG_BUTTER
+CARD_BG_CREAM = CARD_BG_BUTTER
 
 
 # ── Helpers ──────────────────────────────────────────────────

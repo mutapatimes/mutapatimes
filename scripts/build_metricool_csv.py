@@ -238,13 +238,11 @@ CARD_FG = (26, 26, 26)         # ink — dark text on light bg
 CARD_FG_MUTED = (95, 92, 84)   # secondary text
 ACCENT = (192, 57, 43)         # brand red
 
-# Brand-appropriate faded palette — rotated per card so the feed looks varied
-# but stays consistent. Each tone is muted/dusty, paper-like.
+# Locked: every Metricool card renders on butter #F5E8C8. Single-element
+# list so existing `card_bg(index)` and `(index + 1) % len(...)` call-sites
+# still resolve cleanly.
 CARD_BACKGROUNDS = [
-    (242, 218, 213),  # faded red — warm dusty rose
-    (216, 230, 213),  # faded green — sage
-    (245, 232, 200),  # faded yellow — soft butter
-    (236, 226, 207),  # faded beige — warm cream
+    (245, 232, 200),  # butter #F5E8C8
 ]
 
 
