@@ -905,20 +905,15 @@ def collect_job_items(base):
          "A repo, notebook or dataset I am proud of:"),
     ]
     pub = _cat_day_start_utc()
-
-    def _jobs_landing_url(key):
-        # Match build_jobs_landing_pages._md5_12
-        h = re.sub(r"[^0-9a-f]", "", _md5_hex(key))[:12]
-        return f"{BASE_URL}/jobs-landing/{h}.html"
-
     for role, summary, _samples in internships:
         slug_role = role.lower().replace(" ", "-")
-        destination = f"{BASE_URL}/jobs#{slug_role}"
-        # Feed item links to our landing page so Metricool scrapes our
-        # og:image (the internship card) instead of /jobs's og:image.
+        # `link` is the destination URL — write_jobs_feed wraps it with
+        # the /jobs-landing/{md5}.html indirection before emitting XML.
+        # collect_stories_items also relies on `link` being the
+        # destination so its hashing matches the card filename.
         items.append({
             "title": f"{role} — The Mutapa Times (Remote · 3 days/week · 3 months)",
-            "link": _jobs_landing_url(destination),
+            "link": f"{BASE_URL}/jobs#{slug_role}",
             "description": summary,
             "pubDate": pub,
             "category": "Internship",
@@ -954,7 +949,7 @@ def collect_job_items(base):
                     desc = f"{desc}  (via {j['source']})"
                 items.append({
                     "title": (j.get("company") + " — " + title) if j.get("company") else title,
-                    "link": _jobs_landing_url(url),   # not the source URL
+                    "link": url,                     # destination; wrapped in write_jobs_feed
                     "description": desc,
                     "pubDate": pub,
                     "category": "Jobs",
@@ -964,6 +959,16 @@ def collect_job_items(base):
     return items
 
 
+def _jobs_landing_url(destination):
+    h = re.sub(r"[^0-9a-f]", "", _md5_hex(destination))[:12]
+    return f"{BASE_URL}/jobs-landing/{h}.html"
+
+
+def _property_landing_url(destination):
+    h = re.sub(r"[^0-9a-f]", "", _md5_hex(destination))[:12]
+    return f"{BASE_URL}/property-landing/{h}.html"
+
+
 def _md5_hex(s):
     import hashlib as _h
     return _h.md5((s or "").encode("utf-8")).hexdigest()
@@ -971,11 +976,20 @@ def _md5_hex(s):
 
 def write_jobs_feed(base):
     """Write /jobs-feed.xml — Zimbabwe vacancies + Mutapa Times
-    internships, each with a branded card image."""
+    internships, each with a branded card image. Items link to
+    /jobs-landing/{md5}.html so Metricool's autolist preview scrapes
+    OUR card as og:image rather than the source job board."""
     items = collect_job_items(base)
     if not items:
         print("  jobs-feed.xml SKIPPED — no jobs available")
         return False
+
+    # Wrap each item's link with our landing-page indirection just
+    # before XML emission. collect_job_items still returns destination
+    # URLs so collect_stories_items can hash them correctly.
+    for it in items:
+        if it.get("link"):
+            it["link"] = _jobs_landing_url(it["link"])
 
     rss = build_rss(items)
     rss = rss.replace(
@@ -1046,15 +1060,9 @@ def collect_property_items(base):
         desc_parts.append("Browse all listings at mutapatimes.com/property")
         description = ". ".join(desc_parts)
 
-        # Feed item links to our own /property-landing/{md5}.html so
-        # Metricool's autolist preview scrapes OUR og:image (the
-        # branded hybrid card) instead of property.co.zw's og:image.
-        landing_hash = re.sub(r"[^0-9a-f]", "", _md5_hex(url))[:12]
-        landing_url = f"{BASE_URL}/property-landing/{landing_hash}.html"
-
         items.append({
             "title": f"{price} — {title} ({location})",
-            "link": landing_url,
+            "link": url,                       # destination; wrapped in write_properties_feed
             "description": description,
             "pubDate": pub,
             "category": "Property",
@@ -1066,12 +1074,20 @@ def collect_property_items(base):
 
 def write_properties_feed(base):
     """Write /properties-feed.xml — Zimbabwe property listings, each
-    with a hybrid photo+brand-strip card. Designed for a Metricool
-    autolist that posts to IG feed, IG story, and Twitter."""
+    with a hybrid photo+brand-strip card. Items link to
+    /property-landing/{md5}.html so Metricool's autolist preview
+    scrapes OUR card as og:image rather than property.co.zw."""
     items = collect_property_items(base)
     if not items:
         print("  properties-feed.xml SKIPPED — no listings available")
         return False
+
+    # Wrap each item's link with our landing-page indirection just
+    # before XML emission. collect_property_items still returns
+    # destination URLs so collect_stories_items can hash them.
+    for it in items:
+        if it.get("link"):
+            it["link"] = _property_landing_url(it["link"])
 
     rss = build_rss(items)
     rss = rss.replace(
