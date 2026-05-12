@@ -1121,11 +1121,18 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
 
     existing_urls = _get_existing_source_urls()
     index_path = os.path.join(cms_dir, "index.json")
+    # New format: array of metadata objects (one entry per article).
+    # Old format was an array of filenames — handle the migration by
+    # promoting any string entries to dicts as we go.
     try:
         with open(index_path) as f:
             index = json.load(f)
     except (IOError, json.JSONDecodeError):
         index = []
+    if index and isinstance(index[0], str):
+        # Legacy data: drop and rebuild from on-disk frontmatter at end of run.
+        index = []
+    indexed_slugs = {e.get("slug") for e in index if isinstance(e, dict)}
 
     imported = 0
     for a in api_articles:
@@ -1194,14 +1201,27 @@ spotlight: false
         with open(filepath, "w") as f:
             f.write(frontmatter)
 
-        if filename not in index:
-            index.append(filename)
+        if slug not in indexed_slugs:
+            index.append({
+                "slug": f"{date_prefix}-{slug}",
+                "title": title,
+                "date": date_str,
+                "category": category,
+                "author": source,
+                "summary": desc[:280] if desc else "",
+                "source_type": "wire",
+                "image": image,
+                "featured": False,
+            })
+            indexed_slugs.add(slug)
         existing_urls.add(url)
         imported += 1
         print(f"  Imported: {source} — {title[:60]}")
 
+    # Sort newest-first by date so the front-end can render without sorting.
+    index.sort(key=lambda e: (e.get("date") or "") if isinstance(e, dict) else "", reverse=True)
     with open(index_path, "w") as f:
-        json.dump(index, f, indent=2)
+        json.dump(index, f, separators=(",", ":"))
 
     print(f"  Total imported this run: {imported}")
 

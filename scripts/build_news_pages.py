@@ -223,8 +223,17 @@ def render_page(article, related=None):
     parts.append(f'  <p class="news-source-line">VIA <strong>{esc(source.upper())}</strong></p>')
     if article["image"]:
         parts.append(f'  <img class="news-hero" src="{esc(article["image"])}" alt="{esc(title)}" loading="eager">')
+
+    # Editorial sponsor strip slot — runs between the hero and the
+    # summary. Invisible until a partner is configured.
+    parts.append('  <aside class="ad-slot ad-slot--strip" data-slot="news-top" data-slot-size="1080x80" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
+
     if article["description"]:
         parts.append(f'  <p class="news-summary">{esc(article["description"])}</p>')
+
+    # Inline rectangle slot — between summary and the source CTA.
+    parts.append('  <aside class="ad-slot ad-slot--inline" data-slot="news-inline" data-slot-size="640x360" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
+
     parts.append('  <div class="news-cta-wrap">')
     parts.append(
         f'    <a class="news-cta-btn" href="{esc(article["url"])}" '
@@ -263,6 +272,11 @@ def render_page(article, related=None):
         f'we link out to credit the original publisher.'
     )
     parts.append("  </p>")
+
+    # Page-bottom leaderboard slot — sits below the disclaimer, before
+    # the global footer.
+    parts.append('  <aside class="ad-slot ad-slot--leaderboard" data-slot="news-bottom" data-slot-size="720x120" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
+
     parts.append("</main>")
 
     parts.append(page_footer(depth=1))

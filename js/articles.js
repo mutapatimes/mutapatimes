@@ -135,23 +135,31 @@
   }
 
   // Primary loader: read content/articles/index.json (always fresh — committed
-  // by fetch_news.py). Filenames are date-prefixed so reverse-sorting them
-  // gives newest first. We then hydrate only the most recent N for speed.
+  // by fetch_news.py). New format is an array of metadata objects so one
+  // fetch is enough. Old format was an array of filenames which forced 200
+  // extra XHRs — that was the bug behind "no articles found" on slow
+  // connections (concurrency-capped XHRs would silently fail).
   function fetchLocalArticles(container) {
-    fetchJSON("content/articles/index.json", function (err, files) {
-      if (err || !files || !files.length) {
+    fetchJSON("content/articles/index.json", function (err, data) {
+      if (err || !data || !data.length) {
         container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
         return;
       }
 
-      // Filter to .md files only and sort newest first by filename prefix
-      files = files.filter(function (f) { return /\.md$/.test(f); });
+      // New (object) format — one fetch, render immediately.
+      if (typeof data[0] === "object") {
+        _allArticlesMeta = data;
+        initArticlesControls(container);
+        applyArticlesFilters(container);
+        return;
+      }
+
+      // Legacy fallback (array of .md filenames). Same code path as before.
+      var files = data.filter(function (f) { return /\.md$/.test(f); });
       files.sort(function (a, b) { return b.localeCompare(a); });
       files = files.slice(0, ARTICLES_RECENT_CAP);
-
       var pending = files.length;
       var articles = [];
-
       files.forEach(function (filename) {
         fetchText(ARTICLES_PATH + filename, function (err2, raw) {
           if (!err2 && raw) {
@@ -315,7 +323,7 @@
       var categoryHtml = a.category
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';
-      html += '<a href="articles/' + encodeURIComponent(a.slug) + '.html" class="article-card article-card--text">';
+      html += '<a href="/articles/' + encodeURIComponent(a.slug) + '" class="article-card article-card--text">';
       html += '<div class="article-card-body">';
       html += categoryHtml;
       html += '<h3 class="article-card-title">' + escapeHtml(a.title || "Untitled") + '</h3>';
@@ -519,9 +527,30 @@
         html += '<img src="' + escapeHtml(meta.image) + '" alt="' + escapeHtml(meta.title || '') + '" class="article-hero-img">';
       }
 
+      // Editorial sponsor strip — between hero image and article body.
+      html += '<aside class="ad-slot ad-slot--strip" data-slot="article-top" data-slot-size="1080x80" aria-hidden="true"><div class="ad-slot__inner"></div></aside>';
+
+      // Inject the body, then attempt to insert an inline rectangle slot
+      // after roughly the third paragraph (long-form bodies only). This
+      // is a placeholder mid-body break — invisible until a partner fills it.
+      var inlineSlot = '<aside class="ad-slot ad-slot--inline" data-slot="article-inline" data-slot-size="640x360" aria-hidden="true"><div class="ad-slot__inner"></div></aside>';
+      var pCount = (bodyHtml.match(/<p>/g) || []).length;
+      if (pCount >= 6) {
+        var idx = 0;
+        var injected = bodyHtml.replace(/<\/p>\s*<p>/g, function (m) {
+          idx++;
+          return idx === 3 ? "</p>" + inlineSlot + "<p>" : m;
+        });
+        bodyHtml = injected;
+      }
+
       html += '<div class="article-body">' + bodyHtml + '</div>';
+
+      // Page-bottom leaderboard slot.
+      html += '<aside class="ad-slot ad-slot--leaderboard" data-slot="article-bottom" data-slot-size="720x120" aria-hidden="true"><div class="ad-slot__inner"></div></aside>';
+
       html += articleShareButtons(meta);
-      html += '<div class="article-back"><a href="articles">&larr; All articles</a></div>';
+      html += '<div class="article-back"><a href="/articles">&larr; All articles</a></div>';
 
       container.innerHTML = html;
   }
