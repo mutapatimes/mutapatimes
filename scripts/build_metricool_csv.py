@@ -1094,6 +1094,30 @@ def _strip_urls_for_ig(text):
     return text.strip()
 
 
+def _flatten_for_tiktok(text):
+    """TikTok's API rejects line breaks — Metricool publishes silently
+    fail when newlines are present. Replace any \\n with a separator
+    so the caption stays scannable on one line.
+
+    Strategy:
+      • two-or-more newlines → ' · '  (paragraph break)
+      • single newline       → ' '    (soft line break)
+      • collapse runs of whitespace
+      • cap at 2,200 chars (TikTok's hard limit)
+    """
+    if not text:
+        return text
+    text = re.sub(r"\r\n?", "\n", text)
+    text = re.sub(r"\n{2,}", " · ", text)
+    text = re.sub(r"\n", " ", text)
+    text = re.sub(r"\s+·\s+·\s+", " · ", text)
+    text = re.sub(r"\s{2,}", " ", text)
+    text = text.strip()
+    if len(text) > 2200:
+        text = text[:2196].rstrip(" .,;:") + "…"
+    return text
+
+
 def caption_for(platform, art, mutapa_url):
     # Strip reporter contact emails from the description BEFORE handing
     # it to Gemini — otherwise they get faithfully echoed into captions
@@ -1116,8 +1140,12 @@ def caption_for(platform, art, mutapa_url):
     if platform == "Twitter":
         text = _inject_twitter_mentions(text, art, mutapa_url)
         text = _twitter_safe(text, mutapa_url, art["source"])
-    elif platform in ("Instagram", "TikTok"):
+    elif platform == "Instagram":
         text = _strip_urls_for_ig(text)
+    elif platform == "TikTok":
+        text = _strip_urls_for_ig(text)
+        # Metricool: TikTok API rejects line breaks → silent publish fail.
+        text = _flatten_for_tiktok(text)
     return text
 
 
