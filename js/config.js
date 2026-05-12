@@ -1818,21 +1818,21 @@ function renderSpotlightStories(articles) {
     var item = $('<article class="spotlight-item">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
-    // Article image — always render. Source photo first; branded card
-    // (img/cards/news/{md5}.png, stamped server-side as card_image) is
-    // the guaranteed fallback when the source 404s or hotlink-blocks.
-    var primarySrc = a.image || a.card_image;
-    if (primarySrc) {
-      var img = $('<img class="spotlight-img">').attr('src', primarySrc).attr('alt', a.title || '');
-      var fallbackSrc = a.card_image;
-      if (fallbackSrc && primarySrc !== fallbackSrc) {
-        img[0].addEventListener('error', function onErr() {
-          this.removeEventListener('error', onErr);
-          this.src = fallbackSrc;
-        });
-      }
-      link.append(img);
+    // Article image — always render. Source photo first; a single
+    // minimal-text square brand panel takes over when the source 404s
+    // or hotlink-blocks, so spotlight is never imageless.
+    var primarySrc = a.image || '/img/brand/mark-1080.png';
+    var img = $('<img class="spotlight-img">').attr('src', primarySrc).attr('alt', a.title || '');
+    if (primarySrc !== '/img/brand/mark-1080.png') {
+      img[0].addEventListener('error', function onErr() {
+        this.removeEventListener('error', onErr);
+        this.src = '/img/brand/mark-1080.png';
+        this.classList.add('spotlight-img--placeholder');
+      });
+    } else {
+      img.addClass('spotlight-img--placeholder');
     }
+    link.append(img);
 
     // Text content wrapped for 2-col layout
     var textWrap = $('<div class="spotlight-text">');
@@ -1889,18 +1889,18 @@ function renderSpotlightStories(articles) {
     if (!g.cms) {
       gLink.attr('target', '_blank').attr('rel', 'noopener nofollow');
     }
-    var gPrimary = g.image || g.card_image;
-    if (gPrimary) {
-      var gImg = $('<img class="spotlight-img">').attr('src', gPrimary).attr('alt', g.title || '');
-      var gFallback = g.card_image;
-      if (gFallback && gPrimary !== gFallback) {
-        gImg[0].addEventListener('error', function onErr() {
-          this.removeEventListener('error', onErr);
-          this.src = gFallback;
-        });
-      }
-      gLink.append(gImg);
+    var gPrimary = g.image || '/img/brand/mark-1080.png';
+    var gImg = $('<img class="spotlight-img">').attr('src', gPrimary).attr('alt', g.title || '');
+    if (gPrimary !== '/img/brand/mark-1080.png') {
+      gImg[0].addEventListener('error', function onErr() {
+        this.removeEventListener('error', onErr);
+        this.src = '/img/brand/mark-1080.png';
+        this.classList.add('spotlight-img--placeholder');
+      });
+    } else {
+      gImg.addClass('spotlight-img--placeholder');
     }
+    gLink.append(gImg);
     var gText = $('<div class="spotlight-text">');
     gText.append($('<h4 class="spotlight-title">').text(g.title));
     var gDesc = g.description;
