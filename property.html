@@ -24,7 +24,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=10">
+    <link rel="stylesheet" href="css/main.css?v=13">
     <meta name="title" content="Zimbabwe Property Index | The Mutapa Times">
 <meta name="description" content="Interactive Zimbabwe real estate price index with historical data from 2015-2025. Explore property prices across 20 regions, view trends for houses, land, flats, and commercial properties.">
 <meta name="keywords" content="The Mutapa Times, Zimbabwe property, real estate, property prices, Harare, Bulawayo, houses, land, property index, Zimbabwe real estate market">
@@ -109,20 +109,21 @@
   </div>
   <hr class="dateHr">
 
-  <h4 class="storyTitleCat" style="margin: 20px 0 6px; text-align: center;">Zimbabwe Property Price Index</h4>
-  <p style="text-align: center; font-size: 0.85em; color: #666; margin: 0 0 6px;">Historical real estate prices &amp; trends across 20 regions (2015&ndash;2025)</p>
-  <p style="text-align: center; font-size: 0.72em; color: #999; margin: 0 0 16px;">Data source: <a href="https://www.property.co.zw/property-index" target="_blank" rel="noopener" style="color: var(--accent);">property.co.zw</a></p>
-
-  <!-- Currency selector -->
-  <div class="prop-currency-bar">
-    <span class="prop-currency-label">View prices in</span>
-    <div class="prop-currency-options" id="currencyOptions">
-      <button class="prop-currency-btn active" data-currency="USD">USD $</button>
-      <button class="prop-currency-btn" data-currency="GBP">GBP &pound;</button>
-      <button class="prop-currency-btn" data-currency="ZAR">ZAR R</button>
-      <button class="prop-currency-btn" data-currency="AUD">AUD A$</button>
+  <header class="page-hero">
+    <p class="page-hero-eyebrow">property.co.zw<span class="sep">&middot;</span>Updated hourly<span class="sep">&middot;</span>20 regions</p>
+    <h1 class="page-hero-headline">Zimbabwe <em>property</em> prices.</h1>
+    <p class="page-hero-deck">Historical real estate prices and trends across 20 regions, 2015 to 2025 &mdash; what&rsquo;s actually selling, where, and at what premium to the local market.</p>
+    <p class="page-hero-meta">Data source <a href="https://www.property.co.zw/property-index" target="_blank" rel="noopener">property.co.zw &rarr;</a></p>
+    <div class="page-hero-actions">
+      <span class="prop-currency-label">View prices in</span>
+      <div class="prop-currency-options" id="currencyOptions">
+        <button class="prop-currency-btn active" data-currency="USD">USD $</button>
+        <button class="prop-currency-btn" data-currency="GBP">GBP &pound;</button>
+        <button class="prop-currency-btn" data-currency="ZAR">ZAR R</button>
+        <button class="prop-currency-btn" data-currency="AUD">AUD A$</button>
+      </div>
     </div>
-  </div>
+  </header>
 
   <!-- Highlights cards -->
   <div class="prop-highlights" id="highlightCards"></div>

@@ -164,12 +164,14 @@
         meta: '',
       });
     }
+    // Use the unified .page-hero-stat vocabulary so this slot looks the
+    // same on every section page (economy, fx, property, jobs).
     el.innerHTML = tiles.map(function (t) {
-      return '<div class="econ-stat-card">' +
-        '<p class="econ-stat-label">' + t.label + '</p>' +
-        '<p class="econ-stat-value">' + escapeHtml(t.value) + '</p>' +
-        '<p class="econ-stat-sub">' + t.sub + '</p>' +
-        (t.meta ? '<p class="econ-stat-meta">' + t.meta + '</p>' : '') +
+      return '<div class="page-hero-stat">' +
+        '<p class="page-hero-stat-label">' + t.label + '</p>' +
+        '<p class="page-hero-stat-value">' + escapeHtml(t.value) + '</p>' +
+        '<p class="page-hero-stat-sub">' + t.sub + '</p>' +
+        (t.meta ? '<p class="page-hero-stat-sub">' + t.meta + '</p>' : '') +
         '</div>';
     }).join('');
   }

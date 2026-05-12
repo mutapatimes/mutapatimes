@@ -5753,3 +5753,117 @@ body.story-viewer-open { overflow: hidden; }
     bottom: 6vh;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+ * Unified page hero — used by /economy, /fx, /property, /jobs,
+ * /articles. Same information hierarchy on every section page:
+ *
+ *   eyebrow   — tracked caps, accent red, data source · cadence
+ *   headline  — Playfair Black; <em>highlighted word</em> = accent red
+ *   deck      — Inter body, max-width 720, the "what & why"
+ *   meta      — Inter small light, live timestamp / count / source
+ *   stats     — optional 4-up tile row of headline numbers
+ *   actions   — optional utility row (currency toggle, filters)
+ *
+ * Every page picks the slots it needs. None are required except
+ * eyebrow + headline.
+ * ───────────────────────────────────────────────────────────── */
+.page-hero {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 32px 28px 28px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+}
+.page-hero-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+.page-hero-eyebrow .sep { color: var(--rule); margin: 0 8px; }
+.page-hero-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.page-hero-headline em {
+  font-style: normal;
+  color: var(--accent);
+}
+.page-hero-deck {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0 0 16px;
+  max-width: 720px;
+}
+.page-hero-meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0;
+  letter-spacing: 0.01em;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.page-hero-meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.page-hero-meta a:hover { border-bottom-color: var(--accent); }
+
+/* Optional 4-up stat tile row beneath the deck. Same vocabulary as
+   the economy hero stats — we standardised on this shape. */
+.page-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 24px 0 0;
+}
+.page-hero-stat {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 16px 18px;
+  background: #fff;
+}
+.page-hero-stat-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin: 0 0 8px;
+}
+.page-hero-stat-value {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+.page-hero-stat-sub {
+  font-size: 0.78rem;
+  color: var(--text-mid);
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Optional utility row (currency toggle, filter pills, etc.) */
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 0;
+}
+
+@media (max-width: 760px) {
+  .page-hero { padding: 24px 20px 22px; }
+  .page-hero-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .page-hero-stat { padding: 14px 16px; }
+  .page-hero-stat-value { font-size: 1.3rem; }
+}

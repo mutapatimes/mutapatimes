@@ -247,13 +247,14 @@
       filtered.sort(function (a, b) { return (b.title || "").localeCompare(a.title || ""); });
     }
 
-    // Count
+    // Count — render into the in-list count div and the page-hero eyebrow.
+    var countText = filtered.length + " article" + (filtered.length !== 1 ? "s" : "")
+      + (_articlesCat !== "all" ? " in " + _articlesCat : "")
+      + (_articlesSearch ? ' matching "' + _articlesSearch + '"' : "");
     var countEl = document.getElementById("articles-count");
-    if (countEl) {
-      countEl.textContent = filtered.length + " article" + (filtered.length !== 1 ? "s" : "")
-        + (_articlesCat !== "all" ? " in " + _articlesCat : "")
-        + (_articlesSearch ? ' matching "' + _articlesSearch + '"' : "");
-    }
+    if (countEl) countEl.textContent = countText;
+    var countMeta = document.getElementById("articlesCountMeta");
+    if (countMeta) countMeta.textContent = countText;
 
     // Pagination
     var totalPages = Math.max(1, Math.ceil(filtered.length / ARTICLES_PER_PAGE));
