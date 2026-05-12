@@ -293,6 +293,18 @@ def _norm_title(s):
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
 
 
+def _cat_day_start_utc():
+    """Return today's 00:00 CAT (UTC+2) expressed as a UTC datetime.
+    Daily-rotating feeds (FX, weather, economy, jobs) anchor their
+    pubDate here so the feed is bit-identical across the multiple
+    cron runs that happen within a single CAT day. Without this,
+    every cron run emits a fresh pubDate and Metricool's autolist
+    re-imports the same item as 'new', producing duplicates."""
+    cat = datetime.now(timezone(timedelta(hours=2)))
+    cat_midnight = cat.replace(hour=0, minute=0, second=0, microsecond=0)
+    return cat_midnight.astimezone(timezone.utc)
+
+
 def build_fx_snapshot_item(base):
     """Build one RSS item for today's FX snapshot card, if the data file
     exists. The link is date-tagged so Metricool's autolist (which dedupes
@@ -333,9 +345,12 @@ def build_fx_snapshot_item(base):
             pass
 
     # Date-tagged URL → unique per day so autolist re-posts daily.
-    now = datetime.now(timezone.utc)
-    date_str = now.strftime("%Y-%m-%d")
-    pretty_date = now.strftime("%-d %b %Y") if hasattr(now, "strftime") else date_str
+    # pubDate anchored to start-of-CAT-day so reruns within the day are
+    # bit-identical (avoids Metricool re-importing the same post).
+    now = _cat_day_start_utc()
+    cat_today = datetime.now(timezone(timedelta(hours=2)))
+    date_str = cat_today.strftime("%Y-%m-%d")
+    pretty_date = cat_today.strftime("%-d %b %Y")
     link = f"{BASE_URL}/fx.html?d={date_str}"
     image = f"{BASE_URL}/img/cards/fx-snapshot.png?v={date_str}"
 
@@ -396,9 +411,12 @@ def build_weather_snapshot_item(base):
     except Exception:
         tsumo = None
 
-    now = datetime.now(timezone.utc)
-    date_str = now.strftime("%Y-%m-%d")
-    pretty_date = now.strftime("%-d %b") if hasattr(now, "strftime") else date_str
+    # pubDate anchored to start-of-CAT-day so reruns within the day are
+    # bit-identical and Metricool does not re-import the same post.
+    now = _cat_day_start_utc()
+    cat_today = datetime.now(timezone(timedelta(hours=2)))
+    date_str = cat_today.strftime("%Y-%m-%d")
+    pretty_date = cat_today.strftime("%-d %b")
 
     title = (
         f"Zim weather {pretty_date}: {headline_city['city']} "
@@ -534,8 +552,10 @@ def build_economy_snapshot_item(base):
     if not chapter.get("rss_title") or not chapter.get("rss_desc"):
         return None
 
-    now_utc = datetime.now(timezone.utc)
-    cat = now_utc.astimezone(timezone(timedelta(hours=2)))
+    # pubDate anchored to start-of-CAT-day so reruns within the day are
+    # bit-identical and Metricool does not re-import the same post.
+    pub = _cat_day_start_utc()
+    cat = datetime.now(timezone(timedelta(hours=2)))
     date_str = cat.strftime("%Y-%m-%d")
     link = f"{BASE_URL}/economy.html?d={date_str}"
     image = f"{BASE_URL}/img/cards/economy-snapshot.png?v={date_str}"
@@ -544,7 +564,7 @@ def build_economy_snapshot_item(base):
         "title": chapter["rss_title"],
         "link": link,
         "description": chapter["rss_desc"],
-        "pubDate": now_utc,
+        "pubDate": pub,
         "category": "Economy",
         "author": "The Mutapa Times",
         "image": image,
@@ -797,6 +817,208 @@ def write_business_feed(base):
     return True
 
 
+# ─────────────────────────────────────────────────────────────
+# Jobs feed — Zimbabwe vacancies + Mutapa Times internships, one
+# RSS item per active listing. Cards rendered by build_job_cards.py.
+# ─────────────────────────────────────────────────────────────
+def collect_job_items(base):
+    """Build feed items from data/jobs.json. Includes the three
+    first-party Mutapa Times internships at the top of the inventory
+    so they always get airtime on the autolist."""
+    items = []
+
+    # Mutapa Times internships — first-party, always on
+    internships = [
+        ("Social Intern",
+         "Help grow our social channels. Pitch fresh formats and ideas. "
+         "Fully remote, 3 days/week, 3 months. Rolling intake.",
+         "My social handles / portfolio links:"),
+        ("Editor Intern",
+         "Pitch, draft and edit original explainers. Bring fresh editorial "
+         "angles. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         "Three writing samples (links or attached):"),
+        ("Data Intern",
+         "Turn Zimbabwe public data into clear visual stories. Bring new "
+         "data ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         "A repo, notebook or dataset I am proud of:"),
+    ]
+    pub = _cat_day_start_utc()
+    for role, summary, _samples in internships:
+        slug_role = role.lower().replace(" ", "-")
+        landing = f"{BASE_URL}/jobs.html#{slug_role}"
+        items.append({
+            "title": f"{role} — The Mutapa Times (Remote · 3 days/week · 3 months)",
+            "link": landing,
+            "description": summary,
+            "pubDate": pub,
+            "category": "Internship",
+            "author": "The Mutapa Times",
+            "image": f"{BASE_URL}/img/cards/jobs/internship-{slug_role}.png",
+        })
+
+    # Live aggregated vacancies
+    jobs_path = os.path.join(base, "data", "jobs.json")
+    if os.path.exists(jobs_path):
+        try:
+            data = json.load(open(jobs_path))
+        except (json.JSONDecodeError, OSError):
+            data = None
+        if data:
+            for j in (data.get("jobs") or []):
+                url = (j.get("url") or "").strip()
+                title = (j.get("title") or "").strip()
+                if not url or not title:
+                    continue
+                # Per-job card URL — same MD5-hash scheme as build_job_cards.py
+                url_hash = re.sub(r"[^0-9a-f]", "", _md5_hex(url))[:12]
+                card_url = f"{BASE_URL}/img/cards/jobs/{url_hash}.png"
+                meta_bits = []
+                for k in ("location", "type", "salary"):
+                    v = (j.get(k) or "").strip()
+                    if v:
+                        meta_bits.append(v)
+                desc = (j.get("summary") or "").strip()
+                if meta_bits:
+                    desc = (desc + "  " if desc else "") + " · ".join(meta_bits)
+                if j.get("source"):
+                    desc = f"{desc}  (via {j['source']})"
+                items.append({
+                    "title": (j.get("company") + " — " + title) if j.get("company") else title,
+                    "link": url,
+                    "description": desc,
+                    "pubDate": pub,   # Anchored: feed stable within a CAT day
+                    "category": "Jobs",
+                    "author": j.get("company") or j.get("source") or None,
+                    "image": card_url,
+                })
+    return items
+
+
+def _md5_hex(s):
+    import hashlib as _h
+    return _h.md5((s or "").encode("utf-8")).hexdigest()
+
+
+def write_jobs_feed(base):
+    """Write /jobs-feed.xml — Zimbabwe vacancies + Mutapa Times
+    internships, each with a branded card image."""
+    items = collect_job_items(base)
+    if not items:
+        print("  jobs-feed.xml SKIPPED — no jobs available")
+        return False
+
+    rss = build_rss(items)
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Zimbabwe Jobs &amp; Internships</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/jobs-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Live Zimbabwe vacancies plus the three rolling Mutapa Times internships (Social, Editor, Data). Each item ships with a branded card image for the social autolist.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "jobs-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  jobs-feed.xml written ({len(items)} items)")
+    return True
+
+
+# ─────────────────────────────────────────────────────────────
+# Properties feed — Zimbabwe property listings with hybrid
+# photo+brand-strip cards. Continuous RSS so each new listing flows
+# through the autolist (IG feed + IG story + Twitter) automatically.
+# ─────────────────────────────────────────────────────────────
+def collect_property_items(base):
+    """One feed item per active listing in data/property-listings.json.
+    Each item carries its branded hybrid card image (photo + price + specs)."""
+    items = []
+    p = os.path.join(base, "data", "property-listings.json")
+    if not os.path.exists(p):
+        return items
+    try:
+        data = json.load(open(p))
+    except (json.JSONDecodeError, OSError):
+        return items
+
+    # Stable per-day pubDate so cron reruns are bit-identical
+    pub = _cat_day_start_utc()
+
+    for L in (data.get("listings") or []):
+        url = (L.get("url") or "").strip()
+        title = (L.get("title") or "").strip()
+        if not url or not title:
+            continue
+
+        # Per-listing card URL — same MD5-hash scheme as build_property_cards.py
+        url_hash = _md5_hex(url)[:12]
+        card_url = f"{BASE_URL}/img/cards/properties/{url_hash}.png"
+
+        price = (L.get("price") or "Price on request").strip()
+        location = (L.get("location") or "Zimbabwe").strip()
+        beds = L.get("beds")
+        baths = L.get("baths")
+        meta_bits = []
+        if beds:
+            meta_bits.append(f"{beds} bed" + ("s" if str(beds) != "1" else ""))
+        if baths:
+            meta_bits.append(f"{baths} bath" + ("s" if str(baths) != "1" else ""))
+        meta = ", ".join(meta_bits)
+        desc_parts = [f"{price} — {location}"]
+        if meta:
+            desc_parts.append(meta)
+        desc_parts.append(title)
+        desc_parts.append("Browse all listings at mutapatimes.com/property")
+        description = ". ".join(desc_parts)
+
+        items.append({
+            "title": f"{price} — {title} ({location})",
+            "link": url,
+            "description": description,
+            "pubDate": pub,
+            "category": "Property",
+            "author": (L.get("source") or "Property.co.zw"),
+            "image": card_url,
+        })
+    return items
+
+
+def write_properties_feed(base):
+    """Write /properties-feed.xml — Zimbabwe property listings, each
+    with a hybrid photo+brand-strip card. Designed for a Metricool
+    autolist that posts to IG feed, IG story, and Twitter."""
+    items = collect_property_items(base)
+    if not items:
+        print("  properties-feed.xml SKIPPED — no listings available")
+        return False
+
+    rss = build_rss(items)
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Zimbabwe Property Listings</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/properties-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "properties-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  properties-feed.xml written ({len(items)} items)")
+    return True
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -828,6 +1050,8 @@ def main():
     write_weather_feed(base)
     write_economy_feed(base)
     write_business_feed(base)
+    write_jobs_feed(base)
+    write_properties_feed(base)
 
 
 if __name__ == "__main__":

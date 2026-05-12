@@ -19,9 +19,20 @@ jobs:
       - name: Scrape Zimbabwe job boards
         run: python3 scripts/fetch_jobs.py
 
-      - name: Commit updated jobs
+      - name: Install Pillow (for job cards)
+        run: pip install --quiet Pillow
+
+      - name: Render branded card per job (cached by URL hash)
+        run: python3 scripts/build_job_cards.py
+
+      - name: Regenerate feeds so jobs-feed.xml picks up the new listings
+        run: python3 scripts/generate_rss.py
+
+      - name: Commit updated jobs + cards + feeds
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json
-          git diff --cached --quiet || (git commit -m "Update job listings [automated]" && git push)
+          git add data/jobs.json img/cards/jobs/ jobs-feed.xml feed.xml \
+                  fx-feed.xml weather-feed.xml economy-feed.xml \
+                  business-feed.xml properties-feed.xml
+          git diff --cached --quiet || (git commit -m "Update job listings + cards + feeds [automated]" && git push)
