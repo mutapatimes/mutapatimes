@@ -13,6 +13,62 @@
   var typeEl = document.getElementById('jobsType');
   if (!grid) return;
 
+  // First-party Mutapa Times internships — three rolling tracks that
+  // sit in the grid alongside the scraped vacancies. Each card's URL
+  // is a mailto: with a prefilled subject and short application
+  // template so clicking through opens the user's mail client.
+  function mt(role, samplesQuestion) {
+    return 'mailto:news@mutapatimes.com' +
+      '?subject=' + encodeURIComponent('Application: ' + role + ' — Mutapa Times') +
+      '&body=' + encodeURIComponent(
+        'Hi Mutapa Times team,\n\n' +
+        "I'd like to apply for the " + role + ' role.\n\n' +
+        '1. A short intro about me:\n\n' +
+        '2. ' + samplesQuestion + '\n\n' +
+        '3. Why this role, in one paragraph:\n\n' +
+        '4. Earliest start date:\n\n' +
+        'Thanks,\n'
+      );
+  }
+  var INTERNAL_INTERNSHIPS = [
+    {
+      title: 'Social Intern',
+      company: 'The Mutapa Times',
+      location: 'Remote — Worldwide',
+      type: 'Internship · 3 months · 3 days/week',
+      summary: 'Schedule and grow our X, Bluesky, Threads, LinkedIn, ' +
+        'Instagram, TikTok and Facebook channels. Reply, spot trends, ' +
+        'pitch social-first stories. Rolling intake — always recruiting.',
+      url: mt('Social Intern', 'My social handles / portfolio links:'),
+      source: 'Mutapa Times',
+      _internship: true,
+    },
+    {
+      title: 'Editor Intern',
+      company: 'The Mutapa Times',
+      location: 'Remote — Worldwide',
+      type: 'Internship · 3 months · 3 days/week',
+      summary: 'Pitch, draft and edit original explainers and analysis. ' +
+        'Fact-check aggregated stories. Help shape the newsletter and ' +
+        'turn ZimStat releases into readable narratives. Rolling intake.',
+      url: mt('Editor Intern', 'Three writing samples (links or attached):'),
+      source: 'Mutapa Times',
+      _internship: true,
+    },
+    {
+      title: 'Data Intern',
+      company: 'The Mutapa Times',
+      location: 'Remote — Worldwide',
+      type: 'Internship · 3 months · 3 days/week',
+      summary: 'Track ZimStat and Reserve Bank of Zimbabwe releases, ' +
+        'extend the economy briefing and daily card rotation, and ' +
+        'prototype visualisations of public data. Rolling intake.',
+      url: mt('Data Intern', "A repo, notebook or dataset I'm proud of:"),
+      source: 'Mutapa Times',
+      _internship: true,
+    },
+  ];
+
   var _allJobs = [];
 
   function escapeHtml(s) {
@@ -120,7 +176,11 @@
   }
 
   function render(data) {
-    _allJobs = (data && data.jobs) || [];
+    var scraped = (data && data.jobs) || [];
+    // Mix the first-party internships in with the scraped vacancies.
+    // They appear at the top so they don't get lost on the second
+    // page, but use exactly the same card layout as everything else.
+    _allJobs = INTERNAL_INTERNSHIPS.concat(scraped);
     if (!_allJobs.length) {
       grid.innerHTML = '<p class="jobs-empty">No vacancies available right now. Check back soon.</p>';
       if (meta) meta.textContent = '';
@@ -128,10 +188,15 @@
     }
     populateFilters(_allJobs);
     applyFilters();
-    if (meta && data.fetched_at) {
-      var sources = (data.sources || []).join(' + ');
-      meta.textContent = (sources ? 'Sourced from ' + sources + ' · ' : '') +
-        relativeAge(data.fetched_at) + ' · ' + data.jobs.length + ' active vacancies';
+    if (meta) {
+      var sources = (data && data.sources || []).join(' + ');
+      var freshness = data && data.fetched_at ? relativeAge(data.fetched_at) : '';
+      var parts = [];
+      if (sources) parts.push('Sourced from ' + sources);
+      if (freshness) parts.push(freshness);
+      parts.push(scraped.length + ' active vacancies · ' +
+                 INTERNAL_INTERNSHIPS.length + ' Mutapa Times internships');
+      meta.textContent = parts.join(' · ');
     }
   }
 
@@ -152,7 +217,9 @@
     })
     .then(render)
     .catch(function (err) {
-      grid.innerHTML = '<p class="jobs-empty">Vacancies unavailable. <a href="https://vacancymail.co.zw/jobs/" target="_blank" rel="noopener">Browse vacancymail.co.zw</a></p>';
+      // Even if the scraped feed is down, still show the in-house
+      // internships — those are the most important roles on this page.
+      render({ jobs: [], sources: [], fetched_at: null });
       if (window.console) console.warn('Jobs fetch failed:', err);
     });
 })();
