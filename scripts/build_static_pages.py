@@ -326,6 +326,7 @@ def page_footer(depth=1):
 </div>
 
   <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
+  <script defer src="{prefix}js/quote-share.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{
