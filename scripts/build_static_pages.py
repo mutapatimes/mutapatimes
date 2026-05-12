@@ -401,7 +401,7 @@ def build_articles():
         # the on-brand card instead of the scraped article hero. The
         # in-body hero photo (if any) still uses `image` further down.
         og_image = _feed_card_url(canonical) if _feed_card_url else (
-            image if image else f"{BASE_URL}/img/banner.png"
+            image if image else f"{BASE_URL}/img/brand/og-share.png"
         )
 
         date_display = format_date(date_str)

@@ -276,7 +276,7 @@ def build_rss(items):
         f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
         "    <image>\n"
         "      <title>The Mutapa Times</title>\n"
-        f"      <url>{BASE_URL}/img/logo.png</url>\n"
+        f"      <url>{BASE_URL}/img/brand/mark-512.png</url>\n"
         f"      <link>{BASE_URL}</link>\n"
         "    </image>\n"
         "    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>\n"

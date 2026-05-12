@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v23';
+var CACHE_VERSION = 'mutapa-v24';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 
@@ -21,6 +21,7 @@ var APP_SHELL = [
   '/jobs.html',
   '/fx.html',
   '/links.html',
+  '/brand.html',
   '/offline.html',
   '/css/normalize.css',
   '/css/main.css',

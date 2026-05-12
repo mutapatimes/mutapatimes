@@ -109,35 +109,51 @@ a:hover {
 .title-link { text-decoration:none; color:inherit; display:block; }
 .title-link:hover { text-decoration:none; color:inherit; }
 
+/* ─── Refined wordmark masthead ────────────────────────────
+ * Pure typographic treatment. Playfair Display Black, tight
+ * tracking, red accent rule, Inter caps subtitle. The previous
+ * Great Zimbabwe ruins background-image is gone — the new mark
+ * lives in img/brand/ for social profile use, not behind the
+ * wordmark on every page.
+ * ────────────────────────────────────────────────────────── */
 .titleDiv {
   position: relative;
-  background-image: url("../img/logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding-bottom: 16px;
+  margin-top: 4px;
+}
+.titleDiv::after {
+  /* Brand red accent rule under the wordmark */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 3px;
+  background: var(--accent);
 }
 
 .title {
   text-align: center;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
   font-family: 'Playfair Display', Georgia, serif;
-  margin: 0 0 4px;
-  line-height: 1.1;
-  letter-spacing: 0.06em;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
   color: var(--ink);
   font-weight: 900;
 }
 
 .sub {
   text-align: center;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.85em;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.18em;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.35em;
   color: var(--text-mid);
-  margin: 0 0 8px;
-  text-transform: none;
+  margin: 16px 0 8px;
+  text-transform: uppercase;
 }
 
 /* Oxford rule — thick top, thin bottom */
@@ -4823,4 +4839,208 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 }
 @media (min-width: 720px) {
   .links-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Brand guidelines page (/brand.html)
+ * Mirrors the long-form layout of terms.html and the economy
+ * narrative — narrow column, restrained type, big figures.
+ * ───────────────────────────────────────────────────────────── */
+.brand-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 28px 64px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+}
+.brand-hero { padding: 24px 0 36px; border-bottom: 1px solid var(--rule); margin-bottom: 30px; }
+.brand-eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 14px;
+}
+.brand-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem; font-weight: 900; line-height: 1.05;
+  color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em;
+}
+.brand-deck { font-size: 1.1rem; color: var(--text-mid); max-width: 640px; margin: 0; }
+
+.brand-section { padding: 36px 0 32px; border-bottom: 1px solid var(--rule); }
+.brand-section:last-of-type { border-bottom: none; }
+.brand-section-no {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 10px;
+}
+.brand-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem; font-weight: 700; color: var(--ink);
+  margin: 0 0 12px; line-height: 1.15; letter-spacing: -0.01em;
+}
+.brand-section-deck { font-size: 1.02rem; color: var(--text-mid); margin: 0 0 22px; max-width: 680px; }
+
+.brand-figure {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 28px 24px;
+  margin: 16px 0;
+  text-align: center;
+}
+.brand-figure--dark { background: var(--ink); border-color: var(--ink); }
+.brand-figure img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.brand-figure figcaption {
+  font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-light); margin-top: 14px; font-weight: 500;
+}
+.brand-figure--dark figcaption { color: rgba(255,255,255,0.6); }
+
+.brand-mark-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 16px 0;
+}
+.brand-mark {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+.brand-mark img {
+  max-width: 100%; aspect-ratio: 1 / 1; object-fit: contain;
+  display: block;
+}
+.brand-mark figcaption {
+  font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-light); margin-top: 10px; font-weight: 500;
+}
+
+.brand-downloads {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin: 18px 0 6px;
+}
+.brand-dl {
+  display: inline-flex; align-items: center;
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.82rem; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 140ms, background 140ms;
+}
+.brand-dl::before { content: "↓ "; margin-right: 4px; color: var(--accent); font-weight: 700; }
+.brand-dl:hover { border-color: var(--ink); background: var(--paper); text-decoration: none; color: var(--accent); }
+
+/* ─── Colour swatches ─── */
+.brand-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+.brand-swatch {
+  padding: 22px 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 96px;
+  justify-content: flex-end;
+}
+.brand-swatch-label {
+  font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.brand-swatch-hex {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.74rem; font-weight: 500;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
+/* ─── Typography section ─── */
+.brand-type-row {
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.brand-type-row:first-child { border-top: none; padding-top: 4px; }
+.brand-type-spec {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 12px;
+}
+.brand-type-sample { margin: 0 0 8px; color: var(--ink); }
+.brand-type-sample--serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem; font-weight: 900; line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.brand-type-sample--sans {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.18rem; font-weight: 500; line-height: 1.55;
+}
+.brand-type-note { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
+
+/* ─── Voice list ─── */
+.brand-voice-list { margin: 0; padding-left: 22px; }
+.brand-voice-list li {
+  font-size: 1rem; line-height: 1.6;
+  color: var(--text); margin: 0 0 8px;
+}
+.brand-voice-list strong { color: var(--ink); font-weight: 700; }
+
+/* ─── Do / Don't ─── */
+.brand-dodont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.brand-do, .brand-dont {
+  padding: 18px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+.brand-do { border-left: 3px solid #1a7f37; }
+.brand-dont { border-left: 3px solid var(--accent); }
+.brand-do h4, .brand-dont h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  font-weight: 700; margin: 0 0 12px;
+}
+.brand-do h4 { color: #1a7f37; }
+.brand-dont h4 { color: var(--accent); }
+.brand-do ul, .brand-dont ul { margin: 0; padding-left: 20px; }
+.brand-do li, .brand-dont li {
+  font-size: 0.92rem; line-height: 1.55; color: var(--text); margin: 0 0 6px;
+}
+
+/* ─── Page footer ─── */
+.brand-page-footer {
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+}
+.brand-page-footer p { margin: 0 0 8px; }
+.brand-page-footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.brand-page-footer a:hover { text-decoration: underline; }
+.brand-page-rights { font-size: 0.72rem; color: var(--text-light); }
+
+/* ─── Mobile ─── */
+@media (max-width: 640px) {
+  .brand-page { padding: 16px 18px 48px; }
+  .brand-headline { font-size: 2.1rem; }
+  .brand-section-title { font-size: 1.55rem; }
+  .brand-type-sample--serif { font-size: 1.8rem; }
+  .brand-mark-row { grid-template-columns: 1fr; }
+  .brand-dodont { grid-template-columns: 1fr; }
 }

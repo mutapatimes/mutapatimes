@@ -18,6 +18,7 @@ STATIC_PAGES = [
     ("property.html", 0.8, "daily"),
     ("jobs.html", 0.9, "hourly"),
     ("links.html", 0.7, "daily"),
+    ("brand.html", 0.4, "monthly"),
     ("who.html", 0.4, "yearly"),
     ("what.html", 0.4, "yearly"),
     ("why.html", 0.4, "yearly"),
