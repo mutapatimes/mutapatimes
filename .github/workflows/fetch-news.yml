@@ -40,8 +40,11 @@ jobs:
       - name: Render 9:16 story cards (mixed business + property + jobs)
         run: python3 scripts/build_story_cards.py
 
-      - name: Build /stories/{md5}.html landing pages (Metricool og:image targets)
-        run: python3 scripts/build_story_landing_pages.py
+      - name: Build landing pages — /stories/, /jobs-landing/, /property-landing/
+        run: |
+          python3 scripts/build_story_landing_pages.py
+          python3 scripts/build_jobs_landing_pages.py
+          python3 scripts/build_property_landing_pages.py
 
       - name: Generate sitemap and RSS feeds
         run: |
@@ -52,7 +55,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/ news/ articles/ img/cards/news/ img/cards/stories/ stories/ \
+          git add data/ content/articles/ news/ articles/ img/cards/news/ img/cards/stories/ \
+                  stories/ jobs-landing/ property-landing/ \
                   sitemap.xml feed.xml fx-feed.xml weather-feed.xml business-feed.xml \
                   jobs-feed.xml properties-feed.xml stories-feed.xml
           git diff --cached --quiet || (git commit -m "Update news data + feed cards [automated]" && git push)

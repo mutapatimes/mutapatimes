@@ -29,8 +29,10 @@ jobs:
         run: python3 scripts/build_story_cards.py
         timeout-minutes: 8
 
-      - name: Build /stories/{md5}.html landing pages (Metricool og:image targets)
-        run: python3 scripts/build_story_landing_pages.py
+      - name: Build landing pages — /property-landing/ + /stories/ (Metricool og:image targets)
+        run: |
+          python3 scripts/build_property_landing_pages.py
+          python3 scripts/build_story_landing_pages.py
 
       - name: Regenerate feeds so properties-feed.xml + stories-feed.xml pick up new listings
         run: python3 scripts/generate_rss.py
@@ -39,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/property-listings.json img/cards/properties/ img/cards/stories/ stories/ \
+          git add data/property-listings.json img/cards/properties/ img/cards/stories/ stories/ property-landing/ \
                   properties-feed.xml stories-feed.xml feed.xml fx-feed.xml weather-feed.xml \
                   economy-feed.xml business-feed.xml jobs-feed.xml
           git diff --cached --quiet || (git commit -m "Update property listings + cards + feeds [automated]" && git push)
