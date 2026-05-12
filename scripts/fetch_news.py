@@ -4,6 +4,7 @@ Fetch Zimbabwe news from Google News RSS for all categories.
 Replaces GNews API (unreliable free tier) with free, unlimited RSS.
 Optionally generates AI descriptions via Gemini free tier.
 """
+import hashlib
 import json
 import os
 import re
@@ -13,6 +14,13 @@ import urllib.request
 import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
+
+
+def _card_image_for(url):
+    """Return public URL of the branded card for this article, used as a
+    guaranteed-image fallback when the source image fails to load."""
+    h = hashlib.md5((url or "").encode("utf-8")).hexdigest()[:12]
+    return f"https://www.mutapatimes.com/img/cards/news/{h}.png"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
@@ -993,6 +1001,12 @@ def fetch_spotlight():
     # starved when API quotas were exhausted (RSS is most of the volume).
     # write_articles_to_cms() dedupes by URL so re-imports are safe.
     write_articles_to_cms(merged, label="CMS WIRE IMPORT (spotlight)")
+
+    # Stamp every item with the branded card URL so the front-end has a
+    # guaranteed image to fall back to when the source photo 404s/hotlink-blocks.
+    for a in spotlight + more:
+        if a.get("url"):
+            a["card_image"] = _card_image_for(a["url"])
 
     with open(outpath, "w") as f:
         json.dump({"articles": spotlight, "more": more}, f)

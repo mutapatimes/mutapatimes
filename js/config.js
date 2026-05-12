@@ -1818,9 +1818,19 @@ function renderSpotlightStories(articles) {
     var item = $('<article class="spotlight-item">');
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
-    // Article image
-    if (a.image) {
-      var img = $('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || '');
+    // Article image — always render. Source photo first; branded card
+    // (img/cards/news/{md5}.png, stamped server-side as card_image) is
+    // the guaranteed fallback when the source 404s or hotlink-blocks.
+    var primarySrc = a.image || a.card_image;
+    if (primarySrc) {
+      var img = $('<img class="spotlight-img">').attr('src', primarySrc).attr('alt', a.title || '');
+      var fallbackSrc = a.card_image;
+      if (fallbackSrc && primarySrc !== fallbackSrc) {
+        img[0].addEventListener('error', function onErr() {
+          this.removeEventListener('error', onErr);
+          this.src = fallbackSrc;
+        });
+      }
       link.append(img);
     }
 
@@ -1879,8 +1889,17 @@ function renderSpotlightStories(articles) {
     if (!g.cms) {
       gLink.attr('target', '_blank').attr('rel', 'noopener nofollow');
     }
-    if (g.image) {
-      gLink.append($('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || ''));
+    var gPrimary = g.image || g.card_image;
+    if (gPrimary) {
+      var gImg = $('<img class="spotlight-img">').attr('src', gPrimary).attr('alt', g.title || '');
+      var gFallback = g.card_image;
+      if (gFallback && gPrimary !== gFallback) {
+        gImg[0].addEventListener('error', function onErr() {
+          this.removeEventListener('error', onErr);
+          this.src = gFallback;
+        });
+      }
+      gLink.append(gImg);
     }
     var gText = $('<div class="spotlight-text">');
     gText.append($('<h4 class="spotlight-title">').text(g.title));
