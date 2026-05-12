@@ -17,6 +17,8 @@
   // sit in the grid alongside the scraped vacancies. Each card's URL
   // is a mailto: with a prefilled subject and short application
   // template so clicking through opens the user's mail client.
+  // Role descriptions are intentionally loose on tools and sources —
+  // we want interns who bring their own ideas, not check a tool list.
   function mt(role, samplesQuestion) {
     return 'mailto:news@mutapatimes.com' +
       '?subject=' + encodeURIComponent('Application: ' + role + ' — Mutapa Times') +
@@ -26,7 +28,8 @@
         '1. A short intro about me:\n\n' +
         '2. ' + samplesQuestion + '\n\n' +
         '3. Why this role, in one paragraph:\n\n' +
-        '4. Earliest start date:\n\n' +
+        "4. One new idea I'd bring to the Mutapa Times:\n\n" +
+        '5. Earliest start date:\n\n' +
         'Thanks,\n'
       );
   }
@@ -36,9 +39,10 @@
       company: 'The Mutapa Times',
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
-      summary: 'Schedule and grow our X, Bluesky, Threads, LinkedIn, ' +
-        'Instagram, TikTok and Facebook channels. Reply, spot trends, ' +
-        'pitch social-first stories. Rolling intake — always recruiting.',
+      summary: 'Grow and shape our presence across the major social ' +
+        'platforms. Spot trends, pitch social-first stories, try ' +
+        'new formats. Bring your own ideas — rolling intake, ' +
+        'always recruiting.',
       url: mt('Social Intern', 'My social handles / portfolio links:'),
       source: 'Mutapa Times',
       _internship: true,
@@ -49,8 +53,9 @@
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
       summary: 'Pitch, draft and edit original explainers and analysis. ' +
-        'Fact-check aggregated stories. Help shape the newsletter and ' +
-        'turn ZimStat releases into readable narratives. Rolling intake.',
+        'Fact-check stories. Help shape the newsletter. Bring fresh ' +
+        'editorial angles and new ways to tell Zimbabwean stories — ' +
+        'rolling intake.',
       url: mt('Editor Intern', 'Three writing samples (links or attached):'),
       source: 'Mutapa Times',
       _internship: true,
@@ -60,9 +65,9 @@
       company: 'The Mutapa Times',
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
-      summary: 'Track ZimStat and Reserve Bank of Zimbabwe releases, ' +
-        'extend the economy briefing and daily card rotation, and ' +
-        'prototype visualisations of public data. Rolling intake.',
+      summary: 'Turn Zimbabwean public data into clear, visual stories. ' +
+        'Extend the live economy briefing. Prototype new ways to make ' +
+        'numbers readable. Bring your own data ideas — rolling intake.',
       url: mt('Data Intern', "A repo, notebook or dataset I'm proud of:"),
       source: 'Mutapa Times',
       _internship: true,
