@@ -274,11 +274,10 @@
       el("p", { class: "story-title-headline", text: snap.title || "" }),
     ]);
 
-    // Card — wrap the existing 4:5 PNG in a 9:16 butter frame so the
-    // viewer matches IG Story dimensions.
-    var card = el("div", { class: "story-card", style: "background:" + colorFor(h.key) }, [
-      el("img", { class: "story-card-image", src: snap.card_image, alt: snap.title || "" }),
-    ]);
+    // Card — the existing 4:5 butter PNG, centred. The category colour
+    // is now applied to the viewer itself (full viewport) rather than a
+    // 9:16 frame around the card.
+    var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
 
     // Bottom — CTA pill only.
     var bottom = el("div", { class: "story-bottom" }, [
@@ -293,12 +292,16 @@
     var tapLeft = el("button", { class: "story-tap story-tap--left", type: "button", "aria-label": "Previous", onclick: prev });
     var tapRight = el("button", { class: "story-tap story-tap--right", type: "button", "aria-label": "Next", onclick: next });
 
+    // Paint the viewer in the highlight's category colour — full viewport.
+    v.overlay.style.background = colorFor(h.key);
+
     v.overlay.innerHTML = "";
     v.overlay.appendChild(segs);
     v.overlay.appendChild(top);
-    v.overlay.appendChild(titleArea);
     v.overlay.appendChild(tapLeft);
     v.overlay.appendChild(tapRight);
+    // Flex column: title above, card centred, CTA below — natural order.
+    v.overlay.appendChild(titleArea);
     v.overlay.appendChild(card);
     v.overlay.appendChild(bottom);
 
