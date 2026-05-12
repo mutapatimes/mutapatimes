@@ -5626,7 +5626,10 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   text-align: center;
   line-height: 1.15;
   text-transform: uppercase;
-  color: #1A1A1A;
+  /* Force ink text regardless of any stale CSS coming from cache —
+     all chip backgrounds are pale, so dark text is always correct. */
+  color: #1A1A1A !important;
+  text-shadow: none;
   word-break: break-word;
   hyphens: auto;
 }
