@@ -28,6 +28,9 @@ jobs:
       - name: Render 9:16 story cards (for the mixed stories-feed)
         run: python3 scripts/build_story_cards.py
 
+      - name: Build /stories/{md5}.html landing pages (Metricool og:image targets)
+        run: python3 scripts/build_story_landing_pages.py
+
       - name: Regenerate feeds so jobs-feed.xml + stories-feed.xml pick up the new listings
         run: python3 scripts/generate_rss.py
 
@@ -35,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json img/cards/jobs/ img/cards/stories/ \
+          git add data/jobs.json img/cards/jobs/ img/cards/stories/ stories/ \
                   jobs-feed.xml stories-feed.xml feed.xml \
                   fx-feed.xml weather-feed.xml economy-feed.xml \
                   business-feed.xml properties-feed.xml

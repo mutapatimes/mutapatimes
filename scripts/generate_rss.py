@@ -1096,10 +1096,20 @@ def _story_card_url(canonical_url):
     return f"{BASE_URL}/img/cards/stories/{h}.png"
 
 
+def _story_landing_url(destination):
+    """Each feed item links to /stories/{md5}.html — a dedicated
+    landing page whose og:image is the 9:16 story card. Metricool's
+    autolist preview scrapes og:image from the link target, so this
+    indirection is what makes the card actually appear in the preview."""
+    h = re.sub(r"[^0-9a-f]", "", _md5_hex(destination))[:12]
+    return f"{BASE_URL}/stories/{h}.html"
+
+
 def collect_stories_items(base):
     """Mix business CMS articles + jobs + property listings into one
     packed feed. Each item carries the 9:16 story-card image as
-    enclosure + media:content/thumbnail."""
+    enclosure + media:content/thumbnail AND links to a Metricool-
+    optimised landing page where the card is the og:image."""
     items = []
     pub_now = _cat_day_start_utc()
 
@@ -1119,39 +1129,40 @@ def collect_stories_items(base):
             title = (e.get("title") or "").strip()
             if not slug or not title or cat not in keep:
                 continue
-            url = f"{BASE_URL}/articles/{slug}"
+            destination = f"{BASE_URL}/articles/{slug}"
             desc = (e.get("summary") or "").strip()
             author = (e.get("author") or "").strip()
             if author and author.lower() not in desc.lower():
                 desc = (desc + " " if desc else "") + f"via {author}"
-            # Parse date for sorting
             dt = _parse_date(e.get("date", "")) if "_parse_date" in globals() else None
             items.append({
                 "title": title,
-                "link": url,
+                "link": _story_landing_url(destination),
                 "description": desc,
                 "pubDate": dt or pub_now,
                 "category": cat,
                 "author": author or None,
-                "image": _story_card_url(url),
+                "image": _story_card_url(destination),
             })
 
-    # 2) External jobs + internships
+    # 2) External jobs + internships — point feed link at our landing,
+    #    keep the destination URL as the card's hash key.
     jobs_items = collect_job_items(base)
     for j in jobs_items:
-        # Internship items already link to /jobs#slug, external jobs
-        # link to source. Either way, use the URL as the cache key for
-        # the story card.
+        destination = j["link"]
         j2 = dict(j)
-        j2["image"] = _story_card_url(j["link"])
+        j2["link"] = _story_landing_url(destination)
+        j2["image"] = _story_card_url(destination)
         j2["category"] = "Jobs"
         items.append(j2)
 
-    # 3) Property listings
+    # 3) Property listings — same pattern
     prop_items = collect_property_items(base)
     for p in prop_items:
+        destination = p["link"]
         p2 = dict(p)
-        p2["image"] = _story_card_url(p["link"])
+        p2["link"] = _story_landing_url(destination)
+        p2["image"] = _story_card_url(destination)
         p2["category"] = "Property"
         items.append(p2)
 
