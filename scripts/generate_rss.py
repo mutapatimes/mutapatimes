@@ -270,11 +270,26 @@ def build_rss(items):
         )
         image = ""
         if item.get("image"):
-            # media:content + enclosure — Metricool's Autolist picks up
-            # whichever it understands. Both are commonly supported.
+            img_url = item["image"]
+            # Pick the correct MIME — Metricool (and many RSS scrapers)
+            # skip enclosures whose declared type doesn't match the actual
+            # file. Our cards are PNG; some legacy thumbnails are JPG.
+            lower = img_url.lower()
+            if lower.endswith(".png"):
+                mime = "image/png"
+            elif lower.endswith(".webp"):
+                mime = "image/webp"
+            elif lower.endswith(".gif"):
+                mime = "image/gif"
+            else:
+                mime = "image/jpeg"
+            # media:content + media:thumbnail + enclosure. Different
+            # scrapers use different tags; emitting all three maximises the
+            # chance the autolist preview gets an image.
             image = (
-                f'      <media:content url="{escape(item["image"])}" medium="image"/>\n'
-                f'      <enclosure url="{escape(item["image"])}" type="image/jpeg" length="0"/>\n'
+                f'      <media:content url="{escape(img_url)}" medium="image" type="{mime}"/>\n'
+                f'      <media:thumbnail url="{escape(img_url)}"/>\n'
+                f'      <enclosure url="{escape(img_url)}" type="{mime}" length="200000"/>\n'
             )
         # Append @mentions to the title so the Metricool Autolist tweet
         # template — ${title}\n\n${link}\n\n#Zimbabwe — naturally includes
