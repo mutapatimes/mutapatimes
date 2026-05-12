@@ -1836,16 +1836,21 @@ function renderSpotlightStories(articles) {
     // Article image — always render. Source photo first; if it 404s,
     // swap to a small brand mark + "VIA {source}" placeholder so it can
     // never be mistaken for original Mutapa Times content.
-    if (a.image) {
-      var img = $('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || '');
-      img[0].addEventListener('error', function onErr() {
-        this.removeEventListener('error', onErr);
-        $(this).replaceWith(makeSpotlightPlaceholder(a.source));
-      });
-      link.append(img);
-    } else {
-      link.append(makeSpotlightPlaceholder(a.source));
-    }
+    // NB: capture source in the current iteration scope — `var a` is
+    // function-scoped, so referencing a.source inside the async error
+    // handler would otherwise resolve to the last loop iteration.
+    (function (src, imgUrl, title) {
+      if (imgUrl) {
+        var img = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '');
+        img[0].addEventListener('error', function onErr() {
+          this.removeEventListener('error', onErr);
+          $(this).replaceWith(makeSpotlightPlaceholder(src));
+        });
+        link.append(img);
+      } else {
+        link.append(makeSpotlightPlaceholder(src));
+      }
+    })(a.source, a.image, a.title);
 
     // Text content wrapped for 2-col layout
     var textWrap = $('<div class="spotlight-text">');
@@ -1902,16 +1907,18 @@ function renderSpotlightStories(articles) {
     if (!g.cms) {
       gLink.attr('target', '_blank').attr('rel', 'noopener nofollow');
     }
-    if (g.image) {
-      var gImg = $('<img class="spotlight-img">').attr('src', g.image).attr('alt', g.title || '');
-      gImg[0].addEventListener('error', function onErr() {
-        this.removeEventListener('error', onErr);
-        $(this).replaceWith(makeSpotlightPlaceholder(g.source));
-      });
-      gLink.append(gImg);
-    } else {
-      gLink.append(makeSpotlightPlaceholder(g.source));
-    }
+    (function (src, imgUrl, title) {
+      if (imgUrl) {
+        var gImg = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '');
+        gImg[0].addEventListener('error', function onErr() {
+          this.removeEventListener('error', onErr);
+          $(this).replaceWith(makeSpotlightPlaceholder(src));
+        });
+        gLink.append(gImg);
+      } else {
+        gLink.append(makeSpotlightPlaceholder(src));
+      }
+    })(g.source, g.image, g.title);
     var gText = $('<div class="spotlight-text">');
     gText.append($('<h4 class="spotlight-title">').text(g.title));
     var gDesc = g.description;

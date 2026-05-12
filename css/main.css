@@ -351,14 +351,17 @@ nav a.economy-btn.active {
 }
 /* When the source photo is missing/broken we render a small M·T mark
    plus a "VIA {source}" caption so the cell reads as an external article
-   without an image — never as original Mutapa Times content. */
+   without an image — never as original Mutapa Times content.
+   No fixed aspect ratio: the cell stretches to match the adjacent text
+   column height the same way a landscape photo would, so the visual
+   weight stays consistent with the other spotlight items. */
 .spotlight-img--placeholder {
   width: 45%;
+  align-self: stretch;
   min-height: 180px;
   flex-shrink: 0;
   background: #FAFAF7;
   border: 1px solid rgba(255,255,255,0.1);
-  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
   align-items: center;
