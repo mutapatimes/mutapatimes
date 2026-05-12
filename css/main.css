@@ -5541,6 +5541,42 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   scroll-snap-align: start;
   font-family: 'Inter', system-ui, sans-serif;
 }
+/* IG-style glow ring — sits behind the chip. Unviewed = rotating
+   conic gradient in brand colours; viewed = flat grey ring. */
+.story-chip-glow {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #C41E1E 0%,
+    #F5E8C8 22%,
+    #C41E1E 42%,
+    #1A1A1A 62%,
+    #C41E1E 82%,
+    #C41E1E 100%
+  );
+  transition: transform 0.18s ease, filter 0.2s ease;
+}
+.story-thumb.is-unviewed .story-chip-glow {
+  animation: story-glow-spin 8s linear infinite;
+  filter: drop-shadow(0 0 0 rgba(196, 30, 30, 0));
+}
+.story-thumb.is-unviewed .story-chip-glow {
+  animation: story-glow-spin 8s linear infinite, story-glow-pulse 2.6s ease-in-out infinite;
+}
+.story-thumb.is-viewed .story-chip-glow {
+  background: #cfcdc7;
+  animation: none;
+}
+@keyframes story-glow-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes story-glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(196, 30, 30, 0.05)); }
+  50%      { filter: drop-shadow(0 0 14px rgba(196, 30, 30, 0.40)); }
+}
+
 /* Each chip is its own colour with the category label centred inside.
    No thumbnail image — the colour + label IS the identity. */
 .story-chip {
@@ -5551,13 +5587,21 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   justify-content: center;
   padding: 8px;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12), inset 0 0 0 3px rgba(255,255,255,0.18);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12), inset 0 0 0 2px rgba(255,255,255,0.10);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  /* Counter-rotate against the glow so the label stays upright. */
+  animation: story-chip-counterspin 8s linear infinite;
 }
-.story-thumb:hover .story-chip,
-.story-thumb:focus-visible .story-chip {
-  transform: scale(1.06);
-  box-shadow: 0 6px 22px rgba(0,0,0,0.18), inset 0 0 0 3px rgba(255,255,255,0.28);
+.story-thumb.is-viewed .story-chip { animation: none; }
+@keyframes story-chip-counterspin {
+  to { transform: rotate(-360deg); }
+}
+.story-thumb:hover .story-chip-glow,
+.story-thumb:focus-visible .story-chip-glow {
+  transform: scale(1.05);
+}
+.story-thumb.is-viewed .story-chip {
+  filter: grayscale(0.55) brightness(0.95);
 }
 .story-chip-label {
   font-family: 'Inter', system-ui, sans-serif;
@@ -5626,19 +5670,54 @@ body.story-viewer-open { overflow: hidden; }
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
+.story-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.story-share,
 .story-close {
   background: transparent;
   border: 0;
   color: #fff;
-  font-size: 1.8rem;
   line-height: 1;
   width: 36px; height: 36px;
   cursor: pointer;
   padding: 0;
   opacity: 0.85;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.story-close:hover { opacity: 1; }
+.story-share:hover,
+.story-close:hover { opacity: 1; transform: scale(1.08); }
+.story-close { font-size: 1.8rem; }
+
+/* Toast — appears at the bottom of the viewer after copy-link share. */
+.story-toast {
+  position: absolute;
+  bottom: 18vh;
+  left: 50%;
+  transform: translate(-50%, 8px);
+  background: rgba(26, 26, 26, 0.92);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 10px 18px;
+  border-radius: 999px;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.story-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
 
 /* Card frame — 9:16 (Instagram Story dimensions). The existing 4:5
    PNG card sits centred inside, with the highlight colour as the

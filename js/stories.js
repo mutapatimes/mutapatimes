@@ -128,23 +128,52 @@
     return hi;
   }
 
+  // ---- Viewed state (localStorage) ----
+  var VIEWED_KEY = "mt-stories-viewed";
+  function loadViewed() {
+    try { return JSON.parse(localStorage.getItem(VIEWED_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function saveViewed(v) {
+    try { localStorage.setItem(VIEWED_KEY, JSON.stringify(v)); } catch (e) {}
+  }
+  function markViewed(highlightKey, slug) {
+    var v = loadViewed();
+    var bucket = v[highlightKey] || (v[highlightKey] = {});
+    bucket[slug] = 1;
+    saveViewed(v);
+  }
+  function isHighlightFullyViewed(h) {
+    var v = loadViewed();
+    var bucket = v[h.key] || {};
+    for (var i = 0; i < h.items.length; i++) {
+      if (!bucket[h.items[i].slug]) return false;
+    }
+    return true;
+  }
+
   // ---- Rail rendering ----
   function renderRail(rail, highlights) {
     rail.innerHTML = "";
     var inner = el("div", { class: "stories-rail-inner" });
     highlights.forEach(function (h, i) {
+      var viewed = isHighlightFullyViewed(h);
       var thumb = el("button", {
-        class: "story-thumb",
+        class: "story-thumb" + (viewed ? " is-viewed" : " is-unviewed"),
         type: "button",
         "data-highlight": h.key,
-        "aria-label": h.label + " — " + h.items.length + " stories",
+        "aria-label": h.label + " — " + h.items.length + " stories" + (viewed ? " (all viewed)" : ""),
         onclick: function () { openViewer(highlights, i, 0); },
       }, [
-        el("div", {
-          class: "story-chip",
-          style: "background:" + colorFor(h.key),
-        }, [
-          el("span", { class: "story-chip-label", text: h.label }),
+        // Glow ring — conic gradient, slowly rotates while unviewed.
+        // Dims to a flat gray once every snap in this highlight is seen.
+        el("span", { class: "story-chip-glow" }, [
+          el("span", {
+            class: "story-chip",
+            style: "background:" + colorFor(h.key),
+          }, [
+            el("span", { class: "story-chip-label", text: h.label }),
+          ]),
         ]),
       ]);
       inner.appendChild(thumb);
@@ -154,6 +183,8 @@
 
   // ---- Viewer ----
   var viewerState = null;
+  var railEl = null;          // remembered so we can re-render after close
+  var allHighlights = null;   // ditto
 
   function openViewer(highlights, hIndex, sIndex) {
     closeViewer();
@@ -184,6 +215,17 @@
     document.body.classList.remove("story-viewer-open");
     viewerState = null;
     document.removeEventListener("keydown", onKeyDown);
+    // Strip ?story=... from the URL on close so reload doesn't reopen.
+    try {
+      var url = new URL(window.location.href);
+      if (url.searchParams.has("story") || url.searchParams.has("snap")) {
+        url.searchParams.delete("story");
+        url.searchParams.delete("snap");
+        window.history.replaceState({}, "", url.toString());
+      }
+    } catch (e) {}
+    // Re-render the rail so newly-viewed highlights dim.
+    if (railEl && allHighlights) renderRail(railEl, allHighlights);
   }
 
   function currentHighlight() { return viewerState.highlights[viewerState.h]; }
@@ -203,14 +245,25 @@
       segs.appendChild(seg);
     }
 
-    // Top bar — label + close
+    // Top bar — label + share + close
     var top = el("div", { class: "story-top" }, [
       el("p", { class: "story-top-label", text: h.label }),
-      el("button", {
-        class: "story-close", type: "button", "aria-label": "Close stories",
-        html: "&times;",
-        onclick: closeViewer,
-      }),
+      el("div", { class: "story-top-actions" }, [
+        el("button", {
+          class: "story-share", type: "button", "aria-label": "Share this story",
+          html:
+            '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+              '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>' +
+              '<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>' +
+            '</svg>',
+          onclick: function (ev) { ev.stopPropagation(); shareCurrent(); },
+        }),
+        el("button", {
+          class: "story-close", type: "button", "aria-label": "Close stories",
+          html: "&times;",
+          onclick: closeViewer,
+        }),
+      ]),
     ]);
 
     // Card — wrap the existing 4:5 PNG in a 9:16 butter frame so the
@@ -259,6 +312,67 @@
     v.elapsedBeforePause = 0;
     if (v.timer) clearTimeout(v.timer);
     v.timer = setTimeout(next, SNAP_DURATION_MS);
+
+    // Mark this snap as viewed for the dim-the-ring state.
+    markViewed(h.key, snap.slug);
+
+    // Reflect the current snap in the URL so refresh / share works.
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("story", h.key);
+      url.searchParams.set("snap", String(v.s));
+      window.history.replaceState({}, "", url.toString());
+    } catch (e) {}
+  }
+
+  // ---- Share ----
+  function buildShareUrl() {
+    if (!viewerState) return window.location.href;
+    var url = new URL(window.location.origin + window.location.pathname);
+    url.searchParams.set("story", currentHighlight().key);
+    url.searchParams.set("snap", String(viewerState.s));
+    return url.toString();
+  }
+
+  function showToast(text) {
+    if (!viewerState) return;
+    var existing = viewerState.overlay.querySelector(".story-toast");
+    if (existing) existing.parentNode.removeChild(existing);
+    var toast = el("div", { class: "story-toast", role: "status", text: text });
+    viewerState.overlay.appendChild(toast);
+    // Force reflow then add visible class for the CSS transition
+    void toast.offsetWidth;
+    toast.classList.add("is-visible");
+    setTimeout(function () {
+      toast.classList.remove("is-visible");
+      setTimeout(function () { if (toast.parentNode) toast.parentNode.removeChild(toast); }, 220);
+    }, 1800);
+  }
+
+  function shareCurrent() {
+    if (!viewerState) return;
+    var snap = currentSnap();
+    var h = currentHighlight();
+    var url = buildShareUrl();
+    var shareData = {
+      title: (snap.title || h.label) + " — The Mutapa Times",
+      text: snap.title || "",
+      url: url,
+    };
+    pause();
+    function done() { resume(); }
+    if (navigator.share) {
+      navigator.share(shareData).then(done).catch(done);
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () {
+        showToast("Link copied — share with a friend");
+        done();
+      }).catch(done);
+    } else {
+      // Last-resort fallback for old browsers
+      window.prompt("Copy this link to share:", url);
+      done();
+    }
   }
 
   function next() {
@@ -363,6 +477,25 @@
   }
 
   // ---- Boot ----
+  function maybeAutoOpen() {
+    if (!allHighlights) return;
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var key = params.get("story");
+      if (!key) return;
+      var hIdx = -1;
+      for (var i = 0; i < allHighlights.length; i++) {
+        if (allHighlights[i].key === key) { hIdx = i; break; }
+      }
+      if (hIdx === -1) return;
+      var snapParam = parseInt(params.get("snap") || "0", 10);
+      var sIdx = isNaN(snapParam) ? 0 : Math.max(0, Math.min(
+        snapParam, allHighlights[hIdx].items.length - 1
+      ));
+      openViewer(allHighlights, hIdx, sIdx);
+    } catch (e) {}
+  }
+
   function init() {
     var rail = document.getElementById("stories-rail");
     if (!rail) return;
@@ -370,7 +503,10 @@
       if (!Array.isArray(data) || !data.length) return;
       var hi = buildHighlights(data);
       if (!hi.length) { rail.style.display = "none"; return; }
+      railEl = rail;
+      allHighlights = hi;
       renderRail(rail, hi);
+      maybeAutoOpen();
     }).catch(function () { rail.style.display = "none"; });
   }
 
