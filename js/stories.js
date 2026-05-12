@@ -31,23 +31,42 @@
     "Sport", "Culture", "Environment", "Education",
   ];
 
-  // Each highlight gets its own muted brand-extended colour so the rail
-  // reads at a glance — category lives inside the circle, no thumbnail.
-  // All tones are dark enough that white text reads cleanly.
-  var CATEGORY_COLORS = {
-    "_latest":     "#C41E1E",  // brand red
-    "Business":    "#1A1A1A",  // ink
-    "Policy":      "#3D5A4F",  // forest
-    "Tech":        "#3B5780",  // slate blue
-    "Health":      "#5C7A4E",  // sage darker
-    "Sport":       "#A8632B",  // burnt orange
-    "Culture":     "#6E4582",  // muted plum
-    "Environment": "#3F6A4E",  // forest green
-    "Education":   "#4F6299",  // dusty blue
+  // Two palettes:
+  //  • CHIP — faded brand tones for the rail circles (dark ink text)
+  //  • VIEWER — saturated tones for the fullscreen story background
+  //    (white text reads cleanly against them)
+  var CHIP_COLORS = {
+    "_latest":     "#E8C9C5",  // faded brand-red (rose-tinted)
+    "Business":    "#ECE2CF",  // warm cream
+    "Policy":      "#D8E6D5",  // sage green
+    "Tech":        "#DDE4ED",  // pale slate
+    "Health":      "#E1E8D2",  // pale moss
+    "Sport":       "#F0DCC6",  // warm peach
+    "Culture":     "#E5DBE8",  // pale lavender
+    "Environment": "#D2E2D2",  // pale forest
+    "Education":   "#D8E1F0",  // pale sky
+    "More":        "#E4E0D8",  // soft taupe
+  };
+  var VIEWER_COLORS = {
+    "_latest":     "#C41E1E",
+    "Business":    "#1A1A1A",
+    "Policy":      "#3D5A4F",
+    "Tech":        "#3B5780",
+    "Health":      "#5C7A4E",
+    "Sport":       "#A8632B",
+    "Culture":     "#6E4582",
+    "Environment": "#3F6A4E",
+    "Education":   "#4F6299",
     "More":        "#444",
   };
+  // Back-compat alias — most call-sites still use colorFor for the rail.
+  var CATEGORY_COLORS = CHIP_COLORS;
   function colorFor(key) {
-    return CATEGORY_COLORS[key] || "#1A1A1A";
+    // Default exported helper — returns the rail chip colour.
+    return CHIP_COLORS[key] || "#E4E0D8";
+  }
+  function viewerColorFor(key) {
+    return VIEWER_COLORS[key] || "#1A1A1A";
   }
 
   // ---- DOM helpers ----
@@ -292,7 +311,7 @@
     var tapRight = el("button", { class: "story-tap story-tap--right", type: "button", "aria-label": "Next", onclick: next });
 
     // Paint the viewer in the highlight's category colour — full viewport.
-    v.overlay.style.background = colorFor(h.key);
+    v.overlay.style.background = viewerColorFor(h.key);
 
     v.overlay.innerHTML = "";
     v.overlay.appendChild(segs);

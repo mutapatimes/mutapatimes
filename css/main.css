@@ -5516,18 +5516,14 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
  * on butter, so the viewer just centres them on black like IG does
  * for non-9:16 content.
  * ───────────────────────────────────────────────────────────── */
-/* Full-bleed: escape .paper's max-width:1200px and 48px side padding.
-   The 100vw + half-vw negative margin trick aligns the wrapper to the
-   actual viewport edges. Combined with html{overflow-x:hidden} so the
-   100vw can't trigger horizontal scroll on any browser. */
+/* Desktop: rail fills the .paper content area (no viewport bleed),
+   keeps in line with the Spotlight band above. Mobile breakout lives
+   in the @media (max-width:640px) block below. */
 #stories-rail {
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  max-width: 100vw;
-  margin-top: 0;
-  margin-bottom: 28px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 28px;
   padding: 0;
 }
 .stories-rail-inner {
@@ -5596,7 +5592,7 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   50%      { filter: drop-shadow(0 0 14px rgba(196, 30, 30, 0.40)); }
 }
 
-/* Each chip is its own colour with the category label centred inside.
+/* Each chip is its own faded brand tone with a dark ink label inside.
    No thumbnail image — the colour + label IS the identity. */
 .story-chip {
   width: 88px; height: 88px;
@@ -5605,8 +5601,8 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   align-items: center;
   justify-content: center;
   padding: 8px;
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12), inset 0 0 0 2px rgba(255,255,255,0.10);
+  color: #1A1A1A;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08), inset 0 0 0 1px rgba(0,0,0,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   /* Counter-rotate against the glow so the label stays upright. */
   animation: story-chip-counterspin 8s linear infinite;
@@ -5624,13 +5620,13 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 }
 .story-chip-label {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-align: center;
   line-height: 1.15;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  color: #1A1A1A;
   word-break: break-word;
   hyphens: auto;
 }
@@ -5840,6 +5836,13 @@ body.story-viewer-open { overflow: hidden; }
 .story-bottom-cta:hover { transform: translateY(-1px); text-decoration: none; }
 
 @media (max-width: 640px) {
+  /* On phones the rail goes full-bleed so chips can scroll edge-to-edge */
+  #stories-rail {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
   .stories-rail-inner {
     /* Slightly tighter edge padding on phones */
     padding-left: max(16px, env(safe-area-inset-left, 0px));
