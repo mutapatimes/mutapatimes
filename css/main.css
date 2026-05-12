@@ -5719,12 +5719,46 @@ body.story-viewer-open { overflow: hidden; }
   transform: translate(-50%, 0);
 }
 
-/* Card frame — 9:16 (Instagram Story dimensions). The existing 4:5
-   PNG card sits centred inside, with the highlight colour as the
-   surrounding "frame". A bottom fade keeps the title + CTA legible. */
+/* Title area — sits ABOVE the card so the headline never overlaps it.
+   White text on the black viewer background. */
+.story-title-area {
+  position: absolute;
+  top: 64px;
+  left: 24px; right: 24px;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+  color: #fff;
+}
+.story-title-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C41E1E;
+  margin: 0 0 8px;
+}
+.story-title-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  line-height: 1.25;
+  margin: 0;
+  max-width: 640px;
+  margin-left: auto; margin-right: auto;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  /* Trim to two lines so we never collide with the card */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card frame — 9:16 (Instagram Story dimensions). Sized to fit between
+   the title area and the CTA. */
 .story-card {
   position: relative;
-  height: 90vh;
+  height: 74vh;
   max-width: 100%;
   aspect-ratio: 9 / 16;
   border-radius: 16px;
@@ -5737,24 +5771,11 @@ body.story-viewer-open { overflow: hidden; }
 }
 .story-card-image {
   width: 92%;
-  max-height: 70%;
+  max-height: 86%;
   object-fit: contain;
   display: block;
   border-radius: 8px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-}
-/* Bottom-half gradient — opaque enough that white text + the butter CTA
-   pill always have contrast no matter what the centred card image is. */
-.story-card-fade {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 45%;
-  background: linear-gradient(to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.35) 45%,
-    rgba(0,0,0,0.78) 100%);
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* Tap zones — left third for back, right two-thirds for forward.
@@ -5772,38 +5793,16 @@ body.story-viewer-open { overflow: hidden; }
 .story-tap--left { left: 0; width: 33%; }
 .story-tap--right { right: 0; width: 67%; }
 
-/* Bottom caption — sits on top of the card's bottom fade so it tracks
-   the card itself (and not the black margin around it). Anchored via
-   the viewer's flex centre using transform. */
+/* Bottom — just the CTA pill, centered. Title + eyebrow now live in
+   .story-title-area above the card. */
 .story-bottom {
   position: absolute;
   left: 50%;
-  bottom: 5vh;
+  bottom: 4vh;
   transform: translateX(-50%);
-  width: min(92vw, calc(90vh * 9 / 16 - 32px));
-  padding: 0 24px;
-  color: #fff;
   text-align: center;
   z-index: 4;
   pointer-events: none;
-}
-.story-bottom-eyebrow {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #C41E1E;
-  margin: 0 0 6px;
-}
-.story-bottom-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0 0 14px;
-  max-width: 540px;
-  margin-left: auto; margin-right: auto;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 .story-bottom-cta {
   pointer-events: auto;
@@ -5825,12 +5824,14 @@ body.story-viewer-open { overflow: hidden; }
   .story-thumb { width: 84px; }
   .story-chip { width: 78px; height: 78px; padding: 6px; }
   .story-chip-label { font-size: 0.7rem; }
-  .story-card { height: 88vh; border-radius: 0; }
-  .story-card-image { width: 90%; max-height: 60%; }
-  .story-bottom {
-    width: min(92vw, calc(88vh * 9 / 16 - 24px));
-    bottom: 6vh;
+  .story-title-area {
+    top: 56px;
+    left: 16px; right: 16px;
   }
+  .story-title-headline { font-size: 0.98rem; }
+  .story-card { height: 70vh; border-radius: 12px; }
+  .story-card-image { width: 92%; max-height: 88%; }
+  .story-bottom { bottom: 4.5vh; }
 }
 
 /* ─────────────────────────────────────────────────────────────

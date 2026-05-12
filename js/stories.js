@@ -266,18 +266,22 @@
       ]),
     ]);
 
-    // Card — wrap the existing 4:5 PNG in a 9:16 butter frame so the
-    // viewer matches IG Story dimensions. Bottom fade overlay makes the
-    // title + CTA legible without depending on background luck.
-    var card = el("div", { class: "story-card", style: "background:" + colorFor(h.key) }, [
-      el("img", { class: "story-card-image", src: snap.card_image, alt: snap.title || "" }),
-      el("div", { class: "story-card-fade" }),
+    // Title area — eyebrow + headline above the card so they never
+    // overlap the butter card. Leaves the bottom of the viewer free
+    // for the CTA pill alone.
+    var titleArea = el("div", { class: "story-title-area" }, [
+      el("p", { class: "story-title-eyebrow", text: (h.label === "Latest" ? (snap.category || "Story") : h.label) }),
+      el("p", { class: "story-title-headline", text: snap.title || "" }),
     ]);
 
-    // Bottom caption
+    // Card — wrap the existing 4:5 PNG in a 9:16 butter frame so the
+    // viewer matches IG Story dimensions.
+    var card = el("div", { class: "story-card", style: "background:" + colorFor(h.key) }, [
+      el("img", { class: "story-card-image", src: snap.card_image, alt: snap.title || "" }),
+    ]);
+
+    // Bottom — CTA pill only.
     var bottom = el("div", { class: "story-bottom" }, [
-      el("p", { class: "story-bottom-eyebrow", text: (h.label === "Latest" ? (snap.category || "Story") : h.label) }),
-      el("p", { class: "story-bottom-title", text: snap.title || "" }),
       el("a", {
         class: "story-bottom-cta",
         href: "/articles/" + encodeURIComponent(snap.slug),
@@ -292,6 +296,7 @@
     v.overlay.innerHTML = "";
     v.overlay.appendChild(segs);
     v.overlay.appendChild(top);
+    v.overlay.appendChild(titleArea);
     v.overlay.appendChild(tapLeft);
     v.overlay.appendChild(tapRight);
     v.overlay.appendChild(card);
