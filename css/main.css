@@ -5952,3 +5952,72 @@ body.story-viewer-open { overflow: hidden; }
   .page-hero-stat { padding: 14px 16px; }
   .page-hero-stat-value { font-size: 1.3rem; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+ * Footer social strip — full row of platform glyphs above the three
+ * footer columns. Mono ink by default; on hover the icon goes white
+ * inside a brand-red circle. Skips Pinterest (not yet connected).
+ * ───────────────────────────────────────────────────────────── */
+.footer-social-strip {
+  padding: 24px 8px 22px;
+  border-bottom: 1px solid var(--rule);
+  margin: 0 0 24px;
+  text-align: center;
+}
+.footer-social-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin: 0 0 14px;
+}
+.footer-social-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 14px;
+}
+.footer-social-row li { margin: 0; }
+.footer-social-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.footer-social-row a:hover,
+.footer-social-row a:focus-visible {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.footer-social-row svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.footer-social-handle {
+  margin: 12px 0 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+.footer-social-handle strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) {
+  .footer-social-row { gap: 8px 10px; }
+  .footer-social-row a { width: 38px; height: 38px; }
+  .footer-social-row svg { width: 16px; height: 16px; }
+}
