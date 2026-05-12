@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-"""Build 9:16 Instagram-Story cards (1080×1920) for the mixed
-stories-feed.xml. One card per business article + property listing +
-job — same brand chrome, big headline, red "Read more on Mutapa Times"
-pill at the bottom.
+"""Build 9:16 Instagram-Story cards (1080×1920) for stories-feed.xml.
+
+Metricool's Story autopublish strips captions ("Max characters
+allowed 0"), so EVERY piece of context the post needs has to live
+inside the image itself. Each card therefore carries:
+
+  • brand chrome (wordmark + red rule + ZIMBABWE OUTSIDE-IN sub)
+  • category eyebrow in brand red
+  • big serif headline (auto-sized to fit ~4 lines)
+  • editorial body paragraph in smaller text — the article summary,
+    listing specs, or job blurb that would otherwise live in the caption
+  • a prominent red "Read more on Mutapa Times" CTA pill
 
 Output: img/cards/stories/{md5}.png — hash derived from the canonical
 mutapatimes.com URL the story links to.
@@ -30,7 +38,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 OUT_DIR = os.path.join(ROOT, "img", "cards", "stories")
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# Instagram Story dimensions
+# Instagram Story dimensions — 9:16 full-screen
 W = 1080
 H = 1920
 
@@ -72,10 +80,16 @@ def _text_h(draw, text, font):
     return bbox[3] - bbox[1]
 
 
-def render_story_card(eyebrow, headline, subline, output_path):
-    """Render a 1080×1920 butter story card with brand chrome, big
-    headline, optional subline, and a red 'Read more on Mutapa Times'
-    pill anchored at the bottom."""
+def render_story_card(eyebrow, headline, body, attribution, output_path):
+    """Render a 1080×1920 butter story card with:
+      • brand chrome (top)
+      • eyebrow + headline (mid-upper)
+      • editorial body paragraph (mid)
+      • attribution line (mid-lower)
+      • red CTA pill anchored to the bottom
+
+    `body` is the longer description that would otherwise live in the
+    post caption — Stories strip captions, so it has to render here."""
     img = Image.new("RGB", (W, H), BUTTER)
     draw = ImageDraw.Draw(img)
     pad = 96
@@ -89,34 +103,54 @@ def render_story_card(eyebrow, headline, subline, output_path):
     draw.text((pad, rule_y + 22), "ZIMBABWE OUTSIDE-IN",
               font=sub_font, fill=CARD_FG_MUTED)
 
-    # ── MIDDLE: eyebrow + auto-sized headline ──
-    eyebrow_y = 480
+    # ── MIDDLE: eyebrow + headline + body + attribution ──
+    max_width = W - 2 * pad
+
+    eyebrow_y = 440
     eyebrow_font = load_font("sans_bold", 26)
     draw.text((pad, eyebrow_y), (eyebrow or "BRIEFING").upper(),
               font=eyebrow_font, fill=ACCENT)
 
-    headline_y = eyebrow_y + 60
-    max_width = W - 2 * pad
-    # 9 lines is the practical max before the headline crowds the CTA
+    headline_y = eyebrow_y + 56
+    # Cap headline to 5 lines so we leave breathing room for the body
     headline_size, headline_font, headline_lines = fit_headline(
-        draw, headline or "", max_width, max_lines=9,
-        max_size=92, min_size=46,
+        draw, headline or "", max_width, max_lines=5,
+        max_size=84, min_size=46,
     )
-    line_height = int(headline_size * 1.18)
+    headline_lh = int(headline_size * 1.16)
     y = headline_y
     for line in headline_lines:
         draw.text((pad, y), line, font=headline_font, fill=CARD_FG)
-        y += line_height
+        y += headline_lh
 
-    # Subline below headline (optional — price, location, source name)
-    if subline:
-        subline_font = load_font("sans", 28)
-        # Wrap subline to two lines max
-        sub_lines = wrap_text(subline, subline_font, max_width, draw)[:2]
-        sub_y = y + 36
-        for line in sub_lines:
-            draw.text((pad, sub_y), line, font=subline_font, fill=CARD_FG_MUTED)
-            sub_y += int(28 * 1.4)
+    # ── Body paragraph (the caption that Stories strip) ──
+    body_clean = (body or "").strip()
+    if body_clean:
+        body_size, body_font, body_lines = fit_body(
+            draw, body_clean, max_width,
+            max_lines=10, max_size=34, min_size=24,
+        )
+        body_lh = int(body_size * 1.4)
+        body_y = y + 48
+        for line in body_lines:
+            draw.text((pad, body_y), line, font=body_font, fill=CARD_FG)
+            body_y += body_lh
+        y = body_y
+
+    # ── Attribution line (small, italic-feeling) ──
+    if attribution:
+        attr_font = load_font("sans_bold", 20)
+        attr_text = attribution.strip()
+        # Allow wrap to 2 lines
+        attr_lines = wrap_text(attr_text, attr_font, max_width, draw)[:2]
+        # Small accent dot before the attribution
+        attr_y = y + 36
+        draw.ellipse([pad, attr_y + 8, pad + 8, attr_y + 16], fill=ACCENT)
+        attr_x = pad + 20
+        for line in attr_lines:
+            draw.text((attr_x, attr_y), line.upper(),
+                      font=attr_font, fill=CARD_FG_MUTED)
+            attr_y += 30
 
     # ── BOTTOM: CTA pill anchored to the bottom ──
     cta_text = "Read more on Mutapa Times  →"
@@ -128,14 +162,12 @@ def render_story_card(eyebrow, headline, subline, output_path):
     pill_w = cta_w + pill_padding_x * 2
     pill_h = cta_h + pill_padding_y * 2
     pill_x = (W - pill_w) // 2
-    pill_y = H - pad - pill_h - 80  # leave room for the small URL line
+    pill_y = H - pad - pill_h - 80
     radius = pill_h // 2
     draw.rounded_rectangle(
         [pill_x, pill_y, pill_x + pill_w, pill_y + pill_h],
         radius=radius, fill=ACCENT,
     )
-    # Centre the CTA text inside the pill (textbbox is anchored at baseline-ish,
-    # so subtract the bbox top to land on the visual centre).
     bbox = draw.textbbox((0, 0), cta_text, font=cta_font)
     text_y = pill_y + (pill_h - (bbox[3] - bbox[1])) // 2 - bbox[1]
     text_x = pill_x + pill_padding_x
@@ -151,10 +183,27 @@ def render_story_card(eyebrow, headline, subline, output_path):
     img.save(output_path, "PNG", optimize=True)
 
 
+def fit_body(draw, text, max_width, max_lines, max_size=34, min_size=22, step=2):
+    """Step the body font size down until the paragraph fits in
+    `max_lines`. Final fallback: hard-clip the wrap to max_lines."""
+    for size in range(max_size, min_size - 1, -step):
+        font = load_font("sans", size)
+        lines = wrap_text(text, font, max_width, draw)
+        if len(lines) <= max_lines:
+            return size, font, lines
+    font = load_font("sans", min_size)
+    lines = wrap_text(text, font, max_width, draw)[:max_lines]
+    # Add an ellipsis to the last line if we truncated
+    if lines and len(wrap_text(text, font, max_width, draw)) > max_lines:
+        last = lines[-1].rstrip(".,;: ")
+        lines[-1] = last + "…"
+    return min_size, font, lines
+
+
 # ── Sources: business articles, property, jobs ──────────────
 def collect_business_cards():
-    """One story per fresh CMS article. Returns list of dicts:
-    {url, eyebrow, headline, subline, slug}."""
+    """One story per fresh CMS article. Returns list of dicts with
+    {url, eyebrow, headline, body, attribution, slug, date}."""
     out = []
     idx_path = os.path.join(ROOT, "content", "articles", "index.json")
     if not os.path.exists(idx_path):
@@ -163,7 +212,6 @@ def collect_business_cards():
         entries = json.load(open(idx_path))
     except (json.JSONDecodeError, OSError):
         return out
-    # Filter to recent business-like categories (banned ones already stripped)
     keep_cats = {"Business", "Policy", "Tech", "Economy", "Environment"}
     for e in entries:
         if not isinstance(e, dict):
@@ -172,6 +220,7 @@ def collect_business_cards():
         cat = (e.get("category") or "").strip()
         title = (e.get("title") or "").strip()
         author = (e.get("author") or "").strip()
+        summary = (e.get("summary") or "").strip()
         if not slug or not title or cat not in keep_cats:
             continue
         url = f"https://mutapatimes.com/articles/{slug}"
@@ -179,7 +228,8 @@ def collect_business_cards():
             "url": url,
             "eyebrow": cat or "BUSINESS",
             "headline": title,
-            "subline": f"via {author}" if author else "",
+            "body": summary,
+            "attribution": f"via {author}" if author else "",
             "slug": slug,
             "date": e.get("date", ""),
         })
@@ -199,7 +249,8 @@ def _fmt_usd(amount):
 
 
 def collect_property_cards():
-    """One story per property listing."""
+    """One story per property listing — body assembles a prose
+    description from price, beds, baths and location."""
     out = []
     p = os.path.join(ROOT, "data", "property-listings.json")
     if not os.path.exists(p):
@@ -219,19 +270,33 @@ def collect_property_cards():
         price = li.get("price") or li.get("price_usd") or ""
         location = li.get("location") or li.get("suburb") or ""
         beds = li.get("bedrooms") or li.get("beds")
+        baths = li.get("bathrooms") or li.get("baths")
+        ptype = li.get("type") or li.get("category") or "property"
+        agent = li.get("agent") or li.get("agency") or ""
+        # Body — small editorial prose assembled from specs
         bits = []
         if price:
             bits.append(_fmt_usd(price) if isinstance(price, (int, float)) else str(price))
+        spec_parts = []
         if beds:
-            bits.append(f"{beds} bed")
+            spec_parts.append(f"{beds} bedrooms")
+        if baths:
+            spec_parts.append(f"{baths} bathrooms")
+        if spec_parts:
+            bits.append(", ".join(spec_parts))
         if location:
             bits.append(str(location))
-        subline = " · ".join(bits) if bits else "Zimbabwe property listing"
+        body = " · ".join(bits) if bits else "Zimbabwe property listing"
+        # Add the publisher description if present and short enough
+        extra = (li.get("description") or li.get("summary") or "").strip()
+        if extra:
+            body = f"{body}.  {extra[:200]}"
         out.append({
             "url": url,
-            "eyebrow": "PROPERTY",
+            "eyebrow": ptype.upper() if isinstance(ptype, str) else "PROPERTY",
             "headline": title,
-            "subline": subline,
+            "body": body,
+            "attribution": f"via {agent}" if agent else "via property.co.zw",
             "slug": None,
             "date": li.get("date") or li.get("publishedAt") or "",
         })
@@ -241,23 +306,28 @@ def collect_property_cards():
 def collect_job_cards():
     """One story per active job + the three Mutapa internships."""
     out = []
-    # Internships first — stable, always present
+    # Internships — each gets a rich pitch in the body so applicants
+    # have everything they need from the Story alone.
     internships = [
-        ("social-intern", "Social Intern — The Mutapa Times",
-         "Fully remote · 3 days/week · 3 months · Rolling intake"),
-        ("editor-intern", "Editor Intern — The Mutapa Times",
-         "Fully remote · 3 days/week · 3 months · Rolling intake"),
-        ("data-intern",  "Data Intern — The Mutapa Times",
-         "Fully remote · 3 days/week · 3 months · Rolling intake"),
+        ("social-intern", "Social Intern",
+         "Help grow our social channels. Pitch fresh formats and ideas, spot trends, and shape how The Mutapa Times shows up across Instagram, Threads, X, TikTok and LinkedIn. Bring your own thinking — we like innovation.",
+         "Fully remote · 3 days a week · 3 months · Rolling intake"),
+        ("editor-intern", "Editor Intern",
+         "Pitch, draft and edit original explainers and analysis. Fact-check stories, help shape the twice-weekly newsletter, and bring new editorial angles for telling Zimbabwean stories to a diaspora audience.",
+         "Fully remote · 3 days a week · 3 months · Rolling intake"),
+        ("data-intern", "Data Intern",
+         "Turn Zimbabwean public data into clear, visual stories. Extend the live economy briefing, prototype new ways to make numbers readable, and bring your own data ideas.",
+         "Fully remote · 3 days a week · 3 months · Rolling intake"),
     ]
-    for slug, headline, subline in internships:
+    for slug, headline, body, attribution in internships:
         out.append({
             "url": f"https://mutapatimes.com/jobs#{slug}",
-            "eyebrow": "INTERNSHIP",
+            "eyebrow": "INTERNSHIP — The Mutapa Times",
             "headline": headline,
-            "subline": subline,
+            "body": body,
+            "attribution": attribution,
             "slug": slug,
-            "date": "2026-05-01T00:00:00Z",   # pinned recent
+            "date": "2026-05-01T00:00:00Z",
         })
     # External jobs
     p = os.path.join(ROOT, "data", "jobs.json")
@@ -275,12 +345,22 @@ def collect_job_cards():
         company = (j.get("company") or "").strip()
         loc = (j.get("location") or "").strip()
         jtype = (j.get("type") or "").strip()
-        bits = [b for b in [company, loc, jtype] if b]
+        salary = (j.get("salary") or "").strip()
+        summary = (j.get("summary") or "").strip()
+        # Body: editorial prose if we have a summary, otherwise a spec list
+        spec_bits = [b for b in [loc, jtype, salary] if b]
+        if summary:
+            body = summary
+            if spec_bits:
+                body = body + "  " + " · ".join(spec_bits)
+        else:
+            body = " · ".join(spec_bits) if spec_bits else ""
         out.append({
             "url": url,
-            "eyebrow": "JOB",
+            "eyebrow": (company or "JOB").upper(),
             "headline": title,
-            "subline": " · ".join(bits) if bits else "",
+            "body": body,
+            "attribution": "Apply via Vacancymail",
             "slug": None,
             "date": j.get("posted_at") or j.get("date") or "",
         })
@@ -302,13 +382,18 @@ def prune_stale(active_hashes):
 
 
 def main():
-    print("=== BUILD STORY CARDS (1080x1920) ===")
+    # CLI flag: --force re-renders even cached cards. Useful after a
+    # layout change (e.g. switching to a body-paragraph layout).
+    force = "--force" in sys.argv
+
+    print(f"=== BUILD STORY CARDS ({W}x{H}) ===")
     items = []
     items += collect_business_cards()
     items += collect_property_cards()
     items += collect_job_cards()
     print(f"  Collected {len(items)} items "
-          f"(business + property + jobs + internships)")
+          f"(business + property + jobs + internships)"
+          + ("  [--force]" if force else ""))
 
     rendered = cached = failed = 0
     active = set()
@@ -316,14 +401,15 @@ def main():
         h = card_hash(it["url"])
         active.add(h)
         out_path = os.path.join(OUT_DIR, f"{h}.png")
-        if os.path.exists(out_path):
+        if not force and os.path.exists(out_path):
             cached += 1
             continue
         try:
             render_story_card(
                 eyebrow=it["eyebrow"],
                 headline=it["headline"],
-                subline=it["subline"],
+                body=it.get("body", ""),
+                attribution=it.get("attribution", ""),
                 output_path=out_path,
             )
             rendered += 1
