@@ -1507,7 +1507,7 @@ function renderMainStories(articles) {
 
     var statusMsg = $('<p class="subscribe-status">').hide();
     leftCol.append(statusMsg);
-    leftCol.append($('<p class="subscribe-fine">').html('Free forever \u00b7 No spam \u00b7 Unsubscribe anytime \u00b7 <a href="terms.html">Terms</a>'));
+    leftCol.append($('<p class="subscribe-fine">').html('Free forever \u00b7 No spam \u00b7 Unsubscribe anytime \u00b7 <a href="terms">Terms</a>'));
 
     // Right column — interactive infographic
     var rightCol = $('<div class="subscribe-col-right">');

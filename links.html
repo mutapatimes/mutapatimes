@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>The Mutapa Times — Links</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/links.html">
+    <link rel="canonical" href="https://www.mutapatimes.com/links">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <meta name="description" content="One place for everything The Mutapa Times publishes — economy, FX, jobs, property, newsletter, and the latest cards posted to our social feeds.">
@@ -14,7 +14,7 @@
     <meta property="og:title" content="The Mutapa Times — Links">
     <meta property="og:description" content="One place for everything The Mutapa Times publishes — economy, FX, jobs, property, newsletter, and our latest cards.">
     <meta property="og:image" content="https://www.mutapatimes.com/img/brand/og-share.png">
-    <meta property="og:url" content="https://www.mutapatimes.com/links.html">
+    <meta property="og:url" content="https://www.mutapatimes.com/links">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@mutapatimes">
@@ -36,30 +36,30 @@
 
       <!-- Brand header — centred, narrow column, Linktree-style -->
       <header class="links-header">
-        <a href="index.html" class="links-mark">THE MUTAPA TIMES</a>
+        <a href="/" class="links-mark">THE MUTAPA TIMES</a>
         <p class="links-tagline">Zimbabwe outside-in</p>
         <p class="links-handle">@mutapatimes &middot; mutapatimes.com</p>
       </header>
 
       <!-- Primary nav — five sections + subscribe -->
       <nav class="links-nav" aria-label="Site sections">
-        <a class="links-nav-pill" href="economy.html">
+        <a class="links-nav-pill" href="/economy">
           <span class="links-nav-pill-label">Economy</span>
           <span class="links-nav-pill-sub">GDP &middot; trade &middot; the missing money</span>
         </a>
-        <a class="links-nav-pill" href="fx.html">
+        <a class="links-nav-pill" href="/fx">
           <span class="links-nav-pill-label">FX</span>
           <span class="links-nav-pill-sub">USD &harr; ZWG &middot; remittance providers</span>
         </a>
-        <a class="links-nav-pill" href="jobs.html">
+        <a class="links-nav-pill" href="/jobs">
           <span class="links-nav-pill-label">Jobs</span>
           <span class="links-nav-pill-sub">Live Zimbabwe vacancies &middot; our internships</span>
         </a>
-        <a class="links-nav-pill" href="property.html">
+        <a class="links-nav-pill" href="/property">
           <span class="links-nav-pill-label">Property</span>
           <span class="links-nav-pill-sub">Houses for sale across Zimbabwe</span>
         </a>
-        <a class="links-nav-pill links-nav-pill--accent" href="subscribe.html">
+        <a class="links-nav-pill links-nav-pill--accent" href="/subscribe">
           <span class="links-nav-pill-label">Subscribe</span>
           <span class="links-nav-pill-sub">Free newsletter, 2&times; a week</span>
         </a>
@@ -76,7 +76,7 @@
 
       <!-- Footer line — minimal -->
       <footer class="links-footer">
-        <p><a href="terms.html">Terms</a> &middot; <a href="https://twitter.com/intent/follow?screen_name=mutapatimes" target="_blank" rel="noopener">Follow on X</a> &middot; <a href="mailto:news@mutapatimes.com">Email</a></p>
+        <p><a href="/terms">Terms</a> &middot; <a href="https://twitter.com/intent/follow?screen_name=mutapatimes" target="_blank" rel="noopener">Follow on X</a> &middot; <a href="mailto:news@mutapatimes.com">Email</a></p>
         <p class="links-copyright">&copy; 2020&ndash;2026 The Mutapa Times</p>
       </footer>
 
@@ -132,7 +132,7 @@
             grid.innerHTML = tiles.map(renderTile).join('');
           })
           .catch(function (err) {
-            grid.innerHTML = '<p class="links-loading">Could not load recent posts. <a href="articles.html">Browse all stories</a>.</p>';
+            grid.innerHTML = '<p class="links-loading">Could not load recent posts. <a href="/articles">Browse all stories</a>.</p>';
             if (window.console) console.warn('bio-grid fetch failed:', err);
           });
       })();

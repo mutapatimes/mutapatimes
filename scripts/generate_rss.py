@@ -109,7 +109,7 @@ def collect_cms_articles(base):
         dt = _parse_date(date.group(1)) if date else None
         if not _is_fresh(dt):
             continue
-        link = f"{BASE_URL}/articles/{slug}.html"
+        link = f"{BASE_URL}/articles/{slug}"
         items.append({
             "title": title.group(1) if title else slug,
             "link": link,
@@ -167,7 +167,7 @@ def collect_news_landing_articles(base):
                 # what build_news_pages.py renders for the same article.
                 landing = (
                     f"{BASE_URL}/news/"
-                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}.html"
+                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}"
                 )
                 desc = (a.get("description") or "").strip()
                 # Add inline attribution so Autolist posts credit the source
@@ -351,7 +351,7 @@ def build_fx_snapshot_item(base):
     cat_today = datetime.now(timezone(timedelta(hours=2)))
     date_str = cat_today.strftime("%Y-%m-%d")
     pretty_date = cat_today.strftime("%-d %b %Y")
-    link = f"{BASE_URL}/fx.html?d={date_str}"
+    link = f"{BASE_URL}/fx?d={date_str}"
     image = f"{BASE_URL}/img/cards/fx-snapshot.png?v={date_str}"
 
     title_bits = [f"Zim FX snapshot {pretty_date}: 1 USD = {zwg:.2f} ZWG"]
@@ -440,7 +440,7 @@ def build_weather_snapshot_item(base):
     # Date-tagged weather.html so Metricool's URL dedupe treats each day
     # as a new post, AND so the landing page Metricool scrapes for OG
     # metadata serves the weather card (not fx.html's FX card).
-    link = f"{BASE_URL}/weather.html?d={date_str}"
+    link = f"{BASE_URL}/weather?d={date_str}"
     image = f"{BASE_URL}/img/cards/weather-snapshot.png?v={date_str}"
 
     return {
@@ -557,7 +557,7 @@ def build_economy_snapshot_item(base):
     pub = _cat_day_start_utc()
     cat = datetime.now(timezone(timedelta(hours=2)))
     date_str = cat.strftime("%Y-%m-%d")
-    link = f"{BASE_URL}/economy.html?d={date_str}"
+    link = f"{BASE_URL}/economy?d={date_str}"
     image = f"{BASE_URL}/img/cards/economy-snapshot.png?v={date_str}"
 
     return {
@@ -737,7 +737,7 @@ def collect_business_landing_articles(base):
                 source_name = _normalize_source(a.get("source"))
                 landing = (
                     f"{BASE_URL}/news/"
-                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}.html"
+                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}"
                 )
                 if source_name and source_name.lower() not in desc.lower():
                     desc = f"{desc} (via {source_name})" if desc else f"{title} — via {source_name}"
@@ -845,7 +845,7 @@ def collect_job_items(base):
     pub = _cat_day_start_utc()
     for role, summary, _samples in internships:
         slug_role = role.lower().replace(" ", "-")
-        landing = f"{BASE_URL}/jobs.html#{slug_role}"
+        landing = f"{BASE_URL}/jobs#{slug_role}"
         items.append({
             "title": f"{role} — The Mutapa Times (Remote · 3 days/week · 3 months)",
             "link": landing,

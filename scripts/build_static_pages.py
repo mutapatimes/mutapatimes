@@ -203,7 +203,7 @@ def page_nav(active="articles", depth=1):
       <div class="aboutTitle">
         <div class="">&nbsp;</div>
         </div>
-  <a href="{prefix}index.html" class="title-link">
+  <a href="/" class="title-link">
     <div class="titleDiv">
       <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
@@ -211,22 +211,22 @@ def page_nav(active="articles", depth=1):
   </a>
   <nav id="mainNav">
       <p>
-          <a target="_self"{cls("news")} href="{prefix}index.html">News</a>
+          <a target="_self"{cls("news")} href="/">News</a>
       </p>
       <p>
-          <a target="_self"{eco_cls} href="{prefix}economy.html">Live Economy Data</a>
+          <a target="_self"{eco_cls} href="/economy">Live Economy Data</a>
       </p>
       <p>
-          <a target="_self"{cls("fx")} href="{prefix}fx.html">FX</a>
+          <a target="_self"{cls("fx")} href="/fx">FX</a>
       </p>
       <p>
-          <a target="_self"{cls("property")} href="{prefix}property.html">Property</a>
+          <a target="_self"{cls("property")} href="/property">Property</a>
       </p>
       <p>
-          <a target="_self"{cls("jobs")} href="{prefix}jobs.html">Jobs</a>
+          <a target="_self"{cls("jobs")} href="/jobs">Jobs</a>
       </p>
       <p>
-          <a target="_self"{cls("articles")} href="{prefix}articles.html">Articles</a>
+          <a target="_self"{cls("articles")} href="/articles">Articles</a>
       </p>
   </nav>
   <hr class="topHr">
@@ -278,29 +278,32 @@ def page_footer(depth=1):
           <div class="col-sm-6 col-md-3">
             <h4 class="storyTitleCat">Sections</h4>
             <ul class="footer-links">
-              <li><a href="{prefix}index.html">News</a></li>
-              <li><a href="{prefix}economy.html">Live Economy Data</a></li>
-              <li><a href="{prefix}fx.html">FX Rates</a></li>
-              <li><a href="{prefix}weather.html">Weather</a></li>
-              <li><a href="{prefix}property.html">Property</a></li>
-              <li><a href="{prefix}jobs.html">Jobs</a></li>
-              <li><a href="{prefix}articles.html">Articles</a></li>
+              <li><a href="/">News</a></li>
+              <li><a href="/economy">Live Economy Data</a></li>
+              <li><a href="/fx">FX Rates</a></li>
+              <li><a href="/weather">Weather</a></li>
+              <li><a href="/property">Property</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/articles">Articles</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-md-2">
-            <h4 class="storyTitleCat">Follow</h4>
+            <h4 class="storyTitleCat">The paper</h4>
+            <ul class="footer-links">
+              <li><a href="/about">About</a></li>
+              <li><a href="/advertising">Advertising &amp; partnerships</a></li>
+              <li><a href="mailto:press@mutapatimes.com">Press &amp; media</a></li>
+              <li><a href="/brand">Brand assets</a></li>
+              <li><a href="/subscribe">Newsletter</a></li>
+              <li><a href="/terms">Terms</a></li>
+            </ul>
             <p class="footer-follow-line">
               <a class="follow-x-cta footer-follow-x" href="https://twitter.com/intent/follow?screen_name=mutapatimes"
                  target="_blank" rel="noopener">
                 <span class="follow-x-glyph" aria-hidden="true">𝕏</span> Follow @mutapatimes
               </a>
             </p>
-            <ul class="footer-links">
-              <li><a href="mailto:news@mutapatimes.com">Email</a></li>
-              <li><a href="{prefix}subscribe.html">Newsletter</a></li>
-              <li><a href="{prefix}terms.html">Terms &amp; Conditions</a></li>
-            </ul>
           </div>
       </div>
       <hr>

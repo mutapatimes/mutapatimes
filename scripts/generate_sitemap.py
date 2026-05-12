@@ -10,20 +10,17 @@ BASE_URL = "https://www.mutapatimes.com"
 
 STATIC_PAGES = [
     ("", 1.0, "hourly"),
-    ("index.html", 1.0, "hourly"),
-    ("articles.html", 0.9, "daily"),
-    ("economy.html", 0.8, "daily"),
-    ("fx.html", 0.9, "daily"),
-    ("weather.html", 0.9, "daily"),
-    ("property.html", 0.8, "daily"),
-    ("jobs.html", 0.9, "hourly"),
-    ("links.html", 0.7, "daily"),
-    ("brand.html", 0.4, "monthly"),
-    ("who.html", 0.4, "yearly"),
-    ("what.html", 0.4, "yearly"),
-    ("why.html", 0.4, "yearly"),
-    ("how.html", 0.4, "yearly"),
-    ("terms.html", 0.3, "yearly"),
+    ("articles", 0.9, "daily"),
+    ("economy", 0.8, "daily"),
+    ("fx", 0.9, "daily"),
+    ("weather", 0.9, "daily"),
+    ("property", 0.8, "daily"),
+    ("jobs", 0.9, "hourly"),
+    ("links", 0.7, "daily"),
+    ("about", 0.7, "monthly"),
+    ("advertising", 0.6, "monthly"),
+    ("brand", 0.4, "monthly"),
+    ("terms", 0.3, "yearly"),
 ]
 
 
@@ -71,7 +68,7 @@ def generate():
         if not slug or slug == "index":
             continue
         lastmod = date_str or now_str[:10]
-        loc = f"{BASE_URL}/articles/{slug}.html"
+        loc = f"{BASE_URL}/articles/{slug}"
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
@@ -115,7 +112,7 @@ def generate():
                 continue
             date_str = m.group(1)
             title_part = m.group(2).replace("-", " ").strip()
-            loc = f"{BASE_URL}/news/{slug}.html"
+            loc = f"{BASE_URL}/news/{slug}"
             urls.append(
                 f"  <url>\n"
                 f"    <loc>{loc}</loc>\n"

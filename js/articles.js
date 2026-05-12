@@ -337,7 +337,7 @@
     var params = new URLSearchParams(window.location.search);
     var slug = params.get("slug");
     if (!slug) {
-      container.innerHTML = '<p>Article not found. <a href="articles.html">Back to articles</a></p>';
+      container.innerHTML = '<p>Article not found. <a href="articles">Back to articles</a></p>';
       return;
     }
 
@@ -347,7 +347,7 @@
       if (err || !raw) {
         fetchText(ARTICLES_PATH + filename, function (err2, raw2) {
           if (err2 || !raw2) {
-            container.innerHTML = '<p>Article not found. <a href="articles.html">Back to articles</a></p>';
+            container.innerHTML = '<p>Article not found. <a href="articles">Back to articles</a></p>';
             return;
           }
           displayArticle(container, raw2);
@@ -500,8 +500,8 @@
       injectArticleSchema(meta);
 
       var html = '<nav class="article-breadcrumb" aria-label="Breadcrumb">'
-        + '<a href="index.html">Home</a> <span aria-hidden="true">/</span> '
-        + '<a href="articles.html">Articles</a> <span aria-hidden="true">/</span> '
+        + '<a href="/">Home</a> <span aria-hidden="true">/</span> '
+        + '<a href="articles">Articles</a> <span aria-hidden="true">/</span> '
         + '<span>' + escapeHtml(meta.title || "Article") + '</span>'
         + '</nav>';
       html += '<div class="article-header">';
@@ -521,7 +521,7 @@
 
       html += '<div class="article-body">' + bodyHtml + '</div>';
       html += articleShareButtons(meta);
-      html += '<div class="article-back"><a href="articles.html">&larr; All articles</a></div>';
+      html += '<div class="article-back"><a href="articles">&larr; All articles</a></div>';
 
       container.innerHTML = html;
   }

@@ -64,7 +64,7 @@ def make_slug(article):
 
 
 def landing_url(article):
-    return f"{BASE_URL}/news/{make_slug(article)}.html"
+    return f"{BASE_URL}/news/{make_slug(article)}"
 
 
 # ── Article loading ────────────────────────────────────────────
@@ -198,7 +198,7 @@ def render_page(article, related=None):
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE_URL}/"},
-            {"@type": "ListItem", "position": 2, "name": "News", "item": f"{BASE_URL}/articles.html"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": f"{BASE_URL}/articles"},
             {"@type": "ListItem", "position": 3, "name": title, "item": canonical},
         ],
     }
