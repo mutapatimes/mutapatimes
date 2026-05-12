@@ -23,7 +23,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=20">
+    <link rel="stylesheet" href="css/main.css?v=21">
     <meta name="title" content="Articles | The Mutapa Times">
 <meta name="description" content="Original articles, analysis, and opinion from The Mutapa Times covering Zimbabwe business, politics, technology, and culture.">
 <meta name="keywords" content="The Mutapa Times, articles, Zimbabwe, opinion, analysis, business, politics">
@@ -115,6 +115,135 @@
   <main>
     <div class="articles-page">
       <header class="page-hero">
+        <h1 class="page-hero-headline"><em>Articles</em> &amp; analysis.</h1>
+        <p class="page-hero-deck">Wire reports, original analysis and opinion curated by The Mutapa Times. Filter by category below, or tap a highlight to play the cards.</p>
+      </header>
+
+      <!-- Stories rail — IG-style highlights using the cards we already render. -->
+      <div id="stories-rail" aria-label="Story highlights"></div>
+
+      <!-- Search, filter & sort controls -->
+      <div class="articles-toolbar">
+        <div class="articles-search-wrap">
+          <input type="text" id="articles-search" class="articles-search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+        <div class="articles-controls">
+          <div class="articles-category-chips" id="articles-category-chips">
+            <button class="articles-chip active" data-cat="all">All</button>
+            <button class="articles-chip" data-cat="Business">Business</button>
+            <button class="articles-chip" data-cat="Politics">Politics</button>
+            <button class="articles-chip" data-cat="Crime">Crime</button>
+            <button class="articles-chip" data-cat="Tech">Tech</button>
+            <button class="articles-chip" data-cat="Health">Health</button>
+            <button class="articles-chip" data-cat="Sport">Sport</button>
+            <button class="articles-chip" data-cat="Culture">Culture</button>
+            <button class="articles-chip" data-cat="Policy">Policy</button>
+            <button class="articles-chip" data-cat="Opinion">Opinion</button>
+            <button class="articles-chip" data-cat="Environment">Environment</button>
+          </div>
+          <select id="articles-sort" class="articles-sort" aria-label="Sort articles">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="az">A &ndash; Z</option>
+            <option value="za">Z &ndash; A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="articles-count" id="articles-count"></div>
+
+      <!-- Editorial sponsor strip — between filter controls and the article grid. -->
+      <aside class="ad-slot ad-slot--strip" data-slot="articles-top" data-slot-size="1080x80" aria-hidden="true"><div class="ad-slot__inner"></div></aside>
+
+      <div id="articles-list">
+        <p class="loading-msg">Loading articles&#8230;</p>
+      </div>
+      <div class="articles-pagination" id="articles-pagination"></div>
+
+      <!-- Page-bottom leaderboard — sits below pagination. -->
+      <aside class="ad-slot ad-slot--leaderboard" data-slot="articles-bottom" data-slot-size="720x120" aria-hidden="true"><div class="ad-slot__inner"></div></aside>
+    </div>
+  </main>
+
+  <hr class="dateHr">
+
+<!-- Back to top -->
+<div class="back-to-top-wrap">
+  <button class="back-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    Back to top
+  </button>
+</div>
+
+<!-- Subscribe banner -->
+<div class="footer-subscribe">
+  <div class="footer-subscribe-inner">
+    <h4 class="footer-subscribe-title">Stay informed on Zimbabwe</h4>
+    <p class="footer-subscribe-copy">Curated news, market data &amp; analysis delivered 2&times; a week.</p>
+    <form class="footer-subscribe-form" method="POST" action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==" target="brevo-footer-frame">
+      <input type="email" class="footer-subscribe-input" name="EMAIL" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">
+      <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
+    </form>
+    <p class="footer-subscribe-fine">Free forever. Unsubscribe anytime.</p>
+    <iframe name="brevo-footer-frame" style="display:none" aria-hidden="true"></iframe>
+  </div>
+</div>
+
+<p class="page-meta-footnote">Wire reports curated by The Mutapa Times &middot; Updated hourly &middot; <span id="articlesCountMeta">Loading&hellip;</span></p>
+
+  <!-- Site footer -->
+<footer class="site-footer">
+    <div class="container" style="padding:25px 15px 15px;">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4 class="storyTitleCat">About</h4>
+            <p class="storyfooter">An independent business and intelligence newspaper covering Zimbabwe from the outside in &mdash; foreign press, live financial data and original analysis, curated for the diaspora and the resident reader.</p>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <h4 class="storyTitleCat">Sections</h4>
+            <ul class="footer-links">
+              <li><a href="/">News</a></li>
+              <li><a href="/economy">Economy</a></li>
+              <li><a href="/fx">FX</a></li>
+              <li><a href="/weather">Weather</a></li>
+              <li><a href="/property">Property</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/articles">Articles</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-2">
+            <h4 class="storyTitleCat">Pages</h4>
+            <ul class="footer-links">
+              <li><a href="/about">About</a></li>
+              <li><a href="/advertising">Advertising &amp; partnerships</a></li>
+              <li><a href="mailto:press@mutapatimes.com">Press &amp; media</a></li>
+              <li><a href="/brand">Brand assets</a></li>
+              <li><a href="/subscribe">Newsletter</a></li>
+              <li><a href="/terms">Terms</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <h4 class="storyTitleCat">Follow</h4>
+            <ul class="footer-social-list">
+              <li><a href="https://www.facebook.com/MutapaTimes" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/mutapatimes" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://www.threads.net/@mutapatimes" target="_blank" rel="noopener">Threads</a></li>
+              <li><a href="https://x.com/mutapatimes" target="_blank" rel="noopener">X</a></li>
+              <li><a href="https://bsky.app/profile/mutapatimes.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
+              <li><a href="https://www.linkedin.com/company/the-mutapa-times" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.tiktok.com/@themutapatimes" target="_blank" rel="noopener">TikTok</a></li>
+              <li><a href="/feed.xml">RSS feed</a></li>
+            </ul>
+            <p class="footer-social-handle">All channels: <strong>@mutapatimes</strong></p>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright-text notranslate">&copy; 2020&ndash;2026 The Mutapa Times. All rights reserved.</p>
         </div>
       </div>
     </div>

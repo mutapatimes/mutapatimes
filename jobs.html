@@ -24,7 +24,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=20">
+    <link rel="stylesheet" href="css/main.css?v=21">
     <meta name="title" content="Zimbabwe Jobs | The Mutapa Times">
 <meta name="description" content="Live feed of Zimbabwe job vacancies aggregated from major job boards. New roles posted daily across Harare, Bulawayo and beyond — apply direct via the original posting.">
 <meta name="keywords" content="The Mutapa Times, Zimbabwe jobs, vacancies, Harare jobs, Bulawayo jobs, Zimbabwe vacancies, job vacancies, careers Zimbabwe">
@@ -110,7 +110,158 @@
   <hr class="dateHr">
 
   <header class="page-hero">
-    <button class="cookie-consent-btn" onclick="document.getElementById('cookieConsent').style.display='none';localStorage.setItem('mutapa_cookie_consent','1');">Accept</button>
+    <h1 class="page-hero-headline">Zimbabwe <em>jobs.</em></h1>
+    <p class="page-hero-deck">Live vacancies aggregated from leading Zimbabwe job boards &mdash; apply directly via the original posting. The Mutapa Times also runs three rolling internships (Social, Editor, Data): fully remote, three days a week, three months.</p>
+  </header>
+
+  <!-- Job filters -->
+  <div class="jobs-filter-bar">
+    <input type="text" id="jobsSearch" class="jobs-search" placeholder="Search by title, company, or location&hellip;" autocomplete="off">
+    <select id="jobsLocation" class="jobs-select" aria-label="Filter by location">
+      <option value="">All locations</option>
+    </select>
+    <select id="jobsType" class="jobs-select" aria-label="Filter by type">
+      <option value="">All types</option>
+    </select>
+  </div>
+
+  <!-- Live jobs feed -->
+  <div class="jobs-listings-section">
+    <div id="jobsGrid" class="jobs-grid">
+      <p class="jobs-loading">Loading latest vacancies&hellip;</p>
+    </div>
+  </div>
+
+  <p class="jobs-attribution">Listings aggregated from <a href="https://vacancymail.co.zw/jobs/" target="_blank" rel="noopener">vacancymail.co.zw</a>. The Mutapa Times does not guarantee accuracy or availability of third-party postings. To apply, click any listing to be taken to the original source.</p>
+
+  <hr class="dateHr">
+
+<!-- Subscribe banner -->
+<div class="footer-subscribe">
+  <div class="footer-subscribe-inner">
+    <h4 class="footer-subscribe-title">Stay informed on Zimbabwe</h4>
+    <p class="footer-subscribe-copy">Curated news, market data &amp; analysis delivered 2&times; a week.</p>
+    <form class="footer-subscribe-form" method="POST" action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==" target="brevo-footer-frame">
+      <input type="email" class="footer-subscribe-input" name="EMAIL" placeholder="you@example.com" required autocomplete="email" aria-label="Email address">
+      <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
+    </form>
+    <p class="footer-subscribe-fine">Free forever. Unsubscribe anytime.</p>
+    <iframe name="brevo-footer-frame" style="display:none" aria-hidden="true"></iframe>
+  </div>
+</div>
+
+<p class="page-meta-footnote">Sourced from <a href="https://vacancymail.co.zw" target="_blank" rel="noopener">vacancymail.co.zw</a> &middot; Updated hourly &middot; <span id="jobsMeta">Loading&hellip;</span></p>
+
+  <!-- Site footer -->
+<footer class="site-footer">
+    <div class="container" style="padding:25px 15px 15px;">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4 class="storyTitleCat">About</h4>
+            <p class="storyfooter">An independent business and intelligence newspaper covering Zimbabwe from the outside in &mdash; foreign press, live financial data and original analysis, curated for the diaspora and the resident reader.</p>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <h4 class="storyTitleCat">Sections</h4>
+            <ul class="footer-links">
+              <li><a href="/">News</a></li>
+              <li><a href="/economy">Economy</a></li>
+              <li><a href="/fx">FX</a></li>
+              <li><a href="/weather">Weather</a></li>
+              <li><a href="/property">Property</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/articles">Articles</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-2">
+            <h4 class="storyTitleCat">Pages</h4>
+            <ul class="footer-links">
+              <li><a href="/about">About</a></li>
+              <li><a href="/advertising">Advertising &amp; partnerships</a></li>
+              <li><a href="mailto:press@mutapatimes.com">Press &amp; media</a></li>
+              <li><a href="/brand">Brand assets</a></li>
+              <li><a href="/subscribe">Newsletter</a></li>
+              <li><a href="/terms">Terms</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <h4 class="storyTitleCat">Follow</h4>
+            <ul class="footer-social-list">
+              <li><a href="https://www.facebook.com/MutapaTimes" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/mutapatimes" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://www.threads.net/@mutapatimes" target="_blank" rel="noopener">Threads</a></li>
+              <li><a href="https://x.com/mutapatimes" target="_blank" rel="noopener">X</a></li>
+              <li><a href="https://bsky.app/profile/mutapatimes.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
+              <li><a href="https://www.linkedin.com/company/the-mutapa-times" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.tiktok.com/@themutapatimes" target="_blank" rel="noopener">TikTok</a></li>
+              <li><a href="/feed.xml">RSS feed</a></li>
+            </ul>
+            <p class="footer-social-handle">All channels: <strong>@mutapatimes</strong></p>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright-text notranslate">&copy; 2020&ndash;2026 The Mutapa Times. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+</div>
+<style type="text/css">
+  #goog-gt-tt {display:none !important;}
+  .goog-te-banner-frame {display:none !important;}
+  .goog-te-menu-value:hover {text-decoration:none !important;}
+  .goog-te-gadget-icon {background-image:url(//gtranslate.net/flags/gt_logo_19x19.gif) !important;background-position:0 0 !important;}
+  body {top:0 !important;}
+</style>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, includedLanguages: 'sn,en,nd'}, 'google_translate_element');}
+</script><script type="text/javascript">
+(function() {
+  function loadGoogleTranslate() {
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(s);
+  }
+  if (document.readyState === 'complete') loadGoogleTranslate();
+  else window.addEventListener('load', loadGoogleTranslate);
+})();
+</script>
+  <script defer src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/config.js"></script>
+  <script src="js/jobs.js?v=4"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
+<script defer src="js/push.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XQPRFK7JTB');
+</script>
+
+<script src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
+
+<!-- Metricool -->
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"})});</script>
+
+<div class="cookie-consent" id="cookieConsent">
+  <p>This site uses cookies and local storage to enhance your browsing experience and cache news data. The Mutapa Times is published and operated in the United Kingdom. By continuing to use this site, you agree to our use of cookies. Read our <a href="/terms">Terms &amp; Conditions</a>.</p>
+  <button class="cookie-consent-btn" onclick="document.getElementById('cookieConsent').style.display='none';localStorage.setItem('mutapa_cookie_consent','1');">Accept</button>
 </div>
 <script>if(localStorage.getItem('mutapa_cookie_consent')){document.getElementById('cookieConsent').style.display='none';}</script>
 </body>
