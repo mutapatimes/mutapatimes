@@ -8,6 +8,10 @@ html {
   color: #1a1a1a;
   font-size: 1em;
   line-height: 1.5;
+  /* Prevent 100vw children (e.g. full-bleed stories rail) from creating
+     a horizontal scrollbar on browsers that include the scrollbar gutter
+     in vw. Applies at every breakpoint, not just mobile. */
+  overflow-x: hidden;
 }
 
 ::-moz-selection { background: #d4d0c8; text-shadow: none; }
@@ -5512,17 +5516,32 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
  * on butter, so the viewer just centres them on black like IG does
  * for non-9:16 content.
  * ───────────────────────────────────────────────────────────── */
+/* Full-bleed: escape .paper's max-width:1200px and 48px side padding.
+   The 100vw + half-vw negative margin trick aligns the wrapper to the
+   actual viewport edges. Combined with html{overflow-x:hidden} so the
+   100vw can't trigger horizontal scroll on any browser. */
 #stories-rail {
-  max-width: 1080px;
-  margin: 0 auto 24px;
-  padding: 0 24px;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: 100vw;
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding: 0;
 }
 .stories-rail-inner {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  overflow-y: visible;
   scroll-snap-type: x proximity;
-  padding: 16px 4px;
+  /* Inner padding keeps the first / last chip away from the viewport
+     edge. max() respects iOS safe-area inset on landscape. */
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
@@ -5825,7 +5844,12 @@ body.story-viewer-open { overflow: hidden; }
 .story-bottom-cta:hover { transform: translateY(-1px); text-decoration: none; }
 
 @media (max-width: 640px) {
-  #stories-rail { padding: 0 16px; }
+  .stories-rail-inner {
+    /* Slightly tighter edge padding on phones */
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    gap: 16px;
+  }
   .story-thumb { width: 84px; }
   .story-chip { width: 78px; height: 78px; padding: 6px; }
   .story-chip-label { font-size: 0.7rem; }
