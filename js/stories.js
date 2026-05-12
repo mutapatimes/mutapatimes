@@ -30,6 +30,27 @@
     "Sport", "Culture", "Environment", "Education",
   ];
 
+  // Each highlight gets its own muted brand-extended colour so the rail
+  // reads at a glance — category lives inside the circle, no thumbnail.
+  // All tones are dark enough that white text reads cleanly.
+  var CATEGORY_COLORS = {
+    "_latest":     "#C41E1E",  // brand red
+    "Business":    "#1A1A1A",  // ink
+    "Politics":    "#7A2436",  // deep wine
+    "Policy":      "#3D5A4F",  // forest
+    "Tech":        "#3B5780",  // slate blue
+    "Health":      "#5C7A4E",  // sage darker
+    "Crime":       "#3A2424",  // dark brown
+    "Sport":       "#A8632B",  // burnt orange
+    "Culture":     "#6E4582",  // muted plum
+    "Environment": "#3F6A4E",  // forest green
+    "Education":   "#4F6299",  // dusty blue
+    "More":        "#444",
+  };
+  function colorFor(key) {
+    return CATEGORY_COLORS[key] || "#1A1A1A";
+  }
+
   // ---- DOM helpers ----
   function el(tag, props, children) {
     var node = document.createElement(tag);
@@ -112,7 +133,6 @@
     rail.innerHTML = "";
     var inner = el("div", { class: "stories-rail-inner" });
     highlights.forEach(function (h, i) {
-      var cover = h.items[0].card_image;
       var thumb = el("button", {
         class: "story-thumb",
         type: "button",
@@ -120,10 +140,12 @@
         "aria-label": h.label + " — " + h.items.length + " stories",
         onclick: function () { openViewer(highlights, i, 0); },
       }, [
-        el("div", { class: "story-thumb-ring" }, [
-          el("div", { class: "story-thumb-img", style: "background-image:url(" + cover + ")" }),
+        el("div", {
+          class: "story-chip",
+          style: "background:" + colorFor(h.key),
+        }, [
+          el("span", { class: "story-chip-label", text: h.label }),
         ]),
-        el("span", { class: "story-thumb-label", text: h.label }),
       ]);
       inner.appendChild(thumb);
     });
@@ -191,8 +213,13 @@
       }),
     ]);
 
-    // Card image
-    var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
+    // Card — wrap the existing 4:5 PNG in a 9:16 butter frame so the
+    // viewer matches IG Story dimensions. Bottom fade overlay makes the
+    // title + CTA legible without depending on background luck.
+    var card = el("div", { class: "story-card", style: "background:" + colorFor(h.key) }, [
+      el("img", { class: "story-card-image", src: snap.card_image, alt: snap.title || "" }),
+      el("div", { class: "story-card-fade" }),
+    ]);
 
     // Bottom caption
     var bottom = el("div", { class: "story-bottom" }, [

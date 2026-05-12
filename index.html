@@ -30,7 +30,7 @@
 
     <link rel="preload" as="image" href="img/banner.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=10">
+    <link rel="stylesheet" href="css/main.css?v=12">
     <meta name="title" content="The Mutapa Times">
 <meta name="description" content="An independent business and intelligence newspaper covering Zimbabwe from the outside in — foreign press, live financial data and original analysis for the diaspora.">
 <meta name="keywords" content="The Mutapa Times, newspaper, Zimbabwean, news, Zimbabwean diaspora, Harare, Bulawayo, Gweru, Zimbabwe, business, health, politics">
@@ -295,6 +295,9 @@
     </div>
   </section>
 
+  <!-- Stories rail — IG-style highlights below the spotlight. -->
+  <div id="stories-rail" aria-label="Story highlights"></div>
+
   <!-- Takeover card slot — single sponsor square between Spotlight and main feed. -->
   <aside class="ad-slot ad-slot--takeover-card" data-slot="home-takeover" data-slot-size="600x600" aria-hidden="true"><div class="ad-slot__inner"></div></aside>
 
@@ -525,6 +528,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/stories.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {
