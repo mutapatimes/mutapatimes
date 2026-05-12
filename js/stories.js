@@ -25,8 +25,9 @@
   var INDEX_URL = "/content/articles/index.json";
 
   // Highlight order — categories shown left-to-right when present.
+  // Editorial choice: no Crime, no Politics rails.
   var CATEGORY_ORDER = [
-    "Business", "Politics", "Policy", "Tech", "Health", "Crime",
+    "Business", "Policy", "Tech", "Health",
     "Sport", "Culture", "Environment", "Education",
   ];
 
@@ -36,11 +37,9 @@
   var CATEGORY_COLORS = {
     "_latest":     "#C41E1E",  // brand red
     "Business":    "#1A1A1A",  // ink
-    "Politics":    "#7A2436",  // deep wine
     "Policy":      "#3D5A4F",  // forest
     "Tech":        "#3B5780",  // slate blue
     "Health":      "#5C7A4E",  // sage darker
-    "Crime":       "#3A2424",  // dark brown
     "Sport":       "#A8632B",  // burnt orange
     "Culture":     "#6E4582",  // muted plum
     "Environment": "#3F6A4E",  // forest green

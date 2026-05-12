@@ -1489,7 +1489,7 @@ function renderMainStories(articles) {
       { icon: "\ud83c\udf0d", text: "Foreign press coverage" },
       { icon: "\ud83d\udcc8", text: "Live market data" },
       { icon: "\ud83d\udcdd", text: "Original analysis" },
-      { icon: "\u26a1", text: "3\u00d7 briefings per week" }
+      { icon: "\u26a1", text: "2\u00d7 briefings per week" }
     ];
     pillData.forEach(function(p) {
       pills.append($('<span class="subscribe-pill">').html('<span class="subscribe-pill-icon">' + p.icon + '</span> ' + p.text));

@@ -24,7 +24,7 @@ from build_news_pages import make_slug as news_make_slug  # noqa: E402
 from twitter_mentions import all_mentions  # noqa: E402
 from build_feed_cards import card_public_url as feed_card_url  # noqa: E402
 
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 FEED_URL = f"{BASE_URL}/feed.xml"
 # Bumped from 50 → 500 so a high-cadence Metricool Autolist on Twitter
 # (~20/day) has enough fresh inventory to never starve before the next
@@ -204,6 +204,38 @@ def _swap_apostrophes(s):
 _EMAIL_RE = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
 
 
+_HASHTAG_TOPIC_MAP = {
+    "Business": ["#Business", "#ZimbabweEconomy"],
+    "Economy":  ["#Economy", "#ZimbabweEconomy"],
+    "Policy":   ["#Policy", "#ZimbabwePolicy"],
+    "Tech":     ["#Tech", "#AfricaTech"],
+    "Health":   ["#Health", "#ZimbabweHealth"],
+    "Sport":    ["#Sport", "#ZimbabweSport"],
+    "Culture":  ["#Culture", "#ZimbabweCulture"],
+    "Environment": ["#Climate", "#Environment"],
+    "Education": ["#Education", "#ZimbabweEducation"],
+    "Jobs":     ["#Jobs", "#ZimbabweJobs", "#Hiring"],
+    "Property": ["#Property", "#ZimbabweProperty", "#RealEstate"],
+    "FX":       ["#FX", "#ZimbabweFX", "#SendMoneyToZimbabwe"],
+    "Weather":  ["#Weather", "#ZimbabweWeather"],
+}
+
+def _hashtags_for(category, title=""):
+    """Produce a small editorial-grade hashtag set per item: always
+    #Zimbabwe, a category tag, plus a couple of topic-specific tags.
+    Used by Metricool's RSS autolist via the description field."""
+    tags = ["#Zimbabwe"]
+    cat = (category or "").strip()
+    extras = _HASHTAG_TOPIC_MAP.get(cat, [])
+    for t in extras:
+        if t not in tags:
+            tags.append(t)
+    if "#ZimbabweNews" not in tags:
+        tags.append("#ZimbabweNews")
+    # De-dupe, cap at 5
+    return " ".join(tags[:5])
+
+
 def _strip_emails(s):
     """Source descriptions sometimes embed reporter contact addresses
     ('By X. Y. xy@herald.co.zw') — they look spammy when the feed is
@@ -268,7 +300,7 @@ def build_rss(items):
             "    <item>\n"
             f"      <title>{escape(title_text)}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
-            f"      <description>{escape(_swap_apostrophes(_strip_emails(item.get('description', ''))))}</description>\n"
+            f"      <description>{escape(_swap_apostrophes(_strip_emails(item.get('description', ''))) + ' ' + _hashtags_for(item.get('category', ''), item.get('title', '')))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
             f'      <guid isPermaLink="true">{escape(item["link"])}</guid>\n'
             f"{cat}{author}{image}"

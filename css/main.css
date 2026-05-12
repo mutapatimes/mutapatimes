@@ -6041,3 +6041,63 @@ body.story-viewer-open { overflow: hidden; }
   .footer-social-row a { width: 38px; height: 38px; }
   .footer-social-row svg { width: 16px; height: 16px; }
 }
+
+/* Footer Follow column — text-only social list, two columns on desktop. */
+.footer-social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 4px;
+}
+.footer-social-list li { margin: 0; }
+.footer-social-list a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.86rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  display: inline-block;
+  padding: 2px 0;
+}
+.footer-social-list a:hover { color: var(--accent); }
+@media (max-width: 480px) {
+  .footer-social-list { grid-template-columns: 1fr 1fr; }
+}
+
+/* Small page meta footnote — sits just above the global footer.
+   Replaces the noisy eyebrow + meta that used to crowd the hero. */
+.page-meta-footnote {
+  max-width: 920px;
+  margin: 56px auto 16px;
+  padding: 18px 28px 0;
+  border-top: 1px solid var(--rule);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 1.55;
+}
+.page-meta-footnote a {
+  color: var(--text-mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+.page-meta-footnote a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+/* PWA standalone mode — when the site is installed to the home screen
+   on iOS, there's no browser chrome and the status bar overlaps the
+   masthead. Push the paper down by the safe-area inset so the wordmark
+   sits below the status bar. */
+@media all and (display-mode: standalone) {
+  .paper { padding-top: calc(28px + env(safe-area-inset-top, 0px)); }
+}
+@supports (-webkit-touch-callout: none) {
+  /* Same fix for iOS Safari before display-mode:standalone landed. */
+  @media (display-mode: standalone) {
+    .paper { padding-top: calc(28px + env(safe-area-inset-top, 0px)); }
+  }
+}

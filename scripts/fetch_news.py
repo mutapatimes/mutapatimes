@@ -40,9 +40,9 @@ CATEGORIES = {
     "business": [
         "https://news.google.com/rss/search?q=Zimbabwe+business+OR+Zimbabwe+economy+OR+Zimbabwe+finance+OR+Zimbabwe+investment+OR+Zimbabwe+mining&hl=en&gl=US&ceid=US:en",
     ],
-    "politics": [
-        "https://news.google.com/rss/search?q=Zimbabwe+politics+OR+Zimbabwe+government+OR+Zimbabwe+ZANU+OR+Zimbabwe+election+OR+Zimbabwe+parliament+OR+Zimbabwe+Mnangagwa&hl=en&gl=US&ceid=US:en",
-    ],
+    # NOTE: Crime + Politics intentionally excluded — editorial choice not
+    # to cover those beats. See _infer_cms_category(): any article inferred
+    # into Crime/Politics is dropped at import time.
     "policy": [
         "https://news.google.com/rss/search?q=Zimbabwe+policy+OR+Zimbabwe+regulation+OR+Zimbabwe+law+OR+Zimbabwe+reform+OR+Zimbabwe+sanctions+OR+Zimbabwe+SADC&hl=en&gl=US&ceid=US:en",
     ],
@@ -1054,18 +1054,34 @@ def update_archive(new_articles):
 ### ---------------------------------------------------------------------------
 
 # Category inference rules — mirrors js/config.js CATEGORY_RULES
+# Editorial choice: no Crime, no Politics. These keyword sets exist so we
+# can recognise an article that drifts into those beats and DROP it at
+# import time (see write_articles_to_cms).
+_BANNED_CATEGORY_KEYWORDS = {
+    "Crime": ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"],
+    "Politics": ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"],
+}
+
 _CMS_CATEGORY_RULES = [
     ("Business", ["economy", "economic", "business", "trade", "inflation", "currency", "dollar", "market", "stock", "bank", "finance", "investment", "gdp", "revenue", "profit", "company", "mining", "export", "import", "tax", "budget", "debt", "imf", "reserve", "industry", "commerce", "entrepreneur"]),
-    ("Politics", ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party", "vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"]),
     ("Policy", ["policy", "regulation", "reform", "legislation", "bill", "amendment", "sanctions", "sadc", "african union", "treaty", "compliance", "governance", "mandate", "directive", "statutory"]),
     ("Tech", ["technology", "digital", "internet", "mobile", "app", "startup", "cyber", "software", "ai ", "telecom", "econet", "telecash", "fintech", "innovation"]),
     ("Health", ["health", "hospital", "disease", "covid", "cholera", "malaria", "medical", "doctor", "vaccine", "outbreak", "patient", "clinic", "drug", "treatment", "who", "death toll", "epidemic"]),
-    ("Crime", ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"]),
     ("Sport", ["cricket", "football", "soccer", "rugby", "match", "score", "championship", "tournament", "athlete", "stadium", "coach", "team", "league", "olympic", "fifa", "icc", "qualifier", "wicket", "goal"]),
     ("Culture", ["music", "film", "artist", "culture", "festival", "concert", "album", "entertainment", "award", "celebrity", "dance", "theatre", "theater"]),
     ("Environment", ["climate", "drought", "flood", "wildlife", "conservation", "environment", "cyclone", "rainfall", "dam", "water crisis", "deforestation", "national park", "safari", "poach"]),
     ("Education", ["school", "university", "student", "teacher", "education", "exam", "graduate", "scholarship", "literacy"]),
 ]
+
+
+def _is_banned_topic(title, description=""):
+    """True when an article looks like Crime or Politics. Used to skip
+    imports — those beats are off the editorial menu."""
+    t = " " + (title or "").lower() + " " + (description or "").lower() + " "
+    for words in _BANNED_CATEGORY_KEYWORDS.values():
+        if any(w in t for w in words):
+            return True
+    return False
 
 
 def _slugify(text, max_len=60):
@@ -1164,6 +1180,9 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
         if not url or not title:
             continue
         if url in existing_urls:
+            continue
+        # Editorial filter: skip Crime + Politics beats entirely.
+        if _is_banned_topic(title, desc):
             continue
 
         # Parse date for slug and frontmatter
