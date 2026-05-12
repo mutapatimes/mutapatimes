@@ -23,7 +23,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=10">
+    <link rel="stylesheet" href="css/main.css?v=12">
     <meta name="title" content="Articles | The Mutapa Times">
 <meta name="description" content="Original articles, analysis, and opinion from The Mutapa Times covering Zimbabwe business, politics, technology, and culture.">
 <meta name="keywords" content="The Mutapa Times, articles, Zimbabwe, opinion, analysis, business, politics">
@@ -116,6 +116,9 @@
     <div class="articles-page">
       <h2 class="articles-page-title">Articles</h2>
       <p class="articles-page-desc">Wire reports, analysis, and opinion curated by The Mutapa Times.</p>
+
+      <!-- Stories rail — IG-style highlights using the cards we already render. -->
+      <div id="stories-rail" aria-label="Story highlights"></div>
 
       <!-- Search, filter & sort controls -->
       <div class="articles-toolbar">
@@ -233,6 +236,7 @@
 
   <script defer src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="js/articles.js"></script>
+  <script defer src="js/stories.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {

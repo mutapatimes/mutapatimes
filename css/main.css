@@ -5505,3 +5505,214 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   .ad-slot--rail .ad-slot__inner { min-height: 240px; }
   .ad-slot--strip .ad-slot__inner { font-size: 0.92rem; padding: 12px 16px; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+ * Stories — IG-style highlight rail + fullscreen viewer.
+ * Loaded only on /articles. The cards already render at 1080×1350
+ * on butter, so the viewer just centres them on black like IG does
+ * for non-9:16 content.
+ * ───────────────────────────────────────────────────────────── */
+#stories-rail {
+  max-width: 1080px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+}
+.stories-rail-inner {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 16px 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.stories-rail-inner::-webkit-scrollbar { display: none; }
+
+.story-thumb {
+  flex-shrink: 0;
+  width: 80px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  scroll-snap-align: start;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.story-thumb-ring {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  padding: 3px;
+  background: conic-gradient(from 215deg, #C41E1E, #1A1A1A, #C41E1E);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.15s ease;
+}
+.story-thumb:hover .story-thumb-ring,
+.story-thumb:focus-visible .story-thumb-ring { transform: scale(1.04); }
+.story-thumb-img {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background-color: #F5E8C8;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+}
+.story-thumb-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 88px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Fullscreen viewer ────────────────────────────────────── */
+body.story-viewer-open { overflow: hidden; }
+.story-viewer {
+  position: fixed; inset: 0;
+  background: #000;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Progress segments */
+.story-progress {
+  position: absolute;
+  top: 12px; left: 16px; right: 16px;
+  display: flex;
+  gap: 4px;
+  z-index: 3;
+  pointer-events: none;
+}
+.story-progress-seg {
+  flex: 1;
+  height: 3px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.story-progress-fill {
+  height: 100%; width: 0%;
+  background: #fff;
+}
+.story-progress-seg.is-done .story-progress-fill { width: 100%; }
+
+/* Top bar */
+.story-top {
+  position: absolute;
+  top: 24px; left: 20px; right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  color: #fff;
+}
+.story-top-label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.story-close {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  width: 36px; height: 36px;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+.story-close:hover { opacity: 1; }
+
+/* Card */
+.story-card {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  display: block;
+  background: #F5E8C8;
+}
+
+/* Tap zones — left third for back, right two-thirds for forward.
+   Sit above the card so taps register, but below the top bar / bottom
+   caption / close button so those remain clickable. */
+.story-tap {
+  position: absolute;
+  top: 0; bottom: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+.story-tap--left { left: 0; width: 33%; }
+.story-tap--right { right: 0; width: 67%; }
+
+/* Bottom caption — sits on the black margin below the card */
+.story-bottom {
+  position: absolute;
+  left: 24px; right: 24px; bottom: 28px;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.story-bottom-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C41E1E;
+  margin: 0 0 6px;
+}
+.story-bottom-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 14px;
+  max-width: 540px;
+  margin-left: auto; margin-right: auto;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+.story-bottom-cta {
+  pointer-events: auto;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1A1A1A !important;
+  background: #F5E8C8;
+  padding: 10px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.story-bottom-cta:hover { transform: translateY(-1px); text-decoration: none; }
+
+@media (max-width: 640px) {
+  #stories-rail { padding: 0 16px; }
+  .story-thumb { width: 72px; }
+  .story-thumb-ring { width: 64px; height: 64px; }
+  .story-thumb-label { font-size: 0.68rem; max-width: 76px; }
+  .story-card { max-height: 78vh; }
+}

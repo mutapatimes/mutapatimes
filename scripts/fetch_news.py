@@ -1215,6 +1215,10 @@ spotlight: false
             f.write(frontmatter)
 
         if slug not in indexed_slugs:
+            # Card path matches build_feed_cards.py's hash for CMS articles
+            # (md5 of the canonical mutapatimes.com URL).
+            canonical = f"https://www.mutapatimes.com/articles/{date_prefix}-{slug}.html"
+            card_hash = hashlib.md5(canonical.encode("utf-8")).hexdigest()[:12]
             index.append({
                 "slug": f"{date_prefix}-{slug}",
                 "title": title,
@@ -1224,6 +1228,7 @@ spotlight: false
                 "summary": desc[:280] if desc else "",
                 "source_type": "wire",
                 "image": image,
+                "card_image": f"/img/cards/news/{card_hash}.png",
                 "featured": False,
             })
             indexed_slugs.add(slug)
