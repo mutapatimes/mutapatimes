@@ -571,6 +571,222 @@ def write_economy_feed(base):
     return True
 
 
+# ─────────────────────────────────────────────────────────────
+# Business + economics feed — strictly Zimbabwe business, finance,
+# investment, mining and trade news. Pulls from data/business.json
+# and CMS articles tagged Business. Each item ships with the brand
+# headline card so the Metricool autolist posts on-brand previews.
+#
+# Politics, election coverage, celebrity gossip and similar are kept
+# OUT — even when they slip into the upstream "Business" tag — via a
+# small deny-list of title keywords.
+# ─────────────────────────────────────────────────────────────
+BUSINESS_LANDING_FILES = ("business.json",)
+BUSINESS_CMS_CATEGORIES = {"business"}
+
+# Upstream CMS sources tag a lot of crime + politics as "Business",
+# so the category alone is not a reliable filter. We require a positive
+# business/economics keyword match AND no negative-signal match.
+BUSINESS_POSITIVE_KEYWORDS = (
+    # mining & commodities
+    "mining", "mine ", "miner", "mineral", "lithium", "gold", "platinum",
+    "diamond", "tobacco", "cotton", "iron ore", "chrome", "nickel", "coal",
+    # macro / currency
+    "inflation", "currency", "exchange rate", "zwg", "zig", "usd ",
+    "rbz", "reserve bank", "central bank", "monetary policy",
+    # markets
+    "stock", "shares", "zse", "vfex", "ipo", "listing", "delisting",
+    "share price",
+    # capital
+    "investment", "investor", "funding", "capital", "raise", "private equity",
+    "venture capital", "fundraise",
+    # corporate
+    "company", " firm ", "corporation", "earnings", "profit", "loss-making",
+    "revenue", "results", "dividend", "pvt ltd", "(private)",
+    # macro
+    "economy", "economic", "gdp", "growth rate", "recession",
+    "budget", "fiscal", "tax", "treasury", "deficit", "surplus",
+    # trade
+    "exports", "imports", "trade ", "tariff", "balance of payments",
+    # banking / debt
+    "loan", "credit", "mortgage", "bond ", "debt restructur",
+    "creditor", "default",
+    # institutions
+    "imf", "world bank", "afdb", "afreximbank", "boz", "sadc trade",
+    # energy / utility prices
+    "gas price", "fuel price", "electricity tariff", "petrol price",
+    "energy sector",
+    # industrial
+    "factory", "plant", "manufactur", "industrial", "production line",
+    # deals
+    "acquisition", "merger", "partnership", "joint venture",
+    "memorandum of understanding",
+    # workforce
+    "entrepreneur", "startup", "sme ",
+    # agriculture (business angle)
+    "harvest", "tobacco auction", "agricultur",
+    # property / construction
+    "real estate", "construction", "infrastructure",
+    # commerce
+    "retail", "wholesale", "supplier", "distributor",
+    # remittances
+    "remittance",
+)
+
+NEGATIVE_SIGNALS = (
+    # crime
+    "stab", "stabb", "murder", "killed", "killing",
+    "fatal", " dead", "death", "deaths", "deadly",
+    "arrest of", "jailed", "imprison", "prison",
+    "sentence", "sentenced", "rape", "raped", "paedophile",
+    "brawl", "assault", "robbery", "burglary", "kidnap",
+    # disasters
+    "collapse leaves",
+    # politics
+    "coup", " election", "ballot",
+    "regime", "dictator", "opposition party", "ruling party",
+    # personal
+    "wedding", "divorce", "celebrity", "scandal",
+    "elite detachment", "first lady", "mnangagwa family",
+    # geopolitics noise
+    "iran", "putin", "biden", "trump", " gaza ", "ceasefire",
+    "war crime", "global conflicts", "joint commission",
+    "diplomatic relations", "security scare",
+    # local govt / civic minutiae
+    "burial", "cemetery", "funeral",
+    # filler / opinion
+    "kid president",
+)
+
+
+def _looks_business(title, description=""):
+    """Return True if the title/description has at least one positive
+    business signal AND no negative signal. Used as a defensive filter
+    on top of the upstream category tag."""
+    blob = f"{title or ''}  {description or ''}".lower()
+    if any(neg in blob for neg in NEGATIVE_SIGNALS):
+        return False
+    return any(pos in blob for pos in BUSINESS_POSITIVE_KEYWORDS)
+
+
+def collect_business_landing_articles(base):
+    """Same shape as collect_news_landing_articles but limited to
+    the business + policy categories."""
+    items = []
+    data_dir = os.path.join(base, "data")
+    seen_source_urls = set()
+    for fname in BUSINESS_LANDING_FILES:
+        path = os.path.join(data_dir, fname)
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        cat_label = fname.replace(".json", "").title()
+        for key in ("articles", "more"):
+            for a in data.get(key) or []:
+                if not isinstance(a, dict):
+                    continue
+                source_url = (a.get("url") or "").strip()
+                title = (a.get("title") or "").strip()
+                if not source_url or not title:
+                    continue
+                if source_url in seen_source_urls:
+                    continue
+                seen_source_urls.add(source_url)
+                dt = _parse_date(a.get("publishedAt") or a.get("published_at") or "")
+                if not _is_fresh(dt):
+                    continue
+                desc = (a.get("description") or "").strip()
+                if not _looks_business(title, desc):
+                    continue
+                source_name = _normalize_source(a.get("source"))
+                landing = (
+                    f"{BASE_URL}/news/"
+                    f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}.html"
+                )
+                if source_name and source_name.lower() not in desc.lower():
+                    desc = f"{desc} (via {source_name})" if desc else f"{title} — via {source_name}"
+                items.append({
+                    "title": title,
+                    "link": landing,
+                    "description": desc,
+                    "pubDate": dt,
+                    "category": cat_label,
+                    "author": source_name or None,
+                    "image": feed_card_url(landing),
+                })
+    return items
+
+
+def collect_business_cms_articles(base):
+    """CMS articles whose frontmatter category is Business. A deny-list
+    of political/celebrity title keywords filters mistagged upstream
+    content (which is common in Zimbabwe news sources)."""
+    out = []
+    for item in collect_cms_articles(base):
+        cat = (item.get("category") or "").strip().lower()
+        if cat not in BUSINESS_CMS_CATEGORIES:
+            continue
+        if not _looks_business(item.get("title", ""), item.get("description", "")):
+            continue
+        out.append(item)
+    return out
+
+
+def write_business_feed(base):
+    """Write /business-feed.xml — a strictly Zimbabwe business and
+    economic-policy feed for a dedicated Metricool autolist. Every
+    item links to a mutapatimes.com landing page; every item carries
+    the brand headline card as enclosure + media:content, so social
+    previews are on-brand regardless of source."""
+    cms_items = collect_business_cms_articles(base)
+    landing_items = collect_business_landing_articles(base)
+    # CMS first so its richer body wins on title-collision dedupe.
+    raw = cms_items + landing_items
+    seen_links = set()
+    seen_titles = set()
+    unique = []
+    for item in raw:
+        link = item["link"]
+        t_norm = _norm_title(item.get("title", ""))
+        if link in seen_links or (t_norm and t_norm in seen_titles):
+            continue
+        seen_links.add(link)
+        if t_norm:
+            seen_titles.add(t_norm)
+        unique.append(item)
+
+    if not unique:
+        print("  business-feed.xml SKIPPED — no eligible business/policy items")
+        return False
+
+    rss = build_rss(unique)
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Zimbabwe Business &amp; Economic Policy</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/business-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Strictly Zimbabwe business, finance, mining, investment and economic-policy stories — curated from foreign press and policy press. Each item ships with a branded headline card for social autolists.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "business-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  business-feed.xml written ({len(unique)} items)")
+    return True
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -601,6 +817,7 @@ def main():
     write_fx_feed(base)
     write_weather_feed(base)
     write_economy_feed(base)
+    write_business_feed(base)
 
 
 if __name__ == "__main__":
