@@ -25,14 +25,18 @@ jobs:
         run: python3 scripts/build_property_cards.py
         timeout-minutes: 8
 
-      - name: Regenerate feeds so properties-feed.xml picks up new listings
+      - name: Render 9:16 story cards (for the mixed stories-feed)
+        run: python3 scripts/build_story_cards.py
+        timeout-minutes: 8
+
+      - name: Regenerate feeds so properties-feed.xml + stories-feed.xml pick up new listings
         run: python3 scripts/generate_rss.py
 
       - name: Commit updated listings + cards + feeds
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/property-listings.json img/cards/properties/ \
-                  properties-feed.xml feed.xml fx-feed.xml weather-feed.xml \
+          git add data/property-listings.json img/cards/properties/ img/cards/stories/ \
+                  properties-feed.xml stories-feed.xml feed.xml fx-feed.xml weather-feed.xml \
                   economy-feed.xml business-feed.xml jobs-feed.xml
           git diff --cached --quiet || (git commit -m "Update property listings + cards + feeds [automated]" && git push)

@@ -37,6 +37,9 @@ jobs:
       - name: Render branded card per feed item (cached by URL hash)
         run: python3 scripts/build_feed_cards.py
 
+      - name: Render 9:16 story cards (mixed business + property + jobs)
+        run: python3 scripts/build_story_cards.py
+
       - name: Generate sitemap and RSS feeds
         run: |
           python3 scripts/generate_sitemap.py
@@ -46,7 +49,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ content/articles/ news/ articles/ img/cards/news/ sitemap.xml feed.xml fx-feed.xml weather-feed.xml business-feed.xml jobs-feed.xml properties-feed.xml
+          git add data/ content/articles/ news/ articles/ img/cards/news/ img/cards/stories/ \
+                  sitemap.xml feed.xml fx-feed.xml weather-feed.xml business-feed.xml \
+                  jobs-feed.xml properties-feed.xml stories-feed.xml
           git diff --cached --quiet || (git commit -m "Update news data + feed cards [automated]" && git push)
 
       - name: Send push notification for breaking news

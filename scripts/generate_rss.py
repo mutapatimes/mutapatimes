@@ -1082,6 +1082,116 @@ def write_properties_feed(base):
 
 
 # ─────────────────────────────────────────────────────────────
+# Stories feed — mixed business + property + jobs, each item shipping
+# a 1080×1920 Instagram-Story-format card with a "Read more on Mutapa
+# Times" CTA. Designed for a Metricool autolist that posts to IG/FB
+# Stories specifically. Packed — up to 60 items, interleaved by date.
+# ─────────────────────────────────────────────────────────────
+STORY_CARDS_DIR = "img/cards/stories"
+
+
+def _story_card_url(canonical_url):
+    """Match build_story_cards.card_public_url — md5(url)[:12] + .png."""
+    h = re.sub(r"[^0-9a-f]", "", _md5_hex(canonical_url))[:12]
+    return f"{BASE_URL}/img/cards/stories/{h}.png"
+
+
+def collect_stories_items(base):
+    """Mix business CMS articles + jobs + property listings into one
+    packed feed. Each item carries the 9:16 story-card image as
+    enclosure + media:content/thumbnail."""
+    items = []
+    pub_now = _cat_day_start_utc()
+
+    # 1) Business / Policy / Tech / Economy / Environment CMS articles
+    idx_path = os.path.join(base, "content", "articles", "index.json")
+    if os.path.exists(idx_path):
+        try:
+            entries = json.load(open(idx_path))
+        except (json.JSONDecodeError, OSError):
+            entries = []
+        keep = {"Business", "Policy", "Tech", "Economy", "Environment"}
+        for e in entries:
+            if not isinstance(e, dict):
+                continue
+            slug = e.get("slug")
+            cat = (e.get("category") or "").strip()
+            title = (e.get("title") or "").strip()
+            if not slug or not title or cat not in keep:
+                continue
+            url = f"{BASE_URL}/articles/{slug}"
+            desc = (e.get("summary") or "").strip()
+            author = (e.get("author") or "").strip()
+            if author and author.lower() not in desc.lower():
+                desc = (desc + " " if desc else "") + f"via {author}"
+            # Parse date for sorting
+            dt = _parse_date(e.get("date", "")) if "_parse_date" in globals() else None
+            items.append({
+                "title": title,
+                "link": url,
+                "description": desc,
+                "pubDate": dt or pub_now,
+                "category": cat,
+                "author": author or None,
+                "image": _story_card_url(url),
+            })
+
+    # 2) External jobs + internships
+    jobs_items = collect_job_items(base)
+    for j in jobs_items:
+        # Internship items already link to /jobs#slug, external jobs
+        # link to source. Either way, use the URL as the cache key for
+        # the story card.
+        j2 = dict(j)
+        j2["image"] = _story_card_url(j["link"])
+        j2["category"] = "Jobs"
+        items.append(j2)
+
+    # 3) Property listings
+    prop_items = collect_property_items(base)
+    for p in prop_items:
+        p2 = dict(p)
+        p2["image"] = _story_card_url(p["link"])
+        p2["category"] = "Property"
+        items.append(p2)
+
+    # Sort newest first, cap to 60 (packed but not unbounded)
+    items.sort(key=lambda x: x.get("pubDate") or pub_now, reverse=True)
+    return items[:60]
+
+
+def write_stories_feed(base):
+    """Write /stories-feed.xml — the mixed business + property + jobs
+    Instagram-Story autolist feed. Each item carries a 9:16 story
+    card with a 'Read more on Mutapa Times' CTA baked in."""
+    items = collect_stories_items(base)
+    if not items:
+        print("  stories-feed.xml SKIPPED — no items available")
+        return False
+
+    rss = build_rss(items)
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Zimbabwe Stories</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/stories-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>",
+        1,
+    )
+
+    out = os.path.join(base, "stories-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  stories-feed.xml written ({len(items)} items, mixed business + property + jobs)")
+    return True
+
+
+# ─────────────────────────────────────────────────────────────
 # Link-in-bio grid — data/bio-grid.json drives /links.html, the
 # Linktree-style page we put in the Instagram bio. Pulls the latest
 # items from every feed source so a visitor can find the card image
@@ -1203,6 +1313,7 @@ def main():
     write_business_feed(base)
     write_jobs_feed(base)
     write_properties_feed(base)
+    write_stories_feed(base)
     write_bio_grid(base)
 
 
