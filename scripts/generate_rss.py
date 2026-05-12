@@ -1019,6 +1019,95 @@ def write_properties_feed(base):
     return True
 
 
+# ─────────────────────────────────────────────────────────────
+# Link-in-bio grid — data/bio-grid.json drives /links.html, the
+# Linktree-style page we put in the Instagram bio. Pulls the latest
+# items from every feed source so a visitor can find the card image
+# they saw on the Instagram grid and tap through to read it.
+# ─────────────────────────────────────────────────────────────
+def _bio_tile(item, kind):
+    """Reduce a full feed item to the minimal payload the bio grid
+    page needs — image, link, title, category. Drop pubDate as
+    Python datetime so the JSON is serialisable."""
+    pub = item.get("pubDate")
+    pub_iso = pub.isoformat() if pub else None
+    return {
+        "kind": kind,                        # news, economy, fx, weather, jobs, property
+        "title": item.get("title", ""),
+        "link": item.get("link", ""),
+        "image": item.get("image", ""),
+        "pubDate": pub_iso,
+        "category": item.get("category", ""),
+    }
+
+
+def write_bio_grid(base):
+    """Write data/bio-grid.json — a unified, sorted feed for the
+    link-in-bio landing page (/links.html)."""
+    tiles = []
+
+    # 1. Daily dedicated cards (FX, weather, economy) — pin these up top
+    for builder, kind in (
+        (build_economy_snapshot_item, "economy"),
+        (build_fx_snapshot_item, "fx"),
+        (build_weather_snapshot_item, "weather"),
+    ):
+        try:
+            it = builder(base)
+        except Exception:
+            it = None
+        if it:
+            tiles.append(_bio_tile(it, kind))
+
+    # 2. News (CMS + news landing) — the bulk of the IG grid
+    seen = set()
+    for it in collect_cms_articles(base) + collect_news_landing_articles(base):
+        link = it.get("link") or ""
+        if not link or link in seen:
+            continue
+        seen.add(link)
+        tiles.append(_bio_tile(it, "news"))
+
+    # 3. Jobs + Properties — surface the latest of each so visitors
+    # can tap from a job/property card on IG to the source
+    for it in collect_job_items(base):
+        link = it.get("link") or ""
+        if link in seen:
+            continue
+        seen.add(link)
+        tiles.append(_bio_tile(it, "jobs"))
+
+    for it in collect_property_items(base):
+        link = it.get("link") or ""
+        if link in seen:
+            continue
+        seen.add(link)
+        tiles.append(_bio_tile(it, "property"))
+
+    # Newest first; daily snapshots already at the top because their
+    # pubDate is anchored to today's CAT midnight.
+    tiles.sort(
+        key=lambda t: t.get("pubDate") or "",
+        reverse=True,
+    )
+
+    # Cap at 60 so the bio page loads quickly. The IG grid only
+    # shows ~12-30 recent posts anyway; 60 is plenty of depth.
+    tiles = tiles[:60]
+
+    payload = {
+        "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "count": len(tiles),
+        "tiles": tiles,
+    }
+    out = os.path.join(base, "data", "bio-grid.json")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"  data/bio-grid.json written ({len(tiles)} tiles)")
+    return True
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -1052,6 +1141,7 @@ def main():
     write_business_feed(base)
     write_jobs_feed(base)
     write_properties_feed(base)
+    write_bio_grid(base)
 
 
 if __name__ == "__main__":

@@ -41,11 +41,27 @@
       type: 'Internship · 3 months · 3 days/week',
       summary: 'Grow and shape our presence across the major social ' +
         'platforms. Spot trends, pitch social-first stories, try ' +
-        'new formats. Bring your own ideas — rolling intake, ' +
-        'always recruiting.',
+        'new formats. Bring your own ideas — rolling intake.',
       url: mt('Social Intern', 'My social handles / portfolio links:'),
       source: 'Mutapa Times',
       _internship: true,
+      _detail: {
+        whatYouDo: [
+          'Help grow our presence across the major social platforms — every channel we publish to.',
+          'Reply, repost, and grow our audience among Zimbabweans at home and in the diaspora.',
+          'Spot trends and pitch social-first stories that fit the brand.',
+          'Refine the brand voice in captions and reply copy — tight, witty, never preachy.',
+          'Track engagement and tell us what worked each week.',
+          'Bring entirely new ideas — formats, partnerships, content series.',
+        ],
+        whoWeWant: [
+          'You live on social — you know the formats, the culture, the timing.',
+          'Sharp written voice in English. Shona or Ndebele a plus.',
+          'Curiosity about Zimbabwean business, economics and culture.',
+          'Self-starter, comfortable working async across timezones.',
+          'No formal experience required — bring your own portfolio of work.',
+        ],
+      },
     },
     {
       title: 'Editor Intern',
@@ -59,6 +75,22 @@
       url: mt('Editor Intern', 'Three writing samples (links or attached):'),
       source: 'Mutapa Times',
       _internship: true,
+      _detail: {
+        whatYouDo: [
+          "Pitch, draft and edit original explainers, op-eds and analysis.",
+          "Fact-check stories before they hit the homepage.",
+          "Maintain editorial standards — headlines, summaries, structure.",
+          "Help shape the newsletter and the weekly editorial agenda.",
+          "Find new angles on Zimbabwean stories no one else is telling.",
+        ],
+        whoWeWant: [
+          "Strong writing in English — clear, well-structured, evidence-led.",
+          "Comfortable with basic CMS workflow (we'll show you ours).",
+          "Reads widely across Zimbabwean and African press.",
+          "Opinionated when it matters; open to feedback and fast turnarounds.",
+          "Bring fresh editorial ideas — formats, columns, story shapes.",
+        ],
+      },
     },
     {
       title: 'Data Intern',
@@ -71,6 +103,22 @@
       url: mt('Data Intern', "A repo, notebook or dataset I'm proud of:"),
       source: 'Mutapa Times',
       _internship: true,
+      _detail: {
+        whatYouDo: [
+          "Turn Zimbabwean public data into clear, visual stories.",
+          "Extend the live economy briefing with new chapters and angles.",
+          "Maintain the data pipelines behind FX, jobs, property and economy pages.",
+          "Prototype new ways to make numbers readable — charts, infographics, cards.",
+          "Pitch data-led stories we haven't told yet.",
+        ],
+        whoWeWant: [
+          "Comfortable with Python — CSV/JSON wrangling, basic scripts.",
+          "Reads economic statistics for fun. Basic statistical literacy.",
+          "Knowledge of Zimbabwe's data landscape is a strong plus.",
+          "Bonus: a chart library, or basic web (HTML/CSS/JS).",
+          "Quietly accurate — we publish the source for every number.",
+        ],
+      },
     },
   ];
 
@@ -112,21 +160,71 @@
     if (j.salary) metaLine.push('<span class="job-card-pill job-card-pill--pay">' + escapeHtml(j.salary) + '</span>');
     if (j.expires) metaLine.push('<span class="job-card-pill job-card-pill--time">Closes ' + escapeHtml(j.expires) + '</span>');
 
+    var head = '<div class="job-card-head">' + logo +
+        '<div class="job-card-headtext">' +
+          '<h3 class="job-card-title">' + escapeHtml(j.title) + '</h3>' +
+          (j.company ? '<p class="job-card-company">' + escapeHtml(j.company) + '</p>' : '') +
+        '</div>' +
+      '</div>';
+    var summaryHtml = j.summary ? '<p class="job-card-summary">' + escapeHtml(j.summary) + '</p>' : '';
+    var metaHtml = metaLine.length ? '<div class="job-card-meta">' + metaLine.join('') + '</div>' : '';
+    var postedHtml = j.posted ? '<p class="job-card-posted">Posted ' + escapeHtml(j.posted) + ' ago · ' + escapeHtml(j.source || '') + '</p>' : '';
+
+    // Mutapa Times internships are expandable in-place; scraped jobs are
+    // simple <a> cards that open the source posting in a new tab.
+    if (j._internship && j._detail) {
+      var detail = j._detail;
+      var listHtml = function (items) {
+        return (items || []).map(function (b) {
+          return '<li>' + escapeHtml(b) + '</li>';
+        }).join('');
+      };
+      var expanded =
+        '<div class="job-card-expanded">' +
+          '<p class="job-card-expanded-label">What you’ll do</p>' +
+          '<ul class="job-card-bullets">' + listHtml(detail.whatYouDo) + '</ul>' +
+          '<p class="job-card-expanded-label">Who we’re looking for</p>' +
+          '<ul class="job-card-bullets">' + listHtml(detail.whoWeWant) + '</ul>' +
+          '<a class="job-card-apply" href="' + escapeHtml(j.url) + '">Apply by email →</a>' +
+        '</div>';
+      return (
+        '<div class="job-card job-card--intern" data-intern="1" tabindex="0" role="button" aria-expanded="false">' +
+          head + summaryHtml + metaHtml + postedHtml + expanded +
+          '<button class="job-card-toggle" type="button" aria-hidden="true">Read more &amp; apply</button>' +
+        '</div>'
+      );
+    }
+
     return (
       '<a class="job-card" href="' + escapeHtml(j.url) +
       '" target="_blank" rel="noopener" data-source="' + escapeHtml(j.source || '') + '">' +
-        '<div class="job-card-head">' + logo +
-          '<div class="job-card-headtext">' +
-            '<h3 class="job-card-title">' + escapeHtml(j.title) + '</h3>' +
-            (j.company ? '<p class="job-card-company">' + escapeHtml(j.company) + '</p>' : '') +
-          '</div>' +
-        '</div>' +
-        (j.summary ? '<p class="job-card-summary">' + escapeHtml(j.summary) + '</p>' : '') +
-        (metaLine.length ? '<div class="job-card-meta">' + metaLine.join('') + '</div>' : '') +
-        (j.posted ? '<p class="job-card-posted">Posted ' + escapeHtml(j.posted) + ' ago · ' + escapeHtml(j.source || '') + '</p>' : '') +
+        head + summaryHtml + metaHtml + postedHtml +
       '</a>'
     );
   }
+
+  // Click anywhere on an internship card (other than the apply link)
+  // toggles the expanded state. Delegated so the listener survives
+  // grid re-renders on filter changes.
+  function onGridClick(e) {
+    var apply = e.target.closest && e.target.closest('.job-card-apply');
+    if (apply) return;             // let the mailto link fire normally
+    var card = e.target.closest && e.target.closest('.job-card--intern');
+    if (!card) return;
+    e.preventDefault();
+    var open = card.classList.toggle('expanded');
+    card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var btn = card.querySelector('.job-card-toggle');
+    if (btn) btn.textContent = open ? 'Hide details' : 'Read more & apply';
+  }
+  grid.addEventListener('click', onGridClick);
+  grid.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var card = e.target.closest && e.target.closest('.job-card--intern');
+    if (!card) return;
+    e.preventDefault();
+    onGridClick(e);
+  });
 
   function populateFilters(jobs) {
     var locations = {};

@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Mutapa Times — Links</title>
+    <link rel="canonical" href="https://www.mutapatimes.com/links.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="description" content="One place for everything The Mutapa Times publishes — economy, FX, jobs, property, newsletter, and the latest cards posted to our social feeds.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Mutapa Times — Links">
+    <meta property="og:description" content="One place for everything The Mutapa Times publishes — economy, FX, jobs, property, newsletter, and our latest cards.">
+    <meta property="og:image" content="https://www.mutapatimes.com/img/banner.png">
+    <meta property="og:url" content="https://www.mutapatimes.com/links.html">
+    <meta property="og:site_name" content="The Mutapa Times">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mutapatimes">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css?v=9">
+  </head>
+
+  <body class="links-body">
+
+    <main class="links-page">
+
+      <!-- Brand header — centred, narrow column, Linktree-style -->
+      <header class="links-header">
+        <a href="index.html" class="links-mark">THE MUTAPA TIMES</a>
+        <p class="links-tagline">Zimbabwe outside-in.</p>
+        <p class="links-handle">@mutapatimes &middot; mutapatimes.com</p>
+      </header>
+
+      <!-- Primary nav — five sections + subscribe -->
+      <nav class="links-nav" aria-label="Site sections">
+        <a class="links-nav-pill" href="economy.html">
+          <span class="links-nav-pill-label">Economy</span>
+          <span class="links-nav-pill-sub">GDP &middot; trade &middot; the missing money</span>
+        </a>
+        <a class="links-nav-pill" href="fx.html">
+          <span class="links-nav-pill-label">FX</span>
+          <span class="links-nav-pill-sub">USD &harr; ZWG &middot; remittance providers</span>
+        </a>
+        <a class="links-nav-pill" href="jobs.html">
+          <span class="links-nav-pill-label">Jobs</span>
+          <span class="links-nav-pill-sub">Live Zimbabwe vacancies &middot; our internships</span>
+        </a>
+        <a class="links-nav-pill" href="property.html">
+          <span class="links-nav-pill-label">Property</span>
+          <span class="links-nav-pill-sub">Houses for sale across Zimbabwe</span>
+        </a>
+        <a class="links-nav-pill links-nav-pill--accent" href="subscribe.html">
+          <span class="links-nav-pill-label">Subscribe</span>
+          <span class="links-nav-pill-sub">Free newsletter, 2&times; a week</span>
+        </a>
+      </nav>
+
+      <!-- Recent posts grid — pulls bio-grid.json populated by generate_rss.py -->
+      <section class="links-grid-section">
+        <h2 class="links-section-title">From the grid</h2>
+        <p class="links-section-deck">Tap any card to read the full story or open the page.</p>
+        <div class="links-grid" id="linksGrid">
+          <p class="links-loading">Loading recent posts&hellip;</p>
+        </div>
+      </section>
+
+      <!-- Footer line — minimal -->
+      <footer class="links-footer">
+        <p><a href="terms.html">Terms</a> &middot; <a href="https://twitter.com/intent/follow?screen_name=mutapatimes" target="_blank" rel="noopener">Follow on X</a> &middot; <a href="mailto:news@mutapatimes.com">Email</a></p>
+        <p class="links-copyright">&copy; 2020&ndash;2026 The Mutapa Times</p>
+      </footer>
+
+    </main>
+
+    <script>
+      // Inline render — small enough to keep here, avoids an extra fetch
+      // for the script. The grid data is in /data/bio-grid.json which
+      // generate_rss.py refreshes on every cron tick.
+      (function () {
+        var grid = document.getElementById('linksGrid');
+        if (!grid) return;
+
+        function esc(s) {
+          return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+        }
+
+        var KIND_LABEL = {
+          news: 'News', economy: 'Economy', fx: 'FX',
+          weather: 'Weather', jobs: 'Jobs', property: 'Property',
+        };
+
+        function renderTile(t) {
+          var img = t.image
+            ? '<img class="links-tile-img" src="' + esc(t.image) +
+              '" alt="' + esc(t.title) + '" loading="lazy">'
+            : '<div class="links-tile-img links-tile-img--placeholder"></div>';
+          var cat = KIND_LABEL[t.kind] || (t.category || 'News');
+          var external = /^https?:\/\//.test(t.link) &&
+                         t.link.indexOf('mutapatimes.com') === -1;
+          return '<a class="links-tile" href="' + esc(t.link) + '"' +
+                 (external ? ' target="_blank" rel="noopener"' : '') + '>' +
+                 img +
+                 '<div class="links-tile-cap">' +
+                   '<span class="links-tile-cat">' + esc(cat) + '</span>' +
+                   '<span class="links-tile-title">' + esc(t.title) + '</span>' +
+                 '</div></a>';
+        }
+
+        fetch('data/bio-grid.json', { cache: 'no-cache' })
+          .then(function (r) {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+          })
+          .then(function (data) {
+            var tiles = (data && data.tiles) || [];
+            if (!tiles.length) {
+              grid.innerHTML = '<p class="links-loading">Nothing posted yet. Check back soon.</p>';
+              return;
+            }
+            grid.innerHTML = tiles.map(renderTile).join('');
+          })
+          .catch(function (err) {
+            grid.innerHTML = '<p class="links-loading">Could not load recent posts. <a href="articles.html">Browse all stories</a>.</p>';
+            if (window.console) console.warn('bio-grid fetch failed:', err);
+          });
+      })();
+    </script>
+
+    <!-- Google tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XQPRFK7JTB');
+    </script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>
