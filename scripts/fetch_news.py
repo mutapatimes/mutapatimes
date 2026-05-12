@@ -1135,11 +1135,24 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
     indexed_slugs = {e.get("slug") for e in index if isinstance(e, dict)}
 
     imported = 0
+    # Match either a reporter contact email (jsmith@herald.co.zw) or
+    # newsroom mailto links. Source descriptions sometimes embed these,
+    # and they leak into our captions, body, summary and feed.
+    email_re = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
+
+    def _scrub(s):
+        if not s:
+            return s
+        s = email_re.sub("", s)
+        s = re.sub(r"[ \t]+", " ", s)
+        s = re.sub(r"\s+([,.;:])", r"\1", s)
+        return s.strip()
+
     for a in api_articles:
         url = a.get("url", "")
-        title = a.get("title", "")
+        title = _scrub(a.get("title", ""))
         image = (a.get("image") or "").strip()
-        desc = (a.get("description") or "").strip()
+        desc = _scrub((a.get("description") or "").strip())
         # source comes through as either a string (Guardian/NYT/etc.) or as
         # {"name": ..., "url": ...} (NewsAPI / Google News RSS shape).
         raw_source = a.get("source") or ""

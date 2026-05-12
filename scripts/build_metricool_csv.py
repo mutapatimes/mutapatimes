@@ -1063,6 +1063,21 @@ def _inject_twitter_mentions(caption, art, mutapa_url):
     return caption
 
 
+_EMAIL_RE = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
+
+
+def _strip_emails(text):
+    """Remove reporter contact emails that leak in from source descriptions
+    (e.g. 'By John Smith jsmith@herald.co.zw') — they look spammy in
+    social posts. Also collapses the whitespace the removal leaves behind."""
+    if not text:
+        return text
+    text = _EMAIL_RE.sub("", text)
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\s+([,.;:])", r"\1", text)
+    return text.strip()
+
+
 def _strip_urls_for_ig(text):
     """IG + TikTok captions: no clickable links, bare URLs look spammy.
     Strip http(s) URLs, bare mutapatimes.com mentions, and the 'Read the
@@ -1080,17 +1095,24 @@ def _strip_urls_for_ig(text):
 
 
 def caption_for(platform, art, mutapa_url):
+    # Strip reporter contact emails from the description BEFORE handing
+    # it to Gemini — otherwise they get faithfully echoed into captions
+    # ("...email reporter@herald.co.zw...") and look spammy.
+    clean_title = _strip_emails(art.get("title", ""))
+    clean_desc = _strip_emails(art.get("description", ""))
     rewritten = gemini_rewrite(
         PROMPTS[platform],
-        art["title"],
-        art["description"],
+        clean_title,
+        clean_desc,
         art["source"],
         mutapa_url,
         art["url"],
     )
     text = rewritten or fallback_caption(
-        platform, art["title"], art["description"], art["source"], mutapa_url
+        platform, clean_title, clean_desc, art["source"], mutapa_url
     )
+    # Defensive: strip any email that survived Gemini's rewrite anyway.
+    text = _strip_emails(text)
     if platform == "Twitter":
         text = _inject_twitter_mentions(text, art, mutapa_url)
         text = _twitter_safe(text, mutapa_url, art["source"])

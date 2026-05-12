@@ -201,6 +201,21 @@ def _swap_apostrophes(s):
     return s.replace("'", "’")
 
 
+_EMAIL_RE = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
+
+
+def _strip_emails(s):
+    """Source descriptions sometimes embed reporter contact addresses
+    ('By X. Y. xy@herald.co.zw') — they look spammy when the feed is
+    re-posted to social. Drop them and collapse the surrounding whitespace."""
+    if not s:
+        return s
+    s = _EMAIL_RE.sub("", s)
+    s = re.sub(r"[ \t]+", " ", s)
+    s = re.sub(r"\s+([,.;:])", r"\1", s)
+    return s.strip()
+
+
 def build_rss(items):
     """Build RSS 2.0 XML string."""
     now = format_datetime(datetime.now(timezone.utc))
@@ -253,7 +268,7 @@ def build_rss(items):
             "    <item>\n"
             f"      <title>{escape(title_text)}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
-            f"      <description>{escape(_swap_apostrophes(item.get('description', '')))}</description>\n"
+            f"      <description>{escape(_swap_apostrophes(_strip_emails(item.get('description', ''))))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
             f'      <guid isPermaLink="true">{escape(item["link"])}</guid>\n'
             f"{cat}{author}{image}"
