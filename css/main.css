@@ -6048,30 +6048,99 @@ body.story-viewer-open { overflow: hidden; }
   .footer-social-row svg { width: 16px; height: 16px; }
 }
 
-/* Footer Follow column — text-only social list, two columns on desktop. */
+/* Footer Follow — full-width row above the 3-col footer block.
+   White text on the dark footer bg, generous breathing room. */
+.footer-follow-row {
+  padding: 36px 0 32px;
+  margin: 0 0 36px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  text-align: center;
+}
+.footer-follow-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin: 0 0 20px;
+}
+.footer-follow-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 32px;
+}
+.footer-follow-list li { margin: 0; position: relative; }
+.footer-follow-list a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff !important;          /* legibility: always white */
+  text-decoration: none;
+  padding: 6px 0;
+  display: inline-block;
+  transition: color 0.15s ease;
+  position: relative;
+}
+.footer-follow-list a:hover,
+.footer-follow-list a:focus-visible {
+  color: var(--accent) !important;
+}
+/* Dot separators between links on desktop only */
+.footer-follow-list li + li::before {
+  content: '·';
+  color: rgba(255,255,255,0.30);
+  position: absolute;
+  left: -19px;
+  top: 6px;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+.footer-follow-handle {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  margin: 22px 0 0;
+  letter-spacing: 0.04em;
+}
+.footer-follow-handle strong {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 540px) {
+  .footer-follow-row { padding: 28px 0 26px; margin-bottom: 28px; }
+  .footer-follow-list { gap: 8px 20px; padding: 0 12px; }
+  .footer-follow-list a { font-size: 0.88rem; }
+  .footer-follow-list li + li::before { left: -13px; top: 4px; font-size: 1rem; }
+}
+
+/* Legacy alias for any straggling .footer-social-list markup still in
+   cached pages — same visual treatment so nothing breaks during the
+   migration. */
 .footer-social-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  justify-content: center;
 }
-.footer-social-list li { margin: 0; }
 .footer-social-list a {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.86rem;
-  color: var(--text);
+  color: #ffffff !important;
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.15s ease;
-  display: inline-block;
-  padding: 2px 0;
 }
-.footer-social-list a:hover { color: var(--accent); }
-@media (max-width: 480px) {
-  .footer-social-list { grid-template-columns: 1fr 1fr; }
-}
+.footer-social-list a:hover { color: var(--accent) !important; }
 
 /* Small page meta footnote — sits just above the global footer.
    Replaces the noisy eyebrow + meta that used to crowd the hero. */
