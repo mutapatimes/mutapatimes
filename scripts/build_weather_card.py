@@ -133,123 +133,113 @@ def _draw_emoji(img, draw, xy, text, font, fill):
 
 # ── The card ──────────────────────────────────────────────
 def render_card(weather, tsumo, date_label, out_path):
+    """Editorial weather card — same left-aligned typographic chrome as
+    every other 1080×1350 card on the IG grid. No white boxes; cities
+    render as clean typographic lines instead of a 2×3 cell grid."""
     img = Image.new("RGB", (CARD_W, CARD_H), BG)
     draw = ImageDraw.Draw(img)
 
-    # ── Chrome: masthead + eyebrow date ──
+    PAD = 60  # left margin shared with every other card in the system
+
+    # ── Chrome (matches other editorial cards exactly) ──
     masthead_font = load_font("serif_bold", 36)
-    eyebrow_font = load_font("sans_bold", 20)
+    eyebrow_font  = load_font("sans_bold", 20)
     draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
-    draw.text((60, 56), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((60, 106), f"ZIM WEATHER · {date_label}",
+    draw.text((PAD, 56), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
+    draw.text((PAD, 106), f"ZIM WEATHER · {date_label}",
               font=eyebrow_font, fill=ACCENT)
 
-    # ── Greeting: Shona · Ndebele, one warm line ──
-    greet_font = load_font("serif_bold", 50)
-    greeting = "Mangwanani · Livukile,"
-    country = "Zimbabwe."
-    gw = draw.textlength(greeting, font=greet_font)
-    cw = draw.textlength(country, font=greet_font)
-    draw.text(((CARD_W - gw) // 2, 165), greeting,
+    # ── Headline: Shona · Ndebele greeting, LEFT-aligned ──
+    greet_font = load_font("serif_bold", 60)
+    draw.text((PAD, 170), "Mangwanani · Livukile,",
               font=greet_font, fill=CARD_FG)
-    draw.text(((CARD_W - cw) // 2, 225), country,
-              font=greet_font, fill=ACCENT)
+    draw.text((PAD, 238), "Zimbabwe.", font=greet_font, fill=ACCENT)
 
-    # Subtitle: tiny credit / translation
-    sub_font = load_font("serif_italic", 22)
-    sub = "Good morning, Zimbabwe — in Shona & Ndebele."
-    sw = draw.textlength(sub, font=sub_font)
-    draw.text(((CARD_W - sw) // 2, 300), sub,
-              font=sub_font, fill=CARD_FG_MUTED)
-
-    # ── 2-col × 3-row city grid ──
+    # ── City lines: typographic, left-aligned, no boxes ──
     cells = (weather.get("cities") or [])[:6]
-    grid_x0 = 60
-    grid_y0 = 365
-    cell_w = (CARD_W - grid_x0 * 2 - 24) // 2   # 24px col gap
-    cell_h = 195
-    col_gap = 24
-    row_gap = 16
+    city_y0 = 340
+    line_h  = 116          # gap between city blocks
 
-    name_font = load_font("sans_bold", 22)
-    temp_font = load_font("serif_bold", 56)
-    cond_font = load_font("sans", 19)
-    precip_font = load_font("sans", 17)
-    emoji_font = load_font("sans_bold", 84)
+    city_font   = load_font("sans_bold", 26)   # CITY NAME
+    temp_font   = load_font("serif_bold", 50)  # 26° / 16°
+    cond_font   = load_font("sans", 19)        # condition · rain
+    emoji_font  = load_font("sans_bold", 56)   # emoji
 
     for i, c in enumerate(cells):
-        row, col = divmod(i, 2)
-        x = grid_x0 + col * (cell_w + col_gap)
-        y = grid_y0 + row * (cell_h + row_gap)
+        y = city_y0 + i * line_h
 
-        # White cell with thin outline
-        draw.rounded_rectangle(
-            [(x, y), (x + cell_w, y + cell_h)],
-            radius=10, fill=CELL_BG, outline=CARD_FG_MUTED, width=1,
-        )
+        # CITY NAME — top of the row, left
+        name = (c.get("city") or "").upper()
+        draw.text((PAD, y), name, font=city_font, fill=CARD_FG)
 
-        # City name top-left
-        draw.text((x + 22, y + 18), c["city"].upper(),
-                  font=name_font, fill=CARD_FG)
-
-        # Big weather emoji top-right
-        emoji = c.get("emoji", "")
-        if emoji:
-            _draw_emoji(img, draw, (x + cell_w - 110, y + 14), emoji,
-                        emoji_font, CARD_FG)
-
-        # Big high/low temp on the left, vertically centred-ish
+        # Temp — same row, pushed right but still left of the emoji column
         high = c.get("high")
-        low = c.get("low")
+        low  = c.get("low")
         if high is not None and low is not None:
             temp_str = f"{round(high)}° / {round(low)}°"
-            draw.text((x + 22, y + 72), temp_str,
+            tw = draw.textlength(temp_str, font=temp_font)
+            draw.text((CARD_W - PAD - 90 - tw, y - 12), temp_str,
                       font=temp_font, fill=CARD_FG)
 
-        # Condition + rain chance stacked at the bottom of the cell
-        cond_y = y + 138
-        label = c.get("label") or ""
+        # Emoji — far right, vertically aligned with temp
+        emoji = c.get("emoji", "")
+        if emoji:
+            _draw_emoji(img, draw, (CARD_W - PAD - 70, y - 18),
+                        emoji, emoji_font, CARD_FG)
+
+        # Sub-line: condition · rain chance (muted, sans, smaller)
+        sub_parts = []
+        label = (c.get("label") or "").strip()
         if label:
-            draw.text((x + 22, cond_y), label,
-                      font=cond_font, fill=CARD_FG_MUTED)
+            sub_parts.append(label)
         pp = c.get("precip_prob")
         if pp is not None:
-            draw.text((x + 22, cond_y + 26),
-                      f"{int(pp)}% chance of rain",
-                      font=precip_font, fill=CARD_FG_MUTED)
+            sub_parts.append(f"{int(pp)}% chance of rain")
+        if sub_parts:
+            draw.text((PAD, y + 44), "  ·  ".join(sub_parts),
+                      font=cond_font, fill=CARD_FG_MUTED)
 
-    # ── Divider ──
-    grid_bottom = grid_y0 + 3 * cell_h + 2 * row_gap
-    divider_y = grid_bottom + 26
-    draw.line([(60, divider_y), (CARD_W - 60, divider_y)],
-              fill=CARD_FG_MUTED, width=1)
+        # Hairline separator between rows (very subtle)
+        if i < len(cells) - 1:
+            sep_y = y + line_h - 12
+            draw.line([(PAD, sep_y), (CARD_W - PAD, sep_y)],
+                      fill=CARD_FG_MUTED, width=1)
 
-    # ── Tsumo of the day ──
-    tsumo_eyebrow_font = load_font("sans_bold", 20)
-    tsumo_shona_font = load_font("serif_italic", 30)
-    tsumo_en_font = load_font("sans", 22)
+    # ── Tsumo: small italic block above the footer ──
+    tsumo_eyebrow_font = load_font("sans_bold", 18)
+    tsumo_shona_font   = load_font("serif_italic", 24)
+    tsumo_en_font      = load_font("sans", 18)
 
-    tsumo_y = divider_y + 22
-    draw.text((60, tsumo_y), "TSUMO YEZUVA · PROVERB OF THE DAY",
+    tsumo_y = city_y0 + len(cells) * line_h + 12
+    draw.text((PAD, tsumo_y), "TSUMO YEZUVA · PROVERB OF THE DAY",
               font=tsumo_eyebrow_font, fill=ACCENT)
 
     shona = f"“{tsumo['shona']}”"
     en = tsumo["english"]
-    shona_lines = wrap_text(draw, shona, tsumo_shona_font, CARD_W - 120)[:2]
-    en_lines = wrap_text(draw, en, tsumo_en_font, CARD_W - 120)[:2]
+    shona_lines = wrap_text(draw, shona, tsumo_shona_font, CARD_W - PAD * 2)[:2]
+    en_lines    = wrap_text(draw, en,    tsumo_en_font,    CARD_W - PAD * 2)[:2]
 
-    sy = tsumo_y + 38
+    sy = tsumo_y + 32
     for ln in shona_lines:
-        draw.text((60, sy), ln, font=tsumo_shona_font, fill=CARD_FG)
-        sy += 40
-    sy += 4
+        draw.text((PAD, sy), ln, font=tsumo_shona_font, fill=CARD_FG)
+        sy += 32
+    sy += 2
     for ln in en_lines:
-        draw.text((60, sy), ln, font=tsumo_en_font, fill=CARD_FG_MUTED)
-        sy += 30
+        draw.text((PAD, sy), ln, font=tsumo_en_font, fill=CARD_FG_MUTED)
+        sy += 24
 
-    # ── Footer ──
-    footer_font = load_font("sans_bold", 20)
-    draw.text((60, CARD_H - 55), "mutapatimes.com",
+    # ── Footer: VIA / CTA, mirrors other editorial cards ──
+    footer_font = load_font("sans_bold", 18)
+    via_label   = load_font("sans_bold", 16)
+
+    foot_y = CARD_H - 70
+    draw.text((PAD, foot_y), "VIA", font=via_label, fill=CARD_FG_MUTED)
+    draw.text((PAD, foot_y + 22), "ZIM WEATHER",
+              font=footer_font, fill=CARD_FG)
+
+    cta = "READ MORE → mutapatimes.com/weather"
+    cw  = draw.textlength(cta, font=footer_font)
+    draw.text((CARD_W - PAD - cw, foot_y + 22), cta,
               font=footer_font, fill=ACCENT)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
