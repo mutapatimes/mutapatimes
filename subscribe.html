@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=67">
+    <link rel="stylesheet" href="css/main.css?v=68">
 
     <meta name="description" content="Curated Zimbabwe news from foreign press, delivered Mondays and Thursdays. Free briefing for the diaspora and informed readers worldwide.">
     <meta name="keywords" content="Mutapa Times, Zimbabwe newsletter, Zimbabwe diaspora, Zimbabwe news briefing">
@@ -121,104 +121,54 @@
   <hr class="bottomHr">
   <hr class="dateHr">
 
-  <main class="subscribe-page">
-    <!-- Hero -->
-    <section class="subscribe-hero">
-      <p class="subscribe-eyebrow">THE MUTAPA TIMES BRIEFING</p>
-      <h1 class="subscribe-headline">Zimbabwe outside-in<br>Straight to your inbox.</h1>
-      <p class="subscribe-tagline">
-        Curated foreign press, original analysis, and the economic data you actually need.
-        Twice a week. Free. Built for the diaspora.
+  <main class="sub-page">
+    <section class="sub-hero">
+      <p class="sub-eyebrow">The briefing</p>
+
+      <h1 class="sub-headline">
+        Zimbabwe, <em>read closely.</em>
+      </h1>
+
+      <p class="sub-deck">
+        A single email, twice a week, with the stories from
+        Zimbabwe that actually matter — local newsrooms and the
+        foreign press, curated for one calm read.
       </p>
 
-      <!-- Countdown to next briefing -->
-      <div class="subscribe-countdown" id="subscribeCountdown" aria-live="polite">
-        <p class="subscribe-countdown-label">Next briefing drops in</p>
-        <div class="subscribe-countdown-grid" id="subscribeCountdownGrid">
-          <div><span class="cd-num" id="cdDays">0</span><span class="cd-unit">days</span></div>
-          <div><span class="cd-num" id="cdHours">0</span><span class="cd-unit">hours</span></div>
-          <div><span class="cd-num" id="cdMins">0</span><span class="cd-unit">mins</span></div>
-          <div><span class="cd-num" id="cdSecs">0</span><span class="cd-unit">secs</span></div>
-        </div>
-        <p class="subscribe-countdown-when" id="subscribeCountdownWhen">&nbsp;</p>
-      </div>
-
-      <!-- Signup form -->
-      <form class="subscribe-form" id="subscribeForm" method="POST"
+      <form class="sub-form" id="subscribeForm" method="POST"
             action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
             target="brevo-subscribe-frame">
-        <input type="email" name="EMAIL" class="subscribe-form-input"
-               placeholder="you@example.com" required autocomplete="email"
+        <input type="email" name="EMAIL" class="sub-form-input"
+               placeholder="Your email address" required autocomplete="email"
                aria-label="Your email address">
-        <button type="submit" class="subscribe-form-btn">Subscribe Free</button>
+        <button type="submit" class="sub-form-btn">
+          Subscribe
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="13 6 19 12 13 18"/>
+          </svg>
+        </button>
       </form>
-      <p class="subscribe-fine">No spam. Unsubscribe in one click. Read by Zimbabweans in 30+ countries.</p>
       <iframe name="brevo-subscribe-frame" style="display:none" aria-hidden="true"></iframe>
 
-      <p class="subscribe-follow-row">
-        Between briefings, follow us on
-        <a class="follow-x-cta" href="https://twitter.com/intent/follow?screen_name=mutapatimes"
-           target="_blank" rel="noopener">X &mdash; @mutapatimes</a>
+      <p class="sub-fine">
+        Free. No spam. One tap to unsubscribe.
       </p>
-    </section>
 
-    <!-- Value pillars -->
-    <section class="subscribe-pillars">
-      <div class="subscribe-pillar">
-        <h3 class="subscribe-pillar-title">Curated, not curated-by-algorithm</h3>
-        <p class="subscribe-pillar-body">
-          We read The Guardian, the Herald, NYT, Reuters, Bloomberg, Al Jazeera, and dozens
-          more so you don&rsquo;t have to. Then we keep only the headlines that genuinely
-          matter for Zimbabwe.
-        </p>
-      </div>
-      <div class="subscribe-pillar">
-        <h3 class="subscribe-pillar-title">Built for the diaspora</h3>
-        <p class="subscribe-pillar-body">
-          Stay current on Harare, Bulawayo, the bond markets, the lithium bans, the rugby
-          squad, and the music charts &mdash; without trawling 14 outlets across three time
-          zones.
-        </p>
-      </div>
-      <div class="subscribe-pillar">
-        <h3 class="subscribe-pillar-title">5-minute read</h3>
-        <p class="subscribe-pillar-body">
-          Mondays and Thursdays at 09:00 CAT. Top 10&ndash;15 stories, plus a Shona
-          proverb, plus what&rsquo;s moving in the economy. Nothing more.
-        </p>
-      </div>
-      <div class="subscribe-pillar">
-        <h3 class="subscribe-pillar-title">Zero spam, free forever</h3>
-        <p class="subscribe-pillar-body">
-          No upsells, no surveys, no &ldquo;please confirm your interest&rdquo; emails.
-          One clean briefing on Monday, one on Thursday. That&rsquo;s it.
-        </p>
-      </div>
-    </section>
-
-    <!-- Sample preview: real headlines from latest spotlight -->
-    <section class="subscribe-preview">
-      <div class="subscribe-preview-header">
-        <h2 class="subscribe-preview-title">What&rsquo;s in this week&rsquo;s briefing?</h2>
-        <p class="subscribe-preview-sub">A live preview of stories from the most recent feed:</p>
-      </div>
-      <div class="subscribe-preview-list" id="subscribePreviewList">
-        <p class="subscribe-preview-loading">Loading the latest stories&hellip;</p>
-      </div>
-    </section>
-
-    <!-- Repeat CTA -->
-    <section class="subscribe-cta-bottom">
-      <h3 class="subscribe-cta-title">Ready? It takes 6 seconds.</h3>
-      <form class="subscribe-form" method="POST"
-            action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
-            target="brevo-subscribe-frame-2">
-        <input type="email" name="EMAIL" class="subscribe-form-input"
-               placeholder="you@example.com" required autocomplete="email"
-               aria-label="Your email address">
-        <button type="submit" class="subscribe-form-btn">Subscribe Free</button>
-      </form>
-      <iframe name="brevo-subscribe-frame-2" style="display:none" aria-hidden="true"></iframe>
+      <dl class="sub-meta">
+        <div>
+          <dt>Cadence</dt>
+          <dd>Twice weekly — Mon &amp; Thu, 09:00 CAT</dd>
+        </div>
+        <div>
+          <dt>Format</dt>
+          <dd>Five-minute read. 10–15 stories. One Shona proverb.</dd>
+        </div>
+        <div>
+          <dt>Audience</dt>
+          <dd>Read in 30+ countries by Zimbabweans at home and away.</dd>
+        </div>
+      </dl>
     </section>
   </main>
 

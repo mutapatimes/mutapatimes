@@ -42,7 +42,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=67">
+    <link rel="stylesheet" href="css/main.css?v=68">
   </head>
 
   <body>
@@ -188,22 +188,151 @@
           </div>
         </section>
 
-        <section class="ad-contact">
-          <h2 class="ad-section-title">Get in touch</h2>
-          <dl class="ad-contact-list">
-            <div class="ad-contact-row">
-              <dt>Advertising team</dt>
-              <dd><a href="mailto:advertising@mutapatimes.com">advertising@mutapatimes.com</a></dd>
+        <section class="ad-contact" id="advertContact">
+          <h2 class="ad-section-title">Start a conversation</h2>
+          <p class="advert-form-note">
+            Tell us a little about who you are and what you have in
+            mind. Replies land in <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>
+            within two working days.
+          </p>
+
+          <form class="advert-form" id="advertForm"
+                action="mailto:news@mutapatimes.com" method="POST" enctype="text/plain">
+            <div class="advert-form-row">
+              <div>
+                <label for="af-name">Your name<span class="req">*</span></label>
+                <input id="af-name" name="Name" type="text" required autocomplete="name">
+              </div>
+              <div>
+                <label for="af-role">Your role</label>
+                <input id="af-role" name="Role" type="text" autocomplete="organization-title">
+              </div>
             </div>
-            <div class="ad-contact-row">
-              <dt>Partnerships</dt>
-              <dd><a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a></dd>
+
+            <div class="advert-form-row">
+              <div>
+                <label for="af-company">Company / brand<span class="req">*</span></label>
+                <input id="af-company" name="Company" type="text" required autocomplete="organization">
+              </div>
+              <div>
+                <label for="af-website">Website</label>
+                <input id="af-website" name="Website" type="url" placeholder="https://" autocomplete="url">
+              </div>
             </div>
-            <div class="ad-contact-row">
-              <dt>Press &amp; media</dt>
-              <dd><a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a></dd>
+
+            <div class="advert-form-row">
+              <div>
+                <label for="af-email">Work email<span class="req">*</span></label>
+                <input id="af-email" name="Email" type="email" required autocomplete="email">
+              </div>
+              <div>
+                <label for="af-phone">Phone (optional)</label>
+                <input id="af-phone" name="Phone" type="tel" autocomplete="tel">
+              </div>
             </div>
-          </dl>
+
+            <div class="advert-form-row">
+              <div>
+                <label for="af-industry">Industry</label>
+                <select id="af-industry" name="Industry">
+                  <option value="">Choose one</option>
+                  <option>Remittance / money transfer</option>
+                  <option>Banking / fintech</option>
+                  <option>Insurance</option>
+                  <option>Airline / travel</option>
+                  <option>Tourism / hospitality</option>
+                  <option>Mining / commodities</option>
+                  <option>Telecoms</option>
+                  <option>Education</option>
+                  <option>Property / real estate</option>
+                  <option>Tech / SaaS</option>
+                  <option>FMCG / consumer goods</option>
+                  <option>NGO / development</option>
+                  <option>Public sector</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="af-audience">Target audience</label>
+                <select id="af-audience" name="Audience">
+                  <option value="">Choose one</option>
+                  <option>UK Zim diaspora</option>
+                  <option>US Zim diaspora</option>
+                  <option>South Africa diaspora</option>
+                  <option>Australia diaspora</option>
+                  <option>Global Zim diaspora</option>
+                  <option>Zimbabwe residents</option>
+                  <option>Pan-African</option>
+                  <option>Open / discuss</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="advert-form-row">
+              <div>
+                <label for="af-placement">Preferred placement</label>
+                <select id="af-placement" name="Placement">
+                  <option value="">Choose one</option>
+                  <option>Newsletter sponsorship</option>
+                  <option>Site sponsorship strip</option>
+                  <option>Sponsored briefing / editorial</option>
+                  <option>Branded series / partnership</option>
+                  <option>Recruitment / careers</option>
+                  <option>Discuss options</option>
+                </select>
+              </div>
+              <div>
+                <label for="af-budget">Estimated budget</label>
+                <select id="af-budget" name="Budget">
+                  <option value="">Choose a range</option>
+                  <option>Under $1,000</option>
+                  <option>$1,000 – $5,000</option>
+                  <option>$5,000 – $25,000</option>
+                  <option>$25,000 – $100,000</option>
+                  <option>$100,000+</option>
+                  <option>Prefer to discuss</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="advert-form-row">
+              <div>
+                <label for="af-timeline">Timeline</label>
+                <select id="af-timeline" name="Timeline">
+                  <option value="">Choose one</option>
+                  <option>Within 2 weeks</option>
+                  <option>This quarter</option>
+                  <option>Next quarter</option>
+                  <option>Just exploring</option>
+                </select>
+              </div>
+              <div>
+                <label for="af-heard">How did you hear about us</label>
+                <input id="af-heard" name="Heard" type="text" placeholder="Referral, search, social…">
+              </div>
+            </div>
+
+            <div>
+              <label for="af-brief">Tell us a bit about what you have in mind<span class="req">*</span></label>
+              <textarea id="af-brief" name="Brief" required
+                        placeholder="The product, the audience you want to reach, the moment in time, anything else useful."></textarea>
+            </div>
+
+            <div class="advert-form-actions">
+              <button type="submit" class="advert-form-submit">
+                Send enquiry
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="13 6 19 12 13 18"/>
+                </svg>
+              </button>
+              <p class="advert-form-note">
+                Submits via your default email client.
+                Or write directly to <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>.
+              </p>
+            </div>
+            <p class="advert-form-status" id="advertFormStatus" aria-live="polite"></p>
+          </form>
         </section>
 
         <footer class="ad-page-footer">

@@ -95,6 +95,39 @@
     onScroll();
   })();
 
+  // ── Advertising contact form → formatted mailto handoff ──────
+  // Builds a readable plain-text email body from the form fields
+  // and hands off to the user's default email client. No third-
+  // party form service required.
+  (function () {
+    var form = document.getElementById('advertForm');
+    if (!form) return;
+    var status = document.getElementById('advertFormStatus');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var lines = [];
+      data.forEach(function (val, key) {
+        var clean = String(val || '').trim();
+        if (!clean) return;
+        lines.push(key + ':');
+        lines.push(clean);
+        lines.push('');
+      });
+      var body = "Advertising enquiry — The Mutapa Times\n\n" + lines.join('\n');
+      var subject = 'Advertising enquiry · ' + (data.get('Company') || 'Mutapa Times');
+      var href = 'mailto:news@mutapatimes.com'
+               + '?subject=' + encodeURIComponent(subject)
+               + '&body=' + encodeURIComponent(body);
+      window.location.href = href;
+      if (status) {
+        status.textContent =
+          'Opening your email app… if nothing happens, copy your details to news@mutapatimes.com.';
+        status.classList.add('is-success');
+      }
+    });
+  })();
+
   // ── Smooth scroll-to-top for the legacy onclick="window.scrollTo"
   // and any [data-scroll-top] button — already smooth-on-modern via
   // CSS, but this preserves behaviour where reduced-motion is set.

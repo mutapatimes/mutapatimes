@@ -6575,6 +6575,225 @@ body.story-viewer-open { overflow: hidden; }
   color: var(--accent);
 }
 
+/* ─── Subscribe page — quiet luxury single-focus hero ───────────
+   One headline. One paragraph. One input. One button. Two thin
+   hairlines and a tight meta-list. Nothing else.                 */
+.sub-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+}
+@media (max-width: 600px) {
+  .sub-page { padding: 40px 20px 64px; }
+}
+.sub-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin: 0 0 32px;
+}
+.sub-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 7vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 32px;
+}
+.sub-headline em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+.sub-deck {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.55;
+  color: var(--text-mid);
+  margin: 0 0 48px;
+  max-width: 540px;
+}
+.sub-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  max-width: 480px;
+  margin: 0 0 12px;
+  border-bottom: 1px solid var(--ink);
+  padding: 0;
+}
+.sub-form-input {
+  flex: 1 1 auto;
+  border: 0;
+  background: transparent;
+  padding: 14px 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--ink);
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.sub-form-input::placeholder { color: var(--text-light); }
+.sub-form-input:focus { outline: none; }
+.sub-form-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 0;
+  padding: 14px 6px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.sub-form-btn:hover { color: var(--accent); }
+.sub-form-btn:active { transform: scale(0.97); }
+.sub-form-btn svg { display: block; }
+.sub-fine {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--text-light);
+  margin: 0 0 56px;
+}
+.sub-meta {
+  border-top: 1px solid var(--rule);
+  padding-top: 28px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+.sub-meta > div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  align-items: baseline;
+}
+.sub-meta dt {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.sub-meta dd {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .sub-meta > div { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* ─── Advertising contact form ──────────────────────────────────
+   Sits beside the existing advertising principles. Calm, single-
+   column, generous spacing — matches the subscribe page tone.   */
+.advert-form {
+  max-width: 620px;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 24px;
+}
+.advert-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 600px) {
+  .advert-form-row { grid-template-columns: 1fr; gap: 24px; }
+}
+.advert-form label {
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin: 0 0 8px;
+}
+.advert-form label .req { color: var(--accent); margin-left: 4px; }
+.advert-form input,
+.advert-form select,
+.advert-form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  padding: 10px 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--ink);
+  -webkit-appearance: none;
+  border-radius: 0;
+  transition: border-color var(--t-fast) var(--ease-soft);
+}
+.advert-form input:focus,
+.advert-form select:focus,
+.advert-form textarea:focus {
+  outline: none;
+  border-bottom-color: var(--ink);
+}
+.advert-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+.advert-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%231a1a1a' stroke-width='1.4'><polyline points='1,1 5,5 9,1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 22px;
+}
+.advert-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+.advert-form-submit {
+  background: var(--ink);
+  color: #fff;
+  border: 0;
+  padding: 14px 22px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background var(--t-fast) var(--ease-soft), transform var(--t-fast) var(--ease-out);
+}
+.advert-form-submit:hover { background: var(--accent); }
+.advert-form-submit:active { transform: scale(0.97); }
+.advert-form-note {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin: 0;
+}
+.advert-form-status {
+  font-size: 0.86rem;
+  color: var(--ink);
+  margin: 14px 0 0;
+  font-style: italic;
+}
+.advert-form-status.is-success { color: #2c8e3e; }
+
 /* ── Sticky topbar — wordmark left, hamburger right, slides in
    after ~10% scroll. Frosted-glass full-width bar.               */
 .topbar {
