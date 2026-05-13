@@ -6246,3 +6246,29 @@ body.story-viewer-open { overflow: hidden; }
 @media (max-width: 480px) {
   .quote-share-btn { font-size: 0.78rem; padding: 9px 14px; }
 }
+
+/* ─── TEMP: show every ad slot in house-preview mode ───────────────
+   Reveals the 7 ad placements (home-top, home-takeover, articles-top,
+   articles-bottom, news-top, news-inline, news-bottom) without selling
+   them. Remove this block — and bump sw.js CACHE_VERSION — when done
+   reviewing. Search for "TEMP: show every ad slot" to find it.  */
+.ad-slot { display: block !important; }
+.ad-slot__inner {
+  background: repeating-linear-gradient(
+    45deg, #fafaf7 0 12px, #f0eee6 12px 24px
+  ) !important;
+  border: 1px dashed var(--rule) !important;
+}
+/* Override the default empty hairline ::after with a labelled one
+   that reads the parent slot's data attributes. */
+.ad-slot::after {
+  content: 'Ad slot · ' attr(data-slot) ' · ' attr(data-slot-size);
+  display: block;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 8px;
+  border-bottom: none;
+}
