@@ -224,10 +224,6 @@ def render_page(article, related=None):
     if article["image"]:
         parts.append(f'  <img class="news-hero" src="{esc(article["image"])}" alt="{esc(title)}" loading="eager">')
 
-    # Editorial sponsor strip slot — runs between the hero and the
-    # summary. Invisible until a partner is configured.
-    parts.append('  <aside class="ad-slot ad-slot--strip" data-slot="news-top" data-slot-size="1080x80" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
-
     if article["description"]:
         parts.append(f'  <p class="news-summary">{esc(article["description"])}</p>')
 
@@ -269,10 +265,6 @@ def render_page(article, related=None):
         f'we link out to credit the original publisher.'
     )
     parts.append("  </p>")
-
-    # Page-bottom leaderboard slot — sits below the disclaimer, before
-    # the global footer.
-    parts.append('  <aside class="ad-slot ad-slot--leaderboard" data-slot="news-bottom" data-slot-size="720x120" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
 
     parts.append("</main>")
 
