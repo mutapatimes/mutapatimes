@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-13T11:28:27+00:00",
+  "fetched_at": "2026-05-13T14:21:49+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe courts US$200 million UAE investments",
+      "link": "https://mutapatimes.com/news/2026-05-13-zimbabwe-courts-us-200-million-uae-investments-39e5a6",
+      "image": "https://www.mutapatimes.com/img/cards/news/c8893e422843.png",
+      "pubDate": "2026-05-13T12:45:05+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Minister Soda, Amb Shoniwa engage Zimbabwe diasporans in China",
+      "link": "https://mutapatimes.com/news/2026-05-13-minister-soda-amb-shoniwa-engage-zimbabwe-diasporans-in-chin-749bca",
+      "image": "https://www.mutapatimes.com/img/cards/news/0bb922c1ca84.png",
+      "pubDate": "2026-05-13T12:35:37+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Zimbabwe Embassy Islamabad Hosts 7th IYDS",
@@ -52,11 +68,59 @@
     },
     {
       "kind": "news",
+      "title": "Family of collapsed mine victim speak out",
+      "link": "https://mutapatimes.com/articles/2026-05-13-family-of-collapsed-mine-victim-speak-out",
+      "image": "https://www.mutapatimes.com/img/cards/news/7322d4ed8ce4.png",
+      "pubDate": "2026-05-13T07:20:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Family of collapsed mine victim speak out",
+      "link": "https://mutapatimes.com/news/2026-05-13-family-of-collapsed-mine-victim-speak-out-7a105a",
+      "image": "https://www.mutapatimes.com/img/cards/news/8d4b22b741ce.png",
+      "pubDate": "2026-05-13T07:20:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
       "title": "‘Even captured courts will not allow the Constitution Amendment Bill to escape a referendum’ – Madhuku",
       "link": "https://mutapatimes.com/news/2026-05-13-even-captured-courts-will-not-allow-the-constitution-amendme-ad55c1",
       "image": "https://www.mutapatimes.com/img/cards/news/58915e2685ab.png",
       "pubDate": "2026-05-13T05:34:55+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimpapers orders staff to return Chivayo cash gifts, gives presenter vehicle ultimatum",
+      "link": "https://mutapatimes.com/articles/2026-05-13-zimpapers-orders-staff-to-return-chivayo-cash-gifts-gives-pr",
+      "image": "https://www.mutapatimes.com/img/cards/news/cd65e45a3302.png",
+      "pubDate": "2026-05-13T00:30:46+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimpapers orders staff to return Chivayo cash gifts, gives presenter vehicle ultimatum",
+      "link": "https://mutapatimes.com/news/2026-05-13-zimpapers-orders-staff-to-return-chivayo-cash-gifts-gives-pr-96977d",
+      "image": "https://www.mutapatimes.com/img/cards/news/5ac0c270c985.png",
+      "pubDate": "2026-05-13T00:30:46+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "600MW solar plant on cards",
+      "link": "https://mutapatimes.com/articles/2026-05-12-600mw-solar-plant-on-cards",
+      "image": "https://www.mutapatimes.com/img/cards/news/e1b14e87dcbd.png",
+      "pubDate": "2026-05-12T23:58:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Digital tools help curb stillbirth rates",
+      "link": "https://mutapatimes.com/articles/2026-05-12-digital-tools-help-curb-stillbirth-rates",
+      "image": "https://www.mutapatimes.com/img/cards/news/a7625bb8171d.png",
+      "pubDate": "2026-05-12T23:56:00+00:00",
+      "category": "Tech"
     },
     {
       "kind": "news",
@@ -77,18 +141,10 @@
     {
       "kind": "news",
       "title": "Zimbabwe to review lithium export quotas next year as producers set up processing plants",
-      "link": "https://mutapatimes.com/news/2026-05-13-zimbabwe-to-review-lithium-export-quotas-next-year-as-produc-7e0fc6",
-      "image": "https://www.mutapatimes.com/img/cards/news/dd9812aed326.png",
+      "link": "https://mutapatimes.com/news/2026-05-12-zimbabwe-to-review-lithium-export-quotas-next-year-as-produc-ec359f",
+      "image": "https://www.mutapatimes.com/img/cards/news/28d008f016eb.png",
       "pubDate": "2026-05-12T23:39:27+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Court blocks exhumation of Johanne Masowe’s remains from Gandanzara",
-      "link": "https://mutapatimes.com/news/2026-05-13-court-blocks-exhumation-of-johanne-masowe-s-remains-from-gan-8550a3",
-      "image": "https://www.mutapatimes.com/img/cards/news/8343c7d844f3.png",
-      "pubDate": "2026-05-12T23:34:40+00:00",
-      "category": "Entertainment"
+      "category": "News"
     },
     {
       "kind": "news",
@@ -423,62 +479,6 @@
       "title": "USD 4,500,000 — 6 Acres - Premium, Executive Estate on Carrick Creagh Road, Helensvale (Carrick Creagh, Harare North)",
       "link": "https://www.property.co.zw/for-sale/townhouses-rws215250",
       "image": "https://mutapatimes.com/img/cards/properties/79771b21f177.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 1,000,000 — 2 acre Property in Pomona, perfect for development (Pomona, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-pgp185945",
-      "image": "https://mutapatimes.com/img/cards/properties/ba2e745b918a.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 500,000 — Gated Folyjon Glen Lorne 4-Bed Home with Pool & Garden (Glen Lorne, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-leg244250",
-      "image": "https://mutapatimes.com/img/cards/properties/baf841f4593c.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 35,000 — 5-Bed Chitungwiza Home - Tiled Verandah & Walled Yard (Chitungwiza)",
-      "link": "https://www.property.co.zw/for-sale/houses-nal239763",
-      "image": "https://mutapatimes.com/img/cards/properties/cc3223ee5570.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 235,000 — Finish To Your Own Taste- Bluffhill Property Up For Grabs (Bluff Hill, Harare West)",
-      "link": "https://www.property.co.zw/for-sale/houses-smy238731",
-      "image": "https://mutapatimes.com/img/cards/properties/2c89de9499a7.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 420,000 — A Renovators Dream! / Investors Delight (Vainona, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-pgp229539",
-      "image": "https://mutapatimes.com/img/cards/properties/584a6182fba6.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 295,000 — Stylishly-Polished home!!! (Greendale North, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/townhouses-rws225932",
-      "image": "https://mutapatimes.com/img/cards/properties/b98143001e87.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 270,000 — Exceptional 5-Bedroom Executive Home with Self-Contained Cottage – Old Windsor (Old Windsor, Ruwa)",
-      "link": "https://www.property.co.zw/for-sale/houses-sef243291",
-      "image": "https://mutapatimes.com/img/cards/properties/a69e3291320f.png",
       "pubDate": "2026-05-12T22:00:00+00:00",
       "category": "Property"
     }
