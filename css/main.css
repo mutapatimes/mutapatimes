@@ -14,8 +14,118 @@ html {
   overflow-x: hidden;
 }
 
-::-moz-selection { background: #d4d0c8; text-shadow: none; }
-::selection { background: #d4d0c8; text-shadow: none; }
+::-moz-selection { background: #f1d6cf; color: var(--ink); text-shadow: none; }
+::selection      { background: #f1d6cf; color: var(--ink); text-shadow: none; }
+
+/* ───── Global motion polish ──────────────────────────────────────
+   Site-wide smooth scrolling, consistent easing tokens, tactile
+   hover/active states, tap-highlight removed on iOS, subtle page
+   entrance fade. All respects prefers-reduced-motion.            */
+:root {
+  --ease-out:   cubic-bezier(0.32, 0.72, 0, 1);          /* Apple decel */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);      /* gentle bounce */
+  --ease-soft:  cubic-bezier(0.4, 0, 0.2, 1);            /* Material standard */
+  --t-fast: 0.18s;
+  --t-base: 0.28s;
+  --t-slow: 0.45s;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+html, body { -webkit-tap-highlight-color: transparent; }
+
+/* Subtle page entrance — body fades up on first paint. Disabled if
+   the visitor prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    animation: page-enter 0.5s var(--ease-out) both;
+  }
+  @keyframes page-enter {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Universal interactive transitions — anchors, buttons, cards. */
+a, button, .more-card, .city-article, .main-article {
+  transition:
+    color var(--t-fast) var(--ease-soft),
+    background-color var(--t-fast) var(--ease-soft),
+    border-color var(--t-fast) var(--ease-soft),
+    transform var(--t-fast) var(--ease-out),
+    opacity var(--t-fast) var(--ease-out),
+    box-shadow var(--t-base) var(--ease-out);
+}
+/* Active feedback — slight press-in on tap/click for buttons */
+button:active:not(:disabled),
+.nav-drawer-cta:active,
+.subscribe-btn:active,
+.footer-subscribe-btn:active,
+.sidebar-newsletter-btn:active,
+.mobile-newsletter-btn:active,
+.news-cta-btn:active {
+  transform: scale(0.97);
+}
+
+/* More-card / story-card subtle lift on hover */
+.more-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Tasteful focus ring — visible only on keyboard, brand colour */
+*:focus { outline: none; }
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Custom thin scrollbar — desktop only. iOS/Android already use a
+   sympathetic native one. */
+@media (hover: hover) and (pointer: fine) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.18);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.32); background-clip: padding-box; border: 2px solid transparent; }
+}
+
+/* Reading-progress bar — thin accent line at the very top that
+   fills as the reader scrolls. CSS-only via @scroll-timeline-like
+   API isn't widely supported yet, so js/nav.js drives the width. */
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  z-index: 1095;
+  pointer-events: none;
+}
+.read-progress::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: var(--read-progress, 0%);
+  background: var(--accent);
+  transition: width 0.08s linear;
+}
+
+/* Global reduced-motion override — kills page-enter, body easing,
+   and the read-progress fill animation for visitors who've asked
+   for less movement. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 hr {
   display: block;

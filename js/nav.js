@@ -53,21 +53,72 @@
     });
   });
 
-  // ── Sticky topbar reveal — show once user scrolls past masthead ──
+  // ── Sticky topbar reveal + reading progress bar ──────────────
+  // One scroll listener drives both: rAF-throttled, passive.
   (function () {
-    var threshold = 220;   // px scrolled before the topbar slides in
+    var topbarThreshold = 220;
+    // Optional reading-progress bar — only on article-like pages.
+    // Auto-injects a thin top strip whose ::after fills as you scroll.
+    var hasArticle = document.querySelector('.article-full, .news-landing, .article-body');
+    var progress = null;
+    if (hasArticle && !document.querySelector('.read-progress')) {
+      progress = document.createElement('div');
+      progress.className = 'read-progress';
+      document.body.appendChild(progress);
+    }
     var raf = null;
     function onScroll() {
       if (raf) return;
       raf = requestAnimationFrame(function () {
         raf = null;
         var y = window.scrollY || document.documentElement.scrollTop || 0;
-        document.body.classList.toggle('is-scrolled', y > threshold);
+        document.body.classList.toggle('is-scrolled', y > topbarThreshold);
+        if (progress) {
+          var doc = document.documentElement;
+          var max = (doc.scrollHeight || 1) - window.innerHeight;
+          var pct = max > 0 ? Math.min(100, (y / max) * 100) : 0;
+          progress.style.setProperty('--read-progress', pct.toFixed(2) + '%');
+        }
       });
     }
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();  // initialise on load (handles refreshes mid-page)
+    onScroll();
   })();
+
+  // ── Smooth scroll-to-top for the legacy onclick="window.scrollTo"
+  // and any [data-scroll-top] button — already smooth-on-modern via
+  // CSS, but this preserves behaviour where reduced-motion is set.
+  document.querySelectorAll('[data-scroll-top], .back-to-top-btn').forEach(function (b) {
+    b.addEventListener('click', function (e) {
+      e.preventDefault();
+      try {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (_) {
+        window.scrollTo(0, 0);
+      }
+    });
+  });
+
+  // ── Smooth-scroll for any in-page anchor link with #target ────
+  // (CSS scroll-behavior covers this on modern browsers; this is the
+  // belt-and-braces fallback for older Safari and respects reduced-motion.)
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href === '#' || href === '#!') return;
+    var target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+    var prefersReduce = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({
+      behavior: prefersReduce ? 'auto' : 'smooth',
+      block: 'start',
+    });
+    // Keep the URL hash in sync without jumping
+    if (history.pushState) history.pushState(null, '', href);
+  });
   // Close on backdrop tap, close-button tap, or any anchor tap inside drawer
   document.addEventListener('click', function (e) {
     var t = e.target;
