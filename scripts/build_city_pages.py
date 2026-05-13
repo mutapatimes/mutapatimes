@@ -416,6 +416,34 @@ def build_page(city, all_articles, other_cities):
         </ul>
       </span>
   </nav>
+  <button class="nav-hamburger" type="button" aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true"></div>
+  <aside class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Site navigation">
+    <button class="nav-drawer-close" type="button" aria-label="Close menu" data-close-drawer>&times;</button>
+    <ul class="nav-drawer-list">
+      <li><a href="/">News</a></li>
+      <li><a href="/economy">Economy</a></li>
+      <li><a href="/fx">FX</a></li>
+      <li><a href="/property">Property</a></li>
+      <li><a href="/jobs">Jobs</a></li>
+      <li><a href="/articles">Articles</a></li>
+      <li class="nav-drawer-section">Cities</li>
+      <li><a href="/harare-news">Harare</a></li>
+      <li><a href="/bulawayo-news">Bulawayo</a></li>
+      <li><a href="/mutare-news">Mutare</a></li>
+      <li><a href="/gweru-news">Gweru</a></li>
+      <li><a href="/masvingo-news">Masvingo</a></li>
+      <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+      <li class="nav-drawer-section">More</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/advertising">Advertising</a></li>
+      <li><a href="/subscribe">Newsletter</a></li>
+      <li><a href="/terms">Terms</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+  </aside>
   <hr class="topHr">
   <hr class="bottomHr">
   <div class="aboutTitle">
@@ -454,6 +482,13 @@ def build_page(city, all_articles, other_cities):
     </section>
 
     <h2 class="city-section-heading">Latest {esc(city['name'])} headlines</h2>
+
+    <!-- Search across this city's coverage — wired in js/city.js -->
+    <div class="articles-search-wrap">
+      <input type="search" id="citySearch" class="articles-search"
+             placeholder="Search {esc(city['name'])} news…"
+             aria-label="Search {esc(city['name'])} news">
+    </div>
 
     <!-- Category filter — narrows the city's article list by topic.
          Wired in js/city.js; "All" is the default selection. -->
@@ -495,6 +530,7 @@ def build_page(city, all_articles, other_cities):
 <script defer src="/js/vendor/modernizr-3.8.0.min.js"></script>
 <script defer src="/js/quote-share.js"></script>
 <script defer src="/js/stories.js"></script>
+<script defer src="/js/nav.js"></script>
 <script defer src="/js/city.js"></script>
 <script>
 if ('serviceWorker' in navigator) {{

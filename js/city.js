@@ -138,10 +138,11 @@
     return card;
   }
 
-  // Cache of all city-filtered articles so the category chips can re-render
-  // without re-fetching the JSON on every click.
+  // Cache of all city-filtered articles so chips + search can re-render
+  // without re-fetching the JSON on every keystroke / click.
   var _cityArticlesCache = null;
   var _activeCategory = 'all';
+  var _activeSearch = '';
 
   function renderArticlesList(picks) {
     var container = document.getElementById('cityArticles');
@@ -155,11 +156,19 @@
     picks.forEach(function (a, i) { container.appendChild(renderArticle(a, i)); });
   }
 
-  function applyCategoryFilter() {
+  function applyFilters() {
     if (!_cityArticlesCache) return;
+    var q = _activeSearch.trim().toLowerCase();
     var picks = _cityArticlesCache.filter(function (a) {
-      if (_activeCategory === 'all') return true;
-      return (a.category || '').toLowerCase() === _activeCategory.toLowerCase();
+      if (_activeCategory !== 'all' &&
+          (a.category || '').toLowerCase() !== _activeCategory.toLowerCase()) {
+        return false;
+      }
+      if (q) {
+        var hay = ((a.title || '') + ' ' + (a.summary || '')).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
     }).slice(0, 60);
     renderArticlesList(picks);
   }
@@ -172,8 +181,21 @@
         chips.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         _activeCategory = btn.getAttribute('data-cat') || 'all';
-        applyCategoryFilter();
+        applyFilters();
       });
+    });
+  }
+
+  function wireSearch() {
+    var input = document.getElementById('citySearch');
+    if (!input) return;
+    var t;
+    input.addEventListener('input', function () {
+      clearTimeout(t);
+      t = setTimeout(function () {
+        _activeSearch = input.value || '';
+        applyFilters();
+      }, 120);
     });
   }
 
@@ -197,7 +219,7 @@
         }
         if (!picks.length) return;  // keep the static render
         _cityArticlesCache = picks;
-        applyCategoryFilter();      // honours whatever chip is active
+        applyFilters();             // honours whatever chip + search are active
       })
       .catch(function () {});
   }
