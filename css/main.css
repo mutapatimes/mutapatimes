@@ -300,8 +300,167 @@ nav a.economy-btn.active {
 }
 
 /* ==========================================================================
-   Spotlight Section — dark green, premium feel
+   Hero band — lead spotlight + Latest sidebar, both visible above fold
    ========================================================================== */
+.hero-band {
+  background: var(--paper, #f4ede0);
+  padding: 28px 20px 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 22px; }
+  .hero-band { padding: 20px 16px 16px; }
+}
+
+/* — Lead story (left, big) — */
+.hero-lead { font-family: 'Playfair Display', Georgia, serif; }
+.hero-lead-link {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hero-lead-img,
+.hero-lead .spotlight-img--placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 18px;
+  background: #0f1a12;
+}
+.hero-lead-text { padding: 0; }
+.hero-lead-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.hero-lead-link:hover .hero-lead-title { color: var(--accent); }
+.hero-lead-deck {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--text-mid);
+  margin: 0 0 12px;
+}
+.hero-lead-meta {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+.hero-lead-meta .verified-source {
+  color: var(--ink);
+  font-weight: 700;
+}
+.hero-lead-meta .verified-badge {
+  color: #1d9bf0;
+  margin-left: 4px;
+}
+.hero-lead-loading {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+}
+
+/* — Latest sidebar (right) — */
+.hero-latest {
+  border-left: 1px solid var(--rule);
+  padding-left: 22px;
+}
+@media (max-width: 760px) {
+  .hero-latest {
+    border-left: none;
+    border-top: 1px solid var(--rule);
+    padding: 18px 0 0;
+  }
+}
+.hero-latest-header {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+.hero-latest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: latest;
+}
+.hero-latest-item {
+  counter-increment: latest;
+  border-top: 1px solid var(--rule);
+  padding: 12px 0;
+}
+.hero-latest-item:first-child { border-top: none; padding-top: 0; }
+.hero-latest-item a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.hero-latest-item a::before {
+  content: counter(latest);
+  flex-shrink: 0;
+  width: 18px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.35;
+}
+.hero-latest-title {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.hero-latest-item a:hover .hero-latest-title { color: var(--accent); }
+.hero-latest-time {
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-light);
+  margin-top: 3px;
+  letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+   Spotlight row — smaller 3-up cards below the hero lead
+   ========================================================================== */
+.spotlight-row {
+  background: #0f1a12;
+  color: #fff;
+}
+.spotlight-row #spotlight-stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+@media (max-width: 760px) {
+  .spotlight-row #spotlight-stories { grid-template-columns: 1fr; }
+}
+
+/* Legacy .spotlight-section + .spotlight-header retained for backwards
+   compat with /articles and other pages that still use the old pattern. */
 .spotlight-section {
   background: #0f1a12;
   color: #fff;
@@ -331,19 +490,41 @@ nav a.economy-btn.active {
 
 .spotlight-item {
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-right: 1px solid rgba(255,255,255,0.08);
 }
-.spotlight-item:last-child { border-bottom: none; }
+.spotlight-row .spotlight-item:nth-child(3n) { border-right: none; }
+.spotlight-row .spotlight-item:last-child    { border-bottom: 1px solid rgba(255,255,255,0.08); }
 
 .spotlight-item a {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
   gap: 0;
-  padding: 20px 24px;
+  padding: 18px 18px 22px;
   color: #fff;
+  height: 100%;
   transition: background 0.15s ease;
 }
-.spotlight-item:nth-child(even) a { flex-direction: row-reverse; }
+.spotlight-item:nth-child(even) a { flex-direction: column; }  /* override legacy reverse */
 .spotlight-item a:hover { background: rgba(255,255,255,0.04); color: #fff; }
+
+/* Inside the new 3-up spotlight-row, image takes full card width and
+   smaller fixed height. Overrides the legacy 45%-wide side-by-side. */
+.spotlight-row .spotlight-item .spotlight-img,
+.spotlight-row .spotlight-item .spotlight-img--placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  border: none;
+  margin-bottom: 14px;
+}
+.spotlight-row .spotlight-text { padding: 0; }
+.spotlight-row .spotlight-title {
+  font-size: 1.02rem;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+.spotlight-row .spotlight-desc { display: none; }  /* no body copy in compressed cards */
 
 .spotlight-img {
   width: 45%;
