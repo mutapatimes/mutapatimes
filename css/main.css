@@ -301,6 +301,7 @@ nav a.economy-btn.active {
 
 /* ==========================================================================
    Spotlight Section — dark green, premium feel
+   Compressed into a 3-up grid so latest stories surface higher.
    ========================================================================== */
 .spotlight-section {
   background: #0f1a12;
@@ -329,29 +330,53 @@ nav a.economy-btn.active {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+/* JS appends .spotlight-item children into #spotlight-stories. Grid
+   them 3-up so the whole section becomes one or two compact rows
+   instead of 3+ full-width stacked cards.                            */
+#spotlight-stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.08);   /* shows through as gridlines */
+  padding: 0;
+}
+@media (max-width: 760px) {
+  #spotlight-stories { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  #spotlight-stories { grid-template-columns: 1fr; }
+}
+
 .spotlight-item {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: #0f1a12;     /* override grid gridline showing through */
+  border-bottom: none;     /* legacy stacked-list border no longer needed */
 }
 .spotlight-item:last-child { border-bottom: none; }
 
 .spotlight-item a {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
   gap: 0;
-  padding: 20px 24px;
+  padding: 14px 18px 20px;
   color: #fff;
+  height: 100%;
   transition: background 0.15s ease;
 }
-.spotlight-item:nth-child(even) a { flex-direction: row-reverse; }
+/* Kill the legacy alternating-row-reverse trick — every card is now
+   the same vertical layout (image on top, text below).             */
+.spotlight-item:nth-child(even) a { flex-direction: column; }
 .spotlight-item a:hover { background: rgba(255,255,255,0.04); color: #fff; }
 
 .spotlight-img {
-  width: 45%;
-  min-height: 180px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   object-fit: cover;
   display: block;
   flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 /* When the source photo is missing/broken we render a small M·T mark
    plus a "VIA {source}" caption so the cell reads as an external article
@@ -360,9 +385,9 @@ nav a.economy-btn.active {
    column height the same way a landscape photo would, so the visual
    weight stays consistent with the other spotlight items. */
 .spotlight-img--placeholder {
-  width: 45%;
-  align-self: stretch;
-  min-height: 180px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   flex-shrink: 0;
   background: #FAFAF7;
   border: 1px solid rgba(255,255,255,0.1);
@@ -370,12 +395,13 @@ nav a.economy-btn.active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 24px;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
 }
 .spotlight-img--placeholder .placeholder-mark {
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   display: block;
   opacity: 0.9;
 }
@@ -403,29 +429,24 @@ nav a.economy-btn.active {
 .spotlight-text {
   flex: 1;
   min-width: 0;
-  padding: 8px 24px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .spotlight-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.35em;
-  line-height: 1.3;
+  font-size: 1.02em;
+  line-height: 1.28;
   letter-spacing: 0.01em;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
 }
 
-.spotlight-desc {
-  font-size: 0.92em;
-  line-height: 1.55;
-  color: rgba(255,255,255,0.7);
-  margin: 0 0 10px;
-  font-weight: 400;
-}
+/* Body copy hidden in the compressed grid — title + source carry it. */
+.spotlight-desc { display: none; }
 
 .spotlight-meta {
   font-size: 11px;
