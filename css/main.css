@@ -275,6 +275,10 @@ nav a.economy-btn.active {
   height: auto;
   display: block;
 }
+.editorial-landscape-wrap picture {
+  display: block;
+  width: 100%;
+}
 
 /* ==========================================================================
    Content layout: main + sidebar grid
@@ -5564,22 +5568,10 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   transition: transform 0.18s ease, filter 0.2s ease;
 }
 .story-thumb.is-unviewed .story-chip-glow {
-  animation: story-glow-spin 8s linear infinite;
-  filter: drop-shadow(0 0 0 rgba(196, 30, 30, 0));
-}
-.story-thumb.is-unviewed .story-chip-glow {
-  animation: story-glow-spin 8s linear infinite, story-glow-pulse 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(196, 30, 30, 0.18));
 }
 .story-thumb.is-viewed .story-chip-glow {
   background: #cfcdc7;
-  animation: none;
-}
-@keyframes story-glow-spin {
-  to { transform: rotate(360deg); }
-}
-@keyframes story-glow-pulse {
-  0%, 100% { filter: drop-shadow(0 0 6px rgba(196, 30, 30, 0.05)); }
-  50%      { filter: drop-shadow(0 0 14px rgba(196, 30, 30, 0.40)); }
 }
 
 /* Each chip is its own faded brand tone with a dark ink label inside.
@@ -5594,16 +5586,10 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   color: #1A1A1A;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08), inset 0 0 0 1px rgba(0,0,0,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  /* Counter-rotate against the glow so the label stays upright. */
-  animation: story-chip-counterspin 8s linear infinite;
-}
-.story-thumb.is-viewed .story-chip { animation: none; }
-@keyframes story-chip-counterspin {
-  to { transform: rotate(-360deg); }
 }
 .story-thumb:hover .story-chip-glow,
 .story-thumb:focus-visible .story-chip-glow {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .story-thumb.is-viewed .story-chip {
   filter: grayscale(0.55) brightness(0.95);
