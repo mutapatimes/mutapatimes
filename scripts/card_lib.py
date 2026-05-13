@@ -133,12 +133,19 @@ def render_headline_card(headline, source, output_path, color_idx=0):
     # Footer source attribution + read-more cue
     footer_y = CARD_H - 140
     draw.text((60, footer_y), "VIA", font=label_font, fill=CARD_FG_MUTED)
-    if source:
-        draw.text((60, footer_y + 32), source.upper(),
-                  font=source_font, fill=CARD_FG)
     cue = "READ MORE → mutapatimes.com"
     bbox = draw.textbbox((0, 0), cue, font=source_font)
     cue_w = bbox[2] - bbox[0]
+    # Source goes left, CTA goes right. Clip the source so it never
+    # collides with the CTA — leave a 28px gutter between the two.
+    if source:
+        src = source.upper()
+        max_src_w = CARD_W - 120 - cue_w - 28
+        while src and (draw.textbbox((0, 0), src, font=source_font)[2] -
+                       draw.textbbox((0, 0), src, font=source_font)[0]) > max_src_w:
+            src = src[:-2] if src.endswith("…") else src[:-1] + "…"
+        draw.text((60, footer_y + 32), src,
+                  font=source_font, fill=CARD_FG)
     draw.text((CARD_W - 60 - cue_w, footer_y + 32), cue,
               font=source_font, fill=ACCENT)
 
