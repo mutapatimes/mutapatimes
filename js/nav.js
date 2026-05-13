@@ -55,8 +55,18 @@
 
   // ── Sticky topbar reveal + reading progress bar ──────────────
   // One scroll listener drives both: rAF-throttled, passive.
+  // Topbar slides in once the user has scrolled ~10% of the page
+  // (or at least 160px) — feels like "you're meaningfully into the
+  // content" without being trigger-happy.
   (function () {
-    var topbarThreshold = 220;
+    function computeThreshold() {
+      var doc = document.documentElement;
+      return Math.max(160, doc.scrollHeight * 0.10);
+    }
+    var topbarThreshold = computeThreshold();
+    window.addEventListener('resize', function () {
+      topbarThreshold = computeThreshold();
+    }, { passive: true });
     // Optional reading-progress bar — only on article-like pages.
     // Auto-injects a thin top strip whose ::after fills as you scroll.
     var hasArticle = document.querySelector('.article-full, .news-landing, .article-body');
