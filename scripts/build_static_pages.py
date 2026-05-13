@@ -128,6 +128,18 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <meta charset="utf-8">
     <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />
     <meta name="msvalidate.01" content="" />
+    <!-- Google Reader Revenue Manager (open-access) -->
+    <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+    <script>
+      (self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {{
+        basicSubscriptions.init({{
+          type: "NewsArticle",
+          isPartOfType: ["Product"],
+          isPartOfProductId: "CAow56S3DA:openaccess",
+          clientOptions: {{ theme: "light", lang: "en-GB" }}
+        }});
+      }});
+    </script>
     <title>{esc(title)}</title>
     <link rel="canonical" href="{esc(canonical_url)}">
 
@@ -314,6 +326,7 @@ def page_footer(depth=1):
               <li><a href="/brand">Brand assets</a></li>
               <li><a href="/subscribe">Newsletter</a></li>
               <li><a href="/terms">Terms</a></li>
+              <li><a href="/privacy">Privacy</a></li>
             </ul>
           </div>
       </div>
