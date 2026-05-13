@@ -13,7 +13,6 @@ var MUTAPA_CONFIG = {
 
 // Stored article data for category filtering
 var _allMainArticles = [];
-var _heroLatestRendered = false;  // Latest sidebar renders once, not per-filter
 var _allSidebarArticles = [];
 var _gnewsMoreArticles = [];
 var _activeCategory = "all";
@@ -1297,21 +1296,6 @@ function renderMainStories(articles) {
     return;
   }
 
-  // Hero-band "Latest" sidebar — newest 7 across the unfiltered feed.
-  // Renders once; doesn't react to category-filter changes (it's the
-  // absolute-newest list, not a filtered slice).
-  if (!_heroLatestRendered) {
-    var newest = articles.slice().sort(function (a, b) {
-      var ad = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
-      var bd = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
-      return bd - ad;
-    });
-    renderHeroLatest(newest.filter(function (a) {
-      return !a.url || !_spotlightUrls[a.url];
-    }));
-    _heroLatestRendered = true;
-  }
-
   // Filter out articles already shown in spotlight
   var filtered = articles.filter(function(a) {
     return !a.url || !_spotlightUrls[a.url];
@@ -1821,85 +1805,6 @@ function makeSpotlightPlaceholder(source) {
   return div;
 }
 
-// Render the single lead spotlight story into the hero-band's left
-// column. Big image, big headline, deck paragraph, source attribution.
-function renderHeroLead(a) {
-  var container = $("#hero-lead-story");
-  if (!container.length || !a) return;
-  container.empty();
-
-  var pubDate = formatDate(a.publishedAt);
-  var link = $('<a class="hero-lead-link">')
-    .attr('href', a.url || '#')
-    .attr('target', '_blank')
-    .attr('rel', 'noopener nofollow');
-
-  (function (src, imgUrl, title) {
-    if (imgUrl) {
-      var img = $('<img class="hero-lead-img">').attr('src', imgUrl).attr('alt', title || '');
-      img[0].addEventListener('error', function onErr() {
-        this.removeEventListener('error', onErr);
-        $(this).replaceWith(makeSpotlightPlaceholder(src));
-      });
-      link.append(img);
-    } else {
-      link.append(makeSpotlightPlaceholder(src));
-    }
-  })(a.source, a.image, a.title);
-
-  var textWrap = $('<div class="hero-lead-text">');
-  textWrap.append($('<h2 class="hero-lead-title">').text(a.title));
-
-  var desc = a.description;
-  if (desc && desc.length > 220) desc = desc.substring(0, 220) + '…';
-  if (desc) textWrap.append($('<p class="hero-lead-deck">').text(desc));
-
-  var meta = $('<p class="hero-lead-meta">');
-  if (a.source) {
-    meta.append($('<span class="verified-source">').text(a.source));
-    if (isReputableSource(a.source)) {
-      meta.append($('<span class="verified-badge" title="Verified source">').html('&#10003;'));
-    }
-  }
-  if (pubDate) {
-    if (a.source) meta.append(document.createTextNode(' · '));
-    var timeEl = $('<time>').text(pubDate);
-    try {
-      var dt = new Date(a.publishedAt);
-      if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
-    } catch (e) {}
-    meta.append(timeEl);
-  }
-  textWrap.append(meta);
-
-  link.append(textWrap);
-  container.append(link);
-}
-
-// Render the "Latest" sidebar — 7 newest articles, text-only, no
-// images. Survives category-filter changes (always absolute newest).
-function renderHeroLatest(articles) {
-  var list = $("#hero-latest-list");
-  if (!list.length) return;
-  list.empty();
-  if (!articles || !articles.length) {
-    list.append($('<li class="loading-msg">').text('No fresh stories yet.'));
-    return;
-  }
-  for (var i = 0; i < articles.length && i < 7; i++) {
-    var a = articles[i];
-    var item = $('<li class="hero-latest-item">');
-    var link = $('<a>').attr('href', a.url || '#')
-                       .attr('target', '_blank')
-                       .attr('rel', 'noopener');
-    link.append($('<span class="hero-latest-title">').text(a.title));
-    var when = formatDate(a.publishedAt);
-    if (when) link.append($('<span class="hero-latest-time">').text(when));
-    item.append(link);
-    list.append(item);
-  }
-}
-
 function renderSpotlightStories(articles) {
   var container = $("#spotlight-stories");
   if (!container.length) return;
@@ -1913,7 +1818,7 @@ function renderSpotlightStories(articles) {
   // Reputable sources first; if under 3, allow unverified business articles
   var reputable = articles.filter(function(a) { return isReputableSource(a.source); });
   var rest = articles.filter(function(a) { return !isReputableSource(a.source) && inferCategory(a.title) === "Business"; });
-  articles = reputable.concat(rest).slice(0, 4);  // 1 lead + 3 secondary
+  articles = reputable.concat(rest).slice(0, 3);
   if (articles.length === 0) {
     container.html('<p class="loading-msg">No spotlight stories available.</p>');
     return;
@@ -1921,15 +1826,11 @@ function renderSpotlightStories(articles) {
 
   // Track spotlight URLs so main/sidebar feeds can skip duplicates
   _spotlightUrls = {};
-  for (var i = 0; i < articles.length && i < 4; i++) {
+  for (var i = 0; i < articles.length && i < 3; i++) {
     if (articles[i].url) _spotlightUrls[articles[i].url] = true;
   }
 
-  // First article → big hero lead
-  renderHeroLead(articles[0]);
-
-  // Remaining (up to 3) → smaller cards in the spotlight-row
-  for (var i = 1; i < articles.length && i < 4; i++) {
+  for (var i = 0; i < articles.length && i < 3; i++) {
     var a = articles[i];
     var pubDate = formatDate(a.publishedAt);
 
