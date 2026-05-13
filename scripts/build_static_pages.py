@@ -329,6 +329,7 @@ def page_footer(depth=1):
 
   <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/quote-share.js"></script>
+  <script defer src="{prefix}js/stories.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{
@@ -462,6 +463,11 @@ def build_articles():
 {json.dumps(breadcrumb)}
 </script>""")
         html_parts.append(page_nav("articles", depth=1))
+        # Stories rail — same IG-style highlight strip used on home + /articles.
+        # Stays empty if the visitor's local index has nothing fresh.
+        html_parts.append(
+            '  <div id="stories-rail" aria-label="Story highlights"></div>'
+        )
         html_parts.append("""
   <!-- Single article view -->
   <main>

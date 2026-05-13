@@ -211,6 +211,8 @@ def render_page(article, related=None):
     parts.append(f'<script type="application/ld+json">{json.dumps(structured)}</script>')
     parts.append(f'<script type="application/ld+json">{json.dumps(breadcrumb)}</script>')
     parts.append(page_nav(active="articles", depth=1))
+    # Stories rail — same IG-style highlight strip used on home + /articles.
+    parts.append('<div id="stories-rail" aria-label="Story highlights"></div>')
 
     # Main story body
     parts.append('<main class="news-landing">')
