@@ -58,7 +58,7 @@ CARD_H = 1350
 CARD_FG = (26, 26, 26)
 CARD_FG_MUTED = (95, 92, 84)
 ACCENT = (192, 57, 43)
-BG = (236, 226, 207)        # warm beige — fixed; one image, one tone
+BG = (245, 232, 200)        # butter #F5E8C8 — brand-locked card background
 CELL_BG = (255, 255, 255)
 
 

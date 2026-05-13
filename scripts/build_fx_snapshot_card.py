@@ -32,8 +32,9 @@ CARD_H = 1350
 CARD_FG = (26, 26, 26)
 CARD_FG_MUTED = (95, 92, 84)
 ACCENT = (192, 57, 43)
-# Faded green for money/economy theme
-BG = (216, 230, 213)
+# Butter #F5E8C8 — brand-locked card background, matches every other
+# card in the system (feed, jobs, property, economy, stories).
+BG = (245, 232, 200)
 
 
 FONT_ROLES = {
