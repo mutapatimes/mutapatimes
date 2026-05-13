@@ -584,7 +584,13 @@ def _is_fresh_enough(article):
 
 
 def load_articles():
-    """Load articles from spotlight + categories, deduped by URL."""
+    """Load articles from spotlight + categories, deduped by URL, then
+    sorted newest-first by publishedAt so the social-post slate always
+    picks the freshest stories. This is the value-prop: first to post.
+
+    Without the final sort, take() walked spotlight then each category
+    file in registration order, which meant a 3-day-old business story
+    beat a 2-hour-old sports story for posting."""
     seen = set()
     out = []
     stale = 0
@@ -624,6 +630,23 @@ def load_articles():
         take(os.path.join(DATA_DIR, f"{cat}.json"), cat)
     if stale:
         print(f"  >> Dropped {stale} stale articles (>{MAX_ARTICLE_AGE_DAYS}d old)")
+
+    # Final pass: newest first by parsed datetime. Naive string sort
+    # would mis-order across formats (RFC 2822 "Wed, 15 Apr..." sorts
+    # above ISO 8601 "2026-05-08..." because "W" > "2"). Articles whose
+    # date won't parse go to the tail.
+    _epoch = datetime.min.replace(tzinfo=timezone.utc)
+
+    def _sort_key(a):
+        dt = _parse_pub_date(a.get("publishedAt") or "")
+        if dt is None:
+            return _epoch
+        # Normalise naive datetimes to UTC — parsedate_to_datetime sometimes
+        # returns naive (RFC 2822 without offset); fromisoformat without Z
+        # also returns naive. Sort can't compare aware + naive.
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+    out.sort(key=_sort_key, reverse=True)
     return out
 
 
