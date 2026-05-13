@@ -44,4 +44,17 @@ jobs:
           git add data/property-listings.json img/cards/properties/ img/cards/stories/ stories/ property-landing/ \
                   properties-feed.xml stories-feed.xml feed.xml fx-feed.xml weather-feed.xml \
                   economy-feed.xml business-feed.xml jobs-feed.xml
-          git diff --cached --quiet || (git commit -m "Update property listings + cards + feeds [automated]" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Update property listings + cards + feeds [automated]"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed on attempt $i"
+                exit 0
+              fi
+              echo "Push rejected — rebasing onto remote main (attempt $i/5)"
+              git pull --rebase origin main || exit 1
+              sleep $((RANDOM % 4 + 2))
+            done
+            echo "All push attempts failed"
+            exit 1
+          fi
