@@ -565,7 +565,7 @@ function loadMainStories() {
             description: a.description || '',
             publishedAt: a.publishedAt || '',
             source: srcName,
-            isLocal: false
+            isLocal: isLocalZimSource(srcName)
           };
         });
         allArticles = allArticles.concat(archived);
@@ -1376,7 +1376,11 @@ function renderMainStories(articles) {
     var tagRow = $('<div class="main-article-tags">');
     if (a.isCmsArticle) {
       tagRow.append($('<span class="press-marker original-press">').text("Original"));
-    } else if (a.isLocal) {
+    } else if (a.isLocal || isLocalZimSource(a.source)) {
+      // Match the filter logic at the LOCAL chip: a Zimbabwean source
+      // counts as local even if the upstream loader stamped isLocal:false
+      // (the archive does, so newzimbabwe.com / bulawayo24 entries used
+      // to slip through as "Foreign" on the Local tab — they no longer do).
       tagRow.append($('<span class="press-marker local-press">').text("Local"));
     } else if (a.source) {
       tagRow.append($('<span class="press-marker foreign-press">').text("Foreign"));
