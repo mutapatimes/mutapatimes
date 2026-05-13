@@ -344,6 +344,10 @@ def collect_job_cards():
          "Turn Zimbabwean public data into clear, visual stories. Extend the live economy briefing, prototype new ways to make numbers readable, and bring your own data ideas.",
          "Fully remote · 3 days a week · 3 months · Rolling intake"),
     ]
+    # Internships are evergreen — stamp them with today's date every run
+    # so they always pass the 30-day freshness gate. Self-bumping, no
+    # monthly maintenance.
+    intern_date = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     for slug, headline, body, attribution in internships:
         out.append({
             "url": f"https://mutapatimes.com/jobs#{slug}",
@@ -352,7 +356,7 @@ def collect_job_cards():
             "body": body,
             "attribution": attribution,
             "slug": slug,
-            "date": "2026-05-01T00:00:00Z",
+            "date": intern_date,
         })
     # External jobs
     p = os.path.join(ROOT, "data", "jobs.json")
