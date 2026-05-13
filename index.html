@@ -17,7 +17,6 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- DNS prefetch for external domains -->
-    <link rel="dns-prefetch" href="https://s3.tradingview.com">
     <link rel="dns-prefetch" href="https://translate.google.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
@@ -28,7 +27,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="preload" as="image" href="img/banner.png">
+    <link rel="preload" as="image" href="img/banner.webp" type="image/webp">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css?v=25">
     <meta name="title" content="The Mutapa Times">
@@ -227,7 +226,10 @@
 
   <!-- Banner image -->
   <div class="editorial-landscape-wrap">
-    <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline" width="1000" height="200">
+    <picture>
+      <source srcset="img/banner.webp" type="image/webp">
+      <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline" width="1000" height="200">
+    </picture>
   </div>
 
   <!-- Spotlight — full width above grid -->

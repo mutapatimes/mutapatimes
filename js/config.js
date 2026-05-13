@@ -1042,7 +1042,7 @@ function generateShareImage(articleData) {
     img.crossOrigin = 'anonymous';
     img.onload = function() { resolve(img); };
     img.onerror = function() { resolve(null); };
-    img.src = 'img/banner.png';
+    img.src = 'img/banner.webp';
   });
   var articleImgPromise = new Promise(function(resolve) {
     if (articleData.image) {
