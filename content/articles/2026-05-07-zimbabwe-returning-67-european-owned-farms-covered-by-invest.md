@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe returning 67 European-owned farms covered by investment treaties"
+date: 2026-05-07T13:19:45.000Z
+author: Reuters
+category: Business
+image: 
+summary: "Zimbabwe returning 67 European-owned farms covered by investment treaties"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQU1MzazBDRXJnS1VyTUpqZFZ0Z2UzcGdSQ1NSNGZTdHlubS1fcXh4cW9zZkdKLUxPM0Q5QV9XUzktNl9ROXFNa3k5U3JGRHpoVGotUkVjdnkyUzlETVR1VjRZTENTcUNMQ0hPb0swZE40QTZWdkdqLU5mRl9GR2pZNmJGdEtuTDJXQ1hvVjk0Q3REdU5nQktveXZqSGdqTzA4TkRpU2tGZ0t3NV9YdlBmUVBVQnZPTVhMTk9Pai1uWUFrX19vUHc5VE8zVVc5Z1lXcWVMYVdB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Reuters.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQU1MzazBDRXJnS1VyTUpqZFZ0Z2UzcGdSQ1NSNGZTdHlubS1fcXh4cW9zZkdKLUxPM0Q5QV9XUzktNl9ROXFNa3k5U3JGRHpoVGotUkVjdnkyUzlETVR1VjRZTENTcUNMQ0hPb0swZE40QTZWdkdqLU5mRl9GR2pZNmJGdEtuTDJXQ1hvVjk0Q3REdU5nQktveXZqSGdqTzA4TkRpU2tGZ0t3NV9YdlBmUVBVQnZPTVhMTk9Pai1uWUFrX19vUHc5VE8zVVc5Z1lXcWVMYVdB?oc=5)

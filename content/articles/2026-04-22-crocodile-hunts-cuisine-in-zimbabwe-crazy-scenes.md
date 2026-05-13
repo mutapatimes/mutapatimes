@@ -1,0 +1,16 @@
+---
+title: "Crocodile hunts cuisine in Zimbabwe crazy scenes"
+date: 2026-04-22T07:00:00.000Z
+author: Kids News
+category: Tech
+image: 
+summary: "Crocodile hunts cuisine in Zimbabwe crazy scenes"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMXkyMTNOUUx0OG1rcnhGN1UzMnI4eklnSTd5XzRNWldicHVZWHRyY3RIbko1d2c1Sm13NHRZWWxoMU5hbmk4NUI4bkFrd3JuRmN3YlotVHBtc3JNSUczZFp6Y0JEcmFONnRObTFPcWM0XzZnUUVSLU9oY05qOUpYMXRmbzVIcy1neTluTEplM1d2d3NVWVYzX05WUENjWTV4R3Z6WVVEdVh6UGpQb2YxVV8zaUdWV0l3dTJKMGl6VzhlSDRpODBwNTdFZXdsUXJWc1BLcGJUOS03LXJWRGNEeA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Kids News.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMXkyMTNOUUx0OG1rcnhGN1UzMnI4eklnSTd5XzRNWldicHVZWHRyY3RIbko1d2c1Sm13NHRZWWxoMU5hbmk4NUI4bkFrd3JuRmN3YlotVHBtc3JNSUczZFp6Y0JEcmFONnRObTFPcWM0XzZnUUVSLU9oY05qOUpYMXRmbzVIcy1neTluTEplM1d2d3NVWVYzX05WUENjWTV4R3Z6WVVEdVh6UGpQb2YxVV8zaUdWV0l3dTJKMGl6VzhlSDRpODBwNTdFZXdsUXJWc1BLcGJUOS03LXJWRGNEeA?oc=5)

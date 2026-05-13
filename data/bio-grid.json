@@ -1,7 +1,39 @@
 {
-  "fetched_at": "2026-05-13T09:43:59+00:00",
+  "fetched_at": "2026-05-13T11:28:27+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Embassy Islamabad Hosts 7th IYDS",
+      "link": "https://mutapatimes.com/news/2026-05-13-zimbabwe-embassy-islamabad-hosts-7th-iyds-7bd31a",
+      "image": "https://www.mutapatimes.com/img/cards/news/28c05d2d9b0e.png",
+      "pubDate": "2026-05-13T09:55:50+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe, Botswana vaccinate 72,000 cattle against FMD as South Africa battles outbreak control challenges",
+      "link": "https://mutapatimes.com/articles/2026-05-13-zimbabwe-botswana-vaccinate-72000-cattle-against-fmd-as-sout",
+      "image": "https://www.mutapatimes.com/img/cards/news/52b4f02c4332.png",
+      "pubDate": "2026-05-13T09:45:28+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe, Botswana vaccinate 72,000 cattle against FMD as South Africa battles outbreak control challenges",
+      "link": "https://mutapatimes.com/news/2026-05-13-zimbabwe-botswana-vaccinate-72-000-cattle-against-fmd-as-sou-8d6b2c",
+      "image": "https://www.mutapatimes.com/img/cards/news/d8e132d93e01.png",
+      "pubDate": "2026-05-13T09:45:28+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Former Minister Mzembi acquitted of abuse of office charges",
+      "link": "https://mutapatimes.com/news/2026-05-13-former-minister-mzembi-acquitted-of-abuse-of-office-charges-a648e2",
+      "image": "https://www.mutapatimes.com/img/cards/news/cb2c549f5c95.png",
+      "pubDate": "2026-05-13T08:49:19+00:00",
+      "category": "Entertainment"
+    },
     {
       "kind": "news",
       "title": "Fidelity Gold Refinery intensifies drive to formalise small-scale gold mining sector, plug leakages",
@@ -28,6 +60,14 @@
     },
     {
       "kind": "news",
+      "title": "Freight costs threaten Zimbabwe farmers' jobs due to Iran war",
+      "link": "https://mutapatimes.com/articles/2026-05-12-freight-costs-threaten-zimbabwe-farmers-jobs-due-to-iran-war",
+      "image": "https://www.mutapatimes.com/img/cards/news/c66e82c358df.png",
+      "pubDate": "2026-05-12T23:47:19+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
       "title": "Zimbabwe to review lithium export quotas next year as producers set up processing plants",
       "link": "https://mutapatimes.com/articles/2026-05-12-zimbabwe-to-review-lithium-export-quotas-next-year-as-produc",
       "image": "https://www.mutapatimes.com/img/cards/news/046de12b3405.png",
@@ -49,6 +89,70 @@
       "image": "https://www.mutapatimes.com/img/cards/news/8343c7d844f3.png",
       "pubDate": "2026-05-12T23:34:40+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Freight costs threaten Zimbabwe farmers’ livelihoods as Iran war disrupts exports",
+      "link": "https://mutapatimes.com/articles/2026-05-12-freight-costs-threaten-zimbabwe-farmers-livelihoods-as-iran",
+      "image": "https://www.mutapatimes.com/img/cards/news/3e42f3b135ca.png",
+      "pubDate": "2026-05-12T23:10:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Freight costs threaten Zimbabwe farmers’ livelihoods as Iran war disrupts exports",
+      "link": "https://mutapatimes.com/news/2026-05-12-freight-costs-threaten-zimbabwe-farmers-livelihoods-as-iran-8dc4d5",
+      "image": "https://www.mutapatimes.com/img/cards/news/22b44b73558c.png",
+      "pubDate": "2026-05-12T23:10:45+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Who is funding anti-migrant protests in SA? – Zimbabwean international relations expert urges probe into organisers",
+      "link": "https://mutapatimes.com/news/2026-05-12-who-is-funding-anti-migrant-protests-in-sa-zimbabwean-intern-c352e3",
+      "image": "https://www.mutapatimes.com/img/cards/news/89a3a29caccd.png",
+      "pubDate": "2026-05-12T23:07:27+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Tourism boost as Zimbabwe hosts Africa Skills Week",
+      "link": "https://mutapatimes.com/articles/2026-05-12-tourism-boost-as-zimbabwe-hosts-africa-skills-week",
+      "image": "https://www.mutapatimes.com/img/cards/news/fc528a6ace90.png",
+      "pubDate": "2026-05-12T23:00:53+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Tourism boost as Zimbabwe hosts Africa Skills Week",
+      "link": "https://mutapatimes.com/news/2026-05-12-tourism-boost-as-zimbabwe-hosts-africa-skills-week-f3c9a1",
+      "image": "https://www.mutapatimes.com/img/cards/news/22c0770d06e4.png",
+      "pubDate": "2026-05-12T23:00:53+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Police hunt drug kingpins linked to armed robberies",
+      "link": "https://mutapatimes.com/news/2026-05-12-police-hunt-drug-kingpins-linked-to-armed-robberies-4e5e4f",
+      "image": "https://www.mutapatimes.com/img/cards/news/f28a8b26cc73.png",
+      "pubDate": "2026-05-12T23:00:47+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Millennium Heights apartments sell out fast as demand surges",
+      "link": "https://mutapatimes.com/articles/2026-05-12-millennium-heights-apartments-sell-out-fast-as-demand-surges",
+      "image": "https://www.mutapatimes.com/img/cards/news/4c6ca5692fd7.png",
+      "pubDate": "2026-05-12T23:00:18+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Millennium Heights apartments sell out fast as demand surges",
+      "link": "https://mutapatimes.com/news/2026-05-12-millennium-heights-apartments-sell-out-fast-as-demand-surges-ddf831",
+      "image": "https://www.mutapatimes.com/img/cards/news/3df5c3418722.png",
+      "pubDate": "2026-05-12T23:00:18+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -377,110 +481,6 @@
       "image": "https://mutapatimes.com/img/cards/properties/a69e3291320f.png",
       "pubDate": "2026-05-12T22:00:00+00:00",
       "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 450,000 — For Sale – Greendale | Usd $450,000 Negotiable (Greendale North, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-xds244726",
-      "image": "https://mutapatimes.com/img/cards/properties/86eb663d4ff8.png",
-      "pubDate": "2026-05-12T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "news",
-      "title": "Man loses vehicle rebate dispute with Zimra",
-      "link": "https://mutapatimes.com/news/2026-05-12-man-loses-vehicle-rebate-dispute-with-zimra-a470ca",
-      "image": "https://www.mutapatimes.com/img/cards/news/cd110c6adae3.png",
-      "pubDate": "2026-05-12T20:14:55+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "3 soldiers in court over robbery spree",
-      "link": "https://mutapatimes.com/news/2026-05-12-3-soldiers-in-court-over-robbery-spree-faf6f2",
-      "image": "https://www.mutapatimes.com/img/cards/news/3c16965e6f58.png",
-      "pubDate": "2026-05-12T20:14:02+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Housemaid hides stolen US$500 in maize field",
-      "link": "https://mutapatimes.com/news/2026-05-12-housemaid-hides-stolen-us-500-in-maize-field-415be6",
-      "image": "https://www.mutapatimes.com/img/cards/news/cc291d0b9d0f.png",
-      "pubDate": "2026-05-12T20:12:54+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Police dismiss fake Douglas Coltart statement",
-      "link": "https://mutapatimes.com/news/2026-05-12-police-dismiss-fake-douglas-coltart-statement-1bc4ce",
-      "image": "https://www.mutapatimes.com/img/cards/news/8d6946b04660.png",
-      "pubDate": "2026-05-12T20:10:36+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "PV Sibanda Politburo appointment sends shockwaves",
-      "link": "https://mutapatimes.com/news/2026-05-12-pv-sibanda-politburo-appointment-sends-shockwaves-da175c",
-      "image": "https://www.mutapatimes.com/img/cards/news/9c934efd94e7.png",
-      "pubDate": "2026-05-12T20:09:44+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "US war on Iran war disrupts Zimbabwe exports",
-      "link": "https://mutapatimes.com/articles/2026-05-12-us-war-on-iran-war-disrupts-zimbabwe-exports",
-      "image": "https://www.mutapatimes.com/img/cards/news/2c7cf97137bc.png",
-      "pubDate": "2026-05-12T20:04:45+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "US war on Iran war disrupts Zimbabwe exports",
-      "link": "https://mutapatimes.com/news/2026-05-12-us-war-on-iran-war-disrupts-zimbabwe-exports-52036c",
-      "image": "https://www.mutapatimes.com/img/cards/news/d588157334bb.png",
-      "pubDate": "2026-05-12T20:04:45+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe moves to cut mobile money charges",
-      "link": "https://mutapatimes.com/articles/2026-05-12-zimbabwe-moves-to-cut-mobile-money-charges",
-      "image": "https://www.mutapatimes.com/img/cards/news/6d98d78cb4da.png",
-      "pubDate": "2026-05-12T20:03:13+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe moves to cut mobile money charges",
-      "link": "https://mutapatimes.com/news/2026-05-12-zimbabwe-moves-to-cut-mobile-money-charges-723b78",
-      "image": "https://www.mutapatimes.com/img/cards/news/9d8251b69a70.png",
-      "pubDate": "2026-05-12T20:03:13+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Bulawayo moves to demolish illegal LPG outlets",
-      "link": "https://mutapatimes.com/news/2026-05-12-bulawayo-moves-to-demolish-illegal-lpg-outlets-0227e3",
-      "image": "https://www.mutapatimes.com/img/cards/news/757d45aadfc8.png",
-      "pubDate": "2026-05-12T20:01:28+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Garwe fires warning shots",
-      "link": "https://mutapatimes.com/news/2026-05-12-garwe-fires-warning-shots-f2fb9a",
-      "image": "https://www.mutapatimes.com/img/cards/news/87d61b97fd95.png",
-      "pubDate": "2026-05-12T20:00:35+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Beitbridge man found with counterfeit Zimra and immigration stamps",
-      "link": "https://mutapatimes.com/news/2026-05-12-beitbridge-man-found-with-counterfeit-zimra-and-immigration-0ecd42",
-      "image": "https://www.mutapatimes.com/img/cards/news/7f0606b18ce9.png",
-      "pubDate": "2026-05-12T19:58:57+00:00",
-      "category": "News"
     }
   ]
 }
