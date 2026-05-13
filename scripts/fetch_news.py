@@ -248,7 +248,10 @@ def is_zw_relevant(article):
         except Exception:
             pass
 
-    source = (article.get("source", "") or "").lower()
+    raw_source = article.get("source") or ""
+    if isinstance(raw_source, dict):
+        raw_source = raw_source.get("name") or ""
+    source = str(raw_source).lower()
     if any(s in source for s in _ZW_SOURCES):
         return True
     text = (title_lower + " " + ((article.get("description", "") or "")).lower())
