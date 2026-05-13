@@ -52,7 +52,7 @@ def collect_items():
             entries = json.load(open(idx_path))
         except (json.JSONDecodeError, OSError):
             entries = []
-        keep = {"Business", "Policy", "Tech", "Economy", "Environment"}
+        keep = {"Business", "Policy", "Tech", "Economy", "Environment", "Culture"}
         # Newest first
         entries = sorted(
             [e for e in entries if isinstance(e, dict)],

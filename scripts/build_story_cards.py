@@ -237,7 +237,7 @@ def collect_business_cards():
         entries = json.load(open(idx_path))
     except (json.JSONDecodeError, OSError):
         return out
-    keep_cats = {"Business", "Policy", "Tech", "Economy", "Environment"}
+    keep_cats = {"Business", "Policy", "Tech", "Economy", "Environment", "Culture"}
     for e in entries:
         if not isinstance(e, dict):
             continue

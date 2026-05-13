@@ -1150,7 +1150,7 @@ def collect_stories_items(base):
             entries = json.load(open(idx_path))
         except (json.JSONDecodeError, OSError):
             entries = []
-        keep = {"Business", "Policy", "Tech", "Economy", "Environment"}
+        keep = {"Business", "Policy", "Tech", "Economy", "Environment", "Culture"}
         for e in entries:
             if not isinstance(e, dict):
                 continue
