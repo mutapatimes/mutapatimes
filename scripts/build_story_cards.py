@@ -42,6 +42,31 @@ os.makedirs(OUT_DIR, exist_ok=True)
 W = 1080
 H = 1920
 
+# Only render cards for articles published in the last N days. The CMS
+# index spans years, so without this gate every archive article from
+# 2017 onward keeps a 9:16 card alive (~110KB each) and the directory
+# grows until GitHub Pages refuses to publish. 30d matches build_feed_cards.
+MAX_AGE_DAYS = 30
+
+
+def _is_fresh(date_str):
+    """Return True if the date string parses and is within MAX_AGE_DAYS.
+    Internships and other dateless items pass through (collectors flag
+    them with date=None to opt out of the freshness gate)."""
+    if not date_str:
+        return True
+    try:
+        clean = date_str.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(clean)
+    except (ValueError, TypeError):
+        return True  # unparseable → keep, don't lose data on a format quirk
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    try:
+        return (datetime.now(timezone.utc) - dt).days <= MAX_AGE_DAYS
+    except (TypeError, ValueError):
+        return True
+
 # ── URL → card filename ───────────────────────────────────
 def card_hash(url):
     return hashlib.md5((url or "").encode("utf-8")).hexdigest()[:12]
@@ -391,8 +416,16 @@ def main():
     items += collect_business_cards()
     items += collect_property_cards()
     items += collect_job_cards()
-    print(f"  Collected {len(items)} items "
+    raw_count = len(items)
+
+    # Freshness gate — drop anything older than MAX_AGE_DAYS so old
+    # archive articles stop keeping cards alive forever. Items with no
+    # date (internships) pass through.
+    items = [it for it in items if _is_fresh(it.get("date"))]
+    stale = raw_count - len(items)
+    print(f"  Collected {len(items)} fresh items "
           f"(business + property + jobs + internships)"
+          + (f"  · dropped {stale} > {MAX_AGE_DAYS}d" if stale else "")
           + ("  [--force]" if force else ""))
 
     rendered = cached = failed = 0
