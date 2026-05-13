@@ -32,15 +32,19 @@ html {
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 html, body { -webkit-tap-highlight-color: transparent; }
 
-/* Subtle page entrance — body fades up on first paint. Disabled if
-   the visitor prefers reduced motion. */
+/* Subtle page entrance — body fades in on first paint.
+   IMPORTANT: opacity-only, NEVER transform on body. A transform on
+   body creates a stacking context that breaks `position: fixed` for
+   every descendant (topbar, drawer, backdrop) — they end up
+   positioned relative to body instead of the viewport, so they
+   scroll away with the page. Don't reintroduce transform here. */
 @media (prefers-reduced-motion: no-preference) {
   body {
-    animation: page-enter 0.5s var(--ease-out) both;
+    animation: page-enter 0.4s var(--ease-out);
   }
   @keyframes page-enter {
-    from { opacity: 0; transform: translateY(6px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 }
 
@@ -6589,11 +6593,21 @@ body.story-viewer-open { overflow: hidden; }
   justify-content: space-between;
   padding: 0 22px;
   z-index: 1080;
-  transform: translateY(-100%);
-  transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
-  pointer-events: none;
+  /* Always visible. Sticks at top from page load so the hamburger
+     is genuinely accessible from any scroll position. */
+  transform: none;
+  transition: box-shadow 0.32s var(--ease-out);
+  pointer-events: auto;
 }
-body.is-scrolled .topbar { transform: translateY(0); pointer-events: auto; }
+/* Subtle shadow once the user scrolls past the masthead — gives the
+   topbar lift so it reads as floating above the content. */
+body.is-scrolled .topbar {
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+}
+/* Push page content down so the masthead isn't hidden under the
+   always-visible topbar. */
+body { padding-top: 52px; }
+@media (max-width: 600px) { body { padding-top: 48px; } }
 .topbar-brand {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 800;
@@ -6700,10 +6714,14 @@ body.is-scrolled .topbar { transform: translateY(0); pointer-events: auto; }
   right: 0;
   bottom: 0;
   width: min(92vw, 400px);
+  height: 100%;           /* explicit so internal scroll always works */
+  max-height: 100dvh;     /* dynamic viewport on mobile, accounts for nav bar */
   background: #fff;
   box-shadow: -16px 0 48px rgba(0,0,0,0.10);
-  padding: 28px 32px 32px;
+  padding: 28px 32px 48px;  /* extra bottom padding so CTA isn't flush */
   overflow-y: auto;
+  overscroll-behavior: contain;  /* drawer scroll doesn't pull the page */
+  -webkit-overflow-scrolling: touch;
   z-index: 1100;
   transform: translateX(100%);
   transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
