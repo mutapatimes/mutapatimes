@@ -928,6 +928,98 @@ def topic_hashtags(headline, max_tags=3):
     return " ".join(found)
 
 
+# ── Smart hashtag system: platform-aware tier mix ────────────
+# Each platform has different algorithmic preferences. Twitter punishes
+# hashtag stacking (>3 = throttled reach); Instagram rewards 8-15
+# (discovery surface); TikTok rewards trending + niche pairing.
+HASHTAG_BROAD = [
+    "#Zimbabwe", "#Africa", "#ZimbabweNews", "#News",
+]
+HASHTAG_MID = [
+    "#ZimDiaspora", "#ZimbabweanDiaspora", "#AfricaNews", "#SADC",
+    "#SouthernAfrica", "#ZimTwitter", "#ZimX",
+    "#Harare", "#Bulawayo", "#AfricaRising",
+]
+# Weekday-rotating trending pool. Same article posted on different
+# weekdays picks up fresh discovery tags — variety beats repetition for
+# the algorithms. Index 0 = Monday.
+HASHTAG_TRENDING_BY_WEEKDAY = [
+    ["#MondayBriefing", "#ZimMonday"],
+    ["#TuesdayThoughts", "#ZimTuesday"],
+    ["#MidweekZim", "#WednesdayWisdom"],
+    ["#ThursdayThoughts", "#TBT"],
+    ["#FridayFeeling", "#ZimFriday", "#WeekendRead"],
+    ["#SaturdayVibes", "#ZimWeekend"],
+    ["#SundayBrunch", "#SundayThoughts", "#WeekRecap"],
+]
+HASHTAG_PLATFORM_PROFILE = {
+    "Twitter":   {"max": 2,  "broad": 1, "mid": 0, "niche": 1, "trending": 0},
+    "Bluesky":   {"max": 3,  "broad": 1, "mid": 1, "niche": 1, "trending": 0},
+    "Threads":   {"max": 5,  "broad": 1, "mid": 1, "niche": 2, "trending": 1},
+    "LinkedIn":  {"max": 4,  "broad": 1, "mid": 1, "niche": 2, "trending": 0},
+    "Facebook":  {"max": 3,  "broad": 1, "mid": 1, "niche": 1, "trending": 0},
+    "Instagram": {"max": 12, "broad": 2, "mid": 3, "niche": 6, "trending": 1},
+    "TikTok":    {"max": 9,  "broad": 2, "mid": 2, "niche": 4, "trending": 1},
+}
+
+
+def smart_hashtags(platform, headline, when=None):
+    """Build a platform-aware, deduped hashtag string.
+
+    Returns a single space-joined string. Mix of:
+      • Broad (#Zimbabwe, #Africa) — high search volume, low specificity
+      • Mid (#ZimDiaspora, #Harare) — medium volume, audience-targeted
+      • Niche (topic-derived from TOPIC_HASHTAG_MAP) — high relevance
+      • Trending (weekday-rotating pool) — discovery variety
+
+    Mix per platform reflects each algorithm's preference: Twitter
+    punishes density, Instagram/TikTok reward it.
+    """
+    profile = HASHTAG_PLATFORM_PROFILE.get(platform)
+    if not profile:
+        return topic_hashtags(headline, max_tags=3)
+
+    # Niche tags from headline keywords (sorted longest-first so
+    # multi-word matches win over substrings)
+    h = headline.lower()
+    niche_tags = []
+    for keyword in sorted(TOPIC_HASHTAG_MAP.keys(), key=len, reverse=True):
+        tag = TOPIC_HASHTAG_MAP[keyword]
+        if keyword in h and tag not in niche_tags:
+            niche_tags.append(tag)
+        if len(niche_tags) >= profile["niche"]:
+            break
+
+    # Weekday-rotating trending overlay
+    when = when or datetime.now(timezone.utc)
+    trending_pool = HASHTAG_TRENDING_BY_WEEKDAY[when.weekday()]
+
+    out = []
+    seen = set()
+
+    def add(tags, limit):
+        for t in tags:
+            if limit <= 0:
+                break
+            key = t.lower()
+            if key in seen:
+                continue
+            out.append(t)
+            seen.add(key)
+            limit -= 1
+
+    add(HASHTAG_BROAD,    profile["broad"])
+    add(HASHTAG_MID,      profile["mid"])
+    add(niche_tags,       profile["niche"])
+    add(trending_pool,    profile["trending"])
+
+    # If we're still short of the desired count (e.g. niche pool was
+    # empty for an off-topic headline), top up from MID.
+    add(HASHTAG_MID,      profile["max"] - len(out))
+
+    return " ".join(out[: profile["max"]])
+
+
 def fallback_caption(platform, headline, description, source, mutapa_url):
     """Used when Gemini is unavailable. Tries to be reasonably engaging
     even without AI rewriting — uses description for context if present."""
@@ -936,8 +1028,9 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
     if len(summary) > 200:
         summary = summary[:199].rstrip() + "…"
 
-    # Headline-derived hashtags (3 tags for short posts, 4 for X)
-    short_tags = topic_hashtags(headline, max_tags=3)
+    # Platform-tuned hashtag stack — Twitter gets 2, Instagram gets 12,
+    # day-of-week trending overlay rotates discovery tags through the week.
+    tags_for_platform = smart_hashtags(platform, headline)
 
     if platform == "LinkedIn":
         body_lines = [headline]
@@ -951,7 +1044,7 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
             f"Source: {src}",
             mutapa_url,
             "",
-            short_tags,
+            tags_for_platform,
         ]
         return "\n".join(body_lines)
 
@@ -961,19 +1054,21 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
             body += f"\n\n{summary}"
         body += "\n\nWhat do you think?\n"
         body += f"\nvia {src}\n{mutapa_url}"
+        if tags_for_platform:
+            body += f"\n\n{tags_for_platform}"
         return body
 
     if platform == "Threads":
         body = headline
         if summary:
             body += f"\n\n{summary}"
-        body += f"\n\nvia {src}\n{mutapa_url}\n\n{short_tags}"
+        body += f"\n\nvia {src}\n{mutapa_url}\n\n{tags_for_platform}"
         return body
 
     if platform == "Twitter":
-        # Strict 280-char budget with t.co URL counting as 23. We budget the
-        # URL (23) + " via {src}" + headline + 2 newlines + hashtag line.
-        tags = short_tags  # e.g. "#Zimbabwe #Lithium #Mining"
+        # Strict 280-char budget. t.co URL counts as 23. We budget URL +
+        # " via {src}" + headline + 2 newlines + the 2-tag stack.
+        tags = tags_for_platform
         attribution = f" via {src}"
         OVERHEAD = 23 + 4 + len(attribution) + len(tags) + 4
         title = headline
@@ -982,43 +1077,21 @@ def fallback_caption(platform, headline, description, source, mutapa_url):
         return f"{title}{attribution}\n{mutapa_url}\n\n{tags}"
 
     if platform == "Instagram":
-        # IG gets a richer hashtag set — 8-10 tags for discovery, deduped
-        topic = topic_hashtags(headline, max_tags=4).split()
-        discovery = ["#ZimbabweNews", "#Africa", "#ZimDiaspora",
-                     "#ZimbabweanDiaspora", "#AfricaNews", "#News"]
-        seen = set(t.lower() for t in topic)
-        ig_tags_list = list(topic)
-        for t in discovery:
-            if t.lower() not in seen:
-                ig_tags_list.append(t)
-                seen.add(t.lower())
-        ig_tags = " ".join(ig_tags_list)
         body = headline
         if summary:
             body += f"\n\n{summary}"
         body += "\n\nFull briefing — link in bio."
         body += f"\nvia {src}"
-        body += f"\n\n{ig_tags}"
+        body += f"\n\n{tags_for_platform}"
         return body
 
     if platform == "TikTok":
-        # TikTok loves dense hashtag stacks for discovery — 12 tags
-        topic = topic_hashtags(headline, max_tags=4).split()
-        discovery = ["#ZimbabweNews", "#ZimTok", "#ZimTikTok", "#FYP",
-                     "#ZimDiaspora", "#Africa", "#AfricaNews", "#News"]
-        seen = set(t.lower() for t in topic)
-        tt_tags_list = list(topic)
-        for t in discovery:
-            if t.lower() not in seen:
-                tt_tags_list.append(t)
-                seen.add(t.lower())
-        tt_tags = " ".join(tt_tags_list)
         body = headline
         if summary:
             body += f"\n\n{summary[:120]}"
         body += "\n\nFull story — link in bio."
         body += f"\nvia {src}"
-        body += f"\n\n{tt_tags}"
+        body += f"\n\n{tags_for_platform}"
         return body
 
     return headline
