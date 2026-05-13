@@ -661,6 +661,92 @@ def build_spotlight_html(spotlight_articles, gnews_extras=None):
     )
 
 
+def build_stories_rail_html():
+    """IG-Stories-style highlight rail for the newsletter top.
+
+    Each chip is an <a> linking to the homepage with ?story=KEY&snap=0,
+    so taps on mobile Mail open Safari and auto-launch the viewer for
+    that category. The "IG glow" ring is a static linear-gradient on
+    the chip wrapper — Apple Mail / iOS Mail / Gmail web render it;
+    Outlook desktop falls back to the solid chip colour but the circle
+    still reads. Inside the ring sits the faded brand-tone chip with the
+    category label centred (same pattern as the site rail).
+    """
+    # Mirrors CHIP_COLORS from js/stories.js — pale brand tones with
+    # dark ink text legibility. We seed the rail with a curated set
+    # that almost always has fresh content on a publish day; if a key
+    # has nothing on the site that day, the deep-link gracefully
+    # degrades to just landing on the homepage.
+    chips = [
+        ("_latest",  "Latest",   "#E8C9C5"),  # faded brand-red
+        ("Business", "Business", "#ECE2CF"),  # warm cream
+        ("Policy",   "Policy",   "#D8E6D5"),  # sage green
+        ("Tech",     "Tech",     "#DDE4ED"),  # pale slate
+        ("Sport",    "Sport",    "#F0DCC6"),  # warm peach
+        ("Culture",  "Culture",  "#E5DBE8"),  # pale lavender
+    ]
+    # Classic IG ring — yellow → orange → pink → purple → blue.
+    ig_glow = (
+        "linear-gradient(135deg,#feda75 0%,#fa7e1e 25%,"
+        "#d62976 50%,#962fbf 75%,#4f5bd5 100%)"
+    )
+
+    cells = ""
+    for key, label, chip_bg in chips:
+        url = f"https://www.mutapatimes.com/?story={urllib.parse.quote(key)}&snap=0"
+        cells += (
+            '<td align="center" valign="top" '
+            'style="padding:0 6px;">'
+            f'<a href="{url}" target="_blank" '
+            'style="text-decoration:none;display:inline-block;">'
+            # Outer gradient ring (IG glow) — table for Outlook compat
+            '<table role="presentation" cellpadding="0" cellspacing="0" '
+            'border="0" align="center" '
+            f'style="background-image:{ig_glow};'
+            'background-color:#d62976;'  # Outlook desktop fallback
+            'border-radius:44px;">'
+            '<tr><td style="padding:3px;">'
+            # Inner chip — faded brand tone, label centred
+            '<table role="presentation" cellpadding="0" cellspacing="0" '
+            'border="0" align="center" '
+            f'style="background-color:{chip_bg};border-radius:40px;'
+            'width:80px;height:80px;">'
+            '<tr><td align="center" valign="middle" '
+            'width="80" height="80" '
+            'style="width:80px;height:80px;'
+            'font-family:Helvetica,Arial,sans-serif;'
+            'font-size:11px;font-weight:700;color:#1a1a1a;'
+            'line-height:1.1;text-transform:uppercase;'
+            f'letter-spacing:0.04em;text-align:center;">{escape_html(label)}'
+            '</td></tr>'
+            '</table>'
+            '</td></tr>'
+            '</table>'
+            '</a>'
+            '</td>'
+        )
+
+    return (
+        '<!-- Stories rail — IG-style highlights, taps open Safari -->'
+        '<tr>'
+        '<td style="padding:14px 8px 8px;background:#ffffff;'
+        'border-bottom:1px solid #e8e6e3;">'
+        '<table role="presentation" width="100%" cellpadding="0" '
+        'cellspacing="0" border="0">'
+        '<tr>'
+        f'{cells}'
+        '</tr>'
+        '</table>'
+        '<p style="font-family:Helvetica,Arial,sans-serif;'
+        'font-size:10px;color:#6b6b6b;margin:10px 0 0;'
+        'text-align:center;letter-spacing:0.04em;">'
+        'Tap a story &middot; opens in your browser'
+        '</p>'
+        '</td>'
+        '</tr>'
+    )
+
+
 def build_tsumo_html(proverb):
     """Build the Tsumo of the Day section for the newsletter."""
     if not proverb:
@@ -791,6 +877,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
         preheader = f"Top Zimbabwe headlines from foreign press &mdash; {date_display}"
 
     spotlight_html = build_spotlight_html(spotlight_articles, gnews_extras=gnews_extras)
+    stories_rail_html = build_stories_rail_html()
     tsumo_html = build_tsumo_html(tsumo)
 
     # Build category article rows
@@ -944,6 +1031,8 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
               </p>
             </td>
           </tr>
+
+          {stories_rail_html}
 
           {spotlight_html}
 

@@ -252,16 +252,6 @@ nav a.economy-btn.active {
 }
 
 /* ==========================================================================
-   TradingView ticker
-   ========================================================================== */
-.tradingview-widget-container {
-  height: 46px;
-  overflow: hidden;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 4px;
-}
-
-/* ==========================================================================
    Banner image
    ========================================================================== */
 .editorial-landscape-wrap {
