@@ -232,6 +232,17 @@ def page_nav(active="articles", depth=1):
           <a target="_self"{cls("fx")} href="/fx">FX</a>
       </p>
       <p>
+          <a target="_self"{cls("cities")} href="#" class="cities-nav-toggle" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
+          <ul class="cities-dropdown" aria-label="Zimbabwe cities">
+            <li><a href="/harare-news">Harare</a></li>
+            <li><a href="/bulawayo-news">Bulawayo</a></li>
+            <li><a href="/mutare-news">Mutare</a></li>
+            <li><a href="/gweru-news">Gweru</a></li>
+            <li><a href="/masvingo-news">Masvingo</a></li>
+            <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+          </ul>
+      </p>
+      <p>
           <a target="_self"{cls("property")} href="/property">Property</a>
       </p>
       <p>

@@ -16,10 +16,17 @@ STATIC_PAGES = [
     ("weather", 0.9, "daily"),
     ("property", 0.8, "daily"),
     ("jobs", 0.9, "hourly"),
+    # City news hubs — high SEO value, "{city} news latest" queries
+    ("harare-news",          0.95, "hourly"),
+    ("bulawayo-news",        0.95, "hourly"),
+    ("mutare-news",          0.90, "daily"),
+    ("gweru-news",           0.90, "daily"),
+    ("masvingo-news",        0.90, "daily"),
+    ("victoria-falls-news",  0.90, "daily"),
     ("links", 0.7, "daily"),
     ("about", 0.7, "monthly"),
     ("advertising", 0.6, "monthly"),
-    ("brand", 0.4, "monthly"),
+    ("privacy", 0.3, "yearly"),
     ("terms", 0.3, "yearly"),
 ]
 
