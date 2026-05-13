@@ -77,12 +77,18 @@ def collect_items():
     # 2) Jobs (external + internships)
     jobs_path = os.path.join(ROOT, "data", "jobs.json")
     internships = [
-        ("Social Intern", "Help grow our social channels. Pitch fresh formats and ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         f"{BASE_URL}/jobs#social-intern"),
-        ("Editor Intern", "Pitch, draft and edit original explainers. Bring fresh editorial angles. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         f"{BASE_URL}/jobs#editor-intern"),
-        ("Data Intern",   "Turn Zimbabwe public data into clear visual stories. Bring new data ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         f"{BASE_URL}/jobs#data-intern"),
+        ("Junior Social Media Assistant",
+         "Help grow our social channels. Pitch fresh formats and ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         f"{BASE_URL}/jobs#social-media"),
+        ("Junior Editorial Coordinator",
+         "Pitch, draft and edit original explainers. Bring fresh editorial angles. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         f"{BASE_URL}/jobs#editorial"),
+        ("Junior Data Analyst",
+         "Turn Zimbabwe public data into clear visual stories. Bring new data ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         f"{BASE_URL}/jobs#data"),
+        ("Business Development Associate",
+         "Open doors for advertisers, sponsors and partners across the Zim diaspora corridor. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         f"{BASE_URL}/jobs#biz-dev"),
     ]
     for title, summary, url in internships:
         items.append({

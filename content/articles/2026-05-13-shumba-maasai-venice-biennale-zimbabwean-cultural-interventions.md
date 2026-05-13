@@ -1,7 +1,7 @@
 ---
 title: "Shumba Maasai Brings Zimbabwean Cultural Interventions to Venice Biennale with Procession Across Historic Campos"
 date: 2026-05-13T12:00:00.000Z
-author: Chiedza Maputo
+author: Tendai Kuwanda
 category: Culture
 image: /img/uploads/venice-biennale-shumba-maasai.jpg
 summary: "Zimbabwean multidisciplinary artist Shumba Maasai led a day of cultural interventions across Venice's historic campos on 9 May, culminating at the Zimbabwe Pavilion at the 61st Venice Biennale — turning public squares into temporary Shona dare spaces of dialogue, storytelling and ceremony."

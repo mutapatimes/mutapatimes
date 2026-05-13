@@ -334,14 +334,17 @@ def collect_job_cards():
     # Internships — each gets a rich pitch in the body so applicants
     # have everything they need from the Story alone.
     internships = [
-        ("social-intern", "Social Intern",
+        ("social-media", "Junior Social Media Assistant",
          "Help grow our social channels. Pitch fresh formats and ideas, spot trends, and shape how The Mutapa Times shows up across Instagram, Threads, X, TikTok and LinkedIn. Bring your own thinking — we like innovation.",
          "Fully remote · 3 days a week · 3 months · Rolling intake"),
-        ("editor-intern", "Editor Intern",
+        ("editorial", "Junior Editorial Coordinator",
          "Pitch, draft and edit original explainers and analysis. Fact-check stories, help shape the twice-weekly newsletter, and bring new editorial angles for telling Zimbabwean stories to a diaspora audience.",
          "Fully remote · 3 days a week · 3 months · Rolling intake"),
-        ("data-intern", "Data Intern",
+        ("data", "Junior Data Analyst",
          "Turn Zimbabwean public data into clear, visual stories. Extend the live economy briefing, prototype new ways to make numbers readable, and bring your own data ideas.",
+         "Fully remote · 3 days a week · 3 months · Rolling intake"),
+        ("biz-dev", "Business Development Associate",
+         "Open doors for The Mutapa Times. Reach out to advertisers, sponsors and content partners across the Zim diaspora corridor — remittance, fintech, airlines, education — and build the revenue side of the publication. Bring your own contact list and ideas.",
          "Fully remote · 3 days a week · 3 months · Rolling intake"),
     ]
     # Internships are evergreen — stamp them with today's date every run

@@ -35,14 +35,14 @@
   }
   var INTERNAL_INTERNSHIPS = [
     {
-      title: 'Social Intern',
+      title: 'Junior Social Media Assistant',
       company: 'The Mutapa Times',
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
       summary: 'Grow and shape our presence across the major social ' +
         'platforms. Spot trends, pitch social-first stories, try ' +
         'new formats. Bring your own ideas — rolling intake.',
-      url: mt('Social Intern', 'My social handles / portfolio links:'),
+      url: mt('Junior Social Media Assistant', 'My social handles / portfolio links:'),
       source: 'Mutapa Times',
       _internship: true,
       _detail: {
@@ -64,7 +64,7 @@
       },
     },
     {
-      title: 'Editor Intern',
+      title: 'Junior Editorial Coordinator',
       company: 'The Mutapa Times',
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
@@ -72,7 +72,7 @@
         'Fact-check stories. Help shape the newsletter. Bring fresh ' +
         'editorial angles and new ways to tell Zimbabwean stories — ' +
         'rolling intake.',
-      url: mt('Editor Intern', 'Three writing samples (links or attached):'),
+      url: mt('Junior Editorial Coordinator', 'Three writing samples (links or attached):'),
       source: 'Mutapa Times',
       _internship: true,
       _detail: {
@@ -93,14 +93,14 @@
       },
     },
     {
-      title: 'Data Intern',
+      title: 'Junior Data Analyst',
       company: 'The Mutapa Times',
       location: 'Remote — Worldwide',
       type: 'Internship · 3 months · 3 days/week',
       summary: 'Turn Zimbabwean public data into clear, visual stories. ' +
         'Extend the live economy briefing. Prototype new ways to make ' +
         'numbers readable. Bring your own data ideas — rolling intake.',
-      url: mt('Data Intern', "A repo, notebook or dataset I'm proud of:"),
+      url: mt('Junior Data Analyst', "A repo, notebook or dataset I'm proud of:"),
       source: 'Mutapa Times',
       _internship: true,
       _detail: {
@@ -117,6 +117,35 @@
           "Knowledge of Zimbabwe's data landscape is a strong plus.",
           "Bonus: a chart library, or basic web (HTML/CSS/JS).",
           "Quietly accurate — we publish the source for every number.",
+        ],
+      },
+    },
+    {
+      title: 'Business Development Associate',
+      company: 'The Mutapa Times',
+      location: 'Remote — Worldwide',
+      type: 'Internship · 3 months · 3 days/week',
+      summary: 'Open doors for The Mutapa Times. Pitch advertisers, ' +
+        'sponsors and content partners across the Zim diaspora corridor. ' +
+        'Bring your own contact list and ideas — rolling intake.',
+      url: mt('Business Development Associate', "Brands or partners I'd open conversations with first:"),
+      source: 'Mutapa Times',
+      _internship: true,
+      _detail: {
+        whatYouDo: [
+          "Identify and reach out to potential advertisers, sponsors and partners — remittance, fintech, airlines, education, diaspora services.",
+          "Draft pitch decks and rate cards alongside the editor.",
+          "Build and maintain a CRM of warm contacts and conversations.",
+          "Respond to inbound advertising and partnership inquiries.",
+          "Represent The Mutapa Times at virtual partner meetings.",
+          "Pitch new revenue formats — sponsored briefings, content partnerships, branded series.",
+        ],
+        whoWeWant: [
+          "Comfortable cold-emailing and following up — politely persistent.",
+          "Network in (or knowledge of) the Zimbabwe diaspora business community.",
+          "Clear writing in English — your pitches will represent the brand.",
+          "Curious about media business models — newsletters, sponsorships, affiliate.",
+          "Bonus: existing relationships in fintech, remittance, airlines or education.",
         ],
       },
     },

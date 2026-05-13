@@ -891,18 +891,22 @@ def collect_job_items(base):
 
     # Mutapa Times internships — first-party, always on
     internships = [
-        ("Social Intern",
+        ("Junior Social Media Assistant",
          "Help grow our social channels. Pitch fresh formats and ideas. "
          "Fully remote, 3 days/week, 3 months. Rolling intake.",
          "My social handles / portfolio links:"),
-        ("Editor Intern",
+        ("Junior Editorial Coordinator",
          "Pitch, draft and edit original explainers. Bring fresh editorial "
          "angles. Fully remote, 3 days/week, 3 months. Rolling intake.",
          "Three writing samples (links or attached):"),
-        ("Data Intern",
+        ("Junior Data Analyst",
          "Turn Zimbabwe public data into clear visual stories. Bring new "
          "data ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
          "A repo, notebook or dataset I am proud of:"),
+        ("Business Development Associate",
+         "Open doors for advertisers, sponsors and partners across the Zim "
+         "diaspora corridor. Fully remote, 3 days/week, 3 months. Rolling intake.",
+         "Brands or partners I would open conversations with first:"),
     ]
     pub = _cat_day_start_utc()
     for role, summary, _samples in internships:
