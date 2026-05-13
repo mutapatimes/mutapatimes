@@ -394,9 +394,77 @@ def article_share_buttons(title, canonical_url):
 
 
 # ─── Build article pages ─────────────────────────────────────────────────
+def _load_related_index():
+    """Pre-load the CMS index once so every article page can pull a 'More
+    to read' rail at build time without re-reading the JSON 3,600 times.
+    Returns a list of dicts sorted newest-first."""
+    idx_path = os.path.join(ARTICLES_SRC, "index.json")
+    if not os.path.exists(idx_path):
+        return []
+    try:
+        entries = json.load(open(idx_path))
+    except (IOError, json.JSONDecodeError):
+        return []
+    fresh = [e for e in entries if isinstance(e, dict) and e.get("slug")
+             and e.get("title")]
+    fresh.sort(key=lambda e: e.get("date") or "", reverse=True)
+    return fresh
+
+
+def _pick_related(index, current_slug, current_category, want=6):
+    """Return list of related-article dicts for the 'More to read'
+    section. Same category first (newest), backfilled from overall
+    newest if the category bucket is too thin. Always excludes self."""
+    if not index:
+        return []
+    same_cat = []
+    others = []
+    for e in index:
+        if e.get("slug") == current_slug:
+            continue
+        if current_category and (e.get("category") or "").strip() == current_category:
+            same_cat.append(e)
+        else:
+            others.append(e)
+        if len(same_cat) >= want * 2:
+            break  # plenty to pick from, stop walking
+    picks = same_cat[:want]
+    if len(picks) < want:
+        picks += others[: want - len(picks)]
+    return picks
+
+
+def _render_more_to_read(related):
+    """Render the 'More to read' section as a small grid of cards."""
+    if not related:
+        return ""
+    cards = []
+    for e in related:
+        href = f"./{e['slug']}.html"
+        title = esc(e.get("title", ""))
+        cat = esc((e.get("category") or "News").strip().upper())
+        date = format_date(e.get("date", ""))
+        cards.append(
+            f'    <a class="more-card" href="{href}">'
+            f'<span class="more-card-cat">{cat}</span>'
+            f'<h3 class="more-card-title">{title}</h3>'
+            f'<span class="more-card-date">{esc(date)}</span>'
+            f'</a>'
+        )
+    return (
+        '\n      <aside class="more-to-read" aria-label="More articles">\n'
+        '        <h2 class="more-to-read-heading">More to read</h2>\n'
+        '        <div class="more-to-read-grid">\n'
+        f'    {chr(10).join(cards)}\n'
+        '        </div>\n'
+        '      </aside>'
+    )
+
+
 def build_articles():
     os.makedirs(ARTICLES_OUT, exist_ok=True)
     md_files = sorted(glob.glob(os.path.join(ARTICLES_SRC, "*.md")))
+    related_index = _load_related_index()
     count = 0
 
     for md_path in md_files:
@@ -516,6 +584,10 @@ def build_articles():
 
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")
+
+        # More to read — 6 related articles, same category preferred
+        related = _pick_related(related_index, slug, category, want=6)
+        html_parts.append(_render_more_to_read(related))
 
         # Back link
         html_parts.append(f'      <div class="article-back"><a href="../articles.html">&larr; All articles</a></div>')

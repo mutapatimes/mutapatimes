@@ -6236,3 +6236,115 @@ body.story-viewer-open { overflow: hidden; }
 @media (max-width: 480px) {
   .quote-share-btn { font-size: 0.78rem; padding: 9px 14px; }
 }
+
+/* ─── More to read — related-articles grid below every article ─── */
+.more-to-read {
+  margin: 56px 0 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+.more-to-read-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 18px;
+  letter-spacing: -0.01em;
+}
+.more-to-read-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 24px;
+}
+.more-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--rule);
+  transition: opacity 0.15s ease;
+}
+.more-card:hover { opacity: 0.75; }
+.more-card-cat {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+.more-card-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+  color: var(--ink);
+}
+.more-card-date {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  color: var(--text-light);
+  margin-top: auto;
+}
+@media (max-width: 760px) {
+  .more-to-read-grid { grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+}
+@media (max-width: 480px) {
+  .more-to-read-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── Article image film treatment ─────────────────────────────────
+   Subtle sepia + slight contrast + a low-opacity grain overlay gives
+   article hero + body photos a uniform editorial film look on the
+   grid. Hover reveals the unedited original — useful for press kits
+   and image inspection without sacrificing the brand aesthetic.   */
+.article-hero-img,
+.article-body-img,
+.news-hero,
+.spotlight-img {
+  filter: sepia(0.22) saturate(0.85) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+.article-hero-img:hover,
+.article-body-img:hover,
+.news-hero:hover,
+.spotlight-img:hover {
+  filter: none;
+}
+
+/* Grain overlay — wraps images via the parent figure or article block.
+   We use a tiny inline SVG via data: URI for the noise pattern, so
+   no extra HTTP request and no PNG asset to ship. The article-body
+   already wraps inline imgs in <p> tags so we attach there.       */
+.article-hero-img,
+.article-body-img,
+.news-hero {
+  position: relative;
+}
+.article-full .article-hero-img-wrap,
+.news-landing .news-hero-wrap,
+.article-body p:has(> img.article-body-img) {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+.article-full .article-hero-img-wrap::after,
+.news-landing .news-hero-wrap::after,
+.article-body p:has(> img.article-body-img)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
+  mix-blend-mode: overlay;
+  opacity: 0.55;
+  transition: opacity 0.4s ease;
+}
+.article-full .article-hero-img-wrap:hover::after,
+.news-landing .news-hero-wrap:hover::after,
+.article-body p:has(> img.article-body-img):hover::after {
+  opacity: 0;
+}
