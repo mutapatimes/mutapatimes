@@ -205,6 +205,16 @@
     // Search
     var searchEl = document.getElementById("articles-search");
     if (searchEl) {
+      // Pre-populate from ?q=… URL param (drawer search submits here)
+      try {
+        var qParam = new URLSearchParams(window.location.search).get("q");
+        if (qParam) {
+          searchEl.value = qParam;
+          _articlesSearch = qParam.toLowerCase().trim();
+          _articlesPage = 1;
+          applyArticlesFilters(container);
+        }
+      } catch (e) {}
       var debounceTimer;
       searchEl.addEventListener("input", function () {
         clearTimeout(debounceTimer);
