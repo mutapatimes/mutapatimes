@@ -6461,6 +6461,85 @@ body.story-viewer-open { overflow: hidden; }
   color: var(--accent);
 }
 
+/* ── Sticky topbar — appears once user scrolls past the masthead.
+   Keeps the hamburger (and on desktop the key sections) one tap
+   away from anywhere on the page, on every breakpoint.            */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  z-index: 1080;
+  transform: translateY(-100%);
+  transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: none;
+}
+body.is-scrolled .topbar { transform: translateY(0); pointer-events: auto; }
+.topbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.topbar-brand:hover { color: var(--accent); }
+.topbar-nav {
+  display: flex;
+  gap: 26px;
+  flex: 1;
+  justify-content: center;
+}
+.topbar-nav a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+.topbar-nav a:hover { color: var(--accent); }
+.topbar-menu {
+  background: none;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 8px;
+}
+.topbar-menu span {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  margin: 4.5px auto;
+  background: var(--ink);
+  transition: transform 0.2s ease, opacity 0.18s ease;
+}
+.topbar-menu[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.topbar-menu[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.topbar-menu[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+@media (max-width: 600px) {
+  .topbar { padding: 0 14px; height: 48px; }
+  .topbar-nav { display: none; }
+  .topbar-brand { font-size: 0.82rem; }
+}
+
 /* ── Hamburger + mobile drawer ──────────────────────────────────
    Phoebe-Philo / Air-Mail aesthetic: quiet, generous, no decoration,
    serif typography, lots of breath, hairline rules only.            */

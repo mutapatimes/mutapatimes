@@ -385,11 +385,22 @@ def build_page(city, all_articles, other_cities):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/main.css?v=62">
+<link rel="stylesheet" href="/css/main.css?v=63">
 
 {schema_blocks}
 </head>
 <body>
+<div class="topbar" id="topbar" aria-label="Sticky navigation">
+  <a href="/" class="topbar-brand">The Mutapa Times</a>
+  <nav class="topbar-nav" aria-label="Quick nav">
+    <a href="/">News</a>
+    <a href="/economy">Economy</a>
+    <a href="/articles">Articles</a>
+  </nav>
+  <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 <div class="paper">
   <a href="/" class="title-link">
     <div class="titleDiv">

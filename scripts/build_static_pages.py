@@ -159,7 +159,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=62">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=63">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -211,6 +211,17 @@ def page_nav(active="articles", depth=1):
     return f"""  </head>
 
   <body>
+<div class="topbar" id="topbar" aria-label="Sticky navigation">
+  <a href="/" class="topbar-brand">The Mutapa Times</a>
+  <nav class="topbar-nav" aria-label="Quick nav">
+    <a href="/">News</a>
+    <a href="/economy">Economy</a>
+    <a href="/articles">Articles</a>
+  </nav>
+  <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</div>
    <div class="paper">
       <div class="aboutTitle">
         <div class="">&nbsp;</div>
