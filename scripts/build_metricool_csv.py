@@ -93,6 +93,13 @@ TWITTER_DYK_SLOTS_CAT = ["09:00", "14:00", "17:00", "20:00"]
 # back to the newsletter's signature Tsumo of the Day section.
 TSUMO_TIME_CAT = "08:00"
 
+# Daily X "thread of the day" — early-morning recap of the most important
+# Zim stories from the last 24h. Threads are the only organic format on X
+# that gets non-follower reach for sub-1k accounts; one breakout thread
+# can mean 200-500 new followers. Drops at 07:00 CAT before the article
+# slot.
+THREAD_OF_DAY_TIME_CAT = "07:00"
+
 CAT_OFFSET = timedelta(hours=2)  # CAT is UTC+2
 
 # ── Metricool CSV format ──────────────────────────────────────
@@ -1330,6 +1337,114 @@ def gemini_thread(art, mutapa_url):
         return None
 
 
+# ── Daily X "thread of the day" — top-5 Zim stories recap ────
+def build_daily_recap_thread(articles, target_dt):
+    """Return list of tweet strings for the morning X recap, or None.
+
+    Picks the 4 freshest distinct-category articles published within
+    the 36h before target_dt, then asks Gemini to write a 5-tweet
+    thread: hook (no link), 4 story bullets (no link), final CTA
+    (link + day-rotated hashtags).
+
+    Threads are the only organic format on X that gets meaningful
+    non-follower reach at sub-1k followers — this is the single
+    biggest follower-acquisition lever in the social pipeline.
+    """
+    # Filter to last 36h, freshest first
+    fresh = []
+    seen_cats = set()
+    cutoff = target_dt - timedelta(hours=36)
+    for a in articles:
+        dt = _parse_pub_date(a.get("publishedAt") or "")
+        if dt is None:
+            continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        if dt < cutoff or dt > target_dt:
+            continue
+        cat = (a.get("category") or "general").lower()
+        if cat in seen_cats:
+            continue  # one story per category for breadth
+        seen_cats.add(cat)
+        fresh.append(a)
+        if len(fresh) >= 4:
+            break
+    if len(fresh) < 3:
+        return None  # too thin a news day to warrant a thread
+
+    headlines_block = "\n".join(
+        f"  {i + 1}. [{(a.get('category') or 'News').upper()}] "
+        f"{(a.get('title') or '').strip()}"
+        for i, a in enumerate(fresh)
+    )
+
+    # Day-rotating hashtag overlay on the CTA tweet only
+    tags = smart_hashtags("Twitter", fresh[0].get("title", ""), when=target_dt)
+    home_url = "https://www.mutapatimes.com/"
+
+    if not GEMINI_API_KEY:
+        # Fallback template — no Gemini available
+        hook = (
+            "5 Zimbabwe stories worth your morning ☕\n\n"
+            "Quick pass through the briefings the diaspora is reading today:"
+        )
+        bullets = [
+            f"{i + 1}. {(a.get('title') or '').strip()[:230]}"
+            for i, a in enumerate(fresh)
+        ]
+        cta = f"Read the full briefing →\n{home_url}\n\n{tags}"
+        return [hook] + bullets + [cta]
+
+    prompt = (
+        "Write a single X/Twitter thread for @mutapatimes (a Zimbabwe news "
+        "brand for the diaspora) recapping the most important Zim stories "
+        "of the last 24 hours.\n\n"
+        f"STORIES:\n{headlines_block}\n\n"
+        f"FINAL_URL: {home_url}\n"
+        f"FINAL_HASHTAGS: {tags}\n\n"
+        "STRICT STRUCTURE — return ONLY a JSON object with key 'tweets':\n"
+        "  Tweet 1 (HOOK): Sharp 1-2 line opener. Something with attitude or "
+        "an unexpected angle. ABSOLUTELY NO LINKS. Max 240 chars. Should "
+        f"make the diaspora reader want to tap to expand.\n"
+        f"  Tweets 2-{1 + len(fresh)}: ONE story per tweet — paraphrased "
+        "into a single punchy line each. Optional inline number prefix. "
+        "NO LINKS. Max 240 chars each.\n"
+        f"  Final tweet (CTA): Format EXACTLY as:\n"
+        f"    'Full briefing → {home_url}\\n\\n{tags}'\n"
+        "    (This is the only tweet with a link.)\n\n"
+        "Output ONLY a JSON object, no commentary, no markdown fences:\n"
+        '  {"tweets": ["...", "...", ...]}'
+    )
+    body = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.75, "maxOutputTokens": 900,
+                             "responseMimeType": "application/json"},
+    }
+    try:
+        req = urllib.request.Request(
+            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.load(resp)
+        text = (data.get("candidates", [{}])[0]
+                    .get("content", {}).get("parts", [{}])[0]
+                    .get("text", "").strip())
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text).strip()
+        payload = json.loads(text)
+        tweets = payload.get("tweets") or []
+        if not isinstance(tweets, list) or len(tweets) < 3:
+            return None
+        # Clamp each tweet to 280 chars, accounting for t.co URL = 23
+        return [_twitter_safe(t.strip(), home_url, "Mutapa")
+                for t in tweets if isinstance(t, str) and t.strip()]
+    except (urllib.error.URLError, urllib.error.HTTPError,
+            json.JSONDecodeError, KeyError, IndexError):
+        return None
+
+
 # ── Slug + scheduling helpers ─────────────────────────────────
 def slugify(s, max_len=60):
     s = s.lower()
@@ -2472,6 +2587,39 @@ def main():
                 ))
         else:
             print("\n  No DYK pool data — skipping")
+
+    # ── Daily "thread of the day" on X at 07:00 CAT ──
+    # One auto-generated thread per day in the batch window. Recaps the
+    # top 3-4 distinct-category stories from the last 36h. Highest organic
+    # reach format on X for sub-1k accounts; this is the cold-start growth
+    # lever.
+    if batch_days_for_x > 0:
+        print(f"\n  Generating {batch_days_for_x} 'Thread of the Day' X threads…")
+        h_t, m_t = map(int, THREAD_OF_DAY_TIME_CAT.split(":"))
+        run_date_dt = datetime.combine(today_utc, datetime.min.time(),
+                                       tzinfo=timezone.utc)
+        for day_off in range(batch_days_for_x):
+            target = run_date_dt + timedelta(days=day_off)
+            cat_dt = datetime(target.year, target.month, target.day,
+                              h_t, m_t, tzinfo=timezone(CAT_OFFSET))
+            slot_utc = cat_dt.astimezone(timezone.utc)
+            if slot_utc <= datetime.now(timezone.utc):
+                slot_utc += timedelta(days=batch_days_for_x)
+            thread = build_daily_recap_thread(articles, slot_utc)
+            if not thread:
+                print(f"    day +{day_off}: no thread (too thin a news window)")
+                continue
+            print(f"    day +{day_off}: thread with {len(thread)} tweets")
+            for i, tweet in enumerate(thread):
+                tweet_dt = slot_utc + timedelta(minutes=i)
+                rows.append(build_metricool_row(
+                    platform="Twitter",
+                    caption=tweet,
+                    article={"title": f"Daily recap — tweet {i + 1}/{len(thread)}"},
+                    date_str=tweet_dt.strftime("%Y-%m-%d"),
+                    time_str=tweet_dt.strftime("%H:%M:%S"),
+                    image_url="",  # text-only — pure hook, no image dilution
+                ))
 
     # ── Tsumo of the Day on X — daily Shona proverb at 08:00 CAT ─
     # One per day in the batch window. Same rotation logic as the
