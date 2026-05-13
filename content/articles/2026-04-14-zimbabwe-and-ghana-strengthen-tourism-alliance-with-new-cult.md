@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe and Ghana Strengthen Tourism Alliance with New Cultural Collaboration, Visa-Free Travel and Joint Promotion Set to Boost African Tourism in 2026: Everything You Need to Know"
+date: 2026-04-14T07:00:00.000Z
+author: Travel And Tour World
+category: Culture
+image: 
+summary: "Zimbabwe and Ghana Strengthen Tourism Alliance with New Cultural Collaboration, Visa-Free Travel and Joint Promotion Set to Boost African Tourism in 2026: Everything You Need to Know"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizgJBVV95cUxNeGFCMUFQdGExQVJma2ZkeWs5bnVwUkkweHZhaVpOdUVwOW14ckQxNEVkYWpqd3FHVzVWQkYyVVpDdjN6b2tmRVVNQTdZUXBxTEh0RlJyZ05fR05jUVZuTnFYcmwtcTRRVEg0VjMzcTJNcHp2QVpIY1BJUHZuUFA0QkpJRnRpU3FqQ2NwMzZTN00wZUc0elhRSk4tbHJfTF9jLVNfb2ltRmRlVUJxQ1EzOEdEdkxpU2JLTXdxLWN0S1NuNkJiaXdvaHkxX2hIZmtvX3BaLUlnbU51UGZsOWZ2MWNVV3E3OUVyMktEakxRT1o5eWlUZUlUTnFyeTZfU0RxWkZBWF9Jam5pNlBwWmQwSjlfTlFZSlQ5cHhxbmNfUFM1b09wa2ZRS1FnQVd5M0tRMVFDMTlzVlBvemZmdEpjMFJ5eWdlWW5SSldnYnhB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Travel And Tour World.*
+[Read original article](https://news.google.com/rss/articles/CBMizgJBVV95cUxNeGFCMUFQdGExQVJma2ZkeWs5bnVwUkkweHZhaVpOdUVwOW14ckQxNEVkYWpqd3FHVzVWQkYyVVpDdjN6b2tmRVVNQTdZUXBxTEh0RlJyZ05fR05jUVZuTnFYcmwtcTRRVEg0VjMzcTJNcHp2QVpIY1BJUHZuUFA0QkpJRnRpU3FqQ2NwMzZTN00wZUc0elhRSk4tbHJfTF9jLVNfb2ltRmRlVUJxQ1EzOEdEdkxpU2JLTXdxLWN0S1NuNkJiaXdvaHkxX2hIZmtvX3BaLUlnbU51UGZsOWZ2MWNVV3E3OUVyMktEakxRT1o5eWlUZUlUTnFyeTZfU0RxWkZBWF9Jam5pNlBwWmQwSjlfTlFZSlQ5cHhxbmNfUFM1b09wa2ZRS1FnQVd5M0tRMVFDMTlzVlBvemZmdEpjMFJ5eWdlWW5SSldnYnhB?oc=5)
