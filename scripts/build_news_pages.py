@@ -231,9 +231,6 @@ def render_page(article, related=None):
     if article["description"]:
         parts.append(f'  <p class="news-summary">{esc(article["description"])}</p>')
 
-    # Inline rectangle slot — between summary and the source CTA.
-    parts.append('  <aside class="ad-slot ad-slot--inline" data-slot="news-inline" data-slot-size="640x360" aria-hidden="true"><div class="ad-slot__inner"></div></aside>')
-
     parts.append('  <div class="news-cta-wrap">')
     parts.append(
         f'    <a class="news-cta-btn" href="{esc(article["url"])}" '
