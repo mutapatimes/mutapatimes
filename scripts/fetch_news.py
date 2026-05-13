@@ -875,8 +875,11 @@ def fetch_spotlight():
         "herald",
     ]
 
-    # --- API Cascade: try each source until we have enough articles ---
-    # Publisher APIs first (highest quality), then aggregators, then RSS fallback
+    # --- API Cascade: try each publisher API until we have enough articles ---
+    # Publisher APIs first (highest quality), then aggregators. The RSS
+    # reputable-source scan runs AFTER this tier unconditionally so Reuters,
+    # Bloomberg, BBC, AP — none of which we have API keys for — never get
+    # missed even when Newsdata/Guardian fill the slate first.
     api_cascade = [
         (fetch_from_guardian,   "Guardian"),
         (fetch_from_nyt,        "NYT"),
@@ -885,7 +888,6 @@ def fetch_spotlight():
         (fetch_from_newsapi,    "NewsAPI.org"),
         (fetch_from_mediastack, "Mediastack"),
         (fetch_from_perigon,    "Perigon"),
-        (fetch_from_rss,        "RSS fallback"),
     ]
 
     articles = []
@@ -910,6 +912,24 @@ def fetch_spotlight():
             if len(articles) >= MIN_SPOTLIGHT_ARTICLES:
                 print(f"  >> Sufficient articles ({len(articles)}) — skipping remaining APIs")
                 break
+
+    # --- Mandatory: reputable-source RSS scan (Reuters/Bloomberg/BBC/AP) ---
+    # This NEVER short-circuits. Google News RSS site: queries are the only
+    # way we see Reuters / Bloomberg / BBC / AP content, since we don't have
+    # API keys for those publishers. Always run it so a fresh Reuters story
+    # can land in the spotlight on every refresh.
+    print("  >> Running mandatory reputable-RSS scan…")
+    rss_result = fetch_from_rss()
+    if rss_result:
+        before = len(rss_result)
+        rss_result = [a for a in rss_result if is_zw_relevant(a)]
+        if before != len(rss_result):
+            print(f"  >> RSS reputable: {before - len(rss_result)} non-Zimbabwe articles filtered out")
+        for a in rss_result:
+            a["_source_api"] = "RSS reputable"
+        articles.extend(rss_result)
+        source_used += " + RSS reputable" if source_used != "none" else "RSS reputable"
+        print(f"  >> RSS reputable: {len(rss_result)} articles (total: {len(articles)})")
 
     if not articles:
         print("  FAIL: no articles from any API or RSS — writing empty spotlight")
@@ -972,12 +992,27 @@ def fetch_spotlight():
     for a in reputable_merged[:10]:
         print(f"    PASS: {a.get('source', '?'):<30s} | {a.get('title', '')[:80]}")
 
-    # Spotlight requires images — drop anything without an image URL.
-    # An article with no thumbnail is a dead-feeling card on the homepage and
-    # in the social CSV. Better to skip than embarrass ourselves.
+    # Spotlight requires images — drop anything without an image URL,
+    # EXCEPT for tier-1 wires (Reuters, Bloomberg, BBC, AP, FT, Economist,
+    # WSJ, Washington Post, Al Jazeera). Google News RSS doesn't carry
+    # thumbnails for those, but the branded butter card stamped later at
+    # `card_image` fills in. Without this bypass, Reuters/Bloomberg
+    # coverage of Zimbabwe gets silently dropped from spotlight.
+    TIER1_WIRES = (
+        "reuters", "bloomberg", "bbc", "ap news", "associated press",
+        "financial times", "ft.com", "economist", "wsj",
+        "wall street journal", "washington post", "al jazeera",
+    )
+
     def _has_image(a):
         img = (a.get("image") or "").strip()
-        return bool(img) and not img.startswith("data:")
+        if bool(img) and not img.startswith("data:"):
+            return True
+        src_raw = a.get("source") or ""
+        if isinstance(src_raw, dict):
+            src_raw = src_raw.get("name") or ""
+        src = str(src_raw).lower()
+        return any(tier in src for tier in TIER1_WIRES)
 
     reputable_with_images = [a for a in reputable_merged if _has_image(a)]
     others_with_images = [a for a in others_merged if _has_image(a)]
