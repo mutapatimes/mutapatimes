@@ -6575,61 +6575,66 @@ body.story-viewer-open { overflow: hidden; }
   color: var(--accent);
 }
 
-/* ── Sticky topbar — hamburger-only, appears after ~10% scroll ───
-   Minimal: just a hamburger button floating top-right. Hidden at
-   top of page so it never competes with the masthead. Slides in
-   once the user is meaningfully into the page (~10% of viewport
-   scrolled). One container, no brand, no nav items.              */
+/* ── Sticky topbar — wordmark left, hamburger right, slides in
+   after ~10% scroll. Frosted-glass full-width bar.               */
 .topbar {
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   height: 56px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0 18px;
+  justify-content: space-between;
+  padding: 0 22px;
   z-index: 1080;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--rule);
   transform: translateY(-100%);
-  transition: transform 0.32s var(--ease-out);
+  transition: transform 0.32s var(--ease-out), box-shadow 0.32s var(--ease-out);
   pointer-events: none;
-  background: transparent;   /* no panel — just the button floating */
 }
 body.is-scrolled .topbar {
   transform: translateY(0);
   pointer-events: auto;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02), 0 6px 20px rgba(0,0,0,0.04);
 }
-/* Brand wordmark + quick-nav removed — only the hamburger ships in
-   the topbar now. Keep the selectors as no-ops in case stale HTML
-   still includes the markup. */
-.topbar-brand,
-.topbar-nav { display: none !important; }
+.topbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  font-size: 0.98rem;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.topbar-brand:hover { color: var(--accent); }
+.topbar-nav { display: none; }   /* quick-nav removed per request */
 
 .topbar-menu {
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: saturate(180%) blur(12px);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  width: 44px;
-  height: 44px;
+  background: none;
+  border: 0;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
-  padding: 0;
+  padding: 8px 6px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
+  gap: 4px;        /* spacing between the 3 bars */
 }
-.topbar-menu:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
-.topbar-menu:active { transform: scale(0.95); }
+.topbar-menu:active { transform: scale(0.92); }
 .topbar-menu span {
   display: block;
-  width: 18px;
+  width: 22px;
   height: 1.5px;
-  margin: 4px auto;
+  margin: 0;
   background: var(--ink);
-  transition: transform 0.2s ease, opacity 0.18s ease;
+  transition: transform 0.22s var(--ease-out), opacity 0.18s ease;
 }
 .topbar-menu[aria-expanded="true"] span:nth-child(1) {
   transform: translateY(5.5px) rotate(45deg);
@@ -6639,8 +6644,8 @@ body.is-scrolled .topbar {
   transform: translateY(-5.5px) rotate(-45deg);
 }
 @media (max-width: 600px) {
-  .topbar { padding: 0 12px; height: 52px; }
-  .topbar-menu { width: 42px; height: 42px; }
+  .topbar { padding: 0 14px; height: 52px; }
+  .topbar-brand { font-size: 0.86rem; letter-spacing: 0.04em; }
 }
 
 /* ── Hamburger + mobile drawer ──────────────────────────────────
