@@ -1175,6 +1175,9 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
 
     existing_urls = _get_existing_source_urls()
     index_path = os.path.join(cms_dir, "index.json")
+    # Slugs of articles newly written in this run — used after the loop to
+    # ping IndexNow so each one gets indexed within minutes.
+    new_slugs_this_run = []
     # New format: array of metadata objects (one entry per article).
     # Old format was an array of filenames — handle the migration by
     # promoting any string entries to dicts as we go.
@@ -1289,6 +1292,7 @@ spotlight: false
                 "featured": False,
             })
             indexed_slugs.add(slug)
+            new_slugs_this_run.append(f"{date_prefix}-{slug}")
         existing_urls.add(url)
         imported += 1
         print(f"  Imported: {source} — {title[:60]}")
@@ -1299,6 +1303,18 @@ spotlight: false
         json.dump(index, f, separators=(",", ":"))
 
     print(f"  Total imported this run: {imported}")
+
+    # IndexNow: tell Bing/Yandex/etc. about every newly imported article
+    # so they crawl + index within minutes instead of waiting for the next
+    # sitemap sweep. Idempotent — pings are deduped against past runs.
+    if new_slugs_this_run:
+        try:
+            from indexnow_ping import ping_urls
+            urls = [f"https://www.mutapatimes.com/articles/{s}.html"
+                    for s in new_slugs_this_run]
+            ping_urls(urls)
+        except Exception as e:
+            print(f"  IndexNow ping skipped: {e}")
 
 
 def import_guardian_nyt_to_cms():
