@@ -74,6 +74,9 @@
       <p><a target="_self" class="notranslate" href="/">News</a></p>
       <p><a target="_self" class="economy-btn" href="/economy">Economy</a></p>
       <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
+      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
+      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
+      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
       <p>
         <a target="_self" class="active notranslate cities-nav-toggle" href="#" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
@@ -85,9 +88,6 @@
           <li><a href="/victoria-falls-news">Victoria Falls</a></li>
         </ul>
       </p>
-      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
   </nav>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -127,6 +127,21 @@
     </section>
 
     <h2 class="city-section-heading">Latest Victoria Falls headlines</h2>
+
+    <!-- Category filter — narrows the city's article list by topic.
+         Wired in js/city.js; "All" is the default selection. -->
+    <div class="articles-category-chips city-filter-chips" id="cityFilterChips" role="navigation" aria-label="Filter by category">
+      <button class="articles-chip active" data-cat="all">All</button>
+      <button class="articles-chip" data-cat="Business">Business</button>
+      <button class="articles-chip" data-cat="Tech">Tech</button>
+      <button class="articles-chip" data-cat="Health">Health</button>
+      <button class="articles-chip" data-cat="Sport">Sport</button>
+      <button class="articles-chip" data-cat="Culture">Culture</button>
+      <button class="articles-chip" data-cat="Policy">Policy</button>
+      <button class="articles-chip" data-cat="Opinion">Opinion</button>
+      <button class="articles-chip" data-cat="Environment">Environment</button>
+    </div>
+
     <div class="city-articles" id="cityArticles">
 <article class="city-article">  <h3 class="city-article-title"><a href="/articles/2026-05-12-victoria-falls-draws-global-travelers-in-june-with-big-prime.html">Victoria Falls Draws Global Travelers in June With Big Prime Wildlife Viewing and Comfortable Travel Conditions in Zimbabwe and Zambia</a></h3>  <p class="city-article-meta"><span class="city-article-cat">Tech</span><time>May 12, 2026</time>  </p></article>
 <article class="city-article city-article--alt">  <h3 class="city-article-title"><a href="/articles/2026-05-04-crocodile-stuns-victoria-falls-lodge-staff-in-early-morning.html">Crocodile stuns Victoria Falls lodge staff in early morning visit</a></h3>  <p class="city-article-summary">Staff at A&#x27;Zambezi River Lodge in Victoria Falls were left startled on Saturday morning after a Nile crocodile was discovered inside the hotel premises, in an unusual but not unprecedented wildlife en...</p>  <p class="city-article-meta"><span class="city-article-cat">Business</span><time>May 4, 2026</time>  </p></article>

@@ -2,7 +2,7 @@
  * The Mutapa Times — Service Worker
  * Bump CACHE_VERSION on every deploy that changes cached files.
  */
-var CACHE_VERSION = 'mutapa-v58';
+var CACHE_VERSION = 'mutapa-v59';
 var DATA_CACHE   = 'mutapa-data-v1';
 var IMG_CACHE    = 'mutapa-img-v1';
 

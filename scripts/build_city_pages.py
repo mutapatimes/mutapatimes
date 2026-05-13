@@ -401,6 +401,9 @@ def build_page(city, all_articles, other_cities):
       <p><a target="_self" class="notranslate" href="/">News</a></p>
       <p><a target="_self" class="economy-btn" href="/economy">Economy</a></p>
       <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
+      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
+      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
+      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
       <p>
         <a target="_self" class="active notranslate cities-nav-toggle" href="#" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
@@ -412,9 +415,6 @@ def build_page(city, all_articles, other_cities):
           <li><a href="/victoria-falls-news">Victoria Falls</a></li>
         </ul>
       </p>
-      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
   </nav>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -454,6 +454,21 @@ def build_page(city, all_articles, other_cities):
     </section>
 
     <h2 class="city-section-heading">Latest {esc(city['name'])} headlines</h2>
+
+    <!-- Category filter — narrows the city's article list by topic.
+         Wired in js/city.js; "All" is the default selection. -->
+    <div class="articles-category-chips city-filter-chips" id="cityFilterChips" role="navigation" aria-label="Filter by category">
+      <button class="articles-chip active" data-cat="all">All</button>
+      <button class="articles-chip" data-cat="Business">Business</button>
+      <button class="articles-chip" data-cat="Tech">Tech</button>
+      <button class="articles-chip" data-cat="Health">Health</button>
+      <button class="articles-chip" data-cat="Sport">Sport</button>
+      <button class="articles-chip" data-cat="Culture">Culture</button>
+      <button class="articles-chip" data-cat="Policy">Policy</button>
+      <button class="articles-chip" data-cat="Opinion">Opinion</button>
+      <button class="articles-chip" data-cat="Environment">Environment</button>
+    </div>
+
     <div class="city-articles" id="cityArticles">
 {rows}
     </div>

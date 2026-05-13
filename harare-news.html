@@ -74,6 +74,9 @@
       <p><a target="_self" class="notranslate" href="/">News</a></p>
       <p><a target="_self" class="economy-btn" href="/economy">Economy</a></p>
       <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
+      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
+      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
+      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
       <p>
         <a target="_self" class="active notranslate cities-nav-toggle" href="#" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
@@ -85,9 +88,6 @@
           <li><a href="/victoria-falls-news">Victoria Falls</a></li>
         </ul>
       </p>
-      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
   </nav>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -127,6 +127,21 @@
     </section>
 
     <h2 class="city-section-heading">Latest Harare headlines</h2>
+
+    <!-- Category filter — narrows the city's article list by topic.
+         Wired in js/city.js; "All" is the default selection. -->
+    <div class="articles-category-chips city-filter-chips" id="cityFilterChips" role="navigation" aria-label="Filter by category">
+      <button class="articles-chip active" data-cat="all">All</button>
+      <button class="articles-chip" data-cat="Business">Business</button>
+      <button class="articles-chip" data-cat="Tech">Tech</button>
+      <button class="articles-chip" data-cat="Health">Health</button>
+      <button class="articles-chip" data-cat="Sport">Sport</button>
+      <button class="articles-chip" data-cat="Culture">Culture</button>
+      <button class="articles-chip" data-cat="Policy">Policy</button>
+      <button class="articles-chip" data-cat="Opinion">Opinion</button>
+      <button class="articles-chip" data-cat="Environment">Environment</button>
+    </div>
+
     <div class="city-articles" id="cityArticles">
 <article class="city-article">  <h3 class="city-article-title"><a href="/articles/2026-05-13-city-of-harare-issues-hantavirus-warning-and-prevention-tips.html">City Of Harare Issues Hantavirus Warning And Prevention Tips</a></h3>  <p class="city-article-summary">Harare Says No Confirmed Hantavirus Cases In Zimbabwe After Global Health Alert The City of Harare has moved to calm public fears following international reports about Hantavirus infections linked to cruise ship travel. Authorities said Zim</p>  <p class="city-article-meta"><span class="city-article-cat">Business</span><time>May 13, 2026</time>  </p></article>
 <article class="city-article city-article--alt">  <h3 class="city-article-title"><a href="/articles/2026-05-12-freight-costs-threaten-zimbabwe-farmers-livelihoods-as-iran.html">Freight costs threaten Zimbabwe farmers’ livelihoods as Iran war disrupts exports</a></h3>  <p class="city-article-summary">Reuters In a busy fresh-produce packaging facility in northern Harare, about 30 women ​in green dust coats and matching caps grade sugar snap peas destined for dinner tables ‌in Europe. The mood in the facility is cheerful, but the fresh pr</p>  <p class="city-article-meta"><span class="city-article-cat">Business</span><time>May 12, 2026</time>  </p></article>

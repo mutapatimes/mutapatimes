@@ -138,6 +138,45 @@
     return card;
   }
 
+  // Cache of all city-filtered articles so the category chips can re-render
+  // without re-fetching the JSON on every click.
+  var _cityArticlesCache = null;
+  var _activeCategory = 'all';
+
+  function renderArticlesList(picks) {
+    var container = document.getElementById('cityArticles');
+    if (!container) return;
+    container.innerHTML = '';
+    if (!picks.length) {
+      var msg = el('p', { class: 'loading-msg', text: 'No articles match this filter yet.' });
+      container.appendChild(msg);
+      return;
+    }
+    picks.forEach(function (a, i) { container.appendChild(renderArticle(a, i)); });
+  }
+
+  function applyCategoryFilter() {
+    if (!_cityArticlesCache) return;
+    var picks = _cityArticlesCache.filter(function (a) {
+      if (_activeCategory === 'all') return true;
+      return (a.category || '').toLowerCase() === _activeCategory.toLowerCase();
+    }).slice(0, 60);
+    renderArticlesList(picks);
+  }
+
+  function wireChips() {
+    var chips = document.querySelectorAll('#cityFilterChips .articles-chip');
+    if (!chips.length) return;
+    chips.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        chips.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        _activeCategory = btn.getAttribute('data-cat') || 'all';
+        applyCategoryFilter();
+      });
+    });
+  }
+
   function refreshArticles() {
     var main = document.querySelector('.city-page');
     var container = document.getElementById('cityArticles');
@@ -152,13 +191,13 @@
           return (b.date || '').localeCompare(a.date || '');
         });
         var picks = [];
-        for (var i = 0; i < data.length && picks.length < 60; i++) {
+        for (var i = 0; i < data.length; i++) {
           var a = data[i];
           if (a && a.slug && articleMatchesCity(a, slug)) picks.push(a);
         }
         if (!picks.length) return;  // keep the static render
-        container.innerHTML = '';
-        picks.forEach(function (a, i) { container.appendChild(renderArticle(a, i)); });
+        _cityArticlesCache = picks;
+        applyCategoryFilter();      // honours whatever chip is active
       })
       .catch(function () {});
   }
@@ -187,6 +226,7 @@
 
   function init() {
     loadWeather();
+    wireChips();
     refreshArticles();
     wireDropdown();
   }

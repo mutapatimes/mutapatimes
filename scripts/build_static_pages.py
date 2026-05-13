@@ -232,6 +232,15 @@ def page_nav(active="articles", depth=1):
           <a target="_self"{cls("fx")} href="/fx">FX</a>
       </p>
       <p>
+          <a target="_self"{cls("property")} href="/property">Property</a>
+      </p>
+      <p>
+          <a target="_self"{cls("jobs")} href="/jobs">Jobs</a>
+      </p>
+      <p>
+          <a target="_self"{cls("articles")} href="/articles">Articles</a>
+      </p>
+      <p>
           <a target="_self"{cls("cities")} href="#" class="cities-nav-toggle" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
           <ul class="cities-dropdown" aria-label="Zimbabwe cities">
             <li><a href="/harare-news">Harare</a></li>
@@ -241,15 +250,6 @@ def page_nav(active="articles", depth=1):
             <li><a href="/masvingo-news">Masvingo</a></li>
             <li><a href="/victoria-falls-news">Victoria Falls</a></li>
           </ul>
-      </p>
-      <p>
-          <a target="_self"{cls("property")} href="/property">Property</a>
-      </p>
-      <p>
-          <a target="_self"{cls("jobs")} href="/jobs">Jobs</a>
-      </p>
-      <p>
-          <a target="_self"{cls("articles")} href="/articles">Articles</a>
       </p>
   </nav>
   <hr class="topHr">

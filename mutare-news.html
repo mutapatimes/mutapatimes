@@ -74,6 +74,9 @@
       <p><a target="_self" class="notranslate" href="/">News</a></p>
       <p><a target="_self" class="economy-btn" href="/economy">Economy</a></p>
       <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
+      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
+      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
+      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
       <p>
         <a target="_self" class="active notranslate cities-nav-toggle" href="#" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
@@ -85,9 +88,6 @@
           <li><a href="/victoria-falls-news">Victoria Falls</a></li>
         </ul>
       </p>
-      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
   </nav>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -127,6 +127,21 @@
     </section>
 
     <h2 class="city-section-heading">Latest Mutare headlines</h2>
+
+    <!-- Category filter — narrows the city's article list by topic.
+         Wired in js/city.js; "All" is the default selection. -->
+    <div class="articles-category-chips city-filter-chips" id="cityFilterChips" role="navigation" aria-label="Filter by category">
+      <button class="articles-chip active" data-cat="all">All</button>
+      <button class="articles-chip" data-cat="Business">Business</button>
+      <button class="articles-chip" data-cat="Tech">Tech</button>
+      <button class="articles-chip" data-cat="Health">Health</button>
+      <button class="articles-chip" data-cat="Sport">Sport</button>
+      <button class="articles-chip" data-cat="Culture">Culture</button>
+      <button class="articles-chip" data-cat="Policy">Policy</button>
+      <button class="articles-chip" data-cat="Opinion">Opinion</button>
+      <button class="articles-chip" data-cat="Environment">Environment</button>
+    </div>
+
     <div class="city-articles" id="cityArticles">
 <article class="city-article">  <h3 class="city-article-title"><a href="/articles/2026-05-09-sanganai-hlanganani-leaves-mutare-us35m-in-the-red.html">Sanganai/ Hlanganani leaves Mutare US$3,5m in the red</a></h3>  <p class="city-article-summary">Mutare City Council says it is struggling under a US$3.5 million debt burden after undertaking road rehabilitation projects linked to national events that were expected to be funded by central governm...</p>  <p class="city-article-meta"><span class="city-article-cat">Business</span><time>May 9, 2026</time>  </p></article>
 <article class="city-article city-article--alt">  <h3 class="city-article-title"><a href="/articles/2026-05-09-crash-landing-witches-and-naked-wizards-manicaland-man-expos.html">Crash Landing Witches and Naked Wizards: Manicaland man exposes wife... ‘She mysteriously leaves the house at midnight’</a></h3>  <p class="city-article-summary">The Midnight Exits: Witchcraft, Marital Strife, and the Eerie Shadows of Zimbabwe’s Night Flights PENHALONGA — The traditional court of Chief Mutasa is no stranger to the complexities of human relationships, but the testimony heard this May</p>  <p class="city-article-meta"><span class="city-article-cat">Business</span><time>May 9, 2026</time>  </p></article>
