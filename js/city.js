@@ -208,16 +208,17 @@
     toggles.forEach(function (t) {
       t.addEventListener('click', function (e) {
         e.preventDefault();
-        var li = t.parentNode;
-        var open = li.classList.toggle('is-open');
+        var wrap = t.closest('.nav-cities-item');
+        if (!wrap) return;
+        var open = wrap.classList.toggle('is-open');
         t.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
     });
     document.addEventListener('click', function (e) {
-      document.querySelectorAll('p.is-open').forEach(function (li) {
-        if (!li.contains(e.target)) {
-          li.classList.remove('is-open');
-          var t = li.querySelector('.cities-nav-toggle');
+      document.querySelectorAll('.nav-cities-item.is-open').forEach(function (wrap) {
+        if (!wrap.contains(e.target)) {
+          wrap.classList.remove('is-open');
+          var t = wrap.querySelector('.cities-nav-toggle');
           if (t) t.setAttribute('aria-expanded', 'false');
         }
       });

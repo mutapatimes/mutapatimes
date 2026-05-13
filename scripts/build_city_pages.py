@@ -404,8 +404,8 @@ def build_page(city, all_articles, other_cities):
       <p><a target="_self" class="notranslate" href="/property">Property</a></p>
       <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
       <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
-      <p>
-        <a target="_self" class="active notranslate cities-nav-toggle" href="#" aria-haspopup="true" aria-expanded="false">Cities ▾</a>
+      <span class="nav-cities-item">
+        <button type="button" class="cities-nav-toggle notranslate active" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
           <li><a href="/harare-news">Harare</a></li>
           <li><a href="/bulawayo-news">Bulawayo</a></li>
@@ -414,7 +414,7 @@ def build_page(city, all_articles, other_cities):
           <li><a href="/masvingo-news">Masvingo</a></li>
           <li><a href="/victoria-falls-news">Victoria Falls</a></li>
         </ul>
-      </p>
+      </span>
   </nav>
   <hr class="topHr">
   <hr class="bottomHr">
