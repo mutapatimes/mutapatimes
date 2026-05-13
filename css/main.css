@@ -6237,6 +6237,66 @@ body.story-viewer-open { overflow: hidden; }
   .quote-share-btn { font-size: 0.78rem; padding: 9px 14px; }
 }
 
+/* ─── ZSE ticker tape (economy page) ──────────────────────────── */
+.zse-ticker {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: 6px 0 12px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: #fafaf6;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.zse-ticker-eyebrow {
+  flex-shrink: 0;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.zse-ticker-track {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 0.82rem;
+  color: var(--ink);
+  animation: zse-ticker-marquee 90s linear infinite;
+  display: inline-block;
+}
+.zse-ticker:hover .zse-ticker-track { animation-play-state: paused; }
+@keyframes zse-ticker-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.zse-ticker-item { padding: 0 10px; }
+.zse-ticker-co {
+  font-weight: 700;
+  margin-right: 6px;
+}
+.zse-ticker-price {
+  margin-right: 6px;
+  color: var(--text-mid);
+}
+.zse-ticker-up   { color: #2c8e3e; font-weight: 700; }
+.zse-ticker-down { color: var(--accent); font-weight: 700; }
+.zse-ticker-flat { color: var(--text-light); }
+.zse-ticker-sep { color: var(--rule); padding: 0 4px; }
+.zse-ticker-loading {
+  padding: 0 14px;
+  color: var(--text-light);
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  .zse-ticker-eyebrow { font-size: 0.56rem; padding: 0 10px; }
+  .zse-ticker-track   { font-size: 0.75rem; padding: 8px 0; }
+}
+
 /* ─── More to read — related-articles grid below every article ─── */
 .more-to-read {
   margin: 56px 0 28px;

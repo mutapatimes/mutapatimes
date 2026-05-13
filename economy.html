@@ -133,6 +133,15 @@
   </div>
   <hr class="dateHr">
 
+  <!-- ZSE ticker tape — daily-close prices, marquee-style strip.
+       Populated client-side from /data/zse-ticker.json by js/economy.js. -->
+  <div class="zse-ticker" id="zseTicker" aria-label="Zimbabwe Stock Exchange closing prices">
+    <div class="zse-ticker-eyebrow">ZSE · LAST CLOSE</div>
+    <div class="zse-ticker-track" id="zseTickerTrack" aria-live="polite">
+      <span class="zse-ticker-loading">Loading market data…</span>
+    </div>
+  </div>
+
   <!-- ─── ECONOMY SCROLLYTELLING NARRATIVE ─────────────────────
        Long-form, chapter-by-chapter briefing. Every chart and every
        number is sourced from ZimStat (GDP) or the Reserve Bank of

@@ -645,3 +645,61 @@
     });
   });
 })();
+
+
+// ─── ZSE ticker tape ──────────────────────────────────────────────
+// Reads /data/zse-ticker.json (daily-close prices scraped from
+// african-markets.com by scripts/fetch_zse.py) and renders a
+// marquee strip at the top of /economy. End-of-day data only —
+// there is no public real-time feed for the Zimbabwe Stock
+// Exchange.
+(function () {
+  if (typeof document === 'undefined') return;
+  var track = document.getElementById('zseTickerTrack');
+  if (!track) return;
+
+  function fmtChange(c) {
+    if (!c) return '';
+    var clean = String(c).replace(/\s+/g, '').replace(/^\+/, '');
+    var n = parseFloat(clean);
+    if (isNaN(n) || n === 0) return '<span class="zse-ticker-flat">·</span>';
+    var sign = n > 0 ? '+' : '';
+    var cls = n > 0 ? 'zse-ticker-up' : 'zse-ticker-down';
+    return '<span class="' + cls + '">' + sign + n.toFixed(2) + '%</span>';
+  }
+
+  function renderTickers(items) {
+    if (!items || !items.length) {
+      track.innerHTML = '<span class="zse-ticker-loading">No market data yet</span>';
+      return;
+    }
+    var html = items.map(function (t) {
+      var company = (t.company || '').replace(/Zimbabwe$/i, '').trim();
+      return (
+        '<span class="zse-ticker-item">' +
+        '<span class="zse-ticker-co">' + company + '</span>' +
+        '<span class="zse-ticker-price">' + (t.price || '') + '</span>' +
+        fmtChange(t.day_change) +
+        '</span>'
+      );
+    }).join('<span class="zse-ticker-sep">·</span>');
+
+    // Duplicate the run so the marquee loops without a visible gap
+    track.innerHTML = html + '<span class="zse-ticker-sep">·</span>' + html;
+  }
+
+  fetch('data/zse-ticker.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (data) {
+      if (!data) {
+        track.innerHTML =
+          '<span class="zse-ticker-loading">Market data unavailable</span>';
+        return;
+      }
+      renderTickers(data.tickers || []);
+    })
+    .catch(function () {
+      track.innerHTML =
+        '<span class="zse-ticker-loading">Market data unavailable</span>';
+    });
+})();

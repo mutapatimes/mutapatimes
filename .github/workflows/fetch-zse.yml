@@ -1,0 +1,41 @@
+name: Fetch ZSE Ticker
+
+# Weekday daily run, an hour after ZSE close (15:30 CAT = 13:30 UTC).
+# african-markets.com publishes the day's closes by ~17:00 CAT, so we
+# fetch at 17:15 CAT (15:15 UTC) to catch them.
+on:
+  schedule:
+    - cron: '15 15 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  fetch-zse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scrape ZSE daily closes
+        run: python3 scripts/fetch_zse.py
+
+      - name: Commit ticker data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/zse-ticker.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update ZSE ticker [automated]"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed on attempt $i"
+                exit 0
+              fi
+              echo "Push rejected — rebasing (attempt $i/5)"
+              git pull --rebase origin main || exit 1
+              sleep $((RANDOM % 4 + 2))
+            done
+            echo "All push attempts failed"
+            exit 1
+          fi
