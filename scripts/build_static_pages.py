@@ -162,7 +162,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=71">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=72">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -589,6 +589,13 @@ def build_articles():
         image = meta.get("image", "")
         summary = meta.get("summary", "")
         source_url = meta.get("source_url", "")
+        # Longform / feature article flags. Triggers the NYT-style
+        # full-bleed hero, the LONG READ badge, count-up animations,
+        # scroll-reveal sections and longer body line-height.
+        longform = meta.get("longform", "").lower() == "true"
+        hero_eyebrow = meta.get("hero_eyebrow", "FEATURE")
+        hero_image_credit = meta.get("hero_image_credit", "")
+        read_minutes = meta.get("read_minutes", "")
         canonical = f"{BASE_URL}/articles/{slug}.html"
         # Brand headline card as og:image so Metricool / X / Facebook show
         # the on-brand card instead of the scraped article hero. The
@@ -653,12 +660,12 @@ def build_articles():
         html_parts.append(
             '  <div id="stories-rail" aria-label="Story highlights"></div>'
         )
-        html_parts.append("""
+        html_parts.append(f"""
   <!-- Single article view -->
   <main>
-    <article class="article-full">""")
+    <article class="article-full{' article-longform' if longform else ''}">""")
 
-        # Breadcrumb nav
+        # Breadcrumb nav (always)
         html_parts.append(f"""
       <nav class="article-breadcrumb" aria-label="Breadcrumb">
         <a href="../index.html">Home</a> <span aria-hidden="true">/</span>
@@ -666,26 +673,53 @@ def build_articles():
         <span>{esc(title)}</span>
       </nav>""")
 
-        # Article header
-        html_parts.append(f"""
+        if longform and image:
+            # NYT-style longform hero: full-bleed image with headline,
+            # eyebrow, byline overlaid. Image credit in bottom corner.
+            html_parts.append(f"""
+      <header class="article-longform-header">
+        <div class="article-longform-hero">
+          <img src="{esc(image)}" alt="{esc(title)}" class="article-longform-hero-img">
+          <div class="article-longform-hero-overlay"></div>
+          <div class="article-longform-hero-inner">
+            <p class="article-longform-eyebrow">{esc(hero_eyebrow)}</p>
+            <h1 class="article-longform-title">{esc(title)}</h1>
+            <p class="article-longform-deck">{esc(summary)}</p>
+            <div class="article-longform-meta">""")
+            if author:
+                html_parts.append(f'              <span class="article-longform-author">By {esc(author)}</span>')
+            if date_display:
+                html_parts.append(f'              <time datetime="{esc(date_str)}">{date_display}</time>')
+            if read_minutes:
+                html_parts.append(f'              <span class="article-longform-read">{esc(read_minutes)} min read</span>')
+            html_parts.append(f"""            </div>""")
+            if hero_image_credit:
+                html_parts.append(f'            <p class="article-longform-credit">{esc(hero_image_credit)}</p>')
+            html_parts.append("""          </div>
+        </div>
+      </header>""")
+        else:
+            # Standard article header
+            html_parts.append(f"""
       <div class="article-header">""")
-        if category:
-            html_parts.append(f'        <span class="article-category-tag">{esc(category)}</span>')
-        html_parts.append(f'        <h1 class="article-title">{esc(title)}</h1>')
-        html_parts.append(f'        <div class="article-meta">')
-        if author:
-            html_parts.append(f'          <span class="article-author">By {esc(author)}</span>')
-        if date_display:
-            html_parts.append(f'          <time class="article-date" datetime="{esc(date_str)}">{date_display}</time>')
-        html_parts.append(f'        </div>')
-        html_parts.append(f'      </div>')
+            if category:
+                html_parts.append(f'        <span class="article-category-tag">{esc(category)}</span>')
+            html_parts.append(f'        <h1 class="article-title">{esc(title)}</h1>')
+            html_parts.append(f'        <div class="article-meta">')
+            if author:
+                html_parts.append(f'          <span class="article-author">By {esc(author)}</span>')
+            if date_display:
+                html_parts.append(f'          <time class="article-date" datetime="{esc(date_str)}">{date_display}</time>')
+            html_parts.append(f'        </div>')
+            html_parts.append(f'      </div>')
 
-        # Hero image
-        if image:
-            html_parts.append(f'      <img src="{esc(image)}" alt="{esc(title)}" class="article-hero-img">')
+            # Hero image
+            if image:
+                html_parts.append(f'      <img src="{esc(image)}" alt="{esc(title)}" class="article-hero-img">')
 
         # Article body
-        html_parts.append(f'      <div class="article-body">{body_html}</div>')
+        body_cls = "article-body article-body-longform" if longform else "article-body"
+        html_parts.append(f'      <div class="{body_cls}">{body_html}</div>')
 
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")

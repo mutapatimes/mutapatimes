@@ -334,14 +334,19 @@
       var categoryHtml = a.category
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';
-      html += '<a href="/articles/' + encodeURIComponent(a.slug) + '" class="article-card article-card--text">';
+      var cardCls = 'article-card article-card--text' + (a.longform ? ' is-longform' : '');
+      html += '<a href="/articles/' + encodeURIComponent(a.slug) + '" class="' + cardCls + '">';
       html += '<div class="article-card-body">';
+      if (a.longform) {
+        html += '<span class="long-read-badge">Long Read</span>';
+      }
       html += categoryHtml;
       html += '<h3 class="article-card-title">' + escapeHtml(a.title || "Untitled") + '</h3>';
       html += '<p class="article-card-summary">' + escapeHtml(a.summary || "") + '</p>';
       html += '<div class="article-card-meta">';
       if (a.author) html += '<span>' + escapeHtml(a.author) + '</span>';
       if (dateStr) html += '<span>' + dateStr + '</span>';
+      if (a.longform && a.read_minutes) html += '<span>' + a.read_minutes + ' min read</span>';
       html += '</div>';
       html += '</div></a>';
     }

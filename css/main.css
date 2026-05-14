@@ -7741,3 +7741,289 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
     transform: none !important;
   }
 }
+
+/* ───── Longform feature article ─────
+   NYT-style hero overlay, drop cap, stats grid, pull quotes,
+   count-up + scroll-reveal animation states. */
+
+.article-longform-header {
+  margin: 0 auto;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+.article-longform-hero {
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  min-height: 560px;
+  max-height: 880px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.article-longform-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.article-longform-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10,10,10,0) 0%,
+    rgba(10,10,10,0.2) 45%,
+    rgba(10,10,10,0.85) 100%
+  );
+}
+.article-longform-hero-inner {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 56px 48px 56px;
+  color: #f5e8c8;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.article-longform-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent, #c0392b);
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  background: rgba(192, 57, 43, 0.12);
+  border: 1px solid rgba(192, 57, 43, 0.6);
+  display: inline-block;
+  border-radius: 999px;
+}
+.article-longform-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 6vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+  color: #fff;
+  max-width: 24ch;
+}
+.article-longform-deck {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255,255,255,0.92);
+  margin: 0 0 28px;
+  max-width: 70ch;
+}
+.article-longform-meta {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+  align-items: center;
+}
+.article-longform-meta time::before,
+.article-longform-meta .article-longform-read::before {
+  content: "·";
+  margin-right: 22px;
+  opacity: 0.6;
+}
+.article-longform-author { font-weight: 700; color: #f5e8c8; }
+.article-longform-credit {
+  position: absolute;
+  bottom: 18px;
+  right: 32px;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .article-longform-hero { height: 76vh; min-height: 460px; }
+  .article-longform-hero-inner { padding: 32px 22px; }
+  .article-longform-credit { right: 22px; bottom: 12px; }
+}
+
+/* Long-form body — wider line-height, larger reading size, drop cap */
+.article-body-longform {
+  max-width: 720px;
+  margin: 56px auto 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.78;
+  color: #1a1a1a;
+}
+.article-body-longform p { margin: 0 0 1.3em; }
+.article-body-longform h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 2.4em 0 0.6em;
+  letter-spacing: -0.005em;
+}
+.article-body-longform > p:first-of-type::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 4.4em;
+  float: left;
+  line-height: 0.86;
+  margin: 0.08em 0.12em 0 0;
+  color: var(--accent, #c0392b);
+}
+.article-body-longform ul { padding-left: 1.3em; }
+.article-body-longform li { margin-bottom: 0.55em; }
+
+/* Stats row — the big up-front numbers under the lead */
+.article-stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin: 44px 0 56px;
+  padding: 32px 0;
+  border-top: 1px solid var(--hairline, #d8d4c8);
+  border-bottom: 1px solid var(--hairline, #d8d4c8);
+}
+.article-stat { display: flex; flex-direction: column; gap: 8px; }
+.article-stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(1.7rem, 2.6vw, 2.6rem);
+  line-height: 1;
+  color: var(--accent, #c0392b);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+.article-stat-label {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-mid, #4a4a44);
+}
+@media (max-width: 720px) {
+  .article-stat-row { grid-template-columns: 1fr 1fr; gap: 22px; padding: 24px 0; }
+}
+
+/* Count-up — used inline in prose, larger than surrounding text */
+.count-up {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent, #c0392b);
+  white-space: nowrap;
+}
+.article-stat-num.count-up { color: inherit; font-weight: 900; }
+
+/* Pull-quote — standout typographic block between sections */
+.article-pullquote {
+  margin: 56px -36px;
+  padding: 36px 36px 36px 64px;
+  border-left: 4px solid var(--accent, #c0392b);
+  position: relative;
+  background: rgba(245, 232, 200, 0.4);
+  border-radius: 4px;
+}
+.article-pullquote::before {
+  content: "“";
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 6.5rem;
+  line-height: 1;
+  color: var(--accent, #c0392b);
+  opacity: 0.35;
+}
+.article-pullquote blockquote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.35rem, 2.1vw, 1.85rem);
+  line-height: 1.32;
+  font-weight: 700;
+  margin: 0 0 18px;
+  color: var(--text-dark, #1a1a1a);
+}
+.article-pullquote cite {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--accent, #c0392b);
+}
+@media (max-width: 720px) {
+  .article-pullquote { margin: 40px 0; padding: 28px 22px 24px 36px; }
+  .article-pullquote::before { font-size: 4.5rem; top: -2px; left: 4px; }
+}
+
+/* Scroll-reveal — opacity + translate, triggered by JS adding .is-visible */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1),
+              transform 700ms cubic-bezier(0.32, 0.72, 0, 1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Long Read badge — appears on listings + the article meta strip */
+.long-read-badge {
+  display: inline-block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: var(--accent, #c0392b);
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Listing cards — when an article is marked longform, give the card a
+   subtle accent rule on top and the badge in the corner. */
+.article-card.is-longform,
+.spotlight-card.is-longform,
+.headline.is-longform,
+.headlineCard.is-longform {
+  position: relative;
+}
+.article-card.is-longform::before,
+.spotlight-card.is-longform::before,
+.headline.is-longform::before,
+.headlineCard.is-longform::before {
+  content: "LONG READ";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  padding: 4px 9px;
+  background: var(--accent, #c0392b);
+  color: #fff;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .count-up { /* freeze at final value */ }
+}

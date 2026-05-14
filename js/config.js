@@ -1834,7 +1834,8 @@ function renderSpotlightStories(articles) {
     var a = articles[i];
     var pubDate = formatDate(a.publishedAt);
 
-    var item = $('<article class="spotlight-item">');
+    var itemCls = 'spotlight-item' + (a.longform ? ' is-longform' : '');
+    var item = $('<article>').attr('class', itemCls);
     var link = $('<a>').attr('href', a.url || '#').attr('target', '_blank').attr('rel', 'noopener nofollow');
 
     // Article image — always render. Source photo first; if it 404s,
@@ -1858,6 +1859,9 @@ function renderSpotlightStories(articles) {
 
     // Text content wrapped for 2-col layout
     var textWrap = $('<div class="spotlight-text">');
+    if (a.longform) {
+      textWrap.append($('<span class="long-read-badge">').text('Long Read'));
+    }
     textWrap.append($('<h4 class="spotlight-title">').text(a.title));
 
     var desc = a.description;
