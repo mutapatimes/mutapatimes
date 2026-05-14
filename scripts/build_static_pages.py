@@ -585,6 +585,10 @@ def build_articles():
             raw = f.read()
 
         meta, body = parse_frontmatter(raw)
+        # Skip drafts — kept in content/articles/ so they remain editable
+        # via the CMS, but never published to articles/ until ready.
+        if (meta.get("draft", "").lower() == "true"):
+            continue
         title = meta.get("title", "Untitled")
         page_title = f"{title} | The Mutapa Times"
         date_str = meta.get("date", "")

@@ -1,127 +1,138 @@
 ---
-title: "A week of beauty: Zimbabwe's eighth pavilion at the 61st Venice Biennale"
+title: "Isn't it lovely: a week in Venice with the Pavilion of Zimbabwe"
 date: 2026-05-14T09:00:00.000Z
-author: Tatenda Mhaka
+author: Valentine Eluwasi
 category: Arts
 image: /img/uploads/venice-2026/main/hero.jpg
-summary: "Second Nature | Manyonga, curated by Fadzai Veronica Muchemwa and commissioned by Raphael Chikukwa, opens at Santa Maria della Pietà under Koyo Kouoh's overarching frame of In Minor Keys. We spent a week with the pavilion, the city, and the people the city held — and came back persuaded that beauty, as quiet as it sometimes sounds, is the most political proposition Zimbabwe has brought to Venice in a decade."
+summary: "A personal letter from Venice, written in the wake of the opening of Zimbabwe's eighth pavilion at the 61st Biennale. On Henry Taylor in the rain, the dignity of decay, the constellation of Zimbabwean excellence in the room on opening night, and on the proposition — borrowed from a friend — that there is therapy in beauty."
 featured: true
 headline_position: 0
 source_type: original
 spotlight: true
 longform: true
-read_minutes: 14
-hero_eyebrow: "ARTS LONG READ · VENICE"
-hero_image_credit: "Photograph by The Mutapa Times"
+draft: true
+read_minutes: 12
+hero_eyebrow: "ESSAY · VENICE"
+hero_image_credit: "Photograph by 1925 Glen Norah"
 ---
 
-We had been in Venice exactly four hours when the city did the thing it does to first-time visitors and worn-down ones in roughly equal measure: it stopped us on a footbridge near the Riva degli Schiavoni, refused to let us continue, and made us look. The light coming off the lagoon was the colour of an old coin. The wall behind us, plaster two or three centuries past its prime, was the colour of a faded bruise. And our editor — a person not given to the obvious — turned and said, half to himself, *decay is just style with time on its side*.
+I arrived in Venice on a Tuesday, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag — which had survived the Marco Polo airport bus and the long walk down to the boat dock by a margin of approximately ten minutes of plausible weather — was now soaked through to the books at the bottom. And the books at the bottom were the books I had carried specifically to read in Venice. The books I had imagined opening on a sunlit terrace somewhere, with an espresso. The books that were, in the moment of arrival, beginning to absorb water like a sponge that had decided it had been on a diet for too long.
 
-We had come for the 61st Esposizione Internazionale d'Arte di La Biennale di Venezia, and specifically for the opening of the Pavilion of Zimbabwe — the eighth that the country has mounted at the Biennale since its 2011 debut with *Seeing Ourselves*. The pavilion this year is titled *Second Nature | Manyonga*. It is curated by Fadzai Veronica Muchemwa and commissioned by Raphael Chikukwa, Executive Director and Chief Curator of the National Gallery of Zimbabwe. It assembles five artists — Eva Raath, Felix Shumba, Franklyn Dzingai, Gideon Gomo, and Pardon Mapondera — under a curatorial proposition borrowed from neuroscience: that the brain reorganises itself in response to change, and that cultures, by extension, can too.
+I sulked. I am willing to admit this. There is a particular kind of British weather-sulk I have absorbed by osmosis, despite no biographical claim to that island whatsoever, and on Tuesday afternoon in Venice it asserted itself with full force. I checked into the apartment. I hung the books out to dry across every available radiator and chair-back. I lay on the bed in a posture I will charitably describe as defeated.
 
-It sits inside the broader curatorial frame of the 61st Biennale, *In Minor Keys*, conceived by the late Koyo Kouoh — the Cameroonian curator whose death in 2025 left a gap in the field that nobody pretends has been closed. *In Minor Keys*, in Kouoh's writing and in the catalogues that have followed it, is the assertion that the quietest registers carry the most weight; that nuance is not the absence of force but a different distribution of it; that what is understated may be precisely what reshapes history. The Zimbabwean pavilion is, in many of its working parts, the most legible expression of that thesis we encountered all week.
+I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm — I will give it credit, for once — surfaced a forty-second video by the American painter Henry Taylor, posted earlier that morning. Taylor was standing on the deck of a boat in the central lagoon of Venice, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, in a register that was half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
-<figure class="article-fullbleed article-fullbleed--landscape">
+I watched it. Then I watched it again.
+
+By the third viewing I had moved into a sitting position. By the fourth I had put my shoes back on. By the fifth I was walking out into the same rain that had earlier won the argument, this time having reached an entirely different conclusion about what kind of argument it had been.
+
+<figure class="article-fullbleed">
   <div class="article-fullbleed-frame">
     <img class="article-fullbleed-media"
-         src="/img/uploads/venice-2026/main/pavilion-exterior.jpg"
-         alt="The Pavilion of Zimbabwe at Santa Maria della Pietà, Venice"
+         src="/img/uploads/venice-2026/main/lagoon-rain.jpg"
+         alt="The central lagoon, Venice, in rain"
          loading="lazy">
   </div>
   <figcaption class="article-fullbleed-caption">
-    <span class="desc">The Pavilion of Zimbabwe occupies Santa Maria della Pietà for the 61st International Art Exhibition. It is the country's eighth consecutive participation since 2011.</span>
-    <span class="credit">Photograph by The Mutapa Times</span>
+    <span class="desc">The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere in this water on the same morning, was the moment the sulk lifted.</span>
+    <span class="credit">Photograph by 1925 Glen Norah</span>
   </figcaption>
 </figure>
 
-## Arrival
+## What the rain finally let me see
 
-A week of beauty is a difficult phrase to write without sounding either disingenuous or vague. But that is what last week was. We landed on a Tuesday morning, took the Alilaguna across the lagoon under a sky the colour of unwashed linen, and stepped off at San Zaccaria into the kind of low-key magic that Venice still manufactures despite the cruise ships and the price of espresso. By Wednesday afternoon we were standing inside Santa Maria della Pietà — the deconsecrated church on the Riva degli Schiavoni where the Pavilion of Zimbabwe is installed — staring at a forest of suspended glass jars filled with soil and photographs and string, and the thought that arrived was not analytical. It was simply: *this is held with care, by people who know that care is the work*.
+This is going to be, I am aware, an unusual essay to file from a Biennale. The art-criticism pieces are upstream and downstream of this one — five long profiles, one for each artist in the Pavilion of Zimbabwe, that will run over the coming days from my colleagues at this paper. What you are reading now is something I should declare up front to be different. It is a personal letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city — under the cover of one Henry Taylor video and several days of unexpectedly cleansing rain — taught him, briefly, how to look again.
 
-We came back to that thought all week. Care is the curatorial logic of the pavilion. It is also, we would argue, the political logic. *Manyonga* is the Shona word the pavilion borrows for its title: a confluence, the place where currents meet, the network of fibres that bends under pressure but does not break. The pavilion's catalogue glosses the term as *resilience; threads; connections; resistance*. In the rooms at Santa Maria della Pietà, those four nouns do real work, and they do it on terms set by the artists rather than by any external taxonomy.
+What I saw, when I started looking, was beauty in registers I had not been ready for.
 
-## The opening night
+The decay of the city, first of all. Chipped plaster. The rusted iron mooring rings sunk into the canal walls. The long curling strips of paint lifting off a doorway in Cannaregio to reveal three earlier colours underneath. By Wednesday afternoon I had stopped photographing the obvious *palazzi* and was photographing door-handles, salt-stained wood, the corner where a building had begun — very slowly — to become a different building. I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour that no one would have been able to mix on a palette. There is style in time. There is grace in attrition. The British in me — by osmosis, regrettable as that is — eventually decided to stop sulking and to look. Once I started, I could not stop. I became, by my own diagnosis, a broken record of seeing beauty in everything, to the point where anyone who came into conversation with me that week would have been fairly entitled to assume I was high on shrooms.
 
-The vernissage came on Thursday evening. Some five hundred guests filed across the *fondamenta* and through the iron-and-glass doors at the front of the building; many more were turned away politely at the entrance. The mix was the mix one expects at this kind of opening — collectors, curators, museum directors, a fair contingent of the African and African-diaspora art press, a sprinkling of the diplomatic corps. But it was the texture of the gathering that surprised us. There was a real cross-current — Brazilian and Nigerian and Italian and Bulgarian and Senegalese, an industrious knot of South Africans, a group of young Zimbabwean artists who had flown in from Harare for the week, a long quiet conversation in one corner between two women whose names a younger writer would have wanted in the lede.
-
-Among the older guests, the most arresting were the elders — and specifically a constellation of elder Black women in the room whose presence we kept returning to. Thelma Golden, the director of the Studio Museum in Harlem, was there for an hour, dressed for the weather but unmistakable. The new managing director of Lisson Gallery moved through the rooms with that particular radiance that comes from being entirely at ease. We could not stop noticing how the room organised itself around figures like these — not in deference, exactly, but in attention. The art was holding the room. So were they.
-
-If this sounds like a digression, it is the opposite. The pavilion's curatorial premise is that cultures, like brains, reroute themselves under pressure; that the modes of attention we inherit can be reshaped by the company we keep. The vernissage was, in its quiet way, a working demonstration of the thesis. Who was in the room — who held the centre of gravity — was as much a part of the pavilion's argument as the works on the walls.
+And there were people who carried the same quality of attention I was finding in the city. On the opening night of the pavilion — Thursday evening, the rain having finally lifted and the lagoon turning the colour of warm pearl behind us — there was a constellation of older Black women moving through the rooms at Santa Maria della Pietà with the particular radiance that only comes from a life lived in full attention to itself. Thelma Golden of the Studio Museum in Harlem was there for an hour. The managing director of Lisson Gallery moved through the rooms with her own light. I kept thinking — sitting in the corner afterwards, sipping prosecco from a tray that did not stop circulating until well past eleven — that beauty in its most consequential register is not a feature of the young face. It is a feature of the lived one.
 
 <aside class="article-pullquote">
-  <blockquote>Second Nature can only come from you and not from others, for they are not you and we have never been them.</blockquote>
-  <cite>FROM THE PAVILION'S CURATORIAL STATEMENT</cite>
+  <blockquote>Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.</blockquote>
+  <cite>HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 12 MAY 2026</cite>
 </aside>
 
-## The CIMAM days that preceded it
+## The constellation in the room
 
-The pavilion opened into a city that had just spent four days hosting CIMAM — the International Committee for Museums and Collections of Modern Art — whose annual conference had drawn the directors of most of the world's significant museums to Venice in the lead-up to the Biennale's opening. We attended two of the public-facing sessions earlier in the week and were struck by how much of the conversation, even when it was nominally about acquisition policy or restitution practice, kept circling back to the same underlying question: who is the audience for modern and contemporary art now, and what does an institution owe them?
+I want to put the names down before I forget any of them. In five years' time I want to be able to remember exactly who was at Santa Maria della Pietà on the night the pavilion opened.
 
-The Zimbabwean pavilion is a long answer to that question. It does not flatter the international art audience and it does not condescend to a local one. It addresses both at once, on its own terms, and it does so without the rhetorical contortions that often accompany pavilions built for export. The curatorial statement, written by Muchemwa, is firm on the point: *Second Nature can only come from you and not from others, for they are not you and we have never been them.* The line will read to some as defensive. It is in fact the opposite — a declaration that the pavilion has done the prior work of knowing what it is, so that it does not need the world to tell it.
+The pavilion was inaugurated with an address from Nicholas Moyo, the Permanent Secretary at the Ministry of Sport, Recreation, Arts and Culture, who was guest of honour for the evening. He spoke briefly and well. The detail I want to retain from his remarks — because it surprised me, and because I had not heard it said this way before — is that the eighth Pavilion of Zimbabwe is being underwritten by Zimbabwean money. The Higherlife Foundation, represented in Venice by Joy Masiyiwa, has supported both the pavilion and the CIMAM conference that ran in the city last November in the lead-up to the Biennale's opening. The same family, the same foundation, backing both the international meeting of museum directors and the country's own pavilion at the world's most significant contemporary art exhibition. The arithmetic of that is unusual. It is also overdue.
 
-## The five artists, briefly
+I will declare an interest here, because to do otherwise would be dishonest. The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The Higherlife Foundation is one of them. So is my own brand, 1925 Glen Norah, which is producing — through its publishing imprint and over the course of this year — a documentary publication that follows the journey of the five artists from their studios in Harare and Masvingo and Kwekwe to their installation in Venice. To see the 1925 Glen Norah name listed alongside the Higherlife Foundation on the supporters page of the catalogue was, I will admit, the moment of personal pride I had come to Venice expecting and was nevertheless unprepared to feel when it arrived.
 
-We have written separately on each artist — five longer pieces are linked at the foot of this one — but a short orientation is useful here. The pavilion stages five distinct creative currents in deliberate confluence.
+But the night was not about me. It was about the people who were in that room because they have been in this conversation longer than I have, and because their presence is what made the conversation possible.
 
-**Eva Raath** (born Harare, 1979) works at the intersection of printmaking and textile. Her contribution centres on a body of large-scale works on paper and fabric — including *Medusa Menopause*, *Memory Quilt*, and *Checkered Memories* — that treat memory as something stitched, layered, and continually rearranged. She draws on the visual languages of African everyday life: the patterns of the ubiquitous woven "taxi bag", the granite of the Marondera region, the iconography of North African tilework. In her hands the ordinary becomes the site of a quiet political proposition.
+**Rory Tsapayi** was there. Rory has been working on this Biennale for longer than the rest of us have known it was happening — she was hand-picked by Koyo Kouoh herself to be part of the curatorial team for the 61st edition, and is, in the literal sense, the reason a Zimbabwean voice has been embedded inside the overall curatorial frame of *In Minor Keys*. To see her at the pavilion opening, calmly working the room, was to see Zimbabwean curatorial intelligence operating at the centre of the Biennale's gravity rather than at its periphery.
 
-**Felix Shumba** (born Bulawayo, 1989) makes charcoal drawings of a kind we have not seen produced at this scale in some time. His *Telephone Reader* series and the six-metre-wide *Wheel-telegram-east-window-line 145XV7-lower* anchor one wing of the pavilion. Shumba calls the world his figures inhabit *Fold Field Space*: a haunted territory structured by violence and spectrality, where archival imagery from colonial and postcolonial Zimbabwe is reassembled and made to do new work.
-
-**Franklyn Dzingai** (born Kwekwe, 1988) is one of the few artists in Zimbabwe today who works primarily in printmaking, and specifically in the reductive cardboard relief print — a method that demands precision and commitment, and that produces images of extraordinary ornamental density. His subject matter is drawn from family photographs and the visual detritus of mid-century Zimbabwean studio portraiture. The works are vibrant, intimate, and full of held silences.
-
-**Gideon Gomo** (born Harare, 1983) is a sculptor whose practice has long been anchored in springstone — the material associated with the Zimbabwean sculpture movement of the mid-twentieth century. For this pavilion he has shifted, decisively, into bronze. The new works — including the multi-part *Audience of One* and *Harvest of the Vein* — extend his sculptural vocabulary into a medium historically loaded with authority and commemoration, and complicate that authority with the inclusion of discarded vehicle number plates.
-
-**Pardon Mapondera** (born Harare, 1983) is the youngest in temperament if not strictly in age. His practice transforms what consumer society has discarded — mayonnaise jars, plastic, thread, perspex — into objects that resemble shrines as much as sculptures. The installation *Gone, but not forgotten* is the work the room returns to. We will return to it too, at length, in a separate piece.
+**Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too — a return to Venice in a different register. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And — this is the part I will not pretend I have professional distance from — **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo, whose bronzes anchor one of the pavilion's central rooms. I could not stop smiling.
 
 <figure class="article-fullbleed">
   <div class="article-fullbleed-frame">
     <img class="article-fullbleed-media"
          src="/img/uploads/venice-2026/main/opening-night.jpg"
-         alt="Opening night at the Pavilion of Zimbabwe"
+         alt="Opening night, Pavilion of Zimbabwe, 14 May 2026"
          loading="lazy">
   </div>
   <figcaption class="article-fullbleed-caption">
-    <span class="desc">Opening night, 14 May 2026. Some five hundred guests filed across the fondamenta and through the iron-and-glass doors of Santa Maria della Pietà.</span>
+    <span class="desc">Opening night at Santa Maria della Pietà, 14 May 2026. Some five hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned.</span>
     <span class="credit">Photograph by Amedeo Benestante</span>
   </figcaption>
 </figure>
 
+## Friends, neighbours, the Togolese contingent
+
+The Rotherhithe contingent had also landed. My neighbours and friends from south-east London — Tsitsi and Panashe, husband and wife — had arrived for the opening that afternoon. Tsitsi and I have been in conversation for some months about a project I am helping her with: a library, in a particular configuration, in a particular place. She had brought with her to Venice a small squad of women creatives she had been working with in Togo over the last year. The squad was magnificent — multilingual, dressed for a city I had not yet figured out how to dress for, and entirely unintimidated by the room they had walked into. I learned several things from them in the course of one evening that I will be carrying for some time.
+
+## Alumni
+
+The alumni of previous Pavilions of Zimbabwe were out in force. **Option Dzikamai Nyahunzvi** — whose practice, in his own words, *reimagines moments of communion between the living and ancestral spirits* — had come down from a residency in northern Italy for the weekend. **Wallen Mapondera**, brother of the pavilion artist Pardon Mapondera and himself a Zimbabwean Biennale selectee in 2022, was there to support his brother and to write his own next thing into the conversation. **Michele Mathison** — included in Zimbabwe's 2013 Pavilion *Dudziro: Interrogating the Visions of Religious Beliefs*, born in Johannesburg but long associated with Zimbabwe — was there in the alumni capacity that the eighth pavilion has now, by virtue of its longevity, begun to require.
+
+The lineage was visible in the room. People who had been *the pavilion* in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026. The line of continuity that the catalogue's foreword speaks about in the abstract was sitting at three of the tables nearest mine.
+
 <section class="article-dark-section">
   <div class="article-dark-section-inner">
-    <span class="article-dark-section-eyebrow">A note on beauty</span>
-    <h2>Beauty as the most political proposition in the room.</h2>
-    <p>One of the themes the writer of this piece kept returning to all week — a theme that has run through the Mutapa Times' arts coverage this year — is the idea of beauty as a form of repair. Beauty does political work that argument cannot. It is the part of culture that lets people bear what argument leaves them too exhausted to consider.</p>
-    <p>It is fashionable, in some quarters of contemporary art writing, to treat beauty with suspicion. The suspicion is not without reason; beauty has been weaponised, falsified, and used to obscure all manner of violences. But it is also true that the suspicion is exhausted. After two decades of art that explained itself before letting itself be felt, the pavilions that are doing the most live work in Venice this year are the ones that have remembered beauty is a discipline, not an accident, and that its discipline is exactly the discipline of attention.</p>
-    <p>Zimbabwe's pavilion has remembered this. Raath's quilts and Mapondera's jars and Dzingai's prints and Gomo's bronzes and Shumba's charcoal walls all hold the kind of beauty that requires effort to receive. They are the opposite of decorative. They are the opposite of consoling. But they are beautiful, and the beauty is doing the heaviest political work in the room.</p>
+    <span class="article-dark-section-eyebrow">A sponsor's note</span>
+    <h2>Zimbabwean money funded this pavilion. That fact is worth pausing on.</h2>
+    <p>For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital — by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.</p>
+    <p>The Higherlife Foundation, founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. 1925 Glen Norah — the brand I founded and through which I am producing a publication documenting the artists' journey to Venice — is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.</p>
   </div>
 </section>
 
-## Decay, as it turns out, is the point
+## The wider Biennale, and a text I could not stop thinking about
 
-We spent our remaining days walking. Venice does not, of course, require any particular discipline to find decay; it does the work for you. Chipped plaster, faded paint, rusted iron rings sunk into the canal walls, doors whose paint has lifted in long curling strips and revealed three earlier colours underneath — the city is a working catalogue of the dignity of aged surfaces. By the third day we had stopped photographing the obvious palazzi and started photographing the corners, the door-handles, the bits of mooring rope that had taken on the colour of the salt-water around them.
+Outside the pavilion the rest of Venice had its own southern African weather. **Gabrielle Goliath's exhibition** — which had, after the much-reported cancellation of the South African pavilion this year, been able to come through in its own configuration at another venue — was one of the most discussed shows of the week. **Zoé Samudzi's** *Elegy — for two ancestors*, a reflective text on two photographs of Namibian women taken by colonial German photographers, was being read and shared and quoted in conversations that ran through the cafés near the Giardini. There was, in the period of the opening, the sense of a broader southern African intellectual moment finding its register inside the Biennale's official rooms — the kind of moment that, if you were standing close enough, you could hear taking shape in real time.
 
-This is not a Venetian sentiment alone. It is a Zimbabwean one, too. Anyone who has spent time looking at the granite around Marondera, or at the patinas that develop on copper sheet left in the open in Harare, will know that aged surfaces have a different conversation with light than new ones do. The pavilion knows this. Eva Raath's quilted works carry the visible repair-stitches of materials that have lived earlier lives. Gomo's bronzes have been allowed their oxidation. Mapondera's mayonnaise jars are quite obviously the second life of objects that began in someone's pantry. The pavilion's argument, in part, is that the politics of materials with a past is not the same as the politics of materials made yesterday. Aged things are honest in a way that new things have to work to be.
+I read Samudzi's text on Friday, sitting in a small bar on a side canal somewhere near the Ponte dell'Accademia, the rain having returned for an hour. I want to record a passage of it here:
 
-The connection to the opening-night observation about the elder women in the room is not, we think, a strained one. There is an aesthetic that goes with knowing the weight of one's own time — that is, with having lived in it long enough to wear its grain. We saw it in the gallerists and museum directors who stayed late at the vernissage and did not need to perform anything for anyone. We saw it on the canal walls. We saw it in the materials Mapondera and Raath had chosen. The pavilion's title gets at this without quite naming it: a *second nature* is the name we give to the things we have lived with long enough to no longer have to think about. Style with time on its side.
+<aside class="article-pullquote">
+  <blockquote>Neither of these women consented to sit and be captured; it is befitting of the violence of photography that the same verb is used to describe both acquisition by force and the act of producing an image. But, again and again, we must return to all that is evinced by their gazes: we can refuse to allow their namelessness to be the definitive last word. We can lean in close to look at their faces, we can imagine the meaning residing in their expressions.</blockquote>
+  <cite>ZOÉ SAMUDZI · ELEGY — FOR TWO ANCESTORS</cite>
+</aside>
 
-## What the pavilion proposes
+I sat with it for some time. The relation of the Samudzi piece to the Pavilion of Zimbabwe is not, I think, accidental. Both are working on the same problem in different vocabularies: how to keep faith with the dead and the disappeared in a register that is not the documentary register, in a medium that knows its own complicity with violence, in a form that does not pretend to repair what cannot be repaired but offers, instead, a kind of sustained attention as a stand-in for justice.
 
-What the pavilion is finally asking — and we say this aware that it is the kind of formulation that can sound grandiose in summary and feel exactly right in person — is whether adaptation can be a creative act rather than a wound. The metaphor of neuroplasticity could have been laboured. It is not. The five artists are not literalising the brain-science. They are using it as a permission slip: permission to argue that Zimbabwe's last three decades, with all their breakdowns and reconstitutions, have produced not damage but a kind of cultural intelligence specific to the conditions of repair.
+## A book I am writing, in part because of the rain
 
-That intelligence is what the pavilion is exporting. It is what we were watching the room respond to on Thursday evening. It is, in the end, what we will be coming back to in five more pieces over the next week — one for each artist, on what each makes and how, and on why these five voices, in this room, in this Biennale year, feel as load-bearing as they do.
+By Saturday I had finally met **Belinda Holden** in person — Belinda with whom I had been in extensive correspondence for some months, regarding the 1925 Glen Norah publication. We met at a coffee bar near San Marco and stood for two hours not drinking the coffee we had ordered. By Sunday I was on the boat back to Marco Polo with a soggy notebook and a far better sense of what I was making and why.
 
-## Acknowledgements (with thanks)
+The book — which is forthcoming later this year — follows the five artists in the Pavilion of Zimbabwe from the moment the commission was confirmed to the moment of installation in Venice. It is not a catalogue. It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it. The week in Venice taught me what shape the book wants to be. I had arrived thinking I knew. I left understanding I had not yet been listening hard enough.
 
-A note on the listing on the colophon page of the pavilion's catalogue: under *Organisers and Collaborators*, alongside Livingstone Muchefa, F. Zvikomborero Mandangu, Rachel Mayemu, Gladys Chiyangwa, Happymore Mugayi, and Gaylad Mapfumo, appears the name of one of the editorial staff of this publication. The Mutapa Times has been an institutional supporter of the Pavilion of Zimbabwe's eighth edition. We have flagged this elsewhere; we flag it again here. The criticism on these pages is, as a matter of policy, our own. The pavilion's catalogue, from which all the artists' quoted material in this and the accompanying five pieces is drawn, is published by the National Gallery of Zimbabwe and was distributed in print at the vernissage.
+## In closing — on therapy, in beauty
 
-## Coming this week
+My friend **Gazelle Mba** — the writer, whose work some of you will know — said something to me earlier this year that I kept coming back to all week. *There is therapy in beauty*, she said. I think she said it in passing. I think she did not realise it would lodge in my chest as deeply as it did.
 
-Over the next seven days we will publish a long-form profile of each of the five artists in the pavilion. Each piece sits inside this series; each can be read on its own. The titles, in order, are:
+What I have to report from Venice is that she is correct.
 
-- *Eva Raath: a slow archive of stitched memory*
-- *Felix Shumba: charcoal as a register of disappearance*
-- *Franklyn Dzingai: family albums and the neural commons*
-- *Gideon Gomo: from stone to bronze, the ancestral algorithm*
-- *Pardon Mapondera: gone but not forgotten*
+There is therapy in beauty. Last week, in a city that initially refused to be anything other than wet and grey and inconvenient, I was given several days of it. The pavilion was part of it. So were the lagoon walls, in their long argument with the weather. So were the elder women in the rooms on opening night. So were the friends and the alumni and the Togolese creatives and the brother of the artist supporting his brother. So was the small bar near the Accademia where I read the Samudzi text. So was the boat journey out to the airport on Sunday morning, watching the city pull back into the mist.
 
-The five pavilions of Zimbabwe that have come before this one have written, in five different vocabularies, the same long sentence: that Zimbabwean visual culture belongs at the centre of any honest conversation about contemporary art. The eighth pavilion does not need to write that sentence again. It has, instead, started writing the next one.
+I left lighter than I had arrived, which is the part of travel one cannot plan for and that, when it happens, is the only kind of travel that has been worth the air mile.
+
+Five longform profiles of the artists in the Pavilion of Zimbabwe will follow over the coming days. They are the work of my colleagues. I will write again, in a different register, when the 1925 Glen Norah publication is ready.
+
+In the meantime, if you have not watched the Henry Taylor video, watch the Henry Taylor video.
+
+*Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
+
+— Valentine Eluwasi

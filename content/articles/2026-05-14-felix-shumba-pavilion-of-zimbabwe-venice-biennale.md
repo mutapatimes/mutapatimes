@@ -10,6 +10,7 @@ headline_position: 2
 source_type: original
 spotlight: true
 longform: true
+draft: true
 read_minutes: 10
 hero_eyebrow: "ARTS LONG READ · VENICE · 2 OF 5"
 hero_image_credit: "Courtesy of the artist"
