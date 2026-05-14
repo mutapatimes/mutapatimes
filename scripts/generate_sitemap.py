@@ -33,12 +33,13 @@ STATIC_PAGES = [
 
 
 def extract_frontmatter(path):
-    """Extract date, title, and category from a markdown article's frontmatter."""
+    """Extract date, title, category, and draft flag from a markdown
+    article's frontmatter. Returns (slug, date, title, category, is_draft)."""
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
     if not m:
-        return None, None, None, None
+        return None, None, None, None, False
     fm = m.group(1)
     date_match = re.search(r"^date:\s*['\"]?(\S+)", fm, re.MULTILINE)
     date_str = date_match.group(1) if date_match else None
@@ -46,8 +47,10 @@ def extract_frontmatter(path):
     title = title_match.group(1) if title_match else None
     cat_match = re.search(r'^category:\s*["\']?(.+?)["\']?\s*$', fm, re.MULTILINE)
     category = cat_match.group(1) if cat_match else None
+    draft_match = re.search(r'^draft:\s*true\s*$', fm, re.MULTILINE | re.IGNORECASE)
+    is_draft = bool(draft_match)
     slug = os.path.splitext(os.path.basename(path))[0]
-    return slug, date_str, title, category
+    return slug, date_str, title, category, is_draft
 
 
 def generate():
@@ -72,8 +75,10 @@ def generate():
     # CMS articles
     articles_dir = os.path.join(os.path.dirname(__file__), "..", "content", "articles")
     for md_path in sorted(glob.glob(os.path.join(articles_dir, "*.md"))):
-        slug, date_str, title, category = extract_frontmatter(md_path)
+        slug, date_str, title, category, is_draft = extract_frontmatter(md_path)
         if not slug or slug == "index":
+            continue
+        if is_draft:
             continue
         lastmod = date_str or now_str[:10]
         loc = f"{BASE_URL}/articles/{slug}"

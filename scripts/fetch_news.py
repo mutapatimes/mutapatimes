@@ -418,6 +418,8 @@ def get_cms_spotlight_articles():
 
         if meta.get('spotlight', '').lower() != 'true':
             continue
+        if meta.get('draft', '').lower() == 'true':
+            continue
 
         slug = os.path.basename(filepath).replace('.md', '')
         articles.append({

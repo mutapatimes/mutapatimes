@@ -97,6 +97,9 @@ def collect_cms_articles(base):
         if not m:
             continue
         fm, body = m.group(1), m.group(2)
+        # Skip drafts — CMS-only, not for public feeds.
+        if re.search(r'^draft:[^\S\n]*true\s*$', fm, re.MULTILINE | re.IGNORECASE):
+            continue
         # Use [^\S\n] (space/tab but NOT newline) so an empty 'image: ' line
         # doesn't greedily swallow the newline and steal the next field's
         # value. Same defensive change for the other fields.
