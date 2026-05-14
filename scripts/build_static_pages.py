@@ -159,7 +159,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=68">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=69">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -212,15 +212,11 @@ def page_nav(active="articles", depth=1):
 
   <body>
 <div class="topbar" id="topbar" aria-label="Sticky navigation">
-  <a href="/" class="topbar-brand">The Mutapa Times</a>
-  <nav class="topbar-nav" aria-label="Quick nav">
-    <a href="/">News</a>
-    <a href="/economy">Economy</a>
-    <a href="/articles">Articles</a>
-  </nav>
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
+  <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
+  <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
    <div class="paper">
       <div class="aboutTitle">
@@ -298,7 +294,19 @@ def page_nav(active="articles", depth=1):
       <a href="/terms">Terms</a>
       <a href="/privacy">Privacy</a>
     </nav>
-    <a href="/subscribe" class="nav-drawer-cta">Subscribe to the briefing &rarr;</a>
+    <form class="nav-drawer-sub" method="POST"
+          action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
+          target="brevo-drawer-frame">
+      <p class="nav-drawer-sub-eyebrow">Subscribe to the briefing</p>
+      <div class="nav-drawer-sub-row">
+        <input type="email" name="EMAIL" placeholder="Your email" required autocomplete="email" aria-label="Your email address">
+        <button type="submit" aria-label="Subscribe">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </button>
+      </div>
+      <p class="nav-drawer-sub-fine">Free. Twice a week. One tap to unsubscribe.</p>
+    </form>
+    <iframe name="brevo-drawer-frame" style="display:none" aria-hidden="true"></iframe>
   </aside>
   <hr class="topHr">
   <hr class="bottomHr">

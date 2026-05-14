@@ -13,6 +13,7 @@ STATIC_PAGES = [
     ("articles", 0.9, "daily"),
     ("economy", 0.8, "daily"),
     ("fx", 0.9, "daily"),
+    ("markets", 0.9, "daily"),
     ("weather", 0.9, "daily"),
     ("property", 0.8, "daily"),
     ("jobs", 0.9, "hourly"),

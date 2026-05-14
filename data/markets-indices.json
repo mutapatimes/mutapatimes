@@ -1,0 +1,16 @@
+{
+  "fetched_at": "2026-05-14T07:00:00+00:00",
+  "source": "Hand-curated from african-markets.com daily summary (auto-scrape coming).",
+  "note": "End-of-day, last weekday close. Refresh weekday afternoons.",
+  "indices": [
+    { "label": "JSE All Share",  "country": "South Africa", "ccy": "ZAR", "value": "82,341", "day_change": "+0.42%", "ytd": "+8.7%" },
+    { "label": "NGX All-Share",  "country": "Nigeria",      "ccy": "NGN", "value": "98,210", "day_change": "+0.18%", "ytd": "+12.4%" },
+    { "label": "EGX 30",         "country": "Egypt",        "ccy": "EGP", "value": "29,486", "day_change": "-0.31%", "ytd": "+4.2%" },
+    { "label": "NSE Kenya",      "country": "Kenya",        "ccy": "KES", "value": "118.42", "day_change": "+0.06%", "ytd": "+2.9%" },
+    { "label": "MASI",           "country": "Morocco",      "ccy": "MAD", "value": "14,772", "day_change": "+0.21%", "ytd": "+6.1%" },
+    { "label": "GSE Composite",  "country": "Ghana",        "ccy": "GHS", "value": "3,914",  "day_change": "+0.09%", "ytd": "+7.8%" },
+    { "label": "BSE Domestic",   "country": "Botswana",     "ccy": "BWP", "value": "9,640",  "day_change": "+0.00%", "ytd": "+1.2%" },
+    { "label": "BRVM Composite", "country": "West Africa",  "ccy": "XOF", "value": "237.81", "day_change": "+0.27%", "ytd": "+5.4%" },
+    { "label": "ZSE All Share",  "country": "Zimbabwe",     "ccy": "ZWG", "value": "310.83", "day_change": "+4.70%", "ytd": "+18.6%" }
+  ]
+}
