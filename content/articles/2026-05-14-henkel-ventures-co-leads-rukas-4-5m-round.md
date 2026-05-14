@@ -3,7 +3,7 @@ title: "Henkel Ventures co-leads Ruka's $4.5m round"
 date: 2026-05-14T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
-image: /img/uploads/ruka-launch/media/we-are-ruka.jpg
+image: /img/uploads/ruka-launch/media/community.jpg
 summary: "Ruka, the London-based textured-hair company founded by Zimbabwean entrepreneur Varaidzo Tendai Moyo and her co-founder Ugorji Agbai, has closed a $4.5m round co-led by Henkel Ventures and Freedom Trail Capital. The deal, which takes lifetime funding to roughly $10m and brings one of the world's largest consumer-goods groups onto the cap table, is the most meaningful endorsement yet of a Zimbabwean diaspora-founded brand."
 featured: true
 headline_position: 0
@@ -36,7 +36,7 @@ Ruka, the London-based textured-hair company founded in 2020 by the Zimbabwean e
   </div>
 </div>
 
-<figure class="article-fullbleed">
+<figure class="article-fullbleed article-fullbleed--landscape">
   <div class="article-fullbleed-frame">
     <img class="article-fullbleed-media"
          src="/img/uploads/ruka-launch/media/ruka-means.png"
@@ -50,6 +50,19 @@ Ruka, the London-based textured-hair company founded in 2020 by the Zimbabwean e
 </figure>
 
 For Henkel, the cheque is small but deliberate. The German group, which owns Schwarzkopf and Persil, has been unusually active in beauty M&A this year, with deals for Olaplex and Not Your Mother's reshaping its hair-care portfolio. A minority stake in Ruka extends that thesis into the textured-hair category, a segment Henkel has touched only tangentially through its Schwarzkopf Professional sub-brand Osis, with which Ruka is currently partnering on a curl spray. Industry estimates put the global Black hair-care market at over $10bn annually, with Black women spending roughly six times as much as their white counterparts on hair-care products and services.
+
+<figure class="article-fullbleed article-fullbleed--landscape">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/ruka-launch/media/henkel-hq.webp"
+         alt="Henkel North America headquarters in Rocky Hill, Connecticut"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Henkel North America headquarters, Rocky Hill, Connecticut. The German group's venture arm is the lead institutional name on the new round.</span>
+    <span class="credit">Courtesy of Henkel</span>
+  </figcaption>
+</figure>
 
 <section class="article-dark-section article-dark-section--has-portrait">
   <div class="article-dark-section-inner">
@@ -141,7 +154,7 @@ The mix matters. The proximate growth thesis is American, and the round is being
 <figure class="article-fullbleed">
   <div class="article-fullbleed-frame">
     <img class="article-fullbleed-media"
-         src="/img/uploads/ruka-launch/media/we-are-ruka.jpg"
+         src="/img/uploads/ruka-launch/media/community.jpg"
          alt="The Ruka Hair community"
          loading="lazy">
   </div>

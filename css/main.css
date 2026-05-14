@@ -7742,6 +7742,28 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   }
 }
 
+/* Landscape variant — preserves full image (no cropping). For brand
+   graphics, logos, HQ exteriors where the composition is intentional. */
+.article-fullbleed--landscape .article-fullbleed-frame {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+}
+.article-fullbleed--landscape .article-fullbleed-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none !important;
+}
+.article-fullbleed--landscape .article-fullbleed-caption {
+  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));
+  padding-top: 32px;
+}
+
 /* ───── Longform feature article ─────
    NYT-style hero overlay, drop cap, stats grid, pull quotes,
    count-up + scroll-reveal animation states. */
