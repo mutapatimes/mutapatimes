@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-14T12:45:40+00:00",
+  "fetched_at": "2026-05-14T13:58:11+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabweans lured into Russia’s war as families plead for their return",
+      "link": "https://mutapatimes.com/articles/2026-05-14-zimbabweans-lured-into-russias-war-as-families-plead-for-the",
+      "image": "https://www.mutapatimes.com/img/cards/news/f2689fe4df4d.png",
+      "pubDate": "2026-05-14T11:29:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
+      "link": "https://mutapatimes.com/articles/2026-05-14-henkel-ventures-co-leads-rukas-45m-round",
+      "image": "https://www.mutapatimes.com/img/cards/news/240c15e40873.png",
+      "pubDate": "2026-05-14T08:00:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Henkel Ventures co-leads Ruka's $4.5m round",
@@ -17,6 +33,14 @@
       "image": "https://www.mutapatimes.com/img/cards/news/87283df08779.png",
       "pubDate": "2026-05-14T08:00:00+00:00",
       "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZimStat evaluates economic performance",
+      "link": "https://mutapatimes.com/articles/2026-05-13-zimstat-evaluates-economic-performance",
+      "image": "https://www.mutapatimes.com/img/cards/news/c164a7e043a0.png",
+      "pubDate": "2026-05-13T23:58:00+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -457,30 +481,6 @@
       "image": "https://mutapatimes.com/img/cards/properties/6896d083e991.png",
       "pubDate": "2026-05-13T22:00:00+00:00",
       "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 280,000 — Hillside 4-Bed Home with Pool, Borehole & Expansive Garden (Hillside, Bulawayo South)",
-      "link": "https://www.property.co.zw/for-sale/houses-fac227798",
-      "image": "https://mutapatimes.com/img/cards/properties/bf3107bb7f0f.png",
-      "pubDate": "2026-05-13T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "news",
-      "title": "Police Hunt Hezy Motors Boss Hazel Silibaziso Mafu Over US$155k Vehicle Import Scam",
-      "link": "https://mutapatimes.com/news/2026-05-13-police-hunt-hezy-motors-boss-hazel-silibaziso-mafu-over-us-1-39a96d",
-      "image": "https://www.mutapatimes.com/img/cards/news/0f35802cb556.png",
-      "pubDate": "2026-05-13T21:48:49+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Minister Tells Angry Nurses: ‘Only God Can Reward You’",
-      "link": "https://mutapatimes.com/news/2026-05-13-minister-tells-angry-nurses-only-god-can-reward-you-eb7804",
-      "image": "https://www.mutapatimes.com/img/cards/news/e7d76c6ffabe.png",
-      "pubDate": "2026-05-13T21:26:00+00:00",
-      "category": "News"
     }
   ]
 }
