@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-14T11:21:45+00:00",
+  "fetched_at": "2026-05-14T12:45:40+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
+      "link": "https://mutapatimes.com/articles/2026-05-14-henkel-ventures-co-leads-rukas-4-5m-round",
+      "image": "https://www.mutapatimes.com/img/cards/news/74d7981d6c1c.png",
+      "pubDate": "2026-05-14T08:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
+      "link": "https://mutapatimes.com/news/2026-05-14-henkel-ventures-co-leads-ruka-s-4-5m-round-635ad2",
+      "image": "https://www.mutapatimes.com/img/cards/news/87283df08779.png",
+      "pubDate": "2026-05-14T08:00:00+00:00",
+      "category": "News"
+    },
     {
       "kind": "news",
       "title": "Kumusha-Ekhaya trains 550 in cricket grassroots expansion drive",
@@ -465,22 +481,6 @@
       "image": "https://www.mutapatimes.com/img/cards/news/e7d76c6ffabe.png",
       "pubDate": "2026-05-13T21:26:00+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "US and China seek to repair damage from tariff war that sent trade into a freefall",
-      "link": "https://mutapatimes.com/news/2026-05-13-us-and-china-seek-to-repair-damage-from-tariff-war-that-sent-2ba74c",
-      "image": "https://www.mutapatimes.com/img/cards/news/daf8d911fc3b.png",
-      "pubDate": "2026-05-13T21:01:53+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "China tightens grip on Mali, Zimbabwe and Ghana’s lithium as U.S.-linked miner exits Africa’s critical minerals race",
-      "link": "https://mutapatimes.com/articles/2026-05-13-china-tightens-grip-on-mali-zimbabwe-and-ghanas-lithium-as-u",
-      "image": "https://www.mutapatimes.com/img/cards/news/0ffe968a295f.png",
-      "pubDate": "2026-05-13T18:28:00+00:00",
-      "category": "Business"
     }
   ]
 }
