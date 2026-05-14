@@ -73,9 +73,9 @@ def _save(img, name):
 # ── 1. Balance-sheet bars ────────────────────────────────
 def chart_balance_sheet():
     img, draw = _setup(
-        "Working capital cycle, tighter on the eve of the round",
-        "Stocks down 39%, debtors down 43%, cash up nearly tenfold over the 12 months to April 2025.",
-        "Source: Companies House, Ruka Hair Ltd. unaudited abridged accounts, year to 30 April 2025.",
+        "Working capital cycle tightened over the year to April 2025",
+        "Stocks down 39%, debtors down 43%, cash up nearly tenfold over the 12 months to April 2025. The most recent public picture, a year before the new round.",
+        "Source: Companies House, Ruka Hair Ltd. unaudited abridged accounts, year to 30 April 2025. Next filing due January 2027.",
     )
     # Data — values in £'000
     series = [
@@ -137,8 +137,8 @@ def chart_balance_sheet():
 def chart_capital_structure():
     img, draw = _setup(
         "Capital raised against losses accumulated",
-        "By April 2025 Ruka had absorbed £4.53m in cumulative losses against £4.89m of equity raised, leaving £368k of net assets. The new $4.5m round materially refills the tank.",
-        "Source: Companies House abridged accounts (Apr 2025) + SH01 share allotment filing (Apr 2026). Round value converted at $1.32/£.",
+        "By April 2025, the last public snapshot, Ruka had absorbed £4.53m in cumulative losses against £4.89m of equity raised. The new $4.5m round, twelve months later, materially refills the tank.",
+        "Source: Companies House abridged accounts (Apr 2025) + SH01 share allotment filing (Apr 2026). Round value converted at $1.32/£. Interim 12 months not yet public.",
     )
     # Values in £'000
     bars = [

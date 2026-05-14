@@ -19,13 +19,15 @@ Freedom Trail Capital, the round's other co-lead, has previously backed Sienna N
 
 Read at one remove, this is also a story about Zimbabwean diaspora capital-formation. The cohort of Zimbabwean-founded businesses scaling out of London, Johannesburg, New York and Toronto has, in the last five years, started to clear the kind of cap-table milestones that were once the preserve of much better-networked founder communities. Ruka, with Henkel now on the register alongside Big Issue Invest and a carefully chosen roster of operator-angels, is the most legible example to date of what that cohort can build. It will not be the last.
 
-## A leaner balance sheet on the eve of the round
+## A leaner balance sheet, a year before the round
 
-![Working capital cycle, tighter on the eve of the round](/img/uploads/ruka-launch/chart-balance-sheet.png)
+![Working capital cycle tightened over the year to April 2025](/img/uploads/ruka-launch/chart-balance-sheet.png)
 
-Ruka's most recent abridged accounts at Companies House, for the year ended 30 April 2025, show a company that arrived at this round with a cleaner working-capital profile than the previous reporting period suggested. Stocks fell to £447,212 from £727,505. Debtors fell to £342,263 from £602,417. Cash at bank multiplied close to tenfold, from £40,044 to £398,733. Creditors falling due within one year reduced to £823,725 from £900,022.
+One caveat at the top. Ruka's most recent abridged accounts at Companies House are for the year ended 30 April 2025, twelve months before the new round closed. The interim year, from May 2025 to April 2026, will not be in the public record until the next filing, due by the end of January 2027. The picture below is therefore the last public snapshot, not the picture at the moment Henkel signed.
 
-Read together, these are the marks of a company that has tightened its working-capital cycle, run down its inventory overhang and rebuilt a cash buffer ahead of a strategic raise. The 18-month comparator period, which ran to April 2024, captured the messier phase of a post-seed direct-to-consumer brand: heavier stock, longer receivables, a thin cash line. The year to April 2025 reads as an operational reset, of a kind familiar across the DTC sector since 2024.
+With that flagged, the trajectory through to 30 April 2025 was a clean one. Stocks fell to £447,212 from £727,505. Debtors fell to £342,263 from £602,417. Cash at bank multiplied close to tenfold, from £40,044 to £398,733. Creditors falling due within one year reduced to £823,725 from £900,022.
+
+Read together, these are the marks of a company that tightened its working-capital cycle, ran down its inventory overhang and rebuilt a cash buffer through the period. The 18-month comparator window, which ran to April 2024, captured the messier phase of a post-seed direct-to-consumer brand: heavier stock, longer receivables, a thin cash line. The year to April 2025 reads as an operational reset, of a kind familiar across the DTC sector since 2024. Whatever has happened in the twelve months since will land in the next set of accounts.
 
 Headcount over the most recent reporting period averaged seven, against an average of twenty across the prior 18-month window. The two periods are not strictly comparable on a like-for-like basis, but the direction is clear and consistent with what one would expect to see in the wider DTC consumer cohort over the same span.
 
@@ -33,9 +35,9 @@ Headcount over the most recent reporting period averaged seven, against an avera
 
 ![Capital raised against losses accumulated](/img/uploads/ruka-launch/chart-capital-structure.png)
 
-The longer arc is harder. Ruka's accumulated profit and loss deficit widened to £4.53m at the April 2025 balance sheet date, from £4.07m eighteen months earlier. Aggregate equity on the balance sheet, including share capital, the share premium account and other reserves, stood at £4.89m. That left net shareholder funds of £367,944, after accumulated losses are netted out.
+The longer arc is harder. Ruka's accumulated profit and loss deficit widened to £4.53m at the April 2025 balance sheet date, from £4.07m eighteen months earlier. Aggregate equity on the balance sheet, including share capital, the share premium account and other reserves, stood at £4.89m at the same date. That left net shareholder funds of £367,944, after accumulated losses were netted out.
 
-The implied capital-efficiency ratio, accumulated losses against cumulative equity raised, sits at 0.93. In plain English: the company had absorbed roughly ninety-three pence of losses for every pound of equity put in, before this round. That ratio is not unusual for a venture-backed DTC consumer brand in its first five years, but it does explain the timing of the new round.
+The implied capital-efficiency ratio, accumulated losses against cumulative equity raised, was 0.93 at April 2025. In plain English: by that snapshot, the company had absorbed roughly ninety-three pence of losses for every pound of equity put in. That ratio is not unusual for a venture-backed DTC consumer brand in its first five years, but it does help explain the strategic case for the round that closed twelve months later. The 12-month interim, in which more burn will have taken place, will only become visible when the next set of accounts is filed.
 
 The 29 April 2026 SH01 filing at Companies House records the allotment of 109,289 new Series Seed shares on 28 April. The new shares carry full voting rights, full dividend rights and a liquidation preference that ranks first on a distribution of assets. Post-allotment, Ruka's issued share capital comprises 1,597,524 Ordinary shares and 689,436 Series Seed shares, a roughly 70/30 split. The aggregate nominal value of the company's issued capital is £914.78, the unrevealing rounding-error figure that small UK companies typically file. The economic price of the new round will be properly visible only in next year's accounts, when the cash crosses the share premium account.
 
