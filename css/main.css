@@ -8078,6 +8078,18 @@ body.longform-page .topbar {
     rgba(8, 8, 8, 0.94) 100%
   ) !important;
 }
+/* Mobile: image area is shorter and text is bigger relative to image,
+   so the overlay needs to be markedly darker for the headline to read. */
+@media (max-width: 720px) {
+  .article-longform-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.6) 0%,
+      rgba(8, 8, 8, 0.8) 50%,
+      rgba(8, 8, 8, 0.98) 100%
+    ) !important;
+  }
+}
 
 /* Slightly tighten the headline area so it lifts off the dark base */
 .article-longform-hero-inner {
@@ -8090,34 +8102,35 @@ body.longform-page .topbar {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* ───── Pull-quote refresh — italic editorial register ─────
-   Playfair italic at lighter weight reads far better than bold,
-   especially at the larger display sizes. Bumped size + line-height,
-   muted the giant decorative quote mark behind the text. */
+/* ───── Pull-quote refresh — clean sans-serif for legibility ─────
+   Switched to Inter Medium at display size. Dropped the giant
+   Playfair "“" decoration; uses a hairline left-rule and an accent
+   eyebrow line instead. */
 .article-pullquote {
-  background: rgba(245, 232, 200, 0.45);
+  background: transparent;
+  border-left-width: 3px;
+  padding-left: 28px;
+  padding-right: 0;
 }
 .article-pullquote::before {
-  font-size: 5.4rem;
-  opacity: 0.16;
-  top: -2px;
+  display: none;             /* drop the decorative giant quote mark */
 }
 .article-pullquote blockquote {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: clamp(1.55rem, 2.4vw, 2.1rem);
-  line-height: 1.42;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(1.35rem, 1.9vw, 1.7rem);
+  line-height: 1.5;
   letter-spacing: -0.005em;
   color: #1a1a1a;
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 .article-pullquote cite {
   font-family: 'Inter', system-ui, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent, #c0392b);
   display: inline-block;
@@ -8125,11 +8138,14 @@ body.longform-page .topbar {
   border-top: 1px solid rgba(192, 57, 43, 0.25);
 }
 @media (max-width: 720px) {
-  .article-pullquote blockquote {
-    font-size: 1.4rem;
-    line-height: 1.36;
+  .article-pullquote {
+    padding-left: 22px;
+    margin: 36px 0;
   }
-  .article-pullquote::before { font-size: 4rem; }
+  .article-pullquote blockquote {
+    font-size: 1.2rem;
+    line-height: 1.45;
+  }
 }
 
 /* ───── Longform dark section ─────
@@ -8248,3 +8264,34 @@ body.longform-page .topbar {
   }
   .article-dark-section .founder-facts dt { padding-top: 14px; }
 }
+
+/* ───── Portrait inside a dark section ─────
+   The founder portrait sits at the top of the Meet-the-Founder dark
+   block, full column-width, with a small butter caption underneath. */
+.article-dark-section-portrait {
+  margin: 0 0 36px;
+}
+.article-dark-section-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+.article-dark-section-portrait figcaption {
+  margin-top: 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: rgba(245, 232, 200, 0.78);
+}
+.article-dark-section-portrait figcaption .credit {
+  color: rgba(245, 232, 200, 0.5);
+  margin-left: 6px;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Hide the now-unused founder-facts dl in case any legacy markup
+   still references it. */
+.founder-facts { display: none; }

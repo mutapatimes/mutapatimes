@@ -3,8 +3,8 @@ title: "Henkel Ventures co-leads Ruka's $4.5m round"
 date: 2026-05-14T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
-image: /img/uploads/ruka-launch/media/moyo-portrait.jpg
-summary: "Ruka, the London-based textured-hair company founded by Zimbabwean entrepreneurs Varaidzo Tendai Moyo and Ugorji Agbai, has closed a $4.5m round co-led by Henkel Ventures and Freedom Trail Capital. The deal, which takes lifetime funding to roughly $10m and brings one of the world's largest consumer-goods groups onto the cap table, is the most meaningful endorsement yet of a Zimbabwean diaspora-founded brand."
+image: /img/uploads/ruka-launch/media/we-are-ruka.jpg
+summary: "Ruka, the London-based textured-hair company founded by Zimbabwean entrepreneur Varaidzo Tendai Moyo and her co-founder Ugorji Agbai, has closed a $4.5m round co-led by Henkel Ventures and Freedom Trail Capital. The deal, which takes lifetime funding to roughly $10m and brings one of the world's largest consumer-goods groups onto the cap table, is the most meaningful endorsement yet of a Zimbabwean diaspora-founded brand."
 featured: true
 headline_position: 0
 source_type: original
@@ -15,7 +15,7 @@ hero_eyebrow: "BUSINESS LONG READ"
 hero_image_credit: "Courtesy of Ruka Hair"
 ---
 
-Ruka, the London-based textured-hair company founded in 2020 by Varaidzo Tendai Moyo and Ugorji Agbai, is one of the brands quietly putting Zimbabwean commercial talent on the international map. This week the company closed a <span class="count-up" data-to="4.5" data-prefix="$" data-suffix="m" data-decimals="1">$4.5m</span> round co-led by Henkel Ventures, the corporate venture arm of the German consumer-goods conglomerate, and Freedom Trail Capital. The deal, first reported by Beauty Independent and The Business of Beauty on 13 May, takes Ruka's lifetime funding to approximately <span class="count-up" data-to="10" data-prefix="$" data-suffix="m" data-decimals="0">$10m</span>. It is, by some distance, the company's most strategically consequential cheque to date.
+Ruka, the London-based textured-hair company founded in 2020 by the Zimbabwean entrepreneur Varaidzo Tendai Moyo and her co-founder Ugorji Agbai, is one of the brands quietly putting Zimbabwean commercial talent on the international map. This week the company closed a <span class="count-up" data-to="4.5" data-prefix="$" data-suffix="m" data-decimals="1">$4.5m</span> round co-led by Henkel Ventures, the corporate venture arm of the German consumer-goods conglomerate, and Freedom Trail Capital. The deal, first reported by Beauty Independent and The Business of Beauty on 13 May, takes Ruka's lifetime funding to approximately <span class="count-up" data-to="10" data-prefix="$" data-suffix="m" data-decimals="0">$10m</span>. It is, by some distance, the company's most strategically consequential cheque to date.
 
 <div class="article-stat-row">
   <div class="article-stat">
@@ -51,19 +51,18 @@ Ruka, the London-based textured-hair company founded in 2020 by Varaidzo Tendai 
 
 For Henkel, the cheque is small but deliberate. The German group, which owns Schwarzkopf and Persil, has been unusually active in beauty M&A this year, with deals for Olaplex and Not Your Mother's reshaping its hair-care portfolio. A minority stake in Ruka extends that thesis into the textured-hair category, a segment Henkel has touched only tangentially through its Schwarzkopf Professional sub-brand Osis, with which Ruka is currently partnering on a curl spray. Industry estimates put the global Black hair-care market at over $10bn annually, with Black women spending roughly six times as much as their white counterparts on hair-care products and services.
 
-<section class="article-dark-section">
+<section class="article-dark-section article-dark-section--has-portrait">
   <div class="article-dark-section-inner">
+    <figure class="article-dark-section-portrait">
+      <img src="/img/uploads/ruka-launch/media/moyo-portrait.jpg"
+           alt="Varaidzo Tendai Moyo, co-founder and chief executive of Ruka Hair"
+           loading="lazy">
+      <figcaption>Varaidzo Tendai Moyo. <span class="credit">Courtesy of Ruka Hair</span></figcaption>
+    </figure>
     <span class="article-dark-section-eyebrow">Meet the founder</span>
     <h2>Varaidzo Tendai Moyo, by way of LSE and Bain.</h2>
     <p>Moyo, 31, founded Ruka in September 2020 after a year at Bain &amp; Company in London as an associate consultant. She read Business Mathematics &amp; Statistics at the London School of Economics, graduating in 2019. Since June 2025 she has also served on the advisory board of the British Beauty Council, an industry-level seat that signals the UK beauty trade is taking a founder seriously. Her co-founder, Ugorji Agbai, is chief strategy officer.</p>
     <p>The decision to leave a consulting partner-track at Bain to start a brand was, by the chronology, not a casual one. Ruka was incorporated in October 2020, weeks after Moyo's last month at Bain, and ran for nearly a year of product development before its commercial launch in May 2021. The standard high-achiever ascent inside management consulting is the path Moyo declined. The standard founder pivot, into something that builds slowly off a category insight rather than a hype cycle, is the path she took.</p>
-    <dl class="founder-facts">
-      <dt>Age</dt><dd>31 (born November 1994)</dd>
-      <dt>Education</dt><dd>BSc Business Mathematics &amp; Statistics, London School of Economics</dd>
-      <dt>Career</dt><dd>Associate Consultant, Bain &amp; Company (2019–2020)<br>Co-founder &amp; CEO, Ruka Hair (2020–present)</dd>
-      <dt>Industry seat</dt><dd>Advisory Board Member, British Beauty Council (2025–present)</dd>
-      <dt>Co-founder</dt><dd>Ugorji Agbai, Chief Strategy Officer</dd>
-    </dl>
   </div>
 </section>
 
