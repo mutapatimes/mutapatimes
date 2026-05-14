@@ -13,6 +13,19 @@ spotlight: true
 
 Ruka, the London-based textured-hair company founded in 2020 by Varaidzo Tendai Moyo and Ugorji Agbai, is one of the brands quietly putting Zimbabwean commercial talent on the international map. This week the company closed a $4.5m round co-led by Henkel Ventures, the corporate venture arm of the German consumer-goods conglomerate, and Freedom Trail Capital. The deal, first reported by Beauty Independent and The Business of Beauty on 13 May, takes Ruka's lifetime funding to approximately $10m. It is, by some distance, the company's most strategically consequential cheque to date.
 
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/ruka-launch/media/ruka-means.png"
+         alt="Ruka brand identity: 'Ruka means'"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Ruka, founded in London in 2020, has built its brand around the Zimbabwean and wider Black hair-care tradition.</span>
+    <span class="credit">Courtesy of Ruka Hair</span>
+  </figcaption>
+</figure>
+
 For Henkel, the cheque is small but deliberate. The German group, which owns Schwarzkopf and Persil, has been unusually active in beauty M&A this year, with deals for Olaplex and Not Your Mother's reshaping its hair-care portfolio. A minority stake in Ruka extends that thesis into the textured-hair category, a segment Henkel has touched only tangentially through its Schwarzkopf Professional sub-brand Osis, with which Ruka is currently partnering on a curl spray. Industry estimates put the global Black hair-care market at over $10bn annually, with Black women spending roughly six times as much as their white counterparts on hair-care products and services, according to a 2021 study Ruka itself cites in its marketing materials.
 
 ## The round, as filed
@@ -20,6 +33,19 @@ For Henkel, the cheque is small but deliberate. The German group, which owns Sch
 The round structure as filed at Companies House on 29 April 2026 is more complex than a single new Series Seed allotment. Two separate share issuances are recorded for the same transaction date, 28 April: 85,960 new Ordinary shares (likely employee option exercises and founder-related issuances tied to the round) and 109,289 new Series Seed shares (the principal investor money). Post-issuance, Ruka's issued capital comprises 1,597,524 Ordinary shares and 689,436 Series Seed shares, a roughly 70/30 split between commons and preferred. The Series Seed class, per the prescribed particulars filed with the SH01, ranks first on a distribution of assets on a liquidation. This is standard preferred-share architecture.
 
 The investors around the table now include the round's two co-leads, Henkel Ventures and Freedom Trail Capital (the LP vehicle behind the round, FT 1804 Fund I LP), alongside the brand's pre-existing institutional backers. Ruka's articles of association, adopted by special resolution on 2 June 2025, name three "Major Investors": Backed (Backed 2 L.P., the Backed VC fund), FTC (the same FT 1804 vehicle) and GIF (Growth Impact Master Holdco Ltd, the legal vehicle behind Big Issue Invest's impact fund). Alexander Brunicki, the Backed VC founding partner, has sat on Ruka's board since at least the 18-month period reported to April 2024. Other participants in this round include Backed VC and Big Issue Invest, plus a roster of operator-angels: Olympic medallist Dina Asher-Smith, former McKinsey senior partner Knut Alicke, retail and M&A operator Sophia Dennis, and Vital Versatility founder Didier Morais. Ruka's articles flag two name-recognisable existing angels at the company: Ian Hogarth, the AI investor and current chair of the UK's AI Safety Institute, and Tristan Walker, founder of Walker & Co. and now a P&G operator.
+
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/ruka-launch/media/moyo-portrait.jpg"
+         alt="Varaidzo Tendai Moyo, co-founder and chief executive of Ruka Hair"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Varaidzo Tendai Moyo, Ruka's co-founder and chief executive, retains chair-of-board rights under the company's June 2025 articles.</span>
+    <span class="credit">Courtesy of Ruka Hair</span>
+  </figcaption>
+</figure>
 
 Moyo, in comments to The Business of Beauty published on 13 May, framed the difficulty of putting that mix together herself. "Beauty investors understand consumer and retail distribution, and biotech investors understand material science. It's very difficult to find investors who sit at that intersection," she said. The Henkel cheque, in that light, is partly a vote of confidence in the cross-category proposition and partly the resolution of a real fundraising problem.
 
@@ -66,6 +92,20 @@ Moyo, in an interview with Beauty Independent published alongside the funding an
 
 A 2025 patent filing covers Synths 3, due in the first quarter of 2027, which introduces shape-memory technology allowing the fibre to be straightened or curled before reverting to its original texture on wash. If the science holds at scale, Synths 3 makes the human-hair market optional, rather than necessary, for a meaningful segment of the consumer base.
 
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <video class="article-fullbleed-media"
+           autoplay muted loop playsinline preload="metadata"
+           aria-label="Ruka Synths collagen-fibre braiding hair in motion">
+      <source src="/img/uploads/ruka-launch/media/synths.mp4" type="video/mp4">
+    </video>
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Synths 2, Ruka's collagen-protein braiding fibre, produced in Japan and sold at $31 a bundle against $170 for the equivalent human-hair product.</span>
+    <span class="credit">Courtesy of Ruka Hair</span>
+  </figcaption>
+</figure>
+
 Moyo described the vision to Beauty Independent in the well-rehearsed manner of a founder who has done the round: "We call ourselves the Apple of haircare because we want to create this ecosystem of textured hair products that are led by science and innovation." The Apple comparison is doing real work in the pitch. Whether it lands at the next valuation milestone will depend on whether Synths 3 delivers laboratory results in the field.
 
 Hair perfume, a smaller adjacent line, is Ruka's second-best-selling category after extensions, corroborated by the Google Trends breakout reading on that exact query. The company also operates a business-to-business arm, currently 14% of revenue, selling wigs and extensions to companies including the National Theatre and to professional stylists working on Netflix and Apple TV+ productions. Brand partnerships include a sweat-wicking-headband collaboration with Gymshark and the forthcoming Schwarzkopf Osis curl spray. Ruka was honoured at The Business of Fashion Global Beauty Forum in 2025, an early industry marker that the brand was being taken seriously by the people who allocate beauty capital.
@@ -77,6 +117,19 @@ Hair perfume, a smaller adjacent line, is Ruka's second-best-selling category af
 Ruka's customer base is split almost evenly between the United States (47%) and the United Kingdom (48%), with Europe at 4% and Africa at 1%. The company entered Selfridges in 2022 and will expand into an undisclosed US retailer in late June. A new East Coast warehouse, opened the week before the round closed, supports the US push and is forecast by management to underwrite a 101% increase in revenue by April 2027.
 
 The mix matters for two reasons. The proximate growth thesis is American, and the round is being deployed largely in support of that. The home market, in commercial terms, is still elsewhere. But the heritage on which Ruka leans is not decoration. The brand's framing, from the Bantu-knots origin story to the Zimbabwean ownership of the founding team, is the bedrock on which the British and American books are being built. African heritage and an American customer base are not at odds here. They are the proposition.
+
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/ruka-launch/media/we-are-ruka.jpg"
+         alt="The Ruka Hair community"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">The community around the brand. Ruka's customer base is split almost evenly between the United Kingdom and the United States.</span>
+    <span class="credit">Courtesy of Ruka Hair</span>
+  </figcaption>
+</figure>
 
 ## The governance frame
 
