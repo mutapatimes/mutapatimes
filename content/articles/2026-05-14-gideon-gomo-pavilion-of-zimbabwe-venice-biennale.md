@@ -1,7 +1,7 @@
 ---
 title: "Gideon Gomo: from stone to bronze, the ancestral algorithm at Venice"
 date: 2026-05-14T13:00:00.000Z
-author: Tatenda Mhaka
+author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/gomo/hero.jpg
 summary: "The fourth in a five-part series on Zimbabwe's pavilion at the 61st Venice Biennale. Gideon Gomo's first sustained body of bronze work — paired with discarded vehicle number plates and Zimbabwean springstone — is the move of a sculptor at full maturity rethinking the material vocabulary of his country's most internationally legible art form."

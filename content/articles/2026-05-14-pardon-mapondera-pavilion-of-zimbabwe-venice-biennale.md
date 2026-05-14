@@ -1,7 +1,7 @@
 ---
 title: "Pardon Mapondera: gone but not forgotten at Venice"
 date: 2026-05-14T14:00:00.000Z
-author: Tatenda Mhaka
+author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/mapondera/hero.jpg
 summary: "The fifth and final piece in our series on Zimbabwe's pavilion at the 61st Venice Biennale. Pardon Mapondera, the artist whose practice the room finally arranges itself around, treats discarded plastic and glass jars not as ecological signal but as ritual matter — and produces, in the process, the most quietly devotional installation in the Biennale this year."

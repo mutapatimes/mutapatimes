@@ -1,7 +1,7 @@
 ---
 title: "Eva Raath: a slow archive of stitched memory at Venice"
 date: 2026-05-14T10:00:00.000Z
-author: Tatenda Mhaka
+author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/raath/hero.jpg
 summary: "In the first of five long-form pieces on the Pavilion of Zimbabwe at the 61st Venice Biennale, we look at Eva Raath — printmaker, textile artist, quiet engineer of memory — whose contribution to Second Nature | Manyonga reads, on second visit, as the most underestimated work in the room."

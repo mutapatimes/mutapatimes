@@ -1,7 +1,7 @@
 ---
 title: "Felix Shumba: charcoal as a register of disappearance at Venice"
 date: 2026-05-14T11:00:00.000Z
-author: Tatenda Mhaka
+author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/shumba/hero.jpg
 summary: "The second in a five-part series on Zimbabwe's pavilion at the 61st Venice Biennale. Felix Shumba's six-metre charcoal wall and his Telephone Reader series anchor a body of work that argues drawing is not the act of capturing the seen, but the act of staying present to what is on its way out of sight."

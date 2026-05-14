@@ -1,7 +1,7 @@
 ---
 title: "Franklyn Dzingai: family albums and the neural commons at Venice"
 date: 2026-05-14T12:00:00.000Z
-author: Tatenda Mhaka
+author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/dzingai/hero.jpg
 summary: "The third in a five-part series on Zimbabwe's pavilion at the 61st Venice Biennale. Franklyn Dzingai's reductive cardboard prints — built from the family album, the magazine clipping, the back-room studio photographs of mid-century Zimbabwe — turn out, on close looking, to be the most precisely engineered work in the room."

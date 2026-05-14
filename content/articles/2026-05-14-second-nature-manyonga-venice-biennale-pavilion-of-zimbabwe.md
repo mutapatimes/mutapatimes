@@ -47,7 +47,7 @@ What I saw, when I started looking, was beauty in registers I had not been ready
 
 The decay of the city, first of all. Chipped plaster. The rusted iron mooring rings sunk into the canal walls. The long curling strips of paint lifting off a doorway in Cannaregio to reveal three earlier colours underneath. By Wednesday afternoon I had stopped photographing the obvious *palazzi* and was photographing door-handles, salt-stained wood, the corner where a building had begun — very slowly — to become a different building. I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour that no one would have been able to mix on a palette. There is style in time. There is grace in attrition. The British in me — by osmosis, regrettable as that is — eventually decided to stop sulking and to look. Once I started, I could not stop. I became, by my own diagnosis, a broken record of seeing beauty in everything, to the point where anyone who came into conversation with me that week would have been fairly entitled to assume I was high on shrooms.
 
-And there were people who carried the same quality of attention I was finding in the city. On the opening night of the pavilion — Thursday evening, the rain having finally lifted and the lagoon turning the colour of warm pearl behind us — there was a constellation of older Black women moving through the rooms at Santa Maria della Pietà with the particular radiance that only comes from a life lived in full attention to itself. Thelma Golden of the Studio Museum in Harlem was there for an hour. The managing director of Lisson Gallery moved through the rooms with her own light. I kept thinking — sitting in the corner afterwards, sipping prosecco from a tray that did not stop circulating until well past eleven — that beauty in its most consequential register is not a feature of the young face. It is a feature of the lived one.
+And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a constellation of older Black women I kept noticing in Venice — at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening — moving with a particular radiance that only comes from a life lived in full attention to itself. Thelma Golden was somewhere in the city for some of those days. The managing director of Lisson Gallery passed through. But mostly it was the women I did not have names for — six, eight, ten of them across the week — that I kept returning to in my head. Beauty in its most consequential register is not a feature of the young face. It is a feature of the lived one.
 
 <aside class="article-pullquote">
   <blockquote>Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.</blockquote>
@@ -76,14 +76,14 @@ But the night was not about me. It was about the people who were in that room be
          loading="lazy">
   </div>
   <figcaption class="article-fullbleed-caption">
-    <span class="desc">Opening night at Santa Maria della Pietà, 14 May 2026. Some five hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned.</span>
+    <span class="desc">Opening night at Santa Maria della Pietà, 14 May 2026. About a hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned.</span>
     <span class="credit">Photograph by Amedeo Benestante</span>
   </figcaption>
 </figure>
 
 ## Friends, neighbours, the Togolese contingent
 
-The Rotherhithe contingent had also landed. My neighbours and friends from south-east London — Tsitsi and Panashe, husband and wife — had arrived for the opening that afternoon. Tsitsi and I have been in conversation for some months about a project I am helping her with: a library, in a particular configuration, in a particular place. She had brought with her to Venice a small squad of women creatives she had been working with in Togo over the last year. The squad was magnificent — multilingual, dressed for a city I had not yet figured out how to dress for, and entirely unintimidated by the room they had walked into. I learned several things from them in the course of one evening that I will be carrying for some time.
+The Rotherhithe contingent had also landed. My neighbours and friends from south-east London — Tsitsi and Panashe, husband and wife — had arrived for the opening that afternoon. Tsitsi and I have been in conversation for some months about a project I am helping her with: a library, in a particular configuration, in a particular place. She had travelled to Venice with a small group of friends from Togo, who arrived dressed for the city in a way the rest of us were patently failing to be — effortlessly, beautifully, with the kind of confidence in colour and silhouette that turns the room around without trying to. I learned several things in their company that I will be carrying for some time.
 
 ## Alumni
 
@@ -102,7 +102,7 @@ The lineage was visible in the room. People who had been *the pavilion* in 2013,
 
 ## The wider Biennale, and a text I could not stop thinking about
 
-Outside the pavilion the rest of Venice had its own southern African weather. **Gabrielle Goliath's exhibition** — which had, after the much-reported cancellation of the South African pavilion this year, been able to come through in its own configuration at another venue — was one of the most discussed shows of the week. **Zoé Samudzi's** *Elegy — for two ancestors*, a reflective text on two photographs of Namibian women taken by colonial German photographers, was being read and shared and quoted in conversations that ran through the cafés near the Giardini. There was, in the period of the opening, the sense of a broader southern African intellectual moment finding its register inside the Biennale's official rooms — the kind of moment that, if you were standing close enough, you could hear taking shape in real time.
+Outside the pavilion the rest of Venice had its own southern African weather. **Gabrielle Goliath's exhibition** — which had, after the much-reported cancellation of the South African pavilion this year, been able to come through in its own configuration at another venue — was one of the most discussed shows of the week. **Zoé Samudzi** — the Zimbabwean-American writer and scholar whose work has been one of the most consequential voices on Black feminist thought and visual culture out of the diaspora in the last several years — was showing alongside Goliath. Her reflective text *Elegy — for two ancestors* — written on two photographs of Namibian women taken by colonial German photographers — was being read and shared and quoted in conversations that ran through the cafés near the Giardini. There was, in the period of the opening, the sense of a broader Zimbabwean and southern African intellectual moment finding its register inside the Biennale's official rooms — the kind of moment that, if you were standing close enough, you could hear taking shape in real time.
 
 I read Samudzi's text on Friday, sitting in a small bar on a side canal somewhere near the Ponte dell'Accademia, the rain having returned for an hour. I want to record a passage of it here:
 
@@ -115,9 +115,9 @@ I sat with it for some time. The relation of the Samudzi piece to the Pavilion o
 
 ## A book I am writing, in part because of the rain
 
-By Saturday I had finally met **Belinda Holden** in person — Belinda with whom I had been in extensive correspondence for some months, regarding the 1925 Glen Norah publication. We met at a coffee bar near San Marco and stood for two hours not drinking the coffee we had ordered. By Sunday I was on the boat back to Marco Polo with a soggy notebook and a far better sense of what I was making and why.
+By Sunday I was on the boat back to Marco Polo with a soggy notebook and a far better sense of what I was making and why.
 
-The book — which is forthcoming later this year — follows the five artists in the Pavilion of Zimbabwe from the moment the commission was confirmed to the moment of installation in Venice. It is not a catalogue. It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it. The week in Venice taught me what shape the book wants to be. I had arrived thinking I knew. I left understanding I had not yet been listening hard enough.
+The book — which 1925 Glen Norah is publishing later this year — follows the five artists in the Pavilion of Zimbabwe from the moment the commission was confirmed to the moment of installation in Venice. It is not a catalogue. It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it. The week in Venice taught me what shape the book wants to be. I had arrived thinking I knew. I left understanding I had not yet been listening hard enough.
 
 ## In closing — on therapy, in beauty
 
