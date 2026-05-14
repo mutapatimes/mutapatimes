@@ -122,8 +122,7 @@ def iso_date(date_str):
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
 # depth=1 means inside articles/ or people/ folder — CSS/JS paths go up one level
-def page_head(title, description, canonical_url, og_type, og_image, depth=1,
-              body_class=""):
+def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     prefix = "../" if depth == 1 else ""
     return f"""<!doctype html>
 <html class="no-js" lang="en">
@@ -207,7 +206,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1,
 <link rel="alternate" hreflang="x-default" href="{esc(canonical_url)}">"""
 
 
-def page_nav(active="articles", depth=1):
+def page_nav(active="articles", depth=1, body_class=""):
     prefix = "../" if depth == 1 else ""
     def cls(name):
         return ' class="active notranslate"' if name == active else ' class="notranslate"'
@@ -649,8 +648,7 @@ def build_articles():
         # Build page
         html_parts = []
         body_class = "longform-page" if longform else ""
-        html_parts.append(page_head(page_title, summary, canonical, "article", og_image,
-                                     depth=1, body_class=body_class))
+        html_parts.append(page_head(page_title, summary, canonical, "article", og_image, depth=1))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}
@@ -658,7 +656,7 @@ def build_articles():
 <script type="application/ld+json">
 {json.dumps(breadcrumb)}
 </script>""")
-        html_parts.append(page_nav("articles", depth=1))
+        html_parts.append(page_nav("articles", depth=1, body_class=body_class))
         # Stories rail — same IG-style highlight strip used on home + /articles.
         # Stays empty if the visitor's local index has nothing fresh.
         html_parts.append(
