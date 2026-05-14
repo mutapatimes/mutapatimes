@@ -8027,3 +8027,99 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   .reveal-on-scroll { opacity: 1 !important; transform: none !important; transition: none !important; }
   .count-up { /* freeze at final value */ }
 }
+
+/* ───── Longform immersive entry ─────
+   On <body class="longform-page"> the article enters on a full-viewport
+   hero with the sticky topbar floating over it. Everything else above
+   the article — masthead, main nav, stories rail, hairlines, breadcrumb
+   — is suppressed to reduce distraction. */
+body.longform-page .titleDiv,
+body.longform-page .title-link h4.sub,
+body.longform-page #mainNav,
+body.longform-page .nav-hamburger,
+body.longform-page .topHr,
+body.longform-page .bottomHr,
+body.longform-page .dateHr,
+body.longform-page .aboutTitle,
+body.longform-page #stories-rail,
+body.longform-page .article-breadcrumb {
+  display: none !important;
+}
+body.longform-page .title-link {
+  display: none !important;
+}
+body.longform-page .paper {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  background: transparent !important;
+}
+body.longform-page main { margin: 0; padding: 0; }
+body.longform-page .article-longform-hero {
+  height: 100vh;
+  min-height: 640px;
+  max-height: none;
+}
+
+/* Darker overlay so the headline carries off the image cleanly */
+.article-longform-hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(8, 8, 8, 0.34) 0%,
+    rgba(8, 8, 8, 0.55) 48%,
+    rgba(8, 8, 8, 0.94) 100%
+  ) !important;
+}
+
+/* Slightly tighten the headline area so it lifts off the dark base */
+.article-longform-hero-inner {
+  padding: 56px 48px 64px;
+}
+.article-longform-title {
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
+}
+.article-longform-deck {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ───── Pull-quote refresh — italic editorial register ─────
+   Playfair italic at lighter weight reads far better than bold,
+   especially at the larger display sizes. Bumped size + line-height,
+   muted the giant decorative quote mark behind the text. */
+.article-pullquote {
+  background: rgba(245, 232, 200, 0.45);
+}
+.article-pullquote::before {
+  font-size: 5.4rem;
+  opacity: 0.16;
+  top: -2px;
+}
+.article-pullquote blockquote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.55rem, 2.4vw, 2.1rem);
+  line-height: 1.42;
+  letter-spacing: -0.005em;
+  color: #1a1a1a;
+  margin: 0 0 22px;
+}
+.article-pullquote cite {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent, #c0392b);
+  display: inline-block;
+  padding-top: 6px;
+  border-top: 1px solid rgba(192, 57, 43, 0.25);
+}
+@media (max-width: 720px) {
+  .article-pullquote blockquote {
+    font-size: 1.4rem;
+    line-height: 1.36;
+  }
+  .article-pullquote::before { font-size: 4rem; }
+}

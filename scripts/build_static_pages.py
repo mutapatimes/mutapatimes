@@ -122,7 +122,8 @@ def iso_date(date_str):
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
 # depth=1 means inside articles/ or people/ folder — CSS/JS paths go up one level
-def page_head(title, description, canonical_url, og_type, og_image, depth=1):
+def page_head(title, description, canonical_url, og_type, og_image, depth=1,
+              body_class=""):
     prefix = "../" if depth == 1 else ""
     return f"""<!doctype html>
 <html class="no-js" lang="en">
@@ -162,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=72">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=73">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -211,9 +212,10 @@ def page_nav(active="articles", depth=1):
     def cls(name):
         return ' class="active notranslate"' if name == active else ' class="notranslate"'
     eco_cls = ' class="economy-btn active"' if active == "economy" else ' class="economy-btn"'
+    body_attr = f' class="{esc(body_class)}"' if body_class else ""
     return f"""  </head>
 
-  <body>
+  <body{body_attr}>
 <div class="topbar" id="topbar" aria-label="Sticky navigation">
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -646,7 +648,9 @@ def build_articles():
 
         # Build page
         html_parts = []
-        html_parts.append(page_head(page_title, summary, canonical, "article", og_image, depth=1))
+        body_class = "longform-page" if longform else ""
+        html_parts.append(page_head(page_title, summary, canonical, "article", og_image,
+                                     depth=1, body_class=body_class))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}
