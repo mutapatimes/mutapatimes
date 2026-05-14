@@ -17,6 +17,7 @@ collections:
     summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
     sortable_fields: ["date", "title", "category", "featured"]
     view_filters:
+      - { label: "Drafts", field: "draft", pattern: true }
       - { label: "Featured", field: "featured", pattern: true }
       - { label: "Spotlight", field: "spotlight", pattern: true }
       - { label: "Original", field: "source_type", pattern: "original" }

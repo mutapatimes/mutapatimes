@@ -2,7 +2,7 @@
 """Scrape Zimbabwe job listings from public job boards and save to
 data/jobs.json for client-side rendering on /jobs.html.
 
-We aggregate — each listing links back to the source board so the apply
+We aggregate - each listing links back to the source board so the apply
 flow happens on their site. New boards can be added by appending another
 (label, url, parser) tuple to SOURCES. Each parser receives the raw HTML
 and returns a list of normalised job dicts.

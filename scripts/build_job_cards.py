@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render a brand headline card for every active job in data/jobs.json.
 
-Mirrors scripts/build_feed_cards.py — each card is keyed by an MD5 hash
+Mirrors scripts/build_feed_cards.py - each card is keyed by an MD5 hash
 of the job URL so re-runs are cheap and stable. The Metricool jobs
 autolist (https://www.mutapatimes.com/jobs-feed.xml) attaches these as
 the post image so every social preview is on-brand.
@@ -48,7 +48,7 @@ def card_public_url(url):
 
 
 def _bg_for(url):
-    """Deterministic palette index per URL — the same job always gets
+    """Deterministic palette index per URL - the same job always gets
     the same colour, the feed-level rotation feels varied."""
     h = card_hash(url)
     return int(h, 16) % len(CARD_BACKGROUNDS)
@@ -76,7 +76,7 @@ def render_job_card(job, output_path):
     draw.text((60, 114), "JOBS · ZIMBABWE",
               font=eyebrow_font, fill=ACCENT)
 
-    # Title — wrap into up to 5 lines
+    # Title - wrap into up to 5 lines
     title = (job.get("title") or "Open role").strip()
     title_lines = wrap_text(title, title_font, CARD_W - 120, draw)[:5]
     line_height = 84
@@ -85,7 +85,7 @@ def render_job_card(job, output_path):
         draw.text((60, title_y), ln, font=title_font, fill=CARD_FG)
         title_y += line_height
 
-    # Company name — bold sans, accent-coloured
+    # Company name - bold sans, accent-coloured
     company = (job.get("company") or "").strip()
     if company:
         draw.text((60, title_y + 30), company.upper(),
@@ -119,14 +119,14 @@ def render_job_card(job, output_path):
     img.save(output_path, "PNG", optimize=True)
 
 
-# First-party Mutapa Times internships — always rendered, fixed filenames
+# First-party Mutapa Times internships - always rendered, fixed filenames
 # so generate_rss.py can reference them deterministically.
 INTERNSHIPS = [
     {
         "slug": "social-intern",
         "title": "Social Intern",
         "company": "The Mutapa Times",
-        "location": "Remote — Worldwide",
+        "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
         "url": "https://www.mutapatimes.com/jobs.html#social-intern",
@@ -135,7 +135,7 @@ INTERNSHIPS = [
         "slug": "editor-intern",
         "title": "Editor Intern",
         "company": "The Mutapa Times",
-        "location": "Remote — Worldwide",
+        "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
         "url": "https://www.mutapatimes.com/jobs.html#editor-intern",
@@ -144,7 +144,7 @@ INTERNSHIPS = [
         "slug": "data-intern",
         "title": "Data Intern",
         "company": "The Mutapa Times",
-        "location": "Remote — Worldwide",
+        "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
         "url": "https://www.mutapatimes.com/jobs.html#data-intern",
@@ -163,13 +163,13 @@ def collect_active_jobs():
 
 
 def prune_stale_cards(active_url_hashes):
-    """Delete card PNGs whose job is no longer in the active feed —
+    """Delete card PNGs whose job is no longer in the active feed -
     keeps img/cards/jobs/ tracking the live listings, prevents the
     1 GB GitHub Pages cap drift."""
     pruned = 0
     for path in glob.glob(os.path.join(OUT_DIR, "*.png")):
         name = os.path.splitext(os.path.basename(path))[0]
-        # Internship cards use stable filenames (internship-<slug>) — leave them.
+        # Internship cards use stable filenames (internship-<slug>) - leave them.
         if name.startswith("internship-"):
             continue
         # Only touch the 12-hex-char hashed cards we own
@@ -193,7 +193,7 @@ def main():
     rendered = cached = failed = 0
     active_hashes = set()
 
-    # First-party internships — rendered with a stable filename
+    # First-party internships - rendered with a stable filename
     # (internship-{slug}.png) so the RSS feed can reference them
     # deterministically. Always re-rendered so copy tweaks take effect.
     for it in INTERNSHIPS:
@@ -205,7 +205,7 @@ def main():
             failed += 1
             print(f"    FAIL internship {it['slug']}: {e}")
 
-    # Live aggregated jobs — hash-keyed, cached by file existence
+    # Live aggregated jobs - hash-keyed, cached by file existence
     for job in jobs:
         url = job["url"].strip()
         active_hashes.add(card_hash(url))

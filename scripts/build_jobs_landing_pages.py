@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build /jobs-landing/{md5}.html — one landing page per jobs-feed
+"""Build /jobs-landing/{md5}.html - one landing page per jobs-feed
 item. Each page declares the job's 1080×1350 card as og:image so
 Metricool's autolist preview picks our branded card up instead of
 scraping the external job board (vacancymail.co.zw etc.).
@@ -28,10 +28,10 @@ INTERNSHIPS = [
     {
         "slug": "social-intern", "role": "Social Intern",
         "destination": f"{BASE_URL}/jobs#social-intern",
-        "body": "Help grow our social channels. Pitch fresh formats and ideas, spot trends, and shape how The Mutapa Times shows up across Instagram, Threads, X, TikTok and LinkedIn. Bring your own thinking — we like innovation.",
+        "body": "Help grow our social channels. Pitch fresh formats and ideas, spot trends, and shape how The Mutapa Times shows up across Instagram, Threads, X, TikTok and LinkedIn. Bring your own thinking - we like innovation.",
         "spec": "Fully remote · 3 days a week · 3 months · Rolling intake",
         "card": "internship-social-intern.png",
-        "kind_label": "Internship — The Mutapa Times",
+        "kind_label": "Internship - The Mutapa Times",
     },
     {
         "slug": "editor-intern", "role": "Editor Intern",
@@ -39,7 +39,7 @@ INTERNSHIPS = [
         "body": "Pitch, draft and edit original explainers and analysis. Fact-check stories, help shape the twice-weekly newsletter, and bring new editorial angles for telling Zimbabwean stories to a diaspora audience.",
         "spec": "Fully remote · 3 days a week · 3 months · Rolling intake",
         "card": "internship-editor-intern.png",
-        "kind_label": "Internship — The Mutapa Times",
+        "kind_label": "Internship - The Mutapa Times",
     },
     {
         "slug": "data-intern", "role": "Data Intern",
@@ -47,7 +47,7 @@ INTERNSHIPS = [
         "body": "Turn Zimbabwean public data into clear, visual stories. Extend the live economy briefing, prototype new ways to make numbers readable, and bring your own data ideas.",
         "spec": "Fully remote · 3 days a week · 3 months · Rolling intake",
         "card": "internship-data-intern.png",
-        "kind_label": "Internship — The Mutapa Times",
+        "kind_label": "Internship - The Mutapa Times",
     },
 ]
 
@@ -89,7 +89,7 @@ def collect_items():
         summary = (j.get("summary") or "").strip()
         spec_bits = [b for b in [company, location, jtype, salary] if b]
         spec = " · ".join(spec_bits)
-        # Body — summary if we have one, otherwise the spec line
+        # Body - summary if we have one, otherwise the spec line
         body = summary or spec
         source = (j.get("source") or "vacancymail.co.zw").strip()
         items.append({
@@ -110,7 +110,7 @@ TEMPLATE = """<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{title_esc} — The Mutapa Times</title>
+  <title>{title_esc} - The Mutapa Times</title>
   <link rel="canonical" href="{canonical}">
 
   <meta name="robots" content="noindex,follow">
