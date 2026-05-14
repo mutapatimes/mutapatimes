@@ -8061,6 +8061,14 @@ body.longform-page .article-longform-hero {
   max-height: none;
 }
 
+/* On longform pages the topbar is the only chrome over the hero, so it
+   should be present from the first paint — don't make the reader scroll
+   to surface it. Overrides the default `transform: translateY(-100%)`. */
+body.longform-page .topbar {
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+
 /* Darker overlay so the headline carries off the image cleanly */
 .article-longform-hero-overlay {
   background: linear-gradient(
@@ -8133,9 +8141,13 @@ body.longform-page .article-longform-hero {
   width: 100vw;
   position: relative;
   left: 50%;
+  /* NOTE: margin-top + bottom are set as separate properties below so
+     margin-left: -50vw is preserved. A `margin: 72px 0` shorthand here
+     silently clobbers margin-left and pushes the panel off-page. */
+  margin-top: 72px;
+  margin-bottom: 72px;
   margin-left: -50vw;
   padding: 96px 32px 104px;
-  margin: 72px 0;
   border-top: 1px solid rgba(245, 232, 200, 0.08);
   border-bottom: 1px solid rgba(245, 232, 200, 0.08);
 }
@@ -8195,7 +8207,12 @@ body.longform-page .article-longform-hero {
   border-top-color: rgba(245, 232, 200, 0.18);
 }
 @media (max-width: 720px) {
-  .article-dark-section { padding: 64px 22px 72px; margin: 48px 0; }
+  .article-dark-section {
+    padding: 64px 22px 72px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    /* keep margin-left: -50vw from the desktop rule */
+  }
 }
 
 /* Founder bio dl — clean two-column factbox */
