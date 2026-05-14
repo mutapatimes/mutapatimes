@@ -3,7 +3,7 @@
  *
  * Highlight any sentence in an article body → a small "Share this quote"
  * button fades in near the selection. Tap it and we render a butter
- * 1080×1080 share card on a hidden canvas (brand wordmark + the quote
+ * 1080×1350 IG-portrait share card on a hidden canvas (brand wordmark + the quote
  * in Playfair + attribution), then call the native share sheet with the
  * resulting PNG file. Desktop fallback: download the PNG and copy a
  * deep-link URL to clipboard.
@@ -154,12 +154,12 @@
   function renderCard(quote, sourceLine) {
     var canvas = document.createElement("canvas");
     canvas.width = 1080;
-    canvas.height = 1080;
+    canvas.height = 1350;
     var ctx = canvas.getContext("2d");
 
     // Butter background
     ctx.fillStyle = BG;
-    ctx.fillRect(0, 0, 1080, 1080);
+    ctx.fillRect(0, 0, 1080, 1350);
 
     var pad = 88;
 
@@ -181,28 +181,28 @@
 
     // ---- Quote — big serif, smart curly quotes ----
     var pretty = "“" + quote.replace(/^["'“‘]+|["'”’]+$/g, "") + "”";
-    var maxLines = 7;
+    var maxLines = 9;
     var maxWidth = 1080 - pad * 2;
     var picked = pickQuoteFontSize(ctx, pretty, maxWidth, maxLines);
     ctx.fillStyle = INK;
     ctx.font = "700 " + picked.size + "px " + SERIF;
     var lineHeight = Math.round(picked.size * 1.25);
-    var quoteY = pad + 200;
+    var quoteY = pad + 220;
     for (var i = 0; i < picked.lines.length; i++) {
       ctx.fillText(picked.lines[i], pad, quoteY + i * lineHeight);
     }
 
     // ---- Bottom: attribution + URL ----
     ctx.fillStyle = ACCENT;
-    ctx.fillRect(pad, 1080 - pad - 100, 60, 3);
+    ctx.fillRect(pad, 1350 - pad - 100, 60, 3);
 
     ctx.fillStyle = INK;
     ctx.font = "700 22px " + SANS;
-    ctx.fillText(sourceLine || "The Mutapa Times", pad, 1080 - pad - 80);
+    ctx.fillText(sourceLine || "The Mutapa Times", pad, 1350 - pad - 80);
 
     ctx.fillStyle = MUTED;
     ctx.font = "600 18px " + SANS;
-    ctx.fillText("mutapatimes.com", pad, 1080 - pad - 48);
+    ctx.fillText("mutapatimes.com", pad, 1350 - pad - 48);
 
     return canvas;
   }
