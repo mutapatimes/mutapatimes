@@ -148,11 +148,16 @@ def render_quote(size, idx, quote, out_path):
         cy += line_h
 
     attr_font = load_font("sans_bold", 22)
-    attr = f"VARAIDZO TENDAI MOYO  ·  CO-FOUNDER & CEO, RUKA"
+    attr = "VARAIDZO TENDAI MOYO  ·  CO-FOUNDER & CEO, RUKA"
     bbox = draw.textbbox((0, 0), attr, font=attr_font)
     if (bbox[2] - bbox[0]) > w - 160:
         attr = "TENDAI MOYO  ·  CO-FOUNDER & CEO"
     draw.text((80, cy + 50), attr, font=attr_font, fill=ACCENT)
+    # Source credit — quotes were given to Beauty Independent /
+    # The Business of Beauty, not to The Mutapa Times.
+    src_font = load_font("sans", 18)
+    src_text = "VIA BEAUTY INDEPENDENT" if idx != 3 else "VIA BEAUTY INDEPENDENT"
+    draw.text((80, cy + 84), src_text, font=src_font, fill=CARD_FG_MUTED)
 
     idx_font = load_font("sans_bold", 22)
     draw.text((80, 220), f"PULL-QUOTE  ·  {idx:02d} OF 03",
