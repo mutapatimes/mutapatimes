@@ -165,7 +165,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=77">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=78">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -450,7 +450,7 @@ def page_footer(depth=1):
   <script defer src="{prefix}js/stories.js"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
-  <script defer src="/js/article-parallax.js"></script>
+  <script defer src="/js/article-parallax.js?v=2"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{

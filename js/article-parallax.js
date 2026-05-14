@@ -32,6 +32,23 @@
 
   // ── 3. Scroll-reveal ──────────────────────────────────────────
   scrollReveal();
+
+  // ── 4. Autoplay nudge for inline article videos ───────────────
+  // iOS Safari (especially Low Power Mode) often won't honour the
+  // autoplay attribute. Explicit play() after the metadata is loaded
+  // is much more reliable. Falls back silently if the browser still
+  // refuses — the poster keeps the frame from looking broken.
+  [].slice.call(document.querySelectorAll('.article-fullbleed-video'))
+    .forEach(function (v) {
+      v.muted = true;
+      v.setAttribute('playsinline', '');
+      var tryPlay = function () {
+        var p = v.play();
+        if (p && typeof p.catch === 'function') p.catch(function () {});
+      };
+      if (v.readyState >= 2) tryPlay();
+      else v.addEventListener('loadeddata', tryPlay, { once: true });
+    });
 })();
 
 function parallax(frames) {

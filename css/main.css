@@ -7702,35 +7702,38 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
+/* Captions sit BELOW the image (not overlaid). White-on-photo
+   captions never look clean once images get busy. */
 .article-fullbleed-caption {
-  position: absolute;
-  bottom: 24px;
-  left: 32px;
-  right: 32px;
-  color: #f5e8c8;
+  display: block;
+  max-width: 720px;
+  margin: 14px auto 0;
+  padding: 0 24px;
+  color: #4a4a4a;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 24px;
-  pointer-events: none;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  text-shadow: none;
 }
-.article-fullbleed-caption .desc { max-width: 56ch; opacity: 0.95; }
+.article-fullbleed-caption .desc {
+  display: block;
+  color: #2a2a2a;
+}
 .article-fullbleed-caption .credit {
-  opacity: 0.7;
+  display: block;
+  margin-top: 4px;
+  color: #8a8a8a;
   font-size: 0.7rem;
-  white-space: nowrap;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 @media (max-width: 640px) {
   .article-fullbleed-frame { height: 70vh; min-height: 360px; }
   .article-fullbleed-caption {
-    left: 16px; right: 16px; bottom: 14px;
-    flex-direction: column; align-items: flex-start; gap: 6px;
-    font-size: 0.7rem;
+    padding: 0 18px;
+    font-size: 0.78rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -7758,10 +7761,6 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   height: 100%;
   object-fit: contain;
   transform: none !important;
-}
-.article-fullbleed--landscape .article-fullbleed-caption {
-  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));
-  padding-top: 32px;
 }
 
 /* ───── Longform feature article ─────
@@ -7875,6 +7874,9 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   .article-longform-hero { height: 76vh; min-height: 460px; }
   .article-longform-hero-inner { padding: 32px 22px; }
   .article-longform-credit { right: 22px; bottom: 12px; }
+  /* Deck is unreadable over a busy photo on a phone — kill it on
+     mobile. The full summary still leads the body copy below. */
+  .article-longform-deck { display: none; }
 }
 
 /* Long-form body — wider line-height, larger reading size, drop cap */

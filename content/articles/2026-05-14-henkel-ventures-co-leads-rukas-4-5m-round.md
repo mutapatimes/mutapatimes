@@ -114,8 +114,9 @@ A 2025 patent filing covers Synths 3, due in the first quarter of 2027, which in
 
 <figure class="article-fullbleed">
   <div class="article-fullbleed-frame">
-    <video class="article-fullbleed-media"
-           autoplay muted loop playsinline preload="metadata"
+    <video class="article-fullbleed-media article-fullbleed-video"
+           autoplay muted loop playsinline preload="auto"
+           poster="/img/uploads/ruka-launch/media/synths-poster.jpg"
            aria-label="Ruka Synths collagen-fibre braiding hair in motion">
       <source src="/img/uploads/ruka-launch/media/synths.mp4" type="video/mp4">
     </video>
