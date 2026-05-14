@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 14 May 2026 16:57:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 19:40:35 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/240c15e40873.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/240c15e40873.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/240c15e40873.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>The Catholic Church opposes the Constitutional Amendment Bill No. 3</title>
+      <link>https://mutapatimes.com/stories/5d429968695a.html</link>
+      <description>The Catholic Church condemns Constitutional Amendment Bill No. 3, saying proposed changes undermine democracy, transparency, justice, and Zimbabwe’s constitutional order. The post The Catholic Church opposes the Constitutional Amendment Bill No. 3 appeared first on iHarare News. #Zimbabwe #Policy #ZimbabwePolicy #ZimbabweNews</description>
+      <pubDate>Thu, 14 May 2026 07:05:04 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/5d429968695a.html</guid>
+      <category>Policy</category>
+      <dc:creator>Iharare News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/5d429968695a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5d429968695a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/5d429968695a.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>ZDAMWU calls for worker‐centred green transition in mining sector @bulawayo24</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/3aecf89002fd.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3aecf89002fd.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/3aecf89002fd.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>ZSE Defies Liquidity Slowdown as Blue-Chip Counters Lift All-Share Index @ZSE_ZW</title>
-      <link>https://mutapatimes.com/stories/3f9a919bbcaf.html</link>
-      <description>HARARE – The Zimbabwe Stock Exchange delivered a mixed but resilient performance in April 2026, with gains in the benchmark All-Share Index offsetting a steep decline in market turnover and trading volumes as investor activity softened across the bourse. According to The Herald, via The Zimbabwe Mail #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Wed, 13 May 2026 13:36:46 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/3f9a919bbcaf.html</guid>
-      <category>Business</category>
-      <dc:creator>The Zimbabwe Mail</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/3f9a919bbcaf.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3f9a919bbcaf.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/3f9a919bbcaf.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
