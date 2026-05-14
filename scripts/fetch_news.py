@@ -968,7 +968,13 @@ def fetch_spotlight():
         if dt:
             from datetime import datetime, timezone
             try:
-                if (datetime.now(timezone.utc) - dt).days > 30:
+                age_days = (datetime.now(timezone.utc) - dt).days
+                if age_days > 30:
+                    continue
+                # Obituaries age out faster — they sit oddly on the front
+                # page once the moment has passed.
+                title_lc = (a.get("title") or "").lower()
+                if "obituary" in title_lc and age_days > 3:
                     continue
             except Exception:
                 pass

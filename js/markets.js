@@ -62,6 +62,39 @@
     }
   }
 
+  // ── Commodities ─────────────────────────────────────────────
+  function renderCommodities(data) {
+    var wrap = document.getElementById('marketsCommodities');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    (data.commodities || []).forEach(function (c) {
+      var card = el('article', { class: 'markets-card markets-card--commodity' });
+      card.appendChild(el('p', { class: 'markets-card-country', text: c.tag || '' }));
+      card.appendChild(el('h3', { class: 'markets-card-label', text: c.label }));
+      card.appendChild(el('p', { class: 'markets-card-value', text: c.value }));
+      var rowParts = [];
+      if (c.day_change) {
+        rowParts.push(
+          '<span class="markets-chip ' + changeClass(c.day_change) + '">1D ' + formatChange(c.day_change) + '</span>'
+        );
+      }
+      if (c.ytd) {
+        rowParts.push(
+          '<span class="markets-chip ' + changeClass(c.ytd) + '">YTD ' + formatChange(c.ytd) + '</span>'
+        );
+      }
+      card.appendChild(el('p', { class: 'markets-card-changes', html: rowParts.join(' ') }));
+      card.appendChild(el('p', { class: 'markets-card-ccy', text: c.unit || '' }));
+      if (c.zim_note) {
+        card.appendChild(el('p', { class: 'markets-card-zimnote', text: c.zim_note }));
+      }
+      wrap.appendChild(card);
+    });
+    if (!wrap.children.length) {
+      wrap.appendChild(el('p', { class: 'loading-msg', text: 'Commodity data unavailable.' }));
+    }
+  }
+
   // ── ZSE table ────────────────────────────────────────────────
   function renderZse(data) {
     var tbody = document.getElementById('marketsZseRows');
@@ -90,6 +123,11 @@
   fetch('/data/markets-indices.json', { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderIndices(d); })
+    .catch(function () {});
+
+  fetch('/data/commodities.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { if (d) renderCommodities(d); })
     .catch(function () {});
 
   fetch('/data/zse-ticker.json', { cache: 'no-store' })

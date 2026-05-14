@@ -7449,6 +7449,23 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
 .markets-down { color: var(--accent); }
 .markets-flat { color: var(--text-light); }
 
+.markets-card--commodity .markets-card-ccy {
+  font-size: 0.62rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: var(--text-mid);
+}
+.markets-card-zimnote {
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid #e8e6df;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--text-mid);
+}
+
 .markets-table-wrap { overflow-x: auto; }
 .markets-table {
   width: 100%;

@@ -1,0 +1,15 @@
+{
+  "fetched_at": "2026-05-14T07:00:00+00:00",
+  "source": "Hand-curated weekly close from LME / COMEX / ICE / CBOT public spot quotes.",
+  "note": "Indicative last close, USD-quoted. Curated weekly — refreshes when the editor pulls. Auto-fetch coming next iteration.",
+  "commodities": [
+    { "label": "Gold",       "symbol": "XAU",   "unit": "USD / troy oz", "value": "2,318.40", "day_change": "+0.62%",  "ytd": "+11.4%", "tag": "Precious",  "zim_note": "Backs the ZWG (Zim Gold).", "venue": "COMEX" },
+    { "label": "Platinum",   "symbol": "XPT",   "unit": "USD / troy oz", "value": "1,012.50", "day_change": "+0.41%",  "ytd": "+5.8%",  "tag": "Precious",  "zim_note": "Zimplats, Mimosa, Unki.",   "venue": "NYMEX" },
+    { "label": "Lithium",    "symbol": "Li2CO3","unit": "USD / tonne",   "value": "13,820",   "day_change": "-1.12%",  "ytd": "-8.1%",  "tag": "Battery",   "zim_note": "Bikita, Arcadia, Sandawana.", "venue": "Fastmarkets" },
+    { "label": "Copper",     "symbol": "Cu",    "unit": "USD / tonne",   "value": "9,940",    "day_change": "+0.27%",  "ytd": "+14.7%", "tag": "Industrial","zim_note": "MMCZ contract grade.",      "venue": "LME 3-month" },
+    { "label": "Nickel",     "symbol": "Ni",    "unit": "USD / tonne",   "value": "19,420",   "day_change": "-0.34%",  "ytd": "-3.2%",  "tag": "Industrial","zim_note": "Bindura Nickel.",           "venue": "LME 3-month" },
+    { "label": "Tobacco",    "symbol": "FCV",   "unit": "USD / kg",      "value": "3.18",     "day_change": "+0.00%",  "ytd": "+4.6%",  "tag": "Soft",      "zim_note": "Zim flue-cured auction average.", "venue": "TIMB auction" },
+    { "label": "Brent crude","symbol": "BRN",   "unit": "USD / barrel",  "value": "84.27",    "day_change": "-0.18%",  "ytd": "+9.3%",  "tag": "Energy",    "zim_note": "Sets ZERA pump prices.",    "venue": "ICE" },
+    { "label": "Maize",      "symbol": "ZC",    "unit": "USD / tonne",   "value": "182.40",   "day_change": "+0.55%",  "ytd": "-6.8%",  "tag": "Soft",      "zim_note": "GMB import-parity benchmark.", "venue": "CBOT" }
+  ]
+}
