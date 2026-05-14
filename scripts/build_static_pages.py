@@ -68,6 +68,9 @@ def markdown_to_html(md):
     # Preserve raw <figure> blocks (used for full-bleed parallax media)
     h = re.sub(r"<p>\s*(<figure[^>]*>)", r"\1", h, flags=re.IGNORECASE)
     h = re.sub(r"(</figure>)\s*</p>", r"\1", h, flags=re.IGNORECASE)
+    # Preserve raw <section> blocks (used for longform dark sections)
+    h = re.sub(r"<p>\s*(<section[^>]*>)", r"\1", h, flags=re.IGNORECASE)
+    h = re.sub(r"(</section>)\s*</p>", r"\1", h, flags=re.IGNORECASE)
     return h
 
 
@@ -162,7 +165,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=73">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=74">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

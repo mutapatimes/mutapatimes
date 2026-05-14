@@ -8123,3 +8123,111 @@ body.longform-page .article-longform-hero {
   }
   .article-pullquote::before { font-size: 4rem; }
 }
+
+/* ───── Longform dark section ─────
+   Full-bleed black panel with butter text, used to break up the
+   article rhythm. Pull-quotes inside flip to dark-on-light. */
+.article-dark-section {
+  background: #0a0a0a;
+  color: #f5e8c8;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  padding: 96px 32px 104px;
+  margin: 72px 0;
+  border-top: 1px solid rgba(245, 232, 200, 0.08);
+  border-bottom: 1px solid rgba(245, 232, 200, 0.08);
+}
+.article-dark-section-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.article-dark-section-eyebrow {
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent, #c0392b);
+  margin: 0 0 22px;
+}
+.article-dark-section h2,
+.article-dark-section .article-dark-section-h {
+  color: #f5e8c8;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height: 1.12;
+  margin: 0 0 32px;
+  letter-spacing: -0.005em;
+}
+.article-dark-section p {
+  color: rgba(245, 232, 200, 0.94);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.78;
+  margin: 0 0 1.3em;
+}
+.article-dark-section a {
+  color: #f5e8c8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.article-dark-section .article-pullquote {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: var(--accent, #c0392b);
+  margin: 32px -16px;
+}
+.article-dark-section .article-pullquote::before {
+  color: var(--accent, #c0392b);
+  opacity: 0.2;
+}
+.article-dark-section .article-pullquote blockquote {
+  color: #f5e8c8;
+  font-weight: 400;
+  font-style: italic;
+}
+.article-dark-section .article-pullquote cite {
+  color: rgba(245, 232, 200, 0.7);
+  border-top-color: rgba(245, 232, 200, 0.18);
+}
+@media (max-width: 720px) {
+  .article-dark-section { padding: 64px 22px 72px; margin: 48px 0; }
+}
+
+/* Founder bio dl — clean two-column factbox */
+.article-dark-section .founder-facts {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 14px 32px;
+  margin: 36px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid rgba(245, 232, 200, 0.12);
+}
+.article-dark-section .founder-facts dt {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245, 232, 200, 0.55);
+  align-self: start;
+  padding-top: 4px;
+}
+.article-dark-section .founder-facts dd {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #f5e8c8;
+  margin: 0;
+}
+@media (max-width: 540px) {
+  .article-dark-section .founder-facts {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .article-dark-section .founder-facts dt { padding-top: 14px; }
+}
