@@ -16,11 +16,13 @@ hero_eyebrow: "ESSAY · VENICE"
 hero_image_credit: "Photograph by 1925 Glen Norah"
 ---
 
-I arrived in Venice on a Tuesday, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the Marco Polo airport bus and the long walk down to the boat dock by a margin of approximately ten minutes of plausible weather, was now soaked through to the books at the bottom. And the books at the bottom were the books I had carried specifically to read in Venice. The books I had imagined opening on a sunlit terrace somewhere, with an espresso. The books that were, in the moment of arrival, beginning to absorb water like a sponge that had decided it had been on a diet for too long.
+I arrived in Venice on a Tuesday, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the Marco Polo airport bus and the long walk down to the boat dock by a margin of approximately ten minutes of plausible weather, was now soaked through. So was I.
 
-I sulked. I am willing to admit this. There is a particular kind of British weather-sulk I have absorbed by osmosis, despite no biographical claim to that island whatsoever, and on Tuesday afternoon in Venice it asserted itself with full force. I checked into the apartment. I hung the books out to dry across every available radiator and chair-back. I lay on the bed in a posture I will charitably describe as defeated.
+The apartment I was staying at sat on the second floor of an eighteenth-century *palazzo* owned by a Venetian artist who is ninety years old and who used to run a school. It was beautiful in the particular way that eighteenth-century Venetian *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had now turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
 
-I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, I will give it credit, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that morning. Taylor was standing on the deck of a boat in the central lagoon of Venice, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, in a register that was half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
+I sulked. I am willing to admit this. There is a particular kind of British weather-sulk I have absorbed by osmosis, despite no biographical claim to that island whatsoever, and on Tuesday afternoon in Venice it asserted itself with full force.
+
+I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, I will give it credit, for once, surfaced a [forty-second video by the American painter Henry Taylor](https://www.instagram.com/p/DX9VznmPDa1/), posted earlier that morning. Taylor was standing on the deck of a boat in the central lagoon of Venice, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, in a register that was half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 I watched it. Then I watched it again.
 
@@ -34,7 +36,7 @@ By the third viewing I had moved into a sitting position. By the fourth I had pu
          loading="lazy">
   </div>
   <figcaption class="article-fullbleed-caption">
-    <span class="desc">The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere in this water on the same morning, was the moment the sulk lifted.</span>
+    <span class="desc">The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere on this water the same morning and watched on a phone in a second-floor bedroom of a Venetian palazzo a few hours later, was the moment the sulk lifted.</span>
     <span class="credit">Photograph by 1925 Glen Norah</span>
   </figcaption>
 </figure>
@@ -122,7 +124,7 @@ I left lighter than I had arrived, which is the part of travel one cannot plan f
 
 Five longform profiles of the artists in the Pavilion of Zimbabwe will follow over the coming days. They are the work of my colleagues. I will write again, in a different register, when the 1925 Glen Norah publication is ready.
 
-In the meantime, if you have not watched the Henry Taylor video, watch the Henry Taylor video.
+In the meantime, if you have not watched the Henry Taylor video, [watch the Henry Taylor video](https://www.instagram.com/p/DX9VznmPDa1/).
 
 *Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
