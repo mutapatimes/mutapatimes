@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-14T08:50:18.095028+00:00",
+  "fetched_at": "2026-05-14T14:39:38.208418+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -103,15 +103,6 @@
       "baths": "2"
     },
     {
-      "title": "Solar-Powered 3-Bedroom Home with Cottage & Borehole – Arlington Estate, Harare",
-      "url": "https://www.property.co.zw/for-sale/houses-gat228662",
-      "price": "USD 170,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/48/9e/24/489e2420-fa6e-4de8-a211-f5083e5fce21_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "A Private Sanctuary of Modern Elegance",
       "url": "https://www.property.co.zw/for-sale/houses-plzp236649",
       "price": "USD 400,000",
@@ -137,15 +128,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/d0/fd/f4/d0fdf46c-d177-47e8-98f5-576b8ab03793_thumbnail591.webp",
       "beds": "3",
       "baths": ""
-    },
-    {
-      "title": "Top-Tier Gated Estate Living Home in Prestigious Carrick Creagh Estate",
-      "url": "https://www.property.co.zw/for-sale/houses-leg240897",
-      "price": "USD 400,000",
-      "location": "Carrick Creagh, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/52/fe/29/52fe29d1-27f4-4213-95f5-7a30d712dff8_thumbnail591.webp",
-      "beds": "6",
-      "baths": "2"
     },
     {
       "title": "Unique Location in Highlands!",
@@ -200,6 +182,24 @@
       "image": "https://www.property.co.zw/uploadedfiles/28/d9/5f/28d95fc3-0052-40ac-9d72-3ae7642054f2_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
+    },
+    {
+      "title": "Peaceful Family Home | Christon Bank | Us$360,000",
+      "url": "https://www.property.co.zw/for-sale/houses-leg246989",
+      "price": "USD 360,000",
+      "location": "Christon Bank",
+      "image": "https://www.property.co.zw/uploadedfiles/ab/e9/d4/abe9d482-0bcb-4a33-9f83-69cd59d64c84_thumbnail591.webp",
+      "beds": "4",
+      "baths": ""
+    },
+    {
+      "title": "Modern Double Storey Home",
+      "url": "https://www.property.co.zw/for-sale/houses-thre237720",
+      "price": "USD 599,000",
+      "location": "Gletwin Park, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/f2/2e/fc/f22efc47-1ece-4e09-9825-3b3d13c0c6c2_thumbnail591.webp",
+      "beds": "8",
+      "baths": "5"
     }
   ]
 }
