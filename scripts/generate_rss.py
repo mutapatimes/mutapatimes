@@ -355,6 +355,51 @@ def _norm_title(s):
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
 
 
+def _load_open_roles(base):
+    """Read content/roles/*.md (CMS-edited YAML frontmatter) and return
+    a list of (title, summary, samples_prompt, anchor) tuples for every
+    role with status == 'open', sorted by `order` ascending. Falls back
+    to an empty list if the folder is missing, so a misconfigured CMS
+    can't break the jobs feed."""
+    roles_dir = os.path.join(base, "content", "roles")
+    if not os.path.isdir(roles_dir):
+        return []
+    rows = []
+    for path in sorted(glob.glob(os.path.join(roles_dir, "*.md"))):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                text = f.read()
+        except OSError:
+            continue
+        m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+        if not m:
+            continue
+        fm = m.group(1)
+        def _grab(key, default=""):
+            # Match: `key: "value"` | `key: 'value'` | `key: value`
+            mm = re.search(rf'^{key}:\s*["\']?(.*?)["\']?\s*$', fm, re.MULTILINE)
+            return (mm.group(1).strip() if mm else default)
+        status = _grab("status", "open").lower()
+        if status != "open":
+            continue
+        title = _grab("title")
+        if not title:
+            continue
+        try:
+            order = int(_grab("order", "10"))
+        except ValueError:
+            order = 10
+        rows.append((
+            order,
+            title,
+            _grab("summary"),
+            _grab("samples_prompt"),
+            _grab("anchor"),
+        ))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    return [(t, s, sp, a) for _, t, s, sp, a in rows]
+
+
 def _cat_day_start_utc():
     """Return today's 00:00 CAT (UTC+2) expressed as a UTC datetime.
     Daily-rotating feeds (FX, weather, economy, jobs) anchor their
@@ -889,28 +934,14 @@ def collect_job_items(base):
     so they always get airtime on the autolist."""
     items = []
 
-    # Mutapa Times internships — first-party, always on
-    internships = [
-        ("Junior Social Media Assistant",
-         "Help grow our social channels. Pitch fresh formats and ideas. "
-         "Fully remote, 3 days/week, 3 months. Rolling intake.",
-         "My social handles / portfolio links:"),
-        ("Junior Editorial Coordinator",
-         "Pitch, draft and edit original explainers. Bring fresh editorial "
-         "angles. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         "Three writing samples (links or attached):"),
-        ("Junior Data Analyst",
-         "Turn Zimbabwe public data into clear visual stories. Bring new "
-         "data ideas. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         "A repo, notebook or dataset I am proud of:"),
-        ("Business Development Associate",
-         "Open doors for advertisers, sponsors and partners across the Zim "
-         "diaspora corridor. Fully remote, 3 days/week, 3 months. Rolling intake.",
-         "Brands or partners I would open conversations with first:"),
-    ]
+    # Mutapa Times internships — sourced from content/roles/ so the
+    # role list is editable from the CMS without a code change. Files
+    # use simple YAML frontmatter (see content/roles/*.md). Anything
+    # with status=open lands here in `order` ascending.
+    internships = _load_open_roles(base)
     pub = _cat_day_start_utc()
-    for role, summary, _samples in internships:
-        slug_role = role.lower().replace(" ", "-")
+    for role, summary, _samples, anchor in internships:
+        slug_role = anchor or role.lower().replace(" ", "-")
         # `link` is the destination URL — write_jobs_feed wraps it with
         # the /jobs-landing/{md5}.html indirection before emitting XML.
         # collect_stories_items also relies on `link` being the

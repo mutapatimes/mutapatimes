@@ -442,6 +442,7 @@ def page_footer(depth=1):
   <script defer src="{prefix}js/quote-share.js"></script>
   <script defer src="{prefix}js/stories.js"></script>
   <script defer src="{prefix}js/nav.js"></script>
+  <script defer src="/js/sponsors.js"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{

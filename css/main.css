@@ -7621,3 +7621,50 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   color: rgba(255,255,255,0.4);
   margin: 18px 0 0;
 }
+
+/* ───── Editorial sponsor strip ─────
+   Single hairline row near the top of the page. By editorial policy
+   the only ad surface on the site — never a rectangle banner. Reads
+   as quiet sponsorship, not display advertising. */
+.sponsor-strip {
+  width: 100%;
+  background: #f5f4ef;
+  border-top: 1px solid var(--hairline, #e8e6df);
+  border-bottom: 1px solid var(--hairline, #e8e6df);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.sponsor-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.sponsor-strip-eyebrow {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--text-light, #8b8678);
+  flex-shrink: 0;
+}
+.sponsor-strip-link {
+  font-size: 0.84rem;
+  color: var(--text-mid, #4a4a44);
+  text-decoration: none;
+  line-height: 1.45;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.sponsor-strip-link:hover,
+.sponsor-strip-link:focus-visible {
+  color: var(--accent, #c0392b);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+@media (max-width: 540px) {
+  .sponsor-strip-inner { padding: 9px 16px; gap: 10px; }
+  .sponsor-strip-link  { font-size: 0.78rem; }
+}

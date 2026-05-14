@@ -561,6 +561,7 @@ def build_page(city, all_articles, other_cities):
 <script defer src="/js/quote-share.js"></script>
 <script defer src="/js/stories.js"></script>
 <script defer src="/js/nav.js"></script>
+<script defer src="/js/sponsors.js"></script>
 <script defer src="/js/city.js"></script>
 <script>
 if ('serviceWorker' in navigator) {{

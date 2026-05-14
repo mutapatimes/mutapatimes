@@ -7,11 +7,20 @@ media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
 collections:
+  # ─── ARTICLES ──────────────────────────────────────────────────
   - name: "articles"
     label: "Articles"
+    label_singular: "Article"
     folder: "content/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: ["date", "title", "category", "featured"]
+    view_filters:
+      - { label: "Featured", field: "featured", pattern: true }
+      - { label: "Spotlight", field: "spotlight", pattern: true }
+      - { label: "Original", field: "source_type", pattern: "original" }
+      - { label: "Wire", field: "source_type", pattern: "wire" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -47,16 +56,121 @@ collections:
       - { label: "Spotlight", name: "spotlight", widget: "boolean", default: false, required: false, hint: "Show in spotlight section" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "people"
-    label: "People"
-    folder: "content/people"
+  # ─── STATIC PAGES (About / Advertising / Privacy / Terms / Subscribe) ─
+  - name: "pages"
+    label: "Static pages"
+    label_singular: "Page"
+    files:
+      - label: "About"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Deck (sub-headline)", name: "deck", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Advertising"
+        name: "advertising"
+        file: "content/pages/advertising.md"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Deck (sub-headline)", name: "deck", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Privacy"
+        name: "privacy"
+        file: "content/pages/privacy.md"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Terms"
+        name: "terms"
+        file: "content/pages/terms.md"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Subscribe"
+        name: "subscribe"
+        file: "content/pages/subscribe.md"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Deck (sub-headline)", name: "deck", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  # ─── ROLES / INTERNSHIPS ───────────────────────────────────────
+  - name: "roles"
+    label: "Roles & Internships"
+    label_singular: "Role"
+    folder: "content/roles"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}} — {{status}}"
+    sortable_fields: ["order", "title", "status"]
     fields:
-      - { label: "Full Name", name: "name", widget: "string" }
-      - { label: "Title / Role", name: "title", widget: "string", hint: "e.g. CEO, Founder, Managing Director" }
-      - { label: "Company", name: "company", widget: "string", required: false }
-      - { label: "Photo", name: "image", widget: "image", required: false }
-      - { label: "Short Bio", name: "bio", widget: "text", pattern: ['.{0,500}', "Must be 500 characters or fewer"], hint: "Brief biography for the card display" }
-      - { label: "Wikidata ID", name: "wikidata_id", widget: "string", required: false, hint: "e.g. Q7623883 — links to and enriches Wikidata data" }
-      - { label: "Extended Bio", name: "body", widget: "markdown", required: false }
+      - { label: "Role Title", name: "title", widget: "string", hint: "e.g. Junior Social Media Assistant" }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        default: "open"
+        options: ["open", "closed", "draft"]
+        hint: "Closed roles drop out of the public Jobs page and RSS feed"
+      - { label: "Display Order", name: "order", widget: "number", default: 10, min: 1, max: 100, hint: "Lower numbers appear first on the Jobs page" }
+      - { label: "Summary", name: "summary", widget: "text", pattern: ['.{0,400}', "Must be 400 characters or fewer"], hint: "1-2 sentences shown on the jobs feed card" }
+      - { label: "Samples prompt", name: "samples_prompt", widget: "string", required: false, hint: "The prompt that asks applicants for their portfolio link, e.g. 'My social handles / portfolio links:'" }
+      - { label: "Apply link anchor", name: "anchor", widget: "string", required: false, hint: "Optional URL fragment for /jobs#... (defaults to a slug of the title)" }
+      - { label: "Body (long-form role description)", name: "body", widget: "markdown", required: false }
+
+  # ─── SPONSORS / ADVERTISERS ────────────────────────────────────
+  - name: "sponsors"
+    label: "Sponsors & Partners"
+    label_singular: "Sponsor"
+    folder: "content/sponsors"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{name}} — {{active | ternary('LIVE', 'inactive')}}"
+    sortable_fields: ["start_date", "name", "active"]
+    view_filters:
+      - { label: "Currently running", field: "active", pattern: true }
+    fields:
+      - { label: "Sponsor name", name: "name", widget: "string", hint: "e.g. Safari & Co" }
+      - { label: "Active", name: "active", widget: "boolean", default: false, hint: "When ON, the sponsor's editorial strip appears on the configured pages" }
+      - { label: "Strip copy", name: "strip_copy", widget: "string", hint: "The text in the editorial strip, e.g. 'Sponsored briefing by Safari & Co — building tomorrow's lodges'" }
+      - { label: "Sponsor URL", name: "url", widget: "string", hint: "Where the strip links to (https://...)" }
+      - { label: "Logo (optional)", name: "logo", widget: "image", required: false, hint: "Small monochrome mark, ~200px wide PNG/SVG" }
+      - label: "Placements"
+        name: "placements"
+        widget: "select"
+        multiple: true
+        default: ["news"]
+        options: ["news", "articles", "economy", "fx", "markets", "property", "jobs", "weather", "cities"]
+        hint: "Which sections this sponsor's strip should appear on"
+      - { label: "Start date", name: "start_date", widget: "datetime", required: false }
+      - { label: "End date", name: "end_date", widget: "datetime", required: false }
+      - { label: "Notes (internal)", name: "notes", widget: "text", required: false, hint: "Sales rep, contract notes, contact name — not published" }
+      - { label: "Long copy", name: "body", widget: "markdown", required: false, hint: "Optional longer description for a future /sponsors/{name} page" }
+
+  # ─── SITE SETTINGS (singleton) ─────────────────────────────────
+  - name: "settings"
+    label: "Site settings"
+    files:
+      - label: "Site"
+        name: "site"
+        file: "content/settings/site.yml"
+        fields:
+          - { label: "Brand name", name: "brand_name", widget: "string", default: "The Mutapa Times" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "Zimbabwe outside-in" }
+          - { label: "Editorial contact email", name: "contact_email", widget: "string", default: "news@mutapatimes.com" }
+          - { label: "Default OG image", name: "default_og_image", widget: "image", required: false, hint: "Falls back to /img/brand/og-share.png" }
+          - { label: "Footer copyright line", name: "footer_copy", widget: "string", default: "© 2020–2026 The Mutapa Times. All rights reserved. Operated from the United Kingdom." }
+          - label: "Social handles"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "X / Twitter", name: "x", widget: "string", default: "mutapatimes" }
+              - { label: "Instagram", name: "instagram", widget: "string", default: "mutapatimes" }
+              - { label: "LinkedIn (company slug)", name: "linkedin", widget: "string", default: "the-mutapa-times" }
+              - { label: "Threads", name: "threads", widget: "string", default: "mutapatimes" }
+              - { label: "Facebook (page slug)", name: "facebook", widget: "string", default: "MutapaTimes" }
+              - { label: "Bluesky handle", name: "bluesky", widget: "string", default: "mutapatimes.bsky.social" }
+              - { label: "TikTok", name: "tiktok", widget: "string", default: "themutapatimes" }
