@@ -4,34 +4,28 @@ date: 2026-05-14T10:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/raath/hero.jpg
-summary: "In the first of five long-form pieces on the Pavilion of Zimbabwe at the 61st Venice Biennale, we look at Eva Raath, printmaker, textile artist, quiet engineer of memory, whose contribution to Second Nature | Manyonga reads, on second visit, as the most underestimated work in the room."
-featured: true
+summary: In the first of five long-form pieces on the Pavilion of Zimbabwe at
+  the 61st Venice Biennale, we look at Eva Raath, printmaker, textile artist,
+  quiet engineer of memory, whose contribution to Second Nature | Manyonga
+  reads, on second visit, as the most underestimated work in the room.
+featured: false
 headline_position: 1
 source_type: original
-spotlight: true
-longform: true
+spotlight: false
+feature_story: false
 draft: true
-read_minutes: 9
-hero_eyebrow: "ARTS LONG READ · VENICE · 1 OF 5"
-hero_image_credit: "Courtesy of the artist"
+longform: true
+hero_eyebrow: ARTS LONG READ · VENICE · 1 OF 5
+hero_image_credit: Courtesy of the artist
+read_minutes: Nine
 ---
-
 We met Eva Raath's work before we met the artist, which is the right order with most pavilions and the only order with this one. *Medusa Menopause*, a 7.6-metre length of acrylic-painted paper, hung from a brass rod near the entrance to the southern wing, was the first piece to declare itself in the room, and one of the few that did not need any wall text to do the declaring. We stood in front of it for, by the kindest estimate, fifteen minutes. We came back twice during the week. By the second visit we had decided it was the most underestimated work in the pavilion.
 
 Underestimated is the word, because Raath's contribution has the surface vocabulary of the decorative and the quilted, and the contemporary art world is still in the habit of mistaking decorative for unserious. The mistake here is unusually expensive. What Raath has built, across *Medusa Menopause*, *Memory Quilt*, *Absence of Memories*, *Checkered Memories*, and the parasol work *When Your Brain Doesn't Fit the System*, is a working theory of memory as a textile object: assembled from fragments that have already lived their first lives, stitched in patterns that hold and disclose at the same time, subject to ageing and fade and repair on exactly the same terms as the materials themselves.
 
-<figure class="article-fullbleed">
-  <div class="article-fullbleed-frame">
-    <img class="article-fullbleed-media"
-         src="/img/uploads/venice-2026/raath/medusa-menopause.jpg"
-         alt="Medusa Menopause, Eva Raath, 2025, Pavilion of Zimbabwe"
-         loading="lazy">
-  </div>
-  <figcaption class="article-fullbleed-caption">
-    <span class="desc">Medusa Menopause, 2025. Acrylic paint and medium on paper. 762 × 228 cm. The largest of Raath's contributions and the first work the visitor encounters on entering the pavilion's southern wing.</span>
-    <span class="credit">Courtesy of Eva Raath</span>
-  </figcaption>
-</figure>
+![Medusa Menopause, Eva Raath, 2025, Pavilion of Zimbabwe](/img/uploads/venice-2026/raath/medusa-menopause.jpg)
+
+Medusa Menopause, 2025. Acrylic paint and medium on paper. 762 × 228 cm. The largest of Raath's contributions and the first work the visitor encounters on entering the pavilion's southern wing. Courtesy of Eva Raath
 
 ## The materials are the argument
 
@@ -39,10 +33,9 @@ Born in Harare in 1979, Raath works at the intersection of printmaking and texti
 
 The materials, in other words, are not the medium of the argument. They are the argument. *Memory Quilt* is built, in part, from patchwork squares cut by her mother, who was a quilter. *Absence of Memories* is block-printed onto an enamel dish that her father was bathed in as a child. *Checkered Memories* is woven together from family photographic slides, physical 35mm slides, whose images can be read only obliquely, in fragments, depending on the light. None of these materials are inert. They have, in Raath's word, *history, emotion, and presence*. They are not the props of memory; they are memory's physical substrate.
 
-<aside class="article-pullquote">
-  <blockquote>These familiar objects carry memory. They give me a sense of security and comfort. In my practice, I work with existing materials; there is no need to buy anything new. What already exists holds history, emotion, and presence. These materials continually inspire me.</blockquote>
-  <cite>EVA RAATH · TO THE PAVILION OF ZIMBABWE CATALOGUE</cite>
-</aside>
+> These familiar objects carry memory. They give me a sense of security and comfort. In my practice, I work with existing materials; there is no need to buy anything new. What already exists holds history, emotion, and presence. These materials continually inspire me.
+
+EVA RAATH · TO THE PAVILION OF ZIMBABWE CATALOGUE
 
 ## A theory of repair
 
@@ -52,18 +45,9 @@ This is where the work earns its political weight. It is easy to make the discus
 
 It is hard not to see this, in the context of the pavilion's broader curatorial frame of neuroplasticity, as an embodied response to the brain-science metaphor. The brain reorganises itself by repair. So does the quilt. So does the household. The repaired object is not a compromised version of the new one. It is the thing the new one is, eventually, on its way to becoming, if anyone cares enough to keep it.
 
-<figure class="article-fullbleed">
-  <div class="article-fullbleed-frame">
-    <img class="article-fullbleed-media"
-         src="/img/uploads/venice-2026/raath/checkered-memories.jpg"
-         alt="Checkered Memories, Eva Raath, 2025"
-         loading="lazy">
-  </div>
-  <figcaption class="article-fullbleed-caption">
-    <span class="desc">Checkered Memories, 2025. Woven slides. 202 × 110 cm. Family photographic slides, knotted together with coloured thread into a hanging panel that catches and refuses the light by turn.</span>
-    <span class="credit">Courtesy of Eva Raath</span>
-  </figcaption>
-</figure>
+![Checkered Memories, Eva Raath, 2025](/img/uploads/venice-2026/raath/checkered-memories.jpg)
+
+Checkered Memories, 2025. Woven slides. 202 × 110 cm. Family photographic slides, knotted together with coloured thread into a hanging panel that catches and refuses the light by turn. Courtesy of Eva Raath
 
 ## On colour, on thorns, on the body
 
@@ -73,10 +57,9 @@ The body recurs across the works, but obliquely. *Medusa Menopause* names the bo
 
 This is gentle work, in the technical sense, it does not raise its voice, but it is also work that does not flinch. The body it stages is the body its viewer is also, in some configuration, on the way to becoming. We watched several visitors stop in front of *Medusa Menopause* and stand longer than they had intended. The work is doing recognition labour for people who have not, in much contemporary art, been recognised as a subject worth this kind of attention.
 
-<aside class="article-pullquote">
-  <blockquote>My work depicts natural occurrences that shape human life: forming memories in childhood, losing memory as we age, moving through menopause, learning, and change. These processes are universal and inevitable. They can be disruptive, but they can also be transformative and positive. Comfort and disruption coexist; one cannot exist without the other.</blockquote>
-  <cite>EVA RAATH · TO THE PAVILION OF ZIMBABWE CATALOGUE</cite>
-</aside>
+> My work depicts natural occurrences that shape human life: forming memories in childhood, losing memory as we age, moving through menopause, learning, and change. These processes are universal and inevitable. They can be disruptive, but they can also be transformative and positive. Comfort and disruption coexist; one cannot exist without the other.
+
+EVA RAATH · TO THE PAVILION OF ZIMBABWE CATALOGUE
 
 ## The slow archive
 
