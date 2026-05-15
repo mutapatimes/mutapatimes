@@ -13,10 +13,14 @@ media:
 
 content:
   # ─── ARTICLES (originals + drafts) ─────────────────────────────
-  # All article markdown lives in content/articles/. ~3,700 files,
-  # mostly auto-imported wire stories from fetch_news.py. The CMS
-  # surfaces them all in a single list - use the search box (try
-  # 'venice', 'henkel', etc) and the sort/filters in the view bar.
+  # content/articles/ holds only the editorial originals (currently
+  # ~10 files - the Henkel/Ruka piece, the Venice drafts, etc.).
+  # The ~3,700 auto-imported wire stories live in content/wires/
+  # and are intentionally hidden from this collection so Pages CMS
+  # doesn't time out enumerating them. Build scripts still read
+  # both folders. To edit a wire on the rare occasions you need to,
+  # use https://github.dev/mutapatimes/mutapatimes (press '.' on
+  # github.com).
   - name: articles
     label: Articles
     type: collection

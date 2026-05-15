@@ -84,10 +84,15 @@ def _normalize_source(src):
 
 def collect_cms_articles(base):
     """Read CMS markdown articles and return list of dicts. Links point to
-    /articles/{slug}.html on mutapatimes.com."""
+    /articles/{slug}.html on mutapatimes.com. Looks across both
+    content/articles (originals + drafts) and content/wires (the
+    auto-imported archive)."""
     items = []
     articles_dir = os.path.join(base, "content", "articles")
-    for md in glob.glob(os.path.join(articles_dir, "*.md")):
+    wires_dir = os.path.join(base, "content", "wires")
+    md_paths = (glob.glob(os.path.join(articles_dir, "*.md"))
+                + glob.glob(os.path.join(wires_dir, "*.md")))
+    for md in md_paths:
         slug = os.path.splitext(os.path.basename(md))[0]
         if slug == "index":
             continue

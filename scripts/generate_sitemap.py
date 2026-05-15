@@ -72,9 +72,16 @@ def generate():
             f"  </url>"
         )
 
-    # CMS articles
-    articles_dir = os.path.join(os.path.dirname(__file__), "..", "content", "articles")
-    for md_path in sorted(glob.glob(os.path.join(articles_dir, "*.md"))):
+    # CMS articles - originals (content/articles) + wire archive
+    # (content/wires). Both produce identical /articles/{slug}.html
+    # output via build_static_pages.py, so they belong in the same
+    # sitemap entries.
+    repo_root = os.path.join(os.path.dirname(__file__), "..")
+    articles_dir = os.path.join(repo_root, "content", "articles")
+    wires_dir = os.path.join(repo_root, "content", "wires")
+    md_paths = sorted(glob.glob(os.path.join(articles_dir, "*.md"))
+                      + glob.glob(os.path.join(wires_dir, "*.md")))
+    for md_path in md_paths:
         slug, date_str, title, category, is_draft = extract_frontmatter(md_path)
         if not slug or slug == "index":
             continue

@@ -124,10 +124,15 @@ def _parse_frontmatter(text):
 
 
 def resolve_article(slug):
-    """Find content/articles/{slug}.md and return source dict."""
-    path = os.path.join(ROOT, "content", "articles", f"{slug}.md")
-    if not os.path.exists(path):
-        raise SystemExit(f"Article not found: {path}")
+    """Find {slug}.md in either content/articles (originals) or
+    content/wires (auto-imported archive)."""
+    candidates = [
+        os.path.join(ROOT, "content", "articles", f"{slug}.md"),
+        os.path.join(ROOT, "content", "wires", f"{slug}.md"),
+    ]
+    path = next((p for p in candidates if os.path.exists(p)), None)
+    if path is None:
+        raise SystemExit(f"Article not found in content/articles or content/wires: {slug}.md")
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     fm, body = _parse_frontmatter(text)

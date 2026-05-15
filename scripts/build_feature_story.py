@@ -20,8 +20,17 @@ from datetime import datetime, timezone
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 ARTICLES_DIR = os.path.join(ROOT, "content", "articles")
+WIRES_DIR = os.path.join(ROOT, "content", "wires")
 OUT_JSON = os.path.join(ROOT, "data", "feature-story.json")
 SPOTLIGHT_JSON = os.path.join(ROOT, "data", "spotlight.json")
+
+
+def all_article_paths():
+    """Originals + wire archive. Feature stories will only ever live
+    in content/articles (the CMS-editable folder) but the helper is
+    shared with other scripts for consistency."""
+    return (glob.glob(os.path.join(ARTICLES_DIR, "*.md"))
+            + glob.glob(os.path.join(WIRES_DIR, "*.md")))
 
 
 def parse_fm(path):
@@ -43,7 +52,7 @@ def parse_fm(path):
 
 def find_feature():
     candidates = []
-    for path in glob.glob(os.path.join(ARTICLES_DIR, "*.md")):
+    for path in all_article_paths():
         fm = parse_fm(path)
         if fm.get("feature_story", "").lower() != "true":
             continue

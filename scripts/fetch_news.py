@@ -393,7 +393,10 @@ def fetch_rss_descriptions():
 
 
 def get_cms_spotlight_articles():
-    """Scan content/articles/*.md for articles with spotlight: true in frontmatter."""
+    """Scan content/articles/*.md (originals, CMS-editable) for articles
+    with spotlight: true in frontmatter. Wires live in content/wires/
+    and are not eligible to be Spotlight picks - they're handled by
+    the reputable-source wire picker further up the pipeline."""
     import glob as glob_mod
     articles = []
     for filepath in sorted(glob_mod.glob("content/articles/*.md")):
@@ -1172,10 +1175,13 @@ def _infer_cms_category(title):
 
 
 def _get_existing_source_urls():
-    """Scan content/articles/*.md for source_url values to avoid re-importing."""
+    """Scan both content/articles (originals) and content/wires
+    (auto-imported archive) for source_url values, so we never
+    re-import an article we already have anywhere on disk."""
     import glob as glob_mod
     urls = set()
-    for filepath in glob_mod.glob("content/articles/*.md"):
+    for filepath in (glob_mod.glob("content/articles/*.md")
+                     + glob_mod.glob("content/wires/*.md")):
         try:
             with open(filepath) as f:
                 for line in f:
@@ -1194,17 +1200,23 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
     """Import wire articles as CMS markdown files.
 
     All articles are written with source_type: wire so they are never
-    displayed as original Mutapa Times content. category_hint, if given,
-    overrides title-based inference (used by category RSS imports where
-    we already know the bucket).
+    displayed as original Mutapa Times content. Wires now land in
+    content/wires/ (not content/articles/) so they don't crowd the
+    CMS editor. category_hint, if given, overrides title-based
+    inference (used by category RSS imports where we already know
+    the bucket).
     """
     from datetime import datetime, timezone
     print(f"\n=== {label} ===")
-    cms_dir = "content/articles"
+    cms_dir = "content/wires"
     os.makedirs(cms_dir, exist_ok=True)
 
     existing_urls = _get_existing_source_urls()
-    index_path = os.path.join(cms_dir, "index.json")
+    # The article index lives in content/articles/index.json regardless
+    # of which folder a given .md actually sits in - the front-end JS
+    # (js/articles.js) fetches that single path, so all entries (both
+    # originals and wires) must be merged into it.
+    index_path = os.path.join("content", "articles", "index.json")
     # Slugs of articles newly written in this run — used after the loop to
     # ping IndexNow so each one gets indexed within minutes.
     new_slugs_this_run = []

@@ -26,7 +26,17 @@ except ImportError:
 BASE_URL = "https://www.mutapatimes.com"
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 ARTICLES_SRC = os.path.join(ROOT_DIR, "content", "articles")
+WIRES_SRC = os.path.join(ROOT_DIR, "content", "wires")
 ARTICLES_OUT = os.path.join(ROOT_DIR, "articles")
+
+
+def all_article_md_paths():
+    """Return every published .md file across the originals folder
+    (content/articles) and the wire archive (content/wires). The CMS
+    only edits the small originals folder; the wires folder stays
+    on disk for the build but is hidden from the editor."""
+    return sorted(glob.glob(os.path.join(ARTICLES_SRC, "*.md"))
+                  + glob.glob(os.path.join(WIRES_SRC, "*.md")))
 
 
 # ─── Markdown → HTML (mirrors js/articles.js markdownToHtml) ──────────────
@@ -573,7 +583,7 @@ def _render_more_to_read(related):
 
 def build_articles():
     os.makedirs(ARTICLES_OUT, exist_ok=True)
-    md_files = sorted(glob.glob(os.path.join(ARTICLES_SRC, "*.md")))
+    md_files = all_article_md_paths()
     related_index = _load_related_index()
     count = 0
 
