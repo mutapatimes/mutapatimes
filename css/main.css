@@ -8640,7 +8640,7 @@ body.longform-page .topbar {
   margin: 0 0 10px;
 }
 .authors-index-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.6rem;
   line-height: 1.1;
   margin: 0 0 10px;
@@ -8687,7 +8687,7 @@ body.longform-page .topbar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -8696,7 +8696,7 @@ body.longform-page .topbar {
   min-width: 0;
 }
 .author-list-name {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   margin: 0 0 4px;
   line-height: 1.2;
@@ -8746,7 +8746,7 @@ body.longform-page .topbar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -8764,7 +8764,7 @@ body.longform-page .topbar {
   margin: 0 0 8px;
 }
 .author-page-name {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.4rem;
   line-height: 1.05;
   margin: 0 0 6px;
@@ -8779,12 +8779,11 @@ body.longform-page .topbar {
   margin: 0 0 14px;
 }
 .author-page-bio {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
   color: #333;
   margin: 0 0 12px;
-  font-style: italic;
 }
 .author-page-beat,
 .author-page-location {
@@ -8820,7 +8819,7 @@ body.longform-page .topbar {
   border-bottom-color: #111;
 }
 .author-page-long-bio {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #333;
@@ -8836,7 +8835,7 @@ body.longform-page .topbar {
   margin-top: 12px;
 }
 .author-archive-heading {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   margin: 0 0 18px;
   padding-bottom: 8px;
@@ -8871,7 +8870,7 @@ body.longform-page .topbar {
   color: #111;
 }
 .author-archive-card-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.25;
   margin: 6px 0 8px;
@@ -8892,7 +8891,6 @@ body.longform-page .topbar {
 .author-archive-empty {
   font-family: 'Inter', sans-serif;
   color: #666;
-  font-style: italic;
 }
 
 @media (max-width: 640px) {
@@ -8966,17 +8964,16 @@ body.longform-page .topbar {
   margin: 0 0 24px;
 }
 .ratecard-hero-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: clamp(2.6rem, 6vw, 5.4rem);
-  line-height: 0.98;
-  letter-spacing: -0.012em;
+  line-height: 0.96;
+  letter-spacing: -0.028em;
   margin: 0 0 30px;
   color: #fff;
 }
 .ratecard-hero-deck {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.05rem, 1.6vw, 1.4rem);
   line-height: 1.5;
   max-width: 720px;
@@ -9058,10 +9055,11 @@ body.longform-page .topbar {
   margin: 0 0 18px;
 }
 .ratecard-section-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 1.05;
+  letter-spacing: -0.022em;
   margin: 0 0 18px;
   color: #111;
 }
@@ -9086,7 +9084,7 @@ body.longform-page .topbar {
 }
 .ratecard-stat:last-child { border-right: 0; }
 .ratecard-stat-figure {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(2.4rem, 4vw, 3.6rem);
   font-weight: 700;
   line-height: 1;
@@ -9164,8 +9162,7 @@ body.longform-page .topbar {
 .ratecard-readers-note {
   max-width: 720px;
   margin: 50px auto 0;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.55;
   color: #444;
@@ -9194,15 +9191,15 @@ body.longform-page .topbar {
   margin: 0 0 22px;
 }
 .ratecard-promise-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: clamp(1.9rem, 4vw, 3.2rem);
-  line-height: 1.08;
+  line-height: 1.05;
+  letter-spacing: -0.022em;
   margin: 0 0 30px;
 }
 .ratecard-promise-body {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
   line-height: 1.65;
   color: rgba(255,255,255,0.88);
@@ -9262,7 +9259,7 @@ body.longform-page .topbar {
   margin: 0;
 }
 .ratecard-format-name {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.9rem;
   line-height: 1.1;
@@ -9285,7 +9282,7 @@ body.longform-page .topbar {
   border-top: 1px solid #eee;
 }
 .ratecard-format-price {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #111;
@@ -9334,23 +9331,23 @@ body.longform-page .topbar {
   margin: 0 0 16px;
 }
 .ratecard-patronage-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: clamp(2.4rem, 5vw, 4rem);
-  line-height: 1.0;
+  line-height: 0.98;
+  letter-spacing: -0.026em;
   color: #111;
   margin: 0 0 22px;
 }
 .ratecard-patronage-deck {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   line-height: 1.5;
   color: #444;
   margin: 0 0 36px;
 }
 .ratecard-patronage-price {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   color: #111;
@@ -9405,14 +9402,14 @@ body.longform-page .topbar {
   position: absolute;
   left: 0;
   top: 22px;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: #111;
   line-height: 1;
 }
 .ratecard-patronage-weeks h4 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -9490,7 +9487,7 @@ body.longform-page .topbar {
   margin: 0 0 18px;
 }
 .ratecard-package-name {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 1.1;
@@ -9499,7 +9496,7 @@ body.longform-page .topbar {
 }
 .ratecard-package--featured .ratecard-package-name { color: #fff; }
 .ratecard-package-price {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1;
@@ -9574,22 +9571,22 @@ body.longform-page .topbar {
   margin: 0 0 22px;
 }
 .ratecard-imprint-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: clamp(2.4rem, 5vw, 4rem);
-  line-height: 1.0;
+  line-height: 0.98;
+  letter-spacing: -0.026em;
   margin: 0 0 24px;
 }
 .ratecard-imprint-body {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.85);
   margin: 0 0 30px;
 }
 .ratecard-imprint-price {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   color: #111;
   margin: 0 0 32px;
@@ -9627,7 +9624,7 @@ body.longform-page .topbar {
   color: #111;
 }
 .ratecard-case-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.35rem;
   line-height: 1.18;
@@ -9659,7 +9656,7 @@ body.longform-page .topbar {
   margin: 0 0 22px;
 }
 .ratecard-conversation-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 1.05;
@@ -9702,7 +9699,7 @@ body.longform-page .topbar {
 /* Form section — restyle of the existing detailed-brief form */
 .ratecard-form { padding-top: 0; }
 .ratecard-form-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin: 0 0 12px;
