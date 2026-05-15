@@ -1,0 +1,384 @@
+# Pages CMS configuration for The Mutapa Times.
+# Editor: https://app.pagescms.org/mutapatimes/mutapatimes
+#
+# Migration note: this replaces admin/config.yml (Sveltia CMS). The
+# admin/ folder remains as a redirect to Pages CMS while old links
+# settle. Field names + frontmatter shape are preserved so existing
+# build scripts (build_static_pages.py, build_feature_story.py,
+# fetch_news.py, etc.) keep working without changes.
+
+media:
+  input: img/uploads
+  output: /img/uploads
+
+content:
+  # ─── ARTICLES (originals + drafts) ─────────────────────────────
+  # All article markdown lives in content/articles/. ~3,700 files,
+  # mostly auto-imported wire stories from fetch_news.py. The CMS
+  # surfaces them all in a single list - use the search box (try
+  # 'venice', 'henkel', etc) and the sort/filters in the view bar.
+  - name: articles
+    label: Articles
+    type: collection
+    path: content/articles
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{fields.title | slugify}.md"
+      field: date
+    view:
+      fields: [title, date, category, source_type, draft]
+      primary: title
+      sort: [date, title, category]
+      default:
+        sort: date
+        order: desc
+      search: [title, summary, author]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: date
+        label: Publish date
+        type: date
+        options:
+          format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+          time: true
+        required: true
+
+      - name: author
+        label: Author
+        type: string
+        default: Mutapa Times Staff
+
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Business
+            - Politics
+            - Policy
+            - Tech
+            - Health
+            - Crime
+            - Sport
+            - Arts
+            - Culture
+            - Environment
+            - Education
+            - Opinion
+
+      - name: image
+        label: Featured image
+        type: image
+        required: false
+
+      - name: summary
+        label: Summary
+        type: text
+        description: 280 characters or fewer.
+
+      - name: featured
+        label: Featured on headlines
+        type: boolean
+        default: false
+        description: Pin this article to the top of the headlines page.
+
+      - name: headline_position
+        label: Headline position
+        type: number
+        default: 0
+        options:
+          min: 0
+          max: 10
+          step: 1
+        description: 1 = top spot, 2 = second, etc. Leave at 0 for natural date order.
+        required: false
+
+      - name: source_url
+        label: Source URL
+        type: string
+        required: false
+        description: Original article URL (for wire / aggregated articles).
+
+      - name: source_type
+        label: Source type
+        type: select
+        default: original
+        options:
+          values: [original, wire]
+        description: How this article was sourced. fetch_news.py sets 'wire' on imports.
+
+      - name: spotlight
+        label: Spotlight
+        type: boolean
+        default: false
+        description: Pin into the Spotlight rail on the home page.
+
+      - name: spotlight_title
+        label: Spotlight title (alternate)
+        type: string
+        required: false
+        description: Optional. Used as the card title in the Spotlight rail instead of the main headline. Useful when the article is also the Feature Story so the two don't visually duplicate.
+
+      - name: spotlight_image
+        label: Spotlight image (alternate)
+        type: image
+        required: false
+        description: Optional. Used in the Spotlight rail instead of the main hero image.
+
+      - name: feature_story
+        label: Feature Story of the Week
+        type: boolean
+        default: false
+        description: Promote heavily - top of spotlight, banner on home + articles, footer rail on every article page, full-bleed ads in the news grid. Only one article should have this on at a time; the most recent feature_story wins.
+
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        description: When ticked, the article is kept in the CMS but not published to the site.
+
+      - name: longform
+        label: Longform feature
+        type: boolean
+        default: false
+        description: NYT-style full-bleed hero, drop cap, scroll-reveal animations.
+
+      - name: hero_eyebrow
+        label: Hero eyebrow
+        type: string
+        required: false
+        description: Small label above the longform headline, e.g. 'BUSINESS LONG READ'.
+
+      - name: hero_image_credit
+        label: Hero image credit
+        type: string
+        required: false
+
+      - name: read_minutes
+        label: Read minutes
+        type: string
+        required: false
+        description: Approx. read time. Used by longform articles.
+
+      - name: body
+        label: Body
+        type: rich-text
+
+  # ─── STATIC PAGES (About / Advertising / Privacy / Terms / Subscribe) ─
+  - name: page_about
+    label: About page
+    type: file
+    path: content/pages/about.md
+    format: yaml-frontmatter
+    fields:
+      - { name: eyebrow,  label: Eyebrow,           type: string, required: false }
+      - { name: headline, label: Headline,          type: string, required: true }
+      - { name: deck,     label: Deck (sub-headline), type: text, required: false }
+      - { name: body,     label: Body,              type: rich-text }
+
+  - name: page_advertising
+    label: Advertising page
+    type: file
+    path: content/pages/advertising.md
+    format: yaml-frontmatter
+    fields:
+      - { name: eyebrow,  label: Eyebrow,           type: string, required: false }
+      - { name: headline, label: Headline,          type: string, required: true }
+      - { name: deck,     label: Deck (sub-headline), type: text, required: false }
+      - { name: body,     label: Body,              type: rich-text }
+
+  - name: page_privacy
+    label: Privacy page
+    type: file
+    path: content/pages/privacy.md
+    format: yaml-frontmatter
+    fields:
+      - { name: headline, label: Headline, type: string, required: true }
+      - { name: body,     label: Body,     type: rich-text }
+
+  - name: page_terms
+    label: Terms page
+    type: file
+    path: content/pages/terms.md
+    format: yaml-frontmatter
+    fields:
+      - { name: headline, label: Headline, type: string, required: true }
+      - { name: body,     label: Body,     type: rich-text }
+
+  - name: page_subscribe
+    label: Subscribe page
+    type: file
+    path: content/pages/subscribe.md
+    format: yaml-frontmatter
+    fields:
+      - { name: eyebrow,  label: Eyebrow,           type: string, required: false }
+      - { name: headline, label: Headline,          type: string, required: true }
+      - { name: deck,     label: Deck (sub-headline), type: text, required: false }
+      - { name: body,     label: Body,              type: rich-text, required: false }
+
+  # ─── ROLES / INTERNSHIPS ───────────────────────────────────────
+  - name: roles
+    label: Roles & Internships
+    type: collection
+    path: content/roles
+    format: yaml-frontmatter
+    filename:
+      template: "{fields.title | slugify}.md"
+      field: title
+    view:
+      fields: [title, status, order]
+      primary: title
+      sort: [order, title, status]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Role title
+        type: string
+        required: true
+        description: e.g. Junior Social Media Assistant.
+
+      - name: status
+        label: Status
+        type: select
+        default: open
+        options:
+          values: [open, closed, draft]
+        description: Closed roles drop out of the public Jobs page and RSS feed.
+
+      - name: order
+        label: Display order
+        type: number
+        default: 10
+        options:
+          min: 1
+          max: 100
+          step: 1
+        description: Lower numbers appear first on the Jobs page.
+
+      - name: summary
+        label: Summary
+        type: text
+        description: 1-2 sentences shown on the jobs feed card.
+
+      - name: samples_prompt
+        label: Samples prompt
+        type: string
+        required: false
+        description: The prompt that asks applicants for their portfolio link, e.g. 'My social handles / portfolio links:'.
+
+      - name: anchor
+        label: Apply link anchor
+        type: string
+        required: false
+        description: Optional URL fragment for /jobs# (defaults to a slug of the title).
+
+      - name: body
+        label: Long-form role description
+        type: rich-text
+        required: false
+
+  # ─── SPONSORS / ADVERTISERS ────────────────────────────────────
+  - name: sponsors
+    label: Sponsors & Partners
+    type: collection
+    path: content/sponsors
+    format: yaml-frontmatter
+    filename:
+      template: "{fields.name | slugify}.md"
+      field: name
+    view:
+      fields: [name, active, start_date]
+      primary: name
+      sort: [start_date, name]
+      default:
+        sort: start_date
+        order: desc
+    fields:
+      - name: name
+        label: Sponsor name
+        type: string
+        required: true
+        description: e.g. Safari & Co.
+
+      - name: active
+        label: Active
+        type: boolean
+        default: false
+        description: When on, the sponsor's editorial strip appears on the configured pages.
+
+      - name: strip_copy
+        label: Strip copy
+        type: string
+        description: The text in the editorial strip, e.g. 'Sponsored briefing by Safari & Co - building tomorrow's lodges'.
+
+      - name: url
+        label: Sponsor URL
+        type: string
+        description: Where the strip links to (https://...).
+
+      - name: logo
+        label: Logo
+        type: image
+        required: false
+        description: Small monochrome mark, ~200px wide PNG / SVG.
+
+      - name: placements
+        label: Placements
+        type: select
+        options:
+          multiple: true
+          values: [news, articles, economy, fx, markets, property, jobs, weather, cities]
+        default: [news]
+        description: Which sections this sponsor's strip appears on.
+
+      - name: start_date
+        label: Start date
+        type: date
+        required: false
+
+      - name: end_date
+        label: End date
+        type: date
+        required: false
+
+      - name: notes
+        label: Notes (internal)
+        type: text
+        required: false
+        description: Sales rep, contract notes, contact name. Not published.
+
+      - name: body
+        label: Long copy
+        type: rich-text
+        required: false
+        description: Optional longer description for a future /sponsors/{name} page.
+
+  # ─── SITE SETTINGS (singleton) ─────────────────────────────────
+  - name: site_settings
+    label: Site settings
+    type: file
+    path: content/settings/site.yml
+    format: yaml
+    fields:
+      - { name: brand_name,        label: Brand name,           type: string }
+      - { name: tagline,           label: Tagline,              type: string }
+      - { name: contact_email,     label: Editorial contact email, type: string }
+      - { name: default_og_image,  label: Default OG image,     type: image, required: false }
+      - { name: footer_copy,       label: Footer copyright,     type: string }
+      - name: social
+        label: Social handles
+        type: object
+        fields:
+          - { name: x,         label: X / Twitter,            type: string }
+          - { name: instagram, label: Instagram,              type: string }
+          - { name: linkedin,  label: LinkedIn (company slug), type: string }
+          - { name: threads,   label: Threads,                type: string }
+          - { name: facebook,  label: Facebook (page slug),   type: string }
+          - { name: bluesky,   label: Bluesky handle,         type: string }
+          - { name: tiktok,    label: TikTok,                 type: string }
