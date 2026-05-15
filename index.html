@@ -39,7 +39,6 @@
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="preload" as="image" href="img/banner.webp" type="image/webp">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css?v=79">
     <meta name="title" content="The Mutapa Times">
@@ -294,15 +293,9 @@
   <!-- Stories rail — IG-style highlights, top of paper. -->
   <div id="stories-rail" aria-label="Story highlights"></div>
 
-  <!-- Banner image -->
-  <div class="editorial-landscape-wrap">
-    <picture>
-      <source srcset="img/banner.webp" type="image/webp">
-      <img class="editorial-landscape-img" src="img/banner.png" alt="Latest News - Harare Skyline" width="1000" height="200">
-    </picture>
-  </div>
-
-  <!-- Feature Story of the Week (rendered by js/feature-story.js if active) -->
+  <!-- Feature Story of the Week (rendered by js/feature-story.js if active).
+       Lifted above the Harare skyline so the reader lands on content
+       immediately, the way Semafor / NYT / Airmail do. -->
   <div id="feature-story-slot"></div>
 
   <!-- Spotlight — full width above grid -->
@@ -312,9 +305,6 @@
       <p class="loading-msg">Fetching spotlight coverage&#8230;</p>
     </div>
   </section>
-
-  <!-- Mid-scroll feature reminder banner -->
-  <div id="feature-story-slot-mid"></div>
 
   <!-- Main layout: stories + sidebar -->
   <main>
@@ -373,6 +363,15 @@
     </div>
   </div>
   </main>
+
+  <!-- Harare skyline banner - sits between the news grid and the newsletter
+       sign-up so it acts as a visual pause before the call to action. -->
+  <div class="editorial-landscape-wrap">
+    <picture>
+      <source srcset="img/banner.webp" type="image/webp">
+      <img class="editorial-landscape-img" src="img/banner.png" alt="Harare skyline" width="1000" height="200" loading="lazy">
+    </picture>
+  </div>
 
   <!-- Mobile-only newsletter signup (after main stories) -->
   <div class="mobile-newsletter" id="mobileNewsletterBanner">
