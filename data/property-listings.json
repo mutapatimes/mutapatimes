@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-15T14:34:42.388689+00:00",
+  "fetched_at": "2026-05-15T19:53:32.450394+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -20,6 +20,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/1e/5d/75/1e5d7572-5115-44ae-97a1-52b0ee4ff1ce_thumbnail591.webp",
       "beds": "5",
       "baths": "3"
+    },
+    {
+      "title": "Brick-front 4-Bed Home in Mainway Meadows – Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-gpp247141",
+      "price": "USD 115,000",
+      "location": "Mainway Meadows, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/4c/84/8e/4c848e77-5592-481d-ae29-77c437250004_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
     },
     {
       "title": "Light-Filled 4-Bed Townhouse Complex, Highlands Harare North",
@@ -190,15 +199,6 @@
       "location": "Mabelreign, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/99/d5/c1/99d5c172-4d56-4a06-a7e1-be59088e7a34_thumbnail591.webp",
       "beds": "3",
-      "baths": "3"
-    },
-    {
-      "title": "BEAUTIFUL FAMILY HOME ON 4021 square metres",
-      "url": "https://www.property.co.zw/for-sale/houses-knp241988",
-      "price": "USD 740,000",
-      "location": "Colne Valley, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/73/9c/a4/739ca459-415a-4243-b148-f41cfaeb5a55_thumbnail591.webp",
-      "beds": "4",
       "baths": "3"
     }
   ]
