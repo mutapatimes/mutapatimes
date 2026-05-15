@@ -20,9 +20,17 @@
 
   // Tunables
   var SNAP_DURATION_MS = 5000;     // each card holds for 5s
+  var FEATURE_AD_DURATION_MS = 7000; // feature ad lingers a little longer
   var MAX_PER_HIGHLIGHT = 12;       // cap so a single category doesn't run forever
   var MIN_PER_HIGHLIGHT = 3;        // hide groups too thin to be interesting
+  var FEATURE_AD_EVERY = 5;         // insert the Feature Story slide after every N cards
   var INDEX_URL = "/content/articles/index.json";
+  var FEATURE_AD_URL = "/data/feature-story.json";
+
+  // Pre-loaded Feature Story payload. Filled at init() before
+  // highlights are built. Used by injectFeatureAds() to splice an
+  // ad slide in after every Nth card in each highlight.
+  var _featureAd = null;
 
   // Highlight order — categories shown left-to-right when present.
   // Editorial choice: no Crime, no Politics rails.
@@ -106,6 +114,27 @@
     });
   }
 
+  // ---- Feature ad injection ----
+  // Splice the Feature Story slide into a highlight's items array
+  // after every FEATURE_AD_EVERY cards. Skips the highlight where
+  // the feature article would naturally appear (so we don't show
+  // it back-to-back with itself).
+  function injectFeatureAds(items) {
+    if (!_featureAd) return items;
+    var alreadyInHighlight = items.some(function (it) {
+      return it && it.slug === _featureAd.slug;
+    });
+    if (alreadyInHighlight) return items;
+    var out = [];
+    for (var i = 0; i < items.length; i++) {
+      out.push(items[i]);
+      if ((i + 1) % FEATURE_AD_EVERY === 0 && i < items.length - 1) {
+        out.push(_featureAd);
+      }
+    }
+    return out;
+  }
+
   // ---- Highlight construction ----
   function buildHighlights(entries) {
     // Keep only entries with a card_image (fresh enough to still be on disk).
@@ -125,14 +154,14 @@
     hi.push({
       key: "_latest",
       label: "Latest",
-      items: fresh.slice(0, MAX_PER_HIGHLIGHT),
+      items: injectFeatureAds(fresh.slice(0, MAX_PER_HIGHLIGHT)),
     });
 
     // Category buckets in the order we want them
     CATEGORY_ORDER.forEach(function (cat) {
       var items = byCat[cat];
       if (!items || items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: items.slice(0, MAX_PER_HIGHLIGHT) });
+      hi.push({ key: cat, label: cat, items: injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)) });
     });
 
     // Anything else, alphabetically
@@ -140,7 +169,7 @@
       if (CATEGORY_ORDER.indexOf(cat) !== -1) return;
       var items = byCat[cat];
       if (items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: items.slice(0, MAX_PER_HIGHLIGHT) });
+      hi.push({ key: cat, label: cat, items: injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)) });
     });
 
     return hi;
@@ -165,6 +194,9 @@
     var v = loadViewed();
     var bucket = v[h.key] || {};
     for (var i = 0; i < h.items.length; i++) {
+      // Feature ads aren't editorial cards - they don't get a viewed
+      // tick, otherwise the ring would never dim.
+      if (h.items[i] && h.items[i]._isFeatureAd) continue;
       if (!bucket[h.items[i].slug]) return false;
     }
     return true;
@@ -284,63 +316,77 @@
       ]),
     ]);
 
-    // Title area — eyebrow + headline above the card so they never
-    // overlap the butter card. Leaves the bottom of the viewer free
-    // for the CTA pill alone.
-    var titleArea = el("div", { class: "story-title-area" }, [
-      el("p", { class: "story-title-eyebrow", text: (h.label === "Latest" ? (snap.category || "Story") : h.label) }),
-      el("p", { class: "story-title-headline", text: snap.title || "" }),
-    ]);
-
-    // Card — the existing 4:5 butter PNG, centred. The category colour
-    // is now applied to the viewer itself (full viewport) rather than a
-    // 9:16 frame around the card.
-    var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
-
-    // Bottom — CTA pill only.
-    var bottom = el("div", { class: "story-bottom" }, [
-      el("a", {
-        class: "story-bottom-cta",
-        href: "/articles/" + encodeURIComponent(snap.slug),
-        text: "Read the full briefing →",
-      }),
-    ]);
+    var isAd = !!snap._isFeatureAd;
+    var snapDuration = isAd ? FEATURE_AD_DURATION_MS : SNAP_DURATION_MS;
 
     // Tap zones (don't intercept clicks on top/bottom UI)
     var tapLeft = el("button", { class: "story-tap story-tap--left", type: "button", "aria-label": "Previous", onclick: prev });
     var tapRight = el("button", { class: "story-tap story-tap--right", type: "button", "aria-label": "Next", onclick: next });
-
-    // Paint the viewer in the highlight's category colour — full viewport.
-    v.overlay.style.background = viewerColorFor(h.key);
 
     v.overlay.innerHTML = "";
     v.overlay.appendChild(segs);
     v.overlay.appendChild(top);
     v.overlay.appendChild(tapLeft);
     v.overlay.appendChild(tapRight);
-    // Flex column: title above, card centred, CTA below — natural order.
-    v.overlay.appendChild(titleArea);
-    v.overlay.appendChild(card);
-    v.overlay.appendChild(bottom);
 
-    // Animate the active progress segment and arm the next-snap timer
+    if (isAd) {
+      // Feature Story ad slide: lead image as full background, eyebrow,
+      // big headline, summary tease, pill CTA. Tappable across the
+      // whole slide (the body element is wrapped in an anchor).
+      v.overlay.style.background = "#0a0a0a";
+      var adAnchor = el("a", {
+        class: "story-feature-ad",
+        href: snap.url || ("/articles/" + snap.slug),
+      });
+      var adBg = el("div", { class: "story-feature-ad-bg" });
+      if (snap.image) adBg.style.backgroundImage = 'url("' + snap.image + '")';
+      var adInner = el("div", { class: "story-feature-ad-inner" }, [
+        el("p", { class: "story-feature-ad-eyebrow", text: "Feature Story of the Week" }),
+        el("h2", { class: "story-feature-ad-title", text: snap.title || "" }),
+        el("p", { class: "story-feature-ad-summary", text: (snap.summary || "").slice(0, 180) }),
+        el("span", { class: "story-feature-ad-cta", text: "Read the full feature" }),
+      ]);
+      adAnchor.appendChild(adBg);
+      adAnchor.appendChild(adInner);
+      v.overlay.appendChild(adAnchor);
+    } else {
+      // Standard snap — title area + butter card + bottom CTA pill.
+      var titleArea = el("div", { class: "story-title-area" }, [
+        el("p", { class: "story-title-eyebrow", text: (h.label === "Latest" ? (snap.category || "Story") : h.label) }),
+        el("p", { class: "story-title-headline", text: snap.title || "" }),
+      ]);
+      var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
+      var bottom = el("div", { class: "story-bottom" }, [
+        el("a", {
+          class: "story-bottom-cta",
+          href: "/articles/" + encodeURIComponent(snap.slug),
+          text: "Read the full briefing →",
+        }),
+      ]);
+      v.overlay.style.background = viewerColorFor(h.key);
+      v.overlay.appendChild(titleArea);
+      v.overlay.appendChild(card);
+      v.overlay.appendChild(bottom);
+    }
+
+    // Animate the active progress segment and arm the next-snap timer.
     var activeSeg = v.overlay.querySelector(".story-progress-seg.is-active .story-progress-fill");
     if (activeSeg) {
       activeSeg.style.transition = "none";
       activeSeg.style.width = "0%";
-      // Force reflow so the transition restarts even when we navigate
-      // back-and-forth within the same highlight.
       void activeSeg.offsetWidth;
-      activeSeg.style.transition = "width " + SNAP_DURATION_MS + "ms linear";
+      activeSeg.style.transition = "width " + snapDuration + "ms linear";
       activeSeg.style.width = "100%";
     }
     v.startedAt = Date.now();
     v.elapsedBeforePause = 0;
     if (v.timer) clearTimeout(v.timer);
-    v.timer = setTimeout(next, SNAP_DURATION_MS);
+    v.timer = setTimeout(next, snapDuration);
 
-    // Mark this snap as viewed for the dim-the-ring state.
-    markViewed(h.key, snap.slug);
+    // Mark this snap as viewed for the dim-the-ring state - but only
+    // real snaps. Ads aren't editorial content, they shouldn't move the
+    // 'viewed' state of the highlight.
+    if (!isAd) markViewed(h.key, snap.slug);
 
     // Reflect the current snap in the URL so refresh / share works.
     try {
@@ -525,7 +571,26 @@
   function init() {
     var rail = document.getElementById("stories-rail");
     if (!rail) return;
-    fetchJSON(INDEX_URL).then(function (data) {
+    // Kick off the Feature Story fetch in parallel with the index
+    // load. Highlights are built after both promises settle so the
+    // ad insertion has the latest payload.
+    var featurePromise = fetchJSON(FEATURE_AD_URL)
+      .then(function (data) {
+        if (data && data.slug) {
+          _featureAd = {
+            _isFeatureAd: true,
+            slug: data.slug,
+            title: data.title || "",
+            summary: data.summary || "",
+            image: data.image || "",
+            category: data.category || "",
+            url: data.url || ("/articles/" + data.slug),
+          };
+        }
+      })
+      .catch(function () { /* no feature, no ads - silent no-op */ });
+    Promise.all([featurePromise, fetchJSON(INDEX_URL)]).then(function (results) {
+      var data = results[1];
       if (!Array.isArray(data) || !data.length) return;
       var hi = buildHighlights(data);
       if (!hi.length) { rail.style.display = "none"; return; }

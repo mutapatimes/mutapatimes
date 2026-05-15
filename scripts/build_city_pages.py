@@ -385,7 +385,7 @@ def build_page(city, all_articles, other_cities):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/main.css?v=82">
+<link rel="stylesheet" href="/css/main.css?v=83">
 
 {schema_blocks}
 </head>
