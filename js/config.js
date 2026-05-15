@@ -1978,7 +1978,7 @@ function renderSpotlightStories(articles) {
 function loadCmsSpotlightArticles(container) {
   if (!container || !container.length) return;
 
-  var cacheKey = "cms_spotlight_cache";
+  var cacheKey = "cms_spotlight_cache_v2";
   var cached = getCache(cacheKey);
   if (cached && cached.length) {
     appendCmsSpotlightItems(container, cached);
@@ -2025,6 +2025,7 @@ function loadCmsSpotlightArticles(container) {
               }
               meta[key] = val;
             }
+            if (meta.draft && meta.draft.toLowerCase() === 'true') return;
             if (meta.spotlight && meta.spotlight.toLowerCase() === 'true') {
               var slug = filename.replace(/\.md$/, '');
               spotlightItems.push({
