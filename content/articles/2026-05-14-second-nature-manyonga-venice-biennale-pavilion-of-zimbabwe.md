@@ -4,18 +4,22 @@ date: 2026-05-14T09:00:00.000Z
 author: Valentine Eluwasi
 category: Arts
 image: /img/uploads/venice-2026/main/hero.jpg
-summary: "A personal letter from Venice, written in the wake of the opening of Zimbabwe's eighth pavilion at the 61st Biennale. On Henry Taylor in the rain, the dignity of decay, the constellation of Zimbabwean excellence in the room on opening night, and on the proposition, borrowed from a friend, that there is therapy in beauty."
+summary: A personal letter from Venice, written in the wake of the opening of
+  Zimbabwe's eighth pavilion at the 61st Biennale. On Henry Taylor in the rain,
+  the dignity of decay, the constellation of Zimbabwean excellence in the room
+  on opening night, and on the proposition, borrowed from a friend, that there
+  is therapy in beauty.
 featured: true
 headline_position: 0
 source_type: original
 spotlight: true
-longform: true
+feature_story: false
 draft: true
-read_minutes: 12
-hero_eyebrow: "ESSAY · VENICE"
-hero_image_credit: "Photograph by 1925 Glen Norah"
+longform: true
+hero_eyebrow: ESSAY · VENICE
+hero_image_credit: Photograph by 1925 Glen Norah
+read_minutes: Twelve
 ---
-
 I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the road in from Verona by a margin of approximately ten minutes of plausible weather, was now soaked through. So was I.
 
 I had lunch shortly after arriving with my lovely, dear friend Anna Pesonen, who was in the city that day, at a small table in a small restaurant a short walk from the canal. We sat for an hour and a half. We ate slowly. We talked, in the half-distracted way of two people who have not seen each other since the previous winter, about the project I was here to begin and the project she was working on through the summer. The rain held outside the window and we did not particularly mind it. When we parted I was, against my better expectations, in a good mood.
@@ -26,20 +30,7 @@ I sulked. I am willing to admit this. There is a particular kind of British weat
 
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, I will give it credit, for once, surfaced a [forty-second video by the American painter Henry Taylor](https://www.instagram.com/p/DX9VznmPDa1/), posted earlier that morning. Taylor was standing on the deck of a boat in the central lagoon of Venice, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, in a register that was half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
-<figure class="article-fullbleed article-fullbleed--portrait">
-  <div class="article-fullbleed-frame">
-    <video class="article-fullbleed-media article-fullbleed-video"
-           autoplay muted loop playsinline controls preload="auto"
-           poster="/img/uploads/venice-2026/main/henry-taylor-poster.jpg"
-           aria-label="Henry Taylor in the rain on the central lagoon, Venice, saying 'isn't it lovely, isn't it beautiful'">
-      <source src="/img/uploads/venice-2026/main/henry-taylor.mp4" type="video/mp4">
-    </video>
-  </div>
-  <figcaption class="article-fullbleed-caption">
-    <span class="desc">Tap to unmute. Video: Henry Taylor, Instagram, 12 May 2026.</span>
-    <span class="credit">Courtesy of the artist</span>
-  </figcaption>
-</figure>
+Tap to unmute. Video: Henry Taylor, Instagram, 12 May 2026. Courtesy of the artist
 
 I watched it. Then I watched it again.
 
@@ -47,22 +38,13 @@ By the third viewing I had moved into a sitting position. By the fourth I had pu
 
 The rain held for the first two or three days. Then, on the morning of the opening, the sky did what Venetian skies do: it cleared, slowly and decisively, and the city of pewter became, in the space of an afternoon, a city of soft late-spring sunshine.
 
-<figure class="article-fullbleed">
-  <div class="article-fullbleed-frame">
-    <img class="article-fullbleed-media"
-         src="/img/uploads/venice-2026/main/lagoon-rain.jpg"
-         alt="The central lagoon, Venice, in rain"
-         loading="lazy">
-  </div>
-  <figcaption class="article-fullbleed-caption">
-    <span class="desc">The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere on this water the same morning and watched on a phone in a second-floor bedroom of a Venetian palazzo a few hours later, was the moment the sulk lifted.</span>
-    <span class="credit">Photograph by 1925 Glen Norah</span>
-  </figcaption>
-</figure>
+![The central lagoon, Venice, in rain](/img/uploads/venice-2026/main/lagoon-rain.jpg)
+
+The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere on this water the same morning and watched on a phone in a second-floor bedroom of a Venetian palazzo a few hours later, was the moment the sulk lifted. Photograph by 1925 Glen Norah
 
 ## What the rain finally let me see
 
-This is going to be, I am aware, an unusual essay to file from a Biennale. The art-criticism pieces are upstream and downstream of this one, five long profiles, one for each artist in the Pavilion of Zimbabwe, that will run over the coming days from my colleagues at this paper. What you are reading now is something I should declare up front to be different. It is a personal letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city, under the cover of one Henry Taylor video and several days of unexpectedly cleansing rain, taught him, briefly, how to look again.
+What you are reading now is something I should declare up front to be different. It is a personal letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city, under the cover of one Henry Taylor video and several days of unexpectedly cleansing rain, taught him, briefly, how to look again.
 
 What I saw, when I started looking, was beauty in registers I had not been ready for.
 
@@ -70,10 +52,9 @@ The decay of the city, first of all. Chipped plaster. The rusted iron mooring ri
 
 And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a constellation of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening, moving with a particular radiance that only comes from a life lived in full attention to itself. Thelma Golden was somewhere in the city for some of those days. The managing director of Lisson Gallery passed through. But mostly it was the women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. Beauty in its most consequential register is not a feature of the young face. It is a feature of the lived one.
 
-<aside class="article-pullquote">
-  <blockquote>Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.</blockquote>
-  <cite>HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 12 MAY 2026</cite>
-</aside>
+> Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.
+
+HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 12 MAY 2026
 
 ## The constellation in the room
 
@@ -91,18 +72,9 @@ But the night was not about me. It was about the people who were in that room be
 
 **Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different register. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo, whose bronzes anchor one of the pavilion's central rooms. I could not stop smiling.
 
-<figure class="article-fullbleed">
-  <div class="article-fullbleed-frame">
-    <img class="article-fullbleed-media"
-         src="/img/uploads/venice-2026/main/opening-night.jpg"
-         alt="Opening night, Pavilion of Zimbabwe, 14 May 2026"
-         loading="lazy">
-  </div>
-  <figcaption class="article-fullbleed-caption">
-    <span class="desc">Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30. About a hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned.</span>
-    <span class="credit">Photograph by Amedeo Benestante</span>
-  </figcaption>
-</figure>
+![Opening night, Pavilion of Zimbabwe, 14 May 2026](/img/uploads/venice-2026/main/opening-night.jpg)
+
+Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30. About a hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned. Photograph by Amedeo Benestante
 
 ## Friends, neighbours, the Togolese contingent
 
@@ -114,14 +86,13 @@ The alumni of previous Pavilions of Zimbabwe were out in force. **Option Dzikama
 
 The lineage was visible in the room. People who had been *the pavilion* in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026. The line of continuity that the catalogue's foreword speaks about in the abstract was sitting at three of the tables nearest mine.
 
-<section class="article-dark-section">
-  <div class="article-dark-section-inner">
-    <span class="article-dark-section-eyebrow">A sponsor's note</span>
-    <h2>Zimbabwean money funded this pavilion. That fact is worth pausing on.</h2>
-    <p>For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital, by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.</p>
-    <p>The Higherlife Foundation, founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. 1925 Glen Norah, the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.</p>
-  </div>
-</section>
+A sponsor's note
+
+## Zimbabwean money funded this pavilion. That fact is worth pausing on.
+
+For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital, by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.
+
+The Higherlife Foundation, founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. 1925 Glen Norah, the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.
 
 ## The wider Biennale, and a text I could not stop thinking about
 
@@ -150,3 +121,4 @@ In the meantime, if you have not watched the Henry Taylor video, [watch the Henr
 *Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 - Valentine Eluwasi
+
