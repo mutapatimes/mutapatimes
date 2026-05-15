@@ -8603,3 +8603,310 @@ body.longform-page .topbar {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
 }
+
+/* ───── Author bylines + Authors pages (Days 1-2 ship: byline-as-link) ───── */
+
+/* Make in-article bylines clickable, but subtle. Underline appears on hover. */
+.article-author-link,
+.article-longform-author .article-author-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+.article-author-link:hover,
+.article-author-link:focus {
+  border-bottom-color: currentColor;
+}
+
+/* /authors/index.html — masthead grid */
+.authors-index {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 22px 80px;
+}
+.authors-index-hero {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 26px;
+  margin-bottom: 36px;
+}
+.authors-index-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 10px;
+}
+.authors-index-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: #111;
+}
+.authors-index-deck {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0;
+}
+.author-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+.author-list-card {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.author-list-card:hover,
+.author-list-card:focus {
+  border-color: #111;
+  transform: translateY(-1px);
+}
+.author-list-avatar {
+  flex: 0 0 64px;
+}
+.author-list-photo,
+.author-list-monogram {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #1a1a1a;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.author-list-text {
+  min-width: 0;
+}
+.author-list-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  margin: 0 0 4px;
+  line-height: 1.2;
+  color: #111;
+}
+.author-list-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 8px;
+}
+.author-list-bio {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* /authors/{slug}.html — individual author page */
+.author-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 22px 80px;
+}
+.author-page-hero {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 24px 0 32px;
+  margin-bottom: 28px;
+}
+.author-page-avatar {
+  flex: 0 0 132px;
+}
+.author-page-photo,
+.author-page-monogram {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #1a1a1a;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.author-page-text {
+  min-width: 0;
+  flex: 1;
+}
+.author-page-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 8px;
+}
+.author-page-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  line-height: 1.05;
+  margin: 0 0 6px;
+  color: #111;
+}
+.author-page-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c19657;
+  margin: 0 0 14px;
+}
+.author-page-bio {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 12px;
+  font-style: italic;
+}
+.author-page-beat,
+.author-page-location {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #666;
+  margin: 0 0 6px;
+}
+.author-page-beat span {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  margin-right: 6px;
+}
+.author-page-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+}
+.author-page-social a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+}
+.author-page-social a:hover,
+.author-page-social a:focus {
+  border-bottom-color: #111;
+}
+.author-page-long-bio {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 36px;
+  max-width: 720px;
+}
+.author-page-long-bio p {
+  margin: 0 0 14px;
+}
+
+/* Archive grid under the hero */
+.author-archive {
+  margin-top: 12px;
+}
+.author-archive-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  margin: 0 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #111;
+}
+.author-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+.author-archive-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 16px;
+  background: #fff;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.author-archive-card:hover,
+.author-archive-card:focus {
+  border-color: #111;
+  transform: translateY(-1px);
+}
+.author-archive-card-cat {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c19657;
+}
+.author-archive-card-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 6px 0 8px;
+  color: #111;
+}
+.author-archive-card-summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.45;
+  margin: 0 0 10px;
+}
+.author-archive-card-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.76rem;
+  color: #999;
+}
+.author-archive-empty {
+  font-family: 'Inter', sans-serif;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .author-page-hero {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .author-page-avatar { flex-basis: auto; }
+  .author-page-photo,
+  .author-page-monogram {
+    width: 96px;
+    height: 96px;
+    font-size: 1.8rem;
+  }
+  .author-page-name { font-size: 1.9rem; }
+  .authors-index-title { font-size: 2rem; }
+}

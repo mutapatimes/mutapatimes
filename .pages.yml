@@ -224,6 +224,109 @@ content:
       - { name: deck,     label: Deck (sub-headline), type: text, required: false }
       - { name: body,     label: Body,              type: rich-text, required: false }
 
+  # ─── AUTHORS ───────────────────────────────────────────────────
+  - name: authors
+    label: Authors & Bylines
+    type: collection
+    path: content/authors
+    format: yaml-frontmatter
+    filename:
+      template: "{fields.slug | slugify}.md"
+      field: slug
+    view:
+      fields: [name, role, beat, active]
+      primary: name
+      sort: [order, name]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: name
+        label: Display name
+        type: string
+        required: true
+        description: As it should appear in bylines, e.g. "Valentine Eluwasi".
+
+      - name: slug
+        label: URL slug
+        type: string
+        required: true
+        description: Lowercase, hyphenated. Becomes /authors/{slug}.html — don't change once shipped.
+
+      - name: role
+        label: Role
+        type: string
+        description: e.g. Founder and Editor, Senior Correspondent.
+
+      - name: beat
+        label: Beat
+        type: string
+        description: One-line summary of what this author covers.
+
+      - name: bio
+        label: Short bio
+        type: text
+        description: 1-2 sentences shown in the author hero block.
+
+      - name: photo
+        label: Author photo
+        type: image
+        required: false
+        description: Square crop, ~600px. Falls back to a monogram if empty.
+
+      - name: location
+        label: Location
+        type: string
+        required: false
+
+      - name: twitter
+        label: X / Twitter handle
+        type: string
+        required: false
+        description: Without the @.
+
+      - name: instagram
+        label: Instagram handle
+        type: string
+        required: false
+
+      - name: linkedin
+        label: LinkedIn slug
+        type: string
+        required: false
+
+      - name: email
+        label: Public email
+        type: string
+        required: false
+
+      - name: website
+        label: Personal website
+        type: string
+        required: false
+
+      - name: order
+        label: Display order
+        type: number
+        default: 10
+        options:
+          min: 1
+          max: 100
+          step: 1
+        description: Lower numbers appear first on the masthead.
+
+      - name: active
+        label: Active
+        type: boolean
+        default: true
+        description: When off, the author page is removed and bylines stop linking.
+
+      - name: body
+        label: Long bio
+        type: rich-text
+        required: false
+        description: Full biography shown below the hero on the author page.
+
   # ─── ROLES / INTERNSHIPS ───────────────────────────────────────
   - name: roles
     label: Roles & Internships

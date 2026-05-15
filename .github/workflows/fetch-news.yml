@@ -31,6 +31,9 @@ jobs:
       - name: Build news landing pages
         run: python3 scripts/build_news_pages.py
 
+      - name: Build author pages + manifest (must run before build_static_pages so bylines link)
+        run: python3 scripts/build_author_pages.py
+
       - name: Build static article pages
         run: python3 scripts/build_static_pages.py --articles-only
 

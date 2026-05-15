@@ -175,7 +175,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=83">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=84">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -445,6 +445,7 @@ def page_footer(depth=1):
     </div>
 
     <div class="atlantic-foot-fine">
+      <a href="/authors/">Masthead</a><span class="sep">·</span>
       <a href="/privacy">Privacy</a><span class="sep">·</span>
       <a href="/terms">Terms</a><span class="sep">·</span>
       <a href="/advertising">Advertising guidelines</a><span class="sep">·</span>
@@ -581,10 +582,35 @@ def _render_more_to_read(related):
     )
 
 
+def _load_author_map():
+    """Return {lowercased author name: slug} from data/authors.json.
+    Built by scripts/build_author_pages.py. If missing, bylines stay
+    as plain text — no breakage."""
+    path = os.path.join(ROOT_DIR, "data", "authors.json")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (IOError, ValueError):
+        return {}
+
+
+def _byline_html(author, author_map, depth=1):
+    """Plain 'By {author}' if no author page exists; linked version if
+    the author has a profile in content/authors/."""
+    if not author:
+        return ""
+    prefix = "../" if depth == 1 else ""
+    slug = author_map.get(author.strip().lower())
+    if slug:
+        return f'By <a href="{prefix}authors/{esc(slug)}.html" class="article-author-link" rel="author">{esc(author)}</a>'
+    return f"By {esc(author)}"
+
+
 def build_articles():
     os.makedirs(ARTICLES_OUT, exist_ok=True)
     md_files = all_article_md_paths()
     related_index = _load_related_index()
+    author_map = _load_author_map()
     count = 0
 
     for md_path in md_files:
@@ -707,7 +733,7 @@ def build_articles():
             <p class="article-longform-deck">{esc(summary)}</p>
             <div class="article-longform-meta">""")
             if author:
-                html_parts.append(f'              <span class="article-longform-author">By {esc(author)}</span>')
+                html_parts.append(f'              <span class="article-longform-author">{_byline_html(author, author_map)}</span>')
             if date_display:
                 html_parts.append(f'              <time datetime="{esc(date_str)}">{date_display}</time>')
             if read_minutes:
@@ -727,7 +753,7 @@ def build_articles():
             html_parts.append(f'        <h1 class="article-title">{esc(title)}</h1>')
             html_parts.append(f'        <div class="article-meta">')
             if author:
-                html_parts.append(f'          <span class="article-author">By {esc(author)}</span>')
+                html_parts.append(f'          <span class="article-author">{_byline_html(author, author_map)}</span>')
             if date_display:
                 html_parts.append(f'          <time class="article-date" datetime="{esc(date_str)}">{date_display}</time>')
             html_parts.append(f'        </div>')
