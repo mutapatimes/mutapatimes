@@ -236,25 +236,25 @@ a:hover {
  * ────────────────────────────────────────────────────────── */
 .titleDiv {
   position: relative;
-  padding-bottom: 30px;
-  margin-top: 4px;
+  padding-bottom: 16px;
+  margin-top: 2px;
 }
 .titleDiv::after {
-  /* Brand red accent rule under the wordmark — sits below the title
-     with comfortable breathing room (16px gap minimum from baseline). */
+  /* Brand red accent rule under the wordmark. Pulled in tighter to
+     reduce overall masthead height. */
   content: '';
   position: absolute;
-  bottom: 10px;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 96px;
-  height: 3px;
+  width: 72px;
+  height: 2px;
   background: var(--accent);
 }
 
 .title {
   text-align: center;
-  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
   font-family: 'Playfair Display', Georgia, serif;
   margin: 0;
   line-height: 1;
@@ -266,12 +266,12 @@ a:hover {
 .sub {
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.32em;
   color: var(--text-mid);
-  margin: 16px 0 8px;
+  margin: 6px 0 2px;
   text-transform: uppercase;
 }
 
@@ -299,13 +299,13 @@ a:hover {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-light);
-  padding: 6px 0;
+  padding: 2px 0;
 }
 
 .dateHr {
   border: none;
   border-top: 1px solid var(--rule);
-  margin: 4px 0 0;
+  margin: 2px 0 0;
 }
 
 /* ==========================================================================
@@ -318,7 +318,7 @@ nav {
   text-align: center;
   flex-wrap: nowrap;     /* keep all sections on a single row */
   gap: 0;
-  padding: 5px 0;
+  padding: 2px 0;
   overflow-x: auto;       /* fallback for very narrow viewports */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -5666,21 +5666,19 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   position: relative;
   width: 100%;
   max-width: 100%;
-  margin: 0 0 28px;
+  margin: 0 0 14px;
   padding: 0;
 }
 .stories-rail-inner {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   overflow-x: auto;
   overflow-y: visible;
   scroll-snap-type: x proximity;
-  /* Inner padding keeps the first / last chip away from the viewport
-     edge. max() respects iOS safe-area inset on landscape. */
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: max(24px, env(safe-area-inset-left, 0px));
-  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
@@ -5688,7 +5686,7 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 
 .story-thumb {
   flex-shrink: 0;
-  width: 92px;
+  width: 76px;
   background: transparent;
   border: 0;
   padding: 0;
@@ -5720,14 +5718,14 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 /* Each chip is its own faded brand tone with a dark ink label inside.
    No thumbnail image — the colour + label IS the identity. */
 .story-chip {
-  width: 88px; height: 88px;
+  width: 72px; height: 72px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 6px;
   color: #1A1A1A;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08), inset 0 0 0 1px rgba(0,0,0,0.06);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07), inset 0 0 0 1px rgba(0,0,0,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .story-thumb:hover .story-chip-glow,

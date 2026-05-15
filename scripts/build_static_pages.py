@@ -165,7 +165,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=79">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=80">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
