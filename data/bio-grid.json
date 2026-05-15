@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-05-14T22:26:36+00:00",
+  "fetched_at": "2026-05-15T02:42:44+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s vivid English first names carry family histories, from Privilege to Shame",
+      "link": "https://mutapatimes.com/articles/2026-05-15-zimbabwes-vivid-english-first-names-carry-family-histories-f",
+      "image": "https://www.mutapatimes.com/img/cards/news/06d020a65527.png",
+      "pubDate": "2026-05-15T02:06:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Who is the numero uno?",
+      "link": "https://mutapatimes.com/articles/2026-05-14-who-is-the-numero-uno",
+      "image": "https://www.mutapatimes.com/img/cards/news/f623e2048f4b.png",
+      "pubDate": "2026-05-14T22:02:43+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Who is the numero uno?",
+      "link": "https://mutapatimes.com/news/2026-05-15-who-is-the-numero-uno-9db095",
+      "image": "https://www.mutapatimes.com/img/cards/news/9329852a9c47.png",
+      "pubDate": "2026-05-14T22:02:43+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "economy",
       "title": "Zim remittances 2025: diaspora sent $2.9B home — +78.7% over five years.",
@@ -316,11 +340,99 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe’s Vice President thanks Italy for cooperation initiatives",
-      "link": "https://mutapatimes.com/news/2026-05-14-zimbabwe-s-vice-president-thanks-italy-for-cooperation-initi-1cfcb8",
-      "image": "https://www.mutapatimes.com/img/cards/news/36a1d6489ad2.png",
-      "pubDate": "2026-05-14T16:30:00+00:00",
-      "category": "Entertainment"
+      "title": "Attorney General insists CAB3 referendum an ‘unconstitutional demand’",
+      "link": "https://mutapatimes.com/news/2026-05-14-attorney-general-insists-cab3-referendum-an-unconstitutional-658dc8",
+      "image": "https://www.mutapatimes.com/img/cards/news/2264501131c5.png",
+      "pubDate": "2026-05-14T14:41:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe appoints first female Chief Justice as Elizabeth Gwaunza Takes over",
+      "link": "https://mutapatimes.com/articles/2026-05-14-zimbabwe-appoints-first-female-chief-justice-as-elizabeth-gw",
+      "image": "https://www.mutapatimes.com/img/cards/news/e16432f934ee.png",
+      "pubDate": "2026-05-14T14:40:16+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe appoints first female Chief Justice as Elizabeth Gwaunza Takes over",
+      "link": "https://mutapatimes.com/news/2026-05-14-zimbabwe-appoints-first-female-chief-justice-as-elizabeth-gw-46e2ed",
+      "image": "https://www.mutapatimes.com/img/cards/news/1cc86ab39d3a.png",
+      "pubDate": "2026-05-14T14:40:16+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "NatPharm board, management sign Integrity Pledges",
+      "link": "https://mutapatimes.com/news/2026-05-14-natpharm-board-management-sign-integrity-pledges-559b2e",
+      "image": "https://www.mutapatimes.com/img/cards/news/0ef952f24a9c.png",
+      "pubDate": "2026-05-14T14:39:57+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chief Justice Malaba bows out, but term extension controversy will define his legacy",
+      "link": "https://mutapatimes.com/articles/2026-05-14-chief-justice-malaba-bows-out-but-term-extension-controversy",
+      "image": "https://www.mutapatimes.com/img/cards/news/c35940a2364c.png",
+      "pubDate": "2026-05-14T14:27:03+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chiwenga’s Kampala Message: No Poll Endorsement And A Mirror Held To Zimbabwe’s Own Political Reality",
+      "link": "https://mutapatimes.com/news/2026-05-14-chiwenga-s-kampala-message-no-poll-endorsement-and-a-mirror-68bdb6",
+      "image": "https://www.mutapatimes.com/img/cards/news/aac765e9faef.png",
+      "pubDate": "2026-05-14T14:24:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Bangladesh to host tour by Zimbabwe ‘A’ next month",
+      "link": "https://mutapatimes.com/articles/2026-05-14-bangladesh-to-host-tour-by-zimbabwe-a-next-month",
+      "image": "https://www.mutapatimes.com/img/cards/news/1fcb1ca12daa.png",
+      "pubDate": "2026-05-14T14:17:11+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Bangladesh to host tour by Zimbabwe ‘A’ next month",
+      "link": "https://mutapatimes.com/news/2026-05-14-bangladesh-to-host-tour-by-zimbabwe-a-next-month-fa2293",
+      "image": "https://www.mutapatimes.com/img/cards/news/da518b81b785.png",
+      "pubDate": "2026-05-14T14:17:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Watch: Phathisani Sibanda Buys Brand-New Toyota Fortuner for US$100 After Zimpapers Gift Ban",
+      "link": "https://mutapatimes.com/articles/2026-05-14-watch-phathisani-sibanda-buys-brand-new-toyota-fortuner-for",
+      "image": "https://www.mutapatimes.com/img/cards/news/22ed80c30d2f.png",
+      "pubDate": "2026-05-14T14:13:30+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "ZIFA Suspends Three Match Officials Over Alleged Conduct Breaches",
+      "link": "https://mutapatimes.com/articles/2026-05-14-zifa-suspends-three-match-officials-over-alleged-conduct-bre",
+      "image": "https://www.mutapatimes.com/img/cards/news/e3fdb726718b.png",
+      "pubDate": "2026-05-14T14:12:04+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "ZIFA Suspends Three Match Officials Over Alleged Conduct Breaches",
+      "link": "https://mutapatimes.com/news/2026-05-14-zifa-suspends-three-match-officials-over-alleged-conduct-bre-ed7d6a",
+      "image": "https://www.mutapatimes.com/img/cards/news/54931d52aab8.png",
+      "pubDate": "2026-05-14T14:12:04+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Justice Gwaunza Makes History as New Chief Justice",
+      "link": "https://mutapatimes.com/news/2026-05-14-justice-gwaunza-makes-history-as-new-chief-justice-2d1de9",
+      "image": "https://www.mutapatimes.com/img/cards/news/7066db37d92a.png",
+      "pubDate": "2026-05-14T14:07:58+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -368,118 +480,6 @@
       "link": "https://mutapatimes.com/news/2026-05-14-the-scholarship-trap-the-dark-syndicate-luring-zimbabwean-st-f720c8",
       "image": "https://www.mutapatimes.com/img/cards/news/5d24c97546af.png",
       "pubDate": "2026-05-14T09:40:02+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Govt Defends Transport Liberalisation Amid Urban Commuter Woes",
-      "link": "https://mutapatimes.com/news/2026-05-14-govt-defends-transport-liberalisation-amid-urban-commuter-wo-180c33",
-      "image": "https://www.mutapatimes.com/img/cards/news/79755f7e33a9.png",
-      "pubDate": "2026-05-14T09:21:09+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Police Arrest A Bogus Army General",
-      "link": "https://mutapatimes.com/news/2026-05-14-zimbabwe-police-arrest-a-bogus-army-general-2dcfa0",
-      "image": "https://www.mutapatimes.com/img/cards/news/b2a7aaba9894.png",
-      "pubDate": "2026-05-14T09:17:43+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "ZimPost to Go High-Tech with AI, Smart Offices and Drone Deliveries",
-      "link": "https://mutapatimes.com/news/2026-05-14-zimpost-to-go-high-tech-with-ai-smart-offices-and-drone-deli-183df7",
-      "image": "https://www.mutapatimes.com/img/cards/news/338858da0269.png",
-      "pubDate": "2026-05-14T09:08:03+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Attorney General insists CAB3 referendum an ‘unconstitutional demand’",
-      "link": "https://mutapatimes.com/articles/2026-05-14-attorney-general-insists-cab3-referendum-an-unconstitutional",
-      "image": "https://www.mutapatimes.com/img/cards/news/a82040b47a73.png",
-      "pubDate": "2026-05-14T08:29:06+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Attorney General insists CAB3 referendum an ‘unconstitutional demand’",
-      "link": "https://mutapatimes.com/news/2026-05-14-attorney-general-insists-cab3-referendum-an-unconstitutional-3cd11d",
-      "image": "https://www.mutapatimes.com/img/cards/news/c0ed64e16711.png",
-      "pubDate": "2026-05-14T08:29:06+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Republic Police’s Most Wanted Woman: The $155,000 Hezy Motors Scam and the Hunt for Hazel Mafu",
-      "link": "https://mutapatimes.com/news/2026-05-14-zimbabwe-republic-police-s-most-wanted-woman-the-155-000-hez-7e3eb0",
-      "image": "https://www.mutapatimes.com/img/cards/news/a9df9348ae6e.png",
-      "pubDate": "2026-05-14T08:17:07+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Beyond the numbers: Teenage pregnancy in Mbire and the national crisis beyond the statistics",
-      "link": "https://mutapatimes.com/articles/2026-05-14-beyond-the-numbers-teenage-pregnancy-in-mbire-and-the-nation",
-      "image": "https://www.mutapatimes.com/img/cards/news/7f0532976e77.png",
-      "pubDate": "2026-05-14T08:05:21+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Beyond the numbers: Teenage pregnancy in Mbire and the national crisis beyond the statistics",
-      "link": "https://mutapatimes.com/news/2026-05-14-beyond-the-numbers-teenage-pregnancy-in-mbire-and-the-nation-95cf52",
-      "image": "https://www.mutapatimes.com/img/cards/news/f35c646dd0a8.png",
-      "pubDate": "2026-05-14T08:05:21+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
-      "link": "https://mutapatimes.com/articles/2026-05-14-henkel-ventures-co-leads-rukas-4-5m-round",
-      "image": "https://www.mutapatimes.com/img/cards/news/74d7981d6c1c.png",
-      "pubDate": "2026-05-14T08:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
-      "link": "https://mutapatimes.com/articles/2026-05-14-henkel-ventures-co-leads-rukas-45m-round",
-      "image": "https://www.mutapatimes.com/img/cards/news/240c15e40873.png",
-      "pubDate": "2026-05-14T08:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Henkel Ventures co-leads Ruka's $4.5m round",
-      "link": "https://mutapatimes.com/news/2026-05-14-henkel-ventures-co-leads-ruka-s-4-5m-round-635ad2",
-      "image": "https://www.mutapatimes.com/img/cards/news/87283df08779.png",
-      "pubDate": "2026-05-14T08:00:00+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Anymore Zvitsva’s SHOCKING CONFESSIONS: How the Guruve murderer brutally raped and killed his victims",
-      "link": "https://mutapatimes.com/news/2026-05-14-anymore-zvitsva-s-shocking-confessions-how-the-guruve-murder-11d7d1",
-      "image": "https://www.mutapatimes.com/img/cards/news/0f2a5c9a42b7.png",
-      "pubDate": "2026-05-14T07:11:11+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "The Catholic Church opposes the Constitutional Amendment Bill No. 3",
-      "link": "https://mutapatimes.com/articles/2026-05-14-the-catholic-church-opposes-the-constitutional-amendment-bil",
-      "image": "https://www.mutapatimes.com/img/cards/news/5d429968695a.png",
-      "pubDate": "2026-05-14T07:05:04+00:00",
-      "category": "Policy"
-    },
-    {
-      "kind": "news",
-      "title": "The Catholic Church opposes the Constitutional Amendment Bill No. 3",
-      "link": "https://mutapatimes.com/news/2026-05-14-the-catholic-church-opposes-the-constitutional-amendment-bil-10b04c",
-      "image": "https://www.mutapatimes.com/img/cards/news/3483bf7601fc.png",
-      "pubDate": "2026-05-14T07:05:04+00:00",
       "category": "News"
     }
   ]
