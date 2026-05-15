@@ -1856,10 +1856,16 @@ function renderSpotlightStories(articles) {
     return;
   }
 
-  // Reputable sources first; if under 3, allow unverified business articles
-  var reputable = articles.filter(function(a) { return isReputableSource(a.source); });
-  var rest = articles.filter(function(a) { return !isReputableSource(a.source) && inferCategory(a.title) === "Business"; });
-  articles = reputable.concat(rest).slice(0, 3);
+  // CMS-promoted originals (cms: true) always win a slot - the editor
+  // explicitly decided this should be in spotlight. Then reputable wire
+  // sources. Then unverified Business stories as a last-resort filler.
+  // Final cap is three.
+  var cmsArts = articles.filter(function(a) { return a.cms === true; });
+  var reputable = articles.filter(function(a) { return !a.cms && isReputableSource(a.source); });
+  var rest = articles.filter(function(a) {
+    return !a.cms && !isReputableSource(a.source) && inferCategory(a.title) === "Business";
+  });
+  articles = cmsArts.concat(reputable).concat(rest).slice(0, 3);
   if (articles.length === 0) {
     container.html('<p class="loading-msg">No spotlight stories available.</p>');
     return;
