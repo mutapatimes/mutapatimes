@@ -1131,6 +1131,19 @@ def update_archive(new_articles):
 _BANNED_CATEGORY_KEYWORDS = {
     "Crime": ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"],
     "Politics": ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"],
+    # Road-fatality coverage is off the editorial menu (same logic as Crime).
+    # Phrase-based to avoid false positives on "Crash Game" / "stock crash".
+    "Accidents": [
+        "road crash", "bus crash", "horror crash", "fatal crash", "deadly crash",
+        "horror road", "road accident", "bus accident", "horror accident",
+        "fatal accident", "head-on collision", "head on collision",
+        "killed in crash", "killed in a crash", "killed in accident",
+        "killed in an accident", "killed in collision", "killed in road",
+        "killed in a road", "perish in road", "perish in crash",
+        "road fatalities", "road fatality", "bus overturn", "fatal collision",
+        "highway crash", "highway accident", "minibus crash", "kombi crash",
+        "kombi accident", "truck collision", "truck plunge",
+    ],
 }
 
 _CMS_CATEGORY_RULES = [
