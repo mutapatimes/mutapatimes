@@ -414,6 +414,7 @@ function loadCmsArticles(callback) {
           success: function(raw) {
             var parsed = parseCmsFrontmatter(raw);
             if (parsed.meta.title) {
+              if (parsed.meta.draft && String(parsed.meta.draft).toLowerCase() === "true") return;
               var isWire = parsed.meta.source_type === "wire" || !!parsed.meta.source_url;
               articles.push({
                 title: parsed.meta.title,
@@ -456,6 +457,7 @@ function loadCmsArticles(callback) {
               success: function(raw) {
                 var parsed = parseCmsFrontmatter(raw);
                 if (parsed.meta.title) {
+                  if (parsed.meta.draft && String(parsed.meta.draft).toLowerCase() === "true") return;
                   var isWire = parsed.meta.source_type === "wire" || !!parsed.meta.source_url;
                   articles.push({
                     title: parsed.meta.title,
@@ -507,7 +509,7 @@ function parseCmsFrontmatter(raw) {
 // MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
 function loadMainStories() {
-  var cacheKey = "main_all";
+  var cacheKey = "main_all_v2";
   var cached = getCache(cacheKey);
   if (cached) {
     _allMainArticles = cached;
