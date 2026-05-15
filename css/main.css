@@ -8455,3 +8455,48 @@ body.longform-page .topbar {
 @media (max-width: 800px) {
   .feature-story-banner--compact .feature-story-card { grid-template-columns: 1fr; }
 }
+
+/* ─── Masthead chrome cleanup ──────────────────────────────────────
+   The triple Oxford rule + date strip at the top added visual
+   weight that pushed content below the fold. Hide them globally;
+   the date / updated / Zimbabwe-time info now lives in a quiet
+   line at the foot of the page (see .atlantic-foot-datestamp). */
+.topHr, .bottomHr, .dateHr { display: none; }
+.aboutTitle { display: none; }
+
+/* Quiet date stamp in the footer. JS populates .date / .vol /
+   .price spans wherever they appear, so moving the markup is
+   enough; this just gives the line a measured colophon-style. */
+.atlantic-foot-datestamp {
+  margin: 22px 0 6px;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(245, 232, 200, 0.55);
+}
+.atlantic-foot-datestamp .sep {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+.atlantic-foot-datestamp span:empty {
+  display: none;
+}
+.atlantic-foot-datestamp span:empty + .sep {
+  display: none;
+}
+
+/* Story rail fills the container width on screens wide enough for
+   the chips not to overflow. justify-content kicks in only when
+   there's slack; when the chips overflow the rail still scrolls
+   horizontally as before. */
+.stories-rail-inner {
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  /* On narrow viewports keep the chips packed left so they read as
+     a horizontal scroll-able row, not stretched apart. */
+  .stories-rail-inner { justify-content: flex-start; }
+}
