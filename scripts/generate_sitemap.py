@@ -27,7 +27,7 @@ STATIC_PAGES = [
     ("links", 0.7, "daily"),
     ("authors/", 0.8, "weekly"),
     ("about", 0.7, "monthly"),
-    ("advertising", 0.6, "monthly"),
+    ("advertising", 0.85, "weekly"),
     ("privacy", 0.3, "yearly"),
     ("terms", 0.3, "yearly"),
 ]
