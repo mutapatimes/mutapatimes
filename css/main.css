@@ -8775,7 +8775,7 @@ body.longform-page .topbar {
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 14px;
 }
 .author-page-bio {
@@ -8868,7 +8868,7 @@ body.longform-page .topbar {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
 }
 .author-archive-card-title {
   font-family: 'Playfair Display', Georgia, serif;
@@ -8937,8 +8937,8 @@ body.longform-page .topbar {
 .ratecard-hero {
   position: relative;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(193,150,87,0.22), transparent 60%),
-    radial-gradient(ellipse at 75% 80%, rgba(193,150,87,0.10), transparent 55%),
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.04), transparent 60%),
+    radial-gradient(ellipse at 75% 80%, rgba(255,255,255,0.02), transparent 55%),
     #0e0e0e;
   color: #fff;
   padding: 140px 24px 120px;
@@ -8962,7 +8962,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 24px;
 }
 .ratecard-hero-title {
@@ -8997,7 +8997,7 @@ body.longform-page .topbar {
 .ratecard-imprint-cta {
   display: inline-block;
   padding: 16px 36px;
-  background: #c19657;
+  background: #111;
   color: #0e0e0e;
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
@@ -9005,7 +9005,7 @@ body.longform-page .topbar {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid #c19657;
+  border: 1px solid #111;
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 .ratecard-hero-cta:hover,
@@ -9013,8 +9013,8 @@ body.longform-page .topbar {
 .ratecard-package-cta:hover,
 .ratecard-patronage-cta:hover,
 .ratecard-imprint-cta:hover {
-  background: #d6a96b;
-  border-color: #d6a96b;
+  background: #333;
+  border-color: #333;
   color: #0e0e0e;
   transform: translateY(-1px);
 }
@@ -9054,7 +9054,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 18px;
 }
 .ratecard-section-title {
@@ -9139,14 +9139,14 @@ body.longform-page .topbar {
 .ratecard-geo-bar {
   flex: 1;
   height: 6px;
-  background: #f3eee3;
+  background: #eee;
   border-radius: 3px;
   overflow: hidden;
 }
 .ratecard-geo-bar-fill {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, #c19657, #d6a96b);
+  background: linear-gradient(90deg, #111, #333);
   transform-origin: left;
   animation: ratecardBarIn 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -9175,7 +9175,7 @@ body.longform-page .topbar {
 /* ───── Promise — dark band ───── */
 .ratecard-promise {
   background:
-    radial-gradient(ellipse at 40% 0%, rgba(193,150,87,0.15), transparent 55%),
+    radial-gradient(ellipse at 40% 0%, rgba(255,255,255,0.04), transparent 55%),
     #141414;
   color: #fff;
   padding: 130px 24px;
@@ -9190,7 +9190,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 22px;
 }
 .ratecard-promise-title {
@@ -9224,16 +9224,16 @@ body.longform-page .topbar {
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .ratecard-format:hover {
-  border-color: #c19657;
+  border-color: #111;
   transform: translateY(-2px);
   box-shadow: 0 18px 50px rgba(0,0,0,0.06);
 }
 .ratecard-format--hero {
-  background: linear-gradient(180deg, #0e0e0e 0%, #1c1610 100%);
+  background: #0e0e0e;
   border-color: #0e0e0e;
   color: #fff;
 }
-.ratecard-format--hero:hover { border-color: #c19657; }
+.ratecard-format--hero:hover { border-color: #111; }
 .ratecard-format--hero .ratecard-format-name,
 .ratecard-format--hero .ratecard-format-price {
   color: #fff;
@@ -9248,8 +9248,8 @@ body.longform-page .topbar {
   color: rgba(255,255,255,0.65);
 }
 .ratecard-format--hero .ratecard-format-unit a {
-  color: #c19657;
-  border-bottom: 1px solid rgba(193,150,87,0.6);
+  color: #111;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
   padding-bottom: 1px;
   text-decoration: none;
 }
@@ -9258,7 +9258,7 @@ body.longform-page .topbar {
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0;
 }
 .ratecard-format-name {
@@ -9312,8 +9312,8 @@ body.longform-page .topbar {
 /* ───── Patronage — featured month-long block ───── */
 .ratecard-patronage {
   background:
-    radial-gradient(ellipse at 80% 30%, rgba(193,150,87,0.18), transparent 55%),
-    linear-gradient(180deg, #f6efe1 0%, #f1ebdb 100%);
+    radial-gradient(ellipse at 80% 30%, rgba(0,0,0,0.04), transparent 55%),
+    #f5f2eb;
   padding: 110px 24px 90px;
   scroll-margin-top: 80px;
 }
@@ -9330,7 +9330,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #8d6a2e;
+  color: #666;
   margin: 0 0 16px;
 }
 .ratecard-patronage-title {
@@ -9338,7 +9338,7 @@ body.longform-page .topbar {
   font-weight: 900;
   font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1.0;
-  color: #2a1f0f;
+  color: #111;
   margin: 0 0 22px;
 }
 .ratecard-patronage-deck {
@@ -9346,14 +9346,14 @@ body.longform-page .topbar {
   font-style: italic;
   font-size: 1.15rem;
   line-height: 1.5;
-  color: #574328;
+  color: #444;
   margin: 0 0 36px;
 }
 .ratecard-patronage-price {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 2.8rem;
   font-weight: 700;
-  color: #2a1f0f;
+  color: #111;
   margin: 0 0 28px;
   line-height: 1;
 }
@@ -9363,7 +9363,7 @@ body.longform-page .topbar {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8d7a52;
+  color: #888;
   font-weight: 400;
   margin-bottom: 6px;
 }
@@ -9372,18 +9372,18 @@ body.longform-page .topbar {
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.06em;
-  color: #8d7a52;
+  color: #888;
   font-weight: 400;
   margin-top: 6px;
 }
 .ratecard-patronage-cta {
-  background: #2a1f0f;
-  border-color: #2a1f0f;
+  background: #111;
+  border-color: #111;
   color: #fff;
 }
 .ratecard-patronage-cta:hover {
-  background: #3b2d18;
-  border-color: #3b2d18;
+  background: #222;
+  border-color: #222;
   color: #fff;
 }
 
@@ -9397,7 +9397,7 @@ body.longform-page .topbar {
   counter-increment: weeks;
   position: relative;
   padding: 22px 0 22px 70px;
-  border-bottom: 1px solid rgba(141,106,46,0.22);
+  border-bottom: 1px solid rgba(0,0,0,0.10);
 }
 .ratecard-patronage-weeks li:last-child { border-bottom: 0; }
 .ratecard-patronage-weeks li::before {
@@ -9408,7 +9408,7 @@ body.longform-page .topbar {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 2.2rem;
   font-weight: 700;
-  color: #c19657;
+  color: #111;
   line-height: 1;
 }
 .ratecard-patronage-weeks h4 {
@@ -9417,13 +9417,13 @@ body.longform-page .topbar {
   font-size: 1.25rem;
   line-height: 1.2;
   margin: 0 0 8px;
-  color: #2a1f0f;
+  color: #111;
 }
 .ratecard-patronage-weeks p {
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   line-height: 1.55;
-  color: #4d3f24;
+  color: #444;
   margin: 0;
 }
 
@@ -9432,7 +9432,7 @@ body.longform-page .topbar {
   margin: 60px auto 0;
   padding: 28px 32px;
   background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(141,106,46,0.18);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 2px;
 }
 .ratecard-patronage-extras-label {
@@ -9440,7 +9440,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8d6a2e;
+  color: #666;
   margin: 0 0 16px;
 }
 .ratecard-patronage-extras ul {
@@ -9452,11 +9452,11 @@ body.longform-page .topbar {
   gap: 10px 28px;
   font-family: 'Inter', sans-serif;
   font-size: 0.93rem;
-  color: #3d2f1a;
+  color: #333;
 }
 .ratecard-patronage-extras li::before {
   content: "—  ";
-  color: #c19657;
+  color: #111;
 }
 
 /* ───── Packages (Silver / Gold / Platinum analog) ───── */
@@ -9486,7 +9486,7 @@ body.longform-page .topbar {
   font-size: 0.68rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 18px;
 }
 .ratecard-package-name {
@@ -9538,7 +9538,7 @@ body.longform-page .topbar {
 .ratecard-package-list li:last-child { border-bottom: 0; }
 .ratecard-package-list li::before {
   content: "—  ";
-  color: #c19657;
+  color: #111;
 }
 .ratecard-package-cta {
   align-self: flex-start;
@@ -9557,7 +9557,7 @@ body.longform-page .topbar {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 30%, rgba(193,150,87,0.16), transparent 60%);
+    radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.04), transparent 60%);
   pointer-events: none;
 }
 .ratecard-imprint-inner {
@@ -9570,7 +9570,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 22px;
 }
 .ratecard-imprint-title {
@@ -9591,7 +9591,7 @@ body.longform-page .topbar {
 .ratecard-imprint-price {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.4rem;
-  color: #c19657;
+  color: #111;
   margin: 0 0 32px;
   letter-spacing: 0.02em;
 }
@@ -9616,7 +9616,7 @@ body.longform-page .topbar {
   justify-content: space-between;
 }
 .ratecard-case:hover {
-  border-color: #c19657;
+  border-color: #111;
   transform: translateY(-2px);
 }
 .ratecard-case-cat {
@@ -9624,7 +9624,7 @@ body.longform-page .topbar {
   font-size: 0.68rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
 }
 .ratecard-case-title {
   font-family: 'Playfair Display', Georgia, serif;
@@ -9655,7 +9655,7 @@ body.longform-page .topbar {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #c19657;
+  color: #111;
   margin: 0 0 22px;
 }
 .ratecard-conversation-title {
@@ -9738,4 +9738,87 @@ body.longform-page .topbar {
   .ratecard-patronage-extras { padding: 22px 20px; }
   .ratecard-format { padding: 28px; }
   .ratecard-package { padding: 36px 28px; }
+}
+
+/* ───── Rate card — private-link lock ───── */
+/* Default: <body class="rates-locked"> hides prices, shows top banner.
+   Unlock via URL ?key=anything — flips to <body class="rates-unlocked">. */
+
+.ratecard-lock-banner {
+  background: #0e0e0e;
+  color: #fff;
+  padding: 18px 24px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+.ratecard-lock-banner-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+.ratecard-lock-banner strong {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.ratecard-lock-banner a {
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 1px;
+  text-decoration: none;
+  margin-left: 6px;
+  transition: border-color 0.18s ease;
+}
+.ratecard-lock-banner a:hover {
+  border-bottom-color: #fff;
+}
+body.rates-unlocked .ratecard-lock-banner { display: none; }
+
+/* Hide every price element when the rate card is locked. */
+body.rates-locked .ratecard-format-price,
+body.rates-locked .ratecard-format-unit,
+body.rates-locked .ratecard-format-meta,
+body.rates-locked .ratecard-package-price,
+body.rates-locked .ratecard-patronage-price,
+body.rates-locked .ratecard-patronage-price-unit {
+  display: none;
+}
+
+/* Show a small inline "On request" tag in the format card foot, in
+   place of the hidden price meta. Keeps the cards from collapsing. */
+body.rates-locked .ratecard-format::after,
+body.rates-locked .ratecard-package::after {
+  content: "Rate on request";
+  display: inline-block;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #eee;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #888;
+  width: 100%;
+}
+body.rates-locked .ratecard-package--featured::after {
+  border-top-color: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
+}
+body.rates-locked .ratecard-format--hero::after {
+  border-top-color: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
+}
+
+/* Patronage block: show a soft locked note in place of the price slab. */
+body.rates-locked .ratecard-patronage-left::after {
+  content: "Rate on request — email the editor";
+  display: block;
+  margin: 0 0 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #555;
 }

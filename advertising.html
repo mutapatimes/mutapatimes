@@ -42,10 +42,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=85">
+    <link rel="stylesheet" href="css/main.css?v=86">
   </head>
 
-  <body>
+  <body class="rates-locked">
+  <script>
+    // Run immediately (before paint) so the locked/unlocked state is correct
+    // on first render. Unlocks when ?key=... is in the URL or the visitor
+    // has unlocked previously on this device.
+    (function () {
+      try {
+        var p = new URLSearchParams(window.location.search);
+        if (p.has('key') || localStorage.getItem('mutapa_rates_unlocked') === '1') {
+          document.body.classList.remove('rates-locked');
+          document.body.classList.add('rates-unlocked');
+          try { localStorage.setItem('mutapa_rates_unlocked', '1'); } catch (e) {}
+        }
+      } catch (e) {}
+    })();
+  </script>
 <div class="topbar" id="topbar" aria-label="Sticky navigation">
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -125,6 +140,15 @@
 
       <article class="ratecard">
 
+        <!-- LOCK BANNER — visible only when body lacks .rates-unlocked -->
+        <aside class="ratecard-lock-banner" aria-label="Rate card access">
+          <div class="ratecard-lock-banner-inner">
+            <strong>Rate card by private request.</strong>
+            We share specifics by introduction.
+            <a href="mailto:v.eluwasi@gmail.com?subject=Mutapa%20Times%20%E2%80%94%20Rate%20card%20request">Request access &rarr;</a>
+          </div>
+        </aside>
+
         <!-- HERO -->
         <header class="ratecard-hero" data-reveal>
           <div class="ratecard-hero-inner">
@@ -141,7 +165,7 @@
               <a class="ratecard-hero-cta" href="#patronage">See the Patronage</a>
               <a class="ratecard-hero-cta ratecard-hero-cta--ghost" href="#advertContact">Begin a conversation</a>
             </div>
-            <p class="ratecard-hero-foot">Founders pricing locked through Q4 2026.</p>
+            <p class="ratecard-hero-foot">Published 2026. By private request.</p>
           </div>
         </header>
 
@@ -267,7 +291,7 @@
                 hero, drop cap, scroll-reveal, share rails.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;2,000</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;750</p>
                 <p class="ratecard-format-unit">per story</p>
               </div>
             </article>
@@ -283,7 +307,7 @@
                 publication days.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;5,500</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;2,000</p>
                 <p class="ratecard-format-unit">per three-part run</p>
               </div>
             </article>
@@ -300,7 +324,7 @@
                 deck asks for.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;18,500</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;4,500</p>
                 <p class="ratecard-format-unit">per month · <a href="#patronage">see anatomy &rarr;</a></p>
               </div>
             </article>
@@ -315,7 +339,7 @@
                 the fold, one below the lead story.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;1,200</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;300</p>
                 <p class="ratecard-format-unit">per send</p>
               </div>
             </article>
@@ -330,7 +354,7 @@
                 intent readers.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;3,500</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;750</p>
                 <p class="ratecard-format-unit">per edition</p>
               </div>
             </article>
@@ -345,7 +369,7 @@
                 every page of the site for the week of the buy.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;1,500</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;350</p>
                 <p class="ratecard-format-unit">per week</p>
               </div>
             </article>
@@ -360,7 +384,7 @@
                 Editorial in feel, never a banner.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;950</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;300</p>
                 <p class="ratecard-format-unit">per section · per month</p>
               </div>
             </article>
@@ -375,7 +399,7 @@
                 page loads.
               </p>
               <div class="ratecard-format-meta">
-                <p class="ratecard-format-price"><small>From</small>&pound;2,500</p>
+                <p class="ratecard-format-price"><small>From</small>&pound;500</p>
                 <p class="ratecard-format-unit">per week</p>
               </div>
             </article>
@@ -396,7 +420,7 @@
                 Zimbabwe coverage.
               </p>
               <p class="ratecard-patronage-price">
-                <small>From</small>&pound;18,500
+                <small>From</small>&pound;4,500
                 <span class="ratecard-patronage-price-unit">per month</span>
               </p>
               <a href="#advertContact" class="ratecard-patronage-cta">Plan a Patronage &rarr;</a>
@@ -477,7 +501,7 @@
             <article class="ratecard-package">
               <p class="ratecard-package-tag">For the test</p>
               <h3 class="ratecard-package-name">The Briefing Tier</h3>
-              <p class="ratecard-package-price">&pound;4,500</p>
+              <p class="ratecard-package-price">&pound;1,200</p>
               <ul class="ratecard-package-list">
                 <li>4 newsletter sponsor slots</li>
                 <li>1 month of editorial strip on one section</li>
@@ -490,7 +514,7 @@
             <article class="ratecard-package ratecard-package--featured">
               <p class="ratecard-package-tag">Most popular</p>
               <h3 class="ratecard-package-name">The Patron Tier</h3>
-              <p class="ratecard-package-price">&pound;12,500</p>
+              <p class="ratecard-package-price">&pound;3,500</p>
               <ul class="ratecard-package-list">
                 <li>2 long-form sponsored stories</li>
                 <li>2 months of editorial strip on one section</li>
@@ -505,14 +529,14 @@
             <article class="ratecard-package">
               <p class="ratecard-package-tag">For the year</p>
               <h3 class="ratecard-package-name">The Founding Partner</h3>
-              <p class="ratecard-package-price">&pound;35,000<small>/ quarter</small></p>
+              <p class="ratecard-package-price">&pound;15,000<small>/ year</small></p>
               <ul class="ratecard-package-list">
-                <li>1 month-long Patronage campaign</li>
+                <li>2 month-long Patronage campaigns</li>
                 <li>1 three-part sponsored series</li>
-                <li>3 newsletter takeovers</li>
-                <li>3 months of editorial strip on two sections</li>
+                <li>4 newsletter sponsor slots</li>
+                <li>6 months of editorial strip on one section</li>
                 <li>First-call on Mutapa Roundtables</li>
-                <li>Quarterly delivery review with the editor</li>
+                <li>Twice-yearly delivery review with the editor</li>
               </ul>
               <a class="ratecard-package-cta" href="#advertContact">Begin &rarr;</a>
             </article>
@@ -533,7 +557,7 @@
               right of first refusal on landmark editorial &mdash; we
               build The Imprint bespoke.
             </p>
-            <p class="ratecard-imprint-price">From &pound;100,000 per year</p>
+            <p class="ratecard-imprint-price">By invitation &middot; price on request</p>
             <a href="#advertContact" class="ratecard-imprint-cta">Talk to the editor &rarr;</a>
           </div>
         </section>
@@ -587,8 +611,8 @@
             </a>
           </div>
           <p class="ratecard-conversation-fine">
-            Founders pricing locked through Q4 2026. Rates lift in step
-            with audience growth thereafter.
+            Every campaign is a conversation, not a checkout. Rates
+            review annually.
           </p>
         </section>
 
