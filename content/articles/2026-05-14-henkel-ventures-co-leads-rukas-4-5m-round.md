@@ -9,6 +9,8 @@ featured: true
 headline_position: 1
 source_type: original
 spotlight: true
+spotlight_title: "The Apple of haircare gets its German cheque"
+spotlight_image: /img/uploads/ruka-launch/media/ruka-means.png
 longform: true
 feature_story: true
 read_minutes: 10

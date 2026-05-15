@@ -66,8 +66,13 @@ def find_feature():
         "longform": fm.get("longform", "").lower() == "true",
         "read_minutes": fm.get("read_minutes", ""),
         "url": f"/articles/{slug}",
+        "spotlight_title": fm.get("spotlight_title", ""),
+        "spotlight_image": fm.get("spotlight_image", ""),
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00"),
     }
+
+
+SPOTLIGHT_CAP = 3  # Always keep the spotlight rail at three stories.
 
 
 def pin_to_spotlight(feature):
@@ -78,11 +83,13 @@ def pin_to_spotlight(feature):
     except (IOError, json.JSONDecodeError):
         return
     feature_url_query = f"article.html?slug={feature['slug']}"
+    # If alternate spotlight title/image are set on the article, use them
+    # so the rail doesn't visually duplicate the Feature Story banner.
     feature_entry = {
-        "title": feature["title"],
+        "title": feature.get("spotlight_title") or feature["title"],
         "description": feature["summary"],
         "url": feature_url_query,
-        "image": feature["image"],
+        "image": feature.get("spotlight_image") or feature["image"],
         "publishedAt": feature["date"],
         "source": "The Mutapa Times",
         "cms": True,
@@ -93,10 +100,18 @@ def pin_to_spotlight(feature):
         items = [e for e in items if not (isinstance(e, dict) and feature_url_query in str(e.get("url", "")))]
         if bucket == "articles":
             items = [feature_entry] + items
+            # Hard-cap the visible spotlight rail at three stories. The
+            # rest move into the 'more' bucket so they stay reachable
+            # from the news landing pages but don't crowd the top rail.
+            overflow = items[SPOTLIGHT_CAP:]
+            items = items[:SPOTLIGHT_CAP]
+            if overflow:
+                data["more"] = overflow + (data.get("more") or [])
         data[bucket] = items
     with open(SPOTLIGHT_JSON, "w") as f:
         json.dump(data, f, separators=(",", ":"))
     print(f"  pinned to top of spotlight.json: {feature['slug']}")
+    print(f"  spotlight capped at {SPOTLIGHT_CAP} stories")
 
 
 def main():

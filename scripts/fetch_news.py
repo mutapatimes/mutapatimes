@@ -422,14 +422,18 @@ def get_cms_spotlight_articles():
             continue
 
         slug = os.path.basename(filepath).replace('.md', '')
+        # Honour the alternate spotlight title + image if set in
+        # frontmatter (so the rail doesn't duplicate the Feature Story
+        # banner). Mark feature_story so the sort below puts it first.
         articles.append({
-            "title": meta.get('title', ''),
+            "title": meta.get('spotlight_title') or meta.get('title', ''),
             "description": meta.get('summary', ''),
             "url": "article.html?slug=" + slug,
-            "image": meta.get('image', ''),
+            "image": meta.get('spotlight_image') or meta.get('image', ''),
             "publishedAt": meta.get('date', ''),
             "source": "The Mutapa Times",
             "cms": True,
+            "feature_story": meta.get('feature_story', '').lower() == 'true',
         })
         print(f"  CMS spotlight: {meta.get('title', filepath)}")
     return articles
@@ -1028,16 +1032,34 @@ def fetch_spotlight():
     if dropped:
         print(f"  Filtered {dropped} articles missing images out of spotlight")
 
-    # Reputable sources for main spotlight; overflow reputable + non-reputable for green section
-    spotlight = reputable_with_images[:3]
-    overflow_reputable = reputable_with_images[3:18]  # extra reputable articles beyond top 3
-    more = others_with_images[:15] if others_with_images else overflow_reputable[:15]
-
-    # Inject CMS-promoted articles into the green spotlight section
+    # Spotlight rail is capped at three. CMS-flagged originals get the
+    # top slots; reputable wires fill the remainder. Anything else
+    # (extra CMS items, extra reputable wires, non-reputable) drops to
+    # the green 'more' section below.
+    SPOTLIGHT_CAP = 3
     cms_spotlight = get_cms_spotlight_articles()
-    if cms_spotlight:
-        cms_urls = {c["url"] for c in cms_spotlight}
-        more = cms_spotlight + [a for a in more if a.get("url") not in cms_urls]
+
+    # Sort CMS spotlight: feature_story first, then by publishedAt desc.
+    def _cms_sort_key(a):
+        try:
+            from datetime import datetime as _dt
+            d = a.get("publishedAt", "")
+            ts = _dt.fromisoformat(d.replace("Z", "+00:00")).timestamp() if d else 0
+        except Exception:
+            ts = 0
+        return (not a.get("feature_story"), -ts)
+    cms_spotlight = sorted(cms_spotlight, key=_cms_sort_key)
+
+    spotlight = cms_spotlight[:SPOTLIGHT_CAP]
+    remaining = SPOTLIGHT_CAP - len(spotlight)
+    cms_urls = {c.get("url") for c in cms_spotlight}
+    if remaining > 0:
+        wire_picks = [a for a in reputable_with_images if a.get("url") not in cms_urls][:remaining]
+        spotlight = spotlight + wire_picks
+
+    cms_overflow = cms_spotlight[SPOTLIGHT_CAP:]
+    overflow_reputable = [a for a in reputable_with_images if a.get("url") not in {s.get("url") for s in spotlight}][:18]
+    more = cms_overflow + (others_with_images[:15] if others_with_images else overflow_reputable[:15])
 
     if not spotlight:
         print("  WARN: no reputable articles found — spotlight will be empty")
