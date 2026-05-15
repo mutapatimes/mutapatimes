@@ -7,22 +7,28 @@ media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
 collections:
-  # ─── ARTICLES ──────────────────────────────────────────────────
+  # ─── ARTICLES (originals + drafts) ─────────────────────────────
+  # content/articles/ holds ~3,700 markdown files in total (mostly
+  # auto-imported wire stories). Sveltia/Decap cannot load that many
+  # at once. This collection filters to original articles only, which
+  # keeps it under 100 entries and means drafts, featured pieces and
+  # the Feature Story of the Week are all reachable. The 'Wire stories'
+  # collection below holds the imported ones, on the rare occasion
+  # they need editing.
   - name: "articles"
     label: "Articles"
     label_singular: "Article"
     folder: "content/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
     sortable_fields: ["date", "title", "category", "featured"]
+    filter: { field: source_type, value: original }
     view_filters:
       - { label: "Drafts", field: "draft", pattern: true }
       - { label: "Feature Story", field: "feature_story", pattern: true }
       - { label: "Featured", field: "featured", pattern: true }
       - { label: "Spotlight", field: "spotlight", pattern: true }
-      - { label: "Original", field: "source_type", pattern: "original" }
-      - { label: "Wire", field: "source_type", pattern: "wire" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -63,6 +69,33 @@ collections:
       - { label: "Hero eyebrow", name: "hero_eyebrow", widget: "string", required: false, hint: "Small label above the longform headline (e.g. 'BUSINESS LONG READ')" }
       - { label: "Hero image credit", name: "hero_image_credit", widget: "string", required: false }
       - { label: "Read minutes", name: "read_minutes", widget: "string", required: false, hint: "Approx. read time, used by longform articles" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ─── WIRE STORIES (auto-imported) ─────────────────────────────
+  # The ~3,600 imported wire articles. Listed here so they're still
+  # editable when needed, but kept separate so the main Articles
+  # collection stays responsive. Do not create new entries here -
+  # fetch_news.py owns this folder.
+  - name: "wire_articles"
+    label: "Wire stories"
+    label_singular: "Wire story"
+    folder: "content/articles"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: ["date", "title", "category"]
+    filter: { field: source_type, value: wire }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Source URL", name: "source_url", widget: "string", required: false }
+      - { label: "Source Type", name: "source_type", widget: "hidden", default: "wire" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Spotlight", name: "spotlight", widget: "boolean", default: false, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   # ─── STATIC PAGES (About / Advertising / Privacy / Terms / Subscribe) ─
