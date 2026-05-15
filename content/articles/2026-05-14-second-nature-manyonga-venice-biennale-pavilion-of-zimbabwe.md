@@ -9,13 +9,13 @@ summary: A personal letter from Venice, written in the wake of the opening of
   the dignity of decay, the constellation of Zimbabwean excellence in the room
   on opening night, and on the proposition, borrowed from a friend, that there
   is therapy in beauty.
-featured: true
+featured: false
 headline_position: 0
 source_type: original
-spotlight: true
+spotlight: false
 feature_story: false
 draft: true
-longform: true
+longform: false
 hero_eyebrow: ESSAY · VENICE
 hero_image_credit: Photograph by 1925 Glen Norah
 read_minutes: Twelve
