@@ -1284,6 +1284,38 @@ function createShareGroup(title, url, articleData) {
 }
 
 // ============================================================
+// Feature Story ad - loaded once, rendered inline in the news grid
+// every 5 stories. Linked to the active Feature Story of the Week.
+// ============================================================
+var _featureAdData = null;
+var _featureAdLoaded = false;
+function loadFeatureStoryAd() {
+  if (_featureAdLoaded) return;
+  _featureAdLoaded = true;
+  $.getJSON('/data/feature-story.json').done(function (data) {
+    if (data && data.slug) _featureAdData = data;
+  });
+}
+loadFeatureStoryAd();
+
+function renderFeatureStoryAd() {
+  var d = _featureAdData;
+  if (!d || !d.slug) return null;
+  var ad = $('<aside class="feature-ad-banner">');
+  var link = $('<a class="feature-ad-link">').attr('href', d.url || ('/articles/' + d.slug));
+  if (d.image) link.css('background-image', 'url("' + d.image + '")');
+  var inner = $('<div class="feature-ad-inner">');
+  inner.append($('<div class="feature-ad-eyebrow">').text('Feature Story of the Week'));
+  inner.append($('<h2 class="feature-ad-title">').text(d.title || ''));
+  if (d.summary) inner.append($('<p class="feature-ad-summary">').text(d.summary.slice(0, 200)));
+  var cta = $('<div class="feature-ad-cta">').text('Read the story');
+  inner.append(cta);
+  link.append(inner);
+  ad.append(link);
+  return ad;
+}
+
+// ============================================================
 // RENDER: Main stories — single column layout
 // ============================================================
 function renderMainStories(articles) {
@@ -1415,6 +1447,15 @@ function renderMainStories(articles) {
       ph.append(imgWrap);
       ph.append($('<p class="break-caption">').text(breakData.caption));
       container.append(ph);
+    }
+
+    // Insert a full-bleed Feature Story ad every 5 articles on page 1.
+    // Uses the lead image + main headline (not the spotlight alt), so
+    // visitors who skipped the top-of-page feature card get a second
+    // and third chance to dive in.
+    if (_currentPage === 1 && rank % 5 === 0 && rank < 21) {
+      var ad = renderFeatureStoryAd();
+      if (ad) container.append(ad);
     }
   }
 
