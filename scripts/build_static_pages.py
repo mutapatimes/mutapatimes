@@ -165,7 +165,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=78">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=79">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -451,6 +451,7 @@ def page_footer(depth=1):
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
+  <script defer src="/js/feature-story.js?v=1"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{
@@ -732,6 +733,11 @@ def build_articles():
 
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")
+
+        # Feature Story of the Week — filled in by /js/feature-story.js
+        # at runtime against data/feature-story.json. Hidden if the
+        # current article is itself the feature.
+        html_parts.append(f'      <div id="feature-story-slot-rail" data-current-slug="{esc(slug)}"></div>')
 
         # More to read — 6 related articles, same category preferred
         related = _pick_related(related_index, slug, category, want=6)

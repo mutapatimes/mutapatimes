@@ -131,6 +131,8 @@
   function renderArticlesList() {
     var container = document.getElementById("articles-list");
     if (!container) return;
+    // The Feature Story banner is rendered by /js/feature-story.js into
+    // any #feature-story-slot element on the page.
     fetchLocalArticles(container);
   }
 

@@ -6,10 +6,11 @@ category: Business
 image: /img/uploads/ruka-launch/media/community.jpg
 summary: "Ruka, the London-based textured-hair company founded by Zimbabwean entrepreneur Varaidzo Tendai Moyo and her co-founder Ugorji Agbai, has closed a $4.5m round co-led by Henkel Ventures and Freedom Trail Capital. The deal, which takes lifetime funding to roughly $10m and brings one of the world's largest consumer-goods groups onto the cap table, is the most meaningful endorsement yet of a Zimbabwean diaspora-founded brand."
 featured: true
-headline_position: 0
+headline_position: 1
 source_type: original
 spotlight: true
 longform: true
+feature_story: true
 read_minutes: 10
 hero_eyebrow: "BUSINESS LONG READ"
 hero_image_credit: "Courtesy of Ruka Hair"

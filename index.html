@@ -41,7 +41,7 @@
 
     <link rel="preload" as="image" href="img/banner.webp" type="image/webp">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css?v=78">
+    <link rel="stylesheet" href="css/main.css?v=79">
     <meta name="title" content="The Mutapa Times">
 <meta name="description" content="An independent business and intelligence newspaper covering Zimbabwe from the outside in — foreign press, live financial data and original analysis for the diaspora.">
 <meta name="keywords" content="The Mutapa Times, newspaper, Zimbabwean, news, Zimbabwean diaspora, Harare, Bulawayo, Gweru, Zimbabwe, business, health, politics">
@@ -302,6 +302,9 @@
     </picture>
   </div>
 
+  <!-- Feature Story of the Week (rendered by js/feature-story.js if active) -->
+  <div id="feature-story-slot"></div>
+
   <!-- Spotlight — full width above grid -->
   <section class="spotlight-section">
     <h4 class="spotlight-header">Spotlight</h4>
@@ -309,6 +312,9 @@
       <p class="loading-msg">Fetching spotlight coverage&#8230;</p>
     </div>
   </section>
+
+  <!-- Mid-scroll feature reminder banner -->
+  <div id="feature-story-slot-mid"></div>
 
   <!-- Main layout: stories + sidebar -->
   <main>
@@ -577,6 +583,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script defer src="js/plugins.js"></script>
   <script defer src="js/config.js"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/feature-story.js?v=1"></script>
   <script defer src="js/stories.js"></script>
 
 <script>

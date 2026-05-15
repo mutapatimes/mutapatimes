@@ -1230,8 +1230,26 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
             continue
         if url in existing_urls:
             continue
+        # Never re-import our own published content from a Google News
+        # crawl. The RSS surfaces mutapatimes.com a few hours after we
+        # publish; without this guard, every original piece gets a wire
+        # duplicate with a broken 'Read original article' link.
+        url_lower = url.lower()
+        if 'mutapatimes.com' in url_lower or url_lower.startswith('article.html?') or url_lower.startswith('/article.html?'):
+            continue
         # Editorial filter: skip Crime + Politics beats entirely.
         if _is_banned_topic(title, desc):
+            continue
+        # Title-based dedupe: if a normalised version of this title
+        # already matches an existing original-source article, skip it.
+        # This catches cases where the URLs differ but the article is
+        # the same one we already have (e.g. '4.5m' -> '45m' slug drift).
+        def _norm_title(s):
+            import re as _re
+            return _re.sub(r'[^a-z0-9]+', '', (s or '').lower())
+        nt = _norm_title(title)
+        if nt and any(_norm_title(e.get('title','')) == nt and e.get('source_type') == 'original'
+                      for e in index if isinstance(e, dict)):
             continue
 
         # Parse date for slug and frontmatter

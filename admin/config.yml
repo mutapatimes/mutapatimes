@@ -18,6 +18,7 @@ collections:
     sortable_fields: ["date", "title", "category", "featured"]
     view_filters:
       - { label: "Drafts", field: "draft", pattern: true }
+      - { label: "Feature Story", field: "feature_story", pattern: true }
       - { label: "Featured", field: "featured", pattern: true }
       - { label: "Spotlight", field: "spotlight", pattern: true }
       - { label: "Original", field: "source_type", pattern: "original" }
@@ -56,6 +57,7 @@ collections:
       - { label: "Source URL", name: "source_url", widget: "string", required: false, hint: "Original article URL (for wire/aggregated articles)" }
       - { label: "Source Type", name: "source_type", widget: "select", required: false, default: "original", options: ["original", "wire"], hint: "How this article was sourced" }
       - { label: "Spotlight", name: "spotlight", widget: "boolean", default: false, required: false, hint: "Show in spotlight section" }
+      - { label: "Feature Story of the Week", name: "feature_story", widget: "boolean", default: false, required: false, hint: "Promote heavily: top of spotlight, banner on articles + index, footer rail on every article page. Only one article should have this on at a time - the most recent feature_story wins." }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false, hint: "When ticked, the article is kept in the CMS but not published to the site" }
       - { label: "Longform feature", name: "longform", widget: "boolean", default: false, required: false, hint: "NYT-style full-bleed hero, drop cap, scroll-reveal animations" }
       - { label: "Hero eyebrow", name: "hero_eyebrow", widget: "string", required: false, hint: "Small label above the longform headline (e.g. 'BUSINESS LONG READ')" }

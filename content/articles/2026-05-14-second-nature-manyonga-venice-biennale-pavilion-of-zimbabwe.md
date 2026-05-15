@@ -26,6 +26,21 @@ I sulked. I am willing to admit this. There is a particular kind of British weat
 
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, I will give it credit, for once, surfaced a [forty-second video by the American painter Henry Taylor](https://www.instagram.com/p/DX9VznmPDa1/), posted earlier that morning. Taylor was standing on the deck of a boat in the central lagoon of Venice, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, in a register that was half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
+<figure class="article-fullbleed article-fullbleed--portrait">
+  <div class="article-fullbleed-frame">
+    <video class="article-fullbleed-media article-fullbleed-video"
+           autoplay muted loop playsinline controls preload="auto"
+           poster="/img/uploads/venice-2026/main/henry-taylor-poster.jpg"
+           aria-label="Henry Taylor in the rain on the central lagoon, Venice, saying 'isn't it lovely, isn't it beautiful'">
+      <source src="/img/uploads/venice-2026/main/henry-taylor.mp4" type="video/mp4">
+    </video>
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Tap to unmute. Video: Henry Taylor, Instagram, 12 May 2026.</span>
+    <span class="credit">Courtesy of the artist</span>
+  </figcaption>
+</figure>
+
 I watched it. Then I watched it again.
 
 By the third viewing I had moved into a sitting position. By the fourth I had put my shoes back on. By the fifth I was walking out into the same rain that had earlier won the argument, this time having reached an entirely different conclusion about what kind of argument it had been.
