@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-16T18:57:53+00:00",
+  "fetched_at": "2026-05-16T21:42:51+00:00",
   "count": 60,
   "tiles": [
     {
@@ -29,10 +29,42 @@
     {
       "kind": "news",
       "title": "Sikandar Raza scoops Sports Person of The Year award",
+      "link": "https://mutapatimes.com/news/2026-05-16-sikandar-raza-scoops-sports-person-of-the-year-award-447659",
+      "image": "https://www.mutapatimes.com/img/cards/news/57eccbdeb3d3.png",
+      "pubDate": "2026-05-16T09:37:46+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Sikandar Raza scoops Sports Person of The Year award",
       "link": "https://mutapatimes.com/news/2026-05-16-sikandar-raza-scoops-sports-person-of-the-year-award-c2f89e",
       "image": "https://www.mutapatimes.com/img/cards/news/cf17539aa0ce.png",
       "pubDate": "2026-05-16T09:37:46+00:00",
       "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Chamisa denies dismissing anti-CAB3 coalition",
+      "link": "https://mutapatimes.com/news/2026-05-16-chamisa-denies-dismissing-anti-cab3-coalition-5e226b",
+      "image": "https://www.mutapatimes.com/img/cards/news/b7bb2e3df6a8.png",
+      "pubDate": "2026-05-16T08:56:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Motsoaledi Pledges Help To Repatriate Zimbabwean Mother And Son Killed In Crash Involving His Official Car",
+      "link": "https://mutapatimes.com/news/2026-05-16-motsoaledi-pledges-help-to-repatriate-zimbabwean-mother-and-0429a2",
+      "image": "https://www.mutapatimes.com/img/cards/news/29db4b107d81.png",
+      "pubDate": "2026-05-16T07:36:40+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabweans In SA Appeal For Help After Family Of 3 Dies In Crash Involving Minister Motsoaledi’s Vehicle",
+      "link": "https://mutapatimes.com/news/2026-05-16-zimbabweans-in-sa-appeal-for-help-after-family-of-3-dies-in-9d8119",
+      "image": "https://www.mutapatimes.com/img/cards/news/c51c6b0501ee.png",
+      "pubDate": "2026-05-16T07:07:09+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -116,14 +148,6 @@
     },
     {
       "kind": "news",
-      "title": "SA Home Affairs launches ZEP audit as numbers decline",
-      "link": "https://mutapatimes.com/articles/2026-05-16-sa-home-affairs-launches-zep-audit-as-numbers-decline",
-      "image": "https://www.mutapatimes.com/img/cards/news/bc5449cd8630.png",
-      "pubDate": "2026-05-16T03:51:38+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
       "title": "Minister defends spare wheel requirement for motorists",
       "link": "https://mutapatimes.com/news/2026-05-16-minister-defends-spare-wheel-requirement-for-motorists-d8ee8f",
       "image": "https://www.mutapatimes.com/img/cards/news/3f2bb8425533.png",
@@ -144,7 +168,7 @@
       "link": "https://mutapatimes.com/articles/2026-05-16-hwange-nationalpark-inside-zimbabwes-great-elephant-sanctuar",
       "image": "https://www.mutapatimes.com/img/cards/news/a2809fb8c3e2.png",
       "pubDate": "2026-05-16T03:09:34+00:00",
-      "category": "Tech"
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -152,7 +176,7 @@
       "link": "https://mutapatimes.com/news/2026-05-16-hwange-nationalpark-inside-zimbabwe-s-great-elephant-sanctua-bc3a95",
       "image": "https://www.mutapatimes.com/img/cards/news/882da8cb89a0.png",
       "pubDate": "2026-05-16T03:09:34+00:00",
-      "category": "Science"
+      "category": "Business"
     },
     {
       "kind": "economy",
@@ -457,30 +481,6 @@
       "image": "https://mutapatimes.com/img/cards/properties/67ce9dda4b51.png",
       "pubDate": "2026-05-15T22:00:00+00:00",
       "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 85,000 — Zimre Park Double Storey (On Deck Level) (Zimre Park, Harare East)",
-      "link": "https://www.property.co.zw/for-sale/houses-gat164138",
-      "image": "https://mutapatimes.com/img/cards/properties/2fb549a5325d.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "news",
-      "title": "Chamisa faces backlash",
-      "link": "https://mutapatimes.com/news/2026-05-15-chamisa-faces-backlash-14e213",
-      "image": "https://www.mutapatimes.com/img/cards/news/4a84f8a16ed5.png",
-      "pubDate": "2026-05-15T20:59:16+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Charamba injured",
-      "link": "https://mutapatimes.com/articles/2026-05-15-charamba-injured",
-      "image": "https://www.mutapatimes.com/img/cards/news/4efc912301a3.png",
-      "pubDate": "2026-05-15T20:58:41+00:00",
-      "category": "Business"
     }
   ]
 }
