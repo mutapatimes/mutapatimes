@@ -1,7 +1,39 @@
 {
-  "fetched_at": "2026-05-16T10:10:54+00:00",
+  "fetched_at": "2026-05-16T13:12:26+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe State Diamond Miner Targets Increase in Output for 2026",
+      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwe-state-diamond-miner-targets-increase-in-output-for",
+      "image": "https://www.mutapatimes.com/img/cards/news/b7847d2896df.png",
+      "pubDate": "2026-05-16T10:47:26+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s vivid English first names carry family histories, from Privilege to Shame",
+      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwes-vivid-english-first-names-carry-family-histories-f",
+      "image": "https://www.mutapatimes.com/img/cards/news/da9d4ed26f13.png",
+      "pubDate": "2026-05-16T10:38:07+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Sikandar Raza scoops Sports Person of The Year award",
+      "link": "https://mutapatimes.com/articles/2026-05-16-sikandar-raza-scoops-sports-person-of-the-year-award",
+      "image": "https://www.mutapatimes.com/img/cards/news/7d0bbd3003e0.png",
+      "pubDate": "2026-05-16T09:37:46+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Sikandar Raza scoops Sports Person of The Year award",
+      "link": "https://mutapatimes.com/news/2026-05-16-sikandar-raza-scoops-sports-person-of-the-year-award-c2f89e",
+      "image": "https://www.mutapatimes.com/img/cards/news/cf17539aa0ce.png",
+      "pubDate": "2026-05-16T09:37:46+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "news",
       "title": "Hwange-Nationalpark: Inside Zimbabwe’s Great Elephant Sanctuary",
@@ -17,6 +49,14 @@
       "image": "https://www.mutapatimes.com/img/cards/news/882da8cb89a0.png",
       "pubDate": "2026-05-16T03:09:34+00:00",
       "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Zim launches regional first migration strategy",
+      "link": "https://mutapatimes.com/articles/2026-05-15-zim-launches-regional-first-migration-strategy",
+      "image": "https://www.mutapatimes.com/img/cards/news/716e629c37e0.png",
+      "pubDate": "2026-05-15T23:57:00+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -440,46 +480,6 @@
       "link": "https://mutapatimes.com/news/2026-05-15-locals-in-fear-as-chinese-fortune-seekers-invade-wedza-16398d",
       "image": "https://www.mutapatimes.com/img/cards/news/e249506004cf.png",
       "pubDate": "2026-05-15T17:25:25+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "CPJ welcomes release of Madzikatidze, urges withdrawal of charges",
-      "link": "https://mutapatimes.com/articles/2026-05-15-cpj-welcomes-release-of-madzikatidze-urges-withdrawal-of-cha",
-      "image": "https://www.mutapatimes.com/img/cards/news/4a78261c2d9d.png",
-      "pubDate": "2026-05-15T17:17:08+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "CPJ welcomes release of Madzikatidze, urges withdrawal of charges",
-      "link": "https://mutapatimes.com/news/2026-05-15-cpj-welcomes-release-of-madzikatidze-urges-withdrawal-of-cha-a4b944",
-      "image": "https://www.mutapatimes.com/img/cards/news/bffcf7822f0a.png",
-      "pubDate": "2026-05-15T17:17:08+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe pushes schools to drop colonial-era names",
-      "link": "https://mutapatimes.com/news/2026-05-15-zimbabwe-pushes-schools-to-drop-colonial-era-names-a5affa",
-      "image": "https://www.mutapatimes.com/img/cards/news/a90f31bee243.png",
-      "pubDate": "2026-05-15T16:07:22+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "South Africa praises Beitbridge border modernisation",
-      "link": "https://mutapatimes.com/articles/2026-05-15-south-africa-praises-beitbridge-border-modernisation",
-      "image": "https://www.mutapatimes.com/img/cards/news/298011cce8b5.png",
-      "pubDate": "2026-05-15T16:06:53+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "South Africa praises Beitbridge border modernisation",
-      "link": "https://mutapatimes.com/news/2026-05-15-south-africa-praises-beitbridge-border-modernisation-5178b9",
-      "image": "https://www.mutapatimes.com/img/cards/news/78af35024fe3.png",
-      "pubDate": "2026-05-15T16:06:53+00:00",
       "category": "News"
     }
   ]
