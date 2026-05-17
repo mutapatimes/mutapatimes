@@ -2265,12 +2265,6 @@ function updateZimbabweTime() {
       timeZone: "Africa/Harare"
     });
     $(".price").text(zimTime + " Zimbabwe");
-
-    // Live cam time
-    var camEl = document.getElementById("live-cam-time");
-    if (camEl) {
-      camEl.textContent = zimTime + " \u00b7 " + getZimTimeOfDay() + " in Zimbabwe";
-    }
   } catch (e) {}
 }
 

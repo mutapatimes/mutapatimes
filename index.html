@@ -363,40 +363,6 @@
   <!-- Dark green lower section -->
   <div class="lower-section">
 
-  <!-- Victoria Falls Live Cam -->
-  <div class="live-cam-section">
-    <div class="live-cam-header">
-      <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
-      <span class="live-caption">Victoria Falls Waterhole Camera</span>
-      <span class="live-cam-time" id="live-cam-time"></span>
-    </div>
-    <div class="live-cam-embed">
-      <!-- Click-to-play facade. Real iframe only loads on user gesture so
-           the YouTube SDK (~770 KiB, ~2.4s CPU) doesn't run on initial paint. -->
-      <button type="button" class="yt-facade" data-yt="f9uqHbXChno" aria-label="Play Victoria Falls live cam">
-        <img class="yt-facade-thumb" src="https://i.ytimg.com/vi/f9uqHbXChno/hqdefault.jpg" alt="Victoria Falls Waterhole live camera" width="480" height="270" loading="lazy" decoding="async">
-        <span class="yt-facade-play" aria-hidden="true">
-          <svg viewBox="0 0 68 48" width="58" height="40"><path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"/><path d="M 45,24 27,14 27,34" fill="#fff"/></svg>
-        </span>
-      </button>
-    </div>
-    <script>
-      // Wire up the YouTube facade — only loads the heavy iframe on click.
-      document.querySelectorAll('.yt-facade').forEach(function(btn){
-        btn.addEventListener('click', function(){
-          var id = this.dataset.yt;
-          var iframe = document.createElement('iframe');
-          iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&playlist=' + id;
-          iframe.allow = 'autoplay; encrypted-media';
-          iframe.allowFullscreen = true;
-          iframe.frameBorder = '0';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          this.parentNode.replaceChild(iframe, this);
-        }, { once: true });
-      });
-    </script>
-  </div>
 
   <!-- Weather ticker -->
   <div id="weather" class="weather-section">
@@ -581,7 +547,7 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
   <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script defer src="js/plugins.js"></script>
-  <script defer src="js/config.js?v=6"></script>
+  <script defer src="js/config.js?v=7"></script>
   <script defer src="js/main.js"></script>
   <script defer src="js/feature-story.js?v=1"></script>
   <script defer src="js/stories.js?v=2"></script>
