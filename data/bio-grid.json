@@ -1,7 +1,335 @@
 {
-  "fetched_at": "2026-05-16T21:42:51+00:00",
+  "fetched_at": "2026-05-17T02:39:53+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "economy",
+      "title": "Zim current account 2025 Q4: $821M. Trailing four quarters: $1.9B.",
+      "link": "https://mutapatimes.com/economy?d=2026-05-17",
+      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-05-17",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Economy"
+    },
+    {
+      "kind": "fx",
+      "title": "Zim FX snapshot 17 May 2026: 1 USD = 25.81 ZWG · best from UK £100 → $130.24 via Wise",
+      "link": "https://mutapatimes.com/fx?d=2026-05-17",
+      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-17",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "FX"
+    },
+    {
+      "kind": "weather",
+      "title": "Zim weather 17 May: Harare mainly clear · high 24° / low 14°",
+      "link": "https://mutapatimes.com/weather?d=2026-05-17",
+      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-17",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Weather"
+    },
+    {
+      "kind": "jobs",
+      "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
+      "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
+      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-social-media-assistant.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Junior Editorial Coordinator — The Mutapa Times (Remote · 3 days/week · 3 months)",
+      "link": "https://mutapatimes.com/jobs#junior-editorial-coordinator",
+      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-editorial-coordinator.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Junior Data Analyst — The Mutapa Times (Remote · 3 days/week · 3 months)",
+      "link": "https://mutapatimes.com/jobs#junior-data-analyst",
+      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-data-analyst.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Business Development Associate — The Mutapa Times (Remote · 3 days/week · 3 months)",
+      "link": "https://mutapatimes.com/jobs#business-development-associate",
+      "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimra — PROJECT MANAGER – ICT – LEVEL 7 (2 POSTS)",
+      "link": "https://vacancymail.co.zw/jobs/project-manager-ict-level-7-2-posts-67539/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7c1d47f84ce9.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimra — BUSINESS RELATIONSHIP MANAGER – ICT - LEVEL 7 (1 POST)",
+      "link": "https://vacancymail.co.zw/jobs/business-relationship-manager-ict-level-7-1-post-67538/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5eefc6cc0895.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimra — HEAD ICT OPERATIONS & SERVICE DELIVERY – ICT - LEVEL 5 (1 POST)",
+      "link": "https://vacancymail.co.zw/jobs/head-ict-operations-service-delivery-ict-level-5-1-post-67537/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3ea7c0c0480f.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Centre Activation Agents X 18",
+      "link": "https://vacancymail.co.zw/jobs/centre-activation-agents-x-18-67536/",
+      "image": "https://mutapatimes.com/img/cards/jobs/41f0d157bb64.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Marketing Attachee",
+      "link": "https://vacancymail.co.zw/jobs/marketing-attachee-67535/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fef53e842eca.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Locum Drivers",
+      "link": "https://vacancymail.co.zw/jobs/locum-drivers-67534/",
+      "image": "https://mutapatimes.com/img/cards/jobs/17a29aa2102e.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Radiographer",
+      "link": "https://vacancymail.co.zw/jobs/radiographer-67533/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8f1d37ae6b66.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Client Services Assistants",
+      "link": "https://vacancymail.co.zw/jobs/client-services-assistants-67532/",
+      "image": "https://mutapatimes.com/img/cards/jobs/65568f36012c.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Primary Care Nurse",
+      "link": "https://vacancymail.co.zw/jobs/primary-care-nurse-67531/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9ce93da382a4.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Services Zimbabwe — Nurse Provider",
+      "link": "https://vacancymail.co.zw/jobs/nurse-provider-67530/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ac25b73c7879.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "property",
+      "title": "USD 1,150,000 — Striking Contemporary Living (Gunhill, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-clrp241523",
+      "image": "https://mutapatimes.com/img/cards/properties/e48c0a8f636c.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 750,000 — Elegant 5 Bedroom Family Home on Selous (Colne Valley, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-pgp244359",
+      "image": "https://mutapatimes.com/img/cards/properties/d3d9c273417a.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 580,000 — Prime Road Frontage Opportunity in Alexandra Park (Alexandra Park, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-nst246116",
+      "image": "https://mutapatimes.com/img/cards/properties/6473a37cf2f0.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 157,000 — Greendale Athlone Cluster Home for Sale - 3 Bedrooms on 830sqm with Title Deeds (Greendale, Harare East)",
+      "link": "https://www.property.co.zw/for-sale/houses-gat234485",
+      "image": "https://mutapatimes.com/img/cards/properties/f8b33a01a0b4.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 67,000 — Tynwald Lenana park -house for sale 67k (Tynwald, Harare West)",
+      "link": "https://www.property.co.zw/for-sale/houses-mac246068",
+      "image": "https://mutapatimes.com/img/cards/properties/47a9f527c9d7.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 250,000 — Gletwin Incomplete Double Storey For Sale (Gletwin Park, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-rws246829",
+      "image": "https://mutapatimes.com/img/cards/properties/d1cef6d79dac.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 110,000 — Spacious Open-Plan 3-Bed Townhouse with Borehole, Waterfalls (Waterfalls, Harare South)",
+      "link": "https://www.property.co.zw/for-sale/townhouses-sef211154",
+      "image": "https://mutapatimes.com/img/cards/properties/670b6de7ee7e.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 250,000 — Charming Home - Reduced to Go! (Eastlea, Harare East)",
+      "link": "https://www.property.co.zw/for-sale/houses-jspp243100",
+      "image": "https://mutapatimes.com/img/cards/properties/ab2624d844ae.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 160,000 — Finish to your own Taste- Modern Offering (Hogerty Hill, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-mac243340",
+      "image": "https://mutapatimes.com/img/cards/properties/b8abd69a350d.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 230,000 — Greendale close to Spar Letombo for sale with huge land for further development. (Greendale, Harare East)",
+      "link": "https://www.property.co.zw/for-sale/houses-pbox244066",
+      "image": "https://mutapatimes.com/img/cards/properties/5e327a690485.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 155,000 — Secure Family Living On 3,279sqm (Chinhoyi)",
+      "link": "https://www.property.co.zw/for-sale/houses-clrp246889",
+      "image": "https://mutapatimes.com/img/cards/properties/89ffb324d454.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 17,000 — 4-Roomed House for Sale – Rujeko, Marondera (Marondera)",
+      "link": "https://www.property.co.zw/for-sale/houses-gat247008",
+      "image": "https://mutapatimes.com/img/cards/properties/3f6a486ff3ef.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 280,000 — Superb opportunity in Helensvale (Helensvale, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/townhouses-rws246292",
+      "image": "https://mutapatimes.com/img/cards/properties/24469c161b22.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "Price on request — Mutare Chikanga house for sale by private treaty (Chikanga, Mutare)",
+      "link": "https://www.property.co.zw/for-sale/houses-grm241169",
+      "image": "https://mutapatimes.com/img/cards/properties/ab9cccdec95b.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 1,200,000 — Strategic Property With Main Road Frontage (Borrowdale, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-leg245101",
+      "image": "https://mutapatimes.com/img/cards/properties/43b3b4a04ee5.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 23,000 — Build your dream house in a beautiful area (Hopelyn, Bulawayo North)",
+      "link": "https://www.property.co.zw/for-sale/houses-bbre228501",
+      "image": "https://mutapatimes.com/img/cards/properties/e212003299f6.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 140,000 — Superb opportunity in Gweru (Adelaide Park, Gweru)",
+      "link": "https://www.property.co.zw/for-sale/houses-rws247047",
+      "image": "https://mutapatimes.com/img/cards/properties/1c3c36d9072f.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 500,000 — Renovator’s Delight (Glen Lorne, Harare North)",
+      "link": "https://www.property.co.zw/for-sale/houses-jspp243230",
+      "image": "https://mutapatimes.com/img/cards/properties/f71defe707ee.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 320,000 — Marlborough (Marlborough, Harare West)",
+      "link": "https://www.property.co.zw/for-sale/houses-rws234321",
+      "image": "https://mutapatimes.com/img/cards/properties/7f74ccd9349f.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 215,000 — Reduced To Go (Hatfield, Harare South)",
+      "link": "https://www.property.co.zw/for-sale/houses-hmsl236344",
+      "image": "https://mutapatimes.com/img/cards/properties/baa516a1aaec.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 140,000 — Kensington Property for Sale-Space, Comfort and Potential (Kensington, Bulawayo East)",
+      "link": "https://www.property.co.zw/for-sale/houses-rang220549",
+      "image": "https://mutapatimes.com/img/cards/properties/67ce9dda4b51.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "property",
+      "title": "USD 85,000 — Zimre Park Double Storey (On Deck Level) (Zimre Park, Harare East)",
+      "link": "https://www.property.co.zw/for-sale/houses-gat164138",
+      "image": "https://mutapatimes.com/img/cards/properties/2fb549a5325d.png",
+      "pubDate": "2026-05-16T22:00:00+00:00",
+      "category": "Property"
+    },
+    {
+      "kind": "news",
+      "title": "Picture: Mnangagwa In Secret Meeting With President Of Belarus?",
+      "link": "https://mutapatimes.com/news/2026-05-16-picture-mnangagwa-in-secret-meeting-with-president-of-belaru-07a1dd",
+      "image": "https://www.mutapatimes.com/img/cards/news/1512cf312403.png",
+      "pubDate": "2026-05-16T14:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe govt defends Starlink rollout",
+      "link": "https://mutapatimes.com/news/2026-05-16-zimbabwe-govt-defends-starlink-rollout-c4fad4",
+      "image": "https://www.mutapatimes.com/img/cards/news/adedc0fe449b.png",
+      "pubDate": "2026-05-16T13:53:15+00:00",
+      "category": "News"
+    },
     {
       "kind": "news",
       "title": "Zimbabwe’s diaspora reshapes real estate and farming investment trends",
@@ -9,6 +337,102 @@
       "image": "https://www.mutapatimes.com/img/cards/news/e95f5c3d8ba7.png",
       "pubDate": "2026-05-16T13:18:49+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Government Mum As Matinyarare Questions Mnangagwa Exit",
+      "link": "https://mutapatimes.com/news/2026-05-16-government-mum-as-matinyarare-questions-mnangagwa-exit-e067f1",
+      "image": "https://www.mutapatimes.com/img/cards/news/34e3e84874e0.png",
+      "pubDate": "2026-05-16T12:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Varakashi4ED Dismisses Chinhoyi Billboard Burning as “Manufactured Lie”",
+      "link": "https://mutapatimes.com/articles/2026-05-16-varakashi4ed-dismisses-chinhoyi-billboard-burning-as-manufac",
+      "image": "https://www.mutapatimes.com/img/cards/news/03da5960cea7.png",
+      "pubDate": "2026-05-16T11:26:14+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Varakashi4ED Dismisses Chinhoyi Billboard Burning as “Manufactured Lie”",
+      "link": "https://mutapatimes.com/news/2026-05-16-varakashi4ed-dismisses-chinhoyi-billboard-burning-as-manufac-efe986",
+      "image": "https://www.mutapatimes.com/img/cards/news/2ff69e602be6.png",
+      "pubDate": "2026-05-16T11:26:14+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe records Africa's sharpest fuel price hikes",
+      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwe-records-africas-sharpest-fuel-price-hikes",
+      "image": "https://www.mutapatimes.com/img/cards/news/6688c6c11434.png",
+      "pubDate": "2026-05-16T11:19:40+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe records Africa's sharpest fuel price hikes",
+      "link": "https://mutapatimes.com/news/2026-05-16-zimbabwe-records-africa-s-sharpest-fuel-price-hikes-9e912c",
+      "image": "https://www.mutapatimes.com/img/cards/news/9ac32de0be95.png",
+      "pubDate": "2026-05-16T11:19:40+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe among Africa's most debt-distressed economies",
+      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwe-among-africas-most-debt-distressed-economies",
+      "image": "https://www.mutapatimes.com/img/cards/news/18491a645dc2.png",
+      "pubDate": "2026-05-16T11:18:23+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe among Africa's most debt-distressed economies",
+      "link": "https://mutapatimes.com/news/2026-05-16-zimbabwe-among-africa-s-most-debt-distressed-economies-818842",
+      "image": "https://www.mutapatimes.com/img/cards/news/2e9e5407d828.png",
+      "pubDate": "2026-05-16T11:18:23+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chinese fortune seekers invade Zimbabwe's Wedza",
+      "link": "https://mutapatimes.com/articles/2026-05-16-chinese-fortune-seekers-invade-zimbabwes-wedza",
+      "image": "https://www.mutapatimes.com/img/cards/news/6d5f277e9cca.png",
+      "pubDate": "2026-05-16T11:15:29+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chinese fortune seekers invade Zimbabwe's Wedza",
+      "link": "https://mutapatimes.com/news/2026-05-16-chinese-fortune-seekers-invade-zimbabwe-s-wedza-b99db7",
+      "image": "https://www.mutapatimes.com/img/cards/news/6cf01c87cebe.png",
+      "pubDate": "2026-05-16T11:15:29+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Property developer in court over US$22,000 land scam",
+      "link": "https://mutapatimes.com/news/2026-05-16-property-developer-in-court-over-us-22-000-land-scam-afd040",
+      "image": "https://www.mutapatimes.com/img/cards/news/24cd9dea78cc.png",
+      "pubDate": "2026-05-16T11:13:54+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "4 arrested for illegally transporting explosives",
+      "link": "https://mutapatimes.com/news/2026-05-16-4-arrested-for-illegally-transporting-explosives-3f47af",
+      "image": "https://www.mutapatimes.com/img/cards/news/fe03c313a099.png",
+      "pubDate": "2026-05-16T11:13:19+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Miss Zimbabwe Trust bars Courtney Jongwe from contest",
+      "link": "https://mutapatimes.com/news/2026-05-16-miss-zimbabwe-trust-bars-courtney-jongwe-from-contest-49ed44",
+      "image": "https://www.mutapatimes.com/img/cards/news/66201c99f03d.png",
+      "pubDate": "2026-05-16T11:12:43+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -37,8 +461,8 @@
     {
       "kind": "news",
       "title": "Sikandar Raza scoops Sports Person of The Year award",
-      "link": "https://mutapatimes.com/news/2026-05-16-sikandar-raza-scoops-sports-person-of-the-year-award-c2f89e",
-      "image": "https://www.mutapatimes.com/img/cards/news/cf17539aa0ce.png",
+      "link": "https://mutapatimes.com/news/2026-05-17-sikandar-raza-scoops-sports-person-of-the-year-award-c2f89e",
+      "image": "https://www.mutapatimes.com/img/cards/news/bd1c0191467b.png",
       "pubDate": "2026-05-16T09:37:46+00:00",
       "category": "Sports"
     },
@@ -57,430 +481,6 @@
       "image": "https://www.mutapatimes.com/img/cards/news/29db4b107d81.png",
       "pubDate": "2026-05-16T07:36:40+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabweans In SA Appeal For Help After Family Of 3 Dies In Crash Involving Minister Motsoaledi’s Vehicle",
-      "link": "https://mutapatimes.com/news/2026-05-16-zimbabweans-in-sa-appeal-for-help-after-family-of-3-dies-in-9d8119",
-      "image": "https://www.mutapatimes.com/img/cards/news/c51c6b0501ee.png",
-      "pubDate": "2026-05-16T07:07:09+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Miss Zimbabwe Trust blocks Courtney Jongwe’s Miss Universe bid citing contractual obligations following social media outburst",
-      "link": "https://mutapatimes.com/news/2026-05-16-miss-zimbabwe-trust-blocks-courtney-jongwe-s-miss-universe-b-26ff5f",
-      "image": "https://www.mutapatimes.com/img/cards/news/a0a9dbbb0855.png",
-      "pubDate": "2026-05-16T06:12:07+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "‘Zimbabwe is well positioned to source adequate fuel amid Middle East tensions’, National Oil Company of Zimbabwe CEO tells Parly",
-      "link": "https://mutapatimes.com/news/2026-05-16-zimbabwe-is-well-positioned-to-source-adequate-fuel-amid-mid-a27508",
-      "image": "https://www.mutapatimes.com/img/cards/news/64907a232346.png",
-      "pubDate": "2026-05-16T06:07:10+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "DZL hails sustained economic resilience as volumes growth surge to 26%",
-      "link": "https://mutapatimes.com/articles/2026-05-16-dzl-hails-sustained-economic-resilience-as-volumes-growth-su",
-      "image": "https://www.mutapatimes.com/img/cards/news/fb33a76f0173.png",
-      "pubDate": "2026-05-16T05:55:04+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "DZL hails sustained economic resilience as volumes growth surge to 26%",
-      "link": "https://mutapatimes.com/news/2026-05-16-dzl-hails-sustained-economic-resilience-as-volumes-growth-su-7331f0",
-      "image": "https://www.mutapatimes.com/img/cards/news/f477394e7bb2.png",
-      "pubDate": "2026-05-16T05:55:04+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Retired Chief Justice Malaba defends judiciary, tells accusers to bring evidence of political meddling and corruption",
-      "link": "https://mutapatimes.com/news/2026-05-16-retired-chief-justice-malaba-defends-judiciary-tells-accuser-e53ab5",
-      "image": "https://www.mutapatimes.com/img/cards/news/fa2f8283484b.png",
-      "pubDate": "2026-05-16T05:49:26+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Workers’ Union petitions Parliament on CAB3, says proposed constitutional changes strip citizens of their power",
-      "link": "https://mutapatimes.com/news/2026-05-16-workers-union-petitions-parliament-on-cab3-says-proposed-con-6c850a",
-      "image": "https://www.mutapatimes.com/img/cards/news/f1bdd1ddc8a2.png",
-      "pubDate": "2026-05-16T05:39:07+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Chinhoyi University of Technology Vice Chancellor Simbi retires",
-      "link": "https://mutapatimes.com/articles/2026-05-16-chinhoyi-university-of-technology-vice-chancellor-simbi-reti",
-      "image": "https://www.mutapatimes.com/img/cards/news/dca2dd13ea9a.png",
-      "pubDate": "2026-05-16T05:28:16+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Chinhoyi University of Technology Vice Chancellor Simbi retires",
-      "link": "https://mutapatimes.com/news/2026-05-16-chinhoyi-university-of-technology-vice-chancellor-simbi-reti-a256d5",
-      "image": "https://www.mutapatimes.com/img/cards/news/73266140bcf6.png",
-      "pubDate": "2026-05-16T05:28:16+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Man attempts to smuggle 15kg dagga through border post",
-      "link": "https://mutapatimes.com/news/2026-05-16-man-attempts-to-smuggle-15kg-dagga-through-border-post-08332a",
-      "image": "https://www.mutapatimes.com/img/cards/news/3c6a97a0b95e.png",
-      "pubDate": "2026-05-16T05:15:13+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Government defends use of prisons for immigration detainees",
-      "link": "https://mutapatimes.com/news/2026-05-16-government-defends-use-of-prisons-for-immigration-detainees-41975a",
-      "image": "https://www.mutapatimes.com/img/cards/news/8e3344fa4950.png",
-      "pubDate": "2026-05-16T03:54:01+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Minister defends spare wheel requirement for motorists",
-      "link": "https://mutapatimes.com/news/2026-05-16-minister-defends-spare-wheel-requirement-for-motorists-d8ee8f",
-      "image": "https://www.mutapatimes.com/img/cards/news/3f2bb8425533.png",
-      "pubDate": "2026-05-16T03:48:08+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Mnangagwa slips out on secret Belarus trip, misses Malaba farewell",
-      "link": "https://mutapatimes.com/news/2026-05-16-mnangagwa-slips-out-on-secret-belarus-trip-misses-malaba-far-296fe4",
-      "image": "https://www.mutapatimes.com/img/cards/news/ee5628a35dde.png",
-      "pubDate": "2026-05-16T03:43:05+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Hwange-Nationalpark: Inside Zimbabwe’s Great Elephant Sanctuary",
-      "link": "https://mutapatimes.com/articles/2026-05-16-hwange-nationalpark-inside-zimbabwes-great-elephant-sanctuar",
-      "image": "https://www.mutapatimes.com/img/cards/news/a2809fb8c3e2.png",
-      "pubDate": "2026-05-16T03:09:34+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Hwange-Nationalpark: Inside Zimbabwe’s Great Elephant Sanctuary",
-      "link": "https://mutapatimes.com/news/2026-05-16-hwange-nationalpark-inside-zimbabwe-s-great-elephant-sanctua-bc3a95",
-      "image": "https://www.mutapatimes.com/img/cards/news/882da8cb89a0.png",
-      "pubDate": "2026-05-16T03:09:34+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "economy",
-      "title": "Zim manufacturing has moved +6.6% since the 2024 rebase — now $2.8B per quarter.",
-      "link": "https://mutapatimes.com/economy?d=2026-05-16",
-      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-05-16",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Economy"
-    },
-    {
-      "kind": "fx",
-      "title": "Zim FX snapshot 16 May 2026: 1 USD = 25.81 ZWG · best from UK £100 → $130.24 via Wise",
-      "link": "https://mutapatimes.com/fx?d=2026-05-16",
-      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-16",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "FX"
-    },
-    {
-      "kind": "weather",
-      "title": "Zim weather 16 May: Harare mainly clear · high 24° / low 14°",
-      "link": "https://mutapatimes.com/weather?d=2026-05-16",
-      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-16",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Weather"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
-      "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
-      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-social-media-assistant.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Internship"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Editorial Coordinator — The Mutapa Times (Remote · 3 days/week · 3 months)",
-      "link": "https://mutapatimes.com/jobs#junior-editorial-coordinator",
-      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-editorial-coordinator.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Internship"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Data Analyst — The Mutapa Times (Remote · 3 days/week · 3 months)",
-      "link": "https://mutapatimes.com/jobs#junior-data-analyst",
-      "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-data-analyst.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Internship"
-    },
-    {
-      "kind": "jobs",
-      "title": "Business Development Associate — The Mutapa Times (Remote · 3 days/week · 3 months)",
-      "link": "https://mutapatimes.com/jobs#business-development-associate",
-      "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Internship"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — PROJECT MANAGER – ICT – LEVEL 7 (2 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/project-manager-ict-level-7-2-posts-67539/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7c1d47f84ce9.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — BUSINESS RELATIONSHIP MANAGER – ICT - LEVEL 7 (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/business-relationship-manager-ict-level-7-1-post-67538/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5eefc6cc0895.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — HEAD ICT OPERATIONS & SERVICE DELIVERY – ICT - LEVEL 5 (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/head-ict-operations-service-delivery-ict-level-5-1-post-67537/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3ea7c0c0480f.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Centre Activation Agents X 18",
-      "link": "https://vacancymail.co.zw/jobs/centre-activation-agents-x-18-67536/",
-      "image": "https://mutapatimes.com/img/cards/jobs/41f0d157bb64.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Marketing Attachee",
-      "link": "https://vacancymail.co.zw/jobs/marketing-attachee-67535/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fef53e842eca.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Locum Drivers",
-      "link": "https://vacancymail.co.zw/jobs/locum-drivers-67534/",
-      "image": "https://mutapatimes.com/img/cards/jobs/17a29aa2102e.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Radiographer",
-      "link": "https://vacancymail.co.zw/jobs/radiographer-67533/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8f1d37ae6b66.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Client Services Assistants",
-      "link": "https://vacancymail.co.zw/jobs/client-services-assistants-67532/",
-      "image": "https://mutapatimes.com/img/cards/jobs/65568f36012c.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Primary Care Nurse",
-      "link": "https://vacancymail.co.zw/jobs/primary-care-nurse-67531/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9ce93da382a4.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Nurse Provider",
-      "link": "https://vacancymail.co.zw/jobs/nurse-provider-67530/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ac25b73c7879.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "property",
-      "title": "USD 1,150,000 — Striking Contemporary Living (Gunhill, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-clrp241523",
-      "image": "https://mutapatimes.com/img/cards/properties/e48c0a8f636c.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 750,000 — Elegant 5 Bedroom Family Home on Selous (Colne Valley, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-pgp244359",
-      "image": "https://mutapatimes.com/img/cards/properties/d3d9c273417a.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 580,000 — Prime Road Frontage Opportunity in Alexandra Park (Alexandra Park, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-nst246116",
-      "image": "https://mutapatimes.com/img/cards/properties/6473a37cf2f0.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 157,000 — Greendale Athlone Cluster Home for Sale - 3 Bedrooms on 830sqm with Title Deeds (Greendale, Harare East)",
-      "link": "https://www.property.co.zw/for-sale/houses-gat234485",
-      "image": "https://mutapatimes.com/img/cards/properties/f8b33a01a0b4.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 67,000 — Tynwald Lenana park -house for sale 67k (Tynwald, Harare West)",
-      "link": "https://www.property.co.zw/for-sale/houses-mac246068",
-      "image": "https://mutapatimes.com/img/cards/properties/47a9f527c9d7.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 250,000 — Gletwin Incomplete Double Storey For Sale (Gletwin Park, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-rws246829",
-      "image": "https://mutapatimes.com/img/cards/properties/d1cef6d79dac.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 110,000 — Spacious Open-Plan 3-Bed Townhouse with Borehole, Waterfalls (Waterfalls, Harare South)",
-      "link": "https://www.property.co.zw/for-sale/townhouses-sef211154",
-      "image": "https://mutapatimes.com/img/cards/properties/670b6de7ee7e.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 250,000 — Charming Home - Reduced to Go! (Eastlea, Harare East)",
-      "link": "https://www.property.co.zw/for-sale/houses-jspp243100",
-      "image": "https://mutapatimes.com/img/cards/properties/ab2624d844ae.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 160,000 — Finish to your own Taste- Modern Offering (Hogerty Hill, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-mac243340",
-      "image": "https://mutapatimes.com/img/cards/properties/b8abd69a350d.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 230,000 — Greendale close to Spar Letombo for sale with huge land for further development. (Greendale, Harare East)",
-      "link": "https://www.property.co.zw/for-sale/houses-pbox244066",
-      "image": "https://mutapatimes.com/img/cards/properties/5e327a690485.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 155,000 — Secure Family Living On 3,279sqm (Chinhoyi)",
-      "link": "https://www.property.co.zw/for-sale/houses-clrp246889",
-      "image": "https://mutapatimes.com/img/cards/properties/89ffb324d454.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 17,000 — 4-Roomed House for Sale – Rujeko, Marondera (Marondera)",
-      "link": "https://www.property.co.zw/for-sale/houses-gat247008",
-      "image": "https://mutapatimes.com/img/cards/properties/3f6a486ff3ef.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 280,000 — Superb opportunity in Helensvale (Helensvale, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/townhouses-rws246292",
-      "image": "https://mutapatimes.com/img/cards/properties/24469c161b22.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "Price on request — Mutare Chikanga house for sale by private treaty (Chikanga, Mutare)",
-      "link": "https://www.property.co.zw/for-sale/houses-grm241169",
-      "image": "https://mutapatimes.com/img/cards/properties/ab9cccdec95b.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 1,200,000 — Strategic Property With Main Road Frontage (Borrowdale, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-leg245101",
-      "image": "https://mutapatimes.com/img/cards/properties/43b3b4a04ee5.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 23,000 — Build your dream house in a beautiful area (Hopelyn, Bulawayo North)",
-      "link": "https://www.property.co.zw/for-sale/houses-bbre228501",
-      "image": "https://mutapatimes.com/img/cards/properties/e212003299f6.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 140,000 — Superb opportunity in Gweru (Adelaide Park, Gweru)",
-      "link": "https://www.property.co.zw/for-sale/houses-rws247047",
-      "image": "https://mutapatimes.com/img/cards/properties/1c3c36d9072f.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 500,000 — Renovator’s Delight (Glen Lorne, Harare North)",
-      "link": "https://www.property.co.zw/for-sale/houses-jspp243230",
-      "image": "https://mutapatimes.com/img/cards/properties/f71defe707ee.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 320,000 — Marlborough (Marlborough, Harare West)",
-      "link": "https://www.property.co.zw/for-sale/houses-rws234321",
-      "image": "https://mutapatimes.com/img/cards/properties/7f74ccd9349f.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 215,000 — Reduced To Go (Hatfield, Harare South)",
-      "link": "https://www.property.co.zw/for-sale/houses-hmsl236344",
-      "image": "https://mutapatimes.com/img/cards/properties/baa516a1aaec.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
-    },
-    {
-      "kind": "property",
-      "title": "USD 140,000 — Kensington Property for Sale-Space, Comfort and Potential (Kensington, Bulawayo East)",
-      "link": "https://www.property.co.zw/for-sale/houses-rang220549",
-      "image": "https://mutapatimes.com/img/cards/properties/67ce9dda4b51.png",
-      "pubDate": "2026-05-15T22:00:00+00:00",
-      "category": "Property"
     }
   ]
 }
