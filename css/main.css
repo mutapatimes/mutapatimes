@@ -5697,26 +5697,37 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   scroll-snap-align: start;
   font-family: 'Inter', system-ui, sans-serif;
 }
-/* IG-style glow ring — sits behind the chip. Unviewed = rotating
-   conic gradient in brand colours; viewed = flat grey ring. */
+/* IG-style ring around each story chip.
+   Unviewed = a 2px conic-gradient that orbits the perimeter (slowly
+   rotating). Viewed = flat neutral grey ring. The big drop-shadow
+   halo that was making the rail tall is gone — what's left is a
+   thin, cute indicator. */
+@property --story-ring-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 .story-chip-glow {
   display: inline-flex;
-  padding: 4px;
+  padding: 2px;
   border-radius: 50%;
-  /* Clean uniform brand-red ring - IG-style highlight indicator,
-     signalling 'this is a story you can tap'. The ring + soft red
-     halo together carry the affordance. */
-  background: var(--accent);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.18s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  background: #d6d4ce;
+  transition: transform 0.18s ease;
 }
 .story-thumb.is-unviewed .story-chip-glow {
-  filter: drop-shadow(0 0 8px rgba(196, 30, 30, 0.4));
-  animation: storyChipGlow 2.4s ease-in-out infinite;
+  --story-ring-angle: 0deg;
+  background: conic-gradient(
+    from var(--story-ring-angle),
+    var(--accent) 0%,
+    #e4854a 30%,
+    var(--accent) 55%,
+    #1a1a1a 80%,
+    var(--accent) 100%
+  );
+  animation: storyRingSpin 3.6s linear infinite;
 }
-@keyframes storyChipGlow {
-  0%, 100% { filter: drop-shadow(0 0 6px rgba(196, 30, 30, 0.3)); }
-  50%      { filter: drop-shadow(0 0 12px rgba(196, 30, 30, 0.5)); }
+@keyframes storyRingSpin {
+  to { --story-ring-angle: 360deg; }
 }
 @media (prefers-reduced-motion: reduce) {
   .story-thumb.is-unviewed .story-chip-glow { animation: none; }
