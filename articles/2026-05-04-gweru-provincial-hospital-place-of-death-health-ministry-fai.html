@@ -32,8 +32,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS — loaded non-blocking via print-media swap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css?v=87">
@@ -395,11 +395,11 @@ if ('serviceWorker' in navigator) {
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Contentsquare / Hotjar -->
-<script src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
+<!-- Contentsquare / Hotjar — deferred so it never blocks LCP -->
+<script defer src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
 
-<!-- Metricool -->
-<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"})});</script>
+<!-- Metricool — loaded after window.load so it never delays first paint -->
+<script>window.addEventListener("load",function(){var s=document.createElement("script");s.async=true;s.src="https://tracker.metricool.com/resources/be.js";s.onload=function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"});};document.head.appendChild(s);});</script>
 </body>
 
 </html>

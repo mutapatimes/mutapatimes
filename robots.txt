@@ -2,7 +2,7 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://www.mutapatimes.com/sitemap.xml
 Sitemap: https://www.mutapatimes.com/news-sitemap.xml
