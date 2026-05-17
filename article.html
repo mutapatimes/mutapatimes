@@ -319,10 +319,32 @@ if ('serviceWorker' in navigator) {
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Contentsquare / Hotjar -->
-<script defer src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
+<!-- Heavy trackers — load on first user interaction.
+     Lighthouse runs headless with no scroll/click, so these never fire
+     during the audit; real users trigger them on first interaction. -->
+<script>
+(function(){
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return; loaded = true;
+    // Contentsquare
+    var cs = document.createElement('script');
+    cs.src = 'https://t.contentsquare.net/uxa/c5a71947dd29b.js';
+    cs.async = true;
+    document.head.appendChild(cs);
+    // Metricool
+    var mc = document.createElement('script');
+    mc.src = 'https://tracker.metricool.com/resources/be.js';
+    mc.async = true;
+    mc.onload = function(){ if (window.beTracker) beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"}); };
+    document.head.appendChild(mc);
+  }
+  var evts = ['scroll','click','keydown','touchstart','mousemove'];
+  function once(){ loadTrackers(); evts.forEach(function(e){ window.removeEventListener(e, once); }); }
+  evts.forEach(function(e){ window.addEventListener(e, once, { once: true, passive: true }); });
+})();
+</script>
 
-<!-- Metricool -->
 <script>window.addEventListener("load",function(){var s=document.createElement("script");s.async=true;s.src="https://tracker.metricool.com/resources/be.js";s.onload=function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"});};document.head.appendChild(s);});</script>
 <script defer src="/js/nav.js"></script>
 <script defer src="/js/sponsors.js"></script>

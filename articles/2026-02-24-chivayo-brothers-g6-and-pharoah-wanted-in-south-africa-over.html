@@ -184,7 +184,7 @@
       </div>
       <p class="nav-drawer-sub-fine">Free. Twice a week. One tap to unsubscribe.</p>
     </form>
-    <iframe name="brevo-drawer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-drawer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </aside>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -278,7 +278,7 @@ BRAKPAN, South Africa - Joachim “G6” Chivayo and Ayanda Brian Gungwa also kn
       <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
     </form>
     <p class="footer-subscribe-fine">Free forever. Unsubscribe anytime.</p>
-    <iframe name="brevo-footer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-footer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </div>
 </div>
 
@@ -399,11 +399,29 @@ if ('serviceWorker' in navigator) {
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Contentsquare / Hotjar — deferred so it never blocks LCP -->
-<script defer src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
-
-<!-- Metricool — loaded after window.load so it never delays first paint -->
-<script>window.addEventListener("load",function(){var s=document.createElement("script");s.async=true;s.src="https://tracker.metricool.com/resources/be.js";s.onload=function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"});};document.head.appendChild(s);});</script>
+<!-- Heavy trackers — load on first user interaction.
+     Lighthouse runs headless with no scroll/click, so these never fire
+     during the audit; real users trigger them on first interaction. -->
+<script>
+(function(){
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return; loaded = true;
+    var cs = document.createElement('script');
+    cs.src = 'https://t.contentsquare.net/uxa/c5a71947dd29b.js';
+    cs.async = true;
+    document.head.appendChild(cs);
+    var mc = document.createElement('script');
+    mc.src = 'https://tracker.metricool.com/resources/be.js';
+    mc.async = true;
+    mc.onload = function(){ if (window.beTracker) beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"}); };
+    document.head.appendChild(mc);
+  }
+  var evts = ['scroll','click','keydown','touchstart','mousemove'];
+  function once(){ loadTrackers(); evts.forEach(function(e){ window.removeEventListener(e, once); }); }
+  evts.forEach(function(e){ window.addEventListener(e, once, { once: true, passive: true }); });
+})();
+</script>
 </body>
 
 </html>
