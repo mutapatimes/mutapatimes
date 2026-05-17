@@ -30,6 +30,7 @@ SPOTLIGHT_FILE = os.path.join(DATA_DIR, "spotlight.json")
 CATEGORY_FILES = ["business", "technology", "entertainment",
                   "sports", "science", "health"]
 CMS_DIR = os.path.join(ROOT, "content", "articles")
+WIRES_DIR = os.path.join(ROOT, "content", "wires")
 
 OUT_DIR = os.path.join(ROOT, "img", "cards", "news")
 PUBLIC_BASE = "https://www.mutapatimes.com/img/cards/news"
@@ -126,36 +127,45 @@ def _walk_news_json(filepath):
 
 
 def _walk_cms_articles():
-    """Yield {title, source, url, publishedAt} per CMS markdown article."""
-    for md in glob.glob(os.path.join(CMS_DIR, "*.md")):
-        slug = os.path.splitext(os.path.basename(md))[0]
-        if slug == "index":
-            continue
-        try:
-            with open(md, "r", encoding="utf-8") as f:
-                text = f.read()
-        except OSError:
-            continue
-        m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
-        if not m:
-            continue
-        fm = m.group(1)
-        title_m = re.search(r'^title:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm,
-                            re.MULTILINE)
-        date_m = re.search(r"^date:[^\S\n]*['\"]?(\S+)", fm, re.MULTILINE)
-        author_m = re.search(r'^author:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm,
-                              re.MULTILINE)
-        title = title_m.group(1) if title_m else slug
-        author = author_m.group(1) if author_m else "Mutapa Times"
-        # CMS articles live at /articles/{slug}.html — same URL build_news_pages
-        # links to and what generate_rss.collect_cms_articles emits.
-        url = f"https://www.mutapatimes.com/articles/{slug}.html"
-        yield {
-            "title": title,
-            "source": author,
-            "url": url,
-            "publishedAt": date_m.group(1) if date_m else "",
-        }
+    """Yield {title, source, url, publishedAt} per published markdown
+    article in both folders: content/articles (originals) and
+    content/wires (auto-imported archive). Drafts are skipped.
+
+    Without walking the wires folder, every wire entry in
+    content/articles/index.json points to a card_image path that 404s,
+    which is what was breaking the stories rail."""
+    for folder in (CMS_DIR, WIRES_DIR):
+        for md in glob.glob(os.path.join(folder, "*.md")):
+            slug = os.path.splitext(os.path.basename(md))[0]
+            if slug == "index":
+                continue
+            try:
+                with open(md, "r", encoding="utf-8") as f:
+                    text = f.read()
+            except OSError:
+                continue
+            m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+            if not m:
+                continue
+            fm = m.group(1)
+            if re.search(r'^draft:\s*true\s*$', fm, re.MULTILINE | re.IGNORECASE):
+                continue
+            title_m = re.search(r'^title:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm,
+                                re.MULTILINE)
+            date_m = re.search(r"^date:[^\S\n]*['\"]?(\S+)", fm, re.MULTILINE)
+            author_m = re.search(r'^author:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm,
+                                  re.MULTILINE)
+            title = title_m.group(1) if title_m else slug
+            author = author_m.group(1) if author_m else "Mutapa Times"
+            # CMS articles live at /articles/{slug}.html — same URL build_news_pages
+            # links to and what generate_rss.collect_cms_articles emits.
+            url = f"https://www.mutapatimes.com/articles/{slug}.html"
+            yield {
+                "title": title,
+                "source": author,
+                "url": url,
+                "publishedAt": date_m.group(1) if date_m else "",
+            }
 
 
 def collect_articles():

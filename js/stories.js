@@ -356,6 +356,14 @@
         el("p", { class: "story-title-headline", text: snap.title || "" }),
       ]);
       var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
+      // Some cards are referenced in index.json but the PNG hasn't been
+      // rendered yet (cron generates them after fetch). When the image
+      // 404s, drop the element rather than rendering the broken-image
+      // icon with alt text leaking through.
+      card.addEventListener("error", function onErr() {
+        card.removeEventListener("error", onErr);
+        if (card.parentNode) card.parentNode.removeChild(card);
+      }, { once: true });
       var bottom = el("div", { class: "story-bottom" }, [
         el("a", {
           class: "story-bottom-cta",

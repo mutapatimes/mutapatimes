@@ -18,7 +18,8 @@ SITE_BASE = "https://www.property.co.zw"
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "property-listings.json")
 USER_AGENT = "Mozilla/5.0 (compatible; MutapaTimesBot/1.0; +https://www.mutapatimes.com)"
-MAX_LISTINGS = 24  # client renders top 12; extra is buffer
+MAX_LISTINGS = 200  # accumulate up to ~30 days of inflow; page filters
+RETENTION_DAYS = 30  # prune listings older than this
 
 
 # ── Card extraction ────────────────────────────────────────

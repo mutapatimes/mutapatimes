@@ -20,7 +20,8 @@ from datetime import datetime, timezone
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "jobs.json")
 USER_AGENT = "Mozilla/5.0 (compatible; MutapaTimesBot/1.0; +https://www.mutapatimes.com)"
-MAX_JOBS = 60  # cap stored, page shows top ~20
+MAX_JOBS = 300  # accumulate up to ~30 days of inflow; page filters
+RETENTION_DAYS = 30  # prune listings older than this
 
 
 def fetch_html(url, timeout=30):
@@ -165,20 +166,67 @@ def main():
         print("\n  WARN: 0 jobs parsed across all sources. Not overwriting.")
         sys.exit(1)
 
-    # Deduplicate by URL (same job sometimes appears on multiple boards)
-    seen = set()
-    unique = []
+    # ── Accumulate like the wire archive: each listing keeps a
+    #    first_seen timestamp, and we prune anything older than
+    #    RETENTION_DAYS. Source removals no longer drop active listings
+    #    that are still within the window.
+    from datetime import timedelta
+    now = datetime.now(timezone.utc)
+    now_iso = now.isoformat()
+    retention_cutoff = now - timedelta(days=RETENTION_DAYS)
+
+    # Load the previous run, keyed by URL
+    existing = {}
+    try:
+        with open(OUTPUT_FILE) as f:
+            prev = json.load(f)
+        for old in prev.get("jobs", []):
+            u = old.get("url")
+            if u:
+                existing[u] = old
+    except (IOError, json.JSONDecodeError):
+        pass
+
+    # Merge fresh fetch over the existing dict, preserving first_seen
+    seen_urls = set()
     for j in all_jobs:
         u = j.get("url", "")
-        if not u or u in seen:
+        if not u or u in seen_urls:
             continue
-        seen.add(u)
-        unique.append(j)
+        seen_urls.add(u)
+        if u in existing:
+            j["first_seen"] = existing[u].get("first_seen") or now_iso
+        else:
+            j["first_seen"] = now_iso
+        j["last_seen"] = now_iso
+        existing[u] = j
+
+    # Drop entries whose first_seen is older than RETENTION_DAYS
+    def _within_retention(entry):
+        ts = entry.get("first_seen")
+        if not ts:
+            return True  # keep entries with no timestamp (legacy); next run will stamp them
+        try:
+            d = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+            return d >= retention_cutoff
+        except ValueError:
+            return True
+
+    fresh_count = sum(1 for j in existing.values() if j.get("first_seen") == now_iso and j["url"] in seen_urls)
+    kept_count = sum(1 for j in existing.values() if j.get("last_seen") != now_iso)
+    expired_count = sum(1 for j in existing.values() if not _within_retention(j))
+
+    unique = [j for j in existing.values() if _within_retention(j)]
+    # Newest first
+    unique.sort(key=lambda j: j.get("first_seen", ""), reverse=True)
     unique = unique[:MAX_JOBS]
 
+    print(f"  Listings: {fresh_count} new, {kept_count} carried over, {expired_count} expired (>{RETENTION_DAYS}d)")
+
     output = {
-        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "fetched_at": now_iso,
         "sources": sources_used,
+        "retention_days": RETENTION_DAYS,
         "count": len(unique),
         "jobs": unique,
     }
