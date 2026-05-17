@@ -1244,7 +1244,26 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
     if index and isinstance(index[0], str):
         # Legacy data: drop and rebuild from on-disk frontmatter at end of run.
         index = []
+    # Stored slug format is "<date_prefix>-<bare_slug>" (see the
+    # index.append below). Seed the dedup set in that same shape so the
+    # subsequent check actually matches existing entries — the old code
+    # seeded with dated slugs but compared against bare slugs, which
+    # made every existing entry invisible to dedup and the same article
+    # got re-appended once per category run.
     indexed_slugs = {e.get("slug") for e in index if isinstance(e, dict)}
+    # Also pre-compute normalised existing wire titles so we can catch
+    # the case where the same wire article surfaces with two different
+    # URLs from two different feeds within the same run.
+    def _norm_title_outer(s):
+        return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+    existing_wire_titles_by_date = {}
+    for e in index:
+        if not isinstance(e, dict):
+            continue
+        nt_existing = _norm_title_outer(e.get("title", ""))
+        d = (e.get("date") or "")[:10]
+        if nt_existing and d:
+            existing_wire_titles_by_date.setdefault(d, set()).add(nt_existing)
 
     imported = 0
     # Match either a reporter contact email (jsmith@herald.co.zw) or
@@ -1287,15 +1306,13 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
         # Editorial filter: skip Crime + Politics beats entirely.
         if _is_banned_topic(title, desc):
             continue
-        # Title-based dedupe: if a normalised version of this title
-        # already matches an existing original-source article, skip it.
-        # This catches cases where the URLs differ but the article is
-        # the same one we already have (e.g. '4.5m' -> '45m' slug drift).
-        def _norm_title(s):
-            import re as _re
-            return _re.sub(r'[^a-z0-9]+', '', (s or '').lower())
-        nt = _norm_title(title)
-        if nt and any(_norm_title(e.get('title','')) == nt and e.get('source_type') == 'original'
+        # Title-based dedupe across all source types. Previously this
+        # only checked against source_type == 'original', so the same
+        # wire piece surfacing from two different category feeds with
+        # different URLs would re-import. We now drop it whenever a
+        # matching title already exists, regardless of source_type.
+        nt = _norm_title_outer(title)
+        if nt and any(_norm_title_outer(e.get('title','')) == nt
                       for e in index if isinstance(e, dict)):
             continue
 
@@ -1307,8 +1324,16 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
         date_prefix = dt.strftime("%Y-%m-%d")
 
         slug = _slugify(title)
+        dated_slug = f"{date_prefix}-{slug}"
         filename = f"{date_prefix}-{slug}.md"
         filepath = os.path.join(cms_dir, filename)
+
+        # Belt-and-braces: also dedupe by the dated slug itself, since
+        # the title check above misses normalisation drift (e.g. one
+        # feed adds "- The Herald" suffix while another doesn't, but
+        # _slugify collapses both to the same stem).
+        if dated_slug in indexed_slugs:
+            continue
 
         # Skip if file already exists
         if os.path.exists(filepath):
@@ -1347,13 +1372,13 @@ spotlight: false
         with open(filepath, "w") as f:
             f.write(frontmatter)
 
-        if slug not in indexed_slugs:
+        if dated_slug not in indexed_slugs:
             # Card path matches build_feed_cards.py's hash for CMS articles
             # (md5 of the canonical mutapatimes.com URL).
-            canonical = f"https://www.mutapatimes.com/articles/{date_prefix}-{slug}.html"
+            canonical = f"https://www.mutapatimes.com/articles/{dated_slug}.html"
             card_hash = hashlib.md5(canonical.encode("utf-8")).hexdigest()[:12]
             index.append({
-                "slug": f"{date_prefix}-{slug}",
+                "slug": dated_slug,
                 "title": title,
                 "date": date_str,
                 "category": category,
@@ -1364,8 +1389,13 @@ spotlight: false
                 "card_image": f"/img/cards/news/{card_hash}.png",
                 "featured": False,
             })
-            indexed_slugs.add(slug)
-            new_slugs_this_run.append(f"{date_prefix}-{slug}")
+            # Track the dated slug so the next iteration in this loop
+            # AND the dated-slug check at the top of the loop both work.
+            indexed_slugs.add(dated_slug)
+            # Update the title set so a follow-up surfacing of the same
+            # title (different URL, same date) hits the title dedup.
+            existing_wire_titles_by_date.setdefault(date_prefix, set()).add(nt)
+            new_slugs_this_run.append(dated_slug)
         existing_urls.add(url)
         imported += 1
         print(f"  Imported: {source} — {title[:60]}")

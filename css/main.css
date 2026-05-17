@@ -10629,63 +10629,110 @@ main.city-page ~ .essential-subscribe .essential-skyline {
 
 /* ─── Dark reading theme for series articles ─────────────────────────
    Set by build_static_pages.py when frontmatter has `series:`.
-   Applies a dark editorial backdrop to the whole article body.
+   Override the design tokens at body scope so every downstream rule
+   that already uses var(--paper)/var(--text)/etc. recolours itself
+   without us having to chase every selector. .paper has its own
+   background:var(--paper), so swapping the variable repaints the
+   whole reading surface in one step.
    ───────────────────────────────────────────────────────────────────── */
 body.series-page {
-  background: var(--series-bg, #0c1410);
-  color: var(--series-fg, #f4ede0);
+  /* Series palette — locked dark forest with a cream foreground.
+     Cards, banner and read-next strip read --series-bg/fg off of
+     their own inline style attribute, so we set the same vars here
+     to keep the whole page coherent. */
+  --series-bg: #0c1410;
+  --series-fg: #f4ede0;
+
+  /* Repaint the global tokens .paper, .article-body, headings etc.
+     are already using, so nothing has to be selector-targeted. */
+  --paper: #0c1410;
+  --bg: #0c1410;
+  --text: #f4ede0;
+  --text-mid: rgba(244,237,224,0.78);
+  --text-light: rgba(244,237,224,0.62);
+  --ink: #f4ede0;
+  --rule: rgba(244,237,224,0.16);
+  --rule-dark: rgba(244,237,224,0.32);
+
+  background-color: var(--series-bg);
+  color: var(--series-fg);
 }
-body.series-page .article-full,
-body.series-page .article-body,
-body.series-page .article-body-longform {
-  color: var(--series-fg, #f4ede0);
+body.series-page .paper {
+  background: var(--series-bg);
+  color: var(--series-fg);
 }
-body.series-page .article-breadcrumb,
-body.series-page .article-breadcrumb a {
-  color: var(--series-fg, #f4ede0);
-  opacity: 0.7;
-}
-body.series-page .article-breadcrumb a:hover { opacity: 1; }
+/* Headings + body text — explicit so any hard-coded ink colour (the
+   article CSS sets .article-title { color: #1a1a1a } etc.) loses to
+   us instead of leaving cream type on cream paper. */
 body.series-page .article-title,
+body.series-page .article-body,
+body.series-page .article-body-longform,
+body.series-page .article-body p,
+body.series-page .article-body li,
 body.series-page .article-body h1,
 body.series-page .article-body h2,
 body.series-page .article-body h3,
-body.series-page .article-body h4 {
-  color: var(--series-fg, #f4ede0);
-}
-body.series-page .article-body p,
-body.series-page .article-body li {
-  color: var(--series-fg, #f4ede0);
-  opacity: 0.92;
-}
-body.series-page .article-body a {
-  color: var(--series-accent, #f4ede0);
-  text-decoration-color: rgba(244,237,224,0.5);
-}
-body.series-page .article-body blockquote {
-  border-left-color: var(--series-accent, #f4ede0);
-  color: var(--series-fg, #f4ede0);
-  opacity: 0.92;
-}
-body.series-page .article-category-tag {
-  background: rgba(244,237,224,0.18);
-  color: var(--series-accent, #f4ede0);
-}
+body.series-page .article-body h4,
+body.series-page .article-body strong,
+body.series-page .article-body em,
 body.series-page .article-meta,
 body.series-page .article-author,
 body.series-page .article-date {
-  color: var(--series-fg, #f4ede0);
-  opacity: 0.68;
+  color: var(--series-fg);
+}
+body.series-page .article-breadcrumb,
+body.series-page .article-breadcrumb a,
+body.series-page .article-breadcrumb span {
+  color: rgba(244,237,224,0.65);
+}
+body.series-page .article-breadcrumb a:hover { color: var(--series-fg); }
+body.series-page .article-body a {
+  color: var(--series-fg);
+  text-decoration: underline;
+  text-decoration-color: rgba(244,237,224,0.45);
+  text-underline-offset: 3px;
+}
+body.series-page .article-body a:hover {
+  text-decoration-color: var(--series-fg);
+}
+body.series-page .article-body blockquote {
+  border-left: 3px solid rgba(244,237,224,0.5);
+  color: var(--series-fg);
+}
+body.series-page .article-category-tag {
+  background: rgba(244,237,224,0.16);
+  color: var(--series-fg);
 }
 body.series-page .article-share-label,
-body.series-page .article-share,
+body.series-page .article-share {
+  color: rgba(244,237,224,0.72);
+}
 body.series-page .share-btn,
 body.series-page .whatsapp-btn {
-  color: var(--series-fg, #f4ede0);
-  border-color: rgba(255,255,255,0.18);
+  color: var(--series-fg);
+  border-color: rgba(244,237,224,0.22);
 }
 body.series-page .article-back a {
-  color: var(--series-accent, #f4ede0);
+  color: var(--series-fg);
+  text-decoration: underline;
+  text-decoration-color: rgba(244,237,224,0.45);
+}
+/* Masthead + dividers + topbar — keep the brand readable on dark. */
+body.series-page .topbar,
+body.series-page .titleDiv,
+body.series-page .title-link,
+body.series-page #mainNav,
+body.series-page #mainNav a,
+body.series-page .topbar-brand,
+body.series-page .title {
+  color: var(--series-fg);
+}
+body.series-page hr,
+body.series-page .topHr,
+body.series-page .bottomHr,
+body.series-page .dateHr {
+  border-color: rgba(244,237,224,0.16) !important;
+  background: rgba(244,237,224,0.16);
 }
 
 /* Series banner that sits above the article header on series articles.
@@ -10699,23 +10746,23 @@ body.series-page .article-back a {
   max-width: 880px;
   margin: 24px auto 18px;
   padding: 14px 22px;
-  border: 1px solid var(--series-accent, #f4ede0);
+  border: 1px solid rgba(244,237,224,0.32);
   border-radius: 999px;
-  background: rgba(244,237,224,0.08);
+  background: rgba(244,237,224,0.06);
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
 }
 .series-page-banner-text {
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--series-accent, #f4ede0);
+  color: rgba(244,237,224,0.78);
 }
 .series-page-banner-cta {
   color: var(--series-fg, #f4ede0);
   text-decoration: none;
   font-weight: 600;
 }
-.series-page-banner-cta:hover { color: var(--series-accent, #f4ede0); }
+.series-page-banner-cta:hover { text-decoration: underline; }
 @media (max-width: 540px) {
   .series-page-banner { flex-direction: column; align-items: flex-start; border-radius: 14px; }
 }
