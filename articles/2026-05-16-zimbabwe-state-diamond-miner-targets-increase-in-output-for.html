@@ -32,8 +32,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS — loaded non-blocking via print-media swap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css?v=87">
@@ -241,12 +241,12 @@
       <aside class="more-to-read" aria-label="More articles">
         <h2 class="more-to-read-heading">More to read</h2>
         <div class="more-to-read-grid">
-        <a class="more-card" href="./2026-05-16-boxer-ndodana-ncube-dies.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Boxer Ndodana Ncube dies</h3><span class="more-card-date">May 16, 2026</span></a>
+        <a class="more-card" href="./2026-05-16-minute-maid-to-launch-affordable-1-litre-pack-in-zimbabwe-as.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Minute Maid to Launch Affordable 1-Litre Pack in Zimbabwe as Schweppes Expands Juice Brand</h3><span class="more-card-date">May 16, 2026</span></a>
+    <a class="more-card" href="./2026-05-16-crocodile-attacks-increase-as-water-levels-risethe-danger-be.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Crocodile attacks increase as water levels rise:The danger beneath calm waters</h3><span class="more-card-date">May 16, 2026</span></a>
+    <a class="more-card" href="./2026-05-16-boxer-ndodana-ncube-dies.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Boxer Ndodana Ncube dies</h3><span class="more-card-date">May 16, 2026</span></a>
+    <a class="more-card" href="./2026-05-16-boxer-ndodana-ncube-dies.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Boxer Ndodana Ncube dies</h3><span class="more-card-date">May 16, 2026</span></a>
     <a class="more-card" href="./2026-05-16-zimbabwe-indigenous-churches-back-cab3-constitutional-change.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe indigenous churches back CAB3 Constitutional changes</h3><span class="more-card-date">May 16, 2026</span></a>
-    <a class="more-card" href="./2026-05-16-zimbabwes-vivid-english-first-names-carry-family-histories-f.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe’s vivid English first names carry family histories, from Privilege to Shame</h3><span class="more-card-date">May 16, 2026</span></a>
-    <a class="more-card" href="./2026-05-16-zimbabwes-diaspora-reshapes-real-estate-and-farming-investme.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe’s diaspora reshapes real estate and farming investment trends</h3><span class="more-card-date">May 16, 2026</span></a>
-    <a class="more-card" href="./2026-05-16-zimbabwes-diaspora-reshapes-real-estate-and-farming-investme.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe’s diaspora reshapes real estate and farming investment trends</h3><span class="more-card-date">May 16, 2026</span></a>
-    <a class="more-card" href="./2026-05-16-zimbabwes-diaspora-reshapes-real-estate-and-farming-investme.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe’s diaspora reshapes real estate and farming investment trends</h3><span class="more-card-date">May 16, 2026</span></a>
+    <a class="more-card" href="./2026-05-16-zimbabwe-indigenous-churches-back-cab3-constitutional-change.html"><span class="more-card-cat">BUSINESS</span><h3 class="more-card-title">Zimbabwe indigenous churches back CAB3 Constitutional changes</h3><span class="more-card-date">May 16, 2026</span></a>
         </div>
       </aside>
       <div class="article-back"><a href="../articles.html">&larr; All articles</a></div>
@@ -395,11 +395,11 @@ if ('serviceWorker' in navigator) {
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Contentsquare / Hotjar -->
-<script src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
+<!-- Contentsquare / Hotjar — deferred so it never blocks LCP -->
+<script defer src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
 
-<!-- Metricool -->
-<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"})});</script>
+<!-- Metricool — loaded after window.load so it never delays first paint -->
+<script>window.addEventListener("load",function(){var s=document.createElement("script");s.async=true;s.src="https://tracker.metricool.com/resources/be.js";s.onload=function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"});};document.head.appendChild(s);});</script>
 </body>
 
 </html>
