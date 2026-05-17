@@ -88,7 +88,12 @@ def generate():
             continue
         if is_draft:
             continue
-        lastmod = date_str or now_str[:10]
+        # Normalize lastmod to YYYY-MM-DD. Some legacy articles have
+        # frontmatter dates like "2026-02-13T09:31:00" (no timezone)
+        # which Google flags as Invalid date. Truncating to the date
+        # component is always W3C-valid and good enough for sitemap
+        # priority / crawl-frequency hints.
+        lastmod = (date_str or now_str)[:10]
         loc = f"{BASE_URL}/articles/{slug}"
         urls.append(
             f"  <url>\n"
