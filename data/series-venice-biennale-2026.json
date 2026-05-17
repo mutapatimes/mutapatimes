@@ -1,0 +1,66 @@
+{
+  "key": "venice-biennale-2026",
+  "name": "Scene Report: Venice Biennale",
+  "eyebrow": "Scene Report",
+  "tagline": "Seven dispatches from Zimbabwe's pavilion at the 61st Venice Biennale",
+  "description": "A week inside the Pavilion of Zimbabwe — an essay from opening night, plus six studio-deep profiles of the artists in the room.",
+  "theme": "dark",
+  "color_bg": "#0c1410",
+  "color_fg": "#f4ede0",
+  "color_accent": "#f4ede0",
+  "hero_image": "/img/uploads/venice-2026/main/hero.jpg",
+  "hero_image_credit": "1925 Glen Norah",
+  "landing_url": "/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html",
+  "rail_chip_image": "/img/uploads/isnt_it_lovely/joanna_masiyiwa_speach_during_theopening.jpeg",
+  "articles": [
+    {
+      "order": 1,
+      "slug": "2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions",
+      "title": "Shumba Maasai in Venice",
+      "label": "PREVIEW",
+      "image": "/img/uploads/venice-biennale-shumba-maasai.jpg"
+    },
+    {
+      "order": 2,
+      "slug": "2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe",
+      "title": "Isn't it lovely: a week in Venice with the Pavilion of Zimbabwe",
+      "label": "ESSAY",
+      "image": "/img/uploads/venice-2026/main/hero.jpg"
+    },
+    {
+      "order": 3,
+      "slug": "2026-05-14-felix-shumba-pavilion-of-zimbabwe-venice-biennale",
+      "title": "Felix Shumba: charcoal as a register of disappearance",
+      "label": "ARTIST",
+      "image": "/img/uploads/venice-2026/shumba/hero.jpg"
+    },
+    {
+      "order": 4,
+      "slug": "2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale",
+      "title": "Franklyn Dzingai: family albums and the neural commons",
+      "label": "ARTIST",
+      "image": "/img/uploads/venice-2026/dzingai/hero.jpg"
+    },
+    {
+      "order": 5,
+      "slug": "2026-05-14-gideon-gomo-pavilion-of-zimbabwe-venice-biennale",
+      "title": "Gideon Gomo: from stone to bronze, the ancestral algorithm",
+      "label": "ARTIST",
+      "image": "/img/uploads/venice-2026/gomo/hero.jpg"
+    },
+    {
+      "order": 6,
+      "slug": "2026-05-14-pardon-mapondera-pavilion-of-zimbabwe-venice-biennale",
+      "title": "Pardon Mapondera: gone but not forgotten",
+      "label": "ARTIST",
+      "image": "/img/uploads/venice-2026/mapondera/hero.jpg"
+    },
+    {
+      "order": 7,
+      "slug": "2026-05-14-eva-raath-pavilion-of-zimbabwe-venice-biennale",
+      "title": "Eva Raath: a slow archive of stitched memory",
+      "label": "ARTIST",
+      "image": "/img/uploads/venice-2026/raath/hero.jpg"
+    }
+  ]
+}

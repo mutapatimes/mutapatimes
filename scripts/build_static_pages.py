@@ -163,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=89">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=92">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -505,11 +505,12 @@ def page_footer(depth=1):
 
   <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/quote-share.js"></script>
-  <script defer src="{prefix}js/stories.js"></script>
+  <script defer src="{prefix}js/stories.js?v=3"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
   <script defer src="/js/feature-story.js?v=1"></script>
+  <script defer src="/js/series.js?v=1"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{
@@ -706,6 +707,11 @@ def build_articles():
         hero_eyebrow = meta.get("hero_eyebrow", "FEATURE")
         hero_image_credit = meta.get("hero_image_credit", "")
         read_minutes = meta.get("read_minutes", "")
+        # Series membership — if present, applies the dark series theme
+        # via body class `series-page` and adds the read-next strip at
+        # the end of the body. js/series.js fills the strip at runtime
+        # against /data/series-<key>.json.
+        series_key = meta.get("series", "").strip()
         canonical = f"{BASE_URL}/articles/{slug}.html"
         # Brand headline card as og:image so Metricool / X / Facebook show
         # the on-brand card instead of the scraped article hero. The
@@ -756,7 +762,13 @@ def build_articles():
 
         # Build page
         html_parts = []
-        body_class = "longform-page" if longform else ""
+        body_class_parts = []
+        if longform:
+            body_class_parts.append("longform-page")
+        if series_key:
+            body_class_parts.append("series-page")
+            body_class_parts.append(f"series-{esc(series_key)}")
+        body_class = " ".join(body_class_parts)
         html_parts.append(page_head(page_title, summary, canonical, "article", og_image, depth=1))
         html_parts.append(f"""
 <script type="application/ld+json">
@@ -783,6 +795,16 @@ def build_articles():
         <a href="../articles.html">Articles</a> <span aria-hidden="true">/</span>
         <span>{esc(title)}</span>
       </nav>""")
+
+        # Series banner — appears on articles that are part of a curated
+        # series. Pulls label/landing from /data/series-<key>.json at
+        # runtime via js/series.js (data-series attr).
+        if series_key:
+            html_parts.append(f"""
+      <div class="series-page-banner" data-series="{esc(series_key)}">
+        <span class="series-page-banner-text">Part of a series</span>
+        <a class="series-page-banner-cta" href="../articles.html#series-{esc(series_key)}">See all dispatches &rarr;</a>
+      </div>""")
 
         if longform and image:
             # NYT-style longform hero: full-bleed image with headline,
@@ -834,6 +856,15 @@ def build_articles():
 
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")
+
+        # Series read-next strip — only on articles that are part of
+        # a curated series. js/series.js fills the rail with the rest
+        # of the series, current article excluded.
+        if series_key:
+            html_parts.append(
+                f'      <div class="series-readnext-slot" data-series="{esc(series_key)}" '
+                f'data-current-slug="{esc(slug)}"></div>'
+            )
 
         # Feature Story of the Week — filled in by /js/feature-story.js
         # at runtime against data/feature-story.json. Hidden if the

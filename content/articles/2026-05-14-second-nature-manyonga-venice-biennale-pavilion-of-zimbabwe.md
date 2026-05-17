@@ -19,6 +19,8 @@ longform: false
 hero_eyebrow: ESSAY · VENICE
 hero_image_credit: Photograph by 1925 Glen Norah
 read_minutes: Twelve
+series: venice-biennale-2026
+series_order: 2
 ---
 I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the road in from Verona by a margin of approximately ten minutes of plausible weather, was now soaked through. So was I.
 

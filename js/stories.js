@@ -24,13 +24,60 @@
   var MAX_PER_HIGHLIGHT = 12;       // cap so a single category doesn't run forever
   var MIN_PER_HIGHLIGHT = 3;        // hide groups too thin to be interesting
   var FEATURE_AD_EVERY = 5;         // insert the Feature Story slide after every N cards
+  var SUBSCRIBE_AD_EVERY = 3;       // insert a Subscribe slide after every N cards
+  var SUBSCRIBE_AD_DURATION_MS = 6000;
   var INDEX_URL = "/content/articles/index.json";
   var FEATURE_AD_URL = "/data/feature-story.json";
+  // Curated editorial series promoted at the front of the rail. Each
+  // becomes a single highlight that plays through every article in the
+  // series with the series colour scheme. Order here = order on the rail.
+  var SERIES_KEYS = ["venice-biennale-2026"];
+  function seriesManifestUrl(key) { return "/data/series-" + key + ".json"; }
+
+  // Rotating subscribe-promo slides. Each uses one of the break-N.jpg
+  // hero photos and links to /subscribe. Same full-height layout as
+  // the Feature Story slide.
+  var SUBSCRIBE_AD_VARIANTS = [
+    {
+      image: "/img/break-1.jpg",
+      eyebrow: "The briefing",
+      title: "Get the next story first.",
+      summary: "Curated foreign press, market data and original analysis. Twice a week. Free.",
+    },
+    {
+      image: "/img/break-2.jpg",
+      eyebrow: "The Mutapa Times",
+      title: "Zimbabwe, outside-in.",
+      summary: "Join readers in over thirty countries. The diaspora's intelligence newspaper.",
+    },
+    {
+      image: "/img/break-3.jpg",
+      eyebrow: "Mondays & Thursdays",
+      title: "Essential intelligence for the diaspora.",
+      summary: "Two briefings a week, hand-edited from our newsroom. Free forever.",
+    },
+  ];
 
   // Pre-loaded Feature Story payload. Filled at init() before
   // highlights are built. Used by injectFeatureAds() to splice an
   // ad slide in after every Nth card in each highlight.
   var _featureAd = null;
+  // Walking counter so subscribe variants rotate evenly across the rail.
+  var _subscribeAdIndex = 0;
+  // Loaded series manifests, keyed by series key. Populated in init().
+  var _seriesManifests = {};
+
+  // Ensure URLs that point to an article have the .html extension.
+  // GH Pages serves /articles/foo.html, not /articles/foo, so the
+  // feature ad anchor was 404'ing without this.
+  function withHtml(u) {
+    if (!u) return u;
+    if (/^https?:\/\//i.test(u)) return u;            // absolute, leave alone
+    if (/^mailto:|^tel:/i.test(u)) return u;
+    if (/\.[a-z]{2,5}(\?|#|$)/i.test(u)) return u;    // already has extension
+    if (/^#/.test(u)) return u;                       // pure fragment
+    return u.replace(/\/$/, "") + ".html";
+  }
 
   // Highlight order — categories shown left-to-right when present.
   // Editorial choice: no Crime, no Politics rails.
@@ -76,6 +123,11 @@
   function viewerColorFor(key) {
     return VIEWER_COLORS[key] || "#1A1A1A";
   }
+  // Read a colour off the highlight first (set by buildSeriesHighlight),
+  // fall back to the static palette by key. Lets series themes paint
+  // the chip + viewer without registering keys in CHIP_COLORS.
+  function chipColorFor(h) { return (h && h.chipColor) || colorFor(h && h.key); }
+  function viewerColorForH(h) { return (h && h.viewerColor) || viewerColorFor(h && h.key); }
 
   // ---- DOM helpers ----
   function el(tag, props, children) {
@@ -135,6 +187,71 @@
     return out;
   }
 
+  // Subscribe promos rotate through SUBSCRIBE_AD_VARIANTS, one slide
+  // inserted after every SUBSCRIBE_AD_EVERY real story cards. Runs
+  // after injectFeatureAds so the two ad types co-exist without
+  // double-counting positions; feature ads are passed through.
+  function injectSubscribeAds(items) {
+    var out = [];
+    var realCardCount = 0;
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      out.push(it);
+      // Don't count ads when computing the every-N-real-cards rhythm.
+      if (it && (it._isFeatureAd || it._isSubscribeAd)) continue;
+      realCardCount++;
+      var isLast = i === items.length - 1;
+      if (realCardCount % SUBSCRIBE_AD_EVERY === 0 && !isLast) {
+        var v = SUBSCRIBE_AD_VARIANTS[_subscribeAdIndex % SUBSCRIBE_AD_VARIANTS.length];
+        _subscribeAdIndex++;
+        out.push({
+          _isSubscribeAd: true,
+          slug: "subscribe-" + _subscribeAdIndex,
+          title: v.title,
+          summary: v.summary,
+          eyebrow: v.eyebrow,
+          image: v.image,
+          url: "/subscribe.html",
+        });
+      }
+    }
+    return out;
+  }
+
+  // Build a single highlight from a loaded series manifest. The series
+  // is a curated package, so it sidesteps MIN/MAX caps and feature-ad
+  // injection — every article in the manifest, in order, gets its own
+  // snap. The chip uses the manifest's rail_chip_image instead of a
+  // text label so it stands out on the rail.
+  function buildSeriesHighlight(manifest) {
+    if (!manifest || !manifest.articles || !manifest.articles.length) return null;
+    var ordered = manifest.articles.slice().sort(function (a, b) {
+      return (a.order || 0) - (b.order || 0);
+    });
+    var items = ordered.map(function (a) {
+      return {
+        slug: a.slug,
+        title: a.title || "",
+        summary: a.summary || "",
+        image: a.image || "",
+        // No baked card; the story-card image-fallback chain in
+        // renderViewer() will use snap.image or the cream typographic card.
+        card_image: "",
+        category: manifest.eyebrow || "Scene Report",
+        _isSeriesSnap: true,
+      };
+    });
+    return {
+      key: "_series_" + manifest.key,
+      label: manifest.name ? manifest.name.replace(/^Scene Report:\s*/i, "") : "Scene Report",
+      items: items,
+      chipImage: manifest.rail_chip_image || manifest.hero_image || "",
+      chipColor: manifest.color_bg || "#0c1410",
+      viewerColor: manifest.color_bg || "#0c1410",
+      isSeries: true,
+    };
+  }
+
   // ---- Highlight construction ----
   function buildHighlights(entries) {
     // Keep only entries with a card_image (fresh enough to still be on disk).
@@ -150,18 +267,25 @@
 
     var hi = [];
 
+    // Curated series — promoted at the very front of the rail so the
+    // editorial package leads. One highlight per series.
+    SERIES_KEYS.forEach(function (key) {
+      var sh = buildSeriesHighlight(_seriesManifests[key]);
+      if (sh) hi.push(sh);
+    });
+
     // "Latest" — top across all categories, always first
     hi.push({
       key: "_latest",
       label: "Latest",
-      items: injectFeatureAds(fresh.slice(0, MAX_PER_HIGHLIGHT)),
+      items: injectSubscribeAds(injectFeatureAds(fresh.slice(0, MAX_PER_HIGHLIGHT))),
     });
 
     // Category buckets in the order we want them
     CATEGORY_ORDER.forEach(function (cat) {
       var items = byCat[cat];
       if (!items || items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)) });
+      hi.push({ key: cat, label: cat, items: injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT))) });
     });
 
     // Anything else, alphabetically
@@ -169,7 +293,7 @@
       if (CATEGORY_ORDER.indexOf(cat) !== -1) return;
       var items = byCat[cat];
       if (items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)) });
+      hi.push({ key: cat, label: cat, items: injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT))) });
     });
 
     return hi;
@@ -194,9 +318,9 @@
     var v = loadViewed();
     var bucket = v[h.key] || {};
     for (var i = 0; i < h.items.length; i++) {
-      // Feature ads aren't editorial cards - they don't get a viewed
-      // tick, otherwise the ring would never dim.
-      if (h.items[i] && h.items[i]._isFeatureAd) continue;
+      // Ad slides (Feature Story + Subscribe) aren't editorial cards;
+      // they don't get a viewed tick, otherwise the ring would never dim.
+      if (h.items[i] && (h.items[i]._isFeatureAd || h.items[i]._isSubscribeAd)) continue;
       if (!bucket[h.items[i].slug]) return false;
     }
     return true;
@@ -208,8 +332,23 @@
     var inner = el("div", { class: "stories-rail-inner" });
     highlights.forEach(function (h, i) {
       var viewed = isHighlightFullyViewed(h);
+      // Series chips render the rail_chip_image as a full-bleed
+      // background instead of the standard text-on-colour treatment.
+      var chipStyle = "background:" + chipColorFor(h);
+      var chipChildren = [el("span", { class: "story-chip-label", text: h.label })];
+      if (h.chipImage) {
+        chipStyle += ";background-image:url('" + h.chipImage.replace(/'/g, "\\'") +
+                     "');background-size:cover;background-position:center;";
+        // Replace the label with a wordmark badge that reads cleanly
+        // on top of a photo.
+        chipChildren = [
+          el("span", { class: "story-chip-label story-chip-label--badge", text: h.label }),
+        ];
+      }
+      var thumbCls = "story-thumb" + (viewed ? " is-viewed" : " is-unviewed");
+      if (h.isSeries) thumbCls += " story-thumb--series";
       var thumb = el("button", {
-        class: "story-thumb" + (viewed ? " is-viewed" : " is-unviewed"),
+        class: thumbCls,
         type: "button",
         "data-highlight": h.key,
         "aria-label": h.label + " — " + h.items.length + " stories" + (viewed ? " (all viewed)" : ""),
@@ -220,10 +359,8 @@
         el("span", { class: "story-chip-glow" }, [
           el("span", {
             class: "story-chip",
-            style: "background:" + colorFor(h.key),
-          }, [
-            el("span", { class: "story-chip-label", text: h.label }),
-          ]),
+            style: chipStyle,
+          }, chipChildren),
         ]),
       ]);
       inner.appendChild(thumb);
@@ -316,8 +453,12 @@
       ]),
     ]);
 
-    var isAd = !!snap._isFeatureAd;
-    var snapDuration = isAd ? FEATURE_AD_DURATION_MS : SNAP_DURATION_MS;
+    var isFeatureAd = !!snap._isFeatureAd;
+    var isSubscribeAd = !!snap._isSubscribeAd;
+    var isAd = isFeatureAd || isSubscribeAd;
+    var snapDuration = isFeatureAd ? FEATURE_AD_DURATION_MS
+                     : isSubscribeAd ? SUBSCRIBE_AD_DURATION_MS
+                     : SNAP_DURATION_MS;
 
     // Tap zones (don't intercept clicks on top/bottom UI)
     var tapLeft = el("button", { class: "story-tap story-tap--left", type: "button", "aria-label": "Previous", onclick: prev });
@@ -330,21 +471,29 @@
     v.overlay.appendChild(tapRight);
 
     if (isAd) {
-      // Feature Story ad slide: lead image as full background, eyebrow,
-      // big headline, summary tease, pill CTA. Tappable across the
-      // whole slide (the body element is wrapped in an anchor).
+      // Full-bleed ad slide. Same shell for both Feature Story promos
+      // and Subscribe promos — different copy + CTA + destination.
       v.overlay.style.background = "#0a0a0a";
+      var adHref = isSubscribeAd
+        ? "/subscribe.html"
+        : withHtml(snap.url || ("/articles/" + snap.slug));
       var adAnchor = el("a", {
         class: "story-feature-ad",
-        href: snap.url || ("/articles/" + snap.slug),
+        href: adHref,
       });
       var adBg = el("div", { class: "story-feature-ad-bg" });
       if (snap.image) adBg.style.backgroundImage = 'url("' + snap.image + '")';
+      var eyebrowText = isSubscribeAd
+        ? (snap.eyebrow || "The Mutapa Times")
+        : "Feature Story of the Week";
+      var ctaText = isSubscribeAd
+        ? "Subscribe — it’s free"
+        : "Read the full feature";
       var adInner = el("div", { class: "story-feature-ad-inner" }, [
-        el("p", { class: "story-feature-ad-eyebrow", text: "Feature Story of the Week" }),
+        el("p", { class: "story-feature-ad-eyebrow", text: eyebrowText }),
         el("h2", { class: "story-feature-ad-title", text: snap.title || "" }),
         el("p", { class: "story-feature-ad-summary", text: (snap.summary || "").slice(0, 180) }),
-        el("span", { class: "story-feature-ad-cta", text: "Read the full feature" }),
+        el("span", { class: "story-feature-ad-cta", text: ctaText }),
       ]);
       adAnchor.appendChild(adBg);
       adAnchor.appendChild(adInner);
@@ -355,15 +504,46 @@
         el("p", { class: "story-title-eyebrow", text: (h.label === "Latest" ? (snap.category || "Story") : h.label) }),
         el("p", { class: "story-title-headline", text: snap.title || "" }),
       ]);
-      var card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
-      // Some cards are referenced in index.json but the PNG hasn't been
-      // rendered yet (cron generates them after fetch). When the image
-      // 404s, drop the element rather than rendering the broken-image
-      // icon with alt text leaking through.
-      card.addEventListener("error", function onErr() {
-        card.removeEventListener("error", onErr);
-        if (card.parentNode) card.parentNode.removeChild(card);
-      }, { once: true });
+      // Card source preference:
+      //   1. baked card_image PNG (on-brand 1080x1350 butter card)
+      //   2. article hero `image` from frontmatter
+      //   3. cream typographic fallback rendered in JS
+      // Each level is tried in turn via the img error handler.
+      var card;
+      function buildCreamFallback() {
+        var fallback = el("div", { class: "story-card story-card--fallback" }, [
+          el("p", { class: "story-card-fallback-eyebrow", text: snap.category || h.label || "The Mutapa Times" }),
+          el("p", { class: "story-card-fallback-headline", text: snap.title || "" }),
+          el("p", { class: "story-card-fallback-mark", text: "The Mutapa Times" }),
+        ]);
+        return fallback;
+      }
+      if (snap.card_image) {
+        card = el("img", { class: "story-card", src: snap.card_image, alt: snap.title || "" });
+        card.addEventListener("error", function onPrimaryErr() {
+          card.removeEventListener("error", onPrimaryErr);
+          if (snap.image) {
+            // Try the article hero image, full-bleed framed inside the card area.
+            var hero = el("img", { class: "story-card story-card--hero", src: snap.image, alt: snap.title || "" });
+            hero.addEventListener("error", function onHeroErr() {
+              hero.removeEventListener("error", onHeroErr);
+              if (hero.parentNode) hero.parentNode.replaceChild(buildCreamFallback(), hero);
+            }, { once: true });
+            if (card.parentNode) card.parentNode.replaceChild(hero, card);
+            card = hero;
+          } else if (card.parentNode) {
+            card.parentNode.replaceChild(buildCreamFallback(), card);
+          }
+        }, { once: true });
+      } else if (snap.image) {
+        card = el("img", { class: "story-card story-card--hero", src: snap.image, alt: snap.title || "" });
+        card.addEventListener("error", function onHeroOnlyErr() {
+          card.removeEventListener("error", onHeroOnlyErr);
+          if (card.parentNode) card.parentNode.replaceChild(buildCreamFallback(), card);
+        }, { once: true });
+      } else {
+        card = buildCreamFallback();
+      }
       var bottom = el("div", { class: "story-bottom" }, [
         el("a", {
           class: "story-bottom-cta",
@@ -371,7 +551,7 @@
           text: "Read the full briefing →",
         }),
       ]);
-      v.overlay.style.background = viewerColorFor(h.key);
+      v.overlay.style.background = viewerColorForH(h);
       v.overlay.appendChild(titleArea);
       v.overlay.appendChild(card);
       v.overlay.appendChild(bottom);
@@ -597,8 +777,15 @@
         }
       })
       .catch(function () { /* no feature, no ads - silent no-op */ });
-    Promise.all([featurePromise, fetchJSON(INDEX_URL)]).then(function (results) {
-      var data = results[1];
+    // Curated series manifests — each becomes a single highlight at
+    // the front of the rail. Failures are silent (skipped).
+    var seriesPromises = SERIES_KEYS.map(function (key) {
+      return fetchJSON(seriesManifestUrl(key))
+        .then(function (m) { if (m) _seriesManifests[key] = m; })
+        .catch(function () { /* no manifest -> highlight skipped */ });
+    });
+    Promise.all([featurePromise].concat(seriesPromises).concat([fetchJSON(INDEX_URL)])).then(function (results) {
+      var data = results[results.length - 1];
       if (!Array.isArray(data) || !data.length) return;
       var hi = buildHighlights(data);
       if (!hi.length) { rail.style.display = "none"; return; }

@@ -9,6 +9,8 @@ featured: true
 headline_position: 0
 source_type: original
 spotlight: true
+series: venice-biennale-2026
+series_order: 1
 ---
 
 Some time around midday on Saturday 9 May, a slow procession entered the Campo San Polo. At its head walked **Chief Ngondonga of Murehwa**, or rather his ceremonial figure, inhabited by the Zimbabwean multidisciplinary artist Shumba Maasai: robed, deliberate, accompanied by a small entourage and an array of audio equipment. The party paused. Headphones were unspooled and offered, one set at a time, to anyone who would take one. There was no concert; nothing was diffused into the square. For perhaps forty minutes, passers-by (Biennale visitors, tourists, residents) were drawn individually into the work's private acoustic interior: the layered recordings of *DARE*, Maasai's audio-visual project, listened to intimately, in headphones, while the unsoundtracked life of the campo continued around them. Then the chief packed up. The procession moved on, threading through San Polo toward Castello, repeating the gesture at three further campi before delivering itself, after sundown, to the Zimbabwe Pavilion at the 61st Venice Biennale.

@@ -10,10 +10,12 @@ headline_position: 4
 source_type: original
 spotlight: true
 longform: true
-draft: true
+draft: false
 read_minutes: 9
 hero_eyebrow: "ARTS LONG READ · VENICE · 4 OF 5"
 hero_image_credit: "Courtesy of the artist"
+series: venice-biennale-2026
+series_order: 5
 ---
 
 The Zimbabwean springstone sculpture movement of the mid-twentieth century is, for better and for worse, the art-historical reference point that anyone speaking to a Western audience about Zimbabwean visual culture is expected to start from. It has its canon. It has its market. It has, at this point, its share of caricature and its long tail of compromised production. To be a Zimbabwean sculptor in 2026 is to inherit this lineage and to have to take a position on it, and the most interesting positions, on the evidence of the last several years, have come from artists who refuse the binary of preservation or rejection.

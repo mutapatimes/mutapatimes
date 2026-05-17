@@ -13,11 +13,13 @@ headline_position: 1
 source_type: original
 spotlight: false
 feature_story: false
-draft: true
+draft: false
 longform: true
 hero_eyebrow: ARTS LONG READ · VENICE · 1 OF 5
 hero_image_credit: Courtesy of the artist
 read_minutes: Nine
+series: venice-biennale-2026
+series_order: 7
 ---
 We met Eva Raath's work before we met the artist, which is the right order with most pavilions and the only order with this one. *Medusa Menopause*, a 7.6-metre length of acrylic-painted paper, hung from a brass rod near the entrance to the southern wing, was the first piece to declare itself in the room, and one of the few that did not need any wall text to do the declaring. We stood in front of it for, by the kindest estimate, fifteen minutes. We came back twice during the week. By the second visit we had decided it was the most underestimated work in the pavilion.
 
