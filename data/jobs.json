@@ -1,9 +1,10 @@
 {
-  "fetched_at": "2026-05-17T08:34:27.929568+00:00",
+  "fetched_at": "2026-05-17T14:00:36.722687+00:00",
   "sources": [
     "vacancymail.co.zw"
   ],
-  "count": 10,
+  "retention_days": 30,
+  "count": 11,
   "jobs": [
     {
       "title": "Junior Security Operations Centre Specialist – Ict – Level 9 (5 Posts)",
@@ -15,8 +16,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 20 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 46 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Open Systems Specialist – Ict – Level 8 (1 Post)",
@@ -28,8 +31,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 22 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 48 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Database Administrator – Ict – Level 8 (1 Post)",
@@ -41,8 +46,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 23 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 49 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Windows Systems Exchange Specialist – Ict – Level 8 (1 Post)",
@@ -54,8 +61,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 25 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 51 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Windows Systems Domain Controller Specialist - Ict – Level 8 (1 Post)",
@@ -67,8 +76,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 27 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 53 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Applications Developer, Integrations – Ict – Level 8 (4 Posts)",
@@ -80,8 +91,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 31 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 57 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Applications Developer, Fdms - Ict – Level 8 (3 Posts)",
@@ -93,8 +106,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 33 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "6 hours, 59 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Vulnerability Management Specialist – Ict – Level 8 (2 Posts)",
@@ -106,8 +121,10 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 34 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "7 hours",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Threat Intelligence Specialist – Ict – Level 8 (2 Posts)",
@@ -119,8 +136,25 @@
       "expires": "19 May 2026",
       "type": "Full Time",
       "salary": "",
-      "posted": "1 hour, 36 minutes",
-      "source": "vacancymail.co.zw"
+      "posted": "7 hours, 2 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
+    },
+    {
+      "title": "Hospitality Services Supervisor",
+      "url": "https://vacancymail.co.zw/jobs/hospitality-services-supervisor-67561/",
+      "company": "",
+      "logo": "https://vacancymail.co.zw/static/vacancymail.co.za.png",
+      "summary": "An upcoming resort is seeking a qualified and experienced Hospitality Services Supervisor to oversee hospitality operations and ensure guests receive exceptional service while maintaining efficient s…",
+      "location": "Mutoko",
+      "expires": "22 May 2026",
+      "type": "Full Time",
+      "salary": "",
+      "posted": "3 hours, 6 minutes",
+      "source": "vacancymail.co.zw",
+      "first_seen": "2026-05-17T14:00:36.722687+00:00",
+      "last_seen": "2026-05-17T14:00:36.722687+00:00"
     },
     {
       "title": "Security Operations Specialist – Ict – Level 8 (4 Posts)",
