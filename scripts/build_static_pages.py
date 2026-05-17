@@ -324,7 +324,7 @@ def page_nav(active="articles", depth=1, body_class=""):
       </div>
       <p class="nav-drawer-sub-fine">Free. Twice a week. One tap to unsubscribe.</p>
     </form>
-    <iframe name="brevo-drawer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-drawer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </aside>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -359,7 +359,7 @@ def page_footer(depth=1):
       <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
     </form>
     <p class="footer-subscribe-fine">Free forever. Unsubscribe anytime.</p>
-    <iframe name="brevo-footer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-footer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </div>
 </div>
 

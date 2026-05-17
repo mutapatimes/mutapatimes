@@ -1410,7 +1410,7 @@ function renderMainStories(articles) {
       var breakData = getNextBreakImage();
       var ph = $('<div class="break-section">');
       var imgWrap = $('<div class="break-img-wrap">');
-      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times').attr('loading', 'lazy');
+      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times').attr('loading', 'lazy').attr('decoding', 'async').attr('width', 400).attr('height', 300);
       img.on('error', function() { $(this).closest('.break-section').hide(); });
       imgWrap.append(img);
       imgWrap.append($('<span class="break-brand">').text("The Mutapa Times"));
@@ -1800,7 +1800,7 @@ function loadSpotlightFromRSS() {
 function makeSpotlightPlaceholder(source) {
   var div = $('<div class="spotlight-img spotlight-img--placeholder" role="img">');
   div.attr('aria-label', source ? 'The Mutapa Times — via ' + source : 'The Mutapa Times');
-  div.append($('<img class="placeholder-mark">').attr('src', '/img/brand/mark-1080.png').attr('alt', ''));
+  div.append($('<img class="placeholder-mark">').attr('src', '/img/brand/mark-1080.png').attr('alt', '').attr('width', 200).attr('height', 200).attr('decoding', 'async').attr('loading', 'lazy'));
   var via = $('<p class="placeholder-via">');
   via.append($('<span class="placeholder-via-lbl">').text('via'));
   via.append($('<span class="placeholder-via-src">').text(source || 'external publisher'));
@@ -1855,7 +1855,7 @@ function renderSpotlightStories(articles) {
     // handler would otherwise resolve to the last loop iteration.
     (function (src, imgUrl, title) {
       if (imgUrl) {
-        var img = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '');
+        var img = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '').attr('width', 800).attr('height', 500).attr('decoding', 'async');
         img[0].addEventListener('error', function onErr() {
           this.removeEventListener('error', onErr);
           $(this).replaceWith(makeSpotlightPlaceholder(src));
@@ -1926,7 +1926,7 @@ function renderSpotlightStories(articles) {
     }
     (function (src, imgUrl, title) {
       if (imgUrl) {
-        var gImg = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '');
+        var gImg = $('<img class="spotlight-img">').attr('src', imgUrl).attr('alt', title || '').attr('width', 800).attr('height', 500).attr('decoding', 'async').attr('loading', 'lazy');
         gImg[0].addEventListener('error', function onErr() {
           this.removeEventListener('error', onErr);
           $(this).replaceWith(makeSpotlightPlaceholder(src));
@@ -2064,7 +2064,7 @@ function appendCmsSpotlightItems(container, articles) {
     var aItem = $('<article class="spotlight-item spotlight-gnews">');
     var aLink = $('<a>').attr('href', a.url || '#');
     if (a.image) {
-      aLink.append($('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || ''));
+      aLink.append($('<img class="spotlight-img">').attr('src', a.image).attr('alt', a.title || '').attr('width', 800).attr('height', 500).attr('decoding', 'async').attr('loading', 'lazy'));
     }
     var aText = $('<div class="spotlight-text">');
     aText.append($('<h4 class="spotlight-title">').text(a.title));
@@ -2131,7 +2131,7 @@ function renderGnewsMore(articles) {
     // Article image (GNews provides images)
     if (a.image) {
       var imgWrap = $('<div class="gnews-more-img-wrap">');
-      var img = $('<img class="gnews-more-img">').attr('src', a.image).attr('alt', a.title || '').attr('loading', 'lazy');
+      var img = $('<img class="gnews-more-img">').attr('src', a.image).attr('alt', a.title || '').attr('loading', 'lazy').attr('decoding', 'async').attr('width', 320).attr('height', 240);
       img.on('error', function() { $(this).parent().hide(); });
       imgWrap.append(img);
       link.append(imgWrap);
