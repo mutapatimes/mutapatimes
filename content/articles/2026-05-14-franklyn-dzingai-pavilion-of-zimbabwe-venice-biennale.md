@@ -12,10 +12,10 @@ spotlight: true
 longform: true
 draft: false
 read_minutes: 9
-hero_eyebrow: "ARTS LONG READ · VENICE · 3 OF 5"
+hero_eyebrow: "SCENE REPORT · VENICE · 3 OF 7"
 hero_image_credit: "Courtesy of the artist"
 series: venice-biennale-2026
-series_order: 4
+series_order: 3
 ---
 
 Franklyn Dzingai's room is the room you walk into and slow down. The prints, five large-format works, ranging from 153 × 164 cm to 226 × 160 cm, are immediately legible at a colour level: hot pinks, electric blues, dense ornamental fields, every surface working. But the legibility at first glance is a kind of feint. The actual labour of looking at a Dzingai print begins about twenty seconds in, when the viewer registers that the figures occupying each composition have been assembled out of photographic faces, actual photographic faces, mostly Black, mostly from the mid-twentieth-century studio archive of southern Africa, and that those faces are not the faces of the people whose bodies they appear to inhabit. The collage logic of the work is precise. It takes a few more minutes to begin to read what it is doing.

@@ -12,10 +12,10 @@ spotlight: true
 longform: true
 draft: false
 read_minutes: 10
-hero_eyebrow: "ARTS LONG READ · VENICE · 2 OF 5"
+hero_eyebrow: "SCENE REPORT · VENICE · 2 OF 7"
 hero_image_credit: "Courtesy of the artist"
 series: venice-biennale-2026
-series_order: 3
+series_order: 2
 ---
 
 A six-metre charcoal wall is a different proposition from a painting. The first thing it asks of you is the question of how far back you can stand without losing it; the second is how close you can get without disturbing it. Felix Shumba's *Wheel-telegram-east-window-line 145XV7-lower*, the title is a coordinate, of a kind, in a private system he has been building for the better part of a decade, runs the full length of the north-east wall of Santa Maria della Pietà and refuses to release the eye for the duration of the gallery visit. We stood in front of it on three separate days. It was different each time, and we were not sure on the third occasion whether the work had changed or our adjustment to it had.

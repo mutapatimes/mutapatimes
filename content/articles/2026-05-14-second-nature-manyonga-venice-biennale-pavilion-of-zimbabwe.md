@@ -16,11 +16,11 @@ spotlight: false
 feature_story: false
 draft: false
 longform: false
-hero_eyebrow: ESSAY · VENICE
+hero_eyebrow: "SCENE REPORT · VENICE · 1 OF 7"
 hero_image_credit: Photograph by 1925 Glen Norah
 read_minutes: Twelve
 series: venice-biennale-2026
-series_order: 2
+series_order: 1
 ---
 I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the road in from Verona by a margin of approximately ten minutes of plausible weather, was now soaked through. So was I.
 
@@ -50,7 +50,11 @@ What you are reading now is something I should declare up front to be different.
 
 What I saw, when I started looking, was beauty in registers I had not been ready for.
 
-The decay of the city, first of all. Chipped plaster. The rusted iron mooring rings sunk into the canal walls. The long curling strips of paint lifting off a doorway in Cannaregio to reveal three earlier colours underneath. By Wednesday afternoon I had stopped photographing the obvious *palazzi* and was photographing door-handles, salt-stained wood, the corner where a building had begun, very slowly, to become a different building. I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour that no one would have been able to mix on a palette. There is style in time. There is grace in attrition. The British in me, by osmosis, regrettable as that is, eventually decided to stop sulking and to look. Once I started, I could not stop. I became, by my own diagnosis, a broken record of seeing beauty in everything, to the point where anyone who came into conversation with me that week would have been fairly entitled to assume I was high on shrooms.
+The decay of the city, first of all. Chipped plaster. The rusted iron mooring rings sunk into the canal walls. The long curling strips of paint lifting off a doorway in Cannaregio to reveal three earlier colours underneath. By Wednesday afternoon I had stopped photographing the obvious *palazzi* and was photographing door-handles, salt-stained wood, the corner where a building had begun, very slowly, to become a different building.
+
+![A side canal in Cannaregio, mid-afternoon](/img/uploads/venice-2026/main/venice-canal.jpg)
+
+The walls of the city as I started reading them: not as backdrop but as text. Photograph by 1925 Glen Norah I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour that no one would have been able to mix on a palette. There is style in time. There is grace in attrition. The British in me, by osmosis, regrettable as that is, eventually decided to stop sulking and to look. Once I started, I could not stop. I became, by my own diagnosis, a broken record of seeing beauty in everything, to the point where anyone who came into conversation with me that week would have been fairly entitled to assume I was high on shrooms.
 
 And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a constellation of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening, moving with a particular radiance that only comes from a life lived in full attention to itself. Thelma Golden was somewhere in the city for some of those days. The managing director of Lisson Gallery passed through. But mostly it was the women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. Beauty in its most consequential register is not a feature of the young face. It is a feature of the lived one.
 
@@ -76,6 +80,10 @@ But the night was not about me. It was about the people who were in that room be
 
 **Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different register. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo, whose bronzes anchor one of the pavilion's central rooms. I could not stop smiling.
 
+![Dzingai and Gomo in conversation](/img/uploads/venice-2026/main/dzingai-gomo-room.jpg)
+
+One of my favourite rooms in the pavilion, with Franklyn Dzingai's photographic work and Gideon Gomo's bronzes in deliberate conversation. Photograph by 1925 Glen Norah
+
 ![Opening night, Pavilion of Zimbabwe, 14 May 2026](/img/uploads/venice-2026/main/opening-night.jpg)
 
 Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30. About a hundred guests filed across the fondamenta and through the iron-and-glass doors before the rain returned. Photograph by Amedeo Benestante
@@ -90,6 +98,10 @@ The alumni of previous Pavilions of Zimbabwe were out in force.  **Wallen Mapond
 
 The lineage was visible in the room. People who had been *the pavilion* in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026. The line of continuity that the catalogue's foreword speaks about in the abstract was sitting at three of the tables nearest mine.
 
+![Felix Shumba taking final installation pictures](/img/uploads/venice-2026/main/felix-installation.jpg)
+
+Felix Shumba taking final installation pictures of his six-metre charcoal wall the morning before opening. Photograph by 1925 Glen Norah
+
 A sponsor's note
 
 ## Zimbabwean money funded this pavilion. That fact is worth pausing on.
@@ -101,6 +113,14 @@ The Higherlife Foundation, founded by the Masiyiwa family, has put its weight be
 ## The wider Biennale, and a text I could not stop thinking about
 
 Outside the pavilion the rest of Venice had its own southern African weather. I saw **Gabrielle Goliath's** exhibition, which, after the much-reported cancellation of the South African pavilion this year, had come through in its own configuration at another venue: a two-channel video installation, shown inside a Venetian church, drawn from her ongoing *Elegy* performance projects on South African femicide and the Namibian genocide. The accompanying critical writing was by **Dr. Zoé Samudzi**, the scholar-activist whose essay *Metabolic Urgency* reads the *Elegy* works as acts of sonic mourning and political witnessing, and whose recent writing has been among the most consequential voices on Black feminist thought, grief and collective care out of the diaspora. And cutting across the week in a register entirely its own were the interventions of **Shumba Maasai**, whose day-long procession through the city's *campi*, conducted under the borrowed authority of a Murehwa chief, restaged the social-sculpture lineage of Joseph Beuys for a contemporary African discursive practice, and turned several afternoons of incidental Venetian foot-traffic into something closer to a public ritual. There was, in the period of the opening, the sense of a broader Zimbabwean and southern African intellectual moment finding its register inside the Biennale's official rooms, the kind of moment that, if you were standing close enough, you could hear taking shape in real time.
+
+![Eva Raath's large-scale Medusa Menopause, 2025](/img/uploads/venice-2026/main/raath-medusa.jpg)
+
+Eva Raath's *Medusa Menopause*, 2025, installed at Santa Maria della Pietà. Photograph by 1925 Glen Norah
+
+![A pavilion detail](/img/uploads/venice-2026/main/pavilion-detail.jpg)
+
+A corner of the pavilion in the late light of opening day. Photograph by 1925 Glen Norah
 
 ## A book I am writing, in part because of the rain
 

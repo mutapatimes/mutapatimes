@@ -163,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=93">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=94">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -580,6 +580,43 @@ def article_share_buttons(title, canonical_url):
 </div></div>"""
 
 
+# ─── Venice series — business / economic context module ─────────────────
+def _venice_context_module():
+    """Reusable Mutapa Times context module appended to every article in
+    the Venice Biennale series. The cultural reporting sits in the
+    article body; this module reframes it in business / economic terms
+    so the reader walks away with a sense of why the arts sector is a
+    Zimbabwean intelligence story, not just a cultural one."""
+    return """
+      <aside class="mt-context-module" role="complementary" aria-label="Why this matters">
+        <div class="mt-context-module-inner">
+          <p class="mt-context-eyebrow">Why this matters &middot; A Mutapa Times context module</p>
+          <h2 class="mt-context-heading">Zimbabwe's arts sector is a business story.</h2>
+          <p class="mt-context-deck">The Pavilion of Zimbabwe is the country's longest-running soft-power asset on the international cultural circuit. Eight editions deep, it now ships studio practice from Harare, Masvingo and Kwekwe into the room where institutional acquisitions, gallery representation and museum loans are decided. The Mutapa Times treats this as economic infrastructure.</p>
+          <div class="mt-context-stats">
+            <div class="mt-context-stat">
+              <p class="mt-context-stat-figure">8<small>th</small></p>
+              <p class="mt-context-stat-label">Edition of the Pavilion of Zimbabwe, 61st Venice Biennale, 2026 &mdash; one of the longest-running African national pavilions on the circuit.</p>
+            </div>
+            <div class="mt-context-stat">
+              <p class="mt-context-stat-figure">100%</p>
+              <p class="mt-context-stat-label">Of the 2026 pavilion's institutional support is Zimbabwean capital. Higherlife Foundation and 1925 Glen Norah underwrite the project &mdash; African capital backing an African pavilion is, in 2026, still the exception.</p>
+            </div>
+            <div class="mt-context-stat">
+              <p class="mt-context-stat-figure">5</p>
+              <p class="mt-context-stat-label">Zimbabwean artists in the official pavilion, working across drawing, photography, bronze, textiles and installation &mdash; the supply chain runs through five studios, four cities and two continents.</p>
+            </div>
+            <div class="mt-context-stat">
+              <p class="mt-context-stat-figure">CIMAM</p>
+              <p class="mt-context-stat-label">The international meeting of museum directors lands in Zimbabwe in November 2026, also backed by Higherlife. The pipeline from pavilion to institutional acquisitions runs through that room.</p>
+            </div>
+          </div>
+          <p class="mt-context-body">Cultural and creative industries are an underwritten line in the Zimbabwean economy &mdash; one that earns hard currency through international sales, anchors a domestic supply chain of fabricators, foundries, photographers, framers and installers, and converts diaspora attention into Zimbabwean export revenue. A pavilion is not just an exhibition. It is a multi-year capital project with a deferred return measured in gallery representations, museum acquisitions and the institutional reputation that compounds across editions.</p>
+          <p class="mt-context-foot"><strong>The Mutapa Times</strong> &middot; The business and intelligence newspaper for the Zimbabwean diaspora. This module appears on every dispatch in the <em>Scene Report: Venice Biennale</em> series.</p>
+        </div>
+      </aside>"""
+
+
 # ─── Build article pages ─────────────────────────────────────────────────
 def _load_related_index():
     """Pre-load the CMS index once so every article page can pull a 'More
@@ -853,6 +890,15 @@ def build_articles():
         # Article body
         body_cls = "article-body article-body-longform" if longform else "article-body"
         html_parts.append(f'      <div class="{body_cls}">{body_html}</div>')
+
+        # Mutapa Times context module — appears at the foot of every
+        # article in the Venice Biennale series. Frames the cultural
+        # piece in business / economic terms: pavilion edition number,
+        # the African-capital funding model that underwrites it,
+        # employment + soft-power throughline. Edit in one place;
+        # appears on all seven dispatches.
+        if series_key == "venice-biennale-2026":
+            html_parts.append(_venice_context_module())
 
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")

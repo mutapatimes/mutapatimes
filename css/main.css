@@ -10766,3 +10766,130 @@ body.series-page .dateHr {
 @media (max-width: 540px) {
   .series-page-banner { flex-direction: column; align-items: flex-start; border-radius: 14px; }
 }
+
+/* ─── Mutapa Times context module ────────────────────────────────────
+   Reusable "Why this matters" callout appended at build-time to every
+   article in a designated series. Themes itself off body.series-page
+   so it inherits --series-bg / --series-fg from the dark reading theme;
+   on non-series pages (future series, or if reused elsewhere) it falls
+   back to a cream-and-ink editorial card. */
+.mt-context-module {
+  margin: 56px auto 32px;
+  max-width: 880px;
+  border: 1px solid rgba(244,237,224,0.18);
+  background: rgba(244,237,224,0.04);
+  border-radius: 4px;
+  padding: 0;
+}
+.mt-context-module-inner {
+  padding: 36px 32px 32px;
+}
+.mt-context-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(244,237,224,0.7);
+  margin: 0 0 14px;
+}
+.mt-context-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.45rem, 2.6vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--series-fg, #f4ede0);
+  margin: 0 0 14px;
+}
+.mt-context-deck {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--series-fg, #f4ede0);
+  opacity: 0.88;
+  margin: 0 0 24px;
+  max-width: 64ch;
+}
+.mt-context-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+  margin: 22px 0 26px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(244,237,224,0.18);
+  border-bottom: 1px solid rgba(244,237,224,0.18);
+}
+.mt-context-stat-figure {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 8px;
+  color: var(--series-fg, #f4ede0);
+}
+.mt-context-stat-figure small {
+  font-size: 0.55em;
+  font-weight: 700;
+  vertical-align: super;
+  opacity: 0.7;
+}
+.mt-context-stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83rem;
+  line-height: 1.4;
+  color: var(--series-fg, #f4ede0);
+  opacity: 0.78;
+  margin: 0;
+}
+.mt-context-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--series-fg, #f4ede0);
+  opacity: 0.9;
+  margin: 0 0 22px;
+  max-width: 64ch;
+}
+.mt-context-foot {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(244,237,224,0.6);
+  margin: 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(244,237,224,0.12);
+  letter-spacing: 0.01em;
+}
+.mt-context-foot strong {
+  color: var(--series-fg, #f4ede0);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.mt-context-foot em {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Fallback styling for non-series pages (light editorial card). */
+body:not(.series-page) .mt-context-module {
+  border-color: rgba(0,0,0,0.12);
+  background: #faf5e9;
+}
+body:not(.series-page) .mt-context-eyebrow,
+body:not(.series-page) .mt-context-heading,
+body:not(.series-page) .mt-context-deck,
+body:not(.series-page) .mt-context-stat-figure,
+body:not(.series-page) .mt-context-stat-label,
+body:not(.series-page) .mt-context-body,
+body:not(.series-page) .mt-context-foot { color: #1a1a1a; opacity: 1; }
+body:not(.series-page) .mt-context-stats {
+  border-color: rgba(0,0,0,0.12);
+}
+body:not(.series-page) .mt-context-foot {
+  border-color: rgba(0,0,0,0.12);
+  color: rgba(26,26,26,0.65);
+}
+
+@media (max-width: 640px) {
+  .mt-context-module-inner { padding: 28px 22px 24px; }
+  .mt-context-stats { gap: 16px; padding: 18px 0; }
+  .mt-context-stat-figure { font-size: 1.6rem; }
+}

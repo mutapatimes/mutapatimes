@@ -12,10 +12,10 @@ spotlight: true
 longform: true
 draft: false
 read_minutes: 9
-hero_eyebrow: "ARTS LONG READ · VENICE · 5 OF 5"
+hero_eyebrow: "SCENE REPORT · VENICE · 5 OF 7"
 hero_image_credit: "Courtesy of the artist"
 series: venice-biennale-2026
-series_order: 6
+series_order: 5
 ---
 
 We will admit something: on the first walkthrough of the pavilion, on Wednesday afternoon, we walked past Pardon Mapondera's *Gone, but not forgotten*. The installation is shy in its opening register. It occupies an inner room. The jars are small and they are many; the steel framework that holds them looks, on first encounter, like the back-of-house shelving of a small natural-history museum somewhere in eastern Europe. We did the wrong thing and moved through quickly. We came back twice, deliberately, and stood for the better part of an hour in front of it. It is, on reflection, the most quietly devotional installation we encountered in the Biennale.
