@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-05-17T10:19:59+00:00",
+  "fetched_at": "2026-05-17T13:09:03+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Tobacco stalk removal lapses, authorities urge compliance",
+      "link": "https://mutapatimes.com/news/2026-05-17-tobacco-stalk-removal-lapses-authorities-urge-compliance-942507",
+      "image": "https://www.mutapatimes.com/img/cards/news/3dcd0d4fabbd.png",
+      "pubDate": "2026-05-17T00:13:25+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zim’s poultry output gross value surges past US$1,2bn",
+      "link": "https://mutapatimes.com/articles/2026-05-17-zims-poultry-output-gross-value-surges-past-us12bn",
+      "image": "https://www.mutapatimes.com/img/cards/news/78e070c3bb0a.png",
+      "pubDate": "2026-05-17T00:06:52+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "A defining moment for the Second Republic as CAB 3 enters crucial phase",
+      "link": "https://mutapatimes.com/news/2026-05-16-a-defining-moment-for-the-second-republic-as-cab-3-enters-cr-9a98e2",
+      "image": "https://www.mutapatimes.com/img/cards/news/1ec2c6a84d6e.png",
+      "pubDate": "2026-05-16T23:21:49+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim current account 2025 Q4: $821M. Trailing four quarters: $1.9B.",
@@ -325,26 +349,10 @@
     {
       "kind": "news",
       "title": "Minute Maid to Launch Affordable 1-Litre Pack in Zimbabwe as Schweppes Expands Juice Brand",
-      "link": "https://mutapatimes.com/articles/2026-05-16-minute-maid-to-launch-affordable-1-litre-pack-in-zimbabwe-as",
-      "image": "https://www.mutapatimes.com/img/cards/news/7a7b8960ebb3.png",
-      "pubDate": "2026-05-16T18:55:26+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Minute Maid to Launch Affordable 1-Litre Pack in Zimbabwe as Schweppes Expands Juice Brand",
       "link": "https://mutapatimes.com/news/2026-05-16-minute-maid-to-launch-affordable-1-litre-pack-in-zimbabwe-as-856531",
       "image": "https://www.mutapatimes.com/img/cards/news/43d5a5f2f340.png",
       "pubDate": "2026-05-16T18:55:26+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Crocodile attacks increase as water levels rise:The danger beneath calm waters",
-      "link": "https://mutapatimes.com/articles/2026-05-16-crocodile-attacks-increase-as-water-levels-risethe-danger-be",
-      "image": "https://www.mutapatimes.com/img/cards/news/957260b0403f.png",
-      "pubDate": "2026-05-16T18:44:06+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -365,26 +373,10 @@
     {
       "kind": "news",
       "title": "Boxer Ndodana Ncube dies",
-      "link": "https://mutapatimes.com/articles/2026-05-16-boxer-ndodana-ncube-dies",
-      "image": "https://www.mutapatimes.com/img/cards/news/f30deaa22008.png",
-      "pubDate": "2026-05-16T17:29:18+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Boxer Ndodana Ncube dies",
       "link": "https://mutapatimes.com/news/2026-05-16-boxer-ndodana-ncube-dies-00e432",
       "image": "https://www.mutapatimes.com/img/cards/news/0cb42b34f76f.png",
       "pubDate": "2026-05-16T17:29:18+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe indigenous churches back CAB3 Constitutional changes",
-      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwe-indigenous-churches-back-cab3-constitutional-change",
-      "image": "https://www.mutapatimes.com/img/cards/news/f9a9b0dab475.png",
-      "pubDate": "2026-05-16T17:26:16+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -444,14 +436,6 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe’s diaspora reshapes real estate and farming investment trends",
-      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwes-diaspora-reshapes-real-estate-and-farming-investme",
-      "image": "https://www.mutapatimes.com/img/cards/news/e95f5c3d8ba7.png",
-      "pubDate": "2026-05-16T13:18:49+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
       "title": "Government Mum As Matinyarare Questions Mnangagwa Exit",
       "link": "https://mutapatimes.com/news/2026-05-16-government-mum-as-matinyarare-questions-mnangagwa-exit-e067f1",
       "image": "https://www.mutapatimes.com/img/cards/news/34e3e84874e0.png",
@@ -460,27 +444,43 @@
     },
     {
       "kind": "news",
-      "title": "Varakashi4ED Dismisses Chinhoyi Billboard Burning as “Manufactured Lie”",
-      "link": "https://mutapatimes.com/articles/2026-05-16-varakashi4ed-dismisses-chinhoyi-billboard-burning-as-manufac",
-      "image": "https://www.mutapatimes.com/img/cards/news/03da5960cea7.png",
-      "pubDate": "2026-05-16T11:26:14+00:00",
-      "category": "Policy"
+      "title": "Sikandar Raza scoops Sports Person of The Year award",
+      "link": "https://mutapatimes.com/news/2026-05-17-sikandar-raza-scoops-sports-person-of-the-year-award-c2f89e",
+      "image": "https://www.mutapatimes.com/img/cards/news/bd1c0191467b.png",
+      "pubDate": "2026-05-16T09:37:46+00:00",
+      "category": "Sports"
     },
     {
       "kind": "news",
-      "title": "Varakashi4ED Dismisses Chinhoyi Billboard Burning as “Manufactured Lie”",
-      "link": "https://mutapatimes.com/news/2026-05-16-varakashi4ed-dismisses-chinhoyi-billboard-burning-as-manufac-efe986",
-      "image": "https://www.mutapatimes.com/img/cards/news/2ff69e602be6.png",
-      "pubDate": "2026-05-16T11:26:14+00:00",
-      "category": "News"
+      "title": "Hwange-Nationalpark: Inside Zimbabwe’s Great Elephant Sanctuary",
+      "link": "https://mutapatimes.com/news/2026-05-17-hwange-nationalpark-inside-zimbabwe-s-great-elephant-sanctua-bc3a95",
+      "image": "https://www.mutapatimes.com/img/cards/news/3e6ea219bda3.png",
+      "pubDate": "2026-05-16T03:09:34+00:00",
+      "category": "Science"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe records Africa's sharpest fuel price hikes",
-      "link": "https://mutapatimes.com/articles/2026-05-16-zimbabwe-records-africas-sharpest-fuel-price-hikes",
-      "image": "https://www.mutapatimes.com/img/cards/news/6688c6c11434.png",
-      "pubDate": "2026-05-16T11:19:40+00:00",
-      "category": "Business"
+      "title": "Zimbabwe – a tale of two African stock exchanges",
+      "link": "https://mutapatimes.com/news/2026-05-17-zimbabwe-a-tale-of-two-african-stock-exchanges-7b33e6",
+      "image": "https://www.mutapatimes.com/img/cards/news/59960931c52a.png",
+      "pubDate": "2026-05-15T17:26:02+00:00",
+      "category": "Technology"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Showcases Harare, Victoria Falls, Hwange, and Great Zimbabwe to Global Delegates During African Skills Week 2026",
+      "link": "https://mutapatimes.com/news/2026-05-17-zimbabwe-showcases-harare-victoria-falls-hwange-and-great-zi-9ba1a2",
+      "image": "https://www.mutapatimes.com/img/cards/news/8422a9fd0269.png",
+      "pubDate": "2026-05-15T14:06:33+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Launches GCF Readiness Project to Advance Climate Resilience, Low-Emission Development and Climate Finance Programming",
+      "link": "https://mutapatimes.com/news/2026-05-17-zimbabwe-launches-gcf-readiness-project-to-advance-climate-r-727ab9",
+      "image": "https://www.mutapatimes.com/img/cards/news/5c393431aeb5.png",
+      "pubDate": "2026-05-15T10:20:23+00:00",
+      "category": "Science"
     }
   ]
 }
