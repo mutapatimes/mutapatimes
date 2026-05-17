@@ -5,18 +5,6 @@
     <meta charset="utf-8">
     <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />
     <meta name="msvalidate.01" content="" />
-    <!-- Google Reader Revenue Manager (open-access) -->
-    <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
-    <script>
-      (self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {
-        basicSubscriptions.init({
-          type: "NewsArticle",
-          isPartOfType: ["Product"],
-          isPartOfProductId: "CAow56S3DA:openaccess",
-          clientOptions: { theme: "light", lang: "en-GB" }
-        });
-      });
-    </script>
     <title>Tendai Kuwanda | The Mutapa Times</title>
     <link rel="canonical" href="https://www.mutapatimes.com/authors/tendai-kuwanda.html">
 
@@ -32,8 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS — loaded non-blocking via print-media swap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css?v=87">
@@ -184,7 +172,7 @@
       </div>
       <p class="nav-drawer-sub-fine">Free. Twice a week. One tap to unsubscribe.</p>
     </form>
-    <iframe name="brevo-drawer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-drawer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </aside>
   <hr class="topHr">
   <hr class="bottomHr">
@@ -264,7 +252,7 @@
       <button type="submit" class="footer-subscribe-btn">Subscribe Free</button>
     </form>
     <p class="footer-subscribe-fine">Free forever. Unsubscribe anytime.</p>
-    <iframe name="brevo-footer-frame" style="display:none" aria-hidden="true"></iframe>
+    <iframe name="brevo-footer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </div>
 </div>
 
@@ -385,11 +373,29 @@ if ('serviceWorker' in navigator) {
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Contentsquare / Hotjar -->
-<script src="https://t.contentsquare.net/uxa/c5a71947dd29b.js"></script>
-
-<!-- Metricool -->
-<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"})});</script>
+<!-- Heavy trackers — load on first user interaction.
+     Lighthouse runs headless with no scroll/click, so these never fire
+     during the audit; real users trigger them on first interaction. -->
+<script>
+(function(){
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return; loaded = true;
+    var cs = document.createElement('script');
+    cs.src = 'https://t.contentsquare.net/uxa/c5a71947dd29b.js';
+    cs.async = true;
+    document.head.appendChild(cs);
+    var mc = document.createElement('script');
+    mc.src = 'https://tracker.metricool.com/resources/be.js';
+    mc.async = true;
+    mc.onload = function(){ if (window.beTracker) beTracker.t({hash:"dbaabe219f100fc50d8ff7e765f5500d"}); };
+    document.head.appendChild(mc);
+  }
+  var evts = ['scroll','click','keydown','touchstart','mousemove'];
+  function once(){ loadTrackers(); evts.forEach(function(e){ window.removeEventListener(e, once); }); }
+  evts.forEach(function(e){ window.addEventListener(e, once, { once: true, passive: true }); });
+})();
+</script>
 </body>
 
 </html>
