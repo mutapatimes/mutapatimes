@@ -9873,3 +9873,284 @@ body.rates-locked .ratecard-patronage-left::after {
   transform: translate(-50%, -50%) scale(1.06);
   opacity: 1;
 }
+
+/* ════════════════════════════════════════════════════════════════════
+   Subscribe section — sits above the footer nav on every page.
+   Forest-green dark panel with Harare skyline image at the top.
+   ════════════════════════════════════════════════════════════════════ */
+
+.essential-subscribe {
+  background: #0c1a14;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Harare skyline strip — palms photo, fades into the forest panel below */
+.essential-skyline {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+.essential-skyline img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  display: block;
+  filter: brightness(0.78) saturate(0.85);
+}
+.essential-skyline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, #0c1a14 100%);
+  pointer-events: none;
+}
+
+.essential-subscribe-body {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 70px 28px 96px;
+}
+.essential-subscribe-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* LEFT — the pitch */
+.essential-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 22px;
+}
+.essential-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.04;
+  margin: 0 0 22px;
+  color: #fff;
+  letter-spacing: -0.005em;
+}
+.essential-deck {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 28px;
+  max-width: 540px;
+}
+.essential-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.essential-features li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+}
+.essential-features li span {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.essential-form {
+  display: flex;
+  gap: 8px;
+  max-width: 540px;
+  margin: 0 0 14px;
+}
+.essential-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.essential-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+.essential-form input[type="email"]:focus {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.12);
+}
+.essential-form button {
+  padding: 14px 26px;
+  background: #fff;
+  color: #0c1a14;
+  border: 0;
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.essential-form button:hover {
+  background: #f1ede4;
+  transform: translateY(-1px);
+}
+.essential-fine {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+.essential-fine a {
+  color: rgba(255, 255, 255, 0.78);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease;
+}
+.essential-fine a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* RIGHT — "in numbers" panel */
+.essential-numbers {
+  padding: 26px 30px 22px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+.essential-numbers-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.essential-numbers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 26px;
+}
+.essential-stat-figure {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+.essential-stat-figure small {
+  font-size: 0.7em;
+  font-weight: 700;
+  vertical-align: super;
+  margin-left: 2px;
+}
+.essential-stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 6px;
+}
+.essential-stat-foot {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}
+.essential-stat-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+.essential-stat-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.65);
+  animation: essentialLivePulse 2.4s ease-in-out infinite;
+}
+@keyframes essentialLivePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.55; transform: scale(0.9); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .essential-stat-live-dot { animation: none; }
+}
+.essential-numbers-foot {
+  margin: 22px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+
+/* Visually hidden — for labels we want screen-readers to see but not users */
+.essential-subscribe .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive — stack columns then collapse form */
+@media (max-width: 880px) {
+  .essential-subscribe-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .essential-skyline { height: 200px; }
+}
+@media (max-width: 600px) {
+  .essential-skyline { height: 160px; }
+  .essential-subscribe-body { padding: 50px 22px 70px; }
+  .essential-form { flex-direction: column; }
+  .essential-form button { width: 100%; }
+  .essential-features li { font-size: 0.82rem; padding: 8px 12px; }
+  .essential-headline { font-size: 1.85rem; }
+  .essential-numbers { padding: 22px 22px 18px; }
+  .essential-numbers-grid { gap: 22px 18px; }
+  .essential-stat-figure { font-size: 1.5rem; }
+}
+
+/* Remove the old footer-subscribe styles — block no longer exists. */
+.footer-subscribe { display: none !important; }
