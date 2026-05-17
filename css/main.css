@@ -9819,3 +9819,46 @@ body.rates-locked .ratecard-patronage-left::after {
   text-transform: uppercase;
   color: #555;
 }
+
+/* YouTube facade — light placeholder that swaps to a real iframe on click. */
+.live-cam-embed .yt-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: #000;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+.live-cam-embed .yt-facade-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.92);
+  transition: filter 0.2s ease;
+}
+.live-cam-embed .yt-facade:hover .yt-facade-thumb,
+.live-cam-embed .yt-facade:focus .yt-facade-thumb {
+  filter: brightness(1);
+}
+.live-cam-embed .yt-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.92;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+.live-cam-embed .yt-facade:hover .yt-facade-play,
+.live-cam-embed .yt-facade:focus .yt-facade-play {
+  transform: translate(-50%, -50%) scale(1.06);
+  opacity: 1;
+}
