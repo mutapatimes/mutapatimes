@@ -12,7 +12,7 @@ source_type: wire
 spotlight: false
 ---
 
-Father Hlakanipha Mbongolwane, MANGWE District in Matabeleland South Province is a rainbow district. While it is predominantly Kalanga-speaking, it is home to people from all walks of life. It is famed for amacimbi (mopane worms) and is strategically positioned with three borders — Matsilotje, Plumtree and Maitengwe. However, the district’s proximity to border points and [...]The post Teenage pregnancy in Mangwe: A tale of a people who have lost their collective soul appeared first on Zimbabwe Situation.
+Father Hlakanipha Mbongolwane, MANGWE District in Matabeleland South Province is a rainbow district. While it is predominantly Kalanga-speaking, it is home to people from all walks of life. It is famed for amacimbi (mopane worms) and is strategically positioned with three borders, Matsilotje, Plumtree and Maitengwe. However, the district’s proximity to border points and [...]The post Teenage pregnancy in Mangwe: A tale of a people who have lost their collective soul appeared first on Zimbabwe Situation.
 
 *Originally published by Zimbabwe Situation.*
 [Read original article](https://www.zimbabwesituation.com/news/teenage-pregnancy-in-mangwe-a-tale-of-a-people-who-have-lost-their-collective-soul/)

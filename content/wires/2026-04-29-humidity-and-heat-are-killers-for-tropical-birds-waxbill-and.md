@@ -1,5 +1,5 @@
 ---
-title: "Humidity and heat are killers for tropical birds — waxbill and hornbill studies highlight the dangers"
+title: "Humidity and heat are killers for tropical birds, waxbill and hornbill studies highlight the dangers"
 date: 2026-04-29T06:41:35.000Z
 author: downtoearth.org.in
 category: Policy

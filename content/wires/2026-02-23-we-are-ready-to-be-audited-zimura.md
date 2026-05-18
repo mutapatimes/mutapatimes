@@ -1,5 +1,5 @@
 ---
-title: "We are ready to be audited — Zimura"
+title: "We are ready to be audited, Zimura"
 date: 2026-02-23T23:59:00.000Z
 author: Dailynews
 category: Business

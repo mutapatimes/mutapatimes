@@ -1,5 +1,5 @@
 ---
-title: "Tupac Shakur Estate Files Wrongful Death Lawsuit Against Keefe D — TMZ - The Zimbabwe Mail Tupac Shakur Estate Files Wrongful Death Lawsuit Against Keefe D — TMZ"
+title: "Tupac Shakur Estate Files Wrongful Death Lawsuit Against Keefe D, TMZ - The Zimbabwe Mail Tupac Shakur Estate Files Wrongful Death Lawsuit Against Keefe D, TMZ"
 date: 2026-04-29T18:06:57.000Z
 author: thezimbabwemail.com
 category: Business

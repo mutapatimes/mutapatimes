@@ -1,5 +1,5 @@
 ---
-title: "Loyalty for sale — how patronage networks captured the Zimbabwean state"
+title: "Loyalty for sale, how patronage networks captured the Zimbabwean state"
 date: 2026-05-03T04:15:00.000Z
 author: The Zimbabwean
 category: Business

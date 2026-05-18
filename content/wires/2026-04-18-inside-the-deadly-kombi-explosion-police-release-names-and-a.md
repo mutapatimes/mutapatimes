@@ -12,7 +12,7 @@ source_type: wire
 spotlight: false
 ---
 
-ESIGODINI – The stretch of the Bulawayo–Beitbridge Road known locally as “Much Binding” has long held a reputation as a treacherous vein of asphalt, but nothing could have prepared the first responders for the carnage that unfolded on Thursday afternoon. At approximately 12:45 PM on April 16, 2026, a South Africa-bound Toyota Quantum commuter omnibus—a [...] The post Inside the Deadly Kombi Explosion: Police release names and ages of people who died in the fireball accident first appeared on My Zimbabwe News .
+ESIGODINI – The stretch of the Bulawayo–Beitbridge Road known locally as “Much Binding” has long held a reputation as a treacherous vein of asphalt, but nothing could have prepared the first responders for the carnage that unfolded on Thursday afternoon. At approximately 12:45 PM on April 16, 2026, a South Africa-bound Toyota Quantum commuter omnibusa [...] The post Inside the Deadly Kombi Explosion: Police release names and ages of people who died in the fireball accident first appeared on My Zimbabwe News .
 
 *Originally published by My Zimbabwe News.*
 [Read original article](https://www.myzimbabwe.co.zw/news/186924-inside-the-deadly-kombi-explosion-police-release-names-and-ages-of-people-who-died-in-the-fireball-accident.html)

@@ -15,7 +15,7 @@ import html as html_mod
 from datetime import datetime, timezone
 from urllib.parse import quote
 
-# Brand headline card — used as og:image on every CMS article so social
+# Brand headline card  used as og:image on every CMS article so social
 # previews show the on-brand card, not the scraped article photo.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
@@ -134,7 +134,7 @@ def iso_date(date_str):
 
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
-# depth=1 means inside articles/ or people/ folder — CSS/JS paths go up one level
+# depth=1 means inside articles/ or people/ folder  CSS/JS paths go up one level
 def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     prefix = "../" if depth == 1 else ""
     return f"""<!doctype html>
@@ -159,11 +159,11 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS — loaded non-blocking via print-media swap -->
+    <!-- Bootstrap core CSS  loaded non-blocking via print-media swap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=98">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=99">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -337,7 +337,7 @@ def page_footer(depth=1):
   </button>
 </div>
 
-<!-- Subscribe section — Harare skyline + dark forest panel -->
+<!-- Subscribe section  Harare skyline + dark forest panel -->
 <section class="essential-subscribe" aria-label="Subscribe to The Mutapa Times briefing">
   <div class="essential-skyline">
     <img src="/img/harare-palms.jpg" alt="Palm trees lining a Harare boulevard" width="1280" height="240" loading="lazy" decoding="async">
@@ -347,7 +347,7 @@ def page_footer(depth=1):
       <div class="essential-pitch">
         <p class="essential-eyebrow">The Mutapa Times newsletter</p>
         <h2 class="essential-headline">Essential intelligence for the Zimbabwean diaspora.</h2>
-        <p class="essential-deck">Curated foreign press coverage, economic data, and original analysis &mdash; delivered twice a week to readers in over 30 countries.</p>
+        <p class="essential-deck">Curated foreign press coverage, economic data, and original analysis , delivered twice a week to readers in over 30 countries.</p>
         <ul class="essential-features" aria-label="What you get">
           <li><span aria-hidden="true">🌍</span> Foreign press coverage</li>
           <li><span aria-hidden="true">📈</span> Live market data</li>
@@ -357,7 +357,7 @@ def page_footer(depth=1):
         <form class="essential-form" method="POST" action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==" target="brevo-footer-frame">
           <label for="essential-email" class="visually-hidden">Email address</label>
           <input id="essential-email" type="email" name="EMAIL" placeholder="Enter your email address" required autocomplete="email" aria-label="Email address">
-          <button type="submit">Subscribe &mdash; It&rsquo;s Free</button>
+          <button type="submit">Subscribe , It&rsquo;s Free</button>
         </form>
         <iframe name="brevo-footer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
         <p class="essential-fine">Free forever &middot; No spam &middot; Unsubscribe anytime &middot; <a href="/terms">Terms</a></p>
@@ -370,7 +370,7 @@ def page_footer(depth=1):
             <p class="essential-stat-label">Articles on site</p>
           </div>
           <div class="essential-stat">
-            <p class="essential-stat-figure" id="essential-next-briefing">&mdash;</p>
+            <p class="essential-stat-figure" id="essential-next-briefing">,</p>
             <p class="essential-stat-label">Next briefing</p>
             <p class="essential-stat-foot" id="essential-next-day">Mondays &amp; Thursdays 07:00 UTC</p>
           </div>
@@ -528,7 +528,7 @@ if ('serviceWorker' in navigator) {{
   gtag('config', 'G-XQPRFK7JTB');
 </script>
 
-<!-- Heavy trackers — load on first user interaction.
+<!-- Heavy trackers  load on first user interaction.
      Lighthouse runs headless with no scroll/click, so these never fire
      during the audit; real users trigger them on first interaction. -->
 <script>
@@ -580,7 +580,7 @@ def article_share_buttons(title, canonical_url):
 </div></div>"""
 
 
-# ─── Venice series — business / economic context module ─────────────────
+# ─── Venice series  business / economic context module ─────────────────
 def _venice_context_module():
     """Reusable Mutapa Times context module appended to every article in
     the Venice Biennale series. The cultural reporting sits in the
@@ -691,7 +691,7 @@ def _render_more_to_read(related):
 def _load_author_map():
     """Return {lowercased author name: slug} from data/authors.json.
     Built by scripts/build_author_pages.py. If missing, bylines stay
-    as plain text — no breakage."""
+    as plain text  no breakage."""
     path = os.path.join(ROOT_DIR, "data", "authors.json")
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -728,7 +728,7 @@ def build_articles():
             raw = f.read()
 
         meta, body = parse_frontmatter(raw)
-        # Skip drafts — kept in content/articles/ so they remain editable
+        # Skip drafts  kept in content/articles/ so they remain editable
         # via the CMS, but never published to articles/ until ready.
         if (meta.get("draft", "").lower() == "true"):
             continue
@@ -747,7 +747,7 @@ def build_articles():
         hero_eyebrow = meta.get("hero_eyebrow", "FEATURE")
         hero_image_credit = meta.get("hero_image_credit", "")
         read_minutes = meta.get("read_minutes", "")
-        # Series membership — if present, applies the dark series theme
+        # Series membership  if present, applies the dark series theme
         # via body class `series-page` and adds the read-next strip at
         # the end of the body. js/series.js fills the strip at runtime
         # against /data/series-<key>.json.
@@ -818,7 +818,7 @@ def build_articles():
 {json.dumps(breadcrumb)}
 </script>""")
         html_parts.append(page_nav("articles", depth=1, body_class=body_class))
-        # Stories rail — same IG-style highlight strip used on home + /articles.
+        # Stories rail  same IG-style highlight strip used on home + /articles.
         # Stays empty if the visitor's local index has nothing fresh.
         html_parts.append(
             '  <div id="stories-rail" aria-label="Story highlights"></div>'
@@ -836,7 +836,7 @@ def build_articles():
         <span>{esc(title)}</span>
       </nav>""")
 
-        # Series banner — appears on articles that are part of a curated
+        # Series banner  appears on articles that are part of a curated
         # series. js/series.js rewrites the CTA href at runtime against
         # the series manifest's landing_url so the banner and the
         # carousel headline both land on the same page.
@@ -895,7 +895,7 @@ def build_articles():
         body_cls = "article-body article-body-longform" if longform else "article-body"
         html_parts.append(f'      <div class="{body_cls}">{body_html}</div>')
 
-        # Mutapa Times context module — appears at the foot of every
+        # Mutapa Times context module  appears at the foot of every
         # article in the Venice Biennale series. Frames the cultural
         # piece in business / economic terms: pavilion edition number,
         # the African-capital funding model that underwrites it,
@@ -907,7 +907,7 @@ def build_articles():
         # Share buttons
         html_parts.append(f"      {article_share_buttons(title, canonical)}")
 
-        # Series read-next strip — only on articles that are part of
+        # Series read-next strip  only on articles that are part of
         # a curated series. js/series.js fills the rail with the rest
         # of the series, current article excluded.
         if series_key:
@@ -916,12 +916,12 @@ def build_articles():
                 f'data-current-slug="{esc(slug)}"></div>'
             )
 
-        # Feature Story of the Week — filled in by /js/feature-story.js
+        # Feature Story of the Week  filled in by /js/feature-story.js
         # at runtime against data/feature-story.json. Hidden if the
         # current article is itself the feature.
         html_parts.append(f'      <div id="feature-story-slot-rail" data-current-slug="{esc(slug)}"></div>')
 
-        # More to read — 6 related articles, same category preferred
+        # More to read  6 related articles, same category preferred
         related = _pick_related(related_index, slug, category, want=6)
         html_parts.append(_render_more_to_read(related))
 

@@ -27,7 +27,11 @@ I had lunch shortly after arriving with my dear friend Anna Pesonen, who was in 
 
 The good mood survived about as long as it took me to walk from the restaurant back to the apartment.
 
-The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio — paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a quiet retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her at the press every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
+The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio, paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a quiet retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her at the press every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
+
+![A watercolour from Scuola Grafica, the Venetian print school](/img/uploads/venice-2026/main/scuola-grafica.jpg)
+
+A watercolour from [Scuola Grafica](https://shop.scuolagrafica.it), the Venetian print school in the lineage Matilde works out of.
 
 The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
 
@@ -36,7 +40,7 @@ I sulked. I am willing to admit this. There is a particular kind of British weat
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 <figure class="venice-video">
-  <video autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
+  <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
     <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
   </video>
   <figcaption>Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
@@ -52,7 +56,7 @@ The rain held for the first two or three days. Then, on the morning of the openi
 
 ## What the rain finally let me see
 
-What you are reading is a letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city — under the cover of one Henry Taylor video and several days of unexpected rain — taught him, briefly, how to look again.
+What you are reading is a letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city, under the cover of one Henry Taylor video and several days of unexpected rain, taught him, briefly, how to look again.
 
 What I saw, when I started looking, was beauty I had not been ready to see.
 
@@ -90,7 +94,7 @@ But the night was not about me. It was about the people in the room.
 
 **Fadzai Veronica Muchemwa** is the curator of this pavilion, and is the first person I want to put on this list. The catalogue makes the case for her curatorial intelligence in its own way. The room makes it differently. Fadzai moved through the *vernissage* radiant, articulate, and at full volume of warmth, talking to anyone who came up to her, listening to them when they did, returning to her artists at intervals to check they were eating, sitting, breathing. She is one of those curators whose curation is visible in the rooms long before anyone has read a piece of wall text, and whose generosity to the artists in her care is itself the proposition the pavilion is making. What Fadzai has built here is, in some real sense, a new pavilion: one that knows what it is, that does not flatter its audience, and that treats its artists like the colleagues they are.
 
-**The five artists** themselves were of course the reason the rest of us were there. **Felix Shumba**, whose six-metre charcoal wall and *Telephone Reader* series anchor the first room. **Franklyn Dzingai**, whose photographic and woven work argues for the family album as a place where the political memory of a country is, quietly, kept. **Gideon Gomo**, whose bronzes — *Audience of One* among them — bring the ancestral vocabulary of Zimbabwean sculpture into a contemporary register I will, this once, allow myself to call new. **Pardon Mapondera**, whose *Gone but not forgotten* sits at the centre of one of the pavilion's most quietly devastating rooms. And **Eva Raath**, whose *Medusa Menopause* and *Checkered Memories* together make the case that textile is, in 2026, a serious medium for serious work. Their five longform profiles follow in this Scene Report.
+**The five artists** themselves were of course the reason the rest of us were there. **Felix Shumba**, whose six-metre charcoal wall and *Telephone Reader* series anchor the first room. **Franklyn Dzingai**, whose photographic and woven work argues for the family album as a place where the political memory of a country is, quietly, kept. **Gideon Gomo**, whose bronzes, *Audience of One* among them, bring the ancestral vocabulary of Zimbabwean sculpture into a contemporary register I will, this once, allow myself to call new. **Pardon Mapondera**, whose *Gone but not forgotten* sits at the centre of one of the pavilion's most quietly devastating rooms. And **Eva Raath**, whose *Medusa Menopause* and *Checkered Memories* together make the case that textile is, in 2026, a serious medium for serious work. Their five longform profiles follow in this Scene Report.
 
 **Rory Tsapayi** was there. Rory, raised in Zimbabwe and educated in the United States, was hand-picked by Koyo Kouoh herself to be part of the curatorial team for the 61st edition, and is the reason a Zimbabwean voice has been embedded inside the overall curatorial frame of *In Minor Keys*. To see them at the pavilion opening, calmly working the room, was to see the next generation of Zimbabwean curatorial intelligence operating at the centre of the Biennale's gravity rather than at its periphery.
 
@@ -124,7 +128,7 @@ Felix Shumba taking final installation pictures of his six-metre charcoal wall.
 
 ## Zimbabwean money funded this pavilion. That fact is worth pausing on.
 
-For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital — by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.
+For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital, by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.
 
 The [Higherlife Foundation](https://higherlifefoundation.org), founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. [1925 Glen Norah](https://glennorah.co.uk), the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.
 
@@ -160,7 +164,7 @@ There is therapy in beauty. Last week, in a city that initially refused to be an
 
 I left lighter than I had arrived, which is the part of travel one cannot plan for and that, when it happens, is the only kind of travel that has been worth the air mile.
 
-Five longform profiles of the artists in the Pavilion of Zimbabwe — Felix Shumba, Franklyn Dzingai, Gideon Gomo, Pardon Mapondera and Eva Raath — follow over the coming days, along with a closing dispatch on Shumba Maasai's interventions. They are the work of my colleagues. I will write again, in a different mode, when the 1925 Glen Norah publication is ready.
+Five longform profiles of the artists in the Pavilion of Zimbabwe, Felix Shumba, Franklyn Dzingai, Gideon Gomo, Pardon Mapondera and Eva Raath, follow over the coming days, along with a closing dispatch on Shumba Maasai's interventions. They are the work of my colleagues. I will write again, in a different mode, when the 1925 Glen Norah publication is ready.
 
 In the meantime, if you have not watched the Henry Taylor video, watch it again above.
 

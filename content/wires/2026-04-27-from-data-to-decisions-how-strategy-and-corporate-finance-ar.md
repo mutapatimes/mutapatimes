@@ -12,7 +12,7 @@ source_type: wire
 spotlight: false
 ---
 
-IN an age of data abundance and economic uncertainty, the paradox confronting corporate leaders is increasingly stark: more information, yet less clarity. By Brighton Musonza For executives in Zimbabwe, operating at the intersection of currency volatility, policy shifts and global market disruption—the challenge is particularly acute. Strategy is no longer a periodic exercise in planning; [&#8230;]The post From Data to Decisions: How Strategy and Corporate Finance Are Being Rewritten in Zimbabwe’s High-Stakes Economy appeared first on The Zimbabwe Mail.
+IN an age of data abundance and economic uncertainty, the paradox confronting corporate leaders is increasingly stark: more information, yet less clarity. By Brighton Musonza For executives in Zimbabwe, operating at the intersection of currency volatility, policy shifts and global market disruptionthe challenge is particularly acute. Strategy is no longer a periodic exercise in planning; [&#8230;]The post From Data to Decisions: How Strategy and Corporate Finance Are Being Rewritten in Zimbabwe’s High-Stakes Economy appeared first on The Zimbabwe Mail.
 
 *Originally published by Zimbabwe Mail.*
 [Read original article](https://thezimbabwemail.com/strategy-corporate-finance/from-data-to-decisions-how-strategy-and-corporate-finance-are-being-rewritten-in-zimbabwes-high-stakes-economy/)

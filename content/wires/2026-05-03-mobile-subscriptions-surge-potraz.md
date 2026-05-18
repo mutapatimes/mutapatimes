@@ -1,5 +1,5 @@
 ---
-title: "Mobile subscriptions surge — Potraz"
+title: "Mobile subscriptions surge, Potraz"
 date: 2026-05-03T03:39:12.000Z
 author: Dailynews
 category: Tech

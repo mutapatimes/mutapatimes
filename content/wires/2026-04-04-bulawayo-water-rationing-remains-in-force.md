@@ -12,7 +12,7 @@ source_type: wire
 spotlight: false
 ---
 
-Source: Bulawayo water rationing remains in force -Newsday Zimbabwe BULAWAYO residents will continue to endure water-shedding for the foreseeable future, despite improving dam levels, as ageing and inadequate infrastructure cripples the city’s ability to supply sufficient water. According to the latest Dam Watch report released by the City of Bulawayo, the six supply dams — [...] The post Bulawayo water rationing remains in force appeared first on Zimbabwe Situation .
+Source: Bulawayo water rationing remains in force -Newsday Zimbabwe BULAWAYO residents will continue to endure water-shedding for the foreseeable future, despite improving dam levels, as ageing and inadequate infrastructure cripples the city’s ability to supply sufficient water. According to the latest Dam Watch report released by the City of Bulawayo, the six supply dams, [...] The post Bulawayo water rationing remains in force appeared first on Zimbabwe Situation .
 
 *Originally published by Zimbabwe Situation.*
 [Read original article](https://www.zimbabwesituation.com/news/bulawayo-water-rationing-remains-in-force/)

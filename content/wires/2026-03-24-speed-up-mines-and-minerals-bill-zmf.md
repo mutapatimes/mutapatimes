@@ -1,5 +1,5 @@
 ---
-title: "Speed up Mines and Minerals Bill — ZMF"
+title: "Speed up Mines and Minerals Bill, ZMF"
 date: 2026-03-24T23:56:00.000Z
 author: Dailynews
 category: Policy
