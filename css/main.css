@@ -11150,3 +11150,30 @@ body:not(.series-page) .venice-partner-links a {
   color: #1a1a1a;
   text-decoration-color: rgba(0,0,0,0.4);
 }
+
+/* ─── CLS — reserve space for JS-injected slots ─────────────────────
+   The series carousel, the read-next strip, and the IG-style story
+   rail all fetch data after first paint and then inflate into a
+   tall block. With no reserved height the page renders, then
+   shifts ~700px when the data arrives, which torched CLS (0.712 in
+   the Lighthouse audit). Reserve roughly the rendered height so the
+   final paint slots in without movement. Cleared once content
+   renders (the children supply real height). */
+.series-carousel-slot:empty {
+  display: block;
+  min-height: 640px;
+  background: var(--series-bg, #0c1410);
+}
+.series-readnext-slot:empty {
+  display: block;
+  min-height: 360px;
+}
+#feature-story-slot:empty,
+[id^="feature-story-slot"]:empty {
+  display: block;
+  min-height: 0;
+}
+@media (max-width: 740px) {
+  .series-carousel-slot:empty { min-height: 540px; }
+  .series-readnext-slot:empty { min-height: 320px; }
+}
