@@ -1,0 +1,65 @@
+name: Rebuild Static Article Pages
+
+# Fires whenever the CMS (Pages CMS) or a contributor commits a change
+# to the article markdown or anything else the static-page build cares
+# about. Previously the only path to a rebuild was the every-3-hours
+# fetch-news cron, so CMS edits could sit invisible for hours after Save.
+#
+# We deliberately filter on the SOURCE paths only (content/, data/series,
+# build script) and never on the GENERATED articles/ output, so the
+# rebuild commit doesn't re-trigger this workflow. Commits authored by
+# GITHUB_TOKEN also don't fire other workflows by default, but the path
+# filter is belt-and-braces.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/articles/**'
+      - 'content/wires/**'
+      - 'data/series-*.json'
+      - 'scripts/build_static_pages.py'
+      - 'scripts/build_city_pages.py'
+      - 'scripts/build_author_pages.py'
+  workflow_dispatch:
+
+# Cancel an in-flight build if a newer commit arrives — we only care
+# about the latest state.
+concurrency:
+  group: rebuild-articles
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install build deps
+        run: pip install --quiet Pillow
+
+      - name: Build author pages first (bylines linked from articles)
+        run: python3 scripts/build_author_pages.py
+
+      - name: Rebuild static article pages
+        run: python3 scripts/build_static_pages.py
+
+      - name: Rebuild city pages
+        run: python3 scripts/build_city_pages.py
+
+      - name: Commit and push rebuilt static pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articles/ harare-news.html bulawayo-news.html mutare-news.html gweru-news.html masvingo-news.html victoria-falls-news.html authors/ data/authors.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Rebuild static pages after CMS edit [automated]"
+            git push
+          fi

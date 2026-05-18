@@ -126,12 +126,6 @@ The lineage was visible in the room. People who had been *the pavilion* in 2013,
 
 Felix Shumba taking final installation pictures of his six-metre charcoal wall.
 
-## Zimbabwean money funded this pavilion. That fact is worth pausing on.
-
-For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital, by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.
-
-The [Higherlife Foundation](https://higherlifefoundation.org), founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. [1925 Glen Norah](https://glennorah.co.uk), the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.
-
 ## The wider Biennale
 
 Outside the pavilion the rest of Venice had its own southern African weather. I saw **Gabrielle Goliath's** exhibition, which, after the much-reported cancellation of the South African pavilion this year, had come through in its own configuration at another venue: a two-channel video installation, shown inside a Venetian church, drawn from her ongoing *Elegy* performance projects on South African femicide and the Namibian genocide. The accompanying critical writing was by **Dr. Zoé Samudzi**, the scholar-activist whose essay *Metabolic Urgency* reads the *Elegy* works as acts of sonic mourning and political witnessing.
