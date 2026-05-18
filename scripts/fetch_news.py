@@ -1130,7 +1130,7 @@ def update_archive(new_articles):
 # import time (see write_articles_to_cms).
 _BANNED_CATEGORY_KEYWORDS = {
     "Crime": ["arrest", "police", "court", "murder", "crime", "prison", "jail", "suspect", "charged", "robbery", "fraud", "corruption", "trial", "convicted", "shooting", "stolen", "detained", "bail"],
-    "Politics": ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "party vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition"],
+    "Politics": ["politics", "political", "election", "parliament", "government", "minister", "president", "opposition", "zanu", "mdc", "ccc ", "party vote", "campaign", "diplomat", "embassy", "mnangagwa", "chamisa", "mugabe", "senator", "cabinet", "coalition", "constitutional amendment", "constitution amendment", "cab3", "amendment bill", "term limit", "2030 agenda"],
     # Road-fatality coverage is off the editorial menu (same logic as Crime).
     # Phrase-based to avoid false positives on "Crash Game" / "stock crash".
     "Accidents": [

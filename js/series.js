@@ -225,10 +225,37 @@
       '</aside>';
   }
 
+  // Article-page banner CTA (".series-page-banner [data-series-cta]")
+  // and the manifest fetch share a key. Rewrite the href at runtime so
+  // it points at the same target as the carousel headline CTA.
+  function wireBannerCta(seriesKey) {
+    var banner = document.querySelector('.series-page-banner[data-series="' + seriesKey + '"]');
+    if (!banner) return;
+    var cta = banner.querySelector('[data-series-cta]');
+    if (!cta) return;
+    loadManifest(seriesKey, function (err, manifest) {
+      if (err || !manifest) return;
+      var landing = manifest.landing_url ||
+        (manifest.articles && manifest.articles[0] ? articleUrl(manifest.articles[0].slug) : '#');
+      cta.setAttribute('href', landing);
+    });
+  }
+
   function init() {
     var slots = document.querySelectorAll(
       ".series-carousel-slot[data-series], .series-readnext-slot[data-series]"
     );
+    var banners = document.querySelectorAll(".series-page-banner[data-series]");
+
+    if (!slots.length && !banners.length) return;
+
+    // Wire banners (article pages) — these are server-rendered and just
+    // need the CTA href patched.
+    banners.forEach(function (b) {
+      var k = b.getAttribute("data-series");
+      if (k) wireBannerCta(k);
+    });
+
     if (!slots.length) return;
 
     // Group slots by series key so we batch fetches.

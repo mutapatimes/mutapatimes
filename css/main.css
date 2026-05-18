@@ -10717,14 +10717,39 @@ body.series-page .article-back a {
   text-decoration: underline;
   text-decoration-color: rgba(244,237,224,0.45);
 }
-/* Masthead + dividers + topbar — keep the brand readable on dark. */
+/* Topbar and nav drawer sit OUTSIDE the dark reading surface and keep
+   their default cream-and-ink palette. The body-level token override
+   was bleeding cream type onto those white surfaces. Reset them. */
 body.series-page .topbar,
+body.series-page .topbar *,
+body.series-page .topbar a,
+body.series-page .topbar-brand,
+body.series-page .topbar-cta,
+body.series-page .topbar-menu,
+body.series-page .nav-drawer,
+body.series-page .nav-drawer *,
+body.series-page .nav-drawer a,
+body.series-page .nav-drawer-main,
+body.series-page .nav-drawer-main a,
+body.series-page .nav-drawer-section,
+body.series-page .nav-drawer-close,
+body.series-page .nav-drawer-search input {
+  color: #1a1a1a;
+  --text: #1a1a1a;
+  --ink: #1a1a1a;
+  --text-mid: #333;
+  --text-light: #444;
+}
+body.series-page .topbar-cta { color: var(--accent, #c41e1e); }
+body.series-page .nav-drawer-search input::placeholder { color: #888; }
+/* Title/masthead block (the printed-paper title that sits below the
+   topbar) — paint it cream so it reads on the dark paper. */
 body.series-page .titleDiv,
 body.series-page .title-link,
 body.series-page #mainNav,
 body.series-page #mainNav a,
-body.series-page .topbar-brand,
-body.series-page .title {
+body.series-page .title,
+body.series-page .sub {
   color: var(--series-fg);
 }
 body.series-page hr,
@@ -10892,4 +10917,152 @@ body:not(.series-page) .mt-context-foot {
   .mt-context-module-inner { padding: 28px 22px 24px; }
   .mt-context-stats { gap: 16px; padding: 18px 0; }
   .mt-context-stat-figure { font-size: 1.6rem; }
+}
+
+/* ─── Inline video figure (Venice essay, Henry Taylor) ───────────────── */
+.venice-video {
+  margin: 32px auto;
+  max-width: 720px;
+}
+.venice-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  background: #000;
+}
+.venice-video figcaption {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.84rem;
+  color: rgba(244,237,224,0.7);
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+body:not(.series-page) .venice-video figcaption {
+  color: rgba(0,0,0,0.6);
+}
+
+/* ─── Series longform hero: title BELOW image, no overlay ────────────
+   On series articles the hero is the artist's portrait — overlaying
+   the headline + deck + byline buried the face. Stack the layout
+   instead: image at natural ratio (max 80vh), then a panel with the
+   eyebrow, title, deck and meta. Preserves original image dimensions
+   and gives the headline a proper canvas. */
+body.series-page .article-longform-header {
+  width: 100%;
+  margin: 0 auto;
+  left: auto;
+  margin-left: 0;
+}
+body.series-page .article-longform-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  min-height: 0;
+  background: var(--series-bg);
+  overflow: visible;
+}
+body.series-page .article-longform-hero-img {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  object-position: center center;
+  background: #000;
+  display: block;
+}
+body.series-page .article-longform-hero-overlay { display: none; }
+body.series-page .article-longform-hero-inner {
+  position: static;
+  inset: auto;
+  padding: 36px 24px 12px;
+  max-width: 880px;
+  margin: 0 auto;
+  color: var(--series-fg);
+  text-align: left;
+}
+body.series-page .article-longform-eyebrow {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0 16px;
+  color: rgba(244,237,224,0.78);
+}
+body.series-page .article-longform-title {
+  color: var(--series-fg);
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+}
+body.series-page .article-longform-deck {
+  color: rgba(244,237,224,0.88);
+}
+body.series-page .article-longform-meta {
+  color: rgba(244,237,224,0.7);
+}
+body.series-page .article-longform-credit {
+  color: rgba(244,237,224,0.55);
+  text-align: left;
+  position: static;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+/* Standard (non-longform) hero on series articles — same principle:
+   show the photo at its real proportions rather than cropped. */
+body.series-page .article-hero-img {
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+}
+
+/* Body images — never crop, always natural. The base
+   .article-body-img already does this, but series bodies add some
+   inline <figure> blocks via raw HTML; reset any aspect-ratio
+   constraint they might inherit. */
+body.series-page .article-body img,
+body.series-page .article-body-img,
+body.series-page .article-body figure img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  aspect-ratio: auto;
+}
+
+/* Carousel + read-next cards: preserve image aspect ratio instead of
+   force-cropping to 4:3. The image is shown at its natural shape,
+   letterboxed against the card if needed. */
+.series-card-imgwrap {
+  aspect-ratio: auto;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+}
+.series-card-img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  filter: none;
+}
+.series-readnext-imgwrap {
+  aspect-ratio: auto;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+}
+.series-readnext-imgwrap img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
 }
