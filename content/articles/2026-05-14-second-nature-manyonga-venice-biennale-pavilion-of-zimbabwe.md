@@ -17,6 +17,8 @@ draft: false
 longform: false
 hero_eyebrow: SCENE REPORT · VENICE · 1 OF 7
 read_minutes: Twelve
+series: venice-biennale-2026
+series_order: 1
 ---
 I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the road in from Verona by a margin of about ten minutes of plausible weather, was now soaked through. So was I.
 
@@ -34,7 +36,12 @@ The apartment itself was beautiful in the particular way these *palazzi* are bea
 
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
-Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.
+<figure class="venice-video">
+  <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
+    <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
+  </video>
+  <figcaption>Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
+</figure>
 
 I watched it. Then I watched it again.
 
