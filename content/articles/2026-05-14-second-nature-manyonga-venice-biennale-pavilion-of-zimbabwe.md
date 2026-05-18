@@ -40,7 +40,7 @@ I do what most of my generation does, when defeated: I doom-scrolled. And the al
   <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
     <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
   </video>
-  <figcaption>Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
+  <figcaption><a href="https://www.instagram.com/p/DX9VznmPDa1/" target="_blank" rel="noopener">Henry Taylor (@chinatowntaylor)</a>, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
 </figure>
 
 I watched it. Then I watched it again.
