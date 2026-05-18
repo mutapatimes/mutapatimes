@@ -1472,7 +1472,13 @@ function renderMainStories(articles) {
   // Inject structured data for SEO
   injectArticleSchema(pageArticles, 'main');
 
-  // Subscribe banner — full-height CTA after weather (only once)
+  // Subscribe banner — full-height CTA after weather (only once).
+  // Disabled: the page now ships the static .essential-subscribe panel
+  // in index.html and the build templates, so injecting this legacy
+  // .subscribe-banner left two near-identical signup sections stacked
+  // on the homepage. Bail out before rendering.
+  return;
+  // eslint-disable-next-line no-unreachable
   if ($(".subscribe-banner").length) return;
   var BREVO_FORM_URL = "https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==";
   var contentLayout = $(".content-layout");

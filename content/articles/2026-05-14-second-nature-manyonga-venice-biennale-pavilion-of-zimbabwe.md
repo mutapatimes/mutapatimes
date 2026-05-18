@@ -36,7 +36,7 @@ I sulked. I am willing to admit this. There is a particular kind of British weat
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 <figure class="venice-video">
-  <video autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.jpg">
+  <video autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
     <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
   </video>
   <figcaption>Henry Taylor, Instagram, 12 May 2026. Courtesy of the artist.</figcaption>
