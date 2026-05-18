@@ -147,7 +147,7 @@ My friend **Gazelle Mba**, the writer, whose work some of you will know, said so
 
 What I have to report from Venice is that she is correct.
 
-There is therapy in beauty. Last week, in a city that initially refused to be anything other than wet and grey and inconvenient, I was given several days of it. The pavilion was part of it. So were the lagoon walls, in their long argument with the weather. So were the elder women I kept noticing across the city, walking the *fondamenta* in the evenings. So were the friends and the alumni and Tsitsi's group and the brother of the artist supporting his brother. So was the journey back out toward Verona on Saturday evening, watching Venice pull back into the late spring light.
+There is therapy in beauty. Last week, in a city that had at first refused to be anything other than wet and grey and inconvenient, I was given several days of it. The pavilion was beauty. The lagoon walls were beauty, in their long argument with the weather. The friends and the alumni in the room on opening night were beauty. The journey back out toward Verona on Saturday evening, watching the city pull away into the late spring light, was beauty. Taken together, they did what beauty does when you are open to it: they put me back in working order.
 
 I left lighter than I had arrived, which is the part of travel one cannot plan for and that, when it happens, is the only kind of travel that has been worth the air mile.
 

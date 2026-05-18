@@ -1,6 +1,6 @@
 ---
 title: "Henkel Ventures co-leads Ruka's $4.5m round"
-date: 2026-05-17T08:00:00.000Z
+date: 2026-05-14T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: /img/uploads/ruka-launch/media/community.jpg
