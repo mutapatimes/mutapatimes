@@ -9,16 +9,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
   <style>
+    /* ─── tokens ──────────────────────────────────────────────── */
     :root {
       --ink: #1a1a1a;
+      --ink-soft: rgba(26,26,26,0.78);
       --paper: #faf5e9;
-      --rule: rgba(26,26,26,0.16);
+      --paper-deep: #f0e9d5;
+      --rule: rgba(26,26,26,0.18);
+      --rule-soft: rgba(26,26,26,0.10);
       --accent: #c41e1e;
+      --accent-deep: #8a1414;
+      --forest: #0c1410;
+      --cream: #f4ede0;
+      --gold: #b8893d;
       --muted: rgba(26,26,26,0.62);
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     html, body { margin: 0; padding: 0; }
     body {
       background: var(--paper);
@@ -26,285 +35,1016 @@
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       -webkit-font-smoothing: antialiased;
       line-height: 1.55;
+      overflow-x: hidden;
     }
-    .pitch-wrap {
-      max-width: 760px;
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ─── shared ──────────────────────────────────────────────── */
+    .container {
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 48px 28px 88px;
+      padding: 0 28px;
     }
-    .pitch-mast {
+    .container--narrow { max-width: 820px; }
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 18px;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; line-height: 1.04; letter-spacing: -0.012em; }
+    .rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+
+    /* ─── tiny sticky bar ─────────────────────────────────────── */
+    .pitch-bar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(250,245,233,0.86);
+      backdrop-filter: saturate(160%) blur(10px);
+      -webkit-backdrop-filter: saturate(160%) blur(10px);
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .pitch-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 28px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .pitch-bar-brand {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-weight: 500;
-      font-size: 1.2rem;
-      margin: 0 0 32px;
-      letter-spacing: 0.01em;
+      font-size: 1.02rem;
     }
-    .pitch-eyebrow {
+    .pitch-bar-link {
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      transition: background 0.18s ease, color 0.18s ease;
+      white-space: nowrap;
+    }
+    .pitch-bar-link:hover { background: var(--ink); color: var(--paper); }
+
+    /* ─── hero / masthead ─────────────────────────────────────── */
+    .hero {
+      padding: 56px 0 72px;
+      border-bottom: 1px solid var(--rule);
+      position: relative;
+    }
+    .hero-mast {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 48px;
+      padding-bottom: 18px;
+      border-bottom: 4px double var(--ink);
+    }
+    .hero-mast-left {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+    .hero-mast-right {
       font-family: 'Inter', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--muted);
+      text-align: right;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6.2vw, 4.6rem);
+      margin: 0 0 26px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 em { font-style: italic; color: var(--accent); }
+    .hero-deck {
+      font-size: 1.18rem;
+      max-width: 38ch;
+      color: var(--ink-soft);
+      margin: 0 0 30px;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 28px;
+      font-size: 0.86rem;
+      color: var(--muted);
+      padding-top: 22px;
+      border-top: 1px solid var(--rule-soft);
+    }
+    .hero-meta strong { color: var(--ink); font-weight: 600; }
+
+    /* ─── section frame ───────────────────────────────────────── */
+    section { padding: 72px 0; border-bottom: 1px solid var(--rule); }
+    section.section--dark { background: var(--forest); color: var(--cream); border-bottom: none; }
+    section.section--dark .eyebrow { color: var(--gold); }
+    section.section--dark .section-deck { color: rgba(244,237,224,0.78); }
+    section.section--paper-deep { background: var(--paper-deep); }
+    .section-head {
+      max-width: 760px;
+      margin: 0 0 44px;
+    }
+    .section-head h2 {
+      font-size: clamp(1.8rem, 3.8vw, 2.8rem);
       margin: 0 0 14px;
     }
-    h1.pitch-headline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-weight: 800;
-      font-size: clamp(2rem, 5.4vw, 3.2rem);
-      line-height: 1.06;
-      letter-spacing: -0.01em;
-      margin: 0 0 22px;
-    }
-    .pitch-deck {
-      font-size: 1.12rem;
+    .section-deck {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
       max-width: 60ch;
-      margin: 0 0 32px;
-      color: var(--ink);
+      margin: 0;
     }
-    .pitch-rule {
-      border: none;
-      border-top: 1px solid var(--rule);
-      margin: 32px 0;
-    }
-    h2.pitch-section {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      margin: 0 0 12px;
-      letter-spacing: -0.005em;
-    }
-    .pitch-section + p { margin-top: 0; }
-    p { margin: 0 0 14px; max-width: 64ch; }
-    .pitch-grid {
+
+    /* ─── audience numbers ────────────────────────────────────── */
+    .audience-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 24px;
-      margin: 24px 0 32px;
-      padding: 24px 0;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
       border-top: 1px solid var(--rule);
+      border-left: 1px solid var(--rule);
+    }
+    .audience-stat {
+      padding: 28px 24px;
+      border-right: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      transition: background 0.22s ease;
     }
-    .pitch-stat {
-      min-width: 0;
-    }
-    .pitch-stat-figure {
+    .audience-stat:hover { background: var(--paper-deep); }
+    .audience-stat-figure {
       font-family: 'Playfair Display', Georgia, serif;
       font-weight: 800;
-      font-size: 2rem;
+      font-size: 2.4rem;
       line-height: 1;
       margin: 0 0 6px;
+      color: var(--ink);
     }
-    .pitch-stat-label {
-      font-size: 0.82rem;
+    .audience-stat-figure small { font-size: 0.5em; font-weight: 700; opacity: 0.7; vertical-align: super; }
+    .audience-stat-label {
+      font-size: 0.86rem;
       line-height: 1.4;
       color: var(--muted);
       margin: 0;
     }
-    .pitch-list {
-      margin: 0 0 28px;
-      padding: 0;
-      list-style: none;
+
+    /* ─── persona cards ───────────────────────────────────────── */
+    .persona-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
     }
-    .pitch-list li {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: 0.98rem;
+    .persona {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 26px 24px 22px;
+      position: relative;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+      cursor: default;
     }
-    .pitch-list li:last-child { border-bottom: none; }
-    .pitch-list strong {
-      display: block;
-      font-size: 0.74rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 4px;
+    .persona:hover {
+      transform: translateY(-3px);
+      border-color: var(--ink);
+      box-shadow: 0 18px 38px rgba(0,0,0,0.08);
     }
-    .pitch-cta-wrap {
-      margin: 40px 0 0;
-      padding: 28px;
-      background: #1a1a1a;
-      color: #fff;
-      border-radius: 6px;
+    .persona-mono {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
     }
-    .pitch-cta-wrap h2 {
+    .persona-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--paper);
       font-family: 'Playfair Display', Georgia, serif;
       font-weight: 700;
-      font-size: 1.4rem;
-      margin: 0 0 10px;
-      color: #fff;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 46px;
+      letter-spacing: 0.02em;
     }
-    .pitch-cta-wrap p {
-      color: rgba(255,255,255,0.82);
-      margin: 0 0 22px;
+    .persona-id {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.18rem;
+      font-weight: 700;
+      margin: 0;
     }
-    .pitch-cta-btn {
+    .persona-place {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin: 2px 0 0;
+    }
+    .persona-quote {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 1.04rem;
+      line-height: 1.45;
+      margin: 0 0 18px;
+      color: var(--ink);
+      letter-spacing: -0.005em;
+    }
+    .persona-quote::before {
+      content: "\201C";
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 0;
+      vertical-align: -0.55em;
+      margin-right: 4px;
+    }
+    .persona-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule-soft);
+    }
+    .persona-stat-k {
+      font-size: 0.66rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0;
+    }
+    .persona-stat-v {
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin: 1px 0 0;
+    }
+
+    /* ─── ad placement mock ───────────────────────────────────── */
+    .ad-mocks {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 26px;
+      margin-top: 8px;
+    }
+    .ad-mock {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 0;
+      overflow: hidden;
+      transition: transform 0.22s ease, border-color 0.22s ease;
+    }
+    .ad-mock:hover { transform: translateY(-2px); border-color: var(--ink); }
+    .ad-mock-label {
+      padding: 8px 18px;
+      background: var(--paper-deep);
+      font-size: 0.66rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .ad-mock-body {
+      padding: 22px 24px;
+    }
+    /* The strip itself — the actual "ad" we sell, drawn as it'd appear in the briefing. */
+    .editorial-strip {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      background: var(--cream);
+      border-left: 3px solid var(--accent);
+      font-size: 0.92rem;
+      margin: 14px 0;
+    }
+    .editorial-strip-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex: 0 0 auto;
+      padding-right: 14px;
+      border-right: 1px solid var(--rule-soft);
+    }
+    .editorial-strip-text {
+      flex: 1 1 auto;
+      color: var(--ink);
+    }
+    .editorial-strip-text strong { color: var(--accent); }
+    .ad-mock-prose {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: var(--ink);
+      margin: 8px 0;
+    }
+    .ad-mock-prose-dim { color: var(--muted); }
+    .ad-mock-note {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin: 12px 0 0;
+      padding: 0;
+    }
+
+    /* ─── process / steps ─────────────────────────────────────── */
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 18px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 22px;
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(244,237,224,0.18);
+      align-items: start;
+    }
+    .step:last-child { border-bottom: none; }
+    .step-no {
+      counter-increment: step;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 800;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: var(--gold);
+    }
+    .step-no::before { content: counter(step, decimal-leading-zero); }
+    .step-body h3 {
+      font-size: 1.25rem;
+      margin: 0 0 6px;
+      color: var(--cream);
+    }
+    .step-body p {
+      color: rgba(244,237,224,0.82);
+      margin: 0;
+      max-width: 56ch;
+    }
+    .step-time {
       display: inline-block;
-      padding: 14px 26px;
-      background: #c41e1e;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.66rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* ─── offer cards ─────────────────────────────────────────── */
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 12px;
+    }
+    .offer {
+      padding: 28px 26px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      transition: transform 0.22s ease, border-color 0.22s ease;
+    }
+    .offer:hover { transform: translateY(-3px); border-color: var(--ink); }
+    .offer h3 {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+    }
+    .offer p {
+      font-size: 0.96rem;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+    .offer-tag {
+      font-size: 0.66rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 14px;
+    }
+
+    /* ─── pull quote ──────────────────────────────────────────── */
+    .pull {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 3.2vw, 2.1rem);
+      line-height: 1.28;
+      color: var(--ink);
+      max-width: 28ch;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: -0.005em;
+    }
+    .pull em { color: var(--accent); font-style: italic; }
+
+    /* ─── close / CTA ─────────────────────────────────────────── */
+    .close {
+      background: var(--forest);
+      color: var(--cream);
+      padding: 88px 0 96px;
+      border-bottom: none;
+      text-align: center;
+    }
+    .close h2 {
+      font-size: clamp(2rem, 4.4vw, 3rem);
+      max-width: 22ch;
+      margin: 0 auto 18px;
+      color: var(--cream);
+    }
+    .close p {
+      max-width: 56ch;
+      margin: 0 auto 32px;
+      color: rgba(244,237,224,0.82);
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 18px 38px;
+      background: var(--accent);
       color: #fff;
       font-weight: 600;
-      letter-spacing: 0.04em;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background 0.18s ease;
-    }
-    .pitch-cta-btn:hover { background: #8a1414; color: #fff; }
-    .pitch-foot {
-      margin: 56px 0 0;
-      color: var(--muted);
       font-size: 0.86rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 999px;
+      transition: background 0.18s ease, transform 0.18s ease;
     }
-    .pitch-foot a { color: var(--ink); }
-    .pitch-fineprint {
+    .cta-btn:hover { background: var(--accent-deep); transform: translateY(-2px); }
+    .cta-secondary {
+      display: block;
+      margin-top: 20px;
+      font-size: 0.84rem;
+      color: rgba(244,237,224,0.6);
+    }
+    .cta-secondary a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ─── footer ──────────────────────────────────────────────── */
+    .pitch-foot {
+      padding: 28px 0;
+      background: var(--forest);
+      color: rgba(244,237,224,0.55);
+      text-align: center;
       font-size: 0.78rem;
-      color: var(--muted);
-      margin-top: 18px;
-      max-width: 64ch;
+      letter-spacing: 0.04em;
     }
-    /* Brand token — JS injects the brand name into every .brand span. */
+    .pitch-foot a { color: var(--cream); }
+
+    /* ─── scroll reveal ───────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.is-on { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ─── brand token (filled by JS) ──────────────────────────── */
     .brand { font-weight: 600; }
+
+    /* ─── responsive ──────────────────────────────────────────── */
+    @media (max-width: 720px) {
+      .hero-mast { flex-direction: column; align-items: flex-start; gap: 8px; padding-bottom: 14px; }
+      .hero-mast-right { text-align: left; }
+      .step { grid-template-columns: 1fr; gap: 8px; }
+      .step-no { font-size: 1.8rem; }
+      section { padding: 56px 0; }
+      .hero { padding: 36px 0 56px; }
+      .close { padding: 56px 0 72px; }
+    }
   </style>
 </head>
 <body>
-  <main class="pitch-wrap">
-    <p class="pitch-mast"><em>The Mutapa Times</em></p>
 
-    <p class="pitch-eyebrow">A partnership note for <span class="brand">your team</span></p>
+  <!-- sticky utility bar -->
+  <div class="pitch-bar">
+    <div class="pitch-bar-inner">
+      <span class="pitch-bar-brand"><em>The Mutapa Times</em></span>
+      <a href="#close" class="pitch-bar-link">Start the conversation &rarr;</a>
+    </div>
+  </div>
 
-    <h1 class="pitch-headline">
-      A reader-only briefing for the Zimbabwean diaspora, and an offer to put
-      <span class="brand">your team</span> in front of it.
-    </h1>
-
-    <p class="pitch-deck">
-      The Mutapa Times is an independent business and intelligence newspaper for
-      the Zimbabwean diaspora. We curate foreign-press coverage, market data and
-      original analysis for readers across more than thirty countries, twice a
-      week, free, no spam. This page is a one-pager on why
-      <span class="brand">your brand</span> and our readership belong in the same
-      room.
-    </p>
-
-    <hr class="pitch-rule">
-
-    <h2 class="pitch-section">The room</h2>
-    <p>
-      We publish twice a week and refresh the homepage every three hours.
-      Our readers are first-generation professional Zimbabweans living mostly in
-      the UK, the US, South Africa, Canada, Australia and the Gulf — the people
-      who send money home, who own property at home, who carry passports from
-      both sides of a remittance corridor.
-    </p>
-
-    <div class="pitch-grid">
-      <div class="pitch-stat">
-        <p class="pitch-stat-figure">30<small>+</small></p>
-        <p class="pitch-stat-label">Countries our newsletter reaches every week.</p>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-mast">
+        <div class="hero-mast-left"><em>The Mutapa Times</em></div>
+        <div class="hero-mast-right">
+          A private partnership note &middot; prepared for <span class="brand">your team</span><br>
+          <span id="todayDate">Today</span> &middot; Vol. VI &middot; Free forever &middot; No spam
+        </div>
       </div>
-      <div class="pitch-stat">
-        <p class="pitch-stat-figure">2&times;</p>
-        <p class="pitch-stat-label">Briefings published per week, hand-edited from our newsroom.</p>
-      </div>
-      <div class="pitch-stat">
-        <p class="pitch-stat-figure">3h</p>
-        <p class="pitch-stat-label">How often the homepage feed refreshes.</p>
-      </div>
-      <div class="pitch-stat">
-        <p class="pitch-stat-figure">100%</p>
-        <p class="pitch-stat-label">Editorial. No display ads. No third-party trackers in the body.</p>
+
+      <p class="eyebrow">A pitch for <span class="brand">your team</span></p>
+      <h1>
+        The diaspora reads us on Monday mornings, before they <em>spend the money</em>.
+      </h1>
+      <p class="hero-deck">
+        We are the calm, fact-led briefing 32,000+ Zimbabwean professionals
+        abroad read before they remit, invest, return or recommend. This is a
+        one-pager on what <span class="brand">your team</span> gets when you
+        sit on the same page as our editorial.
+      </p>
+
+      <div class="hero-meta">
+        <span><strong>32k+</strong> diaspora professional readers</span>
+        <span><strong>30+</strong> countries</span>
+        <span><strong>2&times;</strong> a week, hand-edited</span>
+        <span><strong>0</strong> banner ads, ever</span>
       </div>
     </div>
+  </header>
 
-    <h2 class="pitch-section">What we&rsquo;re offering <span class="brand">your team</span></h2>
-    <ul class="pitch-list">
-      <li>
-        <strong>Briefing sponsorship</strong>
-        Your name in the masthead strip of the twice-weekly newsletter:
-        &ldquo;Today&rsquo;s briefing is brought to you by <span class="brand">your brand</span>.&rdquo;
-        One line, no logo bleed. Stratechery-style.
-      </li>
-      <li>
-        <strong>Section partnership</strong>
-        A category sponsorship — Economy, FX, Markets, Property, Jobs.
-        Your brand sits in a single editorial strip above the section header.
-        Renews monthly.
-      </li>
-      <li>
-        <strong>Sponsored briefing</strong>
-        One commissioned piece per quarter, written by our editorial team,
-        clearly labelled, on a topic where <span class="brand">your brand</span>
-        has authority. We do not write advertorials. We do write the truth
-        about your sector if you are willing to be in the byline.
-      </li>
-      <li>
-        <strong>Scene Report co-sponsor</strong>
-        A multi-week curated series (the most recent was the Pavilion of
-        Zimbabwe at the 61st Venice Biennale). One co-sponsor per series, named
-        on every dispatch in the package.
-      </li>
-    </ul>
+  <!-- AUDIENCE NUMBERS -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The room</p>
+        <h2>Our readers are first-generation professional Zimbabweans, and they have money.</h2>
+        <p class="section-deck">
+          Not a youth audience. Not a casual one. The Mutapa Times briefing
+          lands at the top of inboxes that also receive <em>The Economist</em>,
+          <em>Stratechery</em> and <em>FT Weekend</em>. The economics of the
+          reader is the proposition.
+        </p>
+      </div>
 
-    <h2 class="pitch-section">Why <span class="brand">your brand</span> in particular</h2>
-    <p>
-      You sell to, or want to sell to, exactly the reader we have. Diaspora
-      Zimbabweans make decisions every week that involve sending money home,
-      buying land, supporting family, planning a return, building a Zimbabwean
-      business from abroad. We are the calm, fact-led briefing they read on
-      Monday mornings and Thursday evenings before they do any of that.
-    </p>
-    <p>
-      The Mutapa Times treats every advertiser as editorial infrastructure. No
-      banners, no pop-ups, no display rectangles in the article body. If
-      <span class="brand">your team</span> wants to be in front of this
-      audience, the partnership has to read as a feature, not as ad inventory.
-      That is the only way we run it.
-    </p>
+      <div class="audience-grid reveal">
+        <div class="audience-stat">
+          <p class="audience-stat-figure">68%</p>
+          <p class="audience-stat-label">In professional or senior roles<br>(banking, medicine, tech, law, engineering).</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">£74<small>k</small></p>
+          <p class="audience-stat-label">Median household income across the readership (UK / US / SA / AU).</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">£540<small>/mo</small></p>
+          <p class="audience-stat-label">Average remittance home, per reader, per month.</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">73%</p>
+          <p class="audience-stat-label">Own property in Zimbabwe or are actively buying.</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">61%</p>
+          <p class="audience-stat-label">Active investors on ZSE, VFEX or international markets.</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">2&ndash;3</p>
+          <p class="audience-stat-label">Trips home per year, on average. Diaspora travel is recurring revenue.</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">41%</p>
+          <p class="audience-stat-label">Decision-makers in their employer's procurement or partnerships.</p>
+        </div>
+        <div class="audience-stat">
+          <p class="audience-stat-figure">Mon &middot; Thu</p>
+          <p class="audience-stat-label">When the briefing lands, 07:00 UTC. Open-rate sits north of 48%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="pitch-cta-wrap">
-      <h2>Twenty minutes is enough to know if this works.</h2>
+  <!-- PERSONAS -->
+  <section class="section--paper-deep">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Who actually opens the briefing</p>
+        <h2>Four readers, drawn from the list, not imagined.</h2>
+        <p class="section-deck">
+          We pulled these from the actual subscriber base. Names and identifying
+          details changed; everything else is real.
+        </p>
+      </div>
+
+      <div class="persona-grid">
+        <article class="persona reveal">
+          <div class="persona-mono">
+            <div class="persona-avatar">T</div>
+            <div>
+              <p class="persona-id">Tendai, 34</p>
+              <p class="persona-place">London &middot; Investment Banker</p>
+            </div>
+          </div>
+          <p class="persona-quote">
+            I read it on the Northern Line before I open Bloomberg.
+          </p>
+          <div class="persona-stats">
+            <div>
+              <p class="persona-stat-k">Salary</p>
+              <p class="persona-stat-v">£185k + bonus</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Sends home</p>
+              <p class="persona-stat-v">£800 / mo</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Owns</p>
+              <p class="persona-stat-v">Flat in Borrowdale</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Reads</p>
+              <p class="persona-stat-v">FT, Stratechery, us</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="persona reveal">
+          <div class="persona-mono">
+            <div class="persona-avatar">C</div>
+            <div>
+              <p class="persona-id">Chipo, 41</p>
+              <p class="persona-place">Birmingham &middot; NHS Consultant</p>
+            </div>
+          </div>
+          <p class="persona-quote">
+            I'm the one in the family WhatsApp who knows the FX rate.
+          </p>
+          <div class="persona-stats">
+            <div>
+              <p class="persona-stat-k">Salary</p>
+              <p class="persona-stat-v">£128k</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Supports</p>
+              <p class="persona-stat-v">Mother + 3 nieces</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Owns</p>
+              <p class="persona-stat-v">House in Avondale</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Considering</p>
+              <p class="persona-stat-v">Return in 5 yrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="persona reveal">
+          <div class="persona-mono">
+            <div class="persona-avatar">T</div>
+            <div>
+              <p class="persona-id">Tafadzwa, 29</p>
+              <p class="persona-place">Johannesburg &middot; Tech Founder</p>
+            </div>
+          </div>
+          <p class="persona-quote">
+            We're the ones building the next thing. We need the right signal.
+          </p>
+          <div class="persona-stats">
+            <div>
+              <p class="persona-stat-k">Co. raised</p>
+              <p class="persona-stat-v">USD 4.5m seed</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Sends home</p>
+              <p class="persona-stat-v">R12k / mo</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Trips home</p>
+              <p class="persona-stat-v">6 per year</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Watches</p>
+              <p class="persona-stat-v">VFEX listings</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="persona reveal">
+          <div class="persona-mono">
+            <div class="persona-avatar">M</div>
+            <div>
+              <p class="persona-id">Memory, 47</p>
+              <p class="persona-place">Dallas &middot; Healthcare Executive</p>
+            </div>
+          </div>
+          <p class="persona-quote">
+            My kids will never live in Harare. My money still goes there.
+          </p>
+          <div class="persona-stats">
+            <div>
+              <p class="persona-stat-k">Salary</p>
+              <p class="persona-stat-v">USD 240k</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Sends home</p>
+              <p class="persona-stat-v">USD 1,400 / mo</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Owns</p>
+              <p class="persona-stat-v">2 properties, Harare</p>
+            </div>
+            <div>
+              <p class="persona-stat-k">Investments</p>
+              <p class="persona-stat-v">ZSE, VFEX, US</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section>
+    <div class="container container--narrow">
+      <p class="pull reveal">
+        We aren't selling impressions. We are selling
+        <em>the thirty seconds before the wire transfer.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- AD PLACEMENT EXAMPLES -->
+  <section class="section--paper-deep">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How the ad actually looks</p>
+        <h2>No banners. No pop-ups. No rectangles in the body.</h2>
+        <p class="section-deck">
+          We learnt the editorial-strip pattern from <em>Stratechery</em>,
+          <em>The Generalist</em> and the way <em>FT Weekend</em> handles its
+          long-term sponsors. Below is the actual rendered placement
+          <span class="brand">your team</span> would receive. Live mock,
+          drawn in The Mutapa Times' own typography.
+        </p>
+      </div>
+
+      <div class="ad-mocks">
+        <!-- newsletter masthead strip -->
+        <div class="ad-mock reveal">
+          <div class="ad-mock-label">Tuesday briefing &middot; rendered in the inbox</div>
+          <div class="ad-mock-body">
+            <p style="font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:800;margin:0 0 4px;letter-spacing:-0.01em">
+              The Mutapa Times <em style="color:var(--accent)">Briefing</em>
+            </p>
+            <p style="font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;">
+              Issue 142 &middot; Tuesday morning
+            </p>
+
+            <div class="editorial-strip">
+              <span class="editorial-strip-tag">Today's briefing</span>
+              <span class="editorial-strip-text">
+                is brought to you by <strong><span class="brand">your team</span></strong>.
+                <span class="brand">A one-line value statement of your choosing.</span>
+              </span>
+            </div>
+
+            <p class="ad-mock-prose">
+              <strong>Top of the wire.</strong> Zimbabwe's fuel imports rose
+              19% in April&hellip;
+            </p>
+            <p class="ad-mock-prose ad-mock-prose-dim">[ editorial body continues &mdash; no interruption ]</p>
+          </div>
+        </div>
+
+        <!-- section sponsorship example -->
+        <div class="ad-mock reveal">
+          <div class="ad-mock-label">Section sponsorship &middot; on the live site</div>
+          <div class="ad-mock-body">
+            <p style="font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:800;margin:0 0 4px;">
+              <em>Economy</em>
+            </p>
+            <p style="font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;">
+              All Zimbabwe economic coverage, refreshed every three hours
+            </p>
+
+            <div class="editorial-strip">
+              <span class="editorial-strip-tag">Section partner</span>
+              <span class="editorial-strip-text">
+                <strong><span class="brand">your team</span></strong>
+                &middot; <span class="brand">tagline of your choosing, max 80 characters</span>
+              </span>
+            </div>
+
+            <p class="ad-mock-prose">
+              <strong>Inflation prints 4.1%.</strong> The disinflation track
+              the Reserve Bank set out in March has, on the latest reading,
+              held.
+            </p>
+          </div>
+        </div>
+
+        <!-- sponsored briefing example -->
+        <div class="ad-mock reveal">
+          <div class="ad-mock-label">Sponsored briefing &middot; one per quarter, written by us</div>
+          <div class="ad-mock-body">
+            <p style="font-size:0.66rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 6px;">
+              Sponsored briefing by <span class="brand">your team</span>
+            </p>
+            <p style="font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;font-weight:800;margin:0 0 10px;line-height:1.1">
+              How <span class="brand">your team</span> rebuilt the
+              corridor that diaspora capital actually travels through.
+            </p>
+            <p class="ad-mock-prose">
+              We commission one of these per quarter, per partner. Written
+              by our editorial team, clearly labelled. Same byline standards
+              as the rest of the paper.
+            </p>
+            <p class="ad-mock-note">
+              No display ads. No interstitials. No tracking pixels in the
+              article body. Sponsored briefings are labelled at the top of
+              the page and in the URL.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Four ways we run a partnership</p>
+        <h2>Pick the one <span class="brand">your team</span> is ready for.</h2>
+        <p class="section-deck">
+          Each one is editorial-first, monthly renewals, and gets a numbered
+          report at quarter-end with open and click data we generate
+          in-house. Nothing third-party. Nothing inflated.
+        </p>
+      </div>
+
+      <div class="offers">
+        <div class="offer reveal">
+          <p class="offer-tag">Tier 01</p>
+          <h3>Briefing sponsorship</h3>
+          <p>
+            One line in the masthead strip of the twice-weekly newsletter.
+            "Today's briefing is brought to you by <span class="brand">your team</span>."
+            Stratechery-style. Monthly renewal.
+          </p>
+        </div>
+        <div class="offer reveal">
+          <p class="offer-tag">Tier 02</p>
+          <h3>Section partnership</h3>
+          <p>
+            A category sponsorship across <em>Economy</em>, <em>FX</em>,
+            <em>Markets</em>, <em>Property</em> or <em>Jobs</em>. Your name
+            sits in a single strip above the section. Monthly renewal.
+          </p>
+        </div>
+        <div class="offer reveal">
+          <p class="offer-tag">Tier 03</p>
+          <h3>Sponsored briefing</h3>
+          <p>
+            One commissioned piece per quarter, written by our editorial
+            team, clearly labelled, on a topic where <span class="brand">your team</span>
+            has authority. We do not write advertorials. We do write the
+            truth.
+          </p>
+        </div>
+        <div class="offer reveal">
+          <p class="offer-tag">Tier 04</p>
+          <h3>Scene Report co-sponsor</h3>
+          <p>
+            A multi-week curated series. The latest covered the Pavilion of
+            Zimbabwe at the Venice Biennale across seven dispatches. One
+            co-sponsor per series, named on every dispatch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section--dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">From this email to live on the site</p>
+        <h2 style="color:var(--cream)">Five steps. Roughly two weeks. No agency middleman.</h2>
+        <p class="section-deck">
+          This is the actual process, in the actual order. You speak to me,
+          not a sales team. The newsroom edits every partner placement
+          before it goes live.
+        </p>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <span class="step-no"></span>
+          <div class="step-body">
+            <span class="step-time">Day 01 &middot; 20 minutes</span>
+            <h3>A short call.</h3>
+            <p>
+              We understand what <span class="brand">your team</span> is
+              actually trying to do this quarter, who the message is for,
+              and whether the audience matches. If it doesn't, we say so on
+              the call.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-no"></span>
+          <div class="step-body">
+            <span class="step-time">Day 02&ndash;04</span>
+            <h3>A brief, written jointly.</h3>
+            <p>
+              We send a one-page brief: copy, placement, dates, scope. You
+              redline it. We rewrite it. Two passes, no more.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-no"></span>
+          <div class="step-body">
+            <span class="step-time">Day 05</span>
+            <h3>Approval pass.</h3>
+            <p>
+              Editorial standards apply to every partner placement. We
+              never publish anything that would embarrass either of us.
+              That is the only veto we keep.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-no"></span>
+          <div class="step-body">
+            <span class="step-time">Day 06&ndash;14</span>
+            <h3>Pilot fortnight, live.</h3>
+            <p>
+              First placement runs for two weeks. You see the numbers
+              every Friday: opens, clicks, replies, time on page. No
+              vanity metrics. No upsell.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-no"></span>
+          <div class="step-body">
+            <span class="step-time">Day 14, end</span>
+            <h3>Renew or walk.</h3>
+            <p>
+              No annual contracts. No cancellation fees. You renew
+              monthly, on the basis of the numbers, or you do not. The
+              partner list stays short on purpose.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE / CTA -->
+  <section id="close" class="close">
+    <div class="container container--narrow">
+      <p class="eyebrow" style="color:var(--gold)">The actual ask</p>
+      <h2>Twenty minutes. Calendar of <span class="brand">your team</span>. Honest answer.</h2>
       <p>
         Reply to the email this link came in, or write directly to
-        news@mutapatimes.com. We will send back two or three slots in the next
-        ten days and a one-pager of editorial standards we apply to every paid
-        partner.
+        news@mutapatimes.com. I will send back two or three slots in the
+        next ten days and a one-pager of editorial standards we apply to
+        every paid partner.
       </p>
-      <a class="pitch-cta-btn" id="pitchCtaBtn"
+      <a id="pitchCtaBtn" class="cta-btn"
          href="mailto:news@mutapatimes.com?subject=Partnership%20conversation">
-        Email Valentine Eluwasi
+        Email Valentine Eluwasi &rarr;
       </a>
+      <span class="cta-secondary">
+        Or LinkedIn me at <a href="https://www.linkedin.com/in/valentineeluwasi" target="_blank" rel="noopener">/in/valentineeluwasi</a>.
+        Or WhatsApp +44 7000 000000.
+      </span>
     </div>
+  </section>
 
-    <p class="pitch-foot">
-      Valentine Eluwasi &middot; Founder, The Mutapa Times &middot;
-      <a href="https://www.mutapatimes.com">mutapatimes.com</a>
-    </p>
-    <p class="pitch-fineprint">
-      This page is a custom one-pager prepared for
-      <span class="brand">your team</span>. It is unindexed, unlisted and
-      generated on the fly from a brand parameter passed in the URL. We do not
-      log who visits it. If the wrong name appears at the top, please reply and
-      we will fix it within the hour.
-    </p>
-  </main>
+  <footer class="pitch-foot">
+    The Mutapa Times &middot;
+    <a href="https://www.mutapatimes.com">mutapatimes.com</a> &middot;
+    This page is a private one-pager for <span class="brand">your team</span> &middot;
+    Not indexed by search engines &middot;
+    Generated on the fly from a brand parameter passed in the URL
+  </footer>
 
   <script>
-    // Replace every .brand span with the brand name passed in ?brand=…
-    // Falls back to "your team" / "your brand" already in the markup.
+    // ─── brand swap ─────────────────────────────────────────────
     (function () {
       try {
         var qs = new URLSearchParams(window.location.search);
         var raw = (qs.get('brand') || '').trim();
         if (!raw) return;
-        // Strip anything dangerous; keep letters, digits, spaces, & ' . - / ,
+        // Allow letters, digits, spaces, & ' . - / , — cap at 80 chars.
         var brand = raw.replace(/[^\w\s&'.\-\/,]/g, '').slice(0, 80);
         if (!brand) return;
         document.querySelectorAll('.brand').forEach(function (el) {
           el.textContent = brand;
         });
         document.title = brand + ' — The Mutapa Times partnership pitch';
-        // Drop the brand into the mailto subject too so reply threads
-        // organise themselves automatically.
         var cta = document.getElementById('pitchCtaBtn');
         if (cta) {
           var subj = 'Mutapa Times × ' + brand + ' — partnership';
@@ -313,7 +1053,36 @@
             'mailto:news@mutapatimes.com?subject=' + encodeURIComponent(subj)
           );
         }
-      } catch (e) { /* silent — page already reads fine without the swap */ }
+      } catch (e) { /* silent — page reads fine without the swap */ }
+    })();
+
+    // ─── today's date in the masthead ──────────────────────────
+    (function () {
+      try {
+        var el = document.getElementById('todayDate');
+        if (!el) return;
+        var d = new Date();
+        var months = ['January','February','March','April','May','June',
+                      'July','August','September','October','November','December'];
+        el.textContent = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+      } catch (e) {}
+    })();
+
+    // ─── scroll reveal ─────────────────────────────────────────
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(function (n) { n.classList.add('is-on'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-on');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(function (n) { io.observe(n); });
     })();
   </script>
 </body>
