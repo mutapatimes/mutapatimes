@@ -50,8 +50,6 @@ The rain held for the first two or three days. Then, on the morning of the openi
 
 ![The central lagoon, Venice, in rain](/img/uploads/venice-2026/main/lagoon-rain.jpg)
 
-The central lagoon on the Tuesday afternoon of arrival. Henry Taylor's forty-second video, posted from a boat somewhere on this water the same morning and watched on a phone in a second-floor bedroom of a Venetian *palazzo* a few hours later, was the moment the sulk lifted.
-
 ## What the rain finally let me see
 
 What you are reading is a letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city — under the cover of one Henry Taylor video and several days of unexpected rain — taught him, briefly, how to look again.
@@ -66,7 +64,7 @@ The walls of the city as I started reading them: not as backdrop but as text.
 
 I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour no one would have been able to mix on a palette. There is style in time. There is grace in attrition.
 
-And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a group of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening. Thelma Golden was somewhere in the city for some of those days. The managing director of Lisson Gallery passed through. But mostly it was the women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. The most consequential kind of beauty is not a feature of the young face. It is a feature of the lived one.
+And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a group of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening. The women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. The most consequential kind of beauty is not a feature of the young face. It is a feature of the lived one.
 
 ![An elderly couple in Venice](/img/uploads/venice-2026/main/elderly-couple.jpg)
 
@@ -82,7 +80,11 @@ I want to put the names down before I forget any of them. In five years' time I 
 
 The pavilion was inaugurated on Friday afternoon, doors at 16:30, with an address from Nicholas Moyo, the Permanent Secretary at the Ministry of Sport, Recreation, Arts and Culture, who was guest of honour. He spoke briefly and well. The detail I want to retain from his remarks, because it surprised me, is that the eighth Pavilion of Zimbabwe is being underwritten by Zimbabwean money. The Higherlife Foundation, represented in Venice by Joy Masiyiwa, has supported both the pavilion and the CIMAM conference which runs in November this year. The same foundation, backing both the international meeting of museum directors and the country's own pavilion at the world's most significant contemporary art exhibition. The arithmetic of that is unusual. It is also overdue.
 
-I will declare an interest here, because to do otherwise would be dishonest. The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The Higherlife Foundation is one of them. So is my own brand, 1925 Glen Norah, which is producing, through its publishing imprint and over the course of this year, a documentary publication that follows the journey of the five artists from their studios in Harare, Masvingo and Kwekwe to their installation in Venice. To see the 1925 Glen Norah name listed alongside the Higherlife Foundation on the supporters page of the catalogue was, I will admit, the moment of personal pride I had come to Venice expecting and was nevertheless unprepared to feel when it arrived.
+I will declare an interest here, because to do otherwise would be dishonest. The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The [Higherlife Foundation](https://higherlifefoundation.org) is one of them. So is my own brand, [1925 Glen Norah](https://glennorah.co.uk), which is producing, through its publishing imprint and over the course of this year, a documentary publication that follows the journey of the five artists from their studios in Harare, Masvingo and Kwekwe to their installation in Venice. To see the 1925 Glen Norah name listed alongside the Higherlife Foundation on the supporters page of the catalogue was, I will admit, the moment of personal pride I had come to Venice expecting and was nevertheless unprepared to feel when it arrived.
+
+![1925 Glen Norah, institutional supporter of the Pavilion of Zimbabwe](/img/uploads/venice-2026/main/glennorah-supporter.png)
+
+[1925 Glen Norah](https://glennorah.co.uk), institutional supporter of the eighth [Pavilion of Zimbabwe](https://pavilionofzimbabwe.com).
 
 But the night was not about me. It was about the people in the room.
 
@@ -94,7 +96,7 @@ But the night was not about me. It was about the people in the room.
 
 **Option Dzikamai Nyahunzvi**, whose practice, in his own words, *reimagines moments of communion between the living and ancestral spirits*, came down from Umbria for the weekend. Option is the 2026 Tyburn Foundation Fellow at the Civitella Ranieri artist residency, one of the most respected fellowships an artist working anywhere in Europe can hold this year.
 
-**Belinda Holden** was there. Belinda runs the **G.A.S. Foundation**, the non-profit artist residency founded by Yinka Shonibare CBE and dedicated to facilitating international artistic exchange between artists, curators and writers from across the African continent and the world. We had been in conversation for some weeks before Venice about her contributing to the 1925 Glen Norah book, and the few minutes we managed at the opening were enough to agree, finally, on what shape her contribution will take.
+**Belinda Holden** was there. Belinda runs the **G.A.S. Foundation**, the non-profit artist residency founded by Yinka Shonibare CBE and dedicated to facilitating international artistic exchange between artists, curators and writers from across the African continent and the world. We had been in conversation for some weeks before Venice about her contributing to the 1925 Glen Norah book; we didn't quite settle on the shape of her contribution at the opening, but it is a conversation that is now properly under way.
 
 **Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different mode. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo. I could not stop smiling.
 
@@ -124,7 +126,7 @@ Felix Shumba taking final installation pictures of his six-metre charcoal wall.
 
 For most of the eighty years of contemporary African art's presence on the international biennale circuit, African pavilions have been financed by anyone but African capital — by European foundations, by diaspora corporate sponsorships routed through European banks, by the goodwill of institutions in the cities where the biennials are staged. The eighth Pavilion of Zimbabwe is not financed that way.
 
-The Higherlife Foundation, founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. 1925 Glen Norah, the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.
+The [Higherlife Foundation](https://higherlifefoundation.org), founded by the Masiyiwa family, has put its weight behind both the pavilion and the November CIMAM conference. [1925 Glen Norah](https://glennorah.co.uk), the brand I founded and through which I am producing a publication documenting the artists' journey to Venice, is listed alongside it as an institutional supporter. The arithmetic of an African pavilion underwritten by African capital is not, in 2026, the norm. It should be.
 
 ## The wider Biennale
 

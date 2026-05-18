@@ -163,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=96">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=97">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -612,6 +612,11 @@ def _venice_context_module():
             </div>
           </div>
           <p class="mt-context-body">ZimTrade, in partnership with Germany&rsquo;s Senior Expert Service (SES), is currently running technical-assistance programmes for artisans in Masvingo and Manicaland to lift product quality to international standards. Combined with the diaspora-facing distribution that a Venice pavilion attracts, the policy intent is straightforward: convert artistic excellence into export revenue, into employment for fabricators and foundries and framers and installers, and into the institutional reputation that compounds across pavilion editions.</p>
+          <ul class="mt-context-partners" aria-label="Partner organisations">
+            <li><a href="https://pavilionofzimbabwe.com" target="_blank" rel="noopener">Pavilion of Zimbabwe</a></li>
+            <li><a href="https://higherlifefoundation.org" target="_blank" rel="noopener">Higherlife Foundation</a></li>
+            <li><a href="https://glennorah.co.uk" target="_blank" rel="noopener">1925 Glen Norah</a></li>
+          </ul>
           <p class="mt-context-foot"><strong>The Mutapa Times</strong> &middot; The business and intelligence newspaper for the Zimbabwean diaspora. Sources: 2026 Zimbabwe National Budget; ZimTrade; ZIMSTAT.</p>
         </div>
       </aside>"""
