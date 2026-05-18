@@ -34,7 +34,7 @@ Matilde Dolcetti in her a palazzo.
 
 The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
 
-I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
+I do what most of my generation does, when defeated: I doom-scrolled. For once, I will give the algorithm credit. It handed me a small bit of optimism: a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 <figure class="venice-video">
   <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">

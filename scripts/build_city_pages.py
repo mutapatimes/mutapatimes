@@ -443,6 +443,7 @@ def build_page(city, all_articles, other_cities):
       <a href="/property">Property</a>
       <a href="/jobs">Jobs</a>
       <a href="/articles">Articles</a>
+      <a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>
     </nav>
     <span class="nav-drawer-section">Cities</span>
     <nav class="nav-drawer-cities" aria-label="Cities">

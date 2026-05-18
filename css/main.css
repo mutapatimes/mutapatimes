@@ -9126,7 +9126,7 @@ body.longform-page .topbar {
   display: inline-block;
   padding: 16px 36px;
   background: #111;
-  color: #0e0e0e;
+  color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -9141,9 +9141,9 @@ body.longform-page .topbar {
 .ratecard-package-cta:hover,
 .ratecard-patronage-cta:hover,
 .ratecard-imprint-cta:hover {
-  background: #333;
-  border-color: #333;
-  color: #0e0e0e;
+  background: #c41e1e;
+  border-color: #c41e1e;
+  color: #fff;
   transform: translateY(-1px);
 }
 .ratecard-hero-cta--ghost,
@@ -10761,7 +10761,15 @@ body.series-page .nav-drawer-search input {
   --text-mid: #333;
   --text-light: #444;
 }
-body.series-page .topbar-cta { color: var(--accent, #c41e1e); }
+/* The Subscribe pill in the sticky topbar is the brand red on every
+   page, including the dark series-page reset above. !important
+   because the series-page topbar reset above sets color #1a1a1a on
+   every .topbar descendant and shouldn't catch the CTA. */
+.topbar a.topbar-cta,
+body.series-page .topbar a.topbar-cta,
+body.series-page .topbar-cta { color: #c41e1e !important; }
+.topbar a.topbar-cta:hover,
+body.series-page .topbar a.topbar-cta:hover { color: #8a1414 !important; }
 body.series-page .nav-drawer-search input::placeholder { color: #888; }
 /* Title/masthead block (the printed-paper title that sits below the
    topbar) — paint it cream so it reads on the dark paper. */
@@ -11176,4 +11184,98 @@ body:not(.series-page) .venice-partner-links a {
 @media (max-width: 740px) {
   .series-carousel-slot:empty { min-height: 540px; }
   .series-readnext-slot:empty { min-height: 320px; }
+}
+
+/* ─── Scene Report entry in the slide-out menu ──────────────────────
+   Mark the curated series link as editorial — small uppercase tag
+   so it reads as a feature rather than a section. */
+.nav-drawer-scene-report {
+  position: relative;
+}
+.nav-drawer-scene-report::after {
+  content: "FEATURE";
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #c41e1e;
+  background: rgba(196, 30, 30, 0.08);
+  border: 1px solid rgba(196, 30, 30, 0.32);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* /advertising — published price list is hidden. Sales happens
+   through "Begin a conversation"; we don't show numbers on the
+   public page. Keeping the markup means the file stays editable
+   if/when pricing returns. */
+.ratecard-format-price,
+.ratecard-package-price,
+.ratecard-patronage-price,
+.ratecard-format-unit,
+.ratecard-patronage-price-unit {
+  display: none !important;
+}
+
+/* ─── Sticky topbar brand swap on series pages ──────────────────────
+   Slowly cross-fades between "The Mutapa Times" and "Scene Report"
+   on body.series-page so the reader has an ambient cue that the
+   article is part of the curated series. Cycle is 14s, mostly the
+   masthead, briefly the series tag. Pure CSS; falls back to the
+   static masthead in browsers that don't honor opacity keyframes. */
+body.series-page .topbar-brand {
+  position: relative;
+  /* The real <em> text becomes the layout reservation — its
+     opacity 0 keeps the anchor width and click target intact
+     while we paint two pseudo-elements over the top. */
+}
+body.series-page .topbar-brand em {
+  opacity: 0;
+}
+body.series-page .topbar-brand::before,
+body.series-page .topbar-brand::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.18rem;
+  color: var(--ink);
+  white-space: nowrap;
+  pointer-events: none;
+  will-change: opacity;
+}
+body.series-page .topbar-brand::before {
+  content: "The Mutapa Times";
+  animation: mtBrandSwapA 14s ease-in-out infinite;
+}
+body.series-page .topbar-brand::after {
+  content: "Scene Report";
+  animation: mtBrandSwapB 14s ease-in-out infinite;
+}
+@keyframes mtBrandSwapA {
+  0%, 42% { opacity: 1; }
+  47%, 92% { opacity: 0; }
+  97%, 100% { opacity: 1; }
+}
+@keyframes mtBrandSwapB {
+  0%, 42% { opacity: 0; }
+  47%, 92% { opacity: 1; }
+  97%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.series-page .topbar-brand em { opacity: 1; }
+  body.series-page .topbar-brand::before,
+  body.series-page .topbar-brand::after { display: none; }
+}
+@media (max-width: 600px) {
+  body.series-page .topbar-brand::before,
+  body.series-page .topbar-brand::after { font-size: 1.02rem; }
 }
