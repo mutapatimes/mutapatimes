@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 10:43:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:48:52 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -523,7 +523,7 @@
       <enclosure url="https://www.mutapatimes.com/img/cards/news/f2689fe4df4d.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>Felix Shumba: charcoal as a register of disappearance at Venice</title>
+      <title>Felix Shumba: charcoal and the practice of disappearance at Venice</title>
       <link>https://mutapatimes.com/articles/2026-05-14-felix-shumba-pavilion-of-zimbabwe-venice-biennale</link>
       <description>The second in a five-part series on Zimbabwe’s pavilion at the 61st Venice Biennale. Felix Shumba’s six-metre charcoal wall and his Telephone Reader series anchor a body of work that argues drawing is not the act of capturing the seen, but the act of staying present to what is on its way out of sight. #Zimbabwe #ZimbabweNews</description>
       <pubDate>Thu, 14 May 2026 11:00:00 +0000</pubDate>
@@ -533,6 +533,18 @@
       <media:content url="https://www.mutapatimes.com/img/cards/news/e6f28772e21c.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/e6f28772e21c.png"/>
       <enclosure url="https://www.mutapatimes.com/img/cards/news/e6f28772e21c.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Felix Shumba: charcoal as a register of disappearance at Venice</title>
+      <link>https://mutapatimes.com/news/2026-05-14-felix-shumba-charcoal-as-a-register-of-disappearance-at-veni-17538e</link>
+      <description>The second in a five-part series on Zimbabwe’s pavilion at the 61st Venice Biennale. Felix Shumba’s six-metre charcoal wall and his Telephone Reader series anchor a body of work that argues drawing is not the act of capturing the seen, but the act of staying present to what is on its way out of sight. (via The Mutapa Times) #Zimbabwe #ZimbabweNews</description>
+      <pubDate>Thu, 14 May 2026 11:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/news/2026-05-14-felix-shumba-charcoal-as-a-register-of-disappearance-at-veni-17538e</guid>
+      <category>News</category>
+      <dc:creator>The Mutapa Times</dc:creator>
+      <media:content url="https://www.mutapatimes.com/img/cards/news/f488d5640561.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/f488d5640561.png"/>
+      <enclosure url="https://www.mutapatimes.com/img/cards/news/f488d5640561.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Morocco Joins Egypt, Ghana, Tanzania, Zimbabwe, Nigeria, And Ethiopia In Driving Africa’s Tourism Future With A Game-Changing Focus On Luxury Resorts And Sustainable Travel Practices In 2026</title>
@@ -6005,18 +6017,6 @@
       <media:content url="https://www.mutapatimes.com/img/cards/news/9d5a92a69c9f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/9d5a92a69c9f.png"/>
       <enclosure url="https://www.mutapatimes.com/img/cards/news/9d5a92a69c9f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Katsande quits Rangers job after 2 months @bulawayo24</title>
-      <link>https://mutapatimes.com/articles/2026-04-30-katsande-quits-rangers-job-after-2-months</link>
-      <description>Former Zimbabwe international Willard Katsande has resigned from his role as head coach of Rangers Football Club just two months into his first coaching stint.Katsande, who recently transitioned from... #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Thu, 30 Apr 2026 20:19:56 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-04-30-katsande-quits-rangers-job-after-2-months</guid>
-      <category>Business</category>
-      <dc:creator>Bulawayo24 News</dc:creator>
-      <media:content url="https://www.mutapatimes.com/img/cards/news/000aadc16012.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/000aadc16012.png"/>
-      <enclosure url="https://www.mutapatimes.com/img/cards/news/000aadc16012.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
