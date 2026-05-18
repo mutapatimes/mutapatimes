@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A partnership pitch — The Mutapa Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://www.mutapatimes.com/pitch.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --paper: #faf5e9;
+      --rule: rgba(26,26,26,0.16);
+      --accent: #c41e1e;
+      --muted: rgba(26,26,26,0.62);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.55;
+    }
+    .pitch-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 28px 88px;
+    }
+    .pitch-mast {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin: 0 0 32px;
+      letter-spacing: 0.01em;
+    }
+    .pitch-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 14px;
+    }
+    h1.pitch-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 5.4vw, 3.2rem);
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+      margin: 0 0 22px;
+    }
+    .pitch-deck {
+      font-size: 1.12rem;
+      max-width: 60ch;
+      margin: 0 0 32px;
+      color: var(--ink);
+    }
+    .pitch-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 32px 0;
+    }
+    h2.pitch-section {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin: 0 0 12px;
+      letter-spacing: -0.005em;
+    }
+    .pitch-section + p { margin-top: 0; }
+    p { margin: 0 0 14px; max-width: 64ch; }
+    .pitch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      margin: 24px 0 32px;
+      padding: 24px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .pitch-stat {
+      min-width: 0;
+    }
+    .pitch-stat-figure {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 800;
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0 0 6px;
+    }
+    .pitch-stat-label {
+      font-size: 0.82rem;
+      line-height: 1.4;
+      color: var(--muted);
+      margin: 0;
+    }
+    .pitch-list {
+      margin: 0 0 28px;
+      padding: 0;
+      list-style: none;
+    }
+    .pitch-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.98rem;
+    }
+    .pitch-list li:last-child { border-bottom: none; }
+    .pitch-list strong {
+      display: block;
+      font-size: 0.74rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .pitch-cta-wrap {
+      margin: 40px 0 0;
+      padding: 28px;
+      background: #1a1a1a;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .pitch-cta-wrap h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #fff;
+    }
+    .pitch-cta-wrap p {
+      color: rgba(255,255,255,0.82);
+      margin: 0 0 22px;
+    }
+    .pitch-cta-btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #c41e1e;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.18s ease;
+    }
+    .pitch-cta-btn:hover { background: #8a1414; color: #fff; }
+    .pitch-foot {
+      margin: 56px 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+    .pitch-foot a { color: var(--ink); }
+    .pitch-fineprint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 18px;
+      max-width: 64ch;
+    }
+    /* Brand token — JS injects the brand name into every .brand span. */
+    .brand { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="pitch-wrap">
+    <p class="pitch-mast"><em>The Mutapa Times</em></p>
+
+    <p class="pitch-eyebrow">A partnership note for <span class="brand">your team</span></p>
+
+    <h1 class="pitch-headline">
+      A reader-only briefing for the Zimbabwean diaspora, and an offer to put
+      <span class="brand">your team</span> in front of it.
+    </h1>
+
+    <p class="pitch-deck">
+      The Mutapa Times is an independent business and intelligence newspaper for
+      the Zimbabwean diaspora. We curate foreign-press coverage, market data and
+      original analysis for readers across more than thirty countries, twice a
+      week, free, no spam. This page is a one-pager on why
+      <span class="brand">your brand</span> and our readership belong in the same
+      room.
+    </p>
+
+    <hr class="pitch-rule">
+
+    <h2 class="pitch-section">The room</h2>
+    <p>
+      We publish twice a week and refresh the homepage every three hours.
+      Our readers are first-generation professional Zimbabweans living mostly in
+      the UK, the US, South Africa, Canada, Australia and the Gulf — the people
+      who send money home, who own property at home, who carry passports from
+      both sides of a remittance corridor.
+    </p>
+
+    <div class="pitch-grid">
+      <div class="pitch-stat">
+        <p class="pitch-stat-figure">30<small>+</small></p>
+        <p class="pitch-stat-label">Countries our newsletter reaches every week.</p>
+      </div>
+      <div class="pitch-stat">
+        <p class="pitch-stat-figure">2&times;</p>
+        <p class="pitch-stat-label">Briefings published per week, hand-edited from our newsroom.</p>
+      </div>
+      <div class="pitch-stat">
+        <p class="pitch-stat-figure">3h</p>
+        <p class="pitch-stat-label">How often the homepage feed refreshes.</p>
+      </div>
+      <div class="pitch-stat">
+        <p class="pitch-stat-figure">100%</p>
+        <p class="pitch-stat-label">Editorial. No display ads. No third-party trackers in the body.</p>
+      </div>
+    </div>
+
+    <h2 class="pitch-section">What we&rsquo;re offering <span class="brand">your team</span></h2>
+    <ul class="pitch-list">
+      <li>
+        <strong>Briefing sponsorship</strong>
+        Your name in the masthead strip of the twice-weekly newsletter:
+        &ldquo;Today&rsquo;s briefing is brought to you by <span class="brand">your brand</span>.&rdquo;
+        One line, no logo bleed. Stratechery-style.
+      </li>
+      <li>
+        <strong>Section partnership</strong>
+        A category sponsorship — Economy, FX, Markets, Property, Jobs.
+        Your brand sits in a single editorial strip above the section header.
+        Renews monthly.
+      </li>
+      <li>
+        <strong>Sponsored briefing</strong>
+        One commissioned piece per quarter, written by our editorial team,
+        clearly labelled, on a topic where <span class="brand">your brand</span>
+        has authority. We do not write advertorials. We do write the truth
+        about your sector if you are willing to be in the byline.
+      </li>
+      <li>
+        <strong>Scene Report co-sponsor</strong>
+        A multi-week curated series (the most recent was the Pavilion of
+        Zimbabwe at the 61st Venice Biennale). One co-sponsor per series, named
+        on every dispatch in the package.
+      </li>
+    </ul>
+
+    <h2 class="pitch-section">Why <span class="brand">your brand</span> in particular</h2>
+    <p>
+      You sell to, or want to sell to, exactly the reader we have. Diaspora
+      Zimbabweans make decisions every week that involve sending money home,
+      buying land, supporting family, planning a return, building a Zimbabwean
+      business from abroad. We are the calm, fact-led briefing they read on
+      Monday mornings and Thursday evenings before they do any of that.
+    </p>
+    <p>
+      The Mutapa Times treats every advertiser as editorial infrastructure. No
+      banners, no pop-ups, no display rectangles in the article body. If
+      <span class="brand">your team</span> wants to be in front of this
+      audience, the partnership has to read as a feature, not as ad inventory.
+      That is the only way we run it.
+    </p>
+
+    <div class="pitch-cta-wrap">
+      <h2>Twenty minutes is enough to know if this works.</h2>
+      <p>
+        Reply to the email this link came in, or write directly to
+        news@mutapatimes.com. We will send back two or three slots in the next
+        ten days and a one-pager of editorial standards we apply to every paid
+        partner.
+      </p>
+      <a class="pitch-cta-btn" id="pitchCtaBtn"
+         href="mailto:news@mutapatimes.com?subject=Partnership%20conversation">
+        Email Valentine Eluwasi
+      </a>
+    </div>
+
+    <p class="pitch-foot">
+      Valentine Eluwasi &middot; Founder, The Mutapa Times &middot;
+      <a href="https://www.mutapatimes.com">mutapatimes.com</a>
+    </p>
+    <p class="pitch-fineprint">
+      This page is a custom one-pager prepared for
+      <span class="brand">your team</span>. It is unindexed, unlisted and
+      generated on the fly from a brand parameter passed in the URL. We do not
+      log who visits it. If the wrong name appears at the top, please reply and
+      we will fix it within the hour.
+    </p>
+  </main>
+
+  <script>
+    // Replace every .brand span with the brand name passed in ?brand=…
+    // Falls back to "your team" / "your brand" already in the markup.
+    (function () {
+      try {
+        var qs = new URLSearchParams(window.location.search);
+        var raw = (qs.get('brand') || '').trim();
+        if (!raw) return;
+        // Strip anything dangerous; keep letters, digits, spaces, & ' . - / ,
+        var brand = raw.replace(/[^\w\s&'.\-\/,]/g, '').slice(0, 80);
+        if (!brand) return;
+        document.querySelectorAll('.brand').forEach(function (el) {
+          el.textContent = brand;
+        });
+        document.title = brand + ' — The Mutapa Times partnership pitch';
+        // Drop the brand into the mailto subject too so reply threads
+        // organise themselves automatically.
+        var cta = document.getElementById('pitchCtaBtn');
+        if (cta) {
+          var subj = 'Mutapa Times × ' + brand + ' — partnership';
+          cta.setAttribute(
+            'href',
+            'mailto:news@mutapatimes.com?subject=' + encodeURIComponent(subj)
+          );
+        }
+      } catch (e) { /* silent — page already reads fine without the swap */ }
+    })();
+  </script>
+</body>
+</html>
