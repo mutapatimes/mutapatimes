@@ -62,7 +62,7 @@ And there were people, in the city, who carried the same quality of attention I 
 
 ![An elderly couple in Venice](/img/uploads/venice-2026/main/elderly-couple.jpg)
 
-Venice, early evening.
+Venice, mid afternoon.
 
 > Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.
 
