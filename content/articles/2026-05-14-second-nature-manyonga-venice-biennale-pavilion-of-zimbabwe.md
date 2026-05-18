@@ -109,7 +109,7 @@ Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30.
 
 ## Friends and neighbours
 
-The Rotherhithe contingent had also landed. My neighbours and friends from south-east London, Tsitsi and Panashe, husband and wife, had arrived for the opening that afternoon. Tsitsi and I have been in conversation for some months about a project I am helping her with: a library, in a particular configuration, in a particular place. She had travelled to Venice with a small group of friends from Togo, who arrived in colour and silhouette the rest of us had not thought to attempt.
+The Rotherhithe contingent had also landed. My neighbours and friends from south-east London, Tsitsi and Panashe, had arrived for the opening that afternoon. Tsitsi and I have been in conversation for some months about a project I am helping her with: a library, in a particular configuration, in a particular place. She had travelled to Venice with a small group of friends from Togo, who arrived in colour and silhouette the rest of us had not thought to attempt.
 
 ## Alumni
 
