@@ -471,16 +471,15 @@
     v.overlay.appendChild(tapRight);
 
     if (isAd) {
-      // Full-bleed ad slide. Same shell for both Feature Story promos
-      // and Subscribe promos — different copy + CTA + destination.
+      // Full-bleed ad slide. The slide itself is NOT a link — tapping
+      // the slide advances to the next snap, exactly like an editorial
+      // card. Only the CTA pill navigates to the destination URL.
+      // Top bar (close + share) stays visible on ad slides.
       v.overlay.style.background = "#0a0a0a";
       var adHref = isSubscribeAd
         ? "/subscribe.html"
         : withHtml(snap.url || ("/articles/" + snap.slug));
-      var adAnchor = el("a", {
-        class: "story-feature-ad",
-        href: adHref,
-      });
+      var adWrap = el("div", { class: "story-feature-ad" });
       var adBg = el("div", { class: "story-feature-ad-bg" });
       if (snap.image) adBg.style.backgroundImage = 'url("' + snap.image + '")';
       var eyebrowText = isSubscribeAd
@@ -489,15 +488,23 @@
       var ctaText = isSubscribeAd
         ? "Subscribe — it’s free"
         : "Read the full feature";
+      // CTA is now its own anchor so clicks on the pill navigate while
+      // clicks anywhere else on the slide hit the tap zones beneath.
+      var ctaLink = el("a", {
+        class: "story-feature-ad-cta",
+        href: adHref,
+        text: ctaText,
+        onclick: function (ev) { ev.stopPropagation(); },
+      });
       var adInner = el("div", { class: "story-feature-ad-inner" }, [
         el("p", { class: "story-feature-ad-eyebrow", text: eyebrowText }),
         el("h2", { class: "story-feature-ad-title", text: snap.title || "" }),
         el("p", { class: "story-feature-ad-summary", text: (snap.summary || "").slice(0, 180) }),
-        el("span", { class: "story-feature-ad-cta", text: ctaText }),
+        ctaLink,
       ]);
-      adAnchor.appendChild(adBg);
-      adAnchor.appendChild(adInner);
-      v.overlay.appendChild(adAnchor);
+      adWrap.appendChild(adBg);
+      adWrap.appendChild(adInner);
+      v.overlay.appendChild(adWrap);
     } else {
       // Standard snap — title area + butter card + bottom CTA pill.
       var titleArea = el("div", { class: "story-title-area" }, [

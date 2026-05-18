@@ -163,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=95">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=96">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -505,12 +505,12 @@ def page_footer(depth=1):
 
   <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/quote-share.js"></script>
-  <script defer src="{prefix}js/stories.js?v=3"></script>
+  <script defer src="{prefix}js/stories.js?v=4"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
   <script defer src="/js/feature-story.js?v=1"></script>
-  <script defer src="/js/series.js?v=2"></script>
+  <script defer src="/js/series.js?v=3"></script>
 
 <script>
 if ('serviceWorker' in navigator) {{

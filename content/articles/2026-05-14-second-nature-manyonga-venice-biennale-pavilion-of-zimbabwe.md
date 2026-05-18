@@ -68,9 +68,9 @@ I have read elsewhere about Venice's slow drowning and I am not going to romanti
 
 And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a group of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening. Thelma Golden was somewhere in the city for some of those days. The managing director of Lisson Gallery passed through. But mostly it was the women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. The most consequential kind of beauty is not a feature of the young face. It is a feature of the lived one.
 
-![An elderly couple walking along a fondamenta in the early evening](/img/uploads/venice-2026/main/elderly-couple.jpg)
+![An elderly couple in Venice](/img/uploads/venice-2026/main/elderly-couple.jpg)
 
-One of the elder couples I kept finding in Venice. They walked the *fondamenta* in the early evening, dressed without fuss but with full attention to themselves, and I caught up just long enough to make a frame.
+Venice, early evening.
 
 > Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.
 

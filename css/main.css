@@ -8628,13 +8628,16 @@ body.longform-page .topbar {
   position: absolute;
   inset: 0;
   display: block;
-  text-decoration: none !important;
-  color: #fff !important;
-  /* Above the .story-tap prev/next zones (z-index: 2) so clicks
-     reach the anchor and navigate to the article. Trade-off: you
-     can't tap-to-advance past a feature ad — the slide auto-advances
-     after its longer timer instead. */
-  z-index: 3;
+  color: #fff;
+  /* BELOW the .story-tap prev/next zones (z-index 2) so taps on the
+     bg/copy advance to the next snap. Only the .story-feature-ad-cta
+     pill (z-index 5) is clickable as a link. */
+  z-index: 0;
+  pointer-events: none;
+}
+.story-feature-ad-bg,
+.story-feature-ad-inner {
+  pointer-events: none;
 }
 .story-feature-ad-bg {
   position: absolute;
@@ -8712,7 +8715,25 @@ body.longform-page .topbar {
   border-radius: 999px;
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
+  text-decoration: none;
+  /* Above the tap zones so the CTA actually navigates when tapped,
+     even though the rest of the slide is tap-to-advance. */
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+  cursor: pointer;
 }
+.story-feature-ad-cta:hover,
+.story-feature-ad-cta:focus-visible {
+  background: rgba(255, 255, 255, 0.18);
+  outline: none;
+}
+/* Top bar (close + share) stays clickable above every snap including
+   ads. Tap zones are z-index 2, ads are z-index 0, CTA is z-index 5
+   — bump the top bar above them all so the user can always close. */
+.story-top { z-index: 6; }
+.story-share,
+.story-close { pointer-events: auto; }
 
 /* ───── Author bylines + Authors pages (Days 1-2 ship: byline-as-link) ───── */
 
@@ -11034,35 +11055,38 @@ body.series-page .article-body figure img {
   aspect-ratio: auto;
 }
 
-/* Carousel + read-next cards: preserve image aspect ratio instead of
-   force-cropping to 4:3. The image is shown at its natural shape,
-   letterboxed against the card if needed. */
+/* Carousel + read-next cards: a uniform SQUARE crop so the rail
+   reads as a coherent row. Card heights line up; whatever the source
+   aspect ratio is, it gets centred and cover-cropped to a 1:1 frame.
+   Body / inline article images use contain (handled separately). */
 .series-card-imgwrap {
-  aspect-ratio: auto;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  display: block;
   background: #1a1a1a;
+  overflow: hidden;
 }
 .series-card-img {
   width: 100%;
-  height: auto;
-  max-height: 280px;
-  object-fit: contain;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
   filter: none;
+  display: block;
 }
 .series-readnext-imgwrap {
-  aspect-ratio: auto;
-  min-height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  display: block;
   background: #1a1a1a;
+  overflow: hidden;
 }
 .series-readnext-imgwrap img {
   width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
