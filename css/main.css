@@ -11118,3 +11118,35 @@ body.series-page .article-body figure img {
   object-position: center center;
   display: block;
 }
+
+/* ─── Venice series: partner links immediately under the body ─────────
+   Same three links the context module also surfaces, but lifted out
+   of the module so they sit right where the article ends. */
+.venice-partner-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 24px auto 0;
+  max-width: 880px;
+  padding: 20px 0 0;
+  border-top: 1px solid rgba(244,237,224,0.18);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+.venice-partner-links a {
+  color: var(--series-fg, #f4ede0);
+  text-decoration: underline;
+  text-decoration-color: rgba(244,237,224,0.45);
+  text-underline-offset: 4px;
+}
+.venice-partner-links a:hover {
+  text-decoration-color: var(--series-fg, #f4ede0);
+}
+body:not(.series-page) .venice-partner-links {
+  border-top-color: rgba(0,0,0,0.14);
+}
+body:not(.series-page) .venice-partner-links a {
+  color: #1a1a1a;
+  text-decoration-color: rgba(0,0,0,0.4);
+}

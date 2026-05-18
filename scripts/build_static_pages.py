@@ -163,7 +163,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
 
     <link rel="stylesheet" href="{prefix}css/normalize.css">
-    <link rel="stylesheet" href="{prefix}css/main.css?v=99">
+    <link rel="stylesheet" href="{prefix}css/main.css?v=100">
     <meta name="description" content="{esc(description)}">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -894,6 +894,18 @@ def build_articles():
         # Article body
         body_cls = "article-body article-body-longform" if longform else "article-body"
         html_parts.append(f'      <div class="{body_cls}">{body_html}</div>')
+
+        # Partner links sit immediately under the article body on every
+        # Venice dispatch. Same three landing pages on every article in
+        # the series so the reader always has the route out to the
+        # institutions the pavilion is built on.
+        if series_key == "venice-biennale-2026":
+            html_parts.append("""
+      <nav class="venice-partner-links" aria-label="Series partners">
+        <a href="https://pavilionofzimbabwe.com" target="_blank" rel="noopener">Pavilion of Zimbabwe</a>
+        <a href="https://higherlifefoundation.org" target="_blank" rel="noopener">Higherlife Foundation</a>
+        <a href="https://glennorah.co.uk" target="_blank" rel="noopener">1925 Glen Norah</a>
+      </nav>""")
 
         # Mutapa Times context module  appears at the foot of every
         # article in the Venice Biennale series. Frames the cultural
