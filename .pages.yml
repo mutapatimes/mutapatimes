@@ -168,9 +168,33 @@ content:
         required: false
         description: Approx. read time. Used by longform articles.
 
+      # Series membership. When an article is part of a curated series
+      # (e.g. venice-biennale-2026) these two fields drive: the
+      # dark-themed body class applied by build_static_pages.py, the
+      # "Part of a series" banner above the headline, the read-next
+      # rail at the foot, and the article's position in the carousel
+      # on the home page + /articles. If the CMS strips them on save,
+      # the article loses all of that, so they MUST be declared here.
+      - name: series
+        label: Series key
+        type: string
+        required: false
+        description: "Slug of the series this article belongs to, e.g. 'venice-biennale-2026'. Leave blank for stand-alone pieces."
+
+      - name: series_order
+        label: Series order
+        type: number
+        required: false
+        description: Position in the series (1, 2, 3...). Drives the order on the carousel and the read-next strip.
+
       - name: body
         label: Body
-        type: rich-text
+        # Raw markdown / HTML mode. The 'rich-text' WYSIWYG editor was
+        # stripping embedded <figure>, <video> and other raw HTML
+        # blocks on save, which broke the Henry Taylor video and the
+        # inline figure-with-caption pattern used across the Venice
+        # series. 'text' preserves whatever the file already contains.
+        type: text
 
   # ─── STATIC PAGES (About / Advertising / Privacy / Terms / Subscribe) ─
   - name: page_about
