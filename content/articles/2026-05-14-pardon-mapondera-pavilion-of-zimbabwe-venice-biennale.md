@@ -4,29 +4,36 @@ date: 2026-05-17T14:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/mapondera/hero.jpg
-summary: The fifth and final piece in our series on Zimbabwe's pavilion at the
-  61st Venice Biennale. Pardon Mapondera, the artist whose practice the room
-  finally arranges itself around, treats discarded plastic and glass jars not as
-  ecological signal but as ritual matter, and produces, in the process, the most
-  quietly devotional installation in the Biennale this year.
+summary: "The fifth and final piece in our series on Zimbabwe's pavilion at the 61st Venice Biennale. Pardon Mapondera, the artist whose practice the room finally arranges itself around, treats discarded plastic and glass jars not as ecological signal but as ritual matter, and produces, in the process, the most quietly devotional installation in the Biennale this year."
 featured: true
 headline_position: 5
 source_type: original
 spotlight: true
-feature_story: false
-draft: false
 longform: true
-hero_eyebrow: SCENE REPORT · VENICE · 5 OF 7
-hero_image_credit: Courtesy of the artist
-read_minutes: Nine
+draft: false
+read_minutes: 9
+hero_eyebrow: "SCENE REPORT · VENICE · 5 OF 7"
+hero_image_credit: "Courtesy of the artist"
+series: venice-biennale-2026
+series_order: 5
 ---
+
 We will admit something: on the first walkthrough of the pavilion, on Wednesday afternoon, we walked past Pardon Mapondera's *Gone, but not forgotten*. The installation is shy in its opening posture. It occupies an inner room. The jars are small and they are many; the steel framework that holds them looks, on first encounter, like the back-of-house shelving of a small natural-history museum somewhere in eastern Europe. We did the wrong thing and moved through quickly. We came back twice, deliberately, and stood for the better part of an hour in front of it. It is, on reflection, the most quietly devotional installation we encountered in the Biennale.
 
 Mapondera, born in Harare in 2003, is the youngest of the five artists in the pavilion in disposition if not strictly in date; his practice carries the energy of a working studio at full velocity. He has built his career out of the materials that contemporary consumer society discards, plastic bottles, straws, thread, mayonnaise jars, perspex, cable ties, and out of a sustained, openly theological engagement with what those materials, transformed, can be made to hold.
 
-![Gone, but not forgotten, Pardon Mapondera, 2025](/img/uploads/venice-2026/mapondera/gone-but-not-forgotten.jpg)
-
-Gone, but not forgotten, 2025. Steel, glass jars, photographs, soil, string; variable dimensions. The installation occupies the eastern inner room of the pavilion; the steel framework is welded from light angle-iron and projects perhaps eighty centimetres off the wall. Courtesy of Pardon Mapondera
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/venice-2026/mapondera/gone-but-not-forgotten.jpg"
+         alt="Gone, but not forgotten, Pardon Mapondera, 2025"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Gone, but not forgotten, 2025. Steel, glass jars, photographs, soil, string; variable dimensions. The installation occupies the eastern inner room of the pavilion; the steel framework is welded from light angle-iron and projects perhaps eighty centimetres off the wall.</span>
+    <span class="credit">Courtesy of Pardon Mapondera</span>
+  </figcaption>
+</figure>
 
 ## What the jars hold
 
@@ -36,9 +43,10 @@ This is not metaphorical. Mapondera's catalogue interview is direct about the in
 
 The emotional weight of the work is bound up with this transformation. *Gone, but not forgotten* names a structure of grief, the kind of grief whose object cannot be recovered but whose memory has to be held somewhere. The installation provides the somewhere. Each jar, in the cumulative logic of the work, is a unit of mourning held inside a domestic vessel. The viewer walks into a room of these and is, very quickly, no longer the subject of the encounter. The room is.
 
-> Yes, they surprise me somehow, everyday. These materials give me life so everyday they give me life.
-
-PARDON MAPONDERA · TO THE PAVILION OF ZIMBABWE CATALOGUE
+<aside class="article-pullquote">
+  <blockquote>Yes, they surprise me somehow, everyday. These materials give me life so everyday they give me life.</blockquote>
+  <cite>PARDON MAPONDERA · TO THE PAVILION OF ZIMBABWE CATALOGUE</cite>
+</aside>
 
 ## Therapy, in his word
 
@@ -48,9 +56,18 @@ What Mapondera is doing, at the bench, with the materials he has gathered, is re
 
 This is the part of contemporary art-making that is least visible in the gallery and most consequential in the studio. Most installations of this scale would have been produced by a team of assistants under the artist's direction. Mapondera, as far as we can tell from his account and from the marks of the hand on the work itself, makes these pieces almost entirely himself. The labour is the meditation. The installation is the meditation made visible.
 
-![Ngwarai Vanangu, Pardon Mapondera, 2026](/img/uploads/venice-2026/mapondera/ngwarai-vanangu.jpg)
-
-Ngwarai Vanangu, 2026. Perspex, cable ties, plastic jars, wire; 300 × 200 × 40 cm. Suspended from the ceiling at the centre of the pavilion's main room; the title translates roughly from Shona as "be careful, my children". Courtesy of Pardon Mapondera
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media"
+         src="/img/uploads/venice-2026/mapondera/ngwarai-vanangu.jpg"
+         alt="Ngwarai Vanangu, Pardon Mapondera, 2026"
+         loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">Ngwarai Vanangu, 2026. Perspex, cable ties, plastic jars, wire; 300 × 200 × 40 cm. Suspended from the ceiling at the centre of the pavilion's main room; the title translates roughly from Shona as "be careful, my children".</span>
+    <span class="credit">Courtesy of Pardon Mapondera</span>
+  </figcaption>
+</figure>
 
 ## On Vadzimu, and on what the work asks of its viewer
 
@@ -60,9 +77,10 @@ What Mapondera is offering, in plain terms, is the proposition that African spir
 
 This is the proposition that most contemporary art audiences are least equipped to receive. The art world has, over the past twenty years, developed a fluent vocabulary for talking about *spirituality* as a theme. It has had a much harder time letting itself be addressed by an actual spiritual practice. Mapondera's work is uninterested in the distinction. It treats the viewer as someone the work is, in some real sense, *speaking to*, not someone the work is *about*. The work was, in his account, made under the supervision of ancestral interlocutors. The viewer either lets that proposition stand or they do not. The room does not negotiate.
 
-> I started by talking to these objects then asking questions like where are you coming from. Some of the message I portray will be from the life background of the material.
-
-PARDON MAPONDERA · TO THE PAVILION OF ZIMBABWE CATALOGUE
+<aside class="article-pullquote">
+  <blockquote>I started by talking to these objects then asking questions like where are you coming from. Some of the message I portray will be from the life background of the material.</blockquote>
+  <cite>PARDON MAPONDERA · TO THE PAVILION OF ZIMBABWE CATALOGUE</cite>
+</aside>
 
 ## The ecology, then
 
