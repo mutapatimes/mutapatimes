@@ -39,7 +39,7 @@ I do what most of my generation does, when defeated: I doom-scrolled. And the al
   <video autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
     <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
   </video>
-  <figcaption>Henry Taylor, Instagram, 12 May 2026. Courtesy of the artist.</figcaption>
+  <figcaption>Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
 </figure>
 
 I watched it. Then I watched it again.
@@ -72,7 +72,7 @@ Venice, early evening.
 
 > Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.
 
-HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 12 MAY 2026
+HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 5 MAY 2026
 
 ## The constellation in the room
 
@@ -166,4 +166,4 @@ In the meantime, if you have not watched the Henry Taylor video, watch it again 
 
 *Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
-— Valentine Eluwasi
+Valentine Eluwasi
