@@ -32,7 +32,7 @@ Matilde Dolcetti in her a palazzo.
 
 The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
 
-I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
+I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.
 
@@ -58,8 +58,6 @@ The walls of the city as I started reading them: not as backdrop but as text.
 
 I have read elsewhere about Venice's slow drowning and I am not going to romanticise that. But I will say plainly: I fell in love with decay last week. Not as a sad fact about a sinking city. As a discipline. The chipped wall is a wall that has lived through the weather. The faded paint is paint that has done its work. The rusted iron has, on its way to ruin, become a colour no one would have been able to mix on a palette. There is style in time. There is grace in attrition.
 
-And there were people, in the city, who carried the same quality of attention I had started to find in the walls. The week's quiet constant was a group of older Black women I kept noticing in Venice, at the *vaporetto* stops, at the cafés near the Giardini, walking the *fondamenta* in the early evening. The women I did not have names for, six, eight, ten of them across the week, that I kept returning to in my head. The most consequential kind of beauty is not a feature of the young face. It is a feature of the lived one.
-
 ![An elderly couple in Venice](/img/uploads/venice-2026/main/elderly-couple.jpg)
 
 Venice, mid afternoon.
@@ -72,9 +70,9 @@ HENRY TAYLOR · ON A BOAT IN THE CENTRAL LAGOON, VENICE, 5 MAY 2026
 
 I want to put the names down before I forget any of them. In five years' time I want to be able to remember exactly who was at Santa Maria della Pietà on the night the pavilion opened.
 
-The pavilion was inaugurated on Friday afternoon, doors at 16:30, with an address from Nicholas Moyo, the Permanent Secretary at the Ministry of Sport, Recreation, Arts and Culture, who was guest of honour. He spoke briefly and well. The detail I want to retain from his remarks, because it surprised me, is that the eighth Pavilion of Zimbabwe is being underwritten by Zimbabwean money. The Higherlife Foundation, represented in Venice by Joy Masiyiwa, has supported both the pavilion and the CIMAM conference which runs in November this year. The same foundation, backing both the international meeting of museum directors and the country's own pavilion at the world's most significant contemporary art exhibition. The arithmetic of that is unusual. It is also overdue.
+The pavilion was inaugurated on Friday afternoon, doors at 16:30, with an address from Nicholas Moyo, the Permanent Secretary at the Ministry of Sport, Recreation, Arts and Culture, who was guest of honour. He spoke briefly and well. The detail I want to retain from his remarks, because it surprised me, is that the eighth Pavilion of Zimbabwe is being underwritten by Zimbabwean money. The Higherlife Foundation, represented in Venice by Joey Masiyiwa, has supported both the pavilion and the CIMAM conference which runs in November this year. The same foundation, backing both the international meeting of museum directors and the country's own pavilion at the world's most significant contemporary art exhibition. 
 
-I will declare an interest here, because to do otherwise would be dishonest. The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The [Higherlife Foundation](https://higherlifefoundation.org) is one of them. So is my own brand, [1925 Glen Norah](https://glennorah.co.uk), which is producing, through its publishing imprint and over the course of this year, a documentary publication that follows the journey of the five artists from their studios in Harare, Masvingo and Kwekwe to their installation in Venice. To see the 1925 Glen Norah name listed alongside the Higherlife Foundation on the supporters page of the catalogue was, I will admit, the moment of personal pride I had come to Venice expecting and was nevertheless unprepared to feel when it arrived.
+I will declare an interest here, because to do otherwise would be dishonest. The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The [Higherlife Foundation](https://higherlifefoundation.org) is one of them. So is my own brand, [1925 Glen Norah](https://glennorah.co.uk), which is producing, through its publishing imprint and over the course of this year, a documentary publication that follows the journey of the five artists from their studios in to their installation in Venice. To see the 1925 Glen Norah name listed alongside the Higherlife Foundation on the supporters page of the catalogue was, I will admit, the moment of personal pride I had come to Venice expecting and was nevertheless unprepared to feel when it arrived.
 
 ![1925 Glen Norah, institutional supporter of the Pavilion of Zimbabwe](/img/uploads/venice-2026/main/glennorah-supporter.png)
 
@@ -84,15 +82,15 @@ But the night was not about me. It was about the people in the room.
 
 **Fadzai Veronica Muchemwa** is the curator of this pavilion, and is the first person I want to put on this list. The catalogue makes the case for her curatorial intelligence in its own way. The room makes it differently. Fadzai moved through the *vernissage* radiant, articulate, and at full volume of warmth, talking to anyone who came up to her, listening to them when they did, returning to her artists at intervals to check they were eating, sitting, breathing. She is one of those curators whose curation is visible in the rooms long before anyone has read a piece of wall text, and whose generosity to the artists in her care is itself the proposition the pavilion is making. What Fadzai has built here is, in some real sense, a new pavilion: one that knows what it is, that does not flatter its audience, and that treats its artists like the colleagues they are.
 
-**The five artists** themselves were of course the reason the rest of us were there. **Felix Shumba**, whose six-metre charcoal wall and *Telephone Reader* series anchor the first room. **Franklyn Dzingai**, whose photographic and woven work argues for the family album as a place where the political memory of a country is, quietly, kept. **Gideon Gomo**, whose bronzes, *Audience of One* among them, bring the ancestral vocabulary of Zimbabwean sculpture into a contemporary register I will, this once, allow myself to call new. **Pardon Mapondera**, whose *Gone but not forgotten* sits at the centre of one of the pavilion's most quietly devastating rooms. And **Eva Raath**, whose *Medusa Menopause* and *Checkered Memories* together make the case that textile is, in 2026, a serious medium for serious work. Their five longform profiles follow in this Scene Report.
+**The five artists** themselves were of course the reason the rest of us were there. **Felix Shumba**, whose six-metre charcoal wall anchors the first room. **Franklyn Dzingai**, whose photographic and woven work argues for the family album as a place where the memory of a country is, quietly, kept. **Gideon Gomo**, whose bronzes, *Audience of One* among them, bring the ancestral vocabulary of Zimbabwean sculpture into a contemporary register. **Pardon Mapondera**, whose *Gone but not forgotten* sits at the centre of one of the pavilion's most quietly devastating rooms. And **Eva Raath**, whose *Medusa Menopause* and *Checkered Memories* together make the case that textile is, in 2026, a serious medium for serious work. 
 
-**Rory Tsapayi** was there. Rory, raised in Zimbabwe and educated in the United States, was hand-picked by Koyo Kouoh herself to be part of the curatorial team for the 61st edition, and is the reason a Zimbabwean voice has been embedded inside the overall curatorial frame of *In Minor Keys*. To see them at the pavilion opening, calmly working the room, was to see the next generation of Zimbabwean curatorial intelligence operating at the centre of the Biennale's gravity rather than at its periphery.
+**Rory Tsapayi** was there. Rory, raised in Zimbabwe and educated in the United States, was hand-picked by Koyo Kouoh herself to be part of the curatorial team for the 61st edition. To see them at the pavilion opening, calmly working the room, was to see the next generation of Zimbabwean curatorial intelligence operating at the centre of the Biennale's gravity rather than at its periphery.
 
 **Option Dzikamai Nyahunzvi**, whose practice, in his own words, *reimagines moments of communion between the living and ancestral spirits*, came down from Umbria for the weekend. Option is the 2026 Tyburn Foundation Fellow at the Civitella Ranieri artist residency, one of the most respected fellowships an artist working anywhere in Europe can hold this year.
 
-**Belinda Holden** was there. Belinda runs the **G.A.S. Foundation**, the non-profit artist residency founded by Yinka Shonibare CBE and dedicated to facilitating international artistic exchange between artists, curators and writers from across the African continent and the world. We had been in conversation for some weeks before Venice about her contributing to the 1925 Glen Norah book; we didn't quite settle on the shape of her contribution at the opening, but it is a conversation that is now properly under way.
-
 **Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different mode. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo. I could not stop smiling.
+
+**Belinda Holden** was there. Belinda runs the **G.A.S. Foundation**, the non-profit artist residency founded by Yinka Shonibare CBE and dedicated to facilitating international artistic exchange between artists, curators and writers from across the African continent and the world. We had been in conversation for some weeks before Venice about her contributing to the 1925 Glen Norah book; we didn't quite settle on the shape of her contribution at the opening, but it is a conversation that is now properly under way.
 
 ![Dzingai and Gomo in conversation](/img/uploads/venice-2026/main/dzingai-gomo-room.jpg)
 
@@ -100,7 +98,7 @@ One of my favourite rooms in the pavilion, with Franklyn Dzingai's photographic 
 
 ![Opening night, Pavilion of Zimbabwe, 14 May 2026](/img/uploads/venice-2026/main/opening-night.jpg)
 
-Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30. About a hundred guests filed across the *fondamenta* and through the iron-and-glass doors before the rain returned. Photograph by Amedeo Benestante
+Opening at Santa Maria della Pietà, Friday 15 May 2026, 16:30. 
 
 ## Friends and neighbours
 
@@ -110,7 +108,7 @@ The Rotherhithe contingent had also landed. My neighbours and friends from south
 
 The alumni of previous Pavilions of Zimbabwe were out in force. **Wallen Mapondera**, brother of the pavilion artist Pardon Mapondera and himself a Zimbabwean Biennale selectee in 2022, was there to support his brother and to write his own next thing into the conversation. **Michele Mathison**, included in Zimbabwe's 2013 Pavilion *Dudziro: Interrogating the Visions of Religious Beliefs*, born in Johannesburg but long associated with Zimbabwe, was there in the alumni capacity that the eighth pavilion has now, by virtue of its longevity, begun to require.
 
-The lineage was visible in the room. People who had been *the pavilion* in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026. The line of continuity that the catalogue's foreword speaks about in the abstract was sitting at three of the tables nearest mine.
+The lineage was visible in the room. People who had been *the pavilion* in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026. 
 
 ![Felix Shumba taking final installation pictures](/img/uploads/venice-2026/main/felix-installation.jpg)
 
@@ -118,11 +116,9 @@ Felix Shumba taking final installation pictures of his six-metre charcoal wall.
 
 ## The wider Biennale
 
-Outside the pavilion the rest of Venice had its own southern African weather. I saw **Gabrielle Goliath's** exhibition, which, after the much-reported cancellation of the South African pavilion this year, had come through in its own configuration at another venue: a two-channel video installation, shown inside a Venetian church, drawn from her ongoing *Elegy* performance projects on South African femicide and the Namibian genocide. The accompanying critical writing was by **Dr. Zoé Samudzi**, the scholar-activist whose essay *Metabolic Urgency* reads the *Elegy* works as acts of sonic mourning and political witnessing.
+I saw **Gabrielle Goliath's** exhibition, which, after the much-reported cancellation of the South African pavilion this year, had come through in its own configuration at another venue: a two-channel video installation, shown inside a Venetian church, drawn from her ongoing *Elegy* performance projects on South African femicide and the Namibian genocide. The work featured a 2 channel video installation scripted by **Dr. Zoé Samudzi**. 
 
-Cutting across the week in a mode all its own were the interventions of **Shumba Maasai**, whose day-long procession through the city's *campi*, conducted under the borrowed authority of a Murehwa chief, restaged the social-sculpture lineage of Joseph Beuys for a contemporary African discursive practice, and turned several afternoons of incidental Venetian foot-traffic into something closer to a public ritual. A separate dispatch follows on his interventions; it is the last piece in this Scene Report.
-
-There was, in the period of the opening, the sense of a broader Zimbabwean and southern African intellectual moment finding shape inside the Biennale's official rooms.
+Cutting across the week in a mode all its own were the interventions of **Shumba Maasai**, whose day-long procession through the city's *campi*, conducted under the borrowed authority of a Murehwa chief turned several afternoons of  Venetian foot-traffic into something closer to a public ritual. 
 
 ![Eva Raath's large-scale Medusa Menopause, 2025](/img/uploads/venice-2026/main/raath-medusa.jpg)
 
@@ -147,10 +143,6 @@ What I have to report from Venice is that she is correct.
 There is therapy in beauty. Last week, in a city that initially refused to be anything other than wet and grey and inconvenient, I was given several days of it. The pavilion was part of it. So were the lagoon walls, in their long argument with the weather. So were the elder women I kept noticing across the city, walking the *fondamenta* in the evenings. So were the friends and the alumni and Tsitsi's group and the brother of the artist supporting his brother. So was the journey back out toward Verona on Saturday evening, watching Venice pull back into the late spring light.
 
 I left lighter than I had arrived, which is the part of travel one cannot plan for and that, when it happens, is the only kind of travel that has been worth the air mile.
-
-Five longform profiles of the artists in the Pavilion of Zimbabwe, Felix Shumba, Franklyn Dzingai, Gideon Gomo, Pardon Mapondera and Eva Raath, follow over the coming days, along with a closing dispatch on Shumba Maasai's interventions. They are the work of my colleagues. I will write again, in a different mode, when the 1925 Glen Norah publication is ready.
-
-In the meantime, if you have not watched the Henry Taylor video, watch it again above.
 
 *Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
