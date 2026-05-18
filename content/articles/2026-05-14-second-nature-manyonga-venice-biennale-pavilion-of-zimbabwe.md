@@ -4,10 +4,10 @@ date: 2026-05-14T09:00:00.000Z
 author: Valentine Eluwasi
 category: Arts
 image: /img/uploads/venice-2026/main/biennale-savethedate.jpg
-summary: A letter from Venice, written in the wake of the opening of
-  Zimbabwe's eighth pavilion at the 61st Biennale. On Henry Taylor in
-  the rain, an apartment full of paper and printworks, and the
-  Zimbabwean room on opening night.
+summary: A letter from Venice, written in the wake of the opening of Zimbabwe's
+  eighth pavilion at the 61st Biennale. On Henry Taylor in the rain, an
+  apartment full of paper and printworks, and the Zimbabwean room on opening
+  night.
 featured: false
 headline_position: 0
 source_type: original
@@ -15,36 +15,26 @@ spotlight: false
 feature_story: false
 draft: false
 longform: false
-hero_eyebrow: "SCENE REPORT · VENICE · 1 OF 7"
-hero_image_credit: ""
+hero_eyebrow: SCENE REPORT · VENICE · 1 OF 7
 read_minutes: Twelve
-series: venice-biennale-2026
-series_order: 1
 ---
 I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not stop for any of the usual reasons. The lagoon was grey. The vaporetto windows were grey. The *fondamenta* was grey. My bag, which had survived the road in from Verona by a margin of about ten minutes of plausible weather, was now soaked through. So was I.
 
-I had lunch shortly after arriving with my dear friend Anna Pesonen, who was in the city that day, at a small table in a small restaurant a short walk from the canal. We sat for an hour and a half. We ate slowly. Halfway through she broke the news that she has been admitted to the MFA in sculpture at Yale, and is starting in the autumn. I was, and am, incredibly proud of her. We talked about what that next chapter is going to look like, and about the project I was here to begin. When we parted I was, against my better expectations, in a good mood.
+I had lunch shortly after arriving with my dear friend Anna Pesonen, who was in the city that day, at a small table in a small restaurant a short walk from the canal. We sat for an hour and a half. Halfway through she broke the news that she has been admitted to the MFA in sculpture at Yale, and is starting in the autumn. I was, and am, incredibly proud of her. We talked about what that next chapter is going to look like, and about the project I was here to begin. When we parted I was, against my better expectations, in a good mood.
 
 The good mood survived about as long as it took me to walk from the restaurant back to the apartment.
 
-The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio, paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a quiet retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her at the press every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
+The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh, Saudi Arabia. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio, paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a quiet retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her at the press every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
 
 ![A watercolour from Scuola Grafica, the Venetian print school](/img/uploads/venice-2026/main/scuola-grafica.jpg)
 
-A watercolour from [Scuola Grafica](https://shop.scuolagrafica.it), the Venetian print school in the lineage Matilde works out of.
+Matilde Dolcetti in her a palazzo. 
 
 The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
 
-I sulked. I am willing to admit this. There is a particular kind of British weather-sulk I have absorbed by osmosis, despite no biographical claim to that island, and on that Tuesday afternoon in Venice it asserted itself with full force.
-
 I do what most of my generation does, when defeated: I doom-scrolled. And the algorithm, for once, surfaced a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera, half exhortation and half meditation: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
-<figure class="venice-video">
-  <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
-    <source src="/img/uploads/venice-2026/main/henry-taylor.webm" type="video/webm">
-  </video>
-  <figcaption>Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
-</figure>
+Henry Taylor, Instagram, 5 May 2026. Courtesy of the artist.
 
 I watched it. Then I watched it again.
 
