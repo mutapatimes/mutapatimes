@@ -94,7 +94,12 @@ def generate():
         # component is always W3C-valid and good enough for sitemap
         # priority / crawl-frequency hints.
         lastmod = (date_str or now_str)[:10]
-        loc = f"{BASE_URL}/articles/{slug}"
+        # Use the .html URL form so the sitemap matches the canonical
+        # link inside each built article page. Otherwise Google crawls
+        # the no-extension URL, sees its canonical points elsewhere,
+        # and flags the crawled URL as "Alternative page with proper
+        # canonical tag" (135-page batch we saw in Search Console).
+        loc = f"{BASE_URL}/articles/{slug}.html"
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
