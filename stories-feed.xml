@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 20:01:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 20:05:10 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -209,6 +209,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwe Energy Regulatory Authority ZERA — Regional Compliance Officer-Mutare</title>
+      <link>https://mutapatimes.com/stories/2ee356989fe6.html</link>
+      <description>The Zimbabwe Energy Regulatory Authority (ZERA) is a statutory body mandated to ensure the provision of a level playing field for safe, reliable and sustainable energy supply through effective regula… Mutare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 17 May 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/2ee356989fe6.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Zimbabwe Energy Regulatory Authority ZERA</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/2ee356989fe6.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/2ee356989fe6.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/2ee356989fe6.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>FASFIT MATLOCK — SALES AND MARKETING INTERNS</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/03cda6c5d412.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/03cda6c5d412.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/03cda6c5d412.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 235,000 — Corner Unit Secure Lock Up &amp; Go Modern Living In Newlands (On Show) (Newlands, Harare North)</title>
-      <link>https://mutapatimes.com/stories/32a8b71bd3ca.html</link>
-      <description>USD 235,000 — Newlands, Harare North. 2 beds, 2 baths. Corner Unit Secure Lock Up &amp; Go Modern Living In Newlands (On Show). Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 17 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/32a8b71bd3ca.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/32a8b71bd3ca.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/32a8b71bd3ca.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/32a8b71bd3ca.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
