@@ -24,7 +24,7 @@
   var MAX_PER_HIGHLIGHT = 12;       // cap so a single category doesn't run forever
   var MIN_PER_HIGHLIGHT = 3;        // hide groups too thin to be interesting
   var FEATURE_AD_EVERY = 5;         // insert the Feature Story slide after every N cards
-  var SUBSCRIBE_AD_EVERY = 3;       // insert a Subscribe slide after every N cards
+  var SUBSCRIBE_AD_EVERY = 8;       // insert a Subscribe slide after every N cards
   var SUBSCRIBE_AD_DURATION_MS = 6000;
   var INDEX_URL = "/content/articles/index.json";
   var FEATURE_AD_URL = "/data/feature-story.json";
