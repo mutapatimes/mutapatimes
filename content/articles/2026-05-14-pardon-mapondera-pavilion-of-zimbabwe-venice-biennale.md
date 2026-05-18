@@ -1,6 +1,6 @@
 ---
 title: "Pardon Mapondera: gone but not forgotten at Venice"
-date: 2026-05-14T14:00:00.000Z
+date: 2026-05-17T14:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/mapondera/hero.jpg

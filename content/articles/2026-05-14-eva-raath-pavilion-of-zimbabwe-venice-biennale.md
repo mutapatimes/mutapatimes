@@ -1,6 +1,6 @@
 ---
 title: "Eva Raath: a slow archive of stitched memory at Venice"
-date: 2026-05-14T10:00:00.000Z
+date: 2026-05-17T10:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/raath/hero.jpg

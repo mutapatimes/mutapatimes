@@ -1,6 +1,6 @@
 ---
 title: "Shumba Maasai in Venice"
-date: 2026-05-13T12:00:00.000Z
+date: 2026-05-17T12:00:00.000Z
 author: Tendai Kuwanda
 category: Culture
 image: /img/uploads/venice-biennale-shumba-maasai.jpg

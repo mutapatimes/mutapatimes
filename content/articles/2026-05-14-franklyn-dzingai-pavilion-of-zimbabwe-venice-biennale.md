@@ -1,6 +1,6 @@
 ---
 title: "Franklyn Dzingai: family albums and the neural commons at Venice"
-date: 2026-05-14T12:00:00.000Z
+date: 2026-05-17T12:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/dzingai/hero.jpg

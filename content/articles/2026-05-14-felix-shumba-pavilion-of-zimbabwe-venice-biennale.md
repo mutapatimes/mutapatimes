@@ -1,6 +1,6 @@
 ---
 title: "Felix Shumba: charcoal and the practice of disappearance at Venice"
-date: 2026-05-14T11:00:00.000Z
+date: 2026-05-17T11:00:00.000Z
 author: Tendai Kuwanda
 category: Arts
 image: /img/uploads/venice-2026/shumba/hero.jpg

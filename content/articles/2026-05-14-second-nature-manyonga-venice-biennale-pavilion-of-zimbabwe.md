@@ -1,6 +1,6 @@
 ---
 title: "Isn't it lovely: a week in Venice with the Pavilion of Zimbabwe"
-date: 2026-05-14T09:00:00.000Z
+date: 2026-05-17T09:00:00.000Z
 author: Valentine Eluwasi
 category: Arts
 image: /img/uploads/venice-2026/main/biennale-savethedate.jpg
