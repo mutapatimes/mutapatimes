@@ -3,7 +3,7 @@ title: "Isn't it lovely: a week in Venice with the Pavilion of Zimbabwe"
 date: 2026-05-17T09:00:00.000Z
 author: Valentine Eluwasi
 category: Arts
-image: /img/uploads/venice-2026/main/biennale-savethedate.jpg
+image: /img/uploads/WhatsApp Image 2026-05-19 at 10.16.14.jpeg
 summary: A letter from Venice, written in the wake of the opening of Zimbabwe's
   eighth pavilion at the 61st Biennale. On Henry Taylor in the rain, an
   apartment full of paper and printworks, and the Zimbabwean room on opening
@@ -24,17 +24,17 @@ I arrived in Venice on a Tuesday, via Verona, in the kind of rain that does not 
 
 I had lunch shortly after arriving with my dear friend Anna Pesonen, who was in the city that day, at a small table in a small restaurant a short walk from the canal. We sat for an hour and a half. Halfway through she broke the news that she has been admitted to the MFA in sculpture at Yale, and is starting in the autumn. I was, and am, incredibly proud of her. We talked about what that next chapter is going to look like, and about the project I was here to begin. When we parted I was, against my better expectations, in a good mood.
 
-The good mood survived about as long as it took me to walk from the restaurant back to the apartment.
+Due to the rain, the good mood survived about as long as it took me to walk from the restaurant back to the apartment.
 
-The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh, Saudi Arabia. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio, paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a quiet retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her at the press every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
+The apartment sat on the second floor of an eighteenth-century *palazzo* owned by **Matilde Dolcetti**, the legendary printmaker and educator, who is now ninety years old and could not have been warmer. I was staying with a friend who had flown in for the Biennale from Riyadh, Saudi Arabia. On mornings, on our way out, Matilde would call us into her studio and show us the prints she had made earlier that day. Her studio is beautifully organised but still very much an artist's studio, paper and books to the ceiling, presses in working condition, ink under the fingernails. She has lately set herself a retrospective project: each morning she takes out a small stack of her old prints and binds them into a new book, trying a different bookmaking method each time. It was a delight to walk past her every morning, still joyous, still working out of a home studio she has had for longer than most of us have been alive.
 
 ![A watercolour from Scuola Grafica, the Venetian print school](/img/uploads/venice-2026/main/scuola-grafica.jpg)
 
 Matilde Dolcetti in her a palazzo. 
 
-The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will charitably describe as defeated.
+The apartment itself was beautiful in the particular way these *palazzi* are beautiful when their owners have lived in them their whole lives: the long, narrow stairwell; the high ceilings; the dark wood; the bedroom windows looking out over a canal that the rain had turned the colour of old pewter. I unpacked. I lay on the bed in that bedroom, in a posture I will describe as defeated.
 
-I do what most of my generation does, when defeated: I doom-scrolled. For once, I will give the algorithm credit. It handed me a small bit of optimism: a forty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
+I do what most of my generation does, when defeated: I doom-scrolled. For once, I will give the algorithm credit. It handed me a small bit of optimism: a fifty-second video by the American painter Henry Taylor, posted earlier that day. Taylor was standing on the deck of a boat in the central lagoon, in the same rain that had defeated me, looking at a city he was clearly enjoying. He was saying, into the camera: *isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
 <figure class="venice-video">
   <video controls autoplay muted loop playsinline preload="auto" poster="/img/uploads/venice-2026/main/henry-taylor-poster.png">
@@ -43,9 +43,11 @@ I do what most of my generation does, when defeated: I doom-scrolled. For once, 
   <figcaption><a href="https://www.instagram.com/p/DX9VznmPDa1/" target="_blank" rel="noopener">Henry Taylor (@chinatowntaylor)</a>, Instagram, 5 May 2026. Courtesy of the artist.</figcaption>
 </figure>
 
+He captioned it "TODAY, GREY IS OK . Sometimes i dont complain when theres rain. If theres ‘ love ‘ in then air i dont care. Will sleeo in an igloo wid u" 
+
 I watched it. Then I watched it again.
 
-By the third viewing I had moved into a sitting position. By the fourth I had put my shoes back on. By the fifth I was walking out into the same rain that had earlier won the argument, this time having reached an entirely different conclusion about what kind of argument it had been.
+By the third viewing I had moved into a sitting position. By the fourth I had put my shoes back on. By the fifth I was walking out into the same rain that had earlier won the argument.
 
 The rain held for the first two or three days. Then, on the morning of the opening, the sky did what Venetian skies do: it cleared, slowly and decisively.
 
@@ -53,7 +55,7 @@ The rain held for the first two or three days. Then, on the morning of the openi
 
 ## What the rain finally let me see
 
-What you are reading is a letter from a Zimbabwean who flew into Venice last week with a brand to represent and a book to begin work on, and who instead found that the city, under the cover of one Henry Taylor video and several days of unexpected rain, taught him, briefly, how to look again.
+What you are reading is a letter from a Zimbabwean who flew into Venice last week with a brand to represent and a publication to begin work on, and who instead found that the city, under the cover of one Henry Taylor video and several days of unexpected rain, taught him, briefly, how to look again.
 
 What I saw, when I started looking, was beauty I had not been ready to see.
 
@@ -95,7 +97,7 @@ But the night was not about me. It was about the people in the room.
 
 **Option Dzikamai Nyahunzvi**, whose practice, in his own words, *reimagines moments of communion between the living and ancestral spirits*, came down from Umbria for the weekend. Option is the 2026 Tyburn Foundation Fellow at the Civitella Ranieri artist residency, one of the most respected fellowships an artist working anywhere in Europe can hold this year.
 
-**Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different mode. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today, and is also, less importantly to the rest of the world but rather centrally to me, my favourite. She had come to support her husband Gideon Gomo. I could not stop smiling.
+**Georgina Maxim** was there. Georgina represented Zimbabwe at the 58th Biennale and has work on display at the Arsenale in this edition too, a return to Venice in a different mode. **Virginia Chihota** was there: legendary, unhurried, the kind of presence a room arranges itself around without quite knowing it has done so. And, this is the part I will not pretend I have professional distance from, **Portia Zvavahera** was there, who is, in any honest accounting, one of the most important artists working out of Zimbabwe today. She had come to support her husband Gideon Gomo. I could not stop smiling.
 
 **Belinda Holden** was there. Belinda runs the **G.A.S. Foundation**, the non-profit artist residency founded by Yinka Shonibare CBE and dedicated to facilitating international artistic exchange between artists, curators and writers from across the African continent and the world. We had been in conversation for some weeks before Venice about her contributing to the 1925 Glen Norah book; we didn't quite settle on the shape of her contribution at the opening, but it is a conversation that is now properly under way.
 
@@ -139,7 +141,7 @@ Gideon Gomo's work installed at Santa Maria della Pietà.
 
 By Saturday evening I was making my way back out, the same route in reverse, the train to Verona and the plane home, with a far better sense of what I was making and why.
 
-The book, which 1925 Glen Norah is publishing later this year, follows the five artists in the Pavilion of Zimbabwe from the moment the commission was confirmed to the moment of installation in Venice. It is not a catalogue. It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it. The week in Venice taught me what shape the book wants to be. I had arrived thinking I knew. I left understanding I had not yet been listening hard enough.
+The publication, which 1925 Glen Norah is publishing later this year, follows the five artists in the Pavilion of Zimbabwe. It is not a catalogue. It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it. The week in Venice taught me what shape the book wants to be. I had arrived thinking I knew. I left understanding I had not yet been listening hard enough.
 
 ## In closing, on therapy, in beauty
 
@@ -149,7 +151,6 @@ What I have to report from Venice is that she is correct.
 
 There is therapy in beauty. Last week, in a city that had at first refused to be anything other than wet and grey and inconvenient, I was given several days of it. The pavilion was beauty. The lagoon walls were beauty, in their long argument with the weather. The friends and the alumni in the room on opening night were beauty. The journey back out toward Verona on Saturday evening, watching the city pull away into the late spring light, was beauty. Taken together, they did what beauty does when you are open to it: they put me back in working order.
 
-I left lighter than I had arrived, which is the part of travel one cannot plan for and that, when it happens, is the only kind of travel that has been worth the air mile.
 
 *Isn't it lovely. Isn't it beautiful. Come on. It could be great. Sometimes it's okay.*
 
