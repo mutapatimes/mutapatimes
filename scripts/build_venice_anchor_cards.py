@@ -173,9 +173,9 @@ def render_quote(size, idx, total, quote, out_path):
     draw.text((80, 220), f"PULL-QUOTE  ·  {idx:02d} OF {total:02d}",
               font=idx_font, fill=CARD_FG_MUTED)
 
-    # Giant red opening curly quote mark
-    q_mark_font = load_font("serif_bold", 280)
-    draw.text((60, 240), "“", font=q_mark_font, fill=ACCENT)
+    # Red opening curly quote mark — small editorial flourish, not a billboard
+    q_mark_font = load_font("serif_bold", 140)
+    draw.text((80, 260), "“", font=q_mark_font, fill=ACCENT)
 
     # Quote body — auto-fit so even the longer ones (the colophon /
     # the lineage / the algorithm) fit a comfortable number of lines.
