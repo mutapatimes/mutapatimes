@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-19T04:33:19.113001+00:00",
+  "fetched_at": "2026-05-19T15:48:46.540373+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -166,6 +166,15 @@
       "baths": "2"
     },
     {
+      "title": "Lovely 4-Bed Home in Rydale Ridge recently completed",
+      "url": "https://www.property.co.zw/for-sale/houses-aalp247359",
+      "price": "USD 55,000",
+      "location": "Rydale Ridge, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/15/33/f9/1533f96b-c8a0-45d3-ba9f-4f3ec5c5276d_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
       "title": "Finish to your own Taste- Modern Offering",
       "url": "https://www.property.co.zw/for-sale/townhouses-mac238904",
       "price": "USD 160,000",
@@ -175,29 +184,20 @@
       "baths": "3"
     },
     {
+      "title": "Mount Pleasant",
+      "url": "https://www.property.co.zw/for-sale/houses-thre233266",
+      "price": "USD 800,000",
+      "location": "Mount Pleasant, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/a3/46/52/a34652c8-dc9f-4509-b6ff-e7c25c1c1e3a_thumbnail591.webp",
+      "beds": "8",
+      "baths": "8"
+    },
+    {
       "title": "Finish to Your Taste,Spacious 4-Bedroom Home for Sale in Mabvazuva",
       "url": "https://www.property.co.zw/for-sale/houses-leg238479",
       "price": "USD 110,000",
       "location": "Mabvazuva, Ruwa",
       "image": "https://www.property.co.zw/uploadedfiles/4b/d3/43/4bd34352-f63b-40a9-823f-097add643a41_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Stylishly-Polished home!!!",
-      "url": "https://www.property.co.zw/for-sale/houses-rws225929",
-      "price": "USD 255,000",
-      "location": "Greendale North, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/8b/f3/1e/8bf31e6e-ea85-47c4-9b22-40b8bdef77fc_thumbnail591.webp",
-      "beds": "6",
-      "baths": "3"
-    },
-    {
-      "title": "Safari Lodge-Style Bespoke Family Home Overlooking Hillside Dams",
-      "url": "https://www.property.co.zw/for-sale/houses-prl245996",
-      "price": "USD 675,000",
-      "location": "Burnside, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/c2/e1/4d/c2e14d51-5adf-4a87-ba9b-3537ca5cd04d_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     }
