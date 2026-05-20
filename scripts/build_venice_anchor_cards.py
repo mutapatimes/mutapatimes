@@ -30,16 +30,14 @@ ARTICLE_BYLINE = "Valentine Eluwasi"
 ARTICLE_TITLE = "Isn't it lovely."
 ARTICLE_DECK = (
     "A letter from Venice, written in the wake of the opening of "
-    "Zimbabwe's eighth pavilion at the 61st Biennale. On Henry "
-    "Taylor in the rain, an apartment full of paper and printworks, "
-    "and the Zimbabwean room on opening night."
+    "Zimbabwe's eighth pavilion at the 61st Biennale."
 )
 
 # Six quotes the user nominated, in the order they appear in the
 # narrative. Each renders on its own pull-quote card.
 QUOTES = [
     {
-        "text": "I will give the algorithm credit. It handed me a small bit of optimism: a forty-second video by the American painter Henry Taylor, posted earlier that day.",
+        "text": "I will give the algorithm credit. It handed me a small bit of optimism: a fifty-second video by the American painter Henry Taylor, posted earlier that day.",
         "attr": "VALENTINE ELUWASI",
         "src":  "FROM 'ISN'T IT LOVELY' · THE MUTAPA TIMES",
     },
@@ -49,19 +47,14 @@ QUOTES = [
         "src":  "ON A BOAT IN THE LAGOON · VENICE · 5 MAY 2026",
     },
     {
-        "text": "The pavilion lists, on the colophon page of its official catalogue, the institutional supporters of this eighth edition. The Higherlife Foundation is one of them. So is my own brand, 1925 Glen Norah.",
+        "text": "It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it.",
         "attr": "VALENTINE ELUWASI",
-        "src":  "FROM 'ISN'T IT LOVELY' · THE MUTAPA TIMES",
+        "src":  "ON THE 1925 GLEN NORAH BOOK · 'ISN'T IT LOVELY'",
     },
     {
         "text": "The lineage was visible in the room. People who had been the pavilion in 2013, in 2015, in 2019, in 2022 had come back to be the pavilion's audience in 2026.",
         "attr": "VALENTINE ELUWASI",
         "src":  "FROM 'ISN'T IT LOVELY' · THE MUTAPA TIMES",
-    },
-    {
-        "text": "It is something closer to a long companion essay, with photography and ephemera, designed to sit alongside the official record rather than to replicate it.",
-        "attr": "VALENTINE ELUWASI",
-        "src":  "ON THE 1925 GLEN NORAH BOOK · 'ISN'T IT LOVELY'",
     },
     {
         "text": "The pavilion was beauty. The lagoon walls were beauty, in their long argument with the weather. The friends and the alumni in the room on opening night were beauty.",
@@ -135,19 +128,10 @@ def render_headline(size, out_path):
               "SCENE REPORT  ·  VENICE BIENNALE  ·  1 OF 7",
               font=eyebrow_font, fill=ACCENT)
 
-    head_font_size = 200 if h >= 1900 else 170
-    head_font = load_font("serif_bold", head_font_size)
-    head_lines = wrap_text(ARTICLE_TITLE, head_font, w - 160, draw)
-    line_h = int(head_font_size * 1.02)
-    cy = 360
-    for line in head_lines:
-        draw.text((80, cy), line, font=head_font, fill=CARD_FG)
-        cy += line_h
-
     deck_font_size = 38 if h >= 1900 else 34
     deck_font = load_font("sans", deck_font_size)
     deck_lines = wrap_text(ARTICLE_DECK, deck_font, w - 160, draw)
-    cy += 60
+    cy = 360
     for line in deck_lines:
         draw.text((80, cy), line, font=deck_font, fill=CARD_FG_MUTED)
         cy += int(deck_font_size * 1.35)
@@ -173,15 +157,14 @@ def render_quote(size, idx, total, quote, out_path):
     draw.text((80, 220), f"PULL-QUOTE  ·  {idx:02d} OF {total:02d}",
               font=idx_font, fill=CARD_FG_MUTED)
 
-    # Red opening curly quote mark — small editorial flourish, not a billboard
-    q_mark_font = load_font("serif_bold", 140)
-    draw.text((80, 260), "“", font=q_mark_font, fill=ACCENT)
-
-    # Quote body — auto-fit so even the longer ones (the colophon /
-    # the lineage / the algorithm) fit a comfortable number of lines.
-    q_text_clean = quote["text"].rstrip(".!? ") + "."
+    # Quote body — opening and closing curly marks inline, in the body
+    # colour. Auto-fit so even the longer quotes fit a comfortable
+    # number of lines and leave room for the attribution + footer band.
+    q_text_clean = "“" + quote["text"].rstrip(".!? ") + ".”"
     safe_w = w - 160
-    max_lines = 10 if h >= 1900 else 8
+    text_top_min = 280
+    text_bottom_max = h - 180 - 160  # bottom band + attribution block
+    avail_h = text_bottom_max - text_top_min
     q_font_size = 90 if h >= 1900 else 78
     lines = None
     while q_font_size >= 40:
@@ -191,16 +174,15 @@ def render_quote(size, idx, total, quote, out_path):
         for ln in lines:
             bb = draw.textbbox((0, 0), ln, font=q_font)
             widest = max(widest, bb[2] - bb[0])
-        if len(lines) <= max_lines and widest <= safe_w:
+        line_h = int(q_font_size * 1.18)
+        if widest <= safe_w and len(lines) * line_h <= avail_h:
             break
         q_font_size -= 4
     q_font = load_font("serif_bold", q_font_size)
     line_h = int(q_font_size * 1.18)
 
     total_h = len(lines) * line_h
-    # Vertical centre, biased slightly up so the attribution sits clear
-    # of the bottom band.
-    block_top = (h - total_h) // 2 - 30
+    block_top = text_top_min + max(0, (avail_h - total_h) // 2 - 30)
     cy = block_top
     for line in lines:
         draw.text((80, cy), line, font=q_font, fill=CARD_FG)
@@ -305,25 +287,19 @@ def render_artists(size, out_path):
         cy += int(sub_font.size * 1.25)
 
     bullets = [
-        ("Felix Shumba",      "Charcoal."),
-        ("Franklyn Dzingai",  "Photography, weave."),
-        ("Gideon Gomo",       "Bronze."),
-        ("Pardon Mapondera",  "Installation, glass."),
-        ("Eva Raath",         "Textile."),
+        "Felix Shumba",
+        "Franklyn Dzingai",
+        "Gideon Gomo",
+        "Pardon Mapondera",
+        "Eva Raath",
     ]
     cv_font = load_font("sans_bold", 32 if h >= 1900 else 28)
-    note_font = load_font("sans", 26 if h >= 1900 else 24)
     cy += 50
-    for name, medium in bullets:
+    for name in bullets:
         dot_r = 8
         draw.ellipse([80, cy + 14, 80 + dot_r * 2, cy + 14 + dot_r * 2],
                      fill=ACCENT)
         draw.text((80 + 30, cy), name, font=cv_font, fill=CARD_FG)
-        # right-aligned medium label
-        mbb = draw.textbbox((0, 0), medium, font=note_font)
-        mw = mbb[2] - mbb[0]
-        draw.text((w - 80 - mw, cy + 4),
-                  medium, font=note_font, fill=CARD_FG_MUTED)
         cy += int(cv_font.size * 1.55)
 
     draw_bottom_band(img, draw, byline=ARTICLE_BYLINE)
@@ -389,7 +365,7 @@ def build_plan(size, prefix):
        4  PULL-QUOTE 2 of 5 — Henry Taylor's "isn't it lovely"
        5  stat — US$70bn market by 2032
        6  meet the artists (five-name roll)
-       7  PULL-QUOTE 3 of 5 — colophon / 1925 Glen Norah
+       7  PULL-QUOTE 3 of 5 — the 1925 Glen Norah book
        8  PULL-QUOTE 4 of 5 — the lineage in the room
        9  PULL-QUOTE 5 of 5 — the pavilion was beauty
        10 CTA — read the letter on mutapatimes.com
@@ -418,12 +394,12 @@ def build_plan(size, prefix):
                 p, eyebrow="THE OPPORTUNITY")),
         (f"{prefix}-06-artists",
             lambda p: render_artists(size, p)),
-        (f"{prefix}-07-quote-colophon",
+        (f"{prefix}-07-quote-glennorah",
             lambda p: render_quote(size, 3, quotes_used, QUOTES[2], p)),
         (f"{prefix}-08-quote-lineage",
             lambda p: render_quote(size, 4, quotes_used, QUOTES[3], p)),
         (f"{prefix}-09-quote-beauty",
-            lambda p: render_quote(size, 5, quotes_used, QUOTES[5], p)),
+            lambda p: render_quote(size, 5, quotes_used, QUOTES[4], p)),
         (f"{prefix}-10-cta",
             lambda p: render_cta(size, p)),
     ]
