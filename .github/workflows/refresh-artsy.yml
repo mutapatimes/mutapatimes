@@ -1,0 +1,59 @@
+name: Refresh Zimbabwean Art (Artsy snapshot)
+
+on:
+  schedule:
+    # Weekly, early Sunday. The Artsy public API is being retired, so
+    # we snapshot rather than live-fetch — keep the cadence light.
+    - cron: '15 4 * * 0'
+  workflow_dispatch:
+
+jobs:
+  refresh-artsy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      ARTSY_CLIENT_ID: ${{ secrets.ARTSY_CLIENT_ID }}
+      ARTSY_CLIENT_SECRET: ${{ secrets.ARTSY_CLIENT_SECRET }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install requests
+        run: pip install --quiet requests
+
+      - name: Pull Zimbabwean Art snapshot from Artsy public API
+        id: fetch
+        continue-on-error: true
+        run: python3 scripts/fetch_artsy.py
+
+      - name: Build per-artwork + per-artist pages from the snapshot
+        # Runs even if fetch failed — we'd still rebuild from the
+        # last-known-good arts.json so the page never goes blank.
+        run: python3 scripts/build_arts_pages.py
+
+      - name: Commit refreshed snapshot + pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/arts.json arts/
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Zimbabwean Art snapshot from Artsy [automated]"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed on attempt $i"
+                exit 0
+              fi
+              echo "Push rejected — rebasing onto remote main (attempt $i/5)"
+              git pull --rebase origin main || exit 1
+              sleep $((RANDOM % 4 + 2))
+            done
+            echo "All push attempts failed"
+            exit 1
+          fi
+
+      - name: Flag if the fetch step failed (API may be retired)
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::warning::fetch_artsy.py failed — Artsy public API may be retired."
+          echo "Site continues to render from the last successful data/arts.json."
