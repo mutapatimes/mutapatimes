@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 14:51:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 15:55:31 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,18 +53,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/87af4e5d1bdc.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/87af4e5d1bdc.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/87af4e5d1bdc.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 210,000 — 3 Bedroomed House for Sale in Sunridge (Sunridge, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/b3d85ce0af0c.html</link>
-      <description>USD 210,000 — Sunridge, Harare West. 3 beds, 3 baths. 3 Bedroomed House for Sale in Sunridge. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 19 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b3d85ce0af0c.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/b3d85ce0af0c.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b3d85ce0af0c.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/b3d85ce0af0c.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 250,000 — An incomplete house for sale in Gletwin Park (Gletwin Park, Harare North)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/c23dd416a397.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/c23dd416a397.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/c23dd416a397.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 400,000 — New Marlborough (New Marlborough, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/526917ab48df.html</link>
+      <description>USD 400,000 — New Marlborough, Harare West. 4 beds, 3 baths. New Marlborough. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 19 May 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/526917ab48df.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/526917ab48df.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/526917ab48df.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/526917ab48df.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-20T09:54:20.868467+00:00",
+  "fetched_at": "2026-05-20T15:55:23.217415+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -28,15 +28,6 @@
       "location": "Glen Lorne, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/fa/db/f7/fadbf7d5-6cf5-4eb4-abb4-68e682c37a6d_thumbnail591.webp",
       "beds": "4",
-      "baths": "3"
-    },
-    {
-      "title": "3 Bedroomed House for Sale in Sunridge",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp245570",
-      "price": "USD 210,000",
-      "location": "Sunridge, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/05/4e/1d/054e1df9-0805-493b-b20d-e94047b0dcab_thumbnail591.webp",
-      "beds": "3",
       "baths": "3"
     },
     {
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/95/06/35/95063534-7c2d-4b2d-a0fe-7deb5fc38acf_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
+    },
+    {
+      "title": "New Marlborough",
+      "url": "https://www.property.co.zw/for-sale/townhouses-caml245358",
+      "price": "USD 400,000",
+      "location": "New Marlborough, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/58/6a/2c/586a2cbf-1b09-449c-807a-158e2c03b0ca_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     }
   ]
 }
