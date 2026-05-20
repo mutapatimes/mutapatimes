@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 04:40:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 06:44:44 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,6 +53,30 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/7546b07e508f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7546b07e508f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/7546b07e508f.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Desperate teachers forced into dangerous work as salaries fail – union says</title>
+      <link>https://mutapatimes.com/stories/5f80d2a62d45.html</link>
+      <description>via NewZimbabwe.com #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Tue, 19 May 2026 23:31:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/5f80d2a62d45.html</guid>
+      <category>Business</category>
+      <dc:creator>NewZimbabwe.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/5f80d2a62d45.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5f80d2a62d45.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/5f80d2a62d45.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>SANYATWE RALLIES WARRIORS... Zimbabwe in fair 2027 AFCON draw</title>
+      <link>https://mutapatimes.com/stories/ad4e0e41cdb9.html</link>
+      <description>via Herald.co.zw #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
+      <pubDate>Tue, 19 May 2026 22:05:55 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/ad4e0e41cdb9.html</guid>
+      <category>Culture</category>
+      <dc:creator>Herald.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/ad4e0e41cdb9.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ad4e0e41cdb9.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/ad4e0e41cdb9.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>120 Matabeleland artistes unite for Culture Month showcase</title>
@@ -713,30 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/00666e74d659.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/00666e74d659.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/00666e74d659.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 320,000 — Marlborough (Marlborough, Harare West)</title>
-      <link>https://mutapatimes.com/stories/7f74ccd9349f.html</link>
-      <description>USD 320,000 — Marlborough, Harare West. 4 beds, 3 baths. Marlborough. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 19 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/7f74ccd9349f.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/7f74ccd9349f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7f74ccd9349f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/7f74ccd9349f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 250,000 — House for sale (Arlington, Harare South)</title>
-      <link>https://mutapatimes.com/stories/5342f1ae66d5.html</link>
-      <description>USD 250,000 — Arlington, Harare South. 3 beds, 3 baths. House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 19 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/5342f1ae66d5.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/5342f1ae66d5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5342f1ae66d5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/5342f1ae66d5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
