@@ -1,9 +1,15 @@
 /* ZB Bank demo — premium ad placements layered on top of the live
  * Mutapa Times stylesheet. Only loaded on /zb-demo/ pages.
  *
- * Editorial guardrail: ad slots live in dedicated sponsor zones with
- * an explicit "Advertisement" label and clear visual separation from
- * editorial. They are not styled to mimic editorial cards. */
+ * Typographic policy: one voice per ad.
+ *   - Headlines: Playfair Display italic (matches site's editorial serif).
+ *   - Small labels + CTA buttons: Inter, only.
+ *   - No eyebrows, no decks. Image carries the context; headline carries
+ *     the proposition; CTA closes the loop.
+ *
+ * Editorial guardrail: every ad sits in a dedicated sponsor zone with
+ * a visible "Advertisement" label and clear separation from editorial.
+ */
 
 :root {
   --zb-green: #7bba1f;
@@ -14,6 +20,33 @@
   --zb-paper-deep: #f0e6c8;
 }
 
+/* Tiny ad label — used across all ad units */
+.zb-ad-label {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--zb-gold);
+}
+
+/* CTA button */
+.zb-ad-cta {
+  display: inline-block;
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  background: var(--zb-ink);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 200ms ease;
+}
+.zb-ad-cta:hover { background: var(--zb-green-deep); text-decoration: none; }
+
 /* ── Full-width leaderboard banner ──────────────────────────────── */
 .zb-ad-leaderboard {
   max-width: 1200px;
@@ -23,89 +56,56 @@
 .zb-ad-leaderboard-inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  align-items: center;
-  background: linear-gradient(135deg, #ffffff 0%, var(--zb-paper) 100%);
+  grid-template-columns: 1fr 1.5fr; /* image dominant */
+  background: #fff;
   border-top: 4px solid var(--zb-green);
   box-shadow: 0 2px 14px rgba(0,0,0,0.06);
   overflow: hidden;
-  min-height: 140px;
+  min-height: 240px;
 }
 @media (max-width: 720px) {
   .zb-ad-leaderboard-inner { grid-template-columns: 1fr; min-height: auto; }
 }
 .zb-ad-leaderboard-copy {
-  padding: 22px 28px;
+  padding: 36px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   position: relative;
 }
-.zb-ad-label {
+.zb-ad-leaderboard-copy .zb-ad-label {
   position: absolute;
-  top: 8px;
-  left: 28px;
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--zb-gold);
-}
-.zb-ad-leaderboard-eyebrow {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--zb-green-deep);
-  margin: 16px 0 4px;
+  top: 14px;
+  left: 34px;
 }
 .zb-ad-leaderboard-headline {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.15;
+  font-size: 32px;
+  line-height: 1.08;
   color: var(--zb-ink);
-  margin: 0 0 8px;
+  margin: 32px 0 0;
+  max-width: 360px;
 }
-.zb-ad-leaderboard-deck {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 13px;
-  line-height: 1.45;
-  color: #4a443b;
-  margin: 0 0 14px;
-}
-.zb-ad-cta {
-  display: inline-block;
-  font-family: Inter, system-ui, sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 10px 18px;
-  background: var(--zb-ink);
-  color: #fff !important;
-  text-decoration: none;
-  border-radius: 2px;
-  transition: background 160ms ease;
-}
-.zb-ad-cta:hover { background: var(--zb-green-deep); text-decoration: none; }
+.zb-ad-leaderboard .zb-ad-cta { margin-top: 24px; }
 .zb-ad-leaderboard-image {
-  height: 100%;
-  min-height: 140px;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-color: var(--zb-paper-deep);
+  min-height: 240px;
 }
 @media (max-width: 720px) {
-  .zb-ad-leaderboard-image { min-height: 180px; }
+  .zb-ad-leaderboard-image { min-height: 280px; background-position: center; }
 }
 
 /* ── Side-floated luxury portrait ad (acts as sidebar in articles) ─ */
 .zb-ad-rail {
   float: right;
-  width: 300px;
-  max-width: 40%;
-  margin: 6px 0 24px 28px;
+  width: 320px;
+  max-width: 42%;
+  margin: 26px 0 28px 32px;
   background: #fff;
   border-top: 4px solid var(--zb-green);
   box-shadow: 0 2px 14px rgba(0,0,0,0.07);
@@ -115,46 +115,31 @@
   .zb-ad-rail { float: none; width: 100%; max-width: 100%; margin: 24px 0; }
 }
 .zb-ad-rail .zb-ad-label {
-  position: static;
-  display: block;
-  padding: 10px 18px 0;
-  text-align: left;
+  position: absolute;
+  top: -22px;
+  left: 0;
+  background: transparent;
+  padding: 0;
 }
 .zb-ad-rail-image {
   width: 100%;
   aspect-ratio: 3 / 4;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-color: var(--zb-paper-deep);
 }
-.zb-ad-rail-body { padding: 14px 18px 18px; }
-.zb-ad-rail-eyebrow {
-  font-family: Inter, sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--zb-green-deep);
-  margin: 0 0 6px;
-}
+.zb-ad-rail-body { padding: 22px 22px 24px; }
 .zb-ad-rail-headline {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.18;
   color: var(--zb-ink);
-  margin: 0 0 8px;
-}
-.zb-ad-rail-deck {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  line-height: 1.45;
-  color: #4a443b;
-  margin: 0 0 12px;
+  margin: 0 0 18px;
 }
 
-/* ── Sponsored tile in feed grids (looks like a feed card but labeled) ─ */
+/* ── Sponsored tile in feed grids ───────────────────────────────── */
 .zb-ad-tile {
   position: relative;
   display: block;
@@ -163,7 +148,7 @@
   background: #fff;
   border-top: 4px solid var(--zb-green);
   box-shadow: 0 2px 14px rgba(0,0,0,0.06);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 .zb-ad-tile:hover {
   text-decoration: none;
@@ -174,46 +159,30 @@
   position: absolute;
   top: 10px;
   right: 12px;
-  background: rgba(255,255,255,0.92);
-  padding: 3px 8px;
+  background: rgba(255,255,255,0.96);
+  padding: 4px 10px;
   border-radius: 2px;
   z-index: 2;
 }
 .zb-ad-tile-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-color: var(--zb-paper-deep);
 }
-.zb-ad-tile-body { padding: 14px 16px 16px; }
-.zb-ad-tile-eyebrow {
-  font-family: Inter, sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--zb-green-deep);
-  margin: 0 0 6px;
-}
+.zb-ad-tile-body { padding: 18px 18px 22px; }
 .zb-ad-tile-headline {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 20px;
+  line-height: 1.2;
   color: var(--zb-ink);
-  margin: 0 0 6px;
-}
-.zb-ad-tile-deck {
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  line-height: 1.45;
-  color: #4a443b;
   margin: 0;
 }
 
-/* ── Footer banner (between article and subscribe) ──────────────── */
+/* ── Footer banner ─────────────────────────────────────────────── */
 .zb-ad-footer {
   max-width: 1200px;
   margin: 32px auto 24px;
@@ -221,53 +190,37 @@
 }
 .zb-ad-footer-inner {
   position: relative;
-  background: var(--zb-ink);
   color: #fff;
-  padding: 36px 40px;
+  padding: 56px 44px;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: center;
+  gap: 32px;
+  align-items: end;
+  min-height: 280px;
   background-image:
-    linear-gradient(135deg, rgba(26,26,26,0.92), rgba(26,26,26,0.65)),
+    linear-gradient(100deg, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0.5) 45%, rgba(26,26,26,0.05) 100%),
     url('/img/uploads/zb_bank_demo_site/ZB_BANK_Banner_Home%20Building%20Loan-Bank_0.png');
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   border-top: 4px solid var(--zb-green);
 }
 @media (max-width: 720px) {
-  .zb-ad-footer-inner { grid-template-columns: 1fr; padding: 28px 24px; }
+  .zb-ad-footer-inner { grid-template-columns: 1fr; padding: 36px 24px; }
 }
 .zb-ad-footer .zb-ad-label {
   position: absolute;
-  top: 10px;
-  left: 40px;
+  top: 14px;
+  left: 44px;
   color: var(--zb-gold);
-}
-.zb-ad-footer-eyebrow {
-  font-family: Inter, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--zb-green);
-  margin: 18px 0 6px;
 }
 .zb-ad-footer h3 {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 1.1;
-  margin: 0 0 8px;
-}
-.zb-ad-footer p {
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 38px;
+  line-height: 1.05;
   margin: 0;
-  max-width: 540px;
-  color: #e8e3d4;
+  max-width: 560px;
 }
 .zb-ad-footer .zb-ad-cta {
   background: #fff;
@@ -276,8 +229,7 @@
 }
 .zb-ad-footer .zb-ad-cta:hover { background: var(--zb-green); color: #fff !important; }
 
-/* Sponsored article disclosure strip (used inside article-body of the
- * 3 ZB-authored sponsored pieces) */
+/* Sponsored article disclosure strip (inside ZB-authored articles) */
 .zb-sponsor-disclosure {
   background: var(--zb-paper);
   border-left: 4px solid var(--zb-green);
@@ -297,8 +249,7 @@
   margin-bottom: 4px;
 }
 
-/* "Demo" ribbon — small pill in the top-right corner of every demo
- * page so reviewers always know they're inside the sandbox. */
+/* Top-right demo ribbon */
 .zb-demo-ribbon {
   position: fixed;
   top: 12px;

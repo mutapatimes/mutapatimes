@@ -34,94 +34,50 @@ WIRE_SLUGS = [
 # ── ad HTML fragments ───────────────────────────────────────────────
 RIBBON = '<div class="zb-demo-ribbon" aria-hidden="true">ZB Bank · Sponsored content demo</div>'
 
-LEADERBOARD = '''<aside class="zb-ad-leaderboard" role="complementary" aria-label="Advertisement">
+def leaderboard(headline, img, cta):
+    return f'''<aside class="zb-ad-leaderboard" role="complementary" aria-label="Advertisement">
   <div class="zb-ad-leaderboard-inner">
-    <span class="zb-ad-label">Advertisement</span>
     <div class="zb-ad-leaderboard-copy">
-      <p class="zb-ad-leaderboard-eyebrow">ZB Bank · Diaspora Hub</p>
-      <h3 class="zb-ad-leaderboard-headline">Buying back home, on your terms.</h3>
-      <p class="zb-ad-leaderboard-deck">Open a Diaspora Current Account in USD, GBP, EUR, ZAR or BWP. Internet banking and a VISA card from day one.</p>
-      <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">Open an account →</a>
+      <span class="zb-ad-label">Advertisement</span>
+      <h3 class="zb-ad-leaderboard-headline">{headline}</h3>
+      <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">{cta}</a>
     </div>
-    <div class="zb-ad-leaderboard-image" style="background-image:url('/img/uploads/zb_bank_demo_site/ZB_NEW_HOME_BUYERS.png')"></div>
+    <div class="zb-ad-leaderboard-image" style="background-image:url('/img/uploads/zb_bank_demo_site/{img}')"></div>
   </div>
 </aside>'''
 
-LEADERBOARD_PROP = '''<aside class="zb-ad-leaderboard" role="complementary" aria-label="Advertisement">
-  <div class="zb-ad-leaderboard-inner">
-    <span class="zb-ad-label">Advertisement</span>
-    <div class="zb-ad-leaderboard-copy">
-      <p class="zb-ad-leaderboard-eyebrow">ZB Bank · Property</p>
-      <h3 class="zb-ad-leaderboard-headline">Stands in Beitbridge, Ruwa, Bulawayo &amp; Greendale.</h3>
-      <p class="zb-ad-leaderboard-deck">Curated diaspora property. 25% deposit, balance over 12 months. ZB project &amp; property management included.</p>
-      <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">View stands →</a>
-    </div>
-    <div class="zb-ad-leaderboard-image" style="background-image:url('/img/uploads/zb_bank_demo_site/Homebuilding_zb_bank.png')"></div>
-  </div>
-</aside>'''
+LEADERBOARD      = leaderboard("Buying back home, on your terms.",
+                               "ZB_NEW_HOME_BUYERS.png", "Open an account →")
+LEADERBOARD_PROP = leaderboard("Stands in Beitbridge, Ruwa, Bulawayo &amp; Greendale.",
+                               "Homebuilding_zb_bank.png", "View stands →")
+LEADERBOARD_FX   = leaderboard("Holding value across currencies.",
+                               "DIASPORA_CURRENT_ACCOUNT.png", "Talk to ZB →")
 
-LEADERBOARD_FX = '''<aside class="zb-ad-leaderboard" role="complementary" aria-label="Advertisement">
-  <div class="zb-ad-leaderboard-inner">
-    <span class="zb-ad-label">Advertisement</span>
-    <div class="zb-ad-leaderboard-copy">
-      <p class="zb-ad-leaderboard-eyebrow">ZB Bank · Diaspora Hub</p>
-      <h3 class="zb-ad-leaderboard-headline">Holding value across currencies.</h3>
-      <p class="zb-ad-leaderboard-deck">A Diaspora Current Account in your earning currency. No minimum balance. Forex-denominated insurance and investment options.</p>
-      <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">Talk to ZB →</a>
-    </div>
-    <div class="zb-ad-leaderboard-image" style="background-image:url('/img/uploads/zb_bank_demo_site/DIASPORA_CURRENT_ACCOUNT.png')"></div>
-  </div>
-</aside>'''
-
-def rail(img, eyebrow, headline, deck, cta):
+def rail(img, headline, cta):
     return f'''<aside class="zb-ad-rail" role="complementary" aria-label="Advertisement">
   <span class="zb-ad-label">Advertisement</span>
   <div class="zb-ad-rail-image" style="background-image:url('/img/uploads/zb_bank_demo_site/{img}')"></div>
   <div class="zb-ad-rail-body">
-    <p class="zb-ad-rail-eyebrow">{eyebrow}</p>
     <h3 class="zb-ad-rail-headline">{headline}</h3>
-    <p class="zb-ad-rail-deck">{deck}</p>
     <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">{cta}</a>
   </div>
 </aside>'''
 
-RAIL_MORTGAGE = rail(
-    "ZB_NEW_HOME_BUYERS.png",
-    "ZB Bank · Diaspora Mortgage",
-    "Buy back home — from abroad.",
-    "25% deposit. Ten-year term. Interest priced to your risk profile, not your distance.",
-    "Apply now →",
-)
-RAIL_FUNERAL = rail(
-    "FUNERAL_ZB_BANK.png",
-    "ZB Bank · International Funeral Plan",
-    "A fitting farewell, prepared.",
-    "Cover in USD, GBP or ZAR for you, your dependents abroad, and your loved ones at home.",
-    "Get a quote →",
-)
-RAIL_ACCOUNT = rail(
-    "DIASPORA_CURRENT_ACCOUNT.png",
-    "ZB Bank · Diaspora Current Account",
-    "Banking from where you are.",
-    "USD, GBP, EUR, ZAR, BWP. Internet banking, VISA/MasterCard, executive lounge access.",
-    "Open an account →",
-)
-RAIL_BUILD = rail(
-    "Homebuilding_zb_bank.png",
-    "ZB Bank · Building Loan",
-    "Build, with the bank already in your corner.",
-    "Funds released against inspection at each stage. Up to ten-year repayment.",
-    "Speak to ZB →",
-)
+RAIL_MORTGAGE = rail("ZB_NEW_HOME_BUYERS.png",
+                     "Buy back home — from abroad.", "Apply now →")
+RAIL_FUNERAL  = rail("FUNERAL_ZB_BANK.png",
+                     "A fitting farewell, prepared.", "Get a quote →")
+RAIL_ACCOUNT  = rail("DIASPORA_CURRENT_ACCOUNT.png",
+                     "Banking from where you are.", "Open an account →")
+RAIL_BUILD    = rail("Homebuilding_zb_bank.png",
+                     "Build, with the bank in your corner.", "Speak to ZB →")
 
-def tile(href, img, headline, deck):
+def tile(href, img, headline):
     return f'''<a class="zb-ad-tile" href="{href}" target="_blank" rel="noopener sponsored">
-  <span class="zb-ad-label">Sponsored</span>
+  <span class="zb-ad-label">Advertisement</span>
   <div class="zb-ad-tile-image" style="background-image:url('/img/uploads/zb_bank_demo_site/{img}')"></div>
   <div class="zb-ad-tile-body">
-    <p class="zb-ad-tile-eyebrow">ZB Bank · Diaspora Hub</p>
     <h3 class="zb-ad-tile-headline">{headline}</h3>
-    <p class="zb-ad-tile-deck">{deck}</p>
   </div>
 </a>'''
 
@@ -129,17 +85,12 @@ TILE_MORTGAGE = tile(
     "https://www.zb.co.zw/diaspora-hub",
     "ZB_NEW_HOME_BUYERS.png",
     "Buying back home, on your terms.",
-    "25% deposit. Ten-year mortgage. ZB's diaspora plan, explained in plain English.",
 )
 
 FOOTER_AD = '''<aside class="zb-ad-footer" role="complementary" aria-label="Advertisement">
   <div class="zb-ad-footer-inner">
     <span class="zb-ad-label">Advertisement</span>
-    <div>
-      <p class="zb-ad-footer-eyebrow">ZB Bank · Banking, Insurance & Investments</p>
-      <h3>Built with the diaspora in mind — for you.</h3>
-      <p>Banking, mortgages, property and insurance designed for Zimbabweans living abroad. Talk to ZB about the services that fit your plans.</p>
-    </div>
+    <h3>Built with the diaspora in mind &mdash; for you.</h3>
     <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">Talk to ZB →</a>
   </div>
 </aside>'''
