@@ -229,6 +229,90 @@
 }
 .zb-ad-footer .zb-ad-cta:hover { background: var(--zb-green); color: #fff !important; }
 
+/* ── Story-rail ad chip (matches site's .story-thumb structure) ─── */
+.story-thumb.zb-rail-ad { position: relative; }
+.story-thumb.zb-rail-ad .story-chip {
+  background-color: var(--zb-paper-deep);
+  background-size: cover;
+  background-position: center top;
+}
+.story-thumb.zb-rail-ad .story-chip-label {
+  background: var(--zb-ink);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.story-thumb.zb-rail-ad::after {
+  content: "AD";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--zb-gold);
+  color: var(--zb-ink);
+  font-family: Inter, sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 5px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ── Mid-article horizontal banner (sits inside article-body) ───── */
+.zb-ad-midroll {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  margin: 28px 0;
+  background: #fff;
+  border-top: 4px solid var(--zb-green);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  overflow: hidden;
+  min-height: 200px;
+}
+@media (max-width: 640px) {
+  .zb-ad-midroll { grid-template-columns: 1fr; min-height: auto; }
+}
+.zb-ad-midroll .zb-ad-label {
+  position: absolute;
+  top: 12px;
+  left: 22px;
+  z-index: 2;
+}
+.zb-ad-midroll-copy {
+  padding: 32px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.zb-ad-midroll-headline {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.12;
+  color: var(--zb-ink);
+  margin: 16px 0 0;
+  max-width: 320px;
+}
+.zb-ad-midroll .zb-ad-cta { margin-top: 18px; }
+.zb-ad-midroll-image {
+  background-size: cover;
+  background-position: center top;
+  background-color: var(--zb-paper-deep);
+  min-height: 200px;
+}
+@media (max-width: 640px) {
+  .zb-ad-midroll-image { min-height: 240px; }
+}
+
 /* Sponsored article disclosure strip (inside ZB-authored articles) */
 .zb-sponsor-disclosure {
   background: var(--zb-paper);

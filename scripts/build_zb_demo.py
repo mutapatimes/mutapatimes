@@ -95,12 +95,32 @@ FOOTER_AD = '''<aside class="zb-ad-footer" role="complementary" aria-label="Adve
   </div>
 </aside>'''
 
+def midroll(headline, img, cta):
+    return f'''<aside class="zb-ad-midroll" role="complementary" aria-label="Advertisement">
+  <span class="zb-ad-label">Advertisement</span>
+  <div class="zb-ad-midroll-copy">
+    <h3 class="zb-ad-midroll-headline">{headline}</h3>
+    <a class="zb-ad-cta" href="https://www.zb.co.zw/diaspora-hub" target="_blank" rel="noopener sponsored">{cta}</a>
+  </div>
+  <div class="zb-ad-midroll-image" style="background-image:url('/img/uploads/zb_bank_demo_site/{img}')"></div>
+</aside>'''
+
+MIDROLL_ACCOUNT  = midroll("Banking in five currencies, from where you are.",
+                           "DIASPORA_CURRENT_ACCOUNT.png", "Open an account →")
+MIDROLL_MORTGAGE = midroll("A mortgage that knows you already.",
+                           "ZB_NEW_HOME_BUYERS.png", "Apply now →")
+MIDROLL_FUNERAL  = midroll("A fitting farewell, prepared.",
+                           "FUNERAL_ZB_BANK.png", "Get a quote →")
+MIDROLL_BUILD    = midroll("Build the house. We'll handle the bank.",
+                           "Homebuilding_zb_bank.png", "Speak to ZB →")
+
 
 # ── transforms ──────────────────────────────────────────────────────
 def head_inject(html: str, depth: int) -> str:
     rel = "" if depth == 0 else "../"
     inj = (f'<link rel="stylesheet" href="{rel}zb-ads.css">\n'
-           f'<script src="{rel}zb-gate.js" defer></script>')
+           f'<script src="{rel}zb-gate.js" defer></script>\n'
+           f'<script src="{rel}zb-rail-ads.js" defer></script>')
     return html.replace("</head>", inj + "\n</head>", 1)
 
 def body_inject(html: str) -> str:
@@ -224,19 +244,21 @@ def transform_articles(src: str) -> str:
     h = inject_before_subscribe(h, FOOTER_AD)
     return h
 
-def transform_article_detail(src: str, rail_html: str) -> str:
+def transform_article_detail(src: str, rail_html: str, midroll_html: str) -> str:
     h = src
     h = head_inject(h, depth=1)
     h = body_inject(h)
     h = rewrite_links(h)
-    # Top leaderboard goes after the masthead chrome but inside main flow.
-    # The article template doesn't have a dateHr at the same place; use a
-    # different anchor: between </header><main> we can't easily target. We
-    # instead inject a thin leaderboard before <main>.
+    # Top leaderboard above the article
     h = h.replace('<!-- Single article view -->',
                   LEADERBOARD + '\n  <!-- Single article view -->', 1)
-    # Float the rail ad inside the article body
+    # Right-floated rail ad inside the article body
     h = inject_top_of_article_body(h, rail_html)
+    # Mid-flow horizontal banner: after the article body, before the share
+    # row — sits at the bottom of the reading flow but still inside the
+    # article container.
+    h = h.replace('<div class="article-share">',
+                  midroll_html + '\n      <div class="article-share">', 1)
     # Footer banner before subscribe
     h = inject_before_subscribe(h, FOOTER_AD)
     return h
@@ -416,15 +438,22 @@ def main():
         (DEMO / out_name).write_text(out)
         print(f"  wrote zb-demo/{out_name}  ({len(out)//1024} KB)")
 
-    # Wire articles — cycle through a small set of rail ads so different
-    # articles show different ZB products.
-    rails = [RAIL_MORTGAGE, RAIL_ACCOUNT, RAIL_FUNERAL, RAIL_BUILD, RAIL_MORTGAGE]
+    # Wire articles — cycle through rail and midroll ads so different
+    # articles show different ZB products. Pairs are deliberately
+    # offset so the rail ad and the midroll ad on the same page aren't
+    # promoting the same product.
+    rails    = [RAIL_MORTGAGE, RAIL_ACCOUNT, RAIL_FUNERAL, RAIL_BUILD, RAIL_MORTGAGE]
+    midrolls = [MIDROLL_ACCOUNT, MIDROLL_FUNERAL, MIDROLL_BUILD, MIDROLL_ACCOUNT, MIDROLL_FUNERAL]
     for i, slug in enumerate(WIRE_SLUGS):
         src_path = ROOT / "articles" / f"{slug}.html"
         if not src_path.exists():
             print(f"  skip (missing wire): {slug}")
             continue
-        out = transform_article_detail(src_path.read_text(), rails[i % len(rails)])
+        out = transform_article_detail(
+            src_path.read_text(),
+            rails[i % len(rails)],
+            midrolls[i % len(midrolls)],
+        )
         (ART_DEMO / f"{slug}.html").write_text(out)
         print(f"  wrote zb-demo/articles/{slug}.html")
 
