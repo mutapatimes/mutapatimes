@@ -282,7 +282,6 @@ def sponsored_article(title: str, deck: str, slug: str, hero_img: str,
         <a target="_self" class="notranslate" href="/zb-demo/fx.html">FX</a>
         <a target="_self" class="notranslate" href="/zb-demo/property.html">Property</a>
         <a target="_self" class="notranslate" href="/jobs">Jobs</a>
-        <a target="_self" class="notranslate" href="/arts">Arts</a>
         <a target="_self" class="active notranslate" href="/zb-demo/articles.html">Articles</a>'''
     nav_pees = "\n      ".join(f"<p>{a.strip()}</p>" for a in nav_inner.strip().splitlines())
 
