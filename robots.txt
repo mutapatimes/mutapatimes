@@ -3,6 +3,10 @@
 # Allow crawling of all content
 User-agent: *
 Allow: /
+Disallow: /zb-demo/
+Disallow: /article.html
+Disallow: /article
+Disallow: /zb-demo
 
 Sitemap: https://www.mutapatimes.com/sitemap.xml
 Sitemap: https://www.mutapatimes.com/news-sitemap.xml

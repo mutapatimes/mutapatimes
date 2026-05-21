@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Auto-generate sitemap.xml and news-sitemap.xml for The Mutapa Times."""
 import glob
+import html
 import os
 import re
 from datetime import datetime, timezone, timedelta
@@ -165,7 +166,25 @@ def generate():
             if not m:
                 continue
             date_str = m.group(1)
-            title_part = m.group(2).replace("-", " ").strip()
+            # Read the real title from the rendered HTML — the slug is
+            # truncated for URL hygiene and reconstructing from it
+            # produces mid-word breaks ("...project-stu") and broken
+            # acronyms (".title()" turns "VFEX" into "Vfex").
+            news_title = None
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    head = f.read(4096)
+                t_match = re.search(r"<title>(.*?)</title>", head, re.IGNORECASE | re.DOTALL)
+                if t_match:
+                    # The rendered HTML already entity-encodes apostrophes
+                    # ("&#x27;"); unescape first so escape() below doesn't
+                    # double-encode to "&amp;#x27;".
+                    raw = html.unescape(t_match.group(1).strip())
+                    news_title = re.sub(r"\s*\|\s*The Mutapa Times\s*$", "", raw)
+            except IOError:
+                pass
+            if not news_title:
+                news_title = m.group(2).replace("-", " ").strip().title()
             loc = f"{BASE_URL}/news/{slug}"
             urls.append(
                 f"  <url>\n"
@@ -188,7 +207,7 @@ def generate():
                         f"        <news:language>en</news:language>\n"
                         f"      </news:publication>\n"
                         f"      <news:publication_date>{date_str}</news:publication_date>\n"
-                        f"      <news:title>{escape(title_part.title())}</news:title>\n"
+                        f"      <news:title>{escape(news_title)}</news:title>\n"
                         f"    </news:news>\n"
                         f"  </url>"
                     )

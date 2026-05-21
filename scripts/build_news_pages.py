@@ -50,11 +50,17 @@ def make_slug(article):
     if not date_part:
         date_part = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    # Slugify title
+    # Slugify title. Cap at 80 chars and cut on word boundary so we
+    # don't ship slugs like "...project-stu" (truncated "studio") — the
+    # mid-word break reads as spam and gets carried into the sitemap
+    # news:title by generate_sitemap.py.
     s = title.lower()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    if len(s) > 60:
-        s = s[:60].rstrip("-")
+    MAX_SLUG_LEN = 80
+    if len(s) > MAX_SLUG_LEN:
+        cut = s.rfind("-", 0, MAX_SLUG_LEN)
+        s = s[:cut] if cut > 30 else s[:MAX_SLUG_LEN]
+        s = s.rstrip("-")
     if not s:
         s = "news"
 
