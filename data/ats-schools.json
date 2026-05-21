@@ -1,0 +1,988 @@
+{
+  "source": "https://atszim.org/school-directory/ (Treweler map embed)",
+  "fetched": "2026-05-21",
+  "count": 64,
+  "schools": [
+    {
+      "ats_id": 137,
+      "name": "Ariel Primary School",
+      "lat": -17.8642101,
+      "lon": 31.2887058,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "ariel-primary-school",
+      "city": "Macheke",
+      "province": "Mashonaland East",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 152,
+      "name": "Arundel School",
+      "lat": -17.7636107,
+      "lon": 31.0410018,
+      "categories": [
+        "Day Scholar",
+        "Senior",
+        "Urban",
+        "Weekly Boarding"
+      ],
+      "slug": "arundel-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "Weekly boarding · Day",
+      "gender": ""
+    },
+    {
+      "ats_id": 170,
+      "name": "Bernard Mizeki College",
+      "lat": -18.1020998,
+      "lon": 31.5634462,
+      "categories": [
+        "Boarding",
+        "Boys"
+      ],
+      "slug": "bernard-mizeki-college",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": "Boys"
+    },
+    {
+      "ats_id": 169,
+      "name": "Bishopslea Preparatory School",
+      "lat": -17.821113,
+      "lon": 31.020947,
+      "categories": [
+        "Day Scholar",
+        "Girls",
+        "Primary",
+        "Urban",
+        "Weekly Boarding"
+      ],
+      "slug": "bishopslea-preparatory-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "Weekly boarding · Day",
+      "gender": "Girls"
+    },
+    {
+      "ats_id": 168,
+      "name": "Bryden Country School",
+      "lat": -18.1263503,
+      "lon": 30.1771912,
+      "categories": [
+        "Day Scholar",
+        "Primary",
+        "Weekly Boarding"
+      ],
+      "slug": "bryden-country-school",
+      "city": "Selous",
+      "province": "Mashonaland West",
+      "section": "Primary",
+      "boarding": "Weekly boarding · Day",
+      "gender": ""
+    },
+    {
+      "ats_id": 167,
+      "name": "Carmel Primary School",
+      "lat": -20.1452045,
+      "lon": 28.5930942,
+      "categories": [
+        "Day Scholar",
+        "Primary",
+        "Urban"
+      ],
+      "slug": "carmel-primary-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "Day",
+      "gender": ""
+    },
+    {
+      "ats_id": 166,
+      "name": "Centenary Primary School",
+      "lat": -20.146881,
+      "lon": 28.6474514,
+      "categories": [
+        "Day Scholar",
+        "Primary",
+        "Urban"
+      ],
+      "slug": "centenary-primary-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "Day",
+      "gender": ""
+    },
+    {
+      "ats_id": 176,
+      "name": "Chisipite Junior School",
+      "lat": -17.7887856,
+      "lon": 31.11996,
+      "categories": [
+        "Day Scholar",
+        "Primary",
+        "Urban"
+      ],
+      "slug": "chisipite-junior-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "Day",
+      "gender": ""
+    },
+    {
+      "ats_id": 165,
+      "name": "Chisipite Senior School",
+      "lat": -17.787866,
+      "lon": 31.121644,
+      "categories": [
+        "Day Scholar",
+        "Girls",
+        "Senior",
+        "Urban",
+        "Weekly Boarding"
+      ],
+      "slug": "chisipite-senior-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "Weekly boarding · Day",
+      "gender": "Girls"
+    },
+    {
+      "ats_id": 8499,
+      "name": "Christian Brothers' College",
+      "lat": -20.1593023534312,
+      "lon": 28.6835129269619,
+      "categories": [
+        "Boys"
+      ],
+      "slug": "christian-brothers-college",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "",
+      "boarding": "",
+      "gender": "Boys"
+    },
+    {
+      "ats_id": 8500,
+      "name": "Coalfields Primary School",
+      "lat": -18.3582275271583,
+      "lon": 26.5176735955071,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "coalfields-primary-school",
+      "city": "Hwange",
+      "province": "Matabeleland North",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8501,
+      "name": "Dominican Convent High School (Bulawayo)",
+      "lat": -17.8205824784825,
+      "lon": 31.055097581803,
+      "categories": [
+        "Girls"
+      ],
+      "slug": "dominican-convent-high-school-bulawayo",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "",
+      "gender": "Girls"
+    },
+    {
+      "ats_id": 8502,
+      "name": "Dominican Convent Primary School (Bulawayo)",
+      "lat": -20.1549265466205,
+      "lon": 28.5796621903302,
+      "categories": [
+        "Girls"
+      ],
+      "slug": "dominican-convent-primary-school-bulawayo",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "",
+      "boarding": "",
+      "gender": "Girls"
+    },
+    {
+      "ats_id": 8503,
+      "name": "Eaglesvale Junior School",
+      "lat": -17.8742349375519,
+      "lon": 30.9653296214469,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "eaglesvale-junior-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8504,
+      "name": "Eaglesvale Senior School",
+      "lat": -17.8742349375519,
+      "lon": 30.9653296214469,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "eaglesvale-senior-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8505,
+      "name": "Falcon College",
+      "lat": -20.2070822605734,
+      "lon": 28.9660477835168,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "falcon-college",
+      "city": "Esigodini",
+      "province": "Matabeleland South",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8506,
+      "name": "Gateway High School",
+      "lat": -17.7599130275681,
+      "lon": 31.0307804369233,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "gateway-high-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8507,
+      "name": "Gateway Primary School",
+      "lat": -17.7671903143627,
+      "lon": 31.0291606669744,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "gateway-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8508,
+      "name": "Girls' College",
+      "lat": -20.1665164841938,
+      "lon": 28.603119565891,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "girls-college",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8509,
+      "name": "Goldridge College",
+      "lat": -18.9416337595638,
+      "lon": 29.8211812448794,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "goldridge-college",
+      "city": "Kwekwe",
+      "province": "Midlands",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8510,
+      "name": "Goldridge Primary School",
+      "lat": -18.9377015574188,
+      "lon": 29.8217000596489,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "goldridge-primary-school",
+      "city": "Kwekwe",
+      "province": "Midlands",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8511,
+      "name": "Hartmann House Preparatory",
+      "lat": -17.8035998893994,
+      "lon": 31.0586194062421,
+      "categories": [
+        "Boys"
+      ],
+      "slug": "hartmann-house-preparatory",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "",
+      "gender": "Boys"
+    },
+    {
+      "ats_id": 8512,
+      "name": "Hellenic Academy",
+      "lat": -17.7819200848198,
+      "lon": 31.0729696385399,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "hellenic-academy",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8513,
+      "name": "Hellenic Primary School",
+      "lat": -17.7854041784284,
+      "lon": 31.0734600909827,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "hellenic-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8514,
+      "name": "Hillcrest College",
+      "lat": -18.9220989717391,
+      "lon": 32.6469253755608,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "hillcrest-college",
+      "city": "Mutare",
+      "province": "Manicaland",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8515,
+      "name": "Hillcrest Preparatory School",
+      "lat": -18.9203401638361,
+      "lon": 32.6445714215828,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "hillcrest-preparatory-school",
+      "city": "Mutare",
+      "province": "Manicaland",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8516,
+      "name": "Hippo Valley Estates Primary School",
+      "lat": -20.8278144031771,
+      "lon": 31.5313497337508,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "hippo-valley-estates-primary-school",
+      "city": "Chiredzi",
+      "province": "Masvingo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8517,
+      "name": "Kyle College",
+      "lat": -20.0508837754521,
+      "lon": 30.8474556369235,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "kyle-college",
+      "city": "Masvingo",
+      "province": "Masvingo",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8518,
+      "name": "Kyle Preparatory School",
+      "lat": -20.045134993078,
+      "lon": 30.8472992516929,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "kyle-preparatory-school",
+      "city": "Masvingo",
+      "province": "Masvingo",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8519,
+      "name": "Lendy Park Primary School",
+      "lat": -18.2213473926258,
+      "lon": 31.5256074432726,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "lendy-park-primary-school",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8520,
+      "name": "Lilfordia School",
+      "lat": -17.7336900814219,
+      "lon": 30.8354001980602,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "lilfordia-school",
+      "city": "Norton",
+      "province": "Mashonaland West",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8521,
+      "name": "Lomagundi College",
+      "lat": -17.3245029270803,
+      "lon": 30.1419674443082,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "lomagundi-college",
+      "city": "Chinhoyi",
+      "province": "Mashonaland West",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8522,
+      "name": "Lomagundi College Primary School",
+      "lat": -17.324785463289,
+      "lon": 30.1407029833622,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "lomagundi-college-primary-school",
+      "city": "Chinhoyi",
+      "province": "Mashonaland West",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8523,
+      "name": "Lusitania Primary School",
+      "lat": -17.8328853704265,
+      "lon": 31.132832525535,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "lusitania-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8524,
+      "name": "Masiyephambili College",
+      "lat": -20.2059972062895,
+      "lon": 28.5732326312735,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "masiyephambili-college",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8525,
+      "name": "Masiyephambili Junior School",
+      "lat": -20.1698244731052,
+      "lon": 28.6419095931539,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "masiyephambili-junior-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8526,
+      "name": "Midlands Christian College",
+      "lat": -19.4253261177945,
+      "lon": 29.8275913770949,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "midlands-christian-college",
+      "city": "Gweru",
+      "province": "Midlands",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 317093,
+      "name": "Midlands Christian School",
+      "lat": -19.4226802,
+      "lon": 29.8230841,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "midlands-christian-school",
+      "city": "Gweru",
+      "province": "Midlands",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8527,
+      "name": "Mubeena Ebrahim Primary School",
+      "lat": -17.8122919818247,
+      "lon": 31.0220537098217,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "mubeena-ebrahim-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8528,
+      "name": "Murray Macdougall School",
+      "lat": -21.0322958844331,
+      "lon": 31.4498877036103,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "murray-macdougall-school",
+      "city": "Triangle",
+      "province": "Masvingo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8529,
+      "name": "Mvurachena Primary School",
+      "lat": -20.1085057669719,
+      "lon": 32.7015568812317,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "mvurachena-primary-school",
+      "city": "Chimanimani",
+      "province": "Manicaland",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8530,
+      "name": "Peterhouse Boys",
+      "lat": -18.1971187741919,
+      "lon": 31.6257046982862,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "peterhouse-boys",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8531,
+      "name": "Peterhouse Girls",
+      "lat": -18.1971187741919,
+      "lon": 31.6257046982862,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "peterhouse-girls",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8532,
+      "name": "Petra College Junior School",
+      "lat": -20.1786883151955,
+      "lon": 28.6336631237387,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "petra-college-junior-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8533,
+      "name": "Petra College Senior School",
+      "lat": -20.1739103774198,
+      "lon": 28.6387423785661,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "petra-college-senior-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8534,
+      "name": "Portland Primary School",
+      "lat": -20.9283450559391,
+      "lon": 29.0119609264417,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "portland-primary-school",
+      "city": "Plumtree",
+      "province": "Matabeleland South",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8535,
+      "name": "Riverside Stimulation Centre",
+      "lat": -20.2113465746679,
+      "lon": 28.6616557358773,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "riverside-stimulation-centre",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8536,
+      "name": "Ruzawi School",
+      "lat": -18.234348434791,
+      "lon": 31.5580561050996,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "ruzawi-school",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8537,
+      "name": "Rydings School",
+      "lat": -16.7879766327791,
+      "lon": 29.6398580056709,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "rydings-school",
+      "city": "Karoi",
+      "province": "Mashonaland West",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8538,
+      "name": "Sharon School",
+      "lat": -17.8002127092171,
+      "lon": 31.0479634241867,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "sharon-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8539,
+      "name": "South Eastern College",
+      "lat": -20.994038505353,
+      "lon": 31.769372896852,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "south-eastern-college",
+      "city": "Chiredzi",
+      "province": "Masvingo",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8540,
+      "name": "Springvale House",
+      "lat": -18.1722452437162,
+      "lon": 31.6352816783393,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "springvale-house",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8541,
+      "name": "St John's College",
+      "lat": -17.764387,
+      "lon": 31.1130382,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "st-john-s-college",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8542,
+      "name": "St Michael's Presentation Primary School",
+      "lat": -17.7699745,
+      "lon": 31.0931676,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "st-michael-s-presentation-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 8544,
+      "name": "St. George's College",
+      "lat": -17.8038806100987,
+      "lon": 31.0586558215828,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "st-george-s-college",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 8545,
+      "name": "St. John's Preparatory School",
+      "lat": -17.7637126584751,
+      "lon": 31.1150981363522,
+      "categories": [
+        "Boys"
+      ],
+      "slug": "st-john-s-preparatory-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "",
+      "boarding": "",
+      "gender": "Boys"
+    },
+    {
+      "ats_id": 8546,
+      "name": "St. Thomas Aquinas",
+      "lat": -20.1458939033009,
+      "lon": 28.6240936073171,
+      "categories": [
+        "Boarding"
+      ],
+      "slug": "st-thomas-aquinas",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 317096,
+      "name": "Twin Rivers Primary School",
+      "lat": -17.794826,
+      "lon": 31.0401283,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "twin-rivers-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 317098,
+      "name": "Tynwald Primary School",
+      "lat": -17.8143427,
+      "lon": 30.9810936,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "tynwald-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 317100,
+      "name": "Victoria Falls Primary School",
+      "lat": -17.9337168,
+      "lon": 25.8186245,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "victoria-falls-primary-school",
+      "city": "Victoria Falls",
+      "province": "Matabeleland North",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 317102,
+      "name": "Watershed College",
+      "lat": -18.1617028,
+      "lon": 31.4961459,
+      "categories": [
+        "Boarding",
+        "Senior"
+      ],
+      "slug": "watershed-college",
+      "city": "Marondera",
+      "province": "Mashonaland East",
+      "section": "Senior",
+      "boarding": "Boarding",
+      "gender": ""
+    },
+    {
+      "ats_id": 317104,
+      "name": "Westridge High School",
+      "lat": -17.8406011,
+      "lon": 31.0111964,
+      "categories": [
+        "Senior"
+      ],
+      "slug": "westridge-high-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Senior",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 317107,
+      "name": "Westridge Primary School",
+      "lat": -17.8398095,
+      "lon": 31.0144472,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "westridge-primary-school",
+      "city": "Harare",
+      "province": "Harare",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    },
+    {
+      "ats_id": 317110,
+      "name": "Whitestone School",
+      "lat": -20.2114992,
+      "lon": 28.6170756,
+      "categories": [
+        "Primary"
+      ],
+      "slug": "whitestone-school",
+      "city": "Bulawayo",
+      "province": "Bulawayo",
+      "section": "Primary",
+      "boarding": "",
+      "gender": ""
+    }
+  ]
+}
