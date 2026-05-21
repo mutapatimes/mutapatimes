@@ -93,51 +93,12 @@ def wrap_text(text, font, max_width, draw):
 
 # ── The canonical headline card ───────────────────────────
 def render_headline_card(headline, source, output_path, color_idx=0):
-    """1080x1350 portrait halftone editorial card on butter cream.
+    """1080x1350 portrait text-only headline card on butter cream.
 
-    Delegates to the halftone pipeline in build_halftone_trial.py: small
-    italic masthead top-left, source as the section tag top-right (red
-    accent), an AI-halftone hero image in the middle, the headline in
-    bold serif beneath it, and a discreet MUTAPATIMES.COM footer.
-
-    If Pollinations is unreachable or the image gen fails for any reason,
-    falls back to the text-only butter card (kept as _render_text_fallback
-    below) so the build pipeline never blocks on an external API.
+    Single source of truth for all auto-generated social cards (feed
+    cards, Metricool CSV, OG previews). No external image generation,
+    no API calls — renders fully offline from the headline string.
     """
-    slug = os.path.splitext(os.path.basename(output_path))[0]
-
-    # Section tag in the trial card is small, top-right, red accent —
-    # the publication name fits there as natural attribution. Cap length
-    # so very long source names don't overlap the masthead.
-    section = (source or "Zimbabwe").upper().strip()
-    if len(section) > 24:
-        section = section[:23] + "…"
-
-    trial = {
-        "slug": slug,
-        "title": headline,
-        "section": section,
-        # No standfirst on news cards — the headline carries the weight,
-        # and the trial's render_card handles an empty deck gracefully.
-        "deck": "",
-    }
-
-    try:
-        # Import here so card_lib doesn't pull requests/Pollinations into
-        # contexts that only need the text fallback (and so existing
-        # callers don't break if the trial script is missing).
-        from build_halftone_trial import render_card as render_halftone_card
-        render_halftone_card(trial, output_path, paper=BUTTER)
-    except Exception as e:
-        print(f"  WARN: halftone render failed for {slug} ({e}); "
-              "falling back to text card")
-        _render_text_fallback(headline, source, output_path, color_idx)
-
-
-def _render_text_fallback(headline, source, output_path, color_idx=0):
-    """Text-only butter card. Pre-halftone fallback, kept only for the
-    case where Pollinations is unreachable mid-build. Same chrome as
-    the legacy renderer so failed-halftone cards still look on-brand."""
     bg = card_bg(color_idx)
     img = Image.new("RGB", (CARD_W, CARD_H), bg)
     draw = ImageDraw.Draw(img)
