@@ -33,6 +33,17 @@ GUIDES = [
             "Most arrive on a visa on arrival at Harare or Victoria Falls. What it costs, "
             "what to bring, and how to avoid the overstay trap."
         ),
+        "quick_facts": [
+            ("Cost", "US$55 single / US$70 double"),
+            ("Stay", "30 days standard"),
+            ("Payment", "US dollars, small notes"),
+            ("Where", "At the airport on arrival"),
+        ],
+        "callout": (
+            "Overstaying is treated harshly. The FCDO records deportations every "
+            "year over a single day's overstay — and a deportation flag follows you "
+            "into every subsequent visa application."
+        ),
         "standfirst": (
             "The Zimbabwean Embassy in London no longer issues visas. Almost every "
             "British visitor now arrives on the visa on arrival service at Harare or "
@@ -131,6 +142,17 @@ GUIDES = [
             "Zimbabwe and the UK have no reciprocal NHS agreement. UK travel insurance "
             "does not cover residents. A guide to the four main medical aid providers, "
             "the South Africa evacuation question, and what to budget."
+        ),
+        "quick_facts": [
+            ("NHS reciprocal", "None"),
+            ("Main providers", "Cimas, Health International, Masca, Generation Health"),
+            ("Payment", "Often US$ cash, even at private clinics"),
+            ("Evacuation", "Cover for South Africa is essential"),
+        ],
+        "callout": (
+            "If your medical aid plan does not include cross-border evacuation to "
+            "South Africa, you are effectively uninsured for any serious trauma or "
+            "complex surgery. Bills run in the tens of thousands of US dollars."
         ),
         "standfirst": (
             "There is no NHS reciprocal arrangement with Zimbabwe, and standard UK "
@@ -231,6 +253,17 @@ GUIDES = [
             "Most Zimbabwean private schools follow the Cambridge or ZIMSEC curriculum. "
             "What British families need to know about the IB option, the French school, "
             "boarding schools, fees and term calendars."
+        ),
+        "quick_facts": [
+            ("Curricula", "ZIMSEC, Cambridge, IB"),
+            ("IB option", "Harare International School"),
+            ("Calendar", "NH (HIS) or SH (most others)"),
+            ("Fees", "Quoted in US dollars, verify directly"),
+        ],
+        "callout": (
+            "Fees change frequently and are not always advertised. Verify the current "
+            "term's quoted fee directly with each school before agreeing relocation "
+            "terms with a UK employer."
         ),
         "standfirst": (
             "Zimbabwe's private school system is one of the practical reasons British "
@@ -334,6 +367,17 @@ GUIDES = [
             "alongside, and both use the dollar sign. A practical guide to currency, "
             "cards, money transfer and bank accounts for British arrivals."
         ),
+        "quick_facts": [
+            ("Primary tender", "Zimbabwe Gold (ZiG)"),
+            ("Also accepted", "US dollars (cash)"),
+            ("Cards", "Limited beyond big chains"),
+            ("Transfer", "Mukuru, Western Union"),
+        ],
+        "callout": (
+            "It is illegal to exchange foreign currency in Zimbabwe anywhere other "
+            "than at a licensed dealer. The street-side rate is occasionally better "
+            "than the official one. Don't be tempted — fines and confiscation follow."
+        ),
         "standfirst": (
             "Zimbabwe runs a dual-currency economy. The Zimbabwe Gold (ZiG) is the "
             "primary legal tender, but US dollars circulate alongside it for most "
@@ -418,6 +462,17 @@ GUIDES = [
             "You can drive in Zimbabwe on a UK or International Driving Permit for "
             "12 months, then you need a Zimbabwean licence from CVR. The 12-month "
             "rule, vehicle import, and what to watch on the road."
+        ),
+        "quick_facts": [
+            ("Foreign licence valid", "12 months from entry"),
+            ("After that", "Zimbabwean licence from CVR"),
+            ("Side", "Drives on the left (same as UK)"),
+            ("Insurance", "Third-party compulsory"),
+        ],
+        "callout": (
+            "The 12-month clock runs from your entry date, not from the day you "
+            "decided to stay. Start the CVR conversion process by month nine to "
+            "comfortably finish in time."
         ),
         "standfirst": (
             "British arrivals can drive in Zimbabwe on their existing UK licence for "
@@ -599,65 +654,136 @@ def render_head(title, description, canonical_path):
 <script type="application/ld+json">{json.dumps(schema_article, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(breadcrumb, ensure_ascii=False)}</script>
 <style>
-.uk-guide-header {{ margin: 2rem 0 2.5rem; }}
-.uk-guide-eyebrow {{ font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;
-  color: #6b6b6b; margin: 0 0 0.75rem; font-family: 'Inter', sans-serif; }}
-.uk-guide-title {{ font-family: 'Playfair Display', serif; font-size: 2.4rem; line-height: 1.15;
-  margin: 0 0 1rem; font-weight: 700; }}
-.uk-guide-standfirst {{ font-family: 'Playfair Display', serif; font-style: italic;
-  font-size: 1.25rem; line-height: 1.45; color: #333; margin: 0; max-width: 38em; }}
-.uk-guide-body h2 {{ font-family: 'Playfair Display', serif; font-size: 1.5rem;
-  margin: 2.5rem 0 1rem; font-weight: 700; }}
-.uk-guide-body p {{ font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.65;
-  max-width: 38em; margin: 0 0 1rem; }}
-.uk-guide-body ul {{ font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.65;
-  max-width: 38em; margin: 0 0 1.25rem; padding-left: 1.25rem; }}
-.uk-guide-body li {{ margin-bottom: 0.4rem; }}
-.uk-guide-body a {{ color: #1a4a8a; text-decoration: underline; }}
-.uk-guide-body .contact-block {{ background: #f7f5ef; border-left: 3px solid #1a1a1a;
-  padding: 1rem 1.25rem; margin: 1.5rem 0; max-width: 38em; }}
-.uk-guide-body .contact-block p {{ margin: 0; font-size: 0.95rem; line-height: 1.5; }}
-.uk-guide-sources {{ margin: 3rem 0 2rem; padding: 1.5rem; background: #f7f5ef;
-  max-width: 38em; }}
-.uk-guide-sources h2 {{ font-size: 1.1rem; margin: 0 0 0.75rem; font-family: 'Inter', sans-serif;
-  text-transform: uppercase; letter-spacing: 0.08em; }}
-.uk-guide-sources ul {{ margin: 0 0 1rem; padding-left: 1.25rem; font-family: 'Inter', sans-serif;
-  font-size: 0.92rem; }}
-.uk-guide-sources-note {{ font-family: 'Inter', sans-serif; font-size: 0.82rem;
-  color: #666; line-height: 1.5; margin: 0; font-style: italic; }}
-.uk-guide-siblings {{ margin: 2.5rem 0; padding: 1.5rem; border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd; max-width: 38em; }}
-.uk-guide-siblings-eyebrow {{ font-size: 0.8rem; letter-spacing: 0.12em;
-  text-transform: uppercase; color: #6b6b6b; margin: 0 0 0.75rem;
+:root {{
+  --uk-paper: #f5e8c8;
+  --uk-paper-deep: #ede0ba;
+  --uk-ink: #1a1410;
+  --uk-ink-muted: #54483c;
+  --uk-accent: #b73e2a;
+  --uk-rule: #d8c9a4;
+}}
+.uk-page {{ background: var(--uk-paper); color: var(--uk-ink); }}
+.uk-page .paper {{ background: transparent; }}
+.uk-shell {{ max-width: 1200px; margin: 0 auto; padding: 0; }}
+.uk-hero {{ position: relative; width: 100%; background: var(--uk-paper); margin: 0; }}
+.uk-hero img {{ width: 100%; height: auto; display: block; }}
+.uk-hero-meta {{ display: flex; justify-content: space-between; align-items: baseline;
+  padding: 1rem 2rem 0; font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--uk-ink-muted); }}
+.uk-hero-meta .uk-section-tag {{ color: var(--uk-accent); font-weight: 700; }}
+.uk-titleblock {{ max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 1.5rem;
+  text-align: center; }}
+.uk-title {{ font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.1; margin: 0 0 1.25rem;
+  color: var(--uk-ink); letter-spacing: -0.01em; }}
+.uk-standfirst {{ font-family: 'Playfair Display', serif; font-style: italic;
+  font-weight: 400; font-size: clamp(1.05rem, 1.8vw, 1.35rem); line-height: 1.5;
+  color: var(--uk-ink-muted); margin: 0 auto; max-width: 36em; }}
+.uk-rule {{ width: 60px; height: 3px; background: var(--uk-accent); border: 0;
+  margin: 1.75rem auto 0; }}
+.uk-quickfacts {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; max-width: 1100px; margin: 2.5rem auto; border-top: 1px solid var(--uk-rule);
+  border-bottom: 1px solid var(--uk-rule); }}
+.uk-fact {{ padding: 1.25rem 1.5rem; border-right: 1px solid var(--uk-rule);
+  text-align: left; }}
+.uk-fact:last-child {{ border-right: 0; }}
+.uk-fact-label {{ font-family: 'Inter', sans-serif; font-size: 0.7rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--uk-ink-muted);
+  margin: 0 0 0.45rem; }}
+.uk-fact-value {{ font-family: 'Playfair Display', serif; font-size: 1.1rem;
+  line-height: 1.3; color: var(--uk-ink); margin: 0; font-weight: 700; }}
+.uk-prose {{ max-width: 640px; margin: 0 auto; padding: 0 1.5rem 3rem;
   font-family: 'Inter', sans-serif; }}
-.uk-guide-siblings ul {{ margin: 0 0 1rem; padding-left: 1.25rem; font-family: 'Inter', sans-serif; }}
-.uk-guide-siblings-back {{ margin: 0; font-family: 'Inter', sans-serif; font-size: 0.92rem; }}
-.uk-guide-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem; margin: 2rem 0; }}
-.uk-guide-card {{ display: block; padding: 1.25rem 1.25rem 1.5rem; background: #f7f5ef;
-  border: 1px solid #e5e1d6; text-decoration: none; color: inherit; transition: transform 0.15s ease; }}
-.uk-guide-card:hover {{ transform: translateY(-2px); text-decoration: none; }}
-.uk-guide-card h3 {{ font-family: 'Playfair Display', serif; font-size: 1.2rem;
-  margin: 0 0 0.5rem; line-height: 1.25; }}
-.uk-guide-card p {{ font-family: 'Inter', sans-serif; font-size: 0.92rem;
-  line-height: 1.45; color: #444; margin: 0 0 0.75rem; }}
-.uk-guide-card-read {{ font-family: 'Inter', sans-serif; font-size: 0.85rem;
-  color: #1a4a8a; font-weight: 600; }}
-.uk-guide-about, .uk-guide-subscribe {{ margin: 2.5rem 0; padding-top: 1.5rem;
-  border-top: 1px solid #ddd; max-width: 38em; }}
-.uk-guide-about h2, .uk-guide-subscribe h2 {{ font-family: 'Playfair Display', serif;
-  font-size: 1.3rem; margin: 0 0 0.75rem; }}
-.uk-guide-about p, .uk-guide-subscribe p {{ font-family: 'Inter', sans-serif;
-  font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem; }}
+.uk-prose h2 {{ font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 1.65rem; line-height: 1.2; margin: 3rem 0 1rem; color: var(--uk-ink);
+  position: relative; padding-left: 0; }}
+.uk-prose h2::before {{ content: ''; display: block; width: 32px; height: 2px;
+  background: var(--uk-accent); margin-bottom: 0.75rem; }}
+.uk-prose p {{ font-size: 1.05rem; line-height: 1.7; color: var(--uk-ink);
+  margin: 0 0 1.1rem; }}
+.uk-prose ul {{ font-size: 1.05rem; line-height: 1.7; margin: 0 0 1.25rem;
+  padding-left: 1.25rem; }}
+.uk-prose li {{ margin-bottom: 0.5rem; }}
+.uk-prose a {{ color: var(--uk-accent); text-decoration: none;
+  border-bottom: 1px solid currentColor; }}
+.uk-prose a:hover {{ color: var(--uk-ink); }}
+.uk-prose strong {{ color: var(--uk-ink); }}
+.uk-prose .contact-block {{ background: var(--uk-paper-deep); padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0; border-left: 3px solid var(--uk-accent); }}
+.uk-prose .contact-block p {{ margin: 0; font-size: 0.97rem; line-height: 1.55; }}
+.uk-callout {{ max-width: 780px; margin: 3rem auto; padding: 2rem 2.5rem;
+  background: var(--uk-ink); color: var(--uk-paper); position: relative; }}
+.uk-callout-label {{ font-family: 'Inter', sans-serif; font-size: 0.72rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--uk-accent);
+  font-weight: 700; margin: 0 0 0.75rem; }}
+.uk-callout p {{ font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 1.25rem; line-height: 1.45; margin: 0; color: var(--uk-paper); }}
+.uk-sources {{ max-width: 640px; margin: 3rem auto 1rem; padding: 1.75rem 1.5rem;
+  border-top: 2px solid var(--uk-ink); }}
+.uk-sources h2 {{ font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 1rem;
+  color: var(--uk-ink-muted); font-weight: 700; }}
+.uk-sources ul {{ font-family: 'Inter', sans-serif; font-size: 0.95rem;
+  margin: 0 0 1rem; padding-left: 1.25rem; line-height: 1.55; }}
+.uk-sources a {{ color: var(--uk-ink); border-bottom: 1px solid var(--uk-rule); }}
+.uk-sources-note {{ font-family: 'Inter', sans-serif; font-style: italic;
+  font-size: 0.82rem; color: var(--uk-ink-muted); margin: 0; line-height: 1.55; }}
+.uk-siblings {{ max-width: 1100px; margin: 3rem auto 4rem; padding: 0 1.5rem; }}
+.uk-siblings-eyebrow {{ font-family: 'Inter', sans-serif; font-size: 0.72rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--uk-ink-muted);
+  margin: 0 0 1.25rem; font-weight: 700; text-align: center; }}
+.uk-siblings-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem; }}
+.uk-sibling-card {{ display: block; text-decoration: none; color: inherit;
+  transition: transform 0.2s ease; }}
+.uk-sibling-card:hover {{ transform: translateY(-3px); text-decoration: none;
+  color: inherit; }}
+.uk-sibling-card img {{ width: 100%; aspect-ratio: 16/9; object-fit: cover;
+  display: block; margin-bottom: 0.85rem; }}
+.uk-sibling-card h3 {{ font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 1.1rem; line-height: 1.25; margin: 0; color: var(--uk-ink); }}
+.uk-siblings-back {{ text-align: center; margin: 2rem 0 0; }}
+.uk-siblings-back a {{ font-family: 'Inter', sans-serif; font-size: 0.9rem;
+  color: var(--uk-ink); border-bottom: 1px solid var(--uk-accent);
+  text-decoration: none; padding-bottom: 2px; }}
+/* Hub-specific */
+.uk-hub-intro {{ max-width: 720px; margin: 0 auto 3rem; text-align: center; padding: 0 1.5rem; }}
+.uk-hub-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem; max-width: 1100px; margin: 0 auto 4rem; padding: 0 1.5rem; }}
+.uk-hub-card {{ display: block; text-decoration: none; color: inherit;
+  transition: transform 0.2s ease; }}
+.uk-hub-card:hover {{ transform: translateY(-3px); text-decoration: none;
+  color: inherit; }}
+.uk-hub-card img {{ width: 100%; aspect-ratio: 16/9; object-fit: cover;
+  display: block; margin-bottom: 1rem; }}
+.uk-hub-card-eyebrow {{ font-family: 'Inter', sans-serif; font-size: 0.7rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--uk-accent);
+  margin: 0 0 0.4rem; font-weight: 700; }}
+.uk-hub-card h3 {{ font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 1.4rem; line-height: 1.2; margin: 0 0 0.6rem; color: var(--uk-ink); }}
+.uk-hub-card p {{ font-family: 'Inter', sans-serif; font-size: 0.95rem;
+  line-height: 1.55; color: var(--uk-ink-muted); margin: 0; }}
+.uk-hub-coda {{ max-width: 640px; margin: 4rem auto; padding: 2rem 1.5rem;
+  border-top: 2px solid var(--uk-ink); font-family: 'Inter', sans-serif; }}
+.uk-hub-coda h2 {{ font-family: 'Playfair Display', serif; font-size: 1.4rem;
+  margin: 0 0 0.75rem; color: var(--uk-ink); }}
+.uk-hub-coda p {{ font-size: 0.97rem; line-height: 1.65; color: var(--uk-ink);
+  margin: 0 0 0.85rem; }}
+.uk-hub-coda a {{ color: var(--uk-accent); }}
 @media (max-width: 640px) {{
-  .uk-guide-title {{ font-size: 1.8rem; }}
-  .uk-guide-standfirst {{ font-size: 1.1rem; }}
+  .uk-titleblock {{ padding: 1.75rem 1.5rem 1rem; }}
+  .uk-quickfacts {{ grid-template-columns: 1fr 1fr; }}
+  .uk-fact {{ border-bottom: 1px solid var(--uk-rule); }}
+  .uk-fact:nth-child(2n) {{ border-right: 0; }}
+  .uk-fact:nth-last-child(-n+2) {{ border-bottom: 0; }}
+  .uk-callout {{ padding: 1.5rem; }}
+  .uk-callout p {{ font-size: 1.1rem; }}
 }}
 </style>
 </head>"""
 
 
-NAV_BLOCK = """<body class="longform-page">
+NAV_BLOCK = """<body class="longform-page uk-page">
 <div class="topbar" id="topbar" aria-label="Sticky navigation">
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -665,40 +791,23 @@ NAV_BLOCK = """<body class="longform-page">
   <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
-<div class="paper">
-  <a href="/" class="title-link">
-    <div class="titleDiv"><h1 class="title notranslate">THE MUTAPA TIMES</h1></div>
-    <h4 class="sub notranslate">Zimbabwe outside-in.</h4>
-  </a>
-  <nav id="mainNav">
-    <p><a target="_self" class="notranslate" href="/">News</a></p>
-    <p><a target="_self" class="economy-btn" href="/economy">Live Economy Data</a></p>
-    <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
-    <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-    <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-    <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
-  </nav>
-  <hr class="topHr">
-  <hr class="bottomHr">
-  <hr class="dateHr">
 """
 
 
 FOOTER_BLOCK = """
-</div>
 <footer class="atlantic-foot">
   <div class="atlantic-foot-inner">
     <div class="atlantic-foot-fine">
+      <a href="/">News</a><span class="sep">·</span>
+      <a href="/moving-to-zimbabwe/">UK guide</a><span class="sep">·</span>
       <a href="/authors/">Masthead</a><span class="sep">·</span>
       <a href="/privacy">Privacy</a><span class="sep">·</span>
       <a href="/terms">Terms</a><span class="sep">·</span>
-      <a href="/advertising">Advertising guidelines</a><span class="sep">·</span>
       <a href="mailto:news@mutapatimes.com">Contact</a>
     </div>
     <p class="atlantic-foot-copy">&copy; 2020&ndash;2026 The Mutapa Times. All rights reserved. Operated from the United Kingdom.</p>
   </div>
 </footer>
-<script defer src="../js/nav.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -711,82 +820,112 @@ FOOTER_BLOCK = """
 """
 
 
-def render_sibling_nav(current_slug):
-    """List of the other guides + a back-to-hub link."""
-    siblings = [g for g in GUIDES if g["slug"] != current_slug]
+def render_quickfacts(quick_facts):
     items = "\n".join(
-        f'      <li><a href="./{g["slug"]}.html">{esc(g["h1"])}</a></li>'
+        f"""        <div class="uk-fact">
+          <p class="uk-fact-label">{esc(label)}</p>
+          <p class="uk-fact-value">{esc(value)}</p>
+        </div>"""
+        for label, value in quick_facts
+    )
+    return f"""    <div class="uk-quickfacts" role="list">
+{items}
+    </div>"""
+
+
+def render_callout(text):
+    return f"""    <aside class="uk-callout" aria-label="Key warning">
+      <p class="uk-callout-label">Watch out</p>
+      <p>{text}</p>
+    </aside>"""
+
+
+def render_sibling_nav(current_slug):
+    """Sibling cards with hero thumbnails — visual, not a bullet list."""
+    siblings = [g for g in GUIDES if g["slug"] != current_slug]
+    cards = "\n".join(
+        f"""        <a class="uk-sibling-card" href="./{g["slug"]}.html">
+          <img src="../img/uk-guide/{g["slug"]}.png" alt="" loading="lazy">
+          <h3>{esc(g["h1"])}</h3>
+        </a>"""
         for g in siblings
     )
-    return f"""
-    <aside class="uk-guide-siblings" aria-label="Related guides">
-      <p class="uk-guide-siblings-eyebrow">More in this guide</p>
-      <ul>
-{items}
-      </ul>
-      <p class="uk-guide-siblings-back"><a href="./">&larr; Back to Moving to Zimbabwe</a></p>
-    </aside>
-"""
+    return f"""    <section class="uk-siblings" aria-label="Related guides">
+      <p class="uk-siblings-eyebrow">More in this guide</p>
+      <div class="uk-siblings-grid">
+{cards}
+      </div>
+      <p class="uk-siblings-back"><a href="./">&larr; Back to Moving to Zimbabwe</a></p>
+    </section>"""
 
 
 def render_sources(sources):
-    """Sources / further reading block at the foot of each guide."""
     items = "\n".join(
-        f'      <li><a href="{esc(href)}" rel="noopener" target="_blank">{esc(label)}</a></li>'
+        f'        <li><a href="{esc(href)}" rel="noopener" target="_blank">{esc(label)}</a></li>'
         for label, href in sources
     )
-    return f"""
-    <section class="uk-guide-sources" aria-label="Sources and further reading">
-      <h2>Sources and further reading</h2>
+    return f"""    <section class="uk-sources" aria-label="Sources and further reading">
+      <h2>Sources &amp; further reading</h2>
       <ul>
 {items}
       </ul>
-      <p class="uk-guide-sources-note">Fees, fees schedules and contact details are
-      current as of the FCDO's June 2024 guidance and may have changed. Verify
-      directly with the relevant authority before acting on anything in this
-      guide.</p>
-    </section>
-"""
+      <p class="uk-sources-note">Fees and contact details are current as of the
+      FCDO's June 2024 guidance and may have changed. Verify directly with the
+      relevant authority before acting on anything in this guide.</p>
+    </section>"""
 
 
 def render_guide(guide):
     """Render a single guide page."""
     canonical_path = f"/moving-to-zimbabwe/{guide['slug']}.html"
-    sections_html = "\n".join(
-        f"      <h2>{esc(heading)}</h2>\n      {body}"
-        for heading, body in guide["sections"]
-    )
+    # Drop section #3 into a "callout interrupt" for visual rhythm: prose,
+    # prose, prose, callout, prose, prose, sources, siblings.
+    sections = guide["sections"]
+    callout_after = min(2, len(sections) - 1)
+    sections_html_pieces = []
+    for i, (heading, body) in enumerate(sections):
+        sections_html_pieces.append(
+            f"      <h2>{esc(heading)}</h2>\n      {body}"
+        )
+        if i == callout_after and guide.get("callout"):
+            sections_html_pieces.append(render_callout(guide["callout"]))
+    sections_html = "\n".join(sections_html_pieces)
+    quickfacts_html = render_quickfacts(guide["quick_facts"])
     head = render_head(guide["h1"], guide["description"], canonical_path)
     return (
         head
         + NAV_BLOCK
         + f"""
-  <main>
-    <article class="article-full uk-guide">
-      <nav class="article-breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> <span aria-hidden="true">/</span>
-        <a href="./">Moving to Zimbabwe</a> <span aria-hidden="true">/</span>
-        <span>{esc(guide['h1'])}</span>
-      </nav>
-      <header class="uk-guide-header">
-        <p class="uk-guide-eyebrow">UK GUIDE &middot; MOVING TO ZIMBABWE</p>
-        <h1 class="uk-guide-title">{esc(guide['h1'])}</h1>
-        <p class="uk-guide-standfirst">{guide['standfirst']}</p>
-      </header>
-      <div class="article-body uk-guide-body">
+<main>
+  <article class="uk-shell">
+    <figure class="uk-hero">
+      <img src="../img/uk-guide/{guide['slug']}.png"
+           alt="" loading="eager" fetchpriority="high">
+    </figure>
+    <div class="uk-hero-meta">
+      <span>The Mutapa Times</span>
+      <span class="uk-section-tag">UK Guide &middot; Moving to Zimbabwe</span>
+    </div>
+    <header class="uk-titleblock">
+      <h1 class="uk-title">{esc(guide['h1'])}</h1>
+      <p class="uk-standfirst">{guide['standfirst']}</p>
+      <hr class="uk-rule">
+    </header>
+{quickfacts_html}
+    <div class="uk-prose">
 {sections_html}
+    </div>
 {render_sources(guide['sources'])}
 {render_sibling_nav(guide['slug'])}
-      </div>
-    </article>
-  </main>
+  </article>
+</main>
 """
         + FOOTER_BLOCK
     )
 
 
 def render_index():
-    """Render the /moving-to-zimbabwe/ hub page."""
+    """Render the /moving-to-zimbabwe/ hub page — image-led card grid."""
     title = "Moving to Zimbabwe: a UK citizen's guide"
     description = (
         "Practical guides for British citizens moving to or living in Zimbabwe, "
@@ -794,11 +933,12 @@ def render_index():
         "The Mutapa Times using the UK FCDO's June 2024 guidance as a spine."
     )
     cards = "\n".join(
-        f"""        <a class="uk-guide-card" href="./{g['slug']}.html">
-          <h3>{esc(g['h1'])}</h3>
-          <p>{esc(g['description'])}</p>
-          <span class="uk-guide-card-read">Read the guide &rarr;</span>
-        </a>"""
+        f"""      <a class="uk-hub-card" href="./{g['slug']}.html">
+        <img src="../img/uk-guide/{g['slug']}.png" alt="" loading="lazy">
+        <p class="uk-hub-card-eyebrow">UK Guide</p>
+        <h3>{esc(g['h1'])}</h3>
+        <p>{esc(g['description'])}</p>
+      </a>"""
         for g in GUIDES
     )
     head = render_head(title, description, "/moving-to-zimbabwe/")
@@ -806,49 +946,49 @@ def render_index():
         head
         + NAV_BLOCK
         + f"""
-  <main>
-    <article class="article-full uk-guide-hub">
-      <nav class="article-breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> <span aria-hidden="true">/</span>
-        <span>Moving to Zimbabwe</span>
-      </nav>
-      <header class="uk-guide-header">
-        <p class="uk-guide-eyebrow">UK GUIDE</p>
-        <h1 class="uk-guide-title">Moving to Zimbabwe</h1>
-        <p class="uk-guide-standfirst">Five practical guides for British citizens
-          moving to or living in Zimbabwe. We use the UK Foreign, Commonwealth &amp;
-          Development Office's June 2024 guidance as a spine and add the
-          on-the-ground context a government PDF cannot. Verify fees and figures
-          directly with the relevant authority before acting on anything here.</p>
-      </header>
-      <div class="article-body uk-guide-hub-body">
-        <div class="uk-guide-grid">
+<main>
+  <article class="uk-shell">
+    <figure class="uk-hero">
+      <img src="../img/uk-guide/moving-to-zimbabwe.png"
+           alt="" loading="eager" fetchpriority="high">
+    </figure>
+    <div class="uk-hero-meta">
+      <span>The Mutapa Times</span>
+      <span class="uk-section-tag">UK Guide</span>
+    </div>
+    <header class="uk-titleblock">
+      <h1 class="uk-title">Moving to Zimbabwe</h1>
+      <p class="uk-standfirst">Practical, on-the-ground guides for British citizens
+        moving to or living in Zimbabwe. The UK Foreign, Commonwealth &amp;
+        Development Office's guidance gives you the bones. We add what comes
+        from actually being here.</p>
+      <hr class="uk-rule">
+    </header>
+    <div class="uk-hub-grid">
 {cards}
-        </div>
-        <section class="uk-guide-about">
-          <h2>About this guide</h2>
-          <p>The Mutapa Times is a Zimbabwean newspaper operated from the United
-          Kingdom. We publish this microsite because the British citizens we hear
-          from most often arrive in Zimbabwe having read the FCDO guidance and
-          still missing the practical details that only come from being in the
-          country &mdash; which medical aid plan actually covers Joburg evacuation,
-          which schools follow the Northern Hemisphere calendar, what a price tag
-          marked &quot;$5&quot; really means at the till.</p>
-          <p>The guides are written editorially. We do not earn affiliate commission
-          on any provider mentioned, and the FCDO has not reviewed or endorsed this
-          content. If you spot something out of date, email
-          <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>.</p>
-        </section>
-        <section class="uk-guide-subscribe">
-          <h2>Get our weekly briefing</h2>
-          <p>If you are planning a move to Zimbabwe or already here, our twice-weekly
-          newsletter covers the news that affects you &mdash; FX moves, policy
-          changes, and the stories Zimbabwe&rsquo;s English-language papers do not
-          carry. <a href="/subscribe">Subscribe here</a>.</p>
-        </section>
-      </div>
-    </article>
-  </main>
+    </div>
+    <section class="uk-hub-coda">
+      <h2>About this guide</h2>
+      <p>The Mutapa Times is a Zimbabwean newspaper operated from the United
+      Kingdom. The British citizens we hear from most often arrive in Zimbabwe
+      having read the FCDO guidance and still missing the practical details
+      that only come from being in the country &mdash; which medical aid plan
+      actually covers Joburg evacuation, which schools follow the Northern
+      Hemisphere calendar, what a price tag marked &quot;$5&quot; really
+      means at the till.</p>
+      <p>The guides are written editorially. We earn no commission, and the
+      FCDO has not reviewed or endorsed this content. If you spot something
+      out of date, email
+      <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>.</p>
+      <h2 style="margin-top:1.5rem">Get our weekly briefing</h2>
+      <p>If you are planning a move to Zimbabwe or already here, our
+      twice-weekly newsletter covers the news that affects you &mdash; FX
+      moves, policy changes, and the stories Zimbabwe&rsquo;s
+      English-language papers do not carry.
+      <a href="/subscribe">Subscribe here</a>.</p>
+    </section>
+  </article>
+</main>
 """
         + FOOTER_BLOCK
     )
