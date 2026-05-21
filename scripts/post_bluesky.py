@@ -17,13 +17,24 @@ BLUESKY_HANDLE = os.environ.get("BLUESKY_HANDLE", "")
 BLUESKY_APP_PASSWORD = os.environ.get("BLUESKY_APP_PASSWORD", "")
 
 BSKY_API = "https://bsky.social/xrpc"
+SITE_BASE_URL = "https://www.mutapatimes.com"
 DATA_DIR = "data"
 POSTED_FILE = os.path.join(DATA_DIR, ".posted_bluesky.json")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NEWS_DIR = os.path.join(REPO_ROOT, "news")
+ARTICLES_DIR = os.path.join(REPO_ROOT, "articles")
 
 MAX_POSTS_PER_RUN = 30
 MAX_POST_LENGTH = 300
 SLEEP_BETWEEN_POSTS = 2  # seconds
 CATEGORIES = ["business", "technology", "entertainment", "sports", "science", "health"]
+
+# Reuse the wire-article slug logic from build_news_pages.py so the share
+# URL we post points at the same /news/{slug}.html landing page the
+# article was rendered to. Keeps the two scripts authoritative on the
+# same slug shape rather than each duplicating slugification.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_news_pages import make_slug as make_news_slug  # noqa: E402
 
 
 # ── Bluesky API client ──────────────────────────────────────
@@ -170,9 +181,60 @@ def prune_old_entries(posted, max_age_days=60):
     return pruned
 
 
+def derive_share_url(article, source):
+    """Map an article record to its mutapatimes.com landing page URL.
+
+    Returns the canonical https://www.mutapatimes.com/... URL we want to
+    share on Bluesky, or None if no landing page exists on disk (which
+    means the article either pre-dates the news-page generator or is too
+    old to have a landing page rendered for it). We post the share URL
+    instead of the upstream wire URL so social traffic lands on us, not
+    on news.google.com or the syndication source.
+    """
+    raw_url = (article.get("url") or "").strip()
+    if not raw_url:
+        return None
+
+    # Spotlight (CMS) articles: legacy URL form is "article.html?slug=foo".
+    # Canonical landing is /articles/{slug}.html.
+    if raw_url.startswith("article.html?slug="):
+        slug = raw_url.split("slug=", 1)[1].split("&", 1)[0]
+        if os.path.exists(os.path.join(ARTICLES_DIR, f"{slug}.html")):
+            return f"{SITE_BASE_URL}/articles/{slug}.html"
+        return None
+
+    # Already an absolute mutapatimes URL — pass through.
+    if raw_url.startswith(SITE_BASE_URL) or raw_url.startswith("https://mutapatimes.com"):
+        return raw_url
+
+    # Wire articles (news.google.com/rss/... or upstream publisher URLs).
+    # build_news_pages.py renders a /news/{slug}.html landing for these;
+    # only share the URL if that file actually exists, otherwise we'd
+    # link to a 404 (e.g. older than MAX_ARTICLE_AGE_DAYS).
+    slug = make_news_slug(article)
+    if os.path.exists(os.path.join(NEWS_DIR, f"{slug}.html")):
+        return f"{SITE_BASE_URL}/news/{slug}.html"
+    return None
+
+
 def load_all_articles():
-    """Load all articles from spotlight + category JSON files."""
+    """Load all articles from spotlight + category JSON files.
+
+    Each returned record carries both the original wire `url` (used for
+    deduplication against past posts in .posted_bluesky.json) and a
+    `share_url` (the mutapatimes.com landing page we will actually post).
+    """
     articles = []
+
+    def _record(a, source):
+        share = derive_share_url(a, source)
+        return {
+            "title": a.get("title", ""),
+            "url": a.get("url", ""),
+            "share_url": share,
+            "publishedAt": a.get("publishedAt", ""),
+            "source": source,
+        }
 
     # Spotlight first (highest priority)
     spotlight_path = os.path.join(DATA_DIR, "spotlight.json")
@@ -181,11 +243,7 @@ def load_all_articles():
             with open(spotlight_path) as f:
                 data = json.load(f)
             for a in data.get("articles", []):
-                articles.append({
-                    "title": a.get("title", ""),
-                    "url": a.get("url", ""),
-                    "source": "spotlight",
-                })
+                articles.append(_record(a, "spotlight"))
         except (json.JSONDecodeError, IOError) as e:
             print(f"  WARN: could not load spotlight.json: {e}")
 
@@ -198,11 +256,7 @@ def load_all_articles():
             with open(filepath) as f:
                 data = json.load(f)
             for a in data.get("articles", []):
-                articles.append({
-                    "title": a.get("title", ""),
-                    "url": a.get("url", ""),
-                    "source": cat,
-                })
+                articles.append(_record(a, cat))
         except (json.JSONDecodeError, IOError) as e:
             print(f"  WARN: could not load {cat}.json: {e}")
 
@@ -237,8 +291,17 @@ def main():
     articles = load_all_articles()
     print(f"  Found {len(articles)} total articles across all sources")
 
-    # Filter to unposted articles only
-    new_articles = [a for a in articles if a["url"] and a["url"] not in posted]
+    # An article is postable only if we have a mutapatimes.com landing
+    # page for it — otherwise we'd be sharing an empty/404 URL.
+    with_landing = [a for a in articles if a["share_url"]]
+    print(f"  {len(with_landing)} have a mutapatimes.com landing page "
+          f"({len(articles) - len(with_landing)} skipped — no landing yet)")
+
+    # Dedup is on the original wire `url` so the existing .posted_bluesky.json
+    # keys (Google News / publisher URLs) stay authoritative across this
+    # switch — we don't want to re-post every previously-shared headline
+    # just because the share format changed.
+    new_articles = [a for a in with_landing if a["url"] and a["url"] not in posted]
     print(f"  {len(new_articles)} new (unposted) articles")
 
     if not new_articles:
@@ -256,12 +319,14 @@ def main():
 
     for i, article in enumerate(to_post):
         title = article["title"]
-        url = article["url"]
+        url = article["url"]            # wire URL, used as dedup key only
+        share_url = article["share_url"]  # what actually gets posted
         source = article["source"]
 
         print(f"\n  [{i + 1}/{len(to_post)}] ({source}) {title[:70]}...")
+        print(f"      sharing: {share_url}")
 
-        text, facets = format_post(title, url)
+        text, facets = format_post(title, share_url)
         ok, resp = create_post(token, did, text, facets)
 
         if ok:
