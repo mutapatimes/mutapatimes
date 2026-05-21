@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-05-21T20:24:53.855460+00:00",
+  "fetched_at": "2026-05-21T22:04:46.518111+00:00",
   "source": "https://open.er-api.com/v6/latest/USD",
   "source_label": "open.er-api.com (official interbank composite)",
   "base": "USD",
   "as_of": "Thu, 21 May 2026 00:02:31 +0000",
-  "next_update": "Fri, 22 May 2026 00:31:41 +0000",
+  "next_update": "Fri, 22 May 2026 00:34:21 +0000",
   "rates": {
     "ZWG": 26.2239,
     "ZAR": 16.487219,
