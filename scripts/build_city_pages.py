@@ -559,7 +559,6 @@ def build_page(city, all_articles, other_cities):
 </div>
 
 <script defer src="/js/vendor/modernizr-3.8.0.min.js"></script>
-<script defer src="/js/quote-share.js"></script>
 <script defer src="/js/stories.js"></script>
 <script defer src="/js/nav.js"></script>
 <script defer src="/js/sponsors.js"></script>

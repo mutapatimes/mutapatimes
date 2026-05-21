@@ -93,12 +93,51 @@ def wrap_text(text, font, max_width, draw):
 
 # ── The canonical headline card ───────────────────────────
 def render_headline_card(headline, source, output_path, color_idx=0):
-    """1080x1350 portrait headline card with rotating brand bg + branded chrome.
+    """1080x1350 portrait halftone editorial card on butter cream.
 
-    This is the SAME card design used in the Metricool CSV pipeline — by
-    sharing the renderer here we guarantee every social image (autolist,
-    CSV batch, OG previews) stays visually consistent.
+    Delegates to the halftone pipeline in build_halftone_trial.py: small
+    italic masthead top-left, source as the section tag top-right (red
+    accent), an AI-halftone hero image in the middle, the headline in
+    bold serif beneath it, and a discreet MUTAPATIMES.COM footer.
+
+    If Pollinations is unreachable or the image gen fails for any reason,
+    falls back to the text-only butter card (kept as _render_text_fallback
+    below) so the build pipeline never blocks on an external API.
     """
+    slug = os.path.splitext(os.path.basename(output_path))[0]
+
+    # Section tag in the trial card is small, top-right, red accent —
+    # the publication name fits there as natural attribution. Cap length
+    # so very long source names don't overlap the masthead.
+    section = (source or "Zimbabwe").upper().strip()
+    if len(section) > 24:
+        section = section[:23] + "…"
+
+    trial = {
+        "slug": slug,
+        "title": headline,
+        "section": section,
+        # No standfirst on news cards — the headline carries the weight,
+        # and the trial's render_card handles an empty deck gracefully.
+        "deck": "",
+    }
+
+    try:
+        # Import here so card_lib doesn't pull requests/Pollinations into
+        # contexts that only need the text fallback (and so existing
+        # callers don't break if the trial script is missing).
+        from build_halftone_trial import render_card as render_halftone_card
+        render_halftone_card(trial, output_path, paper=BUTTER)
+    except Exception as e:
+        print(f"  WARN: halftone render failed for {slug} ({e}); "
+              "falling back to text card")
+        _render_text_fallback(headline, source, output_path, color_idx)
+
+
+def _render_text_fallback(headline, source, output_path, color_idx=0):
+    """Text-only butter card. Pre-halftone fallback, kept only for the
+    case where Pollinations is unreachable mid-build. Same chrome as
+    the legacy renderer so failed-halftone cards still look on-brand."""
     bg = card_bg(color_idx)
     img = Image.new("RGB", (CARD_W, CARD_H), bg)
     draw = ImageDraw.Draw(img)
@@ -108,15 +147,11 @@ def render_headline_card(headline, source, output_path, color_idx=0):
     source_font = load_font("sans", 28)
     label_font = load_font("sans_bold", 22)
 
-    # Accent bar top-left
     draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
-
-    # Masthead
     draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
     draw.text((60, 124), "Zimbabwe outside-in",
               font=source_font, fill=CARD_FG_MUTED)
 
-    # Headline (wrapped, vertically centered in the middle band)
     available_width = CARD_W - 120
     lines = wrap_text(headline, headline_font, available_width, draw)
     if len(lines) > 7:
@@ -130,14 +165,11 @@ def render_headline_card(headline, source, output_path, color_idx=0):
         draw.text((60, y), ln, font=headline_font, fill=CARD_FG)
         y += line_height
 
-    # Footer source attribution + read-more cue
     footer_y = CARD_H - 140
     draw.text((60, footer_y), "VIA", font=label_font, fill=CARD_FG_MUTED)
     cue = "READ MORE → mutapatimes.com"
     bbox = draw.textbbox((0, 0), cue, font=source_font)
     cue_w = bbox[2] - bbox[0]
-    # Source goes left, CTA goes right. Clip the source so it never
-    # collides with the CTA — leave a 28px gutter between the two.
     if source:
         src = source.upper()
         max_src_w = CARD_W - 120 - cue_w - 28

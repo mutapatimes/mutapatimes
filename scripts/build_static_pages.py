@@ -505,7 +505,6 @@ def page_footer(depth=1):
 </div>
 
   <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
-  <script defer src="{prefix}js/quote-share.js"></script>
   <script defer src="{prefix}js/stories.js?v=5"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
