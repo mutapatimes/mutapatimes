@@ -214,6 +214,35 @@ def generate():
             except ValueError:
                 pass
 
+    # /moving-to-zimbabwe/ microsite — evergreen UK-citizen guides.
+    # Not in main nav (deliberate SEO orphan-by-design) but must be in the
+    # sitemap or Google will not find them.
+    uk_guide_dir = os.path.join(repo_root, "moving-to-zimbabwe")
+    if os.path.isdir(uk_guide_dir):
+        # Hub page first, then individual guides in stable filename order.
+        hub = os.path.join(uk_guide_dir, "index.html")
+        if os.path.isfile(hub):
+            urls.append(
+                f"  <url>\n"
+                f"    <loc>{BASE_URL}/moving-to-zimbabwe/</loc>\n"
+                f"    <lastmod>{now_str}</lastmod>\n"
+                f"    <changefreq>monthly</changefreq>\n"
+                f"    <priority>0.85</priority>\n"
+                f"  </url>"
+            )
+        for path in sorted(glob.glob(os.path.join(uk_guide_dir, "*.html"))):
+            slug = os.path.splitext(os.path.basename(path))[0]
+            if slug == "index":
+                continue
+            urls.append(
+                f"  <url>\n"
+                f"    <loc>{BASE_URL}/moving-to-zimbabwe/{slug}.html</loc>\n"
+                f"    <lastmod>{now_str}</lastmod>\n"
+                f"    <changefreq>monthly</changefreq>\n"
+                f"    <priority>0.8</priority>\n"
+                f"  </url>"
+            )
+
     # Write main sitemap
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
