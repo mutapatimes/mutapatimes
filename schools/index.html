@@ -33,175 +33,183 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "headline": "Zimbabwe schools directory: ATS member schools", "description": "A searchable directory of all 64 Association of Trust Schools (ATS) member schools in Zimbabwe, with location, type, and links. Data sourced from atszim.org and verified by The Mutapa Times.", "url": "https://www.mutapatimes.com/schools/", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "The Mutapa Times", "logo": {"@type": "ImageObject", "url": "https://www.mutapatimes.com/img/logo.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Schools directory", "item": "https://www.mutapatimes.com/schools/"}]}</script>
 <style>
-:root {
-  --paper: #f5e8c8;
-  --paper-deep: #ede0ba;
-  --paper-deeper: #e3d6a8;
-  --ink: #1a1410;
-  --ink-muted: #54483c;
-  --accent: #44643c;
-  --accent-deep: #2f4929;
-  --rule: #d8c9a4;
-}
-* { box-sizing: border-box; }
-.sd-page { background: var(--paper); color: var(--ink); min-height: 100vh; }
-.sd-shell { max-width: 1200px; margin: 0 auto; padding: 0; }
-.sd-hero-meta { display: flex; justify-content: space-between; align-items: baseline;
-  padding: 1.5rem 2rem 0; font-family: 'Inter', sans-serif; font-size: 0.78rem;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); }
-.sd-hero-meta .sd-tag { color: var(--accent); font-weight: 700; }
-.sd-titleblock { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 1.5rem; text-align: center; }
-.sd-title { font-family: 'Playfair Display', serif; font-weight: 900;
-  font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; margin: 0 0 1.25rem;
-  letter-spacing: -0.01em; }
-.sd-stand { font-family: 'Playfair Display', serif;
-  font-weight: 400; font-size: clamp(1.05rem, 1.8vw, 1.35rem); line-height: 1.5;
-  color: var(--ink-muted); margin: 0 auto; max-width: 36em; }
-.sd-rule { width: 60px; height: 3px; background: var(--accent); border: 0; margin: 1.75rem auto 0; }
+/* Schools directory — uses main site palette from css/main.css
+   (--paper, --bg, --accent, --ink, --text, --text-mid, --text-light, --rule) */
+.sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-/* Quickfacts strip (used on hub) */
-.sd-quickfacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0; max-width: 1100px; margin: 2.5rem auto; border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule); }
-.sd-fact { padding: 1.25rem 1.5rem; border-right: 1px solid var(--rule); text-align: left; }
-.sd-fact:last-child { border-right: 0; }
-.sd-fact-label { font-family: 'Inter', sans-serif; font-size: 0.7rem;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted);
-  margin: 0 0 0.45rem; }
-.sd-fact-value { font-family: 'Playfair Display', serif; font-size: 1.1rem;
-  line-height: 1.3; margin: 0; font-weight: 700; }
+/* Section header */
+.sd-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
+.sd-section-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+  font-weight: 700; margin: 0 0 8px; }
+.sd-section-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.8em, 4vw, 2.6em); line-height: 1.1; color: var(--ink);
+  margin: 0 0 10px; letter-spacing: -0.01em; }
+.sd-section-stand { font-family: 'Inter', system-ui, sans-serif; font-size: 1em;
+  line-height: 1.55; color: var(--text-mid); margin: 0 0 14px; max-width: 44em; }
+.sd-rule { width: 48px; height: 3px; background: var(--accent); border: 0; margin: 8px 0 0; }
+
+/* Quickfacts strip — mirrors prop-highlights style */
+.sd-quickfacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; max-width: 1100px; margin: 20px auto 8px; padding: 0 20px; }
+.sd-fact { padding: 14px 16px; background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 8px; }
+.sd-fact-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light);
+  margin: 0 0 4px; font-weight: 600; }
+.sd-fact-value { font-family: 'Playfair Display', Georgia, serif; font-size: 1.4em;
+  line-height: 1.15; color: var(--ink); margin: 0; font-weight: 700; }
 
 /* Filter bar */
-.sd-filterbar { max-width: 1100px; margin: 1.5rem auto 1rem; padding: 0 1.5rem;
-  font-family: 'Inter', sans-serif; }
-.sd-search { width: 100%; padding: 0.85rem 1rem; font-size: 1rem;
-  font-family: inherit; background: var(--paper-deep); border: 1px solid var(--rule);
-  color: var(--ink); border-radius: 3px; margin-bottom: 0.85rem; }
-.sd-search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.sd-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
-.sd-chip { font-size: 0.78rem; letter-spacing: 0.06em; padding: 0.35rem 0.85rem;
-  background: var(--paper-deep); border: 1px solid var(--rule); color: var(--ink-muted);
-  border-radius: 100px; cursor: pointer; user-select: none; }
+.sd-filterbar { max-width: 1100px; margin: 14px auto 0; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-search { width: 100%; padding: 10px 14px; font-size: 0.95em;
+  font-family: inherit; background: #fff; border: 1px solid var(--rule);
+  color: var(--ink); border-radius: 6px; margin: 0 0 10px; }
+.sd-search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.sd-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sd-chip { font-size: 0.78em; letter-spacing: 0.02em; padding: 5px 12px;
+  background: #f0ece4; border: 1px solid var(--rule); color: var(--ink);
+  border-radius: 14px; cursor: pointer; user-select: none;
+  font-family: inherit; }
+.sd-chip:hover { border-color: var(--ink); }
 .sd-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent);
-  color: var(--paper); }
-.sd-clear { font-size: 0.78rem; color: var(--ink-muted); text-decoration: none;
-  border-bottom: 1px solid var(--rule); cursor: pointer; background: none; border: 0;
-  padding: 0.35rem 0; margin-left: 0.5rem; font-family: inherit; }
-.sd-count { margin: 1rem 1.5rem 1.5rem; max-width: 1100px; margin-left: auto; margin-right: auto;
-  padding: 0 1.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem;
-  color: var(--ink-muted); }
+  color: #fff; }
+.sd-clear { font-size: 0.78em; color: var(--text-mid); text-decoration: underline;
+  cursor: pointer; background: none; border: 0; padding: 5px 6px;
+  margin-left: 4px; font-family: inherit; }
+.sd-clear:hover { color: var(--accent); }
+.sd-count { max-width: 1100px; margin: 14px auto 6px; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 0.82em;
+  color: var(--text-light); }
 
-/* Card grid */
-.sd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 0.8rem; max-width: 1100px; margin: 0 auto 3rem; padding: 0 1.5rem; }
-.sd-card { display: block; text-decoration: none; color: inherit; background: var(--paper-deep);
-  padding: 1.1rem 1.25rem 1.25rem; border: 1px solid var(--rule); border-radius: 3px;
-  transition: transform 0.15s ease, border-color 0.15s ease; }
-.sd-card:hover { transform: translateY(-2px); border-color: var(--accent);
-  text-decoration: none; color: inherit; }
-.sd-card-name { font-family: 'Playfair Display', serif; font-weight: 700;
-  font-size: 1.15rem; line-height: 1.2; margin: 0 0 0.4rem; }
-.sd-card-loc { font-family: 'Inter', sans-serif; font-size: 0.8rem;
-  letter-spacing: 0.06em; color: var(--accent); margin: 0 0 0.6rem;
+/* Card grid — mirrors .jobs-grid / .job-card */
+.sd-grid { display: grid; gap: 14px; padding: 0 20px 24px;
+  max-width: 1100px; margin: 8px auto 0;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sd-card { display: flex; flex-direction: column; gap: 10px;
+  padding: 18px; border: 1px solid var(--rule); border-radius: 8px;
+  background: #fff; color: var(--text); text-decoration: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease; }
+.sd-card:hover { border-color: var(--accent); text-decoration: none;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06); transform: translateY(-1px); }
+.sd-card-head { display: flex; gap: 12px; align-items: flex-start; }
+.sd-card-mark { flex-shrink: 0; width: 44px; height: 44px; border-radius: 8px;
+  background: #f0ece4; border: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  color: var(--accent); font-size: 1.3em; }
+.sd-card-headtext { flex: 1; min-width: 0; }
+.sd-card-loc { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.06em; color: var(--text-light); margin: 0 0 3px;
   text-transform: uppercase; font-weight: 600; }
-.sd-card-tags { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--ink-muted);
-  margin: 0; line-height: 1.45; }
-.sd-card-meta { font-family: 'Inter', sans-serif; font-size: 0.74rem;
-  letter-spacing: 0.04em; color: var(--ink-muted); margin: 0.55rem 0 0;
-  padding-top: 0.55rem; border-top: 1px dotted var(--rule); }
+.sd-card-name { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.1em; line-height: 1.2; margin: 0; color: var(--ink); }
+.sd-card:hover .sd-card-name { color: var(--accent); }
+.sd-card-pills { display: flex; flex-wrap: wrap; gap: 5px; margin: 2px 0 0; }
+.sd-pill { display: inline-block; padding: 3px 9px; font-size: 0.7em; font-weight: 500;
+  border-radius: 12px; background: #f0ece4; color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif; letter-spacing: 0.02em; }
+.sd-pill--section { background: #e8f1ec; }
+.sd-pill--boarding { background: #f5ecd9; }
+.sd-pill--gender { background: #efe6f5; }
+.sd-card-meta { font-family: 'Inter', system-ui, sans-serif; font-size: 0.74em;
+  color: var(--text-light); margin: 2px 0 0; padding-top: 8px;
+  border-top: 1px solid var(--rule); letter-spacing: 0.02em; }
 .sd-card[hidden] { display: none; }
 
 /* Per-school detail page */
-.sd-detail-head { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 1.25rem;
-  text-align: center; }
-.sd-detail-eyebrow { font-family: 'Inter', sans-serif; font-size: 0.74rem;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);
-  margin: 0 0 0.75rem; font-weight: 700; }
-.sd-detail-title { font-family: 'Playfair Display', serif; font-weight: 900;
-  font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.08; margin: 0 0 1rem;
-  letter-spacing: -0.01em; }
-.sd-detail-stand { font-family: 'Playfair Display', serif;
-  font-weight: 400; font-size: 1.15rem; line-height: 1.5; color: var(--ink-muted);
-  margin: 0 auto; max-width: 36em; }
-.sd-detail-rule { width: 60px; height: 3px; background: var(--accent); border: 0;
-  margin: 1.5rem auto 0; }
+.sd-detail-head { max-width: 820px; margin: 0 auto; padding: 28px 20px 12px; }
+.sd-detail-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent);
+  margin: 0 0 10px; font-weight: 700; }
+.sd-detail-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.9em, 4.4vw, 2.8em); line-height: 1.1; margin: 0 0 12px;
+  color: var(--ink); letter-spacing: -0.01em; }
+.sd-detail-stand { font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400; font-size: 1.02em; line-height: 1.55; color: var(--text-mid);
+  margin: 0 0 4px; max-width: 44em; }
+.sd-detail-rule { width: 48px; height: 3px; background: var(--accent); border: 0;
+  margin: 14px 0 0; }
+.sd-detail-loc { font-family: 'Inter', system-ui, sans-serif; font-size: 0.78em;
+  letter-spacing: 0.08em; color: var(--text-light); text-transform: uppercase;
+  margin: 0 0 6px; font-weight: 600; }
 
-.sd-detail-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0; max-width: 1000px; margin: 2.25rem auto; border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule); }
-.sd-detail-facts .sd-fact { padding: 1.1rem 1.3rem; }
+.sd-detail-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; max-width: 1000px; margin: 18px auto 24px; padding: 0 20px; }
+.sd-detail-facts .sd-fact-value { font-size: 1.05em; line-height: 1.3; }
 
-.sd-prose { max-width: 640px; margin: 0 auto; padding: 0 1.5rem 1rem;
-  font-family: 'Inter', sans-serif; }
-.sd-prose h2 { font-family: 'Playfair Display', serif; font-weight: 700;
-  font-size: 1.5rem; line-height: 1.2; margin: 2.25rem 0 0.85rem; position: relative; }
-.sd-prose h2::before { content: ''; display: block; width: 32px; height: 2px;
-  background: var(--accent); margin-bottom: 0.75rem; }
-.sd-prose p { font-size: 1.02rem; line-height: 1.7; margin: 0 0 1rem; }
-.sd-prose ul { font-size: 1.02rem; line-height: 1.7; padding-left: 1.25rem; }
-.sd-prose li { margin-bottom: 0.4rem; }
-.sd-prose a { color: var(--accent-deep); text-decoration: none;
-  border-bottom: 1px solid currentColor; }
+.sd-hero-img { max-width: 1000px; margin: 0 auto 18px; padding: 0 20px; }
+.sd-hero-img img { width: 100%; height: auto; max-height: 460px; object-fit: cover;
+  border-radius: 8px; border: 1px solid var(--rule); display: block; background: var(--paper); }
+.sd-hero-img-cap { font-family: 'Inter', system-ui, sans-serif; font-size: 0.74em;
+  color: var(--text-light); margin: 6px 0 0; line-height: 1.45; }
+.sd-hero-img-cap a { color: var(--text-mid); }
+
+.sd-prose { max-width: 720px; margin: 0 auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-prose h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.4em; line-height: 1.2; margin: 26px 0 10px; color: var(--ink); }
+.sd-prose p { font-size: 1em; line-height: 1.65; color: var(--text); margin: 0 0 12px; }
+.sd-prose ul { font-size: 1em; line-height: 1.65; padding-left: 20px; margin: 0 0 14px; }
+.sd-prose li { margin-bottom: 5px; }
+.sd-prose a { color: var(--accent); text-decoration: underline; }
 .sd-prose a:hover { color: var(--ink); }
+.sd-prose strong { color: var(--ink); }
 
-.sd-profile { display: grid; grid-template-columns: minmax(120px, max-content) 1fr;
-  gap: 0.4rem 1.5rem; margin: 0.5rem 0 0.25rem; font-size: 0.95rem;
-  border-top: 1px solid var(--rule); padding-top: 0.85rem; }
+.sd-profile { display: grid; grid-template-columns: minmax(110px, max-content) 1fr;
+  gap: 8px 18px; margin: 10px 0 6px; font-size: 0.95em;
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 14px 18px; }
 .sd-profile-row { display: contents; }
-.sd-profile dt { font-family: 'Inter', sans-serif; font-size: 0.72rem;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-muted);
-  font-weight: 700; padding-top: 0.2rem; align-self: start; }
-.sd-profile dd { margin: 0; font-family: 'Inter', sans-serif; line-height: 1.5;
-  color: var(--ink); padding-bottom: 0.35rem;
-  border-bottom: 1px dotted var(--rule); }
-.sd-profile-row:last-child dd { border-bottom: 0; }
+.sd-profile dt { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light);
+  font-weight: 700; padding-top: 3px; align-self: start; }
+.sd-profile dd { margin: 0; font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5; color: var(--ink); }
 @media (max-width: 540px) {
-  .sd-profile { grid-template-columns: 1fr; gap: 0.1rem 0; }
-  .sd-profile dt { padding-top: 0.65rem; }
-  .sd-profile dd { padding-bottom: 0.65rem; }
+  .sd-profile { grid-template-columns: 1fr; gap: 2px 0; padding: 12px 14px; }
+  .sd-profile dt { padding-top: 10px; }
+  .sd-profile-row:first-child dt { padding-top: 0; }
 }
+.sd-profile-credit { font-size: 0.78em; color: var(--text-light); margin: 8px 0 0; }
+.sd-profile-credit a { color: var(--text-mid); }
 
-.sd-mapwrap { max-width: 820px; margin: 1rem auto 2rem; padding: 0 1.5rem; }
+.sd-mapwrap { max-width: 1000px; margin: 12px auto 18px; padding: 0 20px; }
 .sd-map { width: 100%; aspect-ratio: 16/9; border: 1px solid var(--rule);
-  background: var(--paper-deep); display: block; }
+  border-radius: 8px; background: var(--paper); display: block; overflow: hidden; }
 .sd-map iframe { width: 100%; height: 100%; border: 0; display: block; }
-.sd-map-cap { font-family: 'Inter', sans-serif; font-size: 0.8rem;
-  color: var(--ink-muted); margin: 0.5rem 0 0; text-align: center; }
+.sd-map-cap { font-family: 'Inter', system-ui, sans-serif; font-size: 0.78em;
+  color: var(--text-light); margin: 6px 0 0; }
+.sd-map-cap a { color: var(--text-mid); }
 
-.sd-cta { max-width: 720px; margin: 2.5rem auto; padding: 1.75rem 1.75rem;
-  background: var(--paper-deep); border-left: 3px solid var(--accent);
-  font-family: 'Inter', sans-serif; }
-.sd-cta-label { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--accent); font-weight: 700; margin: 0 0 0.6rem; }
-.sd-cta p { margin: 0 0 0.6rem; font-size: 0.97rem; line-height: 1.6; }
+.sd-cta { max-width: 720px; margin: 22px auto; padding: 18px 22px;
+  background: var(--paper); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+  border-radius: 6px; font-family: 'Inter', system-ui, sans-serif; }
+.sd-cta-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 8px; }
+.sd-cta p { margin: 0 0 8px; font-size: 0.95em; line-height: 1.55; color: var(--text); }
 .sd-cta p:last-child { margin-bottom: 0; }
-.sd-cta a { color: var(--accent-deep); border-bottom: 1px solid currentColor; }
+.sd-cta a { color: var(--accent); text-decoration: underline; }
 
-.sd-sources { max-width: 640px; margin: 2rem auto 0.5rem; padding: 1.5rem 1.5rem;
-  border-top: 2px solid var(--ink); font-family: 'Inter', sans-serif; }
-.sd-sources h2 { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
-  margin: 0 0 0.85rem; color: var(--ink-muted); font-weight: 700; }
-.sd-sources ul { font-size: 0.9rem; margin: 0 0 0.85rem; padding-left: 1.25rem;
-  line-height: 1.55; }
-.sd-sources a { color: var(--ink); border-bottom: 1px solid var(--rule); }
-.sd-sources-note { font-size: 0.82rem; color: var(--ink-muted);
-  margin: 0; line-height: 1.55; }
+.sd-sources { max-width: 720px; margin: 22px auto 6px; padding: 16px 20px;
+  border-top: 2px solid var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+.sd-sources h2 { font-size: 0.74em; letter-spacing: 0.18em; text-transform: uppercase;
+  margin: 0 0 10px; color: var(--text-light); font-weight: 700;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-sources ul { font-size: 0.88em; margin: 0 0 10px; padding-left: 20px; line-height: 1.55;
+  color: var(--text); }
+.sd-sources a { color: var(--ink); text-decoration: underline; }
+.sd-sources-note { font-size: 0.8em; color: var(--text-light); margin: 0; line-height: 1.55; }
 
-.sd-back { text-align: center; margin: 2rem 0 4rem; font-family: 'Inter', sans-serif; }
-.sd-back a { font-size: 0.9rem; color: var(--ink); border-bottom: 1px solid var(--accent);
+.sd-back { text-align: center; margin: 24px 0 40px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-back a { font-size: 0.88em; color: var(--ink); border-bottom: 1px solid var(--accent);
   text-decoration: none; padding-bottom: 2px; }
-
-@media (max-width: 640px) {
-  .sd-titleblock { padding: 1.75rem 1.5rem 1rem; }
-  .sd-quickfacts, .sd-detail-facts { grid-template-columns: 1fr 1fr; }
-  .sd-fact { border-bottom: 1px solid var(--rule); }
-  .sd-fact:nth-child(2n) { border-right: 0; }
-  .sd-fact:nth-last-child(-n+2) { border-bottom: 0; }
-  .sd-grid { grid-template-columns: 1fr; }
-}
+.sd-back a:hover { color: var(--accent); }
 </style>
 </head>
-<body class="longform-page sd-page">
+<body>
 <div class="topbar" id="topbar" aria-label="Sticky navigation">
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -210,629 +218,945 @@
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
 <main>
-  <article class="sd-shell">
-    <div class="sd-hero-meta">
-      <span>The Mutapa Times</span>
-      <span class="sd-tag">Schools directory</span>
-    </div>
-    <header class="sd-titleblock">
-      <h1 class="sd-title">Zimbabwe schools directory</h1>
-      <p class="sd-stand">The 64 member schools of the Association of Trust
-        Schools — Zimbabwe's independent school federation — with their
-        location, schooling section, and boarding status. Search and filter to
-        narrow down, then open any school for full detail.</p>
-      <hr class="sd-rule">
-    </header>
-    <div class="sd-quickfacts" role="list">
+  <header class="sd-section-header">
+    <p class="sd-section-eyebrow">Mutapa Times · Directory</p>
+    <h1 class="sd-section-title">Zimbabwe schools directory</h1>
+    <p class="sd-section-stand">The 64 member schools of the Association of Trust
+      Schools &mdash; Zimbabwe's independent school federation &mdash; with their
+      location, schooling section, and boarding status. Search and filter to
+      narrow down, then open any school for full detail.</p>
+    <hr class="sd-rule">
+  </header>
+  <div class="sd-quickfacts" role="list">
         <div class="sd-fact"><p class="sd-fact-label">ATS members listed</p><p class="sd-fact-value">64</p></div>
         <div class="sd-fact"><p class="sd-fact-label">Towns &amp; cities</p><p class="sd-fact-value">19</p></div>
         <div class="sd-fact"><p class="sd-fact-label">Boarding schools</p><p class="sd-fact-value">22</p></div>
         <div class="sd-fact"><p class="sd-fact-label">Primary &middot; Senior</p><p class="sd-fact-value">28 &middot; 10</p></div>
     </div>
-    <div class="sd-filterbar">
-      <input type="search" class="sd-search" id="sdSearch"
-             placeholder="Search by school name or town…"
-             aria-label="Search schools">
-      <div class="sd-chips" role="group" aria-label="Filter by category">
-                <button class="sd-chip" data-filter="primary" aria-pressed="false">Primary</button>
-        <button class="sd-chip" data-filter="senior" aria-pressed="false">Senior</button>
-        <button class="sd-chip" data-filter="boarding" aria-pressed="false">Boarding</button>
-        <button class="sd-chip" data-filter="weekly-boarding" aria-pressed="false">Weekly boarding</button>
-        <button class="sd-chip" data-filter="day-scholar" aria-pressed="false">Day</button>
-        <button class="sd-chip" data-filter="boys" aria-pressed="false">Boys</button>
-        <button class="sd-chip" data-filter="girls" aria-pressed="false">Girls</button>
-        <button class="sd-clear" id="sdClear">Clear filters</button>
-      </div>
+  <div class="sd-filterbar">
+    <input type="search" class="sd-search" id="sdSearch"
+           placeholder="Search by school name or town…"
+           aria-label="Search schools">
+    <div class="sd-chips" role="group" aria-label="Filter by category">
+            <button class="sd-chip" data-filter="primary" aria-pressed="false">Primary</button>
+      <button class="sd-chip" data-filter="senior" aria-pressed="false">Senior</button>
+      <button class="sd-chip" data-filter="boarding" aria-pressed="false">Boarding</button>
+      <button class="sd-chip" data-filter="weekly-boarding" aria-pressed="false">Weekly boarding</button>
+      <button class="sd-chip" data-filter="day-scholar" aria-pressed="false">Day</button>
+      <button class="sd-chip" data-filter="boys" aria-pressed="false">Boys</button>
+      <button class="sd-chip" data-filter="girls" aria-pressed="false">Girls</button>
+      <button class="sd-clear" id="sdClear">Clear filters</button>
     </div>
-    <p class="sd-count" id="sdCount" aria-live="polite">Showing all 64 schools.</p>
-    <div class="sd-grid" id="sdGrid">
+  </div>
+  <p class="sd-count" id="sdCount" aria-live="polite">Showing all 64 schools.</p>
+  <div class="sd-grid" id="sdGrid">
     <a class="sd-card" href="./ariel-primary-school.html"
        data-name="ariel primary school"
        data-city="macheke"
        data-cats="boarding">
-      <p class="sd-card-loc">Macheke</p>
-      <h3 class="sd-card-name">Ariel Primary School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">A</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Macheke</p>
+          <h3 class="sd-card-name">Ariel Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./arundel-school.html"
        data-name="arundel school"
        data-city="harare"
        data-cats="day-scholar senior urban weekly-boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Arundel School</h3>
-      <p class="sd-card-tags">Senior · Weekly boarding · Day</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">A</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Arundel School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span> <span class="sd-pill sd-pill--boarding">Weekly boarding</span> <span class="sd-pill sd-pill--boarding">Day</span></div>
       <p class="sd-card-meta">Founded 1955 · Anglican</p>
     </a>
     <a class="sd-card" href="./bernard-mizeki-college.html"
        data-name="bernard mizeki college"
        data-city="marondera"
        data-cats="boarding boys">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Bernard Mizeki College</h3>
-      <p class="sd-card-tags">Boarding · Boys</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">B</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Bernard Mizeki College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span> <span class="sd-pill sd-pill--gender">Boys</span></div>
       <p class="sd-card-meta">Founded 1961</p>
     </a>
     <a class="sd-card" href="./bishopslea-preparatory-school.html"
        data-name="bishopslea preparatory school"
        data-city="harare"
        data-cats="day-scholar girls primary urban weekly-boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Bishopslea Preparatory School</h3>
-      <p class="sd-card-tags">Primary · Weekly boarding · Day · Girls</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">B</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Bishopslea Preparatory School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span> <span class="sd-pill sd-pill--boarding">Weekly boarding</span> <span class="sd-pill sd-pill--boarding">Day</span> <span class="sd-pill sd-pill--gender">Girls</span></div>
       
     </a>
     <a class="sd-card" href="./bryden-country-school.html"
        data-name="bryden country school"
        data-city="selous"
        data-cats="day-scholar primary weekly-boarding">
-      <p class="sd-card-loc">Selous</p>
-      <h3 class="sd-card-name">Bryden Country School</h3>
-      <p class="sd-card-tags">Primary · Weekly boarding · Day</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">B</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Selous</p>
+          <h3 class="sd-card-name">Bryden Country School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span> <span class="sd-pill sd-pill--boarding">Weekly boarding</span> <span class="sd-pill sd-pill--boarding">Day</span></div>
       <p class="sd-card-meta">Founded 1983 · Christianity</p>
     </a>
     <a class="sd-card" href="./carmel-primary-school.html"
        data-name="carmel primary school"
        data-city="bulawayo"
        data-cats="day-scholar primary urban">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Carmel Primary School</h3>
-      <p class="sd-card-tags">Primary · Day</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Carmel Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span> <span class="sd-pill sd-pill--boarding">Day</span></div>
       
     </a>
     <a class="sd-card" href="./centenary-primary-school.html"
        data-name="centenary primary school"
        data-city="bulawayo"
        data-cats="day-scholar primary urban">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Centenary Primary School</h3>
-      <p class="sd-card-tags">Primary · Day</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Centenary Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span> <span class="sd-pill sd-pill--boarding">Day</span></div>
       
     </a>
     <a class="sd-card" href="./chisipite-junior-school.html"
        data-name="chisipite junior school"
        data-city="harare"
        data-cats="day-scholar primary urban">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Chisipite Junior School</h3>
-      <p class="sd-card-tags">Primary · Day</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Chisipite Junior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span> <span class="sd-pill sd-pill--boarding">Day</span></div>
       <p class="sd-card-meta">Founded 1929 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./chisipite-senior-school.html"
        data-name="chisipite senior school"
        data-city="harare"
        data-cats="day-scholar girls senior urban weekly-boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Chisipite Senior School</h3>
-      <p class="sd-card-tags">Senior · Weekly boarding · Day · Girls</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Chisipite Senior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span> <span class="sd-pill sd-pill--boarding">Weekly boarding</span> <span class="sd-pill sd-pill--boarding">Day</span> <span class="sd-pill sd-pill--gender">Girls</span></div>
       <p class="sd-card-meta">Founded 1954 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./christian-brothers-college.html"
        data-name="christian brothers&#x27; college"
        data-city="bulawayo"
        data-cats="boys">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Christian Brothers&#x27; College</h3>
-      <p class="sd-card-tags">Boys</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Christian Brothers&#x27; College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--gender">Boys</span></div>
       <p class="sd-card-meta">Founded 1953 · Roman Catholic</p>
     </a>
     <a class="sd-card" href="./coalfields-primary-school.html"
        data-name="coalfields primary school"
        data-city="hwange"
        data-cats="primary">
-      <p class="sd-card-loc">Hwange</p>
-      <h3 class="sd-card-name">Coalfields Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">C</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Hwange</p>
+          <h3 class="sd-card-name">Coalfields Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./dominican-convent-high-school-bulawayo.html"
        data-name="dominican convent high school (bulawayo)"
        data-city="harare"
        data-cats="girls">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Dominican Convent High School (Bulawayo)</h3>
-      <p class="sd-card-tags">Girls</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">D</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Dominican Convent High School (Bulawayo)</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--gender">Girls</span></div>
       <p class="sd-card-meta">Founded 1956 · Catholic</p>
     </a>
     <a class="sd-card" href="./dominican-convent-primary-school-bulawayo.html"
        data-name="dominican convent primary school (bulawayo)"
        data-city="bulawayo"
        data-cats="girls">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Dominican Convent Primary School (Bulawayo)</h3>
-      <p class="sd-card-tags">Girls</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">D</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Dominican Convent Primary School (Bulawayo)</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--gender">Girls</span></div>
       <p class="sd-card-meta">Catholic</p>
     </a>
     <a class="sd-card" href="./eaglesvale-junior-school.html"
        data-name="eaglesvale junior school"
        data-city="harare"
        data-cats="boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Eaglesvale Junior School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">E</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Eaglesvale Junior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./eaglesvale-senior-school.html"
        data-name="eaglesvale senior school"
        data-city="harare"
        data-cats="boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Eaglesvale Senior School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">E</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Eaglesvale Senior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Christianity</p>
     </a>
     <a class="sd-card" href="./falcon-college.html"
        data-name="falcon college"
        data-city="esigodini"
        data-cats="boarding">
-      <p class="sd-card-loc">Esigodini</p>
-      <h3 class="sd-card-name">Falcon College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">F</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Esigodini</p>
+          <h3 class="sd-card-name">Falcon College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Interdenominational</p>
     </a>
     <a class="sd-card" href="./gateway-high-school.html"
        data-name="gateway high school"
        data-city="harare"
        data-cats="senior">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Gateway High School</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">G</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Gateway High School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       <p class="sd-card-meta">Founded 1999 · Evangelical</p>
     </a>
     <a class="sd-card" href="./gateway-primary-school.html"
        data-name="gateway primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Gateway Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">G</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Gateway Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./girls-college.html"
        data-name="girls&#x27; college"
        data-city="bulawayo"
        data-cats="boarding">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Girls&#x27; College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">G</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Girls&#x27; College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1983</p>
     </a>
     <a class="sd-card" href="./goldridge-college.html"
        data-name="goldridge college"
        data-city="kwekwe"
        data-cats="boarding">
-      <p class="sd-card-loc">Kwekwe</p>
-      <h3 class="sd-card-name">Goldridge College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">G</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Kwekwe</p>
+          <h3 class="sd-card-name">Goldridge College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 2001 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./goldridge-primary-school.html"
        data-name="goldridge primary school"
        data-city="kwekwe"
        data-cats="boarding">
-      <p class="sd-card-loc">Kwekwe</p>
-      <h3 class="sd-card-name">Goldridge Primary School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">G</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Kwekwe</p>
+          <h3 class="sd-card-name">Goldridge Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./hartmann-house-preparatory.html"
        data-name="hartmann house preparatory"
        data-city="harare"
        data-cats="boys">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Hartmann House Preparatory</h3>
-      <p class="sd-card-tags">Boys</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Hartmann House Preparatory</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--gender">Boys</span></div>
       <p class="sd-card-meta">Founded 1957 · Catholic</p>
     </a>
     <a class="sd-card" href="./hellenic-academy.html"
        data-name="hellenic academy"
        data-city="harare"
        data-cats="senior">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Hellenic Academy</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Hellenic Academy</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       <p class="sd-card-meta">Founded 2008 · Greek Orthodox</p>
     </a>
     <a class="sd-card" href="./hellenic-primary-school.html"
        data-name="hellenic primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Hellenic Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Hellenic Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./hillcrest-college.html"
        data-name="hillcrest college"
        data-city="mutare"
        data-cats="boarding">
-      <p class="sd-card-loc">Mutare</p>
-      <h3 class="sd-card-name">Hillcrest College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Mutare</p>
+          <h3 class="sd-card-name">Hillcrest College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1985 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./hillcrest-preparatory-school.html"
        data-name="hillcrest preparatory school"
        data-city="mutare"
        data-cats="boarding">
-      <p class="sd-card-loc">Mutare</p>
-      <h3 class="sd-card-name">Hillcrest Preparatory School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Mutare</p>
+          <h3 class="sd-card-name">Hillcrest Preparatory School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./hippo-valley-estates-primary-school.html"
        data-name="hippo valley estates primary school"
        data-city="chiredzi"
        data-cats="primary">
-      <p class="sd-card-loc">Chiredzi</p>
-      <h3 class="sd-card-name">Hippo Valley Estates Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">H</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Chiredzi</p>
+          <h3 class="sd-card-name">Hippo Valley Estates Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./kyle-college.html"
        data-name="kyle college"
        data-city="masvingo"
        data-cats="boarding">
-      <p class="sd-card-loc">Masvingo</p>
-      <h3 class="sd-card-name">Kyle College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">K</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Masvingo</p>
+          <h3 class="sd-card-name">Kyle College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1996</p>
     </a>
     <a class="sd-card" href="./kyle-preparatory-school.html"
        data-name="kyle preparatory school"
        data-city="masvingo"
        data-cats="boarding">
-      <p class="sd-card-loc">Masvingo</p>
-      <h3 class="sd-card-name">Kyle Preparatory School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">K</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Masvingo</p>
+          <h3 class="sd-card-name">Kyle Preparatory School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./lendy-park-primary-school.html"
        data-name="lendy park primary school"
        data-city="marondera"
        data-cats="primary">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Lendy Park Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">L</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Lendy Park Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./lilfordia-school.html"
        data-name="lilfordia school"
        data-city="norton"
        data-cats="primary">
-      <p class="sd-card-loc">Norton</p>
-      <h3 class="sd-card-name">Lilfordia School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">L</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Norton</p>
+          <h3 class="sd-card-name">Lilfordia School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       <p class="sd-card-meta">Founded 1909 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./lomagundi-college.html"
        data-name="lomagundi college"
        data-city="chinhoyi"
        data-cats="boarding">
-      <p class="sd-card-loc">Chinhoyi</p>
-      <h3 class="sd-card-name">Lomagundi College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">L</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Chinhoyi</p>
+          <h3 class="sd-card-name">Lomagundi College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./lomagundi-college-primary-school.html"
        data-name="lomagundi college primary school"
        data-city="chinhoyi"
        data-cats="primary">
-      <p class="sd-card-loc">Chinhoyi</p>
-      <h3 class="sd-card-name">Lomagundi College Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">L</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Chinhoyi</p>
+          <h3 class="sd-card-name">Lomagundi College Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./lusitania-primary-school.html"
        data-name="lusitania primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Lusitania Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">L</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Lusitania Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./masiyephambili-college.html"
        data-name="masiyephambili college"
        data-city="bulawayo"
        data-cats="senior">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Masiyephambili College</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Masiyephambili College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       
     </a>
     <a class="sd-card" href="./masiyephambili-junior-school.html"
        data-name="masiyephambili junior school"
        data-city="bulawayo"
        data-cats="primary">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Masiyephambili Junior School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Masiyephambili Junior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./midlands-christian-college.html"
        data-name="midlands christian college"
        data-city="gweru"
        data-cats="boarding">
-      <p class="sd-card-loc">Gweru</p>
-      <h3 class="sd-card-name">Midlands Christian College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Gweru</p>
+          <h3 class="sd-card-name">Midlands Christian College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1987 · Christianity</p>
     </a>
     <a class="sd-card" href="./midlands-christian-school.html"
        data-name="midlands christian school"
        data-city="gweru"
        data-cats="primary">
-      <p class="sd-card-loc">Gweru</p>
-      <h3 class="sd-card-name">Midlands Christian School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Gweru</p>
+          <h3 class="sd-card-name">Midlands Christian School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./mubeena-ebrahim-primary-school.html"
        data-name="mubeena ebrahim primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Mubeena Ebrahim Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Mubeena Ebrahim Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./murray-macdougall-school.html"
        data-name="murray macdougall school"
        data-city="triangle"
        data-cats="primary">
-      <p class="sd-card-loc">Triangle</p>
-      <h3 class="sd-card-name">Murray Macdougall School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Triangle</p>
+          <h3 class="sd-card-name">Murray Macdougall School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./mvurachena-primary-school.html"
        data-name="mvurachena primary school"
        data-city="chimanimani"
        data-cats="boarding">
-      <p class="sd-card-loc">Chimanimani</p>
-      <h3 class="sd-card-name">Mvurachena Primary School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">M</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Chimanimani</p>
+          <h3 class="sd-card-name">Mvurachena Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./peterhouse-boys.html"
        data-name="peterhouse boys"
        data-city="marondera"
        data-cats="boarding">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Peterhouse Boys</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">P</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Peterhouse Boys</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1955 · Anglican</p>
     </a>
     <a class="sd-card" href="./peterhouse-girls.html"
        data-name="peterhouse girls"
        data-city="marondera"
        data-cats="boarding">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Peterhouse Girls</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">P</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Peterhouse Girls</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1987 · Anglican</p>
     </a>
     <a class="sd-card" href="./petra-college-junior-school.html"
        data-name="petra college junior school"
        data-city="bulawayo"
        data-cats="primary">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Petra College Junior School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">P</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Petra College Junior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./petra-college-senior-school.html"
        data-name="petra college senior school"
        data-city="bulawayo"
        data-cats="senior">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Petra College Senior School</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">P</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Petra College Senior School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       
     </a>
     <a class="sd-card" href="./portland-primary-school.html"
        data-name="portland primary school"
        data-city="plumtree"
        data-cats="primary">
-      <p class="sd-card-loc">Plumtree</p>
-      <h3 class="sd-card-name">Portland Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">P</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Plumtree</p>
+          <h3 class="sd-card-name">Portland Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./riverside-stimulation-centre.html"
        data-name="riverside stimulation centre"
        data-city="bulawayo"
        data-cats="primary">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Riverside Stimulation Centre</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">R</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Riverside Stimulation Centre</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./ruzawi-school.html"
        data-name="ruzawi school"
        data-city="marondera"
        data-cats="boarding">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Ruzawi School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">R</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Ruzawi School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1928 · Anglican</p>
     </a>
     <a class="sd-card" href="./rydings-school.html"
        data-name="rydings school"
        data-city="karoi"
        data-cats="boarding">
-      <p class="sd-card-loc">Karoi</p>
-      <h3 class="sd-card-name">Rydings School</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">R</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Karoi</p>
+          <h3 class="sd-card-name">Rydings School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./sharon-school.html"
        data-name="sharon school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Sharon School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Sharon School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./south-eastern-college.html"
        data-name="south eastern college"
        data-city="chiredzi"
        data-cats="senior">
-      <p class="sd-card-loc">Chiredzi</p>
-      <h3 class="sd-card-name">South Eastern College</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Chiredzi</p>
+          <h3 class="sd-card-name">South Eastern College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       
     </a>
     <a class="sd-card" href="./springvale-house.html"
        data-name="springvale house"
        data-city="marondera"
        data-cats="primary">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Springvale House</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Springvale House</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       <p class="sd-card-meta">Founded 1952 · Anglican</p>
     </a>
     <a class="sd-card" href="./st-john-s-college.html"
        data-name="st john&#x27;s college"
        data-city="harare"
        data-cats="senior">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">St John&#x27;s College</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">St John&#x27;s College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       
     </a>
     <a class="sd-card" href="./st-michael-s-presentation-primary-school.html"
        data-name="st michael&#x27;s presentation primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">St Michael&#x27;s Presentation Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">St Michael&#x27;s Presentation Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./st-george-s-college.html"
        data-name="st. george&#x27;s college"
        data-city="harare"
        data-cats="boarding">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">St. George&#x27;s College</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">St. George&#x27;s College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Roman Catholic (Jesuit)</p>
     </a>
     <a class="sd-card" href="./st-john-s-preparatory-school.html"
        data-name="st. john&#x27;s preparatory school"
        data-city="harare"
        data-cats="boys">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">St. John&#x27;s Preparatory School</h3>
-      <p class="sd-card-tags">Boys</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">St. John&#x27;s Preparatory School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--gender">Boys</span></div>
       <p class="sd-card-meta">Founded 1956</p>
     </a>
     <a class="sd-card" href="./st-thomas-aquinas.html"
        data-name="st. thomas aquinas"
        data-city="bulawayo"
        data-cats="boarding">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">St. Thomas Aquinas</h3>
-      <p class="sd-card-tags">Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">S</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">St. Thomas Aquinas</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--boarding">Boarding</span></div>
       
     </a>
     <a class="sd-card" href="./twin-rivers-primary-school.html"
        data-name="twin rivers primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Twin Rivers Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">T</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Twin Rivers Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./tynwald-primary-school.html"
        data-name="tynwald primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Tynwald Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">T</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Tynwald Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./victoria-falls-primary-school.html"
        data-name="victoria falls primary school"
        data-city="victoria falls"
        data-cats="primary">
-      <p class="sd-card-loc">Victoria Falls</p>
-      <h3 class="sd-card-name">Victoria Falls Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">V</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Victoria Falls</p>
+          <h3 class="sd-card-name">Victoria Falls Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./watershed-college.html"
        data-name="watershed college"
        data-city="marondera"
        data-cats="boarding senior">
-      <p class="sd-card-loc">Marondera</p>
-      <h3 class="sd-card-name">Watershed College</h3>
-      <p class="sd-card-tags">Senior · Boarding</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">W</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Marondera</p>
+          <h3 class="sd-card-name">Watershed College</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span> <span class="sd-pill sd-pill--boarding">Boarding</span></div>
       <p class="sd-card-meta">Founded 1987 · Interdenominational</p>
     </a>
     <a class="sd-card" href="./westridge-high-school.html"
        data-name="westridge high school"
        data-city="harare"
        data-cats="senior">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Westridge High School</h3>
-      <p class="sd-card-tags">Senior</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">W</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Westridge High School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Senior</span></div>
       
     </a>
     <a class="sd-card" href="./westridge-primary-school.html"
        data-name="westridge primary school"
        data-city="harare"
        data-cats="primary">
-      <p class="sd-card-loc">Harare</p>
-      <h3 class="sd-card-name">Westridge Primary School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">W</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Harare</p>
+          <h3 class="sd-card-name">Westridge Primary School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       
     </a>
     <a class="sd-card" href="./whitestone-school.html"
        data-name="whitestone school"
        data-city="bulawayo"
        data-cats="primary">
-      <p class="sd-card-loc">Bulawayo</p>
-      <h3 class="sd-card-name">Whitestone School</h3>
-      <p class="sd-card-tags">Primary</p>
+      <div class="sd-card-head">
+        <div class="sd-card-mark" aria-hidden="true">W</div>
+        <div class="sd-card-headtext">
+          <p class="sd-card-loc">Bulawayo</p>
+          <h3 class="sd-card-name">Whitestone School</h3>
+        </div>
+      </div>
+      <div class="sd-card-pills"><span class="sd-pill sd-pill--section">Primary</span></div>
       <p class="sd-card-meta">Founded 1942</p>
     </a>
-    </div>
-    <section class="sd-sources" aria-label="About this directory">
-      <h2>About this directory</h2>
-      <ul>
-        <li>School roster and coordinates are sourced from the <a href="https://atszim.org/school-directory/" rel="noopener" target="_blank">ATS school directory</a>.</li>
-        <li>City and province labels are assigned by The Mutapa Times based on the published coordinates.</li>
-        <li>We do not publish fees, pass rates or admission criteria here — these change every term and must be verified directly with the school.</li>
-      </ul>
-      <p class="sd-sources-note">Are you affiliated with one of these schools and have an update? Email <a href="mailto:news@mutapatimes.com?subject=ATS%20directory%20update">news@mutapatimes.com</a>.</p>
-    </section>
-  </article>
+  </div>
+  <section class="sd-sources" aria-label="About this directory">
+    <h2>About this directory</h2>
+    <ul>
+      <li>School roster and coordinates are sourced from the <a href="https://atszim.org/school-directory/" rel="noopener" target="_blank">ATS school directory</a>.</li>
+      <li>City and province labels are assigned by The Mutapa Times based on the published coordinates.</li>
+      <li>School profile detail (founded date, head, denomination, motto, enrolment) comes from Wikipedia where a verified article exists.</li>
+      <li>We do not publish fees, pass rates or admission criteria here &mdash; these change every term and must be verified directly with the school.</li>
+    </ul>
+    <p class="sd-sources-note">Are you affiliated with one of these schools and have an update? Email <a href="mailto:news@mutapatimes.com?subject=ATS%20directory%20update">news@mutapatimes.com</a>.</p>
+  </section>
 </main>
 <footer class="atlantic-foot">
   <div class="atlantic-foot-inner">

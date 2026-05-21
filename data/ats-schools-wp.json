@@ -26,7 +26,15 @@
     "head": "A H Matthews",
     "head_title": "Headmaster",
     "summary": "Bernard Mizeki College is an independent boarding school for boys located in Marondera, Zimbabwe, approximately 87 km east of the capital city, Harare, and about 13.5 km northeast of Marondera town. The campus is situated along Pilgrimage Way, at 18.10209°S 31.64585°E.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Bernard_Mizeki_College"
+    "wikipedia": "https://en.wikipedia.org/wiki/Bernard_Mizeki_College",
+    "image": {
+      "filename": "Bernrd_Mizeki_College_LOGO.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Rogda83",
+      "credit": "Own work",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Bernrd_Mizeki_College_LOGO.jpg",
+      "local": "/img/schools/bernard-mizeki-college.jpg"
+    }
   },
   "Bryden Country School": {
     "name": "Bryden Country School",
@@ -268,7 +276,15 @@
     "head": "Percy K. Sachinda",
     "head_title": "Headmaster",
     "summary": "Kyle College is an independent, co-educational, boarding and day school situated about 6 km from the centre of Masvingo on Capota Road on the Eastern side of the Shagashe river. It has views of the Ruvure, Nyuni and Nyanda hills to the South, and the Mangwandi granite dome in the North West.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kyle_College"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kyle_College",
+    "image": {
+      "filename": "Kyle_College_Logo.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Muchira01",
+      "credit": "I scanned it onto my machine",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Kyle_College_Logo.jpg",
+      "local": "/img/schools/kyle-college.jpg"
+    }
   },
   "Lilfordia School": {
     "name": "Lilfordia School",
@@ -433,7 +449,15 @@
     "mascot": "The Dragon",
     "denomination": "Roman Catholic (Jesuit)",
     "summary": "St. George's College is a private Jesuit boys high school in Harare, Zimbabwe. The school, colloquially referred to as Saints or George's, is located along Borrowdale Road, in Harare. The land was donated to the Jesuits. This led to the relocation of the school site from Bulawayo to Harare, the foundation of St. George's College. On the same site, a preparatory primary school was established, called Hartmann House (HH). This site is next to the presidents house, which acts as the official Zimbabwe State House. The school motto is Ex Fide Fiducia, a Latin phrase meaning \"From Faith Comes Confidence\".",
-    "wikipedia": "https://en.wikipedia.org/wiki/St._George%27s_College,_Harare"
+    "wikipedia": "https://en.wikipedia.org/wiki/St._George%27s_College,_Harare",
+    "image": {
+      "filename": "Saint-Georges-College.jpg",
+      "license": "Public domain",
+      "artist": "",
+      "credit": "",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Saint-Georges-College.jpg",
+      "local": "/img/schools/st-george-s-college.jpg"
+    }
   },
   "Watershed College": {
     "name": "Watershed College",
