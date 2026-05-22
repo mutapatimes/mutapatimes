@@ -1,7 +1,63 @@
 {
-  "fetched_at": "2026-05-22T06:46:03+00:00",
+  "fetched_at": "2026-05-22T11:42:08+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe deploys vessel monitoring technology to curb illegal fishing",
+      "link": "https://mutapatimes.com/articles/2026-05-22-zimbabwe-deploys-vessel-monitoring-technology-to-curb-illega",
+      "image": "https://www.mutapatimes.com/img/cards/news/0ac428f10fac.png",
+      "pubDate": "2026-05-22T09:50:55+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe celebrates Biodiversity Day, unveils major conservation strides",
+      "link": "https://mutapatimes.com/articles/2026-05-22-zimbabwe-celebrates-biodiversity-day-unveils-major-conservat",
+      "image": "https://www.mutapatimes.com/img/cards/news/675f16e19afc.png",
+      "pubDate": "2026-05-22T08:20:02+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe celebrates Biodiversity Day, unveils major conservation strides",
+      "link": "https://mutapatimes.com/news/2026-05-22-zimbabwe-celebrates-biodiversity-day-unveils-major-conservation-strides-283a56",
+      "image": "https://www.mutapatimes.com/img/cards/news/518098abb236.png",
+      "pubDate": "2026-05-22T08:20:02+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Police launch nationwide blitz against carrying knives, machetes in public as violent crimes surge",
+      "link": "https://mutapatimes.com/news/2026-05-21-police-launch-nationwide-blitz-against-carrying-knives-machetes-in-public-as-6bfe54",
+      "image": "https://www.mutapatimes.com/img/cards/news/a2e873c0df26.png",
+      "pubDate": "2026-05-21T23:02:03+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Themba Gorimbo Announces Retirement From MMA: ‘I Dared To Be Someone And Something And Failed’",
+      "link": "https://mutapatimes.com/articles/2026-05-21-themba-gorimbo-announces-retirement-from-mma-i-dared-to-be-s",
+      "image": "https://www.mutapatimes.com/img/cards/news/c6939ba204e7.png",
+      "pubDate": "2026-05-21T22:38:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Themba Gorimbo Announces Retirement From MMA: ‘I Dared To Be Someone And Something And Failed’",
+      "link": "https://mutapatimes.com/news/2026-05-21-themba-gorimbo-announces-retirement-from-mma-i-dared-to-be-someone-and-b0f0b7",
+      "image": "https://www.mutapatimes.com/img/cards/news/58b9d6adf3e2.png",
+      "pubDate": "2026-05-21T22:38:45+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Govt draws lessons at World Urban Forum",
+      "link": "https://mutapatimes.com/articles/2026-05-21-govt-draws-lessons-at-world-urban-forum",
+      "image": "https://www.mutapatimes.com/img/cards/news/6a7addebc361.png",
+      "pubDate": "2026-05-21T22:13:57+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim finance & insurance sector produced $2.0B in 2025 Q4 — 10.7% of GDP.",
@@ -57,6 +113,46 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-05-21T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "National Auctioneers ~~ 0 — Receptionist (Maternity Leave Cover)",
+      "link": "https://vacancymail.co.zw/jobs/receptionist-maternity-leave-cover-67610/",
+      "image": "https://mutapatimes.com/img/cards/jobs/937b689dbc32.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Loan Accountant / Portfolio Accountant",
+      "link": "https://vacancymail.co.zw/jobs/loan-accountant-portfolio-accountant-67609/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d19cae18cc93.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accountant",
+      "link": "https://vacancymail.co.zw/jobs/accountant-67608/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2bfe0f37f235.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "IT & Digital Communications Officer",
+      "link": "https://vacancymail.co.zw/jobs/it-digital-communications-officer-67607/",
+      "image": "https://mutapatimes.com/img/cards/jobs/29ab2a80b0b6.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Credit & Risk Officer",
+      "link": "https://vacancymail.co.zw/jobs/credit-risk-officer-67606/",
+      "image": "https://mutapatimes.com/img/cards/jobs/48de0c40b902.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -383,102 +479,6 @@
       "title": "Seke Teacher's College — Lecturer : Psychology",
       "link": "https://vacancymail.co.zw/jobs/lecturer-psychology-67564/",
       "image": "https://mutapatimes.com/img/cards/jobs/b265eef8adf8.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Class 1 Artisan : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/class-1-artisan-aeci-mining-zimbabwe-pvt-ltd-67563/",
-      "image": "https://mutapatimes.com/img/cards/jobs/96441d51dc1c.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Financial Planning & Analysis Accountant x1 : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/financial-planning-analysis-accountant-x1-aeci-mining-zimbabwe-pvt-ltd-67562/",
-      "image": "https://mutapatimes.com/img/cards/jobs/66fa77955d77.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Junior Security Operations Centre Specialist – Ict – Level 9 (5 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/junior-security-operations-centre-specialist-ict-level-9-5-posts-67560/",
-      "image": "https://mutapatimes.com/img/cards/jobs/88fb30ef0eab.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Open Systems Specialist – Ict – Level 8 (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/open-systems-specialist-ict-level-8-1-post-67559/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9742c4b96386.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Database Administrator – Ict – Level 8 (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/database-administrator-ict-level-8-1-post-67558/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6472439a15aa.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Windows Systems Exchange Specialist – Ict – Level 8 (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/windows-systems-exchange-specialist-ict-level-8-1-post-67557/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dec7b7b0dcfa.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Windows Systems Domain Controller Specialist - Ict – Level 8 (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/windows-systems-domain-controller-specialist-ict-level-8-1-post-67556/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b8599e1e963c.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Applications Developer, Integrations – Ict – Level 8 (4 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/applications-developer-integrations-ict-level-8-4-posts-67555/",
-      "image": "https://mutapatimes.com/img/cards/jobs/43ca42d5ce99.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Applications Developer, Fdms - Ict – Level 8 (3 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/applications-developer-fdms-ict-level-8-3-posts-67554/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3d71a278d1bf.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Vulnerability Management Specialist – Ict – Level 8 (2 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/vulnerability-management-specialist-ict-level-8-2-posts-67553/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cd56475859aa.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Threat Intelligence Specialist – Ict – Level 8 (2 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/threat-intelligence-specialist-ict-level-8-2-posts-67552/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc423f4362c0.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hospitality Services Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/hospitality-services-supervisor-67561/",
-      "image": "https://mutapatimes.com/img/cards/jobs/73661bfa81d9.png",
       "pubDate": "2026-05-21T22:00:00+00:00",
       "category": "Jobs"
     }
