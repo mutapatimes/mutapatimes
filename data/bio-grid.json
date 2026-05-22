@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-05-22T14:29:15+00:00",
+  "fetched_at": "2026-05-22T17:05:19+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Zimbabwe Bars Foreign Operators From Small-Scale Gold Mining",
-      "link": "https://mutapatimes.com/articles/2026-05-22-zimbabwe-bars-foreign-operators-from-small-scale-gold-mining",
-      "image": "https://www.mutapatimes.com/img/cards/news/d40d852918ba.png",
-      "pubDate": "2026-05-22T13:43:02+00:00",
-      "category": "Business"
-    },
     {
       "kind": "news",
       "title": "Zimbabwe celebrates Biodiversity Day, unveils major conservation strides",
@@ -17,6 +9,14 @@
       "image": "https://www.mutapatimes.com/img/cards/news/518098abb236.png",
       "pubDate": "2026-05-22T08:20:02+00:00",
       "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Dramatic turn: Wicknell Chivayo’s ex-wife Sonja and her mother Tabitha Madzikanda further languish behind bars",
+      "link": "https://mutapatimes.com/news/2026-05-22-dramatic-turn-wicknell-chivayo-s-ex-wife-sonja-and-her-mother-tabitha-62fee1",
+      "image": "https://www.mutapatimes.com/img/cards/news/4945b47fd3a6.png",
+      "pubDate": "2026-05-22T04:35:10+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -89,6 +89,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-05-21T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "ST-ONE Machinery — Warehouse Security Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/warehouse-security-supervisor-67613/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9955a46b3ebe.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ST-ONE Machinery — PR & Advertising Negotiator",
+      "link": "https://vacancymail.co.zw/jobs/pr-advertising-negotiator-67612/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4fafb792e636.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ST-ONE Machinery — Social Media Strategist",
+      "link": "https://vacancymail.co.zw/jobs/social-media-strategist-67611/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6b416a74172b.png",
+      "pubDate": "2026-05-21T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -455,30 +479,6 @@
       "title": "Seke Teacher's College — Lecturer : Psychology",
       "link": "https://vacancymail.co.zw/jobs/lecturer-psychology-67564/",
       "image": "https://mutapatimes.com/img/cards/jobs/b265eef8adf8.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Class 1 Artisan : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/class-1-artisan-aeci-mining-zimbabwe-pvt-ltd-67563/",
-      "image": "https://mutapatimes.com/img/cards/jobs/96441d51dc1c.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Financial Planning & Analysis Accountant x1 : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/financial-planning-analysis-accountant-x1-aeci-mining-zimbabwe-pvt-ltd-67562/",
-      "image": "https://mutapatimes.com/img/cards/jobs/66fa77955d77.png",
-      "pubDate": "2026-05-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Junior Security Operations Centre Specialist – Ict – Level 9 (5 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/junior-security-operations-centre-specialist-ict-level-9-5-posts-67560/",
-      "image": "https://mutapatimes.com/img/cards/jobs/88fb30ef0eab.png",
       "pubDate": "2026-05-21T22:00:00+00:00",
       "category": "Jobs"
     }
