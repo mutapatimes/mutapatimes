@@ -1,0 +1,380 @@
+{
+  "fetched_at": "2026-05-22",
+  "source": "Wikipedia categories (Mines_in_Zimbabwe and commodity-specific subcategories)",
+  "count": 37,
+  "mines": [
+    {
+      "commodity": "Lithium",
+      "wp_slug": "Arcadia_Lithium_Mine",
+      "name": "Arcadia Lithium Mine",
+      "slug": "arcadia-lithium-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Athens_Mine",
+      "name": "Athens Mine",
+      "slug": "athens-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Lithium",
+      "wp_slug": "Bikita_mine",
+      "name": "Bikita Minerals",
+      "slug": "bikita-minerals",
+      "wp": {
+        "products": "Lithium",
+        "summary": "The Bikita mine is the largest lithium mine in Zimbabwe. The privately owned company holds the world’s largest-known deposit of lithium at approximately 11 million tonnes. The mine is located in southern Zimbabwe in Masvingo Province. The Bikita mine has reserves amounting to 10.8 million tonnes of lithium ore grading 1.4% lithium thus resulting 0.15 million tonnes of lithium.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bikita_mine",
+        "image": {
+          "filename": "Bikitait.jpg",
+          "license": "CC BY-SA 4.0",
+          "artist": "Kaethe17",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Bikitait.jpg",
+          "local": "/img/mining/bikita-minerals.jpg"
+        }
+      }
+    },
+    {
+      "commodity": "Nickel",
+      "wp_slug": "Bindura_Nickel_Corporation",
+      "name": "Bindura Nickel Corporation",
+      "slug": "bindura-nickel-corporation",
+      "wp": {
+        "summary": "Bindura Nickel Corporation (BNC) is a mining company based in Zimbabwe's Mashonaland Central.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bindura_Nickel_Corporation"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Blanket_Mine",
+      "name": "Blanket Mine",
+      "slug": "blanket-mine",
+      "wp": {
+        "lat": -20.86021666666667,
+        "lon": 28.91022222222222,
+        "summary": "Blanket Mine is a village and mine in the province of Matabeleland South, Zimbabwe. It is located about 15 km north-west of Gwanda and 140 km south of Bulawayo. The village grew up around the eponymous gold mine and provides a residential and commercial centre. Its population at the time of the 1982 census was 1,346 people.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Blanket_Mine"
+      }
+    },
+    {
+      "commodity": "Iron",
+      "wp_slug": "Buchwa",
+      "name": "Buchwa Iron Mine",
+      "slug": "buchwa-iron-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Bushtick_Mine",
+      "name": "Bushtick Mine",
+      "slug": "bushtick-mine",
+      "wp": {
+        "lat": -20.20861111111111,
+        "lon": 28.96972222222222,
+        "summary": "Bushtick Mine was a gold mining operation established in the 1920s and operative through early 1950s in Essexvale District, Matabeleland in Southern Rhodesia. It was established by the British South Africa Company.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bushtick_Mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Cam_and_Motor_Mine",
+      "name": "Cam and Motor Mine",
+      "slug": "cam-and-motor-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Nickel",
+      "wp_slug": "Empress_Mine",
+      "name": "Empress Mine",
+      "slug": "empress-mine",
+      "wp": {
+        "lat": -18.46,
+        "lon": 29.435997222222223,
+        "summary": "Empress Mine Township is a populated place in the area formerly known as Salakuhle in Zhombe Communal Land, Kwekwe District of the Midlands Province in Zimbabwe. It is Zhombe's largest growth point yet officially it is rated second after Zhombe Joel, the current Zhombe District capital.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Empress_Mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Eureka_Mine,_Zimbabwe",
+      "name": "Eureka Mine",
+      "slug": "eureka-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Freda_Rebecca_Mine",
+      "name": "Freda Rebecca Mine",
+      "slug": "freda-rebecca-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Gaika_Mine",
+      "name": "Gaika Mine",
+      "slug": "gaika-mine",
+      "wp": {
+        "summary": "The Gaika Mine, now known as the Gaika Gold Fields, is situated in what was Chicago Farm just about 2 kilometres (1.2 mi) south of Kwekwe CBD. The Gaika Mine was the earliest mine developed in 1894, then Globe and Phoenix in 1895–1900, the Eldorado in 1905, the Antelope in 1908, the Cam and Motor Mine in 1909, the Shamva Mine in 1909–1910, and numerous others during the period 1895–1911.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gaika_Mine"
+      }
+    },
+    {
+      "commodity": "General",
+      "wp_slug": "Gaths_Mine",
+      "name": "Gaths Mine",
+      "slug": "gaths-mine",
+      "wp": {
+        "products": "Asbestos",
+        "owner": "Mutumwa Mawere",
+        "place": "Mashava",
+        "operator_label": "Mutumwa Mawere",
+        "location_label": "Mashava",
+        "summary": "Gaths Mine is an asbestos mine in Mashava, Masvingo Province, Zimbabwe, and is located 40 km west of Masvingo city. Gaths Mine as it is now collectively known as is a combination of three mines: King Mine and the now-defunct Temeraire and Gaths. The mine once employed around 1,500 people but as it stands, production has been stopped due to operational challenges. A few employees are left at the mine doing general maintenance. As of November 2011, workers had been without a salary for three years.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gaths_Mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Globe_and_Phoenix_Mine",
+      "name": "Globe and Phoenix Mine",
+      "slug": "globe-and-phoenix-mine",
+      "wp": {
+        "summary": "Globe and Phoenix Mine is a gold mine in Zimbabwe. It is just outside Kwekwe CBD.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Globe_and_Phoenix_Mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "How_Mine",
+      "name": "How Mine",
+      "slug": "how-mine",
+      "wp": {
+        "summary": "How Mine Football Club was a football club based in Bulawayo, Zimbabwe. The club played in the Zimbabwe Premier Soccer League before surrendering their license before the 2018 season. The team was sponsored by the How gold mine.",
+        "wikipedia": "https://en.wikipedia.org/wiki/How_Mine"
+      }
+    },
+    {
+      "commodity": "Coal",
+      "wp_slug": "Hwange_Colliery_Company",
+      "name": "Hwange Colliery",
+      "slug": "hwange-colliery",
+      "wp": {}
+    },
+    {
+      "commodity": "Lithium",
+      "wp_slug": "Kamativi_mine",
+      "name": "Kamativi mine",
+      "slug": "kamativi-mine",
+      "wp": {
+        "products": "tin, tantalum, lithium",
+        "lat": -18.328055555555554,
+        "lon": 27.066666666666666,
+        "summary": "The Kamativi mine was the largest tin mine in Zimbabwe. The mine is located in western Zimbabwe in Matabeleland North Province. The Kamativi mine has reserves amounting to 100 million tonnes of tin ore grading 0.28% tin thus resulting 0.28 million tonnes of tin. The tin and tantalum mine opened in 1936 and operated until 1994, when it closed due to lower tin prices on world markets. Since the mine's closure, local artisanal miners have worked the pegmatite for cassiterite and tantalite.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Kamativi_mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Madziwa_Mine",
+      "name": "Madziwa Mine",
+      "slug": "madziwa-mine",
+      "wp": {
+        "summary": "Madziwa Mine is a village that grew up next to a gold mine of the same name in the province of Mashonaland Central, Zimbabwe. It is located 32 km north of Shamva and about 100 km north-west of Harare. According to the 1982 Population Census, the village had a population of 4,617. The main mineral mined at Madziwa is nickel.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Madziwa_Mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Maphisa",
+      "name": "Maphisa",
+      "slug": "maphisa",
+      "wp": {
+        "subdivision_name": "Zimbabwe",
+        "location_label": "Zimbabwe",
+        "summary": "Maphisa is a small town in the Matobo District of the province of Matabeleland South. It also serves as the seat of Matobo Rural District Council and ultimately the district's largest business centre and development node. Three kilometres west of Maphisa is the Bhalagwe mountain on the Maphisa to Matjilotje Road. Maphisa Town's economic activity includes extensive gold mining by both large scale and artisanal miners. There are also many informal miners locally known as 'oTsheketshe'. It also boasts in excess of a 1500 hectare intensive farming under pivot irrigation system. There is also extensive commercial ranching in its precinct. The legendary liberation fighter Joshua Mqabuko Nkomo's home village is 40km South West of Maphisa. The amenities found in Maphisa include a modern hotel, Minda Mission which provides education from primary to Advanced level. There are modern supermarkets, a referral Maphisa Hospital and Hlalani Kuhle suburb. King Mzilikazi's grave and Cecil John Rhodes's grave are 84km and 65km respectively North East of Maphisa. The Matobo national park, a World Heritage Site is located 50km North East of Maphisa. SADC Icrisat is located 70km North East of Maphisa.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Maphisa"
+      }
+    },
+    {
+      "commodity": "Diamond",
+      "wp_slug": "Marange_diamond_fields",
+      "name": "Marange diamond fields",
+      "slug": "marange-diamond-fields",
+      "wp": {
+        "lat": -19.2,
+        "lon": 29.5,
+        "summary": "The Marange diamond fields are an area of widespread small-scale diamond production in Chiadzwa, Mutare District, Zimbabwe. The hugely prolific fields are regarded by some experts as the world's biggest diamond find in more than a century: \"[a]lthough estimates of the reserves contained in this area vary wildly, some have suggested that it could be home to one of the world's richest diamond deposits\".",
+        "wikipedia": "https://en.wikipedia.org/wiki/Marange_diamond_fields"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Mazowe_Mine",
+      "name": "Mazowe Mine",
+      "slug": "mazowe-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Platinum group",
+      "wp_slug": "Mimosa_mine",
+      "name": "Mimosa Mine",
+      "slug": "mimosa-mine",
+      "wp": {
+        "products": "platinum",
+        "lat": -20.3279,
+        "lon": 29.8253,
+        "summary": "The Mimosa mine is a large underground mine located in the southern part of Zimbabwe in the Zvishavane District of Midlands Province. Mimosa was the first platinum mine in the Great Dyke of Zimbabwe. It had, as of 2012, platinum reserves estimated at 7.9 million ozs of platinum. The mine produces around 120,000 oz of platinum/year.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Mimosa_mine"
+      }
+    },
+    {
+      "commodity": "Diamond",
+      "wp_slug": "Murowa_diamond_mine",
+      "name": "Murowa diamond mine",
+      "slug": "murowa-diamond-mine",
+      "wp": {
+        "products": "Diamonds",
+        "owner": "RZ Murowa Holdings Ltd (majority)",
+        "operator_label": "RZ Murowa Holdings Ltd (majority)",
+        "lat": -20.49138888888889,
+        "lon": 30.402777777777775,
+        "summary": "The Murowa diamond mine is a diamond mine located in Mazvihwa, south central Zimbabwe, about 40 kilometres from the asbestos mining town of Zvishavane in the Midlands province. The mine is owned and operated by RZM Murowa (Private) Limited, a member of RioZim. The mine is a combination of open pit and underground construction. Current estimates put construction costs at $61 million USD and mine reserves are 19 million tonnes of ore, with an ore grade of 0.9 carats (180 mg) per tonne.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Murowa_diamond_mine"
+      }
+    },
+    {
+      "commodity": "Iron",
+      "wp_slug": "Mwanesi_mine",
+      "name": "Mwanesi mine",
+      "slug": "mwanesi-mine",
+      "wp": {
+        "products": "Iron ore",
+        "summary": "The Mwanesi mine is a large iron mine located in central Zimbabwe in the Midlands Province. Mwanesi represents one of the largest iron ore reserves in Zimbabwe and in the world having estimated reserves of 30 billion tonnes of ore grading 43% iron metal.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Mwanesi_mine"
+      }
+    },
+    {
+      "commodity": "Platinum group",
+      "wp_slug": "Ngezi_mine",
+      "name": "Ngezi mine",
+      "slug": "ngezi-mine",
+      "wp": {
+        "products": "platinum",
+        "summary": "The Ngezi mine is a collection of underground mines located in the northern part of Zimbabwe in Mashonaland West Province. Ngezi represents one of the largest platinum reserves in Southern Africa having estimated reserves of 107.4 million oz of platinum. The mine produces around 200,000 oz of platinum/year.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ngezi_mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Redwing_Mine",
+      "name": "Redwing Mine",
+      "slug": "redwing-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Renco_Mine",
+      "name": "Renco Mine",
+      "slug": "renco-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Sabi_Gold_Mine",
+      "name": "Sabi Gold Mine",
+      "slug": "sabi-gold-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "Lithium",
+      "wp_slug": "Sandawana_mines",
+      "name": "Sandawana Mine",
+      "slug": "sandawana-mine",
+      "wp": {
+        "products": "emeralds, lithium",
+        "owner": "Rio Tinto Zinc 1958–1993; Sandawana Mines Ltd. 1993–2019; Kuvimba Mining House 2019–",
+        "operator_label": "Rio Tinto Zinc 1958–1993; Sandawana Mines Ltd. 1993–2019; Kuvimba Mining House 2019–",
+        "lat": -20.916666666666668,
+        "lon": 29.93305555555556,
+        "summary": "The Sandawana Mines are a mining complex in Mberengwa District, Midlands Province of Zimbabwe, primarily known for its emeralds. The mines are sixty-five kilometers south of the town of Mberengwa.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Sandawana_mines"
+      }
+    },
+    {
+      "commodity": "Asbestos",
+      "wp_slug": "Shabanie_Mine",
+      "name": "Shabanie Mine",
+      "slug": "shabanie-mine",
+      "wp": {
+        "summary": "Shabanie Mine is a Zimbabwean football club based in Zvishavane. They play in the ZIFA Division One Central Region.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Shabanie_Mine"
+      }
+    },
+    {
+      "commodity": "Nickel",
+      "wp_slug": "Trojan_Nickel_Mine",
+      "name": "Trojan Mine",
+      "slug": "trojan-mine",
+      "wp": {}
+    },
+    {
+      "commodity": "General",
+      "wp_slug": "Turk_Mine",
+      "name": "Turk Mine",
+      "slug": "turk-mine",
+      "wp": {
+        "summary": "Turk Mine is a village in the province of Matabeleland North, Zimbabwe. It is located about 56 km north-east of Bulawayo. The village grew up around a gold mine of the same name and serves as an administrative centre for the surrounding mining and ranching area.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Turk_Mine"
+      }
+    },
+    {
+      "commodity": "Platinum group",
+      "wp_slug": "Unki_mine",
+      "name": "Unki Mine",
+      "slug": "unki-mine",
+      "wp": {
+        "products": "platinum, palladium, rhodium, ruthenium, gold",
+        "owner": "Valterra Platinum",
+        "place": "Shurugwi",
+        "operator_label": "Valterra Platinum",
+        "location_label": "Shurugwi",
+        "summary": "The Unki mine is an underground mine located in the central part of Zimbabwe in Shurugwi, Midlands Province. Unki represents one of the largest platinum reserves in Zimbabwe having estimated reserves of 34 million oz of platinum. The mine produces around 64,000 oz (1814 kg) of platinum/year.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Unki_mine"
+      }
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Vubachikwe",
+      "name": "Vubachikwe",
+      "slug": "vubachikwe",
+      "wp": {
+        "lat": -20.881944444444446,
+        "lon": 28.92361111111111,
+        "summary": "Vumbachigwe is a village and a goldmine in Gwanda District, in the province of Matabeleland South, Zimbabwe. It is located along the Mtshabezi River about ten kilometres (6.2 mi) north-west of the town of Gwanda. According to the 1982 Population Census, the village had a population of 2,077. The village grew as the residential and commercial centre for the employees of the Vubachikwe gold mine.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Vubachikwe"
+      }
+    },
+    {
+      "commodity": "Coal",
+      "wp_slug": "Wankie_Colliery",
+      "name": "Wankie Colliery",
+      "slug": "wankie-colliery",
+      "wp": {}
+    },
+    {
+      "commodity": "Platinum group",
+      "wp_slug": "Zimplats",
+      "name": "Zimplats",
+      "slug": "zimplats",
+      "wp": {}
+    },
+    {
+      "commodity": "Gold",
+      "wp_slug": "Zinca_Mine",
+      "name": "Zinca Mine",
+      "slug": "zinca-mine",
+      "wp": {}
+    }
+  ]
+}
