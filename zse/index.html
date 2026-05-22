@@ -1,0 +1,882 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <title>Zimbabwe Stock Exchange (ZSE) listed companies — live prices | The Mutapa Times</title>
+    <link rel="canonical" href="https://www.mutapatimes.com/zse/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mutapa Times">
+    <link rel="apple-touch-icon" href="../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></noscript>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css?v=102">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="author" content="The Mutapa Times">
+    <meta name="twitter:site" content="@mutapatimes">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="All 54 companies and funds listed on the Zimbabwe Stock Exchange — latest ZWG price, daily change, YTD performance and market cap. Searchable, sortable, with full company profiles.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zimbabwe Stock Exchange (ZSE) listed companies — live prices">
+    <meta property="og:description" content="All 54 companies and funds listed on the Zimbabwe Stock Exchange — latest ZWG price, daily change, YTD performance and market cap. Searchable, sortable, with full company profiles.">
+    <meta property="og:url" content="https://www.mutapatimes.com/zse/">
+    <meta property="og:site_name" content="The Mutapa Times">
+    <meta name="twitter:title" content="Zimbabwe Stock Exchange (ZSE) listed companies — live prices">
+    <meta name="twitter:description" content="All 54 companies and funds listed on the Zimbabwe Stock Exchange — latest ZWG price, daily change, YTD performance and market cap. Searchable, sortable, with full company profiles.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "headline": "Zimbabwe Stock Exchange (ZSE) listed companies — live prices", "description": "All 54 companies and funds listed on the Zimbabwe Stock Exchange — latest ZWG price, daily change, YTD performance and market cap. Searchable, sortable, with full company profiles.", "url": "https://www.mutapatimes.com/zse/", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "The Mutapa Times", "logo": {"@type": "ImageObject", "url": "https://www.mutapatimes.com/img/logo.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "ZSE listed companies", "item": "https://www.mutapatimes.com/zse/"}]}</script>
+<style>
+.zse-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.zse-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
+.zse-section-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+  font-weight: 700; margin: 0 0 8px; }
+.zse-section-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.8em, 4vw, 2.6em); line-height: 1.1; color: var(--ink);
+  margin: 0 0 10px; letter-spacing: -0.01em; }
+.zse-section-stand { font-family: 'Inter', system-ui, sans-serif; font-size: 1em;
+  line-height: 1.55; color: var(--text-mid); margin: 0 0 14px; max-width: 44em; }
+.zse-rule { width: 48px; height: 3px; background: var(--accent); border: 0; margin: 8px 0 0; }
+
+.zse-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; max-width: 1100px; margin: 20px auto 8px; padding: 0 20px; }
+.zse-stat { padding: 14px 16px; background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 8px; }
+.zse-stat-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light);
+  margin: 0 0 4px; font-weight: 600; }
+.zse-stat-value { font-family: 'Playfair Display', Georgia, serif; font-size: 1.4em;
+  line-height: 1.15; color: var(--ink); margin: 0; font-weight: 700; }
+
+.zse-filterbar { max-width: 1100px; margin: 14px auto 0; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.zse-search { width: 100%; padding: 10px 14px; font-size: 0.95em;
+  font-family: inherit; background: #fff; border: 1px solid var(--rule);
+  color: var(--ink); border-radius: 6px; margin: 0 0 10px; }
+.zse-search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.zse-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.zse-chip { font-size: 0.78em; padding: 5px 12px; background: #f0ece4;
+  border: 1px solid var(--rule); color: var(--ink); border-radius: 14px;
+  cursor: pointer; user-select: none; font-family: inherit; }
+.zse-chip:hover { border-color: var(--ink); }
+.zse-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.zse-clear { font-size: 0.78em; color: var(--text-mid); text-decoration: underline;
+  cursor: pointer; background: none; border: 0; padding: 5px 6px; margin-left: 4px;
+  font-family: inherit; }
+.zse-clear:hover { color: var(--accent); }
+.zse-count { max-width: 1100px; margin: 14px auto 6px; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 0.82em; color: var(--text-light); }
+
+/* Table view */
+.zse-tablewrap { max-width: 1100px; margin: 8px auto 4px; padding: 0 20px;
+  overflow-x: auto; }
+.zse-table { width: 100%; border-collapse: collapse; font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.92em; background: #fff; border: 1px solid var(--rule); border-radius: 8px;
+  overflow: hidden; }
+.zse-table thead th { text-align: left; padding: 10px 14px; background: var(--paper);
+  border-bottom: 1px solid var(--rule); font-size: 0.72em; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-light); cursor: pointer; user-select: none;
+  white-space: nowrap; }
+.zse-table thead th[aria-sort]::after { content: ' ⇅'; opacity: 0.4; font-size: 0.85em; }
+.zse-table thead th[aria-sort="ascending"]::after  { content: ' ↑'; opacity: 1; color: var(--accent); }
+.zse-table thead th[aria-sort="descending"]::after { content: ' ↓'; opacity: 1; color: var(--accent); }
+.zse-table tbody td { padding: 10px 14px; border-bottom: 1px solid var(--rule);
+  color: var(--text); }
+.zse-table tbody tr:last-child td { border-bottom: 0; }
+.zse-table tbody tr:hover { background: var(--paper); }
+.zse-table a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.zse-table a:hover { color: var(--accent); }
+.zse-table .num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.zse-table .pos { color: #1f7a3e; }
+.zse-table .neg { color: var(--accent); }
+.zse-table .sect { font-size: 0.75em; padding: 2px 8px; background: #f0ece4;
+  color: var(--ink); border-radius: 10px; white-space: nowrap; }
+.zse-table tr[hidden] { display: none; }
+@media (max-width: 640px) {
+  .zse-table thead th, .zse-table tbody td { padding: 8px 10px; font-size: 0.85em; }
+  .zse-table .sect { display: none; }
+}
+
+/* Per-company detail */
+.zse-detail-head { max-width: 820px; margin: 0 auto; padding: 28px 20px 12px; }
+.zse-detail-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent);
+  margin: 0 0 10px; font-weight: 700; }
+.zse-detail-sect { font-family: 'Inter', system-ui, sans-serif; font-size: 0.78em;
+  letter-spacing: 0.08em; color: var(--text-light); text-transform: uppercase;
+  margin: 0 0 6px; font-weight: 600; }
+.zse-detail-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.9em, 4.4vw, 2.8em); line-height: 1.1; margin: 0 0 12px;
+  color: var(--ink); letter-spacing: -0.01em; }
+.zse-detail-stand { font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.02em; line-height: 1.55; color: var(--text-mid); margin: 0; max-width: 44em; }
+.zse-detail-rule { width: 48px; height: 3px; background: var(--accent); border: 0; margin: 14px 0 0; }
+
+.zse-pricerow { max-width: 1000px; margin: 18px auto 24px; padding: 0 20px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.zse-pricecell { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 14px 16px; }
+.zse-pricecell-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light);
+  font-weight: 600; margin: 0 0 4px; }
+.zse-pricecell-value { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35em;
+  font-weight: 700; color: var(--ink); margin: 0; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.zse-pricecell-value.pos { color: #1f7a3e; }
+.zse-pricecell-value.neg { color: var(--accent); }
+
+.zse-hero-img { max-width: 1000px; margin: 0 auto 18px; padding: 0 20px; }
+.zse-hero-img img { width: 100%; height: auto; max-height: 440px; object-fit: cover;
+  border-radius: 8px; border: 1px solid var(--rule); display: block; background: var(--paper); }
+.zse-hero-img-cap { font-family: 'Inter', system-ui, sans-serif; font-size: 0.74em;
+  color: var(--text-light); margin: 6px 0 0; line-height: 1.45; }
+.zse-hero-img-cap a { color: var(--text-mid); }
+
+.zse-prose { max-width: 720px; margin: 0 auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.zse-prose h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.4em; line-height: 1.2; margin: 26px 0 10px; color: var(--ink); }
+.zse-prose p { font-size: 1em; line-height: 1.65; color: var(--text); margin: 0 0 12px; }
+.zse-prose ul { font-size: 1em; line-height: 1.65; padding-left: 20px; margin: 0 0 14px; }
+.zse-prose li { margin-bottom: 5px; }
+.zse-prose a { color: var(--accent); text-decoration: underline; }
+.zse-prose a:hover { color: var(--ink); }
+.zse-prose strong { color: var(--ink); }
+
+.zse-profile { display: grid; grid-template-columns: minmax(110px, max-content) 1fr;
+  gap: 8px 18px; margin: 10px 0 6px; font-size: 0.95em;
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 14px 18px; }
+.zse-profile-row { display: contents; }
+.zse-profile dt { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light);
+  font-weight: 700; padding-top: 3px; }
+.zse-profile dd { margin: 0; font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5; color: var(--ink); }
+.zse-profile-credit { font-size: 0.78em; color: var(--text-light); margin: 8px 0 0; }
+.zse-profile-credit a { color: var(--text-mid); }
+@media (max-width: 540px) {
+  .zse-profile { grid-template-columns: 1fr; gap: 2px 0; padding: 12px 14px; }
+  .zse-profile dt { padding-top: 10px; }
+  .zse-profile-row:first-child dt { padding-top: 0; }
+}
+
+.zse-sources { max-width: 720px; margin: 22px auto 6px; padding: 16px 20px;
+  border-top: 2px solid var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+.zse-sources h2 { font-size: 0.74em; letter-spacing: 0.18em; text-transform: uppercase;
+  margin: 0 0 10px; color: var(--text-light); font-weight: 700; font-family: inherit; }
+.zse-sources ul { font-size: 0.88em; margin: 0 0 10px; padding-left: 20px; line-height: 1.55;
+  color: var(--text); }
+.zse-sources a { color: var(--ink); text-decoration: underline; }
+.zse-sources-note { font-size: 0.8em; color: var(--text-light); margin: 0; line-height: 1.55; }
+
+.zse-back { text-align: center; margin: 24px 0 40px; font-family: 'Inter', system-ui, sans-serif; }
+.zse-back a { font-size: 0.88em; color: var(--ink); border-bottom: 1px solid var(--accent);
+  text-decoration: none; padding-bottom: 2px; }
+.zse-back a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="topbar" id="topbar" aria-label="Sticky navigation">
+  <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
+  <a href="/subscribe" class="topbar-cta">Subscribe</a>
+</div>
+<main>
+  <header class="zse-section-header">
+    <p class="zse-section-eyebrow">Mutapa Times &middot; Markets</p>
+    <h1 class="zse-section-title">Zimbabwe Stock Exchange &mdash; listed companies</h1>
+    <p class="zse-section-stand">All 54 companies and funds on the Zimbabwe Stock
+      Exchange (ZSE), with latest closing price in ZWG, daily change, year-to-date
+      performance, and market capitalisation. Click any company for its full
+      profile, history, and our latest coverage.</p>
+    <hr class="zse-rule">
+  </header>
+  <div class="zse-stats" role="list">
+    <div class="zse-stat"><p class="zse-stat-label">Listed equities</p><p class="zse-stat-value">49</p></div>
+    <div class="zse-stat"><p class="zse-stat-label">ETFs &amp; REITs</p><p class="zse-stat-value">5</p></div>
+    <div class="zse-stat"><p class="zse-stat-label">Sectors</p><p class="zse-stat-value">9</p></div>
+    <div class="zse-stat"><p class="zse-stat-label">Combined market cap</p><p class="zse-stat-value">ZWG 107.1B</p></div>
+  </div>
+  <div class="zse-filterbar">
+    <input type="search" class="zse-search" id="zseSearch"
+           placeholder="Search by company name…" aria-label="Search ZSE companies">
+    <div class="zse-chips" role="group" aria-label="Filter by sector">
+            <button class="zse-chip" data-filter="basic materials" aria-pressed="false">Basic Materials</button>
+      <button class="zse-chip" data-filter="consumer goods" aria-pressed="false">Consumer Goods</button>
+      <button class="zse-chip" data-filter="consumer services" aria-pressed="false">Consumer Services</button>
+      <button class="zse-chip" data-filter="etf" aria-pressed="false">ETF</button>
+      <button class="zse-chip" data-filter="financials" aria-pressed="false">Financials</button>
+      <button class="zse-chip" data-filter="industrials" aria-pressed="false">Industrials</button>
+      <button class="zse-chip" data-filter="oil &amp; gas" aria-pressed="false">Oil &amp; Gas</button>
+      <button class="zse-chip" data-filter="technology" aria-pressed="false">Technology</button>
+      <button class="zse-chip" data-filter="telecom" aria-pressed="false">Telecom</button>
+      <button class="zse-clear" id="zseClear">Clear</button>
+    </div>
+  </div>
+  <p class="zse-count" id="zseCount" aria-live="polite">Showing all 54 listings.</p>
+  <div class="zse-tablewrap">
+    <table class="zse-table" id="zseTable">
+      <thead>
+        <tr>
+          <th data-sort="name" aria-sort="ascending">Company</th>
+          <th data-sort="sector">Sector</th>
+          <th data-sort="price" class="num">Price (ZWG)</th>
+          <th data-sort="day" class="num">1D</th>
+          <th data-sort="ytd" class="num">YTD</th>
+          <th data-sort="mcap" class="num">Mkt cap (B)</th>
+        </tr>
+      </thead>
+      <tbody id="zseBody">
+    <tr data-name="ariston holdings"
+        data-sector="consumer goods"
+        data-mcap="0.11" data-ytd="116.77" data-price="0.0685">
+      <td><a href="./ariston-holdings.html">Ariston Holdings</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">0.0685</td>
+      <td class="num ">—</td>
+      <td class="num pos">+116.77%</td>
+      <td class="num">0.11</td>
+    </tr>
+    <tr data-name="art corporation"
+        data-sector="industrials"
+        data-mcap="0.09" data-ytd="182.05" data-price="0.22">
+      <td><a href="./art-corporation.html">ART Corporation</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.22</td>
+      <td class="num pos">+12.76%</td>
+      <td class="num pos">+182.05%</td>
+      <td class="num">0.09</td>
+    </tr>
+    <tr data-name="astra industries"
+        data-sector="basic materials"
+        data-mcap="0.0" data-ytd="0" data-price="0.043">
+      <td><a href="./astra-industries.html">Astra Industries</a></td>
+      <td><span class="sect">Basic Materials</span></td>
+      <td class="num">0.043</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="british american tobacco zimbabwe"
+        data-sector="consumer goods"
+        data-mcap="3.44" data-ytd="71.22" data-price="166.7395">
+      <td><a href="./british-american-tobacco-zimbabwe.html">British American Tobacco Zimbabwe</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">166.74</td>
+      <td class="num pos">+15.00%</td>
+      <td class="num pos">+71.22%</td>
+      <td class="num">3.44</td>
+    </tr>
+    <tr data-name="border timbers"
+        data-sector="basic materials"
+        data-mcap="0.0" data-ytd="0" data-price="0.2">
+      <td><a href="./border-timbers.html">Border Timbers</a></td>
+      <td><span class="sect">Basic Materials</span></td>
+      <td class="num">0.2</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="cafca"
+        data-sector="industrials"
+        data-mcap="0.11" data-ytd="-4.4" data-price="13.001">
+      <td><a href="./cafca.html">Cafca</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">13.001</td>
+      <td class="num ">—</td>
+      <td class="num neg">-4.40%</td>
+      <td class="num">0.11</td>
+    </tr>
+    <tr data-name="cbz holdings"
+        data-sector="financials"
+        data-mcap="8.36" data-ytd="39.13" data-price="16.0">
+      <td><a href="./cbz-holdings.html">CBZ Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">16</td>
+      <td class="num ">—</td>
+      <td class="num pos">+39.13%</td>
+      <td class="num">8.36</td>
+    </tr>
+    <tr data-name="celsys"
+        data-sector="technology"
+        data-mcap="0" data-ytd="0" data-price="0">
+      <td><a href="./celsys.html">Celsys</a></td>
+      <td><span class="sect">Technology</span></td>
+      <td class="num"></td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">—</td>
+    </tr>
+    <tr data-name="cfi holdings"
+        data-sector="industrials"
+        data-mcap="0.63" data-ytd="11.32" data-price="6.0">
+      <td><a href="./cfi-holdings.html">CFI Holdings</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">6</td>
+      <td class="num ">—</td>
+      <td class="num pos">+11.32%</td>
+      <td class="num">0.63</td>
+    </tr>
+    <tr data-name="cottco holdings"
+        data-sector="consumer goods"
+        data-mcap="0.0" data-ytd="0" data-price="0.002">
+      <td><a href="./cottco-holdings.html">COTTCO Holdings</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">0.002</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="dawn properties"
+        data-sector="consumer services"
+        data-mcap="0.98" data-ytd="0" data-price="0.4">
+      <td><a href="./dawn-properties.html">Dawn Properties</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">0.4</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.98</td>
+    </tr>
+    <tr data-name="delta corporation"
+        data-sector="consumer goods"
+        data-mcap="39.6" data-ytd="42.6" data-price="29.5214">
+      <td><a href="./delta-corporation.html">Delta Corporation</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">29.5214</td>
+      <td class="num pos">+0.58%</td>
+      <td class="num pos">+42.60%</td>
+      <td class="num">39.60</td>
+    </tr>
+    <tr data-name="dairibord holdings"
+        data-sector="consumer goods"
+        data-mcap="0.96" data-ytd="42.11" data-price="2.700002">
+      <td><a href="./dairibord-holdings.html">Dairibord Holdings</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">2.7</td>
+      <td class="num neg">-0.09%</td>
+      <td class="num pos">+42.11%</td>
+      <td class="num">0.96</td>
+    </tr>
+    <tr data-name="fbc holdings"
+        data-sector="financials"
+        data-mcap="7.38" data-ytd="-11.67" data-price="10.9976">
+      <td><a href="./fbc-holdings.html">FBC Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">10.9976</td>
+      <td class="num neg">-4.10%</td>
+      <td class="num neg">-11.67%</td>
+      <td class="num">7.38</td>
+    </tr>
+    <tr data-name="fidelity life assurance"
+        data-sector="financials"
+        data-mcap="0.06" data-ytd="65.29" data-price="0.578513">
+      <td><a href="./fidelity-life-assurance.html">Fidelity Life Assurance</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">0.578513</td>
+      <td class="num ">—</td>
+      <td class="num pos">+65.29%</td>
+      <td class="num">0.06</td>
+    </tr>
+    <tr data-name="first mutual holdings"
+        data-sector="financials"
+        data-mcap="1.28" data-ytd="-34.5" data-price="1.866667">
+      <td><a href="./first-mutual-holdings.html">First Mutual Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">1.8667</td>
+      <td class="num neg">-6.67%</td>
+      <td class="num neg">-34.50%</td>
+      <td class="num">1.28</td>
+    </tr>
+    <tr data-name="general beltings holdings"
+        data-sector="industrials"
+        data-mcap="0.06" data-ytd="20.0" data-price="0.12">
+      <td><a href="./general-beltings-holdings.html">General Beltings Holdings</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.12</td>
+      <td class="num ">—</td>
+      <td class="num pos">+20.00%</td>
+      <td class="num">0.06</td>
+    </tr>
+    <tr data-name="hwange colliery company"
+        data-sector="oil &amp; gas"
+        data-mcap="0.0" data-ytd="0" data-price="0.0425">
+      <td><a href="./hwange-colliery-company.html">Hwange Colliery Company</a></td>
+      <td><span class="sect">Oil &amp; Gas</span></td>
+      <td class="num">0.0425</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="hippo valley estates"
+        data-sector="consumer goods"
+        data-mcap="1.85" data-ytd="17.4" data-price="9.59">
+      <td><a href="./hippo-valley-estates.html">Hippo Valley Estates</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">9.59</td>
+      <td class="num ">—</td>
+      <td class="num pos">+17.40%</td>
+      <td class="num">1.85</td>
+    </tr>
+    <tr data-name="interfin financial services"
+        data-sector="financials"
+        data-mcap="0" data-ytd="0" data-price="0">
+      <td><a href="./interfin-financial-services.html">Interfin Financial Services</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num"></td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">—</td>
+    </tr>
+    <tr data-name="lafarge cement zimbabwe"
+        data-sector="industrials"
+        data-mcap="11.5" data-ytd="0" data-price="143.75">
+      <td><a href="./lafarge-cement-zimbabwe.html">Lafarge Cement Zimbabwe</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">143.75</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">11.50</td>
+    </tr>
+    <tr data-name="mashonaland holdings"
+        data-sector="financials"
+        data-mcap="2.19" data-ytd="-22.16" data-price="1.298">
+      <td><a href="./mashonaland-holdings.html">Mashonaland Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">1.298</td>
+      <td class="num pos">+0.23%</td>
+      <td class="num neg">-22.16%</td>
+      <td class="num">2.19</td>
+    </tr>
+    <tr data-name="masimba holdings"
+        data-sector="industrials"
+        data-mcap="0.83" data-ytd="93.94" data-price="3.49">
+      <td><a href="./masimba-holdings.html">Masimba Holdings</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">3.49</td>
+      <td class="num ">—</td>
+      <td class="num pos">+93.94%</td>
+      <td class="num">0.83</td>
+    </tr>
+    <tr data-name="meikles"
+        data-sector="consumer services"
+        data-mcap="0.8" data-ytd="-0.2" data-price="3.13">
+      <td><a href="./meikles.html">Meikles</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">3.13</td>
+      <td class="num pos">+4.33%</td>
+      <td class="num neg">-0.20%</td>
+      <td class="num">0.80</td>
+    </tr>
+    <tr data-name="nicoz diamond insurance"
+        data-sector="financials"
+        data-mcap="0.02" data-ytd="0" data-price="0.0341">
+      <td><a href="./nicoz-diamond-insurance.html">Nicoz Diamond Insurance</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">0.0341</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.02</td>
+    </tr>
+    <tr data-name="nmbz holdings"
+        data-sector="financials"
+        data-mcap="2.1" data-ytd="0.98" data-price="5.2005">
+      <td><a href="./nmbz-holdings.html">NMBZ Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">5.2005</td>
+      <td class="num ">—</td>
+      <td class="num pos">+0.98%</td>
+      <td class="num">2.10</td>
+    </tr>
+    <tr data-name="nampak zimbabwe"
+        data-sector="industrials"
+        data-mcap="0.64" data-ytd="6.62" data-price="0.853">
+      <td><a href="./nampak-zimbabwe.html">Nampak Zimbabwe</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.853</td>
+      <td class="num ">—</td>
+      <td class="num pos">+6.62%</td>
+      <td class="num">0.64</td>
+    </tr>
+    <tr data-name="national tyre services"
+        data-sector="consumer goods"
+        data-mcap="0.14" data-ytd="0" data-price="0.57">
+      <td><a href="./national-tyre-services.html">National Tyre Services</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">0.57</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.14</td>
+    </tr>
+    <tr data-name="ok zimbabwe"
+        data-sector="consumer services"
+        data-mcap="0.36" data-ytd="-12.54" data-price="0.113694">
+      <td><a href="./ok-zimbabwe.html">OK Zimbabwe</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">0.113694</td>
+      <td class="num ">—</td>
+      <td class="num neg">-12.54%</td>
+      <td class="num">0.36</td>
+    </tr>
+    <tr data-name="first mutual properties"
+        data-sector="financials"
+        data-mcap="1.3" data-ytd="19.25" data-price="1.054407">
+      <td><a href="./first-mutual-properties.html">First Mutual Properties</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">1.0544</td>
+      <td class="num pos">+0.42%</td>
+      <td class="num pos">+19.25%</td>
+      <td class="num">1.30</td>
+    </tr>
+    <tr data-name="proplastics"
+        data-sector="industrials"
+        data-mcap="0.37" data-ytd="1.79" data-price="1.425">
+      <td><a href="./proplastics.html">Proplastics</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">1.425</td>
+      <td class="num ">—</td>
+      <td class="num pos">+1.79%</td>
+      <td class="num">0.37</td>
+    </tr>
+    <tr data-name="riozim"
+        data-sector="basic materials"
+        data-mcap="0.09" data-ytd="15.38" data-price="0.75">
+      <td><a href="./riozim.html">RioZim</a></td>
+      <td><span class="sect">Basic Materials</span></td>
+      <td class="num">0.75</td>
+      <td class="num ">—</td>
+      <td class="num pos">+15.38%</td>
+      <td class="num">0.09</td>
+    </tr>
+    <tr data-name="rainbow tourism group"
+        data-sector="consumer services"
+        data-mcap="4.31" data-ytd="20.14" data-price="1.73">
+      <td><a href="./rainbow-tourism-group.html">Rainbow Tourism Group</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">1.73</td>
+      <td class="num ">—</td>
+      <td class="num pos">+20.14%</td>
+      <td class="num">4.31</td>
+    </tr>
+    <tr data-name="starafrica corporation"
+        data-sector="consumer goods"
+        data-mcap="0.18" data-ytd="59.55" data-price="0.040047">
+      <td><a href="./starafrica-corporation.html">Starafrica Corporation</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">0.040047</td>
+      <td class="num pos">+4.84%</td>
+      <td class="num pos">+59.55%</td>
+      <td class="num">0.18</td>
+    </tr>
+    <tr data-name="seed co"
+        data-sector="consumer goods"
+        data-mcap="1.02" data-ytd="12.58" data-price="4.059147">
+      <td><a href="./seed-co.html">Seed Co</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">4.0591</td>
+      <td class="num pos">+2.50%</td>
+      <td class="num pos">+12.58%</td>
+      <td class="num">1.02</td>
+    </tr>
+    <tr data-name="tsl"
+        data-sector="industrials"
+        data-mcap="2.47" data-ytd="161.87" data-price="6.81">
+      <td><a href="./tsl.html">TSL</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">6.81</td>
+      <td class="num pos">+13.50%</td>
+      <td class="num pos">+161.87%</td>
+      <td class="num">2.47</td>
+    </tr>
+    <tr data-name="turnall holdings"
+        data-sector="industrials"
+        data-mcap="0.38" data-ytd="-9.8" data-price="0.0902">
+      <td><a href="./turnall-holdings.html">Turnall Holdings</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.0902</td>
+      <td class="num ">—</td>
+      <td class="num neg">-9.80%</td>
+      <td class="num">0.38</td>
+    </tr>
+    <tr data-name="unifreight africa"
+        data-sector="consumer services"
+        data-mcap="0.18" data-ytd="0.27" data-price="1.75">
+      <td><a href="./unifreight-africa.html">Unifreight Africa</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">1.75</td>
+      <td class="num ">—</td>
+      <td class="num pos">+0.27%</td>
+      <td class="num">0.18</td>
+    </tr>
+    <tr data-name="willdale"
+        data-sector="industrials"
+        data-mcap="0.07" data-ytd="33.33" data-price="0.04">
+      <td><a href="./willdale.html">Willdale</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.04</td>
+      <td class="num ">—</td>
+      <td class="num pos">+33.33%</td>
+      <td class="num">0.07</td>
+    </tr>
+    <tr data-name="zb financial holdings"
+        data-sector="financials"
+        data-mcap="0.92" data-ytd="17.78" data-price="5.3">
+      <td><a href="./zb-financial-holdings.html">ZB Financial Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">5.3</td>
+      <td class="num ">—</td>
+      <td class="num pos">+17.78%</td>
+      <td class="num">0.92</td>
+    </tr>
+    <tr data-name="zeco holdings"
+        data-sector="industrials"
+        data-mcap="0.0" data-ytd="0" data-price="1.8e-05">
+      <td><a href="./zeco-holdings.html">Zeco Holdings</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">0.000018</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="zimre holdings"
+        data-sector="financials"
+        data-mcap="1.18" data-ytd="-34.99" data-price="0.65">
+      <td><a href="./zimre-holdings.html">Zimre Holdings</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">0.65</td>
+      <td class="num pos">+0.01%</td>
+      <td class="num neg">-34.99%</td>
+      <td class="num">1.18</td>
+    </tr>
+    <tr data-name="zimbabwe newspapers (1980)"
+        data-sector="consumer services"
+        data-mcap="0.04" data-ytd="0.29" data-price="0.0702">
+      <td><a href="./zimbabwe-newspapers-1980.html">Zimbabwe Newspapers (1980)</a></td>
+      <td><span class="sect">Consumer Services</span></td>
+      <td class="num">0.0702</td>
+      <td class="num ">—</td>
+      <td class="num pos">+0.29%</td>
+      <td class="num">0.04</td>
+    </tr>
+    <tr data-name="pretoria portland cement"
+        data-sector="industrials"
+        data-mcap="0.29" data-ytd="0" data-price="7.95">
+      <td><a href="./pretoria-portland-cement.html">Pretoria Portland Cement</a></td>
+      <td><span class="sect">Industrials</span></td>
+      <td class="num">7.95</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">0.29</td>
+    </tr>
+    <tr data-name="old mutual"
+        data-sector="financials"
+        data-mcap="5.36" data-ytd="0" data-price="81.9906">
+      <td><a href="./old-mutual.html">Old Mutual</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">81.9906</td>
+      <td class="num ">—</td>
+      <td class="num ">—</td>
+      <td class="num">5.36</td>
+    </tr>
+    <tr data-name="tn cybertech investments holdings"
+        data-sector="telecom"
+        data-mcap="0.62" data-ytd="27.47" data-price="0.1485">
+      <td><a href="./tn-cybertech-investments-holdings.html">TN CyberTech Investments Holdings</a></td>
+      <td><span class="sect">Telecom</span></td>
+      <td class="num">0.1485</td>
+      <td class="num pos">+14.23%</td>
+      <td class="num pos">+27.47%</td>
+      <td class="num">0.62</td>
+    </tr>
+    <tr data-name="tanganda tea company"
+        data-sector="consumer goods"
+        data-mcap="1.0" data-ytd="532.99" data-price="3.86125">
+      <td><a href="./tanganda-tea-company.html">Tanganda Tea Company</a></td>
+      <td><span class="sect">Consumer Goods</span></td>
+      <td class="num">3.8613</td>
+      <td class="num pos">+2.55%</td>
+      <td class="num pos">+532.99%</td>
+      <td class="num">1.00</td>
+    </tr>
+    <tr data-name="cass saddle agriculture etf"
+        data-sector="etf"
+        data-mcap="0.0" data-ytd="-4.76" data-price="0.1">
+      <td><a href="./cass-saddle-agriculture-etf.html">Cass Saddle Agriculture ETF</a></td>
+      <td><span class="sect">ETF</span></td>
+      <td class="num">0.1</td>
+      <td class="num ">—</td>
+      <td class="num neg">-4.76%</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="datvest modified consumer staples etf"
+        data-sector="etf"
+        data-mcap="0.0" data-ytd="29.41" data-price="0.055">
+      <td><a href="./datvest-modified-consumer-staples-etf.html">Datvest Modified Consumer Staples ETF</a></td>
+      <td><span class="sect">ETF</span></td>
+      <td class="num">0.055</td>
+      <td class="num ">—</td>
+      <td class="num pos">+29.41%</td>
+      <td class="num">0.00</td>
+    </tr>
+    <tr data-name="morgan &amp; co made in zimbabwe etf"
+        data-sector="etf"
+        data-mcap="0.04" data-ytd="57.02" data-price="0.095">
+      <td><a href="./morgan-co-made-in-zimbabwe-etf.html">Morgan &amp; Co Made in Zimbabwe ETF</a></td>
+      <td><span class="sect">ETF</span></td>
+      <td class="num">0.095</td>
+      <td class="num ">—</td>
+      <td class="num pos">+57.02%</td>
+      <td class="num">0.04</td>
+    </tr>
+    <tr data-name="morgan &amp; co multi sector etf"
+        data-sector="etf"
+        data-mcap="0.06" data-ytd="-12.97" data-price="1.61">
+      <td><a href="./morgan-co-multi-sector-etf.html">Morgan &amp; Co Multi Sector ETF</a></td>
+      <td><span class="sect">ETF</span></td>
+      <td class="num">1.61</td>
+      <td class="num ">—</td>
+      <td class="num neg">-12.97%</td>
+      <td class="num">0.06</td>
+    </tr>
+    <tr data-name="old mutual zse top 10 etf"
+        data-sector="etf"
+        data-mcap="0.03" data-ytd="-13.64" data-price="0.19">
+      <td><a href="./old-mutual-zse-top-10-etf.html">Old Mutual ZSE Top 10 ETF</a></td>
+      <td><span class="sect">ETF</span></td>
+      <td class="num">0.19</td>
+      <td class="num ">—</td>
+      <td class="num neg">-13.64%</td>
+      <td class="num">0.03</td>
+    </tr>
+    <tr data-name="tigere property fund"
+        data-sector="financials"
+        data-mcap="3.01" data-ytd="-20.01" data-price="1.154605">
+      <td><a href="./tigere-property-fund.html">Tigere Property Fund</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">1.1546</td>
+      <td class="num pos">+4.85%</td>
+      <td class="num neg">-20.01%</td>
+      <td class="num">3.01</td>
+    </tr>
+    <tr data-name="revitus property opportunities reit"
+        data-sector="financials"
+        data-mcap="0.73" data-ytd="53.85" data-price="2.0">
+      <td><a href="./revitus-property-opportunities-reit.html">Revitus Property Opportunities REIT</a></td>
+      <td><span class="sect">Financials</span></td>
+      <td class="num">2</td>
+      <td class="num ">—</td>
+      <td class="num pos">+53.85%</td>
+      <td class="num">0.73</td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+  <section class="zse-sources" aria-label="About this directory">
+    <h2>About this directory</h2>
+    <ul>
+      <li>Price, daily change, YTD and market cap from <a href="https://www.african-markets.com/en/stock-markets/zse/listed-companies" rel="noopener" target="_blank">African Markets</a>, refreshed daily.</li>
+      <li>Company profile detail (founded, headquarters, key people, industry) is drawn from Wikipedia where a verified article exists.</li>
+      <li>This is editorial reference, not investment advice. ZSE quotes are not real-time and have at least one trading day's delay.</li>
+    </ul>
+    <p class="zse-sources-note">Last data refresh: 2026-05-22. Spot an error? Email <a href="mailto:news@mutapatimes.com?subject=ZSE%20directory%20update">news@mutapatimes.com</a>.</p>
+  </section>
+</main>
+<footer class="atlantic-foot">
+  <div class="atlantic-foot-inner">
+    <div class="atlantic-foot-fine">
+      <a href="/">News</a><span class="sep">·</span>
+      <a href="/zse/">ZSE companies</a><span class="sep">·</span>
+      <a href="/schools/">Schools directory</a><span class="sep">·</span>
+      <a href="/fx/">FX rates</a><span class="sep">·</span>
+      <a href="/moving-to-zimbabwe/">UK guide</a><span class="sep">·</span>
+      <a href="/authors/">Masthead</a><span class="sep">·</span>
+      <a href="/privacy">Privacy</a><span class="sep">·</span>
+      <a href="/terms">Terms</a><span class="sep">·</span>
+      <a href="mailto:news@mutapatimes.com">Contact</a>
+    </div>
+    <p class="atlantic-foot-copy">&copy; 2020&ndash;2026 The Mutapa Times. All rights reserved. Operated from the United Kingdom.</p>
+  </div>
+</footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XQPRFK7JTB');
+</script>
+<script>
+(function(){
+  var body = document.getElementById('zseBody');
+  var rows = Array.from(body.querySelectorAll('tr'));
+  var search = document.getElementById('zseSearch');
+  var chips = Array.from(document.querySelectorAll('.zse-chip'));
+  var clear = document.getElementById('zseClear');
+  var countEl = document.getElementById('zseCount');
+  var headers = Array.from(document.querySelectorAll('.zse-table th[data-sort]'));
+  var total = rows.length;
+  var active = new Set();
+
+  function apply(){
+    var q = (search.value || '').trim().toLowerCase();
+    var shown = 0;
+    rows.forEach(function(r){
+      var n = r.dataset.name || '';
+      var s = r.dataset.sector || '';
+      var matchQ = !q || n.indexOf(q) !== -1 || s.indexOf(q) !== -1;
+      var matchS = !active.size || active.has(s);
+      var ok = matchQ && matchS;
+      r.hidden = !ok;
+      if (ok) shown++;
+    });
+    countEl.textContent = (q || active.size)
+      ? 'Showing ' + shown + ' of ' + total + ' listings.'
+      : 'Showing all ' + total + ' listings.';
+  }
+
+  search.addEventListener('input', apply);
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      var f = c.dataset.filter;
+      if (active.has(f)) { active.delete(f); c.setAttribute('aria-pressed','false'); }
+      else                { active.add(f);    c.setAttribute('aria-pressed','true'); }
+      apply();
+    });
+  });
+  clear.addEventListener('click', function(){
+    search.value = ''; active.clear();
+    chips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+    apply();
+  });
+
+  // Sorting
+  var sortKey = 'name', sortDir = 1;
+  function sort(key){
+    if (sortKey === key) sortDir = -sortDir;
+    else { sortKey = key; sortDir = 1; }
+    headers.forEach(function(h){
+      h.setAttribute('aria-sort', h.dataset.sort === sortKey ? (sortDir > 0 ? 'ascending' : 'descending') : 'none');
+    });
+    rows.sort(function(a, b){
+      var va, vb;
+      if (key === 'name')   { va = a.dataset.name;   vb = b.dataset.name;   return sortDir * va.localeCompare(vb); }
+      if (key === 'sector') { va = a.dataset.sector; vb = b.dataset.sector; return sortDir * va.localeCompare(vb); }
+      if (key === 'price')  { va = +a.dataset.price; vb = +b.dataset.price; return sortDir * (va - vb); }
+      if (key === 'ytd')    { va = +a.dataset.ytd;   vb = +b.dataset.ytd;   return sortDir * (va - vb); }
+      if (key === 'mcap')   { va = +a.dataset.mcap;  vb = +b.dataset.mcap;  return sortDir * (va - vb); }
+      return 0;
+    });
+    rows.forEach(function(r){ body.appendChild(r); });
+  }
+  headers.forEach(function(h){ h.addEventListener('click', function(){ sort(h.dataset.sort); }); });
+})();
+</script>
+</body>
+</html>

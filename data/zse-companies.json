@@ -1,0 +1,684 @@
+{
+  "fetched_at": "2026-05-22",
+  "source": "https://www.african-markets.com/en/stock-markets/zse/listed-companies",
+  "exchange": "Zimbabwe Stock Exchange",
+  "currency": "ZWG",
+  "count": 54,
+  "companies": [
+    {
+      "company": "Ariston Holdings",
+      "sector": "Consumer Goods",
+      "price": "0.0685",
+      "day_change": "",
+      "ytd": "+116.77%",
+      "mcap_b": "0.11",
+      "data_date": "15/05",
+      "slug": "ariston-holdings",
+      "wp": {}
+    },
+    {
+      "company": "ART Corporation",
+      "sector": "Industrials",
+      "price": "0.22",
+      "day_change": "+12.76%",
+      "ytd": "+182.05%",
+      "mcap_b": "0.09",
+      "data_date": "15/05",
+      "slug": "art-corporation",
+      "wp": {}
+    },
+    {
+      "company": "Astra Industries",
+      "sector": "Basic Materials",
+      "price": "0.043",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0",
+      "data_date": "03/05",
+      "slug": "astra-industries",
+      "wp": {}
+    },
+    {
+      "company": "British American Tobacco Zimbabwe",
+      "sector": "Consumer Goods",
+      "price": "166.7395",
+      "day_change": "+15.00%",
+      "ytd": "+71.22%",
+      "mcap_b": "3.44",
+      "data_date": "15/05",
+      "slug": "british-american-tobacco-zimbabwe",
+      "wp": {}
+    },
+    {
+      "company": "Border Timbers",
+      "sector": "Basic Materials",
+      "price": "0.2",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0",
+      "data_date": "17/01",
+      "slug": "border-timbers",
+      "wp": {
+        "industry": "Forestry, sawmilling",
+        "products": "Wood",
+        "summary": "Border Timbers is a forestry and sawmilling company in Zimbabwe. The company operates five forest estates and three sawmills. Principal products include pine and eucalyptus. Border's stock is listed on the Zimbabwe Stock Exchange and its stock index, the Zimbabwe Industrial Index.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Border_Timbers"
+      }
+    },
+    {
+      "company": "Cafca",
+      "sector": "Industrials",
+      "price": "13.001",
+      "day_change": "",
+      "ytd": "-4.40%",
+      "mcap_b": "0.11",
+      "data_date": "15/05",
+      "slug": "cafca",
+      "wp": {
+        "summary": "\n\nThe Campaign Against Foreign Control of Aotearoa (CAFCA) is a research and lobbying organisation combatting what it considers the sell-out of New Zealand companies and assets to overseas interests. The organisation evolved from the then-named Campaign Against Foreign Control in New Zealand which began in the early 1970s.",
+        "wikipedia": "https://en.wikipedia.org/wiki/CAFCA"
+      }
+    },
+    {
+      "company": "CBZ Holdings",
+      "sector": "Financials",
+      "price": "16",
+      "day_change": "",
+      "ytd": "+39.13%",
+      "mcap_b": "8.36",
+      "data_date": "15/05",
+      "slug": "cbz-holdings",
+      "wp": {
+        "industry": "Financial services",
+        "key_people": "Luxon Zembe; (Group chairman); Lawrence Nyazema; (Group chief executive)",
+        "products": "Debit Cards, Credit Cards, Mortgages, Wealth Management, Properties",
+        "revenue": "Aftertax: ZWG 868.1 billion (H1 2025)",
+        "assets": "ZWG 33.97 trillion (2024)<",
+        "summary": "CBZ Holdings Limited is a diversified financial services conglomerate in Zimbabwe. The group operates through subsidiaries in banking, insurance, asset management, investments, wealth management, mortgages, and retail finance. Its shares trade on the Zimbabwe Stock Exchange under the symbol CBZ.",
+        "wikipedia": "https://en.wikipedia.org/wiki/CBZ_Holdings",
+        "image": {
+          "filename": "CBZ_Holdings_Logo.png",
+          "license": "Public domain",
+          "artist": "Tinomazorodze",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:CBZ_Holdings_Logo.png",
+          "local": "/img/zse/cbz-holdings.png"
+        }
+      }
+    },
+    {
+      "company": "Celsys",
+      "sector": "Technology",
+      "price": "",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "",
+      "data_date": "",
+      "slug": "celsys",
+      "wp": {}
+    },
+    {
+      "company": "CFI Holdings",
+      "sector": "Industrials",
+      "price": "6",
+      "day_change": "",
+      "ytd": "+11.32%",
+      "mcap_b": "0.63",
+      "data_date": "15/05",
+      "slug": "cfi-holdings",
+      "wp": {}
+    },
+    {
+      "company": "COTTCO Holdings",
+      "sector": "Consumer Goods",
+      "price": "0.002",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0",
+      "data_date": "04/08",
+      "slug": "cottco-holdings",
+      "wp": {
+        "industry": "Cotton",
+        "key_people": "Patison Sithole; (Director)",
+        "products": "Cotton lint, cottonseed",
+        "summary": "The Cotton Company of Zimbabwe, is a large cotton processing and marketing organization in Southern Africa. The company, known as \"COTTCO\", works with individual cotton farmers, providing agronomic and financial support. Cottco is listed on the Zimbabwe Stock Exchange and its stock index, the Zimbabwe Industrial Index. Its head offices are located in Harare. Cotton, export internationally via COTTCO, is one of the larger generators of foreign currency for Zimbabwe.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cotton_Company_of_Zimbabwe"
+      }
+    },
+    {
+      "company": "Dawn Properties",
+      "sector": "Consumer Services",
+      "price": "0.4",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0.98",
+      "data_date": "17/01",
+      "slug": "dawn-properties",
+      "wp": {}
+    },
+    {
+      "company": "Delta Corporation",
+      "sector": "Consumer Goods",
+      "price": "29.5214",
+      "day_change": "+0.58%",
+      "ytd": "+42.60%",
+      "mcap_b": "39.6",
+      "data_date": "15/05",
+      "slug": "delta-corporation",
+      "wp": {
+        "industry": "Beverages",
+        "key_people": "Sternford Moyo ; Chairman of the Board Matlhogonolo Mothibedi Valela (CEO) Alex Makamure (CFO)",
+        "products": "Beer, soft drinks",
+        "summary": "The Delta Corporation is a beer and soft drink company of Zimbabwe. The company is headquartered in Harare and is listed on the Zimbabwe Stock Exchange and its stock index, the Zimbabwe Industrial Index.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Delta_Corporation"
+      }
+    },
+    {
+      "company": "Dairibord Holdings",
+      "sector": "Consumer Goods",
+      "price": "2.700002",
+      "day_change": "-0.09%",
+      "ytd": "+42.11%",
+      "mcap_b": "0.96",
+      "data_date": "15/05",
+      "slug": "dairibord-holdings",
+      "wp": {}
+    },
+    {
+      "company": "FBC Holdings",
+      "sector": "Financials",
+      "price": "10.9976",
+      "day_change": "-4.10%",
+      "ytd": "-11.67%",
+      "mcap_b": "7.38",
+      "data_date": "15/05",
+      "slug": "fbc-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Fidelity Life Assurance",
+      "sector": "Financials",
+      "price": "0.578513",
+      "day_change": "",
+      "ytd": "+65.29%",
+      "mcap_b": "0.06",
+      "data_date": "15/05",
+      "slug": "fidelity-life-assurance",
+      "wp": {}
+    },
+    {
+      "company": "First Mutual Holdings",
+      "sector": "Financials",
+      "price": "1.866667",
+      "day_change": "-6.67%",
+      "ytd": "-34.50%",
+      "mcap_b": "1.28",
+      "data_date": "15/05",
+      "slug": "first-mutual-holdings",
+      "wp": {}
+    },
+    {
+      "company": "General Beltings Holdings",
+      "sector": "Industrials",
+      "price": "0.12",
+      "day_change": "",
+      "ytd": "+20.00%",
+      "mcap_b": "0.06",
+      "data_date": "15/05",
+      "slug": "general-beltings-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Hwange Colliery Company",
+      "sector": "Oil & Gas",
+      "price": "0.0425",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0",
+      "data_date": "17/01",
+      "slug": "hwange-colliery-company",
+      "wp": {}
+    },
+    {
+      "company": "Hippo Valley Estates",
+      "sector": "Consumer Goods",
+      "price": "9.59",
+      "day_change": "",
+      "ytd": "+17.40%",
+      "mcap_b": "1.85",
+      "data_date": "15/05",
+      "slug": "hippo-valley-estates",
+      "wp": {
+        "summary": "Hippo Valley Estate is a sugar estate found near the town of Chiredzi in Chiredzi District of southeastern Zimbabwe, on the Runde River near the border with Mozambique.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hippo_Valley_Estates",
+        "image": {
+          "filename": "Hippo_Valley_Estate_Cane.jpg",
+          "license": "Public domain",
+          "artist": "Macvivo",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Hippo_Valley_Estate_Cane.jpg",
+          "local": "/img/zse/hippo-valley-estates.jpg"
+        }
+      }
+    },
+    {
+      "company": "Interfin Financial Services",
+      "sector": "Financials",
+      "price": "",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "",
+      "data_date": "",
+      "slug": "interfin-financial-services",
+      "wp": {}
+    },
+    {
+      "company": "Lafarge Cement Zimbabwe",
+      "sector": "Industrials",
+      "price": "143.75",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "11.5",
+      "data_date": "17/01",
+      "slug": "lafarge-cement-zimbabwe",
+      "wp": {}
+    },
+    {
+      "company": "Mashonaland Holdings",
+      "sector": "Financials",
+      "price": "1.298",
+      "day_change": "+0.23%",
+      "ytd": "-22.16%",
+      "mcap_b": "2.19",
+      "data_date": "15/05",
+      "slug": "mashonaland-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Masimba Holdings",
+      "sector": "Industrials",
+      "price": "3.49",
+      "day_change": "",
+      "ytd": "+93.94%",
+      "mcap_b": "0.83",
+      "data_date": "15/05",
+      "slug": "masimba-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Meikles",
+      "sector": "Consumer Services",
+      "price": "3.13",
+      "day_change": "+4.33%",
+      "ytd": "-0.20%",
+      "mcap_b": "0.8",
+      "data_date": "15/05",
+      "slug": "meikles",
+      "wp": {
+        "founded": "November 15, 1915 in Harare, Zimbabwe",
+        "industry": "Retail",
+        "revenue": "ZWG12,5 billion (2025)",
+        "traded_as": "ZSE: MEIK",
+        "summary": "Meikles Limited is a Zimbabwean national retail corporation that operators a chain of grocery stores, Meikles department stores, Meikles Mega Market stores, along with the Victoria Falls Hotel and security services. The company formerly owned the historic Hyatt Regency Harare The Meikles Hotel in central Harare.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Meikles_Limited"
+      }
+    },
+    {
+      "company": "Nicoz Diamond Insurance",
+      "sector": "Financials",
+      "price": "0.0341",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0.02",
+      "data_date": "17/01",
+      "slug": "nicoz-diamond-insurance",
+      "wp": {}
+    },
+    {
+      "company": "NMBZ Holdings",
+      "sector": "Financials",
+      "price": "5.2005",
+      "day_change": "",
+      "ytd": "+0.98%",
+      "mcap_b": "2.1",
+      "data_date": "15/05",
+      "slug": "nmbz-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Nampak Zimbabwe",
+      "sector": "Industrials",
+      "price": "0.853",
+      "day_change": "",
+      "ytd": "+6.62%",
+      "mcap_b": "0.64",
+      "data_date": "15/05",
+      "slug": "nampak-zimbabwe",
+      "wp": {
+        "industry": "Packaging",
+        "key_people": "Peter Surgey (Chairman); Erik Smuts (CEO)",
+        "revenue": "billion",
+        "operating_income": "billion",
+        "net_income": "million",
+        "assets": "billion",
+        "equity": "billion",
+        "predecessor": "National Containers, National Packaging, Amalgamated Packaging Industries, Metal Box",
+        "summary": "Nampak is a South African company, based in Johannesburg, that specializes in the manufacturing and design of packaging.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nampak",
+        "image": {
+          "filename": "Nampak_Logo.png",
+          "license": "CC0",
+          "artist": "Nampak",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Nampak_Logo.png",
+          "local": "/img/zse/nampak-zimbabwe.png"
+        }
+      }
+    },
+    {
+      "company": "National Tyre Services",
+      "sector": "Consumer Goods",
+      "price": "0.57",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0.14",
+      "data_date": "02/01",
+      "slug": "national-tyre-services",
+      "wp": {}
+    },
+    {
+      "company": "OK Zimbabwe",
+      "sector": "Consumer Services",
+      "price": "0.113694",
+      "day_change": "",
+      "ytd": "-12.54%",
+      "mcap_b": "0.36",
+      "data_date": "01/04",
+      "slug": "ok-zimbabwe",
+      "wp": {}
+    },
+    {
+      "company": "First Mutual Properties",
+      "sector": "Financials",
+      "price": "1.054407",
+      "day_change": "+0.42%",
+      "ytd": "+19.25%",
+      "mcap_b": "1.3",
+      "data_date": "15/05",
+      "slug": "first-mutual-properties",
+      "wp": {}
+    },
+    {
+      "company": "Proplastics",
+      "sector": "Industrials",
+      "price": "1.425",
+      "day_change": "",
+      "ytd": "+1.79%",
+      "mcap_b": "0.37",
+      "data_date": "15/05",
+      "slug": "proplastics",
+      "wp": {}
+    },
+    {
+      "company": "RioZim",
+      "sector": "Basic Materials",
+      "price": "0.75",
+      "day_change": "",
+      "ytd": "+15.38%",
+      "mcap_b": "0.09",
+      "data_date": "15/05",
+      "slug": "riozim",
+      "wp": {
+        "summary": "RioZim Limited is a Zimbabwean mining company with interests in diamonds, gold, nickel, and coal mining operations.",
+        "wikipedia": "https://en.wikipedia.org/wiki/RioZim"
+      }
+    },
+    {
+      "company": "Rainbow Tourism Group",
+      "sector": "Consumer Services",
+      "price": "1.73",
+      "day_change": "",
+      "ytd": "+20.14%",
+      "mcap_b": "4.31",
+      "data_date": "15/05",
+      "slug": "rainbow-tourism-group",
+      "wp": {}
+    },
+    {
+      "company": "Starafrica Corporation",
+      "sector": "Consumer Goods",
+      "price": "0.040047",
+      "day_change": "+4.84%",
+      "ytd": "+59.55%",
+      "mcap_b": "0.18",
+      "data_date": "15/05",
+      "slug": "starafrica-corporation",
+      "wp": {}
+    },
+    {
+      "company": "Seed Co",
+      "sector": "Consumer Goods",
+      "price": "4.059147",
+      "day_change": "+2.50%",
+      "ytd": "+12.58%",
+      "mcap_b": "1.02",
+      "data_date": "15/05",
+      "slug": "seed-co",
+      "wp": {}
+    },
+    {
+      "company": "TSL",
+      "sector": "Industrials",
+      "price": "6.81",
+      "day_change": "+13.50%",
+      "ytd": "+161.87%",
+      "mcap_b": "2.47",
+      "data_date": "15/05",
+      "slug": "tsl",
+      "wp": {
+        "summary": "\nTSL is a company based in Harare, Zimbabwe. TSL was founded in 1957 as an auction house for tobacco, and in the late 1960s began to diversify into logistics and agronomy. The company's stock is listed on the Zimbabwe Stock Exchange and its stock index, the Zimbabwe Industrial Index.",
+        "wikipedia": "https://en.wikipedia.org/wiki/TSL_Limited"
+      }
+    },
+    {
+      "company": "Turnall Holdings",
+      "sector": "Industrials",
+      "price": "0.0902",
+      "day_change": "",
+      "ytd": "-9.80%",
+      "mcap_b": "0.38",
+      "data_date": "15/05",
+      "slug": "turnall-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Unifreight Africa",
+      "sector": "Consumer Services",
+      "price": "1.75",
+      "day_change": "",
+      "ytd": "+0.27%",
+      "mcap_b": "0.18",
+      "data_date": "15/05",
+      "slug": "unifreight-africa",
+      "wp": {}
+    },
+    {
+      "company": "Willdale",
+      "sector": "Industrials",
+      "price": "0.04",
+      "day_change": "",
+      "ytd": "+33.33%",
+      "mcap_b": "0.07",
+      "data_date": "15/05",
+      "slug": "willdale",
+      "wp": {}
+    },
+    {
+      "company": "ZB Financial Holdings",
+      "sector": "Financials",
+      "price": "5.3",
+      "day_change": "",
+      "ytd": "+17.78%",
+      "mcap_b": "0.92",
+      "data_date": "15/05",
+      "slug": "zb-financial-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Zeco Holdings",
+      "sector": "Industrials",
+      "price": "0.000018",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0",
+      "data_date": "15/05",
+      "slug": "zeco-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Zimre Holdings",
+      "sector": "Financials",
+      "price": "0.65",
+      "day_change": "+0.01%",
+      "ytd": "-34.99%",
+      "mcap_b": "1.18",
+      "data_date": "15/05",
+      "slug": "zimre-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Zimbabwe Newspapers (1980)",
+      "sector": "Consumer Services",
+      "price": "0.0702",
+      "day_change": "",
+      "ytd": "+0.29%",
+      "mcap_b": "0.04",
+      "data_date": "15/05",
+      "slug": "zimbabwe-newspapers-1980",
+      "wp": {}
+    },
+    {
+      "company": "Pretoria Portland Cement",
+      "sector": "Industrials",
+      "price": "7.95",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "0.29",
+      "data_date": "17/01",
+      "slug": "pretoria-portland-cement",
+      "wp": {}
+    },
+    {
+      "company": "Old Mutual",
+      "sector": "Financials",
+      "price": "81.9906",
+      "day_change": "",
+      "ytd": "",
+      "mcap_b": "5.36",
+      "data_date": "17/01",
+      "slug": "old-mutual",
+      "wp": {
+        "website": "BusinessLIVE}} ; Casper Troskie, CFO{{Cite web",
+        "traded_as": "||}} | foundation = {{start date and age",
+        "summary": "Old Mutual is a South African investment, savings, insurance, and banking group, operating across Africa. Headquartered in Sandton, Gauteng, with a major office in Cape Town, the company is listed on the Johannesburg Stock Exchange, the Zimbabwe Stock Exchange, the Namibian Stock Exchange, and the Botswana Stock Exchange.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Old_Mutual"
+      }
+    },
+    {
+      "company": "TN CyberTech Investments Holdings",
+      "sector": "Telecom",
+      "price": "0.1485",
+      "day_change": "+14.23%",
+      "ytd": "+27.47%",
+      "mcap_b": "0.62",
+      "data_date": "15/05",
+      "slug": "tn-cybertech-investments-holdings",
+      "wp": {}
+    },
+    {
+      "company": "Tanganda Tea Company",
+      "sector": "Consumer Goods",
+      "price": "3.86125",
+      "day_change": "+2.55%",
+      "ytd": "+532.99%",
+      "mcap_b": "1",
+      "data_date": "15/05",
+      "slug": "tanganda-tea-company",
+      "wp": {}
+    },
+    {
+      "company": "Cass Saddle Agriculture ETF",
+      "sector": "ETF",
+      "price": "0.1",
+      "day_change": "",
+      "ytd": "-4.76%",
+      "mcap_b": "0",
+      "data_date": "15/05",
+      "slug": "cass-saddle-agriculture-etf",
+      "wp": {}
+    },
+    {
+      "company": "Datvest Modified Consumer Staples ETF",
+      "sector": "ETF",
+      "price": "0.055",
+      "day_change": "",
+      "ytd": "+29.41%",
+      "mcap_b": "0",
+      "data_date": "15/05",
+      "slug": "datvest-modified-consumer-staples-etf",
+      "wp": {}
+    },
+    {
+      "company": "Morgan & Co Made in Zimbabwe ETF",
+      "sector": "ETF",
+      "price": "0.095",
+      "day_change": "",
+      "ytd": "+57.02%",
+      "mcap_b": "0.04",
+      "data_date": "15/05",
+      "slug": "morgan-co-made-in-zimbabwe-etf",
+      "wp": {}
+    },
+    {
+      "company": "Morgan & Co Multi Sector ETF",
+      "sector": "ETF",
+      "price": "1.61",
+      "day_change": "",
+      "ytd": "-12.97%",
+      "mcap_b": "0.06",
+      "data_date": "15/05",
+      "slug": "morgan-co-multi-sector-etf",
+      "wp": {}
+    },
+    {
+      "company": "Old Mutual ZSE Top 10 ETF",
+      "sector": "ETF",
+      "price": "0.19",
+      "day_change": "",
+      "ytd": "-13.64%",
+      "mcap_b": "0.03",
+      "data_date": "17/01",
+      "slug": "old-mutual-zse-top-10-etf",
+      "wp": {}
+    },
+    {
+      "company": "Tigere Property Fund",
+      "sector": "Financials",
+      "price": "1.154605",
+      "day_change": "+4.85%",
+      "ytd": "-20.01%",
+      "mcap_b": "3.01",
+      "data_date": "15/05",
+      "slug": "tigere-property-fund",
+      "wp": {}
+    },
+    {
+      "company": "Revitus Property Opportunities REIT",
+      "sector": "Financials",
+      "price": "2",
+      "day_change": "",
+      "ytd": "+53.85%",
+      "mcap_b": "0.73",
+      "data_date": "15/05",
+      "slug": "revitus-property-opportunities-reit",
+      "wp": {}
+    }
+  ]
+}
