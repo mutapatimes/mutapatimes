@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-23T13:14:45+00:00",
+  "fetched_at": "2026-05-23T15:59:37+00:00",
   "count": 60,
   "tiles": [
     {
@@ -12,35 +12,43 @@
     },
     {
       "kind": "news",
-      "title": "Zimra to auction 24 impounded vehicles",
-      "link": "https://mutapatimes.com/articles/2026-05-23-zimra-to-auction-24-impounded-vehicles",
-      "image": "https://www.mutapatimes.com/img/cards/news/c7d5d4b19d22.png",
-      "pubDate": "2026-05-23T00:00:00+00:00",
+      "title": "Tuckshops sprout along school perimeter wall",
+      "link": "https://mutapatimes.com/articles/2026-05-23-tuckshops-sprout-along-school-perimeter-wall",
+      "image": "https://www.mutapatimes.com/img/cards/news/6e396e74b283.png",
+      "pubDate": "2026-05-23T03:09:33+00:00",
+      "category": "Education"
+    },
+    {
+      "kind": "news",
+      "title": "Tembo plots 2027 AFCON roadmap",
+      "link": "https://mutapatimes.com/articles/2026-05-23-tembo-plots-2027-afcon-roadmap",
+      "image": "https://www.mutapatimes.com/img/cards/news/e664576c8ce3.png",
+      "pubDate": "2026-05-23T03:04:30+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Expo pursues industry solutions",
-      "link": "https://mutapatimes.com/articles/2026-05-23-expo-pursues-industry-solutions",
-      "image": "https://www.mutapatimes.com/img/cards/news/f8fa161ea126.png",
-      "pubDate": "2026-05-23T00:00:00+00:00",
+      "title": "Tanzanian electoral team in Zim on study tour",
+      "link": "https://mutapatimes.com/articles/2026-05-23-tanzanian-electoral-team-in-zim-on-study-tour",
+      "image": "https://www.mutapatimes.com/img/cards/news/a46cd9b2bcdf.png",
+      "pubDate": "2026-05-23T03:02:36+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Delays hit Bulawayo road rehabilitation projects",
+      "link": "https://mutapatimes.com/articles/2026-05-23-delays-hit-bulawayo-road-rehabilitation-projects",
+      "image": "https://www.mutapatimes.com/img/cards/news/8aaa94e627bf.png",
+      "pubDate": "2026-05-23T02:32:00+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe seeks coordinated biodiversity financing",
-      "link": "https://mutapatimes.com/articles/2026-05-22-zimbabwe-seeks-coordinated-biodiversity-financing",
-      "image": "https://www.mutapatimes.com/img/cards/news/54af17900796.png",
-      "pubDate": "2026-05-22T23:59:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Pension fund-backed solar power plant commissioned in Kwekwe",
-      "link": "https://mutapatimes.com/articles/2026-05-22-pension-fund-backed-solar-power-plant-commissioned-in-kwekwe",
-      "image": "https://www.mutapatimes.com/img/cards/news/999e1b165412.png",
-      "pubDate": "2026-05-22T22:44:20+00:00",
-      "category": "Business"
+      "title": "Delays hit Bulawayo road rehabilitation projects",
+      "link": "https://mutapatimes.com/news/2026-05-23-delays-hit-bulawayo-road-rehabilitation-projects-bde6f4",
+      "image": "https://www.mutapatimes.com/img/cards/news/827786201e1f.png",
+      "pubDate": "2026-05-23T02:32:00+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -121,6 +129,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-05-22T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "PRIMEDAWN HOLDINGS — Electrical QS / Estimator Graduate Trainee",
+      "link": "https://vacancymail.co.zw/jobs/electrical-qs-estimator-graduate-trainee-67618/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9713bd486831.png",
+      "pubDate": "2026-05-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ST-ONE Machinery — Driver",
+      "link": "https://vacancymail.co.zw/jobs/driver-67617/",
+      "image": "https://mutapatimes.com/img/cards/jobs/efa563527920.png",
+      "pubDate": "2026-05-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Local NGO — TORs - Consultancy for Co-creative Scientific Studies on Water Quality Testing and Groundwater Assessments in Lithium and Other Critical Minerals Mining Areas (Zimbabwe)",
+      "link": "https://vacancymail.co.zw/jobs/tors-consultancy-for-co-creative-scientific-studies-on-water-quality-testing-and-groundwater-assessments-in-lithium-and-other-critical-minerals-mining-areas-zimbabwe-67616/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3186880ad689.png",
+      "pubDate": "2026-05-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Local NGO — TORs - Consultancy to Conduct Research on Financial Models for Environmental Rehabilitation without raising the cost of Doing Business in Zimbabwe’s Mining Sector, with a Focus on Critical Minerals.",
+      "link": "https://vacancymail.co.zw/jobs/tors-consultancy-to-conduct-research-on-financial-models-for-environmental-rehabilitation-without-raising-the-cost-of-doing-business-in-zimbabwes-mining-sector-with-a-focus-on-critical-minerals-67615/",
+      "image": "https://mutapatimes.com/img/cards/jobs/25129f64e49c.png",
+      "pubDate": "2026-05-22T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Mentor Centre — Class One Driver",
       "link": "https://vacancymail.co.zw/jobs/class-one-driver-67574/",
       "image": "https://mutapatimes.com/img/cards/jobs/c5d6d426024a.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Energy Regulatory Authority ZERA — Regional Compliance Officer-Mutare",
-      "link": "https://vacancymail.co.zw/jobs/regional-compliance-officer-mutare-67573/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ee356989fe6.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "FASFIT MATLOCK — SALES AND MARKETING INTERNS",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-interns-67572/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a48825bd7a30.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Computer Repair Technician",
-      "link": "https://vacancymail.co.zw/jobs/computer-repair-technician-67571/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c8e68de41494.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "World Vision — Communications Assistant",
-      "link": "https://vacancymail.co.zw/jobs/communications-assistant-67570/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7bc2aa2e98e0.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Red Cross Society — Provincial Manager x 3",
-      "link": "https://vacancymail.co.zw/jobs/provincial-manager-x-3-67569/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6cf1cbd26d6a.png",
       "pubDate": "2026-05-22T22:00:00+00:00",
       "category": "Jobs"
     }
