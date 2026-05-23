@@ -141,6 +141,49 @@
   <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
+<div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Site navigation">
+  <button class="nav-drawer-close" type="button" data-close-drawer aria-label="Close menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+  <form class="nav-drawer-search" action="/articles" method="get" role="search">
+    <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
+  </form>
+  <nav class="nav-drawer-main" aria-label="Sections">
+    <a href="/">News</a>
+    <a href="/economy">Economy</a>
+    <a href="/fx/">FX</a>
+    <a href="/markets">Markets</a>
+    <a href="/property">Property</a>
+    <a href="/jobs">Jobs</a>
+    <a href="/articles">Articles</a>
+  </nav>
+  <span class="nav-drawer-section">Directories</span>
+  <nav class="nav-drawer-info" aria-label="Directories">
+    <a href="/flights/">Flights</a>
+    <a href="/schools/">Schools</a>
+    <a href="/zse/">ZSE companies</a>
+    <a href="/mining/">Mining</a>
+    <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
+  </nav>
+  <span class="nav-drawer-section">Cities</span>
+  <nav class="nav-drawer-cities" aria-label="Cities">
+    <a href="/harare-news">Harare</a>
+    <a href="/bulawayo-news">Bulawayo</a>
+    <a href="/mutare-news">Mutare</a>
+    <a href="/gweru-news">Gweru</a>
+    <a href="/masvingo-news">Masvingo</a>
+    <a href="/victoria-falls-news">Victoria Falls</a>
+  </nav>
+  <span class="nav-drawer-section">Information</span>
+  <nav class="nav-drawer-info" aria-label="Information">
+    <a href="/about">About</a>
+    <a href="/advertising">Advertising</a>
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+  </nav>
+</aside>
+
 <main>
   <header class="fl-section-header">
     <p class="fl-eyebrow"><a href="../">Flights</a> &middot; 🇦🇺 Sydney → 🇿🇼 Harare</p>
@@ -276,5 +319,6 @@
   gtag('js', new Date());
   gtag('config', 'G-XQPRFK7JTB');
 </script>
+<script defer src="/js/nav.js"></script>
 </body>
 </html>
