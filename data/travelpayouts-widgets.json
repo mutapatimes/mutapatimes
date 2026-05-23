@@ -1,0 +1,15 @@
+{
+  "_about": "Travelpayouts flight-search widget configs per corridor. Each widget is generated in the Travelpayouts dashboard (Tools > Widgets) and the resulting <script src> is captured here. trs (tracking) is the publisher ID; shmarker/promo_id/campaign_id are unique per widget.",
+  "_publisher_id": "532107",
+  "widgets": {
+    "london-harare": {
+      "origin": "LON",
+      "destination": "HRE",
+      "currency": "gbp",
+      "shmarker": "731574",
+      "promo_id": "3414",
+      "campaign_id": "111",
+      "embed": "<script async src=\"https://tpembd.com/content?currency=gbp&trs=532107&shmarker=731574&locale=en&default_origin=LON&default_destination=HRE&stops=any&show_hotels=true&powered_by=true&border_radius=9&plain=false&color_button=%2300A991&color_button_text=%23ffffff&promo_id=3414&campaign_id=111\" charset=\"utf-8\"></script>"
+    }
+  }
+}
