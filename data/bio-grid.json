@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-05-23T02:36:10+00:00",
+  "fetched_at": "2026-05-23T06:09:57+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Two million euro boost for Zimbabwe conservation",
-      "link": "https://mutapatimes.com/articles/2026-05-22-two-million-euro-boost-for-zimbabwe-conservation",
-      "image": "https://www.mutapatimes.com/img/cards/news/56cde775ed54.png",
-      "pubDate": "2026-05-22T22:05:25+00:00",
-      "category": "Tech"
-    },
     {
       "kind": "news",
       "title": "Two million euro boost for Zimbabwe conservation",
@@ -28,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 23 May 2026: 1 USD = 26.34 ZWG · best from UK £100 → $131.10 via Wise",
+      "title": "Zim FX snapshot 23 May 2026: 1 USD = 26.32 ZWG · best from UK £100 → $131.15 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-05-23",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-23",
       "pubDate": "2026-05-22T22:00:00+00:00",
@@ -479,6 +471,14 @@
       "title": "Class 1 Artisan : AECI Mining Zimbabwe (PVT) LTD",
       "link": "https://vacancymail.co.zw/jobs/class-1-artisan-aeci-mining-zimbabwe-pvt-ltd-67563/",
       "image": "https://mutapatimes.com/img/cards/jobs/96441d51dc1c.png",
+      "pubDate": "2026-05-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Financial Planning & Analysis Accountant x1 : AECI Mining Zimbabwe (PVT) LTD",
+      "link": "https://vacancymail.co.zw/jobs/financial-planning-analysis-accountant-x1-aeci-mining-zimbabwe-pvt-ltd-67562/",
+      "image": "https://mutapatimes.com/img/cards/jobs/66fa77955d77.png",
       "pubDate": "2026-05-22T22:00:00+00:00",
       "category": "Jobs"
     }
