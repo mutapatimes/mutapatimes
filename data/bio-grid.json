@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-23T06:09:57+00:00",
+  "fetched_at": "2026-05-23T10:24:26+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Plans for 3-leg African Sevens Series, Zimbabwe considered as one of hosts",
+      "link": "https://mutapatimes.com/articles/2026-05-23-plans-for-3-leg-african-sevens-series-zimbabwe-considered-as",
+      "image": "https://www.mutapatimes.com/img/cards/news/83838a1fa521.png",
+      "pubDate": "2026-05-23T06:36:10+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Plans for 3-leg African Sevens Series, Zimbabwe considered as one of hosts",
+      "link": "https://mutapatimes.com/news/2026-05-23-plans-for-3-leg-african-sevens-series-zimbabwe-considered-as-one-of-hosts-181e10",
+      "image": "https://www.mutapatimes.com/img/cards/news/0576877b3d3e.png",
+      "pubDate": "2026-05-23T06:36:10+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "news",
       "title": "Two million euro boost for Zimbabwe conservation",
@@ -28,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 23 May: Harare overcast · high 21° / low 10°",
+      "title": "Zim weather 23 May: Harare overcast · high 21° / low 11°",
       "link": "https://mutapatimes.com/weather?d=2026-05-23",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-23",
       "pubDate": "2026-05-22T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Seke Teacher's College — Lecturer : Psychology",
       "link": "https://vacancymail.co.zw/jobs/lecturer-psychology-67564/",
       "image": "https://mutapatimes.com/img/cards/jobs/b265eef8adf8.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Class 1 Artisan : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/class-1-artisan-aeci-mining-zimbabwe-pvt-ltd-67563/",
-      "image": "https://mutapatimes.com/img/cards/jobs/96441d51dc1c.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Financial Planning & Analysis Accountant x1 : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/financial-planning-analysis-accountant-x1-aeci-mining-zimbabwe-pvt-ltd-67562/",
-      "image": "https://mutapatimes.com/img/cards/jobs/66fa77955d77.png",
       "pubDate": "2026-05-22T22:00:00+00:00",
       "category": "Jobs"
     }
