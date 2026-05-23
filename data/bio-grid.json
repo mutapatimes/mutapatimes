@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-22T22:04:27+00:00",
+  "fetched_at": "2026-05-23T02:36:10+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Two million euro boost for Zimbabwe conservation",
+      "link": "https://mutapatimes.com/articles/2026-05-22-two-million-euro-boost-for-zimbabwe-conservation",
+      "image": "https://www.mutapatimes.com/img/cards/news/56cde775ed54.png",
+      "pubDate": "2026-05-22T22:05:25+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Two million euro boost for Zimbabwe conservation",
+      "link": "https://mutapatimes.com/news/2026-05-23-two-million-euro-boost-for-zimbabwe-conservation-6a8719",
+      "image": "https://www.mutapatimes.com/img/cards/news/bb215234ba80.png",
+      "pubDate": "2026-05-22T22:05:25+00:00",
+      "category": "Science"
+    },
     {
       "kind": "economy",
       "title": "Zim export mix 2025 Q4: 95.9% of $3.3B exports are physical goods.",
@@ -463,22 +479,6 @@
       "title": "Class 1 Artisan : AECI Mining Zimbabwe (PVT) LTD",
       "link": "https://vacancymail.co.zw/jobs/class-1-artisan-aeci-mining-zimbabwe-pvt-ltd-67563/",
       "image": "https://mutapatimes.com/img/cards/jobs/96441d51dc1c.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Financial Planning & Analysis Accountant x1 : AECI Mining Zimbabwe (PVT) LTD",
-      "link": "https://vacancymail.co.zw/jobs/financial-planning-analysis-accountant-x1-aeci-mining-zimbabwe-pvt-ltd-67562/",
-      "image": "https://mutapatimes.com/img/cards/jobs/66fa77955d77.png",
-      "pubDate": "2026-05-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — Junior Security Operations Centre Specialist – Ict – Level 9 (5 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/junior-security-operations-centre-specialist-ict-level-9-5-posts-67560/",
-      "image": "https://mutapatimes.com/img/cards/jobs/88fb30ef0eab.png",
       "pubDate": "2026-05-22T22:00:00+00:00",
       "category": "Jobs"
     }
