@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-24T06:33:59+00:00",
+  "fetched_at": "2026-05-24T10:27:54+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Diaspora skills a vital asset for national development: VP Chiwenga",
+      "link": "https://mutapatimes.com/news/2026-05-23-diaspora-skills-a-vital-asset-for-national-development-vp-chiwenga-27c2a6",
+      "image": "https://www.mutapatimes.com/img/cards/news/0978f5271e3e.png",
+      "pubDate": "2026-05-23T22:16:23+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Govt considers tough new law against counterfeit products",
+      "link": "https://mutapatimes.com/news/2026-05-23-govt-considers-tough-new-law-against-counterfeit-products-6edbd3",
+      "image": "https://www.mutapatimes.com/img/cards/news/63ad4b232e29.png",
+      "pubDate": "2026-05-23T22:15:55+00:00",
+      "category": "News"
+    },
     {
       "kind": "news",
       "title": "Goofy behind the scrum",
@@ -28,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 24 May: Harare overcast · high 21° / low 11°",
+      "title": "Zim weather 24 May: Harare light drizzle · high 22° / low 12°",
       "link": "https://mutapatimes.com/weather?d=2026-05-24",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-24",
       "pubDate": "2026-05-23T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Parksmed Health Fund — DISPENSARY ASSISTANT C5",
       "link": "https://vacancymail.co.zw/jobs/dispensary-assistant-c5-67568/",
       "image": "https://mutapatimes.com/img/cards/jobs/d1de890cd6ed.png",
-      "pubDate": "2026-05-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lightguard Security — Security Guard (Ruwa residents )",
-      "link": "https://vacancymail.co.zw/jobs/security-guard-ruwa-residents-67567/",
-      "image": "https://mutapatimes.com/img/cards/jobs/43cd72c57977.png",
-      "pubDate": "2026-05-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Veer Freight Private Limited — Customs Clerk",
-      "link": "https://vacancymail.co.zw/jobs/customs-clerk-67566/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9ca89a6a5b86.png",
       "pubDate": "2026-05-23T22:00:00+00:00",
       "category": "Jobs"
     }
