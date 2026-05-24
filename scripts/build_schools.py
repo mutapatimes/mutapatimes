@@ -202,6 +202,35 @@ if WIRES.exists():
             continue
         news_index.append((p, text))
 
+def image_for(slug):
+    """Return /img/schools/<slug>.<ext> if a file exists, else None.
+    Looks for user-uploaded images first, falling back to WP-fetched."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp", ".svg"):
+        p = ROOT / "img" / "schools" / f"{slug}{ext}"
+        if p.exists():
+            return f"../img/schools/{p.name}"
+    return None
+
+def latest_news(max_n=6):
+    """Return latest N wires (date, title, slug) for the hub Recent News module."""
+    out = []
+    for p, _text in news_index:
+        m = re.match(r'(\d{4}-\d{2}-\d{2})-(.+)', p.stem)
+        if not m: continue
+        # Extract title from frontmatter
+        title = None
+        try:
+            parts = p.read_text(errors="ignore").split("---", 2)
+            if len(parts) >= 3:
+                tm = re.search(r'^title:\s*"?([^"\n]+)"?', parts[1], re.M)
+                if tm: title = tm.group(1).strip().rstrip('"')
+        except Exception: pass
+        if not title:
+            title = m.group(2).replace("-", " ").capitalize()
+        out.append({"date": m.group(1), "title": title, "file": p.stem})
+    out.sort(key=lambda h: h["date"], reverse=True)
+    return out[:max_n]
+
 def matching_articles(school_name, max_n=4):
     """Return up to max_n (date, slug, title) tuples for wires mentioning this school."""
     needle = school_name.lower()
@@ -234,9 +263,31 @@ def matching_articles(school_name, max_n=4):
 # --- Templates -------------------------------------------------------------
 
 CSS = """
-/* Schools directory — uses main site palette from css/main.css
-   (--paper, --bg, --accent, --ink, --text, --text-mid, --text-light, --rule) */
+/* Schools directory — uses main site palette from css/main.css */
+body { background: #fff !important; }
 .sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Card hero image */
+.sd-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
+  aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
+  border-bottom: 1px solid var(--rule); }
+
+/* Recent news module (hub footer) */
+.sd-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-news-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.5em; color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em; }
+.sd-news-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sd-news-card { display: block; padding: 16px 18px; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s; }
+.sd-news-card:hover { border-color: var(--accent); transform: translateY(-1px);
+  text-decoration: none; color: var(--text); }
+.sd-news-date { font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.sd-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1em; line-height: 1.3; color: var(--ink); margin: 0; }
 
 /* Section header */
 .sd-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
@@ -498,11 +549,17 @@ def render_hub(schools):
         pills_html = " ".join(pills) if pills else '<span class="sd-pill">Independent</span>'
         # Initial letter for monogram
         initial = next((ch for ch in s["name"] if ch.isalpha()), "?").upper()
+        # Hero image if available (user-uploaded or WP-fetched)
+        img_path = image_for(s["slug"])
+        if not img_path and wp_data.get("image", {}).get("local"):
+            img_path = ".." + wp_data["image"]["local"]
+        img_html = f'<img class="sd-card-img" src="{img_path}" alt="{html.escape(s["name"])}" loading="lazy">' if img_path else ""
         cards.append(
 f'''    <a class="sd-card" href="./{s["slug"]}.html"
        data-name="{html.escape(s["name"].lower())}"
        data-city="{html.escape(s["city"].lower())}"
        data-cats="{cats}">
+      {img_html}
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">{html.escape(initial)}</div>
         <div class="sd-card-headtext">
@@ -514,6 +571,13 @@ f'''    <a class="sd-card" href="./{s["slug"]}.html"
       {extra}
     </a>''')
     cards_html = "\n".join(cards)
+
+    # Recent news cards for the hub
+    recent = latest_news(6)
+    recent_news_html = "\n".join(
+        f'      <a class="sd-news-card" href="/articles/{n["file"]}.html"><p class="sd-news-date">{n["date"]}</p><h3 class="sd-news-title">{html.escape(n["title"])}</h3></a>'
+        for n in recent
+    ) if recent else '      <p style="color:var(--text-light)">No recent stories.</p>'
 
     quickfacts = f'''<div class="sd-quickfacts" role="list">
         <div class="sd-fact"><p class="sd-fact-label">ATS members listed</p><p class="sd-fact-value">{n_total}</p></div>
@@ -594,6 +658,12 @@ f'''    <a class="sd-card" href="./{s["slug"]}.html"
   <div class="sd-grid" id="sdGrid">
 {cards_html}
   </div>
+  <section class="sd-news" aria-label="Latest from The Mutapa Times">
+    <h2 class="sd-news-h2">Latest from The Mutapa Times</h2>
+    <div class="sd-news-grid">
+{recent_news_html}
+    </div>
+  </section>
   <section class="sd-sources" aria-label="About this directory">
     <h2>About this directory</h2>
     <ul>

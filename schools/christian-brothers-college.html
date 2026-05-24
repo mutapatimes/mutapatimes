@@ -33,9 +33,31 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "School", "name": "Christian Brothers' College", "url": "https://www.mutapatimes.com/schools/christian-brothers-college.html", "address": {"@type": "PostalAddress", "addressLocality": "Bulawayo", "addressRegion": "Bulawayo", "addressCountry": "ZW"}, "geo": {"@type": "GeoCoordinates", "latitude": -20.1593023534312, "longitude": 28.6835129269619}, "memberOf": {"@type": "Organization", "name": "Association of Trust Schools (Zimbabwe)", "url": "https://atszim.org/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Schools directory", "item": "https://www.mutapatimes.com/schools/"}, {"@type": "ListItem", "position": 3, "name": "Christian Brothers' College", "item": "https://www.mutapatimes.com/schools/christian-brothers-college.html"}]}</script>
 <style>
-/* Schools directory — uses main site palette from css/main.css
-   (--paper, --bg, --accent, --ink, --text, --text-mid, --text-light, --rule) */
+/* Schools directory — uses main site palette from css/main.css */
+body { background: #fff !important; }
 .sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Card hero image */
+.sd-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
+  aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
+  border-bottom: 1px solid var(--rule); }
+
+/* Recent news module (hub footer) */
+.sd-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-news-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.5em; color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em; }
+.sd-news-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sd-news-card { display: block; padding: 16px 18px; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s; }
+.sd-news-card:hover { border-color: var(--accent); transform: translateY(-1px);
+  text-decoration: none; color: var(--text); }
+.sd-news-date { font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.sd-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1em; line-height: 1.3; color: var(--ink); margin: 0; }
 
 /* Section header */
 .sd-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }

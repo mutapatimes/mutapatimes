@@ -247,6 +247,33 @@ if WIRES.exists():
         try: news_index.append((p, p.read_text(errors="ignore").lower()))
         except Exception: pass
 
+def image_for(slug):
+    """Return ../img/mining/<slug>.<ext> if a file exists, else None."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp", ".svg"):
+        p = ROOT / "img" / "mining" / f"{slug}{ext}"
+        if p.exists():
+            return f"../img/mining/{p.name}"
+    return None
+
+def latest_news(max_n=6):
+    """Return latest N wires for the hub Recent News module."""
+    out = []
+    for p, _text in news_index:
+        m = re.match(r'(\d{4}-\d{2}-\d{2})-(.+)', p.stem)
+        if not m: continue
+        title = None
+        try:
+            parts = p.read_text(errors="ignore").split("---", 2)
+            if len(parts) >= 3:
+                tm = re.search(r'^title:\s*"?([^"\n]+)"?', parts[1], re.M)
+                if tm: title = tm.group(1).strip().rstrip('"')
+        except Exception: pass
+        if not title:
+            title = m.group(2).replace("-", " ").capitalize()
+        out.append({"date": m.group(1), "title": title, "file": p.stem})
+    out.sort(key=lambda h: h["date"], reverse=True)
+    return out[:max_n]
+
 def matching_articles(name, max_n=4):
     needle = name.lower()
     short = needle.replace(" mine","").replace(" minerals","").replace(" colliery","").strip()
@@ -274,7 +301,30 @@ def matching_articles(name, max_n=4):
 
 # --- CSS (reuses main-site palette) ----------------------------------------
 CSS = """
+body { background: #fff !important; }
 .mn-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Card hero image */
+.mn-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
+  aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
+  border-bottom: 1px solid var(--rule); }
+
+/* Recent news module (hub footer) */
+.mn-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.mn-news-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.5em; color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em; }
+.mn-news-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.mn-news-card { display: block; padding: 16px 18px; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s; }
+.mn-news-card:hover { border-color: var(--accent); transform: translateY(-1px);
+  text-decoration: none; color: var(--text); }
+.mn-news-date { font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.mn-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1em; line-height: 1.3; color: var(--ink); margin: 0; }
 .mn-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
 .mn-section-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
   letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
@@ -491,10 +541,16 @@ def render_hub(mines_list):
         if location: meta_bits.append(html.escape(location))
         meta_html = (' <p class="mn-card-meta">' + " &middot; ".join(meta_bits) + "</p>") if meta_bits else ''
         initial = next((ch for ch in m["name"] if ch.isalpha()), "?").upper()
+        # Hero image: prefer user-uploaded, fall back to WP-fetched
+        img_path = image_for(m["slug"])
+        if not img_path and m["wp"].get("image", {}).get("local"):
+            img_path = ".." + m["wp"]["image"]["local"]
+        img_html = f'<img class="mn-card-img" src="{img_path}" alt="{html.escape(m["name"])}" loading="lazy">' if img_path else ""
         cards.append(
 f'''    <a class="mn-card" href="./{m["slug"]}.html"
        data-name="{html.escape(m["name"].lower())}"
        data-com="{html.escape(m["commodity"].lower())}">
+      {img_html}
       <div class="mn-card-head">
         <div class="mn-card-mark" aria-hidden="true">{html.escape(initial)}</div>
         <div class="mn-card-headtext">
@@ -504,6 +560,13 @@ f'''    <a class="mn-card" href="./{m["slug"]}.html"
       </div>{meta_html}
     </a>''')
     cards_html = "\n".join(cards)
+
+    # Recent news cards for the hub
+    recent = latest_news(6)
+    recent_news_html = "\n".join(
+        f'      <a class="mn-news-card" href="/articles/{n["file"]}.html"><p class="mn-news-date">{n["date"]}</p><h3 class="mn-news-title">{html.escape(n["title"])}</h3></a>'
+        for n in recent
+    ) if recent else '      <p style="color:var(--text-light)">No recent stories.</p>'
 
     title = "Zimbabwe mining directory: gold, platinum, lithium, diamond mines"
     desc = (f"All {total} major mines in Zimbabwe — by commodity (gold, "
@@ -571,6 +634,12 @@ f'''    <a class="mn-card" href="./{m["slug"]}.html"
   <div class="mn-grid" id="mnGrid">
 {cards_html}
   </div>
+  <section class="mn-news" aria-label="Latest from The Mutapa Times">
+    <h2 class="mn-news-h2">Latest from The Mutapa Times</h2>
+    <div class="mn-news-grid">
+{recent_news_html}
+    </div>
+  </section>
   <section class="mn-sources" aria-label="About this directory">
     <h2>About this directory</h2>
     <ul>

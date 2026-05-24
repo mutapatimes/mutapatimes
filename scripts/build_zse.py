@@ -253,6 +253,25 @@ if WIRES.exists():
             news_index.append((p, p.read_text(errors="ignore").lower()))
         except Exception: pass
 
+def latest_news(max_n=6):
+    """Return latest N wires for the hub Recent News module."""
+    out = []
+    for p, _text in news_index:
+        m = re.match(r'(\d{4}-\d{2}-\d{2})-(.+)', p.stem)
+        if not m: continue
+        title = None
+        try:
+            parts = p.read_text(errors="ignore").split("---", 2)
+            if len(parts) >= 3:
+                tm = re.search(r'^title:\s*"?([^"\n]+)"?', parts[1], re.M)
+                if tm: title = tm.group(1).strip().rstrip('"')
+        except Exception: pass
+        if not title:
+            title = m.group(2).replace("-", " ").capitalize()
+        out.append({"date": m.group(1), "title": title, "file": p.stem})
+    out.sort(key=lambda h: h["date"], reverse=True)
+    return out[:max_n]
+
 def matching_articles(name, alt_names, max_n=4):
     needles = [name.lower()]
     needles.extend(a.lower() for a in alt_names if a)
@@ -312,7 +331,25 @@ print(f"  with hero image:    {sum(1 for c in companies if c['wp'].get('image'))
 
 # --- CSS (reuses main-site palette, matches /schools/) ---------------------
 CSS = """
+body { background: #fff !important; }
 .zse-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Recent news module (hub footer) */
+.zse-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.zse-news-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.5em; color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em; }
+.zse-news-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.zse-news-card { display: block; padding: 16px 18px; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s; }
+.zse-news-card:hover { border-color: var(--accent); transform: translateY(-1px);
+  text-decoration: none; color: var(--text); }
+.zse-news-date { font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.zse-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1em; line-height: 1.3; color: var(--ink); margin: 0; }
 .zse-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
 .zse-section-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
   letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
@@ -582,6 +619,12 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
     </tr>''')
     rows_html = "\n".join(rows)
 
+    recent = latest_news(6)
+    recent_news_html = "\n".join(
+        f'      <a class="zse-news-card" href="/articles/{n["file"]}.html"><p class="zse-news-date">{n["date"]}</p><h3 class="zse-news-title">{html.escape(n["title"])}</h3></a>'
+        for n in recent
+    ) if recent else '      <p style="color:var(--text-light)">No recent stories.</p>'
+
     title = "Zimbabwe Stock Exchange (ZSE) listed companies — live prices"
     desc = (f"All {total} companies and funds listed on the Zimbabwe Stock "
             "Exchange — latest ZWG price, daily change, YTD performance and "
@@ -663,6 +706,12 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
       </tbody>
     </table>
   </div>
+  <section class="zse-news" aria-label="Latest from The Mutapa Times">
+    <h2 class="zse-news-h2">Latest from The Mutapa Times</h2>
+    <div class="zse-news-grid">
+{recent_news_html}
+    </div>
+  </section>
   <section class="zse-sources" aria-label="About this directory">
     <h2>About this directory</h2>
     <ul>

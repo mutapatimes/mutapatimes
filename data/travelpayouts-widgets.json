@@ -22,6 +22,22 @@
       "origin": "Harare (HRE)", "destination": "Anywhere", "currency": "usd",
       "embed": "<script async src=\"https://tpembd.com/content?currency=usd&trs=532107&shmarker=731574&locale=en&powered_by=true&from_name=harare_zw&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111\" charset=\"utf-8\"></script>"
     },
+    "new-york-harare": {
+      "origin": "New York (NYC)", "destination": "Harare (HRE)", "currency": "usd",
+      "embed": "<script async src=\"https://tpembd.com/content?currency=usd&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=new-york_us&to_name=harare_zw&campaign_id=111&promo_id=4484\" charset=\"utf-8\"></script>"
+    },
+    "dubai-harare": {
+      "origin": "Dubai (DXB)", "destination": "Harare (HRE)", "currency": "aed",
+      "embed": "<script async src=\"https://tpembd.com/content?currency=aed&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=dubai_ae&to_name=harare_zw&campaign_id=111&promo_id=4484\" charset=\"utf-8\"></script>"
+    },
+    "toronto-harare": {
+      "origin": "Toronto (YYZ)", "destination": "Harare (HRE)", "currency": "cad",
+      "embed": "<script async src=\"https://tpembd.com/content?currency=cad&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=toronto_ca&to_name=harare_zw&campaign_id=111&promo_id=4484\" charset=\"utf-8\"></script>"
+    },
+    "london-victoria-falls": {
+      "origin": "London (LON)", "destination": "Victoria Falls (VFA)", "currency": "gbp",
+      "embed": "<script async src=\"https://tpembd.com/content?currency=gbp&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=london_gb&to_name=victoria-falls_zw&campaign_id=111&promo_id=4484\" charset=\"utf-8\"></script>"
+    },
     "zimbabwe-esim": {
       "product": "Zimbabwe eSIM", "country": "Zimbabwe",
       "embed": "<script async src=\"https://tpembd.com/content?trs=532107&shmarker=731574&locale=en&country=Zimbabwe&powered_by=true&color_button=%23f2685f&color_focused=%23f2685f&secondary=%23FFFFFF&dark=%2311100f&light=%23FFFFFF&special=%23C4C4C4&border_radius=5&plain=false&no_labels=true&promo_id=8588&campaign_id=541\" charset=\"utf-8\"></script>"

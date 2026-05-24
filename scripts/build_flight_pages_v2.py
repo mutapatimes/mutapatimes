@@ -640,6 +640,246 @@ CORRIDORS = {
         ],
     },
 
+    "new-york-to-harare": {
+        "title": f"Cheap flights New York to Harare — {MONTH_YEAR} fares from $1,100",
+        "h1": "Cheap flights New York to Harare",
+        "stand": ("New York to Harare is the US East Coast diaspora's main corridor — one stop via Addis Ababa or Doha, "
+                  "18–22 hours total. Live prices in USD below."),
+        "flag_from": "🇺🇸", "flag_to": "🇿🇼",
+        "origin_short": "New York", "origin_full": "New York (JFK / EWR)",
+        "dest_short": "Harare", "dest_full": "Harare (HRE)",
+        "currency_lbl": "USD", "currency_sym": "$",
+        "widget_key": "new-york-harare",
+        "distance": "12,500 km", "flight_time": "18–22 hrs", "stops": "1",
+        "low_fare": 1100, "high_fare": 2400,
+        "fare_range_label": "$1,100–$2,400",
+        "lead": (f"New York to Harare is the busiest US–Zimbabwe corridor by far, drawing diaspora travellers from across the East Coast and Midwest. "
+                 f"There are no non-stop flights; every routing is one-stop. In {MONTH_YEAR}, Ethiopian via Addis Ababa is consistently the cheapest "
+                 f"option at $1,100–$1,500 return in low season, with Qatar via Doha a slightly more expensive but more comfortable alternative."),
+        "airlines": [
+            ("Ethiopian Airlines", "Addis Ababa (ADD)", "$1,100–$1,800", "The cheapest reliable option from the US East Coast. JFK departs nightly."),
+            ("Qatar Airways",      "Doha (DOH)",        "$1,300–$2,000", "Better product, premium service. Both JFK and EWR daily."),
+            ("Emirates",           "Dubai (DXB)",        "$1,400–$2,200", "Reliable, generous baggage. JFK daily plus EWR seasonal."),
+            ("Delta + KLM",        "Amsterdam + JNB",    "$1,500–$2,400", "Two-stop. Convenient if you have SkyMiles status."),
+        ],
+        "season": ("Cheap months are <strong>February–March</strong>, <strong>May</strong>, and <strong>September–early November</strong>. "
+                   "Peak is December (Zimbabwean Christmas), June–July (US summer + Zim school holidays), and Easter. "
+                   "Book 10–14 weeks ahead; last-minute December fares routinely exceed $2,500."),
+        "layovers": [
+            ("Addis Ababa (Ethiopian)", "Africa's busiest hub. Allow 3+ hours; transit can be tight. Bole International is modernised."),
+            ("Doha (Qatar)",            "Comfortable, well-organised. 2–4 hour layovers typical. Lounge accessible on Privilege Club Silver+."),
+            ("Dubai (Emirates)",        "Best transit experience. Long layovers possible — Emirates allows day-room booking at the Dubai International Hotel."),
+        ],
+        "baggage": ("Ethiopian, Qatar and Emirates all allow 2 × 23 kg checked in economy on US–Africa long-haul. "
+                    "Delta + KLM itineraries vary — usually 2 × 23 kg in economy classic, 1 × 23 kg in basic economy. "
+                    "Excess at the counter is $200–$400 per bag; add at booking for ~$100."),
+        "visa": ("US passport holders need a Zimbabwe visa, issued on arrival at Harare International for US$55 cash single-entry. "
+                 "No advance application required. Bring USD cash — the visa desk does not accept card."),
+        "pullout": "Ethiopian's JFK–ADD–HRE has been consistently the cheapest US–Zimbabwe routing for years — and it's also the fastest one-stop.",
+        "faqs": [
+            ("How much is a flight from New York to Harare?",
+             "$1,100–$2,400 return depending on season and lead time. Ethiopian via Addis is usually cheapest at $1,100–$1,500 in low season; Qatar via Doha typically $1,300–$2,000. Christmas can exceed $2,500."),
+            ("Are there direct flights from New York to Harare?",
+             "No. There are no non-stop services between the US and Harare. Every itinerary has one stop, most commonly via Addis Ababa, Doha or Dubai."),
+            ("How long is the flight from New York to Harare?",
+             "18 to 22 hours total including the stop. Ethiopian JFK–ADD is 13 hours, ADD–HRE is 4 hours, with a 3-hour layover. Qatar JFK–DOH is 12 hours, DOH–HRE is 8 hours."),
+            ("What is the cheapest airline from New York to Harare?",
+             "Ethiopian Airlines via Addis Ababa is almost always the cheapest, often $200–$500 less than the next option. Service is reliable; the trade-off is a busier hub at ADD."),
+            ("Can I fly to Harare from NYC tomorrow?",
+             "Yes — Ethiopian, Qatar and Emirates all depart JFK daily for ADD/DOH/DXB with onward Harare connections. Same-day fares carry a $500–$900 premium versus an 8-week advance booking."),
+            ("What's the cheapest month to fly NYC to Harare?",
+             "February, March, May, September and October. These avoid the major diaspora travel windows (Christmas, July, Easter) and US summer peak."),
+            ("Do I need a visa to fly to Zimbabwe from the US?",
+             "Yes, but it's issued on arrival at Harare International for US$55 cash. No advance application needed. Bring USD cash for the visa desk."),
+            ("What's the best time to book NYC to Harare?",
+             "10 to 14 weeks ahead for the low end of the price range. For Christmas travel, book by August. Last-minute December fares routinely exceed $2,500."),
+        ],
+        "related": [
+            ("Flights from Harare",      "/flights/from-harare/",            "Returning to the US"),
+            ("Zimbabwe visa on arrival", "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
+            ("Harare airport (HRE)",     "/flights/harare-airport/",          "Live arrivals + practical guide"),
+            ("USD to ZWG rate",           "/fx/usd-to-zwg/",                   "Today's rate"),
+        ],
+    },
+
+    "dubai-to-harare": {
+        "title": f"Cheap flights Dubai to Harare — {MONTH_YEAR} direct on Emirates",
+        "h1": "Cheap flights Dubai to Harare",
+        "stand": ("Dubai to Harare is the only true direct long-haul into Zimbabwe — Emirates operates daily nonstop, 8 hours flight time. "
+                  "Live prices in AED below."),
+        "flag_from": "🇦🇪", "flag_to": "🇿🇼",
+        "origin_short": "Dubai", "origin_full": "Dubai (DXB)",
+        "dest_short": "Harare", "dest_full": "Harare (HRE)",
+        "currency_lbl": "AED", "currency_sym": "AED",
+        "widget_key": "dubai-harare",
+        "distance": "5,400 km", "flight_time": "8 hrs direct", "stops": "0",
+        "low_fare": 2400, "high_fare": 5500,
+        "fare_range_label": "AED 2,400–AED 5,500",
+        "lead": (f"Dubai to Harare is the only true direct long-haul service into Zimbabwe — Emirates operates a daily nonstop, "
+                 f"with scheduled flight time of around 8 hours. The route serves both the Gulf Zimbabwean diaspora and as the connection hub "
+                 f"for UK, Australian and US travellers using Dubai as a transfer point. In {MONTH_YEAR}, low-season pricing on the DXB–HRE leg "
+                 f"alone is AED 2,400–AED 3,500 return."),
+        "airlines": [
+            ("Emirates",     "Direct DXB–HRE",       "AED 2,400–AED 4,500", "Daily nonstop. The only direct long-haul service to Zimbabwe."),
+            ("Air Arabia",   "via Sharjah connections", "AED 2,200–AED 3,800", "Some routings via SHJ to JNB then onward. Cheaper but longer."),
+        ],
+        "season": ("Cheap months are <strong>February–April</strong> and <strong>September–November</strong>. Peak is December–January "
+                   "(Gulf diaspora Christmas + Zimbabwean inbound), June–August (UAE summer departures). Book 6–10 weeks ahead."),
+        "layovers": [
+            ("Direct on Emirates", "No layover. 8-hour scheduled flight, departs DXB overnight for an early-morning HRE arrival."),
+        ],
+        "baggage": ("Emirates allows 30 kg checked in economy on UAE–Africa routes (a higher allowance than most other Emirates corridors). "
+                    "Skywards members get +5–10 kg depending on tier."),
+        "visa": ("UAE residents and Gulf nationals need a Zimbabwe visa, issued on arrival at HRE for US$55 cash. "
+                 "Bring USD; the visa desk does not accept AED or card."),
+        "pullout": "Emirates DXB–HRE is the only direct long-haul flight into Zimbabwe — that's why it's the most reliable diaspora option from any origin connecting through Dubai.",
+        "faqs": [
+            ("Are there direct flights from Dubai to Harare?",
+             "Yes. Emirates operates a daily nonstop DXB–HRE, scheduled around 8 hours. It is the only direct long-haul service into Zimbabwe."),
+            ("How much is a flight from Dubai to Harare?",
+             "AED 2,400–AED 5,500 return depending on season and class. Low-season direct is AED 2,400–AED 4,500 on Emirates. December–January adds AED 1,000+."),
+            ("How long is the direct flight Dubai to Harare?",
+             "8 hours scheduled flight time. Emirates departs DXB late evening (typically 22:00–01:00) for an early-morning HRE arrival."),
+            ("Which airlines fly Dubai to Harare?",
+             "Emirates is the only direct operator. Connecting options via Sharjah (Air Arabia) and Doha (Qatar Airways) exist but add 4–8 hours."),
+            ("Can I fly from Dubai to Harare today?",
+             "Yes — Emirates' daily DXB–HRE service has same-day availability outside peak weeks. Walk-up at DXB carries a 20–40% premium vs online."),
+            ("What time does the Emirates flight leave Dubai for Harare?",
+             "Typically 22:00–01:00 local. The flight is timed to arrive in Harare early morning, both for diaspora travellers and for onward connections within southern Africa."),
+            ("Do UAE residents need a visa for Zimbabwe?",
+             "Yes. Visa on arrival at Harare for US$55 cash single-entry. No advance application needed. Bring USD."),
+            ("What's the cheapest day to fly Dubai to Harare?",
+             "Tuesday and Wednesday departures typically run AED 200–AED 500 below Friday/Sunday on Emirates."),
+        ],
+        "related": [
+            ("Flights from Harare",       "/flights/from-harare/",            "Return to Dubai"),
+            ("Zimbabwe visa on arrival",  "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
+            ("Harare airport (HRE)",      "/flights/harare-airport/",          "Live arrivals + practical guide"),
+        ],
+    },
+
+    "toronto-to-harare": {
+        "title": f"Cheap flights Toronto to Harare — {MONTH_YEAR} fares from C$1,400",
+        "h1": "Cheap flights Toronto to Harare",
+        "stand": ("Toronto to Harare is the largest Canada–Zimbabwe corridor — one or two stops via Addis Ababa, London or Joburg, "
+                  "20–24 hours total. Live prices in CAD below."),
+        "flag_from": "🇨🇦", "flag_to": "🇿🇼",
+        "origin_short": "Toronto", "origin_full": "Toronto (YYZ)",
+        "dest_short": "Harare", "dest_full": "Harare (HRE)",
+        "currency_lbl": "CAD", "currency_sym": "C$",
+        "widget_key": "toronto-harare",
+        "distance": "12,800 km", "flight_time": "20–24 hrs", "stops": "1–2",
+        "low_fare": 1400, "high_fare": 3000,
+        "fare_range_label": "C$1,400–C$3,000",
+        "lead": (f"Toronto to Harare is the largest Canada–Zimbabwe corridor, serving the Canadian Zimbabwean diaspora concentrated in the Greater "
+                 f"Toronto Area and the Prairies. There are no direct flights; routings are one-stop via Addis Ababa (Ethiopian) or two-stop via "
+                 f"London + onward. In {MONTH_YEAR}, Ethiopian via Addis is consistently the cheapest at C$1,400–C$1,900 return in low season."),
+        "airlines": [
+            ("Ethiopian Airlines",    "Addis Ababa (ADD)",     "C$1,400–C$2,200", "Cheapest. YYZ–ADD nonstop, then ADD–HRE. Daily."),
+            ("Air Canada + connections", "London or Frankfurt", "C$1,800–C$2,800", "Two-stop via European hub then southern Africa connection."),
+            ("KLM via Amsterdam",     "AMS + JNB",              "C$1,700–C$2,600", "Reliable two-stop with good baggage."),
+            ("Qatar Airways",         "Doha (DOH)",              "C$1,900–C$3,000", "Premium product, one-stop via DOH."),
+        ],
+        "season": ("Cheap months are <strong>February–May</strong> and <strong>September–early November</strong>. Peak is December–January "
+                   "(Canadian winter + Zim diaspora Christmas) and June–August. Book 10–14 weeks ahead; last-minute December fares can exceed C$3,500."),
+        "layovers": [
+            ("Addis Ababa (Ethiopian)", "Single stop, busiest African hub. Allow 3+ hours."),
+            ("London (Air Canada + BA)", "Two-stop. LHR is the common transfer, then BA/Virgin onward to Joburg + Airlink to HRE."),
+            ("Amsterdam (KLM)",          "Two-stop via AMS to JNB. Generous baggage on KLM."),
+        ],
+        "baggage": ("Ethiopian and Qatar permit 2 × 23 kg checked in economy on Canada–Africa long-haul. "
+                    "Air Canada + connection itineraries vary by booking class. Excess at airport is C$200+ per bag."),
+        "visa": ("Canadian passport holders need a Zimbabwe visa, issued on arrival at HRE for US$55 cash. Bring USD cash."),
+        "pullout": "Ethiopian's YYZ–ADD nonstop is the cheapest AND fastest Toronto–Harare routing — no contest in this corridor.",
+        "faqs": [
+            ("How much is a flight from Toronto to Harare?",
+             "C$1,400–C$3,000 return depending on season and lead time. Ethiopian via Addis is usually cheapest at C$1,400–C$1,900 in low season. Christmas can exceed C$3,500."),
+            ("Are there direct flights from Toronto to Harare?",
+             "No. There are no non-stop services. Ethiopian via Addis Ababa is the only true one-stop; other routings involve two stops via European hubs."),
+            ("How long is the flight from Toronto to Harare?",
+             "20 to 24 hours including layovers. Ethiopian's YYZ–ADD–HRE is the shortest at around 20 hours; two-stop routings via Europe extend to 24+ hours."),
+            ("What is the cheapest airline from Toronto to Harare?",
+             "Ethiopian Airlines via Addis Ababa, almost always C$300–C$600 cheaper than the next option. Their YYZ nonstop launched in 2019 and has consistently held the price advantage."),
+            ("Can I fly to Harare from Toronto this week?",
+             "Yes — Ethiopian YYZ–ADD departs 4–5 times weekly. Same-week bookings in low season are C$2,200–C$2,800; peak weeks add C$700+."),
+            ("Do Canadian passport holders need a visa for Zimbabwe?",
+             "Yes, but it's issued on arrival at Harare International for US$55 cash single-entry. No advance application required. Bring USD cash."),
+            ("What's the cheapest month to fly Toronto to Harare?",
+             "March, April, September and October are typically lowest. February and May are also good. Avoid December–January and June–August peaks."),
+            ("When should I book Toronto to Harare?",
+             "10–14 weeks ahead for the bottom of the range. For December travel, book by August. Last-minute Christmas bookings can exceed C$3,500."),
+        ],
+        "related": [
+            ("Flights from Harare",       "/flights/from-harare/",            "Return to Canada"),
+            ("Zimbabwe visa on arrival",  "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
+            ("Harare airport (HRE)",      "/flights/harare-airport/",          "Live arrivals + practical guide"),
+            ("Send CAD to Zimbabwe",      "/fx/send-money-from-canada-to-zimbabwe/", "Cheapest providers"),
+        ],
+    },
+
+    "london-to-victoria-falls": {
+        "title": f"Cheap flights London to Victoria Falls — {MONTH_YEAR} fares from £800",
+        "h1": "Cheap flights London to Victoria Falls",
+        "stand": ("London to Victoria Falls is the British tourist's main route to the Smoke that Thunders. One-stop via Joburg (BA + Airlink), "
+                  "Addis Ababa (Ethiopian) or Doha (Qatar). Live prices in GBP below."),
+        "flag_from": "🇬🇧", "flag_to": "🇿🇼",
+        "origin_short": "London", "origin_full": "London (LON)",
+        "dest_short": "Victoria Falls", "dest_full": "Victoria Falls (VFA)",
+        "currency_lbl": "GBP", "currency_sym": "£",
+        "widget_key": "london-victoria-falls",
+        "distance": "8,500 km", "flight_time": "14–18 hrs", "stops": "1",
+        "low_fare": 800, "high_fare": 2400,
+        "fare_range_label": "£800–£2,400",
+        "lead": (f"Victoria Falls (VFA) is one of southern Africa's busiest tourist gateways — and the corridor from London is the British holiday traveller's "
+                 f"default route to the Smoke that Thunders. There are no direct flights; the common routings are via Johannesburg (BA + Airlink), Addis Ababa "
+                 f"(Ethiopian) or Doha (Qatar). In {MONTH_YEAR}, low-season pricing applies and fares cluster at £800–£1,400 return; peak (June–October Zim "
+                 f"dry season aligned with UK summer) lifts to £1,800–£2,400."),
+        "airlines": [
+            ("Ethiopian Airlines", "Addis Ababa (ADD)",   "£800–£1,500",  "Cheapest reliable option. ADD–VFA direct."),
+            ("BA + Airlink",       "Johannesburg (JNB)",  "£950–£1,800",  "BA codeshare. Airlink operates the JNB–VFA leg."),
+            ("Qatar Airways",      "Doha (DOH)",          "£1,000–£1,900","Comfortable, one-stop. DOH–HRE then onward Airlink to VFA."),
+            ("Emirates",           "Dubai + JNB",          "£1,200–£2,200","Two-stop via DXB then JNB. Most generous baggage."),
+        ],
+        "season": ("Victoria Falls has a counter-cyclical pricing pattern to Harare. <strong>Dry season (May–October)</strong> is peak tourist demand and "
+                   "fares lift; <strong>wet season (November–April)</strong> sees lower fares but heavier rains. Cheap months: <strong>February–April</strong> "
+                   "and <strong>November</strong>. Avoid August (UK + South African school holidays + dry-season tourism)."),
+        "layovers": [
+            ("Addis Ababa (Ethiopian)", "Single stop. Bole International is the cheapest hub and the most reliable for VFA."),
+            ("Johannesburg (BA + Airlink)", "Single stop. Airlink operates the onward JNB–VFA leg; check baggage through-checking."),
+            ("Doha (Qatar)", "Premium product. Connects via Harare then onward Airlink — adds an hour vs Addis routing."),
+            ("Dubai + Joburg (Emirates)", "Two-stop, longer total time. Choose for baggage allowance, not speed."),
+        ],
+        "baggage": "Ethiopian and Qatar allow 2 × 23 kg checked in economy on UK–Africa long-haul. Emirates' two-stop usually permits 2 × 23 kg. BA + Airlink varies — check through-baggage carefully on the JNB–VFA leg.",
+        "visa": ("UK passport holders need a Zimbabwe visa or the KAZA UniVisa, both issued on arrival. The <strong>KAZA UniVisa (US$50)</strong> "
+                 "is the right choice for Victoria Falls trips — it covers Zimbabwe and Zambia and is valid for day trips into Botswana. "
+                 "See the <a href=\"/moving-to-zimbabwe/visa-on-arrival.html\">visa on arrival guide</a>."),
+        "pullout": "For Victoria Falls trips, the KAZA UniVisa (US$50 cash) is what you want — it covers both Zim and Zambia for day trips across the bridge.",
+        "faqs": [
+            ("How much is a flight from London to Victoria Falls?",
+             "£800–£2,400 return depending on season. Low season (February–April, November) is £800–£1,500 on Ethiopian via Addis. Peak (June–October UK summer + Zim dry season) lifts to £1,800–£2,400."),
+            ("Are there direct flights from London to Victoria Falls?",
+             "No. Every routing has at least one stop. Most common are via Addis Ababa (Ethiopian), Johannesburg (BA + Airlink) or Doha (Qatar)."),
+            ("How long is the flight from London to Victoria Falls?",
+             "14 to 18 hours including the stop. Ethiopian's LHR–ADD–VFA is shortest at about 14 hours. BA + Airlink via JNB is 15–17 hours. Two-stop via Dubai + JNB is 18+ hours."),
+            ("Which airline is cheapest London to Victoria Falls?",
+             "Ethiopian Airlines via Addis Ababa is consistently the cheapest, often £150–£400 below the next option. The trade-off is a busier hub at ADD."),
+            ("When is the best time to visit Victoria Falls?",
+             "For peak waterfall flow, visit February–May (after the rainy season). For the best Zambezi rapids whitewater rafting, visit August–November (low water). Best wildlife viewing: dry season May–October."),
+            ("What visa do I need for Victoria Falls?",
+             "If you're visiting only the Zimbabwean side: a Zimbabwe visa on arrival, US$55 cash. If you plan to cross to the Zambian side or Livingstone for day trips: the KAZA UniVisa, US$50 cash, covers both Zimbabwe and Zambia."),
+            ("Can I fly to Victoria Falls tomorrow?",
+             "Yes — daily availability on Ethiopian via Addis and BA + Airlink via Joburg. Last-minute fares in low season can come in around £1,100–£1,500."),
+            ("Is Victoria Falls airport (VFA) the right airport?",
+             "Yes for the Zimbabwean side. For the Zambian side (Livingstone), fly into Livingstone Airport (LVI). Both are 15 minutes from the Falls themselves and 5 minutes from each other via the Victoria Falls Bridge border."),
+        ],
+        "related": [
+            ("Victoria Falls airport (VFA)", "/flights/victoria-falls-airport/", "Live arrivals + practical guide"),
+            ("Harare to Victoria Falls",      "/flights/from-harare/",            "Domestic connection"),
+            ("Zimbabwe visa on arrival",      "/moving-to-zimbabwe/visa-on-arrival.html", "KAZA UniVisa"),
+            ("Send GBP to Zimbabwe",           "/fx/send-money-from-uk-to-zimbabwe/", "For your trip"),
+        ],
+    },
+
     "from-harare": {
         "title": f"Flights from Harare — book your return to the UK, US, SA, Australia | {MONTH_YEAR}",
         "h1": "Flights from Harare",
@@ -781,6 +1021,73 @@ AIRPORTS = {
             ("London to Harare",                "/flights/london-to-harare/", "Diaspora's main corridor"),
             ("Visa on arrival",                 "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
             ("Zimbabwe SIM / eSIM",             "/moving-to-zimbabwe/sim-card-and-mobile.html", "Before you fly"),
+        ],
+    },
+
+    "victoria-falls-airport": {
+        "title": f"Victoria Falls Airport (VFA) — live arrivals, departures, airlines | {MONTH_YEAR}",
+        "h1": "Victoria Falls International Airport",
+        "subtitle": "Victoria Falls (VFA / FVFA)",
+        "stand": ("Live arrivals and departures for VFA, plus the practical guide. Victoria Falls is Zimbabwe's main tourist gateway — "
+                  "British Airways, Ethiopian, Airlink, FastJet and seasonal carriers."),
+        "iata": "VFA", "icao": "FVFA",
+        "lat": -18.0959, "lon": 25.8390,
+        "lead": ("Victoria Falls International — IATA code VFA, ICAO code FVFA — is Zimbabwe's tourism gateway and one of southern Africa's busiest "
+                 "leisure airports. The terminal was rebuilt in 2016 and now handles long-haul tourism traffic plus regional connections. The airport "
+                 "sits 18 km southeast of Victoria Falls town. It is the natural arrival point for safari and falls itineraries, and visitors crossing "
+                 "to the Zambian side (Livingstone) frequently land at VFA and cross via the Victoria Falls Bridge."),
+        "facts": [
+            ("IATA / ICAO", "VFA / FVFA"),
+            ("Distance to town", "18 km"),
+            ("Annual passengers", "~600,000"),
+            ("Terminal renovated", "2016"),
+        ],
+        "airlines_outbound": [
+            ("British Airways",       "BA",  "London (LHR)",                "Seasonal direct"),
+            ("Ethiopian Airlines",    "ET",  "Addis Ababa (ADD)",           "Daily"),
+            ("Airlink",               "4Z",  "Johannesburg (JNB), Cape Town (CPT)","Daily"),
+            ("South African Airways", "SA",  "Johannesburg (JNB)",          "Several weekly"),
+            ("FastJet",               "FN",  "Johannesburg (JNB), Harare (HRE)","Multiple weekly"),
+            ("Air Zimbabwe",          "UM",  "Harare (HRE)",                "Limited"),
+            ("Proflight Zambia",      "P0",  "Lusaka (LUN)",                "Multiple weekly"),
+        ],
+        "getting_to": [
+            ("Taxi from town",        "USD 35–50, ~25 minutes from Victoria Falls town. Hotel-arranged is usually cheaper than the rank."),
+            ("Hotel shuttle",          "Most upper-tier hotels (Victoria Falls Hotel, Ilala Lodge, Elephant Hills, A'Zambezi River Lodge) include a free or modest shuttle. Confirm at booking."),
+            ("Crossing to Zambia",     "Victoria Falls Bridge border is 4 km from town. Walk-across is permitted with the right visa; KAZA UniVisa makes day-tripping seamless."),
+            ("Private transfer",        "USD 50–80 prebooked through tour operators — popular when combined with same-day game-drive transfers in Hwange or Chobe."),
+        ],
+        "practical": [
+            ("Currency",   "ATMs in arrivals dispense USD. Hotels in Victoria Falls quote in USD. Some shops accept ZAR; ZWG less common in tourist contexts."),
+            ("SIM card",   "Econet and NetOne kiosks in the small arrivals area. For tourists, a Zimbabwe eSIM purchased before flying is usually simpler — see our <a href=\"/moving-to-zimbabwe/sim-card-and-mobile.html\">SIM guide</a>."),
+            ("KAZA UniVisa", "If you're visiting both Zimbabwe and Zambia (very common at VFA), buy the KAZA UniVisa on arrival for US$50. It also allows day trips into Botswana. Cash only."),
+            ("Customs",    "Standard duty-free allowance. Wildlife/CITES items (ivory, taxidermy, certain hardwood) are heavily controlled — do not bring out."),
+            ("Wi-Fi",      "Free 30-minute Wi-Fi in the terminal. Hotels in Victoria Falls town have stronger connectivity."),
+        ],
+        "pullout": "VFA is the natural gateway for combined Zimbabwe + Zambia + Botswana itineraries — the KAZA UniVisa (US$50) at the immigration desk is the document you want.",
+        "faqs": [
+            ("What is Victoria Falls airport's code?",
+             "IATA code VFA, ICAO code FVFA. The full name is Victoria Falls International Airport. It is located 18 km southeast of Victoria Falls town in western Zimbabwe."),
+            ("Which airlines fly to Victoria Falls?",
+             "Direct service: British Airways (seasonal LHR), Ethiopian Airlines (daily ADD), Airlink (daily JNB and CPT), FastJet (multiple weekly JNB and HRE), South African Airways (weekly JNB), Air Zimbabwe (limited HRE), Proflight Zambia (LUN)."),
+            ("How far is Victoria Falls airport from the town?",
+             "18 km southeast. Taxi to town is USD 35–50 and takes about 25 minutes. Most tourist hotels include shuttle service in the rate."),
+            ("Can I cross to the Zambian side from VFA?",
+             "Yes. The Victoria Falls Bridge border post is 4 km from town. With the KAZA UniVisa (US$50, multiple-entry between Zimbabwe and Zambia) you can walk or drive across freely for day trips. The bridge offers one of the world's best views of the Falls."),
+            ("Is there live flight status for Victoria Falls airport?",
+             "Yes. Live arrivals and departures for VFA are embedded at the top of this page (sourced from Avionio). For additional flight-tracker detail, check FlightAware at <a href=\"https://flightaware.com/live/airport/FVFA\" rel=\"noopener\" target=\"_blank\">flightaware.com/live/airport/FVFA</a>."),
+            ("What visa do I need at Victoria Falls airport?",
+             "For Zimbabwe-only: a single-entry visa, US$55 cash. For Zimbabwe + Zambia (very common for Falls visitors): KAZA UniVisa, US$50 cash, covers both countries and allows Botswana day trips. South African passport holders are visa-free for 90 days."),
+            ("Can I fly from Victoria Falls to Cape Town directly?",
+             "Yes. Airlink operates direct VFA–CPT, multiple weekly. The route is popular for combined Cape Town + Victoria Falls tourist itineraries."),
+            ("What's the best time of year to visit Victoria Falls?",
+             "Peak waterfall flow: February–May (after rainy season). Best wildlife viewing and lower humidity: May–October. Whitewater rafting season (low water): August–November. Christmas–January is peak tourist season; expect higher fares."),
+        ],
+        "related": [
+            ("London to Victoria Falls",      "/flights/london-to-victoria-falls/", "The British tourist route"),
+            ("Harare airport (HRE)",          "/flights/harare-airport/",            "The main international gateway"),
+            ("Bulawayo airport (BUQ)",        "/flights/bulawayo-airport/",          "The Matabeleland gateway"),
+            ("Zimbabwe visa on arrival",       "/moving-to-zimbabwe/visa-on-arrival.html", "KAZA UniVisa"),
         ],
     },
 
@@ -1361,21 +1668,31 @@ def render_hub():
       <p class="fl-corridor-name">Bulawayo airport guide</p>
       <p class="fl-corridor-meta">Joshua Mqabuko Nkomo International. Joburg direct, no long-haul.</p>
     </a>
-    <div class="fl-corridor" data-status="planned">
+    <a class="fl-corridor" href="/flights/victoria-falls-airport/">
+      <p class="fl-corridor-route">🇿🇼 Victoria Falls (VFA)</p>
+      <p class="fl-corridor-name">Victoria Falls airport guide</p>
+      <p class="fl-corridor-meta">Tourist gateway. BA seasonal direct from LHR, Ethiopian, Airlink. Live board.</p>
+    </a>
+    <a class="fl-corridor" href="/flights/london-to-victoria-falls/">
+      <p class="fl-corridor-route">🇬🇧 London → 🇿🇼 Victoria Falls</p>
+      <p class="fl-corridor-name">London to Victoria Falls</p>
+      <p class="fl-corridor-meta">British tourist's main route to the Falls. From £800. KAZA UniVisa.</p>
+    </a>
+    <a class="fl-corridor" href="/flights/new-york-to-harare/">
       <p class="fl-corridor-route">🇺🇸 New York → 🇿🇼 Harare</p>
       <p class="fl-corridor-name">New York to Harare</p>
-      <p class="fl-corridor-meta">One-stop via Addis, Nairobi or Dubai.</p>
-    </div>
-    <div class="fl-corridor" data-status="planned">
+      <p class="fl-corridor-meta">One-stop via Addis on Ethiopian, or Doha/Dubai. From $1,100.</p>
+    </a>
+    <a class="fl-corridor" href="/flights/dubai-to-harare/">
       <p class="fl-corridor-route">🇦🇪 Dubai → 🇿🇼 Harare</p>
       <p class="fl-corridor-name">Dubai to Harare</p>
-      <p class="fl-corridor-meta">Direct on Emirates. Hub for UK &amp; Aus connections.</p>
-    </div>
-    <div class="fl-corridor" data-status="planned">
+      <p class="fl-corridor-meta">Daily nonstop on Emirates. The only direct long-haul to Zimbabwe.</p>
+    </a>
+    <a class="fl-corridor" href="/flights/toronto-to-harare/">
       <p class="fl-corridor-route">🇨🇦 Toronto → 🇿🇼 Harare</p>
       <p class="fl-corridor-name">Toronto to Harare</p>
-      <p class="fl-corridor-meta">Via London, Addis or Joburg. KLM &amp; BA most common.</p>
-    </div>
+      <p class="fl-corridor-meta">One-stop on Ethiopian via Addis, or two-stop via Europe. From C$1,400.</p>
+    </a>
   </section>
 
   <section class="fl-section">

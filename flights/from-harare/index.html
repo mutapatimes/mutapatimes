@@ -224,9 +224,40 @@ body { background: #fbfaf6; }
   text-transform: uppercase; color: var(--text-light); margin-top: 4px;
   font-family: 'Inter', system-ui, sans-serif; }
 
+/* Live arrivals/departures board (Avionio) */
+.avionio-board { max-width: 1080px; margin: 26px auto 36px; padding: 0 24px; }
+.avionio-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-light);
+  margin: 0 0 10px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.avionio-live-dot { display: inline-block; width: 8px; height: 8px;
+  background: #28a745; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(40,167,69,0.6);
+  animation: avionioPulse 2s infinite; }
+@keyframes avionioPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(40,167,69,0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(40,167,69,0); }
+  100% { box-shadow: 0 0 0 0 rgba(40,167,69,0); }
+}
+.avionio-tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--rule); margin: 0; }
+.avionio-tab { background: none; border: 0; padding: 12px 22px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 0.95em; font-weight: 600;
+  color: var(--text-light); cursor: pointer; border-bottom: 2px solid transparent;
+  margin-bottom: -2px; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.01em; }
+.avionio-tab:hover { color: var(--ink); }
+.avionio-tab.is-active { color: var(--accent); border-bottom-color: var(--accent); }
+.avionio-pane { display: none; background: #fff; border: 1px solid var(--rule);
+  border-top: 0; border-radius: 0 0 10px 10px; overflow: hidden; }
+.avionio-pane.is-active { display: block; }
+.avionio-frame { width: 100%; min-height: 500px; display: block; border: 0; }
+.avionio-credit { font-size: 0.78em; color: var(--text-light); text-align: right;
+  margin: 8px 0 0; font-family: 'Inter', system-ui, sans-serif; }
+.avionio-credit a { color: var(--text-mid); text-decoration: none;
+  border-bottom: 1px solid var(--rule); }
+
 @media (max-width: 640px) {
   .fl-hero { padding: 40px 20px 24px; }
   .fl-prose p:first-child::first-letter { font-size: 2.6em; }
+  .avionio-tab { padding: 10px 14px; font-size: 0.88em; }
 }
 </style>
 </head>

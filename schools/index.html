@@ -33,9 +33,31 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "headline": "Zimbabwe schools directory: ATS member schools", "description": "A searchable directory of all 64 Association of Trust Schools (ATS) member schools in Zimbabwe, with location, type, and links. Data sourced from atszim.org and verified by The Mutapa Times.", "url": "https://www.mutapatimes.com/schools/", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "The Mutapa Times", "logo": {"@type": "ImageObject", "url": "https://www.mutapatimes.com/img/logo.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Schools directory", "item": "https://www.mutapatimes.com/schools/"}]}</script>
 <style>
-/* Schools directory — uses main site palette from css/main.css
-   (--paper, --bg, --accent, --ink, --text, --text-mid, --text-light, --rule) */
+/* Schools directory — uses main site palette from css/main.css */
+body { background: #fff !important; }
 .sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Card hero image */
+.sd-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
+  aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
+  border-bottom: 1px solid var(--rule); }
+
+/* Recent news module (hub footer) */
+.sd-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.sd-news-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.5em; color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em; }
+.sd-news-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sd-news-card { display: block; padding: 16px 18px; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s; }
+.sd-news-card:hover { border-color: var(--accent); transform: translateY(-1px);
+  text-decoration: none; color: var(--text); }
+.sd-news-date { font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px; }
+.sd-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1em; line-height: 1.3; color: var(--ink); margin: 0; }
 
 /* Section header */
 .sd-section-header { padding: 24px 20px 4px; max-width: 1100px; margin: 0 auto; }
@@ -297,6 +319,7 @@
        data-name="ariel primary school"
        data-city="macheke"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">A</div>
         <div class="sd-card-headtext">
@@ -311,6 +334,7 @@
        data-name="arundel school"
        data-city="harare"
        data-cats="day-scholar senior urban weekly-boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">A</div>
         <div class="sd-card-headtext">
@@ -325,6 +349,7 @@
        data-name="bernard mizeki college"
        data-city="marondera"
        data-cats="boarding boys">
+      <img class="sd-card-img" src="../img/schools/bernard-mizeki-college.jpg" alt="Bernard Mizeki College" loading="lazy">
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">B</div>
         <div class="sd-card-headtext">
@@ -339,6 +364,7 @@
        data-name="bishopslea preparatory school"
        data-city="harare"
        data-cats="day-scholar girls primary urban weekly-boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">B</div>
         <div class="sd-card-headtext">
@@ -353,6 +379,7 @@
        data-name="bryden country school"
        data-city="selous"
        data-cats="day-scholar primary weekly-boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">B</div>
         <div class="sd-card-headtext">
@@ -367,6 +394,7 @@
        data-name="carmel primary school"
        data-city="bulawayo"
        data-cats="day-scholar primary urban">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -381,6 +409,7 @@
        data-name="centenary primary school"
        data-city="bulawayo"
        data-cats="day-scholar primary urban">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -395,6 +424,7 @@
        data-name="chisipite junior school"
        data-city="harare"
        data-cats="day-scholar primary urban">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -409,6 +439,7 @@
        data-name="chisipite senior school"
        data-city="harare"
        data-cats="day-scholar girls senior urban weekly-boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -423,6 +454,7 @@
        data-name="christian brothers&#x27; college"
        data-city="bulawayo"
        data-cats="boys">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -437,6 +469,7 @@
        data-name="coalfields primary school"
        data-city="hwange"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">C</div>
         <div class="sd-card-headtext">
@@ -451,6 +484,7 @@
        data-name="dominican convent high school (bulawayo)"
        data-city="harare"
        data-cats="girls">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">D</div>
         <div class="sd-card-headtext">
@@ -465,6 +499,7 @@
        data-name="dominican convent primary school (bulawayo)"
        data-city="bulawayo"
        data-cats="girls">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">D</div>
         <div class="sd-card-headtext">
@@ -479,6 +514,7 @@
        data-name="eaglesvale junior school"
        data-city="harare"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">E</div>
         <div class="sd-card-headtext">
@@ -493,6 +529,7 @@
        data-name="eaglesvale senior school"
        data-city="harare"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">E</div>
         <div class="sd-card-headtext">
@@ -507,6 +544,7 @@
        data-name="falcon college"
        data-city="esigodini"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">F</div>
         <div class="sd-card-headtext">
@@ -521,6 +559,7 @@
        data-name="gateway high school"
        data-city="harare"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">G</div>
         <div class="sd-card-headtext">
@@ -535,6 +574,7 @@
        data-name="gateway primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">G</div>
         <div class="sd-card-headtext">
@@ -549,6 +589,7 @@
        data-name="girls&#x27; college"
        data-city="bulawayo"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">G</div>
         <div class="sd-card-headtext">
@@ -563,6 +604,7 @@
        data-name="goldridge college"
        data-city="kwekwe"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">G</div>
         <div class="sd-card-headtext">
@@ -577,6 +619,7 @@
        data-name="goldridge primary school"
        data-city="kwekwe"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">G</div>
         <div class="sd-card-headtext">
@@ -591,6 +634,7 @@
        data-name="hartmann house preparatory"
        data-city="harare"
        data-cats="boys">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -605,6 +649,7 @@
        data-name="hellenic academy"
        data-city="harare"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -619,6 +664,7 @@
        data-name="hellenic primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -633,6 +679,7 @@
        data-name="hillcrest college"
        data-city="mutare"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -647,6 +694,7 @@
        data-name="hillcrest preparatory school"
        data-city="mutare"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -661,6 +709,7 @@
        data-name="hippo valley estates primary school"
        data-city="chiredzi"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">H</div>
         <div class="sd-card-headtext">
@@ -675,6 +724,7 @@
        data-name="kyle college"
        data-city="masvingo"
        data-cats="boarding">
+      <img class="sd-card-img" src="../img/schools/kyle-college.jpg" alt="Kyle College" loading="lazy">
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">K</div>
         <div class="sd-card-headtext">
@@ -689,6 +739,7 @@
        data-name="kyle preparatory school"
        data-city="masvingo"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">K</div>
         <div class="sd-card-headtext">
@@ -703,6 +754,7 @@
        data-name="lendy park primary school"
        data-city="marondera"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">L</div>
         <div class="sd-card-headtext">
@@ -717,6 +769,7 @@
        data-name="lilfordia school"
        data-city="norton"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">L</div>
         <div class="sd-card-headtext">
@@ -731,6 +784,7 @@
        data-name="lomagundi college"
        data-city="chinhoyi"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">L</div>
         <div class="sd-card-headtext">
@@ -745,6 +799,7 @@
        data-name="lomagundi college primary school"
        data-city="chinhoyi"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">L</div>
         <div class="sd-card-headtext">
@@ -759,6 +814,7 @@
        data-name="lusitania primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">L</div>
         <div class="sd-card-headtext">
@@ -773,6 +829,7 @@
        data-name="masiyephambili college"
        data-city="bulawayo"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -787,6 +844,7 @@
        data-name="masiyephambili junior school"
        data-city="bulawayo"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -801,6 +859,7 @@
        data-name="midlands christian college"
        data-city="gweru"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -815,6 +874,7 @@
        data-name="midlands christian school"
        data-city="gweru"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -829,6 +889,7 @@
        data-name="mubeena ebrahim primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -843,6 +904,7 @@
        data-name="murray macdougall school"
        data-city="triangle"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -857,6 +919,7 @@
        data-name="mvurachena primary school"
        data-city="chimanimani"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">M</div>
         <div class="sd-card-headtext">
@@ -871,6 +934,7 @@
        data-name="peterhouse boys"
        data-city="marondera"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">P</div>
         <div class="sd-card-headtext">
@@ -885,6 +949,7 @@
        data-name="peterhouse girls"
        data-city="marondera"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">P</div>
         <div class="sd-card-headtext">
@@ -899,6 +964,7 @@
        data-name="petra college junior school"
        data-city="bulawayo"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">P</div>
         <div class="sd-card-headtext">
@@ -913,6 +979,7 @@
        data-name="petra college senior school"
        data-city="bulawayo"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">P</div>
         <div class="sd-card-headtext">
@@ -927,6 +994,7 @@
        data-name="portland primary school"
        data-city="plumtree"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">P</div>
         <div class="sd-card-headtext">
@@ -941,6 +1009,7 @@
        data-name="riverside stimulation centre"
        data-city="bulawayo"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">R</div>
         <div class="sd-card-headtext">
@@ -955,6 +1024,7 @@
        data-name="ruzawi school"
        data-city="marondera"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">R</div>
         <div class="sd-card-headtext">
@@ -969,6 +1039,7 @@
        data-name="rydings school"
        data-city="karoi"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">R</div>
         <div class="sd-card-headtext">
@@ -983,6 +1054,7 @@
        data-name="sharon school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -997,6 +1069,7 @@
        data-name="south eastern college"
        data-city="chiredzi"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1011,6 +1084,7 @@
        data-name="springvale house"
        data-city="marondera"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1025,6 +1099,7 @@
        data-name="st john&#x27;s college"
        data-city="harare"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1039,6 +1114,7 @@
        data-name="st michael&#x27;s presentation primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1053,6 +1129,7 @@
        data-name="st. george&#x27;s college"
        data-city="harare"
        data-cats="boarding">
+      <img class="sd-card-img" src="../img/schools/st-george-s-college.jpg" alt="St. George&#x27;s College" loading="lazy">
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1067,6 +1144,7 @@
        data-name="st. john&#x27;s preparatory school"
        data-city="harare"
        data-cats="boys">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1081,6 +1159,7 @@
        data-name="st. thomas aquinas"
        data-city="bulawayo"
        data-cats="boarding">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">S</div>
         <div class="sd-card-headtext">
@@ -1095,6 +1174,7 @@
        data-name="twin rivers primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">T</div>
         <div class="sd-card-headtext">
@@ -1109,6 +1189,7 @@
        data-name="tynwald primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">T</div>
         <div class="sd-card-headtext">
@@ -1123,6 +1204,7 @@
        data-name="victoria falls primary school"
        data-city="victoria falls"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">V</div>
         <div class="sd-card-headtext">
@@ -1137,6 +1219,7 @@
        data-name="watershed college"
        data-city="marondera"
        data-cats="boarding senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">W</div>
         <div class="sd-card-headtext">
@@ -1151,6 +1234,7 @@
        data-name="westridge high school"
        data-city="harare"
        data-cats="senior">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">W</div>
         <div class="sd-card-headtext">
@@ -1165,6 +1249,7 @@
        data-name="westridge primary school"
        data-city="harare"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">W</div>
         <div class="sd-card-headtext">
@@ -1179,6 +1264,7 @@
        data-name="whitestone school"
        data-city="bulawayo"
        data-cats="primary">
+      
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">W</div>
         <div class="sd-card-headtext">
@@ -1190,6 +1276,17 @@
       <p class="sd-card-meta">Founded 1942</p>
     </a>
   </div>
+  <section class="sd-news" aria-label="Latest from The Mutapa Times">
+    <h2 class="sd-news-h2">Latest from The Mutapa Times</h2>
+    <div class="sd-news-grid">
+      <a class="sd-news-card" href="/articles/2026-05-15-zimbabwes-vivid-english-first-names-carry-family-histories-f.html"><p class="sd-news-date">2026-05-15</p><h3 class="sd-news-title">Zimbabwe’s vivid English first names carry family histories, from Privilege to Shame</h3></a>
+      <a class="sd-news-card" href="/articles/2026-05-14-malls-power-new-wave-of-investor-confidence-in-zim-property.html"><p class="sd-news-date">2026-05-14</p><h3 class="sd-news-title">Malls power new wave of investor confidence in Zim property</h3></a>
+      <a class="sd-news-card" href="/articles/2026-05-14-zimbabweans-lured-into-russias-war-as-families-plead-for-the.html"><p class="sd-news-date">2026-05-14</p><h3 class="sd-news-title">Zimbabweans lured into Russia’s war as families plead for their return</h3></a>
+      <a class="sd-news-card" href="/articles/2026-05-14-kavango-raises-zimbabwe-pension-fund-stake-as-nara-gold-acqu.html"><p class="sd-news-date">2026-05-14</p><h3 class="sd-news-title">Kavango raises Zimbabwe pension fund stake as Nara Gold acquisition advances</h3></a>
+      <a class="sd-news-card" href="/articles/2026-05-14-a-new-dawn-as-tembo-restores-the-warriors-soul.html"><p class="sd-news-date">2026-05-14</p><h3 class="sd-news-title">A new dawn as Tembo restores The Warriors’ soul</h3></a>
+      <a class="sd-news-card" href="/articles/2026-05-14-zdamwu-calls-for-workercentred-green-transition-in-mining-se.html"><p class="sd-news-date">2026-05-14</p><h3 class="sd-news-title">ZDAMWU calls for worker‐centred green transition in mining sector</h3></a>
+    </div>
+  </section>
   <section class="sd-sources" aria-label="About this directory">
     <h2>About this directory</h2>
     <ul>
