@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-05-24T02:47:32+00:00",
+  "fetched_at": "2026-05-24T06:33:59+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Goofy behind the scrum",
-      "link": "https://mutapatimes.com/articles/2026-05-23-goofy-behind-the-scrum",
-      "image": "https://www.mutapatimes.com/img/cards/news/54a952577206.png",
-      "pubDate": "2026-05-23T22:02:57+00:00",
-      "category": "Sport"
-    },
     {
       "kind": "news",
       "title": "Goofy behind the scrum",
@@ -28,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 24 May 2026: 1 USD = 26.32 ZWG · best from UK £100 → $131.15 via Wise",
+      "title": "Zim FX snapshot 24 May 2026: 1 USD = 26.32 ZWG · best from UK £100 → $131.14 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-05-24",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-24",
       "pubDate": "2026-05-23T22:00:00+00:00",
@@ -479,6 +471,14 @@
       "title": "Lightguard Security — Security Guard (Ruwa residents )",
       "link": "https://vacancymail.co.zw/jobs/security-guard-ruwa-residents-67567/",
       "image": "https://mutapatimes.com/img/cards/jobs/43cd72c57977.png",
+      "pubDate": "2026-05-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Veer Freight Private Limited — Customs Clerk",
+      "link": "https://vacancymail.co.zw/jobs/customs-clerk-67566/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9ca89a6a5b86.png",
       "pubDate": "2026-05-23T22:00:00+00:00",
       "category": "Jobs"
     }
