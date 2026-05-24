@@ -253,6 +253,13 @@ if WIRES.exists():
             news_index.append((p, p.read_text(errors="ignore").lower()))
         except Exception: pass
 
+def hub_banner_html():
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        p = ROOT / "img" / "zse" / f"_hero{ext}"
+        if p.exists():
+            return f'<figure class="zse-hub-img"><div class="zse-hub-img-inner"><img src="/img/zse/_hero{ext}" alt="" loading="eager"></div></figure>'
+    return ""
+
 def latest_news(max_n=6):
     """Return latest N wires for the hub Recent News module."""
     out = []
@@ -333,6 +340,13 @@ print(f"  with hero image:    {sum(1 for c in companies if c['wp'].get('image'))
 CSS = """
 body { background: #fff !important; }
 .zse-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Hub banner image */
+.zse-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.zse-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.zse-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .zse-hub-img-inner { aspect-ratio: 16/9; } }
 
 /* Recent news module (hub footer) */
 .zse-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
@@ -678,6 +692,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
       profile, history, and our latest coverage.</p>
     <hr class="zse-rule">
   </header>
+  {hub_banner_html()}
   <div class="zse-stats" role="list">
 {stats_html}
   </div>

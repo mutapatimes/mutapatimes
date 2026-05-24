@@ -211,6 +211,14 @@ def image_for(slug):
             return f"../img/schools/{p.name}"
     return None
 
+def hub_banner_html():
+    """Render a hub banner image if /img/schools/_hero.{ext} exists."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        p = ROOT / "img" / "schools" / f"_hero{ext}"
+        if p.exists():
+            return f'<figure class="sd-hub-img"><div class="sd-hub-img-inner"><img src="/img/schools/_hero{ext}" alt="" loading="eager"></div></figure>'
+    return ""
+
 def latest_news(max_n=6):
     """Return latest N wires (date, title, slug) for the hub Recent News module."""
     out = []
@@ -266,6 +274,13 @@ CSS = """
 /* Schools directory — uses main site palette from css/main.css */
 body { background: #fff !important; }
 .sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Hub banner image (full-width above the title) */
+.sd-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.sd-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.sd-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .sd-hub-img-inner { aspect-ratio: 16/9; } }
 
 /* Card hero image */
 .sd-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
@@ -645,6 +660,7 @@ f'''    <a class="sd-card" href="./{s["slug"]}.html"
       narrow down, then open any school for full detail.</p>
     <hr class="sd-rule">
   </header>
+  {hub_banner_html()}
   {quickfacts}
   <div class="sd-filterbar">
     <input type="search" class="sd-search" id="sdSearch"

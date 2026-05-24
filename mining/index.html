@@ -36,6 +36,13 @@
 body { background: #fff !important; }
 .mn-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
+/* Hub banner image */
+.mn-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.mn-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.mn-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .mn-hub-img-inner { aspect-ratio: 16/9; } }
+
 /* Card hero image */
 .mn-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
   aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
@@ -252,6 +259,7 @@ body { background: #fff !important; }
       for the full profile.</p>
     <hr class="mn-rule">
   </header>
+  <figure class="mn-hub-img"><div class="mn-hub-img-inner"><img src="/img/mining/_hero.jpg" alt="" loading="eager"></div></figure>
   <div class="mn-stats" role="list">
     <div class="mn-stat"><p class="mn-stat-label">Mines listed</p><p class="mn-stat-value">37</p></div>
     <div class="mn-stat"><p class="mn-stat-label">Commodities</p><p class="mn-stat-value">9</p></div>
@@ -459,7 +467,7 @@ body { background: #fff !important; }
     <a class="mn-card" href="./hwange-colliery.html"
        data-name="hwange colliery"
        data-com="coal">
-      
+      <img class="mn-card-img" src="../img/mining/hwange-colliery.jpg" alt="Hwange Colliery" loading="lazy">
       <div class="mn-card-head">
         <div class="mn-card-mark" aria-hidden="true">H</div>
         <div class="mn-card-headtext">

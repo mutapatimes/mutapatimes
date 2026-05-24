@@ -37,6 +37,13 @@
 body { background: #fff !important; }
 .sd-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
+/* Hub banner image (full-width above the title) */
+.sd-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.sd-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.sd-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .sd-hub-img-inner { aspect-ratio: 16/9; } }
+
 /* Card hero image */
 .sd-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
   aspect-ratio: 16/9; object-fit: cover; background: #f0ece4;
@@ -292,6 +299,7 @@ body { background: #fff !important; }
       narrow down, then open any school for full detail.</p>
     <hr class="sd-rule">
   </header>
+  
   <div class="sd-quickfacts" role="list">
         <div class="sd-fact"><p class="sd-fact-label">ATS members listed</p><p class="sd-fact-value">64</p></div>
         <div class="sd-fact"><p class="sd-fact-label">Towns &amp; cities</p><p class="sd-fact-value">19</p></div>
@@ -484,7 +492,7 @@ body { background: #fff !important; }
        data-name="dominican convent high school (bulawayo)"
        data-city="harare"
        data-cats="girls">
-      
+      <img class="sd-card-img" src="../img/schools/dominican-convent-high-school-bulawayo.jpg" alt="Dominican Convent High School (Bulawayo)" loading="lazy">
       <div class="sd-card-head">
         <div class="sd-card-mark" aria-hidden="true">D</div>
         <div class="sd-card-headtext">

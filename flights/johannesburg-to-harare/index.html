@@ -224,6 +224,15 @@ body { background: #fbfaf6; }
   text-transform: uppercase; color: var(--text-light); margin-top: 4px;
   font-family: 'Inter', system-ui, sans-serif; }
 
+/* Hero banner image (full-width) */
+.fl-hero-img { max-width: 1080px; margin: 4px auto 0; padding: 0 24px; }
+.fl-hero-img-inner { position: relative; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); aspect-ratio: 21/9; background: #f0ece4; }
+.fl-hero-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) {
+  .fl-hero-img-inner { aspect-ratio: 16/9; }
+}
+
 /* Live arrivals/departures board (Avionio) */
 .avionio-board { max-width: 1080px; margin: 26px auto 36px; padding: 0 24px; }
 .avionio-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
@@ -321,6 +330,10 @@ body { background: #fbfaf6; }
       <hr class="fl-rule">
     </div>
   </header>
+
+  <figure class="fl-hero-img">
+    <div class="fl-hero-img-inner"><img src="/img/flights/johannesburg-to-harare.jpg" alt="Cheap flights Johannesburg to Harare" loading="eager"></div>
+  </figure>
 
   <div class="fl-facts" role="list">
     <div class="fl-fact"><p class="fl-fact-label">Distance</p><p class="fl-fact-value">1,100 km</p></div>

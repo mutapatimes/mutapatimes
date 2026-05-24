@@ -255,6 +255,13 @@ def image_for(slug):
             return f"../img/mining/{p.name}"
     return None
 
+def hub_banner_html():
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        p = ROOT / "img" / "mining" / f"_hero{ext}"
+        if p.exists():
+            return f'<figure class="mn-hub-img"><div class="mn-hub-img-inner"><img src="/img/mining/_hero{ext}" alt="" loading="eager"></div></figure>'
+    return ""
+
 def latest_news(max_n=6):
     """Return latest N wires for the hub Recent News module."""
     out = []
@@ -303,6 +310,13 @@ def matching_articles(name, max_n=4):
 CSS = """
 body { background: #fff !important; }
 .mn-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Hub banner image */
+.mn-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.mn-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.mn-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .mn-hub-img-inner { aspect-ratio: 16/9; } }
 
 /* Card hero image */
 .mn-card-img { display: block; width: calc(100% + 36px); margin: -18px -18px 14px;
@@ -620,6 +634,7 @@ f'''    <a class="mn-card" href="./{m["slug"]}.html"
       for the full profile.</p>
     <hr class="mn-rule">
   </header>
+  {hub_banner_html()}
   <div class="mn-stats" role="list">
 {stats_html}
   </div>

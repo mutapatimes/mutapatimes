@@ -36,6 +36,13 @@
 body { background: #fff !important; }
 .zse-shell { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
+/* Hub banner image */
+.zse-hub-img { max-width: 1100px; margin: 14px auto 0; padding: 0 20px; }
+.zse-hub-img-inner { aspect-ratio: 21/9; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); background: #f0ece4; }
+.zse-hub-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .zse-hub-img-inner { aspect-ratio: 16/9; } }
+
 /* Recent news module (hub footer) */
 .zse-news { max-width: 1100px; margin: 32px auto; padding: 0 20px;
   font-family: 'Inter', system-ui, sans-serif; }

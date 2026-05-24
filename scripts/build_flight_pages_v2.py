@@ -307,6 +307,15 @@ body { background: #fbfaf6; }
   text-transform: uppercase; color: var(--text-light); margin-top: 4px;
   font-family: 'Inter', system-ui, sans-serif; }
 
+/* Hero banner image (full-width) */
+.fl-hero-img { max-width: 1080px; margin: 4px auto 0; padding: 0 24px; }
+.fl-hero-img-inner { position: relative; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--rule); aspect-ratio: 21/9; background: #f0ece4; }
+.fl-hero-img-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) {
+  .fl-hero-img-inner { aspect-ratio: 16/9; }
+}
+
 /* Live arrivals/departures board (Avionio) */
 .avionio-board { max-width: 1080px; margin: 26px auto 36px; padding: 0 24px; }
 .avionio-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
@@ -1160,6 +1169,23 @@ AIRPORTS = {
 # RENDERERS
 # ---------------------------------------------------------------------------
 
+def hero_image_for(slug):
+    """Return <img>-ready relative path if /img/flights/<slug>.{ext} exists."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        p = ROOT / "img" / "flights" / f"{slug}{ext}"
+        if p.exists():
+            return f"/img/flights/{p.name}"
+    return None
+
+def hero_block(slug, alt_text):
+    """Render the hero banner image block if an image exists for this slug."""
+    img = hero_image_for(slug)
+    if not img:
+        return ""
+    return f'''<figure class="fl-hero-img">
+    <div class="fl-hero-img-inner"><img src="{img}" alt="{html.escape(alt_text)}" loading="eager"></div>
+  </figure>'''
+
 def render_corridor(slug, c):
     """Render a flight corridor page (e.g. london-to-harare)."""
     widget = widgets[c["widget_key"]]["embed"]
@@ -1252,6 +1278,8 @@ def render_corridor(slug, c):
       <hr class="fl-rule">
     </div>
   </header>
+
+  {hero_block(slug, c["h1"])}
 
   <div class="fl-facts" role="list">
     <div class="fl-fact"><p class="fl-fact-label">Distance</p><p class="fl-fact-value">{html.escape(c["distance"])}</p></div>
@@ -1443,6 +1471,8 @@ def render_airport(slug, c):
       <hr class="fl-rule">
     </div>
   </header>
+
+  {hero_block(slug, c["h1"])}
 
   <div class="fl-facts" role="list">
 {facts_html}
