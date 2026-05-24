@@ -25,11 +25,11 @@
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Bulawayo Airport (BUQ) — arrivals, departures, airlines | May 2026 | The Mutapa Times">
-    <meta property="og:description" content="Bulawayo&#x27;s airport is Zimbabwe&#x27;s second international gateway. Daily regional service to Johannesburg (Airlink, SAA, FastJet) and domestic connections to Harare and Victoria Falls; no long-haul direct service.">
+    <meta property="og:description" content="Live arrivals and departures for BUQ, plus the airport guide. Bulawayo is Zimbabwe&#x27;s second international gateway: daily Johannesburg service on Airlink and FastJet, domestic connections to Harare and Victoria Falls.">
     <meta property="og:url" content="https://www.mutapatimes.com/flights/bulawayo-airport/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="Bulawayo Airport (BUQ) — arrivals, departures, airlines | May 2026 | The Mutapa Times">
-    <meta name="twitter:description" content="Bulawayo&#x27;s airport is Zimbabwe&#x27;s second international gateway. Daily regional service to Johannesburg (Airlink, SAA, FastJet) and domestic connections to Harare and Victoria Falls; no long-haul direct service.">
+    <meta name="twitter:description" content="Live arrivals and departures for BUQ, plus the airport guide. Bulawayo is Zimbabwe&#x27;s second international gateway: daily Johannesburg service on Airlink and FastJet, domestic connections to Harare and Victoria Falls.">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Flights", "item": "https://www.mutapatimes.com/flights/"}, {"@type": "ListItem", "position": 3, "name": "Joshua Mqabuko Nkomo International Airport", "item": "https://www.mutapatimes.com/flights/bulawayo-airport/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Bulawayo airport's code?", "acceptedAnswer": {"@type": "Answer", "text": "IATA code BUQ, ICAO code FVBU. Full name: Joshua Mqabuko Nkomo International Airport. Located 25 km north of Bulawayo CBD."}}, {"@type": "Question", "name": "Which airlines fly to Bulawayo?", "acceptedAnswer": {"@type": "Answer", "text": "Airlink (daily JNB), FastJet (daily JNB), South African Airways (several weekly JNB), Air Zimbabwe (limited HRE/VFA frequency). No long-haul direct service from BUQ."}}, {"@type": "Question", "name": "How far is Bulawayo airport from the city?", "acceptedAnswer": {"@type": "Answer", "text": "25 km north of central Bulawayo. Taxi to CBD is USD 20–35 and takes about 30 minutes."}}, {"@type": "Question", "name": "Are there international flights from Bulawayo?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but only regional — daily Johannesburg service on Airlink and FastJet. There is no direct long-haul service. UK, US, EU and Australian travellers connect via Johannesburg."}}, {"@type": "Question", "name": "Is Bulawayo airport open 24 hours?", "acceptedAnswer": {"@type": "Answer", "text": "No. BUQ operates with daytime hours roughly 06:00–20:00, aligned with the JNB and domestic schedule. Out-of-hours arrivals are rare and pre-coordinated."}}, {"@type": "Question", "name": "How do I get from Bulawayo airport to Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "Fly Air Zimbabwe to Victoria Falls (VFA, scheduled but with limited frequency), or take the daytime road transfer (~440 km, 5–6 hours via Hwange National Park)."}}, {"@type": "Question", "name": "Can I get a SIM card at Bulawayo airport?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but the kiosks have limited hours. Econet typically operates during peak arrival windows. For reliability, a pre-purchased eSIM is easier."}}, {"@type": "Question", "name": "Is there a hotel near Bulawayo airport?", "acceptedAnswer": {"@type": "Answer", "text": "The closest mid-range options are 10–15 km away towards the city. Bulawayo Rainbow Hotel and Holiday Inn Bulawayo are in the CBD, 25 km away."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Airport", "name": "Joshua Mqabuko Nkomo International Airport", "iataCode": "BUQ", "icaoCode": "FVBU", "url": "https://www.mutapatimes.com/flights/bulawayo-airport/", "address": {"@type": "PostalAddress", "addressCountry": "ZW"}, "geo": {"@type": "GeoCoordinates", "latitude": -20.0174, "longitude": 28.6177}}</script>
@@ -223,9 +223,40 @@ body { background: #fbfaf6; }
   text-transform: uppercase; color: var(--text-light); margin-top: 4px;
   font-family: 'Inter', system-ui, sans-serif; }
 
+/* Live arrivals/departures board (Avionio) */
+.avionio-board { max-width: 1080px; margin: 26px auto 36px; padding: 0 24px; }
+.avionio-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.72em;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-light);
+  margin: 0 0 10px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.avionio-live-dot { display: inline-block; width: 8px; height: 8px;
+  background: #28a745; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(40,167,69,0.6);
+  animation: avionioPulse 2s infinite; }
+@keyframes avionioPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(40,167,69,0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(40,167,69,0); }
+  100% { box-shadow: 0 0 0 0 rgba(40,167,69,0); }
+}
+.avionio-tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--rule); margin: 0; }
+.avionio-tab { background: none; border: 0; padding: 12px 22px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 0.95em; font-weight: 600;
+  color: var(--text-light); cursor: pointer; border-bottom: 2px solid transparent;
+  margin-bottom: -2px; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.01em; }
+.avionio-tab:hover { color: var(--ink); }
+.avionio-tab.is-active { color: var(--accent); border-bottom-color: var(--accent); }
+.avionio-pane { display: none; background: #fff; border: 1px solid var(--rule);
+  border-top: 0; border-radius: 0 0 10px 10px; overflow: hidden; }
+.avionio-pane.is-active { display: block; }
+.avionio-frame { width: 100%; min-height: 500px; display: block; border: 0; }
+.avionio-credit { font-size: 0.78em; color: var(--text-light); text-align: right;
+  margin: 8px 0 0; font-family: 'Inter', system-ui, sans-serif; }
+.avionio-credit a { color: var(--text-mid); text-decoration: none;
+  border-bottom: 1px solid var(--rule); }
+
 @media (max-width: 640px) {
   .fl-hero { padding: 40px 20px 24px; }
   .fl-prose p:first-child::first-letter { font-size: 2.6em; }
+  .avionio-tab { padding: 10px 14px; font-size: 0.88em; }
 }
 </style>
 </head>
@@ -285,7 +316,7 @@ body { background: #fbfaf6; }
     <div class="fl-hero-inner">
       <p class="fl-eyebrow"><a href="/flights/">Flights</a> &middot; Airport guide &middot; May 2026</p>
       <h1 class="fl-title">Joshua Mqabuko Nkomo International Airport</h1>
-      <p class="fl-stand">Bulawayo (BUQ / FVBU) &mdash; Bulawayo's airport is Zimbabwe's second international gateway. Daily regional service to Johannesburg (Airlink, SAA, FastJet) and domestic connections to Harare and Victoria Falls; no long-haul direct service.</p>
+      <p class="fl-stand">Bulawayo (BUQ / FVBU) &mdash; Live arrivals and departures for BUQ, plus the airport guide. Bulawayo is Zimbabwe's second international gateway: daily Johannesburg service on Airlink and FastJet, domestic connections to Harare and Victoria Falls.</p>
       <hr class="fl-rule">
     </div>
   </header>
@@ -297,13 +328,60 @@ body { background: #fbfaf6; }
     <div class="fl-fact"><p class="fl-fact-label">Runways</p><p class="fl-fact-value">1 (13/31)</p></div>
   </div>
 
-  <aside class="fl-cta">
-    <div class="fl-cta-inner">
-      <h3>Live arrivals &amp; departures</h3>
-      <p>Live flight status for BUQ is not published by the Airports Company of Zimbabwe in machine-readable form. For real-time flight status (gate, delay, on-time), check FlightAware:</p>
-      <a class="fl-cta-btn" href="https://flightaware.com/live/airport/FVBU" rel="noopener" target="_blank">FlightAware live tracker — BUQ &rarr;</a>
+  <section class="avionio-board" aria-label="Live arrivals and departures">
+    <p class="avionio-label"><span class="avionio-live-dot" aria-hidden="true"></span> Live arrivals &amp; departures &middot; BUQ</p>
+    <div class="avionio-tabs" role="tablist" aria-label="Flight board">
+      <button type="button" class="avionio-tab is-active" data-tab="arrivals" role="tab" aria-selected="true" aria-controls="avionio-pane-arrivals">Arrivals</button>
+      <button type="button" class="avionio-tab" data-tab="departures" role="tab" aria-selected="false" aria-controls="avionio-pane-departures">Departures</button>
     </div>
-  </aside>
+    <div class="avionio-pane is-active" data-pane="arrivals" id="avionio-pane-arrivals" role="tabpanel" aria-label="Arrivals">
+      <iframe class="avionio-frame" data-iframe="arrivals" height="650" frameborder="0" scrolling="no"
+              src="https://www.avionio.com/widget/en/buq/arrivals"
+              title="BUQ arrivals"></iframe>
+    </div>
+    <div class="avionio-pane" data-pane="departures" id="avionio-pane-departures" role="tabpanel" aria-label="Departures" hidden>
+      <iframe class="avionio-frame" data-iframe="departures" height="650" frameborder="0" scrolling="no"
+              src="https://www.avionio.com/widget/en/buq/departures"
+              title="BUQ departures"></iframe>
+    </div>
+    <p class="avionio-credit">Live data: <a href="https://www.avionio.com/en/airport/buq/arrivals" rel="noopener" target="_blank">Avionio</a> &middot; full board on <a href="https://flightaware.com/live/airport/FVBU" rel="noopener" target="_blank">FlightAware</a></p>
+  </section>
+  <script>
+  (function(){
+    var tabs = document.querySelectorAll('.avionio-tab');
+    var panes = document.querySelectorAll('.avionio-pane');
+    tabs.forEach(function(t) {
+      t.addEventListener('click', function() {
+        var target = t.dataset.tab;
+        tabs.forEach(function(t2) {
+          var active = t2 === t;
+          t2.classList.toggle('is-active', active);
+          t2.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        panes.forEach(function(p) {
+          var active = p.dataset.pane === target;
+          p.classList.toggle('is-active', active);
+          if (active) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
+        });
+      });
+    });
+    window.addEventListener('message', function(e) {
+      if (typeof e.data !== 'string') return;
+      var frames = document.querySelectorAll('.avionio-frame');
+      var target = null;
+      frames.forEach(function(f) { if (f.contentWindow === e.source) target = f; });
+      if (!target) return;
+      if (e.data.indexOf('avionioHeight:') > -1) {
+        target.style.height = (parseInt(e.data.split('avionioHeight:')[1]) + 30) + 'px';
+      } else if (e.data.indexOf('avionioHeightScroll:') > -1) {
+        var se = document.documentElement || document.body;
+        var sp = se.scrollTop - (se.scrollHeight - se.clientHeight);
+        target.style.height = (parseInt(e.data.split('avionioHeightScroll:')[1]) + 30) + 'px';
+        se.scrollTop = sp + se.scrollHeight - se.clientHeight;
+      }
+    }, false);
+  })();
+  </script>
 
   <section class="fl-section">
     <p class="fl-section-eyebrow"><span class="fl-section-num">01</span><span>Overview</span></p>
@@ -410,8 +488,9 @@ body { background: #fbfaf6; }
   <section class="fl-sources" aria-label="Sources">
     <h2>Sources &amp; further reading</h2>
     <ul>
+      <li>Live arrivals &amp; departures: <a href="https://www.avionio.com/en/airport/buq/arrivals" rel="noopener" target="_blank">Avionio &mdash; BUQ</a>.</li>
+      <li><a href="https://flightaware.com/live/airport/FVBU" rel="noopener" target="_blank">FlightAware live tracker for BUQ</a> (alternative).</li>
       <li><a href="https://www.acz.co.zw/" rel="noopener" target="_blank">Airports Company of Zimbabwe</a> &mdash; the operating authority.</li>
-      <li><a href="https://flightaware.com/live/airport/FVBU" rel="noopener" target="_blank">FlightAware live tracker for BUQ</a>.</li>
       <li>Airlines, frequencies and routes are editorial, last reviewed 2026-05-24; verify with the carrier before travel.</li>
     </ul>
     <p class="fl-sources-note">This page is editorial reference. Schedule and operator changes are common in Zimbabwean aviation; cross-check with the airline before booking.</p>
