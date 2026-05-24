@@ -1,38 +1,30 @@
 {
-  "fetched_at": "2026-05-24T13:15:17+00:00",
+  "fetched_at": "2026-05-24T15:58:02+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "ZMX battles tight commodity stocks",
-      "link": "https://mutapatimes.com/articles/2026-05-24-zmx-battles-tight-commodity-stocks",
-      "image": "https://www.mutapatimes.com/img/cards/news/9c8c9d21f2b8.png",
-      "pubDate": "2026-05-24T00:00:00+00:00",
+      "title": "No more long walks to school 4 schools open in Bulilima",
+      "link": "https://mutapatimes.com/articles/2026-05-24-no-more-long-walks-to-school-4-schools-open-in-bulilima",
+      "image": "https://www.mutapatimes.com/img/cards/news/345e9978ef17.png",
+      "pubDate": "2026-05-24T01:44:03+00:00",
+      "category": "Education"
+    },
+    {
+      "kind": "news",
+      "title": "Zim pushes for Pfizer deal to boost access to medicines and vaccines",
+      "link": "https://mutapatimes.com/articles/2026-05-24-zim-pushes-for-pfizer-deal-to-boost-access-to-medicines-and",
+      "image": "https://www.mutapatimes.com/img/cards/news/17a895ef99b1.png",
+      "pubDate": "2026-05-24T01:43:49+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Air ambulance service responds to 1 400 emergency cases, spreads wings to Vic Falls",
+      "link": "https://mutapatimes.com/articles/2026-05-24-air-ambulance-service-responds-to-1-400-emergency-cases-spre",
+      "image": "https://www.mutapatimes.com/img/cards/news/f508c955f2db.png",
+      "pubDate": "2026-05-24T01:42:01+00:00",
       "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe swings into International Pairs showdown",
-      "link": "https://mutapatimes.com/articles/2026-05-23-zimbabwe-swings-into-international-pairs-showdown",
-      "image": "https://www.mutapatimes.com/img/cards/news/60bb77e1f4f5.png",
-      "pubDate": "2026-05-23T23:57:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Diaspora skills a vital asset for national development: VP Chiwenga",
-      "link": "https://mutapatimes.com/news/2026-05-23-diaspora-skills-a-vital-asset-for-national-development-vp-chiwenga-27c2a6",
-      "image": "https://www.mutapatimes.com/img/cards/news/0978f5271e3e.png",
-      "pubDate": "2026-05-23T22:16:23+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Govt considers tough new law against counterfeit products",
-      "link": "https://mutapatimes.com/news/2026-05-23-govt-considers-tough-new-law-against-counterfeit-products-6edbd3",
-      "image": "https://www.mutapatimes.com/img/cards/news/63ad4b232e29.png",
-      "pubDate": "2026-05-23T22:15:55+00:00",
-      "category": "News"
     },
     {
       "kind": "news",
@@ -479,6 +471,14 @@
       "title": "World Vision — Communications Assistant",
       "link": "https://vacancymail.co.zw/jobs/communications-assistant-67570/",
       "image": "https://mutapatimes.com/img/cards/jobs/7bc2aa2e98e0.png",
+      "pubDate": "2026-05-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe Red Cross Society — Provincial Manager x 3",
+      "link": "https://vacancymail.co.zw/jobs/provincial-manager-x-3-67569/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6cf1cbd26d6a.png",
       "pubDate": "2026-05-23T22:00:00+00:00",
       "category": "Jobs"
     }

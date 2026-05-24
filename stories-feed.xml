@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 24 May 2026 14:04:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 15:58:02 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Air ambulance service responds to 1 400 emergency cases, spreads wings to Vic Falls @zimsituation</title>
+      <link>https://mutapatimes.com/stories/f508c955f2db.html</link>
+      <description>Source: Air ambulance service responds to 1 400 emergency cases, spreads wings to Vic Falls – herald Zimpapers Reporter ZIMBABWE’s national air ambulance service, HeliDrive, has responded to 1 462 emergency cases since August 2024, with its newly operational Victoria Falls base n via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Sun, 24 May 2026 01:42:01 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/f508c955f2db.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/f508c955f2db.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f508c955f2db.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/f508c955f2db.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>ZMX battles tight commodity stocks</title>
       <link>https://mutapatimes.com/stories/9c8c9d21f2b8.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/5f43520e0b4f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5f43520e0b4f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/5f43520e0b4f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Seke Teacher’s College — Lecturer : Psychology</title>
-      <link>https://mutapatimes.com/stories/b265eef8adf8.html</link>
-      <description>JOB VACANCY Applications are invited from suitably qualified and experienced persons for the Diploma Lecturing LECTURER X 1 POST: PSYCHOLOGY Post 1. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sat, 23 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/b265eef8adf8.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Seke Teacher's College</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/b265eef8adf8.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b265eef8adf8.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/b265eef8adf8.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
