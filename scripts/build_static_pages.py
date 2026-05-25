@@ -762,6 +762,12 @@ def build_articles():
 
         date_display = format_date(date_str)
         body_html = markdown_to_html(body)
+        # Inline cross-site autolinks (cities, currencies, airports etc.)
+        try:
+            from lib_related import autolink_body
+            body_html = autolink_body(body_html)
+        except Exception:
+            pass
 
         # Schema.org NewsArticle JSON-LD
         schema = {
@@ -939,6 +945,13 @@ def build_articles():
 
         # Back link
         html_parts.append(f'      <div class="article-back"><a href="../articles.html">&larr; All articles</a></div>')
+
+        # Cross-site related rail — keeps readers moving across the site
+        try:
+            from lib_related import related_rail_html
+            html_parts.append(related_rail_html(exclude_site="news"))
+        except Exception:
+            pass
 
         html_parts.append("""
     </article>

@@ -123,6 +123,15 @@ jobs:
         if: steps.detect.outputs.cooking == 'true'
         run: python3 scripts/build_cooking.py
 
+      - name: Install cross-site related rail
+        if: |
+          steps.detect.outputs.flights == 'true' ||
+          steps.detect.outputs.schools == 'true' ||
+          steps.detect.outputs.zse == 'true' ||
+          steps.detect.outputs.mining == 'true' ||
+          steps.detect.outputs.cooking == 'true'
+        run: python3 scripts/install_related_rail.py
+
       - name: Re-wire nav drawer on rebuilt pages
         if: |
           steps.detect.outputs.flights == 'true' ||
