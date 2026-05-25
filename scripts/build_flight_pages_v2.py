@@ -30,6 +30,21 @@ DATE_ISO = TODAY.isoformat()
 
 widgets = json.loads((ROOT / "data" / "travelpayouts-widgets.json").read_text())["widgets"]
 
+# Optional live-price data from scripts/fetch_flight_prices.py.
+# When the file is missing/empty the build still completes — the price
+# callouts simply don't render. Updated twice daily by the
+# fetch-flight-prices GitHub Action.
+_prices_path = ROOT / "data" / "flight-prices.json"
+prices_by_slug = {}
+prices_fetched_at = ""
+if _prices_path.exists():
+    try:
+        _pp = json.loads(_prices_path.read_text())
+        prices_by_slug = _pp.get("corridors", {}) or {}
+        prices_fetched_at = _pp.get("fetched_at", "")
+    except Exception:
+        prices_by_slug = {}
+
 # ---------------------------------------------------------------------------
 # SHARED CHROME
 # ---------------------------------------------------------------------------
@@ -210,6 +225,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
 
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
@@ -1228,7 +1278,35 @@ def render_corridor(slug, c):
         "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://www.mutapatimes.com"}
     }, ensure_ascii=False)
 
-    # AggregateOffer for the route — gives Google a current-month price signal
+    # Live price data (Travelpayouts Data API, refreshed twice daily)
+    live = prices_by_slug.get(slug, {}) or {}
+    cheapest_obs = live.get("cheapest") or live.get("cheapest_30d") or {}
+    live_price = cheapest_obs.get("value")
+    live_airline = cheapest_obs.get("airline")
+    live_dep = (cheapest_obs.get("departure_at") or "")[:10]
+    live_stops = cheapest_obs.get("number_of_changes")
+    fare_callout_html = ""
+    if live_price:
+        stops_lbl = "direct" if live_stops == 0 else (f"{live_stops}-stop" if live_stops else "")
+        meta_bits = []
+        if live_airline: meta_bits.append(f"<strong>{html.escape(str(live_airline))}</strong>")
+        if stops_lbl: meta_bits.append(html.escape(stops_lbl))
+        if live_dep: meta_bits.append(f"departing {live_dep}")
+        meta_str = " &middot; ".join(meta_bits) if meta_bits else "live observed fare"
+        fare_callout_html = f'''<aside class="fl-fare">
+    <div class="fl-fare-inner">
+      <div>
+        <p class="fl-fare-label"><span class="fl-fare-pulse" aria-hidden="true"></span>Cheapest fare observed</p>
+        <p class="fl-fare-price">{c["currency_sym"]}{live_price:,}</p>
+        <p class="fl-fare-meta">{meta_str}</p>
+        <p class="fl-fare-asof">Updated {prices_fetched_at} &middot; via Skyscanner / Travelpayouts cache. Live prices in the search below.</p>
+      </div>
+      <a class="fl-fare-cta" href="#fl-widget">Search current fares &rarr;</a>
+    </div>
+  </aside>'''
+
+    # AggregateOffer for the route — uses live cheapest if available
+    offer_low = live_price if live_price else c["low_fare"]
     offer_ld = json.dumps({
         "@context":"https://schema.org","@type":"Product",
         "name": f"{c['origin_short']} to {c['dest_short']} flight",
@@ -1236,7 +1314,7 @@ def render_corridor(slug, c):
         "offers": {
             "@type":"AggregateOffer",
             "priceCurrency": c["currency_lbl"],
-            "lowPrice": c["low_fare"],
+            "lowPrice": offer_low,
             "highPrice": c["high_fare"],
             "offerCount": len(c["airlines"]),
             "availability":"https://schema.org/InStock",
@@ -1288,7 +1366,9 @@ def render_corridor(slug, c):
     <div class="fl-fact"><p class="fl-fact-label">Typical fare</p><p class="fl-fact-value">{html.escape(c["fare_range_label"])}</p></div>
   </div>
 
-  <div class="fl-widget-wrap">
+  {fare_callout_html}
+
+  <div class="fl-widget-wrap" id="fl-widget">
     <p class="fl-widget-label">Live price search &mdash; {c["origin_short"]} → {c["dest_short"]} in {c["currency_lbl"]}</p>
     <div class="fl-widget">
       {widget}

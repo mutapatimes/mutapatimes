@@ -33,7 +33,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Flights", "item": "https://www.mutapatimes.com/flights/"}, {"@type": "ListItem", "position": 3, "name": "London to Harare", "item": "https://www.mutapatimes.com/flights/london-to-harare/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is a flight from London to Harare today?", "acceptedAnswer": {"@type": "Answer", "text": "Typical return fares are £700–£1,200 in low season (February to May, September to early November) and £1,400–£2,200 in high season (mid-December to mid-January, July, Easter week). Live prices for your specific dates are in the search widget above."}}, {"@type": "Question", "name": "Are there any direct flights from London to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "No. There are currently no non-stop services between London and Harare. Every itinerary involves one stop at the carrier's hub (Dubai, Doha, Addis Ababa, Nairobi or Johannesburg)."}}, {"@type": "Question", "name": "How long is the flight from London to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "13 to 15 hours including the stop, depending on routing. Emirates via Dubai is about 13.5 hours door to door; Ethiopian via Addis is around 14 hours; Kenya Airways via Nairobi is 14–15 hours. The pure flight time across both legs is about 10–11 hours; the rest is the layover."}}, {"@type": "Question", "name": "When should I book?", "acceptedAnswer": {"@type": "Answer", "text": "Eight to twelve weeks ahead for the cheaper end of the range. For Christmas travel, book by August at the latest. Last-minute fares in December and July regularly exceed £2,000 return."}}, {"@type": "Question", "name": "What is the cheapest month to fly from London to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "February, March, May, September and October are typically the cheapest months on this corridor. These months fall between the major Zimbabwean diaspora travel windows."}}, {"@type": "Question", "name": "Can I fly from London to Harare tomorrow?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — there are daily departures via Dubai, Doha, Addis Ababa and Nairobi, so a next-day booking is always possible. Expect to pay a premium of £400–£900 versus an 8-week advance booking, more in peak weeks."}}, {"@type": "Question", "name": "What are the cheapest last-minute flights from London to Harare this week?", "acceptedAnswer": {"@type": "Answer", "text": "Last-minute on this corridor is usually Qatar via Doha or Ethiopian via Addis — both have daily availability and aggressive yield management. Run the live widget above for your exact dates; same-week bookings in low season can still come in under £1,200 return."}}, {"@type": "Question", "name": "Which airline is best from London to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Emirates for reliability and schedule comfort, Qatar for the cheapest of the premium options, Ethiopian for the lowest fare overall. Avoid BA + Airlink unless the through-baggage policy is explicit on your specific booking."}}, {"@type": "Question", "name": "Do I need a visa to fly from London to Zimbabwe?", "acceptedAnswer": {"@type": "Answer", "text": "British passport holders need a visa, but it's issued on arrival at Harare International for US$55 cash (single entry) or US$50 for the KAZA UniVisa (Zimbabwe + Zambia). No advance application is required."}}, {"@type": "Question", "name": "Is it safe to fly to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All five carriers (Emirates, Qatar, Ethiopian, Kenya Airways, SAA/BA) maintain standard international safety records on the route. Harare's airport (HRE) was extensively renovated in 2017–2022 and meets ICAO standards."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Trip", "name": "London to Harare", "description": "Flight from London (LON) to Harare (HRE)", "provider": {"@type": "Organization", "name": "The Mutapa Times", "url": "https://www.mutapatimes.com"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "London to Harare flight", "description": "Return flight from London (LON) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": 700, "highPrice": 2200, "offerCount": 5, "availability": "https://schema.org/InStock", "validFrom": "2026-05-24"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "London to Harare flight", "description": "Return flight from London (LON) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": 700, "highPrice": 2200, "offerCount": 5, "availability": "https://schema.org/InStock", "validFrom": "2026-05-25"}}</script>
 <!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
 <!-- Travelpayouts Drive tracking -->
@@ -127,6 +127,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
 
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
@@ -340,7 +375,9 @@ body { background: #fbfaf6; }
     <div class="fl-fact"><p class="fl-fact-label">Typical fare</p><p class="fl-fact-value">£700–£2,200</p></div>
   </div>
 
-  <div class="fl-widget-wrap">
+  
+
+  <div class="fl-widget-wrap" id="fl-widget">
     <p class="fl-widget-label">Live price search &mdash; London → Harare in GBP</p>
     <div class="fl-widget">
       <script async src="https://tpembd.com/content?currency=gbp&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=london_gb&to_name=harare_zw&campaign_id=111&promo_id=4484" charset="utf-8"></script>
@@ -474,7 +511,7 @@ body { background: #fbfaf6; }
     <h2>Sources &amp; further reading</h2>
     <ul>
       <li>Live price data: <a href="https://www.travelpayouts.com/" rel="noopener" target="_blank">Travelpayouts</a>, aggregating Skyscanner, Aviasales, WayAway and Kiwi.com.</li>
-      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-24.</li>
+      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-25.</li>
     </ul>
     <p class="fl-sources-note">The Mutapa Times may earn a referral commission when readers book through the embedded search; this does not change the price you pay or which airlines we list.</p>
   </section>

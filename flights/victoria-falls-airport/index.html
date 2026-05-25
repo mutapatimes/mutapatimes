@@ -127,6 +127,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
 
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
+
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
   padding: 22px 26px; background: #fff; border: 1px solid var(--rule);
@@ -507,7 +542,7 @@ body { background: #fbfaf6; }
       <li>Live arrivals &amp; departures: <a href="https://www.avionio.com/en/airport/vfa/arrivals" rel="noopener" target="_blank">Avionio &mdash; VFA</a>.</li>
       <li><a href="https://flightaware.com/live/airport/FVFA" rel="noopener" target="_blank">FlightAware live tracker for VFA</a> (alternative).</li>
       <li><a href="https://www.acz.co.zw/" rel="noopener" target="_blank">Airports Company of Zimbabwe</a> &mdash; the operating authority.</li>
-      <li>Airlines, frequencies and routes are editorial, last reviewed 2026-05-24; verify with the carrier before travel.</li>
+      <li>Airlines, frequencies and routes are editorial, last reviewed 2026-05-25; verify with the carrier before travel.</li>
     </ul>
     <p class="fl-sources-note">This page is editorial reference. Schedule and operator changes are common in Zimbabwean aviation; cross-check with the airline before booking.</p>
   </section>

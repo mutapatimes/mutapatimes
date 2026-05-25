@@ -33,7 +33,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Flights", "item": "https://www.mutapatimes.com/flights/"}, {"@type": "ListItem", "position": 3, "name": "Cape Town to Harare", "item": "https://www.mutapatimes.com/flights/cape-town-to-harare/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is a flight from Cape Town to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "R5,500 to R12,000 return depending on direct vs one-stop and lead time. Direct on Airlink is usually R6,500–R9,500; via Joburg with SAA or FastJet can dip below R6,000 in low season."}}, {"@type": "Question", "name": "Are there direct flights from Cape Town to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Airlink operates direct CPT–HRE with a scheduled flight time of around 3 hours. SAA and FastJet route via Johannesburg, which is cheaper but longer."}}, {"@type": "Question", "name": "How long is the direct flight from Cape Town to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Approximately 3 hours direct on Airlink. Via Johannesburg the total journey time is 5–7 hours including the layover."}}, {"@type": "Question", "name": "What is the cheapest way to fly Cape Town to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Via Johannesburg with FastJet or SAA, booked 4–8 weeks ahead in low season (March–May, September–early November), can sit at R5,500–R6,500 return."}}, {"@type": "Question", "name": "Can I book a Cape Town to Harare flight for this weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — daily availability on Airlink direct and via JNB on SAA and FastJet. Same-week booking in low season is typically R7,500–R9,500 return; peak weeks add R2,000+."}}, {"@type": "Question", "name": "Do South Africans need a visa for Zimbabwe?", "acceptedAnswer": {"@type": "Answer", "text": "No. South African passport holders can visit Zimbabwe visa-free for up to 90 days. Just bring your passport."}}, {"@type": "Question", "name": "Is FastJet safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FastJet has a clean operating record and standard ICAO oversight via Zimbabwe's Civil Aviation Authority. The 'budget' label is about price and baggage, not safety."}}, {"@type": "Question", "name": "What's the cheapest month to fly Cape Town to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "April, May, September, October are typically lowest. The corridor lifts in late November–February (tourism into CPT, holidays out of HRE)."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Trip", "name": "Cape Town to Harare", "description": "Flight from Cape Town (CPT) to Harare (HRE)", "provider": {"@type": "Organization", "name": "The Mutapa Times", "url": "https://www.mutapatimes.com"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Cape Town to Harare flight", "description": "Return flight from Cape Town (CPT) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "ZAR", "lowPrice": 5500, "highPrice": 12000, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-24"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Cape Town to Harare flight", "description": "Return flight from Cape Town (CPT) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "ZAR", "lowPrice": 5500, "highPrice": 12000, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-25"}}</script>
 <!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
 <!-- Travelpayouts Drive tracking -->
@@ -127,6 +127,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
 
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
@@ -342,7 +377,9 @@ body { background: #fbfaf6; }
     <div class="fl-fact"><p class="fl-fact-label">Typical fare</p><p class="fl-fact-value">R5,500–R12,000</p></div>
   </div>
 
-  <div class="fl-widget-wrap">
+  
+
+  <div class="fl-widget-wrap" id="fl-widget">
     <p class="fl-widget-label">Live price search &mdash; Cape Town → Harare in ZAR</p>
     <div class="fl-widget">
       <script async src="https://tpembd.com/content?currency=zar&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=cape-town_za&campaign_id=111&promo_id=4484" charset="utf-8"></script>
@@ -464,7 +501,7 @@ body { background: #fbfaf6; }
     <h2>Sources &amp; further reading</h2>
     <ul>
       <li>Live price data: <a href="https://www.travelpayouts.com/" rel="noopener" target="_blank">Travelpayouts</a>, aggregating Skyscanner, Aviasales, WayAway and Kiwi.com.</li>
-      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-24.</li>
+      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-25.</li>
     </ul>
     <p class="fl-sources-note">The Mutapa Times may earn a referral commission when readers book through the embedded search; this does not change the price you pay or which airlines we list.</p>
   </section>

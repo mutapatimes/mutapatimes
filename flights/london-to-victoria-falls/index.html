@@ -33,7 +33,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Flights", "item": "https://www.mutapatimes.com/flights/"}, {"@type": "ListItem", "position": 3, "name": "London to Victoria Falls", "item": "https://www.mutapatimes.com/flights/london-to-victoria-falls/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is a flight from London to Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "£800–£2,400 return depending on season. Low season (February–April, November) is £800–£1,500 on Ethiopian via Addis. Peak (June–October UK summer + Zim dry season) lifts to £1,800–£2,400."}}, {"@type": "Question", "name": "Are there direct flights from London to Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every routing has at least one stop. Most common are via Addis Ababa (Ethiopian), Johannesburg (BA + Airlink) or Doha (Qatar)."}}, {"@type": "Question", "name": "How long is the flight from London to Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "14 to 18 hours including the stop. Ethiopian's LHR–ADD–VFA is shortest at about 14 hours. BA + Airlink via JNB is 15–17 hours. Two-stop via Dubai + JNB is 18+ hours."}}, {"@type": "Question", "name": "Which airline is cheapest London to Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "Ethiopian Airlines via Addis Ababa is consistently the cheapest, often £150–£400 below the next option. The trade-off is a busier hub at ADD."}}, {"@type": "Question", "name": "When is the best time to visit Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "For peak waterfall flow, visit February–May (after the rainy season). For the best Zambezi rapids whitewater rafting, visit August–November (low water). Best wildlife viewing: dry season May–October."}}, {"@type": "Question", "name": "What visa do I need for Victoria Falls?", "acceptedAnswer": {"@type": "Answer", "text": "If you're visiting only the Zimbabwean side: a Zimbabwe visa on arrival, US$55 cash. If you plan to cross to the Zambian side or Livingstone for day trips: the KAZA UniVisa, US$50 cash, covers both Zimbabwe and Zambia."}}, {"@type": "Question", "name": "Can I fly to Victoria Falls tomorrow?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — daily availability on Ethiopian via Addis and BA + Airlink via Joburg. Last-minute fares in low season can come in around £1,100–£1,500."}}, {"@type": "Question", "name": "Is Victoria Falls airport (VFA) the right airport?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for the Zimbabwean side. For the Zambian side (Livingstone), fly into Livingstone Airport (LVI). Both are 15 minutes from the Falls themselves and 5 minutes from each other via the Victoria Falls Bridge border."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Trip", "name": "London to Victoria Falls", "description": "Flight from London (LON) to Victoria Falls (VFA)", "provider": {"@type": "Organization", "name": "The Mutapa Times", "url": "https://www.mutapatimes.com"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "London to Victoria Falls flight", "description": "Return flight from London (LON) to Victoria Falls (VFA), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": 800, "highPrice": 2400, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-24"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "London to Victoria Falls flight", "description": "Return flight from London (LON) to Victoria Falls (VFA), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": 800, "highPrice": 2400, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-25"}}</script>
 <!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
 <!-- Travelpayouts Drive tracking -->
@@ -127,6 +127,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
 
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
@@ -342,7 +377,9 @@ body { background: #fbfaf6; }
     <div class="fl-fact"><p class="fl-fact-label">Typical fare</p><p class="fl-fact-value">£800–£2,400</p></div>
   </div>
 
-  <div class="fl-widget-wrap">
+  
+
+  <div class="fl-widget-wrap" id="fl-widget">
     <p class="fl-widget-label">Live price search &mdash; London → Victoria Falls in GBP</p>
     <div class="fl-widget">
       <script async src="https://tpembd.com/content?currency=gbp&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=london_gb&to_name=victoria-falls_zw&campaign_id=111&promo_id=4484" charset="utf-8"></script>
@@ -466,7 +503,7 @@ body { background: #fbfaf6; }
     <h2>Sources &amp; further reading</h2>
     <ul>
       <li>Live price data: <a href="https://www.travelpayouts.com/" rel="noopener" target="_blank">Travelpayouts</a>, aggregating Skyscanner, Aviasales, WayAway and Kiwi.com.</li>
-      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-24.</li>
+      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-25.</li>
     </ul>
     <p class="fl-sources-note">The Mutapa Times may earn a referral commission when readers book through the embedded search; this does not change the price you pay or which airlines we list.</p>
   </section>

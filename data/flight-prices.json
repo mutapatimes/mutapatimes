@@ -1,0 +1,31 @@
+{
+  "fetched_at": "2026-05-25",
+  "source": "Travelpayouts Data API (/v2/prices/latest)",
+  "status": "ok",
+  "corridors": {
+    "london-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "sydney-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "cape-town-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "johannesburg-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "new-york-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "dubai-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "toronto-to-harare": {
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "london-to-victoria-falls": {
+      "error": "HTTP Error 401: Unauthorized"
+    }
+  }
+}

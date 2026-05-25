@@ -33,7 +33,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"}, {"@type": "ListItem", "position": 2, "name": "Flights", "item": "https://www.mutapatimes.com/flights/"}, {"@type": "ListItem", "position": 3, "name": "Johannesburg to Harare", "item": "https://www.mutapatimes.com/flights/johannesburg-to-harare/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is a flight from Johannesburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "R3,500 to R8,500 return depending on carrier and season. FastJet is usually cheapest at R3,500–R6,500; SAA and Airlink sit at R4,500–R7,500. Christmas fares can exceed R10,000."}}, {"@type": "Question", "name": "Are there direct flights from Johannesburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. SAA, Airlink and FastJet all fly direct Joburg to Harare, with 1h 50m scheduled flight time. Multiple daily frequencies on each."}}, {"@type": "Question", "name": "How long is the flight from Johannesburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "1 hour 50 minutes scheduled flight time. Including check-in, the full journey is around 4 hours."}}, {"@type": "Question", "name": "Which is the cheapest airline Johannesburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "FastJet is usually the cheapest, with one-way fares often under R2,000. SAA and Airlink come in higher but include more baggage and faster JNB connections."}}, {"@type": "Question", "name": "How often do flights run Joburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "Multiple times daily. Combined across SAA, Airlink and FastJet there are typically 6–8 daily frequencies in each direction, including early morning, midday and evening departures."}}, {"@type": "Question", "name": "Can I fly to Harare from Joburg today?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — same-day bookings are routine. Walk-up fares at OR Tambo are higher than online; budget R4,000–R6,000 one-way for a same-day booking."}}, {"@type": "Question", "name": "What's the cheapest day to fly JNB to HRE?", "acceptedAnswer": {"@type": "Answer", "text": "Tuesday and Wednesday departures are usually the cheapest; Sunday and Friday lift R500–R1,500 due to business and weekend travel demand."}}, {"@type": "Question", "name": "Do I need a visa to fly from Joburg to Harare?", "acceptedAnswer": {"@type": "Answer", "text": "South African passport holders, no — visa-free for 90 days. Other nationalities need a Zimbabwe visa, issued on arrival at HRE for US$55 cash."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Trip", "name": "Johannesburg to Harare", "description": "Flight from Johannesburg (JNB) to Harare (HRE)", "provider": {"@type": "Organization", "name": "The Mutapa Times", "url": "https://www.mutapatimes.com"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Johannesburg to Harare flight", "description": "Return flight from Johannesburg (JNB) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "ZAR", "lowPrice": 3500, "highPrice": 8500, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-24"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Johannesburg to Harare flight", "description": "Return flight from Johannesburg (JNB) to Harare (HRE), indicative May 2026 fares.", "offers": {"@type": "AggregateOffer", "priceCurrency": "ZAR", "lowPrice": 3500, "highPrice": 8500, "offerCount": 4, "availability": "https://schema.org/InStock", "validFrom": "2026-05-25"}}</script>
 <!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
 <!-- Travelpayouts Drive tracking -->
@@ -127,6 +127,41 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+
+/* Live-fare callout: cheapest fare observed for this route today */
+.fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
+.fl-fare-inner { background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%);
+  border: 1px solid var(--rule); border-left: 4px solid #1f7a3e;
+  border-radius: 10px; padding: 18px 22px;
+  display: grid; grid-template-columns: 1fr auto; gap: 14px 24px;
+  align-items: center; font-family: 'Inter', system-ui, sans-serif; }
+.fl-fare-label { font-size: 0.7em; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1f7a3e; font-weight: 700; margin: 0 0 4px;
+  display: inline-flex; align-items: center; gap: 8px; }
+.fl-fare-pulse { width: 7px; height: 7px; background: #1f7a3e; border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(31,122,62,0.6); animation: flFarePulse 2s infinite; }
+@keyframes flFarePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(31,122,62,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(31,122,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(31,122,62,0); }
+}
+.fl-fare-price { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: clamp(1.6em, 3vw, 2.1em); color: var(--ink); margin: 0;
+  line-height: 1.1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.fl-fare-meta { font-size: 0.9em; color: var(--text-mid); margin: 4px 0 0;
+  line-height: 1.5; }
+.fl-fare-meta strong { color: var(--ink); }
+.fl-fare-asof { font-size: 0.72em; color: var(--text-light); margin: 6px 0 0;
+  letter-spacing: 0.04em; }
+.fl-fare-cta { font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.92em; padding: 10px 18px; background: var(--ink); color: #fff;
+  text-decoration: none; border-radius: 6px; white-space: nowrap;
+  align-self: center; }
+.fl-fare-cta:hover { background: var(--accent); color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .fl-fare-inner { grid-template-columns: 1fr; }
+  .fl-fare-cta { justify-self: start; }
+}
 
 /* PULLOUT callout — for key insights */
 .fl-pullout { max-width: 720px; margin: 24px 0;
@@ -342,7 +377,9 @@ body { background: #fbfaf6; }
     <div class="fl-fact"><p class="fl-fact-label">Typical fare</p><p class="fl-fact-value">R3,500–R8,500</p></div>
   </div>
 
-  <div class="fl-widget-wrap">
+  
+
+  <div class="fl-widget-wrap" id="fl-widget">
     <p class="fl-widget-label">Live price search &mdash; Johannesburg → Harare in ZAR</p>
     <div class="fl-widget">
       <script async src="https://tpembd.com/content?currency=zar&trs=532107&shmarker=731574&powered_by=true&locale=en&from_name=johannesburg_za&campaign_id=111&promo_id=4484" charset="utf-8"></script>
@@ -464,7 +501,7 @@ body { background: #fbfaf6; }
     <h2>Sources &amp; further reading</h2>
     <ul>
       <li>Live price data: <a href="https://www.travelpayouts.com/" rel="noopener" target="_blank">Travelpayouts</a>, aggregating Skyscanner, Aviasales, WayAway and Kiwi.com.</li>
-      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-24.</li>
+      <li>Fare ranges and route commentary are editorial, last reviewed 2026-05-25.</li>
     </ul>
     <p class="fl-sources-note">The Mutapa Times may earn a referral commission when readers book through the embedded search; this does not change the price you pay or which airlines we list.</p>
   </section>

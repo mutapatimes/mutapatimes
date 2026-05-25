@@ -28,6 +28,7 @@ on:
       - 'data/zse-companies.json'
       - 'data/mines.json'
       - 'data/travelpayouts-widgets.json'
+      - 'data/flight-prices.json'
       - 'scripts/build_schools.py'
       - 'scripts/build_zse.py'
       - 'scripts/build_mining.py'
@@ -72,7 +73,7 @@ jobs:
           REBUILD_ZSE=false
           REBUILD_MINING=false
 
-          if echo "$CHANGED" | grep -qE '^img/flights/|^data/travelpayouts-widgets\.json|^scripts/build_flight_pages_v2\.py'; then
+          if echo "$CHANGED" | grep -qE '^img/flights/|^data/travelpayouts-widgets\.json|^data/flight-prices\.json|^scripts/build_flight_pages_v2\.py'; then
             REBUILD_FLIGHTS=true
           fi
           if echo "$CHANGED" | grep -qE '^img/schools/|^img/uk-guide/|^data/ats-schools.*\.json|^scripts/build_schools\.py'; then
