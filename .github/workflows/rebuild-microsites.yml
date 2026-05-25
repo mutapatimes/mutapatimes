@@ -24,6 +24,7 @@ on:
       - 'img/mining/**'
       - 'img/uk-guide/**'
       - 'img/cooking/**'
+      - 'img/airports/**'
       - 'data/ats-schools.json'
       - 'data/ats-schools-wp.json'
       - 'data/zse-companies.json'
@@ -76,7 +77,7 @@ jobs:
           REBUILD_MINING=false
           REBUILD_COOKING=false
 
-          if echo "$CHANGED" | grep -qE '^img/flights/|^data/travelpayouts-widgets\.json|^data/flight-prices\.json|^scripts/build_flight_pages_v2\.py'; then
+          if echo "$CHANGED" | grep -qE '^img/flights/|^img/airports/|^data/travelpayouts-widgets\.json|^data/flight-prices\.json|^scripts/build_flight_pages_v2\.py'; then
             REBUILD_FLIGHTS=true
           fi
           if echo "$CHANGED" | grep -qE '^img/schools/|^img/uk-guide/|^data/ats-schools.*\.json|^scripts/build_schools\.py'; then
@@ -135,7 +136,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add flights/ schools/ zse/ mining/ cooking/ moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
+          git add flights/ airports/ schools/ zse/ mining/ cooking/ moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Nothing to commit — builders produced no HTML diff."
           else

@@ -620,51 +620,54 @@ body { background: #fff !important; }
   border: 1px solid var(--rule); background: #f0ece4; }
 .ck-hero-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* Recipe stat strip */
-.ck-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px; max-width: 1080px; margin: 24px auto 0; padding: 0 20px;
+/* Recipe stat strip — !important resets prevent <p> default margins */
+.ck-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; max-width: 1080px; margin: 28px auto 0; padding: 0 20px;
   font-family: 'Inter', system-ui, sans-serif; }
-.ck-stat { padding: 16px 18px; background: #fbfaf6; border: 1px solid var(--rule);
-  border-radius: 10px; }
-.ck-stat-label { font-size: 0.66em; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--text-light); margin: 0 0 4px; font-weight: 600; }
-.ck-stat-value { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3em;
-  line-height: 1.1; color: var(--ink); margin: 0; font-weight: 700; }
+.ck-stat { padding: 18px 20px; background: #fbfaf6; border: 1px solid var(--rule);
+  border-radius: 10px; min-height: 92px;
+  display: flex; flex-direction: column; justify-content: center; }
+.ck-stat .ck-stat-label { font-size: 0.66em !important; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--text-light); margin: 0 0 8px !important;
+  font-weight: 600; line-height: 1; }
+.ck-stat .ck-stat-value { font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 1.5em !important; line-height: 1.1 !important; color: var(--ink);
+  margin: 0 !important; font-weight: 700; letter-spacing: -0.01em; }
 
-/* Recipe body: side-by-side on desktop, stacked on mobile */
-.ck-body { max-width: 1080px; margin: 36px auto 0; padding: 0 20px;
-  display: grid; grid-template-columns: 1fr 2fr; gap: 48px;
-  font-family: 'Inter', system-ui, sans-serif; }
-@media (max-width: 800px) {
-  .ck-body { grid-template-columns: 1fr; gap: 24px; }
+/* Recipe body: side-by-side on desktop, stacked on mobile (with safer breakpoint) */
+.ck-body { max-width: 1080px; margin: 44px auto 0; padding: 0 20px;
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr); gap: 56px;
+  font-family: 'Inter', system-ui, sans-serif; align-items: start; }
+@media (max-width: 900px) {
+  .ck-body { grid-template-columns: 1fr; gap: 32px; }
 }
 .ck-section-h { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
-  font-size: 1.3em; line-height: 1.1; color: var(--ink); margin: 0 0 14px;
-  letter-spacing: -0.01em; padding-bottom: 8px; border-bottom: 2px solid var(--accent);
-  display: inline-block; }
+  font-size: 1.35em; line-height: 1.1; color: var(--ink); margin: 0 0 18px;
+  letter-spacing: -0.01em; padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent); display: block; }
 .ck-ingredients ul { list-style: none; padding: 0; margin: 0;
-  font-size: 1em; line-height: 1.6; }
-.ck-ingredients li { padding: 10px 0; border-bottom: 1px dotted var(--rule); color: var(--text); }
+  font-size: 1.025em; line-height: 1.55; }
+.ck-ingredients li { padding: 12px 0; border-bottom: 1px dotted var(--rule);
+  color: var(--text); }
 .ck-ingredients li:last-child { border-bottom: 0; }
 .ck-method ol { list-style: none; padding: 0; margin: 0; counter-reset: step; }
-.ck-method li { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 14px 0;
-  border-bottom: 1px solid var(--rule); counter-increment: step;
-  font-size: 1.02em; line-height: 1.6; color: var(--text); }
+.ck-method li { display: grid; grid-template-columns: 40px 1fr; gap: 16px;
+  padding: 16px 0; border-bottom: 1px solid var(--rule); counter-increment: step;
+  font-size: 1.04em; line-height: 1.65; color: var(--text); }
 .ck-method li:last-child { border-bottom: 0; }
-.ck-method li::before { content: counter(step); font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 700; font-size: 1.4em; line-height: 1; color: var(--accent);
-  background: #fbfaf6; border: 1px solid var(--rule); border-radius: 50%;
-  width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
-
-/* Lead / About */
-.ck-lead { max-width: 720px; margin: 30px auto 0; padding: 0 20px;
-  font-family: 'Inter', system-ui, sans-serif; font-size: 1.075em; line-height: 1.7;
-  color: var(--text); }
-.ck-lead p::first-letter {
+.ck-method li::before { content: counter(step);
   font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
-  font-size: 3.2em; float: left; line-height: 0.9; margin: 4px 8px 0 0;
-  color: var(--ink);
-}
+  font-size: 1.2em; line-height: 1; color: var(--accent);
+  background: #fff; border: 2px solid var(--accent); border-radius: 50%;
+  width: 40px; height: 40px; box-sizing: border-box;
+  display: flex; align-items: center; justify-content: center;
+  align-self: start; }
+
+/* Lead — removed the drop-cap that was causing float-overlap glitches */
+.ck-lead { max-width: 720px; margin: 32px auto 0; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.ck-lead p { font-size: 1.125em; line-height: 1.75; color: var(--text);
+  margin: 0; }
 
 .ck-section { max-width: 720px; margin: 32px auto 0; padding: 0 20px;
   font-family: 'Inter', system-ui, sans-serif; }

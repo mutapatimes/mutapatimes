@@ -21,6 +21,8 @@ from pathlib import Path
 
 ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
 OUT  = ROOT / "flights"
+AIRPORTS_OUT = ROOT / "airports"   # airports moved out of /flights/ in May 2026
+AIRPORTS_OUT.mkdir(exist_ok=True)
 
 # Use real today (script reads system clock; safe for cron monthly refresh)
 TODAY = datetime.date.today()
@@ -520,7 +522,7 @@ CORRIDORS = {
             ("Flights from Harare",         "/flights/from-harare/",                       "Returning to London"),
             ("Send GBP to Zimbabwe",        "/fx/send-money-from-uk-to-zimbabwe/",         "Cheapest providers"),
             ("Zimbabwe visa on arrival",    "/moving-to-zimbabwe/visa-on-arrival.html",   "The US$55 visa desk"),
-            ("Harare airport (HRE)",        "/flights/harare-airport/",                    "Arrivals, taxis, schedule"),
+            ("Harare airport (HRE)",        "/airports/harare/",                    "Arrivals, taxis, schedule"),
         ],
     },
 
@@ -578,7 +580,7 @@ CORRIDORS = {
         "related": [
             ("Send AUD to Zimbabwe",      "/fx/send-money-from-australia-to-zimbabwe/", "Cheapest providers"),
             ("Zimbabwe visa on arrival",  "/moving-to-zimbabwe/visa-on-arrival.html",   "The US$55 visa desk"),
-            ("Harare airport (HRE)",      "/flights/harare-airport/",                    "Arrivals, taxis, schedule"),
+            ("Harare airport (HRE)",      "/airports/harare/",                    "Arrivals, taxis, schedule"),
             ("AUD to ZWG rate",           "/fx/aud-to-zwg/",                             "Today's rate"),
         ],
     },
@@ -638,7 +640,7 @@ CORRIDORS = {
             ("Johannesburg to Harare",     "/flights/johannesburg-to-harare/",         "Onward connection guide"),
             ("ZAR to ZWG rate",            "/fx/zar-to-zwg/",                          "Today's rate"),
             ("Send ZAR to Zimbabwe",       "/fx/send-money-from-south-africa-to-zimbabwe/", "Cheapest providers"),
-            ("Harare airport (HRE)",       "/flights/harare-airport/",                  "Arrivals, taxis, schedule"),
+            ("Harare airport (HRE)",       "/airports/harare/",                  "Arrivals, taxis, schedule"),
         ],
     },
 
@@ -697,7 +699,7 @@ CORRIDORS = {
             ("Cape Town to Harare",   "/flights/cape-town-to-harare/",              "Direct on Airlink"),
             ("ZAR to ZWG rate",        "/fx/zar-to-zwg/",                            "Today's rate"),
             ("Send ZAR to Zimbabwe",   "/fx/send-money-from-south-africa-to-zimbabwe/", "Cheapest providers"),
-            ("Harare airport (HRE)",   "/flights/harare-airport/",                    "Arrivals, taxis, schedule"),
+            ("Harare airport (HRE)",   "/airports/harare/",                    "Arrivals, taxis, schedule"),
         ],
     },
 
@@ -758,7 +760,7 @@ CORRIDORS = {
         "related": [
             ("Flights from Harare",      "/flights/from-harare/",            "Returning to the US"),
             ("Zimbabwe visa on arrival", "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
-            ("Harare airport (HRE)",     "/flights/harare-airport/",          "Live arrivals + practical guide"),
+            ("Harare airport (HRE)",     "/airports/harare/",          "Live arrivals + practical guide"),
             ("USD to ZWG rate",           "/fx/usd-to-zwg/",                   "Today's rate"),
         ],
     },
@@ -815,7 +817,7 @@ CORRIDORS = {
         "related": [
             ("Flights from Harare",       "/flights/from-harare/",            "Return to Dubai"),
             ("Zimbabwe visa on arrival",  "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
-            ("Harare airport (HRE)",      "/flights/harare-airport/",          "Live arrivals + practical guide"),
+            ("Harare airport (HRE)",      "/airports/harare/",          "Live arrivals + practical guide"),
         ],
     },
 
@@ -873,7 +875,7 @@ CORRIDORS = {
         "related": [
             ("Flights from Harare",       "/flights/from-harare/",            "Return to Canada"),
             ("Zimbabwe visa on arrival",  "/moving-to-zimbabwe/visa-on-arrival.html", "The US$55 visa desk"),
-            ("Harare airport (HRE)",      "/flights/harare-airport/",          "Live arrivals + practical guide"),
+            ("Harare airport (HRE)",      "/airports/harare/",          "Live arrivals + practical guide"),
             ("Send CAD to Zimbabwe",      "/fx/send-money-from-canada-to-zimbabwe/", "Cheapest providers"),
         ],
     },
@@ -934,7 +936,7 @@ CORRIDORS = {
              "Yes for the Zimbabwean side. For the Zambian side (Livingstone), fly into Livingstone Airport (LVI). Both are 15 minutes from the Falls themselves and 5 minutes from each other via the Victoria Falls Bridge border."),
         ],
         "related": [
-            ("Victoria Falls airport (VFA)", "/flights/victoria-falls-airport/", "Live arrivals + practical guide"),
+            ("Victoria Falls airport (VFA)", "/airports/victoria-falls/", "Live arrivals + practical guide"),
             ("Harare to Victoria Falls",      "/flights/from-harare/",            "Domestic connection"),
             ("Zimbabwe visa on arrival",      "/moving-to-zimbabwe/visa-on-arrival.html", "KAZA UniVisa"),
             ("Send GBP to Zimbabwe",           "/fx/send-money-from-uk-to-zimbabwe/", "For your trip"),
@@ -999,7 +1001,7 @@ CORRIDORS = {
             ("London to Harare",      "/flights/london-to-harare/",        "Inbound corridor"),
             ("Joburg to Harare",      "/flights/johannesburg-to-harare/",  "Regional corridor"),
             ("Send money home",        "/fx/",                              "Cheapest providers"),
-            ("Harare airport (HRE)",   "/flights/harare-airport/",          "Arrivals, taxis, schedule"),
+            ("Harare airport (HRE)",   "/airports/harare/",          "Arrivals, taxis, schedule"),
         ],
     },
 }
@@ -1009,7 +1011,7 @@ CORRIDORS = {
 # ---------------------------------------------------------------------------
 
 AIRPORTS = {
-    "harare-airport": {
+    "harare": {
         "title": f"Harare International Airport (HRE) — arrivals, departures, airlines | {MONTH_YEAR}",
         "h1": "Harare International Airport",
         "subtitle": "Robert Gabriel Mugabe International (HRE / FVHA)",
@@ -1085,7 +1087,7 @@ AIRPORTS = {
         ],
     },
 
-    "victoria-falls-airport": {
+    "victoria-falls": {
         "title": f"Victoria Falls Airport (VFA) — live arrivals, departures, airlines | {MONTH_YEAR}",
         "h1": "Victoria Falls International Airport",
         "subtitle": "Victoria Falls (VFA / FVFA)",
@@ -1146,13 +1148,13 @@ AIRPORTS = {
         ],
         "related": [
             ("London to Victoria Falls",      "/flights/london-to-victoria-falls/", "The British tourist route"),
-            ("Harare airport (HRE)",          "/flights/harare-airport/",            "The main international gateway"),
-            ("Bulawayo airport (BUQ)",        "/flights/bulawayo-airport/",          "The Matabeleland gateway"),
+            ("Harare airport (HRE)",          "/airports/harare/",            "The main international gateway"),
+            ("Bulawayo airport (BUQ)",        "/airports/bulawayo/",          "The Matabeleland gateway"),
             ("Zimbabwe visa on arrival",       "/moving-to-zimbabwe/visa-on-arrival.html", "KAZA UniVisa"),
         ],
     },
 
-    "bulawayo-airport": {
+    "bulawayo": {
         "title": f"Bulawayo Airport (BUQ) — arrivals, departures, airlines | {MONTH_YEAR}",
         "h1": "Joshua Mqabuko Nkomo International Airport",
         "subtitle": "Bulawayo (BUQ / FVBU)",
@@ -1212,7 +1214,7 @@ AIRPORTS = {
             ("Cheap flights to Harare",         "/flights/", "Hub"),
             ("Joburg to Harare",                "/flights/johannesburg-to-harare/", "Connecting via JNB"),
             ("Cape Town to Harare",             "/flights/cape-town-to-harare/",    "Direct on Airlink"),
-            ("Harare airport (HRE)",            "/flights/harare-airport/",         "The main gateway"),
+            ("Harare airport (HRE)",            "/airports/harare/",         "The main gateway"),
         ],
     },
 }
@@ -1222,11 +1224,15 @@ AIRPORTS = {
 # ---------------------------------------------------------------------------
 
 def hero_image_for(slug):
-    """Return <img>-ready relative path if /img/flights/<slug>.{ext} exists."""
-    for ext in (".jpg", ".jpeg", ".png", ".webp"):
-        p = ROOT / "img" / "flights" / f"{slug}{ext}"
-        if p.exists():
-            return f"/img/flights/{p.name}"
+    """Return <img>-ready relative path if /img/flights/<slug>.{ext} OR
+    /img/airports/<slug>.{ext} exists. Corridor pages use /img/flights/;
+    airport pages use /img/airports/. Falls back to /img/flights/ for both
+    so legacy uploads still work."""
+    for base in ("airports", "flights"):
+        for ext in (".jpg", ".jpeg", ".png", ".webp"):
+            p = ROOT / "img" / base / f"{slug}{ext}"
+            if p.exists():
+                return f"/img/{base}/{p.name}"
     return None
 
 def hero_block(slug, alt_text):
@@ -1531,8 +1537,8 @@ def render_corridor(slug, c):
 
 
 def render_airport(slug, c):
-    """Render an airport landing page (HRE or BUQ)."""
-    canonical = f"https://www.mutapatimes.com/flights/{slug}/"
+    """Render an airport landing page (HRE / BUQ / VFA)."""
+    canonical = f"https://www.mutapatimes.com/airports/{slug}/"
     facts_html = "\n".join(
         f'    <div class="fl-fact"><p class="fl-fact-label">{html.escape(lbl)}</p><p class="fl-fact-value">{html.escape(val)}</p></div>'
         for lbl, val in c["facts"]
@@ -1565,7 +1571,7 @@ def render_airport(slug, c):
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
             {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Flights","item":"https://www.mutapatimes.com/flights/"},
+            {"@type":"ListItem","position":2,"name":"Airports","item":"https://www.mutapatimes.com/airports/"},
             {"@type":"ListItem","position":3,"name": c["h1"], "item": canonical}
         ]
     }, ensure_ascii=False)
@@ -1610,7 +1616,7 @@ def render_airport(slug, c):
 
   <header class="fl-hero">
     <div class="fl-hero-inner">
-      <p class="fl-eyebrow"><a href="/flights/">Flights</a> &middot; Airport guide &middot; {MONTH_YEAR}</p>
+      <p class="fl-eyebrow"><a href="/airports/">Airports</a> &middot; Zimbabwe &middot; {MONTH_YEAR}</p>
       <h1 class="fl-title">{html.escape(c["h1"])}</h1>
       <p class="fl-stand">{c["subtitle"]} &mdash; {c["stand"]}</p>
       <hr class="fl-rule">
@@ -1747,7 +1753,7 @@ def render_airport(slug, c):
     <p class="fl-sources-note">This page is editorial reference. Schedule and operator changes are common in Zimbabwean aviation; cross-check with the airline before booking.</p>
   </section>
 
-  <p class="fl-back"><a href="/flights/">&larr; Back to all flights</a></p>
+  <p class="fl-back"><a href="/airports/">&larr; Back to all airports</a></p>
 </main>
 {FOOTER}
 </body>
@@ -1833,20 +1839,10 @@ def render_hub():
       <p class="fl-corridor-name">Flights from Harare</p>
       <p class="fl-corridor-meta">Outbound to UK, USA, SA, Dubai, Australia, Canada. Live USD search.</p>
     </a>
-    <a class="fl-corridor" href="/flights/harare-airport/">
-      <p class="fl-corridor-route">🇿🇼 Harare International (HRE)</p>
-      <p class="fl-corridor-name">Harare airport guide</p>
-      <p class="fl-corridor-meta">Airlines, schedule, taxis, visa-on-arrival, SIM cards, live status link.</p>
-    </a>
-    <a class="fl-corridor" href="/flights/bulawayo-airport/">
-      <p class="fl-corridor-route">🇿🇼 Bulawayo (BUQ)</p>
-      <p class="fl-corridor-name">Bulawayo airport guide</p>
-      <p class="fl-corridor-meta">Joshua Mqabuko Nkomo International. Joburg direct, no long-haul.</p>
-    </a>
-    <a class="fl-corridor" href="/flights/victoria-falls-airport/">
-      <p class="fl-corridor-route">🇿🇼 Victoria Falls (VFA)</p>
-      <p class="fl-corridor-name">Victoria Falls airport guide</p>
-      <p class="fl-corridor-meta">Tourist gateway. BA seasonal direct from LHR, Ethiopian, Airlink. Live board.</p>
+    <a class="fl-corridor" href="/airports/" style="grid-column: 1 / -1; background: linear-gradient(135deg, #fbfaf6 0%, #f3eedf 100%); border-left: 4px solid var(--accent);">
+      <p class="fl-corridor-route">🇿🇼 Live boards &middot; HRE · BUQ · VFA</p>
+      <p class="fl-corridor-name">Airport guides &amp; live arrivals/departures &rarr;</p>
+      <p class="fl-corridor-meta">All three Zimbabwean international airports — live boards from Avionio, full practical guides, taxis, visa-on-arrival, SIM cards. Moved from /flights/ in May 2026.</p>
     </a>
     <a class="fl-corridor" href="/flights/london-to-victoria-falls/">
       <p class="fl-corridor-route">🇬🇧 London → 🇿🇼 Victoria Falls</p>
@@ -1926,6 +1922,281 @@ def stripped(s):
 
 
 # ---------------------------------------------------------------------------
+# AIRPORTS HUB (/airports/) — live boards for all three airports
+# ---------------------------------------------------------------------------
+
+def render_airports_hub():
+    canonical = "https://www.mutapatimes.com/airports/"
+    title = f"Zimbabwe airport guide — live arrivals & departures | {MONTH_YEAR}"
+    desc = ("Live arrivals and departures for Harare (HRE), Bulawayo (BUQ) and "
+            "Victoria Falls (VFA) — the three main Zimbabwean international airports. "
+            "Practical guides, airline directories and route corridors.")
+    breadcrumb_ld = json.dumps({
+        "@context":"https://schema.org","@type":"BreadcrumbList",
+        "itemListElement":[
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Airports","item": canonical},
+        ],
+    }, ensure_ascii=False)
+    page_ld = json.dumps({
+        "@context":"https://schema.org","@type":"CollectionPage",
+        "headline": title, "description": desc, "url": canonical, "inLanguage":"en",
+    }, ensure_ascii=False)
+
+    # Build a tabbed live-board block: 3 airport tabs, each with arrivals+departures
+    airports_meta = [
+        ("harare", "Harare (HRE)", "hre", "https://flightaware.com/live/airport/FVHA"),
+        ("bulawayo", "Bulawayo (BUQ)", "buq", "https://flightaware.com/live/airport/FVBU"),
+        ("victoria-falls", "Victoria Falls (VFA)", "vfa", "https://flightaware.com/live/airport/FVFA"),
+    ]
+    airport_tabs = "\n".join(
+        f'      <button type="button" class="ap-tab{" is-active" if i==0 else ""}" data-airport-tab="{slug}" role="tab" aria-selected="{"true" if i==0 else "false"}" aria-controls="ap-pane-{slug}">{html.escape(label)}</button>'
+        for i, (slug, label, _, _) in enumerate(airports_meta)
+    )
+    airport_panes = []
+    for i, (slug, label, iata_lower, fa_link) in enumerate(airports_meta):
+        active_cls = " is-active" if i == 0 else ""
+        airport_panes.append(f'''<div class="ap-pane{active_cls}" data-airport-pane="{slug}" id="ap-pane-{slug}" role="tabpanel" aria-label="{html.escape(label)}"{"" if i==0 else " hidden"}>
+        <div class="avionio-board">
+          <div class="avionio-tabs" role="tablist" aria-label="{html.escape(label)} board">
+            <button type="button" class="avionio-tab is-active" data-board-tab="arrivals" data-for="{slug}" role="tab" aria-selected="true">Arrivals</button>
+            <button type="button" class="avionio-tab" data-board-tab="departures" data-for="{slug}" role="tab" aria-selected="false">Departures</button>
+          </div>
+          <div class="avionio-pane is-active" data-board-pane="arrivals-{slug}">
+            <iframe class="avionio-frame" data-iframe="{slug}-arr" height="500" frameborder="0" scrolling="no"
+                    src="https://www.avionio.com/widget/en/{iata_lower}/arrivals" title="{html.escape(label)} arrivals"></iframe>
+          </div>
+          <div class="avionio-pane" data-board-pane="departures-{slug}" hidden>
+            <iframe class="avionio-frame" data-iframe="{slug}-dep" height="500" frameborder="0" scrolling="no"
+                    src="https://www.avionio.com/widget/en/{iata_lower}/departures" title="{html.escape(label)} departures"></iframe>
+          </div>
+          <p class="avionio-credit">Live data: <a href="https://www.avionio.com/en/airport/{iata_lower}/arrivals" rel="noopener" target="_blank">Avionio</a> &middot; full board on <a href="{fa_link}" rel="noopener" target="_blank">FlightAware</a> &middot; <a href="/airports/{slug}/">full airport guide &rarr;</a></p>
+        </div>
+      </div>''')
+    panes_html = "\n      ".join(airport_panes)
+
+    head = page_head(
+        title + " | The Mutapa Times",
+        canonical,
+        desc,
+        desc,
+        [breadcrumb_ld, page_ld],
+        depth=1,
+    )
+
+    return f'''<!doctype html>
+<html class="no-js" lang="en">
+{head}
+<body class="fl-page">
+{TOPBAR}
+{DRAWER}
+<main>
+  <header class="fl-hero">
+    <div class="fl-hero-inner">
+      <p class="fl-eyebrow">Mutapa Times &middot; Airports &middot; {MONTH_YEAR}</p>
+      <h1 class="fl-title">Zimbabwe airport guide</h1>
+      <p class="fl-stand">Live arrivals and departures for Harare, Bulawayo and Victoria Falls
+        &mdash; plus practical guides for each airport, the airlines that fly them, and the
+        most-flown route corridors. Switch airports with the tabs below.</p>
+      <hr class="fl-rule">
+    </div>
+  </header>
+
+  <section class="ap-board-wrap" aria-label="Live arrivals and departures across all airports">
+    <p class="avionio-label" style="max-width:1080px;margin:24px auto 12px;padding:0 24px"><span class="avionio-live-dot" aria-hidden="true"></span> Live boards &middot; arrivals &amp; departures</p>
+    <div class="ap-tabs" role="tablist" aria-label="Airport selector">
+{airport_tabs}
+    </div>
+    <div class="ap-panes">
+      {panes_html}
+    </div>
+  </section>
+
+  <section class="fl-section">
+    <p class="fl-section-eyebrow"><span class="fl-section-num">01</span><span>The airports</span></p>
+    <h2 class="fl-section-h2">Three gateways</h2>
+    <div class="fl-corridors" style="margin:14px 0 0">
+      <a class="fl-corridor" href="/airports/harare/">
+        <p class="fl-corridor-route">🇿🇼 HRE / FVHA</p>
+        <p class="fl-corridor-name">Harare International</p>
+        <p class="fl-corridor-meta">The main international gateway. Emirates, Qatar, Ethiopian, Kenya Airways, SAA. ~3M annual passengers. 15 km from CBD.</p>
+      </a>
+      <a class="fl-corridor" href="/airports/bulawayo/">
+        <p class="fl-corridor-route">🇿🇼 BUQ / FVBU</p>
+        <p class="fl-corridor-name">Joshua Mqabuko Nkomo International (Bulawayo)</p>
+        <p class="fl-corridor-meta">Daily JNB direct via Airlink, FastJet. Domestic to HRE and VFA. ~200K passengers. 25 km from CBD.</p>
+      </a>
+      <a class="fl-corridor" href="/airports/victoria-falls/">
+        <p class="fl-corridor-route">🇿🇼 VFA / FVFA</p>
+        <p class="fl-corridor-name">Victoria Falls International</p>
+        <p class="fl-corridor-meta">The tourism gateway. BA seasonal direct from LHR. Ethiopian, Airlink CPT & JNB. ~600K passengers. 18 km from town.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="fl-section">
+    <p class="fl-section-eyebrow"><span class="fl-section-num">02</span><span>Inbound corridors</span></p>
+    <h2 class="fl-section-h2">Most-flown routes to Zimbabwe</h2>
+    <div class="fl-corridors" style="margin:14px 0 0">
+      <a class="fl-corridor" href="/flights/london-to-harare/">
+        <p class="fl-corridor-route">🇬🇧 London → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">London to Harare</p>
+        <p class="fl-corridor-meta">From £700. Qatar, Ethiopian, Emirates, Kenya Airways.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/london-to-victoria-falls/">
+        <p class="fl-corridor-route">🇬🇧 London → 🇿🇼 Victoria Falls</p>
+        <p class="fl-corridor-name">London to Victoria Falls</p>
+        <p class="fl-corridor-meta">From £800. The tourist route. KAZA UniVisa.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/johannesburg-to-harare/">
+        <p class="fl-corridor-route">🇿🇦 Johannesburg → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">Johannesburg to Harare</p>
+        <p class="fl-corridor-meta">1h 50m direct. SAA, Airlink, FastJet. From R3,500.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/cape-town-to-harare/">
+        <p class="fl-corridor-route">🇿🇦 Cape Town → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">Cape Town to Harare</p>
+        <p class="fl-corridor-meta">3h direct on Airlink. From R5,500.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/sydney-to-harare/">
+        <p class="fl-corridor-route">🇦🇺 Sydney → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">Sydney to Harare</p>
+        <p class="fl-corridor-meta">22–28 hours. From A$1,800.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/new-york-to-harare/">
+        <p class="fl-corridor-route">🇺🇸 New York → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">New York to Harare</p>
+        <p class="fl-corridor-meta">From $1,100. Ethiopian via Addis.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/dubai-to-harare/">
+        <p class="fl-corridor-route">🇦🇪 Dubai → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">Dubai to Harare</p>
+        <p class="fl-corridor-meta">Direct on Emirates. The only nonstop long-haul.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/toronto-to-harare/">
+        <p class="fl-corridor-route">🇨🇦 Toronto → 🇿🇼 Harare</p>
+        <p class="fl-corridor-name">Toronto to Harare</p>
+        <p class="fl-corridor-meta">From C$1,400. Ethiopian YYZ–ADD.</p>
+      </a>
+      <a class="fl-corridor" href="/flights/from-harare/">
+        <p class="fl-corridor-route">🇿🇼 Harare → 🌍 Anywhere</p>
+        <p class="fl-corridor-name">Flights from Harare</p>
+        <p class="fl-corridor-meta">Outbound to UK, USA, SA, Australia, Canada, Dubai.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="fl-sources" aria-label="About this page">
+    <h2>About this page</h2>
+    <ul>
+      <li>Live arrivals and departures data: <a href="https://www.avionio.com/" rel="noopener" target="_blank">Avionio</a>. Fallback live status: FlightAware.</li>
+      <li>Route corridor fare ranges + airline data: aggregated from <a href="https://www.travelpayouts.com/" rel="noopener" target="_blank">Travelpayouts</a> (Skyscanner, Aviasales, WayAway).</li>
+      <li>Practical airport guides (taxi rates, visa info, SIM card) are editorial, last reviewed {DATE_ISO}.</li>
+    </ul>
+  </section>
+</main>
+{FOOTER}
+<style>
+.ap-board-wrap {{ max-width: 1080px; margin: 0 auto; padding: 0 24px; }}
+.ap-tabs {{ display: flex; gap: 4px; border-bottom: 2px solid var(--rule);
+  max-width: 1080px; margin: 0 auto; }}
+.ap-tab {{ background: none; border: 0; padding: 14px 22px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 1em; font-weight: 600;
+  color: var(--text-light); cursor: pointer; border-bottom: 2px solid transparent;
+  margin-bottom: -2px; transition: color 0.15s, border-color 0.15s; }}
+.ap-tab:hover {{ color: var(--ink); }}
+.ap-tab.is-active {{ color: var(--accent); border-bottom-color: var(--accent); }}
+.ap-panes {{ max-width: 1080px; margin: 0 auto; }}
+.ap-pane {{ display: none; padding: 18px 0 0; }}
+.ap-pane.is-active {{ display: block; }}
+</style>
+<script>
+(function() {{
+  // Airport tab switcher
+  var apTabs = Array.from(document.querySelectorAll('.ap-tab'));
+  var apPanes = Array.from(document.querySelectorAll('.ap-pane'));
+  apTabs.forEach(function(t) {{
+    t.addEventListener('click', function() {{
+      var target = t.dataset.airportTab;
+      apTabs.forEach(function(t2) {{
+        var on = t2 === t;
+        t2.classList.toggle('is-active', on);
+        t2.setAttribute('aria-selected', on ? 'true' : 'false');
+      }});
+      apPanes.forEach(function(p) {{
+        var on = p.dataset.airportPane === target;
+        p.classList.toggle('is-active', on);
+        if (on) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
+      }});
+    }});
+  }});
+  // Per-airport arrivals/departures tab switcher
+  document.querySelectorAll('.avionio-tab[data-board-tab]').forEach(function(t) {{
+    t.addEventListener('click', function() {{
+      var slug = t.dataset.for;
+      var which = t.dataset.boardTab;
+      var siblings = document.querySelectorAll('.avionio-tab[data-for="' + slug + '"]');
+      siblings.forEach(function(s) {{
+        var on = s === t;
+        s.classList.toggle('is-active', on);
+        s.setAttribute('aria-selected', on ? 'true' : 'false');
+      }});
+      document.querySelectorAll('[data-board-pane^="arrivals-' + slug + '"], [data-board-pane^="departures-' + slug + '"]').forEach(function(p) {{
+        var paneType = p.dataset.boardPane.split('-')[0];
+        var on = paneType === which;
+        p.classList.toggle('is-active', on);
+        if (on) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
+      }});
+    }});
+  }});
+  // Avionio iframe auto-resize (matches each iframe to its message)
+  window.addEventListener('message', function(e) {{
+    if (typeof e.data !== 'string') return;
+    var frames = document.querySelectorAll('.avionio-frame');
+    var target = null;
+    frames.forEach(function(f) {{ if (f.contentWindow === e.source) target = f; }});
+    if (!target) return;
+    if (e.data.indexOf('avionioHeight:') > -1) {{
+      target.style.height = (parseInt(e.data.split('avionioHeight:')[1]) + 30) + 'px';
+    }} else if (e.data.indexOf('avionioHeightScroll:') > -1) {{
+      var se = document.documentElement || document.body;
+      var sp = se.scrollTop - (se.scrollHeight - se.clientHeight);
+      target.style.height = (parseInt(e.data.split('avionioHeightScroll:')[1]) + 30) + 'px';
+      se.scrollTop = sp + se.scrollHeight - se.clientHeight;
+    }}
+  }}, false);
+}})();
+</script>
+</body>
+</html>
+'''
+
+
+# ---------------------------------------------------------------------------
+# REDIRECT STUBS — bounce old /flights/<airport-slug>/ to new /airports/<slug>/
+# ---------------------------------------------------------------------------
+
+def write_redirect(old_dir, new_url, label):
+    """Write a minimal HTML at old_dir/index.html that meta-refreshes to new_url
+    and includes a canonical link. GitHub Pages-friendly (no .htaccess)."""
+    old_dir.mkdir(parents=True, exist_ok=True)
+    (old_dir / "index.html").write_text(f'''<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Moved — {html.escape(label)} | The Mutapa Times</title>
+<link rel="canonical" href="{new_url}">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url={new_url}">
+<script>location.replace("{new_url}");</script>
+</head><body>
+<p style="font-family:Inter,sans-serif;text-align:center;margin:80px auto;max-width:480px">
+  This page has moved to <a href="{new_url}">{html.escape(new_url)}</a>.
+</p>
+</body></html>
+''')
+
+
+# ---------------------------------------------------------------------------
 # RUN
 # ---------------------------------------------------------------------------
 
@@ -1938,10 +2209,25 @@ for slug, cfg in CORRIDORS.items():
     (out_dir / "index.html").write_text(render_corridor(slug, cfg))
     print(f"wrote /flights/{slug}/index.html")
 
+# Airports now live at /airports/<slug>/  (was /flights/<slug>-airport/)
 for slug, cfg in AIRPORTS.items():
-    out_dir = OUT / slug
+    out_dir = AIRPORTS_OUT / slug
     out_dir.mkdir(exist_ok=True)
     (out_dir / "index.html").write_text(render_airport(slug, cfg))
-    print(f"wrote /flights/{slug}/index.html")
+    print(f"wrote /airports/{slug}/index.html")
+
+# Airports hub
+(AIRPORTS_OUT / "index.html").write_text(render_airports_hub())
+print(f"wrote /airports/index.html")
+
+# Redirect stubs from the old /flights/<airport-slug>/ URLs
+old_to_new = [
+    ("harare-airport",         "harare",         "Harare International"),
+    ("bulawayo-airport",       "bulawayo",       "Bulawayo Airport"),
+    ("victoria-falls-airport", "victoria-falls", "Victoria Falls Airport"),
+]
+for old_slug, new_slug, label in old_to_new:
+    write_redirect(OUT / old_slug, f"https://www.mutapatimes.com/airports/{new_slug}/", label)
+    print(f"wrote redirect: /flights/{old_slug}/ -> /airports/{new_slug}/")
 
 print(f"\nDone. Month: {MONTH_YEAR}")

@@ -19,9 +19,15 @@ media:
   # GitHub Action rebuilds the affected microsite and the image
   # appears on the live site within 2-3 minutes.  See img/README.md.
   - name: flights
-    label: Flight pages
+    label: Flight corridors
     input: img/flights
     output: /img/flights
+    extensions: [jpg, jpeg, png, webp]
+
+  - name: airports
+    label: Airports (HRE / BUQ / VFA)
+    input: img/airports
+    output: /img/airports
     extensions: [jpg, jpeg, png, webp]
 
   - name: schools
