@@ -278,18 +278,14 @@
     <iframe name="brevo-drawer-frame" title="Newsletter signup confirmation" style="display:none" aria-hidden="true"></iframe>
   </aside>
 
-  <!-- Stories rail — IG-style highlights, top of paper. -->
+  <!-- Stories rail — IG-style highlights, thin strip at the top. -->
   <div id="stories-rail" aria-label="Story highlights"></div>
 
-  <!-- Scene Report carousel — promoted series of curated articles.
-       Sits below the story rail so the rail still reads as the
-       hero. Filled by js/series.js from /data/series-<key>.json. -->
-  <div class="series-carousel-slot" data-series="venice-biennale-2026"></div>
-
-  <!-- Feature Story of the Week (rendered by js/feature-story.js if active).
-       Lifted above the Harare skyline so the reader lands on content
-       immediately, the way Semafor / NYT / Airmail do. -->
-  <div id="feature-story-slot"></div>
+  <!-- News-first: the main feed sits immediately under the stories rail
+       so readers land on the BBC / Reuters / SCMP / NewsDay headlines
+       within one screen. Editorial promotions (Scene Report carousel,
+       Feature Story of the Week) moved below the grid; they are still
+       prominent but no longer pre-empt the live news. -->
 
   <!-- Main layout: stories + sidebar -->
   <main>
@@ -348,6 +344,29 @@
     </div>
   </div>
   </main>
+
+  <!-- Editorial picks — surfaced AFTER the live news feed.
+       Reader has already seen the BBC / Reuters / SCMP / local headlines
+       and either kept scrolling (engaged) or already opened a story
+       (gone). These two blocks reward the engaged scrolling reader. -->
+  <section class="home-editorial-picks" aria-label="Editorial picks from The Mutapa Times">
+    <p class="home-editorial-picks-label">From The Mutapa Times newsroom</p>
+
+    <!-- Feature Story of the Week (rendered by js/feature-story.js if active). -->
+    <div id="feature-story-slot"></div>
+
+    <!-- Scene Report carousel — promoted series of curated articles.
+         Filled by js/series.js from /data/series-<key>.json. -->
+    <div class="series-carousel-slot" data-series="venice-biennale-2026"></div>
+  </section>
+  <style>
+  .home-editorial-picks { max-width: 1200px; margin: 32px auto 16px;
+    padding: 0 20px; }
+  .home-editorial-picks-label { font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.72em; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin: 0 0 18px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+  </style>
 
   <!-- Harare skyline banner - sits between the news grid and the newsletter
        sign-up so it acts as a visual pause before the call to action. -->
