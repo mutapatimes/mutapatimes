@@ -4,28 +4,88 @@
   "status": "ok",
   "corridors": {
     "london-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "LON",
+      "destination": "HRE",
+      "currency": "GBP",
+      "currency_sym": "£"
     },
     "sydney-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "SYD",
+      "destination": "HRE",
+      "currency": "AUD",
+      "currency_sym": "A$"
     },
     "cape-town-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "CPT",
+      "destination": "HRE",
+      "currency": "ZAR",
+      "currency_sym": "R",
+      "cheapest": {
+        "depart_date": "2026-06-13",
+        "origin": "CPT",
+        "destination": "HRE",
+        "gate": "Tickets",
+        "return_date": "2026-06-13",
+        "found_at": "2026-05-23T17:10:19",
+        "trip_class": 0,
+        "value": 10098,
+        "number_of_changes": 1,
+        "duration": 1360,
+        "distance": 2174,
+        "show_to_affiliates": true,
+        "actual": true
+      },
+      "cheapest_direct": null,
+      "cheapest_30d": null,
+      "n_observations": 1
     },
     "johannesburg-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "JNB",
+      "destination": "HRE",
+      "currency": "ZAR",
+      "currency_sym": "R"
     },
     "new-york-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "NYC",
+      "destination": "HRE",
+      "currency": "USD",
+      "currency_sym": "$"
     },
     "dubai-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "DXB",
+      "destination": "HRE",
+      "currency": "AED",
+      "currency_sym": "AED",
+      "cheapest": {
+        "depart_date": "2026-07-07",
+        "origin": "DXB",
+        "destination": "HRE",
+        "gate": "Wingie",
+        "return_date": "2026-07-07",
+        "found_at": "2026-05-24T18:45:56",
+        "trip_class": 0,
+        "value": 2801,
+        "number_of_changes": 2,
+        "duration": 1550,
+        "distance": 5470,
+        "show_to_affiliates": true,
+        "actual": true
+      },
+      "cheapest_direct": null,
+      "cheapest_30d": null,
+      "n_observations": 1
     },
     "toronto-to-harare": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "YYZ",
+      "destination": "HRE",
+      "currency": "CAD",
+      "currency_sym": "C$"
     },
     "london-to-victoria-falls": {
-      "error": "HTTP Error 401: Unauthorized"
+      "origin": "LON",
+      "destination": "VFA",
+      "currency": "GBP",
+      "currency_sym": "£"
     }
   }
 }
