@@ -1,0 +1,140 @@
+name: Rebuild microsites on image upload
+
+# Runs whenever Pages CMS (or anyone) commits a new/changed image to one
+# of the microsite media folders, or when a data file the builders read
+# changes, or when a build script itself changes. The job re-runs the
+# build scripts and commits the regenerated HTML so the new image (or
+# data) appears on the live site without anyone running scripts locally.
+#
+# End-to-end on Pages CMS upload:
+#   1. CMS commits image to img/<microsite>/<slug>.jpg
+#   2. This action triggers (path filter below)
+#   3. python3 scripts/build_*.py regenerates the affected microsite
+#   4. install_nav_drawer.py re-wires the drawer on rebuilt pages
+#   5. Action commits the HTML and Pages redeploys
+# Total: ~2-4 minutes from upload to live.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'img/flights/**'
+      - 'img/schools/**'
+      - 'img/zse/**'
+      - 'img/mining/**'
+      - 'img/uk-guide/**'
+      - 'data/ats-schools.json'
+      - 'data/ats-schools-wp.json'
+      - 'data/zse-companies.json'
+      - 'data/mines.json'
+      - 'data/travelpayouts-widgets.json'
+      - 'scripts/build_schools.py'
+      - 'scripts/build_zse.py'
+      - 'scripts/build_mining.py'
+      - 'scripts/build_flight_pages_v2.py'
+      - 'scripts/install_nav_drawer.py'
+  workflow_dispatch:
+
+# Make sure two upload-bursts don't race each other on push.
+concurrency:
+  group: rebuild-microsites
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Use the workflow token so subsequent commits don't re-trigger
+          # this action infinitely.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Detect which microsites need rebuilding
+        id: detect
+        run: |
+          # Look at the files changed in this push and figure out which
+          # builders to run. We always re-run all if a build script
+          # itself changed (cheaper than getting clever about it).
+          CHANGED=$(git diff --name-only HEAD^ HEAD || true)
+          echo "Changed files:"
+          echo "$CHANGED"
+
+          REBUILD_FLIGHTS=false
+          REBUILD_SCHOOLS=false
+          REBUILD_ZSE=false
+          REBUILD_MINING=false
+
+          if echo "$CHANGED" | grep -qE '^img/flights/|^data/travelpayouts-widgets\.json|^scripts/build_flight_pages_v2\.py'; then
+            REBUILD_FLIGHTS=true
+          fi
+          if echo "$CHANGED" | grep -qE '^img/schools/|^img/uk-guide/|^data/ats-schools.*\.json|^scripts/build_schools\.py'; then
+            REBUILD_SCHOOLS=true
+          fi
+          if echo "$CHANGED" | grep -qE '^img/zse/|^data/zse-companies\.json|^scripts/build_zse\.py'; then
+            REBUILD_ZSE=true
+          fi
+          if echo "$CHANGED" | grep -qE '^img/mining/|^data/mines\.json|^scripts/build_mining\.py'; then
+            REBUILD_MINING=true
+          fi
+          # If the nav-drawer installer changed, rebuild it across everything
+          if echo "$CHANGED" | grep -q '^scripts/install_nav_drawer\.py'; then
+            REBUILD_FLIGHTS=true; REBUILD_SCHOOLS=true; REBUILD_ZSE=true; REBUILD_MINING=true
+          fi
+
+          echo "flights=$REBUILD_FLIGHTS"  >> "$GITHUB_OUTPUT"
+          echo "schools=$REBUILD_SCHOOLS"  >> "$GITHUB_OUTPUT"
+          echo "zse=$REBUILD_ZSE"          >> "$GITHUB_OUTPUT"
+          echo "mining=$REBUILD_MINING"    >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild flights
+        if: steps.detect.outputs.flights == 'true'
+        run: python3 scripts/build_flight_pages_v2.py
+
+      - name: Rebuild schools
+        if: steps.detect.outputs.schools == 'true'
+        run: python3 scripts/build_schools.py
+
+      - name: Rebuild ZSE
+        if: steps.detect.outputs.zse == 'true'
+        run: python3 scripts/build_zse.py
+
+      - name: Rebuild mining
+        if: steps.detect.outputs.mining == 'true'
+        run: python3 scripts/build_mining.py
+
+      - name: Re-wire nav drawer on rebuilt pages
+        if: |
+          steps.detect.outputs.flights == 'true' ||
+          steps.detect.outputs.schools == 'true' ||
+          steps.detect.outputs.zse == 'true' ||
+          steps.detect.outputs.mining == 'true'
+        run: python3 scripts/install_nav_drawer.py
+
+      - name: Commit regenerated HTML
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add flights/ schools/ zse/ mining/ moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing to commit — builders produced no HTML diff."
+          else
+            git commit -m "auto: rebuild microsites after image/data change"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed."
+                break
+              else
+                echo "Push failed; pulling --rebase and retrying ($i/5)..."
+                git pull --rebase
+                sleep 2
+              fi
+            done
+          fi

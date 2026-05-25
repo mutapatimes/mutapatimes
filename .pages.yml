@@ -8,8 +8,45 @@
 # fetch_news.py, etc.) keep working without changes.
 
 media:
-  input: img/uploads
-  output: /img/uploads
+  # General uploads — for article featured images, sponsor logos, etc.
+  - name: uploads
+    label: General uploads
+    input: img/uploads
+    output: /img/uploads
+
+  # Per-microsite media tabs. Files MUST be named to match a slug
+  # (e.g. img/flights/london-to-harare.jpg).  Once committed, a
+  # GitHub Action rebuilds the affected microsite and the image
+  # appears on the live site within 2-3 minutes.  See img/README.md.
+  - name: flights
+    label: Flight pages
+    input: img/flights
+    output: /img/flights
+    extensions: [jpg, jpeg, png, webp]
+
+  - name: schools
+    label: Schools directory
+    input: img/schools
+    output: /img/schools
+    extensions: [jpg, jpeg, png, webp, svg]
+
+  - name: zse
+    label: ZSE companies
+    input: img/zse
+    output: /img/zse
+    extensions: [jpg, jpeg, png, webp, svg]
+
+  - name: mining
+    label: Mining directory
+    input: img/mining
+    output: /img/mining
+    extensions: [jpg, jpeg, png, webp]
+
+  - name: uk_guide
+    label: UK / Moving-to-Zimbabwe guide
+    input: img/uk-guide
+    output: /img/uk-guide
+    extensions: [jpg, jpeg, png, webp]
 
 content:
   # ─── ARTICLES (originals + drafts) ─────────────────────────────
