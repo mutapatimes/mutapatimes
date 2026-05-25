@@ -225,6 +225,8 @@ body { background: #fbfaf6; }
 .fl-table tbody tr:last-child td { border-bottom: 0; }
 .fl-table tbody tr:hover { background: #fbfaf6; }
 .fl-table strong { color: var(--ink); }
+.fl-table .fl-mon-price { text-align: right; font-variant-numeric: tabular-nums;
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700; color: var(--ink); }
 
 /* Live-fare callout: cheapest fare observed for this route today */
 .fl-fare { max-width: 1080px; margin: 22px auto 0; padding: 0 24px; }
@@ -1278,13 +1280,16 @@ def render_corridor(slug, c):
         "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://www.mutapatimes.com"}
     }, ensure_ascii=False)
 
-    # Live price data (Travelpayouts Data API, refreshed twice daily)
+    # Live price data (Travelpayouts Data API, refreshed twice daily).
+    # See scripts/fetch_flight_prices.py — aggregates across multiple endpoints.
     live = prices_by_slug.get(slug, {}) or {}
-    cheapest_obs = live.get("cheapest") or live.get("cheapest_30d") or {}
-    live_price = cheapest_obs.get("value")
+    cheapest_obs = live.get("cheapest_overall") or live.get("cheapest") or live.get("cheapest_30d") or {}
+    cheapest_direct_obs = live.get("cheapest_direct") or {}
+    live_price = cheapest_obs.get("price") or cheapest_obs.get("value")
     live_airline = cheapest_obs.get("airline")
     live_dep = (cheapest_obs.get("departure_at") or "")[:10]
-    live_stops = cheapest_obs.get("number_of_changes")
+    live_stops = cheapest_obs.get("stops") if "stops" in cheapest_obs else cheapest_obs.get("number_of_changes")
+
     fare_callout_html = ""
     if live_price:
         stops_lbl = "direct" if live_stops == 0 else (f"{live_stops}-stop" if live_stops else "")
@@ -1292,21 +1297,77 @@ def render_corridor(slug, c):
         if live_airline: meta_bits.append(f"<strong>{html.escape(str(live_airline))}</strong>")
         if stops_lbl: meta_bits.append(html.escape(stops_lbl))
         if live_dep: meta_bits.append(f"departing {live_dep}")
-        meta_str = " &middot; ".join(meta_bits) if meta_bits else "live observed fare"
+        meta_str = " &middot; ".join(meta_bits) if meta_bits else "observed across the route"
         fare_callout_html = f'''<aside class="fl-fare">
     <div class="fl-fare-inner">
       <div>
         <p class="fl-fare-label"><span class="fl-fare-pulse" aria-hidden="true"></span>Cheapest fare observed</p>
-        <p class="fl-fare-price">{c["currency_sym"]}{live_price:,}</p>
+        <p class="fl-fare-price">{c["currency_sym"]}{int(live_price):,}</p>
         <p class="fl-fare-meta">{meta_str}</p>
-        <p class="fl-fare-asof">Updated {prices_fetched_at} &middot; via Skyscanner / Travelpayouts cache. Live prices in the search below.</p>
+        <p class="fl-fare-asof">Updated {prices_fetched_at} &middot; aggregated across {live.get("observations", 0)} cached observations via Travelpayouts.</p>
       </div>
       <a class="fl-fare-cta" href="#fl-widget">Search current fares &rarr;</a>
     </div>
   </aside>'''
 
+    # Monthly cheapest table (renders only when we have multiple months)
+    monthly = live.get("monthly", []) or []
+    monthly_html = ""
+    if len(monthly) >= 3:
+        rows = []
+        for m in monthly[:8]:
+            dep = m.get("departure_at") or ""
+            try:
+                d = datetime.date.fromisoformat(dep[:10])
+                label = d.strftime("%b %Y")
+            except Exception:
+                label = dep[:7] if dep else "—"
+            airline = m.get("airline") or "—"
+            stops = m.get("stops")
+            stops_lbl = "direct" if stops == 0 else (f"{stops}-stop" if stops else "—")
+            rows.append(f'        <tr><td><strong>{label}</strong></td><td class="fl-mon-price">{c["currency_sym"]}{int(m["price"]):,}</td><td>{html.escape(str(airline)) if airline else "—"}</td><td>{html.escape(stops_lbl)}</td><td>{dep[:10] if dep else "—"}</td></tr>')
+        monthly_html = f'''<section class="fl-section">
+    <p class="fl-section-eyebrow"><span class="fl-section-num">03B</span><span>By month</span></p>
+    <h2 class="fl-section-h2">Cheapest fare each month</h2>
+    <div class="fl-prose">
+      <p>Cheapest fare observed for each month on the {c["origin_short"]} &mdash; {c["dest_short"]} corridor, aggregated from Travelpayouts cache. Use this to time your booking. Live prices for your specific dates are in the <a href="#fl-widget">search above</a>.</p>
+    </div>
+    <div class="fl-table-wrap">
+      <table class="fl-table">
+        <thead><tr><th>Month</th><th class="fl-mon-price">Cheapest</th><th>Airline</th><th>Stops</th><th>Best date</th></tr></thead>
+        <tbody>
+{chr(10).join(rows)}
+        </tbody>
+      </table>
+    </div>
+  </section>'''
+
+    # By-airline mini-table
+    by_airline = live.get("by_airline", []) or []
+    airline_live_html = ""
+    if len(by_airline) >= 2:
+        rows = []
+        for a in by_airline:
+            airline = a.get("airline") or "—"
+            stops = a.get("stops")
+            stops_lbl = "direct" if stops == 0 else (f"{stops}-stop" if stops else "—")
+            dep = a.get("departure_at") or ""
+            rows.append(f'        <tr><td><strong>{html.escape(str(airline))}</strong></td><td class="fl-mon-price">{c["currency_sym"]}{int(a["price"]):,}</td><td>{html.escape(stops_lbl)}</td><td>{dep[:10] if dep else "—"}</td></tr>')
+        airline_live_html = f'''<section class="fl-section">
+    <p class="fl-section-eyebrow"><span class="fl-section-num">02B</span><span>Live by airline</span></p>
+    <h2 class="fl-section-h2">Cheapest right now, by airline</h2>
+    <div class="fl-table-wrap">
+      <table class="fl-table">
+        <thead><tr><th>Airline</th><th class="fl-mon-price">Cheapest seen</th><th>Stops</th><th>Departure</th></tr></thead>
+        <tbody>
+{chr(10).join(rows)}
+        </tbody>
+      </table>
+    </div>
+  </section>'''
+
     # AggregateOffer for the route — uses live cheapest if available
-    offer_low = live_price if live_price else c["low_fare"]
+    offer_low = int(live_price) if live_price else c["low_fare"]
     offer_ld = json.dumps({
         "@context":"https://schema.org","@type":"Product",
         "name": f"{c['origin_short']} to {c['dest_short']} flight",
@@ -1397,6 +1458,8 @@ def render_corridor(slug, c):
     {pullout_html}
   </section>
 
+  {airline_live_html}
+
   <section class="fl-section">
     <p class="fl-section-eyebrow"><span class="fl-section-num">03</span><span>When to book</span></p>
     <h2 class="fl-section-h2">Cheapest months and lead time</h2>
@@ -1404,6 +1467,8 @@ def render_corridor(slug, c):
       <p>{c["season"]}</p>
     </div>
   </section>
+
+  {monthly_html}
 
   <section class="fl-section">
     <p class="fl-section-eyebrow"><span class="fl-section-num">04</span><span>Layovers</span></p>
