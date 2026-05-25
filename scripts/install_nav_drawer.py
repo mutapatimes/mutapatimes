@@ -67,6 +67,7 @@ def gather_targets():
     paths += sorted((ROOT / "schools").glob("*.html"))
     paths += sorted((ROOT / "zse").glob("*.html"))
     paths += sorted((ROOT / "mining").glob("*.html"))
+    paths += sorted((ROOT / "cooking").rglob("index.html"))  # /cooking/<recipe>/index.html
     paths.append(ROOT / "moving-to-zimbabwe" / "sim-card-and-mobile.html")
     # Dedupe while preserving order
     seen = set(); out = []

@@ -42,6 +42,12 @@ media:
     output: /img/mining
     extensions: [jpg, jpeg, png, webp]
 
+  - name: cooking
+    label: Cooking / recipes
+    input: img/cooking
+    output: /img/cooking
+    extensions: [jpg, jpeg, png, webp]
+
   - name: uk_guide
     label: UK / Moving-to-Zimbabwe guide
     input: img/uk-guide

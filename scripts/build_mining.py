@@ -59,9 +59,16 @@ def fetch_wikitext(title):
         return ""
 
 def parse_infobox(wt):
+    """Two-char lookahead state machine — handles nested templates correctly.
+    Previous implementation walked char-by-char checking cur[-1], which
+    over-counted consecutive close-braces (}}}}  was treated as 4 separate
+    pair-closes instead of 2), causing the 'colours' field of Bernard
+    Mizeki College to leak the rest of the infobox into its value."""
     m = re.search(r'\{\{Infobox[^\|]*\|', wt, re.I)
     if not m: return {}
-    start = m.start(); depth = 0; i = start
+    start = m.start()
+    # Walk to the matching closing }} of the outer infobox
+    depth = 0; i = start
     while i < len(wt):
         if wt[i:i+2] == '{{': depth += 1; i += 2; continue
         if wt[i:i+2] == '}}':
@@ -69,17 +76,23 @@ def parse_infobox(wt):
             if depth == 0: break
             continue
         i += 1
-    block = wt[start:i]
-    parts = []; cur = []; dt = 0; dl = 0
-    for ch in block[2:-2]:
-        if ch == '|' and dt == 0 and dl == 0:
+    inner = wt[start+2:i-2]
+    # Split inner on top-level | only (template_depth == 0 and link_depth == 0)
+    parts = []; cur = []
+    td = ld = 0
+    j = 0
+    while j < len(inner):
+        two = inner[j:j+2]
+        if two == '{{': td += 1; cur.append(two); j += 2; continue
+        if two == '}}': td -= 1; cur.append(two); j += 2; continue
+        if two == '[[': ld += 1; cur.append(two); j += 2; continue
+        if two == ']]': ld -= 1; cur.append(two); j += 2; continue
+        ch = inner[j]
+        if ch == '|' and td == 0 and ld == 0:
             parts.append(''.join(cur)); cur = []
         else:
-            if cur and cur[-1] == '{' and ch == '{': dt += 1
-            if cur and cur[-1] == '}' and ch == '}': dt -= 1
-            if cur and cur[-1] == '[' and ch == '[': dl += 1
-            if cur and cur[-1] == ']' and ch == ']': dl -= 1
             cur.append(ch)
+        j += 1
     if cur: parts.append(''.join(cur))
     out = {}
     for p in parts[1:]:
@@ -99,7 +112,11 @@ def clean_val(v):
     v = re.sub(r'\[\[([^\]]+)\]\]', r'\1', v)
     v = re.sub(r"'''([^']+)'''", r'\1', v)
     v = re.sub(r"''([^']+)''", r'\1', v)
-    v = re.sub(r'\{\{[^}]*\}\}', '', v)
+    # Iteratively strip nested templates: match only innermost first
+    prev = None
+    while prev != v:
+        prev = v
+        v = re.sub(r'\{\{[^{}]*\}\}', '', v)
     v = re.sub(r'<br\s*/?>', '; ', v, flags=re.I)
     v = re.sub(r'<[^>]+>', '', v)
     v = re.sub(r'\s+', ' ', v).strip()

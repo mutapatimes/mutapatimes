@@ -65,16 +65,20 @@ def fetch_summary(title):
         return ""
 
 def parse_infobox(wikitext):
-    """Extract first infobox block and return key:value dict, lightly cleaned."""
+    """Extract first infobox block and return key:value dict, lightly cleaned.
+
+    Uses two-char lookahead state machine so `}}}}` is correctly treated
+    as two paired close-tokens rather than four separate decrements.
+    The old per-char tracker was over-decrementing on consecutive `}}` —
+    e.g. on Bernard Mizeki College the `{{scarf|{{cell|...}}{{cell|...}}}}`
+    in the `colours` field broke depth tracking and the rest of the
+    infobox leaked into that field's value."""
     m = re.search(r'\{\{Infobox[^\|]*\|', wikitext, re.I)
     if not m:
-        # also try with hyphens / underscores
         m = re.search(r'\{\{Infobox[\s_\-]+school', wikitext, re.I)
         if not m: return {}
     start = m.start()
-    # walk braces
-    depth = 0
-    i = start
+    depth = 0; i = start
     while i < len(wikitext):
         if wikitext[i:i+2] == '{{':
             depth += 1; i += 2; continue
@@ -83,25 +87,23 @@ def parse_infobox(wikitext):
             if depth == 0: break
             continue
         i += 1
-    block = wikitext[start:i]
-    out = {}
-    # split into | key = value entries at the top level only
-    # use a simple state machine: track nested {{ }} and [[ ]]
-    parts = []
-    cur = []
-    depth_t = 0
-    depth_l = 0
-    for ch in block[2:-2]:  # strip outer {{ }}
-        if ch == '|' and depth_t == 0 and depth_l == 0:
+    inner = wikitext[start+2:i-2]  # strip outer {{...}}
+    parts = []; cur = []
+    td = ld = 0; j = 0
+    while j < len(inner):
+        two = inner[j:j+2]
+        if two == '{{': td += 1; cur.append(two); j += 2; continue
+        if two == '}}': td -= 1; cur.append(two); j += 2; continue
+        if two == '[[': ld += 1; cur.append(two); j += 2; continue
+        if two == ']]': ld -= 1; cur.append(two); j += 2; continue
+        ch = inner[j]
+        if ch == '|' and td == 0 and ld == 0:
             parts.append(''.join(cur)); cur = []
         else:
-            if cur and cur[-1] == '{' and ch == '{': depth_t += 1
-            if cur and cur[-1] == '}' and ch == '}': depth_t -= 1
-            if cur and cur[-1] == '[' and ch == '[': depth_l += 1
-            if cur and cur[-1] == ']' and ch == ']': depth_l -= 1
             cur.append(ch)
+        j += 1
     if cur: parts.append(''.join(cur))
-    # first part is the template name
+    out = {}
     for p in parts[1:]:
         if '=' not in p: continue
         k, v = p.split('=', 1)
@@ -110,21 +112,19 @@ def parse_infobox(wikitext):
 
 def clean_value(v):
     if not v: return ""
-    # Strip ref tags
     v = re.sub(r'<ref[^>]*>.*?</ref>', '', v, flags=re.S)
     v = re.sub(r'<ref[^>]*/>', '', v)
-    # Strip image links
     v = re.sub(r'\[\[File:[^\]]+\]\]', '', v, flags=re.I)
-    # Strip {{cite ...}} templates
     v = re.sub(r'\{\{cite[^}]*\}\}', '', v, flags=re.I)
-    # Wikilinks: [[X|Y]] -> Y, [[X]] -> X
     v = re.sub(r'\[\[([^|\]]+)\|([^\]]+)\]\]', r'\2', v)
     v = re.sub(r'\[\[([^\]]+)\]\]', r'\1', v)
-    # Bold/italic
     v = re.sub(r"'''([^']+)'''", r'\1', v)
     v = re.sub(r"''([^']+)''", r'\1', v)
-    # Templates we can't resolve cleanly — drop them
-    v = re.sub(r'\{\{[^}]*\}\}', '', v)
+    # Iteratively strip nested templates: match only innermost first
+    prev = None
+    while prev != v:
+        prev = v
+        v = re.sub(r'\{\{[^{}]*\}\}', '', v)
     # HTML tags
     v = re.sub(r'<br\s*/?>', '; ', v, flags=re.I)
     v = re.sub(r'<[^>]+>', '', v)
