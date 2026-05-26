@@ -976,13 +976,18 @@ nav a.economy-btn.active {
   border-left: none;
 }
 
-.local-news-header {
+.local-news-header,
+.originals-news-header {
   padding: 16px 20px 12px;
   background: var(--paper);
   border-bottom: 2px solid var(--ink);
 }
+/* When 'Originals' sits above 'Live on the Ground', give the second
+   block a top margin so the two sidebar sections feel distinct */
+.originals-news-header + #originals-stories + .local-news-header { margin-top: 28px; }
 
-.local-news-header .sidebar-header {
+.local-news-header .sidebar-header,
+.originals-news-header .sidebar-header {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 0.7em;
   font-weight: 700;

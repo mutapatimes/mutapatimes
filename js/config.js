@@ -375,6 +375,8 @@ function filterByCategory(category) {
     });
   }
   renderSidebarStories(sidebarFiltered);
+  // Originals always show the full pool, regardless of category filter
+  renderOriginalsStories(_allMainArticles);
 }
 
 // ============================================================
@@ -514,6 +516,7 @@ function loadMainStories() {
   if (cached) {
     _allMainArticles = cached;
     renderMainStories(cached);
+    renderOriginalsStories(cached);
     return;
   }
 
@@ -546,6 +549,7 @@ function loadMainStories() {
     _allMainArticles = allArticles;
     _currentPage = 1;
     renderMainStories(allArticles);
+    renderOriginalsStories(allArticles);
   }
 
   // Load archived articles from data/archive.json
@@ -1314,12 +1318,14 @@ function renderMainStories(articles) {
     });
   }
 
-  // Exclude local-only sources from default "all" view — they belong in the
-  // sidebar ("Live on the Ground"). Users can still see them via the Local filter.
-  // Featured CMS articles are always kept regardless of source.
+  // Exclude local-only sources AND original CMS articles from the default
+  // "all" view. Local pieces live in 'Live on the Ground'; originals live
+  // in the 'Originals from the newsroom' sidebar block. The main feed is
+  // for the latest wire news (BBC, Reuters, SCMP, etc.). Users can still
+  // hit the dedicated filters/category buttons to see local or CMS pieces.
   if (_activeCategory === "all") {
     filtered = filtered.filter(function(a) {
-      if (a.featured) return true;
+      if (a.isCmsArticle) return false;
       return !a.isLocal && !isLocalZimSource(a.source);
     });
   }
@@ -2246,6 +2252,71 @@ function renderSidebarStories(articles) {
 
   // Inject structured data for SEO
   injectArticleSchema(filtered, 'sidebar');
+}
+
+// ============================================================
+// RENDER: Originals — Mutapa Times' own CMS articles in sidebar
+// ============================================================
+function renderOriginalsStories(articles) {
+  var container = $("#originals-stories");
+  if (!container.length) return;
+  container.empty();
+
+  if (!articles || articles.length === 0) {
+    container.html('<p class="loading-msg">No originals yet.</p>');
+    return;
+  }
+
+  // CMS articles only; skip spotlight dupes
+  var filtered = articles.filter(function(a) {
+    if (a.url && _spotlightUrls[a.url]) return false;
+    return a.isCmsArticle;
+  });
+
+  if (filtered.length === 0) {
+    container.html('<p class="loading-msg">No originals yet.</p>');
+    return;
+  }
+
+  for (var i = 0; i < filtered.length && i < 12; i++) {
+    var a = filtered[i];
+    var pubDate = formatDate(a.publishedAt);
+
+    var item = $('<article class="sidebar-item">');
+    var link = $('<a>').attr('href', a.url || '#');
+
+    link.append($('<h4 class="sidebar-title">').text(a.title));
+
+    var desc = a.description;
+    if (desc && desc.length > 150) desc = desc.substring(0, 150) + "...";
+    if (desc) link.append($('<p class="sidebar-desc">').text(desc));
+
+    var meta = $('<p class="sidebar-meta">');
+    meta.append($('<span class="press-marker original-press">').text("Original"));
+    if (a.source) {
+      meta.append($('<span>').text(a.source));
+    }
+    if (pubDate) {
+      meta.append(document.createTextNode(" · "));
+      var timeEl = $('<time>').text(pubDate);
+      try {
+        var dt = new Date(a.publishedAt);
+        if (!isNaN(dt.getTime())) timeEl.attr('datetime', dt.toISOString());
+      } catch (e) {}
+      meta.append(timeEl);
+    }
+    meta.append(createShareGroup(a.title, a.url, {
+      title: a.title, source: a.source, description: desc,
+      url: a.url, category: '', isLocal: false,
+      publishedAt: a.publishedAt, image: a.image || ''
+    }));
+    link.append(meta);
+
+    item.append(link);
+    container.append(item);
+  }
+
+  injectArticleSchema(filtered, 'originals');
 }
 
 // ============================================================
