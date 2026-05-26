@@ -7865,14 +7865,16 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
 }
 
 /* ───── Shopify negative-space ads ─────
-   Higher-density banner inventory dropped into the section-gaps
-   on articles, hubs, lists, home and city pages. Format-aware:
-   .shopify-banner--leaderboard renders the 728×90 stripes,
-   .shopify-banner--hero        the wide 1200×628 finale block,
-   .shopify-banner--rectangle   a 300×250 mid-list rectangle.
+   Format- AND viewport-aware. The JS picks the right creative for the
+   slot (728×90 desktop / 320×50 mobile for leaderboards, 1200×628
+   desktop / 320×480 mobile for hero, 300×250 for rectangle). The CSS
+   here clamps the image to its natural size so it never stretches
+   beyond what it was designed for — that's the bug that made the
+   728×90 collapse to 40px tall on phones.
 */
 .shopify-banner {
-  width: 100%;
+  display: block;
+  width: auto;
   margin: 36px auto;
   padding: 14px 18px 16px;
   background: #fff;
@@ -7881,10 +7883,15 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03);
+  /* fit-content keeps the card snug around the creative on desktop,
+     so a 728×90 isn't sitting in a 1100px frame of empty padding. */
+  max-width: calc(100% - 24px);
+  width: fit-content;
 }
-.shopify-banner--leaderboard { max-width: 800px; }
-.shopify-banner--hero        { max-width: 1200px; padding: 18px 18px 18px; }
-.shopify-banner--rectangle   { max-width: 360px;  padding: 16px 18px; }
+.shopify-banner--leaderboard { /* card snaps to creative width */ }
+.shopify-banner--hero        { padding: 18px; }
+.shopify-banner--rectangle   { padding: 16px 18px; }
+
 .shopify-banner-eyebrow {
   font-size: 0.62rem;
   font-weight: 700;
@@ -7902,22 +7909,32 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .shopify-banner-link:hover { transform: translateY(-1px); text-decoration: none; }
+
+/* The CRITICAL rule: never upscale a creative past its native size.
+   width:auto + max-width:100% lets it shrink on narrow screens but
+   not stretch on wide ones. The intrinsic width/height attributes
+   on the <img> hold the layout space before the asset loads. */
 .shopify-banner-link img {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 6px;
 }
+
 .shopify-banner-caption {
   margin: 10px 0 0;
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--text-mid, #4a4a44);
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media (max-width: 540px) {
-  .shopify-banner { margin: 28px 12px; padding: 12px 14px 14px; }
+  .shopify-banner { margin: 28px 12px; padding: 12px 12px 14px; max-width: calc(100% - 24px); }
   .shopify-banner-eyebrow { font-size: 0.58rem; }
   .shopify-banner-caption { font-size: 0.78rem; }
 }
