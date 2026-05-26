@@ -6,76 +6,88 @@
   <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />  <title>Page Not Found | The Mutapa Times</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
   <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: Georgia, 'Times New Roman', serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-      background: #fdf6e3;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      color: #1a1a1a;
-      font-size: 2.4em;
-      font-weight: 900;
-      margin-bottom: 0.3em;
-      letter-spacing: -0.02em;
-    }
-
-    p {
+    .nf-shell {
+      max-width: 640px;
       margin: 0 auto;
-      width: 320px;
-      font-size: 1.05em;
-      line-height: 1.6;
+      padding: 6em 24px 4em;
+      text-align: center;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #333;
     }
-
-    a {
+    .nf-eyebrow {
+      font-size: 0.72em;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #c41e1e;
+      font-weight: 700;
+      margin: 0 0 1.4em;
+    }
+    .nf-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #121212;
+      margin: 0 0 0.6em;
+    }
+    .nf-body {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: #555;
+      margin: 0 auto 2em;
+      max-width: 440px;
+    }
+    .nf-home {
+      display: inline-block;
+      font-size: 0.95rem;
       color: #1a1a1a;
       text-decoration: underline;
       text-underline-offset: 3px;
+      margin-bottom: 2.2em;
     }
-
-    a:hover {
-      color: #555;
+    .nf-home:hover { color: #c41e1e; }
+    .nf-rail {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      max-width: 720px;
+      margin: 2em auto 0;
+      text-align: left;
     }
-
-    .home-link {
-      display: inline-block;
-      margin-top: 1.5em;
-      font-size: 0.95em;
+    .nf-card {
+      padding: 14px 16px;
+      background: #fff;
+      border: 1px solid #d4d4d4;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.15s, transform 0.15s;
     }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
+    .nf-card:hover { border-color: #c41e1e; transform: translateY(-2px); text-decoration: none; }
+    .nf-card-tag {
+      font-size: 0.66em;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #c41e1e;
+      font-weight: 700;
+      margin: 0 0 4px;
+      display: block;
+    }
+    .nf-card-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.02em;
+      line-height: 1.2;
+      margin: 0;
+      color: #121212;
     }
   </style>
 </head>
@@ -88,9 +100,18 @@
   <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-  <a class="home-link" href="/">&larr; Back to The Mutapa Times</a>
+<main class="nf-shell">
+  <p class="nf-eyebrow">404 &middot; The Mutapa Times</p>
+  <h1 class="nf-title">Page Not Found</h1>
+  <p class="nf-body">Sorry, but the page you were trying to view does not exist. It may have moved, or the link might be wrong.</p>
+  <a class="nf-home" href="/">&larr; Back to The Mutapa Times</a>
+  <div class="nf-rail">
+    <a class="nf-card" href="/articles"><span class="nf-card-tag">READ</span><h2 class="nf-card-title">All articles</h2></a>
+    <a class="nf-card" href="/economy"><span class="nf-card-tag">DATA</span><h2 class="nf-card-title">Live economy</h2></a>
+    <a class="nf-card" href="/fx"><span class="nf-card-tag">MONEY</span><h2 class="nf-card-title">FX &amp; remittances</h2></a>
+    <a class="nf-card" href="/jobs"><span class="nf-card-tag">JOBS</span><h2 class="nf-card-title">Open positions</h2></a>
+  </div>
+</main>
 <script defer src="/js/nav.js"></script>
 <script defer src="/js/sponsors.js"></script>
 
