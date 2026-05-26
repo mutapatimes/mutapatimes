@@ -29,6 +29,11 @@ STATIC_PAGES = [
     ("authors/", 0.8, "weekly"),
     ("about", 0.7, "monthly"),
     ("advertising", 0.85, "weekly"),
+    # Diaspora hubs — country-targeted SEO
+    ("diaspora/",                0.85, "weekly"),
+    ("diaspora/uk/",             0.85, "weekly"),
+    ("diaspora/south-africa/",   0.85, "weekly"),
+    ("diaspora/usa/",            0.85, "weekly"),
     ("privacy", 0.3, "yearly"),
     ("terms", 0.3, "yearly"),
 ]
