@@ -279,7 +279,26 @@ def render(meta, hero_html, body_html, country_for_crumb=None, self_key=None):
         breadcrumb_jsonld=breadcrumb(country_for_crumb),
         webpage_jsonld=webpage(meta),
     )
-    return head + TOPBAR_AND_DRAWER + hero_html + body_html + "</main>\n" + FOOTER
+    # Sponsor-page tag controls which sponsor inventory targets this URL.
+    sponsor_page_map = {
+        "hub": "diaspora",
+        "uk":  "diaspora-uk",
+        "sa":  "diaspora-sa",
+        "us":  "diaspora-us",
+    }
+    sp_key = sponsor_page_map.get(self_key or "", "diaspora")
+    # Inject data-sponsor-page on the <body> and load sponsors.js before close.
+    head_with_body = head.replace(
+        '<body class="dp-page">',
+        f'<body class="dp-page" data-sponsor-page="{sp_key}">'
+    )
+    body_end_scripts = '<script defer src="/js/sponsors.js"></script>\n'
+    footer_with_js = FOOTER.replace(
+        '<script defer src="/js/nav.js"></script>',
+        body_end_scripts + '<script defer src="/js/nav.js"></script>'
+    )
+    return (head_with_body + TOPBAR_AND_DRAWER + hero_html + body_html
+            + "</main>\n" + footer_with_js)
 
 
 # ─── Hub page (/diaspora/) ───────────────────────────────────────────

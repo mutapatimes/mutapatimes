@@ -85,12 +85,19 @@ def collect():
         url = _grab(fm, "url")
         if not (name and copy and url):
             continue
+        weight_raw = _grab(fm, "weight", "1")
+        try:
+            weight = float(weight_raw)
+        except (TypeError, ValueError):
+            weight = 1.0
         out.append({
             "name": name,
             "strip_copy": copy,
             "url": url,
             "logo": _grab(fm, "logo") or None,
             "placements": _grab_list(fm, "placements") or ["news"],
+            "impression_pixel": _grab(fm, "impression_pixel") or None,
+            "weight": weight,
         })
     return out
 

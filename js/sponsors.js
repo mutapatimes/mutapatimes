@@ -8,6 +8,13 @@
  * back to the URL pathname for the page keys ("news", "articles", ...).
  * If no active sponsor targets this page, the script renders nothing
  * — completely silent.
+ *
+ * When multiple sponsors target the same page, we pick one at random
+ * (weighted by sponsor.weight, default 1) so the inventory rotates
+ * across pageviews. When a sponsor declares an `impression_pixel`
+ * (Impact's /i/... URL), we fire it as a hidden 0×0 img the moment the
+ * strip is placed in the DOM, so view-attribution counts even though
+ * we never serve the affiliate's banner creative itself.
  */
 (function () {
   'use strict';
@@ -19,6 +26,20 @@
     if (path === '' || path === '/index.html') return 'news';
     var seg = path.split('/').filter(Boolean)[0] || 'news';
     return seg.replace(/-news$/, '-cities').replace(/\.html$/, '');
+  }
+
+  function pickWeighted(matches) {
+    if (matches.length === 1) return matches[0];
+    var total = 0, i;
+    for (i = 0; i < matches.length; i++) {
+      total += Math.max(0, Number(matches[i].weight) || 1);
+    }
+    var r = Math.random() * total;
+    for (i = 0; i < matches.length; i++) {
+      r -= Math.max(0, Number(matches[i].weight) || 1);
+      if (r <= 0) return matches[i];
+    }
+    return matches[matches.length - 1];
   }
 
   function buildStrip(s) {
@@ -44,6 +65,20 @@
     inner.appendChild(a);
 
     strip.appendChild(inner);
+
+    // Fire the affiliate impression pixel (Impact /i/...) if provided.
+    // Hidden 0×0 element; load=success, error=ignored. Never blocks render.
+    if (s.impression_pixel) {
+      var px = new Image(0, 0);
+      px.alt = '';
+      px.referrerPolicy = 'no-referrer-when-downgrade';
+      px.style.position = 'absolute';
+      px.style.visibility = 'hidden';
+      px.style.width = '0';
+      px.style.height = '0';
+      px.src = s.impression_pixel;
+      strip.appendChild(px);
+    }
     return strip;
   }
 
@@ -66,10 +101,11 @@
     .then(function (d) {
       if (!d || !Array.isArray(d.sponsors) || !d.sponsors.length) return;
       var page = detectPage();
-      var match = d.sponsors.find(function (s) {
+      var matches = d.sponsors.filter(function (s) {
         return (s.placements || []).indexOf(page) !== -1;
       });
-      if (match) place(buildStrip(match));
+      if (!matches.length) return;
+      place(buildStrip(pickWeighted(matches)));
     })
     .catch(function () {});
 })();
