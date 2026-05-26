@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T10:17:56.596961+00:00",
+  "fetched_at": "2026-05-26T16:09:02.559965+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -22,15 +22,6 @@
       "baths": "3"
     },
     {
-      "title": "Old marlbrough house",
-      "url": "https://www.property.co.zw/for-sale/houses-cpc237106",
-      "price": "USD 250,000",
-      "location": "Marlborough, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/91/f2/d0/91f2d091-ac21-4d74-bdea-be26db5e98f3_thumbnail591.webp",
-      "beds": "5",
-      "baths": "2"
-    },
-    {
       "title": "Prestigious Neighbourhood",
       "url": "https://www.property.co.zw/for-sale/houses-rws246278",
       "price": "USD 740,000",
@@ -38,15 +29,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/9b/26/8d/9b268d55-f39c-4726-a888-e823ef9474fe_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "Exquisite living in Greendale",
-      "url": "https://www.property.co.zw/for-sale/townhouses-bnjr241282",
-      "price": "USD 180,000",
-      "location": "Greendale, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/b3/8d/85/b38d85ba-5d64-4c57-9a41-9b770ed2d12f_thumbnail591.webp",
-      "beds": "2",
-      "baths": "2"
     },
     {
       "title": "Mabvazuva Estate for sale",
@@ -67,7 +49,7 @@
       "baths": "3"
     },
     {
-      "title": "3 bedroom Killarney",
+      "title": "Sale Pending: 3 bedroom Killarney",
       "url": "https://www.property.co.zw/for-sale/houses-jpc245213",
       "price": "USD 100,000",
       "location": "Killarney, Bulawayo East",
@@ -200,6 +182,24 @@
       "image": "https://www.property.co.zw/uploadedfiles/f7/fd/e0/f7fde063-88e3-4d3a-93c5-bf2adc1b7f63_thumbnail591.webp",
       "beds": "5",
       "baths": ""
+    },
+    {
+      "title": "Hatefiled house for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-dsi245555",
+      "price": "USD 150,000",
+      "location": "Hatfield, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/cb/50/3b/cb503bfd-8247-44d2-b918-374498c60f4e_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
+    },
+    {
+      "title": "Elevated Spacious Family Home With Panoramic Views",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp228321",
+      "price": "USD 675,000",
+      "location": "Burnside, Bulawayo East",
+      "image": "https://www.property.co.zw/uploadedfiles/27/8d/b7/278db76c-17d2-4144-a7a8-025737566c80_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
     }
   ]
 }
