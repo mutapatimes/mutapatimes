@@ -270,7 +270,7 @@
           "currency": ""
         },
         {
-          "price": 9944,
+          "price": 9972,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -334,7 +334,7 @@
         {
           "price": 1737,
           "airline": "FA",
-          "departure_at": "2026-05-27",
+          "departure_at": "2026-05-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -404,13 +404,22 @@
           "stops": 0,
           "duration": null,
           "currency": ""
+        },
+        {
+          "price": 4959,
+          "airline": "Farera",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 220,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -428,7 +437,7 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
@@ -614,7 +623,7 @@
           "currency": ""
         },
         {
-          "price": 2845,
+          "price": 2853,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
