@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T18:03:34.468424+00:00",
+  "fetched_at": "2026-05-26T19:57:45.870683+00:00",
   "count": 4,
   "sponsors": [
     {
@@ -7,11 +7,18 @@
       "strip_copy": "Sponsored briefing by Belkin UK \u2014 every device you ship home, properly charged.",
       "url": "https://belkinuk.evyy.net/c/7333540/1574040/3769",
       "logo": null,
-      "placements": [
+      "placements": [],
+      "card_placements": [
         "diaspora-uk"
       ],
       "impression_pixel": "https://belkinuk.evyy.net/i/7333540/1574040/3769",
-      "weight": 0.8
+      "weight": 0.8,
+      "creative_url": "//a.impactradius-go.com/display-ad/3769-1573378",
+      "creative_iframe_src": null,
+      "creative_width": 300,
+      "creative_height": 250,
+      "creative_caption": "Every device you ship home, properly charged \u2192",
+      "creative_eyebrow": "Presented by Belkin UK"
     },
     {
       "name": "Hyatt",
@@ -19,15 +26,24 @@
       "url": "https://hyatt.jewn.net/c/7333540/3902393/4882",
       "logo": null,
       "placements": [
-        "flights",
-        "airports",
-        "diaspora-uk",
-        "diaspora-sa",
-        "diaspora-us",
         "victoria-falls-cities"
       ],
+      "card_placements": [
+        "flights",
+        "airports",
+        "diaspora",
+        "diaspora-uk",
+        "diaspora-sa",
+        "diaspora-us"
+      ],
       "impression_pixel": "https://hyatt.jewn.net/i/7333540/3902393/4882",
-      "weight": 1.0
+      "weight": 1.0,
+      "creative_url": "//a.impactradius-go.com/display-ad/4882-3902393",
+      "creative_iframe_src": null,
+      "creative_width": 728,
+      "creative_height": 90,
+      "creative_caption": "Layover and arrival hotels along the diaspora flight routes home \u2192",
+      "creative_eyebrow": "Presented by World of Hyatt"
     },
     {
       "name": "Marriott Bonvoy",
@@ -35,17 +51,25 @@
       "url": "https://marriott.pxf.io/c/7333540/3881539/4937",
       "logo": null,
       "placements": [
+        "harare-cities",
+        "victoria-falls-cities"
+      ],
+      "card_placements": [
         "flights",
         "airports",
         "diaspora",
         "diaspora-uk",
         "diaspora-sa",
-        "diaspora-us",
-        "harare-cities",
-        "victoria-falls-cities"
+        "diaspora-us"
       ],
       "impression_pixel": "https://marriott.pxf.io/i/7333540/3881539/4937",
-      "weight": 1.0
+      "weight": 1.0,
+      "creative_url": "//a.impactradius-go.com/display-ad/4937-3881539",
+      "creative_iframe_src": null,
+      "creative_width": 300,
+      "creative_height": 250,
+      "creative_caption": "Book the night you land. 30+ brands across the diaspora's home cities \u2192",
+      "creative_eyebrow": "Presented by Marriott Bonvoy"
     },
     {
       "name": "Shopify",
@@ -57,14 +81,22 @@
         "articles",
         "economy",
         "jobs",
-        "markets",
+        "markets"
+      ],
+      "card_placements": [
         "diaspora",
         "diaspora-uk",
         "diaspora-sa",
         "diaspora-us"
       ],
       "impression_pixel": "https://imp.pxf.io/i/7333540/3797171/13624",
-      "weight": 1.0
+      "weight": 1.0,
+      "creative_url": "//a.impactradius-go.com/display-ad/13624-3797165",
+      "creative_iframe_src": null,
+      "creative_width": 728,
+      "creative_height": 90,
+      "creative_caption": "Where the Zimbabwean diaspora builds the next consumer brand \u2192",
+      "creative_eyebrow": "Presented by Shopify"
     }
   ]
 }

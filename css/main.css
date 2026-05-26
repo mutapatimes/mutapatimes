@@ -7788,6 +7788,82 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   .sponsor-strip-link  { font-size: 0.78rem; }
 }
 
+/* ───── Editorial sponsor CARD (chic luxury surfaces) ─────
+   For /flights/, /airports/, /diaspora/* — places where a visual
+   creative is appropriate. Strict editorial chrome: "PRESENTED BY"
+   eyebrow, the affiliate's image or iframe creative, an editorial
+   caption. Never used inside article bodies. */
+.sponsor-card {
+  max-width: 760px;
+  margin: 36px auto;
+  padding: 22px 24px 20px;
+  background: #fff;
+  border: 1px solid var(--hairline, #e8e6df);
+  border-top: 3px solid var(--accent, #c41e1e);
+  border-radius: 12px;
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.04);
+}
+.sponsor-card-eyebrow {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--text-light, #8b8678);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+.sponsor-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.15s ease;
+}
+.sponsor-card-link:hover { transform: translateY(-1px); text-decoration: none; }
+.sponsor-card-media {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: #fbfaf6;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponsor-card-media img,
+.sponsor-card-media iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+.sponsor-card-fallback {
+  padding: 28px 22px;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-mid, #4a4a44);
+  margin: 0;
+}
+.sponsor-card-caption {
+  margin: 16px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-mid, #4a4a44);
+  text-align: center;
+}
+.sponsor-card-link:hover + .sponsor-card-caption,
+.sponsor-card:hover .sponsor-card-caption {
+  color: var(--ink, #121212);
+}
+@media (max-width: 540px) {
+  .sponsor-card { margin: 28px 16px; padding: 18px 18px 16px; }
+  .sponsor-card-eyebrow { font-size: 0.6rem; }
+  .sponsor-card-caption { font-size: 0.85rem; }
+}
+
 /* ───── Article full-bleed parallax sequence ─────
    Breaks out of the article column, runs edge-to-edge,
    parallaxes vertically as you scroll. JS in /js/article-parallax.js

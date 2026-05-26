@@ -90,14 +90,30 @@ def collect():
             weight = float(weight_raw)
         except (TypeError, ValueError):
             weight = 1.0
+        # Card / creative fields (optional). When present, the surface
+        # can render the actual affiliate creative inside an editorial
+        # "Presented by X" card instead of (or alongside) the text strip.
+        def _int(key):
+            raw = _grab(fm, key)
+            try:
+                return int(raw) if raw else None
+            except ValueError:
+                return None
         out.append({
             "name": name,
             "strip_copy": copy,
             "url": url,
             "logo": _grab(fm, "logo") or None,
-            "placements": _grab_list(fm, "placements") or ["news"],
+            "placements": _grab_list(fm, "placements") or [],
+            "card_placements": _grab_list(fm, "card_placements") or [],
             "impression_pixel": _grab(fm, "impression_pixel") or None,
             "weight": weight,
+            "creative_url": _grab(fm, "creative_url") or None,
+            "creative_iframe_src": _grab(fm, "creative_iframe_src") or None,
+            "creative_width": _int("creative_width"),
+            "creative_height": _int("creative_height"),
+            "creative_caption": _grab(fm, "creative_caption") or None,
+            "creative_eyebrow": _grab(fm, "creative_eyebrow") or None,
         })
     return out
 
