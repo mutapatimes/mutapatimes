@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T04:34:09.010005+00:00",
+  "fetched_at": "2026-05-26T10:17:56.596961+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -112,15 +112,6 @@
       "baths": "4"
     },
     {
-      "title": "Arlington House For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-syr246162",
-      "price": "USD 250,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/c6/11/be/c611be43-32d3-43a7-bb3d-3de603c4afb2_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Investor's delight, a complex with 6 units in Ruwa,",
       "url": "https://www.property.co.zw/for-sale/townhouses-dtp144972",
       "price": "USD 180,000",
@@ -166,15 +157,6 @@
       "baths": "2"
     },
     {
-      "title": "Gwabalanda core House Bulawayo",
-      "url": "https://www.property.co.zw/for-sale/townhouses-t14246511",
-      "price": "USD 28,000",
-      "location": "Gwabalanda, Bulawayo High-Density",
-      "image": "https://www.property.co.zw/uploadedfiles/10/59/b5/1059b5d5-d3b8-4834-a625-e838bf37e5ea_thumbnail591.webp",
-      "beds": "5",
-      "baths": "1"
-    },
-    {
       "title": "Great Investment Opportunity",
       "url": "https://www.property.co.zw/for-sale/houses-rws226110",
       "price": "USD 230,000",
@@ -182,6 +164,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/e9/83/2c/e9832c71-7354-4ba9-a1d4-9c92876207a0_thumbnail591.webp",
       "beds": "12",
       "baths": "6"
+    },
+    {
+      "title": "5-Bed Shell on Main Road, Glaudina — En-suite & Fireplace",
+      "url": "https://www.property.co.zw/for-sale/houses-thre247802",
+      "price": "USD 55,000",
+      "location": "Glaudina, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/ec/f3/5f/ecf35f01-6533-4c9e-9faa-31528fc972af_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
     },
     {
       "title": "Kingsdale house for sale",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/30/8a/7c/308a7c2f-ec3f-4208-b52b-24ed5107cf8e_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
+    },
+    {
+      "title": "Delightful. Well Maintained. Spacious",
+      "url": "https://www.property.co.zw/for-sale/houses-dar245992",
+      "price": "USD 560,000",
+      "location": "Helensvale, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/f7/fd/e0/f7fde063-88e3-4d3a-93c5-bf2adc1b7f63_thumbnail591.webp",
+      "beds": "5",
+      "baths": ""
     }
   ]
 }
