@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2026 04:37:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 06:42:22 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zimbabwe bans foreigners from small-scale gold mining, declares strategic minerals list</title>
+      <link>https://mutapatimes.com/stories/7729caa18d42.html</link>
+      <description>via zimlive.com #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Tue, 26 May 2026 03:34:42 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/7729caa18d42.html</guid>
+      <category>Business</category>
+      <dc:creator>zimlive.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/7729caa18d42.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7729caa18d42.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/7729caa18d42.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/2aecf0d6a2c9.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/2aecf0d6a2c9.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/2aecf0d6a2c9.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>St Anne’s Hospital — Billing Nurse</title>
-      <link>https://mutapatimes.com/stories/8ee3393d46d5.html</link>
-      <description>Applications are invited from suitably qualified candidates to fill in the above position that has arisen in the organization. The successful candidate will be responsible for accurate patient billin… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 25 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/8ee3393d46d5.html</guid>
-      <category>Jobs</category>
-      <dc:creator>St Anne's Hospital</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/8ee3393d46d5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/8ee3393d46d5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/8ee3393d46d5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
