@@ -508,6 +508,7 @@ def page_footer(depth=1):
   <script defer src="{prefix}js/stories.js?v=5"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
+  <script defer src="/js/shopify-ads.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
   <script defer src="/js/feature-story.js?v=1"></script>
   <script defer src="/js/series.js?v=3"></script>
