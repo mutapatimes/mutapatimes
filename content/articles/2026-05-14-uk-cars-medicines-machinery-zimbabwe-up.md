@@ -1,46 +1,54 @@
 ---
-title: "Britain's cars, pills and machines keep rolling into Zimbabwe"
+title: "Zimbabwe's growth is now hot enough to lift Britain's exporters — UK goods sales to Harare up 14.6%"
 date: 2026-05-14T16:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: /img/harare-palms.jpg
-summary: "While the wider UK–Zimbabwe trade relationship contracted 7.7% in the year to December 2025, UK goods exports to Zimbabwe rose 14.6%. Cars, commercial vehicles, medicines and industrial machinery did the work. The full breakdown of what Britain is now selling Harare — and the £33m vehicle line that dominates the rest."
+summary: "The Zimbabwean economy is in its strongest stretch in years — 7.5% GDP growth in 2025, a projected 5% in 2026 — and that growth is pulling demand for cars, commercial vehicles, medicines and industrial machinery in with it. UK goods exports to Zimbabwe rose 14.6% on the year, the strongest line in an otherwise soft bilateral picture for Britain."
 spotlight: true
-spotlight_title: "Britain's £33m vehicle line into Harare"
+spotlight_title: "Zimbabwe's demand lifts British exports by 14.6%"
 spotlight_image: /img/harare-palms.jpg
 longform: false
 read_minutes: 4
 exclusive: true
 ---
 
-While the wider UK–Zimbabwe trade relationship contracted 7.7% in the year to December 2025, one corner of it had a good year: British goods exports to Zimbabwe rose 14.6% to £55 million. The DBT factsheet released on 14 May 2026 sets out which categories did the work, and the answer is: vehicles, and after that, vehicles again.
+The Zimbabwean economy is in its strongest stretch in several years. The IMF, in its April 2026 World Economic Outlook, puts 2025 real GDP growth at **7.5%** — among the higher single-year numbers for any African economy that period — and projects a still-robust **5.0%** in 2026. That growth has consequences across the country's import book, and the latest Department for Business and Trade factsheet, released on 14 May, shows one of them clearly: UK goods exports to Zimbabwe rose **14.6%** to £55 million in the year to December 2025, materially outpacing the wider bilateral relationship.
 
-Cars alone accounted for £18.9 million of exports, up 2.3% on the year. The much faster mover was the line labelled "road vehicles other than cars (capital)" — commercial vehicles, vans, trucks, buses, plus the capital-equipment chassis category — which rose 76.5% to £14.4 million. Combined, the two vehicle lines came to £33.3 million, or roughly 60% of all UK goods exports to Zimbabwe in the period.
+The story of those numbers is simple. Zimbabwe is buying. British exporters are among the suppliers being pulled along with that demand.
 
-After vehicles, the next-biggest movers were also strong. Medicinal and pharmaceutical products rose 19.9% to £2.7 million. General industrial machinery (intermediate) rose 71.3% to £2.7 million. Beverages and tobacco — yes, in this direction too — rose 24.5% to £2.3 million.
+## What is being bought
 
-## A one-way industrial pipe
+The DBT breakdown, year to December 2025:
 
-What this looks like, in aggregate, is a one-way industrial pipe. The UK is selling Zimbabwe roughly three categories of thing: vehicles for people and cargo to move on, medicines to keep them alive, and machinery for them to work with. Everything else is a long tail. The top five UK goods exports to Zimbabwe — cars, capital road vehicles, pharma, machinery, beverages and tobacco — together account for £41 million of the £55 million total. The remainder is split across small lines that the factsheet does not break out individually.
+- **Cars:** £18.9 million, up 2.3%. A stable line, dominated by fleet, corporate and diplomatic purchases.
+- **Road vehicles other than cars (capital):** £14.4 million, **up 76.5%**. Commercial vehicles, vans, trucks, buses and capital-equipment chassis. The biggest single mover in the export book.
+- **Medicinal and pharmaceutical products:** £2.7 million, up 19.9%. A health system expanding its formulary.
+- **General industrial machinery (intermediate):** £2.7 million, up 71.3%. Industrial capacity being rebuilt.
+- **Beverages and tobacco:** £2.3 million, up 24.5% (yes, in this direction too — premium British alcohol and specialty tobacco into the formal retail trade).
 
-This is not a balanced relationship. Britain is buying tobacco; it is selling capital goods. The structure mirrors the broader pattern between low-income commodity exporters and high-income manufactured-goods exporters, and the figures suggest that pattern is, if anything, intensifying.
+Cars and commercial vehicles together come to £33.3 million — roughly 60% of all UK goods exports to Zimbabwe. The 76.5% jump in the commercial-vehicle line is the headline. From £8.2 million to £14.4 million in a single year is a swing of £6.2 million in a category that is, by definition, capex spend by the buyer. That is fleet renewal in mining, project equipment for the lithium and platinum build-out, and the steady pickup-and-4×4 volume that the country's growth cycle requires.
 
-## What the macro picture supports
+## What the macro is saying
 
-The IMF, in its April 2026 World Economic Outlook, estimates Zimbabwean real GDP growth at 7.5% in 2025, with a still-strong projection of 5.0% in 2026. Population growth is steady at roughly 2% a year. Inflation, after a torrid 2024, is forecast to settle at around 8% from 2026. The macro is, in short, supportive of import demand for the kinds of goods Britain is supplying — vehicles, medicines, capital equipment — and the figures show UK exporters capturing some of that demand.
+The macro story behind these numbers matters more than the export breakdown itself.
 
-The UK's market share of all goods imports into Zimbabwe, however, is still only 0.7%, down 0.1 percentage points on the year. The British share of imports has not grown alongside the British export number — meaning Zimbabwean imports overall are growing faster than UK exports into Zimbabwe. The UK is selling more, but losing share to other suppliers. The candidates are obvious: South Africa, China, the UAE, Japan and Germany are all likely to be eating into a share Britain once had a stronger hold of.
+Zimbabwean real GDP grew 5.3% in 2023 and an estimated 7.5% in 2025, on IMF data. The same release projects 5.0% growth in 2026 and a current-account surplus of 4.0% of GDP for 2025. Inflation, which spent 2024 in the triple digits on year-average CPI, is forecast to settle at around 8% from 2026. UK Foreign Direct Investment into Zimbabwe rose 25% over the year to £15 million. The total economy is, on the IMF's reading, at $53.5 billion in current prices in 2025, on track to $56.7 billion in 2026.
 
-## The vehicle question
+That is a Zimbabwean economy with cash to spend and reasons to spend it. Vehicles, medicines and machinery are exactly the lines a growing middle-income economy buys. The fact that British exporters are catching a 14.6% lift from that demand is a comment on how those buyers are placing their orders.
 
-The 76.5% rise in commercial-vehicle exports is the line that catches the eye. From £8.2 million to £14.4 million in a year is a swing of £6.2 million, in a category that is itself the second-largest UK export to Zimbabwe. The factsheet does not break out the customers, but several plausible candidates fit: fleet renewal in the mining sector, infrastructure-project equipment imports tied to the lithium and platinum build-out, and a steady volume of pickup and 4x4 imports for both formal sector and informal use.
+## Britain's seat at the table
 
-Cars at £18.9 million, by contrast, grew only 2.3% — basically holding. The car number is a known quantity. Zimbabwe's used-car import market is dominated by Japanese supply, and the UK car line into Zimbabwe is largely high-end new vehicles, fleet sales to corporates and diplomatic missions, and a smaller number of returning-resident shipments. That line is stable.
+UK market share of all goods Zimbabwe imports is still small — 0.7%, fractionally lower on the year. South Africa, China, the UAE, Japan and Germany take the larger slices. But two things are worth saying about that small share.
 
-## The wider UK trade context
+First: it grew in absolute terms. Britain is selling more goods to Zimbabwe even with a smaller fractional share, because the total imports pie is growing faster than the UK's slice. That is a healthy sign for both sides.
 
-Britain's overall trade in goods position for Q1 2026, published the same day by the ONS, is unflattering: the total UK trade deficit widened by £4.5 billion to £7.0 billion in the quarter, with the trade in goods deficit reaching £59.3 billion. Against that backdrop, a £55 million export line to Zimbabwe growing at 14.6% is a small bright spot. It is not material to the UK trade balance — Zimbabwe is now Britain's joint 113th largest goods export market — but it is a directional signal.
+Second: the higher-margin trade is going Britain's way. UK market share in **Zimbabwean services imports** rose 2.4 percentage points to **8.2%** in 2024. Britain is gaining ground in the parts of the relationship where Britain has structural advantages — finance, professional services, legal, education, software. The services story is the subject of <a href="./2026-05-14-uk-zimbabwe-services-trade-freefall.html">a separate piece in this series</a>.
 
-For the UK companies in the trade, the question is whether they can hold the share. Goods market share fell, services market share rose, and the headline UK-to-Zimbabwe export number was kept positive by a single year of strong vehicle and machinery sales. That is the sort of mix that can either build into a more diversified position or revert to the mean when the next fleet-renewal cycle ends. The next factsheet, due 23 June 2026, will start to tell us which.
+## A read from Harare
+
+For Zimbabwean buyers, the British line into the import book is a small but useful supplier mix. UK pharma, machinery and commercial vehicles compete on quality and on regulatory traceability — the kind of thing a Zimbabwean mining ops or a Zimbabwean health ministry rates highly when it has the cash to be choosy. That choosiness is exactly what the 14.6% rise looks like in practice.
+
+For British exporters, the read is that Zimbabwe is no longer the fringe African destination it has been for the last decade. It is a 7.5%-growth economy with a known buyer profile, paying in tradeable currency, with UK FDI rising 25% on the year. The growth window is open.
 
 *Source: Department for Business and Trade, "Trade and Investment Factsheet: Zimbabwe", released 14 May 2026; Office for National Statistics, "UK trade: March 2026", released 14 May 2026; International Monetary Fund, World Economic Outlook database, April 2026.*

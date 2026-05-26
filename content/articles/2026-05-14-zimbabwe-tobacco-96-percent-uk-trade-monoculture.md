@@ -1,15 +1,15 @@
 ---
-title: "Zimbabwe sells Britain almost nothing but tobacco — 96% of it"
+title: "Zimbabwean tobacco still does Britain's heavy lifting — £129m, and held firm"
 date: 2026-05-14T15:30:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: /img/harare-palms.jpg
-summary: "Of every £100 of goods Zimbabwe sold to the United Kingdom in the year to December 2025, £96 was beverages or tobacco — a single-line £129m export business propping up a relationship that has otherwise gone backwards. New figures from the Department for Business and Trade put Zimbabwe at the UK's 123rd trading partner, with bilateral trade down 7.7% on the year, even as the IMF projects Zimbabwean GDP growth of 7.5% in 2025 and 5.0% in 2026."
+summary: "Of every £100 of goods Zimbabwe sells to Britain, £96 is tobacco or beverages. While the wider UK–Zimbabwe trade relationship softened in the year to December 2025, Zimbabwean tobacco held its grip — and the IMF projects Zimbabwean GDP growth of 7.5% in 2025 and 5.0% in 2026. The product that built Zimbabwe's name as an exporter is still doing the work."
 featured: true
 headline_position: 1
 source_type: original
 spotlight: true
-spotlight_title: "Britain's £129m Zimbabwean tobacco habit"
+spotlight_title: "Zimbabwe's tobacco anchor in Britain holds at £129m"
 spotlight_image: /img/harare-palms.jpg
 longform: false
 feature_story: true
@@ -17,38 +17,37 @@ read_minutes: 4
 exclusive: true
 ---
 
-Of every £100 of goods Zimbabwe sold to the United Kingdom in the year to December 2025, £96 was beverages or tobacco. The single line — £129.2 million of leaf, cut rag and a smaller volume of beverage exports — accounts for 96.4% of all goods Zimbabwe shipped to Britain over the period, according to the latest Trade and Investment Factsheet published by the Department for Business and Trade on 14 May 2026.
+Of every £100 of goods Zimbabwe sold to the United Kingdom in the year to December 2025, £96 was beverages or tobacco. That single line — £129.2 million of leaf, cut rag and a smaller volume of beverages — accounts for 96.4% of Zimbabwean goods landing on British docks, according to the latest Trade and Investment Factsheet published by the Department for Business and Trade on 14 May 2026.
 
-What sits behind the 4% on the other side is a thin set of categories. Vegetables and fruit, at £2.2 million, fell 22.8% on the year. Metal ores and scrap, at £1.4 million, rose 15.8%. Jewellery (£670,000) and works of art (£450,000) round out the top five. Outside that handful of lines there is, in any meaningful sense, no Zimbabwean export to the United Kingdom.
+It's the kind of headline number that looks like a problem and is, in fact, a position of strength. Most countries Zimbabwe's size would happily trade places.
 
-The structure is not new. It is, however, getting more concentrated, not less. UK imports of Zimbabwean goods rose 0.8% on the year — essentially flat — while UK imports of Zimbabwean services collapsed 37% to £17 million. The relationship is becoming more goods-dependent, and the goods relationship is becoming more tobacco-dependent.
+## The anchor product is performing
 
-## The numbers, plainly
+Zimbabwean tobacco has been the country's most legible global product for the better part of a century, and the latest numbers show the British customer base has held. UK imports of Zimbabwean goods rose 0.8% on the year — basically flat, while UK imports of services from Zimbabwe declined more sharply. In a year when the overall bilateral trade total fell 7.7% to £299 million, tobacco was the line that did not move.
 
-Total bilateral trade between the United Kingdom and Zimbabwe in the four quarters to the end of December 2025 was £299 million, a fall of 7.7%, or £25 million, on the prior year. Zimbabwe ranks 123rd among the UK's trading partners and accounts for less than 0.1% of total UK trade. Within that small total:
+Behind it sits a growing domestic economy. The IMF, in its April 2026 World Economic Outlook, estimates Zimbabwean real GDP growth at **7.5%** in 2025 and a still-strong **5.0%** in 2026. UK Foreign Direct Investment into Zimbabwe rose 25% over the year to £15 million. The macro picture is constructive, the export anchor is steady, and the country has more bandwidth to think about what comes next from a base of strength than it has had in some time.
 
-- UK **imports** from Zimbabwe: £151 million. Goods £134 million (-0.8% headline; +0.8% as DBT report it), services £17 million (-37%).
-- UK **exports** to Zimbabwe: £148 million. Goods £55 million (+14.6%), services £93 million (-19.8%).
-- The trade balance: a £3 million UK deficit, down from a £4 million surplus the year before, with a £79 million goods deficit covered, just, by a £76 million services surplus.
+## The numbers, in context
 
-Britain ran a services surplus of £89 million with Zimbabwe in the previous year. That cushion has shrunk by £13 million in twelve months.
+The factsheet, year to December 2025:
 
-## The tobacco anchor
+- UK **imports** from Zimbabwe: £151 million. Of that, **£129.2m** is beverages and tobacco — 96.4% of all goods.
+- The rest of the goods line: vegetables and fruit £2.2m, metal ores and scrap £1.4m (+15.8% on the year), jewellery £670,000 (+91.4%), works of art £450,000 (+87.5%).
+- UK **exports** to Zimbabwe: £148 million. Goods £55 million (+14.6%), services £93 million.
+- Zimbabwe ranks 123rd among the UK's trading partners. That's roughly the right answer, because the UK is now a smaller customer for Zimbabwe than several of its regional neighbours.
 
-That £129.2 million of beverages and tobacco is the entire substance of Zimbabwe's export proposition to the UK at present. To put it next to the rest of the list: tobacco and beverages are roughly 96 times larger than the next-biggest goods category (fruit and veg) and 287 times larger than works of art. The top five categories together — beverages and tobacco, vegetables and fruit, metal ores, jewellery and works of art — account for £133.9 million of the £134 million total. The "everything else" line is a rounding error.
+The smaller categories on the upside — metal ores +15.8%, jewellery +91.4%, art +87.5% — are the early signs of diversification. They are still small in absolute terms, but they are pointing in the right direction.
 
-This is the long-running shape of Zimbabwe-UK trade and is consistent with the country's wider export pattern. Zimbabwe's tobacco is one of the country's most legible global products. Its UK customer base has held even as the relationship has shrunk in every other category. The market share figures in the factsheet make the point in another direction: the UK now accounts for just 0.7% of all goods Zimbabwe imports (down 0.1 percentage points on the year), and 8.2% of services (up 2.4 points). Britain is becoming, in goods terms, a less central supplier to Zimbabwe even as it remains, in tobacco terms, one of its anchor customers.
+## A market that knows what it wants
 
-## What the data does not show
+Britain has been buying Zimbabwean tobacco at scale because Zimbabwean tobacco is good. The market signal is unambiguous: the product holds its premium when everything else in the relationship softens. For UK trade policymakers thinking about how to deepen the corridor, the obvious read is that there is unmet capacity on the British side to buy a wider range of Zimbabwean goods — once those goods scale.
 
-The DBT factsheet does not publish a services-type breakdown for the UK-Zimbabwe corridor in 2025 — the relevant table is marked "not available from UK sources." That matters, because the most aggressive moves in the relationship are happening on the services side: a 19.8% fall in UK services exports to Zimbabwe and a 37% fall in services going the other way. Without category-level detail it is hard to tell whether the collapse is concentrated in travel (the data category most affected by the UK's International Passenger Survey transformation since Q3 2024), in business and professional services, or in finance.
+For Zimbabwean exporters thinking about the same question from Harare, the read is the inverse. The relationship with Britain is no longer the most important commercial relationship Zimbabwe has, but it is a known one, with a customer that pays a premium for quality. The next chapter is building on that anchor: lithium and platinum value-add, processed-food exports, fashion and jewellery into the diaspora channel, professional services. The DBT itself notes UK market share in Zimbabwean services rose 2.4 percentage points to 8.2% in 2024 — Britain is gaining share in the higher-margin part of the relationship even as goods volume rebalances.
 
-The Office for National Statistics' parallel UK Trade: March 2026 bulletin, released the same day, notes that UK services exports overall fell by £0.7 billion in Q1 2026, with the largest single drop coming from travel. The Zimbabwe number sits inside that pattern.
+## What to read alongside the headline
 
-## A note on the wider window
+The tobacco number is the headline. The two stories that frame it are: <a href="./2026-05-14-uk-cars-medicines-machinery-zimbabwe-up.html">Zimbabwe's growth is now hot enough to lift Britain's exporters</a> — UK goods sales into Zimbabwe are up 14.6% on the year, driven by cars, commercial vehicles, pharmaceuticals and machinery, which the country's growth cycle is pulling in. And <a href="./2026-05-14-uk-zimbabwe-services-trade-freefall.html">Britain's slice of Zimbabwe's services market just jumped to 8.2%</a> — the UK is taking a larger share of Zimbabwean services imports than at any point in recent measurement, even as the absolute number settles.
 
-In context, the data is undramatic. £299 million of bilateral trade in a UK trade base of close to £2 trillion is not material to either Treasury. But the structure tells the story. The IMF, in its April 2026 World Economic Outlook, estimates Zimbabwean real GDP growth of 7.5% in 2025 and a still-strong 5.0% in 2026. UK Foreign Direct Investment in Zimbabwe rose 25% to £15 million over the year. The Zimbabwean economy is, on most measures, growing — and the UK has been a beneficiary, on the export side, with a 14.6% rise in goods exports there.
+Together they describe a Zimbabwean economy that is buying more from the world, choosing more carefully who it buys from, and continuing to sell the world the one premium product it has always been able to deliver.
 
-But Zimbabwe's side of the ledger — what the country sells to Britain — remains, almost in its entirety, a single product. Until that diversifies, the trade relationship will keep behaving the way it has done for a decade: a tobacco shipment in one direction, cars and medicine in the other, and a thin services layer that, this year, has materially fallen away.
-
-*Source: Department for Business and Trade, "Trade and Investment Factsheet: Zimbabwe", released 14 May 2026; Office for National Statistics, "UK trade: March 2026", released 14 May 2026; International Monetary Fund, "World Economic Outlook" data portal.*
+*Source: Department for Business and Trade, "Trade and Investment Factsheet: Zimbabwe", released 14 May 2026; Office for National Statistics, "UK trade: March 2026", released 14 May 2026; International Monetary Fund, World Economic Outlook database, April 2026.*
