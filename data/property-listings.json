@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-27T10:19:44.998677+00:00",
+  "fetched_at": "2026-05-27T16:11:57.791661+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -130,15 +130,6 @@
       "baths": "3"
     },
     {
-      "title": "Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole",
-      "url": "https://www.property.co.zw/for-sale/townhouses-riddl245424",
-      "price": "USD 240,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/e7/62/09/e76209e1-9fca-4b90-8432-eb719ea415fe_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "Superb opportunity in Helensvale",
       "url": "https://www.property.co.zw/for-sale/townhouses-rws246292",
       "price": "USD 280,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/09/13/c7/0913c778-ecbd-4e0d-9d84-0cf5d724cfbc_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
+    },
+    {
+      "title": "Finish To Taste Incomplete Property In Kutandara",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp224747",
+      "price": "USD 90,000",
+      "location": "Tynwald, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/05/ee/73/05ee73c1-937e-450f-8ec6-6314853333ed_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     }
   ]
 }

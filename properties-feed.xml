@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 27 May 2026 10:40:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 16:12:07 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -187,18 +187,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/061e4ac493e5.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 240,000 — Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole (Emerald Hill, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/6aff0e9d1dec.html</link>
-      <description>USD 240,000 — Emerald Hill, Harare West. 3 beds, 2 baths. Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 26 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/6aff0e9d1dec.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/6aff0e9d1dec.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/6aff0e9d1dec.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/6aff0e9d1dec.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 280,000 — Superb opportunity in Helensvale (Helensvale, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/24469c161b22.html</link>
       <description>USD 280,000 — Helensvale, Harare North. 4 beds, 4 baths. Superb opportunity in Helensvale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/a2693015ed60.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a2693015ed60.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/a2693015ed60.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 90,000 — Finish To Taste Incomplete Property In Kutandara (Tynwald, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/51ba06edb4ef.html</link>
+      <description>USD 90,000 — Tynwald, Harare West. 3 beds, 2 baths. Finish To Taste Incomplete Property In Kutandara. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 26 May 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/51ba06edb4ef.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/51ba06edb4ef.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/51ba06edb4ef.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/51ba06edb4ef.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
