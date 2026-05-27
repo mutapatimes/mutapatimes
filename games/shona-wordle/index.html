@@ -1,0 +1,1007 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shona Wordle | The Mutapa Times</title>
+  <link rel="canonical" href="https://www.mutapatimes.com/games/shona-wordle/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="A daily six-letter Shona word puzzle from The Mutapa Times. A new word every midnight UTC. Free, no signup. Play in your browser, share your score.">
+  <meta name="robots" content="index, follow">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shona Wordle | The Mutapa Times">
+  <meta property="og:description" content="A daily six-letter Shona word puzzle. Free, no signup. Play in your browser, share your score.">
+  <meta property="og:url" content="https://www.mutapatimes.com/games/shona-wordle/">
+  <meta property="og:image" content="https://www.mutapatimes.com/img/harare-palms.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@mutapatimes">
+  <meta name="twitter:title" content="Shona Wordle | The Mutapa Times">
+  <meta name="twitter:description" content="A daily six-letter Shona word puzzle.">
+  <meta name="twitter:image" content="https://www.mutapatimes.com/img/harare-palms.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Shona Wordle",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Web",
+  "publisher": {"@type": "Organization", "name": "The Mutapa Times", "url": "https://www.mutapatimes.com"},
+  "description": "A daily six-letter Shona word puzzle by The Mutapa Times.",
+  "url": "https://www.mutapatimes.com/games/shona-wordle/",
+  "inLanguage": ["en","sn"]
+}
+</script>
+
+<style>
+:root {
+  --tile-correct: #4d8b3a;
+  --tile-present: #c9a236;
+  --tile-absent:  #3a3a3a;
+  --tile-empty-bg: #fff;
+  --tile-empty-border: #d0cfc8;
+  --tile-active-border: #8a8a82;
+  --keyboard-bg: #d4d3cd;
+  --keyboard-text: #1a1a1a;
+}
+
+html, body { background: #fbfaf6; }
+body.sw-page {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink, #121212);
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+/* ─── HEADER (light, brand-aligned) ─── */
+.sw-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--hairline, #e8e6df);
+  background: #fff;
+}
+.sw-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: -0.01em;
+  color: var(--ink, #121212);
+  text-decoration: none;
+}
+.sw-brand em { font-style: italic; }
+.sw-actions { display: flex; gap: 8px; align-items: center; }
+.sw-iconbtn {
+  background: none;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-mid, #4a4a44);
+  transition: background-color 0.15s;
+}
+.sw-iconbtn:hover, .sw-iconbtn:focus-visible { background: #f3f1eb; outline: 0; }
+
+.sw-hero {
+  text-align: center;
+  padding: 16px 18px 8px;
+}
+.sw-eyebrow {
+  font-size: 0.65em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent, #c41e1e);
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.sw-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(1.5em, 5vw, 2em);
+  letter-spacing: -0.02em;
+  color: var(--ink, #121212);
+  margin: 0 0 4px;
+}
+.sw-meta {
+  font-size: 0.85em;
+  color: var(--text-mid, #4a4a44);
+  margin: 0;
+}
+
+/* ─── BOARD ─── */
+.sw-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 12px 0;
+  gap: 14px;
+}
+.sw-board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 6px;
+  width: min(100%, 360px);
+  aspect-ratio: 6 / 6;
+}
+.sw-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+.sw-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tile-empty-bg);
+  border: 2px solid var(--tile-empty-border);
+  border-radius: 4px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.4em, 6vw, 2em);
+  text-transform: uppercase;
+  color: var(--ink, #121212);
+  aspect-ratio: 1 / 1;
+  user-select: none;
+  transition: transform 0.1s ease, border-color 0.1s, background-color 0.2s, color 0.2s;
+}
+.sw-tile.is-filled { border-color: var(--tile-active-border); }
+.sw-tile.is-correct { background: var(--tile-correct); border-color: var(--tile-correct); color: #fff; }
+.sw-tile.is-present { background: var(--tile-present); border-color: var(--tile-present); color: #fff; }
+.sw-tile.is-absent  { background: var(--tile-absent);  border-color: var(--tile-absent);  color: #fff; }
+.sw-tile.is-pop { animation: sw-pop 0.12s ease; }
+@keyframes sw-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.sw-row.is-shake { animation: sw-shake 0.32s ease; }
+@keyframes sw-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+.sw-row.is-reveal .sw-tile {
+  animation: sw-flip 0.5s ease forwards;
+}
+.sw-row.is-reveal .sw-tile:nth-child(1) { animation-delay: 0.00s; }
+.sw-row.is-reveal .sw-tile:nth-child(2) { animation-delay: 0.18s; }
+.sw-row.is-reveal .sw-tile:nth-child(3) { animation-delay: 0.36s; }
+.sw-row.is-reveal .sw-tile:nth-child(4) { animation-delay: 0.54s; }
+.sw-row.is-reveal .sw-tile:nth-child(5) { animation-delay: 0.72s; }
+.sw-row.is-reveal .sw-tile:nth-child(6) { animation-delay: 0.90s; }
+@keyframes sw-flip {
+  0%   { transform: rotateX(0deg); }
+  50%  { transform: rotateX(90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+.sw-toast {
+  position: fixed;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  background: var(--ink, #121212);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 50;
+  text-align: center;
+  max-width: calc(100% - 40px);
+}
+.sw-toast.is-on { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ─── KEYBOARD ─── */
+.sw-kb {
+  width: 100%;
+  max-width: 520px;
+  margin: 6px auto 14px;
+  padding: 0 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  user-select: none;
+}
+.sw-kb-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.sw-key {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 52px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--keyboard-bg);
+  color: var(--keyboard-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.15s, color 0.15s, transform 0.05s;
+}
+.sw-key:active { transform: scale(0.96); }
+.sw-key.is-wide { flex-grow: 1.6; font-size: 0.75em; }
+.sw-key.is-correct { background: var(--tile-correct); color: #fff; }
+.sw-key.is-present { background: var(--tile-present); color: #fff; }
+.sw-key.is-absent  { background: var(--tile-absent);  color: #fff; }
+
+/* ─── MODAL ─── */
+.sw-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+}
+.sw-modal-backdrop.is-on { display: flex; }
+.sw-modal {
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px 14px 0 0;
+  padding: 22px 22px 28px;
+  box-shadow: 0 -8px 40px rgba(0,0,0,0.15);
+  max-height: 92vh;
+  overflow-y: auto;
+}
+@media (min-width: 520px) {
+  .sw-modal-backdrop { align-items: center; }
+  .sw-modal { border-radius: 14px; margin: 0 16px; }
+}
+.sw-modal h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 0 0 6px;
+  color: var(--ink, #121212);
+}
+.sw-modal h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.66em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light, #8b8678);
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
+.sw-modal p { font-size: 0.95em; line-height: 1.55; color: var(--text-mid, #4a4a44); margin: 0 0 12px; }
+.sw-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-mid, #4a4a44);
+}
+.sw-modal-inner { position: relative; }
+
+.sw-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 8px 0 6px;
+}
+.sw-stat {
+  text-align: center;
+  padding: 8px 4px;
+}
+.sw-stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 1.8em;
+  line-height: 1.1;
+  color: var(--ink, #121212);
+}
+.sw-stat-lbl {
+  font-size: 0.66em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light, #8b8678);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.sw-dist { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+.sw-dist-row { display: flex; align-items: center; gap: 8px; font-size: 0.85em; font-weight: 600; }
+.sw-dist-i { width: 14px; color: var(--text-mid, #4a4a44); text-align: right; }
+.sw-dist-bar {
+  flex: 0 0 auto;
+  min-width: 28px;
+  height: 22px;
+  background: var(--keyboard-bg);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8px;
+  color: var(--ink, #121212);
+}
+.sw-dist-bar.is-active { background: var(--tile-correct); color: #fff; }
+
+.sw-actions-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.sw-btn {
+  flex: 1 1 auto;
+  padding: 12px 16px;
+  border: 1px solid var(--rule, #d4d4d4);
+  background: #fff;
+  color: var(--ink, #121212);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.92em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.05s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.sw-btn:active { transform: scale(0.98); }
+.sw-btn.is-primary { background: var(--ink, #121212); color: #fff; border-color: var(--ink, #121212); }
+.sw-btn.is-primary:hover { background: var(--accent, #c41e1e); border-color: var(--accent, #c41e1e); }
+
+.sw-answer {
+  background: #fbfaf6;
+  border: 1px solid var(--hairline, #e8e6df);
+  border-left: 3px solid var(--accent, #c41e1e);
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+.sw-answer strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2em;
+  color: var(--ink, #121212);
+}
+
+.sw-howto-grid {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 14px;
+}
+.sw-howto-ex {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  max-width: 240px;
+}
+.sw-howto-ex .sw-tile { font-size: 1em; aspect-ratio: 1 / 1; }
+
+.sw-footer {
+  padding: 16px 18px 22px;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--text-light, #8b8678);
+  border-top: 1px solid var(--hairline, #e8e6df);
+}
+.sw-footer a {
+  color: var(--accent, #c41e1e);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+.sw-footer a:hover { color: var(--ink, #121212); }
+</style>
+</head>
+<body class="sw-page">
+
+<header class="sw-top">
+  <a href="/" class="sw-brand"><em>The Mutapa Times</em></a>
+  <div class="sw-actions">
+    <button class="sw-iconbtn" id="btnHelp" aria-label="How to play">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+    <button class="sw-iconbtn" id="btnStats" aria-label="Stats">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6"  y1="20" x2="6"  y2="14"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="sw-hero">
+  <p class="sw-eyebrow">Daily Puzzle</p>
+  <h1 class="sw-title">Shona Wordle</h1>
+  <p class="sw-meta" id="dayMeta">A six-letter Shona word, every day at midnight UTC.</p>
+</section>
+
+<main class="sw-main">
+  <div class="sw-board" id="board" aria-label="Guesses"></div>
+  <div class="sw-toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="sw-kb" id="keyboard" aria-label="Keyboard"></div>
+</main>
+
+<footer class="sw-footer">
+  An original game from <a href="/">The Mutapa Times</a>.
+  Spotted a word that shouldn&rsquo;t be in the list? <a href="mailto:news@mutapatimes.com?subject=Shona%20Wordle%20wordlist">Tell us</a>.
+</footer>
+
+<!-- Help / How-to-play modal -->
+<div class="sw-modal-backdrop" id="modalHelp" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+  <div class="sw-modal">
+    <div class="sw-modal-inner">
+      <button class="sw-modal-close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 id="helpTitle">How to play</h2>
+      <p>Guess the <strong>six-letter Shona word</strong> in six tries. Each guess must itself be a six-letter Shona word. After every guess the colour of each tile tells you how close you were.</p>
+
+      <h3>Examples</h3>
+      <div class="sw-howto-grid">
+        <div class="sw-howto-ex">
+          <div class="sw-tile is-correct">M</div>
+          <div class="sw-tile is-filled">U</div>
+          <div class="sw-tile is-filled">F</div>
+          <div class="sw-tile is-filled">A</div>
+          <div class="sw-tile is-filled">R</div>
+          <div class="sw-tile is-filled">O</div>
+        </div>
+        <p><strong>M</strong> is in the word and in the right place.</p>
+
+        <div class="sw-howto-ex">
+          <div class="sw-tile is-filled">M</div>
+          <div class="sw-tile is-present">U</div>
+          <div class="sw-tile is-filled">S</div>
+          <div class="sw-tile is-filled">O</div>
+          <div class="sw-tile is-filled">R</div>
+          <div class="sw-tile is-filled">O</div>
+        </div>
+        <p><strong>U</strong> is in the word but in the wrong place.</p>
+
+        <div class="sw-howto-ex">
+          <div class="sw-tile is-filled">M</div>
+          <div class="sw-tile is-filled">U</div>
+          <div class="sw-tile is-absent">T</div>
+          <div class="sw-tile is-filled">O</div>
+          <div class="sw-tile is-filled">R</div>
+          <div class="sw-tile is-filled">O</div>
+        </div>
+        <p><strong>T</strong> is not in the word at all.</p>
+
+      <h3>Shona spelling</h3>
+      <p>Standard Shona uses the same a&ndash;z letters as English with no accents. Digraphs (<strong>nh</strong>, <strong>mh</strong>, <strong>vh</strong>, <strong>sv</strong>, <strong>dz</strong>, <strong>bv</strong>) count as their separate letters here.</p>
+
+      <h3>The wordlist</h3>
+      <p>The starter pool is small and edited by the Mutapa Times newsroom. We add words steadily. If something looks wrong, write to <a href="mailto:news@mutapatimes.com?subject=Shona%20Wordle%20wordlist">news@mutapatimes.com</a>.</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Stats / end-of-game modal -->
+<div class="sw-modal-backdrop" id="modalEnd" role="dialog" aria-modal="true" aria-labelledby="endTitle">
+  <div class="sw-modal">
+    <div class="sw-modal-inner">
+      <button class="sw-modal-close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 id="endTitle">Statistics</h2>
+      <div class="sw-stats">
+        <div class="sw-stat"><div class="sw-stat-num" id="statPlayed">0</div><div class="sw-stat-lbl">Played</div></div>
+        <div class="sw-stat"><div class="sw-stat-num" id="statWin">0</div><div class="sw-stat-lbl">Win %</div></div>
+        <div class="sw-stat"><div class="sw-stat-num" id="statStreak">0</div><div class="sw-stat-lbl">Streak</div></div>
+        <div class="sw-stat"><div class="sw-stat-num" id="statMax">0</div><div class="sw-stat-lbl">Max</div></div>
+      </div>
+
+      <h3>Guess distribution</h3>
+      <div class="sw-dist" id="dist"></div>
+
+      <div id="endAnswerBlock" hidden>
+        <div class="sw-answer">
+          Today&rsquo;s word: <strong id="endAnswerWord"></strong>
+        </div>
+      </div>
+
+      <div id="endCountdown" class="sw-meta" style="text-align:center;font-size:0.85em;margin:8px 0 0;"></div>
+
+      <div class="sw-actions-row">
+        <button class="sw-btn is-primary" id="btnShare">
+          Share
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:2px;"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </button>
+        <a class="sw-btn" href="/">More from The Mutapa Times</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ─── Constants ─────────────────────────────────────────────────────
+  var WORD_LEN = 6;
+  var MAX_GUESS = 6;
+  // Day 1 = 2026-05-27 (game launch)
+  var EPOCH = Date.UTC(2026, 4, 27);
+  var STORAGE_KEY = 'shonaWordle.v1';
+
+  // ─── DOM refs ──────────────────────────────────────────────────────
+  var boardEl    = document.getElementById('board');
+  var keyboardEl = document.getElementById('keyboard');
+  var toastEl    = document.getElementById('toast');
+  var modalHelp  = document.getElementById('modalHelp');
+  var modalEnd   = document.getElementById('modalEnd');
+  var dayMetaEl  = document.getElementById('dayMeta');
+
+  // ─── State ─────────────────────────────────────────────────────────
+  var state = {
+    answer: '',
+    dayIndex: 0,
+    guesses: [],   // array of strings
+    current: '',
+    status: 'playing', // 'playing' | 'won' | 'lost'
+    keyState: {},  // letter -> 'correct' | 'present' | 'absent'
+    answers: [],
+    validSet: null
+  };
+
+  var stats = loadStats();
+
+  // ─── Storage ───────────────────────────────────────────────────────
+  function loadStats () {
+    try {
+      var s = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      if (!s || s.version !== 1) s = {};
+      return {
+        version: 1,
+        played: s.played || 0,
+        wins:   s.wins   || 0,
+        streak: s.streak || 0,
+        maxStreak: s.maxStreak || 0,
+        distribution: s.distribution || [0,0,0,0,0,0],
+        lastDay: s.lastDay || -1,
+        game: s.game || null  // { dayIndex, guesses, status }
+      };
+    } catch (e) {
+      return { version: 1, played: 0, wins: 0, streak: 0, maxStreak: 0,
+               distribution: [0,0,0,0,0,0], lastDay: -1, game: null };
+    }
+  }
+  function saveStats () {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(stats)); } catch (e) {}
+  }
+
+  // ─── Date helpers ──────────────────────────────────────────────────
+  function todayDayIndex () {
+    var now = new Date();
+    var todayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    return Math.max(0, Math.floor((todayUTC - EPOCH) / 86400000));
+  }
+  function formatDate (dayIndex) {
+    var d = new Date(EPOCH + dayIndex * 86400000);
+    var months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+    return months[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+  }
+  function msUntilUTCMidnight () {
+    var now = new Date();
+    var next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1);
+    return next - now.getTime();
+  }
+  function formatCountdown (ms) {
+    var s = Math.floor(ms / 1000);
+    var h = Math.floor(s / 3600); s -= h * 3600;
+    var m = Math.floor(s / 60);   s -= m * 60;
+    return ('0'+h).slice(-2) + ':' + ('0'+m).slice(-2) + ':' + ('0'+s).slice(-2);
+  }
+
+  // ─── Board rendering ───────────────────────────────────────────────
+  function renderBoard () {
+    boardEl.innerHTML = '';
+    for (var r = 0; r < MAX_GUESS; r++) {
+      var row = document.createElement('div');
+      row.className = 'sw-row';
+      row.dataset.row = r;
+      for (var c = 0; c < WORD_LEN; c++) {
+        var t = document.createElement('div');
+        t.className = 'sw-tile';
+        t.dataset.row = r;
+        t.dataset.col = c;
+        row.appendChild(t);
+      }
+      boardEl.appendChild(row);
+    }
+    // Populate completed guesses with their colours.
+    for (var i = 0; i < state.guesses.length; i++) {
+      paintGuess(i, state.guesses[i], false);
+    }
+    // Paint current in-progress guess.
+    paintCurrent();
+  }
+  function paintCurrent () {
+    var rowIdx = state.guesses.length;
+    if (rowIdx >= MAX_GUESS) return;
+    var row = boardEl.children[rowIdx];
+    for (var c = 0; c < WORD_LEN; c++) {
+      var t = row.children[c];
+      var ch = state.current[c] || '';
+      t.textContent = ch;
+      t.classList.toggle('is-filled', !!ch);
+      // Pop animation on the newly-typed letter
+      if (ch && t.dataset.popped !== ch) {
+        t.classList.remove('is-pop');
+        // trigger reflow
+        // eslint-disable-next-line no-unused-expressions
+        t.offsetWidth;
+        t.classList.add('is-pop');
+        t.dataset.popped = ch;
+      }
+      if (!ch) {
+        t.dataset.popped = '';
+      }
+    }
+  }
+  function paintGuess (rowIdx, guess, animate) {
+    var row = boardEl.children[rowIdx];
+    var result = evaluate(guess, state.answer);
+    for (var c = 0; c < WORD_LEN; c++) {
+      var t = row.children[c];
+      t.textContent = guess[c];
+      t.classList.remove('is-correct','is-present','is-absent','is-filled');
+      t.classList.add('is-' + result[c]);
+    }
+    if (animate) {
+      row.classList.add('is-reveal');
+    }
+  }
+
+  // ─── Letter evaluation (handles duplicates correctly) ──────────────
+  function evaluate (guess, answer) {
+    var res = new Array(WORD_LEN).fill('absent');
+    var counts = {};
+    for (var i = 0; i < WORD_LEN; i++) {
+      counts[answer[i]] = (counts[answer[i]] || 0) + 1;
+    }
+    // Pass 1: mark correct
+    for (var i2 = 0; i2 < WORD_LEN; i2++) {
+      if (guess[i2] === answer[i2]) {
+        res[i2] = 'correct';
+        counts[guess[i2]]--;
+      }
+    }
+    // Pass 2: mark present
+    for (var i3 = 0; i3 < WORD_LEN; i3++) {
+      if (res[i3] === 'correct') continue;
+      if (counts[guess[i3]] > 0) {
+        res[i3] = 'present';
+        counts[guess[i3]]--;
+      }
+    }
+    return res;
+  }
+
+  // ─── Keyboard rendering ────────────────────────────────────────────
+  var KB_ROWS = [
+    'qwertyuiop'.split(''),
+    'asdfghjkl'.split(''),
+    ['enter'].concat('zxcvbnm'.split(''), ['back'])
+  ];
+  function renderKeyboard () {
+    keyboardEl.innerHTML = '';
+    KB_ROWS.forEach(function (row) {
+      var rowEl = document.createElement('div');
+      rowEl.className = 'sw-kb-row';
+      row.forEach(function (k) {
+        var btn = document.createElement('button');
+        btn.className = 'sw-key';
+        btn.dataset.key = k;
+        if (k === 'enter') { btn.classList.add('is-wide'); btn.textContent = 'ENTER'; }
+        else if (k === 'back') { btn.classList.add('is-wide'); btn.innerHTML = '⌫'; }
+        else { btn.textContent = k; }
+        btn.addEventListener('click', function () {
+          handleInput(k);
+        });
+        rowEl.appendChild(btn);
+      });
+      keyboardEl.appendChild(rowEl);
+    });
+  }
+  function paintKeyboard () {
+    var btns = keyboardEl.querySelectorAll('.sw-key');
+    btns.forEach(function (b) {
+      var k = b.dataset.key;
+      if (k.length !== 1) return;
+      b.classList.remove('is-correct','is-present','is-absent');
+      var st = state.keyState[k];
+      if (st) b.classList.add('is-' + st);
+    });
+  }
+  function updateKeyState (guess, result) {
+    var rank = { correct: 3, present: 2, absent: 1, none: 0 };
+    for (var i = 0; i < guess.length; i++) {
+      var k = guess[i], r = result[i];
+      var cur = state.keyState[k] || 'none';
+      if (rank[r] > rank[cur]) state.keyState[k] = r;
+    }
+  }
+
+  // ─── Toast ─────────────────────────────────────────────────────────
+  var toastTimer = null;
+  function toast (msg, ms) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove('is-on');
+    }, ms || 1500);
+  }
+
+  // ─── Input handling ────────────────────────────────────────────────
+  function handleInput (key) {
+    if (state.status !== 'playing') return;
+    if (key === 'enter') { submitGuess(); return; }
+    if (key === 'back')  { state.current = state.current.slice(0, -1); paintCurrent(); return; }
+    if (/^[a-z]$/.test(key) && state.current.length < WORD_LEN) {
+      state.current += key;
+      paintCurrent();
+    }
+  }
+  function submitGuess () {
+    var g = state.current;
+    if (g.length < WORD_LEN) { toast('Not enough letters'); shakeCurrentRow(); return; }
+    if (!state.validSet.has(g)) { toast('Not in word list'); shakeCurrentRow(); return; }
+
+    var rowIdx = state.guesses.length;
+    state.guesses.push(g);
+    paintGuess(rowIdx, g, true);
+    var result = evaluate(g, state.answer);
+    updateKeyState(g, result);
+    // Reveal animation runs ~1.1s; do post-anim work after
+    setTimeout(function () {
+      paintKeyboard();
+      if (g === state.answer) {
+        state.status = 'won';
+        toast(['Inhasi!','Mhanya!','Wakwanisa!','Mafaro!','Yaa!','Hee!'][rowIdx]);
+        finishGame();
+      } else if (state.guesses.length >= MAX_GUESS) {
+        state.status = 'lost';
+        toast(state.answer.toUpperCase(), 4000);
+        finishGame();
+      } else {
+        state.current = '';
+        paintCurrent();
+        persistGame();
+      }
+    }, 1150);
+  }
+  function shakeCurrentRow () {
+    var row = boardEl.children[state.guesses.length];
+    if (!row) return;
+    row.classList.remove('is-shake');
+    row.offsetWidth; // reflow
+    row.classList.add('is-shake');
+  }
+
+  // ─── Persistence ───────────────────────────────────────────────────
+  function persistGame () {
+    stats.game = {
+      dayIndex: state.dayIndex,
+      guesses: state.guesses.slice(),
+      status: state.status
+    };
+    saveStats();
+  }
+  function finishGame () {
+    var won = state.status === 'won';
+    if (stats.lastDay !== state.dayIndex) {
+      stats.played += 1;
+      if (won) {
+        stats.wins += 1;
+        stats.streak = (stats.lastDay === state.dayIndex - 1) ? stats.streak + 1 : 1;
+        if (stats.streak > stats.maxStreak) stats.maxStreak = stats.streak;
+        stats.distribution[state.guesses.length - 1] += 1;
+      } else {
+        stats.streak = 0;
+      }
+      stats.lastDay = state.dayIndex;
+    }
+    persistGame();
+    setTimeout(showStatsModal, 1400);
+  }
+
+  // ─── Stats modal ───────────────────────────────────────────────────
+  var countdownTimer = null;
+  function showStatsModal () {
+    document.getElementById('statPlayed').textContent = stats.played;
+    var winPct = stats.played ? Math.round(100 * stats.wins / stats.played) : 0;
+    document.getElementById('statWin').textContent = winPct;
+    document.getElementById('statStreak').textContent = stats.streak;
+    document.getElementById('statMax').textContent = stats.maxStreak;
+
+    var maxDist = Math.max.apply(null, stats.distribution.concat([1]));
+    var distEl = document.getElementById('dist');
+    distEl.innerHTML = '';
+    for (var i = 0; i < 6; i++) {
+      var r = document.createElement('div');
+      r.className = 'sw-dist-row';
+      var label = document.createElement('div'); label.className = 'sw-dist-i'; label.textContent = (i + 1);
+      var bar = document.createElement('div'); bar.className = 'sw-dist-bar';
+      var n = stats.distribution[i];
+      bar.textContent = n;
+      bar.style.width = (12 + (n / maxDist) * 80) + '%';
+      if (state.status === 'won' && i === state.guesses.length - 1) bar.classList.add('is-active');
+      r.appendChild(label); r.appendChild(bar);
+      distEl.appendChild(r);
+    }
+
+    var answerBlock = document.getElementById('endAnswerBlock');
+    if (state.status === 'lost') {
+      answerBlock.hidden = false;
+      document.getElementById('endAnswerWord').textContent = state.answer.toUpperCase();
+    } else {
+      answerBlock.hidden = true;
+    }
+
+    function tickCountdown () {
+      document.getElementById('endCountdown').textContent =
+        'Next word in ' + formatCountdown(msUntilUTCMidnight());
+    }
+    tickCountdown();
+    clearInterval(countdownTimer);
+    countdownTimer = setInterval(tickCountdown, 1000);
+
+    openModal(modalEnd);
+  }
+
+  // ─── Share ─────────────────────────────────────────────────────────
+  function shareResult () {
+    var lines = ['The Mutapa Times · Shona Wordle #' + (state.dayIndex + 1) + ' ' +
+                 (state.status === 'won' ? (state.guesses.length + '/' + MAX_GUESS) : 'X/' + MAX_GUESS)];
+    lines.push('');
+    var map = { correct: '🟩', present: '🟨', absent: '⬛' };
+    for (var i = 0; i < state.guesses.length; i++) {
+      var r = evaluate(state.guesses[i], state.answer);
+      lines.push(r.map(function (x) { return map[x]; }).join(''));
+    }
+    lines.push('');
+    lines.push('mutapatimes.com/games/shona-wordle');
+    var txt = lines.join('\n');
+
+    if (navigator.share) {
+      navigator.share({ text: txt }).catch(function(){});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(
+        function () { toast('Copied to clipboard'); },
+        function () { fallbackCopy(txt); }
+      );
+    } else {
+      fallbackCopy(txt);
+    }
+  }
+  function fallbackCopy (txt) {
+    var ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); toast('Copied to clipboard'); } catch (e) { toast('Copy failed'); }
+    document.body.removeChild(ta);
+  }
+
+  // ─── Modals ────────────────────────────────────────────────────────
+  function openModal (m)  { m.classList.add('is-on'); }
+  function closeModal (m) { m.classList.remove('is-on'); }
+
+  document.getElementById('btnHelp').addEventListener('click', function () { openModal(modalHelp); });
+  document.getElementById('btnStats').addEventListener('click', function () {
+    if (state.status === 'playing') {
+      // Show stats without revealing answer
+      document.getElementById('endAnswerBlock').hidden = true;
+    }
+    showStatsModal();
+  });
+  document.getElementById('btnShare').addEventListener('click', shareResult);
+  document.querySelectorAll('[data-close-modal]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      closeModal(modalHelp); closeModal(modalEnd);
+    });
+  });
+  [modalHelp, modalEnd].forEach(function (m) {
+    m.addEventListener('click', function (e) {
+      if (e.target === m) closeModal(m);
+    });
+  });
+
+  // Physical keyboard
+  window.addEventListener('keydown', function (e) {
+    if (modalHelp.classList.contains('is-on') || modalEnd.classList.contains('is-on')) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === 'Enter')        { handleInput('enter'); e.preventDefault(); }
+    else if (e.key === 'Backspace'){ handleInput('back');  e.preventDefault(); }
+    else if (/^[a-zA-Z]$/.test(e.key)) handleInput(e.key.toLowerCase());
+  });
+
+  // ─── Load words and start ──────────────────────────────────────────
+  function start () {
+    fetch('words.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (w) {
+        state.answers = w.answers || [];
+        var validList = (w.valid && w.valid.length) ? w.valid : state.answers;
+        state.validSet = new Set(validList);
+        state.dayIndex = todayDayIndex();
+        state.answer = state.answers[state.dayIndex % state.answers.length];
+
+        // Restore in-progress game if same day
+        if (stats.game && stats.game.dayIndex === state.dayIndex) {
+          state.guesses = stats.game.guesses || [];
+          state.status = stats.game.status || 'playing';
+          // Rebuild keyboard state
+          state.guesses.forEach(function (g) {
+            updateKeyState(g, evaluate(g, state.answer));
+          });
+        }
+
+        dayMetaEl.textContent = 'Word #' + (state.dayIndex + 1) + ' · ' + formatDate(state.dayIndex);
+
+        renderKeyboard();
+        paintKeyboard();
+        renderBoard();
+
+        // First-visit help
+        var seenHelp = localStorage.getItem('shonaWordle.seenHelp');
+        if (!seenHelp) {
+          openModal(modalHelp);
+          localStorage.setItem('shonaWordle.seenHelp', '1');
+        }
+        if (state.status !== 'playing') {
+          setTimeout(showStatsModal, 400);
+        }
+      })
+      .catch(function (err) {
+        boardEl.innerHTML = '<p style="text-align:center;color:#a00;padding:20px;">Could not load the wordlist. Please refresh.</p>';
+        console.error(err);
+      });
+  }
+
+  start();
+})();
+</script>
+</body>
+</html>

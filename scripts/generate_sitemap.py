@@ -34,6 +34,8 @@ STATIC_PAGES = [
     ("diaspora/uk/",             0.85, "weekly"),
     ("diaspora/south-africa/",   0.85, "weekly"),
     ("diaspora/usa/",            0.85, "weekly"),
+    # Games
+    ("games/shona-wordle/",      0.80, "daily"),
     ("privacy", 0.3, "yearly"),
     ("terms", 0.3, "yearly"),
 ]
