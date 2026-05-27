@@ -7859,9 +7859,37 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   color: var(--ink, #121212);
 }
 @media (max-width: 540px) {
-  .sponsor-card { margin: 28px 16px; padding: 18px 18px 16px; }
-  .sponsor-card-eyebrow { font-size: 0.6rem; }
-  .sponsor-card-caption { font-size: 0.85rem; }
+  /* Full-bleed sponsor card on mobile: edge-to-edge image, eyebrow only,
+     no caption. The phone has the screen real estate for the creative
+     to be the hero; the strapline below it stops earning its keep. */
+  .sponsor-card {
+    margin: 28px 0;
+    padding: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: none;
+  }
+  .sponsor-card-eyebrow {
+    padding: 14px 16px 0;
+    font-size: 0.6rem;
+    margin: 0 0 12px;
+  }
+  .sponsor-card-link {
+    border-radius: 0;
+  }
+  .sponsor-card-media,
+  .sponsor-card-media img,
+  .sponsor-card-media iframe {
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .sponsor-card-caption {
+    display: none;
+  }
 }
 
 /* ───── Shopify negative-space ads ─────
@@ -7934,9 +7962,35 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
 }
 
 @media (max-width: 540px) {
-  .shopify-banner { margin: 28px 12px; padding: 12px 12px 14px; max-width: calc(100% - 24px); }
-  .shopify-banner-eyebrow { font-size: 0.58rem; }
-  .shopify-banner-caption { font-size: 0.78rem; }
+  /* Full-bleed Shopify banner on mobile: edge-to-edge image, eyebrow
+     only. Caption hidden. Image fills 100% of card width. */
+  .shopify-banner {
+    margin: 28px 0;
+    padding: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: none;
+  }
+  .shopify-banner-eyebrow {
+    padding: 14px 16px 0;
+    font-size: 0.58rem;
+    margin: 0 0 10px;
+  }
+  .shopify-banner-link {
+    border-radius: 0;
+  }
+  .shopify-banner-link img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .shopify-banner-caption {
+    display: none;
+  }
 }
 
 /* ───── Article full-bleed parallax sequence ─────
