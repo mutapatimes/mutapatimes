@@ -399,6 +399,77 @@ body.sw-page {
   font-size: 1.2em;
   color: var(--ink, #121212);
 }
+.sw-answer-meaning {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.92em;
+  color: var(--text-mid, #4a4a44);
+}
+.sw-answer-meaning::before { content: '"'; }
+.sw-answer-meaning::after  { content: '"'; }
+
+/* ─── Challenge banner (above board) ─── */
+.sw-challenge-banner {
+  background: #fef9e7;
+  border: 1px solid #f5e6a8;
+  border-left: 3px solid var(--tile-present, #c9a236);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.92em;
+  line-height: 1.45;
+  color: var(--ink, #121212);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+.sw-challenge-banner strong { font-weight: 700; }
+.sw-challenge-banner .sw-cb-replay {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.82em;
+  color: var(--text-mid, #4a4a44);
+}
+
+/* ─── End-modal challenge comparison ─── */
+#endChallengeBlock { margin-top: 8px; }
+#endChallengeBlock h3 { margin-top: 4px; }
+.sw-vs {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0 2px;
+}
+.sw-vs-side { text-align: center; }
+.sw-vs-score {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 1.7em;
+  line-height: 1.1;
+  color: var(--ink, #121212);
+}
+.sw-vs-name {
+  font-size: 0.66em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light, #8b8678);
+  font-weight: 700;
+  margin-top: 4px;
+  word-break: break-word;
+}
+.sw-vs-mid {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--text-mid, #4a4a44);
+  letter-spacing: 0.05em;
+}
+.sw-vs-verdict {
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent, #c41e1e);
+  margin: 6px 0 0 !important;
+}
 
 .sw-howto-grid {
   display: grid;
@@ -450,6 +521,7 @@ body.sw-page {
 </section>
 
 <main class="sw-main">
+  <div class="sw-challenge-banner" id="challengeBanner" hidden></div>
   <div class="sw-board" id="board" aria-label="Guesses"></div>
   <div class="sw-toast" id="toast" role="status" aria-live="polite"></div>
   <div class="sw-kb" id="keyboard" aria-label="Keyboard"></div>
@@ -530,17 +602,23 @@ body.sw-page {
       <h3>Guess distribution</h3>
       <div class="sw-dist" id="dist"></div>
 
+      <div id="endChallengeBlock" hidden></div>
+
       <div id="endAnswerBlock" hidden>
         <div class="sw-answer">
-          Today&rsquo;s word: <strong id="endAnswerWord"></strong>
+          Today&rsquo;s word: <strong id="endAnswerWord"></strong><span id="endAnswerMeaning" class="sw-answer-meaning"></span>
         </div>
       </div>
 
       <div id="endCountdown" class="sw-meta" style="text-align:center;font-size:0.85em;margin:8px 0 0;"></div>
 
       <div class="sw-actions-row">
-        <button class="sw-btn is-primary" id="btnShare">
-          Share
+        <button class="sw-btn is-primary" id="btnChallenge" hidden>
+          Challenge a friend
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </button>
+        <button class="sw-btn" id="btnShare">
+          Share grid
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:2px;"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         </button>
         <a class="sw-btn" href="/">More from The Mutapa Times</a>
@@ -577,7 +655,11 @@ body.sw-page {
     status: 'playing', // 'playing' | 'won' | 'lost'
     keyState: {},  // letter -> 'correct' | 'present' | 'absent'
     answers: [],
-    validSet: null
+    validSet: null,
+    meanings: {},
+    challenge: null,   // { dayIndex, guesses (number|null for loss), name }
+    isReplay: false,   // true when the URL points to a day != today; no stats writes
+    playerName: ''     // shown to friends when issuing a challenge
   };
 
   var stats = loadStats();
@@ -628,6 +710,125 @@ body.sw-page {
     var h = Math.floor(s / 3600); s -= h * 3600;
     var m = Math.floor(s / 60);   s -= m * 60;
     return ('0'+h).slice(-2) + ':' + ('0'+m).slice(-2) + ':' + ('0'+s).slice(-2);
+  }
+
+  // ─── Challenge link helpers ─────────────────────────────────────────
+  // Name input is light-sanitized: allow letters, digits, space, hyphen,
+  // dot, apostrophe; cap at 24 chars. Output is HTML-escaped at render
+  // time, so unsafe chars are doubly defended-against.
+  var NAME_MAX = 24;
+  function cleanName (s) {
+    return String(s || '').replace(/[^\w \-.']/g, '').slice(0, NAME_MAX).trim();
+  }
+  function escapeHtml (s) {
+    return String(s).replace(/[&<>"']/g, function (m) {
+      return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m];
+    });
+  }
+  function parseChallengeFromUrl () {
+    try {
+      var params = new URLSearchParams(location.search);
+      var d = params.get('d'), g = params.get('g'), n = params.get('n');
+      if (!d || !g) return null;
+      var dayIndex = parseInt(d, 10) - 1; // URL is 1-based, internal is 0-based
+      if (!Number.isFinite(dayIndex) || dayIndex < 0) return null;
+      var guesses;
+      if (g === 'x' || g === 'X') {
+        guesses = null;
+      } else {
+        var gi = parseInt(g, 10);
+        if (!Number.isFinite(gi) || gi < 1 || gi > MAX_GUESS) return null;
+        guesses = gi;
+      }
+      var name = cleanName(n) || 'A friend';
+      return { dayIndex: dayIndex, guesses: guesses, name: name };
+    } catch (e) {
+      return null;
+    }
+  }
+  function getPlayerName () {
+    try { return localStorage.getItem('shonaWordle.name') || ''; } catch (e) { return ''; }
+  }
+  function setPlayerName (n) {
+    try { localStorage.setItem('shonaWordle.name', n); } catch (e) {}
+  }
+  function buildChallengeUrl () {
+    var base = location.origin + location.pathname;
+    var dayN = state.dayIndex + 1;
+    var g = state.status === 'won' ? state.guesses.length : 'x';
+    var name = state.playerName || 'A friend';
+    var qs = 'd=' + dayN + '&g=' + g + '&n=' + encodeURIComponent(name);
+    return base + '?' + qs;
+  }
+  function promptForName () {
+    var current = state.playerName || getPlayerName();
+    var raw = window.prompt('Your name (shown to your friend):', current || '');
+    if (raw === null) return null;
+    var clean = cleanName(raw);
+    if (!clean) return null;
+    setPlayerName(clean);
+    state.playerName = clean;
+    return clean;
+  }
+  function challengeFriend () {
+    if (state.status === 'playing') return; // nothing to challenge with yet
+    if (!state.playerName) {
+      var n = promptForName();
+      if (!n) return; // cancelled
+    }
+    var url = buildChallengeUrl();
+    var myScore = state.status === 'won'
+      ? (state.guesses.length + '/' + MAX_GUESS)
+      : ('X/' + MAX_GUESS);
+    var txt = 'I got Shona Wordle #' + (state.dayIndex + 1) + ' in ' + myScore +
+              '. Think you can beat me?\n' + url;
+    if (navigator.share) {
+      navigator.share({ text: txt, url: url, title: 'Shona Wordle challenge' })
+        .catch(function () {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(
+        function () { toast('Challenge link copied'); },
+        function () { fallbackCopy(txt); }
+      );
+    } else {
+      fallbackCopy(txt);
+    }
+  }
+  function renderChallengeBanner () {
+    var el = document.getElementById('challengeBanner');
+    if (!state.challenge) { el.hidden = true; return; }
+    var c = state.challenge;
+    var scoreText = (c.guesses == null) ? ('X/' + MAX_GUESS) : (c.guesses + '/' + MAX_GUESS);
+    var html = '<strong>' + escapeHtml(c.name) + '</strong> challenged you · they got it in <strong>' + scoreText + '</strong>';
+    if (state.isReplay) {
+      html += '<span class="sw-cb-replay">Word #' + (c.dayIndex + 1) +
+              ' · replay only, does not count toward your stats.</span>';
+    }
+    el.innerHTML = html;
+    el.hidden = false;
+  }
+  function renderChallengeComparison () {
+    var el = document.getElementById('endChallengeBlock');
+    if (!state.challenge || state.status === 'playing') { el.hidden = true; return; }
+    var c = state.challenge;
+    var mine   = state.status === 'won' ? state.guesses.length : 99;
+    var theirs = c.guesses == null ? 99 : c.guesses;
+    var verdict;
+    if (mine === 99 && theirs === 99) verdict = 'Both stumped this round.';
+    else if (mine < theirs)           verdict = 'You beat them!';
+    else if (mine > theirs)           verdict = 'They beat you.';
+    else                              verdict = "It's a tie.";
+    var myScoreTxt   = mine   === 99 ? ('X/' + MAX_GUESS) : (mine   + '/' + MAX_GUESS);
+    var theirScoreTxt = theirs === 99 ? ('X/' + MAX_GUESS) : (theirs + '/' + MAX_GUESS);
+    el.innerHTML =
+      '<h3>Challenge result</h3>' +
+      '<div class="sw-vs">' +
+        '<div class="sw-vs-side"><div class="sw-vs-score">' + myScoreTxt + '</div><div class="sw-vs-name">You</div></div>' +
+        '<div class="sw-vs-mid">vs</div>' +
+        '<div class="sw-vs-side"><div class="sw-vs-score">' + theirScoreTxt + '</div><div class="sw-vs-name">' + escapeHtml(c.name) + '</div></div>' +
+      '</div>' +
+      '<p class="sw-vs-verdict">' + verdict + '</p>';
+    el.hidden = false;
   }
 
   // ─── Board rendering ───────────────────────────────────────────────
@@ -819,6 +1020,7 @@ body.sw-page {
 
   // ─── Persistence ───────────────────────────────────────────────────
   function persistGame () {
+    if (state.isReplay) return; // replay mode never writes to storage
     stats.game = {
       dayIndex: state.dayIndex,
       guesses: state.guesses.slice(),
@@ -828,7 +1030,7 @@ body.sw-page {
   }
   function finishGame () {
     var won = state.status === 'won';
-    if (stats.lastDay !== state.dayIndex) {
+    if (!state.isReplay && stats.lastDay !== state.dayIndex) {
       stats.played += 1;
       if (won) {
         stats.wins += 1;
@@ -870,12 +1072,20 @@ body.sw-page {
     }
 
     var answerBlock = document.getElementById('endAnswerBlock');
-    if (state.status === 'lost') {
+    var meaningEl   = document.getElementById('endAnswerMeaning');
+    if (state.status === 'won' || state.status === 'lost') {
       answerBlock.hidden = false;
       document.getElementById('endAnswerWord').textContent = state.answer.toUpperCase();
+      var gloss = state.meanings[state.answer];
+      meaningEl.textContent = gloss || '';
+      meaningEl.hidden = !gloss;
     } else {
       answerBlock.hidden = true;
     }
+
+    renderChallengeComparison();
+    // Challenge button only makes sense once the game is finished
+    document.getElementById('btnChallenge').hidden = (state.status === 'playing');
 
     function tickCountdown () {
       document.getElementById('endCountdown').textContent =
@@ -937,6 +1147,7 @@ body.sw-page {
     showStatsModal();
   });
   document.getElementById('btnShare').addEventListener('click', shareResult);
+  document.getElementById('btnChallenge').addEventListener('click', challengeFriend);
   document.querySelectorAll('[data-close-modal]').forEach(function (b) {
     b.addEventListener('click', function () {
       closeModal(modalHelp); closeModal(modalEnd);
@@ -965,21 +1176,38 @@ body.sw-page {
         state.answers = w.answers || [];
         var validList = (w.valid && w.valid.length) ? w.valid : state.answers;
         state.validSet = new Set(validList);
-        state.dayIndex = todayDayIndex();
+        state.meanings = w.meanings || {};
+
+        // Challenge link + saved player name
+        state.challenge = parseChallengeFromUrl();
+        state.playerName = getPlayerName();
+
+        var todayIdx = todayDayIndex();
+        if (state.challenge) {
+          state.dayIndex = state.challenge.dayIndex;
+          state.isReplay = (state.dayIndex !== todayIdx);
+        } else {
+          state.dayIndex = todayIdx;
+          state.isReplay = false;
+        }
         state.answer = state.answers[state.dayIndex % state.answers.length];
 
-        // Restore in-progress game if same day
-        if (stats.game && stats.game.dayIndex === state.dayIndex) {
+        // Restore in-progress game ONLY for the current day's regular play.
+        // Replay mode (challenge link to a non-today day) is ephemeral and
+        // must not overwrite the player's real daily game.
+        if (!state.isReplay && stats.game && stats.game.dayIndex === state.dayIndex) {
           state.guesses = stats.game.guesses || [];
           state.status = stats.game.status || 'playing';
-          // Rebuild keyboard state
           state.guesses.forEach(function (g) {
             updateKeyState(g, evaluate(g, state.answer));
           });
         }
 
-        dayMetaEl.textContent = 'Word #' + (state.dayIndex + 1) + ' · ' + formatDate(state.dayIndex);
+        var metaText = 'Word #' + (state.dayIndex + 1) + ' · ' + formatDate(state.dayIndex);
+        if (state.isReplay) metaText += ' · challenge replay';
+        dayMetaEl.textContent = metaText;
 
+        renderChallengeBanner();
         renderKeyboard();
         paintKeyboard();
         renderBoard();
@@ -1003,5 +1231,6 @@ body.sw-page {
   start();
 })();
 </script>
+<script src="/js/shopify-ads.js" defer></script>
 </body>
 </html>
