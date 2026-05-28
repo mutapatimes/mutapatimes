@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Send The Mutapa Times newsletter via Brevo API (Mon/Wed/Sat).
-Reads data/spotlight.json and data/*.json category files, builds an HTML email
-with a featured spotlight section and category headlines, creates a campaign,
-and sends it. Stdlib only — no pip dependencies.
+Reads data/*.json category files plus games/shona-wordle/words.json, builds
+an HTML email with a Today's Shona Wordle promo + category headlines, creates
+a campaign, and sends it. Stdlib only, no pip dependencies.
 """
 import json
 import os
@@ -30,7 +30,6 @@ CATEGORIES = PRIMARY_CATEGORIES + SECONDARY_CATEGORIES
 MAX_PER_CATEGORY = 2
 MAX_TOTAL = 12
 MAX_ARTICLE_AGE_DAYS = 14  # Reject articles older than this
-SPOTLIGHT_MAX_AGE_DAYS = 30
 
 DAY_GREETINGS = {
     0: "Monday morning",
@@ -137,29 +136,6 @@ SHONA_PROVERBS = [
     {"shona": "Zingizi gonyera pamwe maruva enyika haaperi.", "english": "Settle with one; the world’s flowers are endless."},
     {"shona": "Zvikoni zvikoni mimba haibvi negosoro.", "english": "Some things have no simple solution."},
 ]
-
-
-REPUTABLE_SOURCES = [
-    "bbc", "reuters", "new york times", "nytimes", "the guardian", "guardian",
-    "al jazeera", "aljazeera", "financial times", "ft.com", "the economist",
-    "bloomberg", "associated press", "ap news", "apnews", "washington post",
-    "cnn", "sky news", "the telegraph", "the independent", "france 24",
-    "dw", "deutsche welle", "npr", "pbs", "abc news", "time magazine",
-    "foreign policy", "the conversation",
-    "voa", "voice of america", "rfi", "africanews",
-    "allafrica", "all africa", "daily maverick", "mail & guardian",
-    "news24", "the east african", "sabc", "nation africa", "the citizen",
-    "eyewitness news", "iol", "timeslive", "sunday times",
-    "south china morning post", "scmp",
-]
-
-
-def is_reputable_source(source):
-    """Check if source matches a known reputable outlet."""
-    if not source:
-        return False
-    s = source.lower() if isinstance(source, str) else str(source).lower()
-    return any(r in s for r in REPUTABLE_SOURCES)
 
 
 # ── Tsumo of the Day ──────────────────────────────────────
@@ -341,29 +317,52 @@ def titles_are_similar(t1, t2, threshold=0.65):
     return len(intersection) / len(union) >= threshold
 
 
-def load_spotlight():
-    """Read spotlight articles + verified extras from data/spotlight.json.
+def load_wordle_today():
+    """Read today's Shona Wordle from games/shona-wordle/words.json.
 
-    Returns (main_spotlight, gnews_extras) where gnews_extras are up to 2
-    verified Google News RSS articles for the green accent section.
+    Mirrors the day-index math used in the game's JS so the newsletter
+    promotes the same word the site is serving:
+
+        EPOCH      = 2026-05-27 UTC (Day 1)
+        dayIndex   = floor((todayUTC - EPOCH) / 86400000)
+        word       = answers[dayIndex % len(answers)]
+
+    Returns dict with day_n (1-based), date_str, word, meaning,
+    yesterday_word and yesterday_meaning (None if today is Day 1),
+    or None if the words file is missing/empty.
     """
-    filepath = os.path.join(DATA_DIR, "spotlight.json")
+    filepath = os.path.join("games", "shona-wordle", "words.json")
     if not os.path.exists(filepath):
-        return [], []
+        return None
     with open(filepath) as f:
         data = json.load(f)
-    articles = data.get("articles", [])
-    # Strict date filter — no old content in spotlight
-    fresh = [a for a in articles if is_article_fresh(a, SPOTLIGHT_MAX_AGE_DAYS)]
-    main = fresh[:3]
-    main_urls = {a.get("url", "") for a in main if a.get("url")}
+    answers = data.get("answers", [])
+    meanings = data.get("meanings", {})
+    if not answers:
+        return None
 
-    # Load up to 2 verified extras from the "more" array
-    more = data.get("more", [])
-    extras = [a for a in more if is_article_fresh(a, SPOTLIGHT_MAX_AGE_DAYS)
-              and a.get("url") not in main_urls
-              and is_reputable_source(a.get("source", ""))][:2]
-    return main, extras
+    epoch = datetime(2026, 5, 27, tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    today_midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    day_index = max(0, (today_midnight - epoch).days)
+    word = answers[day_index % len(answers)]
+
+    if day_index >= 1:
+        ywd = answers[(day_index - 1) % len(answers)]
+        yesterday_word = ywd
+        yesterday_meaning = meanings.get(ywd, "")
+    else:
+        yesterday_word = None
+        yesterday_meaning = None
+
+    return {
+        "day_n":             day_index + 1,
+        "date_str":          now.strftime("%B %d, %Y"),
+        "word":              word,
+        "meaning":           meanings.get(word, ""),
+        "yesterday_word":    yesterday_word,
+        "yesterday_meaning": yesterday_meaning,
+    }
 
 
 def load_articles(exclude_urls=None):
@@ -381,7 +380,7 @@ def load_articles(exclude_urls=None):
             a["_category"] = cat
         all_articles.extend(data.get("articles", []))
 
-    # Deduplicate by URL, exclude spotlight URLs, filter by date, and dedup by title similarity
+    # Deduplicate by URL, honour exclude_urls, filter by date, and dedup by title similarity
     seen_urls = set()
     unique = []
     for a in all_articles:
@@ -507,157 +506,120 @@ def whatsapp_share_link(title, url, color="rgba(255,255,255,0.5)", size="11px"):
     )
 
 
-def build_spotlight_html(spotlight_articles, gnews_extras=None):
-    """Build the dark-green spotlight section HTML with optional green-accent extras."""
-    if not spotlight_articles:
+def build_wordle_html(wordle):
+    """Build the Today's Shona Wordle section.
+
+    Editorial-style block matching the site's wordle card: red accent
+    eyebrow, day number + date, a row of six empty tiles styled like
+    the in-game board, optional yesterday's reveal as a hook, and a
+    dark CTA button. Email-safe (table layout, no flexbox, no SVG).
+    """
+    if not wordle:
         return ""
 
-    spotlight_rows = ""
-    for a in spotlight_articles:
-        title = escape_html(a.get("title", "No title"))
-        raw_title = a.get("title", "No title")
-        url = escape_html(a.get("url", "#"))
-        raw_url = a.get("url", "#")
-        desc = a.get("description", "")
-        if desc and len(desc) > 200:
-            desc = desc[:197] + "..."
-        desc = escape_html(desc)
-        image = a.get("image", "")
-        source = a.get("source", "")
-        source_name = escape_html(source if isinstance(source, str) else source.get("name", ""))
-        pub_date = format_date(a.get("publishedAt", ""))
-        meta_parts = [p for p in [source_name, pub_date] if p]
-        meta_line = " &middot; ".join(meta_parts)
+    wordle_url = (
+        "https://www.mutapatimes.com/games/shona-wordle/"
+        "?utm_source=newsletter&utm_medium=email&utm_campaign=wordle"
+    )
 
-        wa_link = whatsapp_share_link(raw_title, raw_url, color="rgba(255,255,255,0.5)", size="11px")
+    # Six empty tiles, rendered as table cells so Outlook + Gmail get them
+    # consistently. 38x38 with a 2px hairline border and white fill.
+    tile_cells = ""
+    for _ in range(6):
+        tile_cells += (
+            '<td width="38" height="38" '
+            'style="width:38px;height:38px;'
+            'background:#ffffff;'
+            'border:2px solid #d0cfc8;'
+            'border-radius:4px;'
+            'padding:0;mso-line-height-rule:exactly;line-height:0;">'
+            '&nbsp;'
+            '</td>'
+            '<td width="4" style="width:4px;">&nbsp;</td>'
+        )
+    # Strip the trailing spacer so the row is symmetric.
+    tile_cells = tile_cells.rsplit('<td width="4"', 1)[0]
 
-        image_html = ""
-        if image:
-            image_html = (
-                '<tr>'
-                '<td style="padding:0;font-size:0;line-height:0;">'
-                f'<a href="{url}" target="_blank" style="text-decoration:none;">'
-                f'<img src="{escape_html(image)}" alt="{title}" width="600" '
-                'style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
-                '</a>'
-                '</td>'
-                '</tr>'
-            )
-
-        desc_html = ""
-        if desc:
-            desc_html = (
-                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
-                f'color:rgba(255,255,255,0.75);margin:6px 0 0;line-height:1.5;">{desc}</p>'
-            )
-
-        spotlight_rows += (
-            f'{image_html}'
+    # Yesterday's word — small grey teaser, only on day 2+.
+    yesterday_html = ""
+    if wordle.get("yesterday_word"):
+        ymeaning = wordle.get("yesterday_meaning") or ""
+        ywd = escape_html(wordle["yesterday_word"].upper())
+        ymeaning_part = (
+            f' <span style="color:#8b8678;">({escape_html(ymeaning)})</span>'
+            if ymeaning else ''
+        )
+        yesterday_html = (
             '<tr>'
-            '<td style="padding:14px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.12);">'
-            f'<a href="{url}" target="_blank" '
-            'style="font-family:Georgia,\'Times New Roman\',serif;'
-            'font-size:18px;font-weight:700;color:#ffffff;'
-            f'text-decoration:none;line-height:1.3;">{title}</a>'
-            f'{desc_html}'
-            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-            'color:rgba(255,255,255,0.45);margin:6px 0 0;'
-            f'text-transform:uppercase;letter-spacing:0.04em;">'
-            f'{meta_line}'
-            f' &nbsp;&middot;&nbsp; {wa_link}'
+            '<td align="center" style="padding:4px 20px 0;">'
+            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:12px;'
+            'color:#4a4a44;margin:0;letter-spacing:0.02em;">'
+            f'Yesterday&rsquo;s word: <strong style="color:#121212;'
+            f'font-family:Georgia,\'Times New Roman\',serif;'
+            f'letter-spacing:0.05em;">{ywd}</strong>'
+            f'{ymeaning_part}'
             '</p>'
             '</td>'
             '</tr>'
         )
 
-    # Build green-accent rows for verified Google News RSS extras
-    extras_rows = ""
-    if gnews_extras:
-        for a in gnews_extras:
-            title = escape_html(a.get("title", "No title"))
-            raw_title = a.get("title", "No title")
-            url = escape_html(a.get("url", "#"))
-            raw_url = a.get("url", "#")
-            desc = a.get("description", "")
-            if desc and len(desc) > 200:
-                desc = desc[:197] + "..."
-            desc = escape_html(desc)
-            image = a.get("image", "")
-            source = a.get("source", "")
-            source_name = escape_html(source if isinstance(source, str) else source.get("name", ""))
-            pub_date = format_date(a.get("publishedAt", ""))
-            meta_parts = [p for p in [source_name, pub_date] if p]
-            meta_line = " &middot; ".join(meta_parts)
-            wa_link = whatsapp_share_link(raw_title, raw_url, color="rgba(255,255,255,0.5)", size="11px")
-
-            image_html = ""
-            if image:
-                image_html = (
-                    '<tr>'
-                    '<td style="padding:0;font-size:0;line-height:0;">'
-                    f'<a href="{url}" target="_blank" style="text-decoration:none;">'
-                    f'<img src="{escape_html(image)}" alt="{title}" width="600" '
-                    'style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
-                    '</a>'
-                    '</td>'
-                    '</tr>'
-                )
-
-            desc_html = ""
-            if desc:
-                desc_html = (
-                    '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
-                    f'color:rgba(255,255,255,0.75);margin:6px 0 0;line-height:1.5;">{desc}</p>'
-                )
-
-            extras_rows += (
-                f'{image_html}'
-                '<tr>'
-                '<td style="padding:14px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.12);">'
-                f'<a href="{url}" target="_blank" '
-                'style="font-family:Georgia,\'Times New Roman\',serif;'
-                'font-size:18px;font-weight:700;color:#ffffff;'
-                f'text-decoration:none;line-height:1.3;">{title}</a>'
-                f'{desc_html}'
-                '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-                'color:rgba(255,255,255,0.45);margin:6px 0 0;'
-                f'text-transform:uppercase;letter-spacing:0.04em;">'
-                f'{meta_line}'
-                f' &nbsp;&middot;&nbsp; {wa_link}'
-                '</p>'
-                '</td>'
-                '</tr>'
-            )
-
     return (
-        '<!-- Spotlight Section -->'
+        '<!-- Today\'s Shona Wordle -->'
         '<tr>'
-        '<td style="background:#1a5632;padding:0;">'
+        '<td style="background:#fafaf7;padding:0;border-bottom:1px solid #e8e6df;">'
         '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
         'style="border-collapse:collapse;">'
+
+        # Eyebrow + headline
         '<tr>'
-        '<td style="padding:16px 20px 8px;">'
-        '<h2 style="font-family:Georgia,\'Times New Roman\',serif;'
-        'font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);'
-        'margin:0;text-transform:uppercase;letter-spacing:0.1em;">'
-        '&#9679; Spotlight</h2>'
+        '<td style="padding:24px 20px 4px;text-align:center;">'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        'font-weight:700;color:#c41e1e;margin:0;'
+        'text-transform:uppercase;letter-spacing:0.18em;">'
+        'Today&rsquo;s Shona Wordle'
+        '</p>'
+        f'<h2 style="font-family:Georgia,\'Times New Roman\',serif;'
+        f'font-size:22px;font-weight:900;color:#121212;'
+        f'margin:8px 0 2px;line-height:1.2;letter-spacing:-0.01em;">'
+        f'Word #{wordle["day_n"]} is live.'
+        '</h2>'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+        'color:#4a4a44;margin:0 0 16px;line-height:1.5;">'
+        f'{escape_html(wordle["date_str"])} &middot; '
+        'Guess the six-letter Shona word in six tries.'
+        '</p>'
         '</td>'
         '</tr>'
-        f'{spotlight_rows}'
+
+        # Six empty tiles
+        '<tr>'
+        '<td align="center" style="padding:0 20px 16px;">'
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0">'
+        f'<tr>{tile_cells}</tr>'
         '</table>'
         '</td>'
         '</tr>'
-        + (
-            '<tr>'
-            '<td style="background:#236b3e;padding:0;">'
-            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
-            'style="border-collapse:collapse;">'
-            f'{extras_rows}'
-            '</table>'
-            '</td>'
-            '</tr>'
-            if extras_rows else ''
-        )
+
+        f'{yesterday_html}'
+
+        # CTA
+        '<tr>'
+        '<td align="center" style="padding:14px 20px 24px;">'
+        f'<a href="{wordle_url}" target="_blank" '
+        'style="display:inline-block;padding:12px 28px;'
+        'font-family:Helvetica,Arial,sans-serif;'
+        'font-size:12px;font-weight:700;'
+        'color:#ffffff;background:#121212;'
+        'text-decoration:none;text-transform:uppercase;'
+        'letter-spacing:0.08em;">'
+        'Play today&rsquo;s puzzle &rarr;'
+        '</a>'
+        '</td>'
+        '</tr>'
+
+        '</table>'
+        '</td>'
+        '</tr>'
     )
 
 
@@ -738,7 +700,7 @@ def build_stories_rail_html():
         '</tr>'
         '</table>'
         '<p style="font-family:Helvetica,Arial,sans-serif;'
-        'font-size:10px;color:#6b6b6b;margin:10px 0 0;'
+        'font-size:10px;color:#8b8678;margin:10px 0 0;'
         'text-align:center;letter-spacing:0.04em;">'
         'Tap a story &middot; opens in your browser'
         '</p>'
@@ -833,7 +795,7 @@ def build_person_of_day_html(person):
         ' style="border-collapse:collapse;">'
         '<tr><td style="border-top:2px solid #1a1a1a;padding-top:8px;">'
         '<p style="font-family:Georgia,\'Times New Roman\',serif;'
-        'font-size:11px;font-weight:700;color:#6b6b6b;margin:0 0 10px;'
+        'font-size:11px;font-weight:700;color:#8b8678;margin:0 0 10px;'
         'text-transform:uppercase;letter-spacing:0.1em;">'
         'Zimbabwean of the Day</p>'
         '</td></tr>'
@@ -850,7 +812,7 @@ def build_person_of_day_html(person):
         f'font-size:17px;font-weight:700;color:#1a1a1a;margin:0;line-height:1.3;">'
         f'{name}</p>'
         f'<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-        f'color:#6b6b6b;margin:3px 0 0;text-transform:uppercase;'
+        f'color:#8b8678;margin:3px 0 0;text-transform:uppercase;'
         f'letter-spacing:0.04em;">{subtitle}</p>'
         f'{bio_html}'
         f'{link_html}'
@@ -863,20 +825,24 @@ def build_person_of_day_html(person):
     )
 
 
-def build_html(spotlight_articles, category_articles, gnews_extras=None,
-               tsumo=None):
+def build_html(category_articles, wordle=None, tsumo=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
-    total_count = len(spotlight_articles) + len(category_articles) + len(gnews_extras or [])
+    total_count = len(category_articles)
 
-    # Preheader: top spotlight headline or fallback
-    if spotlight_articles:
-        preheader = escape_html(spotlight_articles[0].get("title", ""))
+    # Preheader: today's Shona Wordle teaser. Falls back to a generic
+    # briefing line if the wordle data is unavailable. Plain text only
+    # (Apple Mail / Gmail render this as the inbox snippet).
+    if wordle:
+        preheader = (
+            f"Today’s Shona Wordle is live. Word #{wordle['day_n']}, "
+            "play free in your browser."
+        )
     else:
-        preheader = f"Top Zimbabwe headlines from foreign press &mdash; {date_display}"
+        preheader = f"Top Zimbabwe headlines from foreign press, {date_display}."
 
-    spotlight_html = build_spotlight_html(spotlight_articles, gnews_extras=gnews_extras)
+    wordle_html = build_wordle_html(wordle)
     stories_rail_html = build_stories_rail_html()
     tsumo_html = build_tsumo_html(tsumo)
 
@@ -900,27 +866,27 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
         meta_parts = [p for p in [source_name, category, pub_date] if p]
         meta_line = " &middot; ".join(meta_parts)
 
-        wa_link = whatsapp_share_link(raw_title, raw_url, color="#6b6b6b", size="11px")
+        wa_link = whatsapp_share_link(raw_title, raw_url, color="#8b8678", size="11px")
 
-        bg = "#ffffff" if i % 2 == 0 else "#fafafa"
+        bg = "#ffffff" if i % 2 == 0 else "#fafaf7"
 
         desc_html = ""
         if desc:
             desc_html = (
                 '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
-                f'color:#2c2c2c;margin:6px 0 0;line-height:1.5;">{desc}</p>'
+                f'color:#4a4a44;margin:6px 0 0;line-height:1.5;">{desc}</p>'
             )
 
         rows += (
             '<tr>'
-            f'<td style="padding:14px 20px;background:{bg};border-bottom:1px solid #e8e6e3;">'
+            f'<td style="padding:14px 20px;background:{bg};border-bottom:1px solid #e8e6df;">'
             f'<a href="{url}" target="_blank" '
             'style="font-family:Georgia,\'Times New Roman\',serif;'
-            'font-size:16px;font-weight:700;color:#1a1a1a;'
+            'font-size:16px;font-weight:700;color:#121212;'
             f'text-decoration:none;line-height:1.3;">{title}</a>'
             f'{desc_html}'
             '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
-            f'color:#6b6b6b;margin:6px 0 0;line-height:1.4;">'
+            f'color:#8b8678;margin:6px 0 0;line-height:1.4;">'
             f'{meta_line}'
             f' &nbsp;&middot;&nbsp; {wa_link}'
             '</p>'
@@ -956,10 +922,6 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
       .date-cell {{ padding: 8px 16px !important; }}
       .intro-cell {{ padding: 14px 16px 10px !important; }}
       .intro-text {{ font-size: 13px !important; }}
-      .spotlight-header-cell {{ padding: 12px 16px 6px !important; }}
-      .spotlight-text-cell {{ padding: 12px 16px 14px !important; }}
-      .spotlight-title {{ font-size: 16px !important; }}
-      .spotlight-desc {{ font-size: 12px !important; }}
       .section-header-cell {{ padding: 14px 16px 0 !important; }}
       .article-cell {{ padding: 12px 16px !important; }}
       .article-title {{ font-size: 15px !important; }}
@@ -971,7 +933,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
     }}
   </style>
 </head>
-<body style="margin:0;padding:0;background-color:#e8e6e3;
+<body style="margin:0;padding:0;background-color:#f0efeb;
              font-family:Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
 
   <!-- Preheader -->
@@ -980,7 +942,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
   </div>
 
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-         style="background-color:#e8e6e3;">
+         style="background-color:#f0efeb;">
     <tr>
       <td align="center" class="outer-wrap" style="padding:16px 8px;">
 
@@ -992,18 +954,19 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           <!-- Masthead -->
           <tr>
             <td class="masthead-cell" style="padding:24px 20px 8px;text-align:center;
-                       border-bottom:2px solid #1a1a1a;">
+                       border-bottom:2px solid #121212;">
               <h1 class="masthead-title"
                   style="font-family:Georgia,'Times New Roman',serif;
-                         font-size:26px;font-weight:900;color:#1a1a1a;
+                         font-size:26px;font-weight:900;color:#121212;
                          margin:0;letter-spacing:0.03em;text-transform:uppercase;">
                 THE MUTAPA TIMES
               </h1>
               <p class="tagline"
-                 style="font-family:Georgia,'Times New Roman',serif;
-                        font-size:12px;font-style:italic;color:#6b6b6b;
-                        margin:4px 0 0;">
-                Zimbabwe outside-in.
+                 style="font-family:Helvetica,Arial,sans-serif;
+                        font-size:11px;color:#8b8678;
+                        margin:6px 0 0;text-transform:uppercase;
+                        letter-spacing:0.18em;">
+                Zimbabwe outside-in
               </p>
             </td>
           </tr>
@@ -1011,9 +974,9 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           <!-- Date bar -->
           <tr>
             <td class="date-cell" style="padding:10px 20px;text-align:center;
-                       border-bottom:1px solid #c8c8c8;">
+                       border-bottom:1px solid #e8e6df;">
               <span style="font-family:Helvetica,Arial,sans-serif;
-                           font-size:10px;color:#6b6b6b;
+                           font-size:10px;color:#4a4a44;
                            text-transform:uppercase;letter-spacing:0.06em;">
                 {date_display} &nbsp;&middot;&nbsp; Published Mon &middot; Wed &middot; Sat
               </span>
@@ -1025,7 +988,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
             <td class="intro-cell" style="padding:18px 20px 12px;text-align:center;">
               <p class="intro-text"
                  style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:14px;color:#2c2c2c;line-height:1.5;margin:0;">
+                        font-size:14px;color:#4a4a44;line-height:1.5;margin:0;">
                 Your briefing of the most important Zimbabwe headlines
                 from foreign press. Curated for the diaspora, twice a week.
               </p>
@@ -1034,7 +997,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
 
           {stories_rail_html}
 
-          {spotlight_html}
+          {wordle_html}
 
           {tsumo_html}
 
@@ -1043,9 +1006,9 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
             <td class="section-header-cell" style="padding:16px 20px 0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td style="border-top:2px solid #1a1a1a;padding-top:8px;">
+                  <td style="border-top:2px solid #121212;padding-top:8px;">
                     <h2 style="font-family:Georgia,'Times New Roman',serif;
-                               font-size:16px;font-weight:700;color:#1a1a1a;
+                               font-size:16px;font-weight:700;color:#121212;
                                margin:0 0 2px;text-transform:uppercase;
                                letter-spacing:0.04em;">
                       Top Headlines
@@ -1067,7 +1030,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                         font-family:Helvetica,Arial,sans-serif;
                         font-size:12px;font-weight:700;
                         text-transform:uppercase;letter-spacing:0.08em;
-                        color:#ffffff;background:#00897b;
+                        color:#ffffff;background:#c41e1e;
                         text-decoration:none;">
                 Read More at mutapatimes.com
               </a>
@@ -1077,14 +1040,14 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           <!-- Share with a friend -->
           <tr>
             <td class="share-cell" style="padding:20px 20px 6px;text-align:center;
-                       border-top:1px solid #c8c8c8;">
+                       border-top:1px solid #e8e6df;">
               <p style="font-family:Georgia,'Times New Roman',serif;
-                        font-size:15px;font-weight:700;color:#1a1a1a;
+                        font-size:15px;font-weight:700;color:#121212;
                         margin:0 0 6px;">
                 Share the news
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:12px;color:#6b6b6b;line-height:1.5;margin:0 0 12px;">
+                        font-size:12px;color:#4a4a44;line-height:1.5;margin:0 0 12px;">
                 Know someone who should be reading this? Send them The Mutapa Times.
               </p>
               <a href="{general_wa_url}" target="_blank"
@@ -1096,21 +1059,20 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                 Share on WhatsApp
               </a>
               &nbsp;&nbsp;
-              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%20%E2%80%94%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mondays%20%26%20Thursdays.%0A%0AIf%20a%20friend%20forwarded%20this%20to%20you%2C%20subscribe%20at%3A%0Ahttps%3A%2F%2Fwww.mutapatimes.com%2Fsubscribe.html%3Fref%3Dnewsletter-share"
+              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%2C%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mondays%20%26%20Thursdays.%0A%0AIf%20a%20friend%20forwarded%20this%20to%20you%2C%20subscribe%20at%3A%0Ahttps%3A%2F%2Fwww.mutapatimes.com%2Fsubscribe.html%3Fref%3Dnewsletter-share"
                  target="_blank"
                  style="display:inline-block;padding:8px 20px;
                         font-family:Helvetica,Arial,sans-serif;
                         font-size:12px;font-weight:700;
-                        color:#ffffff;background:#1a1a1a;
+                        color:#ffffff;background:#121212;
                         text-decoration:none;letter-spacing:0.02em;">
                 Share via Email
               </a>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:11px;color:#6b6b6b;margin:14px 0 0;
-                        font-style:italic;">
-                Forward to a friend &mdash; it's how we grow. If this was
+                        font-size:11px;color:#4a4a44;margin:14px 0 0;">
+                Forward to a friend. It is how we grow. If this was
                 forwarded to you, <a href="https://www.mutapatimes.com/subscribe.html?ref=newsletter-forward"
-                style="color:#c0392b;font-weight:700;">subscribe free</a>.
+                style="color:#c41e1e;font-weight:700;">subscribe free</a>.
               </p>
             </td>
           </tr>
@@ -1119,7 +1081,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           <tr>
             <td class="follow-cell" style="padding:6px 20px 16px;text-align:center;">
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:12px;color:#6b6b6b;line-height:1.5;margin:0 0 10px;">
+                        font-size:12px;color:#4a4a44;line-height:1.5;margin:0 0 10px;">
                 Between briefings, follow us on X for breaking stories.
               </p>
               <a href="https://twitter.com/intent/follow?screen_name=mutapatimes"
@@ -1127,7 +1089,7 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
                  style="display:inline-block;padding:8px 20px;
                         font-family:Helvetica,Arial,sans-serif;
                         font-size:12px;font-weight:700;
-                        color:#ffffff;background:#000000;
+                        color:#ffffff;background:#121212;
                         text-decoration:none;letter-spacing:0.02em;
                         border-radius:999px;">
                 𝕏  Follow @mutapatimes
@@ -1138,35 +1100,35 @@ def build_html(spotlight_articles, category_articles, gnews_extras=None,
           <!-- Divider -->
           <tr>
             <td class="divider-cell" style="padding:0 20px;">
-              <hr style="border:none;border-top:1px solid #c8c8c8;margin:16px 0 0;">
+              <hr style="border:none;border-top:1px solid #e8e6df;margin:16px 0 0;">
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td class="footer-cell" style="padding:16px 20px 24px;text-align:center;background:#fafafa;">
+            <td class="footer-cell" style="padding:16px 20px 24px;text-align:center;background:#fafaf7;">
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:11px;color:#6b6b6b;line-height:1.5;margin:0 0 6px;">
+                        font-size:11px;color:#4a4a44;line-height:1.5;margin:0 0 6px;">
                 The Mutapa Times delivers curated Zimbabwean news from foreign press
-                for the diaspora &mdash; every Monday and Thursday.
+                for the diaspora, every Monday and Thursday.
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:10px;color:#999999;margin:0 0 6px;">
-                <a href="{SITE_URL}" style="color:#00897b;text-decoration:none;">
+                        font-size:10px;color:#8b8678;margin:0 0 6px;">
+                <a href="{SITE_URL}" style="color:#c41e1e;text-decoration:none;">
                   mutapatimes.com
                 </a>
                 &nbsp;&middot;&nbsp;
-                <a href="https://twitter.com/mutapatimes" style="color:#00897b;text-decoration:none;">
+                <a href="https://twitter.com/mutapatimes" style="color:#c41e1e;text-decoration:none;">
                   @mutapatimes
                 </a>
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
-                        font-size:10px;color:#999999;margin:0;">
-                <a href="{{{{ unsubscribe }}}}" style="color:#999999;text-decoration:underline;">
+                        font-size:10px;color:#8b8678;margin:0;">
+                <a href="{{{{ unsubscribe }}}}" style="color:#8b8678;text-decoration:underline;">
                   Unsubscribe
                 </a>
                 &nbsp;&middot;&nbsp;
-                <a href="{{{{ mirror }}}}" style="color:#999999;text-decoration:underline;">
+                <a href="{{{{ mirror }}}}" style="color:#8b8678;text-decoration:underline;">
                   View in browser
                 </a>
               </p>
@@ -1220,34 +1182,33 @@ def main():
         print("ERROR: BREVO_API_KEY not set")
         sys.exit(1)
 
-    print("Loading spotlight articles...")
-    spotlight, gnews_extras = load_spotlight()
-    print(f"  Found {len(spotlight)} spotlight articles + {len(gnews_extras)} verified extras")
-
-    # Collect spotlight + extras URLs to avoid duplicates in category headlines
-    spotlight_urls = {a.get("url", "") for a in spotlight + gnews_extras if a.get("url")}
+    print("Loading today's Shona Wordle...")
+    wordle = load_wordle_today()
+    if wordle:
+        print(f"  Word #{wordle['day_n']}, {wordle['date_str']}")
+    else:
+        print("  No wordle data found; sending without the wordle block")
 
     print("Loading category articles...")
-    articles = load_articles(exclude_urls=spotlight_urls)
-    if not articles and not spotlight:
-        print("No articles found in data/*.json — skipping newsletter")
+    articles = load_articles()
+    if not articles:
+        print("No articles found in data/*.json, skipping newsletter")
         sys.exit(0)
 
     top = pick_top_articles(articles)
     print(f"  Selected {len(top)} category articles for newsletter")
 
-    # Tsumo of the Day — same daily rotation as the website
+    # Tsumo of the Day, same daily rotation as the website
     tsumo = get_tsumo_of_the_day()
     print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
 
     print("Building email HTML...")
-    html, total_count = build_html(spotlight, top, gnews_extras=gnews_extras,
-                                   tsumo=tsumo)
+    html, total_count = build_html(top, wordle=wordle, tsumo=tsumo)
 
-    # Dynamic subject line: "Monday morning briefing — 15 new headlines from Zimbabwe"
+    # Dynamic subject line: "Monday morning briefing: 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)
     day_label = DAY_GREETINGS.get(today.weekday(), today.strftime("%A"))
-    subject = f"{day_label} briefing \u2014 {total_count} new headlines from Zimbabwe"
+    subject = f"{day_label} briefing: {total_count} new headlines from Zimbabwe"
 
     print(f"  Subject: {subject}")
 
