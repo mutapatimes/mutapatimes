@@ -98,6 +98,10 @@
     card.setAttribute('role', 'complementary');
     card.setAttribute('aria-label', 'Sponsored: Shopify');
     if (ix != null) card.setAttribute('data-slot-ix', String(ix));
+    // The card may grow up to the creative's natural width on desktop, but
+    // never wider. Exposed as a custom property so the mobile full-bleed
+    // media query in CSS can override without an inline-style fight.
+    card.style.setProperty('--ad-natural-width', c.w + 'px');
 
     var eyebrow = document.createElement('p');
     eyebrow.className = 'shopify-banner-eyebrow';
@@ -118,16 +122,11 @@
     img.referrerPolicy = 'no-referrer-when-downgrade';
     img.width  = c.w;
     img.height = c.h;
-    // Inline width hint so the layout doesn't jump while the asset loads.
-    img.style.maxWidth = c.w + 'px';
+    // Aspect ratio holds the layout space before the asset loads, without
+    // an inline max-width that would override the CSS responsive rules.
     img.style.aspectRatio = c.w + ' / ' + c.h;
     a.appendChild(img);
     card.appendChild(a);
-
-    var cap = document.createElement('p');
-    cap.className = 'shopify-banner-caption';
-    cap.textContent = c.label + ' — ' + c.cta;
-    card.appendChild(cap);
 
     // Impression pixel
     var px = new Image(0, 0);
@@ -153,6 +152,7 @@
     var path = (location.pathname || '/').replace(/\/$/, '');
     if (path === '' || path === '/index.html') return 'home';
     if (path === '/articles' || path === '/articles.html') return 'list';
+    if (/^\/games\/[^/]+(\/index\.html)?$/i.test(path)) return 'game';
     return 'other';
   }
 
@@ -209,6 +209,16 @@
       if (weather) insertAfter(weather, build('leaderboard', slotIx++));
       var mainCity = document.querySelector('main') || document.body;
       appendInto(mainCity, build('hero', slotIx++));
+      return;
+    }
+
+    if (type === 'game') {
+      // Single leaderboard strip between the game UI and the page footer.
+      // Editorial rule: strip-only sponsorship, never a rectangle interrupting
+      // play. The wordle's <footer class="sw-footer"> is the anchor.
+      var gameFooter = document.querySelector('.sw-footer') ||
+                       document.querySelector('footer');
+      if (gameFooter) injectBefore(gameFooter, build('leaderboard', slotIx++));
       return;
     }
   }

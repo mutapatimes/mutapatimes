@@ -26,6 +26,8 @@
   var FEATURE_AD_EVERY = 5;         // insert the Feature Story slide after every N cards
   var SUBSCRIBE_AD_EVERY = 8;       // insert a Subscribe slide after every N cards
   var SUBSCRIBE_AD_DURATION_MS = 6000;
+  var SHOPIFY_AD_EVERY = 6;         // insert a Shopify slide after every N real cards
+  var SHOPIFY_AD_DURATION_MS = 6000;
   var INDEX_URL = "/content/articles/index.json";
   var FEATURE_AD_URL = "/data/feature-story.json";
   // Curated editorial series promoted at the front of the rail. Each
@@ -33,6 +35,40 @@
   // series with the series colour scheme. Order here = order on the rail.
   var SERIES_KEYS = ["venice-biennale-2026"];
   function seriesManifestUrl(key) { return "/data/series-" + key + ".json"; }
+
+  // Rotating Shopify sponsored slides. Impact campaign 13624.
+  // Image URL format: https://a.impactradius-go.com/display-ad/13624-{id}
+  // Click URL format: https://shopify.pxf.io/c/7333540/{id}/13624
+  // Impression pixel:  https://imp.pxf.io/i/7333540/{id}/13624
+  // Creatives chosen for the full-bleed story slide are the landscape
+  // hero formats (look right on the 9:16 viewer once cover-positioned).
+  var SHOPIFY_AD_VARIANTS = [
+    {
+      creativeId: 3797168,
+      eyebrow: "Sponsored by Shopify",
+      title: "Starting a store is easier than you think.",
+      summary: "Build, run and grow a business with the platform behind millions of brands worldwide.",
+      ctaText: "Start free trial",
+    },
+    {
+      creativeId: 3323855,
+      eyebrow: "Sponsored by Shopify",
+      title: "Turn your idea into your business.",
+      summary: "From first sale to first hire. Try Shopify for $1 a month for your first three months.",
+      ctaText: "Try Shopify for $1",
+    },
+    {
+      creativeId: 3323848,
+      eyebrow: "Sponsored by Shopify",
+      title: "From daydream to dream job.",
+      summary: "Open the door to your own brand. Set up your storefront in minutes, no code needed.",
+      ctaText: "Try Shopify for $1",
+    },
+  ];
+  // Walking counter so Shopify creatives rotate evenly across the rail.
+  var _shopifyAdIndex = 0;
+  // De-duped set of impression pixel URLs already fired in this session.
+  var _firedImpressions = {};
 
   // Rotating subscribe-promo slides. Each uses one of the break-N.jpg
   // hero photos and links to /subscribe. Same full-height layout as
@@ -218,6 +254,41 @@
     return out;
   }
 
+  // Shopify sponsored slides rotate through SHOPIFY_AD_VARIANTS, one
+  // inserted after every SHOPIFY_AD_EVERY real story cards. Runs after
+  // both injectFeatureAds and injectSubscribeAds so it counts only real
+  // story cards toward the cadence and won't appear adjacent to itself.
+  // It WILL on a long highlight share neighbourhoods with the other two
+  // ad types; that's acceptable for a rail capped at 12 + a few promos.
+  function injectShopifyAds(items) {
+    if (!SHOPIFY_AD_VARIANTS.length) return items;
+    var out = [];
+    var realCardCount = 0;
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      out.push(it);
+      if (it && (it._isFeatureAd || it._isSubscribeAd || it._isShopifyAd)) continue;
+      realCardCount++;
+      var isLast = i === items.length - 1;
+      if (realCardCount % SHOPIFY_AD_EVERY === 0 && !isLast) {
+        var v = SHOPIFY_AD_VARIANTS[_shopifyAdIndex % SHOPIFY_AD_VARIANTS.length];
+        _shopifyAdIndex++;
+        out.push({
+          _isShopifyAd: true,
+          slug: "shopify-" + v.creativeId + "-" + _shopifyAdIndex,
+          title: v.title,
+          summary: v.summary,
+          eyebrow: v.eyebrow,
+          image: "https://a.impactradius-go.com/display-ad/13624-" + v.creativeId,
+          url: "https://shopify.pxf.io/c/7333540/" + v.creativeId + "/13624",
+          ctaText: v.ctaText,
+          impressionPixel: "https://imp.pxf.io/i/7333540/" + v.creativeId + "/13624",
+        });
+      }
+    }
+    return out;
+  }
+
   // Build a single highlight from a loaded series manifest. The series
   // is a curated package, so it sidesteps MIN/MAX caps and feature-ad
   // injection — every article in the manifest, in order, gets its own
@@ -278,14 +349,14 @@
     hi.push({
       key: "_latest",
       label: "Latest",
-      items: injectSubscribeAds(injectFeatureAds(fresh.slice(0, MAX_PER_HIGHLIGHT))),
+      items: injectShopifyAds(injectSubscribeAds(injectFeatureAds(fresh.slice(0, MAX_PER_HIGHLIGHT)))),
     });
 
     // Category buckets in the order we want them
     CATEGORY_ORDER.forEach(function (cat) {
       var items = byCat[cat];
       if (!items || items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT))) });
+      hi.push({ key: cat, label: cat, items: injectShopifyAds(injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)))) });
     });
 
     // Anything else, alphabetically
@@ -293,7 +364,7 @@
       if (CATEGORY_ORDER.indexOf(cat) !== -1) return;
       var items = byCat[cat];
       if (items.length < MIN_PER_HIGHLIGHT) return;
-      hi.push({ key: cat, label: cat, items: injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT))) });
+      hi.push({ key: cat, label: cat, items: injectShopifyAds(injectSubscribeAds(injectFeatureAds(items.slice(0, MAX_PER_HIGHLIGHT)))) });
     });
 
     return hi;
@@ -318,9 +389,10 @@
     var v = loadViewed();
     var bucket = v[h.key] || {};
     for (var i = 0; i < h.items.length; i++) {
-      // Ad slides (Feature Story + Subscribe) aren't editorial cards;
-      // they don't get a viewed tick, otherwise the ring would never dim.
-      if (h.items[i] && (h.items[i]._isFeatureAd || h.items[i]._isSubscribeAd)) continue;
+      // Ad slides (Feature Story + Subscribe + Shopify) aren't editorial
+      // cards; they don't get a viewed tick, otherwise the ring would
+      // never dim.
+      if (h.items[i] && (h.items[i]._isFeatureAd || h.items[i]._isSubscribeAd || h.items[i]._isShopifyAd)) continue;
       if (!bucket[h.items[i].slug]) return false;
     }
     return true;
@@ -455,9 +527,11 @@
 
     var isFeatureAd = !!snap._isFeatureAd;
     var isSubscribeAd = !!snap._isSubscribeAd;
-    var isAd = isFeatureAd || isSubscribeAd;
+    var isShopifyAd = !!snap._isShopifyAd;
+    var isAd = isFeatureAd || isSubscribeAd || isShopifyAd;
     var snapDuration = isFeatureAd ? FEATURE_AD_DURATION_MS
                      : isSubscribeAd ? SUBSCRIBE_AD_DURATION_MS
+                     : isShopifyAd ? SHOPIFY_AD_DURATION_MS
                      : SNAP_DURATION_MS;
 
     // Tap zones (don't intercept clicks on top/bottom UI)
@@ -476,26 +550,37 @@
       // card. Only the CTA pill navigates to the destination URL.
       // Top bar (close + share) stays visible on ad slides.
       v.overlay.style.background = "#0a0a0a";
-      var adHref = isSubscribeAd
-        ? "/subscribe.html"
-        : withHtml(snap.url || ("/articles/" + snap.slug));
-      var adWrap = el("div", { class: "story-feature-ad" });
+      var adHref;
+      if (isSubscribeAd) adHref = "/subscribe.html";
+      else if (isShopifyAd) adHref = snap.url;
+      else adHref = withHtml(snap.url || ("/articles/" + snap.slug));
+      var adWrap = el("div", { class: "story-feature-ad" +
+                                       (isShopifyAd ? " story-feature-ad--shopify" : "") });
       var adBg = el("div", { class: "story-feature-ad-bg" });
       if (snap.image) adBg.style.backgroundImage = 'url("' + snap.image + '")';
-      var eyebrowText = isSubscribeAd
-        ? (snap.eyebrow || "The Mutapa Times")
-        : "Feature Story of the Week";
-      var ctaText = isSubscribeAd
-        ? "Subscribe — it’s free"
-        : "Read the full feature";
+      var eyebrowText = isShopifyAd
+        ? (snap.eyebrow || "Sponsored by Shopify")
+        : isSubscribeAd
+          ? (snap.eyebrow || "The Mutapa Times")
+          : "Feature Story of the Week";
+      var ctaText = isShopifyAd
+        ? (snap.ctaText || "Visit Shopify") + " →"
+        : isSubscribeAd
+          ? "Subscribe — it’s free"
+          : "Read the full feature";
       // CTA is now its own anchor so clicks on the pill navigate while
       // clicks anywhere else on the slide hit the tap zones beneath.
-      var ctaLink = el("a", {
+      var ctaProps = {
         class: "story-feature-ad-cta",
         href: adHref,
         text: ctaText,
         onclick: function (ev) { ev.stopPropagation(); },
-      });
+      };
+      if (isShopifyAd) {
+        ctaProps.target = "_blank";
+        ctaProps.rel = "noopener sponsored";
+      }
+      var ctaLink = el("a", ctaProps);
       var adInner = el("div", { class: "story-feature-ad-inner" }, [
         el("p", { class: "story-feature-ad-eyebrow", text: eyebrowText }),
         el("h2", { class: "story-feature-ad-title", text: snap.title || "" }),
@@ -505,6 +590,15 @@
       adWrap.appendChild(adBg);
       adWrap.appendChild(adInner);
       v.overlay.appendChild(adWrap);
+
+      // Fire the Shopify impression pixel once per session per creative.
+      if (isShopifyAd && snap.impressionPixel && !_firedImpressions[snap.impressionPixel]) {
+        _firedImpressions[snap.impressionPixel] = 1;
+        var px = new Image(0, 0);
+        px.alt = "";
+        px.referrerPolicy = "no-referrer-when-downgrade";
+        px.src = snap.impressionPixel;
+      }
     } else {
       // Standard snap — title area + butter card + bottom CTA pill.
       var titleArea = el("div", { class: "story-title-area" }, [

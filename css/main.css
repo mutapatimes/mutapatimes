@@ -7904,14 +7904,13 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
 /* ───── Shopify negative-space ads ─────
    Format- AND viewport-aware. The JS picks the right creative for the
    slot (728×90 desktop / 320×50 mobile for leaderboards, 1200×628
-   desktop / 320×480 mobile for hero, 300×250 for rectangle). The CSS
-   here clamps the image to its natural size so it never stretches
-   beyond what it was designed for — that's the bug that made the
-   728×90 collapse to 40px tall on phones.
+   desktop / 320×480 mobile for hero, 300×250 for rectangle) and exposes
+   the creative's natural width as the custom property --ad-natural-width.
+   Desktop: card grows up to that natural width, image fills the card.
+   Mobile: full-bleed override below.
 */
 .shopify-banner {
   display: block;
-  width: auto;
   margin: 36px auto;
   padding: 14px 18px 16px;
   background: #fff;
@@ -7920,10 +7919,11 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03);
-  /* fit-content keeps the card snug around the creative on desktop,
-     so a 728×90 isn't sitting in a 1100px frame of empty padding. */
-  max-width: calc(100% - 24px);
-  width: fit-content;
+  /* Card never exceeds the creative's native width, never exceeds the
+     viewport. min() picks the tighter of the two. */
+  width: 100%;
+  max-width: min(var(--ad-natural-width, 100%), 100%);
+  overflow: hidden;
 }
 .shopify-banner--leaderboard { /* card snaps to creative width */ }
 .shopify-banner--hero        { padding: 18px; }
@@ -7947,41 +7947,29 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
 }
 .shopify-banner-link:hover { transform: translateY(-1px); text-decoration: none; }
 
-/* The CRITICAL rule: never upscale a creative past its native size.
-   width:auto + max-width:100% lets it shrink on narrow screens but
-   not stretch on wide ones. The intrinsic width/height attributes
-   on the <img> hold the layout space before the asset loads. */
+/* Image fills the card edge-to-edge; the card itself is what's capped
+   to the creative's natural width. */
 .shopify-banner-link img {
   display: block;
-  width: auto;
+  width: 100%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 6px;
 }
 
-.shopify-banner-caption {
-  margin: 10px 0 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--text-mid, #4a4a44);
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media (max-width: 540px) {
   /* Full-BLEED Shopify banner on mobile: break out of the parent's
      padding using negative margins so the creative reaches the actual
-     screen edge. Eyebrow keeps inner padding for legibility. Caption
-     hidden. Image stretches to 100vw. */
+     screen edge. Eyebrow keeps inner padding for legibility. Image
+     stretches to 100vw. */
   .shopify-banner {
     margin-top: 28px;
     margin-bottom: 28px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-    max-width: 100vw;
+    max-width: 100vw; /* override desktop's natural-width cap */
     padding: 0;
     border-radius: 0;
     border-left: 0;
@@ -8003,9 +7991,6 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
     height: auto;
     border-radius: 0;
     display: block;
-  }
-  .shopify-banner-caption {
-    display: none;
   }
 }
 
