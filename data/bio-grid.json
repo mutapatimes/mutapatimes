@@ -1,30 +1,86 @@
 {
-  "fetched_at": "2026-05-29T06:51:47+00:00",
+  "fetched_at": "2026-05-29T12:11:37+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Watchdog raises alarm over Dinson displacements, poor living conditions in Manhize",
-      "link": "https://mutapatimes.com/articles/2026-05-28-watchdog-raises-alarm-over-dinson-displacements-poor-living",
-      "image": "https://www.mutapatimes.com/img/cards/news/a20a147a4780.png",
-      "pubDate": "2026-05-28T23:10:21+00:00",
-      "category": "Culture"
-    },
-    {
-      "kind": "news",
-      "title": "Watchdog raises alarm over Dinson displacements, poor living conditions in Manhize",
-      "link": "https://mutapatimes.com/news/2026-05-29-watchdog-raises-alarm-over-dinson-displacements-poor-living-conditions-in-04c17b",
-      "image": "https://www.mutapatimes.com/img/cards/news/c9f596a91fcb.png",
-      "pubDate": "2026-05-28T23:10:21+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Raw mineral export ban sparks private power generation boom",
-      "link": "https://mutapatimes.com/articles/2026-05-28-raw-mineral-export-ban-sparks-private-power-generation-boom",
-      "image": "https://www.mutapatimes.com/img/cards/news/3e6d0ac0902d.png",
-      "pubDate": "2026-05-28T22:06:08+00:00",
+      "title": "China readies Zimbabwe for trade windfall",
+      "link": "https://mutapatimes.com/articles/2026-05-28-china-readies-zimbabwe-for-trade-windfall",
+      "image": "https://www.mutapatimes.com/img/cards/news/c7958abdd16f.png",
+      "pubDate": "2026-05-28T23:56:00+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "US dollar chase, expansion in focus as TSL eyes VFEX move",
+      "link": "https://mutapatimes.com/articles/2026-05-28-us-dollar-chase-expansion-in-focus-as-tsl-eyes-vfex-move",
+      "image": "https://www.mutapatimes.com/img/cards/news/72f0f4ed611f.png",
+      "pubDate": "2026-05-28T23:29:05+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Five emerging groups in Mat South Chibuku Neshamwari finals",
+      "link": "https://mutapatimes.com/articles/2026-05-28-five-emerging-groups-in-mat-south-chibuku-neshamwari-finals",
+      "image": "https://www.mutapatimes.com/img/cards/news/1a4caa2fe168.png",
+      "pubDate": "2026-05-28T23:20:57+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Young sprinter Mathuthu ready after big lessons on African stage",
+      "link": "https://mutapatimes.com/articles/2026-05-28-young-sprinter-mathuthu-ready-after-big-lessons-on-african-s",
+      "image": "https://www.mutapatimes.com/img/cards/news/43d9fd8e3552.png",
+      "pubDate": "2026-05-28T23:19:43+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Miss Nust 2026 pledges to champion community development",
+      "link": "https://mutapatimes.com/articles/2026-05-28-miss-nust-2026-pledges-to-champion-community-development",
+      "image": "https://www.mutapatimes.com/img/cards/news/0fcf5f9191cf.png",
+      "pubDate": "2026-05-28T23:16:17+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Watchdog raises alarm over Dinson displacements, poor living conditions in Manhize",
+      "link": "https://mutapatimes.com/news/2026-05-28-watchdog-raises-alarm-over-dinson-displacements-poor-living-conditions-in-3dee39",
+      "image": "https://www.mutapatimes.com/img/cards/news/279810f65f39.png",
+      "pubDate": "2026-05-28T23:10:21+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Kwekwe Crash Victims Named As Police Release Identities Of Six Killed In Harare-Bulawayo Road Horror Accident",
+      "link": "https://mutapatimes.com/news/2026-05-28-kwekwe-crash-victims-named-as-police-release-identities-of-six-killed-in-harare-707256",
+      "image": "https://www.mutapatimes.com/img/cards/news/02811132f128.png",
+      "pubDate": "2026-05-28T23:08:45+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mary-Anne Musonda appointed Lady Chevrons team manager",
+      "link": "https://mutapatimes.com/articles/2026-05-28-mary-anne-musonda-appointed-lady-chevrons-team-manager",
+      "image": "https://www.mutapatimes.com/img/cards/news/8c170a430519.png",
+      "pubDate": "2026-05-28T23:02:17+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Mary-Anne Musonda appointed Lady Chevrons team manager",
+      "link": "https://mutapatimes.com/news/2026-05-28-mary-anne-musonda-appointed-lady-chevrons-team-manager-a7d07b",
+      "image": "https://www.mutapatimes.com/img/cards/news/7c630d2ad5c4.png",
+      "pubDate": "2026-05-28T23:02:17+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa orders urgent action on road carnage after 24 die in five days",
+      "link": "https://mutapatimes.com/news/2026-05-28-mnangagwa-orders-urgent-action-on-road-carnage-after-24-die-in-five-days-cf9f21",
+      "image": "https://www.mutapatimes.com/img/cards/news/4f3cd435286a.png",
+      "pubDate": "2026-05-28T23:00:32+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -52,7 +108,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 29 May: Harare clear sky · high 23° / low 11°",
+      "title": "Zim weather 29 May: Harare clear sky · high 23° / low 12°",
       "link": "https://mutapatimes.com/weather?d=2026-05-29",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-29",
       "pubDate": "2026-05-28T22:00:00+00:00",
@@ -89,6 +145,54 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-05-28T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Quantity Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/quantity-surveyor-67682/",
+      "image": "https://mutapatimes.com/img/cards/jobs/14665a2fc89a.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "St Anne's Hospital — Claims Clerk",
+      "link": "https://vacancymail.co.zw/jobs/claims-clerk-67681/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0ff3f15d5712.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — DRONE PILOT",
+      "link": "https://vacancymail.co.zw/jobs/drone-pilot-67680/",
+      "image": "https://mutapatimes.com/img/cards/jobs/953b2d4ae5ab.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mega Market — AI & Automation Engineer",
+      "link": "https://vacancymail.co.zw/jobs/ai-automation-engineer-67679/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f606b8c963de.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mega Market — Infrastructure & Operations Manager",
+      "link": "https://vacancymail.co.zw/jobs/infrastructure-operations-manager-67678/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6f21218ad510.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mega Market — Information Security Manager",
+      "link": "https://vacancymail.co.zw/jobs/information-security-manager-67677/",
+      "image": "https://mutapatimes.com/img/cards/jobs/84b1d3bc0e31.png",
+      "pubDate": "2026-05-28T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -375,110 +479,6 @@
       "title": "REDAN — Supply Coordinator",
       "link": "https://vacancymail.co.zw/jobs/supply-coordinator-67638/",
       "image": "https://mutapatimes.com/img/cards/jobs/5c7adbf08f7d.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Senior Library Assistant",
-      "link": "https://vacancymail.co.zw/jobs/senior-library-assistant-67637/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ca35f944e5a3.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Principal Accountant",
-      "link": "https://vacancymail.co.zw/jobs/principal-accountant-67636/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3a7fff0b4ea5.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-67635/",
-      "image": "https://mutapatimes.com/img/cards/jobs/956455f39a3e.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Legal Services Officer (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/legal-services-officer-1-post-67634/",
-      "image": "https://mutapatimes.com/img/cards/jobs/234c38e25c18.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative & Driver (Male) (1 Position).",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-driver-male-1-position-67633/",
-      "image": "https://mutapatimes.com/img/cards/jobs/40a5fd6fd517.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative (Female) (1 Position).",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-female-1-position-67632/",
-      "image": "https://mutapatimes.com/img/cards/jobs/32eb47401775.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Dean of Students – Student Affairs Section (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/dean-of-students-student-affairs-section-1-post-67631/",
-      "image": "https://mutapatimes.com/img/cards/jobs/606a647b0ca4.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Procurement Manager – Procurement Management Unit (1 Post).",
-      "link": "https://vacancymail.co.zw/jobs/procurement-manager-procurement-management-unit-1-post-67630/",
-      "image": "https://mutapatimes.com/img/cards/jobs/50da4789adf4.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Director of Physical Planning, Works and Estates (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/director-of-physical-planning-works-and-estates-1-post-67629/",
-      "image": "https://mutapatimes.com/img/cards/jobs/94e1109a3408.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gweru Polytechnic College — Accountant",
-      "link": "https://vacancymail.co.zw/jobs/accountant-67628/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0f11acf1c9e6.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Internal Auditor",
-      "link": "https://vacancymail.co.zw/jobs/internal-auditor-67627/",
-      "image": "https://mutapatimes.com/img/cards/jobs/14c3faca13b0.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Municipality of Chinhoyi — Fitter and Turner",
-      "link": "https://vacancymail.co.zw/jobs/fitter-and-turner-67626/",
-      "image": "https://mutapatimes.com/img/cards/jobs/eb3a6bad556a.png",
-      "pubDate": "2026-05-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Municipality of Chinhoyi — Diesel Plant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/diesel-plant-fitter-67625/",
-      "image": "https://mutapatimes.com/img/cards/jobs/179e52876d2d.png",
       "pubDate": "2026-05-28T22:00:00+00:00",
       "category": "Jobs"
     }
