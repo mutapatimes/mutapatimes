@@ -38,12 +38,12 @@
           "currency": ""
         },
         {
-          "price": 935,
-          "airline": "EK",
-          "departure_at": "2026-08-10",
-          "return_at": "2026-08-31",
+          "price": 500,
+          "airline": "KQ",
+          "departure_at": "2026-08-15",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
+          "duration": 1385,
           "currency": ""
         },
         {
@@ -56,11 +56,11 @@
           "currency": ""
         },
         {
-          "price": 1068,
-          "airline": "ET",
-          "departure_at": "2026-12-10",
-          "return_at": "2027-01-04",
-          "stops": 1,
+          "price": 1244,
+          "airline": "UR",
+          "departure_at": "2026-12-20",
+          "return_at": "2027-01-06",
+          "stops": 2,
           "duration": null,
           "currency": ""
         },
@@ -85,6 +85,15 @@
           "currency": ""
         },
         {
+          "price": 500,
+          "airline": "KQ",
+          "departure_at": "2026-08-15",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1385,
+          "currency": ""
+        },
+        {
           "price": 552,
           "airline": "FR",
           "departure_at": "2026-06-07",
@@ -103,15 +112,6 @@
           "currency": ""
         },
         {
-          "price": 657,
-          "airline": "KQ",
-          "departure_at": "2026-10-01",
-          "return_at": "2026-10-28",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
-        },
-        {
           "price": 683,
           "airline": "EK",
           "departure_at": "2026-07-15",
@@ -125,7 +125,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -149,7 +149,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -171,7 +171,7 @@
           "error": null
         }
       ],
-      "observations": 18
+      "observations": 20
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -232,6 +232,15 @@
           "currency": ""
         },
         {
+          "price": 3819,
+          "airline": "5Z",
+          "departure_at": "2026-07-27",
+          "return_at": "",
+          "stops": 1,
+          "duration": 705,
+          "currency": ""
+        },
+        {
           "price": 8505,
           "airline": "4Z",
           "departure_at": "2026-08-26",
@@ -261,6 +270,15 @@
           "currency": ""
         },
         {
+          "price": 3819,
+          "airline": "5Z",
+          "departure_at": "2026-07-27",
+          "return_at": "",
+          "stops": 1,
+          "duration": 705,
+          "currency": ""
+        },
+        {
           "price": 8505,
           "airline": "4Z",
           "departure_at": "2026-08-26",
@@ -270,7 +288,7 @@
           "currency": ""
         },
         {
-          "price": 9845,
+          "price": 9859,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -283,7 +301,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -305,7 +323,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 8
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -332,7 +350,7 @@
       },
       "monthly": [
         {
-          "price": 4075,
+          "price": 4073,
           "airline": "FA",
           "departure_at": "2026-05-30",
           "return_at": "2026-06-02",
@@ -406,7 +424,7 @@
           "currency": ""
         },
         {
-          "price": 4559,
+          "price": 4623,
           "airline": "FN",
           "departure_at": "2026-09-23",
           "return_at": "2026-10-03",
@@ -605,7 +623,7 @@
           "currency": ""
         },
         {
-          "price": 2819,
+          "price": 2816,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
