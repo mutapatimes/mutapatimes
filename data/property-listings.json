@@ -1,8 +1,17 @@
 {
-  "fetched_at": "2026-05-29T04:42:11.257050+00:00",
+  "fetched_at": "2026-05-29T10:14:12.764576+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Marlborough 4-Bed Townhouse Complex — Solar, Walled",
+      "url": "https://www.property.co.zw/for-sale/townhouses-cami247862",
+      "price": "USD 135,000",
+      "location": "Marlborough, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/f5/f2/3a/f5f23a7b-b29b-4e39-89d5-6f2f46d49591_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
     {
       "title": "Incredible Investment opportunity",
       "url": "https://www.property.co.zw/for-sale/houses-clrp246618",
@@ -11,15 +20,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/1b/09/29/1b092914-e644-48d1-abfa-d4b96d1d8219_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
-    },
-    {
-      "title": "Modern Townhouses in the Heart of Greendale",
-      "url": "https://www.property.co.zw/for-sale/townhouses-pgp238705",
-      "price": "USD 217,000",
-      "location": "Greendale North, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/92/42/2f/92422f8b-666f-4e8b-8b11-1a5bdc5f1868_thumbnail591.webp",
-      "beds": "3",
-      "baths": "3"
     },
     {
       "title": "Luxury living in Mabvazuva Estate",
@@ -148,15 +148,6 @@
       "baths": "2"
     },
     {
-      "title": "Entertainers Paradise-4 Bedroom Home In Greendale",
-      "url": "https://www.property.co.zw/for-sale/houses-smtp229654",
-      "price": "USD 425,000",
-      "location": "Greendale, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/db/38/d7/db38d747-10ab-49ef-9284-503e66c4db4a_thumbnail591.webp",
-      "beds": "5",
-      "baths": ""
-    },
-    {
       "title": "Suburbs House for Sale",
       "url": "https://www.property.co.zw/for-sale/houses-pgp217944",
       "price": "USD 250,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/43/4e/e9/434ee979-1bc2-4434-930d-3f604774ac6d_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
+    },
+    {
+      "title": "Haydon Park 5Bed For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-psp239027",
+      "price": "USD 280,000",
+      "location": "Haydon Park, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/48/32/92/48329225-e0f2-4cab-8533-271b0d2de8d8_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
     }
   ]
 }
