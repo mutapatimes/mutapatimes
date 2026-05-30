@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-05-30T02:39:23+00:00",
+  "fetched_at": "2026-05-30T06:20:28+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Hwange-Nationalpark: Zimbabwe’s Wild Giant for U.S. Travelers",
+      "link": "https://mutapatimes.com/articles/2026-05-30-hwange-nationalpark-zimbabwes-wild-giant-for-us-travelers",
+      "image": "https://www.mutapatimes.com/img/cards/news/4eab6e3426da.png",
+      "pubDate": "2026-05-30T04:28:33+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Hwange-Nationalpark: Zimbabwe’s Wild Giant for U.S. Travelers",
+      "link": "https://mutapatimes.com/news/2026-05-30-hwange-nationalpark-zimbabwe-s-wild-giant-for-u-s-travelers-5e3210",
+      "image": "https://www.mutapatimes.com/img/cards/news/e5845d343791.png",
+      "pubDate": "2026-05-30T04:28:33+00:00",
+      "category": "Science"
+    },
     {
       "kind": "economy",
       "title": "Zim current account in 2025: $1.8B. Five-year trend shows persistent near-balance.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 30 May 2026: 1 USD = 26.89 ZWG · best from UK £100 → $131.19 via Wise",
+      "title": "Zim FX snapshot 30 May 2026: 1 USD = 26.92 ZWG · best from UK £100 → $131.25 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-05-30",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-30",
       "pubDate": "2026-05-29T22:00:00+00:00",
@@ -57,6 +73,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-05-29T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Richmond Furniture — accountant",
+      "link": "https://vacancymail.co.zw/jobs/accountant-67693/",
+      "image": "https://mutapatimes.com/img/cards/jobs/979d0b33c1b7.png",
+      "pubDate": "2026-05-29T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -455,30 +479,6 @@
       "title": "Assistant Loan Officers",
       "link": "https://vacancymail.co.zw/jobs/assistant-loan-officers-67640/",
       "image": "https://mutapatimes.com/img/cards/jobs/cda914fb6942.png",
-      "pubDate": "2026-05-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plus Five Pharmaceuticals — Sales and Marketing Manager",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-manager-67639/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f62d6367f3c4.png",
-      "pubDate": "2026-05-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "REDAN — Supply Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/supply-coordinator-67638/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5c7adbf08f7d.png",
-      "pubDate": "2026-05-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Senior Library Assistant",
-      "link": "https://vacancymail.co.zw/jobs/senior-library-assistant-67637/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ca35f944e5a3.png",
       "pubDate": "2026-05-29T22:00:00+00:00",
       "category": "Jobs"
     }
