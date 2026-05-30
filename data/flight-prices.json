@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-29",
+  "fetched_at": "2026-05-30",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -56,10 +56,10 @@
           "currency": ""
         },
         {
-          "price": 1244,
-          "airline": "UR",
-          "departure_at": "2026-12-20",
-          "return_at": "2027-01-06",
+          "price": 1166,
+          "airline": "WB",
+          "departure_at": "2026-12-10",
+          "return_at": "2027-01-04",
           "stops": 2,
           "duration": null,
           "currency": ""
@@ -94,12 +94,12 @@
           "currency": ""
         },
         {
-          "price": 552,
+          "price": 501,
           "airline": "FR",
           "departure_at": "2026-06-07",
           "return_at": "",
           "stops": 3,
-          "duration": 1800,
+          "duration": 1920,
           "currency": ""
         },
         {
@@ -171,7 +171,7 @@
           "error": null
         }
       ],
-      "observations": 20
+      "observations": 19
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -288,7 +288,7 @@
           "currency": ""
         },
         {
-          "price": 9859,
+          "price": 9794,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -331,18 +331,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1545,
+        "price": 1492,
         "airline": "FA",
-        "departure_at": "2026-06-07",
+        "departure_at": "2026-06-17",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1545,
+        "price": 1492,
         "airline": "FA",
-        "departure_at": "2026-06-07",
+        "departure_at": "2026-06-17",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -350,18 +350,18 @@
       },
       "monthly": [
         {
-          "price": 4073,
-          "airline": "FA",
+          "price": 5768,
+          "airline": "RN",
           "departure_at": "2026-05-30",
           "return_at": "2026-06-02",
-          "stops": 0,
+          "stops": 1,
           "duration": null,
           "currency": ""
         },
         {
-          "price": 1545,
+          "price": 1492,
           "airline": "FA",
-          "departure_at": "2026-06-07",
+          "departure_at": "2026-06-17",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -415,20 +415,29 @@
       ],
       "by_airline": [
         {
-          "price": 1545,
+          "price": 1492,
           "airline": "FA",
-          "departure_at": "2026-06-07",
+          "departure_at": "2026-06-17",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 4623,
+          "price": 4619,
           "airline": "FN",
           "departure_at": "2026-09-23",
           "return_at": "2026-10-03",
           "stops": 0,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 5768,
+          "airline": "RN",
+          "departure_at": "2026-05-30",
+          "return_at": "2026-06-02",
+          "stops": 1,
           "duration": null,
           "currency": ""
         }
@@ -567,6 +576,15 @@
       "cheapest_direct": null,
       "monthly": [
         {
+          "price": 2982,
+          "airline": "FZ",
+          "departure_at": "2026-05-30",
+          "return_at": "2026-06-05",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
           "price": 1190,
           "airline": "KQ",
           "departure_at": "2026-06-19",
@@ -623,12 +641,21 @@
           "currency": ""
         },
         {
-          "price": 2816,
+          "price": 2824,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
           "stops": 2,
           "duration": 1550,
+          "currency": ""
+        },
+        {
+          "price": 2982,
+          "airline": "FZ",
+          "departure_at": "2026-05-30",
+          "return_at": "2026-06-05",
+          "stops": 1,
+          "duration": null,
           "currency": ""
         }
       ],
@@ -642,7 +669,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -658,7 +685,7 @@
           "error": null
         }
       ],
-      "observations": 8
+      "observations": 9
     },
     "toronto-to-harare": {
       "origin": "YYZ",
