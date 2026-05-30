@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 14:08:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 16:01:38 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,6 +53,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/4eab6e3426da.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4eab6e3426da.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/4eab6e3426da.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>City Parking boss bags PhD @zimsituation</title>
+      <link>https://mutapatimes.com/stories/8698acfdf2ed.html</link>
+      <description>Source: City Parking boss bags PhD –Newsday Zimbabwe The City Parking Board and Management announced yesterday that Muzviyo graduated with a PhD in Business and Management, calling it “a testament to his dedication, intellectual rigor, and visionary leadership.” In a statement, t via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Sat, 30 May 2026 03:28:19 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/8698acfdf2ed.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/8698acfdf2ed.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/8698acfdf2ed.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/8698acfdf2ed.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>US$94m unveiled to uplift vulnerable households</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/559e21b56cf7.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/559e21b56cf7.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/559e21b56cf7.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Assistant Loan Officers</title>
-      <link>https://mutapatimes.com/stories/cda914fb6942.html</link>
-      <description>Wildfin Microfinance is hereby looking for assistant loans officers with at least A level good passes.Passing of commercial subjects is an added advantage. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 29 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/cda914fb6942.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/cda914fb6942.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/cda914fb6942.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/cda914fb6942.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
