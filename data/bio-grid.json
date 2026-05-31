@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-05-31T02:56:33+00:00",
+  "fetched_at": "2026-05-31T06:56:40+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Byo industries buckle under the weight of illegal sanctions",
-      "link": "https://mutapatimes.com/articles/2026-05-30-byo-industries-buckle-under-the-weight-of-illegal-sanctions",
-      "image": "https://www.mutapatimes.com/img/cards/news/f4bfe3429a92.png",
-      "pubDate": "2026-05-30T22:07:41+00:00",
-      "category": "Policy"
-    },
     {
       "kind": "economy",
       "title": "Zim education sector: $768M in 2025 Q4, 4.0% of GDP.",
@@ -20,7 +12,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 31 May 2026: 1 USD = 26.92 ZWG · best from UK £100 → $131.25 via Wise",
+      "title": "Zim FX snapshot 31 May 2026: 1 USD = 26.92 ZWG · best from UK £100 → $131.33 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-05-31",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-05-31",
       "pubDate": "2026-05-30T22:00:00+00:00",
@@ -479,6 +471,14 @@
       "title": "Assistant Loan Officers",
       "link": "https://vacancymail.co.zw/jobs/assistant-loan-officers-67640/",
       "image": "https://mutapatimes.com/img/cards/jobs/cda914fb6942.png",
+      "pubDate": "2026-05-30T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Plus Five Pharmaceuticals — Sales and Marketing Manager",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-manager-67639/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f62d6367f3c4.png",
       "pubDate": "2026-05-30T22:00:00+00:00",
       "category": "Jobs"
     }
