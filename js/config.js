@@ -1066,91 +1066,108 @@ function generateShareImage(articleData) {
     var skylineImg = results[1];
     var articleImg = results[2];
 
-    // Portrait format — dark card with skyline image fade
-    var W = 1080, H = 1350;
+    // Portrait IG-Story format (1080x1920, 9:16). Paper card with a
+    // skyline photo anchoring the top third and a hairline-divided
+    // editorial layout below. Palette matches the site: paper #fafaf7,
+    // ink #121212, accent #c41e1e (brand red), hairline #e8e6df.
+    var W = 1080, H = 1920;
     var canvas = document.createElement('canvas');
     canvas.width = W;
     canvas.height = H;
     var ctx = canvas.getContext('2d');
-    var pad = 64;
+    var pad = 72;
     var contentWidth = W - pad * 2;
 
-    // ─── Dark background ───
-    ctx.fillStyle = '#0f1a12';
+    var PAPER  = '#fafaf7';
+    var INK    = '#121212';
+    var MID    = '#4a4a44';
+    var LIGHT  = '#8b8678';
+    var HAIR   = '#e8e6df';
+    var ACCENT = '#c41e1e';
+
+    // Paper background
+    ctx.fillStyle = PAPER;
     ctx.fillRect(0, 0, W, H);
 
-    // ─── Skyline image at top with gradient fade ───
-    var skyH = 420;
+    // Skyline photo at top, gradient-faded into paper
+    var skyH = 640;
     if (skylineImg) {
       var sRatio = skylineImg.naturalWidth / skylineImg.naturalHeight;
       var sW = W, sH = W / sRatio;
       if (sH < skyH) { sH = skyH; sW = skyH * sRatio; }
       var sX = (W - sW) / 2, sY = 0;
       ctx.drawImage(skylineImg, sX, sY, sW, sH);
-      // Gradient fade from image into dark bg
-      var fadeGrd = ctx.createLinearGradient(0, skyH * 0.3, 0, skyH);
-      fadeGrd.addColorStop(0, 'rgba(15,26,18,0)');
-      fadeGrd.addColorStop(1, 'rgba(15,26,18,1)');
+      var fadeGrd = ctx.createLinearGradient(0, skyH * 0.55, 0, skyH);
+      fadeGrd.addColorStop(0, 'rgba(250,250,247,0)');
+      fadeGrd.addColorStop(1, 'rgba(250,250,247,1)');
       ctx.fillStyle = fadeGrd;
       ctx.fillRect(0, 0, W, skyH);
     }
 
-    // ─── Masthead overlay on image ───
+    // Masthead overlay on photo
     ctx.textBaseline = 'top';
     ctx.fillStyle = 'rgba(255,255,255,0.95)';
-    ctx.font = '900 68px "Playfair Display", Georgia, serif';
+    ctx.font = '900 76px "Playfair Display", Georgia, serif';
     var mastheadText = 'THE MUTAPA TIMES';
     var mastheadW = ctx.measureText(mastheadText).width;
-    ctx.fillText(mastheadText, (W - mastheadW) / 2, 32);
+    ctx.fillText(mastheadText, (W - mastheadW) / 2, 56);
 
     // Thin rule under masthead
-    ctx.fillStyle = 'rgba(255,255,255,0.3)';
-    ctx.fillRect(pad, 116, contentWidth, 1);
+    ctx.fillStyle = 'rgba(255,255,255,0.32)';
+    ctx.fillRect(pad, 156, contentWidth, 1);
 
-    // ─── Category / Source pill ───
-    var y = skyH + 30;
-    ctx.font = '600 15px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.5)';
+    // Eyebrow under masthead, on photo
+    ctx.font = '700 18px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.78)';
+    var tagText = 'ZIMBABWE OUTSIDE-IN';
+    var tagW = ctx.measureText(tagText).width;
+    ctx.fillText(tagText, (W - tagW) / 2, 174);
+
+    // Body section (on paper)
+    var y = skyH + 48;
+
+    // Category / source eyebrow in brand red
+    ctx.font = '700 22px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = ACCENT;
     var labelParts = [];
     if (articleData.isLocal) labelParts.push('LOCAL');
     else if (articleData.source) labelParts.push('FOREIGN');
     if (articleData.category) labelParts.push(articleData.category.toUpperCase());
     if (labelParts.length) {
-      ctx.fillText(labelParts.join('  \u2022  '), pad, y);
-      y += 36;
+      ctx.fillText(labelParts.join('   \u00b7   '), pad, y);
+      y += 52;
     }
 
-    // ─── Headline — large, white, serif ───
+    // Headline (large, ink, Playfair serif)
     var titleLen = (articleData.title || '').length;
-    var headlineSize = titleLen > 120 ? 38 : (titleLen > 80 ? 44 : (titleLen > 50 ? 50 : 58));
-    var headlineLineH = Math.round(headlineSize * 1.3);
-    ctx.font = '700 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
-    ctx.fillStyle = '#ffffff';
-    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 340, 5);
-    y += 24;
+    var headlineSize = titleLen > 120 ? 50 : (titleLen > 80 ? 58 : (titleLen > 50 ? 66 : 76));
+    var headlineLineH = Math.round(headlineSize * 1.18);
+    ctx.font = '900 ' + headlineSize + 'px "Playfair Display", Georgia, serif';
+    ctx.fillStyle = INK;
+    y = shareCardWrapText(ctx, articleData.title || '', pad, y, contentWidth, headlineLineH, H - 480, 5);
+    y += 32;
 
-    // ─── Source + date line ───
-    ctx.font = '500 18px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.6)';
+    // Source + date meta
+    ctx.font = '500 24px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = MID;
     var metaParts = [];
     if (articleData.source) metaParts.push(articleData.source);
     var pubDate = formatDate(articleData.publishedAt);
     if (pubDate) metaParts.push(pubDate);
     if (metaParts.length) {
-      ctx.fillText(metaParts.join('  \u00b7  '), pad, y);
-      y += 40;
+      ctx.fillText(metaParts.join('   \u00b7   '), pad, y);
+      y += 56;
     }
 
-    // ─── Article image (if available) ───
+    // Article image (capped so the footer stays clean)
     if (articleImg) {
       var artImgW = contentWidth;
       var artImgH = Math.round(artImgW * 0.5);
-      var maxImgH = H - y - 240;
+      var maxImgH = H - y - 340;
       if (artImgH > maxImgH) artImgH = maxImgH;
-      if (artImgH > 100) {
+      if (artImgH > 140) {
         ctx.save();
-        // Rounded corners
-        var r = 8;
+        var r = 10;
         ctx.beginPath();
         ctx.moveTo(pad + r, y);
         ctx.lineTo(pad + artImgW - r, y);
@@ -1170,41 +1187,39 @@ function generateShareImage(articleData) {
         var adY = y + (artImgH - adH) / 2;
         ctx.drawImage(articleImg, adX, adY, adW, adH);
         ctx.restore();
-        y += artImgH + 24;
+        y += artImgH + 32;
       }
     }
 
-    // ─── Description snippet ───
-    var footerY = H - 160;
-    if (articleData.description && y < footerY - 60) {
-      ctx.font = '400 20px "Inter", "Helvetica Neue", sans-serif';
-      ctx.fillStyle = 'rgba(255,255,255,0.55)';
+    // Description snippet
+    var footerY = H - 240;
+    if (articleData.description && y < footerY - 80) {
+      ctx.font = '400 26px "Inter", "Helvetica Neue", sans-serif';
+      ctx.fillStyle = MID;
       ctx.textBaseline = 'top';
       var desc = articleData.description;
-      if (desc.length > 180) desc = desc.substring(0, 177) + '...';
-      y = shareCardWrapText(ctx, desc, pad, y, contentWidth, 30, footerY - 20, 3);
+      if (desc.length > 200) desc = desc.substring(0, 197) + '...';
+      y = shareCardWrapText(ctx, desc, pad, y, contentWidth, 38, footerY - 24, 3);
     }
 
-    // ─── Footer area ───
-    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    // Footer hairline + domain + brand-red CTA pill
+    ctx.fillStyle = HAIR;
     ctx.fillRect(pad, footerY, contentWidth, 1);
-    footerY += 24;
+    footerY += 36;
 
-    // Domain
-    ctx.font = '700 22px "Inter", "Helvetica Neue", sans-serif';
-    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 28px "Inter", "Helvetica Neue", sans-serif';
+    ctx.fillStyle = INK;
     ctx.textBaseline = 'top';
     ctx.fillText('mutapatimes.com', pad, footerY);
 
-    // "Read more" CTA pill — brand green
     var ctaText = 'Read more';
-    ctx.font = '600 15px "Inter", "Helvetica Neue", sans-serif';
-    var ctaW = ctx.measureText(ctaText).width + 32;
-    var ctaH = 34;
+    ctx.font = '700 18px "Inter", "Helvetica Neue", sans-serif';
+    var ctaW = ctx.measureText(ctaText).width + 44;
+    var ctaH = 48;
     var ctaX = W - pad - ctaW;
-    var ctaY = footerY - 2;
+    var ctaY = footerY - 6;
     var ctaR = 4;
-    ctx.fillStyle = '#2e7d42';
+    ctx.fillStyle = ACCENT;
     ctx.beginPath();
     ctx.moveTo(ctaX + ctaR, ctaY);
     ctx.lineTo(ctaX + ctaW - ctaR, ctaY);
@@ -1219,13 +1234,13 @@ function generateShareImage(articleData) {
     ctx.fill();
     ctx.fillStyle = '#ffffff';
     ctx.textBaseline = 'middle';
-    ctx.fillText(ctaText, ctaX + 16, ctaY + ctaH / 2 + 1);
+    ctx.fillText(ctaText, ctaX + 22, ctaY + ctaH / 2 + 1);
 
-    // Tagline
+    // Bottom tagline (light grey, no em dashes per house style)
     ctx.textBaseline = 'top';
-    ctx.font = '400 16px "Helvetica Neue", Arial, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.35)';
-    ctx.fillText('Business & intelligence \u2014 Zimbabwe, outside-in', pad, footerY + 48);
+    ctx.font = '500 20px "Helvetica Neue", Arial, sans-serif';
+    ctx.fillStyle = LIGHT;
+    ctx.fillText('Business and intelligence for the Zimbabwean diaspora', pad, footerY + 78);
 
     // Convert to blob
     return new Promise(function(resolve) {
@@ -1683,7 +1698,7 @@ function renderMainStories(articles) {
       btn.prop('disabled', true).text("Subscribing\u2026");
       statusMsg.text("Subscribing\u2026").css("color", "#6b6b6b").show();
       setTimeout(function() {
-        statusMsg.text("Welcome to the Mutapa Times.").css("color", "#00897b");
+        statusMsg.text("Welcome to the Mutapa Times.").css("color", "#c41e1e");
         form.find("input").val("");
         btn.prop('disabled', false).text("Subscribe \u2014 It\u2019s Free");
       }, 2000);
