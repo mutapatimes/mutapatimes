@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 21:57:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 02:56:32 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 30 May: Harare clear sky · high 21° / low 10°</title>
-      <link>https://mutapatimes.com/weather?d=2026-05-30</link>
-      <description>Harare: high 21°, low 10° (clear sky) · Bulawayo: high 20°, low 11° (clear sky) · Mutare: high 20°, low 10° (overcast) · Gweru: high 20°, low 10° (clear sky) · Masvingo: high 21°, low 9° (mainly clear) · Victoria Falls: high 26°, low 12° (clear sky) Tsumo yezuva: Nzara haina hama. (Hunger has no relatives.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Fri, 29 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-05-30</guid>
+      <title>Zim weather 31 May: Harare clear sky · high 21° / low 10°</title>
+      <link>https://mutapatimes.com/weather?d=2026-05-31</link>
+      <description>Harare: high 21°, low 10° (clear sky) · Bulawayo: high 20°, low 11° (clear sky) · Mutare: high 20°, low 10° (overcast) · Gweru: high 20°, low 10° (clear sky) · Masvingo: high 21°, low 9° (mainly clear) · Victoria Falls: high 26°, low 12° (clear sky) Tsumo yezuva: Chitsva chiri murutsoka. (What is new is underfoot.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
+      <pubDate>Sat, 30 May 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-05-31</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-30" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-30"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-30" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-31" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-31"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-31" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
