@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-05-31T06:56:40+00:00",
+  "fetched_at": "2026-05-31T10:53:57+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Byo industries buckle under the weight of illegal sanctions",
+      "link": "https://mutapatimes.com/news/2026-05-30-byo-industries-buckle-under-the-weight-of-illegal-sanctions-30ebf8",
+      "image": "https://www.mutapatimes.com/img/cards/news/451c9ee468b9.png",
+      "pubDate": "2026-05-30T22:07:41+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim education sector: $768M in 2025 Q4, 4.0% of GDP.",
@@ -20,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 31 May: Harare clear sky · high 21° / low 10°",
+      "title": "Zim weather 31 May: Harare overcast · high 20° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-05-31",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-05-31",
       "pubDate": "2026-05-30T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Assistant Loan Officers",
       "link": "https://vacancymail.co.zw/jobs/assistant-loan-officers-67640/",
       "image": "https://mutapatimes.com/img/cards/jobs/cda914fb6942.png",
-      "pubDate": "2026-05-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plus Five Pharmaceuticals — Sales and Marketing Manager",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-manager-67639/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f62d6367f3c4.png",
       "pubDate": "2026-05-30T22:00:00+00:00",
       "category": "Jobs"
     }
