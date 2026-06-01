@@ -511,7 +511,7 @@ function parseCmsFrontmatter(raw) {
 // MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
 function loadMainStories() {
-  var cacheKey = "main_all_v2";
+  var cacheKey = "main_all_v3"; // v3: Zimbabwe-relevance filter applied at normalize time
   var cached = getCache(cacheKey);
   if (cached) {
     _allMainArticles = cached;
@@ -619,7 +619,7 @@ function loadMainStories() {
 // SIDEBAR — additional feeds, broader coverage
 // ============================================================
 function loadSidebarStories() {
-  var cacheKey = "sidebar_all";
+  var cacheKey = "sidebar_all_v2"; // v2: Zimbabwe-relevance filter applied at normalize time
   var cached = getCache(cacheKey);
   if (cached) {
     _allSidebarArticles = cached;
@@ -696,6 +696,36 @@ function isLocalZimSource(source) {
   var s = source.toLowerCase();
   for (var i = 0; i < LOCAL_ZIM_SOURCES.length; i++) {
     if (s.indexOf(LOCAL_ZIM_SOURCES[i]) !== -1) return true;
+  }
+  return false;
+}
+
+// Zimbabwe-relevance check for live RSS results.
+// Google News RSS returns loose matches; without this filter,
+// off-topic items leak in (e.g. a UK football story whose related-news
+// block mentions Zimbabwe). Pass if the source is a known Zim outlet,
+// OR if the title + description mention at least one Zim-relevant token.
+var ZIM_RELEVANT_TERMS = [
+  "zimbabwe", "zimbabwean", "zim ", "zim,", "zim.", "zim'",
+  "harare", "bulawayo", "mutare", "gweru", "masvingo", "chitungwiza",
+  "victoria falls", "kwekwe", "kadoma", "chinhoyi", "marondera",
+  "bindura", "zvishavane", "redcliff", "rusape", "beitbridge",
+  "matabeleland", "mashonaland", "manicaland", "midlands province",
+  "zanu", "zanu-pf", "zanu pf", " mdc ", "ccc ", "mnangagwa",
+  "chamisa", "mugabe", "tsvangirai", "kasukuwere",
+  "rbz", "zse", "vfex", "zwg", "zwl", "rtgs",
+  "warriors", "mighty warriors", "dynamos", "highlanders",
+  "sables", "lady chevrons", "chevrons",
+  "great zimbabwe", "great dyke", "shona", "ndebele"
+];
+function isZimRelevant(article) {
+  if (!article) return false;
+  if (article.isLocal) return true;
+  if (isLocalZimSource(article.source)) return true;
+  var blob = ((article.title || "") + " " + (article.description || "")).toLowerCase();
+  if (!blob.trim()) return false;
+  for (var i = 0; i < ZIM_RELEVANT_TERMS.length; i++) {
+    if (blob.indexOf(ZIM_RELEVANT_TERMS[i]) !== -1) return true;
   }
   return false;
 }
@@ -779,14 +809,18 @@ function normalizeRssArticles(items) {
       desc = _aiDescriptions[url];
     }
 
-    result.push({
+    var article = {
       title: parsed.headline,
       url: url,
       description: desc,
       source: parsed.source,
       publishedAt: item.pubDate || "",
       isLocal: isLocalZimSource(parsed.source)
-    });
+    };
+    // Drop off-topic results returned by Google News RSS (a UK football
+    // story shouldn't make it onto a Zimbabwe-diaspora newspaper).
+    if (!isZimRelevant(article)) continue;
+    result.push(article);
   }
   return result;
 }
