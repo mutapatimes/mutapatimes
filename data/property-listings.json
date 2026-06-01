@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-01T12:08:42.377783+00:00",
+  "fetched_at": "2026-06-01T18:15:45.711275+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -83,15 +83,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/ed/27/05/ed270528-d97c-4c69-8bb8-6b5074acde97_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
-    },
-    {
-      "title": "Family home!!!",
-      "url": "https://www.property.co.zw/for-sale/houses-pnt247595",
-      "price": "USD 37,000",
-      "location": "Chitungwiza",
-      "image": "https://www.property.co.zw/uploadedfiles/32/3f/21/323f2186-f623-4e9f-b743-d1acef4dff80_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     },
     {
       "title": "Charming double Storey Home in Borrowdale Brooke!",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/e2/16/b8/e216b880-e4cd-4420-9d98-ebe2fc591d65_thumbnail591.webp",
       "beds": "",
       "baths": ""
+    },
+    {
+      "title": "Reduced To Go",
+      "url": "https://www.property.co.zw/for-sale/houses-hmsl248042",
+      "price": "USD 320,000",
+      "location": "Pomona, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/9c/30/fb/9c30fb9b-9cf2-4423-909b-109da369dada_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     }
   ]
 }

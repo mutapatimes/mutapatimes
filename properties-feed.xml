@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jun 2026 17:28:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 18:15:51 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -125,18 +125,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/31a31f8a74e4.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/31a31f8a74e4.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/31a31f8a74e4.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 37,000 — Family home!!! (Chitungwiza)</title>
-      <link>https://mutapatimes.com/property-landing/14628af297d7.html</link>
-      <description>USD 37,000 — Chitungwiza. 4 beds, 2 baths. Family home!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 31 May 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/14628af297d7.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/14628af297d7.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/14628af297d7.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/14628af297d7.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 560,000 — Charming double Storey Home in Borrowdale Brooke! (Borrowdale Brooke, Harare North)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/e212003299f6.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/e212003299f6.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/e212003299f6.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 320,000 — Reduced To Go (Pomona, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/15be36adcd8b.html</link>
+      <description>USD 320,000 — Pomona, Harare North. 4 beds, 3 baths. Reduced To Go. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 31 May 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/15be36adcd8b.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/15be36adcd8b.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/15be36adcd8b.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/15be36adcd8b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
