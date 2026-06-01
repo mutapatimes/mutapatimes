@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-31",
+  "fetched_at": "2026-06-01",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -65,10 +65,10 @@
           "currency": ""
         },
         {
-          "price": 779,
-          "airline": "EK",
-          "departure_at": "2027-02-20",
-          "return_at": "2027-03-05",
+          "price": 815,
+          "airline": "ET",
+          "departure_at": "2027-02-12",
+          "return_at": "2027-02-28",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -515,15 +515,6 @@
           "stops": 1,
           "duration": null,
           "currency": ""
-        },
-        {
-          "price": 1411,
-          "airline": "KQ",
-          "departure_at": "2026-08-11",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1820,
-          "currency": ""
         }
       ],
       "by_airline": [
@@ -537,12 +528,30 @@
           "currency": ""
         },
         {
-          "price": 2383,
-          "airline": "ET",
-          "departure_at": "2026-06-02",
-          "return_at": "2026-06-28",
+          "price": 1508,
+          "airline": "FZ",
+          "departure_at": "2026-06-03",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
+          "duration": 1525,
+          "currency": ""
+        },
+        {
+          "price": 1859,
+          "airline": "ET",
+          "departure_at": "2026-06-01",
+          "return_at": "",
+          "stops": 1,
+          "duration": 620,
+          "currency": ""
+        },
+        {
+          "price": 2931,
+          "airline": "Wingie",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 2,
+          "duration": 1865,
           "currency": ""
         }
       ],
@@ -550,7 +559,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 4,
+          "n": 7,
           "error": null
         },
         {
@@ -568,11 +577,11 @@
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 10
     },
     "toronto-to-harare": {
       "origin": "YYZ",
