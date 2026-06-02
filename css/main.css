@@ -4150,11 +4150,12 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .job-card--intern:hover { border-color: var(--ink); }
 .job-card--intern:hover .job-card-title { color: var(--accent); }
 
-/* ─── Harare Hotels affiliate rail (js/harare-hotels.js) ───
-   Editorial strip, not a banner: "Sponsored stays" eyebrow, a
-   horizontally-scrolling row of cards reusing the .job-card look. */
+/* ─── Hotels carousel (js/harare-hotels.js) ───
+   Editorial "Sponsored stays" rail, never a banner. Two variants:
+   --feature : prominent 4-up rail, large images (article / flight pages)
+   --feed    : compact rail that blends into a city news feed mid-list. */
 .hh-rail {
-  max-width: 1100px; margin: 40px auto; padding: 0 20px;
+  max-width: 1180px; margin: 40px auto; padding: 0 20px;
 }
 .hh-rail-head { margin-bottom: 14px; }
 .hh-rail-eyebrow {
@@ -4164,7 +4165,7 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 }
 .hh-rail-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.5rem; font-weight: 700; line-height: 1.2;
+  font-size: 1.6rem; font-weight: 700; line-height: 1.2;
   margin: 0 0 4px; color: var(--ink);
 }
 .hh-rail-sub {
@@ -4172,13 +4173,30 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 }
 .hh-rail-stage { position: relative; }
 .hh-rail-track {
-  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(210px, 1fr);
-  gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+  display: grid; grid-auto-flow: column;
+  gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; padding: 4px 2px 12px;
   scrollbar-width: none; scroll-behavior: smooth;
 }
 .hh-rail-track::-webkit-scrollbar { display: none; }
 .hh-rail-track:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+
+/* feature — 4 large cards across on desktop, scrolls to reveal more */
+.hh-rail--feature .hh-rail-track { grid-auto-columns: calc((100% - 48px) / 4); }
+.hh-rail--feature .hh-card-imgwrap { aspect-ratio: 3 / 2; }
+.hh-rail--feature .hh-card-name { font-size: 1.12rem; }
+@media (max-width: 1024px) { .hh-rail--feature .hh-rail-track { grid-auto-columns: calc((100% - 32px) / 3); } }
+@media (max-width: 760px)  { .hh-rail--feature .hh-rail-track { grid-auto-columns: 74%; } }
+
+/* feed — sits inside the city article column; reads as one feed entry */
+.hh-rail--feed {
+  max-width: none; margin: 22px 0; padding: 18px 0 6px;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.hh-rail--feed .hh-rail-title { font-size: 1.22rem; }
+.hh-rail--feed .hh-rail-track { grid-auto-columns: minmax(190px, 1fr); }
+.hh-rail--feed .hh-card-imgwrap { aspect-ratio: 16 / 9; }
+@media (max-width: 760px) { .hh-rail--feed .hh-rail-track { grid-auto-columns: 70%; } }
 
 /* Carousel arrows — circular, float over the track edges on desktop. */
 .hh-rail-arrow {
@@ -4229,8 +4247,56 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.8rem; font-weight: 600; color: var(--accent); margin: 6px 0 0;
 }
-.hh-rail-disclosure {
-  font-size: 0.72rem; color: var(--text-light); margin: 8px 0 0; line-height: 1.5;
+/* card fade for the area-filter on longform stay pages */
+.hh-card[hidden] { display: none; }
+.hh-card.hh-card--dim { opacity: 0.28; }
+
+/* ─── "Where to stay" scrollytelling longform (js/stay-longform.js) ─── */
+.stay-progress {
+  position: fixed; top: 0; left: 0; width: 100%; height: 3px;
+  background: var(--accent); transform: scaleX(0); transform-origin: 0 50%;
+  z-index: 1200; will-change: transform;
+}
+.stay-nav {
+  position: sticky; top: 0; z-index: 60;
+  background: rgba(250,250,247,0.94); backdrop-filter: saturate(1.2) blur(8px);
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  margin: 28px 0;
+}
+.stay-nav-inner {
+  display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none;
+  padding: 10px 2px; max-width: 760px; margin: 0 auto;
+}
+.stay-nav-inner::-webkit-scrollbar { display: none; }
+.stay-nav-link {
+  flex: 0 0 auto; font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem; font-weight: 600; color: var(--text-mid);
+  text-decoration: none; padding: 6px 14px; border-radius: 999px;
+  border: 1px solid var(--rule); background: #fff; white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.stay-nav-link:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.stay-nav-link.is-active { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+.stay-section { scroll-margin-top: 72px; }
+.stay-reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s var(--ease-soft), transform 0.6s var(--ease-soft); }
+.stay-reveal.is-visible { opacity: 1; transform: none; }
+
+.stay-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 2px; }
+.stay-filter-chip {
+  font-family: 'Inter', system-ui, sans-serif; font-size: 0.76rem; font-weight: 600;
+  color: var(--text-mid); background: #fff; border: 1px solid var(--rule);
+  border-radius: 999px; padding: 5px 13px; cursor: pointer; transition: all 0.15s;
+}
+.stay-filter-chip:hover { border-color: var(--accent); color: var(--accent); }
+.stay-filter-chip.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* Let the feature carousel break out of the narrow longform text column
+   into a wide centred band on stay-guide pages. */
+.article-body-longform .hh-rail--feature,
+.article-body .hh-rail--feature {
+  width: min(1180px, 94vw); max-width: none;
+  margin-left: 50%; transform: translateX(-50%);
 }
 .jobs-attribution {
   max-width: 900px; margin: 8px auto 24px; padding: 0 20px;
@@ -6715,6 +6781,20 @@ body.story-viewer-open { overflow: hidden; }
   border-bottom: 1px solid var(--rule);
 }
 .city-article:first-child { padding-top: 6px; }
+/* Pinned "where to stay" guide at the top of a city feed */
+.city-article--pinned {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 6px;
+}
+.city-article-pin {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 6px;
+}
 .city-article-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.15rem;
