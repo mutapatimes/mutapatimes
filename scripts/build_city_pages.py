@@ -317,6 +317,18 @@ def build_page(city, all_articles, other_cities):
         for c in other_cities
     )
 
+    # Harare-only: sponsored hotels carousel (js/harare-hotels.js).
+    # Hotel inventory is Harare-specific, so other city pages get nothing.
+    if city["slug"] == "harare":
+        hotels_rail = (
+            '\n    <!-- Sponsored stays — Harare hotels carousel (js/harare-hotels.js) -->\n'
+            '    <section data-harare-hotels data-count="8" aria-label="Sponsored hotel stays in Harare"></section>\n'
+        )
+        hotels_script = '<script defer src="/js/harare-hotels.js"></script>\n'
+    else:
+        hotels_rail = ""
+        hotels_script = ""
+
     canonical = f"{BASE_URL}/{city['slug']}-news"
     title = (f"{city['name']} news latest — today's headlines from "
              f"{city['title_short']}, Zimbabwe | The Mutapa Times")
@@ -538,7 +550,7 @@ def build_page(city, all_articles, other_cities):
     <div class="city-articles" id="cityArticles">
 {rows}
     </div>
-
+{hotels_rail}
     <aside class="city-related" aria-label="Other Zimbabwe cities">
       <h2 class="city-section-heading">Other Zimbabwe cities</h2>
       <ul class="city-related-list">
@@ -563,7 +575,7 @@ def build_page(city, all_articles, other_cities):
 <script defer src="/js/nav.js"></script>
 <script defer src="/js/sponsors.js"></script>
 <script defer src="/js/city.js"></script>
-<script>
+{hotels_script}<script>
 if ('serviceWorker' in navigator) {{
   window.addEventListener('load', function() {{ navigator.serviceWorker.register('/sw.js'); }});
 }}

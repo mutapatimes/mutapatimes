@@ -129,6 +129,14 @@ FOOTER = """<footer class="atlantic-foot">
 </script>
 <script defer src="/js/nav.js"></script>"""
 
+# Sponsored Harare hotels carousel — injected only on Harare-relevant pages
+# (Harare corridors + the HRE airport page). Rendered by js/harare-hotels.js.
+HOTELS_RAIL = (
+    '\n  <!-- Sponsored stays — Harare hotels carousel (js/harare-hotels.js) -->\n'
+    '  <section data-harare-hotels data-count="8" aria-label="Sponsored hotel stays in Harare"></section>\n'
+)
+HOTELS_SCRIPT = '\n<script defer src="/js/harare-hotels.js"></script>'
+
 TRACKING = """<!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
 <!-- Travelpayouts Drive tracking -->
@@ -1249,6 +1257,11 @@ def render_corridor(slug, c):
     widget = widgets[c["widget_key"]]["embed"]
     canonical = f"https://www.mutapatimes.com/flights/{slug}/"
 
+    # Sponsored Harare hotels carousel on Harare corridors only.
+    harare_route = slug == "from-harare" or slug.endswith("-to-harare")
+    hotels_rail = HOTELS_RAIL if harare_route else ""
+    hotels_script = HOTELS_SCRIPT if harare_route else ""
+
     # Tables / lists
     airline_rows = "\n".join(
         f"          <tr><td><strong>{html.escape(name)}</strong></td><td>{html.escape(hub)}</td><td>{html.escape(fare)}</td><td>{html.escape(note)}</td></tr>"
@@ -1529,8 +1542,8 @@ def render_corridor(slug, c):
   </section>
 
   <p class="fl-back"><a href="/flights/">&larr; Back to all flight corridors</a></p>
-</main>
-{FOOTER}
+{hotels_rail}</main>
+{FOOTER}{hotels_script}
 </body>
 </html>
 '''
@@ -1539,6 +1552,10 @@ def render_corridor(slug, c):
 def render_airport(slug, c):
     """Render an airport landing page (HRE / BUQ / VFA)."""
     canonical = f"https://www.mutapatimes.com/airports/{slug}/"
+
+    # Sponsored Harare hotels carousel on the HRE airport page only.
+    hotels_rail = HOTELS_RAIL if slug == "harare" else ""
+    hotels_script = HOTELS_SCRIPT if slug == "harare" else ""
     facts_html = "\n".join(
         f'    <div class="fl-fact"><p class="fl-fact-label">{html.escape(lbl)}</p><p class="fl-fact-value">{html.escape(val)}</p></div>'
         for lbl, val in c["facts"]
@@ -1754,8 +1771,8 @@ def render_airport(slug, c):
   </section>
 
   <p class="fl-back"><a href="/airports/">&larr; Back to all airports</a></p>
-</main>
-{FOOTER}
+{hotels_rail}</main>
+{FOOTER}{hotels_script}
 </body>
 </html>
 '''
