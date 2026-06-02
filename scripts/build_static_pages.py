@@ -326,7 +326,7 @@ def page_nav(active="articles", depth=1, body_class=""):
 """
 
 
-def page_footer(depth=1):
+def page_footer(depth=1, extra_scripts=""):
     prefix = "../" if depth == 1 else ""
     return f"""  <hr class="dateHr">
 
@@ -511,7 +511,7 @@ def page_footer(depth=1):
   <script defer src="/js/shopify-ads.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
   <script defer src="/js/feature-story.js?v=1"></script>
-  <script defer src="/js/series.js?v=3"></script>
+  <script defer src="/js/series.js?v=3"></script>{extra_scripts}
 
 <script>
 if ('serviceWorker' in navigator) {{
@@ -958,7 +958,14 @@ def build_articles():
     </article>
   </main>
 """)
-        html_parts.append(page_footer(depth=1))
+        # Only load the hotels carousel + stay-guide scrollytelling scripts on
+        # articles that actually use them (keeps every other article unchanged).
+        extra_scripts = ""
+        if "data-hotels-city" in body_html or "data-harare-hotels" in body_html:
+            extra_scripts += '\n  <script defer src="/js/harare-hotels.js?v=2"></script>'
+        if "data-stay-section" in body_html or "data-stay-carousel" in body_html:
+            extra_scripts += '\n  <script defer src="/js/stay-longform.js?v=1"></script>'
+        html_parts.append(page_footer(depth=1, extra_scripts=extra_scripts))
 
         # Write file
         out_path = os.path.join(ARTICLES_OUT, f"{slug}.html")

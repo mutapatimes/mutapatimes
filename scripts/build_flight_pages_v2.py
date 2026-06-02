@@ -133,9 +133,10 @@ FOOTER = """<footer class="atlantic-foot">
 # (Harare corridors + the HRE airport page). Rendered by js/harare-hotels.js.
 HOTELS_RAIL = (
     '\n  <!-- Sponsored stays — Harare hotels carousel (js/harare-hotels.js) -->\n'
-    '  <section data-harare-hotels data-count="8" aria-label="Sponsored hotel stays in Harare"></section>\n'
+    '  <section data-hotels-city="harare" data-hotels-variant="feature" data-count="10" '
+    'aria-label="Sponsored hotel stays in Harare"></section>\n'
 )
-HOTELS_SCRIPT = '\n<script defer src="/js/harare-hotels.js"></script>'
+HOTELS_SCRIPT = '\n<script defer src="/js/harare-hotels.js?v=2"></script>'
 
 TRACKING = """<!-- impact.com Universal Tracking Tag (UTT) -->
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7333443-d775-4dfb-addf-0aa89ab29f151.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>

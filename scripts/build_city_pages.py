@@ -217,6 +217,30 @@ def articles_for_city(all_articles, city):
     return out
 
 
+# Tendai Kuwanda's "where to stay" longform guide pinned at the top of
+# each city feed, and the slug the mid-feed carousel is keyed to.
+STAY_DATE = "2026-06-02"
+def stay_slug(city_slug):
+    return f"{STAY_DATE}-where-to-stay-in-{city_slug}"
+
+
+def render_pinned_stay(a):
+    """A pinned 'Where to stay' guide row at the top of the city feed."""
+    slug = a["slug"]
+    title = a["title"]
+    summary = (a.get("summary") or "")[:240]
+    href = f"/articles/{slug}.html"
+    summary_block = f'  <p class="city-article-summary">{esc(summary)}</p>' if summary else ""
+    return (
+        f'<article class="city-article city-article--pinned">'
+        f'  <p class="city-article-pin">Pinned guide &middot; Where to stay</p>'
+        f'  <h3 class="city-article-title"><a href="{esc(href)}">{esc(title)}</a></h3>'
+        f'{summary_block}'
+        f'  <p class="city-article-meta"><span class="city-article-cat">Travel</span><time>By Tendai Kuwanda</time></p>'
+        f'</article>'
+    )
+
+
 def render_article_row(a, idx):
     slug = a["slug"]
     title = a["title"]
@@ -303,8 +327,30 @@ def build_schema(city, articles):
 def build_page(city, all_articles, other_cities):
     articles = articles_for_city(all_articles, city)
     print(f"  {city['name']:<16s}  {len(articles):>4d} articles")
-    rows = "\n".join(render_article_row(a, i) for i, a in enumerate(articles[:60]))
-    if not rows:
+
+    # Pin Tendai Kuwanda's "where to stay" guide at the top, and pull it
+    # out of the normal matched list so it is not listed twice.
+    sslug = stay_slug(city["slug"])
+    stay_article = next((a for a in all_articles if a["slug"] == sslug), None)
+    articles = [a for a in articles if a["slug"] != sslug]
+
+    row_list = [render_article_row(a, i) for i, a in enumerate(articles[:60])]
+
+    # Mid-feed sponsored stays carousel — sits amongst the articles as a
+    # feed item (js/harare-hotels.js, "feed" variant keyed to this city).
+    carousel = (
+        '<!-- Sponsored stays — mid-feed hotels carousel (js/harare-hotels.js) -->\n'
+        f'<section class="city-feed-stays" data-hotels-city="{esc(city["slug"])}" '
+        f'data-hotels-variant="feed" data-count="8" '
+        f'aria-label="Sponsored hotel stays in {esc(city["name"])}"></section>'
+    )
+    insert_at = min(10, len(row_list))
+    row_list.insert(insert_at, carousel)
+
+    rows = "\n".join(row_list)
+    if stay_article:
+        rows = render_pinned_stay(stay_article) + "\n" + rows
+    if not row_list:
         rows = '<p class="loading-msg">Fresh coverage will appear here as news comes in.</p>'
 
     schema_blocks = "\n".join(
@@ -317,17 +363,10 @@ def build_page(city, all_articles, other_cities):
         for c in other_cities
     )
 
-    # Harare-only: sponsored hotels carousel (js/harare-hotels.js).
-    # Hotel inventory is Harare-specific, so other city pages get nothing.
-    if city["slug"] == "harare":
-        hotels_rail = (
-            '\n    <!-- Sponsored stays — Harare hotels carousel (js/harare-hotels.js) -->\n'
-            '    <section data-harare-hotels data-count="8" aria-label="Sponsored hotel stays in Harare"></section>\n'
-        )
-        hotels_script = '<script defer src="/js/harare-hotels.js"></script>\n'
-    else:
-        hotels_rail = ""
-        hotels_script = ""
+    # The sponsored stays carousel is now spliced mid-feed (see above) for
+    # every city, so the after-list slot is gone; only the script remains.
+    hotels_rail = ""
+    hotels_script = '<script defer src="/js/harare-hotels.js?v=2"></script>\n'
 
     canonical = f"{BASE_URL}/{city['slug']}-news"
     title = (f"{city['name']} news latest — today's headlines from "
