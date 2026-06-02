@@ -65,6 +65,15 @@
           "currency": ""
         },
         {
+          "price": 823,
+          "airline": "QR",
+          "departure_at": "2027-01-16",
+          "return_at": "2027-02-20",
+          "stops": 2,
+          "duration": null,
+          "currency": ""
+        },
+        {
           "price": 815,
           "airline": "ET",
           "departure_at": "2027-02-12",
@@ -131,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -155,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -171,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 19
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -301,13 +310,13 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -323,7 +332,7 @@
           "error": null
         }
       ],
-      "observations": 9
+      "observations": 7
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -566,7 +575,7 @@
         {
           "price": 2383,
           "airline": "ET",
-          "departure_at": "2026-06-02",
+          "departure_at": "2026-06-03",
           "return_at": "2026-06-28",
           "stops": 1,
           "duration": null,
