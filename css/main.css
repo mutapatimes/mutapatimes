@@ -4149,6 +4149,66 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .job-card--intern.expanded .job-card-toggle::after { content: ' ↑'; }
 .job-card--intern:hover { border-color: var(--ink); }
 .job-card--intern:hover .job-card-title { color: var(--accent); }
+
+/* ─── Harare Hotels affiliate rail (js/harare-hotels.js) ───
+   Editorial strip, not a banner: "Sponsored stays" eyebrow, a
+   horizontally-scrolling row of cards reusing the .job-card look. */
+.hh-rail {
+  max-width: 1100px; margin: 40px auto; padding: 0 20px;
+}
+.hh-rail-head { margin-bottom: 14px; }
+.hh-rail-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin: 0 0 4px;
+}
+.hh-rail-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem; font-weight: 700; line-height: 1.2;
+  margin: 0 0 4px; color: var(--ink);
+}
+.hh-rail-sub {
+  font-size: 0.85rem; color: var(--text-mid); margin: 0; line-height: 1.45;
+}
+.hh-rail-track {
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(210px, 1fr);
+  gap: 14px; overflow-x: auto; scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch; padding: 4px 0 10px; scrollbar-width: thin;
+}
+.hh-card {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--rule); border-radius: 8px;
+  background: #fff; color: var(--text); text-decoration: none;
+  overflow: hidden; scroll-snap-align: start;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.hh-card:hover {
+  border-color: var(--accent); text-decoration: none;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06); transform: translateY(-1px);
+}
+.hh-card-imgwrap { aspect-ratio: 16 / 9; background: #f7f5f1; overflow: hidden; }
+.hh-card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hh-card-body {
+  display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 14px;
+}
+.hh-card-area {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-light); margin: 0; font-weight: 600;
+}
+.hh-card-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.02rem; font-weight: 700; line-height: 1.25; margin: 0; color: var(--ink);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.hh-card:hover .hh-card-name { color: var(--accent); }
+.hh-card-cta {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem; font-weight: 600; color: var(--accent); margin: 6px 0 0;
+}
+.hh-rail-disclosure {
+  font-size: 0.72rem; color: var(--text-light); margin: 8px 0 0; line-height: 1.5;
+}
 .jobs-attribution {
   max-width: 900px; margin: 8px auto 24px; padding: 0 20px;
   font-size: 0.75em; color: var(--text-light); text-align: center;
