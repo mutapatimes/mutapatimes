@@ -3,3 +3,6 @@ __pycache__/
 # macOS
 .DS_Store
 **/.DS_Store
+
+# Local image originals (source files, not served — optimized copies live in img/)
+.image-originals/
