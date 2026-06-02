@@ -4170,10 +4170,33 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .hh-rail-sub {
   font-size: 0.85rem; color: var(--text-mid); margin: 0; line-height: 1.45;
 }
+.hh-rail-stage { position: relative; }
 .hh-rail-track {
   display: grid; grid-auto-flow: column; grid-auto-columns: minmax(210px, 1fr);
-  gap: 14px; overflow-x: auto; scroll-snap-type: x proximity;
-  -webkit-overflow-scrolling: touch; padding: 4px 0 10px; scrollbar-width: thin;
+  gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; padding: 4px 2px 12px;
+  scrollbar-width: none; scroll-behavior: smooth;
+}
+.hh-rail-track::-webkit-scrollbar { display: none; }
+.hh-rail-track:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+
+/* Carousel arrows — circular, float over the track edges on desktop. */
+.hh-rail-arrow {
+  position: absolute; top: 38%; transform: translateY(-50%);
+  z-index: 2; width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff; color: var(--ink); border: 1px solid var(--rule);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); cursor: pointer; padding: 0;
+  transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+}
+.hh-rail-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.hh-rail-arrow--prev { left: -8px; }
+.hh-rail-arrow--next { right: -8px; }
+.hh-rail-arrow:disabled { opacity: 0; pointer-events: none; }
+.hh-rail-stage--static .hh-rail-arrow { display: none; }
+@media (max-width: 760px) {
+  /* Touch devices swipe — hide the arrows, keep the snap. */
+  .hh-rail-arrow { display: none; }
 }
 .hh-card {
   display: flex; flex-direction: column;
