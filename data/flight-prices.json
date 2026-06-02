@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-01",
+  "fetched_at": "2026-06-02",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -261,7 +261,7 @@
           "currency": ""
         },
         {
-          "price": 3242,
+          "price": 3247,
           "airline": "GE",
           "departure_at": "2026-06-08",
           "return_at": "",
@@ -368,7 +368,7 @@
           "currency": ""
         },
         {
-          "price": 3878,
+          "price": 3883,
           "airline": "FA",
           "departure_at": "2026-08-19",
           "return_at": "2026-08-24",
@@ -428,7 +428,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 11,
+          "n": 10,
           "error": null
         },
         {
@@ -450,7 +450,7 @@
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 16
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -535,12 +535,12 @@
           "currency": ""
         },
         {
-          "price": 2409,
-          "airline": "ET",
-          "departure_at": "2026-07-07",
-          "return_at": "2026-08-02",
+          "price": 1433,
+          "airline": "KQ",
+          "departure_at": "2026-07-03",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
+          "duration": 995,
           "currency": ""
         }
       ],
@@ -577,13 +577,13 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -599,7 +599,7 @@
           "error": null
         }
       ],
-      "observations": 9
+      "observations": 7
     },
     "toronto-to-harare": {
       "origin": "YYZ",
