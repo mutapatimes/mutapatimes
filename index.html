@@ -361,6 +361,19 @@
   <section class="home-editorial-picks" aria-label="Editorial picks from The Mutapa Times">
     <p class="home-editorial-picks-label">From The Mutapa Times newsroom</p>
 
+    <!-- Pinned travel guide — Tendai Kuwanda's country-wide "where to stay". -->
+    <a class="home-stay-pin" href="/articles/2026-06-02-best-places-to-stay-in-zimbabwe.html">
+      <div class="home-stay-pin-media">
+        <img src="img/banner.png" alt="Where to stay in Zimbabwe" loading="lazy" width="480" height="170">
+      </div>
+      <div class="home-stay-pin-body">
+        <p class="home-stay-pin-eyebrow">Pinned guide &middot; Travel</p>
+        <h3 class="home-stay-pin-title">The Best Places to Stay in Zimbabwe</h3>
+        <p class="home-stay-pin-sub">A city-by-city guide for 2026, from the spray of Victoria Falls to the granite of the Matobo Hills and the jacaranda suburbs of Harare. By Tendai Kuwanda.</p>
+        <span class="home-stay-pin-cta">Read the guide &rarr;</span>
+      </div>
+    </a>
+
     <!-- Feature Story of the Week (rendered by js/feature-story.js if active). -->
     <div id="feature-story-slot"></div>
 
@@ -375,6 +388,21 @@
     font-size: 0.72em; letter-spacing: 0.2em; text-transform: uppercase;
     color: var(--accent); font-weight: 700; margin: 0 0 18px;
     padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+  .home-stay-pin { display: flex; gap: 18px; align-items: stretch; text-decoration: none;
+    color: var(--text); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 10px; overflow: hidden; background: #fff; margin: 0 0 24px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease; }
+  .home-stay-pin:hover { box-shadow: 0 6px 22px rgba(0,0,0,0.06); transform: translateY(-1px); text-decoration: none; }
+  .home-stay-pin-media { flex: 0 0 38%; max-width: 320px; }
+  .home-stay-pin-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .home-stay-pin-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+  .home-stay-pin-eyebrow { font-family: 'Inter', system-ui, sans-serif; font-size: 0.66rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+  .home-stay-pin-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem;
+    line-height: 1.2; margin: 2px 0; color: var(--ink); }
+  .home-stay-pin-sub { font-size: 0.9rem; color: var(--text-mid); margin: 0; line-height: 1.5; }
+  .home-stay-pin-cta { font-family: 'Inter', system-ui, sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--accent); margin-top: 6px; }
+  @media (max-width: 600px) { .home-stay-pin { flex-direction: column; } .home-stay-pin-media { max-width: none; aspect-ratio: 16 / 9; } }
   </style>
 
   <!-- Harare skyline banner - sits between the news grid and the newsletter
