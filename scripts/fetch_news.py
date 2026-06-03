@@ -1494,6 +1494,12 @@ def main():
     # Append all new articles to persistent archive
     update_archive(all_new)
 
+    # Generate AI one-line previews for the Google News RSS articles the
+    # homepage feed shows (writes data/rss_descriptions.json, keyed by URL;
+    # js/config.js falls back to these when an RSS item has no real summary).
+    # No-ops without GEMINI_API_KEY.
+    fetch_rss_descriptions()
+
     print("\nDone.")
 
 

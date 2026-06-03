@@ -26,6 +26,7 @@ jobs:
           NEWSAPI_API_KEY: ${{ secrets.NEWSAPI_API_KEY }}
           MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
           PERIGON_API_KEY: ${{ secrets.PERIGON_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/fetch_news.py
 
       - name: Build news landing pages

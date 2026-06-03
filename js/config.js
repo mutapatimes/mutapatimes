@@ -835,8 +835,24 @@ function deduplicateArticles(articles) {
       seen[key] = result.length;
       result.push(articles[i]);
     } else if (articles[i].hasCmsPage && !result[seen[key]].hasCmsPage) {
-      // Replace external duplicate with the CMS version that has a local page
+      // Replace external duplicate with the CMS version that has a local page,
+      // but don't lose a preview sentence the external copy already carried.
+      if (!articles[i].description && result[seen[key]].description) {
+        articles[i].description = result[seen[key]].description;
+      }
       result[seen[key]] = articles[i];
+    } else {
+      // Same story from two sources: a Google News RSS item often has no
+      // usable description (title-repeat), while the archive / news-API copy
+      // does. Fill the kept card's missing preview from the duplicate so the
+      // homepage shows a sentence without needing the AI fallback.
+      var kept = result[seen[key]];
+      if (!kept.description && articles[i].description) {
+        kept.description = articles[i].description;
+      }
+      if (!kept.image && articles[i].image) {
+        kept.image = articles[i].image;
+      }
     }
   }
   return result;
