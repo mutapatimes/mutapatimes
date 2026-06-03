@@ -1,17 +1,8 @@
 {
-  "fetched_at": "2026-06-03T05:15:27.458783+00:00",
+  "fetched_at": "2026-06-03T11:22:26.296844+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
-    {
-      "title": "Offplan Cluster Units At An Affordable Rate",
-      "url": "https://www.property.co.zw/for-sale/townhouses-alx241883",
-      "price": "USD 185,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/81/70/40/81704049-e765-4e96-9ff0-d2c28ca4a9cf_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
     {
       "title": "Modern 4-Bedroom Home for Sale!",
       "url": "https://www.property.co.zw/for-sale/houses-pgp246367",
@@ -20,6 +11,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/2c/bc/ea/2cbceafb-a7ff-4a0f-9674-2c99c7bdfd9a_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
+    },
+    {
+      "title": "Westgate Area D 2-Bed Brick Home — Parquet Floors & Garage",
+      "url": "https://www.property.co.zw/for-sale/houses-ptd242377",
+      "price": "USD 180,000",
+      "location": "Westgate, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/bc/6d/34/bc6d3458-fda7-43b8-8399-a9ce750890e3_thumbnail591.webp",
+      "beds": "2",
+      "baths": "1"
     },
     {
       "title": "Spacious Double-Storey Home – Customize to Your Taste",
@@ -37,15 +37,6 @@
       "location": "Colne Valley, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/82/bc/6e/82bc6e7c-3abe-4f02-8e44-f4e232ad842d_thumbnail591.webp",
       "beds": "3",
-      "baths": ""
-    },
-    {
-      "title": "Marondera Ruzawi",
-      "url": "https://www.property.co.zw/for-sale/houses-caml248354",
-      "price": "USD 60,000",
-      "location": "Marondera",
-      "image": "https://www.property.co.zw/uploadedfiles/fa/97/77/fa97771d-cea6-4a38-88b3-2cbadbe4bb8e_thumbnail591.webp",
-      "beds": "4",
       "baths": ""
     },
     {
@@ -198,6 +189,15 @@
       "price": "USD 250,000",
       "location": "Arlington, Harare South",
       "image": "https://www.property.co.zw/uploadedfiles/2b/7c/19/2b7c1922-c8f0-4418-8be7-5750706e4a62_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
+      "title": "Ideal Modern Starter Home In Madokero",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp229108",
+      "price": "USD 130,000",
+      "location": "Madokero, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/f3/28/75/f328759f-9635-4f68-a3ee-2ec64388c9cb_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     }
