@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2026 23:00:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 03:37:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>ALL EYES ON MISS UNIVERSE ZIM 2026</title>
+      <link>https://mutapatimes.com/stories/0bffa91b598a.html</link>
+      <description>via Herald.co.zw #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
+      <pubDate>Tue, 02 Jun 2026 22:05:33 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/0bffa91b598a.html</guid>
+      <category>Culture</category>
+      <dc:creator>Herald.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/0bffa91b598a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/0bffa91b598a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/0bffa91b598a.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>‘We no longer have good strikers in Zimbabwe’</title>
       <link>https://mutapatimes.com/stories/5b4a441a143f.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/063ea3027b7d.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/063ea3027b7d.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/063ea3027b7d.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Sales Team Members</title>
-      <link>https://mutapatimes.com/stories/ba4fa246666b.html</link>
-      <description>🚨 WE’RE HIRING! 🚨 🔥 SALES TEAM MEMBERS WANTED 🔥 Are you confident, energetic, and ready to make money? Do you have the gift of persuasion and love interacting with people? Then we want YOU on our tea… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 02 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/ba4fa246666b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/ba4fa246666b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ba4fa246666b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/ba4fa246666b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
