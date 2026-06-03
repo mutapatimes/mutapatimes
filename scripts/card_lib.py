@@ -15,6 +15,7 @@ except ImportError:  # pragma: no cover
 # ── Card dimensions + palette ─────────────────────────────
 CARD_W = 1080
 CARD_H = 1350           # portrait 4:5 — Instagram-optimal
+STORY_H = 1920          # 9:16 — Instagram Story / share card
 CARD_FG = (26, 26, 26)
 CARD_FG_MUTED = (95, 92, 84)
 ACCENT = (192, 57, 43)  # brand red
@@ -92,15 +93,19 @@ def wrap_text(text, font, max_width, draw):
 
 
 # ── The canonical headline card ───────────────────────────
-def render_headline_card(headline, source, output_path, color_idx=0):
-    """1080x1350 portrait text-only headline card on butter cream.
+def render_headline_card(headline, source, output_path, color_idx=0, card_h=CARD_H):
+    """Text-only headline card on butter cream, portrait.
 
     Single source of truth for all auto-generated social cards (feed
-    cards, Metricool CSV, OG previews). No external image generation,
-    no API calls — renders fully offline from the headline string.
+    cards, Metricool CSV, OG previews) AND the 9:16 share/story card —
+    the only difference is the canvas height (`card_h`): pass CARD_H for
+    the 4:5 social post card, STORY_H for the Instagram Story / share
+    card. No images, no API calls — renders fully offline from the
+    headline string. The layout (accent tick, masthead, headline,
+    VIA + READ MORE footer) is identical at both heights.
     """
     bg = card_bg(color_idx)
-    img = Image.new("RGB", (CARD_W, CARD_H), bg)
+    img = Image.new("RGB", (CARD_W, card_h), bg)
     draw = ImageDraw.Draw(img)
 
     masthead_font = load_font("serif_bold", 42)
@@ -120,13 +125,13 @@ def render_headline_card(headline, source, output_path, color_idx=0):
 
     line_height = 96
     block_h = len(lines) * line_height
-    available_h = CARD_H - 360
+    available_h = card_h - 360
     y = 230 + (available_h - block_h) // 2
     for ln in lines:
         draw.text((60, y), ln, font=headline_font, fill=CARD_FG)
         y += line_height
 
-    footer_y = CARD_H - 140
+    footer_y = card_h - 140
     draw.text((60, footer_y), "VIA", font=label_font, fill=CARD_FG_MUTED)
     cue = "READ MORE → mutapatimes.com"
     bbox = draw.textbbox((0, 0), cue, font=source_font)
