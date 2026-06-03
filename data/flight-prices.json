@@ -250,10 +250,10 @@
           "currency": ""
         },
         {
-          "price": 8505,
-          "airline": "4Z",
+          "price": 8759,
+          "airline": "FA",
           "departure_at": "2026-08-26",
-          "return_at": "2026-09-21",
+          "return_at": "2026-09-22",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -295,15 +295,6 @@
           "stops": 1,
           "duration": 705,
           "currency": ""
-        },
-        {
-          "price": 8505,
-          "airline": "4Z",
-          "departure_at": "2026-08-26",
-          "return_at": "2026-09-21",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
@@ -316,7 +307,7 @@
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -332,7 +323,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 8
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -437,7 +428,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 10,
+          "n": 9,
           "error": null
         },
         {
@@ -449,7 +440,7 @@
         {
           "endpoint": "calendar",
           "origin": "JNB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
@@ -571,19 +562,28 @@
           "stops": 1,
           "duration": 990,
           "currency": ""
+        },
+        {
+          "price": 2391,
+          "airline": "ET",
+          "departure_at": "2026-07-15",
+          "return_at": "2026-08-15",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 6,
+          "n": 5,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
