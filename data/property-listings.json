@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-04T10:11:47.884524+00:00",
+  "fetched_at": "2026-06-04T15:42:10.352307+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -31,6 +31,15 @@
       "baths": "2"
     },
     {
+      "title": "Family Home with Cottage",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp243882",
+      "price": "USD 150,000",
+      "location": "Waterfalls, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/24/97/6c/24976cdf-7455-4d57-b4bd-5678923109bb_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
       "title": "Charming Family Home On Generous Grounds",
       "url": "https://www.property.co.zw/for-sale/houses-pgp243330",
       "price": "USD 260,000",
@@ -38,6 +47,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/bf/c6/5a/bfc65a04-d62f-4681-aebd-e08c73bb3e35_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
+    },
+    {
+      "title": "Exclusive Address on Orange Grove Drive",
+      "url": "https://www.property.co.zw/for-sale/houses-nst247968",
+      "price": "USD 1,600,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/da/3b/68/da3b6867-7b95-4483-892c-343a8a151dab_thumbnail591.webp",
+      "beds": "4",
+      "baths": "4"
     },
     {
       "title": "Hogerty Hill Property For Sale",
@@ -82,6 +100,15 @@
       "location": "Zimre Park, Harare East",
       "image": "https://www.property.co.zw/uploadedfiles/62/22/38/622238e0-18fc-4df5-a2b6-fd8513dd2de3_thumbnail591.webp",
       "beds": "4",
+      "baths": "2"
+    },
+    {
+      "title": "Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole",
+      "url": "https://www.property.co.zw/for-sale/townhouses-riddl245424",
+      "price": "USD 220,000",
+      "location": "Emerald Hill, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/e7/62/09/e76209e1-9fca-4b90-8432-eb719ea415fe_thumbnail591.webp",
+      "beds": "3",
       "baths": "2"
     },
     {
@@ -171,33 +198,6 @@
       "price": "USD 500,000",
       "location": "Alexandra Park, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/17/c0/47/17c04736-5dfa-46ce-9a2a-f11a7599727f_thumbnail591.webp",
-      "beds": "4",
-      "baths": "3"
-    },
-    {
-      "title": "Off-plan Luxury 4 Bed Cluster Homes in Logan Park, Hatfield.",
-      "url": "https://www.property.co.zw/for-sale/houses-gat231646",
-      "price": "USD 125,000",
-      "location": "Hatfield, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/60/f9/5b/60f95bad-74ba-4a0b-a13e-1b1f5c231d73_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Greystone Park: 3-Bed Home w/ Pool, Tennis court, Borehole & Brick-Floors",
-      "url": "https://www.property.co.zw/for-sale/houses-plzp247918",
-      "price": "USD 690,000",
-      "location": "Greystone Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/9b/7e/dd/9b7eddb2-4012-42cc-a064-fd3a5455b2e2_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Modern 4 Bedroom home with a prolific borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp237458",
-      "price": "USD 300,000",
-      "location": "Mt Pleasant Heights, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/08/a4/77/08a47735-2625-402f-aea3-abaca023b925_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
     }
