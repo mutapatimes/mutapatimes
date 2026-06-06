@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-06T08:46:23.063122+00:00",
+  "fetched_at": "2026-06-06T14:07:23.799153+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -83,15 +83,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/12/64/fd/1264fd3d-ff06-45e2-b649-0ed3637c20f4_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
-    },
-    {
-      "title": "Kuwadzana house for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-dsi245553",
-      "price": "USD 55,000",
-      "location": "Kuwadzana, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/f4/29/c2/f429c2e6-8bef-4367-b569-a40c1457eb2d_thumbnail591.webp",
-      "beds": "6",
-      "baths": "3"
     },
     {
       "title": "Reduced for a quick sale",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/db/ba/f1/dbbaf15f-0077-4c82-a3db-ffd4a9912ed2_thumbnail591.webp",
       "beds": "3",
       "baths": ""
+    },
+    {
+      "title": "The Hillside Collection: Contemporary Elegance Redefined",
+      "url": "https://www.property.co.zw/for-sale/townhouses-fac246853",
+      "price": "USD 220,000",
+      "location": "Hillside, Bulawayo South",
+      "image": "https://www.property.co.zw/uploadedfiles/49/d6/4e/49d64e49-55b0-4567-9b5f-adb624e208a7_thumbnail591.webp",
+      "beds": "3",
+      "baths": "3"
     }
   ]
 }
