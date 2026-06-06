@@ -1494,11 +1494,12 @@ def main():
     # Append all new articles to persistent archive
     update_archive(all_new)
 
-    # Generate AI one-line previews for the Google News RSS articles the
-    # homepage feed shows (writes data/rss_descriptions.json, keyed by URL;
-    # js/config.js falls back to these when an RSS item has no real summary).
-    # No-ops without GEMINI_API_KEY.
-    fetch_rss_descriptions()
+    # NOTE: AI preview generation (fetch_rss_descriptions) is deliberately
+    # NOT called here. Its per-article Gemini rate-limit sleeps pushed this
+    # job past the 15-minute timeout, cancelling the run and stalling the
+    # news feeds + autoposting. If reinstated, run it in a SEPARATE workflow
+    # so it can never block the news pipeline. Homepage previews fall back to
+    # the dedup-merge in js/config.js (no AI needed).
 
     print("\nDone.")
 
