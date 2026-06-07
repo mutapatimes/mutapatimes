@@ -6,9 +6,9 @@ For each top unqueued article, generates platform-specific captions
 (LinkedIn, Facebook, Threads, Twitter, Instagram, TikTok), renders portrait
 1080x1350 branded cards, and writes data/metricool-queue.csv.
 
-Instagram and TikTok get 4-slide carousels (hook / story / why-it-matters /
-read-the-full-story CTA). Twitter expands long-description articles into
-4-tweet threads. All other platforms get the single headline card.
+Instagram and TikTok get 2-slide carousels (headline card + newsletter
+promo). Twitter expands long-description articles into 4-tweet threads.
+All other platforms get the single headline card.
 
 The user reviews + imports the CSV via Metricool's Planner > Import CSV.
 Headline cards are committed to img/cards/ and served by GitHub Pages.
@@ -170,8 +170,9 @@ PLATFORMS_ORDERED = ("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram", 
 # Platforms that consume the multi-slide carousel rendering. Other platforms
 # still get a single image (the article image, or the first card slide).
 CAROUSEL_PLATFORMS = ("Instagram", "TikTok")
-# How many slides in the carousel per article (hook + context + takeaway + cta).
-CAROUSEL_SLIDE_COUNT = 4
+# Slides per article carousel: slide 1 = headline card, slide 2 = newsletter
+# promo. Kept to two on purpose (clean feed + every post drives the newsletter).
+CAROUSEL_SLIDE_COUNT = 2
 
 # ── Newsletter-driver posts ───────────────────────────────────
 # 4 distinct value propositions per run × 5 platforms = 20 sub posts/run.
@@ -509,51 +510,43 @@ def gemini_carousel_text(art):
 
 
 def build_carousel_slides(art, slug, color_idx=0):
-    """Render the 4-slide carousel for one article. Returns a list of
-    (public_url, alt_text) tuples in slide order, or empty list on failure."""
-    paths = [os.path.join(CARDS_DIR, f"{slug}-{i + 1}.png") for i in range(CAROUSEL_SLIDE_COUNT)]
+    """Render a TWO-slide carousel for one article:
+      slide 1 — the branded headline card,
+      slide 2 — a newsletter-promo card (shared, rotated by angle).
+    Returns a list of (public_url, alt_text) tuples, or [] on failure.
+
+    Deliberately two slides only: more was visual clutter, and the promo
+    second slide turns every article post into a newsletter driver. No
+    Gemini text slides (they were slow and rate-limited)."""
     headline = art.get("title", "")
     source = art.get("source", "the source")
 
-    # Slide 1 — reuse the existing headline card design
+    # Slide 1 — the existing headline card design
+    path1 = os.path.join(CARDS_DIR, f"{slug}-1.png")
     try:
-        render_card(headline, source, paths[0], color_idx=color_idx)
+        render_card(headline, source, path1, color_idx=color_idx)
     except Exception as e:
         print(f"    Carousel slide 1 FAILED: {e}")
         return []
 
-    # Slides 2 + 3 — context + takeaway (Gemini-distilled with fallback)
-    text = gemini_carousel_text(art)
-    try:
-        render_text_slide("THE STORY", text["context"], f"VIA {source.upper()}",
-                          paths[1], color_idx=(color_idx + 1) % len(CARD_BACKGROUNDS))
-    except Exception as e:
-        print(f"    Carousel slide 2 FAILED: {e}")
-        return []
-    try:
-        render_text_slide("WHY IT MATTERS", text["takeaway"], "THE MUTAPA TIMES — ZIMBABWE OUTSIDE-IN",
-                          paths[2], color_idx=(color_idx + 2) % len(CARD_BACKGROUNDS))
-    except Exception as e:
-        print(f"    Carousel slide 3 FAILED: {e}")
-        return []
+    slides = [(f"{CARDS_PUBLIC_BASE}/{os.path.basename(path1)}",
+               f"{headline} — headline card")]
 
-    # Slide 4 — CTA
+    # Slide 2 — shared newsletter promo card, rotated across angles so the
+    # feed varies. Falls back to a single-image post if promo cards are missing.
     try:
-        render_cta_slide(headline, paths[3], color_idx=(color_idx + 3) % len(CARD_BACKGROUNDS))
+        promo_urls = ensure_promo_cards()
+        angle = NEWSLETTER_ANGLES[color_idx % len(NEWSLETTER_ANGLES)]
+        promo_url = promo_urls.get(angle["key"])
+        if promo_url:
+            slides.append((
+                promo_url,
+                "Subscribe to The Mutapa Times briefing — free, Mondays and Thursdays",
+            ))
     except Exception as e:
-        print(f"    Carousel slide 4 FAILED: {e}")
-        return []
+        print(f"    Carousel slide 2 (promo) FAILED, posting single image: {e}")
 
-    alts = [
-        f"{headline} — headline card",
-        f"The story: {text['context'][:160]}",
-        f"Why it matters: {text['takeaway'][:160]}",
-        f"Read the full briefing at mutapatimes.com — {headline[:100]}",
-    ]
-    return [
-        (f"{CARDS_PUBLIC_BASE}/{os.path.basename(p)}", a)
-        for p, a in zip(paths, alts)
-    ]
+    return slides
 
 
 # ── Data loading ──────────────────────────────────────────────
@@ -2357,8 +2350,8 @@ def main():
             print(f"    Card FAILED: {e}")
             card_url = ""
 
-        # Render the 4-slide carousel for IG + TikTok. If it fails, the
-        # platforms fall back to the single headline card so they still post.
+        # Render the 2-slide carousel (headline + newsletter promo) for IG +
+        # TikTok. If it fails, platforms fall back to the single headline card.
         try:
             carousel = build_carousel_slides(art, slug, color_idx=idx)
             if carousel:
