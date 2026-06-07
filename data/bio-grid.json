@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-07T11:05:43+00:00",
+  "fetched_at": "2026-06-07T13:42:03+00:00",
   "count": 60,
   "tiles": [
     {
@@ -12,10 +12,34 @@
     },
     {
       "kind": "news",
-      "title": "14 Years, 5 Announcements, No Flight: Air Zim Says It’s Now Launching London Trips",
-      "link": "https://mutapatimes.com/articles/2026-06-06-14-years-5-announcements-no-flight-air-zim-says-its-now-laun",
-      "image": "https://www.mutapatimes.com/img/cards/news/490f98f6651d.png",
-      "pubDate": "2026-06-06T22:46:21+00:00",
+      "title": "Maize supply rebounds on ZMX",
+      "link": "https://mutapatimes.com/articles/2026-06-07-maize-supply-rebounds-on-zmx",
+      "image": "https://www.mutapatimes.com/img/cards/news/2bb03b1bc080.png",
+      "pubDate": "2026-06-07T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘Skills gap threatening green manufacturing’",
+      "link": "https://mutapatimes.com/articles/2026-06-06-skills-gap-threatening-green-manufacturing",
+      "image": "https://www.mutapatimes.com/img/cards/news/a521753feffe.png",
+      "pubDate": "2026-06-06T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zim readies for 2026 Econet Victoria Falls Marathon",
+      "link": "https://mutapatimes.com/articles/2026-06-06-zim-readies-for-2026-econet-victoria-falls-marathon",
+      "image": "https://www.mutapatimes.com/img/cards/news/d85446aa03bc.png",
+      "pubDate": "2026-06-06T23:58:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Teen pregnancies drop significantly across Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-06-06-teen-pregnancies-drop-significantly-across-zimbabwe",
+      "image": "https://www.mutapatimes.com/img/cards/news/56b4f18c9da5.png",
+      "pubDate": "2026-06-06T23:58:00+00:00",
       "category": "Business"
     },
     {
@@ -33,14 +57,6 @@
       "image": "https://www.mutapatimes.com/img/cards/news/f70f9b5827aa.png",
       "pubDate": "2026-06-06T22:11:54+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Why Zimbabwe Must Pay BIPA Farmers and Protect Its Future",
-      "link": "https://mutapatimes.com/articles/2026-06-06-why-zimbabwe-must-pay-bipa-farmers-and-protect-its-future",
-      "image": "https://www.mutapatimes.com/img/cards/news/cbad901d2d8e.png",
-      "pubDate": "2026-06-06T22:10:02+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -463,22 +479,6 @@
       "title": "FASFIT MATLOCK — SALES EXECUTIVES",
       "link": "https://vacancymail.co.zw/jobs/sales-executives-67707/",
       "image": "https://mutapatimes.com/img/cards/jobs/9d021d0244a3.png",
-      "pubDate": "2026-06-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AIDS HEALTHCARE FOUNDATION — REGISTERED GENERAL NURSE: Chiredzi",
-      "link": "https://vacancymail.co.zw/jobs/registered-general-nurse-chiredzi-67706/",
-      "image": "https://mutapatimes.com/img/cards/jobs/97c3af3af033.png",
-      "pubDate": "2026-06-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AIDS HEALTHCARE FOUNDATION — Linkage and Retention Officer - (Chitungwiza Sites)",
-      "link": "https://vacancymail.co.zw/jobs/linkage-and-retention-officer-chitungwiza-sites-67705/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b6d4f2678764.png",
       "pubDate": "2026-06-06T22:00:00+00:00",
       "category": "Jobs"
     }
