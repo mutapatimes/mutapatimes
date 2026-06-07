@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Jun 2026 14:23:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 16:11:10 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Auditors warn of RioZim material uncertainty risk @zimsituation</title>
+      <link>https://mutapatimes.com/stories/b077fca8a9a1.html</link>
+      <description>Source: Auditors warn of RioZim material uncertainty risk – herald Business Reporter RioZim Limited is teetering on the brink of structural collapse, with auditors dropping a bombshell report that raises “material uncertainty” over the company’s ability to survive as a going conc via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Sun, 07 Jun 2026 03:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/b077fca8a9a1.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/b077fca8a9a1.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b077fca8a9a1.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/b077fca8a9a1.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Maize supply rebounds on ZMX</title>
       <link>https://mutapatimes.com/stories/2bb03b1bc080.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/71c3ec0aaaf3.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/71c3ec0aaaf3.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/71c3ec0aaaf3.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Green Fuel — TYRE FITTER X1</title>
-      <link>https://mutapatimes.com/stories/c4450813e31b.html</link>
-      <description>The incumbent shall be responsible for fitting and repairing tyres for fleet. To perform any other duties as assigned by the superiors Chisumbanje · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sat, 06 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c4450813e31b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Green Fuel</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c4450813e31b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c4450813e31b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c4450813e31b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
