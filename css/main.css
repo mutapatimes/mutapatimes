@@ -4299,8 +4299,8 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   margin-left: 50%; transform: translateX(-50%);
 }
 
-/* ─── Interactive timeline (js/timeline.js) ─── */
-.az-timeline { max-width: 760px; margin: 44px auto; padding: 0 20px; }
+/* ─── Interactive timeline (js/timeline.js) — clean editorial rail ─── */
+.az-timeline { max-width: 680px; margin: 44px auto; padding: 0 20px; }
 .az-timeline-eyebrow {
   font-family: 'Inter', system-ui, sans-serif; font-size: 0.7rem;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
@@ -4310,71 +4310,68 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem;
   line-height: 1.15; margin: 0 0 4px; color: var(--ink);
 }
-.az-timeline-hint { font-size: 0.8rem; color: var(--text-light); margin: 0 0 20px; }
-.az-tl { list-style: none; margin: 0; padding: 0 0 0 30px; position: relative; }
+.az-timeline-hint { font-size: 0.8rem; color: var(--text-light); margin: 0 0 8px; }
+.az-tl { list-style: none; margin: 0; padding: 0 0 0 28px; position: relative; }
 .az-tl::before {
-  content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px;
+  content: ""; position: absolute; left: 6px; top: 18px; bottom: 18px;
   width: 2px; background: var(--rule);
 }
 .az-tl-fill {
-  position: absolute; left: 7px; top: 8px; width: 2px; height: 0;
-  background: var(--accent); transition: height 0.2s linear; z-index: 1;
+  position: absolute; left: 6px; top: 18px; width: 2px; height: 0;
+  background: var(--accent); transition: height 0.25s linear; z-index: 1;
 }
-.az-tl-item { position: relative; margin: 0 0 14px; }
+.az-tl-item { position: relative; margin: 0; }
 .az-tl-marker {
-  position: absolute; left: -30px; top: 16px; width: 16px; height: 16px;
-  border-radius: 50%; background: #fff; border: 2px solid var(--rule);
+  position: absolute; left: -28px; top: 20px; width: 14px; height: 14px;
+  border-radius: 50%; background: var(--paper); border: 2px solid var(--rule);
   z-index: 2; transition: background 0.2s, border-color 0.2s, transform 0.2s;
 }
-.az-tl-item.is-active .az-tl-marker { background: var(--accent); border-color: var(--accent); transform: scale(1.18); }
-.az-tl-item--final .az-tl-marker { box-shadow: 0 0 0 5px rgba(196,57,43,0.16); }
+.az-tl-item.is-active .az-tl-marker { background: var(--accent); border-color: var(--accent); transform: scale(1.2); }
+.az-tl-item--final .az-tl-marker { box-shadow: 0 0 0 5px rgba(196,57,43,0.14); }
 .az-tl-card {
-  display: block; width: 100%; text-align: left; background: #fff;
-  border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px;
-  cursor: pointer; font: inherit; color: var(--text);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  display: block; width: 100%; text-align: left; background: transparent;
+  border: 0; border-bottom: 1px solid var(--rule); border-radius: 0;
+  padding: 14px 26px 16px 0; cursor: pointer; font: inherit; color: var(--text);
+  position: relative;
 }
-.az-tl-card:hover { border-color: var(--accent); box-shadow: 0 6px 22px rgba(0,0,0,0.06); transform: translateY(-1px); }
+.az-tl-item:last-child .az-tl-card { border-bottom: 0; }
 .az-tl-year {
   display: block; font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--accent); font-weight: 700; margin-bottom: 4px;
+  font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; margin-bottom: 5px;
 }
 .az-tl-title {
   display: block; font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 700; font-size: 1.06rem; line-height: 1.25; color: var(--ink);
+  font-weight: 700; font-size: 1.1rem; line-height: 1.3; color: var(--ink);
+  transition: color 0.15s ease;
 }
-.az-tl-body { display: block; font-size: 0.9rem; line-height: 1.55; color: var(--text-mid); margin-top: 8px; }
-/* JS-enhanced: collapse bodies, reveal on scroll. No-JS shows everything. */
+.az-tl-card:hover .az-tl-title { color: var(--accent); }
+.az-tl-body { display: block; font-size: 0.92rem; line-height: 1.6; color: var(--text-mid); margin-top: 9px; }
+/* JS-enhanced: collapse bodies, +/- affordance, scroll reveal. No-JS shows all. */
 .az-timeline.js-on .az-tl-card .az-tl-body { display: none; }
 .az-timeline.js-on .az-tl-card[aria-expanded="true"] .az-tl-body { display: block; animation: az-tl-open 0.25s ease; }
 .az-timeline.js-on .az-tl-card::after {
-  content: "+"; float: right; color: var(--accent); font-weight: 700;
-  font-family: 'Inter', system-ui, sans-serif; margin-left: 10px;
+  content: "+"; position: absolute; right: 2px; top: 13px;
+  color: var(--accent); font-weight: 700; font-size: 1.1rem;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 .az-timeline.js-on .az-tl-card[aria-expanded="true"]::after { content: "\2013"; }
-.az-timeline.js-on .az-tl-item { opacity: 0; transform: translateY(16px); transition: opacity 0.5s var(--ease-soft), transform 0.5s var(--ease-soft); }
+.az-timeline.js-on .az-tl-item { opacity: 0; transform: translateY(14px); transition: opacity 0.5s var(--ease-soft), transform 0.5s var(--ease-soft); }
 .az-timeline.js-on .az-tl-item.is-visible { opacity: 1; transform: none; }
-@keyframes az-tl-open { from { opacity: 0; } to { opacity: 1; } }
+@keyframes az-tl-open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 
-/* ─── Revenue scenarios table ─── */
-.az-econ { margin: 18px 0 6px; overflow-x: auto; }
-.az-econ-table {
-  width: 100%; border-collapse: collapse; font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.9rem; background: #fff; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden;
+/* ─── Revenue scenarios as number-led subheadings ─── */
+.az-stat {
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.3rem; line-height: 1.2; color: var(--ink); margin: 26px 0 6px;
 }
-.az-econ-table th, .az-econ-table td {
-  padding: 11px 14px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap;
+.az-stat-fig { color: var(--accent); }
+.az-stat-sub {
+  display: block; font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-light); margin-top: 4px;
 }
-.az-econ-table th:first-child, .az-econ-table td:first-child { text-align: left; color: var(--text-mid); }
-.az-econ-table thead th {
-  background: var(--paper); font-size: 0.72rem; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--ink); font-weight: 700;
-}
-.az-econ-table tbody tr:last-child td { border-bottom: 0; font-weight: 700; color: var(--ink); }
-.az-econ-table .az-econ-base { background: rgba(196,57,43,0.06); font-weight: 700; color: var(--ink); }
-.az-econ-table thead th:nth-child(3) { color: var(--accent); }
-.az-econ-note { font-size: 0.74rem; color: var(--text-light); margin: 8px 2px 0; line-height: 1.5; }
+.az-econ-note { font-size: 0.78rem; color: var(--text-light); margin: 22px 0 0; line-height: 1.5; }
 @media (prefers-reduced-motion: reduce) {
   .az-timeline.js-on .az-tl-item { opacity: 1; transform: none; transition: none; }
   .az-tl-fill { transition: none; }

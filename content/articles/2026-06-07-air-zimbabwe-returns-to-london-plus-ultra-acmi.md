@@ -123,6 +123,13 @@ The mechanism is a quiet, clever piece of aviation engineering called a wet-leas
   <p>The Harare deal is the company's third long-term ACMI contract with a national flag carrier in twelve months, following agreements with Air Algérie and Tunisair. That track record is the strongest signal that this is a serious, repeatable operating model rather than another hopeful headline. Plus Ultra makes its living lending reliable long-haul capacity to national airlines, and Zimbabwe has now hired exactly that.</p>
 </section>
 
+<section class="stay-section" data-stay-section data-stay-label="The paper trail" id="az-papertrail">
+  <h2>The paper trail: this was months in the making</h2>
+  <p>The announcement landed on 5 June, but our research indicates the groundwork was laid far earlier. Chapman Freeborn Aviation Services DMCC, the Dubai-based broker named in the deal, registered as a foreign supplier on Zimbabwe's official procurement portal, the Procurement Regulatory Authority of Zimbabwe (PRAZ, at praz.org.zw), on 6 March 2026. That is nearly three months before the contract was made public, and almost four months before the first flight. Brokers do not register on a country's government tender system on a whim. It is the kind of quiet, procedural step a firm takes when a mandate is already in motion.</p>
+  <p>That single timestamp reframes the story. This is not the hurried, hopeful announcement Air Zimbabwe has made before and failed to deliver. It is the visible end of a process that had been working through the paperwork since at least the first quarter of the year, steered by an internationally recognised, ISTAT-registered broker. The firm's registered address, Office 2503 in Jumeirah Bay Tower 2 in Dubai's JLT district, places it inside the Gulf brokerage corridor that has quietly rewired long-haul African aviation, the same corridor behind Plus Ultra's recent deals with Air Algérie and Tunisair.</p>
+  <p>And a note from our reading of the fleet. Plus Ultra builds its long-haul operation on the A330, and the June agreement specifies a wide-body A330. The carrier's two A330-300s, the newest jets in its fleet and added only in late 2025, are the most likely candidates to wear the Air Zimbabwe code on this corridor. If you board the Harare to London service this winter, there is a strong chance the aircraft under you was flying Latin American routes out of Madrid a season earlier.</p>
+</section>
+
 <section class="stay-section" data-stay-section data-stay-label="Why it matters" id="az-why">
   <h2>Why it matters more than one route</h2>
   <p>London is not just another dot on the map for Zimbabwe. The United Kingdom is home to one of the largest Zimbabwean diaspora communities in the world, and the Harare–London link is, in the most practical sense, a family route: it carries people home for weddings and funerals, students to and from university, traders, nurses, investors and tourists. Restoring a direct, flag-coded service shortens that distance for hundreds of thousands of people.</p>
@@ -139,23 +146,13 @@ The mechanism is a quiet, clever piece of aviation engineering called a wet-leas
   <h2>The economics: what the London route could actually earn</h2>
   <p>So what is a London route worth? Here is a deliberately simple, back-of-the-envelope model. These are illustrative estimates, not Air Zimbabwe's accounts, and they measure gross passenger revenue, not profit. The ACMI lease, fuel, taxes and airport charges all come out before anything reaches the bottom line.</p>
   <p>The assumptions are grounded in public figures: a Plus Ultra A330-300 carrying about 302 seats (30 business, 272 economy), a Harare to London distance of roughly 5,150 miles, and three return flights a week. Fares come from today's market, where one-way seats on connecting itineraries currently run from about £325 to £436 and returns from about £591 to £681. We assume a business-class seat sells for roughly three times the economy fare.</p>
-  <div class="az-econ">
-    <table class="az-econ-table">
-      <thead>
-        <tr><th>Metric</th><th>Conservative</th><th>Base case</th><th>Strong</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Load factor</td><td>65%</td><td class="az-econ-base">80%</td><td>90%</td></tr>
-        <tr><td>Average economy fare (one way)</td><td>£325</td><td class="az-econ-base">£350</td><td>£430</td></tr>
-        <tr><td>Revenue per one-way flight</td><td>~£75,000</td><td class="az-econ-base">~£100,000</td><td>~£140,000</td></tr>
-        <tr><td>Per week (3 return flights)</td><td>~£450,000</td><td class="az-econ-base">~£600,000</td><td>~£840,000</td></tr>
-        <tr><td>Per month</td><td>~£2.0m</td><td class="az-econ-base">~£2.6m</td><td>~£3.6m</td></tr>
-        <tr><td>Across the 13-month deal</td><td>~£25m</td><td class="az-econ-base">~£34m</td><td>~£47m</td></tr>
-      </tbody>
-    </table>
-    <p class="az-econ-note">Gross passenger revenue, illustrative. Excludes the ACMI lease cost, fuel, taxes and airport fees.</p>
-  </div>
-  <p>A sanity check against industry benchmarks says these figures are sensible rather than fanciful. The base case works out to a passenger yield of roughly 8 pence per revenue passenger mile, which converts to about 10 US cents and sits squarely inside the 8 to 15 cents per mile range typical of international routes, at an 80% load factor that is right in the 80 to 85% airlines aim for. Put plainly: a well-run Harare to London A330, even on cautious assumptions, is a multi-million-pound line of business. The prize is real, which is exactly why the route has been worth fighting back to.</p>
+  <h3 class="az-stat">Base case: <span class="az-stat-fig">about £34m</span><span class="az-stat-sub">Gross passenger revenue across the 13-month deal</span></h3>
+  <p>At an 80% load factor and a typical £350 economy fare, a single A330 grosses roughly £100,000 on each one-way flight. Run three return flights a week and that is about £600,000 a week, or £2.6m a month. The implied passenger yield is close to 8 pence per mile, which converts to roughly 10 US cents and sits squarely inside the 8 to 15 cents typical of international routes.</p>
+  <h3 class="az-stat">Conservative: <span class="az-stat-fig">about £25m</span><span class="az-stat-sub">Thin loads, cheapest fares, still firmly profitable territory</span></h3>
+  <p>Even at a lean 65% load factor on the cheapest £325 seats, each flight still clears about £75,000, which is roughly £450,000 a week and £2.0m a month. The floor under this route is high.</p>
+  <h3 class="az-stat">Strong: <span class="az-stat-fig">about £47m</span><span class="az-stat-sub">Peak-season demand at full fares over the deal</span></h3>
+  <p>Fill 90% of the cabin at peak £430 fares and each flight grosses around £140,000, or about £840,000 a week and £3.6m a month. A second daily rotation or a fourth weekly frequency would push the ceiling higher still.</p>
+  <p class="az-econ-note">All figures gross passenger revenue, illustrative, and built on a 302-seat A330 over roughly 5,150 miles. They exclude the ACMI lease cost, fuel, taxes and airport fees. The point is the order of magnitude: even cautiously, a well-run Harare to London A330 is a multi-million-pound line of business. The prize is real, which is exactly why the route has been worth fighting back to.</p>
 </section>
 
 This is a developing story. The Mutapa Times will track the Harare–London service through its launch and first months of operation. Browse current fares and connections on the route below.
