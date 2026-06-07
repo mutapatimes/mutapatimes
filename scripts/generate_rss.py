@@ -114,16 +114,22 @@ def collect_cms_articles(base):
         category = re.search(r'^category:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
         author = re.search(r'^author:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
         image = re.search(r'^image:[^\S\n]*["\']?(.+?)["\']?[^\S\n]*$', fm, re.MULTILINE)
+        exclusive = bool(re.search(r'^exclusive:[^\S\n]*true\s*$', fm, re.MULTILINE | re.IGNORECASE))
         dt = _parse_date(date.group(1)) if date else None
         if not _is_fresh(dt):
             continue
         link = f"{BASE_URL}/articles/{slug}"
+        _title = title.group(1) if title else slug
+        # Flag exclusives in the feed so autolists surface them as such.
+        if exclusive and not _title.upper().startswith("EXCLUSIVE"):
+            _title = f"EXCLUSIVE: {_title}"
         items.append({
-            "title": title.group(1) if title else slug,
+            "title": _title,
             "link": link,
             "description": (summary.group(1) if summary else body[:240].strip()),
             "pubDate": dt,
             "category": category.group(1) if category else "News",
+            "exclusive": exclusive,
             "author": author.group(1) if author else None,
             # Every feed item now points to the on-brand headline card we
             # render in build_feed_cards.py — Metricool autolists pick this
@@ -877,7 +883,10 @@ def collect_business_cms_articles(base):
         cat = (item.get("category") or "").strip().lower()
         if cat not in BUSINESS_CMS_CATEGORIES:
             continue
-        if not _looks_business(item.get("title", ""), item.get("description", "")):
+        # Editor-published exclusives bypass the keyword heuristic — they
+        # were deliberately written and tagged, so trust the category.
+        if not item.get("exclusive") and \
+           not _looks_business(item.get("title", ""), item.get("description", "")):
             continue
         out.append(item)
     return out

@@ -965,6 +965,8 @@ def build_articles():
             extra_scripts += '\n  <script defer src="/js/harare-hotels.js?v=2"></script>'
         if "data-stay-section" in body_html or "data-stay-carousel" in body_html:
             extra_scripts += '\n  <script defer src="/js/stay-longform.js?v=1"></script>'
+        if "data-timeline" in body_html:
+            extra_scripts += '\n  <script defer src="/js/timeline.js?v=1"></script>'
         html_parts.append(page_footer(depth=1, extra_scripts=extra_scripts))
 
         # Write file

@@ -219,6 +219,34 @@ NEWSLETTER_ANGLES = [
     },
 ]
 
+# ── Featured campaign ─────────────────────────────────────────
+# A single big story promoted once a day for several days, each day a
+# DIFFERENT angle + its own card, all linking to the same article. The
+# article also lives in the RSS (as a normal exclusive). Set to None when
+# there is no active campaign.
+FEATURED_CAMPAIGN = {
+    "slug": "2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi",
+    "url": "https://www.mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
+    "time_cat": "11:00",
+    "tag": "#AirZimbabwe #Harare #London #Zimbabwe",
+    "angles": [
+        {"key": "return", "card": "Air Zimbabwe is going back to London",
+         "hook": "It is official: Air Zimbabwe is returning to London. From 1 July the national flag flies the Harare to London route again, for the first time in over a decade."},
+        {"key": "date", "card": "Mark the date: Harare to London, 1 July",
+         "hook": "Circle 1 July. That is the day a wide-body lifts off from Harare for London under the Air Zimbabwe code, several times a week."},
+        {"key": "how", "card": "How Air Zimbabwe got back to London",
+         "hook": "Still on the UK safety list, yet flying to London? Here is the clever, fully legal wet-lease that makes the return possible."},
+        {"key": "aircraft", "card": "An Airbus A330 on the London run again",
+         "hook": "A modern Airbus A330 will fly the ten-and-a-half-hour Harare to London corridor. Quiet cabin, proven economics, serious comfort."},
+        {"key": "diaspora", "card": "A direct line home for the UK diaspora",
+         "hook": "For one of the world's largest Zimbabwean diaspora communities, this is a family route restored. Home just got a little closer."},
+        {"key": "plusultra", "card": "Meet Plus Ultra, the partner behind it",
+         "hook": "The Spanish operator flying the route has done this for more than 100 airlines and three flag carriers in a year. Why that makes the return credible."},
+        {"key": "future", "card": "What the London return signals next",
+         "hook": "Rent reliability, sell seats, rebuild the route: why this deal could be the runway to Air Zimbabwe's wider revival."},
+    ],
+}
+
 # Off-peak slot for newsletter posts so they don't collide with article slots.
 NEWSLETTER_SLOT_CAT = "16:30"
 NEWSLETTER_SLOT_EVENING_CAT = "19:30"
@@ -2638,6 +2666,38 @@ def main():
                 time_str=slot_utc.strftime("%H:%M:%S"),
                 image_url="",  # text-only — Shona proverbs work better unadorned
             ))
+
+    # ── Featured campaign — one post a day, different angle + card ──
+    if FEATURED_CAMPAIGN:
+        camp = FEATURED_CAMPAIGN
+        print(f"\n  Generating featured campaign ({len(camp['angles'])} days × 5 platforms)…")
+        camp_dir = os.path.join(CARDS_DIR, "campaign")
+        os.makedirs(camp_dir, exist_ok=True)
+        ch, cm = map(int, camp["time_cat"].split(":"))
+        for day_idx, angle in enumerate(camp["angles"]):
+            fname = f"{camp['slug']}-{angle['key']}.png"
+            path = os.path.join(camp_dir, fname)
+            try:
+                render_card(angle["card"], "Mutapa Times exclusive", path,
+                            color_idx=day_idx % len(CARD_BACKGROUNDS))
+            except Exception as e:
+                print(f"    campaign card FAILED ({angle['key']}): {e}")
+            card_url = f"{CARDS_PUBLIC_BASE}/campaign/{fname}"
+            target = datetime.combine(today_utc, datetime.min.time()) + timedelta(days=day_idx)
+            sched_utc = datetime(target.year, target.month, target.day, ch, cm,
+                                 tzinfo=timezone(CAT_OFFSET)).astimezone(timezone.utc)
+            for plat_idx, platform in enumerate(("LinkedIn", "Facebook", "Threads", "Twitter", "Instagram")):
+                slot = sched_utc + timedelta(minutes=plat_idx * 7)
+                caption = f"{angle['hook']}\n\nRead the exclusive: {camp['url']}\n\n{camp['tag']}"
+                rows.append(build_metricool_row(
+                    platform=platform,
+                    caption=caption,
+                    article={"title": angle["card"], "image": card_url},
+                    date_str=slot.strftime("%Y-%m-%d"),
+                    time_str=slot.strftime("%H:%M:%S"),
+                    image_url=card_url,
+                ))
+        print(f"    {len(camp['angles'])} days scheduled across 5 platforms")
 
     # Write CSV in Metricool's native column order
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
