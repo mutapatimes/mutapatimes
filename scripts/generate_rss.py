@@ -1400,6 +1400,24 @@ def main():
     write_stories_feed(base)
     write_bio_grid(base)
 
+    # Mirror every feed to a .rss twin. GitHub Pages serves .xml as
+    # application/xml, which strict RSS importers (e.g. Metricool Autolists)
+    # reject as "Invalid URL"; it serves .rss as application/rss+xml, the
+    # content-type they expect. Same bytes — point autolists at the .rss URL.
+    import glob
+    import shutil
+    feeds = glob.glob(os.path.join(base, "*-feed.xml")) + [os.path.join(base, "feed.xml")]
+    mirrored = 0
+    for xml_path in feeds:
+        if not os.path.exists(xml_path):
+            continue
+        try:
+            shutil.copyfile(xml_path, xml_path[:-4] + ".rss")
+            mirrored += 1
+        except OSError as e:
+            print(f"  .rss mirror FAILED for {os.path.basename(xml_path)}: {e}")
+    print(f"  Mirrored {mirrored} feeds to .rss (application/rss+xml)")
+
 
 if __name__ == "__main__":
     main()
