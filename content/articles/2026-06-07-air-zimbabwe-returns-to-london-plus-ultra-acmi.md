@@ -131,6 +131,12 @@ The mechanism is a quiet, clever piece of aviation engineering called a wet-leas
   <p>And a note from our reading of the fleet. Plus Ultra builds its long-haul operation on the A330, and the June agreement specifies a wide-body A330. The carrier's two A330-300s, the newest jets in its fleet and added only in late 2025, are the most likely candidates to wear the Air Zimbabwe code on this corridor. If you board the Harare to London service this winter, there is a strong chance the aircraft under you was flying Latin American routes out of Madrid a season earlier.</p>
 </section>
 
+<section class="stay-section" data-stay-section data-stay-label="The people" id="az-people">
+  <h2>The people steering it back</h2>
+  <p>A deal like this is also a question of who is in the room. Air Zimbabwe's board is chaired by Dr Silvanos Gwarinda, an aviation economist and strategist, with Edmund Makona, a former president of the African Airlines Association and a long-standing aviation consultant, serving as vice chairman. The commercial detail sits with chief finance officer Tapiwa Zimbveka, while the airports the route depends on are run by Tawanda Gusha at the Airports Company of Zimbabwe.</p>
+  <p>One credential stands out for anyone reading the continental tea leaves. Makona also serves as the Single African Air Transport Market Pilot Implementation Project ambassador for Africa's southern region, under the African Civil Aviation Commission. In other words, the airline's own leadership is wired directly into the SAATM liberalisation agenda that gives a route like Harare to London its strategic weight. This is not a board stumbling backwards into long-haul. It is one whose members have spent years arguing, on continental platforms, that Africa must fly. The London return is that argument made concrete.</p>
+</section>
+
 <section class="stay-section" data-stay-section data-stay-label="Why it matters" id="az-why">
   <h2>Why it matters more than one route</h2>
   <p>London is not just another dot on the map for Zimbabwe. The United Kingdom is home to one of the largest Zimbabwean diaspora communities in the world, and the Harare–London link is, in the most practical sense, a family route: it carries people home for weddings and funerals, students to and from university, traders, nurses, investors and tourists. Restoring a direct, flag-coded service shortens that distance for hundreds of thousands of people.</p>
