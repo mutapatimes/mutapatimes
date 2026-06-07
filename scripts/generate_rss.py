@@ -1415,6 +1415,7 @@ def build_wordle_items(base, days=14):
             "pubDate": WORDLE_EPOCH + timedelta(days=num, hours=6),
             "category": "Games",
             "author": "The Mutapa Times",
+            "image": f"{BASE_URL}/img/cards/wordle-card.png",
         })
     return items
 
