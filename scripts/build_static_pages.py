@@ -511,7 +511,8 @@ def page_footer(depth=1, extra_scripts=""):
   <script defer src="/js/shopify-ads.js"></script>
   <script defer src="/js/article-parallax.js?v=2"></script>
   <script defer src="/js/feature-story.js?v=1"></script>
-  <script defer src="/js/series.js?v=3"></script>{extra_scripts}
+  <script defer src="/js/series.js?v=3"></script>
+  <script defer src="/js/quote-share.js?v=2"></script>{extra_scripts}
 
 <script>
 if ('serviceWorker' in navigator) {{
