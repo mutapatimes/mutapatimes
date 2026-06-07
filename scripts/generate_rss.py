@@ -1373,6 +1373,77 @@ def write_bio_grid(base):
     return True
 
 
+# ─────────────────────────────────────────────────────────────
+# Shona Wordle feed — one item a day revealing the previous day's
+# answer (so it never spoils the live puzzle) and linking back to play.
+WORDLE_EPOCH = datetime(2026, 5, 27, tzinfo=timezone.utc)  # matches the page's EPOCH
+
+
+def build_wordle_items(base, days=14):
+    """Reveal the last `days` of Shona Wordle answers, newest first.
+    Replicates the game's selection: answer = answers[dayIndex % N],
+    dayIndex counted from WORDLE_EPOCH. Each item is dated the morning
+    AFTER its puzzle, so 'yesterday's word' surfaces today and the live
+    puzzle is never spoiled."""
+    wpath = os.path.join(base, "games", "shona-wordle", "words.json")
+    if not os.path.exists(wpath):
+        return []
+    try:
+        w = json.load(open(wpath))
+    except (json.JSONDecodeError, OSError):
+        return []
+    answers = w.get("answers") or []
+    meanings = w.get("meanings") or {}
+    if not answers:
+        return []
+    now = datetime.now(timezone.utc)
+    today_idx = (datetime(now.year, now.month, now.day, tzinfo=timezone.utc) - WORDLE_EPOCH).days
+    items = []
+    for k in range(today_idx - 1, today_idx - 1 - days, -1):
+        if k < 0:
+            break
+        word = answers[k % len(answers)]
+        gloss = meanings.get(word, "")
+        num = k + 1
+        desc = (f"The six-letter Shona word in puzzle #{num} was {word.upper()}"
+                + (f", meaning ‘{gloss}’. " if gloss else ". ")
+                + "Play today’s Shona Wordle now and keep your streak going.")
+        items.append({
+            "title": f"Shona Wordle #{num}: the answer was {word.upper()}",
+            "link": f"{BASE_URL}/games/shona-wordle/?d={num}",
+            "description": desc,
+            "pubDate": WORDLE_EPOCH + timedelta(days=num, hours=6),
+            "category": "Games",
+            "author": "The Mutapa Times",
+        })
+    return items
+
+
+def write_wordle_feed(base):
+    """Write /wordle-feed.xml — a dedicated daily feed for the Shona Wordle
+    autolist. One new item a day (yesterday's answer + meaning + play link)."""
+    items = build_wordle_items(base)
+    if not items:
+        print("  wordle-feed.xml SKIPPED — words.json missing/empty or pre-launch")
+        return False
+    rss = build_rss(items)
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — Daily Shona Wordle</title>", 1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/wordle-feed.xml"', 1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>The Mutapa Times Shona Wordle: yesterday’s answer and its meaning, plus the link to play today’s six-letter Shona word puzzle. One new item a day.</description>", 1,
+    )
+    out = os.path.join(base, "wordle-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  wordle-feed.xml written ({items[0]['title'][:60]}…)")
+    return True
+
+
 def main():
     base = os.path.join(os.path.dirname(__file__), "..")
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
@@ -1407,6 +1478,7 @@ def main():
     write_jobs_feed(base)
     write_properties_feed(base)
     write_stories_feed(base)
+    write_wordle_feed(base)
     write_bio_grid(base)
 
     # Mirror every feed to a .rss twin. GitHub Pages serves .xml as

@@ -43,6 +43,38 @@
 </script>
 
 <style>
+/* ── News ticker + more-news (js/wordle-news.js) — keep readers on site ── */
+.sw-ticker { background: #1a1a1a; color: #fff; overflow: hidden; border-bottom: 2px solid var(--accent, #c41e1e); }
+.sw-ticker-inner { display: flex; align-items: stretch; }
+.sw-ticker-label { flex: 0 0 auto; display: flex; align-items: center; background: var(--accent, #c41e1e);
+  color: #fff; font: 700 0.68rem/1 'Inter', system-ui, sans-serif; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 0 13px; }
+.sw-ticker-vp { flex: 1; overflow: hidden; }
+.sw-ticker-track { display: inline-flex; align-items: center; white-space: nowrap; will-change: transform;
+  animation: sw-ticker-scroll 70s linear infinite; }
+.sw-ticker:hover .sw-ticker-track, .sw-ticker:focus-within .sw-ticker-track { animation-play-state: paused; }
+.sw-ticker-item { color: #f4ede0; text-decoration: none; font: 600 0.82rem 'Inter', system-ui, sans-serif; padding: 9px 0; }
+.sw-ticker-item:hover { color: #fff; text-decoration: underline; }
+.sw-ticker-sep { color: var(--accent, #c41e1e); padding: 0 15px; font-weight: 700; }
+@keyframes sw-ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .sw-ticker-track { animation: none; }
+  .sw-ticker-vp { overflow-x: auto; }
+}
+.sw-morenews { max-width: 720px; margin: 8px auto 48px; padding: 0 20px; }
+.sw-morenews-label { font: 700 0.72rem/1 'Inter', system-ui, sans-serif; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--accent, #c41e1e); margin: 0 0 14px; padding-bottom: 10px;
+  border-bottom: 1px solid #d8d6cd; }
+.sw-morenews-list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sw-news-card { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: #fff; border: 1px solid #d8d6cd; border-left: 3px solid var(--accent, #c41e1e);
+  border-radius: 8px; padding: 13px 15px; text-decoration: none; color: #1a1a1a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease; }
+.sw-news-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.07); transform: translateY(-1px); }
+.sw-news-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 0.98rem; line-height: 1.25; }
+.sw-news-cta { flex: 0 0 auto; font: 600 0.72rem 'Inter', system-ui, sans-serif; color: var(--accent, #c41e1e); white-space: nowrap; }
+.sw-morenews-all { display: inline-block; margin-top: 16px; font: 600 0.85rem 'Inter', system-ui, sans-serif; color: var(--accent, #c41e1e); text-decoration: none; }
+.sw-morenews-all:hover { text-decoration: underline; }
 :root {
   --tile-correct: #4d8b3a;
   --tile-present: #c9a236;
@@ -502,6 +534,14 @@ body.sw-page {
 </head>
 <body class="sw-page">
 
+<!-- Latest-news ticker (js/wordle-news.js) — hidden until headlines load -->
+<div class="sw-ticker" id="sw-ticker" hidden>
+  <div class="sw-ticker-inner">
+    <span class="sw-ticker-label">Latest</span>
+    <div class="sw-ticker-vp"><div class="sw-ticker-track" id="sw-ticker-track"></div></div>
+  </div>
+</div>
+
 <header class="sw-top">
   <a href="/" class="sw-brand"><em>The Mutapa Times</em></a>
   <div class="sw-actions">
@@ -526,6 +566,13 @@ body.sw-page {
   <div class="sw-toast" id="toast" role="status" aria-live="polite"></div>
   <div class="sw-kb" id="keyboard" aria-label="Keyboard"></div>
 </main>
+
+<!-- More news (js/wordle-news.js) — keeps players on the site after the puzzle -->
+<section class="sw-morenews" id="sw-morenews" hidden aria-label="More news from The Mutapa Times">
+  <p class="sw-morenews-label">More from The Mutapa Times</p>
+  <div class="sw-morenews-list" id="sw-morenews-list"></div>
+  <a class="sw-morenews-all" href="/articles">See all stories &rarr;</a>
+</section>
 
 <footer class="sw-footer">
   An original game from <a href="/">The Mutapa Times</a>.
@@ -1232,5 +1279,6 @@ body.sw-page {
 })();
 </script>
 <script src="/js/shopify-ads.js" defer></script>
+<script src="/js/wordle-news.js" defer></script>
 </body>
 </html>
