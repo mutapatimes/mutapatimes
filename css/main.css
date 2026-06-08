@@ -4380,6 +4380,16 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   color: var(--text-light); margin: 0 0 7px; }
 .az-tweet-handle b { color: var(--ink); }
 .az-tweet-text { font-size: 1rem; line-height: 1.5; color: var(--ink); margin: 0; }
+/* In-article source list */
+.az-sources { list-style: none; padding: 0; margin: 8px 0 0; }
+.az-sources li { position: relative; padding: 12px 0 12px 18px; border-bottom: 1px solid var(--rule);
+  font-size: 0.98rem; line-height: 1.55; color: var(--ink); }
+.az-sources li:last-child { border-bottom: none; }
+.az-sources li::before { content: ""; position: absolute; left: 0; top: 19px;
+  width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+.az-sources li b { color: var(--ink); }
+.az-sources a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.az-sources a:hover { text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   .az-timeline.js-on .az-tl-item { opacity: 1; transform: none; transition: none; }
   .az-tl-fill { transition: none; }
