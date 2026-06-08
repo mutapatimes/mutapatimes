@@ -4396,6 +4396,12 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   border: 1px solid var(--rule); border-radius: 8px; padding: 10px 8px; box-sizing: border-box; }
 .az-chart figcaption { font-size: 0.86rem; color: var(--text-light); margin-top: 10px; line-height: 1.55; }
 .az-chart figcaption b { color: var(--ink); }
+/* In-article screenshots */
+.az-shot { margin: 24px 0 6px; }
+.az-shot img { display: block; width: 100%; height: auto; border: 1px solid var(--rule);
+  border-radius: 8px; }
+.az-shot figcaption { font-size: 0.86rem; color: var(--text-light); margin-top: 10px; line-height: 1.55; }
+.az-shot figcaption b { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .az-timeline.js-on .az-tl-item { opacity: 1; transform: none; transition: none; }
   .az-tl-fill { transition: none; }
