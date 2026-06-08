@@ -426,6 +426,7 @@ def page_head(title, canonical, desc, og_desc, schemas_inline, depth=2):
     schemas_html = "\n".join(f'<script type="application/ld+json">{s}</script>' for s in schemas_inline)
     return f"""<head>
     <meta charset="utf-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
     <title>{title}</title>
     <link rel="canonical" href="{canonical}">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -2201,6 +2202,7 @@ def write_redirect(old_dir, new_url, label):
     (old_dir / "index.html").write_text(f'''<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
 <title>Moved — {html.escape(label)} | The Mutapa Times</title>
 <link rel="canonical" href="{new_url}">
 <meta name="robots" content="noindex, follow">

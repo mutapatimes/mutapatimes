@@ -289,6 +289,7 @@ def sponsored_article(title: str, deck: str, slug: str, hero_img: str,
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
 <title>{title} | The Mutapa Times — Sponsored</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

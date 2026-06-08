@@ -848,6 +848,7 @@ def head_html(title, canonical, desc, schemas):
     schemas_html = "\n".join(f'<script type="application/ld+json">{s}</script>' for s in schemas)
     return f"""<head>
     <meta charset="utf-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
     <title>{title}</title>
     <link rel="canonical" href="{canonical}">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

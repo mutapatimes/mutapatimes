@@ -620,6 +620,7 @@ def render_head(title, description, canonical_path):
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
     <title>{esc(title)} | The Mutapa Times</title>
     <link rel="canonical" href="{esc(canonical_url)}">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

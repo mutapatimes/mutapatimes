@@ -382,6 +382,7 @@ def build_page(city, all_articles, other_cities):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
 <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />
 <!-- Google Reader Revenue Manager (open-access) -->
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>

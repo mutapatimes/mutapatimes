@@ -159,6 +159,7 @@ CSS = """
 """
 
 HEAD_COMMON = """    <meta charset="utf-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="manifest" href="../../site.webmanifest">
     <meta name="apple-mobile-web-app-capable" content="yes">
