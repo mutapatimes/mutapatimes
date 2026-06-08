@@ -31,6 +31,20 @@ MAX_PER_CATEGORY = 2
 MAX_TOTAL = 12
 MAX_ARTICLE_AGE_DAYS = 14  # Reject articles older than this
 
+# Editor's pick: pin one article as the newsletter lead/headline, overriding
+# the automatic top-of-category pick. `until` is an inclusive UTC date — the
+# override applies only up to and including that day, then auto-clears so it
+# never gets stuck as a stale headline. Set to None when there's no pick.
+LEAD_OVERRIDE = {
+    "until": "2026-06-08",
+    "title": "Exclusive: Air Zimbabwe is going back to London",
+    "url": "https://www.mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
+    "description": "From 1 July, an Airbus A330 flies Harare to London under the Air Zimbabwe code for the first time in over a decade. Inside the Plus Ultra wet-lease that quietly reopens the route, the legal route around the UK ban, and what it is worth.",
+    "source": "The Mutapa Times",
+    "publishedAt": "2026-06-07T07:00:00.000Z",
+    "_category": "business",
+}
+
 DAY_GREETINGS = {
     0: "Monday morning",
     2: "Wednesday midweek",
@@ -1197,6 +1211,19 @@ def main():
 
     top = pick_top_articles(articles)
     print(f"  Selected {len(top)} category articles for newsletter")
+
+    # Editor's pick: force a pinned lead to the top (auto-expires by date).
+    if LEAD_OVERRIDE:
+        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        if today_str <= LEAD_OVERRIDE.get("until", today_str):
+            lead = {k: v for k, v in LEAD_OVERRIDE.items() if k != "until"}
+            top = [a for a in top
+                   if a.get("url") != lead.get("url")
+                   and not titles_are_similar(a.get("title", ""), lead.get("title", ""))]
+            top.insert(0, lead)
+            print(f"  Lead override (until {LEAD_OVERRIDE['until']}): {lead['title']}")
+        else:
+            print(f"  Lead override expired ({LEAD_OVERRIDE['until']}); using auto-pick")
 
     # Tsumo of the Day, same daily rotation as the website
     tsumo = get_tsumo_of_the_day()
