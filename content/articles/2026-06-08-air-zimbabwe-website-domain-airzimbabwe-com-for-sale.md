@@ -3,7 +3,7 @@ title: "Exclusive: Air Zimbabwe Rebuilds Its Booking Engine Before London, in Si
 date: 2026-06-08T09:00:00.000Z
 author: Tendai Kuwanda
 category: Business
-image: /img/flights/london-to-harare.jpg
+image: /img/uploads/photo-output-3-scaled-1.png
 summary: Days before its London return, Air Zimbabwe has switched on a new
   reservation and online booking system. It is real preparation, yet the news
   reached the public through a stock-market filing and a foreign partner, not
@@ -14,12 +14,11 @@ headline_position: 1
 source_type: original
 spotlight: true
 feature_story: false
-exclusive: true
 draft: false
 longform: true
-hero_eyebrow: "EXCLUSIVE · AVIATION · SYSTEMS & STRATEGY"
+hero_eyebrow: EXCLUSIVE · AVIATION · SYSTEMS & STRATEGY
 hero_image_credit: The Mutapa Times
-read_minutes: 7
+read_minutes: Seven
 ---
 There is real motion behind Air Zimbabwe's return to London, and most of it is happening where its passengers cannot see it. As of 8 June the airline switched on a new reservation and online booking platform, the engine that sells and manages its seats, weeks before its scheduled 1 July return to the route. After years of decline, that is concrete, encouraging preparation, and The Mutapa Times is first to connect this upgrade to the relaunch.
 
