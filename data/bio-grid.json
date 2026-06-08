@@ -1,7 +1,47 @@
 {
-  "fetched_at": "2026-06-08T03:30:20+00:00",
+  "fetched_at": "2026-06-08T10:27:40+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Gulf Capital and the UAE–SADC Trade Corridor Explained",
+      "link": "https://mutapatimes.com/articles/2026-06-08-gulf-capital-and-the-uaesadc-trade-corridor-explained",
+      "image": "https://www.mutapatimes.com/img/cards/news/f9848963b72b.png",
+      "pubDate": "2026-06-08T04:21:13+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zim pledges US$1m to fight Ebola... Govt activates full emergency response",
+      "link": "https://mutapatimes.com/articles/2026-06-07-zim-pledges-us1m-to-fight-ebola-govt-activates-full-emergenc",
+      "image": "https://www.mutapatimes.com/img/cards/news/695fe6e2bbe2.png",
+      "pubDate": "2026-06-07T22:15:50+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe joins Ebola fight with US$1m pledge",
+      "link": "https://mutapatimes.com/articles/2026-06-07-zimbabwe-joins-ebola-fight-with-us1m-pledge",
+      "image": "https://www.mutapatimes.com/img/cards/news/47c05d71769c.png",
+      "pubDate": "2026-06-07T22:06:03+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Glamour and confusion at Miss Universe Zimbabwe 2026 finale",
+      "link": "https://mutapatimes.com/articles/2026-06-07-glamour-and-confusion-at-miss-universe-zimbabwe-2026-finale",
+      "image": "https://www.mutapatimes.com/img/cards/news/423bbeea353a.png",
+      "pubDate": "2026-06-07T22:03:35+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Glamour and confusion at Miss Universe Zimbabwe 2026 finale",
+      "link": "https://mutapatimes.com/news/2026-06-08-glamour-and-confusion-at-miss-universe-zimbabwe-2026-finale-25c476",
+      "image": "https://www.mutapatimes.com/img/cards/news/782320ee483b.png",
+      "pubDate": "2026-06-07T22:03:35+00:00",
+      "category": "Entertainment"
+    },
     {
       "kind": "economy",
       "title": "Zim remittances 2025 Q4: diaspora sent $839M home officially. Trailing four quarters: $2.9B.",
@@ -12,7 +52,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 8 Jun 2026: 1 USD = 26.79 ZWG · best from UK £100 → $130.72 via Wise",
+      "title": "Zim FX snapshot 8 Jun 2026: 1 USD = 26.79 ZWG · best from UK £100 → $130.35 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-06-08",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-08",
       "pubDate": "2026-06-07T22:00:00+00:00",
@@ -20,7 +60,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 8 Jun: Harare mainly clear · high 24° / low 12°",
+      "title": "Zim weather 8 Jun: Harare clear sky · high 23° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-06-08",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-08",
       "pubDate": "2026-06-07T22:00:00+00:00",
@@ -439,46 +479,6 @@
       "title": "AIDS HEALTHCARE FOUNDATION — Linkage and Retention Officer - (Chitungwiza Sites)",
       "link": "https://vacancymail.co.zw/jobs/linkage-and-retention-officer-chitungwiza-sites-67705/",
       "image": "https://mutapatimes.com/img/cards/jobs/b6d4f2678764.png",
-      "pubDate": "2026-06-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Loss Control Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/loss-control-supervisor-67703/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1f1b299f551d.png",
-      "pubDate": "2026-06-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Kitchen Intern",
-      "link": "https://vacancymail.co.zw/jobs/kitchen-intern-67702/",
-      "image": "https://mutapatimes.com/img/cards/jobs/71c3ec0aaaf3.png",
-      "pubDate": "2026-06-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — TYRE FITTER X1",
-      "link": "https://vacancymail.co.zw/jobs/tyre-fitter-x1-67701/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c4450813e31b.png",
-      "pubDate": "2026-06-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "First Pack Marketing — Sales Representatives *3",
-      "link": "https://vacancymail.co.zw/jobs/sales-representatives-3-67700/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8eefc28cf0ef.png",
-      "pubDate": "2026-06-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "First Pack Marketing — Business Development Officer *3",
-      "link": "https://vacancymail.co.zw/jobs/business-development-officer-3-67699/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0aa911f8f1b5.png",
       "pubDate": "2026-06-07T22:00:00+00:00",
       "category": "Jobs"
     }
