@@ -100,8 +100,8 @@ This is the layer that takes a booking, issues the ticket and counts the money. 
   <h2>What that demand actually found</h2>
   <p>We did what a curious traveller would. The instinctive address, airzimbabwe.com, no longer belongs to the airline; it resolves to a near-empty holding page and has been offered for sale. The single most valuable piece of digital real estate the carrier could own now points its customers elsewhere.</p>
   <p>The airline's actual website lives on airzimbabwe.aero, and at the height of the surge it was not a website at all, but a "scheduled maintenance" holding page. We now know that maintenance was the systems cutover above, which cuts both ways: a brand-new booking engine went live on the back end the day demand peaked, and the travellers driving it could not reach the door, because the door was boarded up and unmarked.</p>
-  <figure class="az-shot">
-    <img src="/img/articles/az/airzimbabwe-aero-maintenance.jpg" alt="The airzimbabwe.aero website showing a scheduled-maintenance page reading We'll be back in the air soon." loading="lazy">
+  <figure class="az-shot" style="max-width:460px;margin:28px auto 6px;">
+    <img src="/img/articles/az/airzimbabwe-aero-maintenance.jpg" alt="The airzimbabwe.aero website showing a scheduled-maintenance page reading We'll be back in the air soon." loading="lazy" style="display:block;width:100%;height:auto;border:1px solid #e4e2db;border-radius:8px;">
     <figcaption><b>airzimbabwe.aero during the surge:</b> a holding page, not a booking page. Captured 8 June 2026.</figcaption>
   </figure>
 </section>
@@ -109,8 +109,8 @@ This is the layer that takes a booking, issues the ticket and counts the money. 
 <section class="stay-section" data-stay-section data-stay-label="How the .com slipped" id="az-history">
   <h2>How the .com slipped away</h2>
   <p>As an <a href="https://web.archive.org/web/20120601083328/http://www.airzimbabwe.com/" target="_blank" rel="noopener">Internet Archive capture from 2012</a> shows, airzimbabwe.com was a working booking site, already selling the very route now being relaunched: a search box set London to Harare, and a "Web Special Fare, London Harare Return from £300." The airline once sold London online. Today it cannot.</p>
-  <figure class="az-shot">
-    <img src="/img/articles/az/airzimbabwe-com-2012.jpg" alt="A 2012 Internet Archive capture of airzimbabwe.com showing a booking widget set from London to Harare and a London-Harare return web special fare from 300 pounds." loading="lazy">
+  <figure class="az-shot" style="max-width:460px;margin:28px auto 6px;">
+    <img src="/img/articles/az/airzimbabwe-com-2012.jpg" alt="A 2012 Internet Archive capture of airzimbabwe.com showing a booking widget set from London to Harare and a London-Harare return web special fare from 300 pounds." loading="lazy" style="display:block;width:100%;height:auto;border:1px solid #e4e2db;border-radius:8px;">
     <figcaption><b>The site they lost:</b> airzimbabwe.com in 2012, booking London to Harare with a fare "from £300" return. Source: Internet Archive (Wayback Machine), 1 June 2012.</figcaption>
   </figure>
   <p>Archive records show the .com served the airline until around 2017, after which it passed out of the carrier's hands. We cannot state why with certainty, but the timing lines up with its deepest financial crisis, a period of grounded and impounded aircraft and well-documented unpaid debts, and the most common way a national carrier loses its domain is mundane: a renewal invoice unpaid while bigger fires burn. Once a .com is gone, getting it back is rarely cheap and never quick.</p>
