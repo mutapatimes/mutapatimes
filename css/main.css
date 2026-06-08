@@ -4390,6 +4390,12 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
 .az-sources li b { color: var(--ink); }
 .az-sources a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .az-sources a:hover { text-decoration: none; }
+/* In-article data chart */
+.az-chart { margin: 24px 0 6px; }
+.az-chart svg { display: block; width: 100%; height: auto; background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px; padding: 10px 8px; box-sizing: border-box; }
+.az-chart figcaption { font-size: 0.86rem; color: var(--text-light); margin-top: 10px; line-height: 1.55; }
+.az-chart figcaption b { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .az-timeline.js-on .az-tl-item { opacity: 1; transform: none; transition: none; }
   .az-tl-fill { transition: none; }
