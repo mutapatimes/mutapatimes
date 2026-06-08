@@ -3,7 +3,7 @@ title: "Exclusive: Air Zimbabwe Rebuilds Its Booking Engine Before London, in Si
 date: 2026-06-08T09:00:00.000Z
 author: Tendai Kuwanda
 category: Business
-image: /img/articles/az/hitit-air-zimbabwe-lead.jpg
+image: /img/uploads/photo-output-3-scaled-1.png
 summary: Days before its London return, Air Zimbabwe has switched on a new
   reservation and online booking system. It is real preparation, yet the news
   reached the public through a stock-market filing and a foreign partner, not
@@ -14,20 +14,21 @@ headline_position: 1
 source_type: original
 spotlight: true
 feature_story: false
-exclusive: true
 draft: false
 longform: true
-hero_eyebrow: "EXCLUSIVE · AVIATION · SYSTEMS & STRATEGY"
+hero_eyebrow: EXCLUSIVE · AVIATION · SYSTEMS & STRATEGY
 hero_image_credit: The Mutapa Times
-read_minutes: 7
+read_minutes: Seven
 ---
 There is real motion behind Air Zimbabwe's return to London, and most of it is happening where its passengers cannot see it. As of 8 June the airline switched on a new reservation and online booking platform, the engine that sells and manages its seats, weeks before its scheduled 1 July return to the route. After years of decline, that is concrete, encouraging preparation, and The Mutapa Times is first to connect this upgrade to the relaunch.
 
-Yet the news of it reached the public the way the route did: through a corporate channel, not a word to passengers. The systems go-live surfaced in a <a href="https://www.kap.org.tr/tr/Bildirim/1614160" target="_blank" rel="noopener">stock-market filing in Istanbul</a>. The route was confirmed by a <a href="https://plusultra.com/en/" target="_blank" rel="noopener">press release</a> from a Spanish partner. Weeks from the first flight, the airline still has not told its own customers the route exists, when it flies, or how to buy a seat. The engine is being rebuilt. The showroom is dark.
+Yet the news of it reached the public the way the route did: through a corporate channel, not a word to passengers. The systems go-live surfaced in a <a href="https://www.kap.org.tr/tr/Bildirim/1614160" target="_blank" rel="noopener">stock-market filing in Istanbul</a>. The route was confirmed by a <a href="https://plusultra.com/en/" target="_blank" rel="noopener">press release</a> from a Spanish partner. Weeks from the first flight, the airline still has not told its own customers the route exists, when it flies, or how to buy a seat. 
 
 <section class="stay-section" data-stay-section data-stay-label="The quiet upgrade" id="az-hitit">
   <h2>The quiet part: a new engine to sell seats</h2>
-  <p>The substantive news first, because it is real. According to a <a href="https://www.kap.org.tr/tr/Bildirim/1614160" target="_blank" rel="noopener">disclosure to Turkey's public markets platform</a> by the aviation software firm Hitit Bilgisayar, Air Zimbabwe went live on 8 June with a major upgrade of its Crane suite: Crane PAX for reservations, Crane IBE, the internet booking engine, and Crane RA for revenue accounting. This is the layer that takes a booking, issues the ticket and counts the money. Replacing it is not cosmetic.</p>
+  <p>The substantive news first, because it is real. According to a <a href="https://www.kap.org.tr/tr/Bildirim/1614160" target="_blank" rel="noopener">disclosure to Turkey's public markets platform</a> by the aviation software firm Hitit Bilgisayar, Air Zimbabwe went live on the back end, 8 June with a major upgrade of its Crane suite: Crane PAX for reservations, Crane IBE, the internet booking engine, and Crane RA for revenue accounting. If you tried to go on their website and it was down this is why. 
+
+This is the layer that takes a booking, issues the ticket and counts the money. Replacing it is not cosmetic.</p>
   <p>It builds on what is already there. Air Zimbabwe has run Hitit's departure control system since a <a href="https://www.facebook.com/hititcomputerservices/photos/did-you-know-zimbabwes-flag-carrier-air-zimbabwe-automates-all-its-ground-operat/732016588718804/" target="_blank" rel="noopener">2021 agreement</a>. So this is a carrier that quietly modernised its ground systems three years ago and has now extended that to the systems that sell seats, in the same month it reopens its flagship route. In fairness on scale, <a href="https://uzmanpara.milliyet.com.tr/raporlar-analizler/analiz--httbt---hitit-ve-air-zimbabwe-is-ortakliginin-rezervasyon---yolcu-hizmetleri-ve-muhasebe-cozumleri-ile-genisletilmesi-deniz-yatirim-fnc-news/3459920/" target="_blank" rel="noopener">Istanbul analysts</a> rated the deal only "limited positive" for Hitit's own shares: incremental modernisation, not a moonshot. But solid plumbing, installed before the guests arrive, is still progress.</p>
 </section>
 
@@ -98,7 +99,7 @@ Yet the news of it reached the public the way the route did: through a corporate
 <section class="stay-section" data-stay-section data-stay-label="The front door" id="az-found">
   <h2>What that demand actually found</h2>
   <p>We did what a curious traveller would. The instinctive address, airzimbabwe.com, no longer belongs to the airline; it resolves to a near-empty holding page and has been offered for sale. The single most valuable piece of digital real estate the carrier could own now points its customers elsewhere.</p>
-  <p>The airline's actual website lives on airzimbabwe.aero, and at the height of the surge it was not a website at all, but a "scheduled maintenance" holding page. We now know that maintenance was the systems cutover above, which cuts both ways: a brand-new booking engine went live on the day demand peaked, and the travellers driving it could not reach the door, because the door was boarded up and unmarked.</p>
+  <p>The airline's actual website lives on airzimbabwe.aero, and at the height of the surge it was not a website at all, but a "scheduled maintenance" holding page. We now know that maintenance was the systems cutover above, which cuts both ways: a brand-new booking engine went live on the back end the day demand peaked, and the travellers driving it could not reach the door, because the door was boarded up and unmarked.</p>
   <figure class="az-shot">
     <img src="/img/articles/az/airzimbabwe-aero-maintenance.jpg" alt="The airzimbabwe.aero website showing a scheduled-maintenance page reading We'll be back in the air soon." loading="lazy">
     <figcaption><b>airzimbabwe.aero during the surge:</b> a holding page, not a booking page. Captured 8 June 2026.</figcaption>
@@ -107,7 +108,7 @@ Yet the news of it reached the public the way the route did: through a corporate
 
 <section class="stay-section" data-stay-section data-stay-label="How the .com slipped" id="az-history">
   <h2>How the .com slipped away</h2>
-  <p>It was not always like this. The site the airline lost was no brochure. As an <a href="https://web.archive.org/web/20120601083328/http://www.airzimbabwe.com/" target="_blank" rel="noopener">Internet Archive capture from 2012</a> shows, airzimbabwe.com was a working booking site, already selling the very route now being relaunched: a search box set London to Harare, and a "Web Special Fare, London Harare Return from £300." The airline once sold London online. Today it cannot.</p>
+  <p>As an <a href="https://web.archive.org/web/20120601083328/http://www.airzimbabwe.com/" target="_blank" rel="noopener">Internet Archive capture from 2012</a> shows, airzimbabwe.com was a working booking site, already selling the very route now being relaunched: a search box set London to Harare, and a "Web Special Fare, London Harare Return from £300." The airline once sold London online. Today it cannot.</p>
   <figure class="az-shot">
     <img src="/img/articles/az/airzimbabwe-com-2012.jpg" alt="A 2012 Internet Archive capture of airzimbabwe.com showing a booking widget set from London to Harare and a London-Harare return web special fare from 300 pounds." loading="lazy">
     <figcaption><b>The site they lost:</b> airzimbabwe.com in 2012, booking London to Harare with a fare "from £300" return. Source: Internet Archive (Wayback Machine), 1 June 2012.</figcaption>
