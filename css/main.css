@@ -4372,6 +4372,14 @@ a.business-card:hover { text-decoration: none; color: var(--text); }
   color: var(--text-light); margin-top: 4px;
 }
 .az-econ-note { font-size: 0.78rem; color: var(--text-light); margin: 22px 0 0; line-height: 1.5; }
+
+/* Quoted social posts inside an article */
+.az-tweet { border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+  border-radius: 8px; background: #fff; padding: 14px 16px; margin: 16px 0; }
+.az-tweet-handle { font-family: 'Inter', system-ui, sans-serif; font-size: 0.82rem;
+  color: var(--text-light); margin: 0 0 7px; }
+.az-tweet-handle b { color: var(--ink); }
+.az-tweet-text { font-size: 1rem; line-height: 1.5; color: var(--ink); margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   .az-timeline.js-on .az-tl-item { opacity: 1; transform: none; transition: none; }
   .az-tl-fill { transition: none; }

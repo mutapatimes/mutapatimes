@@ -36,6 +36,26 @@ Here is the problem. When those would-be passengers did the most natural thing i
   <p>The airline's actual website lives on airzimbabwe.aero. At the time of writing, in the middle of the search surge, it is not a website at all. It is a holding page that reads "We'll be back in the air soon. Our website is taking a short rest while we carry out scheduled upgrades," under a "Scheduled maintenance in progress" banner, with Reservations, Email us and Flight status links that lead nowhere useful. Scheduling site maintenance is normal. Scheduling it across the biggest demand spike in a year is the digital equivalent of locking the terminal doors on the morning the route launches.</p>
 </section>
 
+<section class="stay-section" data-stay-section data-stay-label="Announced everywhere but to passengers" id="az-comms">
+  <h2>A launch announced everywhere except to passengers</h2>
+  <p>The communications around this route have been everything except customer-first. The news did not arrive as a clear message from the airline to the people who fly it. It was drip-fed through the aviation and business circuit first, in conference remarks and industry meetings, and the formal confirmation, when it finally came, was a press release from Plus Ultra, the Spanish partner operating the aircraft, not from Air Zimbabwe. Weeks out from the 1 July start, the airline itself has still not told its own customers, on its own website or its own social channels, that the route exists, when it flies, or how to buy a seat.</p>
+  <p>Passengers noticed the silence.</p>
+  <div class="az-tweet">
+    <p class="az-tweet-handle"><b>@RobCSAdams</b> &middot; 6 June</p>
+    <p class="az-tweet-text">Launching in a month, yet no mention of these flights on the AirZimbabwe web site? No listing on any of the flight consolidator sites? How do you buy a ticket? What's the flight frequency? I'll believe it when I see it.....</p>
+  </div>
+  <div class="az-tweet">
+    <p class="az-tweet-handle"><b>@TheAssegai</b></p>
+    <p class="az-tweet-text">Has Air Zimbabwe even fixed their website for them to be talking about flying UK</p>
+  </div>
+  <p>Then, on the morning of Monday 8 June, with search interest for the airline at its monthly peak, the official Air Zimbabwe account did post. Not the route. Not a fare. Not a booking link. A customer-satisfaction survey.</p>
+  <div class="az-tweet">
+    <p class="az-tweet-handle"><b>@FlyAirZimbabwe</b> &middot; 8 June</p>
+    <p class="az-tweet-text">Your experience matters to us. Tell us how we're doing, what we're getting right and where we can do better. It takes just a few minutes. #FlyAirZim #CustomerExperience</p>
+  </div>
+  <p>The instinct to ask customers how it is doing, on the very day thousands of them were trying to give it money, captures the distance between the airline's communications and its passengers more sharply than any analysis could. The demand was at the door. The airline sent out a feedback form.</p>
+</section>
+
 <section class="stay-section" data-stay-section data-stay-label="How the .com slipped" id="az-history">
   <h2>How the .com slipped away</h2>
   <p>It was not always like this. Internet Archive records show airzimbabwe.com served the airline's own website for years, up until around 2017, after which it passed out of the carrier's hands. We cannot state with certainty why. But the timing lines up with the airline's deepest financial crisis, a period of grounded aircraft, impounded planes and well-documented unpaid debts, and the most common way a national carrier loses its primary domain is mundane: a renewal invoice that goes unpaid while bigger fires are burning. A lapsed domain does not announce itself. It simply expires, gets snapped up, and reappears months later with a price tag.</p>
@@ -54,4 +74,4 @@ Here is the problem. When those would-be passengers did the most natural thing i
   <p>None of this is hard to fix, and that is the frustrating part. Put a real page, even a single page, behind airzimbabwe.aero today, with a working booking link and an email capture. Move to recover or redirect the .com, by purchase if it is merely parked, or through a UDRP complaint if it is being squatted on the airline's name. The demand, as the search data proves, is already there and already paid for. The route is the good news. The website is the unforced error. Both are still fixable, and the audience is, right now, looking.</p>
 </section>
 
-<p><strong>Editor's note:</strong> This is a working draft. Search-interest figures are from Google Trends (worldwide and GB, 8 May to 8 June 2026). Domain status was checked directly and against Internet Archive records; the attribution of the .com loss to the airline's debt era is informed inference, not a confirmed cause, and should be put to Air Zimbabwe for comment before publication.</p>
+<p><strong>Editor's note:</strong> This is a working draft. Search-interest figures are from Google Trends (worldwide and GB, 8 May to 8 June 2026). Domain status was checked directly and against Internet Archive records; the attribution of the .com loss to the airline's debt era is informed inference, not a confirmed cause. Quoted posts are public on X at the time of writing. All of it should be put to Air Zimbabwe for comment before publication.</p>
