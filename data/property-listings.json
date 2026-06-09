@@ -1,8 +1,17 @@
 {
-  "fetched_at": "2026-06-09T04:33:50.438672+00:00",
+  "fetched_at": "2026-06-09T15:26:36.017103+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Prime commercial opportunity on Churchill Ave (On Show)",
+      "url": "https://www.property.co.zw/for-sale/houses-plzp248553",
+      "price": "USD 750,000",
+      "location": "Alexandra Park, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/59/b3/b5/59b3b5bf-2134-4170-bd48-e619751f72f9_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
     {
       "title": "3 bedroom house for sale in Houghton Park",
       "url": "https://www.property.co.zw/for-sale/houses-gat247133",
@@ -10,15 +19,6 @@
       "location": "Houghton Park, Harare South",
       "image": "https://www.property.co.zw/uploadedfiles/1c/0d/89/1c0d891b-5570-4a7d-8bb9-593387f48e82_thumbnail591.webp",
       "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Starter Home For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-gsre246804",
-      "price": "USD 55,000",
-      "location": "Glen View, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/a9/96/5a/a9965a4c-91e8-40f0-a974-a3d6af70c722_thumbnail591.webp",
-      "beds": "4",
       "baths": "2"
     },
     {
