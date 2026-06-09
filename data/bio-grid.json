@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-06-09T20:03:19+00:00",
+  "fetched_at": "2026-06-09T20:18:19+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "The science of sharing land: How cattle and wildlife thrive side-by-side in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-06-09-the-science-of-sharing-land-how-cattle-and-wildlife-thrive-s",
-      "image": "https://www.mutapatimes.com/img/cards/news/6a8aeb585b96.png",
-      "pubDate": "2026-06-09T18:43:27+00:00",
-      "category": "Tech"
-    },
     {
       "kind": "news",
       "title": "The science of sharing land: How cattle and wildlife thrive side-by-side in Zimbabwe",
@@ -17,14 +9,6 @@
       "image": "https://www.mutapatimes.com/img/cards/news/c91037ce924b.png",
       "pubDate": "2026-06-09T18:43:27+00:00",
       "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "Nature-Based Solutions Inventory for Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-06-09-nature-based-solutions-inventory-for-zimbabwe",
-      "image": "https://www.mutapatimes.com/img/cards/news/9dd748efb54b.png",
-      "pubDate": "2026-06-09T16:50:50+00:00",
-      "category": "Tech"
     },
     {
       "kind": "news",
@@ -60,10 +44,10 @@
     },
     {
       "kind": "news",
-      "title": "Horror as diver searching sewer pond for body of man, 19, finds 2 more",
-      "link": "https://mutapatimes.com/articles/2026-06-09-horror-as-diver-searching-sewer-pond-for-body-of-man-19-find",
-      "image": "https://www.mutapatimes.com/img/cards/news/9b2f2460a567.png",
-      "pubDate": "2026-06-09T07:23:51+00:00",
+      "title": "ZEEX: Zimbabwe's First SME Exchange, and the Problem It Doesn't Solve",
+      "link": "https://mutapatimes.com/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme",
+      "image": "https://www.mutapatimes.com/img/cards/news/720da7e6e46a.png",
+      "pubDate": "2026-06-09T08:00:00+00:00",
       "category": "Business"
     },
     {
@@ -85,34 +69,10 @@
     {
       "kind": "news",
       "title": "2 Business Partners’ Shocking Deaths: Both hit by multiple cars 2 months apart, both hit on Saturdays, both died while going to collect their cars",
-      "link": "https://mutapatimes.com/articles/2026-06-09-2-business-partners-shocking-deaths-both-hit-by-multiple-car",
-      "image": "https://www.mutapatimes.com/img/cards/news/b92322d6d002.png",
-      "pubDate": "2026-06-09T06:43:05+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "2 Business Partners’ Shocking Deaths: Both hit by multiple cars 2 months apart, both hit on Saturdays, both died while going to collect their cars",
       "link": "https://mutapatimes.com/news/2026-06-09-2-business-partners-shocking-deaths-both-hit-by-multiple-cars-2-months-apart-454fec",
       "image": "https://www.mutapatimes.com/img/cards/news/70451dff290d.png",
       "pubDate": "2026-06-09T06:43:05+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe repatriates 74 citizens as xenophobic violence spreads across South Africa",
-      "link": "https://mutapatimes.com/articles/2026-06-09-zimbabwe-repatriates-74-citizens-as-xenophobic-violence-spre",
-      "image": "https://www.mutapatimes.com/img/cards/news/6cb91c0bacba.png",
-      "pubDate": "2026-06-09T06:22:18+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Mutapa brokered deal revives Air Zimbabwe’s Harare-London flights",
-      "link": "https://mutapatimes.com/articles/2026-06-09-mutapa-brokered-deal-revives-air-zimbabwes-harare-london-fli",
-      "image": "https://www.mutapatimes.com/img/cards/news/c7d398093f2b.png",
-      "pubDate": "2026-06-09T05:54:23+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -479,6 +439,46 @@
       "title": "Sales and Marketing Attachees",
       "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-attachees-67757/",
       "image": "https://mutapatimes.com/img/cards/jobs/f902e2bedc8f.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Digitization Clerks",
+      "link": "https://vacancymail.co.zw/jobs/digitization-clerks-67756/",
+      "image": "https://mutapatimes.com/img/cards/jobs/06713052e65f.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mechanical/Structural Engineer : (Estimating Focus)",
+      "link": "https://vacancymail.co.zw/jobs/mechanicalstructural-engineer-estimating-focus-67752/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4288670a0756.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Quantity Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/quantity-surveyor-67751/",
+      "image": "https://mutapatimes.com/img/cards/jobs/28c39cad08a7.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Turbomining (Pvt) Ltd — Industrial Relations Officer",
+      "link": "https://vacancymail.co.zw/jobs/industrial-relations-officer-67750/",
+      "image": "https://mutapatimes.com/img/cards/jobs/eed0c91fdc1d.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Head of Valuations & Advisory Services",
+      "link": "https://vacancymail.co.zw/jobs/head-of-valuations-advisory-services-67749/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3f4809c8e9c9.png",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Jobs"
     }
