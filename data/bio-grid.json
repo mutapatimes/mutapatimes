@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-06-08T22:22:33+00:00",
+  "fetched_at": "2026-06-09T06:44:36+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Air Zimbabwe Launches Harare to London Nonstop Flights July 1, 2026 After 14-Year Hiatus",
+      "link": "https://mutapatimes.com/articles/2026-06-09-air-zimbabwe-launches-harare-to-london-nonstop-flights-july",
+      "image": "https://www.mutapatimes.com/img/cards/news/a0871a237ed3.png",
+      "pubDate": "2026-06-09T05:02:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Air Zimbabwe Launches Harare to London Nonstop Flights July 1, 2026 After 14-Year Hiatus",
+      "link": "https://mutapatimes.com/news/2026-06-09-air-zimbabwe-launches-harare-to-london-nonstop-flights-july-1-2026-after-14-8283d1",
+      "image": "https://www.mutapatimes.com/img/cards/news/2e2ba0874bca.png",
+      "pubDate": "2026-06-09T05:02:45+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Mining leads agriculture by $833M. Mining $2.9B, agri $2.1B.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 9 Jun 2026: 1 USD = 26.79 ZWG · best from UK £100 → $130.35 via Wise",
+      "title": "Zim FX snapshot 9 Jun 2026: 1 USD = 26.80 ZWG · best from UK £100 → $130.29 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-06-09",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-09",
       "pubDate": "2026-06-08T22:00:00+00:00",
@@ -25,6 +41,22 @@
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-09",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Weather"
+    },
+    {
+      "kind": "news",
+      "title": "Professor bridges Korea, Zimbabwe with lecture on culture",
+      "link": "https://mutapatimes.com/articles/2026-06-08-professor-bridges-korea-zimbabwe-with-lecture-on-culture",
+      "image": "https://www.mutapatimes.com/img/cards/news/ea0b488b805a.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Professor bridges Korea, Zimbabwe with lecture on culture",
+      "link": "https://mutapatimes.com/news/2026-06-09-professor-bridges-korea-zimbabwe-with-lecture-on-culture-38e80a",
+      "image": "https://www.mutapatimes.com/img/cards/news/94b1de417079.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Entertainment"
     },
     {
       "kind": "jobs",
@@ -447,38 +479,6 @@
       "title": "Sabi Gold Mine — Graduate Trainee Programme",
       "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-67727/",
       "image": "https://mutapatimes.com/img/cards/jobs/13f082e12832.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Security Sergeant: Mutapa Gold Resources",
-      "link": "https://vacancymail.co.zw/jobs/security-sergeant-mutapa-gold-resources-67726/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1d9ccd139026.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Mine Captain: Mutapa Gold Resources",
-      "link": "https://vacancymail.co.zw/jobs/mine-captain-mutapa-gold-resources-67725/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9165960406ca.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Assistant Boilermaker: Mutapa Gold Resources",
-      "link": "https://vacancymail.co.zw/jobs/assistant-boilermaker-mutapa-gold-resources-67724/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1e33aea9f5a5.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Apprenticeship Training Program : Mutapa Gold Resources",
-      "link": "https://vacancymail.co.zw/jobs/apprenticeship-training-program-mutapa-gold-resources-67723/",
-      "image": "https://mutapatimes.com/img/cards/jobs/276c10509a07.png",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Jobs"
     }
