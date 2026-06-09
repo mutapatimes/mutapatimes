@@ -464,6 +464,9 @@ def build_page(city, all_articles, other_cities):
       <p><a target="_self" class="notranslate" href="/property">Property</a></p>
       <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
       <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
+      <p>
+          <a target="_self" class="notranslate" href="/originals">Originals</a>
+      </p>
       <span class="nav-cities-item">
         <button type="button" class="cities-nav-toggle notranslate active" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
         <ul class="cities-dropdown" aria-label="Zimbabwe cities">
@@ -495,6 +498,7 @@ def build_page(city, all_articles, other_cities):
       <a href="/property">Property</a>
       <a href="/jobs">Jobs</a>
       <a href="/articles">Articles</a>
+      <a href="/originals">Originals</a>
       <a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>
     </nav>
     <span class="nav-drawer-section">Cities</span>

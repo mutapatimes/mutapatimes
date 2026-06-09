@@ -233,6 +233,13 @@
   function applyArticlesFilters(container) {
     var filtered = _allArticlesMeta.slice();
 
+    // Source filter — the Originals hub sets data-source="original" on the
+    // list container so it renders only our own journalism, not the wires.
+    var src = container && container.getAttribute && container.getAttribute("data-source");
+    if (src) {
+      filtered = filtered.filter(function (a) { return (a.source_type || "") === src; });
+    }
+
     // Category filter
     if (_articlesCat !== "all") {
       filtered = filtered.filter(function (a) {

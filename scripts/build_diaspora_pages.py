@@ -163,6 +163,7 @@ TOPBAR_AND_DRAWER = """<div class="topbar" id="topbar" aria-label="Sticky naviga
     <a href="/property">Property</a>
     <a href="/jobs">Jobs</a>
     <a href="/articles">Articles</a>
+    <a href="/originals">Originals</a>
   </nav>
   <span class="nav-drawer-section">Diaspora</span>
   <nav class="nav-drawer-info" aria-label="Diaspora">
