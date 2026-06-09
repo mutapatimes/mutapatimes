@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-06-09T14:48:12+00:00",
+  "fetched_at": "2026-06-09T17:22:52+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Air Zimbabwe Returns to London: Nonstop Harare-Gatwick Flights Begin July 2026",
-      "link": "https://mutapatimes.com/articles/2026-06-09-air-zimbabwe-returns-to-london-nonstop-harare-gatwick-flight",
-      "image": "https://www.mutapatimes.com/img/cards/news/b9b806d7c107.png",
-      "pubDate": "2026-06-09T13:06:52+00:00",
-      "category": "Tech"
-    },
     {
       "kind": "news",
       "title": "Air Zimbabwe Returns to London: Nonstop Harare-Gatwick Flights Begin July 2026",
@@ -17,22 +9,6 @@
       "image": "https://www.mutapatimes.com/img/cards/news/6ddb94b21edb.png",
       "pubDate": "2026-06-09T13:06:52+00:00",
       "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "Chicago Dzviti’s iconic ‘Portraits of Zimbabwe’ exhibition opens in Bulawayo",
-      "link": "https://mutapatimes.com/articles/2026-06-09-chicago-dzvitis-iconic-portraits-of-zimbabwe-exhibition-open",
-      "image": "https://www.mutapatimes.com/img/cards/news/e7108dbc340a.png",
-      "pubDate": "2026-06-09T12:34:32+00:00",
-      "category": "Culture"
-    },
-    {
-      "kind": "news",
-      "title": "Chicago Dzviti’s iconic ‘Portraits of Zimbabwe’ exhibition opens in Bulawayo",
-      "link": "https://mutapatimes.com/news/2026-06-09-chicago-dzviti-s-iconic-portraits-of-zimbabwe-exhibition-opens-in-bulawayo-06a309",
-      "image": "https://www.mutapatimes.com/img/cards/news/8149fa099961.png",
-      "pubDate": "2026-06-09T12:34:32+00:00",
-      "category": "Entertainment"
     },
     {
       "kind": "news",
@@ -68,27 +44,59 @@
     },
     {
       "kind": "news",
-      "title": "Tinaye's 'Nothing to Hide' Show Exposes Zimbabwe's Elite at Reps Theatre",
-      "link": "https://mutapatimes.com/articles/2026-06-09-tinayes-nothing-to-hide-show-exposes-zimbabwes-elite-at-reps",
-      "image": "https://www.mutapatimes.com/img/cards/news/90bb3a179356.png",
-      "pubDate": "2026-06-09T05:45:19+00:00",
-      "category": "Culture"
+      "title": "Somali football referee denied US entry, will miss World Cup debut",
+      "link": "https://mutapatimes.com/articles/2026-06-09-somali-football-referee-denied-us-entry-will-miss-world-cup",
+      "image": "https://www.mutapatimes.com/img/cards/news/5fcc3436a8ea.png",
+      "pubDate": "2026-06-09T05:20:48+00:00",
+      "category": "Sport"
     },
     {
       "kind": "news",
-      "title": "Tinaye's 'Nothing to Hide' Show Exposes Zimbabwe's Elite at Reps Theatre",
-      "link": "https://mutapatimes.com/news/2026-06-09-tinaye-s-nothing-to-hide-show-exposes-zimbabwe-s-elite-at-reps-theatre-11429f",
-      "image": "https://www.mutapatimes.com/img/cards/news/09120485384f.png",
-      "pubDate": "2026-06-09T05:45:19+00:00",
-      "category": "Entertainment"
+      "title": "Somali football referee denied US entry, will miss World Cup debut",
+      "link": "https://mutapatimes.com/news/2026-06-09-somali-football-referee-denied-us-entry-will-miss-world-cup-debut-d4217f",
+      "image": "https://www.mutapatimes.com/img/cards/news/09be4ee8cfef.png",
+      "pubDate": "2026-06-09T05:20:48+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe home cook features on major US cooking competition",
-      "link": "https://mutapatimes.com/articles/2026-06-09-zimbabwe-home-cook-features-on-major-us-cooking-competition",
-      "image": "https://www.mutapatimes.com/img/cards/news/608755cbdefd.png",
-      "pubDate": "2026-06-09T00:00:00+00:00",
-      "category": "Business"
+      "title": "The Copacabana Drug Cartels: Harare’s mutoriro hotspots revealed... and how they use fruit boxes to hide drugs",
+      "link": "https://mutapatimes.com/articles/2026-06-09-the-copacabana-drug-cartels-harares-mutoriro-hotspots-reveal",
+      "image": "https://www.mutapatimes.com/img/cards/news/e7de077003af.png",
+      "pubDate": "2026-06-09T04:59:53+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "The Copacabana Drug Cartels: Harare’s mutoriro hotspots revealed... and how they use fruit boxes to hide drugs",
+      "link": "https://mutapatimes.com/news/2026-06-09-the-copacabana-drug-cartels-harare-s-mutoriro-hotspots-revealed-and-how-they-94d4ed",
+      "image": "https://www.mutapatimes.com/img/cards/news/0b78390c3d57.png",
+      "pubDate": "2026-06-09T04:59:53+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Plumtree ambulance stolen and crashed, emergency services suspended",
+      "link": "https://mutapatimes.com/news/2026-06-09-plumtree-ambulance-stolen-and-crashed-emergency-services-suspended-e6abfc",
+      "image": "https://www.mutapatimes.com/img/cards/news/e8aade0772f0.png",
+      "pubDate": "2026-06-09T04:08:47+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Why a referendum on CAB3 is unavoidable",
+      "link": "https://mutapatimes.com/news/2026-06-09-why-a-referendum-on-cab3-is-unavoidable-a8ecd9",
+      "image": "https://www.mutapatimes.com/img/cards/news/46999b1ae366.png",
+      "pubDate": "2026-06-09T04:08:32+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "RBZ mops up liquidity with new ZiG Bills",
+      "link": "https://mutapatimes.com/articles/2026-06-09-rbz-mops-up-liquidity-with-new-zig-bills",
+      "image": "https://www.mutapatimes.com/img/cards/news/084ebfe97cd4.png",
+      "pubDate": "2026-06-09T04:04:17+00:00",
+      "category": "Policy"
     },
     {
       "kind": "news",
@@ -163,6 +171,14 @@
       "category": "Weather"
     },
     {
+      "kind": "news",
+      "title": "Professor bridges Korea, Zimbabwe with lecture on culture",
+      "link": "https://mutapatimes.com/news/2026-06-09-professor-bridges-korea-zimbabwe-with-lecture-on-culture-38e80a",
+      "image": "https://www.mutapatimes.com/img/cards/news/94b1de417079.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Entertainment"
+    },
+    {
       "kind": "jobs",
       "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
@@ -193,6 +209,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Loan Officer",
+      "link": "https://vacancymail.co.zw/jobs/loan-officer-67784/",
+      "image": "https://mutapatimes.com/img/cards/jobs/49305a2d3143.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -455,30 +479,6 @@
       "title": "Green Fuel — SENIOR STORES & INVENTORY CONTROLLER X 1",
       "link": "https://vacancymail.co.zw/jobs/senior-stores-inventory-controller-x-1-67747/",
       "image": "https://mutapatimes.com/img/cards/jobs/ee90256bb2f8.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Standard Chartered Bank — Employee Benefits Officer",
-      "link": "https://vacancymail.co.zw/jobs/employee-benefits-officer-67746/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ed2f3c87b35e.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Digital Marketing Officer",
-      "link": "https://vacancymail.co.zw/jobs/digital-marketing-officer-67745/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f50d43830329.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — POOL VEHICLE DRIVERS",
-      "link": "https://vacancymail.co.zw/jobs/pool-vehicle-drivers-67744/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fcd1de93d21e.png",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Jobs"
     }
