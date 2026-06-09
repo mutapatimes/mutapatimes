@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-06-09T06:44:36+00:00",
+  "fetched_at": "2026-06-09T20:11:25+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Air Zimbabwe Launches Harare to London Nonstop Flights July 1, 2026 After 14-Year Hiatus",
-      "link": "https://mutapatimes.com/articles/2026-06-09-air-zimbabwe-launches-harare-to-london-nonstop-flights-july",
-      "image": "https://www.mutapatimes.com/img/cards/news/a0871a237ed3.png",
-      "pubDate": "2026-06-09T05:02:45+00:00",
+      "title": "ZEEX: Zimbabwe's First SME Exchange, and the Problem It Doesn't Solve",
+      "link": "https://mutapatimes.com/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme",
+      "image": "https://www.mutapatimes.com/img/cards/news/720da7e6e46a.png",
+      "pubDate": "2026-06-09T08:00:00+00:00",
       "category": "Business"
     },
     {
@@ -36,19 +36,11 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 9 Jun: Harare clear sky · high 23° / low 10°",
+      "title": "Zim weather 9 Jun: Harare clear sky · high 24° / low 11°",
       "link": "https://mutapatimes.com/weather?d=2026-06-09",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-09",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Weather"
-    },
-    {
-      "kind": "news",
-      "title": "Professor bridges Korea, Zimbabwe with lecture on culture",
-      "link": "https://mutapatimes.com/articles/2026-06-08-professor-bridges-korea-zimbabwe-with-lecture-on-culture",
-      "image": "https://www.mutapatimes.com/img/cards/news/ea0b488b805a.png",
-      "pubDate": "2026-06-08T22:00:00+00:00",
-      "category": "Culture"
     },
     {
       "kind": "news",
@@ -479,6 +471,14 @@
       "title": "Sabi Gold Mine — Graduate Trainee Programme",
       "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-67727/",
       "image": "https://mutapatimes.com/img/cards/jobs/13f082e12832.png",
+      "pubDate": "2026-06-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutapa Base Metals — Security Sergeant: Mutapa Gold Resources",
+      "link": "https://vacancymail.co.zw/jobs/security-sergeant-mutapa-gold-resources-67726/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1d9ccd139026.png",
       "pubDate": "2026-06-08T22:00:00+00:00",
       "category": "Jobs"
     }

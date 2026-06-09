@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Strictly Zimbabwe business, finance, mining, investment and economic-policy stories — curated from foreign press and policy press. Each item ships with a branded headline card for social autolists.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 08:07:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 20:11:25 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/business-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>ZEEX: Zimbabwe’s First SME Exchange, and the Problem It Doesn’t Solve @ZSE_ZW</title>
+      <link>https://mutapatimes.com/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme</link>
+      <description>The Zimbabwe Stock Exchange has won approval to launch ZEEX, a #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Tue, 09 Jun 2026 08:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme</guid>
+      <category>Business</category>
+      <dc:creator>Tendai Kuwanda</dc:creator>
+      <media:content url="https://www.mutapatimes.com/img/cards/news/720da7e6e46a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/720da7e6e46a.png"/>
+      <enclosure url="https://www.mutapatimes.com/img/cards/news/720da7e6e46a.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>EXCLUSIVE: Air Zimbabwe Returns to London: Inside the Deal That Reopens the Harare Route</title>
       <link>https://mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi</link>
@@ -665,18 +677,6 @@
       <media:content url="https://www.mutapatimes.com/img/cards/news/20ea245caf25.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/20ea245caf25.png"/>
       <enclosure url="https://www.mutapatimes.com/img/cards/news/20ea245caf25.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Building High-Performing Organisations in Zimbabwe Through Marketing, Sales and Organisational Capability: The Changing Nature of Business Competition in Zimbabwe</title>
-      <link>https://mutapatimes.com/articles/2026-05-09-building-high-performing-organisations-in-zimbabwe-through-m</link>
-      <description>Zimbabwe’s business environment has become increasingly complex and competitive over the past decade. Companies are no longer operating in markets where simply producing a good product guarantees growth or sustainability. Today, organisations are competing in an economy shaped by #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Sat, 09 May 2026 19:40:58 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-09-building-high-performing-organisations-in-zimbabwe-through-m</guid>
-      <category>Business</category>
-      <dc:creator>The Zimbabwe Mail</dc:creator>
-      <media:content url="https://www.mutapatimes.com/img/cards/news/c4688d7ab587.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://www.mutapatimes.com/img/cards/news/c4688d7ab587.png"/>
-      <enclosure url="https://www.mutapatimes.com/img/cards/news/c4688d7ab587.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
