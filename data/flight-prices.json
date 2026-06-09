@@ -20,7 +20,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 546,
+          "price": 490,
           "airline": "W4",
           "departure_at": "2026-06-26",
           "return_at": "",
@@ -29,19 +29,19 @@
           "currency": ""
         },
         {
-          "price": 1188,
-          "airline": "EK",
-          "departure_at": "2026-07-22",
-          "return_at": "2026-08-28",
-          "stops": 1,
+          "price": 1108,
+          "airline": "QR",
+          "departure_at": "2026-07-20",
+          "return_at": "2026-07-31",
+          "stops": 2,
           "duration": null,
           "currency": ""
         },
         {
-          "price": 734,
-          "airline": "KQ",
-          "departure_at": "2026-08-26",
-          "return_at": "2026-09-07",
+          "price": 682,
+          "airline": "QR",
+          "departure_at": "2026-08-25",
+          "return_at": "2026-09-08",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -70,15 +70,6 @@
           "departure_at": "2026-12-29",
           "return_at": "2026-12-30",
           "stops": 3,
-          "duration": null,
-          "currency": ""
-        },
-        {
-          "price": 822,
-          "airline": "QR",
-          "departure_at": "2027-01-16",
-          "return_at": "2027-02-20",
-          "stops": 2,
           "duration": null,
           "currency": ""
         },
@@ -112,7 +103,7 @@
           "currency": ""
         },
         {
-          "price": 546,
+          "price": 490,
           "airline": "W4",
           "departure_at": "2026-06-26",
           "return_at": "",
@@ -130,7 +121,7 @@
           "currency": ""
         },
         {
-          "price": 625,
+          "price": 599,
           "airline": "MS",
           "departure_at": "2026-06-26",
           "return_at": "",
@@ -149,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -173,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -189,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 20
+      "observations": 18
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -383,7 +374,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 11,
+          "n": 13,
           "error": null
         },
         {
@@ -405,7 +396,7 @@
           "error": null
         }
       ],
-      "observations": 16
+      "observations": 18
     },
     "new-york-to-harare": {
       "origin": "NYC",
