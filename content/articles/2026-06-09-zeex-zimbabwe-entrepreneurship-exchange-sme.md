@@ -1,14 +1,13 @@
 ---
-title: "ZEEX: Zimbabwe's First SME Exchange Is the Right Step. Now It Must Deliver"
+title: "INVESCI Backs ZEEX: Zimbabwe's New SME Exchange Lands Its First Institutional Partner"
 date: 2026-06-09T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: 
-summary: The Zimbabwe Stock Exchange has won approval to launch ZEEX, a
-  purpose-built market for small and medium enterprises. It is a genuinely good
-  move, the most serious attempt yet to open formal capital to the businesses
-  that actually employ Zimbabwe. The work that remains is in the operational
-  detail still to be announced.
+summary: Days after winning approval, the Zimbabwe Stock Exchange has signed
+  INVESCI, the country's top-rated asset manager, as the first institutional
+  partner for ZEEX, its new market for small businesses. It is the most
+  encouraging signal yet for a venture that still has plenty to prove.
 featured: true
 headline_position: 1
 source_type: original
@@ -20,9 +19,9 @@ hero_eyebrow: "ANALYSIS · CAPITAL MARKETS"
 hero_image_credit: The Mutapa Times
 read_minutes: 7
 ---
-The Zimbabwe Stock Exchange has received regulatory approval to launch a dedicated market for small and medium enterprises. In a statement issued on 5 June 2026, the ZSE said the Securities and Exchange Commission of Zimbabwe had cleared it to operationalise the platform under the brand name Zimbabwe Entrepreneurship Exchange, or ZEEX. The bourse said it is in the final stages of building the compliance frameworks and that a formal launch date will follow shortly.
+Zimbabwe's newest stock exchange has just landed its first institutional backer. On 10 June 2026 the Zimbabwe Stock Exchange signed a memorandum of understanding with INVESCI Asset Management, the firm voted the best asset manager at the 2025 Capital Markets Awards, naming it a strategic institutional partner for the Zimbabwe Entrepreneurship Exchange, or ZEEX. For a market that won regulatory approval only days earlier, securing a serious anchor investor this fast is the most encouraging signal it could have sent.
 
-It is the first structural addition to Zimbabwe's domestic market architecture since the Victoria Falls Stock Exchange opened in 2020, and it deserves applause. For all the questions still to be answered, this is a real step in the right direction. The ZSE has looked at the part of the economy the formal market has always ignored, the small and growing businesses that do most of the country's hiring, and decided to build something for them. That instinct is correct, and it is overdue. The honest job of this piece is to celebrate the move while being clear-eyed about what still has to go right.
+ZEEX itself was cleared by the Securities and Exchange Commission of Zimbabwe on 5 June, a dedicated market for small and medium enterprises and the first structural addition to the country's market architecture since the Victoria Falls Stock Exchange opened in 2020. It deserves applause. The ZSE has looked at the part of the economy the formal market has always ignored, the small and growing businesses that do most of the country's hiring, and decided to build something for them. That instinct is correct, and it is overdue. The honest job of this piece is to celebrate the move, and the early momentum now behind it, while being clear-eyed about what still has to go right.
 
 ## What ZEEX actually is
 
@@ -83,7 +82,7 @@ The lesson GEMS taught the continent is blunt. The binding constraint on an SME 
 
 ## The first answer to the investor-base question
 
-The ink on the approval was barely dry when the ZSE produced the most reassuring news yet. On 10 June 2026 it signed a memorandum of understanding with INVESCI Asset Management, naming the firm a ZEEX strategic institutional partner. INVESCI was voted the best asset manager at the 2025 Capital Markets Awards, so this is not a name on a letterhead. It is exactly the kind of institutional anchor an SME exchange needs, and the absence of one is precisely what hollowed out Nairobi's GEMS.
+This is why the partnership that leads this piece matters far more than a routine memorandum. Recall the lesson from Nairobi: an SME exchange lives or dies on its investor base, and GEMS withered for want of one. INVESCI is precisely the kind of institutional anchor GEMS never had, and ZEEX has secured it before launch rather than after.
 
 The substance is still early. Under the memorandum the two sides will cooperate on evaluating investment opportunities on ZEEX, advise on platform design and listing standards, sit on advisory committees and stakeholder forums, jointly lobby for SME-friendly regulation, and share market intelligence. Group CEO Justin Bgoni framed it as proof that institutional investors recognise the platform's potential, bringing structured capital and institutional rigour into the SME space. INVESCI's managing director, Thomas Chataika, called it a win-win with an open-cards approach for both sides, and pointed to the ZSE's pedigree, an exchange in operation since 1894, as the foundation of the trust the venture needs.
 
@@ -91,7 +90,7 @@ A memorandum of understanding is intent, not committed capital, and it should be
 
 <section class="article-dark-section article-dark-section--has-portrait">
   <div class="article-dark-section-inner">
-    <figure class="article-dark-section-portrait">
+    <figure class="article-dark-section-portrait" style="max-width:200px;">
       <img src="/img/articles/zeex/chataika.jpg" alt="Thomas Chataika, founder and managing director of INVESCI Asset Management" loading="lazy">
       <figcaption>Thomas Chataika, founder and managing director of INVESCI Asset Management.</figcaption>
     </figure>

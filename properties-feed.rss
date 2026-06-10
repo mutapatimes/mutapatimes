@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jun 2026 09:57:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 11:51:35 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,18 +53,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/77a668765344.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/77a668765344.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/77a668765344.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 25,000 — Affordable 2-Bed Flat at Flamingo Flats, Norton (Norton)</title>
-      <link>https://mutapatimes.com/property-landing/7f60ade9f576.html</link>
-      <description>USD 25,000 — Norton. 2 beds, 1 bath. Affordable 2-Bed Flat at Flamingo Flats, Norton. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 09 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/7f60ade9f576.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 65,000 — Residential House For Sale (Warren Park, Harare High Density)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/67bba25e02a0.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/67bba25e02a0.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/67bba25e02a0.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 135,000 — Marlborough 4-Bed Townhouse Complex — Solar, Walled (Marlborough, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/266c14c5a0e1.html</link>
+      <description>USD 135,000 — Marlborough, Harare West. 4 beds, 3 baths. Marlborough 4-Bed Townhouse Complex — Solar, Walled. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 09 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/266c14c5a0e1.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/266c14c5a0e1.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/266c14c5a0e1.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/266c14c5a0e1.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
