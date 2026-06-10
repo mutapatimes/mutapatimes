@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Mutapa Times</title>
+<style>
+  :root { --ink:#1a1a1a; --paper:#faf9f6; --accent:#c41e1e; --cream:#f5e8c8; }
+  html,body{margin:0;height:100%;background:var(--ink);color:var(--cream);
+    font-family:-apple-system,Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;text-align:center;padding:32px;}
+  .tick{width:120px;height:8px;background:var(--accent);border-radius:2px;margin-bottom:22px;}
+  h1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:30px;margin:0 0 6px;color:#fff;}
+  p{color:#b9b6ad;font-size:15px;line-height:1.5;max-width:300px;margin:8px 0 0;}
+  .retry{margin-top:24px;padding:12px 26px;background:var(--accent);color:#fff;border:0;
+    border-radius:8px;font-size:15px;font-weight:600;}
+  .spin{margin-top:20px;width:26px;height:26px;border:3px solid rgba(255,255,255,.2);
+    border-top-color:var(--accent);border-radius:50%;animation:s 0.9s linear infinite;}
+  @keyframes s{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tick"></div>
+    <h1>The Mutapa Times</h1>
+    <div class="spin" id="spin"></div>
+    <p id="msg">Loading the latest from Zimbabwe&hellip;</p>
+    <button class="retry" id="retry" style="display:none" onclick="location.reload()">Try again</button>
+  </div>
+  <script>
+    // The native shell loads https://mutapatimes.com via Capacitor server.url.
+    // This page only shows if the device is offline; surface a clear message.
+    function offline(){
+      document.getElementById('spin').style.display='none';
+      document.getElementById('msg').textContent='You are offline. Check your connection to read the latest news.';
+      document.getElementById('retry').style.display='inline-block';
+    }
+    if(!navigator.onLine){offline();}
+    window.addEventListener('offline',offline);
+    window.addEventListener('online',function(){location.reload();});
+  </script>
+</body>
+</html>

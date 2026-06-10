@@ -1,0 +1,76 @@
+# iOS Deployment — The Mutapa Times (Capacitor)
+
+The iOS app is a Capacitor native shell that loads the live site
+(`https://mutapatimes.com`) so news stays fresh, and adds native value
+(push notifications, splash, status bar, offline fallback) for App Store
+Guideline 4.2 compliance.
+
+- **App name:** The Mutapa Times
+- **Bundle ID / appId:** `com.mutapatimes.app`
+- **Web content:** live site via `server.url` in `capacitor.config.json`
+- **Offline fallback:** `www/index.html`
+- **Native bridge:** `js/native-bridge.js` (on the live site; no-op in browsers)
+
+## One-time machine setup
+```bash
+npm install            # installs Capacitor (node_modules is gitignored)
+npx cap sync ios       # copies web assets + plugins into the iOS project
+```
+Requires Xcode 16+ and an Apple Developer account (you have both).
+
+## Open + run
+```bash
+npx cap open ios       # opens ios/App in Xcode
+```
+In Xcode → target **App** → **Signing & Capabilities**:
+1. Set **Team** to your Apple Developer team. Bundle ID `com.mutapatimes.app`.
+2. Add capability **Push Notifications**.
+3. Add capability **Background Modes** → tick **Remote notifications**.
+Pick a simulator or a real device and press Run.
+
+## App icon & splash
+Generated from `resources/icon.png` (1024, no alpha) and
+`resources/splash.png` / `resources/splash-dark.png` (2732). To change the
+artwork, replace those files and run:
+```bash
+npx capacitor-assets generate --ios && npx cap sync ios
+```
+
+## Push notifications (APNs)
+1. In the Apple Developer portal → **Certificates, IDs & Profiles → Keys** →
+   create an **APNs Auth Key (.p8)**. Note the Key ID and your Team ID.
+2. Use that key in whatever push backend you choose (e.g. Firebase Cloud
+   Messaging, OneSignal, or a custom APNs sender).
+3. The app already requests permission and registers on launch via
+   `js/native-bridge.js`; wire the `registration` token (logged today) to the
+   backend so you can send breaking-news alerts. Payloads with a `data.url`
+   deep-link straight into the article.
+
+## App Store Connect
+1. Create the app record (Bundle ID `com.mutapatimes.app`, category **News**).
+2. **Privacy policy URL:** `https://mutapatimes.com/privacy`.
+3. **App Privacy:** declare data collected via the site's ad/analytics stack
+   (e.g. Google AdSense, identifiers/usage). Be accurate.
+4. Screenshots: 6.7" (1290×2796) and 6.5" required; iPad 12.9" if you ship
+   universal. Capture from the running app or a simulator.
+5. In Xcode: set **Version** (e.g. 1.0.0) and **Build** (increment each
+   upload) → **Product → Archive** → **Distribute App → App Store Connect**.
+6. Add to **TestFlight**, test on device, then **Submit for Review**.
+
+## App Store Review 4.2 (minimum functionality)
+This is a real publication with deep, frequently-updated content, plus
+push notifications, offline handling, native splash/status bar and home-screen
+shortcuts. In the review notes, frame it as the official Mutapa Times app and
+mention push alerts and offline reading. If a reviewer pushes back on "web
+content," lean on the push + offline native features.
+
+## Updating the app
+- **Content** updates automatically (the shell loads the live site).
+- **Native** changes (icons, plugins, config): `npx cap sync ios`, bump the
+  build number in Xcode, archive and upload again.
+
+## What's committed vs generated
+- Committed: `capacitor.config.json`, `package.json`, `package-lock.json`,
+  `www/`, `resources/`, `ios/` (Xcode project), `js/native-bridge.js`.
+- Gitignored: `node_modules/`, iOS build artifacts (`ios/App/build`,
+  `App/public`, `DerivedData`, xcuserdata).
