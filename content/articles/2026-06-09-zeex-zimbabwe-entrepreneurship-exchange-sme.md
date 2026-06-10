@@ -89,6 +89,19 @@ The substance is still early. Under the memorandum the two sides will cooperate 
 
 A memorandum of understanding is intent, not committed capital, and it should be read as such. But on the single question that decides whether an SME exchange lives or dies, the investor base, the ZSE has moved first and moved well. It has the right anchor partner in the room before launch rather than after it, which is a markedly better starting position than most of the cautionary precedents enjoyed.
 
+<section class="article-dark-section article-dark-section--has-portrait">
+  <div class="article-dark-section-inner">
+    <figure class="article-dark-section-portrait">
+      <img src="/img/articles/zeex/chataika.jpg" alt="Thomas Chataika, founder and managing director of INVESCI Asset Management" loading="lazy">
+      <figcaption>Thomas Chataika, founder and managing director of INVESCI Asset Management.</figcaption>
+    </figure>
+    <span class="article-dark-section-eyebrow">The institutional partner</span>
+    <p>Thomas Chataika, CFA, CA(Z), CA(SA), is the founder of INVESCI Asset Management, with a long record managing portfolios for retirement funds and high-net-worth individuals. He began his career as an auditor at Ernst &amp; Young in Harare, where he trained and qualified as a chartered accountant.</p>
+    <p>He went on to Datvest Asset Management as an analyst and portfolio manager, rising to chief investment officer in 2004, before moving to Johannesburg in 2006 as a senior portfolio manager at BoE Private Clients. He returned home to set up INVESCI in 2011; the firm is active in listed equities, property and private equity.</p>
+    <p>A CFA charterholder and a member of both the Zimbabwean and South African institutes of chartered accountants, Chataika also spent time at the Swiss Finance Institute in Lausanne, where he earned a postgraduate diploma in financial engineering and asset management. It is exactly this kind of institutional pedigree that an SME market needs on the buy side, and that ZEEX has now drawn in before it has even launched.</p>
+  </div>
+</section>
+
 ## The most encouraging detail: the man building it has done this before
 
 The most encouraging detail in this announcement is not in the press release at all. It is who is building ZEEX, and what he has already lived through, because the person designing Zimbabwe's SME exchange has watched one of these markets up close before.
