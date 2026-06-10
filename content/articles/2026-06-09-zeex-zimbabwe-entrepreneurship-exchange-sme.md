@@ -114,6 +114,8 @@ Bgoni called ZEEX a "cutting-edge, entrepreneurship-focused platform" that "harn
 
 The benchmark is digital-native. If ZEEX ships with mobile-money integration through EcoCash and OneMoney, settlement at T+2 or better with electronic records, simplified digital disclosure, and investor onboarding that does not require a full stockbroking relationship, it can reach a participation base the institutional main board never has. If it does not, it will draw neither the companies nor the investors its mandate depends on.
 
+We have examined that question in detail, including the ZSE's decade-long technology track record and what a modern growth-market stack should look like, in a companion piece: <a href="/articles/2026-06-10-zeex-tech-stack-zse-track-record.html">The Tech Stack Will Decide ZEEX. The ZSE Has Been Quietly Building Toward It</a>.
+
 ## What to watch at launch
 
 The applause comes with a fair caveat, and it is one the ZSE itself would not dispute. What has been secured is regulatory approval, the green light to build, rather than a market already running. There is not yet a published launch date, listing fee schedule, disclosure rulebook, investor-eligibility framework or named inaugural issuer. That is normal for this stage, and the detail that will turn the approval into a working market is still to come. When it lands, five specifics will matter most:

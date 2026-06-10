@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-10T09:03:57+00:00",
+  "fetched_at": "2026-06-10T09:57:20+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "The Tech Stack Will Decide ZEEX. The ZSE Has Been Quietly Building Toward It",
+      "link": "https://mutapatimes.com/articles/2026-06-10-zeex-tech-stack-zse-track-record",
+      "image": "https://www.mutapatimes.com/img/cards/news/d739e24c70ea.png",
+      "pubDate": "2026-06-10T08:00:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "How a 42% reserve boost at one gold mine added $1 billion to Zimbabwe's mining ambitions",
@@ -471,14 +479,6 @@
       "title": "Traverze Travel — Female Accountant for The Lounge",
       "link": "https://vacancymail.co.zw/jobs/female-accountant-for-the-lounge-67731/",
       "image": "https://mutapatimes.com/img/cards/jobs/ccd77f7a0eb4.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sabi Gold Mine — Vice Captain",
-      "link": "https://vacancymail.co.zw/jobs/vice-captain-67730/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cd89797a8baf.png",
       "pubDate": "2026-06-09T22:00:00+00:00",
       "category": "Jobs"
     }
