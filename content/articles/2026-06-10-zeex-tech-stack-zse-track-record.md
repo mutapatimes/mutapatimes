@@ -41,7 +41,7 @@ The institution building ZEEX is not a technology novice. The Zimbabwe Stock Exc
       <button class="az-tl-card" type="button" aria-expanded="false">
         <span class="az-tl-year">2014</span>
         <span class="az-tl-title">InfoTech wins the ATS contract</span>
-        <span class="az-tl-body">After a rigorous evaluation of bids from around the world, including Sweden and the United States, the ZSE selects InfoTech and its Capizar platform for an automated trading system and depository, a contract reported at around US$2 million. The then chief executive, Alban Chirume, signs it off.</span>
+        <span class="az-tl-body">After a rigorous evaluation of eighteen international bids, including from Sweden and the United States, the ZSE selects InfoTech and its Capizar platform for an automated trading system and depository, a contract reported at around US$2 million. The then chief executive, Alban Chirume, signs it off.</span>
       </button>
     </li>
     <li class="az-tl-item" data-tl-year="2015">
@@ -49,7 +49,7 @@ The institution building ZEEX is not a technology novice. The Zimbabwe Stock Exc
       <button class="az-tl-card" type="button" aria-expanded="false">
         <span class="az-tl-year">2015</span>
         <span class="az-tl-title">Manual to electronic</span>
-        <span class="az-tl-body">The ZSE completes its transition from a manual to an electronic trading system, improving settlement times and ending decades of floor-and-paper trading.</span>
+        <span class="az-tl-body">The ZSE completes its transition from a manual to an electronic trading system, improving settlement times and ending decades of floor-and-paper trading. The expected payoff was large: the securities commission's Grace Berejena had projected automation could lift daily turnover roughly fivefold, from about US$1.5 million toward US$5 million.</span>
       </button>
     </li>
     <li class="az-tl-item" data-tl-year="2016">
@@ -103,11 +103,13 @@ The institution building ZEEX is not a technology novice. The Zimbabwe Stock Exc
   </ol>
 </section>
 
+The current engine, by the accounts available, works. In InfoTech's own case study, the head of trading at IH Securities, Kudzai Machuma, described a system with no paper trail that is faster and more efficient, while the ZSE's ICT manager, Matthew Zungu, reported no downtime since launch. Vendor-published testimonials are not independent audits and should be read with that in mind, but they point the same way as the institutional record: when the ZSE sets out to modernise its trading engine, it tends to deliver.
+
 ## What a growth-market stack needs to look like
 
 The reason the stack matters is that SME exchanges do not fail on their rulebooks. They fail on access. A market for small companies and first-time investors lives or dies on whether ordinary people can reach it cheaply, from a phone, without specialist intermediaries. The technology is not a detail beneath the strategy. It is the strategy.
 
-The benchmark already exists in the region, and it is worth being concrete about it. On the Johannesburg Stock Exchange, platforms such as STT's Avvento Trader show what the current standard looks like: a progressive web app that installs on any smartphone or tablet, direct-market-access for clients with real-time risk management layered on top, FIX APIs for order routing, a suite of algorithms, and the whole thing white-labelled to a broker's own brand and domain. The settlement and back office are integrated rather than bolted on. That is the shape of a modern, retail-reachable market: mobile-first, low-friction, and built so a client never has to touch a paper certificate or a phone call to a broker.
+The benchmark already exists in the region, and it is worth being concrete about it. On the Johannesburg Stock Exchange, platforms such as STT's Avvento Trader show what the current standard looks like: a progressive web app that installs on any smartphone or tablet, direct-market-access for clients with real-time risk management layered on top, FIX APIs for order routing, a suite of algorithms, and the whole thing white-labelled to a broker's own brand and domain, hosted in an ISO 27001-certified, exchange-colocated environment with disaster recovery. The settlement and back office are integrated rather than bolted on. That is the shape of a modern, retail-reachable market: mobile-first, low-friction, and built so a client never has to touch a paper certificate or a phone call to a broker.
 
 For ZEEX, the equivalent checklist writes itself. Mobile-money integration with EcoCash and OneMoney so investors can fund and settle in the rails they already use. Settlement at T+2 or better, on electronic records. Digital onboarding that does not require a full stockbroking relationship. Simplified, machine-readable disclosure suited to a company with 20 staff rather than 2,000. Get those right and ZEEX reaches a public the Main Board's institutional plumbing never has. Miss them, and it becomes a smaller, quieter version of a market that small investors already find hard to enter.
 
@@ -121,4 +123,4 @@ None of that dims the case for optimism. It sharpens the question. The ZSE has t
 
 This piece is a companion to our broader analysis, <a href="/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme.html">ZEEX: Zimbabwe's First SME Exchange Is the Right Step. Now It Must Deliver</a>.
 
-<p><strong>Sources:</strong> Zimbabwe Stock Exchange press release on ZEEX, 5 June 2026 (<a href="https://www.zse.co.zw" target="_blank" rel="noopener">zse.co.zw</a>); The Herald, "ZSE to transition to new trading systems," 13 October 2025, quoting Group CEO Justin Bgoni on the 10 November 2025 ATS and CSD migration and the 2015 and 2021 milestones; contemporaneous reporting on the ZSE's award of its automated trading system to InfoTech (Capizar) following international bidding, and remarks by then-CEO Alban Chirume and SECZim's Grace Berejena; InfoTech Group case study, "Modernizing Zimbabwe's Capital Markets"; Techzim, "Don't hold your breath, the ZSE just published a tender for a new website," 7 September 2016; and STT's Avvento Trader (South Africa) brochure as an example of a current mobile-first market platform.</p>
+<p><strong>Sources:</strong> Zimbabwe Stock Exchange press release on ZEEX, 5 June 2026 (<a href="https://www.zse.co.zw" target="_blank" rel="noopener">zse.co.zw</a>); The Herald, "ZSE to transition to new trading systems," 13 October 2025, quoting Group CEO Justin Bgoni on the 10 November 2025 ATS and CSD migration and the 2015 and 2021 milestones; contemporaneous reporting on the ZSE's award of its automated trading system to InfoTech (Capizar) following international bidding, and remarks by then-CEO Alban Chirume and SECZim's Grace Berejena; InfoTech Group case study, "Modernizing Zimbabwe's Capital Markets," including client testimonials from IH Securities' Kudzai Machuma and the ZSE's Matthew Zungu; Techzim, "Don't hold your breath, the ZSE just published a tender for a new website," 7 September 2016; and STT's Avvento Trader (South Africa) brochure as an example of a current mobile-first market platform.</p>
