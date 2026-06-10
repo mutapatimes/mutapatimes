@@ -391,7 +391,7 @@
     });
   }
 
-  var BASE_URL = "https://www.mutapatimes.com";
+  var BASE_URL = "https://mutapatimes.com";
 
   // Update OG and Twitter meta tags dynamically
   function updateMetaTags(meta) {

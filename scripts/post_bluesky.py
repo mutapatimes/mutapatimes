@@ -17,7 +17,7 @@ BLUESKY_HANDLE = os.environ.get("BLUESKY_HANDLE", "")
 BLUESKY_APP_PASSWORD = os.environ.get("BLUESKY_APP_PASSWORD", "")
 
 BSKY_API = "https://bsky.social/xrpc"
-SITE_BASE_URL = "https://www.mutapatimes.com"
+SITE_BASE_URL = "https://mutapatimes.com"
 DATA_DIR = "data"
 POSTED_FILE = os.path.join(DATA_DIR, ".posted_bluesky.json")
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -184,7 +184,7 @@ def prune_old_entries(posted, max_age_days=60):
 def derive_share_url(article, source):
     """Map an article record to its mutapatimes.com landing page URL.
 
-    Returns the canonical https://www.mutapatimes.com/... URL we want to
+    Returns the canonical https://mutapatimes.com/... URL we want to
     share on Bluesky, or None if no landing page exists on disk (which
     means the article either pre-dates the news-page generator or is too
     old to have a landing page rendered for it). We post the share URL

@@ -21,7 +21,7 @@ import re
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT_DIR = os.path.join(ROOT, "moving-to-zimbabwe")
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 
 GUIDES = [
     {

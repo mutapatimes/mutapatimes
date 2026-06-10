@@ -44,7 +44,7 @@ from twitter_mentions import all_mentions, source_mention  # noqa: E402
 # ── Config ────────────────────────────────────────────────────
 DATA_DIR = "data"
 CARDS_DIR = "img/cards"
-CARDS_PUBLIC_BASE = "https://www.mutapatimes.com/img/cards"
+CARDS_PUBLIC_BASE = "https://mutapatimes.com/img/cards"
 
 QUEUED_FILE = os.path.join(DATA_DIR, ".metricool_queued.json")
 OUTPUT_CSV = os.path.join(DATA_DIR, "metricool-queue.csv")
@@ -160,7 +160,7 @@ PLATFORM_FLAGS = [
 ]
 
 BRAND_NAME = os.environ.get("METRICOOL_BRAND_NAME", "")
-SUBSCRIBE_URL = "https://www.mutapatimes.com/subscribe.html"
+SUBSCRIBE_URL = "https://mutapatimes.com/subscribe.html"
 
 # ── Evening-mode override (ad-hoc smoke-test runs) ────────────
 EVENING_START_CAT = os.environ.get("METRICOOL_EVENING_START", "")
@@ -226,7 +226,7 @@ NEWSLETTER_ANGLES = [
 # there is no active campaign.
 FEATURED_CAMPAIGN = {
     "slug": "2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi",
-    "url": "https://www.mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
+    "url": "https://mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
     "time_cat": "11:00",
     "tag": "#AirZimbabwe #Harare #London #Zimbabwe",
     "angles": [
@@ -253,7 +253,7 @@ NEWSLETTER_SLOT_EVENING_CAT = "19:30"
 
 # Promo card filenames (one per angle, regenerated on first run, then static)
 PROMO_CARDS_DIR = "img/cards"
-PROMO_CARD_BASE = "https://www.mutapatimes.com/img/cards"
+PROMO_CARD_BASE = "https://mutapatimes.com/img/cards"
 
 # ── Weekly thematic posts (property + economic data) ──────────
 # Mon batch emits a property "houses on the market" post for Wed.
@@ -262,8 +262,8 @@ PROMO_CARD_BASE = "https://www.mutapatimes.com/img/cards"
 WEEKLY_DAY_OFFSET = 2          # Day-2 of the batch window (Wed for Mon, Sat for Thu)
 WEEKLY_PROPERTY_TIME_CAT = "12:00"
 WEEKLY_ECON_TIME_CAT = "14:00"
-PROPERTY_PAGE_URL = "https://www.mutapatimes.com/property.html"
-ECONOMY_PAGE_URL = "https://www.mutapatimes.com/economy.html"
+PROPERTY_PAGE_URL = "https://mutapatimes.com/property.html"
+ECONOMY_PAGE_URL = "https://mutapatimes.com/economy.html"
 PROPERTY_LISTINGS_FILE = os.path.join(DATA_DIR, "property-listings.json")
 GDP_FILE = os.path.join(DATA_DIR, "gdp-zimbabwe-quarterly.json")
 
@@ -1401,7 +1401,7 @@ def build_daily_recap_thread(articles, target_dt):
 
     # Day-rotating hashtag overlay on the CTA tweet only
     tags = smart_hashtags("Twitter", fresh[0].get("title", ""), when=target_dt)
-    home_url = "https://www.mutapatimes.com/"
+    home_url = "https://mutapatimes.com/"
 
     if not GEMINI_API_KEY:
         # Fallback template — no Gemini available

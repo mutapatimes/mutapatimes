@@ -52,7 +52,7 @@ USER_AGENT    = os.environ.get(
     f"mutapatimes-bot/0.1 by /u/{USERNAME}" if USERNAME else "mutapatimes-bot/0.1",
 )
 
-BASE = "https://www.mutapatimes.com"
+BASE = "https://mutapatimes.com"
 
 # Subreddit → which categories belong there. First match wins.
 # Tuned for actual Reddit community rules — r/Zimbabwe is liberal,

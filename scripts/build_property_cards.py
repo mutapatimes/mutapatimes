@@ -39,7 +39,7 @@ except ImportError:
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 PROPERTIES_FILE = os.path.join(ROOT, "data", "property-listings.json")
 OUT_DIR = os.path.join(ROOT, "img", "cards", "properties")
-PUBLIC_BASE = "https://www.mutapatimes.com/img/cards/properties"
+PUBLIC_BASE = "https://mutapatimes.com/img/cards/properties"
 
 # Layout: top 58% is photo, bottom 42% is brand info strip
 PHOTO_H = 780

@@ -362,14 +362,14 @@ def render_corridor(slug, c):
         "@context":"https://schema.org","@type":"Trip",
         "name": f"{c['origin_short']} to {c['dest_short']}",
         "description": f"Flight from {c['origin_full']} to {c['dest_full']}",
-        "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://www.mutapatimes.com"}
+        "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://mutapatimes.com"}
     }, ensure_ascii=False)
     breadcrumb_ld = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Flights","item":"https://www.mutapatimes.com/flights/"},
-            {"@type":"ListItem","position":3,"name": f"{c['origin_short']} to {c['dest_short']}", "item": f"https://www.mutapatimes.com/flights/{slug}/"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Flights","item":"https://mutapatimes.com/flights/"},
+            {"@type":"ListItem","position":3,"name": f"{c['origin_short']} to {c['dest_short']}", "item": f"https://mutapatimes.com/flights/{slug}/"}
         ]
     }, ensure_ascii=False)
     related_html = "\n".join(
@@ -383,7 +383,7 @@ def render_corridor(slug, c):
     <meta charset="utf-8">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428529474445353" crossorigin="anonymous"></script>
     <title>{title}</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/flights/{slug}/">
+    <link rel="canonical" href="https://mutapatimes.com/flights/{slug}/">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="manifest" href="../../site.webmanifest">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -406,7 +406,7 @@ def render_corridor(slug, c):
     <meta property="og:type" content="article">
     <meta property="og:title" content="{html.escape(c["title_meta"])}">
     <meta property="og:description" content="{html.escape(c["stand"])[:200]}">
-    <meta property="og:url" content="https://www.mutapatimes.com/flights/{slug}/">
+    <meta property="og:url" content="https://mutapatimes.com/flights/{slug}/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(c["title_meta"])}">
     <meta name="twitter:description" content="{html.escape(c["stand"])[:200]}">

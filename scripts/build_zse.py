@@ -11,7 +11,7 @@ DATA = ROOT / "data" / "zse-companies.json"
 IMG_DIR = ROOT / "img" / "zse"
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 TODAY = "2026-05-22"
 
 # --- Scrape -----------------------------------------------------------------
@@ -657,16 +657,16 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
         "@context":"https://schema.org","@type":"CollectionPage",
         "headline": title,
         "description": desc,
-        "url":"https://www.mutapatimes.com/zse/",
+        "url":"https://mutapatimes.com/zse/",
         "inLanguage":"en",
         "publisher":{"@type":"Organization","name":"The Mutapa Times",
-                     "logo":{"@type":"ImageObject","url":"https://www.mutapatimes.com/img/logo.png"}}
+                     "logo":{"@type":"ImageObject","url":"https://mutapatimes.com/img/logo.png"}}
     }, ensure_ascii=False)
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"ZSE listed companies","item":"https://www.mutapatimes.com/zse/"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"ZSE listed companies","item":"https://mutapatimes.com/zse/"}
         ]
     }, ensure_ascii=False)
 
@@ -674,14 +674,14 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(title)} | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/zse/">
+    <link rel="canonical" href="https://mutapatimes.com/zse/">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{html.escape(title)}">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/zse/">
+    <meta property="og:url" content="https://mutapatimes.com/zse/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(title)}">
     <meta name="twitter:description" content="{html.escape(desc)}">
@@ -907,7 +907,7 @@ def render_detail(c):
     ld_org = {
         "@context":"https://schema.org","@type":"Organization",
         "name": name,
-        "url": f"https://www.mutapatimes.com/zse/{c['slug']}.html",
+        "url": f"https://mutapatimes.com/zse/{c['slug']}.html",
         "industry": sector,
         "address": {"@type":"PostalAddress","addressCountry":"ZW"},
     }
@@ -922,9 +922,9 @@ def render_detail(c):
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"ZSE listed companies","item":"https://www.mutapatimes.com/zse/"},
-            {"@type":"ListItem","position":3,"name": name,"item": f"https://www.mutapatimes.com/zse/{c['slug']}.html"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"ZSE listed companies","item":"https://mutapatimes.com/zse/"},
+            {"@type":"ListItem","position":3,"name": name,"item": f"https://mutapatimes.com/zse/{c['slug']}.html"}
         ]
     }, ensure_ascii=False)
 
@@ -939,14 +939,14 @@ def render_detail(c):
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(name)} — ZSE share price, profile | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/zse/{c["slug"]}.html">
+    <link rel="canonical" href="https://mutapatimes.com/zse/{c["slug"]}.html">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{html.escape(name)} — ZSE share price, profile">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/zse/{c["slug"]}.html">
+    <meta property="og:url" content="https://mutapatimes.com/zse/{c["slug"]}.html">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(name)} — ZSE share price">
     <meta name="twitter:description" content="{html.escape(desc)}">

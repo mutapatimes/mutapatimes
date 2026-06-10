@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "fx-rates.json")
 SOURCE_URL = "https://open.er-api.com/v6/latest/USD"
-USER_AGENT = "Mozilla/5.0 (compatible; MutapaTimesBot/1.0; +https://www.mutapatimes.com)"
+USER_AGENT = "Mozilla/5.0 (compatible; MutapaTimesBot/1.0; +https://mutapatimes.com)"
 
 # Currencies we surface on /fx.html — keep narrow so the page stays
 # scannable. SADC neighbours + major diaspora send countries + Zim's

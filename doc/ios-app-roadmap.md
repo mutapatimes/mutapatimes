@@ -47,7 +47,7 @@ Approach B: native bottom-tab nav, native news feed, native FX / economy / city 
 ### Phase 1 — Read shell (weeks 2–3)
 **Goal: a usable beta that reads the same content as the web.**
 - [ ] Bottom tab bar: **News · Cities · Economy · Diaspora · More**
-- [ ] News tab — `expo-router` index screen, pulls from `https://www.mutapatimes.com/data/spotlight.json`. Hero card (feature story), then card list. Pull-to-refresh.
+- [ ] News tab — `expo-router` index screen, pulls from `https://mutapatimes.com/data/spotlight.json`. Hero card (feature story), then card list. Pull-to-refresh.
 - [ ] Cities tab — six city headers (Harare, Bulawayo, Mutare, Gweru, Masvingo, Vic Falls), each opens a feed view consuming the RSS sources we already publish.
 - [ ] Article reader — `react-native-webview` pointing at the article's canonical URL. Native header with share + bookmark. Hide the site's chrome via injected JS / a `?app=1` query param the build script can read.
 - [ ] Bookmarks — `AsyncStorage` of slugs. Empty-state copy.

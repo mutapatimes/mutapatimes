@@ -21,7 +21,7 @@ DATA_DIR = "data"
 
 SENDER_NAME = "The Mutapa Times"
 SENDER_EMAIL = "news@mutapatimes.com"
-SITE_URL = "https://www.mutapatimes.com"
+SITE_URL = "https://mutapatimes.com"
 
 # Primary categories first — editorial focus for business & intelligence service
 PRIMARY_CATEGORIES = ["business", "politics", "policy", "technology"]
@@ -38,7 +38,7 @@ MAX_ARTICLE_AGE_DAYS = 14  # Reject articles older than this
 LEAD_OVERRIDE = {
     "until": "2026-06-08",
     "title": "Exclusive: Air Zimbabwe is going back to London",
-    "url": "https://www.mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
+    "url": "https://mutapatimes.com/articles/2026-06-07-air-zimbabwe-returns-to-london-plus-ultra-acmi.html",
     "description": "From 1 July, an Airbus A330 flies Harare to London under the Air Zimbabwe code for the first time in over a decade. Inside the Plus Ultra wet-lease that quietly reopens the route, the legal route around the UK ban, and what it is worth.",
     "source": "The Mutapa Times",
     "publishedAt": "2026-06-07T07:00:00.000Z",
@@ -502,7 +502,7 @@ def whatsapp_share_url(title, url):
         f"{title}\n\n"
         f"\U0001f517 {tracked_url}\n\n"
         f"via The Mutapa Times \u2014 Zimbabwe news from 100+ sources \U0001f1ff\U0001f1fc\n"
-        f"\U0001f4f0 https://www.mutapatimes.com?utm_source=newsletter&utm_medium=whatsapp&utm_campaign=newsletter"
+        f"\U0001f4f0 https://mutapatimes.com?utm_source=newsletter&utm_medium=whatsapp&utm_campaign=newsletter"
     )
     return "https://wa.me/?text=" + urllib.parse.quote(text, safe="")
 
@@ -532,7 +532,7 @@ def build_wordle_html(wordle):
         return ""
 
     wordle_url = (
-        "https://www.mutapatimes.com/games/shona-wordle/"
+        "https://mutapatimes.com/games/shona-wordle/"
         "?utm_source=newsletter&utm_medium=email&utm_campaign=wordle"
     )
 
@@ -669,7 +669,7 @@ def build_stories_rail_html():
 
     cells = ""
     for key, label, chip_bg in chips:
-        url = f"https://www.mutapatimes.com/?story={urllib.parse.quote(key)}&snap=0"
+        url = f"https://mutapatimes.com/?story={urllib.parse.quote(key)}&snap=0"
         cells += (
             '<td align="center" valign="top" '
             'style="padding:0 6px;">'
@@ -912,7 +912,7 @@ def build_html(category_articles, wordle=None, tsumo=None):
     general_wa_text = (
         "\U0001f4f0 The Mutapa Times \u2014 Zimbabwe outside-in.\n\n"
         "Curated news from foreign press, delivered Mon/Wed/Sat.\n\n"
-        "\U0001f1ff\U0001f1fc Subscribe free: https://www.mutapatimes.com"
+        "\U0001f1ff\U0001f1fc Subscribe free: https://mutapatimes.com"
     )
     general_wa_url = "https://wa.me/?text=" + urllib.parse.quote(general_wa_text, safe="")
 
@@ -1073,7 +1073,7 @@ def build_html(category_articles, wordle=None, tsumo=None):
                 Share on WhatsApp
               </a>
               &nbsp;&nbsp;
-              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%2C%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mondays%20%26%20Thursdays.%0A%0AIf%20a%20friend%20forwarded%20this%20to%20you%2C%20subscribe%20at%3A%0Ahttps%3A%2F%2Fwww.mutapatimes.com%2Fsubscribe.html%3Fref%3Dnewsletter-share"
+              <a href="mailto:?subject=The%20Mutapa%20Times&amp;body=Check%20out%20The%20Mutapa%20Times%2C%20curated%20Zimbabwe%20news%20from%20foreign%20press%2C%20delivered%20Mondays%20%26%20Thursdays.%0A%0AIf%20a%20friend%20forwarded%20this%20to%20you%2C%20subscribe%20at%3A%0Ahttps%3A%2F%2Fmutapatimes.com%2Fsubscribe.html%3Fref%3Dnewsletter-share"
                  target="_blank"
                  style="display:inline-block;padding:8px 20px;
                         font-family:Helvetica,Arial,sans-serif;
@@ -1085,7 +1085,7 @@ def build_html(category_articles, wordle=None, tsumo=None):
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:11px;color:#4a4a44;margin:14px 0 0;">
                 Forward to a friend. It is how we grow. If this was
-                forwarded to you, <a href="https://www.mutapatimes.com/subscribe.html?ref=newsletter-forward"
+                forwarded to you, <a href="https://mutapatimes.com/subscribe.html?ref=newsletter-forward"
                 style="color:#c41e1e;font-weight:700;">subscribe free</a>.
               </p>
             </td>

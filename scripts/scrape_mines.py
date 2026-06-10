@@ -5,7 +5,7 @@ matter commercially but have less-than-obvious Wikipedia titles."""
 import re, json, urllib.request, time
 from pathlib import Path
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
 
 CATEGORIES = [

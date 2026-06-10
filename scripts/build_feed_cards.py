@@ -33,7 +33,7 @@ CMS_DIR = os.path.join(ROOT, "content", "articles")
 WIRES_DIR = os.path.join(ROOT, "content", "wires")
 
 OUT_DIR = os.path.join(ROOT, "img", "cards", "news")
-PUBLIC_BASE = "https://www.mutapatimes.com/img/cards/news"
+PUBLIC_BASE = "https://mutapatimes.com/img/cards/news"
 
 # Skip rendering anything published more than this many days ago. Same
 # 30-day window we use everywhere else; keeps the on-disk footprint
@@ -159,7 +159,7 @@ def _walk_cms_articles():
             author = author_m.group(1) if author_m else "Mutapa Times"
             # CMS articles live at /articles/{slug}.html — same URL build_news_pages
             # links to and what generate_rss.collect_cms_articles emits.
-            url = f"https://www.mutapatimes.com/articles/{slug}.html"
+            url = f"https://mutapatimes.com/articles/{slug}.html"
             yield {
                 "title": title,
                 "source": author,

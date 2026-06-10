@@ -1,7 +1,7 @@
 # Advertiser outreach — twelve emails
 
 Each email points the recipient at a custom pitch one-pager at
-`https://www.mutapatimes.com/pitch.html?brand={BrandName}`. The page reads
+`https://mutapatimes.com/pitch.html?brand={BrandName}`. The page reads
 the `brand` query param and inserts the name throughout (mailto subject
 included). The page is `noindex,nofollow`.
 
@@ -34,7 +34,7 @@ do every month, and you are already the trusted route for the bulk of it.
 
 A one-pager on how the partnership would work:
 
-https://www.mutapatimes.com/pitch.html?brand=Mukuru
+https://mutapatimes.com/pitch.html?brand=Mukuru
 
 Happy to do a twenty-minute call if it's worth the time.
 
@@ -65,7 +65,7 @@ month and treats remittance economics as a household line item.
 
 A one-pager I put together for you:
 
-https://www.mutapatimes.com/pitch.html?brand=WorldRemit
+https://mutapatimes.com/pitch.html?brand=WorldRemit
 
 If it reads worth a conversation, I'll send three slots over the next
 ten days.
@@ -95,7 +95,7 @@ business income through Wise. That is the audience this pitch is about.
 
 The one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Wise
+https://mutapatimes.com/pitch.html?brand=Wise
 
 Twenty minutes is enough to know if it works. Let me know.
 
@@ -124,7 +124,7 @@ readers raise in inbox replies every week.
 
 One-pager on the partnership shape:
 
-https://www.mutapatimes.com/pitch.html?brand=Sendwave
+https://mutapatimes.com/pitch.html?brand=Sendwave
 
 If it reads worth a conversation, twenty minutes is enough.
 
@@ -156,7 +156,7 @@ products without the politics. There is real overlap here.
 
 One-pager on partnership shape:
 
-https://www.mutapatimes.com/pitch.html?brand=Old%20Mutual
+https://mutapatimes.com/pitch.html?brand=Old%20Mutual
 
 Twenty-minute call if it reads worth it.
 
@@ -185,7 +185,7 @@ end up answering reader questions about every week.
 
 A one-pager on partnership shape:
 
-https://www.mutapatimes.com/pitch.html?brand=CABS
+https://mutapatimes.com/pitch.html?brand=CABS
 
 Twenty minutes if you'd like to talk through it.
 
@@ -215,7 +215,7 @@ correction worth making, and a partner to make it with.
 
 The one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Cassava%20Technologies
+https://mutapatimes.com/pitch.html?brand=Cassava%20Technologies
 
 Twenty-minute call if it's worth a conversation.
 
@@ -245,7 +245,7 @@ on Monday mornings before making it.
 
 Partnership one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Standard%20Chartered
+https://mutapatimes.com/pitch.html?brand=Standard%20Chartered
 
 Twenty minutes if you want to talk it through.
 
@@ -275,7 +275,7 @@ eighteen months ahead, every December and every July.
 
 The partnership one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=African%20Sun%20Hotels
+https://mutapatimes.com/pitch.html?brand=African%20Sun%20Hotels
 
 Twenty-minute call if it's worth a conversation.
 
@@ -305,7 +305,7 @@ exploring there.
 
 Partnership one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Padenga%20Holdings
+https://mutapatimes.com/pitch.html?brand=Padenga%20Holdings
 
 Twenty-minute conversation if you'd like to talk through it.
 
@@ -336,7 +336,7 @@ to read it.
 
 Partnership one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Innscor%20Africa
+https://mutapatimes.com/pitch.html?brand=Innscor%20Africa
 
 Twenty-minute call if it's worth the time.
 
@@ -366,7 +366,7 @@ mostly live in. There is a partnership worth a conversation.
 
 The one-pager:
 
-https://www.mutapatimes.com/pitch.html?brand=Fastjet
+https://mutapatimes.com/pitch.html?brand=Fastjet
 
 Twenty-minute call if you want to talk it through.
 
@@ -391,7 +391,7 @@ page reads `?brand=…` on load and substitutes the brand name into:
 - the mailto subject of the CTA button
 
 If you ever need a brand we haven't pre-built, just hit
-`https://www.mutapatimes.com/pitch.html?brand=Whatever%20Inc` — spaces
+`https://mutapatimes.com/pitch.html?brand=Whatever%20Inc` — spaces
 URL-encoded as `%20`. No new file needed.
 
 Page is `noindex,nofollow`. Visits aren't logged. If the brand name

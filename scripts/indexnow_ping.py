@@ -22,7 +22,7 @@ import urllib.error
 import urllib.request
 
 # Site identity — must match the canonical URL of every page we ping
-HOST = "www.mutapatimes.com"
+HOST = "mutapatimes.com"
 KEY = "ea3891e3e6604b75a6ef5d02980194ac"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 ENDPOINT = "https://api.indexnow.org/indexnow"

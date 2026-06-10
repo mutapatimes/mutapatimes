@@ -23,7 +23,7 @@ try:
 except ImportError:
     _feed_card_url = None
 
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 ARTICLES_SRC = os.path.join(ROOT_DIR, "content", "articles")
 WIRES_SRC = os.path.join(ROOT_DIR, "content", "wires")
@@ -218,7 +218,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#1a1a1a">
-<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://www.mutapatimes.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://mutapatimes.com/feed.xml">
 <link rel="alternate" hreflang="en" href="{esc(canonical_url)}">
 <link rel="alternate" hreflang="x-default" href="{esc(canonical_url)}">"""
 

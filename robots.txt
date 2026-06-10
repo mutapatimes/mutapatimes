@@ -8,8 +8,8 @@ Disallow: /article.html
 Disallow: /article
 Disallow: /zb-demo
 
-Sitemap: https://www.mutapatimes.com/sitemap.xml
-Sitemap: https://www.mutapatimes.com/news-sitemap.xml
+Sitemap: https://mutapatimes.com/sitemap.xml
+Sitemap: https://mutapatimes.com/news-sitemap.xml
 
 # AI crawlers - welcome to index our content
 User-agent: GPTBot

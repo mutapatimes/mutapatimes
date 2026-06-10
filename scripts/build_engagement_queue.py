@@ -46,7 +46,7 @@ NITTER_MIRRORS = [
 ]
 USER_AGENT = (
     "Mozilla/5.0 (compatible; MutapaTimesEngagementBot/1.0; "
-    "+https://www.mutapatimes.com)"
+    "+https://mutapatimes.com)"
 )
 
 # Reuse the news-page slug helper so quote-tweet links point to a real

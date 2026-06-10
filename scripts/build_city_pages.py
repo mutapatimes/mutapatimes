@@ -33,7 +33,7 @@ try:
 except ImportError:
     _feed_card_url = None
 
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 INDEX_PATH = os.path.join(ROOT, "content", "articles", "index.json")
 

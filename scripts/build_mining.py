@@ -10,7 +10,7 @@ OUT.mkdir(exist_ok=True)
 IMG  = ROOT / "img" / "mining"
 IMG.mkdir(parents=True, exist_ok=True)
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 TODAY = "2026-05-22"
 
 # Load raw roster + dedupe known title variants (Wikipedia sometimes has two
@@ -608,15 +608,15 @@ f'''    <a class="mn-card" href="./{m["slug"]}.html"
     ld_page = json.dumps({
         "@context":"https://schema.org","@type":"CollectionPage",
         "headline": title, "description": desc,
-        "url":"https://www.mutapatimes.com/mining/", "inLanguage":"en",
+        "url":"https://mutapatimes.com/mining/", "inLanguage":"en",
         "publisher":{"@type":"Organization","name":"The Mutapa Times",
-                     "logo":{"@type":"ImageObject","url":"https://www.mutapatimes.com/img/logo.png"}}
+                     "logo":{"@type":"ImageObject","url":"https://mutapatimes.com/img/logo.png"}}
     }, ensure_ascii=False)
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Mining directory","item":"https://www.mutapatimes.com/mining/"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Mining directory","item":"https://mutapatimes.com/mining/"}
         ]
     }, ensure_ascii=False)
 
@@ -624,14 +624,14 @@ f'''    <a class="mn-card" href="./{m["slug"]}.html"
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(title)} | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/mining/">
+    <link rel="canonical" href="https://mutapatimes.com/mining/">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{html.escape(title)}">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/mining/">
+    <meta property="og:url" content="https://mutapatimes.com/mining/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(title)}">
     <meta name="twitter:description" content="{html.escape(desc)}">
@@ -819,7 +819,7 @@ def render_detail(m):
     ld = {
         "@context":"https://schema.org","@type":"Place",
         "name": name,
-        "url": f"https://www.mutapatimes.com/mining/{slug}.html",
+        "url": f"https://mutapatimes.com/mining/{slug}.html",
         "description": f"{commodity} mine in Zimbabwe.",
     }
     if wp.get("lat") and wp.get("lon"):
@@ -831,9 +831,9 @@ def render_detail(m):
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Mining directory","item":"https://www.mutapatimes.com/mining/"},
-            {"@type":"ListItem","position":3,"name": name,"item": f"https://www.mutapatimes.com/mining/{slug}.html"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Mining directory","item":"https://mutapatimes.com/mining/"},
+            {"@type":"ListItem","position":3,"name": name,"item": f"https://mutapatimes.com/mining/{slug}.html"}
         ]
     }, ensure_ascii=False)
 
@@ -841,14 +841,14 @@ def render_detail(m):
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(name)} — {html.escape(commodity)} mine, Zimbabwe | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/mining/{slug}.html">
+    <link rel="canonical" href="https://mutapatimes.com/mining/{slug}.html">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{html.escape(name)} — {html.escape(commodity)} mine">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/mining/{slug}.html">
+    <meta property="og:url" content="https://mutapatimes.com/mining/{slug}.html">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(name)} — {html.escape(commodity)} mine">
     <meta name="twitter:description" content="{html.escape(desc)}">

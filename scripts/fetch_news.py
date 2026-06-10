@@ -20,7 +20,7 @@ def _card_image_for(url):
     """Return public URL of the branded card for this article, used as a
     guaranteed-image fallback when the source image fails to load."""
     h = hashlib.md5((url or "").encode("utf-8")).hexdigest()[:12]
-    return f"https://www.mutapatimes.com/img/cards/news/{h}.png"
+    return f"https://mutapatimes.com/img/cards/news/{h}.png"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
@@ -1375,7 +1375,7 @@ spotlight: false
         if dated_slug not in indexed_slugs:
             # Card path matches build_feed_cards.py's hash for CMS articles
             # (md5 of the canonical mutapatimes.com URL).
-            canonical = f"https://www.mutapatimes.com/articles/{dated_slug}.html"
+            canonical = f"https://mutapatimes.com/articles/{dated_slug}.html"
             card_hash = hashlib.md5(canonical.encode("utf-8")).hexdigest()[:12]
             index.append({
                 "slug": dated_slug,
@@ -1413,7 +1413,7 @@ spotlight: false
     if new_slugs_this_run:
         try:
             from indexnow_ping import ping_urls
-            urls = [f"https://www.mutapatimes.com/articles/{s}.html"
+            urls = [f"https://mutapatimes.com/articles/{s}.html"
                     for s in new_slugs_this_run]
             ping_urls(urls)
         except Exception as e:

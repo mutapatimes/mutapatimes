@@ -587,7 +587,7 @@ def _yt_description(src, script):
         script,
         "",
         "The Mutapa Times — Zimbabwe outside-in.",
-        "https://www.mutapatimes.com",
+        "https://mutapatimes.com",
         "",
         "#Zimbabwe #" + src["category"].replace(" ", ""),
     ]

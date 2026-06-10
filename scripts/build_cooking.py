@@ -882,7 +882,7 @@ def head_html(title, canonical, desc, schemas):
 
 def render_recipe(r):
     slug = r["slug"]
-    canonical = f"https://www.mutapatimes.com/cooking/{slug}/"
+    canonical = f"https://mutapatimes.com/cooking/{slug}/"
     total_min = r["prep_min"] + r["cook_min"]
     cal = estimate_calories(r["ingredients"], r["serves"])
 
@@ -895,7 +895,7 @@ def render_recipe(r):
         "@context": "https://schema.org",
         "@type": "Recipe",
         "name": r["name"],
-        "image": [f"https://www.mutapatimes.com{hero_for(slug)}"] if hero_for(slug) else [],
+        "image": [f"https://mutapatimes.com{hero_for(slug)}"] if hero_for(slug) else [],
         "description": r["tagline"],
         "author": {"@type": "Organization", "name": "The Mutapa Times"},
         "datePublished": TODAY,
@@ -916,8 +916,8 @@ def render_recipe(r):
     breadcrumb_schema = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Cooking", "item": "https://www.mutapatimes.com/cooking/"},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mutapatimes.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Cooking", "item": "https://mutapatimes.com/cooking/"},
             {"@type": "ListItem", "position": 3, "name": r["name"], "item": canonical},
         ],
     }
@@ -1013,7 +1013,7 @@ def stripped(s):
 
 
 def render_hub():
-    canonical = "https://www.mutapatimes.com/cooking/"
+    canonical = "https://mutapatimes.com/cooking/"
     title = "Zimbabwean recipes — The Mutapa Times Cooking Guide"
     desc = "10 authentic Zimbabwean recipes with full method, calorie estimates and cultural context. Sadza, muriwo une dovi, kapenta, madora and more."
 
@@ -1024,7 +1024,7 @@ def render_hub():
     breadcrumb_schema = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mutapatimes.com/"},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mutapatimes.com/"},
             {"@type": "ListItem", "position": 2, "name": "Cooking", "item": canonical},
         ],
     }
@@ -1033,7 +1033,7 @@ def render_hub():
         "name": "Zimbabwean recipes",
         "itemListElement": [
             {"@type": "ListItem", "position": i+1,
-             "url": f"https://www.mutapatimes.com/cooking/{r['slug']}/",
+             "url": f"https://mutapatimes.com/cooking/{r['slug']}/",
              "name": r["name"]}
             for i, r in enumerate(RECIPES)
         ],

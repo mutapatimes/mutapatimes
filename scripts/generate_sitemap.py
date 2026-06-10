@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timezone, timedelta
 from xml.sax.saxutils import escape
 
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 
 STATIC_PAGES = [
     ("", 1.0, "hourly"),

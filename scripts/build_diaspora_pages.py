@@ -14,7 +14,7 @@ import textwrap
 from datetime import datetime, timezone
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
-BASE_URL = "https://www.mutapatimes.com"
+BASE_URL = "https://mutapatimes.com"
 
 
 # ─── Shared HTML scaffolding ─────────────────────────────────────────
@@ -229,10 +229,10 @@ FOOTER = """<footer class="atlantic-foot">
 def hreflang_block(self_key):
     """Tell Google these are sibling regional pages of one another."""
     rels = {
-        "hub": ("https://www.mutapatimes.com/diaspora/", "x-default"),
-        "uk":  ("https://www.mutapatimes.com/diaspora/uk/", "en-GB"),
-        "sa":  ("https://www.mutapatimes.com/diaspora/south-africa/", "en-ZA"),
-        "us":  ("https://www.mutapatimes.com/diaspora/usa/", "en-US"),
+        "hub": ("https://mutapatimes.com/diaspora/", "x-default"),
+        "uk":  ("https://mutapatimes.com/diaspora/uk/", "en-GB"),
+        "sa":  ("https://mutapatimes.com/diaspora/south-africa/", "en-ZA"),
+        "us":  ("https://mutapatimes.com/diaspora/usa/", "en-US"),
     }
     out = []
     for k, (url, lang) in rels.items():
@@ -243,9 +243,9 @@ def hreflang_block(self_key):
 def breadcrumb(country=None):
     items = [
         {"@type": "ListItem", "position": 1, "name": "Home",
-         "item": "https://www.mutapatimes.com/"},
+         "item": "https://mutapatimes.com/"},
         {"@type": "ListItem", "position": 2, "name": "Diaspora",
-         "item": "https://www.mutapatimes.com/diaspora/"},
+         "item": "https://mutapatimes.com/diaspora/"},
     ]
     if country:
         items.append({"@type": "ListItem", "position": 3, "name": country["name"],
@@ -267,7 +267,7 @@ def webpage(meta):
         "inLanguage": meta.get("lang", "en"),
         "publisher": {"@type": "Organization", "name": "The Mutapa Times",
                       "logo": {"@type": "ImageObject",
-                               "url": "https://www.mutapatimes.com/img/logo.png"}}
+                               "url": "https://mutapatimes.com/img/logo.png"}}
     })
 
 
@@ -310,7 +310,7 @@ def page_hub():
     meta = {
         "title": "Zimbabwe news for the global diaspora | The Mutapa Times",
         "description": "Country-specific Zimbabwean news hubs for the UK, South Africa, USA and beyond. Live FX corridors, flight guides, returning-home resources — built around where Zimbabweans actually live and read.",
-        "canonical": "https://www.mutapatimes.com/diaspora/",
+        "canonical": "https://mutapatimes.com/diaspora/",
     }
 
     hero = """  <header class="dp-hero">
@@ -408,7 +408,7 @@ def page_uk():
     meta = {
         "title": "Zimbabwe news for the UK-based diaspora | The Mutapa Times",
         "description": "Britain has one of the largest Zimbabwean diaspora communities. The Mutapa Times is operated from the United Kingdom. London-Harare flights, pound-to-ZiG remittance, returning-home guidance, daily news.",
-        "canonical": "https://www.mutapatimes.com/diaspora/uk/",
+        "canonical": "https://mutapatimes.com/diaspora/uk/",
         "lang": "en-GB",
     }
 
@@ -503,7 +503,7 @@ def page_uk():
                   hero,
                   "",
                   country_for_crumb={"name": "United Kingdom",
-                                     "url": "https://www.mutapatimes.com/diaspora/uk/"},
+                                     "url": "https://mutapatimes.com/diaspora/uk/"},
                   self_key="uk")
 
 
@@ -514,7 +514,7 @@ def page_sa():
     meta = {
         "title": "Zimbabwe news for the South Africa-based diaspora | The Mutapa Times",
         "description": "South Africa hosts the largest single concentration of Zimbabweans abroad — Johannesburg, Pretoria, Cape Town, Durban. Rand-to-ZiG remittance, JNB/CPT-Harare flights, daily news.",
-        "canonical": "https://www.mutapatimes.com/diaspora/south-africa/",
+        "canonical": "https://mutapatimes.com/diaspora/south-africa/",
         "lang": "en-ZA",
     }
 
@@ -610,7 +610,7 @@ def page_sa():
                   hero,
                   "",
                   country_for_crumb={"name": "South Africa",
-                                     "url": "https://www.mutapatimes.com/diaspora/south-africa/"},
+                                     "url": "https://mutapatimes.com/diaspora/south-africa/"},
                   self_key="sa")
 
 
@@ -621,7 +621,7 @@ def page_us():
     meta = {
         "title": "Zimbabwe news for the US-based diaspora | The Mutapa Times",
         "description": "A small but growing Zimbabwean community across Atlanta, the DMV, Dallas, Houston and the Northeast. USD-to-ZiG remittance, New York-Harare flights, daily news.",
-        "canonical": "https://www.mutapatimes.com/diaspora/usa/",
+        "canonical": "https://mutapatimes.com/diaspora/usa/",
         "lang": "en-US",
     }
 
@@ -716,7 +716,7 @@ def page_us():
                   hero,
                   "",
                   country_for_crumb={"name": "United States",
-                                     "url": "https://www.mutapatimes.com/diaspora/usa/"},
+                                     "url": "https://mutapatimes.com/diaspora/usa/"},
                   self_key="us")
 
 

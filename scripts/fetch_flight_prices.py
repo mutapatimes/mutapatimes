@@ -43,7 +43,7 @@ CORRIDORS = {
     "london-to-victoria-falls": {"origin": "LON", "alt": "LHR", "destination": "VFA", "currency": "GBP", "currency_sym": "£"},
 }
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 
 
 def http_get_json(url):

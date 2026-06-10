@@ -191,7 +191,7 @@ def send_push(project_id, access_token, title, body, url, tokens):
                 "notification": {
                     "title": title,
                     "body": body,
-                    "image": "https://www.mutapatimes.com/img/android-icon-192x192.png",
+                    "image": "https://mutapatimes.com/img/android-icon-192x192.png",
                 },
                 "webpush": {
                     "fcm_options": {
@@ -265,7 +265,7 @@ def main():
 
     title_text = top.get("title", "Breaking News")[:80]
     body_text = top.get("description", "")[:150]
-    article_url = top.get("url", "https://www.mutapatimes.com/")
+    article_url = top.get("url", "https://mutapatimes.com/")
 
     send_push(
         project_id=project_id,

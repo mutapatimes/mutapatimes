@@ -340,9 +340,9 @@ def render_rate_page(src, dst):
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"FX rates","item":"https://www.mutapatimes.com/fx/"},
-            {"@type":"ListItem","position":3,"name": f"{src} to {dst}","item": f"https://www.mutapatimes.com/fx/{pair_slug}/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"FX rates","item":"https://mutapatimes.com/fx/"},
+            {"@type":"ListItem","position":3,"name": f"{src} to {dst}","item": f"https://mutapatimes.com/fx/{pair_slug}/"},
         ]
     }, ensure_ascii=False)
     ld_xrate = json.dumps({
@@ -355,14 +355,14 @@ def render_rate_page(src, dst):
 <html class="no-js" lang="en">
 <head>
     <title>{title} | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/fx/{pair_slug}/">
+    <link rel="canonical" href="https://mutapatimes.com/fx/{pair_slug}/">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/fx/{pair_slug}/">
+    <meta property="og:url" content="https://mutapatimes.com/fx/{pair_slug}/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{html.escape(desc)}">
@@ -514,9 +514,9 @@ def render_send_money_page(src):
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"FX rates","item":"https://www.mutapatimes.com/fx/"},
-            {"@type":"ListItem","position":3,"name": f"Send money from {src_meta['country']} to Zimbabwe","item": f"https://www.mutapatimes.com/fx/{slug}/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"FX rates","item":"https://mutapatimes.com/fx/"},
+            {"@type":"ListItem","position":3,"name": f"Send money from {src_meta['country']} to Zimbabwe","item": f"https://mutapatimes.com/fx/{slug}/"},
         ]
     }, ensure_ascii=False)
     ld_howto = json.dumps({
@@ -535,14 +535,14 @@ def render_send_money_page(src):
 <html class="no-js" lang="en">
 <head>
     <title>{title} | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/fx/{slug}/">
+    <link rel="canonical" href="https://mutapatimes.com/fx/{slug}/">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/fx/{slug}/">
+    <meta property="og:url" content="https://mutapatimes.com/fx/{slug}/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{html.escape(desc)}">

@@ -45,7 +45,7 @@ MAPPING = {
     "Whitestone School":                    "Whitestone_School",
 }
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 
 def fetch_wikitext(title):
     url = f"https://en.wikipedia.org/w/api.php?action=parse&page={title}&prop=wikitext|sections&format=json&redirects=1"

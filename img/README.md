@@ -81,8 +81,8 @@ If you're not sure of the slug for a school / company / mine / corridor,
 the easiest way is to open the entity's live page and look at the URL.
 For example:
 
-- `https://www.mutapatimes.com/schools/peterhouse-boys.html` → slug is `peterhouse-boys`
-- `https://www.mutapatimes.com/flights/london-to-harare/` → slug is `london-to-harare`
+- `https://mutapatimes.com/schools/peterhouse-boys.html` → slug is `peterhouse-boys`
+- `https://mutapatimes.com/flights/london-to-harare/` → slug is `london-to-harare`
 
 Slugs are also listed in `data/ats-schools.json`, `data/zse-companies.json`,
 `data/mines.json`, and `data/travelpayouts-widgets.json`.

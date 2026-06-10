@@ -46,7 +46,7 @@ Long live reggae music and the timeless legacy you left behind.🎼🎵🎶🎸
 
 **Quote-tweet text suggestion:**
 > Adding context from our coverage: Harare’s 20 AI Robocop Traffic Cameras Will Start Fining Drivers In June 2026.
-> https://www.mutapatimes.com/news/2026-05-10-harare-s-20-ai-robocop-traffic-cameras-will-start-fining-dri-1941a7.html
+> https://mutapatimes.com/news/2026-05-10-harare-s-20-ai-robocop-traffic-cameras-will-start-fining-dri-1941a7.html
 
 ### 2. Re: @263Chat on "“AGAMA Football Club is here to stay,” declared the club chairman.
 
@@ -56,7 +56,7 @@ Long live reggae music and the timeless legacy you left behind.🎼🎵🎶🎸
 
 **Quote-tweet text suggestion:**
 > Adding context from our coverage: AfDB mission raises stakes for Bulawayo’s US$100 million Glassblock Dam project.
-> https://www.mutapatimes.com/news/2026-05-10-afdb-mission-raises-stakes-for-bulawayo-s-us-100-million-gla-3af437.html
+> https://mutapatimes.com/news/2026-05-10-afdb-mission-raises-stakes-for-bulawayo-s-us-100-million-gla-3af437.html
 
 ---
 

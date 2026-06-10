@@ -618,15 +618,15 @@ f'''    <a class="sd-card" href="./{s["slug"]}.html"
         "@context":"https://schema.org","@type":"CollectionPage",
         "headline": title,
         "description": desc,
-        "url":"https://www.mutapatimes.com/schools/",
+        "url":"https://mutapatimes.com/schools/",
         "inLanguage":"en",
-        "publisher":{"@type":"Organization","name":"The Mutapa Times","logo":{"@type":"ImageObject","url":"https://www.mutapatimes.com/img/logo.png"}}
+        "publisher":{"@type":"Organization","name":"The Mutapa Times","logo":{"@type":"ImageObject","url":"https://mutapatimes.com/img/logo.png"}}
     }, ensure_ascii=False)
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Schools directory","item":"https://www.mutapatimes.com/schools/"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Schools directory","item":"https://mutapatimes.com/schools/"}
         ]
     }, ensure_ascii=False)
 
@@ -634,14 +634,14 @@ f'''    <a class="sd-card" href="./{s["slug"]}.html"
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(title)} | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/schools/">
+    <link rel="canonical" href="https://mutapatimes.com/schools/">
 {HEAD_COMMON}
     <meta name="description" content="{html.escape(desc)}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{html.escape(title)}">
     <meta property="og:description" content="{html.escape(desc)}">
-    <meta property="og:url" content="https://www.mutapatimes.com/schools/">
+    <meta property="og:url" content="https://mutapatimes.com/schools/">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(title)}">
     <meta name="twitter:description" content="{html.escape(desc)}">
@@ -886,7 +886,7 @@ def render_detail(s):
     ld_school = json.dumps({
         "@context":"https://schema.org","@type":"School",
         "name": s["name"],
-        "url": f"https://www.mutapatimes.com/schools/{s['slug']}.html",
+        "url": f"https://mutapatimes.com/schools/{s['slug']}.html",
         "address": {"@type":"PostalAddress","addressLocality": s["city"], "addressRegion": s["province"], "addressCountry":"ZW"},
         "geo": {"@type":"GeoCoordinates","latitude": s["lat"], "longitude": s["lon"]},
         "memberOf": {"@type":"Organization","name":"Association of Trust Schools (Zimbabwe)","url":"https://atszim.org/"}
@@ -894,9 +894,9 @@ def render_detail(s):
     ld_breadcrumb = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Schools directory","item":"https://www.mutapatimes.com/schools/"},
-            {"@type":"ListItem","position":3,"name": s["name"],"item": f"https://www.mutapatimes.com/schools/{s['slug']}.html"}
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Schools directory","item":"https://mutapatimes.com/schools/"},
+            {"@type":"ListItem","position":3,"name": s["name"],"item": f"https://mutapatimes.com/schools/{s['slug']}.html"}
         ]
     }, ensure_ascii=False)
 
@@ -904,14 +904,14 @@ def render_detail(s):
 <html class="no-js" lang="en">
 <head>
     <title>{html.escape(s["name"])} — {html.escape(s["city"])} | Schools directory | The Mutapa Times</title>
-    <link rel="canonical" href="https://www.mutapatimes.com/schools/{s["slug"]}.html">
+    <link rel="canonical" href="https://mutapatimes.com/schools/{s["slug"]}.html">
 {HEAD_COMMON}
     <meta name="description" content="{desc_meta}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{html.escape(s["name"])} — Zimbabwe schools directory">
     <meta property="og:description" content="{desc_meta}">
-    <meta property="og:url" content="https://www.mutapatimes.com/schools/{s["slug"]}.html">
+    <meta property="og:url" content="https://mutapatimes.com/schools/{s["slug"]}.html">
     <meta property="og:site_name" content="The Mutapa Times">
     <meta name="twitter:title" content="{html.escape(s["name"])} — Zimbabwe schools directory">
     <meta name="twitter:description" content="{desc_meta}">

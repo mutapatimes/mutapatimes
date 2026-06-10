@@ -16,7 +16,7 @@ ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
 IMG_DIR = ROOT / "img" / "schools"
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = "MutapaTimes/1.0 (https://www.mutapatimes.com; news@mutapatimes.com)"
+UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
 
 # Free licenses we accept. Wikipedia/Commons extmetadata gives a LicenseShortName
 # like "CC BY-SA 4.0", "CC0", "Public domain". Fair-use crests come back as

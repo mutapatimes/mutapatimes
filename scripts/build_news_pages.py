@@ -283,7 +283,7 @@ def render_page(article, related=None):
 
 # ── IndexNow (Bing/Yandex) — optional, env-controlled ────────
 INDEXNOW_KEY = os.environ.get("INDEXNOW_KEY", "")
-INDEXNOW_HOST = "www.mutapatimes.com"
+INDEXNOW_HOST = "mutapatimes.com"
 
 
 def indexnow_ping(urls):

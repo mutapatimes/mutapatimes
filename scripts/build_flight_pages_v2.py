@@ -1258,7 +1258,7 @@ def hero_block(slug, alt_text):
 def render_corridor(slug, c):
     """Render a flight corridor page (e.g. london-to-harare)."""
     widget = widgets[c["widget_key"]]["embed"]
-    canonical = f"https://www.mutapatimes.com/flights/{slug}/"
+    canonical = f"https://mutapatimes.com/flights/{slug}/"
 
     # Sponsored Harare hotels carousel on Harare corridors only.
     harare_route = slug == "from-harare" or slug.endswith("-to-harare")
@@ -1290,8 +1290,8 @@ def render_corridor(slug, c):
     breadcrumb_ld = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Flights","item":"https://www.mutapatimes.com/flights/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Flights","item":"https://mutapatimes.com/flights/"},
             {"@type":"ListItem","position":3,"name": f"{c['origin_short']} to {c['dest_short']}", "item": canonical}
         ]
     }, ensure_ascii=False)
@@ -1299,7 +1299,7 @@ def render_corridor(slug, c):
         "@context":"https://schema.org","@type":"Trip",
         "name": f"{c['origin_short']} to {c['dest_short']}",
         "description": f"Flight from {c['origin_full']} to {c['dest_full']}",
-        "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://www.mutapatimes.com"}
+        "provider": {"@type":"Organization","name":"The Mutapa Times","url":"https://mutapatimes.com"}
     }, ensure_ascii=False)
 
     # Live price data (Travelpayouts Data API, refreshed twice daily).
@@ -1554,7 +1554,7 @@ def render_corridor(slug, c):
 
 def render_airport(slug, c):
     """Render an airport landing page (HRE / BUQ / VFA)."""
-    canonical = f"https://www.mutapatimes.com/airports/{slug}/"
+    canonical = f"https://mutapatimes.com/airports/{slug}/"
 
     # Sponsored Harare hotels carousel on the HRE airport page only.
     hotels_rail = HOTELS_RAIL if slug == "harare" else ""
@@ -1590,8 +1590,8 @@ def render_airport(slug, c):
     breadcrumb_ld = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
-            {"@type":"ListItem","position":2,"name":"Airports","item":"https://www.mutapatimes.com/airports/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
+            {"@type":"ListItem","position":2,"name":"Airports","item":"https://mutapatimes.com/airports/"},
             {"@type":"ListItem","position":3,"name": c["h1"], "item": canonical}
         ]
     }, ensure_ascii=False)
@@ -1783,7 +1783,7 @@ def render_airport(slug, c):
 
 def render_hub():
     """The /flights/ hub."""
-    canonical = "https://www.mutapatimes.com/flights/"
+    canonical = "https://mutapatimes.com/flights/"
     title = f"Cheap flights to Harare {MONTH_YEAR} — diaspora flight guide"
     stand = ("A diaspora-first guide to flying Zimbabwe. Which airlines fly the route, what fares look like in low vs high season, the practical "
              "layover patterns, and a live price search per origin city. We do not sell tickets — we link out to the booking aggregators with the "
@@ -1793,7 +1793,7 @@ def render_hub():
     breadcrumb_ld = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
             {"@type":"ListItem","position":2,"name":"Flights","item": canonical}
         ]
     }, ensure_ascii=False)
@@ -1804,7 +1804,7 @@ def render_hub():
         "url": canonical,
         "inLanguage":"en",
         "publisher":{"@type":"Organization","name":"The Mutapa Times",
-                     "logo":{"@type":"ImageObject","url":"https://www.mutapatimes.com/img/logo.png"}}
+                     "logo":{"@type":"ImageObject","url":"https://mutapatimes.com/img/logo.png"}}
     }, ensure_ascii=False)
 
     head = page_head(
@@ -1946,7 +1946,7 @@ def stripped(s):
 # ---------------------------------------------------------------------------
 
 def render_airports_hub():
-    canonical = "https://www.mutapatimes.com/airports/"
+    canonical = "https://mutapatimes.com/airports/"
     title = f"Zimbabwe airport guide — live arrivals & departures | {MONTH_YEAR}"
     desc = ("Live arrivals and departures for Harare (HRE), Bulawayo (BUQ) and "
             "Victoria Falls (VFA) — the three main Zimbabwean international airports. "
@@ -1954,7 +1954,7 @@ def render_airports_hub():
     breadcrumb_ld = json.dumps({
         "@context":"https://schema.org","@type":"BreadcrumbList",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mutapatimes.com/"},
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com/"},
             {"@type":"ListItem","position":2,"name":"Airports","item": canonical},
         ],
     }, ensure_ascii=False)
@@ -2248,7 +2248,7 @@ old_to_new = [
     ("victoria-falls-airport", "victoria-falls", "Victoria Falls Airport"),
 ]
 for old_slug, new_slug, label in old_to_new:
-    write_redirect(OUT / old_slug, f"https://www.mutapatimes.com/airports/{new_slug}/", label)
+    write_redirect(OUT / old_slug, f"https://mutapatimes.com/airports/{new_slug}/", label)
     print(f"wrote redirect: /flights/{old_slug}/ -> /airports/{new_slug}/")
 
 print(f"\nDone. Month: {MONTH_YEAR}")

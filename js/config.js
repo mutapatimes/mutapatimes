@@ -961,7 +961,7 @@ function createShareBtn(title, url) {
     e.preventDefault();
     e.stopPropagation();
     var trackedUrl = addUtm(url, 'share');
-    var shareText = title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://www.mutapatimes.com?utm_source=mutapatimes&utm_medium=share&utm_campaign=reader_share';
+    var shareText = title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://mutapatimes.com?utm_source=mutapatimes&utm_medium=share&utm_campaign=reader_share';
     var shareData = {
       title: title + ' | The Mutapa Times',
       text: shareText,
@@ -1000,7 +1000,7 @@ function createWhatsAppBtn(title, url) {
     e.preventDefault();
     e.stopPropagation();
     var trackedUrl = addUtm(url, 'whatsapp');
-    var text = encodeURIComponent(title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://www.mutapatimes.com?utm_source=mutapatimes&utm_medium=whatsapp&utm_campaign=reader_share');
+    var text = encodeURIComponent(title + '\n\n' + trackedUrl + '\n\nvia The Mutapa Times \u2014 Zimbabwe news from 100+ sources \ud83c\uddff\ud83c\uddfc\nhttps://mutapatimes.com?utm_source=mutapatimes&utm_medium=whatsapp&utm_campaign=reader_share');
     window.open('https://wa.me/?text=' + text, '_blank');
   });
   return btn;
@@ -1309,7 +1309,7 @@ function createImageShareBtn(articleData) {
     btn.text('\u2026');
 
     generateShareImage(articleData).then(function(blob) {
-      var shareText = articleData.title + '\n\n\ud83d\udd17 ' + (articleData.url || 'https://www.mutapatimes.com') + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://www.mutapatimes.com';
+      var shareText = articleData.title + '\n\n\ud83d\udd17 ' + (articleData.url || 'https://mutapatimes.com') + '\n\n\ud83c\uddff\ud83c\uddfc Stay informed on Zimbabwe \u2014 follow @MutapaTimes for daily news, analysis & more.\n\ud83d\udcf0 https://mutapatimes.com';
 
       // Try Web Share API with files
       if (navigator.canShare) {

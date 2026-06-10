@@ -3,7 +3,7 @@
 
 Mirrors scripts/build_feed_cards.py - each card is keyed by an MD5 hash
 of the job URL so re-runs are cheap and stable. The Metricool jobs
-autolist (https://www.mutapatimes.com/jobs-feed.xml) attaches these as
+autolist (https://mutapatimes.com/jobs-feed.xml) attaches these as
 the post image so every social preview is on-brand.
 
 Output:
@@ -32,7 +32,7 @@ except ImportError:
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 JOBS_FILE = os.path.join(ROOT, "data", "jobs.json")
 OUT_DIR = os.path.join(ROOT, "img", "cards", "jobs")
-PUBLIC_BASE = "https://www.mutapatimes.com/img/cards/jobs"
+PUBLIC_BASE = "https://mutapatimes.com/img/cards/jobs"
 
 
 def card_hash(url):
@@ -129,7 +129,7 @@ INTERNSHIPS = [
         "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
-        "url": "https://www.mutapatimes.com/jobs.html#social-intern",
+        "url": "https://mutapatimes.com/jobs.html#social-intern",
     },
     {
         "slug": "editor-intern",
@@ -138,7 +138,7 @@ INTERNSHIPS = [
         "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
-        "url": "https://www.mutapatimes.com/jobs.html#editor-intern",
+        "url": "https://mutapatimes.com/jobs.html#editor-intern",
     },
     {
         "slug": "data-intern",
@@ -147,7 +147,7 @@ INTERNSHIPS = [
         "location": "Remote - Worldwide",
         "type": "Internship · 3 months · 3 days/week",
         "source": "mutapatimes.com",
-        "url": "https://www.mutapatimes.com/jobs.html#data-intern",
+        "url": "https://mutapatimes.com/jobs.html#data-intern",
     },
 ]
 
