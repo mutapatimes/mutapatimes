@@ -40,12 +40,27 @@ def all_article_md_paths():
 
 
 # ─── Markdown → HTML (mirrors js/articles.js markdownToHtml) ──────────────
+def _heading_sub(tag):
+    """Render a markdown heading with a slugified id, so sections are
+    deep-linkable (e.g. article.html#the-gap-it-genuinely-fills)."""
+    def _r(m):
+        raw = m.group(1)
+        s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", raw)  # md link -> its text
+        s = re.sub(r"<[^>]+>", "", s)                     # strip any html
+        s = re.sub(r"[*_`]", "", s)                       # strip md emphasis
+        s = s.lower()
+        s = re.sub(r"[^a-z0-9\s-]", "", s)
+        s = re.sub(r"\s+", "-", s).strip("-")
+        return f'<{tag} id="{s}">{raw}</{tag}>'
+    return _r
+
+
 def markdown_to_html(md):
     h = md
-    # Headings
+    # Headings (h2/h3 get slugified ids for deep linking)
     h = re.sub(r"^#### (.+)$", r"<h4>\1</h4>", h, flags=re.MULTILINE)
-    h = re.sub(r"^### (.+)$", r"<h3>\1</h3>", h, flags=re.MULTILINE)
-    h = re.sub(r"^## (.+)$", r"<h2>\1</h2>", h, flags=re.MULTILINE)
+    h = re.sub(r"^### (.+)$", _heading_sub("h3"), h, flags=re.MULTILINE)
+    h = re.sub(r"^## (.+)$", _heading_sub("h2"), h, flags=re.MULTILINE)
     h = re.sub(r"^# (.+)$", r"<h1>\1</h1>", h, flags=re.MULTILINE)
     # Bold + italic combos
     h = re.sub(r"\*\*\*(.+?)\*\*\*", r"<strong><em>\1</em></strong>", h)
@@ -67,7 +82,7 @@ def markdown_to_html(md):
     h = "<p>\n" + h + "\n</p>"
     # Clean up empty/nested block elements
     h = re.sub(r"<p>\s*</p>", "", h)
-    h = re.sub(r"<p>\s*(<h[1-4]>)", r"\1", h)
+    h = re.sub(r"<p>\s*(<h[1-4][^>]*>)", r"\1", h)
     h = re.sub(r"(</h[1-4]>)\s*</p>", r"\1", h)
     h = re.sub(r"<p>\s*(<ul>)", r"\1", h)
     h = re.sub(r"(</ul>)\s*</p>", r"\1", h)
