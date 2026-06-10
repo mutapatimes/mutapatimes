@@ -3,7 +3,7 @@ title: "ZEEX: Zimbabwe's First SME Exchange, and the Problem It Doesn't Solve"
 date: 2026-06-09T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
-image: /img/articles/zeex/hero.jpg
+image: 
 summary: The Zimbabwe Stock Exchange has won approval to launch ZEEX, a
   purpose-built market for small and medium enterprises. It fills a real gap in
   the country's capital markets. It does nothing about the one that is draining

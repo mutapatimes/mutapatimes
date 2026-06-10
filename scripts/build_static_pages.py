@@ -767,6 +767,22 @@ def build_articles():
             image if image else f"{BASE_URL}/img/brand/og-share.png"
         )
 
+        # Longform articles with no photograph get a generated gradient hero,
+        # so the NYT-style header always has stunning artwork for the headline
+        # to sit on. Deterministic by slug (stable across rebuilds, no churn)
+        # and rendered once, then reused.
+        if longform and not image:
+            _auto_rel = f"img/articles/auto/{slug}.jpg"
+            _auto_abs = os.path.join(ROOT_DIR, _auto_rel)
+            if not os.path.exists(_auto_abs):
+                try:
+                    from gradient_hero import make_gradient_hero
+                    make_gradient_hero(slug, _auto_abs)
+                except Exception as _e:  # never let art-gen break a build
+                    print(f"  gradient hero failed for {slug}: {_e}")
+            if os.path.exists(_auto_abs):
+                image = f"/{_auto_rel}"
+
         date_display = format_date(date_str)
         body_html = markdown_to_html(body)
         # Inline cross-site autolinks (cities, currencies, airports etc.)
