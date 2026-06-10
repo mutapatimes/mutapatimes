@@ -755,7 +755,10 @@ def build_articles():
         if (meta.get("draft", "").lower() == "true"):
             continue
         title = meta.get("title", "Untitled")
-        page_title = f"{title} | The Mutapa Times"
+        # A short, keyword-front-loaded seo_title overrides the <title> tag
+        # (Google truncates ~60 chars); the on-page editorial headline is
+        # unaffected. meta_description likewise overrides the search snippet.
+        page_title = meta.get("seo_title", "").strip() or f"{title} | The Mutapa Times"
         date_str = meta.get("date", "")
         author = meta.get("author", "")
         category = meta.get("category", "")
@@ -857,7 +860,8 @@ def build_articles():
             body_class_parts.append("series-page")
             body_class_parts.append(f"series-{esc(series_key)}")
         body_class = " ".join(body_class_parts)
-        html_parts.append(page_head(page_title, summary, canonical, "article", og_image, depth=1))
+        meta_desc = meta.get("meta_description", "").strip() or summary
+        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=1))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}

@@ -4,6 +4,8 @@ date: 2026-06-10T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: 
+seo_title: "ZEEX Tech Stack: Can the ZSE Deliver? Its Track Record"
+meta_description: "Whether ZEEX works depends on its technology. Inside the ZSE's decade of modernisation, the SWIFT integration, and the stack question still unanswered."
 summary: Whether Zimbabwe's new SME exchange works will come down to the
   technology it runs on. The encouraging part is a decade-long modernisation
   record and a brand-new trading system finished only months ago. The open

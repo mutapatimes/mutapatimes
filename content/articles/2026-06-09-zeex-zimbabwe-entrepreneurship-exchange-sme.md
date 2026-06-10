@@ -4,6 +4,8 @@ date: 2026-06-09T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: 
+seo_title: "ZEEX: Zimbabwe's New SME Exchange and Its First Backer"
+meta_description: "ZEEX, Zimbabwe's new SME stock exchange, has signed INVESCI as its first institutional backer. What it is, what it fixes, and what still has to go right."
 og_image: https://mutapatimes.com/img/cards/og/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme.png
 summary: Days after winning approval, the Zimbabwe Stock Exchange has signed
   INVESCI, the country's top-rated asset manager, as the first institutional
