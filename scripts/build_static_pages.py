@@ -778,8 +778,12 @@ def build_articles():
         # Brand headline card as og:image so Metricool / X / Facebook show
         # the on-brand card instead of the scraped article hero. The
         # in-body hero photo (if any) still uses `image` further down.
-        og_image = _feed_card_url(canonical) if _feed_card_url else (
-            image if image else f"{BASE_URL}/img/brand/og-share.png"
+        # An explicit og_image in frontmatter wins (use a landscape 1200x630
+        # card on the non-redirecting host so Twitter/X renders the preview).
+        og_image = meta.get("og_image", "").strip() or (
+            _feed_card_url(canonical) if _feed_card_url else (
+                image if image else f"{BASE_URL}/img/brand/og-share.png"
+            )
         )
 
         # Longform articles with no photograph get a generated gradient hero,

@@ -4,6 +4,7 @@ date: 2026-06-09T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: 
+og_image: https://mutapatimes.com/img/cards/og/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme.png
 summary: Days after winning approval, the Zimbabwe Stock Exchange has signed
   INVESCI, the country's top-rated asset manager, as the first institutional
   partner for ZEEX, its new market for small businesses. It is the most
