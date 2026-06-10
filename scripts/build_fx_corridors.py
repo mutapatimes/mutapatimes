@@ -244,11 +244,21 @@ def render_rate_page(src, dst):
     page_dir = OUT / pair_slug
     page_dir.mkdir(exist_ok=True)
 
-    title = f"{src} to {dst} exchange rate today &mdash; {fmt(r)} {dst} per 1 {src}"
-    h1 = f"{src} to {dst} exchange rate today"
-    desc = (f"Today's {src_meta['name']} to {dst_meta['name']} ({dst}) exchange rate: "
-            f"1 {src} = {fmt(r)} {dst}. Live mid-market rate, conversion ladder, "
-            f"and best money-transfer providers for the {src_meta['country']}-to-{dst_meta['country']} corridor.")
+    if dst == "ZWG":
+        # ZiG in the title captures the common local search term, and the
+        # "1 {src} =" phrasing matches queries like "1 gbp to zwg".
+        title = f"{src} to ZWG (ZiG) rate today: 1 {src} = {fmt(r, 2)} ZWG"
+        h1 = f"{src} to ZWG (ZiG) exchange rate today"
+        desc = (f"Today's {src_meta['name']} to Zimbabwe Gold (ZWG, also written ZiG) "
+                f"rate: 1 {src} = {fmt(r)} ZWG. Live mid-market rate, a conversion "
+                f"ladder, and the cheapest money-transfer providers for the "
+                f"{src_meta['country']}-to-Zimbabwe corridor.")
+    else:
+        title = f"{src} to {dst} rate today: 1 {src} = {fmt(r, 2)} {dst}"
+        h1 = f"{src} to {dst} exchange rate today"
+        desc = (f"Today's {src_meta['name']} to {dst_meta['name']} ({dst}) exchange rate: "
+                f"1 {src} = {fmt(r)} {dst}. Live mid-market rate, conversion ladder, "
+                f"and best money-transfer providers for the {src_meta['country']}-to-{dst_meta['country']} corridor.")
 
     ladder_cells = ""
     for amt in LADDER:
@@ -270,7 +280,7 @@ def render_rate_page(src, dst):
             rows += f'''        <tr>
           <td>
             <div class="fxc-prov-name">{html.escape(p["name"])}</div>
-            <div class="fxc-prov-notes">{html.escape(p.get("payout","—"))} &middot; {html.escape(p.get("speed","—"))}</div>
+            <div class="fxc-prov-notes">{html.escape(p.get("payout","n/a"))} &middot; {html.escape(p.get("speed","n/a"))}</div>
           </td>
           <td class="fxc-prov-margin {best_cls}">{p["fx_margin_pct"]:.1f}%</td>
           <td class="fxc-prov-margin">{src} {p["fee"]:.2f}</td>
@@ -293,7 +303,7 @@ def render_rate_page(src, dst):
     faqs = []
     faqs.append((
         f"What is the {src} to {dst} exchange rate today?",
-        f"1 {src} = {fmt(r)} {dst} at the mid-market rate as of {as_of}. Rates change every minute on the interbank market — the rate you actually receive will depend on the provider's spread and fees. See the provider comparison above."
+        f"1 {src} = {fmt(r)} {dst} at the mid-market rate as of {as_of}. Rates change every minute on the interbank market, and the rate you actually receive will depend on the provider's spread and fees. See the provider comparison above."
     ))
     if dst == "ZWG":
         faqs.append((
@@ -410,7 +420,7 @@ def render_rate_page(src, dst):
     <p>The {src} to {dst} rate on this page is the mid-market (interbank) cross
       rate, computed from <a href="https://open.er-api.com" rel="noopener" target="_blank">open.er-api.com</a>'s
       daily USD baseline. It is the rate banks use when they trade with each
-      other &mdash; not the rate you receive at a money-transfer provider, which
+      other, not the rate you receive at a money-transfer provider, which
       will be slightly lower after their spread and fees.</p>
     <p>For real-time conversion across {len(rates)-1} currencies, use the
       <a href="/fx/">Mutapa Times FX converter</a>. For the send-money
@@ -427,12 +437,12 @@ def render_rate_page(src, dst):
   <section class="fxc-sources" aria-label="Sources">
     <h2>Sources</h2>
     <ul>
-      <li><a href="https://open.er-api.com/v6/latest/USD" rel="noopener" target="_blank">open.er-api.com</a> &mdash; interbank composite rate (daily update)</li>
+      <li><a href="https://open.er-api.com/v6/latest/USD" rel="noopener" target="_blank">open.er-api.com</a>, the interbank composite rate (daily update)</li>
       <li>Provider spreads &amp; fees: hand-curated by The Mutapa Times, last reviewed {remit.get("_last_reviewed", TODAY)}</li>
     </ul>
     <p class="fxc-sources-note">Rates are indicative, not real-time. Verify the rate
       and fees on the provider's own site at send-time before transferring funds.
-      This page is editorial &mdash; The Mutapa Times may earn referral revenue
+      This page is editorial. The Mutapa Times may earn referral revenue
       from links to money-transfer providers, which does not affect our ranking.</p>
   </section>
 </main>
@@ -455,9 +465,9 @@ def render_send_money_page(src):
     r_zwg = rate(src, "ZWG")
     cheap = provs[0]
 
-    title = f"Send money from {src_meta['country']} to Zimbabwe &mdash; cheapest providers, {src} to ZWG rate today"
+    title = f"Send money from {src_meta['country']} to Zimbabwe: cheapest {src} to ZWG (ZiG) rates today"
     h1 = f"Send money from {src_meta['country']} to Zimbabwe"
-    desc = (f"How to send {src} from {src_meta['country']} to Zimbabwe — current "
+    desc = (f"How to send {src} from {src_meta['country']} to Zimbabwe: the current "
             f"rate ({fmt(r_zwg)} ZWG per 1 {src}), the cheapest provider "
             f"({cheap['name']}: {cheap['fx_margin_pct']:.1f}% spread, {src} {cheap['fee']:.2f} fee), "
             "and a side-by-side comparison of all major remittance providers.")
@@ -473,8 +483,8 @@ def render_send_money_page(src):
           </td>
           <td class="fxc-prov-margin {best_cls}">{p["fx_margin_pct"]:.1f}%</td>
           <td class="fxc-prov-margin">{src} {p["fee"]:.2f}</td>
-          <td>{html.escape(p.get("payout","—"))}</td>
-          <td>{html.escape(p.get("speed","—"))}</td>
+          <td>{html.escape(p.get("payout","n/a"))}</td>
+          <td>{html.escape(p.get("speed","n/a"))}</td>
           <td class="fxc-prov-margin">{fmt(eff)}</td>
           <td><a class="fxc-prov-cta" href="{html.escape(p["url"])}" rel="noopener nofollow sponsored" target="_blank">Send →</a></td>
         </tr>
@@ -482,7 +492,7 @@ def render_send_money_page(src):
 
     faqs = [
         (f"What is the cheapest way to send money from {src_meta['country']} to Zimbabwe?",
-         f"Based on combined FX spread and flat fees, {cheap['name']} is typically the cheapest for typical retail amounts: a {cheap['fx_margin_pct']:.1f}% spread and a {src} {cheap['fee']:.2f} fee, paying out via {cheap.get('payout','—')}. For very small or very large amounts, run the calculator on the provider's own site as fee structures change at thresholds."),
+         f"Based on combined FX spread and flat fees, {cheap['name']} is typically the cheapest for typical retail amounts: a {cheap['fx_margin_pct']:.1f}% spread and a {src} {cheap['fee']:.2f} fee, paying out via {cheap.get('payout','n/a')}. For very small or very large amounts, run the calculator on the provider's own site as fee structures change at thresholds."),
         ("How long does it take to send money from " + src_meta['country'] + " to Zimbabwe?",
          "It depends on the provider and the payout method. Mobile money payouts (EcoCash, OneMoney) usually arrive in minutes. Cash pickup at branches (Mukuru, ZB Bank, OK Mart) is also minutes. USD bank deposits can take a few hours to one business day. Bank-to-bank transfers without using a remittance specialist can take 2–5 days and cost considerably more."),
         ("Is it legal to send money to Zimbabwe?",
@@ -490,7 +500,7 @@ def render_send_money_page(src):
         ("Can I send to EcoCash or OneMoney from " + src_meta['country'] + "?",
          "Yes. WorldRemit, Mukuru and Sasai support EcoCash and OneMoney mobile-money payouts. Wise and Remitly typically only deposit to USD bank accounts. Check each provider's payout list for the current options."),
         ("What's the difference between USD and ZWG payout?",
-         "Most providers offer USD bank deposit as the default — this avoids any currency conversion at the Zimbabwean end. ZWG (Zim Gold) payouts convert at the provider's chosen rate, which may not match the official rate. For most diaspora purposes, USD payout is simpler."),
+         "Most providers offer USD bank deposit as the default, which avoids any currency conversion at the Zimbabwean end. ZWG (Zim Gold) payouts convert at the provider's chosen rate, which may not match the official rate. For most diaspora purposes, USD payout is simpler."),
     ]
     faq_html = ""
     faq_ld = []
@@ -575,7 +585,7 @@ def render_send_money_page(src):
   </div>
 
   <section class="fxc-providers">
-    <h2>Provider comparison &mdash; {len(provs)} options for {src} → ZWG</h2>
+    <h2>Provider comparison: {len(provs)} options for {src} → ZWG</h2>
     <div class="fxc-prov-table-wrap">
       <table class="fxc-prov-table">
         <thead><tr><th>Provider</th><th>Spread</th><th>Fee</th><th>Payout</th><th>Speed</th><th>Effective rate</th><th>&nbsp;</th></tr></thead>
@@ -601,7 +611,7 @@ def render_send_money_page(src):
 
     <h2>What currency should I send in?</h2>
     <p>The default and simplest is to send {src} and have the recipient receive
-      <strong>USD</strong> in Zimbabwe — either to a USD bank account or as cash pickup.
+      <strong>USD</strong> in Zimbabwe, either to a USD bank account or as cash pickup.
       USD circulates freely alongside ZWG and most prices are still quoted in USD.</p>
     <p>If your recipient specifically wants <strong>ZWG (Zim Gold)</strong>, choose a
       provider that pays out to an EcoCash or OneMoney ZWG wallet. Note that the
@@ -621,7 +631,7 @@ def render_send_money_page(src):
   <section class="fxc-sources" aria-label="Sources">
     <h2>Sources</h2>
     <ul>
-      <li><a href="https://open.er-api.com/v6/latest/USD" rel="noopener" target="_blank">open.er-api.com</a> &mdash; interbank composite rate</li>
+      <li><a href="https://open.er-api.com/v6/latest/USD" rel="noopener" target="_blank">open.er-api.com</a>, the interbank composite rate</li>
       <li>Provider spreads &amp; fees: hand-curated by The Mutapa Times, last reviewed {remit.get("_last_reviewed", TODAY)}. {html.escape(remit.get("_disclaimer",""))}</li>
     </ul>
     <p class="fxc-sources-note">This page is editorial. The Mutapa Times may earn
