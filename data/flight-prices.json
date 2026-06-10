@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-09",
+  "fetched_at": "2026-06-10",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -29,11 +29,11 @@
           "currency": ""
         },
         {
-          "price": 1108,
-          "airline": "QR",
+          "price": 1018,
+          "airline": "EK",
           "departure_at": "2026-07-20",
-          "return_at": "2026-07-31",
-          "stops": 2,
+          "return_at": "2026-08-12",
+          "stops": 1,
           "duration": null,
           "currency": ""
         },
@@ -140,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -164,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 18
+      "observations": 20
     },
     "sydney-to-harare": {
       "origin": "SYD",
