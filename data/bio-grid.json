@@ -1,7 +1,39 @@
 {
-  "fetched_at": "2026-06-10T08:10:47+00:00",
+  "fetched_at": "2026-06-10T07:05:57+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "How a 42% reserve boost at one gold mine added $1 billion to Zimbabwe's mining ambitions",
+      "link": "https://mutapatimes.com/articles/2026-06-10-how-a-42-reserve-boost-at-one-gold-mine-added-1-billion-to-z",
+      "image": "https://www.mutapatimes.com/img/cards/news/6dd0abaf6f0d.png",
+      "pubDate": "2026-06-10T06:46:11+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "How a 42% reserve boost at one gold mine added $1 billion to Zimbabwe's mining ambitions",
+      "link": "https://mutapatimes.com/news/2026-06-10-how-a-42-reserve-boost-at-one-gold-mine-added-1-billion-to-zimbabwe-s-mining-8996f5",
+      "image": "https://www.mutapatimes.com/img/cards/news/51630144d5ec.png",
+      "pubDate": "2026-06-10T06:46:11+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe introduced the 'Friendship Bench.' 18 years later, the U.S. is doing it, and it could be a game changer for mental health.",
+      "link": "https://mutapatimes.com/articles/2026-06-10-zimbabwe-introduced-the-friendship-bench-18-years-later-the",
+      "image": "https://www.mutapatimes.com/img/cards/news/a8bcb3f31791.png",
+      "pubDate": "2026-06-10T00:17:43+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe introduced the 'Friendship Bench.' 18 years later, the U.S. is doing it, and it could be a game changer for mental health.",
+      "link": "https://mutapatimes.com/news/2026-06-10-zimbabwe-introduced-the-friendship-bench-18-years-later-the-u-s-is-doing-it-and-28949f",
+      "image": "https://www.mutapatimes.com/img/cards/news/40238ea518dd.png",
+      "pubDate": "2026-06-10T00:17:43+00:00",
+      "category": "Entertainment"
+    },
     {
       "kind": "economy",
       "title": "Zim services trade 2025 Q4: $449M deficit. Sold $134M, bought $584M.",
@@ -12,7 +44,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 10 Jun 2026: 1 USD = 26.80 ZWG · best from UK £100 → $130.29 via Wise",
+      "title": "Zim FX snapshot 10 Jun 2026: 1 USD = 26.77 ZWG · best from UK £100 → $130.67 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-06-10",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-10",
       "pubDate": "2026-06-09T22:00:00+00:00",
@@ -57,6 +89,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-09T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Black Shark Protection Services — OPERATIONS CONTROLLER",
+      "link": "https://vacancymail.co.zw/jobs/operations-controller-67785/",
+      "image": "https://mutapatimes.com/img/cards/jobs/44c779478ccb.png",
+      "pubDate": "2026-06-09T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Ultra-Med Health Care — Sales Agents",
       "link": "https://vacancymail.co.zw/jobs/sales-agents-67733/",
       "image": "https://mutapatimes.com/img/cards/jobs/6921493e52d9.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Traverze Travel — Female Accountant for The Lounge",
-      "link": "https://vacancymail.co.zw/jobs/female-accountant-for-the-lounge-67731/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ccd77f7a0eb4.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sabi Gold Mine — Vice Captain",
-      "link": "https://vacancymail.co.zw/jobs/vice-captain-67730/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cd89797a8baf.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sabi Gold Mine — Metallurgist",
-      "link": "https://vacancymail.co.zw/jobs/metallurgist-67729/",
-      "image": "https://mutapatimes.com/img/cards/jobs/274037b4ae22.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sabi Gold Mine — Chief Surveyor",
-      "link": "https://vacancymail.co.zw/jobs/chief-surveyor-67728/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2b99882b2f87.png",
-      "pubDate": "2026-06-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sabi Gold Mine — Graduate Trainee Programme",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-67727/",
-      "image": "https://mutapatimes.com/img/cards/jobs/13f082e12832.png",
       "pubDate": "2026-06-09T22:00:00+00:00",
       "category": "Jobs"
     }
