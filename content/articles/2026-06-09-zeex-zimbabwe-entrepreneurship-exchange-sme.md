@@ -1,13 +1,14 @@
 ---
-title: "ZEEX: Zimbabwe's First SME Exchange, and the Problem It Doesn't Solve"
+title: "ZEEX: Zimbabwe's First SME Exchange Is the Right Step. Now It Must Deliver"
 date: 2026-06-09T08:00:00.000Z
 author: Tendai Kuwanda
 category: Business
 image: 
 summary: The Zimbabwe Stock Exchange has won approval to launch ZEEX, a
-  purpose-built market for small and medium enterprises. It fills a real gap in
-  the country's capital markets. It does nothing about the one that is draining
-  the main board.
+  purpose-built market for small and medium enterprises. It is a genuinely good
+  move, the most serious attempt yet to open formal capital to the businesses
+  that actually employ Zimbabwe. The work that remains is in the operational
+  detail still to be announced.
 featured: true
 headline_position: 1
 source_type: original
@@ -21,7 +22,7 @@ read_minutes: 7
 ---
 The Zimbabwe Stock Exchange has received regulatory approval to launch a dedicated market for small and medium enterprises. In a statement issued on 5 June 2026, the ZSE said the Securities and Exchange Commission of Zimbabwe had cleared it to operationalise the platform under the brand name Zimbabwe Entrepreneurship Exchange, or ZEEX. The bourse said it is in the final stages of building the compliance frameworks and that a formal launch date will follow shortly.
 
-It is the first structural addition to Zimbabwe's domestic market architecture since the Victoria Falls Stock Exchange opened in 2020, and on its own terms it is a sound idea. The harder question, the one the announcement does not raise, is whether a new market for the smallest companies answers the problem that is currently pulling the largest ones off the main board.
+It is the first structural addition to Zimbabwe's domestic market architecture since the Victoria Falls Stock Exchange opened in 2020, and it deserves applause. For all the questions still to be answered, this is a real step in the right direction. The ZSE has looked at the part of the economy the formal market has always ignored, the small and growing businesses that do most of the country's hiring, and decided to build something for them. That instinct is correct, and it is overdue. The honest job of this piece is to celebrate the move while being clear-eyed about what still has to go right.
 
 ## What ZEEX actually is
 
@@ -35,13 +36,15 @@ The case for ZEEX is real and well documented. Estimates put Zimbabwe's informal
 
 There is a development angle that sharpens the point. The African Development Bank's Africa Industrialisation Index 2025 found that manufacturing employment in Zimbabwe fell from 5.2 percent to 4.7 percent of total employment between 2010 and 2024, even as manufacturing value added grew 13.6 percent a year. That gap is the signature of an industrial base built on capital-intensive commodity processing that does not create many jobs. The activity that does, diversified manufacturing, agro-processing, logistics, technology, is precisely what sits in the SME sector. A market that channels capital there would address the AfDB critique at its root. That is the prize.
 
-## The problem it doesn't solve
+Credit is due for the ambition. Building a market for the emerging and informal economy is harder, less glamorous and less immediately lucrative than courting another blue-chip listing, and the ZSE has chosen to do it anyway. As a statement of where the exchange believes its future lies, with the entrepreneurs rather than only the incumbents, ZEEX is the most forward-looking thing the bourse has done in years, and the right people should be commended for getting it this far.
 
-Now read the timing. ZEEX is being launched in the same quarter that First Mutual Properties shareholders voted unanimously to delist from the main board, that TSL Limited committed to migrating to the VFEX, and that Nampak Zimbabwe's South African parent kept disclosing its Zimbabwe stake as an asset held for sale. Econet Wireless, Proplastics and First Mutual Holdings have all raised undervaluation concerns. The main board is losing its most commercially significant, US-dollar-earning companies, and it is now a trend rather than a run of coincidences.
+## What ZEEX cannot fix on its own
+
+None of that applause means the job is finished, and it is worth being honest about one thing ZEEX is not designed to touch. Read the timing. ZEEX is being launched in the same quarter that First Mutual Properties shareholders voted unanimously to delist from the main board, that TSL Limited committed to migrating to the VFEX, and that Nampak Zimbabwe's South African parent kept disclosing its Zimbabwe stake as an asset held for sale. Econet Wireless, Proplastics and First Mutual Holdings have all raised undervaluation concerns. The main board is losing its most commercially significant, US-dollar-earning companies, and it is now a trend rather than a run of coincidences.
 
 The cause of that exodus is not a missing SME segment. It is the Zimbabwe-dollar pricing mechanism applied to a board whose biggest names earn in US dollars and hold US-dollar assets, compounded by a cost and tax gap with the VFEX. As Equity Axis has noted in its analysis of the move, main board trading costs of around 4.15 percent sit well above the VFEX's 2.32 percent, and the capital gains treatment differs too. ZEEX changes none of this. It does not touch the main board's currency regime, its trading costs, or its tax differential. And any SME that succeeds on ZEEX and grows into a serious US-dollar earner will, in time, run straight into the same wall that TSL and First Mutual Properties are now climbing over.
 
-So ZEEX should be judged for what it is: a fix for the bottom of the market, not the leak at the top.
+So ZEEX should be judged for what it is, and what it is is valuable: a fix for the bottom of the market. That it does not also plug the leak at the top is not a failing of ZEEX. It is a separate problem, for a separate reform, and it takes nothing away from what this one gets right. Fixing the bottom of the market is worth doing on its own terms.
 
 ## The currency in the room
 
@@ -68,7 +71,7 @@ A third voice put the blame squarely on monetary policy, and on the trust it has
   <p class="az-tweet-text">The root problem is a Monetary Policy that consistently eroded savings, whilst rewarding borrowers & speculators with all sorts of poorly thought out incentives that eventually eroded trust & drove the general public away from using banks.</p>
 </div>
 
-The critics are pointing at something ZEEX, by itself, cannot reach. An SME exchange is downstream of the currency and trust question, not upstream of it. If savers do not believe the Zimbabwe dollar will hold its value over the life of an investment, no amount of streamlined listing rules will conjure the patient local capital that a young company needs. That does not make ZEEX pointless. It makes it incomplete, a market-plumbing reform waiting on a monetary settlement it cannot deliver on its own.
+The critics are pointing at something ZEEX, by itself, cannot reach. An SME exchange is downstream of the currency and trust question, not upstream of it. If savers do not believe the Zimbabwe dollar will hold its value over the life of an investment, no amount of streamlined listing rules will on its own conjure the patient local capital that a young company needs. That does not make ZEEX pointless, and it is not a reason to wait. Building the plumbing now is the smart move, not a wasted one. Zimbabwe has had stretches of currency stability before, and the day confidence returns, the market that channels it to small businesses will already be standing and ready. Far better to have it built and waiting than to start from nothing once the moment arrives.
 
 ## A cautionary tale from Nairobi
 
@@ -86,7 +89,7 @@ That market was the NZAX. In the years after the 2008 financial crisis it did no
 
 Read the right way, that is encouraging, not discouraging. The failure mode that kills SME exchanges, too few issuers and no liquidity, is not a theory to Bgoni. He has seen it happen, from the inside, with the full reporting in front of him. The issues this analysis has raised, the ZWG liquidity squeeze, the investor base, the technology, are precisely the ones a CFO who lived through the NZAX would expect, and know to design around.
 
-That experience is necessary, but it is not sufficient, and the NZAX proves the point in both directions. A capable, well-resourced exchange with an experienced finance chief still could not keep that market alive, because the fundamentals around it had moved against it. Knowing where the traps are is not the same as having the tools to avoid them, and a chief executive's track record is not a substitute for the operating detail that ZEEX has not yet published. We are not in the business of grading press releases. Whether the right problem has met the right design will be judged on what the ZSE actually ships, not on a biography, however strong.
+None of this is a guarantee, and the NZAX is a reminder of that too: even a capable exchange with an experienced finance chief could not save that market once the fundamentals around it turned. Experience tells you where the traps are; it does not on its own hand you the tools to avoid them, and the proof will be in the operating detail ZEEX has yet to publish. But on the narrow and important question of whether the right person is holding the brief, the answer is reassuringly clear. Zimbabwe could do a great deal worse than to hand this task to someone who has already studied, at first hand, how it can go wrong.
 
 <section class="article-dark-section article-dark-section--has-portrait">
   <div class="article-dark-section-inner">
@@ -113,7 +116,7 @@ The benchmark is digital-native. If ZEEX ships with mobile-money integration thr
 
 ## What to watch at launch
 
-It is worth being clear about what has and has not happened. What the ZSE has secured is regulatory approval, not a functioning market. There is no published launch date, no listing fee schedule, no disclosure rulebook, no investor-eligibility framework and no named inaugural issuer. The press release sets out the intent. It does not set out the operational detail that will decide the result, and until that detail exists, this remains an announcement rather than an exchange. Five specifics matter most:
+The applause comes with a fair caveat, and it is one the ZSE itself would not dispute. What has been secured is regulatory approval, the green light to build, rather than a market already running. There is not yet a published launch date, listing fee schedule, disclosure rulebook, investor-eligibility framework or named inaugural issuer. That is normal for this stage, and the detail that will turn the approval into a working market is still to come. When it lands, five specifics will matter most:
 
 - The listing cost structure, and how it compares with regional SME exchanges.
 - The minimum disclosure requirements, and whether they fit SME administrative capacity.
@@ -123,6 +126,8 @@ It is worth being clear about what has and has not happened. What the ZSE has se
 
 Zimbabwe is not inventing the form. South Africa runs AltX alongside the JSE, London has AIM under the LSE, and the United States has the Nasdaq Capital Market, all designed to give smaller companies a lighter public route. The model works where the investor base and the technology meet it. When the ZSE publishes those five components at launch, it will be possible to judge ZEEX on design rather than intent.
 
-For now, the fair verdict is this. The ZSE has named the right problem in SME capital access, sketched a sensible response in a two-segment exchange, and secured the approval to build it. It has not addressed the structural flaw that is steadily emptying its main board, the currency and liquidity questions over any new Zimbabwe-dollar market are real, and the operational detail that will decide whether ZEEX works has not been published. Those are not reasons to dismiss it, and the presence of a chief executive who has watched an SME market fail from the inside is a genuine point in its favour. But none of it earns ZEEX the benefit of the doubt in advance. Approval is the easy part of this story. The exchange will be judged here on what it discloses and delivers, on fees, rules, access, liquidity and listings, and not before. This is a promising start that has yet to prove itself, and we will report it as exactly that.
+For now, the verdict is a hopeful one, and deservedly so. The ZSE has identified the right problem, designed a sensible two-segment response, secured the approval to build it, and put it in the hands of a chief executive who has seen this kind of market up close before. Taken together, that is the most encouraging move in Zimbabwe's capital markets since the VFEX, and it is the kind of forward-looking, inclusion-minded reform the country needs more of. It should be applauded.
+
+The caveats are worth stating plainly, because honest support is more useful than cheerleading. ZEEX does not fix the main board's exodus, the currency and liquidity questions are real, and the operational detail that will decide everything is still to be published. But these are the ordinary challenges of building something new, not reasons to doubt the direction of travel. This is a step in the right direction, taken by the right people, for the right reason. We are optimistic it can work, we will give credit where it is plainly due, and we will be watching the detail closely so that it does.
 
 <p><strong>Sources:</strong> Zimbabwe Stock Exchange press release, "ZSE receives regulatory approval to launch the Zimbabwe Entrepreneurship Exchange (ZEEX)," 5 June 2026, and the quoted remarks of Group CEO Justin Bgoni therein (<a href="https://www.zse.co.zw" target="_blank" rel="noopener">zse.co.zw</a>); structural analysis of the main board's USD-company departures and the ZSE/VFEX cost comparison drawing on reporting by Equity Axis; African Development Bank, Africa Industrialisation Index 2025; the ZSE's published biography of Justin Bgoni (former CFO, New Zealand Stock Exchange); NZX operating reports on the NZAX growth market (2009 to 2010); Bgoni portrait courtesy of the African Securities Exchanges Association; Nairobi Securities Exchange GEMS launch record (2013); coverage in NewsDay Zimbabwe; and public reaction on X, quoted as published (@bla_bidza, @siyapakanaka, @Changunda1, 9 June 2026).</p>
