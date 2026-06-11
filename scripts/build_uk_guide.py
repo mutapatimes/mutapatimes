@@ -627,7 +627,7 @@ def render_head(title, description, canonical_path):
     <link rel="manifest" href="../site.webmanifest">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Mutapa Times">
-    <link rel="apple-touch-icon" href="../icon.png">
+    <link rel="apple-touch-icon" href="../icon.png?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -646,8 +646,8 @@ def render_head(title, description, canonical_path):
     <meta name="twitter:site" content="@mutapatimes">
     <meta name="twitter:title" content="{esc(title)} | The Mutapa Times">
     <meta name="twitter:description" content="{esc(description)}">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png?v=2">
     <meta name="theme-color" content="#1a1a1a">
     <link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="{BASE_URL}/feed.xml">
     <link rel="alternate" hreflang="en" href="{esc(canonical_url)}">
