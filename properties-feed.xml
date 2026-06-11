@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jun 2026 15:48:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 16:20:35 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -223,6 +223,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/d65add42da49.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>USD 251,000 — Exclusive 4-Bedroom Duplex Living – Spacious, Modern &amp; On Promotion (Monavale, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/7b3b66c31fec.html</link>
+      <description>USD 251,000 — Monavale, Harare West. 3 beds. Exclusive 4-Bedroom Duplex Living – Spacious, Modern &amp; On Promotion. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 10 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/7b3b66c31fec.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/7b3b66c31fec.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7b3b66c31fec.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/7b3b66c31fec.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>USD 300,000 — Ryedale Ridge incomplete double storey house for sale (Rydale Ridge Park, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/eda4a0c8435c.html</link>
       <description>USD 300,000 — Rydale Ridge Park, Harare West. 7 beds, 5 baths. Ryedale Ridge incomplete double storey house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/3f29a8d147ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3f29a8d147ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/3f29a8d147ac.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 340,000 — 4 Acres Of Space. (Burnside, Bulawayo East)</title>
-      <link>https://mutapatimes.com/property-landing/d8e1058df358.html</link>
-      <description>USD 340,000 — Burnside, Bulawayo East. 4 beds, 2 baths. 4 Acres Of Space.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 10 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d8e1058df358.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/d8e1058df358.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d8e1058df358.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/d8e1058df358.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
