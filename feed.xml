@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jun 2026 11:00:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 11:13:51 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -835,18 +835,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/news/4e82627c6883.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>Shumba Maasai in Venice</title>
-      <link>https://mutapatimes.com/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions</link>
-      <description>At the 61st Biennale, the Zimbabwean artist’s day-long procession through the city’s campi, performed under the borrowed authority of a Murehwa chief, restages the social-sculpture lineage of Joseph Beuys for a contemporary African discursive practice. #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
-      <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions</guid>
-      <category>Culture</category>
-      <dc:creator>Tendai Kuwanda</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/bc035a047c91.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>Franklyn Dzingai: family albums and the neural commons at Venice</title>
       <link>https://mutapatimes.com/articles/2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale</link>
       <description>The third in a five-part series on Zimbabwe’s pavilion at the 61st Venice Biennale. Franklyn Dzingai’s reductive cardboard prints, built from the family album, the magazine clipping, the back-room studio photographs of mid-century Zimbabwe, turn out, on close looking, to be the most precisely engineered work in the room. #Zimbabwe #ZimbabweNews</description>
@@ -857,6 +845,18 @@
       <media:content url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Shumba Maasai in Venice</title>
+      <link>https://mutapatimes.com/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions</link>
+      <description>At the 61st Biennale, the Zimbabwean artist’s day-long procession through the city’s campi, performed under the borrowed authority of a Murehwa chief, restages the social-sculpture lineage of Joseph Beuys for a contemporary African discursive practice. #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
+      <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions</guid>
+      <category>Culture</category>
+      <dc:creator>Tendai Kuwanda</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/news/bc035a047c91.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Felix Shumba: charcoal and the practice of disappearance at Venice</title>
@@ -1543,18 +1543,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/news/eaa0da87fd02.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>CZI tells private sector to leverage Zim’s trade pacts @zimsituation</title>
-      <link>https://mutapatimes.com/articles/2026-05-13-czi-tells-private-sector-to-leverage-zims-trade-pacts</link>
-      <description>Source: CZI tells private sector to leverage Zim’s trade pacts – herald Sikhulekelani Moyo Zimpapers Business Hub THE Confederation of Zimbabwe Industries has urged the private sector to utilise trade agreements that Zimbabwe has signed to strengthen export competitiveness and re #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Wed, 13 May 2026 03:50:05 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-13-czi-tells-private-sector-to-leverage-zims-trade-pacts</guid>
-      <category>Business</category>
-      <dc:creator>Zimbabwe Situation</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/a19205569364.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/a19205569364.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/a19205569364.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>GMB pays wheat farmers US$4m to clear 2025 debt @zimsituation</title>
       <link>https://mutapatimes.com/articles/2026-05-13-gmb-pays-wheat-farmers-us4m-to-clear-2025-debt</link>
       <description>Source: GMB pays wheat farmers US$4m to clear 2025 debt – herald Edgar Vhera Specialist Writer – Agribusiness The Grain Marketing Board has paid farmers more than US$4 million towards clearing US dollar debts for the 2025 wheat deliveries and pledged to make prompt payments going #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
@@ -1697,6 +1685,18 @@
       <media:content url="https://mutapatimes.com/img/cards/news/a6976dd5c533.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/a6976dd5c533.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/a6976dd5c533.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>CZI tells private sector to leverage Zim’s trade pacts</title>
+      <link>https://mutapatimes.com/articles/2026-05-12-czi-tells-private-sector-to-leverage-zims-trade-pacts</link>
+      <description>CZI tells private sector to leverage Zim’s trade pacts #Zimbabwe #Policy #ZimbabwePolicy #ZimbabweNews</description>
+      <pubDate>Tue, 12 May 2026 22:02:01 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-12-czi-tells-private-sector-to-leverage-zims-trade-pacts</guid>
+      <category>Policy</category>
+      <dc:creator>The Herald ZW</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/news/63afdf5a33b6.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/news/63afdf5a33b6.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/news/63afdf5a33b6.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>US war on Iran war disrupts Zimbabwe exports @bulawayo24</title>
