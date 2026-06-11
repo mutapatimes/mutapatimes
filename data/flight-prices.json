@@ -220,38 +220,6 @@
       "destination": "HRE",
       "currency": "ZAR",
       "currency_sym": "R",
-      "cheapest_overall": {
-        "price": 7842,
-        "airline": "FA",
-        "departure_at": "2026-07-11",
-        "return_at": "2026-07-30",
-        "stops": 1,
-        "duration": null,
-        "currency": ""
-      },
-      "cheapest_direct": null,
-      "monthly": [
-        {
-          "price": 7842,
-          "airline": "FA",
-          "departure_at": "2026-07-11",
-          "return_at": "2026-07-30",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
-        }
-      ],
-      "by_airline": [
-        {
-          "price": 7842,
-          "airline": "FA",
-          "departure_at": "2026-07-11",
-          "return_at": "2026-07-30",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
-        }
-      ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
@@ -262,7 +230,7 @@
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -278,7 +246,7 @@
           "error": null
         }
       ],
-      "observations": 1
+      "observations": 0
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -386,7 +354,7 @@
         {
           "endpoint": "calendar",
           "origin": "JNB",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -396,7 +364,7 @@
           "error": null
         }
       ],
-      "observations": 18
+      "observations": 17
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -582,13 +550,13 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
@@ -604,7 +572,7 @@
           "error": null
         }
       ],
-      "observations": 5
+      "observations": 7
     },
     "toronto-to-harare": {
       "origin": "YYZ",
