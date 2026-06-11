@@ -74,3 +74,51 @@ content," lean on the push + offline native features.
   `www/`, `resources/`, `ios/` (Xcode project), `js/native-bridge.js`.
 - Gitignored: `node_modules/`, iOS build artifacts (`ios/App/build`,
   `App/public`, `DerivedData`, xcuserdata).
+
+---
+
+# Google Play (Android, Capacitor)
+
+The Android app is the same Capacitor shell. It was added with
+`npx cap add android` and shares `capacitor.config.json`, `www/`, the M·T
+icons/splash and `js/native-bridge.js`.
+
+## One-time machine setup (the part not yet installed here)
+1. Install **Android Studio** (includes the Android SDK).
+2. Install a **JDK 17+** (Android Studio bundles one; or `brew install --cask zulu17`).
+3. `npm install` then `npx cap sync android`.
+
+## Open + run
+```bash
+npx cap open android      # opens android/ in Android Studio
+```
+- Let Gradle sync finish. Pick an emulator or a plugged-in device, press **Run ▶**.
+
+## Push notifications (FCM)
+Android push uses **Firebase Cloud Messaging**:
+1. Create a Firebase project, add an Android app with package
+   `com.mutapatimes.app`, download `google-services.json` into
+   `android/app/`.
+2. The same `js/native-bridge.js` registration flow applies; send via FCM.
+
+## Sign + publish to Google Play
+1. Create a **Google Play Developer account** (one-time **$25**).
+2. In Android Studio: **Build → Generate Signed Bundle / APK → Android App
+   Bundle (.aab)**. Create an upload keystore the first time and **keep it
+   safe** (losing it blocks future updates).
+3. Recommended: enable **Play App Signing** (Google manages the release key).
+4. In **Play Console**: create the app, complete the **Data safety** form
+   (declare ad/analytics data), content rating, privacy policy
+   `https://mutapatimes.com/privacy`, store listing + screenshots
+   (phone + 7"/10" tablet), then upload the `.aab` to **Internal testing**
+   first, then **Production**.
+
+## Updating Android
+- Content updates automatically (loads the live site).
+- Native changes: `npx cap sync android`, bump `versionCode`/`versionName`
+  in `android/app/build.gradle`, rebuild the `.aab`, upload.
+
+## What's committed vs generated (Android)
+- Committed: the `android/` project, M·T icons/splash.
+- Gitignored: `android/build`, `android/app/build`, `.gradle`,
+  `local.properties`, keystores.

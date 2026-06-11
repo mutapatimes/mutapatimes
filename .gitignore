@@ -17,3 +17,13 @@ ios/App/App/public/
 DerivedData/
 **/xcuserdata/
 *.xcuserstate
+
+# Android build artifacts (the android/ project itself IS committed)
+android/build/
+android/app/build/
+android/.gradle/
+android/captures/
+android/local.properties
+android/app/release/
+*.keystore
+*.jks
