@@ -205,3 +205,66 @@
     });
   });
 })();
+
+/* ─── iOS-style bottom tab bar (mobile web + Capacitor app) ───────────────
+ * Self-contained: injects its own styles + markup. Shows on narrow screens
+ * only (the desktop top nav stays). Loaded site-wide because nav.js is. */
+(function () {
+  if (window.matchMedia && !window.matchMedia('(max-width: 820px)')) {} // noop guard
+  if (document.querySelector('.mt-tabbar')) return;
+
+  var css =
+    '.mt-tabbar{position:fixed;left:0;right:0;bottom:0;z-index:9990;display:none;' +
+    'background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(14px);' +
+    'backdrop-filter:saturate(180%) blur(14px);border-top:1px solid #e4e2db;' +
+    'padding-bottom:env(safe-area-inset-bottom,0px);}' +
+    '.mt-tabbar>a,.mt-tabbar>button{flex:1;display:flex;flex-direction:column;align-items:center;' +
+    'justify-content:center;gap:3px;padding:7px 2px 6px;background:none;border:0;cursor:pointer;' +
+    'text-decoration:none;color:#6b6b66;font-family:Inter,system-ui,-apple-system,sans-serif;' +
+    'font-size:10px;font-weight:600;letter-spacing:.02em;-webkit-tap-highlight-color:transparent;}' +
+    '.mt-tabbar svg{width:23px;height:23px;display:block;}' +
+    '.mt-tabbar span{line-height:1;}' +
+    '.mt-tabbar .is-active{color:#c41e1e;}' +
+    '@media(max-width:820px){.mt-tabbar{display:flex;}' +
+    'body.mt-has-tabbar{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px));}' +
+    'body.mt-has-tabbar .cookie-consent{bottom:calc(52px + env(safe-area-inset-bottom,0px));}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+  var I = {
+    news:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20h14V9.8"/></svg>',
+    econ:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15v2.5M12 10v7.5M16.5 6v11.5"/></svg>',
+    fx:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5h13l-3.2-3.2"/><path d="M20 15.5H7l3.2 3.2"/></svg>',
+    articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>',
+    more:'<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="18" cy="12" r="1.5"/></svg>'
+  };
+  var TABS = [
+    { label:'News',     href:'/',         match:['/'],                      icon:I.news },
+    { label:'Economy',  href:'/economy',  match:['/economy'],               icon:I.econ },
+    { label:'FX',       href:'/fx',       match:['/fx'],                    icon:I.fx },
+    { label:'Articles', href:'/articles', match:['/articles','/originals'], icon:I.articles },
+    { label:'More',     more:true,                                          icon:I.more }
+  ];
+
+  var path = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+  function isActive(m) {
+    for (var i=0;i<m.length;i++){ var x=m[i];
+      if (x==='/') { if (path==='/') return true; }
+      else if (path===x || path.indexOf(x+'/')===0) return true; }
+    return false;
+  }
+
+  var nav = document.createElement('nav');
+  nav.className = 'mt-tabbar'; nav.setAttribute('aria-label','Primary');
+  TABS.forEach(function (t) {
+    var el = document.createElement(t.more ? 'button' : 'a');
+    if (t.more) { el.type='button'; } else { el.href = t.href; if (isActive(t.match)) el.className='is-active'; }
+    el.innerHTML = t.icon + '<span>' + t.label + '</span>';
+    if (t.more) el.addEventListener('click', function () {
+      var d = document.querySelector('[data-open-drawer]');
+      if (d) d.click(); else location.href = '/articles';
+    });
+    nav.appendChild(el);
+  });
+  document.body.appendChild(nav);
+  document.body.classList.add('mt-has-tabbar');
+})();
