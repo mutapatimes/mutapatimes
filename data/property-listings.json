@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-12T05:01:49.473366+00:00",
+  "fetched_at": "2026-06-12T10:39:35.308497+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -13,13 +13,13 @@
       "baths": "5"
     },
     {
-      "title": "6 Bedroom House for Sale in Helensvale",
-      "url": "https://www.property.co.zw/for-sale/houses-vepr242000",
-      "price": "USD 600,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/a8/dd/ff/a8ddff58-c911-4dcc-8c89-1d86198676e9_thumbnail591.webp",
-      "beds": "6",
-      "baths": "6"
+      "title": "Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole",
+      "url": "https://www.property.co.zw/for-sale/townhouses-riddl245424",
+      "price": "USD 240,000",
+      "location": "Emerald Hill, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/92/0a/f9/920af97c-2a57-4049-92c2-e3ab7ae9624f_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     },
     {
       "title": "Highlands Property For Sale",
@@ -71,7 +71,7 @@
       "url": "https://www.property.co.zw/for-sale/houses-clrp247513",
       "price": "USD 155,000",
       "location": "Hillside, Bulawayo South",
-      "image": "https://www.property.co.zw/uploadedfiles/c4/4a/cc/c44acc31-0ed8-47c8-95db-e371b14feb2e_thumbnail591.webp",
+      "image": "https://www.property.co.zw/uploadedfiles/af/da/9e/afda9e68-5ca7-4080-a183-3924575ce7e6_thumbnail591.webp",
       "beds": "2",
       "baths": "1"
     },
@@ -139,15 +139,6 @@
       "baths": "3"
     },
     {
-      "title": "Borrowdale Mansion, Victor Darcy Close",
-      "url": "https://www.property.co.zw/for-sale/houses-mac234387",
-      "price": "USD 900,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/21/e1/48/21e14809-989d-4b87-9b83-8f0bfa49d29f_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
-    },
-    {
       "title": "1600 s/mtrs with House for sale closer to S Machel Ave and Cresta Hotel Part of Eastlea",
       "url": "https://www.property.co.zw/for-sale/houses-knp245385",
       "price": "USD 195,000",
@@ -198,6 +189,15 @@
       "price": "USD 185,000",
       "location": "Willsgrove, Bulawayo East",
       "image": "https://www.property.co.zw/uploadedfiles/3f/6a/8c/3f6a8cf4-d49c-4190-8037-7f63e22ce323_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
+      "title": "Roofed 4-Bed Shell Home on 304m² in Crowborough",
+      "url": "https://www.property.co.zw/for-sale/houses-rvl246497",
+      "price": "USD 52,000",
+      "location": "Crowborough, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/4a/68/c9/4a68c901-6eea-45df-a9f9-0b302a5ab479_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     }
