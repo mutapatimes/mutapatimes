@@ -369,7 +369,7 @@
     <!-- Static, crawlable links to our strongest original reporting. These pass
          link equity from the homepage (our highest-authority page) to the
          pieces that actually rank and engage. Descriptive anchor text. -->
-    <nav class="home-indepth" aria-label="In-depth reporting from The Mutapa Times">
+    <div class="home-indepth">
       <ul>
         <li><a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html">Isn't it lovely: a week in Venice with the Pavilion of Zimbabwe</a></li>
         <li><a href="/articles/2026-06-09-zeex-zimbabwe-entrepreneurship-exchange-sme.html">INVESCI backs ZEEX: inside Zimbabwe's new SME exchange</a></li>
@@ -379,7 +379,7 @@
         <li><a href="/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions.html">Shumba Maasai brings Zimbabwean cultural interventions to Venice</a></li>
       </ul>
       <a class="home-indepth-more" href="/originals">All original reporting and analysis &rarr;</a>
-    </nav>
+    </div>
 
     <!-- Pinned travel guide — Tendai Kuwanda's country-wide "where to stay". -->
     <a class="home-stay-pin" href="/articles/2026-06-02-best-places-to-stay-in-zimbabwe.html">
@@ -423,14 +423,17 @@
   .home-stay-pin-sub { font-size: 0.9rem; color: var(--text-mid); margin: 0; line-height: 1.5; }
   .home-stay-pin-cta { font-family: 'Inter', system-ui, sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--accent); margin-top: 6px; }
   @media (max-width: 600px) { .home-stay-pin { flex-direction: column; } .home-stay-pin-media { max-width: none; aspect-ratio: 16 / 9; } }
-  .home-indepth { margin: 0 0 26px; }
+  .home-indepth { margin: 0 0 26px; text-align: left; text-transform: none; }
   .home-indepth ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
-  .home-indepth li a { display: block; padding: 12px 2px; border-bottom: 1px solid var(--rule);
-    font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; line-height: 1.35;
-    color: var(--ink); text-decoration: none; transition: color 0.12s ease; }
+  .home-indepth li { margin: 0; }
+  .home-indepth li a { display: block; text-align: left; text-transform: none;
+    padding: 11px 2px; border-bottom: 1px solid var(--rule);
+    font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 1rem;
+    line-height: 1.3; color: var(--ink); text-decoration: none; transition: color 0.12s ease; }
   .home-indepth li a:hover { color: var(--accent); }
   .home-indepth-more { display: inline-block; margin-top: 12px; font-family: 'Inter', system-ui, sans-serif;
-    font-size: 0.85rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+    font-size: 0.78rem; letter-spacing: 0.04em; font-weight: 700; text-transform: none;
+    color: var(--accent); text-decoration: none; }
   .home-indepth-more:hover { text-decoration: underline; }
   </style>
 
