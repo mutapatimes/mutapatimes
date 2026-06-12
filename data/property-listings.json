@@ -1,8 +1,17 @@
 {
-  "fetched_at": "2026-06-12T05:01:49.473366+00:00",
+  "fetched_at": "2026-06-12T15:38:05.033779+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Perfectly located Oldie",
+      "url": "https://www.property.co.zw/for-sale/houses-hvn249140",
+      "price": "USD 560,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/a0/98/a3/a098a348-bab1-4f14-8ae9-c315fe3b39c7_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
+    },
     {
       "title": "Magnificent Family Home In Gunhill",
       "url": "https://www.property.co.zw/for-sale/houses-rrt227592",
@@ -13,21 +22,21 @@
       "baths": "5"
     },
     {
-      "title": "6 Bedroom House for Sale in Helensvale",
-      "url": "https://www.property.co.zw/for-sale/houses-vepr242000",
-      "price": "USD 600,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/a8/dd/ff/a8ddff58-c911-4dcc-8c89-1d86198676e9_thumbnail591.webp",
-      "beds": "6",
-      "baths": "6"
-    },
-    {
       "title": "Highlands Property For Sale",
       "url": "https://www.property.co.zw/for-sale/houses-syr246819",
       "price": "USD 800,000",
       "location": "Highlands, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/91/b2/0a/91b20ad3-3802-4077-996f-e143fb1cc473_thumbnail591.webp",
       "beds": "5",
+      "baths": "2"
+    },
+    {
+      "title": "House for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp249201",
+      "price": "USD 120,000",
+      "location": "Waterfalls, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/ed/90/fd/ed90fd76-3471-491f-bd42-f04248dc7c96_thumbnail591.webp",
+      "beds": "3",
       "baths": "2"
     },
     {
@@ -58,6 +67,15 @@
       "baths": "1"
     },
     {
+      "title": "Borrowdale Hogerty hill 7beds incomplete plus 2 beds cottage for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-mac234997",
+      "price": "USD 230,000",
+      "location": "Hogerty Hill, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/37/17/dc/3717dc9c-3608-4c2e-b6d9-a0d12a2bc651_thumbnail591.webp",
+      "beds": "7",
+      "baths": "2"
+    },
+    {
       "title": "Light-Filled 4-Bed Townhouse Complex, Highlands Harare North",
       "url": "https://www.property.co.zw/for-sale/townhouses-gkey243597",
       "price": "USD 395,000",
@@ -71,7 +89,7 @@
       "url": "https://www.property.co.zw/for-sale/houses-clrp247513",
       "price": "USD 155,000",
       "location": "Hillside, Bulawayo South",
-      "image": "https://www.property.co.zw/uploadedfiles/c4/4a/cc/c44acc31-0ed8-47c8-95db-e371b14feb2e_thumbnail591.webp",
+      "image": "https://www.property.co.zw/uploadedfiles/af/da/9e/afda9e68-5ca7-4080-a183-3924575ce7e6_thumbnail591.webp",
       "beds": "2",
       "baths": "1"
     },
@@ -139,15 +157,6 @@
       "baths": "3"
     },
     {
-      "title": "Borrowdale Mansion, Victor Darcy Close",
-      "url": "https://www.property.co.zw/for-sale/houses-mac234387",
-      "price": "USD 900,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/21/e1/48/21e14809-989d-4b87-9b83-8f0bfa49d29f_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
-    },
-    {
       "title": "1600 s/mtrs with House for sale closer to S Machel Ave and Cresta Hotel Part of Eastlea",
       "url": "https://www.property.co.zw/for-sale/houses-knp245385",
       "price": "USD 195,000",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/d3/a1/de/d3a1dea6-75a8-497b-92a8-a2bdf3c6c253_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "willsgrove lockview 1.414 hectares with a 4bedroomed unfinished house",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp247220",
-      "price": "USD 185,000",
-      "location": "Willsgrove, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/3f/6a/8c/3f6a8cf4-d49c-4190-8037-7f63e22ce323_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     }
   ]
 }
