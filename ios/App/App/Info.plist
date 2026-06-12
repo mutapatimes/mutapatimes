@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-        <string>The Mutapa Times</string>
+	<string>Mutapa Times</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -51,5 +51,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>This lets us show more relevant ads, which helps fund our journalism. You can decline and still use the app fully.</string>
 </dict>
 </plist>
