@@ -17,7 +17,7 @@
   // ── Push notifications (breaking-news alerts) ───────────────────────────
   // Primary: OneSignal (one service for both APNs + FCM, with a send
   // dashboard). Paste your OneSignal App ID below once the app is created.
-  var ONESIGNAL_APP_ID = "YOUR_ONESIGNAL_APP_ID"; // <-- replace with the real App ID
+  var ONESIGNAL_APP_ID = "51b70688-864b-4290-8b9a-74033eb41296"; // <-- replace with the real App ID
 
   function deepLink(url) { if (url) window.location.href = url; }
 
