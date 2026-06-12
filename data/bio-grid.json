@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-06-12T03:27:29+00:00",
+  "fetched_at": "2026-06-12T10:03:08+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe seeking $150m AfDB loan to tackle debt default",
-      "link": "https://mutapatimes.com/articles/2026-06-11-zimbabwe-seeking-150m-afdb-loan-to-tackle-debt-default",
-      "image": "https://mutapatimes.com/img/cards/news/d85d50840bc2.png",
-      "pubDate": "2026-06-11T22:21:25+00:00",
-      "category": "Culture"
+      "title": "Government scrambles to avert medicine crisis",
+      "link": "https://mutapatimes.com/news/2026-06-12-government-scrambles-to-avert-medicine-crisis-018810",
+      "image": "https://mutapatimes.com/img/cards/news/af6d045d77b1.png",
+      "pubDate": "2026-06-12T07:07:30+00:00",
+      "category": "Health"
     },
     {
       "kind": "news",
@@ -16,14 +16,6 @@
       "link": "https://mutapatimes.com/news/2026-06-12-zimbabwe-seeking-150m-afdb-loan-to-tackle-debt-default-8c6b1c",
       "image": "https://mutapatimes.com/img/cards/news/95c27c11ae45.png",
       "pubDate": "2026-06-11T22:21:25+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "A taste of home: Zimbabwe restaurants revive traditional food",
-      "link": "https://mutapatimes.com/news/2026-06-12-a-taste-of-home-zimbabwe-restaurants-revive-traditional-food-ffe6c4",
-      "image": "https://mutapatimes.com/img/cards/news/567946d801ba.png",
-      "pubDate": "2026-06-11T22:18:47+00:00",
       "category": "Entertainment"
     },
     {
@@ -36,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 12 Jun 2026: 1 USD = 26.78 ZWG · best from UK £100 → $130.63 via Wise",
+      "title": "Zim FX snapshot 12 Jun 2026: 1 USD = 26.78 ZWG · best from UK £100 → $130.72 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-06-12",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-12",
       "pubDate": "2026-06-11T22:00:00+00:00",
@@ -44,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 12 Jun: Harare partly cloudy · high 21° / low 10°",
+      "title": "Zim weather 12 Jun: Harare clear sky · high 22° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-06-12",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-12",
       "pubDate": "2026-06-11T22:00:00+00:00",
@@ -479,6 +471,14 @@
       "title": "Sales and Marketing",
       "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-67768/",
       "image": "https://mutapatimes.com/img/cards/jobs/45d0694f3267.png",
+      "pubDate": "2026-06-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Investments Manager",
+      "link": "https://vacancymail.co.zw/jobs/investments-manager-67767/",
+      "image": "https://mutapatimes.com/img/cards/jobs/50f1eb224a01.png",
       "pubDate": "2026-06-11T22:00:00+00:00",
       "category": "Jobs"
     }
