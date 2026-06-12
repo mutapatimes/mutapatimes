@@ -122,3 +122,47 @@ Android push uses **Firebase Cloud Messaging**:
 - Committed: the `android/` project, M·T icons/splash.
 - Gitignored: `android/build`, `android/app/build`, `.gradle`,
   `local.properties`, keystores.
+
+---
+
+# Push notifications (OneSignal — both stores)
+
+OneSignal is wired in (`onesignal-cordova-plugin`). One service handles APNs
+(iOS) and FCM (Android) and gives a dashboard to actually send alerts — which
+is the "native value" App Store / Play review wants to see working.
+
+## 1. Create the OneSignal app (free)
+1. Sign up at onesignal.com → **New App/Website** → name it "The Mutapa Times".
+2. Enable **Apple iOS (APNs)** and **Google Android (FCM)**.
+3. Copy the **OneSignal App ID**.
+
+## 2. Paste the App ID
+In `js/native-bridge.js`, replace `YOUR_ONESIGNAL_APP_ID` with the real App
+ID, then commit/deploy the site. (Push stays off until this is set; the app
+falls back to the plain Capacitor registration meanwhile.)
+
+## 3. iOS keys + Xcode
+1. In the Apple Developer portal create an **APNs Auth Key (.p8)**; in
+   OneSignal's iOS settings upload it with your Key ID + Team ID.
+2. In Xcode (target **App** → Signing & Capabilities): add **Push
+   Notifications**. (Background mode is already set in `Info.plist`.)
+3. Add a **Notification Service Extension**: Xcode → File → New → Target →
+   *Notification Service Extension*, name it `OneSignalNotificationServiceExtension`,
+   set its team, and paste OneSignal's extension code (their iOS guide gives
+   it). This enables confirmed delivery, images and badges.
+4. **Push only works on a real device, not the simulator.** Run on your
+   iPhone, accept the prompt.
+
+## 4. Android keys
+1. Create a **Firebase** project, add an Android app (`com.mutapatimes.app`),
+   download `google-services.json` into `android/app/`.
+2. In OneSignal's Android settings, connect **FCM v1** (upload the Firebase
+   service-account JSON).
+3. Build/run in Android Studio, accept the prompt.
+
+## 5. Send + verify
+- OneSignal dashboard → **Messages → New Push** → send to "Subscribed Users".
+- To deep-link into an article, add **Additional Data** `url` =
+  `https://mutapatimes.com/articles/<slug>.html`. The app opens it on tap.
+
+Once a test push arrives on a device, push is functional for store review.

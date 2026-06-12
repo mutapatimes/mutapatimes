@@ -14,21 +14,41 @@
   // Status bar to match the dark masthead.
   try { P.StatusBar && P.StatusBar.setStyle({ style: "DARK" }); } catch (e) {}
 
-  // Push notifications (breaking-news alerts). Token goes to your push backend.
-  try {
-    var PN = P.PushNotifications;
-    if (PN) {
-      PN.requestPermissions().then(function (res) {
-        if (res && res.receive === "granted") PN.register();
+  // ── Push notifications (breaking-news alerts) ───────────────────────────
+  // Primary: OneSignal (one service for both APNs + FCM, with a send
+  // dashboard). Paste your OneSignal App ID below once the app is created.
+  var ONESIGNAL_APP_ID = "YOUR_ONESIGNAL_APP_ID"; // <-- replace with the real App ID
+
+  function deepLink(url) { if (url) window.location.href = url; }
+
+  if (window.OneSignal && ONESIGNAL_APP_ID && ONESIGNAL_APP_ID.indexOf("YOUR_") !== 0) {
+    try {
+      window.OneSignal.initialize(ONESIGNAL_APP_ID);
+      // Ask the OS for permission (shows the native prompt on first launch).
+      window.OneSignal.Notifications.requestPermission(true);
+      // Tapping a notification with an "url" in its additional data opens it.
+      window.OneSignal.Notifications.addEventListener("click", function (e) {
+        var d = (e && e.notification && e.notification.additionalData) || {};
+        deepLink(d.url);
       });
-      PN.addListener("registration", function (token) {
-        // TODO: POST token.value to the push backend to enable targeted alerts.
-        try { console.log("[push] APNs token", token && token.value); } catch (e) {}
-      });
-      PN.addListener("pushNotificationActionPerformed", function (action) {
-        var data = action && action.notification && action.notification.data;
-        if (data && data.url) window.location.href = data.url; // deep-link into the article
-      });
-    }
-  } catch (e) {}
+    } catch (e) { try { console.log("[push] OneSignal init error", e); } catch (_) {} }
+  } else {
+    // Fallback: the raw Capacitor push plugin (registers with APNs/FCM; you
+    // then need your own sender). Used only until OneSignal is configured.
+    try {
+      var PN = P.PushNotifications;
+      if (PN) {
+        PN.requestPermissions().then(function (res) {
+          if (res && res.receive === "granted") PN.register();
+        });
+        PN.addListener("registration", function (token) {
+          try { console.log("[push] device token", token && token.value); } catch (e) {}
+        });
+        PN.addListener("pushNotificationActionPerformed", function (action) {
+          var data = action && action.notification && action.notification.data;
+          deepLink(data && data.url);
+        });
+      }
+    } catch (e) {}
+  }
 })();
