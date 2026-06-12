@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-06-11T22:48:27+00:00",
+  "fetched_at": "2026-06-12T03:27:29+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe seeking $150m AfDB loan to tackle debt default",
+      "link": "https://mutapatimes.com/articles/2026-06-11-zimbabwe-seeking-150m-afdb-loan-to-tackle-debt-default",
+      "image": "https://mutapatimes.com/img/cards/news/d85d50840bc2.png",
+      "pubDate": "2026-06-11T22:21:25+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe seeking $150m AfDB loan to tackle debt default",
+      "link": "https://mutapatimes.com/news/2026-06-12-zimbabwe-seeking-150m-afdb-loan-to-tackle-debt-default-8c6b1c",
+      "image": "https://mutapatimes.com/img/cards/news/95c27c11ae45.png",
+      "pubDate": "2026-06-11T22:21:25+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "A taste of home: Zimbabwe restaurants revive traditional food",
+      "link": "https://mutapatimes.com/news/2026-06-12-a-taste-of-home-zimbabwe-restaurants-revive-traditional-food-ffe6c4",
+      "image": "https://mutapatimes.com/img/cards/news/567946d801ba.png",
+      "pubDate": "2026-06-11T22:18:47+00:00",
+      "category": "Entertainment"
+    },
     {
       "kind": "economy",
       "title": "Zim mining sector has moved +35.3% since the 2024 rebase quarter — now $2.9B per quarter.",
@@ -455,30 +479,6 @@
       "title": "Sales and Marketing",
       "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-67768/",
       "image": "https://mutapatimes.com/img/cards/jobs/45d0694f3267.png",
-      "pubDate": "2026-06-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Investments Manager",
-      "link": "https://vacancymail.co.zw/jobs/investments-manager-67767/",
-      "image": "https://mutapatimes.com/img/cards/jobs/50f1eb224a01.png",
-      "pubDate": "2026-06-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Registry Clerk",
-      "link": "https://vacancymail.co.zw/jobs/registry-clerk-67766/",
-      "image": "https://mutapatimes.com/img/cards/jobs/53947bc79ece.png",
-      "pubDate": "2026-06-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited — Zimplats Graduate Learnership Programme",
-      "link": "https://vacancymail.co.zw/jobs/zimplats-graduate-learnership-programme-67765/",
-      "image": "https://mutapatimes.com/img/cards/jobs/609b1269d3c9.png",
       "pubDate": "2026-06-11T22:00:00+00:00",
       "category": "Jobs"
     }
