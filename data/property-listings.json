@@ -1,8 +1,17 @@
 {
-  "fetched_at": "2026-06-12T10:39:35.308497+00:00",
+  "fetched_at": "2026-06-12T15:38:05.033779+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Perfectly located Oldie",
+      "url": "https://www.property.co.zw/for-sale/houses-hvn249140",
+      "price": "USD 560,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/a0/98/a3/a098a348-bab1-4f14-8ae9-c315fe3b39c7_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
+    },
     {
       "title": "Magnificent Family Home In Gunhill",
       "url": "https://www.property.co.zw/for-sale/houses-rrt227592",
@@ -13,21 +22,21 @@
       "baths": "5"
     },
     {
-      "title": "Emerald Hill: New 3-Bed Townhouse Complex w/ Borehole",
-      "url": "https://www.property.co.zw/for-sale/townhouses-riddl245424",
-      "price": "USD 240,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/92/0a/f9/920af97c-2a57-4049-92c2-e3ab7ae9624f_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "Highlands Property For Sale",
       "url": "https://www.property.co.zw/for-sale/houses-syr246819",
       "price": "USD 800,000",
       "location": "Highlands, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/91/b2/0a/91b20ad3-3802-4077-996f-e143fb1cc473_thumbnail591.webp",
       "beds": "5",
+      "baths": "2"
+    },
+    {
+      "title": "House for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp249201",
+      "price": "USD 120,000",
+      "location": "Waterfalls, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/ed/90/fd/ed90fd76-3471-491f-bd42-f04248dc7c96_thumbnail591.webp",
+      "beds": "3",
       "baths": "2"
     },
     {
@@ -56,6 +65,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/ae/aa/ec/aeaaeca2-f6df-473a-b7f3-077222cedbc4_thumbnail591.webp",
       "beds": "3",
       "baths": "1"
+    },
+    {
+      "title": "Borrowdale Hogerty hill 7beds incomplete plus 2 beds cottage for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-mac234997",
+      "price": "USD 230,000",
+      "location": "Hogerty Hill, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/37/17/dc/3717dc9c-3608-4c2e-b6d9-a0d12a2bc651_thumbnail591.webp",
+      "beds": "7",
+      "baths": "2"
     },
     {
       "title": "Light-Filled 4-Bed Townhouse Complex, Highlands Harare North",
@@ -182,24 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/d3/a1/de/d3a1dea6-75a8-497b-92a8-a2bdf3c6c253_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "willsgrove lockview 1.414 hectares with a 4bedroomed unfinished house",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp247220",
-      "price": "USD 185,000",
-      "location": "Willsgrove, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/3f/6a/8c/3f6a8cf4-d49c-4190-8037-7f63e22ce323_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Roofed 4-Bed Shell Home on 304m² in Crowborough",
-      "url": "https://www.property.co.zw/for-sale/houses-rvl246497",
-      "price": "USD 52,000",
-      "location": "Crowborough, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/4a/68/c9/4a68c901-6eea-45df-a9f9-0b302a5ab479_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     }
   ]
 }
