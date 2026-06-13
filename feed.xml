@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 11:37:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 12:10:54 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -895,18 +895,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/news/4e82627c6883.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>Franklyn Dzingai: family albums and the neural commons at Venice</title>
-      <link>https://mutapatimes.com/articles/2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale</link>
-      <description>The third in a five-part series on Zimbabwe’s pavilion at the 61st Venice Biennale. Franklyn Dzingai’s reductive cardboard prints, built from the family album, the magazine clipping, the back-room studio photographs of mid-century Zimbabwe, turn out, on close looking, to be the most precisely engineered work in the room. #Zimbabwe #ZimbabweNews</description>
-      <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale</guid>
-      <category>Arts</category>
-      <dc:creator>Tendai Kuwanda</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>Shumba Maasai in Venice</title>
       <link>https://mutapatimes.com/articles/2026-05-13-shumba-maasai-venice-biennale-zimbabwean-cultural-interventions</link>
       <description>At the 61st Biennale, the Zimbabwean artist’s day-long procession through the city’s campi, performed under the borrowed authority of a Murehwa chief, restages the social-sculpture lineage of Joseph Beuys for a contemporary African discursive practice. #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
@@ -917,6 +905,18 @@
       <media:content url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/bc035a047c91.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/bc035a047c91.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Franklyn Dzingai: family albums and the neural commons at Venice</title>
+      <link>https://mutapatimes.com/articles/2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale</link>
+      <description>The third in a five-part series on Zimbabwe’s pavilion at the 61st Venice Biennale. Franklyn Dzingai’s reductive cardboard prints, built from the family album, the magazine clipping, the back-room studio photographs of mid-century Zimbabwe, turn out, on close looking, to be the most precisely engineered work in the room. #Zimbabwe #ZimbabweNews</description>
+      <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-05-14-franklyn-dzingai-pavilion-of-zimbabwe-venice-biennale</guid>
+      <category>Arts</category>
+      <dc:creator>Tendai Kuwanda</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/news/4fe845042ff0.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Felix Shumba: charcoal and the practice of disappearance at Venice</title>
