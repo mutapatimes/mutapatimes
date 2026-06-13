@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-12",
+  "fetched_at": "2026-06-13",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -29,10 +29,10 @@
           "currency": ""
         },
         {
-          "price": 973,
+          "price": 952,
           "airline": "EK",
           "departure_at": "2026-07-12",
-          "return_at": "2026-08-06",
+          "return_at": "2026-08-03",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -341,16 +341,16 @@
           "currency": ""
         },
         {
-          "price": 1616,
+          "price": 3544,
           "airline": "FA",
-          "departure_at": "2026-08-12",
-          "return_at": "",
+          "departure_at": "2026-08-13",
+          "return_at": "2026-08-27",
           "stops": 0,
-          "duration": 110,
+          "duration": null,
           "currency": ""
         },
         {
-          "price": 4058,
+          "price": 4059,
           "airline": "FN",
           "departure_at": "2026-12-12",
           "return_at": "2027-01-03",
@@ -379,7 +379,7 @@
           "currency": ""
         },
         {
-          "price": 4058,
+          "price": 4059,
           "airline": "FN",
           "departure_at": "2026-12-12",
           "return_at": "2027-01-03",
@@ -392,7 +392,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 11,
+          "n": 10,
           "error": null
         },
         {
@@ -414,7 +414,7 @@
           "error": null
         }
       ],
-      "observations": 16
+      "observations": 15
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -422,33 +422,33 @@
       "currency": "USD",
       "currency_sym": "$",
       "cheapest_overall": {
-        "price": 1833,
+        "price": 1876,
         "airline": "QR",
-        "departure_at": "2026-06-13",
+        "departure_at": "2026-06-14",
         "return_at": "2026-06-25",
-        "stops": 1,
+        "stops": 2,
         "duration": null,
         "currency": ""
       },
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1833,
+          "price": 1876,
           "airline": "QR",
-          "departure_at": "2026-06-13",
+          "departure_at": "2026-06-14",
           "return_at": "2026-06-25",
-          "stops": 1,
+          "stops": 2,
           "duration": null,
           "currency": ""
         }
       ],
       "by_airline": [
         {
-          "price": 1833,
+          "price": 1876,
           "airline": "QR",
-          "departure_at": "2026-06-13",
+          "departure_at": "2026-06-14",
           "return_at": "2026-06-25",
-          "stops": 1,
+          "stops": 2,
           "duration": null,
           "currency": ""
         }
