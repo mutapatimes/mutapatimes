@@ -42,13 +42,14 @@ STATIC_PAGES = [
 
 
 def extract_frontmatter(path):
-    """Extract date, title, category, and draft flag from a markdown
-    article's frontmatter. Returns (slug, date, title, category, is_draft)."""
+    """Extract date, title, category, draft flag and source type from a
+    markdown article's frontmatter. Returns
+    (slug, date, title, category, is_draft, source_type)."""
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     m = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
     if not m:
-        return None, None, None, None, False
+        return None, None, None, None, False, None
     fm = m.group(1)
     date_match = re.search(r"^date:\s*['\"]?(\S+)", fm, re.MULTILINE)
     date_str = date_match.group(1) if date_match else None
@@ -58,14 +59,23 @@ def extract_frontmatter(path):
     category = cat_match.group(1) if cat_match else None
     draft_match = re.search(r'^draft:\s*true\s*$', fm, re.MULTILINE | re.IGNORECASE)
     is_draft = bool(draft_match)
+    src_match = re.search(r'^source_type:\s*["\']?(\w+)', fm, re.MULTILINE)
+    source_type = src_match.group(1) if src_match else None
     slug = os.path.splitext(os.path.basename(path))[0]
-    return slug, date_str, title, category, is_draft
+    return slug, date_str, title, category, is_draft, source_type
 
 
 def generate():
     now = datetime.now(timezone.utc)
     now_str = now.strftime("%Y-%m-%dT%H:%M:%S+00:00")
     two_days_ago = now - timedelta(days=2)
+    # Mirror the page-level noindex policy (build_static_pages.py /
+    # build_news_pages.py): wire/aggregated reposts older than 30 days
+    # are noindexed, so they must NOT be advertised in the sitemap.
+    # Originals stay indexed forever; fresh wire/news (<=30d) still gets
+    # Discover/News exposure and stays in the sitemap.
+    NOINDEX_AGE_DAYS = 30
+    noindex_cutoff = now - timedelta(days=NOINDEX_AGE_DAYS)
     urls = []
     news_urls = []
 
@@ -91,11 +101,23 @@ def generate():
     md_paths = sorted(glob.glob(os.path.join(articles_dir, "*.md"))
                       + glob.glob(os.path.join(wires_dir, "*.md")))
     for md_path in md_paths:
-        slug, date_str, title, category, is_draft = extract_frontmatter(md_path)
+        slug, date_str, title, category, is_draft, source_type = extract_frontmatter(md_path)
         if not slug or slug == "index":
             continue
         if is_draft:
             continue
+        # Skip wire/aggregated reposts older than 30 days — they carry a
+        # noindex tag, so listing them in the sitemap would only advertise
+        # pages we're asking Google not to index. Originals are never
+        # skipped; wire items with an unparseable date are kept (we can't
+        # prove they're stale).
+        if (source_type or "").strip().lower() != "original" and date_str:
+            try:
+                _adt = datetime.strptime(date_str[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                if _adt < noindex_cutoff:
+                    continue
+            except ValueError:
+                pass
         # Normalize lastmod to YYYY-MM-DD. Some legacy articles have
         # frontmatter dates like "2026-02-13T09:31:00" (no timezone)
         # which Google flags as Invalid date. Truncating to the date
@@ -173,6 +195,14 @@ def generate():
             if not m:
                 continue
             date_str = m.group(1)
+            # /news/ pages older than 30 days are swept to noindex by
+            # build_news_pages.py, so drop them from the sitemap too.
+            try:
+                _ndt = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                if _ndt < noindex_cutoff:
+                    continue
+            except ValueError:
+                pass
             # Read the real title from the rendered HTML — the slug is
             # truncated for URL hygiene and reconstructing from it
             # produces mid-word breaks ("...project-stu") and broken
