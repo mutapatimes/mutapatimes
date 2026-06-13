@@ -14,7 +14,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 # Reuse page chrome from the existing static pages builder
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -359,6 +359,32 @@ def main():
         new_urls.append(landing_url(art))
 
     print(f"  Wrote {written} pages, skipped {skipped} existing")
+
+    # Soft noindex sweep: /news/ are aggregated wire pages. Keep fresh ones
+    # (<=30d) indexed for the Discover/News window, then noindex the stale
+    # commodity pages so the quality signal concentrates on original work.
+    # Runs every build, so pages self-heal into noindex as they age.
+    import glob as _glob
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=MAX_ARTICLE_AGE_DAYS)).date()
+    swept = 0
+    for f in _glob.glob(os.path.join(NEWS_OUT, "*.html")):
+        m = re.search(r"/(\d{4})-(\d{2})-(\d{2})-", f)
+        if not m:
+            continue
+        d = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=timezone.utc).date()
+        if d >= cutoff:
+            continue
+        try:
+            s = open(f, encoding="utf-8").read()
+        except OSError:
+            continue
+        if '<meta name="robots" content="index, follow">' in s:
+            open(f, "w", encoding="utf-8").write(
+                s.replace('<meta name="robots" content="index, follow">',
+                          '<meta name="robots" content="noindex, follow">', 1))
+            swept += 1
+    if swept:
+        print(f"  Noindexed {swept} stale (>{MAX_ARTICLE_AGE_DAYS}d) news pages")
 
     # Notify Bing/Yandex of fresh URLs (no-op without INDEXNOW_KEY)
     if new_urls:

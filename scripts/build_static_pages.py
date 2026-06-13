@@ -150,7 +150,7 @@ def iso_date(date_str):
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
 # depth=1 means inside articles/ or people/ folder  CSS/JS paths go up one level
-def page_head(title, description, canonical_url, og_type, og_image, depth=1):
+def page_head(title, description, canonical_url, og_type, og_image, depth=1, robots="index, follow"):
     prefix = "../" if depth == 1 else ""
     return f"""<!doctype html>
 <html class="no-js" lang="en">
@@ -181,7 +181,7 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1):
     <link rel="stylesheet" href="{prefix}css/normalize.css">
     <link rel="stylesheet" href="{prefix}css/main.css?v=103">
     <meta name="description" content="{esc(description)}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{robots}">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="The Mutapa Times">
@@ -861,7 +861,21 @@ def build_articles():
             body_class_parts.append(f"series-{esc(series_key)}")
         body_class = " ".join(body_class_parts)
         meta_desc = meta.get("meta_description", "").strip() or summary
-        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=1))
+        # Soft noindex: keep originals indexed always; let fresh wire/aggregated
+        # reposts stay indexed for ~30 days (Discover/News window), then noindex
+        # the stale commodity content so the quality signal concentrates on
+        # original journalism. Re-evaluated on every (re)build, so it self-heals.
+        robots_val = "index, follow"
+        if meta.get("source_type", "").strip().lower() != "original":
+            try:
+                _adt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+                if _adt.tzinfo is None:
+                    _adt = _adt.replace(tzinfo=timezone.utc)
+                if (datetime.now(timezone.utc) - _adt).days > 30:
+                    robots_val = "noindex, follow"
+            except Exception:
+                pass
+        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=1, robots=robots_val))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}
