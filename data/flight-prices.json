@@ -29,7 +29,7 @@
           "currency": ""
         },
         {
-          "price": 952,
+          "price": 953,
           "airline": "EK",
           "departure_at": "2026-07-12",
           "return_at": "2026-08-03",
@@ -274,7 +274,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -296,7 +296,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 3
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -547,6 +547,15 @@
           "stops": 2,
           "duration": 980,
           "currency": ""
+        },
+        {
+          "price": 2906,
+          "airline": "FZ",
+          "departure_at": "2026-12-12",
+          "return_at": "2026-12-31",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "by_airline": [
@@ -567,6 +576,15 @@
           "stops": 2,
           "duration": 730,
           "currency": ""
+        },
+        {
+          "price": 2906,
+          "airline": "FZ",
+          "departure_at": "2026-12-12",
+          "return_at": "2026-12-31",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
@@ -579,7 +597,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
@@ -595,7 +613,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 5
     },
     "toronto-to-harare": {
       "origin": "YYZ",
