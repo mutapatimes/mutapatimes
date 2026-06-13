@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-06-13T11:11:41+00:00",
+  "fetched_at": "2026-06-13T11:37:44+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "United States, Canada embassies kickstart World Cup party Harare",
-      "link": "https://mutapatimes.com/articles/2026-06-13-united-states-canada-embassies-kickstart-world-cup-party-har",
-      "image": "https://mutapatimes.com/img/cards/news/1cb1eb7519a4.png",
-      "pubDate": "2026-06-13T10:09:57+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "United States, Canada embassies kickstart World Cup party Harare",
@@ -21,17 +13,17 @@
     {
       "kind": "news",
       "title": "Mining surge set to unlock dividend bonanza for Mutapa",
-      "link": "https://mutapatimes.com/articles/2026-06-13-mining-surge-set-to-unlock-dividend-bonanza-for-mutapa",
-      "image": "https://mutapatimes.com/img/cards/news/59d42da5e84f.png",
+      "link": "https://mutapatimes.com/news/2026-06-13-mining-surge-set-to-unlock-dividend-bonanza-for-mutapa-862f5e",
+      "image": "https://mutapatimes.com/img/cards/news/2c8d2ee34c89.png",
       "pubDate": "2026-06-13T09:59:56+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Mining surge set to unlock dividend bonanza for Mutapa",
-      "link": "https://mutapatimes.com/news/2026-06-13-mining-surge-set-to-unlock-dividend-bonanza-for-mutapa-862f5e",
-      "image": "https://mutapatimes.com/img/cards/news/2c8d2ee34c89.png",
-      "pubDate": "2026-06-13T09:59:56+00:00",
+      "title": "Zimbabwe Moves to Regulate Crypto: Mandatory Registration, $500 Fees and FIU Oversight",
+      "link": "https://mutapatimes.com/articles/2026-06-13-zimbabwe-crypto-regulation-fiu-registration",
+      "image": "https://mutapatimes.com/img/cards/news/67f28b35c352.png",
+      "pubDate": "2026-06-13T09:00:00+00:00",
       "category": "Business"
     },
     {
@@ -57,14 +49,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b43304064ff6.png",
       "pubDate": "2026-06-12T23:04:42+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Treasury opens floor for public input on 2026 Mid-Term Budget review and 2027 Strategy",
-      "link": "https://mutapatimes.com/articles/2026-06-12-treasury-opens-floor-for-public-input-on-2026-mid-term-budge",
-      "image": "https://mutapatimes.com/img/cards/news/d2d33423b635.png",
-      "pubDate": "2026-06-12T23:03:33+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -479,6 +463,22 @@
       "title": "Black Shark Protection Services — SERGEANT",
       "link": "https://vacancymail.co.zw/jobs/sergeant-67786/",
       "image": "https://mutapatimes.com/img/cards/jobs/e39a35f4feb3.png",
+      "pubDate": "2026-06-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Black Shark Protection Services — OPERATIONS CONTROLLER",
+      "link": "https://vacancymail.co.zw/jobs/operations-controller-67785/",
+      "image": "https://mutapatimes.com/img/cards/jobs/44c779478ccb.png",
+      "pubDate": "2026-06-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Loan Officer",
+      "link": "https://vacancymail.co.zw/jobs/loan-officer-67784/",
+      "image": "https://mutapatimes.com/img/cards/jobs/49305a2d3143.png",
       "pubDate": "2026-06-12T22:00:00+00:00",
       "category": "Jobs"
     }
