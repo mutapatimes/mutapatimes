@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-12T22:21:54+00:00",
+  "fetched_at": "2026-06-13T02:53:52+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Outgoing UK envoy Pete Vowles salutes Harare",
+      "link": "https://mutapatimes.com/articles/2026-06-12-outgoing-uk-envoy-pete-vowles-salutes-harare",
+      "image": "https://mutapatimes.com/img/cards/news/54acdea80171.png",
+      "pubDate": "2026-06-12T23:50:42+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim goods exports (4Q trailing to 2025 Q4): $10.0B, +10.2% vs prior period.",
@@ -471,14 +479,6 @@
       "title": "Jondavin investments — ACCOUNTANT",
       "link": "https://vacancymail.co.zw/jobs/accountant-67777/",
       "image": "https://mutapatimes.com/img/cards/jobs/bded9e4f48a9.png",
-      "pubDate": "2026-06-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Jondavin investments — FIELD MARKETER",
-      "link": "https://vacancymail.co.zw/jobs/field-marketer-67776/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6951c5161cdf.png",
       "pubDate": "2026-06-12T22:00:00+00:00",
       "category": "Jobs"
     }
