@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-13T04:49:53.175168+00:00",
+  "fetched_at": "2026-06-13T09:33:36.642170+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -166,15 +166,6 @@
       "baths": "2"
     },
     {
-      "title": "The Hillside Collection: Contemporary Elegance Redefined",
-      "url": "https://www.property.co.zw/for-sale/townhouses-fac246853",
-      "price": "USD 220,000",
-      "location": "Hillside, Bulawayo South",
-      "image": "https://www.property.co.zw/uploadedfiles/49/d6/4e/49d64e49-55b0-4567-9b5f-adb624e208a7_thumbnail591.webp",
-      "beds": "3",
-      "baths": "3"
-    },
-    {
       "title": "Great Location",
       "url": "https://www.property.co.zw/for-sale/houses-mac246983",
       "price": "USD 530,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/33/67/ed/3367ed76-fee4-476d-889d-dd33a3396577_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
+    },
+    {
+      "title": "5 bedroomed house for sale ( sole mandate)",
+      "url": "https://www.property.co.zw/for-sale/houses-are242558",
+      "price": "USD 260,000",
+      "location": "Belvedere, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/7e/1b/cc/7e1bcc41-0fcd-4ed8-bbcf-04aa04ea3b72_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
     }
   ]
 }

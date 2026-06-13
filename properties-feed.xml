@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 08:01:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 09:33:44 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -235,18 +235,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/8d274a56c828.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 220,000 — The Hillside Collection: Contemporary Elegance Redefined (Hillside, Bulawayo South)</title>
-      <link>https://mutapatimes.com/property-landing/0b2d4e018a6b.html</link>
-      <description>USD 220,000 — Hillside, Bulawayo South. 3 beds, 3 baths. The Hillside Collection: Contemporary Elegance Redefined. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Fri, 12 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/0b2d4e018a6b.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/0b2d4e018a6b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/0b2d4e018a6b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/0b2d4e018a6b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 530,000 — Great Location (Highlands, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/dbeeb33930a3.html</link>
       <description>USD 530,000 — Highlands, Harare North. 5 beds, 3 baths. Great Location. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 260,000 — 5 bedroomed house for sale ( sole mandate) (Belvedere, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/e10519fee4af.html</link>
+      <description>USD 260,000 — Belvedere, Harare West. 5 beds, 3 baths. 5 bedroomed house for sale ( sole mandate). Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Fri, 12 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/e10519fee4af.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/e10519fee4af.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/e10519fee4af.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/e10519fee4af.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
