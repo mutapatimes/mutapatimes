@@ -33,7 +33,7 @@ OUTPUT_FILE = os.path.join(DATA_DIR, "engagement-plan.md")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash:generateContent"
+    "gemini-2.5-flash:generateContent"
 )
 
 # Nitter mirrors — public RSS endpoints. Try in order; many go up/down.
@@ -114,7 +114,7 @@ def gemini_reply_draft(tweet_text, handle, name):
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 200},
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.7, "maxOutputTokens": 200},
     }
     try:
         req = urllib.request.Request(

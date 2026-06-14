@@ -59,7 +59,7 @@ PRUNE_AFTER_DAYS = 30  # how long to keep dedup entries
 DAYS_BY_WEEKDAY = {0: 3, 3: 4}  # Mon, Thu
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
 # Per-platform posting times in CAT (UTC+2). Index = position in 5-article slate.
 # Spread through the day using each platform's known good slots.
@@ -513,7 +513,7 @@ def gemini_carousel_text(art):
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 400,
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.6, "maxOutputTokens": 400,
                              "responseMimeType": "application/json"},
     }
     try:
@@ -849,7 +849,7 @@ def gemini_rewrite(prompt, headline, description, source, mutapa_url, source_url
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": user_msg}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 400},
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.7, "maxOutputTokens": 400},
     }
     req = urllib.request.Request(
         f"{GEMINI_URL}?key={GEMINI_API_KEY}",
@@ -1318,7 +1318,7 @@ def gemini_thread(art, mutapa_url):
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800,
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.7, "maxOutputTokens": 800,
                              "responseMimeType": "application/json"},
     }
     try:
@@ -1438,7 +1438,7 @@ def build_daily_recap_thread(articles, target_dt):
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.75, "maxOutputTokens": 900,
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.75, "maxOutputTokens": 900,
                              "responseMimeType": "application/json"},
     }
     try:
@@ -2189,7 +2189,7 @@ def newsletter_caption(platform, angle):
     )
     body = {
         "contents": [{"role": "user", "parts": [{"text": user_msg}]}],
-        "generationConfig": {"temperature": 0.8, "maxOutputTokens": 500},
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "temperature": 0.8, "maxOutputTokens": 500},
     }
     req = urllib.request.Request(
         f"{GEMINI_URL}?key={GEMINI_API_KEY}",

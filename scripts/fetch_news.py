@@ -23,7 +23,7 @@ def _card_image_for(url):
     return f"https://mutapatimes.com/img/cards/news/{h}.png"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 GNEWS_API_KEY = os.environ.get("GNEWS_API_KEY", "")
 NEWSDATA_API_KEY = os.environ.get("NEWSDATA_API_KEY", "")
 NEWSAPI_API_KEY = os.environ.get("NEWSAPI_API_KEY", "")
@@ -277,7 +277,7 @@ def generate_description(title, content=""):
 
     payload = json.dumps({
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": 100, "temperature": 0.2}
+        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}, "maxOutputTokens": 100, "temperature": 0.2}
     }).encode("utf-8")
 
     try:
