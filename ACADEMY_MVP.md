@@ -177,3 +177,43 @@ On a confirmed payment the Worker POSTs `{email, name, tags}` to
 `NEWSLETTER_WEBHOOK`. Point it at Mailchimp (via a small proxy), Zapier,
 Make, or your own endpoint. If unset, payment still works; no newsletter
 call is made.
+
+## UPDATE: payment provider is Lemon Squeezy (not Paynow)
+
+Paynow needs a Zimbabwean merchant identity, which we do not have. The
+payment Worker now uses **Lemon Squeezy**, a merchant of record: it signs
+up from the UK, accepts global cards, PayPal and Apple/Google Pay,
+handles VAT, and pays out to a UK bank. (The Paynow section above is kept
+only for reference; the code in `workers/academy-pay` is Lemon Squeezy.)
+
+Local EcoCash is not covered by this route; it can be added later as a
+separate option.
+
+### Lemon Squeezy setup
+
+1. Create a Lemon Squeezy account and store, and a one-time **product**
+   for the course at your price.
+2. Copy the product's **buy link** into `LS_BUY_LINK` in `wrangler.toml`,
+   and set the product's "Redirect to URL after purchase" to
+   `https://mutapatimes.com/academy/welcome/`.
+3. (Optional, for referrals) create a discount code such as `FRIEND15`
+   (15% off) and set `LS_DISCOUNT_CODE`.
+4. Add a **webhook**: URL `https://<your-worker>/?action=webhook`, signing
+   secret of your choice, event `order_created`. Put that secret in
+   `LS_WEBHOOK_SECRET`.
+5. Deploy:
+   ```
+   cd workers/academy-pay
+   npx wrangler kv namespace create ACADEMY     # paste id into wrangler.toml
+   npx wrangler secret put LS_WEBHOOK_SECRET
+   npx wrangler secret put ACCESS_SECRET        # any long random string
+   npx wrangler deploy
+   ```
+6. Put the worker URL into `PAY_ENDPOINT` in `academy/index.html` and
+   `academy/welcome/index.html`.
+
+Flow: landing creates an order and a Lemon Squeezy checkout link (with the
+referral code + friend discount attached) -> buyer pays on Lemon Squeezy
+-> Lemon Squeezy's webhook tells the Worker it is paid (which credits the
+referrer and fires the newsletter) -> the welcome page polls the Worker,
+unlocks the course and shows the buyer's referral link.

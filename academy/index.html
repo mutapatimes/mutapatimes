@@ -100,7 +100,7 @@
       <h1 class="al-h1">Become a journalist for Zimbabwe and the diaspora</h1>
       <p class="al-sub">A self-paced online course that takes you from your first story idea to a finished, publishable piece, then a certificate you can put on your CV and LinkedIn.</p>
       <a class="al-cta" href="#signup">Start the course <span class="al-pricechip" id="heroPrice">US$15</span></a>
-      <p class="al-paynote">Pay once. Lifetime access. EcoCash, OneMoney, Zimswitch, Visa or Mastercard.</p>
+      <p class="al-paynote">Pay once. Lifetime access. Visa, Mastercard, American Express, PayPal, Apple Pay and Google Pay.</p>
     </section>
 
     <div class="al-refbanner" id="refBanner" hidden></div>
@@ -153,16 +153,17 @@
         <button class="al-pay" id="payBtn" type="submit">Pay and start</button>
       </form>
       <div class="al-methods">
-        <span class="al-method">EcoCash</span><span class="al-method">OneMoney</span>
-        <span class="al-method">Zimswitch</span><span class="al-method">Visa</span><span class="al-method">Mastercard</span>
+        <span class="al-method">Visa</span><span class="al-method">Mastercard</span>
+        <span class="al-method">Amex</span><span class="al-method">PayPal</span>
+        <span class="al-method">Apple Pay</span><span class="al-method">Google Pay</span>
       </div>
       <p class="al-status" id="status"></p>
-      <p class="al-fine">By enrolling you agree to receive the Mutapa Times newsletter. You can unsubscribe any time. Payments are processed securely by Paynow.</p>
+      <p class="al-fine">By enrolling you agree to receive the Mutapa Times newsletter. You can unsubscribe any time. Payments are processed securely by Lemon Squeezy.</p>
     </section>
 
     <section class="al-faq">
       <h2 class="al-h2">Questions</h2>
-      <details><summary>Can I pay from outside Zimbabwe?</summary><p>Yes. Pay with any Visa or Mastercard from anywhere, or with EcoCash, OneMoney and Zimswitch inside Zimbabwe.</p></details>
+      <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere in the world. Pay with any Visa, Mastercard or American Express card, with PayPal, or with Apple Pay and Google Pay. Local EcoCash payment is coming later.</p></details>
       <details><summary>How long do I have access?</summary><p>It is a one-time payment with lifetime access. Learn at your own pace.</p></details>
       <details><summary>Do I get a certificate?</summary><p>Yes. Finish the course and pass the final exam at 80% to earn your certificate, which you can download or have emailed to you.</p></details>
       <details><summary>Can I refer friends?</summary><p>Yes. After you join you get a personal referral link to share. Friends who use it get a discount, and we track every referral you send.</p></details>
@@ -220,8 +221,11 @@
       })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (d) {
-        if (d && d.browserurl) { location.href = d.browserurl; }
-        else { throw 0; }
+        var u = d && (d.checkoutUrl || d.browserurl);
+        if (u && d.reference) {
+          try { localStorage.setItem("mt_academy_pending_ref", d.reference); } catch (e) {}
+          location.href = u;
+        } else { throw 0; }
       })
       .catch(function () { btn.disabled = false; status.innerHTML = '<span class="err">Could not start the payment. Please try again.</span>'; });
     });

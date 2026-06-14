@@ -9,11 +9,15 @@ binding = "ACADEMY"
 id = "PASTE_KV_NAMESPACE_ID_HERE"
 
 # Secrets (do NOT commit): set with `npx wrangler secret put NAME`
-#   PAYNOW_ID      - your Paynow Integration ID
-#   PAYNOW_KEY     - your Paynow Integration Key
-#   ACCESS_SECRET  - any long random string (signs access tokens + referral codes)
+#   LS_WEBHOOK_SECRET - Lemon Squeezy webhook signing secret
+#   ACCESS_SECRET     - any long random string (signs access tokens + referral codes)
 
 [vars]
+# Your Lemon Squeezy product buy link, e.g.
+# https://YOURSTORE.lemonsqueezy.com/buy/0000-uuid
+LS_BUY_LINK = "https://YOURSTORE.lemonsqueezy.com/buy/REPLACE-WITH-VARIANT-UUID"
+# Optional: a Lemon Squeezy discount code for referred friends (e.g. FRIEND15)
+LS_DISCOUNT_CODE = ""
 PRICE = "15"
 REF_DISCOUNT = "0.15"
 SITE_URL = "https://mutapatimes.com"

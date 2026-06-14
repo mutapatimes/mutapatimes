@@ -1,40 +1,44 @@
 /**
  * Mutapa Times Academy - enrolment + payment (Cloudflare Worker)
  *
- * Handles the whole signup-to-access flow with Paynow, the standard
- * Zimbabwean gateway (EcoCash, OneMoney, Zimswitch, Visa, Mastercard):
- *   - POST {action:"create"}  start a payment, return the Paynow browserurl
- *   - POST {action:"status"}  confirm payment, return an access token
- *   - GET/POST ?action=result Paynow's server-to-server confirmation
+ * Uses Lemon Squeezy (a merchant of record) so payment works from the UK
+ * with no Zimbabwe documents, and accepts global cards, PayPal and
+ * Apple/Google Pay. Lemon Squeezy handles VAT/tax and pays out to a UK
+ * bank.
  *
- * On payment it also: issues a referral code, credits the referrer,
- * applies a friend discount, and fires the newsletter webhook.
+ *   - POST {action:"create"}    build a Lemon Squeezy checkout URL
+ *   - POST {action:"status"}    confirm payment, return an access token
+ *   - POST ?action=webhook      Lemon Squeezy order webhook (server-side)
+ *
+ * On payment it issues a referral code, credits the referrer, and fires
+ * the newsletter webhook. The friend discount is applied by attaching a
+ * Lemon Squeezy discount code to the checkout link.
  *
  * Needs a KV namespace bound as ACADEMY and these secrets/vars:
- *   secrets:  PAYNOW_ID, PAYNOW_KEY, ACCESS_SECRET
- *   vars:     PRICE, REF_DISCOUNT, SITE_URL, ALLOWED_ORIGIN,
+ *   secrets:  LS_WEBHOOK_SECRET, ACCESS_SECRET
+ *   vars:     LS_BUY_LINK, LS_DISCOUNT_CODE (optional), PRICE,
+ *             REF_DISCOUNT, SITE_URL, ALLOWED_ORIGIN,
  *             NEWSLETTER_WEBHOOK (optional)
  *
- * Deploy:
- *   cd workers/academy-pay
- *   npx wrangler kv namespace create ACADEMY        # then add the id to wrangler.toml
- *   npx wrangler secret put PAYNOW_ID
- *   npx wrangler secret put PAYNOW_KEY
- *   npx wrangler secret put ACCESS_SECRET           # any long random string
- *   npx wrangler deploy
- * Put the deployed URL into PAY_ENDPOINT in academy/index.html and
- * academy/welcome/index.html.
+ * Setup:
+ *   1. In Lemon Squeezy create a product (one-time) and copy its buy
+ *      link (e.g. https://YOURSTORE.lemonsqueezy.com/buy/UUID). Set the
+ *      product's "Redirect to URL after purchase" to
+ *      https://mutapatimes.com/academy/welcome/
+ *   2. (Optional) create a discount code (e.g. FRIEND15, 15% off) for
+ *      referrals and set LS_DISCOUNT_CODE.
+ *   3. Add a webhook: URL = <worker-url>/?action=webhook, signing secret
+ *      = LS_WEBHOOK_SECRET, event = order_created.
+ *   4. Deploy and put the worker URL into PAY_ENDPOINT in
+ *      academy/index.html and academy/welcome/index.html.
  */
 
-const PAYNOW_INITIATE = "https://www.paynow.co.zw/interface/initiatetransaction";
-const PAID_STATUSES = ["paid", "awaiting delivery", "delivered"];
+const PAID = "paid";
 
-// ---------- crypto helpers ----------
 async function digestHex(algo, str) {
   const buf = await crypto.subtle.digest(algo, new TextEncoder().encode(str));
   return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
 }
-async function sha512Upper(str) { return (await digestHex("SHA-512", str)).toUpperCase(); }
 async function hmacHex(key, msg) {
   const k = await crypto.subtle.importKey("raw", new TextEncoder().encode(key), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
   const sig = await crypto.subtle.sign("HMAC", k, new TextEncoder().encode(msg));
@@ -42,11 +46,9 @@ async function hmacHex(key, msg) {
 }
 function randHex(n) { const a = new Uint8Array(n); crypto.getRandomValues(a); return [...a].map(b => b.toString(16).padStart(2, "0")).join(""); }
 
-// ---------- KV helpers ----------
 async function getJSON(env, key) { const v = await env.ACADEMY.get(key); return v ? JSON.parse(v) : null; }
 async function putJSON(env, key, val) { await env.ACADEMY.put(key, JSON.stringify(val)); }
 
-// ---------- http helpers ----------
 function cors(origin, allowed) {
   const ok = allowed === "*" || origin === allowed;
   return {
@@ -60,33 +62,6 @@ function json(body, status, headers) {
   return new Response(JSON.stringify(body), { status, headers: Object.assign({ "Content-Type": "application/json" }, headers || {}) });
 }
 
-// ---------- Paynow ----------
-async function paynowInitiate(env, order) {
-  // Field order matters: it is the order hashed.
-  const fields = {
-    resulturl: order.resulturl,
-    returnurl: order.returnurl,
-    reference: order.reference,
-    amount: order.amount,
-    id: env.PAYNOW_ID,
-    additionalinfo: "Mutapa Times Academy enrolment",
-    authemail: order.email,
-    status: "Message"
-  };
-  const hash = await sha512Upper(Object.values(fields).join("") + env.PAYNOW_KEY);
-  const body = new URLSearchParams(Object.assign({}, fields, { hash }));
-  const resp = await fetch(PAYNOW_INITIATE, {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: body.toString()
-  });
-  return new URLSearchParams(await resp.text());
-}
-async function paynowPoll(pollurl) {
-  const resp = await fetch(pollurl);
-  return new URLSearchParams(await resp.text());
-}
-
 async function makeReferralCode(env, email) {
   const h = await digestHex("SHA-256", email + "|" + (env.ACCESS_SECRET || "salt"));
   return h.slice(0, 8).toUpperCase();
@@ -95,11 +70,14 @@ async function accessToken(env, order) {
   return hmacHex(env.ACCESS_SECRET || "key", order.email + "|" + order.paidTs);
 }
 
-// Idempotent: marks order paid, issues codes, credits referrer, newsletter.
-async function finalize(env, order) {
-  if (order.status !== "paid") {
-    order.status = "paid";
+// Idempotent: mark paid, issue codes, credit referrer, newsletter.
+async function finalize(env, order, override) {
+  override = override || {};
+  if (order.status !== PAID) {
+    order.status = PAID;
     order.paidTs = Date.now();
+    if (override.email) order.email = override.email;
+    if (override.name) order.name = override.name;
 
     let user = (await getJSON(env, "user:" + order.email)) || { referrals: 0, paid: false };
     if (!user.referralCode) {
@@ -144,17 +122,24 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: ch });
     if (!env.ACADEMY) return json({ error: "Storage not configured" }, 500, ch);
 
-    // Paynow server-to-server confirmation.
-    if (url.searchParams.get("action") === "result") {
-      let reference = url.searchParams.get("reference");
-      if (!reference && request.method === "POST") {
-        try { const form = await request.formData(); reference = form.get("reference"); } catch (e) {}
-      }
-      if (reference) {
-        const order = await getJSON(env, "order:" + reference);
-        if (order && order.pollurl) {
-          const st = (await paynowPoll(order.pollurl)).get("status") || "";
-          if (PAID_STATUSES.indexOf(st.toLowerCase()) !== -1) await finalize(env, order);
+    // ---- Lemon Squeezy webhook (server-to-server) ----
+    if (url.searchParams.get("action") === "webhook") {
+      const raw = await request.text();
+      const sig = request.headers.get("X-Signature") || "";
+      const expected = await hmacHex(env.LS_WEBHOOK_SECRET || "", raw);
+      if (sig !== expected) return new Response("bad signature", { status: 401 });
+      let body; try { body = JSON.parse(raw); } catch (e) { return new Response("bad json", { status: 400 }); }
+      const event = body && body.meta && body.meta.event_name;
+      if (event === "order_created") {
+        const custom = (body.meta && body.meta.custom_data) || {};
+        const reference = custom.ref_purchase;
+        const attrs = (body.data && body.data.attributes) || {};
+        if (reference) {
+          let order = await getJSON(env, "order:" + reference);
+          if (!order) {
+            order = { reference, email: attrs.user_email || "", name: attrs.user_name || "", ref: (custom.referrer || "").toUpperCase(), status: "created", createdTs: Date.now() };
+          }
+          await finalize(env, order, { email: attrs.user_email, name: attrs.user_name });
         }
       }
       return new Response("ok", { status: 200 });
@@ -167,37 +152,31 @@ export default {
 
     // ---- create ----
     if (body.action === "create") {
-      if (!env.PAYNOW_ID || !env.PAYNOW_KEY) return json({ error: "Payments not configured" }, 500, ch);
+      if (!env.LS_BUY_LINK) return json({ error: "Payments not configured" }, 500, ch);
       const name = (body.name || "").toString().trim().slice(0, 60);
       const email = (body.email || "").toString().trim().slice(0, 120);
       const ref = (body.ref || "").toString().trim().slice(0, 16).toUpperCase();
       if (name.length < 2) return json({ error: "Name required" }, 400, ch);
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
 
-      const price = parseFloat(env.PRICE || "15");
-      const refDiscount = parseFloat(env.REF_DISCOUNT || "0.15");
-      let amount = price;
+      const reference = "MTA-" + Date.now().toString(36).toUpperCase() + "-" + randHex(3).toUpperCase();
+      let referrerValid = false;
       if (ref) {
         const refEmail = await env.ACADEMY.get("code:" + ref);
-        if (refEmail && refEmail !== email) amount = price * (1 - refDiscount);
+        if (refEmail && refEmail !== email) referrerValid = true;
       }
-      amount = amount.toFixed(2);
+      await putJSON(env, "order:" + reference, { reference, email, name, ref: referrerValid ? ref : "", status: "created", createdTs: Date.now() });
 
-      const site = env.SITE_URL || "https://mutapatimes.com";
-      const reference = "MTA-" + Date.now().toString(36).toUpperCase() + "-" + randHex(3).toUpperCase();
-      const order = {
-        reference, email, name, ref, amount, status: "created", createdTs: Date.now(),
-        returnurl: site + "/academy/welcome/?reference=" + reference,
-        resulturl: url.origin + "/?action=result&reference=" + reference
-      };
-
-      const res = await paynowInitiate(env, order);
-      if ((res.get("status") || "").toLowerCase() !== "ok" || !res.get("browserurl")) {
-        return json({ error: res.get("error") || "Could not start payment" }, 502, ch);
+      const p = [
+        "checkout[email]=" + encodeURIComponent(email),
+        "checkout[custom][ref_purchase]=" + encodeURIComponent(reference)
+      ];
+      if (referrerValid) {
+        p.push("checkout[custom][referrer]=" + encodeURIComponent(ref));
+        if (env.LS_DISCOUNT_CODE) p.push("checkout[discount_code]=" + encodeURIComponent(env.LS_DISCOUNT_CODE));
       }
-      order.pollurl = res.get("pollurl");
-      await putJSON(env, "order:" + reference, order);
-      return json({ browserurl: res.get("browserurl"), reference }, 200, ch);
+      const sep = env.LS_BUY_LINK.indexOf("?") >= 0 ? "&" : "?";
+      return json({ checkoutUrl: env.LS_BUY_LINK + sep + p.join("&"), reference }, 200, ch);
     }
 
     // ---- status ----
@@ -205,13 +184,8 @@ export default {
       const reference = (body.reference || "").toString().trim();
       const order = await getJSON(env, "order:" + reference);
       if (!order) return json({ paid: false }, 200, ch);
-
-      if (order.status !== "paid" && order.pollurl) {
-        const st = (await paynowPoll(order.pollurl)).get("status") || "";
-        if (PAID_STATUSES.indexOf(st.toLowerCase()) !== -1) await finalize(env, order);
-      }
-      if (order.status === "paid") {
-        const finalized = await finalize(env, order); // idempotent, ensures referralCode present
+      if (order.status === PAID) {
+        const finalized = await finalize(env, order);
         return json({
           paid: true, token: await accessToken(env, finalized),
           referralCode: finalized.referralCode || "", email: finalized.email, name: finalized.name

@@ -75,6 +75,7 @@
 
     var params = new URLSearchParams(location.search);
     var reference = params.get("reference") || params.get("ref") || "";
+    if (!reference) { try { reference = localStorage.getItem("mt_academy_pending_ref") || ""; } catch (e) {} }
 
     var loading = document.getElementById("loading");
     var success = document.getElementById("success");
@@ -83,6 +84,7 @@
     function showSuccess(d) {
       loading.hidden = true; success.hidden = false;
       try {
+        localStorage.removeItem("mt_academy_pending_ref");
         if (d.token) localStorage.setItem("mt_academy_access", d.token);
         if (d.email) localStorage.setItem("mt_academy_email", d.email);
         if (d.name) localStorage.setItem("mt_academy_name", d.name);
