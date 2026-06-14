@@ -828,6 +828,15 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Digital-first means continuous, real-time publishing rather than a single daily deadline."
+            },
+            {
+              type: "chartfill",
+              q: "Complete how a story moves through a newsroom.",
+              chartType: "flow",
+              slots: ["Gathering", "___", "Output"],
+              bank: ["Production", "Marketing", "Deadline"],
+              answer: ["Production"],
+              explain: "Gather it, produce and check it, then output it."
             }
           ]
         }
@@ -2694,6 +2703,15 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Distance and your ear catch what silent re-reading misses."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the inverted pyramid.",
+              chartType: "pyramid",
+              slots: ["___", "Key supporting facts", "Quotes and detail", "Background"],
+              bank: ["Most important news", "The headline", "An advertisement"],
+              answer: ["Most important news"],
+              explain: "Lead with the most important news, then facts, quotes and background."
             }
           ]
         }
@@ -4366,6 +4384,15 @@ window.COURSE = {
                 { text: "Cram four questions into one", bucket: "bad" }
               ],
               explain: "Verify, mix facts with story, name limits. Do not rush drafts or pile up questions."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the four pillars of solution journalism.",
+              chartType: "stack",
+              slots: ["Describe the problem", "What is known: the evidence", "___", "___"],
+              bank: ["The lesson learned (a repeatable model)", "The limits", "More good news"],
+              answer: ["The lesson learned (a repeatable model)", "The limits"],
+              explain: "Problem, evidence, the repeatable lesson, then the honest limits."
             }
           ]
         }
