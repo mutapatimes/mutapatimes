@@ -1955,6 +1955,206 @@ window.COURSE = {
       ]
     },
     {
+      id: "fact-copy",
+      title: "Fact-checking and copy-editing",
+      summary: "The last lines of defence before a reader sees your work: verify every claim, then catch every error.",
+      lessons: [
+        {
+          id: "fact-checking",
+          title: "Fact-checking",
+          minutes: 8,
+          intro: "Before a story runs, every claim, number, name and quote has to stand up. Practise checking them.",
+          cards: [
+            {
+              h: "Every claim is a hypothesis",
+              body: [
+                "Until you have verified it, what you have is a claim, not a fact. Check it against documents, data and a second independent source. Confidence is not evidence: a source being sure does not make them right.",
+                "The more surprising or convenient a claim, the harder you should check it."
+              ]
+            },
+            {
+              h: "Numbers, names and quotes",
+              body: [
+                "The three things readers trust most are the easiest to get wrong. Check every figure against its original source, spell every name correctly (people, places and organisations), and confirm every quote against your recording or notes.",
+                "One wrong number or misspelt name can sink the credibility of an otherwise sound story."
+              ]
+            },
+            {
+              h: "Red flags",
+              body: [
+                "Slow down at a single anonymous source with no support, a screenshot with no clear origin, a statistic that seems too perfect, or a claim that confirms exactly what you already believed.",
+                "When something is too good, too neat, or too on-the-nose, check it twice."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "In fact-checking, how should you treat any claim until you confirm it?",
+              options: [
+                "As a fact, if the source sounds sure",
+                "As a hypothesis, until verified against another source",
+                "As an opinion",
+                "As unusable"
+              ],
+              answer: 1,
+              explain: "Treat every claim as a hypothesis. Confidence is not evidence, so verify before it becomes a fact in print."
+            },
+            {
+              type: "multi",
+              q: "Which of these are red flags that should make you check harder? Select all.",
+              options: [
+                "A single anonymous source with no support",
+                "A screenshot with no clear origin",
+                "A statistic that seems too perfect",
+                "Two independent sources who agree"
+              ],
+              answers: [0, 1, 2],
+              explain: "Lone anonymous tips, unsourced screenshots and too-perfect numbers are warning signs. Independent corroboration is reassurance, not a red flag."
+            },
+            {
+              type: "match",
+              q: "Match each thing you need to check to how you would verify it.",
+              pairs: [
+                { a: "A viral photo", b: "Reverse image search to see if it is current and real" },
+                { a: "A surprising statistic", b: "Trace it to the original document or dataset" },
+                { a: "A direct quote", b: "Check it against your recording or notes" },
+                { a: "A person's job title", b: "Confirm it against the official record" }
+              ],
+              explain: "Each kind of claim has its own check. Matching the method to the claim is the craft of verification."
+            },
+            {
+              type: "categorize",
+              q: "Sort these sources by how much you can lean on them.",
+              buckets: [
+                { id: "strong", label: "Stronger starting point" },
+                { id: "weak", label: "Weak: treat with caution" }
+              ],
+              items: [
+                { text: "An official budget document you read", bucket: "strong" },
+                { text: "A named expert speaking on the record", bucket: "strong" },
+                { text: "An anonymous WhatsApp forward", bucket: "weak" },
+                { text: "A random social-media post", bucket: "weak" },
+                { text: "A press release making a claim", bucket: "weak" }
+              ],
+              explain: "Documents and named, on-record sources are stronger starting points. Anonymous forwards, random posts and press releases need hard verification."
+            },
+            {
+              type: "swipe",
+              q: "Verified, or still just a claim?",
+              leftLabel: "Still a claim",
+              rightLabel: "Verified",
+              cards: [
+                { text: "A figure you read directly in the official budget document.", side: "right" },
+                { text: "A WhatsApp message saying the minister has resigned.", side: "left" },
+                { text: "Two independent officials confirm the same number.", side: "right" },
+                { text: "A dramatic photo sent to you with no source.", side: "left" },
+                { text: "A statistic a source recited confidently from memory.", side: "left" }
+              ],
+              explain: "Documents you have seen and independent corroboration are verified. A single message, an unsourced photo or a number from memory is still a claim."
+            }
+          ]
+        },
+        {
+          id: "copy-checking",
+          title: "Copy-editing",
+          minutes: 8,
+          intro: "The last check before a reader sees your work: catch the typo, the wrong word and the broken style.",
+          cards: [
+            {
+              h: "Read like a stranger, and aloud",
+              body: [
+                "Your eye skips what your ear catches, so read your copy aloud as if someone else wrote it. Then check every name, number and date one more time.",
+                "In journalism a typo is not a small thing. It undercuts the very accuracy you are selling."
+              ]
+            },
+            {
+              h: "The usual suspects",
+              body: [
+                "Watch spelling, homophones (their, there, they're; its, it's), stray or missing apostrophes, and capitalisation. Check consistency too: if one bullet ends with a full stop, they all should.",
+                "Names are the classic trap. Check the spelling of every person, place and organisation."
+              ]
+            },
+            {
+              h: "Headlines and house style",
+              body: [
+                "A headline must be accurate first and catchy second. A headline that oversells the story is an error, even if every word is spelled right.",
+                "Keep tense, spelling and number style consistent with your publication's house style."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "highlight",
+              q: "Tap the errors.",
+              instruction: "Tap each word that is misspelt or the wrong word.",
+              tokens: ["The", "goverment", "said", "there", "new", "policy", "starts", "Monday"],
+              targets: [1, 3],
+              explain: "Goverment should be government, and there should be their. Two small errors, both fatal to your credibility."
+            },
+            {
+              type: "fillblank",
+              q: "Choose the right words.",
+              text: "They parked ___ car over ___ by the market.",
+              bank: ["their", "there", "they're"],
+              answer: ["their", "there"],
+              explain: "Their shows possession (their car); there shows place (over there); they're means they are."
+            },
+            {
+              type: "mcq",
+              q: "Which sentence is clean, with no errors?",
+              options: [
+                "Its been a long year for the council.",
+                "The council published their report on Friday.",
+                "He recieved the award last night.",
+                "Their going to announce it tomorrow."
+              ],
+              answer: 1,
+              explain: "The others have errors: Its should be It's, recieved should be received, and Their should be They're."
+            },
+            {
+              type: "multi",
+              q: "Which errors appear in this sentence: \"its a big day and the council have published they're report\"? Select all.",
+              options: [
+                "its should be it's",
+                "they're should be their",
+                "big is misspelt",
+                "report is misspelt"
+              ],
+              answers: [0, 1],
+              explain: "Its should be it's (it is), and they're should be their (possessive). Big and report are spelt correctly."
+            },
+            {
+              type: "swipe",
+              q: "Clean, or does it contain an error?",
+              leftLabel: "Has an error",
+              rightLabel: "Clean",
+              cards: [
+                { text: "She received the award.", side: "right" },
+                { text: "He recieved the award.", side: "left" },
+                { text: "Their going to the launch.", side: "left" },
+                { text: "The CEO's statement was clear.", side: "right" },
+                { text: "Its been a long year.", side: "left" }
+              ],
+              explain: "Recieved, Their (for they're) and Its (for it's) are errors. Received and CEO's are correct."
+            },
+            {
+              type: "mcq",
+              q: "A council voted to cut the transport budget by 10%. Which headline is accurate?",
+              options: [
+                "Council slashes transport budget by 90%",
+                "Council cuts transport budget by 10%",
+                "Council destroys public transport for good",
+                "Transport chaos as council strikes again"
+              ],
+              answer: 1,
+              explain: "Accuracy comes first. The others distort the number or sensationalise beyond what the facts support."
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "w4",
       title: "Week 4: Pitch and publish",
       summary: "Pitch a story properly, take edits well, and finish a publishable piece.",
