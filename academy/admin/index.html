@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Academy admin — generate access codes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
+  <style>
+  .ad { max-width: 540px; margin: 0 auto; padding: 2rem 1.1rem 5rem; }
+  .ad h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.7rem; margin: 0 0 .3rem; }
+  .ad-sub { color: #6a6a6a; margin: 0 0 1.6rem; }
+  .ad-field { margin: 0 0 .9rem; }
+  .ad-field label { display: block; font-size: .82rem; font-weight: 700; color: #6a6a6a; margin: 0 0 .3rem; }
+  .ad-input { width: 100%; font: inherit; border: 1.5px solid var(--rule); border-radius: 10px; padding: .75rem .9rem; background: #fff; color: var(--ink); }
+  .ad-input:focus { outline: none; border-color: var(--ink); }
+  .ad-row { display: flex; gap: .7rem; } .ad-row .ad-field { flex: 1; }
+  .ad-check { display: flex; gap: .5rem; align-items: center; font-size: .88rem; color: #5a5a5a; margin: 0 0 1rem; }
+  .ad-btn { width: 100%; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700;
+    font-size: 1.05rem; padding: .9rem 1.4rem; border-radius: 99px; }
+  .ad-btn:disabled { opacity: .5; cursor: default; }
+  .ad-status { font-size: .9rem; margin: .9rem 0 0; min-height: 1.2em; }
+  .ad-status .err { color: var(--accent); font-weight: 600; }
+  .ad-out { margin: 1.4rem 0 0; }
+  .ad-out[hidden] { display: none; }
+  .ad-codes { display: grid; gap: .5rem; margin: .6rem 0 0; }
+  .ad-code { display: flex; justify-content: space-between; align-items: center; gap: .6rem;
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: .6rem .8rem; }
+  .ad-code b { font-family: ui-monospace, Menlo, monospace; font-size: 1.05rem; letter-spacing: .05em; }
+  .ad-copy { border: 0; background: var(--ink); color: #fff; font-weight: 700; border-radius: 8px; padding: .35rem .8rem; cursor: pointer; font-size: .82rem; }
+  .ad-copyall { margin-top: .8rem; background: transparent; border: 1.5px solid var(--rule); color: var(--ink);
+    font-weight: 700; border-radius: 99px; padding: .5rem 1rem; cursor: pointer; }
+  .ad-note { font-size: .8rem; color: #8a8a8a; margin: 1.4rem 0 0; }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <h1>Generate access codes</h1>
+    <p class="ad-sub">For buyers who pay locally (Mukuru, EcoCash, bank, cash). Make a code, then send it to them.</p>
+
+    <form id="genForm" novalidate>
+      <div class="ad-field">
+        <label for="key">Admin password</label>
+        <input class="ad-input" id="key" type="password" placeholder="Your ADMIN_KEY" autocomplete="off">
+      </div>
+      <label class="ad-check"><input type="checkbox" id="remember"> Remember on this device</label>
+      <div class="ad-row">
+        <div class="ad-field">
+          <label for="count">How many codes</label>
+          <input class="ad-input" id="count" type="number" min="1" max="100" value="1">
+        </div>
+        <div class="ad-field">
+          <label for="note">Note (optional)</label>
+          <input class="ad-input" id="note" type="text" maxlength="80" placeholder="e.g. March, EcoCash">
+        </div>
+      </div>
+      <button class="ad-btn" id="genBtn" type="submit">Generate</button>
+    </form>
+    <p class="ad-status" id="status"></p>
+
+    <div class="ad-out" id="out" hidden>
+      <strong>Your codes (give one per buyer):</strong>
+      <div class="ad-codes" id="codes"></div>
+      <button class="ad-copyall" id="copyAll" type="button">Copy all</button>
+    </div>
+
+    <p class="ad-note">Each code works once and unlocks the course for one person. This page is safe to leave online: nothing can be generated without the admin password.</p>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+    // Set this to the same Worker URL used on the landing page.
+    var PAY_ENDPOINT = "";
+
+    var keyEl = document.getElementById("key");
+    var remember = document.getElementById("remember");
+    try { var saved = localStorage.getItem("mt_admin_key"); if (saved) { keyEl.value = saved; remember.checked = true; } } catch (e) {}
+
+    var form = document.getElementById("genForm");
+    var status = document.getElementById("status");
+    var btn = document.getElementById("genBtn");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var key = keyEl.value.trim();
+      var count = Math.max(1, Math.min(100, parseInt(document.getElementById("count").value, 10) || 1));
+      var note = document.getElementById("note").value.trim();
+      if (!key) { status.innerHTML = '<span class="err">Enter your admin password.</span>'; return; }
+      if (!PAY_ENDPOINT) { status.innerHTML = '<span class="err">Set PAY_ENDPOINT in this page first.</span>'; return; }
+      try { if (remember.checked) localStorage.setItem("mt_admin_key", key); else localStorage.removeItem("mt_admin_key"); } catch (e) {}
+
+      btn.disabled = true; status.textContent = "Generating...";
+      fetch(PAY_ENDPOINT, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "gencode", adminKey: key, count: count, note: note, prefix: "MT" })
+      })
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        btn.disabled = false;
+        if (!res.ok || !res.d || !res.d.codes) {
+          status.innerHTML = '<span class="err">' + ((res.d && res.d.error) || "Could not generate. Check your password.") + '</span>';
+          return;
+        }
+        status.textContent = "";
+        renderCodes(res.d.codes);
+      })
+      .catch(function () { btn.disabled = false; status.innerHTML = '<span class="err">Could not reach the server. Try again.</span>'; });
+    });
+
+    function renderCodes(codes) {
+      var out = document.getElementById("out");
+      var box = document.getElementById("codes");
+      box.innerHTML = "";
+      codes.forEach(function (c) {
+        var row = document.createElement("div"); row.className = "ad-code";
+        var b = document.createElement("b"); b.textContent = c; row.appendChild(b);
+        var cp = document.createElement("button"); cp.className = "ad-copy"; cp.type = "button"; cp.textContent = "Copy";
+        cp.addEventListener("click", function () { copy(c); cp.textContent = "Copied"; });
+        row.appendChild(cp); box.appendChild(row);
+      });
+      out.hidden = false;
+      document.getElementById("copyAll").onclick = function () { copy(codes.join("\n")); this.textContent = "Copied all"; };
+    }
+    function copy(text) { try { navigator.clipboard.writeText(text); } catch (e) {} }
+  })();
+  </script>
+</body>
+</html>

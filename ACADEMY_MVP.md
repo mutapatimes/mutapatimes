@@ -247,3 +247,12 @@ Each code is single-use, ties to the buyer's email (so they can re-unlock
 on another device), credits any referrer, and fires the newsletter, just
 like a card sale. Tune the local instructions text in `academy/index.html`
 (`#localInstructions`).
+
+## Easiest way to make codes: the admin page
+
+`/academy/admin/` is a password-protected page for generating access
+codes with a button, no Terminal needed. Set its `PAY_ENDPOINT` to the
+same Worker URL as the landing page. Enter your `ADMIN_KEY`, choose how
+many codes, click Generate, and copy the codes to send to local buyers.
+The page is safe to leave online because nothing generates without the
+admin password (checked by the Worker). It is noindex.
