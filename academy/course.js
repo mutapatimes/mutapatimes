@@ -3825,6 +3825,695 @@ window.COURSE = {
       ]
     },
     {
+      id: "solutions",
+      title: "Solution journalism",
+      summary: "Report the problem and how people are responding to it, with evidence. Plus the craft of reporting, interviewing and the press release.",
+      lessons: [
+        {
+          id: "four-pillars",
+          title: "The four pillars of solution journalism",
+          minutes: 8,
+          intro: "Bad news that looks hopeless drives readers away. Solution journalism reports the problem and how people are responding to it. Learn its four pillars.",
+          cards: [
+            {
+              h: "Why it exists",
+              body: [
+                "Mistrust of the media is growing, and a lot of news only points at problems and leaves the solving to politicians or someone else. Solution journalism tells the whole story: the problem, and credible, evidenced responses to it.",
+                "It is not cheerleading and it is not activism. It still scrutinises. It just refuses to leave the reader with no way forward."
+              ]
+            },
+            {
+              h: "The four pillars",
+              body: [
+                "One, describe the problem: how and why it happens. Two, what is already known: reliable data, facts and evidence, including how others have responded. Three, the lesson learned: a model someone else could actually repeat. Four, the limits: no solution is perfect, so name its weaknesses.",
+                "Miss the evidence and it is a feel-good story. Miss the limits and it is propaganda."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Order the four pillars of a solution-journalism piece.",
+              items: [
+                "Describe the problem: how and why it happens",
+                "What is already known: data, evidence, how others responded",
+                "The lesson learned: a model others could repeat",
+                "The limits: where the solution falls short"
+              ],
+              explain: "Problem, then evidence, then the transferable lesson, then an honest account of the limits."
+            },
+            {
+              type: "mcq",
+              q: "Solution journalism is best described as reporting that:",
+              options: [
+                "Only prints good news and avoids problems",
+                "Reports the problem and the evidenced response to it, while still scrutinising",
+                "Campaigns for a particular outcome",
+                "Leaves the solution entirely to politicians"
+              ],
+              answer: 1,
+              explain: "It covers the problem and a credible, evidenced response, without becoming cheerleading or activism."
+            },
+            {
+              type: "mcq",
+              q: "Why does the 'limits' pillar matter?",
+              options: [
+                "To make the piece more negative",
+                "Because no solution is perfect, and naming the weaknesses helps others not repeat them",
+                "To fill space",
+                "Because editors require ten paragraphs"
+              ],
+              answer: 1,
+              explain: "Honest limits let readers learn from a solution rather than copy its flaws."
+            },
+            {
+              type: "categorize",
+              q: "Sort these into solution journalism or not.",
+              buckets: [
+                { id: "yes", label: "Solution journalism" },
+                { id: "no", label: "Not solution journalism" }
+              ],
+              items: [
+                { text: "Evidence that the response actually worked", bucket: "yes" },
+                { text: "A model another community could copy", bucket: "yes" },
+                { text: "The limits of the solution, named honestly", bucket: "yes" },
+                { text: "Only upbeat quotes, no problem and no data", bucket: "no" },
+                { text: "Pointing at a problem and stopping there", bucket: "no" }
+              ],
+              explain: "Evidence, a transferable model and honest limits are the work. Pure positivity, or problem-only reporting, is not."
+            },
+            {
+              type: "multi",
+              q: "A solid solution-journalism piece includes which of these? Select all.",
+              options: [
+                "Reliable data and evidence",
+                "How a similar problem was tackled elsewhere",
+                "The limits of that response",
+                "Only good news, with no problem stated"
+              ],
+              answers: [0, 1, 2],
+              explain: "Evidence, a comparable response and its limits. Good-news-only is the opposite of the method."
+            }
+          ]
+        },
+        {
+          id: "ten-steps",
+          title: "Ten steps to a finished report",
+          minutes: 8,
+          intro: "From a topic to a published report. The craft that turns scattered research into a story people read.",
+          cards: [
+            {
+              h: "Research, then report",
+              body: [
+                "Start with secondary sources: what has already been written, records, official sites. Then go to primary sources: interview the people involved and affected. Arrive prepared, and ask why and how, not just what.",
+                "Verify what you gather in the field against other sources before you trust it."
+              ]
+            },
+            {
+              h: "Write, then sharpen",
+              body: [
+                "A report has three parts: a lead that draws the reader in, a body that explains the problem and the people in it, and a point that lands the conclusion. Alternate hard facts with quotes and narrative so it never reads like a textbook.",
+                "Write the headline last: striking, true, with a verb, and short. Then re-read and check everything."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Order the reporting process, first to last.",
+              items: [
+                "Choose a topic that matters to you and your readers",
+                "Research secondary sources, then interview primary sources",
+                "Go to the field and observe",
+                "Verify the field information against other sources",
+                "Write the lead, body and point",
+                "Write the headline, then re-read and check"
+              ],
+              explain: "Research and verify before you write. The headline and final check come last."
+            },
+            {
+              type: "mcq",
+              q: "When should you write the headline?",
+              options: [
+                "First, to guide the article",
+                "After you have written the whole text",
+                "It does not matter",
+                "Never, the editor does it"
+              ],
+              answer: 1,
+              explain: "Write it last, once you know what the piece actually says."
+            },
+            {
+              type: "mcq",
+              q: "The three parts of a report are:",
+              options: [
+                "Headline, photo, caption",
+                "Lead, body and point",
+                "Intro, advert, outro",
+                "Quote, quote, quote"
+              ],
+              answer: 1,
+              explain: "A lead to draw the reader in, a body to explain, and a point to conclude."
+            },
+            {
+              type: "mcq",
+              q: "Secondary and primary sources are:",
+              options: [
+                "Both just websites",
+                "Secondary is already-published material; primary is interviews with the people involved",
+                "Secondary is more reliable than any interview",
+                "The same thing"
+              ],
+              answer: 1,
+              explain: "Start with what is published, then go to the people themselves."
+            },
+            {
+              type: "fillblank",
+              q: "Complete the rule on headlines.",
+              text: "A good headline is striking, true, contains a ___, and for short news stays under about ___ characters.",
+              bank: ["verb", "60", "photo", "200"],
+              answer: ["verb", "60"],
+              explain: "A verb gives it energy; keep short news headlines tight."
+            },
+            {
+              type: "multi",
+              q: "Good practice when writing the report? Select all.",
+              options: [
+                "Alternate facts with quotes and narrative",
+                "Verify field information against other sources",
+                "Re-read and check grammar before publishing",
+                "Publish the first draft immediately to be fastest"
+              ],
+              answers: [0, 1, 2],
+              explain: "Mix facts and story, verify, and check. Speed never beats accuracy."
+            }
+          ]
+        },
+        {
+          id: "interview-method",
+          title: "Interview like a professional",
+          minutes: 8,
+          intro: "An interview has three phases: prepare, conduct, process. Do each well and the story almost writes itself.",
+          cards: [
+            {
+              h: "Before and during",
+              body: [
+                "Prepare your questions and highlight one or two 'rescue pillars': the answers you must get no matter what. Ask open-ended questions (How, Why, Describe), not yes-or-no ones, and never cram several questions into one.",
+                "Create a calm atmosphere. You are there to understand, not to win an argument. Record, but also take notes."
+              ]
+            },
+            {
+              h: "After",
+              body: [
+                "The interview is about the person, not you. You may tighten wording, but you must preserve the meaning and never manipulate a quote. Honour what you agreed, such as letting them check their quotes.",
+                "You do not pay an interviewee for a quote."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Which is an open-ended question?",
+              options: [
+                "Do you like the new park?",
+                "Under what circumstances would you support more green space?",
+                "Is the factory closed?",
+                "Are you happy?"
+              ],
+              answer: 1,
+              explain: "Open questions cannot be answered in one word, so they draw out real information."
+            },
+            {
+              type: "swipe",
+              q: "Open question or closed?",
+              leftLabel: "Closed",
+              rightLabel: "Open",
+              cards: [
+                { text: "How did the closure affect your family?", side: "right" },
+                { text: "Did the factory close?", side: "left" },
+                { text: "Why did you decide to stay?", side: "right" },
+                { text: "Are you worried?", side: "left" }
+              ],
+              explain: "How and why questions open people up. Yes-or-no questions close them down."
+            },
+            {
+              type: "mcq",
+              q: "Your 'rescue pillar' questions are:",
+              options: [
+                "Questions you can skip if short on time",
+                "The one or two answers you must get, no matter what",
+                "Questions the editor wrote",
+                "Closed questions only"
+              ],
+              answer: 1,
+              explain: "They keep you on track and guarantee the interview delivers what you need."
+            },
+            {
+              type: "mcq",
+              q: "When editing an interview for publication you may:",
+              options: [
+                "Change quotes to say what you wish they had said",
+                "Tighten wording, but never alter the meaning",
+                "Invent a better quote",
+                "Add your own opinion as theirs"
+              ],
+              answer: 1,
+              explain: "Tighten for clarity, but the meaning must stay exactly as the person intended."
+            },
+            {
+              type: "multi",
+              q: "Good interview practice? Select all.",
+              options: [
+                "Prepare and prioritise your questions",
+                "Listen and follow an unexpected answer",
+                "Record and also take written notes",
+                "Pay the interviewee for a strong quote"
+              ],
+              answers: [0, 1, 2],
+              explain: "Prepare, listen, and capture it twice. Paying for quotes corrupts the source."
+            }
+          ]
+        },
+        {
+          id: "press-release-craft",
+          title: "Write a press release",
+          minutes: 7,
+          intro: "A press release tells the media your story is worth covering. Structure it so a busy journalist can use it in minutes.",
+          cards: [
+            {
+              h: "The anatomy",
+              body: [
+                "A catchy, true title. A dateline: the place and date. A first sentence that answers what, who, when, where, how and why, because it decides whether a journalist reads on. A description that gives context.",
+                "Then quotes, starting with an ordinary person affected, then an official. An invitation or link for more. Background on you. And a contact person who actually answers the phone."
+              ]
+            },
+            {
+              h: "Then place it",
+              body: [
+                "Send it to the specific journalist who covers that beat, with a short, specific covering note that says what it is and why it matters.",
+                "Publish it on your own site or newsletter too."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Order the parts of a press release, top to bottom.",
+              items: [
+                "A catchy, true title",
+                "Dateline: place and date",
+                "First sentence answering what, who, when, where, why",
+                "Description and context",
+                "Quotes, ordinary person first then an official",
+                "Invitation or link, and a contact person"
+              ],
+              explain: "Lead with the news and the facts, then context, quotes and the practical details."
+            },
+            {
+              type: "mcq",
+              q: "What should the first sentence of a release do?",
+              options: [
+                "Thank the reader for their time",
+                "Pack in the key facts, because it decides whether a journalist reads on",
+                "Describe your school's history",
+                "List every team member"
+              ],
+              answer: 1,
+              explain: "The first sentence is the whole pitch. Put what, who, when, where and why up top."
+            },
+            {
+              type: "mcq",
+              q: "Whose quote should usually come first?",
+              options: [
+                "The most senior official",
+                "An ordinary person affected by the issue",
+                "A celebrity",
+                "The reporter"
+              ],
+              answer: 1,
+              explain: "Lead with the human stake, then add the official's response."
+            },
+            {
+              type: "multi",
+              q: "A usable press release includes which of these? Select all.",
+              options: [
+                "A contact person who answers the phone",
+                "A dateline",
+                "The key facts near the top",
+                "A demand that the journalist publish it unchanged"
+              ],
+              answers: [0, 1, 2],
+              explain: "Give them facts, a dateline and a contact. You cannot dictate how they cover it."
+            }
+          ]
+        },
+        {
+          id: "cp-solutions",
+          title: "Solution journalism and reporting",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on solution journalism, the reporting process and the interview. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers the four pillars, the ten steps, interviewing and the press release.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Order the four pillars of solution journalism.",
+              items: [
+                "Describe the problem",
+                "What is already known: data and evidence",
+                "The lesson learned: a repeatable model",
+                "The limits of the solution"
+              ],
+              explain: "Problem, evidence, transferable lesson, limits."
+            },
+            {
+              type: "mcq",
+              q: "A piece praises a recycling scheme, gives no data, and never mentions a drawback. It is:",
+              options: [
+                "Strong solution journalism",
+                "Closer to promotion than journalism, because it lacks evidence and limits",
+                "A straight news report",
+                "Investigative journalism"
+              ],
+              answer: 1,
+              explain: "Without evidence and honest limits, a positive story is just promotion."
+            },
+            {
+              type: "mcq",
+              q: "You are about to write up a story. The headline should be written:",
+              options: ["Before research", "First, before the body", "After the whole text is written", "By the photographer"],
+              answer: 2,
+              explain: "Write it last, once you know what the piece says."
+            },
+            {
+              type: "mcq",
+              q: "You read council minutes, then interview affected residents. The minutes are a ___ source and the residents are a ___ source.",
+              options: ["primary; secondary", "secondary; primary", "primary; primary", "secondary; secondary"],
+              answer: 1,
+              explain: "Published records are secondary; the people themselves are primary."
+            },
+            {
+              type: "mcq",
+              q: "Which question will get you the most usable answer?",
+              options: [
+                "Are you upset about the closure?",
+                "How has the closure changed your daily life?",
+                "Did you hear about the closure?",
+                "Is the closure bad?"
+              ],
+              answer: 1,
+              explain: "The open How question draws out detail; the others invite yes or no."
+            },
+            {
+              type: "multi",
+              q: "Which belong in a press release? Select all.",
+              options: ["A dateline", "The key facts in the first sentence", "A contact person", "An instruction to print it word for word"],
+              answers: [0, 1, 2],
+              explain: "Facts, a dateline and a contact. You cannot dictate coverage."
+            },
+            {
+              type: "mcq",
+              q: "After an interview, you may:",
+              options: [
+                "Rewrite a quote to be punchier even if it changes the meaning",
+                "Tighten wording while keeping the meaning exactly",
+                "Invent a quote that fits",
+                "Pay for a better quote"
+              ],
+              answer: 1,
+              explain: "Preserve meaning. Never manipulate or pay for quotes."
+            },
+            {
+              type: "categorize",
+              q: "Sort these reporting actions.",
+              buckets: [
+                { id: "good", label: "Good practice" },
+                { id: "bad", label: "Avoid" }
+              ],
+              items: [
+                { text: "Verify field information against other sources", bucket: "good" },
+                { text: "Alternate facts with quotes and narrative", bucket: "good" },
+                { text: "Publish the first draft to be fastest", bucket: "bad" },
+                { text: "State a solution's limits honestly", bucket: "good" },
+                { text: "Cram four questions into one", bucket: "bad" }
+              ],
+              explain: "Verify, mix facts with story, name limits. Do not rush drafts or pile up questions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "profession",
+      title: "The journalism profession",
+      summary: "What the trade really looks like: who does it, how they get in, what it pays, and how to earn trust.",
+      lessons: [
+        {
+          id: "industry-today",
+          title: "The trade today, by the numbers",
+          minutes: 8,
+          intro: "Journalism is changing fast. Here is what the evidence actually says about the trade you are entering.",
+          cards: [
+            {
+              h: "More journalists, spread wider",
+              body: [
+                "In the UK there are roughly 73,000 journalists, up from about 65,000 a few years earlier. But fewer work in traditional newspapers and magazines, around 30 percent, down from about 45 percent. The rest have spread into broadcasting, online, public relations and self-employment.",
+                "About 85 percent now make content for an online or digital platform, although print is still the main platform for many."
+              ]
+            },
+            {
+              h: "Where it is, what it pays",
+              body: [
+                "Journalism is heavily concentrated in London and the south east, around two thirds of the workforce. Median pay sits near the national average and has barely risen in real terms.",
+                "The image of journalists working extreme hours is overstated: the average week is about 41 hours. The bigger change is multi-skilling and higher work intensity."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Roughly how many journalists work in the UK, by recent estimates?",
+              options: ["About 7,300", "About 73,000", "About 730,000", "About 7 million"],
+              answer: 1,
+              explain: "Around 73,000, up from about 65,000 a few years earlier."
+            },
+            {
+              type: "mcq",
+              q: "The share of journalists in traditional newspaper and magazine publishing has:",
+              options: [
+                "Risen sharply",
+                "Fallen, to around 30 percent, as journalists spread into broadcast, online and PR",
+                "Stayed at about 70 percent",
+                "Reached almost 100 percent"
+              ],
+              answer: 1,
+              explain: "Traditional publishing has shrunk to roughly 30 percent as the trade disperses."
+            },
+            {
+              type: "mcq",
+              q: "About what share of journalists now make content for online or digital platforms?",
+              options: ["About 20 percent", "About 50 percent", "About 85 percent", "None"],
+              answer: 2,
+              explain: "Around 85 percent, even though print is still the main platform for many."
+            },
+            {
+              type: "mcq",
+              q: "Geographically, UK journalism is:",
+              options: [
+                "Evenly spread across the country",
+                "Concentrated in London and the south east",
+                "Mostly in the north",
+                "Mostly rural"
+              ],
+              answer: 1,
+              explain: "About two thirds work in London and the south east."
+            },
+            {
+              type: "multi",
+              q: "Which are true of the modern journalism job? Select all.",
+              options: [
+                "More multi-skilling across platforms",
+                "Higher work intensity",
+                "Growth in self-employment",
+                "Salaries rising fast in real terms"
+              ],
+              answers: [0, 1, 2],
+              explain: "Multi-skilling, intensity and freelancing are up. Pay has barely moved in real terms."
+            }
+          ]
+        },
+        {
+          id: "getting-in",
+          title: "Getting in, and being trusted",
+          minutes: 8,
+          intro: "How people actually enter journalism, what it costs, where most still get their information, and why trust is the trade's biggest task.",
+          cards: [
+            {
+              h: "Qualified, but costly to enter",
+              body: [
+                "Journalism is highly qualified: most journalists have a degree, and a large majority hold a journalism qualification, with employers valuing accredited ones. But entry is expensive. Most new entrants did unpaid work experience, and many start with heavy student debt.",
+                "That cost keeps the trade less diverse and more middle-class than the population it serves, which is a problem for journalism, not just for would-be journalists."
+              ]
+            },
+            {
+              h: "Sourcing and trust",
+              body: [
+                "Almost all journalists now use social media, but interviewing is still the main source for most of them. Most feel able to verify online information, mainly by checking with contacts and seeking multiple sources.",
+                "Public trust is low, especially for tabloids. Asked how to restore it, journalists themselves point to stronger professional standards, ethics and transparency."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Most people now enter journalism having first done:",
+              options: ["A paid staff job from day one", "Unpaid work experience or an internship", "Nothing in particular", "A science degree"],
+              answer: 1,
+              explain: "Work experience, usually unpaid, is now the common route in."
+            },
+            {
+              type: "mcq",
+              q: "A major barrier to diversity in journalism is:",
+              options: [
+                "Too many training courses",
+                "The cost of entry, from unpaid placements and debt, which skews the trade middle-class",
+                "Too much regulation",
+                "A shortage of stories"
+              ],
+              answer: 1,
+              explain: "Unpaid work and debt mean entrants often need family support, narrowing who gets in."
+            },
+            {
+              type: "mcq",
+              q: "Despite the rise of social media, the main source of information for most journalists is still:",
+              options: ["Social media", "Interviewing", "Press releases", "Television"],
+              answer: 1,
+              explain: "Interviewing remains the single most important source, even as nearly all use social media too."
+            },
+            {
+              type: "multi",
+              q: "How do journalists mainly verify online claims? Select all.",
+              options: [
+                "Checking with trusted contacts",
+                "Seeking multiple independent sources",
+                "Going back to the original source",
+                "Trusting whatever has the most shares"
+              ],
+              answers: [0, 1, 2],
+              explain: "Contacts, multiple sources and the original. Popularity is not verification."
+            },
+            {
+              type: "mcq",
+              q: "Asked how to restore public trust, journalists mostly point to:",
+              options: [
+                "More celebrity coverage",
+                "Stronger professional standards, ethics and transparency",
+                "Faster publishing",
+                "More opinion columns"
+              ],
+              answer: 1,
+              explain: "Standards, ethics and openness, not speed or noise, are what rebuild trust."
+            }
+          ]
+        },
+        {
+          id: "cp-profession",
+          title: "The journalism profession",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on the trade: its shape, its barriers, its sourcing and its trust problem. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers the numbers, how people get in, sourcing and trust.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Which figure is closest to the number of journalists working in the UK?",
+              options: ["About 23,000", "About 73,000", "About 173,000", "About 730,000"],
+              answer: 1,
+              explain: "Roughly 73,000."
+            },
+            {
+              type: "mcq",
+              q: "Traditional newspaper and magazine publishing now employs roughly what share of journalists?",
+              options: ["About 30 percent", "About 55 percent", "About 75 percent", "About 95 percent"],
+              answer: 0,
+              explain: "Around 30 percent, down from about 45 percent, as the trade disperses."
+            },
+            {
+              type: "mcq",
+              q: "The claim 'journalists work punishing, extreme hours' is, on the evidence:",
+              options: [
+                "Confirmed, around 60 hours a week",
+                "Overstated, the average week is around 41 hours",
+                "True only in radio",
+                "Impossible to measure"
+              ],
+              answer: 1,
+              explain: "The average week is about 41 hours; the long-hours image is overstated."
+            },
+            {
+              type: "mcq",
+              q: "A talented school-leaver from a low-income family is most likely blocked from journalism by:",
+              options: [
+                "Lack of talent",
+                "The cost of unpaid placements and study debt",
+                "Too few online jobs",
+                "A ban on young reporters"
+              ],
+              answer: 1,
+              explain: "Cost of entry, not ability, is the barrier that narrows the trade."
+            },
+            {
+              type: "mcq",
+              q: "A reporter says: 'I get most of my real information from social media.' On the evidence, this is:",
+              options: [
+                "Typical, social media is the main source",
+                "Unusual, interviewing is still the main source for most journalists",
+                "Impossible",
+                "Only true in print"
+              ],
+              answer: 1,
+              explain: "Nearly all use social media, but interviewing is still the main source."
+            },
+            {
+              type: "multi",
+              q: "Which are sound ways to verify an online claim? Select all.",
+              options: [
+                "Check it with a trusted contact",
+                "Find a second, independent source",
+                "Trace it to the original source",
+                "Count the likes and shares"
+              ],
+              answers: [0, 1, 2],
+              explain: "Contacts, independent corroboration and the original. Engagement is not evidence."
+            },
+            {
+              type: "mcq",
+              q: "Which audience tends to trust journalists the least?",
+              options: ["Readers of upmarket papers", "Readers of red-top tabloids", "Radio listeners", "Everyone trusts them equally"],
+              answer: 1,
+              explain: "Trust is lowest for tabloid or red-top journalism."
+            },
+            {
+              type: "mcq",
+              q: "The strongest lever for restoring public trust, per journalists themselves, is:",
+              options: [
+                "Publishing faster than rivals",
+                "Stronger standards, ethics and transparency",
+                "More sensational headlines",
+                "More celebrity news"
+              ],
+              answer: 1,
+              explain: "Standards, ethics and openness, not speed or sensation."
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "real-critique",
       title: "Real-world critique",
       summary: "Two more real press releases. Read the source, find the story, and avoid being a stenographer.",
@@ -4107,6 +4796,25 @@ window.COURSE = {
               ],
               answers: [0, 1, 2],
               explain: "Distinctive, trusted work that earns loyal subscribers sustains reader revenue. Cheap filler does not."
+            },
+            {
+              type: "mcq",
+              q: "Solution journalism reports a problem and also:",
+              options: [
+                "Only the good news, with the problem left out",
+                "Credible, evidenced reporting of how people are responding to it, and the limits",
+                "The reporter's personal opinion",
+                "A demand that readers take action"
+              ],
+              answer: 1,
+              explain: "It pairs the problem with an evidenced response and honest limits, without becoming cheerleading."
+            },
+            {
+              type: "mcq",
+              q: "Despite social media being everywhere, the main source for most journalists is still:",
+              options: ["Social media", "Interviewing", "Press releases", "Television"],
+              answer: 1,
+              explain: "Nearly all journalists use social media, but interviewing remains the main source."
             },
             {
               type: "order",
