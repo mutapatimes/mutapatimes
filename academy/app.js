@@ -15,6 +15,7 @@
   var XP_PER_EXERCISE = 10;
   var XP_LESSON_BONUS = 50;
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var examMode = false; // true during checkpoint lessons: no per-question explanations
 
   var COURSE = window.COURSE;
   var view = document.getElementById("view");
@@ -207,6 +208,7 @@
     var lesson = findLesson(id);
     if (!lesson) { go("#/"); return; }
     if (!isUnlocked(id)) { go("#/"); return; }
+    examMode = !!lesson.checkpoint;
     clear(view); renderChips();
 
     var top = el("div", "ac-lessontop");
@@ -296,9 +298,11 @@
   function feedback(host, ok, explain, onContinue, opts) {
     opts = opts || {};
     if (ok) { Sound.play("correct"); } else { Sound.play("wrong"); buzz(60); }
-    var ex = el("p", "ac-explain " + (ok ? "good" : "bad"));
-    ex.textContent = (opts.label || (ok ? "Correct. " : "Not quite. ")) + (explain || "");
-    host.appendChild(ex); flash(ex, ok);
+    if (!examMode) {
+      var ex = el("p", "ac-explain " + (ok ? "good" : "bad"));
+      ex.textContent = (opts.label || (ok ? "Correct. " : "Not quite. ")) + (explain || "");
+      host.appendChild(ex); flash(ex, ok);
+    }
     var acts = el("div", "ac-actions");
     var cont = el("button", "ac-btn", "Continue"); cont.addEventListener("click", function () { Sound.play("tap"); onContinue(); });
     acts.appendChild(cont); host.appendChild(acts);

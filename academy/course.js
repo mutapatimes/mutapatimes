@@ -1874,6 +1874,72 @@ window.COURSE = {
               explain: "Even one region holds many languages, histories and media systems. Specifics beat generalisations."
             }
           ]
+        },
+        {
+          id: "cp-regions",
+          title: "Africa region by region",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on the continent's regions. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers the five regions, their languages, hubs and blocs.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "match",
+              q: "Match each region to its main bloc.",
+              pairs: [
+                { a: "West Africa", b: "ECOWAS" },
+                { a: "East Africa", b: "EAC" },
+                { a: "Central Africa", b: "ECCAS" },
+                { a: "Southern Africa", b: "SADC" }
+              ],
+              explain: "Each region has its own economic community."
+            },
+            {
+              type: "categorize",
+              q: "Sort these West African countries by main official language.",
+              buckets: [
+                { id: "anglo", label: "Mainly English-speaking" },
+                { id: "franco", label: "Mainly French-speaking" }
+              ],
+              items: [
+                { text: "Nigeria", bucket: "anglo" },
+                { text: "Ghana", bucket: "anglo" },
+                { text: "Senegal", bucket: "franco" },
+                { text: "Côte d'Ivoire", bucket: "franco" }
+              ],
+              explain: "West Africa splits between Anglophone and Francophone states."
+            },
+            {
+              type: "mcq",
+              q: "In which North African country is broadcast the most influential media?",
+              options: ["Egypt", "Tunisia", "Morocco", "Algeria"],
+              answer: 1,
+              explain: "Tunisia is the case where broadcast, not print, leads."
+            },
+            {
+              type: "mcq",
+              q: "Which language is widely spoken across Kenya and Tanzania?",
+              options: ["Amharic", "Swahili", "Portuguese", "Hausa"],
+              answer: 1,
+              explain: "Swahili is widely spoken in Kenya and Tanzania, useful for regional reach."
+            },
+            {
+              type: "mcq",
+              q: "Which region is the least covered in African media?",
+              options: ["Southern Africa", "East Africa", "Central Africa", "West Africa"],
+              answer: 2,
+              explain: "Central Africa barely featured in regional coverage, which makes original reporting there valuable."
+            },
+            {
+              type: "mcq",
+              q: "Which country ranks among the freest in the world for press freedom?",
+              options: ["Eritrea", "Namibia", "Egypt", "Chad"],
+              answer: 1,
+              explain: "Namibia ranks among the freest, a reminder that press freedom varies hugely."
+            }
+          ]
         }
       ]
     },
@@ -2077,6 +2143,84 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Trusted contacts you verify beat both guesswork and uncredited copying."
+            }
+          ]
+        },
+        {
+          id: "cp-reporting",
+          title: "Reporting",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on reporting. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers finding sources, the interview, verification and reporting from a distance.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Put a sound interview in order, from first to last.",
+              items: [
+                "Research the subject and the topic",
+                "Prepare your questions",
+                "Listen, and follow the unexpected answer",
+                "Check facts and quotes before you finish"
+              ],
+              explain: "Research and prep first, so you can truly listen, then verify before you leave."
+            },
+            {
+              type: "mcq",
+              q: "A source says: you can use this, but do not name me. This is:",
+              options: ["On the record", "On background", "A press release", "An opinion"],
+              answer: 1,
+              explain: "Background means use the information without naming the person."
+            },
+            {
+              type: "mcq",
+              q: "A government department emails a press release announcing a success. It is:",
+              options: [
+                "A finished story",
+                "A starting point that tells you what someone wants said",
+                "Proof the claim is true",
+                "An independent source"
+              ],
+              answer: 1,
+              explain: "A release is a prompt to report, not the report itself."
+            },
+            {
+              type: "multi",
+              q: "Which are useful verification steps? Select all.",
+              options: [
+                "Reverse image search a photo",
+                "Cross-check a figure against an independent source",
+                "Trust a single anonymous tip with no support",
+                "Check names and dates against the record"
+              ],
+              answers: [0, 1, 3],
+              explain: "Independent corroboration and basic checks catch most errors. A lone unsupported tip does not."
+            },
+            {
+              type: "mcq",
+              q: "You report from abroad on an event you did not witness. How should you describe it?",
+              options: [
+                "As if you were there, for impact",
+                "With clear attribution to people and footage you verified",
+                "Without any sources",
+                "As opinion"
+              ],
+              answer: 1,
+              explain: "Attribute what you did not witness. Honesty about how you know is part of accuracy."
+            },
+            {
+              type: "mcq",
+              q: "A trusted contact gives you a figure with great confidence. You should:",
+              options: [
+                "Publish it, they are trusted",
+                "Treat it as a claim and check it against another source",
+                "Ignore it",
+                "Publish it as opinion"
+              ],
+              answer: 1,
+              explain: "Confidence is not evidence. Verify before it becomes a fact in print."
             }
           ]
         }
@@ -2305,6 +2449,76 @@ window.COURSE = {
               ],
               answers: [0, 1, 3],
               explain: "Those three are mistakes to fix. Checking every figure is exactly what you should be doing."
+            }
+          ]
+        },
+        {
+          id: "cp-writing",
+          title: "Writing",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on writing. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers structure, the lede, clear writing and self-editing.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Order a classic inverted-pyramid news story, top to bottom.",
+              items: [
+                "The most important news: what happened and who it affects",
+                "Key supporting facts and context",
+                "Quotes and telling detail",
+                "Background and minor detail"
+              ],
+              explain: "Most important first. A reader who leaves early still has the heart of the story."
+            },
+            {
+              type: "mcq",
+              q: "Which is the stronger lede?",
+              options: [
+                "At a meeting held on Tuesday, a committee convened to discuss various matters",
+                "Zimbabwe will require crypto firms to register yearly and pay US$500, or face charges"
+              ],
+              answer: 1,
+              explain: "The second leads with the news and who it affects."
+            },
+            {
+              type: "mcq",
+              q: "Which sentence is clearer?",
+              options: [
+                "It should be noted that fees were raised by the bank at this point in time",
+                "The bank raised fees"
+              ],
+              answer: 1,
+              explain: "Active, concrete and free of filler."
+            },
+            {
+              type: "multi",
+              q: "Which phrases are clutter you can usually cut? Select all.",
+              options: ["in order to", "US$500", "at this point in time", "it should be noted that"],
+              answers: [0, 2, 3],
+              explain: "Those three add words without meaning. A concrete figure is information."
+            },
+            {
+              type: "highlight",
+              q: "Tap the clutter.",
+              instruction: "Tap every word you could cut without losing the meaning.",
+              tokens: ["It", "should", "be", "noted", "that", "the", "bank", "raised", "fees"],
+              targets: [0, 1, 2, 3, 4],
+              explain: "It should be noted that adds nothing."
+            },
+            {
+              type: "mcq",
+              q: "The best first move when editing your own draft is to:",
+              options: [
+                "Add more adjectives",
+                "Read it aloud, as if a stranger wrote it",
+                "Make it longer",
+                "Publish before you lose nerve"
+              ],
+              answer: 1,
+              explain: "Distance and your ear catch what silent re-reading misses."
             }
           ]
         }
@@ -2747,6 +2961,78 @@ window.COURSE = {
               exerciseId: "reflection-1"
             }
           ]
+        },
+        {
+          id: "cp-pitch",
+          title: "Pitch and publish",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on pitching and publishing. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers the pitch, taking edits, the pre-publication checklist and contributor life.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Which pitch subject line is strongest?",
+              options: [
+                "Story idea",
+                "Quick question",
+                "Diaspora families face higher fees as banks change money-transfer rules",
+                "Please read when you can"
+              ],
+              answer: 2,
+              explain: "Specific and newsy. The subject line is the lede of your pitch."
+            },
+            {
+              type: "mcq",
+              q: "An editor cuts a paragraph you liked. The best response is to:",
+              options: [
+                "Refuse and restore it",
+                "Ask why if unclear, and learn from the reason",
+                "Withdraw the piece",
+                "Add two more paragraphs in protest"
+              ],
+              answer: 1,
+              explain: "Edits make pieces stronger. Understand the reason rather than defend the draft."
+            },
+            {
+              type: "multi",
+              q: "Which belong on the pre-publication checklist? Select all.",
+              options: [
+                "Check every name, figure and date",
+                "Make the headline accurate, not just catchy",
+                "Add praise words to sound confident",
+                "Write a standfirst that says why to care"
+              ],
+              answers: [0, 1, 3],
+              explain: "Accuracy and a clear headline and standfirst matter. Praise words are the opposite of what to add."
+            },
+            {
+              type: "mcq",
+              q: "What does an editor value most in a contributor over time?",
+              options: [
+                "One brilliant piece, then silence",
+                "Reliability: deadlines met, clean copy, pitched regularly",
+                "The longest articles",
+                "The most adjectives"
+              ],
+              answer: 1,
+              explain: "Dependability builds a byline. A single clever line is soon forgotten."
+            },
+            {
+              type: "multi",
+              q: "A strong pitch answers which questions? Select all.",
+              options: [
+                "What the story is",
+                "Why it matters now",
+                "Why you are the one to write it",
+                "How long you have been a reader"
+              ],
+              answers: [0, 1, 2],
+              explain: "What, why now, and why you, plus why it fits this publication. Your reading history is not the point."
+            }
+          ]
         }
       ]
     },
@@ -2969,6 +3255,85 @@ window.COURSE = {
               ],
               answers: [0, 1, 3],
               explain: "Curate the best and most varied, make it easy to reach, and include self-started work. Do not dump every draft."
+            }
+          ]
+        },
+        {
+          id: "cp-digital",
+          title: "The digital journalist",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on digital skills. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers digital-age journalism, personal brand and freelancing.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What does open journalism mean in a digital newsroom?",
+              options: [
+                "Publishing without editing",
+                "Using the online audience as a source of leads, case studies and community",
+                "Making all content free",
+                "Only using social media"
+              ],
+              answer: 1,
+              explain: "Open journalism treats readers as contributors and sources, while still verifying what they provide."
+            },
+            {
+              type: "mcq",
+              q: "What is the 80/20 rule for a journalist's social media?",
+              options: [
+                "80 percent personal, 20 percent professional",
+                "Roughly 80 percent professional content, 20 percent personal",
+                "Post only 20 percent of the time",
+                "Spend 80 percent of the day online"
+              ],
+              answer: 1,
+              explain: "Lead with professional content, leavened with some personality."
+            },
+            {
+              type: "mcq",
+              q: "After finishing this course, what should you add to your LinkedIn Education?",
+              options: ["Nothing", "The Mutapa Times Academy", "Only your university", "A list of hobbies"],
+              answer: 1,
+              explain: "List The Mutapa Times Academy. It shows initiative and signals your focus."
+            },
+            {
+              type: "mcq",
+              q: "Do you need to have been professionally published to build a portfolio?",
+              options: [
+                "Yes, only published work counts",
+                "No, reporting and self-publishing shows initiative",
+                "Only with a degree",
+                "Portfolios are not used"
+              ],
+              answer: 1,
+              explain: "Self-started, self-published work demonstrates resourcefulness."
+            },
+            {
+              type: "mcq",
+              q: "What most reliably turns a one-off commission into regular freelance work?",
+              options: [
+                "Filing late but brilliantly",
+                "Reliability and a good relationship with the editor",
+                "Pitching once a year",
+                "Refusing edits"
+              ],
+              answer: 1,
+              explain: "Editors rehire dependable writers who file clean copy on time."
+            },
+            {
+              type: "multi",
+              q: "Which belong in a strong freelance portfolio? Select all.",
+              options: [
+                "Your best and most varied pieces",
+                "A clear, clickable link",
+                "Every rough draft you have written",
+                "Self-published work that shows initiative"
+              ],
+              answers: [0, 1, 3],
+              explain: "Curate the best, make it easy to reach, include self-started work. Do not dump every draft."
             }
           ]
         }
@@ -3214,6 +3579,85 @@ window.COURSE = {
               explain: "Reporting independently and publishing it yourself shows initiative and gives editors real work to judge."
             }
           ]
+        },
+        {
+          id: "cp-hired",
+          title: "Getting hired",
+          checkpoint: true,
+          minutes: 10,
+          intro: "A checkpoint on CVs and cover letters. You need 80% to pass. No explanations during the test.",
+          cards: [
+            { h: "Before you start", body: ["This covers the journalism CV, the cover letter and common mistakes.", "Questions only. Below 80% means a review and a retry."] }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Which bullet point is strongest on a journalism CV?",
+              options: [
+                "Responsible for writing and reporting",
+                "Good at working to deadlines",
+                "Broke a story on unreported campus assaults that led to new safety measures",
+                "Did various tasks at the newspaper"
+              ],
+              answer: 2,
+              explain: "Show, do not tell. A specific, high-impact achievement beats vague duties."
+            },
+            {
+              type: "mcq",
+              q: "A sensible maximum length for a CV is:",
+              options: ["Half a page", "One or two pages", "Five pages", "As long as possible"],
+              answer: 1,
+              explain: "One to two pages, strongest material first."
+            },
+            {
+              type: "mcq",
+              q: "The strongest way to show you fit a particular newsroom in a cover letter is to:",
+              options: [
+                "Say you are passionate and hard working",
+                "Reference a recent piece they ran and connect it to the work you want to do",
+                "List every job you have had",
+                "Use a flashy design"
+              ],
+              answer: 1,
+              explain: "Referencing their actual work proves you did your homework."
+            },
+            {
+              type: "mcq",
+              q: "Why are typos especially damaging on a journalism application?",
+              options: [
+                "They are not, editors ignore them",
+                "Because attention to detail is the job, so errors undercut your core claim",
+                "Because they make the CV longer",
+                "Only broadcast editors care"
+              ],
+              answer: 1,
+              explain: "A typo-riddled application contradicts the very skill you are selling."
+            },
+            {
+              type: "multi",
+              q: "Which are common CV mistakes to avoid? Select all.",
+              options: [
+                "Listing tasks instead of the skills you built",
+                "Generic cliches like hard-working team player",
+                "Quantifying achievements with real numbers",
+                "Reducing a three-year degree to two bare lines"
+              ],
+              answers: [0, 1, 3],
+              explain: "Tasks-not-skills, cliches and underselling your education are mistakes. Quantifying is good practice."
+            },
+            {
+              type: "mcq",
+              q: "How should you present a non-journalism job, like bar work, on a journalism CV?",
+              options: [
+                "Leave it off",
+                "List only the tasks",
+                "Highlight the transferable skills it built, like handling the public and conflict",
+                "Pretend it was a reporting job"
+              ],
+              answer: 2,
+              explain: "Focus on transferable skills. Dealing with people, pressure and money all matter."
+            }
+          ]
         }
       ]
     },
@@ -3302,6 +3746,136 @@ window.COURSE = {
               ],
               model: "Promise: a weekly newsletter for Zimbabweans in the UK on the money side of diaspora life, sending, saving and supporting family back home. Name: Pounds and Home. Cadence: every Thursday morning. First issue headline: The real cost of sending GBP100 to Harare. Summary: a plain comparison of five transfer routes, what each actually costs after fees and rate, and the one most families get wrong.",
               exerciseId: "substack-plan-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "final",
+      title: "Final assessment",
+      summary: "One comprehensive exam across the whole course. Pass it to earn your certificate.",
+      lessons: [
+        {
+          id: "final-exam",
+          title: "Final exam",
+          checkpoint: true,
+          minutes: 20,
+          intro: "The final exam, drawing on the whole course. You need 80% to pass. No explanations during the test.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This pulls together everything: foundations, the newsroom, the business of news, reporting Africa, the craft, fact-checking and copy, and getting your work out.",
+                "There is no teaching here. Take your time, and if you do not reach 80%, review the units and sit it again."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Which is news rather than PR?",
+              options: [
+                "We are proud to unveil our world-class platform",
+                "A sourced report that a state firm's losses widened",
+                "Join the movement and back our cause today",
+                "A brochure listing a product's benefits"
+              ],
+              answer: 1,
+              explain: "News reports what happened, with sources."
+            },
+            {
+              type: "mcq",
+              q: "Which is the stronger lede?",
+              options: [
+                "A committee met on Tuesday to discuss a number of matters",
+                "Power cuts will lengthen to 18 hours a day across Harare, the utility says"
+              ],
+              answer: 1,
+              explain: "Lead with the news and who it affects."
+            },
+            {
+              type: "mcq",
+              q: "A confident source gives you a striking figure. Before publishing you should:",
+              options: [
+                "Publish it, they sounded sure",
+                "Treat it as a claim and verify it against another source",
+                "Run it as opinion",
+                "Ignore it"
+              ],
+              answer: 1,
+              explain: "Confidence is not evidence."
+            },
+            {
+              type: "mcq",
+              q: "Why is relying on Western wire agencies for African news a problem?",
+              options: [
+                "Wires are always wrong",
+                "Non-Africans end up setting the agenda and framing, often for a Western audience",
+                "Wires are too slow",
+                "There is no problem"
+              ],
+              answer: 1,
+              explain: "Whoever supplies the copy shapes the agenda."
+            },
+            {
+              type: "mcq",
+              q: "What is a metered paywall?",
+              options: [
+                "Everything is locked from the first click",
+                "A set number of free articles, then you must pay",
+                "All content is free",
+                "Only advertisers can read"
+              ],
+              answer: 1,
+              explain: "A free allowance, then a prompt to subscribe."
+            },
+            {
+              type: "mcq",
+              q: "You have an evergreen courts feature for a daily. Best first contact?",
+              options: ["The editor-in-chief", "The courts beat reporter", "Advertising", "The receptionist"],
+              answer: 1,
+              explain: "Pitch the person who owns that coverage day to day."
+            },
+            {
+              type: "highlight",
+              q: "Tap the errors.",
+              instruction: "Tap each word that is misspelt or the wrong word.",
+              tokens: ["The", "council", "have", "recieved", "there", "report"],
+              targets: [3, 4],
+              explain: "Recieved should be received, and there should be their."
+            },
+            {
+              type: "fillblank",
+              q: "Choose the right words.",
+              text: "They left ___ notebooks over ___ by the desk.",
+              bank: ["their", "there", "they're"],
+              answer: ["their", "there"],
+              explain: "Their shows possession; there shows place; they're means they are."
+            },
+            {
+              type: "mcq",
+              q: "How do you avoid the 'Africa is one country' trope?",
+              options: [
+                "Cover fewer countries",
+                "Name the specific country and ground it in its own context",
+                "Use more photos",
+                "Write only about the continent as a whole"
+              ],
+              answer: 1,
+              explain: "Name the country and give it specific context."
+            },
+            {
+              type: "mcq",
+              q: "You realise after publishing that a key figure was wrong. You should:",
+              options: [
+                "Quietly delete the story",
+                "Leave it, few will notice",
+                "Correct it openly and note the correction",
+                "Blame the source in a new piece"
+              ],
+              answer: 2,
+              explain: "Accuracy includes correcting openly."
             }
           ]
         }
