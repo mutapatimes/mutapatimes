@@ -328,3 +328,12 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
 .ac-node.is-checkpoint .ac-node-face { border-color: var(--accent); color: var(--accent); }
 .ac-node.is-checkpoint.is-done .ac-node-face { background: var(--accent); border-color: var(--accent); color: #fff; }
 .ac-node.is-checkpoint .ac-node-label { font-weight: 700; }
+
+/* ============================================================
+   v5: lesson imagery
+   ============================================================ */
+.ac-hero-img { margin: 0 0 1.3rem; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.ac-hero-img img { display: block; width: 100%; height: clamp(150px, 32vw, 240px); object-fit: cover;
+  animation: ac-reveal .5s var(--ease-out) both; }
+.ac-card-img { margin: 0 0 .9rem; border-radius: 10px; overflow: hidden; }
+.ac-card-img img { display: block; width: 100%; max-height: 220px; object-fit: cover; }

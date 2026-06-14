@@ -2,12 +2,11 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mutapa Times Academy — Learn journalism for Zimbabwe and the diaspora</title>
+  <title>Mutapa Times Academy — From learner to published journalist</title>
   <link rel="canonical" href="https://mutapatimes.com/academy/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#1a1a1a">
-  <meta name="description" content="A self-paced online journalism course for Zimbabwe, the diaspora and the wider continent. 13 units, interactive lessons, checkpoints and a certificate. Pay by card or PayPal.">
-  <!-- Flip to index, follow when you launch publicly. -->
+  <meta name="description" content="A self-paced online journalism course for Zimbabwe, the diaspora and the wider continent. Learn the craft, earn a certificate, and work towards a published byline and your own contributor profile on The Mutapa Times.">
   <meta name="robots" content="noindex, follow">
   <link rel="apple-touch-icon" href="/icon.png?v=2">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
@@ -19,47 +18,71 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mutapa Times Academy">
-  <meta property="og:description" content="Learn to report on Zimbabwe, the diaspora and the wider continent. Self-paced, interactive, with a certificate.">
+  <meta property="og:description" content="Learn journalism for Zimbabwe and the diaspora. Earn a certificate and work towards a published byline and your own contributor profile.">
   <meta property="og:url" content="https://mutapatimes.com/academy/">
+  <meta property="og:image" content="https://mutapatimes.com/img/uploads/image_bank_academy/busy-newsroom.jpg">
 
   <style>
-  .al { max-width: 860px; margin: 0 auto; padding: 0 1.1rem 5rem; }
-  .al-top { display: flex; align-items: center; justify-content: space-between;
-    border-bottom: 2px solid var(--ink); padding: .7rem 0; margin-bottom: 1.5rem; }
+  .al { max-width: 980px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+  .al-top { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); padding: .7rem 0; margin-bottom: 1.5rem; }
   .al-top a { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
   .al-top span { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
 
-  .al-hero { padding: 1.4rem 0 1rem; }
+  /* Hero */
+  .al-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.8rem; align-items: center; padding: 1.2rem 0 1rem; }
   .al-eyebrow { font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 .6rem; }
-  .al-h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: clamp(2rem, 6.5vw, 3.2rem); line-height: 1.06; margin: 0 0 1rem; }
-  .al-sub { font-size: 1.15rem; color: #3a3a3a; max-width: 38rem; margin: 0 0 1.4rem; }
-  .al-cta { display: inline-flex; align-items: center; gap: .6rem; background: var(--accent); color: #fff;
-    border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 1.05rem; padding: .95rem 1.7rem;
-    border-radius: 99px; text-decoration: none; transition: opacity .15s, transform .1s; }
+  .al-h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: clamp(2rem, 5.4vw, 3.1rem); line-height: 1.05; margin: 0 0 1rem; }
+  .al-sub { font-size: 1.12rem; color: #3a3a3a; margin: 0 0 1.4rem; }
+  .al-ctas { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+  .al-cta { display: inline-flex; align-items: center; gap: .55rem; background: var(--accent); color: #fff; border: 0; cursor: pointer;
+    font: inherit; font-weight: 700; font-size: 1.02rem; padding: .9rem 1.5rem; border-radius: 99px; text-decoration: none; transition: opacity .15s, transform .1s; }
   .al-cta:hover { opacity: .92; } .al-cta:active { transform: translateY(1px); }
-  .al-pricechip { display: inline-block; font-weight: 700; font-size: .9rem; background: var(--bg); color: var(--ink);
-    padding: .35rem .8rem; border-radius: 99px; margin-left: .6rem; }
-  .al-paynote { font-size: .85rem; color: #6a6a6a; margin: .9rem 0 0; }
+  .al-cta--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+  .al-pricechip { display: inline-block; font-weight: 700; font-size: .85rem; background: rgba(255,255,255,.25); padding: .25rem .6rem; border-radius: 99px; margin-left: .4rem; }
+  .al-paynote { font-size: .84rem; color: #6a6a6a; margin: 1rem 0 0; }
+  .al-heroimg { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  .al-heroimg img { display: block; width: 100%; height: 100%; max-height: 360px; object-fit: cover; }
 
-  .al-section { margin: 2.4rem 0 0; }
-  .al-h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.6rem; margin: 0 0 1rem;
-    border-bottom: 2px solid var(--ink); padding-bottom: .4rem; }
+  .al-section { margin: 2.8rem 0 0; }
+  .al-h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.7rem; margin: 0 0 .4rem; }
+  .al-lead { color: #5a5a5a; margin: 0 0 1.2rem; max-width: 42rem; }
+  .al-rule { border: 0; border-top: 2px solid var(--ink); margin: .2rem 0 1.2rem; }
+
+  .al-stats { display: flex; flex-wrap: wrap; gap: 1.8rem; }
+  .al-stat b { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 2.1rem; color: var(--accent); line-height: 1; }
+  .al-stat span { font-size: .82rem; color: #6a6a6a; }
+
+  /* Pathway */
+  .al-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .al-step { background: var(--paper); border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; }
+  .al-step-img { height: 120px; overflow: hidden; }
+  .al-step-img img { width: 100%; height: 100%; object-fit: cover; }
+  .al-step-body { padding: .9rem 1rem 1.1rem; }
+  .al-step-n { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+  .al-step h3 { font-size: 1.02rem; margin: .2rem 0 .35rem; }
+  .al-step p { font-size: .86rem; color: #5a5a5a; margin: 0; }
+
+  .al-callout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 1.4rem; align-items: center;
+    background: var(--bg); border-radius: 16px; padding: 1.4rem; margin: 1.4rem 0 0; }
+  .al-callout img { width: 100%; border-radius: 12px; max-height: 240px; object-fit: cover; }
+  .al-callout h3 { font-family: "Playfair Display", Georgia, serif; font-size: 1.4rem; margin: 0 0 .5rem; }
+  .al-callout p { color: #3a3a3a; margin: 0 0 .6rem; }
+
   .al-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; }
   .al-card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.1rem; }
-  .al-card h3 { font-size: 1rem; margin: 0 0 .3rem; }
-  .al-card p { font-size: .9rem; color: #5a5a5a; margin: 0; }
+  .al-card h3 { font-size: 1rem; margin: 0 0 .3rem; } .al-card p { font-size: .9rem; color: #5a5a5a; margin: 0; }
   .al-list { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; }
   .al-list li { display: flex; gap: .7rem; align-items: flex-start; }
   .al-list b { flex: 0 0 auto; color: var(--accent); font-weight: 800; }
-  .al-stats { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 1.2rem 0 0; }
-  .al-stat b { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 2rem; color: var(--accent); line-height: 1; }
-  .al-stat span { font-size: .82rem; color: #6a6a6a; }
 
-  .al-signup { background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; padding: 1.5rem 1.3rem; margin: 2.4rem 0 0; text-align: center; }
-  .al-signup h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.5rem; margin: 0 0 .3rem; }
+  .al-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+  .al-gallery figure { margin: 0; border-radius: 10px; overflow: hidden; height: 130px; }
+  .al-gallery img { width: 100%; height: 100%; object-fit: cover; }
+
+  .al-signup { background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; padding: 1.6rem 1.3rem; margin: 2.8rem 0 0; text-align: center; }
+  .al-signup h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.6rem; margin: 0 0 .3rem; }
   .al-signup .price { font-weight: 700; color: var(--accent); margin: 0 0 1.1rem; }
-  .al-pay { display: inline-block; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700;
-    font-size: 1.1rem; padding: 1rem 2rem; border-radius: 99px; text-decoration: none; transition: opacity .15s; }
+  .al-pay { display: inline-block; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 1.1rem; padding: 1rem 2rem; border-radius: 99px; text-decoration: none; transition: opacity .15s; }
   .al-pay:hover { opacity: .92; }
   .al-methods { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; margin: 1rem 0 0; }
   .al-method { font-size: .75rem; font-weight: 700; background: var(--bg); color: #4a4a4a; padding: .3rem .6rem; border-radius: 6px; }
@@ -67,15 +90,33 @@
   .al-status .ok { color: #1a7f44; font-weight: 700; }
   .al-fine { font-size: .78rem; color: #8a8a8a; margin: .8rem 0 0; }
 
-  .al-faq { margin: 2.4rem 0 0; }
+  .al-faq { margin: 2.8rem 0 0; }
   .al-faq details { border-bottom: 1px solid var(--rule); padding: .8rem 0; }
   .al-faq summary { font-weight: 700; cursor: pointer; }
   .al-faq p { color: #5a5a5a; margin: .6rem 0 0; }
-
   .al-foot { margin: 2.6rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--rule); font-size: .85rem; color: #8a8a8a; }
   .al-foot a { color: var(--accent); }
 
-  @media (max-width: 560px) { .al-grid { grid-template-columns: 1fr; } }
+  /* Animations */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s var(--ease-out), transform .6s var(--ease-out); }
+  .reveal.in { opacity: 1; transform: none; }
+  .al-hero .al-eyebrow, .al-hero .al-h1, .al-hero .al-sub, .al-hero .al-ctas, .al-hero .al-paynote { opacity: 0; animation: al-rise .6s var(--ease-out) forwards; }
+  .al-hero .al-h1 { animation-delay: .06s; } .al-hero .al-sub { animation-delay: .12s; }
+  .al-hero .al-ctas { animation-delay: .18s; } .al-hero .al-paynote { animation-delay: .24s; }
+  .al-heroimg { opacity: 0; animation: al-fade .8s var(--ease-out) .15s forwards; }
+  @keyframes al-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes al-fade { to { opacity: 1; } }
+
+  @media (max-width: 760px) {
+    .al-hero { grid-template-columns: 1fr; }
+    .al-heroimg { order: -1; }
+    .al-steps { grid-template-columns: repeat(2, 1fr); }
+    .al-callout { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) { .al-grid { grid-template-columns: 1fr; } .al-gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .al-hero .al-eyebrow, .al-hero .al-h1, .al-hero .al-sub, .al-hero .al-ctas, .al-hero .al-paynote, .al-heroimg { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
   </style>
 </head>
 <body>
@@ -86,14 +127,22 @@
     </div>
 
     <section class="al-hero">
-      <p class="al-eyebrow">Mutapa Times Academy</p>
-      <h1 class="al-h1">Become a journalist for Zimbabwe and the diaspora</h1>
-      <p class="al-sub">A self-paced online course that takes you from your first story idea to a finished, publishable piece, then a certificate you can put on your CV and LinkedIn.</p>
-      <a class="al-cta" href="#signup">Start the course <span class="al-pricechip" id="heroPrice">US$15</span></a>
-      <p class="al-paynote">Pay once. Lifetime access. Visa, Mastercard, American Express, PayPal, Apple Pay and Google Pay.</p>
+      <div>
+        <p class="al-eyebrow">Mutapa Times Academy</p>
+        <h1 class="al-h1">From learner to published journalist</h1>
+        <p class="al-sub">A self-paced course that teaches you to report on Zimbabwe, the diaspora and the wider continent. Finish it and you do not just get a certificate, you start a path towards a published byline and your own contributor profile on The Mutapa Times.</p>
+        <div class="al-ctas">
+          <a class="al-cta" href="#signup">Start the course <span class="al-pricechip" id="heroPrice">US$15</span></a>
+          <a class="al-cta al-cta--ghost" href="/academy/teaser/">Try a free taster</a>
+        </div>
+        <p class="al-paynote">Pay once. Lifetime access. Card, PayPal, Apple Pay and Google Pay.</p>
+      </div>
+      <div class="al-heroimg">
+        <img src="/img/uploads/image_bank_academy/Lead_young_journalist_use_on_main_landing.jpg" alt="A young journalist at work">
+      </div>
     </section>
 
-    <section class="al-section">
+    <section class="al-section reveal">
       <div class="al-stats">
         <div class="al-stat"><b>13</b><span>units</span></div>
         <div class="al-stat"><b>54</b><span>lessons</span></div>
@@ -102,8 +151,42 @@
       </div>
     </section>
 
-    <section class="al-section">
+    <section class="al-section reveal">
+      <h2 class="al-h2">Your path to a byline</h2>
+      <hr class="al-rule">
+      <p class="al-lead">This is not just a course that ends with a quiz. It is a route into real journalism, step by step.</p>
+      <div class="al-steps">
+        <div class="al-step">
+          <div class="al-step-img"><img src="/img/uploads/image_bank_academy/generic-writing-1.jpg" alt="" loading="lazy"></div>
+          <div class="al-step-body"><span class="al-step-n">Step 1</span><h3>Learn the craft</h3><p>News values, reporting, interviewing, writing, fact-checking and more.</p></div>
+        </div>
+        <div class="al-step">
+          <div class="al-step-img"><img src="/img/uploads/image_bank_academy/head-inside-book.jpg" alt="" loading="lazy"></div>
+          <div class="al-step-body"><span class="al-step-n">Step 2</span><h3>Earn your certificate</h3><p>Pass the lessons, checkpoints and final exam to prove you can do the work.</p></div>
+        </div>
+        <div class="al-step">
+          <div class="al-step-img"><img src="/img/uploads/image_bank_academy/interview-microphone.jpg" alt="" loading="lazy"></div>
+          <div class="al-step-body"><span class="al-step-n">Step 3</span><h3>Pitch your first story</h3><p>Use what you learned to pitch a real story to our editors.</p></div>
+        </div>
+        <div class="al-step">
+          <div class="al-step-img"><img src="/img/uploads/image_bank_academy/reading-newspaper.jpg" alt="" loading="lazy"></div>
+          <div class="al-step-body"><span class="al-step-n">Step 4</span><h3>Get a contributor profile</h3><p>Strong graduates earn a byline and their own profile page on The Mutapa Times.</p></div>
+        </div>
+      </div>
+
+      <div class="al-callout reveal">
+        <img src="/img/uploads/image_bank_academy/generic-journalist-writing-1.jpg" alt="" loading="lazy">
+        <div>
+          <h3>Your name, your profile, your byline</h3>
+          <p>The best part of finishing is not the certificate, it is the door it opens. Graduates who pitch well can join the contributor track, write for The Mutapa Times, and get a public profile page with their bio and every story they publish.</p>
+          <p>You go from learning about journalism to actually being a journalist, with the published work to show for it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="al-section reveal">
       <h2 class="al-h2">What you'll learn</h2>
+      <hr class="al-rule">
       <div class="al-grid">
         <div class="al-card"><h3>The foundations</h3><p>What news is, news versus PR, our voice, and the ethics that hold it up.</p></div>
         <div class="al-card"><h3>Inside the newsroom</h3><p>Who does what, how a story moves, and how to read any outlet.</p></div>
@@ -116,17 +199,31 @@
       </div>
     </section>
 
-    <section class="al-section">
+    <section class="al-section reveal">
+      <h2 class="al-h2">Real skills, not just theory</h2>
+      <hr class="al-rule">
+      <div class="al-gallery">
+        <figure><img src="/img/uploads/image_bank_academy/busy-newsroom.jpg" alt="A busy newsroom" loading="lazy"></figure>
+        <figure><img src="/img/uploads/image_bank_academy/investigative-data.jpg" alt="Investigative reporting with data" loading="lazy"></figure>
+        <figure><img src="/img/uploads/image_bank_academy/tv-interview.jpg" alt="A television interview" loading="lazy"></figure>
+        <figure><img src="/img/uploads/image_bank_academy/africa.jpg" alt="Reporting across Africa" loading="lazy"></figure>
+        <figure><img src="/img/uploads/image_bank_academy/checking-story.jpg" alt="Two people checking a story" loading="lazy"></figure>
+        <figure><img src="/img/uploads/image_bank_academy/newsletter.jpg" alt="Writing a newsletter" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="al-section reveal">
       <h2 class="al-h2">How it works</h2>
+      <hr class="al-rule">
       <ul class="al-list">
         <li><b>1</b><span>Learn at your own pace on any device, with bite-sized lessons, quizzes and instant feedback.</span></li>
         <li><b>2</b><span>Master each lesson. You need 80% to pass, so you genuinely learn it, not just click through.</span></li>
         <li><b>3</b><span>Clear the checkpoint exams and a final exam that gate your progress.</span></li>
-        <li><b>4</b><span>Earn your certificate, and list The Mutapa Times Academy on your CV and LinkedIn.</span></li>
+        <li><b>4</b><span>Earn your certificate, then pitch your way to a published byline and contributor profile.</span></li>
       </ul>
     </section>
 
-    <section class="al-signup" id="signup">
+    <section class="al-signup reveal" id="signup">
       <h2>Start the course</h2>
       <p class="price" id="signupPrice">One-time payment of US$15. Lifetime access.</p>
       <a class="al-pay" id="buyBtn" href="#">Pay and start</a>
@@ -136,19 +233,22 @@
         <span class="al-method">Apple Pay</span><span class="al-method">Google Pay</span>
       </div>
       <p class="al-status" id="status"></p>
-      <p class="al-fine">Secure checkout by Lemon Squeezy. By enrolling you agree to receive the Mutapa Times newsletter; unsubscribe any time.</p>
+      <p class="al-fine">Not sure yet? <a href="/academy/teaser/">Try a free taster first.</a> Secure checkout by Lemon Squeezy. By enrolling you agree to receive the Mutapa Times newsletter; unsubscribe any time.</p>
     </section>
 
-    <section class="al-section" id="localpay">
+    <section class="al-section reveal" id="localpay">
       <h2 class="al-h2">Paying from Zimbabwe?</h2>
-      <p>Card or PayPal above is the quickest way in. If you would rather pay locally, by Mukuru, EcoCash, bank transfer or cash, reply to any Mutapa Times newsletter email or message us to arrange it. Once we confirm your payment, we send you the link to start the course.</p>
+      <hr class="al-rule">
+      <p class="al-lead">Card or PayPal above is the quickest way in. If you would rather pay locally, by Mukuru, EcoCash, bank transfer or cash, reply to any Mutapa Times newsletter email or message us to arrange it. Once we confirm your payment, we send you the link to start the course.</p>
     </section>
 
-    <section class="al-faq">
+    <section class="al-faq reveal">
       <h2 class="al-h2">Questions</h2>
-      <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere in the world. Pay with any Visa, Mastercard or American Express card, with PayPal, or with Apple Pay and Google Pay. To pay locally in Zimbabwe, see the section above.</p></details>
+      <hr class="al-rule">
+      <details><summary>Do I really get a profile on The Mutapa Times?</summary><p>Finishing the course opens the contributor track. Graduates who pitch and publish with us earn a byline and a public profile page with their bio and published stories. It depends on your work, but the path is real and it is what the course is built for.</p></details>
+      <details><summary>Can I try before I pay?</summary><p>Yes. Take the free taster to sample the lessons and quizzes, then sign up to complete the course.</p></details>
+      <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere. Pay with any Visa, Mastercard or Amex card, with PayPal, or with Apple Pay and Google Pay. To pay locally in Zimbabwe, see the section above.</p></details>
       <details><summary>How long do I have access?</summary><p>It is a one-time payment with lifetime access. Learn at your own pace.</p></details>
-      <details><summary>Do I get a certificate?</summary><p>Yes. Finish the course and pass the final exam at 80% to earn your certificate, which you can download or have emailed to you.</p></details>
     </section>
 
     <p class="al-foot">A project of <a href="/">The Mutapa Times</a>. Questions? Reply to any newsletter email and we will help.</p>
@@ -159,11 +259,11 @@
     "use strict";
     // ============================================================
     //  THE ONLY THING YOU EDIT: paste your Lemon Squeezy product link
-    //  between the quotes below (from your Lemon Squeezy dashboard).
-    //  Example: "https://mutapatimes.lemonsqueezy.com/buy/abc-123"
+    //  between the quotes. Example:
+    //  var BUY_LINK = "https://mutapatimes.lemonsqueezy.com/buy/abc-123";
     // ============================================================
     var BUY_LINK = "";
-    var PRICE = 15;        // change to your price (just for display)
+    var PRICE = 15;        // change to your price (for display)
     var CURRENCY = "US$";
 
     var priceStr = CURRENCY + PRICE;
@@ -177,6 +277,18 @@
       if (!BUY_LINK) { status.innerHTML = '<span class="ok">Enrolment opens shortly. Follow The Mutapa Times to hear first.</span>'; return; }
       location.href = BUY_LINK;
     });
+
+    // Scroll-reveal animations (respects reduced motion).
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var reveals = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      reveals.forEach(function (el) { el.classList.add("in"); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+      }, { threshold: 0.12 });
+      reveals.forEach(function (el) { io.observe(el); });
+    }
   })();
   </script>
 </body>

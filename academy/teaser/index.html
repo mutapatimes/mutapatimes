@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Free taster — Mutapa Times Academy</title>
+  <link rel="canonical" href="https://mutapatimes.com/academy/teaser/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Try a free taster of the Mutapa Times Academy journalism course. A few real questions, then sign up to complete the course.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="apple-touch-icon" href="/icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
+  <link rel="stylesheet" href="/academy/academy.css?v=5">
+</head>
+<body>
+  <header class="ac-appbar">
+    <div class="ac-appbar-in">
+      <a class="ac-brand" href="/academy/">The Mutapa Times</a>
+      <span class="ac-chip">Free taster</span>
+    </div>
+  </header>
+
+  <main class="ac-wrap"><div id="view"></div></main>
+
+  <script>
+  (function () {
+    "use strict";
+    var IMGBASE = "/img/uploads/image_bank_academy/";
+    var view = document.getElementById("view");
+
+    var QUESTIONS = [
+      {
+        q: "Which of these is news rather than public relations?",
+        options: [
+          "A company statement headlined: We are proud to announce our exciting new vision",
+          "A report that a state firm's annual losses widened, with figures from its filings",
+          "A release urging readers to join the movement today",
+          "A brochure listing the benefits of a new product"
+        ],
+        answer: 1,
+        explain: "News tells you what happened and lets you decide. The other three want you to act or believe something."
+      },
+      {
+        q: "Which is the stronger lede?",
+        options: [
+          "At a meeting held on Tuesday, a committee convened to discuss various matters",
+          "Diaspora families face higher fees to send money home from next month"
+        ],
+        answer: 1,
+        explain: "Lead with the news and who it affects. The first buries the point under process."
+      },
+      {
+        q: "A trusted source gives you a striking figure, with great confidence. Before publishing you should:",
+        options: [
+          "Publish it, they sounded sure",
+          "Treat it as a claim and check it against another source",
+          "Run it as opinion",
+          "Ignore it"
+        ],
+        answer: 1,
+        explain: "Confidence is not evidence. Verify before it becomes a fact in print."
+      },
+      {
+        q: "Which kind of African story is most consistently missing from coverage?",
+        options: [
+          "Crises and disasters",
+          "Innovation, success and ordinary voices",
+          "Conflict",
+          "Dramatic events"
+        ],
+        answer: 1,
+        explain: "Success, innovation and the voices of ordinary people are the stories repeatedly left out."
+      },
+      {
+        q: "Spot the clean sentence, with no errors.",
+        options: [
+          "Its been a long year for the company.",
+          "The company published its report on Friday.",
+          "He recieved the award last night.",
+          "Their going to announce it tomorrow."
+        ],
+        answer: 1,
+        explain: "The others have errors: Its should be It's, recieved should be received, Their should be They're."
+      }
+    ];
+
+    function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
+    function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
+
+    var idx = 0, correct = 0;
+
+    function intro() {
+      clear(view);
+      view.appendChild(el("p", "ac-eyebrow", "Free taster"));
+      view.appendChild(el("h1", "ac-h1", "Try a few real questions from the course"));
+      var fig = el("figure", "ac-hero-img"); var im = document.createElement("img");
+      im.src = IMGBASE + "generic-journalist-writing-1.jpg"; im.alt = ""; fig.appendChild(im);
+      view.appendChild(fig);
+      var card = el("section", "ac-card");
+      card.appendChild(el("p", null, "Five quick questions to get a feel for how the Academy teaches. No signup needed. At the end, you can join to complete the full course."));
+      var acts = el("div", "ac-actions");
+      var b = el("button", "ac-btn ac-btn--lg", "Start the taster");
+      b.addEventListener("click", run); acts.appendChild(b); card.appendChild(acts);
+      view.appendChild(card);
+      window.scrollTo(0, 0);
+    }
+
+    function run() {
+      clear(view);
+      if (idx >= QUESTIONS.length) return finish();
+      var ex = QUESTIONS[idx];
+      var dots = el("div", "ac-dots");
+      for (var d = 0; d < QUESTIONS.length; d++) dots.appendChild(el("span", "ac-dot" + (d < idx ? " done" : d === idx ? " active" : "")));
+      view.appendChild(dots);
+      var card = el("section", "ac-card ac-slidein");
+      card.appendChild(el("p", "ac-kicker", "Question " + (idx + 1) + " of " + QUESTIONS.length));
+      card.appendChild(el("p", "ac-q", ex.q));
+      var opts = el("div", "ac-opts"); var locked = false;
+      ex.options.forEach(function (text, i) {
+        var btn = el("button", "ac-opt"); btn.type = "button"; btn.textContent = text;
+        btn.addEventListener("click", function () {
+          if (locked) return; locked = true;
+          var btns = opts.querySelectorAll(".ac-opt");
+          btns.forEach(function (b) { b.disabled = true; });
+          btns[ex.answer].classList.add("is-correct");
+          if (i !== ex.answer) btns[i].classList.add("is-wrong"); else correct++;
+          var exp = el("p", "ac-explain " + (i === ex.answer ? "good" : "bad"));
+          exp.textContent = (i === ex.answer ? "Correct. " : "Not quite. ") + ex.explain;
+          card.appendChild(exp);
+          var acts = el("div", "ac-actions");
+          var c = el("button", "ac-btn", idx === QUESTIONS.length - 1 ? "See result" : "Continue");
+          c.addEventListener("click", function () { idx++; run(); });
+          acts.appendChild(c); card.appendChild(acts);
+        });
+        opts.appendChild(btn);
+      });
+      card.appendChild(opts);
+      view.appendChild(card);
+      window.scrollTo(0, 0);
+    }
+
+    function finish() {
+      clear(view);
+      var fig = el("figure", "ac-hero-img"); var im = document.createElement("img");
+      im.src = IMGBASE + "busy-newsroom.jpg"; im.alt = ""; fig.appendChild(im);
+      view.appendChild(fig);
+      var card = el("section", "ac-card");
+      card.appendChild(el("p", "mark", "M·T"));
+      var h = el("h2", null, correct >= 4 ? "You're a natural." : "Nice start.");
+      h.style.fontFamily = '"Playfair Display", Georgia, serif';
+      card.appendChild(h);
+      card.appendChild(el("p", null, "You scored " + correct + " of " + QUESTIONS.length + " on the taster. That was just a tiny sample. The full course is 13 units, 54 lessons and over 200 exercises, ending in a certificate and a path to a published byline."));
+      var acts = el("div", "ac-actions");
+      var join = el("a", "ac-btn ac-btn--lg", "Sign up to complete the course");
+      join.setAttribute("href", "/academy/#signup");
+      var more = el("a", "ac-btn ac-btn--ghost", "See what's inside");
+      more.setAttribute("href", "/academy/");
+      acts.appendChild(join); acts.appendChild(more); card.appendChild(acts);
+      view.appendChild(card);
+      window.scrollTo(0, 0);
+    }
+
+    intro();
+  })();
+  </script>
+</body>
+</html>

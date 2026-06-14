@@ -26,6 +26,57 @@
 
   var COURSE = window.COURSE;
   var view = document.getElementById("view");
+
+  // ---------- lesson imagery ----------
+  var IMGBASE = "/img/uploads/image_bank_academy/";
+  var IMG_MAP = {
+    "the-interview": "interview-microphone.jpg",
+    "reporting-from-distance": "interview-phones.jpg",
+    "finding-sources": "checking-story.jpg",
+    "verification": "checking-story.jpg",
+    "newsroom-roles": "busy-newsroom.jpg",
+    "story-flow": "busy-newsroom.jpg",
+    "outlet-types": "newspaper.jpg",
+    "newsroom-of-one": "substack-writing.jpg",
+    "revenue-models": "revenue.jpg",
+    "news-business-today": "newsprinting.jpg",
+    "paywalls": "revenue.jpg",
+    "inclusive-revenue": "reading-newspaper.jpg",
+    "ownership-influence": "newspaper.jpg",
+    "fact-checking": "checking-story.jpg",
+    "copy-checking": "writing-reading-checking.jpg",
+    "structure": "newsprinting.jpg",
+    "the-lede": "generic-writing-2.jpg",
+    "writing-clearly": "generic-typing-keyboard.jpg",
+    "editing-yourself": "writing-reading-checking.jpg",
+    "digital-age": "editing-images.jpg",
+    "personal-brand": "generic-typing-keyboard.jpg",
+    "freelance-portfolio": "writing-laptop-portrait.jpg",
+    "substack-newsletter": "newsletter.jpg",
+    "journalism-cv": "jobapplication.jpg",
+    "cover-letter": "jobapplication.jpg",
+    "cv-mistakes": "jobapplication.jpg",
+    "region-north": "archive-library-research.jpg",
+    "region-west": "newspaper.jpg",
+    "region-east": "interview-phones.jpg",
+    "region-central": "archive-library-research.jpg",
+    "region-southern": "harare.jpg",
+    "africa-narrative": "africa.jpg",
+    "beyond-bleeds": "africa.jpg",
+    "sources-agenda": "investigative-data.jpg",
+    "pan-african": "africa.jpg"
+  };
+  var IMG_POOL = [
+    "generic-writing-1.jpg", "generic-research.jpg", "generic-typing-keyboard.jpg",
+    "generic-writing-2.jpg", "generic-writing-alone.jpg", "generic-journalist-writing-1.jpg",
+    "student-park-laptop.jpg", "head-inside-book.jpg", "generic-journalist-writing-2.jpg"
+  ];
+  function lessonImage(lesson) {
+    if (IMG_MAP[lesson.id]) return IMGBASE + IMG_MAP[lesson.id];
+    var li = allLessons(), pos = 0;
+    for (var k = 0; k < li.length; k++) { if (li[k].id === lesson.id) { pos = k; break; } }
+    return IMGBASE + IMG_POOL[pos % IMG_POOL.length];
+  }
   var xpChip = document.getElementById("xpChip");
   var streakChip = document.getElementById("streakChip");
   var soundBtn = document.getElementById("soundBtn");
@@ -226,6 +277,13 @@
 
     view.appendChild(el("p", "ac-eyebrow", (lesson.checkpoint ? "Checkpoint · " : "") + lesson.title));
     view.appendChild(el("h1", "ac-h1", lesson.intro));
+
+    if (!lesson.checkpoint) {
+      var fig = el("figure", "ac-hero-img");
+      var im = document.createElement("img");
+      im.src = lessonImage(lesson); im.alt = ""; im.loading = "lazy";
+      fig.appendChild(im); view.appendChild(fig);
+    }
 
     lesson.cards.forEach(function (c, i) {
       var card = el("section", "ac-card ac-reveal");
