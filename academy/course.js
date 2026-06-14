@@ -509,6 +509,412 @@ window.COURSE = {
       ]
     },
     {
+      id: "money",
+      title: "How news makes money",
+      summary: "Who pays for journalism, how paywalls work, how to include readers who cannot pay, and why funding shapes the news.",
+      lessons: [
+        {
+          id: "revenue-models",
+          title: "Who pays for the news",
+          minutes: 8,
+          intro: "A newsroom is a business. Knowing how it earns tells you a lot about the journalism it produces.",
+          cards: [
+            {
+              h: "Someone always pays",
+              body: [
+                "News costs money. Reporters, editors and equipment all need funding, so every newsroom has to earn its keep somehow. The honest starting point is that no journalism is free to make, even when it is free to read.",
+                "Because of that, every source of funding shapes the work to some degree. Follow the money and you understand a lot about why the news looks the way it does."
+              ]
+            },
+            {
+              h: "The four main models",
+              body: [
+                "Advertising: companies pay to place ads around the content, so readers get it free. Reader revenue: readers pay directly, through subscriptions or memberships. Public funding: the state supports public-service broadcasting. Nonprofit and donor: foundations and supporters fund mission-driven journalism.",
+                "Most real newsrooms mix several of these rather than relying on one."
+              ]
+            },
+            {
+              h: "What each model suits",
+              body: [
+                "Advertising suits free, mass-reach content that would lose its audience behind a paywall. Subscriptions suit content unique enough that readers cannot get it free elsewhere. Public funding suits broad public-service media. Nonprofit funding suits impact journalism that may never be highly profitable but serves the public.",
+                "The model an outlet chooses follows from what it makes and who it serves."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Why does it matter to a reader where a news outlet gets its money?",
+              options: [
+                "It does not matter at all",
+                "Because the source of funding shapes the journalism that gets done",
+                "Because readers must pay for every article",
+                "Only advertisers need to know"
+              ],
+              answer: 1,
+              explain: "Follow the money. Every funding source influences coverage, so knowing it helps you read the news wisely."
+            },
+            {
+              type: "multi",
+              q: "Which of these are the main ways news organisations fund themselves? Select all.",
+              options: ["Advertising", "Reader revenue (subscriptions or memberships)", "Public or government funding", "Nonprofit and donor support"],
+              answers: [0, 1, 2, 3],
+              explain: "All four are core models. Most newsrooms combine several rather than relying on one."
+            },
+            {
+              type: "mcq",
+              q: "A subscription model works best when an outlet's content is:",
+              options: [
+                "Easy to find free anywhere else",
+                "Unique enough that readers cannot get it for free elsewhere",
+                "Only advertising",
+                "Never updated"
+              ],
+              answer: 1,
+              explain: "People pay for what they cannot get free. Subscriptions reward distinctive, high-value content."
+            },
+            {
+              type: "mcq",
+              q: "Under a pure advertising model, the reader typically gets the content:",
+              options: ["For a monthly fee", "Free, because advertisers pay", "Only by donating", "Only from the government"],
+              answer: 1,
+              explain: "Advertisers pay to reach the audience, which lets the outlet offer content free and reach more people."
+            }
+          ]
+        },
+        {
+          id: "news-business-today",
+          title: "The news business today",
+          minutes: 7,
+          intro: "The newspaper industry is in the middle of a hard shift from print to digital. Here is the shape of it.",
+          cards: [
+            {
+              h: "From print to digital",
+              body: [
+                "Readers have moved online, and the industry is following. Newspapers now invest heavily in websites, apps and newsletters, chasing real-time delivery and interactive content rather than a single daily print run. Most metro and national titles are digital-first, with print serving as a curated summary.",
+                "The global newspaper business is still worth tens of billions of dollars a year, but the mix of where that money comes from is changing fast."
+              ]
+            },
+            {
+              h: "Print falls, reader revenue rises",
+              body: [
+                "Print circulation and print advertising have been declining for years, especially among younger readers. At the same time, digital subscriptions and other reader revenue are growing, and at some major titles reader revenue has now overtaken advertising for the first time.",
+                "The strategic pivot for most newsrooms is the same: replace falling print income with digital subscriptions and direct reader support."
+              ]
+            },
+            {
+              h: "Competition, and the local opportunity",
+              body: [
+                "Social platforms and free online news compete fiercely for both attention and advertising, squeezing traditional outlets. Yet demand for local and community news is strong, and many readers prefer it to national coverage. Emerging markets, where internet use is still rising, are a growth frontier.",
+                "The outlets that do well tend to own a clear niche, lean into local or specialist strength, and build a direct relationship with readers."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the biggest structural shift reshaping the newspaper industry?",
+              options: [
+                "A move from digital back to print",
+                "A move from print to digital, with reader revenue replacing print income",
+                "The end of all advertising",
+                "Newspapers becoming free of cost to produce"
+              ],
+              answer: 1,
+              explain: "Readers moved online, print declined, and digital subscriptions and reader revenue are taking over from print income."
+            },
+            {
+              type: "mcq",
+              q: "What has been happening to print circulation and print advertising?",
+              options: [
+                "Both rising sharply",
+                "Both declining, especially among younger readers",
+                "Print advertising rising, circulation falling",
+                "No change for decades"
+              ],
+              answer: 1,
+              explain: "Both have fallen for years as audiences shifted to digital, which is why newsrooms are pivoting online."
+            },
+            {
+              type: "mcq",
+              q: "Why is local news described as an opportunity, not just a casualty?",
+              options: [
+                "Readers dislike local news",
+                "Demand for local and community coverage is strong and many readers prefer it",
+                "Local news is illegal to charge for",
+                "It needs no reporting"
+              ],
+              answer: 1,
+              explain: "Strong, loyal demand for local and community news is a real growth opportunity for focused outlets."
+            },
+            {
+              type: "multi",
+              q: "Which trends are reshaping the newspaper business today? Select all.",
+              options: [
+                "Digital-first publishing and real-time delivery",
+                "Growth in digital subscriptions and reader revenue",
+                "Rising print circulation everywhere",
+                "Competition from social platforms and free online news"
+              ],
+              answers: [0, 1, 3],
+              explain: "Digital-first, reader revenue and platform competition are all rising. Print circulation is falling, not rising."
+            }
+          ]
+        },
+        {
+          id: "paywalls",
+          title: "Paywalls and reader revenue",
+          minutes: 8,
+          intro: "As reader revenue overtakes advertising at many titles, how you charge matters as much as whether you charge.",
+          cards: [
+            {
+              h: "Not all paywalls are the same",
+              body: [
+                "A hard paywall locks almost everything. A metered paywall gives a set number of free articles a month, then asks you to pay. A freemium model keeps some content free and reserves the best for payers. A dynamic paywall flexes: one Swedish paper locks its most-read articles only a few hours after publishing.",
+                "The wall can also move with the reader. A first-time visitor and a daily loyal reader can meet it in different places."
+              ]
+            },
+            {
+              h: "Subscription or membership",
+              body: [
+                "A subscription is a transaction: pay, and you get access. A membership is a relationship: you support the journalism and the mission, often with extras, but the conversation is about belonging, not just access. Membership models let an outlet talk to readers as supporters rather than customers.",
+                "The more emotional, less transactional the relationship, the more loyal the reader tends to be."
+              ]
+            },
+            {
+              h: "Let readers taste the best",
+              body: [
+                "Readers will never value content they cannot sample. Many outlets deliberately open the paywall during big news, to let new readers in and start habits, then invite them to pay. One Swedish paper dropped its wall within a day when the pandemic hit, and converted a quarter of the new free registrations later.",
+                "Think in phases: growth first, then retention, then monetisation."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is a metered paywall?",
+              options: [
+                "Everything is locked from the first click",
+                "Readers get a set number of free articles, then must pay",
+                "All content is always free",
+                "Only advertisers can read"
+              ],
+              answer: 1,
+              explain: "Metered means a free allowance, then a prompt to subscribe. It lets readers sample before committing."
+            },
+            {
+              type: "mcq",
+              q: "A dynamic paywall that locks the most-read articles a few hours after publishing is designed to:",
+              options: [
+                "Punish loyal readers",
+                "Capture demand for popular stories while still drawing a wide audience early",
+                "Hide all news permanently",
+                "Replace the newsroom"
+              ],
+              answer: 1,
+              explain: "It lets a story reach many readers at first, then converts the strong ongoing demand into subscriptions."
+            },
+            {
+              type: "mcq",
+              q: "What best distinguishes a membership from a subscription?",
+              options: [
+                "Membership is always cheaper",
+                "Membership is a relationship of support, not just paid access",
+                "Subscriptions are illegal",
+                "There is no difference"
+              ],
+              answer: 1,
+              explain: "A subscription buys access. A membership is about supporting the mission, which builds a more loyal relationship."
+            },
+            {
+              type: "order",
+              q: "Put the reader-revenue phases in the order an outlet usually works through them.",
+              items: [
+                "Growth: get new readers in and sampling",
+                "Retention: build the habit so they keep coming back",
+                "Monetisation: convert the habit into paying support"
+              ],
+              explain: "Grow the audience, retain it into a habit, then monetise. Charging before there is a habit converts few."
+            }
+          ]
+        },
+        {
+          id: "inclusive-revenue",
+          title: "Readers who cannot pay (yet)",
+          minutes: 8,
+          intro: "Paywalls can shut out the people who most need the news. Some newsrooms build models that include them.",
+          cards: [
+            {
+              h: "The risk of charging",
+              body: [
+                "A 2021 Reuters Institute survey found nearly half of news leaders worried that subscriptions could super-serve richer, more educated audiences and leave others behind. In a very unequal society, a strict paywall can put the truth out of reach of the people a story most affects.",
+                "South Africa's Daily Maverick rejected a paywall for exactly this reason, arguing that hiding accountability journalism behind a fee would harm democracy."
+              ]
+            },
+            {
+              h: "Designs that include more people",
+              body: [
+                "Pay what you can: Daily Maverick lets readers choose a contribution on a sliding scale. Trust-based free access: Spain's elDiario.es added an I cannot pay option, on trust, without checking. Free for groups at risk of exclusion: a Swedish paper gave free subscriptions to first-time voters before an election, and others have done the same for unemployed readers.",
+                "The common thread is to let people in, then invite support, rather than shutting them out at the door."
+              ]
+            },
+            {
+              h: "Why inclusion still pays",
+              body: [
+                "A reader who cannot pay today is still valuable: they may tell friends, take part in surveys, build the community, and pay later when they can. At elDiario.es, paid memberships kept growing even after a free option launched, because the relationship is emotional, not just transactional.",
+                "Two articles will not build loyalty. Letting potential fans read first can."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the super-serving concern with subscription models?",
+              options: [
+                "They give too much away free",
+                "They risk serving mainly richer, more educated audiences and excluding others",
+                "They make news too cheap",
+                "They only work for sport"
+              ],
+              answer: 1,
+              explain: "If only the well-off can pay, journalism risks reaching only them, which is bad for an informed public."
+            },
+            {
+              type: "mcq",
+              q: "Daily Maverick's sliding-scale model means readers:",
+              options: [
+                "Must all pay the same high fee",
+                "Choose how much to contribute, according to what they can afford",
+                "Cannot read unless they are wealthy",
+                "Pay only through advertising"
+              ],
+              answer: 1,
+              explain: "Pay what you can lets each reader contribute at their own level, keeping the journalism open to all."
+            },
+            {
+              type: "mcq",
+              q: "elDiario.es lets readers select I cannot pay. How does it handle this?",
+              options: [
+                "It demands proof of unemployment",
+                "It trusts readers and does not check, keeping content open to them",
+                "It blocks them after one article",
+                "It charges them double later"
+              ],
+              answer: 1,
+              explain: "The model is built on trust. Readers who cannot pay stay part of the community rather than being shut out."
+            },
+            {
+              type: "multi",
+              q: "Why can a reader who cannot pay today still be valuable to a newsroom? Select all.",
+              options: [
+                "They may recommend the outlet to others",
+                "They may take part in surveys and community",
+                "They may pay later when their circumstances change",
+                "They reduce the quality of the journalism"
+              ],
+              answers: [0, 1, 2],
+              explain: "Non-paying readers build word of mouth, community and a future paying base. They do not lower quality."
+            }
+          ]
+        },
+        {
+          id: "ownership-influence",
+          title: "Follow the money",
+          minutes: 7,
+          intro: "Who owns and funds a newsroom shapes what it covers. Learning to ask is part of media literacy.",
+          cards: [
+            {
+              h: "Funding shapes the journalism",
+              body: [
+                "However well meant, every funding source influences the work. Research has found that foundation funding can change which issues nonprofit newsrooms focus on and how much of certain work gets done. Ownership shapes a newsroom even when everyone involved has good intentions.",
+                "This is not a conspiracy. It is the ordinary pull of who pays the bills."
+              ]
+            },
+            {
+              h: "When ownership concentrates",
+              body: [
+                "When a few large companies own many outlets, the range of voices can narrow and national coverage can crowd out local reporting. The decline of local news is linked in part to this consolidation. Fewer owners can mean fewer distinct stories and perspectives reaching the public.",
+                "Diversity of ownership tends to support diversity of journalism."
+              ]
+            },
+            {
+              h: "Independence and transparency",
+              body: [
+                "Some worry that state funding can create a conflict of interest when a newsroom must scrutinise the government that pays it. Reader-funded and independent outlets often answer this with transparency: elDiario.es is owned by its founders, who work in the newsroom, and it publishes its results and revenue sources each year.",
+                "As a reader, the useful habit is simple: ask who funds this, and what that might shape."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "In media literacy, follow the money means:",
+              options: [
+                "Journalists should chase the highest salary",
+                "Understanding who funds an outlet, because funding shapes its journalism",
+                "Only read paid content",
+                "Ignore where news comes from"
+              ],
+              answer: 1,
+              explain: "Knowing who pays helps you judge possible influences on what is covered and how."
+            },
+            {
+              type: "mcq",
+              q: "What did research find about foundation funding of nonprofit newsrooms?",
+              options: [
+                "It has no effect on coverage",
+                "It can change which issues they focus on and how much work gets done",
+                "It guarantees total independence",
+                "It only funds sport"
+              ],
+              answer: 1,
+              explain: "Even mission-driven funding shapes the agenda. No funding source is entirely neutral."
+            },
+            {
+              type: "mcq",
+              q: "A common concern when a few companies own many outlets is that:",
+              options: [
+                "There is too much local news",
+                "The range of voices narrows and local reporting declines",
+                "Journalism becomes free",
+                "Advertising disappears"
+              ],
+              answer: 1,
+              explain: "Concentration is linked to fewer distinct voices and the decline of local news."
+            },
+            {
+              type: "mcq",
+              q: "Why do some worry about government funding for newsrooms?",
+              options: [
+                "It is always illegal",
+                "It can create a conflict of interest when the newsroom must scrutinise its funder",
+                "It makes news too expensive",
+                "It bans advertising"
+              ],
+              answer: 1,
+              explain: "A newsroom funded by the state may face pressure, real or perceived, when holding that state to account."
+            },
+            {
+              type: "write",
+              q: "Design a funding model for your publication.",
+              brief: [
+                "Imagine you are launching a small Zimbabwean or diaspora publication. In a few sentences, describe how it would fund itself.",
+                "Cover: which models you would use, why they fit your readers, and one thing you would do so readers who cannot pay are not shut out."
+              ],
+              checklist: [
+                "Does it name one or more specific revenue models and why they fit?",
+                "Does it consider what your particular readers can realistically pay?",
+                "Does it include readers who cannot pay, not just those who can?",
+                "Is it honest about the trade-offs of the funding you chose?"
+              ],
+              model: "A diaspora newsletter could start free and ad-light to grow trust, then add a membership rather than a hard paywall: a pay-what-you-can scale from a small monthly amount upward, with extras like member events. To include those who cannot pay, an I cannot pay option on trust keeps the journalism open, since many readers send money home already and budgets are tight. The trade-off is slower revenue, accepted in exchange for reach and loyalty.",
+              exerciseId: "funding-model-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "w2",
       title: "Week 2: Reporting",
       summary: "Find sources, run an interview, verify what you are told, and report from a distance.",
