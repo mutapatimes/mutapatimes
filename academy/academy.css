@@ -318,3 +318,13 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   .ac-cert { box-shadow: none; border-color: #000; }
   .ac-cert::before { border-color: var(--accent); }
 }
+
+/* ============================================================
+   v4: locked + checkpoint nodes (mastery gating)
+   ============================================================ */
+.ac-node.is-locked { cursor: not-allowed; }
+.ac-node.is-locked .ac-node-face { background: var(--bg); color: #b4b4b4; border-style: dashed; box-shadow: none; }
+.ac-node.is-locked .ac-node-label { color: #b4b4b4; }
+.ac-node.is-checkpoint .ac-node-face { border-color: var(--accent); color: var(--accent); }
+.ac-node.is-checkpoint.is-done .ac-node-face { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ac-node.is-checkpoint .ac-node-label { font-weight: 700; }

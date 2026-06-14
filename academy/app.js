@@ -9,7 +9,8 @@
 
   var GRADE_ENDPOINT = ""; // e.g. "https://academy-grade.NAME.workers.dev"
   var CERT_ENDPOINT = "";  // e.g. "https://academy-certificate.NAME.workers.dev" (enables emailing)
-  var PASS_MARK = 70;      // percent of graded questions needed for the certificate
+  var PASS_MARK = 70;      // percent of graded questions across the course needed for the certificate
+  var LESSON_PASS = 80;    // percent needed to complete (and unlock past) a single lesson
   var STORE_KEY = "mt_academy_v1";
   var XP_PER_EXERCISE = 10;
   var XP_LESSON_BONUS = 50;
@@ -72,6 +73,9 @@
   function courseProgress() { var t = allLessons().length, d = 0; allLessons().forEach(function (l) { if (lessonState(l.id).done) d++; }); return { done: d, total: t, pct: t ? Math.round(d / t * 100) : 0 }; }
   function computeScore() { var c = 0, t = 0; for (var lid in state.results) { var r = state.results[lid]; for (var i in r) { if (r[i].type === "write") continue; t++; if (r[i].ok) c++; } } return { correct: c, total: t, pct: t ? Math.round(c / t * 100) : 0 }; }
   function certEligible() { var p = courseProgress(), s = computeScore(); return p.total > 0 && p.done === p.total && s.total > 0 && s.pct >= PASS_MARK; }
+  function lessonGradedTotal(lesson) { return lesson.exercises.filter(function (e) { return e.type !== "write"; }).length; }
+  function lessonScore(lesson) { var r = state.results[lesson.id] || {}, correct = 0; for (var i in r) { if (r[i].type !== "write" && r[i].ok) correct++; } var total = lessonGradedTotal(lesson); return total ? Math.round(correct / total * 100) : 100; }
+  function isUnlocked(id) { var ls = allLessons(); for (var i = 0; i < ls.length; i++) { if (ls[i].id === id) return i === 0 || lessonState(ls[i - 1].id).done; } return false; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
   function go(hash) { location.hash = hash; }
@@ -175,12 +179,17 @@
       u.lessons.forEach(function (l, i) {
         var ls = lessonState(l.id);
         var isCurrent = next && l.id === next.id;
+        var unlocked = isUnlocked(l.id);
         var wrap = el("div", "ac-node-wrap pos" + (i % 4));
-        var node = el("button", "ac-node" + (ls.done ? " is-done" : "") + (isCurrent ? " is-current" : ""));
-        node.type = "button";
-        node.innerHTML = "<span class='ac-node-face'>" + (ls.done ? "✓" : (i + 1)) + "</span>";
-        node.appendChild(el("span", "ac-node-label", l.title));
-        node.addEventListener("click", function () { Sound.play("tap"); go("#/lesson/" + l.id); });
+        var cls = "ac-node" + (ls.done ? " is-done" : "") + (isCurrent ? " is-current" : "") + (l.checkpoint ? " is-checkpoint" : "") + (!unlocked && !ls.done ? " is-locked" : "");
+        var node = el("button", cls); node.type = "button";
+        var face = el("span", "ac-node-face", ls.done ? "✓" : (!unlocked ? "🔒" : (l.checkpoint ? "★" : String(i + 1))));
+        node.appendChild(face);
+        node.appendChild(el("span", "ac-node-label", (l.checkpoint ? "Checkpoint: " : "") + l.title));
+        node.addEventListener("click", function () {
+          if (!unlocked) { Sound.play("wrong"); flash(node, false); return; }
+          Sound.play("tap"); go("#/lesson/" + l.id);
+        });
         wrap.appendChild(node);
         track.appendChild(wrap);
       });
@@ -197,6 +206,7 @@
   function renderLesson(id) {
     var lesson = findLesson(id);
     if (!lesson) { go("#/"); return; }
+    if (!isUnlocked(id)) { go("#/"); return; }
     clear(view); renderChips();
 
     var top = el("div", "ac-lessontop");
@@ -205,7 +215,7 @@
     top.appendChild(back);
     view.appendChild(top);
 
-    view.appendChild(el("p", "ac-eyebrow", lesson.title));
+    view.appendChild(el("p", "ac-eyebrow", (lesson.checkpoint ? "Checkpoint · " : "") + lesson.title));
     view.appendChild(el("h1", "ac-h1", lesson.intro));
 
     lesson.cards.forEach(function (c, i) {
@@ -252,14 +262,27 @@
     function complete() {
       clear(exHost);
       var ls = lessonState(lesson.id);
+      var pct = lessonScore(lesson);
+      var passed = ls.done || pct >= LESSON_PASS;
+      if (!passed) {
+        save(); Sound.play("wrong");
+        var fail = el("div", "ac-done-inline");
+        fail.appendChild(el("h2", null, "Not passed yet"));
+        fail.appendChild(el("p", null, "You scored " + pct + "%. You need " + LESSON_PASS + "% to complete this " + (lesson.checkpoint ? "checkpoint" : "lesson") + ". Review the material and try again."));
+        var fa = el("div", "ac-actions");
+        var rt = el("button", "ac-btn", "Retry"); rt.addEventListener("click", function () { Sound.play("tap"); renderLesson(lesson.id); });
+        var bk = el("button", "ac-btn ac-btn--ghost", "Back to map"); bk.addEventListener("click", function () { Sound.play("tap"); go("#/"); });
+        fa.appendChild(rt); fa.appendChild(bk); fail.appendChild(fa); exHost.appendChild(fail);
+        exHost.scrollIntoView({ behavior: "smooth", block: "start" }); return;
+      }
       var gained = 0;
       if (!ls.done) { ls.done = true; gained = lesson.exercises.length * XP_PER_EXERCISE + XP_LESSON_BONUS; state.xp += gained; touchStreak(); save(); }
       renderChips();
       Sound.play("complete"); confetti();
       var done = el("div", "ac-done-inline ac-anim-pop");
       done.appendChild(el("p", "mark", "M·T"));
-      done.appendChild(el("h2", null, "Lesson complete"));
-      done.appendChild(el("p", null, gained ? ("You earned " + gained + " XP. Your progress and streak are saved.") : "Revisited and still sharp. Progress is saved."));
+      done.appendChild(el("h2", null, lesson.checkpoint ? "Checkpoint passed" : "Lesson complete"));
+      done.appendChild(el("p", null, (gained ? ("You earned " + gained + " XP. ") : "Revisited and still sharp. ") + "Score " + pct + "%."));
       var acts = el("div", "ac-actions");
       var nxt = firstUnfinishedAfter(lesson.id);
       if (nxt) { var nb = el("button", "ac-btn", "Next: " + nxt.title); nb.addEventListener("click", function () { Sound.play("tap"); go("#/lesson/" + nxt.id); }); acts.appendChild(nb); }

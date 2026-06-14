@@ -238,6 +238,108 @@ window.COURSE = {
               explain: "Minimising harm means publishing only what is needed and weighing the risk to people, while still being fair."
             }
           ]
+        },
+        {
+          id: "cp-foundations",
+          title: "Foundations",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on the foundations. You need 80% to pass, so think each one through.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This checkpoint pulls together news values, news versus PR, our remit and ethics. There is no teaching here, only questions.",
+                "If you do not reach 80%, review the unit and try again. There is no shortcut."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "A mining company sends a glossy statement headlined 'We are proud to launch our world-class, community-first project.' What is the strongest news angle for The Mutapa Times?",
+              options: [
+                "Republish the statement so readers hear the good news",
+                "Investigate what the project means for the community and whether the claims hold up",
+                "Run it as an opinion piece praising the company",
+                "Ignore it, company news is never relevant"
+              ],
+              answer: 1,
+              explain: "A release is a prompt, not a story. The news is what it means for people and whether the claims stand up."
+            },
+            {
+              type: "multi",
+              q: "A long-serving minister resigns abruptly during a budget scandal, the day after a leaked audit. Which news values are strongly present? Select all.",
+              options: ["Timeliness", "Prominence", "Conflict", "Human interest"],
+              answers: [0, 1, 2],
+              explain: "It is new, involves a prominent figure and sits inside a dispute. Human interest would need a person's personal story at the centre."
+            },
+            {
+              type: "mcq",
+              q: "After publishing, you find you misspelt a source's name and got their title wrong. The right action is to:",
+              options: [
+                "Leave it, the story is otherwise fine",
+                "Delete the whole story",
+                "Correct both openly and note the correction",
+                "Change it quietly and tell no one"
+              ],
+              answer: 2,
+              explain: "Accuracy includes correcting openly. Quiet changes erode trust more than the error did."
+            },
+            {
+              type: "categorize",
+              q: "Sort each item as news or as PR.",
+              buckets: [
+                { id: "news", label: "News" },
+                { id: "pr", label: "PR or promotion" }
+              ],
+              items: [
+                { text: "A sourced report that a state firm's losses widened", bucket: "news" },
+                { text: "We are excited to announce our visionary new app", bucket: "pr" },
+                { text: "Council voted 7 to 3 to cut the budget", bucket: "news" },
+                { text: "Back our cause and join the movement today", bucket: "pr" },
+                { text: "Figures drawn from the company's own filings", bucket: "news" }
+              ],
+              explain: "News reports what happened, with sources. PR praises or urges you to act."
+            },
+            {
+              type: "mcq",
+              q: "Which opening best fits the Mutapa Times voice?",
+              options: [
+                "Zimbabwe, a landlocked country in southern Africa, is a place where...",
+                "Diaspora families face higher fees on the money they send home from next month",
+                "For readers unfamiliar with Zimbabwe, some background first",
+                "Experts say the African nation faces complex challenges"
+              ],
+              answer: 1,
+              explain: "We write for Zimbabweans, leading with what affects the reader, not explaining the country to outsiders."
+            },
+            {
+              type: "mcq",
+              q: "An election is contested and you can reach officials but not ordinary voters. The most responsible approach is to:",
+              options: [
+                "Run only the officials' version as settled fact",
+                "Make clear what is claimed and by whom, and keep seeking other voices",
+                "Invent citizen quotes to balance it",
+                "Drop the story entirely"
+              ],
+              answer: 1,
+              explain: "Attribute claims, do not present one side as fact, and keep working to reach the people affected."
+            },
+            {
+              type: "swipe",
+              q: "News or PR?",
+              leftLabel: "PR",
+              rightLabel: "News",
+              cards: [
+                { text: "Inflation rose to 12 percent, official data shows.", side: "right" },
+                { text: "We are honoured to be the region's leading, award-winning firm.", side: "left" },
+                { text: "Two hospitals reported drug shortages this week.", side: "right" },
+                { text: "Do not miss our game-changing launch event.", side: "left" }
+              ],
+              explain: "Sourced facts are news. Praise and calls to act are PR."
+            }
+          ]
         }
       ]
     },
@@ -545,6 +647,87 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Consistency over a long stretch builds trust and habit. A burst you cannot maintain does the opposite."
+            }
+          ]
+        },
+        {
+          id: "cp-newsroom",
+          title: "Inside the newsroom",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on how a newsroom works. You need 80% to pass.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This covers newsroom roles, how a story moves, and reading an outlet.",
+                "No teaching here, only questions. Below 80% means a review and a retry."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "match",
+              q: "Match each role to what they do.",
+              pairs: [
+                { a: "Assignment editor", b: "Tracks tips and decides today's coverage" },
+                { a: "Sub-editor", b: "Tightens and checks copy before it runs" },
+                { a: "Producer", b: "Builds the running order and writes anchor scripts" },
+                { a: "Managing editor", b: "Runs daily operations across the newsroom" }
+              ],
+              explain: "Each desk owns a different decision. The assignment editor is the daily gatekeeper; leadership runs the whole operation."
+            },
+            {
+              type: "mcq",
+              q: "You have an evergreen feature on a courts issue for a daily paper. Best first contact?",
+              options: ["The editor-in-chief", "The courts beat reporter", "The advertising team", "The receptionist"],
+              answer: 1,
+              explain: "Pitch the person who owns that coverage day to day. For an evergreen story, go to the relevant beat reporter."
+            },
+            {
+              type: "order",
+              q: "Put a story's journey in order, from first to last.",
+              items: [
+                "Gathering: tips and reporters bring the news in",
+                "Production: the desk checks, edits and shapes it",
+                "Output: it is published online, on air or in print"
+              ],
+              explain: "Gather, then verify and edit in production, then publish."
+            },
+            {
+              type: "categorize",
+              q: "Sort each outlet by who it mainly serves.",
+              buckets: [
+                { id: "broad", label: "Broad public" },
+                { id: "niche", label: "Specialist or niche" }
+              ],
+              items: [
+                { text: "Regional daily newspaper", bucket: "broad" },
+                { text: "Local TV news", bucket: "broad" },
+                { text: "Industry trade publication", bucket: "niche" },
+                { text: "Neighbourhood community newsletter", bucket: "niche" },
+                { text: "Business journal for executives", bucket: "niche" }
+              ],
+              explain: "Dailies and broadcast reach a broad public; trade, business and community titles serve a defined niche."
+            },
+            {
+              type: "mcq",
+              q: "The production control room and master control room are unique to which kind of newsroom?",
+              options: ["Print newspapers", "Broadcast television and radio", "Newsletters", "All newsrooms equally"],
+              answer: 1,
+              explain: "The PCR and MCR are specific to broadcast. Print and digital have no equivalent."
+            },
+            {
+              type: "mcq",
+              q: "What best defines a digital-first newsroom?",
+              options: [
+                "It works to one nightly deadline",
+                "It publishes continuously and updates in real time",
+                "It never checks facts",
+                "It has no editors"
+              ],
+              answer: 1,
+              explain: "Digital-first means continuous, real-time publishing rather than a single daily deadline."
             }
           ]
         }
@@ -964,6 +1147,95 @@ window.COURSE = {
               exerciseId: "funding-model-1"
             }
           ]
+        },
+        {
+          id: "cp-money",
+          title: "How news makes money",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on the business of news. You need 80% to pass.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This covers revenue models, the industry today, paywalls, inclusive models, and how funding shapes coverage.",
+                "Questions only. Below 80% means a review and a retry."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "match",
+              q: "Match each funding model to its description.",
+              pairs: [
+                { a: "Advertising", b: "Companies pay to place ads; readers get it free" },
+                { a: "Subscription", b: "Readers pay a recurring fee for access" },
+                { a: "Public funding", b: "The state supports public-service media" },
+                { a: "Nonprofit", b: "Foundations and donors fund the journalism" }
+              ],
+              explain: "Most newsrooms blend these, but each has a distinct source and a distinct pull on coverage."
+            },
+            {
+              type: "mcq",
+              q: "What is a metered paywall?",
+              options: [
+                "Everything is locked from the first click",
+                "Readers get a set number of free articles, then must pay",
+                "All content is always free",
+                "Only advertisers can read"
+              ],
+              answer: 1,
+              explain: "A metered paywall gives a free allowance, then prompts the reader to subscribe."
+            },
+            {
+              type: "mcq",
+              q: "A pay-what-you-can membership, like Daily Maverick's, means readers:",
+              options: [
+                "Must all pay the same high fee",
+                "Choose how much to contribute, according to what they can afford",
+                "Cannot read unless wealthy",
+                "Pay only through advertising"
+              ],
+              answer: 1,
+              explain: "Pay what you can keeps journalism open to all while still inviting support."
+            },
+            {
+              type: "mcq",
+              q: "In media literacy, 'follow the money' means:",
+              options: [
+                "Chase the highest salary",
+                "Understand who funds an outlet, because funding shapes its journalism",
+                "Only read paid content",
+                "Ignore where news comes from"
+              ],
+              answer: 1,
+              explain: "Knowing who pays helps you judge the influences on what gets covered and how."
+            },
+            {
+              type: "multi",
+              q: "Which trends are reshaping the newspaper business today? Select all.",
+              options: [
+                "Digital-first publishing",
+                "Growth in reader revenue and subscriptions",
+                "Rising print circulation everywhere",
+                "Competition from social platforms and free online news"
+              ],
+              answers: [0, 1, 3],
+              explain: "Digital-first, reader revenue and platform competition are rising. Print circulation is falling, not rising."
+            },
+            {
+              type: "mcq",
+              q: "What is the 'super-serving' concern with subscription models?",
+              options: [
+                "They give too much away free",
+                "They risk serving mainly richer, more educated audiences and excluding others",
+                "They make news too cheap",
+                "They only work for sport"
+              ],
+              answer: 1,
+              explain: "If only the well-off can pay, journalism risks reaching only them, which is bad for an informed public."
+            }
+          ]
         }
       ]
     },
@@ -1259,6 +1531,90 @@ window.COURSE = {
               ],
               model: "Story: how a women-led cooperative in northern Zambia is using solar cold-storage to cut post-harvest losses. Where: Zambia, a country rarely covered beyond its own borders. Why it matters: post-harvest loss is a continent-wide problem, and here is a working response. Why it counters the frame: it centres the farmers solving it, shows African innovation and agency, and gives context rather than a snapshot of hardship.",
               exerciseId: "missing-story-1"
+            }
+          ]
+        },
+        {
+          id: "cp-africa",
+          title: "Reporting Africa",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on covering the continent. You need 80% to pass.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This covers the frames and stereotypes, event-driven coverage, the wire problem, and pan-African reporting.",
+                "Questions only. Below 80% means a review and a retry."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "multi",
+              q: "Which frames does research repeatedly find in coverage of Africa? Select all.",
+              options: ["Poverty", "Corruption and poor leadership", "Conflict and disease", "Constant innovation and agency"],
+              answers: [0, 1, 2],
+              explain: "The recurring frames tie Africa to poverty, corruption, conflict and disease. Innovation and agency are what go missing."
+            },
+            {
+              type: "mcq",
+              q: "In reviews of African coverage, where did the stories largely come from?",
+              options: [
+                "Almost none from agencies",
+                "About half from agencies, and only about a fifth of those from African agencies",
+                "All from African agencies",
+                "Agencies are never used"
+              ],
+              answer: 1,
+              explain: "Agencies supplied close to half of African-country stories, and only about a fifth of those were from African agencies, so non-Africans often set the agenda."
+            },
+            {
+              type: "categorize",
+              q: "Sort these story ideas by how the continent is usually covered.",
+              buckets: [
+                { id: "over", label: "Already over-covered" },
+                { id: "under", label: "Under-covered" }
+              ],
+              items: [
+                { text: "A contested election", bucket: "over" },
+                { text: "Protest violence", bucket: "over" },
+                { text: "A homegrown tech innovation", bucket: "under" },
+                { text: "A community solving a local problem", bucket: "under" },
+                { text: "Everyday life and ordinary voices", bucket: "under" }
+              ],
+              explain: "Elections, protests and conflict are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
+            },
+            {
+              type: "mcq",
+              q: "How do you avoid the 'Africa is one country' trope?",
+              options: [
+                "Cover fewer countries",
+                "Name the specific country and ground the story in its own context",
+                "Use more photos",
+                "Only write about the continent as a whole"
+              ],
+              answer: 1,
+              explain: "Fifty-four countries cannot share one storyline. Name the country and give it specific context."
+            },
+            {
+              type: "mcq",
+              q: "Which kind of African story is most consistently missing from coverage?",
+              options: [
+                "Elections",
+                "Conflict",
+                "Innovation, success and ordinary voices",
+                "Politics"
+              ],
+              answer: 2,
+              explain: "Success, innovation like M-Pesa, and the voices of ordinary people are the stories repeatedly left out."
+            },
+            {
+              type: "mcq",
+              q: "Which countries tend to dominate African coverage of Africa?",
+              options: ["Lesotho and Eritrea", "Nigeria and South Africa", "Seychelles and Comoros", "Coverage is perfectly even"],
+              answer: 1,
+              explain: "Coverage concentrates on a few large countries, often Nigeria and South Africa, while many others barely feature."
             }
           ]
         }
@@ -2149,6 +2505,88 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Accuracy comes first. The others distort the number or sensationalise beyond what the facts support."
+            }
+          ]
+        },
+        {
+          id: "cp-factcopy",
+          title: "Fact-checking and copy",
+          checkpoint: true,
+          minutes: 12,
+          intro: "A checkpoint on verification and clean copy. You need 80% to pass.",
+          cards: [
+            {
+              h: "Before you start",
+              body: [
+                "This tests both skills together: verify the claim, then catch the error.",
+                "Questions only. Below 80% means a review and a retry."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "highlight",
+              q: "Tap the errors.",
+              instruction: "Tap each word that is misspelt or the wrong word.",
+              tokens: ["Yesterday", "the", "goverment", "announced", "there", "new", "policy"],
+              targets: [2, 4],
+              explain: "Goverment should be government, and there should be their."
+            },
+            {
+              type: "fillblank",
+              q: "Choose the right words.",
+              text: "___ been a hard year, and the council lost ___ funding.",
+              bank: ["It's", "Its", "Their"],
+              answer: ["It's", "Its"],
+              explain: "It's means it has (It's been); its shows possession (its funding). Their is a distractor."
+            },
+            {
+              type: "match",
+              q: "Match each claim to how you would verify it.",
+              pairs: [
+                { a: "A viral photo", b: "Reverse image search" },
+                { a: "A surprising statistic", b: "Trace it to the original dataset" },
+                { a: "A direct quote", b: "Check it against your recording" },
+                { a: "A person's job title", b: "Confirm it against the official record" }
+              ],
+              explain: "Each kind of claim has its own check. Match the method to the claim."
+            },
+            {
+              type: "swipe",
+              q: "Verified, or still just a claim?",
+              leftLabel: "Still a claim",
+              rightLabel: "Verified",
+              cards: [
+                { text: "A figure you read in the official budget document.", side: "right" },
+                { text: "A WhatsApp message saying a minister resigned.", side: "left" },
+                { text: "Two independent officials confirm the same number.", side: "right" },
+                { text: "A statistic a source recited from memory.", side: "left" }
+              ],
+              explain: "Documents you have seen and independent corroboration are verified. A single message or a number from memory is still a claim."
+            },
+            {
+              type: "mcq",
+              q: "A court acquitted a politician of one charge, but a second trial continues. Which headline is accurate?",
+              options: [
+                "Politician cleared of all charges",
+                "Politician acquitted on one charge; second trial continues",
+                "Politician walks free for good",
+                "Justice fails again"
+              ],
+              answer: 1,
+              explain: "Accuracy first. Only the second headline reflects what actually happened."
+            },
+            {
+              type: "multi",
+              q: "Which are red flags that should make you check harder? Select all.",
+              options: [
+                "A single anonymous source with no support",
+                "A screenshot with no clear origin",
+                "A statistic that seems too perfect",
+                "Two independent sources who agree"
+              ],
+              answers: [0, 1, 2],
+              explain: "Lone anonymous tips, unsourced screenshots and too-perfect numbers are warning signs. Independent corroboration is reassurance."
             }
           ]
         }
