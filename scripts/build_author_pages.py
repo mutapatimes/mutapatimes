@@ -60,6 +60,7 @@ def load_authors():
             "linkedin": meta.get("linkedin", "").strip(),
             "email": meta.get("email", "").strip(),
             "website": meta.get("website", "").strip(),
+            "academy": str(meta.get("academy", "")).strip().lower() in ("true", "yes", "1"),
             "order": order,
             "body": body.strip(),
             "aliases": {meta.get("name", "").strip().lower()},
@@ -252,6 +253,7 @@ def render_author_page(author):
         <div class="author-page-text">
           <p class="author-page-eyebrow">Author</p>
           <h1 class="author-page-name">{esc(name)}</h1>
+          {'<a class="author-page-pill" href="../academy/">Mutapa Times Academy</a>' if author["academy"] else ''}
           {f'<p class="author-page-role">{esc(author["role"])}</p>' if author["role"] else ''}
           {f'<p class="author-page-bio">{esc(author["bio"])}</p>' if author["bio"] else ''}
           {f'<p class="author-page-beat"><span>Covers:</span> {esc(author["beat"])}</p>' if author["beat"] else ''}

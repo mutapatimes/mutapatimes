@@ -9383,6 +9383,38 @@ body.longform-page .topbar {
   margin: 0 0 6px;
   color: #111;
 }
+.author-page-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c41e1e;
+  background: rgba(196, 30, 30, 0.08);
+  border: 1px solid rgba(196, 30, 30, 0.22);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin: 0 0 12px;
+  text-decoration: none;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.author-page-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c41e1e;
+  transition: background .15s;
+}
+.author-page-pill:hover {
+  background: #c41e1e;
+  color: #fff;
+  border-color: #c41e1e;
+}
+.author-page-pill:hover::before { background: #fff; }
 .author-page-role {
   font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
