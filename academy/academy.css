@@ -501,3 +501,18 @@ body.ac-exam .ac-cf--pyramid .ac-cf-seg, body.ac-exam .ac-cf--stack .ac-cf-seg {
 body.ac-exam .ac-cf-blank { background: transparent; color: #9a9085; }
 body.ac-exam .ac-cf-filled { background: #2a241f; color: #ece4d8; }
 body.ac-exam .ac-cf-chip { background: #2a241f; color: #ece4d8; border-color: rgba(255,255,255,.2); }
+
+/* ============================================================
+   v13: mobile app bar + larger categorize tap targets
+   ============================================================ */
+@media (max-width: 620px) {
+  .ac-appbar-in { flex-wrap: wrap; gap: .4rem; padding: .5rem .85rem; }
+  .ac-brand { font-size: .98rem; }
+  .ac-chips { flex-wrap: wrap; justify-content: flex-end; gap: .35rem; }
+  .ac-chip { font-size: .72rem; padding: .28rem .55rem; }
+  .ac-chip--btn { padding: .28rem .55rem; }
+}
+@media (max-width: 560px) {
+  .ac-cat-opts { gap: .45rem; }
+  .ac-cat-btn { flex: 1 1 7rem; text-align: center; padding: .6rem .7rem; }
+}
