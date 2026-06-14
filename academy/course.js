@@ -3774,108 +3774,275 @@ window.COURSE = {
           exercises: [
             {
               type: "mcq",
-              q: "Which is news rather than PR?",
+              q: "A company statement calls its new app \"the most secure in Africa.\" The most defensible way to use this is to:",
               options: [
-                "We are proud to unveil our world-class platform",
-                "A sourced report that a state firm's losses widened",
-                "Join the movement and back our cause today",
-                "A brochure listing a product's benefits"
+                "Report it as fact, the company would not lie",
+                "Attribute it as the company's claim and seek independent verification",
+                "Rewrite it in your own words as praise",
+                "Ignore the story entirely"
               ],
               answer: 1,
-              explain: "News reports what happened, with sources."
+              explain: "An unverified superlative is a claim, not a fact. Attribute it and check it."
             },
             {
               type: "mcq",
-              q: "Which is the stronger lede?",
+              q: "A health ministry reports a measles outbreak of 200 cases. Which is the strongest lede?",
               options: [
-                "A committee met on Tuesday to discuss a number of matters",
-                "Power cuts will lengthen to 18 hours a day across Harare, the utility says"
+                "The health ministry held a press conference on Tuesday morning.",
+                "A measles outbreak has infected 200 people, the health ministry says, as clinics scramble to cope.",
+                "Health, an ever-important issue, is back in the news this week.",
+                "Officials gathered to discuss a range of health matters."
               ],
               answer: 1,
-              explain: "Lead with the news and who it affects."
+              explain: "Lead with the news and its human impact, attributed, not the process or vague throat-clearing."
             },
             {
               type: "mcq",
-              q: "A confident source gives you a striking figure. Before publishing you should:",
+              q: "Two contacts give you the same striking figure. It counts as verified only if they:",
               options: [
-                "Publish it, they sounded sure",
-                "Treat it as a claim and verify it against another source",
-                "Run it as opinion",
-                "Ignore it"
+                "Both read it in the same company statement",
+                "Are independent of each other and of the original source",
+                "Are both senior people",
+                "Both sound very certain"
               ],
               answer: 1,
-              explain: "Confidence is not evidence."
+              explain: "Two people repeating one source is still one source. Independence is what verifies."
+            },
+            {
+              type: "multi",
+              q: "Which of these are red flags in a tip? Select all.",
+              options: [
+                "A single anonymous source with no support",
+                "A screenshot with no clear origin",
+                "A statistic that seems too perfect",
+                "Two independent sources who agree"
+              ],
+              answers: [0, 1, 2],
+              explain: "Lone anonymous tips, unsourced screenshots and too-perfect numbers warrant caution. Independent agreement is reassurance."
             },
             {
               type: "mcq",
-              q: "Why is relying on Western wire agencies for African news a problem?",
+              q: "A leaked file names a junior whistleblower who would be endangered if identified. You should:",
               options: [
-                "Wires are always wrong",
-                "Non-Africans end up setting the agenda and framing, often for a Western audience",
-                "Wires are too slow",
-                "There is no problem"
+                "Name them, accuracy means full detail",
+                "Report the substance and withhold the non-essential identifying detail",
+                "Drop the story to be safe",
+                "Name them with a disclaimer"
               ],
               answer: 1,
-              explain: "Whoever supplies the copy shapes the agenda."
+              explain: "Minimise harm without losing the public-interest story."
             },
             {
               type: "mcq",
-              q: "What is a metered paywall?",
+              q: "Which sentence is correct?",
               options: [
-                "Everything is locked from the first click",
-                "A set number of free articles, then you must pay",
-                "All content is free",
-                "Only advertisers can read"
+                "The board, who's members met today, approved it's budget.",
+                "The board, whose members met today, approved its budget.",
+                "The board, whose members met today, approved it's budget.",
+                "The board, who's members met today, approved its budget."
               ],
               answer: 1,
-              explain: "A free allowance, then a prompt to subscribe."
-            },
-            {
-              type: "mcq",
-              q: "You have an evergreen health feature for a daily. Best first contact?",
-              options: ["The editor-in-chief", "The health beat reporter", "Advertising", "The receptionist"],
-              answer: 1,
-              explain: "Pitch the person who owns that coverage day to day."
+              explain: "Whose shows possession; who's means who is. Its with no apostrophe is the possessive."
             },
             {
               type: "highlight",
               q: "Tap the errors.",
               instruction: "Tap each word that is misspelt or the wrong word.",
-              tokens: ["The", "company", "has", "recieved", "there", "report"],
-              targets: [3, 4],
-              explain: "Recieved should be received, and there should be their."
+              tokens: ["The", "resturant", "said", "there", "prices", "had", "risen"],
+              targets: [1, 3],
+              explain: "Resturant should be restaurant, and there should be their."
             },
             {
               type: "fillblank",
               q: "Choose the right words.",
-              text: "They left ___ notebooks over ___ by the desk.",
-              bank: ["their", "there", "they're"],
-              answer: ["their", "there"],
-              explain: "Their shows possession; there shows place; they're means they are."
+              text: "___ been a hard year, and the team lost ___ funding.",
+              bank: ["It's", "Its", "Their"],
+              answer: ["It's", "Its"],
+              explain: "It's means it has; its shows possession."
             },
             {
               type: "mcq",
-              q: "How do you avoid the 'Africa is one country' trope?",
+              q: "A feature headlined \"Doing business in Africa\" draws every example from a single city. The main flaw is that it:",
               options: [
-                "Cover fewer countries",
-                "Name the specific country and ground it in its own context",
-                "Use more photos",
-                "Write only about the continent as a whole"
+                "Is too detailed",
+                "Treats a whole continent as interchangeable, erasing huge differences",
+                "Mentions business at all",
+                "Is too short"
               ],
               answer: 1,
-              explain: "Name the country and give it specific context."
+              explain: "The 'Africa is one country' trope. Name the place and give it context."
             },
             {
               type: "mcq",
-              q: "You realise after publishing that a key figure was wrong. You should:",
+              q: "An outlet publishes a mining company's press release almost word for word as news. The core problem is that it:",
               options: [
-                "Quietly delete the story",
-                "Leave it, few will notice",
-                "Correct it openly and note the correction",
-                "Blame the source in a new piece"
+                "Is shorter than usual",
+                "Lets an interested party set the agenda, unchecked and without context",
+                "Used a press release, which is banned",
+                "Should have been an opinion piece"
               ],
-              answer: 2,
-              explain: "Accuracy includes correcting openly."
+              answer: 1,
+              explain: "Repeating one side unchecked hands them the agenda."
+            },
+            {
+              type: "multi",
+              q: "Which genuinely help reader-funded journalism sustain itself? Select all.",
+              options: [
+                "Distinctive reporting readers will pay for",
+                "Loyal subscribers who renew over time",
+                "Trust built through accuracy and consistency",
+                "Filling the site with free wire copy"
+              ],
+              answers: [0, 1, 2],
+              explain: "Distinctive, trusted work that earns loyal subscribers sustains reader revenue. Cheap filler does not."
+            },
+            {
+              type: "order",
+              q: "Order a news story, top to bottom.",
+              items: [
+                "The most important news: what happened and who it affects",
+                "Key supporting facts and context",
+                "A telling quote",
+                "Background and minor detail"
+              ],
+              explain: "Most important first. A reader who stops early still has the heart of the story."
+            }
+          ]
+        },
+        {
+          id: "capstone-press-release",
+          title: "Capstone: from press release to published story",
+          minutes: 25,
+          intro: "Put it all into practice. A company has sent a press release. Take it from your inbox to a published story, the right way.",
+          cards: [
+            {
+              h: "The brief",
+              body: [
+                "A press release has landed from Savanna Solar, a clean-energy company in Kenya. (It is a made-up company, for this exercise.)",
+                "Read it, then work through the steps: judge it, structure the article, plan the newsroom roll-out, pitch it, and work out how it pays. Minimal writing, but you will show you understand the whole process."
+              ]
+            },
+            {
+              h: "The press release",
+              body: [
+                "FOR IMMEDIATE RELEASE. Savanna Solar, the leading and most innovative clean-energy company in East Africa, is proud to announce a game-changing 50 megawatt solar plant near Nakuru. The world-class project will transform the region and create thousands of jobs. Construction begins next month, backed by a US$80 million investment from international partners. CEO Aisha Mwangi said: We are thrilled to lead Africa into a brighter future.",
+                "What the release does not say: how many jobs are permanent, where the US$80 million comes from, what happens to the land, or whether the local grid can take the power."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "highlight",
+              q: "Tap the spin.",
+              instruction: "Tap the self-praising words a reporter should not repeat as fact.",
+              tokens: ["Savanna", "Solar", "the", "leading", "and", "most", "innovative", "clean-energy", "company", "is", "proud", "to", "announce", "a", "game-changing", "plant"],
+              targets: [3, 6, 10, 14],
+              explain: "Leading, innovative, proud and game-changing are the company praising itself. Strip them and report what is verifiable."
+            },
+            {
+              type: "mcq",
+              q: "What is the right journalistic approach to this release?",
+              options: [
+                "Publish it as a story, lightly reworded",
+                "Verify the claims, find what is genuinely newsworthy, and seek independent voices",
+                "Run it as an opinion column",
+                "Ignore it, company news is never relevant"
+              ],
+              answer: 1,
+              explain: "A release is a tip, not a story. Verify, contextualise, and talk to people beyond the company."
+            },
+            {
+              type: "categorize",
+              q: "Sort the release's statements.",
+              buckets: [
+                { id: "report", label: "Report (after checking)" },
+                { id: "drop", label: "Drop or attribute as spin" }
+              ],
+              items: [
+                { text: "A 50MW plant is planned near Nakuru", bucket: "report" },
+                { text: "US$80m investment, construction next month", bucket: "report" },
+                { text: "The most innovative company in East Africa", bucket: "drop" },
+                { text: "It will transform the region", bucket: "drop" },
+                { text: "Thousands of jobs (number unverified)", bucket: "drop" }
+              ],
+              explain: "Concrete, checkable facts can be reported once verified. Self-praise and vague promises are spin to drop or attribute."
+            },
+            {
+              type: "mcq",
+              q: "Which framing serves readers best here?",
+              options: [
+                "A celebration of the company's vision",
+                "Straight news on the plant, with scrutiny of the jobs, funding and grid claims",
+                "A disaster story about the energy sector",
+                "An opinion piece arguing for solar power"
+              ],
+              answer: 1,
+              explain: "Report the development, but hold the claims to account. Jobs, money and impact are the real public-interest questions."
+            },
+            {
+              type: "order",
+              q: "Order your article, top to bottom.",
+              items: [
+                "Lede: a 50MW solar plant is planned near Nakuru, with US$80m behind it",
+                "The verified facts: size, timeline, who is funding it",
+                "Context: the region's power needs and what the grid can handle",
+                "A company quote, balanced against an independent voice",
+                "Background on the company and the unanswered questions"
+              ],
+              explain: "Most important and verified first, then context, then quotes and background."
+            },
+            {
+              type: "order",
+              q: "Order the newsroom roll-out, first to last.",
+              items: [
+                "Pitch approved by the editor",
+                "Report and verify the claims",
+                "Write the draft",
+                "Sub-editor checks and tightens the copy",
+                "Fact-check names, figures and the quote",
+                "Write an accurate headline and standfirst",
+                "Publish, then promote"
+              ],
+              explain: "Verify, write, edit, fact-check, then headline and publish. Promotion comes after it is right, not before."
+            },
+            {
+              type: "order",
+              q: "Order your pitch to the editor.",
+              items: [
+                "A specific subject line with the news",
+                "What the story is, in one line",
+                "Why it matters now",
+                "Why you can deliver it",
+                "Length and format"
+              ],
+              explain: "Lead with the news, then why now, why you, and the practicalities."
+            },
+            {
+              type: "multi",
+              q: "How could this story help sustain the newsroom? Select all that apply.",
+              options: [
+                "Distinctive, verified reporting that draws and keeps readers",
+                "Traffic and ad views from a story people share",
+                "A sponsorship paid by Savanna Solar to cover it",
+                "Building trust that supports subscriptions over time"
+              ],
+              answers: [0, 1, 3],
+              explain: "Reader revenue, reach and trust all help. Taking money from the company you cover is a conflict of interest, not a business model."
+            },
+            {
+              type: "write",
+              q: "Write your pitch subject line.",
+              brief: [
+                "In one line, write the email subject line you would send the editor for this story.",
+                "Make it specific and newsy, not vague."
+              ],
+              checklist: [
+                "Does it state the actual news (the plant, the money)?",
+                "Is it specific, not 'story idea'?",
+                "Would an editor open it?"
+              ],
+              model: "Subject line: US$80m, 50MW solar plant planned near Nakuru, but who gets the jobs?",
+              exerciseId: "capstone-subject-1"
             }
           ]
         }
