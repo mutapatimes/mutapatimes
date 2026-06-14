@@ -194,6 +194,52 @@ export default {
       return json({ paid: false }, 200, ch);
     }
 
+    // ---- redeem (manual / local payment access code) ----
+    if (body.action === "redeem") {
+      const code = (body.code || "").toString().trim().toUpperCase().slice(0, 32);
+      const name = (body.name || "").toString().trim().slice(0, 60);
+      const email = (body.email || "").toString().trim().slice(0, 120);
+      const ref = (body.ref || "").toString().trim().slice(0, 16).toUpperCase();
+      if (!code) return json({ error: "Enter your access code" }, 400, ch);
+      if (name.length < 2) return json({ error: "Name required" }, 400, ch);
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
+
+      const rec = await getJSON(env, "acccode:" + code);
+      if (!rec) return json({ error: "That code is not valid" }, 400, ch);
+
+      if (rec.status === "used") {
+        // Allow the original buyer to re-unlock on another device.
+        if (rec.email && rec.email === email) {
+          const user = await getJSON(env, "user:" + email);
+          const order = { email, paidTs: rec.paidTs || Date.now() };
+          return json({ ok: true, token: await accessToken(env, order), referralCode: (user && user.referralCode) || "", email }, 200, ch);
+        }
+        return json({ error: "That code has already been used" }, 400, ch);
+      }
+
+      const reference = "AC-" + code + "-" + randHex(2).toUpperCase();
+      let order = { reference, email, name, ref, status: "created", createdTs: Date.now(), via: "code" };
+      order = await finalize(env, order, { email, name });
+      rec.status = "used"; rec.email = email; rec.reference = reference; rec.paidTs = order.paidTs;
+      await env.ACADEMY.put("acccode:" + code, JSON.stringify(rec));
+      return json({ ok: true, token: await accessToken(env, order), referralCode: order.referralCode || "", email }, 200, ch);
+    }
+
+    // ---- gencode (admin only): create access codes for local buyers ----
+    if (body.action === "gencode") {
+      if (!env.ADMIN_KEY || body.adminKey !== env.ADMIN_KEY) return json({ error: "Unauthorized" }, 401, ch);
+      const count = Math.min(parseInt(body.count, 10) || 1, 100);
+      const note = (body.note || "").toString().slice(0, 80);
+      const prefix = (body.prefix || "MT").toString().toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6) || "MT";
+      const codes = [];
+      for (let i = 0; i < count; i++) {
+        const c = prefix + randHex(3).toUpperCase();
+        await env.ACADEMY.put("acccode:" + c, JSON.stringify({ status: "unused", note, createdTs: Date.now() }));
+        codes.push(c);
+      }
+      return json({ codes }, 200, ch);
+    }
+
     return json({ error: "Unknown action" }, 400, ch);
   }
 };

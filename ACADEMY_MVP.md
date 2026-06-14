@@ -217,3 +217,33 @@ referral code + friend discount attached) -> buyer pays on Lemon Squeezy
 -> Lemon Squeezy's webhook tells the Worker it is paid (which credits the
 referrer and fires the newsletter) -> the welcome page polls the Worker,
 unlocks the course and shows the buyer's referral link.
+
+## Local payment via access codes (Mukuru, EcoCash, bank, cash)
+
+Mukuru is a remittance service, not a checkout gateway, so it cannot be
+wired in like a card processor. Instead the landing page has a "Paying
+from Zimbabwe?" section where a local buyer enters a one-time **access
+code** that unlocks the course. You collect the local payment however
+works (Mukuru, EcoCash via someone in Zim, bank, cash), confirm it, then
+hand over a code.
+
+Set `ADMIN_KEY` (a long random string) as a Worker secret:
+```
+npx wrangler secret put ADMIN_KEY
+```
+
+Generate codes (returns the codes to hand out):
+```
+curl -X POST "https://<your-worker>/" -H "Content-Type: application/json" \
+  -d '{"action":"gencode","adminKey":"YOUR_ADMIN_KEY","count":5,"prefix":"MT","note":"March batch"}'
+```
+
+Or create one by hand in KV:
+```
+npx wrangler kv key put --binding=ACADEMY "acccode:MT123ABC" '{"status":"unused"}'
+```
+
+Each code is single-use, ties to the buyer's email (so they can re-unlock
+on another device), credits any referrer, and fires the newsletter, just
+like a card sale. Tune the local instructions text in `academy/index.html`
+(`#localInstructions`).

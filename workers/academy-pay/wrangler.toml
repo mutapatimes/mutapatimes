@@ -11,6 +11,7 @@ id = "PASTE_KV_NAMESPACE_ID_HERE"
 # Secrets (do NOT commit): set with `npx wrangler secret put NAME`
 #   LS_WEBHOOK_SECRET - Lemon Squeezy webhook signing secret
 #   ACCESS_SECRET     - any long random string (signs access tokens + referral codes)
+#   ADMIN_KEY         - any long random string; needed to generate local-payment access codes
 
 [vars]
 # Your Lemon Squeezy product buy link, e.g.

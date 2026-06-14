@@ -161,6 +161,34 @@
       <p class="al-fine">By enrolling you agree to receive the Mutapa Times newsletter. You can unsubscribe any time. Payments are processed securely by Lemon Squeezy.</p>
     </section>
 
+    <section class="al-section" id="localpay">
+      <h2 class="al-h2">Paying from Zimbabwe?</h2>
+      <p>Card or PayPal above is the quickest way in. If you would rather pay locally, by Mukuru, EcoCash or bank transfer, arrange it with us first, then enter the access code we send you to unlock the course straight away.</p>
+      <div class="al-card" style="margin-bottom:1rem">
+        <h3>How local payment works</h3>
+        <p id="localInstructions">Reply to any Mutapa Times newsletter email, or message us, to arrange local payment. Once we confirm it, we send you a one-time access code to enter below.</p>
+      </div>
+      <form id="codeForm" novalidate>
+        <div class="al-field"><label for="cnm">Your full name</label><input class="al-input" id="cnm" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda"></div>
+        <div class="al-field"><label for="cem">Email address</label><input class="al-input" id="cem" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com"></div>
+        <div class="al-field"><label for="ccode">Access code</label><input class="al-input" id="ccode" type="text" maxlength="32" placeholder="e.g. MT4F2A9"></div>
+        <button class="al-pay" id="codeBtn" type="submit">Unlock the course</button>
+      </form>
+      <p class="al-status" id="codeStatus"></p>
+      <div class="al-card" id="codeSuccess" hidden>
+        <h3>You're in</h3>
+        <p>Your access is unlocked on this device.</p>
+        <p><a class="al-cta" href="/academy/learn/">Start the course</a></p>
+        <div id="codeRefBox" hidden>
+          <p style="margin-top:1rem">Share your referral link. Friends get a discount and we credit you.</p>
+          <div style="display:flex;gap:.5rem">
+            <input class="al-input" id="codeRefLink" readonly>
+            <button type="button" id="codeCopy" style="background:var(--ink);color:#fff;border:0;border-radius:8px;padding:0 .9rem;cursor:pointer;font-weight:700">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="al-faq">
       <h2 class="al-h2">Questions</h2>
       <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere in the world. Pay with any Visa, Mastercard or American Express card, with PayPal, or with Apple Pay and Google Pay. Local EcoCash payment is coming later.</p></details>
@@ -229,6 +257,49 @@
       })
       .catch(function () { btn.disabled = false; status.innerHTML = '<span class="err">Could not start the payment. Please try again.</span>'; });
     });
+
+    // ---- Local payment: redeem an access code ----
+    var codeForm = document.getElementById("codeForm");
+    if (codeForm) {
+      codeForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("cnm").value.trim();
+        var email = document.getElementById("cem").value.trim();
+        var code = document.getElementById("ccode").value.trim();
+        var cs = document.getElementById("codeStatus");
+        var cb = document.getElementById("codeBtn");
+        if (name.length < 2) { cs.innerHTML = '<span class="err">Please enter your name.</span>'; return; }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { cs.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
+        if (!code) { cs.innerHTML = '<span class="err">Please enter your access code.</span>'; return; }
+        if (!PAY_ENDPOINT) { cs.innerHTML = '<span class="err">Code redemption is not set up yet.</span>'; return; }
+        cb.disabled = true; cs.textContent = "Checking your code...";
+        fetch(PAY_ENDPOINT, {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "redeem", code: code, name: name, email: email, ref: storedRef })
+        })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d && d.ok) {
+            try { if (d.token) localStorage.setItem("mt_academy_access", d.token); if (d.email) localStorage.setItem("mt_academy_email", d.email); } catch (e) {}
+            cs.textContent = ""; codeForm.hidden = true;
+            document.getElementById("codeSuccess").hidden = false;
+            if (d.referralCode) {
+              var link = location.origin + "/academy/?ref=" + encodeURIComponent(d.referralCode);
+              document.getElementById("codeRefLink").value = link;
+              document.getElementById("codeRefBox").hidden = false;
+              document.getElementById("codeCopy").addEventListener("click", function () {
+                var i = document.getElementById("codeRefLink"); i.select();
+                try { navigator.clipboard.writeText(i.value); } catch (e) {}
+                document.getElementById("codeCopy").textContent = "Copied";
+              });
+            }
+          } else {
+            cb.disabled = false; cs.innerHTML = '<span class="err">' + ((d && d.error) || "That code is not valid.") + '</span>';
+          }
+        })
+        .catch(function () { cb.disabled = false; cs.innerHTML = '<span class="err">Could not check the code. Please try again.</span>'; });
+      });
+    }
   })();
   </script>
 </body>
