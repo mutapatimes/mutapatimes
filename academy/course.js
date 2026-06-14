@@ -39,7 +39,7 @@ window.COURSE = {
               type: "mcq",
               q: "Which story is most newsworthy for a Mutapa Times reader living in the UK?",
               options: [
-                "A local council vote in a town they have no link to",
+                "A new shopping centre opening in a town they have no link to",
                 "A change to how diaspora Zimbabweans can send money home",
                 "A weather forecast for a country they do not live in",
                 "A sports result from an unrelated league"
@@ -49,7 +49,7 @@ window.COURSE = {
             },
             {
               type: "multi",
-              q: "A long-serving cabinet minister resigns suddenly during a budget crisis. Which news values are clearly present? Select all.",
+              q: "A long-serving company chief executive resigns suddenly during a financial crisis. Which news values are clearly present? Select all.",
               options: ["Timeliness", "Prominence", "Conflict", "Human interest"],
               answers: [0, 1, 2],
               explain: "It is new (timeliness), involves a well known figure (prominence), and sits inside a dispute (conflict). Human interest would need a person's personal story at the centre."
@@ -133,7 +133,7 @@ window.COURSE = {
               rightLabel: "News",
               cards: [
                 { text: "We are thrilled to unveil our award-winning, world-class platform.", side: "left" },
-                { text: "The council voted 7 to 3 to cut the transport budget.", side: "right" },
+                { text: "A factory cut 200 jobs, the company confirmed.", side: "right" },
                 { text: "Join the thousands who already love our revolutionary app.", side: "left" },
                 { text: "Inflation rose to 12 percent last month, official figures show.", side: "right" },
                 { text: "Our visionary leadership is proud to take the industry forward.", side: "left" },
@@ -269,7 +269,7 @@ window.COURSE = {
             },
             {
               type: "multi",
-              q: "A long-serving minister resigns abruptly during a budget scandal, the day after a leaked audit. Which news values are strongly present? Select all.",
+              q: "A long-serving company chief resigns abruptly during a financial scandal, the day after a leaked audit. Which news values are strongly present? Select all.",
               options: ["Timeliness", "Prominence", "Conflict", "Human interest"],
               answers: [0, 1, 2],
               explain: "It is new, involves a prominent figure and sits inside a dispute. Human interest would need a person's personal story at the centre."
@@ -296,7 +296,7 @@ window.COURSE = {
               items: [
                 { text: "A sourced report that a state firm's losses widened", bucket: "news" },
                 { text: "We are excited to announce our visionary new app", bucket: "pr" },
-                { text: "Council voted 7 to 3 to cut the budget", bucket: "news" },
+                { text: "A factory cut 200 jobs, the company confirmed", bucket: "news" },
                 { text: "Back our cause and join the movement today", bucket: "pr" },
                 { text: "Figures drawn from the company's own filings", bucket: "news" }
               ],
@@ -316,11 +316,11 @@ window.COURSE = {
             },
             {
               type: "mcq",
-              q: "An election is contested and you can reach officials but not ordinary voters. The most responsible approach is to:",
+              q: "A factory closure is disputed and you can reach managers but not the affected workers. The most responsible approach is to:",
               options: [
-                "Run only the officials' version as settled fact",
+                "Run only the managers' version as settled fact",
                 "Make clear what is claimed and by whom, and keep seeking other voices",
-                "Invent citizen quotes to balance it",
+                "Invent worker quotes to balance it",
                 "Drop the story entirely"
               ],
               answer: 1,
@@ -364,7 +364,7 @@ window.COURSE = {
             {
               h: "The gatekeepers of daily coverage",
               body: [
-                "The news editor and, in broadcast, the assignment editor decide what gets covered today. The assignment editor watches incoming tips, tracks breaking news, vets sources and moves stories forward. Section or desk editors (Business, Metro, Politics) shape coverage in their area.",
+                "The news editor and, in broadcast, the assignment editor decide what gets covered today. The assignment editor watches incoming tips, tracks breaking news, vets sources and moves stories forward. Section or desk editors (Business, Metro, Sport) shape coverage in their area.",
                 "These are the people a story has to convince. They are busy and protective of their readers' time."
               ]
             },
@@ -679,8 +679,8 @@ window.COURSE = {
             },
             {
               type: "mcq",
-              q: "You have an evergreen feature on a courts issue for a daily paper. Best first contact?",
-              options: ["The editor-in-chief", "The courts beat reporter", "The advertising team", "The receptionist"],
+              q: "You have an evergreen feature on a health issue for a daily paper. Best first contact?",
+              options: ["The editor-in-chief", "The health beat reporter", "The advertising team", "The receptionist"],
               answer: 1,
               explain: "Pitch the person who owns that coverage day to day. For an evergreen story, go to the relevant beat reporter."
             },
@@ -990,7 +990,7 @@ window.COURSE = {
             {
               h: "Designs that include more people",
               body: [
-                "Pay what you can: Daily Maverick lets readers choose a contribution on a sliding scale. Trust-based free access: Spain's elDiario.es added an I cannot pay option, on trust, without checking. Free for groups at risk of exclusion: a Swedish paper gave free subscriptions to first-time voters before an election, and others have done the same for unemployed readers.",
+                "Pay what you can: Daily Maverick lets readers choose a contribution on a sliding scale. Trust-based free access: Spain's elDiario.es added an I cannot pay option, on trust, without checking. Free for groups at risk of exclusion: a Swedish paper gave free subscriptions to young readers, and others have done the same for unemployed readers.",
                 "The common thread is to let people in, then invite support, rather than shutting them out at the door."
               ]
             },
@@ -1315,7 +1315,7 @@ window.COURSE = {
             {
               h: "Event-driven coverage",
               body: [
-                "Much coverage of African countries clusters around a few dramatic events: elections, protests, conflict and crisis, which editors often treat as more newsworthy. In one review, straight news made up about 80 percent of coverage, while in-depth features were under 10 percent.",
+                "Much coverage of African countries clusters around a few dramatic events: crises, disasters and accidents, which editors often treat as more newsworthy. In one review, straight news made up about 80 percent of coverage, while in-depth features were under 10 percent.",
                 "The result is a continent told through flashpoints, with little of the context that explains the why and the how."
               ]
             },
@@ -1340,7 +1340,7 @@ window.COURSE = {
               q: "What kind of coverage dominates reporting on African countries?",
               options: [
                 "In-depth features",
-                "Event-driven hard news around elections, protests and conflict",
+                "Event-driven hard news around crises and dramatic events",
                 "Arts and culture",
                 "Solutions journalism"
               ],
@@ -1351,9 +1351,9 @@ window.COURSE = {
               type: "mcq",
               q: "M-Pesa is an example of what kind of under-told African story?",
               options: [
-                "A conflict story",
+                "A routine announcement",
                 "A homegrown innovation that led the world",
-                "An election story",
+                "A sports story",
                 "A disaster story"
               ],
               answer: 1,
@@ -1367,13 +1367,13 @@ window.COURSE = {
                 { id: "under", label: "Under-covered" }
               ],
               items: [
-                { text: "A contested election", bucket: "over" },
-                { text: "Protest violence", bucket: "over" },
+                { text: "A dramatic accident", bucket: "over" },
+                { text: "A sudden disaster", bucket: "over" },
                 { text: "A mobile-money startup scaling up", bucket: "under" },
                 { text: "A community solving a water shortage", bucket: "under" },
                 { text: "Everyday life and ordinary voices", bucket: "under" }
               ],
-              explain: "Elections, protests and conflict are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
+              explain: "Dramatic events and crises are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
             },
             {
               type: "mcq",
@@ -1405,7 +1405,7 @@ window.COURSE = {
             {
               h: "Authorities over citizens",
               body: [
-                "Coverage leans heavily on officials, election commissions and observers. Ordinary citizens are often absent, or quoted only to reinforce a negative frame. Press releases published as-is are the least investment of all, and the most agenda-driven.",
+                "Coverage leans heavily on officials, spokespeople and observers. Ordinary citizens are often absent, or quoted only to reinforce a negative frame. Press releases published as-is are the least investment of all, and the most agenda-driven.",
                 "A story told only through those in power is only half the story."
               ]
             },
@@ -1425,7 +1425,7 @@ window.COURSE = {
                 "Mostly African agencies",
                 "Mostly Western wire agencies such as AFP, BBC and Reuters",
                 "Only citizen journalists",
-                "Only government press offices"
+                "Only company press offices"
               ],
               answer: 1,
               explain: "Reviews show agencies supply close to half of African-country stories, and only about a fifth of those are from African agencies."
@@ -1472,8 +1472,8 @@ window.COURSE = {
             {
               h: "Diversity of topics is the goal",
               body: [
-                "In one study, the countries covered most fully, such as South Africa and Egypt, were those reported across many topics. Others appeared only around a contested election or a single crisis, which distorts how readers see them.",
-                "Aim to cover a country across politics, business, culture, science and ordinary life, not through one event."
+                "In one study, the countries covered most fully, such as South Africa and Egypt, were those reported across many topics. Others appeared only around a single crisis or dramatic event, which distorts how readers see them.",
+                "Aim to cover a country across business, culture, science, sport and ordinary life, not through one event."
               ]
             },
             {
@@ -1525,7 +1525,7 @@ window.COURSE = {
               ],
               checklist: [
                 "Is it about a specific country or place, named and in context?",
-                "Does it go beyond election, protest or conflict?",
+                "Does it go beyond crisis and disaster?",
                 "Does it centre people, not only authorities?",
                 "Does it restore agency rather than reinforce a stereotype?"
               ],
@@ -1577,13 +1577,13 @@ window.COURSE = {
                 { id: "under", label: "Under-covered" }
               ],
               items: [
-                { text: "A contested election", bucket: "over" },
-                { text: "Protest violence", bucket: "over" },
+                { text: "A dramatic accident", bucket: "over" },
+                { text: "A sudden disaster", bucket: "over" },
                 { text: "A homegrown tech innovation", bucket: "under" },
                 { text: "A community solving a local problem", bucket: "under" },
                 { text: "Everyday life and ordinary voices", bucket: "under" }
               ],
-              explain: "Elections, protests and conflict are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
+              explain: "Dramatic events and crises are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
             },
             {
               type: "mcq",
@@ -1601,10 +1601,10 @@ window.COURSE = {
               type: "mcq",
               q: "Which kind of African story is most consistently missing from coverage?",
               options: [
-                "Elections",
-                "Conflict",
+                "Daily weather",
+                "Sports results",
                 "Innovation, success and ordinary voices",
-                "Politics"
+                "Routine announcements"
               ],
               answer: 2,
               explain: "Success, innovation like M-Pesa, and the voices of ordinary people are the stories repeatedly left out."
@@ -1972,7 +1972,7 @@ window.COURSE = {
           exercises: [
             {
               type: "mcq",
-              q: "A government department emails you a press release announcing a success. What is it?",
+              q: "A company's press office emails you a release announcing a success. What is it?",
               options: [
                 "A finished story ready to publish",
                 "A starting point that tells you what someone wants said",
@@ -2176,7 +2176,7 @@ window.COURSE = {
             },
             {
               type: "mcq",
-              q: "A government department emails a press release announcing a success. It is:",
+              q: "A company's press office emails a release announcing a success. It is:",
               options: [
                 "A finished story",
                 "A starting point that tells you what someone wants said",
@@ -2315,10 +2315,10 @@ window.COURSE = {
               q: "Write the lede.",
               brief: [
                 "Write the opening sentence of a news story from these facts. Lead with what matters most. Under 35 words, active voice.",
-                "Facts: Zimbabwe's Finance Minister has issued the country's first crypto rules. Firms that buy, sell or hold crypto must register yearly with the Financial Intelligence Unit and pay US$500. Operating without registering is now a criminal offence."
+                "Facts: Zimbabwe's authorities have issued the country's first crypto rules. Firms that buy, sell or hold crypto must register yearly with the Financial Intelligence Unit and pay US$500. Operating without registering is now a criminal offence."
               ],
               checklist: [
-                "Does it lead with the new rules, not the date or the minister's title?",
+                "Does it lead with the new rules, not the date or who issued them?",
                 "Is it one clear sentence, roughly 35 words or fewer?",
                 "Is it active voice and concrete?",
                 "Is it accurate to the facts, inventing nothing?"
@@ -2398,7 +2398,7 @@ window.COURSE = {
               type: "fillblank",
               q: "Complete the active, concrete sentence.",
               text: "The ___ raised ___ by US$500 a year.",
-              bank: ["bank", "fees", "were", "government"],
+              bank: ["bank", "fees", "were", "prices"],
               answer: ["bank", "fees"],
               explain: "Active voice names who did what: the bank raised fees. Direct and concrete."
             }
@@ -2615,9 +2615,9 @@ window.COURSE = {
               leftLabel: "Still a claim",
               rightLabel: "Verified",
               cards: [
-                { text: "A figure you read directly in the official budget document.", side: "right" },
-                { text: "A WhatsApp message saying the minister has resigned.", side: "left" },
-                { text: "Two independent officials confirm the same number.", side: "right" },
+                { text: "A figure you read directly in the audited financial report.", side: "right" },
+                { text: "A WhatsApp message saying a company has collapsed.", side: "left" },
+                { text: "Two independent sources confirm the same number.", side: "right" },
                 { text: "A dramatic photo sent to you with no source.", side: "left" },
                 { text: "A statistic a source recited confidently from memory.", side: "left" }
               ],
@@ -2658,9 +2658,9 @@ window.COURSE = {
               type: "highlight",
               q: "Tap the errors.",
               instruction: "Tap each word that is misspelt or the wrong word.",
-              tokens: ["The", "goverment", "said", "there", "new", "policy", "starts", "Monday"],
+              tokens: ["The", "resturant", "said", "there", "new", "branch", "opens", "Monday"],
               targets: [1, 3],
-              explain: "Goverment should be government, and there should be their. Two small errors, both fatal to your credibility."
+              explain: "Resturant should be restaurant, and there should be their. Two small errors, both fatal to your credibility."
             },
             {
               type: "fillblank",
@@ -2674,8 +2674,8 @@ window.COURSE = {
               type: "mcq",
               q: "Which sentence is clean, with no errors?",
               options: [
-                "Its been a long year for the council.",
-                "The council published their report on Friday.",
+                "Its been a long year for the company.",
+                "The company published its report on Friday.",
                 "He recieved the award last night.",
                 "Their going to announce it tomorrow."
               ],
@@ -2684,7 +2684,7 @@ window.COURSE = {
             },
             {
               type: "multi",
-              q: "Which errors appear in this sentence: \"its a big day and the council have published they're report\"? Select all.",
+              q: "Which errors appear in this sentence: \"its a big day and the company has published they're report\"? Select all.",
               options: [
                 "its should be it's",
                 "they're should be their",
@@ -2710,12 +2710,12 @@ window.COURSE = {
             },
             {
               type: "mcq",
-              q: "A council voted to cut the transport budget by 10%. Which headline is accurate?",
+              q: "A bus company cut its fares by 10%. Which headline is accurate?",
               options: [
-                "Council slashes transport budget by 90%",
-                "Council cuts transport budget by 10%",
-                "Council destroys public transport for good",
-                "Transport chaos as council strikes again"
+                "Bus firm slashes fares by 90%",
+                "Bus firm cuts fares by 10%",
+                "Bus firm scraps all fares for good",
+                "Fares chaos as bus firm strikes again"
               ],
               answer: 1,
               explain: "Accuracy comes first. The others distort the number or sensationalise beyond what the facts support."
@@ -2742,14 +2742,14 @@ window.COURSE = {
               type: "highlight",
               q: "Tap the errors.",
               instruction: "Tap each word that is misspelt or the wrong word.",
-              tokens: ["Yesterday", "the", "goverment", "announced", "there", "new", "policy"],
+              tokens: ["Yesterday", "the", "comapny", "announced", "there", "new", "product"],
               targets: [2, 4],
-              explain: "Goverment should be government, and there should be their."
+              explain: "Comapny should be company, and there should be their."
             },
             {
               type: "fillblank",
               q: "Choose the right words.",
-              text: "___ been a hard year, and the council lost ___ funding.",
+              text: "___ been a hard year, and the company lost ___ funding.",
               bank: ["It's", "Its", "Their"],
               answer: ["It's", "Its"],
               explain: "It's means it has (It's been); its shows possession (its funding). Their is a distractor."
@@ -2771,21 +2771,21 @@ window.COURSE = {
               leftLabel: "Still a claim",
               rightLabel: "Verified",
               cards: [
-                { text: "A figure you read in the official budget document.", side: "right" },
-                { text: "A WhatsApp message saying a minister resigned.", side: "left" },
-                { text: "Two independent officials confirm the same number.", side: "right" },
+                { text: "A figure you read in the audited financial report.", side: "right" },
+                { text: "A WhatsApp message saying a company has collapsed.", side: "left" },
+                { text: "Two independent sources confirm the same number.", side: "right" },
                 { text: "A statistic a source recited from memory.", side: "left" }
               ],
               explain: "Documents you have seen and independent corroboration are verified. A single message or a number from memory is still a claim."
             },
             {
               type: "mcq",
-              q: "A court acquitted a politician of one charge, but a second trial continues. Which headline is accurate?",
+              q: "A company was cleared of one charge, but a second case continues. Which headline is accurate?",
               options: [
-                "Politician cleared of all charges",
-                "Politician acquitted on one charge; second trial continues",
-                "Politician walks free for good",
-                "Justice fails again"
+                "Company cleared of all charges",
+                "Company cleared on one charge; second case continues",
+                "Company walks free for good",
+                "Case collapses entirely"
               ],
               answer: 1,
               explain: "Accuracy first. Only the second headline reflects what actually happened."
@@ -3832,8 +3832,8 @@ window.COURSE = {
             },
             {
               type: "mcq",
-              q: "You have an evergreen courts feature for a daily. Best first contact?",
-              options: ["The editor-in-chief", "The courts beat reporter", "Advertising", "The receptionist"],
+              q: "You have an evergreen health feature for a daily. Best first contact?",
+              options: ["The editor-in-chief", "The health beat reporter", "Advertising", "The receptionist"],
               answer: 1,
               explain: "Pitch the person who owns that coverage day to day."
             },
@@ -3841,7 +3841,7 @@ window.COURSE = {
               type: "highlight",
               q: "Tap the errors.",
               instruction: "Tap each word that is misspelt or the wrong word.",
-              tokens: ["The", "council", "have", "recieved", "there", "report"],
+              tokens: ["The", "company", "has", "recieved", "there", "report"],
               targets: [3, 4],
               explain: "Recieved should be received, and there should be their."
             },
