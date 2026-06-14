@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 1: What is news, and how to write a lede | Mutapa Times Academy</title>
+  <link rel="canonical" href="https://mutapatimes.com/academy/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Learn journalism the Mutapa Times way. A self-paced lesson with instant, AI-graded writing feedback. Free to try.">
+  <!-- MVP is not finished content; keep it out of the index until launch. -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="apple-touch-icon" href="/icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
+
+  <style>
+  /* Academy MVP — scoped components built on the site's existing tokens
+     (--paper, --bg, --accent, --ink, --rule). No new palette. */
+  .ac-wrap { max-width: 720px; margin: 0 auto; padding: 1.5rem 1.1rem 5rem; }
+  .ac-top { display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 2px solid var(--ink); padding-bottom: .6rem; margin-bottom: 1.4rem; }
+  .ac-top a { font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+              font-size: 1.15rem; color: var(--ink); text-decoration: none; }
+  .ac-top span { font-size: .72rem; font-weight: 700; letter-spacing: .14em;
+                 text-transform: uppercase; color: var(--accent); }
+
+  .ac-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em;
+                text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .ac-h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+           font-size: clamp(1.7rem, 5vw, 2.4rem); line-height: 1.1; margin: 0 0 1.4rem; }
+
+  /* Progress bar */
+  .ac-progress { position: sticky; top: 0; z-index: 5; height: 6px; background: var(--rule);
+                 border-radius: 99px; overflow: hidden; margin-bottom: 1.6rem; }
+  .ac-progress > i { display: block; height: 100%; width: 0;
+                     background: var(--accent); transition: width .4s var(--ease-out); }
+
+  .ac-card { background: var(--paper); border: 1px solid var(--rule); border-radius: 14px;
+             padding: 1.3rem 1.25rem; margin: 0 0 1.1rem; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+  .ac-card h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700;
+                font-size: 1.3rem; margin: 0 0 .7rem; }
+  .ac-card p { margin: 0 0 .8rem; }
+  .ac-card p:last-child { margin-bottom: 0; }
+
+  .ac-kicker { font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+               text-transform: uppercase; color: #8a8a8a; margin: 0 0 .5rem; }
+
+  /* Multiple choice */
+  .ac-q { font-weight: 700; font-size: 1.05rem; margin: 0 0 .9rem; }
+  .ac-opts { display: grid; gap: .55rem; }
+  .ac-opt { display: block; width: 100%; text-align: left; cursor: pointer;
+            border: 1.5px solid var(--rule); background: #fff; border-radius: 10px;
+            padding: .8rem .9rem; font: inherit; color: var(--ink);
+            transition: border-color .15s, background .15s; }
+  .ac-opt:hover:not(:disabled) { border-color: var(--ink); }
+  .ac-opt:disabled { cursor: default; }
+  .ac-opt.is-correct { border-color: #1a7f44; background: #eaf6ee; }
+  .ac-opt.is-wrong { border-color: var(--accent); background: #fbeaea; }
+  .ac-explain { margin: .8rem 0 0; font-size: .92rem; color: #3a3a3a;
+                border-left: 3px solid var(--accent); padding-left: .8rem; }
+  .ac-explain[hidden] { display: none; }
+
+  /* Writing exercise */
+  .ac-brief { background: var(--bg); border-radius: 10px; padding: .9rem 1rem; margin: 0 0 1rem; }
+  .ac-brief ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+  .ac-brief li { margin: .25rem 0; }
+  .ac-count { font-size: .8rem; color: #8a8a8a; text-align: right; margin: .35rem 0 0; }
+  .ac-count.over { color: var(--accent); font-weight: 700; }
+  textarea.ac-input { width: 100%; min-height: 110px; resize: vertical; font: inherit;
+                      border: 1.5px solid var(--rule); border-radius: 10px; padding: .8rem .9rem;
+                      background: #fff; color: var(--ink); }
+  textarea.ac-input:focus { outline: none; border-color: var(--ink); }
+
+  .ac-btn { -webkit-appearance: none; appearance: none; border: 0; cursor: pointer;
+            background: var(--accent); color: #fff; font: inherit; font-weight: 700;
+            padding: .8rem 1.4rem; border-radius: 99px; transition: opacity .15s, transform .1s; }
+  .ac-btn:hover { opacity: .92; }
+  .ac-btn:active { transform: translateY(1px); }
+  .ac-btn:disabled { opacity: .5; cursor: default; }
+  .ac-btn--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--rule); }
+
+  .ac-actions { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; margin-top: 1rem; }
+
+  /* Grade result */
+  .ac-result[hidden] { display: none; }
+  .ac-result { margin-top: 1.2rem; border-top: 1px dashed var(--rule); padding-top: 1.2rem; }
+  .ac-score { display: flex; align-items: baseline; gap: .6rem; margin: 0 0 .9rem; }
+  .ac-score b { font-family: "Playfair Display", Georgia, serif; font-size: 2.6rem; line-height: 1; }
+  .ac-score.pass b { color: #1a7f44; }
+  .ac-score.revise b { color: var(--accent); }
+  .ac-score span { font-weight: 700; font-size: .95rem; }
+  .ac-fb h3 { font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+              color: #8a8a8a; margin: 1rem 0 .45rem; }
+  .ac-fb ul { margin: 0; padding-left: 1.15rem; }
+  .ac-fb li { margin: .3rem 0; }
+  .ac-model { background: var(--bg); border-radius: 10px; padding: .9rem 1rem; margin-top: 1rem; }
+  .ac-model summary { font-weight: 700; cursor: pointer; }
+  .ac-model p { margin: .6rem 0 0; }
+  .ac-spin { font-weight: 700; color: #8a8a8a; }
+  .ac-err { color: var(--accent); font-weight: 600; }
+
+  /* Completion */
+  .ac-done[hidden] { display: none; }
+  .ac-done { text-align: center; background: var(--paper); border: 1px solid var(--rule);
+             border-radius: 14px; padding: 2rem 1.4rem; margin-top: 1.4rem; }
+  .ac-done .mark { font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+                   font-size: 2rem; color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="ac-wrap">
+    <div class="ac-top">
+      <a href="/">The Mutapa Times</a>
+      <span>Academy</span>
+    </div>
+
+    <div class="ac-progress" aria-hidden="true"><i id="acBar"></i></div>
+
+    <p class="ac-eyebrow">Lesson 1 of 1 &middot; Foundations</p>
+    <h1 class="ac-h1">What is news, and how to write a lede</h1>
+
+    <!-- Teaching -->
+    <section class="ac-card">
+      <p class="ac-kicker">Read first</p>
+      <h2>News is what is new, true, and matters to your reader</h2>
+      <p>A story is news when it is timely, close to home, and changes something for the people reading it. For The Mutapa Times that reader is a Zimbabwean, often in the diaspora, who wants the story told seriously rather than explained to outsiders.</p>
+      <p>News is not the same as public relations. A press release wants you to act or believe something. A news story tells you what happened and lets you decide. Holding that line is what makes a publication worth trusting.</p>
+    </section>
+
+    <section class="ac-card">
+      <p class="ac-kicker">Read first</p>
+      <h2>The lede carries the whole story</h2>
+      <p>The lede is the first sentence. It decides whether anyone reads the second. A strong lede leads with the most newsworthy fact, names who it affects, stays concrete, and gets out of the way. Aim for one clear idea, usually under 35 words, in plain active voice.</p>
+      <p>Weak ledes bury the point under throat-clearing: dates, process, or the name of a committee. Find the single thing a reader would tell a friend, and start there.</p>
+    </section>
+
+    <!-- Quiz -->
+    <section class="ac-card" id="quiz"></section>
+
+    <!-- Writing exercise -->
+    <section class="ac-card" id="writing" hidden>
+      <p class="ac-kicker">Write &middot; graded instantly</p>
+      <h2>Write the lede</h2>
+      <div class="ac-brief">
+        <p>Write the opening sentence of a news story from these facts. Lead with what matters most. Keep it under 35 words, active voice.</p>
+        <ul>
+          <li>Zimbabwe's Finance Minister has issued the country's first rules for cryptocurrency businesses.</li>
+          <li>Firms that buy, sell, or hold crypto must now register every year with the Financial Intelligence Unit.</li>
+          <li>The annual fee is US$500. Operating without registering is now a criminal offence.</li>
+          <li>It is a shift from the 2018 ban, which pushed crypto trading underground.</li>
+        </ul>
+      </div>
+      <textarea class="ac-input" id="answer" maxlength="600"
+                placeholder="Your lede..." aria-label="Your lede"></textarea>
+      <p class="ac-count" id="count">0 words</p>
+      <div class="ac-actions">
+        <button class="ac-btn" id="grade">Get instant feedback</button>
+        <span id="status"></span>
+      </div>
+
+      <div class="ac-result" id="result" hidden>
+        <div class="ac-score" id="scoreRow"><b id="scoreNum">0</b><span id="scoreWord"></span></div>
+        <div class="ac-fb" id="fb"></div>
+        <details class="ac-model" id="modelWrap">
+          <summary>See an editor's version</summary>
+          <p id="modelText"></p>
+        </details>
+        <div class="ac-actions">
+          <button class="ac-btn ac-btn--ghost" id="retry">Try again</button>
+          <button class="ac-btn" id="finish">Finish lesson</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Completion -->
+    <section class="ac-done" id="done" hidden>
+      <p class="mark">M&middot;T</p>
+      <h2>Lesson complete</h2>
+      <p>You have finished Lesson 1. In the full Academy this earns progress toward your credential, with new lessons and a writing streak.</p>
+      <p><a class="ac-btn" href="/">Back to The Mutapa Times</a></p>
+    </section>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+
+    // ---- Deploy step: set this to your Cloudflare Worker URL ----
+    // e.g. "https://academy-grade.YOURNAME.workers.dev"
+    var GRADE_ENDPOINT = "https://academy-grade.mutapatimes.workers.dev";
+    var EXERCISE_ID = "lede-crypto-1";
+    var PASS = 70;
+
+    // ---------- Quiz data ----------
+    var QUESTIONS = [
+      {
+        q: "Which of these is news rather than public relations?",
+        options: [
+          "A company statement headlined \"We are proud to announce our exciting new vision\"",
+          "A report that a state firm's annual losses widened, with figures from its filings",
+          "A press release urging readers to \"join the movement today\"",
+          "A brochure listing the benefits of a new product"
+        ],
+        answer: 1,
+        explain: "News tells you what happened and lets you decide. The other three want you to act or believe something. That is PR."
+      },
+      {
+        q: "What should a lede lead with?",
+        options: [
+          "The date and time the event was announced",
+          "The name of the committee that met",
+          "The single most newsworthy fact and who it affects",
+          "Background on how the situation developed over years"
+        ],
+        answer: 2,
+        explain: "Lead with the one thing a reader would tell a friend. Background and process come later, not first."
+      },
+      {
+        q: "Which news value is strongest for a Mutapa Times reader in London?",
+        options: [
+          "A local council vote in a town they have no link to",
+          "A change to how diaspora Zimbabweans can send money home",
+          "A weather forecast for a country they do not live in",
+          "A sport result from an unrelated league"
+        ],
+        answer: 1,
+        explain: "Proximity is not only geographic. For a homesick diaspora reader, a change that touches their family and money is close to home."
+      }
+    ];
+
+    // ---------- Progress ----------
+    var bar = document.getElementById("acBar");
+    var totalSteps = 2 + QUESTIONS.length + 1; // 2 read cards + questions + writing
+    var step = 2; // the two read cards count as seen
+    function bump() { step++; bar.style.width = Math.min(100, Math.round(step / totalSteps * 100)) + "%"; }
+    bar.style.width = Math.round(step / totalSteps * 100) + "%";
+
+    // ---------- Render quiz ----------
+    var quizEl = document.getElementById("quiz");
+    var qIndex = 0;
+    function renderQuestion() {
+      var item = QUESTIONS[qIndex];
+      quizEl.innerHTML =
+        '<p class="ac-kicker">Check yourself &middot; ' + (qIndex + 1) + " of " + QUESTIONS.length + '</p>' +
+        '<p class="ac-q"></p><div class="ac-opts"></div>' +
+        '<p class="ac-explain" hidden></p>' +
+        '<div class="ac-actions" hidden><button class="ac-btn" id="nextQ">Next</button></div>';
+      quizEl.querySelector(".ac-q").textContent = item.q;
+      var opts = quizEl.querySelector(".ac-opts");
+      item.options.forEach(function (text, i) {
+        var b = document.createElement("button");
+        b.className = "ac-opt"; b.type = "button"; b.textContent = text;
+        b.addEventListener("click", function () { choose(i); });
+        opts.appendChild(b);
+      });
+      var nextWrap = quizEl.querySelector(".ac-actions");
+      quizEl.querySelector("#nextQ").addEventListener("click", function () {
+        qIndex++;
+        if (qIndex < QUESTIONS.length) { renderQuestion(); }
+        else { quizEl.hidden = true; startWriting(); }
+      });
+
+      function choose(i) {
+        var btns = opts.querySelectorAll(".ac-opt");
+        btns.forEach(function (b) { b.disabled = true; });
+        btns[item.answer].classList.add("is-correct");
+        if (i !== item.answer) { btns[i].classList.add("is-wrong"); }
+        var ex = quizEl.querySelector(".ac-explain");
+        ex.textContent = item.explain; ex.hidden = false;
+        nextWrap.hidden = false;
+        bump();
+      }
+    }
+    renderQuestion();
+
+    // ---------- Writing ----------
+    var writing = document.getElementById("writing");
+    var answer = document.getElementById("answer");
+    var countEl = document.getElementById("count");
+    function startWriting() { writing.hidden = false; writing.scrollIntoView({ behavior: "smooth", block: "start" }); answer.focus(); }
+
+    function wordCount(s) { s = s.trim(); return s ? s.split(/\s+/).length : 0; }
+    answer.addEventListener("input", function () {
+      var n = wordCount(answer.value);
+      countEl.textContent = n + (n === 1 ? " word" : " words");
+      countEl.classList.toggle("over", n > 35);
+    });
+
+    var gradeBtn = document.getElementById("grade");
+    var statusEl = document.getElementById("status");
+    var result = document.getElementById("result");
+
+    gradeBtn.addEventListener("click", function () {
+      var text = answer.value.trim();
+      if (wordCount(text) < 4) { statusEl.innerHTML = '<span class="ac-err">Write a full sentence first.</span>'; return; }
+      gradeBtn.disabled = true;
+      statusEl.innerHTML = '<span class="ac-spin">Your editor is reading...</span>';
+      fetch(GRADE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ exerciseId: EXERCISE_ID, answer: text })
+      })
+      .then(function (r) { if (!r.ok) { throw new Error("HTTP " + r.status); } return r.json(); })
+      .then(function (data) { statusEl.textContent = ""; showGrade(data); })
+      .catch(function () {
+        statusEl.innerHTML = '<span class="ac-err">Could not reach the grader. Check your connection and try again.</span>';
+      })
+      .finally(function () { gradeBtn.disabled = false; });
+    });
+
+    function showGrade(data) {
+      var score = Math.max(0, Math.min(100, parseInt(data.score, 10) || 0));
+      var pass = score >= PASS;
+      document.getElementById("scoreNum").textContent = score;
+      var word = document.getElementById("scoreWord");
+      word.textContent = pass ? "Strong. " + (data.verdict || "Publishable with a light edit.")
+                              : "Getting there. " + (data.verdict || "Revise and resubmit.");
+      var row = document.getElementById("scoreRow");
+      row.className = "ac-score " + (pass ? "pass" : "revise");
+
+      var fb = document.getElementById("fb");
+      fb.innerHTML = "";
+      if (data.strengths && data.strengths.length) { fb.appendChild(fbList("What worked", data.strengths)); }
+      if (data.improvements && data.improvements.length) { fb.appendChild(fbList("Sharpen this", data.improvements)); }
+
+      if (data.model_answer) {
+        document.getElementById("modelText").textContent = data.model_answer;
+        document.getElementById("modelWrap").hidden = false;
+      } else { document.getElementById("modelWrap").hidden = true; }
+
+      result.hidden = false;
+      result.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+    function fbList(title, items) {
+      var wrap = document.createElement("div");
+      var h = document.createElement("h3"); h.textContent = title; wrap.appendChild(h);
+      var ul = document.createElement("ul");
+      items.forEach(function (t) { var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+      wrap.appendChild(ul); return wrap;
+    }
+
+    document.getElementById("retry").addEventListener("click", function () {
+      result.hidden = true; answer.focus();
+    });
+    document.getElementById("finish").addEventListener("click", function () {
+      bump();
+      writing.hidden = true;
+      document.getElementById("done").hidden = false;
+      document.getElementById("done").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  })();
+  </script>
+</body>
+</html>

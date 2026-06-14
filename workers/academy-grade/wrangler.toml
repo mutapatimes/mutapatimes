@@ -1,0 +1,11 @@
+name = "academy-grade"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# The Anthropic API key is a secret, NOT a var. Set it with:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+# Never commit the key to this file or anywhere in the repo.
+
+[vars]
+ALLOWED_ORIGIN = "https://mutapatimes.com"
+MODEL = "claude-sonnet-4-6"
