@@ -385,3 +385,8 @@ body.ac-exam-running { padding-top: 2.1rem; }
 .ac-cat-btn.is-sel { background: var(--ink); color: #fff; border-color: var(--ink); }
 .ac-cat-btn.is-correct { background: #eaf6ee; border-color: #1a7f44; color: #1a7f44; }
 .ac-cat-btn.is-wrong { background: #fbeaea; border-color: var(--accent); color: var(--accent); }
+
+/* v8: card external link (e.g. read the full press release) */
+.ac-card-link { display: inline-block; margin-top: .7rem; font-weight: 700; color: var(--accent);
+  text-decoration: none; border-bottom: 2px solid currentColor; padding-bottom: 1px; }
+.ac-card-link:hover { opacity: .82; }

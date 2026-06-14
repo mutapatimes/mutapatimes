@@ -358,6 +358,12 @@
         card.appendChild(el("p", "ac-kicker", "Read"));
         card.appendChild(el("h2", null, c.h));
         c.body.forEach(function (p) { card.appendChild(el("p", null, p)); });
+        if (c.link && c.link.href) {
+          var a = document.createElement("a");
+          a.className = "ac-card-link"; a.href = c.link.href; a.target = "_blank"; a.rel = "noopener noreferrer";
+          a.textContent = (c.link.label || "Read more") + " ↗";
+          card.appendChild(a);
+        }
         view.appendChild(card);
       });
     }

@@ -3928,7 +3928,8 @@ window.COURSE = {
                 "CCBA in Kenya, with partner Emerging Leaders, runs Uwezo Kwa Vijana (Skills for Youth), a six-month programme launched in January 2026. It says it aims to reach 3,000 participants in 2026, training them in confidence, financial literacy and starting a small business, with peer hubs and regular review sessions.",
                 "It says women make up 60 percent of participants (1,800), and at least 5 percent are persons with disabilities. More than half are expected to move into retail, services and recycling. It runs in Nairobi and Nakuru, with expansion to Makueni and Kisii planned.",
                 "The only person quoted is CCBA's Public Affairs Director, Eric Githua: 'We are focused on supporting youth with practical skills that can help unlock economic opportunity.'"
-              ]
+              ],
+              link: { href: "https://www.ccbagroup.com/ccba-in-kenya-supports-3000-youth-with-skills-and-enterprise-development/", label: "Read CCBA's full press release" }
             },
             {
               h: "A weak first draft (what to avoid)",
