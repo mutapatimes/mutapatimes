@@ -227,6 +227,288 @@ window.COURSE = {
       ]
     },
     {
+      id: "newsroom",
+      title: "Inside the newsroom",
+      summary: "Who does what, how a story actually moves from tip to publication, and how to read an outlet.",
+      lessons: [
+        {
+          id: "newsroom-roles",
+          title: "Who does what",
+          minutes: 8,
+          intro: "A newsroom is a hierarchy of decisions. Learn who makes which one, and who to talk to.",
+          cards: [
+            {
+              h: "Leadership sets direction, not the daily desk",
+              body: [
+                "At the top sits the editor-in-chief or executive editor, who sets the standards and the overall direction. Below them a managing editor runs daily operations across the newsroom. These are strategy roles. They rarely handle an individual story coming in from outside.",
+                "If you want a specific story considered, the leadership is almost never your first contact. You want the people who run daily coverage."
+              ]
+            },
+            {
+              h: "The gatekeepers of daily coverage",
+              body: [
+                "The news editor and, in broadcast, the assignment editor decide what gets covered today. The assignment editor watches incoming tips, tracks breaking news, vets sources and moves stories forward. Section or desk editors (Business, Metro, Politics) shape coverage in their area.",
+                "These are the people a story has to convince. They are busy and protective of their readers' time."
+              ]
+            },
+            {
+              h: "Reporters, producers and the digital desk",
+              body: [
+                "Reporters research, interview and write, often on a fixed beat such as courts, business or health. In smaller markets many are multimedia journalists who shoot and edit their own pieces. Producers build the running order of a broadcast and write scripts for anchors. A sub-editor or copy editor checks and tightens copy before it runs.",
+                "Most newsrooms are now digital-first, so a digital editor or web producer publishes online, writes headlines for search, and often decides what gets homepage prominence."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "You have a strong, non-urgent story idea for a daily paper. Who is usually the best first contact?",
+              options: [
+                "The editor-in-chief, to go straight to the top",
+                "The beat reporter or section editor who covers that subject",
+                "The managing editor, who runs the whole newsroom",
+                "Whoever answers the main phone line"
+              ],
+              answer: 1,
+              explain: "Pitch the person who owns that coverage day to day. Leadership sets direction and rarely handles individual story intake."
+            },
+            {
+              type: "mcq",
+              q: "In a broadcast newsroom, who tracks incoming tips and decides which stories move forward today?",
+              options: ["The anchor", "The assignment editor", "The news director", "The camera operator"],
+              answer: 1,
+              explain: "The assignment editor is the daily gatekeeper. The news director sets strategy, not story-by-story intake."
+            },
+            {
+              type: "mcq",
+              q: "Who most often decides which story gets prominence on the homepage?",
+              options: [
+                "The photojournalist",
+                "The digital editor or web producer",
+                "The advertising team",
+                "The anchor"
+              ],
+              answer: 1,
+              explain: "In digital-first newsrooms the digital editor publishes online, writes search headlines, and shapes homepage placement."
+            },
+            {
+              type: "mcq",
+              q: "A reporter described as an MMJ in a small market most likely:",
+              options: [
+                "Manages the whole newsroom",
+                "Reports, films and edits their own stories",
+                "Only reads the news on air",
+                "Sells advertising space"
+              ],
+              answer: 1,
+              explain: "MMJ means multimedia journalist: a one-person crew who reports, shoots and edits, common in smaller markets."
+            },
+            {
+              type: "multi",
+              q: "Which of these are mainly leadership or strategy roles, not daily story intake? Select all.",
+              options: ["Executive editor", "Assignment editor", "Managing editor", "Beat reporter"],
+              answers: [0, 2],
+              explain: "Executive and managing editors set direction and run operations. The assignment editor and beat reporter handle daily coverage."
+            }
+          ]
+        },
+        {
+          id: "story-flow",
+          title: "How a story moves",
+          minutes: 8,
+          intro: "From tip to published, a story passes through gathering, production and output. The path differs by medium.",
+          cards: [
+            {
+              h: "Three stages, every newsroom",
+              body: [
+                "Gathering: reporters, researchers and tips bring news in, from sources, documents, agencies and PR. Production: the desk checks, edits and shapes it, deciding placement and framing. Output: it is published, on air, in print, or online.",
+                "Quality control happens at each stage. A claim is checked before it becomes a fact, and copy is edited before it reaches a reader."
+              ]
+            },
+            {
+              h: "Print and broadcast differ in production",
+              body: [
+                "In print, an editorial team handles layout, images, headlines and the final placement decision, signed off by the editor and sub-editor. In broadcast, a story is rewritten for air, then built in the production control room, the PCR, which assembles the live programme. A master control room, the MCR, formats and verifies the final feed before it goes out.",
+                "Those control rooms are unique to broadcast. Print and digital have no equivalent."
+              ]
+            },
+            {
+              h: "Digital is continuous, not a single deadline",
+              body: [
+                "Digital-first newsrooms publish around the clock and update in real time, rather than aiming at one nightly deadline. A single story may run online within minutes, get optimised for search, and be shared across social channels, living far beyond its first version.",
+                "That speed raises both the opportunity and the risk of getting something wrong in public."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "order",
+              q: "Put the journey of a story in order, from first to last.",
+              items: [
+                "Gathering: reporters and tips bring the news in",
+                "Production: the desk checks, edits and shapes it",
+                "Output: it is published online, on air or in print"
+              ],
+              explain: "Gather, then produce and verify, then publish. Quality control sits at each step."
+            },
+            {
+              type: "mcq",
+              q: "The PCR and MCR are control rooms found in which kind of newsroom?",
+              options: ["Print newspapers", "Broadcast television and radio", "Newsletter platforms", "All newsrooms equally"],
+              answer: 1,
+              explain: "The production control room and master control room are specific to broadcast. Print and digital have no equivalent."
+            },
+            {
+              type: "mcq",
+              q: "What most sets a digital-first newsroom apart from a traditional print one?",
+              options: [
+                "It never checks facts",
+                "It publishes continuously and updates in real time",
+                "It has no editors",
+                "It only works once a day at a single deadline"
+              ],
+              answer: 1,
+              explain: "Digital is continuous and real time, not built around one nightly deadline."
+            },
+            {
+              type: "mcq",
+              q: "At which stage is a claim turned from a hypothesis into a verified fact?",
+              options: [
+                "Only after publication",
+                "During production, when the desk checks and edits",
+                "It never is",
+                "Only by the advertising team"
+              ],
+              answer: 1,
+              explain: "Verification belongs in production, before a story reaches the reader, not after."
+            }
+          ]
+        },
+        {
+          id: "outlet-types",
+          title: "Reading an outlet",
+          minutes: 8,
+          intro: "Different outlets serve different readers. Knowing where a story belongs is half the work.",
+          cards: [
+            {
+              h: "The main types, and who they serve",
+              body: [
+                "A daily newspaper reaches a broad regional public and offers depth and analysis. A business journal speaks to executives, investors and decision-makers about the economy of a region. A trade publication serves professionals inside one industry and assumes they already know the basics.",
+                "Broadcast reaches a wide local audience fast. Community and special-interest outlets serve a neighbourhood, cause or group that bigger media overlook."
+              ]
+            },
+            {
+              h: "Each medium wants a different story",
+              body: [
+                "Radio wants strong narration and good interview audio. Television wants visuals, sound bites and a clear on-camera explanation. Digital wants speed, clarity and search visibility. Trade and business outlets want expertise and data over colour.",
+                "The same facts get pitched and written differently depending on where they will live."
+              ]
+            },
+            {
+              h: "Match the story to the audience",
+              body: [
+                "Before pitching, ask who needs to hear this, what you want them to do, and which outlet that audience trusts. A timely legal development might suit broadcast. A deep analysis suits a daily. A niche industry shift suits a trade title.",
+                "The goal is not the most coverage. It is the right coverage in front of the right reader."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "You have a deep, data-heavy analysis aimed at executives and investors in one region. Where does it best belong?",
+              options: ["A neighbourhood community newsletter", "A regional business journal", "A children's magazine", "A sports radio show"],
+              answer: 1,
+              explain: "Business journals speak directly to executives, investors and decision-makers about the regional economy."
+            },
+            {
+              type: "mcq",
+              q: "A trade publication differs from a general newspaper mainly because it:",
+              options: [
+                "Never uses sources",
+                "Assumes its readers already know the industry basics",
+                "Only prints on paper",
+                "Avoids any analysis"
+              ],
+              answer: 1,
+              explain: "Trade outlets serve professionals in one field and assume subject-matter familiarity, so they prioritise expertise and depth."
+            },
+            {
+              type: "mcq",
+              q: "Which storytelling need is strongest for television specifically?",
+              options: [
+                "Search-optimised headlines",
+                "Strong visuals and clear on-camera sound bites",
+                "Long footnoted data tables",
+                "Audio narration only"
+              ],
+              answer: 1,
+              explain: "Television leads with visuals and concise sound bites. Audio narration is radio; search headlines are digital."
+            },
+            {
+              type: "multi",
+              q: "Good questions to ask before choosing an outlet to pitch. Select all.",
+              options: [
+                "Who needs to hear this message?",
+                "Which outlet does that audience trust?",
+                "How can I get the most placements anywhere?",
+                "Does this story need immediacy, depth or industry context?"
+              ],
+              answers: [0, 1, 3],
+              explain: "Strategy is about alignment with the right reader, not chasing the highest volume of scattered mentions."
+            }
+          ]
+        },
+        {
+          id: "newsroom-of-one",
+          title: "The newsroom of one",
+          minutes: 7,
+          intro: "An independent newsletter is a whole newsroom run by one person. Here is every job you take on.",
+          cards: [
+            {
+              h: "You are every desk now",
+              body: [
+                "Running your own newsletter means you are the reporter, the editor, the sub-editor, the publisher and the growth team at once. The same disciplines still apply: gather and verify, edit yourself honestly, and publish on a reliable rhythm.",
+                "The freedom is real, and so is the responsibility. There is no second pair of eyes unless you build one in."
+              ]
+            },
+            {
+              h: "What holds a newsletter together",
+              body: [
+                "A clear niche, a voice readers recognise, a cadence you can sustain, and trust earned by being accurate and consistent. For a Zimbabwean or diaspora audience, the edge is the specific story told from the inside, not the generic angle.",
+                "Pick a rhythm you can keep for a year, not one you can keep for a fortnight."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the biggest practical risk of being a newsroom of one?",
+              options: [
+                "You cannot write headlines",
+                "There is no second pair of eyes unless you build one in",
+                "You are not allowed to use sources",
+                "You cannot publish online"
+              ],
+              answer: 1,
+              explain: "Solo means no built-in editor or fact-checker. Good independent writers create that check deliberately."
+            },
+            {
+              type: "mcq",
+              q: "Choosing a publishing cadence, the soundest advice is:",
+              options: [
+                "Publish as often as physically possible at first",
+                "Pick a rhythm you can sustain for a year",
+                "Never set a schedule",
+                "Only publish when you feel inspired"
+              ],
+              answer: 1,
+              explain: "Consistency over a long stretch builds trust and habit. A burst you cannot maintain does the opposite."
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "w2",
       title: "Week 2: Reporting",
       summary: "Find sources, run an interview, verify what you are told, and report from a distance.",
@@ -782,6 +1064,96 @@ window.COURSE = {
               ],
               model: "There is no single right answer. A strong response names a specific, grounded story (not a broad topic like the economy), explains why it suits Mutapa Times, and identifies a real first source you could actually reach.",
               exerciseId: "reflection-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "independent",
+      title: "Going independent",
+      summary: "Take everything you have learned and launch your own publication: a Substack newsletter.",
+      lessons: [
+        {
+          id: "substack-newsletter",
+          title: "Start a Substack newsletter",
+          minutes: 9,
+          intro: "Plan and launch a newsletter you own, from the niche to the first issue.",
+          cards: [
+            {
+              h: "What Substack is, and why writers use it",
+              body: [
+                "Substack is a platform for publishing an email newsletter. It is free to start, and it lets you offer both free issues and paid subscriptions. Readers sign up by email, so you build a direct relationship with your audience rather than chasing an algorithm.",
+                "The key advantage is ownership: you keep your list of subscribers. If you ever move, you can take your audience with you. That independence is the whole point."
+              ]
+            },
+            {
+              h: "Four decisions before you publish",
+              body: [
+                "First, the promise: one clear sentence on who it is for and what they get. Second, the name: specific and memorable, not vague. Third, the cadence: weekly, fortnightly, monthly, a rhythm you can keep for a year. Fourth, the first issue: the piece that shows a new reader exactly what they signed up for.",
+                "A sharp, narrow promise beats a broad one. For a diaspora audience, the specific story told from the inside is the edge."
+              ]
+            },
+            {
+              h: "Free, paid, and earning trust",
+              body: [
+                "Most newsletters start free to build readers and trust, then add a paid tier once there is something readers will pay to keep. Paid options include a monthly or yearly subscription, with some issues free and some for subscribers.",
+                "Do not rush the money. Reliability and a voice readers recognise come first. Payment follows trust, not the other way around."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the main advantage of building an audience on a newsletter you own?",
+              options: [
+                "You never have to write again",
+                "You keep a direct relationship with subscribers and can take your list with you",
+                "It guarantees you go viral",
+                "It removes the need to verify facts"
+              ],
+              answer: 1,
+              explain: "Owning your email list means a direct relationship and independence. You are not at the mercy of an algorithm or a single platform."
+            },
+            {
+              type: "mcq",
+              q: "When should a new newsletter usually introduce a paid tier?",
+              options: [
+                "On day one, before any readers arrive",
+                "Once it has built trust and offers something readers will pay to keep",
+                "Never, paid newsletters are not allowed",
+                "Only if it has a million subscribers"
+              ],
+              answer: 1,
+              explain: "Start free to build trust and habit. Payment follows value and reliability, not the launch."
+            },
+            {
+              type: "multi",
+              q: "Which decisions should you make before you publish issue one? Select all.",
+              options: [
+                "The promise: who it is for and what they get",
+                "A specific, memorable name",
+                "The exact font on your future book cover",
+                "A cadence you can sustain for a year"
+              ],
+              answers: [0, 1, 3],
+              explain: "Promise, name and a sustainable cadence are the launch essentials. The rest is decoration you can decide later."
+            },
+            {
+              type: "write",
+              q: "Plan your Substack newsletter.",
+              brief: [
+                "Write a short launch plan for a newsletter you would actually run. Cover four things:",
+                "1. The promise: one sentence on who it is for and what they get. 2. The name. 3. How often you will publish. 4. The headline and a two-line summary of your first issue."
+              ],
+              checklist: [
+                "Is the promise one clear sentence about a specific reader?",
+                "Is the name specific and memorable, not vague?",
+                "Is the cadence one you could realistically keep for a year?",
+                "Does the first issue show a new reader exactly what they signed up for?"
+              ],
+              model: "Promise: a weekly newsletter for Zimbabweans in the UK on the money side of diaspora life, sending, saving and supporting family back home. Name: Pounds and Home. Cadence: every Thursday morning. First issue headline: The real cost of sending GBP100 to Harare. Summary: a plain comparison of five transfer routes, what each actually costs after fees and rate, and the one most families get wrong.",
+              exerciseId: "substack-plan-1"
             }
           ]
         }
