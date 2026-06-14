@@ -297,8 +297,12 @@
     var lesson = findLesson(id);
     if (!lesson) { go("#/"); return; }
     if (!isUnlocked(id)) { go("#/"); return; }
+    // examMode hides explanations (real exams only). isExam drives the
+    // exam look and feel (dark theme, briefing, timer) and is mirrored in
+    // review so tutors see the real experience.
     examMode = !!lesson.checkpoint && !REVIEW;
-    clearExamTimer(); document.body.classList.toggle("ac-exam", examMode);
+    var isExam = !!lesson.checkpoint;
+    clearExamTimer(); document.body.classList.toggle("ac-exam", isExam);
     clear(view); renderChips();
 
     var top = el("div", "ac-lessontop");
@@ -320,7 +324,7 @@
     var examSeconds = Math.max(120, lesson.exercises.length * 45);
     var examExpired = false;
 
-    if (examMode) {
+    if (isExam) {
       var rules = el("div", "ac-exam-rules");
       rules.appendChild(el("h2", null, lesson.id === "final-exam" ? "This is the final step." : "Checkpoint exam"));
       rules.appendChild(el("p", null, lesson.id === "final-exam"
@@ -362,14 +366,14 @@
     view.appendChild(exHost);
 
     var startWrap = el("div", "ac-actions");
-    var startBtn = el("button", "ac-btn ac-btn--lg", examMode ? "Begin the exam" : ("Start the exercises (" + lesson.exercises.length + ")"));
+    var startBtn = el("button", "ac-btn ac-btn--lg", isExam ? "Begin the exam" : ("Start the exercises (" + lesson.exercises.length + ")"));
     startWrap.appendChild(startBtn);
     exHost.appendChild(startWrap);
 
     var idx = 0;
     startBtn.addEventListener("click", function () {
       Sound.play("tap");
-      if (examMode) startExamTimer(examSeconds, function () { examExpired = true; idx = lesson.exercises.length; runExercise(); });
+      if (isExam) startExamTimer(examSeconds, function () { examExpired = true; idx = lesson.exercises.length; runExercise(); });
       runExercise();
     });
 
