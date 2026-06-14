@@ -128,7 +128,7 @@
 
     var head = el("div", "ac-home-head");
     head.appendChild(el("p", "ac-eyebrow", "Mutapa Times Academy"));
-    head.appendChild(el("h1", "ac-h1", "Learn to report Zimbabwe"));
+    head.appendChild(el("h1", "ac-h1", "Learn to report Africa"));
     head.appendChild(el("p", "ac-lead", COURSE.blurb));
     view.appendChild(head);
 

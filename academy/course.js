@@ -6,7 +6,7 @@
 
 window.COURSE = {
   title: "Mutapa Times Academy",
-  blurb: "Learn to report on Zimbabwe and the diaspora. Self-paced, with instant feedback.",
+  blurb: "Learn to report on Zimbabwe, the diaspora and the wider continent. Self-paced, with instant feedback.",
   units: [
     {
       id: "w1",
@@ -962,6 +962,560 @@ window.COURSE = {
               ],
               model: "A diaspora newsletter could start free and ad-light to grow trust, then add a membership rather than a hard paywall: a pay-what-you-can scale from a small monthly amount upward, with extras like member events. To include those who cannot pay, an I cannot pay option on trust keeps the journalism open, since many readers send money home already and budgets are tight. The trade-off is slower revenue, accepted in exchange for reach and loyalty.",
               exerciseId: "funding-model-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "reporting-africa",
+      title: "Reporting Africa, by Africans",
+      summary: "How African media covers Africa, the stereotypes to avoid, and how to tell fuller, fairer stories of the continent.",
+      lessons: [
+        {
+          id: "africa-narrative",
+          title: "The story of Africa",
+          minutes: 8,
+          intro: "The frames a newsroom reaches for shape how readers see a whole continent. Learn to see them.",
+          cards: [
+            {
+              h: "Frames shape how a continent is seen",
+              body: [
+                "Research into coverage of Africa finds the same frames repeating: poverty, poor leadership, corruption, conflict and disease. Together they paint Africa as broken, dependent and lacking agency, as if things only happen to Africans rather than being done by them.",
+                "These frames have real consequences. They shape foreign investment, how the world treats the continent, and how young Africans see their own futures and whether to stay."
+              ]
+            },
+            {
+              h: "It is not only a Western problem",
+              body: [
+                "It would be easy to blame outside media alone. But studies of African outlets show the same stereotypes appear in coverage by Africans, for Africans. In one survey, half of the editors admitted there were stereotypes in the stories they ran.",
+                "Most did not want to run them. The gap between the coverage they wanted and what they published came down mostly to resources, not intent."
+              ]
+            },
+            {
+              h: "Why the storyteller matters",
+              body: [
+                "Africans learn about themselves and their neighbours through the media. If African newsrooms repeat the broken-continent frame, they reinforce it for African readers, not just foreign ones.",
+                "Telling fuller stories is not about pretending problems away. It is about restoring context, agency and the full range of African life."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "multi",
+              q: "Which frames does research repeatedly find in coverage of Africa? Select all.",
+              options: ["Poverty", "Corruption and poor leadership", "Conflict and disease", "Constant innovation and agency"],
+              answers: [0, 1, 2],
+              explain: "The recurring frames tie Africa to poverty, corruption, conflict and disease. Innovation and agency are exactly what tends to be missing."
+            },
+            {
+              type: "mcq",
+              q: "Why do negative frames about Africa matter beyond the page?",
+              options: [
+                "They do not matter at all",
+                "They shape investment, how the world treats the continent, and how young Africans see their futures",
+                "They only affect foreign readers",
+                "They make stories longer"
+              ],
+              answer: 1,
+              explain: "Frames have real-world effects on investment, migration and the opportunities young people believe they have."
+            },
+            {
+              type: "mcq",
+              q: "Are stereotypes about Africa found only in Western media?",
+              options: [
+                "Yes, African media never use them",
+                "No, African media run them too, often due to resources rather than intent",
+                "Only in broadcast",
+                "Only in opinion pieces"
+              ],
+              answer: 1,
+              explain: "Surveyed African editors acknowledged stereotypes in their own coverage. The cause was mostly a lack of resources, not a wish to stereotype."
+            }
+          ]
+        },
+        {
+          id: "beyond-bleeds",
+          title: "Beyond 'if it bleeds, it leads'",
+          minutes: 8,
+          intro: "Crisis is not the only story. Learn what African coverage over-tells, and what it leaves out.",
+          cards: [
+            {
+              h: "Event-driven coverage",
+              body: [
+                "Much coverage of African countries clusters around a few dramatic events: elections, protests, conflict and crisis, which editors often treat as more newsworthy. In one review, straight news made up about 80 percent of coverage, while in-depth features were under 10 percent.",
+                "The result is a continent told through flashpoints, with little of the context that explains the why and the how."
+              ]
+            },
+            {
+              h: "The missing stories",
+              body: [
+                "Stories of African success, innovation and technology are almost absent. Mobile money, M-Pesa, transformed payments from Kenya years before similar services reached Europe. Ordinary people's voices are often missing, or used only to reinforce a negative frame.",
+                "Telling these stories is not boosterism. It is filling in a picture that is currently half-drawn."
+              ]
+            },
+            {
+              h: "Solutions and agency",
+              body: [
+                "Solutions journalism reports not just the problem but how people are responding to it, and whether it works. Done well, it restores agency without ignoring hard truths.",
+                "Ask of any story: who is acting here, and have I shown them, or only what was done to them?"
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What kind of coverage dominates reporting on African countries?",
+              options: [
+                "In-depth features",
+                "Event-driven hard news around elections, protests and conflict",
+                "Arts and culture",
+                "Solutions journalism"
+              ],
+              answer: 1,
+              explain: "Coverage clusters around dramatic events, with straight news far outweighing context-rich features."
+            },
+            {
+              type: "mcq",
+              q: "M-Pesa is an example of what kind of under-told African story?",
+              options: [
+                "A conflict story",
+                "A homegrown innovation that led the world",
+                "An election story",
+                "A disaster story"
+              ],
+              answer: 1,
+              explain: "Mobile money scaled in Kenya years before similar services reached richer markets. Innovation like this is routinely under-covered."
+            },
+            {
+              type: "categorize",
+              q: "Sort these story ideas by how the continent is usually covered.",
+              buckets: [
+                { id: "over", label: "Already over-covered" },
+                { id: "under", label: "Under-covered" }
+              ],
+              items: [
+                { text: "A contested election", bucket: "over" },
+                { text: "Protest violence", bucket: "over" },
+                { text: "A mobile-money startup scaling up", bucket: "under" },
+                { text: "A community solving a water shortage", bucket: "under" },
+                { text: "Everyday life and ordinary voices", bucket: "under" }
+              ],
+              explain: "Elections, protests and conflict are over-represented. Innovation, solutions and ordinary life are what tend to be missing."
+            },
+            {
+              type: "mcq",
+              q: "What does solutions journalism add to a story about a problem?",
+              options: [
+                "It hides the problem",
+                "It reports how people are responding and whether it works",
+                "It avoids all facts",
+                "It only quotes officials"
+              ],
+              answer: 1,
+              explain: "Solutions journalism keeps the problem in view but also shows the response and its results, restoring agency."
+            }
+          ]
+        },
+        {
+          id: "sources-agenda",
+          title: "Whose agenda? Sources and wires",
+          minutes: 8,
+          intro: "Who supplies and who is quoted in a story decides whose version of Africa readers get.",
+          cards: [
+            {
+              h: "The wire problem",
+              body: [
+                "Facing tight budgets, many African outlets rely on Western agencies such as AFP, the BBC and Reuters for news about other African countries. In one review, agencies supplied close to half of all stories about African countries, and only about a fifth of those agency stories came from African agencies.",
+                "When non-Africans supply most of the copy, non-Africans largely set the agenda and the framing, often for a Western audience."
+              ]
+            },
+            {
+              h: "Authorities over citizens",
+              body: [
+                "Coverage leans heavily on officials, election commissions and observers. Ordinary citizens are often absent, or quoted only to reinforce a negative frame. Press releases published as-is are the least investment of all, and the most agenda-driven.",
+                "A story told only through those in power is only half the story."
+              ]
+            },
+            {
+              h: "Build African sourcing",
+              body: [
+                "Use African correspondents and contacts, centre the people actually affected, and pool stories with other African newsrooms. African agencies and networks can supply copy framed for African readers.",
+                "Whose phone you pick up to call decides whose Africa you publish."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Where does a large share of stories about African countries come from?",
+              options: [
+                "Mostly African agencies",
+                "Mostly Western wire agencies such as AFP, BBC and Reuters",
+                "Only citizen journalists",
+                "Only government press offices"
+              ],
+              answer: 1,
+              explain: "Reviews show agencies supply close to half of African-country stories, and only about a fifth of those are from African agencies."
+            },
+            {
+              type: "mcq",
+              q: "What is the main risk of relying on Western wires for African news?",
+              options: [
+                "Stories are too long",
+                "Non-Africans set the agenda and framing, often for a Western audience",
+                "Stories are always false",
+                "There is no risk"
+              ],
+              answer: 1,
+              explain: "Whoever supplies the copy shapes the agenda. Western framing often serves Western expectations of Africa."
+            },
+            {
+              type: "multi",
+              q: "Which are signs of low-investment, agenda-driven coverage? Select all.",
+              options: [
+                "Press releases published as-is",
+                "Only officials quoted, no ordinary voices",
+                "No context for the why and how",
+                "Interviews with the people actually affected"
+              ],
+              answers: [0, 1, 2],
+              explain: "Unedited releases, authority-only sourcing and missing context all signal low investment. Reaching affected people is the opposite."
+            }
+          ]
+        },
+        {
+          id: "pan-african",
+          title: "Pan-African reporting",
+          minutes: 8,
+          intro: "Most coverage fixes on a few countries. Learn to report the whole continent, in its full variety.",
+          cards: [
+            {
+              h: "Cover the continent, not a caricature",
+              body: [
+                "Coverage concentrates on a handful of countries, often Nigeria and South Africa, while many countries barely feature at all. And beware the 'Africa is one country' trope: name the country, give its specific context, and show how places differ.",
+                "Fifty-four countries cannot share one storyline."
+              ]
+            },
+            {
+              h: "Diversity of topics is the goal",
+              body: [
+                "In one study, the countries covered most fully, such as South Africa and Egypt, were those reported across many topics. Others appeared only around a contested election or a single crisis, which distorts how readers see them.",
+                "Aim to cover a country across politics, business, culture, science and ordinary life, not through one event."
+              ]
+            },
+            {
+              h: "Collaborate across borders",
+              body: [
+                "The fixes that practitioners suggest are practical: pool stories and multimedia between African newsrooms, build networks of editors and journalists, invest in coverage, and reward good journalism with African awards.",
+                "Shared content means more countries get told, by people closer to them."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the 'Africa is one country' trope, and how do you avoid it?",
+              options: [
+                "Treating Africa as uniform; avoid it by naming the country and giving its specific context",
+                "Covering too many countries; avoid it by covering fewer",
+                "A type of headline; avoid it by using photos",
+                "It is not a real problem"
+              ],
+              answer: 0,
+              explain: "Flattening 54 countries into one story erases difference. Name the country and ground it in its own context."
+            },
+            {
+              type: "mcq",
+              q: "Which countries tend to dominate African coverage of Africa?",
+              options: ["Lesotho and Eritrea", "Nigeria and South Africa", "Seychelles and Comoros", "None, coverage is even"],
+              answer: 1,
+              explain: "Coverage concentrates on a few large countries, often Nigeria and South Africa, while many others barely feature."
+            },
+            {
+              type: "multi",
+              q: "Which practical fixes did practitioners suggest for better pan-African coverage? Select all.",
+              options: [
+                "Pool stories and multimedia between newsrooms",
+                "Build networks of editors and journalists",
+                "Invest in original reporting",
+                "Rely more heavily on Western wires"
+              ],
+              answers: [0, 1, 2],
+              explain: "Pooling, networks and investment widen coverage. Leaning harder on Western wires is the problem, not the fix."
+            },
+            {
+              type: "write",
+              q: "Pitch the missing story.",
+              brief: [
+                "Pitch a story about an under-covered African country, or an under-covered angle (innovation, ordinary life, a solution), for a pan-African audience.",
+                "Say what the story is, which country or region, why it matters, and why it counters the usual frame."
+              ],
+              checklist: [
+                "Is it about a specific country or place, named and in context?",
+                "Does it go beyond election, protest or conflict?",
+                "Does it centre people, not only authorities?",
+                "Does it restore agency rather than reinforce a stereotype?"
+              ],
+              model: "Story: how a women-led cooperative in northern Zambia is using solar cold-storage to cut post-harvest losses. Where: Zambia, a country rarely covered beyond its own borders. Why it matters: post-harvest loss is a continent-wide problem, and here is a working response. Why it counters the frame: it centres the farmers solving it, shows African innovation and agency, and gives context rather than a snapshot of hardship.",
+              exerciseId: "missing-story-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "africa-regions",
+      title: "Africa region by region",
+      summary: "A reporter's map of the continent: the five regions, their media hubs, languages and the bodies that shape the news.",
+      lessons: [
+        {
+          id: "region-north",
+          title: "North Africa",
+          minutes: 6,
+          intro: "From Egypt to Morocco: an Arabic-speaking region where broadcast and the state loom large.",
+          cards: [
+            {
+              h: "The lay of the land",
+              body: [
+                "North Africa spans countries including Egypt, Libya, Tunisia, Algeria and Morocco. Arabic is the dominant language, French is widely used across the Maghreb, and Amazigh (Berber) languages are spoken too.",
+                "The regional grouping for the Maghreb is the Arab Maghreb Union, though it has been largely inactive."
+              ]
+            },
+            {
+              h: "Media landscape",
+              body: [
+                "Egypt has one of the oldest press traditions on the continent, with titles like Al-Ahram. In some countries broadcast leads: in Tunisia, broadcast outlets are the most influential media.",
+                "Press freedom varies sharply and can be tightly constrained, with real risks to journalists."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the dominant language of North African media, alongside French in the Maghreb?",
+              options: ["Swahili", "Arabic", "Portuguese", "Amharic"],
+              answer: 1,
+              explain: "Arabic dominates, with French widely used across the Maghreb and Amazigh languages also spoken."
+            },
+            {
+              type: "mcq",
+              q: "In Tunisia, which kind of media is the most influential?",
+              options: ["Print newspapers", "Broadcast", "Trade journals", "Newsletters"],
+              answer: 1,
+              explain: "Tunisia is a case where broadcast media, not print, leads in influence."
+            },
+            {
+              type: "match",
+              q: "Match each North African country to its capital.",
+              pairs: [
+                { a: "Egypt", b: "Cairo" },
+                { a: "Tunisia", b: "Tunis" },
+                { a: "Morocco", b: "Rabat" },
+                { a: "Algeria", b: "Algiers" }
+              ],
+              explain: "Knowing the basics of a region, capitals included, is the groundwork of credible reporting."
+            }
+          ]
+        },
+        {
+          id: "region-west",
+          title: "West Africa",
+          minutes: 6,
+          intro: "Nigeria, Ghana, Senegal and more: a region split across English and French, anchored by ECOWAS.",
+          cards: [
+            {
+              h: "The lay of the land",
+              body: [
+                "West Africa includes Nigeria, Ghana, Senegal and Côte d'Ivoire, split between Anglophone countries (such as Nigeria and Ghana) and Francophone ones (such as Senegal and Côte d'Ivoire). Many Francophone states share the CFA franc.",
+                "The regional bloc is ECOWAS, the Economic Community of West African States."
+              ]
+            },
+            {
+              h: "Media landscape",
+              body: [
+                "Nigeria is the continent's most populous country and one of its biggest economies, with a large, combative press, titles like Premium Times, Punch and Vanguard, and Nollywood, a film industry of global scale. Lagos is a major media hub.",
+                "Ghana and Senegal have strong press traditions of their own."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the main regional bloc of West Africa?",
+              options: ["SADC", "EAC", "ECOWAS", "The Arab Maghreb Union"],
+              answer: 2,
+              explain: "ECOWAS, the Economic Community of West African States, is the region's main bloc."
+            },
+            {
+              type: "categorize",
+              q: "Sort these West African countries by their main official language.",
+              buckets: [
+                { id: "anglo", label: "Mainly English-speaking" },
+                { id: "franco", label: "Mainly French-speaking" }
+              ],
+              items: [
+                { text: "Nigeria", bucket: "anglo" },
+                { text: "Ghana", bucket: "anglo" },
+                { text: "Senegal", bucket: "franco" },
+                { text: "Côte d'Ivoire", bucket: "franco" }
+              ],
+              explain: "Crossing the Anglophone and Francophone line is how a West African story reaches the whole region."
+            },
+            {
+              type: "mcq",
+              q: "Which West African country is the continent's most populous and home to Nollywood?",
+              options: ["Ghana", "Senegal", "Nigeria", "Mali"],
+              answer: 2,
+              explain: "Nigeria is the most populous African country, one of its largest economies, and home to the Nollywood film industry."
+            }
+          ]
+        },
+        {
+          id: "region-east",
+          title: "East Africa",
+          minutes: 6,
+          intro: "Kenya, Tanzania, Ethiopia and more: Nairobi is a continental hub and Swahili a regional superpower.",
+          cards: [
+            {
+              h: "The lay of the land",
+              body: [
+                "East Africa includes Kenya, Tanzania, Uganda, Rwanda and Ethiopia. Swahili is widely spoken across Kenya and Tanzania, Ethiopia uses Amharic, and Rwanda has Kinyarwanda. The regional bloc is the East African Community, the EAC.",
+                "Swahili is a powerful tool for reaching audiences across borders."
+              ]
+            },
+            {
+              h: "Media landscape",
+              body: [
+                "Nairobi, in Kenya, is a major continental media hub, home to many correspondents and outlets like the Daily Nation and The Standard. Kenya also gave the world M-Pesa mobile money. Ethiopia has a large media scene, though press freedom there has been volatile.",
+                "Kenyan media, like South African media, cover the rest of Africa more than most."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the regional bloc of East Africa?",
+              options: ["The East African Community (EAC)", "ECOWAS", "ECCAS", "SADC"],
+              answer: 0,
+              explain: "The East African Community, the EAC, is the region's bloc."
+            },
+            {
+              type: "mcq",
+              q: "Which language is widely spoken across Kenya and Tanzania and useful for regional reach?",
+              options: ["Amharic", "Swahili", "Portuguese", "Hausa"],
+              answer: 1,
+              explain: "Swahili is widely spoken across Kenya and Tanzania, making it a powerful cross-border tool."
+            },
+            {
+              type: "match",
+              q: "Match each East African country to a key fact.",
+              pairs: [
+                { a: "Kenya", b: "Home of M-Pesa mobile money" },
+                { a: "Ethiopia", b: "Speaks Amharic" },
+                { a: "Rwanda", b: "Speaks Kinyarwanda" },
+                { a: "Tanzania", b: "Swahili widely spoken" }
+              ],
+              explain: "Each country has its own language and story. Lumping them together is exactly the trap to avoid."
+            }
+          ]
+        },
+        {
+          id: "region-central",
+          title: "Central Africa",
+          minutes: 6,
+          intro: "The DRC and its neighbours: a vast, French-speaking region, and the least covered of all.",
+          cards: [
+            {
+              h: "The lay of the land",
+              body: [
+                "Central Africa includes the Democratic Republic of Congo, Cameroon, Chad, the Central African Republic, the Republic of Congo and Gabon. French is widely official, and the DRC also has Lingala, Swahili, Kikongo and Tshiluba. The regional bloc is ECCAS.",
+                "The DRC is one of Africa's largest countries by both area and population."
+              ]
+            },
+            {
+              h: "The least-covered region",
+              body: [
+                "Central Africa is among the least covered regions in African media. In one continental review, it barely featured in regional coverage at all. Great distances and weak connectivity make reporting genuinely hard.",
+                "That gap is also an opportunity: original reporting here is rare and valuable."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the regional bloc of Central Africa?",
+              options: ["ECCAS", "ECOWAS", "EAC", "SADC"],
+              answer: 0,
+              explain: "ECCAS, the Economic Community of Central African States, is the region's bloc."
+            },
+            {
+              type: "mcq",
+              q: "Which language is widely official across much of Central Africa?",
+              options: ["English", "French", "Portuguese", "Arabic"],
+              answer: 1,
+              explain: "French is widely official, alongside national languages such as Lingala and Swahili in the DRC."
+            },
+            {
+              type: "mcq",
+              q: "How well covered is Central Africa in African media?",
+              options: [
+                "The most covered region",
+                "Among the least covered, barely featuring in regional coverage",
+                "Covered only for sport",
+                "Covered evenly with all regions"
+              ],
+              answer: 1,
+              explain: "Central Africa is among the least covered regions, which makes original reporting there especially valuable."
+            }
+          ]
+        },
+        {
+          id: "region-southern",
+          title: "Southern Africa",
+          minutes: 6,
+          intro: "South Africa to Zimbabwe: the continent's largest media hub, and our own backyard.",
+          cards: [
+            {
+              h: "The lay of the land",
+              body: [
+                "Southern Africa includes South Africa, Zimbabwe, Zambia, Botswana, Namibia and Mozambique. English is widely used in media across much of the region, alongside Portuguese in Mozambique and many indigenous languages. The regional bloc is SADC.",
+                "Press freedom varies: Namibia ranks among the freest in the world, while others are more constrained."
+              ]
+            },
+            {
+              h: "Media landscape",
+              body: [
+                "South Africa, centred on Johannesburg, is the continent's largest media hub, with titles like Daily Maverick, Mail & Guardian and City Press, and the most diverse coverage in one continental review. South African media cover the rest of Africa relatively well.",
+                "Smaller neighbours get less attention. The regional diaspora, including Zimbabweans across Southern Africa and beyond, is a rich, under-told beat, and the home patch of The Mutapa Times."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the regional bloc of Southern Africa?",
+              options: ["SADC", "ECOWAS", "EAC", "ECCAS"],
+              answer: 0,
+              explain: "SADC, the Southern African Development Community, is the region's bloc."
+            },
+            {
+              type: "mcq",
+              q: "Which country ranks among the freest in the world for press freedom?",
+              options: ["Eritrea", "Namibia", "Egypt", "Chad"],
+              answer: 1,
+              explain: "Namibia ranks among the freest in the world, a reminder that press freedom varies hugely across the continent."
+            },
+            {
+              type: "match",
+              q: "Match each Southern African country to a key fact.",
+              pairs: [
+                { a: "South Africa", b: "Largest media hub, centred on Johannesburg" },
+                { a: "Mozambique", b: "Portuguese-speaking" },
+                { a: "Zimbabwe", b: "Home patch of The Mutapa Times" },
+                { a: "Namibia", b: "Among the world's freest press" }
+              ],
+              explain: "Even one region holds many languages, histories and media systems. Specifics beat generalisations."
             }
           ]
         }
