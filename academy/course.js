@@ -1559,6 +1559,230 @@ window.COURSE = {
       ]
     },
     {
+      id: "digital-journalist",
+      title: "The digital journalist",
+      summary: "Work across platforms, build a personal brand, and freelance with a portfolio that gets you hired.",
+      lessons: [
+        {
+          id: "digital-age",
+          title: "Journalism in the digital age",
+          minutes: 7,
+          intro: "Digital publishing changed how news is made and consumed. The modern journalist works across every platform.",
+          cards: [
+            {
+              h: "Always on, every platform",
+              body: [
+                "Online news is continuous. Stories are sourced, written and published almost in real time, with live blogging for breaking events and new formats for analysis in progress. A journalist today is expected to move across print, broadcast and online rather than sticking to one.",
+                "The skill is not just writing. It is choosing the right format, fast, for the story and the platform."
+              ]
+            },
+            {
+              h: "Open journalism and your audience",
+              body: [
+                "Social media means readers are now sources, contributors and a community, not just an audience. You can mine your readership for leads and case studies, and build a following around your work. User-generated content, from eyewitness photos to tips, can enrich a story.",
+                "The rule is unchanged: verify it. A photo from social media is a claim until you confirm it."
+              ]
+            },
+            {
+              h: "Spotting fake news and infotainment",
+              body: [
+                "In an era of fake news and infotainment, part of the job is helping readers tell reliable journalism from noise. Public-service journalism informs and holds power to account. Infotainment entertains and chases clicks. The two can look alike at a glance.",
+                "Speed is the digital advantage and the digital danger. The faster you can publish, the faster you can be wrong in public."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What does open journalism mean in a digital newsroom?",
+              options: [
+                "Publishing without any editing",
+                "Using the online audience as a source of leads, case studies and community",
+                "Making all content free",
+                "Only using social media"
+              ],
+              answer: 1,
+              explain: "Open journalism treats readers as contributors and sources, enriching reporting, while still verifying what they provide."
+            },
+            {
+              type: "mcq",
+              q: "A dramatic photo arrives via social media during a breaking story. What do you do first?",
+              options: [
+                "Publish it immediately for speed",
+                "Verify it, since user content is a claim until confirmed",
+                "Ignore all social media",
+                "Assume it is fake and delete it"
+              ],
+              answer: 1,
+              explain: "User-generated content can be gold, but it must be verified. Speed never overrides accuracy."
+            },
+            {
+              type: "multi",
+              q: "Which are real features of digital-age journalism? Select all.",
+              options: [
+                "Real-time, continuous publishing",
+                "Working across print, broadcast and online",
+                "A guarantee that nothing is ever wrong",
+                "Readers acting as sources and community"
+              ],
+              answers: [0, 1, 3],
+              explain: "Real-time, multi-platform and audience-as-source are all real. Speed raises the risk of error, it does not remove it."
+            }
+          ]
+        },
+        {
+          id: "personal-brand",
+          title: "Build your personal brand",
+          minutes: 8,
+          intro: "Editors now expect reporters to have a presence. Build one that is clear, consistent and genuinely you.",
+          cards: [
+            {
+              h: "Clarity, consistency, constancy",
+              body: [
+                "Know your unique promise of value: what you cover and what makes you worth following. Keep your accounts consistent with one another, and post regularly. A reporter with a clear, steady presence is easier for an editor to picture in their newsroom.",
+                "Be picky about what you share. Whatever you post online tends to stay there."
+              ]
+            },
+            {
+              h: "You are always broadcasting",
+              body: [
+                "Even a personal account is, to some extent, professional once you are a journalist. A useful filter is the 80/20 rule: roughly 80 percent professional content, 20 percent personal. And ask the hard question: if you saw your own profile, would you hire you?",
+                "Mixing personal and professional is fine. Forgetting that it is all public is not."
+              ]
+            },
+            {
+              h: "Network, and be human",
+              body: [
+                "Do not only push out your own work. Follow people in your patch, comment, reply, and join the conversation. Inject real personality, readers connect with a person, not a hollow corporate voice. AI can help tidy a post, but do not let it write for you, as readers can usually tell.",
+                "You cannot build connections by waiting for everyone to come to you."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What is the 80/20 rule for a journalist's social media?",
+              options: [
+                "Post 80 percent personal, 20 percent professional",
+                "Post roughly 80 percent professional content and 20 percent personal",
+                "Only post 20 percent of the time",
+                "Spend 80 percent of your day online"
+              ],
+              answer: 1,
+              explain: "Lead with professional content, leavened with some personality. It keeps your presence useful and human."
+            },
+            {
+              type: "mcq",
+              q: "Why treat even a personal post as broadcasting?",
+              options: [
+                "Because it is private",
+                "Because as a journalist anything you post is public and reflects on you professionally",
+                "Because nobody reads it",
+                "Because it boosts ad revenue"
+              ],
+              answer: 1,
+              explain: "Once you are a journalist, the personal is another branch of the professional. Post accordingly."
+            },
+            {
+              type: "mcq",
+              q: "After finishing this course, what should you add to the Education or Certifications part of your LinkedIn?",
+              options: [
+                "Nothing, online courses do not count",
+                "The Mutapa Times Academy",
+                "Only your university",
+                "A list of hobbies"
+              ],
+              answer: 1,
+              explain: "List The Mutapa Times Academy. It shows initiative and signals your focus on Zimbabwe and diaspora reporting."
+            },
+            {
+              type: "write",
+              q: "Set up your LinkedIn profile.",
+              brief: [
+                "Draft the key parts of a LinkedIn profile that positions you as a journalist.",
+                "Write three things: a one-line headline, a two to three sentence About summary, and your Education entry, which should include The Mutapa Times Academy."
+              ],
+              checklist: [
+                "Does your headline say what you cover, not just aspiring journalist?",
+                "Does the About summary show your niche and point to a portfolio?",
+                "Have you listed The Mutapa Times Academy under Education or Licenses and certifications?",
+                "Is it consistent with how you present yourself elsewhere online?"
+              ],
+              model: "Headline: Multimedia journalist covering Zimbabwe and the diaspora, with a focus on money and migration. About: I report on the economics of diaspora life, from remittances to small business, for a Zimbabwean audience rather than for outsiders. I recently completed the Mutapa Times Academy. Portfolio at the link below, and open to freelance commissions. Education: The Mutapa Times Academy, journalism foundations and reporting.",
+              exerciseId: "linkedin-1"
+            }
+          ]
+        },
+        {
+          id: "freelance-portfolio",
+          title: "Freelance and your portfolio",
+          minutes: 7,
+          intro: "Freelancing is a growing route in. Your portfolio, not your CV alone, is what wins the work.",
+          cards: [
+            {
+              h: "What freelancing is",
+              body: [
+                "A freelance journalist is self-employed, taking on commissions for different outlets by the piece, the hour or the word. You might pitch an idea, be handed an assignment, or earn regular work once an editor trusts you. The independence is the appeal and the challenge.",
+                "Platforms like Medium and Substack have given independent reporters more room than ever to build an audience directly."
+              ]
+            },
+            {
+              h: "Build a portfolio that sells you",
+              body: [
+                "Collect your best and most varied work in one place a commissioner can reach in a click. Show range: news, features, multimedia, a series. You do not need to have been professionally published. Reporting something and publishing it yourself shows initiative and resourcefulness.",
+                "A live portfolio link beats any list of claimed skills."
+              ]
+            },
+            {
+              h: "The skills that keep work coming",
+              body: [
+                "Courage and curiosity to chase the story, clear writing, and journalistic integrity. On top of those, reliability: hitting deadlines and filing clean copy. Editors rehire the freelancer who makes their life easy.",
+                "Relationships with editors, built over time, turn one commission into a steady flow."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Do you need to have been professionally published to build a journalism portfolio?",
+              options: [
+                "Yes, only paid, published work counts",
+                "No, reporting and self-publishing your own work shows initiative",
+                "Only if you have a degree",
+                "Portfolios are not used for freelancers"
+              ],
+              answer: 1,
+              explain: "Self-published, self-initiated work demonstrates exactly the resourcefulness commissioners look for."
+            },
+            {
+              type: "mcq",
+              q: "What most reliably turns a one-off commission into regular freelance work?",
+              options: [
+                "Filing late but brilliantly",
+                "Reliability and a good relationship with the editor",
+                "Pitching only once a year",
+                "Refusing edits"
+              ],
+              answer: 1,
+              explain: "Editors rehire dependable writers who file clean copy on time. Relationships compound."
+            },
+            {
+              type: "multi",
+              q: "Which belong in a strong freelance portfolio? Select all.",
+              options: [
+                "Your best and most varied pieces",
+                "A clear, clickable link a commissioner can open",
+                "Every rough draft you have ever written",
+                "Self-published work that shows initiative"
+              ],
+              answers: [0, 1, 3],
+              explain: "Curate the best and most varied, make it easy to reach, and include self-started work. Do not dump every draft."
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "getting-hired",
       title: "Getting hired",
       summary: "Build a CV and cover letter that get a journalist noticed, and avoid the mistakes that get applications binned.",

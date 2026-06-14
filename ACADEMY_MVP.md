@@ -78,3 +78,35 @@ Cloudflare route instead of the workers.dev URL (tidier, same origin).
 4. **More content** — more lessons and writing exercises as data; the
    grader already takes any `exerciseId` you add to `EXERCISES`.
 5. **App** — the page wraps into the existing Capacitor shell for free.
+
+## Certificate of completion (with email)
+
+When a learner finishes every lesson and scores at least **70%** on the
+graded questions, the home screen shows a "Claim your certificate"
+button. The certificate page lets them put their name on a printable
+certificate (Download / Print works with zero setup) and, if configured,
+email it to themselves.
+
+Scoring: each graded exercise (everything except the self-check writing
+tasks) records correct/incorrect in localStorage. The pass mark is
+`PASS_MARK` in `academy/app.js`.
+
+### Enable emailing (optional)
+
+The printable certificate works immediately. To turn on email delivery:
+
+1. Create a **Resend** account (resend.com) and verify a sending domain
+   (e.g. mutapatimes.com). Create an API key.
+2. Set `FROM_EMAIL` in `workers/academy-certificate/wrangler.toml` to a
+   verified sender on that domain.
+3. Deploy the Worker:
+   ```
+   cd workers/academy-certificate
+   npx wrangler secret put RESEND_API_KEY
+   npx wrangler deploy
+   ```
+4. Put the printed URL into `academy/app.js` at `CERT_ENDPOINT`.
+
+If `CERT_ENDPOINT` is left blank, the email button politely tells the
+learner to use Download / Print instead. (Alternative provider: swap the
+Resend call in `worker.js` for MailChannels if you prefer.)

@@ -8,6 +8,8 @@
   "use strict";
 
   var GRADE_ENDPOINT = ""; // e.g. "https://academy-grade.NAME.workers.dev"
+  var CERT_ENDPOINT = "";  // e.g. "https://academy-certificate.NAME.workers.dev" (enables emailing)
+  var PASS_MARK = 70;      // percent of graded questions needed for the certificate
   var STORE_KEY = "mt_academy_v1";
   var XP_PER_EXERCISE = 10;
   var XP_LESSON_BONUS = 50;
@@ -22,11 +24,13 @@
   // ---------- storage ----------
   function load() {
     try { var s = JSON.parse(localStorage.getItem(STORE_KEY)); if (s && typeof s === "object") return s; } catch (e) {}
-    return { xp: 0, streak: { count: 0, last: "" }, lessons: {}, sound: true };
+    return { xp: 0, streak: { count: 0, last: "" }, lessons: {}, sound: true, results: {}, name: "" };
   }
   function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} }
   var state = load();
   if (typeof state.sound !== "boolean") state.sound = true;
+  if (!state.results) state.results = {};
+  if (typeof state.name !== "string") state.name = "";
 
   // ---------- sound (Web Audio, synthesized, no files) ----------
   var Sound = (function () {
@@ -66,6 +70,8 @@
   function allLessons() { var out = []; COURSE.units.forEach(function (u) { u.lessons.forEach(function (l) { out.push(l); }); }); return out; }
   function lessonState(id) { return state.lessons[id] || (state.lessons[id] = { done: false, exercises: {} }); }
   function courseProgress() { var t = allLessons().length, d = 0; allLessons().forEach(function (l) { if (lessonState(l.id).done) d++; }); return { done: d, total: t, pct: t ? Math.round(d / t * 100) : 0 }; }
+  function computeScore() { var c = 0, t = 0; for (var lid in state.results) { var r = state.results[lid]; for (var i in r) { if (r[i].type === "write") continue; t++; if (r[i].ok) c++; } } return { correct: c, total: t, pct: t ? Math.round(c / t * 100) : 0 }; }
+  function certEligible() { var p = courseProgress(), s = computeScore(); return p.total > 0 && p.done === p.total && s.total > 0 && s.pct >= PASS_MARK; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
   function go(hash) { location.hash = hash; }
@@ -131,6 +137,25 @@
     pwrap.appendChild(bar); pwrap.appendChild(el("p", "ac-overall-txt", prog.done + " of " + prog.total + " lessons complete"));
     view.appendChild(pwrap);
     setTimeout(function () { fill.style.width = prog.pct + "%"; }, 60);
+
+    if (prog.total > 0 && prog.done === prog.total) {
+      var sc = computeScore();
+      var cert = el("div", "ac-certcard");
+      if (sc.pct >= PASS_MARK) {
+        cert.classList.add("pass");
+        cert.appendChild(el("p", "ac-cert-eyebrow", "Course complete"));
+        cert.appendChild(el("h2", null, "You passed with " + sc.pct + "%"));
+        cert.appendChild(el("p", null, "You have earned your Mutapa Times Academy certificate."));
+        var cb = el("button", "ac-btn ac-btn--lg", "Claim your certificate");
+        cb.addEventListener("click", function () { Sound.play("complete"); go("#/certificate"); });
+        cert.appendChild(cb);
+      } else {
+        cert.appendChild(el("p", "ac-cert-eyebrow", "Almost there"));
+        cert.appendChild(el("h2", null, "You scored " + sc.pct + "%"));
+        cert.appendChild(el("p", null, "You need " + PASS_MARK + "% to earn the certificate. Replay any lesson to raise your score."));
+      }
+      view.appendChild(cert);
+    }
 
     var next = firstUnfinished();
     if (next) {
@@ -217,9 +242,10 @@
       panel.appendChild(el("p", "ac-kicker", "Exercise " + (idx + 1) + " of " + lesson.exercises.length));
 
       var done = function () { lessonState(lesson.id).exercises[idx] = true; save(); };
+      var rec = function (ok) { if (!state.results[lesson.id]) state.results[lesson.id] = {}; state.results[lesson.id][idx] = { ok: !!ok, type: ex.type }; save(); };
       var nextStep = function () { idx++; runExercise(); };
       var R = RENDERERS[ex.type];
-      if (R) R(panel, ex, done, nextStep); else nextStep();
+      if (R) R(panel, ex, done, nextStep, rec); else nextStep();
       exHost.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
@@ -258,7 +284,7 @@
   // ---------- exercise renderers ----------
   var RENDERERS = {};
 
-  RENDERERS.mcq = RENDERERS.multi = function (host, ex, done, next) {
+  RENDERERS.mcq = RENDERERS.multi = function (host, ex, done, next, rec) {
     var multi = ex.type === "multi";
     host.appendChild(el("p", "ac-q", ex.q + (multi ? "  (select all that apply)" : "")));
     var opts = el("div", "ac-opts"), picked = {}, locked = false;
@@ -286,11 +312,11 @@
       correct.forEach(function (i) { btns[i].classList.add("is-correct"); });
       sel.forEach(function (i) { if (correct.indexOf(i) === -1) btns[i].classList.add("is-wrong"); });
       var ok = sameSet(sel, correct);
-      done(); feedback(host, ok, ex.explain, next);
+      done(); rec(ok); feedback(host, ok, ex.explain, next);
     }
   };
 
-  RENDERERS.order = function (host, ex, done, next) {
+  RENDERERS.order = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q + "  (use the arrows to reorder)"));
     var order = shuffleNonIdentity(ex.items.map(function (t, i) { return i; }));
     var list = el("div", "ac-order"); host.appendChild(list);
@@ -316,12 +342,12 @@
       check.disabled = true;
       list.querySelectorAll(".ac-arrow").forEach(function (a) { a.disabled = true; });
       list.querySelectorAll(".ac-order-row").forEach(function (r, pos) { r.classList.add(order[pos] === pos ? "is-correct" : "is-wrong"); });
-      done(); feedback(host, ok, ex.explain, next);
+      done(); rec(ok); feedback(host, ok, ex.explain, next);
     });
     acts.appendChild(check); host.appendChild(acts);
   };
 
-  RENDERERS.match = function (host, ex, done, next) {
+  RENDERERS.match = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q + "  (tap a term, then its match)"));
     var grid = el("div", "ac-match"); host.appendChild(grid);
     var left = el("div", "ac-match-col"), right = el("div", "ac-match-col");
@@ -339,7 +365,7 @@
         if (sel.dataset.i === b.dataset.i) {
           sel.classList.remove("is-sel"); sel.classList.add("is-matched"); b.classList.add("is-matched");
           sel = null; matched++; Sound.play("correct");
-          if (matched === ex.pairs.length) { done(); feedback(host, wrong === 0, ex.explain, next, { label: wrong === 0 ? "All matched. " : "Matched, with a few misses. " }); }
+          if (matched === ex.pairs.length) { done(); rec(wrong === 0); feedback(host, wrong === 0, ex.explain, next, { label: wrong === 0 ? "All matched. " : "Matched, with a few misses. " }); }
         } else { wrong++; flash(b, false); flash(sel, false); Sound.play("wrong"); buzz(50); var s = sel; sel = null; s.classList.remove("is-sel"); }
       });
       return b;
@@ -349,7 +375,7 @@
     rights.forEach(function (it) { right.appendChild(mkBtn(it, "R")); });
   };
 
-  RENDERERS.categorize = function (host, ex, done, next) {
+  RENDERERS.categorize = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q + (ex.instruction ? "" : "  (tap an item, then a category)")));
     if (ex.instruction) host.appendChild(el("p", "ac-sub", ex.instruction));
     var pool = el("div", "ac-pool"); host.appendChild(pool);
@@ -378,12 +404,12 @@
         var right = c.dataset.placed === c.dataset.bucket;
         c.classList.add(right ? "is-correct" : "is-wrong"); if (!right) ok = false;
       });
-      check.disabled = true; done(); feedback(host, ok, ex.explain, next);
+      check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next);
     });
     acts.appendChild(check); host.appendChild(acts);
   };
 
-  RENDERERS.fillblank = function (host, ex, done, next) {
+  RENDERERS.fillblank = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q + "  (tap words to fill the gaps)"));
     var parts = ex.text.split("___");
     var line = el("p", "ac-cloze"); host.appendChild(line);
@@ -416,12 +442,12 @@
       var ok = true;
       slots.forEach(function (s, i) { s.dataset.locked = "1"; var right = s.dataset.word === ex.answer[i]; s.classList.add(right ? "is-correct" : "is-wrong"); if (!right) ok = false; });
       bank.querySelectorAll(".ac-chip").forEach(function (c) { c.dataset.locked = "1"; });
-      check.disabled = true; done(); feedback(host, ok, ex.explain, next);
+      check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next);
     });
     acts.appendChild(check); host.appendChild(acts);
   };
 
-  RENDERERS.swipe = function (host, ex, done, next) {
+  RENDERERS.swipe = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q));
     var stage = el("div", "ac-swipe"); host.appendChild(stage);
     var card = el("div", "ac-swipe-card"); stage.appendChild(card);
@@ -436,7 +462,7 @@
       if (i >= deck.length) {
         btns.style.display = "none"; stage.style.display = "none"; counter.textContent = "";
         var ok = correct === deck.length;
-        done(); feedback(host, ok, ex.explain, next, { label: "You got " + correct + " of " + deck.length + ". " });
+        done(); rec(ok); feedback(host, ok, ex.explain, next, { label: "You got " + correct + " of " + deck.length + ". " });
         return;
       }
       counter.textContent = (i + 1) + " of " + deck.length;
@@ -455,7 +481,7 @@
     show();
   };
 
-  RENDERERS.highlight = function (host, ex, done, next) {
+  RENDERERS.highlight = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q));
     if (ex.instruction) host.appendChild(el("p", "ac-sub", ex.instruction));
     var wrap = el("p", "ac-tokens"); host.appendChild(wrap);
@@ -475,12 +501,12 @@
         if (ex.targets.indexOf(i) !== -1) t.classList.add("is-correct");
         else if (picked[i]) t.classList.add("is-wrong");
       });
-      check.disabled = true; done(); feedback(host, ok, ex.explain, next);
+      check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next);
     });
     acts.appendChild(check); host.appendChild(acts);
   };
 
-  RENDERERS.write = function (host, ex, done, next) {
+  RENDERERS.write = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q));
     if (ex.brief) { var brief = el("div", "ac-brief"); ex.brief.forEach(function (p) { brief.appendChild(el("p", null, p)); }); host.appendChild(brief); }
     var ta = el("textarea", "ac-input"); ta.setAttribute("maxlength", "900"); ta.placeholder = "Write your answer..."; host.appendChild(ta);
@@ -519,8 +545,73 @@
     function finish() { done(); var a2 = el("div", "ac-actions"); var c = el("button", "ac-btn", "Continue"); c.addEventListener("click", function () { Sound.play("tap"); next(); }); a2.appendChild(c); host.appendChild(a2); }
   };
 
+  // ---------- certificate ----------
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  function dateStr() { var d = new Date(); return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
+  function certId(name) { var s = (name || "") + "|" + dateStr(), h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return "MTA-" + h.toString(36).toUpperCase().slice(0, 8); }
+
+  function renderCertificate() {
+    if (!certEligible()) { go("#/"); return; }
+    clear(view); renderChips();
+    var sc = computeScore();
+
+    var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← Back");
+    back.addEventListener("click", function () { Sound.play("tap"); go("#/"); }); top.appendChild(back); view.appendChild(top);
+    view.appendChild(el("p", "ac-eyebrow", "Your certificate"));
+    view.appendChild(el("h1", "ac-h1", "Congratulations"));
+
+    var form = el("div", "ac-cert-form");
+    form.appendChild(el("label", "ac-cert-label", "Your full name (as it should appear)"));
+    var ni = document.createElement("input"); ni.type = "text"; ni.className = "ac-cert-input"; ni.value = state.name || ""; ni.placeholder = "e.g. Tendai Kuwanda"; ni.maxLength = 60;
+    form.appendChild(ni); view.appendChild(form);
+
+    var certWrap = el("div"); view.appendChild(certWrap);
+    function paint() {
+      clear(certWrap);
+      var name = (ni.value || "").trim() || "Your Name";
+      var cert = el("div", "ac-cert");
+      cert.appendChild(el("p", "ac-cert-mark", "M·T"));
+      cert.appendChild(el("p", "ac-cert-org", "The Mutapa Times Academy"));
+      cert.appendChild(el("p", "ac-cert-csub", "Certificate of Completion"));
+      cert.appendChild(el("p", "ac-cert-pre", "This certifies that"));
+      cert.appendChild(el("p", "ac-cert-name", name));
+      cert.appendChild(el("p", "ac-cert-cbody", "has completed the Mutapa Times Academy course in journalism for Zimbabwe and the diaspora, passing with a score of " + sc.pct + "%."));
+      var meta = el("div", "ac-cert-meta");
+      meta.appendChild(el("span", null, "Awarded " + dateStr()));
+      meta.appendChild(el("span", null, "ID " + certId(name)));
+      cert.appendChild(meta);
+      certWrap.appendChild(cert);
+    }
+    ni.addEventListener("input", function () { state.name = ni.value; save(); paint(); });
+    paint();
+
+    var acts = el("div", "ac-actions");
+    var dl = el("button", "ac-btn", "Download / Print");
+    dl.addEventListener("click", function () { Sound.play("tap"); window.print(); });
+    acts.appendChild(dl); view.appendChild(acts);
+
+    var ew = el("div", "ac-cert-email");
+    ew.appendChild(el("h3", "ac-selfhead", "Email me my certificate"));
+    var ei = document.createElement("input"); ei.type = "email"; ei.className = "ac-cert-input"; ei.placeholder = "you@email.com";
+    ew.appendChild(ei);
+    var ea = el("div", "ac-actions"); var eb = el("button", "ac-btn", "Send to my email"); var est = el("span", "ac-status");
+    ea.appendChild(eb); ea.appendChild(est); ew.appendChild(ea); view.appendChild(ew);
+    eb.addEventListener("click", function () {
+      var name = (ni.value || "").trim(), email = (ei.value || "").trim();
+      if (name.length < 2) { est.innerHTML = '<span class="ac-err">Enter your name first.</span>'; return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { est.innerHTML = '<span class="ac-err">Enter a valid email.</span>'; return; }
+      if (!CERT_ENDPOINT) { est.innerHTML = '<span class="ac-err">Email delivery is not set up yet. Use Download / Print to save your certificate.</span>'; return; }
+      eb.disabled = true; est.innerHTML = '<span class="ac-spin">Sending...</span>';
+      fetch(CERT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name, email: email, score: sc.pct, date: dateStr(), id: certId(name) }) })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function () { est.innerHTML = '<span class="ac-ok">Sent. Check your inbox.</span>'; Sound.play("complete"); })
+        .catch(function () { eb.disabled = false; est.innerHTML = '<span class="ac-err">Could not send. Try Download / Print instead.</span>'; });
+    });
+    window.scrollTo(0, 0);
+  }
+
   // ---------- router ----------
-  function route() { var h = location.hash || "#/"; var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
+  function route() { var h = location.hash || "#/"; if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
   window.addEventListener("hashchange", route);
   route();
 })();

@@ -1,0 +1,14 @@
+name = "academy-certificate"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Secret (do NOT commit): your Resend API key
+#   npx wrangler secret put RESEND_API_KEY
+#
+# FROM_EMAIL must be a verified sender on your Resend domain.
+# CC_EMAIL is optional (blind copy, e.g. to keep a record of issued certs).
+
+[vars]
+ALLOWED_ORIGIN = "https://mutapatimes.com"
+FROM_EMAIL = "Mutapa Times Academy <academy@mutapatimes.com>"
+# CC_EMAIL = "records@mutapatimes.com"

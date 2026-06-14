@@ -275,3 +275,46 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   .ac-reveal, .ac-slidein, .ac-swipe-card.in, .ac-anim-pop, .ac-anim-shake,
   .ac-node.is-current .ac-node-face, .ac-chip.pulse { animation: none !important; }
 }
+
+/* ============================================================
+   v3: certificate + completion
+   ============================================================ */
+.ac-ok { color: #1a7f44; font-weight: 700; }
+
+.ac-certcard { border: 1.5px solid var(--rule); border-radius: 14px; padding: 1.3rem 1.2rem;
+  margin: 0 0 1.2rem; background: var(--paper); text-align: center; }
+.ac-certcard.pass { border-color: #1a7f44; background: #f3f8f4; }
+.ac-certcard h2 { font-family: "Playfair Display", Georgia, serif; margin: .2rem 0 .4rem; font-size: 1.5rem; }
+.ac-certcard p { margin: 0 0 .6rem; } .ac-certcard .ac-btn { margin-top: .4rem; }
+.ac-cert-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+
+.ac-cert-form { margin: 0 0 1rem; }
+.ac-cert-label { display: block; font-size: .82rem; font-weight: 700; color: #6a6a6a; margin: 0 0 .35rem; }
+.ac-cert-input { width: 100%; font: inherit; border: 1.5px solid var(--rule); border-radius: 10px;
+  padding: .7rem .85rem; background: #fff; color: var(--ink); }
+.ac-cert-input:focus { outline: none; border-color: var(--ink); }
+
+/* The certificate itself */
+.ac-cert { position: relative; background: #fff; border: 2px solid var(--ink); border-radius: 6px;
+  padding: 2.2rem 1.6rem; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,.1); }
+.ac-cert::before { content: ""; position: absolute; inset: 9px; border: 1px solid var(--accent); border-radius: 3px; pointer-events: none; }
+.ac-cert-mark { font-family: "Playfair Display", Georgia, serif; font-weight: 900; color: var(--accent); font-size: 1.7rem; margin: 0 0 .2rem; }
+.ac-cert-org { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.35rem; margin: 0 0 .1rem; }
+.ac-cert-csub { font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; color: #8a8a8a; margin: 0 0 1.4rem; }
+.ac-cert-pre { font-size: .9rem; color: #6a6a6a; margin: 0 0 .3rem; }
+.ac-cert-name { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.9rem; color: var(--accent); margin: 0 0 .7rem; line-height: 1.1; }
+.ac-cert-cbody { font-size: .98rem; max-width: 30rem; margin: 0 auto 1.5rem; color: #2a2a2a; }
+.ac-cert-meta { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--rule);
+  padding-top: .9rem; font-size: .76rem; color: #8a8a8a; }
+
+.ac-cert-email { margin: 1.6rem 0 0; border-top: 1px dashed var(--rule); padding-top: 1.2rem; }
+.ac-cert-email .ac-cert-input { margin-bottom: .2rem; }
+
+/* Print: show only the certificate */
+@media print {
+  .ac-appbar, .ac-lessontop, .ac-eyebrow, .ac-h1, .ac-cert-form, .ac-actions, .ac-cert-email { display: none !important; }
+  body { background: #fff; }
+  .ac-wrap { padding: 0; }
+  .ac-cert { box-shadow: none; border-color: #000; }
+  .ac-cert::before { border-color: var(--accent); }
+}
