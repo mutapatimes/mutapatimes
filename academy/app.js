@@ -20,11 +20,16 @@
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   var examMode = false; // true during checkpoint lessons: no per-question explanations
 
-  // Access gate. Flip REQUIRE_ACCESS to true once Paynow is live to lock
-  // the course behind a paid unlock (set on the welcome page after payment).
-  var REQUIRE_ACCESS = false;
-  if (REQUIRE_ACCESS && !REVIEW) {
-    try { if (!localStorage.getItem("mt_academy_access")) { location.replace("/academy/"); return; } } catch (e) {}
+  // Paywall + cross-device resume. The course needs an access token, issued at
+  // /academy/welcome/ after payment or after redeeming an access code. Progress
+  // is also synced to the server (keyed to the token) so a learner can stop and
+  // resume on any device. Review mode bypasses all of this.
+  var PAY_ENDPOINT = "https://academy-pay.mutapatimes.workers.dev";
+  var REQUIRE_ACCESS = true;
+  var ACCESS = { email: "", token: "" };
+  if (!REVIEW) {
+    try { ACCESS.email = localStorage.getItem("mt_academy_email") || ""; ACCESS.token = localStorage.getItem("mt_academy_token") || ""; } catch (e) {}
+    if (REQUIRE_ACCESS && (!ACCESS.token || !ACCESS.email)) { location.replace("/academy/welcome/"); return; }
   }
 
   var COURSE = window.COURSE;
@@ -137,10 +142,54 @@
   // ---------- storage ----------
   function load() {
     try { var s = JSON.parse(localStorage.getItem(STORE_KEY)); if (s && typeof s === "object") return s; } catch (e) {}
-    return { xp: 0, streak: { count: 0, last: "" }, lessons: {}, sound: true, results: {}, name: "" };
+    return { xp: 0, streak: { count: 0, last: "" }, lessons: {}, sound: true, results: {}, name: "", updatedTs: 0 };
   }
-  function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} }
+  function saveLocal() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} }
+  function save() { state.updatedTs = Date.now(); saveLocal(); schedulePush(); }
   var state = load();
+
+  // ---------- cross-device progress sync ----------
+  var pushTimer = null;
+  function schedulePush() {
+    if (REVIEW || !REQUIRE_ACCESS || !ACCESS.token) return;
+    if (pushTimer) clearTimeout(pushTimer);
+    pushTimer = setTimeout(pushProgress, 1500);
+  }
+  function adoptServer(progress, ts) {
+    if (!progress || typeof progress !== "object") return;
+    state = progress;
+    if (typeof state.sound !== "boolean") state.sound = true;
+    if (!state.results) state.results = {};
+    if (typeof state.name !== "string") state.name = "";
+    state.updatedTs = ts || state.updatedTs || 0;
+    saveLocal(); renderChips(); renderSoundBtn(); route();
+  }
+  function pushProgress() {
+    if (REVIEW || !ACCESS.token) return;
+    try {
+      fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "progress-put", email: ACCESS.email, token: ACCESS.token, updatedTs: state.updatedTs || Date.now(), progress: state }) })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { if (d && d.newer && d.progress) adoptServer(d.progress, d.updatedTs); })
+        .catch(function () {});
+    } catch (e) {}
+  }
+  function pullProgress() {
+    if (REVIEW || !ACCESS.token) return;
+    try {
+      fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "progress-get", email: ACCESS.email, token: ACCESS.token }) })
+        .then(function (r) {
+          if (r.status === 401) { // token no longer valid: send them back to unlock
+            try { localStorage.removeItem("mt_academy_token"); localStorage.removeItem("mt_academy_access"); } catch (e) {}
+            location.replace("/academy/welcome/"); return null;
+          }
+          return r.ok ? r.json() : null;
+        })
+        .then(function (d) { if (d && d.progress && (d.updatedTs || 0) > (state.updatedTs || 0)) adoptServer(d.progress, d.updatedTs); })
+        .catch(function () {});
+    } catch (e) {}
+  }
   if (typeof state.sound !== "boolean") state.sound = true;
   if (!state.results) state.results = {};
   if (typeof state.name !== "string") state.name = "";
@@ -1089,4 +1138,5 @@
   function route() { var h = location.hash || "#/"; if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
   window.addEventListener("hashchange", route);
   route();
+  pullProgress();
 })();

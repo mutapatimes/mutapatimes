@@ -67,7 +67,17 @@ async function makeReferralCode(env, email) {
   return h.slice(0, 8).toUpperCase();
 }
 async function accessToken(env, order) {
-  return hmacHex(env.ACCESS_SECRET || "key", order.email + "|" + order.paidTs);
+  return hmacHex(env.ACCESS_SECRET || "key", (order.email || "").toLowerCase() + "|" + order.paidTs);
+}
+// Verify a token a learner presents (for progress sync). The token is bound to
+// their email and the timestamp they paid, both stored on the user record.
+async function verifyToken(env, email, token) {
+  email = (email || "").toLowerCase();
+  if (!email || !token) return false;
+  const user = await getJSON(env, "user:" + email);
+  if (!user || !user.paid || !user.paidTs) return false;
+  const expected = await hmacHex(env.ACCESS_SECRET || "key", email + "|" + user.paidTs);
+  return token === expected;
 }
 
 // Idempotent: mark paid, issue codes, credit referrer, newsletter.
@@ -78,6 +88,7 @@ async function finalize(env, order, override) {
     order.paidTs = Date.now();
     if (override.email) order.email = override.email;
     if (override.name) order.name = override.name;
+    order.email = (order.email || "").toLowerCase();
 
     let user = (await getJSON(env, "user:" + order.email)) || { referrals: 0, paid: false };
     if (!user.referralCode) {
@@ -85,6 +96,8 @@ async function finalize(env, order, override) {
       await env.ACADEMY.put("code:" + user.referralCode, order.email);
     }
     user.paid = true;
+    user.paidTs = order.paidTs;        // needed to verify access tokens later
+    if (order.name) user.name = order.name;
     await putJSON(env, "user:" + order.email, user);
     order.referralCode = user.referralCode;
 
@@ -158,17 +171,18 @@ export default {
       const ref = (body.ref || "").toString().trim().slice(0, 16).toUpperCase();
       if (name.length < 2) return json({ error: "Name required" }, 400, ch);
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
+      const emailLc = email.toLowerCase();
 
       const reference = "MTA-" + Date.now().toString(36).toUpperCase() + "-" + randHex(3).toUpperCase();
       let referrerValid = false;
       if (ref) {
         const refEmail = await env.ACADEMY.get("code:" + ref);
-        if (refEmail && refEmail !== email) referrerValid = true;
+        if (refEmail && refEmail !== emailLc) referrerValid = true;
       }
-      await putJSON(env, "order:" + reference, { reference, email, name, ref: referrerValid ? ref : "", status: "created", createdTs: Date.now() });
+      await putJSON(env, "order:" + reference, { reference, email: emailLc, name, ref: referrerValid ? ref : "", status: "created", createdTs: Date.now() });
 
       const p = [
-        "checkout[email]=" + encodeURIComponent(email),
+        "checkout[email]=" + encodeURIComponent(emailLc),
         "checkout[custom][ref_purchase]=" + encodeURIComponent(reference)
       ];
       if (referrerValid) {
@@ -203,26 +217,27 @@ export default {
       if (!code) return json({ error: "Enter your access code" }, 400, ch);
       if (name.length < 2) return json({ error: "Name required" }, 400, ch);
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
+      const emailLc = email.toLowerCase();
 
       const rec = await getJSON(env, "acccode:" + code);
       if (!rec) return json({ error: "That code is not valid" }, 400, ch);
 
       if (rec.status === "used") {
         // Allow the original buyer to re-unlock on another device.
-        if (rec.email && rec.email === email) {
-          const user = await getJSON(env, "user:" + email);
-          const order = { email, paidTs: rec.paidTs || Date.now() };
-          return json({ ok: true, token: await accessToken(env, order), referralCode: (user && user.referralCode) || "", email }, 200, ch);
+        if (rec.email && rec.email === emailLc) {
+          const user = await getJSON(env, "user:" + emailLc);
+          const order = { email: emailLc, paidTs: rec.paidTs || Date.now() };
+          return json({ ok: true, token: await accessToken(env, order), referralCode: (user && user.referralCode) || "", email: emailLc }, 200, ch);
         }
         return json({ error: "That code has already been used" }, 400, ch);
       }
 
       const reference = "AC-" + code + "-" + randHex(2).toUpperCase();
-      let order = { reference, email, name, ref, status: "created", createdTs: Date.now(), via: "code" };
-      order = await finalize(env, order, { email, name });
-      rec.status = "used"; rec.email = email; rec.reference = reference; rec.paidTs = order.paidTs;
+      let order = { reference, email: emailLc, name, ref, status: "created", createdTs: Date.now(), via: "code" };
+      order = await finalize(env, order, { email: emailLc, name });
+      rec.status = "used"; rec.email = emailLc; rec.reference = reference; rec.paidTs = order.paidTs;
       await env.ACADEMY.put("acccode:" + code, JSON.stringify(rec));
-      return json({ ok: true, token: await accessToken(env, order), referralCode: order.referralCode || "", email }, 200, ch);
+      return json({ ok: true, token: await accessToken(env, order), referralCode: order.referralCode || "", email: emailLc }, 200, ch);
     }
 
     // ---- gencode (admin only): create access codes for local buyers ----
@@ -238,6 +253,35 @@ export default {
         codes.push(c);
       }
       return json({ codes }, 200, ch);
+    }
+
+    // ---- verify (does this email + token still have access?) ----
+    if (body.action === "verify") {
+      const ok = await verifyToken(env, body.email, body.token);
+      return json({ ok }, 200, ch);
+    }
+
+    // ---- progress-get (cross-device resume) ----
+    if (body.action === "progress-get") {
+      if (!await verifyToken(env, body.email, body.token)) return json({ error: "Unauthorized" }, 401, ch);
+      const rec = await getJSON(env, "progress:" + (body.email || "").toLowerCase());
+      return json({ ok: true, progress: rec ? rec.data : null, updatedTs: rec ? rec.updatedTs : 0 }, 200, ch);
+    }
+
+    // ---- progress-put (cross-device resume; last write wins by updatedTs) ----
+    if (body.action === "progress-put") {
+      if (!await verifyToken(env, body.email, body.token)) return json({ error: "Unauthorized" }, 401, ch);
+      const data = body.progress;
+      if (!data || typeof data !== "object") return json({ error: "Bad progress" }, 400, ch);
+      const updatedTs = parseInt(body.updatedTs, 10) || Date.now();
+      const key = "progress:" + (body.email || "").toLowerCase();
+      const existing = await getJSON(env, key);
+      if (existing && existing.updatedTs > updatedTs) {
+        // The server already has a newer copy (another device). Return it.
+        return json({ ok: true, newer: true, progress: existing.data, updatedTs: existing.updatedTs }, 200, ch);
+      }
+      await putJSON(env, key, { data, updatedTs });
+      return json({ ok: true, updatedTs }, 200, ch);
     }
 
     return json({ error: "Unknown action" }, 400, ch);

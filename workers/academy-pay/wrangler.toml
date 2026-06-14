@@ -6,7 +6,7 @@ compatibility_date = "2024-11-01"
 #   npx wrangler kv namespace create ACADEMY
 [[kv_namespaces]]
 binding = "ACADEMY"
-id = "PASTE_KV_NAMESPACE_ID_HERE"
+id = "1cbf54ecece14d4481549bad6f163e4b"
 
 # Secrets (do NOT commit): set with `npx wrangler secret put NAME`
 #   LS_WEBHOOK_SECRET - Lemon Squeezy webhook signing secret
