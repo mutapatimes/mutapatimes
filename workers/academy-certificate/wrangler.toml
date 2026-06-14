@@ -2,13 +2,19 @@ name = "academy-certificate"
 main = "worker.js"
 compatibility_date = "2024-11-01"
 
-# Secret (do NOT commit): your Resend API key
-#   npx wrangler secret put RESEND_API_KEY
+# Secret (do NOT commit): your Brevo API key (same value as the GitHub
+# Actions BREVO_API_KEY used by the newsletter).
+#   npx wrangler secret put BREVO_API_KEY
 #
-# FROM_EMAIL must be a verified sender on your Resend domain.
+# FROM_EMAIL must be a verified sender in your Brevo account.
 # CC_EMAIL is optional (blind copy, e.g. to keep a record of issued certs).
+# SUBMIT_TO is where final-capstone article submissions are emailed
+# (comma-separated for more than one). Defaults to news@mutapatimes.com.
 
 [vars]
 ALLOWED_ORIGIN = "https://mutapatimes.com"
-FROM_EMAIL = "Mutapa Times Academy <academy@mutapatimes.com>"
+# Uses the same verified Brevo sender as the newsletter (news@mutapatimes.com)
+# with an Academy display name. Change the address only if you verify another.
+FROM_EMAIL = "The Mutapa Times Academy <news@mutapatimes.com>"
+SUBMIT_TO = "news@mutapatimes.com"
 # CC_EMAIL = "records@mutapatimes.com"
