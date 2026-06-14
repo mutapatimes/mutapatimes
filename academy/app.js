@@ -11,7 +11,10 @@
   var CERT_ENDPOINT = "";  // e.g. "https://academy-certificate.NAME.workers.dev" (enables emailing)
   var PASS_MARK = 70;      // percent of graded questions across the course needed for the certificate
   var LESSON_PASS = 80;    // percent needed to complete (and unlock past) a single lesson
-  var STORE_KEY = "mt_academy_v1";
+  // Review mode (set by /academy/review/): everything unlocked, no gates,
+  // explanations always shown, progress kept under a separate key.
+  var REVIEW = !!window.MT_ACADEMY_REVIEW;
+  var STORE_KEY = REVIEW ? "mt_academy_review" : "mt_academy_v1";
   var XP_PER_EXERCISE = 10;
   var XP_LESSON_BONUS = 50;
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -20,7 +23,7 @@
   // Access gate. Flip REQUIRE_ACCESS to true once Paynow is live to lock
   // the course behind a paid unlock (set on the welcome page after payment).
   var REQUIRE_ACCESS = false;
-  if (REQUIRE_ACCESS) {
+  if (REQUIRE_ACCESS && !REVIEW) {
     try { if (!localStorage.getItem("mt_academy_access")) { location.replace("/academy/"); return; } } catch (e) {}
   }
 
@@ -135,7 +138,7 @@
   function certEligible() { var p = courseProgress(), s = computeScore(); return p.total > 0 && p.done === p.total && s.total > 0 && s.pct >= PASS_MARK; }
   function lessonGradedTotal(lesson) { return lesson.exercises.filter(function (e) { return e.type !== "write"; }).length; }
   function lessonScore(lesson) { var r = state.results[lesson.id] || {}, correct = 0; for (var i in r) { if (r[i].type !== "write" && r[i].ok) correct++; } var total = lessonGradedTotal(lesson); return total ? Math.round(correct / total * 100) : 100; }
-  function isUnlocked(id) { var ls = allLessons(); for (var i = 0; i < ls.length; i++) { if (ls[i].id === id) return i === 0 || lessonState(ls[i - 1].id).done; } return false; }
+  function isUnlocked(id) { if (REVIEW) return true; var ls = allLessons(); for (var i = 0; i < ls.length; i++) { if (ls[i].id === id) return i === 0 || lessonState(ls[i - 1].id).done; } return false; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
   function go(hash) { location.hash = hash; }
@@ -267,7 +270,7 @@
     var lesson = findLesson(id);
     if (!lesson) { go("#/"); return; }
     if (!isUnlocked(id)) { go("#/"); return; }
-    examMode = !!lesson.checkpoint;
+    examMode = !!lesson.checkpoint && !REVIEW;
     clear(view); renderChips();
 
     var top = el("div", "ac-lessontop");
@@ -331,7 +334,7 @@
       clear(exHost);
       var ls = lessonState(lesson.id);
       var pct = lessonScore(lesson);
-      var passed = ls.done || pct >= LESSON_PASS;
+      var passed = REVIEW || ls.done || pct >= LESSON_PASS;
       if (!passed) {
         save(); Sound.play("wrong");
         var fail = el("div", "ac-done-inline");
