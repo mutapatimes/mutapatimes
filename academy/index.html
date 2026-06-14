@@ -446,6 +446,8 @@
     // ============================================================
     var BUY_LINK = "";
     var PRICE = 50, CURRENCY = "US$";
+    // Comms worker: captures the student and starts the welcome journey.
+    var COMMS_ENDPOINT = "https://academy-certificate.mutapatimes.workers.dev";
 
     document.getElementById("price").textContent = CURRENCY + PRICE;
     var form = document.getElementById("enrolForm"), status = document.getElementById("status");
@@ -456,7 +458,15 @@
       if (name.length < 2) { status.innerHTML = '<span class="err">Please enter your full name.</span>'; return; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { status.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
       try { localStorage.setItem("mt_academy_name", name); localStorage.setItem("mt_academy_email", email); } catch (e) {}
-      if (!BUY_LINK) { status.innerHTML = '<span class="ok">Thanks, ' + name.split(" ")[0] + '. Enrolment opens shortly and we will email you.</span>'; return; }
+      // Start the welcome journey (fire and forget; keepalive lets it finish
+      // even as we navigate to payment).
+      if (COMMS_ENDPOINT) {
+        try {
+          fetch(COMMS_ENDPOINT, { method: "POST", keepalive: true, headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ kind: "enrol", name: name, email: email }) }).catch(function () {});
+        } catch (e) {}
+      }
+      if (!BUY_LINK) { status.innerHTML = '<span class="ok">Thanks, ' + name.split(" ")[0] + '. Check your inbox for a welcome email. Enrolment opens shortly and we will be in touch.</span>'; return; }
       status.textContent = "Taking you to secure payment...";
       var sep = BUY_LINK.indexOf("?") >= 0 ? "&" : "?";
       location.href = BUY_LINK + sep + "checkout[email]=" + encodeURIComponent(email);

@@ -51,6 +51,27 @@ var CERT_ENDPOINT  = "https://academy-certificate.YOURNAME.workers.dev"; // cert
 Then bump the `app.js?v=` query string in `academy/learn/index.html` and
 `academy/review/index.html` so browsers pick up the change.
 
+## Email lifecycle (welcome journey + pitch reminders)
+
+Students become Brevo contacts and move through a drip sequence:
+
+- **At signup** (enrol form) the landing page calls the comms worker
+  (`{ kind: "enrol" }`): it adds the student to a "Mutapa Times Academy -
+  Students" list and your briefings list (`NEWSLETTER_LIST_ID`), then sends
+  welcome email #1 immediately.
+- **The daily cron** `scripts/academy_lifecycle.py`
+  (`.github/workflows/academy-lifecycle.yml`) sends the timed emails:
+  welcome #2 (day 2), #3 (day 5), a "still time to finish" nudge (day 14),
+  and, for graduates, a pitch reminder every 30 days. State is kept in Brevo
+  contact attributes, so it is idempotent (one email per contact per run).
+- **On completion** the app calls `{ kind: "complete" }`: marks the contact a
+  graduate and sends the "you can pitch / monthly column" email. Monthly pitch
+  reminders follow from the cron.
+
+The cron needs the same `BREVO_API_KEY` / `BREVO_LIST_ID` GitHub secrets the
+newsletter already uses. Run it once by hand from the Actions tab
+(workflow_dispatch, set "Dry run" to true first to preview).
+
 ## Graceful fallback
 
 If the endpoints are left blank or a call fails:

@@ -132,6 +132,142 @@ function certificateHTML(name, score, date, id) {
   '</div>';
 }
 
+// ---------- Brevo contact + list management (lifecycle emails) ----------
+var STUDENTS_LIST = "Mutapa Times Academy - Students";
+var GRADUATES_LIST = "Mutapa Times Academy - Graduates";
+
+async function brevo(env, method, path, body) {
+  var resp = await fetch("https://api.brevo.com/v3" + path, {
+    method: method,
+    headers: { "api-key": env.BREVO_API_KEY, "Content-Type": "application/json", "accept": "application/json" },
+    body: body ? JSON.stringify(body) : undefined
+  });
+  var j = null; try { j = await resp.json(); } catch (e) {}
+  return { status: resp.status, ok: resp.ok, json: j };
+}
+
+async function getFolderId(env) {
+  if (env.ACADEMY_FOLDER_ID) return parseInt(env.ACADEMY_FOLDER_ID, 10);
+  var r = await brevo(env, "GET", "/contacts/folders?limit=50&offset=0");
+  var folders = (r.json && r.json.folders) || [];
+  var found = folders.filter(function (f) { return (f.name || "").toLowerCase() === "academy"; })[0];
+  if (found) return found.id;
+  var c = await brevo(env, "POST", "/contacts/folders", { name: "Academy" });
+  if (c.json && c.json.id) return c.json.id;
+  return folders.length ? folders[0].id : 1;
+}
+
+async function getOrCreateList(env, name) {
+  for (var offset = 0; offset < 300; offset += 50) {
+    var r = await brevo(env, "GET", "/contacts/lists?limit=50&offset=" + offset);
+    var lists = (r.json && r.json.lists) || [];
+    var found = lists.filter(function (l) { return (l.name || "").toLowerCase() === name.toLowerCase(); })[0];
+    if (found) return found.id;
+    if (lists.length < 50) break;
+  }
+  var folderId = await getFolderId(env);
+  var c = await brevo(env, "POST", "/contacts/lists", { name: name, folderId: folderId });
+  return (c.json && c.json.id) || null;
+}
+
+// Create the custom attributes if they do not exist. Errors (already exists)
+// are ignored on purpose.
+async function ensureAttributes(env) {
+  var attrs = [["ACADEMY_SIGNUP", "date"], ["ACADEMY_WELCOME_STEP", "float"],
+    ["ACADEMY_DONE", "boolean"], ["ACADEMY_DONE_DATE", "date"], ["ACADEMY_LAST_PITCH", "date"]];
+  for (var i = 0; i < attrs.length; i++) {
+    await brevo(env, "POST", "/contacts/attributes/normal/" + attrs[i][0], { type: attrs[i][1] });
+  }
+}
+
+async function upsertContact(env, email, attributes, listIds) {
+  return brevo(env, "POST", "/contacts", { email: email, attributes: attributes, listIds: listIds.filter(Boolean), updateEnabled: true });
+}
+
+function emailShell(inner) {
+  return '<div style="max-width:560px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;line-height:1.6;">' +
+    '<div style="text-align:center;padding:6px 0 14px;"><span style="color:#c41e1e;font-weight:900;font-size:24px;font-family:Georgia,serif;">M&middot;T</span>' +
+    '<div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8a8a8a;margin-top:2px;">The Mutapa Times Academy</div></div>' +
+    inner +
+    '<p style="font-size:12px;color:#9a9a9a;border-top:1px solid #e2e2e2;padding-top:14px;margin-top:26px;">' +
+    'You are receiving this because you enrolled at The Mutapa Times Academy. If you would rather not get these, just reply and we will remove you.</p>' +
+  '</div>';
+}
+function btn(href, label) {
+  return '<p style="margin:22px 0;"><a href="' + esc(href) + '" style="background:#c41e1e;color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:8px;display:inline-block;">' + esc(label) + '</a></p>';
+}
+function welcomeHTML(name, site) {
+  var first = esc((name || "there").split(" ")[0]);
+  return emailShell(
+    '<h1 style="font-family:Georgia,serif;font-size:24px;margin:0 0 12px;">Welcome, ' + first + '.</h1>' +
+    '<p>You have taken the first step towards a real byline. The Mutapa Times Academy is self-paced and built around doing the work: writing ledes, weighing sources, structuring stories, and ending with a real article you submit to our editors.</p>' +
+    '<p><strong>How to get the most from it</strong></p>' +
+    '<p>Set aside a short block most days rather than one long sitting. Each unit unlocks the next, and the checkpoints are meant to be a little hard. That is the point.</p>' +
+    btn(site + "/academy/learn/", "Start learning") +
+    '<p>Over the next week or two we will send a few short notes to keep you moving, and you will start receiving the Mutapa Times briefings so you can see how working journalists frame the day.</p>' +
+    '<p>Welcome aboard.<br>The Mutapa Times Academy</p>'
+  );
+}
+function completionHTML(name, site) {
+  var first = esc((name || "there").split(" ")[0]);
+  return emailShell(
+    '<h1 style="font-family:Georgia,serif;font-size:24px;margin:0 0 12px;">You did it, ' + first + '.</h1>' +
+    '<p>You have completed The Mutapa Times Academy and earned your certificate. Now the real work begins, and it is the best part.</p>' +
+    '<p><strong>You can now pitch stories to The Mutapa Times, and earn your own monthly column.</strong></p>' +
+    '<p>Here is how to pitch:</p>' +
+    '<p>Email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a> with the subject line <strong>Pitch: your story in one line</strong>. In three or four sentences tell us what the story is, why it matters now, and who you would talk to. If it is a fit, an editor will commission it and run it with your byline.</p>' +
+    btn(site + "/academy/learn/#/submit", "Submit an article now") +
+    '<p>We will send you a reminder each month so pitching becomes a habit. The contributors who show up regularly are the ones who get the column.</p>' +
+    '<p>Congratulations, and welcome to the newsroom.<br>The Mutapa Times</p>'
+  );
+}
+
+async function handleEnrol(p, env, ch) {
+  var name = (p.name || "").toString().trim().slice(0, 80);
+  var email = (p.email || "").toString().trim().slice(0, 120);
+  if (name.length < 2) return json({ error: "Name required" }, 400, ch);
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
+  if (!env.BREVO_API_KEY || !env.FROM_EMAIL) return json({ error: "Emailer not configured" }, 500, ch);
+
+  var site = env.SITE_URL || "https://mutapatimes.com";
+  var today = new Date().toISOString().slice(0, 10);
+  try {
+    await ensureAttributes(env);
+    var studentsList = await getOrCreateList(env, STUDENTS_LIST);
+    var newsletterList = env.NEWSLETTER_LIST_ID ? parseInt(env.NEWSLETTER_LIST_ID, 10) : null;
+    await upsertContact(env, email,
+      { FIRSTNAME: name.split(" ")[0], ACADEMY_SIGNUP: today, ACADEMY_WELCOME_STEP: 1 },
+      [studentsList, newsletterList]);
+  } catch (e) { console.error("enrol contact", e && e.message); }
+
+  try { await sendEmail(env, { to: [email], subject: "Welcome to The Mutapa Times Academy", html: welcomeHTML(name, site) }); }
+  catch (e) { console.error("welcome email", e && e.message); }
+  return json({ ok: true }, 200, ch);
+}
+
+async function handleComplete(p, env, ch) {
+  var name = (p.name || "").toString().trim().slice(0, 80);
+  var email = (p.email || "").toString().trim().slice(0, 120);
+  if (name.length < 2) return json({ error: "Name required" }, 400, ch);
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Valid email required" }, 400, ch);
+  if (!env.BREVO_API_KEY || !env.FROM_EMAIL) return json({ error: "Emailer not configured" }, 500, ch);
+
+  var site = env.SITE_URL || "https://mutapatimes.com";
+  var today = new Date().toISOString().slice(0, 10);
+  try {
+    await ensureAttributes(env);
+    var gradsList = await getOrCreateList(env, GRADUATES_LIST);
+    var newsletterList = env.NEWSLETTER_LIST_ID ? parseInt(env.NEWSLETTER_LIST_ID, 10) : null;
+    await upsertContact(env, email,
+      { FIRSTNAME: name.split(" ")[0], ACADEMY_DONE: true, ACADEMY_DONE_DATE: today, ACADEMY_LAST_PITCH: today },
+      [gradsList, newsletterList]);
+  } catch (e) { console.error("complete contact", e && e.message); }
+
+  try { await sendEmail(env, { to: [email], subject: "You did it. Now pitch The Mutapa Times.", html: completionHTML(name, site) }); }
+  catch (e) { console.error("completion email", e && e.message); }
+  return json({ ok: true }, 200, ch);
+}
+
 export default {
   async fetch(request, env) {
     var allowed = env.ALLOWED_ORIGIN || "https://mutapatimes.com";
@@ -144,6 +280,10 @@ export default {
     var p;
     try { p = await request.json(); } catch (e) { return json({ error: "Invalid JSON" }, 400, ch); }
 
+    // Lifecycle: capture a new student and send the welcome email.
+    if (p && p.kind === "enrol") return handleEnrol(p, env, ch);
+    // Lifecycle: mark a graduate and send the pitch invitation.
+    if (p && p.kind === "complete") return handleComplete(p, env, ch);
     // Final-capstone article submission: email it to the editors.
     if (p && p.kind === "submission") return sendSubmission(p, env, ch);
 

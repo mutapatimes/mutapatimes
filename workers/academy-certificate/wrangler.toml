@@ -13,6 +13,10 @@ compatibility_date = "2024-11-01"
 
 [vars]
 ALLOWED_ORIGIN = "https://mutapatimes.com"
+SITE_URL = "https://mutapatimes.com"
+# Students are also added to your briefings list so they receive the
+# newsletter. Match this to the BREVO_LIST_ID used by send_newsletter.py.
+NEWSLETTER_LIST_ID = "2"
 # Uses the same verified Brevo sender as the newsletter (news@mutapatimes.com)
 # with an Academy display name. Change the address only if you verify another.
 FROM_EMAIL = "The Mutapa Times Academy <news@mutapatimes.com>"
