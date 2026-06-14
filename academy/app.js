@@ -285,6 +285,7 @@
       var sc = computeScore();
       var cert = el("div", "ac-certcard");
       if (sc.pct >= PASS_MARK) {
+        notifyCompletion();
         cert.classList.add("pass");
         cert.appendChild(el("p", "ac-cert-eyebrow", "Course complete"));
         cert.appendChild(el("h2", null, "You passed with " + sc.pct + "%"));
@@ -577,32 +578,41 @@
     acts.appendChild(check); host.appendChild(acts);
   };
 
+  // Match: for each term, pick its match from a dropdown. Deterministic and
+  // reliable on touch and desktop (the old tap-one-then-the-other mechanic was
+  // fiddly), and the answers are graded together with a Check.
   RENDERERS.match = function (host, ex, done, next, rec) {
-    host.appendChild(el("p", "ac-q", ex.q + "  (tap a term, then its match)"));
-    var grid = el("div", "ac-match"); host.appendChild(grid);
-    var left = el("div", "ac-match-col"), right = el("div", "ac-match-col");
-    grid.appendChild(left); grid.appendChild(right);
-    var lefts = ex.pairs.map(function (p, i) { return { t: p.a, i: i }; });
-    var rights = shuffle(ex.pairs.map(function (p, i) { return { t: p.b, i: i }; }));
-    var sel = null, matched = 0, wrong = 0;
-    function mkBtn(item, col) {
-      var b = el("button", "ac-chip"); b.type = "button"; b.textContent = item.t; b.dataset.i = item.i; b.dataset.col = col;
-      b.addEventListener("click", function () {
-        if (b.classList.contains("is-matched")) return; Sound.play("tap");
-        if (!sel) { clearSel(); sel = b; b.classList.add("is-sel"); return; }
-        if (sel === b) { b.classList.remove("is-sel"); sel = null; return; }
-        if (sel.dataset.col === b.dataset.col) { clearSel(); sel = b; b.classList.add("is-sel"); return; }
-        if (sel.dataset.i === b.dataset.i) {
-          sel.classList.remove("is-sel"); sel.classList.add("is-matched"); b.classList.add("is-matched");
-          sel = null; matched++; Sound.play("correct");
-          if (matched === ex.pairs.length) { done(); rec(wrong === 0); feedback(host, wrong === 0, ex.explain, next, { label: wrong === 0 ? "All matched. " : "Matched, with a few misses. " }); }
-        } else { wrong++; flash(b, false); flash(sel, false); Sound.play("wrong"); buzz(50); var s = sel; sel = null; s.classList.remove("is-sel"); }
+    host.appendChild(el("p", "ac-q", ex.q));
+    host.appendChild(el("p", "ac-sub", ex.instruction || "Choose the correct match for each item, then check."));
+    var options = shuffle(ex.pairs.map(function (p, i) { return { label: p.b, i: i }; }));
+    var rows = el("div", "ac-match2"); host.appendChild(rows);
+    var selects = [], check;
+    ex.pairs.forEach(function (p, i) {
+      var row = el("div", "ac-match2-row");
+      row.appendChild(el("div", "ac-match2-term", p.a));
+      var wrap = el("div", "ac-match2-pick");
+      var sel = document.createElement("select"); sel.className = "ac-match2-select";
+      var def = document.createElement("option"); def.value = ""; def.textContent = "Choose the match..."; def.disabled = true; def.selected = true;
+      sel.appendChild(def);
+      options.forEach(function (o) { var opt = document.createElement("option"); opt.value = String(o.i); opt.textContent = o.label; sel.appendChild(opt); });
+      sel.dataset.correct = String(i);
+      sel.addEventListener("change", function () { Sound.play("tap"); if (selects.every(function (s) { return s.value !== ""; })) check.disabled = false; });
+      selects.push(sel); wrap.appendChild(sel); row.appendChild(wrap); rows.appendChild(row);
+    });
+    var acts = el("div", "ac-actions");
+    check = el("button", "ac-btn", "Check"); check.disabled = true;
+    check.addEventListener("click", function () {
+      var ok = true;
+      selects.forEach(function (s, ri) {
+        s.disabled = true;
+        var right = s.value === s.dataset.correct;
+        var row = s.parentNode.parentNode;
+        row.classList.add(right ? "is-correct" : "is-wrong");
+        if (!right) { ok = false; row.appendChild(el("p", "ac-match2-fix", "Correct match: " + ex.pairs[ri].b)); }
       });
-      return b;
-    }
-    function clearSel() { grid.querySelectorAll(".is-sel").forEach(function (n) { n.classList.remove("is-sel"); }); }
-    lefts.forEach(function (it) { left.appendChild(mkBtn(it, "L")); });
-    rights.forEach(function (it) { right.appendChild(mkBtn(it, "R")); });
+      check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next, { label: ok ? "All matched. " : "Some misses, see the corrections. " });
+    });
+    acts.appendChild(check); host.appendChild(acts);
   };
 
   RENDERERS.categorize = function (host, ex, done, next, rec) {
@@ -843,10 +853,27 @@
   function dateStr() { var d = new Date(); return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
   function certId(name) { var s = (name || "") + "|" + dateStr(), h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return "MTA-" + h.toString(36).toUpperCase().slice(0, 8); }
 
+  // Tell the comms worker the learner has finished, so it sends the pitch
+  // invitation and starts the monthly reminders. Fires at most once.
+  function notifyCompletion() {
+    if (REVIEW || !CERT_ENDPOINT) return;
+    try { if (localStorage.getItem("mt_academy_completed") === "1") return; } catch (e) {}
+    var email = "", nm = state.name || "";
+    try { email = localStorage.getItem("mt_academy_email") || ""; if (!nm) nm = localStorage.getItem("mt_academy_name") || ""; } catch (e) {}
+    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || nm.length < 2) return;
+    try {
+      fetch(CERT_ENDPOINT, { method: "POST", keepalive: true, headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ kind: "complete", name: nm, email: email }) })
+        .then(function (r) { if (r && r.ok) { try { localStorage.setItem("mt_academy_completed", "1"); } catch (e) {} } })
+        .catch(function () {});
+    } catch (e) {}
+  }
+
   function renderCertificate() {
     if (!certEligible()) { go("#/"); return; }
     leaveExam();
     clear(view); renderChips();
+    notifyCompletion();
     var sc = computeScore();
 
     var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← Back");
@@ -898,7 +925,7 @@
       eb.disabled = true; est.innerHTML = '<span class="ac-spin">Sending...</span>';
       fetch(CERT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name, email: email, score: sc.pct, date: dateStr(), id: certId(name) }) })
         .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-        .then(function () { est.innerHTML = '<span class="ac-ok">Sent. Check your inbox.</span>'; Sound.play("complete"); })
+        .then(function () { est.innerHTML = '<span class="ac-ok">Sent. Check your inbox.</span>'; Sound.play("complete"); try { localStorage.setItem("mt_academy_email", email); localStorage.setItem("mt_academy_name", name); } catch (e) {} notifyCompletion(); })
         .catch(function () { eb.disabled = false; est.innerHTML = '<span class="ac-err">Could not send. Try Download / Print instead.</span>'; });
     });
 
