@@ -390,3 +390,30 @@ body.ac-exam-running { padding-top: 2.1rem; }
 .ac-card-link { display: inline-block; margin-top: .7rem; font-weight: 700; color: var(--accent);
   text-decoration: none; border-bottom: 2px solid currentColor; padding-bottom: 1px; }
 .ac-card-link:hover { opacity: .82; }
+
+/* v9: make exam mode fully dark (cards, options, all interaction types) */
+body.ac-exam .ac-card { background: #1a1613; border-color: rgba(255,255,255,.14); }
+body.ac-exam .ac-card h2 { color: #f4ede0; }
+body.ac-exam .ac-q { color: #f4ede0; }
+body.ac-exam .ac-kicker { color: #9a9085; }
+body.ac-exam .ac-sub { color: #cfc6ba; }
+body.ac-exam .ac-explain { color: #cfc6ba; }
+body.ac-exam .ac-opt { background: #241f1b; color: #ece4d8; border-color: rgba(255,255,255,.18); }
+body.ac-exam .ac-opt:hover:not(:disabled) { border-color: #fff; }
+body.ac-exam .ac-cat-row { background: #1f1a16; border-color: rgba(255,255,255,.14); }
+body.ac-exam .ac-cat-text { color: #ece4d8; }
+body.ac-exam .ac-cat-btn { background: #2a241f; color: #ece4d8; border-color: rgba(255,255,255,.2); }
+body.ac-exam .ac-cat-btn.is-sel { background: #f4ede0; color: #1a1613; border-color: #f4ede0; }
+body.ac-exam .ac-order-row { background: #241f1b; border-color: rgba(255,255,255,.18); }
+body.ac-exam .ac-order-txt { color: #ece4d8; }
+body.ac-exam .ac-arrow { background: #2a241f; color: #ece4d8; border-color: rgba(255,255,255,.2); }
+body.ac-exam .ac-match .ac-chip, body.ac-exam .ac-bank .ac-chip, body.ac-exam .ac-pool .ac-chip { background: #2a241f; color: #ece4d8; border-color: rgba(255,255,255,.2); }
+body.ac-exam .ac-cloze, body.ac-exam .ac-tokens { color: #ece4d8; }
+body.ac-exam .ac-slot { background: #2a241f; color: #ece4d8; }
+body.ac-exam .ac-token { background: #2a241f; color: #ece4d8; }
+body.ac-exam .ac-dot { background: rgba(255,255,255,.22); }
+body.ac-exam textarea.ac-input { background: #241f1b; color: #ece4d8; border-color: rgba(255,255,255,.2); }
+body.ac-exam .ac-count, body.ac-exam .ac-status { color: #b8b0a6; }
+body.ac-exam .ac-done-inline h2 { color: #f4ede0; }
+body.ac-exam .ac-done-inline p { color: #cfc6ba; }
+body.ac-exam .ac-brief { background: #241f1b; color: #ece4d8; }
