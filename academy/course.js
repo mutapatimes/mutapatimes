@@ -359,7 +359,8 @@ window.COURSE = {
               body: [
                 "At the top sits the editor-in-chief or executive editor, who sets the standards and the overall direction. Below them a managing editor runs daily operations across the newsroom. These are strategy roles. They rarely handle an individual story coming in from outside.",
                 "If you want a specific story considered, the leadership is almost never your first contact. You want the people who run daily coverage."
-              ]
+              ],
+              chart: { type: "hierarchy", title: "The newsroom hierarchy", levels: [["Editor-in-chief"], ["Managing editor"], ["News and section editors"], ["Reporters", "Sub-editors", "Digital desk"]] }
             },
             {
               h: "The gatekeepers of daily coverage",
@@ -451,7 +452,8 @@ window.COURSE = {
               body: [
                 "Gathering: reporters, researchers and tips bring news in, from sources, documents, agencies and PR. Production: the desk checks, edits and shapes it, deciding placement and framing. Output: it is published, on air, in print, or online.",
                 "Quality control happens at each stage. A claim is checked before it becomes a fact, and copy is edited before it reaches a reader."
-              ]
+              ],
+              chart: { type: "flow", title: "How a story moves", items: ["Gathering", "Production", "Output"] }
             },
             {
               h: "Print and broadcast differ in production",
@@ -1545,7 +1547,8 @@ window.COURSE = {
               body: [
                 "A review of leading African outlets found that coverage of other African countries was thin, and clustered around a few dramatic events. Straight news made up about 80 percent of it, while in-depth features were under 10 percent.",
                 "Coverage concentrated on a handful of countries. Many barely appeared at all, and one whole region, Central Africa, hardly featured."
-              ]
+              ],
+              chart: { type: "bars", title: "How African coverage splits (approx.)", items: [{ label: "Straight news", value: 80 }, { label: "In-depth features", value: 10 }] }
             },
             {
               h: "Who set the agenda",
@@ -2315,7 +2318,8 @@ window.COURSE = {
               body: [
                 "Put the most important news first, then the key supporting facts, then quotes and detail, then background. A reader who stops after one paragraph should still have the story.",
                 "It is not the only shape, but it is the one to master first."
-              ]
+              ],
+              chart: { type: "pyramid", title: "The inverted pyramid", items: ["Most important news", "Key supporting facts", "Quotes and detail", "Background"] }
             },
             {
               h: "When to break it",
@@ -3847,7 +3851,8 @@ window.COURSE = {
               body: [
                 "One, describe the problem: how and why it happens. Two, what is already known: reliable data, facts and evidence, including how others have responded. Three, the lesson learned: a model someone else could actually repeat. Four, the limits: no solution is perfect, so name its weaknesses.",
                 "Miss the evidence and it is a feel-good story. Miss the limits and it is propaganda."
-              ]
+              ],
+              chart: { type: "pillars", title: "The four pillars", items: ["Describe the problem", "What is known (evidence)", "The lesson learned", "The limits"] }
             }
           ],
           exercises: [
@@ -3934,7 +3939,8 @@ window.COURSE = {
               body: [
                 "A report has three parts: a lead that draws the reader in, a body that explains the problem and the people in it, and a point that lands the conclusion. Alternate hard facts with quotes and narrative so it never reads like a textbook.",
                 "Write the headline last: striking, true, with a verb, and short. Then re-read and check everything."
-              ]
+              ],
+              chart: { type: "flow", title: "The reporting process", items: ["Topic", "Research", "Field", "Verify", "Write", "Headline"] }
             }
           ],
           exercises: [
@@ -4020,7 +4026,8 @@ window.COURSE = {
               body: [
                 "Prepare your questions and highlight one or two 'rescue pillars': the answers you must get no matter what. Ask open-ended questions (How, Why, Describe), not yes-or-no ones, and never cram several questions into one.",
                 "Create a calm atmosphere. You are there to understand, not to win an argument. Record, but also take notes."
-              ]
+              ],
+              chart: { type: "flow", title: "The three phases of an interview", items: ["Prepare", "Conduct", "Process"] }
             },
             {
               h: "After",
@@ -4105,7 +4112,8 @@ window.COURSE = {
               body: [
                 "A catchy, true title. A dateline: the place and date. A first sentence that answers what, who, when, where, how and why, because it decides whether a journalist reads on. A description that gives context.",
                 "Then quotes, starting with an ordinary person affected, then an official. An invitation or link for more. Background on you. And a contact person who actually answers the phone."
-              ]
+              ],
+              chart: { type: "flow", title: "Press release structure", items: ["Title", "Dateline", "Lead (5W)", "Context", "Quotes", "Contact"] }
             },
             {
               h: "Then place it",
@@ -4281,7 +4289,8 @@ window.COURSE = {
               body: [
                 "In the UK there are roughly 73,000 journalists, up from about 65,000 a few years earlier. But fewer work in traditional newspapers and magazines, around 30 percent, down from about 45 percent. The rest have spread into broadcasting, online, public relations and self-employment.",
                 "About 85 percent now make content for an online or digital platform, although print is still the main platform for many."
-              ]
+              ],
+              chart: { type: "bars", title: "Where journalists work and publish (approx.)", items: [{ label: "Make digital content", value: 85 }, { label: "In London and the south east", value: 65 }, { label: "In traditional press", value: 30 }] }
             },
             {
               h: "Where it is, what it pays",
@@ -4355,7 +4364,8 @@ window.COURSE = {
               body: [
                 "Journalism is highly qualified: most journalists have a degree, and a large majority hold a journalism qualification, with employers valuing accredited ones. But entry is expensive. Most new entrants did unpaid work experience, and many start with heavy student debt.",
                 "That cost keeps the trade less diverse and more middle-class than the population it serves, which is a problem for journalism, not just for would-be journalists."
-              ]
+              ],
+              chart: { type: "bars", title: "Who becomes a journalist (approx.)", items: [{ label: "Hold a degree or higher", value: 87 }, { label: "Hold a journalism qualification", value: 81 }, { label: "From a higher-occupation home", value: 72 }] }
             },
             {
               h: "Sourcing and trust",

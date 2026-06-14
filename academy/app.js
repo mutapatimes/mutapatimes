@@ -81,6 +81,55 @@
     for (var k = 0; k < li.length; k++) { if (li[k].id === lesson.id) { pos = k; break; } }
     return IMGBASE + IMG_POOL[pos % IMG_POOL.length];
   }
+
+  // ---------- reading-card diagrams (CSS/HTML only) ----------
+  function renderChart(ch) {
+    var fig = el("figure", "ac-chart ac-chart--" + ch.type);
+    if (ch.title) fig.appendChild(el("figcaption", "ac-chart-title", ch.title));
+    if (ch.type === "flow") {
+      var row = el("div", "ac-flow");
+      (ch.items || []).forEach(function (it, i) {
+        row.appendChild(el("span", "ac-flow-step", it));
+        if (i < ch.items.length - 1) row.appendChild(el("span", "ac-flow-arrow", "→"));
+      });
+      fig.appendChild(row);
+    } else if (ch.type === "hierarchy") {
+      (ch.levels || []).forEach(function (lvl) {
+        var r = el("div", "ac-hier-row");
+        lvl.forEach(function (n) { r.appendChild(el("span", "ac-hier-node", n)); });
+        fig.appendChild(r);
+      });
+    } else if (ch.type === "bars") {
+      (ch.items || []).forEach(function (it) {
+        var r = el("div", "ac-bar-row");
+        r.appendChild(el("span", "ac-bar-label", it.label));
+        var track = el("div", "ac-bar-track");
+        var fill = el("div", "ac-bar-fill");
+        fill.style.width = Math.max(3, Math.min(100, it.value)) + "%";
+        fill.appendChild(el("span", "ac-bar-val", (it.display != null ? it.display : it.value + "%")));
+        track.appendChild(fill); r.appendChild(track);
+        fig.appendChild(r);
+      });
+    } else if (ch.type === "pyramid") {
+      var n = (ch.items || []).length;
+      ch.items.forEach(function (it, i) {
+        var seg = el("div", "ac-pyr-seg", it);
+        seg.style.width = (100 - i * (n > 1 ? 52 / (n - 1) : 0)) + "%";
+        fig.appendChild(seg);
+      });
+    } else if (ch.type === "pillars") {
+      var pr = el("div", "ac-pillars");
+      (ch.items || []).forEach(function (it, i) {
+        var col = el("div", "ac-pillar");
+        col.appendChild(el("span", "ac-pillar-n", String(i + 1)));
+        col.appendChild(el("span", "ac-pillar-t", it));
+        pr.appendChild(col);
+      });
+      fig.appendChild(pr);
+    }
+    return fig;
+  }
+
   var xpChip = document.getElementById("xpChip");
   var streakChip = document.getElementById("streakChip");
   var soundBtn = document.getElementById("soundBtn");
@@ -358,6 +407,7 @@
         card.appendChild(el("p", "ac-kicker", "Read"));
         card.appendChild(el("h2", null, c.h));
         c.body.forEach(function (p) { card.appendChild(el("p", null, p)); });
+        if (c.chart) card.appendChild(renderChart(c.chart));
         if (c.link && c.link.href) {
           var a = document.createElement("a");
           a.className = "ac-card-link"; a.href = c.link.href; a.target = "_blank"; a.rel = "noopener noreferrer";
