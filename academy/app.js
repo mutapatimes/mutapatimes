@@ -303,7 +303,7 @@
     examMode = !!lesson.checkpoint && !REVIEW;
     var isExam = !!lesson.checkpoint;
     clearExamTimer(); document.body.classList.toggle("ac-exam", isExam);
-    clear(view); renderChips();
+    clear(view); renderChips(); window.scrollTo(0, 0);
 
     var top = el("div", "ac-lessontop");
     var back = el("button", "ac-back", "← All lessons");
@@ -371,6 +371,7 @@
     var exHost = el("section", "ac-card ac-exhost");
     view.appendChild(exHost);
 
+    if (!isExam) exHost.appendChild(el("p", "ac-readhint", "Read the section above first. Then start when you are ready."));
     var startWrap = el("div", "ac-actions");
     var startBtn = el("button", "ac-btn ac-btn--lg", isExam ? "Begin the exam" : ("Start the exercises (" + lesson.exercises.length + ")"));
     startWrap.appendChild(startBtn);

@@ -417,3 +417,21 @@ body.ac-exam .ac-count, body.ac-exam .ac-status { color: #b8b0a6; }
 body.ac-exam .ac-done-inline h2 { color: #f4ede0; }
 body.ac-exam .ac-done-inline p { color: #cfc6ba; }
 body.ac-exam .ac-brief { background: #241f1b; color: #ece4d8; }
+
+/* v10: mobile overflow fixes + reading readability */
+.ac-card, .ac-opt, .ac-cat-btn, .ac-chip, .ac-token, .ac-slot, .ac-btn, .ac-wrap { box-sizing: border-box; }
+.ac-opt, .ac-cat-btn, .ac-chip, .ac-token, .ac-order-txt, .ac-q, .ac-sub, .ac-cat-text, .ac-cloze { overflow-wrap: anywhere; }
+.ac-cat-btn { white-space: normal; max-width: 100%; }
+.ac-match-col { min-width: 0; }
+.ac-match .ac-chip { white-space: normal; }
+.ac-swipe-btns { flex-wrap: wrap; }
+.ac-swipe-btns .ac-btn { flex: 1 1 42%; min-width: 0; }
+.ac-pool { max-width: 100%; }
+/* reading: easier on the eye */
+.ac-card p { line-height: 1.62; }
+.ac-readhint { font-size: .85rem; color: #8a8a8a; margin: 0 0 .7rem; font-weight: 600; }
+body.ac-exam .ac-readhint { color: #9a9085; }
+@media (max-width: 560px) {
+  .ac-match { grid-template-columns: 1fr; }
+  .ac-swipe-btns .ac-btn { flex: 1 1 100%; }
+}

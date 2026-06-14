@@ -1535,6 +1535,79 @@ window.COURSE = {
           ]
         },
         {
+          id: "africa-evidence",
+          title: "The evidence on African coverage",
+          minutes: 8,
+          intro: "A continent-wide study measured how African media cover Africa. Read what it found, then test yourself on the detail.",
+          cards: [
+            {
+              h: "What the study found",
+              body: [
+                "A review of leading African outlets found that coverage of other African countries was thin, and clustered around a few dramatic events. Straight news made up about 80 percent of it, while in-depth features were under 10 percent.",
+                "Coverage concentrated on a handful of countries. Many barely appeared at all, and one whole region, Central Africa, hardly featured."
+              ]
+            },
+            {
+              h: "Who set the agenda",
+              body: [
+                "Facing tight budgets, outlets leaned on Western wire agencies. Agencies supplied close to half of all stories about African countries, and only about a fifth of those came from African agencies.",
+                "African success and innovation, such as mobile money, were almost absent, and the voices of ordinary people were often missing, or used only to reinforce a negative frame."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "In the study, agencies supplied roughly what share of stories about African countries?",
+              options: ["About one in ten", "Close to half, and only about a fifth of those from African agencies", "All of them", "None, outlets wrote everything themselves"],
+              answer: 1,
+              explain: "Agencies supplied close to half, and only about a fifth of those were African, so non-Africans often set the agenda."
+            },
+            {
+              type: "mcq",
+              q: "Which countries were covered the most?",
+              options: ["Lesotho, Eritrea and Chad", "Nigeria, South Africa and Tanzania", "Egypt, Morocco and Tunisia", "Seychelles, Comoros and Mauritius"],
+              answer: 1,
+              explain: "A few large countries dominated, led by Nigeria, South Africa and Tanzania, while many others barely featured."
+            },
+            {
+              type: "mcq",
+              q: "How did straight news compare with in-depth features?",
+              options: ["Features dominated at 80 percent", "News was about 80 percent, features under 10 percent", "They were roughly equal", "There was no news, only opinion"],
+              answer: 1,
+              explain: "Event-driven news swamped context-rich features, so the continent was told through flashpoints."
+            },
+            {
+              type: "mcq",
+              q: "Which region hardly featured in regional coverage at all?",
+              options: ["Southern Africa", "East Africa", "Central Africa", "West Africa"],
+              answer: 2,
+              explain: "Central Africa barely appeared, which makes original reporting there especially valuable."
+            },
+            {
+              type: "mcq",
+              q: "When a single dramatic story makes up about 71 percent of one country's coverage, the danger is that:",
+              options: ["readers learn too much about it", "readers come to define the whole country by that one event", "the story is too well sourced", "nothing, it is good coverage"],
+              answer: 1,
+              explain: "Over-reliance on one event flattens a country into a single, often negative, impression."
+            },
+            {
+              type: "multi",
+              q: "Which fixes did the study suggest? Select all.",
+              options: ["Pool stories and multimedia between newsrooms", "Build networks of editors and journalists", "Invest in original reporting", "Rely more heavily on Western wires"],
+              answers: [0, 1, 2],
+              explain: "Pooling, networks and investment widen coverage. Leaning harder on Western wires is the problem, not the fix."
+            },
+            {
+              type: "mcq",
+              q: "How were African success and innovation, like mobile money, treated in coverage?",
+              options: ["Over-covered", "Almost entirely missing", "Covered fairly", "Covered only in features"],
+              answer: 1,
+              explain: "Success and innovation were among the most consistently missing stories."
+            }
+          ]
+        },
+        {
           id: "cp-africa",
           title: "Reporting Africa",
           checkpoint: true,
@@ -3746,6 +3819,145 @@ window.COURSE = {
               ],
               model: "Promise: a weekly newsletter for Zimbabweans in the UK on the money side of diaspora life, sending, saving and supporting family back home. Name: Pounds and Home. Cadence: every Thursday morning. First issue headline: The real cost of sending GBP100 to Harare. Summary: a plain comparison of five transfer routes, what each actually costs after fees and rate, and the one most families get wrong.",
               exerciseId: "substack-plan-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "real-critique",
+      title: "Real-world critique",
+      summary: "Two more real press releases. Read the source, find the story, and avoid being a stenographer.",
+      lessons: [
+        {
+          id: "critique-stanbic",
+          title: "Critique a bank's release",
+          minutes: 12,
+          intro: "A real bank press release. Find the story inside the spin, and decide what you would check before a word is published.",
+          cards: [
+            {
+              h: "The brief",
+              body: ["Stanbic Bank Zimbabwe has issued a release about its role in financing the mining sector and renewable energy. Read it in full, then work the critique below."]
+            },
+            {
+              h: "The release (key points)",
+              body: [
+                "Stanbic Bank Zimbabwe says it is committed to supporting the country's power needs with 'future-fit, sustainable financing' for renewable energy, especially for mining. Its chief executive says the bank has 'consistently played a catalytic role' in the sector despite challenges like power cuts.",
+                "It stresses the bank's place in the Standard Bank Group, 'Africa's largest banking group by assets', and quotes two of its own executives on AI and ESG. No mining client, energy expert or independent voice is quoted, and no figures are given for actual loans or projects."
+              ],
+              link: { href: "https://www.stanbicbank.co.zw/zimbabwe/personal/About-us/Press-Releases/STANBIC-BANK-COMMITTED-TO-CONTINUE-PLAYING-A-PIVOTAL-ROLE-IN-ZIMBABWE%E2%80%99S-MINING-SECTOR", label: "Read Stanbic's full press release" }
+            }
+          ],
+          exercises: [
+            {
+              type: "highlight",
+              q: "Tap the spin.",
+              instruction: "Tap the self-praising words a reporter should not repeat as fact.",
+              tokens: ["Stanbic", "has", "consistently", "played", "a", "catalytic", "role", "in", "the", "sector"],
+              targets: [2, 5, 6],
+              explain: "Consistently and catalytic role are the bank praising itself. Report what it actually financed, not how it describes itself."
+            },
+            {
+              type: "mcq",
+              q: "The release is built almost entirely on quotes from whom?",
+              options: ["Independent experts", "The bank's own executives", "Mining workers", "Government regulators"],
+              answer: 1,
+              explain: "Only bank executives speak. A fair story needs mining clients, energy experts and independent voices."
+            },
+            {
+              type: "categorize",
+              q: "Sort statements from the release.",
+              buckets: [{ id: "fact", label: "Checkable fact" }, { id: "spin", label: "Spin to attribute" }],
+              items: [
+                { text: "The Standard Bank Group operates in more than 20 African countries", bucket: "fact" },
+                { text: "Power cuts disrupt mining production", bucket: "fact" },
+                { text: "The bank plays a catalytic role", bucket: "spin" },
+                { text: "Its financing is future-fit", bucket: "spin" }
+              ],
+              explain: "Verifiable claims can be checked and reported. Self-description is spin to attribute, not to state as fact."
+            },
+            {
+              type: "mcq",
+              q: "What is the genuinely newsworthy, checkable angle?",
+              options: ["The bank's pride in its work", "Whether it has actually financed renewable projects for mines, and at what scale", "How large the Standard Bank Group is", "The executives' job titles"],
+              answer: 1,
+              explain: "The story is the substance: real deals, real money, real impact, not the bank's self-image."
+            },
+            {
+              type: "multi",
+              q: "What would you verify or seek before publishing? Select all.",
+              options: ["Actual loan amounts and named projects", "An independent view on whether the financing materialised", "Mining clients' own experience", "The bank's high-resolution logo"],
+              answers: [0, 1, 2],
+              explain: "Evidence, independent assessment and affected voices make it journalism. The logo does not."
+            },
+            {
+              type: "mcq",
+              q: "The executives call ESG 'no longer optional' and AI 'transformative'. As a reporter you should:",
+              options: ["Quote it as proven fact", "Treat it as the bank's positioning and ask for concrete examples", "Leave it out because it is complex", "Praise the bank's vision"],
+              answer: 1,
+              explain: "Buzzwords are positioning. Press for specifics: which projects, what spend, what results."
+            }
+          ]
+        },
+        {
+          id: "critique-official",
+          title: "Critique an official announcement",
+          minutes: 12,
+          intro: "A real government announcement. An official body has made a big decision and explained why. Report it fairly, do not just relay it.",
+          cards: [
+            {
+              h: "The brief",
+              body: ["A government department has announced that a minister has dissolved the board of a public arts body, citing an unresolved pay dispute and concerns over its spending. Read the announcement, then work the critique. This is about handling an official source well, not the politics."]
+            },
+            {
+              h: "The announcement (key points)",
+              body: [
+                "The release says the minister used powers under the relevant Act to dissolve the body's council with immediate effect, after a long-running dispute over staff bonuses and what it calls financial distress. It says the minister had set a deadline and framework that were not met.",
+                "It also raises concerns about the body's spending, including recruitment fees and devices for council members, and says these will be reviewed. Every account in the release comes from the minister and the department. No member of the dissolved council, and none of the affected staff, is quoted."
+              ],
+              link: { href: "https://www.dsac.gov.za/Minister%20McKenzie%20dissolves%20the%20Council%20of%20the%20National%20Arts%20Council%20of%20South%20Africa", label: "Read the full announcement" }
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "The release gives only the minister's account of why the council was dissolved. Your first move is to:",
+              options: ["Publish it as the full story", "Seek a response from the dissolved council and the affected staff", "Assume the minister is wrong", "Wait for it to appear elsewhere"],
+              answer: 1,
+              explain: "One side's account is a starting point. Fairness means getting the response of those affected."
+            },
+            {
+              type: "mcq",
+              q: "The release says spending concerns 'appear difficult to reconcile' and will be reviewed. You should report these as:",
+              options: ["Proven misconduct", "Allegations to be verified, attributed to the department", "Irrelevant detail", "Your own conclusion"],
+              answer: 1,
+              explain: "Until they are tested, they are claims under review, attributed, not findings of wrongdoing."
+            },
+            {
+              type: "categorize",
+              q: "Sort statements from the release.",
+              buckets: [{ id: "fact", label: "Verifiable action or fact" }, { id: "claim", label: "Allegation or intention" }],
+              items: [
+                { text: "The minister dissolved the council with immediate effect", bucket: "fact" },
+                { text: "A new council will be appointed", bucket: "claim" },
+                { text: "The spending was difficult to reconcile", bucket: "claim" },
+                { text: "There was a long-running pay dispute", bucket: "fact" }
+              ],
+              explain: "A decision taken and a stated dispute are facts. A promised appointment and a judgement on spending are an intention and an allegation."
+            },
+            {
+              type: "multi",
+              q: "Who else should you contact for a fair story? Select all.",
+              options: ["The dissolved council members", "The affected staff or their union", "An independent expert on public-body governance", "A rival body for gossip"],
+              answers: [0, 1, 2],
+              explain: "Reach the people affected and an independent expert. Gossip from a rival is not sourcing."
+            },
+            {
+              type: "mcq",
+              q: "An official press release, however authoritative, is:",
+              options: ["The final word", "One source's account, to be verified and balanced like any other", "Always misleading", "Only usable as opinion"],
+              answer: 1,
+              explain: "Officials are a source, not the story. Verify and balance, as with anyone."
             }
           ]
         }
