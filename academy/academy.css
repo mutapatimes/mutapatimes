@@ -371,3 +371,17 @@ body.ac-exam-running { padding-top: 2.1rem; }
 .ac-exam-eg .ac-opt { background: #241f1b; color: #ece4d8; border-color: rgba(255,255,255,.18); cursor: default; }
 .ac-exam-eg .ac-opt.is-correct { background: #143a22; border-color: #1a7f44; color: #d7f0df; }
 .ac-exam-eg .ac-explain { color: #cfc6ba; }
+
+/* ============================================================
+   v7: categorize redesign (choose a category per item)
+   ============================================================ */
+.ac-cat { display: grid; gap: .6rem; margin: 0 0 .3rem; }
+.ac-cat-row { border: 1.5px solid var(--rule); background: #fff; border-radius: 10px; padding: .75rem .85rem; }
+.ac-cat-text { font-size: .96rem; margin: 0 0 .55rem; line-height: 1.4; }
+.ac-cat-opts { display: flex; flex-wrap: wrap; gap: .4rem; }
+.ac-cat-btn { font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; border: 1.5px solid var(--rule);
+  background: var(--bg); color: var(--ink); border-radius: 99px; padding: .4rem .85rem; transition: background .12s, border-color .12s, color .12s; }
+.ac-cat-btn:hover:not(:disabled) { border-color: var(--ink); }
+.ac-cat-btn.is-sel { background: var(--ink); color: #fff; border-color: var(--ink); }
+.ac-cat-btn.is-correct { background: #eaf6ee; border-color: #1a7f44; color: #1a7f44; }
+.ac-cat-btn.is-wrong { background: #fbeaea; border-color: var(--accent); color: var(--accent); }

@@ -536,33 +536,45 @@
   };
 
   RENDERERS.categorize = function (host, ex, done, next, rec) {
-    host.appendChild(el("p", "ac-q", ex.q + (ex.instruction ? "" : "  (tap an item, then a category)")));
-    if (ex.instruction) host.appendChild(el("p", "ac-sub", ex.instruction));
-    var pool = el("div", "ac-pool"); host.appendChild(pool);
-    var sel = null;
-    var items = shuffle(ex.items.map(function (it, i) { return { it: it, i: i }; }));
-    items.forEach(function (o) {
-      var c = el("button", "ac-chip"); c.type = "button"; c.textContent = o.it.text; c.dataset.bucket = o.it.bucket; c.dataset.placed = "";
-      c.addEventListener("click", function () { if (c.dataset.locked) return; Sound.play("tap"); if (sel) sel.classList.remove("is-sel"); sel = c; c.classList.add("is-sel"); });
-      pool.appendChild(c);
+    host.appendChild(el("p", "ac-q", ex.q));
+    host.appendChild(el("p", "ac-sub", ex.instruction || "Choose a category for each item."));
+    var items = shuffle(ex.items.slice());
+    var choices = items.map(function () { return null; });
+    var rows = el("div", "ac-cat"); host.appendChild(rows);
+    var check;
+
+    items.forEach(function (it, ri) {
+      var row = el("div", "ac-cat-row");
+      row.appendChild(el("div", "ac-cat-text", it.text));
+      var opts = el("div", "ac-cat-opts");
+      ex.buckets.forEach(function (bk) {
+        var b = el("button", "ac-cat-btn"); b.type = "button"; b.textContent = bk.label; b.dataset.bucket = bk.id;
+        b.addEventListener("click", function () {
+          if (row.dataset.locked) return; Sound.play("tap");
+          choices[ri] = bk.id;
+          opts.querySelectorAll(".ac-cat-btn").forEach(function (x) { x.classList.remove("is-sel"); });
+          b.classList.add("is-sel");
+          if (choices.every(Boolean)) check.disabled = false;
+        });
+        opts.appendChild(b);
+      });
+      row.appendChild(opts);
+      rows.appendChild(row);
     });
-    var buckets = el("div", "ac-buckets"); host.appendChild(buckets);
-    ex.buckets.forEach(function (bk) {
-      var col = el("div", "ac-bucket");
-      col.appendChild(el("p", "ac-bucket-h", bk.label));
-      var drop = el("div", "ac-bucket-drop"); col.appendChild(drop);
-      drop.addEventListener("click", function () { if (!sel) return; Sound.play("tap"); sel.dataset.placed = bk.id; drop.appendChild(sel); sel.classList.remove("is-sel"); sel = null; });
-      buckets.appendChild(col);
-    });
+
     var acts = el("div", "ac-actions");
-    var check = el("button", "ac-btn", "Check");
+    check = el("button", "ac-btn", "Check"); check.disabled = true;
     check.addEventListener("click", function () {
-      var all = host.querySelectorAll(".ac-pool .ac-chip, .ac-bucket-drop .ac-chip");
       var ok = true;
-      all.forEach(function (c) {
-        c.dataset.locked = "1"; c.classList.remove("is-sel");
-        var right = c.dataset.placed === c.dataset.bucket;
-        c.classList.add(right ? "is-correct" : "is-wrong"); if (!right) ok = false;
+      rows.querySelectorAll(".ac-cat-row").forEach(function (row, ri) {
+        row.dataset.locked = "1";
+        var correctBucket = items[ri].bucket;
+        if (choices[ri] !== correctBucket) ok = false;
+        row.querySelectorAll(".ac-cat-btn").forEach(function (b) {
+          b.disabled = true; b.classList.remove("is-sel");
+          if (b.dataset.bucket === correctBucket) b.classList.add("is-correct");
+          else if (b.dataset.bucket === choices[ri]) b.classList.add("is-wrong");
+        });
       });
       check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next);
     });
