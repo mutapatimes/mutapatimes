@@ -1476,6 +1476,249 @@ window.COURSE = {
       ]
     },
     {
+      id: "getting-hired",
+      title: "Getting hired",
+      summary: "Build a CV and cover letter that get a journalist noticed, and avoid the mistakes that get applications binned.",
+      lessons: [
+        {
+          id: "journalism-cv",
+          title: "Your journalism CV",
+          minutes: 8,
+          intro: "Your CV is your pitch. It has to show, fast, that you have a journalist's skills and instincts.",
+          cards: [
+            {
+              h: "What a journalism CV must contain",
+              body: [
+                "Your name and contact details with a link to your portfolio. A short personal statement: your pitch in one paragraph. A tailored list of key skills. Your experience in reverse chronological order, with the results you achieved, not just duties. Then education, and any awards.",
+                "Keep it to one or two pages. Editors skim, so put the most important things on the first page."
+              ]
+            },
+            {
+              h: "Show, do not tell",
+              body: [
+                "Do not just list reporting and writing. In journalism those are assumed. Show range and impact instead: the kinds of stories you covered, the exclusives you broke, the numbers you moved. Grew site traffic by 30 percent lands harder than improved engagement.",
+                "Be specific. Instead of works to deadlines, write produced a weekly feature series, coordinating interviews and edits to meet a strict schedule."
+              ]
+            },
+            {
+              h: "Tailor it, and lead with your niche",
+              body: [
+                "One CV does not fit every job. Keep a master copy with everything, then build a job-specific version that mirrors the language of each advert and foregrounds the most relevant work. Highlight your specialism, whether that is courts, business, data or video, so you stand out.",
+                "An editor should see in seconds why you fit this role, not journalism in general."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "What should always sit near the top of a journalist's CV alongside contact details?",
+              options: [
+                "Your school exam grades",
+                "A link to your portfolio of work",
+                "A list of hobbies",
+                "Your date of birth"
+              ],
+              answer: 1,
+              explain: "Editors want to see your work. A portfolio link is essential and belongs where it is easy to find."
+            },
+            {
+              type: "mcq",
+              q: "What is a sensible maximum length for a CV?",
+              options: ["Half a page", "One or two pages", "Five pages", "As long as possible"],
+              answer: 1,
+              explain: "One to two pages. Editors skim, so keep it tight and put the strongest material first."
+            },
+            {
+              type: "mcq",
+              q: "Which bullet point is strongest on a journalism CV?",
+              options: [
+                "Responsible for writing and reporting",
+                "Good at working to deadlines",
+                "Broke a story on unreported campus assaults that led to new safety measures",
+                "Did various tasks at the newspaper"
+              ],
+              answer: 2,
+              explain: "Show, do not tell. A specific, high-impact achievement beats vague duties every time."
+            },
+            {
+              type: "multi",
+              q: "Which belong on a journalism CV? Select all.",
+              options: [
+                "A one-paragraph personal statement",
+                "A tailored list of key skills",
+                "Experience with the results you achieved",
+                "A long unfocused list of every task you have ever done"
+              ],
+              answers: [0, 1, 2],
+              explain: "Statement, tailored skills and achievement-led experience all belong. A laundry list of tasks does not."
+            },
+            {
+              type: "mcq",
+              q: "Why tailor your CV to each job?",
+              options: [
+                "To make it longer",
+                "So the editor sees quickly why you fit that specific role",
+                "Because it is required by law",
+                "To hide your experience"
+              ],
+              answer: 1,
+              explain: "A targeted CV mirrors the advert and foregrounds the most relevant work, so your fit is obvious fast."
+            }
+          ]
+        },
+        {
+          id: "cover-letter",
+          title: "The cover letter",
+          minutes: 7,
+          intro: "The cover letter expands your CV and proves you can write snappy, persuasive copy. Make it count.",
+          cards: [
+            {
+              h: "What the cover letter does",
+              body: [
+                "It introduces you and the role you want, highlights your most relevant experience and skills, and explains why you fit this newsroom specifically. It is also a live sample of your writing, so it must be sharp. Around 300 to 400 words is plenty.",
+                "Lead with who you are and what you cover, then build the case. No waffle: editors have no time for it."
+              ]
+            },
+            {
+              h: "Show you have done your homework",
+              body: [
+                "The strongest letters prove you actually read the publication. Refer to a recent piece or strand of coverage and say why it caught your eye, then connect it to the work you want to do. That is why them, not just why you.",
+                "Close with confidence: a polite, direct request for an interview or a conversation."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "Roughly how long should a journalism cover letter be?",
+              options: ["Two or three pages", "Around 300 to 400 words", "A single sentence", "There is no limit"],
+              answer: 1,
+              explain: "Around 300 to 400 words. Tight and persuasive. You can expand in the interview."
+            },
+            {
+              type: "mcq",
+              q: "What is the strongest way to show you fit a particular newsroom?",
+              options: [
+                "Say you are passionate and hard working",
+                "Reference a recent piece they ran and connect it to the work you want to do",
+                "List every job you have ever had",
+                "Use a flashy design"
+              ],
+              answer: 1,
+              explain: "Referencing their actual work proves you did your homework and shows genuine, specific interest."
+            },
+            {
+              type: "mcq",
+              q: "How should a cover letter end?",
+              options: [
+                "By apologising for taking their time",
+                "With a confident, polite request for an interview",
+                "With no sign-off at all",
+                "By repeating your whole CV"
+              ],
+              answer: 1,
+              explain: "Close with confidence and a clear call to action. You are asking for a conversation, so ask."
+            },
+            {
+              type: "write",
+              q: "Write your cover-letter opening.",
+              brief: [
+                "Write the first three or four sentences of a cover letter applying to write for The Mutapa Times.",
+                "Say who you are and what you cover, reference what draws you to this newsroom specifically, and keep it sharp."
+              ],
+              checklist: [
+                "Does the first line say who you are and what you cover?",
+                "Does it name something specific about The Mutapa Times, not generic flattery?",
+                "Is the writing tight, with no waffle?",
+                "Would an editor want to read the next paragraph?"
+              ],
+              model: "I am a reporter covering the economics of diaspora life, with bylines on remittances and small-business migration. What draws me to The Mutapa Times is that you report Zimbabwe for Zimbabweans rather than explaining it to outsiders, and your recent coverage of crypto registration rules is exactly the kind of money story I want to dig into. I would bring sourced, on-the-ground reporting and a steady diaspora-money beat.",
+              exerciseId: "cover-letter-1"
+            }
+          ]
+        },
+        {
+          id: "cv-mistakes",
+          title: "Common CV mistakes",
+          minutes: 7,
+          intro: "Most applications fall down on the same handful of errors. Learn to avoid them.",
+          cards: [
+            {
+              h: "Skills, not just activities",
+              body: [
+                "Do not only say what you did in past jobs. Say what skills it built. Bar work means dealing with the public, building rapport fast and handling conflict. Work with money means numeracy and data. Repetitive work means patience and persistence. All of it transfers.",
+                "Every job also gives you insight into a part of society a newsroom may not know. That has value."
+              ]
+            },
+            {
+              h: "Typos are fatal in journalism",
+              body: [
+                "Spelling and grammar errors are not minor here. Some editors bin applications for a single typo, because attention to detail is the job. Check every name, of people, places and organisations. Watch homophones, apostrophes, and consistent style in your bullet points.",
+                "Proofread it, then have someone else proofread it. A flawless application is itself a writing sample."
+              ]
+            },
+            {
+              h: "Do not undersell yourself",
+              body: [
+                "Do not reduce a degree to two lines. Give a paragraph on what you actually learned and did: the student paper, media law, an investigation, research skills. And do not hide personal experience. Caring for family, being first to university, or coming from a community a newsroom does not represent are all real value.",
+                "Always link to your work. You do not need to be published to have a portfolio. Self-publishing shows initiative."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "How should you present a non-journalism job, like bar work, on a journalism CV?",
+              options: [
+                "Leave it off entirely",
+                "List only the tasks, like serving drinks",
+                "Highlight the transferable skills it built, like handling the public and conflict",
+                "Pretend it was a reporting job"
+              ],
+              answer: 2,
+              explain: "Focus on transferable skills. Dealing with people, pressure and money all matter to a journalist."
+            },
+            {
+              type: "mcq",
+              q: "Why are typos especially damaging on a journalism application?",
+              options: [
+                "They are not, editors ignore them",
+                "Because attention to detail is the job, so errors undercut your core claim",
+                "Because they make the CV longer",
+                "Only broadcast editors care"
+              ],
+              answer: 1,
+              explain: "Accuracy is the craft. A typo-riddled application contradicts the very skill you are selling."
+            },
+            {
+              type: "multi",
+              q: "Which of these are common CV mistakes to avoid? Select all.",
+              options: [
+                "Listing tasks instead of the skills you built",
+                "Generic cliches like hard working team player",
+                "Quantifying your achievements with real numbers",
+                "Reducing a three-year degree to two bare lines"
+              ],
+              answers: [0, 1, 3],
+              explain: "Tasks-not-skills, cliches and underselling your education are all mistakes. Quantifying achievements is good practice."
+            },
+            {
+              type: "mcq",
+              q: "Do you need to have been professionally published to build a portfolio?",
+              options: [
+                "Yes, only published work counts",
+                "No, you can report and self-publish your own work to show initiative",
+                "Only if you have a degree",
+                "Portfolios are not used in journalism"
+              ],
+              answer: 1,
+              explain: "Reporting independently and publishing it yourself shows initiative and gives editors real work to judge."
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "independent",
       title: "Going independent",
       summary: "Take everything you have learned and launch your own publication: a Substack newsletter.",
