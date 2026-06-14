@@ -653,6 +653,104 @@ window.COURSE = {
           ]
         },
         {
+          id: "journalism-roles",
+          title: "The many jobs in journalism",
+          minutes: 8,
+          intro: "Journalism is not one job. The official list runs to dozens of titles, from sub-editor to foreign correspondent. Learn the main families and what they do.",
+          cards: [
+            {
+              h: "Five families of roles",
+              body: [
+                "Management sets direction: the editor, editorial director and managing editor. Section and desk editors run an area: the news editor, sports editor, business editor and picture editor. Reporters and writers gather and tell the story: reporters, correspondents, feature writers, columnists.",
+                "Broadcast adds its own roles, such as the broadcast journalist, producer and presenter. And production makes it ready to publish: the sub-editor, production editor and designer. Most titles fall into one of these families."
+              ],
+              chart: { type: "hierarchy", title: "The families of journalism jobs", levels: [["Editor and editorial director"], ["News, sports, business, picture editors"], ["Reporters, correspondents, columnists", "Sub-editors, designers, producers"]] }
+            },
+            {
+              h: "Bylines and specialists you will meet",
+              body: [
+                "A correspondent is a reporter who owns a beat or a place: foreign, business, sports, courts, technical. A leader writer writes the paper's official editorial opinion, its 'leader'. A columnist or commentator gives a regular personal take, and a critic reviews. A picture editor chooses and commissions the photographs, while a sub-editor checks and tightens copy and writes the headlines.",
+                "Newer titles like multimedia journalist, digital journalist and online journalist reflect the shift to many platforms. Older, narrow ones, like the turf correspondent who covers horse racing or the crossword compiler, show how specialised the trade can get."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "match",
+              q: "Match each role to what they do.",
+              pairs: [
+                { a: "Sub-editor", b: "Checks, tightens and headlines copy before it runs" },
+                { a: "Picture editor", b: "Chooses and commissions the photographs" },
+                { a: "Leader writer", b: "Writes the paper's official editorial opinion" },
+                { a: "Foreign correspondent", b: "Reports from another country" },
+                { a: "Court reporter", b: "Covers cases at the courts" }
+              ],
+              explain: "Each title is a distinct job. Knowing them tells you who to pitch and who does what."
+            },
+            {
+              type: "categorize",
+              q: "Sort these job titles by family.",
+              buckets: [
+                { id: "write", label: "Reporting and writing" },
+                { id: "prod", label: "Production" },
+                { id: "manage", label: "Management" }
+              ],
+              items: [
+                { text: "Reporter", bucket: "write" },
+                { text: "Feature writer", bucket: "write" },
+                { text: "Sub-editor", bucket: "prod" },
+                { text: "Production editor", bucket: "prod" },
+                { text: "Managing editor", bucket: "manage" },
+                { text: "Editorial director", bucket: "manage" }
+              ],
+              explain: "Writers gather and tell the story, production prepares it to publish, and management sets direction."
+            },
+            {
+              type: "mcq",
+              q: "A 'leader writer' writes:",
+              options: [
+                "The front-page lead story",
+                "The paper's official editorial opinion",
+                "Only the headlines",
+                "The events listings"
+              ],
+              answer: 1,
+              explain: "The 'leader' is the publication's own editorial line, written anonymously for the title."
+            },
+            {
+              type: "mcq",
+              q: "A sub-editor mainly:",
+              options: [
+                "Writes the main news articles",
+                "Checks and tightens copy and writes the headlines",
+                "Chooses the photographs",
+                "Sells advertising"
+              ],
+              answer: 1,
+              explain: "Subs are the last line of quality control: clean copy, accurate headlines, correct layout."
+            },
+            {
+              type: "mcq",
+              q: "A 'correspondent' is a reporter who:",
+              options: [
+                "Only writes letters",
+                "Specialises in a particular beat or place, such as foreign, business or courts",
+                "Never leaves the office",
+                "Edits other people's work"
+              ],
+              answer: 1,
+              explain: "Correspondents own a subject or a region and build deep contacts in it."
+            },
+            {
+              type: "multi",
+              q: "Which titles were created by the shift to digital and multiple platforms? Select all.",
+              options: ["Multimedia journalist", "Digital journalist", "Online journalist", "Leader writer"],
+              answers: [0, 1, 2],
+              explain: "Multimedia, digital and online journalist are modern. The leader writer is an old role."
+            }
+          ]
+        },
+        {
           id: "cp-newsroom",
           title: "Inside the newsroom",
           checkpoint: true,
