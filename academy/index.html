@@ -6,7 +6,7 @@
   <link rel="canonical" href="https://mutapatimes.com/academy/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#1a1a1a">
-  <meta name="description" content="A self-paced online journalism course for Zimbabwe, the diaspora and the wider continent. 13 units, interactive lessons, checkpoints and a certificate. Pay with EcoCash, OneMoney or card.">
+  <meta name="description" content="A self-paced online journalism course for Zimbabwe, the diaspora and the wider continent. 13 units, interactive lessons, checkpoints and a certificate. Pay by card or PayPal.">
   <!-- Flip to index, follow when you launch publicly. -->
   <meta name="robots" content="noindex, follow">
   <link rel="apple-touch-icon" href="/icon.png?v=2">
@@ -41,10 +41,6 @@
     padding: .35rem .8rem; border-radius: 99px; margin-left: .6rem; }
   .al-paynote { font-size: .85rem; color: #6a6a6a; margin: .9rem 0 0; }
 
-  .al-refbanner { background: #f3f8f4; border: 1px solid #cfe6d6; border-radius: 12px; padding: .8rem 1rem;
-    margin: 0 0 1.4rem; font-weight: 600; color: #1a7f44; }
-  .al-refbanner[hidden] { display: none; }
-
   .al-section { margin: 2.4rem 0 0; }
   .al-h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.6rem; margin: 0 0 1rem;
     border-bottom: 2px solid var(--ink); padding-bottom: .4rem; }
@@ -59,21 +55,15 @@
   .al-stat b { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 2rem; color: var(--accent); line-height: 1; }
   .al-stat span { font-size: .82rem; color: #6a6a6a; }
 
-  /* Signup card */
-  .al-signup { background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; padding: 1.5rem 1.3rem; margin: 2.4rem 0 0; }
+  .al-signup { background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; padding: 1.5rem 1.3rem; margin: 2.4rem 0 0; text-align: center; }
   .al-signup h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.5rem; margin: 0 0 .3rem; }
   .al-signup .price { font-weight: 700; color: var(--accent); margin: 0 0 1.1rem; }
-  .al-field { margin: 0 0 .8rem; }
-  .al-field label { display: block; font-size: .82rem; font-weight: 700; color: #6a6a6a; margin: 0 0 .3rem; }
-  .al-input { width: 100%; font: inherit; border: 1.5px solid var(--rule); border-radius: 10px; padding: .8rem .9rem; background: #fff; color: var(--ink); }
-  .al-input:focus { outline: none; border-color: var(--ink); }
-  .al-pay { width: 100%; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700;
-    font-size: 1.05rem; padding: .95rem 1.4rem; border-radius: 99px; margin-top: .4rem; transition: opacity .15s; }
-  .al-pay:hover { opacity: .92; } .al-pay:disabled { opacity: .5; cursor: default; }
-  .al-methods { display: flex; flex-wrap: wrap; gap: .4rem; margin: .9rem 0 0; }
+  .al-pay { display: inline-block; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700;
+    font-size: 1.1rem; padding: 1rem 2rem; border-radius: 99px; text-decoration: none; transition: opacity .15s; }
+  .al-pay:hover { opacity: .92; }
+  .al-methods { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; margin: 1rem 0 0; }
   .al-method { font-size: .75rem; font-weight: 700; background: var(--bg); color: #4a4a4a; padding: .3rem .6rem; border-radius: 6px; }
   .al-status { font-size: .9rem; margin: .8rem 0 0; min-height: 1.2em; }
-  .al-status .err { color: var(--accent); font-weight: 600; }
   .al-status .ok { color: #1a7f44; font-weight: 700; }
   .al-fine { font-size: .78rem; color: #8a8a8a; margin: .8rem 0 0; }
 
@@ -102,8 +92,6 @@
       <a class="al-cta" href="#signup">Start the course <span class="al-pricechip" id="heroPrice">US$15</span></a>
       <p class="al-paynote">Pay once. Lifetime access. Visa, Mastercard, American Express, PayPal, Apple Pay and Google Pay.</p>
     </section>
-
-    <div class="al-refbanner" id="refBanner" hidden></div>
 
     <section class="al-section">
       <div class="al-stats">
@@ -141,60 +129,26 @@
     <section class="al-signup" id="signup">
       <h2>Start the course</h2>
       <p class="price" id="signupPrice">One-time payment of US$15. Lifetime access.</p>
-      <form id="payForm" novalidate>
-        <div class="al-field">
-          <label for="nm">Your full name</label>
-          <input class="al-input" id="nm" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda">
-        </div>
-        <div class="al-field">
-          <label for="em">Email address</label>
-          <input class="al-input" id="em" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com">
-        </div>
-        <button class="al-pay" id="payBtn" type="submit">Pay and start</button>
-      </form>
+      <a class="al-pay" id="buyBtn" href="#">Pay and start</a>
       <div class="al-methods">
         <span class="al-method">Visa</span><span class="al-method">Mastercard</span>
         <span class="al-method">Amex</span><span class="al-method">PayPal</span>
         <span class="al-method">Apple Pay</span><span class="al-method">Google Pay</span>
       </div>
       <p class="al-status" id="status"></p>
-      <p class="al-fine">By enrolling you agree to receive the Mutapa Times newsletter. You can unsubscribe any time. Payments are processed securely by Lemon Squeezy.</p>
+      <p class="al-fine">Secure checkout by Lemon Squeezy. By enrolling you agree to receive the Mutapa Times newsletter; unsubscribe any time.</p>
     </section>
 
     <section class="al-section" id="localpay">
       <h2 class="al-h2">Paying from Zimbabwe?</h2>
-      <p>Card or PayPal above is the quickest way in. If you would rather pay locally, by Mukuru, EcoCash or bank transfer, arrange it with us first, then enter the access code we send you to unlock the course straight away.</p>
-      <div class="al-card" style="margin-bottom:1rem">
-        <h3>How local payment works</h3>
-        <p id="localInstructions">Reply to any Mutapa Times newsletter email, or message us, to arrange local payment. Once we confirm it, we send you a one-time access code to enter below.</p>
-      </div>
-      <form id="codeForm" novalidate>
-        <div class="al-field"><label for="cnm">Your full name</label><input class="al-input" id="cnm" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda"></div>
-        <div class="al-field"><label for="cem">Email address</label><input class="al-input" id="cem" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com"></div>
-        <div class="al-field"><label for="ccode">Access code</label><input class="al-input" id="ccode" type="text" maxlength="32" placeholder="e.g. MT4F2A9"></div>
-        <button class="al-pay" id="codeBtn" type="submit">Unlock the course</button>
-      </form>
-      <p class="al-status" id="codeStatus"></p>
-      <div class="al-card" id="codeSuccess" hidden>
-        <h3>You're in</h3>
-        <p>Your access is unlocked on this device.</p>
-        <p><a class="al-cta" href="/academy/learn/">Start the course</a></p>
-        <div id="codeRefBox" hidden>
-          <p style="margin-top:1rem">Share your referral link. Friends get a discount and we credit you.</p>
-          <div style="display:flex;gap:.5rem">
-            <input class="al-input" id="codeRefLink" readonly>
-            <button type="button" id="codeCopy" style="background:var(--ink);color:#fff;border:0;border-radius:8px;padding:0 .9rem;cursor:pointer;font-weight:700">Copy</button>
-          </div>
-        </div>
-      </div>
+      <p>Card or PayPal above is the quickest way in. If you would rather pay locally, by Mukuru, EcoCash, bank transfer or cash, reply to any Mutapa Times newsletter email or message us to arrange it. Once we confirm your payment, we send you the link to start the course.</p>
     </section>
 
     <section class="al-faq">
       <h2 class="al-h2">Questions</h2>
-      <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere in the world. Pay with any Visa, Mastercard or American Express card, with PayPal, or with Apple Pay and Google Pay. Local EcoCash payment is coming later.</p></details>
+      <details><summary>How do I pay, and can I pay from anywhere?</summary><p>Yes, from anywhere in the world. Pay with any Visa, Mastercard or American Express card, with PayPal, or with Apple Pay and Google Pay. To pay locally in Zimbabwe, see the section above.</p></details>
       <details><summary>How long do I have access?</summary><p>It is a one-time payment with lifetime access. Learn at your own pace.</p></details>
       <details><summary>Do I get a certificate?</summary><p>Yes. Finish the course and pass the final exam at 80% to earn your certificate, which you can download or have emailed to you.</p></details>
-      <details><summary>Can I refer friends?</summary><p>Yes. After you join you get a personal referral link to share. Friends who use it get a discount, and we track every referral you send.</p></details>
     </section>
 
     <p class="al-foot">A project of <a href="/">The Mutapa Times</a>. Questions? Reply to any newsletter email and we will help.</p>
@@ -203,103 +157,26 @@
   <script>
   (function () {
     "use strict";
-    // ---- Config: set PAY_ENDPOINT to your deployed academy-pay Worker ----
-    var PAY_ENDPOINT = ""; // e.g. "https://academy-pay.NAME.workers.dev"
-    var PRICE = 15;        // one-time price
+    // ============================================================
+    //  THE ONLY THING YOU EDIT: paste your Lemon Squeezy product link
+    //  between the quotes below (from your Lemon Squeezy dashboard).
+    //  Example: "https://mutapatimes.lemonsqueezy.com/buy/abc-123"
+    // ============================================================
+    var BUY_LINK = "";
+    var PRICE = 15;        // change to your price (just for display)
     var CURRENCY = "US$";
-    var REF_DISCOUNT = 0.15; // 15% off for referred friends
 
     var priceStr = CURRENCY + PRICE;
     document.getElementById("heroPrice").textContent = priceStr;
+    document.getElementById("signupPrice").textContent = "One-time payment of " + priceStr + ". Lifetime access.";
 
-    // ---- Referral capture ----
-    var params = new URLSearchParams(location.search);
-    var ref = params.get("ref");
-    if (ref) {
-      try { sessionStorage.setItem("mt_academy_ref", ref); } catch (e) {}
-      var discounted = (PRICE * (1 - REF_DISCOUNT)).toFixed(2).replace(/\.00$/, "");
-      var rb = document.getElementById("refBanner");
-      rb.textContent = "A friend referred you. You get " + Math.round(REF_DISCOUNT * 100) + "% off: " + CURRENCY + discounted + " instead of " + priceStr + ".";
-      rb.hidden = false;
-      document.getElementById("heroPrice").textContent = CURRENCY + discounted;
-      document.getElementById("signupPrice").textContent = "One-time payment of " + CURRENCY + discounted + " (" + Math.round(REF_DISCOUNT * 100) + "% friend discount). Lifetime access.";
-    } else {
-      document.getElementById("signupPrice").textContent = "One-time payment of " + priceStr + ". Lifetime access.";
-    }
-    var storedRef = (function () { try { return sessionStorage.getItem("mt_academy_ref") || ref || ""; } catch (e) { return ref || ""; } })();
-
-    var form = document.getElementById("payForm");
+    var btn = document.getElementById("buyBtn");
     var status = document.getElementById("status");
-    var btn = document.getElementById("payBtn");
-
-    form.addEventListener("submit", function (e) {
+    btn.addEventListener("click", function (e) {
       e.preventDefault();
-      var name = document.getElementById("nm").value.trim();
-      var email = document.getElementById("em").value.trim();
-      if (name.length < 2) { status.innerHTML = '<span class="err">Please enter your name.</span>'; return; }
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { status.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
-      if (!PAY_ENDPOINT) {
-        status.innerHTML = '<span class="ok">Enrolment opens shortly. We have noted your interest, check your inbox soon.</span>';
-        return;
-      }
-      btn.disabled = true; status.textContent = "Setting up your secure payment...";
-      fetch(PAY_ENDPOINT, {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "create", name: name, email: email, ref: storedRef })
-      })
-      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (d) {
-        var u = d && (d.checkoutUrl || d.browserurl);
-        if (u && d.reference) {
-          try { localStorage.setItem("mt_academy_pending_ref", d.reference); } catch (e) {}
-          location.href = u;
-        } else { throw 0; }
-      })
-      .catch(function () { btn.disabled = false; status.innerHTML = '<span class="err">Could not start the payment. Please try again.</span>'; });
+      if (!BUY_LINK) { status.innerHTML = '<span class="ok">Enrolment opens shortly. Follow The Mutapa Times to hear first.</span>'; return; }
+      location.href = BUY_LINK;
     });
-
-    // ---- Local payment: redeem an access code ----
-    var codeForm = document.getElementById("codeForm");
-    if (codeForm) {
-      codeForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var name = document.getElementById("cnm").value.trim();
-        var email = document.getElementById("cem").value.trim();
-        var code = document.getElementById("ccode").value.trim();
-        var cs = document.getElementById("codeStatus");
-        var cb = document.getElementById("codeBtn");
-        if (name.length < 2) { cs.innerHTML = '<span class="err">Please enter your name.</span>'; return; }
-        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { cs.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
-        if (!code) { cs.innerHTML = '<span class="err">Please enter your access code.</span>'; return; }
-        if (!PAY_ENDPOINT) { cs.innerHTML = '<span class="err">Code redemption is not set up yet.</span>'; return; }
-        cb.disabled = true; cs.textContent = "Checking your code...";
-        fetch(PAY_ENDPOINT, {
-          method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ action: "redeem", code: code, name: name, email: email, ref: storedRef })
-        })
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          if (d && d.ok) {
-            try { if (d.token) localStorage.setItem("mt_academy_access", d.token); if (d.email) localStorage.setItem("mt_academy_email", d.email); } catch (e) {}
-            cs.textContent = ""; codeForm.hidden = true;
-            document.getElementById("codeSuccess").hidden = false;
-            if (d.referralCode) {
-              var link = location.origin + "/academy/?ref=" + encodeURIComponent(d.referralCode);
-              document.getElementById("codeRefLink").value = link;
-              document.getElementById("codeRefBox").hidden = false;
-              document.getElementById("codeCopy").addEventListener("click", function () {
-                var i = document.getElementById("codeRefLink"); i.select();
-                try { navigator.clipboard.writeText(i.value); } catch (e) {}
-                document.getElementById("codeCopy").textContent = "Copied";
-              });
-            }
-          } else {
-            cb.disabled = false; cs.innerHTML = '<span class="err">' + ((d && d.error) || "That code is not valid.") + '</span>';
-          }
-        })
-        .catch(function () { cb.disabled = false; cs.innerHTML = '<span class="err">Could not check the code. Please try again.</span>'; });
-      });
-    }
   })();
   </script>
 </body>

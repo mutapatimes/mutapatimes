@@ -256,3 +256,26 @@ same Worker URL as the landing page. Enter your `ADMIN_KEY`, choose how
 many codes, click Generate, and copy the codes to send to local buyers.
 The page is safe to leave online because nothing generates without the
 admin password (checked by the Worker). It is noindex.
+
+## SIMPLEST launch (no Worker) — current setup
+
+The landing page now uses Lemon Squeezy directly, with no Worker.
+
+To go live, you edit ONE line:
+1. In Lemon Squeezy, create your course product and copy its buy link.
+2. Open `academy/index.html`, find `var BUY_LINK = "";` near the bottom,
+   and paste your link between the quotes. Set `PRICE` for display.
+3. In Lemon Squeezy, set the product's "Redirect after purchase" to
+   `https://mutapatimes.com/academy/welcome/`.
+
+That's it. Buyer clicks "Pay and start" -> pays on Lemon Squeezy -> lands
+on the welcome page -> clicks into the course.
+
+Notes for this simple mode:
+- The course at `/academy/learn/` is open (the buy button is the front
+  door). Keep `REQUIRE_ACCESS = false` in `academy/app.js`.
+- Local buyers: arrange payment, then email them `/academy/learn/`.
+- Referrals: enable Lemon Squeezy's built-in affiliate feature if you
+  want referral links, handled entirely on their side.
+- The `academy/admin/` page and `workers/academy-pay` are only needed for
+  the full (Worker) route; they are unused here and can be ignored.
