@@ -69,7 +69,8 @@
   var IMG_POOL = [
     "generic-writing-1.jpg", "generic-research.jpg", "generic-typing-keyboard.jpg",
     "generic-writing-2.jpg", "generic-writing-alone.jpg", "generic-journalist-writing-1.jpg",
-    "student-park-laptop.jpg", "head-inside-book.jpg", "generic-journalist-writing-2.jpg"
+    "student-park-laptop.jpg", "head-inside-book.jpg", "generic-journalist-writing-2.jpg",
+    "generic-writing-portrait.jpg", "table-ipad-newspaper.jpg"
   ];
   function lessonImage(lesson) {
     if (IMG_MAP[lesson.id]) return IMGBASE + IMG_MAP[lesson.id];
