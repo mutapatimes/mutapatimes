@@ -38,14 +38,16 @@
 
   /* Hero */
   .l-hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; color: #fff;
-    background: linear-gradient(180deg, rgba(15,12,10,.45) 0%, rgba(15,12,10,.55) 45%, rgba(15,12,10,.82) 100%),
+    background:
+      linear-gradient(180deg, rgba(15,12,10,.45) 0%, rgba(15,12,10,0) 22%, rgba(15,12,10,0) 72%, rgba(15,12,10,.5) 100%),
+      linear-gradient(90deg, rgba(15,12,10,.85) 0%, rgba(15,12,10,.6) 32%, rgba(15,12,10,.2) 58%, rgba(15,12,10,.35) 100%),
       url("/img/uploads/image_bank_academy/Lead_young_journalist_use_on_main_landing.jpg") center/cover no-repeat; }
   .l-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.3rem 0; }
   .l-brand { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.15rem; color: #fff; text-decoration: none; }
   .l-brand small { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-top: .15rem; }
   .l-nav a.l-navlink { color: #fff; text-decoration: none; font-weight: 700; font-size: .9rem; border: 1.5px solid rgba(255,255,255,.5); padding: .5rem 1.1rem; border-radius: 99px; }
   .l-hero-in { flex: 1; display: flex; align-items: center; }
-  .l-hero-content { max-width: 40rem; padding: 2rem 0 4rem; }
+  .l-hero-content { max-width: 40rem; padding: 2rem 0 4rem; text-align: left; }
   .l-hero h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1.02; margin: 0 0 1.2rem; letter-spacing: -.02em; }
   .l-hero p { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: rgba(255,255,255,.9); margin: 0 0 2rem; line-height: 1.5; }
   .l-hero-ctas { display: flex; flex-wrap: wrap; gap: .8rem; }
@@ -121,6 +123,9 @@
   .reveal.in { opacity: 1; transform: none; }
 
   @media (max-width: 820px) {
+    .l-hero { background:
+      linear-gradient(180deg, rgba(15,12,10,.5) 0%, rgba(15,12,10,.35) 40%, rgba(15,12,10,.78) 100%),
+      url("/img/uploads/image_bank_academy/Lead_young_journalist_use_on_main_landing.jpg") center/cover no-repeat; }
     .l-stats { grid-template-columns: repeat(2, 1fr); gap: 2.4rem; }
     .l-out { grid-template-columns: 1fr; }
     .l-alumni { grid-template-columns: 1fr; }
