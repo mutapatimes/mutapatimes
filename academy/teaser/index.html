@@ -35,57 +35,81 @@
 
     var QUESTIONS = [
       {
-        q: "Which of these is news rather than public relations?",
+        q: "A story reads: \"The bank's new app is the most advanced in the region, the bank said.\" Why is this closer to PR than news?",
         options: [
-          "A company statement headlined: We are proud to announce our exciting new vision",
-          "A report that a state firm's annual losses widened, with figures from its filings",
-          "A release urging readers to join the movement today",
-          "A brochure listing the benefits of a new product"
+          "Because it mentions an app",
+          "Because the only source is the company praising itself, with no independent check",
+          "Because it is too short to be news",
+          "Because apps are never newsworthy"
         ],
         answer: 1,
-        explain: "News tells you what happened and lets you decide. The other three want you to act or believe something."
+        explain: "An unchecked claim from an interested party, repeated as fact, is promotion. News would verify or attribute and weigh it."
       },
       {
-        q: "Which is the stronger lede?",
+        q: "A power utility announces outages of up to 18 hours a day. Which is the strongest lede?",
         options: [
-          "At a meeting held on Tuesday, a committee convened to discuss various matters",
-          "Diaspora families face higher fees to send money home from next month"
+          "The power utility held a briefing on Tuesday about the electricity situation.",
+          "Households across the city will face up to 18 hours a day without power, the utility says.",
+          "Electricity, a vital resource, is once again in the news this week.",
+          "In a move that has surprised many, changes are coming to the power supply."
         ],
         answer: 1,
-        explain: "Lead with the news and who it affects. The first buries the point under process."
+        explain: "Lead with the concrete impact and who it affects. The others bury the news in process or vague throat-clearing."
       },
       {
-        q: "A trusted source gives you a striking figure, with great confidence. Before publishing you should:",
+        q: "Two sources give you the same striking figure. You can treat it as verified only when:",
         options: [
-          "Publish it, they sounded sure",
-          "Treat it as a claim and check it against another source",
-          "Run it as opinion",
-          "Ignore it"
+          "Both of them read it in the same press release",
+          "They are independent of each other and of the original claim",
+          "One of them is very senior",
+          "It matches what you already expected"
         ],
         answer: 1,
-        explain: "Confidence is not evidence. Verify before it becomes a fact in print."
+        explain: "Two people repeating one source is still one source. Independent corroboration is what counts."
       },
       {
-        q: "Which kind of African story is most consistently missing from coverage?",
+        q: "A leaked document names a junior employee who blew the whistle; naming them could put them at risk. The most ethical choice is to:",
         options: [
-          "Crises and disasters",
-          "Innovation, success and ordinary voices",
-          "Conflict",
-          "Dramatic events"
+          "Publish the name, since accuracy means full detail",
+          "Report the substance but withhold the identifying detail that is not essential",
+          "Drop the story entirely to be safe",
+          "Publish the name with a disclaimer"
         ],
         answer: 1,
-        explain: "Success, innovation and the voices of ordinary people are the stories repeatedly left out."
+        explain: "Minimise harm without losing the public-interest story. Identifying a vulnerable source rarely serves the reader."
       },
       {
-        q: "Spot the clean sentence, with no errors.",
+        q: "Which sentence is correct?",
         options: [
-          "Its been a long year for the company.",
-          "The company published its report on Friday.",
-          "He recieved the award last night.",
-          "Their going to announce it tomorrow."
+          "The committee gave its report to the board, who's members welcomed it.",
+          "The committee gave its report to the board, whose members welcomed it.",
+          "The committee gave it's report to the board, whose members welcomed it.",
+          "The committee gave its report to the board, whom members welcomed it."
         ],
         answer: 1,
-        explain: "The others have errors: Its should be It's, recieved should be received, Their should be They're."
+        explain: "Whose shows possession; who's means who is. And its (no apostrophe) is the possessive."
+      },
+      {
+        q: "A wire story headlined \"Africa's economy\" draws all its examples from just two countries. The main problem is that it:",
+        options: [
+          "Is too positive about the continent",
+          "Treats a whole continent as one place, erasing the differences between dozens of countries",
+          "Mentions the economy at all",
+          "Is simply too long"
+        ],
+        answer: 1,
+        explain: "This is the 'Africa is one country' trope. Name the country and give its specific context."
+      },
+      {
+        q: "An outlet runs a government press release almost word for word as a news story. The biggest journalistic problem is that it:",
+        options: [
+          "Is shorter than usual",
+          "Publishes an interested party's version unchecked, letting them set the agenda",
+          "Used a press release, which is never allowed",
+          "Should have been labelled an opinion piece"
+        ],
+        answer: 1,
+        explain: "Repeating one side unchecked hands them the agenda. A reporter verifies, adds context and seeks other voices."
       }
     ];
 
@@ -102,7 +126,7 @@
       im.src = IMGBASE + "generic-journalist-writing-1.jpg"; im.alt = ""; fig.appendChild(im);
       view.appendChild(fig);
       var card = el("section", "ac-card");
-      card.appendChild(el("p", null, "Five quick questions to get a feel for how the Academy teaches. No signup needed. At the end, you can join to complete the full course."));
+      card.appendChild(el("p", null, "Seven real questions to test your instincts. Some are tricky on purpose. No signup needed, and at the end you can join to complete the full course."));
       var acts = el("div", "ac-actions");
       var b = el("button", "ac-btn ac-btn--lg", "Start the taster");
       b.addEventListener("click", run); acts.appendChild(b); card.appendChild(acts);
@@ -151,10 +175,10 @@
       view.appendChild(fig);
       var card = el("section", "ac-card");
       card.appendChild(el("p", "mark", "M·T"));
-      var h = el("h2", null, correct >= 4 ? "You're a natural." : "Nice start.");
+      var h = el("h2", null, correct >= 6 ? "You're a natural." : (correct >= 4 ? "Strong instincts." : "Good effort."));
       h.style.fontFamily = '"Playfair Display", Georgia, serif';
       card.appendChild(h);
-      card.appendChild(el("p", null, "You scored " + correct + " of " + QUESTIONS.length + " on the taster. That was just a tiny sample. The full course is 13 units, 54 lessons and over 200 exercises, ending in a certificate and a path to a published byline."));
+      card.appendChild(el("p", null, "You scored " + correct + " of " + QUESTIONS.length + " on a deliberately tough taster. The full course is 13 units, 54 lessons and over 200 exercises, ending in a certificate and a path to a published byline."));
       var acts = el("div", "ac-actions");
       var join = el("a", "ac-btn ac-btn--lg", "Sign up to complete the course");
       join.setAttribute("href", "/academy/#signup");
