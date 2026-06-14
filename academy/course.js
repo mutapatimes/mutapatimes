@@ -4934,6 +4934,118 @@ window.COURSE = {
                 "Background and minor detail"
               ],
               explain: "Most important first. A reader who stops early still has the heart of the story."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the inverted pyramid.",
+              chartType: "pyramid",
+              slots: ["Most important news", "___", "Quotes and detail", "___"],
+              bank: ["Key supporting facts", "Background", "Headline", "Advertisement"],
+              answer: ["Key supporting facts", "Background"],
+              explain: "Most important news, then key facts, then quotes, then background."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the reporting process.",
+              chartType: "flow",
+              slots: ["Topic", "___", "Field", "Verify", "___", "Headline"],
+              bank: ["Research", "Write", "Publish", "Print"],
+              answer: ["Research", "Write"],
+              explain: "Topic, research, field, verify, write, then headline."
+            },
+            {
+              type: "chartfill",
+              q: "Complete how a story moves through a newsroom.",
+              chartType: "flow",
+              slots: ["Gathering", "___", "Output"],
+              bank: ["Production", "Marketing", "Deadline"],
+              answer: ["Production"],
+              explain: "Gather it, produce and check it, then output it."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the four pillars of solution journalism.",
+              chartType: "stack",
+              slots: ["Describe the problem", "___", "The lesson learned (a repeatable model)", "___"],
+              bank: ["What is known: the evidence", "The limits", "More good news", "The headline"],
+              answer: ["What is known: the evidence", "The limits"],
+              explain: "Problem, evidence, the repeatable lesson, and the honest limits."
+            },
+            {
+              type: "chartfill",
+              q: "Complete the press release structure.",
+              chartType: "flow",
+              slots: ["Title", "Dateline", "___", "Context", "Quotes", "___"],
+              bank: ["First sentence (the 5W)", "Contact", "Advert", "Photo gallery"],
+              answer: ["First sentence (the 5W)", "Contact"],
+              explain: "Title, dateline, the 5W first sentence, context, quotes, then a contact."
+            },
+            {
+              type: "mcq",
+              q: "A sub-editor mainly:",
+              options: [
+                "Writes the main news articles",
+                "Checks and tightens copy and writes the headlines",
+                "Sells the advertising",
+                "Owns a reporting beat abroad"
+              ],
+              answer: 1,
+              explain: "Subs are the last line of quality control before publication."
+            },
+            {
+              type: "mcq",
+              q: "A 'leader writer' produces:",
+              options: [
+                "The front-page lead story",
+                "The publication's official editorial opinion",
+                "The crossword",
+                "The listings"
+              ],
+              answer: 1,
+              explain: "The leader is the title's own editorial line."
+            },
+            {
+              type: "mcq",
+              q: "Roughly how many journalists work in the UK, by recent estimates?",
+              options: ["About 7,300", "About 73,000", "About 730,000", "About 7 million"],
+              answer: 1,
+              explain: "Around 73,000."
+            },
+            {
+              type: "mcq",
+              q: "Naming a solution's limits matters because:",
+              options: [
+                "It makes the story more negative",
+                "No solution is perfect, and it stops others copying the flaws",
+                "Editors require it for length",
+                "It hides the evidence"
+              ],
+              answer: 1,
+              explain: "Honest limits let readers learn from a response rather than repeat its weaknesses."
+            },
+            {
+              type: "multi",
+              q: "Sound interview practice? Select all.",
+              options: [
+                "Prepare and prioritise your questions",
+                "Listen and follow an unexpected answer",
+                "Record and also take written notes",
+                "Pay the interviewee for a strong quote"
+              ],
+              answers: [0, 1, 2],
+              explain: "Prepare, listen and capture it twice. Paying for quotes corrupts the source."
+            },
+            {
+              type: "mcq",
+              q: "The strongest lever for restoring public trust in journalism is:",
+              options: [
+                "Publishing faster than rivals",
+                "Stronger professional standards, ethics and transparency",
+                "More sensational headlines",
+                "More celebrity coverage"
+              ],
+              answer: 1,
+              explain: "Standards, ethics and openness, not speed or sensation."
             }
           ]
         },

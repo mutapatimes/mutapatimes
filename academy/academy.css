@@ -476,3 +476,28 @@ body.ac-exam .ac-readhint { color: #9a9085; }
   .ac-pillars { grid-template-columns: repeat(2, 1fr); }
   .ac-bar-row { grid-template-columns: 1fr; gap: .25rem; }
 }
+
+/* ============================================================
+   v12: chartfill exercise (complete the chart)
+   ============================================================ */
+.ac-cf { margin: .3rem 0 1rem; }
+.ac-cf--flow { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.ac-cf--pyramid, .ac-cf--stack { display: flex; flex-direction: column; align-items: center; gap: .35rem; }
+.ac-cf-seg { border: 1.5px solid var(--rule); border-radius: 8px; padding: .55rem .7rem; font-weight: 600; font-size: .88rem; text-align: center; box-sizing: border-box; min-height: 1.2em; overflow-wrap: anywhere; }
+.ac-cf--flow .ac-cf-seg { background: var(--bg); }
+.ac-cf--pyramid .ac-cf-seg, .ac-cf--stack .ac-cf-seg { background: var(--paper); width: 100%; }
+.ac-cf-given { background: var(--bg); }
+.ac-cf-blank { border-style: dashed; color: #9a9085; min-width: 5.5rem; background: transparent; }
+.ac-cf-filled { border-style: solid; color: var(--ink); background: #fff; }
+.ac-cf-arrow { color: var(--accent); font-weight: 800; }
+.ac-cf-seg.is-correct { background: #eaf6ee; border-color: #1a7f44; color: #1a7f44; }
+.ac-cf-seg.is-wrong { background: #fbeaea; border-color: var(--accent); color: var(--accent); }
+.ac-cf-bank { display: flex; flex-wrap: wrap; gap: .4rem; margin: .2rem 0 0; }
+.ac-cf-chip { font: inherit; font-weight: 600; font-size: .85rem; cursor: pointer; border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 99px; padding: .45rem .8rem; overflow-wrap: anywhere; }
+.ac-cf-chip:hover:not(:disabled) { border-color: var(--ink); }
+/* dark exam variant */
+body.ac-exam .ac-cf--flow .ac-cf-seg, body.ac-exam .ac-cf-given,
+body.ac-exam .ac-cf--pyramid .ac-cf-seg, body.ac-exam .ac-cf--stack .ac-cf-seg { background: #241f1b; color: #ece4d8; border-color: rgba(255,255,255,.18); }
+body.ac-exam .ac-cf-blank { background: transparent; color: #9a9085; }
+body.ac-exam .ac-cf-filled { background: #2a241f; color: #ece4d8; }
+body.ac-exam .ac-cf-chip { background: #2a241f; color: #ece4d8; border-color: rgba(255,255,255,.2); }

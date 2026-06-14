@@ -680,6 +680,54 @@
     acts.appendChild(check); host.appendChild(acts);
   };
 
+  // Complete a chart: a flow/pyramid/stack diagram with blanks to fill from a bank.
+  RENDERERS.chartfill = function (host, ex, done, next, rec) {
+    host.appendChild(el("p", "ac-q", ex.q));
+    host.appendChild(el("p", "ac-sub", ex.instruction || "Tap a label to drop it into the next gap. Tap a filled gap to clear it."));
+    var ctype = ex.chartType || "flow";
+    var chart = el("div", "ac-cf ac-cf--" + ctype);
+    var n = ex.slots.length, blanks = [], locked = false, bank;
+    ex.slots.forEach(function (s, i) {
+      var seg = el("div", "ac-cf-seg");
+      if (ctype === "pyramid") seg.style.width = (100 - i * (n > 1 ? 52 / (n - 1) : 0)) + "%";
+      if (s === "___" || s === "" || s == null) {
+        seg.classList.add("ac-cf-blank"); seg.dataset.fill = "";
+        seg.addEventListener("click", function () {
+          if (locked || !seg.dataset.fill) return;
+          Sound.play("tap"); var lbl = seg.dataset.fill;
+          seg.dataset.fill = ""; seg.textContent = ""; seg.classList.remove("ac-cf-filled");
+          addChip(lbl); updateCheck();
+        });
+        blanks.push(seg);
+      } else { seg.classList.add("ac-cf-given"); seg.textContent = s; }
+      chart.appendChild(seg);
+      if (ctype === "flow" && i < n - 1) chart.appendChild(el("span", "ac-cf-arrow", "→"));
+    });
+    host.appendChild(chart);
+    bank = el("div", "ac-cf-bank"); host.appendChild(bank);
+    function addChip(lbl) {
+      var c = el("button", "ac-cf-chip", lbl); c.type = "button";
+      c.addEventListener("click", function () {
+        if (locked) return;
+        for (var i = 0; i < blanks.length; i++) {
+          if (!blanks[i].dataset.fill) { Sound.play("tap"); blanks[i].dataset.fill = lbl; blanks[i].textContent = lbl; blanks[i].classList.add("ac-cf-filled"); c.remove(); updateCheck(); return; }
+        }
+      });
+      bank.appendChild(c);
+    }
+    shuffle(ex.bank.slice()).forEach(addChip);
+    var acts = el("div", "ac-actions");
+    var check = el("button", "ac-btn", "Check"); check.disabled = true;
+    function updateCheck() { check.disabled = !blanks.every(function (b) { return b.dataset.fill; }); }
+    check.addEventListener("click", function () {
+      locked = true; var ok = true;
+      blanks.forEach(function (b, i) { var right = b.dataset.fill === ex.answer[i]; b.classList.add(right ? "is-correct" : "is-wrong"); if (!right) ok = false; });
+      bank.querySelectorAll(".ac-cf-chip").forEach(function (c) { c.disabled = true; });
+      check.disabled = true; done(); rec(ok); feedback(host, ok, ex.explain, next);
+    });
+    acts.appendChild(check); host.appendChild(acts);
+  };
+
   RENDERERS.swipe = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q));
     var stage = el("div", "ac-swipe"); host.appendChild(stage);
