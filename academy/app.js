@@ -7,8 +7,8 @@
 (function () {
   "use strict";
 
-  var GRADE_ENDPOINT = ""; // e.g. "https://academy-grade.NAME.workers.dev"
-  var CERT_ENDPOINT = "";  // e.g. "https://academy-certificate.NAME.workers.dev" (enables emailing)
+  var GRADE_ENDPOINT = "https://academy-grade.mutapatimes.workers.dev"; // AI writing feedback (Gemini)
+  var CERT_ENDPOINT = "https://academy-certificate.mutapatimes.workers.dev";  // certificate + article submission email
   var PASS_MARK = 70;      // percent of graded questions across the course needed for the certificate
   var LESSON_PASS = 80;    // percent needed to complete (and unlock past) a single lesson
   // Review mode (set by /academy/review/): everything unlocked, no gates,
@@ -292,6 +292,9 @@
         var cb = el("button", "ac-btn ac-btn--lg", "Claim your certificate");
         cb.addEventListener("click", function () { Sound.play("complete"); go("#/certificate"); });
         cert.appendChild(cb);
+        var sb = el("button", "ac-btn ac-btn--ghost", "Submit your first article");
+        sb.addEventListener("click", function () { Sound.play("tap"); go("#/submit"); });
+        cert.appendChild(sb);
       } else {
         cert.appendChild(el("p", "ac-cert-eyebrow", "Almost there"));
         cert.appendChild(el("h2", null, "You scored " + sc.pct + "%"));
@@ -370,7 +373,11 @@
       fig.appendChild(im); view.appendChild(fig);
     }
 
-    var examSeconds = Math.max(120, lesson.exercises.length * 45);
+    // A written answer needs far longer than a tap question, so budget more
+    // time for any write exercise (e.g. the in-exam 500-word CCBA story).
+    var examSeconds = Math.max(120, lesson.exercises.reduce(function (s, ex) {
+      return s + (ex.type === "write" ? (ex.long ? 720 : 240) : 45);
+    }, 0));
     var examExpired = false;
 
     if (isExam) {
@@ -379,10 +386,12 @@
       rules.appendChild(el("p", null, lesson.id === "final-exam"
         ? "Everything you have learned comes down to this. Pass, and you complete the Mutapa Times Academy."
         : "A serious test of this unit. Treat it like the real thing."));
+      var writeCount = lesson.exercises.filter(function (e) { return e.type === "write"; }).length;
+      var qCount = lesson.exercises.length - writeCount;
       var ul = document.createElement("ul");
-      [lesson.exercises.length + " questions",
+      [qCount + " questions" + (writeCount ? ", plus a written task an editor will assess" : ""),
         "About " + Math.ceil(examSeconds / 60) + " minutes, timed",
-        "80% to pass",
+        "80% to pass (the written task is feedback only, not scored)",
         "No explanations until the end",
         "The clock starts the moment you begin"].forEach(function (t) { ul.appendChild(el("li", null, t)); });
       rules.appendChild(ul);
@@ -790,14 +799,17 @@
   RENDERERS.write = function (host, ex, done, next, rec) {
     host.appendChild(el("p", "ac-q", ex.q));
     if (ex.brief) { var brief = el("div", "ac-brief"); ex.brief.forEach(function (p) { brief.appendChild(el("p", null, p)); }); host.appendChild(brief); }
-    var ta = el("textarea", "ac-input"); ta.setAttribute("maxlength", "900"); ta.placeholder = "Write your answer..."; host.appendChild(ta);
-    var count = el("p", "ac-count", "0 words"); host.appendChild(count);
-    ta.addEventListener("input", function () { var n = words(ta.value); count.textContent = n + (n === 1 ? " word" : " words"); });
+    var minWords = ex.minWords || 4;
+    var ta = el("textarea", "ac-input" + (ex.long ? " ac-input--long" : "")); ta.setAttribute("maxlength", ex.long ? "4000" : "900");
+    ta.placeholder = ex.long ? "Write your story here..." : "Write your answer..."; host.appendChild(ta);
+    var target = ex.long ? " / about 500 words" : "";
+    var count = el("p", "ac-count", "0 words" + target); host.appendChild(count);
+    ta.addEventListener("input", function () { var n = words(ta.value); count.textContent = n + (n === 1 ? " word" : " words") + target; });
     var acts = el("div", "ac-actions");
     var submit = el("button", "ac-btn", GRADE_ENDPOINT ? "Get feedback" : "Reveal model answer");
     var status = el("span", "ac-status"); acts.appendChild(submit); acts.appendChild(status); host.appendChild(acts);
     submit.addEventListener("click", function () {
-      if (words(ta.value) < 4) { status.innerHTML = '<span class="ac-err">Write a full answer first.</span>'; return; }
+      if (words(ta.value) < minWords) { status.innerHTML = '<span class="ac-err">' + (ex.long ? "Write a fuller answer first (aim for around 500 words)." : "Write a full answer first.") + '</span>'; return; }
       ta.disabled = true; submit.disabled = true; Sound.play("tap");
       if (GRADE_ENDPOINT && ex.exerciseId) {
         status.innerHTML = '<span class="ac-spin">Your editor is reading...</span>';
@@ -889,11 +901,165 @@
         .then(function () { est.innerHTML = '<span class="ac-ok">Sent. Check your inbox.</span>'; Sound.play("complete"); })
         .catch(function () { eb.disabled = false; est.innerHTML = '<span class="ac-err">Could not send. Try Download / Print instead.</span>'; });
     });
+
+    var bridge = el("div", "ac-capstone-cta");
+    bridge.appendChild(el("p", "ac-cert-eyebrow", "One last step, for a real byline"));
+    bridge.appendChild(el("h3", null, "Submit your first article"));
+    bridge.appendChild(el("p", null, "Now put it into practice. Write a complete article of your own choice, get instant feedback from a Mutapa Times editor, and submit it for review. The strongest pieces can be published with your byline."));
+    var sb = el("button", "ac-btn ac-btn--lg", "Write and submit your article");
+    sb.addEventListener("click", function () { Sound.play("tap"); go("#/submit"); });
+    var sa = el("div", "ac-actions"); sa.appendChild(sb); bridge.appendChild(sa);
+    view.appendChild(bridge);
+
+    window.scrollTo(0, 0);
+  }
+
+  // ---------- final capstone: submit a real article ----------
+  function renderSubmission() {
+    if (!REVIEW && !certEligible()) { go("#/"); return; }
+    leaveExam();
+    clear(view); renderChips();
+
+    var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← Back");
+    back.addEventListener("click", function () { Sound.play("tap"); go("#/certificate"); }); top.appendChild(back); view.appendChild(top);
+    view.appendChild(el("p", "ac-eyebrow", "Final capstone · Your first byline"));
+    view.appendChild(el("h1", "ac-h1", "Submit an article for review"));
+
+    var lead = el("div", "ac-brief");
+    lead.appendChild(el("p", null, "Choose any real story you can report and write it as a complete Mutapa Times article. Fill in every field below, then get instant feedback from an editor before you submit."));
+    lead.appendChild(el("p", null, "You can revise and re-check as many times as you like. When you submit, your article goes to the Mutapa Times editors for review. The strongest pieces are published with your byline."));
+    view.appendChild(lead);
+
+    var savedEmail = "";
+    try { savedEmail = localStorage.getItem("mt_academy_email") || ""; } catch (e) {}
+
+    var form = el("div", "ac-subform");
+    function field(labelText, hint, node) {
+      var w = el("div", "ac-field");
+      w.appendChild(el("label", "ac-cert-label", labelText));
+      if (hint) w.appendChild(el("p", "ac-field-hint", hint));
+      w.appendChild(node); form.appendChild(w); return node;
+    }
+    function input(ph, val, max) { var i = document.createElement("input"); i.type = "text"; i.className = "ac-cert-input"; i.placeholder = ph; if (val) i.value = val; if (max) i.maxLength = max; return i; }
+    function area(ph, max, longCls) { var t = el("textarea", "ac-input" + (longCls ? " ac-input--long" : "")); t.placeholder = ph; if (max) t.setAttribute("maxlength", String(max)); return t; }
+
+    var nameI = field("Your name (the byline credit)", "How your name should appear on the article.", input("e.g. Tendai Kuwanda", state.name || "", 60));
+    var emailI = field("Your email", "So the editors can reply to you.", input("you@email.com", savedEmail, 120));
+    var imageI = field("Image link", "Paste a URL to your photo or illustration. Use an image you have the right to publish.", input("https://...", "", 400));
+    var capI = field("Image caption and credit", "What the image shows, and who took it.", input("e.g. Vendors at Mbare market. Photo: Your Name", "", 200));
+    var headI = field("Headline", "Accurate, specific and active. Say what happened.", input("Your headline", "", 160));
+    var sumI = field("Summary (standfirst)", "One or two sentences that set up the story.", area("A short summary that draws the reader in.", 400));
+    var bodyI = field("The article", "Aim for around 400 to 700 words. Lead with the news, attribute claims, add context and balance.", area("Write your full article here...", 9000, true));
+    var bioI = field("Your bio", "One or two sentences about you, as it would run under the article.", area("e.g. Tendai Kuwanda is a graduate of the Mutapa Times Academy reporting on...", 400));
+    view.appendChild(form);
+
+    var bcount = el("p", "ac-count", "0 words"); view.appendChild(bcount);
+    bodyI.addEventListener("input", function () { var n = words(bodyI.value); bcount.textContent = n + (n === 1 ? " word" : " words"); });
+
+    var fbBox = el("div"); view.appendChild(fbBox);
+
+    var acts = el("div", "ac-actions");
+    var fbBtn = el("button", "ac-btn ac-btn--lg", GRADE_ENDPOINT ? "Get editor feedback" : "Check my work");
+    var subBtn = el("button", "ac-btn ac-btn--ghost", "Submit to the editors"); subBtn.disabled = true;
+    var status = el("span", "ac-status");
+    acts.appendChild(fbBtn); acts.appendChild(subBtn); acts.appendChild(status); view.appendChild(acts);
+
+    function payload() {
+      return {
+        name: (nameI.value || "").trim(), byline: (nameI.value || "").trim(),
+        email: (emailI.value || "").trim(),
+        imageUrl: (imageI.value || "").trim(), imageCaption: (capI.value || "").trim(),
+        headline: (headI.value || "").trim(), summary: (sumI.value || "").trim(),
+        body: (bodyI.value || "").trim(), bio: (bioI.value || "").trim()
+      };
+    }
+    function ready() {
+      var p = payload();
+      if (p.headline.length < 3) { status.innerHTML = '<span class="ac-err">Add a headline.</span>'; return null; }
+      if (words(p.body) < 120) { status.innerHTML = '<span class="ac-err">Write a fuller article first (aim for 400 words or more).</span>'; return null; }
+      status.textContent = ""; return p;
+    }
+
+    fbBtn.addEventListener("click", function () {
+      var p = ready(); if (!p) return;
+      Sound.play("tap");
+      if (!GRADE_ENDPOINT) { clear(fbBox); fbBox.appendChild(selfCheckBox()); subBtn.disabled = false; return; }
+      fbBtn.disabled = true; status.innerHTML = '<span class="ac-spin">Your editor is reading...</span>';
+      p.kind = "submission"; p.imageDesc = p.imageCaption;
+      fetch(GRADE_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(p) })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (d) { status.textContent = ""; fbBtn.disabled = false; fbBtn.textContent = "Re-check after editing"; clear(fbBox); fbBox.appendChild(submissionFeedback(d)); subBtn.disabled = false; Sound.play(d.score >= 70 ? "correct" : "wrong"); fbBox.scrollIntoView({ behavior: "smooth", block: "start" }); })
+        .catch(function () { status.textContent = ""; fbBtn.disabled = false; clear(fbBox); fbBox.appendChild(selfCheckBox()); subBtn.disabled = false; });
+    });
+
+    subBtn.addEventListener("click", function () {
+      var p = ready(); if (!p) return;
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(p.email)) { status.innerHTML = '<span class="ac-err">Enter a valid email so the editors can reply.</span>'; return; }
+      if (p.name.length < 2) { status.innerHTML = '<span class="ac-err">Add your name for the byline.</span>'; return; }
+      try { localStorage.setItem("mt_academy_email", p.email); } catch (e) {}
+      if (!CERT_ENDPOINT) { status.innerHTML = '<span class="ac-ok">Saved. Submission delivery is not set up yet, so email your article to news@mutapatimes.com.</span>'; return; }
+      subBtn.disabled = true; status.innerHTML = '<span class="ac-spin">Sending to the editors...</span>';
+      p.kind = "submission";
+      fetch(CERT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(p) })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function () { Sound.play("complete"); confetti(); submitted(); })
+        .catch(function () { subBtn.disabled = false; status.innerHTML = '<span class="ac-err">Could not send. Please email your article to news@mutapatimes.com.</span>'; });
+    });
+
+    function submitted() {
+      clear(view);
+      var done = el("div", "ac-done-inline ac-anim-pop");
+      done.appendChild(el("p", "mark", "M·T"));
+      done.appendChild(el("h2", null, "Submitted. Well done."));
+      done.appendChild(el("p", null, "Your article is with the Mutapa Times editors. If it is selected, we will be in touch about publishing it with your byline. Either way, you can list this work in your portfolio."));
+      var a = el("div", "ac-actions");
+      var h = el("button", "ac-btn", "Back to your certificate"); h.addEventListener("click", function () { Sound.play("tap"); go("#/certificate"); });
+      a.appendChild(h); done.appendChild(a); view.appendChild(done);
+      window.scrollTo(0, 0);
+    }
+
+    function submissionFeedback(d) {
+      var box = el("div", "ac-result");
+      var score = Math.max(0, Math.min(100, parseInt(d.score, 10) || 0));
+      var row = el("div", "ac-score " + (score >= 70 ? "pass" : "revise"));
+      row.appendChild(el("b", null, String(score)));
+      row.appendChild(el("span", null, d.verdict || ""));
+      box.appendChild(row);
+      box.appendChild(el("p", "ac-pubtag " + (d.publishable ? "ok" : "no"), d.publishable ? "An editor could run this with light edits." : "Not ready to publish yet. Revise and re-check."));
+      if (d.strengths && d.strengths.length) box.appendChild(fbList("What worked", d.strengths));
+      if (d.improvements && d.improvements.length) box.appendChild(fbList("Sharpen this", d.improvements));
+      var s = d.sections || {};
+      var notes = [["Headline", s.headline], ["Summary", s.summary], ["Article", s.body], ["Bio", s.bio]].filter(function (x) { return x[1]; });
+      if (notes.length) {
+        var sec = el("div", "ac-fb"); sec.appendChild(el("h3", null, "Section by section"));
+        var ul = el("ul"); notes.forEach(function (x) { var li = el("li"); li.appendChild(el("b", null, x[0] + ": ")); li.appendChild(document.createTextNode(x[1])); ul.appendChild(li); }); sec.appendChild(ul);
+        box.appendChild(sec);
+      }
+      return box;
+    }
+    function selfCheckBox() {
+      var box = el("div", "ac-result");
+      box.appendChild(el("h3", "ac-selfhead", "Mark your own work before submitting"));
+      var ul = el("div", "ac-checklist");
+      ["Does the headline say what actually happened, accurately?",
+       "Does the article lead with the news, not background or spin?",
+       "Is every claim attributed to a source, and every figure checked?",
+       "Have you sought more than one voice, and added context?",
+       "Is it clean, plain English with no em dashes?"].forEach(function (q) {
+        var lab = el("label", "ac-check"); var cb = document.createElement("input"); cb.type = "checkbox";
+        cb.addEventListener("change", function () { if (cb.checked) Sound.play("tap"); });
+        lab.appendChild(cb); lab.appendChild(el("span", null, q)); ul.appendChild(lab);
+      });
+      box.appendChild(ul);
+      return box;
+    }
+    function fbList(title, items) { var w = el("div", "ac-fb"); w.appendChild(el("h3", null, title)); var ul = el("ul"); items.forEach(function (t) { ul.appendChild(el("li", null, t)); }); w.appendChild(ul); return w; }
+
     window.scrollTo(0, 0);
   }
 
   // ---------- router ----------
-  function route() { var h = location.hash || "#/"; if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
+  function route() { var h = location.hash || "#/"; if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
   window.addEventListener("hashchange", route);
   route();
 })();

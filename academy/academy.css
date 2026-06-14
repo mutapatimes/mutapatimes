@@ -516,3 +516,25 @@ body.ac-exam .ac-cf-chip { background: #2a241f; color: #ece4d8; border-color: rg
   .ac-cat-opts { gap: .45rem; }
   .ac-cat-btn { flex: 1 1 7rem; text-align: center; padding: .6rem .7rem; }
 }
+
+/* ============================================================
+   v14: long writing answers + final article submission capstone
+   ============================================================ */
+textarea.ac-input--long { min-height: 320px; line-height: 1.55; }
+
+/* bridge from the certificate to the submission capstone */
+.ac-capstone-cta { margin-top: 1.6rem; border-top: 2px solid var(--ink); padding-top: 1.3rem; }
+.ac-capstone-cta h3 { font-family: "Playfair Display", Georgia, serif; font-size: 1.5rem; margin: .2rem 0 .5rem; }
+.ac-capstone-cta p { margin: 0 0 .9rem; color: #3a3a3a; }
+
+/* the submission form */
+.ac-subform { display: grid; gap: 1.1rem; margin: 1rem 0 .4rem; }
+.ac-field { display: block; }
+.ac-field-hint { font-size: .82rem; color: #8a8a8a; margin: 0 0 .4rem; }
+.ac-field .ac-cert-label { margin-bottom: .25rem; }
+
+/* publishable badge on submission feedback */
+.ac-pubtag { display: inline-block; font-size: .8rem; font-weight: 700; border-radius: 999px;
+  padding: .3rem .7rem; margin: 0 0 .8rem; }
+.ac-pubtag.ok { background: rgba(26,127,68,.12); color: #1a7f44; }
+.ac-pubtag.no { background: rgba(196,30,30,.1); color: var(--accent); }

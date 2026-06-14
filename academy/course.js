@@ -5073,6 +5073,27 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Standards, ethics and openness, not speed or sensation."
+            },
+            {
+              type: "write",
+              long: true,
+              minWords: 220,
+              q: "Final writing task: report the CCBA story (about 500 words).",
+              brief: [
+                "A real press release has arrived from Coca-Cola Beverages Africa (CCBA) in Kenya, headlined 'CCBA in Kenya supports 3,000 youth with skills and enterprise development'.",
+                "The facts: CCBA, with partner Emerging Leaders, runs a six-month programme, Uwezo Kwa Vijana, launched in January 2026, that aims to reach 3,000 young people this year. It says women are 60 percent of participants (1,800) and at least 5 percent are persons with disabilities. The only quote is from CCBA's public affairs director, Eric Githua. It currently runs in Nairobi and Nakuru, with Makueni and Kisii planned. CCBA has released no independent data on past participants' incomes, and Coca-Cola is a major advertiser.",
+                "Write a news story of about 500 words for The Mutapa Times. Lead with the honest news, attribute the company's claims rather than stating them as fact, add real context, and signal what independent checks are still needed. An editor will read your work and give you feedback. This task is not scored, so take your time and write your best."
+              ],
+              checklist: [
+                "Does your lede lead with the honest news, not the company's spin?",
+                "Did you make clear 3,000 is a 2026 target, not a result already delivered?",
+                "Did you attribute the company's claims rather than state them as fact?",
+                "Did you add context (youth unemployment) and note this is company-funded CSR?",
+                "Did you flag the gaps: a single source and no independent outcome data?",
+                "Are the figures right (60 percent is 1,800) and the places accurate (runs in Nairobi and Nakuru, Makueni and Kisii planned)?"
+              ],
+              model: "An editor's version:\nCoca-Cola bottler targets 3,000 young Kenyans with skills scheme\nA Coca-Cola bottler is funding a six-month training programme that aims to reach 3,000 young Kenyans this year, the latest corporate scheme aimed at the country's stubborn youth unemployment.\nCoca-Cola Beverages Africa (CCBA) in Kenya says its Uwezo Kwa Vijana programme, run with the non-profit Emerging Leaders, trains young people in confidence, financial literacy and starting a small business. It says women make up 60 percent of those enrolled, or 1,800 people, and that at least 5 percent are persons with disabilities.\nThose figures, and the headline promise of 3,000 beneficiaries, are the company's own. The 3,000 is a target for 2026, not a number already trained, and CCBA has not released independent data on how many past participants went on to earn a lasting income.\nThe programme currently runs in Nairobi and Nakuru, with expansion to Makueni and Kisii planned. The only named source is the company's public affairs director, Eric Githua. A published version would test these claims against the voices of participants and independent experts on youth employment.",
+              exerciseId: "exam-ccba-500"
             }
           ]
         },
