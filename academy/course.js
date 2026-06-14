@@ -4400,14 +4400,14 @@ window.COURSE = {
     },
     {
       id: "profession",
-      title: "The journalism profession",
-      summary: "What the trade really looks like: who does it, how they get in, what it pays, and how to earn trust.",
+      title: "The realities of journalism jobs abroad",
+      summary: "What the trade looks like in a mature media market overseas: who does it, how they get in, what it pays, and how trust is won. A benchmark as you build your own path.",
       lessons: [
         {
           id: "industry-today",
-          title: "The trade today, by the numbers",
+          title: "The trade abroad, by the numbers",
           minutes: 8,
-          intro: "Journalism is changing fast. Here is what the evidence actually says about the trade you are entering.",
+          intro: "These figures are from the UK, a large, mature media market. They are a useful benchmark for the realities of a journalism career abroad, and for what is changing everywhere.",
           cards: [
             {
               h: "More journalists, spread wider",
@@ -4555,10 +4555,10 @@ window.COURSE = {
         },
         {
           id: "cp-profession",
-          title: "The journalism profession",
+          title: "Journalism jobs abroad",
           checkpoint: true,
           minutes: 12,
-          intro: "A checkpoint on the trade: its shape, its barriers, its sourcing and its trust problem. You need 80% to pass. No explanations during the test.",
+          intro: "A checkpoint on the realities of journalism jobs abroad: the shape of the trade, its barriers, its sourcing and its trust problem. You need 80% to pass. No explanations during the test.",
           cards: [
             { h: "Before you start", body: ["This covers the numbers, how people get in, sourcing and trust.", "Questions only. Below 80% means a review and a retry."] }
           ],
