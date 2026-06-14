@@ -125,6 +125,21 @@ window.COURSE = {
               ],
               answer: 1,
               explain: "Opinion can use facts, but the reader must know they are reading an argument, not a report."
+            },
+            {
+              type: "swipe",
+              q: "News or PR? Decide fast.",
+              leftLabel: "PR",
+              rightLabel: "News",
+              cards: [
+                { text: "We are thrilled to unveil our award-winning, world-class platform.", side: "left" },
+                { text: "The council voted 7 to 3 to cut the transport budget.", side: "right" },
+                { text: "Join the thousands who already love our revolutionary app.", side: "left" },
+                { text: "Inflation rose to 12 percent last month, official figures show.", side: "right" },
+                { text: "Our visionary leadership is proud to take the industry forward.", side: "left" },
+                { text: "Three public hospitals reported drug shortages this week.", side: "right" }
+              ],
+              explain: "PR praises and urges you to act. News reports what happened, with facts and sources."
             }
           ]
         },
@@ -309,6 +324,17 @@ window.COURSE = {
               options: ["Executive editor", "Assignment editor", "Managing editor", "Beat reporter"],
               answers: [0, 2],
               explain: "Executive and managing editors set direction and run operations. The assignment editor and beat reporter handle daily coverage."
+            },
+            {
+              type: "match",
+              q: "Match each newsroom role to what they do.",
+              pairs: [
+                { a: "Assignment editor", b: "Decides which stories get covered today" },
+                { a: "Beat reporter", b: "Covers one subject area over time" },
+                { a: "Sub-editor", b: "Checks and tightens copy before it runs" },
+                { a: "Digital editor", b: "Publishes online and shapes homepage placement" }
+              ],
+              explain: "Each desk owns a different decision. Knowing who does what tells you who to pitch."
             }
           ]
         },
@@ -455,6 +481,22 @@ window.COURSE = {
               ],
               answers: [0, 1, 3],
               explain: "Strategy is about alignment with the right reader, not chasing the highest volume of scattered mentions."
+            },
+            {
+              type: "categorize",
+              q: "Sort each outlet by who it mainly serves.",
+              buckets: [
+                { id: "broad", label: "Broad public" },
+                { id: "niche", label: "Specialist or niche" }
+              ],
+              items: [
+                { text: "Regional daily newspaper", bucket: "broad" },
+                { text: "Local TV news", bucket: "broad" },
+                { text: "Industry trade publication", bucket: "niche" },
+                { text: "Neighbourhood community newsletter", bucket: "niche" },
+                { text: "Business journal for executives", bucket: "niche" }
+              ],
+              explain: "Dailies and broadcast reach a broad public. Trade, business and community titles serve a defined niche."
             }
           ]
         },
@@ -579,6 +621,17 @@ window.COURSE = {
               options: ["For a monthly fee", "Free, because advertisers pay", "Only by donating", "Only from the government"],
               answer: 1,
               explain: "Advertisers pay to reach the audience, which lets the outlet offer content free and reach more people."
+            },
+            {
+              type: "match",
+              q: "Match each funding model to its description.",
+              pairs: [
+                { a: "Advertising", b: "Companies pay to place ads; readers get it free" },
+                { a: "Subscription", b: "Readers pay a recurring fee for access" },
+                { a: "Public funding", b: "The state supports public-service media" },
+                { a: "Nonprofit", b: "Foundations and donors fund the journalism" }
+              ],
+              explain: "Most newsrooms blend these, but each has a distinct source and a distinct pull on coverage."
             }
           ]
         },
@@ -1218,6 +1271,20 @@ window.COURSE = {
               ],
               model: "Zimbabwe will require every crypto business to register each year and pay US$500, or face criminal charges, under the country's first rules for the sector.",
               exerciseId: "lede-crypto-1"
+            },
+            {
+              type: "swipe",
+              q: "Strong lede or weak lede?",
+              leftLabel: "Weak",
+              rightLabel: "Strong",
+              cards: [
+                { text: "Zimbabwe will require crypto firms to register yearly or face criminal charges.", side: "right" },
+                { text: "A meeting was held on Tuesday to discuss a number of important matters.", side: "left" },
+                { text: "Diaspora families face higher fees to send money home from next month.", side: "right" },
+                { text: "It should be noted that the committee, which met recently, reached decisions.", side: "left" },
+                { text: "Power cuts will lengthen to 18 hours a day across Harare, the utility says.", side: "right" }
+              ],
+              explain: "Strong ledes lead with the news and who it affects. Weak ones bury it under process."
             }
           ]
         },
@@ -1264,6 +1331,22 @@ window.COURSE = {
               ],
               answers: [0, 2, 3],
               explain: "Those three add words without meaning. A concrete figure like US$500 is information, keep it."
+            },
+            {
+              type: "highlight",
+              q: "Tap the clutter.",
+              instruction: "Tap every word you could cut without losing the meaning.",
+              tokens: ["It", "should", "be", "noted", "that", "the", "bank", "raised", "fees"],
+              targets: [0, 1, 2, 3, 4],
+              explain: "It should be noted that adds nothing. The bank raised fees says it all."
+            },
+            {
+              type: "fillblank",
+              q: "Complete the active, concrete sentence.",
+              text: "The ___ raised ___ by US$500 a year.",
+              bank: ["bank", "fees", "were", "government"],
+              answer: ["bank", "fees"],
+              explain: "Active voice names who did what: the bank raised fees. Direct and concrete."
             }
           ]
         },
