@@ -441,13 +441,11 @@
   (function () {
     "use strict";
     // ============================================================
-    //  THE ONLY THING YOU EDIT: paste your Lemon Squeezy product link.
-    //  var BUY_LINK = "https://mutapatimes.lemonsqueezy.com/buy/abc-123";
-    // ============================================================
-    var BUY_LINK = "";
     var PRICE = 50, CURRENCY = "US$";
-    // Comms worker: captures the student and starts the welcome journey.
+    // Comms worker starts the welcome journey; pay worker builds a tracked
+    // checkout so the purchase can be auto-unlocked on return.
     var COMMS_ENDPOINT = "https://academy-certificate.mutapatimes.workers.dev";
+    var PAY_ENDPOINT = "https://academy-pay.mutapatimes.workers.dev";
 
     document.getElementById("price").textContent = CURRENCY + PRICE;
     var form = document.getElementById("enrolForm"), status = document.getElementById("status");
@@ -466,10 +464,22 @@
             body: JSON.stringify({ kind: "enrol", name: name, email: email }) }).catch(function () {});
         } catch (e) {}
       }
-      if (!BUY_LINK) { status.innerHTML = '<span class="ok">Thanks, ' + name.split(" ")[0] + '. Check your inbox for a welcome email. Enrolment opens shortly and we will be in touch.</span>'; return; }
+      // Build a tracked Lemon Squeezy checkout, remember the reference, then go.
       status.textContent = "Taking you to secure payment...";
-      var sep = BUY_LINK.indexOf("?") >= 0 ? "&" : "?";
-      location.href = BUY_LINK + sep + "checkout[email]=" + encodeURIComponent(email);
+      var btn = document.getElementById("buyBtn"); if (btn) btn.disabled = true;
+      fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "create", name: name, email: email }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d && d.checkoutUrl) {
+            try { localStorage.setItem("mt_academy_pending_ref", d.reference || ""); } catch (e) {}
+            location.href = d.checkoutUrl;
+          } else {
+            if (btn) btn.disabled = false;
+            status.innerHTML = '<span class="err">' + ((d && d.error) || "Could not start checkout. Please try again.") + '</span>';
+          }
+        })
+        .catch(function () { if (btn) btn.disabled = false; status.innerHTML = '<span class="err">Network error. Please try again.</span>'; });
     });
 
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

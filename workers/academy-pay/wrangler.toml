@@ -16,7 +16,7 @@ id = "1cbf54ecece14d4481549bad6f163e4b"
 [vars]
 # Your Lemon Squeezy product buy link, e.g.
 # https://YOURSTORE.lemonsqueezy.com/buy/0000-uuid
-LS_BUY_LINK = "https://YOURSTORE.lemonsqueezy.com/buy/REPLACE-WITH-VARIANT-UUID"
+LS_BUY_LINK = "https://mutapatimes.lemonsqueezy.com/checkout/buy/2968cf89-0066-4ff5-8c3e-0064388d3b30"
 # Optional: a Lemon Squeezy discount code for referred friends (e.g. FRIEND15)
 LS_DISCOUNT_CODE = ""
 PRICE = "50"

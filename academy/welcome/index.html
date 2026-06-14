@@ -79,9 +79,12 @@
       $("em").value = localStorage.getItem("mt_academy_email") || "";
     } catch (e) {}
 
-    // Card payment redirect from Lemon Squeezy: ?reference=MTA-...
+    // After a Lemon Squeezy card payment the buyer is redirected here. The
+    // purchase reference was saved before checkout (the redirect itself does
+    // not carry it), so use that, or a ?reference= in the URL if present.
     var params = new URLSearchParams(location.search);
     var reference = params.get("reference") || params.get("ref_purchase") || "";
+    try { if (!reference) reference = localStorage.getItem("mt_academy_pending_ref") || ""; } catch (e) {}
     if (reference) {
       $("confirmCard").style.display = "";
       var tries = 0;
@@ -93,16 +96,17 @@
           .then(function (d) {
             if (d && d.paid && d.token) {
               store((d.email || "").toLowerCase(), d.name, d.token);
+              try { localStorage.removeItem("mt_academy_pending_ref"); } catch (e) {}
               $("confirmStatus").innerHTML = '<span class="ac-ok">Unlocked. Taking you to the course...</span>';
               setTimeout(goLearn, 900);
-            } else if (tries < 8) {
+            } else if (tries < 10) {
               setTimeout(poll, 2500);
             } else {
-              $("confirmMsg").textContent = "We could not confirm the payment automatically. If you have an access code, enter it below.";
+              $("confirmMsg").textContent = "We could not confirm the payment automatically yet. It can take a minute. Refresh this page, or if you have an access code, enter it below.";
               $("confirmStatus").textContent = "";
             }
           })
-          .catch(function () { if (tries < 8) setTimeout(poll, 2500); else $("confirmStatus").textContent = ""; });
+          .catch(function () { if (tries < 10) setTimeout(poll, 2500); else $("confirmStatus").textContent = ""; });
       })();
     }
 
