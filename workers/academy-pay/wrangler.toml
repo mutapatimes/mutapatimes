@@ -1,0 +1,21 @@
+name = "academy-pay"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Create the KV namespace, then paste its id below:
+#   npx wrangler kv namespace create ACADEMY
+[[kv_namespaces]]
+binding = "ACADEMY"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
+
+# Secrets (do NOT commit): set with `npx wrangler secret put NAME`
+#   PAYNOW_ID      - your Paynow Integration ID
+#   PAYNOW_KEY     - your Paynow Integration Key
+#   ACCESS_SECRET  - any long random string (signs access tokens + referral codes)
+
+[vars]
+PRICE = "15"
+REF_DISCOUNT = "0.15"
+SITE_URL = "https://mutapatimes.com"
+ALLOWED_ORIGIN = "https://mutapatimes.com"
+# NEWSLETTER_WEBHOOK = "https://your-newsletter-endpoint"  # Mailchimp proxy, Zapier, Make, etc.

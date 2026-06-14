@@ -17,6 +17,13 @@
   var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   var examMode = false; // true during checkpoint lessons: no per-question explanations
 
+  // Access gate. Flip REQUIRE_ACCESS to true once Paynow is live to lock
+  // the course behind a paid unlock (set on the welcome page after payment).
+  var REQUIRE_ACCESS = false;
+  if (REQUIRE_ACCESS) {
+    try { if (!localStorage.getItem("mt_academy_access")) { location.replace("/academy/"); return; } } catch (e) {}
+  }
+
   var COURSE = window.COURSE;
   var view = document.getElementById("view");
   var xpChip = document.getElementById("xpChip");

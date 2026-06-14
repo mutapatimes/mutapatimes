@@ -110,3 +110,70 @@ The printable certificate works immediately. To turn on email delivery:
 If `CERT_ENDPOINT` is left blank, the email button politely tells the
 learner to use Download / Print instead. (Alternative provider: swap the
 Resend call in `worker.js` for MailChannels if you prefer.)
+
+## Landing page, payment and referrals
+
+The Academy now has a public front door and a paid signup flow built for
+Zimbabwe.
+
+| Page | Path | Purpose |
+|---|---|---|
+| Landing / sales | `/academy/` | Sells the course, signup + pay |
+| Welcome | `/academy/welcome/` | Confirms payment, unlocks course, shows referral link |
+| Course | `/academy/learn/` | The course app (gateable) |
+
+### Payment (Paynow)
+
+Stripe does not pay out to Zimbabwe, so payments use **Paynow**, which
+accepts EcoCash, OneMoney, Zimswitch, Visa and Mastercard. This covers
+local mobile money and diaspora cards in one flow. (Pesepay is a drop-in
+alternative if you prefer; swap the initiate/poll calls in the Worker.)
+
+Flow: landing form -> `academy-pay` Worker creates a Paynow payment ->
+browser redirects to Paynow -> on return, `/academy/welcome/` polls the
+Worker until paid -> the Worker issues an access token, fires the
+newsletter webhook, and returns a referral link.
+
+### Setup
+
+1. Create a Paynow merchant account and get your Integration ID + Key.
+2. Deploy the Worker:
+   ```
+   cd workers/academy-pay
+   npx wrangler kv namespace create ACADEMY     # paste the id into wrangler.toml
+   npx wrangler secret put PAYNOW_ID
+   npx wrangler secret put PAYNOW_KEY
+   npx wrangler secret put ACCESS_SECRET        # any long random string
+   npx wrangler deploy
+   ```
+3. Put the deployed Worker URL into `PAY_ENDPOINT` in BOTH
+   `academy/index.html` and `academy/welcome/index.html`.
+4. Set the price in `wrangler.toml` (`PRICE`) and on the landing page
+   (`PRICE` constant, for display).
+5. Test in Paynow's test mode first. If hash checks fail, confirm the
+   field order in `paynowInitiate` matches your Paynow account.
+
+Until `PAY_ENDPOINT` is set, the landing page just captures interest.
+
+### Gating the course
+
+`academy/app.js` has `REQUIRE_ACCESS = false` by default, so the course
+stays open while you set up payments. Flip it to `true` once Paynow is
+live: visitors without a paid access token are redirected to `/academy/`.
+The token is set on the welcome page after a confirmed payment.
+
+### Referrals
+
+Every buyer gets a referral code (shown on the welcome page as a link
+like `/academy/?ref=ABC12345`). A friend who arrives with `?ref=` sees a
+discount (default 15%, set by `REF_DISCOUNT`), and the Worker credits the
+referrer's count in KV. To see who has referred how much, read the
+`user:<email>` keys in the ACADEMY KV namespace. Rewarding top referrers
+is currently manual; it can be automated later.
+
+### Newsletter trigger
+
+On a confirmed payment the Worker POSTs `{email, name, tags}` to
+`NEWSLETTER_WEBHOOK`. Point it at Mailchimp (via a small proxy), Zapier,
+Make, or your own endpoint. If unset, payment still works; no newsletter
+call is made.

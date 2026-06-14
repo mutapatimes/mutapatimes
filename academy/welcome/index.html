@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to the Mutapa Times Academy</title>
+  <link rel="canonical" href="https://mutapatimes.com/academy/welcome/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="apple-touch-icon" href="/icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=102">
+  <style>
+  .w { max-width: 560px; margin: 0 auto; padding: 3rem 1.1rem 5rem; text-align: center; }
+  .w-mark { font-family: "Playfair Display", Georgia, serif; font-weight: 900; color: var(--accent); font-size: 2.2rem; margin: 0 0 .4rem; }
+  .w h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.9rem; margin: 0 0 .8rem; }
+  .w p { color: #3a3a3a; margin: 0 0 1rem; }
+  .w-btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none;
+    padding: .9rem 1.6rem; border-radius: 99px; }
+  .w-btn--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--rule); }
+  .w-spin { color: #8a8a8a; font-weight: 700; }
+  .w-err { color: var(--accent); font-weight: 600; }
+  .w-ref { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 1.1rem; margin: 1.6rem 0 0; text-align: left; }
+  .w-ref h2 { font-size: 1rem; margin: 0 0 .5rem; }
+  .w-ref p { font-size: .88rem; color: #5a5a5a; }
+  .w-reflink { display: flex; gap: .5rem; margin-top: .6rem; }
+  .w-reflink input { flex: 1; font: inherit; border: 1.5px solid var(--rule); border-radius: 8px; padding: .55rem .7rem; background: #fff; }
+  .w-copy { border: 0; background: var(--ink); color: #fff; font-weight: 700; border-radius: 8px; padding: 0 .9rem; cursor: pointer; }
+  .w-actions { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+  [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="w">
+    <p class="w-mark">M·T</p>
+    <div id="loading">
+      <h1>Confirming your payment</h1>
+      <p class="w-spin" id="spin">Please wait a moment...</p>
+    </div>
+
+    <div id="success" hidden>
+      <h1>You're in. Welcome aboard.</h1>
+      <p>Your place on the Mutapa Times Academy is confirmed and you have lifetime access. You have also been added to our newsletter.</p>
+      <div class="w-actions">
+        <a class="w-btn" href="/academy/learn/">Start the course</a>
+      </div>
+      <div class="w-ref" id="refBox" hidden>
+        <h2>Share and earn</h2>
+        <p>Send this link to friends. They get a discount, and we credit every referral to you.</p>
+        <div class="w-reflink">
+          <input id="refLink" type="text" readonly>
+          <button class="w-copy" id="copyBtn" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="failure" hidden>
+      <h1>We could not confirm payment</h1>
+      <p class="w-err" id="failMsg">If you completed payment, it may still be processing. Wait a minute and refresh, or reply to a newsletter email and we will sort it out.</p>
+      <div class="w-actions">
+        <a class="w-btn w-btn--ghost" href="/academy/">Back to enrolment</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+    var PAY_ENDPOINT = ""; // same Worker URL as the landing page
+    var SITE = "https://mutapatimes.com";
+
+    var params = new URLSearchParams(location.search);
+    var reference = params.get("reference") || params.get("ref") || "";
+
+    var loading = document.getElementById("loading");
+    var success = document.getElementById("success");
+    var failure = document.getElementById("failure");
+
+    function showSuccess(d) {
+      loading.hidden = true; success.hidden = false;
+      try {
+        if (d.token) localStorage.setItem("mt_academy_access", d.token);
+        if (d.email) localStorage.setItem("mt_academy_email", d.email);
+        if (d.name) localStorage.setItem("mt_academy_name", d.name);
+      } catch (e) {}
+      if (d.referralCode) {
+        var link = SITE + "/academy/?ref=" + encodeURIComponent(d.referralCode);
+        document.getElementById("refLink").value = link;
+        document.getElementById("refBox").hidden = false;
+        document.getElementById("copyBtn").addEventListener("click", function () {
+          var i = document.getElementById("refLink"); i.select();
+          try { navigator.clipboard.writeText(i.value); } catch (e) { document.execCommand("copy"); }
+          document.getElementById("copyBtn").textContent = "Copied";
+        });
+      }
+    }
+    function showFailure(msg) { loading.hidden = true; failure.hidden = false; if (msg) document.getElementById("failMsg").textContent = msg; }
+
+    if (!PAY_ENDPOINT || !reference) {
+      // Nothing to confirm (e.g. opened directly). If already unlocked, send to course.
+      try { if (localStorage.getItem("mt_academy_access")) { location.replace("/academy/learn/"); return; } } catch (e) {}
+      showFailure("We could not find your payment reference. If you just paid, wait a moment and refresh.");
+      return;
+    }
+
+    var tries = 0, max = 8;
+    function poll() {
+      tries++;
+      fetch(PAY_ENDPOINT, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "status", reference: reference })
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.paid) { showSuccess(d); return; }
+        if (tries >= max) { showFailure(); return; }
+        document.getElementById("spin").textContent = "Still confirming (" + tries + ")...";
+        setTimeout(poll, 2500);
+      })
+      .catch(function () { if (tries >= max) { showFailure(); } else { setTimeout(poll, 2500); } });
+    }
+    poll();
+  })();
+  </script>
+</body>
+</html>

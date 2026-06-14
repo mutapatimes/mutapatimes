@@ -2,12 +2,12 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mutapa Times Academy</title>
+  <title>Mutapa Times Academy — Learn journalism for Zimbabwe and the diaspora</title>
   <link rel="canonical" href="https://mutapatimes.com/academy/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#1a1a1a">
-  <meta name="description" content="Learn to report on Zimbabwe and the diaspora. A self-paced journalism course with lessons, quizzes and instant feedback. Free to start.">
-  <!-- Keep out of the index until launch. -->
+  <meta name="description" content="A self-paced online journalism course for Zimbabwe, the diaspora and the wider continent. 13 units, interactive lessons, checkpoints and a certificate. Pay with EcoCash, OneMoney or card.">
+  <!-- Flip to index, follow when you launch publicly. -->
   <meta name="robots" content="noindex, follow">
   <link rel="apple-touch-icon" href="/icon.png?v=2">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
@@ -16,23 +16,216 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css?v=102">
-  <link rel="stylesheet" href="/academy/academy.css?v=4">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mutapa Times Academy">
+  <meta property="og:description" content="Learn to report on Zimbabwe, the diaspora and the wider continent. Self-paced, interactive, with a certificate.">
+  <meta property="og:url" content="https://mutapatimes.com/academy/">
+
+  <style>
+  .al { max-width: 860px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+  .al-top { display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid var(--ink); padding: .7rem 0; margin-bottom: 1.5rem; }
+  .al-top a { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
+  .al-top span { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+
+  .al-hero { padding: 1.4rem 0 1rem; }
+  .al-eyebrow { font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 .6rem; }
+  .al-h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: clamp(2rem, 6.5vw, 3.2rem); line-height: 1.06; margin: 0 0 1rem; }
+  .al-sub { font-size: 1.15rem; color: #3a3a3a; max-width: 38rem; margin: 0 0 1.4rem; }
+  .al-cta { display: inline-flex; align-items: center; gap: .6rem; background: var(--accent); color: #fff;
+    border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 1.05rem; padding: .95rem 1.7rem;
+    border-radius: 99px; text-decoration: none; transition: opacity .15s, transform .1s; }
+  .al-cta:hover { opacity: .92; } .al-cta:active { transform: translateY(1px); }
+  .al-pricechip { display: inline-block; font-weight: 700; font-size: .9rem; background: var(--bg); color: var(--ink);
+    padding: .35rem .8rem; border-radius: 99px; margin-left: .6rem; }
+  .al-paynote { font-size: .85rem; color: #6a6a6a; margin: .9rem 0 0; }
+
+  .al-refbanner { background: #f3f8f4; border: 1px solid #cfe6d6; border-radius: 12px; padding: .8rem 1rem;
+    margin: 0 0 1.4rem; font-weight: 600; color: #1a7f44; }
+  .al-refbanner[hidden] { display: none; }
+
+  .al-section { margin: 2.4rem 0 0; }
+  .al-h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.6rem; margin: 0 0 1rem;
+    border-bottom: 2px solid var(--ink); padding-bottom: .4rem; }
+  .al-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+  .al-card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.1rem; }
+  .al-card h3 { font-size: 1rem; margin: 0 0 .3rem; }
+  .al-card p { font-size: .9rem; color: #5a5a5a; margin: 0; }
+  .al-list { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; }
+  .al-list li { display: flex; gap: .7rem; align-items: flex-start; }
+  .al-list b { flex: 0 0 auto; color: var(--accent); font-weight: 800; }
+  .al-stats { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 1.2rem 0 0; }
+  .al-stat b { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 2rem; color: var(--accent); line-height: 1; }
+  .al-stat span { font-size: .82rem; color: #6a6a6a; }
+
+  /* Signup card */
+  .al-signup { background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; padding: 1.5rem 1.3rem; margin: 2.4rem 0 0; }
+  .al-signup h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.5rem; margin: 0 0 .3rem; }
+  .al-signup .price { font-weight: 700; color: var(--accent); margin: 0 0 1.1rem; }
+  .al-field { margin: 0 0 .8rem; }
+  .al-field label { display: block; font-size: .82rem; font-weight: 700; color: #6a6a6a; margin: 0 0 .3rem; }
+  .al-input { width: 100%; font: inherit; border: 1.5px solid var(--rule); border-radius: 10px; padding: .8rem .9rem; background: #fff; color: var(--ink); }
+  .al-input:focus { outline: none; border-color: var(--ink); }
+  .al-pay { width: 100%; background: var(--accent); color: #fff; border: 0; cursor: pointer; font: inherit; font-weight: 700;
+    font-size: 1.05rem; padding: .95rem 1.4rem; border-radius: 99px; margin-top: .4rem; transition: opacity .15s; }
+  .al-pay:hover { opacity: .92; } .al-pay:disabled { opacity: .5; cursor: default; }
+  .al-methods { display: flex; flex-wrap: wrap; gap: .4rem; margin: .9rem 0 0; }
+  .al-method { font-size: .75rem; font-weight: 700; background: var(--bg); color: #4a4a4a; padding: .3rem .6rem; border-radius: 6px; }
+  .al-status { font-size: .9rem; margin: .8rem 0 0; min-height: 1.2em; }
+  .al-status .err { color: var(--accent); font-weight: 600; }
+  .al-status .ok { color: #1a7f44; font-weight: 700; }
+  .al-fine { font-size: .78rem; color: #8a8a8a; margin: .8rem 0 0; }
+
+  .al-faq { margin: 2.4rem 0 0; }
+  .al-faq details { border-bottom: 1px solid var(--rule); padding: .8rem 0; }
+  .al-faq summary { font-weight: 700; cursor: pointer; }
+  .al-faq p { color: #5a5a5a; margin: .6rem 0 0; }
+
+  .al-foot { margin: 2.6rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--rule); font-size: .85rem; color: #8a8a8a; }
+  .al-foot a { color: var(--accent); }
+
+  @media (max-width: 560px) { .al-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-  <header class="ac-appbar">
-    <div class="ac-appbar-in">
-      <a class="ac-brand" href="/">The Mutapa Times</a>
-      <div class="ac-chips">
-        <span class="ac-chip ac-chip--xp" id="xpChip">0 XP</span>
-        <span class="ac-chip ac-chip--streak" id="streakChip">0 days</span>
-        <button class="ac-chip ac-chip--btn" id="soundBtn" type="button" aria-label="Sound">🔊</button>
-      </div>
+  <div class="al">
+    <div class="al-top">
+      <a href="/">The Mutapa Times</a>
+      <span>Academy</span>
     </div>
-  </header>
 
-  <main class="ac-wrap"><div id="view"></div></main>
+    <section class="al-hero">
+      <p class="al-eyebrow">Mutapa Times Academy</p>
+      <h1 class="al-h1">Become a journalist for Zimbabwe and the diaspora</h1>
+      <p class="al-sub">A self-paced online course that takes you from your first story idea to a finished, publishable piece, then a certificate you can put on your CV and LinkedIn.</p>
+      <a class="al-cta" href="#signup">Start the course <span class="al-pricechip" id="heroPrice">US$15</span></a>
+      <p class="al-paynote">Pay once. Lifetime access. EcoCash, OneMoney, Zimswitch, Visa or Mastercard.</p>
+    </section>
 
-  <script src="/academy/course.js?v=11"></script>
-  <script src="/academy/app.js?v=6"></script>
+    <div class="al-refbanner" id="refBanner" hidden></div>
+
+    <section class="al-section">
+      <div class="al-stats">
+        <div class="al-stat"><b>13</b><span>units</span></div>
+        <div class="al-stat"><b>54</b><span>lessons</span></div>
+        <div class="al-stat"><b>200+</b><span>interactive exercises</span></div>
+        <div class="al-stat"><b>1</b><span>certificate</span></div>
+      </div>
+    </section>
+
+    <section class="al-section">
+      <h2 class="al-h2">What you'll learn</h2>
+      <div class="al-grid">
+        <div class="al-card"><h3>The foundations</h3><p>What news is, news versus PR, our voice, and the ethics that hold it up.</p></div>
+        <div class="al-card"><h3>Inside the newsroom</h3><p>Who does what, how a story moves, and how to read any outlet.</p></div>
+        <div class="al-card"><h3>How news makes money</h3><p>Revenue models, paywalls, and how funding shapes coverage.</p></div>
+        <div class="al-card"><h3>Reporting Africa</h3><p>The stereotypes to avoid and how to tell fuller, fairer stories of the continent.</p></div>
+        <div class="al-card"><h3>The craft</h3><p>Finding sources, interviewing, structure, the lede, clear writing and self-editing.</p></div>
+        <div class="al-card"><h3>Fact-checking and copy</h3><p>Verify every claim, then catch every error before it reaches a reader.</p></div>
+        <div class="al-card"><h3>Getting hired</h3><p>A CV and cover letter that get a journalist noticed.</p></div>
+        <div class="al-card"><h3>Going independent</h3><p>Build your own publication: plan and launch a Substack newsletter.</p></div>
+      </div>
+    </section>
+
+    <section class="al-section">
+      <h2 class="al-h2">How it works</h2>
+      <ul class="al-list">
+        <li><b>1</b><span>Learn at your own pace on any device, with bite-sized lessons, quizzes and instant feedback.</span></li>
+        <li><b>2</b><span>Master each lesson. You need 80% to pass, so you genuinely learn it, not just click through.</span></li>
+        <li><b>3</b><span>Clear the checkpoint exams and a final exam that gate your progress.</span></li>
+        <li><b>4</b><span>Earn your certificate, and list The Mutapa Times Academy on your CV and LinkedIn.</span></li>
+      </ul>
+    </section>
+
+    <section class="al-signup" id="signup">
+      <h2>Start the course</h2>
+      <p class="price" id="signupPrice">One-time payment of US$15. Lifetime access.</p>
+      <form id="payForm" novalidate>
+        <div class="al-field">
+          <label for="nm">Your full name</label>
+          <input class="al-input" id="nm" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda">
+        </div>
+        <div class="al-field">
+          <label for="em">Email address</label>
+          <input class="al-input" id="em" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com">
+        </div>
+        <button class="al-pay" id="payBtn" type="submit">Pay and start</button>
+      </form>
+      <div class="al-methods">
+        <span class="al-method">EcoCash</span><span class="al-method">OneMoney</span>
+        <span class="al-method">Zimswitch</span><span class="al-method">Visa</span><span class="al-method">Mastercard</span>
+      </div>
+      <p class="al-status" id="status"></p>
+      <p class="al-fine">By enrolling you agree to receive the Mutapa Times newsletter. You can unsubscribe any time. Payments are processed securely by Paynow.</p>
+    </section>
+
+    <section class="al-faq">
+      <h2 class="al-h2">Questions</h2>
+      <details><summary>Can I pay from outside Zimbabwe?</summary><p>Yes. Pay with any Visa or Mastercard from anywhere, or with EcoCash, OneMoney and Zimswitch inside Zimbabwe.</p></details>
+      <details><summary>How long do I have access?</summary><p>It is a one-time payment with lifetime access. Learn at your own pace.</p></details>
+      <details><summary>Do I get a certificate?</summary><p>Yes. Finish the course and pass the final exam at 80% to earn your certificate, which you can download or have emailed to you.</p></details>
+      <details><summary>Can I refer friends?</summary><p>Yes. After you join you get a personal referral link to share. Friends who use it get a discount, and we track every referral you send.</p></details>
+    </section>
+
+    <p class="al-foot">A project of <a href="/">The Mutapa Times</a>. Questions? Reply to any newsletter email and we will help.</p>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+    // ---- Config: set PAY_ENDPOINT to your deployed academy-pay Worker ----
+    var PAY_ENDPOINT = ""; // e.g. "https://academy-pay.NAME.workers.dev"
+    var PRICE = 15;        // one-time price
+    var CURRENCY = "US$";
+    var REF_DISCOUNT = 0.15; // 15% off for referred friends
+
+    var priceStr = CURRENCY + PRICE;
+    document.getElementById("heroPrice").textContent = priceStr;
+
+    // ---- Referral capture ----
+    var params = new URLSearchParams(location.search);
+    var ref = params.get("ref");
+    if (ref) {
+      try { sessionStorage.setItem("mt_academy_ref", ref); } catch (e) {}
+      var discounted = (PRICE * (1 - REF_DISCOUNT)).toFixed(2).replace(/\.00$/, "");
+      var rb = document.getElementById("refBanner");
+      rb.textContent = "A friend referred you. You get " + Math.round(REF_DISCOUNT * 100) + "% off: " + CURRENCY + discounted + " instead of " + priceStr + ".";
+      rb.hidden = false;
+      document.getElementById("heroPrice").textContent = CURRENCY + discounted;
+      document.getElementById("signupPrice").textContent = "One-time payment of " + CURRENCY + discounted + " (" + Math.round(REF_DISCOUNT * 100) + "% friend discount). Lifetime access.";
+    } else {
+      document.getElementById("signupPrice").textContent = "One-time payment of " + priceStr + ". Lifetime access.";
+    }
+    var storedRef = (function () { try { return sessionStorage.getItem("mt_academy_ref") || ref || ""; } catch (e) { return ref || ""; } })();
+
+    var form = document.getElementById("payForm");
+    var status = document.getElementById("status");
+    var btn = document.getElementById("payBtn");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("nm").value.trim();
+      var email = document.getElementById("em").value.trim();
+      if (name.length < 2) { status.innerHTML = '<span class="err">Please enter your name.</span>'; return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { status.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
+      if (!PAY_ENDPOINT) {
+        status.innerHTML = '<span class="ok">Enrolment opens shortly. We have noted your interest, check your inbox soon.</span>';
+        return;
+      }
+      btn.disabled = true; status.textContent = "Setting up your secure payment...";
+      fetch(PAY_ENDPOINT, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "create", name: name, email: email, ref: storedRef })
+      })
+      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function (d) {
+        if (d && d.browserurl) { location.href = d.browserurl; }
+        else { throw 0; }
+      })
+      .catch(function () { btn.disabled = false; status.innerHTML = '<span class="err">Could not start the payment. Please try again.</span>'; });
+    });
+  })();
+  </script>
 </body>
 </html>
