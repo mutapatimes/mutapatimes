@@ -337,3 +337,37 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   animation: ac-reveal .5s var(--ease-out) both; }
 .ac-card-img { margin: 0 0 .9rem; border-radius: 10px; overflow: hidden; }
 .ac-card-img img { display: block; width: 100%; max-height: 220px; object-fit: cover; }
+
+/* ============================================================
+   v6: serious exam mode (final exam + checkpoints)
+   ============================================================ */
+body.ac-exam { background: #0f0c0a; }
+body.ac-exam .ac-appbar { background: #15110e; border-bottom-color: rgba(255,255,255,.12); }
+body.ac-exam .ac-brand { color: #f4ede0; }
+body.ac-exam .ac-eyebrow { color: #ff6b5a; }
+body.ac-exam .ac-h1 { color: #f4ede0; }
+body.ac-exam .ac-back { color: #ff6b5a; }
+body.ac-exam-running .ac-appbar { top: 2.1rem; }
+body.ac-exam-running { padding-top: 2.1rem; }
+
+.ac-exambar { position: fixed; top: 0; left: 0; right: 0; z-index: 60; height: 2.1rem;
+  display: flex; align-items: center; justify-content: center; gap: .55rem;
+  background: #0a0a0a; color: #fff; font-weight: 800; letter-spacing: .14em; font-size: .72rem;
+  text-transform: uppercase; border-bottom: 2px solid var(--accent); }
+.ac-exambar b { font-variant-numeric: tabular-nums; letter-spacing: .06em; color: #fff; }
+.ac-exambar b.low { color: #ff5a5a; animation: ac-expulse 1s infinite; }
+.ac-exam-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: ac-expulse 1.4s infinite; }
+@keyframes ac-expulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+
+.ac-exam-rules { background: #1a1613; color: #ece4d8; border: 1px solid rgba(255,255,255,.14);
+  border-radius: 14px; padding: 1.3rem 1.4rem; margin: 0 0 1.1rem; }
+.ac-exam-rules h2 { font-family: "Playfair Display", Georgia, serif; color: #fff; margin: 0 0 .5rem; font-size: 1.4rem; }
+.ac-exam-rules p { margin: 0 0 .6rem; color: #cfc6ba; }
+.ac-exam-rules ul { margin: .2rem 0 0; padding-left: 1.1rem; }
+.ac-exam-rules li { margin: .35rem 0; }
+.ac-exam-eg { background: #14110e; border: 1px dashed rgba(255,255,255,.2); border-radius: 12px; padding: 1.1rem 1.2rem; margin: 0 0 1.2rem; }
+.ac-exam-eg .tag { font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #9a9085; margin: 0 0 .6rem; }
+.ac-exam-eg .ac-q { color: #ece4d8; }
+.ac-exam-eg .ac-opt { background: #241f1b; color: #ece4d8; border-color: rgba(255,255,255,.18); cursor: default; }
+.ac-exam-eg .ac-opt.is-correct { background: #143a22; border-color: #1a7f44; color: #d7f0df; }
+.ac-exam-eg .ac-explain { color: #cfc6ba; }

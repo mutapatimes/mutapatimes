@@ -179,6 +179,32 @@
     node.classList.add(ok ? "ac-anim-pop" : "ac-anim-shake");
   }
 
+  // ---------- exam timer ----------
+  var examTimer = null;
+  function clearExamTimer() {
+    if (examTimer) { clearInterval(examTimer); examTimer = null; }
+    var b = document.getElementById("ac-exambar"); if (b) b.remove();
+    document.body.classList.remove("ac-exam-running");
+  }
+  function leaveExam() { clearExamTimer(); document.body.classList.remove("ac-exam"); }
+  function startExamTimer(seconds, onExpire) {
+    clearExamTimer();
+    var bar = el("div", "ac-exambar"); bar.id = "ac-exambar";
+    bar.appendChild(el("span", "ac-exam-dot"));
+    bar.appendChild(document.createTextNode("Exam in progress"));
+    var b = el("b"); b.id = "ac-timerval"; bar.appendChild(b);
+    document.body.appendChild(bar); document.body.classList.add("ac-exam-running");
+    var t = seconds;
+    function fmt(x) { var m = Math.floor(x / 60), s = x % 60; return m + ":" + String(s).padStart(2, "0"); }
+    function tick() {
+      var bv = document.getElementById("ac-timerval");
+      if (bv) { bv.textContent = " " + fmt(t); bv.classList.toggle("low", t <= 30); }
+      if (t <= 0) { clearExamTimer(); onExpire(); return; }
+      t--;
+    }
+    tick(); examTimer = setInterval(tick, 1000);
+  }
+
   // ---------- chips / sound toggle ----------
   function renderChips() {
     if (xpChip) xpChip.textContent = state.xp + " XP";
@@ -190,6 +216,7 @@
 
   // ---------- home / lesson map (winding path) ----------
   function renderHome() {
+    leaveExam();
     clear(view); renderChips();
     var prog = courseProgress();
 
@@ -271,6 +298,7 @@
     if (!lesson) { go("#/"); return; }
     if (!isUnlocked(id)) { go("#/"); return; }
     examMode = !!lesson.checkpoint && !REVIEW;
+    clearExamTimer(); document.body.classList.toggle("ac-exam", examMode);
     clear(view); renderChips();
 
     var top = el("div", "ac-lessontop");
@@ -289,25 +317,61 @@
       fig.appendChild(im); view.appendChild(fig);
     }
 
-    lesson.cards.forEach(function (c, i) {
-      var card = el("section", "ac-card ac-reveal");
-      card.style.animationDelay = (i * 0.06) + "s";
-      card.appendChild(el("p", "ac-kicker", "Read"));
-      card.appendChild(el("h2", null, c.h));
-      c.body.forEach(function (p) { card.appendChild(el("p", null, p)); });
-      view.appendChild(card);
-    });
+    var examSeconds = Math.max(120, lesson.exercises.length * 45);
+    var examExpired = false;
+
+    if (examMode) {
+      var rules = el("div", "ac-exam-rules");
+      rules.appendChild(el("h2", null, lesson.id === "final-exam" ? "This is the final step." : "Checkpoint exam"));
+      rules.appendChild(el("p", null, lesson.id === "final-exam"
+        ? "Everything you have learned comes down to this. Pass, and you complete the Mutapa Times Academy."
+        : "A serious test of this unit. Treat it like the real thing."));
+      var ul = document.createElement("ul");
+      [lesson.exercises.length + " questions",
+        "About " + Math.ceil(examSeconds / 60) + " minutes, timed",
+        "80% to pass",
+        "No explanations until the end",
+        "The clock starts the moment you begin"].forEach(function (t) { ul.appendChild(el("li", null, t)); });
+      rules.appendChild(ul);
+      view.appendChild(rules);
+
+      var eg = el("div", "ac-exam-eg");
+      eg.appendChild(el("p", "tag", "Example question, not scored"));
+      eg.appendChild(el("p", "ac-q", "Which of these is news rather than PR?"));
+      var egopts = el("div", "ac-opts");
+      [["A company calling itself proud and world-class", false],
+       ["A sourced report that a state firm's losses widened", true],
+       ["A call to back our cause today", false]].forEach(function (o) {
+        var b = el("button", "ac-opt" + (o[1] ? " is-correct" : "")); b.type = "button"; b.disabled = true; b.textContent = o[0]; egopts.appendChild(b);
+      });
+      eg.appendChild(egopts);
+      eg.appendChild(el("p", "ac-explain good", "The middle one is news: it reports what happened, with a source. The real exam looks like this, but with no answers shown."));
+      view.appendChild(eg);
+    } else {
+      lesson.cards.forEach(function (c, i) {
+        var card = el("section", "ac-card ac-reveal");
+        card.style.animationDelay = (i * 0.06) + "s";
+        card.appendChild(el("p", "ac-kicker", "Read"));
+        card.appendChild(el("h2", null, c.h));
+        c.body.forEach(function (p) { card.appendChild(el("p", null, p)); });
+        view.appendChild(card);
+      });
+    }
 
     var exHost = el("section", "ac-card ac-exhost");
     view.appendChild(exHost);
 
     var startWrap = el("div", "ac-actions");
-    var startBtn = el("button", "ac-btn ac-btn--lg", "Start the exercises (" + lesson.exercises.length + ")");
+    var startBtn = el("button", "ac-btn ac-btn--lg", examMode ? "Begin the exam" : ("Start the exercises (" + lesson.exercises.length + ")"));
     startWrap.appendChild(startBtn);
     exHost.appendChild(startWrap);
 
     var idx = 0;
-    startBtn.addEventListener("click", function () { Sound.play("tap"); runExercise(); });
+    startBtn.addEventListener("click", function () {
+      Sound.play("tap");
+      if (examMode) startExamTimer(examSeconds, function () { examExpired = true; idx = lesson.exercises.length; runExercise(); });
+      runExercise();
+    });
 
     function runExercise() {
       clear(exHost);
@@ -331,15 +395,15 @@
     }
 
     function complete() {
-      clear(exHost);
+      clear(exHost); clearExamTimer();
       var ls = lessonState(lesson.id);
       var pct = lessonScore(lesson);
       var passed = REVIEW || ls.done || pct >= LESSON_PASS;
       if (!passed) {
         save(); Sound.play("wrong");
         var fail = el("div", "ac-done-inline");
-        fail.appendChild(el("h2", null, "Not passed yet"));
-        fail.appendChild(el("p", null, "You scored " + pct + "%. You need " + LESSON_PASS + "% to complete this " + (lesson.checkpoint ? "checkpoint" : "lesson") + ". Review the material and try again."));
+        fail.appendChild(el("h2", null, examExpired ? "Time is up" : "Not passed yet"));
+        fail.appendChild(el("p", null, (examExpired ? "The clock ran out. " : "") + "You scored " + pct + "%. You need " + LESSON_PASS + "% to complete this " + (lesson.checkpoint ? "checkpoint" : "lesson") + ". Review the material and try again."));
         var fa = el("div", "ac-actions");
         var rt = el("button", "ac-btn", "Retry"); rt.addEventListener("click", function () { Sound.play("tap"); renderLesson(lesson.id); });
         var bk = el("button", "ac-btn ac-btn--ghost", "Back to map"); bk.addEventListener("click", function () { Sound.play("tap"); go("#/"); });
@@ -636,7 +700,7 @@
       if (ex.model) box.appendChild(model(ex.model));
       host.appendChild(box); Sound.play("correct"); finish();
     }
-    function model(text) { var d = document.createElement("details"); d.className = "ac-model"; d.open = true; var s = document.createElement("summary"); s.textContent = "An editor's version"; d.appendChild(s); d.appendChild(el("p", null, text)); return d; }
+    function model(text) { var d = document.createElement("details"); d.className = "ac-model"; d.open = true; var s = document.createElement("summary"); s.textContent = "An editor's version"; d.appendChild(s); String(text).split("\n").forEach(function (p) { p = p.trim(); if (p) d.appendChild(el("p", null, p)); }); return d; }
     function fbList(title, items) { var w = el("div", "ac-fb"); w.appendChild(el("h3", null, title)); var ul = el("ul"); items.forEach(function (t) { ul.appendChild(el("li", null, t)); }); w.appendChild(ul); return w; }
     function finish() { done(); var a2 = el("div", "ac-actions"); var c = el("button", "ac-btn", "Continue"); c.addEventListener("click", function () { Sound.play("tap"); next(); }); a2.appendChild(c); host.appendChild(a2); }
   };
@@ -648,6 +712,7 @@
 
   function renderCertificate() {
     if (!certEligible()) { go("#/"); return; }
+    leaveExam();
     clear(view); renderChips();
     var sc = computeScore();
 

@@ -3911,99 +3911,171 @@ window.COURSE = {
         },
         {
           id: "capstone-press-release",
-          title: "Capstone: from press release to published story",
-          minutes: 25,
-          intro: "Put it all into practice. A company has sent a press release. Take it from your inbox to a published story, the right way.",
+          title: "Capstone: turn a real press release into a story",
+          minutes: 30,
+          intro: "The full job, end to end. A real press release has landed from Coca-Cola Beverages Africa in Kenya. Research it, critique it, find sources, pitch it, structure it, fact-check it, and take it to print.",
           cards: [
             {
               h: "The brief",
               body: [
-                "A press release has landed from Savanna Solar, a clean-energy company in Kenya. (It is a made-up company, for this exercise.)",
-                "Read it, then work through the steps: judge it, structure the article, plan the newsroom roll-out, pitch it, and work out how it pays. Minimal writing, but you will show you understand the whole process."
+                "A media release has arrived from Coca-Cola Beverages Africa (CCBA) in Kenya, headlined 'CCBA in Kenya supports 3,000 youth with skills and enterprise development'. This is a real release.",
+                "Your job is to turn it into a fair Mutapa Times story. Work the whole process below. You can scroll up to re-read the release at any time."
               ]
             },
             {
-              h: "The press release",
+              h: "The press release (key points)",
               body: [
-                "FOR IMMEDIATE RELEASE. Savanna Solar, the leading and most innovative clean-energy company in East Africa, is proud to announce a game-changing 50 megawatt solar plant near Nakuru. The world-class project will transform the region and create thousands of jobs. Construction begins next month, backed by a US$80 million investment from international partners. CEO Aisha Mwangi said: We are thrilled to lead Africa into a brighter future.",
-                "What the release does not say: how many jobs are permanent, where the US$80 million comes from, what happens to the land, or whether the local grid can take the power."
+                "CCBA in Kenya, with partner Emerging Leaders, runs Uwezo Kwa Vijana (Skills for Youth), a six-month programme launched in January 2026. It says it aims to reach 3,000 participants in 2026, training them in confidence, financial literacy and starting a small business, with peer hubs and regular review sessions.",
+                "It says women make up 60 percent of participants (1,800), and at least 5 percent are persons with disabilities. More than half are expected to move into retail, services and recycling. It runs in Nairobi and Nakuru, with expansion to Makueni and Kisii planned.",
+                "The only person quoted is CCBA's Public Affairs Director, Eric Githua: 'We are focused on supporting youth with practical skills that can help unlock economic opportunity.'"
+              ]
+            },
+            {
+              h: "A weak first draft (what to avoid)",
+              body: [
+                "\"Coca-Cola Beverages Africa is proud to be transforming the lives of 3,000 young Kenyans through its world-class Uwezo Kwa Vijana programme, empowering youth for a brighter future while doing business the right way.\"",
+                "That is the press release with a new byline: it repeats the spin, reports a 2026 target as if it were already done, and quotes no one but the company. The steps below build the version that does the job properly."
               ]
             }
           ],
           exercises: [
             {
-              type: "highlight",
-              q: "Tap the spin.",
-              instruction: "Tap the self-praising words a reporter should not repeat as fact.",
-              tokens: ["Savanna", "Solar", "the", "leading", "and", "most", "innovative", "clean-energy", "company", "is", "proud", "to", "announce", "a", "game-changing", "plant"],
-              targets: [3, 6, 10, 14],
-              explain: "Leading, innovative, proud and game-changing are the company praising itself. Strip them and report what is verifiable."
-            },
-            {
               type: "mcq",
-              q: "What is the right journalistic approach to this release?",
+              q: "The headline says CCBA 'supports 3,000 youth', but the body says the programme 'aims to reach' 3,000 in 2026. How should you report it?",
               options: [
-                "Publish it as a story, lightly reworded",
-                "Verify the claims, find what is genuinely newsworthy, and seek independent voices",
-                "Run it as an opinion column",
-                "Ignore it, company news is never relevant"
+                "As an achievement: 3,000 youth have been supported",
+                "As a 2026 target, and ask how many have actually completed it so far",
+                "Exactly as the company's headline puts it",
+                "Leave the number out entirely"
               ],
               answer: 1,
-              explain: "A release is a tip, not a story. Verify, contextualise, and talk to people beyond the company."
+              explain: "A target is not a result. Report it as an aim and press for the real number completed."
             },
             {
               type: "categorize",
-              q: "Sort the release's statements.",
+              q: "Sort statements from the release.",
               buckets: [
-                { id: "report", label: "Report (after checking)" },
-                { id: "drop", label: "Drop or attribute as spin" }
+                { id: "fact", label: "Checkable fact" },
+                { id: "spin", label: "Aspiration or spin" }
               ],
               items: [
-                { text: "A 50MW plant is planned near Nakuru", bucket: "report" },
-                { text: "US$80m investment, construction next month", bucket: "report" },
-                { text: "The most innovative company in East Africa", bucket: "drop" },
-                { text: "It will transform the region", bucket: "drop" },
-                { text: "Thousands of jobs (number unverified)", bucket: "drop" }
+                { text: "Run with the partner Emerging Leaders", bucket: "fact" },
+                { text: "Women are 60% of participants (1,800)", bucket: "fact" },
+                { text: "It currently runs in Nairobi and Nakuru", bucket: "fact" },
+                { text: "It will unlock a brighter future", bucket: "spin" },
+                { text: "It reflects doing business the right way", bucket: "spin" }
               ],
-              explain: "Concrete, checkable facts can be reported once verified. Self-praise and vague promises are spin to drop or attribute."
+              explain: "Names, places and figures can be checked. Slogans about brighter futures are framing to attribute, not state as fact."
+            },
+            {
+              type: "multi",
+              q: "Before publishing, what would you want that the release does not give? Select all.",
+              options: [
+                "Independent evidence that past participants gained lasting income",
+                "The voices of actual participants",
+                "How much CCBA is spending, and how that compares to the need",
+                "A high-resolution company logo"
+              ],
+              answers: [0, 1, 2],
+              explain: "Outcomes, real voices and scale turn a release into journalism. The logo is not journalism."
             },
             {
               type: "mcq",
-              q: "Which framing serves readers best here?",
+              q: "The release quotes only CCBA's director. Who should you add for a fair story?",
               options: [
-                "A celebration of the company's vision",
-                "Straight news on the plant, with scrutiny of the jobs, funding and grid claims",
-                "A disaster story about the energy sector",
-                "An opinion piece arguing for solar power"
+                "No one, the director is enough",
+                "Participants, an independent youth-employment expert, and outcome data",
+                "Only Coca-Cola's head office",
+                "A rival drinks company for balance"
               ],
               answer: 1,
-              explain: "Report the development, but hold the claims to account. Jobs, money and impact are the real public-interest questions."
+              explain: "Seek the people affected and an independent expert, not just the funder."
+            },
+            {
+              type: "mcq",
+              q: "What is a fair angle here, neither PR nor a hit piece?",
+              options: [
+                "Celebrate the company's generosity",
+                "Report the scheme and its scale, while testing whether it delivers lasting income and noting it is company-funded CSR",
+                "Assume it is worthless corporate spin",
+                "Ignore it"
+              ],
+              answer: 1,
+              explain: "Report it straight and hold the claims to account. That serves readers, not the brand or a grudge."
+            },
+            {
+              type: "mcq",
+              q: "Which is the strongest, fairest lede?",
+              options: [
+                "Coca-Cola Beverages Africa is proud to be empowering 3,000 young Kenyans through its world-class skills programme.",
+                "A Coca-Cola bottler is funding a six-month scheme that aims to reach 3,000 young Kenyans this year, part of a wider corporate push into youth skills.",
+                "Youth skills, an important topic, are in the news again this week.",
+                "In a move announced recently, there are developments in the training sector."
+              ],
+              answer: 1,
+              explain: "It states who, what and the honest scope (a target), with context, and attributes nothing as fact that it cannot stand up."
+            },
+            {
+              type: "mcq",
+              q: "The release says women are 60% of 3,000 participants, given as 1,800. Checking the figure, it is:",
+              options: [
+                "Wrong: 60% of 3,000 is 1,500",
+                "Correct: 1,800 is 60% of 3,000",
+                "Impossible to check",
+                "Correct only if rounded"
+              ],
+              answer: 1,
+              explain: "60% of 3,000 is 1,800. Always run the numbers yourself."
+            },
+            {
+              type: "mcq",
+              q: "The release says the programme 'has been implemented in Nairobi and Nakuru' and is 'expected to expand to Makueni and Kisii'. Accurately, you write that it:",
+              options: [
+                "runs in all four counties",
+                "currently runs in Nairobi and Nakuru, with expansion to Makueni and Kisii planned",
+                "has finished in Nairobi and Nakuru",
+                "will run only in Makueni and Kisii"
+              ],
+              answer: 1,
+              explain: "Report what is happening now versus what is planned. Do not collapse the two."
             },
             {
               type: "order",
               q: "Order your article, top to bottom.",
               items: [
-                "Lede: a 50MW solar plant is planned near Nakuru, with US$80m behind it",
-                "The verified facts: size, timeline, who is funding it",
-                "Context: the region's power needs and what the grid can handle",
-                "A company quote, balanced against an independent voice",
-                "Background on the company and the unanswered questions"
+                "Lede: a Coca-Cola bottler is funding a scheme aiming to train 3,000 young Kenyans this year",
+                "The verified facts: partner, modules, the 60% and 5% figures, the counties",
+                "Context: youth unemployment, and that 3,000 is a target not a result",
+                "Scrutiny: only company data so far, no independent outcome figures",
+                "A participant or expert voice, then the company's response"
               ],
-              explain: "Most important and verified first, then context, then quotes and background."
+              explain: "Lead with the honest news, then facts, context, scrutiny and voices, not the company's slogans."
             },
             {
               type: "order",
               q: "Order the newsroom roll-out, first to last.",
               items: [
                 "Pitch approved by the editor",
-                "Report and verify the claims",
+                "Report and verify: call CCBA, find participants and an expert",
                 "Write the draft",
-                "Sub-editor checks and tightens the copy",
-                "Fact-check names, figures and the quote",
-                "Write an accurate headline and standfirst",
-                "Publish, then promote"
+                "Sub-editor checks and tightens",
+                "Fact-check figures, names and the quote",
+                "Disclosure and ethics check: is Coca-Cola an advertiser?",
+                "Accurate headline and standfirst, then publish"
               ],
-              explain: "Verify, write, edit, fact-check, then headline and publish. Promotion comes after it is right, not before."
+              explain: "Verify, write, edit, fact-check, clear conflicts, then headline and publish."
+            },
+            {
+              type: "mcq",
+              q: "Coca-Cola is a major advertiser. The right approach is to:",
+              options: [
+                "Avoid covering advertisers at all",
+                "Cover it on the merits and disclose any commercial relationship, without softening it",
+                "Only run positive coverage of advertisers",
+                "Let the sales team approve the story"
+              ],
+              answer: 1,
+              explain: "Independence first. Cover it fairly and be transparent about any relationship."
             },
             {
               type: "order",
@@ -4022,27 +4094,28 @@ window.COURSE = {
               q: "How could this story help sustain the newsroom? Select all that apply.",
               options: [
                 "Distinctive, verified reporting that draws and keeps readers",
-                "Traffic and ad views from a story people share",
-                "A sponsorship paid by Savanna Solar to cover it",
-                "Building trust that supports subscriptions over time"
+                "Traffic from a story people share",
+                "A payment from Coca-Cola to run it",
+                "Trust that supports subscriptions over time"
               ],
               answers: [0, 1, 3],
-              explain: "Reader revenue, reach and trust all help. Taking money from the company you cover is a conflict of interest, not a business model."
+              explain: "Reader revenue, reach and trust. Taking the subject's money is a conflict of interest, not income."
             },
             {
               type: "write",
-              q: "Write your pitch subject line.",
+              q: "Write your nut graph, then see the finished article.",
               brief: [
-                "In one line, write the email subject line you would send the editor for this story.",
-                "Make it specific and newsy, not vague."
+                "In one or two sentences, frame this story for a Mutapa Times reader: what it is, and the honest scope.",
+                "Then reveal the editor's full version to compare with yours."
               ],
               checklist: [
-                "Does it state the actual news (the plant, the money)?",
-                "Is it specific, not 'story idea'?",
-                "Would an editor open it?"
+                "Do you say who is funding it and what it is?",
+                "Do you make clear 3,000 is a 2026 target, not a result?",
+                "Do you avoid repeating the company's slogans?",
+                "Have you signalled the scrutiny, like the lack of independent outcome data?"
               ],
-              model: "Subject line: US$80m, 50MW solar plant planned near Nakuru, but who gets the jobs?",
-              exerciseId: "capstone-subject-1"
+              model: "How an editor might run it:\nCoca-Cola bottler targets 3,000 young Kenyans with skills scheme\nA Coca-Cola bottler is funding a six-month training programme that aims to reach 3,000 young Kenyans this year, the latest corporate scheme aimed at the country's stubborn youth unemployment.\nCoca-Cola Beverages Africa (CCBA) in Kenya says its Uwezo Kwa Vijana programme, run with the non-profit Emerging Leaders, trains young people in confidence, financial literacy and starting a small business. It says women make up 60 percent of those enrolled, or 1,800 people, and that at least 5 percent are persons with disabilities.\nThose figures, and the headline promise of 3,000 beneficiaries, are the company's own. The 3,000 is a target for 2026, not a number already trained, and CCBA has not released independent data on how many past participants went on to earn a lasting income, the real test of any such scheme.\nThe programme currently runs in Nairobi and Nakuru, with expansion to Makueni and Kisii planned. More than half of participants are expected to move into retail, services and recycling, the last of which is closely tied to Coca-Cola's own packaging interests.\n'We are focused on supporting youth with practical skills that can help unlock economic opportunity,' said Eric Githua, the company's public affairs director.\nA published version would test that against the voices of participants and independent experts on youth employment.",
+              exerciseId: "capstone-ccba-1"
             }
           ]
         }
