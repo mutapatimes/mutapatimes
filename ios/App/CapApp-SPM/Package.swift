@@ -15,8 +15,7 @@ let package = Package(
         .package(name: "CapacitorApp", path: "../../../node_modules/@capacitor/app"),
         .package(name: "CapacitorPushNotifications", path: "../../../node_modules/@capacitor/push-notifications"),
         .package(name: "CapacitorSplashScreen", path: "../../../node_modules/@capacitor/splash-screen"),
-        .package(name: "CapacitorStatusBar", path: "../../../node_modules/@capacitor/status-bar"),
-        .package(name: "OnesignalCordovaPlugin", path: "../../capacitor-cordova-ios-plugins/sources/OnesignalCordovaPlugin")
+        .package(name: "CapacitorStatusBar", path: "../../../node_modules/@capacitor/status-bar")
     ],
     targets: [
         .target(
@@ -27,8 +26,7 @@ let package = Package(
                 .product(name: "CapacitorApp", package: "CapacitorApp"),
                 .product(name: "CapacitorPushNotifications", package: "CapacitorPushNotifications"),
                 .product(name: "CapacitorSplashScreen", package: "CapacitorSplashScreen"),
-                .product(name: "CapacitorStatusBar", package: "CapacitorStatusBar"),
-                .product(name: "OnesignalCordovaPlugin", package: "OnesignalCordovaPlugin")
+                .product(name: "CapacitorStatusBar", package: "CapacitorStatusBar")
             ]
         )
     ]
