@@ -213,7 +213,7 @@ def tpl_welcome_byline(name):
     return shell(
         '<h1 style="font-family:Georgia,serif;font-size:22px;margin:0 0 12px;">Where this leads, %s.</h1>'
         "<p>The Academy is not the destination. Finish the course and pass the final exam, and you can pitch stories to The Mutapa Times and earn your own monthly column.</p>"
-        "<p>That means a published byline you can show universities and employers, and a reference from a real newsroom. Graduates who keep pitching are the ones who build a portfolio.</p>"
+        "<p>That means a published byline you can show universities and employers, and a reference from a real newsroom. Graduates also get a built-in CV builder that lists the qualification and final mark, ready to download as a PDF.</p>"
         % first_name(name)
         + button(SITE_URL + "/academy/learn/", "Pick up where you left off")
         + "<p>We are looking forward to reading you.<br>The Mutapa Times Academy</p>"

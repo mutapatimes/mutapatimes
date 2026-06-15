@@ -345,6 +345,9 @@
         var sb = el("button", "ac-btn ac-btn--ghost", "Submit your first article");
         sb.addEventListener("click", function () { Sound.play("tap"); go("#/submit"); });
         cert.appendChild(sb);
+        var cvb = el("button", "ac-btn ac-btn--ghost", "Build your CV");
+        cvb.addEventListener("click", function () { Sound.play("tap"); go("#/cv"); });
+        cert.appendChild(cvb);
       } else {
         cert.appendChild(el("p", "ac-cert-eyebrow", "Almost there"));
         cert.appendChild(el("h2", null, "You scored " + sc.pct + "%"));
@@ -901,6 +904,13 @@
   var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   function dateStr() { var d = new Date(); return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
   function certId(name) { var s = (name || "") + "|" + dateStr(), h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return "MTA-" + h.toString(36).toUpperCase().slice(0, 8); }
+  // Graduation stamp ("Month Year"), captured once and reused on the CV.
+  function gradDate() {
+    var d = "";
+    try { d = localStorage.getItem("mt_academy_grad") || ""; } catch (e) {}
+    if (!d) { var x = new Date(); d = MONTHS[x.getMonth()] + " " + x.getFullYear(); try { localStorage.setItem("mt_academy_grad", d); } catch (e) {} }
+    return d;
+  }
 
   // Tell the comms worker the learner has finished, so it sends the pitch
   // invitation and starts the monthly reminders. Fires at most once.
@@ -987,6 +997,176 @@
     var sa = el("div", "ac-actions"); sa.appendChild(sb); bridge.appendChild(sa);
     view.appendChild(bridge);
 
+    var cvcta = el("div", "ac-capstone-cta");
+    cvcta.appendChild(el("p", "ac-cert-eyebrow", "For your job hunt"));
+    cvcta.appendChild(el("h3", null, "Build your CV"));
+    cvcta.appendChild(el("p", null, "Create a clean, professional CV with your Mutapa Times Academy qualification and final mark already included, then download it as a PDF."));
+    var cvb = el("button", "ac-btn ac-btn--lg", "Build your CV");
+    cvb.addEventListener("click", function () { Sound.play("tap"); go("#/cv"); });
+    var cva = el("div", "ac-actions"); cva.appendChild(cvb); cvcta.appendChild(cva);
+    view.appendChild(cvcta);
+
+    window.scrollTo(0, 0);
+  }
+
+  // ---------- CV builder ----------
+  function loadCV() {
+    var d = null;
+    try { d = JSON.parse(localStorage.getItem("mt_academy_cv")); } catch (e) {}
+    if (!d || typeof d !== "object") d = {};
+    ["name", "title", "email", "phone", "location", "links", "summary", "skills"].forEach(function (k) { if (typeof d[k] !== "string") d[k] = ""; });
+    if (!Array.isArray(d.experience)) d.experience = [{ role: "", org: "", dates: "", detail: "" }];
+    if (!Array.isArray(d.education)) d.education = [];
+    return d;
+  }
+  function saveCV(d) { try { localStorage.setItem("mt_academy_cv", JSON.stringify(d)); } catch (e) {} }
+
+  function renderCV() {
+    if (!REVIEW && !certEligible()) { go("#/"); return; }
+    leaveExam(); clear(view); renderChips();
+    var sc = computeScore();
+    var grad = gradDate();
+    var cv = loadCV();
+    try {
+      if (!cv.name) cv.name = state.name || localStorage.getItem("mt_academy_name") || "";
+      if (!cv.email) cv.email = localStorage.getItem("mt_academy_email") || "";
+    } catch (e) {}
+
+    var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← Back");
+    back.addEventListener("click", function () { Sound.play("tap"); go("#/"); }); top.appendChild(back); view.appendChild(top);
+    view.appendChild(el("p", "ac-eyebrow", "Your CV"));
+    view.appendChild(el("h1", "ac-h1", "Build your CV"));
+    var intro = el("div", "ac-brief ac-cv-intro");
+    intro.appendChild(el("p", null, "Fill in your details on the left and watch your CV build on the right. Your Mutapa Times Academy qualification and final mark are added automatically. When you are happy, download it as a PDF."));
+    view.appendChild(intro);
+
+    var wrap = el("div", "ac-cv");
+    var formCol = el("div", "ac-cv-form");
+    var prevCol = el("div", "ac-cv-preview");
+    wrap.appendChild(formCol); wrap.appendChild(prevCol);
+    view.appendChild(wrap);
+
+    function persist() { saveCV(cv); paint(); }
+    function lbl(t) { return el("label", "ac-cv-label", t); }
+    function inp(val, ph, on) { var i = document.createElement("input"); i.type = "text"; i.className = "ac-cert-input"; i.value = val || ""; i.placeholder = ph || ""; i.addEventListener("input", function () { on(i.value); }); return i; }
+    function area(val, ph, on) { var t = el("textarea", "ac-input"); t.value = val || ""; t.placeholder = ph || ""; t.addEventListener("input", function () { on(t.value); }); return t; }
+    function fieldRow(labelText, node) { var w = el("div", "ac-cv-field"); w.appendChild(lbl(labelText)); w.appendChild(node); return w; }
+
+    function renderForm() {
+      clear(formCol);
+
+      var s1 = el("section", "ac-cv-sec");
+      s1.appendChild(el("h2", "ac-cv-sech", "Your details"));
+      s1.appendChild(fieldRow("Full name", inp(cv.name, "e.g. Tendai Kuwanda", function (v) { cv.name = v; persist(); })));
+      s1.appendChild(fieldRow("Professional title", inp(cv.title, "e.g. Journalist and content writer", function (v) { cv.title = v; persist(); })));
+      s1.appendChild(fieldRow("Email", inp(cv.email, "you@email.com", function (v) { cv.email = v; persist(); })));
+      s1.appendChild(fieldRow("Phone", inp(cv.phone, "e.g. +263 ...", function (v) { cv.phone = v; persist(); })));
+      s1.appendChild(fieldRow("Location", inp(cv.location, "e.g. Harare, Zimbabwe", function (v) { cv.location = v; persist(); })));
+      s1.appendChild(fieldRow("Links (LinkedIn, portfolio)", inp(cv.links, "e.g. linkedin.com/in/yourname", function (v) { cv.links = v; persist(); })));
+      formCol.appendChild(s1);
+
+      var s2 = el("section", "ac-cv-sec");
+      s2.appendChild(el("h2", "ac-cv-sech", "Professional summary"));
+      s2.appendChild(area(cv.summary, "Two or three sentences about who you are and what you do.", function (v) { cv.summary = v; persist(); }));
+      formCol.appendChild(s2);
+
+      var s3 = el("section", "ac-cv-sec");
+      s3.appendChild(el("h2", "ac-cv-sech", "Work experience"));
+      cv.experience.forEach(function (it, i) {
+        var row = el("div", "ac-cv-entry");
+        row.appendChild(fieldRow("Role", inp(it.role, "e.g. Contributor", function (v) { it.role = v; persist(); })));
+        row.appendChild(fieldRow("Organisation", inp(it.org, "e.g. The Mutapa Times", function (v) { it.org = v; persist(); })));
+        row.appendChild(fieldRow("Dates", inp(it.dates, "e.g. 2025 to present", function (v) { it.dates = v; persist(); })));
+        row.appendChild(fieldRow("What you did", area(it.detail, "One or two lines on your impact.", function (v) { it.detail = v; persist(); })));
+        var del = el("button", "ac-cv-del", "Remove"); del.type = "button";
+        del.addEventListener("click", function () { cv.experience.splice(i, 1); saveCV(cv); renderForm(); paint(); });
+        row.appendChild(del); s3.appendChild(row);
+      });
+      var addE = el("button", "ac-cv-add", "+ Add role"); addE.type = "button";
+      addE.addEventListener("click", function () { cv.experience.push({ role: "", org: "", dates: "", detail: "" }); saveCV(cv); renderForm(); paint(); });
+      s3.appendChild(addE); formCol.appendChild(s3);
+
+      var s4 = el("section", "ac-cv-sec");
+      s4.appendChild(el("h2", "ac-cv-sech", "Education"));
+      var locked = el("div", "ac-cv-locked");
+      locked.appendChild(el("p", "ac-cv-locked-h", "The Mutapa Times Academy"));
+      locked.appendChild(el("p", "ac-cv-locked-b", "Professional Certificate in Journalism · Graded " + sc.pct + "% · " + grad));
+      locked.appendChild(el("p", "ac-cv-locked-note", "Added to every graduate's CV automatically"));
+      s4.appendChild(locked);
+      cv.education.forEach(function (it, i) {
+        var row = el("div", "ac-cv-entry");
+        row.appendChild(fieldRow("Qualification", inp(it.qual, "e.g. BSc in Media Studies", function (v) { it.qual = v; persist(); })));
+        row.appendChild(fieldRow("School or university", inp(it.school, "e.g. University of Zimbabwe", function (v) { it.school = v; persist(); })));
+        row.appendChild(fieldRow("Dates", inp(it.dates, "e.g. 2018 to 2021", function (v) { it.dates = v; persist(); })));
+        var del = el("button", "ac-cv-del", "Remove"); del.type = "button";
+        del.addEventListener("click", function () { cv.education.splice(i, 1); saveCV(cv); renderForm(); paint(); });
+        row.appendChild(del); s4.appendChild(row);
+      });
+      var addEd = el("button", "ac-cv-add", "+ Add education"); addEd.type = "button";
+      addEd.addEventListener("click", function () { cv.education.push({ qual: "", school: "", dates: "" }); saveCV(cv); renderForm(); paint(); });
+      s4.appendChild(addEd); formCol.appendChild(s4);
+
+      var s5 = el("section", "ac-cv-sec");
+      s5.appendChild(el("h2", "ac-cv-sech", "Skills"));
+      s5.appendChild(area(cv.skills, "Comma separated, e.g. Reporting, interviewing, fact-checking, SEO.", function (v) { cv.skills = v; persist(); }));
+      formCol.appendChild(s5);
+
+      var acts = el("div", "ac-actions");
+      var dl = el("button", "ac-btn ac-btn--lg", "Download / Save as PDF");
+      dl.addEventListener("click", function () { Sound.play("tap"); window.print(); });
+      acts.appendChild(dl); formCol.appendChild(acts);
+      formCol.appendChild(el("p", "ac-cv-hint", "In the print dialog, choose 'Save as PDF' as the destination."));
+    }
+
+    function entryHead(roleText, dates) {
+      var head = el("div", "cvd-entry-head");
+      head.appendChild(el("span", "cvd-entry-role", roleText));
+      if (dates) head.appendChild(el("span", "cvd-entry-dates", dates));
+      return head;
+    }
+    function paint() {
+      clear(prevCol);
+      var doc = el("div", "ac-cv-doc");
+      doc.appendChild(el("h1", "cvd-name", (cv.name || "Your Name")));
+      if (cv.title) doc.appendChild(el("p", "cvd-title", cv.title));
+      var contact = [cv.email, cv.phone, cv.location, cv.links].filter(function (x) { return x && x.trim(); }).join("   ·   ");
+      if (contact) doc.appendChild(el("p", "cvd-contact", contact));
+
+      if (cv.summary && cv.summary.trim()) {
+        var se = el("div", "cvd-section"); se.appendChild(el("h2", "cvd-sech", "Profile")); se.appendChild(el("p", "cvd-text", cv.summary)); doc.appendChild(se);
+      }
+
+      var exp = cv.experience.filter(function (it) { return it.role || it.org || it.detail || it.dates; });
+      if (exp.length) {
+        var s = el("div", "cvd-section"); s.appendChild(el("h2", "cvd-sech", "Experience"));
+        exp.forEach(function (it) {
+          var e = el("div", "cvd-entry");
+          e.appendChild(entryHead((it.role || "") + (it.org ? ", " + it.org : ""), it.dates));
+          if (it.detail) e.appendChild(el("p", "cvd-entry-detail", it.detail));
+          s.appendChild(e);
+        });
+        doc.appendChild(s);
+      }
+
+      var edS = el("div", "cvd-section"); edS.appendChild(el("h2", "cvd-sech", "Education"));
+      var ac = el("div", "cvd-entry cvd-academy");
+      ac.appendChild(entryHead("Professional Certificate in Journalism, The Mutapa Times Academy", grad));
+      ac.appendChild(el("p", "cvd-entry-detail", "Completed with a final mark of " + sc.pct + "%."));
+      edS.appendChild(ac);
+      cv.education.filter(function (it) { return it.qual || it.school || it.dates; }).forEach(function (it) {
+        var e = el("div", "cvd-entry");
+        e.appendChild(entryHead((it.qual || "") + (it.school ? ", " + it.school : ""), it.dates));
+        edS.appendChild(e);
+      });
+      doc.appendChild(edS);
+
+      if (cv.skills && cv.skills.trim()) {
+        var sk = el("div", "cvd-section"); sk.appendChild(el("h2", "cvd-sech", "Skills")); sk.appendChild(el("p", "cvd-skills", cv.skills)); doc.appendChild(sk);
+      }
+      prevCol.appendChild(doc);
+    }
+
+    renderForm(); paint();
     window.scrollTo(0, 0);
   }
 
@@ -1135,7 +1315,7 @@
   }
 
   // ---------- router ----------
-  function route() { var h = location.hash || "#/"; if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
+  function route() { var h = location.hash || "#/"; if (h.indexOf("#/cv") === 0) return renderCV(); if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
   window.addEventListener("hashchange", route);
   route();
   pullProgress();

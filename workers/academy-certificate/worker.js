@@ -218,6 +218,8 @@ function completionHTML(name, site) {
     '<p>Email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a> with the subject line <strong>Pitch: your story in one line</strong>. In three or four sentences tell us what the story is, why it matters now, and who you would talk to. If it is a fit, an editor will commission it and run it with your byline.</p>' +
     btn(site + "/academy/learn/#/submit", "Submit an article now") +
     '<p>We will send you a reminder each month so pitching becomes a habit. The contributors who show up regularly are the ones who get the column.</p>' +
+    '<p style="border-top:1px solid #e2e2e2;padding-top:18px;margin-top:24px;"><strong>One more thing: build your CV.</strong> The Academy now has a free CV builder with your qualification and final mark already filled in. Create it in minutes and download it as a PDF.</p>' +
+    btn(site + "/academy/learn/#/cv", "Build your CV") +
     '<p>Congratulations, and welcome to the newsroom.<br>The Mutapa Times</p>'
   );
 }
