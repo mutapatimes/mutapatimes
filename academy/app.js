@@ -977,16 +977,31 @@
       clear(certWrap);
       var name = (ni.value || "").trim() || "Your Name";
       var cert = el("div", "ac-cert");
-      cert.appendChild(el("p", "ac-cert-mark", "M·T"));
-      cert.appendChild(el("p", "ac-cert-org", "The Mutapa Times Academy"));
-      cert.appendChild(el("p", "ac-cert-csub", "Certificate of Completion"));
-      cert.appendChild(el("p", "ac-cert-pre", "This certifies that"));
+
+      var crest = el("div", "ac-cert-crest");
+      crest.appendChild(el("span", "ac-cert-shield", "M·T"));
+      var wm = el("div", "ac-cert-wm");
+      wm.appendChild(el("span", "ac-cert-wm-big", "The Mutapa Times"));
+      wm.appendChild(el("span", "ac-cert-wm-sub", "Academy"));
+      crest.appendChild(wm);
+      cert.appendChild(crest);
+
+      cert.appendChild(el("p", "ac-cert-pre", "The Mutapa Times Academy certifies that"));
       cert.appendChild(el("p", "ac-cert-name", name));
-      cert.appendChild(el("p", "ac-cert-cbody", "has completed the Mutapa Times Academy course in journalism for Zimbabwe and the diaspora, passing with a score of " + sc.pct + "%."));
-      var meta = el("div", "ac-cert-meta");
-      meta.appendChild(el("span", null, "Awarded " + serverCred.date));
-      meta.appendChild(el("span", null, "ID " + credId()));
-      cert.appendChild(meta);
+      cert.appendChild(el("p", "ac-cert-pre", "has successfully completed"));
+      cert.appendChild(el("p", "ac-cert-course", "Professional Certificate in Journalism"));
+      cert.appendChild(el("p", "ac-cert-sub2", "a self-paced online programme in the craft of journalism"));
+      cert.appendChild(el("p", "ac-cert-date2", "Awarded " + serverCred.date + "  ·  Final mark " + sc.pct + "%"));
+
+      var sign = el("div", "ac-cert-sign");
+      sign.appendChild(el("span", "ac-cert-sig", "Valentine Eluwasi"));
+      sign.appendChild(el("span", "ac-cert-sigline"));
+      sign.appendChild(el("span", "ac-cert-signame", "Valentine Eluwasi"));
+      sign.appendChild(el("span", "ac-cert-sigrole", "Founder and Director, The Mutapa Times"));
+      cert.appendChild(sign);
+
+      cert.appendChild(el("p", "ac-cert-coc", "Certificate of Completion"));
+      cert.appendChild(el("p", "ac-cert-place", "Harare, Zimbabwe  ·  " + serverCred.date));
       cert.appendChild(el("p", "ac-cert-verify", "Verify at mutapatimes.com/academy/verify  ·  ID " + credId()));
       certWrap.appendChild(cert);
     }

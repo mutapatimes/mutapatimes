@@ -114,20 +114,34 @@ async function sendSubmission(p, env, ch) {
 }
 
 function certificateHTML(name, score, date, id) {
-  return '<div style="max-width:560px;margin:0 auto;font-family:Georgia,serif;">' +
-    '<div style="position:relative;background:#ffffff;border:2px solid #121212;border-radius:6px;padding:36px 28px;text-align:center;">' +
-      '<div style="color:#c41e1e;font-weight:900;font-size:26px;">M&middot;T</div>' +
-      '<div style="font-weight:900;font-size:22px;margin-top:4px;">The Mutapa Times Academy</div>' +
-      '<div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#8a8a8a;margin:6px 0 26px;">Certificate of Completion</div>' +
-      '<div style="font-size:14px;color:#6a6a6a;">This certifies that</div>' +
-      '<div style="font-weight:700;font-size:30px;color:#c41e1e;margin:6px 0 14px;">' + esc(name) + '</div>' +
-      '<div style="font-size:15px;color:#2a2a2a;max-width:420px;margin:0 auto 26px;">has completed the Mutapa Times Academy course in journalism for Zimbabwe and the diaspora, passing with a score of ' + esc(score) + '%.</div>' +
-      '<div style="display:flex;justify-content:space-between;border-top:1px solid #d4d4d4;padding-top:14px;font-size:12px;color:#8a8a8a;">' +
-        '<span>Awarded ' + esc(date) + '</span><span>ID ' + esc(id) + '</span>' +
+  var verify = "https://mutapatimes.com/academy/verify/?id=" + encodeURIComponent(id);
+  return '<div style="max-width:600px;margin:0 auto;font-family:Georgia,\'Times New Roman\',serif;color:#1a1a1a;">' +
+    '<div style="background:#fbf8ec;border:3px solid #1a1a1a;padding:34px 30px;text-align:center;">' +
+      '<div style="margin-bottom:22px;">' +
+        '<span style="display:inline-block;background:#c41e1e;color:#ffffff;font-weight:bold;font-size:15px;padding:9px 11px;border-radius:4px 4px 16px 16px;vertical-align:middle;">M&middot;T</span>' +
+        '<span style="display:inline-block;vertical-align:middle;text-align:left;margin-left:10px;">' +
+          '<span style="display:block;font-size:22px;font-weight:bold;line-height:1;">The Mutapa Times</span>' +
+          '<span style="display:block;font-size:11px;letter-spacing:4px;color:#c41e1e;font-weight:bold;margin-top:5px;">ACADEMY</span>' +
+        '</span>' +
       '</div>' +
+      '<p style="font-size:15px;color:#3a3a3a;margin:14px 0 12px;">The Mutapa Times Academy certifies that</p>' +
+      '<p style="font-size:26px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;margin:0 0 14px;">' + esc(name) + '</p>' +
+      '<p style="font-size:15px;color:#3a3a3a;margin:0 0 8px;">has successfully completed</p>' +
+      '<p style="font-size:21px;font-weight:bold;color:#c41e1e;margin:0 0 8px;">Professional Certificate in Journalism</p>' +
+      '<p style="font-size:14px;color:#3a3a3a;margin:0 0 6px;">a self-paced online programme in the craft of journalism</p>' +
+      '<p style="font-size:14px;font-weight:bold;margin:0 0 28px;">Awarded ' + esc(date) + ' &middot; Final mark ' + esc(score) + '%</p>' +
+      '<div style="margin:22px auto 0;">' +
+        '<div style="font-family:\'Brush Script MT\',\'Segoe Script\',cursive;font-size:26px;line-height:1;">Valentine Eluwasi</div>' +
+        '<div style="width:230px;border-bottom:1px solid #1a1a1a;margin:3px auto 7px;"></div>' +
+        '<div style="font-size:13px;font-weight:bold;">Valentine Eluwasi</div>' +
+        '<div style="font-size:12px;color:#555555;">Founder and Director, The Mutapa Times</div>' +
+      '</div>' +
+      '<p style="font-size:15px;letter-spacing:5px;text-transform:uppercase;margin:26px 0 6px;">Certificate of Completion</p>' +
+      '<p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#6a6a6a;margin:0;">Harare, Zimbabwe &middot; ' + esc(date) + '</p>' +
+      '<p style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#c41e1e;font-weight:bold;margin:14px 0 0;">Verify at mutapatimes.com/academy/verify &middot; ID ' + esc(id) + '</p>' +
     '</div>' +
-    '<p style="font-family:Arial,sans-serif;font-size:13px;color:#6a6a6a;text-align:center;margin-top:18px;">' +
-      'Add this to your CV and LinkedIn. List <strong>The Mutapa Times Academy</strong> under Education.' +
+    '<p style="font-family:Arial,sans-serif;font-size:13px;color:#6a6a6a;text-align:center;margin-top:16px;">' +
+      'Add this to your CV and LinkedIn. Anyone can confirm it at <a href="' + verify + '">mutapatimes.com/academy/verify</a>.' +
     '</p>' +
   '</div>';
 }

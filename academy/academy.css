@@ -295,18 +295,34 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
 .ac-cert-input:focus { outline: none; border-color: var(--ink); }
 
 /* The certificate itself */
-.ac-cert { position: relative; background: #fff; border: 2px solid var(--ink); border-radius: 6px;
-  padding: 2.2rem 1.6rem; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,.1); }
-.ac-cert::before { content: ""; position: absolute; inset: 9px; border: 1px solid var(--accent); border-radius: 3px; pointer-events: none; }
-.ac-cert-mark { font-family: "Playfair Display", Georgia, serif; font-weight: 900; color: var(--accent); font-size: 1.7rem; margin: 0 0 .2rem; }
-.ac-cert-org { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.35rem; margin: 0 0 .1rem; }
-.ac-cert-csub { font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; color: #8a8a8a; margin: 0 0 1.4rem; }
-.ac-cert-pre { font-size: .9rem; color: #6a6a6a; margin: 0 0 .3rem; }
-.ac-cert-name { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.9rem; color: var(--accent); margin: 0 0 .7rem; line-height: 1.1; }
-.ac-cert-cbody { font-size: .98rem; max-width: 30rem; margin: 0 auto 1.5rem; color: #2a2a2a; }
-.ac-cert-meta { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--rule);
-  padding-top: .9rem; font-size: .76rem; color: #8a8a8a; }
-.ac-cert-verify { margin: .7rem 0 0; font-size: .68rem; letter-spacing: .04em; text-transform: uppercase;
+.ac-cert { position: relative; background: #fbf8ec; border: 3px solid #1a1a1a; border-radius: 2px;
+  padding: 2.8rem 2.2rem 2rem; text-align: center; box-shadow: 0 10px 34px rgba(0,0,0,.14);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ac-cert::before { content: ""; position: absolute; inset: 9px; border: 1px solid #1a1a1a; pointer-events: none; }
+.ac-cert-crest { display: flex; align-items: center; justify-content: center; gap: .75rem; margin: 0 0 2rem; }
+.ac-cert-shield { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 54px;
+  background: var(--accent); color: #fff; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.05rem;
+  border-radius: 4px 4px 22px 22px; }
+.ac-cert-wm { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; }
+.ac-cert-wm-big { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.5rem; color: #1a1a1a; }
+.ac-cert-wm-sub { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: .8rem; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--accent); margin-top: .3rem; }
+.ac-cert-pre { font-family: "Playfair Display", Georgia, serif; font-size: 1rem; color: #3a3a3a; margin: 0 0 .55rem; }
+.ac-cert-name { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.8rem; letter-spacing: .04em;
+  text-transform: uppercase; color: #1a1a1a; margin: 0 0 1.2rem; line-height: 1.1; }
+.ac-cert-course { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.7rem; color: var(--accent);
+  margin: .3rem 0 .5rem; line-height: 1.15; }
+.ac-cert-sub2 { font-family: "Playfair Display", Georgia, serif; font-size: 1rem; color: #3a3a3a; margin: 0 0 .5rem; }
+.ac-cert-date2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1rem; color: #1a1a1a; margin: 0 0 1.8rem; }
+.ac-cert-sign { display: flex; flex-direction: column; align-items: center; margin: 1.4rem auto .2rem; }
+.ac-cert-sig { font-family: "Great Vibes", "Segoe Script", "Brush Script MT", cursive; font-size: 2.2rem; color: #1a1a1a; line-height: 1; }
+.ac-cert-sigline { display: block; width: 240px; max-width: 72%; border-bottom: 1px solid #1a1a1a; margin: .05rem 0 .5rem; }
+.ac-cert-signame { font-weight: 700; font-size: .92rem; color: #1a1a1a; }
+.ac-cert-sigrole { font-size: .82rem; color: #555; }
+.ac-cert-coc { font-family: "Playfair Display", Georgia, serif; font-size: 1.1rem; letter-spacing: .28em; text-transform: uppercase;
+  color: #1a1a1a; margin: 1.6rem 0 .35rem; }
+.ac-cert-place { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #6a6a6a; margin: 0; }
+.ac-cert-verify { margin: 1rem 0 0; font-size: .64rem; letter-spacing: .04em; text-transform: uppercase;
   color: var(--accent); font-weight: 700; text-align: center; }
 
 .ac-cert-email { margin: 1.6rem 0 0; border-top: 1px dashed var(--rule); padding-top: 1.2rem; }
@@ -318,7 +334,7 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   body { background: #fff; }
   .ac-wrap { padding: 0; }
   .ac-cert { box-shadow: none; border-color: #000; }
-  .ac-cert::before { border-color: var(--accent); }
+  .ac-cert::before { border-color: #000; }
   /* CV: print only the document, full width */
   .ac-cv-intro, .ac-cv-form, .ac-cv-hint { display: none !important; }
   .ac-cv { display: block !important; }

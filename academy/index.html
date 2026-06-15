@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css?v=102">
 
@@ -183,6 +183,13 @@
   .cert-sig { flex: 1; }
   .cert-sig-line { display: block; border-bottom: 1.4px solid #8a7550; height: 1.4rem; margin-bottom: .4rem; }
   .cert-sig-name { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: #7a6748; }
+  .cert-course { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: clamp(1.3rem, 4vw, 1.9rem); color: var(--accent); margin: .6rem 0 .3rem; }
+  .cert-sign { margin: 1.6rem auto .3rem; }
+  .cert-script { display: block; font-family: "Great Vibes", "Brush Script MT", cursive; font-size: 2rem; color: #2a2118; line-height: 1; }
+  .cert-sig-line2 { display: block; width: 230px; max-width: 70%; border-bottom: 1.4px solid #8a7550; margin: .1rem auto .45rem; }
+  .cert-sig-name2 { display: block; font-size: .8rem; font-weight: 700; color: #2a2118; }
+  .cert-sig-role2 { display: block; font-size: .72rem; color: #7a6748; }
+  .cert-coc { font-family: "Playfair Display", Georgia, serif; letter-spacing: .28em; text-transform: uppercase; color: var(--ink); font-size: 1rem; margin: 1.4rem 0 0; }
   /* Keep the certificate landscape (wider than tall) even on small screens. */
   @media (max-width: 560px) {
     .cert { padding: 7px; }
@@ -275,14 +282,18 @@
             <text class="cert-star" x="60" y="88" text-anchor="middle" font-size="11">&#9733;</text>
           </svg>
           <p class="cert-org">The Mutapa Times Academy</p>
-          <p class="cert-kicker">Certificate of Completion</p>
-          <p class="cert-presented">This is to certify that</p>
+          <p class="cert-presented">The Mutapa Times Academy certifies that</p>
           <p class="cert-name">Your Name</p>
-          <p class="cert-body">has successfully completed the programme in modern journalism, demonstrating proficiency in reporting, writing, fact-checking and ethics, and passing the final examination of The Mutapa Times Academy.</p>
-          <div class="cert-foot">
-            <div class="cert-sig"><span class="cert-sig-line"></span><span class="cert-sig-name">Director, The Academy</span></div>
-            <div class="cert-sig"><span class="cert-sig-line"></span><span class="cert-sig-name">Editor, The Mutapa Times</span></div>
+          <p class="cert-presented" style="margin-top:1rem">has successfully completed</p>
+          <p class="cert-course">Professional Certificate in Journalism</p>
+          <p class="cert-body">a self-paced online programme in the craft of journalism, ending in a final examination and a published article reviewed by our editors.</p>
+          <div class="cert-sign">
+            <span class="cert-script">Valentine Eluwasi</span>
+            <span class="cert-sig-line2"></span>
+            <span class="cert-sig-name2">Valentine Eluwasi</span>
+            <span class="cert-sig-role2">Founder and Director, The Mutapa Times</span>
           </div>
+          <p class="cert-coc">Certificate of Completion</p>
         </div>
       </div>
       <p class="l-center" style="margin-top: 1.6rem"><a class="l-btn" href="#enrol">Earn your certificate</a></p>
