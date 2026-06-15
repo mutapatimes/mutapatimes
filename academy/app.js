@@ -1085,6 +1085,7 @@
     ["name", "title", "email", "phone", "location", "links", "summary", "skills"].forEach(function (k) { if (typeof d[k] !== "string") d[k] = ""; });
     if (!Array.isArray(d.experience)) d.experience = [{ role: "", org: "", dates: "", detail: "" }];
     if (!Array.isArray(d.education)) d.education = [];
+    if (typeof d.accent !== "string" || !d.accent) d.accent = "#c41e1e";
     return d;
   }
   function saveCV(d) { try { localStorage.setItem("mt_academy_cv", JSON.stringify(d)); } catch (e) {} }
@@ -1120,6 +1121,43 @@
     function area(val, ph, on) { var t = el("textarea", "ac-input"); t.value = val || ""; t.placeholder = ph || ""; t.addEventListener("input", function () { on(t.value); }); return t; }
     function fieldRow(labelText, node) { var w = el("div", "ac-cv-field"); w.appendChild(lbl(labelText)); w.appendChild(node); return w; }
 
+    var ACCENTS = [["Crimson", "#c41e1e"], ["Navy", "#1f3a5f"], ["Forest", "#1a7f44"], ["Charcoal", "#2b2b2b"], ["Plum", "#6b2d5c"], ["Teal", "#0f6e6e"]];
+
+    // A textarea with an optional AI rewrite suggestion the learner accepts or rejects.
+    function aiArea(getVal, setVal, ph, context) {
+      var wrap = el("div", "ac-aiwrap");
+      var t = el("textarea", "ac-input"); t.value = getVal() || ""; t.placeholder = ph || "";
+      t.addEventListener("input", function () { setVal(t.value); persist(); });
+      wrap.appendChild(t);
+      var bar = el("div", "ac-ai-bar");
+      var btn = el("button", "ac-ai-btn", "✦ Improve with AI"); btn.type = "button";
+      var sug = el("div", "ac-ai-sug");
+      bar.appendChild(btn); wrap.appendChild(bar); wrap.appendChild(sug);
+      function showSug(s) {
+        clear(sug);
+        if (!s) { sug.appendChild(el("p", "ac-err", "No suggestion came back.")); return; }
+        sug.appendChild(el("p", "ac-ai-sug-label", "Suggested rewrite"));
+        sug.appendChild(el("p", "ac-ai-sug-text", s));
+        var a = el("div", "ac-ai-sug-acts");
+        var use = el("button", "ac-btn", "Use this"); use.type = "button";
+        use.addEventListener("click", function () { Sound.play("tap"); t.value = s; setVal(s); persist(); clear(sug); });
+        var keep = el("button", "ac-btn ac-btn--ghost", "Keep mine"); keep.type = "button";
+        keep.addEventListener("click", function () { clear(sug); });
+        a.appendChild(use); a.appendChild(keep); sug.appendChild(a);
+      }
+      btn.addEventListener("click", function () {
+        var text = (t.value || "").trim();
+        if (text.split(/\s+/).filter(Boolean).length < 4) { clear(sug); sug.appendChild(el("p", "ac-err", "Write a little first, then improve it.")); return; }
+        if (!GRADE_ENDPOINT) { clear(sug); sug.appendChild(el("p", "ac-err", "AI suggestions are not set up yet.")); return; }
+        btn.disabled = true; clear(sug); sug.appendChild(el("p", "ac-spin", "Polishing your wording..."));
+        fetch(GRADE_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "reword", context: context, text: text }) })
+          .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+          .then(function (d) { btn.disabled = false; showSug(d.suggestion || ""); })
+          .catch(function () { btn.disabled = false; clear(sug); sug.appendChild(el("p", "ac-err", "Could not get a suggestion. Try again.")); });
+      });
+      return wrap;
+    }
+
     function renderForm() {
       clear(formCol);
 
@@ -1135,7 +1173,7 @@
 
       var s2 = el("section", "ac-cv-sec");
       s2.appendChild(el("h2", "ac-cv-sech", "Professional summary"));
-      s2.appendChild(area(cv.summary, "Two or three sentences about who you are and what you do.", function (v) { cv.summary = v; persist(); }));
+      s2.appendChild(aiArea(function () { return cv.summary; }, function (v) { cv.summary = v; }, "Two or three sentences about who you are and what you do.", "Professional summary"));
       formCol.appendChild(s2);
 
       var s3 = el("section", "ac-cv-sec");
@@ -1145,7 +1183,7 @@
         row.appendChild(fieldRow("Role", inp(it.role, "e.g. Contributor", function (v) { it.role = v; persist(); })));
         row.appendChild(fieldRow("Organisation", inp(it.org, "e.g. The Mutapa Times", function (v) { it.org = v; persist(); })));
         row.appendChild(fieldRow("Dates", inp(it.dates, "e.g. 2025 to present", function (v) { it.dates = v; persist(); })));
-        row.appendChild(fieldRow("What you did", area(it.detail, "One or two lines on your impact.", function (v) { it.detail = v; persist(); })));
+        row.appendChild(fieldRow("What you did", aiArea(function () { return it.detail; }, function (v) { it.detail = v; }, "One or two lines on your impact.", "Work experience bullet")));
         var del = el("button", "ac-cv-del", "Remove"); del.type = "button";
         del.addEventListener("click", function () { cv.experience.splice(i, 1); saveCV(cv); renderForm(); paint(); });
         row.appendChild(del); s3.appendChild(row);
@@ -1176,8 +1214,20 @@
 
       var s5 = el("section", "ac-cv-sec");
       s5.appendChild(el("h2", "ac-cv-sech", "Skills"));
-      s5.appendChild(area(cv.skills, "Comma separated, e.g. Reporting, interviewing, fact-checking, SEO.", function (v) { cv.skills = v; persist(); }));
+      s5.appendChild(aiArea(function () { return cv.skills; }, function (v) { cv.skills = v; }, "Comma separated, e.g. Reporting, interviewing, fact-checking, SEO.", "Skills list"));
       formCol.appendChild(s5);
+
+      var s6 = el("section", "ac-cv-sec");
+      s6.appendChild(el("h2", "ac-cv-sech", "Accent colour"));
+      var sw = el("div", "ac-cv-swatches");
+      ACCENTS.forEach(function (p) {
+        var b = el("button", "ac-cv-swatch" + (cv.accent === p[1] ? " is-sel" : "")); b.type = "button";
+        b.style.background = p[1]; b.title = p[0]; b.setAttribute("aria-label", p[0]);
+        b.addEventListener("click", function () { Sound.play("tap"); cv.accent = p[1]; saveCV(cv); renderForm(); paint(); });
+        sw.appendChild(b);
+      });
+      s6.appendChild(sw);
+      formCol.appendChild(s6);
 
       var acts = el("div", "ac-actions");
       var dl = el("button", "ac-btn ac-btn--lg", "Download / Save as PDF");
@@ -1195,10 +1245,13 @@
     function paint() {
       clear(prevCol);
       var doc = el("div", "ac-cv-doc");
-      doc.appendChild(el("h1", "cvd-name", (cv.name || "Your Name")));
-      if (cv.title) doc.appendChild(el("p", "cvd-title", cv.title));
+      doc.style.setProperty("--cv-accent", cv.accent || "#c41e1e");
+      var dhead = el("div", "cvd-head");
+      dhead.appendChild(el("h1", "cvd-name", (cv.name || "Your Name")));
+      if (cv.title) dhead.appendChild(el("p", "cvd-title", cv.title));
       var contact = [cv.email, cv.phone, cv.location, cv.links].filter(function (x) { return x && x.trim(); }).join("   ·   ");
-      if (contact) doc.appendChild(el("p", "cvd-contact", contact));
+      if (contact) dhead.appendChild(el("p", "cvd-contact", contact));
+      doc.appendChild(dhead);
 
       if (cv.summary && cv.summary.trim()) {
         var se = el("div", "cvd-section"); se.appendChild(el("h2", "cvd-sech", "Profile")); se.appendChild(el("p", "cvd-text", cv.summary)); doc.appendChild(se);

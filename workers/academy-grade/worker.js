@@ -289,6 +289,35 @@ async function gradeAnalysis(payload, env, ch) {
   }, 200, ch);
 }
 
+const REWORD_SCHEMA = {
+  type: "OBJECT",
+  properties: { suggestion: { type: "STRING", description: "The rewritten text, and nothing else." } },
+  required: ["suggestion"],
+};
+
+async function rewordText(payload, env, ch) {
+  const text = clip(payload.text, 1500);
+  const context = clip(payload.context, 80);
+  if (text.split(/\s+/).filter(Boolean).length < 3) return json({ error: "Too short to improve" }, 400, ch);
+
+  const system =
+    "You are an expert CV and resume editor. Rewrite the user's text so it is more impactful, concise and professional for a CV, " +
+    "in clear plain English with strong action verbs. " +
+    "Keep it strictly truthful: do not invent or exaggerate facts, employers, job titles, dates, metrics or skills that are not in the original. " +
+    "Keep it roughly the same length or shorter, and keep the same point of view. Do not use em dashes. " +
+    "Return only the rewritten text via the tool.";
+
+  const userMsg =
+    "CV SECTION: " + (context || "text") + "\n\n" +
+    "ORIGINAL TEXT:\n\"" + text + "\"\n\n" +
+    "Rewrite it now.";
+
+  let g;
+  try { g = await callGemini(env, system, userMsg, REWORD_SCHEMA, 700); }
+  catch (e) { console.error("reword", e && e.message); return json({ error: "Could not improve the text" }, 502, ch); }
+  return json({ suggestion: g.suggestion || "" }, 200, ch);
+}
+
 export default {
   async fetch(request, env) {
     const allowed = env.ALLOWED_ORIGIN || "https://mutapatimes.com";
@@ -306,6 +335,7 @@ export default {
 
     if (payload && payload.kind === "submission") return gradeSubmission(payload, env, ch);
     if (payload && payload.kind === "analysis") return gradeAnalysis(payload, env, ch);
+    if (payload && payload.kind === "reword") return rewordText(payload, env, ch);
     return gradeExercise(payload, env, ch);
   }
 };
