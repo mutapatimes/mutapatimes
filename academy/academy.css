@@ -324,17 +324,27 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
 .ac-cert-place { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #6a6a6a; margin: 0; }
 .ac-cert-verify { margin: 1rem 0 0; font-size: .64rem; letter-spacing: .04em; text-transform: uppercase;
   color: var(--accent); font-weight: 700; text-align: center; }
+.ac-cert-seal { margin: 1.3rem auto .2rem; line-height: 0; }
+.ac-cert-seal svg { display: inline-block; }
+.ac-cert-corner { position: absolute; color: #b08023; font-size: 1.2rem; line-height: 1; pointer-events: none; opacity: .9; }
+.ac-cert-corner.tl { top: 16px; left: 18px; }
+.ac-cert-corner.tr { top: 16px; right: 18px; transform: scaleX(-1); }
+.ac-cert-corner.bl { bottom: 16px; left: 18px; transform: scaleY(-1); }
+.ac-cert-corner.br { bottom: 16px; right: 18px; transform: scale(-1); }
 
 .ac-cert-email { margin: 1.6rem 0 0; border-top: 1px dashed var(--rule); padding-top: 1.2rem; }
 .ac-cert-email .ac-cert-input { margin-bottom: .2rem; }
 
 /* Print: show only the certificate */
 @media print {
-  .ac-appbar, .ac-lessontop, .ac-eyebrow, .ac-h1, .ac-cert-form, .ac-actions, .ac-cert-email { display: none !important; }
+  .ac-appbar, .ac-lessontop, .ac-eyebrow, .ac-h1, .ac-cert-form, .ac-actions, .ac-cert-email,
+  .ac-capstone-cta, .ac-tutornav, .ac-readhint, .ac-read-count { display: none !important; }
   body { background: #fff; }
   .ac-wrap { padding: 0; }
   .ac-cert { box-shadow: none; border-color: #000; }
   .ac-cert::before { border-color: #000; }
+  /* Force the cream, gold and red to print even with 'background graphics' off. */
+  .ac-cert, .ac-cert * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   /* CV: print only the document, full width */
   .ac-cv-intro, .ac-cv-form, .ac-cv-hint { display: none !important; }
   .ac-cv { display: block !important; }

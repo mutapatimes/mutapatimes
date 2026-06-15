@@ -973,10 +973,21 @@
     form.appendChild(ni); view.appendChild(form);
 
     var certWrap = el("div"); view.appendChild(certWrap);
+    var SEAL_SVG = '<svg viewBox="0 0 120 120" width="88" height="88" role="img" aria-label="The Mutapa Times Academy seal">' +
+      '<circle cx="60" cy="60" r="55" fill="none" stroke="#b08023" stroke-width="1.5"/>' +
+      '<circle cx="60" cy="60" r="47" fill="none" stroke="#b08023" stroke-width="0.8"/>' +
+      '<defs><path id="mtCertRing" d="M60,60 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/></defs>' +
+      '<text font-family="Inter, sans-serif" font-size="7" letter-spacing="1.5" font-weight="700" fill="#8a6a2a"><textPath href="#mtCertRing" startOffset="0">THE MUTAPA TIMES ACADEMY · VERITAS IN CIVITATE · </textPath></text>' +
+      '<text x="60" y="68" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="900" font-size="25" fill="#c41e1e">M·T</text>' +
+      '<text x="60" y="87" text-anchor="middle" font-size="11" fill="#b08023">★</text>' +
+      '</svg>';
+
     function paint() {
       clear(certWrap);
       var name = (ni.value || "").trim() || "Your Name";
+      var mark = (REVIEW && !sc.pct) ? 96 : sc.pct;
       var cert = el("div", "ac-cert");
+      ["tl", "tr", "bl", "br"].forEach(function (pos) { cert.appendChild(el("span", "ac-cert-corner " + pos, "❧")); });
 
       var crest = el("div", "ac-cert-crest");
       crest.appendChild(el("span", "ac-cert-shield", "M·T"));
@@ -988,10 +999,10 @@
 
       cert.appendChild(el("p", "ac-cert-pre", "The Mutapa Times Academy certifies that"));
       cert.appendChild(el("p", "ac-cert-name", name));
-      cert.appendChild(el("p", "ac-cert-pre", "has successfully completed"));
+      cert.appendChild(el("p", "ac-cert-pre", "has successfully completed the"));
       cert.appendChild(el("p", "ac-cert-course", "Professional Certificate in Journalism"));
-      cert.appendChild(el("p", "ac-cert-sub2", "a self-paced online programme in the craft of journalism"));
-      cert.appendChild(el("p", "ac-cert-date2", "Awarded " + serverCred.date + "  ·  Final mark " + sc.pct + "%"));
+      cert.appendChild(el("p", "ac-cert-sub2", "a comprehensive programme in professional journalism and reporting"));
+      cert.appendChild(el("p", "ac-cert-date2", "Awarded " + serverCred.date + "  ·  Final mark " + mark + "%"));
 
       var sign = el("div", "ac-cert-sign");
       sign.appendChild(el("span", "ac-cert-sig", "Valentine Eluwasi"));
@@ -999,6 +1010,8 @@
       sign.appendChild(el("span", "ac-cert-signame", "Valentine Eluwasi"));
       sign.appendChild(el("span", "ac-cert-sigrole", "Founder and Director, The Mutapa Times"));
       cert.appendChild(sign);
+
+      var seal = el("div", "ac-cert-seal"); seal.innerHTML = SEAL_SVG; cert.appendChild(seal);
 
       cert.appendChild(el("p", "ac-cert-coc", "Certificate of Completion"));
       cert.appendChild(el("p", "ac-cert-place", "Harare, Zimbabwe  ·  " + serverCred.date));
@@ -1011,7 +1024,13 @@
 
     var acts = el("div", "ac-actions");
     var dl = el("button", "ac-btn", "Download / Print");
-    dl.addEventListener("click", function () { Sound.play("tap"); window.print(); });
+    dl.addEventListener("click", function () {
+      Sound.play("tap");
+      var prevTitle = document.title;
+      document.title = "Mutapa Times Academy Certificate - " + ((ni.value || "").trim() || "Certificate");
+      window.print();
+      setTimeout(function () { document.title = prevTitle; }, 900);
+    });
     var liBtn = el("a", "ac-btn ac-btn--ghost", "Add to LinkedIn"); liBtn.target = "_blank"; liBtn.rel = "noopener noreferrer";
     var vBtn = el("a", "ac-btn ac-btn--ghost", "Verify certificate"); vBtn.target = "_blank"; vBtn.rel = "noopener noreferrer";
     acts.appendChild(dl); acts.appendChild(liBtn); acts.appendChild(vBtn); view.appendChild(acts);

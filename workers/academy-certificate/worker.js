@@ -128,7 +128,7 @@ function certificateHTML(name, score, date, id) {
       '<p style="font-size:26px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;margin:0 0 14px;">' + esc(name) + '</p>' +
       '<p style="font-size:15px;color:#3a3a3a;margin:0 0 8px;">has successfully completed</p>' +
       '<p style="font-size:21px;font-weight:bold;color:#c41e1e;margin:0 0 8px;">Professional Certificate in Journalism</p>' +
-      '<p style="font-size:14px;color:#3a3a3a;margin:0 0 6px;">a self-paced online programme in the craft of journalism</p>' +
+      '<p style="font-size:14px;color:#3a3a3a;margin:0 0 6px;">a comprehensive programme in professional journalism and reporting</p>' +
       '<p style="font-size:14px;font-weight:bold;margin:0 0 28px;">Awarded ' + esc(date) + ' &middot; Final mark ' + esc(score) + '%</p>' +
       '<div style="margin:22px auto 0;">' +
         '<div style="font-family:\'Brush Script MT\',\'Segoe Script\',cursive;font-size:26px;line-height:1;">Valentine Eluwasi</div>' +
