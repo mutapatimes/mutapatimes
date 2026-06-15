@@ -1214,9 +1214,12 @@
     view.appendChild(el("h1", "ac-h1", "Read and analyse the news"));
     var lead = el("div", "ac-brief");
     lead.appendChild(el("p", null, "A journalist reads constantly. Each time you visit you will find the two most recent original Mutapa Times articles. Read them both, then analyse them. This is the single best habit for becoming a sharper reporter."));
+    lead.appendChild(el("p", null, "Then share what you read with your own take, and tag @mutapatimes. Reporters are most active on text-first platforms like X, Threads and Reddit, so post there and reply to other journalists. Every article you share earns you a reward."));
     view.appendChild(lead);
     var doneN = state.readCount || 0;
     if (doneN > 0) view.appendChild(el("p", "ac-read-count", "You have completed " + doneN + (doneN === 1 ? " analysis" : " analyses") + " so far. Keep going."));
+    var shN = state.shareCount || 0;
+    if (shN > 0) view.appendChild(el("p", "ac-read-count", "You have shared " + shN + (shN === 1 ? " article" : " articles") + ". Keep building your presence."));
 
     var host = el("div"); host.appendChild(el("p", "ac-readhint", "Loading the latest articles...")); view.appendChild(host);
 
@@ -1233,6 +1236,45 @@
     }
     function fbList(t, items) { var w = el("div", "ac-fb"); w.appendChild(el("h3", null, t)); var ul = el("ul"); items.forEach(function (x) { ul.appendChild(el("li", null, x)); }); w.appendChild(ul); return w; }
 
+    // Reward a share, once per article, with a little XP.
+    function rewardShare(slug, msgNode) {
+      if (REVIEW) { if (msgNode) msgNode.textContent = "Shared."; return; }
+      state.shared = state.shared || {};
+      if (!state.shared[slug]) {
+        state.shared[slug] = true;
+        state.shareCount = (state.shareCount || 0) + 1;
+        state.xp = (state.xp || 0) + 15;
+        save(); renderChips(); floatXP(15);
+        if (msgNode) msgNode.textContent = "Nice. +15 XP for sharing. Now go reply to a journalist on the thread.";
+      } else if (msgNode) {
+        msgNode.textContent = "Shared again. Thanks for spreading good journalism.";
+      }
+    }
+
+    function shareBlock(a) {
+      var url = "https://mutapatimes.com" + a.url;
+      var wrap = document.createElement("details"); wrap.className = "ac-share";
+      var sum = document.createElement("summary"); sum.className = "ac-share-sum"; sum.textContent = "Share your take"; wrap.appendChild(sum);
+      var ta = el("textarea", "ac-input ac-share-text"); ta.setAttribute("maxlength", "400");
+      ta.value = "My take: [add your thought here]. \"" + a.title + "\" via @mutapatimes " + url;
+      wrap.appendChild(ta);
+      wrap.appendChild(el("p", "ac-share-tip", "Tag @mutapatimes, then reply to a reporter on the thread. On X, Threads and Reddit that is how relationships, sources and jobs start."));
+      var btns = el("div", "ac-share-btns");
+      var rew = el("p", "ac-share-reward");
+      function openShare(buildUrl) { var u = buildUrl(ta.value.trim()); var w = window.open(u, "_blank", "noopener,noreferrer"); if (w) w.opener = null; rewardShare(a.slug, rew); }
+      function btn(label, fn) { var b = el("button", "ac-share-btn", label); b.type = "button"; b.addEventListener("click", function () { Sound.play("tap"); fn(); }); return b; }
+      btns.appendChild(btn("Post on X", function () { openShare(function (t) { return "https://twitter.com/intent/tweet?text=" + encodeURIComponent(t); }); }));
+      btns.appendChild(btn("Threads", function () { openShare(function (t) { return "https://www.threads.net/intent/post?text=" + encodeURIComponent(t); }); }));
+      btns.appendChild(btn("Reddit", function () { openShare(function () { return "https://www.reddit.com/submit?url=" + encodeURIComponent(url) + "&title=" + encodeURIComponent(a.title); }); }));
+      btns.appendChild(btn("Copy text", function () {
+        var txt = ta.value.trim();
+        try { if (navigator.clipboard) navigator.clipboard.writeText(txt); } catch (e) {}
+        rewardShare(a.slug, rew);
+      }));
+      wrap.appendChild(btns); wrap.appendChild(rew);
+      return wrap;
+    }
+
     function render(articles) {
       clear(host);
       if (!articles.length) { host.appendChild(el("p", null, "No articles are available right now. Please check back soon.")); return; }
@@ -1246,6 +1288,7 @@
         if (a.summary) card.appendChild(el("p", "ac-read-sum", a.summary));
         var link = document.createElement("a"); link.className = "ac-card-link"; link.href = a.url; link.target = "_blank"; link.rel = "noopener noreferrer"; link.textContent = "Read the full article ↗";
         card.appendChild(link);
+        card.appendChild(shareBlock(a));
         grid.appendChild(card);
       });
       host.appendChild(grid);
