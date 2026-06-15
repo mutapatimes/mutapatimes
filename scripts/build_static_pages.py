@@ -1041,4 +1041,10 @@ def build_articles():
 if __name__ == "__main__":
     print("=== The Mutapa Times: Static Page Builder ===\n")
     article_count = build_articles()
+    # Refresh the Academy Reading Room list (newest original articles).
+    try:
+        import build_reading_list
+        build_reading_list.main()
+    except Exception as e:  # noqa: BLE001
+        print("reading list skipped:", e)
     print(f"\nDone. {article_count} articles generated.")

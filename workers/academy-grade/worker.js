@@ -249,6 +249,46 @@ async function gradeSubmission(payload, env, ch) {
   }, 200, ch);
 }
 
+async function gradeAnalysis(payload, env, ch) {
+  const title = clip(payload.title, 300);
+  const summary = clip(payload.summary, 900);
+  const answer = clip(payload.answer, 3000);
+  if (answer.split(/\s+/).filter(Boolean).length < 30) {
+    return json({ error: "Analysis too short" }, 400, ch);
+  }
+
+  const system =
+    "You are a journalism tutor at The Mutapa Times assessing a student's written analysis of recent news articles. " +
+    "Judge the quality of their analytical thinking against the rubric, not their writing style. " +
+    "Be specific and constructive, and quote the student's own words. Do not use em dashes anywhere in your output.";
+
+  const userMsg =
+    "THE ARTICLE(S) THE STUDENT ANALYSED:\n" + (title || "(title not provided)") +
+    (summary ? "\nSummary: " + summary : "") + "\n\n" +
+    "ANALYSIS RUBRIC (judge the student's analysis against these):\n" +
+    "- Identifies the lede and the single most important news point.\n" +
+    "- Names the sources used and assesses whether they are independent and balanced.\n" +
+    "- Identifies the article's angle or framing.\n" +
+    "- Notes what is missing: other voices, data, context, or what they would check.\n" +
+    "- Assesses the news value: why it matters and to whom.\n" +
+    "- Where two articles are compared, says how their approaches differ.\n" +
+    "- Is specific to the article rather than vague and generic.\n\n" +
+    "STUDENT'S ANALYSIS:\n\"" + answer + "\"\n\n" +
+    "Grade it now. In model_answer, give a short example of what a strong analysis would notice.";
+
+  let g;
+  try { g = await callGemini(env, system, userMsg, GRADE_SCHEMA, 1200); }
+  catch (e) { console.error("analysis", e && e.message); return json({ error: "Grader upstream error" }, 502, ch); }
+
+  return json({
+    score: g.score,
+    verdict: g.verdict,
+    strengths: Array.isArray(g.strengths) ? g.strengths : [],
+    improvements: Array.isArray(g.improvements) ? g.improvements : [],
+    model_answer: g.model_answer || "",
+  }, 200, ch);
+}
+
 export default {
   async fetch(request, env) {
     const allowed = env.ALLOWED_ORIGIN || "https://mutapatimes.com";
@@ -265,6 +305,7 @@ export default {
     if (!env.GEMINI_API_KEY) return json({ error: "Grader not configured" }, 500, ch);
 
     if (payload && payload.kind === "submission") return gradeSubmission(payload, env, ch);
+    if (payload && payload.kind === "analysis") return gradeAnalysis(payload, env, ch);
     return gradeExercise(payload, env, ch);
   }
 };

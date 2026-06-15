@@ -330,6 +330,12 @@
     view.appendChild(pwrap);
     setTimeout(function () { fill.style.width = prog.pct + "%"; }, 60);
 
+    var readCta = el("button", "ac-readroom-cta");
+    readCta.appendChild(el("span", "ac-readroom-k", "Reading Room"));
+    readCta.appendChild(el("span", "ac-readroom-t", "Read and analyse this week's Mutapa Times articles"));
+    readCta.addEventListener("click", function () { Sound.play("tap"); go("#/read"); });
+    view.appendChild(readCta);
+
     if (prog.total > 0 && prog.done === prog.total) {
       var sc = computeScore();
       var cert = el("div", "ac-certcard");
@@ -1199,6 +1205,109 @@
     window.scrollTo(0, 0);
   }
 
+  // ---------- Reading Room: analyse recent original articles ----------
+  function renderReading() {
+    leaveExam(); clear(view); renderChips();
+    var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← All lessons");
+    back.addEventListener("click", function () { Sound.play("tap"); go("#/"); }); top.appendChild(back); view.appendChild(top);
+    view.appendChild(el("p", "ac-eyebrow", "Reading Room"));
+    view.appendChild(el("h1", "ac-h1", "Read and analyse the news"));
+    var lead = el("div", "ac-brief");
+    lead.appendChild(el("p", null, "A journalist reads constantly. Each time you visit you will find the two most recent original Mutapa Times articles. Read them both, then analyse them. This is the single best habit for becoming a sharper reporter."));
+    view.appendChild(lead);
+    var doneN = state.readCount || 0;
+    if (doneN > 0) view.appendChild(el("p", "ac-read-count", "You have completed " + doneN + (doneN === 1 ? " analysis" : " analyses") + " so far. Keep going."));
+
+    var host = el("div"); host.appendChild(el("p", "ac-readhint", "Loading the latest articles...")); view.appendChild(host);
+
+    fetch("/academy/reading.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function (d) { render((d && d.articles) || []); })
+      .catch(function () { clear(host); host.appendChild(el("p", "ac-err", "Could not load the latest articles. Read them directly at mutapatimes.com and try again later.")); });
+
+    function model(text, summaryText) {
+      var d = document.createElement("details"); d.className = "ac-model"; d.open = true;
+      var s = document.createElement("summary"); s.textContent = summaryText || "What a strong analysis notices"; d.appendChild(s);
+      String(text).split("\n").forEach(function (p) { p = p.trim(); if (p) d.appendChild(el("p", null, p)); });
+      return d;
+    }
+    function fbList(t, items) { var w = el("div", "ac-fb"); w.appendChild(el("h3", null, t)); var ul = el("ul"); items.forEach(function (x) { ul.appendChild(el("li", null, x)); }); w.appendChild(ul); return w; }
+
+    function render(articles) {
+      clear(host);
+      if (!articles.length) { host.appendChild(el("p", null, "No articles are available right now. Please check back soon.")); return; }
+      var pair = articles.slice(0, 2);
+
+      var grid = el("div", "ac-read-grid");
+      pair.forEach(function (a, i) {
+        var card = el("article", "ac-read-card");
+        card.appendChild(el("span", "ac-read-tag", (a.category || "News") + " · Article " + (i + 1)));
+        card.appendChild(el("h2", "ac-read-title", a.title));
+        if (a.summary) card.appendChild(el("p", "ac-read-sum", a.summary));
+        var link = document.createElement("a"); link.className = "ac-card-link"; link.href = a.url; link.target = "_blank"; link.rel = "noopener noreferrer"; link.textContent = "Read the full article ↗";
+        card.appendChild(link);
+        grid.appendChild(card);
+      });
+      host.appendChild(grid);
+
+      var task = el("section", "ac-card");
+      task.appendChild(el("p", "ac-kicker", "As you read, look for"));
+      var ul = el("div", "ac-checklist");
+      ["The lede: the single most important point, and how each piece opens.",
+        "The sources: who is quoted, and whether they are independent.",
+        "The angle: the framing the writer has chosen.",
+        "What is missing: other voices, data or context you would add.",
+        "The news value: why it matters, and to whom."].forEach(function (q) {
+        var lab = el("label", "ac-check"); var cb = document.createElement("input"); cb.type = "checkbox";
+        cb.addEventListener("change", function () { if (cb.checked) Sound.play("tap"); });
+        lab.appendChild(cb); lab.appendChild(el("span", null, q)); ul.appendChild(lab);
+      });
+      task.appendChild(ul);
+
+      task.appendChild(el("p", "ac-q", "Now write your analysis"));
+      var brief = el("div", "ac-brief");
+      brief.appendChild(el("p", null, "In about 150 words, analyse the two articles together: identify each lede and angle, assess the sources and balance, note what is missing, and say how the two pieces differ in approach."));
+      task.appendChild(brief);
+      var ta = el("textarea", "ac-input ac-input--long"); ta.setAttribute("maxlength", "3000"); ta.placeholder = "Write your analysis..."; task.appendChild(ta);
+      var count = el("p", "ac-count", "0 words"); task.appendChild(count);
+      ta.addEventListener("input", function () { var n = words(ta.value); count.textContent = n + (n === 1 ? " word" : " words"); });
+
+      var acts = el("div", "ac-actions");
+      var sub = el("button", "ac-btn ac-btn--lg", GRADE_ENDPOINT ? "Get feedback" : "Reveal what to look for");
+      var status = el("span", "ac-status"); acts.appendChild(sub); acts.appendChild(status); task.appendChild(acts);
+      host.appendChild(task);
+
+      function logDone() { state.readCount = (state.readCount || 0) + 1; save(); }
+      function finish() { var a2 = el("div", "ac-actions"); var c = el("button", "ac-btn", "Back to course"); c.addEventListener("click", function () { Sound.play("tap"); go("#/"); }); a2.appendChild(c); task.appendChild(a2); }
+      function aiBox(dd) {
+        var box = el("div", "ac-result"); var score = Math.max(0, Math.min(100, parseInt(dd.score, 10) || 0));
+        var row = el("div", "ac-score " + (score >= 70 ? "pass" : "revise")); row.appendChild(el("b", null, String(score))); row.appendChild(el("span", null, dd.verdict || "")); box.appendChild(row);
+        if (dd.strengths && dd.strengths.length) box.appendChild(fbList("What worked", dd.strengths));
+        if (dd.improvements && dd.improvements.length) box.appendChild(fbList("Sharpen this", dd.improvements));
+        if (dd.model_answer) box.appendChild(model(dd.model_answer));
+        task.appendChild(box); Sound.play(score >= 70 ? "correct" : "wrong");
+      }
+
+      sub.addEventListener("click", function () {
+        if (words(ta.value) < 30) { status.innerHTML = '<span class="ac-err">Write a fuller analysis first (aim for about 150 words).</span>'; return; }
+        ta.disabled = true; sub.disabled = true; Sound.play("tap");
+        if (!GRADE_ENDPOINT) {
+          var box = el("div", "ac-result");
+          box.appendChild(model("A strong analysis names each article's lede and angle, says who is quoted and whether the sourcing is balanced, points to what is missing (other voices, data, context), explains why the story matters, and compares how the two pieces frame their subjects differently."));
+          task.appendChild(box); logDone(); finish(); return;
+        }
+        status.innerHTML = '<span class="ac-spin">Your tutor is reading...</span>';
+        var titles = pair.map(function (a, i) { return (i === 0 ? "A: " : "B: ") + a.title; }).join("  |  ");
+        var sums = pair.map(function (a, i) { return (i === 0 ? "A: " : "B: ") + (a.summary || ""); }).join("  ||  ");
+        fetch(GRADE_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "analysis", title: titles, summary: sums, answer: ta.value.trim() }) })
+          .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+          .then(function (dd) { status.textContent = ""; aiBox(dd); logDone(); finish(); })
+          .catch(function () { status.textContent = ""; var box = el("div", "ac-result"); box.appendChild(el("h3", "ac-selfhead", "Could not reach your tutor")); box.appendChild(el("p", null, "Mark your own work against the checklist above, then continue.")); task.appendChild(box); logDone(); finish(); });
+      });
+    }
+    window.scrollTo(0, 0);
+  }
+
   // ---------- final capstone: submit a real article ----------
   function renderSubmission() {
     if (!REVIEW && !certEligible()) { go("#/"); return; }
@@ -1344,7 +1453,7 @@
   }
 
   // ---------- router ----------
-  function route() { var h = location.hash || "#/"; if (h.indexOf("#/cv") === 0) return renderCV(); if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
+  function route() { var h = location.hash || "#/"; if (h.indexOf("#/read") === 0) return renderReading(); if (h.indexOf("#/cv") === 0) return renderCV(); if (h.indexOf("#/submit") === 0) return renderSubmission(); if (h.indexOf("#/certificate") === 0) return renderCertificate(); var m = h.match(/^#\/lesson\/(.+)$/); if (m) renderLesson(decodeURIComponent(m[1])); else renderHome(); }
   window.addEventListener("hashchange", route);
   route();
   pullProgress();

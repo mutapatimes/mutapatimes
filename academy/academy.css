@@ -593,3 +593,21 @@ textarea.ac-input--long { min-height: 320px; line-height: 1.55; }
 .ac-verify-note { font-size: .82rem; color: #6a6a6a; margin: 1rem 0 0; line-height: 1.5; }
 .ac-about-list { margin: .4rem 0 0; padding-left: 1.1rem; }
 .ac-about-list li { margin: .5rem 0; line-height: 1.55; }
+
+/* ============================================================
+   v19: Reading Room (read + analyse recent articles)
+   ============================================================ */
+.ac-readroom-cta { display: block; width: 100%; text-align: left; cursor: pointer; margin: 1rem 0 0;
+  border: 1.5px solid var(--accent); background: rgba(196,30,30,.05); border-radius: 12px; padding: .9rem 1.1rem;
+  font: inherit; transition: background .15s; }
+.ac-readroom-cta:hover { background: rgba(196,30,30,.1); }
+.ac-readroom-k { display: block; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.ac-readroom-t { display: block; font-weight: 700; margin-top: .15rem; color: var(--ink); }
+.ac-read-count { font-size: .9rem; color: #1a7f44; font-weight: 700; margin: 0 0 .4rem; }
+.ac-read-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 1.1rem; }
+.ac-read-card { border: 1.5px solid var(--rule); border-radius: 12px; padding: 1rem 1.1rem; background: var(--paper); display: flex; flex-direction: column; }
+.ac-read-tag { font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.ac-read-title { font-family: "Playfair Display", Georgia, serif; font-size: 1.25rem; line-height: 1.2; margin: .35rem 0 .4rem; color: #111; }
+.ac-read-sum { font-size: .9rem; color: #444; line-height: 1.5; margin: 0 0 .7rem; }
+.ac-read-card .ac-card-link { margin-top: auto; }
+@media (max-width: 620px) { .ac-read-grid { grid-template-columns: 1fr; } }
