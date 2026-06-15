@@ -324,6 +324,24 @@
     head.appendChild(el("p", "ac-lead", COURSE.blurb));
     view.appendChild(head);
 
+    if (REVIEW) {
+      var tnav = el("div", "ac-tutornav");
+      tnav.appendChild(el("p", "ac-tutornav-h", "Tutor preview · jump to any screen"));
+      var row = el("div", "ac-tutornav-row");
+      [["Reading Room", "#/read"], ["Certificate", "#/certificate"], ["CV builder", "#/cv"], ["Submit article", "#/submit"]].forEach(function (p) {
+        var b = el("button", "ac-btn ac-btn--ghost", p[0]);
+        b.addEventListener("click", function () { Sound.play("tap"); go(p[1]); });
+        row.appendChild(b);
+      });
+      [["Verify page", "/academy/verify/"], ["About page", "/academy/about/"]].forEach(function (p) {
+        var a = el("a", "ac-btn ac-btn--ghost", p[0]); a.href = p[1]; a.target = "_blank"; a.rel = "noopener noreferrer";
+        row.appendChild(a);
+      });
+      tnav.appendChild(row);
+      tnav.appendChild(el("p", "ac-tutornav-note", "These mirror the live student experience. The certificate, CV and submission are normally unlocked only after passing; here they are open for review."));
+      view.appendChild(tnav);
+    }
+
     var pwrap = el("div", "ac-overall");
     var bar = el("div", "ac-progress"); var fill = el("i"); bar.appendChild(fill);
     pwrap.appendChild(bar); pwrap.appendChild(el("p", "ac-overall-txt", prog.done + " of " + prog.total + " lessons complete"));
@@ -935,7 +953,7 @@
   }
 
   function renderCertificate() {
-    if (!certEligible()) { go("#/"); return; }
+    if (!REVIEW && !certEligible()) { go("#/"); return; }
     leaveExam();
     clear(view); renderChips();
     notifyCompletion();
