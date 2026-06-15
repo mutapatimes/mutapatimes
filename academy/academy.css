@@ -326,16 +326,16 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   color: var(--accent); font-weight: 700; text-align: center; }
 .ac-cert-seal { margin: 1.3rem auto .2rem; line-height: 0; }
 .ac-cert-seal svg { display: inline-block; }
-.ac-cert-corner { position: absolute; color: #b08023; font-size: 1.2rem; line-height: 1; pointer-events: none; opacity: .9; }
-.ac-cert-corner.tl { top: 16px; left: 18px; }
-.ac-cert-corner.tr { top: 16px; right: 18px; transform: scaleX(-1); }
-.ac-cert-corner.bl { bottom: 16px; left: 18px; transform: scaleY(-1); }
-.ac-cert-corner.br { bottom: 16px; right: 18px; transform: scale(-1); }
+.ac-cert-corner { position: absolute; line-height: 0; pointer-events: none; z-index: 2; }
+.ac-cert-corner.tl { top: 14px; left: 14px; }
+.ac-cert-corner.tr { top: 14px; right: 14px; transform: rotate(90deg); }
+.ac-cert-corner.br { bottom: 14px; right: 14px; transform: rotate(180deg); }
+.ac-cert-corner.bl { bottom: 14px; left: 14px; transform: rotate(270deg); }
 .ac-cert { overflow: hidden; }
 .ac-cert-bg { position: absolute; inset: 0; z-index: 0; line-height: 0; }
 .ac-cert-bg svg { width: 100%; height: 100%; display: block; }
-.ac-cert-inner { position: relative; z-index: 1; }
-.ac-cert-corner { z-index: 2; }
+.ac-cert-inner { position: relative; z-index: 1; display: flex; flex-direction: column; }
+.ac-cert-body { padding: 1.4rem 0; }
 .ac-cert::before { z-index: 2; }
 .ac-cert-secnote { font-size: .6rem; letter-spacing: .03em; color: #9a8a6a; margin: .8rem 0 0; }
 .ac-cert-micro { font-size: 4.6px; line-height: 1; letter-spacing: .14em; color: #b08023; opacity: .85;
@@ -352,8 +352,12 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
   .ac-capstone-cta, .ac-tutornav, .ac-readhint, .ac-read-count { display: none !important; }
   body { background: #fff; }
   .ac-wrap { padding: 0; max-width: none; }
-  /* Fill a single A4 page (content box inside the 12mm @page margin). */
-  .ac-cert { box-shadow: none !important; border-color: #000; width: 100% !important; min-height: 263mm; box-sizing: border-box; }
+  /* Fill a single A4 page (content box inside the 12mm @page margin) and
+     distribute the content evenly so it does not bunch at the top. */
+  .ac-cert { box-shadow: none !important; border-color: #000; width: 100% !important; min-height: 262mm;
+    box-sizing: border-box; display: flex; flex-direction: column; padding: 4rem 3rem; }
+  .ac-cert-inner { flex: 1 0 auto; justify-content: space-between; }
+  .ac-cert-body { padding: 0; }
   .ac-cert::before { border-color: #000; }
   /* Force the cream, gold and red to print even with 'background graphics' off. */
   .ac-cert, .ac-cert * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
