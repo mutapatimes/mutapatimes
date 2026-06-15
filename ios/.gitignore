@@ -5,8 +5,8 @@ App/App/public
 DerivedData
 xcuserdata
 
-# Cordova plugins for Capacitor
-capacitor-cordova-ios-plugins
+# NOTE: capacitor-cordova-ios-plugins is committed so Xcode Cloud can resolve
+# its local Swift packages even before `npx cap sync ios` runs.
 
 # Generated Config files
 App/App/capacitor.config.json
