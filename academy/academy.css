@@ -331,17 +331,29 @@ textarea.ac-input:focus { outline: none; border-color: var(--ink); }
 .ac-cert-corner.tr { top: 16px; right: 18px; transform: scaleX(-1); }
 .ac-cert-corner.bl { bottom: 16px; left: 18px; transform: scaleY(-1); }
 .ac-cert-corner.br { bottom: 16px; right: 18px; transform: scale(-1); }
+.ac-cert { overflow: hidden; }
+.ac-cert-bg { position: absolute; inset: 0; z-index: 0; line-height: 0; }
+.ac-cert-bg svg { width: 100%; height: 100%; display: block; }
+.ac-cert-inner { position: relative; z-index: 1; }
+.ac-cert-corner { z-index: 2; }
+.ac-cert::before { z-index: 2; }
+.ac-cert-secnote { font-size: .6rem; letter-spacing: .03em; color: #9a8a6a; margin: .8rem 0 0; }
+.ac-cert-micro { font-size: 4.6px; line-height: 1; letter-spacing: .14em; color: #b08023; opacity: .85;
+  margin: .5rem 0 0; white-space: nowrap; overflow: hidden; text-transform: uppercase; }
 
 .ac-cert-email { margin: 1.6rem 0 0; border-top: 1px dashed var(--rule); padding-top: 1.2rem; }
 .ac-cert-email .ac-cert-input { margin-bottom: .2rem; }
 
 /* Print: show only the certificate */
+@page { size: A4 portrait; margin: 12mm; }
 @media print {
+  html, body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
   .ac-appbar, .ac-lessontop, .ac-eyebrow, .ac-h1, .ac-cert-form, .ac-actions, .ac-cert-email,
   .ac-capstone-cta, .ac-tutornav, .ac-readhint, .ac-read-count { display: none !important; }
   body { background: #fff; }
-  .ac-wrap { padding: 0; }
-  .ac-cert { box-shadow: none; border-color: #000; }
+  .ac-wrap { padding: 0; max-width: none; }
+  /* Fill a single A4 page (content box inside the 12mm @page margin). */
+  .ac-cert { box-shadow: none !important; border-color: #000; width: 100% !important; min-height: 263mm; box-sizing: border-box; }
   .ac-cert::before { border-color: #000; }
   /* Force the cream, gold and red to print even with 'background graphics' off. */
   .ac-cert, .ac-cert * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
