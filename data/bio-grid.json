@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-14T22:05:36+00:00",
+  "fetched_at": "2026-06-15T03:40:55+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s climate migrants fear eviction as crackdown intensifies",
+      "link": "https://mutapatimes.com/articles/2026-06-15-zimbabwes-climate-migrants-fear-eviction-as-crackdown-intens",
+      "image": "https://mutapatimes.com/img/cards/news/0698bd6b5307.png",
+      "pubDate": "2026-06-15T00:56:52+00:00",
+      "category": "Environment"
+    },
     {
       "kind": "economy",
       "title": "Zim remittances 2025: diaspora sent $2.9B home — +78.7% over five years.",
@@ -471,14 +479,6 @@
       "title": "Black Shark Protection Services — SERGEANT",
       "link": "https://vacancymail.co.zw/jobs/sergeant-67786/",
       "image": "https://mutapatimes.com/img/cards/jobs/e39a35f4feb3.png",
-      "pubDate": "2026-06-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — OPERATIONS CONTROLLER",
-      "link": "https://vacancymail.co.zw/jobs/operations-controller-67785/",
-      "image": "https://mutapatimes.com/img/cards/jobs/44c779478ccb.png",
       "pubDate": "2026-06-14T22:00:00+00:00",
       "category": "Jobs"
     }
