@@ -934,6 +934,9 @@
     clear(view); renderChips();
     notifyCompletion();
     var sc = computeScore();
+    var serverCred = { id: "", date: dateStr() };
+    try { serverCred.id = localStorage.getItem("mt_academy_cert_id") || ""; } catch (e) {}
+    function credId() { return serverCred.id || certId(((typeof ni !== "undefined" && ni && ni.value) || "").trim() || "Your Name"); }
 
     var top = el("div", "ac-lessontop"); var back = el("button", "ac-back", "← Back");
     back.addEventListener("click", function () { Sound.play("tap"); go("#/"); }); top.appendChild(back); view.appendChild(top);
@@ -957,18 +960,44 @@
       cert.appendChild(el("p", "ac-cert-name", name));
       cert.appendChild(el("p", "ac-cert-cbody", "has completed the Mutapa Times Academy course in journalism for Zimbabwe and the diaspora, passing with a score of " + sc.pct + "%."));
       var meta = el("div", "ac-cert-meta");
-      meta.appendChild(el("span", null, "Awarded " + dateStr()));
-      meta.appendChild(el("span", null, "ID " + certId(name)));
+      meta.appendChild(el("span", null, "Awarded " + serverCred.date));
+      meta.appendChild(el("span", null, "ID " + credId()));
       cert.appendChild(meta);
+      cert.appendChild(el("p", "ac-cert-verify", "Verify at mutapatimes.com/academy/verify  ·  ID " + credId()));
       certWrap.appendChild(cert);
     }
     ni.addEventListener("input", function () { state.name = ni.value; save(); paint(); });
+    ni.addEventListener("change", function () { registerCred(); });
     paint();
 
     var acts = el("div", "ac-actions");
     var dl = el("button", "ac-btn", "Download / Print");
     dl.addEventListener("click", function () { Sound.play("tap"); window.print(); });
-    acts.appendChild(dl); view.appendChild(acts);
+    var liBtn = el("a", "ac-btn ac-btn--ghost", "Add to LinkedIn"); liBtn.target = "_blank"; liBtn.rel = "noopener noreferrer";
+    var vBtn = el("a", "ac-btn ac-btn--ghost", "Verify certificate"); vBtn.target = "_blank"; vBtn.rel = "noopener noreferrer";
+    acts.appendChild(dl); acts.appendChild(liBtn); acts.appendChild(vBtn); view.appendChild(acts);
+    function updateShareLinks() {
+      var id = credId();
+      var verifyUrl = "https://mutapatimes.com/academy/verify/?id=" + encodeURIComponent(id);
+      vBtn.href = verifyUrl;
+      var now = new Date();
+      liBtn.href = "https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME"
+        + "&name=" + encodeURIComponent("Professional Certificate in Journalism")
+        + "&organizationName=" + encodeURIComponent("The Mutapa Times Academy")
+        + "&issueYear=" + now.getFullYear() + "&issueMonth=" + (now.getMonth() + 1)
+        + "&certUrl=" + encodeURIComponent(verifyUrl)
+        + "&certId=" + encodeURIComponent(id);
+    }
+    function registerCred() {
+      if (REVIEW || !PAY_ENDPOINT || !ACCESS.token || !ACCESS.email) return;
+      var nm = (ni.value || "").trim(); if (nm.length < 2) return;
+      fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "cert-issue", email: ACCESS.email, token: ACCESS.token, name: nm, score: sc.pct, date: dateStr() }) })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { if (d && d.id) { serverCred.id = d.id; if (d.date) serverCred.date = d.date; try { localStorage.setItem("mt_academy_cert_id", d.id); } catch (e) {} paint(); updateShareLinks(); } })
+        .catch(function () {});
+    }
+    updateShareLinks(); registerCred();
 
     var ew = el("div", "ac-cert-email");
     ew.appendChild(el("h3", "ac-selfhead", "Email me my certificate"));
@@ -982,7 +1011,7 @@
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { est.innerHTML = '<span class="ac-err">Enter a valid email.</span>'; return; }
       if (!CERT_ENDPOINT) { est.innerHTML = '<span class="ac-err">Email delivery is not set up yet. Use Download / Print to save your certificate.</span>'; return; }
       eb.disabled = true; est.innerHTML = '<span class="ac-spin">Sending...</span>';
-      fetch(CERT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name, email: email, score: sc.pct, date: dateStr(), id: certId(name) }) })
+      fetch(CERT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: name, email: email, score: sc.pct, date: serverCred.date, id: credId() }) })
         .then(function (r) { if (!r.ok) throw 0; return r.json(); })
         .then(function () { est.innerHTML = '<span class="ac-ok">Sent. Check your inbox.</span>'; Sound.play("complete"); try { localStorage.setItem("mt_academy_email", email); localStorage.setItem("mt_academy_name", name); } catch (e) {} notifyCompletion(); })
         .catch(function () { eb.disabled = false; est.innerHTML = '<span class="ac-err">Could not send. Try Download / Print instead.</span>'; });

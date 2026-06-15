@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Verify a certificate - Mutapa Times Academy</title>
+  <link rel="canonical" href="https://mutapatimes.com/academy/verify/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Verify the authenticity of a Mutapa Times Academy certificate using its credential ID.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="apple-touch-icon" href="/icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css?v=104">
+  <link rel="stylesheet" href="/academy/academy.css?v=18">
+</head>
+<body>
+  <header class="ac-appbar">
+    <div class="ac-appbar-in">
+      <a class="ac-brand" href="/academy/">The Mutapa Times</a>
+      <span class="ac-chip">Credential check</span>
+    </div>
+  </header>
+
+  <main class="ac-wrap">
+    <p class="ac-eyebrow">Mutapa Times Academy</p>
+    <h1 class="ac-h1">Verify a certificate</h1>
+    <p class="ac-verify-lead">Every Mutapa Times Academy certificate carries a unique credential ID. Enter it below to confirm the certificate is genuine and see what it certifies.</p>
+
+    <div class="ac-cert-form">
+      <label class="ac-cert-label" for="cid">Credential ID</label>
+      <input id="cid" class="ac-cert-input" type="text" placeholder="e.g. MTA-1A2B3C4D" maxlength="24" autocomplete="off" style="text-transform:uppercase">
+    </div>
+    <div class="ac-actions">
+      <button class="ac-btn ac-btn--lg" id="checkBtn">Verify</button>
+      <span class="ac-status" id="status"></span>
+    </div>
+
+    <section id="result"></section>
+  </main>
+
+  <script>
+  (function () {
+    "use strict";
+    var PAY_ENDPOINT = "https://academy-pay.mutapatimes.workers.dev";
+    function $(id) { return document.getElementById(id); }
+    function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
+
+    function showValid(d) {
+      var r = $("result"); r.innerHTML = "";
+      var card = el("div", "ac-verify-card ok");
+      card.appendChild(el("p", "ac-verify-badge ok", "Verified credential"));
+      card.appendChild(el("p", "ac-verify-name", d.name || ""));
+      card.appendChild(el("p", "ac-verify-course", d.course || "Professional Certificate in Journalism"));
+      card.appendChild(el("p", "ac-verify-org", "The Mutapa Times Academy"));
+      var tbl = el("div", "ac-verify-rows");
+      if (d.date) { var a = el("div", "ac-verify-row"); a.appendChild(el("span", "k", "Awarded")); a.appendChild(el("span", "v", d.date)); tbl.appendChild(a); }
+      if (typeof d.score !== "undefined" && d.score !== null) { var b = el("div", "ac-verify-row"); b.appendChild(el("span", "k", "Final mark")); b.appendChild(el("span", "v", d.score + "%")); tbl.appendChild(b); }
+      var c = el("div", "ac-verify-row"); c.appendChild(el("span", "k", "Credential ID")); c.appendChild(el("span", "v", d.id || "")); tbl.appendChild(c);
+      card.appendChild(tbl);
+      card.appendChild(el("p", "ac-verify-note", "This confirms the named person completed and passed the Mutapa Times Academy course in journalism. The Mutapa Times Academy is the training programme of The Mutapa Times newsroom."));
+      r.appendChild(card);
+    }
+    function showInvalid() {
+      var r = $("result"); r.innerHTML = "";
+      var card = el("div", "ac-verify-card no");
+      card.appendChild(el("p", "ac-verify-badge no", "No match found"));
+      card.appendChild(el("p", null, "We could not find a certificate with that ID. Check the ID is exactly as printed on the certificate, including the MTA- prefix."));
+      r.appendChild(card);
+    }
+
+    function check() {
+      var id = ($("cid").value || "").trim().toUpperCase();
+      if (id.length < 4) { $("status").innerHTML = '<span class="ac-err">Enter a credential ID.</span>'; return; }
+      $("status").innerHTML = '<span class="ac-spin">Checking...</span>';
+      $("checkBtn").disabled = true;
+      fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "cert-verify", id: id }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) { $("status").textContent = ""; $("checkBtn").disabled = false; if (d && d.valid) showValid(d); else showInvalid(); })
+        .catch(function () { $("status").innerHTML = '<span class="ac-err">Something went wrong. Please try again.</span>'; $("checkBtn").disabled = false; });
+    }
+
+    $("checkBtn").addEventListener("click", check);
+    $("cid").addEventListener("keydown", function (e) { if (e.key === "Enter") check(); });
+
+    // Auto-check if an id is in the URL (?id=MTA-...)
+    var qs = new URLSearchParams(location.search);
+    var pre = (qs.get("id") || "").trim().toUpperCase();
+    if (pre) { $("cid").value = pre; check(); }
+  })();
+  </script>
+</body>
+</html>

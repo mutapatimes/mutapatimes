@@ -261,6 +261,44 @@ export default {
       return json({ ok }, 200, ch);
     }
 
+    // ---- cert-issue: register a verifiable credential (paid graduates only) ----
+    if (body.action === "cert-issue") {
+      if (!await verifyToken(env, body.email, body.token)) return json({ error: "Unauthorized" }, 401, ch);
+      const email = (body.email || "").toLowerCase();
+      const name = (body.name || "").toString().trim().slice(0, 80);
+      const score = parseInt(body.score, 10) || 0;
+      if (name.length < 2) return json({ error: "Name required" }, 400, ch);
+      const hash = await digestHex("SHA-256", "cert|" + email + "|" + (env.ACCESS_SECRET || "salt"));
+      const id = "MTA-" + hash.slice(0, 8).toUpperCase();
+      let rec = await getJSON(env, "cert:" + id);
+      if (!rec) {
+        rec = {
+          id: id, name: name, email: email,
+          course: "Professional Certificate in Journalism",
+          score: score,
+          date: (body.date || "").toString().slice(0, 40),
+          issuedTs: Date.now(),
+        };
+      } else {
+        rec.name = name;
+        rec.score = score;
+        if (!rec.date && body.date) rec.date = (body.date || "").toString().slice(0, 40);
+      }
+      await putJSON(env, "cert:" + id, rec);
+      return json({ id: id, date: rec.date }, 200, ch);
+    }
+
+    // ---- cert-verify: public credential check (no token; returns only public fields) ----
+    if (body.action === "cert-verify") {
+      const id = (body.id || "").toString().trim().toUpperCase().slice(0, 24);
+      const rec = await getJSON(env, "cert:" + id);
+      if (!rec) return json({ valid: false }, 200, ch);
+      return json({
+        valid: true, id: rec.id, name: rec.name,
+        course: rec.course, date: rec.date, score: rec.score,
+      }, 200, ch);
+    }
+
     // ---- progress-get (cross-device resume) ----
     if (body.action === "progress-get") {
       if (!await verifyToken(env, body.email, body.token)) return json({ error: "Unauthorized" }, 401, ch);
