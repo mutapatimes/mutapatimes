@@ -188,7 +188,8 @@ async function getOrCreateList(env, name) {
 // are ignored on purpose.
 async function ensureAttributes(env) {
   var attrs = [["ACADEMY_SIGNUP", "date"], ["ACADEMY_WELCOME_STEP", "float"],
-    ["ACADEMY_DONE", "boolean"], ["ACADEMY_DONE_DATE", "date"], ["ACADEMY_LAST_PITCH", "date"]];
+    ["ACADEMY_DONE", "boolean"], ["ACADEMY_DONE_DATE", "date"], ["ACADEMY_LAST_PITCH", "date"],
+    ["ACADEMY_TERMS_OK", "boolean"], ["ACADEMY_TERMS_AT", "text"], ["ACADEMY_TERMS_VER", "text"]];
   for (var i = 0; i < attrs.length; i++) {
     await brevo(env, "POST", "/contacts/attributes/normal/" + attrs[i][0], { type: attrs[i][1] });
   }
@@ -251,9 +252,13 @@ async function handleEnrol(p, env, ch) {
     await ensureAttributes(env);
     var studentsList = await getOrCreateList(env, STUDENTS_LIST);
     var newsletterList = env.NEWSLETTER_LIST_ID ? parseInt(env.NEWSLETTER_LIST_ID, 10) : null;
-    await upsertContact(env, email,
-      { FIRSTNAME: name.split(" ")[0], ACADEMY_SIGNUP: today, ACADEMY_WELCOME_STEP: 1 },
-      [studentsList, newsletterList]);
+    var enrolAttrs = { FIRSTNAME: name.split(" ")[0], ACADEMY_SIGNUP: today, ACADEMY_WELCOME_STEP: 1 };
+    if (p.termsAccepted) {
+      enrolAttrs.ACADEMY_TERMS_OK = true;
+      enrolAttrs.ACADEMY_TERMS_AT = (p.termsAcceptedAt || new Date().toISOString()).toString().slice(0, 40);
+      enrolAttrs.ACADEMY_TERMS_VER = (p.termsVersion || "").toString().slice(0, 20);
+    }
+    await upsertContact(env, email, enrolAttrs, [studentsList, newsletterList]);
   } catch (e) { console.error("enrol contact", e && e.message); }
 
   try { await sendEmail(env, { to: [email], subject: "Welcome to The Mutapa Times Academy", html: welcomeHTML(name, site) }); }

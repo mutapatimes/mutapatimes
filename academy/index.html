@@ -120,6 +120,10 @@
   .l-input { width: 100%; box-sizing: border-box; font: inherit; border: 1.5px solid rgba(255,255,255,.3); border-radius: 10px; padding: .85rem .9rem; background: rgba(255,255,255,.96); color: var(--ink); }
   .l-input:focus { outline: none; border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,.18); }
   .l-enrol-form .l-btn { width: 100%; margin-top: .5rem; font-size: 1.08rem; padding: 1rem 1.6rem; justify-content: center; }
+  .l-consent { display: flex; align-items: flex-start; gap: .6rem; margin: .4rem 0 .2rem; font-size: .82rem; line-height: 1.45; color: rgba(255,255,255,.82); }
+  .l-consent input { margin: .15rem 0 0; width: 1.05rem; height: 1.05rem; flex: 0 0 auto; accent-color: var(--accent); cursor: pointer; }
+  .l-consent label { cursor: pointer; }
+  .l-consent a { color: #fff; font-weight: 700; text-decoration: underline; }
 
   #faq .l-wrap { max-width: none; padding-left: clamp(1.4rem, 5vw, 4rem); padding-right: clamp(1.4rem, 5vw, 4rem); }
   .l-faq { max-width: none; margin: 1.6rem 0 0; columns: 17rem; column-gap: 2.4rem; }
@@ -393,6 +397,10 @@
       <form id="enrolForm" class="l-enrol-form" novalidate>
         <div class="l-field"><label for="nm">Full name</label><input id="nm" class="l-input" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda"></div>
         <div class="l-field"><label for="em">Email address</label><input id="em" class="l-input" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com"></div>
+        <div class="l-consent">
+          <input id="agree" type="checkbox">
+          <label for="agree">I have read and agree to the Academy <a href="/academy/terms/" target="_blank" rel="noopener">Terms and Conditions</a> and the <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</label>
+        </div>
         <button class="l-btn l-btn--light" id="buyBtn" type="submit">Sign up and continue to payment</button>
       </form>
       <div class="l-methods">
@@ -461,7 +469,7 @@
   </section>
 
   <footer class="l-foot">
-    A programme of <a href="/">The Mutapa Times</a>. <a href="/academy/about/">About the Academy</a> &middot; <a href="/academy/verify/">Verify a certificate</a>. Questions? Email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>.
+    A programme of <a href="/">The Mutapa Times</a>. <a href="/academy/about/">About the Academy</a> &middot; <a href="/academy/verify/">Verify a certificate</a> &middot; <a href="/academy/terms/">Terms</a> &middot; <a href="/privacy">Privacy</a>. Questions? Email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>.
   </footer>
 
   <script>
@@ -482,13 +490,19 @@
       var email = document.getElementById("em").value.trim();
       if (name.length < 2) { status.innerHTML = '<span class="err">Please enter your full name.</span>'; return; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { status.innerHTML = '<span class="err">Please enter a valid email.</span>'; return; }
-      try { localStorage.setItem("mt_academy_name", name); localStorage.setItem("mt_academy_email", email); } catch (e) {}
+      var agree = document.getElementById("agree");
+      if (!agree || !agree.checked) { status.innerHTML = '<span class="err">Please tick the box to accept the Terms and Conditions before continuing.</span>'; if (agree) agree.focus(); return; }
+      try {
+        localStorage.setItem("mt_academy_name", name);
+        localStorage.setItem("mt_academy_email", email);
+        localStorage.setItem("mt_academy_terms_accepted", new Date().toISOString());
+      } catch (e) {}
       // Start the welcome journey (fire and forget; keepalive lets it finish
       // even as we navigate to payment).
       if (COMMS_ENDPOINT) {
         try {
           fetch(COMMS_ENDPOINT, { method: "POST", keepalive: true, headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ kind: "enrol", name: name, email: email }) }).catch(function () {});
+            body: JSON.stringify({ kind: "enrol", name: name, email: email, termsAccepted: true, termsAcceptedAt: new Date().toISOString(), termsVersion: "2026-06-16" }) }).catch(function () {});
         } catch (e) {}
       }
       // Build a tracked Lemon Squeezy checkout, remember the reference, then go.
