@@ -141,6 +141,9 @@ jobs:
           steps.detect.outputs.cooking == 'true'
         run: python3 scripts/install_nav_drawer.py
 
+      - name: Stamp cache-busting asset versions (nav.js / main.css)
+        run: python3 scripts/stamp_assets.py
+
       - name: Commit regenerated HTML
         run: |
           git config user.name "github-actions[bot]"
