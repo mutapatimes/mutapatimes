@@ -302,6 +302,33 @@
   }
   window.MTHaptic = haptic;
 
+  // ── External links open in an in-app browser (Safari View Controller) ──
+  // Inside the native app, links to other sites (news sources, FX providers
+  // like Wise/Mukuru, affiliate links, etc.) open in an in-app browser with a
+  // Done button instead of throwing the user out to Safari. Same-site links
+  // navigate normally in the web view. Capture phase so we beat site handlers.
+  if (isNative) {
+    var Browser = Cap && Cap.Plugins && Cap.Plugins.Browser;
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (/^(mailto:|tel:|sms:|javascript:|#)/i.test(href)) return;
+      var url;
+      try { url = new URL(a.href, location.href); } catch (_) { return; }
+      if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
+      // Same-site (mutapatimes.com) stays in the app's web view.
+      if (url.hostname === location.hostname ||
+          url.hostname.indexOf('mutapatimes.com') !== -1) return;
+      e.preventDefault();
+      haptic('light');
+      if (Browser && Browser.open) {
+        try { Browser.open({ url: url.href, presentationStyle: 'fullscreen' }); return; } catch (_) {}
+      }
+      try { window.open(url.href, '_blank'); } catch (_) { location.href = url.href; }
+    }, true);
+  }
+
   // ── Inject styles (gated; harmless on desktop). ──────────────────────
   var css =
     /* native-feel polish */

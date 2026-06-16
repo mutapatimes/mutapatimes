@@ -2,6 +2,25 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- iOS app (App Store) compliance: the paid course is digital content, so
+       it must not be sold via an external (Lemon Squeezy) checkout inside the
+       native app — Apple Guideline 3.1.1. When running in the Capacitor shell
+       we flag the document and hide every purchase path; the course remains
+       fully purchasable on the web. -->
+  <script>
+    (function () {
+      var C = window.Capacitor;
+      if (C && typeof C.isNativePlatform === "function" && C.isNativePlatform()) {
+        document.documentElement.classList.add("is-native-app");
+      }
+    })();
+  </script>
+  <style>
+    html.is-native-app #enrol,
+    html.is-native-app a[href="#enrol"],
+    html.is-native-app a[href*="lemonsqueezy"],
+    html.is-native-app a[href*="academy-pay"] { display: none !important; }
+  </style>
   <title>The Mutapa Times Academy: Become a working journalist</title>
   <link rel="canonical" href="https://mutapatimes.com/academy/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -486,6 +505,10 @@
     var form = document.getElementById("enrolForm"), status = document.getElementById("status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      // Never initiate the external (Lemon Squeezy) checkout inside the iOS
+      // app — Apple Guideline 3.1.1. The purchase UI is hidden there anyway;
+      // this is belt-and-braces so no digital-goods sale can start in-app.
+      if (document.documentElement.classList.contains("is-native-app")) { return; }
       var name = document.getElementById("nm").value.trim();
       var email = document.getElementById("em").value.trim();
       if (name.length < 2) { status.innerHTML = '<span class="err">Please enter your full name.</span>'; return; }
