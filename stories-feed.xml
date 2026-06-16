@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jun 2026 05:32:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 05:37:50 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Local NGO — Critical Minerals, Water Security and Industrialisation in Selected SADC Countries: Managing Water Risks, Unlocking Sustainable Solutions Democratic Republic of Congo, Namibia, Zambia and Zimbabwe</title>
+      <link>https://mutapatimes.com/stories/c73c06139d23.html</link>
+      <description>Background Critical mineral extraction and processing are often highly waterintensive and can create serious risks for both water quantity and quality. Water is used in mineral processing, dust suppr… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Mon, 15 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/c73c06139d23.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Local NGO</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/c73c06139d23.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c73c06139d23.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/c73c06139d23.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Sales Representative: Elyon Lubricants</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/a746fd3d9b55.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/a746fd3d9b55.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/a746fd3d9b55.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>DRILLMARK BEARINGS &amp; ENGINEERING SUPPLIES — ACCOUNTANT</title>
-      <link>https://mutapatimes.com/stories/4ee63944d85a.html</link>
-      <description>Claire-Soft Hygiene is inviting applications from suitably qualified and experienced individuals for the position of Accountant for its 2 business divisions. The Accountant will manage core accountin… Harare · Full Time · Negotiable (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 15 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/4ee63944d85a.html</guid>
-      <category>Jobs</category>
-      <dc:creator>DRILLMARK BEARINGS &amp; ENGINEERING SUPPLIES</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/4ee63944d85a.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4ee63944d85a.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/4ee63944d85a.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
