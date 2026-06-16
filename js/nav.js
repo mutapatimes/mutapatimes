@@ -342,13 +342,18 @@
     '.mt-tabbar>a:active,.mt-tabbar>button:active{transform:scale(.88);opacity:.55;}' +
     /* swipeable section nav on mobile: show every section in a scroll strip */
     '@media(max-width:760px){' +
-    '#mainNav{justify-content:flex-start!important;flex-wrap:nowrap!important;' +
-    'overflow-x:auto!important;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;' +
-    'scroll-padding-left:14px;padding-left:14px;padding-right:14px;overscroll-behavior-x:contain;}' +
-    '#mainNav p{display:flex!important;padding:0 13px;scroll-snap-align:start;}' +
+    '#mainNav{display:flex!important;justify-content:flex-start!important;flex-wrap:nowrap!important;' +
+    'overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch;' +
+    'touch-action:pan-x;width:100%;max-width:100%;box-sizing:border-box;' +
+    'padding-left:12px!important;padding-right:12px!important;overscroll-behavior-x:contain;}' +
+    '#mainNav>p,#mainNav>.nav-cities-item{flex:0 0 auto!important;}' +
+    '#mainNav p{display:flex!important;padding:0 12px;}' +
     '#mainNav.is-scrollable{-webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 38px),transparent 100%);' +
     'mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 38px),transparent 100%);}' +
     '#mainNav.is-scrollable.is-scroll-end{-webkit-mask-image:none;mask-image:none;}}' +
+    /* declutter: drop the heavy newsletter + mega-footer in the native app
+       (the bottom tab bar handles navigation; Subscribe lives in the topbar) */
+    'html.is-native-app .essential-subscribe,html.is-native-app .atlantic-foot{display:none!important;}' +
     /* pull to refresh */
     '.mt-ptr{position:fixed;top:0;left:50%;z-index:10000;width:36px;height:36px;' +
     'margin-top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;align-items:center;' +
@@ -396,7 +401,7 @@
     document.body.appendChild(ptr);
     var svg = ptr.querySelector('svg');
 
-    var startY = 0, pulling = false, raw = 0, busy = false;
+    var startY = 0, startX = 0, pulling = false, raw = 0, busy = false, locked = false;
     var DAMP = 0.5, MAXD = 110, TRIGGER = 62;
     function atTop() { return (window.scrollY || document.documentElement.scrollTop || 0) <= 0; }
     function shown(d) {
@@ -415,14 +420,21 @@
 
     window.addEventListener('touchstart', function (e) {
       if (busy || e.touches.length !== 1 || !atTop()) { pulling = false; return; }
-      startY = e.touches[0].clientY; raw = 0; pulling = true;
+      startY = e.touches[0].clientY; startX = e.touches[0].clientX;
+      raw = 0; pulling = true; locked = false;
       ptr.classList.remove('mt-ptr--snap');
     }, { passive: true });
 
     window.addEventListener('touchmove', function (e) {
       if (!pulling || busy) return;
       raw = e.touches[0].clientY - startY;
-      if (raw <= 0 || !atTop()) { pulling = false; reset(); return; }
+      var dx = e.touches[0].clientX - startX;
+      // Only act on a clearly VERTICAL pull. A horizontal swipe (e.g. on the
+      // scrollable section nav) must pass through untouched. Once we decide a
+      // gesture is horizontal, lock out PTR for the rest of the touch.
+      if (locked) return;
+      if (Math.abs(dx) > Math.abs(raw)) { locked = true; pulling = false; reset(); return; }
+      if (raw <= 6 || !atTop()) { if (raw < 0) { pulling = false; reset(); } return; }
       if (e.cancelable) e.preventDefault(); // stop the native bounce fighting us
       shown(Math.min(MAXD, raw * DAMP));
     }, { passive: false });
