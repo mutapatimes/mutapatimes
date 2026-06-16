@@ -268,3 +268,151 @@
   document.body.appendChild(nav);
   document.body.classList.add('mt-has-tabbar');
 })();
+
+/* ─── iOS-app experience: pull-to-refresh, haptics, swipeable section nav,
+ *     and native-feel polish. Self-contained, injects its own styles, and
+ *     runs site-wide (nav.js is loaded everywhere). The Capacitor shell loads
+ *     the live site, so this reaches the app instantly with no rebuild. ──── */
+(function () {
+  'use strict';
+
+  var Cap = window.Capacitor;
+  var isNative = !!(Cap && typeof Cap.isNativePlatform === 'function' && Cap.isNativePlatform());
+  var isStandalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+                     window.navigator.standalone === true;
+  var appLike = isNative || isStandalone;
+  var root = document.documentElement;
+  if (isNative) root.classList.add('is-native-app');
+  if (appLike) root.classList.add('is-app-like');
+
+  // ── Haptics: Capacitor Haptics plugin when available, else Web Vibration.
+  // Guarded so it is a no-op where neither exists (e.g. iOS WKWebView without
+  // the plugin) rather than throwing. window.MTHaptic is shared.
+  var H = Cap && Cap.Plugins && Cap.Plugins.Haptics;
+  function haptic(kind) {
+    try {
+      if (H) {
+        if (kind === 'select' && H.selectionStart) { H.selectionStart(); return; }
+        if (H.impact) { H.impact({ style: kind === 'heavy' ? 'HEAVY' : kind === 'medium' ? 'MEDIUM' : 'LIGHT' }); return; }
+      }
+      if (navigator.vibrate) navigator.vibrate(kind === 'heavy' ? 16 : kind === 'medium' ? 11 : 6);
+    } catch (e) {}
+  }
+  window.MTHaptic = haptic;
+
+  // ── Inject styles (gated; harmless on desktop). ──────────────────────
+  var css =
+    /* native-feel polish */
+    'html.is-app-like,html.is-app-like body{overscroll-behavior-y:none;}' +
+    'html.is-native-app{-webkit-tap-highlight-color:transparent;}' +
+    'html.is-native-app nav,html.is-native-app .mt-tabbar,html.is-native-app .nav-drawer,' +
+    'html.is-native-app .nav-hamburger,html.is-native-app button{-webkit-touch-callout:none;' +
+    '-webkit-user-select:none;user-select:none;}' +
+    /* tab-bar press feedback */
+    '.mt-tabbar>a,.mt-tabbar>button{transition:transform .12s ease,opacity .12s ease;}' +
+    '.mt-tabbar>a:active,.mt-tabbar>button:active{transform:scale(.88);opacity:.55;}' +
+    /* swipeable section nav on mobile: show every section in a scroll strip */
+    '@media(max-width:760px){' +
+    '#mainNav{justify-content:flex-start!important;flex-wrap:nowrap!important;' +
+    'overflow-x:auto!important;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;' +
+    'scroll-padding-left:14px;padding-left:14px;padding-right:14px;overscroll-behavior-x:contain;}' +
+    '#mainNav p{display:flex!important;padding:0 13px;scroll-snap-align:start;}' +
+    '#mainNav.is-scrollable{-webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 38px),transparent 100%);' +
+    'mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 38px),transparent 100%);}' +
+    '#mainNav.is-scrollable.is-scroll-end{-webkit-mask-image:none;mask-image:none;}}' +
+    /* pull to refresh */
+    '.mt-ptr{position:fixed;top:0;left:50%;z-index:10000;width:36px;height:36px;' +
+    'margin-top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;align-items:center;' +
+    'justify-content:center;border-radius:50%;background:rgba(255,255,255,.97);' +
+    'box-shadow:0 6px 20px rgba(0,0,0,.18);color:#c41e1e;opacity:0;pointer-events:none;' +
+    'transform:translateX(-50%) translateY(0);}' +
+    '.mt-ptr.mt-ptr--snap{transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .32s ease;}' +
+    '.mt-ptr svg{width:22px;height:22px;display:block;}' +
+    '.mt-ptr circle{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;' +
+    'stroke-dasharray:54;stroke-dashoffset:15;transform-origin:center;}' +
+    '.mt-ptr.is-ready{color:#1a7f44;}' +
+    '.mt-ptr.is-spin svg{animation:mtspin .7s linear infinite;}' +
+    '@keyframes mtspin{to{transform:rotate(360deg);}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+  // ── Swipeable section nav: fade hint + reveal the active item. ───────
+  (function () {
+    var mn = document.getElementById('mainNav');
+    if (!mn) return;
+    function sync() {
+      var scrollable = (mn.scrollWidth - mn.clientWidth) > 4;
+      mn.classList.toggle('is-scrollable', scrollable);
+      mn.classList.toggle('is-scroll-end', mn.scrollLeft + mn.clientWidth >= mn.scrollWidth - 4);
+    }
+    mn.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync, { passive: true });
+    sync();
+    var active = mn.querySelector('a.active');
+    if (active && (mn.scrollWidth - mn.clientWidth) > 4) {
+      try { active.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {}
+    }
+  })();
+
+  // ── Haptic on bottom-tab taps (delegated; tab bar already in the DOM).
+  var tabbar = document.querySelector('.mt-tabbar');
+  if (tabbar) tabbar.addEventListener('click', function () { haptic('select'); }, { passive: true });
+
+  // ── Pull to refresh (app-like contexts only, to avoid clashing with the
+  //    browser's own gesture in a normal mobile tab). ───────────────────
+  if (appLike && 'ontouchstart' in window) {
+    var ptr = document.createElement('div');
+    ptr.className = 'mt-ptr';
+    ptr.setAttribute('aria-hidden', 'true');
+    ptr.innerHTML = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>';
+    document.body.appendChild(ptr);
+    var svg = ptr.querySelector('svg');
+
+    var startY = 0, pulling = false, raw = 0, busy = false;
+    var DAMP = 0.5, MAXD = 110, TRIGGER = 62;
+    function atTop() { return (window.scrollY || document.documentElement.scrollTop || 0) <= 0; }
+    function shown(d) {
+      ptr.style.opacity = String(Math.max(0, Math.min(1, d / TRIGGER)));
+      ptr.style.transform = 'translateX(-50%) translateY(' + d + 'px)';
+      if (svg) svg.style.transform = 'rotate(' + (d * 3.4) + 'deg)';
+      ptr.classList.toggle('is-ready', d >= TRIGGER);
+    }
+    function reset() {
+      ptr.classList.add('mt-ptr--snap');
+      ptr.style.opacity = '0';
+      ptr.style.transform = 'translateX(-50%) translateY(0)';
+      ptr.classList.remove('is-ready');
+      if (svg) svg.style.transform = '';
+    }
+
+    window.addEventListener('touchstart', function (e) {
+      if (busy || e.touches.length !== 1 || !atTop()) { pulling = false; return; }
+      startY = e.touches[0].clientY; raw = 0; pulling = true;
+      ptr.classList.remove('mt-ptr--snap');
+    }, { passive: true });
+
+    window.addEventListener('touchmove', function (e) {
+      if (!pulling || busy) return;
+      raw = e.touches[0].clientY - startY;
+      if (raw <= 0 || !atTop()) { pulling = false; reset(); return; }
+      if (e.cancelable) e.preventDefault(); // stop the native bounce fighting us
+      shown(Math.min(MAXD, raw * DAMP));
+    }, { passive: false });
+
+    window.addEventListener('touchend', function () {
+      if (!pulling || busy) { pulling = false; return; }
+      pulling = false;
+      var d = Math.min(MAXD, raw * DAMP);
+      if (d >= TRIGGER) {
+        busy = true;
+        haptic('medium');
+        ptr.classList.add('mt-ptr--snap', 'is-spin');
+        if (svg) svg.style.transform = '';
+        ptr.style.opacity = '1';
+        ptr.style.transform = 'translateX(-50%) translateY(' + Math.round(TRIGGER * 0.92) + 'px)';
+        setTimeout(function () { location.reload(); }, 380);
+      } else {
+        reset();
+      }
+    }, { passive: true });
+  }
+})();
