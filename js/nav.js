@@ -28,6 +28,7 @@
     document.documentElement.classList.add('nav-drawer-locked');
     setHamburgerState(true);
     drawer.setAttribute('aria-hidden', 'false');
+    if (window.MTHaptic) window.MTHaptic('light');
   }
   function closeDrawer() {
     if (!drawer) return;
@@ -36,6 +37,7 @@
     document.documentElement.classList.remove('nav-drawer-locked');
     setHamburgerState(false);
     drawer.setAttribute('aria-hidden', 'true');
+    if (window.MTHaptic) window.MTHaptic('light');
   }
   function toggleDrawer() {
     if (!drawer) return;
