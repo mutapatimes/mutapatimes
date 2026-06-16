@@ -789,11 +789,24 @@ def build_articles():
             )
         )
 
-        # Longform articles with no photograph get a generated gradient hero,
-        # so the NYT-style header always has stunning artwork for the headline
-        # to sit on. Deterministic by slug (stable across rebuilds, no churn)
-        # and rendered once, then reused.
-        if longform and not image:
+        # Never hotlink a major international agency/outlet photo as the hero
+        # (image-rights enforcement risk — PicRights et al. act for AFP /
+        # Reuters / AP / Getty). Drop it and fall back to our own gradient
+        # artwork below. Zimbabwean / local outlet images are left as-is.
+        _force_gradient = False
+        try:
+            from build_feed_cards import is_rights_risky as _rights_risky
+            if image and _rights_risky(image):
+                image = ""
+                _force_gradient = True
+        except Exception:
+            pass
+
+        # Longform articles with no photograph (and any article whose hero we
+        # just dropped) get a generated gradient hero, so the header always has
+        # stunning artwork for the headline to sit on. Deterministic by slug
+        # (stable across rebuilds, no churn) and rendered once, then reused.
+        if (longform or _force_gradient) and not image:
             _auto_rel = f"img/articles/auto/{slug}.jpg"
             _auto_abs = os.path.join(ROOT_DIR, _auto_rel)
             if not os.path.exists(_auto_abs):

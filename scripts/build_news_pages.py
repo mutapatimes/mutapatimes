@@ -150,6 +150,32 @@ def load_articles():
     return out
 
 
+# ── Image-rights-safe hero ─────────────────────────────────────
+# Never hotlink a major international agency/outlet photo as the news hero
+# (PicRights et al. enforce AFP / Reuters / AP / Getty). Swap risky hosts for
+# our own deterministic gradient artwork. Local/Zim outlet images pass through.
+def news_safe_hero(image_url, canonical):
+    try:
+        from build_feed_cards import is_rights_risky
+    except Exception:
+        return image_url
+    if not image_url or not is_rights_risky(image_url):
+        return image_url
+    slug = (canonical or "").rstrip("/").split("/")[-1]
+    if slug.endswith(".html"):
+        slug = slug[:-5]
+    rel = f"img/news/auto/{slug}.jpg"
+    try:
+        os.makedirs(os.path.dirname(rel), exist_ok=True)
+        if not os.path.exists(rel):
+            from gradient_hero import make_gradient_hero
+            make_gradient_hero(slug, rel)
+    except Exception as e:  # better no hero than a hotlinked agency photo
+        print(f"  news gradient hero failed for {slug}: {e}")
+        return ""
+    return f"/{rel}" if os.path.exists(rel) else ""
+
+
 # ── Page rendering ─────────────────────────────────────────────
 def render_page(article, related=None):
     title = article["title"]
@@ -229,8 +255,9 @@ def render_page(article, related=None):
     parts.append("  </div>")
     parts.append(f'  <h1 class="news-headline">{esc(title)}</h1>')
     parts.append(f'  <p class="news-source-line">VIA <strong>{esc(source.upper())}</strong></p>')
-    if article["image"]:
-        parts.append(f'  <img class="news-hero" src="{esc(article["image"])}" alt="{esc(title)}" loading="eager">')
+    _hero = news_safe_hero(article["image"], canonical)
+    if _hero:
+        parts.append(f'  <img class="news-hero" src="{esc(_hero)}" alt="{esc(title)}" loading="eager">')
 
     if article["description"]:
         parts.append(f'  <p class="news-summary">{esc(article["description"])}</p>')

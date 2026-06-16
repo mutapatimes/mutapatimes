@@ -55,6 +55,54 @@ def card_public_url(url):
     return f"{PUBLIC_BASE}/{card_filename(url)}"
 
 
+# ── Image-rights risk ────────────────────────────────────────────────────
+# Major international news agencies / outlets whose photographs are routinely
+# enforced by image-rights firms (e.g. PicRights acting for AFP, Reuters, AP,
+# Getty, EPA). We never hotlink these as a page hero; the generators swap in
+# our own gradient artwork instead. Zimbabwean / local outlets are NOT listed
+# here on purpose — they are left untouched. Match is a substring on the host.
+BIG_LEAGUE_IMAGE_HOSTS = (
+    "guim.co.uk", "theguardian.com",
+    "reuters.com", "reutersmedia",
+    "bbci.co.uk", "bbc.co.uk", "bbc.com",
+    "apnews.com", "ap.org",
+    "gettyimages", "gstatic",
+    "afp.com",
+    "nytimes.com", "nyt.com", "washingtonpost", "cnn.com", "cnn.io",
+    "aljazeera", "bloomberg", "ft.com",
+    "telegraph.co.uk", "telegraphindia.com",
+    "thetimes.co.uk", "thetimes.com",
+    "independent.co.uk", "mirror.co.uk", "thesun.co.uk",
+    "sky.com", "skynews", "dw.com", "france24", "euronews.com",
+    "nbcnews", "abcnews", "cbsnews", "foxnews",
+    "news18.com", "ndtvimg.com", "ndtv.com", "tribuneindia.com",
+    "hindustantimes", "indianexpress", "news18", "india.com",
+    "cricbuzz.com", "hscicdn.com", "imgci.com", "icc-cricket.com",
+    "espncdn", "espncricinfo", "flashscore",
+    "creamermedia.com", "engineeringnews.co.za",
+    "modernghana.com", "allafrica.com", "briefly.co.za",
+    "news24.com", "iol.co.za", "iol-prod", "mg.co.za", "dailymaverick",
+    "b37mrtl.ru", "rt.com", "tass.",
+    "assettype.com", "simplywall.st", "euronews",
+)
+
+
+def is_rights_risky(url):
+    """True if the image URL is hosted by a major international agency/outlet
+    we should not hotlink. Local/Zimbabwean outlets return False."""
+    if not url:
+        return False
+    u = str(url).strip().lower()
+    if not u.startswith("http"):
+        return False
+    try:
+        from urllib.parse import urlparse
+        host = (urlparse(u).hostname or "")
+    except Exception:
+        host = u
+    return any(h in host for h in BIG_LEAGUE_IMAGE_HOSTS)
+
+
 def color_for(url):
     """Deterministic colour index per URL. int(hex, 16) makes the
     distribution effectively random across articles."""
