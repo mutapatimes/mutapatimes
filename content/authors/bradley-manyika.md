@@ -4,7 +4,7 @@ slug: bradley-manyika
 role: Contributor
 beat: Banking and finance, Southern Africa
 bio: "A Mutapa Times contributor covering banking and finance across Southern Africa."
-photo: /img/uploads/authors/bradley-manyika.jpg
+photo: /img/uploads/authors/bradley-manyika.png
 location: ""
 twitter: ""
 instagram: ""
