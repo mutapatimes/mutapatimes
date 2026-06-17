@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-17T11:16:50.978941+00:00",
+  "fetched_at": "2026-06-17T16:03:05.034509+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -94,6 +94,15 @@
       "baths": "2"
     },
     {
+      "title": "Beautiful House! Kuwanadza Phase 3",
+      "url": "https://www.property.co.zw/for-sale/houses-thre249513",
+      "price": "USD 72,000",
+      "location": "Kuwadzana, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/13/f6/ca/13f6cae1-35bd-413e-b95f-bb80ff9f55f7_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
       "title": "Executive Townhouses of Distinction - ONLY TWO UNITS LEFT!!!",
       "url": "https://www.property.co.zw/for-sale/townhouses-plzp216962",
       "price": "USD 580,000",
@@ -175,6 +184,15 @@
       "baths": "3"
     },
     {
+      "title": "Zimre Park Neat House for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-pfix249521",
+      "price": "USD 89,000",
+      "location": "Zimre Park, Harare East",
+      "image": "https://www.property.co.zw/uploadedfiles/77/50/eb/7750ebaf-7266-41c9-be30-d76cb3cee26d_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
       "title": "Blackdawn - Nyabira 3 Bed 3 Bath Brick Shell",
       "url": "https://www.property.co.zw/for-sale/houses-sef246098",
       "price": "USD 58,000",
@@ -182,24 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/00/b2/67/00b267cb-c8b9-44e4-b9a2-78e6a6ecd4f5_thumbnail591.webp",
       "beds": "3",
       "baths": "3"
-    },
-    {
-      "title": "Development Potential on 2.2 acres in Borrowdale",
-      "url": "https://www.property.co.zw/for-sale/houses-nst244138",
-      "price": "USD 1,800,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/d3/59/17/d3591737-a79a-4f87-980c-e499f9781caa_thumbnail591.webp",
-      "beds": "4",
-      "baths": "3"
-    },
-    {
-      "title": "Modern 4-Bed Home in Nyeredzi Ridge - Solar & Borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-glre249484",
-      "price": "USD 270,000",
-      "location": "Nyeredzi Ridge, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/07/f2/ad/07f2ad7f-d1f5-47b9-bc26-421069fe40cd_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     }
   ]
 }
