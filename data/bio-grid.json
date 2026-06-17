@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-17T03:34:48+00:00",
+  "fetched_at": "2026-06-17T10:46:29+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "How does a whole cabinet agree that domestic workers deserve a measly $90?",
+      "link": "https://mutapatimes.com/news/2026-06-16-how-does-a-whole-cabinet-agree-that-domestic-workers-deserve-a-measly-90-2a237e",
+      "image": "https://mutapatimes.com/img/cards/news/02c4924fa734.png",
+      "pubDate": "2026-06-16T22:07:51+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim current account 2025 Q4: $821M. Trailing four quarters: $1.9B.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 17 Jun 2026: 1 USD = 26.69 ZWG · best from UK £100 → $131.06 via Wise",
+      "title": "Zim FX snapshot 17 Jun 2026: 1 USD = 26.70 ZWG · best from UK £100 → $131.11 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-06-17",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-17",
       "pubDate": "2026-06-16T22:00:00+00:00",
@@ -20,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 17 Jun: Harare overcast · high 20° / low 8°",
+      "title": "Zim weather 17 Jun: Harare mainly clear · high 20° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-06-17",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-17",
       "pubDate": "2026-06-16T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Bata Shoe Company — Class 1 Electrician",
       "link": "https://vacancymail.co.zw/jobs/class-1-electrician-67807/",
       "image": "https://mutapatimes.com/img/cards/jobs/3af7dc4b9e1c.png",
-      "pubDate": "2026-06-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bata Shoe Company — Class 1 Plumber",
-      "link": "https://vacancymail.co.zw/jobs/class-1-plumber-67806/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b5d6e0ee944a.png",
       "pubDate": "2026-06-16T22:00:00+00:00",
       "category": "Jobs"
     }
