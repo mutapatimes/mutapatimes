@@ -10,6 +10,7 @@
   var GRADE_ENDPOINT = "https://academy-grade.mutapatimes.workers.dev"; // AI writing feedback (Gemini)
   var CERT_ENDPOINT = "https://academy-certificate.mutapatimes.workers.dev";  // certificate + article submission email
   var PASS_MARK = 70;      // percent of graded questions across the course needed for the certificate
+  var READ_REQUIRED = 3;   // Reading Room analyses required before the certificate unlocks
   var LESSON_PASS = 80;    // percent needed to complete (and unlock past) a single lesson
   // Review mode (set by /academy/review/): everything unlocked, no gates,
   // explanations always shown, progress kept under a separate key.
@@ -232,9 +233,11 @@
   function allLessons() { var out = []; COURSE.units.forEach(function (u) { u.lessons.forEach(function (l) { out.push(l); }); }); return out; }
   function lessonState(id) { return state.lessons[id] || (state.lessons[id] = { done: false, exercises: {} }); }
   function courseProgress() { var t = allLessons().length, d = 0; allLessons().forEach(function (l) { if (lessonState(l.id).done) d++; }); return { done: d, total: t, pct: t ? Math.round(d / t * 100) : 0 }; }
-  function computeScore() { var c = 0, t = 0; for (var lid in state.results) { var r = state.results[lid]; for (var i in r) { if (r[i].type === "write") continue; t++; if (r[i].ok) c++; } } return { correct: c, total: t, pct: t ? Math.round(c / t * 100) : 0 }; }
-  function certEligible() { var p = courseProgress(), s = computeScore(); return p.total > 0 && p.done === p.total && s.total > 0 && s.pct >= PASS_MARK; }
-  function lessonGradedTotal(lesson) { return lesson.exercises.filter(function (e) { return e.type !== "write"; }).length; }
+  function computeScore() { var c = 0, t = 0; for (var lid in state.results) { var r = state.results[lid]; for (var i in r) { if (r[i].type === "write" || r[i].type === "urlbreak") continue; t++; if (r[i].ok) c++; } } return { correct: c, total: t, pct: t ? Math.round(c / t * 100) : 0 }; }
+  function readsDone() { return state.readCount || 0; }
+  function readingMet() { return REVIEW || readsDone() >= READ_REQUIRED; }
+  function certEligible() { var p = courseProgress(), s = computeScore(); return p.total > 0 && p.done === p.total && s.total > 0 && s.pct >= PASS_MARK && readingMet(); }
+  function lessonGradedTotal(lesson) { return lesson.exercises.filter(function (e) { return e.type !== "write" && e.type !== "urlbreak"; }).length; }
   function lessonScore(lesson) { var r = state.results[lesson.id] || {}, correct = 0; for (var i in r) { if (r[i].type !== "write" && r[i].ok) correct++; } var total = lessonGradedTotal(lesson); return total ? Math.round(correct / total * 100) : 100; }
   function isUnlocked(id) { if (REVIEW) return true; var ls = allLessons(); for (var i = 0; i < ls.length; i++) { if (ls[i].id === id) return i === 0 || lessonState(ls[i - 1].id).done; } return false; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
@@ -320,7 +323,7 @@
 
     var head = el("div", "ac-home-head");
     head.appendChild(el("p", "ac-eyebrow", "Mutapa Times Academy"));
-    head.appendChild(el("h1", "ac-h1", "Learn to report Africa"));
+    head.appendChild(el("h1", "ac-h1", "Learn the craft of journalism"));
     head.appendChild(el("p", "ac-lead", COURSE.blurb));
     view.appendChild(head);
 
@@ -357,7 +360,7 @@
     if (prog.total > 0 && prog.done === prog.total) {
       var sc = computeScore();
       var cert = el("div", "ac-certcard");
-      if (sc.pct >= PASS_MARK) {
+      if (sc.pct >= PASS_MARK && readingMet()) {
         notifyCompletion();
         cert.classList.add("pass");
         cert.appendChild(el("p", "ac-cert-eyebrow", "Course complete"));
@@ -372,6 +375,13 @@
         var cvb = el("button", "ac-btn ac-btn--ghost", "Build your CV");
         cvb.addEventListener("click", function () { Sound.play("tap"); go("#/cv"); });
         cert.appendChild(cvb);
+      } else if (sc.pct >= PASS_MARK) {
+        cert.appendChild(el("p", "ac-cert-eyebrow", "One step left"));
+        cert.appendChild(el("h2", null, "Finish the Reading Room"));
+        cert.appendChild(el("p", null, "You passed the lessons with " + sc.pct + "%. The Reading Room is compulsory: analyse " + READ_REQUIRED + " editions to earn your certificate. You have completed " + readsDone() + " of " + READ_REQUIRED + "."));
+        var rb = el("button", "ac-btn ac-btn--lg", "Go to the Reading Room");
+        rb.addEventListener("click", function () { Sound.play("tap"); go("#/read"); });
+        cert.appendChild(rb);
       } else {
         cert.appendChild(el("p", "ac-cert-eyebrow", "Almost there"));
         cert.appendChild(el("h2", null, "You scored " + sc.pct + "%"));
@@ -924,6 +934,89 @@
     function finish() { done(); var a2 = el("div", "ac-actions"); var c = el("button", "ac-btn", "Continue"); c.addEventListener("click", function () { Sound.play("tap"); next(); }); a2.appendChild(c); host.appendChild(a2); }
   };
 
+  // urlbreak: the student pastes a real advert's destination link; we parse it
+  // and explain every part, so they see how online advertising and affiliate
+  // tracking actually work. Not scored (like write); completing it marks done.
+  RENDERERS.urlbreak = function (host, ex, done, next, rec) {
+    host.appendChild(el("p", "ac-q", ex.q));
+    if (ex.instruction) { var br = el("div", "ac-brief"); (Array.isArray(ex.instruction) ? ex.instruction : [ex.instruction]).forEach(function (p) { br.appendChild(el("p", null, p)); }); host.appendChild(br); }
+    var input = el("input", "ac-input ac-url-input"); input.type = "text"; input.setAttribute("autocomplete", "off"); input.setAttribute("spellcheck", "false");
+    input.placeholder = "Paste the advert's link here, e.g. https://www.example.com/offer?utm_source=...";
+    host.appendChild(input);
+    var acts = el("div", "ac-actions");
+    var go1 = el("button", "ac-btn", "Break down the link");
+    var status = el("span", "ac-status"); acts.appendChild(go1); acts.appendChild(status); host.appendChild(acts);
+    if (ex.example) {
+      var egwrap = el("p", "ac-url-eg");
+      var egbtn = el("button", "ac-linkbtn", "No advert handy? Load a sample affiliate link"); egbtn.type = "button";
+      egbtn.addEventListener("click", function () { Sound.play("tap"); input.value = ex.example; input.focus(); });
+      egwrap.appendChild(egbtn); host.appendChild(egwrap);
+    }
+    function parseUrl(raw) {
+      raw = (raw || "").trim();
+      if (!raw) return null;
+      try { return new URL(raw); } catch (e) {}
+      try { return new URL("https://" + raw.replace(/^\/+/, "")); } catch (e) {}
+      return null;
+    }
+    function meaning(key) {
+      var k = key.toLowerCase();
+      var map = {
+        "utm_source": "Names where the click came from: a newsletter, a partner site, or an affiliate ID.",
+        "utm_medium": "The marketing channel. 'cpa' means cost per acquisition: the partner is paid only when a signup happens. 'cpc' is paid per click, 'email' and 'social' name the channel.",
+        "utm_campaign": "The named campaign this link belongs to.",
+        "utm_channel": "The broad channel, for example 'affiliates'.",
+        "utm_content": "Which specific creative or link was clicked, when several point to the same page.",
+        "utm_term": "Usually the paid-search keyword that was bought.",
+        "irclickid": "A unique click ID generated by the Impact affiliate network to identify this exact click.",
+        "irgwc": "A flag showing the click came through the Impact affiliate gateway.",
+        "iradid": "An Impact advertising or creative ID: which specific ad or link was used.",
+        "partner": "The affiliate partner's ID. This is who gets credited, and paid, for your click.",
+        "partnerid": "The affiliate partner's ID. This is who gets credited, and paid, for your click.",
+        "affpt": "An internal affiliate-tracking flag used by the advertiser.",
+        "gclid": "Google Click Identifier: ties the click to a Google Ads campaign.",
+        "fbclid": "Facebook Click Identifier: ties the click to a Meta (Facebook or Instagram) ad or post.",
+        "msclkid": "Microsoft Click ID, used by Bing and Microsoft Ads.",
+        "mc_eid": "A Mailchimp recipient ID: ties the click to the exact person an email was sent to.",
+        "mc_cid": "A Mailchimp campaign ID: which email send this came from.",
+        "ref": "Who referred you. Often a partner code or another page.",
+        "referrer": "Who referred you. Often a partner code or another page.",
+        "aff": "An affiliate identifier: the partner credited for the referral.",
+        "aff_id": "An affiliate identifier: the partner credited for the referral.",
+        "affiliate": "An affiliate identifier: the partner credited for the referral."
+      };
+      if (map[k]) return map[k];
+      if (k.indexOf("utm_") === 0) return "A UTM tag. Marketers add these so their analytics can see which campaign, source or link sent you.";
+      return "A custom tracking or routing value the advertiser added. It does not change the product you see.";
+    }
+    go1.addEventListener("click", function () {
+      var u = parseUrl(input.value);
+      if (!u) { status.innerHTML = '<span class="ac-err">That does not look like a web address. Copy the full link from your browser bar and paste it again.</span>'; return; }
+      status.textContent = ""; input.disabled = true; go1.disabled = true; Sound.play("tap");
+      var box = el("div", "ac-result ac-urlbreak");
+      function row(part, val, why) { var tr = document.createElement("tr"); tr.appendChild(el("td", "ac-url-part", part)); tr.appendChild(el("td", "ac-url-val", val)); tr.appendChild(el("td", "ac-url-why", why)); return tr; }
+      box.appendChild(el("h3", "ac-url-h", "The address itself"));
+      var base = el("table", "ac-url-table");
+      base.appendChild(row("Site", u.protocol.replace(":", "") + "://" + u.host, "The advertiser's own website, the page you actually land on."));
+      if (u.pathname && u.pathname !== "/") base.appendChild(row("Page", u.pathname, "The specific page, usually the offer, product or free trial."));
+      box.appendChild(base);
+      var params = []; u.searchParams.forEach(function (v, k) { params.push([k, v]); });
+      if (params.length) {
+        box.appendChild(el("h3", "ac-url-h", "Everything after the ? is tracking (" + params.length + " parameter" + (params.length === 1 ? "" : "s") + ")"));
+        var pt = el("table", "ac-url-table");
+        params.forEach(function (p) { pt.appendChild(row(p[0], p[1], meaning(p[0]))); });
+        box.appendChild(pt);
+      } else {
+        box.appendChild(el("p", null, "This link has no tracking parameters after a ?, so nobody is being credited for your click. Most advert and sponsor links do carry them. Try one and paste it again to see the difference."));
+      }
+      host.appendChild(box);
+      if (ex.takeaway) { var tk = el("div", "ac-brief ac-url-takeaway"); (Array.isArray(ex.takeaway) ? ex.takeaway : [ex.takeaway]).forEach(function (p) { tk.appendChild(el("p", null, p)); }); host.appendChild(tk); }
+      Sound.play("correct");
+      done();
+      var a2 = el("div", "ac-actions"); var c = el("button", "ac-btn", "Continue"); c.addEventListener("click", function () { Sound.play("tap"); next(); }); a2.appendChild(c); host.appendChild(a2);
+    });
+  };
+
   // ---------- certificate ----------
   var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   function dateStr() { var d = new Date(); return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
@@ -1360,6 +1453,14 @@
     lead.appendChild(el("p", null, "Then share what you read with your own take, and tag @mutapatimes. Reporters are most active on text-first platforms like X, Threads and Reddit, so post there and reply to other journalists. Every article you share earns you a reward."));
     view.appendChild(lead);
     var doneN = state.readCount || 0;
+    if (!REVIEW) {
+      var reqMet = doneN >= READ_REQUIRED;
+      var req = el("p", "ac-read-required" + (reqMet ? " is-met" : ""));
+      req.textContent = reqMet
+        ? "Reading Room requirement met (" + doneN + " of " + READ_REQUIRED + " analyses). Keep the habit going."
+        : "The Reading Room is compulsory. Complete " + READ_REQUIRED + " analyses to earn your certificate. You have done " + doneN + " of " + READ_REQUIRED + ".";
+      view.appendChild(req);
+    }
     if (doneN > 0) view.appendChild(el("p", "ac-read-count", "You have completed " + doneN + (doneN === 1 ? " analysis" : " analyses") + " so far. Keep going."));
     var shN = state.shareCount || 0;
     if (shN > 0) view.appendChild(el("p", "ac-read-count", "You have shared " + shN + (shN === 1 ? " article" : " articles") + ". Keep building your presence."));

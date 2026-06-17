@@ -238,6 +238,7 @@
       <nav class="l-nav">
         <a class="l-brand" href="/">The Mutapa Times<small>Academy</small></a>
         <span style="display:flex;gap:.55rem;align-items:center">
+          <a class="l-navlink" href="/academy/syllabus/">Syllabus</a>
           <a class="l-navlink" href="/academy/about/">About</a>
           <a class="l-navlink" href="#enrol">Enrol</a>
         </span>
@@ -381,15 +382,18 @@
         <div class="l-unit"><h3>Foundations</h3><p>What news is, news versus PR, voice and ethics.</p></div>
         <div class="l-unit"><h3>Inside the newsroom</h3><p>Who does what, how a story moves, reading an outlet.</p></div>
         <div class="l-unit"><h3>How news makes money</h3><p>Revenue models, paywalls, and how funding shapes coverage.</p></div>
-        <div class="l-unit"><h3>Reporting the continent</h3><p>Covering Africa fairly, beyond stereotypes, region by region.</p></div>
+        <div class="l-unit"><h3>Covering places fairly</h3><p>Reporting beyond stereotypes, and reading any region with a sharper eye.</p></div>
         <div class="l-unit"><h3>The craft</h3><p>Sources, interviewing, structure, the lede, clear writing, editing.</p></div>
         <div class="l-unit"><h3>Fact-checking and copy</h3><p>Verify every claim, then catch every error.</p></div>
+        <div class="l-unit"><h3>Working with the media</h3><p>How journalists think, pitching, the elevator pitch, and the press release.</p></div>
+        <div class="l-unit"><h3>The business of news</h3><p>Who really reads, how advertising and affiliate links work, and measuring impact.</p></div>
         <div class="l-unit"><h3>The digital journalist</h3><p>Working across platforms and building a personal brand.</p></div>
         <div class="l-unit"><h3>Getting hired</h3><p>A CV and cover letter that get a journalist noticed.</p></div>
         <div class="l-unit"><h3>Going independent</h3><p>Plan and launch your own newsletter.</p></div>
         <div class="l-unit"><h3>Solution journalism</h3><p>Report the problem and the evidenced response, plus the press release.</p></div>
-        <div class="l-unit"><h3>Journalism jobs abroad</h3><p>The realities of the trade in a mature market, as a benchmark.</p></div>
+        <div class="l-unit"><h3>Journalism jobs</h3><p>The realities of the trade in a mature market, as a benchmark.</p></div>
       </div>
+      <p class="l-center" style="margin-top:1.6rem"><a class="l-btn" href="/academy/syllabus/">See the full syllabus and objectives</a></p>
     </div>
   </section>
 
@@ -411,8 +415,30 @@
     <div class="l-wrap reveal">
       <p class="l-eyebrow">Enrol</p>
       <h2 class="l-h2" style="color:#fff">Start today.</h2>
+      <style>
+        .l-tiers { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; max-width: 30rem; margin: 1.2rem auto .4rem; }
+        .l-tier { text-align: left; cursor: pointer; background: rgba(255,255,255,.06); color: #fff; border: 1.5px solid rgba(255,255,255,.28); border-radius: 12px; padding: .8rem .9rem; font: inherit; transition: border-color .12s, background .12s; }
+        .l-tier:hover { border-color: rgba(255,255,255,.6); }
+        .l-tier.is-on { border-color: #fff; background: rgba(255,255,255,.14); }
+        .l-tier-k { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.7); }
+        .l-tier-t { display: block; font-weight: 700; font-size: .95rem; margin: .2rem 0; line-height: 1.25; }
+        .l-tier-p { display: block; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.2rem; }
+        @media (max-width: 460px) { .l-tiers { grid-template-columns: 1fr; } }
+      </style>
+      <div class="l-tiers" aria-label="Choose your track">
+        <button type="button" class="l-tier is-on" data-tier="pro">
+          <span class="l-tier-k">For everyone</span>
+          <span class="l-tier-t">Professional Certificate</span>
+          <span class="l-tier-p">US$50</span>
+        </button>
+        <button type="button" class="l-tier" data-tier="student" id="tierStudent">
+          <span class="l-tier-k">For students</span>
+          <span class="l-tier-t">University &amp; Student track</span>
+          <span class="l-tier-p">US$75</span>
+        </button>
+      </div>
       <p class="l-price" id="price">US$50</p>
-      <p class="l-pricenote">One-time payment. Lifetime access.</p>
+      <p class="l-pricenote" id="pricenote">One-time payment. Lifetime access. <a href="/academy/syllabus/" style="color:#fff">Compare the tracks.</a></p>
       <form id="enrolForm" class="l-enrol-form" novalidate>
         <div class="l-field"><label for="nm">Full name</label><input id="nm" class="l-input" type="text" autocomplete="name" maxlength="60" placeholder="e.g. Tendai Kuwanda"></div>
         <div class="l-field"><label for="em">Email address</label><input id="em" class="l-input" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com"></div>
@@ -428,7 +454,7 @@
       </div>
       <p class="l-status" id="status"></p>
       <p class="l-pricenote" style="margin-top:1rem">We email your access and add you to the Mutapa Times newsletter. Unsubscribe any time. Secure checkout by Lemon Squeezy.</p>
-      <p class="l-pricenote">Not sure yet? <a href="/academy/teaser/" style="color:#fff">Try the free taster.</a> Paying locally in Zimbabwe? <a href="#faq" style="color:#fff">See the FAQ.</a></p>
+      <p class="l-pricenote">Not sure yet? <a href="/academy/teaser/" style="color:#fff">Try the free taster.</a> Need another way to pay? <a href="#faq" style="color:#fff">See the FAQ.</a></p>
     </div>
   </section>
 
@@ -442,8 +468,9 @@
         <details><summary>What is the Mutapa Times Academy?</summary><p>A complete, self-paced online journalism course from The Mutapa Times. You learn the craft through interactive lessons and exams, earn a certificate, and can work towards a published byline.</p></details>
         <details><summary>Who is it for?</summary><p>Anyone who wants to report and write: beginners, students, career changers, bloggers, and working writers who want to sharpen the fundamentals. No newsroom experience is needed.</p></details>
         <details><summary>Do I need any experience or qualifications to start?</summary><p>None. It starts from the basics and builds all the way to a final exam and a real-world capstone.</p></details>
-        <details><summary>What will I actually learn?</summary><p>News values, the newsroom, reporting and interviewing, writing and structure, fact-checking, ethics, the business of news, covering Africa fairly, solution journalism, the digital journalist, getting hired and going independent. See "What you'll learn" above.</p></details>
-        <details><summary>How big is the course?</summary><p>Sixteen units, 67 lessons and over 300 interactive exercises, with 14 exams.</p></details>
+        <details><summary>What will I actually learn?</summary><p>News values, the newsroom, reporting and interviewing, writing and structure, fact-checking, ethics, the business of news, how advertising and affiliate links work, working with the media and pitching, the elevator pitch, the press release, measuring impact, covering places and communities fairly, solution journalism, the digital journalist, getting hired and going independent. See the full <a href="/academy/syllabus/">syllabus</a>.</p></details>
+        <details><summary>How big is the course?</summary><p>Eighteen units, 76 lessons and over 380 interactive exercises, with 16 checkpoint exams and a final. The Reading Room, where you read and analyse recent published articles, is compulsory before your certificate unlocks.</p></details>
+        <details><summary>Is there a track for journalism or university students?</summary><p>Yes. Alongside the Professional Certificate there is a University and Student track for journalism and media students in the UK and worldwide. It is the same course, plus a marked portfolio piece, CV-ready evidence of skills, and a reference from a working newsroom. <a href="/academy/syllabus/">Compare the tracks.</a></p></details>
         <details><summary>Are there live classes or deadlines?</summary><p>No. It is fully self-paced, with no live sessions and no deadlines. Learn whenever it suits you.</p></details>
         <details><summary>How long does it take to finish?</summary><p>Most people finish over a few weeks of steady study, but there is no time limit and you keep lifetime access.</p></details>
         <details><summary>What language is it in?</summary><p>English.</p></details>
@@ -469,9 +496,9 @@
         <details><summary>Can I start on one device and finish on another?</summary><p>For now progress is kept per device. If you need to move it, email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a> and we will help.</p></details>
 
         <h3>Payment and price</h3>
-        <details><summary>How much does it cost?</summary><p>A one-time payment of US$50. There is no subscription.</p></details>
+        <details><summary>How much does it cost?</summary><p>The Professional Certificate is a one-time payment of US$50. The University and Student track is US$75 and adds a marked portfolio piece and a newsroom reference. Both are one-time payments, with no subscription. <a href="/academy/syllabus/">Compare the tracks.</a></p></details>
         <details><summary>What payment methods can I use?</summary><p>Any Visa, Mastercard or American Express card, PayPal, Apple Pay or Google Pay, from anywhere in the world.</p></details>
-        <details><summary>Can I pay locally in Zimbabwe?</summary><p>Yes. To pay by Mukuru, EcoCash, bank transfer or cash, email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a>. We will arrange it and send you an access code to unlock the course.</p></details>
+        <details><summary>Can I pay another way, like mobile money or bank transfer?</summary><p>Yes. If a card does not suit you, email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a> and we will arrange another method, including mobile money or bank transfer, and send you an access code to unlock the course.</p></details>
         <details><summary>Will I be charged in my own currency?</summary><p>The price is set in US dollars. Your bank or card converts it to your local currency at its own rate.</p></details>
         <details><summary>Is payment secure?</summary><p>Yes. Payments are handled by Lemon Squeezy, a trusted payment provider that also takes care of any tax. We never see your card details.</p></details>
         <details><summary>Do you offer refunds?</summary><p>Because it is a one-time digital purchase, you get full access straight away. If something is wrong, or it is genuinely not what you expected, email <a href="mailto:news@mutapatimes.com">news@mutapatimes.com</a> and we will make it right.</p></details>
@@ -495,13 +522,34 @@
   (function () {
     "use strict";
     // ============================================================
-    var PRICE = 50, CURRENCY = "US$";
+    var CURRENCY = "US$";
+    // Two enrolment tracks. The Professional Certificate is the default; the
+    // University and Student track is the same course with a marked portfolio
+    // piece and a newsroom reference, priced as a separate revenue stream.
+    var TIERS = {
+      pro: { price: 50, note: "One-time payment. Lifetime access." },
+      student: { price: 75, note: "For journalism and media students. Adds a marked portfolio piece and a newsroom reference." }
+    };
+    var selectedTier = "pro";
     // Comms worker starts the welcome journey; pay worker builds a tracked
     // checkout so the purchase can be auto-unlocked on return.
     var COMMS_ENDPOINT = "https://academy-certificate.mutapatimes.workers.dev";
     var PAY_ENDPOINT = "https://academy-pay.mutapatimes.workers.dev";
 
-    document.getElementById("price").textContent = CURRENCY + PRICE;
+    var priceEl = document.getElementById("price"), pricenoteEl = document.getElementById("pricenote");
+    var tierBtns = document.querySelectorAll(".l-tier");
+    function applyTier(t) {
+      if (!TIERS[t]) t = "pro";
+      selectedTier = t;
+      if (priceEl) priceEl.textContent = CURRENCY + TIERS[t].price;
+      if (pricenoteEl) pricenoteEl.innerHTML = TIERS[t].note + ' <a href="/academy/syllabus/" style="color:#fff">Compare the tracks.</a>';
+      for (var i = 0; i < tierBtns.length; i++) tierBtns[i].classList.toggle("is-on", tierBtns[i].getAttribute("data-tier") === t);
+    }
+    for (var ti = 0; ti < tierBtns.length; ti++) {
+      tierBtns[ti].addEventListener("click", function () { applyTier(this.getAttribute("data-tier")); });
+    }
+    if (location.hash === "#enrol-student") { applyTier("student"); var esn = document.getElementById("enrol"); if (esn) esn.scrollIntoView(); }
+    applyTier(selectedTier);
     var form = document.getElementById("enrolForm"), status = document.getElementById("status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -525,14 +573,14 @@
       if (COMMS_ENDPOINT) {
         try {
           fetch(COMMS_ENDPOINT, { method: "POST", keepalive: true, headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ kind: "enrol", name: name, email: email, termsAccepted: true, termsAcceptedAt: new Date().toISOString(), termsVersion: "2026-06-16" }) }).catch(function () {});
+            body: JSON.stringify({ kind: "enrol", name: name, email: email, tier: selectedTier, termsAccepted: true, termsAcceptedAt: new Date().toISOString(), termsVersion: "2026-06-16" }) }).catch(function () {});
         } catch (e) {}
       }
       // Build a tracked Lemon Squeezy checkout, remember the reference, then go.
       status.textContent = "Taking you to secure payment...";
       var btn = document.getElementById("buyBtn"); if (btn) btn.disabled = true;
       fetch(PAY_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "create", name: name, email: email }) })
+        body: JSON.stringify({ action: "create", name: name, email: email, tier: selectedTier }) })
         .then(function (r) { return r.json(); })
         .then(function (d) {
           if (d && d.checkoutUrl) {

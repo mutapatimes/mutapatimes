@@ -2,11 +2,12 @@
    Pure data. Add lessons and exercises here; the engine renders them.
    Exercise types: "mcq" (one answer), "multi" (several), "order"
    (sequence), "write" (self-check against a model answer).
-   House rules: no em dashes, no italics, Zimbabwe and diaspora voice. */
+   House rules: no em dashes, no italics, plain global English for an
+   international audience (no country-specific framing in new content). */
 
 window.COURSE = {
   title: "Mutapa Times Academy",
-  blurb: "Learn to report on Zimbabwe, the diaspora and the wider continent. Self-paced, with instant feedback.",
+  blurb: "Learn the craft of journalism, from spotting a story to getting it published. Self-paced, with instant feedback.",
   units: [
     {
       id: "w1",
@@ -4787,6 +4788,964 @@ window.COURSE = {
         }
       ]
     },
+{
+  "id": "media-world",
+  "title": "Working with the media world",
+  "summary": "How journalists think, how to pitch a story, the elevator pitch, and the anatomy of a press release.",
+  "lessons": [
+    {
+      "id": "journalist-mindset",
+      "title": "Inside a journalist's head",
+      "minutes": 7,
+      "intro": "Before you talk to a reporter, understand how they see the world. A journalist filters everything you say through one question: is this a story?",
+      "cards": [
+        {
+          "h": "Five traits to expect",
+          "body": [
+            "A journalist is usually skeptical, inquisitive, impatient, stressed, and a generalist rather than an expert.",
+            "Skeptical means they doubt your claim until you prove it. Inquisitive means they keep asking why. Impatient and stressed means they have deadlines and many other stories.",
+            "Because they are generalists, they may not know your field. So simplify. Drop the jargon and explain things as you would to a smart friend who has never heard of your work."
+          ],
+          "chart": {
+            "type": "pillars",
+            "title": "How a journalist tends to think",
+            "items": ["Skeptical", "Inquisitive", "Impatient and stressed", "Generalist not expert"]
+          }
+        },
+        {
+          "h": "What does NOT make news",
+          "body": [
+            "Internal processes and procedures do not make news. A new approval workflow at a city council is not a story.",
+            "Weak messages do not make news. If you cannot say why anyone outside your office should care, there is nothing to print.",
+            "Over-complex jargon does not make news. If a reporter cannot understand it in one read, they move on."
+          ]
+        },
+        {
+          "h": "The questions every journalist asks",
+          "body": [
+            "What is new? Why does it matter? What changes, that is, what is the impact? How much does it cost? Give me a practical example.",
+            "Behind all of these sits one blunt test: so what? If you cannot answer that, your news is not ready.",
+            "A factory that cuts waste by half answers so what easily. A factory that updates its filing system does not."
+          ],
+          "chart": {
+            "type": "flow",
+            "title": "The questions in order",
+            "items": ["What is new?", "Why does it matter?", "What changes?", "How much?", "Example?", "So what?"]
+          }
+        },
+        {
+          "h": "The single most practical thing you can offer",
+          "body": [
+            "Give the journalist an easy way to reach a named person who can answer questions. A direct contact, with a name and a phone number.",
+            "Reporters work fast. A named source they can call beats a glossy brochure every time.",
+            "If a hospital spokesperson hands over the direct line of the lead doctor, the story gets written. If they hand over a generic address, it stalls."
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "q": "Why should you simplify and drop jargon when talking to a journalist?",
+          "options": ["Because journalists are lazy", "Because journalists are generalists, not experts in your field", "Because jargon is illegal", "Because editors ban long words"],
+          "answer": 1,
+          "explain": "Journalists cover many topics and rarely specialise in yours. Simple, clear language is the only way to be understood and quoted accurately."
+        },
+        {
+          "type": "multi",
+          "q": "Which of these do NOT make news on their own?",
+          "options": ["A new internal approval workflow", "A weak message with no clear point", "A factory cutting waste by half", "Dense, over-complex jargon"],
+          "answers": [0, 1, 3],
+          "explain": "Internal processes, weak messages and jargon fail the news test. A measurable result like halving waste is the one item here that genuinely matters to readers."
+        },
+        {
+          "type": "swipe",
+          "q": "Decide if each trait describes a typical journalist.",
+          "leftLabel": "Not typical",
+          "rightLabel": "Typical",
+          "cards": [
+            {"text": "Skeptical of your claims", "side": "right"},
+            {"text": "Patient with no deadlines", "side": "left"},
+            {"text": "Inquisitive and keeps asking why", "side": "right"},
+            {"text": "Deep expert in your exact field", "side": "left"},
+            {"text": "Stressed and short on time", "side": "right"}
+          ],
+          "explain": "Expect skeptical, inquisitive, impatient and stressed generalists. They are not patient and they are usually not specialists in your work."
+        },
+        {
+          "type": "fillblank",
+          "q": "Complete the most practical offer.",
+          "text": "Give the journalist a ___ contact for a ___ person who can answer questions.",
+          "bank": ["direct", "named", "vague", "anonymous"],
+          "answer": ["direct", "named"],
+          "explain": "A direct contact for a named, reachable person is the single most useful thing a source can provide."
+        },
+        {
+          "type": "order",
+          "q": "Put the journalist's filtering questions in a sensible order.",
+          "items": ["What is new?", "Why does it matter?", "What changes?", "How much does it cost?", "So what?"],
+          "explain": "Reporters start with novelty, move to significance and impact, check the cost, then apply the final so what test."
+        },
+        {
+          "type": "mcq",
+          "q": "A transit authority pitches its updated internal filing system. What is the likely reaction?",
+          "options": ["A front-page story", "No interest, it is an internal process", "An exclusive interview request", "A national day campaign"],
+          "answer": 1,
+          "explain": "Internal processes do not make news. There is no clear impact on readers, so the pitch fails the so what test."
+        }
+      ]
+    },
+    {
+      "id": "pitching",
+      "title": "Pitching a story",
+      "minutes": 8,
+      "intro": "A pitch is a short, targeted offer of a story. Done well it saves the journalist work. Done badly it gets deleted unread.",
+      "cards": [
+        {
+          "h": "Pitch perfectly",
+          "body": [
+            "Explain why the story interests the journalist and their audience, not just you. Never over-exaggerate, because reporters punish hype.",
+            "Pitch by email and pitch on time. A story offered the day after the event is dead.",
+            "Contact the right journalist using an up to date list. Do not blast a generic info@ address and hope. News agencies are worth targeting because they amplify reach to many outlets at once."
+          ]
+        },
+        {
+          "h": "Strong hooks",
+          "body": [
+            "A hook is the reason this is news today. Strong hooks include major events, anniversaries, national or world days, and surveys or polls.",
+            "Other strong hooks: a new twist on current news, a report launch, or an exclusive interview.",
+            "A university releasing a poll on student debt has a hook. The same university restating its mission statement does not."
+          ],
+          "chart": {
+            "type": "bars",
+            "title": "Hook strength, a rough guide",
+            "items": [
+              {"label": "Major event", "value": 90},
+              {"label": "Fresh survey", "value": 80},
+              {"label": "Anniversary", "value": 65},
+              {"label": "Report launch", "value": 60},
+              {"label": "Restated mission", "value": 10}
+            ]
+          }
+        },
+        {
+          "h": "The 10-step phone pitch",
+          "body": [
+            "When you call a reporter, work to a script. The whole call should take under 30 seconds before they decide.",
+            "Lead with a clear news angle, why they should care, and a single clear ask.",
+            "If they are interested, send more. If not, do not harass them. Always thank them if they cover the story."
+          ],
+          "chart": {
+            "type": "flow",
+            "title": "The pitch call",
+            "items": ["Right journalist", "Introduce yourself", "Ask if they have time", "Say why you call", "30-second angle", "Clear ask", "Send more", "Confirm", "Follow up", "Thank or stop"]
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "type": "order",
+          "q": "Put the 10-step phone pitch in the correct order.",
+          "items": ["Contact the right journalist", "Introduce yourself", "Ask if they have time", "Say why you are calling", "Give a 30-second news angle and clear ask", "If interested, offer to send more", "Confirm what you agreed", "Follow up helpfully", "Send what you promised", "Thank them if covered"],
+          "explain": "Reach the right person, introduce yourself, check they have time, state the angle and ask fast, then offer more, confirm, follow up, deliver, and thank. Never harass if they decline."
+        },
+        {
+          "type": "mcq",
+          "q": "Why is a generic info@ address a poor pitch target?",
+          "options": ["It costs money to email", "It is not the right journalist and may be ignored", "Agencies block it", "It is too fast"],
+          "answer": 1,
+          "explain": "Pitches must reach the right journalist via an up to date list. Generic addresses are rarely read by the person who would write the story."
+        },
+        {
+          "type": "multi",
+          "q": "Which of these are strong news hooks?",
+          "options": ["A national day tie-in", "A fresh survey or poll", "A restated mission statement", "An exclusive interview"],
+          "answers": [0, 1, 3],
+          "explain": "National days, surveys, and exclusives give a reporter a reason to run the story now. A restated mission statement has no fresh angle."
+        },
+        {
+          "type": "swipe",
+          "q": "Good pitching or bad pitching?",
+          "leftLabel": "Bad",
+          "rightLabel": "Good",
+          "cards": [
+            {"text": "Explain why the audience cares", "side": "right"},
+            {"text": "Over-exaggerate the impact", "side": "left"},
+            {"text": "Pitch on time by email", "side": "right"},
+            {"text": "Blast every info@ address", "side": "left"},
+            {"text": "Target a news agency for reach", "side": "right"}
+          ],
+          "explain": "Good pitching is targeted, honest, timely and audience-focused. Hype and generic blasts are the marks of a weak pitch."
+        },
+        {
+          "type": "fillblank",
+          "q": "Complete the rule about honesty.",
+          "text": "Pitch the real story but never ___ the impact, because reporters punish ___.",
+          "bank": ["over-exaggerate", "hype", "underplay", "facts"],
+          "answer": ["over-exaggerate", "hype"],
+          "explain": "Exaggeration destroys trust. A reporter who feels hyped once may ignore your future pitches."
+        },
+        {
+          "type": "mcq",
+          "q": "A reporter says no to your pitch. What is the correct next step?",
+          "options": ["Call them every hour until they agree", "Thank them and stop, do not harass", "Send the pitch to their editor instead", "Re-send the same email five times"],
+          "answer": 1,
+          "explain": "If a journalist declines, accept it gracefully. Harassing them damages the relationship for every future story."
+        },
+        {
+          "type": "match",
+          "q": "Match each pitch element to its purpose.",
+          "pairs": [
+            {"a": "News angle", "b": "Why it is a story today"},
+            {"a": "Clear ask", "b": "What you want the reporter to do"},
+            {"a": "Up to date list", "b": "Reaching the right journalist"},
+            {"a": "News agency", "b": "Amplifying reach across outlets"}
+          ],
+          "explain": "Each element does one job: the angle earns attention, the ask directs action, the list finds the right person, and agencies spread the story wide."
+        }
+      ]
+    },
+    {
+      "id": "elevator-pitch",
+      "title": "The elevator pitch",
+      "minutes": 6,
+      "intro": "An elevator pitch is a 30 to 60 second introduction to your idea, short enough to deliver during a ride between floors.",
+      "cards": [
+        {
+          "h": "Where the name comes from",
+          "body": [
+            "In 1853 the inventor Elisha Otis demonstrated his elevator safety brake by riding the platform himself and cutting the rope. The brake held.",
+            "That short, confident demonstration is the spirit of the elevator pitch: prove your point in the time of a single ride.",
+            "You will rarely have more than a minute when you meet someone who matters. Use it well."
+          ]
+        },
+        {
+          "h": "A reusable 6-part template",
+          "body": [
+            "Part one, intro and problem: the big picture and context. Part two, problem specifics: the precise challenge. Part three, solution: how your project answers it.",
+            "Part four, how the solution works: at most three features. Part five, proof it works: results, figures, people reached. Part six, vision and brand: a closing line.",
+            "Keep each part to a sentence or two. The whole thing must fit inside a minute."
+          ],
+          "chart": {
+            "type": "flow",
+            "title": "The 6 parts",
+            "items": ["Intro and problem", "Problem specifics", "Solution", "How it works", "Proof", "Vision and brand"]
+          }
+        },
+        {
+          "h": "A worked example",
+          "body": [
+            "Intro and problem: short trips across the river border are slow and clog the road bridge. Specifics: cyclists have no safe lane, so few people cycle across.",
+            "Solution: a cross-border cycling-tourism route with a protected lane. How it works: a marked path, three rest stops, and one shared map app.",
+            "Proof: a six-week trial moved 4,000 riders with no incidents. Vision: a region where crossing the border on a bike is the easy, healthy choice."
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "q": "How long should an elevator pitch last?",
+          "options": ["About 5 minutes", "30 to 60 seconds", "10 to 15 minutes", "As long as needed"],
+          "answer": 1,
+          "explain": "The pitch is named after the length of an elevator ride. Aim for 30 to 60 seconds."
+        },
+        {
+          "type": "mcq",
+          "q": "Why is the pitch named after an elevator?",
+          "options": ["It must be delivered in a lift", "Elisha Otis proved his elevator brake during a short ride in 1853", "Elevators were the first newsrooms", "It only works in tall buildings"],
+          "answer": 1,
+          "explain": "Otis demonstrated his safety brake by riding the platform and cutting the rope in 1853. The name captures that idea of proving a point in one short ride."
+        },
+        {
+          "type": "order",
+          "q": "Put the 6 parts of the template in order.",
+          "items": ["Intro and problem", "Problem specifics", "Solution", "How the solution works", "Proof it works", "Vision and brand"],
+          "explain": "Start with context and the problem, narrow to specifics, present the solution, show how it works, prove it, then close with vision and brand."
+        },
+        {
+          "type": "match",
+          "q": "Match each part to what it delivers.",
+          "pairs": [
+            {"a": "Intro and problem", "b": "Big picture and context"},
+            {"a": "How it works", "b": "At most three features"},
+            {"a": "Proof it works", "b": "Results, figures, people reached"},
+            {"a": "Vision and brand", "b": "A closing line"}
+          ],
+          "explain": "Each part has a fixed job. Note that the how-it-works part is capped at three features to stay short."
+        },
+        {
+          "type": "fillblank",
+          "q": "Complete the rule about the how-it-works part.",
+          "text": "When you explain how the solution works, describe at most ___ features.",
+          "bank": ["three", "ten", "no", "twenty"],
+          "answer": ["three"],
+          "explain": "Three features is the ceiling. More than that and the listener loses the thread inside a 60-second pitch."
+        },
+        {
+          "type": "chartfill",
+          "q": "Fill the missing step in the elevator pitch flow.",
+          "chartType": "flow",
+          "slots": ["Intro and problem", "Problem specifics", "___", "How it works", "Proof", "Vision and brand"],
+          "bank": ["Solution", "Budget", "Apology"],
+          "answer": ["Solution"],
+          "explain": "After naming the specific problem you present the solution, then explain how it works."
+        }
+      ]
+    },
+    {
+      "id": "press-release",
+      "title": "Anatomy of a press release",
+      "minutes": 8,
+      "intro": "A press release is a ready-to-use news document. The clearer its structure, the more likely a busy editor runs it.",
+      "cards": [
+        {
+          "h": "The parts of a release",
+          "body": [
+            "Header: a short context line above the headline. Headline: one sentence under about 30 words, self-contained, ideally with no punctuation.",
+            "Subtitle: one more useful fact. Summary lead: a single paragraph covering the key W questions, with what and who mandatory.",
+            "Body: repeat the headline idea, then give the most relevant information first."
+          ],
+          "chart": {
+            "type": "hierarchy",
+            "title": "Release structure",
+            "levels": [["Header"], ["Headline"], ["Subtitle", "Summary lead"], ["Body", "Picture"]]
+          }
+        },
+        {
+          "h": "Most common structure",
+          "body": [
+            "The most common shape is headline, subtitle, body, plus a picture.",
+            "The body follows the inverted pyramid: the most important facts at the top, supporting detail next, background last.",
+            "An editor who cuts from the bottom should still be left with a complete story."
+          ],
+          "chart": {
+            "type": "pyramid",
+            "title": "Inverted pyramid",
+            "items": ["Most important facts", "Supporting detail", "Useful context", "Background"]
+          }
+        },
+        {
+          "h": "The ABC of effective communication",
+          "body": [
+            "Accuracy: avoid vague quantities like several or many. Give the number. Brevity: keep it short and use the active voice.",
+            "Clarity: use simple words and no jargon.",
+            "Prefer action verbs over the verb to be. Inform positively: write prohibit rather than do not authorise."
+          ],
+          "chart": {
+            "type": "pillars",
+            "title": "The ABC plus one habit",
+            "items": ["Accuracy", "Brevity", "Clarity", "Active verbs"]
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "type": "match",
+          "q": "Match each part of a press release to its definition.",
+          "pairs": [
+            {"a": "Header", "b": "Short context line above the headline"},
+            {"a": "Headline", "b": "One self-contained sentence under about 30 words"},
+            {"a": "Subtitle", "b": "One more useful fact"},
+            {"a": "Summary lead", "b": "One paragraph covering the key W questions"}
+          ],
+          "explain": "The header sets context, the headline carries the story, the subtitle adds a fact, and the summary lead answers the key W questions."
+        },
+        {
+          "type": "mcq",
+          "q": "Which two W questions are mandatory in the summary lead?",
+          "options": ["When and where", "What and who", "Why and how", "Which and whose"],
+          "answer": 1,
+          "explain": "What happened and who is involved are mandatory. The other W questions support them but these two cannot be missing."
+        },
+        {
+          "type": "order",
+          "q": "Order the body by the inverted pyramid, top first.",
+          "items": ["Most important facts", "Supporting detail", "Useful context", "Background"],
+          "explain": "Lead with the most important facts so a cut from the bottom never removes the core story."
+        },
+        {
+          "type": "categorize",
+          "q": "Sort each habit under the right letter of the ABC.",
+          "buckets": [
+            {"id": "a", "label": "Accuracy"},
+            {"id": "b", "label": "Brevity"},
+            {"id": "c", "label": "Clarity"}
+          ],
+          "items": [
+            {"text": "Give the exact number, not several", "bucket": "a"},
+            {"text": "Avoid vague quantities", "bucket": "a"},
+            {"text": "Use short sentences and active voice", "bucket": "b"},
+            {"text": "Cut every spare word", "bucket": "b"},
+            {"text": "Use simple words", "bucket": "c"},
+            {"text": "Remove all jargon", "bucket": "c"}
+          ],
+          "explain": "Accuracy is about exact facts, brevity is about length and active voice, and clarity is about plain, jargon-free language."
+        },
+        {
+          "type": "highlight",
+          "q": "Tap the clutter.",
+          "instruction": "Tap every word you could cut to tighten this line.",
+          "tokens": ["The", "council", "has", "approved", "several", "of", "the", "many", "new", "rules"],
+          "targets": [4, 7],
+          "explain": "Several and many are vague quantities. Replace them with an exact number to make the sentence accurate and brief."
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrasing follows the rule to inform positively?",
+          "options": ["Do not authorise entry", "Prohibit entry", "Entry is not allowed in any way", "It is the case that entry is barred"],
+          "answer": 1,
+          "explain": "Prohibit is a single positive action verb. The alternatives are wordy or rely on the weaker verb to be."
+        },
+        {
+          "type": "fillblank",
+          "q": "Complete the headline rule.",
+          "text": "A headline should be one sentence under about ___ words and ideally use no ___.",
+          "bank": ["30", "punctuation", "100", "verbs"],
+          "answer": ["30", "punctuation"],
+          "explain": "Keep the headline self-contained, under roughly 30 words, and free of punctuation so it reads cleanly."
+        }
+      ]
+    },
+    {
+      "id": "cp-media-world",
+      "checkpoint": true,
+      "title": "Checkpoint: the media world",
+      "minutes": 12,
+      "intro": "A checkpoint on working with the media. You need 80% to pass.",
+      "cards": [],
+      "exercises": [
+        {
+          "type": "mcq",
+          "q": "What is the single most practical thing a source can give a journalist?",
+          "options": ["A long brochure", "A direct contact for a named person who can answer questions", "A generic info@ address", "A mission statement"],
+          "answer": 1,
+          "explain": "A reachable, named contact lets the reporter confirm facts fast, which is worth more than any printed material."
+        },
+        {
+          "type": "multi",
+          "q": "Which items do NOT make news on their own?",
+          "options": ["Internal processes", "A weak message", "A measurable result", "Over-complex jargon"],
+          "answers": [0, 1, 3],
+          "explain": "Internal processes, weak messages and jargon fail the news test. A measurable result is the one with genuine impact."
+        },
+        {
+          "type": "order",
+          "q": "Order the journalist's filtering questions.",
+          "items": ["What is new?", "Why does it matter?", "What changes?", "How much does it cost?", "So what?"],
+          "explain": "Reporters move from novelty to significance to impact to cost, then apply the final so what test."
+        },
+        {
+          "type": "order",
+          "q": "Order the first five steps of the phone pitch.",
+          "items": ["Contact the right journalist", "Introduce yourself", "Ask if they have time", "Say why you are calling", "Give a 30-second angle and clear ask"],
+          "explain": "Reach the right person, introduce yourself, check their time, state your reason, then deliver the angle and ask quickly."
+        },
+        {
+          "type": "match",
+          "q": "Match each elevator pitch part to its job.",
+          "pairs": [
+            {"a": "Solution", "b": "How the project answers the problem"},
+            {"a": "How it works", "b": "At most three features"},
+            {"a": "Proof", "b": "Results and figures"},
+            {"a": "Vision and brand", "b": "Closing line"}
+          ],
+          "explain": "Each part has one job, and the how-it-works part is capped at three features to keep the pitch short."
+        },
+        {
+          "type": "categorize",
+          "q": "Sort each habit under the ABC of communication.",
+          "buckets": [
+            {"id": "a", "label": "Accuracy"},
+            {"id": "b", "label": "Brevity"},
+            {"id": "c", "label": "Clarity"}
+          ],
+          "items": [
+            {"text": "Give an exact number", "bucket": "a"},
+            {"text": "Avoid vague quantities", "bucket": "a"},
+            {"text": "Use the active voice", "bucket": "b"},
+            {"text": "Remove jargon", "bucket": "c"}
+          ],
+          "explain": "Accuracy means exact facts, brevity means short active writing, and clarity means plain, jargon-free language."
+        },
+        {
+          "type": "mcq",
+          "q": "Which two W questions are mandatory in a summary lead?",
+          "options": ["When and where", "What and who", "Why and how", "Which and whose"],
+          "answer": 1,
+          "explain": "What happened and who is involved must always appear. The other W questions are supporting detail."
+        },
+        {
+          "type": "mcq",
+          "q": "A reporter declines your pitch. What should you do?",
+          "options": ["Call repeatedly until they say yes", "Thank them and stop, without harassing", "Email the same pitch daily", "Complain to their editor"],
+          "answer": 1,
+          "explain": "If a journalist says no, accept it gracefully. Harassment damages the relationship for every future story."
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "news-business",
+  "title": "The business of news",
+  "summary": "Who the audience really is, how the news economy is changing, and how to measure whether your work landed.",
+  "lessons": [
+    {
+      "id": "media-reality",
+      "title": "Who is actually reading",
+      "minutes": 8,
+      "intro": "Before you write for an audience, see it clearly. The audience is on a phone, it is wary of news, and it is not the same as the audience that pays.",
+      "cards": [
+        {
+          "h": "The shifting picture",
+          "body": [
+            "Trust and interest in news have declined in most countries, and news avoidance has risen sharply. Many people now turn the news off on purpose.",
+            "Traditional television and print have fallen. The smartphone is the dominant way most people first reach news each morning.",
+            "Paying for online news is leveling off after a period of growth in a few wealthy countries."
+          ]
+        },
+        {
+          "h": "Where people are",
+          "body": [
+            "These are the most-used messaging and social apps, shown as the share of people using each.",
+            "WhatsApp leads. Note how far ahead it sits from the newer video and short-form apps.",
+            "Meet readers where they already are. For most, that starts with a messaging app, not a homepage."
+          ],
+          "chart": {
+            "type": "bars",
+            "title": "Most-used apps, share using each",
+            "items": [
+              {"label": "WhatsApp", "value": 80},
+              {"label": "Twitter", "value": 64},
+              {"label": "LinkedIn", "value": 57},
+              {"label": "YouTube", "value": 45},
+              {"label": "Facebook", "value": 45},
+              {"label": "Signal", "value": 31},
+              {"label": "Instagram", "value": 27},
+              {"label": "Telegram", "value": 15},
+              {"label": "TikTok", "value": 6}
+            ]
+          }
+        },
+        {
+          "h": "What is rising and falling",
+          "body": [
+            "Facebook sits near 60 percent, down about 5 points from its 2017 peak, and is now close to YouTube.",
+            "Instagram, TikTok and Telegram are the only networks still growing. TikTok is the fastest-growing of all.",
+            "TikTok reaches 40 percent of people aged 18 to 24, and 15 percent of them use it for news."
+          ]
+        },
+        {
+          "h": "Why people disconnect",
+          "body": [
+            "People who avoid news give clear reasons. The biggest is too much politics, followed by the effect on their mood.",
+            "Others feel worn out by the sheer amount, or find news untrustworthy or biased.",
+            "Some say news leads to arguments, and some feel there is nothing they can do with it."
+          ],
+          "chart": {
+            "type": "bars",
+            "title": "Reasons people disconnect, share giving each",
+            "items": [
+              {"label": "Too much politics", "value": 43},
+              {"label": "Bad for mood", "value": 36},
+              {"label": "Worn out by amount", "value": 29},
+              {"label": "Untrustworthy or biased", "value": 29},
+              {"label": "Leads to arguments", "value": 17},
+              {"label": "Nothing I can do", "value": 16}
+            ]
+          }
+        },
+        {
+          "h": "Payers, and why reading survives",
+          "body": [
+            "Subscription fatigue is real. Payers skew older, with an average age near 47. Persuading younger readers to pay is the hard problem.",
+            "Many people still prefer reading to video. Readers say it is quicker, about 50 percent, or that it gives more control, about 34 percent. Around 35 percent read to avoid poor video and pre-roll ads.",
+            "The lesson for a young journalist: meet readers on a phone, earn trust against avoidance, and remember that a paying audience is not the same as a reading audience."
+          ],
+          "chart": {
+            "type": "bars",
+            "title": "Why people prefer reading",
+            "items": [
+              {"label": "Quicker", "value": 50},
+              {"label": "More control", "value": 34},
+              {"label": "Avoid poor video", "value": 35}
+            ]
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "q": "How do most people first reach news each morning?",
+          "options": ["Printed newspaper", "Television", "The smartphone", "Radio"],
+          "answer": 2,
+          "explain": "The smartphone is now the dominant first point of contact with news, while television and print have fallen."
+        },
+        {
+          "type": "chartfill",
+          "q": "Fill the missing value on the most-used apps chart. WhatsApp leads at 80.",
+          "chartType": "bars",
+          "slots": ["WhatsApp 80", "Twitter ___", "LinkedIn 57", "TikTok 6"],
+          "bank": ["64", "27", "90"],
+          "answer": ["64"],
+          "explain": "Twitter sits at 64, behind WhatsApp at 80 but ahead of LinkedIn at 57."
+        },
+        {
+          "type": "multi",
+          "q": "Which networks are described as still growing?",
+          "options": ["Instagram", "Facebook", "TikTok", "Telegram"],
+          "answers": [0, 2, 3],
+          "explain": "Instagram, TikTok and Telegram are the only networks still growing. Facebook is down about 5 points from its 2017 peak."
+        },
+        {
+          "type": "mcq",
+          "q": "What is the single most common reason people disconnect from news?",
+          "options": ["Too much politics", "Leads to arguments", "Nothing I can do with it", "Bad for mood"],
+          "answer": 0,
+          "explain": "Too much politics is the top reason at 43 percent, ahead of the effect on mood at 36 percent."
+        },
+        {
+          "type": "swipe",
+          "q": "True or false about the audience.",
+          "leftLabel": "False",
+          "rightLabel": "True",
+          "cards": [
+            {"text": "News avoidance has risen sharply", "side": "right"},
+            {"text": "Print and TV are growing fast", "side": "left"},
+            {"text": "Payers skew older, near age 47", "side": "right"},
+            {"text": "A paying audience equals the reading audience", "side": "left"},
+            {"text": "TikTok is the fastest-growing network", "side": "right"}
+          ],
+          "explain": "Avoidance is up, payers are older, and TikTok grows fastest. Print and TV are falling, and payers are a different group from readers."
+        },
+        {
+          "type": "mcq",
+          "q": "Why do many people prefer reading to video?",
+          "options": ["It is slower but prettier", "It is quicker and gives more control", "It needs no phone", "It is always free"],
+          "answer": 1,
+          "explain": "Readers say reading is quicker, about 50 percent, and gives more control, about 34 percent. Around 35 percent also read to avoid poor video and pre-roll ads."
+        },
+        {
+          "type": "fillblank",
+          "q": "Complete the lesson for a young journalist.",
+          "text": "Meet readers on a ___, earn ___ against avoidance, and remember a paying audience is not the same as a reading audience.",
+          "bank": ["phone", "trust", "desktop", "money"],
+          "answer": ["phone", "trust"],
+          "explain": "The audience is mobile and wary, so reach it on a phone and work to earn trust where avoidance is rising."
+        }
+      ]
+    },
+        {
+          id: "how-advertising-works",
+          title: "How advertising actually works",
+          minutes: 9,
+          intro: "Click an advert, read its link, and you can see exactly who gets paid, and how.",
+          cards: [
+            {
+              h: "Advertising is one way the news gets paid for",
+              body: [
+                "Reporting costs money. Reader payments, grants and events all help, but advertising is still one of the main ways a publication funds itself. When you see a sponsor strip or a partner link in an article, that is the business of news working in plain sight.",
+                "Knowing how an advert earns its money tells you a lot: who is paying, what they want, and why the wall between advertising and reporting matters."
+              ]
+            },
+            {
+              h: "How an online advert is tracked",
+              body: [
+                "An advertiser pays to place a link. When you click it and then act, by signing up or buying, money changes hands. In the affiliate model, a publisher who sends a paying visitor earns a commission. To work out who sent you, the advertiser adds tracking to the link.",
+                "Look at any advert link and it splits in two. Everything before the question mark is the page you actually land on. Everything after it is tracking: a string of parameters that records who referred you and through which campaign. The product you see, and its price, do not change."
+              ],
+              chart: { type: "flow", title: "How a tracked click pays a publisher", items: ["You click a tracked link", "You land on the advertiser", "You sign up or buy", "The network credits the publisher", "The publisher earns a commission"] }
+            },
+            {
+              h: "A real example, read piece by piece",
+              body: [
+                "Take a Shopify free-trial link carrying affiliate tracking. The page is www.shopify.com/uk/free-trial. After the question mark sit the tracking parameters, and each one has a job.",
+                "partner=7333540 is the affiliate being credited. utm_medium=cpa means cost per acquisition: that partner is paid only when a visitor actually signs up. utm_source=7333540-impact and irgwc=1 show the click came through Impact, the affiliate network Shopify uses. irclickid is Impact's unique ID for your exact click, and iradid identifies the specific ad or link. utm_channel=affiliates simply names the channel.",
+                "Strip everything after the question mark and you still reach the same free-trial page. The only thing lost is the attribution: no partner is credited, so no commission is earned."
+              ],
+              chart: { type: "hierarchy", title: "Two halves of an advert link", levels: [["The address you see: site + page"], ["The tracking after the ?"], ["Who sent you", "Which campaign", "Which click"]] }
+            },
+            {
+              h: "How Mutapa Times advertising works",
+              body: [
+                "When The Mutapa Times carries a sponsor or affiliate link and you click it, the advertiser's tracking network, such as Impact, the platform Shopify uses, reads the parameters on the link and attributes the click to us. If you then sign up or buy, we earn a commission.",
+                "Those parameters do not change what you are offered or what you pay. They only record who sent you. If you deleted everything after the question mark, you would still reach the offer, but we would not be credited for sending you, and we would earn nothing.",
+                "That commission is one of the ways independent journalism funds itself. It is exactly why we label sponsored content clearly, keep it separate from our reporting, and never let an advertiser shape a story."
+              ]
+            },
+            {
+              h: "Keep a wall between adverts and editorial",
+              body: [
+                "Advertising can fund good journalism only if readers can always tell the two apart. Sponsored content must be labelled as sponsored. Reporting must never be softened, dropped or shaped to please an advertiser.",
+                "As a journalist, you should know who funds the page you write for, and hold that wall in place. Trust is the asset that makes the advertising worth anything in the first place."
+              ]
+            }
+          ],
+          exercises: [
+            {
+              type: "mcq",
+              q: "On an advert link, what is everything after the question mark (?)?",
+              options: [
+                "Part of the product's price",
+                "Tracking parameters that record who referred you and through which campaign",
+                "A password that unlocks the page",
+                "The advertiser's home address"
+              ],
+              answer: 1,
+              explain: "The part before the ? is the page you land on. The part after it is tracking. It does not change the product or its price."
+            },
+            {
+              type: "mcq",
+              q: "A link carries utm_medium=cpa. In this affiliate model, when does the partner get paid?",
+              options: [
+                "The moment the link is created",
+                "Every time the link is shown to anyone",
+                "Only when a referred visitor actually signs up or buys",
+                "Never; cpa links are unpaid"
+              ],
+              answer: 2,
+              explain: "CPA means cost per acquisition. The partner earns only when a tracked click leads to a qualifying signup or sale."
+            },
+            {
+              type: "multi",
+              q: "On the Shopify example link, which parameters help identify who should be credited? Select all.",
+              options: [
+                "partner=7333540",
+                "utm_source=7333540-impact",
+                "irclickid (a unique click ID)",
+                "/uk/free-trial"
+              ],
+              answers: [0, 1, 2],
+              explain: "partner, utm_source and irclickid all record the referrer and the click. /uk/free-trial is just the page you land on, not tracking."
+            },
+            {
+              type: "mcq",
+              q: "If you deleted everything after the ? on a Mutapa Times sponsor link, what would happen?",
+              options: [
+                "The page would refuse to load",
+                "You would reach a different, cheaper product",
+                "You would still reach the offer, but we would not be credited for sending you",
+                "The advertiser would charge you more"
+              ],
+              answer: 2,
+              explain: "The destination is the same. Only the attribution is lost, so the publisher earns no commission for the referral."
+            },
+            {
+              type: "urlbreak",
+              q: "Now do it for real: open an advert, then break its link down.",
+              instruction: [
+                "Open The Mutapa Times in another tab, open any article, and find an advert or sponsor link, for example a sponsored briefing strip or a partner link. Click it so the advertiser's own page opens.",
+                "Copy the full web address from your browser's address bar, paste it below, and break it down. If you cannot find one right now, load the sample affiliate link instead."
+              ],
+              example: "https://www.shopify.com/uk/free-trial?irclickid=WKVUka2yfxyZRZM393z3qV3gUkuTue2BSWf-R80&irgwc=1&partner=7333540&affpt=excluded&utm_channel=affiliates&utm_source=7333540-impact&utm_medium=cpa&iradid=3323848",
+              takeaway: [
+                "Everything before the ? is the page you actually see. Everything after it is tracking that does not change the product or its price.",
+                "On the Shopify sample, partner=7333540 is the affiliate being credited, utm_medium=cpa means they are paid only when a visitor signs up, and irclickid is the Impact network's unique ID for your exact click. Strip everything after the ? and you still reach the free-trial page, but no affiliate is credited.",
+                "That is how a link earns money for a publisher: a tracked click that leads to a signup or sale pays a commission. You can now read any advert's link and see who is being paid, and how."
+              ]
+            },
+            {
+              type: "mcq",
+              q: "What is the journalist's responsibility around advertising on their own publication?",
+              options: [
+                "Hide which articles are sponsored so readers are not distracted",
+                "Let big advertisers approve stories about them before publishing",
+                "Label sponsored content clearly and never let an advertiser shape reporting",
+                "Refuse to learn anything about how the publication is funded"
+              ],
+              answer: 2,
+              explain: "Advertising can fund journalism only if readers can tell ads from reporting, and only if coverage stays independent of who is paying."
+            }
+          ]
+        },
+    {
+      "id": "measuring-impact",
+      "title": "Measuring your work",
+      "minutes": 8,
+      "intro": "If you cannot measure your work, you cannot improve it. Good measurement starts with clear objectives and follows a chain from effort to impact.",
+      "cards": [
+        {
+          "h": "SMART objectives",
+          "body": [
+            "A good objective is SMART: Specific, Measurable, Achievable, Relevant, and Time-bound.",
+            "Grow our readers is not SMART. Grow newsletter sign-ups by 20 percent within three months is SMART.",
+            "Each letter closes a gap: specific names the goal, measurable sets the number, achievable keeps it real, relevant ties it to the mission, and time-bound sets a deadline."
+          ],
+          "chart": {
+            "type": "pillars",
+            "title": "SMART, the first four",
+            "items": ["Specific", "Measurable", "Achievable", "Relevant"]
+          }
+        },
+        {
+          "h": "The five-stage evaluation chain",
+          "body": [
+            "Work flows through five stages. Inputs are planning and prep, such as research and budgeting. Activities are production and distribution, such as writing, media relations, and web and social.",
+            "Outputs are what reaches the audience: reach, impressions, views, unique visitors. Outcomes are what the audience takes out: short term attention, understanding and engagement, and long term attitude change, trust and advocacy.",
+            "Impact is the quantifiable result: revenue, cost savings, reputation, or policy change."
+          ],
+          "chart": {
+            "type": "flow",
+            "title": "From effort to impact",
+            "items": ["Inputs", "Activities", "Outputs", "Outcomes", "Impact"]
+          }
+        },
+        {
+          "h": "Measure well",
+          "body": [
+            "Pick metrics tied to your objectives, not just the easy ones. A high view count means little if your goal was sign-ups.",
+            "Mix quantitative and qualitative measures, and use baselines so you know your starting point. Always add context to a number.",
+            "Review regularly. A sports club tracking ticket sales should check the trend each month, not once a year."
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "order",
+          "q": "Order the five-stage evaluation chain.",
+          "items": ["Inputs", "Activities", "Outputs", "Outcomes", "Impact"],
+          "explain": "Work moves from inputs, the planning, through activities and outputs, to outcomes in the audience, and finally to measurable impact."
+        },
+        {
+          "type": "match",
+          "q": "Match each SMART letter to its meaning.",
+          "pairs": [
+            {"a": "Specific", "b": "Names the exact goal"},
+            {"a": "Measurable", "b": "Sets a number to track"},
+            {"a": "Relevant", "b": "Ties to the mission"},
+            {"a": "Time-bound", "b": "Sets a deadline"}
+          ],
+          "explain": "Each letter closes a gap, so an objective is clear, countable, connected to the mission, and deadline-driven."
+        },
+        {
+          "type": "categorize",
+          "q": "Sort each metric into output, outcome, or impact.",
+          "buckets": [
+            {"id": "out", "label": "Output"},
+            {"id": "oc", "label": "Outcome"},
+            {"id": "im", "label": "Impact"}
+          ],
+          "items": [
+            {"text": "Unique visitors", "bucket": "out"},
+            {"text": "Impressions", "bucket": "out"},
+            {"text": "Increased trust", "bucket": "oc"},
+            {"text": "Better understanding", "bucket": "oc"},
+            {"text": "Revenue gained", "bucket": "im"},
+            {"text": "Policy change", "bucket": "im"}
+          ],
+          "explain": "Outputs are what reaches people, outcomes are what they take away, and impact is the quantifiable result like revenue or policy change."
+        },
+        {
+          "type": "mcq",
+          "q": "Which objective is SMART?",
+          "options": ["Get more readers somehow", "Grow newsletter sign-ups by 20 percent within three months", "Be the best", "Reach everyone forever"],
+          "answer": 1,
+          "explain": "It is specific, measurable at 20 percent, achievable, relevant to growth, and time-bound to three months."
+        },
+        {
+          "type": "match",
+          "q": "Match each chain stage to an example.",
+          "pairs": [
+            {"a": "Inputs", "b": "Research and budgeting"},
+            {"a": "Activities", "b": "Writing and media relations"},
+            {"a": "Outputs", "b": "Reach and impressions"},
+            {"a": "Impact", "b": "Revenue or policy change"}
+          ],
+          "explain": "Inputs are prep, activities are the work, outputs are what is published, and impact is the final quantifiable result."
+        },
+        {
+          "type": "multi",
+          "q": "Which are good measurement habits?",
+          "options": ["Pick metrics tied to objectives", "Use baselines", "Add context to numbers", "Track only the easiest metric"],
+          "answers": [0, 1, 2],
+          "explain": "Tie metrics to objectives, set baselines, and add context. Chasing only the easy metric can hide whether you met your goal."
+        },
+        {
+          "type": "chartfill",
+          "q": "Fill the missing stage in the evaluation chain.",
+          "chartType": "flow",
+          "slots": ["Inputs", "Activities", "Outputs", "___", "Impact"],
+          "bank": ["Outcomes", "Budgeting", "Headlines"],
+          "answer": ["Outcomes"],
+          "explain": "Outcomes sit between outputs and impact: they are what the audience takes out, like understanding and trust."
+        }
+      ]
+    },
+    {
+      "id": "cp-news-business",
+      "checkpoint": true,
+      "title": "Checkpoint: the business of news",
+      "minutes": 12,
+      "intro": "A checkpoint on the business of news. You need 80% to pass.",
+      "cards": [],
+      "exercises": [
+        {
+          "type": "mcq",
+          "q": "What is the dominant way most people first reach news each morning?",
+          "options": ["Print", "Television", "The smartphone", "Radio"],
+          "answer": 2,
+          "explain": "The smartphone leads, while traditional print and television have fallen."
+        },
+        {
+          "type": "multi",
+          "q": "Which networks are still growing?",
+          "options": ["Instagram", "TikTok", "Facebook", "Telegram"],
+          "answers": [0, 1, 3],
+          "explain": "Instagram, TikTok and Telegram are growing, with TikTok fastest. Facebook is down from its 2017 peak."
+        },
+        {
+          "type": "mcq",
+          "q": "What is the top reason people disconnect from news?",
+          "options": ["Too much politics", "Leads to arguments", "Bad for mood", "Nothing I can do"],
+          "answer": 0,
+          "explain": "Too much politics tops the list at 43 percent, ahead of the effect on mood at 36 percent."
+        },
+        {
+          "type": "order",
+          "q": "Order the five-stage evaluation chain.",
+          "items": ["Inputs", "Activities", "Outputs", "Outcomes", "Impact"],
+          "explain": "The chain runs from inputs and activities to outputs, then outcomes in the audience, and finally measurable impact."
+        },
+        {
+          "type": "categorize",
+          "q": "Sort each metric into output, outcome, or impact.",
+          "buckets": [
+            {"id": "out", "label": "Output"},
+            {"id": "oc", "label": "Outcome"},
+            {"id": "im", "label": "Impact"}
+          ],
+          "items": [
+            {"text": "Impressions", "bucket": "out"},
+            {"text": "Unique visitors", "bucket": "out"},
+            {"text": "Increased trust", "bucket": "oc"},
+            {"text": "Revenue gained", "bucket": "im"}
+          ],
+          "explain": "Outputs reach people, outcomes change them, and impact is the quantifiable result like revenue."
+        },
+        {
+          "type": "mcq",
+          "q": "Which objective is SMART?",
+          "options": ["Be popular", "Grow sign-ups by 20 percent within three months", "Reach everyone", "Do better"],
+          "answer": 1,
+          "explain": "It is specific, measurable, achievable, relevant and time-bound, which makes it SMART."
+        },
+        {
+          "type": "mcq",
+          "q": "In a link, the text after a question mark is usually what?",
+          "options": ["The page title", "Tracking or UTM data", "A password", "The author name"],
+          "answer": 1,
+          "explain": "Text after the question mark in a URL is query data, often UTM tracking that records where the click came from."
+        },
+        {
+          "type": "mcq",
+          "q": "How does an affiliate link earn money?",
+          "options": ["It charges the reader a fee", "It earns commission when a tracked click leads to a signup", "It deletes other ads", "It pays the reader"],
+          "answer": 1,
+          "explain": "An affiliate earns a commission when a tracked click results in a signup or purchase, which is why the link carries tracking data."
+        }
+      ]
+    }
+  ]
+},
     {
       id: "final",
       title: "Final assessment",

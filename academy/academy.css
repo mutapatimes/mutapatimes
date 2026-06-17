@@ -699,3 +699,77 @@ textarea.ac-input--long { min-height: 320px; line-height: 1.55; }
 .ac-tutornav-row { display: flex; flex-wrap: wrap; gap: .5rem; }
 .ac-tutornav-row .ac-btn { font-size: .85rem; padding: .5rem .9rem; }
 .ac-tutornav-note { font-size: .78rem; color: #6a6a6a; margin: .7rem 0 0; line-height: 1.5; }
+
+/* ── v27: URL breakdown task (how advertising works) ── */
+.ac-read-required { font-size: .9rem; font-weight: 700; color: var(--accent);
+  background: rgba(196,30,30,.06); border: 1px solid rgba(196,30,30,.25);
+  border-radius: 10px; padding: .7rem .9rem; margin: 0 0 1rem; line-height: 1.5; }
+.ac-read-required.is-met { color: #1a7f44; background: #eaf6ee; border-color: #b6e0c4; }
+.ac-url-input { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .86rem; }
+.ac-url-eg { margin: .5rem 0 0; }
+.ac-linkbtn { font: inherit; font-size: .85rem; font-weight: 700; color: var(--accent);
+  background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+.ac-linkbtn:hover { opacity: .8; }
+.ac-urlbreak .ac-url-h { font-size: .9rem; font-weight: 800; margin: 1rem 0 .5rem; }
+.ac-urlbreak .ac-url-h:first-child { margin-top: 0; }
+.ac-url-table { width: 100%; border-collapse: collapse; font-size: .82rem; margin: 0 0 .4rem; }
+.ac-url-table td { border-top: 1px solid var(--rule); padding: .5rem .55rem; vertical-align: top; }
+.ac-url-table tr:first-child td { border-top: 0; }
+.ac-url-part { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700;
+  color: var(--accent); white-space: nowrap; width: 1%; }
+.ac-url-val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #333;
+  word-break: break-all; max-width: 12rem; }
+.ac-url-why { color: #444; line-height: 1.5; }
+.ac-url-takeaway { margin-top: 1rem; border-top: 1px solid var(--rule); padding-top: .9rem; }
+@media (max-width: 560px) {
+  .ac-url-table, .ac-url-table tbody, .ac-url-table tr, .ac-url-table td { display: block; width: auto; }
+  .ac-url-table td { border-top: 0; padding: .15rem 0; }
+  .ac-url-table tr { border-top: 1px solid var(--rule); padding: .55rem 0; }
+  .ac-url-table tr:first-child { border-top: 0; }
+  .ac-url-part { width: auto; }
+  .ac-url-val { max-width: none; }
+}
+
+/* ── v27: plain prose for About / Syllabus (no card "pills", no title pill) ── */
+.ac-prose { max-width: 720px; }
+.ac-prose > section { margin: 0 0 2rem; }
+.ac-prose h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 700;
+  font-size: 1.45rem; line-height: 1.2; margin: 2rem 0 .6rem; }
+.ac-prose h3 { font-size: 1.05rem; font-weight: 700; margin: 1.4rem 0 .4rem; }
+.ac-prose p { line-height: 1.65; margin: 0 0 .9rem; color: #2a2a2a; }
+.ac-prose ul { margin: 0 0 1rem; padding-left: 1.1rem; line-height: 1.6; }
+.ac-prose li { margin: 0 0 .4rem; }
+.ac-prose .ac-kicker-plain { font-size: .74rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 .2rem; }
+.ac-hr { border: 0; border-top: 1px solid var(--rule); margin: 2.2rem 0; }
+
+/* ── v27: Syllabus page ── */
+.ac-syl-lead { font-size: 1.08rem; color: #2a2a2a; line-height: 1.6; margin: 0 0 1.6rem; }
+.ac-syl-stats { display: flex; flex-wrap: wrap; gap: 1.4rem; margin: 0 0 2rem; padding: 1.1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.ac-syl-stat { flex: 1 1 auto; min-width: 6rem; }
+.ac-syl-stat b { display: block; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.9rem; line-height: 1; color: var(--accent); }
+.ac-syl-stat span { display: block; font-size: .8rem; color: #6a6a6a; margin-top: .3rem; }
+.ac-syl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem 1.4rem; margin: .4rem 0 1rem; padding: 0; list-style: none; }
+.ac-syl-grid li { position: relative; padding-left: 1.4rem; line-height: 1.55; font-size: .95rem; }
+.ac-syl-grid li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: #1a7f44; font-weight: 800; }
+.ac-syl-modules { margin: .4rem 0 1rem; padding: 0; list-style: none; counter-reset: mod; }
+.ac-syl-mod { display: flex; gap: .9rem; padding: .85rem 0; border-top: 1px solid var(--rule); }
+.ac-syl-mod:first-child { border-top: 0; }
+.ac-syl-mod-n { counter-increment: mod; font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 1.05rem; color: var(--accent); min-width: 1.8rem; }
+.ac-syl-mod-n::before { content: counter(mod, decimal-leading-zero); }
+.ac-syl-mod-b h3 { font-size: 1rem; font-weight: 700; margin: 0 0 .15rem; }
+.ac-syl-mod-b p { font-size: .9rem; color: #555; margin: 0; line-height: 1.5; }
+.ac-syl-mod-b .tag { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #8a8a8a; }
+.ac-syl-tracks { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0 1.4rem; }
+.ac-syl-track { border: 1px solid var(--rule); border-radius: 14px; padding: 1.3rem 1.2rem; background: var(--paper); display: flex; flex-direction: column; }
+.ac-syl-track--feat { border: 2px solid var(--accent); }
+.ac-syl-track-k { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 0 0 .3rem; }
+.ac-syl-track h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.3rem; margin: 0 0 .2rem; }
+.ac-syl-track-price { font-family: "Playfair Display", Georgia, serif; font-weight: 900; font-size: 2.1rem; line-height: 1; margin: .5rem 0 .1rem; }
+.ac-syl-track-note { font-size: .8rem; color: #6a6a6a; margin: 0 0 .8rem; }
+.ac-syl-track ul { list-style: none; margin: 0 0 1.1rem; padding: 0; }
+.ac-syl-track li { position: relative; padding: .3rem 0 .3rem 1.4rem; font-size: .9rem; line-height: 1.45; border-top: 1px solid var(--rule); }
+.ac-syl-track li:first-child { border-top: 0; }
+.ac-syl-track li::before { content: "\2713"; position: absolute; left: 0; top: .3rem; color: #1a7f44; font-weight: 800; }
+.ac-syl-track .ac-btn { margin-top: auto; }
+@media (max-width: 620px) { .ac-syl-grid, .ac-syl-tracks { grid-template-columns: 1fr; } }

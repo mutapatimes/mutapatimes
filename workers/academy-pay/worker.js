@@ -165,7 +165,15 @@ export default {
 
     // ---- create ----
     if (body.action === "create") {
-      if (!env.LS_BUY_LINK) return json({ error: "Payments not configured" }, 500, ch);
+      // Two enrolment tracks. Each maps to its own Lemon Squeezy product link.
+      // The student track only goes live once LS_BUY_LINK_STUDENT is set; until
+      // then we refuse it rather than silently charge the Professional price.
+      const tier = (body.tier === "student") ? "student" : "pro";
+      const buyLink = tier === "student" ? env.LS_BUY_LINK_STUDENT : env.LS_BUY_LINK;
+      if (tier === "student" && !env.LS_BUY_LINK_STUDENT) {
+        return json({ error: "The student track checkout is being finalised. We have saved your details; email news@mutapatimes.com to enrol now." }, 503, ch);
+      }
+      if (!buyLink) return json({ error: "Payments not configured" }, 500, ch);
       const name = (body.name || "").toString().trim().slice(0, 60);
       const email = (body.email || "").toString().trim().slice(0, 120);
       const ref = (body.ref || "").toString().trim().slice(0, 16).toUpperCase();
@@ -179,7 +187,7 @@ export default {
         const refEmail = await env.ACADEMY.get("code:" + ref);
         if (refEmail && refEmail !== emailLc) referrerValid = true;
       }
-      await putJSON(env, "order:" + reference, { reference, email: emailLc, name, ref: referrerValid ? ref : "", status: "created", createdTs: Date.now() });
+      await putJSON(env, "order:" + reference, { reference, email: emailLc, name, tier, ref: referrerValid ? ref : "", status: "created", createdTs: Date.now() });
 
       const p = [
         "checkout[email]=" + encodeURIComponent(emailLc),
@@ -189,8 +197,8 @@ export default {
         p.push("checkout[custom][referrer]=" + encodeURIComponent(ref));
         if (env.LS_DISCOUNT_CODE) p.push("checkout[discount_code]=" + encodeURIComponent(env.LS_DISCOUNT_CODE));
       }
-      const sep = env.LS_BUY_LINK.indexOf("?") >= 0 ? "&" : "?";
-      return json({ checkoutUrl: env.LS_BUY_LINK + sep + p.join("&"), reference }, 200, ch);
+      const sep = buyLink.indexOf("?") >= 0 ? "&" : "?";
+      return json({ checkoutUrl: buyLink + sep + p.join("&"), reference }, 200, ch);
     }
 
     // ---- status ----
