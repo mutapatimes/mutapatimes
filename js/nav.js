@@ -449,7 +449,19 @@
     'stroke-dasharray:54;stroke-dashoffset:15;transform-origin:center;}' +
     '.mt-ptr.is-ready{color:#1a7f44;}' +
     '.mt-ptr.is-spin svg{animation:mtspin .7s linear infinite;}' +
-    '@keyframes mtspin{to{transform:rotate(360deg);}}';
+    '@keyframes mtspin{to{transform:rotate(360deg);}}' +
+    /* offline fallback (app contexts) so a dropped connection never shows a
+       blank web view — a clean branded screen with a Retry button instead */
+    '.mt-offline{position:fixed;inset:0;z-index:100000;display:none;align-items:center;' +
+    'justify-content:center;padding:24px;padding-top:calc(env(safe-area-inset-top,0px) + 24px);' +
+    'background:#fafaf7;color:#1a1a1a;font-family:Inter,system-ui,-apple-system,sans-serif;}' +
+    '.mt-offline.is-on{display:flex;}' +
+    '.mt-offline-card{max-width:340px;text-align:center;}' +
+    '.mt-offline-mark{font-family:"Playfair Display",Georgia,serif;font-weight:900;font-size:1.05rem;margin-bottom:18px;}' +
+    '.mt-offline h2{font-family:"Playfair Display",Georgia,serif;font-size:1.5rem;margin:0 0 8px;}' +
+    '.mt-offline p{color:#5a5a5a;line-height:1.55;margin:0 0 22px;font-size:.98rem;}' +
+    '.mt-offline-retry{font:inherit;font-weight:700;background:#c41e1e;color:#fff;border:0;' +
+    'border-radius:99px;padding:.8rem 2.1rem;cursor:pointer;-webkit-tap-highlight-color:transparent;}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   // ── Swipeable section nav: fade hint + reveal the active item. ───────
@@ -538,5 +550,30 @@
         reset();
       }
     }, { passive: true });
+  }
+
+  // ── Offline fallback (app contexts) ──────────────────────────────────
+  // If the connection drops, show a clean branded screen with a Retry button
+  // instead of a blank web view. Auto-dismisses when the network returns.
+  if (appLike) {
+    var off = document.createElement('div');
+    off.className = 'mt-offline';
+    off.setAttribute('role', 'alert');
+    off.innerHTML =
+      '<div class="mt-offline-card">' +
+        '<div class="mt-offline-mark">The Mutapa Times</div>' +
+        '<h2>You’re offline</h2>' +
+        '<p>We can’t reach the newsroom right now. Check your connection and try again.</p>' +
+        '<button type="button" class="mt-offline-retry">Retry</button>' +
+      '</div>';
+    document.body.appendChild(off);
+    function showOffline(on) { off.classList.toggle('is-on', on); }
+    window.addEventListener('offline', function () { showOffline(true); });
+    window.addEventListener('online', function () { showOffline(false); });
+    off.querySelector('.mt-offline-retry').addEventListener('click', function () {
+      haptic('light');
+      if (navigator.onLine) location.reload(); else showOffline(true);
+    });
+    if (!navigator.onLine) showOffline(true);
   }
 })();
