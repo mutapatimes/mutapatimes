@@ -2238,7 +2238,7 @@ window.COURSE = {
           id: "verification",
           title: "Verification",
           minutes: 7,
-          intro: "Treat every claim as a hypothesis until you confirm it. This matters doubly when reporting Zimbabwe.",
+          intro: "Treat every claim as a hypothesis until you confirm it.",
           cards: [
             {
               h: "Claim first, fact later",
