@@ -413,6 +413,10 @@
     /* native-feel polish */
     'html.is-app-like,html.is-app-like body{overscroll-behavior-y:none;}' +
     'html.is-native-app{-webkit-tap-highlight-color:transparent;}' +
+    /* keep the sticky topbar (menu / logo / Subscribe) clear of the status
+       bar and Dynamic Island in the app: pad it down by the safe-area inset */
+    'html.is-app-like .topbar{height:calc(56px + env(safe-area-inset-top,0px));' +
+    'padding-top:env(safe-area-inset-top,0px);}' +
     'html.is-native-app nav,html.is-native-app .mt-tabbar,html.is-native-app .nav-drawer,' +
     'html.is-native-app .nav-hamburger,html.is-native-app button{-webkit-touch-callout:none;' +
     '-webkit-user-select:none;user-select:none;}' +
