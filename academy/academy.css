@@ -742,3 +742,21 @@ textarea.ac-input--long { min-height: 320px; line-height: 1.55; }
 .ac-prose .ac-kicker-plain { font-size: .74rem; font-weight: 700; letter-spacing: .12em;
   text-transform: uppercase; color: var(--accent); margin: 0 0 .2rem; }
 .ac-hr { border: 0; border-top: 1px solid var(--rule); margin: 2.2rem 0; }
+
+/* ── v28: fix appbar chip collision (the exercise-chip .ac-chip rule was
+   turning the top-bar status chips into stacked full-width boxes). Restore
+   the inline pill look in the appbar only; exercise chips are untouched. ── */
+.ac-appbar .ac-chips { flex-wrap: wrap; justify-content: flex-end; gap: .4rem; }
+.ac-appbar .ac-chips .ac-chip {
+  display: inline-flex; align-items: center; width: auto; flex: 0 0 auto;
+  border: 0; text-align: center; cursor: default; transition: none;
+  background: var(--bg); color: var(--ink);
+  border-radius: 99px; padding: .3rem .6rem; font-size: .78rem; font-weight: 700; line-height: 1.2;
+}
+.ac-appbar .ac-chips .ac-chip--xp { color: var(--accent); }
+.ac-appbar .ac-chips .ac-chip--streak.is-live { background: var(--accent); color: #fff; }
+.ac-appbar .ac-chips .ac-chip--btn { cursor: pointer; }
+.ac-appbar .ac-chips .ac-chip--btn:hover { background: var(--rule); }
+@media (max-width: 560px) {
+  .ac-appbar .ac-chips .ac-chip { font-size: .72rem; padding: .26rem .5rem; }
+}
