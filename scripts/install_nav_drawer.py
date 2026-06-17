@@ -30,10 +30,12 @@ DRAWER = """<div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true
   </nav>
   <span class="nav-drawer-section">Directories</span>
   <nav class="nav-drawer-info" aria-label="Directories">
+    <a href="/weather">Weather</a>
     <a href="/flights/">Flights</a>
     <a href="/schools/">Schools</a>
     <a href="/zse/">ZSE companies</a>
     <a href="/mining/">Mining</a>
+    <a href="/academy/">Academy</a>
     <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
   </nav>
   <span class="nav-drawer-section">Cities</span>

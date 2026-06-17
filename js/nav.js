@@ -245,47 +245,108 @@
     property:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v16"/><path d="M14 21V9h5a1 1 0 0 1 1 1v11"/><path d="M7.5 8h2M7.5 12h2M7.5 16h2"/></svg>',
     jobs:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/><path d="M3 12.5h18"/></svg>',
     originals:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.5 5.4 5.9.6-4.4 4 1.3 5.8L12 16.9 6.7 19.3 8 13.5 3.6 9.5l5.9-.6z"/></svg>',
-    weather:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 10.5 3.5 3.5 0 0 1 16.5 18z"/></svg>',
+    verified:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.3 12.3l2.4 2.4 4.9-5.4"/></svg>',
+    local:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+    business:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/></svg>',
+    tech:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/></svg>',
+    health:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h3l2-5 3 9 2.5-6 1.5 2H20"/></svg>',
+    sport:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v6M12 15v6M3.5 8l5 3M15.5 13l5 3M20.5 8l-5 3M8.5 13l-5 3"/></svg>',
+    culture:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10" r="1"/><circle cx="15.5" cy="10" r="1"/><path d="M8.5 14.5s1.5 1.5 3.5 1.5 3.5-1.5 3.5-1.5"/></svg>',
+    environment:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18c0-7 6-12 14-12 0 8-5 14-12 14a5 5 0 0 1-2-2z"/><path d="M9 18c2-4.5 5-7 8-8"/></svg>',
+    education:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4.5c0 1.4 2.4 2.5 5 2.5s5-1.1 5-2.5V11"/><path d="M21 9.5v4.5"/></svg>',
+    markets:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="3.6" height="7" rx="1"/><rect x="15.4" y="10" width="3.6" height="7" rx="1"/><path d="M6.8 4v4M6.8 15v5M17.2 4v6M17.2 17v3"/></svg>',
     more:'<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="18" cy="12" r="1.5"/></svg>'
   };
+  // Most tabs are news-feed category filters (they set the homepage filter via
+  // a #cat=… hash); Originals and Markets are sections; More opens the drawer.
   var TABS = [
-    { label:'News',      href:'/',          match:['/'],            icon:I.news },
-    { label:'Economy',   href:'/economy',   match:['/economy'],     icon:I.econ },
-    { label:'FX',        href:'/fx',        match:['/fx'],          icon:I.fx },
-    { label:'Property',  href:'/property',  match:['/property'],    icon:I.property },
-    { label:'Jobs',      href:'/jobs',      match:['/jobs'],        icon:I.jobs },
-    { label:'Articles',  href:'/articles',  match:['/articles'],    icon:I.articles },
-    { label:'Originals', href:'/originals', match:['/originals'],   icon:I.originals },
-    { label:'Weather',   href:'/weather',   match:['/weather'],     icon:I.weather },
-    { label:'More',      more:true,                                 icon:I.more }
+    { label:'Originals',   href:'/originals', match:['/originals'], icon:I.originals },
+    { label:'Verified',    cat:'_verified',                         icon:I.verified },
+    { label:'Local',       cat:'_local',                            icon:I.local },
+    { label:'Business',    cat:'Business',                          icon:I.business },
+    { label:'Tech',        cat:'Tech',                              icon:I.tech },
+    { label:'Health',      cat:'Health',                            icon:I.health },
+    { label:'Sport',       cat:'Sport',                             icon:I.sport },
+    { label:'Culture',     cat:'Culture',                           icon:I.culture },
+    { label:'Environment', cat:'Environment',                       icon:I.environment },
+    { label:'Education',   cat:'Education',                          icon:I.education },
+    { label:'Markets',     href:'/markets',   match:['/markets'],   icon:I.markets },
+    { label:'More',        more:true,                               icon:I.more }
   ];
 
   var path = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
-  function isActive(m) {
-    for (var i=0;i<m.length;i++){ var x=m[i];
-      if (x==='/') { if (path==='/') return true; }
-      else if (path===x || path.indexOf(x+'/')===0) return true; }
+  var onHome = (path === '/');
+  function curCat() {
+    var m = (location.hash || '').match(/^#cat=(.+)$/);
+    return m ? decodeURIComponent(m[1]) : (onHome ? 'all' : null);
+  }
+  function isActive(t) {
+    if (t.cat) return onHome && curCat() === t.cat;
+    if (t.match) {
+      for (var i=0;i<t.match.length;i++){ var x=t.match[i];
+        if (x==='/') { if (path==='/' && !curCat()) return true; }
+        else if (path===x || path.indexOf(x+'/')===0) return true; }
+    }
     return false;
+  }
+
+  // Apply the category in the URL hash on the homepage by triggering the
+  // existing filter chip (config.js owns the actual filtering + render).
+  function applyCatFromHash() {
+    if (!onHome) return;
+    var m = (location.hash || '').match(/^#cat=(.+)$/);
+    if (!m) return;
+    var cat = decodeURIComponent(m[1]);
+    var chip = document.querySelector('.category-chip[data-category="' + cat + '"]');
+    if (chip) { chip.click(); var feed = document.querySelector('.category-filter'); if (feed) feed.scrollIntoView({ block: 'start' }); }
   }
 
   var nav = document.createElement('nav');
   nav.className = 'mt-tabbar'; nav.setAttribute('aria-label','Primary');
   TABS.forEach(function (t) {
     var el = document.createElement(t.more ? 'button' : 'a');
-    if (t.more) { el.type='button'; } else { el.href = t.href; if (isActive(t.match)) el.className='is-active'; }
+    if (t.more) { el.type = 'button'; }
+    else if (t.cat) { el.href = '/#cat=' + encodeURIComponent(t.cat); }
+    else { el.href = t.href; }
+    if (!t.more && isActive(t)) el.className = 'is-active';
     el.innerHTML = t.icon + '<span>' + t.label + '</span>';
-    if (t.more) el.addEventListener('click', function () {
-      var d = document.querySelector('[data-open-drawer]');
-      if (d) d.click(); else location.href = '/articles';
-    });
+    if (t.more) {
+      el.addEventListener('click', function () {
+        var d = document.querySelector('[data-open-drawer]');
+        if (d) d.click(); else location.href = '/articles';
+      });
+    } else if (t.cat && onHome) {
+      // Already home: filter in place instead of a no-op hash navigation.
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (location.hash !== '#cat=' + encodeURIComponent(t.cat)) {
+          location.hash = 'cat=' + encodeURIComponent(t.cat);
+        } else { applyCatFromHash(); }
+      });
+    }
     nav.appendChild(el);
   });
   document.body.appendChild(nav);
   document.body.classList.add('mt-has-tabbar');
-  // Reveal the current section's tab if the bar has scrolled past it.
-  var act = nav.querySelector('.is-active');
-  if (act && nav.scrollWidth > nav.clientWidth) {
-    try { act.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {}
+
+  function refreshActive() {
+    var tabs = nav.children, cat = curCat();
+    for (var i=0;i<tabs.length;i++) {
+      var t = TABS[i], on = false;
+      if (t.cat) on = onHome && cat === t.cat;
+      else if (t.match) on = isActive(t);
+      tabs[i].classList.toggle('is-active', !!on);
+    }
+    var a = nav.querySelector('.is-active');
+    if (a && nav.scrollWidth > nav.clientWidth) { try { a.scrollIntoView({ inline:'center', block:'nearest' }); } catch (e) {} }
+  }
+  refreshActive();
+
+  if (onHome) {
+    window.addEventListener('hashchange', function () { applyCatFromHash(); refreshActive(); });
+    // Apply once the feed/chips are ready (config.js binds on ready).
+    if (document.readyState === 'complete') applyCatFromHash();
+    else window.addEventListener('load', applyCatFromHash);
   }
 })();
 
