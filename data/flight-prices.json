@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-16",
+  "fetched_at": "2026-06-17",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -56,10 +56,10 @@
           "currency": ""
         },
         {
-          "price": 716,
-          "airline": "QR",
-          "departure_at": "2026-10-19",
-          "return_at": "2026-11-14",
+          "price": 697,
+          "airline": "KQ",
+          "departure_at": "2026-10-01",
+          "return_at": "2026-10-28",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -286,7 +286,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1379,
+        "price": 1380,
         "airline": "FA",
         "departure_at": "2026-07-15",
         "return_at": "",
@@ -295,7 +295,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1379,
+        "price": 1380,
         "airline": "FA",
         "departure_at": "2026-07-15",
         "return_at": "",
@@ -314,7 +314,7 @@
           "currency": ""
         },
         {
-          "price": 1379,
+          "price": 1380,
           "airline": "FA",
           "departure_at": "2026-07-15",
           "return_at": "",
@@ -352,7 +352,7 @@
       ],
       "by_airline": [
         {
-          "price": 1379,
+          "price": 1380,
           "airline": "FA",
           "departure_at": "2026-07-15",
           "return_at": "",
@@ -493,7 +493,7 @@
       "currency": "AED",
       "currency_sym": "AED",
       "cheapest_overall": {
-        "price": 1242,
+        "price": 1241,
         "airline": "WB",
         "departure_at": "2026-07-12",
         "return_at": "",
@@ -504,7 +504,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1242,
+          "price": 1241,
           "airline": "WB",
           "departure_at": "2026-07-12",
           "return_at": "",
@@ -533,7 +533,7 @@
       ],
       "by_airline": [
         {
-          "price": 1242,
+          "price": 1241,
           "airline": "WB",
           "departure_at": "2026-07-12",
           "return_at": "",
@@ -570,7 +570,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
@@ -586,7 +586,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 5
     },
     "toronto-to-harare": {
       "origin": "YYZ",

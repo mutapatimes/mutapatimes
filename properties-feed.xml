@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 09:19:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 11:22:50 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,6 +89,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/bba1c0ad93cb.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/bba1c0ad93cb.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/bba1c0ad93cb.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 240,000 — Westgate (Adyllin) House For Sale (Adylinn, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/f9460d351810.html</link>
+      <description>USD 240,000 — Adylinn, Harare West. 4 beds, 3 baths. Westgate (Adyllin) House For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 16 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/f9460d351810.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/f9460d351810.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f9460d351810.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/f9460d351810.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 370,000 — Brand New Complex - Secure - Neat (Newlands, Harare North)</title>
@@ -259,28 +271,16 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/c73ccf0c5f6d.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 1,800,000 — Greendale 4-Bed Home on 4 Acres — Pool, Borehole &amp; Views (Christon Bank)</title>
-      <link>https://mutapatimes.com/property-landing/5dbcedd14b9b.html</link>
-      <description>USD 1,800,000 — Christon Bank. 4 beds, 2 baths. Greendale 4-Bed Home on 4 Acres — Pool, Borehole &amp; Views. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <title>USD 270,000 — Modern 4-Bed Home in Nyeredzi Ridge - Solar &amp; Borehole (Nyeredzi Ridge, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/65e70e8cb8e4.html</link>
+      <description>USD 270,000 — Nyeredzi Ridge, Harare North. 4 beds, 2 baths. Modern 4-Bed Home in Nyeredzi Ridge - Solar &amp; Borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Tue, 16 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/5dbcedd14b9b.html</guid>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/65e70e8cb8e4.html</guid>
       <category>Property</category>
       <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/5dbcedd14b9b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/5dbcedd14b9b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/5dbcedd14b9b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 750,000 — Just Listed!!! (Borrowdale, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/46e930dccf3f.html</link>
-      <description>USD 750,000 — Borrowdale, Harare North. 19 beds, 19 baths. Just Listed!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 16 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/46e930dccf3f.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/46e930dccf3f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/46e930dccf3f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/46e930dccf3f.png" type="image/png" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/properties/65e70e8cb8e4.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/65e70e8cb8e4.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/65e70e8cb8e4.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
