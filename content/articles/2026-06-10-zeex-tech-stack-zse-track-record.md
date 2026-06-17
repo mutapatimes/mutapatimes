@@ -1,7 +1,7 @@
 ---
 title: "The Tech Stack Will Decide ZEEX. The ZSE Has Been Quietly Building Toward It"
 date: 2026-06-10T08:00:00.000Z
-author: Tendai Kuwanda
+author: Bradley Manyika
 category: Business
 image: 
 seo_title: "ZEEX Tech Stack: Can the ZSE Deliver? Its Track Record"

@@ -1,7 +1,7 @@
 ---
 title: "INVESCI Backs ZEEX: Zimbabwe's New SME Exchange Lands Its First Institutional Partner"
 date: 2026-06-09T08:00:00.000Z
-author: Tendai Kuwanda
+author: Bradley Manyika
 category: Business
 image: 
 seo_title: "ZEEX: Zimbabwe's New SME Exchange and Its First Backer"

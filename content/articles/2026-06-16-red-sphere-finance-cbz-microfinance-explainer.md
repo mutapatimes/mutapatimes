@@ -1,7 +1,7 @@
 ---
 title: "What Is Red Sphere Finance, the CBZ Arm Now Powering ZEEX Receivables?"
 date: 2026-06-16T09:00:00.000Z
-author: Tendai Kuwanda
+author: Bradley Manyika
 category: Business
 image: 
 seo_title: "Red Sphere Finance Explained: The CBZ Microfinance Behind ZEEX"
