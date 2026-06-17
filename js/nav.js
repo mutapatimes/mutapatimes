@@ -219,11 +219,16 @@
     '.mt-tabbar{position:fixed;left:0;right:0;bottom:0;z-index:9990;display:none;' +
     'background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(14px);' +
     'backdrop-filter:saturate(180%) blur(14px);border-top:1px solid #e4e2db;' +
-    'padding-bottom:env(safe-area-inset-bottom,0px);}' +
-    '.mt-tabbar>a,.mt-tabbar>button{flex:1;display:flex;flex-direction:column;align-items:center;' +
-    'justify-content:center;gap:3px;padding:7px 2px 6px;background:none;border:0;cursor:pointer;' +
-    'text-decoration:none;color:#6b6b66;font-family:Inter,system-ui,-apple-system,sans-serif;' +
-    'font-size:10px;font-weight:600;letter-spacing:.02em;-webkit-tap-highlight-color:transparent;}' +
+    'padding-bottom:env(safe-area-inset-bottom,0px);' +
+    /* horizontally scrollable: items grow to fill when they fit, and swipe
+       when there are more than the screen holds (More sits at the end) */
+    'overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;' +
+    'touch-action:pan-x;scrollbar-width:none;overscroll-behavior-x:contain;}' +
+    '.mt-tabbar::-webkit-scrollbar{display:none;}' +
+    '.mt-tabbar>a,.mt-tabbar>button{flex:1 0 auto;min-width:62px;display:flex;flex-direction:column;' +
+    'align-items:center;justify-content:center;gap:3px;padding:7px 6px 6px;background:none;border:0;' +
+    'cursor:pointer;text-decoration:none;color:#6b6b66;font-family:Inter,system-ui,-apple-system,sans-serif;' +
+    'font-size:10px;font-weight:600;letter-spacing:.02em;-webkit-tap-highlight-color:transparent;white-space:nowrap;}' +
     '.mt-tabbar svg{width:23px;height:23px;display:block;}' +
     '.mt-tabbar span{line-height:1;}' +
     '.mt-tabbar .is-active{color:#c41e1e;}' +
@@ -237,14 +242,22 @@
     econ:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15v2.5M12 10v7.5M16.5 6v11.5"/></svg>',
     fx:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5h13l-3.2-3.2"/><path d="M20 15.5H7l3.2 3.2"/></svg>',
     articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>',
+    property:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v16"/><path d="M14 21V9h5a1 1 0 0 1 1 1v11"/><path d="M7.5 8h2M7.5 12h2M7.5 16h2"/></svg>',
+    jobs:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/><path d="M3 12.5h18"/></svg>',
+    originals:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.5 5.4 5.9.6-4.4 4 1.3 5.8L12 16.9 6.7 19.3 8 13.5 3.6 9.5l5.9-.6z"/></svg>',
+    weather:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 10.5 3.5 3.5 0 0 1 16.5 18z"/></svg>',
     more:'<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="18" cy="12" r="1.5"/></svg>'
   };
   var TABS = [
-    { label:'News',     href:'/',         match:['/'],                      icon:I.news },
-    { label:'Economy',  href:'/economy',  match:['/economy'],               icon:I.econ },
-    { label:'FX',       href:'/fx',       match:['/fx'],                    icon:I.fx },
-    { label:'Articles', href:'/articles', match:['/articles','/originals'], icon:I.articles },
-    { label:'More',     more:true,                                          icon:I.more }
+    { label:'News',      href:'/',          match:['/'],            icon:I.news },
+    { label:'Economy',   href:'/economy',   match:['/economy'],     icon:I.econ },
+    { label:'FX',        href:'/fx',        match:['/fx'],          icon:I.fx },
+    { label:'Property',  href:'/property',  match:['/property'],    icon:I.property },
+    { label:'Jobs',      href:'/jobs',      match:['/jobs'],        icon:I.jobs },
+    { label:'Articles',  href:'/articles',  match:['/articles'],    icon:I.articles },
+    { label:'Originals', href:'/originals', match:['/originals'],   icon:I.originals },
+    { label:'Weather',   href:'/weather',   match:['/weather'],     icon:I.weather },
+    { label:'More',      more:true,                                 icon:I.more }
   ];
 
   var path = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
@@ -269,6 +282,11 @@
   });
   document.body.appendChild(nav);
   document.body.classList.add('mt-has-tabbar');
+  // Reveal the current section's tab if the bar has scrolled past it.
+  var act = nav.querySelector('.is-active');
+  if (act && nav.scrollWidth > nav.clientWidth) {
+    try { act.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {}
+  }
 })();
 
 /* ─── iOS-app experience: pull-to-refresh, haptics, swipeable section nav,
