@@ -17,11 +17,16 @@ from urllib.parse import quote
 
 # Brand headline card  used as og:image on every CMS article so social
 # previews show the on-brand card, not the scraped article photo.
+import argparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     from build_feed_cards import card_public_url as _feed_card_url  # noqa: E402
 except ImportError:
     _feed_card_url = None
+try:
+    from regions import get_region as _get_region  # noqa: E402
+except ImportError:
+    _get_region = None
 
 BASE_URL = "https://mutapatimes.com"
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
@@ -30,13 +35,25 @@ WIRES_SRC = os.path.join(ROOT_DIR, "content", "wires")
 ARTICLES_OUT = os.path.join(ROOT_DIR, "articles")
 
 
-def all_article_md_paths():
-    """Return every published .md file across the originals folder
-    (content/articles) and the wire archive (content/wires). The CMS
-    only edits the small originals folder; the wires folder stays
-    on disk for the build but is hidden from the editor."""
-    return sorted(glob.glob(os.path.join(ARTICLES_SRC, "*.md"))
-                  + glob.glob(os.path.join(WIRES_SRC, "*.md")))
+def region_cities(region):
+    """(slug, name) pairs for a region's city desks, from regions.py."""
+    if not _get_region:
+        return []
+    return [(c["slug"], c["name"]) for c in _get_region(region).get("cities", [])]
+
+
+def all_article_md_paths(region="zw"):
+    """Return every published .md file for a region: the originals folder
+    plus the wire archive. Zimbabwe reads content/articles + content/wires;
+    other editions read content/<region>/articles + content/<region>/wires.
+    The CMS only edits the small originals folder; wires stay on disk."""
+    if region == "zw":
+        src, wires = ARTICLES_SRC, WIRES_SRC
+    else:
+        src = os.path.join(ROOT_DIR, "content", region, "articles")
+        wires = os.path.join(ROOT_DIR, "content", region, "wires")
+    return sorted(glob.glob(os.path.join(src, "*.md"))
+                  + glob.glob(os.path.join(wires, "*.md")))
 
 
 # ─── Markdown → HTML (mirrors js/articles.js markdownToHtml) ──────────────
@@ -150,8 +167,8 @@ def iso_date(date_str):
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
 # depth=1 means inside articles/ or people/ folder  CSS/JS paths go up one level
-def page_head(title, description, canonical_url, og_type, og_image, depth=1, robots="index, follow"):
-    prefix = "../" if depth == 1 else ""
+def page_head(title, description, canonical_url, og_type, og_image, depth=1, robots="index, follow", pfx=""):
+    prefix = "../" * depth
     return f"""<!doctype html>
 <html class="no-js" lang="en">
 
@@ -218,17 +235,29 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1, rob
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#1a1a1a">
-<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://mutapatimes.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://mutapatimes.com{pfx}/feed.xml">
 <link rel="alternate" hreflang="en" href="{esc(canonical_url)}">
 <link rel="alternate" hreflang="x-default" href="{esc(canonical_url)}">"""
 
 
-def page_nav(active="articles", depth=1, body_class=""):
-    prefix = "../" if depth == 1 else ""
+def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
+    prefix = "../" * depth
     def cls(name):
         return ' class="active notranslate"' if name == active else ' class="notranslate"'
     eco_cls = ' class="economy-btn active"' if active == "economy" else ' class="economy-btn"'
     body_attr = f' class="{esc(body_class)}"' if body_class else ""
+    _meta = _get_region(region) if _get_region else {"name": "Zimbabwe"}
+    country = _meta.get("name", "Zimbabwe")
+    cities = region_cities(region)
+    cities_dropdown = "\n".join(
+        f'            <li><a href="{pfx}/{slug}-news">{esc(name)}</a></li>'
+        for slug, name in cities)
+    cities_drawer = "\n".join(
+        f'      <a href="{pfx}/{slug}-news">{esc(name)}</a>'
+        for slug, name in cities)
+    # Scene Report is a Zimbabwe editorial package; other editions omit it.
+    scene_report = ('<a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>'
+                    if region == "zw" else "")
     return f"""  </head>
 
   <body{body_attr}>
@@ -236,14 +265,14 @@ def page_nav(active="articles", depth=1, body_class=""):
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
-  <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
+  <a href="{pfx}/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
    <div class="paper">
       <div class="aboutTitle">
         <div class="">&nbsp;</div>
         </div>
-  <a href="/" class="title-link">
+  <a href="{pfx}/" class="title-link">
     <div class="titleDiv">
       <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
@@ -251,35 +280,30 @@ def page_nav(active="articles", depth=1, body_class=""):
   </a>
   <nav id="mainNav">
       <p>
-          <a target="_self"{cls("news")} href="/">News</a>
+          <a target="_self"{cls("news")} href="{pfx}/">News</a>
       </p>
       <p>
-          <a target="_self"{eco_cls} href="/economy">Live Economy Data</a>
+          <a target="_self"{eco_cls} href="{pfx}/economy">Live Economy Data</a>
       </p>
       <p>
-          <a target="_self"{cls("fx")} href="/fx">FX</a>
+          <a target="_self"{cls("fx")} href="{pfx}/fx">FX</a>
       </p>
       <p>
-          <a target="_self"{cls("property")} href="/property">Property</a>
+          <a target="_self"{cls("property")} href="{pfx}/property">Property</a>
       </p>
       <p>
-          <a target="_self"{cls("jobs")} href="/jobs">Jobs</a>
+          <a target="_self"{cls("jobs")} href="{pfx}/jobs">Jobs</a>
       </p>
       <p>
-          <a target="_self"{cls("articles")} href="/articles">Articles</a>
+          <a target="_self"{cls("articles")} href="{pfx}/articles">Articles</a>
       </p>
       <p>
-          <a target="_self" class="notranslate" href="/originals">Originals</a>
+          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>
       </p>
       <span class="nav-cities-item">
           <button type="button" class="cities-nav-toggle notranslate" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
-          <ul class="cities-dropdown" aria-label="Zimbabwe cities">
-            <li><a href="/harare-news">Harare</a></li>
-            <li><a href="/bulawayo-news">Bulawayo</a></li>
-            <li><a href="/mutare-news">Mutare</a></li>
-            <li><a href="/gweru-news">Gweru</a></li>
-            <li><a href="/masvingo-news">Masvingo</a></li>
-            <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+          <ul class="cities-dropdown" aria-label="{country} cities">
+{cities_dropdown}
           </ul>
       </span>
   </nav>
@@ -291,32 +315,27 @@ def page_nav(active="articles", depth=1, body_class=""):
     <button class="nav-drawer-close" type="button" data-close-drawer aria-label="Close menu">
       <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
-    <form class="nav-drawer-search" action="/articles" method="get" role="search">
+    <form class="nav-drawer-search" action="{pfx}/articles" method="get" role="search">
       <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
     </form>
     <nav class="nav-drawer-main" aria-label="Sections">
-      <a href="/">News</a>
-      <a href="/economy">Economy</a>
-      <a href="/fx">FX</a>
-      <a href="/markets">Markets</a>
-      <a href="/property">Property</a>
-      <a href="/jobs">Jobs</a>
-      <a href="/articles">Articles</a>
-      <a href="/originals">Originals</a>
-      <a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>
+      <a href="{pfx}/">News</a>
+      <a href="{pfx}/economy">Economy</a>
+      <a href="{pfx}/fx">FX</a>
+      <a href="{pfx}/markets">Markets</a>
+      <a href="{pfx}/property">Property</a>
+      <a href="{pfx}/jobs">Jobs</a>
+      <a href="{pfx}/articles">Articles</a>
+      <a href="{pfx}/originals">Originals</a>
+      {scene_report}
     </nav>
     <span class="nav-drawer-section">Cities</span>
     <nav class="nav-drawer-cities" aria-label="Cities">
-      <a href="/harare-news">Harare</a>
-      <a href="/bulawayo-news">Bulawayo</a>
-      <a href="/mutare-news">Mutare</a>
-      <a href="/gweru-news">Gweru</a>
-      <a href="/masvingo-news">Masvingo</a>
-      <a href="/victoria-falls-news">Victoria Falls</a>
+{cities_drawer}
     </nav>
     <span class="nav-drawer-section">More</span>
     <nav class="nav-drawer-info" aria-label="Directories">
-      <a href="/weather">Weather</a>
+      <a href="{pfx}/weather">Weather</a>
       <a href="/flights/">Flights</a>
       <a href="/schools/">Schools</a>
       <a href="/zse/">ZSE companies</a>
@@ -356,8 +375,16 @@ def page_nav(active="articles", depth=1, body_class=""):
 """
 
 
-def page_footer(depth=1, extra_scripts=""):
-    prefix = "../" if depth == 1 else ""
+def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
+    prefix = "../" * depth
+    _meta = _get_region(region) if _get_region else {}
+    demonym_adj = _meta.get("demonym", "Zimbabwean")
+    cities = region_cities(region)
+    cities_footer = "\n".join(
+        f'            <li><a href="{pfx}/{slug}-news">{esc(name)}</a></li>'
+        for slug, name in cities)
+    # region.js only on non-root editions, so Zimbabwe footers stay identical.
+    region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=1"></script>\n'
     return f"""  <hr class="dateHr">
 
 <!-- Back to top -->
@@ -377,7 +404,7 @@ def page_footer(depth=1, extra_scripts=""):
     <div class="essential-subscribe-grid">
       <div class="essential-pitch">
         <p class="essential-eyebrow">The Mutapa Times newsletter</p>
-        <h2 class="essential-headline">Essential intelligence for the Zimbabwean diaspora.</h2>
+        <h2 class="essential-headline">Essential intelligence for the {demonym_adj} diaspora.</h2>
         <p class="essential-deck">Curated foreign press coverage, economic data, and original analysis , delivered twice a week to readers in over 30 countries.</p>
         <ul class="essential-features" aria-label="What you get">
           <li><span aria-hidden="true">🌍</span> Foreign press coverage</li>
@@ -450,14 +477,14 @@ def page_footer(depth=1, extra_scripts=""):
         <details open>
           <summary>Read</summary>
           <ul>
-            <li><a href="/">News</a></li>
-            <li><a href="/economy">Economy</a></li>
-            <li><a href="/fx">FX</a></li>
-            <li><a href="/markets">Markets</a></li>
-            <li><a href="/property">Property</a></li>
-            <li><a href="/jobs">Jobs</a></li>
-            <li><a href="/articles">Articles</a></li>
-            <li><a href="/weather">Weather</a></li>
+            <li><a href="{pfx}/">News</a></li>
+            <li><a href="{pfx}/economy">Economy</a></li>
+            <li><a href="{pfx}/fx">FX</a></li>
+            <li><a href="{pfx}/markets">Markets</a></li>
+            <li><a href="{pfx}/property">Property</a></li>
+            <li><a href="{pfx}/jobs">Jobs</a></li>
+            <li><a href="{pfx}/articles">Articles</a></li>
+            <li><a href="{pfx}/weather">Weather</a></li>
           </ul>
         </details>
       </div>
@@ -466,12 +493,7 @@ def page_footer(depth=1, extra_scripts=""):
         <details open>
           <summary>Cities</summary>
           <ul>
-            <li><a href="/harare-news">Harare</a></li>
-            <li><a href="/bulawayo-news">Bulawayo</a></li>
-            <li><a href="/mutare-news">Mutare</a></li>
-            <li><a href="/gweru-news">Gweru</a></li>
-            <li><a href="/masvingo-news">Masvingo</a></li>
-            <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+{cities_footer}
           </ul>
         </details>
       </div>
@@ -484,7 +506,7 @@ def page_footer(depth=1, extra_scripts=""):
             <li><a href="/advertising">Advertising &amp; partnerships</a></li>
             <li><a href="mailto:news@mutapatimes.com">Press &amp; media</a></li>
             <li><a href="/subscribe">Newsletter</a></li>
-            <li><a href="/feed.xml">RSS feed</a></li>
+            <li><a href="{pfx}/feed.xml">RSS feed</a></li>
           </ul>
         </details>
       </div>
@@ -516,7 +538,7 @@ def page_footer(depth=1, extra_scripts=""):
             </a>
           </div>
           <ul>
-            <li><a href="/feed.xml">RSS feed</a></li>
+            <li><a href="{pfx}/feed.xml">RSS feed</a></li>
           </ul>
         </details>
       </div>
@@ -534,7 +556,7 @@ def page_footer(depth=1, extra_scripts=""):
 </footer>
 </div>
 
-  <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
+{region_js}  <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/stories.js?v=5"></script>
   <script defer src="{prefix}js/nav.js"></script>
   <script defer src="/js/sponsors.js"></script>
@@ -734,19 +756,26 @@ def _load_author_map():
 
 def _byline_html(author, author_map, depth=1):
     """Plain 'By {author}' if no author page exists; linked version if
-    the author has a profile in content/authors/."""
+    the author has a profile in content/authors/. Author pages are global
+    (the masthead is shared across editions), so the relative prefix walks
+    all the way up to the root regardless of edition depth."""
     if not author:
         return ""
-    prefix = "../" if depth == 1 else ""
+    prefix = "../" * depth
     slug = author_map.get(author.strip().lower())
     if slug:
         return f'By <a href="{prefix}authors/{esc(slug)}.html" class="article-author-link" rel="author">{esc(author)}</a>'
     return f"By {esc(author)}"
 
 
-def build_articles():
-    os.makedirs(ARTICLES_OUT, exist_ok=True)
-    md_files = all_article_md_paths()
+def build_articles(region="zw"):
+    # Zimbabwe writes articles/ at the root (depth 1); other editions write
+    # <region>/articles/ (depth 2) and prefix all in-edition URLs with /<cc>.
+    pfx = "" if region == "zw" else f"/{region}"
+    depth = 1 if region == "zw" else 2
+    out_dir = ARTICLES_OUT if region == "zw" else os.path.join(ROOT_DIR, region, "articles")
+    os.makedirs(out_dir, exist_ok=True)
+    md_files = all_article_md_paths(region)
     related_index = _load_related_index()
     author_map = _load_author_map()
     count = 0
@@ -787,7 +816,7 @@ def build_articles():
         # the end of the body. js/series.js fills the strip at runtime
         # against /data/series-<key>.json.
         series_key = meta.get("series", "").strip()
-        canonical = f"{BASE_URL}/articles/{slug}.html"
+        canonical = f"{BASE_URL}{pfx}/articles/{slug}.html"
         # Brand headline card as og:image so Metricool / X / Facebook show
         # the on-brand card instead of the scraped article hero. The
         # in-body hero photo (if any) still uses `image` further down.
@@ -868,8 +897,8 @@ def build_articles():
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE_URL}/"},
-                {"@type": "ListItem", "position": 2, "name": "Articles", "item": f"{BASE_URL}/articles.html"},
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE_URL}{pfx}/"},
+                {"@type": "ListItem", "position": 2, "name": "Articles", "item": f"{BASE_URL}{pfx}/articles.html"},
                 {"@type": "ListItem", "position": 3, "name": title, "item": canonical}
             ]
         }
@@ -898,7 +927,7 @@ def build_articles():
                     robots_val = "noindex, follow"
             except Exception:
                 pass
-        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=1, robots=robots_val))
+        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=depth, robots=robots_val, pfx=pfx))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}
@@ -906,7 +935,7 @@ def build_articles():
 <script type="application/ld+json">
 {json.dumps(breadcrumb)}
 </script>""")
-        html_parts.append(page_nav("articles", depth=1, body_class=body_class))
+        html_parts.append(page_nav("articles", depth=depth, body_class=body_class, pfx=pfx, region=region))
         # Stories rail  same IG-style highlight strip used on home + /articles.
         # Stays empty if the visitor's local index has nothing fresh.
         html_parts.append(
@@ -951,7 +980,7 @@ def build_articles():
             _lr_tag = "Long Read" + ("  ·  " + category if category else "")
             html_parts.append(f'              <span class="article-longform-tag">{esc(_lr_tag)}</span>')
             if author:
-                html_parts.append(f'              <span class="article-longform-author">{_byline_html(author, author_map)}</span>')
+                html_parts.append(f'              <span class="article-longform-author">{_byline_html(author, author_map, depth=depth)}</span>')
             if date_display:
                 html_parts.append(f'              <time datetime="{esc(date_str)}">{date_display}</time>')
             if read_minutes:
@@ -971,7 +1000,7 @@ def build_articles():
             html_parts.append(f'        <h1 class="article-title">{esc(title)}</h1>')
             html_parts.append(f'        <div class="article-meta">')
             if author:
-                html_parts.append(f'          <span class="article-author">{_byline_html(author, author_map)}</span>')
+                html_parts.append(f'          <span class="article-author">{_byline_html(author, author_map, depth=depth)}</span>')
             if date_display:
                 html_parts.append(f'          <time class="article-date" datetime="{esc(date_str)}">{date_display}</time>')
             html_parts.append(f'        </div>')
@@ -1050,10 +1079,10 @@ def build_articles():
             extra_scripts += '\n  <script defer src="/js/stay-longform.js?v=1"></script>'
         if "data-timeline" in body_html:
             extra_scripts += '\n  <script defer src="/js/timeline.js?v=1"></script>'
-        html_parts.append(page_footer(depth=1, extra_scripts=extra_scripts))
+        html_parts.append(page_footer(depth=depth, extra_scripts=extra_scripts, pfx=pfx, region=region))
 
         # Write file
-        out_path = os.path.join(ARTICLES_OUT, f"{slug}.html")
+        out_path = os.path.join(out_dir, f"{slug}.html")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write("\n".join(html_parts))
         count += 1
@@ -1063,12 +1092,18 @@ def build_articles():
 
 # ─── Main ─────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--region", default="zw",
+                    help="Region edition to build (default: zw = Zimbabwe at the root)")
+    args = ap.parse_args()
     print("=== The Mutapa Times: Static Page Builder ===\n")
-    article_count = build_articles()
-    # Refresh the Academy Reading Room list (newest original articles).
-    try:
-        import build_reading_list
-        build_reading_list.main()
-    except Exception as e:  # noqa: BLE001
-        print("reading list skipped:", e)
+    article_count = build_articles(args.region)
+    # The Academy Reading Room list is global (newest Zimbabwe originals);
+    # only refresh it on the root build.
+    if args.region == "zw":
+        try:
+            import build_reading_list
+            build_reading_list.main()
+        except Exception as e:  # noqa: BLE001
+            print("reading list skipped:", e)
     print(f"\nDone. {article_count} articles generated.")
