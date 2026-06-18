@@ -27,6 +27,10 @@ from build_static_pages import (  # noqa: E402
 # preview show the on-brand card (not the scraped source thumbnail),
 # we emit the brand card as og:image instead of the article's hero photo.
 from build_feed_cards import card_public_url as feed_card_url  # noqa: E402
+try:
+    from regions import get_region as _get_region  # noqa: E402
+except ImportError:
+    _get_region = None
 
 DATA_DIR = "data"
 NEWS_OUT = "news"
@@ -69,8 +73,8 @@ def make_slug(article):
     return f"{date_part}-{s}-{h}"
 
 
-def landing_url(article):
-    return f"{BASE_URL}/news/{make_slug(article)}"
+def landing_url(article, pfx=""):
+    return f"{BASE_URL}{pfx}/news/{make_slug(article)}"
 
 
 # ── Article loading ────────────────────────────────────────────
@@ -110,8 +114,9 @@ def _is_fresh_enough(article):
         return True
 
 
-def load_articles():
+def load_articles(region="zw"):
     """Read spotlight + category JSONs into a flat list, deduped by URL."""
+    data_dir = DATA_DIR if region == "zw" else os.path.join(DATA_DIR, region)
     seen = set()
     out = []
     stale = 0
@@ -142,9 +147,9 @@ def load_articles():
                 "publishedAt": a.get("publishedAt") or "",
             })
 
-    take(SPOTLIGHT_FILE, "spotlight")
+    take(os.path.join(data_dir, "spotlight.json"), "spotlight")
     for cat in CATEGORY_FILES:
-        take(os.path.join(DATA_DIR, f"{cat}.json"), cat)
+        take(os.path.join(data_dir, f"{cat}.json"), cat)
     if stale:
         print(f"  Dropped {stale} stale articles (>{MAX_ARTICLE_AGE_DAYS}d old)")
     return out
@@ -177,10 +182,13 @@ def news_safe_hero(image_url, canonical):
 
 
 # ── Page rendering ─────────────────────────────────────────────
-def render_page(article, related=None):
+def render_page(article, related=None, region="zw", pfx="", depth=1):
+    _meta = _get_region(region) if _get_region else {}
+    country = _meta.get("name", "Zimbabwe")
+    demonym_adj = _meta.get("demonym", "Zimbabwean")
     title = article["title"]
     summary = article["description"] or f"{title} — full story at {article['source']}."
-    canonical = landing_url(article)
+    canonical = landing_url(article, pfx)
     # og:image + Schema.org image point at the brand headline card so social
     # previews are uniformly on-brand. The in-body hero <img> below still
     # uses article["image"] (the scraped source photo) so readers see real
@@ -202,7 +210,7 @@ def render_page(article, related=None):
     # "Topics" listing on news.google.com; keywords help long-tail discovery.
     section_label = (category or "news").title()
     keywords = [w for w in [
-        "Zimbabwe",
+        country,
         section_label,
         source,
     ] if w]
@@ -229,8 +237,8 @@ def render_page(article, related=None):
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE_URL}/"},
-            {"@type": "ListItem", "position": 2, "name": "News", "item": f"{BASE_URL}/articles"},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE_URL}{pfx}/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": f"{BASE_URL}{pfx}/articles"},
             {"@type": "ListItem", "position": 3, "name": title, "item": canonical},
         ],
     }
@@ -239,10 +247,10 @@ def render_page(article, related=None):
     # page_nav() closes head, opens body, prints the masthead+nav
     # page_footer() prints the subscribe banner + footer + </body></html>
     parts = []
-    parts.append(page_head(page_title, meta_desc, canonical, "article", image, depth=1))
+    parts.append(page_head(page_title, meta_desc, canonical, "article", image, depth=depth, pfx=pfx))
     parts.append(f'<script type="application/ld+json">{json.dumps(structured)}</script>')
     parts.append(f'<script type="application/ld+json">{json.dumps(breadcrumb)}</script>')
-    parts.append(page_nav(active="articles", depth=1))
+    parts.append(page_nav(active="articles", depth=depth, pfx=pfx, region=region))
     # Stories rail — same IG-style highlight strip used on home + /articles.
     parts.append('<div id="stories-rail" aria-label="Story highlights"></div>')
 
@@ -285,7 +293,7 @@ def render_page(article, related=None):
         parts.append('    <h3 class="news-related-title">More from this category</h3>')
         parts.append('    <ul class="news-related-list">')
         for r in related[:3]:
-            r_url = landing_url(r)
+            r_url = landing_url(r, pfx)
             parts.append(
                 f'      <li><a href="{esc(r_url)}">{esc(r["title"])}</a> '
                 f'<span class="news-related-source">&middot; {esc(r.get("source",""))}</span></li>'
@@ -295,7 +303,7 @@ def render_page(article, related=None):
 
     parts.append('  <p class="news-disclaimer">')
     parts.append(
-        f'    The Mutapa Times aggregates Zimbabwean news from foreign press. '
+        f'    The Mutapa Times aggregates {demonym_adj} news from foreign press. '
         f'The full article above lives at <a href="{esc(article["url"])}" target="_blank" rel="noopener">{esc(source)}</a>; '
         f'we link out to credit the original publisher.'
     )
@@ -303,7 +311,7 @@ def render_page(article, related=None):
 
     parts.append("</main>")
 
-    parts.append(page_footer(depth=1))
+    parts.append(page_footer(depth=depth, pfx=pfx, region=region))
 
     return "\n".join(parts)
 
@@ -357,33 +365,43 @@ def pick_related(article, all_articles, max_count=3):
 
 # ── Main ───────────────────────────────────────────────────────
 def main():
-    print("=== BUILD NEWS LANDING PAGES ===")
+    import argparse
+    ap = argparse.ArgumentParser()
     # --force rebuilds existing pages — useful when og:image / chrome /
     # JSON-LD shape changes and every page needs to refresh. Default is
     # skip-existing so the routine fetch-news cron stays cheap.
-    force = "--force" in sys.argv
-    articles = load_articles()
+    ap.add_argument("--force", action="store_true")
+    ap.add_argument("--region", default="zw",
+                    help="Region edition to build (default: zw = Zimbabwe at the root)")
+    args = ap.parse_args()
+    region = args.region
+    pfx = "" if region == "zw" else f"/{region}"
+    depth = 1 if region == "zw" else 2
+    out_dir = NEWS_OUT if region == "zw" else os.path.join(region, NEWS_OUT)
+    force = args.force
+    print("=== BUILD NEWS LANDING PAGES ===")
+    articles = load_articles(region)
     print(f"  {len(articles)} unique articles loaded (force={force})")
 
-    os.makedirs(NEWS_OUT, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     written = skipped = 0
     new_urls = []
     for art in articles:
         slug = make_slug(art)
-        out_path = os.path.join(NEWS_OUT, f"{slug}.html")
+        out_path = os.path.join(out_dir, f"{slug}.html")
         if not force and os.path.exists(out_path):
             skipped += 1
             continue
         try:
             related = pick_related(art, articles)
-            page_html = render_page(art, related=related)
+            page_html = render_page(art, related=related, region=region, pfx=pfx, depth=depth)
         except Exception as e:
             print(f"  ERROR rendering {slug}: {e}")
             continue
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page_html)
         written += 1
-        new_urls.append(landing_url(art))
+        new_urls.append(landing_url(art, pfx))
 
     print(f"  Wrote {written} pages, skipped {skipped} existing")
 
@@ -394,7 +412,7 @@ def main():
     import glob as _glob
     cutoff = (datetime.now(timezone.utc) - timedelta(days=MAX_ARTICLE_AGE_DAYS)).date()
     swept = 0
-    for f in _glob.glob(os.path.join(NEWS_OUT, "*.html")):
+    for f in _glob.glob(os.path.join(out_dir, "*.html")):
         m = re.search(r"/(\d{4})-(\d{2})-(\d{2})-", f)
         if not m:
             continue
