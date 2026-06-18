@@ -20,6 +20,7 @@ Run on every fetch-news cron so the article list stays fresh in the
 static HTML (separate from the JS hydration layer, which is for
 visitors arriving between crons).
 """
+import argparse
 import html as html_mod
 import json
 import os
@@ -35,7 +36,17 @@ except ImportError:
 
 BASE_URL = "https://mutapatimes.com"
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-INDEX_PATH = os.path.join(ROOT, "content", "articles", "index.json")
+
+
+def index_path(region):
+    """CMS index for a region. Zimbabwe at the root, others under content/<cc>."""
+    if region == "zw":
+        return os.path.join(ROOT, "content", "articles", "index.json")
+    return os.path.join(ROOT, "content", region, "articles", "index.json")
+
+
+# Back-compat default (Zimbabwe). main() recomputes per region.
+INDEX_PATH = index_path("zw")
 
 CITIES = [
     {
@@ -179,6 +190,142 @@ CITIES = [
     },
 ]
 
+# South African edition city desks (served under /za/). Mirrors the ZW
+# structure so the same template renders both.
+ZA_CITIES = [
+    {
+        "slug": "johannesburg",
+        "name": "Johannesburg",
+        "title_short": "Joburg",
+        "lat": -26.2041, "lon": 28.0473,
+        "headline": "Johannesburg news, today.",
+        "context": (
+            "Johannesburg is South Africa's largest city and economic "
+            "engine, home to the Johannesburg Stock Exchange, the head "
+            "offices of most listed banks and mining houses, and the "
+            "Constitutional Court. The Mutapa Times tracks Johannesburg "
+            "daily — markets, business, City of Joburg affairs, "
+            "infrastructure and culture — aggregating reports from South "
+            "African newsrooms and international wire services."
+        ),
+        "keywords_extra": [
+            "Johannesburg news", "Johannesburg news today", "Joburg news",
+            "latest Johannesburg news", "Johannesburg business news",
+            "Johannesburg weather", "Gauteng news", "JSE news",
+            "news Johannesburg", "Joburg today",
+        ],
+        "matchers": [r"\bjohannesburg\b", r"\bjoburg\b", r"\bjo'burg\b", r"\bsandton\b", r"\bsoweto\b"],
+    },
+    {
+        "slug": "cape-town",
+        "name": "Cape Town",
+        "title_short": "Cape Town",
+        "lat": -33.9249, "lon": 18.4241,
+        "headline": "Cape Town news, today.",
+        "context": (
+            "Cape Town is South Africa's legislative capital and the seat "
+            "of Parliament, a major tourism, tech and financial-services "
+            "hub on the Western Cape. The Mutapa Times covers Cape Town "
+            "daily — Parliament, the V&A Waterfront economy, the startup "
+            "and energy sectors, City affairs and the cultural calendar — "
+            "pulling from South African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Cape Town news", "Cape Town news today", "latest Cape Town news",
+            "Cape Town business news", "Cape Town weather", "Western Cape news",
+            "Parliament news", "news Cape Town", "Cape Town today",
+        ],
+        "matchers": [r"\bcape town\b", r"\bwestern cape\b"],
+    },
+    {
+        "slug": "durban",
+        "name": "Durban",
+        "title_short": "Durban",
+        "lat": -29.8587, "lon": 31.0218,
+        "headline": "Durban news, today.",
+        "context": (
+            "Durban is South Africa's busiest port city and the commercial "
+            "heart of KwaZulu-Natal. The Mutapa Times tracks Durban daily — "
+            "the port and logistics economy, manufacturing, eThekwini "
+            "affairs, tourism along the Golden Mile, and the cultural "
+            "calendar — aggregating South African newsrooms and "
+            "international wires."
+        ),
+        "keywords_extra": [
+            "Durban news", "Durban news today", "latest Durban news",
+            "Durban business news", "Durban weather", "KwaZulu-Natal news",
+            "eThekwini news", "news Durban", "Durban today",
+        ],
+        "matchers": [r"\bdurban\b", r"\bethekwini\b", r"\bkwazulu", r"\bkzn\b"],
+    },
+    {
+        "slug": "pretoria",
+        "name": "Pretoria",
+        "title_short": "Pretoria",
+        "lat": -25.7479, "lon": 28.2293,
+        "headline": "Pretoria news, today.",
+        "context": (
+            "Pretoria is South Africa's administrative capital, seat of "
+            "the executive and the diplomatic corps in the City of "
+            "Tshwane. The Mutapa Times covers Pretoria daily — national "
+            "government and policy, the Union Buildings, the Reserve Bank, "
+            "universities and the cultural calendar — pulling from South "
+            "African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Pretoria news", "Pretoria news today", "latest Pretoria news",
+            "Pretoria business news", "Pretoria weather", "Tshwane news",
+            "government news South Africa", "news Pretoria", "Pretoria today",
+        ],
+        "matchers": [r"\bpretoria\b", r"\btshwane\b"],
+    },
+    {
+        "slug": "gqeberha",
+        "name": "Gqeberha",
+        "title_short": "Gqeberha",
+        "lat": -33.9608, "lon": 25.6022,
+        "headline": "Gqeberha news, today.",
+        "context": (
+            "Gqeberha, formerly Port Elizabeth, is the industrial and "
+            "automotive hub of the Eastern Cape and a key deep-water port. "
+            "The Mutapa Times tracks Gqeberha daily — the motor industry, "
+            "Nelson Mandela Bay affairs, the port economy, tourism along "
+            "the coast, and the cultural calendar — aggregating South "
+            "African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Gqeberha news", "Port Elizabeth news", "Gqeberha news today",
+            "latest Gqeberha news", "Gqeberha business news",
+            "Gqeberha weather", "Eastern Cape news", "Nelson Mandela Bay news",
+            "news Gqeberha", "Gqeberha today",
+        ],
+        "matchers": [r"\bgqeberha\b", r"port elizabeth", r"nelson mandela bay"],
+    },
+]
+
+# Per-region copy + identifiers. Zimbabwe values reproduce the existing
+# pages byte-for-byte; South Africa supplies its own.
+REGION_META = {
+    "zw": {
+        "cities": CITIES,
+        "country": "Zimbabwe",
+        "demonym_pl": "Zimbabweans",
+        "demonym_adj": "Zimbabwean",
+        "geo": "ZW",
+        "local_sources": "Bulawayo24, NewZimbabwe.com, The Herald, The Standard, NewsDay, ZimLive, 263Chat",
+        "scene_report": '<a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>',
+    },
+    "za": {
+        "cities": ZA_CITIES,
+        "country": "South Africa",
+        "demonym_pl": "South Africans",
+        "demonym_adj": "South African",
+        "geo": "ZA",
+        "local_sources": "News24, Daily Maverick, BusinessDay, TimesLIVE, Moneyweb, IOL, EWN",
+        "scene_report": "",
+    },
+}
+
 
 def esc(s):
     return html_mod.escape(s or "", quote=True)
@@ -196,9 +343,9 @@ def format_date(date_str):
         return date_str[:10] if len(date_str) >= 10 else date_str
 
 
-def load_articles():
+def load_articles(region="zw"):
     try:
-        entries = json.load(open(INDEX_PATH))
+        entries = json.load(open(index_path(region)))
     except (IOError, json.JSONDecodeError):
         return []
     fresh = [e for e in entries if isinstance(e, dict) and e.get("slug") and e.get("title")]
@@ -224,12 +371,12 @@ def stay_slug(city_slug):
     return f"{STAY_DATE}-where-to-stay-in-{city_slug}"
 
 
-def render_pinned_stay(a):
+def render_pinned_stay(a, pfx=""):
     """A pinned 'Where to stay' guide row at the top of the city feed."""
     slug = a["slug"]
     title = a["title"]
     summary = (a.get("summary") or "")[:240]
-    href = f"/articles/{slug}.html"
+    href = f"{pfx}/articles/{slug}.html"
     summary_block = f'  <p class="city-article-summary">{esc(summary)}</p>' if summary else ""
     return (
         f'<article class="city-article city-article--pinned">'
@@ -241,13 +388,13 @@ def render_pinned_stay(a):
     )
 
 
-def render_article_row(a, idx):
+def render_article_row(a, idx, pfx=""):
     slug = a["slug"]
     title = a["title"]
     summary = (a.get("summary") or "")[:240]
     cat = (a.get("category") or "").strip()
     when = format_date(a.get("date", ""))
-    href = f"/articles/{slug}.html"
+    href = f"{pfx}/articles/{slug}.html"
     bg_cls = " city-article--alt" if idx % 2 else ""
     summary_block = f'  <p class="city-article-summary">{esc(summary)}</p>' if summary else ""
     cat_block = f'<span class="city-article-cat">{esc(cat)}</span>' if cat else ""
@@ -264,13 +411,13 @@ def render_article_row(a, idx):
     )
 
 
-def build_schema(city, articles):
+def build_schema(city, articles, meta, pfx):
     items = []
     for i, a in enumerate(articles[:30], start=1):
         items.append({
             "@type": "ListItem",
             "position": i,
-            "url": f"{BASE_URL}/articles/{a['slug']}.html",
+            "url": f"{BASE_URL}{pfx}/articles/{a['slug']}.html",
             "name": a["title"],
         })
     return [
@@ -280,9 +427,9 @@ def build_schema(city, articles):
             "name": f"{city['name']} news",
             "description": (
                 f"Latest {city['name']} news, business, politics, weather "
-                f"and culture — daily updates from Zimbabwe. The Mutapa Times."
+                f"and culture — daily updates from {meta['country']}. The Mutapa Times."
             ),
-            "url": f"{BASE_URL}/{city['slug']}-news",
+            "url": f"{BASE_URL}{pfx}/{city['slug']}-news",
             "inLanguage": "en",
             "isPartOf": {"@type": "WebSite", "name": "The Mutapa Times",
                          "url": BASE_URL},
@@ -291,7 +438,7 @@ def build_schema(city, articles):
                 "name": city["name"],
                 "address": {"@type": "PostalAddress",
                             "addressLocality": city["name"],
-                            "addressCountry": "ZW"},
+                            "addressCountry": meta["geo"]},
                 "geo": {"@type": "GeoCoordinates",
                         "latitude": city["lat"], "longitude": city["lon"]},
             },
@@ -313,18 +460,18 @@ def build_schema(city, articles):
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Home",
-                 "item": f"{BASE_URL}/"},
+                 "item": f"{BASE_URL}{pfx}/"},
                 {"@type": "ListItem", "position": 2, "name": "Cities",
-                 "item": f"{BASE_URL}/"},
+                 "item": f"{BASE_URL}{pfx}/"},
                 {"@type": "ListItem", "position": 3,
                  "name": f"{city['name']} news",
-                 "item": f"{BASE_URL}/{city['slug']}-news"},
+                 "item": f"{BASE_URL}{pfx}/{city['slug']}-news"},
             ],
         },
     ]
 
 
-def build_page(city, all_articles, other_cities):
+def build_page(city, all_articles, other_cities, meta, pfx):
     articles = articles_for_city(all_articles, city)
     print(f"  {city['name']:<16s}  {len(articles):>4d} articles")
 
@@ -334,7 +481,7 @@ def build_page(city, all_articles, other_cities):
     stay_article = next((a for a in all_articles if a["slug"] == sslug), None)
     articles = [a for a in articles if a["slug"] != sslug]
 
-    row_list = [render_article_row(a, i) for i, a in enumerate(articles[:60])]
+    row_list = [render_article_row(a, i, pfx) for i, a in enumerate(articles[:60])]
 
     # Mid-feed sponsored stays carousel — sits amongst the articles as a
     # feed item (js/harare-hotels.js, "feed" variant keyed to this city).
@@ -349,31 +496,53 @@ def build_page(city, all_articles, other_cities):
 
     rows = "\n".join(row_list)
     if stay_article:
-        rows = render_pinned_stay(stay_article) + "\n" + rows
+        rows = render_pinned_stay(stay_article, pfx) + "\n" + rows
     if not row_list:
         rows = '<p class="loading-msg">Fresh coverage will appear here as news comes in.</p>'
 
     schema_blocks = "\n".join(
         f'<script type="application/ld+json">{json.dumps(s)}</script>'
-        for s in build_schema(city, articles)
+        for s in build_schema(city, articles, meta, pfx)
     )
 
     related = "\n".join(
-        f'<li><a href="/{c["slug"]}-news">{esc(c["name"])} news</a></li>'
+        f'<li><a href="{pfx}/{c["slug"]}-news">{esc(c["name"])} news</a></li>'
         for c in other_cities
     )
+
+    # Region-aware copy + identifiers (Zimbabwe values reproduce the
+    # existing pages exactly; other editions supply their own).
+    country = meta["country"]
+    geo = meta["geo"]
+    cities = meta["cities"]
+    local_sources = meta["local_sources"]
+    demonym_pl = meta["demonym_pl"]
+    demonym_adj = meta["demonym_adj"]
+    scene_report = meta["scene_report"]
+    # region.js only on non-root editions, so the Zimbabwe pages stay byte-identical.
+    region_js = "" if not pfx else '<script defer src="/js/region.js?v=1"></script>\n'
+    # City link lists, generated from this edition's cities at three indents.
+    cities_dropdown = "\n".join(
+        f'          <li><a href="{pfx}/{c["slug"]}-news">{esc(c["name"])}</a></li>'
+        for c in cities)
+    cities_drawer = "\n".join(
+        f'      <a href="{pfx}/{c["slug"]}-news">{esc(c["name"])}</a>'
+        for c in cities)
+    cities_footer = "\n".join(
+        f'            <li><a href="{pfx}/{c["slug"]}-news">{esc(c["name"])}</a></li>'
+        for c in cities)
 
     # The sponsored stays carousel is now spliced mid-feed (see above) for
     # every city, so the after-list slot is gone; only the script remains.
     hotels_rail = ""
     hotels_script = '<script defer src="/js/harare-hotels.js?v=2"></script>\n'
 
-    canonical = f"{BASE_URL}/{city['slug']}-news"
+    canonical = f"{BASE_URL}{pfx}/{city['slug']}-news"
     title = (f"{city['name']} news latest — today's headlines from "
-             f"{city['title_short']}, Zimbabwe | The Mutapa Times")
+             f"{city['title_short']}, {country} | The Mutapa Times")
     description = (
         f"Latest {city['name']} news today — business, politics, weather, "
-        f"sport and culture from {city['name']}, Zimbabwe. Updated daily by "
+        f"sport and culture from {city['name']}, {country}. Updated daily by "
         f"The Mutapa Times. Includes today's {city['name']} weather forecast."
     )
     keywords = ", ".join(city["keywords_extra"])
@@ -404,7 +573,7 @@ def build_page(city, all_articles, other_cities):
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
-<meta name="geo.region" content="ZW">
+<meta name="geo.region" content="{geo}">
 <meta name="geo.placename" content="{esc(city['name'])}">
 <meta name="geo.position" content="{city['lat']};{city['lon']}">
 <meta name="ICBM" content="{city['lat']},{city['lon']}">
@@ -424,7 +593,7 @@ def build_page(city, all_articles, other_cities):
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{BASE_URL}/img/brand/og-share.png">
-<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="{BASE_URL}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="{BASE_URL}{pfx}/feed.xml">
 <link rel="alternate" hreflang="en" href="{esc(canonical)}">
 <link rel="alternate" hreflang="x-default" href="{esc(canonical)}">
 
@@ -446,36 +615,31 @@ def build_page(city, all_articles, other_cities):
   <button class="topbar-menu" type="button" data-open-drawer aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
-  <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
+  <a href="{pfx}/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
 <div class="paper">
-  <a href="/" class="title-link">
+  <a href="{pfx}/" class="title-link">
     <div class="titleDiv">
       <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
     <h4 class="sub notranslate">Southern Africa outside-in</h4>
   </a>
   <nav id="mainNav">
-      <p><a target="_self" class="notranslate" href="/">News</a></p>
-      <p><a target="_self" class="economy-btn" href="/economy">Economy</a></p>
-      <p><a target="_self" class="notranslate" href="/fx">FX</a></p>
-      <p><a target="_self" class="notranslate" href="/markets">Markets</a></p>
-      <p><a target="_self" class="notranslate" href="/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="/articles">Articles</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/">News</a></p>
+      <p><a target="_self" class="economy-btn" href="{pfx}/economy">Economy</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/fx">FX</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/markets">Markets</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/property">Property</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/jobs">Jobs</a></p>
+      <p><a target="_self" class="notranslate" href="{pfx}/articles">Articles</a></p>
       <p>
-          <a target="_self" class="notranslate" href="/originals">Originals</a>
+          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>
       </p>
       <span class="nav-cities-item">
         <button type="button" class="cities-nav-toggle notranslate active" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
-        <ul class="cities-dropdown" aria-label="Zimbabwe cities">
-          <li><a href="/harare-news">Harare</a></li>
-          <li><a href="/bulawayo-news">Bulawayo</a></li>
-          <li><a href="/mutare-news">Mutare</a></li>
-          <li><a href="/gweru-news">Gweru</a></li>
-          <li><a href="/masvingo-news">Masvingo</a></li>
-          <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+        <ul class="cities-dropdown" aria-label="{country} cities">
+{cities_dropdown}
         </ul>
       </span>
   </nav>
@@ -487,28 +651,23 @@ def build_page(city, all_articles, other_cities):
     <button class="nav-drawer-close" type="button" data-close-drawer aria-label="Close menu">
       <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
-    <form class="nav-drawer-search" action="/articles" method="get" role="search">
+    <form class="nav-drawer-search" action="{pfx}/articles" method="get" role="search">
       <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
     </form>
     <nav class="nav-drawer-main" aria-label="Sections">
-      <a href="/">News</a>
-      <a href="/economy">Economy</a>
-      <a href="/fx">FX</a>
-      <a href="/markets">Markets</a>
-      <a href="/property">Property</a>
-      <a href="/jobs">Jobs</a>
-      <a href="/articles">Articles</a>
-      <a href="/originals">Originals</a>
-      <a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>
+      <a href="{pfx}/">News</a>
+      <a href="{pfx}/economy">Economy</a>
+      <a href="{pfx}/fx">FX</a>
+      <a href="{pfx}/markets">Markets</a>
+      <a href="{pfx}/property">Property</a>
+      <a href="{pfx}/jobs">Jobs</a>
+      <a href="{pfx}/articles">Articles</a>
+      <a href="{pfx}/originals">Originals</a>
+      {scene_report}
     </nav>
     <span class="nav-drawer-section">Cities</span>
     <nav class="nav-drawer-cities" aria-label="Cities">
-      <a href="/harare-news">Harare</a>
-      <a href="/bulawayo-news">Bulawayo</a>
-      <a href="/mutare-news">Mutare</a>
-      <a href="/gweru-news">Gweru</a>
-      <a href="/masvingo-news">Masvingo</a>
-      <a href="/victoria-falls-news">Victoria Falls</a>
+{cities_drawer}
     </nav>
     <span class="nav-drawer-section">Information</span>
     <nav class="nav-drawer-info" aria-label="Information">
@@ -550,7 +709,7 @@ def build_page(city, all_articles, other_cities):
 
     <header class="page-hero">
       <h1 class="page-hero-headline">{esc(city['name'])} news, <em>today.</em></h1>
-      <p class="page-hero-deck">Latest {esc(city['name'])} headlines from across Zimbabwe — business, politics, sport, weather and culture. Updated continuously from local newsrooms and international wires.</p>
+      <p class="page-hero-deck">Latest {esc(city['name'])} headlines from across {country} — business, politics, sport, weather and culture. Updated continuously from local newsrooms and international wires.</p>
     </header>
 
     <!-- Weather card — populated by /js/city.js on load -->
@@ -595,8 +754,8 @@ def build_page(city, all_articles, other_cities):
 {rows}
     </div>
 {hotels_rail}
-    <aside class="city-related" aria-label="Other Zimbabwe cities">
-      <h2 class="city-section-heading">Other Zimbabwe cities</h2>
+    <aside class="city-related" aria-label="Other {country} cities">
+      <h2 class="city-section-heading">Other {country} cities</h2>
       <ul class="city-related-list">
 {related}
       </ul>
@@ -604,7 +763,7 @@ def build_page(city, all_articles, other_cities):
 
     <section class="city-context city-context--foot">
       <h2>About {esc(city['name'])} news on The Mutapa Times</h2>
-      <p>The Mutapa Times is an independent business and intelligence newspaper for Zimbabweans at home and in the diaspora. Our {esc(city['name'])} desk aggregates coverage from local Zimbabwean newsrooms — Bulawayo24, NewZimbabwe.com, The Herald, The Standard, NewsDay, ZimLive, 263Chat — alongside international wires from Reuters, Bloomberg, BBC, AP, Al Jazeera and The Guardian. Pages refresh several times a day. Coordinates: {city['lat']:.4f}, {city['lon']:.4f}.</p>
+      <p>The Mutapa Times is an independent business and intelligence newspaper for {demonym_pl} at home and in the diaspora. Our {esc(city['name'])} desk aggregates coverage from local {demonym_adj} newsrooms — {local_sources} — alongside international wires from Reuters, Bloomberg, BBC, AP, Al Jazeera and The Guardian. Pages refresh several times a day. Coordinates: {city['lat']:.4f}, {city['lon']:.4f}.</p>
     </section>
   </main>
 
@@ -615,7 +774,7 @@ def build_page(city, all_articles, other_cities):
 </div>
 
 <script defer src="/js/vendor/modernizr-3.8.0.min.js"></script>
-<script defer src="/js/stories.js"></script>
+{region_js}<script defer src="/js/stories.js"></script>
 <script defer src="/js/nav.js"></script>
 <script defer src="/js/sponsors.js"></script>
 <script defer src="/js/city.js"></script>
@@ -633,14 +792,14 @@ if ('serviceWorker' in navigator) {{
         <details open>
           <summary>Read</summary>
           <ul>
-            <li><a href="/">News</a></li>
-            <li><a href="/economy">Economy</a></li>
-            <li><a href="/fx">FX</a></li>
-            <li><a href="/markets">Markets</a></li>
-            <li><a href="/property">Property</a></li>
-            <li><a href="/jobs">Jobs</a></li>
-            <li><a href="/articles">Articles</a></li>
-            <li><a href="/weather">Weather</a></li>
+            <li><a href="{pfx}/">News</a></li>
+            <li><a href="{pfx}/economy">Economy</a></li>
+            <li><a href="{pfx}/fx">FX</a></li>
+            <li><a href="{pfx}/markets">Markets</a></li>
+            <li><a href="{pfx}/property">Property</a></li>
+            <li><a href="{pfx}/jobs">Jobs</a></li>
+            <li><a href="{pfx}/articles">Articles</a></li>
+            <li><a href="{pfx}/weather">Weather</a></li>
           </ul>
         </details>
       </div>
@@ -649,12 +808,7 @@ if ('serviceWorker' in navigator) {{
         <details open>
           <summary>Cities</summary>
           <ul>
-            <li><a href="/harare-news">Harare</a></li>
-            <li><a href="/bulawayo-news">Bulawayo</a></li>
-            <li><a href="/mutare-news">Mutare</a></li>
-            <li><a href="/gweru-news">Gweru</a></li>
-            <li><a href="/masvingo-news">Masvingo</a></li>
-            <li><a href="/victoria-falls-news">Victoria Falls</a></li>
+{cities_footer}
           </ul>
         </details>
       </div>
@@ -667,7 +821,7 @@ if ('serviceWorker' in navigator) {{
             <li><a href="/advertising">Advertising &amp; partnerships</a></li>
             <li><a href="mailto:news@mutapatimes.com">Press &amp; media</a></li>
             <li><a href="/subscribe">Newsletter</a></li>
-            <li><a href="/feed.xml">RSS feed</a></li>
+            <li><a href="{pfx}/feed.xml">RSS feed</a></li>
           </ul>
         </details>
       </div>
@@ -699,7 +853,7 @@ if ('serviceWorker' in navigator) {{
             </a>
           </div>
           <ul>
-            <li><a href="/feed.xml">RSS feed</a></li>
+            <li><a href="{pfx}/feed.xml">RSS feed</a></li>
           </ul>
         </details>
       </div>
@@ -719,17 +873,30 @@ if ('serviceWorker' in navigator) {{
 """
 
 
-def main():
-    print("=== BUILD CITY PAGES ===")
-    all_articles = load_articles()
-    print(f"  Loaded {len(all_articles)} CMS articles")
-    for city in CITIES:
-        others = [c for c in CITIES if c["slug"] != city["slug"]]
-        page = build_page(city, all_articles, others)
-        out = os.path.join(ROOT, f"{city['slug']}-news.html")
+def build_region(region):
+    meta = REGION_META[region]
+    pfx = "" if region == "zw" else f"/{region}"
+    cities = meta["cities"]
+    out_dir = ROOT if region == "zw" else os.path.join(ROOT, region)
+    os.makedirs(out_dir, exist_ok=True)
+    all_articles = load_articles(region)
+    print(f"  [{region}] Loaded {len(all_articles)} CMS articles")
+    for city in cities:
+        others = [c for c in cities if c["slug"] != city["slug"]]
+        page = build_page(city, all_articles, others, meta, pfx)
+        out = os.path.join(out_dir, f"{city['slug']}-news.html")
         with open(out, "w") as f:
             f.write(page)
-    print(f"\n  Wrote {len(CITIES)} city pages.")
+    print(f"  [{region}] Wrote {len(cities)} city pages to {out_dir}")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--region", default="zw", choices=list(REGION_META.keys()),
+                    help="Region edition to build (default: zw = Zimbabwe at the root)")
+    args = ap.parse_args()
+    print("=== BUILD CITY PAGES ===")
+    build_region(args.region)
     print("=== DONE ===")
 
 
