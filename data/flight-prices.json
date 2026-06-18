@@ -20,21 +20,21 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 515,
-          "airline": "FR",
-          "departure_at": "2026-06-30",
+          "price": 519,
+          "airline": "UR",
+          "departure_at": "2026-06-26",
           "return_at": "",
-          "stops": 4,
-          "duration": 2555,
+          "stops": 1,
+          "duration": 920,
           "currency": ""
         },
         {
           "price": 539,
-          "airline": "PC",
+          "airline": "FR",
           "departure_at": "2026-07-03",
           "return_at": "",
-          "stops": 3,
-          "duration": 2890,
+          "stops": 4,
+          "duration": 2535,
           "currency": ""
         },
         {
@@ -130,12 +130,12 @@
           "currency": ""
         },
         {
-          "price": 520,
-          "airline": "PC",
+          "price": 519,
+          "airline": "UR",
           "departure_at": "2026-06-26",
           "return_at": "",
-          "stops": 3,
-          "duration": 2890,
+          "stops": 1,
+          "duration": 920,
           "currency": ""
         }
       ],
@@ -283,7 +283,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 7,
+          "n": 5,
           "error": null
         },
         {
@@ -305,7 +305,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 5
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -587,12 +587,12 @@
           "currency": ""
         },
         {
-          "price": 1534,
+          "price": 2898,
           "airline": "FZ",
-          "departure_at": "2026-06-19",
-          "return_at": "",
+          "departure_at": "2026-06-21",
+          "return_at": "2026-06-22",
           "stops": 1,
-          "duration": 1455,
+          "duration": null,
           "currency": ""
         }
       ],
@@ -600,7 +600,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 3,
+          "n": 2,
           "error": null
         },
         {
@@ -622,7 +622,7 @@
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 5
     },
     "toronto-to-harare": {
       "origin": "YYZ",
