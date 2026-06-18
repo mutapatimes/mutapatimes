@@ -51,8 +51,26 @@ def card_filename(url):
     return f"{card_hash(url)}.png"
 
 
+def _url_region(url):
+    """Which edition a URL belongs to, by path prefix. Extend per launch."""
+    return "za" if "/za/" in (url or "") else "zw"
+
+
+def card_dir(region="zw"):
+    """On-disk card folder. Per-region so a non-root build's prune pass
+    can never delete another edition's cards."""
+    return OUT_DIR if region == "zw" else os.path.join(ROOT, "img", "cards", region, "news")
+
+
+def card_public_base(region="zw"):
+    return PUBLIC_BASE if region == "zw" else f"https://mutapatimes.com/img/cards/{region}/news"
+
+
 def card_public_url(url):
-    return f"{PUBLIC_BASE}/{card_filename(url)}"
+    # Region inferred from the URL so callers (build_static_pages etc.) need
+    # no change: a /za/... canonical resolves to the /za card folder, a root
+    # URL to the original folder (Zimbabwe output unchanged).
+    return f"{card_public_base(_url_region(url))}/{card_filename(url)}"
 
 
 # ── Image-rights risk ────────────────────────────────────────────────────
@@ -174,7 +192,7 @@ def _walk_news_json(filepath):
         }
 
 
-def _walk_cms_articles():
+def _walk_cms_articles(region="zw"):
     """Yield {title, source, url, publishedAt} per published markdown
     article in both folders: content/articles (originals) and
     content/wires (auto-imported archive). Drafts are skipped.
@@ -182,7 +200,13 @@ def _walk_cms_articles():
     Without walking the wires folder, every wire entry in
     content/articles/index.json points to a card_image path that 404s,
     which is what was breaking the stories rail."""
-    for folder in (CMS_DIR, WIRES_DIR):
+    pfx = "" if region == "zw" else f"/{region}"
+    if region == "zw":
+        folders = (CMS_DIR, WIRES_DIR)
+    else:
+        folders = (os.path.join(ROOT, "content", region, "articles"),
+                   os.path.join(ROOT, "content", region, "wires"))
+    for folder in folders:
         for md in glob.glob(os.path.join(folder, "*.md")):
             slug = os.path.splitext(os.path.basename(md))[0]
             if slug == "index":
@@ -207,7 +231,7 @@ def _walk_cms_articles():
             author = author_m.group(1) if author_m else "Mutapa Times"
             # CMS articles live at /articles/{slug}.html — same URL build_news_pages
             # links to and what generate_rss.collect_cms_articles emits.
-            url = f"https://mutapatimes.com/articles/{slug}.html"
+            url = f"https://mutapatimes.com{pfx}/articles/{slug}.html"
             yield {
                 "title": title,
                 "source": author,
@@ -216,18 +240,19 @@ def _walk_cms_articles():
             }
 
 
-def collect_articles():
+def collect_articles(region="zw"):
     """De-dupe by URL across all sources."""
     seen = set()
     out = []
     # CMS first (richer metadata + we like the /articles/ link wining)
-    for a in _walk_cms_articles():
+    for a in _walk_cms_articles(region):
         if a["url"] in seen:
             continue
         seen.add(a["url"])
         out.append(a)
     # Then news landing JSONs (spotlight + categories)
-    for src in [SPOTLIGHT_FILE] + [os.path.join(DATA_DIR, f"{c}.json")
+    data_dir = DATA_DIR if region == "zw" else os.path.join(DATA_DIR, region)
+    for src in [os.path.join(data_dir, "spotlight.json")] + [os.path.join(data_dir, f"{c}.json")
                                     for c in CATEGORY_FILES]:
         for a in _walk_news_json(src):
             if a["url"] in seen:
@@ -237,13 +262,14 @@ def collect_articles():
     return out
 
 
-def prune_stale_cards(active_url_hashes):
+def prune_stale_cards(active_url_hashes, out_dir=OUT_DIR):
     """Delete any card PNG whose article URL is no longer in the active
-    corpus. Keeps img/cards/news/ tracking the live feed window
+    corpus. Keeps the card folder tracking the live feed window
     (~30 days) instead of growing forever — without this, the repo
-    breaks GitHub Pages' 1 GB site-size cap in ~3 months."""
+    breaks GitHub Pages' 1 GB site-size cap in ~3 months. Scoped to a
+    single region's out_dir so one edition never prunes another's."""
     pruned = 0
-    for path in glob.glob(os.path.join(OUT_DIR, "*.png")):
+    for path in glob.glob(os.path.join(out_dir, "*.png")):
         name = os.path.splitext(os.path.basename(path))[0]
         # Cards we own follow the 12-char-md5 naming convention. Anything
         # else (manual uploads, legacy assets) we leave alone.
@@ -259,10 +285,16 @@ def prune_stale_cards(active_url_hashes):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--region", default="zw",
+                    help="Region edition (default: zw = Zimbabwe at the root)")
+    region = ap.parse_args().region
+    out_dir = card_dir(region)
     print("=== BUILD FEED CARDS ===")
-    os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
 
-    articles = collect_articles()
+    articles = collect_articles(region)
     print(f"  Walked {len(articles)} articles across CMS + spotlight + categories")
 
     rendered = 0
@@ -279,7 +311,7 @@ def main():
             skipped_stale += 1
             continue
         active_hashes.add(card_hash(art["url"]))
-        out_path = os.path.join(OUT_DIR, card_filename(art["url"]))
+        out_path = os.path.join(out_dir, card_filename(art["url"]))
         if os.path.exists(out_path):
             skipped_existing += 1
             continue
@@ -296,7 +328,7 @@ def main():
             print(f"    FAIL {art['title'][:50]}: {e}")
 
     # ── Cleanup pass: delete cards whose article is no longer active ──
-    pruned = prune_stale_cards(active_hashes)
+    pruned = prune_stale_cards(active_hashes, out_dir)
 
     print(f"  Rendered  {rendered} new cards")
     print(f"  Cached    {skipped_existing} existing")
@@ -304,7 +336,7 @@ def main():
     print(f"  Pruned    {pruned} stale card files")
     if failed:
         print(f"  Failed    {failed}")
-    print(f"\n  Output:   {OUT_DIR}")
+    print(f"\n  Output:   {out_dir}")
     print("\n=== DONE ===")
 
 
