@@ -28,13 +28,14 @@
   var SUBSCRIBE_AD_DURATION_MS = 6000;
   var SHOPIFY_AD_EVERY = 6;         // insert a Shopify slide after every N real cards
   var SHOPIFY_AD_DURATION_MS = 6000;
-  var INDEX_URL = "/content/articles/index.json";
-  var FEATURE_AD_URL = "/data/feature-story.json";
+  var mtUrl = window.mtUrl || function (p) { return p; };
+  var INDEX_URL = mtUrl("/content/articles/index.json");
+  var FEATURE_AD_URL = mtUrl("/data/feature-story.json");
   // Curated editorial series promoted at the front of the rail. Each
   // becomes a single highlight that plays through every article in the
   // series with the series colour scheme. Order here = order on the rail.
   var SERIES_KEYS = ["venice-biennale-2026"];
-  function seriesManifestUrl(key) { return "/data/series-" + key + ".json"; }
+  function seriesManifestUrl(key) { return mtUrl("/data/series-" + key + ".json"); }
 
   // Rotating Shopify sponsored slides. Impact campaign 13624.
   // Image URL format: https://a.impactradius-go.com/display-ad/13624-{id}
@@ -553,7 +554,7 @@
       var adHref;
       if (isSubscribeAd) adHref = "/subscribe.html";
       else if (isShopifyAd) adHref = snap.url;
-      else adHref = withHtml(snap.url || ("/articles/" + snap.slug));
+      else adHref = withHtml(snap.url || mtUrl("/articles/" + snap.slug));
       var adWrap = el("div", { class: "story-feature-ad" +
                                        (isShopifyAd ? " story-feature-ad--shopify" : "") });
       var adBg = el("div", { class: "story-feature-ad-bg" });
@@ -648,7 +649,7 @@
       var bottom = el("div", { class: "story-bottom" }, [
         el("a", {
           class: "story-bottom-cta",
-          href: "/articles/" + encodeURIComponent(snap.slug),
+          href: mtUrl("/articles/" + encodeURIComponent(snap.slug)),
           text: "Read the full briefing →",
         }),
       ]);
@@ -873,7 +874,7 @@
             summary: data.summary || "",
             image: data.image || "",
             category: data.category || "",
-            url: data.url || ("/articles/" + data.slug),
+            url: data.url || mtUrl("/articles/" + data.slug),
           };
         }
       })

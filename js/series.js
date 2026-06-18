@@ -28,8 +28,9 @@
       .replace(/'/g, "&#039;");
   }
 
+  var mtUrl = window.mtUrl || function (p) { return p; };
   function articleUrl(slug) {
-    return "/articles/" + encodeURIComponent(slug) + ".html";
+    return mtUrl("/articles/" + encodeURIComponent(slug) + ".html");
   }
 
   // Cache by series key so a page with multiple slots only fetches once.
@@ -41,7 +42,7 @@
     if (manifestPending[key]) { manifestPending[key].push(cb); return; }
     manifestPending[key] = [cb];
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/data/series-" + key + ".json", true);
+    xhr.open("GET", mtUrl("/data/series-" + key + ".json"), true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState !== 4) return;
       var err = null, data = null;

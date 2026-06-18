@@ -7,6 +7,7 @@
  */
 (function () {
   'use strict';
+  var mtUrl = window.mtUrl || function (p) { return p; };
 
   function esc(s) {
     return String(s == null ? '' : s)
@@ -40,7 +41,7 @@
       ? '<span>' + esc(String(feature.read_minutes)) + ' min read</span>'
       : '';
     var dateStr = fmtDate(feature.date);
-    var href = feature.url || ('/articles/' + feature.slug);
+    var href = feature.url || mtUrl('/articles/' + feature.slug);
     return (
       '<aside class="feature-story-banner' + (isCompact ? ' feature-story-banner--compact' : '') + '">' +
         '<div class="feature-story-eyebrow">' + esc(label) + '</div>' +
@@ -64,7 +65,7 @@
   function loadAndRender() {
     var slots = document.querySelectorAll('[id^="feature-story-slot"]');
     if (!slots.length) return;
-    var url = '/data/feature-story.json';
+    var url = mtUrl('/data/feature-story.json');
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function () {

@@ -13,6 +13,7 @@
  */
 (function () {
   'use strict';
+  var mtUrl = window.mtUrl || function (p) { return p; };
 
   function el(tag, attrs, children) {
     var n = document.createElement(tag);
@@ -113,7 +114,7 @@
   function renderArticle(a, idx) {
     var card = el('article', { class: 'city-article' + (idx % 2 ? ' city-article--alt' : '') });
     var h3 = el('h3', { class: 'city-article-title' });
-    h3.appendChild(el('a', { href: '/articles/' + a.slug + '.html', text: a.title }));
+    h3.appendChild(el('a', { href: mtUrl('/articles/' + a.slug + '.html'), text: a.title }));
     card.appendChild(h3);
     if (a.summary) {
       card.appendChild(el('p', { class: 'city-article-summary', text: a.summary.slice(0, 240) }));
@@ -204,7 +205,7 @@
     var container = document.getElementById('cityArticles');
     if (!main || !container) return;
     var slug = main.getAttribute('data-city-slug');
-    fetch('/content/articles/index.json', { cache: 'no-cache' })
+    fetch(mtUrl('/content/articles/index.json'), { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         if (!Array.isArray(data) || !data.length) return;

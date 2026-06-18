@@ -28,6 +28,7 @@
  */
 (function () {
   'use strict';
+  var mtUrl = window.mtUrl || function (p) { return p; };
 
   function detectPage() {
     var bodyKey = document.body.getAttribute('data-sponsor-page');
@@ -203,7 +204,7 @@
 
   // ─── Boot ──────────────────────────────────────────────────────────
 
-  fetch('/data/sponsors.json', { cache: 'no-store' })
+  fetch(mtUrl('/data/sponsors.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d || !Array.isArray(d.sponsors) || !d.sponsors.length) return;

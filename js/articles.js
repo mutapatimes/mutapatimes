@@ -7,8 +7,13 @@
 (function () {
   var GITHUB_REPO = "mutapatimes/mutapatimes";
   var GITHUB_BRANCH = "main";
-  var ARTICLES_API = "https://api.github.com/repos/" + GITHUB_REPO + "/contents/content/articles?ref=" + GITHUB_BRANCH;
-  var ARTICLES_RAW = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/content/articles/";
+  // Multi-edition: region.js sets these; identity / "content" at the ZW root,
+  // "content/za" under /za. ARTICLES_PATH stays relative (served tree mirrors
+  // under /za); only the GitHub source URLs take the content dir.
+  var mtUrl = window.mtUrl || function (p) { return p; };
+  var mtContentDir = window.MT_CONTENT_DIR || "content";
+  var ARTICLES_API = "https://api.github.com/repos/" + GITHUB_REPO + "/contents/" + mtContentDir + "/articles?ref=" + GITHUB_BRANCH;
+  var ARTICLES_RAW = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/" + mtContentDir + "/articles/";
   var ARTICLES_PATH = "content/articles/";
 
   // Simple frontmatter parser: splits --- delimited YAML header from markdown body
@@ -344,7 +349,7 @@
         ? '<span class="article-card-category">' + escapeHtml(a.category) + '</span>'
         : '';
       var cardCls = 'article-card article-card--text' + (a.longform ? ' is-longform' : '');
-      html += '<a href="/articles/' + encodeURIComponent(a.slug) + '" class="' + cardCls + '">';
+      html += '<a href="' + mtUrl('/articles/' + encodeURIComponent(a.slug)) + '" class="' + cardCls + '">';
       html += '<div class="article-card-body">';
       if (a.longform) {
         html += '<span class="long-read-badge">Long Read</span>';

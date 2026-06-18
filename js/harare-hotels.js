@@ -24,7 +24,8 @@
   var SLOTS = document.querySelectorAll('[data-hotels-city], [data-harare-hotels]');
   if (!SLOTS.length) return;
 
-  var FEED_URL = '/data/hotels.json';
+  var mtUrl = window.mtUrl || function (p) { return p; };
+  var FEED_URL = mtUrl('/data/hotels.json');
   var AUTOPLAY_MS = 5000;
   var GAP = 16; // keep in sync with .hh-rail-track gap in main.css
   var REDUCED = window.matchMedia &&

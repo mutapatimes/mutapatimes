@@ -4,6 +4,7 @@
  */
 (function () {
   'use strict';
+  var mtUrl = window.mtUrl || function (p) { return p; };
 
   function el(tag, attrs, children) {
     var n = document.createElement(tag);
@@ -120,17 +121,17 @@
     }
   }
 
-  fetch('/data/markets-indices.json', { cache: 'no-store' })
+  fetch(mtUrl('/data/markets-indices.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderIndices(d); })
     .catch(function () {});
 
-  fetch('/data/commodities.json', { cache: 'no-store' })
+  fetch(mtUrl('/data/commodities.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderCommodities(d); })
     .catch(function () {});
 
-  fetch('/data/zse-ticker.json', { cache: 'no-store' })
+  fetch(mtUrl('/data/zse-ticker.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderZse(d); })
     .catch(function () {});

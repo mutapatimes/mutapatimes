@@ -6,6 +6,7 @@
  */
 (function () {
   'use strict';
+  var mtUrl = window.mtUrl || function (p) { return p; };
 
   var tickerWrap = document.getElementById('sw-ticker');
   var tickerTrack = document.getElementById('sw-ticker-track');
@@ -15,7 +16,7 @@
 
   function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
-  fetch('/feed.xml', { cache: 'no-cache' })
+  fetch(mtUrl('/feed.xml'), { cache: 'no-cache' })
     .then(function (r) { return r.text(); })
     .then(function (xml) {
       var doc = new DOMParser().parseFromString(xml, 'application/xml');

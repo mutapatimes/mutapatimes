@@ -3,6 +3,12 @@
  * Single-page news aggregator: all Zimbabwe news, sorted by newest
  * Pulls from multiple Google News RSS feeds for broad coverage
  */
+// Multi-edition helpers. region.js (loaded first) sets window.mtUrl and
+// window.MT_CONTENT_DIR. At the Zimbabwe root these are identity / "content"
+// so behaviour is unchanged; under /za they point the CMS reader at the
+// content/za source folder. Fallbacks keep this safe if region.js is absent.
+var mtUrl = window.mtUrl || function (p) { return p; };
+var mtContentDir = window.MT_CONTENT_DIR || "content";
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
   RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
@@ -384,9 +390,9 @@ function filterByCategory(category) {
 // ============================================================
 function loadCmsArticles(callback) {
   var apiUrl = "https://api.github.com/repos/" + MUTAPA_CONFIG.GITHUB_REPO +
-    "/contents/content/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
+    "/contents/" + mtContentDir + "/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
   var rawBase = "https://raw.githubusercontent.com/" + MUTAPA_CONFIG.GITHUB_REPO +
-    "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/content/articles/";
+    "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/" + mtContentDir + "/articles/";
 
   $.ajax({
     type: "GET",
@@ -2065,7 +2071,7 @@ function loadCmsSpotlightArticles(container) {
   }
 
   var apiUrl = "https://api.github.com/repos/" + MUTAPA_CONFIG.GITHUB_REPO
-    + "/contents/content/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
+    + "/contents/" + mtContentDir + "/articles?ref=" + MUTAPA_CONFIG.GITHUB_BRANCH;
 
   $.getJSON(apiUrl, function(entries) {
     if (!entries || !entries.length) return;
@@ -2080,7 +2086,7 @@ function loadCmsSpotlightArticles(container) {
     var pending = mdFiles.length;
     var spotlightItems = [];
     var rawBase = "https://raw.githubusercontent.com/" + MUTAPA_CONFIG.GITHUB_REPO
-      + "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/content/articles/";
+      + "/" + MUTAPA_CONFIG.GITHUB_BRANCH + "/" + mtContentDir + "/articles/";
 
     for (var j = 0; j < mdFiles.length; j++) {
       (function(filename) {
