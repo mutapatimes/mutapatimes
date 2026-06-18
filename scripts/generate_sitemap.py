@@ -1,13 +1,36 @@
 #!/usr/bin/env python3
 """Auto-generate sitemap.xml and news-sitemap.xml for The Mutapa Times."""
+import argparse
 import glob
 import html
 import os
 import re
+import sys
 from datetime import datetime, timezone, timedelta
 from xml.sax.saxutils import escape
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from regions import get_region as _get_region
+except ImportError:
+    _get_region = None
+
 BASE_URL = "https://mutapatimes.com"
+
+
+def region_static_pages(region):
+    """Static pages for a non-root edition: home + verticals + its city desks.
+    Global pages (authors, about, diaspora, games, moving-to-*) live only in
+    the root sitemap."""
+    pages = [
+        ("", 1.0, "hourly"), ("articles", 0.9, "daily"), ("economy", 0.8, "daily"),
+        ("fx", 0.9, "daily"), ("markets", 0.9, "daily"), ("weather", 0.9, "daily"),
+        ("property", 0.8, "daily"), ("jobs", 0.9, "hourly"),
+    ]
+    if _get_region:
+        for c in _get_region(region).get("cities", []):
+            pages.append((f"{c['slug']}-news", 0.9, "daily"))
+    return pages
 
 STATIC_PAGES = [
     ("", 1.0, "hourly"),
@@ -65,7 +88,7 @@ def extract_frontmatter(path):
     return slug, date_str, title, category, is_draft, source_type
 
 
-def generate():
+def generate(region="zw"):
     now = datetime.now(timezone.utc)
     now_str = now.strftime("%Y-%m-%dT%H:%M:%S+00:00")
     two_days_ago = now - timedelta(days=2)
@@ -76,12 +99,37 @@ def generate():
     # Discover/News exposure and stays in the sitemap.
     NOINDEX_AGE_DAYS = 30
     noindex_cutoff = now - timedelta(days=NOINDEX_AGE_DAYS)
+
+    # Region wiring. Zimbabwe (root) keeps the full sitemap incl. global pages
+    # (authors, diaspora, moving-to-*); other editions get a focused sitemap of
+    # their own home + verticals + city desks + articles/news, written under
+    # /<region>/. Global pages stay only in the root sitemap.
+    pfx = "" if region == "zw" else f"/{region}"
+    repo_root = os.path.join(os.path.dirname(__file__), "..")
+    if region == "zw":
+        static_pages = STATIC_PAGES
+        src_articles = os.path.join(repo_root, "content", "articles")
+        src_wires = os.path.join(repo_root, "content", "wires")
+        news_dir = os.path.join(repo_root, "news")
+        include_global = True
+        out_sitemap = os.path.join(repo_root, "sitemap.xml")
+        out_news = os.path.join(repo_root, "news-sitemap.xml")
+    else:
+        static_pages = region_static_pages(region)
+        src_articles = os.path.join(repo_root, "content", region, "articles")
+        src_wires = os.path.join(repo_root, "content", region, "wires")
+        news_dir = os.path.join(repo_root, region, "news")
+        include_global = False
+        out_sitemap = os.path.join(repo_root, region, "sitemap.xml")
+        out_news = os.path.join(repo_root, region, "news-sitemap.xml")
+        os.makedirs(os.path.join(repo_root, region), exist_ok=True)
+
     urls = []
     news_urls = []
 
     # Static pages
-    for page, priority, freq in STATIC_PAGES:
-        loc = f"{BASE_URL}/{page}" if page else f"{BASE_URL}/"
+    for page, priority, freq in static_pages:
+        loc = f"{BASE_URL}{pfx}/{page}" if page else f"{BASE_URL}{pfx}/"
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
@@ -95,11 +143,8 @@ def generate():
     # (content/wires). Both produce identical /articles/{slug}.html
     # output via build_static_pages.py, so they belong in the same
     # sitemap entries.
-    repo_root = os.path.join(os.path.dirname(__file__), "..")
-    articles_dir = os.path.join(repo_root, "content", "articles")
-    wires_dir = os.path.join(repo_root, "content", "wires")
-    md_paths = sorted(glob.glob(os.path.join(articles_dir, "*.md"))
-                      + glob.glob(os.path.join(wires_dir, "*.md")))
+    md_paths = sorted(glob.glob(os.path.join(src_articles, "*.md"))
+                      + glob.glob(os.path.join(src_wires, "*.md")))
     for md_path in md_paths:
         slug, date_str, title, category, is_draft, source_type = extract_frontmatter(md_path)
         if not slug or slug == "index":
@@ -129,7 +174,7 @@ def generate():
         # the no-extension URL, sees its canonical points elsewhere,
         # and flags the crawled URL as "Alternative page with proper
         # canonical tag" (135-page batch we saw in Search Console).
-        loc = f"{BASE_URL}/articles/{slug}.html"
+        loc = f"{BASE_URL}{pfx}/articles/{slug}.html"
         urls.append(
             f"  <url>\n"
             f"    <loc>{loc}</loc>\n"
@@ -164,7 +209,7 @@ def generate():
 
     # Author pages — one entry per active author in content/authors/.
     authors_dir = os.path.join(repo_root, "content", "authors")
-    for md_path in sorted(glob.glob(os.path.join(authors_dir, "*.md"))):
+    for md_path in (sorted(glob.glob(os.path.join(authors_dir, "*.md"))) if include_global else []):
         slug = os.path.splitext(os.path.basename(md_path))[0]
         # Reuse the frontmatter parser; it gives us is_draft via the
         # `active: false` convention if we read the active flag here.
@@ -187,7 +232,6 @@ def generate():
 
     # News landing pages (auto-generated by build_news_pages.py).
     # Filename format: {YYYY-MM-DD}-{slug}-{hash}.html
-    news_dir = os.path.join(os.path.dirname(__file__), "..", "news")
     if os.path.isdir(news_dir):
         for path in sorted(glob.glob(os.path.join(news_dir, "*.html"))):
             slug = os.path.splitext(os.path.basename(path))[0]
@@ -222,7 +266,7 @@ def generate():
                 pass
             if not news_title:
                 news_title = m.group(2).replace("-", " ").strip().title()
-            loc = f"{BASE_URL}/news/{slug}"
+            loc = f"{BASE_URL}{pfx}/news/{slug}"
             urls.append(
                 f"  <url>\n"
                 f"    <loc>{loc}</loc>\n"
@@ -255,7 +299,7 @@ def generate():
     # Not in main nav (deliberate SEO orphan-by-design) but must be in the
     # sitemap or Google will not find them.
     uk_guide_dir = os.path.join(repo_root, "moving-to-zimbabwe")
-    if os.path.isdir(uk_guide_dir):
+    if include_global and os.path.isdir(uk_guide_dir):
         # Hub page first, then individual guides in stable filename order.
         hub = os.path.join(uk_guide_dir, "index.html")
         if os.path.isfile(hub):
@@ -287,10 +331,9 @@ def generate():
         + "\n".join(urls)
         + "\n</urlset>\n"
     )
-    out = os.path.join(os.path.dirname(__file__), "..", "sitemap.xml")
-    with open(out, "w", encoding="utf-8") as f:
+    with open(out_sitemap, "w", encoding="utf-8") as f:
         f.write(sitemap)
-    print(f"sitemap.xml written with {len(urls)} URLs")
+    print(f"{out_sitemap} written with {len(urls)} URLs")
 
     # Write Google News sitemap
     news_sitemap = (
@@ -300,11 +343,13 @@ def generate():
         + "\n".join(news_urls)
         + "\n</urlset>\n"
     )
-    news_out = os.path.join(os.path.dirname(__file__), "..", "news-sitemap.xml")
-    with open(news_out, "w", encoding="utf-8") as f:
+    with open(out_news, "w", encoding="utf-8") as f:
         f.write(news_sitemap)
-    print(f"news-sitemap.xml written with {len(news_urls)} URLs")
+    print(f"{out_news} written with {len(news_urls)} URLs")
 
 
 if __name__ == "__main__":
-    generate()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--region", default="zw",
+                    help="Region edition (default: zw = Zimbabwe at the root)")
+    generate(ap.parse_args().region)
