@@ -115,7 +115,7 @@ def render_headline_card(headline, source, output_path, color_idx=0, card_h=CARD
 
     draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
     draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((60, 124), "Zimbabwe outside-in",
+    draw.text((60, 124), "Southern Africa outside-in",
               font=source_font, fill=CARD_FG_MUTED)
 
     available_width = CARD_W - 120

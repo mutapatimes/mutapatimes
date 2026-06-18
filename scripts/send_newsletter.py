@@ -839,7 +839,112 @@ def build_person_of_day_html(person):
     )
 
 
-def build_html(category_articles, wordle=None, tsumo=None):
+def load_recent_originals(n=3):
+    """Newest original Mutapa Times articles, for the newsletter lead.
+
+    The wire roundup comes from data/*.json; our own reporting lives in
+    content/articles/index.json (source_type == 'original'). We feature the
+    freshest originals at the top so our journalism is prioritised over the
+    aggregated headlines."""
+    path = os.path.join("content", "articles", "index.json")
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except Exception:
+        return []
+    items = data if isinstance(data, list) else data.get("articles", [])
+    out = []
+    for a in items:
+        if (a.get("source_type") or "").lower() != "original":
+            continue
+        if a.get("draft"):
+            continue
+        slug = a.get("slug") or ""
+        if not slug:
+            continue
+        out.append({
+            "title": a.get("title", ""),
+            "url": f"{SITE_URL}/articles/{slug}.html",
+            "summary": (a.get("summary") or "").strip(),
+            "category": a.get("category") or "",
+            "date": a.get("date") or "",
+        })
+    out.sort(key=lambda x: x["date"], reverse=True)
+    return out[:n]
+
+
+def build_originals_html(originals):
+    """Top section featuring our own newest reporting."""
+    if not originals:
+        return ""
+    items = ""
+    for a in originals:
+        title = escape_html(a["title"])
+        url = escape_html(a["url"])
+        meta_parts = [p for p in [escape_html(a.get("category", "")), format_date(a.get("date", ""))] if p]
+        meta_line = " &middot; ".join(meta_parts)
+        summary = escape_html(a["summary"][:180] + ("..." if len(a["summary"]) > 180 else "")) if a["summary"] else ""
+        summary_html = (
+            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;'
+            f'color:#4a4a44;margin:5px 0 0;line-height:1.5;">{summary}</p>'
+        ) if summary else ""
+        meta_html = (
+            '<p style="font-family:Helvetica,Arial,sans-serif;font-size:10px;'
+            'color:#8b8678;margin:4px 0 0;text-transform:uppercase;'
+            f'letter-spacing:0.05em;">{meta_line}</p>'
+        ) if meta_line else ""
+        items += (
+            '<tr><td style="padding:12px 20px;background:#ffffff;'
+            'border-bottom:1px solid #e8e6df;">'
+            f'<a href="{url}" target="_blank" '
+            "style=\"font-family:Georgia,'Times New Roman',serif;font-size:16px;"
+            'font-weight:700;color:#121212;text-decoration:none;line-height:1.3;">'
+            f'{title}</a>{summary_html}{meta_html}</td></tr>'
+        )
+    return (
+        '<!-- Newsroom originals -->'
+        '<tr><td style="padding:16px 20px 0;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+        '<td style="border-top:2px solid #c41e1e;padding-top:8px;">'
+        '<h2 style="font-family:Georgia,\'Times New Roman\',serif;font-size:16px;'
+        'font-weight:700;color:#c41e1e;margin:0 0 2px;text-transform:uppercase;'
+        'letter-spacing:0.04em;">From our newsroom</h2>'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;'
+        'color:#8b8678;margin:0;">New original reporting from The Mutapa Times</p>'
+        '</td></tr></table></td></tr>'
+        f'{items}'
+    )
+
+
+def build_academy_ad_html():
+    """House promo announcing the Mutapa Times Academy launch."""
+    return (
+        '<!-- House ad: Mutapa Times Academy -->'
+        '<tr><td style="padding:8px 20px 20px;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        'style="background:#faf7ef;border:1px solid #e6d9b8;border-radius:10px;">'
+        '<tr><td style="padding:20px 22px;">'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;'
+        'letter-spacing:0.14em;text-transform:uppercase;color:#8a6a1c;margin:0 0 6px;">'
+        'Now open &middot; The Mutapa Times Academy</p>'
+        '<h3 style="font-family:Georgia,\'Times New Roman\',serif;font-size:19px;'
+        'font-weight:700;color:#121212;margin:0 0 8px;line-height:1.25;">'
+        'We have launched our journalism academy</h3>'
+        '<p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#4a4a44;'
+        'line-height:1.55;margin:0 0 14px;">'
+        'Learn the craft of journalism at your own pace: 18 modules, real exercises, '
+        'a verifiable certificate and the chance to earn a byline. Open to everyone, '
+        'with a dedicated track for university and journalism students.</p>'
+        '<a href="' + SITE_URL + '/academy/?utm_source=newsletter&utm_medium=email&utm_campaign=academy_launch" '
+        'target="_blank" style="display:inline-block;padding:10px 24px;'
+        'font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;'
+        'text-transform:uppercase;letter-spacing:0.06em;color:#ffffff;background:#b08023;'
+        'text-decoration:none;border-radius:4px;">Explore the Academy</a>'
+        '</td></tr></table></td></tr>'
+    )
+
+
+def build_html(category_articles, wordle=None, tsumo=None, originals=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
     date_display = today.strftime("%A, %B %d, %Y")
@@ -859,6 +964,8 @@ def build_html(category_articles, wordle=None, tsumo=None):
     wordle_html = build_wordle_html(wordle)
     stories_rail_html = build_stories_rail_html()
     tsumo_html = build_tsumo_html(tsumo)
+    originals_html = build_originals_html(originals)
+    academy_ad_html = build_academy_ad_html()
 
     # Build category article rows
     rows = ""
@@ -910,7 +1017,7 @@ def build_html(category_articles, wordle=None, tsumo=None):
 
     # WhatsApp share URL for the general Mutapa Times share in footer
     general_wa_text = (
-        "\U0001f4f0 The Mutapa Times \u2014 Zimbabwe outside-in.\n\n"
+        "\U0001f4f0 The Mutapa Times \u2014 Southern Africa outside-in.\n\n"
         "Curated news from foreign press, delivered Mon/Wed/Sat.\n\n"
         "\U0001f1ff\U0001f1fc Subscribe free: https://mutapatimes.com"
     )
@@ -980,7 +1087,7 @@ def build_html(category_articles, wordle=None, tsumo=None):
                         font-size:11px;color:#8b8678;
                         margin:6px 0 0;text-transform:uppercase;
                         letter-spacing:0.18em;">
-                Zimbabwe outside-in
+                Southern Africa outside-in
               </p>
             </td>
           </tr>
@@ -1010,6 +1117,8 @@ def build_html(category_articles, wordle=None, tsumo=None):
           </tr>
 
           {stories_rail_html}
+
+          {originals_html}
 
           {wordle_html}
 
@@ -1050,6 +1159,8 @@ def build_html(category_articles, wordle=None, tsumo=None):
               </a>
             </td>
           </tr>
+
+          {academy_ad_html}
 
           <!-- Share with a friend -->
           <tr>
@@ -1229,8 +1340,12 @@ def main():
     tsumo = get_tsumo_of_the_day()
     print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
 
+    # Prioritise our own newest reporting at the top of the email.
+    originals = load_recent_originals(3)
+    print(f"  Featuring {len(originals)} newsroom originals at the top")
+
     print("Building email HTML...")
-    html, total_count = build_html(top, wordle=wordle, tsumo=tsumo)
+    html, total_count = build_html(top, wordle=wordle, tsumo=tsumo, originals=originals)
 
     # Dynamic subject line: "Monday morning briefing: 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)

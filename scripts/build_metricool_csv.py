@@ -199,7 +199,7 @@ NEWSLETTER_ANGLES = [
     },
     {
         "key": "diaspora",
-        "headline": "Zimbabwe outside-in",
+        "headline": "Southern Africa outside-in",
         "core": (
             "Sell belonging. The pitch: 'For Zimbabweans living abroad — in "
             "the UK, US, SA, Australia. Stay connected to Harare, Bulawayo, "
@@ -357,7 +357,7 @@ def render_card(headline, source, output_path, color_idx=0):
 
     # Masthead
     draw.text((60, 70), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((60, 124), "Zimbabwe outside-in", font=source_font, fill=CARD_FG_MUTED)
+    draw.text((60, 124), "Southern Africa outside-in", font=source_font, fill=CARD_FG_MUTED)
 
     # Headline (wrapped, vertically centered in the middle band)
     available_width = CARD_W - 120
@@ -493,7 +493,7 @@ def gemini_carousel_text(art):
     desc = (art.get("description") or "").strip()
     headline = (art.get("title") or "").strip()
     fallback_context = _shorten_to_sentences(desc, 240) or headline
-    fallback_takeaway = "This is why we cover Zimbabwe outside-in — for the diaspora that still cares what happens at home."
+    fallback_takeaway = "This is why we cover Southern Africa outside-in — for the diaspora that still cares what happens at home."
 
     if not GEMINI_API_KEY:
         return {"context": fallback_context, "takeaway": fallback_takeaway}

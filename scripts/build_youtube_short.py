@@ -586,7 +586,7 @@ def _yt_description(src, script):
     parts = [
         script,
         "",
-        "The Mutapa Times — Zimbabwe outside-in.",
+        "The Mutapa Times — Southern Africa outside-in.",
         "https://mutapatimes.com",
         "",
         "#Zimbabwe #" + src["category"].replace(" ", ""),

@@ -309,7 +309,7 @@ def sponsored_article(title: str, deck: str, slug: str, hero_img: str,
 <div class="paper">
   <a href="/zb-demo/" class="title-link">
     <div class="titleDiv"><h1 class="title notranslate">THE MUTAPA TIMES</h1></div>
-    <h4 class="sub notranslate">Zimbabwe outside-in</h4>
+    <h4 class="sub notranslate">Southern Africa outside-in</h4>
   </a>
   <nav id="mainNav">
       {nav_pees}

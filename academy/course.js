@@ -31,7 +31,7 @@ window.COURSE = {
               h: "Proximity is not only distance",
               body: [
                 "For a Mutapa Times reader in London or Johannesburg, proximity is emotional and financial as much as geographic. A change to how the diaspora sends money home is close to home, even from three thousand miles away.",
-                "Always ask: why does this matter to a Zimbabwean reading us today?"
+                "Always ask: why does this matter to a Southern African reader today?"
               ]
             }
           ],
@@ -41,7 +41,7 @@ window.COURSE = {
               q: "Which story is most newsworthy for a Mutapa Times reader living in the UK?",
               options: [
                 "A new shopping centre opening in a town they have no link to",
-                "A change to how diaspora Zimbabweans can send money home",
+                "A change to how diaspora Zambians can send money home",
                 "A weather forecast for a country they do not live in",
                 "A sports result from an unrelated league"
               ],
@@ -153,14 +153,14 @@ window.COURSE = {
             {
               h: "Who we write for",
               body: [
-                "Mutapa Times serves Zimbabweans at home and across the diaspora. The reader is intelligent, often homesick, and wants Zimbabwe taken seriously, not explained to outsiders.",
-                "We do not translate Zimbabwe for a foreign audience. We report it for our own."
+                "Mutapa Times serves Southern Africans at home and across the diaspora. The reader is intelligent, often homesick, and wants the region taken seriously, not explained to outsiders.",
+                "We do not translate Southern Africa for a foreign audience. We report it for our own."
               ]
             },
             {
               h: "A good Mutapa Times story",
               body: [
-                "It is a story only we are placed to tell well: grounded in real detail, fair, and useful to a Zimbabwean reader. It avoids the generic wire angle and finds the specific.",
+                "It is a story only we are placed to tell well: grounded in real detail, fair, and useful to a Southern African reader. It avoids the generic wire angle and finds the specific.",
                 "If a story could run anywhere with the country name swapped out, it is not yet a Mutapa Times story."
               ]
             }
@@ -170,13 +170,13 @@ window.COURSE = {
               type: "mcq",
               q: "Which framing fits the Mutapa Times voice best?",
               options: [
-                "Zimbabwe, a landlocked nation in southern Africa, is a place where...",
+                "Botswana, a landlocked nation in southern Africa, is a place where...",
                 "Diaspora families are bracing for higher fees on the money they send home",
-                "For those unfamiliar with Zimbabwe, here is some background",
+                "For those unfamiliar with Botswana, here is some background",
                 "Experts say the situation in the African country is complex"
               ],
               answer: 1,
-              explain: "We write for Zimbabweans, not for outsiders needing the country explained. Lead with what affects the reader."
+              explain: "We write for Southern Africans, not for outsiders needing the region explained. Lead with what affects the reader."
             },
             {
               type: "mcq",
@@ -196,7 +196,7 @@ window.COURSE = {
           id: "ethics",
           title: "Ethics and responsibility",
           minutes: 6,
-          intro: "Accuracy, fairness, and minimising harm, with the extra duty of reporting Zimbabwe well.",
+          intro: "Accuracy, fairness, and minimising harm, with the extra duty of reporting Southern Africa well.",
           cards: [
             {
               h: "The three duties",
@@ -206,7 +206,7 @@ window.COURSE = {
               ]
             },
             {
-              h: "The extra weight when reporting Zimbabwe",
+              h: "The extra weight when reporting Southern Africa",
               body: [
                 "Official information can be thin or contested, and getting it wrong can put real people at risk. That raises the bar for verification and for care with names and identifying detail.",
                 "When in doubt, slow down and check again."
@@ -307,13 +307,13 @@ window.COURSE = {
               type: "mcq",
               q: "Which opening best fits the Mutapa Times voice?",
               options: [
-                "Zimbabwe, a landlocked country in southern Africa, is a place where...",
+                "Malawi, a landlocked country in southern Africa, is a place where...",
                 "Diaspora families face higher fees on the money they send home from next month",
-                "For readers unfamiliar with Zimbabwe, some background first",
+                "For readers unfamiliar with Malawi, some background first",
                 "Experts say the African nation faces complex challenges"
               ],
               answer: 1,
-              explain: "We write for Zimbabweans, leading with what affects the reader, not explaining the country to outsiders."
+              explain: "We write for Southern Africans, leading with what affects the reader, not explaining the region to outsiders."
             },
             {
               type: "mcq",
@@ -621,7 +621,7 @@ window.COURSE = {
             {
               h: "What holds a newsletter together",
               body: [
-                "A clear niche, a voice readers recognise, a cadence you can sustain, and trust earned by being accurate and consistent. For a Zimbabwean or diaspora audience, the edge is the specific story told from the inside, not the generic angle.",
+                "A clear niche, a voice readers recognise, a cadence you can sustain, and trust earned by being accurate and consistent. For a Southern African or diaspora audience, the edge is the specific story told from the inside, not the generic angle.",
                 "Pick a rhythm you can keep for a year, not one you can keep for a fortnight."
               ]
             }
@@ -1244,7 +1244,7 @@ window.COURSE = {
               type: "write",
               q: "Design a funding model for your publication.",
               brief: [
-                "Imagine you are launching a small Zimbabwean or diaspora publication. In a few sentences, describe how it would fund itself.",
+                "Imagine you are launching a small Southern African or diaspora publication. In a few sentences, describe how it would fund itself.",
                 "Cover: which models you would use, why they fit your readers, and one thing you would do so readers who cannot pay are not shut out."
               ],
               checklist: [
@@ -2014,12 +2014,12 @@ window.COURSE = {
           id: "region-southern",
           title: "Southern Africa",
           minutes: 6,
-          intro: "South Africa to Zimbabwe: the continent's largest media hub, and our own backyard.",
+          intro: "South Africa to Zambia: the continent's largest media hub, and our own backyard.",
           cards: [
             {
               h: "The lay of the land",
               body: [
-                "Southern Africa includes South Africa, Zimbabwe, Zambia, Botswana, Namibia and Mozambique. English is widely used in media across much of the region, alongside Portuguese in Mozambique and many indigenous languages. The regional bloc is SADC.",
+                "Southern Africa includes South Africa, Zambia, Botswana, Namibia, Malawi and Mozambique. English is widely used in media across much of the region, alongside Portuguese in Mozambique and many indigenous languages. The regional bloc is SADC.",
                 "Press freedom varies: Namibia ranks among the freest in the world, while others are more constrained."
               ]
             },
@@ -2027,7 +2027,7 @@ window.COURSE = {
               h: "Media landscape",
               body: [
                 "South Africa, centred on Johannesburg, is the continent's largest media hub, with titles like Daily Maverick, Mail & Guardian and City Press, and the most diverse coverage in one continental review. South African media cover the rest of Africa relatively well.",
-                "Smaller neighbours get less attention. The regional diaspora, including Zimbabweans across Southern Africa and beyond, is a rich, under-told beat, and the home patch of The Mutapa Times."
+                "Smaller neighbours get less attention. The regional diaspora, spread across Southern Africa and beyond, is a rich, under-told beat, and the home patch of The Mutapa Times."
               ]
             }
           ],
@@ -2052,7 +2052,7 @@ window.COURSE = {
               pairs: [
                 { a: "South Africa", b: "Largest media hub, centred on Johannesburg" },
                 { a: "Mozambique", b: "Portuguese-speaking" },
-                { a: "Zimbabwe", b: "Home patch of The Mutapa Times" },
+                { a: "Zambia", b: "Copper-driven economy and a lively English-language press" },
                 { a: "Namibia", b: "Among the world's freest press" }
               ],
               explain: "Even one region holds many languages, histories and media systems. Specifics beat generalisations."
@@ -2286,7 +2286,7 @@ window.COURSE = {
           id: "reporting-from-distance",
           title: "Reporting from a distance",
           minutes: 6,
-          intro: "Practical methods for diaspora writers covering Zimbabwe remotely, and the limits to respect.",
+          intro: "Practical methods for diaspora writers covering home remotely, and the limits to respect.",
           cards: [
             {
               h: "Methods that work remotely",
@@ -2306,7 +2306,7 @@ window.COURSE = {
           exercises: [
             {
               type: "mcq",
-              q: "You are in Manchester reporting on an event in Harare you did not witness. How should you describe it?",
+              q: "You are in Manchester reporting on an event in Lusaka you did not witness. How should you describe it?",
               options: [
                 "As if you were there, for impact",
                 "With clear attribution to people and footage you verified",
@@ -2490,7 +2490,7 @@ window.COURSE = {
               q: "Which is the stronger lede?",
               options: [
                 "At a meeting held on Tuesday, a committee convened to discuss various matters relating to crypto policy",
-                "Zimbabwe will require crypto firms to register yearly and pay US$500, or face criminal charges"
+                "Zambia will require crypto firms to register yearly and pay US$500, or face criminal charges"
               ],
               answer: 1,
               explain: "The second leads with the news and who it affects. The first buries it under process."
@@ -2500,7 +2500,7 @@ window.COURSE = {
               q: "Write the lede.",
               brief: [
                 "Write the opening sentence of a news story from these facts. Lead with what matters most. Under 35 words, active voice.",
-                "Facts: Zimbabwe's authorities have issued the country's first crypto rules. Firms that buy, sell or hold crypto must register yearly with the Financial Intelligence Unit and pay US$500. Operating without registering is now a criminal offence."
+                "Facts: Zambia's authorities have issued the country's first crypto rules. Firms that buy, sell or hold crypto must register yearly with the Financial Intelligence Unit and pay US$500. Operating without registering is now a criminal offence."
               ],
               checklist: [
                 "Does it lead with the new rules, not the date or who issued them?",
@@ -2508,7 +2508,7 @@ window.COURSE = {
                 "Is it active voice and concrete?",
                 "Is it accurate to the facts, inventing nothing?"
               ],
-              model: "Zimbabwe will require every crypto business to register each year and pay US$500, or face criminal charges, under the country's first rules for the sector.",
+              model: "Zambia will require every crypto business to register each year and pay US$500, or face criminal charges, under the country's first rules for the sector.",
               exerciseId: "lede-crypto-1"
             },
             {
@@ -2517,11 +2517,11 @@ window.COURSE = {
               leftLabel: "Weak",
               rightLabel: "Strong",
               cards: [
-                { text: "Zimbabwe will require crypto firms to register yearly or face criminal charges.", side: "right" },
+                { text: "Zambia will require crypto firms to register yearly or face criminal charges.", side: "right" },
                 { text: "A meeting was held on Tuesday to discuss a number of important matters.", side: "left" },
                 { text: "Diaspora families face higher fees to send money home from next month.", side: "right" },
                 { text: "It should be noted that the committee, which met recently, reached decisions.", side: "left" },
-                { text: "Power cuts will lengthen to 18 hours a day across Harare, the utility says.", side: "right" }
+                { text: "Power cuts will lengthen to 18 hours a day across Lusaka, the utility says.", side: "right" }
               ],
               explain: "Strong ledes lead with the news and who it affects. Weak ones bury it under process."
             }
@@ -2663,7 +2663,7 @@ window.COURSE = {
               q: "Which is the stronger lede?",
               options: [
                 "At a meeting held on Tuesday, a committee convened to discuss various matters",
-                "Zimbabwe will require crypto firms to register yearly and pay US$500, or face charges"
+                "Zambia will require crypto firms to register yearly and pay US$500, or face charges"
               ],
               answer: 1,
               explain: "The second leads with the news and who it affects."
@@ -3052,7 +3052,7 @@ window.COURSE = {
                 "Does it say why you are placed to write it?",
                 "Is it clearly a Mutapa Times story, not a generic one?"
               ],
-              model: "Hook: Zimbabweans in the UK are quietly switching to crypto to send money home as bank fees climb. Why now: new registration rules just brought crypto firms under formal oversight, changing the calculus for senders. Why me: I send money home monthly and have spoken to three families and two transfer agents about the shift. Why Mutapa Times: this is a diaspora money story told from the inside, not explained to outsiders. The piece would run about 900 words, with two case studies and a transfer-cost comparison.",
+              model: "Hook: Southern Africans in the UK are quietly switching to crypto to send money home as bank fees climb. Why now: new registration rules just brought crypto firms under formal oversight, changing the calculus for senders. Why me: I send money home monthly and have spoken to three families and two transfer agents about the shift. Why Mutapa Times: this is a diaspora money story told from the inside, not explained to outsiders. The piece would run about 900 words, with two case studies and a transfer-cost comparison.",
               exerciseId: "pitch-1"
             }
           ]
@@ -3365,7 +3365,7 @@ window.COURSE = {
                 "A list of hobbies"
               ],
               answer: 1,
-              explain: "List The Mutapa Times Academy. It shows initiative and signals your focus on Zimbabwe and diaspora reporting."
+              explain: "List The Mutapa Times Academy. It shows initiative and signals your focus on Southern Africa and diaspora reporting."
             },
             {
               type: "write",
@@ -3380,7 +3380,7 @@ window.COURSE = {
                 "Have you listed The Mutapa Times Academy under Education or Licenses and certifications?",
                 "Is it consistent with how you present yourself elsewhere online?"
               ],
-              model: "Headline: Multimedia journalist covering Zimbabwe and the diaspora, with a focus on money and migration. About: I report on the economics of diaspora life, from remittances to small business, for a Zimbabwean audience rather than for outsiders. I recently completed the Mutapa Times Academy. Portfolio at the link below, and open to freelance commissions. Education: The Mutapa Times Academy, journalism foundations and reporting.",
+              model: "Headline: Multimedia journalist covering Southern Africa and the diaspora, with a focus on money and migration. About: I report on the economics of diaspora life, from remittances to small business, for a Southern African audience rather than for outsiders. I recently completed the Mutapa Times Academy. Portfolio at the link below, and open to freelance commissions. Education: The Mutapa Times Academy, journalism foundations and reporting.",
               exerciseId: "linkedin-1"
             }
           ]
@@ -3690,7 +3690,7 @@ window.COURSE = {
                 "Is the writing tight, with no waffle?",
                 "Would an editor want to read the next paragraph?"
               ],
-              model: "I am a reporter covering the economics of diaspora life, with bylines on remittances and small-business migration. What draws me to The Mutapa Times is that you report Zimbabwe for Zimbabweans rather than explaining it to outsiders, and your recent coverage of crypto registration rules is exactly the kind of money story I want to dig into. I would bring sourced, on-the-ground reporting and a steady diaspora-money beat.",
+              model: "I am a reporter covering the economics of diaspora life, with bylines on remittances and small-business migration. What draws me to The Mutapa Times is that you report Southern Africa for Southern Africans rather than explaining it to outsiders, and your recent coverage of crypto registration rules is exactly the kind of money story I want to dig into. I would bring sourced, on-the-ground reporting and a steady diaspora-money beat.",
               exerciseId: "cover-letter-1"
             }
           ]
@@ -3938,7 +3938,7 @@ window.COURSE = {
                 "Is the cadence one you could realistically keep for a year?",
                 "Does the first issue show a new reader exactly what they signed up for?"
               ],
-              model: "Promise: a weekly newsletter for Zimbabweans in the UK on the money side of diaspora life, sending, saving and supporting family back home. Name: Pounds and Home. Cadence: every Thursday morning. First issue headline: The real cost of sending GBP100 to Harare. Summary: a plain comparison of five transfer routes, what each actually costs after fees and rate, and the one most families get wrong.",
+              model: "Promise: a weekly newsletter for Southern Africans in the UK on the money side of diaspora life, sending, saving and supporting family back home. Name: Pounds and Home. Cadence: every Thursday morning. First issue headline: The real cost of sending GBP100 home. Summary: a plain comparison of five transfer routes, what each actually costs after fees and rate, and the one most families get wrong.",
               exerciseId: "substack-plan-1"
             }
           ]
@@ -4662,12 +4662,12 @@ window.COURSE = {
           cards: [
             {
               h: "The brief",
-              body: ["Stanbic Bank Zimbabwe has issued a release about its role in financing the mining sector and renewable energy. Read it in full, then work the critique below."]
+              body: ["Stanbic Bank Zambia has issued a release about its role in financing the mining sector and renewable energy. Read it in full, then work the critique below."]
             },
             {
               h: "The release (key points)",
               body: [
-                "Stanbic Bank Zimbabwe says it is committed to supporting the country's power needs with 'future-fit, sustainable financing' for renewable energy, especially for mining. Its chief executive says the bank has 'consistently played a catalytic role' in the sector despite challenges like power cuts.",
+                "Stanbic Bank Zambia says it is committed to supporting the country's power needs with 'future-fit, sustainable financing' for renewable energy, especially for mining. Its chief executive says the bank has 'consistently played a catalytic role' in the sector despite challenges like power cuts.",
                 "It stresses the bank's place in the Standard Bank Group, 'Africa's largest banking group by assets', and quotes two of its own executives on AI and ESG. No mining client, energy expert or independent voice is quoted, and no figures are given for actual loans or projects."
               ],
               link: { href: "https://www.stanbicbank.co.zw/zimbabwe/personal/About-us/Press-Releases/STANBIC-BANK-COMMITTED-TO-CONTINUE-PLAYING-A-PIVOTAL-ROLE-IN-ZIMBABWE%E2%80%99S-MINING-SECTOR", label: "Read Stanbic's full press release" }

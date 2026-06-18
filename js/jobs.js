@@ -152,6 +152,12 @@
   ];
 
   var _allJobs = [];
+  // Pagination: the list can run to hundreds of vacancies, so show a page at
+  // a time with a "load more" button rather than one endless column.
+  var PAGE_SIZE = 24;
+  var _filtered = [];
+  var _shown = PAGE_SIZE;
+  var moreWrap = null;
 
   function escapeHtml(s) {
     return String(s == null ? '' : s)
@@ -300,11 +306,43 @@
       return true;
     });
 
-    if (!filtered.length) {
+    _filtered = filtered;
+    _shown = PAGE_SIZE;
+    renderList();
+  }
+
+  // Ensure a container for the "load more" control sits just after the grid.
+  function ensureMoreWrap() {
+    if (moreWrap || !grid || !grid.parentNode) return;
+    moreWrap = document.createElement('div');
+    moreWrap.className = 'jobs-loadmore-wrap';
+    grid.parentNode.insertBefore(moreWrap, grid.nextSibling);
+    moreWrap.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('.jobs-loadmore');
+      if (!b) return;
+      _shown += PAGE_SIZE;
+      renderList();
+    });
+  }
+
+  function renderList() {
+    ensureMoreWrap();
+    if (!_filtered.length) {
       grid.innerHTML = '<p class="jobs-empty">No vacancies match your filters.</p>';
+      if (moreWrap) moreWrap.innerHTML = '';
       return;
     }
-    grid.innerHTML = filtered.map(renderCard).join('');
+    grid.innerHTML = _filtered.slice(0, _shown).map(renderCard).join('');
+    if (moreWrap) {
+      if (_filtered.length > _shown) {
+        var remaining = _filtered.length - _shown;
+        var n = Math.min(PAGE_SIZE, remaining);
+        moreWrap.innerHTML = '<button type="button" class="jobs-loadmore">Show ' + n +
+          ' more <span>(' + remaining + ' remaining)</span></button>';
+      } else {
+        moreWrap.innerHTML = '';
+      }
+    }
   }
 
   function render(data) {

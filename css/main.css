@@ -8445,6 +8445,21 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   display: inline-block;
   border-radius: 999px;
 }
+/* Small, calm "Long Read · Category" tag in the longform meta strip (replaces
+   the old red eyebrow pill that sat above the headline). */
+.article-longform-tag {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 4px 11px;
+  border-radius: 999px;
+  align-self: center;
+}
 .article-longform-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 900;
@@ -8633,8 +8648,8 @@ nav { overflow: visible; }       /* let the dropdown escape the nav box */
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 4px 10px;
-  background: var(--accent, #c0392b);
+  padding: 3px 9px;
+  background: #2b2b2b;
   color: #fff;
   border-radius: 3px;
   vertical-align: middle;
@@ -9392,9 +9407,9 @@ body.longform-page .topbar {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #c41e1e;
-  background: rgba(196, 30, 30, 0.08);
-  border: 1px solid rgba(196, 30, 30, 0.22);
+  color: #8a6a1c;
+  background: rgba(176, 128, 35, 0.10);
+  border: 1px solid rgba(176, 128, 35, 0.30);
   border-radius: 999px;
   padding: 5px 12px;
   margin: 0 0 12px;
@@ -9406,13 +9421,13 @@ body.longform-page .topbar {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #c41e1e;
+  background: #b08023;
   transition: background .15s;
 }
 .author-page-pill:hover {
-  background: #c41e1e;
+  background: #b08023;
   color: #fff;
-  border-color: #c41e1e;
+  border-color: #b08023;
 }
 .author-page-pill:hover::before { background: #fff; }
 .author-page-role {
@@ -11793,3 +11808,14 @@ body.series-page .topbar-brand::after {
   body.series-page .topbar-brand::before,
   body.series-page .topbar-brand::after { font-size: 1.02rem; }
 }
+
+/* Jobs: load-more pagination control */
+.jobs-loadmore-wrap { display: flex; justify-content: center; margin: 28px 0 8px; }
+.jobs-loadmore {
+  font: inherit; font-weight: 700; cursor: pointer;
+  background: #fff; color: var(--ink, #1a1a1a);
+  border: 1.5px solid var(--rule, #e4e2da); border-radius: 999px;
+  padding: 12px 26px; transition: border-color .15s, background .15s;
+}
+.jobs-loadmore:hover { border-color: var(--ink, #1a1a1a); background: #faf9f6; }
+.jobs-loadmore span { color: #8a8a8a; font-weight: 500; margin-left: 4px; }

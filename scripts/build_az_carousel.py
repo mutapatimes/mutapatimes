@@ -66,7 +66,7 @@ def render_slide(slide, card_h, path):
     # Brand chrome
     d.rectangle([(0, 0), (140, 10)], fill=ACCENT)
     d.text((pad, 70), "THE MUTAPA TIMES", font=load_font("serif_bold", 42), fill=CARD_FG)
-    d.text((pad, 124), "Zimbabwe outside-in", font=load_font("sans", 28), fill=CARD_FG_MUTED)
+    d.text((pad, 124), "Southern Africa outside-in", font=load_font("sans", 28), fill=CARD_FG_MUTED)
 
     # Eyebrow
     d.text((pad, 200), slide["eyebrow"], font=load_font("sans_bold", 26), fill=ACCENT)

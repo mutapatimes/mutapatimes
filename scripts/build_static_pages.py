@@ -247,7 +247,7 @@ def page_nav(active="articles", depth=1, body_class=""):
     <div class="titleDiv">
       <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
-    <h4 class="sub notranslate">Zimbabwe outside-in.</h4>
+    <h4 class="sub notranslate">Southern Africa outside-in.</h4>
   </a>
   <nav id="mainNav">
       <p>
@@ -945,10 +945,11 @@ def build_articles():
           <img src="{esc(image)}" alt="{esc(title)}" class="article-longform-hero-img">
           <div class="article-longform-hero-overlay"></div>
           <div class="article-longform-hero-inner">
-            <p class="article-longform-eyebrow">{esc(hero_eyebrow)}</p>
             <h1 class="article-longform-title">{esc(title)}</h1>
             <p class="article-longform-deck">{esc(summary)}</p>
             <div class="article-longform-meta">""")
+            _lr_tag = "Long Read" + ("  ·  " + category if category else "")
+            html_parts.append(f'              <span class="article-longform-tag">{esc(_lr_tag)}</span>')
             if author:
                 html_parts.append(f'              <span class="article-longform-author">{_byline_html(author, author_map)}</span>')
             if date_display:

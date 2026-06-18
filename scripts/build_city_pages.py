@@ -454,7 +454,7 @@ def build_page(city, all_articles, other_cities):
     <div class="titleDiv">
       <h1 class="title notranslate">THE MUTAPA TIMES</h1>
     </div>
-    <h4 class="sub notranslate">Zimbabwe outside-in</h4>
+    <h4 class="sub notranslate">Southern Africa outside-in</h4>
   </a>
   <nav id="mainNav">
       <p><a target="_self" class="notranslate" href="/">News</a></p>
