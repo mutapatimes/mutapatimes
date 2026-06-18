@@ -82,14 +82,16 @@ def _normalize_source(src):
     return str(src or "").strip()
 
 
-def collect_cms_articles(base):
+def collect_cms_articles(base, region="zw"):
     """Read CMS markdown articles and return list of dicts. Links point to
     /articles/{slug}.html on mutapatimes.com. Looks across both
     content/articles (originals + drafts) and content/wires (the
     auto-imported archive)."""
     items = []
-    articles_dir = os.path.join(base, "content", "articles")
-    wires_dir = os.path.join(base, "content", "wires")
+    pfx = "" if region == "zw" else f"/{region}"
+    cdir = os.path.join(base, "content") if region == "zw" else os.path.join(base, "content", region)
+    articles_dir = os.path.join(cdir, "articles")
+    wires_dir = os.path.join(cdir, "wires")
     md_paths = (glob.glob(os.path.join(articles_dir, "*.md"))
                 + glob.glob(os.path.join(wires_dir, "*.md")))
     for md in md_paths:
@@ -118,7 +120,7 @@ def collect_cms_articles(base):
         dt = _parse_date(date.group(1)) if date else None
         if not _is_fresh(dt):
             continue
-        link = f"{BASE_URL}/articles/{slug}"
+        link = f"{BASE_URL}{pfx}/articles/{slug}"
         _title = title.group(1) if title else slug
         # Flag exclusives in the feed so autolists surface them as such.
         if exclusive and not _title.upper().startswith("EXCLUSIVE"):
@@ -139,12 +141,13 @@ def collect_cms_articles(base):
     return items
 
 
-def collect_news_landing_articles(base):
+def collect_news_landing_articles(base, region="zw"):
     """Read data/spotlight.json + data/{category}.json and emit one feed item
     per article, linking to the mutapatimes.com /news/{slug}.html landing
     page (NOT the source publisher's URL). Old articles are dropped."""
     items = []
-    data_dir = os.path.join(base, "data")
+    pfx = "" if region == "zw" else f"/{region}"
+    data_dir = os.path.join(base, "data") if region == "zw" else os.path.join(base, "data", region)
     # Same set of feeds that build_news_pages reads + spotlight
     candidates = ["spotlight.json"] + [
         f"{cat}.json"
@@ -180,7 +183,7 @@ def collect_news_landing_articles(base):
                 # Build the canonical mutapatimes.com landing URL — matches
                 # what build_news_pages.py renders for the same article.
                 landing = (
-                    f"{BASE_URL}/news/"
+                    f"{BASE_URL}{pfx}/news/"
                     f"{news_make_slug({'title': title, 'url': source_url, 'publishedAt': a.get('publishedAt') or ''})}"
                 )
                 desc = (a.get("description") or "").strip()
@@ -262,8 +265,17 @@ def _strip_emails(s):
     return s.strip()
 
 
-def build_rss(items):
-    """Build RSS 2.0 XML string."""
+def build_rss(items, region="zw"):
+    """Build RSS 2.0 XML string. Zimbabwe (default) is unchanged; other
+    editions point the channel link + self link + description at /<region>."""
+    pfx = "" if region == "zw" else f"/{region}"
+    self_url = FEED_URL if region == "zw" else f"{BASE_URL}{pfx}/feed.xml"
+    channel_link = f"{BASE_URL}{pfx}"
+    channel_desc = (
+        "Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora."
+        if region == "zw" else
+        "Business and intelligence newspaper delivering curated South African news from foreign press for the diaspora."
+    )
     now = format_datetime(datetime.now(timezone.utc))
     items.sort(
         key=lambda x: x.get("pubDate") or datetime.min.replace(tzinfo=timezone.utc),
@@ -345,11 +357,11 @@ def build_rss(items):
         '     xmlns:media="http://search.yahoo.com/mrss/">\n'
         "  <channel>\n"
         "    <title>The Mutapa Times</title>\n"
-        f"    <link>{BASE_URL}</link>\n"
-        "    <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>\n"
+        f"    <link>{channel_link}</link>\n"
+        f"    <description>{channel_desc}</description>\n"
         "    <language>en</language>\n"
         f"    <lastBuildDate>{now}</lastBuildDate>\n"
-        f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
+        f'    <atom:link href="{self_url}" rel="self" type="application/rss+xml"/>\n'
         "    <image>\n"
         "      <title>The Mutapa Times</title>\n"
         f"      <url>{BASE_URL}/img/brand/mark-512.png</url>\n"
@@ -1446,11 +1458,23 @@ def write_wordle_feed(base):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--region", default="zw",
+                    help="Region edition (default: zw = Zimbabwe at the root)")
+    region = ap.parse_args().region
     base = os.path.join(os.path.dirname(__file__), "..")
+    # Non-root editions write feed.xml under /<region>/. The vertical feeds
+    # (fx, weather, economy, business, jobs, properties, stories, wordle) and
+    # the bio grid are Zimbabwe-only until those SA data sources land (Phase 4).
+    out_base = base if region == "zw" else os.path.join(base, region)
+    if region != "zw":
+        os.makedirs(out_base, exist_ok=True)
+
     # CMS first so its /articles/{slug}.html link wins over the /news/{slug}.html
     # landing variant when the same story appears in both (the CMS page has
     # the full body text — better for SEO and reader experience).
-    items = collect_cms_articles(base) + collect_news_landing_articles(base)
+    items = collect_cms_articles(base, region) + collect_news_landing_articles(base, region)
     seen_links = set()
     seen_titles = set()
     unique = []
@@ -1464,23 +1488,24 @@ def main():
             seen_titles.add(t_norm)
         unique.append(item)
 
-    rss = build_rss(unique)
-    out = os.path.join(base, "feed.xml")
+    rss = build_rss(unique, region)
+    out = os.path.join(out_base, "feed.xml")
     with open(out, "w", encoding="utf-8") as f:
         f.write(rss)
-    print(f"feed.xml written with {min(len(unique), MAX_ITEMS)} items "
-          f"(linking to mutapatimes.com; <={MAX_ITEM_AGE_DAYS}d old)")
+    print(f"{out} written with {min(len(unique), MAX_ITEMS)} items "
+          f"(linking to mutapatimes.com{('/' + region) if region != 'zw' else ''}; <={MAX_ITEM_AGE_DAYS}d old)")
 
-    # Separate single-item feeds for the dedicated autolists
-    write_fx_feed(base)
-    write_weather_feed(base)
-    write_economy_feed(base)
-    write_business_feed(base)
-    write_jobs_feed(base)
-    write_properties_feed(base)
-    write_stories_feed(base)
-    write_wordle_feed(base)
-    write_bio_grid(base)
+    # Separate single-item feeds for the dedicated autolists (Zimbabwe only).
+    if region == "zw":
+        write_fx_feed(base)
+        write_weather_feed(base)
+        write_economy_feed(base)
+        write_business_feed(base)
+        write_jobs_feed(base)
+        write_properties_feed(base)
+        write_stories_feed(base)
+        write_wordle_feed(base)
+        write_bio_grid(base)
 
     # Mirror every feed to a .rss twin. GitHub Pages serves .xml as
     # application/xml, which strict RSS importers (e.g. Metricool Autolists)
@@ -1488,7 +1513,10 @@ def main():
     # content-type they expect. Same bytes — point autolists at the .rss URL.
     import glob
     import shutil
-    feeds = glob.glob(os.path.join(base, "*-feed.xml")) + [os.path.join(base, "feed.xml")]
+    if region == "zw":
+        feeds = glob.glob(os.path.join(base, "*-feed.xml")) + [os.path.join(base, "feed.xml")]
+    else:
+        feeds = [os.path.join(out_base, "feed.xml")]
     mirrored = 0
     for xml_path in feeds:
         if not os.path.exists(xml_path):
