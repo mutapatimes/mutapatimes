@@ -107,6 +107,11 @@ REGIONS = {
         "markets_index": "ZSE",
         "weather_locations": ["Harare", "Bulawayo", "Mutare", "Gweru", "Masvingo", "Victoria Falls"],
         "jobs_source": "vacancymail.co.zw",
+        # Nav/footer sections that actually exist for this edition. Links to
+        # anything NOT listed here are dropped, so a region never shows a dead
+        # /za/fx etc. Add verticals to a region's list as they go live.
+        "live_sections": ["news", "economy", "fx", "markets", "property",
+                          "jobs", "articles", "originals", "weather", "cities"],
     },
 
     # ─────────────────────────────── SOUTH AFRICA (/za) ─────────────────────
@@ -180,6 +185,10 @@ REGIONS = {
         "markets_index": "JSE",
         "weather_locations": ["Johannesburg", "Cape Town", "Durban", "Pretoria", "Gqeberha", "Bloemfontein"],
         "jobs_source": "",          # TODO: pick a South African jobs board (vacancymail is ZW-only)
+        # PRE-LAUNCH: only the news edition is live. Verticals (economy/fx/
+        # markets/property/jobs/weather/originals) join this list in Phase 4
+        # as their SA data sources are wired, and light up across the nav.
+        "live_sections": ["news", "articles", "cities"],
     },
 }
 
@@ -201,6 +210,14 @@ def region_url(code, path="/"):
     if not path.startswith("/"):
         path = "/" + path
     return f"{BASE_URL}{prefix}{path}"
+
+
+def region_has_section(code, name):
+    """True if a nav/footer section is live for a region. When a region omits
+    live_sections entirely (or the registry is unavailable) everything is
+    treated as live, preserving the default-region behaviour."""
+    live = get_region(code).get("live_sections")
+    return True if not live else (name in live)
 
 
 def region_is_indexable(code):

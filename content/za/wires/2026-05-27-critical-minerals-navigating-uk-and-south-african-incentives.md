@@ -1,0 +1,16 @@
+---
+title: "Critical minerals: Navigating UK and South African incentives, grants and opportunities"
+date: 2026-05-27T07:00:00.000Z
+author: Cliffe Dekker Hofmeyr
+category: Business
+image: 
+summary: "Critical minerals: Navigating UK and South African incentives, grants and opportunities"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiswJBVV95cUxPV2VoN0c3X1FqWTYtWWwyQzI2cVBBWGVNdDhCSVQ1US1pS0pGTXFzSEFPYTZkdW1YRlNEcWR5c3hUbEItSUxiWUtXSWQ0ZWpqa0FJLVk4TldVUGtkQjJGRjY3UEpwWk0ydU9LQWlUTzVrZ0d2Y3lPSnhMckR3cmxOcDZ1aEF1LVp6dG9sOXhSc2lIQVA5OENQSUJGa0xPV05VcWV1VFN4cTZQNlcyTFlOSmhkZExkbnZOYTBlLTJLRnJiT250dk1YeEZmNkFIZE5ZSGRSbGNNRXJvcFRqWmgtUTBJUFc3XzRMUXRLcGViOExmSnJXbHoxbEM0UGdZRjdxamUtOGtkNUVDTlBIRk85YmtYRlNQZjRobWpnYUgyOF9iZ2pXQ3NBX3ozRXRXZjhSMDh3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Cliffe Dekker Hofmeyr.*
+[Read original article](https://news.google.com/rss/articles/CBMiswJBVV95cUxPV2VoN0c3X1FqWTYtWWwyQzI2cVBBWGVNdDhCSVQ1US1pS0pGTXFzSEFPYTZkdW1YRlNEcWR5c3hUbEItSUxiWUtXSWQ0ZWpqa0FJLVk4TldVUGtkQjJGRjY3UEpwWk0ydU9LQWlUTzVrZ0d2Y3lPSnhMckR3cmxOcDZ1aEF1LVp6dG9sOXhSc2lIQVA5OENQSUJGa0xPV05VcWV1VFN4cTZQNlcyTFlOSmhkZExkbnZOYTBlLTJLRnJiT250dk1YeEZmNkFIZE5ZSGRSbGNNRXJvcFRqWmgtUTBJUFc3XzRMUXRLcGViOExmSnJXbHoxbEM0UGdZRjdxamUtOGtkNUVDTlBIRk85YmtYRlNQZjRobWpnYUgyOF9iZ2pXQ3NBX3ozRXRXZjhSMDh3?oc=5)

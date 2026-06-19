@@ -1,0 +1,16 @@
+---
+title: "In South Africa, a village learns to live with baboons — but it may be the exception - news"
+date: 2026-06-17T08:03:22.000Z
+author: Mongabay
+category: Tech
+image: 
+summary: "In South Africa, a village learns to live with baboons — but it may be the exception - news"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWm5IdEFkeXRpRExidmpVUGVMX0pNNnpZRG5XYkM2VlZRcXNwbjBMSEFzNG4xQmU5eVJGaGpxVk5RNTVCbGxwRURYdk5iVzFRY0tkUkZhMF9TX0xXaUhxczBoOE1VRnN4b1F3d1JOejBRUDRaWFU3M1FlcnhLcFVrbkJYS21BRGtlczdHcFVxQTRIZENlMER4YU5UYjk5TllLYU1valN4Rm9ER0daTHVpeXRjY0ZHV1HSAbwBQVVfeXFMUG9nLXRULU1lWllmM2M1aG02eGgtZDJXQ1ZNc1lOeXZORXpHYnByRW1PTjRzWExDTXVubGYwN21KR0I0bHI0Z3FWd0JCdmVyS0NodzF3Qjd6azFDVWIyT0VwSVAxS3NsRzItQ2lQNjhJc2RLYkthV0dRcUtNOTVvOEgtVkFhQ3NNRmphZGx3T2RfSUppdzBES1Z1VnIxc0pVdkFfUmRvc2ZIYmtpRGIyeWZJNlFpdGszZmhWMm4?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mongabay.*
+[Read original article](https://news.google.com/rss/articles/CBMitwFBVV95cUxQWm5IdEFkeXRpRExidmpVUGVMX0pNNnpZRG5XYkM2VlZRcXNwbjBMSEFzNG4xQmU5eVJGaGpxVk5RNTVCbGxwRURYdk5iVzFRY0tkUkZhMF9TX0xXaUhxczBoOE1VRnN4b1F3d1JOejBRUDRaWFU3M1FlcnhLcFVrbkJYS21BRGtlczdHcFVxQTRIZENlMER4YU5UYjk5TllLYU1valN4Rm9ER0daTHVpeXRjY0ZHV1HSAbwBQVVfeXFMUG9nLXRULU1lWllmM2M1aG02eGgtZDJXQ1ZNc1lOeXZORXpHYnByRW1PTjRzWExDTXVubGYwN21KR0I0bHI0Z3FWd0JCdmVyS0NodzF3Qjd6azFDVWIyT0VwSVAxS3NsRzItQ2lQNjhJc2RLYkthV0dRcUtNOTVvOEgtVkFhQ3NNRmphZGx3T2RfSUppdzBES1Z1VnIxc0pVdkFfUmRvc2ZIYmtpRGIyeWZJNlFpdGszZmhWMm4?oc=5)

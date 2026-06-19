@@ -1,0 +1,77 @@
+name: Fetch News Data (South Africa)
+
+# Separate workflow from the Zimbabwe pipeline (fetch-news.yml). The two run
+# independently with their own 15-minute budgets — South Africa must never eat
+# into Zimbabwe's window, and vice versa. Offset 15 min past the hour so they
+# don't hammer Google News from the same runner pool at the same instant.
+
+on:
+  schedule:
+    - cron: '15 */3 * * *'
+  workflow_dispatch:
+
+# Pre-launch: /za is noindex and unlisted. This still keeps the edition fresh
+# so it can be previewed; flip the region to indexable in regions.py at sign-off.
+
+jobs:
+  fetch-news-za:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pillow (needed transitively by build_news_pages too)
+        run: pip install --quiet Pillow
+
+      - name: Fetch South Africa news
+        env:
+          GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+          NYT_API_KEY: ${{ secrets.NYT_API_KEY }}
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
+          NEWSAPI_API_KEY: ${{ secrets.NEWSAPI_API_KEY }}
+          MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
+          PERIGON_API_KEY: ${{ secrets.PERIGON_API_KEY }}
+        run: python3 scripts/fetch_news.py --region za
+
+      - name: Build news landing pages
+        run: python3 scripts/build_news_pages.py --region za
+
+      - name: Build static article pages
+        run: python3 scripts/build_static_pages.py --region za --articles-only
+
+      - name: Render branded card per feed item (cached by URL hash)
+        run: python3 scripts/build_feed_cards.py --region za
+
+      - name: Build city news pages (Johannesburg, Cape Town, Durban, Pretoria, Gqeberha)
+        run: python3 scripts/build_city_pages.py --region za
+
+      - name: Generate sitemap and RSS feeds
+        run: |
+          python3 scripts/generate_sitemap.py --region za
+          python3 scripts/generate_rss.py --region za
+
+      - name: Stamp cache-busting asset versions (nav.js / main.css)
+        run: python3 scripts/stamp_assets.py
+
+      - name: Commit and push updated data (South Africa only)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/za/ content/za/ za/ img/cards/za/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update South Africa news data + feed cards [automated]"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed on attempt $i"
+                exit 0
+              fi
+              echo "Push rejected — rebasing onto remote main (attempt $i/5)"
+              git pull --rebase origin main || exit 1
+              sleep $((RANDOM % 4 + 2))
+            done
+            echo "All push attempts failed"
+            exit 1
+          fi

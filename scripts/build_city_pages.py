@@ -626,16 +626,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
     <h4 class="sub notranslate">Southern Africa outside-in</h4>
   </a>
   <nav id="mainNav">
-      <p><a target="_self" class="notranslate" href="{pfx}/">News</a></p>
-      <p><a target="_self" class="economy-btn" href="{pfx}/economy">Economy</a></p>
-      <p><a target="_self" class="notranslate" href="{pfx}/fx">FX</a></p>
-      <p><a target="_self" class="notranslate" href="{pfx}/markets">Markets</a></p>
-      <p><a target="_self" class="notranslate" href="{pfx}/property">Property</a></p>
-      <p><a target="_self" class="notranslate" href="{pfx}/jobs">Jobs</a></p>
-      <p><a target="_self" class="notranslate" href="{pfx}/articles">Articles</a></p>
-      <p>
-          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>
-      </p>
+{meta['city_nav_main']}
       <span class="nav-cities-item">
         <button type="button" class="cities-nav-toggle notranslate active" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
         <ul class="cities-dropdown" aria-label="{country} cities">
@@ -655,14 +646,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
       <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
     </form>
     <nav class="nav-drawer-main" aria-label="Sections">
-      <a href="{pfx}/">News</a>
-      <a href="{pfx}/economy">Economy</a>
-      <a href="{pfx}/fx">FX</a>
-      <a href="{pfx}/markets">Markets</a>
-      <a href="{pfx}/property">Property</a>
-      <a href="{pfx}/jobs">Jobs</a>
-      <a href="{pfx}/articles">Articles</a>
-      <a href="{pfx}/originals">Originals</a>
+{meta['city_drawer_main']}
       {scene_report}
     </nav>
     <span class="nav-drawer-section">Cities</span>
@@ -792,14 +776,7 @@ if ('serviceWorker' in navigator) {{
         <details open>
           <summary>Read</summary>
           <ul>
-            <li><a href="{pfx}/">News</a></li>
-            <li><a href="{pfx}/economy">Economy</a></li>
-            <li><a href="{pfx}/fx">FX</a></li>
-            <li><a href="{pfx}/markets">Markets</a></li>
-            <li><a href="{pfx}/property">Property</a></li>
-            <li><a href="{pfx}/jobs">Jobs</a></li>
-            <li><a href="{pfx}/articles">Articles</a></li>
-            <li><a href="{pfx}/weather">Weather</a></li>
+{meta['city_read_links']}
           </ul>
         </details>
       </div>
@@ -885,6 +862,49 @@ def build_region(region):
     except ImportError:
         meta["robots"] = _CITY_ROBOTS
     pfx = "" if region == "zw" else f"/{region}"
+
+    # Nav/footer only link to sections that are live for this edition. For
+    # Zimbabwe every section is live, so the assembled markup is byte-identical
+    # to the previous hardcoded blocks; /za drops dead vertical links.
+    try:
+        from regions import region_has_section as _has_sec
+        def _has(s):
+            return _has_sec(region, s)
+    except ImportError:
+        def _has(s):
+            return True
+    _nav = [f'      <p><a target="_self" class="notranslate" href="{pfx}/">News</a></p>']
+    if _has("economy"):
+        _nav.append(f'      <p><a target="_self" class="economy-btn" href="{pfx}/economy">Economy</a></p>')
+    if _has("fx"):
+        _nav.append(f'      <p><a target="_self" class="notranslate" href="{pfx}/fx">FX</a></p>')
+    if _has("markets"):
+        _nav.append(f'      <p><a target="_self" class="notranslate" href="{pfx}/markets">Markets</a></p>')
+    if _has("property"):
+        _nav.append(f'      <p><a target="_self" class="notranslate" href="{pfx}/property">Property</a></p>')
+    if _has("jobs"):
+        _nav.append(f'      <p><a target="_self" class="notranslate" href="{pfx}/jobs">Jobs</a></p>')
+    if _has("articles"):
+        _nav.append(f'      <p><a target="_self" class="notranslate" href="{pfx}/articles">Articles</a></p>')
+    if _has("originals"):
+        _nav.append(f'      <p>\n          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>\n      </p>')
+    meta["city_nav_main"] = "\n".join(_nav)
+
+    _drawer = [f'      <a href="{pfx}/">News</a>']
+    for _s, _label in [("economy", "Economy"), ("fx", "FX"), ("markets", "Markets"),
+                       ("property", "Property"), ("jobs", "Jobs"),
+                       ("articles", "Articles"), ("originals", "Originals")]:
+        if _has(_s):
+            _drawer.append(f'      <a href="{pfx}/{_s}">{_label}</a>')
+    meta["city_drawer_main"] = "\n".join(_drawer)
+
+    _read = [f'            <li><a href="{pfx}/">News</a></li>']
+    for _s, _label in [("economy", "Economy"), ("fx", "FX"), ("markets", "Markets"),
+                       ("property", "Property"), ("jobs", "Jobs"),
+                       ("articles", "Articles"), ("weather", "Weather")]:
+        if _has(_s):
+            _read.append(f'            <li><a href="{pfx}/{_s}">{_label}</a></li>')
+    meta["city_read_links"] = "\n".join(_read)
     cities = meta["cities"]
     out_dir = ROOT if region == "zw" else os.path.join(ROOT, region)
     os.makedirs(out_dir, exist_ok=True)

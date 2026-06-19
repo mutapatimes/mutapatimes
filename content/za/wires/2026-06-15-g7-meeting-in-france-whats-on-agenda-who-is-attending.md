@@ -1,0 +1,16 @@
+---
+title: "G7 meeting in France: What’s on agenda, who is attending?"
+date: 2026-06-15T08:43:55.000Z
+author: Al Jazeera
+category: Health
+image: 
+summary: "G7 meeting in France: What’s on agenda, who is attending?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimgFBVV95cUxQckdVRWRiUDkwazFlRTlqUUxMRVZnam82X05XaksxeFRfM0dQZnJJZlZkYmJtOE9xb0dXV0x4andHdmM2X0w4RmUwbW01TWdNbDVJNWNZRmdBTkhMQU8xRmpEQWxMcHFaUW1MVDBtMzA0Q2praEtLdGVPYjlkVlJUYWgwRnU3SlcwZ2ZGUDAzbDJoMjZ4Y0xwaGdB0gGfAUFVX3lxTE94cWlMTUJsNXFkUjhoRTV3WkRjOGJqRU0wVlhSazJrUU9tSVZiRXZyMFo1WjZLc0l0MGxUXzlMZ1FRZVF6cFZDV24yY1RrY3QzLWFGU1hjaEM3T08wdU80cWhWWnJWX01IOU1NQlU5ZFBRejZHaWZOU2VVYmMxZTgzcWZNb0ZFZnBkcnp2VkNrRlNzTUIyaWZUQlA5eGdkdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMimgFBVV95cUxQckdVRWRiUDkwazFlRTlqUUxMRVZnam82X05XaksxeFRfM0dQZnJJZlZkYmJtOE9xb0dXV0x4andHdmM2X0w4RmUwbW01TWdNbDVJNWNZRmdBTkhMQU8xRmpEQWxMcHFaUW1MVDBtMzA0Q2praEtLdGVPYjlkVlJUYWgwRnU3SlcwZ2ZGUDAzbDJoMjZ4Y0xwaGdB0gGfAUFVX3lxTE94cWlMTUJsNXFkUjhoRTV3WkRjOGJqRU0wVlhSazJrUU9tSVZiRXZyMFo1WjZLc0l0MGxUXzlMZ1FRZVF6cFZDV24yY1RrY3QzLWFGU1hjaEM3T08wdU80cWhWWnJWX01IOU1NQlU5ZFBRejZHaWZOU2VVYmMxZTgzcWZNb0ZFZnBkcnp2VkNrRlNzTUIyaWZUQlA5eGdkdw?oc=5)

@@ -258,6 +258,59 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
     # Scene Report is a Zimbabwe editorial package; other editions omit it.
     scene_report = ('<a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>'
                     if region == "zw" else "")
+
+    # Only render links to sections that are live for this edition. For
+    # Zimbabwe every section is live, so the assembled markup is byte-identical
+    # to the previous hardcoded blocks.
+    _live = set(_meta.get("live_sections") or [])
+    def has(s):
+        return (not _live) or (s in _live)
+    _nav = [f'      <p>\n          <a target="_self"{cls("news")} href="{pfx}/">News</a>\n      </p>']
+    if has("economy"):
+        _nav.append(f'      <p>\n          <a target="_self"{eco_cls} href="{pfx}/economy">Live Economy Data</a>\n      </p>')
+    if has("fx"):
+        _nav.append(f'      <p>\n          <a target="_self"{cls("fx")} href="{pfx}/fx">FX</a>\n      </p>')
+    if has("property"):
+        _nav.append(f'      <p>\n          <a target="_self"{cls("property")} href="{pfx}/property">Property</a>\n      </p>')
+    if has("jobs"):
+        _nav.append(f'      <p>\n          <a target="_self"{cls("jobs")} href="{pfx}/jobs">Jobs</a>\n      </p>')
+    if has("articles"):
+        _nav.append(f'      <p>\n          <a target="_self"{cls("articles")} href="{pfx}/articles">Articles</a>\n      </p>')
+    if has("originals"):
+        _nav.append(f'      <p>\n          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>\n      </p>')
+    nav_main = "\n".join(_nav)
+
+    _drawer = [f'      <a href="{pfx}/">News</a>']
+    if has("economy"):
+        _drawer.append(f'      <a href="{pfx}/economy">Economy</a>')
+    if has("fx"):
+        _drawer.append(f'      <a href="{pfx}/fx">FX</a>')
+    if has("markets"):
+        _drawer.append(f'      <a href="{pfx}/markets">Markets</a>')
+    if has("property"):
+        _drawer.append(f'      <a href="{pfx}/property">Property</a>')
+    if has("jobs"):
+        _drawer.append(f'      <a href="{pfx}/jobs">Jobs</a>')
+    if has("articles"):
+        _drawer.append(f'      <a href="{pfx}/articles">Articles</a>')
+    if has("originals"):
+        _drawer.append(f'      <a href="{pfx}/originals">Originals</a>')
+    drawer_main = "\n".join(_drawer)
+
+    # The "More" directory (Weather, Flights, ZSE, Mining, Moving to Zimbabwe…)
+    # is a Zimbabwe-specific resource set; other editions omit the whole block
+    # until their own directories exist.
+    directories_block = (f'''    <span class="nav-drawer-section">More</span>
+    <nav class="nav-drawer-info" aria-label="Directories">
+      <a href="{pfx}/weather">Weather</a>
+      <a href="/flights/">Flights</a>
+      <a href="/schools/">Schools</a>
+      <a href="/zse/">ZSE companies</a>
+      <a href="/mining/">Mining</a>
+      <a href="/academy/">Academy</a>
+      <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
+    </nav>
+''' if region == "zw" else "")
     return f"""  </head>
 
   <body{body_attr}>
@@ -279,27 +332,7 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
     <h4 class="sub notranslate">Southern Africa outside-in.</h4>
   </a>
   <nav id="mainNav">
-      <p>
-          <a target="_self"{cls("news")} href="{pfx}/">News</a>
-      </p>
-      <p>
-          <a target="_self"{eco_cls} href="{pfx}/economy">Live Economy Data</a>
-      </p>
-      <p>
-          <a target="_self"{cls("fx")} href="{pfx}/fx">FX</a>
-      </p>
-      <p>
-          <a target="_self"{cls("property")} href="{pfx}/property">Property</a>
-      </p>
-      <p>
-          <a target="_self"{cls("jobs")} href="{pfx}/jobs">Jobs</a>
-      </p>
-      <p>
-          <a target="_self"{cls("articles")} href="{pfx}/articles">Articles</a>
-      </p>
-      <p>
-          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>
-      </p>
+{nav_main}
       <span class="nav-cities-item">
           <button type="button" class="cities-nav-toggle notranslate" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button>
           <ul class="cities-dropdown" aria-label="{country} cities">
@@ -319,31 +352,14 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
       <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
     </form>
     <nav class="nav-drawer-main" aria-label="Sections">
-      <a href="{pfx}/">News</a>
-      <a href="{pfx}/economy">Economy</a>
-      <a href="{pfx}/fx">FX</a>
-      <a href="{pfx}/markets">Markets</a>
-      <a href="{pfx}/property">Property</a>
-      <a href="{pfx}/jobs">Jobs</a>
-      <a href="{pfx}/articles">Articles</a>
-      <a href="{pfx}/originals">Originals</a>
+{drawer_main}
       {scene_report}
     </nav>
     <span class="nav-drawer-section">Cities</span>
     <nav class="nav-drawer-cities" aria-label="Cities">
 {cities_drawer}
     </nav>
-    <span class="nav-drawer-section">More</span>
-    <nav class="nav-drawer-info" aria-label="Directories">
-      <a href="{pfx}/weather">Weather</a>
-      <a href="/flights/">Flights</a>
-      <a href="/schools/">Schools</a>
-      <a href="/zse/">ZSE companies</a>
-      <a href="/mining/">Mining</a>
-      <a href="/academy/">Academy</a>
-      <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
-    </nav>
-    <span class="nav-drawer-section">Information</span>
+{directories_block}    <span class="nav-drawer-section">Information</span>
     <nav class="nav-drawer-info" aria-label="Information">
       <a href="/about">About</a>
       <a href="/advertising">Advertising</a>
@@ -383,6 +399,27 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
     cities_footer = "\n".join(
         f'            <li><a href="{pfx}/{slug}-news">{esc(name)}</a></li>'
         for slug, name in cities)
+
+    # "Read" column links only to live sections (byte-identical for Zimbabwe).
+    _live = set(_meta.get("live_sections") or [])
+    def has(s):
+        return (not _live) or (s in _live)
+    _read = [f'            <li><a href="{pfx}/">News</a></li>']
+    if has("economy"):
+        _read.append(f'            <li><a href="{pfx}/economy">Economy</a></li>')
+    if has("fx"):
+        _read.append(f'            <li><a href="{pfx}/fx">FX</a></li>')
+    if has("markets"):
+        _read.append(f'            <li><a href="{pfx}/markets">Markets</a></li>')
+    if has("property"):
+        _read.append(f'            <li><a href="{pfx}/property">Property</a></li>')
+    if has("jobs"):
+        _read.append(f'            <li><a href="{pfx}/jobs">Jobs</a></li>')
+    if has("articles"):
+        _read.append(f'            <li><a href="{pfx}/articles">Articles</a></li>')
+    if has("weather"):
+        _read.append(f'            <li><a href="{pfx}/weather">Weather</a></li>')
+    read_links = "\n".join(_read)
     # region.js only on non-root editions, so Zimbabwe footers stay identical.
     region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=1"></script>\n'
     return f"""  <hr class="dateHr">
@@ -477,14 +514,7 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
         <details open>
           <summary>Read</summary>
           <ul>
-            <li><a href="{pfx}/">News</a></li>
-            <li><a href="{pfx}/economy">Economy</a></li>
-            <li><a href="{pfx}/fx">FX</a></li>
-            <li><a href="{pfx}/markets">Markets</a></li>
-            <li><a href="{pfx}/property">Property</a></li>
-            <li><a href="{pfx}/jobs">Jobs</a></li>
-            <li><a href="{pfx}/articles">Articles</a></li>
-            <li><a href="{pfx}/weather">Weather</a></li>
+{read_links}
           </ul>
         </details>
       </div>

@@ -1,0 +1,16 @@
+---
+title: "OM Bank aims to redefine what banking means for South Africa’s middle class"
+date: 2026-06-19T07:49:20.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "OM Bank aims to redefine what banking means for South Africa’s middle class"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwJBVV95cUxQMnlIM2YyRFFKYlpGazdqNzdDNVY0VkNIVzY0LXZPUnlCRldUdVBjRXMxMUhpTm9oMTF5Q2JlY0d1LVZiZkdENFVCV2JEMVJaMWl2R21qQXZmNkVGbGRuQXM4QVkzVFJkZFIzTDZVaXYwWmp3eVRYbHB0TVEzdGc1UUNSWUtGTzMyTmN5X3FQNW5jbi1CQUp1WFBFY3gxY2ZPeVlJbDJSR2hnVmpaaDJUZndkUElPRld0MVJDRk1abVdObEc1ZVhQZ2M2U2J6dHAzSzViOUhPTDRRc0xuQ2s5V2R0Tm1VeDNmZEdaMjJueUxpTkwzTm1LV3dtdGRVbzlCMVgxdXdJdzJUdG14VThrZENJVEpEckFNeEQw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMimwJBVV95cUxQMnlIM2YyRFFKYlpGazdqNzdDNVY0VkNIVzY0LXZPUnlCRldUdVBjRXMxMUhpTm9oMTF5Q2JlY0d1LVZiZkdENFVCV2JEMVJaMWl2R21qQXZmNkVGbGRuQXM4QVkzVFJkZFIzTDZVaXYwWmp3eVRYbHB0TVEzdGc1UUNSWUtGTzMyTmN5X3FQNW5jbi1CQUp1WFBFY3gxY2ZPeVlJbDJSR2hnVmpaaDJUZndkUElPRld0MVJDRk1abVdObEc1ZVhQZ2M2U2J6dHAzSzViOUhPTDRRc0xuQ2s5V2R0Tm1VeDNmZEdaMjJueUxpTkwzTm1LV3dtdGRVbzlCMVgxdXdJdzJUdG14VThrZENJVEpEckFNeEQw?oc=5)

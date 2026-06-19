@@ -1,0 +1,16 @@
+---
+title: "Could where you live shape the healthcare you get in a climate crisis?"
+date: 2026-06-18T18:59:20.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Could where you live shape the healthcare you get in a climate crisis?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAJBVV95cUxNRUktR1pkekJWXzhxdnBxUWEwTXB3M1VKd1F2a0lOenFxRlAyc1NoakhCNUhxMU0yY2NReXZzX2xCSDRiTzlrcWpBRVB6eXY5cnE1NTRzMWlPSFRYdG5tVzdmeUE5eUZ6MnQtV0dRc0JCcmxnT3BEcTdLdGkxbXNtakIyQVVyZVRjQVkycFZybDY2eGY1eXdpZGw2ODRBVzJrTDl6VWlKTUdTMV9Ca1hrSzJQdENDZExrUEE4dGRUSFFtak05bmpKVG1jVHJWa04tVFFKMW4tWlJRdVJYYUhkbGowT2pELVd5XzFTTUtrelpydHR2WGdyNDM2VnRMRVdIRjdFMVhZWXJiV1Fpa2hFbjM2WS0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilAJBVV95cUxNRUktR1pkekJWXzhxdnBxUWEwTXB3M1VKd1F2a0lOenFxRlAyc1NoakhCNUhxMU0yY2NReXZzX2xCSDRiTzlrcWpBRVB6eXY5cnE1NTRzMWlPSFRYdG5tVzdmeUE5eUZ6MnQtV0dRc0JCcmxnT3BEcTdLdGkxbXNtakIyQVVyZVRjQVkycFZybDY2eGY1eXdpZGw2ODRBVzJrTDl6VWlKTUdTMV9Ca1hrSzJQdENDZExrUEE4dGRUSFFtak05bmpKVG1jVHJWa04tVFFKMW4tWlJRdVJYYUhkbGowT2pELVd5XzFTTUtrelpydHR2WGdyNDM2VnRMRVdIRjdFMVhZWXJiV1Fpa2hFbjM2WS0?oc=5)
