@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-18",
+  "fetched_at": "2026-06-19",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -20,12 +20,12 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 519,
-          "airline": "UR",
-          "departure_at": "2026-06-26",
+          "price": 520,
+          "airline": "FR",
+          "departure_at": "2026-06-29",
           "return_at": "",
-          "stops": 1,
-          "duration": 920,
+          "stops": 4,
+          "duration": 2460,
           "currency": ""
         },
         {
@@ -130,12 +130,12 @@
           "currency": ""
         },
         {
-          "price": 519,
-          "airline": "UR",
-          "departure_at": "2026-06-26",
+          "price": 538,
+          "airline": "WB",
+          "departure_at": "2026-06-29",
           "return_at": "",
           "stops": 1,
-          "duration": 920,
+          "duration": 1070,
           "currency": ""
         }
       ],
@@ -143,7 +143,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 7,
+          "n": 8,
           "error": null
         },
         {
@@ -167,7 +167,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 7,
+          "n": 8,
           "error": null
         },
         {
@@ -189,7 +189,7 @@
           "error": null
         }
       ],
-      "observations": 25
+      "observations": 27
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -283,7 +283,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -305,7 +305,7 @@
           "error": null
         }
       ],
-      "observations": 5
+      "observations": 4
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
