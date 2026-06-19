@@ -421,7 +421,7 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
         _read.append(f'            <li><a href="{pfx}/weather">Weather</a></li>')
     read_links = "\n".join(_read)
     # region.js only on non-root editions, so Zimbabwe footers stay identical.
-    region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=2"></script>\n'
+    region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=3"></script>\n'
     return f"""  <hr class="dateHr">
 
 <!-- Back to top -->

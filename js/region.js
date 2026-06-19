@@ -77,6 +77,14 @@
     window.MT_SIDEBAR_RSS_FEEDS = REGION_FEEDS[r.code].sidebar;
     window.MT_SPOTLIGHT_RSS_FEEDS = REGION_FEEDS[r.code].spotlight;
   }
+  // Local newsrooms for the "Local" filter (config.js falls back to its
+  // Zimbabwe list when unset, so the root is unchanged).
+  var REGION_LOCAL = {
+    za: ["news24", "daily maverick", "businessday", "business day", "times live",
+         "timeslive", "moneyweb", "iol", "sowetan", "the citizen",
+         "mail & guardian", "ewn", "eyewitness news", "fin24", "businesstech"]
+  };
+  if (REGION_LOCAL[r.code]) window.MT_LOCAL_SOURCES = REGION_LOCAL[r.code];
 
   // Prefix an absolute same-origin path with the edition base. Leaves
   // unchanged: the root edition (base ""), already-prefixed paths, absolute

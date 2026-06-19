@@ -517,7 +517,7 @@ function parseCmsFrontmatter(raw) {
 // MAIN STORIES — multiple RSS feeds combined, sorted by newest
 // ============================================================
 function loadMainStories() {
-  var cacheKey = "main_all_v3"; // v3: Zimbabwe-relevance filter applied at normalize time
+  var cacheKey = "main_all_v3" + (window.MT_BASE ? "_" + window.MT_REGION : ""); // v3: Zimbabwe-relevance filter applied at normalize time
   var cached = getCache(cacheKey);
   if (cached) {
     _allMainArticles = cached;
@@ -625,7 +625,7 @@ function loadMainStories() {
 // SIDEBAR — additional feeds, broader coverage
 // ============================================================
 function loadSidebarStories() {
-  var cacheKey = "sidebar_all_v2"; // v2: Zimbabwe-relevance filter applied at normalize time
+  var cacheKey = "sidebar_all_v2" + (window.MT_BASE ? "_" + window.MT_REGION : ""); // v2: Zimbabwe-relevance filter applied at normalize time
   var cached = getCache(cacheKey);
   if (cached) {
     _allSidebarArticles = cached;
@@ -700,8 +700,9 @@ var LOCAL_ZIM_SOURCES = [
 function isLocalZimSource(source) {
   if (!source) return false;
   var s = source.toLowerCase();
-  for (var i = 0; i < LOCAL_ZIM_SOURCES.length; i++) {
-    if (s.indexOf(LOCAL_ZIM_SOURCES[i]) !== -1) return true;
+  var list = window.MT_LOCAL_SOURCES || LOCAL_ZIM_SOURCES;
+  for (var i = 0; i < list.length; i++) {
+    if (s.indexOf(list[i]) !== -1) return true;
   }
   return false;
 }
@@ -1785,7 +1786,7 @@ function spotlightIsStale(articles) {
 }
 
 function loadSpotlightStories() {
-  var cacheKey = "spotlight_all";
+  var cacheKey = "spotlight_all" + (window.MT_BASE ? "_" + window.MT_REGION : "");
   var cached = getCache(cacheKey);
   if (cached && !spotlightIsStale(cached)) {
     renderSpotlightStories(cached);
@@ -1817,7 +1818,7 @@ function loadSpotlightStories() {
 }
 
 function loadSpotlightFromRSS() {
-  var cacheKey = "spotlight_all";
+  var cacheKey = "spotlight_all" + (window.MT_BASE ? "_" + window.MT_REGION : "");
   var allArticles = [];
   var completed = 0;
   var total = SPOTLIGHT_RSS_FEEDS.length;
@@ -2063,7 +2064,7 @@ function renderSpotlightStories(articles) {
 function loadCmsSpotlightArticles(container) {
   if (!container || !container.length) return;
 
-  var cacheKey = "cms_spotlight_cache_v2";
+  var cacheKey = "cms_spotlight_cache_v2" + (window.MT_BASE ? "_" + window.MT_REGION : "");
   var cached = getCache(cacheKey);
   if (cached && cached.length) {
     appendCmsSpotlightItems(container, cached);
