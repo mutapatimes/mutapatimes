@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-19T05:23:45.362534+00:00",
+  "fetched_at": "2026-06-19T10:56:54.173053+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -67,15 +67,6 @@
       "baths": "2"
     },
     {
-      "title": "Solid neat family home!!!",
-      "url": "https://www.property.co.zw/for-sale/houses-pnt249160",
-      "price": "USD 130,000",
-      "location": "Mainway Meadows, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/60/02/3b/60023b2b-54f9-4257-aa2a-3ce6569a6896_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "Spacious Pomona 5-Bed Home In Borrowdale Pomona",
       "url": "https://www.property.co.zw/for-sale/houses-sef244687",
       "price": "USD 350,000",
@@ -92,15 +83,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/99/d5/c1/99d5c172-4d56-4a06-a7e1-be59088e7a34_thumbnail591.webp",
       "beds": "3",
       "baths": "3"
-    },
-    {
-      "title": "Modern Luxury in Arlington East!!!",
-      "url": "https://www.property.co.zw/for-sale/houses-pnt245044",
-      "price": "USD 228,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/d7/4e/75/d74e752d-e70d-4a40-8422-4f7fd8124f34_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     },
     {
       "title": "Luxury Mansion in Glen Lorne Folly John",
@@ -200,6 +182,24 @@
       "image": "https://www.property.co.zw/uploadedfiles/72/1b/5e/721b5e90-831c-4d60-870f-f02f980d177a_thumbnail591.webp",
       "beds": "3",
       "baths": "3"
+    },
+    {
+      "title": "House for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp249201",
+      "price": "USD 120,000",
+      "location": "Waterfalls, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/6f/95/b3/6f95b376-0110-4e26-9e98-68820311214b_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Brand New Ready To Move In July 2026",
+      "url": "https://www.property.co.zw/for-sale/townhouses-knp244827",
+      "price": "USD 355,000",
+      "location": "Borrowdale Brooke, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/c9/1b/43/c91b4386-7bfb-469f-900b-02ecb5cd1040_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     }
   ]
 }
