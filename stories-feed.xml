@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 10:19:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 10:59:03 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -77,6 +77,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Wiruma — Driver/Messenger</title>
+      <link>https://mutapatimes.com/stories/e91f104471eb.html</link>
+      <description>We’re seeking a reliable, honest and energetic Driver/Messenger to join our team. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 18 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/e91f104471eb.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Wiruma</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/e91f104471eb.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e91f104471eb.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/e91f104471eb.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>ST-ONE Machinery — Diesel plant Fitter</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/bf1bfa364916.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/bf1bfa364916.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/bf1bfa364916.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Student Attachment Opportunity</title>
-      <link>https://mutapatimes.com/stories/b56fe728e1a9.html</link>
-      <description>STUDENT ATTACHMENT OPPORTUNITY - ACCOUNTING A leading microfinance institution has exciting opportunities for students on attachment to join the Finance Department based in Harare. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 18 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/b56fe728e1a9.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/b56fe728e1a9.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b56fe728e1a9.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/b56fe728e1a9.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
