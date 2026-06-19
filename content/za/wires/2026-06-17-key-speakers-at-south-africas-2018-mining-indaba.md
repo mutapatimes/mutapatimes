@@ -1,0 +1,16 @@
+---
+title: "Key Speakers At South Africa’s 2018 Mining Indaba"
+date: 2026-06-17T08:08:22.000Z
+author: Miningmx
+category: Business
+image: 
+summary: "Key Speakers At South Africa’s 2018 Mining Indaba"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNMlJnZG1MZnVGdjNYMnlxVk1zcUNEOHlaNUZWcWg2dnFpaWhKSGJ3OXhWU2Z0ZUdtQW51QXNMVXhyNTUwRmxuOFRkVDZnSmoxN25TNEpvVEFEbElUa2d3bk1LNnpBVUVvcmhiUU1Cb3J0MG1UU1k4MkQ2QUdWb3dINUJhcmZjYWh5bDRKajNpSzFKdUtFQ2lDaXcyQ3ZCWWk1a2lwOWVweDBIX0l2bl9COGFzbVpMQ3czYzRQMi1LRWQ5cXd1VDR6ZmFKVGNrNktGX2ZrMVZuaThZRVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Miningmx.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNMlJnZG1MZnVGdjNYMnlxVk1zcUNEOHlaNUZWcWg2dnFpaWhKSGJ3OXhWU2Z0ZUdtQW51QXNMVXhyNTUwRmxuOFRkVDZnSmoxN25TNEpvVEFEbElUa2d3bk1LNnpBVUVvcmhiUU1Cb3J0MG1UU1k4MkQ2QUdWb3dINUJhcmZjYWh5bDRKajNpSzFKdUtFQ2lDaXcyQ3ZCWWk1a2lwOWVweDBIX0l2bl9COGFzbVpMQ3czYzRQMi1LRWQ5cXd1VDR6ZmFKVGNrNktGX2ZrMVZuaThZRVE?oc=5)

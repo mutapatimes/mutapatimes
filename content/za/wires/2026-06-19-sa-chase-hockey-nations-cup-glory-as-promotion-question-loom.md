@@ -1,0 +1,16 @@
+---
+title: "SA chase hockey Nations Cup glory as promotion question looms"
+date: 2026-06-19T09:54:21.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA chase hockey Nations Cup glory as promotion question looms"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxQZHpOelM0dHdBYnBHZGtLa2diTFBxNmdIUmM2UmR3ZFRaTFZ1dXNkdktIc3A3RTd6YWk1Tk5JVU9tLWZ3M2V2dExiV1Rsb0VzMG1UVFpkT25iZUxhSmQ0bU90aUpBSUdOemstT0FzR1NSTEZ2QlR6ZkhqZWJUYTUtdDFqU3BsMnZRNFJSdDZXWENybXV2eERWblIxWU1ScXBfSnhYNDhUSlFieDdnRkQ2SVVtakh5WWF4TGt4M2h2ZGZuTVlKcnZnM3B4ZzVFZG9wbHZxU0I0VWc4U3BnQTlxNEF0dkFpbmlKZ2VoUkNNT3kzNndnU3UyTmNPaHB4RS1WbDJPQVdySk1pLU80SnctUmNvWQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxQZHpOelM0dHdBYnBHZGtLa2diTFBxNmdIUmM2UmR3ZFRaTFZ1dXNkdktIc3A3RTd6YWk1Tk5JVU9tLWZ3M2V2dExiV1Rsb0VzMG1UVFpkT25iZUxhSmQ0bU90aUpBSUdOemstT0FzR1NSTEZ2QlR6ZkhqZWJUYTUtdDFqU3BsMnZRNFJSdDZXWENybXV2eERWblIxWU1ScXBfSnhYNDhUSlFieDdnRkQ2SVVtakh5WWF4TGt4M2h2ZGZuTVlKcnZnM3B4ZzVFZG9wbHZxU0I0VWc4U3BnQTlxNEF0dkFpbmlKZ2VoUkNNT3kzNndnU3UyTmNPaHB4RS1WbDJPQVdySk1pLU80SnctUmNvWQ?oc=5)
