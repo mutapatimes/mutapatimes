@@ -38,12 +38,12 @@
           "currency": ""
         },
         {
-          "price": 484,
-          "airline": "XQ",
+          "price": 473,
+          "airline": "MW",
           "departure_at": "2026-08-16",
           "return_at": "",
           "stops": 3,
-          "duration": 1595,
+          "duration": 2290,
           "currency": ""
         },
         {
@@ -103,21 +103,21 @@
           "currency": ""
         },
         {
+          "price": 473,
+          "airline": "MW",
+          "departure_at": "2026-08-16",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2290,
+          "currency": ""
+        },
+        {
           "price": 475,
           "airline": "QR",
           "departure_at": "2026-09-01",
           "return_at": "",
           "stops": 1,
           "duration": 1540,
-          "currency": ""
-        },
-        {
-          "price": 484,
-          "airline": "XQ",
-          "departure_at": "2026-08-16",
-          "return_at": "",
-          "stops": 3,
-          "duration": 1595,
           "currency": ""
         },
         {
@@ -332,9 +332,9 @@
       },
       "monthly": [
         {
-          "price": 1397,
+          "price": 1418,
           "airline": "FA",
-          "departure_at": "2026-06-20",
+          "departure_at": "2026-06-30",
           "return_at": "",
           "stops": 0,
           "duration": 110,
