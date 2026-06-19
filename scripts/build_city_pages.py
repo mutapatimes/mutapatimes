@@ -520,7 +520,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
     demonym_adj = meta["demonym_adj"]
     scene_report = meta["scene_report"]
     # region.js only on non-root editions, so the Zimbabwe pages stay byte-identical.
-    region_js = "" if not pfx else '<script defer src="/js/region.js?v=1"></script>\n'
+    region_js = "" if not pfx else '<script defer src="/js/region.js?v=2"></script>\n'
     # City link lists, generated from this edition's cities at three indents.
     cities_dropdown = "\n".join(
         f'          <li><a href="{pfx}/{c["slug"]}-news">{esc(c["name"])}</a></li>'

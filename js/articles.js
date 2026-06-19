@@ -8,13 +8,13 @@
   var GITHUB_REPO = "mutapatimes/mutapatimes";
   var GITHUB_BRANCH = "main";
   // Multi-edition: region.js sets these; identity / "content" at the ZW root,
-  // "content/za" under /za. ARTICLES_PATH stays relative (served tree mirrors
-  // under /za); only the GitHub source URLs take the content dir.
+  // "content/za" under /za. Content lives at a region SUFFIX (content/za), so
+  // same-origin content fetches use mtContentDir (absolute), NOT mtUrl.
   var mtUrl = window.mtUrl || function (p) { return p; };
   var mtContentDir = window.MT_CONTENT_DIR || "content";
   var ARTICLES_API = "https://api.github.com/repos/" + GITHUB_REPO + "/contents/" + mtContentDir + "/articles?ref=" + GITHUB_BRANCH;
   var ARTICLES_RAW = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/" + mtContentDir + "/articles/";
-  var ARTICLES_PATH = "content/articles/";
+  var ARTICLES_PATH = "/" + mtContentDir + "/articles/";
 
   // Simple frontmatter parser: splits --- delimited YAML header from markdown body
   function parseFrontmatter(raw) {
@@ -147,7 +147,7 @@
   // extra XHRs — that was the bug behind "no articles found" on slow
   // connections (concurrency-capped XHRs would silently fail).
   function fetchLocalArticles(container) {
-    fetchJSON("content/articles/index.json", function (err, data) {
+    fetchJSON("/" + mtContentDir + "/articles/index.json", function (err, data) {
       if (err || !data || !data.length) {
         container.innerHTML = '<p class="articles-empty">No articles yet. Check back soon.</p>';
         return;

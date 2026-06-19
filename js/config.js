@@ -12,7 +12,7 @@ var mtContentDir = window.MT_CONTENT_DIR || "content";
 var MUTAPA_CONFIG = {
   CACHE_DURATION: 30 * 60 * 1000,
   RSS_API: "https://api.rss2json.com/v1/api.json?rss_url=",
-  DATA_PATH: "data/",
+  DATA_PATH: (window.MT_BASE ? "/" + (window.MT_DATA_DIR || "data") + "/" : "data/"),
   GITHUB_REPO: "mutapatimes/mutapatimes",
   GITHUB_BRANCH: "main"
 };
@@ -27,7 +27,7 @@ var _currentPage = 1;
 var ARTICLES_PER_PAGE = 20;
 
 // Multiple RSS feeds to pull from — broad, less selective, prioritizing recency
-var MAIN_RSS_FEEDS = [
+var MAIN_RSS_FEEDS = window.MT_MAIN_RSS_FEEDS || [
   "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
@@ -39,7 +39,7 @@ var MAIN_RSS_FEEDS = [
 ];
 
 // Sidebar feeds — more local-focused
-var SIDEBAR_RSS_FEEDS = [
+var SIDEBAR_RSS_FEEDS = window.MT_SIDEBAR_RSS_FEEDS || [
   "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
@@ -48,7 +48,7 @@ var SIDEBAR_RSS_FEEDS = [
 ];
 
 // Spotlight feeds — multiple targeted searches to ensure enough reputable results
-var SPOTLIGHT_RSS_FEEDS = [
+var SPOTLIGHT_RSS_FEEDS = window.MT_SPOTLIGHT_RSS_FEEDS || [
   "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
   "https://news.google.com/rss/search?q=%22Southern+Africa%22+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en"
@@ -449,7 +449,7 @@ function loadCmsArticles(callback) {
       // Fallback: try local index.json
       $.ajax({
         type: "GET",
-        url: "content/articles/index.json",
+        url: "/" + mtContentDir + "/articles/index.json",
         dataType: "json",
         timeout: 5000,
         success: function(files) {
@@ -459,7 +459,7 @@ function loadCmsArticles(callback) {
           files.forEach(function(filename) {
             $.ajax({
               type: "GET",
-              url: "content/articles/" + filename,
+              url: "/" + mtContentDir + "/articles/" + filename,
               dataType: "text",
               timeout: 5000,
               success: function(raw) {
