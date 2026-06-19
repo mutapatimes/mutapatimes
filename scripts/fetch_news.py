@@ -15,12 +15,85 @@ import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
 
+# ── Region awareness ────────────────────────────────────────────────────────
+# Zimbabwe is the DEFAULT region and runs on the in-file literals below, so its
+# behaviour is byte-for-byte unchanged (_load_region("zw") returns early without
+# touching a single global). Other regions (--region za) override these globals
+# from scripts/regions.py: data/content dirs, query sets, keywords, sources and
+# the canonical/card URL bases all shift to the /za edition.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from regions import (
+        get_region as _get_region,
+        region_path_prefix as _region_path_prefix,
+        DEFAULT_REGION as _DEFAULT_REGION,
+    )
+except ImportError:
+    _get_region = None
+    _region_path_prefix = None
+    _DEFAULT_REGION = "zw"
+
+REGION_CODE = "zw"
+# Same-origin / output locations (ZW defaults; overridden for other regions).
+DATA_DIR = "data"
+CONTENT_DIR = "content"
+WIRES_DIR = "content/wires"
+ARTICLES_GLOB = "content/articles/*.md"
+WIRES_GLOB = "content/wires/*.md"
+INDEX_PATH = os.path.join("content", "articles", "index.json")
+# Absolute canonical base + branded-card URL bases.
+CANON_BASE = "https://mutapatimes.com"
+CARD_URL_BASE = "https://mutapatimes.com/img/cards/news/"  # absolute (og fallback)
+CARD_PATH_BASE = "/img/cards/news/"                          # root-relative (index)
+# Query tuning for the spotlight API cascade.
+SPOTLIGHT_QUERY = "Zimbabwe"
+API_COUNTRY = "zw"
+
+
+def _load_region(code):
+    """Point all region-dependent globals at the given region's edition.
+
+    Zimbabwe (the default) keeps the in-file literals untouched so its pipeline
+    is provably unchanged; only non-default regions read overrides from
+    regions.py."""
+    global REGION_CODE, DATA_DIR, CONTENT_DIR, WIRES_DIR, ARTICLES_GLOB
+    global WIRES_GLOB, INDEX_PATH, CANON_BASE, CARD_URL_BASE, CARD_PATH_BASE
+    global SPOTLIGHT_QUERY, API_COUNTRY
+    global CATEGORIES, ALL_RSS_FEEDS, GNEWS_QUERIES, SPOTLIGHT_RSS
+    global _ZW_KEYWORDS, _ZW_SOURCES
+
+    REGION_CODE = (code or _DEFAULT_REGION).lower()
+    if REGION_CODE == _DEFAULT_REGION or _get_region is None:
+        return  # Zimbabwe: leave every literal exactly as defined in this file.
+
+    r = _get_region(REGION_CODE)
+    prefix = _region_path_prefix(REGION_CODE)        # e.g. "/za"
+    DATA_DIR = r["data_dir"]                          # e.g. "data/za"
+    CONTENT_DIR = r["content_dir"]                    # e.g. "content/za"
+    WIRES_DIR = f"{CONTENT_DIR}/wires"
+    ARTICLES_GLOB = f"{CONTENT_DIR}/articles/*.md"
+    WIRES_GLOB = f"{CONTENT_DIR}/wires/*.md"
+    INDEX_PATH = os.path.join(CONTENT_DIR, "articles", "index.json")
+    CANON_BASE = f"https://mutapatimes.com{prefix}"
+    CARD_URL_BASE = f"https://mutapatimes.com/img/cards{prefix}/news/"
+    CARD_PATH_BASE = f"/img/cards{prefix}/news/"
+    SPOTLIGHT_QUERY = r.get("spotlight_query", SPOTLIGHT_QUERY)
+    API_COUNTRY = r.get("api_country", API_COUNTRY)
+    CATEGORIES = r.get("category_queries", CATEGORIES)
+    ALL_RSS_FEEDS = r.get("all_rss_feeds", ALL_RSS_FEEDS)
+    GNEWS_QUERIES = r.get("gnews_queries", GNEWS_QUERIES)
+    SPOTLIGHT_RSS = r.get("spotlight_rss", SPOTLIGHT_RSS)
+    _ZW_KEYWORDS = r.get("keywords", _ZW_KEYWORDS)
+    _ZW_SOURCES = r.get("sources", _ZW_SOURCES)
+    print(f"[region] {REGION_CODE}: data={DATA_DIR} content={CONTENT_DIR} "
+          f"canon={CANON_BASE}")
+
 
 def _card_image_for(url):
     """Return public URL of the branded card for this article, used as a
     guaranteed-image fallback when the source image fails to load."""
     h = hashlib.md5((url or "").encode("utf-8")).hexdigest()[:12]
-    return f"https://mutapatimes.com/img/cards/news/{h}.png"
+    return f"{CARD_URL_BASE}{h}.png"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
@@ -29,7 +102,6 @@ NEWSDATA_API_KEY = os.environ.get("NEWSDATA_API_KEY", "")
 NEWSAPI_API_KEY = os.environ.get("NEWSAPI_API_KEY", "")
 MEDIASTACK_API_KEY = os.environ.get("MEDIASTACK_API_KEY", "")
 PERIGON_API_KEY = os.environ.get("PERIGON_API_KEY", "")
-DATA_DIR = "data"
 
 # Minimum articles from cascade before stopping early
 MIN_SPOTLIGHT_ARTICLES = 10
@@ -75,6 +147,23 @@ ALL_RSS_FEEDS = [
     "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
+]
+
+# Raw GNews API query strings (URL-encoded at call time). ZW defaults; the
+# region loader swaps these for the active edition.
+GNEWS_QUERIES = [
+    "Zimbabwe business economy finance investment",
+    "Zimbabwe politics government policy reform",
+    "Zimbabwe technology digital",
+    "Zimbabwe",
+    'Zimbabwe OR "Southern Africa" OR SADC',
+]
+
+# Reputable-source spotlight RSS (Google News site: queries). ZW defaults.
+SPOTLIGHT_RSS = [
+    "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
+    'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
 ]
 
 MAX_NEW_DESCRIPTIONS = 10  # Cap per run to stay within Gemini free-tier rate limits
@@ -399,7 +488,7 @@ def get_cms_spotlight_articles():
     the reputable-source wire picker further up the pipeline."""
     import glob as glob_mod
     articles = []
-    for filepath in sorted(glob_mod.glob("content/articles/*.md")):
+    for filepath in sorted(glob_mod.glob(ARTICLES_GLOB)):
         try:
             with open(filepath) as f:
                 content = f.read()
@@ -461,7 +550,7 @@ def fetch_from_guardian():
     # Search for Zimbabwe content, show fields needed for spotlight
     url = (
         f"https://content.guardianapis.com/search"
-        f"?q=Zimbabwe&order-by=newest&page-size=20"
+        f"?q={urllib.parse.quote(SPOTLIGHT_QUERY)}&order-by=newest&page-size=20"
         f"&show-fields=headline,trailText,thumbnail,byline"
         f"&api-key={api_key}"
     )
@@ -509,7 +598,7 @@ def fetch_from_nyt():
 
     url = (
         f"https://api.nytimes.com/svc/search/v2/articlesearch.json"
-        f"?q=Zimbabwe&sort=newest&fl=headline,abstract,web_url,pub_date,multimedia,source"
+        f"?q={urllib.parse.quote(SPOTLIGHT_QUERY)}&sort=newest&fl=headline,abstract,web_url,pub_date,multimedia,source"
         f"&api-key={api_key}"
     )
     try:
@@ -586,13 +675,7 @@ def fetch_from_gnews():
         "iol.co.za", "timeslive.co.za",
     ]
 
-    queries = [
-        urllib.parse.quote("Zimbabwe business economy finance investment"),
-        urllib.parse.quote("Zimbabwe politics government policy reform"),
-        urllib.parse.quote("Zimbabwe technology digital"),
-        "Zimbabwe",
-        urllib.parse.quote('Zimbabwe OR "Southern Africa" OR SADC'),
-    ]
+    queries = [urllib.parse.quote(q) for q in GNEWS_QUERIES]
 
     raw_articles = []
     for q in queries:
@@ -653,8 +736,8 @@ def fetch_from_newsdata():
         return []
 
     url = (
-        f"https://newsdata.io/api/1/latest?country=zw&language=en"
-        f"&q=Zimbabwe&apikey={NEWSDATA_API_KEY}"
+        f"https://newsdata.io/api/1/latest?country={API_COUNTRY}&language=en"
+        f"&q={urllib.parse.quote(SPOTLIGHT_QUERY)}&apikey={NEWSDATA_API_KEY}"
     )
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
@@ -696,7 +779,7 @@ def fetch_from_newsapi():
         return []
 
     url = (
-        f"https://newsapi.org/v2/everything?q=Zimbabwe&language=en"
+        f"https://newsapi.org/v2/everything?q={urllib.parse.quote(SPOTLIGHT_QUERY)}&language=en"
         f"&sortBy=publishedAt&pageSize=50&apiKey={NEWSAPI_API_KEY}"
     )
     try:
@@ -751,7 +834,7 @@ def fetch_from_mediastack():
     # Mediastack free tier uses HTTP only (no HTTPS)
     url = (
         f"http://api.mediastack.com/v1/news?access_key={MEDIASTACK_API_KEY}"
-        f"&countries=zw&languages=en&limit=50"
+        f"&countries={API_COUNTRY}&languages=en&limit=50"
     )
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MutapaTimes/1.0"})
@@ -797,7 +880,7 @@ def fetch_from_perigon():
         return []
 
     url = (
-        f"https://api.goperigon.com/v1/all?q=Zimbabwe&language=en"
+        f"https://api.goperigon.com/v1/all?q={urllib.parse.quote(SPOTLIGHT_QUERY)}&language=en"
         f"&sortBy=date&size=50&apiKey={PERIGON_API_KEY}"
     )
     try:
@@ -837,11 +920,7 @@ def fetch_from_perigon():
 def fetch_from_rss():
     """Fetch spotlight articles from Google News RSS. Always works (no API key)."""
     print("  RSS fallback: fetching from Google News RSS...")
-    spotlight_rss = [
-        "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
-        "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
-        'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
-    ]
+    spotlight_rss = SPOTLIGHT_RSS
     articles = []
     for rss_url in spotlight_rss:
         raw = fetch_url(rss_url)
@@ -1193,8 +1272,8 @@ def _get_existing_source_urls():
     re-import an article we already have anywhere on disk."""
     import glob as glob_mod
     urls = set()
-    for filepath in (glob_mod.glob("content/articles/*.md")
-                     + glob_mod.glob("content/wires/*.md")):
+    for filepath in (glob_mod.glob(ARTICLES_GLOB)
+                     + glob_mod.glob(WIRES_GLOB)):
         try:
             with open(filepath) as f:
                 for line in f:
@@ -1221,15 +1300,16 @@ def write_articles_to_cms(api_articles, label="CMS WIRE IMPORT", category_hint=N
     """
     from datetime import datetime, timezone
     print(f"\n=== {label} ===")
-    cms_dir = "content/wires"
+    cms_dir = WIRES_DIR
     os.makedirs(cms_dir, exist_ok=True)
 
     existing_urls = _get_existing_source_urls()
-    # The article index lives in content/articles/index.json regardless
+    # The article index lives in <content>/articles/index.json regardless
     # of which folder a given .md actually sits in - the front-end JS
     # (js/articles.js) fetches that single path, so all entries (both
     # originals and wires) must be merged into it.
-    index_path = os.path.join("content", "articles", "index.json")
+    index_path = INDEX_PATH
+    os.makedirs(os.path.dirname(index_path), exist_ok=True)
     # Slugs of articles newly written in this run — used after the loop to
     # ping IndexNow so each one gets indexed within minutes.
     new_slugs_this_run = []
@@ -1375,7 +1455,7 @@ spotlight: false
         if dated_slug not in indexed_slugs:
             # Card path matches build_feed_cards.py's hash for CMS articles
             # (md5 of the canonical mutapatimes.com URL).
-            canonical = f"https://mutapatimes.com/articles/{dated_slug}.html"
+            canonical = f"{CANON_BASE}/articles/{dated_slug}.html"
             card_hash = hashlib.md5(canonical.encode("utf-8")).hexdigest()[:12]
             index.append({
                 "slug": dated_slug,
@@ -1386,7 +1466,7 @@ spotlight: false
                 "summary": desc[:280] if desc else "",
                 "source_type": "wire",
                 "image": image,
-                "card_image": f"/img/cards/news/{card_hash}.png",
+                "card_image": f"{CARD_PATH_BASE}{card_hash}.png",
                 "featured": False,
             })
             # Track the dated slug so the next iteration in this loop
@@ -1410,10 +1490,15 @@ spotlight: false
     # IndexNow: tell Bing/Yandex/etc. about every newly imported article
     # so they crawl + index within minutes instead of waiting for the next
     # sitemap sweep. Idempotent — pings are deduped against past runs.
-    if new_slugs_this_run:
+    #
+    # GATED to the default region. Non-default editions (e.g. /za) are NOT
+    # announced to search engines until they are explicitly flipped to
+    # indexable (the Phase 3 sign-off gate); pinging /za URLs now would
+    # surface an unfinished edition. Remove this guard at /za go-live.
+    if new_slugs_this_run and REGION_CODE == _DEFAULT_REGION:
         try:
             from indexnow_ping import ping_urls
-            urls = [f"https://mutapatimes.com/articles/{s}.html"
+            urls = [f"{CANON_BASE}/articles/{s}.html"
                     for s in new_slugs_this_run]
             ping_urls(urls)
         except Exception as e:
@@ -1454,7 +1539,16 @@ def import_guardian_nyt_to_cms():
         print("  No Guardian/NYT articles to import")
 
 
-def main():
+def main(region=None):
+    if region is None:
+        import argparse
+        parser = argparse.ArgumentParser(description="Fetch news for a region edition.")
+        parser.add_argument("--region", default=_DEFAULT_REGION,
+                            help="Region code (zw=default/root, za=South Africa).")
+        args = parser.parse_args()
+        region = args.region
+    _load_region(region)
+
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # Fetch category articles from Google News RSS

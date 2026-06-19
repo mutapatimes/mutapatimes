@@ -60,6 +60,35 @@ REGIONS = {
             "b-metro", "the standard", "daily news", "zbcnews", "cite",
             "the mutapa times",
         ],
+        # Spotlight / API-cascade tuning. ZW values mirror the in-file
+        # defaults in fetch_news.py exactly (fetch_news uses its own literals
+        # for the default region, so these are documentation/parity copies).
+        "spotlight_query": "Zimbabwe",
+        "api_country": "zw",
+        "gnews_queries": [
+            "Zimbabwe business economy finance investment",
+            "Zimbabwe politics government policy reform",
+            "Zimbabwe technology digital",
+            "Zimbabwe",
+            'Zimbabwe OR "Southern Africa" OR SADC',
+        ],
+        "spotlight_rss": [
+            "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+site:voanews.com+OR+site:africanews.com+OR+site:france24.com+OR+site:dw.com+OR+site:news24.com+OR+site:dailymaverick.co.za+OR+site:allafrica.com&hl=en&gl=US&ceid=US:en",
+            'https://news.google.com/rss/search?q="Southern+Africa"+OR+SADC+OR+Zimbabwe+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=US&ceid=US:en',
+        ],
+        "all_rss_feeds": [
+            "https://news.google.com/rss/search?q=Zimbabwe&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+news+today&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Harare+OR+Bulawayo+OR+Mutare&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+politics+government+economy&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=site:zimlive.com+OR+site:newsday.co.zw+OR+site:herald.co.zw+OR+site:bulawayo24.com+OR+site:263chat.com&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=site:pindula.co.zw+OR+site:nehanda+radio+OR+site:newzimbabwe.com+OR+site:thezimbabwemail.com&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+local+news&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+business+sports+entertainment+health&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
+            "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
+        ],
         "cities": [
             {"slug": "harare", "name": "Harare", "matchers": [r"\bharare\b"]},
             {"slug": "bulawayo", "name": "Bulawayo", "matchers": [r"\bbulawayo\b"]},
@@ -106,6 +135,32 @@ REGIONS = {
             "timeslive", "moneyweb", "iol", "sowetan", "the citizen", "mail & guardian",
             "ewn", "eyewitness news", "fin24", "businesstech", "the conversation",
             "the mutapa times",
+        ],
+        "spotlight_query": "South Africa",
+        "api_country": "za",
+        "gnews_queries": [
+            "South Africa business economy finance investment",
+            "South Africa policy government regulation reform",
+            "South Africa technology digital fintech",
+            "South Africa",
+            'South Africa OR JSE OR rand OR SARB',
+        ],
+        "spotlight_rss": [
+            "https://news.google.com/rss/search?q=South+Africa+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:bloomberg.com+OR+site:apnews.com+OR+site:cnn.com&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+site:news24.com+OR+site:dailymaverick.co.za+OR+site:businesslive.co.za+OR+site:timeslive.co.za+OR+site:mg.co.za+OR+site:moneyweb.co.za+OR+site:ewn.co.za&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+site:reuters.com+OR+site:bbc.com+OR+site:theguardian.com+OR+site:aljazeera.com&hl=en&gl=ZA&ceid=ZA:en",
+        ],
+        "all_rss_feeds": [
+            "https://news.google.com/rss/search?q=South+Africa&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+news+today&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=Johannesburg+OR+Cape+Town+OR+Durban&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+politics+government+economy&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=site:news24.com+OR+site:timeslive.co.za+OR+site:iol.co.za+OR+site:sowetanlive.co.za+OR+site:citizen.co.za&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=site:dailymaverick.co.za+OR+site:businesslive.co.za+OR+site:moneyweb.co.za+OR+site:mg.co.za&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+local+news&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+business+sports+entertainment+health&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=Johannesburg+Cape+Town+Durban+Pretoria+Gqeberha+Bloemfontein&hl=en&gl=ZA&ceid=ZA:en",
+            "https://news.google.com/rss/search?q=South+Africa+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=ZA&ceid=ZA:en",
         ],
         "cities": [
             {"slug": "johannesburg", "name": "Johannesburg", "matchers": [r"\bjohannesburg\b", r"\bjoburg\b", r"\bjo'burg\b"]},
