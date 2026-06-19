@@ -387,7 +387,15 @@
   // Done button instead of throwing the user out to Safari. Same-site links
   // navigate normally in the web view. Capture phase so we beat site handlers.
   if (isNative) {
-    var Browser = Cap && Cap.Plugins && Cap.Plugins.Browser;
+    // Resolve the Browser plugin LAZILY at click time, not once at load:
+    // the native plugin proxy can attach to Capacitor.Plugins slightly after
+    // this script runs, and capturing it once left it permanently undefined,
+    // which dropped every external link to window.open() — i.e. ejected the
+    // user out to the system Safari instead of the in-app Safari View.
+    function getBrowser() {
+      var c = window.Capacitor || Cap;
+      return (c && c.Plugins && c.Plugins.Browser) || null;
+    }
     document.addEventListener('click', function (e) {
       var a = e.target && e.target.closest && e.target.closest('a[href]');
       if (!a) return;
@@ -399,12 +407,12 @@
       // Same-site (mutapatimes.com) stays in the app's web view.
       if (url.hostname === location.hostname ||
           url.hostname.indexOf('mutapatimes.com') !== -1) return;
+      var Browser = getBrowser();
+      if (!Browser || !Browser.open) return; // no in-app browser: let the OS handle it normally
       e.preventDefault();
       haptic('light');
-      if (Browser && Browser.open) {
-        try { Browser.open({ url: url.href, presentationStyle: 'fullscreen' }); return; } catch (_) {}
-      }
-      try { window.open(url.href, '_blank'); } catch (_) { location.href = url.href; }
+      try { Browser.open({ url: url.href, presentationStyle: 'fullscreen' }); }
+      catch (_) { try { window.open(url.href, '_blank'); } catch (e2) { location.href = url.href; } }
     }, true);
   }
 
