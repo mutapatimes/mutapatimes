@@ -247,7 +247,9 @@ def render_page(article, related=None, region="zw", pfx="", depth=1):
     # page_nav() closes head, opens body, prints the masthead+nav
     # page_footer() prints the subscribe banner + footer + </body></html>
     parts = []
-    parts.append(page_head(page_title, meta_desc, canonical, "article", image, depth=depth, pfx=pfx))
+    # Pre-launch editions (e.g. /za before sign-off) carry noindex.
+    robots_val = "index, follow" if _meta.get("indexable", True) else "noindex, follow"
+    parts.append(page_head(page_title, meta_desc, canonical, "article", image, depth=depth, robots=robots_val, pfx=pfx))
     parts.append(f'<script type="application/ld+json">{json.dumps(structured)}</script>')
     parts.append(f'<script type="application/ld+json">{json.dumps(breadcrumb)}</script>')
     parts.append(page_nav(active="articles", depth=depth, pfx=pfx, region=region))

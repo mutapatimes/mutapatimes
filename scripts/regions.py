@@ -20,6 +20,10 @@ refactored to import from here (planned).
 BASE_URL = "https://mutapatimes.com"
 DEFAULT_REGION = "zw"
 
+# A region is only announced to search engines once it is signed off. Until
+# then its pages carry a noindex robots tag and its sitemap is not referenced
+# in robots.txt. Flip a region's "indexable" to True at go-live.
+
 
 def _gnews(query, gl="US"):
     """Build a Google News RSS search URL for a query string."""
@@ -34,6 +38,7 @@ REGIONS = {
         "demonym": "Zimbabwean",
         "path": "",                 # served at the site root
         "hreflang": "en-ZW",
+        "indexable": True,          # live edition — indexed by search engines
         "data_dir": "data",
         "content_dir": "content",
         "category_queries": {
@@ -111,6 +116,7 @@ REGIONS = {
         "demonym": "South African",
         "path": "za",               # served at /za/
         "hreflang": "en-ZA",
+        "indexable": False,         # PRE-LAUNCH: noindex until Phase 3 sign-off
         "data_dir": "data/za",
         "content_dir": "content/za",
         "category_queries": {
@@ -195,6 +201,26 @@ def region_url(code, path="/"):
     if not path.startswith("/"):
         path = "/" + path
     return f"{BASE_URL}{prefix}{path}"
+
+
+def region_is_indexable(code):
+    """True if a region should be indexed by search engines (signed off)."""
+    return bool(get_region(code).get("indexable", True))
+
+
+def region_robots(code, base="index, follow"):
+    """Robots meta value for a region: the given base when indexable, else the
+    same directives with index -> noindex (pre-launch editions stay out of the
+    index while keeping max-image-preview etc.)."""
+    if region_is_indexable(code):
+        return base
+    out = []
+    for p in (x.strip() for x in base.split(",")):
+        pl = p.lower()
+        out.append("noindex" if pl in ("index", "all", "noindex") else p)
+    if not any(x.lower() == "noindex" for x in out):
+        out.insert(0, "noindex")
+    return ", ".join(out)
 
 
 def all_region_codes():

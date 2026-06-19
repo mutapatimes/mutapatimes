@@ -927,6 +927,14 @@ def build_articles(region="zw"):
                     robots_val = "noindex, follow"
             except Exception:
                 pass
+        # Pre-launch editions (e.g. /za before sign-off) are never indexed,
+        # regardless of article age or source type.
+        if _get_region is not None:
+            try:
+                if not _get_region(region).get("indexable", True):
+                    robots_val = "noindex, follow"
+            except Exception:
+                pass
         html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=depth, robots=robots_val, pfx=pfx))
         html_parts.append(f"""
 <script type="application/ld+json">
@@ -1087,7 +1095,7 @@ def build_articles(region="zw"):
             f.write("\n".join(html_parts))
         count += 1
 
-    print(f"Built {count} static article pages in articles/")
+    print(f"Built {count} static article pages in {os.path.relpath(out_dir, ROOT_DIR)}/")
     return count
 
 # ─── Main ─────────────────────────────────────────────────────────────────
@@ -1095,6 +1103,12 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--region", default="zw",
                     help="Region edition to build (default: zw = Zimbabwe at the root)")
+    # --articles-only is a long-standing no-op: this builder only ever builds
+    # article pages. It is accepted (not errored on) because fetch-news.yml
+    # passes it; before argparse existed the flag was silently ignored, and we
+    # keep that contract so the workflow step never fails.
+    ap.add_argument("--articles-only", action="store_true",
+                    help="No-op (retained for workflow back-compat).")
     args = ap.parse_args()
     print("=== The Mutapa Times: Static Page Builder ===\n")
     article_count = build_articles(args.region)

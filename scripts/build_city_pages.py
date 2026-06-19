@@ -570,7 +570,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="{esc(description)}">
 <meta name="keywords" content="{esc(keywords)}">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="robots" content="{meta['robots']}">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="geo.region" content="{geo}">
@@ -873,8 +873,17 @@ if ('serviceWorker' in navigator) {{
 """
 
 
+_CITY_ROBOTS = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+
+
 def build_region(region):
-    meta = REGION_META[region]
+    meta = dict(REGION_META[region])
+    # Pre-launch editions (e.g. /za before sign-off) carry noindex.
+    try:
+        from regions import region_robots as _region_robots
+        meta["robots"] = _region_robots(region, _CITY_ROBOTS)
+    except ImportError:
+        meta["robots"] = _CITY_ROBOTS
     pfx = "" if region == "zw" else f"/{region}"
     cities = meta["cities"]
     out_dir = ROOT if region == "zw" else os.path.join(ROOT, region)
