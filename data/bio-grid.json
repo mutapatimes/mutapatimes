@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-06-20T06:58:31+00:00",
+  "fetched_at": "2026-06-20T11:13:00+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zim economy grows 8,29pc in 2025",
+      "link": "https://mutapatimes.com/articles/2026-06-19-zim-economy-grows-829pc-in-2025",
+      "image": "https://mutapatimes.com/img/cards/news/58f6a01f3b9f.png",
+      "pubDate": "2026-06-19T22:10:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘Research and AI must deliver jobs, prosperity’",
+      "link": "https://mutapatimes.com/articles/2026-06-19-research-and-ai-must-deliver-jobs-prosperity",
+      "image": "https://mutapatimes.com/img/cards/news/51f6b41e6028.png",
+      "pubDate": "2026-06-19T22:07:33+00:00",
+      "category": "Tech"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: wholesale & retail trade produced $2.1B, 11.1% of GDP.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 20 Jun: Harare clear sky · high 20° / low 9°",
+      "title": "Zim weather 20 Jun: Harare mainly clear · high 20° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-06-20",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-20",
       "pubDate": "2026-06-19T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Black Shark Protection Services — SERGEANT",
       "link": "https://vacancymail.co.zw/jobs/sergeant-67860/",
       "image": "https://mutapatimes.com/img/cards/jobs/03433a9281fd.png",
-      "pubDate": "2026-06-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lightguard Security — Security Guard",
-      "link": "https://vacancymail.co.zw/jobs/security-guard-67859/",
-      "image": "https://mutapatimes.com/img/cards/jobs/92f89ecacc2c.png",
-      "pubDate": "2026-06-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lightguard Security — Security Guard",
-      "link": "https://vacancymail.co.zw/jobs/security-guard-67858/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5bea93b1b068.png",
       "pubDate": "2026-06-19T22:00:00+00:00",
       "category": "Jobs"
     }
