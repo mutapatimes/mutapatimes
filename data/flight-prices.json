@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-19",
+  "fetched_at": "2026-06-20",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -143,7 +143,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 8,
+          "n": 10,
           "error": null
         },
         {
@@ -167,7 +167,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 8,
+          "n": 10,
           "error": null
         },
         {
@@ -189,7 +189,7 @@
           "error": null
         }
       ],
-      "observations": 27
+      "observations": 31
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -377,10 +377,10 @@
           "currency": ""
         },
         {
-          "price": 4059,
+          "price": 4096,
           "airline": "FN",
-          "departure_at": "2026-12-12",
-          "return_at": "2027-01-03",
+          "departure_at": "2026-12-22",
+          "return_at": "2027-01-05",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -397,10 +397,10 @@
           "currency": ""
         },
         {
-          "price": 4059,
+          "price": 4096,
           "airline": "FN",
-          "departure_at": "2026-12-12",
-          "return_at": "2027-01-03",
+          "departure_at": "2026-12-22",
+          "return_at": "2027-01-05",
           "stops": 0,
           "duration": null,
           "currency": ""
