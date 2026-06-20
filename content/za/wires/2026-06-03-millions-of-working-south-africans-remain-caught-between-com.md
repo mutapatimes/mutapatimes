@@ -1,0 +1,16 @@
+---
+title: "Millions of working South Africans remain caught between comprehensive medical scheme cover and an overstretched public healthcare system"
+date: 2026-06-03T00:00:00.000Z
+author: FAnews
+category: Policy
+image: 
+summary: "Millions of working South Africans remain caught between comprehensive medical scheme cover and an overstretched public healthcare system"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOYXRCdW1wbXk4YThMLUw0eW44dGhVd2lNNFpKdF9fUUhxYm52elVLc2hUb1JzOUxDWUxrRmtpSXN4WVVZZzk3QVphRmRMdmw4am40ME5WZHU5dERReVFoWDJ2UlM1OUVfRzRzbTFsaC0tcllScThoeVZIRE5uZWRmU0xuMWVlamNydGFlNWRHc1M2LUptamxSQnE5OFdsbnRFSktzUktJNjJlNkF3TEE1RmU0V1FQdnIzWGtZSExMdWtmMHFMRGxEcG56U2FSaFQyT3d2U2REcnR2Q2RDWjN3LXkwOXpYZU9URnFNNlBzU1o5U211d25vU2UzZE5rOHVWMmVFdFEwUVBaU2QtelV3SmE5U21sVFFaVnJHUzlKNG03NTd4aGQ5b1ln?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by FAnews.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxOYXRCdW1wbXk4YThMLUw0eW44dGhVd2lNNFpKdF9fUUhxYm52elVLc2hUb1JzOUxDWUxrRmtpSXN4WVVZZzk3QVphRmRMdmw4am40ME5WZHU5dERReVFoWDJ2UlM1OUVfRzRzbTFsaC0tcllScThoeVZIRE5uZWRmU0xuMWVlamNydGFlNWRHc1M2LUptamxSQnE5OFdsbnRFSktzUktJNjJlNkF3TEE1RmU0V1FQdnIzWGtZSExMdWtmMHFMRGxEcG56U2FSaFQyT3d2U2REcnR2Q2RDWjN3LXkwOXpYZU9URnFNNlBzU1o5U211d25vU2UzZE5rOHVWMmVFdFEwUVBaU2QtelV3SmE5U21sVFFaVnJHUzlKNG03NTd4aGQ5b1ln?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "US to end Pepfar funding of South Africa's HIV programmes"
+date: 2026-06-19T23:35:07.000Z
+author: BBC
+category: Business
+image: 
+summary: "US to end Pepfar funding of South Africa's HIV programmes"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OOUgwOE9uWnRyTHRoeGtDNFg5SHhPTE5iU1FrUk11Vlh3eGxTV0FDbUx3VmhRazNTd1J1eV9zUHJJemQ0OG53bVlqYVlIblNmVUV0QUtVT016dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by BBC.*
+[Read original article](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OOUgwOE9uWnRyTHRoeGtDNFg5SHhPTE5iU1FrUk11Vlh3eGxTV0FDbUx3VmhRazNTd1J1eV9zUHJJemQ0OG53bVlqYVlIblNmVUV0QUtVT016dw?oc=5)
