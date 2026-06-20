@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-06-20T13:51:12+00:00",
+  "fetched_at": "2026-06-20T16:14:28+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Zimbabwe seeks Asian infrastructure bank funds",
-      "link": "https://mutapatimes.com/articles/2026-06-19-zimbabwe-seeks-asian-infrastructure-bank-funds",
-      "image": "https://mutapatimes.com/img/cards/news/f0ab28586080.png",
-      "pubDate": "2026-06-19T23:56:00+00:00",
-      "category": "Business"
-    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: wholesale & retail trade produced $2.1B, 11.1% of GDP.",
@@ -479,6 +471,14 @@
       "title": "Lightguard Security — Security Guard",
       "link": "https://vacancymail.co.zw/jobs/security-guard-67859/",
       "image": "https://mutapatimes.com/img/cards/jobs/92f89ecacc2c.png",
+      "pubDate": "2026-06-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Lightguard Security — Security Guard",
+      "link": "https://vacancymail.co.zw/jobs/security-guard-67858/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5bea93b1b068.png",
       "pubDate": "2026-06-19T22:00:00+00:00",
       "category": "Jobs"
     }
