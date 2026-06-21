@@ -1,31 +1,37 @@
-name: Fetch News Data (South Africa)
+name: Fetch News Data (regions)
 
-# Separate workflow from the Zimbabwe pipeline (fetch-news.yml). The two run
-# independently with their own 15-minute budgets — South Africa must never eat
-# into Zimbabwe's window, and vice versa. Offset 15 min past the hour so they
-# don't hammer Google News from the same runner pool at the same instant.
+# Non-default editions (South Africa /za, and future /mz, /zm, …) share ONE
+# matrix-driven workflow. To launch a new edition: add its REGIONS entry in
+# scripts/regions.py, then add its code to strategy.matrix.region below — no new
+# workflow file. Zimbabwe (the root) keeps its own richer pipeline in
+# fetch-news.yml (author pages, story cards, landings, push, robots/region.js).
+#
+# Offset 15 min past the hour so these never collide with Zimbabwe's window, and
+# max-parallel:1 serialises the regions so their commits don't race each other.
 
 on:
   schedule:
     - cron: '15 */3 * * *'
   workflow_dispatch:
 
-# Pre-launch: /za is noindex and unlisted. This still keeps the edition fresh
-# so it can be previewed; flip the region to indexable in regions.py at sign-off.
-
 jobs:
-  fetch-news-za:
+  fetch:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
       contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        region: [za]      # ← add new edition codes here to launch them
     steps:
       - uses: actions/checkout@v4
 
       - name: Install Pillow (needed transitively by build_news_pages too)
         run: pip install --quiet Pillow
 
-      - name: Fetch South Africa news
+      - name: Fetch ${{ matrix.region }} news
         env:
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
           NYT_API_KEY: ${{ secrets.NYT_API_KEY }}
@@ -34,38 +40,39 @@ jobs:
           NEWSAPI_API_KEY: ${{ secrets.NEWSAPI_API_KEY }}
           MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
           PERIGON_API_KEY: ${{ secrets.PERIGON_API_KEY }}
-        run: python3 scripts/fetch_news.py --region za
+        run: python3 scripts/fetch_news.py --region ${{ matrix.region }}
 
       - name: Build news landing pages
-        run: python3 scripts/build_news_pages.py --region za
+        run: python3 scripts/build_news_pages.py --region ${{ matrix.region }}
 
       - name: Build static article pages
-        run: python3 scripts/build_static_pages.py --region za --articles-only
+        run: python3 scripts/build_static_pages.py --region ${{ matrix.region }} --articles-only
 
       - name: Render branded card per feed item (cached by URL hash)
-        run: python3 scripts/build_feed_cards.py --region za
+        run: python3 scripts/build_feed_cards.py --region ${{ matrix.region }}
 
-      - name: Build city news pages (Johannesburg, Cape Town, Durban, Pretoria, Gqeberha)
-        run: python3 scripts/build_city_pages.py --region za
+      - name: Build city news pages
+        run: python3 scripts/build_city_pages.py --region ${{ matrix.region }}
 
       - name: Generate sitemap and RSS feeds
         run: |
-          python3 scripts/generate_sitemap.py --region za
-          python3 scripts/generate_rss.py --region za
+          python3 scripts/generate_sitemap.py --region ${{ matrix.region }}
+          python3 scripts/generate_rss.py --region ${{ matrix.region }}
 
       - name: Stamp cache-busting asset versions (nav.js / main.css)
         run: python3 scripts/stamp_assets.py
 
-      - name: Commit and push updated data (South Africa only)
+      - name: Commit and push updated data (this region only)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/za/ content/za/ za/ img/cards/za/
+          R="${{ matrix.region }}"
+          git add "data/$R/" "content/$R/" "$R/" "img/cards/$R/"
           if ! git diff --cached --quiet; then
-            git commit -m "Update South Africa news data + feed cards [automated]"
+            git commit -m "Update $R news data + feed cards [automated]"
             # stamp_assets rewrites ALL HTML (incl. Zimbabwe's) but we only
-            # commit /za paths — discard the leftover unstaged churn so the
-            # working tree is clean, otherwise `git pull --rebase` aborts.
+            # commit this region's paths — discard the leftover unstaged churn so
+            # the working tree is clean, otherwise `git pull --rebase` aborts.
             git checkout -- . 2>/dev/null || true
             for i in 1 2 3 4 5; do
               if git push; then
