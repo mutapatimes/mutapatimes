@@ -12,6 +12,9 @@
  * CRITICAL: at the root edition MT_BASE is "" so mtUrl() is the identity
  * function. Routing existing absolute paths through mtUrl() therefore cannot
  * change Zimbabwe behaviour; it only takes effect under a /<cc>/ edition.
+ *
+ * GENERATED from scripts/regions.py by scripts/build_region_js.py — do not edit
+ * by hand; change regions.py and re-run the generator.
  */
 (function () {
   if (window.mtUrl) return; // idempotent

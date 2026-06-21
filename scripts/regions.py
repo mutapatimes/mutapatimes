@@ -181,6 +181,36 @@ REGIONS = {
             "https://news.google.com/rss/search?q=Johannesburg+Cape+Town+Durban+Pretoria+Gqeberha+Bloemfontein&hl=en&gl=ZA&ceid=ZA:en",
             "https://news.google.com/rss/search?q=South+Africa+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=ZA&ceid=ZA:en",
         ],
+        # Client-side homepage feed split (consumed by js/region.js, which is
+        # GENERATED from this file by scripts/build_region_js.py). "spotlight"
+        # is omitted because it equals spotlight_rss above; the generator reuses
+        # that. These are browser query sets, distinct from all_rss_feeds.
+        "browser_feeds": {
+            "main": [
+                "https://news.google.com/rss/search?q=South+Africa&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+news+today&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=Johannesburg+OR+Cape+Town+OR+Durban&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+politics+government+economy&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+health+education+sport&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+mining+business+tourism&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=site:news24.com+OR+site:timeslive.co.za+OR+site:iol.co.za+OR+site:sowetanlive.co.za+OR+site:citizen.co.za&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=site:dailymaverick.co.za+OR+site:businesslive.co.za+OR+site:moneyweb.co.za+OR+site:mg.co.za&hl=en&gl=ZA&ceid=ZA:en",
+            ],
+            "sidebar": [
+                "https://news.google.com/rss/search?q=South+Africa+local+news&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+business+sports+entertainment+health&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=Johannesburg+Cape+Town+Durban+Pretoria+Gqeberha+Bloemfontein&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=Gauteng+OR+Western+Cape+OR+KwaZulu-Natal+OR+Limpopo&hl=en&gl=ZA&ceid=ZA:en",
+                "https://news.google.com/rss/search?q=South+Africa+culture+music+festival+education&hl=en&gl=ZA&ceid=ZA:en",
+            ],
+        },
+        # Local newsrooms for the browser "Local" filter (curated subset of
+        # `sources`; drops aggregators like "the conversation" and our own brand).
+        "browser_local": [
+            "news24", "daily maverick", "businessday", "business day", "times live",
+            "timeslive", "moneyweb", "iol", "sowetan", "the citizen",
+            "mail & guardian", "ewn", "eyewitness news", "fin24", "businesstech",
+        ],
         "cities": [
             {"slug": "johannesburg", "name": "Johannesburg", "matchers": [r"\bjohannesburg\b", r"\bjoburg\b", r"\bjo'burg\b"]},
             {"slug": "cape-town", "name": "Cape Town", "matchers": [r"cape town"]},
