@@ -1,0 +1,16 @@
+---
+title: "Bafana captain Williams says players’ belief is back as they prepare for South Korea"
+date: 2026-06-21T12:34:02.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Bafana captain Williams says players’ belief is back as they prepare for South Korea"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOLXJ5NmtoaUhyT3JVNmY5cExVMFZPUlFRVGViZkhMSlkxbEd2VVFCTDhfa0xPbHpjVTJPTERfOWlkYlJBQnBoX1ZkUEE3WW15cTF1djB3NVZlSkcta3E5T0J2XzJEaF93b1NwNzhRQnZmLUJ5ODZ2cFlkaTBxTDdKMWZGZzBTTTYxcG83ZzZPS1lLbkl1THFtOUltSUU2SUtFclF2TzN0akJpWU50ZUwzV1RtdzVsX1pEUGlpWE4zMzZVRGNjYWpiMGtzcU5sdmJMRmI1SEY1SlJPcUxvX2E4bnYxVGJhcmV6cnc4WDh6RFFNXzQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxOLXJ5NmtoaUhyT3JVNmY5cExVMFZPUlFRVGViZkhMSlkxbEd2VVFCTDhfa0xPbHpjVTJPTERfOWlkYlJBQnBoX1ZkUEE3WW15cTF1djB3NVZlSkcta3E5T0J2XzJEaF93b1NwNzhRQnZmLUJ5ODZ2cFlkaTBxTDdKMWZGZzBTTTYxcG83ZzZPS1lLbkl1THFtOUltSUU2SUtFclF2TzN0akJpWU50ZUwzV1RtdzVsX1pEUGlpWE4zMzZVRGNjYWpiMGtzcU5sdmJMRmI1SEY1SlJPcUxvX2E4bnYxVGJhcmV6cnc4WDh6RFFNXzQ?oc=5)
