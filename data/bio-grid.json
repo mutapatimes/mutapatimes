@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-21T09:42:30+00:00",
+  "fetched_at": "2026-06-21T13:58:57+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "ZNCC annual congress on this week",
+      "link": "https://mutapatimes.com/articles/2026-06-20-zncc-annual-congress-on-this-week",
+      "image": "https://mutapatimes.com/img/cards/news/bb3c5cdf2cde.png",
+      "pubDate": "2026-06-20T23:59:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim primary income 2025 Q4: −$167M. Trailing four quarters: −$610M.",
@@ -471,14 +479,6 @@
       "title": "Black Shark Protection Services — SECURITY GUARDS",
       "link": "https://vacancymail.co.zw/jobs/security-guards-67861/",
       "image": "https://mutapatimes.com/img/cards/jobs/460ec282415a.png",
-      "pubDate": "2026-06-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — SERGEANT",
-      "link": "https://vacancymail.co.zw/jobs/sergeant-67860/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03433a9281fd.png",
       "pubDate": "2026-06-20T22:00:00+00:00",
       "category": "Jobs"
     }
