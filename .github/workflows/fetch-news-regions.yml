@@ -48,6 +48,9 @@ jobs:
       - name: Build static article pages
         run: python3 scripts/build_static_pages.py --region ${{ matrix.region }} --articles-only
 
+      - name: Build region shell pages (home / articles / article)
+        run: python3 scripts/build_region_shells.py --region ${{ matrix.region }}
+
       - name: Render branded card per feed item (cached by URL hash)
         run: python3 scripts/build_feed_cards.py --region ${{ matrix.region }}
 

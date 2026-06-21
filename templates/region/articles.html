@@ -3,9 +3,8 @@
 
     <head>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />    <title>Article | The Mutapa Times</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://mutapatimes.com/za/article">
+    <meta name="google-site-verification" content="hiG_LERbmJeR4lCj2z4jsSumsaHhPI_wOjRFhT1E4Yw" />    <title>Articles | The Mutapa Times</title>
+    <link rel="canonical" href="https://mutapatimes.com{{PFX}}/articles">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
@@ -24,25 +23,28 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css?v=8c7d1b49">
-    <meta name="robots" content="noindex, follow">
+    <meta name="title" content="Articles | The Mutapa Times">
+<meta name="description" content="Original articles, analysis, and opinion from The Mutapa Times covering {{NAME}} business, economy, technology, and culture.">
+<meta name="keywords" content="{{KEYWORDS}}">
+<meta name="robots" content="noindex, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="author" content="Valentine Eluwasi">
 
 <!-- Open Graph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Article | The Mutapa Times">
-<meta property="og:description" content="Read this article on The Mutapa Times - curated South African news from foreign press for the diaspora.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Articles | The Mutapa Times">
+<meta property="og:description" content="Original articles, analysis, and opinion from The Mutapa Times.">
 <meta property="og:image" content="https://mutapatimes.com/img/brand/og-share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://mutapatimes.com/za/article">
+<meta property="og:url" content="https://mutapatimes.com{{PFX}}/articles">
 <meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@mutapatimes">
-<meta name="twitter:title" content="Article | The Mutapa Times">
-<meta name="twitter:description" content="Read this article on The Mutapa Times - curated South African news from foreign press for the diaspora.">
+<meta name="twitter:title" content="Articles | The Mutapa Times">
+<meta name="twitter:description" content="Original articles, analysis, and opinion from The Mutapa Times.">
 <meta name="twitter:image" content="https://mutapatimes.com/img/brand/og-share.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png?v=2">
@@ -62,8 +64,11 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#1a1a1a">
 <link rel="alternate" type="application/rss+xml" title="The Mutapa Times" href="https://mutapatimes.com/feed.xml">
-<link rel="alternate" hreflang="en" href="https://mutapatimes.com/za/article">
-<link rel="alternate" hreflang="x-default" href="https://mutapatimes.com/za/article">
+<link rel="alternate" hreflang="en" href="https://mutapatimes.com{{PFX}}/articles">
+<link rel="alternate" hreflang="x-default" href="https://mutapatimes.com{{PFX}}/articles">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mutapatimes.com{{PFX}}/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://mutapatimes.com{{PFX}}/articles"}]}
+</script>
   </head>
 
   <body>
@@ -86,12 +91,12 @@
   </a>
   <nav id="mainNav">
       <p>
-          <a target="_self" class="notranslate" href="/za/">News</a>
+          <a target="_self" class="notranslate" href="{{PFX}}/">News</a>
       </p>
       <p>
-          <a target="_self" class="notranslate" href="/za/articles">Articles</a>
+          <a target="_self" class="active notranslate" href="{{PFX}}/articles">Articles</a>
       </p>
-      <span class="nav-cities-item"><button type="button" class="notranslate cities-nav-toggle" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button><ul class="cities-dropdown" aria-label="South Africa cities"><li><a href="/za/johannesburg-news">Johannesburg</a></li><li><a href="/za/cape-town-news">Cape Town</a></li><li><a href="/za/durban-news">Durban</a></li><li><a href="/za/pretoria-news">Pretoria</a></li><li><a href="/za/gqeberha-news">Gqeberha</a></li></ul></span>  </nav>
+      <span class="nav-cities-item"><button type="button" class="notranslate cities-nav-toggle" aria-haspopup="true" aria-expanded="false">Cities &#9662;</button><ul class="cities-dropdown" aria-label="{{NAME}} cities">{{CITIES_DROPDOWN}}</ul></span>  </nav>
   <button class="nav-hamburger" type="button" aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -100,21 +105,15 @@
     <button class="nav-drawer-close" type="button" data-close-drawer aria-label="Close menu">
       <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
-    <form class="nav-drawer-search" action="/za/articles" method="get" role="search">
+    <form class="nav-drawer-search" action="{{PFX}}/articles" method="get" role="search">
       <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
     </form>
     <nav class="nav-drawer-main" aria-label="Sections">
-      <a href="/za/">News</a>
-      <a href="/za/articles">Articles</a>
+      <a href="{{PFX}}/">News</a>
+      <a href="{{PFX}}/articles">Articles</a>
     </nav>
     <span class="nav-drawer-section">Cities</span>
-    <nav class="nav-drawer-cities" aria-label="Cities">
-      <a href="/za/johannesburg-news">Johannesburg</a>
-      <a href="/za/cape-town-news">Cape Town</a>
-      <a href="/za/durban-news">Durban</a>
-      <a href="/za/pretoria-news">Pretoria</a>
-      <a href="/za/gqeberha-news">Gqeberha</a>
-    </nav>
+    <nav class="nav-drawer-cities" aria-label="Cities">{{CITIES_DRAWER}}</nav>
     <span class="nav-drawer-section">Information</span>
     <nav class="nav-drawer-info" aria-label="Information">
       <a href="/about">About</a>
@@ -133,11 +132,50 @@
   </div>
   <hr class="dateHr">
 
-  <!-- Single article view -->
+  <!-- Articles listing -->
   <main>
-    <article class="article-full" id="article-content">
-      <p class="loading-msg">Loading article&#8230;</p>
-    </article>
+    <div class="articles-page">
+      <header class="page-hero">
+        <h1 class="page-hero-headline"><em>Articles</em> &amp; analysis.</h1>
+        <p class="page-hero-deck">Wire reports, original analysis and opinion curated by The Mutapa Times. Filter by category below, or tap a highlight to play the cards.</p>
+      </header>
+
+      <!-- Stories rail — IG-style highlights using the cards we already render. -->
+      <div id="stories-rail" aria-label="Story highlights"></div>
+
+      <!-- Search, filter & sort controls -->
+      <div class="articles-toolbar">
+        <div class="articles-search-wrap">
+          <input type="text" id="articles-search" class="articles-search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+        <div class="articles-controls">
+          <div class="articles-category-chips" id="articles-category-chips">
+            <button class="articles-chip active" data-cat="all">All</button>
+            <button class="articles-chip" data-cat="Business">Business</button>
+            <button class="articles-chip" data-cat="Tech">Tech</button>
+            <button class="articles-chip" data-cat="Health">Health</button>
+            <button class="articles-chip" data-cat="Sport">Sport</button>
+            <button class="articles-chip" data-cat="Culture">Culture</button>
+            <button class="articles-chip" data-cat="Policy">Policy</button>
+            <button class="articles-chip" data-cat="Opinion">Opinion</button>
+            <button class="articles-chip" data-cat="Environment">Environment</button>
+          </div>
+          <select id="articles-sort" class="articles-sort" aria-label="Sort articles">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="az">A &ndash; Z</option>
+            <option value="za">Z &ndash; A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="articles-count" id="articles-count"></div>
+
+      <div id="articles-list">
+        <p class="loading-msg">Loading articles&#8230;</p>
+      </div>
+      <div class="articles-pagination" id="articles-pagination"></div>
+    </div>
   </main>
 
   <hr class="dateHr">
@@ -159,7 +197,7 @@
     <div class="essential-subscribe-grid">
       <div class="essential-pitch">
         <p class="essential-eyebrow">The Mutapa Times newsletter</p>
-        <h2 class="essential-headline">Essential intelligence for the South African diaspora.</h2>
+        <h2 class="essential-headline">Essential intelligence for the {{DEMONYM}} diaspora.</h2>
         <p class="essential-deck">Curated foreign press coverage, economic data, and original analysis &mdash; delivered twice a week to readers in over 30 countries.</p>
         <ul class="essential-features" aria-label="What you get">
           <li><span aria-hidden="true">🌍</span> Foreign press coverage</li>
@@ -223,7 +261,9 @@
     })();
   </script>
 </section>
-<!-- Site footer -->
+<p class="page-meta-footnote">Wire reports curated by The Mutapa Times &middot; Updated hourly &middot; <span id="articlesCountMeta">Loading&hellip;</span></p>
+
+  <!-- Site footer -->
 <footer class="atlantic-foot">
   <div class="atlantic-foot-inner">
     <div class="atlantic-foot-grid">
@@ -232,8 +272,8 @@
         <details open>
           <summary>Read</summary>
           <ul>
-            <li><a href="/za/">News</a></li>
-            <li><a href="/za/articles">Articles</a></li>
+            <li><a href="{{PFX}}/">News</a></li>
+            <li><a href="{{PFX}}/articles">Articles</a></li>
           </ul>
         </details>
       </div>
@@ -241,13 +281,7 @@
       <div class="atlantic-foot-col">
         <details open>
           <summary>Cities</summary>
-          <ul>
-            <li><a href="/za/johannesburg-news">Johannesburg</a></li>
-            <li><a href="/za/cape-town-news">Cape Town</a></li>
-            <li><a href="/za/durban-news">Durban</a></li>
-            <li><a href="/za/pretoria-news">Pretoria</a></li>
-            <li><a href="/za/gqeberha-news">Gqeberha</a></li>
-          </ul>
+          <ul>{{CITIES_FOOTER}}</ul>
         </details>
       </div>
 
@@ -311,6 +345,7 @@
   <script defer src="/js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="/js/region.js?v=3"></script>
   <script defer src="/js/articles.js?v=3"></script>
+  <script defer src="/js/stories.js?v=5"></script>
 
 <script>
 if ('serviceWorker' in navigator) {
@@ -319,6 +354,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+<script defer src="/js/push.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQPRFK7JTB"></script>
 <script>
