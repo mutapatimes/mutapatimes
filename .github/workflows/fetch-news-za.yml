@@ -63,6 +63,10 @@ jobs:
           git add data/za/ content/za/ za/ img/cards/za/
           if ! git diff --cached --quiet; then
             git commit -m "Update South Africa news data + feed cards [automated]"
+            # stamp_assets rewrites ALL HTML (incl. Zimbabwe's) but we only
+            # commit /za paths — discard the leftover unstaged churn so the
+            # working tree is clean, otherwise `git pull --rebase` aborts.
+            git checkout -- . 2>/dev/null || true
             for i in 1 2 3 4 5; do
               if git push; then
                 echo "Pushed on attempt $i"
