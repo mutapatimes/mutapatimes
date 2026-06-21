@@ -1,0 +1,16 @@
+---
+title: "Youth employment initiative nears 3-million earning opportunities since 2020"
+date: 2026-06-21T14:24:08.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Youth employment initiative nears 3-million earning opportunities since 2020"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbEt2UVJVUjdzT0k4NDhBOEVnQ2ZUSUUwaFZlLTRBZ1A2Y1lvbU4zN2hlM0RvY0VJRTRqQVVEQmVuaU0xVFVRWXVfcTRHV1hURE1oOWdfc3hQRzRRLTBPUW05eVZONUgtaXJfeHZOWnA2ZXA1akFkRVlKLXZzMzNxdHRKaDlScnp5WExDQmxIUVlaMTN5SkM3YXFaNHB2b01EaU5xcDdXUUIyazJ1R1FRTDJBQkxKVlhTejcydnczeEh4c3RjbFlnSUNoaEhVZTg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMizwFBVV95cUxPbEt2UVJVUjdzT0k4NDhBOEVnQ2ZUSUUwaFZlLTRBZ1A2Y1lvbU4zN2hlM0RvY0VJRTRqQVVEQmVuaU0xVFVRWXVfcTRHV1hURE1oOWdfc3hQRzRRLTBPUW05eVZONUgtaXJfeHZOWnA2ZXA1akFkRVlKLXZzMzNxdHRKaDlScnp5WExDQmxIUVlaMTN5SkM3YXFaNHB2b01EaU5xcDdXUUIyazJ1R1FRTDJBQkxKVlhTejcydnczeEh4c3RjbFlnSUNoaEhVZTg?oc=5)

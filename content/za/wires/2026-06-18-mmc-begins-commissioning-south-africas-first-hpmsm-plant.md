@@ -1,0 +1,16 @@
+---
+title: "MMC begins commissioning South Africa’s first HPMSM plant"
+date: 2026-06-18T12:44:07.000Z
+author: Benchmark Mineral Intelligence
+category: Business
+image: 
+summary: "MMC begins commissioning South Africa’s first HPMSM plant"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPN3F0QnBhNDJ5X0JLVGtNQVNaQV9GZGRXZVVLdmg2VTRhZy1nZ1JKV1NXR1dBNkhaZHlxSGJMV1liM29iOFJtTVcydHRKYkFPd1Y3ejc4WTR0Q3dTYy1kamxrWnR6Wml6akVIeXA5eVRZcy1DbDJEdmJvNzRxMHhOSERacjlISHpZek1jZDdoQ2FBbHJLWG5IeUFJZkJlS3N0ZXZ0M2JWZG5TQThNbzhuTjB6ZFN3LVk5bDVjUjlFUnVMcVlDQ19fOTBvaWVYU3dlZ2xQU18zSDhBdFhxSDFRaExiSQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Benchmark Mineral Intelligence.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPN3F0QnBhNDJ5X0JLVGtNQVNaQV9GZGRXZVVLdmg2VTRhZy1nZ1JKV1NXR1dBNkhaZHlxSGJMV1liM29iOFJtTVcydHRKYkFPd1Y3ejc4WTR0Q3dTYy1kamxrWnR6Wml6akVIeXA5eVRZcy1DbDJEdmJvNzRxMHhOSERacjlISHpZek1jZDdoQ2FBbHJLWG5IeUFJZkJlS3N0ZXZ0M2JWZG5TQThNbzhuTjB6ZFN3LVk5bDVjUjlFUnVMcVlDQ19fOTBvaWVYU3dlZ2xQU18zSDhBdFhxSDFRaExiSQ?oc=5)
