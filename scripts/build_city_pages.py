@@ -491,8 +491,10 @@ def build_page(city, all_articles, other_cities, meta, pfx):
         f'data-hotels-variant="feed" data-count="8" '
         f'aria-label="Sponsored hotel stays in {esc(city["name"])}"></section>'
     )
-    insert_at = min(10, len(row_list))
-    row_list.insert(insert_at, carousel)
+    # Hotels carousel is Zimbabwe-only monetisation; other editions skip it.
+    if not pfx:
+        insert_at = min(10, len(row_list))
+        row_list.insert(insert_at, carousel)
 
     rows = "\n".join(row_list)
     if stay_article:
@@ -534,8 +536,11 @@ def build_page(city, all_articles, other_cities, meta, pfx):
 
     # The sponsored stays carousel is now spliced mid-feed (see above) for
     # every city, so the after-list slot is gone; only the script remains.
+    # Sponsors + Harare-hotels are Zimbabwe monetisation; other editions omit
+    # them (no SA sponsor strip / hotel feed yet), so pfx-gate both.
     hotels_rail = ""
-    hotels_script = '<script defer src="/js/harare-hotels.js?v=2"></script>\n'
+    hotels_script = '<script defer src="/js/harare-hotels.js?v=2"></script>\n' if not pfx else ''
+    sponsors_script = '<script defer src="/js/sponsors.js"></script>\n' if not pfx else ''
 
     canonical = f"{BASE_URL}{pfx}/{city['slug']}-news"
     title = (f"{city['name']} news latest — today's headlines from "
@@ -760,8 +765,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
 <script defer src="/js/vendor/modernizr-3.8.0.min.js"></script>
 {region_js}<script defer src="/js/stories.js"></script>
 <script defer src="/js/nav.js"></script>
-<script defer src="/js/sponsors.js"></script>
-<script defer src="/js/city.js"></script>
+{sponsors_script}<script defer src="/js/city.js"></script>
 {hotels_script}<script>
 if ('serviceWorker' in navigator) {{
   window.addEventListener('load', function() {{ navigator.serviceWorker.register('/sw.js'); }});

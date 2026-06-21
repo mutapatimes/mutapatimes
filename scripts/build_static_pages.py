@@ -422,6 +422,13 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
     read_links = "\n".join(_read)
     # region.js only on non-root editions, so Zimbabwe footers stay identical.
     region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=3"></script>\n'
+    # Zimbabwe-only editorial/sponsor scripts. Other editions omit them so their
+    # pages don't render an empty Feature Story / Scene Report series rail or a
+    # Zimbabwe sponsor strip. ZW emits them in the original order (byte-identical).
+    _ed_sponsor = ('  <script defer src="/js/sponsors.js"></script>\n'
+                   '  <script defer src="/js/shopify-ads.js"></script>\n') if region == "zw" else ""
+    _ed_feature = ('  <script defer src="/js/feature-story.js?v=1"></script>\n'
+                   '  <script defer src="/js/series.js?v=3"></script>\n') if region == "zw" else ""
     return f"""  <hr class="dateHr">
 
 <!-- Back to top -->
@@ -589,12 +596,8 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
 {region_js}  <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/stories.js?v=5"></script>
   <script defer src="{prefix}js/nav.js"></script>
-  <script defer src="/js/sponsors.js"></script>
-  <script defer src="/js/shopify-ads.js"></script>
-  <script defer src="/js/article-parallax.js?v=2"></script>
-  <script defer src="/js/feature-story.js?v=1"></script>
-  <script defer src="/js/series.js?v=3"></script>
-  <script defer src="/js/quote-share.js?v=2"></script>{extra_scripts}
+{_ed_sponsor}  <script defer src="/js/article-parallax.js?v=2"></script>
+{_ed_feature}  <script defer src="/js/quote-share.js?v=2"></script>{extra_scripts}
 
 <script>
 if ('serviceWorker' in navigator) {{
@@ -1087,8 +1090,10 @@ def build_articles(region="zw"):
 
         # Feature Story of the Week  filled in by /js/feature-story.js
         # at runtime against data/feature-story.json. Hidden if the
-        # current article is itself the feature.
-        html_parts.append(f'      <div id="feature-story-slot-rail" data-current-slug="{esc(slug)}"></div>')
+        # current article is itself the feature. Zimbabwe only — other
+        # editions have no feature pool, so the rail would render empty.
+        if region == "zw":
+            html_parts.append(f'      <div id="feature-story-slot-rail" data-current-slug="{esc(slug)}"></div>')
 
         # More to read  6 related articles, same category preferred
         related = _pick_related(related_index, slug, category, want=6)
