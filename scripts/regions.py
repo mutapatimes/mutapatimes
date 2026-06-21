@@ -134,12 +134,20 @@ REGIONS = {
             "science": [_gnews("South+Africa+science+OR+South+Africa+research+OR+South+Africa+environment+OR+South+Africa+wildlife", gl="ZA")],
         },
         "keywords": [
-            "south africa", "johannesburg", "joburg", "cape town", "durban",
+            "south africa", "south african", "johannesburg", "joburg", "cape town", "durban",
             "pretoria", "tshwane", "gqeberha", "port elizabeth", "bloemfontein",
             "soweto", "ekurhuleni", "polokwane", "nelspruit", "kimberley",
             "ramaphosa", "anc", "da ", "eff", "sarb", "jse", "rand", "zar",
             "sars", "eskom", "load shedding", "godongwana", "kganyago",
             "western cape", "gauteng", "kwazulu", "limpopo", "mpumalanga",
+            "free state", "north west", "northern cape", "eastern cape",
+            # Sport (so legitimate SA sport headlines pass the title check)
+            "springbok", "springboks", "boks", "proteas", "bafana", "banyana",
+            "kaizer chiefs", "orlando pirates", "mamelodi sundowns", "psl",
+            "comrades marathon",
+            # Institutions / figures
+            "saps", "sassa", "transnet", "prasa", "nersa", "telkom",
+            "malema", "steenhuisen", "zuma", "mkhwanazi", "mbeki",
         ],
         "sources": [
             "news24", "daily maverick", "businessday", "business day", "times live",

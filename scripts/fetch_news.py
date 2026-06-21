@@ -347,6 +347,28 @@ def is_zw_relevant(article):
     return any(kw in text for kw in _ZW_KEYWORDS)
 
 
+def is_spotlight_relevant(article):
+    """Stricter relevance for the homepage spotlight, which pulls broad foreign
+    wires (Guardian/NYT q='<country>', reputable-source RSS). A culture review
+    that merely name-drops the country in its body should NOT headline the
+    edition. For non-default editions we therefore require the region term in
+    the TITLE (or a regional source); the Zimbabwe default keeps its existing
+    title+description behaviour unchanged, and the geo-scoped category feeds are
+    untouched (they already query by country)."""
+    if not is_zw_relevant(article):
+        return False
+    if REGION_CODE == _DEFAULT_REGION:
+        return True
+    raw_source = article.get("source") or ""
+    if isinstance(raw_source, dict):
+        raw_source = raw_source.get("name") or ""
+    source = str(raw_source).lower()
+    if any(s in source for s in _ZW_SOURCES):
+        return True
+    title_lower = (article.get("title", "") or "").lower()
+    return any(kw in title_lower for kw in _ZW_KEYWORDS)
+
+
 def generate_description(title, content=""):
     """Generate a 1-2 sentence summary using Gemini free tier with rate limiting."""
     if not GEMINI_API_KEY:
@@ -986,7 +1008,7 @@ def fetch_spotlight():
         if result:
             # Filter out non-Zimbabwe articles (game trailers, foreign sports, etc.)
             before = len(result)
-            result = [a for a in result if is_zw_relevant(a)]
+            result = [a for a in result if is_spotlight_relevant(a)]
             if before != len(result):
                 print(f"  >> {name}: {before - len(result)} non-Zimbabwe articles filtered out")
             for a in result:
@@ -1010,7 +1032,7 @@ def fetch_spotlight():
     rss_result = fetch_from_rss()
     if rss_result:
         before = len(rss_result)
-        rss_result = [a for a in rss_result if is_zw_relevant(a)]
+        rss_result = [a for a in rss_result if is_spotlight_relevant(a)]
         if before != len(rss_result):
             print(f"  >> RSS reputable: {before - len(rss_result)} non-Zimbabwe articles filtered out")
         for a in rss_result:
@@ -1038,7 +1060,7 @@ def fetch_spotlight():
             existing = []
 
     # Filter existing/cached articles through relevance check too (purges stale junk)
-    existing = [a for a in existing if is_zw_relevant(a)]
+    existing = [a for a in existing if is_spotlight_relevant(a)]
 
     # Merge: new articles first, then existing ones (deduped by URL + title similarity)
     seen_urls = set()
@@ -1515,11 +1537,11 @@ def import_guardian_nyt_to_cms():
     print("\n=== GUARDIAN + NYT FULL IMPORT ===")
 
     guardian = fetch_from_guardian()
-    guardian = [a for a in guardian if is_zw_relevant(a)] if guardian else []
+    guardian = [a for a in guardian if is_spotlight_relevant(a)] if guardian else []
     print(f"  Guardian: {len(guardian)} Zimbabwe articles")
 
     nyt = fetch_from_nyt()
-    nyt = [a for a in nyt if is_zw_relevant(a)] if nyt else []
+    nyt = [a for a in nyt if is_spotlight_relevant(a)] if nyt else []
     print(f"  NYT: {len(nyt)} Zimbabwe articles")
 
     # Interleave with NYT first in each pair (more reputable)
