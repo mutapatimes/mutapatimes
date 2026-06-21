@@ -57,6 +57,11 @@ jobs:
           python3 scripts/generate_sitemap.py
           python3 scripts/generate_rss.py
 
+      - name: Regenerate derived global files from regions.py (region.js, robots.txt)
+        run: |
+          python3 scripts/build_region_js.py
+          python3 scripts/build_robots.py
+
       - name: Stamp cache-busting asset versions (nav.js / main.css)
         run: python3 scripts/stamp_assets.py
 
@@ -69,7 +74,8 @@ jobs:
                   harare-news.html bulawayo-news.html mutare-news.html \
                   gweru-news.html masvingo-news.html victoria-falls-news.html \
                   sitemap.xml feed.xml fx-feed.xml weather-feed.xml business-feed.xml \
-                  jobs-feed.xml properties-feed.xml stories-feed.xml
+                  jobs-feed.xml properties-feed.xml stories-feed.xml \
+                  js/region.js robots.txt
           if ! git diff --cached --quiet; then
             git commit -m "Update news data + feed cards [automated]"
             for i in 1 2 3 4 5; do
