@@ -1,0 +1,16 @@
+---
+title: "A dying shame: A Zimbabwean mother’s deadly ordeal as Charlotte Maxeke demands upfront payment"
+date: 2026-06-16T21:29:30.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "A dying shame: A Zimbabwean mother’s deadly ordeal as Charlotte Maxeke demands upfront payment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNYkhNVUUtQkZJMTVEYm52d1VRdDE1M0FHazJnSTNLY0lBclJ6V3hsYlgySVFOR0ZLTnhtWS1ydHZ1T0JEZm5jQ1BuRHJ1WFJpOEs0Yk41a0JwUDJGRlpNU0VJdTh1SzIxcmVwa1gzYXpycld1THh1REViU3NfMlc1c3BzZ2t2Mlc4X1pHQzZzRDB1ZHljQ1BwV2d2QUEyWDlQNzBPcXZGVzBnYVNyQzA0dndNQi1zMlBHUTkwWkhiRlp1VXh2QlJOcHNCajU0OFQzZzk0S0lUMjBVM1VodzRtRmZQRzctcjRyU2o3amdkOU1qRjVweHpr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNYkhNVUUtQkZJMTVEYm52d1VRdDE1M0FHazJnSTNLY0lBclJ6V3hsYlgySVFOR0ZLTnhtWS1ydHZ1T0JEZm5jQ1BuRHJ1WFJpOEs0Yk41a0JwUDJGRlpNU0VJdTh1SzIxcmVwa1gzYXpycld1THh1REViU3NfMlc1c3BzZ2t2Mlc4X1pHQzZzRDB1ZHljQ1BwV2d2QUEyWDlQNzBPcXZGVzBnYVNyQzA0dndNQi1zMlBHUTkwWkhiRlp1VXh2QlJOcHNCajU0OFQzZzk0S0lUMjBVM1VodzRtRmZQRzctcjRyU2o3amdkOU1qRjVweHpr?oc=5)

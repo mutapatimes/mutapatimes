@@ -1,0 +1,16 @@
+---
+title: "Personal Perspective: Romance novels are transforming hockey culture. The world is here for it."
+date: 2026-06-17T16:11:14.000Z
+author: Psychology Today
+category: Culture
+image: 
+summary: "Personal Perspective: Romance novels are transforming hockey culture. The world is here for it."
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVFM4RnBpaWE0QnZoN3VJam5kZEl6T1lMeTVBbTRxNFBETElPOHVad2V5TDg1NmN0OFA0dDlEZGQ0ZlF4RWsxVmdYX1BxWmdsSWtESlFZekVYUU5rMnpSSmNFNkRCTmpmYXYtTVY4ZDVUZThlX2NyQlJoU1BPRVpRSVRnOEhTdDJpMGxsTHhrRjRMNGgwN2Y1QWdDLUNCOFhsckZJ0gGoAUFVX3lxTE9Sb2RRUXUyRC05VDZuSjd2dWd0RE4xbm1GZ29PWmlrNTRURndQa2pFNi11LTBZR3A2NU5uOTF1SkU0ZlhEVGRqbVBjZFJkNk1WM1NXaFcwUk9kWVVNRzFtMEtLTk9iLTdYQkxudm5BNTFMLVFZdmdWa1ZPSy1qWVhmbmQ2b2o5SDlXVmRmS0RHbTZYWTdEeTl1eWVienY5d2JjOEg5Uk45Uw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Psychology Today.*
+[Read original article](https://news.google.com/rss/articles/CBMiowFBVV95cUxNVFM4RnBpaWE0QnZoN3VJam5kZEl6T1lMeTVBbTRxNFBETElPOHVad2V5TDg1NmN0OFA0dDlEZGQ0ZlF4RWsxVmdYX1BxWmdsSWtESlFZekVYUU5rMnpSSmNFNkRCTmpmYXYtTVY4ZDVUZThlX2NyQlJoU1BPRVpRSVRnOEhTdDJpMGxsTHhrRjRMNGgwN2Y1QWdDLUNCOFhsckZJ0gGoAUFVX3lxTE9Sb2RRUXUyRC05VDZuSjd2dWd0RE4xbm1GZ29PWmlrNTRURndQa2pFNi11LTBZR3A2NU5uOTF1SkU0ZlhEVGRqbVBjZFJkNk1WM1NXaFcwUk9kWVVNRzFtMEtLTk9iLTdYQkxudm5BNTFMLVFZdmdWa1ZPSy1qWVhmbmQ2b2o5SDlXVmRmS0RHbTZYWTdEeTl1eWVienY5d2JjOEg5Uk45Uw?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Canadian shot dead at South Africa wildlife park in apparent accident: officials"
+date: 2026-06-18T18:54:45.000Z
+author: Toronto Star
+category: Tech
+image: 
+summary: "Canadian shot dead at South Africa wildlife park in apparent accident: officials"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNFlCWHMzTmhhRGJGUGZHYjNFUlZYNjNJSUZJREFrUm5UODJ6QWpOeWF2cWhMdFozQlhCZjAyVXltbE0xWTBOczhKN2NaVXpjNmlxa19MTE9ZV3FTaFRSQUxrMGdKRXh5SDh2NFRkSkZaZE9ZTkozZ3RoYmtrYlJhZTNrenM1ZmxUZFZCaF9HVTVmVFpxZ2lqTWhFanZHbG9tUnJjYXBFRy1lZTVQbHp5azBwRGRMTHQ2cm1LV2F0SG10UjRHVHJjM1pTV1M1RkhfNktEMW1XMEkyMklyeHVtczlTRmh1c0lSM0t4cFYzYXJxb21BSDZubg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Toronto Star.*
+[Read original article](https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNFlCWHMzTmhhRGJGUGZHYjNFUlZYNjNJSUZJREFrUm5UODJ6QWpOeWF2cWhMdFozQlhCZjAyVXltbE0xWTBOczhKN2NaVXpjNmlxa19MTE9ZV3FTaFRSQUxrMGdKRXh5SDh2NFRkSkZaZE9ZTkozZ3RoYmtrYlJhZTNrenM1ZmxUZFZCaF9HVTVmVFpxZ2lqTWhFanZHbG9tUnJjYXBFRy1lZTVQbHp5azBwRGRMTHQ2cm1LV2F0SG10UjRHVHJjM1pTV1M1RkhfNktEMW1XMEkyMklyeHVtczlTRmh1c0lSM0t4cFYzYXJxb21BSDZubg?oc=5)

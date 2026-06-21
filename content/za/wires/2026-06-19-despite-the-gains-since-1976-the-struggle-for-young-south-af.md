@@ -1,0 +1,16 @@
+---
+title: "Despite the gains since 1976, the struggle for young South Africans has evolved rather than ended"
+date: 2026-06-19T12:24:23.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Despite the gains since 1976, the struggle for young South Africans has evolved rather than ended"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiugJBVV95cUxOZWE0NFZ1bjZHYnd2Ykh4YnJpR0VzSko0c2h6eW1hczNla2gxRWJOMmlyNUYxb0VITlF2RUtmaHpzU1poZUphQ2hRUFlXUUxGWS12OEZ4WmdjLWZkenFqOF84TVUzbnotbnZRWEJPUElhWFlIY0x1NzFuaXREcmJfNnNsN0RGRlAtbG9XTHQwSkdoM1kyODBWa3VYS1gzeXVlT0g5SFFRd3lYdkJabHpJNEFReWVCdkpwR3U1dHFIUW9vV0ZNZ2Zpa3g1NGZGOXFkSURhaE9FMkZCNW1KTFFxSW5LYVVTVkVGMDdPS2hNZUptYXB6NGxSUEE4WEV0TDJ3cEt6VDdpN1BCQ3VKS056cjdRc1BhcWgzc2pCMFFRZXA1LXgxc1JKOTJLbzlzcERhb1dOWTgwS3dTQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiugJBVV95cUxOZWE0NFZ1bjZHYnd2Ykh4YnJpR0VzSko0c2h6eW1hczNla2gxRWJOMmlyNUYxb0VITlF2RUtmaHpzU1poZUphQ2hRUFlXUUxGWS12OEZ4WmdjLWZkenFqOF84TVUzbnotbnZRWEJPUElhWFlIY0x1NzFuaXREcmJfNnNsN0RGRlAtbG9XTHQwSkdoM1kyODBWa3VYS1gzeXVlT0g5SFFRd3lYdkJabHpJNEFReWVCdkpwR3U1dHFIUW9vV0ZNZ2Zpa3g1NGZGOXFkSURhaE9FMkZCNW1KTFFxSW5LYVVTVkVGMDdPS2hNZUptYXB6NGxSUEE4WEV0TDJ3cEt6VDdpN1BCQ3VKS056cjdRc1BhcWgzc2pCMFFRZXA1LXgxc1JKOTJLbzlzcERhb1dOWTgwS3dTQQ?oc=5)
