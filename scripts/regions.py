@@ -30,6 +30,263 @@ def _gnews(query, gl="US"):
     return f"https://news.google.com/rss/search?q={query}&hl=en&gl={gl}&ceid={gl}:en"
 
 
+# City desks (referenced by REGIONS below). These carry the full per-city copy
+# used by scripts/build_city_pages.py (lat/lon, headline, SEO context + keywords,
+# article matchers). Other consumers (nav, sitemap) read only slug/name.
+_ZW_CITIES = [
+    {
+        "slug": "harare",
+        "name": "Harare",
+        "title_short": "Harare",
+        "lat": -17.8252, "lon": 31.0335,
+        "headline": "Harare news, today.",
+        "context": (
+            "Harare is the capital and largest city of Zimbabwe, "
+            "headquarters of the Reserve Bank of Zimbabwe, the "
+            "Zimbabwe Stock Exchange, every major bank and most "
+            "listed industrial groups. The Mutapa Times tracks "
+            "Harare daily — economy, business, politics, infrastructure, "
+            "culture, sport — aggregating reports from local "
+            "Zimbabwean newsrooms and international wire services."
+        ),
+        "keywords_extra": [
+            "Harare news", "Harare news today", "Harare news latest",
+            "latest Harare news", "Harare business news", "Harare weather",
+            "Harare politics", "Harare Zimbabwe news",
+            "news Harare", "Harare today",
+        ],
+        "matchers": [r"\bharare\b"],
+    },
+    {
+        "slug": "bulawayo",
+        "name": "Bulawayo",
+        "title_short": "Bulawayo",
+        "lat": -20.1539, "lon": 28.5880,
+        "headline": "Bulawayo news, today.",
+        "context": (
+            "Bulawayo is Zimbabwe's second city, the historic capital of "
+            "Matabeleland and the country's industrial heartland. The "
+            "Mutapa Times covers Bulawayo daily — manufacturing, the "
+            "Zimbabwe International Trade Fair, urban infrastructure, "
+            "the National Railways of Zimbabwe HQ, Highlanders FC, and "
+            "the cultural calendar — pulling from local newsrooms "
+            "and international wires."
+        ),
+        "keywords_extra": [
+            "Bulawayo news", "Bulawayo news today", "Bulawayo news latest",
+            "latest Bulawayo news", "Bulawayo business news",
+            "Bulawayo weather", "Matabeleland news", "Bulawayo Zimbabwe news",
+            "news Bulawayo", "Bulawayo today",
+        ],
+        "matchers": [r"\bbulawayo\b"],
+    },
+    {
+        "slug": "mutare",
+        "name": "Mutare",
+        "title_short": "Mutare",
+        "lat": -18.9707, "lon": 32.6731,
+        "headline": "Mutare news, today.",
+        "context": (
+            "Mutare is the largest city in eastern Zimbabwe, the gateway "
+            "to the Eastern Highlands and the headquarters of major "
+            "agribusiness and tea-growing operations. The Mutapa Times "
+            "tracks Mutare daily — Manicaland politics, border trade with "
+            "Mozambique, timber and citrus exports, tourism in Nyanga "
+            "and Vumba, and the cultural calendar — aggregating reports "
+            "from local Zimbabwean newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Mutare news", "Mutare news today", "Mutare news latest",
+            "latest Mutare news", "Mutare business news", "Mutare weather",
+            "Manicaland news", "Mutare Zimbabwe news",
+            "news Mutare", "Mutare today", "Nyanga news", "Vumba news",
+        ],
+        "matchers": [r"\bmutare\b", r"\bmanicaland\b"],
+    },
+    {
+        "slug": "gweru",
+        "name": "Gweru",
+        "title_short": "Gweru",
+        "lat": -19.4570, "lon": 29.8170,
+        "headline": "Gweru news, today.",
+        "context": (
+            "Gweru is the capital of the Midlands province, a key "
+            "industrial, education and military town in central "
+            "Zimbabwe. The Mutapa Times covers Gweru daily — Midlands "
+            "State University, the ZNA Officers' Academy, ferrochrome "
+            "and steel, urban affairs, and the cultural calendar — "
+            "pulling from local newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Gweru news", "Gweru news today", "Gweru news latest",
+            "latest Gweru news", "Gweru business news", "Gweru weather",
+            "Midlands news", "Gweru Zimbabwe news",
+            "news Gweru", "Gweru today",
+        ],
+        "matchers": [r"\bgweru\b", r"\bmidlands\b"],
+    },
+    {
+        "slug": "masvingo",
+        "name": "Masvingo",
+        "title_short": "Masvingo",
+        "lat": -20.0744, "lon": 30.8328,
+        "headline": "Masvingo news, today.",
+        "context": (
+            "Masvingo is Zimbabwe's oldest colonial-era town and home "
+            "to the Great Zimbabwe National Monument — the medieval "
+            "stone city that gave the country its name. The Mutapa Times "
+            "tracks Masvingo daily — Great Zimbabwe heritage news, "
+            "Lake Mutirikwi, agriculture in the Lowveld, Masvingo "
+            "Polytechnic, and the cultural calendar — aggregating "
+            "reports from local newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Masvingo news", "Masvingo news today", "Masvingo news latest",
+            "latest Masvingo news", "Masvingo business news",
+            "Masvingo weather", "Great Zimbabwe news", "Lowveld news",
+            "Masvingo Zimbabwe news",
+            "news Masvingo", "Masvingo today",
+        ],
+        "matchers": [r"\bmasvingo\b", r"\bgreat zimbabwe\b"],
+    },
+    {
+        "slug": "victoria-falls",
+        "name": "Victoria Falls",
+        "title_short": "Vic Falls",
+        "lat": -17.9244, "lon": 25.8572,
+        "headline": "Victoria Falls news, today.",
+        "context": (
+            "Victoria Falls is Zimbabwe's premier tourist town and "
+            "home to the Victoria Falls Stock Exchange (VFEX). The "
+            "Mutapa Times covers Vic Falls daily — Mosi-oa-Tunya "
+            "conservation, the VFEX, hospitality and safari operators, "
+            "Hwange National Park, and the SADC tourism corridor — "
+            "aggregating reports from local newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Victoria Falls news", "Vic Falls news", "Victoria Falls news today",
+            "Victoria Falls news latest", "latest Vic Falls news",
+            "Victoria Falls weather", "Mosi-oa-Tunya news",
+            "VFEX news", "Hwange news", "tourism news Zimbabwe",
+            "news Victoria Falls", "Vic Falls today",
+        ],
+        "matchers": [r"\bvictoria falls\b", r"\bvic[\s-]?falls\b",
+                     r"\bmosi[\s-]?oa[\s-]?tunya\b", r"\bhwange\b", r"\bvfex\b"],
+    },
+]
+
+_ZA_CITIES = [
+    {
+        "slug": "johannesburg",
+        "name": "Johannesburg",
+        "title_short": "Joburg",
+        "lat": -26.2041, "lon": 28.0473,
+        "headline": "Johannesburg news, today.",
+        "context": (
+            "Johannesburg is South Africa's largest city and economic "
+            "engine, home to the Johannesburg Stock Exchange, the head "
+            "offices of most listed banks and mining houses, and the "
+            "Constitutional Court. The Mutapa Times tracks Johannesburg "
+            "daily — markets, business, City of Joburg affairs, "
+            "infrastructure and culture — aggregating reports from South "
+            "African newsrooms and international wire services."
+        ),
+        "keywords_extra": [
+            "Johannesburg news", "Johannesburg news today", "Joburg news",
+            "latest Johannesburg news", "Johannesburg business news",
+            "Johannesburg weather", "Gauteng news", "JSE news",
+            "news Johannesburg", "Joburg today",
+        ],
+        "matchers": [r"\bjohannesburg\b", r"\bjoburg\b", r"\bjo'burg\b", r"\bsandton\b", r"\bsoweto\b"],
+    },
+    {
+        "slug": "cape-town",
+        "name": "Cape Town",
+        "title_short": "Cape Town",
+        "lat": -33.9249, "lon": 18.4241,
+        "headline": "Cape Town news, today.",
+        "context": (
+            "Cape Town is South Africa's legislative capital and the seat "
+            "of Parliament, a major tourism, tech and financial-services "
+            "hub on the Western Cape. The Mutapa Times covers Cape Town "
+            "daily — Parliament, the V&A Waterfront economy, the startup "
+            "and energy sectors, City affairs and the cultural calendar — "
+            "pulling from South African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Cape Town news", "Cape Town news today", "latest Cape Town news",
+            "Cape Town business news", "Cape Town weather", "Western Cape news",
+            "Parliament news", "news Cape Town", "Cape Town today",
+        ],
+        "matchers": [r"\bcape town\b", r"\bwestern cape\b"],
+    },
+    {
+        "slug": "durban",
+        "name": "Durban",
+        "title_short": "Durban",
+        "lat": -29.8587, "lon": 31.0218,
+        "headline": "Durban news, today.",
+        "context": (
+            "Durban is South Africa's busiest port city and the commercial "
+            "heart of KwaZulu-Natal. The Mutapa Times tracks Durban daily — "
+            "the port and logistics economy, manufacturing, eThekwini "
+            "affairs, tourism along the Golden Mile, and the cultural "
+            "calendar — aggregating South African newsrooms and "
+            "international wires."
+        ),
+        "keywords_extra": [
+            "Durban news", "Durban news today", "latest Durban news",
+            "Durban business news", "Durban weather", "KwaZulu-Natal news",
+            "eThekwini news", "news Durban", "Durban today",
+        ],
+        "matchers": [r"\bdurban\b", r"\bethekwini\b", r"\bkwazulu", r"\bkzn\b"],
+    },
+    {
+        "slug": "pretoria",
+        "name": "Pretoria",
+        "title_short": "Pretoria",
+        "lat": -25.7479, "lon": 28.2293,
+        "headline": "Pretoria news, today.",
+        "context": (
+            "Pretoria is South Africa's administrative capital, seat of "
+            "the executive and the diplomatic corps in the City of "
+            "Tshwane. The Mutapa Times covers Pretoria daily — national "
+            "government and policy, the Union Buildings, the Reserve Bank, "
+            "universities and the cultural calendar — pulling from South "
+            "African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Pretoria news", "Pretoria news today", "latest Pretoria news",
+            "Pretoria business news", "Pretoria weather", "Tshwane news",
+            "government news South Africa", "news Pretoria", "Pretoria today",
+        ],
+        "matchers": [r"\bpretoria\b", r"\btshwane\b"],
+    },
+    {
+        "slug": "gqeberha",
+        "name": "Gqeberha",
+        "title_short": "Gqeberha",
+        "lat": -33.9608, "lon": 25.6022,
+        "headline": "Gqeberha news, today.",
+        "context": (
+            "Gqeberha, formerly Port Elizabeth, is the industrial and "
+            "automotive hub of the Eastern Cape and a key deep-water port. "
+            "The Mutapa Times tracks Gqeberha daily — the motor industry, "
+            "Nelson Mandela Bay affairs, the port economy, tourism along "
+            "the coast, and the cultural calendar — aggregating South "
+            "African newsrooms and international wires."
+        ),
+        "keywords_extra": [
+            "Gqeberha news", "Port Elizabeth news", "Gqeberha news today",
+            "latest Gqeberha news", "Gqeberha business news",
+            "Gqeberha weather", "Eastern Cape news", "Nelson Mandela Bay news",
+            "news Gqeberha", "Gqeberha today",
+        ],
+        "matchers": [r"\bgqeberha\b", r"port elizabeth", r"nelson mandela bay"],
+    },
+]
+
+
 REGIONS = {
     # ─────────────────────────────── ZIMBABWE (default, root) ───────────────
     "zw": {
@@ -94,14 +351,10 @@ REGIONS = {
             "https://news.google.com/rss/search?q=Harare+Bulawayo+Gweru+Masvingo+Mutare+Chitungwiza&hl=en&gl=US&ceid=US:en",
             "https://news.google.com/rss/search?q=Zimbabwe+site:bbc.com+OR+site:reuters.com+OR+site:nytimes.com+OR+site:theguardian.com+OR+site:aljazeera.com+OR+site:ft.com+OR+site:economist.com+OR+site:bloomberg.com+OR+site:apnews.com&hl=en&gl=US&ceid=US:en",
         ],
-        "cities": [
-            {"slug": "harare", "name": "Harare", "matchers": [r"\bharare\b"]},
-            {"slug": "bulawayo", "name": "Bulawayo", "matchers": [r"\bbulawayo\b"]},
-            {"slug": "mutare", "name": "Mutare", "matchers": [r"\bmutare\b"]},
-            {"slug": "gweru", "name": "Gweru", "matchers": [r"\bgweru\b"]},
-            {"slug": "masvingo", "name": "Masvingo", "matchers": [r"\bmasvingo\b"]},
-            {"slug": "victoria-falls", "name": "Victoria Falls", "matchers": [r"victoria falls"]},
-        ],
+        "cities": _ZW_CITIES,
+        "demonym_plural": "Zimbabweans",
+        "city_local_sources": "Bulawayo24, NewZimbabwe.com, The Herald, The Standard, NewsDay, ZimLive, 263Chat",
+        "scene_report_html": '<a href="/articles/2026-05-14-second-nature-manyonga-venice-biennale-pavilion-of-zimbabwe.html" class="nav-drawer-scene-report">Scene Report</a>',
         "currency": "USD",
         "fx_base": "USD",
         "markets_index": "ZSE",
@@ -211,13 +464,9 @@ REGIONS = {
             "timeslive", "moneyweb", "iol", "sowetan", "the citizen",
             "mail & guardian", "ewn", "eyewitness news", "fin24", "businesstech",
         ],
-        "cities": [
-            {"slug": "johannesburg", "name": "Johannesburg", "matchers": [r"\bjohannesburg\b", r"\bjoburg\b", r"\bjo'burg\b"]},
-            {"slug": "cape-town", "name": "Cape Town", "matchers": [r"cape town"]},
-            {"slug": "durban", "name": "Durban", "matchers": [r"\bdurban\b"]},
-            {"slug": "pretoria", "name": "Pretoria", "matchers": [r"\bpretoria\b", r"\btshwane\b"]},
-            {"slug": "gqeberha", "name": "Gqeberha", "matchers": [r"\bgqeberha\b", r"port elizabeth"]},
-        ],
+        "cities": _ZA_CITIES,
+        "demonym_plural": "South Africans",
+        "city_local_sources": "News24, Daily Maverick, BusinessDay, TimesLIVE, Moneyweb, IOL, EWN",
         "currency": "ZAR",
         "fx_base": "ZAR",
         "markets_index": "JSE",
