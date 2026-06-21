@@ -1,0 +1,16 @@
+---
+title: "SAPS on standby as anti-immigration marches spread ahead of 30 June deadline"
+date: 2026-06-21T19:14:44.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SAPS on standby as anti-immigration marches spread ahead of 30 June deadline"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwJBVV95cUxNMy1OaVVuOVFFNWJKamhHT0VBUGd3ZTYzV05xSzM5Vk1jRnhiRmpELWpVYlRCYXVXbG9BVW5DdjFrcHVXaDJfNk03ekVxMFZRR0hkMFNpVkM1OUhnLXVOMlFKanBlZ09kMkdPQ2YzYTQ2aTNPeUlWeDAtOFFLUFRaQ04yNmhjZFF3eUtrSXdkZXJyX3NOYk1zQ0xhZFN2WEE2MEFBVGNYNmUzVXVHSE42WnRKUWw3Y2wzcFhaUThvNWN2cVlhYUh0ZENCdVZfc0piQ3NIV1o2OUJmdzFCbEgyVFZuWXdhOEJVOER2RHNvSXQ3RWYxbF8zSHpqM2RuZ21QZnVJUFU0akQtcW9KTVlna0dUQUJQLVk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilwJBVV95cUxNMy1OaVVuOVFFNWJKamhHT0VBUGd3ZTYzV05xSzM5Vk1jRnhiRmpELWpVYlRCYXVXbG9BVW5DdjFrcHVXaDJfNk03ekVxMFZRR0hkMFNpVkM1OUhnLXVOMlFKanBlZ09kMkdPQ2YzYTQ2aTNPeUlWeDAtOFFLUFRaQ04yNmhjZFF3eUtrSXdkZXJyX3NOYk1zQ0xhZFN2WEE2MEFBVGNYNmUzVXVHSE42WnRKUWw3Y2wzcFhaUThvNWN2cVlhYUh0ZENCdVZfc0piQ3NIV1o2OUJmdzFCbEgyVFZuWXdhOEJVOER2RHNvSXQ3RWYxbF8zSHpqM2RuZ21QZnVJUFU0akQtcW9KTVlna0dUQUJQLVk?oc=5)
