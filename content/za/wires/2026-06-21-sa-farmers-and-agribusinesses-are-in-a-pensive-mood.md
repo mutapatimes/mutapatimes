@@ -1,0 +1,16 @@
+---
+title: "SA farmers and agribusinesses are in a pensive mood"
+date: 2026-06-21T19:59:29.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA farmers and agribusinesses are in a pensive mood"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiggJBVV95cUxQb3R4UVQ1T2pnOHB6NFdQbEN3eFhGMFBEOXNhY3ZBb0NrQ1hWbE40TmJBS04zN19RR2lHZjZ4cXVYZjNfZ2VNTl80MFN4NW9HM0hTUW9la0daWmtaTDZ5djBXcHkyeVZuMzc1dmFmM3p2ZWwxb3ZzLWtodmlHR0pQMHVGdXZGNXVhekNYZFlZUnVCRTY3Z3N4cU04MDVpM0doZVRhV3A1WXVwaDBMcGJZTXF6VGhCUzE3SndtclBfWS1SUER3Tmt0OThtYnNzanpYcEZmU2ZSa0R2UVVGWFFKc3o3VEJETVFuOS0tV2s5WTI3QjBYRjh6T3Z6UHdEaGtxZEE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiggJBVV95cUxQb3R4UVQ1T2pnOHB6NFdQbEN3eFhGMFBEOXNhY3ZBb0NrQ1hWbE40TmJBS04zN19RR2lHZjZ4cXVYZjNfZ2VNTl80MFN4NW9HM0hTUW9la0daWmtaTDZ5djBXcHkyeVZuMzc1dmFmM3p2ZWwxb3ZzLWtodmlHR0pQMHVGdXZGNXVhekNYZFlZUnVCRTY3Z3N4cU04MDVpM0doZVRhV3A1WXVwaDBMcGJZTXF6VGhCUzE3SndtclBfWS1SUER3Tmt0OThtYnNzanpYcEZmU2ZSa0R2UVVGWFFKc3o3VEJETVFuOS0tV2s5WTI3QjBYRjh6T3Z6UHdEaGtxZEE?oc=5)
