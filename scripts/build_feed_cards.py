@@ -52,8 +52,21 @@ def card_filename(url):
 
 
 def _url_region(url):
-    """Which edition a URL belongs to, by path prefix. Extend per launch."""
-    return "za" if "/za/" in (url or "") else "zw"
+    """Which edition a URL belongs to, by path prefix — generic over every
+    non-default region in regions.py (so new editions need no edit here)."""
+    u = url or ""
+    try:
+        from regions import all_region_codes, region_path_prefix, DEFAULT_REGION
+        for code in all_region_codes():
+            if code == DEFAULT_REGION:
+                continue
+            pre = region_path_prefix(code)        # e.g. "/za"
+            if pre and (pre + "/") in u:
+                return code
+    except ImportError:
+        if "/za/" in u:
+            return "za"
+    return "zw"
 
 
 def card_dir(region="zw"):
