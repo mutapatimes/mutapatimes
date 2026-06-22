@@ -1,0 +1,16 @@
+---
+title: "May sees SARB hike rates for first time in three years"
+date: 2026-05-28T07:00:00.000Z
+author: FocusEconomics
+category: Policy
+image: 
+summary: "May sees SARB hike rates for first time in three years"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxNUWZqUm1pN1BhNDQwLXl2ZnhobURqQk15NGl0TC1FeTlCclZITVU5M0xFOVhlYk1iYXdiSVg3MXZycGQ3TTd3WjlveloyX3U1NEFqSEE1anUwUHFtdUlkLXltQTNWWTIxVkpvVE1GYjdHRTVvQ1h6cHpiSE8zTDlUeF9WX0ZZeUNaRXA3bS1WcXMyQXFnWXZHN21UaG1aZ3hIM1RMWk5mOEVjcnJsOElGQXpIZEdONnVDbWxkZFBqa1pIX3lYM0VGdE0weEJqUTJEQ2J1OHZIc3ZkWTZ0ZTM3cFNIZnh4dTUwaFdhMUpsZ1ZCNjR3U0xQNVdfQWhLVVczN1NrSXVTQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by FocusEconomics.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxNUWZqUm1pN1BhNDQwLXl2ZnhobURqQk15NGl0TC1FeTlCclZITVU5M0xFOVhlYk1iYXdiSVg3MXZycGQ3TTd3WjlveloyX3U1NEFqSEE1anUwUHFtdUlkLXltQTNWWTIxVkpvVE1GYjdHRTVvQ1h6cHpiSE8zTDlUeF9WX0ZZeUNaRXA3bS1WcXMyQXFnWXZHN21UaG1aZ3hIM1RMWk5mOEVjcnJsOElGQXpIZEdONnVDbWxkZFBqa1pIX3lYM0VGdE0weEJqUTJEQ2J1OHZIc3ZkWTZ0ZTM3cFNIZnh4dTUwaFdhMUpsZ1ZCNjR3U0xQNVdfQWhLVVczN1NrSXVTQQ?oc=5)

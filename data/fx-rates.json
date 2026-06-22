@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-06-22T06:09:39.629261+00:00",
+  "fetched_at": "2026-06-22T12:36:29.804041+00:00",
   "source": "https://open.er-api.com/v6/latest/USD",
   "source_label": "open.er-api.com (official interbank composite)",
   "base": "USD",
   "as_of": "Sun, 21 Jun 2026 00:02:31 +0000",
-  "next_update": "Mon, 22 Jun 2026 00:45:01 +0000",
+  "next_update": "Mon, 22 Jun 2026 00:53:01 +0000",
   "rates": {
     "ZWG": 26.7712,
     "ZAR": 16.456127,
@@ -18,5 +18,16 @@
     "CNY": 6.789004,
     "AED": 3.6725,
     "USD": 1.0
-  }
+  },
+  "hero": "ZWG",
+  "hero_label": "Zim Gold &middot; Reserve Bank of Zimbabwe official rate (composite)",
+  "hero_name": "Zim Gold",
+  "converter_order": [
+    "USD",
+    "ZWG",
+    "GBP",
+    "ZAR",
+    "EUR",
+    "BWP"
+  ]
 }
