@@ -1,0 +1,16 @@
+---
+title: "Business Talk – Medshield Medical Scheme’s Kevin Aron unpacks how burnout is impacting the South African healthcare sector"
+date: 2026-06-04T07:00:00.000Z
+author: Business Tech
+category: Health
+image: 
+summary: "Business Talk – Medshield Medical Scheme’s Kevin Aron unpacks how burnout is impacting the South African healthcare sector"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQdnhzMVFhckNmaGhLYTllcFdjZkhQaXNaMmZaMGctY0VUbGpxbUd3OW8yd3JNQWppNVV0OFpwejRSdDhoV3g1anlfRnV2QW1SR29tX3ZXSzhqUmpnQ2k4LU54RVRaUDJxYUFTQWpTd2g3elRlV01wV2Y1NTJpZHRuUWpScExBTHFLd21HRkliR0FGLXZKTldJM1JtR1gtQjFIMFNiYkNOTDZfNm5tVVRDN0JUdXRuWHZnejdxbmd0Nm1rWGlKUUlMTzRJbUxtRmM3R3ZHRkhURUVNUW8xUk80NmlFbF9XVmNNLXRNSWhSZ1hXMy1MVk9qOHMySlY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Business Tech.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQdnhzMVFhckNmaGhLYTllcFdjZkhQaXNaMmZaMGctY0VUbGpxbUd3OW8yd3JNQWppNVV0OFpwejRSdDhoV3g1anlfRnV2QW1SR29tX3ZXSzhqUmpnQ2k4LU54RVRaUDJxYUFTQWpTd2g3elRlV01wV2Y1NTJpZHRuUWpScExBTHFLd21HRkliR0FGLXZKTldJM1JtR1gtQjFIMFNiYkNOTDZfNm5tVVRDN0JUdXRuWHZnejdxbmd0Nm1rWGlKUUlMTzRJbUxtRmM3R3ZHRkhURUVNUW8xUk80NmlFbF9XVmNNLXRNSWhSZ1hXMy1MVk9qOHMySlY?oc=5)

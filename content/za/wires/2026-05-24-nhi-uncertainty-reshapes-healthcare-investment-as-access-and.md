@@ -1,0 +1,16 @@
+---
+title: "NHI uncertainty reshapes healthcare investment as access and affordability pressures intensify in SA"
+date: 2026-05-24T07:00:00.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "NHI uncertainty reshapes healthcare investment as access and affordability pressures intensify in SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPejNWNTEtY2JxRXJiSnRKaVpwQjFyd2x3QVhuTEgtNURidlB1VG9EMmRiQkxpLXVTSG00QzVLQWtuN1ltX3dYVlBZRmNPbncySlo1UW9nUWpNaENfclZKZUlVSUNtZUpGS3JlajlCVHRRLWZNQUJZMFJxbjBHbzF4TjVCQldYWl9yUjdRRU95eEVmdmEyTmlhaGRkdktXdWExRldXTE81TmRESzc3Y2poRi1ZXzY0MDJFU0hlQjlxOE9MT3lmWm55RVVIb0FaOFpvVGRfejVubmx5UlpublpiWW15YjBwVkE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPejNWNTEtY2JxRXJiSnRKaVpwQjFyd2x3QVhuTEgtNURidlB1VG9EMmRiQkxpLXVTSG00QzVLQWtuN1ltX3dYVlBZRmNPbncySlo1UW9nUWpNaENfclZKZUlVSUNtZUpGS3JlajlCVHRRLWZNQUJZMFJxbjBHbzF4TjVCQldYWl9yUjdRRU95eEVmdmEyTmlhaGRkdktXdWExRldXTE81TmRESzc3Y2poRi1ZXzY0MDJFU0hlQjlxOE9MT3lmWm55RVVIb0FaOFpvVGRfejVubmx5UlpublpiWW15YjBwVkE?oc=5)

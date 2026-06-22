@@ -1,13 +1,29 @@
 {
-  "fetched_at": "2026-06-22T11:44:08+00:00",
+  "fetched_at": "2026-06-22T16:46:36+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "‘The Beast’ personifies Zimbabwe’s quality rugby exports to the Springboks over the years",
-      "link": "https://mutapatimes.com/articles/2026-06-21-the-beast-personifies-zimbabwes-quality-rugby-exports-to-the",
-      "image": "https://mutapatimes.com/img/cards/news/fb36c234bd32.png",
-      "pubDate": "2026-06-21T23:30:31+00:00",
+      "title": "Efforts to repatriate SA returnees intensify",
+      "link": "https://mutapatimes.com/news/2026-06-22-efforts-to-repatriate-sa-returnees-intensify-f93aba",
+      "image": "https://mutapatimes.com/img/cards/news/810d36a98bf7.png",
+      "pubDate": "2026-06-22T04:02:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZIMRA tax audits recover nearly a billion US dollars",
+      "link": "https://mutapatimes.com/articles/2026-06-22-zimra-tax-audits-recover-nearly-a-billion-us-dollars",
+      "image": "https://mutapatimes.com/img/cards/news/95cd695faa31.png",
+      "pubDate": "2026-06-22T03:52:14+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean Economy Doing Very Well, Capable of Absorbing All Citizens Being Chased Out of South Africa - Says Mutsvangwa",
+      "link": "https://mutapatimes.com/articles/2026-06-22-zimbabwean-economy-doing-very-well-capable-of-absorbing-all",
+      "image": "https://mutapatimes.com/img/cards/news/d8697bb3a914.png",
+      "pubDate": "2026-06-22T03:50:23+00:00",
       "category": "Business"
     },
     {
@@ -17,14 +33,6 @@
       "image": "https://mutapatimes.com/img/cards/news/d47eec7a4f52.png",
       "pubDate": "2026-06-21T23:30:31+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Lithium sector attracts US$3,4bn investment",
-      "link": "https://mutapatimes.com/articles/2026-06-21-lithium-sector-attracts-us34bn-investment",
-      "image": "https://mutapatimes.com/img/cards/news/b296dd362f91.png",
-      "pubDate": "2026-06-21T22:15:34+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -81,6 +89,70 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-21T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounting Intern",
+      "link": "https://vacancymail.co.zw/jobs/accounting-intern-67925/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2ea481ba598c.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TechVista Academy — Creative Associates – IT, Digital Learning & Content Development",
+      "link": "https://vacancymail.co.zw/jobs/creative-associates-it-digital-learning-content-development-67924/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c44640a56178.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marist Brothers High School, Dete — ACCOUNTING AND BISUNESS STUDIES TEACHER ( COMMERCIAL DEPARTMENT)",
+      "link": "https://vacancymail.co.zw/jobs/accounting-and-bisuness-studies-teacher-commercial-department-67923/",
+      "image": "https://mutapatimes.com/img/cards/jobs/56f89bb6dae2.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TechVista Academy — Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/receptionist-67922/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fa3ed4112807.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "HUMANA People to People — Chief Accountant",
+      "link": "https://vacancymail.co.zw/jobs/chief-accountant-67921/",
+      "image": "https://mutapatimes.com/img/cards/jobs/da4dd1cc437f.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "INVITATION TO TENDER PROCUREMENT OF PROFESSIONAL AGRICULTURAL PROPERTY AND BUSINESS VALUATION SERVICES-ESTATE LATE FRANCIS TADERERA DR209/26",
+      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-procurement-of-professional-agricultural-property-and-business-valuation-services-estate-late-francis-taderera-dr20926-67920/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ffa08bf8356a.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TOTAL NETWORKS — ACCOUNTS CLERK",
+      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-67919/",
+      "image": "https://mutapatimes.com/img/cards/jobs/af259e8c6e33.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Petrozim Line (Pvt) Ltd — Procurement Manager Head Office",
+      "link": "https://vacancymail.co.zw/jobs/procurement-manager-head-office-67918/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8e37e077426a.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -407,78 +479,6 @@
       "title": "Sales Person",
       "link": "https://vacancymail.co.zw/jobs/sales-person-67875/",
       "image": "https://mutapatimes.com/img/cards/jobs/f758f4335d94.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Trócaire — Programme Intern",
-      "link": "https://vacancymail.co.zw/jobs/programme-intern-67874/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5ebba70f059c.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Jointed Hands Welfare Organization (JHWO) — DATABASE ADMINISTRATOR",
-      "link": "https://vacancymail.co.zw/jobs/database-administrator-67873/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d3622ac8324f.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "SOS Children's Villages Zimbabwe — Fundraising and Institutional Partnership Development Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/fundraising-and-institutional-partnership-development-coordinator-67872/",
-      "image": "https://mutapatimes.com/img/cards/jobs/50180035a570.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Jointed Hands Welfare Organization (JHWO) — MONITORING AND EVALUATION OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/monitoring-and-evaluation-officer-67871/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e18998d704a5.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Jointed Hands Welfare Organization (JHWO) — REGIONAL OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/regional-officer-67870/",
-      "image": "https://mutapatimes.com/img/cards/jobs/41ef87961716.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Jointed Hands Welfare Organization (JHWO) — REGIONAL OFFICER- SOUTHERN",
-      "link": "https://vacancymail.co.zw/jobs/regional-officer-southern-67869/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ad055809867c.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "GENERAL MANAGER – OPERATIONS COMMERCIAL PRODUCTION",
-      "link": "https://vacancymail.co.zw/jobs/general-manager-operations-commercial-production-67868/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2a83334e43bb.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "GENERAL MANAGER – RISK, STRATEGY AND CORPORATE GOVERNANCE",
-      "link": "https://vacancymail.co.zw/jobs/general-manager-risk-strategy-and-corporate-governance-67867/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e472bdf9b761.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "SCHEME BUSINESS COORDINATORS",
-      "link": "https://vacancymail.co.zw/jobs/scheme-business-coordinators-67866/",
-      "image": "https://mutapatimes.com/img/cards/jobs/32898575155b.png",
       "pubDate": "2026-06-21T22:00:00+00:00",
       "category": "Jobs"
     }
