@@ -29,13 +29,18 @@
   var SHOPIFY_AD_EVERY = 6;         // insert a Shopify slide after every N real cards
   var SHOPIFY_AD_DURATION_MS = 6000;
   var mtUrl = window.mtUrl || function (p) { return p; };
-  var INDEX_URL = mtUrl("/content/articles/index.json");
-  var FEATURE_AD_URL = mtUrl("/data/feature-story.json");
+  // Content/data live at a region SUFFIX (content/za, data/za), so these fetches
+  // use mtContentDir/mtDataDir — NOT mtUrl (which prefixes /za and would 404).
+  // Article PAGE links below still use mtUrl (pages live under /za/...).
+  var mtContentDir = window.MT_CONTENT_DIR || "content";
+  var mtDataDir = window.MT_DATA_DIR || "data";
+  var INDEX_URL = "/" + mtContentDir + "/articles/index.json";
+  var FEATURE_AD_URL = "/" + mtDataDir + "/feature-story.json";
   // Curated editorial series promoted at the front of the rail. Each
   // becomes a single highlight that plays through every article in the
   // series with the series colour scheme. Order here = order on the rail.
   var SERIES_KEYS = ["venice-biennale-2026"];
-  function seriesManifestUrl(key) { return mtUrl("/data/series-" + key + ".json"); }
+  function seriesManifestUrl(key) { return "/" + mtDataDir + "/series-" + key + ".json"; }
 
   // Rotating Shopify sponsored slides. Impact campaign 13624.
   // Image URL format: https://a.impactradius-go.com/display-ad/13624-{id}

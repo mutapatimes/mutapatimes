@@ -28,6 +28,7 @@ ASSETS = {
     # region.js is generated from regions.py; content-hash it so adding a region
     # (which changes the file) auto-busts the cache and never misroutes /xx.
     "js/region.js": "js/region.js",
+    "js/stories.js": "js/stories.js",
 }
 
 SKIP_DIRS = ("node_modules", ".git", "ios", "android")
