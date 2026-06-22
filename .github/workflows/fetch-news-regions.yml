@@ -62,6 +62,9 @@ jobs:
       - name: Render 9:16 story cards (social export)
         run: python3 scripts/build_story_cards.py --region ${{ matrix.region }}
 
+      - name: Render daily weather snapshot card
+        run: python3 scripts/build_weather_card.py --region ${{ matrix.region }}
+
       - name: Build city news pages
         run: python3 scripts/build_city_pages.py --region ${{ matrix.region }}
 

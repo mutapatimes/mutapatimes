@@ -132,7 +132,9 @@ def _draw_emoji(img, draw, xy, text, font, fill):
 
 
 # ── The card ──────────────────────────────────────────────
-def render_card(weather, tsumo, date_label, out_path):
+def render_card(weather, tsumo, date_label, out_path,
+                greeting="Mangwanani · Livukile,", region_name="Zimbabwe",
+                via_text="ZIM WEATHER", pfx=""):
     """Editorial weather card — same left-aligned typographic chrome as
     every other 1080×1350 card on the IG grid. No white boxes; cities
     render as clean typographic lines instead of a 2×3 cell grid."""
@@ -146,14 +148,14 @@ def render_card(weather, tsumo, date_label, out_path):
     eyebrow_font  = load_font("sans_bold", 20)
     draw.rectangle([(0, 0), (140, 10)], fill=ACCENT)
     draw.text((PAD, 56), "THE MUTAPA TIMES", font=masthead_font, fill=CARD_FG)
-    draw.text((PAD, 106), f"ZIM WEATHER · {date_label}",
+    draw.text((PAD, 106), f"{via_text} · {date_label}",
               font=eyebrow_font, fill=ACCENT)
 
     # ── Headline: Shona · Ndebele greeting, LEFT-aligned ──
     greet_font = load_font("serif_bold", 60)
-    draw.text((PAD, 170), "Mangwanani · Livukile,",
+    draw.text((PAD, 170), greeting,
               font=greet_font, fill=CARD_FG)
-    draw.text((PAD, 238), "Zimbabwe.", font=greet_font, fill=ACCENT)
+    draw.text((PAD, 238), f"{region_name}.", font=greet_font, fill=ACCENT)
 
     # ── City lines: typographic, left-aligned, no boxes ──
     cells = (weather.get("cities") or [])[:6]
@@ -205,28 +207,29 @@ def render_card(weather, tsumo, date_label, out_path):
             draw.line([(PAD, sep_y), (CARD_W - PAD, sep_y)],
                       fill=CARD_FG_MUTED, width=1)
 
-    # ── Tsumo: small italic block above the footer ──
-    tsumo_eyebrow_font = load_font("sans_bold", 18)
-    tsumo_shona_font   = load_font("serif_italic", 24)
-    tsumo_en_font      = load_font("sans", 18)
+    # ── Tsumo: small italic block above the footer (Zimbabwe only) ──
+    if tsumo:
+        tsumo_eyebrow_font = load_font("sans_bold", 18)
+        tsumo_shona_font   = load_font("serif_italic", 24)
+        tsumo_en_font      = load_font("sans", 18)
 
-    tsumo_y = city_y0 + len(cells) * line_h + 12
-    draw.text((PAD, tsumo_y), "TSUMO YEZUVA · PROVERB OF THE DAY",
-              font=tsumo_eyebrow_font, fill=ACCENT)
+        tsumo_y = city_y0 + len(cells) * line_h + 12
+        draw.text((PAD, tsumo_y), "TSUMO YEZUVA · PROVERB OF THE DAY",
+                  font=tsumo_eyebrow_font, fill=ACCENT)
 
-    shona = f"“{tsumo['shona']}”"
-    en = tsumo["english"]
-    shona_lines = wrap_text(draw, shona, tsumo_shona_font, CARD_W - PAD * 2)[:2]
-    en_lines    = wrap_text(draw, en,    tsumo_en_font,    CARD_W - PAD * 2)[:2]
+        shona = f"“{tsumo['shona']}”"
+        en = tsumo["english"]
+        shona_lines = wrap_text(draw, shona, tsumo_shona_font, CARD_W - PAD * 2)[:2]
+        en_lines    = wrap_text(draw, en,    tsumo_en_font,    CARD_W - PAD * 2)[:2]
 
-    sy = tsumo_y + 32
-    for ln in shona_lines:
-        draw.text((PAD, sy), ln, font=tsumo_shona_font, fill=CARD_FG)
-        sy += 32
-    sy += 2
-    for ln in en_lines:
-        draw.text((PAD, sy), ln, font=tsumo_en_font, fill=CARD_FG_MUTED)
-        sy += 24
+        sy = tsumo_y + 32
+        for ln in shona_lines:
+            draw.text((PAD, sy), ln, font=tsumo_shona_font, fill=CARD_FG)
+            sy += 32
+        sy += 2
+        for ln in en_lines:
+            draw.text((PAD, sy), ln, font=tsumo_en_font, fill=CARD_FG_MUTED)
+            sy += 24
 
     # ── Footer: VIA / CTA, mirrors other editorial cards ──
     footer_font = load_font("sans_bold", 18)
@@ -234,10 +237,10 @@ def render_card(weather, tsumo, date_label, out_path):
 
     foot_y = CARD_H - 70
     draw.text((PAD, foot_y), "VIA", font=via_label, fill=CARD_FG_MUTED)
-    draw.text((PAD, foot_y + 22), "ZIM WEATHER",
+    draw.text((PAD, foot_y + 22), via_text,
               font=footer_font, fill=CARD_FG)
 
-    cta = "READ MORE → mutapatimes.com/weather"
+    cta = f"READ MORE → mutapatimes.com{pfx}/weather"
     cw  = draw.textlength(cta, font=footer_font)
     draw.text((CARD_W - PAD - cw, foot_y + 22), cta,
               font=footer_font, fill=ACCENT)
@@ -247,30 +250,56 @@ def render_card(weather, tsumo, date_label, out_path):
 
 
 def main():
-    print("=== BUILD WEATHER CARD ===")
-    if not os.path.exists(WEATHER_FILE):
-        print(f"  ERROR: {WEATHER_FILE} not found. Run fetch_weather.py first.")
+    import argparse
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    ap = argparse.ArgumentParser(description="Render the daily weather snapshot card.")
+    ap.add_argument("--region", default="zw")
+    region = ap.parse_args().region
+
+    # Per-region greeting + VIA label. Tsumo (Shona proverb) is Zimbabwe-only.
+    GREET = {"zw": ("Mangwanani · Livukile,", "ZIM WEATHER"),
+             "za": ("Sawubona · Molo,", "SA WEATHER")}
+    greeting, via_text = GREET.get(region, ("Good morning,", "WEATHER"))
+    region_name, pfx = "Zimbabwe", ""
+    weather_file, out_dir, out_file = WEATHER_FILE, OUT_DIR, OUT_FILE
+    try:
+        from regions import get_region, region_path_prefix
+        region_name = get_region(region).get("name", "Zimbabwe")
+        pfx = region_path_prefix(region)
+        if region != "zw":
+            weather_file = os.path.join(ROOT, "data", region, "weather.json")
+            out_dir = os.path.join(ROOT, "img", "cards", region)
+            out_file = os.path.join(out_dir, "weather-snapshot.png")
+    except ImportError:
+        pass
+
+    print(f"=== BUILD WEATHER CARD ({region}) ===")
+    if not os.path.exists(weather_file):
+        print(f"  ERROR: {weather_file} not found. Run fetch_weather.py --region {region} first.")
         sys.exit(1)
 
-    with open(WEATHER_FILE) as f:
+    with open(weather_file) as f:
         weather = json.load(f)
     if not (weather.get("cities") or []):
         print("  ERROR: no cities in payload")
         sys.exit(1)
-    tsumo = pick_tsumo()
+    tsumo = pick_tsumo() if region == "zw" else None
     if not HAS_PILMOJI:
         print("  NOTE: pilmoji missing — emoji render monochrome.")
 
+    os.makedirs(out_dir, exist_ok=True)
     date_label = datetime.now(timezone(timedelta(hours=2))).strftime("%a %d %b %Y").upper()
-    render_card(weather, tsumo, date_label, OUT_FILE)
-    print(f"  Wrote {OUT_FILE}")
+    render_card(weather, tsumo, date_label, out_file,
+                greeting=greeting, region_name=region_name, via_text=via_text, pfx=pfx)
+    print(f"  Wrote {out_file}")
     print(f"  Cities: {len(weather['cities'])}")
-    print(f"  Tsumo:  {tsumo['shona']}")
+    if tsumo:
+        print(f"  Tsumo:  {tsumo['shona']}")
 
     # Mirror the snapshot to weather-1-cover.png so the existing feed
     # image URL keeps resolving for already-deployed feed consumers.
-    legacy = os.path.join(OUT_DIR, "weather-1-cover.png")
-    shutil.copyfile(OUT_FILE, legacy)
+    legacy = os.path.join(out_dir, "weather-1-cover.png")
+    shutil.copyfile(out_file, legacy)
     print(f"  Mirrored → {legacy} (legacy filename for cached feeds)")
 
     print("\n=== DONE ===")

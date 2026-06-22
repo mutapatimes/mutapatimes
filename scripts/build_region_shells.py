@@ -17,7 +17,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from regions import (  # noqa: E402
-    get_region, region_path_prefix, region_newsletter_form, DEFAULT_REGION,
+    get_region, region_path_prefix, region_newsletter_form,
+    region_weather_cities, DEFAULT_REGION,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +28,14 @@ SHELLS = ["index.html", "articles.html", "article.html", "fx.html", "weather.htm
 
 def esc(s):
     return html_mod.escape(s or "", quote=True)
+
+
+def _city_list_text(weather_cities):
+    """Human list: 'Johannesburg, Cape Town … & Bloemfontein'."""
+    names = [c["name"] for c in weather_cities]
+    if len(names) <= 1:
+        return esc(names[0]) if names else ""
+    return esc(", ".join(names[:-1]) + " & " + names[-1])
 
 
 def _city_fragments(cities, pfx):
@@ -70,6 +79,8 @@ def build(region):
         ("{{HREFLANG}}", r["hreflang"]),
         ("{{KEYWORDS}}", keywords),
         ("{{NEWSLETTER_FORM}}", region_newsletter_form(region)),
+        ("{{WEATHER_CARD}}", f"/img/cards/{region}/weather-snapshot.png"),
+        ("{{WEATHER_CITIES_TEXT}}", _city_list_text(region_weather_cities(region))),
         ("{{PFX}}", pfx),
     ]
     out_dir = os.path.join(ROOT, region)
