@@ -59,6 +59,9 @@ jobs:
       - name: Render branded card per feed item (cached by URL hash)
         run: python3 scripts/build_feed_cards.py --region ${{ matrix.region }}
 
+      - name: Render 9:16 story cards (social export)
+        run: python3 scripts/build_story_cards.py --region ${{ matrix.region }}
+
       - name: Build city news pages
         run: python3 scripts/build_city_pages.py --region ${{ matrix.region }}
 

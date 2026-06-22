@@ -78,8 +78,32 @@ def card_filename(url):
     return f"{card_hash(url)}.png"
 
 
+def out_dir(region="zw"):
+    """On-disk story-card folder, per region (img/cards/<cc>/stories)."""
+    return OUT_DIR if region == "zw" else os.path.join(ROOT, "img", "cards", region, "stories")
+
+
+def _url_region(url):
+    """Which edition a card URL belongs to, by path prefix (generic)."""
+    u = url or ""
+    try:
+        from regions import all_region_codes, region_path_prefix, DEFAULT_REGION
+        for c in all_region_codes():
+            if c == DEFAULT_REGION:
+                continue
+            p = region_path_prefix(c)
+            if p and (p + "/") in u:
+                return c
+    except ImportError:
+        if "/za/" in u:
+            return "za"
+    return "zw"
+
+
 def card_public_url(url):
-    return f"/img/cards/stories/{card_filename(url)}"
+    region = _url_region(url)
+    base = "/img/cards/stories" if region == "zw" else f"/img/cards/{region}/stories"
+    return f"{base}/{card_filename(url)}"
 
 
 # ── Layout helper: find the largest font size that fits ──
@@ -140,11 +164,15 @@ def fit_body(draw, text, max_width, max_lines, max_size=34, min_size=22, step=2)
 
 
 # ── Sources: business articles, property, jobs ──────────────
-def collect_business_cards():
-    """One story per fresh CMS article. Returns list of dicts with
-    {url, eyebrow, headline, body, attribution, slug, date}."""
+def collect_business_cards(region="zw"):
+    """One story per fresh CMS article (region-aware). Returns list of dicts
+    {url, eyebrow, headline, body, attribution, slug, date}. For non-default
+    regions this is the news/articles source for their story cards."""
     out = []
-    idx_path = os.path.join(ROOT, "content", "articles", "index.json")
+    idx_path = (os.path.join(ROOT, "content", "articles", "index.json")
+                if region == "zw"
+                else os.path.join(ROOT, "content", region, "articles", "index.json"))
+    art_pfx = "" if region == "zw" else f"/{region}"
     if not os.path.exists(idx_path):
         return out
     try:
@@ -162,7 +190,7 @@ def collect_business_cards():
         summary = (e.get("summary") or "").strip()
         if not slug or not title or cat not in keep_cats:
             continue
-        url = f"https://mutapatimes.com/articles/{slug}"
+        url = f"https://mutapatimes.com{art_pfx}/articles/{slug}"
         out.append({
             "url": url,
             "eyebrow": cat or "BUSINESS",
@@ -314,9 +342,9 @@ def collect_job_cards():
 
 
 # ── Pruning: drop cards whose URLs no longer appear in any source ──
-def prune_stale(active_hashes):
+def prune_stale(active_hashes, cards_dir=None):
     pruned = 0
-    for path in glob.glob(os.path.join(OUT_DIR, "*.png")):
+    for path in glob.glob(os.path.join(cards_dir or OUT_DIR, "*.png")):
         name = os.path.splitext(os.path.basename(path))[0]
         if name not in active_hashes:
             try:
@@ -328,15 +356,25 @@ def prune_stale(active_hashes):
 
 
 def main():
-    # CLI flag: --force re-renders even cached cards. Useful after a
-    # layout change (e.g. switching to a body-paragraph layout).
-    force = "--force" in sys.argv
+    import argparse
+    ap = argparse.ArgumentParser(description="Render 9:16 social-export story cards.")
+    ap.add_argument("--region", default="zw")
+    ap.add_argument("--force", action="store_true",
+                    help="re-render even cached cards (after a layout change)")
+    args = ap.parse_args()
+    region = args.region
+    force = args.force or "--force" in sys.argv
+    cards_dir = out_dir(region)
+    os.makedirs(cards_dir, exist_ok=True)
 
-    print(f"=== BUILD STORY CARDS ({W}x{H}) ===")
+    print(f"=== BUILD STORY CARDS ({W}x{H}) region={region} ===")
     items = []
-    items += collect_business_cards()
-    items += collect_property_cards()
-    items += collect_job_cards()
+    # News/articles is the source for every region. Zimbabwe also cards its
+    # business/property/jobs verticals; other regions don't have those yet.
+    items += collect_business_cards(region)
+    if region == "zw":
+        items += collect_property_cards()
+        items += collect_job_cards()
     raw_count = len(items)
 
     # Freshness gate — drop anything older than MAX_AGE_DAYS so old
@@ -344,8 +382,7 @@ def main():
     # date (internships) pass through.
     items = [it for it in items if _is_fresh(it.get("date"))]
     stale = raw_count - len(items)
-    print(f"  Collected {len(items)} fresh items "
-          f"(business + property + jobs + internships)"
+    print(f"  Collected {len(items)} fresh items"
           + (f"  · dropped {stale} > {MAX_AGE_DAYS}d" if stale else "")
           + ("  [--force]" if force else ""))
 
@@ -354,7 +391,7 @@ def main():
     for it in items:
         h = card_hash(it["url"])
         active.add(h)
-        out_path = os.path.join(OUT_DIR, f"{h}.png")
+        out_path = os.path.join(cards_dir, f"{h}.png")
         if not force and os.path.exists(out_path):
             cached += 1
             continue
@@ -371,9 +408,9 @@ def main():
             failed += 1
             print(f"    FAIL {it['headline'][:48]}: {e}")
 
-    pruned = prune_stale(active)
+    pruned = prune_stale(active, cards_dir)
     print(f"  Rendered {rendered} new · Cached {cached} · Pruned {pruned} · Failed {failed}")
-    print(f"  Output:  {OUT_DIR}")
+    print(f"  Output:  {cards_dir}")
     print("=== DONE ===")
 
 
