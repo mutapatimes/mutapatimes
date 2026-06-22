@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-06-22T03:41:09+00:00",
+  "fetched_at": "2026-06-22T11:44:08+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "‘The Beast’ personifies Zimbabwe’s quality rugby exports to the Springboks over the years",
+      "link": "https://mutapatimes.com/articles/2026-06-21-the-beast-personifies-zimbabwes-quality-rugby-exports-to-the",
+      "image": "https://mutapatimes.com/img/cards/news/fb36c234bd32.png",
+      "pubDate": "2026-06-21T23:30:31+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘The Beast’ personifies Zimbabwe’s quality rugby exports to the Springboks over the years",
+      "link": "https://mutapatimes.com/news/2026-06-21-the-beast-personifies-zimbabwe-s-quality-rugby-exports-to-the-springboks-over-6e793e",
+      "image": "https://mutapatimes.com/img/cards/news/d47eec7a4f52.png",
+      "pubDate": "2026-06-21T23:30:31+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Lithium sector attracts US$3,4bn investment",
+      "link": "https://mutapatimes.com/articles/2026-06-21-lithium-sector-attracts-us34bn-investment",
+      "image": "https://mutapatimes.com/img/cards/news/b296dd362f91.png",
+      "pubDate": "2026-06-21T22:15:34+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim finance & insurance sector produced $2.0B in 2025 Q4 — 10.7% of GDP.",
@@ -20,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 22 Jun: Harare light drizzle · high 19° / low 9°",
+      "title": "Zim weather 22 Jun: Harare overcast · high 20° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-06-22",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-22",
       "pubDate": "2026-06-21T22:00:00+00:00",
@@ -57,6 +81,22 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-21T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "DOMBOSHAVA MEDCLINIC — MEDICAL PRACTITIONER (PART-TIME) Domboshava Medclinic (Re-advertisement)",
+      "link": "https://vacancymail.co.zw/jobs/medical-practitioner-part-time-domboshava-medclinic-re-advertisement-67917/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b63d18fa7b3e.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Jondavin investments — WOODWORK SPECIALIST / CARPENTER",
+      "link": "https://vacancymail.co.zw/jobs/woodwork-specialist-carpenter-67916/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e1bcb962ab15.png",
+      "pubDate": "2026-06-21T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "SCHEME BUSINESS COORDINATORS",
       "link": "https://vacancymail.co.zw/jobs/scheme-business-coordinators-67866/",
       "image": "https://mutapatimes.com/img/cards/jobs/32898575155b.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — CCTV Operator",
-      "link": "https://vacancymail.co.zw/jobs/cctv-operator-67864/",
-      "image": "https://mutapatimes.com/img/cards/jobs/393d1c61d603.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — Security Officer",
-      "link": "https://vacancymail.co.zw/jobs/security-officer-67863/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7a6e4f586aeb.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — OPERATIONS CONTROLLER",
-      "link": "https://vacancymail.co.zw/jobs/operations-controller-67862/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f3b427498718.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — SECURITY GUARDS",
-      "link": "https://vacancymail.co.zw/jobs/security-guards-67861/",
-      "image": "https://mutapatimes.com/img/cards/jobs/460ec282415a.png",
-      "pubDate": "2026-06-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — SERGEANT",
-      "link": "https://vacancymail.co.zw/jobs/sergeant-67860/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03433a9281fd.png",
       "pubDate": "2026-06-21T22:00:00+00:00",
       "category": "Jobs"
     }
