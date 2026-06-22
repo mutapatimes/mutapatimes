@@ -3,9 +3,15 @@
 # Allow crawling of all content
 User-agent: *
 Allow: /
-Disallow: /zb-demo/
+# Static article pages live under /articles/ — these MUST stay crawlable.
+Allow: /articles/
+# Block only the duplicate dynamic viewer (/article, /article.html, /article?slug=),
+# NOT the /articles/ archive. A bare "Disallow: /article" is a prefix match that
+# also blocks /articles/* — the bug that hid the whole archive from Google.
 Disallow: /article.html
-Disallow: /article
+Disallow: /article$
+Disallow: /article?
+Disallow: /zb-demo/
 Disallow: /zb-demo
 
 Sitemap: https://mutapatimes.com/sitemap.xml
