@@ -425,11 +425,14 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
     read_links = "\n".join(_read)
     # region.js only on non-root editions, so Zimbabwe footers stay identical.
     region_js = "" if not pfx else f'  <script defer src="{prefix}js/region.js?v=3"></script>\n'
-    # Zimbabwe-only editorial/sponsor scripts. Other editions omit them so their
-    # pages don't render an empty Feature Story / Scene Report series rail or a
-    # Zimbabwe sponsor strip. ZW emits them in the original order (byte-identical).
-    _ed_sponsor = ('  <script defer src="/js/sponsors.js"></script>\n'
-                   '  <script defer src="/js/shopify-ads.js"></script>\n') if region == "zw" else ""
+    # Shopify affiliate ads (shopify-ads.js) are region-agnostic — every edition
+    # gets them. sponsors.js (the Zimbabwe "Sponsored briefing" editorial strip)
+    # stays Zimbabwe-only. ZW emits both in the original order (byte-identical).
+    if region == "zw":
+        _ed_sponsor = ('  <script defer src="/js/sponsors.js"></script>\n'
+                       '  <script defer src="/js/shopify-ads.js"></script>\n')
+    else:
+        _ed_sponsor = '  <script defer src="/js/shopify-ads.js"></script>\n'
     _ed_feature = ('  <script defer src="/js/feature-story.js?v=1"></script>\n'
                    '  <script defer src="/js/series.js?v=3"></script>\n') if region == "zw" else ""
     return f"""  <hr class="dateHr">
