@@ -7,13 +7,25 @@ on:
   workflow_dispatch:  # Manual trigger for testing
 
 jobs:
-  send-newsletter:
+  zimbabwe:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Send newsletter
+      - name: Send Zimbabwe newsletter
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
-        run: python3 scripts/send_newsletter.py
+        run: python3 scripts/send_newsletter.py --region zw
+
+  south-africa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Sends to the South Africa Brevo list. Until the BREVO_LIST_ID_ZA secret
+      # is set, send_newsletter.py prints "skipping" and exits 0 (green). To add
+      # another region, copy this job with its own --region + list-id secret.
+      - name: Send South Africa newsletter (skips until SA list configured)
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID_ZA }}
+        run: python3 scripts/send_newsletter.py --region za

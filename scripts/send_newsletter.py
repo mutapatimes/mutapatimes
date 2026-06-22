@@ -16,12 +16,51 @@ from datetime import datetime, timezone
 # ── Configuration ───────────────────────────────────────────
 BREVO_API_KEY = os.environ.get("BREVO_API_KEY", "")
 BREVO_BASE = "https://api.brevo.com/v3"
-BREVO_LIST_ID = int(os.environ.get("BREVO_LIST_ID", "2"))
+BREVO_LIST_ID = int(os.environ.get("BREVO_LIST_ID") or "2")  # empty secret -> default
 DATA_DIR = "data"
 
 SENDER_NAME = "The Mutapa Times"
 SENDER_EMAIL = "news@mutapatimes.com"
 SITE_URL = "https://mutapatimes.com"
+
+# ── Region awareness (single source of truth: scripts/regions.py) ──
+# Zimbabwe is the default edition and keeps the in-file values above unchanged.
+# Other editions (--region za) send to their own Brevo list, pull their own
+# data/content, link to their /za pages, and drop the Zimbabwe-only culture
+# blocks (Shona Wordle, tsumo, stories rail).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from regions import (get_region as _get_region,
+                         region_path_prefix as _region_path_prefix,
+                         DEFAULT_REGION as _DEFAULT_REGION)
+except ImportError:
+    _get_region = None
+    _region_path_prefix = None
+    _DEFAULT_REGION = "zw"
+
+REGION = "zw"
+PFX = ""                                              # "" for zw, "/za" otherwise
+REGION_NAME = "Zimbabwe"
+CONTENT_INDEX = os.path.join("content", "articles", "index.json")
+
+
+def _load_region(code):
+    """Point data dir, Brevo list, link prefix and name at the given edition.
+    Zimbabwe (default) returns early so its pipeline is byte-for-byte unchanged."""
+    global REGION, DATA_DIR, BREVO_LIST_ID, PFX, REGION_NAME, CONTENT_INDEX
+    REGION = (code or _DEFAULT_REGION).lower()
+    if REGION == _DEFAULT_REGION or _get_region is None:
+        return
+    r = _get_region(REGION)
+    DATA_DIR = r["data_dir"]
+    PFX = _region_path_prefix(REGION)
+    REGION_NAME = r["name"]
+    CONTENT_INDEX = os.path.join(r["content_dir"], "articles", "index.json")
+    # Env BREVO_LIST_ID (a per-workflow secret) wins; else regions.py; else None
+    # so main() refuses to send rather than mail the wrong region's list.
+    env_lid = os.environ.get("BREVO_LIST_ID")
+    lid = r.get("brevo_list_id")
+    BREVO_LIST_ID = int(env_lid) if env_lid else (int(lid) if lid else None)
 
 # Primary categories first — editorial focus for business & intelligence service
 PRIMARY_CATEGORIES = ["business", "politics", "policy", "technology"]
@@ -846,7 +885,7 @@ def load_recent_originals(n=3):
     content/articles/index.json (source_type == 'original'). We feature the
     freshest originals at the top so our journalism is prioritised over the
     aggregated headlines."""
-    path = os.path.join("content", "articles", "index.json")
+    path = CONTENT_INDEX
     try:
         with open(path) as f:
             data = json.load(f)
@@ -864,7 +903,7 @@ def load_recent_originals(n=3):
             continue
         out.append({
             "title": a.get("title", ""),
-            "url": f"{SITE_URL}/articles/{slug}.html",
+            "url": f"{SITE_URL}{PFX}/articles/{slug}.html",
             "summary": (a.get("summary") or "").strip(),
             "category": a.get("category") or "",
             "date": a.get("date") or "",
@@ -962,7 +1001,7 @@ def build_html(category_articles, wordle=None, tsumo=None, originals=None):
         preheader = f"Top Zimbabwe headlines from foreign press, {date_display}."
 
     wordle_html = build_wordle_html(wordle)
-    stories_rail_html = build_stories_rail_html()
+    stories_rail_html = build_stories_rail_html() if REGION == _DEFAULT_REGION else ""
     tsumo_html = build_tsumo_html(tsumo)
     originals_html = build_originals_html(originals)
     academy_ad_html = build_academy_ad_html()
@@ -1148,7 +1187,7 @@ def build_html(category_articles, wordle=None, tsumo=None, originals=None):
           <!-- CTA -->
           <tr>
             <td class="cta-cell" style="padding:24px 20px;text-align:center;">
-              <a href="{SITE_URL}" target="_blank"
+              <a href="{SITE_URL}{PFX}" target="_blank"
                  style="display:inline-block;padding:10px 28px;
                         font-family:Helvetica,Arial,sans-serif;
                         font-size:12px;font-weight:700;
@@ -1239,7 +1278,7 @@ def build_html(category_articles, wordle=None, tsumo=None, originals=None):
               </p>
               <p style="font-family:Helvetica,Arial,sans-serif;
                         font-size:10px;color:#8b8678;margin:0 0 6px;">
-                <a href="{SITE_URL}" style="color:#c41e1e;text-decoration:none;">
+                <a href="{SITE_URL}{PFX}" style="color:#c41e1e;text-decoration:none;">
                   mutapatimes.com
                 </a>
                 &nbsp;&middot;&nbsp;
@@ -1303,15 +1342,27 @@ def create_and_send_campaign(html_content, subject):
 
 # ── Main ────────────────────────────────────────────────────
 def main():
+    import argparse
+    ap = argparse.ArgumentParser(description="Send a regional newsletter via Brevo.")
+    ap.add_argument("--region", default="zw", help="edition to send (default: zw)")
+    _load_region(ap.parse_args().region)
+
     if not BREVO_API_KEY:
         print("ERROR: BREVO_API_KEY not set")
         sys.exit(1)
+    if BREVO_LIST_ID is None:
+        print(f"No Brevo list configured for region '{REGION}' — skipping send. "
+              "Set the BREVO_LIST_ID secret (or regions.py brevo_list_id) to enable.")
+        sys.exit(0)
 
-    print("Loading today's Shona Wordle...")
-    wordle = load_wordle_today()
+    is_zw = REGION == _DEFAULT_REGION
+    print(f"Region: {REGION} ({REGION_NAME}) -> Brevo list {BREVO_LIST_ID}")
+
+    # Shona Wordle is a Zimbabwe-only culture block.
+    wordle = load_wordle_today() if is_zw else None
     if wordle:
         print(f"  Word #{wordle['day_n']}, {wordle['date_str']}")
-    else:
+    elif is_zw:
         print("  No wordle data found; sending without the wordle block")
 
     print("Loading category articles...")
@@ -1324,7 +1375,7 @@ def main():
     print(f"  Selected {len(top)} category articles for newsletter")
 
     # Editor's pick: force a pinned lead to the top (auto-expires by date).
-    if LEAD_OVERRIDE:
+    if is_zw and LEAD_OVERRIDE:
         today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         if today_str <= LEAD_OVERRIDE.get("until", today_str):
             lead = {k: v for k, v in LEAD_OVERRIDE.items() if k != "until"}
@@ -1336,9 +1387,10 @@ def main():
         else:
             print(f"  Lead override expired ({LEAD_OVERRIDE['until']}); using auto-pick")
 
-    # Tsumo of the Day, same daily rotation as the website
-    tsumo = get_tsumo_of_the_day()
-    print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
+    # Tsumo of the Day (Shona proverb) \u2014 Zimbabwe-only culture block.
+    tsumo = get_tsumo_of_the_day() if is_zw else None
+    if tsumo:
+        print(f"  Tsumo: \u201c{tsumo['shona']}\u201d")
 
     # Prioritise our own newest reporting at the top of the email.
     originals = load_recent_originals(3)
@@ -1350,7 +1402,7 @@ def main():
     # Dynamic subject line: "Monday morning briefing: 15 new headlines from Zimbabwe"
     today = datetime.now(timezone.utc)
     day_label = DAY_GREETINGS.get(today.weekday(), today.strftime("%A"))
-    subject = f"{day_label} briefing: {total_count} new headlines from Zimbabwe"
+    subject = f"{day_label} briefing: {total_count} new headlines from {REGION_NAME}"
 
     print(f"  Subject: {subject}")
 
