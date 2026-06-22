@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-22T05:29:57.538138+00:00",
+  "fetched_at": "2026-06-22T12:25:21.861491+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -20,15 +20,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/f3/38/4f/f3384f72-d4b6-4b85-a83a-7cb7f6a8a51a_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
-    },
-    {
-      "title": "Marlborough 2-Bed Flat – Ready for Sectional Title",
-      "url": "https://www.property.co.zw/for-sale/townhouses-leg242182",
-      "price": "USD 80,000",
-      "location": "Marlborough, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/30/94/aa/3094aabf-0ee6-4af2-9bb7-eea5703967b7_thumbnail591.webp",
-      "beds": "2",
-      "baths": "1"
     },
     {
       "title": "Great investment",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/75/f1/9e/75f19ebf-3202-4a2e-981e-158e2fcd74fb_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
+    },
+    {
+      "title": "Glenorah House For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-pex235553",
+      "price": "USD 55,000",
+      "location": "Glen Norah, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/59/25/64/59256439-92c0-4e39-90d3-7ab6dfe2a550_thumbnail591.webp",
+      "beds": "4",
+      "baths": "1"
     }
   ]
 }
