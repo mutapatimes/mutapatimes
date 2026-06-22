@@ -42,14 +42,19 @@ jobs:
           PERIGON_API_KEY: ${{ secrets.PERIGON_API_KEY }}
         run: python3 scripts/fetch_news.py --region ${{ matrix.region }}
 
+      - name: Fetch FX rates + weather (region verticals)
+        run: |
+          python3 scripts/fetch_fx.py --region ${{ matrix.region }}
+          python3 scripts/fetch_weather.py --region ${{ matrix.region }}
+
       - name: Build news landing pages
         run: python3 scripts/build_news_pages.py --region ${{ matrix.region }}
 
+      - name: Build region shell pages (home / articles / article / fx / weather)
+        run: python3 scripts/build_region_shells.py --region ${{ matrix.region }}
+
       - name: Build static article pages
         run: python3 scripts/build_static_pages.py --region ${{ matrix.region }} --articles-only
-
-      - name: Build region shell pages (home / articles / article)
-        run: python3 scripts/build_region_shells.py --region ${{ matrix.region }}
 
       - name: Render branded card per feed item (cached by URL hash)
         run: python3 scripts/build_feed_cards.py --region ${{ matrix.region }}

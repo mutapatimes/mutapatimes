@@ -22,7 +22,7 @@ from regions import (  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TPL_DIR = os.path.join(ROOT, "templates", "region")
-SHELLS = ["index.html", "articles.html", "article.html"]
+SHELLS = ["index.html", "articles.html", "article.html", "fx.html", "weather.html"]
 
 
 def esc(s):
@@ -81,7 +81,7 @@ def build(region):
         assert "{{" not in s, f"unfilled placeholder in {shell}: {s[s.index('{{'):s.index('{{')+30]}"
         with open(os.path.join(out_dir, shell), "w", encoding="utf-8") as f:
             f.write(s)
-    print(f"Wrote {region}/index.html, {region}/articles.html, {region}/article.html")
+    print(f"Wrote {len(SHELLS)} shells for {region}: " + ", ".join(SHELLS))
 
 
 def main():
