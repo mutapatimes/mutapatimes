@@ -385,10 +385,8 @@ REGIONS = {
         "indexable": False,         # PRE-LAUNCH: noindex until Phase 3 sign-off
         "data_dir": "data/za",
         "content_dir": "content/za",
-        # TODO: replace with the South Africa Brevo form URL once the SA list +
-        # form are created — until then SA sign-ups share the Zimbabwe list.
-        "newsletter_form_url": _ZW_NEWSLETTER_FORM,
-        "brevo_list_id": None,     # set the SA Brevo list id at launch
+        "newsletter_form_url": "https://e8bb9c12.sibforms.com/serve/MUIFAG7VVccFkFF2xK48g6M774UnwvBuprOAvKgs289BnjHnSDTVGcO_BcZZau9wwBHBaNCwxfMfaOexCI0hHwRCP6jZhokdH9rVTZ2lbN_YbPP5UFl3zBlXAA6flC_ywqPKgAo__IPOpxxeQtTTw1ZyF_PbV7D6zhsOz-7PAVxDrcOknsZgkXsryDojw3ssFGhXB1ITtMj5_KYVng==",
+        "brevo_list_id": 6,        # South Africa Brevo contact list
 
         "category_queries": {
             "business": [_gnews("South+Africa+business+OR+South+Africa+economy+OR+JSE+OR+rand+OR+South+Africa+mining", gl="ZA")],
