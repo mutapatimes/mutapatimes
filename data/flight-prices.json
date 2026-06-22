@@ -20,7 +20,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 533,
+          "price": 532,
           "airline": "FR",
           "departure_at": "2026-06-30",
           "return_at": "",
@@ -130,12 +130,12 @@
           "currency": ""
         },
         {
-          "price": 559,
-          "airline": "W9",
-          "departure_at": "2026-07-05",
+          "price": 560,
+          "airline": "VF",
+          "departure_at": "2026-06-26",
           "return_at": "",
-          "stops": 4,
-          "duration": 2460,
+          "stops": 3,
+          "duration": 2200,
           "currency": ""
         }
       ],
@@ -419,7 +419,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 11,
+          "n": 12,
           "error": null
         },
         {
@@ -441,7 +441,7 @@
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 18
     },
     "new-york-to-harare": {
       "origin": "NYC",

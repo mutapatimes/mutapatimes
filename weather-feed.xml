@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jun 2026 16:46:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 22:44:05 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 22 Jun: Harare overcast · high 20° / low 10°</title>
-      <link>https://mutapatimes.com/weather?d=2026-06-22</link>
+      <title>Zim weather 23 Jun: Harare overcast · high 20° / low 10°</title>
+      <link>https://mutapatimes.com/weather?d=2026-06-23</link>
       <description>Harare: high 20°, low 10° (overcast) · Bulawayo: high 21°, low 10° (overcast) · Mutare: high 19°, low 11° (light drizzle) · Gweru: high 20°, low 10° (overcast) · Masvingo: high 20°, low 10° (overcast) · Victoria Falls: high 25°, low 12° (clear sky) Tsumo yezuva: Charovedzera charovedzera, gudo rakakwira mawere kwasviba. (Practice makes even hard things easy.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Sun, 21 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-06-22</guid>
+      <pubDate>Mon, 22 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-06-23</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-22" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-22"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-22" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-23" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-23"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-23" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
