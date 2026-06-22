@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jun 2026 20:39:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 21:13:11 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,6 +89,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/77cc5da7cc62.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/77cc5da7cc62.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/77cc5da7cc62.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 685,000 — Borrowdale (Borrowdale, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/9ce524a49a0d.html</link>
+      <description>USD 685,000 — Borrowdale, Harare North. 4 beds, 3 baths. Borrowdale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 21 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/9ce524a49a0d.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/9ce524a49a0d.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9ce524a49a0d.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/9ce524a49a0d.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 750,000 — Just Listed!!! (Borrowdale, Harare North)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/f37045e50ec5.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f37045e50ec5.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/f37045e50ec5.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 55,000 — Glenorah House For Sale (Glen Norah, Harare High Density)</title>
-      <link>https://mutapatimes.com/property-landing/ba4823ad5050.html</link>
-      <description>USD 55,000 — Glen Norah, Harare High Density. 4 beds, 1 bath. Glenorah House For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 21 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ba4823ad5050.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/ba4823ad5050.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ba4823ad5050.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/ba4823ad5050.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
