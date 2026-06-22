@@ -20,6 +20,12 @@ refactored to import from here (planned).
 BASE_URL = "https://mutapatimes.com"
 DEFAULT_REGION = "zw"
 
+# Brevo signup form the newsletter sign-up boxes POST to. Each Brevo form is tied
+# to one contact list, so a per-region form == a per-region subscriber list. The
+# Zimbabwe form is the default; give a region its own form URL here to capture
+# its subscribers into its own list.
+_ZW_NEWSLETTER_FORM = "https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
+
 # A region is only announced to search engines once it is signed off. Until
 # then its pages carry a noindex robots tag and its sitemap is not referenced
 # in robots.txt. Flip a region's "indexable" to True at go-live.
@@ -298,6 +304,8 @@ REGIONS = {
         "indexable": True,          # live edition — indexed by search engines
         "data_dir": "data",
         "content_dir": "content",
+        "newsletter_form_url": _ZW_NEWSLETTER_FORM,
+        "brevo_list_id": 2,        # Brevo contact list this edition sends to
         "category_queries": {
             "business": [_gnews("Zimbabwe+business+OR+Zimbabwe+economy+OR+Zimbabwe+finance+OR+Zimbabwe+investment+OR+Zimbabwe+mining")],
             "policy": [_gnews("Zimbabwe+policy+OR+Zimbabwe+regulation+OR+Zimbabwe+law+OR+Zimbabwe+reform+OR+Zimbabwe+sanctions+OR+Zimbabwe+SADC")],
@@ -377,6 +385,11 @@ REGIONS = {
         "indexable": False,         # PRE-LAUNCH: noindex until Phase 3 sign-off
         "data_dir": "data/za",
         "content_dir": "content/za",
+        # TODO: replace with the South Africa Brevo form URL once the SA list +
+        # form are created — until then SA sign-ups share the Zimbabwe list.
+        "newsletter_form_url": _ZW_NEWSLETTER_FORM,
+        "brevo_list_id": None,     # set the SA Brevo list id at launch
+
         "category_queries": {
             "business": [_gnews("South+Africa+business+OR+South+Africa+economy+OR+JSE+OR+rand+OR+South+Africa+mining", gl="ZA")],
             "policy": [_gnews("South+Africa+policy+OR+South+Africa+regulation+OR+South+Africa+law+OR+South+Africa+reform+OR+SARB", gl="ZA")],
@@ -483,6 +496,12 @@ REGIONS = {
 def get_region(code):
     """Return the region config for a code, defaulting to Zimbabwe."""
     return REGIONS.get((code or DEFAULT_REGION).lower(), REGIONS[DEFAULT_REGION])
+
+
+def region_newsletter_form(code):
+    """Brevo signup form URL for a region (defaults to Zimbabwe's form/list).
+    A per-region form routes that edition's sign-ups into its own list."""
+    return get_region(code).get("newsletter_form_url") or _ZW_NEWSLETTER_FORM
 
 
 def region_path_prefix(code):

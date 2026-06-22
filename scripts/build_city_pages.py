@@ -33,7 +33,7 @@ try:
     from build_feed_cards import card_public_url as _feed_card_url
 except ImportError:
     _feed_card_url = None
-from regions import get_region, all_region_codes  # noqa: E402
+from regions import get_region, all_region_codes, region_newsletter_form  # noqa: E402
 
 BASE_URL = "https://mutapatimes.com"
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -61,6 +61,7 @@ def _region_meta(code):
         "geo": r["code"].upper(),
         "local_sources": r.get("city_local_sources", ""),
         "scene_report": r.get("scene_report_html", ""),
+        "newsletter_form": region_newsletter_form(code),
     }
 
 
@@ -403,7 +404,7 @@ def build_page(city, all_articles, other_cities, meta, pfx):
       <a href="/privacy">Privacy</a>
     </nav>
     <form class="nav-drawer-sub" method="POST"
-          action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
+          action="{meta['newsletter_form']}"
           target="brevo-drawer-frame">
       <p class="nav-drawer-sub-eyebrow">Subscribe to the briefing</p>
       <div class="nav-drawer-sub-row">

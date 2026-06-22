@@ -16,7 +16,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from regions import get_region, region_path_prefix, DEFAULT_REGION  # noqa: E402
+from regions import (  # noqa: E402
+    get_region, region_path_prefix, region_newsletter_form, DEFAULT_REGION,
+)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TPL_DIR = os.path.join(ROOT, "templates", "region")
@@ -67,6 +69,7 @@ def build(region):
         ("{{NAME}}", name),
         ("{{HREFLANG}}", r["hreflang"]),
         ("{{KEYWORDS}}", keywords),
+        ("{{NEWSLETTER_FORM}}", region_newsletter_form(region)),
         ("{{PFX}}", pfx),
     ]
     out_dir = os.path.join(ROOT, region)

@@ -24,9 +24,10 @@ try:
 except ImportError:
     _feed_card_url = None
 try:
-    from regions import get_region as _get_region  # noqa: E402
+    from regions import get_region as _get_region, region_newsletter_form as _nl_form  # noqa: E402
 except ImportError:
     _get_region = None
+    _nl_form = None
 
 BASE_URL = "https://mutapatimes.com"
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
@@ -247,6 +248,7 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
     eco_cls = ' class="economy-btn active"' if active == "economy" else ' class="economy-btn"'
     body_attr = f' class="{esc(body_class)}"' if body_class else ""
     _meta = _get_region(region) if _get_region else {"name": "Zimbabwe"}
+    nl_form = _nl_form(region) if _nl_form else _meta.get("newsletter_form_url", "")
     country = _meta.get("name", "Zimbabwe")
     cities = region_cities(region)
     cities_dropdown = "\n".join(
@@ -367,7 +369,7 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
       <a href="/privacy">Privacy</a>
     </nav>
     <form class="nav-drawer-sub" method="POST"
-          action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg=="
+          action="{nl_form}"
           target="brevo-drawer-frame">
       <p class="nav-drawer-sub-eyebrow">Subscribe to the briefing</p>
       <div class="nav-drawer-sub-row">
@@ -394,6 +396,7 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
 def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
     prefix = "../" * depth
     _meta = _get_region(region) if _get_region else {}
+    nl_form = _nl_form(region) if _nl_form else _meta.get("newsletter_form_url", "")
     demonym_adj = _meta.get("demonym", "Zimbabwean")
     cities = region_cities(region)
     cities_footer = "\n".join(
@@ -456,7 +459,7 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
           <li><span aria-hidden="true">📰</span> Original analysis</li>
           <li><span aria-hidden="true">⚡</span> 2&times; briefings per week</li>
         </ul>
-        <form class="essential-form" method="POST" action="https://e8bb9c12.sibforms.com/serve/MUIFANhyo5KAv45zGQtXk46aajtYgiqbLYvK0dXstXNkrCWwsrDeJG7IjtjBOM4LZfCQpFxjgq1NguOQm0ZMtALVI-9f2BYGEwxlGoGnDBiTqyPNvC7vR6D1lPLC4UWJqvOevKNHiUd0f5-o093A3UQ7iNImM7AC4as67y6Jo4WrQKPW8qEiHVivLeAnaT1wNM2xeUW1a6EmaLlvJg==" target="brevo-footer-frame">
+        <form class="essential-form" method="POST" action="{nl_form}" target="brevo-footer-frame">
           <label for="essential-email" class="visually-hidden">Email address</label>
           <input id="essential-email" type="email" name="EMAIL" placeholder="Enter your email address" required autocomplete="email" aria-label="Email address">
           <button type="submit">Subscribe , It&rsquo;s Free</button>
