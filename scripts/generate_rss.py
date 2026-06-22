@@ -237,18 +237,30 @@ _HASHTAG_TOPIC_MAP = {
     "Weather":  ["#Weather", "#ZimbabweWeather"],
 }
 
-def _hashtags_for(category, title=""):
-    """Produce a small editorial-grade hashtag set per item: always
-    #Zimbabwe, a category tag, plus a couple of topic-specific tags.
+def _country_tag(region):
+    """Hashtag-safe country word for a region: Zimbabwe, SouthAfrica, …"""
+    try:
+        from regions import get_region
+        return (get_region(region).get("name") or "Zimbabwe").replace(" ", "")
+    except Exception:
+        return "Zimbabwe" if region == "zw" else region.upper()
+
+
+def _hashtags_for(category, title="", country="Zimbabwe"):
+    """Produce a small editorial-grade hashtag set per item: always the
+    edition's country tag, a category tag, plus topic-specific tags. The
+    topic map's Zimbabwe-specific tags are rewritten to the region's country.
     Used by Metricool's RSS autolist via the description field."""
-    tags = ["#Zimbabwe"]
+    tags = ["#" + country]
     cat = (category or "").strip()
     extras = _HASHTAG_TOPIC_MAP.get(cat, [])
     for t in extras:
-        if t not in tags:
-            tags.append(t)
-    if "#ZimbabweNews" not in tags:
-        tags.append("#ZimbabweNews")
+        t2 = t.replace("Zimbabwe", country)
+        if t2 not in tags:
+            tags.append(t2)
+    newstag = "#" + country + "News"
+    if newstag not in tags:
+        tags.append(newstag)
     # De-dupe, cap at 5
     return " ".join(tags[:5])
 
@@ -269,6 +281,7 @@ def build_rss(items, region="zw"):
     """Build RSS 2.0 XML string. Zimbabwe (default) is unchanged; other
     editions point the channel link + self link + description at /<region>."""
     pfx = "" if region == "zw" else f"/{region}"
+    country = _country_tag(region)
     self_url = FEED_URL if region == "zw" else f"{BASE_URL}{pfx}/feed.xml"
     channel_link = f"{BASE_URL}{pfx}"
     channel_desc = (
@@ -341,7 +354,7 @@ def build_rss(items, region="zw"):
             "    <item>\n"
             f"      <title>{escape(title_text)}</title>\n"
             f"      <link>{escape(item['link'])}</link>\n"
-            f"      <description>{escape(_swap_apostrophes(_strip_emails(item.get('description', ''))) + ' ' + _hashtags_for(item.get('category', ''), item.get('title', '')))}</description>\n"
+            f"      <description>{escape(_swap_apostrophes(_strip_emails(item.get('description', ''))) + ' ' + _hashtags_for(item.get('category', ''), item.get('title', ''), country))}</description>\n"
             f"      <pubDate>{pub}</pubDate>\n"
             f'      <guid isPermaLink="true">{escape(item["link"])}</guid>\n'
             f"{cat}{author}{image}"
