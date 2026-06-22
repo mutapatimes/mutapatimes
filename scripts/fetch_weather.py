@@ -98,9 +98,28 @@ def fetch_one(city):
 
 
 def main():
-    print("=== FETCH WEATHER ===")
+    import argparse
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    ap = argparse.ArgumentParser(description="Fetch weather for a region's cities.")
+    ap.add_argument("--region", default="zw")
+    region = ap.parse_args().region
+
+    # Region config: cities (name/lat/lon), data dir, timezone. Zimbabwe falls
+    # back to the in-file CITIES/DATA_DIR so its weather.json is unchanged.
+    city_list, data_dir, tz = CITIES, DATA_DIR, "Africa/Harare"
+    try:
+        from regions import get_region, region_weather_cities
+        r = get_region(region)
+        city_list = region_weather_cities(region) or CITIES
+        data_dir = r.get("data_dir", DATA_DIR)
+        tz = r.get("weather_tz") or ("Africa/Harare" if region == "zw" else "Africa/Johannesburg")
+    except ImportError:
+        pass
+    out_file = os.path.join(data_dir, "weather.json")
+
+    print(f"=== FETCH WEATHER ({region}) ===")
     cities = []
-    for city in CITIES:
+    for city in city_list:
         result = fetch_one(city)
         if result is None:
             print(f"  WARN: dropping {city['name']} (fetch failed)")
@@ -116,15 +135,15 @@ def main():
     output = {
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "source": "https://open-meteo.com/",
-        "tz": "Africa/Harare",
+        "tz": tz,
         "cities": cities,
     }
 
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    os.makedirs(data_dir, exist_ok=True)
+    with open(out_file, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"\n  Wrote {OUTPUT_FILE} ({len(cities)} cities)")
+    print(f"\n  Wrote {out_file} ({len(cities)} cities)")
     print("\n=== DONE ===")
 
 

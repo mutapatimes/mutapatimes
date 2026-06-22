@@ -1,0 +1,32 @@
+{
+  "fetched_at": "2026-06-22T11:40:11.477793+00:00",
+  "source": "https://open.er-api.com/v6/latest/USD",
+  "source_label": "open.er-api.com (official interbank composite)",
+  "base": "USD",
+  "as_of": "Sun, 21 Jun 2026 00:02:31 +0000",
+  "next_update": "Mon, 22 Jun 2026 00:51:41 +0000",
+  "rates": {
+    "ZAR": 16.456127,
+    "USD": 1.0,
+    "GBP": 0.755931,
+    "EUR": 0.87198,
+    "BWP": 13.843132,
+    "MZN": 64.094917,
+    "ZMW": 17.950971,
+    "AUD": 1.425642,
+    "CAD": 1.414888,
+    "AED": 3.6725,
+    "CNY": 6.789004
+  },
+  "hero": "ZAR",
+  "hero_label": "South African rand &middot; interbank composite",
+  "hero_name": "South African Rand",
+  "converter_order": [
+    "ZAR",
+    "USD",
+    "GBP",
+    "EUR",
+    "BWP",
+    "AUD"
+  ]
+}

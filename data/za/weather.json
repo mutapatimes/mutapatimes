@@ -1,0 +1,85 @@
+{
+  "fetched_at": "2026-06-22T11:40:12.616299+00:00",
+  "source": "https://open-meteo.com/",
+  "tz": "Africa/Johannesburg",
+  "cities": [
+    {
+      "city": "Johannesburg",
+      "current_temp": 13.5,
+      "high": 13.6,
+      "low": 7.7,
+      "precip_mm": 0.4,
+      "precip_prob": 45,
+      "humidity": 62,
+      "wind_kmh": 9.7,
+      "code": 51,
+      "label": "Light drizzle",
+      "emoji": "🌦️"
+    },
+    {
+      "city": "Cape Town",
+      "current_temp": 15.8,
+      "high": 15.8,
+      "low": 12.9,
+      "precip_mm": 0.3,
+      "precip_prob": 25,
+      "humidity": 89,
+      "wind_kmh": 15.8,
+      "code": 51,
+      "label": "Light drizzle",
+      "emoji": "🌦️"
+    },
+    {
+      "city": "Durban",
+      "current_temp": 25.4,
+      "high": 25.6,
+      "low": 14.7,
+      "precip_mm": 0.0,
+      "precip_prob": 0,
+      "humidity": 49,
+      "wind_kmh": 8.1,
+      "code": 3,
+      "label": "Overcast",
+      "emoji": "☁️"
+    },
+    {
+      "city": "Pretoria",
+      "current_temp": 15.0,
+      "high": 15.9,
+      "low": 7.9,
+      "precip_mm": 0.0,
+      "precip_prob": 31,
+      "humidity": 62,
+      "wind_kmh": 5.9,
+      "code": 3,
+      "label": "Overcast",
+      "emoji": "☁️"
+    },
+    {
+      "city": "Gqeberha",
+      "current_temp": 22.8,
+      "high": 22.8,
+      "low": 15.7,
+      "precip_mm": 0.0,
+      "precip_prob": 14,
+      "humidity": 63,
+      "wind_kmh": 10.7,
+      "code": 3,
+      "label": "Overcast",
+      "emoji": "☁️"
+    },
+    {
+      "city": "Bloemfontein",
+      "current_temp": 14.1,
+      "high": 14.8,
+      "low": 6.9,
+      "precip_mm": 2.1,
+      "precip_prob": 69,
+      "humidity": 62,
+      "wind_kmh": 13.5,
+      "code": 53,
+      "label": "Drizzle",
+      "emoji": "🌦️"
+    }
+  ]
+}

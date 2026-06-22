@@ -367,6 +367,28 @@ REGIONS = {
         "fx_base": "USD",
         "markets_index": "ZSE",
         "weather_locations": ["Harare", "Bulawayo", "Mutare", "Gweru", "Masvingo", "Victoria Falls"],
+        # Weather card cities (name/lat/lon). Verbatim from the old fetch_weather
+        # CITIES so Zimbabwe's weather.json is unchanged.
+        "weather_cities": [
+            {"name": "Harare", "lat": -17.829, "lon": 31.052},
+            {"name": "Bulawayo", "lat": -20.149, "lon": 28.580},
+            {"name": "Mutare", "lat": -18.970, "lon": 32.650},
+            {"name": "Gweru", "lat": -19.450, "lon": 29.820},
+            {"name": "Masvingo", "lat": -20.073, "lon": 30.832},
+            {"name": "Victoria Falls", "lat": -17.924, "lon": 25.833},
+        ],
+        # FX page config. hero = the headline currency shown vs USD; the page
+        # math is USD-based cross-rates. Verbatim from fetch_fx/fx.js defaults.
+        "fx": {
+            "hero": "ZWG",
+            "hero_label": "Zim Gold &middot; Reserve Bank of Zimbabwe official rate (composite)",
+            "hero_name": "Zim Gold",
+            "converter_order": ["USD", "ZWG", "GBP", "ZAR", "EUR", "BWP"],
+            "display_currencies": [
+                "ZWG", "ZAR", "BWP", "MZN", "ZMW",
+                "GBP", "EUR", "AUD", "CAD", "CNY", "AED", "USD",
+            ],
+        },
         "jobs_source": "vacancymail.co.zw",
         # Nav/footer sections that actually exist for this edition. Links to
         # anything NOT listed here are dropped, so a region never shows a dead
@@ -482,11 +504,28 @@ REGIONS = {
         "fx_base": "ZAR",
         "markets_index": "JSE",
         "weather_locations": ["Johannesburg", "Cape Town", "Durban", "Pretoria", "Gqeberha", "Bloemfontein"],
+        "weather_cities": [
+            {"name": "Johannesburg", "lat": -26.2041, "lon": 28.0473},
+            {"name": "Cape Town", "lat": -33.9249, "lon": 18.4241},
+            {"name": "Durban", "lat": -29.8587, "lon": 31.0218},
+            {"name": "Pretoria", "lat": -25.7479, "lon": 28.2293},
+            {"name": "Gqeberha", "lat": -33.9608, "lon": 25.6022},
+            {"name": "Bloemfontein", "lat": -29.0852, "lon": 26.1596},
+        ],
+        # FX page config. hero = headline currency (rand) shown vs USD.
+        "fx": {
+            "hero": "ZAR",
+            "hero_label": "South African rand &middot; interbank composite",
+            "hero_name": "South African Rand",
+            "converter_order": ["ZAR", "USD", "GBP", "EUR", "BWP", "AUD"],
+            "display_currencies": [
+                "ZAR", "USD", "GBP", "EUR", "BWP", "MZN", "ZMW", "AUD", "CAD", "AED", "CNY",
+            ],
+        },
         "jobs_source": "",          # TODO: pick a South African jobs board (vacancymail is ZW-only)
-        # PRE-LAUNCH: only the news edition is live. Verticals (economy/fx/
-        # markets/property/jobs/weather/originals) join this list in Phase 4
-        # as their SA data sources are wired, and light up across the nav.
-        "live_sections": ["news", "articles", "cities"],
+        # FX + weather verticals are now region-aware and live for SA; news/
+        # articles/cities as before. (jobs/economy/markets/property remain ZW.)
+        "live_sections": ["news", "articles", "cities", "fx", "weather"],
     },
 }
 
@@ -494,6 +533,16 @@ REGIONS = {
 def get_region(code):
     """Return the region config for a code, defaulting to Zimbabwe."""
     return REGIONS.get((code or DEFAULT_REGION).lower(), REGIONS[DEFAULT_REGION])
+
+
+def region_fx(code):
+    """FX page config (hero currency, converter order, display currencies)."""
+    return get_region(code).get("fx", {})
+
+
+def region_weather_cities(code):
+    """Weather card cities (name/lat/lon) for a region."""
+    return get_region(code).get("weather_cities", [])
 
 
 def region_newsletter_form(code):

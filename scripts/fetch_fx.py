@@ -57,7 +57,30 @@ def fetch_json(url, timeout=20):
 
 
 def main():
-    print("=== FETCH FX RATES ===")
+    import argparse
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    ap = argparse.ArgumentParser(description="Fetch FX rates for a region.")
+    ap.add_argument("--region", default="zw")
+    region = ap.parse_args().region
+
+    # Region FX config: which currencies to surface, the headline (hero)
+    # currency, and where to write. Zimbabwe falls back to the in-file defaults
+    # so its fx-rates.json basket is unchanged (the page math is USD-based).
+    display = DISPLAY_CURRENCIES
+    data_dir = DATA_DIR
+    fx_cfg = {}
+    try:
+        from regions import get_region, region_fx
+        r = get_region(region)
+        fx_cfg = region_fx(region) or {}
+        display = fx_cfg.get("display_currencies") or DISPLAY_CURRENCIES
+        data_dir = r.get("data_dir", DATA_DIR)
+    except ImportError:
+        pass
+    hero = fx_cfg.get("hero", "ZWG")
+    out_file = os.path.join(data_dir, "fx-rates.json")
+
+    print(f"=== FETCH FX RATES ({region}) ===")
     print(f"  Source: {SOURCE_URL}")
 
     try:
@@ -81,13 +104,13 @@ def main():
     # Subset to the currencies we display. Skip missing keys quietly —
     # the upstream basket shifts occasionally.
     rates = {}
-    for code in DISPLAY_CURRENCIES:
+    for code in display:
         if code in raw_rates:
             rates[code] = float(raw_rates[code])
-    if "ZWG" not in rates:
-        # Without ZWG the page is useless — fail loud so the workflow
-        # leaves the previous good file untouched.
-        print("  ERROR: ZWG missing from upstream — refusing to write")
+    if hero not in rates:
+        # Without the headline currency the page is useless — fail loud so the
+        # workflow leaves the previous good file untouched.
+        print(f"  ERROR: hero currency {hero} missing from upstream — refusing to write")
         sys.exit(1)
 
     output = {
@@ -98,14 +121,19 @@ def main():
         "as_of": data.get("time_last_update_utc", ""),
         "next_update": data.get("time_next_update_utc", ""),
         "rates": rates,
+        # Region display hints consumed by js/fx.js (defaults to ZWG for zw).
+        "hero": hero,
+        "hero_label": fx_cfg.get("hero_label", "Zim Gold &middot; Reserve Bank of Zimbabwe official rate (composite)"),
+        "hero_name": fx_cfg.get("hero_name", "Zim Gold"),
+        "converter_order": fx_cfg.get("converter_order", ["USD", "ZWG", "GBP", "ZAR", "EUR", "BWP"]),
     }
 
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(OUTPUT_FILE, "w") as f:
+    os.makedirs(data_dir, exist_ok=True)
+    with open(out_file, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"  ZWG: {rates.get('ZWG'):.4f} per USD")
-    print(f"  Wrote {OUTPUT_FILE} ({len(rates)} currencies)")
+    print(f"  {hero}: {rates.get(hero):.4f} per USD")
+    print(f"  Wrote {out_file} ({len(rates)} currencies)")
     print(f"  As of: {output['as_of']}")
     print("\n=== DONE ===")
 
