@@ -1,0 +1,16 @@
+---
+title: "From Texas to Gqeberha: Wanted fugitive’s double life exposed after international manhunt"
+date: 2026-06-21T02:23:46.000Z
+author: News24
+category: Business
+image: 
+summary: "From Texas to Gqeberha: Wanted fugitive’s double life exposed after international manhunt"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxON1ZfMVVOVmlqV3pua2VHNjZ4TUZjSkRaQmk3VTFpVXo4ZFZLWUpqU3l5Wi1xOXFueDIwWmt6MzJXSGo4MVV3OTluWjMwcENzakgzOEJ5VXVQOTltSFlVM3NJeDNURHE3ZDh4bGNyTDhhemRwNDZHMl9YWDk5WG92VVhTejhVMWF4WENBdWliV0VvQjhVbl9xQ3NvTkJyV3BrZTFUZFlha2RULXNuSC1PTEFjdTEtM3BFdTY4N1VSQU1uejhqczhqaDUtV2I3eGk5azVMU2JDZV9QY2tmSWZCRlRRVDJRRWtK?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi6AFBVV95cUxON1ZfMVVOVmlqV3pua2VHNjZ4TUZjSkRaQmk3VTFpVXo4ZFZLWUpqU3l5Wi1xOXFueDIwWmt6MzJXSGo4MVV3OTluWjMwcENzakgzOEJ5VXVQOTltSFlVM3NJeDNURHE3ZDh4bGNyTDhhemRwNDZHMl9YWDk5WG92VVhTejhVMWF4WENBdWliV0VvQjhVbl9xQ3NvTkJyV3BrZTFUZFlha2RULXNuSC1PTEFjdTEtM3BFdTY4N1VSQU1uejhqczhqaDUtV2I3eGk5azVMU2JDZV9QY2tmSWZCRlRRVDJRRWtK?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Rupert takes control of 50 private hospitals in South Africa, and another country evacuates its citizens from South Africa"
+date: 2026-06-11T07:00:00.000Z
+author: Business Tech
+category: Health
+image: 
+summary: "Rupert takes control of 50 private hospitals in South Africa, and another country evacuates its citizens from South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQckVENFEtb1NUS2RHWE1DQ3J1NEs1MjJ1VUxTQzR1Sm4tdThsNVdmYVhDTDVOU2tZV1hGRGVUcGpGdThTZG9KaE0yWVhDVWpMVEFrdjl4VVZMZU1leEF5dFU5am5TSEJ1OVhSSzMtRmpPaER0ODZpTEVBUjB3VVk1bjNpX29CSF9FZUljVi1wNGxHU1UtUWVzT1FqcTJRWkJPUFBoQU1GNldSMHVLWFpkemVxWWRaRVgyeEJZLWMyenFDRk9kRkFRdXpxT3FvRGJKaWRzTkVCaktzOW9jSVdOUUdqVkJieURIb3labmR1N25fUzZtR3d5dTl6ZXZmb2s?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Business Tech.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxQckVENFEtb1NUS2RHWE1DQ3J1NEs1MjJ1VUxTQzR1Sm4tdThsNVdmYVhDTDVOU2tZV1hGRGVUcGpGdThTZG9KaE0yWVhDVWpMVEFrdjl4VVZMZU1leEF5dFU5am5TSEJ1OVhSSzMtRmpPaER0ODZpTEVBUjB3VVk1bjNpX29CSF9FZUljVi1wNGxHU1UtUWVzT1FqcTJRWkJPUFBoQU1GNldSMHVLWFpkemVxWWRaRVgyeEJZLWMyenFDRk9kRkFRdXpxT3FvRGJKaWRzTkVCaktzOW9jSVdOUUdqVkJieURIb3labmR1N25fUzZtR3d5dTl6ZXZmb2s?oc=5)
