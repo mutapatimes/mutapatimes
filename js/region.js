@@ -59,6 +59,12 @@
     }
   };
 
+  // Weather-card cities (client-fetched from open-meteo by config.js). Non-root
+  // editions override config.js's Zimbabwe default with their own cities.
+  var REGION_WEATHER = {
+    za: [{ id: "johannesburg", name: "Johannesburg", lat: -26.2041, lon: 28.0473 }, { id: "capetown", name: "Cape Town", lat: -33.9249, lon: 18.4241 }, { id: "durban", name: "Durban", lat: -29.8587, lon: 31.0218 }, { id: "pretoria", name: "Pretoria", lat: -25.7479, lon: 28.2293 }, { id: "gqeberha", name: "Gqeberha", lat: -33.9608, lon: 25.6022 }, { id: "bloemfontein", name: "Bloemfontein", lat: -29.0852, lon: 26.1596 }]
+  };
+
   function detect() {
     var path = (location.pathname || "/");
     for (var code in REGION_PATHS) {
@@ -80,6 +86,7 @@
     window.MT_SIDEBAR_RSS_FEEDS = REGION_FEEDS[r.code].sidebar;
     window.MT_SPOTLIGHT_RSS_FEEDS = REGION_FEEDS[r.code].spotlight;
   }
+  if (REGION_WEATHER[r.code]) window.MT_WEATHER_CITIES = REGION_WEATHER[r.code];
   // Local newsrooms for the "Local" filter (config.js falls back to its
   // Zimbabwe list when unset, so the root is unchanged).
   var REGION_LOCAL = {

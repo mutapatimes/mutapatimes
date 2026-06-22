@@ -61,6 +61,10 @@ TEMPLATE = '''/* region.js — runtime edition base-path for multi-country suppo
   // to its own Zimbabwe arrays when these are unset, so the root is unchanged.
 @@FEEDS@@
 
+  // Weather-card cities (client-fetched from open-meteo by config.js). Non-root
+  // editions override config.js's Zimbabwe default with their own cities.
+@@WEATHER@@
+
   function detect() {
     var path = (location.pathname || "/");
     for (var code in REGION_PATHS) {
@@ -82,6 +86,7 @@ TEMPLATE = '''/* region.js — runtime edition base-path for multi-country suppo
     window.MT_SIDEBAR_RSS_FEEDS = REGION_FEEDS[r.code].sidebar;
     window.MT_SPOTLIGHT_RSS_FEEDS = REGION_FEEDS[r.code].spotlight;
   }
+  if (REGION_WEATHER[r.code]) window.MT_WEATHER_CITIES = REGION_WEATHER[r.code];
   // Local newsrooms for the "Local" filter (config.js falls back to its
   // Zimbabwe list when unset, so the root is unchanged).
 @@LOCAL@@
@@ -136,6 +141,23 @@ def render_feeds(regions):
     return "\n".join(out)
 
 
+def render_weather(regions):
+    """REGION_WEATHER = { za: [{ id, name, lat, lon }, ...] } — non-default only."""
+    wx = [(c, r) for c, r in regions
+          if c != DEFAULT_REGION and r.get("weather_cities")]
+    out = ["  var REGION_WEATHER = {"]
+    for ri, (code, r) in enumerate(wx):
+        last = ri == len(wx) - 1
+        items = []
+        for c in r["weather_cities"]:
+            cid = c["name"].lower().replace(" ", "").replace("'", "")
+            items.append("{ id: %s, name: %s, lat: %s, lon: %s }" % (
+                json.dumps(cid), json.dumps(c["name"]), c["lat"], c["lon"]))
+        out.append(f"    {code}: [" + ", ".join(items) + "]" + ("" if last else ","))
+    out.append("  };")
+    return "\n".join(out)
+
+
 def render_local(regions):
     """REGION_LOCAL = { za: [ ...wrapped 5/line, aligned under first item... ] }"""
     local_regions = [(c, r) for c, r in regions if r.get("browser_local")]
@@ -166,6 +188,7 @@ def build():
            .replace("@@CONTENT@@", content)
            .replace("@@DATA@@", data)
            .replace("@@FEEDS@@", render_feeds(regions))
+           .replace("@@WEATHER@@", render_weather(regions))
            .replace("@@LOCAL@@", render_local(regions)))
 
     # Safety assert: the default region must never get feed/local/path overrides.

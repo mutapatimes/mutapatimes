@@ -6,7 +6,10 @@
  * one source of truth and no per-pair rounding drift.
  */
 (function () {
-  var DATA_URL = 'data/fx-rates.json';
+  // Region-aware data dir (region.js sets MT_DATA_DIR; "data" at the ZW root,
+  // "data/za" under /za). Absolute so it resolves the same from any page depth.
+  var mtDataDir = window.MT_DATA_DIR || 'data';
+  var DATA_URL = '/' + mtDataDir + '/fx-rates.json';
 
   // Display metadata for each currency we support. Order also drives the
   // converter input order — keep ZWG + USD at the top of mind.
@@ -27,6 +30,13 @@
 
   // Currencies shown in the converter (smaller, focused set).
   var CONVERTER_ORDER = ['USD', 'ZWG', 'GBP', 'ZAR', 'EUR', 'BWP'];
+
+  // Headline currency + converter order, defaulting to Zimbabwe but overridden
+  // per region from the fx-rates.json payload (hero/hero_label/converter_order)
+  // written by fetch_fx.py. So /za leads with the rand, /zw with Zim Gold.
+  var HERO = 'ZWG';
+  var HERO_LABEL = 'Zim Gold &middot; Reserve Bank of Zimbabwe official rate (composite)';
+  var CONV_ORDER = CONVERTER_ORDER;
 
   var heroEl     = document.getElementById('fxHero');
   var metaEl     = document.getElementById('fxMeta');
@@ -69,9 +79,9 @@
   }
 
   function renderHero(rates) {
-    var zwg = rates.ZWG;
-    if (zwg == null) {
-      heroEl.innerHTML = '<p class="fx-hero-loading">ZWG rate unavailable.</p>';
+    var hr = rates[HERO];
+    if (hr == null) {
+      heroEl.innerHTML = '<p class="fx-hero-loading">' + escapeHtml(HERO) + ' rate unavailable.</p>';
       return;
     }
     heroEl.innerHTML =
@@ -80,16 +90,16 @@
         '<p class="fx-hero-big">' +
           '<span class="fx-hero-from">1 USD</span>' +
           '<span class="fx-hero-eq">=</span>' +
-          '<span class="fx-hero-to">' + fmt(zwg, 4) + ' ZWG</span>' +
+          '<span class="fx-hero-to">' + fmt(hr, 4) + ' ' + escapeHtml(HERO) + '</span>' +
         '</p>' +
-        '<p class="fx-hero-sub">Zim Gold &middot; Reserve Bank of Zimbabwe official rate (composite)</p>' +
+        '<p class="fx-hero-sub">' + HERO_LABEL + '</p>' +
       '</div>';
   }
 
   function renderConverter(rates) {
     // Build inputs for each currency in CONVERTER_ORDER. Skip currencies
     // missing from the payload so we never render an unusable field.
-    var fields = CONVERTER_ORDER.filter(function (c) { return rates[c] != null; });
+    var fields = CONV_ORDER.filter(function (c) { return rates[c] != null; });
     convEl.innerHTML = fields.map(function (code) {
       var meta = CURRENCY_META[code] || { name: code, symbol: '', flag: '' };
       return (
@@ -290,7 +300,11 @@
 
   function render(data) {
     var rates = (data && data.rates) || {};
-    if (!rates.ZWG && !rates.USD) {
+    // Adopt the region's headline currency + converter order from the payload.
+    if (data && data.hero) HERO = data.hero;
+    if (data && data.hero_label) HERO_LABEL = data.hero_label;
+    if (data && data.converter_order) CONV_ORDER = data.converter_order;
+    if (!rates[HERO] && !rates.USD) {
       heroEl.innerHTML = '<p class="fx-hero-loading">Rates unavailable. Check back soon.</p>';
       return;
     }
@@ -304,7 +318,7 @@
     }
 
     // Fetch the provider config and wire up the send-money calculator.
-    fetch('data/remittance-providers.json', { cache: 'no-cache' })
+    fetch('/' + mtDataDir + '/remittance-providers.json', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (providersData) { wireSendCalculator(rates, providersData); })
       .catch(function (err) {

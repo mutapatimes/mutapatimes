@@ -123,7 +123,7 @@ var SPOTLIGHT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 var FEED_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 // Zimbabwe cities for weather
-var WEATHER_CITIES = [
+var WEATHER_CITIES = window.MT_WEATHER_CITIES || [
   { id: "harare", name: "Harare", lat: -17.83, lon: 31.05 },
   { id: "bulawayo", name: "Bulawayo", lat: -20.13, lon: 28.63 },
   { id: "mutare", name: "Mutare", lat: -18.97, lon: 32.67 },
