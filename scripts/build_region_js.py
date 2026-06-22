@@ -91,6 +91,10 @@ TEMPLATE = '''/* region.js — runtime edition base-path for multi-country suppo
   // Zimbabwe list when unset, so the root is unchanged).
 @@LOCAL@@
   if (REGION_LOCAL[r.code]) window.MT_LOCAL_SOURCES = REGION_LOCAL[r.code];
+  // Editorial break images interspersed in the feed (config.js falls back to
+  // its Zimbabwe set when unset).
+@@BREAK@@
+  if (REGION_BREAK_IMAGES[r.code]) window.MT_BREAK_IMAGES = REGION_BREAK_IMAGES[r.code];
 
   // Prefix an absolute same-origin path with the edition base. Leaves
   // unchanged: the root edition (base ""), already-prefixed paths, absolute
@@ -158,6 +162,23 @@ def render_weather(regions):
     return "\n".join(out)
 
 
+def render_break(regions):
+    """REGION_BREAK_IMAGES = { za: [{ src, caption }, ...] } — non-default only."""
+    bx = [(c, r) for c, r in regions
+          if c != DEFAULT_REGION and r.get("break_images")]
+    out = ["  var REGION_BREAK_IMAGES = {"]
+    for ri, (code, r) in enumerate(bx):
+        last = ri == len(bx) - 1
+        out.append(f"    {code}: [")
+        imgs = r["break_images"]
+        for j, im in enumerate(imgs):
+            comma = "" if j == len(imgs) - 1 else ","
+            out.append(f"      {{ src: {json.dumps(im['src'])}, caption: {json.dumps(im['caption'])} }}{comma}")
+        out.append("    ]" + ("" if last else ","))
+    out.append("  };")
+    return "\n".join(out)
+
+
 def render_local(regions):
     """REGION_LOCAL = { za: [ ...wrapped 5/line, aligned under first item... ] }"""
     local_regions = [(c, r) for c, r in regions if r.get("browser_local")]
@@ -189,7 +210,8 @@ def build():
            .replace("@@DATA@@", data)
            .replace("@@FEEDS@@", render_feeds(regions))
            .replace("@@WEATHER@@", render_weather(regions))
-           .replace("@@LOCAL@@", render_local(regions)))
+           .replace("@@LOCAL@@", render_local(regions))
+           .replace("@@BREAK@@", render_break(regions)))
 
     # Safety assert: the default region must never get feed/local/path overrides.
     assert f"\n  var REGION_FEEDS = {{\n    {DEFAULT_REGION}:" not in out, "zw in REGION_FEEDS!"

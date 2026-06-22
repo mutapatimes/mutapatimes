@@ -917,12 +917,18 @@ function deduplicateByTopic(articles, threshold) {
 }
 
 // Break images between news stories — with captions
-var BREAK_IMAGES = [
+var BREAK_IMAGES = window.MT_BREAK_IMAGES || [
   { src: "break-1.jpg", caption: "Business, intelligence \u2014 building the Zimbabwe of tomorrow" },
   { src: "break-2.jpg", caption: "Staying connected, staying informed \u2014 powering Zimbabwe\u2019s future" },
   { src: "break-3.jpg", caption: "Enterprise, ambition \u2014 the spirit of a nation rising" },
   { src: "break-4.jpg", caption: "Bridging distance, bridging diaspora \u2014 one story at a time" }
 ];
+
+// Break-image src may be a bare filename (Zimbabwe default \u2192 /img/) or an
+// absolute /img/<region>/ path (other editions, so it resolves under /za).
+function breakImgUrl(src) {
+  return (src && src.charAt(0) === "/") ? src : "img/" + src;
+}
 
 var _breakIdx = 0;
 
@@ -934,7 +940,7 @@ function getNextBreakImage() {
 
 function getRandomQuoteImage() {
   var idx = Math.floor(Math.random() * BREAK_IMAGES.length);
-  return "img/" + BREAK_IMAGES[idx].src;
+  return breakImgUrl(BREAK_IMAGES[idx].src);
 }
 
 function initEditorialImages() {
@@ -1488,7 +1494,7 @@ function renderMainStories(articles) {
       var breakData = getNextBreakImage();
       var ph = $('<div class="break-section">');
       var imgWrap = $('<div class="break-img-wrap">');
-      var img = $('<img class="break-img">').attr('src', 'img/' + breakData.src).attr('alt', 'The Mutapa Times').attr('loading', 'lazy').attr('decoding', 'async').attr('width', 400).attr('height', 300);
+      var img = $('<img class="break-img">').attr('src', breakImgUrl(breakData.src)).attr('alt', 'The Mutapa Times').attr('loading', 'lazy').attr('decoding', 'async').attr('width', 400).attr('height', 300);
       img.on('error', function() { $(this).closest('.break-section').hide(); });
       imgWrap.append(img);
       imgWrap.append($('<span class="break-brand">').text("The Mutapa Times"));

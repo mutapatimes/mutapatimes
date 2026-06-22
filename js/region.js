@@ -95,6 +95,18 @@
          "mail & guardian", "ewn", "eyewitness news", "fin24", "businesstech"]
   };
   if (REGION_LOCAL[r.code]) window.MT_LOCAL_SOURCES = REGION_LOCAL[r.code];
+  // Editorial break images interspersed in the feed (config.js falls back to
+  // its Zimbabwe set when unset).
+  var REGION_BREAK_IMAGES = {
+    za: [
+      { src: "/img/za/break-1.jpg", caption: "Business and intelligence, building the South Africa of tomorrow" },
+      { src: "/img/za/break-2.jpg", caption: "Staying connected, staying informed: powering South Africa's future" },
+      { src: "/img/za/break-3.jpg", caption: "Enterprise and ambition: the spirit of a nation rising" },
+      { src: "/img/za/break-4.jpg", caption: "Bridging distance, bridging diaspora, one story at a time" },
+      { src: "/img/za/break-5.jpg", caption: "From the Cape to the corner office: South Africa, outside-in" }
+    ]
+  };
+  if (REGION_BREAK_IMAGES[r.code]) window.MT_BREAK_IMAGES = REGION_BREAK_IMAGES[r.code];
 
   // Prefix an absolute same-origin path with the edition base. Leaves
   // unchanged: the root edition (base ""), already-prefixed paths, absolute

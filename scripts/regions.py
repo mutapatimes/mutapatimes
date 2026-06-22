@@ -522,6 +522,15 @@ REGIONS = {
                 "ZAR", "USD", "GBP", "EUR", "BWP", "MZN", "ZMW", "AUD", "CAD", "AED", "CNY",
             ],
         },
+        # Editorial break images interspersed in the feed (every 4 articles),
+        # mirroring Zimbabwe's. Absolute /img paths so they resolve under /za.
+        "break_images": [
+            {"src": "/img/za/break-1.jpg", "caption": "Business and intelligence, building the South Africa of tomorrow"},
+            {"src": "/img/za/break-2.jpg", "caption": "Staying connected, staying informed: powering South Africa's future"},
+            {"src": "/img/za/break-3.jpg", "caption": "Enterprise and ambition: the spirit of a nation rising"},
+            {"src": "/img/za/break-4.jpg", "caption": "Bridging distance, bridging diaspora, one story at a time"},
+            {"src": "/img/za/break-5.jpg", "caption": "From the Cape to the corner office: South Africa, outside-in"},
+        ],
         "jobs_source": "",          # TODO: pick a South African jobs board (vacancymail is ZW-only)
         # FX + weather verticals are now region-aware and live for SA; news/
         # articles/cities as before. (jobs/economy/markets/property remain ZW.)
