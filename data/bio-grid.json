@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-06-23T11:56:39+00:00",
+  "fetched_at": "2026-06-23T14:44:57+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Zimbabwe and China Tourism Strategy Strengthens Economic and Travel Cooperation Through Boosting Tourism, Foreign Exchange Earnings, Cultural Heritage Development, Digital Innovation, and Expanding Cross-Border Travel and Visitor Flows for Susta",
-      "link": "https://mutapatimes.com/articles/2026-06-23-zimbabwe-and-china-tourism-strategy-strengthens-economic-and",
-      "image": "https://mutapatimes.com/img/cards/news/d659ecd740cd.png",
-      "pubDate": "2026-06-23T11:19:50+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "Zimbabwe and China Tourism Strategy Strengthens Economic and Travel Cooperation Through Boosting Tourism, Foreign Exchange Earnings, Cultural Heritage Development, Digital Innovation, and Expanding Cross-Border Travel and Visitor Flows for Susta",
@@ -17,14 +9,6 @@
       "image": "https://mutapatimes.com/img/cards/news/278c72eb210c.png",
       "pubDate": "2026-06-23T11:19:50+00:00",
       "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Potraz and Internet Society train Zimbabweans with disabilities in digital skills",
-      "link": "https://mutapatimes.com/articles/2026-06-23-potraz-and-internet-society-train-zimbabweans-with-disabilit",
-      "image": "https://mutapatimes.com/img/cards/news/a268334f375c.png",
-      "pubDate": "2026-06-23T08:59:22+00:00",
-      "category": "Tech"
     },
     {
       "kind": "news",
@@ -45,14 +29,6 @@
     {
       "kind": "news",
       "title": "How South Africa helped shape Zimbabwe's World Cup dream",
-      "link": "https://mutapatimes.com/articles/2026-06-23-how-south-africa-helped-shape-zimbabwes-world-cup-dream",
-      "image": "https://mutapatimes.com/img/cards/news/c0c90018653a.png",
-      "pubDate": "2026-06-23T07:15:34+00:00",
-      "category": "Sport"
-    },
-    {
-      "kind": "news",
-      "title": "How South Africa helped shape Zimbabwe's World Cup dream",
       "link": "https://mutapatimes.com/news/2026-06-23-how-south-africa-helped-shape-zimbabwe-s-world-cup-dream-b56d38",
       "image": "https://mutapatimes.com/img/cards/news/e06005d946d1.png",
       "pubDate": "2026-06-23T07:15:34+00:00",
@@ -61,18 +37,26 @@
     {
       "kind": "news",
       "title": "RFAs: American Spaces Support Funds Program (Zimbabwe)",
-      "link": "https://mutapatimes.com/articles/2026-06-23-rfas-american-spaces-support-funds-program-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/5b2e3453921c.png",
-      "pubDate": "2026-06-23T04:48:37+00:00",
-      "category": "Culture"
-    },
-    {
-      "kind": "news",
-      "title": "RFAs: American Spaces Support Funds Program (Zimbabwe)",
       "link": "https://mutapatimes.com/news/2026-06-23-rfas-american-spaces-support-funds-program-zimbabwe-5e5cf5",
       "image": "https://mutapatimes.com/img/cards/news/df10a423c218.png",
       "pubDate": "2026-06-23T04:48:37+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Land commission probes property reforms",
+      "link": "https://mutapatimes.com/articles/2026-06-22-land-commission-probes-property-reforms",
+      "image": "https://mutapatimes.com/img/cards/news/8980fa69397f.png",
+      "pubDate": "2026-06-22T23:58:00+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zinara eyes US$473m toll revenue boost",
+      "link": "https://mutapatimes.com/articles/2026-06-22-zinara-eyes-us473m-toll-revenue-boost",
+      "image": "https://mutapatimes.com/img/cards/news/da4b9b38126a.png",
+      "pubDate": "2026-06-22T23:57:00+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -113,14 +97,6 @@
       "image": "https://mutapatimes.com/img/cards/news/23082a798d6e.png",
       "pubDate": "2026-06-22T23:00:08+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Music Industry Titan Clive Davis Dies at 94, Leaving an Enduring Legacy Across Hip-Hop and R&B",
-      "link": "https://mutapatimes.com/articles/2026-06-22-music-industry-titan-clive-davis-dies-at-94-leaving-an-endur",
-      "image": "https://mutapatimes.com/img/cards/news/38db9b4b7b04.png",
-      "pubDate": "2026-06-22T22:01:35+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -479,6 +455,30 @@
       "title": "Zimasco (Pvt) Limited — Maintenance and Projects Clerk",
       "link": "https://vacancymail.co.zw/jobs/maintenance-and-projects-clerk-67901/",
       "image": "https://mutapatimes.com/img/cards/jobs/1b56a5bef19e.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Administrator",
+      "link": "https://vacancymail.co.zw/jobs/administrator-67900/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3628dfe7b5f5.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "EmpowerBank Limited — BANK TELLER",
+      "link": "https://vacancymail.co.zw/jobs/bank-teller-67899/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f27a431490b6.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "EmpowerBank Limited — SENIOR BANK TELLER",
+      "link": "https://vacancymail.co.zw/jobs/senior-bank-teller-67898/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e5f5c2266ad8.png",
       "pubDate": "2026-06-22T22:00:00+00:00",
       "category": "Jobs"
     }
