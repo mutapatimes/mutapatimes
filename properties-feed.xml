@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2026 14:44:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 15:24:17 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,18 +89,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/b652d77e491b.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b652d77e491b.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/b652d77e491b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 490,000 — Massive 6 bedroomed home for sale (Carrick Creagh, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/d2a2c79b50fb.html</link>
-      <description>USD 490,000 — Carrick Creagh, Harare North. 6 beds, 4 baths. Massive 6 bedroomed home for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 22 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d2a2c79b50fb.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/d2a2c79b50fb.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d2a2c79b50fb.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/d2a2c79b50fb.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 320,000 — AMTON PLACE- Only 2 Units Available! (Northwood, Harare North)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 417,000 — Spacious, Modern Family Home in a Secure Close. (Greendale, Harare East)</title>
+      <link>https://mutapatimes.com/property-landing/d68cc73ef52c.html</link>
+      <description>USD 417,000 — Greendale, Harare East. 5 beds, 6 baths. Spacious, Modern Family Home in a Secure Close.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 22 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d68cc73ef52c.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
