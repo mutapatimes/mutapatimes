@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-23T14:44:57+00:00",
+  "fetched_at": "2026-06-23T17:13:34+00:00",
   "count": 60,
   "tiles": [
     {
@@ -36,6 +36,14 @@
     },
     {
       "kind": "news",
+      "title": "Non-monetized incentives for civil servants: Who exactly is benefitting?",
+      "link": "https://mutapatimes.com/news/2026-06-23-non-monetized-incentives-for-civil-servants-who-exactly-is-benefitting-97aa2b",
+      "image": "https://mutapatimes.com/img/cards/news/37471a8d13a4.png",
+      "pubDate": "2026-06-23T05:04:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
       "title": "RFAs: American Spaces Support Funds Program (Zimbabwe)",
       "link": "https://mutapatimes.com/news/2026-06-23-rfas-american-spaces-support-funds-program-zimbabwe-5e5cf5",
       "image": "https://mutapatimes.com/img/cards/news/df10a423c218.png",
@@ -44,18 +52,34 @@
     },
     {
       "kind": "news",
-      "title": "Land commission probes property reforms",
-      "link": "https://mutapatimes.com/articles/2026-06-22-land-commission-probes-property-reforms",
-      "image": "https://mutapatimes.com/img/cards/news/8980fa69397f.png",
-      "pubDate": "2026-06-22T23:58:00+00:00",
-      "category": "Policy"
+      "title": "Govt, ActionAid urge youths to be partners, not just beneficiaries, in disaster risk management",
+      "link": "https://mutapatimes.com/news/2026-06-23-govt-actionaid-urge-youths-to-be-partners-not-just-beneficiaries-in-disaster-12c417",
+      "image": "https://mutapatimes.com/img/cards/news/6ea184dfad87.png",
+      "pubDate": "2026-06-23T04:46:42+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
-      "title": "Zinara eyes US$473m toll revenue boost",
-      "link": "https://mutapatimes.com/articles/2026-06-22-zinara-eyes-us473m-toll-revenue-boost",
-      "image": "https://mutapatimes.com/img/cards/news/da4b9b38126a.png",
-      "pubDate": "2026-06-22T23:57:00+00:00",
+      "title": "Fuel cheats in Zera crosshairs as crackdown begins",
+      "link": "https://mutapatimes.com/articles/2026-06-23-fuel-cheats-in-zera-crosshairs-as-crackdown-begins",
+      "image": "https://mutapatimes.com/img/cards/news/e67a0540be04.png",
+      "pubDate": "2026-06-23T03:56:35+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zinara on course to clear US$11,6m loan by year end",
+      "link": "https://mutapatimes.com/articles/2026-06-23-zinara-on-course-to-clear-us116m-loan-by-year-end",
+      "image": "https://mutapatimes.com/img/cards/news/a2dc86c054c9.png",
+      "pubDate": "2026-06-23T03:36:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "RBZ policy rate cut: Will banks lower lending rates?",
+      "link": "https://mutapatimes.com/articles/2026-06-23-rbz-policy-rate-cut-will-banks-lower-lending-rates",
+      "image": "https://mutapatimes.com/img/cards/news/03530336f81b.png",
+      "pubDate": "2026-06-23T03:34:04+00:00",
       "category": "Business"
     },
     {
@@ -161,6 +185,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-22T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "St Anne's Hospital — Human Resources Intern",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-intern-67949/",
+      "image": "https://mutapatimes.com/img/cards/jobs/500f4251494a.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Packrollers Enterprises (Pvt) Limited — Digital and Field Marketer",
+      "link": "https://vacancymail.co.zw/jobs/digital-and-field-marketer-67948/",
+      "image": "https://mutapatimes.com/img/cards/jobs/34ab6546fd59.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Semi Skilled Carpenter",
+      "link": "https://vacancymail.co.zw/jobs/semi-skilled-carpenter-67947/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a290fbb7024d.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TV Sales — Call Centre Champion",
+      "link": "https://vacancymail.co.zw/jobs/call-centre-champion-67946/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b6ccf94ea801.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Black Shark Protection Services — DRIVER",
+      "link": "https://vacancymail.co.zw/jobs/driver-67945/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e883c4699336.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Costing Clerk",
+      "link": "https://vacancymail.co.zw/jobs/costing-clerk-67944/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2e07bfa1e8c4.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Cook",
+      "link": "https://vacancymail.co.zw/jobs/cook-67943/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6796efb38c79.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutapa Base Metals — Diamond Driller : Freda Rebecca Gold Mine",
+      "link": "https://vacancymail.co.zw/jobs/diamond-driller-freda-rebecca-gold-mine-67942/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2c29931db71a.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Ran Mines — Foreman – Workshop",
+      "link": "https://vacancymail.co.zw/jobs/foreman-workshop-67941/",
+      "image": "https://mutapatimes.com/img/cards/jobs/704f18b10388.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Driver",
+      "link": "https://vacancymail.co.zw/jobs/driver-67939/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ee728d227040.png",
+      "pubDate": "2026-06-22T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -375,110 +479,6 @@
       "title": "National Foods Holdings Limited — Finance Manager",
       "link": "https://vacancymail.co.zw/jobs/finance-manager-67911/",
       "image": "https://mutapatimes.com/img/cards/jobs/f6f0ab772f52.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Foods Holdings Limited — Maintenance Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-supervisor-67910/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dd7007396319.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee Opportunities - Mining Industry",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-opportunities-mining-industry-67909/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3d263b3dcdd1.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Auto Electrician",
-      "link": "https://vacancymail.co.zw/jobs/auto-electrician-67908/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b92ab4cd53ab.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Sales Representative for Heavy Machinery (Mining and Agricultural Equipment)",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-for-heavy-machinery-mining-and-agricultural-equipment-67907/",
-      "image": "https://mutapatimes.com/img/cards/jobs/05d543dcdfc4.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — PROCUREMENT GRADUATE TRAINEE X 1",
-      "link": "https://vacancymail.co.zw/jobs/procurement-graduate-trainee-x-1-67906/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7a3894530044.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Digital Marketer",
-      "link": "https://vacancymail.co.zw/jobs/digital-marketer-67905/",
-      "image": "https://mutapatimes.com/img/cards/jobs/33327586b08e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Wiruma — Driver/Messenger",
-      "link": "https://vacancymail.co.zw/jobs/drivermessenger-67904/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e91f104471eb.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Diesel plant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/diesel-plant-fitter-67903/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6f166f4c6bda.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Welder",
-      "link": "https://vacancymail.co.zw/jobs/welder-67902/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8a30771a684e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Maintenance and Projects Clerk",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-and-projects-clerk-67901/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b56a5bef19e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrator",
-      "link": "https://vacancymail.co.zw/jobs/administrator-67900/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3628dfe7b5f5.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/bank-teller-67899/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f27a431490b6.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — SENIOR BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/senior-bank-teller-67898/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e5f5c2266ad8.png",
       "pubDate": "2026-06-22T22:00:00+00:00",
       "category": "Jobs"
     }
