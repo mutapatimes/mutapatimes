@@ -1,0 +1,16 @@
+---
+title: "More than 3000 Malawian nationals deported in South Africa following widespread anti-immigration protests"
+date: 2026-06-20T04:05:00.000Z
+author: AP News
+category: Business
+image: 
+summary: "More than 3000 Malawian nationals deported in South Africa following widespread anti-immigration protests"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZG92QXdhTkRGOWZqdFVTLWRXbEVDSUszMS1oMDluU2VsX2lTNFBEN25jZWlIXzJzb3UxeXVnNW5pUHZ0QjliOWpncDFxT2RzQUQxMDBGSkZvVHJEUjVpVFBxR01IU3NzTnFOWWZRNi1FaFlnbTJNcERJZ3lxakpaTVZYdlBheVl2eXkxR21CNlJ2NUZxMlJtY2FYUGtIYnJkdHFZcGlPWGM3RzB6VW9kNnpGcUtKWDVCenJmSWduekQ4cnVtQWo5UWlkdkctOFp3bTZ5ZlBTX0JXYXJtS0RMSXVxYnhvOTNYbWJDU2hzVExGQ0tGN2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by AP News.*
+[Read original article](https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZG92QXdhTkRGOWZqdFVTLWRXbEVDSUszMS1oMDluU2VsX2lTNFBEN25jZWlIXzJzb3UxeXVnNW5pUHZ0QjliOWpncDFxT2RzQUQxMDBGSkZvVHJEUjVpVFBxR01IU3NzTnFOWWZRNi1FaFlnbTJNcERJZ3lxakpaTVZYdlBheVl2eXkxR21CNlJ2NUZxMlJtY2FYUGtIYnJkdHFZcGlPWGM3RzB6VW9kNnpGcUtKWDVCenJmSWduekQ4cnVtQWo5UWlkdkctOFp3bTZ5ZlBTX0JXYXJtS0RMSXVxYnhvOTNYbWJDU2hzVExGQ0tGN2c?oc=5)
