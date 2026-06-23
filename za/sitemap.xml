@@ -2,87 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-06-22T22:55:56+00:00</lastmod>
+    <lastmod>2026-06-23T04:31:34+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mutapatimes.com/za/articles/2026-05-24-nhi-uncertainty-reshapes-healthcare-investment-as-access-and.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-05-25-celebrating-africa-day-south-african-radio-stars-reflect-on.html</loc>
@@ -885,6 +879,12 @@
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-16-youth-day-in-south-africa-one-frame-fifty-years-later.html</loc>
     <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-17-abdullah-ibrahim-at-91-the-wisdom-wonder-and-history-south-a.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -3325,6 +3325,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-24-hours-in-pictures-22-june-2026.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-85-of-sa-smes-use-business-cards-and-its-paying-off.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -3344,6 +3350,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-at-least-18-dead-in-france-including-two-children-in-hot-car.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-bafana-star-we-had-to-stay-off-social-media.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3475,6 +3487,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-iec-records-strong-youth-turnout-during-registration-weekend.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-improved-access-to-finance-drives-young-south-africans-towar.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -3499,6 +3517,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-jeffreys-bays-surfing-dreams-dashed-as-world-surf-league-wit.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-jonno-duniam-calls-pauline-hansons-push-for-monoculture-biza.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -3518,6 +3542,18 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-kapp-steers-sa-to-historic-run-chase-triumph-keeping-world-c.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-korea-coach-undecided-about-how-to-set-up-against-bafana.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-kyotographie-kawada-kikuji-x-iwane-ai-review-staggering-imag.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3644,6 +3680,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-solving-johannesburgs-debt-crisis-is-critical-for-both-eskom.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-22-south-africa-isnt-just-speaking-english-its-redefining-the-l.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3777,6 +3819,114 @@
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-22-youth-month-1976-echoes-in-2026-no-to-a-future-without-conse.html</loc>
     <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-blast-from-the-past-ledwaba-is-gobbled-up-by-pac-man-in-las.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-can-africa-survive-the-global-aid-squeeze-yes-but-it-will-ta.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-editorial-race-to-meet-cadastral-deadline.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-fsca-warns-of-sophisticated-scam-using-regulators-identity.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-global-conflict-darkens-sas-economic-outlook.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-kapps-heroics-keep-south-africas-t20-world-cup-hopes-alive.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-more-than-7-000-malawians-in-durban-have-been-sent-home-schr.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-motshekga-says-no-current-indication-of-widespread-unrest-on.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-oil-tankers-go-dark-as-hormuz-trade-adapts-to-conflict.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-project-south-africas-immigration-crisis-reaches-a-critical.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-south-africa-is-delicious-springboks-54-7-barbarians-rugby-i.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-south-africans-believe-us-shouldnt-fund-sa-healthcare.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-steenhuisens-agriculture-department-continues-fight-against.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-turning-pain-into-purpose-entrepreneur-launches-drive-to-pro.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-vision-to-clear-r75m-as-r12bn-tongaat-debt-swap-reshapes-own.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-what-france-iraq-did-during-mentally-draining-two-hour-weath.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-what-the-hlm-must-deliver-for-africa.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-23-you-are-on-your-own-sas-climate-envoy-warns-of-mounting-dang.html</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -4839,6 +4989,360 @@
   <url>
     <loc>https://mutapatimes.com/za/news/2026-06-22-youth-day-in-south-africa-one-frame-fifty-years-later-606b37</loc>
     <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-abdullah-ibrahim-at-91-the-wisdom-wonder-and-history-south-africa-must-not-90be06</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-africa-s-top-brands-boom-as-banking-telecoms-and-retail-power-62-6bn-surge-a145d0</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-all-the-south-african-tech-companies-johann-rupert-owns-9b74de</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-ankole-cattle-carve-out-a-high-value-niche-in-south-africa-d3bedc</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-bafana-at-world-cup-we-are-not-realistic-as-south-africa-goalkeeper-defends-170f47</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-bafana-bafana-and-mexico-ready-for-nostalgia-fuelled-world-cup-opener-73c04b</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-bafana-bafana-s-world-cup-permutations-time-to-fight-and-deliver-c43477</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-compounded-glp-1-medicines-under-sustained-scrutiny-in-south-africa-as-sahpra-f46f61</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-concourt-in-session-to-pass-judgment-on-the-inclusion-of-a-single-word-wellbeing-bb56f4</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-constitutional-court-ruling-reshapes-south-africa-s-healthcare-reform-dialogue-6f1c18</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-critical-minerals-navigating-uk-and-south-african-incentives-grants-and-9142ee</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-da-extends-very-best-wishes-to-bafana-bafana-for-world-cup-2026-f2863a</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-editorial-race-to-meet-cadastral-deadline-ca191a</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-end-of-an-era-for-one-of-south-africa-s-largest-medical-aids-next-week-10bba1</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-go-bafana-bafana-f6bf87</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-great-surprise-for-south-africa-0e9508</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-healthcare-reform-cannot-wait-while-costs-keeps-rising-899c22</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-hope-for-south-africa-s-waterways-as-new-gillnet-reporting-app-launches-1b4f18</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-how-art-music-helped-liberate-south-africa-1923eb</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-how-can-we-engineer-south-africa-s-mining-beneficiation-future-713e0f</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-hustle-culture-alone-is-not-enough-for-south-africa-8ab584</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-inside-the-regulatory-war-over-south-africa-s-skies-7ff6f6</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-nick-hamman-joins-time-out-south-africa-as-new-culture-connector-c313c9</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-project-south-africa-s-immigration-crisis-reaches-a-critical-stage-a33dad</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-queer-pride-in-south-africa-from-stonewall-to-stonewalling-628875</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-reipppp-value-assessment-in-south-africa-s-liberalised-electricity-market-13663e</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-rights-group-sues-south-african-government-over-us-arms-exports-46d2e1</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-rupert-takes-control-of-50-private-hospitals-in-south-africa-and-another-ac4adf</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-sa-rugby-confirms-springboks-coach-as-south-africa-a-boss-for-zimbabwe-showdown-7e574a</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-is-delicious-springboks-54-7-barbarians-rugby-is-south-african-now-f93964</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-kenya-sign-six-new-agreements-to-deepen-cooperation-7d4139</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-must-go-all-out-to-get-the-very-best-out-of-its-rich-natural-2b85ea</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-reveal-jersey-numbers-for-2026-world-cup-6f9912</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-risks-investment-delays-over-its-mining-rights-system-502eb5</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-elvolving-healthcare-landscape-aaf668</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-kwazulu-natal-residents-on-alert-after-lion-escapes-private-398a9b</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-mia-healthcare-raises-920k-for-mobile-dental-care-43a0bf</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-mvno-market-set-to-triple-by-2030-2e5b57</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-richest-city-is-heading-for-financial-disaster-2a0d31</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-unlikely-telecoms-giant-0a2fb5</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-s-zandkopsdrift-rare-earths-project-highlighted-at-junior-indaba-8b0b0f</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-targets-key-mining-registry-by-end-of-march-0675c2</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africa-tightens-grip-on-africa-s-corporate-elite-as-banks-close-in-on-b4299e</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-african-mint-unveils-stunning-high-relief-coin-range-celebrating-africa-s-a54738</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-south-africans-believe-us-shouldn-t-fund-sa-healthcare-5223db</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-tax-data-can-be-mined-to-shape-better-policies-south-africa-uganda-and-zambia-3bc2b5</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-telecoms-giant-taking-on-netflix-in-south-africa-3069f7</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-the-clock-is-ticking-on-south-african-banks-biggest-advantage-7c8ff8</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-the-patients-scattered-how-gun-crime-cuts-off-healthcare-for-south-africa-s-78a7ff</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-the-real-challenge-in-south-africa-s-healthcare-sustainability-over-promises-44325c</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-the-south-african-rhythm-behind-rb-leipzig-s-re-kaofela-tribute-jersey-49bab2</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-top-south-african-chef-receives-one-of-the-french-republic-s-most-prestigious-ce9812</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-two-crocodiles-found-in-springs-backyard-pool-leave-south-africans-stunned-bc7e46</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-two-pangolin-traffickers-in-south-africa-sentenced-to-eight-years-in-prison-news-1976a5</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-two-suspects-arrested-in-mozambique-over-kruger-national-park-murder-of-marais-b8bbfb</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-what-bafana-bafana-teaches-south-africa-about-itself-ff071c</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-who-is-riley-norton-meet-the-20-year-old-springboks-star-called-up-to-the-762e4a</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-why-south-africa-needs-to-stop-live-animal-exports-by-sea-ae802b</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-23-youth-day-in-south-africa-one-frame-fifty-years-later-606b37</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
