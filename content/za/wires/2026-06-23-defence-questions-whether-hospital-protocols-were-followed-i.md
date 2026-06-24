@@ -1,0 +1,16 @@
+---
+title: "Defence questions whether hospital protocols were followed in treatment of Chantal Pasqualle-Hoorn"
+date: 2026-06-23T20:04:40.000Z
+author: IOL
+category: Health
+image: 
+summary: "Defence questions whether hospital protocols were followed in treatment of Chantal Pasqualle-Hoorn"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOLVhxN0F6YTBjbjBJVUVDY21RRVFoZml1MXlCRUdvRFhvOF8wOGdKR3dNbVU0cmVqZE9UVXhRNDU0ZXFKOGtlSnpiaEhObG9DODFMOW4xb3hMTFJLWE5BTnNoTVpoZDItQ1ZReld3aVFkQjBocFJHdUJBenVuOVVWMEdXVjd2NUt1anN2a1pmUHZzaTBlUzlrVnREc0pQUW9SU3F2WHhnZ2ZaT3ZaNFBtT1N6b0VBNDlRZ2NhMUIyaG1jdkN2X3pfblY1YUZkYnFXc2Nwa3dpR2FSUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOLVhxN0F6YTBjbjBJVUVDY21RRVFoZml1MXlCRUdvRFhvOF8wOGdKR3dNbVU0cmVqZE9UVXhRNDU0ZXFKOGtlSnpiaEhObG9DODFMOW4xb3hMTFJLWE5BTnNoTVpoZDItQ1ZReld3aVFkQjBocFJHdUJBenVuOVVWMEdXVjd2NUt1anN2a1pmUHZzaTBlUzlrVnREc0pQUW9SU3F2WHhnZ2ZaT3ZaNFBtT1N6b0VBNDlRZ2NhMUIyaG1jdkN2X3pfblY1YUZkYnFXc2Nwa3dpR2FSUQ?oc=5)
