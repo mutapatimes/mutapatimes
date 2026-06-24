@@ -1,0 +1,16 @@
+---
+title: "Agent breaks silence on Bafana Bafana goalkeeper Renaldo Leaner's future amid Orlando Pirates and Mamelodi Sundowns interest"
+date: 2026-06-24T12:06:12.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Agent breaks silence on Bafana Bafana goalkeeper Renaldo Leaner's future amid Orlando Pirates and Mamelodi Sundowns interest"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOUDBsTHVJUW5LOG9wWC1maTNnYXBnZnE0TFI1VTNIOUlzZzZCbnRDRlVkcVhReGVMUEIzTTlGRWZtUDFWUm9JWXdvbUpmdTEyQ2ZSN0hXNVpDb2x5bk9mZ1dhUWVBWDhaZmdFNTg5eFhuaGhOLUxLRE9sMk5ZM2NzZEhRaE4wMUp6QkUzZlJzN2ktWFluSTkzNmp5dVJtTXhMUXZReVlXUVVZZk1NdWJYT0NIRUZZT20tN29weXRCNk5ldHlKOF83b1EzUHhIVk1aNUtoVGpLcDFqeVZ4VWtzX29KeDcyZGo5NHJRZkpHTm43eFh6enRxalRvUUJhLVc3c25kWnozXzc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxOUDBsTHVJUW5LOG9wWC1maTNnYXBnZnE0TFI1VTNIOUlzZzZCbnRDRlVkcVhReGVMUEIzTTlGRWZtUDFWUm9JWXdvbUpmdTEyQ2ZSN0hXNVpDb2x5bk9mZ1dhUWVBWDhaZmdFNTg5eFhuaGhOLUxLRE9sMk5ZM2NzZEhRaE4wMUp6QkUzZlJzN2ktWFluSTkzNmp5dVJtTXhMUXZReVlXUVVZZk1NdWJYT0NIRUZZT20tN29weXRCNk5ldHlKOF83b1EzUHhIVk1aNUtoVGpLcDFqeVZ4VWtzX29KeDcyZGo5NHJRZkpHTm43eFh6enRxalRvUUJhLVc3c25kWnozXzc?oc=5)
