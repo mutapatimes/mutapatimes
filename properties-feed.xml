@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 14:19:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 15:07:05 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -223,18 +223,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/e47599bf644c.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 417,000 — Spacious, Modern Family Home in a Secure Close. (Greendale, Harare East)</title>
-      <link>https://mutapatimes.com/property-landing/d68cc73ef52c.html</link>
-      <description>USD 417,000 — Greendale, Harare East. 5 beds, 6 baths. Spacious, Modern Family Home in a Secure Close.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 23 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d68cc73ef52c.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/d68cc73ef52c.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 115,000 — Aspindale House For Sale (Aspindale Park, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/d1fae9ce9240.html</link>
       <description>USD 115,000 — Aspindale Park, Harare West. 3 beds, 2 baths. Aspindale House For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/3c8da953d8d8.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 1,200,000 — Prime Double-Storey 4-Bedroom Home with Fairway Views (Borrowdale Brooke, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/4ada45a617db.html</link>
+      <description>USD 1,200,000 — Borrowdale Brooke, Harare North. 4 beds, 35 baths. Prime Double-Storey 4-Bedroom Home with Fairway Views. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 23 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/4ada45a617db.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/4ada45a617db.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/4ada45a617db.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/4ada45a617db.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

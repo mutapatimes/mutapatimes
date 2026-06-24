@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-24T09:50:19.994515+00:00",
+  "fetched_at": "2026-06-24T15:06:59.534827+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -157,15 +157,6 @@
       "baths": "3"
     },
     {
-      "title": "Spacious, Modern Family Home in a Secure Close.",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp245529",
-      "price": "USD 417,000",
-      "location": "Greendale, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/61/6d/92/616d9221-e8ee-44c2-a15d-720cbcde042d_thumbnail591.webp",
-      "beds": "5",
-      "baths": "6"
-    },
-    {
       "title": "Aspindale House For Sale",
       "url": "https://www.property.co.zw/for-sale/townhouses-lvvn249423",
       "price": "USD 115,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/35/d3/14/35d31402-ba7d-4877-aceb-78dea8bae3e3_thumbnail591.webp",
       "beds": "6",
       "baths": "3"
+    },
+    {
+      "title": "Prime Double-Storey 4-Bedroom Home with Fairway Views",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp249437",
+      "price": "USD 1,200,000",
+      "location": "Borrowdale Brooke, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/88/71/43/887143f6-a54e-4e4f-8e97-b633c6a08c7c_thumbnail591.webp",
+      "beds": "4",
+      "baths": "35"
     }
   ]
 }
