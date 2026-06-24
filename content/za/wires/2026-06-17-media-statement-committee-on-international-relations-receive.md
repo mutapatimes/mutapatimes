@@ -1,0 +1,16 @@
+---
+title: "Media Statement: Committee on International Relations Receives Briefing on AU Reforms and South Africa’s Role in Advancing Continental Governance"
+date: 2026-06-17T19:53:58.000Z
+author: Parliament of South Africa
+category: Policy
+image: 
+summary: "Media Statement: Committee on International Relations Receives Briefing on AU Reforms and South Africa’s Role in Advancing Continental Governance"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOck1ZaWtFVkk0UkIyVUlIUTVNNU1nVjBLNExPdzBJc3hrU2N2dmZLTlVzaHlHenZXMnc2UlZRN2RLUngzcGVJd1pZeGg1RFRXQUVodnVaZjFzTUZScTVVbnkwZE5RN2RickQyNl9LTE4zZDNlOFZYTDNMaEVHUjVxaWxuaGxrcTlra1FWdXNCS014dmpiQlR3MVdpV1FFRW9iM0hBRHpUNXZwRUJOdUk2NEd3RS1CalZ4NjRrZ053NHljQUctY2ttZVQ4aHpZNjF6SWdXejlhODM0NUdHVlJrbmRxMUkyWm5VdU9Fc3FqQVMxSUFfclRYRWU2ODltelI4Ul90WXYxOFdZcDg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Parliament of South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMiiwJBVV95cUxOck1ZaWtFVkk0UkIyVUlIUTVNNU1nVjBLNExPdzBJc3hrU2N2dmZLTlVzaHlHenZXMnc2UlZRN2RLUngzcGVJd1pZeGg1RFRXQUVodnVaZjFzTUZScTVVbnkwZE5RN2RickQyNl9LTE4zZDNlOFZYTDNMaEVHUjVxaWxuaGxrcTlra1FWdXNCS014dmpiQlR3MVdpV1FFRW9iM0hBRHpUNXZwRUJOdUk2NEd3RS1CalZ4NjRrZ053NHljQUctY2ttZVQ4aHpZNjF6SWdXejlhODM0NUdHVlJrbmRxMUkyWm5VdU9Fc3FqQVMxSUFfclRYRWU2ODltelI4Ul90WXYxOFdZcDg?oc=5)
