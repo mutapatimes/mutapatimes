@@ -1,7 +1,47 @@
 {
-  "fetched_at": "2026-06-24T06:43:05+00:00",
+  "fetched_at": "2026-06-24T11:42:13+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "CPMZ participates in strategic workshop on pipeline capacity expansion chaired by Zimbabwe's Ministry of Energy and Power Development",
+      "link": "https://mutapatimes.com/articles/2026-06-24-cpmz-participates-in-strategic-workshop-on-pipeline-capacity",
+      "image": "https://mutapatimes.com/img/cards/news/c5ae0938c407.png",
+      "pubDate": "2026-06-24T06:09:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "CPMZ participates in strategic workshop on pipeline capacity expansion chaired by Zimbabwe's Ministry of Energy and Power Development",
+      "link": "https://mutapatimes.com/news/2026-06-24-cpmz-participates-in-strategic-workshop-on-pipeline-capacity-expansion-chaired-f666e5",
+      "image": "https://mutapatimes.com/img/cards/news/4ce78567eedf.png",
+      "pubDate": "2026-06-24T06:09:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe eyes bigger share of regional market as intra-SADC trade remains low",
+      "link": "https://mutapatimes.com/news/2026-06-23-zimbabwe-eyes-bigger-share-of-regional-market-as-intra-sadc-trade-remains-low-01d352",
+      "image": "https://mutapatimes.com/img/cards/news/d1fb155e2692.png",
+      "pubDate": "2026-06-23T23:09:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "From Harare to Utah: Sidney Sithole Investigates HIV Mechanisms",
+      "link": "https://mutapatimes.com/news/2026-06-23-from-harare-to-utah-sidney-sithole-investigates-hiv-mechanisms-cdfb29",
+      "image": "https://mutapatimes.com/img/cards/news/bc18491cdbff.png",
+      "pubDate": "2026-06-23T23:05:54+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "More men than women for new HIV injection",
+      "link": "https://mutapatimes.com/articles/2026-06-23-more-men-than-women-for-new-hiv-injection",
+      "image": "https://mutapatimes.com/img/cards/news/4c40d8c5504c.png",
+      "pubDate": "2026-06-23T22:05:04+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim construction sector: $486M in 2025 Q4, +15.9% YoY.",
@@ -20,7 +60,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 24 Jun: Harare overcast · high 22° / low 9°",
+      "title": "Zim weather 24 Jun: Harare overcast · high 22° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-06-24",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-24",
       "pubDate": "2026-06-23T22:00:00+00:00",
@@ -57,6 +97,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-23T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "FOREIGN EXCHANGE DEALER",
+      "link": "https://vacancymail.co.zw/jobs/foreign-exchange-dealer-67959/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c11d4226ac71.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounting Clerk",
+      "link": "https://vacancymail.co.zw/jobs/accounting-clerk-67958/",
+      "image": "https://mutapatimes.com/img/cards/jobs/09fa5fe1003d.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "HUMANA People to People — Traveling Financial Controller",
+      "link": "https://vacancymail.co.zw/jobs/traveling-financial-controller-67957/",
+      "image": "https://mutapatimes.com/img/cards/jobs/519ea6f56a09.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Proserve Consulting — User Interface and User Experience (UI/UX) Developer",
+      "link": "https://vacancymail.co.zw/jobs/user-interface-and-user-experience-uiux-developer-67956/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8e47f06d35a4.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "BUSINESS DEVELOPMENT OFFICER(MTA)",
+      "link": "https://vacancymail.co.zw/jobs/business-development-officermta-67955/",
+      "image": "https://mutapatimes.com/img/cards/jobs/61bab9f7065d.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Proserve Consulting — Senior Manager DevOps Engineer",
+      "link": "https://vacancymail.co.zw/jobs/senior-manager-devops-engineer-67954/",
+      "image": "https://mutapatimes.com/img/cards/jobs/01a4ad0d8f74.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Proserve Consulting — Senior Manager – IT Service Management",
+      "link": "https://vacancymail.co.zw/jobs/senior-manager-it-service-management-67953/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fed3b4ef9a04.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Proserve Consulting — Senior Bank Examiner – Legal and Enforcement",
+      "link": "https://vacancymail.co.zw/jobs/senior-bank-examiner-legal-and-enforcement-67952/",
+      "image": "https://mutapatimes.com/img/cards/jobs/06717863430c.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Proserve Consulting — Internal Auditor (IT)",
+      "link": "https://vacancymail.co.zw/jobs/internal-auditor-it-67951/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fbf0f0b59507.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Head of Sales",
+      "link": "https://vacancymail.co.zw/jobs/head-of-sales-67950/",
+      "image": "https://mutapatimes.com/img/cards/jobs/89c463d20bb4.png",
+      "pubDate": "2026-06-23T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -359,126 +479,6 @@
       "title": "National Foods Holdings Limited — Maintenance Supervisor",
       "link": "https://vacancymail.co.zw/jobs/maintenance-supervisor-67910/",
       "image": "https://mutapatimes.com/img/cards/jobs/dd7007396319.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee Opportunities - Mining Industry",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-opportunities-mining-industry-67909/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3d263b3dcdd1.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Auto Electrician",
-      "link": "https://vacancymail.co.zw/jobs/auto-electrician-67908/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b92ab4cd53ab.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Sales Representative for Heavy Machinery (Mining and Agricultural Equipment)",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-for-heavy-machinery-mining-and-agricultural-equipment-67907/",
-      "image": "https://mutapatimes.com/img/cards/jobs/05d543dcdfc4.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — PROCUREMENT GRADUATE TRAINEE X 1",
-      "link": "https://vacancymail.co.zw/jobs/procurement-graduate-trainee-x-1-67906/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7a3894530044.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Digital Marketer",
-      "link": "https://vacancymail.co.zw/jobs/digital-marketer-67905/",
-      "image": "https://mutapatimes.com/img/cards/jobs/33327586b08e.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Wiruma — Driver/Messenger",
-      "link": "https://vacancymail.co.zw/jobs/drivermessenger-67904/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e91f104471eb.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Diesel plant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/diesel-plant-fitter-67903/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6f166f4c6bda.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Welder",
-      "link": "https://vacancymail.co.zw/jobs/welder-67902/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8a30771a684e.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Maintenance and Projects Clerk",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-and-projects-clerk-67901/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b56a5bef19e.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrator",
-      "link": "https://vacancymail.co.zw/jobs/administrator-67900/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3628dfe7b5f5.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/bank-teller-67899/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f27a431490b6.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — SENIOR BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/senior-bank-teller-67898/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e5f5c2266ad8.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Impala Car Rental — POST GRADUATE TRAINEE – DIGITAL MARKETING",
-      "link": "https://vacancymail.co.zw/jobs/post-graduate-trainee-digital-marketing-67897/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d00433f05130.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — Cake Fairy Manager (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/cake-fairy-manager-harare-67896/",
-      "image": "https://mutapatimes.com/img/cards/jobs/41bde8d40ba3.png",
-      "pubDate": "2026-06-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative : Digital Two",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-digital-two-67895/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5bb2c4c9ab9f.png",
       "pubDate": "2026-06-23T22:00:00+00:00",
       "category": "Jobs"
     }
