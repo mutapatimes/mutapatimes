@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 15:19:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 17:08:47 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -29,6 +29,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/2a6d6f3fb785.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/2a6d6f3fb785.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/2a6d6f3fb785.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>New twice-yearly HIV injection set to boost medication adherence in Zimbabwe @zimsituation</title>
+      <link>https://mutapatimes.com/stories/f9d7e9a2b245.html</link>
+      <description>Source: New twice-yearly HIV injection set to boost medication adherence in Zimbabwe -Newsday Zimbabwe Health authorities have said the long-acting antiretroviral drug, Lenacapavir (LEN) is expected dramatically improve patient compliance by removing the need for daily pills. The via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Thu, 25 Jun 2026 03:46:03 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/f9d7e9a2b245.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/f9d7e9a2b245.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f9d7e9a2b245.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/f9d7e9a2b245.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Stanbic pumps over US$225m into mining</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/10f4b24665ff.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/10f4b24665ff.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/10f4b24665ff.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Repoquad Investments Pty ltd — Accountant : Bulawayo Based candidates only PLEASE apply Female Environment</title>
-      <link>https://mutapatimes.com/stories/1da2251177ff.html</link>
-      <description>Accountant: Female Environment Key Performance Indicator (KPI) ability to meet set targets &amp; deadlines. Pay attention to detail &amp; sharp with figures. Bulawayo · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 24 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/1da2251177ff.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Repoquad Investments Pty ltd</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/1da2251177ff.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1da2251177ff.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/1da2251177ff.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
