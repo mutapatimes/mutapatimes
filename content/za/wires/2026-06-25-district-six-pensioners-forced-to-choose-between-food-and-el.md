@@ -1,0 +1,16 @@
+---
+title: "District Six pensioners forced to choose between food and electricity amid billing dispute"
+date: 2026-06-25T02:30:00.000Z
+author: TimesLIVE
+category: Policy
+image: 
+summary: "District Six pensioners forced to choose between food and electricity amid billing dispute"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPLVlfajJZZjFxdUwzUm5GMG5tTnlwSURaNElJaldRRkxkTW02M2JadUttWHpaQmxUYklKUUY0a19XZHJmU0Y1c0hrYTFlUlpqY0JKc0hZVzM0cG1DblQySUFzQVBIT2VONVdOS1RwcWtEVjdsRC1RLUlBbER0a1lHRnNZMUh2VGlzRGNlNzM5d3diT3ZtdmtiSThpWWpoVlBXRnV1M3drZlg5QVBQYlA1T1ZHVDRUOWZLbV9HZ2tnOW5ZaTdtdm9TU3I0eEJ6LVB2Nk1KNkVPNDBHbnhla0hlOUJB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPLVlfajJZZjFxdUwzUm5GMG5tTnlwSURaNElJaldRRkxkTW02M2JadUttWHpaQmxUYklKUUY0a19XZHJmU0Y1c0hrYTFlUlpqY0JKc0hZVzM0cG1DblQySUFzQVBIT2VONVdOS1RwcWtEVjdsRC1RLUlBbER0a1lHRnNZMUh2VGlzRGNlNzM5d3diT3ZtdmtiSThpWWpoVlBXRnV1M3drZlg5QVBQYlA1T1ZHVDRUOWZLbV9HZ2tnOW5ZaTdtdm9TU3I0eEJ6LVB2Nk1KNkVPNDBHbnhla0hlOUJB?oc=5)

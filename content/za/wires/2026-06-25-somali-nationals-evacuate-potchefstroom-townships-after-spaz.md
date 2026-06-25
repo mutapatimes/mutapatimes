@@ -1,0 +1,16 @@
+---
+title: "Somali nationals evacuate Potchefstroom townships after spaza shop lootings"
+date: 2026-06-25T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Somali nationals evacuate Potchefstroom townships after spaza shop lootings"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizAFBVV95cUxONXRPdGk1Zzk1X0JuU1hYdzg5Q0Y0ekQ0TEtQQ1JfVjN5bENsVTQ2czZ2MWIyVnlXQTJyZTJpcGZac3lESWdDeDFHcDNnTTJvUFoxZVdCQW9vMklsZU84S1NUZDEtRmN4XzdfN1IxYjNDN1FGbTBoOWZRaGc4M2FVT2lYbm9mM29Lc3dmRDVOdHhKdkFOSFBYREZMRUIybkJFUTVZWnVwNTRia3ZzT1BPYU1MQVNYbVFxYXdMMk5TamNXVl8xVzVoR3ZPakQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMizAFBVV95cUxONXRPdGk1Zzk1X0JuU1hYdzg5Q0Y0ekQ0TEtQQ1JfVjN5bENsVTQ2czZ2MWIyVnlXQTJyZTJpcGZac3lESWdDeDFHcDNnTTJvUFoxZVdCQW9vMklsZU84S1NUZDEtRmN4XzdfN1IxYjNDN1FGbTBoOWZRaGc4M2FVT2lYbm9mM29Lc3dmRDVOdHhKdkFOSFBYREZMRUIybkJFUTVZWnVwNTRia3ZzT1BPYU1MQVNYbVFxYXdMMk5TamNXVl8xVzVoR3ZPakQ?oc=5)
