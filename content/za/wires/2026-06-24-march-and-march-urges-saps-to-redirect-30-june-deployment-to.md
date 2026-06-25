@@ -1,0 +1,16 @@
+---
+title: "March and March urges SAPS to redirect 30 June deployment to finding undocumented foreigners"
+date: 2026-06-24T16:14:37.000Z
+author: News24
+category: Business
+image: 
+summary: "March and March urges SAPS to redirect 30 June deployment to finding undocumented foreigners"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUHlJaWJPZnRicVd2TGhabTk1ZTNxUEo0RGhaU2FrNk84eEJBeE95UjUwcFFjLWQ1OXcyVkFMLVJlU05ocnZkd0pzdFBKZU9GWF9odU1FZWI2alV4eXh6VmJ2V3lKaDlIZUpCXzhrSU5WblkwRWNJRE0xb1FLa3pvMV9CQ3Z3MUx6UmsyZG1XeGlrZnFUOE9XNVhrdWU1X3lGVUhTaUN2NlFBRExmbXdxajR3VzduVl9xU0RlaGxIU0NBcXJld1YyeW1pb196WFp5UFRqaTg5X2gtM0h1bUlTVDVsZVl2WWpEcGJscnR1QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUHlJaWJPZnRicVd2TGhabTk1ZTNxUEo0RGhaU2FrNk84eEJBeE95UjUwcFFjLWQ1OXcyVkFMLVJlU05ocnZkd0pzdFBKZU9GWF9odU1FZWI2alV4eXh6VmJ2V3lKaDlIZUpCXzhrSU5WblkwRWNJRE0xb1FLa3pvMV9CQ3Z3MUx6UmsyZG1XeGlrZnFUOE9XNVhrdWU1X3lGVUhTaUN2NlFBRExmbXdxajR3VzduVl9xU0RlaGxIU0NBcXJld1YyeW1pb196WFp5UFRqaTg5X2gtM0h1bUlTVDVsZVl2WWpEcGJscnR1QQ?oc=5)
