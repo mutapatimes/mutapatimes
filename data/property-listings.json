@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-25T04:33:18.263860+00:00",
+  "fetched_at": "2026-06-25T09:43:21.750318+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -65,6 +65,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/a3/14/f2/a314f24e-beb9-4e8b-90d0-c44930e37c9c_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
+    },
+    {
+      "title": "Zengeza, Chitungwiza: 3-Bed Brick Home — Walled & Carport",
+      "url": "https://www.property.co.zw/for-sale/houses-plzp250008",
+      "price": "USD 50,000",
+      "location": "Zengeza, Chitungwiza",
+      "image": "https://www.property.co.zw/uploadedfiles/bb/67/3f/bb673f84-64d3-4797-95aa-778136f32608_thumbnail591.webp",
+      "beds": "3",
+      "baths": "1"
     },
     {
       "title": "House for Sale - Currently being used as offices",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/96/e3/81/96e381ef-555e-4f9c-a48b-6de390bc19ef_thumbnail591.webp",
       "beds": "7",
       "baths": ""
-    },
-    {
-      "title": "Elegant Family Residence on Orange Grove Drive, Highlands",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp248185",
-      "price": "USD 1,600,000",
-      "location": "Highlands, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/ef/1c/af/ef1caf5e-7ce5-4e71-99d1-faf1fb5febf2_thumbnail591.webp",
-      "beds": "4",
-      "baths": "3"
     }
   ]
 }
