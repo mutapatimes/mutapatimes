@@ -1,0 +1,16 @@
+---
+title: "Democracy, Deliberation and Degradation? My optimism for SA’s constitutional democracy was misplaced"
+date: 2026-06-26T09:55:38.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Democracy, Deliberation and Degradation? My optimism for SA’s constitutional democracy was misplaced"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbFJMdFZTQUl5bXJEckw0Y3lNcnBScVp6VHBKbEtWaExFMmxxYnFHME9hamIyNEFJNFNJUUw2NkpWNnhpNG9wMWk4YkotNnRhcXNaOXU2QlBVYWhMSTROdGE3d2lSOWpJbDBYdUo3Sk4yMm0zSEdRQkVjQ3JVR2k3b0NHSk1rNkZUaGwwR2F4dXIyMUZaaHlGR2pNZnppX0djQjFFT0ZSbnlZNjkxTDc1YWtEa1ROWVhYa3lqbFB3RV8yZVVyanhxMEFla1U1cTVxaVo2WVJ6RlZoS014cG5TenNvRDRLdlh5?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbFJMdFZTQUl5bXJEckw0Y3lNcnBScVp6VHBKbEtWaExFMmxxYnFHME9hamIyNEFJNFNJUUw2NkpWNnhpNG9wMWk4YkotNnRhcXNaOXU2QlBVYWhMSTROdGE3d2lSOWpJbDBYdUo3Sk4yMm0zSEdRQkVjQ3JVR2k3b0NHSk1rNkZUaGwwR2F4dXIyMUZaaHlGR2pNZnppX0djQjFFT0ZSbnlZNjkxTDc1YWtEa1ROWVhYa3lqbFB3RV8yZVVyanhxMEFla1U1cTVxaVo2WVJ6RlZoS014cG5TenNvRDRLdlh5?oc=5)

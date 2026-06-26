@@ -1,0 +1,16 @@
+---
+title: "Lesotho seeks compensation, economic support from SA"
+date: 2026-06-26T10:00:38.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Lesotho seeks compensation, economic support from SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxPZWMxUEtoa0NYMDhLRjQ1Y2FxZU1LVjMxQ18wSWQ3RU4wVnZhdGJUV21keEJIYzY5NmdwWDRPOXV4Z0NBb0dtWnZ6SGRhaVlWNkl0bTh5b3M0Tk5WYnhPUjdkOUpQdV9qazRibFVRUWpOZVZkLUV6Y0pPT2owLTRIQloxTmJ0WktGTVpxNWVDOFlaQXZ5aUZzMzFjbmJVNl9DN2tQRWs1QTd0RGE3SWhQWG1WNU9EdTNTSVVOcDd0WGVnZ3VmbEhCRjRxQUxLRTJUSVRsaGx3NnRDVnk4MmNuc1hMckk4eG10d1l2WkJxZF9YamFGNWIxN0h6WGNNZzFWeVp0MzU4SGl2TTJvamZ4dEQ4R3RpamZZbmhHOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinAJBVV95cUxPZWMxUEtoa0NYMDhLRjQ1Y2FxZU1LVjMxQ18wSWQ3RU4wVnZhdGJUV21keEJIYzY5NmdwWDRPOXV4Z0NBb0dtWnZ6SGRhaVlWNkl0bTh5b3M0Tk5WYnhPUjdkOUpQdV9qazRibFVRUWpOZVZkLUV6Y0pPT2owLTRIQloxTmJ0WktGTVpxNWVDOFlaQXZ5aUZzMzFjbmJVNl9DN2tQRWs1QTd0RGE3SWhQWG1WNU9EdTNTSVVOcDd0WGVnZ3VmbEhCRjRxQUxLRTJUSVRsaGx3NnRDVnk4MmNuc1hMckk4eG10d1l2WkJxZF9YamFGNWIxN0h6WGNNZzFWeVp0MzU4SGl2TTJvamZ4dEQ4R3RpamZZbmhHOA?oc=5)
