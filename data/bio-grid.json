@@ -1,14 +1,70 @@
 {
-  "fetched_at": "2026-06-26T06:51:59+00:00",
+  "fetched_at": "2026-06-26T11:42:25+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "China-Zimbabwe health partnership delivers new hope to patients - China Daily",
-      "link": "https://mutapatimes.com/news/2026-06-26-china-zimbabwe-health-partnership-delivers-new-hope-to-patients-china-daily-0e350c",
-      "image": "https://mutapatimes.com/img/cards/news/93b71a247789.png",
+      "title": "China-Zimbabwe health partnership delivers new hope to patients",
+      "link": "https://mutapatimes.com/news/2026-06-26-china-zimbabwe-health-partnership-delivers-new-hope-to-patients-44d1e3",
+      "image": "https://mutapatimes.com/img/cards/news/b6a0346d1561.png",
       "pubDate": "2026-06-26T02:24:00+00:00",
       "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe courts global investors at World Economic Forum",
+      "link": "https://mutapatimes.com/news/2026-06-25-zimbabwe-courts-global-investors-at-world-economic-forum-7e0103",
+      "image": "https://mutapatimes.com/img/cards/news/d355ba596f55.png",
+      "pubDate": "2026-06-25T23:10:40+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chiredzi man accused of insulting Mnangagwa, Chivayo in viral video granted US$200 bail",
+      "link": "https://mutapatimes.com/news/2026-06-25-chiredzi-man-accused-of-insulting-mnangagwa-chivayo-in-viral-video-granted-us-1aa0f5",
+      "image": "https://mutapatimes.com/img/cards/news/d410fb9ddceb.png",
+      "pubDate": "2026-06-25T23:06:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Harare lawyer flagged for writing letter to Mnangagwa to arm-twist courts in property feud",
+      "link": "https://mutapatimes.com/news/2026-06-25-harare-lawyer-flagged-for-writing-letter-to-mnangagwa-to-arm-twist-courts-in-4a58c7",
+      "image": "https://mutapatimes.com/img/cards/news/e7f31851b6e0.png",
+      "pubDate": "2026-06-25T23:06:07+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "RTG revenue hits US$11,4m in first quarter of 2026",
+      "link": "https://mutapatimes.com/articles/2026-06-25-rtg-revenue-hits-us114m-in-first-quarter-of-2026",
+      "image": "https://mutapatimes.com/img/cards/news/f94b4510f669.png",
+      "pubDate": "2026-06-25T23:00:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "RTG revenue hits US$11,4m in first quarter of 2026",
+      "link": "https://mutapatimes.com/news/2026-06-25-rtg-revenue-hits-us-11-4m-in-first-quarter-of-2026-5c0f14",
+      "image": "https://mutapatimes.com/img/cards/news/906f2eecf982.png",
+      "pubDate": "2026-06-25T23:00:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Five injured as train slams into kombi in Chiredzi days after fatal bus collision",
+      "link": "https://mutapatimes.com/articles/2026-06-25-five-injured-as-train-slams-into-kombi-in-chiredzi-days-afte",
+      "image": "https://mutapatimes.com/img/cards/news/2cc18a971657.png",
+      "pubDate": "2026-06-25T23:00:08+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Five injured as train slams into kombi in Chiredzi days after fatal bus collision",
+      "link": "https://mutapatimes.com/news/2026-06-25-five-injured-as-train-slams-into-kombi-in-chiredzi-days-after-fatal-bus-71075c",
+      "image": "https://mutapatimes.com/img/cards/news/77b8c1d6f941.png",
+      "pubDate": "2026-06-25T23:00:08+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -28,11 +84,19 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 26 Jun: Harare clear sky · high 21° / low 10°",
+      "title": "Zim weather 26 Jun: Harare overcast · high 20° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-06-26",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-26",
       "pubDate": "2026-06-25T22:00:00+00:00",
       "category": "Weather"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe mining investment rising steadily and extends beyond lithium",
+      "link": "https://mutapatimes.com/news/2026-06-25-zimbabwe-mining-investment-rising-steadily-and-extends-beyond-lithium-50825d",
+      "image": "https://mutapatimes.com/img/cards/news/a0c00720979f.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "News"
     },
     {
       "kind": "jobs",
@@ -65,6 +129,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-25T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Farm Manager",
+      "link": "https://vacancymail.co.zw/jobs/farm-manager-68007/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c0047d973535.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Electrical Engineer-Lecturer/Senior Lecturer/Associate Professor/Professor (2 Posts)",
+      "link": "https://vacancymail.co.zw/jobs/electrical-engineer-lecturersenior-lecturerassociate-professorprofessor-2-posts-68006/",
+      "image": "https://mutapatimes.com/img/cards/jobs/12d6f4b7cf10.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Lecturer/Senior Lecturer/Associate Professor/Professor (1 Post): Applied Mathematician",
+      "link": "https://vacancymail.co.zw/jobs/lecturersenior-lecturerassociate-professorprofessor-1-post-applied-mathematician-68005/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ec8ad3578913.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/receptionist-68004/",
+      "image": "https://mutapatimes.com/img/cards/jobs/44037b13a8d3.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Geography: Lecturer/Senior Lecturer/Associate Professor/Professor",
+      "link": "https://vacancymail.co.zw/jobs/geography-lecturersenior-lecturerassociate-professorprofessor-68003/",
+      "image": "https://mutapatimes.com/img/cards/jobs/50fa19f748e3.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — TRACTOR MECHANIC",
+      "link": "https://vacancymail.co.zw/jobs/tractor-mechanic-68002/",
+      "image": "https://mutapatimes.com/img/cards/jobs/26979b82c8e1.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Systems Librarian",
+      "link": "https://vacancymail.co.zw/jobs/systems-librarian-68001/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e3554d14c83a.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Industrial Attachees x8",
+      "link": "https://vacancymail.co.zw/jobs/industrial-attachees-x8-68000/",
+      "image": "https://mutapatimes.com/img/cards/jobs/720900d32401.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — SALES AND MARKETING ADMINISTRATOR (1)",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-administrator-1-67999/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5f55b1805542.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — TEACHING ASSISTANTS -FINANCIAL INTELLIGENCE (2)",
+      "link": "https://vacancymail.co.zw/jobs/teaching-assistants-financial-intelligence-2-67998/",
+      "image": "https://mutapatimes.com/img/cards/jobs/11876cda9928.png",
+      "pubDate": "2026-06-25T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -335,150 +479,6 @@
       "title": "Proserve Consulting — Senior Bank Examiner – Legal and Enforcement",
       "link": "https://vacancymail.co.zw/jobs/senior-bank-examiner-legal-and-enforcement-67952/",
       "image": "https://mutapatimes.com/img/cards/jobs/06717863430c.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Proserve Consulting — Internal Auditor (IT)",
-      "link": "https://vacancymail.co.zw/jobs/internal-auditor-it-67951/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fbf0f0b59507.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Head of Sales",
-      "link": "https://vacancymail.co.zw/jobs/head-of-sales-67950/",
-      "image": "https://mutapatimes.com/img/cards/jobs/89c463d20bb4.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Human Resources Intern",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-intern-67949/",
-      "image": "https://mutapatimes.com/img/cards/jobs/500f4251494a.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Packrollers Enterprises (Pvt) Limited — Digital and Field Marketer",
-      "link": "https://vacancymail.co.zw/jobs/digital-and-field-marketer-67948/",
-      "image": "https://mutapatimes.com/img/cards/jobs/34ab6546fd59.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Semi Skilled Carpenter",
-      "link": "https://vacancymail.co.zw/jobs/semi-skilled-carpenter-67947/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a290fbb7024d.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TV Sales — Call Centre Champion",
-      "link": "https://vacancymail.co.zw/jobs/call-centre-champion-67946/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b6ccf94ea801.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — DRIVER",
-      "link": "https://vacancymail.co.zw/jobs/driver-67945/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e883c4699336.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Costing Clerk",
-      "link": "https://vacancymail.co.zw/jobs/costing-clerk-67944/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2e07bfa1e8c4.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Cook",
-      "link": "https://vacancymail.co.zw/jobs/cook-67943/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6796efb38c79.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Diamond Driller : Freda Rebecca Gold Mine",
-      "link": "https://vacancymail.co.zw/jobs/diamond-driller-freda-rebecca-gold-mine-67942/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2c29931db71a.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ran Mines — Foreman – Workshop",
-      "link": "https://vacancymail.co.zw/jobs/foreman-workshop-67941/",
-      "image": "https://mutapatimes.com/img/cards/jobs/704f18b10388.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Driver",
-      "link": "https://vacancymail.co.zw/jobs/driver-67939/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ee728d227040.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marist Brothers Nyanga High School — Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-67937/",
-      "image": "https://mutapatimes.com/img/cards/jobs/73cf7ee111a3.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — Driver Class Two Deliveries & collections In Zimbabwe including out of the country. (BULAWAYO BASED DRIVERS ONLY NEED TO APPLY)",
-      "link": "https://vacancymail.co.zw/jobs/driver-class-two-deliveries-collections-in-zimbabwe-including-out-of-the-country-bulawayo-based-drivers-only-need-to-apply-67936/",
-      "image": "https://mutapatimes.com/img/cards/jobs/aebb4d977599.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — ACCOUNTS CLERK Bulawayo Based Candidates Only Please",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-bulawayo-based-candidates-only-please-67935/",
-      "image": "https://mutapatimes.com/img/cards/jobs/10f4b24665ff.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — Accountant : Bulawayo Based candidates only PLEASE apply Female Environment",
-      "link": "https://vacancymail.co.zw/jobs/accountant-bulawayo-based-candidates-only-please-apply-female-environment-67934/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1da2251177ff.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — Sales and Marketing assistant : ONLY VICTORIA FALLS CANDIDATES APPLY",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-assistant-only-victoria-falls-candidates-apply-67933/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1c0fafee93df.png",
-      "pubDate": "2026-06-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "The Avenues Clinic — Administration Secretary",
-      "link": "https://vacancymail.co.zw/jobs/administration-secretary-67932/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cf51f1d0b4d7.png",
       "pubDate": "2026-06-25T22:00:00+00:00",
       "category": "Jobs"
     }
