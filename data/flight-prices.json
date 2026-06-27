@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-26",
+  "fetched_at": "2026-06-27",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -20,12 +20,12 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 486,
-          "airline": "PC",
+          "price": 505,
+          "airline": "MW",
           "departure_at": "2026-06-30",
           "return_at": "",
-          "stops": 3,
-          "duration": 2890,
+          "stops": 4,
+          "duration": 2480,
           "currency": ""
         },
         {
@@ -103,30 +103,30 @@
           "currency": ""
         },
         {
-          "price": 486,
-          "airline": "PC",
+          "price": 505,
+          "airline": "MW",
           "departure_at": "2026-06-30",
           "return_at": "",
-          "stops": 3,
-          "duration": 2890,
+          "stops": 4,
+          "duration": 2480,
           "currency": ""
         },
         {
-          "price": 507,
-          "airline": "MW",
-          "departure_at": "2026-08-04",
-          "return_at": "",
-          "stops": 3,
-          "duration": 2030,
-          "currency": ""
-        },
-        {
-          "price": 512,
+          "price": 523,
           "airline": "FR",
-          "departure_at": "2026-08-17",
+          "departure_at": "2026-07-09",
           "return_at": "",
-          "stops": 3,
-          "duration": 1675,
+          "stops": 4,
+          "duration": 1875,
+          "currency": ""
+        },
+        {
+          "price": 540,
+          "airline": "U2",
+          "departure_at": "2026-07-05",
+          "return_at": "",
+          "stops": 4,
+          "duration": 2490,
           "currency": ""
         }
       ],
@@ -134,7 +134,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 11,
+          "n": 9,
           "error": null
         },
         {
@@ -158,7 +158,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 11,
+          "n": 10,
           "error": null
         },
         {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 35
+      "observations": 32
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -221,7 +221,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 3176,
+        "price": 3166,
         "airline": "GE",
         "departure_at": "2026-06-29",
         "return_at": "",
@@ -232,7 +232,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 3176,
+          "price": 3166,
           "airline": "GE",
           "departure_at": "2026-06-29",
           "return_at": "",
@@ -261,7 +261,7 @@
       ],
       "by_airline": [
         {
-          "price": 3176,
+          "price": 3166,
           "airline": "GE",
           "departure_at": "2026-06-29",
           "return_at": "",
@@ -270,7 +270,7 @@
           "currency": ""
         },
         {
-          "price": 3215,
+          "price": 3204,
           "airline": "FA",
           "departure_at": "2026-06-30",
           "return_at": "",
@@ -297,7 +297,7 @@
           "currency": ""
         },
         {
-          "price": 3660,
+          "price": 3648,
           "airline": "4Z",
           "departure_at": "2026-07-03",
           "return_at": "",
@@ -497,10 +497,10 @@
       "currency": "AED",
       "currency_sym": "AED",
       "cheapest_overall": {
-        "price": 2384,
+        "price": 2421,
         "airline": "ET",
-        "departure_at": "2026-07-10",
-        "return_at": "2026-07-19",
+        "departure_at": "2026-07-15",
+        "return_at": "2026-08-15",
         "stops": 1,
         "duration": null,
         "currency": ""
@@ -508,10 +508,10 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 2384,
+          "price": 2421,
           "airline": "ET",
-          "departure_at": "2026-07-10",
-          "return_at": "2026-07-19",
+          "departure_at": "2026-07-15",
+          "return_at": "2026-08-15",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -519,10 +519,10 @@
       ],
       "by_airline": [
         {
-          "price": 2384,
+          "price": 2421,
           "airline": "ET",
-          "departure_at": "2026-07-10",
-          "return_at": "2026-07-19",
+          "departure_at": "2026-07-15",
+          "return_at": "2026-08-15",
           "stops": 1,
           "duration": null,
           "currency": ""
