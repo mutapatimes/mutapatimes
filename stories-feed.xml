@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jun 2026 14:05:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 14:09:59 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -125,6 +125,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Telone — Head Strategy and Transformation @TelOneZW</title>
+      <link>https://mutapatimes.com/stories/e5ffb5f36237.html</link>
+      <description>WE ARE LOOKING FOR A CAPABLE TEAM PLAYER We are seeking a dynamic, exceptional, forward-thinking, and strategic leader to drive our Strategy and Transformation function as part of our executive leade… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 26 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/e5ffb5f36237.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Telone</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/e5ffb5f36237.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e5ffb5f36237.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/e5ffb5f36237.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>HUMAN RESOURCES GRADUATE TRAINEE</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/c11d4226ac71.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c11d4226ac71.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/c11d4226ac71.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Accounting Clerk</title>
-      <link>https://mutapatimes.com/stories/09fa5fe1003d.html</link>
-      <description>Position: Accounting Clerk Reporting To: Senior Accountant Location: Harare Employment Type: Contract About the Role We are seeking a diligent, organized, and detail-oriented Assistant Accountant / A… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 26 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/09fa5fe1003d.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/09fa5fe1003d.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/09fa5fe1003d.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/09fa5fe1003d.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
