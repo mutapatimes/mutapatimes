@@ -1,38 +1,14 @@
 {
-  "fetched_at": "2026-06-27T13:23:10+00:00",
+  "fetched_at": "2026-06-27T16:01:21+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "South Africa’s Tourism Boom Accelerates as Zimbabwe Leads African Visitor Growth, Driving Record Arrivals Across Johannesburg, Cape Town, Durban and Kruger",
-      "link": "https://mutapatimes.com/articles/2026-06-27-south-africas-tourism-boom-accelerates-as-zimbabwe-leads-afr",
-      "image": "https://mutapatimes.com/img/cards/news/dc2eb23f3e86.png",
-      "pubDate": "2026-06-27T12:48:25+00:00",
-      "category": "Policy"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Builds France Travel Ties Through Paris Workshop, Showcasing Safaris, Cultural Heritage and Attractions Beyond Victoria Falls: Latest Update",
-      "link": "https://mutapatimes.com/articles/2026-06-27-zimbabwe-builds-france-travel-ties-through-paris-workshop-sh",
-      "image": "https://mutapatimes.com/img/cards/news/cd8b8ef6d040.png",
-      "pubDate": "2026-06-27T12:07:59+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "Zimbabwe Builds France Travel Ties Through Paris Workshop, Showcasing Safaris, Cultural Heritage and Attractions Beyond Victoria Falls: Latest Update",
       "link": "https://mutapatimes.com/news/2026-06-27-zimbabwe-builds-france-travel-ties-through-paris-workshop-showcasing-safaris-2646c7",
       "image": "https://mutapatimes.com/img/cards/news/345129446b73.png",
       "pubDate": "2026-06-27T12:07:59+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "South Africa outpaces UK, China, Ireland, Mozambique, Zambia, Botswana and More Nations Driving Zimbabwe Tourism Boom in 2026 as Regional Travel Powerhouse Effect Reshapes Africa’s Visitor Growth Map",
-      "link": "https://mutapatimes.com/articles/2026-06-27-south-africa-outpaces-uk-china-ireland-mozambique-zambia-bot",
-      "image": "https://mutapatimes.com/img/cards/news/96ca5f9ca7cb.png",
-      "pubDate": "2026-06-27T11:02:40+00:00",
-      "category": "Tech"
+      "category": "Science"
     },
     {
       "kind": "news",
@@ -44,11 +20,19 @@
     },
     {
       "kind": "news",
-      "title": "MCAZ tightens border medicine screening",
-      "link": "https://mutapatimes.com/articles/2026-06-26-mcaz-tightens-border-medicine-screening",
-      "image": "https://mutapatimes.com/img/cards/news/1ab06c9180e0.png",
-      "pubDate": "2026-06-26T23:59:00+00:00",
-      "category": "Business"
+      "title": "Kenya Teams Up with South Africa, Morocco, Mauritius, Ghana, Tanzania, Uganda, Rwanda and Zimbabwe as Mastercard Launches Priceless Africa to Unlock Exclusive Curated Travel Experiences Across the Continent",
+      "link": "https://mutapatimes.com/articles/2026-06-27-kenya-teams-up-with-south-africa-morocco-mauritius-ghana-tan",
+      "image": "https://mutapatimes.com/img/cards/news/9613aec98e16.png",
+      "pubDate": "2026-06-27T07:52:25+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Kenya Teams Up with South Africa, Morocco, Mauritius, Ghana, Tanzania, Uganda, Rwanda and Zimbabwe as Mastercard Launches Priceless Africa to Unlock Exclusive Curated Travel Experiences Across the Continent",
+      "link": "https://mutapatimes.com/news/2026-06-27-kenya-teams-up-with-south-africa-morocco-mauritius-ghana-tanzania-uganda-rwanda-61f3d4",
+      "image": "https://mutapatimes.com/img/cards/news/1898edc4ae94.png",
+      "pubDate": "2026-06-27T07:52:25+00:00",
+      "category": "Science"
     },
     {
       "kind": "news",
@@ -137,6 +121,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-26T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Telone — Head Strategy and Transformation",
+      "link": "https://vacancymail.co.zw/jobs/head-strategy-and-transformation-68025/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e5ffb5f36237.png",
+      "pubDate": "2026-06-26T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -479,6 +471,14 @@
       "title": "Counter sales Representative - Automotive Batteries and Motor Spares",
       "link": "https://vacancymail.co.zw/jobs/counter-sales-representative-automotive-batteries-and-motor-spares-67972/",
       "image": "https://mutapatimes.com/img/cards/jobs/f47be75a4dcc.png",
+      "pubDate": "2026-06-26T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Catholic Relief Services — Humanitarian Operations Technical Advisor I, RAPID - ESARO",
+      "link": "https://vacancymail.co.zw/jobs/humanitarian-operations-technical-advisor-i-rapid-esaro-67971/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6e05fcdf3bf4.png",
       "pubDate": "2026-06-26T22:00:00+00:00",
       "category": "Jobs"
     }
