@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-06-27T06:26:56+00:00",
+  "fetched_at": "2026-06-27T10:55:15+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "CAB3: Legislators summoned for special sitting",
+      "link": "https://mutapatimes.com/news/2026-06-26-cab3-legislators-summoned-for-special-sitting-4767c4",
+      "image": "https://mutapatimes.com/img/cards/news/a4d45fd8a51c.png",
+      "pubDate": "2026-06-26T22:19:59+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Retired Major General Dzihwema dies",
+      "link": "https://mutapatimes.com/articles/2026-06-26-retired-major-general-dzihwema-dies",
+      "image": "https://mutapatimes.com/img/cards/news/232abab2d2db.png",
+      "pubDate": "2026-06-26T22:15:02+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim secondary income 2025 Q4: $169M. Trailing four quarters: $2.5B.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 27 Jun: Harare overcast · high 20° / low 9°",
+      "title": "Zim weather 27 Jun: Harare partly cloudy · high 19° / low 8°",
       "link": "https://mutapatimes.com/weather?d=2026-06-27",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-27",
       "pubDate": "2026-06-26T22:00:00+00:00",
@@ -57,6 +73,22 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-06-26T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "HUMAN RESOURCES GRADUATE TRAINEE",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-graduate-trainee-68024/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f5e20defed1c.png",
+      "pubDate": "2026-06-26T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Black Shark Protection Services — Cashier",
+      "link": "https://vacancymail.co.zw/jobs/cashier-68023/",
+      "image": "https://mutapatimes.com/img/cards/jobs/057aa1cefe4e.png",
+      "pubDate": "2026-06-26T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -447,38 +479,6 @@
       "title": "Accounting Clerk",
       "link": "https://vacancymail.co.zw/jobs/accounting-clerk-67958/",
       "image": "https://mutapatimes.com/img/cards/jobs/09fa5fe1003d.png",
-      "pubDate": "2026-06-26T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "HUMANA People to People — Traveling Financial Controller",
-      "link": "https://vacancymail.co.zw/jobs/traveling-financial-controller-67957/",
-      "image": "https://mutapatimes.com/img/cards/jobs/519ea6f56a09.png",
-      "pubDate": "2026-06-26T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Proserve Consulting — User Interface and User Experience (UI/UX) Developer",
-      "link": "https://vacancymail.co.zw/jobs/user-interface-and-user-experience-uiux-developer-67956/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e47f06d35a4.png",
-      "pubDate": "2026-06-26T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "BUSINESS DEVELOPMENT OFFICER(MTA)",
-      "link": "https://vacancymail.co.zw/jobs/business-development-officermta-67955/",
-      "image": "https://mutapatimes.com/img/cards/jobs/61bab9f7065d.png",
-      "pubDate": "2026-06-26T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Proserve Consulting — Senior Manager DevOps Engineer",
-      "link": "https://vacancymail.co.zw/jobs/senior-manager-devops-engineer-67954/",
-      "image": "https://mutapatimes.com/img/cards/jobs/01a4ad0d8f74.png",
       "pubDate": "2026-06-26T22:00:00+00:00",
       "category": "Jobs"
     }
