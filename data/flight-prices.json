@@ -257,15 +257,6 @@
           "stops": 1,
           "duration": null,
           "currency": ""
-        },
-        {
-          "price": 3494,
-          "airline": "5Z",
-          "departure_at": "2026-11-05",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1170,
-          "currency": ""
         }
       ],
       "by_airline": [
@@ -288,15 +279,6 @@
           "currency": ""
         },
         {
-          "price": 3494,
-          "airline": "5Z",
-          "departure_at": "2026-11-05",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1170,
-          "currency": ""
-        },
-        {
           "price": 3524,
           "airline": "GE",
           "departure_at": "2026-07-31",
@@ -313,13 +295,22 @@
           "stops": 1,
           "duration": 1060,
           "currency": ""
+        },
+        {
+          "price": 3812,
+          "airline": "5Z",
+          "departure_at": "2026-06-29",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1240,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -341,7 +332,7 @@
           "error": null
         }
       ],
-      "observations": 11
+      "observations": 10
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -386,12 +377,12 @@
           "currency": ""
         },
         {
-          "price": 4064,
-          "airline": "FN",
-          "departure_at": "2026-09-23",
-          "return_at": "2026-10-04",
+          "price": 1558,
+          "airline": "FA",
+          "departure_at": "2026-09-06",
+          "return_at": "",
           "stops": 0,
-          "duration": null,
+          "duration": 110,
           "currency": ""
         }
       ],
@@ -404,22 +395,13 @@
           "stops": 0,
           "duration": 110,
           "currency": ""
-        },
-        {
-          "price": 4064,
-          "airline": "FN",
-          "departure_at": "2026-09-23",
-          "return_at": "2026-10-04",
-          "stops": 0,
-          "duration": null,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 9,
+          "n": 11,
           "error": null
         },
         {
@@ -441,7 +423,7 @@
           "error": null
         }
       ],
-      "observations": 12
+      "observations": 14
     },
     "new-york-to-harare": {
       "origin": "NYC",
