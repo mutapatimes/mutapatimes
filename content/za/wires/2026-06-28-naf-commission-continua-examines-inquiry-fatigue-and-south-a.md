@@ -1,0 +1,16 @@
+---
+title: "NAF | ‘Commission Continua’ examines inquiry fatigue and South Africa’s longstanding structural failures"
+date: 2026-06-28T03:31:01.000Z
+author: News24
+category: Education
+image: 
+summary: "NAF | ‘Commission Continua’ examines inquiry fatigue and South Africa’s longstanding structural failures"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOaEFRZ0VHcncxbXJlbVR6NkhxMWd6VnBIUnVELTBFOEczSHFmbW95VkVhNThVSm04Rm9mbVQwdEpmcFU4Y1BiVVoxYXVoWTNpN0tSQV9sT0w1R2psU2tfd2JCdHQ4ckFaQWdRUUQ4STI2QzNBSUlEQnlCM3A2TW5GY01IYzQtRHpnNlRFY3NYSFVDMmZTZHZMa005N2R4WVJ0c0x1YWtZQVItMkdjUkZRUUZLTktXS3pHUnVhQTRjeGVRTTF4WTNXS3htZGF4OGtzekZVWmtOanY2dDR4cDVseEFXaGxxTXhKeXV3MEpBcThXRlVtNG1LVUpTLWdpUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi_gFBVV95cUxOaEFRZ0VHcncxbXJlbVR6NkhxMWd6VnBIUnVELTBFOEczSHFmbW95VkVhNThVSm04Rm9mbVQwdEpmcFU4Y1BiVVoxYXVoWTNpN0tSQV9sT0w1R2psU2tfd2JCdHQ4ckFaQWdRUUQ4STI2QzNBSUlEQnlCM3A2TW5GY01IYzQtRHpnNlRFY3NYSFVDMmZTZHZMa005N2R4WVJ0c0x1YWtZQVItMkdjUkZRUUZLTktXS3pHUnVhQTRjeGVRTTF4WTNXS3htZGF4OGtzekZVWmtOanY2dDR4cDVseEFXaGxxTXhKeXV3MEpBcThXRlVtNG1LVUpTLWdpUQ?oc=5)
