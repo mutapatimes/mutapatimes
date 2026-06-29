@@ -1,0 +1,16 @@
+---
+title: "‘If I am to die, let it be here’: Malawians fleeing unrest in South Africa"
+date: 2026-06-29T00:22:32.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "‘If I am to die, let it be here’: Malawians fleeing unrest in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTdWUDI1cXNRRm5wc3Q3VnJIX2Y5STZSWnY4ZnZKRUNTTjZ4M3M1QzZrQ0UxWkExZ0J6bXJ2OXg2ampCQ05vbk1XWTZsaU5yOU1UZ29hQ2had0dBUlVMWEdNVjFjWGNOaHpEUXN2cjI3SXpJMEJPS2FOV3R3MGFwdnZuY3R5RFFjQmRLXzdYQzR4aENaR2o3NDJEUm5Ld1VPSG8wN2ZzVGRJXzV3Y2ZwbNIBtgFBVV95cUxNM0xyVzM5a212ckFsVEpSTldqX3ZsNDB6b2EyTmhuWUQ3dHktY0FXZ3RydTF5V1VVWHJRUnIydzgyT0t3a0NSX1Q4dTZLOUtjWHRCN2thUlRvU2JRUHY4UDJRVDNrd2h1RHNTWUpVSXR2amRVeGhxaWxwOGdCSEE5M2lRS3MtV1JrZ3dEaDlfdTZ1aUpQemtaR3R2UkVLMGhSbW1aODAtZTEzM3dTVDh0eHZiOE1xUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTdWUDI1cXNRRm5wc3Q3VnJIX2Y5STZSWnY4ZnZKRUNTTjZ4M3M1QzZrQ0UxWkExZ0J6bXJ2OXg2ampCQ05vbk1XWTZsaU5yOU1UZ29hQ2had0dBUlVMWEdNVjFjWGNOaHpEUXN2cjI3SXpJMEJPS2FOV3R3MGFwdnZuY3R5RFFjQmRLXzdYQzR4aENaR2o3NDJEUm5Ld1VPSG8wN2ZzVGRJXzV3Y2ZwbNIBtgFBVV95cUxNM0xyVzM5a212ckFsVEpSTldqX3ZsNDB6b2EyTmhuWUQ3dHktY0FXZ3RydTF5V1VVWHJRUnIydzgyT0t3a0NSX1Q4dTZLOUtjWHRCN2thUlRvU2JRUHY4UDJRVDNrd2h1RHNTWUpVSXR2amRVeGhxaWxwOGdCSEE5M2lRS3MtV1JrZ3dEaDlfdTZ1aUpQemtaR3R2UkVLMGhSbW1aODAtZTEzM3dTVDh0eHZiOE1xUQ?oc=5)
