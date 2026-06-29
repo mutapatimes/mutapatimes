@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 20:16:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 20:17:43 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -197,6 +197,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Contact Center Agent</title>
+      <link>https://mutapatimes.com/stories/d495b9088fbe.html</link>
+      <description>Serving US-based clients · Full-Time · Office-Based WORK HOURS (ZIM): 5:00 PM – 2:00 AM US TIME ZONE: Mountain Time (MT) START DATE: TBA WORK TYPE Full-Time · Office About the role We are a growing B… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 28 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d495b9088fbe.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d495b9088fbe.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d495b9088fbe.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d495b9088fbe.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>World Vision — INVITATION TO TENDER TENDER FOR CONSULTANCY FOR QUALITATIVE VALADATION OF BASELINE SURVEY FINDINGS</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/1e449004307a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1e449004307a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/1e449004307a.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Farm Manager</title>
-      <link>https://mutapatimes.com/stories/c0047d973535.html</link>
-      <description>Farm Manager required Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 28 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c0047d973535.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c0047d973535.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c0047d973535.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c0047d973535.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
