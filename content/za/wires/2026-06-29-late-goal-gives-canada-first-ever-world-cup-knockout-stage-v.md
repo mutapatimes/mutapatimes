@@ -1,0 +1,16 @@
+---
+title: "Late goal gives Canada first-ever World Cup knockout stage victory"
+date: 2026-06-29T02:08:08.000Z
+author: Al Jazeera
+category: Sport
+image: 
+summary: "Late goal gives Canada first-ever World Cup knockout stage victory"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX2hDbTZxYXJFeEpqOWxPUHVOZTVMbUhqRmJuWDQwaE95MW50ek1obzhEd3FCV091VS03dVNWSmxKWW94VFdoWDJHcXFvYkZ5dHFUZlY4TnRBYkxEc2FNQWxNRy04em0tXy1XWVNJdThhS0pwemtDZTlxbXdXT3g3NWV3bHbSAYoBQVVfeXFMTndfWVdHY29iYkN2SWFXbmRhNGw0amctSVVaYzRRZ0lWQ2c1b21QekZUcHZRc0pweGFsNzNkMmJ1MWdxd0ZlNHdPdjZjdTE4ZDBfUkgwcC1RbmlJMll1Skg1cGQ4RFFPTnBGQVNqWFg2dVJvTjFjX3dwZHFKXzJydk9GdkRZQjQybE1n?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMihAFBVV95cUxOX2hDbTZxYXJFeEpqOWxPUHVOZTVMbUhqRmJuWDQwaE95MW50ek1obzhEd3FCV091VS03dVNWSmxKWW94VFdoWDJHcXFvYkZ5dHFUZlY4TnRBYkxEc2FNQWxNRy04em0tXy1XWVNJdThhS0pwemtDZTlxbXdXT3g3NWV3bHbSAYoBQVVfeXFMTndfWVdHY29iYkN2SWFXbmRhNGw0amctSVVaYzRRZ0lWQ2c1b21QekZUcHZRc0pweGFsNzNkMmJ1MWdxd0ZlNHdPdjZjdTE4ZDBfUkgwcC1RbmlJMll1Skg1cGQ4RFFPTnBGQVNqWFg2dVJvTjFjX3dwZHFKXzJydk9GdkRZQjQybE1n?oc=5)
