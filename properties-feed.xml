@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 13:02:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 16:10:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,18 +65,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 140,000 — Madokero house for sale (Madokero, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/57075b24caca.html</link>
-      <description>USD 140,000 — Madokero, Harare West. 4 beds, 2 baths. Madokero house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 28 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/57075b24caca.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/57075b24caca.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/57075b24caca.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/57075b24caca.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 52,000 — For Sale !! (Kambuzuma, Harare High Density)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/9b39dab5c740.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9b39dab5c740.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/9b39dab5c740.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 60 — Dzivarasekwa Gunhill House for sale (Dzivarasekwa, Harare High Density)</title>
+      <link>https://mutapatimes.com/property-landing/1044a978c6df.html</link>
+      <description>USD 60 — Dzivarasekwa, Harare High Density. 5 beds, 2 baths. Dzivarasekwa Gunhill House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 28 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/1044a978c6df.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/1044a978c6df.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/1044a978c6df.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/1044a978c6df.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

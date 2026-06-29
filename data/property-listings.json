@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-29T11:23:12.588059+00:00",
+  "fetched_at": "2026-06-29T16:10:16.546493+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -38,15 +38,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/b8/8c/b9/b88cb918-0b42-4f6d-a1ca-b698edb4981e_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
-    },
-    {
-      "title": "Madokero house for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-dsi248949",
-      "price": "USD 140,000",
-      "location": "Madokero, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/bf/11/de/bf11de4b-4956-4c9a-8039-44e2203be86b_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     },
     {
       "title": "For Sale !!",
@@ -199,6 +190,15 @@
       "location": "Mabelreign, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/ee/40/44/ee404452-960e-44a3-89a5-39e47985caba_thumbnail591.webp",
       "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Dzivarasekwa Gunhill House for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-mac250123",
+      "price": "USD 60",
+      "location": "Dzivarasekwa, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/c7/e7/18/c7e718ff-4dfb-4cec-8ef4-60c18266a000_thumbnail591.webp",
+      "beds": "5",
       "baths": "2"
     }
   ]
