@@ -1,0 +1,16 @@
+---
+title: "Beitbridge repatriation reception centre filled to capacity as Zimbabweans flock home"
+date: 2026-06-29T13:44:44.000Z
+author: News24
+category: Business
+image: 
+summary: "Beitbridge repatriation reception centre filled to capacity as Zimbabweans flock home"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX05HRXBrTHJ6UXVvWGV6Z3B4UjFwR0tDeHJkSFNCMkZMUkRRWEppU3RCVnREVS1wYlZfR0JiS0JkTGREd1Vqd3hQcXhNQWdnRU1jZzhBN3dudTV2XzF2Y3h5UUlIQWU3aEtob0ZYblh0LVJvZFpqbTlZQm9iN2M0ZmR0UXR5blFGV2dkMl9YSjhKVzlZaTJzUm8wa3pjVGw2blRTY2d3TUdtM0paTjdFWEVFOFk3MGpsRTBHWndaN1N1eGxzVUloY25JMmhLdHgxYTNrLUVn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX05HRXBrTHJ6UXVvWGV6Z3B4UjFwR0tDeHJkSFNCMkZMUkRRWEppU3RCVnREVS1wYlZfR0JiS0JkTGREd1Vqd3hQcXhNQWdnRU1jZzhBN3dudTV2XzF2Y3h5UUlIQWU3aEtob0ZYblh0LVJvZFpqbTlZQm9iN2M0ZmR0UXR5blFGV2dkMl9YSjhKVzlZaTJzUm8wa3pjVGw2blRTY2d3TUdtM0paTjdFWEVFOFk3MGpsRTBHWndaN1N1eGxzVUloY25JMmhLdHgxYTNrLUVn?oc=5)
