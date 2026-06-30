@@ -1,0 +1,16 @@
+---
+title: "Streets in Johannesburg and surrounds unusually quiet as citizens remain on edge during anti-illegal immigrant protests"
+date: 2026-06-30T10:13:57.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Streets in Johannesburg and surrounds unusually quiet as citizens remain on edge during anti-illegal immigrant protests"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQdTRYY2xnSE5KZzRURTBvb0VMOFZLekRGUXJqVDJLU2hqYjRsM1N3SGFDNVRxZHJtNUZOeGhEelR6UThvZldfNFVDUE5Zdk5oMXBqTk02OHk0bU1kdXE4U2xMeFVYdHBLX042YW8yWXBLVThONlBDVkZsaFFmdmUzYXpYZkp4VVJ3T0w1RjNmS2lteUpzanFwbWtWMVNhNmtVVUo3dXFjZDByT3FXM2kzd3ZNWG4wLW5ZUjlUSDFaMng3enMzX3B5cnBEbjF3LUpKZkE5bkhOckZmZEM4T0R0dGdaWXV6NkJITXlra2NWZ1RJMmI3ZUFjNV9n?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMi-gFBVV95cUxQdTRYY2xnSE5KZzRURTBvb0VMOFZLekRGUXJqVDJLU2hqYjRsM1N3SGFDNVRxZHJtNUZOeGhEelR6UThvZldfNFVDUE5Zdk5oMXBqTk02OHk0bU1kdXE4U2xMeFVYdHBLX042YW8yWXBLVThONlBDVkZsaFFmdmUzYXpYZkp4VVJ3T0w1RjNmS2lteUpzanFwbWtWMVNhNmtVVUo3dXFjZDByT3FXM2kzd3ZNWG4wLW5ZUjlUSDFaMng3enMzX3B5cnBEbjF3LUpKZkE5bkhOckZmZEM4T0R0dGdaWXV6NkJITXlra2NWZ1RJMmI3ZUFjNV9n?oc=5)

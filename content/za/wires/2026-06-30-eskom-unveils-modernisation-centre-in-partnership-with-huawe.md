@@ -1,0 +1,16 @@
+---
+title: "Eskom Unveils Modernisation Centre in Partnership with Huawei, Illuminating South Africa's Digital Power Future"
+date: 2026-06-30T10:04:00.000Z
+author: PR Newswire
+category: Culture
+image: 
+summary: "Eskom Unveils Modernisation Centre in Partnership with Huawei, Illuminating South Africa's Digital Power Future"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPYUkwam1tOEVBcGl2UVJkd0ttcjNRajNhQjVVWGQ1QkoxeXdONXlidFBVcm9ncHpQV0hYQXdNX2NRWEg2Q1Z5UjRKNURSc08wVkppRFQtd09XRDlvS3dKdHdNNnJza2JBY0l1VVBsNDUxd1RlY0VESnAxTS03UHBRenhxWUZDZ3BDc3RhUHZPU0JHaDZkM3VjN2dpZXVUcHFSM1VUc0ZmNmlZSFl5S3NzdUQ1WVdOak0xcWcyMjVic1VwOEFITDV2dU9lNW1yUUViLWxEUXhrQ05ObDc4RXlvaV8zWFNndVBWSndBWXpIV3lMU0M1bHI5d1FQM3c5VHM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by PR Newswire.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxPYUkwam1tOEVBcGl2UVJkd0ttcjNRajNhQjVVWGQ1QkoxeXdONXlidFBVcm9ncHpQV0hYQXdNX2NRWEg2Q1Z5UjRKNURSc08wVkppRFQtd09XRDlvS3dKdHdNNnJza2JBY0l1VVBsNDUxd1RlY0VESnAxTS03UHBRenhxWUZDZ3BDc3RhUHZPU0JHaDZkM3VjN2dpZXVUcHFSM1VUc0ZmNmlZSFl5S3NzdUQ1WVdOak0xcWcyMjVic1VwOEFITDV2dU9lNW1yUUViLWxEUXhrQ05ObDc4RXlvaV8zWFNndVBWSndBWXpIV3lMU0M1bHI5d1FQM3c5VHM?oc=5)
