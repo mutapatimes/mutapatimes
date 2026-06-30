@@ -1,43 +1,169 @@
 {
-  "fetched_at": "2026-06-29T20:16:06.698462+00:00",
+  "fetched_at": "2026-06-30T04:33:33.195727+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
     {
-      "title": "Striking Contemporary Living",
-      "url": "https://www.property.co.zw/for-sale/houses-clrp241523",
-      "price": "USD 1,150,000",
-      "location": "Gunhill, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/f4/6e/82/f46e8251-ceb2-4bae-9ce3-53dfc093f5d7_thumbnail591.webp",
-      "beds": "6",
-      "baths": "5"
-    },
-    {
-      "title": "Burnside townhouse for sale",
-      "url": "https://www.property.co.zw/for-sale/townhouses-pgp245453",
-      "price": "USD 155,000",
-      "location": "Burnside, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/a0/eb/5e/a0eb5e25-c5bd-4a11-8b64-87ee28cceb23_thumbnail591.webp",
-      "beds": "3",
+      "title": "Prime Location 5 Bedroomed House for Sale - Highlands",
+      "url": "https://www.property.co.zw/for-sale/houses-gat249326",
+      "price": "USD 560,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/8c/cc/e0/8ccce0c9-81fd-47f0-a089-9301d644c9a8_thumbnail591.webp",
+      "beds": "5",
       "baths": "3"
     },
     {
-      "title": "House for Sale in Belvedere",
-      "url": "https://www.property.co.zw/for-sale/houses-jspp248506",
-      "price": "USD 170,000",
-      "location": "Belvedere, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/56/50/68/5650685f-df58-461f-a577-21d1a5ba8e94_thumbnail591.webp",
-      "beds": "3",
+      "title": "Perfectly located Oldie",
+      "url": "https://www.property.co.zw/for-sale/houses-hvn249140",
+      "price": "USD 560,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/a0/98/a3/a098a348-bab1-4f14-8ae9-c315fe3b39c7_thumbnail591.webp",
+      "beds": "5",
       "baths": "3"
     },
     {
-      "title": "Hillside 4-Bed Home - Borehole, Solar & Double Carport",
-      "url": "https://www.property.co.zw/for-sale/houses-htnp242406",
-      "price": "USD 250,000",
-      "location": "Hillside, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/b8/8c/b9/b88cb918-0b42-4f6d-a1ca-b698edb4981e_thumbnail591.webp",
+      "title": "Modern 4-Bed Marlborough Home — Garage, Designer Kitchen & Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-glre249250",
+      "price": "USD 225,000",
+      "location": "Marlborough, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/94/ed/03/94ed0391-e094-43c8-a7fe-f7a9e616717a_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
+    },
+    {
+      "title": "Tynwald 3 bedroomed property for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-rvl242704",
+      "price": "USD 160,000",
+      "location": "Tynwald, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/70/f2/43/70f243ab-57f6-4fc5-ba18-0a92f89db8cd_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Spacious Double-Storey Home – Customize to Your Taste",
+      "url": "https://www.property.co.zw/for-sale/houses-rws242394",
+      "price": "USD 360,000",
+      "location": "Carrick Creagh, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/e6/bc/1f/e6bc1f89-7860-42d8-a30c-e7f9e97e6c7b_thumbnail591.webp",
+      "beds": "4",
+      "baths": ""
+    },
+    {
+      "title": "Stone-Clad Family Home With Cottage For Sale In Chimanimani",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp249617",
+      "price": "USD 115,000",
+      "location": "Chimanimani",
+      "image": "https://www.property.co.zw/uploadedfiles/4d/24/e9/4d24e93c-ff78-4cec-9f88-0c297e344d4f_thumbnail591.webp",
+      "beds": "3",
+      "baths": "1"
+    },
+    {
+      "title": "Versatile Property on ED Mnangagwa – Ideal for Residential or Development Use",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp241766",
+      "price": "USD 470,000",
+      "location": "The Grange, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/06/bd/19/06bd1988-280d-4f75-a43e-5f50eea7570c_thumbnail591.webp",
+      "beds": "5",
+      "baths": "3"
+    },
+    {
+      "title": "Incomplete Family Home for Sale in Damafalls",
+      "url": "https://www.property.co.zw/for-sale/houses-oas248071",
+      "price": "USD 40,000",
+      "location": "Damofalls",
+      "image": "https://www.property.co.zw/uploadedfiles/c4/5f/69/c45f6983-e4cc-4e7e-901c-829deb8a9f8e_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Elegant Holiday Home in Nyanga",
+      "url": "https://www.property.co.zw/for-sale/houses-rws234007",
+      "price": "USD 280,000",
+      "location": "Nyanga",
+      "image": "https://www.property.co.zw/uploadedfiles/9f/6c/cd/9f6ccdda-28f1-4c0e-aae6-213cf559c687_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "House for Sale: Avondale West (close to Suffolk)",
+      "url": "https://www.property.co.zw/for-sale/houses-xds243180",
+      "price": "USD 250,000",
+      "location": "Avondale West, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/a3/14/f2/a314f24e-beb9-4e8b-90d0-c44930e37c9c_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Needs only your finishing touches",
+      "url": "https://www.property.co.zw/for-sale/houses-rws210803",
+      "price": "USD 300,000",
+      "location": "Fairview, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/79/60/53/796053d3-70fb-4bf7-85bb-4615d5a4afc4_thumbnail591.webp",
+      "beds": "7",
+      "baths": "7"
+    },
+    {
+      "title": "Charlotte Brooke- Incomplete House with Great Potentail",
+      "url": "https://www.property.co.zw/for-sale/houses-bnjr228683",
+      "price": "USD 60,000",
+      "location": "Charlotte Brooke, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/14/2f/22/142f225b-465a-4cff-a65e-085be33ee897_thumbnail591.webp",
+      "beds": "6",
+      "baths": ""
+    },
+    {
+      "title": "Blackdawn - Nyabira 3 Bed 3 Bath Brick Shell",
+      "url": "https://www.property.co.zw/for-sale/houses-sef246098",
+      "price": "USD 58,000",
+      "location": "Nyabira",
+      "image": "https://www.property.co.zw/uploadedfiles/00/b2/67/00b267cb-c8b9-44e4-b9a2-78e6a6ecd4f5_thumbnail591.webp",
+      "beds": "3",
+      "baths": "3"
+    },
+    {
+      "title": "Elegant 5 Bedroom Family Home on Selous",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp244359",
+      "price": "USD 750,000",
+      "location": "Colne Valley, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/7b/eb/fe/7bebfe98-e08d-4805-95c0-aaafdfba8fa5_thumbnail591.webp",
+      "beds": "5",
+      "baths": "4"
+    },
+    {
+      "title": "Stylish 4-Bed Damofalls Phase 3 Home For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-dcpt244271",
+      "price": "USD 80,000",
+      "location": "Damofalls",
+      "image": "https://www.property.co.zw/uploadedfiles/1c/84/6d/1c846d84-7d98-4384-885c-59a677fab543_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
+    {
+      "title": "Residential House For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-smy248411",
+      "price": "USD 65,000",
+      "location": "Zimre Park, Harare East",
+      "image": "https://www.property.co.zw/uploadedfiles/9b/01/2c/9b012c88-b1a2-405d-aa31-9c4e3d3f35ab_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
+      "title": "Spacious 4-Bed Home with Vaulted Lounge & Borehole — Nyeredzi Ridge",
+      "url": "https://www.property.co.zw/for-sale/houses-glre249252",
+      "price": "USD 150,000",
+      "location": "Nyeredzi Ridge, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/c7/5b/b0/c75bb063-7799-42da-9d0c-1bf6d0f31d73_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
+    {
+      "title": "Where vision meets opportunity",
+      "url": "https://www.property.co.zw/for-sale/houses-hvn248240",
+      "price": "USD 450,000",
+      "location": "Brookview, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/00/c9/f6/00c9f686-4150-44fb-b22b-758fb79ba944_thumbnail591.webp",
+      "beds": "5",
+      "baths": "5"
     },
     {
       "title": "For Sale !!",
@@ -49,157 +175,31 @@
       "baths": "1"
     },
     {
-      "title": "Luxury meets self sufficient!!",
-      "url": "https://www.property.co.zw/for-sale/houses-rws238047",
-      "price": "USD 600,000",
-      "location": "Gletwin Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/d5/5e/55/d55e55bc-6757-4d65-b855-38839b14a4b7_thumbnail591.webp",
-      "beds": "8",
-      "baths": "6"
+      "title": "Brand New Ready To Move In July 2026",
+      "url": "https://www.property.co.zw/for-sale/townhouses-knp244827",
+      "price": "USD 355,000",
+      "location": "Borrowdale Brooke, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/c9/1b/43/c91b4386-7bfb-469f-900b-02ecb5cd1040_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     },
     {
-      "title": "Modern 4 Bedroom home with a prolific borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp237458",
-      "price": "USD 300,000",
-      "location": "Mt Pleasant Heights, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/08/a4/77/08a47735-2625-402f-aea3-abaca023b925_thumbnail591.webp",
-      "beds": "4",
+      "title": "Idyllic Family Home in serene neighbourhood",
+      "url": "https://www.property.co.zw/for-sale/houses-ptk245744",
+      "price": "USD 280,000",
+      "location": "Mandara, Harare East",
+      "image": "https://www.property.co.zw/uploadedfiles/40/92/05/409205d4-804a-4275-87c4-33580dcee426_thumbnail591.webp",
+      "beds": "3",
       "baths": "3"
     },
     {
-      "title": "Braeside",
-      "url": "https://www.property.co.zw/for-sale/houses-knp246855",
-      "price": "USD 170,000",
-      "location": "Braeside, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/d9/98/37/d99837d6-a0de-41ee-93c4-fdbd2155ee5a_thumbnail591.webp",
+      "title": "V Residence 36 - Marlborough",
+      "url": "https://www.property.co.zw/for-sale/townhouses-knp248826",
+      "price": "USD 210,000",
+      "location": "Marlborough, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/6f/00/20/6f0020d9-761b-4da4-b40e-2b57a009ec75_thumbnail591.webp",
       "beds": "3",
-      "baths": "1"
-    },
-    {
-      "title": "Modern cluster homes for sale in Emarald Hill",
-      "url": "https://www.property.co.zw/for-sale/townhouses-mac248434",
-      "price": "USD 240,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/c4/88/b5/c488b5bc-67bc-411d-9926-b0cccf537e3a_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "3 Bed House For Sale In Arlington",
-      "url": "https://www.property.co.zw/for-sale/townhouses-gat231309",
-      "price": "USD 300,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/32/89/6a/32896a80-e844-410e-b894-878a1efe0445_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Quick Sale .... Ready To Move In",
-      "url": "https://www.property.co.zw/for-sale/houses-jspp250024",
-      "price": "USD 130,000",
-      "location": "Zimre Park, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/3d/3f/a1/3d3fa113-18f1-4414-98aa-70069dca1787_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Neat",
-      "url": "https://www.property.co.zw/for-sale/houses-dfp247834",
-      "price": "USD 148,000",
-      "location": "Madokero, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/60/1e/40/601e40d5-88a6-41bb-b1cb-499a713d9946_thumbnail591.webp",
-      "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "Development Potential on 2.2 acres in Borrowdale",
-      "url": "https://www.property.co.zw/for-sale/houses-nst244138",
-      "price": "USD 1,800,000",
-      "location": "Borrowdale, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/d3/59/17/d3591737-a79a-4f87-980c-e499f9781caa_thumbnail591.webp",
-      "beds": "4",
-      "baths": "3"
-    },
-    {
-      "title": "Conveniently located",
-      "url": "https://www.property.co.zw/for-sale/houses-gby236078",
-      "price": "USD 320,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/09/b3/b8/09b3b8dc-c7bc-40b5-965e-f29679599f65_thumbnail591.webp",
-      "beds": "4",
-      "baths": ""
-    },
-    {
-      "title": "Eastlea | Prime Property for Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-gat247602",
-      "price": "USD 255,000",
-      "location": "Eastlea, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/f6/00/cf/f600cfc2-817f-4511-a7c1-feff71b39948_thumbnail591.webp",
-      "beds": "3",
-      "baths": ""
-    },
-    {
-      "title": "Double-Storey Home For Sale in Carrick Creagh Estate, Borrowdale",
-      "url": "https://www.property.co.zw/for-sale/townhouses-mtx249024",
-      "price": "USD 475,000",
-      "location": "Carrick Creagh, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/ad/dc/1c/addc1c35-5561-41f8-a78b-32f52de17298_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
-    },
-    {
-      "title": "Elegant Home for Sale in Milton Park, Harare",
-      "url": "https://www.property.co.zw/for-sale/houses-rws228368",
-      "price": "USD 490,000",
-      "location": "Milton Park, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/28/fe/08/28fe08ee-e8c4-49f3-a674-a8c0f4f45452_thumbnail591.webp",
-      "beds": "4",
-      "baths": "4"
-    },
-    {
-      "title": "Gated Folyjon Glen Lorne 4-Bed Home with Pool & Garden",
-      "url": "https://www.property.co.zw/for-sale/houses-leg244250",
-      "price": "USD 500,000",
-      "location": "Glen Lorne, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/39/a1/6d/39a16dc7-c1f3-4787-84d1-980e57c3e5e0_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Hogerty Hill: Grand 8-Bed Mansion with Pool",
-      "url": "https://www.property.co.zw/for-sale/houses-hos235937",
-      "price": "USD 3,200,000",
-      "location": "Hogerty Hill, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/75/ea/c0/75eac015-b69d-4fb9-9cf2-595a4cfe3cb8_thumbnail591.webp",
-      "beds": "8",
-      "baths": "10"
-    },
-    {
-      "title": "Multi Apartment residential Property",
-      "url": "https://www.property.co.zw/for-sale/houses-bls222214",
-      "price": "USD 110,000",
-      "location": "Chiredzi",
-      "image": "https://www.property.co.zw/uploadedfiles/77/40/d8/7740d853-5c58-4891-95b5-5abd62be8c86_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Stunning Starter Home!",
-      "url": "https://www.property.co.zw/for-sale/houses-knp249794",
-      "price": "USD 170,000",
-      "location": "Mabelreign, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/ee/40/44/ee404452-960e-44a3-89a5-39e47985caba_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Dzivarasekwa Gunhill House for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-mac250123",
-      "price": "USD 60",
-      "location": "Dzivarasekwa, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/c7/e7/18/c7e718ff-4dfb-4cec-8ef4-60c18266a000_thumbnail591.webp",
-      "beds": "5",
-      "baths": "2"
     }
   ]
 }
