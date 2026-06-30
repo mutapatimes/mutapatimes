@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-06-30T14:45:17+00:00</lastmod>
+    <lastmod>2026-06-30T17:17:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -453,6 +453,12 @@
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-08-south-african-medical-students-stepped-out-in-crazy-socks-he.html</loc>
     <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-09-africas-conservation-models-struggle-to-shake-colonial-yoke.html</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -9523,6 +9529,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-29-from-hunting-reserve-to-wildlife-haven-sandringham-private-g.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-29-from-lords-to-the-oval-south-africas-final-four-destiny-lock.html</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -10027,6 +10039,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-26-kenyans-flee-south-africa-due-to-xenophobic-attack-threat.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-30-june-demonstrations-conclude-relatively-peacefully.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-30-june-protests-all-the-hotspots-and-marches-near-you.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10057,6 +10081,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-5-things-to-know-about-miss-sa-finalist-modiegi-mashamaite.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-a-call-to-action-against-afrophobic-violence.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10075,7 +10105,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-anti-illegal-immigration-march-in-kugompo-ends-peacefully-as.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-anti-illegal-migration-protesters-gather-in-pretorias-church.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-anti-immigration-marches-take-place-across-south-africa-vide.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-anti-migrant-protesters-march-in-south-africa.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10094,6 +10142,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-bellville-informal-traders-celebrate-business-boom-as-foreig.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-blaming-migrants-ignores-the-real-causes-of-sas-economic-cri.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10172,6 +10226,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-dreaming-of-biryani-and-birthday-cake-as-they-live-on-the-st.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-editorial-june-30-and-mzansis-command-over-the-silent-langua.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10261,6 +10321,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-hugo-broos-has-restored-bafana-bafanas-pride-but-will-he-sta.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-hugo-broos-will-leave-bafana-transformed-with-a-legacy-built.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10285,6 +10351,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-immigrant-jumps-to-death-from-durban-building-to-escape-appa.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-in-pics-anti-illegal-migration-protesters-gather-in-pretoria.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10292,6 +10364,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-in-pics-mammoth-clean-up-at-durban-drive-in-while-about-400.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-in-pics-thousands-march-across-south-africa-as-part-of-natio.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10339,13 +10417,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-live-xenophobic-unrest-germiston-protesters-go-door-to-door.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-lufthansa-group-to-boost-flights-to-and-from-south-africa.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-marchers-give-reasons-for-joining-joburg-protests-against-mi.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-mbatha-optimistic-about-post-world-cup-bafana-sa-football-is.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-migrants-in-south-africa-fear-violence-ahead-of-june-30-dead.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-miners-turn-south-african-stocks-from-leaders-to-laggards.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10364,6 +10466,18 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-no-protests-linked-to-march-and-march-in-cape-town-suburbs-s.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-over-8000-stranded-malawian-nationals-to-spend-night-at-musi.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-poll-how-are-you-feeling-about-the-shutdown-taking-place-tod.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10441,7 +10555,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africa-anti-immigration-protests-on-june-30-anti-immig.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africa-braces-for-anti-migrant-protests-as-cities-shut.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africa-braces-for-violence-as-anti-migrant-marches-rea.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10507,6 +10633,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africas-anti-migrant-protesters-march-nationwide-after.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africas-broadband-future-is-being-decided-in-orbit-not.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -10514,6 +10646,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africas-employment-sector-sheds-80000-jobs-as-key-indu.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-south-africas-formal-sector-sheds-80000-jobs-in-first-quarte.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10555,7 +10693,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-thats-not-who-we-are-tumisho-masha-rejects-xenophobic-label.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-the-transatlantic-rift-and-south-africas-new-matrix-of-econo.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-they-will-attack-me-if-i-stay-immigrants-in-south-africa-fle.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-thousands-march-against-illegal-immigration-in-south-africa.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10592,6 +10748,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-30-trust-the-process-wayde-jooste-slams-bafana-bafana-critics-a.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-30-victor-matfield-nervous-about-england-clash-as-he-raises-que.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16687,6 +16849,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-26-kenyans-flee-south-africa-due-to-xenophobic-attack-threats-more-to-return-7e1710</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-30-june-protests-health-workers-urged-not-to-deny-migrants-and-refugees-05d0aa</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -16705,7 +16873,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-africa-s-conservation-models-struggle-to-shake-colonial-yoke-fd967c</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-africa-s-top-brands-boom-as-banking-telecoms-and-retail-power-62-6bn-surge-a145d0</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-anti-immigration-marches-take-place-across-south-africa-video-af166f</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-anti-migrant-protesters-march-in-south-africa-186ca5</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -16736,6 +16922,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-bafana-seek-tournament-saving-win-14a36b</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-bonnie-mbuli-reflects-on-the-unmatched-love-of-south-africans-while-living-bd9c35</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -16784,6 +16976,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-co-hosts-canada-beat-south-africa-to-reach-world-cup-last-16-as-knockouts-begin-b03eaa</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-criminals-are-using-dogs-for-illegal-poaching-in-south-africa-e59cd9</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -16838,6 +17036,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-foot-and-mouth-disease-in-south-africa-how-a-tracking-system-would-control-560a14</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-from-hunting-reserve-to-wildlife-haven-sandringham-private-game-reserve-opens-a-bf56d8</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -16933,6 +17137,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-in-south-africa-a-village-learns-to-live-with-baboons-but-it-may-be-the-1a5581</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-inflation-expectations-rise-before-south-africa-rate-decision-560866</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -16981,6 +17191,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-major-country-issues-travel-warning-about-south-africa-9f2793</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-manhunt-under-way-in-south-africa-after-12-killed-in-mass-shooting-in-bc2556</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -16993,7 +17209,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-mbatha-optimistic-about-post-world-cup-bafana-sa-football-is-going-in-the-right-b7a2a6</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-media-accreditation-for-the-2026-national-youth-day-commemoration-in-d9b318</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-miners-turn-south-african-stocks-from-leaders-to-laggards-3d2ed8</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17096,6 +17324,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-south-africa-braces-for-anti-migrant-protests-as-cities-shut-down-d5fbb9</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-south-africa-braces-for-violence-as-anti-migrant-marches-reach-boiling-point-42e086</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17293,6 +17527,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-they-will-attack-me-if-i-stay-immigrants-in-south-africa-flee-for-safety-amid-0b9a35</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-thousands-march-to-demand-illegal-migrants-leave-south-africa-d570b4</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -17329,6 +17569,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-victor-matfield-nervous-about-england-clash-as-he-raises-questions-over-rassie-6c613b</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-watch-discovery-unpacks-south-africa-s-changing-healthcare-needs-a88aa4</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -17341,7 +17587,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-what-is-behind-south-africa-s-anti-immigrant-protests-a12c99</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-06-30-what-is-behind-south-africa-s-anti-immigrant-protests-a363f2</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-06-30-what-is-behind-south-africa-s-anti-immigrant-protests-c1283b</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

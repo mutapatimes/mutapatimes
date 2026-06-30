@@ -1,0 +1,16 @@
+---
+title: "From Hunting Reserve to Wildlife Haven: Sandringham Private Game Reserve Opens a New Chapter in South Africa"
+date: 2026-06-29T18:25:00.000Z
+author: Drift Travel Magazine
+category: Tech
+image: 
+summary: "From Hunting Reserve to Wildlife Haven: Sandringham Private Game Reserve Opens a New Chapter in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOGdwWGRKTDY0VUtvb0pDWm9hSTBDZUVDT3h6X3NoQUZjWHlxdjNwRjYtaU9hMmFJdFcweWJFYjdUREd6MUxMR1FWLUgyWE5RYWQ0QkZ4NWROeEFGNXJlYS1yUEFHOGFqMWkycjZmVGtNdnVjLW9PbGlCdWdyUll3RHUtclpSdjZCU3RyVXZzakzSAZYBQVVfeXFMT3VTYUExdnhTem8waGhRREdabC16OUdQZTRkVDNQNHZYbVFEVTE2UnY0bHBXdjNyai0yUWlhSDJubWZfOURwMFMyM0NDQ18weUdQR1hncU9yMU1hWDVPYl8tdUtxRXlYWDhsczc3MjdWZUFpT1R2LVZNWWNiSDk0X19nNkhFUUxQdGd5VmRQdDB5WXpqMWV3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Drift Travel Magazine.*
+[Read original article](https://news.google.com/rss/articles/CBMikAFBVV95cUxNOGdwWGRKTDY0VUtvb0pDWm9hSTBDZUVDT3h6X3NoQUZjWHlxdjNwRjYtaU9hMmFJdFcweWJFYjdUREd6MUxMR1FWLUgyWE5RYWQ0QkZ4NWROeEFGNXJlYS1yUEFHOGFqMWkycjZmVGtNdnVjLW9PbGlCdWdyUll3RHUtclpSdjZCU3RyVXZzakzSAZYBQVVfeXFMT3VTYUExdnhTem8waGhRREdabC16OUdQZTRkVDNQNHZYbVFEVTE2UnY0bHBXdjNyai0yUWlhSDJubWZfOURwMFMyM0NDQ18weUdQR1hncU9yMU1hWDVPYl8tdUtxRXlYWDhsczc3MjdWZUFpT1R2LVZNWWNiSDk0X19nNkhFUUxQdGd5VmRQdDB5WXpqMWV3?oc=5)
