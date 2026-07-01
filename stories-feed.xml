@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2026 20:14:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 20:17:45 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -245,6 +245,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>TV Sales — Service Centre Administrator</title>
+      <link>https://mutapatimes.com/stories/d3d5b819b1b6.html</link>
+      <description>We’re Hiring VACANCY NOTICE: SERVICE CENTRE ADMINISTRATOR HARARE Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Tue, 30 Jun 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d3d5b819b1b6.html</guid>
+      <category>Jobs</category>
+      <dc:creator>TV Sales</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d3d5b819b1b6.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d3d5b819b1b6.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d3d5b819b1b6.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Mejrkh Communications &amp; Media Advisory — EXPRESSION OF INTEREST (EOI): Consultancy Services for The Design, Development, Customisation, Implementation and Support of an Integrated Financial Management and Enterprise Resource Planning (Erp) S</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/04fd3d948081.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/04fd3d948081.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/04fd3d948081.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimasco (Pvt) Limited — Security Officer</title>
-      <link>https://mutapatimes.com/stories/6905cae4c8a1.html</link>
-      <description>Zimasco (Pvt) Limited, a major player in Zimbabwe’s Ferrochrome Production, has an exciting, and challenging career opportunity at its Kwekwe Division. Applications are invited from suitably qualifie… Kwekwe · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 30 Jun 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/6905cae4c8a1.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zimasco (Pvt) Limited</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/6905cae4c8a1.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/6905cae4c8a1.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/6905cae4c8a1.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
