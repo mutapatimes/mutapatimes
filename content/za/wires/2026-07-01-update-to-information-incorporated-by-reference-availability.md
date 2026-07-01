@@ -1,0 +1,16 @@
+---
+title: "Update to information incorporated by reference: availability of the Quarterly Bulletin published by the SARB"
+date: 2026-07-01T11:05:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "Update to information incorporated by reference: availability of the Quarterly Bulletin published by the SARB"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSmE5SDdhSElSWXFTalJnc2hXbGR0LXJVWGw1ZlJpTEtubktlek5KYUtBSDhIeWlwUzJCbzZMVGVfb2RIcTREam5Hd2JBeEExZTA4MnhpOTU2XzdZMFo1UVlNVnU5RzQ3ZE1VNVhUR1lsRFM3M2NzaTdCYzk2NWlkQXQzSkQyU3lyOXNJVnAyZVVzVHpqcUV4aVRoUUVCMkkyUTltb0xyU3czc1VXS0IzUUZvMXY4Tmw3eWZfd2kybC1YT0pyRHBpOUo2S3laWFZHTXFOakdlVUdQUmo0ZnJGQg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSmE5SDdhSElSWXFTalJnc2hXbGR0LXJVWGw1ZlJpTEtubktlek5KYUtBSDhIeWlwUzJCbzZMVGVfb2RIcTREam5Hd2JBeEExZTA4MnhpOTU2XzdZMFo1UVlNVnU5RzQ3ZE1VNVhUR1lsRFM3M2NzaTdCYzk2NWlkQXQzSkQyU3lyOXNJVnAyZVVzVHpqcUV4aVRoUUVCMkkyUTltb0xyU3czc1VXS0IzUUZvMXY4Tmw3eWZfd2kybC1YT0pyRHBpOUo2S3laWFZHTXFOakdlVUdQUmo0ZnJGQg?oc=5)

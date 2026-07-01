@@ -1,0 +1,16 @@
+---
+title: "Ernst Middendorp: South Africa's Next Football Superstar Is Already Emerging"
+date: 2026-07-01T13:33:00.000Z
+author: Soccer Laduma
+category: Sport
+image: 
+summary: "Ernst Middendorp: South Africa's Next Football Superstar Is Already Emerging"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbndoMTZEay1SYTNjTURzelJZdXNfWlUyTmwwRWdTbVlESUJmMFNabDViOEs2WlZBUDM5NzZtZkd5SWpIRi1UMlROOGNmeTh5Z0RtMklPMDFoS2txd1FGUzFxVHI0MUtsOGJvbkdTa0s1VlNEUFVZT0RPU2k3NVM3SUVDLTRQbC1ESGVvX1N0MjJLaW1ON0o1bW1LdjBWQnV4aDBXN0QydE9KOHRlVWxSSmY1dDRMVGJ4WE56ZWxpXzVCdjVTUFBiTktSUjhSZEF5blVhQUM2cjQ0bFlrUlJQYUZB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Soccer Laduma.*
+[Read original article](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbndoMTZEay1SYTNjTURzelJZdXNfWlUyTmwwRWdTbVlESUJmMFNabDViOEs2WlZBUDM5NzZtZkd5SWpIRi1UMlROOGNmeTh5Z0RtMklPMDFoS2txd1FGUzFxVHI0MUtsOGJvbkdTa0s1VlNEUFVZT0RPU2k3NVM3SUVDLTRQbC1ESGVvX1N0MjJLaW1ON0o1bW1LdjBWQnV4aDBXN0QydE9KOHRlVWxSSmY1dDRMVGJ4WE56ZWxpXzVCdjVTUFBiTktSUjhSZEF5blVhQUM2cjQ0bFlrUlJQYUZB?oc=5)

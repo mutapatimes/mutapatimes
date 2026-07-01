@@ -1,0 +1,16 @@
+---
+title: "The London boarding school attended by celebrities and royals where South Africa’s billionaire family went to study"
+date: 2026-07-01T12:59:55.000Z
+author: Daily Investor
+category: Business
+image: 
+summary: "The London boarding school attended by celebrities and royals where South Africa’s billionaire family went to study"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdDlHS3VZUjMtQ0xEY2U4VldwM015VG54dWpBZmp3UkVsVlhHYTNlVEQ4ZEFqOUVvbUJwQjc0VmIySnVPMW03SWQwQ1kzVzhWSU9TTExwT25GcUdCSnhNQ3hRS0FjZFV5NmFNOGpDLTFfN2pITnhqMEtSc2p2U2JVVFZZcm9DNDVfLW9mbUFXM3VqcTZNbzZkaGhPU0h3ZzZOb3doUHZveUhVbm1OVXZhTXlMN0xSZmNSTV95enp0M0NNLXNab0V3d3g3cV9Pd2tDT253cDBNOWliYUw4MlZFSGEwbHpPMXkwV1V5VWNR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Investor.*
+[Read original article](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdDlHS3VZUjMtQ0xEY2U4VldwM015VG54dWpBZmp3UkVsVlhHYTNlVEQ4ZEFqOUVvbUJwQjc0VmIySnVPMW03SWQwQ1kzVzhWSU9TTExwT25GcUdCSnhNQ3hRS0FjZFV5NmFNOGpDLTFfN2pITnhqMEtSc2p2U2JVVFZZcm9DNDVfLW9mbUFXM3VqcTZNbzZkaGhPU0h3ZzZOb3doUHZveUhVbm1OVXZhTXlMN0xSZmNSTV95enp0M0NNLXNab0V3d3g3cV9Pd2tDT253cDBNOWliYUw4MlZFSGEwbHpPMXkwV1V5VWNR?oc=5)
