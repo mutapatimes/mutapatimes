@@ -56,10 +56,10 @@
           "currency": ""
         },
         {
-          "price": 973,
-          "airline": "FR",
-          "departure_at": "2026-12-06",
-          "return_at": "2027-01-05",
+          "price": 1122,
+          "airline": "U2",
+          "departure_at": "2026-12-19",
+          "return_at": "2027-01-11",
           "stops": 3,
           "duration": null,
           "currency": ""
@@ -74,7 +74,7 @@
           "currency": ""
         },
         {
-          "price": 765,
+          "price": 763,
           "airline": "WB",
           "departure_at": "2027-02-05",
           "return_at": "2027-02-22",
@@ -103,15 +103,6 @@
           "currency": ""
         },
         {
-          "price": 431,
-          "airline": "EI",
-          "departure_at": "2026-10-13",
-          "return_at": "",
-          "stops": 2,
-          "duration": 1585,
-          "currency": ""
-        },
-        {
           "price": 470,
           "airline": "MW",
           "departure_at": "2026-07-02",
@@ -127,6 +118,15 @@
           "return_at": "",
           "stops": 3,
           "duration": 1680,
+          "currency": ""
+        },
+        {
+          "price": 533,
+          "airline": "MS",
+          "departure_at": "2026-10-13",
+          "return_at": "",
+          "stops": 2,
+          "duration": 1880,
           "currency": ""
         }
       ],
@@ -146,7 +146,7 @@
         {
           "endpoint": "calendar",
           "origin": "LON",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -170,7 +170,7 @@
         {
           "endpoint": "calendar",
           "origin": "LHR",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -270,15 +270,6 @@
           "currency": ""
         },
         {
-          "price": 3281,
-          "airline": "ON",
-          "departure_at": "2026-07-08",
-          "return_at": "",
-          "stops": 1,
-          "duration": 790,
-          "currency": ""
-        },
-        {
           "price": 3524,
           "airline": "GE",
           "departure_at": "2026-07-31",
@@ -301,13 +292,13 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 9,
+          "n": 7,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -323,7 +314,7 @@
           "error": null
         }
       ],
-      "observations": 11
+      "observations": 8
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -392,7 +383,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 12,
+          "n": 13,
           "error": null
         },
         {
@@ -414,7 +405,7 @@
           "error": null
         }
       ],
-      "observations": 15
+      "observations": 16
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -499,7 +490,7 @@
           "currency": ""
         },
         {
-          "price": 1983,
+          "price": 1984,
           "airline": "WB",
           "departure_at": "2026-09-20",
           "return_at": "2026-10-02",
@@ -537,7 +528,7 @@
           "currency": ""
         },
         {
-          "price": 1983,
+          "price": 1984,
           "airline": "WB",
           "departure_at": "2026-09-20",
           "return_at": "2026-10-02",
