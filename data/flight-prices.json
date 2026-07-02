@@ -350,9 +350,9 @@
           "currency": ""
         },
         {
-          "price": 1557,
+          "price": 1462,
           "airline": "FA",
-          "departure_at": "2026-08-27",
+          "departure_at": "2026-08-03",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -376,6 +376,15 @@
           "return_at": "",
           "stops": 0,
           "duration": 110,
+          "currency": ""
+        },
+        {
+          "price": 3230,
+          "airline": "Kiwi.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 220,
           "currency": ""
         }
       ],
@@ -401,11 +410,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 18
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -470,7 +479,7 @@
       "currency": "AED",
       "currency_sym": "AED",
       "cheapest_overall": {
-        "price": 725,
+        "price": 744,
         "airline": "UR",
         "departure_at": "2027-04-01",
         "return_at": "",
@@ -481,12 +490,21 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1468,
-          "airline": "FZ",
-          "departure_at": "2026-07-15",
+          "price": 1240,
+          "airline": "KQ",
+          "departure_at": "2026-07-14",
           "return_at": "",
           "stops": 1,
-          "duration": 740,
+          "duration": 1820,
+          "currency": ""
+        },
+        {
+          "price": 1240,
+          "airline": "KQ",
+          "departure_at": "2026-08-19",
+          "return_at": "",
+          "stops": 1,
+          "duration": 730,
           "currency": ""
         },
         {
@@ -499,18 +517,36 @@
           "currency": ""
         },
         {
-          "price": 725,
+          "price": 1262,
+          "airline": "KQ",
+          "departure_at": "2026-11-13",
+          "return_at": "",
+          "stops": 1,
+          "duration": 650,
+          "currency": ""
+        },
+        {
+          "price": 744,
           "airline": "UR",
           "departure_at": "2027-04-01",
           "return_at": "",
           "stops": 1,
           "duration": 690,
+          "currency": ""
+        },
+        {
+          "price": 1262,
+          "airline": "KQ",
+          "departure_at": "2027-05-26",
+          "return_at": "",
+          "stops": 1,
+          "duration": 730,
           "currency": ""
         }
       ],
       "by_airline": [
         {
-          "price": 725,
+          "price": 744,
           "airline": "UR",
           "departure_at": "2027-04-01",
           "return_at": "",
@@ -519,28 +555,28 @@
           "currency": ""
         },
         {
-          "price": 1468,
-          "airline": "FZ",
-          "departure_at": "2026-07-15",
+          "price": 1240,
+          "airline": "KQ",
+          "departure_at": "2026-07-14",
           "return_at": "",
           "stops": 1,
-          "duration": 740,
+          "duration": 1820,
           "currency": ""
         },
         {
-          "price": 1806,
-          "airline": "ET",
-          "departure_at": "2026-07-05",
-          "return_at": "",
-          "stops": 1,
-          "duration": 620,
-          "currency": ""
-        },
-        {
-          "price": 1984,
+          "price": 1277,
           "airline": "WB",
-          "departure_at": "2026-09-20",
-          "return_at": "2026-10-02",
+          "departure_at": "2026-08-04",
+          "return_at": "",
+          "stops": 1,
+          "duration": 980,
+          "currency": ""
+        },
+        {
+          "price": 2885,
+          "airline": "FZ",
+          "departure_at": "2026-07-04",
+          "return_at": "2026-07-25",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -550,7 +586,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 6,
+          "n": 8,
           "error": null
         },
         {
@@ -572,7 +608,7 @@
           "error": null
         }
       ],
-      "observations": 8
+      "observations": 10
     },
     "toronto-to-harare": {
       "origin": "YYZ",
