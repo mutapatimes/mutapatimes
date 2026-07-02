@@ -1,7 +1,111 @@
 {
-  "fetched_at": "2026-07-02T11:30:39+00:00",
+  "fetched_at": "2026-07-02T13:48:08+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Launches Landmark Public Procurement Reform Roadmap",
+      "link": "https://mutapatimes.com/articles/2026-07-02-zimbabwe-launches-landmark-public-procurement-reform-roadmap",
+      "image": "https://mutapatimes.com/img/cards/news/4563d858e42a.png",
+      "pubDate": "2026-07-02T11:26:15+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Vic Falls heritage project empowers communities",
+      "link": "https://mutapatimes.com/articles/2026-07-02-vic-falls-heritage-project-empowers-communities",
+      "image": "https://mutapatimes.com/img/cards/news/303975eaace1.png",
+      "pubDate": "2026-07-02T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Harare, Abuja deepen mining ties",
+      "link": "https://mutapatimes.com/articles/2026-07-02-harare-abuja-deepen-mining-ties",
+      "image": "https://mutapatimes.com/img/cards/news/a3803fd4f948.png",
+      "pubDate": "2026-07-02T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Econet begins work on 100MW plant",
+      "link": "https://mutapatimes.com/articles/2026-07-01-econet-begins-work-on-100mw-plant",
+      "image": "https://mutapatimes.com/img/cards/news/1ba77efca597.png",
+      "pubDate": "2026-07-01T23:59:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Liquid secures elite Microsoft AI status",
+      "link": "https://mutapatimes.com/articles/2026-07-01-liquid-secures-elite-microsoft-ai-status",
+      "image": "https://mutapatimes.com/img/cards/news/012047eab07b.png",
+      "pubDate": "2026-07-01T23:59:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe tops Africa in medicine regulation",
+      "link": "https://mutapatimes.com/articles/2026-07-01-zimbabwe-tops-africa-in-medicine-regulation",
+      "image": "https://mutapatimes.com/img/cards/news/99f17ce8b4fb.png",
+      "pubDate": "2026-07-01T23:59:00+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Is Zimbabwe’s economy finally turning a corner? Experts weigh in",
+      "link": "https://mutapatimes.com/news/2026-07-01-is-zimbabwe-s-economy-finally-turning-a-corner-experts-weigh-in-2e82c2",
+      "image": "https://mutapatimes.com/img/cards/news/fb357211981b.png",
+      "pubDate": "2026-07-01T23:20:31+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Cross-border bus fares spike as Zimbabweans head home",
+      "link": "https://mutapatimes.com/articles/2026-07-01-cross-border-bus-fares-spike-as-zimbabweans-head-home",
+      "image": "https://mutapatimes.com/img/cards/news/a714ee65c687.png",
+      "pubDate": "2026-07-01T23:08:37+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Cross-border bus fares spike as Zimbabweans head home",
+      "link": "https://mutapatimes.com/news/2026-07-01-cross-border-bus-fares-spike-as-zimbabweans-head-home-f09a22",
+      "image": "https://mutapatimes.com/img/cards/news/1755a39e4322.png",
+      "pubDate": "2026-07-01T23:08:37+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Worsening public debt takes centre stage at AU dialogue in Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-07-01-worsening-public-debt-takes-centre-stage-at-au-dialogue-in-zimbabwe-a61547",
+      "image": "https://mutapatimes.com/img/cards/news/e959fe4105b3.png",
+      "pubDate": "2026-07-01T23:02:33+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mukuru cashier jailed nine years after diverting US$15,000 to fund Gokwe business",
+      "link": "https://mutapatimes.com/news/2026-07-01-mukuru-cashier-jailed-nine-years-after-diverting-us-15-000-to-fund-gokwe-2c21b7",
+      "image": "https://mutapatimes.com/img/cards/news/93fd27f5c493.png",
+      "pubDate": "2026-07-01T23:02:14+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Yvonne Manwa bounces back as ZIFA CEO",
+      "link": "https://mutapatimes.com/articles/2026-07-01-yvonne-manwa-bounces-back-as-zifa-ceo",
+      "image": "https://mutapatimes.com/img/cards/news/a2ce04c30ea3.png",
+      "pubDate": "2026-07-01T23:00:31+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Yvonne Manwa bounces back as ZIFA CEO",
+      "link": "https://mutapatimes.com/news/2026-07-01-yvonne-manwa-bounces-back-as-zifa-ceo-110645",
+      "image": "https://mutapatimes.com/img/cards/news/fa7a6a51d9f9.png",
+      "pubDate": "2026-07-01T23:00:31+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim import dependency 2025 Q4: trailing-4Q goods imports are 13.0% of GDP.",
@@ -375,110 +479,6 @@
       "title": "SME Loan Officer",
       "link": "https://vacancymail.co.zw/jobs/sme-loan-officer-68044/",
       "image": "https://mutapatimes.com/img/cards/jobs/c0cc3bb5f4cd.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Safety Health and Environmental Officer",
-      "link": "https://vacancymail.co.zw/jobs/safety-health-and-environmental-officer-68043/",
-      "image": "https://mutapatimes.com/img/cards/jobs/08ef49d8133d.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Council of Social Workers Zimbabwe — Assistant Administrator",
-      "link": "https://vacancymail.co.zw/jobs/assistant-administrator-68042/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0d82500a0b6d.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gweru City Council — Municipal Police Guards x 70",
-      "link": "https://vacancymail.co.zw/jobs/municipal-police-guards-x-70-68041/",
-      "image": "https://mutapatimes.com/img/cards/jobs/01e5e7ecc827.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Technical Project Coordinator (TPC)",
-      "link": "https://vacancymail.co.zw/jobs/technical-project-coordinator-tpc-68040/",
-      "image": "https://mutapatimes.com/img/cards/jobs/028a6b109763.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Director Finance and Administration",
-      "link": "https://vacancymail.co.zw/jobs/director-finance-and-administration-68039/",
-      "image": "https://mutapatimes.com/img/cards/jobs/04fd3d948081.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Security Officer",
-      "link": "https://vacancymail.co.zw/jobs/security-officer-68038/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6905cae4c8a1.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimpost Pvt Ltd — Procurement Manager",
-      "link": "https://vacancymail.co.zw/jobs/procurement-manager-68037/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5d4a0575388e.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimpost Pvt Ltd — Transport Manager",
-      "link": "https://vacancymail.co.zw/jobs/transport-manager-68036/",
-      "image": "https://mutapatimes.com/img/cards/jobs/58aee04d903a.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "City of Harare — Head – Dental Services (1 Position)",
-      "link": "https://vacancymail.co.zw/jobs/head-dental-services-1-position-68035/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0378ed1175ee.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "City of Harare — Dispensary Assistants (14 Positions)",
-      "link": "https://vacancymail.co.zw/jobs/dispensary-assistants-14-positions-68034/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fd2f80ebaf31.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-68028/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0d319431705e.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing and Admin Assistance",
-      "link": "https://vacancymail.co.zw/jobs/marketing-and-admin-assistance-68027/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b688f1fdc82c.png",
-      "pubDate": "2026-07-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-68026/",
-      "image": "https://mutapatimes.com/img/cards/jobs/20fc5c612520.png",
       "pubDate": "2026-07-01T22:00:00+00:00",
       "category": "Jobs"
     }
