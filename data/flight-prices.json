@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-02",
+  "fetched_at": "2026-07-03",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -134,7 +134,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 7,
+          "n": 8,
           "error": null
         },
         {
@@ -277,22 +277,13 @@
           "stops": 1,
           "duration": 680,
           "currency": ""
-        },
-        {
-          "price": 3648,
-          "airline": "4Z",
-          "departure_at": "2026-07-03",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1060,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -314,7 +305,7 @@
           "error": null
         }
       ],
-      "observations": 8
+      "observations": 7
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -350,7 +341,7 @@
           "currency": ""
         },
         {
-          "price": 1462,
+          "price": 1461,
           "airline": "FA",
           "departure_at": "2026-08-03",
           "return_at": "",
@@ -379,7 +370,7 @@
           "currency": ""
         },
         {
-          "price": 3230,
+          "price": 3285,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
