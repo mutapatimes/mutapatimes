@@ -1,0 +1,16 @@
+---
+title: "*TRUSTCO GROUP HOLDINGS LIMITED – Indicative Timeline to Complete Outstanding Namibian and South African Audits on Subsidiary Level"
+date: 2026-07-02T11:31:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "*TRUSTCO GROUP HOLDINGS LIMITED – Indicative Timeline to Complete Outstanding Namibian and South African Audits on Subsidiary Level"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMTQyLVY3Y1Q1RTMxY3lTQkFTUkFvUmhaSU5iekxmMllSQi1BbkszNUNrbktna1FhdVVHWHZJZWFVVGJTY0h4RkdnMkVKNkw5Z2RjbDhTRFdTRjJHRURJN2s1ZEFkUlhHZV90Znc3akJuVzZnTVpWM3cwV1M1bXVyUF95b0ZvYlBTVURKTUhUYXJpY0F4b1dVbGtjaTlPUnd2Y0g4UDRLZEtGeEZmQUFoenFlZ1pBVGVDYkotamJlUHRyRmg1ay1sNHg3UTFETkhtclYzWXBnRk1mNkwwbEZlV180SDFFN2RHSWxMRkdBaWFHZDN3NmFNRA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMTQyLVY3Y1Q1RTMxY3lTQkFTUkFvUmhaSU5iekxmMllSQi1BbkszNUNrbktna1FhdVVHWHZJZWFVVGJTY0h4RkdnMkVKNkw5Z2RjbDhTRFdTRjJHRURJN2s1ZEFkUlhHZV90Znc3akJuVzZnTVpWM3cwV1M1bXVyUF95b0ZvYlBTVURKTUhUYXJpY0F4b1dVbGtjaTlPUnd2Y0g4UDRLZEtGeEZmQUFoenFlZ1pBVGVDYkotamJlUHRyRmg1ay1sNHg3UTFETkhtclYzWXBnRk1mNkwwbEZlV180SDFFN2RHSWxMRkdBaWFHZDN3NmFNRA?oc=5)

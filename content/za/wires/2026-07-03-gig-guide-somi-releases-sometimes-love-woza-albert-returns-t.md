@@ -1,0 +1,16 @@
+---
+title: "Gig Guide: Somi releases Sometimes Love, Woza Albert! returns to The Market Theatre, Lady Zamar returns with First Class and Mandisi Dyantyis brings Symphony to Montecasino"
+date: 2026-07-03T03:09:50.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Gig Guide: Somi releases Sometimes Love, Woza Albert! returns to The Market Theatre, Lady Zamar returns with First Class and Mandisi Dyantyis brings Symphony to Montecasino"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxQUmtWXzRaYkdqcklFanp5VkJLQTVzZU85WEU4aUpXS0FsaUhvWEVaWmlibmNWRFJHVEhCYTdvcDZWTE1oV1h1Sy1WRDlUeW9oYmwya0gteDRPbzFZRDJnbEliRjFreDBxRnFKeTc0SDBaY09FY1diaUdZYUU2VlBIcHNPVTZMd1ByOXJPSWZYQTFBc1UzU2NCR0hLMkNIZ3pUNnFLQ3RiRVR2M2xpYWUxUGNfbTZjcWhUQTNXUkpYVm1ZQjdya09KTlpxeXQ0YTBCb1l3WEFEYTRZZ09EVDB1eU9hN0oydTdZVDNmYU9ZbTZPeWJOdW5BbGdCOWsxRE0tWEFwMnozVlhmWjNCRkN2eW1jWVhXeF9QQlBGN2NCV1hfYzI0d3BGdHpZZVI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxQUmtWXzRaYkdqcklFanp5VkJLQTVzZU85WEU4aUpXS0FsaUhvWEVaWmlibmNWRFJHVEhCYTdvcDZWTE1oV1h1Sy1WRDlUeW9oYmwya0gteDRPbzFZRDJnbEliRjFreDBxRnFKeTc0SDBaY09FY1diaUdZYUU2VlBIcHNPVTZMd1ByOXJPSWZYQTFBc1UzU2NCR0hLMkNIZ3pUNnFLQ3RiRVR2M2xpYWUxUGNfbTZjcWhUQTNXUkpYVm1ZQjdya09KTlpxeXQ0YTBCb1l3WEFEYTRZZ09EVDB1eU9hN0oydTdZVDNmYU9ZbTZPeWJOdW5BbGdCOWsxRE0tWEFwMnozVlhmWjNCRkN2eW1jWVhXeF9QQlBGN2NCV1hfYzI0d3BGdHpZZVI?oc=5)
