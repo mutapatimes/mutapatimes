@@ -1,0 +1,16 @@
+---
+title: "Move to shut biscuit factory after raid finds nine foreigners allegedly working illegally"
+date: 2026-07-03T10:13:19.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Move to shut biscuit factory after raid finds nine foreigners allegedly working illegally"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUXQ3RmE2YVpNbTJPTmswdjN2LXBZeFJlVUVJaE5TUVdEcTE1QXRaSFlhSnNJVE55V0x2bjRlNmRFU0hYT05ucGhZSTlhck50SXI5TnBBU0xVODFwUVFOQUJFQ1VxZXQ4RjN0S0h6RFluaXFhcnY1Qi1YYmFmZG9zcEZQVno3dEdyX2ZIVnU0NGwxMUlOTVhOWWwxTkR4WExDeHZvOWNpenJZUWc0dkVNbHl3anc4alM3QXI0MDZoakZveEN3b29RRTFBdHJHOGhKSTUwcDJpQXQ0RkVlVGtlaA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUXQ3RmE2YVpNbTJPTmswdjN2LXBZeFJlVUVJaE5TUVdEcTE1QXRaSFlhSnNJVE55V0x2bjRlNmRFU0hYT05ucGhZSTlhck50SXI5TnBBU0xVODFwUVFOQUJFQ1VxZXQ4RjN0S0h6RFluaXFhcnY1Qi1YYmFmZG9zcEZQVno3dEdyX2ZIVnU0NGwxMUlOTVhOWWwxTkR4WExDeHZvOWNpenJZUWc0dkVNbHl3anc4alM3QXI0MDZoakZveEN3b29RRTFBdHJHOGhKSTUwcDJpQXQ0RkVlVGtlaA?oc=5)
