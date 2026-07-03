@@ -1,7 +1,63 @@
 {
-  "fetched_at": "2026-07-03T06:26:56+00:00",
+  "fetched_at": "2026-07-03T11:29:02+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Lab Sees Regional Gold Hunt Accelerate as Prices Soar",
+      "link": "https://mutapatimes.com/articles/2026-07-03-zimbabwe-lab-sees-regional-gold-hunt-accelerate-as-prices-so",
+      "image": "https://mutapatimes.com/img/cards/news/717488a46e28.png",
+      "pubDate": "2026-07-03T09:45:07+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Over 35,000 migrants processed through Beitbridge, says South Africa’s BMA",
+      "link": "https://mutapatimes.com/articles/2026-07-02-over-35000-migrants-processed-through-beitbridge-says-south",
+      "image": "https://mutapatimes.com/img/cards/news/cef5380003b4.png",
+      "pubDate": "2026-07-02T23:05:33+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Over 35,000 migrants processed through Beitbridge, says South Africa’s BMA",
+      "link": "https://mutapatimes.com/news/2026-07-02-over-35-000-migrants-processed-through-beitbridge-says-south-africa-s-bma-5ba52a",
+      "image": "https://mutapatimes.com/img/cards/news/02bec03521d6.png",
+      "pubDate": "2026-07-02T23:05:33+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Police officer’s disciplinary conviction quashed after High Court finds trial was unfair",
+      "link": "https://mutapatimes.com/news/2026-07-02-police-officer-s-disciplinary-conviction-quashed-after-high-court-finds-trial-f03477",
+      "image": "https://mutapatimes.com/img/cards/news/8e5f92f50a39.png",
+      "pubDate": "2026-07-02T23:00:28+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Social media takes a jibe at anti-immigrant protesters as three Zimbabweans join Ramaphosa at Joburg AI Summit",
+      "link": "https://mutapatimes.com/news/2026-07-02-social-media-takes-a-jibe-at-anti-immigrant-protesters-as-three-zimbabweans-367962",
+      "image": "https://mutapatimes.com/img/cards/news/ac6c96806cdd.png",
+      "pubDate": "2026-07-02T23:00:13+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Tsambe girl rockets to global space stage",
+      "link": "https://mutapatimes.com/articles/2026-07-02-tsambe-girl-rockets-to-global-space-stage",
+      "image": "https://mutapatimes.com/img/cards/news/09fbf6c04b1f.png",
+      "pubDate": "2026-07-02T22:13:20+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Education black market exposed",
+      "link": "https://mutapatimes.com/articles/2026-07-02-education-black-market-exposed",
+      "image": "https://mutapatimes.com/img/cards/news/3a6edfa4a27f.png",
+      "pubDate": "2026-07-02T22:11:06+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim real estate sector: $469M in 2025 Q4, +2.4% YoY.",
@@ -20,7 +76,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 3 Jul: Harare overcast · high 22° / low 11°",
+      "title": "Zim weather 3 Jul: Harare overcast · high 24° / low 11°",
       "link": "https://mutapatimes.com/weather?d=2026-07-03",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-03",
       "pubDate": "2026-07-02T22:00:00+00:00",
@@ -57,6 +113,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-02T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Mechatronics Technician",
+      "link": "https://vacancymail.co.zw/jobs/mechatronics-technician-68112/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2da4b681e7a8.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Chief Technician (1 Post): DEPARTMENT OF BIOINFORMATICS AND BIOMEDICAL ENGINEERING SCIENCES",
+      "link": "https://vacancymail.co.zw/jobs/chief-technician-1-post-department-of-bioinformatics-and-biomedical-engineering-sciences-68111/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2fc1c355e290.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Senior Technician (1 Post): DEPARTMENT OF BIOMEDICAL SCIENCES (ANATOMY UNIT)",
+      "link": "https://vacancymail.co.zw/jobs/senior-technician-1-post-department-of-biomedical-sciences-anatomy-unit-68110/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8f6416a0c866.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mine Manager",
+      "link": "https://vacancymail.co.zw/jobs/mine-manager-68109/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6774c509c0a6.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/receptionist-68108/",
+      "image": "https://mutapatimes.com/img/cards/jobs/09f458449d66.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Assistant Harvesting Manager x1",
+      "link": "https://vacancymail.co.zw/jobs/assistant-harvesting-manager-x1-68107/",
+      "image": "https://mutapatimes.com/img/cards/jobs/aa1f401ad4c0.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Chief Medical Laboratory Technician",
+      "link": "https://vacancymail.co.zw/jobs/chief-medical-laboratory-technician-68106/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c498e6a915aa.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Chief Technician: Department of Electrical and Electronic Engineering",
+      "link": "https://vacancymail.co.zw/jobs/chief-technician-department-of-electrical-and-electronic-engineering-68105/",
+      "image": "https://mutapatimes.com/img/cards/jobs/464db5fe3639.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "PRAZ - Procurement Regulatory Authority of Zimbabwe — RECRUITMENT - INTERNS",
+      "link": "https://vacancymail.co.zw/jobs/recruitment-interns-68104/",
+      "image": "https://mutapatimes.com/img/cards/jobs/46efa032027d.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Leonard Cheshire Disability Zimbabwe — Sida CSO Co Power Southern African Food and Economic Empowerment Programme (SAFEE) Terms of References– Supplementary Baseline July 2026",
+      "link": "https://vacancymail.co.zw/jobs/sida-cso-co-power-southern-african-food-and-economic-empowerment-programme-safee-terms-of-references-supplementary-baseline-july-2026-68103/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c6e9f2f04f3b.png",
+      "pubDate": "2026-07-02T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -343,142 +479,6 @@
       "title": "World Vision — INVITATION TO TENDER TENDER FOR CONSULTANCY FOR QUALITATIVE VALADATION OF BASELINE SURVEY FINDINGS",
       "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-tender-for-consultancy-for-qualitative-valadation-of-baseline-survey-findings-68062/",
       "image": "https://mutapatimes.com/img/cards/jobs/f464e78fa89f.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ixar Mobile ~~ 0 — German Language Teacher (A1–B2)",
-      "link": "https://vacancymail.co.zw/jobs/german-language-teacher-a1b2-68061/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4d7e02152d5e.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/receptionist-68060/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dd4c8b530bb4.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zambuko Trust (Pvt) Ltd — Internal Audit Attachee",
-      "link": "https://vacancymail.co.zw/jobs/internal-audit-attachee-68059/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a2453a024812.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zambuko Trust (Pvt) Ltd — Accounts Attachee",
-      "link": "https://vacancymail.co.zw/jobs/accounts-attachee-68058/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7d91a8e9ee1a.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zambuko Trust (Pvt) Ltd — Marketing Attachee",
-      "link": "https://vacancymail.co.zw/jobs/marketing-attachee-68057/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3200f3e57dd3.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zambuko Trust (Pvt) Ltd — Business Development Officer",
-      "link": "https://vacancymail.co.zw/jobs/business-development-officer-68056/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cb1382e33af6.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sakubva Industrial Hub — Attachment Training July 2026 Intake",
-      "link": "https://vacancymail.co.zw/jobs/attachment-training-july-2026-intake-68055/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2dd973987ec4.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dalkeith Engineering — SHEQ DEPARTMENT STUDENT ON ATTACHMENT",
-      "link": "https://vacancymail.co.zw/jobs/sheq-department-student-on-attachment-68054/",
-      "image": "https://mutapatimes.com/img/cards/jobs/85f763193fc2.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dalkeith Engineering — SHEQ GRADUATE TRAINEE",
-      "link": "https://vacancymail.co.zw/jobs/sheq-graduate-trainee-68053/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0855be6587bc.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Timely Toolbox — ACCOUNTS GRADUATE TRAINEE",
-      "link": "https://vacancymail.co.zw/jobs/accounts-graduate-trainee-68050/",
-      "image": "https://mutapatimes.com/img/cards/jobs/53c9a941f187.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — Assistant Production Supervisor food manufacturing BULAWAYO BASED",
-      "link": "https://vacancymail.co.zw/jobs/assistant-production-supervisor-food-manufacturing-bulawayo-based-68049/",
-      "image": "https://mutapatimes.com/img/cards/jobs/154646680f48.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk – Medical Insurance",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-medical-insurance-68048/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0bf50c1f1b5c.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Women's Coalition of Zimbabwe — Sub-Grants Officer: Women’s Coalition of Zimbabwe",
-      "link": "https://vacancymail.co.zw/jobs/sub-grants-officer-womens-coalition-of-zimbabwe-68047/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c831ccc49fed.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing Officer : PearlMart Distribution",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-pearlmart-distribution-68046/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1fa748e93811.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TIMB — INTERNS (STUDENTS ON ATTACHMENT)",
-      "link": "https://vacancymail.co.zw/jobs/interns-students-on-attachment-68045/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f1403bbaf0f0.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "SME Loan Officer",
-      "link": "https://vacancymail.co.zw/jobs/sme-loan-officer-68044/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c0cc3bb5f4cd.png",
-      "pubDate": "2026-07-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Safety Health and Environmental Officer",
-      "link": "https://vacancymail.co.zw/jobs/safety-health-and-environmental-officer-68043/",
-      "image": "https://mutapatimes.com/img/cards/jobs/08ef49d8133d.png",
       "pubDate": "2026-07-02T22:00:00+00:00",
       "category": "Jobs"
     }
