@@ -1,0 +1,16 @@
+---
+title: "Three South Africans woke up R45.7m richer!"
+date: 2026-07-03T15:12:31.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Three South Africans woke up R45.7m richer!"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxNS0RoZDJhRzd3cTlYMDlLSFdjVFVGbzNEM2cwdGg4VEFOUVlwa0QtT1ZhQmdaY2ZMT1JVd2tJOWVxMlpSNERwcTJGa05acFgxb2h2MjdQWUdfMlpLaG4xajVvR1daVWV3VFBnMkNzRmpleWNpX21CQ3BUeU5NRk1fQUN3dEhrZEpCWWRxWXV0TXdRYnU3U0RMMjc4N0x2U2UtTXhpcTJ5TkZTdGJmVVpUd0FoclpyLTRXc0gxUXVUU3JwcEhfQWxVQ1F6TTBmTWhiR3hxdFJOc3F0cTBVbmlzZVdPd2VEajE3LXVPZFE0Z2pNQ2JPOW9DSUhrdGY2YnRf?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxNS0RoZDJhRzd3cTlYMDlLSFdjVFVGbzNEM2cwdGg4VEFOUVlwa0QtT1ZhQmdaY2ZMT1JVd2tJOWVxMlpSNERwcTJGa05acFgxb2h2MjdQWUdfMlpLaG4xajVvR1daVWV3VFBnMkNzRmpleWNpX21CQ3BUeU5NRk1fQUN3dEhrZEpCWWRxWXV0TXdRYnU3U0RMMjc4N0x2U2UtTXhpcTJ5TkZTdGJmVVpUd0FoclpyLTRXc0gxUXVUU3JwcEhfQWxVQ1F6TTBmTWhiR3hxdFJOc3F0cTBVbmlzZVdPd2VEajE3LXVPZFE0Z2pNQ2JPOW9DSUhrdGY2YnRf?oc=5)
