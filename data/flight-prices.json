@@ -268,22 +268,13 @@
           "stops": 1,
           "duration": 805,
           "currency": ""
-        },
-        {
-          "price": 3524,
-          "airline": "GE",
-          "departure_at": "2026-07-31",
-          "return_at": "",
-          "stops": 1,
-          "duration": 680,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 6,
+          "n": 5,
           "error": null
         },
         {
@@ -305,7 +296,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 6
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -370,7 +361,7 @@
           "currency": ""
         },
         {
-          "price": 3285,
+          "price": 3259,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
