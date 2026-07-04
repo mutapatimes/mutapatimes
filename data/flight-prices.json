@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03",
+  "fetched_at": "2026-07-04",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -121,12 +121,12 @@
           "currency": ""
         },
         {
-          "price": 553,
-          "airline": "J9",
-          "departure_at": "2026-07-27",
+          "price": 573,
+          "airline": "EI",
+          "departure_at": "2026-08-03",
           "return_at": "",
           "stops": 3,
-          "duration": 2600,
+          "duration": 2630,
           "currency": ""
         }
       ],
@@ -134,7 +134,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -158,7 +158,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 28
+      "observations": 26
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -274,7 +274,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -296,7 +296,7 @@
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 5
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -361,7 +361,7 @@
           "currency": ""
         },
         {
-          "price": 3259,
+          "price": 3241,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -374,7 +374,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 14,
+          "n": 13,
           "error": null
         },
         {
@@ -396,7 +396,7 @@
           "error": null
         }
       ],
-      "observations": 18
+      "observations": 17
     },
     "new-york-to-harare": {
       "origin": "NYC",
