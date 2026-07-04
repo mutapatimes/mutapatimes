@@ -1,7 +1,55 @@
 {
-  "fetched_at": "2026-07-04T06:15:32+00:00",
+  "fetched_at": "2026-07-04T10:52:04+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s vivid English first names carry family histories, from Privilege to Shame",
+      "link": "https://mutapatimes.com/news/2026-07-04-zimbabwe-s-vivid-english-first-names-carry-family-histories-from-privilege-to-358866",
+      "image": "https://mutapatimes.com/img/cards/news/dbbf7fa33ae4.png",
+      "pubDate": "2026-07-04T05:30:00+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Former Bosso hitman signs for Hardrock FC",
+      "link": "https://mutapatimes.com/articles/2026-07-03-former-bosso-hitman-signs-for-hardrock-fc",
+      "image": "https://mutapatimes.com/img/cards/news/d4fcee58b0bb.png",
+      "pubDate": "2026-07-03T22:50:01+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Former Bosso hitman signs for Hardrock FC",
+      "link": "https://mutapatimes.com/news/2026-07-03-former-bosso-hitman-signs-for-hardrock-fc-281d50",
+      "image": "https://mutapatimes.com/img/cards/news/a7a307014c5b.png",
+      "pubDate": "2026-07-03T22:50:01+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Maj-Gen Dzihwema declared national hero",
+      "link": "https://mutapatimes.com/articles/2026-07-03-maj-gen-dzihwema-declared-national-hero",
+      "image": "https://mutapatimes.com/img/cards/news/67ca3547b944.png",
+      "pubDate": "2026-07-03T22:13:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Botswana keen on joint investments with Zim",
+      "link": "https://mutapatimes.com/articles/2026-07-03-botswana-keen-on-joint-investments-with-zim",
+      "image": "https://mutapatimes.com/img/cards/news/e1b9cd6d9e44.png",
+      "pubDate": "2026-07-03T22:12:19+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "New BAZ chief targets industry expansion",
+      "link": "https://mutapatimes.com/articles/2026-07-03-new-baz-chief-targets-industry-expansion",
+      "image": "https://mutapatimes.com/img/cards/news/b88646257d01.png",
+      "pubDate": "2026-07-03T22:08:30+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim health & social work sector: $385M in 2025 Q4, 2.0% of GDP.",
@@ -20,7 +68,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 4 Jul: Harare overcast · high 24° / low 11°",
+      "title": "Zim weather 4 Jul: Harare overcast · high 22° / low 12°",
       "link": "https://mutapatimes.com/weather?d=2026-07-04",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-04",
       "pubDate": "2026-07-03T22:00:00+00:00",
@@ -57,6 +105,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-03T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Maranatha Christian Schools — Design and Technology Teacher",
+      "link": "https://vacancymail.co.zw/jobs/design-and-technology-teacher-68127/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a4841cd5721d.png",
+      "pubDate": "2026-07-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Internal Auditor",
+      "link": "https://vacancymail.co.zw/jobs/internal-auditor-68126/",
+      "image": "https://mutapatimes.com/img/cards/jobs/69622d96c534.png",
+      "pubDate": "2026-07-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Timely Toolbox — CUSTOMER EXPERIENCE COORDINATOR",
+      "link": "https://vacancymail.co.zw/jobs/customer-experience-coordinator-68125/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2915bb273ad6.png",
+      "pubDate": "2026-07-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Spoton Towing & Recovery — Windscreens Shop Attendant",
+      "link": "https://vacancymail.co.zw/jobs/windscreens-shop-attendant-68124/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5913a77b7638.png",
+      "pubDate": "2026-07-03T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -399,86 +479,6 @@
       "title": "Peterhouse Girls' School — TEACHER OF ENGLISH LANGUAGE AND ENGLISH LITERATURE AT PETERHOUSE GIRLS",
       "link": "https://vacancymail.co.zw/jobs/teacher-of-english-language-and-english-literature-at-peterhouse-girls-68076/",
       "image": "https://mutapatimes.com/img/cards/jobs/9d5985ab39fa.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — Assistant Graphic Designer (Cake Fairy Bulawayo)",
-      "link": "https://vacancymail.co.zw/jobs/assistant-graphic-designer-cake-fairy-bulawayo-68075/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ff7a2e7910d9.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Senior Bookkeeper: Rujeko Secondary School",
-      "link": "https://vacancymail.co.zw/jobs/senior-bookkeeper-rujeko-secondary-school-68074/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ebfdf9285259.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Leonard Cheshire Disability Zimbabwe — Sida CSO Co Power Southern African Food and Economic Empowerment Programme (SAFEE) Terms of References– Supplementary Baseline",
-      "link": "https://vacancymail.co.zw/jobs/sida-cso-co-power-southern-african-food-and-economic-empowerment-programme-safee-terms-of-references-supplementary-baseline-68073/",
-      "image": "https://mutapatimes.com/img/cards/jobs/22f3df70cea3.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Elyon Lubricants (Pvt) Ltd — Accountant – Elyon Lubricants",
-      "link": "https://vacancymail.co.zw/jobs/accountant-elyon-lubricants-68072/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7aef4e2ac1f0.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "High Performance Lubes — Sales& Marketing Intern",
-      "link": "https://vacancymail.co.zw/jobs/sales-marketing-intern-68071/",
-      "image": "https://mutapatimes.com/img/cards/jobs/afb329598c77.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nestlé — Applications Group Manager",
-      "link": "https://vacancymail.co.zw/jobs/applications-group-manager-68070/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5346a0d69b4c.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nestlé — Tele-Medical Delegate",
-      "link": "https://vacancymail.co.zw/jobs/tele-medical-delegate-68069/",
-      "image": "https://mutapatimes.com/img/cards/jobs/19f00d7bac62.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Marketing Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-representative-68068/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03202f4df068.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gransharp Enterprises (Pvt) Ltd — Human Resources Intern",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-intern-68067/",
-      "image": "https://mutapatimes.com/img/cards/jobs/921be963d6b8.png",
-      "pubDate": "2026-07-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bookkeeping & Accounting Specialist",
-      "link": "https://vacancymail.co.zw/jobs/bookkeeping-accounting-specialist-68066/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e2b1d1382be4.png",
       "pubDate": "2026-07-03T22:00:00+00:00",
       "category": "Jobs"
     }
