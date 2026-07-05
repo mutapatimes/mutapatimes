@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Jul 2026 19:46:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 21:57:32 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Veteran Journalist Mkhululi Sibanda Dies</title>
+      <link>https://mutapatimes.com/stories/46b5f3a360da.html</link>
+      <description>By A Correspondent | Zimbabwe’s journalism fraternity is mourning the death of veteran journalist and editor Mkhululi Sibanda, who passed away yesterday... Continue reading "Veteran Journalist Mkhululi Sibanda Dies" via Zimbabwe News #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Sun, 05 Jul 2026 09:07:03 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/46b5f3a360da.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/46b5f3a360da.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/46b5f3a360da.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/46b5f3a360da.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Sables suffer heartbreak in Denver despite second-half fightback @3menonaboat</title>
       <link>https://mutapatimes.com/stories/d87c3531d77d.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/0e4afbe96ec7.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/0e4afbe96ec7.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/0e4afbe96ec7.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Mejrkh Communications &amp; Media Advisory — Commercial Manager</title>
-      <link>https://mutapatimes.com/stories/b378c3fc24ff.html</link>
-      <description>Buy Zimbabwe is seeking to recruit a dynamic, innovative, and results-oriented Commercial Manager to drive business growth, strengthen stakeholder relationships, and enhance the organization’s commer… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sat, 04 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/b378c3fc24ff.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Mejrkh Communications &amp; Media Advisory</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/b378c3fc24ff.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b378c3fc24ff.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/b378c3fc24ff.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
