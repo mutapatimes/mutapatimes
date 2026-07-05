@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-07-05T06:36:50+00:00",
+  "fetched_at": "2026-07-05T11:01:17+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "VP Chiwenga commends Church for deepening education drive",
+      "link": "https://mutapatimes.com/news/2026-07-04-vp-chiwenga-commends-church-for-deepening-education-drive-cf895d",
+      "image": "https://mutapatimes.com/img/cards/news/5fd408aa9179.png",
+      "pubDate": "2026-07-04T22:17:42+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Arts & entertainment is the smallest tracked sector at $24M.",
@@ -20,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 5 Jul: Harare overcast · high 22° / low 12°",
+      "title": "Zim weather 5 Jul: Harare clear sky · high 22° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-07-05",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-05",
       "pubDate": "2026-07-04T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Old Mutual Zimbabwe — Personal Assistant",
       "link": "https://vacancymail.co.zw/jobs/personal-assistant-68077/",
       "image": "https://mutapatimes.com/img/cards/jobs/dccf7ee7259c.png",
-      "pubDate": "2026-07-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Peterhouse Girls' School — TEACHER OF ENGLISH LANGUAGE AND ENGLISH LITERATURE AT PETERHOUSE GIRLS",
-      "link": "https://vacancymail.co.zw/jobs/teacher-of-english-language-and-english-literature-at-peterhouse-girls-68076/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9d5985ab39fa.png",
       "pubDate": "2026-07-04T22:00:00+00:00",
       "category": "Jobs"
     }
