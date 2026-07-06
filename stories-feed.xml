@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Jul 2026 17:39:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 19:49:48 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zimbabwe hit by nationwide blackout due to technical fault, says ZESA @Reuters @ZESAOfficial</title>
+      <link>https://mutapatimes.com/stories/ed648720ef96.html</link>
+      <description>via Reuters #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 06 Jul 2026 19:29:19 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/ed648720ef96.html</guid>
+      <category>Business</category>
+      <dc:creator>Reuters</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/ed648720ef96.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ed648720ef96.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/ed648720ef96.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Zimbabwe hold off Bangladesh for 25-run victory @Reuters</title>
       <link>https://mutapatimes.com/stories/56caf8e32304.html</link>
@@ -55,6 +67,30 @@
       <enclosure url="https://mutapatimes.com/img/cards/stories/9ed68d855d66.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>Bangladesh’s big guns return for ODI battle against Zimbabwe @thezimbabwean</title>
+      <link>https://mutapatimes.com/stories/9bba649ccdde.html</link>
+      <description>Both teams will want to gain knowledge about their personnel in conditions where the 2027 World Cup will be played via The Zimbabwean #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 06 Jul 2026 07:44:13 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/9bba649ccdde.html</guid>
+      <category>Business</category>
+      <dc:creator>The Zimbabwean</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/9bba649ccdde.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/9bba649ccdde.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/9bba649ccdde.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Bulawayo council road levy usage under spotlight</title>
+      <link>https://mutapatimes.com/stories/59ba01de4738.html</link>
+      <description>Nqobile Bhebhe, THE City of Bulawayo could be collecting as much as US$3,1 million annually from its Roads Levy, exceeding its 2025 Zimbabwe National Road Administration (Zinara) allocation of... via Ebusiness Weekly #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 06 Jul 2026 07:15:32 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/59ba01de4738.html</guid>
+      <category>Business</category>
+      <dc:creator>Ebusiness Weekly</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/59ba01de4738.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/59ba01de4738.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/59ba01de4738.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>Powertel, Paratus Zimbabwe switch on new digital highway</title>
       <link>https://mutapatimes.com/stories/8b130a701f33.html</link>
       <description>via ITWeb #Zimbabwe #Tech #AfricaTech #ZimbabweNews</description>
@@ -67,6 +103,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/stories/8b130a701f33.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>UK: Jameson Mashakada receives MBE for advancing race equality in King’s Birthday Honours</title>
+      <link>https://mutapatimes.com/stories/d7e575e5cfe8.html</link>
+      <description>UK-based Zimbabwean Jameson Mashakada has been awarded the Member of the Order of the British Empire (MBE) in His Majesty The King’s Birthday Honours List 2026 in recognition of his services to race equality, diversity and inclusion across the UK Civil Service. Mashakada, an acco via The Zimbabwe News #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 06 Jul 2026 06:20:21 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d7e575e5cfe8.html</guid>
+      <category>Business</category>
+      <dc:creator>The Zimbabwe News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d7e575e5cfe8.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d7e575e5cfe8.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d7e575e5cfe8.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>Paratus and Powertel light up first phase of Zimbabwe fibre backbone</title>
       <link>https://mutapatimes.com/stories/00b922807a05.html</link>
       <description>via Developing Telecoms #Zimbabwe #Tech #AfricaTech #ZimbabweNews</description>
@@ -77,6 +125,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/00b922807a05.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/00b922807a05.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/00b922807a05.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwean migrant allegedly killed in South Africa’s Mpumalanga amid continuing xenophobic attacks</title>
+      <link>https://mutapatimes.com/stories/cc018b6ea4e6.html</link>
+      <description>FEAR is spreading among migrant communities in Mpumalanga, South Africa, after allegations surfaced last week of a deadly attack on a Zimbabwean national. The incident occurred as anti-immigrant protestors combed the area in the aftermath of the June 30 deadline for foreigners to via The Zimbabwe News #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 06 Jul 2026 05:42:01 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/cc018b6ea4e6.html</guid>
+      <category>Business</category>
+      <dc:creator>The Zimbabwe News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/cc018b6ea4e6.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/cc018b6ea4e6.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/cc018b6ea4e6.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>More buses deployed as thousands of Zimbabweans and Malawians await repatriation at Musina border</title>
@@ -677,66 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>University of Zimbabwe - UZ — Chief Technician: Department of Electrical and Electronic Engineering</title>
-      <link>https://mutapatimes.com/stories/464db5fe3639.html</link>
-      <description>DEPARTMENT OF ELECTRICAL AND ELECTRONIC ENGINEERING 3.2.1 Chief Technician Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 05 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/464db5fe3639.html</guid>
-      <category>Jobs</category>
-      <dc:creator>University of Zimbabwe - UZ</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>PRAZ - Procurement Regulatory Authority of Zimbabwe — RECRUITMENT - INTERNS</title>
-      <link>https://mutapatimes.com/stories/46efa032027d.html</link>
-      <description>The Procurement Regulatory Authority of Zimbabwe (PRAZ) is inviting applications from students in tertiary institutions that are seeking internships, starting 3 August 2026, in the following areas: I… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 05 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/46efa032027d.html</guid>
-      <category>Jobs</category>
-      <dc:creator>PRAZ - Procurement Regulatory Authority of Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/46efa032027d.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/46efa032027d.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/46efa032027d.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Leonard Cheshire Disability Zimbabwe — Sida CSO Co Power Southern African Food and Economic Empowerment Programme (SAFEE) Terms of References– Supplementary Baseline July 2026</title>
-      <link>https://mutapatimes.com/stories/c6e9f2f04f3b.html</link>
-      <description>This Terms of Reference (TOR) describes the plans, objectives, deliverables, and expectations of We Effect and its partners for the 2025 - 2028 Supplementary baseline of the Southern African Food and… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 05 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c6e9f2f04f3b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Leonard Cheshire Disability Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c6e9f2f04f3b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c6e9f2f04f3b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c6e9f2f04f3b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>AIDS HEALTHCARE FOUNDATION — ASSOCIATE DIRECTOR OF MARKETING - Africa Bureau Duty Station: Any AHF country with an established AHF presence in Africa</title>
-      <link>https://mutapatimes.com/stories/5140b76948d2.html</link>
-      <description>At AIDS Healthcare Foundation (AHF), you will be part of a global movement dedicated to saving lives, strengthening communities, and advancing health equity. You will work alongside passionate profes… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 05 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/5140b76948d2.html</guid>
-      <category>Jobs</category>
-      <dc:creator>AIDS HEALTHCARE FOUNDATION</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/5140b76948d2.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5140b76948d2.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/5140b76948d2.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Accounts Clerk</title>
-      <link>https://mutapatimes.com/stories/e5ca93df819e.html</link>
-      <description>Job Specification: Accounts Clerk Deadline: Tuesday 7 July 2026 Company: Mugonat Systems Location: Harare, Zimbabwe Position Type: Full-time Reports To: Finance Manager / Senior Accountant Job Purpos… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 05 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/e5ca93df819e.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/e5ca93df819e.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e5ca93df819e.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/e5ca93df819e.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
