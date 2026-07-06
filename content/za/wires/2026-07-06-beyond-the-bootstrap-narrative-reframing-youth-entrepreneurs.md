@@ -1,0 +1,16 @@
+---
+title: "Beyond the bootstrap narrative: Reframing youth entrepreneurship in South Africa as a social justice imperative"
+date: 2026-07-06T10:18:45.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Beyond the bootstrap narrative: Reframing youth entrepreneurship in South Africa as a social justice imperative"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQYm9LUVNxQ0VBTVdvai0yWlBTdFRIcnRzUlBpTDRXY2tCMkZ5dmc5eUh1ZzRVTkZydWpVUC1JLUEzWGNqZVlQV1A3bVY2MERQMW01c3V6cFV3Q1RnU0RiaWlwX21mYUgtV2FDYy1WY0RjdlYwYUc2RXI2MVowYk1CVXpxUGZwS09RazNyZEJicUdUdzhGVHJhdUd5VE1rdTA2N1VLcFpuQlpjR0Z4bWp3QWk0dmVtRjB0WGxzaF8tZUpZeTdXc1pqYVdhVHBDbm1tYkxfdU9fRm5yenlBZmI5dXdib1RIY0JFWTkxcQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxQYm9LUVNxQ0VBTVdvai0yWlBTdFRIcnRzUlBpTDRXY2tCMkZ5dmc5eUh1ZzRVTkZydWpVUC1JLUEzWGNqZVlQV1A3bVY2MERQMW01c3V6cFV3Q1RnU0RiaWlwX21mYUgtV2FDYy1WY0RjdlYwYUc2RXI2MVowYk1CVXpxUGZwS09RazNyZEJicUdUdzhGVHJhdUd5VE1rdTA2N1VLcFpuQlpjR0Z4bWp3QWk0dmVtRjB0WGxzaF8tZUpZeTdXc1pqYVdhVHBDbm1tYkxfdU9fRm5yenlBZmI5dXdib1RIY0JFWTkxcQ?oc=5)
