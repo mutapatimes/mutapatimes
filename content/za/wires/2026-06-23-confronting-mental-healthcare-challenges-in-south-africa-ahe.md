@@ -1,0 +1,16 @@
+---
+title: "Confronting mental healthcare challenges in South Africa ahead of World Schizophrenia Day"
+date: 2026-06-23T07:00:25.000Z
+author: independentonsaturday.co.za
+category: Health
+image: 
+summary: "Confronting mental healthcare challenges in South Africa ahead of World Schizophrenia Day"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNTloTHZtT1BnbkdjREI3Q2taU2NhYm1OTTM2RU5XUmN0OWpuanJBUzhPazlpNDc0NmFUZExXU0VURnZranMyR29EZUpSbGFWbk1UalpPMlF5OFJsNWIxQk9TZEloNjVKOVpxNVJWZ3h5eWZoVW9aSkdNOEtQN1NKYlZGcC1adFJYZ3ZhLWpZcG5aT1dHU1pGY1ZmRmJ5TmF3dWxzZUs3Y2pZa2JWNkZ5NzlBN2lJdmdFT1RXR212b2RpSFlMOVIyMTJzc2RBM0F3UEJvMGw0a2xOV053ZmIzWDJ1eGROUkJGS2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by independentonsaturday.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNTloTHZtT1BnbkdjREI3Q2taU2NhYm1OTTM2RU5XUmN0OWpuanJBUzhPazlpNDc0NmFUZExXU0VURnZranMyR29EZUpSbGFWbk1UalpPMlF5OFJsNWIxQk9TZEloNjVKOVpxNVJWZ3h5eWZoVW9aSkdNOEtQN1NKYlZGcC1adFJYZ3ZhLWpZcG5aT1dHU1pGY1ZmRmJ5TmF3dWxzZUs3Y2pZa2JWNkZ5NzlBN2lJdmdFT1RXR212b2RpSFlMOVIyMTJzc2RBM0F3UEJvMGw0a2xOV053ZmIzWDJ1eGROUkJGS2c?oc=5)

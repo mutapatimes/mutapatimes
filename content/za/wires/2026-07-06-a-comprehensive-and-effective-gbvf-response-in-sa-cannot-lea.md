@@ -1,0 +1,16 @@
+---
+title: "A comprehensive and effective GBVF response in SA cannot leave men and boys behind"
+date: 2026-07-06T20:07:36.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "A comprehensive and effective GBVF response in SA cannot leave men and boys behind"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipwJBVV95cUxOeTA4bzl2WGxZWEdINlVMd3Y3bXNEZkhQSE92MzNBU3V3TUhZalgzdm5GbWlHdFY1Nzh4ZTJ6cjMzQUxiZVE2ZlYwUGowTzJuZlZCcmRWeDZ5Z0p6X3ZDV0lsaTBnVE4tVEhyLU9WX0RBWFlSazBJUTRobDZncjdXbmMyUjR2ZEVRVWhqamlQYk4zdGg0TzB0aVEycjIxTnVJdUZ3UGlqazU0UVd0MWRieUF2UXo0M2xtcWJiczJkOTA2VzBIdWNVamY4aHRXNHltVDktb2EwaGRyMUNQMHpJVnBQbExiSlZudUljLWwyOXh1aG11VGVPbHN0QVlmRUJzSTVpLVFRVzhTalE1YjBtTmpLNXFacmdQb2p6VWZYSVJReE1nb3Br?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipwJBVV95cUxOeTA4bzl2WGxZWEdINlVMd3Y3bXNEZkhQSE92MzNBU3V3TUhZalgzdm5GbWlHdFY1Nzh4ZTJ6cjMzQUxiZVE2ZlYwUGowTzJuZlZCcmRWeDZ5Z0p6X3ZDV0lsaTBnVE4tVEhyLU9WX0RBWFlSazBJUTRobDZncjdXbmMyUjR2ZEVRVWhqamlQYk4zdGg0TzB0aVEycjIxTnVJdUZ3UGlqazU0UVd0MWRieUF2UXo0M2xtcWJiczJkOTA2VzBIdWNVamY4aHRXNHltVDktb2EwaGRyMUNQMHpJVnBQbExiSlZudUljLWwyOXh1aG11VGVPbHN0QVlmRUJzSTVpLVFRVzhTalE1YjBtTmpLNXFacmdQb2p6VWZYSVJReE1nb3Br?oc=5)

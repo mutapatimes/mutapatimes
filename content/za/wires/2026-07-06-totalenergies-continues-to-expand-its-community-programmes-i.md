@@ -1,0 +1,16 @@
+---
+title: "TotalEnergies continues to expand its community programmes in SA to support sustainable development"
+date: 2026-07-06T13:49:50.000Z
+author: News24
+category: Business
+image: 
+summary: "TotalEnergies continues to expand its community programmes in SA to support sustainable development"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNUWU0dnFjNmZxYWJuTzVwOGYxWVhaV2hRSGZJMDZITGVnRGhhTEhWU0dxbmlpd3M3S0FWV25LY1NEb2NwcmsyZ29YNHRtZjhsSWpjRmJCRm53dkxiVFcxdEhYYmpTeU1JTWI5UnAyMVJpLVJ3djMtcWFHbVA2QWhPTnpOSkVLLUNkN0ZZUjZxMU9rWHJhSDE3X1VycFFvRlYxY3Zkd3NSdWtiT29yZXhETXJEd1IxMVlSMlI2MENIVTdyNC1xbE9GeEdqbjdEZWc1ZC13dExIVFJ4ZFRLcDR0dHNTZTI2aUkwQ2hlVFdfTHhtVjdqVVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi9gFBVV95cUxNUWU0dnFjNmZxYWJuTzVwOGYxWVhaV2hRSGZJMDZITGVnRGhhTEhWU0dxbmlpd3M3S0FWV25LY1NEb2NwcmsyZ29YNHRtZjhsSWpjRmJCRm53dkxiVFcxdEhYYmpTeU1JTWI5UnAyMVJpLVJ3djMtcWFHbVA2QWhPTnpOSkVLLUNkN0ZZUjZxMU9rWHJhSDE3X1VycFFvRlYxY3Zkd3NSdWtiT29yZXhETXJEd1IxMVlSMlI2MENIVTdyNC1xbE9GeEdqbjdEZWc1ZC13dExIVFJ4ZFRLcDR0dHNTZTI2aUkwQ2hlVFdfTHhtVjdqVVE?oc=5)
