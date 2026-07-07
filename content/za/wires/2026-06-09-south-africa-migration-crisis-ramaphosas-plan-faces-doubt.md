@@ -1,0 +1,16 @@
+---
+title: "South Africa migration crisis: Ramaphosa's plan faces doubt"
+date: 2026-06-09T07:00:00.000Z
+author: DW
+category: Business
+image: 
+summary: "South Africa migration crisis: Ramaphosa's plan faces doubt"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaXdPcUt1VU1QVnllenNhZXBwcDN3N2FncUhrenZQdU1aaXRnODdxSWpia2VtejlsaDdrMks3SjNEU2ZoRnV0blBDQzl6ZS1TZVdlUWhzRFBvdU9MOWVqbDNxSDZ1Tjk4Q0pMbjMwbjVJUHAzcWdWMDJpaFVTQjdSLXh4WUNDQWtSR2czTVJUU0dtYVpP0gGUAUFVX3lxTE96eGs2aXFyek1kS1V4cUR0eW1PRHFmalJrOVpZUldTanNBWE90SXVWOUZ5ZEV3aXRYaENvVHlmbW1UWlJCd2NNWlZ0SW9DY1RUZ2ItYWdySzJ0TDJUT2FzVzNVVzFnREZiaFVXZVBaeG9VZUgtMlZRN3VBal9fSnhrbFA2ckNPLTc0UlBYdW1Fa05XR2Q?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by DW.*
+[Read original article](https://news.google.com/rss/articles/CBMilAFBVV95cUxNaXdPcUt1VU1QVnllenNhZXBwcDN3N2FncUhrenZQdU1aaXRnODdxSWpia2VtejlsaDdrMks3SjNEU2ZoRnV0blBDQzl6ZS1TZVdlUWhzRFBvdU9MOWVqbDNxSDZ1Tjk4Q0pMbjMwbjVJUHAzcWdWMDJpaFVTQjdSLXh4WUNDQWtSR2czTVJUU0dtYVpP0gGUAUFVX3lxTE96eGs2aXFyek1kS1V4cUR0eW1PRHFmalJrOVpZUldTanNBWE90SXVWOUZ5ZEV3aXRYaENvVHlmbW1UWlJCd2NNWlZ0SW9DY1RUZ2ItYWdySzJ0TDJUT2FzVzNVVzFnREZiaFVXZVBaeG9VZUgtMlZRN3VBal9fSnhrbFA2ckNPLTc0UlBYdW1Fa05XR2Q?oc=5)

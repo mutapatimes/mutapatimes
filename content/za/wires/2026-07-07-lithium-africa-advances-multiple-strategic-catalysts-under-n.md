@@ -1,0 +1,16 @@
+---
+title: "Lithium Africa Advances Multiple Strategic Catalysts Under New CEO"
+date: 2026-07-07T11:06:44.000Z
+author: Junior Mining Network
+category: Business
+image: 
+summary: "Lithium Africa Advances Multiple Strategic Catalysts Under New CEO"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZ0Q5U2Q1eEFUdjFyeWxXLTVBM3RScW15RGVpalZPNlltRzhCakhwRjhsekVYdnVoeWlHdVhIdjZzb2dqVUtEZ1hwMnVwSnlkTEZwSGNVX19CS3RaRUpJNGNWMGpUV0RIM0VqaUY2dm1faHBZUnFNMGdVdG0wYVFqMEd3UFM3T0xGUG1qWDBBVm90OENjQWh5Vzc3NmhaR2lPN1dGdzZiMmR1ZWVFLTdkVU0tN0gxNmZZUDljVGgtS0NvX3hITjhGN1NaX1BzeVcxRkU1R1ZUdkstMHYwcjhyT0ZsNXp2Q0VYa1BFM0FVdF9qRWRsa0R0VUFCWTc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Junior Mining Network.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZ0Q5U2Q1eEFUdjFyeWxXLTVBM3RScW15RGVpalZPNlltRzhCakhwRjhsekVYdnVoeWlHdVhIdjZzb2dqVUtEZ1hwMnVwSnlkTEZwSGNVX19CS3RaRUpJNGNWMGpUV0RIM0VqaUY2dm1faHBZUnFNMGdVdG0wYVFqMEd3UFM3T0xGUG1qWDBBVm90OENjQWh5Vzc3NmhaR2lPN1dGdzZiMmR1ZWVFLTdkVU0tN0gxNmZZUDljVGgtS0NvX3hITjhGN1NaX1BzeVcxRkU1R1ZUdkstMHYwcjhyT0ZsNXp2Q0VYa1BFM0FVdF9qRWRsa0R0VUFCWTc?oc=5)

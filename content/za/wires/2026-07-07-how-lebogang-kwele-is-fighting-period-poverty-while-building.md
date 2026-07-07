@@ -1,0 +1,16 @@
+---
+title: "How Lebogang Kwele is fighting period poverty while building a petroleum business in South Africa"
+date: 2026-07-07T10:42:24.000Z
+author: News24
+category: Business
+image: 
+summary: "How Lebogang Kwele is fighting period poverty while building a petroleum business in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaWNnMHRQVHZCVHFjS2F5R3hDQkdYbzlCRHZiOUZiQzdxYzdsS2ZXb2pJcExPWXAzNV9rbmN0cGh2cG1JWGxxbl9DNFVfdzBhRWFxS0VPRXVta2dfSW9WMlltWHZkYUI4dlVLLWNMV0lnLVFoVHJ2enVwb3NhcE50dElSZ3JkamZSSV80RXZKYnRIanI0Sk1sclp2WTdlemc1TV9zVDlXUE9hUUh4dTFSS2puQ0Vpc0s5aE8zN19TVFdybDU5TlRBQ2hlS1NXbTBVc1RSMUhmWlZ6cmpzdjl1QWZsaXpRZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaWNnMHRQVHZCVHFjS2F5R3hDQkdYbzlCRHZiOUZiQzdxYzdsS2ZXb2pJcExPWXAzNV9rbmN0cGh2cG1JWGxxbl9DNFVfdzBhRWFxS0VPRXVta2dfSW9WMlltWHZkYUI4dlVLLWNMV0lnLVFoVHJ2enVwb3NhcE50dElSZ3JkamZSSV80RXZKYnRIanI0Sk1sclp2WTdlemc1TV9zVDlXUE9hUUh4dTFSS2puQ0Vpc0s5aE8zN19TVFdybDU5TlRBQ2hlS1NXbTBVc1RSMUhmWlZ6cmpzdjl1QWZsaXpRZw?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Why lifting the Karoo fracking moratorium is a risky move"
+date: 2026-07-07T15:02:57.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Why lifting the Karoo fracking moratorium is a risky move"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxPT09vRHRmM2trMW5IcDY5dThvMVVyU1Y5MnZZUHI0clVRbWR5YjhGUUY0N05rQ0tsWTJQN2RHSFMyMXM0NFUtUUZheVp6QTNnQ0RzdDlXbnZBRjAtdmsyWks3YVZ0dlRJWHN2UU1XT1JTNlFHemVjNkNSVGlLVFY0YlFQM1l2UHlaeXRiQ25nVmhXY0dkRFpaOTVVRFo3SF92YU5BbEpxYWkxQmkxblROdnNLWlNzaEZSWFJMNWVuc1NlT3dtWmpsLTJTWXExS1pvSjdvMUUtRkJPbGx3aUVwcERJSWZUZm1qLUkxbzBrT3lkczU0bEdRbElfNTZPR05OcFh6ZDEwdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxPT09vRHRmM2trMW5IcDY5dThvMVVyU1Y5MnZZUHI0clVRbWR5YjhGUUY0N05rQ0tsWTJQN2RHSFMyMXM0NFUtUUZheVp6QTNnQ0RzdDlXbnZBRjAtdmsyWks3YVZ0dlRJWHN2UU1XT1JTNlFHemVjNkNSVGlLVFY0YlFQM1l2UHlaeXRiQ25nVmhXY0dkRFpaOTVVRFo3SF92YU5BbEpxYWkxQmkxblROdnNLWlNzaEZSWFJMNWVuc1NlT3dtWmpsLTJTWXExS1pvSjdvMUUtRkJPbGx3aUVwcERJSWZUZm1qLUkxbzBrT3lkczU0bEdRbElfNTZPR05OcFh6ZDEwdw?oc=5)
