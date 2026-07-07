@@ -1,0 +1,16 @@
+---
+title: "Land, agriculture, food manufacturing under scrutiny at the SAHRC hearings on hunger"
+date: 2026-07-07T20:47:36.000Z
+author: Daily Maverick
+category: Culture
+image: 
+summary: "Land, agriculture, food manufacturing under scrutiny at the SAHRC hearings on hunger"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipgJBVV95cUxOZ0F2VC1yeHZpSGkxeVJkSVR4bU9LZVFudlYzM2lISDhJUXdhbEJ6bklwbHFOS2pYbjBoeHNQT3JYWlhMTV84Ynk0UWwzeFdnSDJGRGdxcGFmYUN2dlk0U0REaFNKMmxjRWJKRmhzSUN5MF9YR29HNWhfZ1gtbnpLRF9rQ25MeE51Y1VwUzRFenI4MVcxMzZZUWthZ2RNUm9CMjR4TmktdHZYNm1GMXg1bDlQblFkWDU4NnpVY2xNRUdNY2FOX0ZselNaTEExSXNVdW83OERtcGxlY0hfQ0hvR09DQ3BXNnhQeXIzc0xvU1Z1Z1lXTWpSRHlIMkpVTGtZQktpWngwQWdaOFdaRzFHRlI4em1ySzFwMXVGVjZrWnlnRnVmUHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipgJBVV95cUxOZ0F2VC1yeHZpSGkxeVJkSVR4bU9LZVFudlYzM2lISDhJUXdhbEJ6bklwbHFOS2pYbjBoeHNQT3JYWlhMTV84Ynk0UWwzeFdnSDJGRGdxcGFmYUN2dlk0U0REaFNKMmxjRWJKRmhzSUN5MF9YR29HNWhfZ1gtbnpLRF9rQ25MeE51Y1VwUzRFenI4MVcxMzZZUWthZ2RNUm9CMjR4TmktdHZYNm1GMXg1bDlQblFkWDU4NnpVY2xNRUdNY2FOX0ZselNaTEExSXNVdW83OERtcGxlY0hfQ0hvR09DQ3BXNnhQeXIzc0xvU1Z1Z1lXTWpSRHlIMkpVTGtZQktpWngwQWdaOFdaRzFHRlI4em1ySzFwMXVGVjZrWnlnRnVmUHc?oc=5)
