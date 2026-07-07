@@ -1,0 +1,16 @@
+---
+title: "ADNOC Distribution enters into Definitive Agreement to Acquire Shell Downstream South Africa"
+date: 2026-07-07T04:15:00.000Z
+author: PR Newswire
+category: Culture
+image: 
+summary: "ADNOC Distribution enters into Definitive Agreement to Acquire Shell Downstream South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUENOZExTYng4d3c3RjhNODljTUt0VWhEc3FpbGt2ZkVuUDVVdmk3ZF83SFdtMi1pOEsxX2Zzb2cyOG44VFp0RmZYUVZOUXE2NzNsWFIwQV9ocjZaLTJPWmRORVNtb1c2N0Z3XzJzelhWT2VfdU5lakkycklkVjhDT0VWZ1ctenh0LWtDMTZZV0xWR3NtSjdGRDFUdy1JSXFzRmpkNVBaMnpYaU5DQkRleEZvZmFiWFVVdGRuNGtsN1B2YWkySVByd1c5aTRFbEFMaDl5cUdPWjd0VklXbmV3aHd6QVU5dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by PR Newswire.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUENOZExTYng4d3c3RjhNODljTUt0VWhEc3FpbGt2ZkVuUDVVdmk3ZF83SFdtMi1pOEsxX2Zzb2cyOG44VFp0RmZYUVZOUXE2NzNsWFIwQV9ocjZaLTJPWmRORVNtb1c2N0Z3XzJzelhWT2VfdU5lakkycklkVjhDT0VWZ1ctenh0LWtDMTZZV0xWR3NtSjdGRDFUdy1JSXFzRmpkNVBaMnpYaU5DQkRleEZvZmFiWFVVdGRuNGtsN1B2YWkySVByd1c5aTRFbEFMaDl5cUdPWjd0VklXbmV3aHd6QVU5dw?oc=5)

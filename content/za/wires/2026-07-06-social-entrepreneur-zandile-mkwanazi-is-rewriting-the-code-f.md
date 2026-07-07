@@ -1,0 +1,16 @@
+---
+title: "Social entrepreneur Zandile Mkwanazi is rewriting the code for African women in tech"
+date: 2026-07-06T16:05:52.000Z
+author: News24
+category: Business
+image: 
+summary: "Social entrepreneur Zandile Mkwanazi is rewriting the code for African women in tech"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQmJ1MmZIUWdZVlpLT2g4R3ZucDV2M1hLSXJPcmtRTGQzOXhTTTZKRFRTVHQ1OVl0ZE4xQTFQUnhvOGlJQ2hCcDFxTTZQc3V1ZUtvOWMtZzVpdG5tbGd4TDFDdkFSWUNtNnp3c0xpWXp3anJXN2VGcE1UTDlEVjRoRmVpbWVITkZMMjB1NUlYQUNHcnpCYkVQMDI5YXN0LUpjM3NiUW1Oa19FNlFzVDNYTGZabDgwR1JMSzE5STRqUHZJRmdNbXVpRE1YV1M0VzJ4ZzdzR0xiX3kxejVaVVpr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQmJ1MmZIUWdZVlpLT2g4R3ZucDV2M1hLSXJPcmtRTGQzOXhTTTZKRFRTVHQ1OVl0ZE4xQTFQUnhvOGlJQ2hCcDFxTTZQc3V1ZUtvOWMtZzVpdG5tbGd4TDFDdkFSWUNtNnp3c0xpWXp3anJXN2VGcE1UTDlEVjRoRmVpbWVITkZMMjB1NUlYQUNHcnpCYkVQMDI5YXN0LUpjM3NiUW1Oa19FNlFzVDNYTGZabDgwR1JMSzE5STRqUHZJRmdNbXVpRE1YV1M0VzJ4ZzdzR0xiX3kxejVaVVpr?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Tshwane manager Johann Mettler mounts fightback in looming ‘precautionary suspension’ case"
+date: 2026-07-07T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Tshwane manager Johann Mettler mounts fightback in looming ‘precautionary suspension’ case"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV2JrMC1jMHRJUVVYbnE2TDRlN1NvQmhCeWdmY1RiVmM0WUd1b2UzZW16T2NCVWcwbzZFbkRpcUhPcjBXejV4cHlnQ3B6azFOTF9OWEpGWFQ1VzNZZDB2X29wWExySDRDbm1ZOFdrWUxza3NDc3h0ckJlaWl0Njh0R0cwOVVpS1BJOVlrREFCY3pfNGU4WWxoUDRrazhpN1c1ak9kRU05bEFoTFVtd3ZGRFlTSHB1NXRRQVI2Sl9kdVIxeFRudTdRZzdUaFg2U0RkbDJwU2p1MTk0N29zRGg0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV2JrMC1jMHRJUVVYbnE2TDRlN1NvQmhCeWdmY1RiVmM0WUd1b2UzZW16T2NCVWcwbzZFbkRpcUhPcjBXejV4cHlnQ3B6azFOTF9OWEpGWFQ1VzNZZDB2X29wWExySDRDbm1ZOFdrWUxza3NDc3h0ckJlaWl0Njh0R0cwOVVpS1BJOVlrREFCY3pfNGU4WWxoUDRrazhpN1c1ak9kRU05bEFoTFVtd3ZGRFlTSHB1NXRRQVI2Sl9kdVIxeFRudTdRZzdUaFg2U0RkbDJwU2p1MTk0N29zRGg0?oc=5)
