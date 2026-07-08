@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 03:49:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 05:46:33 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,30 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Air Zimbabwe’s Harare-London flight frequency announced</title>
+      <link>https://mutapatimes.com/stories/367456d5fa84.html</link>
+      <description>via 3-mob.com #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
+      <pubDate>Wed, 08 Jul 2026 05:33:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/367456d5fa84.html</guid>
+      <category>Culture</category>
+      <dc:creator>3-mob.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Traditional leaders plan Zim trip to tackle migration tensions</title>
+      <link>https://mutapatimes.com/stories/3b2b7fd097c3.html</link>
+      <description>via Daily Dispatch #Zimbabwe #Policy #ZimbabwePolicy #ZimbabweNews</description>
+      <pubDate>Wed, 08 Jul 2026 03:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/3b2b7fd097c3.html</guid>
+      <category>Policy</category>
+      <dc:creator>Daily Dispatch</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/3b2b7fd097c3.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3b2b7fd097c3.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/3b2b7fd097c3.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -713,30 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/c498e6a915aa.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>University of Zimbabwe - UZ — Chief Technician: Department of Electrical and Electronic Engineering</title>
-      <link>https://mutapatimes.com/stories/464db5fe3639.html</link>
-      <description>DEPARTMENT OF ELECTRICAL AND ELECTRONIC ENGINEERING 3.2.1 Chief Technician Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 07 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/464db5fe3639.html</guid>
-      <category>Jobs</category>
-      <dc:creator>University of Zimbabwe - UZ</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/464db5fe3639.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>PRAZ - Procurement Regulatory Authority of Zimbabwe — RECRUITMENT - INTERNS</title>
-      <link>https://mutapatimes.com/stories/46efa032027d.html</link>
-      <description>The Procurement Regulatory Authority of Zimbabwe (PRAZ) is inviting applications from students in tertiary institutions that are seeking internships, starting 3 August 2026, in the following areas: I… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 07 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/46efa032027d.html</guid>
-      <category>Jobs</category>
-      <dc:creator>PRAZ - Procurement Regulatory Authority of Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/46efa032027d.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/46efa032027d.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/46efa032027d.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
