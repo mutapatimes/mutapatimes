@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-07-08T05:46:33+00:00",
+  "fetched_at": "2026-07-08T08:18:44+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Air Zimbabwe’s Harare-London flight frequency announced",
-      "link": "https://mutapatimes.com/articles/2026-07-08-air-zimbabwes-harare-london-flight-frequency-announced",
-      "image": "https://mutapatimes.com/img/cards/news/367456d5fa84.png",
-      "pubDate": "2026-07-08T05:33:00+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "Air Zimbabwe’s Harare-London flight frequency announced",
@@ -17,14 +9,6 @@
       "image": "https://mutapatimes.com/img/cards/news/73276b3360f8.png",
       "pubDate": "2026-07-08T05:33:00+00:00",
       "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Traditional leaders plan Zim trip to tackle migration tensions",
-      "link": "https://mutapatimes.com/articles/2026-07-08-traditional-leaders-plan-zim-trip-to-tackle-migration-tensio",
-      "image": "https://mutapatimes.com/img/cards/news/3b2b7fd097c3.png",
-      "pubDate": "2026-07-08T03:00:00+00:00",
-      "category": "Policy"
     },
     {
       "kind": "economy",
@@ -44,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 8 Jul: Harare overcast · high 19° / low 9°",
+      "title": "Zim weather 8 Jul: Harare overcast · high 20° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-07-08",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-08",
       "pubDate": "2026-07-07T22:00:00+00:00",
@@ -479,6 +463,22 @@
       "title": "University of Zimbabwe - UZ — Senior Technician (1 Post): DEPARTMENT OF BIOMEDICAL SCIENCES (ANATOMY UNIT)",
       "link": "https://vacancymail.co.zw/jobs/senior-technician-1-post-department-of-biomedical-sciences-anatomy-unit-68110/",
       "image": "https://mutapatimes.com/img/cards/jobs/8f6416a0c866.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mine Manager",
+      "link": "https://vacancymail.co.zw/jobs/mine-manager-68109/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6774c509c0a6.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/receptionist-68108/",
+      "image": "https://mutapatimes.com/img/cards/jobs/09f458449d66.png",
       "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     }
