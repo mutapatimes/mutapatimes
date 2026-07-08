@@ -1,0 +1,16 @@
+---
+title: "Billionaire Patrice Motsepe's African Rainbow Capital wins South African ruling in $195 million graphite fight"
+date: 2026-07-08T18:26:46.000Z
+author: Billionaires.Africa
+category: Business
+image: 
+summary: "Billionaire Patrice Motsepe's African Rainbow Capital wins South African ruling in $195 million graphite fight"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRnRORE1nakVOUTk4enkwMnp1SzlmOHI1cmFRVzRpT25JREtMc0JoRVZVbzdhTWZKeFVYbmoyR3VJYWdGLXhLRmZxSk5Uallzekd6VlFwWkFnVEJ0bFQxSzlBTmtfRUhPMnMtaGpxLS1JUE9MVUg4WGpFckd5RXVHNlFWdHJVQjFPa2xYQklJVVV2WHVPUTVIQVQ2eThrMW9YTFh4c28xMXJiTGVNd2V0dUNDc292azdRaERkMmI5UW9UOU02S1J0LTFTa241VUwxaDZtUDYzTjFRY1AzQ2tWZzRld3NRaVU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Billionaires.Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRnRORE1nakVOUTk4enkwMnp1SzlmOHI1cmFRVzRpT25JREtMc0JoRVZVbzdhTWZKeFVYbmoyR3VJYWdGLXhLRmZxSk5Uallzekd6VlFwWkFnVEJ0bFQxSzlBTmtfRUhPMnMtaGpxLS1JUE9MVUg4WGpFckd5RXVHNlFWdHJVQjFPa2xYQklJVVV2WHVPUTVIQVQ2eThrMW9YTFh4c28xMXJiTGVNd2V0dUNDc292azdRaERkMmI5UW9UOU02S1J0LTFTa241VUwxaDZtUDYzTjFRY1AzQ2tWZzRld3NRaVU?oc=5)
