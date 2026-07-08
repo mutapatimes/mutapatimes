@@ -1,0 +1,44 @@
+name: Fetch Sport Data
+
+on:
+  schedule:
+    # Every 2 hours. Standings only change after matches; this keeps tables +
+    # recent scores fresh through the day well within football-data's free
+    # 10 req/min and TheSportsDB's free limits.
+    - cron: '20 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-sport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch sport data (EPL + DStv Premiership + Castle Lager PSL)
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          THESPORTSDB_KEY: ${{ secrets.THESPORTSDB_KEY }}
+        run: python3 scripts/fetch_sport.py
+
+      - name: Commit updated sport data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sport/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update sport data [automated]"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Pushed on attempt $i"
+                exit 0
+              fi
+              echo "Push rejected — rebasing onto remote main (attempt $i/5)"
+              git pull --rebase origin main || exit 1
+              sleep $((RANDOM % 4 + 2))
+            done
+            echo "All push attempts failed"
+            exit 1
+          fi

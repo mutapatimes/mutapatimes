@@ -1,0 +1,88 @@
+{
+ "slug": "dstv-premiership",
+ "name": "DStv Premiership",
+ "short": "PSL · SA",
+ "country": "South Africa",
+ "flag": "🇿🇦",
+ "season": "2025-2026",
+ "provider": "thesportsdb",
+ "capped": true,
+ "table": [
+  {
+   "rank": 1,
+   "team": "Orlando Pirates",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
+   "played": 30,
+   "win": 21,
+   "draw": 6,
+   "loss": 3,
+   "gf": 58,
+   "ga": 12,
+   "gd": 46,
+   "points": 69
+  },
+  {
+   "rank": 2,
+   "team": "Mamelodi Sundowns",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/uswgw01642709783.png/tiny",
+   "played": 30,
+   "win": 20,
+   "draw": 8,
+   "loss": 2,
+   "gf": 57,
+   "ga": 21,
+   "gd": 36,
+   "points": 68
+  },
+  {
+   "rank": 3,
+   "team": "Kaizer Chiefs",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
+   "played": 30,
+   "win": 15,
+   "draw": 9,
+   "loss": 6,
+   "gf": 33,
+   "ga": 19,
+   "gd": 14,
+   "points": 54
+  },
+  {
+   "rank": 4,
+   "team": "Amazulu",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/412rj11583614091.png/tiny",
+   "played": 30,
+   "win": 13,
+   "draw": 8,
+   "loss": 9,
+   "gf": 32,
+   "ga": 28,
+   "gd": 4,
+   "points": 47
+  },
+  {
+   "rank": 5,
+   "team": "Sekhukhune United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/5yxcni1705638809.png/tiny",
+   "played": 30,
+   "win": 11,
+   "draw": 11,
+   "loss": 8,
+   "gf": 32,
+   "ga": 27,
+   "gd": 5,
+   "points": 44
+  }
+ ],
+ "results": [
+  {
+   "date": "2026-06-10",
+   "home": "Cape Town City",
+   "away": "Magesi",
+   "hs": 1,
+   "as": 1
+  }
+ ],
+ "fixtures": [],
+ "updated": "2026-07-08T21:39:14+00:00"
+}

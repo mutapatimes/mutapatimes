@@ -1,0 +1,95 @@
+{
+ "slug": "castle-lager-psl",
+ "name": "Castle Lager PSL",
+ "short": "PSL · Zim",
+ "country": "Zimbabwe",
+ "flag": "🇿🇼",
+ "season": "2026",
+ "provider": "thesportsdb",
+ "capped": true,
+ "table": [
+  {
+   "rank": 2,
+   "team": "CAPS United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
+   "played": 17,
+   "win": 9,
+   "draw": 5,
+   "loss": 3,
+   "gf": 20,
+   "ga": 13,
+   "gd": 7,
+   "points": 32
+  },
+  {
+   "rank": 3,
+   "team": "Scottland",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/c6powa1740628657.png/tiny",
+   "played": 16,
+   "win": 8,
+   "draw": 7,
+   "loss": 1,
+   "gf": 20,
+   "ga": 6,
+   "gd": 14,
+   "points": 31
+  },
+  {
+   "rank": 4,
+   "team": "Herentals",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
+   "played": 17,
+   "win": 8,
+   "draw": 5,
+   "loss": 4,
+   "gf": 22,
+   "ga": 17,
+   "gd": 5,
+   "points": 29
+  },
+  {
+   "rank": 5,
+   "team": "Ngezi Platinum",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/7n93nc1645561915.png/tiny",
+   "played": 17,
+   "win": 7,
+   "draw": 8,
+   "loss": 2,
+   "gf": 21,
+   "ga": 15,
+   "gd": 6,
+   "points": 29
+  },
+  {
+   "rank": 6,
+   "team": "Dynamos",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
+   "played": 16,
+   "win": 7,
+   "draw": 8,
+   "loss": 2,
+   "gf": 23,
+   "ga": 16,
+   "gd": 7,
+   "points": 26
+  }
+ ],
+ "results": [
+  {
+   "date": "2026-07-05",
+   "home": "Triangle United",
+   "away": "Herentals",
+   "hs": 0,
+   "as": 1
+  }
+ ],
+ "fixtures": [
+  {
+   "date": "2026-07-10",
+   "time": "13:00",
+   "home": "Scottland",
+   "away": "TelOne"
+  }
+ ],
+ "updated": "2026-07-08T21:39:14+00:00"
+}
