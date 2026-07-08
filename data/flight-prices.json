@@ -9,18 +9,18 @@
       "currency": "GBP",
       "currency_sym": "£",
       "cheapest_overall": {
-        "price": 356,
+        "price": 321,
         "airline": "FR",
         "departure_at": "2026-10-13",
         "return_at": "",
         "stops": 2,
-        "duration": 1350,
+        "duration": 1655,
         "currency": ""
       },
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 514,
+          "price": 513,
           "airline": "PC",
           "departure_at": "2026-07-23",
           "return_at": "",
@@ -47,27 +47,36 @@
           "currency": ""
         },
         {
-          "price": 356,
+          "price": 321,
           "airline": "FR",
           "departure_at": "2026-10-13",
           "return_at": "",
           "stops": 2,
-          "duration": 1350,
+          "duration": 1655,
+          "currency": ""
+        },
+        {
+          "price": 714,
+          "airline": "ET",
+          "departure_at": "2027-02-09",
+          "return_at": "2027-02-23",
+          "stops": 1,
+          "duration": null,
           "currency": ""
         }
       ],
       "by_airline": [
         {
-          "price": 356,
+          "price": 321,
           "airline": "FR",
           "departure_at": "2026-10-13",
           "return_at": "",
           "stops": 2,
-          "duration": 1350,
+          "duration": 1655,
           "currency": ""
         },
         {
-          "price": 417,
+          "price": 383,
           "airline": "EI",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -76,7 +85,7 @@
           "currency": ""
         },
         {
-          "price": 514,
+          "price": 513,
           "airline": "PC",
           "departure_at": "2026-07-23",
           "return_at": "",
@@ -113,7 +122,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -137,7 +146,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -153,7 +162,7 @@
           "error": null
         }
       ],
-      "observations": 24
+      "observations": 26
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -223,22 +232,13 @@
           "stops": 1,
           "duration": 755,
           "currency": ""
-        },
-        {
-          "price": 4148,
-          "airline": "FA",
-          "departure_at": "2026-07-08",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1330,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -260,7 +260,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 3
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -268,7 +268,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1271,
+        "price": 1281,
         "airline": "FA",
         "departure_at": "2026-07-22",
         "return_at": "",
@@ -277,7 +277,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1271,
+        "price": 1281,
         "airline": "FA",
         "departure_at": "2026-07-22",
         "return_at": "",
@@ -287,7 +287,7 @@
       },
       "monthly": [
         {
-          "price": 1271,
+          "price": 1281,
           "airline": "FA",
           "departure_at": "2026-07-22",
           "return_at": "",
@@ -305,18 +305,18 @@
           "currency": ""
         },
         {
-          "price": 1532,
+          "price": 3604,
           "airline": "FA",
-          "departure_at": "2026-09-16",
-          "return_at": "",
+          "departure_at": "2026-09-11",
+          "return_at": "2026-09-14",
           "stops": 0,
-          "duration": 110,
+          "duration": null,
           "currency": ""
         }
       ],
       "by_airline": [
         {
-          "price": 1271,
+          "price": 1281,
           "airline": "FA",
           "departure_at": "2026-07-22",
           "return_at": "",
@@ -325,7 +325,7 @@
           "currency": ""
         },
         {
-          "price": 3069,
+          "price": 3081,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -334,7 +334,7 @@
           "currency": ""
         },
         {
-          "price": 3222,
+          "price": 3235,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -347,7 +347,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 18,
+          "n": 15,
           "error": null
         },
         {
@@ -369,7 +369,7 @@
           "error": null
         }
       ],
-      "observations": 24
+      "observations": 21
     },
     "new-york-to-harare": {
       "origin": "NYC",
