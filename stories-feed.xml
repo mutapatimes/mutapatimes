@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 14:43:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 16:28:47 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -29,6 +29,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/367456d5fa84.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Mangwe chiefs urge returnees from SA to rebuild their lives in Zimbabwe @thezimbabwean</title>
+      <link>https://mutapatimes.com/stories/1359ce2577cf.html</link>
+      <description>Traditional leaders in Mangwe District, Matabeleland South, have urged Zimbabweans returning from South Africa not to lose hope but to embrace their new reality and rebuild their lives at home by learning from communities that have managed to survive despite the country’s economi via The Zimbabwean #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Wed, 08 Jul 2026 03:59:05 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/1359ce2577cf.html</guid>
+      <category>Business</category>
+      <dc:creator>The Zimbabwean</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/1359ce2577cf.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1359ce2577cf.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/1359ce2577cf.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Traditional leaders plan Zim trip to tackle migration tensions</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/025f94670475.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/025f94670475.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/025f94670475.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimbabwe Ezekiel Guti University — IT Support Technician</title>
-      <link>https://mutapatimes.com/stories/8bd21e35bc31.html</link>
-      <description>Zimbabwe Ezekiel Guti University invites applications from suitably qualified, competent, and highly motivated individuals to fill the position of IT Support Technician. Bindura · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 07 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/8bd21e35bc31.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zimbabwe Ezekiel Guti University</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/8bd21e35bc31.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/8bd21e35bc31.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/8bd21e35bc31.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
