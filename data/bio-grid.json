@@ -1,13 +1,29 @@
 {
-  "fetched_at": "2026-07-08T11:00:20+00:00",
+  "fetched_at": "2026-07-08T13:51:45+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "'Ikale Tahi overpowers spirited Zimbabwe in World Rugby Nations Cup opener",
+      "link": "https://mutapatimes.com/articles/2026-07-08-ikale-tahi-overpowers-spirited-zimbabwe-in-world-rugby-natio",
+      "image": "https://mutapatimes.com/img/cards/news/aa9354ffe9c2.png",
+      "pubDate": "2026-07-08T11:47:09+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "'Ikale Tahi overpowers spirited Zimbabwe in World Rugby Nations Cup opener",
+      "link": "https://mutapatimes.com/news/2026-07-08-ikale-tahi-overpowers-spirited-zimbabwe-in-world-rugby-nations-cup-opener-3f2dd3",
+      "image": "https://mutapatimes.com/img/cards/news/0880bbeb2527.png",
+      "pubDate": "2026-07-08T11:47:09+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "news",
       "title": "Zulu king to meet Mnangagwa over SA anti-immigrant tensions",
       "link": "https://mutapatimes.com/news/2026-07-08-zulu-king-to-meet-mnangagwa-over-sa-anti-immigrant-tensions-70ef32",
       "image": "https://mutapatimes.com/img/cards/news/bfc696c00223.png",
-      "pubDate": "2026-07-08T10:41:15+00:00",
+      "pubDate": "2026-07-08T10:43:12+00:00",
       "category": "Entertainment"
     },
     {
@@ -25,6 +41,78 @@
       "image": "https://mutapatimes.com/img/cards/news/73276b3360f8.png",
       "pubDate": "2026-07-08T05:33:00+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe backs AfCFTA agri-trade plan to boost regional agricultural exports",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-backs-afcfta-agri-trade-plan-to-boost-regional-agricultural-exports-a178aa",
+      "image": "https://mutapatimes.com/img/cards/news/9d657826911f.png",
+      "pubDate": "2026-07-08T00:37:37+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe opposition slams Constitutional Amendment Act No. 3 as ‘death of democracy’, vows court challenge",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-opposition-slams-constitutional-amendment-act-no-3-as-death-of-a1815a",
+      "image": "https://mutapatimes.com/img/cards/news/e4392f884bc3.png",
+      "pubDate": "2026-07-08T00:34:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ugandan comedian Okello heads to Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-07-07-ugandan-comedian-okello-heads-to-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/70b019cf5a4a.png",
+      "pubDate": "2026-07-07T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Sammons delighted as Chevrons turn grit into victory",
+      "link": "https://mutapatimes.com/articles/2026-07-07-sammons-delighted-as-chevrons-turn-grit-into-victory",
+      "image": "https://mutapatimes.com/img/cards/news/4f244abddfed.png",
+      "pubDate": "2026-07-07T23:58:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Corruption still holding back investment despite Zimbabwe’s progress – EU envoy says",
+      "link": "https://mutapatimes.com/news/2026-07-07-corruption-still-holding-back-investment-despite-zimbabwe-s-progress-eu-envoy-fd1edb",
+      "image": "https://mutapatimes.com/img/cards/news/032bbac88757.png",
+      "pubDate": "2026-07-07T23:20:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Harare traffic jams will only worsen – Mafume urges residents to ditch private cars",
+      "link": "https://mutapatimes.com/articles/2026-07-07-harare-traffic-jams-will-only-worsen-mafume-urges-residents",
+      "image": "https://mutapatimes.com/img/cards/news/b1d9026b6b47.png",
+      "pubDate": "2026-07-07T23:03:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Harare traffic jams will only worsen – Mafume urges residents to ditch private cars",
+      "link": "https://mutapatimes.com/news/2026-07-07-harare-traffic-jams-will-only-worsen-mafume-urges-residents-to-ditch-private-53d8ba",
+      "image": "https://mutapatimes.com/img/cards/news/52b8930db67e.png",
+      "pubDate": "2026-07-07T23:03:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Powertel, Paratus activate cross-border fibre network linking Zimbabwe to Southern Africa",
+      "link": "https://mutapatimes.com/articles/2026-07-07-powertel-paratus-activate-cross-border-fibre-network-linking",
+      "image": "https://mutapatimes.com/img/cards/news/cc66dcc4d3e6.png",
+      "pubDate": "2026-07-07T23:00:40+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Powertel, Paratus activate cross-border fibre network linking Zimbabwe to Southern Africa",
+      "link": "https://mutapatimes.com/news/2026-07-07-powertel-paratus-activate-cross-border-fibre-network-linking-zimbabwe-to-c3cd00",
+      "image": "https://mutapatimes.com/img/cards/news/77bc04c7e534.png",
+      "pubDate": "2026-07-07T23:00:40+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -391,94 +479,6 @@
       "title": "National Blood Service Zimbabwe — Internship Opportunities",
       "link": "https://vacancymail.co.zw/jobs/internship-opportunities-68123/",
       "image": "https://mutapatimes.com/img/cards/jobs/44d9372b091d.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Probfix Financial Services (Pvt) Ltd — Group Operations Officer (Back Office)",
-      "link": "https://vacancymail.co.zw/jobs/group-operations-officer-back-office-68122/",
-      "image": "https://mutapatimes.com/img/cards/jobs/98df6d55140f.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chamber of Mines of Zimbabwe — Students On Attachment - The Chamber Of Mines Of Zimbabwe",
-      "link": "https://vacancymail.co.zw/jobs/students-on-attachment-the-chamber-of-mines-of-zimbabwe-68121/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7ca35d5a4249.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Khayah Cement Limited — Control Room Operator - Dry Mortar Operations.",
-      "link": "https://vacancymail.co.zw/jobs/control-room-operator-dry-mortar-operations-68120/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2b2d726eac21.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "First Pack Marketing — SHOP SALES REPRESENTATIVE",
-      "link": "https://vacancymail.co.zw/jobs/shop-sales-representative-68119/",
-      "image": "https://mutapatimes.com/img/cards/jobs/06143fdf3f99.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "First Pack Marketing — SHOP SALES PERSON",
-      "link": "https://vacancymail.co.zw/jobs/shop-sales-person-68118/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e558ae0f4279.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "VIRL Financial Services — Loan Officer- Hauna, Bulawayo",
-      "link": "https://vacancymail.co.zw/jobs/loan-officer-hauna-bulawayo-68117/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4edf8a6738a5.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Hand",
-      "link": "https://vacancymail.co.zw/jobs/general-hand-68116/",
-      "image": "https://mutapatimes.com/img/cards/jobs/003c21f29d04.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Internal Auditor - Cimas Health Group Pvt Ltd",
-      "link": "https://vacancymail.co.zw/jobs/internal-auditor-cimas-health-group-pvt-ltd-68115/",
-      "image": "https://mutapatimes.com/img/cards/jobs/025f94670475.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Ezekiel Guti University — IT Support Technician",
-      "link": "https://vacancymail.co.zw/jobs/it-support-technician-68114/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8bd21e35bc31.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Ezekiel Guti University — Works Infrastructure Maintenance Supervisor (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/works-infrastructure-maintenance-supervisor-1-post-68113/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fcda818d15a5.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "University of Zimbabwe - UZ — Mechatronics Technician",
-      "link": "https://vacancymail.co.zw/jobs/mechatronics-technician-68112/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2da4b681e7a8.png",
       "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     }
