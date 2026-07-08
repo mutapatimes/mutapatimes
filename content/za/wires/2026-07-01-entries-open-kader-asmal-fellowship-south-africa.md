@@ -1,0 +1,16 @@
+---
+title: "Entries Open: Kader Asmal Fellowship (South Africa)"
+date: 2026-07-01T07:30:55.000Z
+author: fundsforNGOs
+category: Culture
+image: 
+summary: "Entries Open: Kader Asmal Fellowship (South Africa)"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZW03eUp5ZlNWaW1NTDdtRG1iSFh1VmIwNlhEcXpNN3k3a2FBQ1NVY3BvR000NTRDc0JPT3ZOMDhWUEZLeWxqVGpuaGtlMklpMFlkYUxLcXQ5M3pLSEQ0SDJ4WlFwTE5VTkNSSTUzb3ZmN3FaOGl5MXRVazRRa0FmcFZYMk4tcUxBNmV3RktuMjdlWTFV0gGaAUFVX3lxTE84V2ZOVFRkZkJ0MVBLUGtoSFFGVGpYZHRnaVVsZl9EbDdFcVRJWm14SUNfLW42QmlJQjNtOE93QnA0NlROU25VMkFnTWx6ZEg1OWdDbU45bVhTQUhDdHhFTWtrYnNQc3hScWdsblFEOE5EN3lNaHF1Q2I3RTZsWk5oOS1xRTF2cjhYa1JSUWJvSHU1X0N2V3NmcVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by fundsforNGOs.*
+[Read original article](https://news.google.com/rss/articles/CBMilAFBVV95cUxOZW03eUp5ZlNWaW1NTDdtRG1iSFh1VmIwNlhEcXpNN3k3a2FBQ1NVY3BvR000NTRDc0JPT3ZOMDhWUEZLeWxqVGpuaGtlMklpMFlkYUxLcXQ5M3pLSEQ0SDJ4WlFwTE5VTkNSSTUzb3ZmN3FaOGl5MXRVazRRa0FmcFZYMk4tcUxBNmV3RktuMjdlWTFV0gGaAUFVX3lxTE84V2ZOVFRkZkJ0MVBLUGtoSFFGVGpYZHRnaVVsZl9EbDdFcVRJWm14SUNfLW42QmlJQjNtOE93QnA0NlROU25VMkFnTWx6ZEg1OWdDbU45bVhTQUhDdHhFTWtrYnNQc3hScWdsblFEOE5EN3lNaHF1Q2I3RTZsWk5oOS1xRTF2cjhYa1JSUWJvSHU1X0N2V3NmcVE?oc=5)

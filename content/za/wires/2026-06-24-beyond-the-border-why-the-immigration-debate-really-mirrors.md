@@ -1,0 +1,16 @@
+---
+title: "Beyond the border — why the immigration debate really mirrors our soul"
+date: 2026-06-24T20:05:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Beyond the border — why the immigration debate really mirrors our soul"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimAJBVV95cUxPVl9jQ2JKV1hUbUdOQzZIOUF3T056LXo3VlpGblozWk1rR0l1LWdmVTVIMWxpNXQtNDJWSWFzMWpZUWNEaFdPeDhvNEo3bmhUYVhpbEtoZUlLeDV2TXdkb3RpQTVGMWpEbWRnMGpnLVdNV3E0OWVhTzRNaHVwdGdfT29ObEQyanZ4MTJHOUFhUzhaSmdZYVdLLVBKX09EcVRtc01wZzl6QXJhYksxRHBEODZNMGdYdXJUZzFQamF3Z2N2Y2hFUHlQZjRoOUZqWWNwVFdWX2ltd2p0N0ptcXF4Ui1sVHhhYnI0OW50S0NiRjdVNS1xTjVsRFVxQTNXaW5kekZ1Q3MyZy00a1NDb0Q2QzZ4Z2JkRy14?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMimAJBVV95cUxPVl9jQ2JKV1hUbUdOQzZIOUF3T056LXo3VlpGblozWk1rR0l1LWdmVTVIMWxpNXQtNDJWSWFzMWpZUWNEaFdPeDhvNEo3bmhUYVhpbEtoZUlLeDV2TXdkb3RpQTVGMWpEbWRnMGpnLVdNV3E0OWVhTzRNaHVwdGdfT29ObEQyanZ4MTJHOUFhUzhaSmdZYVdLLVBKX09EcVRtc01wZzl6QXJhYksxRHBEODZNMGdYdXJUZzFQamF3Z2N2Y2hFUHlQZjRoOUZqWWNwVFdWX2ltd2p0N0ptcXF4Ui1sVHhhYnI0OW50S0NiRjdVNS1xTjVsRFVxQTNXaW5kekZ1Q3MyZy00a1NDb0Q2QzZ4Z2JkRy14?oc=5)

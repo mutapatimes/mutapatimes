@@ -1,0 +1,16 @@
+---
+title: "SIPHO MASONDO | Rollout of reforms a significant but belated reckoning for SA’s intelligence system"
+date: 2026-06-29T02:30:00.000Z
+author: TimesLIVE
+category: Policy
+image: 
+summary: "SIPHO MASONDO | Rollout of reforms a significant but belated reckoning for SA’s intelligence system"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQcDlTRjZUeWtUNUlfRk1Db0V2eDFndE1PaUZab2JhaDZ2QmVudmIwemZ4bndvVlh3eVNzck8yVW1CM09PZHJ0YWw2RFhjYkhuR09XYW43T0FKR184cTJZaWtzWDVOUEllUkt3QjZBYlhKQllzbVljLW1GbWV4N3NvTmVEQkh1d2s3aDZhYUVLRUJxaDhaUkdyOUtzc184dTBfeVBtOXdVOTF4ek95bTgyT1JZMHQ1cjdET1NneTE1SkFnYkdGUEU2dE9iWmQ5UjAxSElPVkV5YVBpSkV1Q1hfc0d6R09pRXJlME5NOWxLd3Z6TU5nVEphZExhTExtX3FQNUZyeEpPZ1k?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxQcDlTRjZUeWtUNUlfRk1Db0V2eDFndE1PaUZab2JhaDZ2QmVudmIwemZ4bndvVlh3eVNzck8yVW1CM09PZHJ0YWw2RFhjYkhuR09XYW43T0FKR184cTJZaWtzWDVOUEllUkt3QjZBYlhKQllzbVljLW1GbWV4N3NvTmVEQkh1d2s3aDZhYUVLRUJxaDhaUkdyOUtzc184dTBfeVBtOXdVOTF4ek95bTgyT1JZMHQ1cjdET1NneTE1SkFnYkdGUEU2dE9iWmQ5UjAxSElPVkV5YVBpSkV1Q1hfc0d6R09pRXJlME5NOWxLd3Z6TU5nVEphZExhTExtX3FQNUZyeEpPZ1k?oc=5)

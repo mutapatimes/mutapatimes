@@ -1,0 +1,16 @@
+---
+title: "Immigrant jumps to death from Durban building to escape apparent xenophobic attack"
+date: 2026-06-30T16:59:56.000Z
+author: TimesLIVE
+category: Tech
+image: 
+summary: "Immigrant jumps to death from Durban building to escape apparent xenophobic attack"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLUN1T2pwNEMyS3NYSGE3V3dyYkd4UWIzYjkwQXlia09kNkFkejA0ckVQOW5nSFNkZnNqRk1Ib3I1ZGhocFhEUzdyeVhCamxEZ19OYWRiakdHbHJKZml4d0Q4d1NBa0V4OHg0aDFVN3dOM05HTTBrazZZVWllaEMzQUhTb05PUUZkdzZSUzNmTkxRcnVkeDhLV25TaXN2dGl1SWJTQWk4MDEzNTNHQzFwWlNibzcxM2dmdElOVXBxSGJtM2gtcnhKZnE2S0c2c3JmVkxSRDdNQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLUN1T2pwNEMyS3NYSGE3V3dyYkd4UWIzYjkwQXlia09kNkFkejA0ckVQOW5nSFNkZnNqRk1Ib3I1ZGhocFhEUzdyeVhCamxEZ19OYWRiakdHbHJKZml4d0Q4d1NBa0V4OHg0aDFVN3dOM05HTTBrazZZVWllaEMzQUhTb05PUUZkdzZSUzNmTkxRcnVkeDhLV25TaXN2dGl1SWJTQWk4MDEzNTNHQzFwWlNibzcxM2dmdElOVXBxSGJtM2gtcnhKZnE2S0c2c3JmVkxSRDdNQQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "South Africa expands nurse-led community clinics as FirstRand Foundation scales healthcare access to underserved communities"
+date: 2026-06-25T06:55:21.000Z
+author: Africa Sustainability Matters
+category: Health
+image: 
+summary: "South Africa expands nurse-led community clinics as FirstRand Foundation scales healthcare access to underserved communities"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNYXU1MF9XXzNJdWRzSFdFRjRpR1BnSHRkMXRhMTFzdW9PNWU5Tm9Wck44XzZGN051WGs1THdjVDhjUUdSYnNjbENpbE9PeTBUa1FTWkVPb04zNDRJbnRueTh1TEpMTXdmeTdjS0ZSR3QwaFlwZ3VWUjF3clNSczBBT2V3b3V1ZHBoSl9BZGFLOUlqY0xHZi02N09xUXpVMXZKcm1QaURkaF84OGlyREY2cElIRGJNaFlldUh6cVhoMzFfcWpZcUU5eTJwU3VHV0xaOXYyb0V5MGl2Sm0xYXREMTJ6RXl0QzJqdTNjem1PN0RFdHBOemIzVg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Africa Sustainability Matters.*
+[Read original article](https://news.google.com/rss/articles/CBMi-AFBVV95cUxNYXU1MF9XXzNJdWRzSFdFRjRpR1BnSHRkMXRhMTFzdW9PNWU5Tm9Wck44XzZGN051WGs1THdjVDhjUUdSYnNjbENpbE9PeTBUa1FTWkVPb04zNDRJbnRueTh1TEpMTXdmeTdjS0ZSR3QwaFlwZ3VWUjF3clNSczBBT2V3b3V1ZHBoSl9BZGFLOUlqY0xHZi02N09xUXpVMXZKcm1QaURkaF84OGlyREY2cElIRGJNaFlldUh6cVhoMzFfcWpZcUU5eTJwU3VHV0xaOXYyb0V5MGl2Sm0xYXREMTJ6RXl0QzJqdTNjem1PN0RFdHBOemIzVg?oc=5)

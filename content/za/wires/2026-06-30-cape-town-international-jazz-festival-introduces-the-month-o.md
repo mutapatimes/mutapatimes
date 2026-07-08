@@ -1,0 +1,16 @@
+---
+title: "Cape Town International Jazz Festival introduces the Month of the Mother City"
+date: 2026-06-30T08:17:10.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "Cape Town International Jazz Festival introduces the Month of the Mother City"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSGZhSHNtZWhrZGRKQ3JLcUVoOU1SZmR4UjZZRG1RUVVDbkwtcjRoUEJPaWhVdVVILVdLc3N5a0J2QnY4eUhlTWhod3FpeEliWENRa3pRZ05tdEI3RUVEcFhKQzZCUDM4eEdxTzJVeHZfaW0yQUVyTF9jMm42ai02aEQtV2JrdkNqamxQM0JnYnpCd1VoNFZMdjVsSzJmRjF0di03UjFJZzRxZzJvb3VINEhCcmlIRF81M3lRT2taVm90WVhSdGlXeXRvcTNjSi11Y1plTUVLb2hIY1hoMDhBOWUtT1dkMnFkWmh6bDBlMkxkN1lKZkJr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSGZhSHNtZWhrZGRKQ3JLcUVoOU1SZmR4UjZZRG1RUVVDbkwtcjRoUEJPaWhVdVVILVdLc3N5a0J2QnY4eUhlTWhod3FpeEliWENRa3pRZ05tdEI3RUVEcFhKQzZCUDM4eEdxTzJVeHZfaW0yQUVyTF9jMm42ai02aEQtV2JrdkNqamxQM0JnYnpCd1VoNFZMdjVsSzJmRjF0di03UjFJZzRxZzJvb3VINEhCcmlIRF81M3lRT2taVm90WVhSdGlXeXRvcTNjSi11Y1plTUVLb2hIY1hoMDhBOWUtT1dkMnFkWmh6bDBlMkxkN1lKZkJr?oc=5)

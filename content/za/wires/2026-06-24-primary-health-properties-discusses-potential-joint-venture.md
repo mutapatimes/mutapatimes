@@ -1,0 +1,16 @@
+---
+title: "Primary Health Properties discusses potential joint venture for private hospital portfolio"
+date: 2026-06-24T14:33:03.000Z
+author: IOL
+category: Health
+image: 
+summary: "Primary Health Properties discusses potential joint venture for private hospital portfolio"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSFBRNHE2aUtFeVh3cGdaeEZxOGRZWHBKcWdVSTJ0WTlyblBUb1J2U3ZpXzNGQzlGQW14OThQQ2RHNnBUaWdsVk1pdjhZWnJpRWdaRTZ5cW5sWjA2T0VKX1ZnamR6enROWTY1UlpQeVdjZURGc2FOaDFkMHotbjk0TTY2RklDcWk1bktFdTl5c0hRY19RZHNwWHZjVk5POGl5aUhKUWhGVEVFVHp4WG5ZQVQtVnhoODhqajQwbkhJQjVPbzhVZGo1blg4U18yaGMtZW4tYkg5eDV2cnlNSnhF?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSFBRNHE2aUtFeVh3cGdaeEZxOGRZWHBKcWdVSTJ0WTlyblBUb1J2U3ZpXzNGQzlGQW14OThQQ2RHNnBUaWdsVk1pdjhZWnJpRWdaRTZ5cW5sWjA2T0VKX1ZnamR6enROWTY1UlpQeVdjZURGc2FOaDFkMHotbjk0TTY2RklDcWk1bktFdTl5c0hRY19RZHNwWHZjVk5POGl5aUhKUWhGVEVFVHp4WG5ZQVQtVnhoODhqajQwbkhJQjVPbzhVZGo1blg4U18yaGMtZW4tYkg5eDV2cnlNSnhF?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "From Durban to Soweto, anti-migrant protests spark isolated looting of foreign and local traders"
+date: 2026-06-30T07:00:00.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "From Durban to Soweto, anti-migrant protests spark isolated looting of foreign and local traders"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPVnpfVWJyb25RcEJtbjUyNFB1WXd5NU5OUklybld1S3YwTDZLN1p5OVdQMVVZdzVpM2FmUF9zTDFwY2p3ZmFhdnA5LXBITXVEZ1JGVGN1V0pBQ1BXT1RsZmdYWnFwcDJtU0pwdlg2bWhwd3JQdXp1VW9IMV9kdkhNVmx5ZXQ4LS1RRk94RV9KSEFuU3dibjVxa3pUUWk4dUtMM0p0ZzFhc0gzcGZjX0ZMVmZLWkY0am9PbmlNMUNvSTBiYk1seFN5cGhVaFViMmZqY01TU3Y2VGdibjdsOGJQR3FDS1E3M0J5TVpuLVRjV3ExbDJsUmRGVmU1YmJMckMxaXpUeTJad08xNmk4M2NBUmRMcXdlbWNwLVI2Nld1X0dBLUZqajlsbFY2Wk9iOVJELWdSNzBYYmlMaWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiuwJBVV95cUxPVnpfVWJyb25RcEJtbjUyNFB1WXd5NU5OUklybld1S3YwTDZLN1p5OVdQMVVZdzVpM2FmUF9zTDFwY2p3ZmFhdnA5LXBITXVEZ1JGVGN1V0pBQ1BXT1RsZmdYWnFwcDJtU0pwdlg2bWhwd3JQdXp1VW9IMV9kdkhNVmx5ZXQ4LS1RRk94RV9KSEFuU3dibjVxa3pUUWk4dUtMM0p0ZzFhc0gzcGZjX0ZMVmZLWkY0am9PbmlNMUNvSTBiYk1seFN5cGhVaFViMmZqY01TU3Y2VGdibjdsOGJQR3FDS1E3M0J5TVpuLVRjV3ExbDJsUmRGVmU1YmJMckMxaXpUeTJad08xNmk4M2NBUmRMcXdlbWNwLVI2Nld1X0dBLUZqajlsbFY2Wk9iOVJELWdSNzBYYmlMaWc?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Western Cape closes repatriation operation, but hundreds still stranded outside Epping centre"
+date: 2026-07-06T18:41:39.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Western Cape closes repatriation operation, but hundreds still stranded outside Epping centre"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMzBqaDRxZWNnZmEyT2xtcUpuWEVsbEI3aG12ZkxhMFcyX3VtS0l6SS13cjhmLU82SWdiaTM1VWhWVURBbEU1UHFsQ0VOeE9CMkhIei1LOWhwdmxrSkZLcUdGNF9XSXJwUG9ObmprdG1BQXlIN3lqMERpdVdpT05ZTUlXZ2dvUmVlaHNWem1ZaGE1NUp2bUZwWWZPWjNlTDgzbHRLNnVuaVNqSEVHR3dFcHM2SFQtelNrNEFBdmkwU1BfR0c3dUxQN0Zrd3B3NWIxTXRqb01ZdzkxNGFXa2ZXMzFiRzQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMzBqaDRxZWNnZmEyT2xtcUpuWEVsbEI3aG12ZkxhMFcyX3VtS0l6SS13cjhmLU82SWdiaTM1VWhWVURBbEU1UHFsQ0VOeE9CMkhIei1LOWhwdmxrSkZLcUdGNF9XSXJwUG9ObmprdG1BQXlIN3lqMERpdVdpT05ZTUlXZ2dvUmVlaHNWem1ZaGE1NUp2bUZwWWZPWjNlTDgzbHRLNnVuaVNqSEVHR3dFcHM2SFQtelNrNEFBdmkwU1BfR0c3dUxQN0Zrd3B3NWIxTXRqb01ZdzkxNGFXa2ZXMzFiRzQ?oc=5)

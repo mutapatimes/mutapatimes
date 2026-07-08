@@ -1,0 +1,16 @@
+---
+title: "How one South African’s 1,600km walk revealed the country’s resilient spirit"
+date: 2026-07-02T05:08:57.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "How one South African’s 1,600km walk revealed the country’s resilient spirit"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingJBVV95cUxPSlF3TUFheFFXMG51Zzd2X29oUHVubHJ6UVZvajJtMmZMb1p0dXA4cmNYUzhNS29kN0FuRENfeGkwWHhrUHQwN1JhVXdZaE4tRmNsVkszbm9DamFCRndhT2JzcG43UXBXaGhuNGN1NVdZeTFIRXV1VHpCTFhoZmtkOFpJX3lsLWYzb3VBN19CdlF4UnVxWTZXeWtwMGxZd1JPOV9GUTk5NGNNd0lwWVFoS3ZFb2c2a29sU2hHUE5iVk5PMnlKSUNuOFllX2hOX0t1dm9Ya2R3bEFXY3VZa0RqbzNTb0dFZGlGNUR2VGgzU0xmUTJhaURocU5vQmNfeDlicVhQdmpZU1pLcllaUGx6VTJiVnZ2S2dyM2ZhdkJ3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMingJBVV95cUxPSlF3TUFheFFXMG51Zzd2X29oUHVubHJ6UVZvajJtMmZMb1p0dXA4cmNYUzhNS29kN0FuRENfeGkwWHhrUHQwN1JhVXdZaE4tRmNsVkszbm9DamFCRndhT2JzcG43UXBXaGhuNGN1NVdZeTFIRXV1VHpCTFhoZmtkOFpJX3lsLWYzb3VBN19CdlF4UnVxWTZXeWtwMGxZd1JPOV9GUTk5NGNNd0lwWVFoS3ZFb2c2a29sU2hHUE5iVk5PMnlKSUNuOFllX2hOX0t1dm9Ya2R3bEFXY3VZa0RqbzNTb0dFZGlGNUR2VGgzU0xmUTJhaURocU5vQmNfeDlicVhQdmpZU1pLcllaUGx6VTJiVnZ2S2dyM2ZhdkJ3?oc=5)

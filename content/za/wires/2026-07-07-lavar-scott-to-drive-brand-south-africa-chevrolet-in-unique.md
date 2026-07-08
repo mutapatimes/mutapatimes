@@ -1,0 +1,16 @@
+---
+title: "Lavar Scott to Drive Brand South Africa Chevrolet in Unique Atlanta NASCAR Program"
+date: 2026-07-07T16:53:25.000Z
+author: Speedway Digest
+category: Culture
+image: 
+summary: "Lavar Scott to Drive Brand South Africa Chevrolet in Unique Atlanta NASCAR Program"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPaTFabTFfbjItNW11SFZLOHZIZmtyZlEzbk80LV9qamFVWkZWYjJHMndZd0hvMHgzeWJ3VVpVS0JPZlJ6ajBRbVVuTW1rSXpzWWs2dko4UDhFY3hTS0gzTG1GRGgyNU9rcmFnWC1KcDhlcDVKUjlMcElSeTdBSkJZaFhHQkZDczgwZUZXSnJrTmJUU0s2SDg3amhtMm0zYUJrYXVldl83anJqMEhsQUd6R09vV1doY0JueHlsc0VhZ3VMWUdWamlRS3VPWEg2emY1dFB5aEtVeTI3NHp4WC00czBheFNVMkllTm1qb2VLeEstU3BEMWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Speedway Digest.*
+[Read original article](https://news.google.com/rss/articles/CBMi9gFBVV95cUxPaTFabTFfbjItNW11SFZLOHZIZmtyZlEzbk80LV9qamFVWkZWYjJHMndZd0hvMHgzeWJ3VVpVS0JPZlJ6ajBRbVVuTW1rSXpzWWs2dko4UDhFY3hTS0gzTG1GRGgyNU9rcmFnWC1KcDhlcDVKUjlMcElSeTdBSkJZaFhHQkZDczgwZUZXSnJrTmJUU0s2SDg3amhtMm0zYUJrYXVldl83anJqMEhsQUd6R09vV1doY0JueHlsc0VhZ3VMWUdWamlRS3VPWEg2emY1dFB5aEtVeTI3NHp4WC00czBheFNVMkllTm1qb2VLeEstU3BEMWc?oc=5)

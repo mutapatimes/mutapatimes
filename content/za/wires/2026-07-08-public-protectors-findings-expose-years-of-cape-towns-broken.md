@@ -1,0 +1,16 @@
+---
+title: "Public protector’s findings expose years of Cape Town’s broken service delivery, say Khayelitsha residents"
+date: 2026-07-08T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Public protector’s findings expose years of Cape Town’s broken service delivery, say Khayelitsha residents"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTVlDckEyU29rMFQ3Ny1HLTEyM0hOZ0lDc0FlMU9VaEhYQVQ4UHV1RWhqakJubDdOYkFXVVFJcVQ0NGZvbW5DcHJnckdZeXNjZ2c0aW96Y0ZISENZNkthOUM5NmJHWTF3dU5yQTYzYTBPV0JLMjdYUExCZWs1cEZqYlpuWFp1LXdTajd0N3hUNlZZc29fdGpXMkM2Ymt4c0ZwUERRS1dmWHJoUVFkNFpHWE5zbzVUNkF4dXB2Uk1GMWFjbzI1WTN6c0VZcGdLa05CU1dvUjZsTVI3ZElHLUMtdFh0a05EYjZLbzNBd2J6WXNnT0U?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTVlDckEyU29rMFQ3Ny1HLTEyM0hOZ0lDc0FlMU9VaEhYQVQ4UHV1RWhqakJubDdOYkFXVVFJcVQ0NGZvbW5DcHJnckdZeXNjZ2c0aW96Y0ZISENZNkthOUM5NmJHWTF3dU5yQTYzYTBPV0JLMjdYUExCZWs1cEZqYlpuWFp1LXdTajd0N3hUNlZZc29fdGpXMkM2Ymt4c0ZwUERRS1dmWHJoUVFkNFpHWE5zbzVUNkF4dXB2Uk1GMWFjbzI1WTN6c0VZcGdLa05CU1dvUjZsTVI3ZElHLUMtdFh0a05EYjZLbzNBd2J6WXNnT0U?oc=5)

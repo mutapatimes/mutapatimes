@@ -1,0 +1,16 @@
+---
+title: "OLEBOGENG RAMATLHODI | Illicit trade, affordability and South Africa’s shrinking fiscal room"
+date: 2026-07-04T22:07:45.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "OLEBOGENG RAMATLHODI | Illicit trade, affordability and South Africa’s shrinking fiscal room"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNX2d1SDhnc2FYV2U2NXl5bWd5cFdkc1lHeF9iTjNQTENLY2tYckpiTE9qWXhmenliSWlJR0p2UEtWRUJOVEFFYWtZblFETWc0TXk5MV9TQzNCaHk0SC1wV2tCNFV5N010NXhnSy1aNEVmeV9WRHk0TXBZdzg3SFl4NVZ1MG9aV01oOGNtNzlWTUZMdXdZa2h6VUxZVm40UElwZDZBeDFLTlRFZ2ZDd3YxcUtwSDBRQ3pRVjZlR3RROEdXTzFPSEpLZm5BckJFUGV3R2JEX250by1KZV85dUpQLVJIdVBzX3UtV1JPTmR3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNX2d1SDhnc2FYV2U2NXl5bWd5cFdkc1lHeF9iTjNQTENLY2tYckpiTE9qWXhmenliSWlJR0p2UEtWRUJOVEFFYWtZblFETWc0TXk5MV9TQzNCaHk0SC1wV2tCNFV5N010NXhnSy1aNEVmeV9WRHk0TXBZdzg3SFl4NVZ1MG9aV01oOGNtNzlWTUZMdXdZa2h6VUxZVm40UElwZDZBeDFLTlRFZ2ZDd3YxcUtwSDBRQ3pRVjZlR3RROEdXTzFPSEpLZm5BckJFUGV3R2JEX250by1KZV85dUpQLVJIdVBzX3UtV1JPTmR3?oc=5)

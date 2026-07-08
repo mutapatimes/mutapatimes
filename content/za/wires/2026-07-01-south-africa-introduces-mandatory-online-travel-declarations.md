@@ -1,0 +1,16 @@
+---
+title: "South Africa introduces mandatory online travel declarations for millions of international travellers"
+date: 2026-07-01T20:40:07.000Z
+author: Business Insider Africa
+category: Policy
+image: 
+summary: "South Africa introduces mandatory online travel declarations for millions of international travellers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaF9uckZnaHphamdkM2FwOHhSdUNnbEVnSTBEWDA1RFk5OVFieVRMUmtTVWxiSGJxQTN3Z1Q0MWliOHNGU3JBaDhHd0RrdnctZUlLOVF4MHBwV1k5cVN1bllTRi1iLTVwVDIxNWNieTEtcmp2WHFsYzRGdzFGbDc0NDdwWGlLMHJWMnFEVEpnajVGOEJLZlhtajU4Zk9zeVJRcVpsYUhyV2xJdFk4ejJjZWF0d3dnQjFpVngwdE1KR2pWOHNoWWRWMExHTXgtWjkx?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Business Insider Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaF9uckZnaHphamdkM2FwOHhSdUNnbEVnSTBEWDA1RFk5OVFieVRMUmtTVWxiSGJxQTN3Z1Q0MWliOHNGU3JBaDhHd0RrdnctZUlLOVF4MHBwV1k5cVN1bllTRi1iLTVwVDIxNWNieTEtcmp2WHFsYzRGdzFGbDc0NDdwWGlLMHJWMnFEVEpnajVGOEJLZlhtajU4Zk9zeVJRcVpsYUhyV2xJdFk4ejJjZWF0d3dnQjFpVngwdE1KR2pWOHNoWWRWMExHTXgtWjkx?oc=5)

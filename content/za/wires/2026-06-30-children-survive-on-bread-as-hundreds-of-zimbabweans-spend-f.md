@@ -1,0 +1,16 @@
+---
+title: "Children survive on bread as hundreds of Zimbabweans spend freezing, rainy night outside Cape Town home affairs office"
+date: 2026-06-30T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Children survive on bread as hundreds of Zimbabweans spend freezing, rainy night outside Cape Town home affairs office"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAJBVV95cUxObFRWalFyd1NCMzhmZEZhaWtUcEp4S1J0bEN0MVhXWURfOVhpVGFtUHNfMEpoYkxGQTFmZlFoNmlvWHo5RzdxQUFQR0N4MnZYWnNUOFRhX0F2OWUzQ3Awd0EyZWJpRFphMGpPRlBkbjV5UHN4eExTSVNJXzZLbEdEV2g0bkJxSnI2M0xsUUdENkpMUVVhc2ZpbWEtaXFSMUJDZzd5dV9ZMUZ3WWJBa1hVNVg2eF83aFFRcmQ2OTdES0xublVOZkltS3hNeWpHdlNjYmtLTDhyWEdTa3MtaHRyZE1JUXZSYnJfRHY3NTVGTlNEM2l1NVNib1pLejVQSm5WNWNOSg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMihAJBVV95cUxObFRWalFyd1NCMzhmZEZhaWtUcEp4S1J0bEN0MVhXWURfOVhpVGFtUHNfMEpoYkxGQTFmZlFoNmlvWHo5RzdxQUFQR0N4MnZYWnNUOFRhX0F2OWUzQ3Awd0EyZWJpRFphMGpPRlBkbjV5UHN4eExTSVNJXzZLbEdEV2g0bkJxSnI2M0xsUUdENkpMUVVhc2ZpbWEtaXFSMUJDZzd5dV9ZMUZ3WWJBa1hVNVg2eF83aFFRcmQ2OTdES0xublVOZkltS3hNeWpHdlNjYmtLTDhyWEdTa3MtaHRyZE1JUXZSYnJfRHY3NTVGTlNEM2l1NVNib1pLejVQSm5WNWNOSg?oc=5)

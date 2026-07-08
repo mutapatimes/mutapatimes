@@ -1,0 +1,16 @@
+---
+title: "The Real Scoreline: Can South Africa avoid climate knockout?"
+date: 2026-06-26T14:05:48.000Z
+author: Daily Maverick
+category: Sport
+image: 
+summary: "The Real Scoreline: Can South Africa avoid climate knockout?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihgJBVV95cUxNUFM0NG9lWDAwbWFQMHFYbFdkenRTWXdWVVhrWGp6LU5aRk0wYkhBOWI1VklXTndIa2Jid0kxaXlvRm1Ta1VrYjNBcldQRVFZRlZKMlNKVEo0SFFOQXV2NmdrUDlQMXZVZ2ZjbHV6WnFCemhrOUYxNEVtV1hkN2FMRU1EWXotYmxDMW43WjdTaWl6V1BQRnlNa1VPRkNUVl94dWxMd1hXWVduNE40dzkzRHE0S1JsbTVjYVhnZV9mY2l0RERiSmp2TFQ1eF9ZMDNLd2dQNWo5cWZ6TlZxakVYa1QybTc5aHVJNWtnaHhmM2R1dmlYSEhUSkNfSTYyNDJLLTdDR3ZB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihgJBVV95cUxNUFM0NG9lWDAwbWFQMHFYbFdkenRTWXdWVVhrWGp6LU5aRk0wYkhBOWI1VklXTndIa2Jid0kxaXlvRm1Ta1VrYjNBcldQRVFZRlZKMlNKVEo0SFFOQXV2NmdrUDlQMXZVZ2ZjbHV6WnFCemhrOUYxNEVtV1hkN2FMRU1EWXotYmxDMW43WjdTaWl6V1BQRnlNa1VPRkNUVl94dWxMd1hXWVduNE40dzkzRHE0S1JsbTVjYVhnZV9mY2l0RERiSmp2TFQ1eF9ZMDNLd2dQNWo5cWZ6TlZxakVYa1QybTc5aHVJNWtnaHhmM2R1dmlYSEhUSkNfSTYyNDJLLTdDR3ZB?oc=5)

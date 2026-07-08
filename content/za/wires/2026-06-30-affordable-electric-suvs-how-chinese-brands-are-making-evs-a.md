@@ -1,0 +1,16 @@
+---
+title: "Affordable electric SUVs: How Chinese brands are making EVs accessible for South Africans"
+date: 2026-06-30T03:31:03.000Z
+author: News24
+category: Business
+image: 
+summary: "Affordable electric SUVs: How Chinese brands are making EVs accessible for South Africans"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSzBRQVlRaVJEV2dGRVU5M1NCUTk1Z1BvamItT2lqd0p4ZEVWY0dKTVVLOFRwOEx3dlhNeXROUzRqNTZfUjhVdkF0SW9rZjlPd0MwWkRJc0JMeTFFV2FHMDZ5U2FUV01IamZRRE5DUzBIaUlFUmUyS2tZMVVDR1Jab1ZISE93QVZlWW8xeEJoNlZYXzlBOWNDU2tjU2FyMHN3ck5QTFpFLTMwVG4tZy0zWEREb0xYWDhjcHZyOWxlY2FBdlZmUF9zRTNJN3M3UjB2M3N3eHN4SWZFVldlQWVIdTJKSTZHdlNY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSzBRQVlRaVJEV2dGRVU5M1NCUTk1Z1BvamItT2lqd0p4ZEVWY0dKTVVLOFRwOEx3dlhNeXROUzRqNTZfUjhVdkF0SW9rZjlPd0MwWkRJc0JMeTFFV2FHMDZ5U2FUV01IamZRRE5DUzBIaUlFUmUyS2tZMVVDR1Jab1ZISE93QVZlWW8xeEJoNlZYXzlBOWNDU2tjU2FyMHN3ck5QTFpFLTMwVG4tZy0zWEREb0xYWDhjcHZyOWxlY2FBdlZmUF9zRTNJN3M3UjB2M3N3eHN4SWZFVldlQWVIdTJKSTZHdlNY?oc=5)

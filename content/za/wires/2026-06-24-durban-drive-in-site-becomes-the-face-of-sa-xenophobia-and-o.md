@@ -1,0 +1,16 @@
+---
+title: "Durban Drive-in site becomes the face of SA xenophobia and of desperation for Malawians"
+date: 2026-06-24T20:05:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Durban Drive-in site becomes the face of SA xenophobia and of desperation for Malawians"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgJBVV95cUxPRzVmOGVzZTlSM1oteFNfWjV5d2RocXp3dnNMeDB5eHdkbHF4Q3V1eWN6ZHpnMmlKaTRrOUsyenZJQ2dwTHV5NEhTeTA0U09RYWUxTjlSa2ZHclhqYmV2MVdwZzJCUzgxelFWWmxYNXhtTElUOFc4TDl2anNqNGNNNFdNbWEtekpQT0RYMlNGbTh3cVdXMFdjOHFlYy1OOVVMdmNqQ1FTMXhueUpyNVRHSXc1enZUODdQdE5uM1BlczN1TldFZTB1MEN2TmlYLVhwUDRUQ1pDMjNMS3ZJNXZlTUZONThvdFVMcEtzR0hhUnBoSWVPZTBnSzRKbTFESHh5c29UaEpZLTBnczYwR3Frdk9nektFb0loY25NTXRwUUtRZlVXVjVTczBSemRTZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirgJBVV95cUxPRzVmOGVzZTlSM1oteFNfWjV5d2RocXp3dnNMeDB5eHdkbHF4Q3V1eWN6ZHpnMmlKaTRrOUsyenZJQ2dwTHV5NEhTeTA0U09RYWUxTjlSa2ZHclhqYmV2MVdwZzJCUzgxelFWWmxYNXhtTElUOFc4TDl2anNqNGNNNFdNbWEtekpQT0RYMlNGbTh3cVdXMFdjOHFlYy1OOVVMdmNqQ1FTMXhueUpyNVRHSXc1enZUODdQdE5uM1BlczN1TldFZTB1MEN2TmlYLVhwUDRUQ1pDMjNMS3ZJNXZlTUZONThvdFVMcEtzR0hhUnBoSWVPZTBnSzRKbTFESHh5c29UaEpZLTBnczYwR3Frdk9nektFb0loY25NTXRwUUtRZlVXVjVTczBSemRTZw?oc=5)

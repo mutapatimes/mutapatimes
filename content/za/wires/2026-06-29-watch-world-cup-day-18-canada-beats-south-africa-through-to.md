@@ -1,0 +1,16 @@
+---
+title: "Watch World Cup Day 18: Canada beats South Africa, through to last 16"
+date: 2026-06-29T08:40:45.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "Watch World Cup Day 18: Canada beats South Africa, through to last 16"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE5WOFgxXzlPdlN3MXVMbjZIMWtTQXlhZjJNdTZtRjBhNVBJOTllVllFemZaN3VKWlY5NFgxSHMxN2E4WFo1dm5KZnhnN3JzWFhQakg0VndRTnpFV004TmQ5Q2E2OHd4dDJZSHR6WTdOZzRxQkR0YVlHUU0zQVRXQdIBgwFBVV95cUxON3d2RUJLRlVpMThSV2pSV2lsbDdpWXYwQVZsaEczNWdRd3ZvRTdpZExER1QyR0FrM3QtQlV1aGVQRTlrbmpMODhYUHEyZDVnbWJSWUJyc0xuZWwtZUk1SkphVTdOeHZKY0FEMTZDMjJMTVpEYmdvTHE0azN1cUQwZzM0QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMifkFVX3lxTE5WOFgxXzlPdlN3MXVMbjZIMWtTQXlhZjJNdTZtRjBhNVBJOTllVllFemZaN3VKWlY5NFgxSHMxN2E4WFo1dm5KZnhnN3JzWFhQakg0VndRTnpFV004TmQ5Q2E2OHd4dDJZSHR6WTdOZzRxQkR0YVlHUU0zQVRXQdIBgwFBVV95cUxON3d2RUJLRlVpMThSV2pSV2lsbDdpWXYwQVZsaEczNWdRd3ZvRTdpZExER1QyR0FrM3QtQlV1aGVQRTlrbmpMODhYUHEyZDVnbWJSWUJyc0xuZWwtZUk1SkphVTdOeHZKY0FEMTZDMjJMTVpEYmdvTHE0azN1cUQwZzM0QQ?oc=5)

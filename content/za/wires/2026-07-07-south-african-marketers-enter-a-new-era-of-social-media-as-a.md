@@ -1,0 +1,16 @@
+---
+title: "South African marketers enter a new era of social media as AI becomes business"
+date: 2026-07-07T09:23:07.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South African marketers enter a new era of social media as AI becomes business"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMioAJBVV95cUxQdDYwZjR6MDJ3TGtyUndTUzBSeUpES196QWtuem9idlFCVHdNVUoxYjFsWnRtMEJVMDFsY3Y4N2pRYVVLNmRtNFBUZWc4bnJ4MENrU3gwamlhVnlNRDVKbklwSEgtd3NqUVBzNjlET2p0YkJpMVNqNDcyd0t4Q2l6M0lnNHAwcVEtbkE5WVRZWnFqc3JJMFZ3XzZNcGpVTGZlWTdUMWo2V0UyVnVNQ3F5c2R4cWh6TFc0QkFNNU5XX21USFVCbUpDRElWdjFzZEFmSkxCTnRUaXdhSklxX1BWREhVUVUzTV9Ea2taTFBYRmZBOEJqZGdaZDlZSTVoVDBHeDJOZUxBNTdncWhoSEZhS3J3MmVudnJITjgyQ3FYVmY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMioAJBVV95cUxQdDYwZjR6MDJ3TGtyUndTUzBSeUpES196QWtuem9idlFCVHdNVUoxYjFsWnRtMEJVMDFsY3Y4N2pRYVVLNmRtNFBUZWc4bnJ4MENrU3gwamlhVnlNRDVKbklwSEgtd3NqUVBzNjlET2p0YkJpMVNqNDcyd0t4Q2l6M0lnNHAwcVEtbkE5WVRZWnFqc3JJMFZ3XzZNcGpVTGZlWTdUMWo2V0UyVnVNQ3F5c2R4cWh6TFc0QkFNNU5XX21USFVCbUpDRElWdjFzZEFmSkxCTnRUaXdhSklxX1BWREhVUVUzTV9Ea2taTFBYRmZBOEJqZGdaZDlZSTVoVDBHeDJOZUxBNTdncWhoSEZhS3J3MmVudnJITjgyQ3FYVmY?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Main South African ports weather storm of criticism ­– just as they’re getting better"
+date: 2026-06-28T16:31:20.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Main South African ports weather storm of criticism ­– just as they’re getting better"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipgJBVV95cUxNZmY2dG15RFJfeTVZMDI4cG1qb2tPejZxTlF3bURYR3dXY3huWlhaOW15RlVPNnNjSVI4dzliU3duYmI1Si02WXdmbV83eXJxcHJWMXFFUlV5dmNIVTFCbENFd2NtTW05c2ItVWN6Mi1mU1Nsbm1qd01GV2VYSjZMR2VoMElTcWw4ak1JSzh4N3ZxMU0xcVpqMGlRdjlOMXItMm9jY3JEejNlb0Q1aFJtVnVnaGFmQmVEUEpobVg1eEVsZWxQREhuUF9CeGhBRzhqVHQxd185V2dzUDBoVzNIZ1BPMXAxTm1GUUk0aWYweXlFMlhnWXVrdFBvSjhjSElmTkpiMDBnYzRZbk80T0h4OEdjLXZYcVFiWTJua05pRHgxS3VURWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipgJBVV95cUxNZmY2dG15RFJfeTVZMDI4cG1qb2tPejZxTlF3bURYR3dXY3huWlhaOW15RlVPNnNjSVI4dzliU3duYmI1Si02WXdmbV83eXJxcHJWMXFFUlV5dmNIVTFCbENFd2NtTW05c2ItVWN6Mi1mU1Nsbm1qd01GV2VYSjZMR2VoMElTcWw4ak1JSzh4N3ZxMU0xcVpqMGlRdjlOMXItMm9jY3JEejNlb0Q1aFJtVnVnaGFmQmVEUEpobVg1eEVsZWxQREhuUF9CeGhBRzhqVHQxd185V2dzUDBoVzNIZ1BPMXAxTm1GUUk0aWYweXlFMlhnWXVrdFBvSjhjSElmTkpiMDBnYzRZbk80T0h4OEdjLXZYcVFiWTJua05pRHgxS3VURWc?oc=5)

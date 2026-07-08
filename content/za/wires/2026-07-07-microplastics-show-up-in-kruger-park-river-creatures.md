@@ -1,0 +1,16 @@
+---
+title: "Microplastics show up in Kruger Park river creatures"
+date: 2026-07-07T18:52:36.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Microplastics show up in Kruger Park river creatures"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNLUFoa25PSF94a090aVMyOVdIV2tEeXozY255V25GMHJaUHpvQWJYbVZ1Sjg0NGRvbmZ5NUhPNW9Nb0RUcFdSNVF6bmN5ZVdaVHEwMFk0UTZXMFpabG5wSS1oaGVKLVdvdEZmMTg5ZXg5SkFmYy1pSGpSY3lvNVBwWThJYzl2bGRncm5aR1YtQy03MmpKZnMzeTFTc1hpd21YdnJkbndwSmVFdVQ2cm01ME1CaHRXZnZyQW50M3N0WXhaVE8yZVZ4WHRsT0V1cFdUUmZJYmVmR3dyay15aTBZa2hUSWVhOVNvWkxRejA5bDVqNXZwVkFFek1kUnU4bTA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxNLUFoa25PSF94a090aVMyOVdIV2tEeXozY255V25GMHJaUHpvQWJYbVZ1Sjg0NGRvbmZ5NUhPNW9Nb0RUcFdSNVF6bmN5ZVdaVHEwMFk0UTZXMFpabG5wSS1oaGVKLVdvdEZmMTg5ZXg5SkFmYy1pSGpSY3lvNVBwWThJYzl2bGRncm5aR1YtQy03MmpKZnMzeTFTc1hpd21YdnJkbndwSmVFdVQ2cm01ME1CaHRXZnZyQW50M3N0WXhaVE8yZVZ4WHRsT0V1cFdUUmZJYmVmR3dyay15aTBZa2hUSWVhOVNvWkxRejA5bDVqNXZwVkFFek1kUnU4bTA?oc=5)

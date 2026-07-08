@@ -1,0 +1,16 @@
+---
+title: "Watch World Cup Day 14: South Africa advance, with Morocco, Mexico, Brazil"
+date: 2026-06-25T12:19:41.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "Watch World Cup Day 14: South Africa advance, with Morocco, Mexico, Brazil"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE93SE9VVXdyajFWb2liZlQ3TGhlWko1anBlbVBQcHNtRDlEUFI5V1U0ZW5vOWhvWEZPN1R0bnhzdXBfYTdnT3dXY1p2TFpWcndSNTM1RVRYVjV1RTItcG1MaFI1U2xQcVB6bGk3OE0yYjlhVmM1M2lhTW5Lb2QwUdIBgwFBVV95cUxOR0RfaFZiVk9DSVVPejVnVUpNNmRpNVJuQWdfTW11ZnhleUs2YkhJUkgxSUh6UG9PU1NEeHFiMEszZUxNVExEazZYNndxNWl5WEdsdDVhckNCMGxoYjQzeVFTZGR3bWZ0dzFqZVlLM2tGY0ZRUTdBSGhGaWpGa0ZwYm5UYw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMifkFVX3lxTE93SE9VVXdyajFWb2liZlQ3TGhlWko1anBlbVBQcHNtRDlEUFI5V1U0ZW5vOWhvWEZPN1R0bnhzdXBfYTdnT3dXY1p2TFpWcndSNTM1RVRYVjV1RTItcG1MaFI1U2xQcVB6bGk3OE0yYjlhVmM1M2lhTW5Lb2QwUdIBgwFBVV95cUxOR0RfaFZiVk9DSVVPejVnVUpNNmRpNVJuQWdfTW11ZnhleUs2YkhJUkgxSUh6UG9PU1NEeHFiMEszZUxNVExEazZYNndxNWl5WEdsdDVhckNCMGxoYjQzeVFTZGR3bWZ0dzFqZVlLM2tGY0ZRUTdBSGhGaWpGa0ZwYm5UYw?oc=5)

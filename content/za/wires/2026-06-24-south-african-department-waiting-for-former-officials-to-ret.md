@@ -1,0 +1,16 @@
+---
+title: "South African department waiting for former officials to return smartphones and laptops"
+date: 2026-06-24T09:02:31.000Z
+author: MyBroadband
+category: Culture
+image: 
+summary: "South African department waiting for former officials to return smartphones and laptops"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcVVrVjBGcWRrMnJYa1hHTlowaW0xSHhFdkhYVjlUVmJZMmJTbWFaZWtTTFRFRGkzVFdLM1VPS2ZxQ3NaNTQtU1hIaGNXbWR0YmVBOUpkbmI4V09XZ0lhbVBYb0tRekg2WFgzNGVTN3FVNjBnQkFmbURFLUdEVTJCVjdSUzg4bUJjRmF3azV1TEtXRWpJcUswNlVOaHl5Z05pNzNONHJkbWRSNFk0a3ZCdHlIdkZlZmp3VXBZbFF1U2pJMWZ3STVFTFViZmUxbnRET0hZOW5aRGk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcVVrVjBGcWRrMnJYa1hHTlowaW0xSHhFdkhYVjlUVmJZMmJTbWFaZWtTTFRFRGkzVFdLM1VPS2ZxQ3NaNTQtU1hIaGNXbWR0YmVBOUpkbmI4V09XZ0lhbVBYb0tRekg2WFgzNGVTN3FVNjBnQkFmbURFLUdEVTJCVjdSUzg4bUJjRmF3azV1TEtXRWpJcUswNlVOaHl5Z05pNzNONHJkbWRSNFk0a3ZCdHlIdkZlZmp3VXBZbFF1U2pJMWZ3STVFTFViZmUxbnRET0hZOW5aRGk?oc=5)

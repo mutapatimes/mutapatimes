@@ -1,0 +1,16 @@
+---
+title: "Awards Wrap: Sikuvile Journalisms Awards finalists announced, Cape Town Tourism strikes gold, IAS champions marketing effectiveness with 2026 Effie Awards sponsorship"
+date: 2026-06-23T04:30:14.000Z
+author: The Media Online
+category: Culture
+image: 
+summary: "Awards Wrap: Sikuvile Journalisms Awards finalists announced, Cape Town Tourism strikes gold, IAS champions marketing effectiveness with 2026 Effie Awards sponsorship"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOdVpOTjdubGZ3cVNUSEpGMjlpMzBESWx5UldiUVd6OGJxVy14OXpCWkpVYU1nOHhBVEpWdFZXeFVHRG1XcUZtYnBzNC1kcGpuWHZFYnRCY2pLZlVjZ2FLTDBHOGtMcTdSNTUxVzNETjdMXzUxX3IxSXpMMTlCUk1IVTdMNTctbGN4RlFnUjlqWFZMejVzeDdRdkdnbXFYWFhLazhHNW53c2VIc09zZTJuYkNsUXQxZGpMQVYzWXRTa05iTkx3VnduMGJJRXBNWjZWTG5yN2hzSF9mTkhCWjFPMWpPcEJJSmRqYTZMRGQyWkJ2SS10bmZaTllzeWxIZVJtcG5pYlhiTjdSQklnd3RwRGN3UjJVejM3dEpMemJzalc5YTRDa0VlYg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Media Online.*
+[Read original article](https://news.google.com/rss/articles/CBMiqAJBVV95cUxOdVpOTjdubGZ3cVNUSEpGMjlpMzBESWx5UldiUVd6OGJxVy14OXpCWkpVYU1nOHhBVEpWdFZXeFVHRG1XcUZtYnBzNC1kcGpuWHZFYnRCY2pLZlVjZ2FLTDBHOGtMcTdSNTUxVzNETjdMXzUxX3IxSXpMMTlCUk1IVTdMNTctbGN4RlFnUjlqWFZMejVzeDdRdkdnbXFYWFhLazhHNW53c2VIc09zZTJuYkNsUXQxZGpMQVYzWXRTa05iTkx3VnduMGJJRXBNWjZWTG5yN2hzSF9mTkhCWjFPMWpPcEJJSmRqYTZMRGQyWkJ2SS10bmZaTllzeWxIZVJtcG5pYlhiTjdSQklnd3RwRGN3UjJVejM3dEpMemJzalc5YTRDa0VlYg?oc=5)

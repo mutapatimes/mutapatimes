@@ -1,0 +1,16 @@
+---
+title: "Watch World Cup Day 17: Messi breaks record as Algeria and DR Congo advance"
+date: 2026-06-28T15:12:59.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "Watch World Cup Day 17: Messi breaks record as Algeria and DR Congo advance"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE5yRWhaSHpUZlpDaFJuTFFZc0V4UHlCNWhKWEVsUEEtQW0wdjBXOWoyY3JTTDFnb0Q3SENIdEotR01uQ1h1a09yUmEwRjVMZFk5N1gwVnRTR0lqZm5mTEZtbFJ5dWtxNXdSYWJWUl9zVmRMcDkzaUcxZUlLZmZSd9IBgwFBVV95cUxQMjJfTkRFbVdoUU9rbHB2SHBFNmxUc2VQWGpQZnJ5Vk5mbF8wQ0NyVzU0WUJsb2NTUGpwcjY2dERrdDF6X09NTm1LaXh2Q0hyOGxweFp2WGM2a1BfVnpqQnFJV1hIdFo1VzVQZTI3SDN2ek9Xa1hIbDZDQXF1UmRWQ1ZuVQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMifkFVX3lxTE5yRWhaSHpUZlpDaFJuTFFZc0V4UHlCNWhKWEVsUEEtQW0wdjBXOWoyY3JTTDFnb0Q3SENIdEotR01uQ1h1a09yUmEwRjVMZFk5N1gwVnRTR0lqZm5mTEZtbFJ5dWtxNXdSYWJWUl9zVmRMcDkzaUcxZUlLZmZSd9IBgwFBVV95cUxQMjJfTkRFbVdoUU9rbHB2SHBFNmxUc2VQWGpQZnJ5Vk5mbF8wQ0NyVzU0WUJsb2NTUGpwcjY2dERrdDF6X09NTm1LaXh2Q0hyOGxweFp2WGM2a1BfVnpqQnFJV1hIdFo1VzVQZTI3SDN2ek9Xa1hIbDZDQXF1UmRWQ1ZuVQ?oc=5)

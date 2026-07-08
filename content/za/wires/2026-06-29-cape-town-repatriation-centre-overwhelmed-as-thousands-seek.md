@@ -1,0 +1,16 @@
+---
+title: "Cape Town repatriation centre overwhelmed as thousands seek return to Zimbabwe"
+date: 2026-06-29T10:32:25.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Cape Town repatriation centre overwhelmed as thousands seek return to Zimbabwe"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTGsxMHBSYWlyR1d5VzJrWGpqRUJqdTFURUctM09OSmtVcnoxQXRkMVVXRUNTWEpHWlJQcEhqM1BoX3RwTzRmQmw4YWNKLVJON0FqWU16TFJ3UG43UExHaXN2ZXlEUl9xWXBObGxMNEV3T0JCR0JhOTI0U3NSWENoVEVnUV95VWRoSUlpY2tKVkFRZ0c3cXp0LTlwM1dpemhjNHZESzdlY29iSUY2a2lOWjEzR1VpZ2s1ZTdfX29GaFNaX19hMnBYNE1ZdjZOM1lfWWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTGsxMHBSYWlyR1d5VzJrWGpqRUJqdTFURUctM09OSmtVcnoxQXRkMVVXRUNTWEpHWlJQcEhqM1BoX3RwTzRmQmw4YWNKLVJON0FqWU16TFJ3UG43UExHaXN2ZXlEUl9xWXBObGxMNEV3T0JCR0JhOTI0U3NSWENoVEVnUV95VWRoSUlpY2tKVkFRZ0c3cXp0LTlwM1dpemhjNHZESzdlY29iSUY2a2lOWjEzR1VpZ2s1ZTdfX29GaFNaX19hMnBYNE1ZdjZOM1lfWWc?oc=5)

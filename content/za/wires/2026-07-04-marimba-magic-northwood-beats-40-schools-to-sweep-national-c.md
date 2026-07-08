@@ -1,0 +1,16 @@
+---
+title: "Marimba magic: Northwood beats 40 schools to sweep national competition at Michaelhouse"
+date: 2026-07-04T10:01:06.000Z
+author: News24
+category: Education
+image: 
+summary: "Marimba magic: Northwood beats 40 schools to sweep national competition at Michaelhouse"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZXR3WHlGNDg5UlNtZklOQVpQeHpLd2hkQUN1cGZJZ3F6ZXJZLWRFSTEyX1lzellxWlN6elVFT3JWZWtTLXFuNnB0MlJ5SlcwUjM3X1RDRlJ1REwxVTR3NERQcUd5RFpIcnFIaDZWWWlsWTMtVDE3UVEtZ2Jlc3lpNlBLSzloVFFFQUlLb2xlX09WWTd3VjFnU3NuLWFnNjlIVHA0OXZnclI2QkY4X0k5bEpYd1hidnpwc3lNUmdVZDBCZDRiMk9TX2JUbkRxVC1Mc1plblJ5dmRKN09KSkt5Xw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZXR3WHlGNDg5UlNtZklOQVpQeHpLd2hkQUN1cGZJZ3F6ZXJZLWRFSTEyX1lzellxWlN6elVFT3JWZWtTLXFuNnB0MlJ5SlcwUjM3X1RDRlJ1REwxVTR3NERQcUd5RFpIcnFIaDZWWWlsWTMtVDE3UVEtZ2Jlc3lpNlBLSzloVFFFQUlLb2xlX09WWTd3VjFnU3NuLWFnNjlIVHA0OXZnclI2QkY4X0k5bEpYd1hidnpwc3lNUmdVZDBCZDRiMk9TX2JUbkRxVC1Mc1plblJ5dmRKN09KSkt5Xw?oc=5)

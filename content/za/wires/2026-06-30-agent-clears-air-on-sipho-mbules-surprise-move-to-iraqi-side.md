@@ -1,0 +1,16 @@
+---
+title: "Agent clears air on Sipho Mbule's surprise move to Iraqi side Zakho SC after Orlando Pirates exit: 'We had an enormous amount of interest from outside of South Africa'"
+date: 2026-06-30T14:09:41.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Agent clears air on Sipho Mbule's surprise move to Iraqi side Zakho SC after Orlando Pirates exit: 'We had an enormous amount of interest from outside of South Africa'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxNMGZoUG1jajF2emhxcHJUVjVTb0pFSmViV2lhbTdUQi1HekkwdnU4T0s4UmotQ0dIRFNNWHNxd0w1eUJxWnBGbU5JRFczZlBxQ3lUdkRfRlZrQjBzY1JfUGpGclhBcFJpc196b1NLdjM5XzhJcy1feEM4dWJNaU1vLUNKNkdmU0dXWjdlQjA5enhGMGVVRjF3YjIySk51SkYtaVZKYy1fR2p5MDZ0dWp3a1ZQX0w1NDFJWHFGUG9VVzE5V0hqemdVZTFSZ1RyUlg0LWtvMjdQbU15NnBtdkFrV0dYUjEwMnMyb0lkMHBrcGZNQnM5MlZMazlCVXhEcE05VWNNR1NVTFJJMWFiUTRDZFcyV0xHeFYtR3gzNDN6ZWx6Y1h4NHFfdXpPUUdrWnM2MnZyelhCWDB5N0ZGN1E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMGZoUG1jajF2emhxcHJUVjVTb0pFSmViV2lhbTdUQi1HekkwdnU4T0s4UmotQ0dIRFNNWHNxd0w1eUJxWnBGbU5JRFczZlBxQ3lUdkRfRlZrQjBzY1JfUGpGclhBcFJpc196b1NLdjM5XzhJcy1feEM4dWJNaU1vLUNKNkdmU0dXWjdlQjA5enhGMGVVRjF3YjIySk51SkYtaVZKYy1fR2p5MDZ0dWp3a1ZQX0w1NDFJWHFGUG9VVzE5V0hqemdVZTFSZ1RyUlg0LWtvMjdQbU15NnBtdkFrV0dYUjEwMnMyb0lkMHBrcGZNQnM5MlZMazlCVXhEcE05VWNNR1NVTFJJMWFiUTRDZFcyV0xHeFYtR3gzNDN6ZWx6Y1h4NHFfdXpPUUdrWnM2MnZyelhCWDB5N0ZGN1E?oc=5)

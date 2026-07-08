@@ -1,0 +1,16 @@
+---
+title: "Administrative holdups see Malawians stranded in Joburg during repatriation drive"
+date: 2026-06-22T08:29:12.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Administrative holdups see Malawians stranded in Joburg during repatriation drive"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOb2dRX2E3b3NjbHpLMjNKRU50R2FPaEVvT1dPRHNXREFscnRrampOeThfM1N1a1BCUjl5SndaVGhyalR0SGFfN3FlRkF2UnNHMVlVQUtRVDlGZlM5QUNDaXZVR1ZiR2c1Q3lzeVVXN2dsTHpaMHhsUkl6eFJLWkRSbEVEQ25MeWExRzVUX3BzY2gzZTBlS1ZtdkVjVDlFTUluTHBSRUdTdDE3anRCZkR5ZGJDeDBIYkhaVmxLQnVpeVRpOGRIcFkwUmZ4N0lhMWk5d3pJZzhB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOb2dRX2E3b3NjbHpLMjNKRU50R2FPaEVvT1dPRHNXREFscnRrampOeThfM1N1a1BCUjl5SndaVGhyalR0SGFfN3FlRkF2UnNHMVlVQUtRVDlGZlM5QUNDaXZVR1ZiR2c1Q3lzeVVXN2dsTHpaMHhsUkl6eFJLWkRSbEVEQ25MeWExRzVUX3BzY2gzZTBlS1ZtdkVjVDlFTUluTHBSRUdTdDE3anRCZkR5ZGJDeDBIYkhaVmxLQnVpeVRpOGRIcFkwUmZ4N0lhMWk5d3pJZzhB?oc=5)

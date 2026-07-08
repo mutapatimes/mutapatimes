@@ -1,0 +1,16 @@
+---
+title: "Doctors warn SA is heading for humanitarian crisis as migrants become too afraid to seek healthcare"
+date: 2026-06-30T18:24:59.000Z
+author: IOL
+category: Health
+image: 
+summary: "Doctors warn SA is heading for humanitarian crisis as migrants become too afraid to seek healthcare"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY0Y4VElVelRCVkNhcFhiLXRmX0JyX2FDY0hDZldub2ZsQXN0STBPeUVpNWUtRC1NUkt2T05rM09oZGxsbHpNWjRldk1TbkYzNG5MbEhVYWxHaU9yaEJjX0ZHZTc4MVk3TGgwX1FlekZzRk1CU1JaNk1IQ1FIQW5YMUZHN21QMV9zQWV5Ul82cE9tak1SQ0I2RUx1ZTYxbFZJY2Q5ekJDN1dtWkhwVU0zbG95UjJsS0hqZVVmeDBXMTdUQlhjLVNzN2lMMnhDcGV0bVBoa0ZKQ0hDaGVfdFA4c193UmF5dlE3Ml9CazdVbUc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY0Y4VElVelRCVkNhcFhiLXRmX0JyX2FDY0hDZldub2ZsQXN0STBPeUVpNWUtRC1NUkt2T05rM09oZGxsbHpNWjRldk1TbkYzNG5MbEhVYWxHaU9yaEJjX0ZHZTc4MVk3TGgwX1FlekZzRk1CU1JaNk1IQ1FIQW5YMUZHN21QMV9zQWV5Ul82cE9tak1SQ0I2RUx1ZTYxbFZJY2Q5ekJDN1dtWkhwVU0zbG95UjJsS0hqZVVmeDBXMTdUQlhjLVNzN2lMMnhDcGV0bVBoa0ZKQ0hDaGVfdFA4c193UmF5dlE3Ml9CazdVbUc?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "What it feels like to flee SA for your life as a documented foreigner"
+date: 2026-07-01T20:58:57.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "What it feels like to flee SA for your life as a documented foreigner"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgJBVV95cUxOQTdsRTdqeE4wQkNlZHlGdHpiRXdiUW5HXzhyR09sQ0lhUHY2MGtFNHl4QmtTNU5aUDljcVc3WDVxLS1MOTQ5UVZNQ2VjcWE1NlFzRnBvMXBJQ0ZjaThKQXAwMW5xdjY2Z2x1bFJRVmFXMXkyR29oTHFYZklqWTh4UFBjYXRFS1BNbGR4ZzZRbmltMDVWRGUwdFZaUFNGYVI1bGxfQzZaSzg3UWJtZjcyWERjX3phXzVMVzh1cmExU3ZaNVlQNmYtTkJoQ242WXFMTVh3a2ZmaG82bTBVY3JYdWlJdGhOZENYNjRBeHd0UnBPbnc0TExuQVJxTG5KaTkweVpIU2tXTGl6MUNxMHVFc29B?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikgJBVV95cUxOQTdsRTdqeE4wQkNlZHlGdHpiRXdiUW5HXzhyR09sQ0lhUHY2MGtFNHl4QmtTNU5aUDljcVc3WDVxLS1MOTQ5UVZNQ2VjcWE1NlFzRnBvMXBJQ0ZjaThKQXAwMW5xdjY2Z2x1bFJRVmFXMXkyR29oTHFYZklqWTh4UFBjYXRFS1BNbGR4ZzZRbmltMDVWRGUwdFZaUFNGYVI1bGxfQzZaSzg3UWJtZjcyWERjX3phXzVMVzh1cmExU3ZaNVlQNmYtTkJoQ242WXFMTVh3a2ZmaG82bTBVY3JYdWlJdGhOZENYNjRBeHd0UnBPbnc0TExuQVJxTG5KaTkweVpIU2tXTGl6MUNxMHVFc29B?oc=5)

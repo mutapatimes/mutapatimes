@@ -1,29 +1,293 @@
 {
-  "fetched_at": "2026-06-22T22:44:05+00:00",
+  "fetched_at": "2026-07-08T19:17:59+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "news",
+      "title": "IMF backs Zimbabwe reforms as economy remains resilient",
+      "link": "https://mutapatimes.com/articles/2026-07-08-imf-backs-zimbabwe-reforms-as-economy-remains-resilient",
+      "image": "https://mutapatimes.com/img/cards/news/b2bb2f2926c1.png",
+      "pubDate": "2026-07-08T17:36:54+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "IMF backs Zimbabwe reforms as economy remains resilient",
+      "link": "https://mutapatimes.com/news/2026-07-08-imf-backs-zimbabwe-reforms-as-economy-remains-resilient-8c6591",
+      "image": "https://mutapatimes.com/img/cards/news/b07372dcd82f.png",
+      "pubDate": "2026-07-08T17:36:54+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "USA Eagles vs. Zimbabwe Live Stream of World Rugby",
+      "link": "https://mutapatimes.com/articles/2026-07-08-usa-eagles-vs-zimbabwe-live-stream-of-world-rugby",
+      "image": "https://mutapatimes.com/img/cards/news/6df51f121535.png",
+      "pubDate": "2026-07-08T16:41:25+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "USA Eagles vs. Zimbabwe Live Stream of World Rugby",
+      "link": "https://mutapatimes.com/news/2026-07-08-usa-eagles-vs-zimbabwe-live-stream-of-world-rugby-cf3aea",
+      "image": "https://mutapatimes.com/img/cards/news/ce8c0179c36b.png",
+      "pubDate": "2026-07-08T16:41:25+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Corporate Accountability and Human Rights of Transnational Companies in Zimbabwe’s Mineral Extractive Industries",
+      "link": "https://mutapatimes.com/articles/2026-07-08-corporate-accountability-and-human-rights-of-transnational-c",
+      "image": "https://mutapatimes.com/img/cards/news/711a59f31545.png",
+      "pubDate": "2026-07-08T16:00:37+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Corporate Accountability and Human Rights of Transnational Companies in Zimbabwe’s Mineral Extractive Industries",
+      "link": "https://mutapatimes.com/news/2026-07-08-corporate-accountability-and-human-rights-of-transnational-companies-in-7d56b8",
+      "image": "https://mutapatimes.com/img/cards/news/b6d9316f0170.png",
+      "pubDate": "2026-07-08T16:00:37+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's top critical mineral could be in focus as the US commits $300 million to detach from China",
+      "link": "https://mutapatimes.com/articles/2026-07-08-zimbabwes-top-critical-mineral-could-be-in-focus-as-the-us-c",
+      "image": "https://mutapatimes.com/img/cards/news/6c55a13692c7.png",
+      "pubDate": "2026-07-08T15:35:17+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's top critical mineral could be in focus as the US commits $300 million to detach from China",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-s-top-critical-mineral-could-be-in-focus-as-the-us-commits-300-million-b68e69",
+      "image": "https://mutapatimes.com/img/cards/news/0ee3716712da.png",
+      "pubDate": "2026-07-08T15:35:17+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s energy strategy: Learning from Nigeria’s years of oil & gas experience",
+      "link": "https://mutapatimes.com/articles/2026-07-08-zimbabwes-energy-strategy-learning-from-nigerias-years-of-oi",
+      "image": "https://mutapatimes.com/img/cards/news/2c286d3490ba.png",
+      "pubDate": "2026-07-08T15:30:55+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s energy strategy: Learning from Nigeria’s years of oil & gas experience",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-s-energy-strategy-learning-from-nigeria-s-years-of-oil-gas-experience-d3c6af",
+      "image": "https://mutapatimes.com/img/cards/news/ded217735ae3.png",
+      "pubDate": "2026-07-08T15:30:55+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "'Ikale Tahi overpowers spirited Zimbabwe in World Rugby Nations Cup opener",
+      "link": "https://mutapatimes.com/news/2026-07-08-ikale-tahi-overpowers-spirited-zimbabwe-in-world-rugby-nations-cup-opener-3f2dd3",
+      "image": "https://mutapatimes.com/img/cards/news/0880bbeb2527.png",
+      "pubDate": "2026-07-08T11:47:09+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Zulu king to meet Mnangagwa over SA anti-immigrant tensions",
+      "link": "https://mutapatimes.com/news/2026-07-08-zulu-king-to-meet-mnangagwa-over-sa-anti-immigrant-tensions-70ef32",
+      "image": "https://mutapatimes.com/img/cards/news/bfc696c00223.png",
+      "pubDate": "2026-07-08T10:43:12+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "83-year-old Zimbabwe’s Mnangagwa signs law extending his presidency to 2030",
+      "link": "https://mutapatimes.com/news/2026-07-08-83-year-old-zimbabwe-s-mnangagwa-signs-law-extending-his-presidency-to-2030-b2c800",
+      "image": "https://mutapatimes.com/img/cards/news/8c6c5206388b.png",
+      "pubDate": "2026-07-08T09:05:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Goodbye Chiwenga, succession problem SOLVED as President Mnangagwa signs CAB 3 into law.... Here is what’s next",
+      "link": "https://mutapatimes.com/news/2026-07-08-goodbye-chiwenga-succession-problem-solved-as-president-mnangagwa-signs-cab-3-55d98a",
+      "image": "https://mutapatimes.com/img/cards/news/f9f9d504f366.png",
+      "pubDate": "2026-07-08T07:11:04+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Stupid Nota calls for SA artists to boycott Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-07-08-stupid-nota-calls-for-sa-artists-to-boycott-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/fbc13f2dd76b.png",
+      "pubDate": "2026-07-08T07:04:35+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Stupid Nota calls for SA artists to boycott Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-07-08-stupid-nota-calls-for-sa-artists-to-boycott-zimbabwe-a7cde2",
+      "image": "https://mutapatimes.com/img/cards/news/89c2c131ddc7.png",
+      "pubDate": "2026-07-08T07:04:35+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Grand Opposition Coalition Petitions World OVer Zimbabwe Crisis",
+      "link": "https://mutapatimes.com/news/2026-07-08-grand-opposition-coalition-petitions-world-over-zimbabwe-crisis-d9e49e",
+      "image": "https://mutapatimes.com/img/cards/news/352984071769.png",
+      "pubDate": "2026-07-08T07:02:43+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘We are organising’: Chamisa breaks silence after Mnangagwa signs CAB3 into law",
+      "link": "https://mutapatimes.com/news/2026-07-08-we-are-organising-chamisa-breaks-silence-after-mnangagwa-signs-cab3-into-law-e087b9",
+      "image": "https://mutapatimes.com/img/cards/news/16971f300f1a.png",
+      "pubDate": "2026-07-08T06:54:07+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Thoroughly Bashed by Municipal Police: The Heartbreaking Story of the Vendor Who Lost Everything to City Council",
+      "link": "https://mutapatimes.com/news/2026-07-08-thoroughly-bashed-by-municipal-police-the-heartbreaking-story-of-the-vendor-who-0455ca",
+      "image": "https://mutapatimes.com/img/cards/news/4e3a5c4e1f09.png",
+      "pubDate": "2026-07-08T06:40:46+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Warriors defender eyes England move",
+      "link": "https://mutapatimes.com/articles/2026-07-08-warriors-defender-eyes-england-move",
+      "image": "https://mutapatimes.com/img/cards/news/aec890bd5273.png",
+      "pubDate": "2026-07-08T06:37:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Warriors defender eyes England move",
+      "link": "https://mutapatimes.com/news/2026-07-08-warriors-defender-eyes-england-move-adb94a",
+      "image": "https://mutapatimes.com/img/cards/news/f3d780110c81.png",
+      "pubDate": "2026-07-08T06:37:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Five Hours of Silence: The Real Reason Zimbabwe’s National Power Grid Collapsed into Darkness",
+      "link": "https://mutapatimes.com/articles/2026-07-08-five-hours-of-silence-the-real-reason-zimbabwes-national-pow",
+      "image": "https://mutapatimes.com/img/cards/news/84f32af5f880.png",
+      "pubDate": "2026-07-08T06:18:26+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Five Hours of Silence: The Real Reason Zimbabwe’s National Power Grid Collapsed into Darkness",
+      "link": "https://mutapatimes.com/news/2026-07-08-five-hours-of-silence-the-real-reason-zimbabwe-s-national-power-grid-collapsed-4e34ef",
+      "image": "https://mutapatimes.com/img/cards/news/2216a7a68d30.png",
+      "pubDate": "2026-07-08T06:18:26+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Dynamos and Cocah Genesis Mangombe finally agree",
+      "link": "https://mutapatimes.com/articles/2026-07-08-dynamos-and-cocah-genesis-mangombe-finally-agree",
+      "image": "https://mutapatimes.com/img/cards/news/4fba1f5877e6.png",
+      "pubDate": "2026-07-08T06:06:19+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Dynamos and Cocah Genesis Mangombe finally agree",
+      "link": "https://mutapatimes.com/news/2026-07-08-dynamos-and-cocah-genesis-mangombe-finally-agree-d97331",
+      "image": "https://mutapatimes.com/img/cards/news/ffad46404cf3.png",
+      "pubDate": "2026-07-08T06:06:19+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Police Publishes Driving Fines Manual",
+      "link": "https://mutapatimes.com/news/2026-07-08-police-publishes-driving-fines-manual-dd45da",
+      "image": "https://mutapatimes.com/img/cards/news/a65e2a9b2f72.png",
+      "pubDate": "2026-07-08T05:53:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Air Zimbabwe’s Harare-London flight frequency announced",
+      "link": "https://mutapatimes.com/news/2026-07-08-air-zimbabwe-s-harare-london-flight-frequency-announced-852c39",
+      "image": "https://mutapatimes.com/img/cards/news/73276b3360f8.png",
+      "pubDate": "2026-07-08T05:33:00+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Drug and cybercrime surge fuels court backlog as JSC steps up recruitment",
+      "link": "https://mutapatimes.com/news/2026-07-08-drug-and-cybercrime-surge-fuels-court-backlog-as-jsc-steps-up-recruitment-a763ff",
+      "image": "https://mutapatimes.com/img/cards/news/7510e56c8e5d.png",
+      "pubDate": "2026-07-08T03:54:08+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe backs AfCFTA agri-trade plan to boost regional agricultural exports",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-backs-afcfta-agri-trade-plan-to-boost-regional-agricultural-exports-a178aa",
+      "image": "https://mutapatimes.com/img/cards/news/9d657826911f.png",
+      "pubDate": "2026-07-08T00:37:37+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe opposition slams Constitutional Amendment Act No. 3 as ‘death of democracy’, vows court challenge",
+      "link": "https://mutapatimes.com/news/2026-07-08-zimbabwe-opposition-slams-constitutional-amendment-act-no-3-as-death-of-a1815a",
+      "image": "https://mutapatimes.com/img/cards/news/e4392f884bc3.png",
+      "pubDate": "2026-07-08T00:34:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Corruption still holding back investment despite Zimbabwe’s progress – EU envoy says",
+      "link": "https://mutapatimes.com/news/2026-07-07-corruption-still-holding-back-investment-despite-zimbabwe-s-progress-eu-envoy-fd1edb",
+      "image": "https://mutapatimes.com/img/cards/news/032bbac88757.png",
+      "pubDate": "2026-07-07T23:20:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Harare traffic jams will only worsen – Mafume urges residents to ditch private cars",
+      "link": "https://mutapatimes.com/news/2026-07-07-harare-traffic-jams-will-only-worsen-mafume-urges-residents-to-ditch-private-53d8ba",
+      "image": "https://mutapatimes.com/img/cards/news/52b8930db67e.png",
+      "pubDate": "2026-07-07T23:03:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Powertel, Paratus activate cross-border fibre network linking Zimbabwe to Southern Africa",
+      "link": "https://mutapatimes.com/news/2026-07-07-powertel-paratus-activate-cross-border-fibre-network-linking-zimbabwe-to-c3cd00",
+      "image": "https://mutapatimes.com/img/cards/news/77bc04c7e534.png",
+      "pubDate": "2026-07-07T23:00:40+00:00",
+      "category": "News"
+    },
+    {
       "kind": "economy",
-      "title": "Zim export mix 2025 Q4: 95.9% of $3.3B exports are physical goods.",
-      "link": "https://mutapatimes.com/economy?d=2026-06-23",
-      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-06-23",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Zim economy 2025 Q4: Agriculture is the fastest-growing sector at +22.6% YoY.",
+      "link": "https://mutapatimes.com/economy?d=2026-07-08",
+      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-07-08",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Economy"
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 23 Jun 2026: 1 USD = 26.77 ZWG · best from UK £100 → $129.19 via Wise",
-      "link": "https://mutapatimes.com/fx?d=2026-06-23",
-      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-06-23",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Zim FX snapshot 8 Jul 2026: 1 USD = 26.80 ZWG · best from UK £100 → $130.51 via Wise",
+      "link": "https://mutapatimes.com/fx?d=2026-07-08",
+      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-07-08",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "FX"
     },
     {
       "kind": "weather",
-      "title": "Zim weather 23 Jun: Harare overcast · high 20° / low 10°",
-      "link": "https://mutapatimes.com/weather?d=2026-06-23",
-      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-06-23",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Zim weather 8 Jul: Harare overcast · high 20° / low 9°",
+      "link": "https://mutapatimes.com/weather?d=2026-07-08",
+      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-08",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Weather"
     },
     {
@@ -31,7 +295,7 @@
       "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-social-media-assistant.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -39,7 +303,7 @@
       "title": "Junior Editorial Coordinator — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-editorial-coordinator",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-editorial-coordinator.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -47,7 +311,7 @@
       "title": "Junior Data Analyst — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-data-analyst",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-data-analyst.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -55,431 +319,167 @@
       "title": "Business Development Associate — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#business-development-associate",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Internship"
     },
     {
       "kind": "jobs",
-      "title": "Law Society Of Zimbabwe — Registry and Information Management Intern",
-      "link": "https://vacancymail.co.zw/jobs/registry-and-information-management-intern-67929/",
-      "image": "https://mutapatimes.com/img/cards/jobs/43dcecc7f8b3.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Farm Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/farm-supervisor-68165/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2a5023a7fe50.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Head - Omnichannel (Physical Channels)",
-      "link": "https://vacancymail.co.zw/jobs/head-omnichannel-physical-channels-67928/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9e3db048cf50.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "SOS Children's Villages Zimbabwe — CiSS Coordinator",
+      "link": "https://vacancymail.co.zw/jobs/ciss-coordinator-68164/",
+      "image": "https://mutapatimes.com/img/cards/jobs/50fcc08c8dea.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Regional Manager - (Northern Region)",
-      "link": "https://vacancymail.co.zw/jobs/regional-manager-northern-region-67927/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9ffb89c2100d.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Mentor Centre — Teacher (Biology and Chemistry) Up to A Level",
+      "link": "https://vacancymail.co.zw/jobs/teacher-biology-and-chemistry-up-to-a-level-68163/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6b6cb44e943f.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Spoton Towing & Recovery — Rescuer",
-      "link": "https://vacancymail.co.zw/jobs/rescuer-67926/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3fdbcccdee62.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Green Fuel — DRIP IRRIGATION MAINTENANCE FOREMAN",
+      "link": "https://vacancymail.co.zw/jobs/drip-irrigation-maintenance-foreman-68162/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c00155858250.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Accounting Intern",
-      "link": "https://vacancymail.co.zw/jobs/accounting-intern-67925/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ea481ba598c.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Graduate Trainee Programme",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-68161/",
+      "image": "https://mutapatimes.com/img/cards/jobs/55dcd611cd4d.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "TechVista Academy — Creative Associates – IT, Digital Learning & Content Development",
-      "link": "https://vacancymail.co.zw/jobs/creative-associates-it-digital-learning-content-development-67924/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c44640a56178.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Assistant Accountant",
+      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-68160/",
+      "image": "https://mutapatimes.com/img/cards/jobs/298538b8a3e8.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Marist Brothers High School, Dete — ACCOUNTING AND BISUNESS STUDIES TEACHER ( COMMERCIAL DEPARTMENT)",
-      "link": "https://vacancymail.co.zw/jobs/accounting-and-bisuness-studies-teacher-commercial-department-67923/",
-      "image": "https://mutapatimes.com/img/cards/jobs/56f89bb6dae2.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Jena Mines (Pvt) Ltd — Plant Section Engineer",
+      "link": "https://vacancymail.co.zw/jobs/plant-section-engineer-68159/",
+      "image": "https://mutapatimes.com/img/cards/jobs/08e71bcb837f.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "TechVista Academy — Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/receptionist-67922/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fa3ed4112807.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Advanced Level Computer Science Teacher",
+      "link": "https://vacancymail.co.zw/jobs/advanced-level-computer-science-teacher-68158/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4e5f4fc5d93b.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "HUMANA People to People — Chief Accountant",
-      "link": "https://vacancymail.co.zw/jobs/chief-accountant-67921/",
-      "image": "https://mutapatimes.com/img/cards/jobs/da4dd1cc437f.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Signed By Bright — Sales and Marketing executive",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-executive-68157/",
+      "image": "https://mutapatimes.com/img/cards/jobs/be043f760287.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "INVITATION TO TENDER PROCUREMENT OF PROFESSIONAL AGRICULTURAL PROPERTY AND BUSINESS VALUATION SERVICES-ESTATE LATE FRANCIS TADERERA DR209/26",
-      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-procurement-of-professional-agricultural-property-and-business-valuation-services-estate-late-francis-taderera-dr20926-67920/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ffa08bf8356a.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Signed By Bright — Graphic designer - temp",
+      "link": "https://vacancymail.co.zw/jobs/graphic-designer-temp-68156/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1fa6a59bd0ef.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "TOTAL NETWORKS — ACCOUNTS CLERK",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-67919/",
-      "image": "https://mutapatimes.com/img/cards/jobs/af259e8c6e33.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "CIMAS — Doctor - Cimas Kwekwe Clinic",
+      "link": "https://vacancymail.co.zw/jobs/doctor-cimas-kwekwe-clinic-68155/",
+      "image": "https://mutapatimes.com/img/cards/jobs/794a0c20d696.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Petrozim Line (Pvt) Ltd — Procurement Manager Head Office",
-      "link": "https://vacancymail.co.zw/jobs/procurement-manager-head-office-67918/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e37e077426a.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Customer Service Representative",
+      "link": "https://vacancymail.co.zw/jobs/customer-service-representative-68154/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f76b45023585.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "DOMBOSHAVA MEDCLINIC — MEDICAL PRACTITIONER (PART-TIME) Domboshava Medclinic (Re-advertisement)",
-      "link": "https://vacancymail.co.zw/jobs/medical-practitioner-part-time-domboshava-medclinic-re-advertisement-67917/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b63d18fa7b3e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "ActionAid Zimbabwe — FINANCE GRADUATE INTERN (HARARE)",
+      "link": "https://vacancymail.co.zw/jobs/finance-graduate-intern-harare-68153/",
+      "image": "https://mutapatimes.com/img/cards/jobs/61eb7c8c5889.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Jondavin investments — WOODWORK SPECIALIST / CARPENTER",
-      "link": "https://vacancymail.co.zw/jobs/woodwork-specialist-carpenter-67916/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e1bcb962ab15.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "ActionAid Zimbabwe — HR & ADMINISTRATION GRADUATE INTERN (HARARE)",
+      "link": "https://vacancymail.co.zw/jobs/hr-administration-graduate-intern-harare-68152/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f0f96c07821c.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "ST-ONE Machinery — Graphic design and media specialist",
-      "link": "https://vacancymail.co.zw/jobs/graphic-design-and-media-specialist-67915/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a55d4e4505b7.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "ActionAid Zimbabwe — GRANTS AND COMPLIANCE OFFICER (HARARE)",
+      "link": "https://vacancymail.co.zw/jobs/grants-and-compliance-officer-harare-68151/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5519847d7860.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Associated Belts and Bearings — AREA OPERATIONS MANAGER",
-      "link": "https://vacancymail.co.zw/jobs/area-operations-manager-67914/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a46cb8ee717b.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "World Vision — Tender Notice : Supply and Delivery of Cisco Meraki Network Equipment and Accessories",
+      "link": "https://vacancymail.co.zw/jobs/tender-notice-supply-and-delivery-of-cisco-meraki-network-equipment-and-accessories-68150/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7a08997bfd1a.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Africa University - AU — Procurement Officer",
-      "link": "https://vacancymail.co.zw/jobs/procurement-officer-67913/",
-      "image": "https://mutapatimes.com/img/cards/jobs/616ed050eacc.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Town Planner",
+      "link": "https://vacancymail.co.zw/jobs/town-planner-68147/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d35dc7d5528e.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "Sports and Recreation Commission Zimbabwe — Legal Officer",
-      "link": "https://vacancymail.co.zw/jobs/legal-officer-67912/",
-      "image": "https://mutapatimes.com/img/cards/jobs/120b64846d19.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Greenwood Pharmacy — Accounting Attachee x2",
+      "link": "https://vacancymail.co.zw/jobs/accounting-attachee-x2-68146/",
+      "image": "https://mutapatimes.com/img/cards/jobs/52544c821fcb.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "National Foods Holdings Limited — Finance Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-manager-67911/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f6f0ab772f52.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "Greenwood Pharmacy — Pharmacist",
+      "link": "https://vacancymail.co.zw/jobs/pharmacist-68145/",
+      "image": "https://mutapatimes.com/img/cards/jobs/45a0887197db.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     },
     {
       "kind": "jobs",
-      "title": "National Foods Holdings Limited — Maintenance Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-supervisor-67910/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dd7007396319.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee Opportunities - Mining Industry",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-opportunities-mining-industry-67909/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3d263b3dcdd1.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Auto Electrician",
-      "link": "https://vacancymail.co.zw/jobs/auto-electrician-67908/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b92ab4cd53ab.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Sales Representative for Heavy Machinery (Mining and Agricultural Equipment)",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-for-heavy-machinery-mining-and-agricultural-equipment-67907/",
-      "image": "https://mutapatimes.com/img/cards/jobs/05d543dcdfc4.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — PROCUREMENT GRADUATE TRAINEE X 1",
-      "link": "https://vacancymail.co.zw/jobs/procurement-graduate-trainee-x-1-67906/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7a3894530044.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Digital Marketer",
-      "link": "https://vacancymail.co.zw/jobs/digital-marketer-67905/",
-      "image": "https://mutapatimes.com/img/cards/jobs/33327586b08e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Wiruma — Driver/Messenger",
-      "link": "https://vacancymail.co.zw/jobs/drivermessenger-67904/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e91f104471eb.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Diesel plant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/diesel-plant-fitter-67903/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6f166f4c6bda.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Welder",
-      "link": "https://vacancymail.co.zw/jobs/welder-67902/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8a30771a684e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Maintenance and Projects Clerk",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-and-projects-clerk-67901/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b56a5bef19e.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrator",
-      "link": "https://vacancymail.co.zw/jobs/administrator-67900/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3628dfe7b5f5.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/bank-teller-67899/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f27a431490b6.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — SENIOR BANK TELLER",
-      "link": "https://vacancymail.co.zw/jobs/senior-bank-teller-67898/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e5f5c2266ad8.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Impala Car Rental — POST GRADUATE TRAINEE – DIGITAL MARKETING",
-      "link": "https://vacancymail.co.zw/jobs/post-graduate-trainee-digital-marketing-67897/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d00433f05130.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — Cake Fairy Manager (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/cake-fairy-manager-harare-67896/",
-      "image": "https://mutapatimes.com/img/cards/jobs/41bde8d40ba3.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative : Digital Two",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-digital-two-67895/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5bb2c4c9ab9f.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Impala Car Rental — Customer Experience Officer",
-      "link": "https://vacancymail.co.zw/jobs/customer-experience-officer-67894/",
-      "image": "https://mutapatimes.com/img/cards/jobs/600174b89e37.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nengo builders — QUANTITY SURVEYOR - TENDERING DEPARTMENT",
-      "link": "https://vacancymail.co.zw/jobs/quantity-surveyor-tendering-department-67892/",
-      "image": "https://mutapatimes.com/img/cards/jobs/24ffaa00a119.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Driver",
-      "link": "https://vacancymail.co.zw/jobs/driver-67891/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ead1cd0cfb02.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Manager",
-      "link": "https://vacancymail.co.zw/jobs/general-manager-67890/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6f72fc2cfd8f.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Multimedia Content Creator",
-      "link": "https://vacancymail.co.zw/jobs/multimedia-content-creator-67889/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8666b4389e9b.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Airports Company of Zimbabwe Private Limited — Interns (students on industrial attachment)",
-      "link": "https://vacancymail.co.zw/jobs/interns-students-on-industrial-attachment-67888/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d17812190b89.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Artisan - Fitter & Turner",
-      "link": "https://vacancymail.co.zw/jobs/artisan-fitter-turner-67887/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9de895223e83.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Electrician/ Instrumentation Technician",
-      "link": "https://vacancymail.co.zw/jobs/electrician-instrumentation-technician-67886/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4b4f73bd65a9.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Bus Driver",
-      "link": "https://vacancymail.co.zw/jobs/bus-driver-67885/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fd522f32fda4.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Executive Driver",
-      "link": "https://vacancymail.co.zw/jobs/executive-driver-67884/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fca0e1020e60.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Assistant Regional Loss Control Officer",
-      "link": "https://vacancymail.co.zw/jobs/assistant-regional-loss-control-officer-67883/",
-      "image": "https://mutapatimes.com/img/cards/jobs/64bc1493c460.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Forensic Investigations Officer.",
-      "link": "https://vacancymail.co.zw/jobs/forensic-investigations-officer-67882/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91cc75b5b7fe.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Union Zimbabwe Trust — Data Clerk",
-      "link": "https://vacancymail.co.zw/jobs/data-clerk-67881/",
-      "image": "https://mutapatimes.com/img/cards/jobs/46237c67efef.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Union Zimbabwe Trust — Radiographer",
-      "link": "https://vacancymail.co.zw/jobs/radiographer-67880/",
-      "image": "https://mutapatimes.com/img/cards/jobs/685ed76b5d82.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Union Zimbabwe Trust — Laboratory Technician",
-      "link": "https://vacancymail.co.zw/jobs/laboratory-technician-67879/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e7cc950c3d62.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Mining Engineer",
-      "link": "https://vacancymail.co.zw/jobs/mining-engineer-67877/",
-      "image": "https://mutapatimes.com/img/cards/jobs/897f40ba30d9.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Salesperson - Kwekwe and Mutare",
-      "link": "https://vacancymail.co.zw/jobs/salesperson-kwekwe-and-mutare-67876/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f5029e300bc2.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Person",
-      "link": "https://vacancymail.co.zw/jobs/sales-person-67875/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f758f4335d94.png",
-      "pubDate": "2026-06-22T22:00:00+00:00",
+      "title": "The Infrastructure Development Bank of Zimbabwe — Resource Mobilisation Consultant",
+      "link": "https://vacancymail.co.zw/jobs/resource-mobilisation-consultant-68144/",
+      "image": "https://mutapatimes.com/img/cards/jobs/bad3ce0f99b6.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     }
   ]

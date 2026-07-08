@@ -1,0 +1,16 @@
+---
+title: "Accelerating Smartphone Adoption Through Tax Reform: Evidence from South Africa"
+date: 2026-06-10T07:00:00.000Z
+author: GSMA
+category: Policy
+image: 
+summary: "Accelerating Smartphone Adoption Through Tax Reform: Evidence from South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMkVGZFg1X0NlamlhR2dtQ2R4dFYzeEFCSlk1blF6YlM2bEphWUI5VFl3ZEd2TnFVRWhYdjJVQ05JQkhaTk5HYXpJdld3dm84anBXcGxwNDFFRXk4QXhzdWlzajZLcXFXTGlVU2wxUkpFdmRGVXJnUkp0Zy1iY2lsRDRpRWxtSllzZkZTNjk0SGtLSXdMdmVGLTdkSHdZZDg0bUV1NXdnZkZSelRGcmtjTXpDMWpJQktIcGlxUXFXcGMtT1B4WW0zQjV2VnRQSlpYM1NkelM4cGdyZUhUVFhvbmtYZUc4S2ZhcGE2djhRa3BEYkE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by GSMA.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMkVGZFg1X0NlamlhR2dtQ2R4dFYzeEFCSlk1blF6YlM2bEphWUI5VFl3ZEd2TnFVRWhYdjJVQ05JQkhaTk5HYXpJdld3dm84anBXcGxwNDFFRXk4QXhzdWlzajZLcXFXTGlVU2wxUkpFdmRGVXJnUkp0Zy1iY2lsRDRpRWxtSllzZkZTNjk0SGtLSXdMdmVGLTdkSHdZZDg0bUV1NXdnZkZSelRGcmtjTXpDMWpJQktIcGlxUXFXcGMtT1B4WW0zQjV2VnRQSlpYM1NkelM4cGdyZUhUVFhvbmtYZUc4S2ZhcGE2djhRa3BEYkE?oc=5)

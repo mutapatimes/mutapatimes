@@ -1,0 +1,16 @@
+---
+title: "New SARS declarations: what you need to know before you travel"
+date: 2026-07-03T14:12:31.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "New SARS declarations: what you need to know before you travel"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijgJBVV95cUxQTEYxZUp2OU5mVkNqUFIzc21DWDZRdEZya2FXVnE4SVVPWkhjVUh2SzQtU3dOMlJGSldTZUl4TEtHZkVDX3J2T1lvZ3lEcDVWN2tMT1RHdmZCZkdraTFUMUV4N0J0VFhfZXd5MGYzWWxOSEFUZE52eGtOU1pEZS10UjFULXVKSU9YOU5FNnZkMUFnWGVHRXdEdjhuNEJOd1JmbTB6YlpKbzgtOGxYMEZTVHJqa1VlRHlPWHduWXljZGtfN3BidUNpTF95Ni1YdGQxenhhc3pOWXBHWnFNcEZranp1YlJzbWVPOEphTVBkSXdKSm1ZdTg0a1l5RV81ZGJ4YUFhMEZFUllVWXVsTUE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijgJBVV95cUxQTEYxZUp2OU5mVkNqUFIzc21DWDZRdEZya2FXVnE4SVVPWkhjVUh2SzQtU3dOMlJGSldTZUl4TEtHZkVDX3J2T1lvZ3lEcDVWN2tMT1RHdmZCZkdraTFUMUV4N0J0VFhfZXd5MGYzWWxOSEFUZE52eGtOU1pEZS10UjFULXVKSU9YOU5FNnZkMUFnWGVHRXdEdjhuNEJOd1JmbTB6YlpKbzgtOGxYMEZTVHJqa1VlRHlPWHduWXljZGtfN3BidUNpTF95Ni1YdGQxenhhc3pOWXBHWnFNcEZranp1YlJzbWVPOEphTVBkSXdKSm1ZdTg0a1l5RV81ZGJ4YUFhMEZFUllVWXVsTUE?oc=5)

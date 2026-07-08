@@ -1,0 +1,16 @@
+---
+title: "AU piles pressure on SA over anti-immigrant threats"
+date: 2026-06-30T08:48:32.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "AU piles pressure on SA over anti-immigrant threats"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbE96ekRVSFVMWXdFalA1OEdiWEtMQTZucWIyTUFrTDZQYlNyY09iLUttZC1hTUttNmh4dWxxb0VoRkhoaVNaOVpjOU5MNThXU3B1SHcyVlhCc1o1blBFSnZCYnQ4NDNIOWJQRFBNWEdyOGlFdkwwdUNZYTB3NTlWbE8yZWQzUE84d3NHX05DR0VIaDRSMnZzM2tLa0Y4VXNvN0dES3k1cXZFS1kwNzFkT2NYbU5XMmtTVnA1SmVyb29TWW1xSEZSSlZyLVNlNVIycnJYTkJfaDkzUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbE96ekRVSFVMWXdFalA1OEdiWEtMQTZucWIyTUFrTDZQYlNyY09iLUttZC1hTUttNmh4dWxxb0VoRkhoaVNaOVpjOU5MNThXU3B1SHcyVlhCc1o1blBFSnZCYnQ4NDNIOWJQRFBNWEdyOGlFdkwwdUNZYTB3NTlWbE8yZWQzUE84d3NHX05DR0VIaDRSMnZzM2tLa0Y4VXNvN0dES3k1cXZFS1kwNzFkT2NYbU5XMmtTVnA1SmVyb29TWW1xSEZSSlZyLVNlNVIycnJYTkJfaDkzUQ?oc=5)

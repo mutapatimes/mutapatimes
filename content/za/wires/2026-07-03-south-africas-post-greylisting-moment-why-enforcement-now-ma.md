@@ -1,0 +1,16 @@
+---
+title: "South Africa’s post-greylisting moment: Why enforcement now matters more than ever"
+date: 2026-07-03T12:12:31.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South Africa’s post-greylisting moment: Why enforcement now matters more than ever"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiowJBVV95cUxQRkt4TmF2MjFTMUVpbHFxN1kzeG5aWDIydXlaNC15cHhVWTZ3b2xnNFJvMmNGQ0pRY3pZeXpyMnhGNC13MG1wbnlSUHd5RHdEaFpIeGZSTDdvT3N0cVl5bmpXNmxjZUJIM19hT3hnY2lQbHBYd01xQjFrU0t5aW1sQ0o1Z0dqY0RRQnFsLUhfM0ZoYy14QVFpRzBLTDVtUkc2R240ckVDN3dDb1FXMi1TVFJ0bE5NUU9fNHFlWHhHcy1JeHdlV1ptSFZScXhGWm5FdmxVbXdSMDNxRTI1T0JjWXJWMWVVQjE1VGxHdF9vZ2hSSk95Sk9oLW5BSWxRanMtenZnWURNR0FFVFZRYWRIQldrSGJkS1V4MjJOQUJ2eUllbEE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiowJBVV95cUxQRkt4TmF2MjFTMUVpbHFxN1kzeG5aWDIydXlaNC15cHhVWTZ3b2xnNFJvMmNGQ0pRY3pZeXpyMnhGNC13MG1wbnlSUHd5RHdEaFpIeGZSTDdvT3N0cVl5bmpXNmxjZUJIM19hT3hnY2lQbHBYd01xQjFrU0t5aW1sQ0o1Z0dqY0RRQnFsLUhfM0ZoYy14QVFpRzBLTDVtUkc2R240ckVDN3dDb1FXMi1TVFJ0bE5NUU9fNHFlWHhHcy1JeHdlV1ptSFZScXhGWm5FdmxVbXdSMDNxRTI1T0JjWXJWMWVVQjE1VGxHdF9vZ2hSSk95Sk9oLW5BSWxRanMtenZnWURNR0FFVFZRYWRIQldrSGJkS1V4MjJOQUJ2eUllbEE?oc=5)

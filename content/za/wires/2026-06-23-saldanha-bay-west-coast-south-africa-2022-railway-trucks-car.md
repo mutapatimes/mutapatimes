@@ -1,0 +1,16 @@
+---
+title: "Saldanha Bay, West Coast, South Africa. 2022. Railway trucks carrying iron ore from Sishen to Saldanha Bay terminal on the West Coast of South Africa."
+date: 2026-06-23T06:57:14.000Z
+author: Mining.com
+category: Business
+image: 
+summary: "Saldanha Bay, West Coast, South Africa. 2022. Railway trucks carrying iron ore from Sishen to Saldanha Bay terminal on the West Coast of South Africa."
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNTE1Jb0FrVmwycGVFR2U4d2dZV3JaMGhZUDQ5TFNpUDVpdzQyWE80T1UyRE0weTNuQVpKcm8ycHh3eEpqd29zUFRsQkpSV0M0MUpCN04xUkxGTEtrY1R5UkxvSmdCU3JBamZWTjlVcjBIYXJZdTd1d1FxZGRKZTZlNUpMTlJvZVF5Q3ZWenNWSWd5Y2lGZE9SOHFHLVFTYVJIUG9nNHd6RnFkYXRWWHBfNl9hYTFMZFBCbXZOeHFGd0VXZmJpNW1xT2tLWk9hR3dRMVlDN0t1ZUFzcTI0WkxjX2lLX0pBX1l3ZENnQjJDdS1saGVlQzNvVFFGTDBBYkdvdlJ3T3V1VVNoSXNEZEdwVkFBQTBvZHZ1SFpkNzhnQVRWZU1SLVZwNHoyYUFzamdNUXp4Uk1KQ2JVazVUWGRUS1ktUEZsWmVJYVgzUkt5TGZENzdn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi1AJBVV95cUxNTE1Jb0FrVmwycGVFR2U4d2dZV3JaMGhZUDQ5TFNpUDVpdzQyWE80T1UyRE0weTNuQVpKcm8ycHh3eEpqd29zUFRsQkpSV0M0MUpCN04xUkxGTEtrY1R5UkxvSmdCU3JBamZWTjlVcjBIYXJZdTd1d1FxZGRKZTZlNUpMTlJvZVF5Q3ZWenNWSWd5Y2lGZE9SOHFHLVFTYVJIUG9nNHd6RnFkYXRWWHBfNl9hYTFMZFBCbXZOeHFGd0VXZmJpNW1xT2tLWk9hR3dRMVlDN0t1ZUFzcTI0WkxjX2lLX0pBX1l3ZENnQjJDdS1saGVlQzNvVFFGTDBBYkdvdlJ3T3V1VVNoSXNEZEdwVkFBQTBvZHZ1SFpkNzhnQVRWZU1SLVZwNHoyYUFzamdNUXp4Uk1KQ2JVazVUWGRUS1ktUEZsWmVJYVgzUkt5TGZENzdn?oc=5)
