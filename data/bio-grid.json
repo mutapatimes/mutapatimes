@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-08T08:18:44+00:00",
+  "fetched_at": "2026-07-08T11:00:20+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zulu king to meet Mnangagwa over SA anti-immigrant tensions",
+      "link": "https://mutapatimes.com/news/2026-07-08-zulu-king-to-meet-mnangagwa-over-sa-anti-immigrant-tensions-70ef32",
+      "image": "https://mutapatimes.com/img/cards/news/bfc696c00223.png",
+      "pubDate": "2026-07-08T10:41:15+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "83-year-old Zimbabwe’s Mnangagwa signs law extending his presidency to 2030",
+      "link": "https://mutapatimes.com/news/2026-07-08-83-year-old-zimbabwe-s-mnangagwa-signs-law-extending-his-presidency-to-2030-b2c800",
+      "image": "https://mutapatimes.com/img/cards/news/8c6c5206388b.png",
+      "pubDate": "2026-07-08T09:05:56+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Air Zimbabwe’s Harare-London flight frequency announced",
@@ -65,6 +81,22 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mentor Centre — Teacher (Biology and Chemistry) Up to A Level",
+      "link": "https://vacancymail.co.zw/jobs/teacher-biology-and-chemistry-up-to-a-level-68163/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6b6cb44e943f.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — DRIP IRRIGATION MAINTENANCE FOREMAN",
+      "link": "https://vacancymail.co.zw/jobs/drip-irrigation-maintenance-foreman-68162/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c00155858250.png",
+      "pubDate": "2026-07-07T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -447,38 +479,6 @@
       "title": "University of Zimbabwe - UZ — Mechatronics Technician",
       "link": "https://vacancymail.co.zw/jobs/mechatronics-technician-68112/",
       "image": "https://mutapatimes.com/img/cards/jobs/2da4b681e7a8.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "University of Zimbabwe - UZ — Chief Technician (1 Post): DEPARTMENT OF BIOINFORMATICS AND BIOMEDICAL ENGINEERING SCIENCES",
-      "link": "https://vacancymail.co.zw/jobs/chief-technician-1-post-department-of-bioinformatics-and-biomedical-engineering-sciences-68111/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2fc1c355e290.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "University of Zimbabwe - UZ — Senior Technician (1 Post): DEPARTMENT OF BIOMEDICAL SCIENCES (ANATOMY UNIT)",
-      "link": "https://vacancymail.co.zw/jobs/senior-technician-1-post-department-of-biomedical-sciences-anatomy-unit-68110/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8f6416a0c866.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mine Manager",
-      "link": "https://vacancymail.co.zw/jobs/mine-manager-68109/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6774c509c0a6.png",
-      "pubDate": "2026-07-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/receptionist-68108/",
-      "image": "https://mutapatimes.com/img/cards/jobs/09f458449d66.png",
       "pubDate": "2026-07-07T22:00:00+00:00",
       "category": "Jobs"
     }
