@@ -1,0 +1,16 @@
+---
+title: "South African pharmaceutical firm develops potential Ebola treatment"
+date: 2026-07-09T02:30:00.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "South African pharmaceutical firm develops potential Ebola treatment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSG05YXlGQzBuQ0xXcGNtTUdzMm9IVEplZ1kzN3FlRnREOFJkU2pnZTVjNXBGSUxudEJ4bE95TzZaQS1jT185QzlmTWtadTdueklWamlrX3p0Sms3c2Z1V2RZRXlURFJWQU5nOXFxai1wbzU4TXJKd053YmZmNFY3ZUlua010OUhMRjgxc2xNTHJmMXRncFgwaDctT1BfZG9ib0hONHZCX1RvTm43akFiWUxfcTgwRHcwQ0ZHdmFqUm14VVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSG05YXlGQzBuQ0xXcGNtTUdzMm9IVEplZ1kzN3FlRnREOFJkU2pnZTVjNXBGSUxudEJ4bE95TzZaQS1jT185QzlmTWtadTdueklWamlrX3p0Sms3c2Z1V2RZRXlURFJWQU5nOXFxai1wbzU4TXJKd053YmZmNFY3ZUlua010OUhMRjgxc2xNTHJmMXRncFgwaDctT1BfZG9ib0hONHZCX1RvTm43akFiWUxfcTgwRHcwQ0ZHdmFqUm14VVE?oc=5)
