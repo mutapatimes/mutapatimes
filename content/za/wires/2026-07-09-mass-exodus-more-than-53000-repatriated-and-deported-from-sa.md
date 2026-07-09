@@ -1,0 +1,16 @@
+---
+title: "Mass exodus — more than 53,000 repatriated and deported from SA during anti-foreigner protests"
+date: 2026-07-09T19:47:10.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Mass exodus — more than 53,000 repatriated and deported from SA during anti-foreigner protests"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxOMjNCcVNwSzhmTkgzSkpsRFFmQWZtWThmNVVTRXRjTnVoRkMzeXAzMmM1UmxoQzA5M1NlV3FxOXZvdUhrTmh1U01rSkk2eFhrS3N2RWRpVVVwM1pjRGJndmowU2Q0R2lSWXE1YW5hTU82bjJyQTlZNEpTQ2d3bXlxamVXRXVuX0NRdjdqMkxhejhQcWVabDdQb1hZVUNYdlVUYklETjRNcVJIZFBZMktwYkZrNWZNZm5DTzVEY2pqVWYxWFZkVlZRX1Z0eFlDYlBxcGhHcmQ0WC1NeEw0aHBFREc0MHJpSHdDSWZfOFdNNnVEUHVsdEViQzRtNVd5TXNoaXZrQVc4T0N0cVh6eENUTF9zRGNYaDBHbFBWRVFxSm9VS2JKdS1GVk9GSlA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxOMjNCcVNwSzhmTkgzSkpsRFFmQWZtWThmNVVTRXRjTnVoRkMzeXAzMmM1UmxoQzA5M1NlV3FxOXZvdUhrTmh1U01rSkk2eFhrS3N2RWRpVVVwM1pjRGJndmowU2Q0R2lSWXE1YW5hTU82bjJyQTlZNEpTQ2d3bXlxamVXRXVuX0NRdjdqMkxhejhQcWVabDdQb1hZVUNYdlVUYklETjRNcVJIZFBZMktwYkZrNWZNZm5DTzVEY2pqVWYxWFZkVlZRX1Z0eFlDYlBxcGhHcmQ0WC1NeEw0aHBFREc0MHJpSHdDSWZfOFdNNnVEUHVsdEViQzRtNVd5TXNoaXZrQVc4T0N0cVh6eENUTF9zRGNYaDBHbFBWRVFxSm9VS2JKdS1GVk9GSlA?oc=5)

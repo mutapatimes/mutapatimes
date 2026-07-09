@@ -1,0 +1,16 @@
+---
+title: "Ekurhuleni residents target businesses accused of employing foreign nationals"
+date: 2026-07-09T19:16:26.000Z
+author: News24
+category: Business
+image: 
+summary: "Ekurhuleni residents target businesses accused of employing foreign nationals"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUDQ5cHJ1S2hiY0syci1PMXlmekg0MTVqOU0wWUVyWW9jbGY2cmJKY0ctalNoNmVZcWQwUEUyS29aUl9hc2laTlMwYTBnUnBtX3Q3MVd3VWhFcEJyd0pKX21OcFF6bkhnNFc3ekVzejk5V2Z1T1FnTS16emRBanhlNW0xTlAtS1ZJMVFLblh0bEhfcDBfSXFfS2dHMlVfdl85NGphYkRFZkNWN0twMWJONDltZDVqWE5xc0lSeDN2bWlZWGRZVThxYlNMcw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMiywFBVV95cUxPUDQ5cHJ1S2hiY0syci1PMXlmekg0MTVqOU0wWUVyWW9jbGY2cmJKY0ctalNoNmVZcWQwUEUyS29aUl9hc2laTlMwYTBnUnBtX3Q3MVd3VWhFcEJyd0pKX21OcFF6bkhnNFc3ekVzejk5V2Z1T1FnTS16emRBanhlNW0xTlAtS1ZJMVFLblh0bEhfcDBfSXFfS2dHMlVfdl85NGphYkRFZkNWN0twMWJONDltZDVqWE5xc0lSeDN2bWlZWGRZVThxYlNMcw?oc=5)
