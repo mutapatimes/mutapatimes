@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-09T09:57:57.905754+00:00",
+  "fetched_at": "2026-07-09T15:32:39.801218+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -166,15 +166,6 @@
       "baths": "3"
     },
     {
-      "title": "3-Bedroom house In Mainway Meadows",
-      "url": "https://www.property.co.zw/for-sale/houses-gat233105",
-      "price": "USD 95,000",
-      "location": "Mainway Meadows, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/f9/34/69/f934697a-09ec-45f4-b6c6-45c6dd3b42f9_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "House for sale",
       "url": "https://www.property.co.zw/for-sale/houses-nal234985",
       "price": "USD 130,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/a8/cd/ac/a8cdac1e-7b98-48e8-9c63-dbd587984422_thumbnail591.webp",
       "beds": "12",
       "baths": "8"
+    },
+    {
+      "title": "Hatfield",
+      "url": "https://www.property.co.zw/for-sale/houses-mac243757",
+      "price": "USD 150,000",
+      "location": "Hatfield, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/5a/0e/cd/5a0ecded-b238-43a2-9e12-ada0e2121d57_thumbnail591.webp",
+      "beds": "5",
+      "baths": ""
     }
   ]
 }

@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2026 14:46:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 15:32:51 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -235,18 +235,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/50bd5ef9e45d.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 95,000 — 3-Bedroom house In Mainway Meadows (Mainway Meadows, Harare South)</title>
-      <link>https://mutapatimes.com/property-landing/9bb765524a97.html</link>
-      <description>USD 95,000 — Mainway Meadows, Harare South. 3 beds, 2 baths. 3-Bedroom house In Mainway Meadows. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 08 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/9bb765524a97.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/9bb765524a97.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9bb765524a97.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/9bb765524a97.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 130,000 — House for sale (Mainway Meadows, Harare South)</title>
       <link>https://mutapatimes.com/property-landing/6e5e9dbdfeb7.html</link>
       <description>USD 130,000 — Mainway Meadows, Harare South. 3 beds, 2 baths. House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/c0a35e57a48a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/c0a35e57a48a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/c0a35e57a48a.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 150,000 — Hatfield (Hatfield, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/fbf06ea1621a.html</link>
+      <description>USD 150,000 — Hatfield, Harare South. 5 beds. Hatfield. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 08 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/fbf06ea1621a.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/fbf06ea1621a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/fbf06ea1621a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/fbf06ea1621a.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
