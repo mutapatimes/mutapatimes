@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jul 2026 19:50:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 19:54:45 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -173,6 +173,30 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>First Mutual Holdings Limited — Dentist</title>
+      <link>https://mutapatimes.com/stories/2048b85b7457.html</link>
+      <description>Applications are invited from suitably qualified and experienced persons to fill the above vacancy that has arisen within First Mutual Health Services. The Job Reporting to the Head of Dental Service… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 09 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/2048b85b7457.html</guid>
+      <category>Jobs</category>
+      <dc:creator>First Mutual Holdings Limited</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/2048b85b7457.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/2048b85b7457.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/2048b85b7457.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Bauxim Logistics — Motor Mechanic</title>
+      <link>https://mutapatimes.com/stories/5e3b17524978.html</link>
+      <description>Motor mechanic wanted Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 09 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/5e3b17524978.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Bauxim Logistics</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/5e3b17524978.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5e3b17524978.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/5e3b17524978.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>TIMB — Farm Manager</title>
@@ -713,30 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/61eb7c8c5889.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/61eb7c8c5889.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/61eb7c8c5889.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>ActionAid Zimbabwe — HR &amp; ADMINISTRATION GRADUATE INTERN (HARARE)</title>
-      <link>https://mutapatimes.com/stories/f0f96c07821c.html</link>
-      <description>ActionAid Zimbabwe is part of a global federation working in over 40 countries to advance social justice, eradicate poverty, and achieve gender equality by standing with people living in poverty and… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 09 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/f0f96c07821c.html</guid>
-      <category>Jobs</category>
-      <dc:creator>ActionAid Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/f0f96c07821c.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f0f96c07821c.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/f0f96c07821c.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>ActionAid Zimbabwe — GRANTS AND COMPLIANCE OFFICER (HARARE)</title>
-      <link>https://mutapatimes.com/stories/5519847d7860.html</link>
-      <description>ActionAid Zimbabwe is part of a global federation working in over 40 countries to advance social justice, eradicate poverty, and achieve gender equality by standing with people living in poverty and… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 09 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/5519847d7860.html</guid>
-      <category>Jobs</category>
-      <dc:creator>ActionAid Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/5519847d7860.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5519847d7860.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/5519847d7860.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
