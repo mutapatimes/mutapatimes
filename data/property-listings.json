@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-10T14:51:15.842252+00:00",
+  "fetched_at": "2026-07-10T19:50:20.577040+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -148,15 +148,6 @@
       "baths": "4"
     },
     {
-      "title": "Mabvazuva Estate for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-rws240780",
-      "price": "USD 110,000",
-      "location": "Mabvazuva, Ruwa",
-      "image": "https://www.property.co.zw/uploadedfiles/57/1b/15/571b1586-e861-4d9b-8be4-20ef7fc25c45_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Serene Cottage Living in Merrydown Estate, Hogerty Hill",
       "url": "https://www.property.co.zw/for-sale/houses-gat249380",
       "price": "USD 110,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/7f/85/b0/7f85b023-4a9e-4919-a02c-081b5568f972_thumbnail591.webp",
       "beds": "4",
       "baths": "1"
+    },
+    {
+      "title": "Solid home in Athlone",
+      "url": "https://www.property.co.zw/for-sale/houses-knp247358",
+      "price": "USD 300,000",
+      "location": "Athlone, Harare East",
+      "image": "https://www.property.co.zw/uploadedfiles/30/4c/2f/304c2f7e-5829-4f91-b4a0-56cac0772584_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     }
   ]
 }
