@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-10T11:48:02+00:00",
+  "fetched_at": "2026-07-10T14:11:08+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe confirm future captains across all formats",
+      "link": "https://mutapatimes.com/articles/2026-07-10-zimbabwe-confirm-future-captains-across-all-formats",
+      "image": "https://mutapatimes.com/img/cards/news/15e30108e05c.png",
+      "pubDate": "2026-07-10T13:50:09+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Critical gaps in child protection exposed",
+      "link": "https://mutapatimes.com/articles/2026-07-10-critical-gaps-in-child-protection-exposed",
+      "image": "https://mutapatimes.com/img/cards/news/c6257b77c80b.png",
+      "pubDate": "2026-07-10T00:00:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Zimbabwean families driven from their homes camp outside Limpopo police station",
@@ -9,14 +25,6 @@
       "image": "https://mutapatimes.com/img/cards/news/33ca89f2898f.png",
       "pubDate": "2026-07-09T23:42:28+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "ZCTU suspends Secretary General Marimo amid chaotic executive meeting",
-      "link": "https://mutapatimes.com/articles/2026-07-09-zctu-suspends-secretary-general-marimo-amid-chaotic-executiv",
-      "image": "https://mutapatimes.com/img/cards/news/e05157436c4e.png",
-      "pubDate": "2026-07-09T23:20:18+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -29,26 +37,10 @@
     {
       "kind": "news",
       "title": "IMF, Zimbabwe reach staff-level agreement on first review of monitoring program",
-      "link": "https://mutapatimes.com/articles/2026-07-09-imf-zimbabwe-reach-staff-level-agreement-on-first-review-of",
-      "image": "https://mutapatimes.com/img/cards/news/9947da447c8f.png",
-      "pubDate": "2026-07-09T23:08:53+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "IMF, Zimbabwe reach staff-level agreement on first review of monitoring program",
       "link": "https://mutapatimes.com/news/2026-07-09-imf-zimbabwe-reach-staff-level-agreement-on-first-review-of-monitoring-program-2ccecc",
       "image": "https://mutapatimes.com/img/cards/news/73ceb61431ee.png",
       "pubDate": "2026-07-09T23:08:53+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "AmaZulu release Zimbabwean midfielder Mason Mushore after six months",
-      "link": "https://mutapatimes.com/articles/2026-07-09-amazulu-release-zimbabwean-midfielder-mason-mushore-after-si",
-      "image": "https://mutapatimes.com/img/cards/news/dc0691b2ec59.png",
-      "pubDate": "2026-07-09T23:00:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -73,14 +65,6 @@
       "image": "https://mutapatimes.com/img/cards/news/a4fe8b017c27.png",
       "pubDate": "2026-07-09T22:22:19+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Nigeria Advances Ambition to Become Africa’s Next Lithium Powerhouse with Australian-Backed Mining Portfolio",
-      "link": "https://mutapatimes.com/articles/2026-07-09-nigeria-advances-ambition-to-become-africas-next-lithium-pow",
-      "image": "https://mutapatimes.com/img/cards/news/ba54caa958b1.png",
-      "pubDate": "2026-07-09T22:17:55+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -479,6 +463,22 @@
       "title": "ActionAid Zimbabwe — FINANCE GRADUATE INTERN (HARARE)",
       "link": "https://vacancymail.co.zw/jobs/finance-graduate-intern-harare-68153/",
       "image": "https://mutapatimes.com/img/cards/jobs/61eb7c8c5889.png",
+      "pubDate": "2026-07-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ActionAid Zimbabwe — HR & ADMINISTRATION GRADUATE INTERN (HARARE)",
+      "link": "https://vacancymail.co.zw/jobs/hr-administration-graduate-intern-harare-68152/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f0f96c07821c.png",
+      "pubDate": "2026-07-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ActionAid Zimbabwe — GRANTS AND COMPLIANCE OFFICER (HARARE)",
+      "link": "https://vacancymail.co.zw/jobs/grants-and-compliance-officer-harare-68151/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5519847d7860.png",
       "pubDate": "2026-07-09T22:00:00+00:00",
       "category": "Jobs"
     }
