@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-09",
+  "fetched_at": "2026-07-10",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -9,23 +9,23 @@
       "currency": "GBP",
       "currency_sym": "£",
       "cheapest_overall": {
-        "price": 436,
-        "airline": "FR",
-        "departure_at": "2026-10-13",
+        "price": 504,
+        "airline": "EI",
+        "departure_at": "2026-08-10",
         "return_at": "",
         "stops": 3,
-        "duration": 2330,
+        "duration": 3530,
         "currency": ""
       },
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 513,
-          "airline": "PC",
-          "departure_at": "2026-07-23",
+          "price": 669,
+          "airline": "WB",
+          "departure_at": "2026-07-16",
           "return_at": "",
-          "stops": 3,
-          "duration": 1840,
+          "stops": 2,
+          "duration": 1210,
           "currency": ""
         },
         {
@@ -38,21 +38,21 @@
           "currency": ""
         },
         {
-          "price": 683,
+          "price": 687,
           "airline": "2L",
-          "departure_at": "2026-09-08",
-          "return_at": "2026-09-22",
+          "departure_at": "2026-09-03",
+          "return_at": "2026-09-16",
           "stops": 2,
           "duration": null,
           "currency": ""
         },
         {
-          "price": 436,
-          "airline": "FR",
+          "price": 534,
+          "airline": "MS",
           "departure_at": "2026-10-13",
           "return_at": "",
-          "stops": 3,
-          "duration": 2330,
+          "stops": 2,
+          "duration": 1880,
           "currency": ""
         },
         {
@@ -63,18 +63,18 @@
           "stops": 1,
           "duration": null,
           "currency": ""
+        },
+        {
+          "price": 766,
+          "airline": "WB",
+          "departure_at": "2027-03-24",
+          "return_at": "2027-03-31",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "by_airline": [
-        {
-          "price": 436,
-          "airline": "FR",
-          "departure_at": "2026-10-13",
-          "return_at": "",
-          "stops": 3,
-          "duration": 2330,
-          "currency": ""
-        },
         {
           "price": 504,
           "airline": "EI",
@@ -85,30 +85,39 @@
           "currency": ""
         },
         {
-          "price": 513,
-          "airline": "PC",
-          "departure_at": "2026-07-23",
+          "price": 534,
+          "airline": "MS",
+          "departure_at": "2026-10-13",
           "return_at": "",
-          "stops": 3,
-          "duration": 1840,
+          "stops": 2,
+          "duration": 1880,
           "currency": ""
         },
         {
-          "price": 517,
-          "airline": "U2",
+          "price": 633,
+          "airline": "DE",
+          "departure_at": "2026-08-18",
+          "return_at": "2026-09-15",
+          "stops": 2,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 660,
+          "airline": "KQ",
+          "departure_at": "2026-10-13",
+          "return_at": "2026-11-12",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 669,
+          "airline": "WB",
           "departure_at": "2026-07-16",
           "return_at": "",
-          "stops": 3,
-          "duration": 2860,
-          "currency": ""
-        },
-        {
-          "price": 526,
-          "airline": "RK",
-          "departure_at": "2026-07-15",
-          "return_at": "",
-          "stops": 4,
-          "duration": 2550,
+          "stops": 2,
+          "duration": 1210,
           "currency": ""
         }
       ],
@@ -116,13 +125,13 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 9,
-          "error": null
+          "n": 0,
+          "error": "<urlopen error [Errno 104] Connection reset by peer>"
         },
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 5,
+          "n": 6,
           "error": null
         },
         {
@@ -140,13 +149,13 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 9,
+          "n": 8,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 5,
+          "n": 6,
           "error": null
         },
         {
@@ -162,7 +171,7 @@
           "error": null
         }
       ],
-      "observations": 27
+      "observations": 20
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -203,7 +212,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 2787,
+        "price": 2786,
         "airline": "FA",
         "departure_at": "2026-07-26",
         "return_at": "",
@@ -214,7 +223,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 2787,
+          "price": 2786,
           "airline": "FA",
           "departure_at": "2026-07-26",
           "return_at": "",
@@ -243,7 +252,7 @@
       ],
       "by_airline": [
         {
-          "price": 2787,
+          "price": 2786,
           "airline": "FA",
           "departure_at": "2026-07-26",
           "return_at": "",
@@ -323,9 +332,9 @@
       },
       "monthly": [
         {
-          "price": 1281,
+          "price": 1279,
           "airline": "FA",
-          "departure_at": "2026-07-13",
+          "departure_at": "2026-07-16",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -361,7 +370,7 @@
           "currency": ""
         },
         {
-          "price": 3103,
+          "price": 3115,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -578,7 +587,7 @@
           "endpoint": "v2",
           "origin": "DXB",
           "n": 0,
-          "error": null
+          "error": "<urlopen error [Errno 104] Connection reset by peer>"
         }
       ],
       "observations": 11
