@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-07-10T17:08:49.652630+00:00",
+  "fetched_at": "2026-07-10T19:52:57.015924+00:00",
   "source": "https://open.er-api.com/v6/latest/USD",
   "source_label": "open.er-api.com (official interbank composite)",
   "base": "USD",
   "as_of": "Fri, 10 Jul 2026 00:02:31 +0000",
-  "next_update": "Sat, 11 Jul 2026 00:27:41 +0000",
+  "next_update": "Sat, 11 Jul 2026 00:30:21 +0000",
   "rates": {
     "ZAR": 16.333246,
     "USD": 1.0,
