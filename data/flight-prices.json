@@ -65,10 +65,10 @@
           "currency": ""
         },
         {
-          "price": 766,
-          "airline": "WB",
-          "departure_at": "2027-03-24",
-          "return_at": "2027-03-31",
+          "price": 741,
+          "airline": "ET",
+          "departure_at": "2027-03-23",
+          "return_at": "2027-03-30",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -171,7 +171,7 @@
           "error": null
         }
       ],
-      "observations": 26
+      "observations": 27
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -313,7 +313,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1276,
+        "price": 1277,
         "airline": "FA",
         "departure_at": "2026-07-22",
         "return_at": "",
@@ -322,7 +322,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1276,
+        "price": 1277,
         "airline": "FA",
         "departure_at": "2026-07-22",
         "return_at": "",
@@ -332,7 +332,7 @@
       },
       "monthly": [
         {
-          "price": 1276,
+          "price": 1277,
           "airline": "FA",
           "departure_at": "2026-07-22",
           "return_at": "",
@@ -370,7 +370,7 @@
       ],
       "by_airline": [
         {
-          "price": 1276,
+          "price": 1277,
           "airline": "FA",
           "departure_at": "2026-07-22",
           "return_at": "",
