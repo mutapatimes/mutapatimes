@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jul 2026 13:53:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 13:57:43 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -101,6 +101,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Accounting Intern</title>
+      <link>https://mutapatimes.com/stories/d94415ff31db.html</link>
+      <description>We are seeking a motivated and enthusiastic Accounting Intern to join our team. This opportunity is ideal for a student currently pursuing a qualification in Accounting, Finance, or a related field w… Harare · Internship (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 10 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d94415ff31db.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d94415ff31db.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d94415ff31db.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d94415ff31db.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zaka Rural District Council — Class 2 Drivers x2</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/1fa6a59bd0ef.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1fa6a59bd0ef.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/1fa6a59bd0ef.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>CIMAS — Doctor - Cimas Kwekwe Clinic</title>
-      <link>https://mutapatimes.com/stories/794a0c20d696.html</link>
-      <description>Join Our Team Doctor - Cimas Kwekwe Clinic Job Summary Cimas Health Group’s purpose is to inspire healthier communities. In pursuant to this purpose, Cimas is searching for a Doctor to attend to pati… Kwekwe · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 10 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/794a0c20d696.html</guid>
-      <category>Jobs</category>
-      <dc:creator>CIMAS</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/794a0c20d696.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/794a0c20d696.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/794a0c20d696.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
