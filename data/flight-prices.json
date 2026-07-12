@@ -315,7 +315,7 @@
       "cheapest_overall": {
         "price": 1277,
         "airline": "FA",
-        "departure_at": "2026-07-22",
+        "departure_at": "2026-07-29",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -324,7 +324,7 @@
       "cheapest_direct": {
         "price": 1277,
         "airline": "FA",
-        "departure_at": "2026-07-22",
+        "departure_at": "2026-07-29",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -334,35 +334,26 @@
         {
           "price": 1277,
           "airline": "FA",
-          "departure_at": "2026-07-22",
+          "departure_at": "2026-07-29",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 1278,
+          "price": 1279,
           "airline": "FA",
-          "departure_at": "2026-08-30",
+          "departure_at": "2026-08-31",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 3604,
-          "airline": "FA",
-          "departure_at": "2026-09-11",
-          "return_at": "2026-09-14",
-          "stops": 0,
-          "duration": null,
-          "currency": ""
-        },
-        {
-          "price": 4202,
+          "price": 4079,
           "airline": "FN",
-          "departure_at": "2026-12-23",
-          "return_at": "2027-01-18",
+          "departure_at": "2026-12-20",
+          "return_at": "2027-01-17",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -372,14 +363,14 @@
         {
           "price": 1277,
           "airline": "FA",
-          "departure_at": "2026-07-22",
+          "departure_at": "2026-07-29",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 3107,
+          "price": 3091,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -388,10 +379,10 @@
           "currency": ""
         },
         {
-          "price": 4202,
+          "price": 4079,
           "airline": "FN",
-          "departure_at": "2026-12-23",
-          "return_at": "2027-01-18",
+          "departure_at": "2026-12-20",
+          "return_at": "2027-01-17",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -401,13 +392,13 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 16,
+          "n": 15,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "JNB",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -423,7 +414,7 @@
           "error": null
         }
       ],
-      "observations": 22
+      "observations": 20
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -592,7 +583,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -608,7 +599,7 @@
           "error": null
         }
       ],
-      "observations": 10
+      "observations": 11
     },
     "toronto-to-harare": {
       "origin": "YYZ",
