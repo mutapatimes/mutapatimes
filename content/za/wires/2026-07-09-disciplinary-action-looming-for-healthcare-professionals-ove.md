@@ -1,0 +1,16 @@
+---
+title: "Disciplinary action looming for healthcare professionals over recalled iDEXIS weight-loss drugs"
+date: 2026-07-09T09:44:25.000Z
+author: IOL
+category: Health
+image: 
+summary: "Disciplinary action looming for healthcare professionals over recalled iDEXIS weight-loss drugs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTGE1aTNxenZCcDZmbktyUVV0U2pHWUc1dlI4aUxHZlNaZ3NwSzM5ZncyVmM2Tmw1Znhta3N6THUyaXJUMUlKUGFuNTFmSGJyM0NicXJVb1EtRUtlSHFXby1WYW1xaUxCc3ZCa1RMRTJsUDFxU0NzTTNsT1poMDNwTWJNUmZTLTQyanNqaGtUcTdSc09ReXNNNGVzbHd3SnJGR0FXR1N6Y1phLXFwSkJGRW9tamEtaDNiU1JFYjZhQWlYdjdueTZ2bk5PZ1diVWtlUC05M2t4b3gyYmM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTGE1aTNxenZCcDZmbktyUVV0U2pHWUc1dlI4aUxHZlNaZ3NwSzM5ZncyVmM2Tmw1Znhta3N6THUyaXJUMUlKUGFuNTFmSGJyM0NicXJVb1EtRUtlSHFXby1WYW1xaUxCc3ZCa1RMRTJsUDFxU0NzTTNsT1poMDNwTWJNUmZTLTQyanNqaGtUcTdSc09ReXNNNGVzbHd3SnJGR0FXR1N6Y1phLXFwSkJGRW9tamEtaDNiU1JFYjZhQWlYdjdueTZ2bk5PZ1diVWtlUC05M2t4b3gyYmM?oc=5)

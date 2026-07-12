@@ -1,0 +1,16 @@
+---
+title: "Solar Group expands its African footprint through strategic investments and enhanced regional capability"
+date: 2026-07-09T13:49:18.000Z
+author: IOL
+category: Business
+image: 
+summary: "Solar Group expands its African footprint through strategic investments and enhanced regional capability"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUlVTVmhUaXVGQUxMUmZ4eUVLVXNXY2Z2MFlkVnhxZlF3WGRkS1NTV0FvZU45RVc4ano2X095YzdYNVVneWx2b1FqUWV1OE5nLWh0NzlsX1RwZkxGdDFIc2NNMVBRRC1aLXozXzN4b2lucXlWNXNQUlRIQ0s5T0dnb0dPTzVXUXh4R3A0dXd1UWhwOUVZWlRqMzdEamRrR0ZfY1gySnVRZW1PcGZBOFJReWpaREJTYUZHd3E2V2EzOWFHX1FJMGo5TmZsY0VfZHRzVlplVkdSOTdHOU9EWFRKVHVYUHNvVmpHZV9faTNWMnI1UQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUlVTVmhUaXVGQUxMUmZ4eUVLVXNXY2Z2MFlkVnhxZlF3WGRkS1NTV0FvZU45RVc4ano2X095YzdYNVVneWx2b1FqUWV1OE5nLWh0NzlsX1RwZkxGdDFIc2NNMVBRRC1aLXozXzN4b2lucXlWNXNQUlRIQ0s5T0dnb0dPTzVXUXh4R3A0dXd1UWhwOUVZWlRqMzdEamRrR0ZfY1gySnVRZW1PcGZBOFJReWpaREJTYUZHd3E2V2EzOWFHX1FJMGo5TmZsY0VfZHRzVlplVkdSOTdHOU9EWFRKVHVYUHNvVmpHZV9faTNWMnI1UQ?oc=5)
