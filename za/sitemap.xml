@@ -2,81 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-07-13T17:25:35+00:00</lastmod>
+    <lastmod>2026-07-13T19:51:40+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-06-14-bee-and-other-bad-policies-cost-south-africas-mining-industr.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-06-14-molineux-front-and-centre-of-australia-womens-world-t20-win.html</loc>
@@ -11845,6 +11851,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-02-finance-transformation-in-south-african-mining-as-vital-as-t.html</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-02-firefighters-battle-wildfire-in-southern-france.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -16735,6 +16747,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-09-march-and-march-confirms-leader-in-ekurhuleni-gunned-down.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-09-mass-exodus-more-than-53000-repatriated-and-deported-from-sa.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -18787,6 +18805,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-akas-father-slams-media-reports-surrounding-anele-tembe-trag.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-american-pie-star-shannon-elizabeth-finds-heart-and-purpose.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -18829,6 +18853,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-book-review-out-of-this-world-and-into-the-next-connects-sou.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-brackenfell-residents-call-for-infrastructure-development-be.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -18859,6 +18889,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-crypto-exchange-luno-pushes-back-against-treasurys-proposed.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-de-beers-pauses-venetia-mine-as-diamond-market-slump-deepens.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -18872,6 +18908,18 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-delays-in-lifestyle-audits-for-saps-leaders-raise-alarm.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-dense-fog-diverts-flights-from-or-tambo-to-lanseria-as-poor.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-dieter-gerhardt-spy-the-beloved-country.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -18926,6 +18974,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-good-governance-comes-before-investment-sbgs-goolam-ballim.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-how-trumps-white-preference-saw-7727-sa-refugees-enter-us-wh.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19004,6 +19058,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-mayhem-as-shembe-church-building-collapses-burying-congregan.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-meet-the-father-and-son-entrepreneurs-behind-essence-hair-ca.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19099,7 +19159,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-ramaphosa-needs-to-set-record-straight-in-africa-on-migrant.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-ramaphosa-pays-tribute-to-late-former-amir-of-qatar-sheikh-h.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-rising-rugby-prop-luqobo-makwedini-remembered-as-happy-soul.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-rowen-pillai-how-thinking-of-ai-as-a-transformation-tool-can.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19177,7 +19255,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-three-killed-one-critically-injured-after-car-rolls-on-r23-h.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-tim-flack-before-we-blame-a-foreign-hand-we-should-check-the.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-trc-cases-inquiry-bheki-cele-fikile-mbalula-and-nathi-nhleko.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19207,7 +19297,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-vusimuzi-cat-matlala-rejoins-co-accused-after-collapsed-plea.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-wales-captain-dewi-lake-set-to-miss-south-africa-test-with-g.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-wales-captain-lake-set-to-miss-south-africa-test.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-watchdog-clears-coca-cola-deal-in-sa-wants-assurances-on-jse.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19250,6 +19358,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-07-13-why-iconic-brands-become-targets-for-counterfeiters.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-07-13-why-uniform-electricity-pricing-could-boost-investment-and-j.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -34099,6 +34213,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-07-13-bee-and-other-bad-policies-cost-south-africa-s-mining-industry-billions-and-d857c4</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-07-13-betway-invites-south-africans-to-get-their-names-behind-the-boks-a68cb5</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -34166,6 +34286,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-07-13-fatboy-slim-returns-to-south-africa-this-december-df4d22</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-07-13-finance-transformation-in-south-african-mining-as-vital-as-the-ai-revolution-d6cc63</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -34255,7 +34381,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-07-13-man-tossed-into-the-air-by-agitated-bull-bison-was-grandfather-visiting-f655f2</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-07-13-mantashe-wants-oil-firms-to-stockpile-21-days-of-fuel-at-their-cost-1e9653</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-07-13-march-and-march-confirms-leader-in-ekurhuleni-gunned-down-2b8030</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -34292,6 +34430,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-07-13-political-analyst-claims-south-africa-miscalculated-cost-of-icj-case-against-8c9976</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-07-13-republicans-return-to-capitol-hill-with-agenda-complicated-by-graham-death-3fbc08</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
