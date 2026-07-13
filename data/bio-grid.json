@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-13T11:56:56+00:00",
+  "fetched_at": "2026-07-13T14:28:29+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe signs million-dollar schools partnership",
+      "link": "https://mutapatimes.com/articles/2026-07-13-zimbabwe-signs-million-dollar-schools-partnership",
+      "image": "https://mutapatimes.com/img/cards/news/005011026805.png",
+      "pubDate": "2026-07-13T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mining firm seeks to exhume 35 graves",
+      "link": "https://mutapatimes.com/articles/2026-07-12-mining-firm-seeks-to-exhume-35-graves",
+      "image": "https://mutapatimes.com/img/cards/news/27827c3434e4.png",
+      "pubDate": "2026-07-12T23:58:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim mining sector has moved +35.3% since the 2024 rebase quarter — now $2.9B per quarter.",
@@ -463,22 +479,6 @@
       "title": "KOPJE SPARE PARTS DISTRIBUTORS (PVT) LTD — FINANCIAL ACCOUNTANT",
       "link": "https://vacancymail.co.zw/jobs/financial-accountant-68205/",
       "image": "https://mutapatimes.com/img/cards/jobs/ef6111e7ac2f.png",
-      "pubDate": "2026-07-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Valtera Platinum — Boilermaker - Class 2 SF",
-      "link": "https://vacancymail.co.zw/jobs/boilermaker-class-2-sf-68204/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2aaacae4c963.png",
-      "pubDate": "2026-07-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Valtera Platinum — Electrician Class 2 SF",
-      "link": "https://vacancymail.co.zw/jobs/electrician-class-2-sf-68203/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1ca128439d93.png",
       "pubDate": "2026-07-12T22:00:00+00:00",
       "category": "Jobs"
     }
