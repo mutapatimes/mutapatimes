@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 18:19:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 19:48:26 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,6 +89,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/16ce39374feb.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/16ce39374feb.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/16ce39374feb.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 300,000 — 3cluster units on one property measuring 2200sqm with deed and borehole (Arlington, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/1d793c4d23a8.html</link>
+      <description>USD 300,000 — Arlington, Harare South. 3 beds, 1 bath. 3cluster units on one property measuring 2200sqm with deed and borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 12 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/1d793c4d23a8.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/1d793c4d23a8.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/1d793c4d23a8.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/1d793c4d23a8.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 500,000 — Gated Folyjon Glen Lorne 4-Bed Home with Pool &amp; Garden (Glen Lorne, Harare North)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/ae0bc55bcc97.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ae0bc55bcc97.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/ae0bc55bcc97.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 180,000 — 5-Bed Belvedere Home — 1,100m² Stand, Borehole (Belvedere, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/ed53b6cdc444.html</link>
-      <description>USD 180,000 — Belvedere, Harare West. 5 beds, 3 baths. 5-Bed Belvedere Home — 1,100m² Stand, Borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 12 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ed53b6cdc444.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/ed53b6cdc444.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ed53b6cdc444.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/ed53b6cdc444.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

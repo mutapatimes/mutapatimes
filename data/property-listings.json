@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-13T15:10:29.349039+00:00",
+  "fetched_at": "2026-07-13T19:48:19.337787+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -56,6 +56,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/dc/ad/87/dcad87f9-9781-4a35-ba30-8c1b149538df_thumbnail591.webp",
       "beds": "5",
       "baths": "5"
+    },
+    {
+      "title": "3cluster units on one property measuring 2200sqm with deed and borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-cami248755",
+      "price": "USD 300,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/40/a7/35/40a73562-9458-4bf3-98a9-1e7ecd0b9b8b_thumbnail591.webp",
+      "beds": "3",
+      "baths": "1"
     },
     {
       "title": "Gated Folyjon Glen Lorne 4-Bed Home with Pool & Garden",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/5d/cd/5c/5dcd5cd1-dce2-4d8f-a263-8a2280b98827_thumbnail591.webp",
       "beds": "6",
       "baths": "6"
-    },
-    {
-      "title": "5-Bed Belvedere Home — 1,100m² Stand, Borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-sef233765",
-      "price": "USD 180,000",
-      "location": "Belvedere, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/3d/c5/29/3dc5294a-7e63-4245-857a-b1aa253e5eb7_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
     }
   ]
 }
