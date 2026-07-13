@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-12",
+  "fetched_at": "2026-07-13",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -56,7 +56,7 @@
           "currency": ""
         },
         {
-          "price": 1288,
+          "price": 1289,
           "airline": "U2",
           "departure_at": "2026-12-17",
           "return_at": "2027-01-02",
@@ -112,20 +112,20 @@
           "currency": ""
         },
         {
-          "price": 517,
-          "airline": "U2",
-          "departure_at": "2026-07-16",
-          "return_at": "",
-          "stops": 3,
-          "duration": 2860,
-          "currency": ""
-        },
-        {
           "price": 633,
           "airline": "DE",
           "departure_at": "2026-08-18",
           "return_at": "2026-09-15",
           "stops": 2,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 660,
+          "airline": "KQ",
+          "departure_at": "2026-10-13",
+          "return_at": "2026-11-12",
+          "stops": 1,
           "duration": null,
           "currency": ""
         }
@@ -134,7 +134,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -158,7 +158,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 21
+      "observations": 19
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -313,18 +313,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1277,
+        "price": 1274,
         "airline": "FA",
-        "departure_at": "2026-07-29",
+        "departure_at": "2026-07-18",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1277,
+        "price": 1274,
         "airline": "FA",
-        "departure_at": "2026-07-29",
+        "departure_at": "2026-07-18",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -332,9 +332,9 @@
       },
       "monthly": [
         {
-          "price": 1277,
+          "price": 1274,
           "airline": "FA",
-          "departure_at": "2026-07-29",
+          "departure_at": "2026-07-18",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -343,14 +343,14 @@
         {
           "price": 1279,
           "airline": "FA",
-          "departure_at": "2026-08-31",
+          "departure_at": "2026-08-30",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 4079,
+          "price": 4080,
           "airline": "FN",
           "departure_at": "2026-12-20",
           "return_at": "2027-01-17",
@@ -361,16 +361,16 @@
       ],
       "by_airline": [
         {
-          "price": 1277,
+          "price": 1274,
           "airline": "FA",
-          "departure_at": "2026-07-29",
+          "departure_at": "2026-07-18",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 3091,
+          "price": 3272,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -379,7 +379,7 @@
           "currency": ""
         },
         {
-          "price": 4079,
+          "price": 4080,
           "airline": "FN",
           "departure_at": "2026-12-20",
           "return_at": "2027-01-17",
@@ -410,11 +410,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 2,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 20
+      "observations": 19
     },
     "new-york-to-harare": {
       "origin": "NYC",
