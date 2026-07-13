@@ -1,0 +1,16 @@
+---
+title: "More than 400 Gauteng transport licences face cancellation if left uncollected"
+date: 2026-07-13T06:12:44.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "More than 400 Gauteng transport licences face cancellation if left uncollected"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSmZhNFhBbVVkMVVkOFdKdV9aZFNKVmdxVWUyMy1QUlRON2tEZ2pRci04U3NGMzFhSW5qVlpqT3dFQWd5cDlKc09YUzR0Y0V5Nmk1R1RwUVNqRmVudEVELTA5aEFYREpBWXNmVC0wcmd6YW1UUWxkWnE4cWE3NERaWC1CQ2Q3NWJ3ZE1ITFpnT0loMDJoSUNkQVcwaGpKdWRmcnQtMVpZQS1RS2ZGX2hic3RqYUUwcXpGTU44VTNvOUFob1MyRDdnTXFSU0xaa3k0RXc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSmZhNFhBbVVkMVVkOFdKdV9aZFNKVmdxVWUyMy1QUlRON2tEZ2pRci04U3NGMzFhSW5qVlpqT3dFQWd5cDlKc09YUzR0Y0V5Nmk1R1RwUVNqRmVudEVELTA5aEFYREpBWXNmVC0wcmd6YW1UUWxkWnE4cWE3NERaWC1CQ2Q3NWJ3ZE1ITFpnT0loMDJoSUNkQVcwaGpKdWRmcnQtMVpZQS1RS2ZGX2hic3RqYUUwcXpGTU44VTNvOUFob1MyRDdnTXFSU0xaa3k0RXc?oc=5)
