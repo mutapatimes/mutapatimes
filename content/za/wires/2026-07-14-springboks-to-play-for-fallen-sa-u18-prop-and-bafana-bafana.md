@@ -1,0 +1,16 @@
+---
+title: "Springboks to play for fallen SA U18 prop and Bafana Bafana star"
+date: 2026-07-14T07:31:43.000Z
+author: Rugby365
+category: Sport
+image: 
+summary: "Springboks to play for fallen SA U18 prop and Bafana Bafana star"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiigJBVV95cUxNNzljaGltMFpxY05mNTRpZHVaaHlWbDV2ZUNQakQ5dzNuRjNfR2N6TkM4Q2tKQWQ1SWR4cHkzelNiZjc2MTRvYUFHUUdmRGlQX1RmN3BRRHd3dWdFbzE2Z2ZUWlVDU1otQzFBUUtSdFluczRKZEM5c01ZSTF2a1JDT1pJT0VWQUxmUGk2VmU5bDY5VWVzUjQxUFZPbXBldlM3Zkx3NFR5TWJ1bDBLOUg5MVRNbUhaWThZV0c0UFZzM1VEQlhLSzliRk1YLWlsLXJxWTdGaHRCbm5CWHdPYUYybHlELThaWkZCN3hYU21vTmxyYllJcE5oSVIydVNWdzFwYnZ4eEdTYUItUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Rugby365.*
+[Read original article](https://news.google.com/rss/articles/CBMiigJBVV95cUxNNzljaGltMFpxY05mNTRpZHVaaHlWbDV2ZUNQakQ5dzNuRjNfR2N6TkM4Q2tKQWQ1SWR4cHkzelNiZjc2MTRvYUFHUUdmRGlQX1RmN3BRRHd3dWdFbzE2Z2ZUWlVDU1otQzFBUUtSdFluczRKZEM5c01ZSTF2a1JDT1pJT0VWQUxmUGk2VmU5bDY5VWVzUjQxUFZPbXBldlM3Zkx3NFR5TWJ1bDBLOUg5MVRNbUhaWThZV0c0UFZzM1VEQlhLSzliRk1YLWlsLXJxWTdGaHRCbm5CWHdPYUYybHlELThaWkZCN3hYU21vTmxyYllJcE5oSVIydVNWdzFwYnZ4eEdTYUItUQ?oc=5)
