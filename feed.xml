@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jul 2026 08:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 10:21:33 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -833,18 +833,6 @@
       <media:content url="https://mutapatimes.com/img/cards/news/9d71106d67b0.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/9d71106d67b0.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/9d71106d67b0.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimbabwe Moves to Regulate Crypto: Mandatory Registration, $500 Fees and FIU Oversight</title>
-      <link>https://mutapatimes.com/articles/2026-06-13-zimbabwe-crypto-regulation-fiu-registration</link>
-      <description>Crypto firms in Zimbabwe must now register each year with the #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Sat, 13 Jun 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/articles/2026-06-13-zimbabwe-crypto-regulation-fiu-registration</guid>
-      <category>Business</category>
-      <dc:creator>Tendai Kuwanda</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/67f28b35c352.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/67f28b35c352.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/67f28b35c352.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
