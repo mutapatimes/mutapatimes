@@ -1,0 +1,16 @@
+---
+title: "Two months after devastating storms, Western Cape roads still closed and communities isolated"
+date: 2026-07-14T13:13:57.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Two months after devastating storms, Western Cape roads still closed and communities isolated"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPR3hwb21LMnctYTVyU3ZkRlgwSl8wbXZXbXpXMjRaSEl3Z200Y2F4cmNUVWN5WTdsOTNhd1c0ejhSVkh0T0FoTG1lXzlkWXRQNWw1SlREWjRHNk9fd0g5b2hxVHNtMWxMVTk0VWR6Rlc1OVhGY29HTHR6dWV4ZTMtRjFXQV84UmhfMWNXZ21xa2Z2V3Q4MlVZbEJ0SkJHTlJ4X3doTW8yaGRHXzZWTi1YenduMUdBRG1fVk05d3UzMkFuc3NHZlJBeGRiS2xiWlpPdUlEYzZsQV9LYnY5dmVLSDRzTks?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPR3hwb21LMnctYTVyU3ZkRlgwSl8wbXZXbXpXMjRaSEl3Z200Y2F4cmNUVWN5WTdsOTNhd1c0ejhSVkh0T0FoTG1lXzlkWXRQNWw1SlREWjRHNk9fd0g5b2hxVHNtMWxMVTk0VWR6Rlc1OVhGY29HTHR6dWV4ZTMtRjFXQV84UmhfMWNXZ21xa2Z2V3Q4MlVZbEJ0SkJHTlJ4X3doTW8yaGRHXzZWTi1YenduMUdBRG1fVk05d3UzMkFuc3NHZlJBeGRiS2xiWlpPdUlEYzZsQV9LYnY5dmVLSDRzTks?oc=5)
