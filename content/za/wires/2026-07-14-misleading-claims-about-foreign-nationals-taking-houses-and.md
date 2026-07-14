@@ -1,0 +1,16 @@
+---
+title: "Misleading claims about foreign nationals taking houses and grants repeated in TV interview"
+date: 2026-07-14T11:32:37.000Z
+author: News24
+category: Policy
+image: 
+summary: "Misleading claims about foreign nationals taking houses and grants repeated in TV interview"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYnpaRHZ5UFRJTy1FQl8wdHBLNG15SVpXeFlxRnZaN1RTV1FNZTd6RUE4T0szdGVkUEF5enlXckZ2Q0JVOThaMXNuRzd3blB2VkpFNTJ1aDBFV0xLM3dYcXZBTnJtZVM5U1gwS0hSdlpGNExoaUlra3NoaXNCOWRoZklPVnBTemctXzkyYThtbDBrbThOZ0EzVGdWVlVtRzlKMjF6RlJDOEFSTUk3UHZGSG1YVHczZnpWR045ZVNlcHFvRXp6cWszOXhBSW5jQUZqLVAyV1hKWEE4M1lyeU9CQmlqXzg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYnpaRHZ5UFRJTy1FQl8wdHBLNG15SVpXeFlxRnZaN1RTV1FNZTd6RUE4T0szdGVkUEF5enlXckZ2Q0JVOThaMXNuRzd3blB2VkpFNTJ1aDBFV0xLM3dYcXZBTnJtZVM5U1gwS0hSdlpGNExoaUlra3NoaXNCOWRoZklPVnBTemctXzkyYThtbDBrbThOZ0EzVGdWVlVtRzlKMjF6RlJDOEFSTUk3UHZGSG1YVHczZnpWR045ZVNlcHFvRXp6cWszOXhBSW5jQUZqLVAyV1hKWEE4M1lyeU9CQmlqXzg?oc=5)
