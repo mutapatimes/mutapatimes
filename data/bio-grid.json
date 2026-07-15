@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-15T05:26:02+00:00",
+  "fetched_at": "2026-07-15T07:59:21+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Social media influencer 'Mai Clifford' fined US$200 for drunk driving after telling court he owns only two cows",
+      "link": "https://mutapatimes.com/news/2026-07-15-social-media-influencer-mai-clifford-fined-us-200-for-drunk-driving-after-90255a",
+      "image": "https://mutapatimes.com/img/cards/news/dcab08fe4872.png",
+      "pubDate": "2026-07-15T05:18:32+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Heiress to Zimbabwean and South African-Born Billionaires Turns $2 Million Australian Home Into an $8.5 Million Sale",
+      "link": "https://mutapatimes.com/articles/2026-07-14-zimbabwe-heiress-to-zimbabwean-and-south-african-born-billio",
+      "image": "https://mutapatimes.com/img/cards/news/0a4c7bb70559.png",
+      "pubDate": "2026-07-14T22:55:36+00:00",
+      "category": "Policy"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: top three sectors are 41.0% of GDP.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 15 Jul: Harare clear sky · high 22° / low 10°",
+      "title": "Zim weather 15 Jul: Harare overcast · high 21° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-07-15",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-15",
       "pubDate": "2026-07-14T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Makoni Rural District Council — GIS Graduate Trainee",
       "link": "https://vacancymail.co.zw/jobs/gis-graduate-trainee-68237/",
       "image": "https://mutapatimes.com/img/cards/jobs/2db3618d89c3.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Makoni Rural District Council — Credit Controller",
-      "link": "https://vacancymail.co.zw/jobs/credit-controller-68236/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b397f5ada5bb.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Makoni Rural District Council — Planning Technician",
-      "link": "https://vacancymail.co.zw/jobs/planning-technician-68235/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ecb34886ceb9.png",
       "pubDate": "2026-07-14T22:00:00+00:00",
       "category": "Jobs"
     }

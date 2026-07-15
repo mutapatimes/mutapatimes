@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jul 2026 05:26:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 07:59:20 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zimbabwe: Heiress to Zimbabwean and South African-Born Billionaires Turns $2 Million Australian Home Into an $8.5 Million Sale</title>
+      <link>https://mutapatimes.com/stories/0a4c7bb70559.html</link>
+      <description>via allAfrica.com #Zimbabwe #Policy #ZimbabwePolicy #ZimbabweNews</description>
+      <pubDate>Tue, 14 Jul 2026 22:55:36 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/0a4c7bb70559.html</guid>
+      <category>Policy</category>
+      <dc:creator>allAfrica.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/0a4c7bb70559.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/0a4c7bb70559.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/0a4c7bb70559.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/5fa36bd1b924.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5fa36bd1b924.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/5fa36bd1b924.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Chegutu Municipality — Head Electrical</title>
-      <link>https://mutapatimes.com/stories/76aa4a5ac61b.html</link>
-      <description>Applications are invited from suitably qualified and experienced candidates to fill the above-mentioned vacancies that have arisen within the Municipality of Chegutu. HEAD ELECTRICIAN ×1 Chegutu · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 14 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/76aa4a5ac61b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Chegutu Municipality</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/76aa4a5ac61b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/76aa4a5ac61b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/76aa4a5ac61b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
