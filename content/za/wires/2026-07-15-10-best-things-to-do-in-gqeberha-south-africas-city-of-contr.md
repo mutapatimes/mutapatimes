@@ -1,0 +1,16 @@
+---
+title: "10 best things to do in Gqeberha, South Africa's city of contrasts"
+date: 2026-07-15T03:48:29.000Z
+author: Escape Australia
+category: Tech
+image: 
+summary: "10 best things to do in Gqeberha, South Africa's city of contrasts"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipAJBVV95cUxQaXRHaXd2TVlGLVlGYWM2UlEzQmVtU1MzTUhPUDBsYU9kLWc3YTNwa2IwZHN1OXV4T3RRR3RHdDJ0Sy04WlhER3QxREFEa0xaU0tEQ0pMM3hINGVJdjYxVHNxeTZOaGZLR2lXdEdDa0JhRXQ2YnZ3ODdTcGhDNnpQbkhnbGQtc2pzclotUjhsQTIzQVJoc0o2NmZoajltYVd6RFBvbllTazY4bmNvRVBPSUVQS2JoeEE0cGlaSlRSQWRGeVBJVC1Cd1FIa3ZicThjZ2xxMHVuVFpiNGw0ekxxaEhOc1A4bXp0cHMyR0NoQ0NsU1RKV3NWRVNCaTdqc09NVGVlNGhHTkc1b1dzV2o1eUt1UXR2NnVfWFlrYmtxU1kwcW9i?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Escape Australia.*
+[Read original article](https://news.google.com/rss/articles/CBMipAJBVV95cUxQaXRHaXd2TVlGLVlGYWM2UlEzQmVtU1MzTUhPUDBsYU9kLWc3YTNwa2IwZHN1OXV4T3RRR3RHdDJ0Sy04WlhER3QxREFEa0xaU0tEQ0pMM3hINGVJdjYxVHNxeTZOaGZLR2lXdEdDa0JhRXQ2YnZ3ODdTcGhDNnpQbkhnbGQtc2pzclotUjhsQTIzQVJoc0o2NmZoajltYVd6RFBvbllTazY4bmNvRVBPSUVQS2JoeEE0cGlaSlRSQWRGeVBJVC1Cd1FIa3ZicThjZ2xxMHVuVFpiNGw0ekxxaEhOc1A4bXp0cHMyR0NoQ0NsU1RKV3NWRVNCaTdqc09NVGVlNGhHTkc1b1dzV2o1eUt1UXR2NnVfWFlrYmtxU1kwcW9i?oc=5)
