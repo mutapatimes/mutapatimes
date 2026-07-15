@@ -1,0 +1,16 @@
+---
+title: "Watch FIFA World Cup: Spain defeats France to reach final"
+date: 2026-07-15T15:15:45.000Z
+author: Al Jazeera
+category: Sport
+image: 
+summary: "Watch FIFA World Cup: Spain defeats France to reach final"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yc2hzTy14aUI4T2ZkYjg4bDBQQndwTC11d3hBbkNnZUFzcTRkY2JtZ3FFNFQ3dlJ3YnppQ2ZPSkxaNDJUb01CbHJsMjlGWkxmYUpCaUV1cEJUYzhrUWFraFZOREU3S1hhRWxwNWRDLTFTN3otRzljRUE5dldPZ9IBgwFBVV95cUxOZEYyaUN1TGxPNEFhb3lUQXlseGJTYTQ1RXZ0NEZmVGhveWR3UWVHYTNaVmk4MFEzNDhZcTRPVjJyTDFnT0VxNXlJc1JEQ2NLandDOU10SC1STksyb29fTXRMQzZCNERNTDIya2xMYldHVFluWnNISTNOTmtGN0tydC1CWQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMifkFVX3lxTE9yc2hzTy14aUI4T2ZkYjg4bDBQQndwTC11d3hBbkNnZUFzcTRkY2JtZ3FFNFQ3dlJ3YnppQ2ZPSkxaNDJUb01CbHJsMjlGWkxmYUpCaUV1cEJUYzhrUWFraFZOREU3S1hhRWxwNWRDLTFTN3otRzljRUE5dldPZ9IBgwFBVV95cUxOZEYyaUN1TGxPNEFhb3lUQXlseGJTYTQ1RXZ0NEZmVGhveWR3UWVHYTNaVmk4MFEzNDhZcTRPVjJyTDFnT0VxNXlJc1JEQ2NLandDOU10SC1STksyb29fTXRMQzZCNERNTDIya2xMYldHVFluWnNISTNOTmtGN0tydC1CWQ?oc=5)
