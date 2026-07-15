@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-15T07:59:21+00:00",
+  "fetched_at": "2026-07-15T10:44:57+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Paratus, Powertel switch on Zimbabwe cross-border fibre",
+      "link": "https://mutapatimes.com/articles/2026-07-15-paratus-powertel-switch-on-zimbabwe-cross-border-fibre",
+      "image": "https://mutapatimes.com/img/cards/news/01de9741dc56.png",
+      "pubDate": "2026-07-15T08:50:45+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Paratus, Powertel switch on Zimbabwe cross-border fibre",
+      "link": "https://mutapatimes.com/news/2026-07-15-paratus-powertel-switch-on-zimbabwe-cross-border-fibre-78ff3c",
+      "image": "https://mutapatimes.com/img/cards/news/b4fb95849e98.png",
+      "pubDate": "2026-07-15T08:50:45+00:00",
+      "category": "Technology"
+    },
     {
       "kind": "news",
       "title": "Social media influencer 'Mai Clifford' fined US$200 for drunk driving after telling court he owns only two cows",
@@ -12,11 +28,35 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe: Heiress to Zimbabwean and South African-Born Billionaires Turns $2 Million Australian Home Into an $8.5 Million Sale",
-      "link": "https://mutapatimes.com/articles/2026-07-14-zimbabwe-heiress-to-zimbabwean-and-south-african-born-billio",
-      "image": "https://mutapatimes.com/img/cards/news/0a4c7bb70559.png",
-      "pubDate": "2026-07-14T22:55:36+00:00",
-      "category": "Policy"
+      "title": "Grieving Khumalo Family Sounds Alarm Over Fake GoFundMe Linked To UK Triple Murder",
+      "link": "https://mutapatimes.com/news/2026-07-14-grieving-khumalo-family-sounds-alarm-over-fake-gofundme-linked-to-uk-triple-32a823",
+      "image": "https://mutapatimes.com/img/cards/news/58f08c8fed41.png",
+      "pubDate": "2026-07-14T22:21:03+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "A passport cannot escape patriarchy: Why some Zimbabwean women are still dying at the hands of men in Britain",
+      "link": "https://mutapatimes.com/articles/2026-07-14-a-passport-cannot-escape-patriarchy-why-some-zimbabwean-wome",
+      "image": "https://mutapatimes.com/img/cards/news/a7380dc67447.png",
+      "pubDate": "2026-07-14T22:07:44+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "A passport cannot escape patriarchy: Why some Zimbabwean women are still dying at the hands of men in Britain",
+      "link": "https://mutapatimes.com/news/2026-07-14-a-passport-cannot-escape-patriarchy-why-some-zimbabwean-women-are-still-dying-3d243b",
+      "image": "https://mutapatimes.com/img/cards/news/d527c979f584.png",
+      "pubDate": "2026-07-14T22:07:44+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Let’s get this straight: the Mutapa Empire was not in Masvingo and ED has no claim to the throne",
+      "link": "https://mutapatimes.com/news/2026-07-14-let-s-get-this-straight-the-mutapa-empire-was-not-in-masvingo-and-ed-has-no-5eb688",
+      "image": "https://mutapatimes.com/img/cards/news/5a420ffbada3.png",
+      "pubDate": "2026-07-14T22:00:58+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -73,6 +113,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-14T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales RepreRepresentative",
+      "link": "https://vacancymail.co.zw/jobs/sales-reprerepresentative-68310/",
+      "image": "https://mutapatimes.com/img/cards/jobs/06e22f8dd1f7.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Contact Centre Association of Zimbabwe — Work-Related Learning Opportunity (Marketing)",
+      "link": "https://vacancymail.co.zw/jobs/work-related-learning-opportunity-marketing-68309/",
+      "image": "https://mutapatimes.com/img/cards/jobs/bb9dc7a07454.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "St Anne's Hospital — Debtors Intern",
+      "link": "https://vacancymail.co.zw/jobs/debtors-intern-68308/",
+      "image": "https://mutapatimes.com/img/cards/jobs/122e04961823.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sante Healthlife Pvt Ltd — Registered General Nurse",
+      "link": "https://vacancymail.co.zw/jobs/registered-general-nurse-68307/",
+      "image": "https://mutapatimes.com/img/cards/jobs/540302b27734.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sante Healthlife Pvt Ltd — Hospital Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/hospital-receptionist-68306/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8d4cc1b38136.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales Officer",
+      "link": "https://vacancymail.co.zw/jobs/sales-officer-68305/",
+      "image": "https://mutapatimes.com/img/cards/jobs/269deb2a1e48.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Stores Clerk",
+      "link": "https://vacancymail.co.zw/jobs/stores-clerk-68304/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0d94e14a5a7d.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "University of Zimbabwe - UZ — Research Assistant (RA) – Qualitative Research",
+      "link": "https://vacancymail.co.zw/jobs/research-assistant-ra-qualitative-research-68303/",
+      "image": "https://mutapatimes.com/img/cards/jobs/efd5a2161538.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Marketing Representatives",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-representatives-68302/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6e3055ca74ff.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounts Clerk",
+      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-68301/",
+      "image": "https://mutapatimes.com/img/cards/jobs/52877f210eed.png",
+      "pubDate": "2026-07-14T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -359,126 +479,6 @@
       "title": "Pangaea Zimbabwe Aids Trust. PZAT — Call for an Independent Consultant to Evaluate the COMPASS Coalition and Develop a Sustainability and Financing Strategy",
       "link": "https://vacancymail.co.zw/jobs/call-for-an-independent-consultant-to-evaluate-the-compass-coalition-and-develop-a-sustainability-and-financing-strategy-68252/",
       "image": "https://mutapatimes.com/img/cards/jobs/e8ea748ad458.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rusape Town Council — Police Constables x 10",
-      "link": "https://vacancymail.co.zw/jobs/police-constables-x-10-68251/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ed43f29bbb12.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "damofalls investments — GRADER OPERATOR",
-      "link": "https://vacancymail.co.zw/jobs/grader-operator-68250/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5e270bc92b7d.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bondolfi Teacher's College — Lecturer in Physics",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-in-physics-68249/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d0fa03ed7e3c.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Attachment Student - Procurement",
-      "link": "https://vacancymail.co.zw/jobs/attachment-student-procurement-68248/",
-      "image": "https://mutapatimes.com/img/cards/jobs/392795b46644.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Geologist",
-      "link": "https://vacancymail.co.zw/jobs/geologist-68247/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3afad49f29b7.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Data Privacy Engineer",
-      "link": "https://vacancymail.co.zw/jobs/data-privacy-engineer-68246/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c2e5171555c6.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Cybersecurity Operations Centre Engineer",
-      "link": "https://vacancymail.co.zw/jobs/cybersecurity-operations-centre-engineer-68245/",
-      "image": "https://mutapatimes.com/img/cards/jobs/06d94b52b74d.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Information Technology Officer",
-      "link": "https://vacancymail.co.zw/jobs/information-technology-officer-68244/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fe17586fbd86.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chirundu Local Board — Town Secretary",
-      "link": "https://vacancymail.co.zw/jobs/town-secretary-68243/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9da4caf33386.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CHIREDZI TOWN COUNCIL, ZIMBABWE — Town Secretary",
-      "link": "https://vacancymail.co.zw/jobs/town-secretary-68242/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a31711ce6728.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZPC - Zimbabwe Power Company — Section Engineer- Common Plant",
-      "link": "https://vacancymail.co.zw/jobs/section-engineer-common-plant-68241/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9bd06f9f6eff.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZPC - Zimbabwe Power Company — Section Engineer",
-      "link": "https://vacancymail.co.zw/jobs/section-engineer-68240/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7e719a0d575f.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Officer",
-      "link": "https://vacancymail.co.zw/jobs/accounts-officer-68239/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d12f41eaa340.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimasco (Pvt) Limited — Chief Geologist",
-      "link": "https://vacancymail.co.zw/jobs/chief-geologist-68238/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dde84460b00a.png",
-      "pubDate": "2026-07-14T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Makoni Rural District Council — GIS Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/gis-graduate-trainee-68237/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2db3618d89c3.png",
       "pubDate": "2026-07-14T22:00:00+00:00",
       "category": "Jobs"
     }
