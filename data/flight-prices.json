@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15",
+  "fetched_at": "2026-07-16",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -56,7 +56,7 @@
           "currency": ""
         },
         {
-          "price": 1224,
+          "price": 1223,
           "airline": "VF",
           "departure_at": "2026-12-17",
           "return_at": "2027-01-02",
@@ -85,7 +85,7 @@
           "currency": ""
         },
         {
-          "price": 398,
+          "price": 397,
           "airline": "EI",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -241,12 +241,12 @@
           "currency": ""
         },
         {
-          "price": 3355,
-          "airline": "FA",
-          "departure_at": "2026-09-14",
+          "price": 3008,
+          "airline": "5Z",
+          "departure_at": "2027-01-13",
           "return_at": "",
           "stops": 1,
-          "duration": 925,
+          "duration": 530,
           "currency": ""
         }
       ],
@@ -259,13 +259,22 @@
           "stops": 1,
           "duration": 1635,
           "currency": ""
+        },
+        {
+          "price": 3008,
+          "airline": "5Z",
+          "departure_at": "2027-01-13",
+          "return_at": "",
+          "stops": 1,
+          "duration": 530,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -287,7 +296,7 @@
           "error": null
         }
       ],
-      "observations": 5
+      "observations": 6
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -325,7 +334,7 @@
         {
           "price": 1279,
           "airline": "FA",
-          "departure_at": "2026-08-29",
+          "departure_at": "2026-08-01",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -361,7 +370,7 @@
           "currency": ""
         },
         {
-          "price": 2868,
+          "price": 2818,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -370,7 +379,7 @@
           "currency": ""
         },
         {
-          "price": 2976,
+          "price": 2924,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
