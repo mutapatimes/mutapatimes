@@ -56,6 +56,15 @@
           "currency": ""
         },
         {
+          "price": 421,
+          "airline": "FR",
+          "departure_at": "2026-11-25",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2130,
+          "currency": ""
+        },
+        {
           "price": 1223,
           "airline": "VF",
           "departure_at": "2026-12-17",
@@ -125,13 +134,13 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 6,
+          "n": 5,
           "error": null
         },
         {
@@ -149,13 +158,13 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 6,
+          "n": 5,
           "error": null
         },
         {
@@ -212,23 +221,23 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 2786,
+        "price": 2819,
         "airline": "FA",
-        "departure_at": "2026-07-26",
+        "departure_at": "2026-07-17",
         "return_at": "",
         "stops": 1,
-        "duration": 1635,
+        "duration": 725,
         "currency": ""
       },
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 2786,
+          "price": 2819,
           "airline": "FA",
-          "departure_at": "2026-07-26",
+          "departure_at": "2026-07-17",
           "return_at": "",
           "stops": 1,
-          "duration": 1635,
+          "duration": 725,
           "currency": ""
         },
         {
@@ -241,7 +250,7 @@
           "currency": ""
         },
         {
-          "price": 3008,
+          "price": 3022,
           "airline": "5Z",
           "departure_at": "2027-01-13",
           "return_at": "",
@@ -252,16 +261,16 @@
       ],
       "by_airline": [
         {
-          "price": 2786,
+          "price": 2819,
           "airline": "FA",
-          "departure_at": "2026-07-26",
+          "departure_at": "2026-07-17",
           "return_at": "",
           "stops": 1,
-          "duration": 1635,
+          "duration": 725,
           "currency": ""
         },
         {
-          "price": 3008,
+          "price": 3022,
           "airline": "5Z",
           "departure_at": "2027-01-13",
           "return_at": "",
@@ -274,7 +283,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 5,
+          "n": 3,
           "error": null
         },
         {
@@ -296,7 +305,7 @@
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 4
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -370,7 +379,7 @@
           "currency": ""
         },
         {
-          "price": 2818,
+          "price": 2840,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -379,7 +388,7 @@
           "currency": ""
         },
         {
-          "price": 2924,
+          "price": 2947,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -515,15 +524,6 @@
           "stops": 1,
           "duration": 630,
           "currency": ""
-        },
-        {
-          "price": 2700,
-          "airline": "TC",
-          "departure_at": "2026-12-12",
-          "return_at": "2027-01-01",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
         }
       ],
       "by_airline": [
@@ -544,15 +544,6 @@
           "stops": 2,
           "duration": 730,
           "currency": ""
-        },
-        {
-          "price": 2700,
-          "airline": "TC",
-          "departure_at": "2026-12-12",
-          "return_at": "2027-01-01",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
@@ -565,7 +556,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -581,7 +572,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 3
     },
     "toronto-to-harare": {
       "origin": "YYZ",
