@@ -1,0 +1,16 @@
+---
+title: "After African migrants leave, who will run South Africa’s township economy?"
+date: 2026-07-16T22:10:25.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "After African migrants leave, who will run South Africa’s township economy?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingJBVV95cUxQTElvOTd0eEpqOHFHMGs2c1pGUXdaU1VHZW9fdm5KVWN5X0tBblhfZXA2dWdYX1Y2MGpEUjliamJYWmdocGlod2s4aWxYTE9UM01ld3h0TEljY19mY1R2VC1QTXQza1BIWTJvdGQyZS11MlNhaWVXS2NOS1cwYURWQWEyMjJic1pCSkdtV1JxeEs1YkJLbFMyYThCd3lIaUY0U1ZUQm1PLUowUTE3b0c5YXRMZ0hLYjkyamFONEtsMXY2NVU1ZkFLTFN5aHNJbG9XZzNlTHd4cFAzSmNCdkdkVS1RMEdDYnFXTkFjWFE0T0VHWXZJS2hVNl9USV9McVF0cWlmb0tGVWxkVVB5Y1FkLWpnOWdOLWdHY0dmdFhB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMingJBVV95cUxQTElvOTd0eEpqOHFHMGs2c1pGUXdaU1VHZW9fdm5KVWN5X0tBblhfZXA2dWdYX1Y2MGpEUjliamJYWmdocGlod2s4aWxYTE9UM01ld3h0TEljY19mY1R2VC1QTXQza1BIWTJvdGQyZS11MlNhaWVXS2NOS1cwYURWQWEyMjJic1pCSkdtV1JxeEs1YkJLbFMyYThCd3lIaUY0U1ZUQm1PLUowUTE3b0c5YXRMZ0hLYjkyamFONEtsMXY2NVU1ZkFLTFN5aHNJbG9XZzNlTHd4cFAzSmNCdkdkVS1RMEdDYnFXTkFjWFE0T0VHWXZJS2hVNl9USV9McVF0cWlmb0tGVWxkVVB5Y1FkLWpnOWdOLWdHY0dmdFhB?oc=5)
