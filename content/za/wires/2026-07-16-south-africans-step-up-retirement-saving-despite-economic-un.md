@@ -1,0 +1,16 @@
+---
+title: "South Africans step up retirement saving despite economic uncertainty"
+date: 2026-07-16T17:15:08.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "South Africans step up retirement saving despite economic uncertainty"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQ1hkWEJKVHN2WEZ3NF9JaXdLelJRQWU4MXkyTGFMMWZzNmxuS2t2bTZZS3ZQeTBiV2RxQ0pVWmlRYzFsM2tUR29xeUx3cDR5SnFJcHlicUFncEpCQVdpNkxXZUtQVFR3bUFIWkhpd25fZWJ2RmIzdXZhTE1ybzZvdVhTeG1sV3E0dnFkMGE1dVZJX1dPcml4TDg2bUx6Y3Q3ZGE1eEE4U0Jqcm50T2liWU9uOXd4d0M3QTRnV0tPdG05NXdNR0c0QjJjTQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMiywFBVV95cUxNQ1hkWEJKVHN2WEZ3NF9JaXdLelJRQWU4MXkyTGFMMWZzNmxuS2t2bTZZS3ZQeTBiV2RxQ0pVWmlRYzFsM2tUR29xeUx3cDR5SnFJcHlicUFncEpCQVdpNkxXZUtQVFR3bUFIWkhpd25fZWJ2RmIzdXZhTE1ybzZvdVhTeG1sV3E0dnFkMGE1dVZJX1dPcml4TDg2bUx6Y3Q3ZGE1eEE4U0Jqcm50T2liWU9uOXd4d0M3QTRnV0tPdG05NXdNR0c0QjJjTQ?oc=5)
