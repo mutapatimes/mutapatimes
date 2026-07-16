@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16T14:21:13.409054+00:00",
+  "fetched_at": "2026-07-16T19:34:01.349448+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -47,15 +47,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/04/a2/51/04a2511b-7693-46a1-abd3-1be3c051a328_thumbnail591.webp",
       "beds": "5",
       "baths": ""
-    },
-    {
-      "title": "Mainway Meadows 3-Bed: Tiled Roof.",
-      "url": "https://www.property.co.zw/for-sale/houses-mrpg250437",
-      "price": "USD 70,000",
-      "location": "Mainway Meadows, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/19/00/45/190045e2-7b81-4823-8958-0bd6d8d1842c_thumbnail591.webp",
-      "beds": "3",
-      "baths": "1"
     },
     {
       "title": "Elevated Spacious Family Home With Panoramic Views",
@@ -199,6 +190,15 @@
       "location": "Murambi, Mutare",
       "image": "https://www.property.co.zw/uploadedfiles/14/0d/aa/140daa89-46c1-4f2d-b2a7-a90200103533_thumbnail591.webp",
       "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Exclusive Borrowdale Cluster Offering Exceptional Value,Where Comfort, Style And Convenience Meet",
+      "url": "https://www.property.co.zw/for-sale/townhouses-leg248971",
+      "price": "USD 230,000",
+      "location": "Borrowdale, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/ef/b8/e2/efb8e2e3-375a-4966-9096-57c85cc60f7e_thumbnail591.webp",
+      "beds": "4",
       "baths": "2"
     }
   ]
