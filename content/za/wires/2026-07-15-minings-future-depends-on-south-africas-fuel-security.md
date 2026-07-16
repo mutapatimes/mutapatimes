@@ -1,0 +1,16 @@
+---
+title: "Mining’s future depends on South Africa’s fuel security"
+date: 2026-07-15T07:15:34.000Z
+author: Mining Review Africa
+category: Business
+image: 
+summary: "Mining’s future depends on South Africa’s fuel security"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQXlWdlo1T2ZZdDV1a2k2Q2MwbnVLZHdraUtPbFVhaURVVXM2Sy04NDFPb0VzdS1tc1pmbEF5aVFucjJSMkloMm1ySGxJc1dCTTRVcVR2aVZKNU14SldpVE1sQ1VQNzdmV3Y3amU4N0swUDc0SXV5ZW5uZnZhaXZjWmNPSklRQU9scUVaWGVVNlFDUdIBmgFBVV95cUxOcGhSREd5WlgtVWFQaXBrR18wNzBOdVl3QU9wUlZSdVFpZVJRRmJXUDlkVnNWX1RFM1BMdXA0WExJOWVmMk9WZWt5X0hOcHBickVhMkkwWEkyeWhKLXNqMTJOX1Nob3pFeHR0UG5EUEtMd3NQaVdPclNuZTFpUVhjMXczWlo3ZGFKQjdLT08ycTBVbDNmOGhNZWtB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Review Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMikgFBVV95cUxPQXlWdlo1T2ZZdDV1a2k2Q2MwbnVLZHdraUtPbFVhaURVVXM2Sy04NDFPb0VzdS1tc1pmbEF5aVFucjJSMkloMm1ySGxJc1dCTTRVcVR2aVZKNU14SldpVE1sQ1VQNzdmV3Y3amU4N0swUDc0SXV5ZW5uZnZhaXZjWmNPSklRQU9scUVaWGVVNlFDUdIBmgFBVV95cUxOcGhSREd5WlgtVWFQaXBrR18wNzBOdVl3QU9wUlZSdVFpZVJRRmJXUDlkVnNWX1RFM1BMdXA0WExJOWVmMk9WZWt5X0hOcHBickVhMkkwWEkyeWhKLXNqMTJOX1Nob3pFeHR0UG5EUEtMd3NQaVdPclNuZTFpUVhjMXczWlo3ZGFKQjdLT08ycTBVbDNmOGhNZWtB?oc=5)
