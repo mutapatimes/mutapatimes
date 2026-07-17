@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2026 14:06:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 16:10:59 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -41,6 +41,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/e62a99a5b37e.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e62a99a5b37e.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/e62a99a5b37e.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Twin dry ports to ease Forbes Border congestion @zimsituation</title>
+      <link>https://mutapatimes.com/stories/73d1e09de956.html</link>
+      <description>Source: Twin dry ports to ease Forbes Border congestion – herald Ray Bande Senior Reporter ZIMBABWE and Mozambique have embarked on ambitious infrastructure projects to establish multi-million dollar dry ports in Mutare and Dondo respectively, in a major push to eliminate chronic via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Fri, 17 Jul 2026 03:18:36 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/73d1e09de956.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/73d1e09de956.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/73d1e09de956.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/73d1e09de956.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zimbabwe beats massive anthrax vaccination target</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/fa967195dd6f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fa967195dd6f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/fa967195dd6f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimpost Pvt Ltd — SYSTEMS SECURITY ENGINEER</title>
-      <link>https://mutapatimes.com/stories/9dd927fbc9e6.html</link>
-      <description>The incumbent will report to the ICT Infrastructure Manager and will be responsible for the following, among other duties: • Develop and implement a robust security infrastructure and framework that… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 16 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/9dd927fbc9e6.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zimpost Pvt Ltd</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/9dd927fbc9e6.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/9dd927fbc9e6.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/9dd927fbc9e6.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
