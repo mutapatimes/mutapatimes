@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-17T05:37:10+00:00",
+  "fetched_at": "2026-07-17T08:01:21+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "ROSTER NAMED FOR CANADA’S MEN’S RUGBY TEAM’S NATIONS CUP MATCH AGAINST ZIMBABWE",
+      "link": "https://mutapatimes.com/articles/2026-07-16-roster-named-for-canadas-mens-rugby-teams-nations-cup-match",
+      "image": "https://mutapatimes.com/img/cards/news/f1a2a33fa68e.png",
+      "pubDate": "2026-07-16T23:00:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "ROSTER NAMED FOR CANADA’S MEN’S RUGBY TEAM’S NATIONS CUP MATCH AGAINST ZIMBABWE",
+      "link": "https://mutapatimes.com/news/2026-07-17-roster-named-for-canada-s-men-s-rugby-team-s-nations-cup-match-against-zimbabwe-a89d33",
+      "image": "https://mutapatimes.com/img/cards/news/bfc3cefb78ef.png",
+      "pubDate": "2026-07-16T23:00:00+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "economy",
       "title": "Zim manufacturing has moved +6.6% since the 2024 rebase — now $2.8B per quarter.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 17 Jul: Harare overcast · high 21° / low 11°",
+      "title": "Zim weather 17 Jul: Harare overcast · high 22° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-07-17",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-07-17",
       "pubDate": "2026-07-16T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Mutare City Council — Culture Officer",
       "link": "https://vacancymail.co.zw/jobs/culture-officer-68286/",
       "image": "https://mutapatimes.com/img/cards/jobs/fb4840e1dd58.png",
-      "pubDate": "2026-07-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutare City Council — Education Officer",
-      "link": "https://vacancymail.co.zw/jobs/education-officer-68285/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ecac13b55b49.png",
-      "pubDate": "2026-07-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutare City Council — ICT Internal Auditor",
-      "link": "https://vacancymail.co.zw/jobs/ict-internal-auditor-68284/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b73ba72e9e1.png",
       "pubDate": "2026-07-16T22:00:00+00:00",
       "category": "Jobs"
     }
