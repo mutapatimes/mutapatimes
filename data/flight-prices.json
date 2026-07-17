@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16",
+  "fetched_at": "2026-07-17",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -140,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -164,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 15
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -248,15 +248,6 @@
           "stops": 1,
           "duration": 790,
           "currency": ""
-        },
-        {
-          "price": 3022,
-          "airline": "5Z",
-          "departure_at": "2027-01-13",
-          "return_at": "",
-          "stops": 1,
-          "duration": 530,
-          "currency": ""
         }
       ],
       "by_airline": [
@@ -268,22 +259,13 @@
           "stops": 1,
           "duration": 725,
           "currency": ""
-        },
-        {
-          "price": 3022,
-          "airline": "5Z",
-          "departure_at": "2027-01-13",
-          "return_at": "",
-          "stops": 1,
-          "duration": 530,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 3,
+          "n": 2,
           "error": null
         },
         {
@@ -305,7 +287,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 3
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -359,10 +341,10 @@
           "currency": ""
         },
         {
-          "price": 4080,
+          "price": 4056,
           "airline": "FN",
-          "departure_at": "2026-12-20",
-          "return_at": "2027-01-17",
+          "departure_at": "2026-12-30",
+          "return_at": "2027-01-06",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -379,7 +361,7 @@
           "currency": ""
         },
         {
-          "price": 2840,
+          "price": 2833,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -388,7 +370,7 @@
           "currency": ""
         },
         {
-          "price": 2947,
+          "price": 2940,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -397,12 +379,21 @@
           "currency": ""
         },
         {
-          "price": 4080,
+          "price": 4056,
           "airline": "FN",
-          "departure_at": "2026-12-20",
-          "return_at": "2027-01-17",
+          "departure_at": "2026-12-30",
+          "return_at": "2027-01-06",
           "stops": 0,
           "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 4109,
+          "airline": "Mytrip.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 210,
           "currency": ""
         }
       ],
@@ -428,11 +419,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 2,
+          "n": 3,
           "error": null
         }
       ],
-      "observations": 21
+      "observations": 22
     },
     "new-york-to-harare": {
       "origin": "NYC",
