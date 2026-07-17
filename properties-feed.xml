@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2026 19:00:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 19:31:43 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -113,18 +113,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/c47e26c68357.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/c47e26c68357.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/c47e26c68357.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 130,000 — Quick sale!!! Beautiful and Unique Newly built House for sale (Mabvazuva, Ruwa)</title>
-      <link>https://mutapatimes.com/property-landing/e07da2896bcc.html</link>
-      <description>USD 130,000 — Mabvazuva, Ruwa. 4 beds. Quick sale!!! Beautiful and Unique Newly built House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 16 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/e07da2896bcc.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/e07da2896bcc.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/e07da2896bcc.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/e07da2896bcc.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 360,000 — Emerald Hill Haven (Emerald Hill, Harare West)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/f87ecf0264b9.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f87ecf0264b9.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/f87ecf0264b9.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 1,000,000 — 2 acre Property in Pomona, perfect for development (Pomona, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/ba2e745b918a.html</link>
+      <description>USD 1,000,000 — Pomona, Harare North. 3 beds, 2 baths. 2 acre Property in Pomona, perfect for development. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 16 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ba2e745b918a.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/ba2e745b918a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ba2e745b918a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/ba2e745b918a.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
