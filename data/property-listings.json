@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17T08:27:28.718563+00:00",
+  "fetched_at": "2026-07-17T14:01:51.709485+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -121,6 +121,24 @@
       "baths": "6"
     },
     {
+      "title": "5 Bed Split Level Family Home for Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-key251603",
+      "price": "USD 360,000",
+      "location": "Mount Pleasant, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/98/ad/50/98ad507f-66f0-4bb2-8143-b57f6f697ab2_thumbnail591.webp",
+      "beds": "5",
+      "baths": "4"
+    },
+    {
+      "title": "Investors Delight",
+      "url": "https://www.property.co.zw/for-sale/houses-sby250587",
+      "price": "USD 70,000",
+      "location": "Warren Park, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/ae/20/6c/ae206c00-cdcf-4167-8a82-d98346fc53a3_thumbnail591.webp",
+      "beds": "1",
+      "baths": "1"
+    },
+    {
       "title": "Finish it to your taste",
       "url": "https://www.property.co.zw/for-sale/houses-rws236342",
       "price": "USD 50,000",
@@ -137,6 +155,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/54/07/87/54078753-966a-416c-81b8-24b12ddec9a9_thumbnail591.webp",
       "beds": "5",
       "baths": "4"
+    },
+    {
+      "title": "Solid Spacious House in the Old Leafy Winston Surburb of Marondera",
+      "url": "https://www.property.co.zw/for-sale/houses-ash251648",
+      "price": "USD 129,000",
+      "location": "Marondera",
+      "image": "https://www.property.co.zw/uploadedfiles/bf/8f/3c/bf8f3c6b-9d2c-4fbe-b7de-80fca4fc6173_thumbnail591.webp",
+      "beds": "5",
+      "baths": "2"
     },
     {
       "title": "3-Bed Townhouse Complex —Sectional Title",
@@ -171,33 +198,6 @@
       "price": "USD 205,000",
       "location": "Tynwald, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/7c/c7/0a/7cc70a71-878d-4dc0-93e6-a8eb7c9402b5_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "2 acre Property in Pomona, perfect for development",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp185945",
-      "price": "USD 1,000,000",
-      "location": "Pomona, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/42/33/da/4233daec-b67f-4795-b8c1-4e898dd9cf54_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Move In Ready Family Home",
-      "url": "https://www.property.co.zw/for-sale/houses-clrp250764",
-      "price": "USD 80,000",
-      "location": "Budiriro, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/df/44/52/df445228-eab6-42e1-9575-3770cb34c47a_thumbnail591.webp",
-      "beds": "4",
-      "baths": "3"
-    },
-    {
-      "title": "New Marlborough House For Sale – Us$180,000",
-      "url": "https://www.property.co.zw/for-sale/houses-tagp224709",
-      "price": "USD 180,000",
-      "location": "Marlborough, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/c4/d4/fe/c4d4fedf-36c2-4e7d-978b-830aabaf9647_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     }
