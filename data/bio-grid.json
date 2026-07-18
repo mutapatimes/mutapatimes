@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-07-18T07:41:15+00:00",
+  "fetched_at": "2026-07-18T10:15:21+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "South Africa Aligns with Namibia, Zimbabwe, Zambia and Mozambique to Welcome August Safari Travellers as Hidden Malaria Risks Persist: What Should Every Visitor Know Now Before Exploring Southern Africa?",
-      "link": "https://mutapatimes.com/articles/2026-07-18-south-africa-aligns-with-namibia-zimbabwe-zambia-and-mozambi",
-      "image": "https://mutapatimes.com/img/cards/news/0bbdefd8a7ed.png",
-      "pubDate": "2026-07-18T05:33:00+00:00",
-      "category": "Tech"
-    },
     {
       "kind": "news",
       "title": "South Africa Aligns with Namibia, Zimbabwe, Zambia and Mozambique to Welcome August Safari Travellers as Hidden Malaria Risks Persist: What Should Every Visitor Know Now Before Exploring Southern Africa?",
@@ -17,6 +9,14 @@
       "image": "https://mutapatimes.com/img/cards/news/9820b91feb0b.png",
       "pubDate": "2026-07-18T05:33:00+00:00",
       "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Targets Capital Markets Overhaul to Finance Infrastructure and Drive Vision 2030",
+      "link": "https://mutapatimes.com/news/2026-07-17-zimbabwe-targets-capital-markets-overhaul-to-finance-infrastructure-and-drive-a40a98",
+      "image": "https://mutapatimes.com/img/cards/news/3eb236dce2d6.png",
+      "pubDate": "2026-07-17T22:04:49+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -76,7 +76,23 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — VIP Driver",
+      "title": "Fintech and Innovation Manager",
+      "link": "https://vacancymail.co.zw/jobs/fintech-and-innovation-manager-68367/",
+      "image": "https://mutapatimes.com/img/cards/jobs/403cb71e4277.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Graduate Trainee – Commercial & Innovation",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-commercial-innovation-68366/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1b4af3d5f9b1.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "VIP Driver",
       "link": "https://vacancymail.co.zw/jobs/vip-driver-68365/",
       "image": "https://mutapatimes.com/img/cards/jobs/d7cebaa9571d.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -84,7 +100,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Driver",
+      "title": "Driver",
       "link": "https://vacancymail.co.zw/jobs/driver-68364/",
       "image": "https://mutapatimes.com/img/cards/jobs/5426200a158d.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -92,7 +108,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Land Officer Cartographer",
+      "title": "Land Officer Cartographer",
       "link": "https://vacancymail.co.zw/jobs/land-officer-cartographer-68362/",
       "image": "https://mutapatimes.com/img/cards/jobs/4d26e0a9758b.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -100,7 +116,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Gender, Inclusivity and Wellness Officer",
+      "title": "Gender, Inclusivity and Wellness Officer",
       "link": "https://vacancymail.co.zw/jobs/gender-inclusivity-and-wellness-officer-68361/",
       "image": "https://mutapatimes.com/img/cards/jobs/090dbef1541b.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -108,7 +124,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Accountant",
+      "title": "Accountant",
       "link": "https://vacancymail.co.zw/jobs/accountant-68360/",
       "image": "https://mutapatimes.com/img/cards/jobs/98457f331e0d.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -116,7 +132,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Procurement Officer",
+      "title": "Procurement Officer",
       "link": "https://vacancymail.co.zw/jobs/procurement-officer-68359/",
       "image": "https://mutapatimes.com/img/cards/jobs/1837ab54c66b.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -124,7 +140,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Administration Officer",
+      "title": "Administration Officer",
       "link": "https://vacancymail.co.zw/jobs/administration-officer-68358/",
       "image": "https://mutapatimes.com/img/cards/jobs/89be6bfc9a66.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -132,7 +148,7 @@
     },
     {
       "kind": "jobs",
-      "title": "Zimbabwe Land Commission — Administration Officer 1 Post",
+      "title": "Administration Officer 1 Post",
       "link": "https://vacancymail.co.zw/jobs/administration-officer-1-post-68357/",
       "image": "https://mutapatimes.com/img/cards/jobs/f21ad31f839e.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Sante Healthlife Pvt Ltd — Registered General Nurse",
       "link": "https://vacancymail.co.zw/jobs/registered-general-nurse-68307/",
       "image": "https://mutapatimes.com/img/cards/jobs/540302b27734.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sante Healthlife Pvt Ltd — Hospital Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/hospital-receptionist-68306/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d4cc1b38136.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Officer",
-      "link": "https://vacancymail.co.zw/jobs/sales-officer-68305/",
-      "image": "https://mutapatimes.com/img/cards/jobs/269deb2a1e48.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
       "category": "Jobs"
     }
