@@ -1,0 +1,16 @@
+---
+title: "South Africa Showed Up: Thousands of Women Answer the Call in the Revlon x GLAMOUR Unforgettable Cover Girl Search"
+date: 2026-07-15T08:49:47.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "South Africa Showed Up: Thousands of Women Answer the Call in the Revlon x GLAMOUR Unforgettable Cover Girl Search"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikAJBVV95cUxQWTFTOE5jZWd2UWttNnhhdDZoQmxFMVB0bVZ3U3pZQmc5VkxFM3p3b21YZDhJRVJodzgyY0EwX1d4enhYMnZfU0ktcjkxdy1nbzlad2VEMnVUNlVxVGtYWFZCbTk0T21fWVdaTHZzTGpHMEt6Z19NaGFkMjYtRzVQX0FtV3hsMDlKQm9IcVBQVkNSMmhSaWtxcnJDbzZlUXc2R3lfOVJzcFFrWmNvNlY5cXhQdl9NZXFvSk5ndktfbXRuM3RVbG1ONHNRSjBxQlNJdW9wY3IweExrUlZ6ZTZVeFlaajM2ZkttaEZob2dXeUEtTVVhMnVnQUVIVTd1cWl2UVRZbTdOYy1FTGR0M2p2dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMikAJBVV95cUxQWTFTOE5jZWd2UWttNnhhdDZoQmxFMVB0bVZ3U3pZQmc5VkxFM3p3b21YZDhJRVJodzgyY0EwX1d4enhYMnZfU0ktcjkxdy1nbzlad2VEMnVUNlVxVGtYWFZCbTk0T21fWVdaTHZzTGpHMEt6Z19NaGFkMjYtRzVQX0FtV3hsMDlKQm9IcVBQVkNSMmhSaWtxcnJDbzZlUXc2R3lfOVJzcFFrWmNvNlY5cXhQdl9NZXFvSk5ndktfbXRuM3RVbG1ONHNRSjBxQlNJdW9wY3IweExrUlZ6ZTZVeFlaajM2ZkttaEZob2dXeUEtTVVhMnVnQUVIVTd1cWl2UVRZbTdOYy1FTGR0M2p2dw?oc=5)
