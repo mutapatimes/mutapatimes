@@ -1,22 +1,70 @@
 {
-  "fetched_at": "2026-07-18T13:03:29+00:00",
+  "fetched_at": "2026-07-18T15:51:58+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimra extends its tax deadline",
-      "link": "https://mutapatimes.com/articles/2026-07-17-zimra-extends-its-tax-deadline",
-      "image": "https://mutapatimes.com/img/cards/news/2ec3bcbba872.png",
-      "pubDate": "2026-07-17T23:59:00+00:00",
+      "title": "Zimbabwe’s gold rush adds fuel to a deadly surge in malaria",
+      "link": "https://mutapatimes.com/articles/2026-07-18-zimbabwes-gold-rush-adds-fuel-to-a-deadly-surge-in-malaria",
+      "image": "https://mutapatimes.com/img/cards/news/ad82bdd8d724.png",
+      "pubDate": "2026-07-18T14:28:19+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s gold rush adds fuel to a deadly surge in malaria",
+      "link": "https://mutapatimes.com/news/2026-07-18-zimbabwe-s-gold-rush-adds-fuel-to-a-deadly-surge-in-malaria-44aec8",
+      "image": "https://mutapatimes.com/img/cards/news/cde593e38e96.png",
+      "pubDate": "2026-07-18T14:28:19+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa commits to ease formalisation costs for SMEs",
+      "link": "https://mutapatimes.com/news/2026-07-18-mnangagwa-commits-to-ease-formalisation-costs-for-smes-5e6dbe",
+      "image": "https://mutapatimes.com/img/cards/news/dba2d56e1d1b.png",
+      "pubDate": "2026-07-18T03:50:18+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe banks on untapped gold as State miner eyes new discoveries",
+      "link": "https://mutapatimes.com/news/2026-07-18-zimbabwe-banks-on-untapped-gold-as-state-miner-eyes-new-discoveries-836b57",
+      "image": "https://mutapatimes.com/img/cards/news/9feeec6bb5e1.png",
+      "pubDate": "2026-07-18T03:45:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Bangladesh snap 34-run victory over Zimbabwe to level T20 series",
+      "link": "https://mutapatimes.com/articles/2026-07-18-bangladesh-snap-34-run-victory-over-zimbabwe-to-level-t20-se",
+      "image": "https://mutapatimes.com/img/cards/news/e50f99f8a055.png",
+      "pubDate": "2026-07-18T03:39:36+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "UN partners Zim for returning citizens",
-      "link": "https://mutapatimes.com/articles/2026-07-17-un-partners-zim-for-returning-citizens",
-      "image": "https://mutapatimes.com/img/cards/news/663e64a62874.png",
-      "pubDate": "2026-07-17T23:56:00+00:00",
+      "title": "Bangladesh snap 34-run victory over Zimbabwe to level T20 series",
+      "link": "https://mutapatimes.com/news/2026-07-18-bangladesh-snap-34-run-victory-over-zimbabwe-to-level-t20-series-443b6e",
+      "image": "https://mutapatimes.com/img/cards/news/e54d841a70c1.png",
+      "pubDate": "2026-07-18T03:39:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Pump and Steel Suppliers to revive defunct ZECO rail manufacturing in Bulawayo",
+      "link": "https://mutapatimes.com/articles/2026-07-18-pump-and-steel-suppliers-to-revive-defunct-zeco-rail-manufac",
+      "image": "https://mutapatimes.com/img/cards/news/e97178989fca.png",
+      "pubDate": "2026-07-18T03:35:51+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "AI expert returns home to bridge digital skills gap",
+      "link": "https://mutapatimes.com/articles/2026-07-18-ai-expert-returns-home-to-bridge-digital-skills-gap",
+      "image": "https://mutapatimes.com/img/cards/news/a43e174321ea.png",
+      "pubDate": "2026-07-18T03:24:49+00:00",
+      "category": "Tech"
     },
     {
       "kind": "news",
@@ -81,6 +129,46 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "ZB FINANCIAL HOLDINGS — Settlements and Reconciliations Manager",
+      "link": "https://vacancymail.co.zw/jobs/settlements-and-reconciliations-manager-68372/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7ae57d5a8134.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TV Sales — Salespersons",
+      "link": "https://vacancymail.co.zw/jobs/salespersons-68371/",
+      "image": "https://mutapatimes.com/img/cards/jobs/22dedb752bac.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Millennium Homes — Human Resources Officer",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-officer-68370/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2f1de0ffffaf.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ST-ONE Machinery — Front Desk Receptionist (Entry-Level)",
+      "link": "https://vacancymail.co.zw/jobs/front-desk-receptionist-entry-level-68369/",
+      "image": "https://mutapatimes.com/img/cards/jobs/323b9343a6ed.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Cook/Chef",
+      "link": "https://vacancymail.co.zw/jobs/cookchef-68368/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ba4f7f17d685.png",
+      "pubDate": "2026-07-17T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -391,94 +479,6 @@
       "title": "Marondera Rural District Council — Loss Controller",
       "link": "https://vacancymail.co.zw/jobs/loss-controller-68319/",
       "image": "https://mutapatimes.com/img/cards/jobs/27e09a4fc2d6.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Ezekiel Guti University — GRADUATE TRAINEE- HUMAN RESOURCES MANAGEMENT (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-human-resources-management-1-post-68318/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fd5caef0602d.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fitment Centre Technician",
-      "link": "https://vacancymail.co.zw/jobs/fitment-centre-technician-68317/",
-      "image": "https://mutapatimes.com/img/cards/jobs/59f022435968.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Administration Officer - Fitment Centre",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-administration-officer-fitment-centre-68316/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03694294e515.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Associated Belts and Bearings — Procurement Clerk",
-      "link": "https://vacancymail.co.zw/jobs/procurement-clerk-68315/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fbce06d3aab3.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — DATABASE ADMINISTRATOR – ICT – LEVEL 8 (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/database-administrator-ict-level-8-1-post-68314/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7b9b8e5a187b.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — SYSTEMS SUPPORT ANALYST, CUSTOMS – ICT – LEVEL 8 (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/systems-support-analyst-customs-ict-level-8-1-post-68313/",
-      "image": "https://mutapatimes.com/img/cards/jobs/abe4b136e0d7.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimra — ENTERPRISE RISK ANALYTICS MANAGER – CORPORATE RISK, – LEVEL 8 (1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/enterprise-risk-analytics-manager-corporate-risk-level-8-1-post-68312/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3ab20eae7397.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Associated Belts and Bearings — Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-68311/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5a0d4fb62f2e.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales RepreRepresentative",
-      "link": "https://vacancymail.co.zw/jobs/sales-reprerepresentative-68310/",
-      "image": "https://mutapatimes.com/img/cards/jobs/06e22f8dd1f7.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Contact Centre Association of Zimbabwe — Work-Related Learning Opportunity (Marketing)",
-      "link": "https://vacancymail.co.zw/jobs/work-related-learning-opportunity-marketing-68309/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bb9dc7a07454.png",
-      "pubDate": "2026-07-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Debtors Intern",
-      "link": "https://vacancymail.co.zw/jobs/debtors-intern-68308/",
-      "image": "https://mutapatimes.com/img/cards/jobs/122e04961823.png",
       "pubDate": "2026-07-17T22:00:00+00:00",
       "category": "Jobs"
     }
