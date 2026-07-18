@@ -1,0 +1,16 @@
+---
+title: "Mandela Day: What his legacy means in today’s South Africa"
+date: 2026-07-18T04:07:14.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "Mandela Day: What his legacy means in today’s South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingFBVV95cUxPX2VHOTVhMHY2TU03aF92Sy1wOEw5cnhFMFlyOC11cGJvYVdsMW9JenM3NE5qRkQxSHlwRWt3Wk1ONHBDSTJ6NDZlUjNOM3V3UWdUQUpGT1JwemNON05paWJRR1ItN2dkdjJROWdTOG5TQmY5cG1aSnFCcUxpWDU0SG9ySFR4djk1aW5reXFUOUJQREFQVW1RanJNOFhWZ9IBowFBVV95cUxNQk1ZVWFYN2pRQjV2ZDk0VUU1QmQyMEszSDVDd0xQSWFaQVluZW12T2p0bzUyTFJDNkRlMW1pQmNmaGF3dHV1Z1ZMRGpRTW00OWRkakJVdTlUUGE5dXR6NkN1dmFrNGwwVXBwaEdJOXZ6Mk14RVJvU3pxTUh6MXdqTlFHSjI5d3ZOZFRUU1dXZGdhUF9VeGZCRlRnbV91a3VRcXJv?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMingFBVV95cUxPX2VHOTVhMHY2TU03aF92Sy1wOEw5cnhFMFlyOC11cGJvYVdsMW9JenM3NE5qRkQxSHlwRWt3Wk1ONHBDSTJ6NDZlUjNOM3V3UWdUQUpGT1JwemNON05paWJRR1ItN2dkdjJROWdTOG5TQmY5cG1aSnFCcUxpWDU0SG9ySFR4djk1aW5reXFUOUJQREFQVW1RanJNOFhWZ9IBowFBVV95cUxNQk1ZVWFYN2pRQjV2ZDk0VUU1QmQyMEszSDVDd0xQSWFaQVluZW12T2p0bzUyTFJDNkRlMW1pQmNmaGF3dHV1Z1ZMRGpRTW00OWRkakJVdTlUUGE5dXR6NkN1dmFrNGwwVXBwaEdJOXZ6Mk14RVJvU3pxTUh6MXdqTlFHSjI5d3ZOZFRUU1dXZGdhUF9VeGZCRlRnbV91a3VRcXJv?oc=5)
