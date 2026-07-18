@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17",
+  "fetched_at": "2026-07-18",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -250,7 +250,7 @@
           "currency": ""
         },
         {
-          "price": 3141,
+          "price": 3136,
           "airline": "5Z",
           "departure_at": "2027-01-13",
           "return_at": "",
@@ -270,7 +270,7 @@
           "currency": ""
         },
         {
-          "price": 3141,
+          "price": 3136,
           "airline": "5Z",
           "departure_at": "2027-01-13",
           "return_at": "",
@@ -350,6 +350,15 @@
           "currency": ""
         },
         {
+          "price": 1487,
+          "airline": "FA",
+          "departure_at": "2026-09-02",
+          "return_at": "",
+          "stops": 0,
+          "duration": 110,
+          "currency": ""
+        },
+        {
           "price": 3867,
           "airline": "FA",
           "departure_at": "2026-10-12",
@@ -379,7 +388,7 @@
           "currency": ""
         },
         {
-          "price": 2837,
+          "price": 2825,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -388,7 +397,7 @@
           "currency": ""
         },
         {
-          "price": 2944,
+          "price": 2931,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -406,7 +415,7 @@
           "currency": ""
         },
         {
-          "price": 4115,
+          "price": 4098,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -419,7 +428,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 16,
+          "n": 21,
           "error": null
         },
         {
@@ -441,7 +450,7 @@
           "error": null
         }
       ],
-      "observations": 23
+      "observations": 28
     },
     "new-york-to-harare": {
       "origin": "NYC",
