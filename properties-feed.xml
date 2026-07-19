@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jul 2026 13:05:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 13:52:37 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -187,18 +187,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/a8e9b69b0e6c.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 2,000,000 — This magnificent property is one of a kind and well-worth a view! (Borrowdale Brooke, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/cb9f68ef4c83.html</link>
-      <description>USD 2,000,000 — Borrowdale Brooke, Harare North. 4 beds, 4 baths. This magnificent property is one of a kind and well-worth a view!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sat, 18 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/cb9f68ef4c83.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/cb9f68ef4c83.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/cb9f68ef4c83.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/cb9f68ef4c83.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 1,300,000 — Incredible property in Glen Lorne (Glen Lorne, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/41d04f4d60f4.html</link>
       <description>USD 1,300,000 — Glen Lorne, Harare North. 3 beds, 2 baths. Incredible property in Glen Lorne. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -271,16 +259,28 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/515c8f981af3.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 90,000 — Partialy Built House for Sale (Rockview, Harare East)</title>
-      <link>https://mutapatimes.com/property-landing/ce3d9e601db0.html</link>
-      <description>USD 90,000 — Rockview, Harare East. 4 beds, 3 baths. Partialy Built House for Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <title>USD 130,000 — Pomona City 2 bed cottage for sale (Pomona, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/10679085c37d.html</link>
+      <description>USD 130,000 — Pomona, Harare North. 2 beds. Pomona City 2 bed cottage for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Sat, 18 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ce3d9e601db0.html</guid>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/10679085c37d.html</guid>
       <category>Property</category>
       <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/ce3d9e601db0.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ce3d9e601db0.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/ce3d9e601db0.png" type="image/png" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/properties/10679085c37d.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/10679085c37d.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/10679085c37d.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 550,000 — Second Street Extension Property For Sale (Marlborough, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/d00b2d36dc6e.html</link>
+      <description>USD 550,000 — Marlborough, Harare West. 3 beds, 1 bath. Second Street Extension Property For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sat, 18 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d00b2d36dc6e.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
