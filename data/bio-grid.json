@@ -1,14 +1,30 @@
 {
-  "fetched_at": "2026-07-19T13:06:00+00:00",
+  "fetched_at": "2026-07-19T15:53:15+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe Gears Up Drive for Tourism Recovery Push",
-      "link": "https://mutapatimes.com/articles/2026-07-19-zimbabwe-gears-up-drive-for-tourism-recovery-push",
-      "image": "https://mutapatimes.com/img/cards/news/3090d795d883.png",
-      "pubDate": "2026-07-19T12:02:25+00:00",
-      "category": "Culture"
+      "title": "Bangladesh win last T20 and take series over Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-07-19-bangladesh-win-last-t20-and-take-series-over-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/8743c51ab475.png",
+      "pubDate": "2026-07-19T14:43:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Canada Get the Win over Zimbabwe in Winnipeg",
+      "link": "https://mutapatimes.com/articles/2026-07-19-canada-get-the-win-over-zimbabwe-in-winnipeg",
+      "image": "https://mutapatimes.com/img/cards/news/ce53f4cafcc3.png",
+      "pubDate": "2026-07-19T13:51:03+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Canada Get the Win over Zimbabwe in Winnipeg",
+      "link": "https://mutapatimes.com/news/2026-07-19-canada-get-the-win-over-zimbabwe-in-winnipeg-573234",
+      "image": "https://mutapatimes.com/img/cards/news/912071eb9616.png",
+      "pubDate": "2026-07-19T13:51:03+00:00",
+      "category": "Sports"
     },
     {
       "kind": "news",
@@ -41,30 +57,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b0e6218d6364.png",
       "pubDate": "2026-07-19T03:04:32+00:00",
       "category": "Sports"
-    },
-    {
-      "kind": "news",
-      "title": "Prostate cancer screening launched nationwide",
-      "link": "https://mutapatimes.com/articles/2026-07-19-prostate-cancer-screening-launched-nationwide",
-      "image": "https://mutapatimes.com/img/cards/news/8cac6b8a6540.png",
-      "pubDate": "2026-07-19T00:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Madziyire powers to UZ Marathon crown",
-      "link": "https://mutapatimes.com/articles/2026-07-18-madziyire-powers-to-uz-marathon-crown",
-      "image": "https://mutapatimes.com/img/cards/news/a2b14e09f67e.png",
-      "pubDate": "2026-07-18T23:59:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zec backs voters roll reforms",
-      "link": "https://mutapatimes.com/articles/2026-07-18-zec-backs-voters-roll-reforms",
-      "image": "https://mutapatimes.com/img/cards/news/1b9c32207e6a.png",
-      "pubDate": "2026-07-18T23:58:00+00:00",
-      "category": "Policy"
     },
     {
       "kind": "news",
@@ -479,6 +471,14 @@
       "title": "Marondera Rural District Council — Cashier",
       "link": "https://vacancymail.co.zw/jobs/cashier-68321/",
       "image": "https://mutapatimes.com/img/cards/jobs/2b817c2b5098.png",
+      "pubDate": "2026-07-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marondera Rural District Council — Tractor Loader Backhoe Operator",
+      "link": "https://vacancymail.co.zw/jobs/tractor-loader-backhoe-operator-68320/",
+      "image": "https://mutapatimes.com/img/cards/jobs/196b02aeb71e.png",
       "pubDate": "2026-07-18T22:00:00+00:00",
       "category": "Jobs"
     }
