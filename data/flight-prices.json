@@ -38,11 +38,11 @@
           "currency": ""
         },
         {
-          "price": 702,
-          "airline": "KQ",
-          "departure_at": "2026-09-07",
+          "price": 583,
+          "airline": "QR",
+          "departure_at": "2026-09-09",
           "return_at": "2026-09-22",
-          "stops": 2,
+          "stops": 1,
           "duration": null,
           "currency": ""
         },
@@ -103,21 +103,21 @@
           "currency": ""
         },
         {
+          "price": 583,
+          "airline": "QR",
+          "departure_at": "2026-09-09",
+          "return_at": "2026-09-22",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
           "price": 587,
           "airline": "U2",
           "departure_at": "2026-07-31",
           "return_at": "",
           "stops": 4,
           "duration": 2550,
-          "currency": ""
-        },
-        {
-          "price": 610,
-          "airline": "QR",
-          "departure_at": "2027-01-09",
-          "return_at": "2027-02-02",
-          "stops": 1,
-          "duration": null,
           "currency": ""
         },
         {
@@ -313,7 +313,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1263,
+        "price": 1257,
         "airline": "FA",
         "departure_at": "2026-07-25",
         "return_at": "",
@@ -322,7 +322,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1263,
+        "price": 1257,
         "airline": "FA",
         "departure_at": "2026-07-25",
         "return_at": "",
@@ -332,7 +332,7 @@
       },
       "monthly": [
         {
-          "price": 1263,
+          "price": 1257,
           "airline": "FA",
           "departure_at": "2026-07-25",
           "return_at": "",
@@ -341,9 +341,9 @@
           "currency": ""
         },
         {
-          "price": 1279,
+          "price": 1257,
           "airline": "FA",
-          "departure_at": "2026-08-01",
+          "departure_at": "2026-08-02",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -379,7 +379,7 @@
       ],
       "by_airline": [
         {
-          "price": 1263,
+          "price": 1257,
           "airline": "FA",
           "departure_at": "2026-07-25",
           "return_at": "",
@@ -388,7 +388,7 @@
           "currency": ""
         },
         {
-          "price": 2844,
+          "price": 2850,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -397,7 +397,7 @@
           "currency": ""
         },
         {
-          "price": 2951,
+          "price": 2957,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -415,7 +415,7 @@
           "currency": ""
         },
         {
-          "price": 4125,
+          "price": 4956,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -542,6 +542,15 @@
           "stops": 1,
           "duration": 630,
           "currency": ""
+        },
+        {
+          "price": 2422,
+          "airline": "TC",
+          "departure_at": "2026-12-19",
+          "return_at": "2027-01-02",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "by_airline": [
@@ -562,6 +571,15 @@
           "stops": 2,
           "duration": 730,
           "currency": ""
+        },
+        {
+          "price": 2422,
+          "airline": "TC",
+          "departure_at": "2026-12-19",
+          "return_at": "2027-01-02",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
@@ -574,7 +592,7 @@
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
@@ -590,7 +608,7 @@
           "error": null
         }
       ],
-      "observations": 3
+      "observations": 4
     },
     "toronto-to-harare": {
       "origin": "YYZ",
