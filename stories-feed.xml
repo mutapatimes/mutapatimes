@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jul 2026 11:40:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 13:55:33 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/c1135e398cff.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c1135e398cff.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/c1135e398cff.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Nation meets key cancer milestone</title>
+      <link>https://mutapatimes.com/stories/cfa56444ddb9.html</link>
+      <description>ZIMBABWE is making headway in its fight against cervical cancer, the leading cause of cancer-related deaths among women in the country. This... To access this content, please purchase a subscription by clicking the button below and select a package of your choice! Subscriptions via Dailynews #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/cfa56444ddb9.html</guid>
+      <category>Business</category>
+      <dc:creator>Dailynews</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/cfa56444ddb9.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/cfa56444ddb9.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/cfa56444ddb9.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>US$340m broadband investment drive unveiled</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/5bd55f67a0e3.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5bd55f67a0e3.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/5bd55f67a0e3.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Sales Representative</title>
-      <link>https://mutapatimes.com/stories/e526ef4dab56.html</link>
-      <description>SUPREME BRANDS The Home of CoralSoft Toilet Tissue WE’RE HIRING Sales Representative Location: Bulawayo Depot Position Details * Position: Sales Representative * Department: Sales / Commercial * Repo… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 19 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/e526ef4dab56.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/e526ef4dab56.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e526ef4dab56.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/e526ef4dab56.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
