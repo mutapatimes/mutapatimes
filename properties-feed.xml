@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jul 2026 13:55:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 14:33:04 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -113,18 +113,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/56a8b3e14c4e.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/56a8b3e14c4e.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/56a8b3e14c4e.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 50,000 — Quick Sale | Spacious 5-Bedroom Family Home for Sale – Budiriro 4 (Budiriro, Harare High Density)</title>
-      <link>https://mutapatimes.com/property-landing/503f5480d163.html</link>
-      <description>USD 50,000 — Budiriro, Harare High Density. 5 beds, 3 baths. Quick Sale | Spacious 5-Bedroom Family Home for Sale – Budiriro 4. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 19 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/503f5480d163.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/503f5480d163.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/503f5480d163.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/503f5480d163.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 200,000 — House for sale in Bushmead Masvingo (Masvingo)</title>
@@ -271,9 +259,9 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/64d561428e65.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 220,000 — Solid Mabelreign Home - Asking Price Negotiable (Mabelreign, Harare West)</title>
+      <title>USD 220,000 — Solid Mabelreign Home - Asking Price Negotiable (On Show) (Mabelreign, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/39f002c82d2c.html</link>
-      <description>USD 220,000 — Mabelreign, Harare West. 3 beds, 1 bath. Solid Mabelreign Home - Asking Price Negotiable. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <description>USD 220,000 — Mabelreign, Harare West. 3 beds, 1 bath. Solid Mabelreign Home - Asking Price Negotiable (On Show). Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Sun, 19 Jul 2026 22:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mutapatimes.com/property-landing/39f002c82d2c.html</guid>
       <category>Property</category>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/39f002c82d2c.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/39f002c82d2c.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/39f002c82d2c.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 135,000 — Norton Mwashuma Park - 9 bedroomed house for sale. (Norton)</title>
+      <link>https://mutapatimes.com/property-landing/7122af73f9b6.html</link>
+      <description>USD 135,000 — Norton. 9 beds, 10 baths. Norton Mwashuma Park - 9 bedroomed house for sale.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 19 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/7122af73f9b6.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/7122af73f9b6.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7122af73f9b6.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/7122af73f9b6.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
