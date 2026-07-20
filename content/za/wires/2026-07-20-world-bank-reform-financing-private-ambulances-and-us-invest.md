@@ -1,0 +1,16 @@
+---
+title: "World Bank reform financing, private ambulances, and US investment in SA"
+date: 2026-07-20T17:10:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "World Bank reform financing, private ambulances, and US investment in SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNd2ItX2x5QXRzVnl4d18zaTFnVWFoYTJHTHBmb3E3NUpkVG1MZjh4akZJZ2N0Uk93eWd0dTZ3bWlFM0NVeWtxMHNtOVc3NHYxYjdBRFBLR1FNdTJ2VV9QQXFNdU9xYmV6eHNfN3hBdVYteGVZY1FyNXN5RmQ3NUJjV0NwVDFfX2pWMTA1U2dKZjZCQklFWTlVb1FyV25ZbGt0WFdlWENnS3JEbGhzN0JzN1VqYkNWNE9IMVRQR3cwME9qelppdkdqZXprUEVwWmx3WTdfNmlUYV9DWURZZ21sN3d3U0p1dFdld1ZHNDNUYkk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi8AFBVV95cUxNd2ItX2x5QXRzVnl4d18zaTFnVWFoYTJHTHBmb3E3NUpkVG1MZjh4akZJZ2N0Uk93eWd0dTZ3bWlFM0NVeWtxMHNtOVc3NHYxYjdBRFBLR1FNdTJ2VV9QQXFNdU9xYmV6eHNfN3hBdVYteGVZY1FyNXN5RmQ3NUJjV0NwVDFfX2pWMTA1U2dKZjZCQklFWTlVb1FyV25ZbGt0WFdlWENnS3JEbGhzN0JzN1VqYkNWNE9IMVRQR3cwME9qelppdkdqZXprUEVwWmx3WTdfNmlUYV9DWURZZ21sN3d3U0p1dFdld1ZHNDNUYkk?oc=5)
