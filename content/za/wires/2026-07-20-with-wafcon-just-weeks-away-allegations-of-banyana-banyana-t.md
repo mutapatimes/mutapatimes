@@ -1,0 +1,16 @@
+---
+title: "With Wafcon just weeks away, allegations of Banyana Banyana technical team divisions persist"
+date: 2026-07-20T19:46:25.000Z
+author: Daily Maverick
+category: Sport
+image: 
+summary: "With Wafcon just weeks away, allegations of Banyana Banyana technical team divisions persist"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQbW5wRTdrc1h5WnpRQlZuc3Bsc3VDbkNoSHlURklMekNvV2JMUC1oVXJZQ2d1WjhzSkRJNGwyNnJ1NllqcFhtTVJRcDlpdG9HS1Z6bWdTQzhkSXpTZWQ0QWg1ME9USUItbHBSd0kzY3RaZ3VzX0lpRU9CQ0ZfQnpkZ3NfbmduV3MxLWJyUHZ5Q1hrcmhzLVZSQmhkd0tGNnJ1MEtncS05a2kyZ2s0cmhXNkZLV3NxSi1HN2hHTzN1NjgtOXE5X3BiYUhDbm9IR3c4MnZXdmdpem1CQnNyaEN3bHM5VDlqR3NtOXN0ci02UTd5ZnVsMk5XN3RRNUU4Q1VhUzAxaVBEcTJYSF9obWhqVVhwQi1vZ3MxeEZzcmN4eVM3azZmNzVocTVB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxQbW5wRTdrc1h5WnpRQlZuc3Bsc3VDbkNoSHlURklMekNvV2JMUC1oVXJZQ2d1WjhzSkRJNGwyNnJ1NllqcFhtTVJRcDlpdG9HS1Z6bWdTQzhkSXpTZWQ0QWg1ME9USUItbHBSd0kzY3RaZ3VzX0lpRU9CQ0ZfQnpkZ3NfbmduV3MxLWJyUHZ5Q1hrcmhzLVZSQmhkd0tGNnJ1MEtncS05a2kyZ2s0cmhXNkZLV3NxSi1HN2hHTzN1NjgtOXE5X3BiYUhDbm9IR3c4MnZXdmdpem1CQnNyaEN3bHM5VDlqR3NtOXN0ci02UTd5ZnVsMk5XN3RRNUU4Q1VhUzAxaVBEcTJYSF9obWhqVVhwQi1vZ3MxeEZzcmN4eVM3azZmNzVocTVB?oc=5)
