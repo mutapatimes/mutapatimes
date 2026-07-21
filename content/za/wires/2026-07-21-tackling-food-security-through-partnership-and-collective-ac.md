@@ -1,0 +1,16 @@
+---
+title: "Tackling food security through partnership and collective action"
+date: 2026-07-21T04:56:25.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Tackling food security through partnership and collective action"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijgJBVV95cUxOaTBYTUNMUmhBU0V4YW1GeDhzUjR0Snljb0xRT3ZlcVIzSDVXYS1nVWJDX1g1Y3Rac2ljLXhfMng3NEl4ZmlWV21qQTV5RU5jalZDUW1KQjllLVRlU1pCTTJQS3RiY2MtLTFCY1pQR0ZjelV1Mjh3T1ItMEJsdm5TZDZXM1dXQXc1N010TmlqXy1QQXV3N2RoYUJOc0dVSk1pb0k0ZktQTU9OUlZWLUxoeVRrcVdpTFZqMzhFQlhPejV6cjhyek9BMWVFM29nTEdmLVRMZGdMUldJR1hrNUF2WS1wMlRtRVNsZ0ZoRHlyTWpmbGlGQ1BkNTY2OTFwWHByb3c4dVRUZWFfM0JzMmc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijgJBVV95cUxOaTBYTUNMUmhBU0V4YW1GeDhzUjR0Snljb0xRT3ZlcVIzSDVXYS1nVWJDX1g1Y3Rac2ljLXhfMng3NEl4ZmlWV21qQTV5RU5jalZDUW1KQjllLVRlU1pCTTJQS3RiY2MtLTFCY1pQR0ZjelV1Mjh3T1ItMEJsdm5TZDZXM1dXQXc1N010TmlqXy1QQXV3N2RoYUJOc0dVSk1pb0k0ZktQTU9OUlZWLUxoeVRrcVdpTFZqMzhFQlhPejV6cjhyek9BMWVFM29nTEdmLVRMZGdMUldJR1hrNUF2WS1wMlRtRVNsZ0ZoRHlyTWpmbGlGQ1BkNTY2OTFwWHByb3c4dVRUZWFfM0JzMmc?oc=5)
