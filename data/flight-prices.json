@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20",
+  "fetched_at": "2026-07-21",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -180,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 23
+      "observations": 24
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -332,9 +332,9 @@
       },
       "monthly": [
         {
-          "price": 1292,
+          "price": 1285,
           "airline": "FA",
-          "departure_at": "2026-07-23",
+          "departure_at": "2026-07-30",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -350,21 +350,12 @@
           "currency": ""
         },
         {
-          "price": 1487,
+          "price": 1495,
           "airline": "FA",
-          "departure_at": "2026-09-07",
+          "departure_at": "2026-09-25",
           "return_at": "",
           "stops": 0,
           "duration": 110,
-          "currency": ""
-        },
-        {
-          "price": 3867,
-          "airline": "FA",
-          "departure_at": "2026-10-12",
-          "return_at": "2026-10-13",
-          "stops": 0,
-          "duration": null,
           "currency": ""
         },
         {
@@ -388,7 +379,7 @@
           "currency": ""
         },
         {
-          "price": 2955,
+          "price": 2964,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -410,13 +401,13 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 15,
+          "n": 14,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "JNB",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -432,7 +423,7 @@
           "error": null
         }
       ],
-      "observations": 21
+      "observations": 19
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -548,10 +539,10 @@
         {
           "price": 1146,
           "airline": "KQ",
-          "departure_at": "2026-09-16",
+          "departure_at": "2026-08-14",
           "return_at": "",
-          "stops": 2,
-          "duration": 730,
+          "stops": 1,
+          "duration": 645,
           "currency": ""
         },
         {
