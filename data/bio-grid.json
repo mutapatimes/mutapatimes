@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-07-21T02:09:55+00:00",
+  "fetched_at": "2026-07-21T05:45:42+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "South Africa Tourism Arrivals Surge as Cross-Border Road Travel Connects Botswana, Zimbabwe, Mozambique, and Namibia, Driving Millions of Movements: New Travel Alert",
-      "link": "https://mutapatimes.com/articles/2026-07-21-south-africa-tourism-arrivals-surge-as-cross-border-road-tra",
-      "image": "https://mutapatimes.com/img/cards/news/b8e1a5e23efa.png",
-      "pubDate": "2026-07-21T01:17:12+00:00",
-      "category": "Policy"
-    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: wholesale & retail trade produced $2.1B, 11.1% of GDP.",
@@ -20,7 +12,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 21 Jul 2026: 1 USD = 26.68 ZWG · best from UK £100 → $131.29 via Wise",
+      "title": "Zim FX snapshot 21 Jul 2026: 1 USD = 26.79 ZWG · best from UK £100 → $131.20 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-07-21",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-07-21",
       "pubDate": "2026-07-20T22:00:00+00:00",
@@ -65,6 +57,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-20T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "World Vision — Communications Graduate Intern x1",
+      "link": "https://vacancymail.co.zw/jobs/communications-graduate-intern-x1-68403/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b4388dc85f3f.png",
+      "pubDate": "2026-07-20T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
