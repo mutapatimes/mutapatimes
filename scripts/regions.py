@@ -394,7 +394,8 @@ REGIONS = {
         # anything NOT listed here are dropped, so a region never shows a dead
         # /za/fx etc. Add verticals to a region's list as they go live.
         "live_sections": ["news", "economy", "fx", "markets", "property",
-                          "jobs", "articles", "originals", "weather", "cities"],
+                          "jobs", "articles", "originals", "weather", "cities",
+                          "sport"],
     },
 
     # ─────────────────────────────── SOUTH AFRICA (/za) ─────────────────────
@@ -534,7 +535,7 @@ REGIONS = {
         "jobs_source": "",          # TODO: pick a South African jobs board (vacancymail is ZW-only)
         # FX + weather verticals are now region-aware and live for SA; news/
         # articles/cities as before. (jobs/economy/markets/property remain ZW.)
-        "live_sections": ["news", "articles", "cities", "fx", "weather"],
+        "live_sections": ["news", "articles", "cities", "fx", "weather", "sport"],
     },
 }
 

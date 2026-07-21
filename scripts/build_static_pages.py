@@ -278,6 +278,8 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
         _nav.append(f'      <p>\n          <a target="_self"{cls("jobs")} href="{pfx}/jobs">Jobs</a>\n      </p>')
     if has("articles"):
         _nav.append(f'      <p>\n          <a target="_self"{cls("articles")} href="{pfx}/articles">Articles</a>\n      </p>')
+    if has("sport"):
+        _nav.append(f'      <p>\n          <a target="_self"{cls("sport")} href="{pfx}/sport">Sport</a>\n      </p>')
     if has("originals"):
         _nav.append(f'      <p>\n          <a target="_self" class="notranslate" href="{pfx}/originals">Originals</a>\n      </p>')
     nav_main = "\n".join(_nav)
@@ -295,6 +297,8 @@ def page_nav(active="articles", depth=1, body_class="", pfx="", region="zw"):
         _drawer.append(f'      <a href="{pfx}/jobs">Jobs</a>')
     if has("articles"):
         _drawer.append(f'      <a href="{pfx}/articles">Articles</a>')
+    if has("sport"):
+        _drawer.append(f'      <a href="{pfx}/sport">Sport</a>')
     if has("originals"):
         _drawer.append(f'      <a href="{pfx}/originals">Originals</a>')
     drawer_main = "\n".join(_drawer)
@@ -420,6 +424,8 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
         _read.append(f'            <li><a href="{pfx}/jobs">Jobs</a></li>')
     if has("articles"):
         _read.append(f'            <li><a href="{pfx}/articles">Articles</a></li>')
+    if has("sport"):
+        _read.append(f'            <li><a href="{pfx}/sport">Sport</a></li>')
     if has("weather"):
         _read.append(f'            <li><a href="{pfx}/weather">Weather</a></li>')
     read_links = "\n".join(_read)

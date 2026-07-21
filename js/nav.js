@@ -266,7 +266,7 @@
     { label:'Business',    cat:'Business',                          icon:I.business },
     { label:'Tech',        cat:'Tech',                              icon:I.tech },
     { label:'Health',      cat:'Health',                            icon:I.health },
-    { label:'Sport',       cat:'Sport',                             icon:I.sport },
+    { label:'Sport',       href:'/sport',     match:['/sport'],     icon:I.sport },
     { label:'Culture',     cat:'Culture',                           icon:I.culture },
     { label:'Environment', cat:'Environment',                       icon:I.environment },
     { label:'Education',   cat:'Education',                          icon:I.education },

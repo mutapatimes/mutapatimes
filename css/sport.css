@@ -1,0 +1,107 @@
+/* sport.css — /sport section. Uses main.css design tokens (--paper/--bg/--ink/
+   --accent) so it inherits the newsprint look + light/dark theme automatically. */
+
+.sport-head { margin: 0 auto 1.4rem; max-width: 1100px; padding: 0 1rem; }
+.sport-head h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05;
+  margin: 0 0 .4rem; color: var(--ink, #1a1a1a);
+}
+.sport-head .sport-deck {
+  color: var(--ink, #1a1a1a); opacity: .72; max-width: 62ch; font-size: 1.02rem; margin: 0;
+}
+#sport-app { max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem; }
+
+/* scores strip */
+.sport-strip {
+  display: flex; gap: .5rem; overflow-x: auto; padding: .6rem 0 1rem;
+  scrollbar-width: thin; -webkit-overflow-scrolling: touch;
+}
+.sport-strip-label {
+  align-self: center; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+  font-size: .7rem; color: var(--accent, #c41e1e); padding-right: .2rem; flex: 0 0 auto;
+}
+.sport-chip {
+  flex: 0 0 auto; text-decoration: none; border: 1px solid rgba(0,0,0,.14);
+  background: var(--paper, #fafaf7); border-radius: 8px; padding: .35rem .6rem;
+  display: flex; flex-direction: column; gap: .1rem; min-width: max-content;
+}
+.sport-chip-league { font-size: .64rem; letter-spacing: .05em; text-transform: uppercase; opacity: .6; }
+.sport-chip-teams { font-size: .82rem; color: var(--ink, #1a1a1a); font-weight: 600; }
+
+/* league cards grid (hub) */
+.sport-grid {
+  display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.sport-card {
+  border: 1px solid rgba(0,0,0,.14); border-radius: 10px; background: var(--paper, #fafaf7);
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.sport-card-head {
+  display: flex; align-items: center; gap: .6rem; padding: .85rem 1rem;
+  text-decoration: none; border-bottom: 2px solid var(--accent, #c41e1e); color: var(--ink,#1a1a1a);
+}
+.sport-card-flag { font-size: 1.4rem; line-height: 1; }
+.sport-card-titles { display: flex; flex-direction: column; }
+.sport-card-titles strong { font-size: 1.05rem; }
+.sport-card-sub { font-size: .74rem; opacity: .6; }
+.sport-card-body { padding: .4rem .5rem; flex: 1; }
+.sport-card-more {
+  display: block; padding: .7rem 1rem; text-decoration: none; font-weight: 600; font-size: .84rem;
+  color: var(--accent, #c41e1e); border-top: 1px solid rgba(0,0,0,.08);
+}
+.sport-card-more:hover { background: rgba(196,30,30,.05); }
+
+/* standings table */
+.sport-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.sport-table th, .sport-table td { padding: .45rem .4rem; text-align: left; }
+.sport-table thead th {
+  font-size: .64rem; text-transform: uppercase; letter-spacing: .05em; opacity: .55;
+  border-bottom: 1px solid rgba(0,0,0,.15); font-weight: 700;
+}
+.sport-table tbody tr + tr td { border-top: 1px solid rgba(0,0,0,.06); }
+.sport-table .rank { width: 1.6rem; text-align: center; opacity: .6; font-variant-numeric: tabular-nums; }
+.sport-table td.team { font-weight: 600; width: 100%; }   /* team column takes the slack */
+.sport-table .team-inner { display: flex; align-items: center; gap: .45rem; min-width: 0; }
+.sport-table .team-inner .badge { object-fit: contain; flex: 0 0 auto; }
+.sport-table .team-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sport-table .num { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sport-table .pts { font-weight: 800; }
+.sport-table--full { font-size: .95rem; }
+.sport-capped {
+  font-size: .74rem; opacity: .6; margin: .5rem .4rem 0; font-style: normal;
+  border-left: 2px solid var(--accent,#c41e1e); padding-left: .5rem;
+}
+.sport-loading, .sport-empty { opacity: .55; font-size: .85rem; padding: .6rem .4rem; }
+
+/* league page: results + fixtures columns */
+.sport-cols { display: grid; gap: 1.4rem; grid-template-columns: 1fr 1fr; margin-top: 1.6rem; }
+.sport-col-h {
+  font-family: "Playfair Display", Georgia, serif; font-size: 1.15rem; margin: 0 0 .6rem;
+  border-bottom: 2px solid var(--accent, #c41e1e); padding-bottom: .3rem; color: var(--ink,#1a1a1a);
+}
+.sport-match {
+  display: grid; grid-template-columns: 4.2rem 1fr auto 1fr; align-items: center; gap: .4rem;
+  padding: .45rem 0; border-top: 1px solid rgba(0,0,0,.07); font-size: .88rem;
+}
+.sport-match:first-of-type { border-top: 0; }
+.sport-match-date { font-size: .68rem; opacity: .5; }
+.sport-match-home { text-align: right; font-weight: 600; }
+.sport-match-away { text-align: left; font-weight: 600; }
+.sport-match-score {
+  font-weight: 800; background: var(--bg, #f0efeb); border-radius: 5px; padding: .1rem .45rem;
+  min-width: 2.6rem; text-align: center; font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 620px) {
+  .sport-table .opt { display: none; }   /* keep #, Team, Pts on phones */
+  .sport-cols { grid-template-columns: 1fr; }
+}
+
+/* dark theme: main.css flips the tokens; just soften our hairlines */
+@media (prefers-color-scheme: dark) {
+  .sport-chip, .sport-card, .sport-card-head { border-color: rgba(255,255,255,.14); }
+  .sport-table thead th { border-bottom-color: rgba(255,255,255,.18); }
+  .sport-table tbody tr + tr td { border-top-color: rgba(255,255,255,.08); }
+  .sport-match { border-top-color: rgba(255,255,255,.08); }
+}

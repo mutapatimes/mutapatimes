@@ -162,11 +162,19 @@ def main():
     index = []
     for lg in LEAGUES:
         print(f"[{lg['slug']}] via {lg['provider']}")
+        # Always list the league in the index (so the hub shows its card even
+        # before a source is wired up); the per-league data file may lag.
+        entry = {"slug": lg["slug"], "name": lg["name"], "short": lg["short"],
+                 "country": lg["country"], "flag": lg.get("flag", ""),
+                 "season": "", "capped": False}
         try:
             season, table, results, fixtures, capped = FETCHERS[lg["provider"]](lg)
         except Exception as e:
             print(f"  FAILED: {e} — keeping previous JSON if any")
+            index.append(entry)
             continue
+        entry["season"] = season
+        entry["capped"] = capped
         payload = {
             "slug": lg["slug"], "name": lg["name"], "short": lg["short"],
             "country": lg["country"], "flag": lg.get("flag", ""),
@@ -179,9 +187,7 @@ def main():
         print(f"  season {season or '?'}: {len(table)} table rows, "
               f"{len(results)} results, {len(fixtures)} fixtures"
               f"{' (capped)' if capped else ''}")
-        index.append({"slug": lg["slug"], "name": lg["name"], "short": lg["short"],
-                      "country": lg["country"], "flag": lg.get("flag", ""),
-                      "season": season, "capped": capped})
+        index.append(entry)
     with open(os.path.join(OUT_DIR, "index.json"), "w", encoding="utf-8") as f:
         json.dump({"leagues": index, "updated": now}, f, ensure_ascii=False, indent=1)
     print(f"Wrote {len(index)} league file(s) + index.json")
