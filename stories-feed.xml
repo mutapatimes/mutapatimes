@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2026 11:03:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 13:29:02 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -77,6 +77,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/b8e1a5e23efa.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b8e1a5e23efa.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/b8e1a5e23efa.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Southern Africa must confront xenophobia collectively</title>
+      <link>https://mutapatimes.com/stories/0d71dc95d263.html</link>
+      <description>David Chitakunye SOUTHERN Africa’s history is inseparable from migration, displacement, refuge and regional solidarity.During the upheavals commonly associated with the Mfecane, communities... via Dailynews #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 20 Jul 2026 23:40:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/0d71dc95d263.html</guid>
+      <category>Business</category>
+      <dc:creator>Dailynews</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/0d71dc95d263.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/0d71dc95d263.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/0d71dc95d263.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zimbabwe’s Unfinished Transition: Why Stability Alone Cannot Deliver Prosperity</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/4fc93b019163.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4fc93b019163.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/4fc93b019163.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Farm Manager: Marondera</title>
-      <link>https://mutapatimes.com/stories/332ee6b98aa1.html</link>
-      <description>New Farming Operation | Full-Time | Start-Up Role ABOUT THE ROLE We are seeking a hands-on Farm Manager to establish and run a brand-new farming operation. The property is currently undeveloped — ope… Marondera · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 20 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/332ee6b98aa1.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/332ee6b98aa1.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/332ee6b98aa1.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/332ee6b98aa1.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
