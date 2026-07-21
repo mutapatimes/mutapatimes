@@ -1,0 +1,16 @@
+---
+title: "Gauteng taxi industry threatens protest as tensions with transport MEC escalate"
+date: 2026-07-21T04:00:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Gauteng taxi industry threatens protest as tensions with transport MEC escalate"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZDB2SXRVd2JMMmF1ZUhsR1RHRG5mUkY2bG5IOU80UXBTVnJwNU5tNnY4dk85V0MyVWVOcjFiTko5Qm9qTm1rNTgwNGdDQU02YVhoR0FfTUxEbXNSVzAtRWNydDdtX29BM21kaVU4MnYzRVlCTGR6b1NOZWtmRUdPQXBrTkhjaFNNRk9VWEx4WjVlWm9BeUlIWmRmcEptNWprLTcwUU9qbXpPdEM3MGhFSWV2NEh3NW1rOWtCaV9BRUhFcE5Sc0hDMkNEZHdzZTRYS0I4?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZDB2SXRVd2JMMmF1ZUhsR1RHRG5mUkY2bG5IOU80UXBTVnJwNU5tNnY4dk85V0MyVWVOcjFiTko5Qm9qTm1rNTgwNGdDQU02YVhoR0FfTUxEbXNSVzAtRWNydDdtX29BM21kaVU4MnYzRVlCTGR6b1NOZWtmRUdPQXBrTkhjaFNNRk9VWEx4WjVlWm9BeUlIWmRmcEptNWprLTcwUU9qbXpPdEM3MGhFSWV2NEh3NW1rOWtCaV9BRUhFcE5Sc0hDMkNEZHdzZTRYS0I4?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Chidimma Adetshina’s Miss Universe journey returns to haunt her in deportation fight"
+date: 2026-07-21T05:20:48.000Z
+author: News24
+category: Business
+image: 
+summary: "Chidimma Adetshina’s Miss Universe journey returns to haunt her in deportation fight"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOFV4dENEM2Q2SVlwMWhkVGRFMEloM3FSN2N5TU9pMGxnV3VULWFsWGdSWXZzdWZKUFpOcW5BRmJ6U3lLcFppdHFVU29HRlRDOWYzWENEX1hqV0dmTjZwT2p0MHdJdDYyZVlxdkpKUzFBaVR2Qmw1Y3owZFl6NzllZXA5UGVyVnVDWGxKbVd2SWxKZHAzYUZEZ2pIM2Q5alotdTc0N2RGa1NpLXl2dGVpb2dWWTVXZEZsTm9EX195ZjhTTERsSlF2N1ZKSElqNXQ4emNTdUZnVVh1SEFBZVhqbnNTaw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOFV4dENEM2Q2SVlwMWhkVGRFMEloM3FSN2N5TU9pMGxnV3VULWFsWGdSWXZzdWZKUFpOcW5BRmJ6U3lLcFppdHFVU29HRlRDOWYzWENEX1hqV0dmTjZwT2p0MHdJdDYyZVlxdkpKUzFBaVR2Qmw1Y3owZFl6NzllZXA5UGVyVnVDWGxKbVd2SWxKZHAzYUZEZ2pIM2Q5alotdTc0N2RGa1NpLXl2dGVpb2dWWTVXZEZsTm9EX195ZjhTTERsSlF2N1ZKSElqNXQ4emNTdUZnVVh1SEFBZVhqbnNTaw?oc=5)
