@@ -1,0 +1,16 @@
+---
+title: "Is xenophobia in South Africa risking investment?"
+date: 2026-06-24T07:00:00.000Z
+author: dw.com
+category: Tech
+image: 
+summary: "Is xenophobia in South Africa risking investment?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdG9RenRyVjAwVm41NE05ZW1COUZsRjZRdmY5SEZscHNPX0VXMVFJY1RoampHYkd6TURTVlhkU1JibGpVRTNkSFVZdGRyY09LZ0VEU2xPTEVGZnNVTE1CRTdyYjBvV0kyQnY4b2d1VFVrZDZ1NFgtQXhJM1VLamJndEE2MHd0QjVC0gGIAUFVX3lxTE4yUENJQUpGVjJmMlJ0eDh3S2xXR1h2ODhsUTNkSEFRNGxxcnlJdy1EcUlvVnF1ay13ZGVHR3d4SWdRTThzVUw0UXRNcEJacHF3VE1lQVh2ZTNKdFNHX09oRVJiaTZKVENWaUhIUm5adHFYRElWOFdMeWs3SnEtYkNKRHczTlZXRFM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dw.com.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdG9RenRyVjAwVm41NE05ZW1COUZsRjZRdmY5SEZscHNPX0VXMVFJY1RoampHYkd6TURTVlhkU1JibGpVRTNkSFVZdGRyY09LZ0VEU2xPTEVGZnNVTE1CRTdyYjBvV0kyQnY4b2d1VFVrZDZ1NFgtQXhJM1VLamJndEE2MHd0QjVC0gGIAUFVX3lxTE4yUENJQUpGVjJmMlJ0eDh3S2xXR1h2ODhsUTNkSEFRNGxxcnlJdy1EcUlvVnF1ay13ZGVHR3d4SWdRTThzVUw0UXRNcEJacHF3VE1lQVh2ZTNKdFNHX09oRVJiaTZKVENWaUhIUm5adHFYRElWOFdMeWs3SnEtYkNKRHczTlZXRFM?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Watch FIFA World Cup: Mbappe vs Yamal headlines Spain-France semifinal"
+date: 2026-07-14T18:17:20.000Z
+author: Al Jazeera
+category: Tech
+image: 
+summary: "Watch FIFA World Cup: Mbappe vs Yamal headlines Spain-France semifinal"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HZTFHMGZMaHZRS3pCX3FBcDhKUXRfdDdqcW5GMHFxdFJkMWtVMVM4SEhDZnhZNVNGZy1oNXhEcm1GTGxZelpkWHNrb2ZqMGZmb0FLZ3ZtOWprRUc3bVlOdEZDQmJfZ1JvYlFtdGZYcTJGQTdtT1EyMU9Pb3N5Z9IBgwFBVV95cUxQTWpDcWIxeFBRTzh3YmNMT052YVpuZ29pNllpMG0wTUY1OFpKbGp2QmtKT1d3azN2a2ZSQTd0S2h5WGNTekt2SWo0RTRZNDJzcF9ZaGc2eXZZOXBVYjBwMllsbGhjaFlqdWxBUUVwaVIwVnl5YmRpQWpLV2tYOGZjc0hfRQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMifkFVX3lxTE5HZTFHMGZMaHZRS3pCX3FBcDhKUXRfdDdqcW5GMHFxdFJkMWtVMVM4SEhDZnhZNVNGZy1oNXhEcm1GTGxZelpkWHNrb2ZqMGZmb0FLZ3ZtOWprRUc3bVlOdEZDQmJfZ1JvYlFtdGZYcTJGQTdtT1EyMU9Pb3N5Z9IBgwFBVV95cUxQTWpDcWIxeFBRTzh3YmNMT052YVpuZ29pNllpMG0wTUY1OFpKbGp2QmtKT1d3azN2a2ZSQTd0S2h5WGNTekt2SWo0RTRZNDJzcF9ZaGc2eXZZOXBVYjBwMllsbGhjaFlqdWxBUUVwaVIwVnl5YmRpQWpLV2tYOGZjc0hfRQ?oc=5)

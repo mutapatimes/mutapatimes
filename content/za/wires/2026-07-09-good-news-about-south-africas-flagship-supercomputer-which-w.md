@@ -1,0 +1,16 @@
+---
+title: "Good news about South Africa’s flagship supercomputer which was hacked to mine cryptocurrency"
+date: 2026-07-09T13:02:29.000Z
+author: MyBroadband
+category: Business
+image: 
+summary: "Good news about South Africa’s flagship supercomputer which was hacked to mine cryptocurrency"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaEZxZXVEODYwb2RtSHdlOWYzWFA0OXNLUlAzUEhRNDVOQzBUZUdvdERPbGNqaFNUUHZNVjFlR2VGbG90dVZLMHpZTU96aFVMZmdJSFlxb0F6bndudE40Y3hXUVRtZXRGbGFTVi1XNTRvRVBaZk4yZmh1dUI2WlJWVDg4M2ZQVjRhUVVvcmMxNmxydTNRTms0dUxqaTdJSFFKaXdWRjNpejdRR2ZQSXdIbmEtTHFIdl9BcHJWVDM0YVBuc1VseThhWVRINnM0cVBrYlR6VGJXOTl5SFVH?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaEZxZXVEODYwb2RtSHdlOWYzWFA0OXNLUlAzUEhRNDVOQzBUZUdvdERPbGNqaFNUUHZNVjFlR2VGbG90dVZLMHpZTU96aFVMZmdJSFlxb0F6bndudE40Y3hXUVRtZXRGbGFTVi1XNTRvRVBaZk4yZmh1dUI2WlJWVDg4M2ZQVjRhUVVvcmMxNmxydTNRTms0dUxqaTdJSFFKaXdWRjNpejdRR2ZQSXdIbmEtTHFIdl9BcHJWVDM0YVBuc1VseThhWVRINnM0cVBrYlR6VGJXOTl5SFVH?oc=5)

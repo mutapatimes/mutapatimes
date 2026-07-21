@@ -1,0 +1,16 @@
+---
+title: "South Africa midfielder Jayden Adams dies at 25 after World Cup match vs Korea - CHOSUNBIZ"
+date: 2026-07-11T22:30:00.000Z
+author: Chosunbiz
+category: Culture
+image: 
+summary: "South Africa midfielder Jayden Adams dies at 25 after World Cup match vs Korea - CHOSUNBIZ"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MOVllbEUycHF2TUN5V1RwSm0wRWt5Rk9BRGRldDVpQ3lIMTZ1c2JoZEI5SzVMWEdyT0xabUVlSE1zbC1iOTlHM3paU2tzTnJTZnZGb0NiZE5OSkMwSU5PNE1kT3ZPWnhfdnBobTY4LVFEYlh6RDlsTFJXcjNHZGvSAZMBQVVfeXFMTlN3ZGVDa0lpZXpIbDlDN3lPMURVZFp5aEFUT216NDFBWU5kRHk2ZlRCSWxHY2tuNm55TzZ4RklhRFNtS01qRnBvUlhjd3VvVkVYVG1fWjFZZk43VEsyU2hNa1B4MHhLbmZ6UUJRcnUxckJmOE1SY1U1Und5bjNmLUp3OUFVOW90WkZ5MTQ2eDc0dWk0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Chosunbiz.*
+[Read original article](https://news.google.com/rss/articles/CBMif0FVX3lxTE9MOVllbEUycHF2TUN5V1RwSm0wRWt5Rk9BRGRldDVpQ3lIMTZ1c2JoZEI5SzVMWEdyT0xabUVlSE1zbC1iOTlHM3paU2tzTnJTZnZGb0NiZE5OSkMwSU5PNE1kT3ZPWnhfdnBobTY4LVFEYlh6RDlsTFJXcjNHZGvSAZMBQVVfeXFMTlN3ZGVDa0lpZXpIbDlDN3lPMURVZFp5aEFUT216NDFBWU5kRHk2ZlRCSWxHY2tuNm55TzZ4RklhRFNtS01qRnBvUlhjd3VvVkVYVG1fWjFZZk43VEsyU2hNa1B4MHhLbmZ6UUJRcnUxckJmOE1SY1U1Und5bjNmLUp3OUFVOW90WkZ5MTQ2eDc0dWk0?oc=5)

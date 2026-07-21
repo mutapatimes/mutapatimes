@@ -1,0 +1,16 @@
+---
+title: "Inside The Untouchables: The dark truth behind South Africa’s drug trade"
+date: 2026-07-15T11:38:11.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Inside The Untouchables: The dark truth behind South Africa’s drug trade"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipwJBVV95cUxOVndtMVc2STVfTHdGQVdKLXZicVI1RDdRRkR4eDhIeW5vWmFZRk1aeElhamNUcEdGUFpwSW5kQjl6eHFlUDYzTERwcDdTQUtUQkxmWlRISE9TbURYdzd3blBTcll5dkpBOWNqaXJWRE9NZ1lVeEltbF81VUdYUGlBdmV5MUtBZGc3YVBXdlRlZldTV1E1MWRsOG4tbC1xWTBqSGxBc1duUVR2VllWTUh3Wld2OF94TGpuSDA3Sm80OTd1T1RxenU1TU5LQ2lRcktTd29aNkIzVThXVUFrRUpKcmFfTmhjbjNnQjRvRGJZdzJEVzN4UVNiUHFYeDQzZDlHcURSRjJaeXJ6NnpjUDZ0M2MwY0J6U2NqaC1oM2hiZFNTdUt4c01B?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipwJBVV95cUxOVndtMVc2STVfTHdGQVdKLXZicVI1RDdRRkR4eDhIeW5vWmFZRk1aeElhamNUcEdGUFpwSW5kQjl6eHFlUDYzTERwcDdTQUtUQkxmWlRISE9TbURYdzd3blBTcll5dkpBOWNqaXJWRE9NZ1lVeEltbF81VUdYUGlBdmV5MUtBZGc3YVBXdlRlZldTV1E1MWRsOG4tbC1xWTBqSGxBc1duUVR2VllWTUh3Wld2OF94TGpuSDA3Sm80OTd1T1RxenU1TU5LQ2lRcktTd29aNkIzVThXVUFrRUpKcmFfTmhjbjNnQjRvRGJZdzJEVzN4UVNiUHFYeDQzZDlHcURSRjJaeXJ6NnpjUDZ0M2MwY0J6U2NqaC1oM2hiZFNTdUt4c01B?oc=5)

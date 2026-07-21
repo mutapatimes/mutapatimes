@@ -1,0 +1,16 @@
+---
+title: "Fuel’s errand: Global South universities’ role in the Just Transition can’t be reduced to divestment"
+date: 2026-07-16T19:55:25.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Fuel’s errand: Global South universities’ role in the Just Transition can’t be reduced to divestment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwJBVV95cUxNT2p0bVNBbzBMdkppZjduWjdxX3lIRTkyV1BfZDNyWEpLWnd0dWMzR1d3NEJBc01GT0R6aFlQOFRKZS1fSU4wc3dWNERZSTF0TDRCLWtJaW4wdWpkcldTcmhNUG9wOVY1TDQzY0x2OHA2RmdrLXcyZ0tkQ1pFUERrY1FpRUJyQzVOQ2s5WUhhSnM3WWpDRGhmQUh1eVhjcmFycHFhZll6TXNRLVdBZkxmc1FzQnF1N2dhdTBDdGRldDU2eHh0UDd0Z2ZZTE1iX3FRNXVpNXNINEd3clV0ZU5LWXc4OG1XNEU0MHRxV0hYNzhGaGh5SGxKaUhkNUpsek9iZENnUzczVm5DY2lhNmI5NVBRRHZHLTloT0tKd3lMbzlZLUk3eEEtZXQ5RkU3R2NhN2o2cjJ4UQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitwJBVV95cUxNT2p0bVNBbzBMdkppZjduWjdxX3lIRTkyV1BfZDNyWEpLWnd0dWMzR1d3NEJBc01GT0R6aFlQOFRKZS1fSU4wc3dWNERZSTF0TDRCLWtJaW4wdWpkcldTcmhNUG9wOVY1TDQzY0x2OHA2RmdrLXcyZ0tkQ1pFUERrY1FpRUJyQzVOQ2s5WUhhSnM3WWpDRGhmQUh1eVhjcmFycHFhZll6TXNRLVdBZkxmc1FzQnF1N2dhdTBDdGRldDU2eHh0UDd0Z2ZZTE1iX3FRNXVpNXNINEd3clV0ZU5LWXc4OG1XNEU0MHRxV0hYNzhGaGh5SGxKaUhkNUpsek9iZENnUzczVm5DY2lhNmI5NVBRRHZHLTloT0tKd3lMbzlZLUk3eEEtZXQ5RkU3R2NhN2o2cjJ4UQ?oc=5)

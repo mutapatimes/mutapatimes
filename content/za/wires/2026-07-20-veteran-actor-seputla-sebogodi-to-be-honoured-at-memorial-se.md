@@ -1,0 +1,16 @@
+---
+title: "Veteran actor Seputla Sebogodi to be honoured at memorial services"
+date: 2026-07-20T16:25:02.000Z
+author: News24
+category: Business
+image: 
+summary: "Veteran actor Seputla Sebogodi to be honoured at memorial services"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQzlaUGNwbzdjUFZMV09PUVVKY2ZrWjBLdEZ1MWJfamVLQWVZNVlRT3BUTk1ud0wxMjB6SGp5LUJIZUdSNnJZVE9PQUFTVmsteWY2cFFHaE04RFNRWWxtMkYyaXFiRWkyM1VoM2FaX01IWG1FZWVMNDlmZ21IQlY1QTU5NVlqcUJCQ0N0WTNiRDVfMWZQbGFhS2pLaTkzcHZEckh5X0VDeUdoMWZhT1g2VkExeWNYVDFDdVRCVndTRUhyNk44LUpYQktfY2tHS1pMMUU0ejhJSkYxSzA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQzlaUGNwbzdjUFZMV09PUVVKY2ZrWjBLdEZ1MWJfamVLQWVZNVlRT3BUTk1ud0wxMjB6SGp5LUJIZUdSNnJZVE9PQUFTVmsteWY2cFFHaE04RFNRWWxtMkYyaXFiRWkyM1VoM2FaX01IWG1FZWVMNDlmZ21IQlY1QTU5NVlqcUJCQ0N0WTNiRDVfMWZQbGFhS2pLaTkzcHZEckh5X0VDeUdoMWZhT1g2VkExeWNYVDFDdVRCVndTRUhyNk44LUpYQktfY2tHS1pMMUU0ejhJSkYxSzA?oc=5)

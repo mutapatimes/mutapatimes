@@ -1,0 +1,16 @@
+---
+title: "To save SA’s crumbling roads, funding must be decentralised"
+date: 2026-07-15T21:00:41.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "To save SA’s crumbling roads, funding must be decentralised"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNd1psdzY3eE1kUkdzQzR0clBHYmJ1ZlNoLXVKRXE3aW1aclBNdEFpODN1ekpsa2U2UkQ2cDBrai1UdlJreTJDRThDMXUzbzRWeE5xUmQxbHFuZ3E1ZGItWkdoRzBBekNEUkVvLXBqdXVYTzJuT1ZqcGM3NkNqX1J1YWZ2bGNIZTJTc3VwQndHbF9RaGItXzVOUnd2NnplZ2Z6dy1oQmlFLUM1ZU42SkpXMThBbU44QzNTNUdlTGhiQmVURmVpTWxjMmJ5eXFDUGowM3NBNkwwRE9Yc3Y4RzV0czRHR0RPVTViSGZMSnJVTkE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi8AFBVV95cUxNd1psdzY3eE1kUkdzQzR0clBHYmJ1ZlNoLXVKRXE3aW1aclBNdEFpODN1ekpsa2U2UkQ2cDBrai1UdlJreTJDRThDMXUzbzRWeE5xUmQxbHFuZ3E1ZGItWkdoRzBBekNEUkVvLXBqdXVYTzJuT1ZqcGM3NkNqX1J1YWZ2bGNIZTJTc3VwQndHbF9RaGItXzVOUnd2NnplZ2Z6dy1oQmlFLUM1ZU42SkpXMThBbU44QzNTNUdlTGhiQmVURmVpTWxjMmJ5eXFDUGowM3NBNkwwRE9Yc3Y4RzV0czRHR0RPVTViSGZMSnJVTkE?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "South African Regulator Probes Top Money Manager Over Governance"
+date: 2026-07-15T07:09:52.000Z
+author: Bloomberg.com
+category: Policy
+image: 
+summary: "South African Regulator Probes Top Money Manager Over Governance"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQalZYLUhuUFg0QVVUR0hOczVUb2hEemRudWlPNXRVNlNESW45NVpjeGJPeVRabXlFMzZvcHJkQXZjYzU2eEUyVWw3Tk9RTnFuU3otZ1VNSklWd1Juekt2R2hhQ3VuNXYtMEIwdWhTb0dvVVhhNFVIeWhraW1oa3lydGxoM3p0b1ROTkVlSkpHdjl4bVRwLVNUMEZ6TmcwRTdfTkRWZHhHaHFlSTFheDJBNDlITmQtbWhvMWNpLW5KX1E5VzFDM201UVpZQWx3VmtBaGc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Bloomberg.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQalZYLUhuUFg0QVVUR0hOczVUb2hEemRudWlPNXRVNlNESW45NVpjeGJPeVRabXlFMzZvcHJkQXZjYzU2eEUyVWw3Tk9RTnFuU3otZ1VNSklWd1Juekt2R2hhQ3VuNXYtMEIwdWhTb0dvVVhhNFVIeWhraW1oa3lydGxoM3p0b1ROTkVlSkpHdjl4bVRwLVNUMEZ6TmcwRTdfTkRWZHhHaHFlSTFheDJBNDlITmQtbWhvMWNpLW5KX1E5VzFDM201UVpZQWx3VmtBaGc?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "KUSENI DLAMINI | The 21st century calls for a US-SA reset based on intelligence economy"
+date: 2026-07-12T03:31:09.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "KUSENI DLAMINI | The 21st century calls for a US-SA reset based on intelligence economy"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaFlyanBGRWlIejhtd0dBU2lHS21jcU5uNVVtVjZqVEpOSWM2bFBSNnBzTWlJYV9tUm0taUhRVU1OQXRRUkQ0VXVweTk5cVNyelNmQWZGakVnNHFmMEhlcnN6QmlsazFCNy1ZR2I2X19ieEgzaFpwNUFRV1lvUzJTRVZwclBlVDltTzNkWEMyS0wzWWxoQXdnOFNwYm5WeHFEY0tmeVlMSmpsRDNlRlh6WXJPUjIzcHU5cDhoVjA4cnNkQXMxS2l1YkhVTnRvZVhfSnNGNWF2NnlIZnRzX1A4RkU3VzZENUc3V1d5Tk95cXlMTHMyRGZuVkYtNG4xalk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaFlyanBGRWlIejhtd0dBU2lHS21jcU5uNVVtVjZqVEpOSWM2bFBSNnBzTWlJYV9tUm0taUhRVU1OQXRRUkQ0VXVweTk5cVNyelNmQWZGakVnNHFmMEhlcnN6QmlsazFCNy1ZR2I2X19ieEgzaFpwNUFRV1lvUzJTRVZwclBlVDltTzNkWEMyS0wzWWxoQXdnOFNwYm5WeHFEY0tmeVlMSmpsRDNlRlh6WXJPUjIzcHU5cDhoVjA4cnNkQXMxS2l1YkhVTnRvZVhfSnNGNWF2NnlIZnRzX1A4RkU3VzZENUc3V1d5Tk95cXlMTHMyRGZuVkYtNG4xalk?oc=5)

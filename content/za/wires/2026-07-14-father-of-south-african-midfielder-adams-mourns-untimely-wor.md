@@ -1,0 +1,16 @@
+---
+title: "Father of South African midfielder Adams mourns untimely World Cup death - CHOSUNBIZ"
+date: 2026-07-14T09:30:00.000Z
+author: Chosunbiz
+category: Culture
+image: 
+summary: "Father of South African midfielder Adams mourns untimely World Cup death - CHOSUNBIZ"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fQ1E3YWc1TXJLQmlONHg5NVJsMUh3cTJWLURCRm9RamdCNy1iUmFtT3VHcVM3YkhwbDd0Q2llOXpUYnNpZ3ppM0ViUGxKeUtvd2Z0ZVo2cVJuOWx2TEZjbk9VT0k0eUU0ajk2MmhZSFh4alVITjdzRjJtUDV3LVnSAZMBQVVfeXFMTnBrV3FpT3BaSlBxSnJVVVZ5YXljSlQ4VXVJUjY1VUZGN3BiRU1FUF9RdDYyOU4zX01KOFMxTkszTTktUEZDQjFoYnBXY2FBazdmSmlSMVpfZk5HU21VNmZCZjY1enZOZ1lVUzlQenUzQkQzMURvMnhkYTVVTV9rbWxiU2dWWGY0WWc0REExOExzMnRv?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Chosunbiz.*
+[Read original article](https://news.google.com/rss/articles/CBMif0FVX3lxTE9fQ1E3YWc1TXJLQmlONHg5NVJsMUh3cTJWLURCRm9RamdCNy1iUmFtT3VHcVM3YkhwbDd0Q2llOXpUYnNpZ3ppM0ViUGxKeUtvd2Z0ZVo2cVJuOWx2TEZjbk9VT0k0eUU0ajk2MmhZSFh4alVITjdzRjJtUDV3LVnSAZMBQVVfeXFMTnBrV3FpT3BaSlBxSnJVVVZ5YXljSlQ4VXVJUjY1VUZGN3BiRU1FUF9RdDYyOU4zX01KOFMxTkszTTktUEZDQjFoYnBXY2FBazdmSmlSMVpfZk5HU21VNmZCZjY1enZOZ1lVUzlQenUzQkQzMURvMnhkYTVVTV9rbWxiU2dWWGY0WWc0REExOExzMnRv?oc=5)

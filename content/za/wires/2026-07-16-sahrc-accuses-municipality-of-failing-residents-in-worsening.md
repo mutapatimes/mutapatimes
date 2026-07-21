@@ -1,0 +1,16 @@
+---
+title: "SAHRC accuses municipality of failing residents in worsening North West water crisis"
+date: 2026-07-16T02:30:00.000Z
+author: TimesLIVE
+category: Environment
+image: 
+summary: "SAHRC accuses municipality of failing residents in worsening North West water crisis"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMDl3NzhscFg1a2NjaEFsZ2hIRTRiTG5CNjJUWE1QRWFNWHZ0MnhOakVCZjRZaWV3eVdvenM4TGtwSnNUdnJXbzJZd2NOYmMxT3hXcDhTTWpYa2FFU01RQzhLOWI3Sml4azJIaW16Wk9zVmFQU1ZQcnZIN3FuNlN4RHZqalhOSWhfSC1KZjhtbEFKUmJkLTM4S1gxa1hTcjhUTncwZUNDdnFueE0tN2dhRlhNaDlKTUdDbDllU3pwb09GTmRXMlQwNTZwYnFCa3JuSGNmU0JpelNBZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMDl3NzhscFg1a2NjaEFsZ2hIRTRiTG5CNjJUWE1QRWFNWHZ0MnhOakVCZjRZaWV3eVdvenM4TGtwSnNUdnJXbzJZd2NOYmMxT3hXcDhTTWpYa2FFU01RQzhLOWI3Sml4azJIaW16Wk9zVmFQU1ZQcnZIN3FuNlN4RHZqalhOSWhfSC1KZjhtbEFKUmJkLTM4S1gxa1hTcjhUTncwZUNDdnFueE0tN2dhRlhNaDlKTUdDbDllU3pwb09GTmRXMlQwNTZwYnFCa3JuSGNmU0JpelNBZw?oc=5)

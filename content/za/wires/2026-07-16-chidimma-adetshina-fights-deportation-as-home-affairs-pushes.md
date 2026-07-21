@@ -1,0 +1,16 @@
+---
+title: "Chidimma Adetshina fights deportation as home affairs pushes to remove her from SA"
+date: 2026-07-16T16:24:41.000Z
+author: News24
+category: Business
+image: 
+summary: "Chidimma Adetshina fights deportation as home affairs pushes to remove her from SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUjFJenE3emMwTEFMbkVpYmxlcmYwQ2c2TEtEc1Q3U3JzR1RURmJHeHB0MGQwQ2RON3F3NkpOT1otSXdpUmVfV3FNejRTSTJZM1NHTkxITTJadmNwckhsSkE5LUM3dzJlYVFMUlpxVTN5aGxISlhCWnJlT0w2WXA0YVBaWWtwSjVtY0JpWldmX3lic1l3Z19HQklfSXdfSmFLRkN5UkY0UFdBdFVVWlpLSnUzN3plWm5XS3E1OE9Db2o1T3FkajBaaXR4VGRYUnV0SkY1cWRtNTgyOGYwTVpObUtn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUjFJenE3emMwTEFMbkVpYmxlcmYwQ2c2TEtEc1Q3U3JzR1RURmJHeHB0MGQwQ2RON3F3NkpOT1otSXdpUmVfV3FNejRTSTJZM1NHTkxITTJadmNwckhsSkE5LUM3dzJlYVFMUlpxVTN5aGxISlhCWnJlT0w2WXA0YVBaWWtwSjVtY0JpWldmX3lic1l3Z19HQklfSXdfSmFLRkN5UkY0UFdBdFVVWlpLSnUzN3plWm5XS3E1OE9Db2o1T3FkajBaaXR4VGRYUnV0SkY1cWRtNTgyOGYwTVpObUtn?oc=5)

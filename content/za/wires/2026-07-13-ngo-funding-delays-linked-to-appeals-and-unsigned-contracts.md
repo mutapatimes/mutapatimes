@@ -1,0 +1,16 @@
+---
+title: "NGO funding delays linked to appeals and unsigned contracts: Gauteng social development"
+date: 2026-07-13T05:44:00.000Z
+author: TimesLIVE
+category: Tech
+image: 
+summary: "NGO funding delays linked to appeals and unsigned contracts: Gauteng social development"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMDNzUFNrclFyOEUzblphTndQMl9FYnR4eWM0UUR2RnBHNWwybkQwOGRwektOOHcwNWJHU3FwdDc0cS1OMjJvRE14WElDN3ozQ3NNeTJza0FDUlpxem5hWHBUNV9zd1Q5MzNNa25zT2VGWHhwX0x2OHJzempmRlo5Qk9NRHZPWXNoZGVHNVROUUEtZk51Vmxab2kwTTYyUktQek5Wa3lFeGNCQzNMcGg1c0J4dUdIcXdjSXotZlRSS1kzTjN6cHlwcWZaSlpudWVwWjA4dzQ4NzhUTnds?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMDNzUFNrclFyOEUzblphTndQMl9FYnR4eWM0UUR2RnBHNWwybkQwOGRwektOOHcwNWJHU3FwdDc0cS1OMjJvRE14WElDN3ozQ3NNeTJza0FDUlpxem5hWHBUNV9zd1Q5MzNNa25zT2VGWHhwX0x2OHJzempmRlo5Qk9NRHZPWXNoZGVHNVROUUEtZk51Vmxab2kwTTYyUktQek5Wa3lFeGNCQzNMcGg1c0J4dUdIcXdjSXotZlRSS1kzTjN6cHlwcWZaSlpudWVwWjA4dzQ4NzhUTnds?oc=5)

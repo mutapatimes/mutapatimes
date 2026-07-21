@@ -1,0 +1,16 @@
+---
+title: "SUPERMARKET INCOME REIT PLC – Notice of dividend currency exchange rate (South African Rand) and tax implications for South African shareholders"
+date: 2026-07-20T08:00:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "SUPERMARKET INCOME REIT PLC – Notice of dividend currency exchange rate (South African Rand) and tax implications for South African shareholders"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNaVNYQkczdGFwMGh5bGdGSEtCUl9Cem05UGNINmxPcXVjTGVfV1lBczBqUmRIbDJibkkybFRscm8wTUtLeGFTd1JRb05HNEpHV09UWjZRY1NObjNKMVdEQzhZc29uN0N4aWlIdk1yWnlUNHNMTHVKUGdyUkRiS3VvWmVELW1mbVZYYUpKb1BVUEkzRUJMamJkSTl0MUxFcENlTkFZX2dTcWYxQTByUWpfRC0wTTI5WFBMSUtXLU5RbjA3WHY1RG9TN0tSVTEwRXpRMWtoN2hXVU9aMEktXzNlQW51T2RHRlkwRWRXek83cWpmdkVhc0FsSXE4RHFuV19VcENGeFlqbWxnTzQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMiiwJBVV95cUxNaVNYQkczdGFwMGh5bGdGSEtCUl9Cem05UGNINmxPcXVjTGVfV1lBczBqUmRIbDJibkkybFRscm8wTUtLeGFTd1JRb05HNEpHV09UWjZRY1NObjNKMVdEQzhZc29uN0N4aWlIdk1yWnlUNHNMTHVKUGdyUkRiS3VvWmVELW1mbVZYYUpKb1BVUEkzRUJMamJkSTl0MUxFcENlTkFZX2dTcWYxQTByUWpfRC0wTTI5WFBMSUtXLU5RbjA3WHY1RG9TN0tSVTEwRXpRMWtoN2hXVU9aMEktXzNlQW51T2RHRlkwRWRXek83cWpmdkVhc0FsSXE4RHFuV19VcENGeFlqbWxnTzQ?oc=5)

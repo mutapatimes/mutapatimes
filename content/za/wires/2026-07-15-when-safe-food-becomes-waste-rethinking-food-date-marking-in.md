@@ -1,0 +1,16 @@
+---
+title: "When safe food becomes waste — rethinking food date marking in SA"
+date: 2026-07-15T08:58:12.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "When safe food becomes waste — rethinking food date marking in SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijwJBVV95cUxObzd3d3dhdW9KamRoMkhvV3ZQQnRNVG5Wbl94d1Z3Tnp0LU1XekJ2ZndkVmZmVG5OZlpad1Y1Ujd0TThjZ2FtWHduRXNVd1Bfd0hzVmNFV1F0SXJ2cWZyWGxxXzRCS1h6VnBEM2RRSlhKaFc1b0V4RTRfTWpJZm5zV3MxbTVVUUJNTmVfenUtdXJ4QTdxNXV1MS1sQWJ6NWFPdWtlVl95Z3BoNEJqUHpFR2piZ3hmaS1Famh3SDJYQXR0NFFISmtOTDhVT2h0YkFDd0pEQ1BiNjJfMU82QjJOQmk1N3Z2MWpRcjYtU1lqNUdWemNoU2RxVEVPT0t0Zm4xTVVqTkNlSHF6am5kbTNr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijwJBVV95cUxObzd3d3dhdW9KamRoMkhvV3ZQQnRNVG5Wbl94d1Z3Tnp0LU1XekJ2ZndkVmZmVG5OZlpad1Y1Ujd0TThjZ2FtWHduRXNVd1Bfd0hzVmNFV1F0SXJ2cWZyWGxxXzRCS1h6VnBEM2RRSlhKaFc1b0V4RTRfTWpJZm5zV3MxbTVVUUJNTmVfenUtdXJ4QTdxNXV1MS1sQWJ6NWFPdWtlVl95Z3BoNEJqUHpFR2piZ3hmaS1Famh3SDJYQXR0NFFISmtOTDhVT2h0YkFDd0pEQ1BiNjJfMU82QjJOQmk1N3Z2MWpRcjYtU1lqNUdWemNoU2RxVEVPT0t0Zm4xTVVqTkNlSHF6am5kbTNr?oc=5)
