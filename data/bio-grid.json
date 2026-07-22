@@ -1,14 +1,54 @@
 {
-  "fetched_at": "2026-07-22T02:07:45+00:00",
+  "fetched_at": "2026-07-22T05:44:52+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe’s New Lithium Rail Route to the Port of Maputo",
-      "link": "https://mutapatimes.com/articles/2026-07-21-zimbabwes-new-lithium-rail-route-to-the-port-of-maputo",
-      "image": "https://mutapatimes.com/img/cards/news/a5e831602092.png",
-      "pubDate": "2026-07-21T23:23:12+00:00",
+      "title": "InsuranceDekho enters Cricket Sponsorship with Zimbabwe, Sri Lanka Tours; backs India's overseas series",
+      "link": "https://mutapatimes.com/articles/2026-07-22-insurancedekho-enters-cricket-sponsorship-with-zimbabwe-sri",
+      "image": "https://mutapatimes.com/img/cards/news/4713f8320aa3.png",
+      "pubDate": "2026-07-22T05:39:00+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "InsuranceDekho enters Cricket Sponsorship with Zimbabwe, Sri Lanka Tours; backs India's overseas series",
+      "link": "https://mutapatimes.com/news/2026-07-22-insurancedekho-enters-cricket-sponsorship-with-zimbabwe-sri-lanka-tours-backs-14806e",
+      "image": "https://mutapatimes.com/img/cards/news/4d5764e2a432.png",
+      "pubDate": "2026-07-22T05:39:00+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Nears Financial Close For First Phase Of 600 MW Kariba Floating Solar Project",
+      "link": "https://mutapatimes.com/articles/2026-07-22-zimbabwe-nears-financial-close-for-first-phase-of-600-mw-kar",
+      "image": "https://mutapatimes.com/img/cards/news/9571d4c43f90.png",
+      "pubDate": "2026-07-22T04:49:51+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Nears Financial Close For First Phase Of 600 MW Kariba Floating Solar Project",
+      "link": "https://mutapatimes.com/news/2026-07-22-zimbabwe-nears-financial-close-for-first-phase-of-600-mw-kariba-floating-solar-b2d496",
+      "image": "https://mutapatimes.com/img/cards/news/d0a5a1782e63.png",
+      "pubDate": "2026-07-22T04:49:51+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's Econet InfraCo focuses on solar power and AI fuel management",
+      "link": "https://mutapatimes.com/articles/2026-07-22-zimbabwes-econet-infraco-focuses-on-solar-power-and-ai-fuel",
+      "image": "https://mutapatimes.com/img/cards/news/8d9ffd95a823.png",
+      "pubDate": "2026-07-22T04:29:33+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's Econet InfraCo focuses on solar power and AI fuel management",
+      "link": "https://mutapatimes.com/news/2026-07-22-zimbabwe-s-econet-infraco-focuses-on-solar-power-and-ai-fuel-management-ac7259",
+      "image": "https://mutapatimes.com/img/cards/news/55c8b1980e02.png",
+      "pubDate": "2026-07-22T04:29:33+00:00",
+      "category": "Technology"
     },
     {
       "kind": "news",
@@ -16,6 +56,38 @@
       "link": "https://mutapatimes.com/news/2026-07-22-zimbabwe-s-new-lithium-rail-route-to-the-port-of-maputo-aaf963",
       "image": "https://mutapatimes.com/img/cards/news/58c06e3e2cc6.png",
       "pubDate": "2026-07-21T23:23:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe temporarily closes Victoria Falls rainforest over wandering elephant",
+      "link": "https://mutapatimes.com/articles/2026-07-21-zimbabwe-temporarily-closes-victoria-falls-rainforest-over-w",
+      "image": "https://mutapatimes.com/img/cards/news/727bdf171ba2.png",
+      "pubDate": "2026-07-21T23:00:54+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe temporarily closes Victoria Falls rainforest over wandering elephant",
+      "link": "https://mutapatimes.com/news/2026-07-22-zimbabwe-temporarily-closes-victoria-falls-rainforest-over-wandering-elephant-46ecb3",
+      "image": "https://mutapatimes.com/img/cards/news/ad471161d47c.png",
+      "pubDate": "2026-07-21T23:00:54+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Gold invests US$1.2 million in Zimbabwe’s first accredited gold mine laboratory",
+      "link": "https://mutapatimes.com/articles/2026-07-21-mutapa-gold-invests-us12-million-in-zimbabwes-first-accredit",
+      "image": "https://mutapatimes.com/img/cards/news/c14301a34b0c.png",
+      "pubDate": "2026-07-21T23:00:16+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Gold invests US$1.2 million in Zimbabwe’s first accredited gold mine laboratory",
+      "link": "https://mutapatimes.com/news/2026-07-22-mutapa-gold-invests-us-1-2-million-in-zimbabwe-s-first-accredited-gold-mine-2d4022",
+      "image": "https://mutapatimes.com/img/cards/news/4b22b22dbd33.png",
+      "pubDate": "2026-07-21T23:00:16+00:00",
       "category": "Business"
     },
     {
@@ -28,7 +100,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 22 Jul 2026: 1 USD = 26.79 ZWG · best from UK £100 → $131.20 via Wise",
+      "title": "Zim FX snapshot 22 Jul 2026: 1 USD = 26.80 ZWG · best from UK £100 → $130.72 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-07-22",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-07-22",
       "pubDate": "2026-07-21T22:00:00+00:00",
@@ -407,78 +479,6 @@
       "title": "Zimbabwe Mining Development Corporation — Graduate Trainee Programme: Geology, Metallurgy & Mining Engineering",
       "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-geology-metallurgy-mining-engineering-68380/",
       "image": "https://mutapatimes.com/img/cards/jobs/1c0b9bd2f286.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe National Family Planning Council — Transport Officer",
-      "link": "https://vacancymail.co.zw/jobs/transport-officer-68379/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e9baaf39a3dc.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZB FINANCIAL HOLDINGS — Settlements and Reconciliations Manager",
-      "link": "https://vacancymail.co.zw/jobs/settlements-and-reconciliations-manager-68372/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7ae57d5a8134.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TV Sales — Salespersons",
-      "link": "https://vacancymail.co.zw/jobs/salespersons-68371/",
-      "image": "https://mutapatimes.com/img/cards/jobs/22dedb752bac.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Millennium Homes — Human Resources Officer",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-officer-68370/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2f1de0ffffaf.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Front Desk Receptionist (Entry-Level)",
-      "link": "https://vacancymail.co.zw/jobs/front-desk-receptionist-entry-level-68369/",
-      "image": "https://mutapatimes.com/img/cards/jobs/323b9343a6ed.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cook/Chef",
-      "link": "https://vacancymail.co.zw/jobs/cookchef-68368/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ba4f7f17d685.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fintech and Innovation Manager",
-      "link": "https://vacancymail.co.zw/jobs/fintech-and-innovation-manager-68367/",
-      "image": "https://mutapatimes.com/img/cards/jobs/403cb71e4277.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee – Commercial & Innovation",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-commercial-innovation-68366/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b4af3d5f9b1.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "VIP Driver",
-      "link": "https://vacancymail.co.zw/jobs/vip-driver-68365/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d7cebaa9571d.png",
       "pubDate": "2026-07-21T22:00:00+00:00",
       "category": "Jobs"
     }
