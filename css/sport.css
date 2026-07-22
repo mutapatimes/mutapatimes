@@ -12,6 +12,14 @@
 }
 #sport-app { max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem; }
 
+/* section heading for the standings block (sits under the featured editorial) */
+.sport-standings-h {
+  max-width: 1100px; margin: 2.2rem auto .2rem; padding: .85rem 1rem 0;
+  border-top: 3px solid var(--accent, #c41e1e);
+  font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--ink, #1a1a1a);
+}
+
 /* scores strip */
 .sport-strip {
   display: flex; gap: .5rem; overflow-x: auto; padding: .6rem 0 1rem;
@@ -109,7 +117,7 @@
 }
 
 /* editorial: Kundai Kaycee columns + sport reads */
-.sport-editorial { max-width: 1100px; margin: 2.4rem auto 0; padding: 0 1rem 1rem; }
+.sport-editorial { max-width: 1100px; margin: 1.4rem auto 0; padding: 0 1rem 1rem; }
 .sport-ed-head { border-top: 3px solid var(--accent, #c41e1e); padding-top: .8rem; margin-bottom: 1.1rem; }
 .sport-ed-title {
   font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.4rem, 3vw, 1.8rem);
