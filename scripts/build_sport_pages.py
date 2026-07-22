@@ -20,8 +20,8 @@ from regions import region_path_prefix, region_is_indexable  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SPORT_LEAD = {"zw": "castle-lager-psl", "za": "dstv-premiership"}
-SPORT_CSS = '\n    <link rel="stylesheet" href="/css/sport.css?v=2">'
-SPORT_JS = '\n  <script defer src="/js/sport.js?v=2"></script>'
+SPORT_CSS = '\n    <link rel="stylesheet" href="/css/sport.css?v=3">'
+SPORT_JS = '\n  <script defer src="/js/sport.js?v=3"></script>'
 OG = "https://mutapatimes.com/img/harare-palms.jpg"
 
 

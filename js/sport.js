@@ -205,6 +205,45 @@
     if (isNaN(d)) return "";
     return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
   }
+  function edMeta(a) {
+    var meta = el("p", "sport-ed-meta");
+    meta.textContent = (a.author || "") + (a.date ? " · " + fmtDate(a.date) : "");
+    return meta;
+  }
+  function edTag(a, heroFallback) {
+    if (a.is_column) return el("span", "sport-ed-tag", "Column");
+    if (heroFallback) return el("span", "sport-ed-tag sport-ed-tag--muted", "Featured");
+    return null;
+  }
+  function edCard(a) {
+    var card = el("a", "sport-ed-card"); card.href = a.url;
+    if (a.card_image) {
+      var im = el("img", "sport-ed-img"); im.src = a.card_image; im.alt = "";
+      im.loading = "lazy"; im.onerror = function () { this.style.display = "none"; };
+      card.appendChild(im);
+    }
+    var b = el("div", "sport-ed-body");
+    var tag = edTag(a, false); if (tag) b.appendChild(tag);
+    b.appendChild(el("h3", "sport-ed-h", a.title || ""));
+    b.appendChild(edMeta(a));
+    card.appendChild(b);
+    return card;
+  }
+  function edHero(a) {
+    var h = el("a", "sport-ed-hero"); h.href = a.url;
+    if (a.card_image) {
+      var im = el("img", "sport-ed-hero-img"); im.src = a.card_image; im.alt = "";
+      im.loading = "lazy";
+      im.onerror = function () { h.classList.add("no-img"); this.style.display = "none"; };
+      h.appendChild(im);
+    } else { h.classList.add("no-img"); }
+    var b = el("div", "sport-ed-hero-body");
+    b.appendChild(edTag(a, true));
+    b.appendChild(el("h3", "sport-ed-hero-h", a.title || ""));
+    b.appendChild(edMeta(a));
+    h.appendChild(b);
+    return h;
+  }
   function renderEditorial() {
     var host = document.getElementById("sport-editorial");
     if (!host) return;
@@ -219,25 +258,13 @@
         host.appendChild(el("p", "sport-empty", "Columns from the sport desk are coming soon."));
         return;
       }
-      var grid = el("div", "sport-ed-grid");
-      items.forEach(function (a) {
-        var card = el("a", "sport-ed-card"); card.href = a.url;
-        if (a.card_image) {
-          var im = el("img", "sport-ed-img"); im.src = a.card_image; im.alt = "";
-          im.loading = "lazy";
-          im.onerror = function () { this.style.display = "none"; };
-          card.appendChild(im);
-        }
-        var b = el("div", "sport-ed-body");
-        if (a.is_column) b.appendChild(el("span", "sport-ed-tag", "Column"));
-        b.appendChild(el("h3", "sport-ed-h", a.title || ""));
-        var meta = el("p", "sport-ed-meta");
-        meta.textContent = (a.author || "") + (a.date ? " · " + fmtDate(a.date) : "");
-        b.appendChild(meta);
-        card.appendChild(b);
-        grid.appendChild(card);
-      });
-      host.appendChild(grid);
+      host.appendChild(edHero(items[0]));                 // lead story
+      var rest = items.slice(1, 7);                       // then a tidy two-column list
+      if (rest.length) {
+        var grid = el("div", "sport-ed-grid");
+        rest.forEach(function (a) { grid.appendChild(edCard(a)); });
+        host.appendChild(grid);
+      }
     }).catch(function () { /* section stays empty on error */ });
   }
 
