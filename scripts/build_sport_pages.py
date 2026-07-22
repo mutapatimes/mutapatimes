@@ -20,8 +20,8 @@ from regions import region_path_prefix, region_is_indexable  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SPORT_LEAD = {"zw": "castle-lager-psl", "za": "dstv-premiership"}
-SPORT_CSS = '\n    <link rel="stylesheet" href="/css/sport.css?v=1">'
-SPORT_JS = '\n  <script defer src="/js/sport.js?v=1"></script>'
+SPORT_CSS = '\n    <link rel="stylesheet" href="/css/sport.css?v=2">'
+SPORT_JS = '\n  <script defer src="/js/sport.js?v=2"></script>'
 OG = "https://mutapatimes.com/img/harare-palms.jpg"
 
 
@@ -57,6 +57,7 @@ def build_hub(region):
       <p class="sport-deck">Live football tables, results and fixtures across the Premier League, DStv Premiership and Castle Lager PSL, with opinion and analysis from Kundai Kaycee.</p>
     </div>
     <div id="sport-app" data-page="hub" data-lead="{esc(lead)}"></div>
+    <section id="sport-editorial" class="sport-editorial"></section>
   </main>
 '''
     foot = page_footer(depth=depth, extra_scripts=SPORT_JS, pfx=pfx, region=region)
@@ -81,6 +82,7 @@ def build_league(region, lg):
       <p class="sport-deck">{esc(lg["country"])}. Standings, recent results and upcoming fixtures, refreshed through the day.</p>
     </div>
     <div id="sport-app" data-page="league" data-slug="{esc(slug)}"></div>
+    <section id="sport-editorial" class="sport-editorial"></section>
   </main>
 '''
     foot = page_footer(depth=depth, extra_scripts=SPORT_JS, pfx=pfx, region=region)

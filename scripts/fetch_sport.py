@@ -155,6 +155,48 @@ def fetch_thesportsdb(lg):
 
 FETCHERS = {"football_data": fetch_football_data, "thesportsdb": fetch_thesportsdb}
 
+KUNDAI = "kundai kaycee"
+
+
+def build_editorial(now):
+    """Write data/sport/editorial.json — the sport columns/reads surfaced on the
+    /sport pages. Kundai Kaycee's columns come first, then the latest Sport reads.
+    Sourced from the article index so new pieces appear without a page rebuild."""
+    idx = os.path.join(ROOT, "content", "articles", "index.json")
+    try:
+        with open(idx, encoding="utf-8") as f:
+            arts = json.load(f)
+        if isinstance(arts, dict):
+            arts = arts.get("articles") or arts.get("items") or []
+    except Exception as e:
+        print(f"[editorial] skipped: {e}")
+        return
+
+    def is_col(a):
+        return (a.get("author") or "").strip().lower() == KUNDAI
+
+    sport = [a for a in arts if a.get("category") == "Sport" or is_col(a)]
+    sport.sort(key=lambda a: a.get("date") or "", reverse=True)
+    ordered = [a for a in sport if is_col(a)] + [a for a in sport if not is_col(a)]
+
+    items = []
+    for a in ordered[:12]:
+        slug = a.get("slug")
+        if not slug:
+            continue
+        items.append({
+            "title": a.get("title") or "Untitled",
+            "url": f"/articles/{slug}.html",
+            "date": a.get("date") or "",
+            "author": a.get("author") or "The Mutapa Times",
+            "is_column": is_col(a),
+            "card_image": a.get("card_image") or a.get("image") or "",
+        })
+    with open(os.path.join(OUT_DIR, "editorial.json"), "w", encoding="utf-8") as f:
+        json.dump({"items": items, "updated": now}, f, ensure_ascii=False, indent=1)
+    print(f"[editorial] {len(items)} items "
+          f"({sum(1 for i in items if i['is_column'])} Kundai Kaycee columns)")
+
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -191,6 +233,7 @@ def main():
     with open(os.path.join(OUT_DIR, "index.json"), "w", encoding="utf-8") as f:
         json.dump({"leagues": index, "updated": now}, f, ensure_ascii=False, indent=1)
     print(f"Wrote {len(index)} league file(s) + index.json")
+    build_editorial(now)
 
 
 if __name__ == "__main__":

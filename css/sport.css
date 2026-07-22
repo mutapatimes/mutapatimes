@@ -61,10 +61,14 @@
 }
 .sport-table tbody tr + tr td { border-top: 1px solid rgba(0,0,0,.06); }
 .sport-table .rank { width: 1.6rem; text-align: center; opacity: .6; font-variant-numeric: tabular-nums; }
-.sport-table td.team { font-weight: 600; width: 100%; }   /* team column takes the slack */
+.sport-table td.team { font-weight: 600; }
+.sport-table--full td.team { width: 100%; }               /* full: team takes the slack */
+.sport-table--mini { table-layout: fixed; width: 100%; }  /* mini: fix the number cols... */
+.sport-table--mini .rank { width: 2rem; }
+.sport-table--mini .num { width: 2.3rem; }                /* ...so the team column gets the rest */
 .sport-table .team-inner { display: flex; align-items: center; gap: .45rem; min-width: 0; }
 .sport-table .team-inner .badge { object-fit: contain; flex: 0 0 auto; }
-.sport-table .team-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sport-table .team-name { white-space: normal; line-height: 1.15; }  /* wrap, never truncate */
 .sport-table .num { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .sport-table .pts { font-weight: 800; }
 .sport-table--full { font-size: .95rem; }
@@ -98,9 +102,34 @@
   .sport-cols { grid-template-columns: 1fr; }
 }
 
+/* editorial: Kundai Kaycee columns + sport reads */
+.sport-editorial { max-width: 1100px; margin: 2.4rem auto 0; padding: 0 1rem 1rem; }
+.sport-ed-head { border-top: 3px solid var(--accent, #c41e1e); padding-top: .8rem; margin-bottom: 1.1rem; }
+.sport-ed-title {
+  font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin: 0; color: var(--ink, #1a1a1a);
+}
+.sport-ed-by { margin: .15rem 0 0; font-size: .82rem; opacity: .62; }
+.sport-ed-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.sport-ed-card {
+  text-decoration: none; border: 1px solid rgba(0,0,0,.12); border-radius: 10px;
+  overflow: hidden; background: var(--paper, #fafaf7); display: flex; flex-direction: column;
+  transition: transform .12s ease;
+}
+.sport-ed-card:hover { transform: translateY(-2px); }
+.sport-ed-img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
+.sport-ed-body { padding: .7rem .8rem 1rem; }
+.sport-ed-tag {
+  display: inline-block; font-size: .58rem; text-transform: uppercase; letter-spacing: .08em;
+  font-weight: 800; color: #fff; background: var(--accent, #c41e1e);
+  padding: .15rem .4rem; border-radius: 4px; margin-bottom: .4rem;
+}
+.sport-ed-h { font-size: 1rem; line-height: 1.25; margin: 0 0 .35rem; color: var(--ink, #1a1a1a); }
+.sport-ed-meta { font-size: .74rem; opacity: .6; margin: 0; }
+
 /* dark theme: main.css flips the tokens; just soften our hairlines */
 @media (prefers-color-scheme: dark) {
-  .sport-chip, .sport-card, .sport-card-head { border-color: rgba(255,255,255,.14); }
+  .sport-chip, .sport-card, .sport-card-head, .sport-ed-card { border-color: rgba(255,255,255,.14); }
   .sport-table thead th { border-bottom-color: rgba(255,255,255,.18); }
   .sport-table tbody tr + tr td { border-top-color: rgba(255,255,255,.08); }
   .sport-match { border-top-color: rgba(255,255,255,.08); }

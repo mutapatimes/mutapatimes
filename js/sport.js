@@ -38,37 +38,52 @@
   }
 
   // ── standings table ───────────────────────────────────────────────────
-  function tableEl(rows, full) {
-    var t = el("table", "sport-table" + (full ? " sport-table--full" : ""));
-    var thead = el("thead");
-    var hr = el("tr");
-    ["#", "Team", "P", "W", "D", "L", "GD", "Pts"].forEach(function (h, i) {
-      var th = el("th", null, h);
-      if (i >= 2 && i <= 6) th.className = "num opt";       // P/W/D/L/GD hide on narrow
-      if (i === 7) th.className = "num pts";
-      if (i === 1) th.className = "team";
-      hr.appendChild(th);
-    });
+  // Column sets. Mini (hub cards) drops W/D/L/GD so the club name gets room;
+  // full (league page) shows everything, with W/D/L/GD hidden on phones (.opt).
+  var COLS_FULL = [
+    { label: "#", key: "rank", cls: "rank" },
+    { label: "Team", key: "team", cls: "team" },
+    { label: "P", key: "played", cls: "num opt" },
+    { label: "W", key: "win", cls: "num opt" },
+    { label: "D", key: "draw", cls: "num opt" },
+    { label: "L", key: "loss", cls: "num opt" },
+    { label: "GD", key: "gd", cls: "num opt" },
+    { label: "Pts", key: "points", cls: "num pts" }
+  ];
+  var COLS_MINI = [
+    { label: "#", key: "rank", cls: "rank" },
+    { label: "Team", key: "team", cls: "team" },
+    { label: "P", key: "played", cls: "num" },
+    { label: "Pts", key: "points", cls: "num pts" }
+  ];
+
+  function teamCell(r) {
+    var td = el("td", "team");
+    var inner = el("div", "team-inner");   // flex lives here, NOT on the <td>
+    if (r.badge) {
+      var img = el("img", "badge"); img.src = r.badge; img.alt = ""; img.loading = "lazy";
+      img.width = 18; img.height = 18; inner.appendChild(img);
+    }
+    inner.appendChild(el("span", "team-name", r.team || ""));
+    td.appendChild(inner);
+    return td;
+  }
+
+  function tableEl(rows, mode) {
+    var cols = mode === "mini" ? COLS_MINI : COLS_FULL;
+    var t = el("table", "sport-table sport-table--" + (mode || "full"));
+    var thead = el("thead"), hr = el("tr");
+    cols.forEach(function (c) { hr.appendChild(el("th", c.cls, c.label)); });
     thead.appendChild(hr); t.appendChild(thead);
     var tb = el("tbody");
     rows.forEach(function (r) {
       var tr = el("tr");
-      tr.appendChild(el("td", "rank", r.rank));
-      var team = el("td", "team");
-      var inner = el("div", "team-inner");   // flex lives here, NOT on the <td>
-      if (r.badge) {
-        var img = el("img", "badge"); img.src = r.badge; img.alt = ""; img.loading = "lazy";
-        img.width = 18; img.height = 18; inner.appendChild(img);
-      }
-      inner.appendChild(el("span", "team-name", r.team || ""));
-      team.appendChild(inner);
-      tr.appendChild(team);
-      [["played", 0], ["win", 0], ["draw", 0], ["loss", 0]].forEach(function (k) {
-        tr.appendChild(el("td", "num opt", r[k[0]]));
+      cols.forEach(function (c) {
+        if (c.key === "team") { tr.appendChild(teamCell(r)); return; }
+        var v = r[c.key];
+        if (c.key === "gd") v = (v === null || v === undefined) ? "" : (v > 0 ? "+" + v : v);
+        tr.appendChild(el("td", c.cls, v));
       });
-      var gd = (r.gd === null || r.gd === undefined) ? "" : (r.gd > 0 ? "+" + r.gd : r.gd);
-      tr.appendChild(el("td", "num opt", gd));
-      tr.appendChild(el("td", "num pts", r.points));
       tb.appendChild(tr);
     });
     t.appendChild(tb);
@@ -126,7 +141,7 @@
         getJSON(BASE + "/" + lg.slug + ".json").then(function (d) {
           body.innerHTML = "";
           if (d.table && d.table.length) {
-            body.appendChild(tableEl(d.table.slice(0, 5), false));
+            body.appendChild(tableEl(d.table.slice(0, 5), "mini"));
             if (d.capped) body.appendChild(cappedNote());
           } else {
             body.appendChild(el("p", "sport-empty", "Standings updating…"));
@@ -160,7 +175,7 @@
       app.appendChild(meta);
 
       if (d.table && d.table.length) {
-        app.appendChild(tableEl(d.table, true));
+        app.appendChild(tableEl(d.table, "full"));
         if (d.capped) app.appendChild(cappedNote());
       } else {
         app.appendChild(el("p", "sport-empty", "Standings updating…"));
@@ -184,7 +199,50 @@
     });
   }
 
+  // ── editorial (Kundai Kaycee columns + sport reads) ─────────────────────
+  function fmtDate(iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) return "";
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  }
+  function renderEditorial() {
+    var host = document.getElementById("sport-editorial");
+    if (!host) return;
+    getJSON(BASE + "/editorial.json").then(function (d) {
+      var items = d.items || [];
+      host.innerHTML = "";
+      var head = el("div", "sport-ed-head");
+      head.appendChild(el("h2", "sport-ed-title", "From the Sport Desk"));
+      head.appendChild(el("p", "sport-ed-by", "Opinion and analysis by Kundai Kaycee"));
+      host.appendChild(head);
+      if (!items.length) {
+        host.appendChild(el("p", "sport-empty", "Columns from the sport desk are coming soon."));
+        return;
+      }
+      var grid = el("div", "sport-ed-grid");
+      items.forEach(function (a) {
+        var card = el("a", "sport-ed-card"); card.href = a.url;
+        if (a.card_image) {
+          var im = el("img", "sport-ed-img"); im.src = a.card_image; im.alt = "";
+          im.loading = "lazy";
+          im.onerror = function () { this.style.display = "none"; };
+          card.appendChild(im);
+        }
+        var b = el("div", "sport-ed-body");
+        if (a.is_column) b.appendChild(el("span", "sport-ed-tag", "Column"));
+        b.appendChild(el("h3", "sport-ed-h", a.title || ""));
+        var meta = el("p", "sport-ed-meta");
+        meta.textContent = (a.author || "") + (a.date ? " · " + fmtDate(a.date) : "");
+        b.appendChild(meta);
+        card.appendChild(b);
+        grid.appendChild(card);
+      });
+      host.appendChild(grid);
+    }).catch(function () { /* section stays empty on error */ });
+  }
+
   var page = app.getAttribute("data-page");
   if (page === "league") renderLeague(app.getAttribute("data-slug"));
   else renderHub(app.getAttribute("data-lead") || "");
+  renderEditorial();
 })();
