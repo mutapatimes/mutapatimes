@@ -1,0 +1,16 @@
+---
+title: "Miss World SA Romanda Hombir reveals endometriosis struggle and her fight for equal healthcare"
+date: 2026-07-22T10:08:28.000Z
+author: News24
+category: Health
+image: 
+summary: "Miss World SA Romanda Hombir reveals endometriosis struggle and her fight for equal healthcare"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNanAycmp0UEdZcGdVWXJlYnh1Zkx4X1RsakltNzh5VnNFTjR2Um1ZbVNMTGxHemR2OWh5THhwd21zSzJGT2ptNUwtUjRJNlJSbC1LbDI1d25OVWRWOWxveFJSeWhoLUEtVWlKWWpJbUtOY1hpU19GNUk3YmZ5VnM2ZWlaaEU3STM1TTdfMTRiY1dDUnRPVGJaQ0tQVldFYlFBNDd3MkVhQTd6NjkxaFFaUUxKLXhBZTBDV2l3WHJBOVZ2TWUyVUI3UnVIUUNPV2ZfRWZmVERGZ1NLTjZRTS10ZVBFbVNlazJjVWtNM2hhamdZTWRCOU5n?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNanAycmp0UEdZcGdVWXJlYnh1Zkx4X1RsakltNzh5VnNFTjR2Um1ZbVNMTGxHemR2OWh5THhwd21zSzJGT2ptNUwtUjRJNlJSbC1LbDI1d25OVWRWOWxveFJSeWhoLUEtVWlKWWpJbUtOY1hpU19GNUk3YmZ5VnM2ZWlaaEU3STM1TTdfMTRiY1dDUnRPVGJaQ0tQVldFYlFBNDd3MkVhQTd6NjkxaFFaUUxKLXhBZTBDV2l3WHJBOVZ2TWUyVUI3UnVIUUNPV2ZfRWZmVERGZ1NLTjZRTS10ZVBFbVNlazJjVWtNM2hhamdZTWRCOU5n?oc=5)
