@@ -51,7 +51,7 @@
 }
 .sport-card-flag { font-size: 1.4rem; line-height: 1; }
 .sport-card-titles { display: flex; flex-direction: column; }
-.sport-card-titles strong { font-size: 1.05rem; }
+.sport-card-titles strong { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.1rem; }
 .sport-card-sub { font-size: .74rem; opacity: .6; }
 .sport-card-body { padding: .4rem .5rem; flex: 1; }
 .sport-card-more {
@@ -155,7 +155,10 @@
   font-weight: 800; color: #fff; background: var(--accent, #c41e1e);
   padding: .15rem .4rem; border-radius: 4px; margin-bottom: .4rem;
 }
-.sport-ed-h { font-size: 1rem; line-height: 1.25; margin: 0 0 .35rem; color: var(--ink, #1a1a1a); }
+.sport-ed-h {
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.1rem; line-height: 1.2; margin: 0 0 .35rem; color: var(--ink, #1a1a1a);
+}
 .sport-ed-meta { font-size: .74rem; opacity: .6; margin: 0; }
 
 /* dark theme: main.css flips the tokens; just soften our hairlines */
