@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-22T08:43:29.487897+00:00",
+  "fetched_at": "2026-07-22T14:20:55.765388+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -49,6 +49,15 @@
       "baths": "3"
     },
     {
+      "title": "An elegant double ,beautiful and spacious double story for a quick sale",
+      "url": "https://www.property.co.zw/for-sale/houses-iach252011",
+      "price": "USD 360,000",
+      "location": "Gletwin Park, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/c4/00/96/c4009607-3f1f-4060-8812-9cae9d0c0105_thumbnail591.webp",
+      "beds": "7",
+      "baths": "4"
+    },
+    {
       "title": "Beautiful Family Home",
       "url": "https://www.property.co.zw/for-sale/houses-sby226034",
       "price": "USD 80,000",
@@ -65,6 +74,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/58/25/87/58258704-a515-49e9-9458-d749e4703e0c_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
+    },
+    {
+      "title": "Highlands Golden Triangle Double Storey Forsale",
+      "url": "https://www.property.co.zw/for-sale/houses-rws252004",
+      "price": "USD 900,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/97/e7/41/97e7415d-b8bc-429e-8d35-5f10aabfde87_thumbnail591.webp",
+      "beds": "6",
+      "baths": "4"
     },
     {
       "title": "Modern cluster homes for sale in Emarald Hill",
@@ -150,7 +168,7 @@
     {
       "title": "Arlington East Property For Sale",
       "url": "https://www.property.co.zw/for-sale/houses-syr245027",
-      "price": "USD 215,000",
+      "price": "USD 210,000",
       "location": "Arlington, Harare South",
       "image": "https://www.property.co.zw/uploadedfiles/a5/8a/a9/a58aa960-df77-457a-ab97-91507194cb79_thumbnail591.webp",
       "beds": "4",
@@ -182,24 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/db/84/5e/db845e26-5864-49ff-82f0-1580e58f8f85_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "Arlington Townhouse with Deed— 3-Bed, Fitted Kitchen & Solar",
-      "url": "https://www.property.co.zw/for-sale/townhouses-cami247655",
-      "price": "USD 160,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/7b/50/c3/7b50c3b5-36e4-4929-b3c7-891173ae43e5_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Waterford House For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-btp241099",
-      "price": "USD 110,000",
-      "location": "Waterford, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/0a/68/3c/0a683cf7-719b-4703-89e2-a2b7601cc09d_thumbnail591.webp",
-      "beds": "3",
-      "baths": "1"
     }
   ]
 }
