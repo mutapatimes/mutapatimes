@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-07-21T22:00:35+00:00",
+  "fetched_at": "2026-07-22T02:07:45+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s New Lithium Rail Route to the Port of Maputo",
+      "link": "https://mutapatimes.com/articles/2026-07-21-zimbabwes-new-lithium-rail-route-to-the-port-of-maputo",
+      "image": "https://mutapatimes.com/img/cards/news/a5e831602092.png",
+      "pubDate": "2026-07-21T23:23:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s New Lithium Rail Route to the Port of Maputo",
+      "link": "https://mutapatimes.com/news/2026-07-22-zimbabwe-s-new-lithium-rail-route-to-the-port-of-maputo-aaf963",
+      "image": "https://mutapatimes.com/img/cards/news/58c06e3e2cc6.png",
+      "pubDate": "2026-07-21T23:23:12+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim primary income 2025 Q4: −$167M. Trailing four quarters: −$610M.",
@@ -463,22 +479,6 @@
       "title": "VIP Driver",
       "link": "https://vacancymail.co.zw/jobs/vip-driver-68365/",
       "image": "https://mutapatimes.com/img/cards/jobs/d7cebaa9571d.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Driver",
-      "link": "https://vacancymail.co.zw/jobs/driver-68364/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5426200a158d.png",
-      "pubDate": "2026-07-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Land Officer Cartographer",
-      "link": "https://vacancymail.co.zw/jobs/land-officer-cartographer-68362/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4d26e0a9758b.png",
       "pubDate": "2026-07-21T22:00:00+00:00",
       "category": "Jobs"
     }
