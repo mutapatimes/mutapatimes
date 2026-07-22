@@ -1,0 +1,16 @@
+---
+title: "Philadelphia Union boss breaks silence on Bafana Bafana star Olwethu Makhanya as defender goes AWOL to force European transfer move - 'We will leave it at that for now'"
+date: 2026-07-22T13:15:04.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Philadelphia Union boss breaks silence on Bafana Bafana star Olwethu Makhanya as defender goes AWOL to force European transfer move - 'We will leave it at that for now'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxQZTFoemplVnp2V1hvVG01UDNXeGF1NDZ6aFdGZTRueWp2aTdONV9fczkyd250MjlWU3NmdVpWMUZMaEZwOFE1eXNia0JfYWxzRFFhbHdyczhpZW9zVkZ2eGNRVUxKaUhSNzBjX1plNFY2dm9SbENzN0pwWFRkcVAyeHd5Ymc5RjhOZC1pWlNBVHRBYTJINEY5dlNPSTF4aFpWUGw5eUdib2N6V2RDUFV2bmpiWUI4WTFoVW9WbkFFeDV1T0ZYa1pNOU1ZM3JuYWZFeG5uQU9oUURJM1pscm41ak1IcUFlckc2QWM3YzZONklkeWZOZDJQNlBwZVBNQXFIWThLcG9nMnYzaDgxc1dZTUZ4S192SnkxeFowbXAwRzZDV2laRzZodzY4eEZEcE1MbjZVbU9SdDR0enRYQ1E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxQZTFoemplVnp2V1hvVG01UDNXeGF1NDZ6aFdGZTRueWp2aTdONV9fczkyd250MjlWU3NmdVpWMUZMaEZwOFE1eXNia0JfYWxzRFFhbHdyczhpZW9zVkZ2eGNRVUxKaUhSNzBjX1plNFY2dm9SbENzN0pwWFRkcVAyeHd5Ymc5RjhOZC1pWlNBVHRBYTJINEY5dlNPSTF4aFpWUGw5eUdib2N6V2RDUFV2bmpiWUI4WTFoVW9WbkFFeDV1T0ZYa1pNOU1ZM3JuYWZFeG5uQU9oUURJM1pscm41ak1IcUFlckc2QWM3YzZONklkeWZOZDJQNlBwZVBNQXFIWThLcG9nMnYzaDgxc1dZTUZ4S192SnkxeFowbXAwRzZDV2laRzZodzY4eEZEcE1MbjZVbU9SdDR0enRYQ1E?oc=5)
