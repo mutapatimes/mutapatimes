@@ -1,0 +1,16 @@
+---
+title: "No contract extension for Bafana coach Broos, SAFA confirms amid coaching uncertainty"
+date: 2026-07-22T16:58:47.000Z
+author: News24
+category: Sport
+image: 
+summary: "No contract extension for Bafana coach Broos, SAFA confirms amid coaching uncertainty"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMlVXWFp4aE1KLVJ5bEpZbG9jczN1Z21HVk5kb1RyWXZENU85OHZrTnVJUnQ1Y2l4S1E0TUFwTkx5MmlHMG9WTkVtdnlFT3ZmdV9ZU2wtcmdEbFRKcG9hM0ZrUFhSTVJ6eml2REJwU1I4OVdGbTcwR0hJaXZfUHZ1aGFycGUxdG9uRXU4QTl2aG51NXNxNFJQV1c5TzZPSWw4bDJWMjNhRVZpLUhFNGh6eEI2QXBtU21Eam1nTFNSTTRiWmpFOGRwS3ZvUlYzXzlwdFhibWVmV0tjNzJLNE1NRXFseU5rb2t3R2w5aEdZR0IxaXBvWWdNMWMtd2I?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMlVXWFp4aE1KLVJ5bEpZbG9jczN1Z21HVk5kb1RyWXZENU85OHZrTnVJUnQ1Y2l4S1E0TUFwTkx5MmlHMG9WTkVtdnlFT3ZmdV9ZU2wtcmdEbFRKcG9hM0ZrUFhSTVJ6eml2REJwU1I4OVdGbTcwR0hJaXZfUHZ1aGFycGUxdG9uRXU4QTl2aG51NXNxNFJQV1c5TzZPSWw4bDJWMjNhRVZpLUhFNGh6eEI2QXBtU21Eam1nTFNSTTRiWmpFOGRwS3ZvUlYzXzlwdFhibWVmV0tjNzJLNE1NRXFseU5rb2t3R2w5aEdZR0IxaXBvWWdNMWMtd2I?oc=5)
