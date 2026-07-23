@@ -7,7 +7,73 @@
  "season": "2026-2027",
  "provider": "thesportsdb",
  "capped": true,
- "table": [],
+ "table": [
+  {
+   "rank": 1,
+   "team": "Golden Arrows",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/gqsagt1583616305.png/tiny",
+   "played": 0,
+   "win": 0,
+   "draw": 0,
+   "loss": 0,
+   "gf": 0,
+   "ga": 0,
+   "gd": 0,
+   "points": 0
+  },
+  {
+   "rank": 2,
+   "team": "Chippa United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/lzt11b1583614111.png/tiny",
+   "played": 0,
+   "win": 0,
+   "draw": 0,
+   "loss": 0,
+   "gf": 0,
+   "ga": 0,
+   "gd": 0,
+   "points": 0
+  },
+  {
+   "rank": 3,
+   "team": "Orlando Pirates",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
+   "played": 0,
+   "win": 0,
+   "draw": 0,
+   "loss": 0,
+   "gf": 0,
+   "ga": 0,
+   "gd": 0,
+   "points": 0
+  },
+  {
+   "rank": 4,
+   "team": "Milford",
+   "badge": "https://www.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
+   "played": 0,
+   "win": 0,
+   "draw": 0,
+   "loss": 0,
+   "gf": 0,
+   "ga": 0,
+   "gd": 0,
+   "points": 0
+  },
+  {
+   "rank": 5,
+   "team": "Stellenbosch",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/4j7uc01583616345.png/tiny",
+   "played": 0,
+   "win": 0,
+   "draw": 0,
+   "loss": 0,
+   "gf": 0,
+   "ga": 0,
+   "gd": 0,
+   "points": 0
+  }
+ ],
  "results": [
   {
    "date": "2026-06-10",
@@ -25,5 +91,5 @@
    "away": "Chippa United"
   }
  ],
- "updated": "2026-07-23T06:41:47+00:00"
+ "updated": "2026-07-23T10:36:01+00:00"
 }
