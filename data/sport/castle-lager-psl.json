@@ -22,7 +22,7 @@
    "points": 52
   },
   {
-   "rank": 2,
+   "rank": 3,
    "team": "Dynamos",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
    "played": 24,
@@ -38,26 +38,26 @@
    "rank": 4,
    "team": "Ngezi Platinum",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/7n93nc1645561915.png/tiny",
-   "played": 23,
+   "played": 24,
    "win": 10,
-   "draw": 10,
+   "draw": 11,
    "loss": 3,
-   "gf": 28,
-   "ga": 20,
+   "gf": 29,
+   "ga": 21,
    "gd": 8,
-   "points": 40
+   "points": 41
   },
   {
    "rank": 5,
    "team": "CAPS United",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
-   "played": 23,
+   "played": 24,
    "win": 10,
    "draw": 9,
-   "loss": 4,
+   "loss": 5,
    "gf": 28,
-   "ga": 20,
-   "gd": 8,
+   "ga": 21,
+   "gd": 7,
    "points": 39
   },
   {
@@ -91,5 +91,5 @@
    "away": "Platinum"
   }
  ],
- "updated": "2026-07-24T06:41:11+00:00"
+ "updated": "2026-07-24T10:29:31+00:00"
 }
