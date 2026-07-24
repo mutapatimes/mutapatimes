@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-07-24T08:17:22+00:00",
+  "fetched_at": "2026-07-24T10:59:23+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Sooryavanshi 18-ball fifty tops ‘tremendous’ India T20 win against Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-07-24-sooryavanshi-18-ball-fifty-tops-tremendous-india-t20-win-aga",
+      "image": "https://mutapatimes.com/img/cards/news/2cde0c91f4f8.png",
+      "pubDate": "2026-07-24T08:55:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "President reaffirms importance of strong Govt, Church ties",
+      "link": "https://mutapatimes.com/news/2026-07-23-president-reaffirms-importance-of-strong-govt-church-ties-aece0a",
+      "image": "https://mutapatimes.com/img/cards/news/00e4a6c3f352.png",
+      "pubDate": "2026-07-23T22:14:03+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Government fast-tracks reintegration of youth returnees",
+      "link": "https://mutapatimes.com/news/2026-07-23-government-fast-tracks-reintegration-of-youth-returnees-16a7c9",
+      "image": "https://mutapatimes.com/img/cards/news/b7d144bd8300.png",
+      "pubDate": "2026-07-23T22:11:49+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim export mix 2025 Q4: 95.9% of $3.3B exports are physical goods.",
@@ -57,6 +81,22 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-23T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Repoquad Investments Pty ltd — ACCOUNTS CLERK Bulawayo Based Candidates Only Please",
+      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-bulawayo-based-candidates-only-please-68464/",
+      "image": "https://mutapatimes.com/img/cards/jobs/bbf758850a32.png",
+      "pubDate": "2026-07-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Maranatha Christian Schools — Design and Technology Teacher – Re-advert",
+      "link": "https://vacancymail.co.zw/jobs/design-and-technology-teacher-re-advert-68463/",
+      "image": "https://mutapatimes.com/img/cards/jobs/21f599b2ea6d.png",
+      "pubDate": "2026-07-23T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Software Developer",
       "link": "https://vacancymail.co.zw/jobs/software-developer-68412/",
       "image": "https://mutapatimes.com/img/cards/jobs/879777cdd720.png",
-      "pubDate": "2026-07-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Securities and Exchange Commission of Zimbabwe — Corporate Communications Intern",
-      "link": "https://vacancymail.co.zw/jobs/corporate-communications-intern-68411/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1cf7e7d55bec.png",
-      "pubDate": "2026-07-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Team Leader (Underwriting)",
-      "link": "https://vacancymail.co.zw/jobs/team-leader-underwriting-68410/",
-      "image": "https://mutapatimes.com/img/cards/jobs/df8e5d1709e0.png",
-      "pubDate": "2026-07-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sandvik — Artisan - DPF",
-      "link": "https://vacancymail.co.zw/jobs/artisan-dpf-68409/",
-      "image": "https://mutapatimes.com/img/cards/jobs/55b217022a45.png",
-      "pubDate": "2026-07-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sandvik — Foreman",
-      "link": "https://vacancymail.co.zw/jobs/foreman-68408/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5a78a64efa17.png",
-      "pubDate": "2026-07-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nestlé — Replenishment Specialist",
-      "link": "https://vacancymail.co.zw/jobs/replenishment-specialist-68407/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ccd1e2ef2afc.png",
       "pubDate": "2026-07-23T22:00:00+00:00",
       "category": "Jobs"
     }
