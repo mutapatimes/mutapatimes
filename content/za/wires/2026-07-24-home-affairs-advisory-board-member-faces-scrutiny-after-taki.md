@@ -1,0 +1,16 @@
+---
+title: "Home Affairs advisory board member faces scrutiny after taking on Chidimma Adetshina case"
+date: 2026-07-24T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Home Affairs advisory board member faces scrutiny after taking on Chidimma Adetshina case"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOT25sd1hraVFNb25oWmx1Rk4tUGlaLWY4SXJVbElOYy04Mm4zcGZlWGxjUHRuZmFvM19kQ3JuZkM1czAtQ0QtRm9qbTlxc2xBUm8yaUlkcmdHaHc4bDF4RXFwZFlKbGlHcGNoV3pTSEpid18za25NZ01qQzlqZnI4bTFsOHloOWxHME5xLUR5T21CNl9vdy1aUFZtVDF5TGJJcVlOdndxMlBkeE9ldUxJSmlxZXpjTnlYbE5aWnY1Y2dhcTU3c2x5ckdQS3pXaEthUW9mUE1jQXpfVXdyRThoUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOT25sd1hraVFNb25oWmx1Rk4tUGlaLWY4SXJVbElOYy04Mm4zcGZlWGxjUHRuZmFvM19kQ3JuZkM1czAtQ0QtRm9qbTlxc2xBUm8yaUlkcmdHaHc4bDF4RXFwZFlKbGlHcGNoV3pTSEpid18za25NZ01qQzlqZnI4bTFsOHloOWxHME5xLUR5T21CNl9vdy1aUFZtVDF5TGJJcVlOdndxMlBkeE9ldUxJSmlxZXpjTnlYbE5aWnY1Y2dhcTU3c2x5ckdQS3pXaEthUW9mUE1jQXpfVXdyRThoUQ?oc=5)
