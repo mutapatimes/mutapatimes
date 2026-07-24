@@ -1,0 +1,16 @@
+---
+title: "Unregulated and unchecked — why SA needs to tame its lobbying Wild West"
+date: 2026-07-24T08:04:21.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Unregulated and unchecked — why SA needs to tame its lobbying Wild West"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwJBVV95cUxPSF9qMzB6SFBHcDBGZGxUc2RnRUM0d3FEVkVRYmVmZ0NZbzRyYnhqQ0taUUxleWN1UUhVZkE4QmNHWkFiM3VWOTM3aFNWYkh0NFduMTEtR1FtNXFHUDRZUGg1T0ZhM1NjOHB5elliaVJNMllPd1lPbDJJbjBMVDZRd1lxbVlMcVpDNXRyYURtRUZwVjlPRjg3V0NJREJWMzJaRkhHanBMcUVQQl82QmF0VGFhZVdtTDlwSF9IdFlWSnZWUndwMFNtWUVtYjhna0Qwd3ZNNmlZSUhuOExfZE9fYV9ZN1AwN1Q3UkY1eVppUkJrbGUwbzZuUzVFanFYZ0NUelRTQURQamd2bkhORWprcW55R3NoZUU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilwJBVV95cUxPSF9qMzB6SFBHcDBGZGxUc2RnRUM0d3FEVkVRYmVmZ0NZbzRyYnhqQ0taUUxleWN1UUhVZkE4QmNHWkFiM3VWOTM3aFNWYkh0NFduMTEtR1FtNXFHUDRZUGg1T0ZhM1NjOHB5elliaVJNMllPd1lPbDJJbjBMVDZRd1lxbVlMcVpDNXRyYURtRUZwVjlPRjg3V0NJREJWMzJaRkhHanBMcUVQQl82QmF0VGFhZVdtTDlwSF9IdFlWSnZWUndwMFNtWUVtYjhna0Qwd3ZNNmlZSUhuOExfZE9fYV9ZN1AwN1Q3UkY1eVppUkJrbGUwbzZuUzVFanFYZ0NUelRTQURQamd2bkhORWprcW55R3NoZUU?oc=5)
