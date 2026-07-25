@@ -1,7 +1,103 @@
 {
-  "fetched_at": "2026-07-25T10:23:57+00:00",
+  "fetched_at": "2026-07-25T13:14:14+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Angolan Institutions Pursue Zimbabwe Education Partnerships as Bilateral Ties Gather Pace",
+      "link": "https://mutapatimes.com/articles/2026-07-25-angolan-institutions-pursue-zimbabwe-education-partnerships",
+      "image": "https://mutapatimes.com/img/cards/news/ebcb584c83f4.png",
+      "pubDate": "2026-07-25T13:01:45+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Baby Naomi’s Family Appeals For Help As Life-Saving Liver Transplant Beckons",
+      "link": "https://mutapatimes.com/articles/2026-07-25-baby-naomis-family-appeals-for-help-as-life-saving-liver-tra",
+      "image": "https://mutapatimes.com/img/cards/news/044dcb2f4783.png",
+      "pubDate": "2026-07-25T00:39:29+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Baby Naomi’s Family Appeals For Help As Life-Saving Liver Transplant Beckons",
+      "link": "https://mutapatimes.com/news/2026-07-25-baby-naomi-s-family-appeals-for-help-as-life-saving-liver-transplant-beckons-ab6dde",
+      "image": "https://mutapatimes.com/img/cards/news/47b149f61f5b.png",
+      "pubDate": "2026-07-25T00:39:29+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Harare, Beijing strengthen ties",
+      "link": "https://mutapatimes.com/articles/2026-07-24-harare-beijing-strengthen-ties",
+      "image": "https://mutapatimes.com/img/cards/news/9edc0c45c77d.png",
+      "pubDate": "2026-07-24T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Major boost for SMEs",
+      "link": "https://mutapatimes.com/articles/2026-07-24-major-boost-for-smes",
+      "image": "https://mutapatimes.com/img/cards/news/6822d027cb95.png",
+      "pubDate": "2026-07-24T23:57:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zim pushes seamless borders for trade",
+      "link": "https://mutapatimes.com/articles/2026-07-24-zim-pushes-seamless-borders-for-trade",
+      "image": "https://mutapatimes.com/img/cards/news/326033cbcc04.png",
+      "pubDate": "2026-07-24T23:57:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Police Say No To Night Driving As Fatal Highway Crashes Raise Alarm",
+      "link": "https://mutapatimes.com/news/2026-07-24-police-say-no-to-night-driving-as-fatal-highway-crashes-raise-alarm-cc52bd",
+      "image": "https://mutapatimes.com/img/cards/news/4efc871d1502.png",
+      "pubDate": "2026-07-24T23:56:14+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Family Launches GoFundMe To Bring Nothabo Khumalo And Daughters Home To Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-07-24-family-launches-gofundme-to-bring-nothabo-khumalo-and-daughters-home-to-zimbabwe-17ac9b",
+      "image": "https://mutapatimes.com/img/cards/news/ef9299042747.png",
+      "pubDate": "2026-07-24T23:39:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘I lost everything’ – Zimbabwean chef flees South Africa after home torched in anti-migrant violence",
+      "link": "https://mutapatimes.com/articles/2026-07-24-i-lost-everything-zimbabwean-chef-flees-south-africa-after-h",
+      "image": "https://mutapatimes.com/img/cards/news/c5f4c43a434e.png",
+      "pubDate": "2026-07-24T23:10:52+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘I lost everything’ – Zimbabwean chef flees South Africa after home torched in anti-migrant violence",
+      "link": "https://mutapatimes.com/news/2026-07-24-i-lost-everything-zimbabwean-chef-flees-south-africa-after-home-torched-in-anti-2e1832",
+      "image": "https://mutapatimes.com/img/cards/news/fb6f2ba5b980.png",
+      "pubDate": "2026-07-24T23:10:52+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "South Africa, Botswana and Zimbabwe launch joint bid to bring AFCON 2028 south",
+      "link": "https://mutapatimes.com/news/2026-07-24-south-africa-botswana-and-zimbabwe-launch-joint-bid-to-bring-afcon-2028-south-d11245",
+      "image": "https://mutapatimes.com/img/cards/news/3b687a77f04f.png",
+      "pubDate": "2026-07-24T23:00:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ladies golf body appoints new coach",
+      "link": "https://mutapatimes.com/articles/2026-07-24-ladies-golf-body-appoints-new-coach",
+      "image": "https://mutapatimes.com/img/cards/news/475f10c945d2.png",
+      "pubDate": "2026-07-24T22:30:04+00:00",
+      "category": "Tech"
+    },
     {
       "kind": "economy",
       "title": "Zim construction sector: $486M in 2025 Q4, +15.9% YoY.",
@@ -383,102 +479,6 @@
       "title": "Shacman 6x 4Tipper Operators",
       "link": "https://vacancymail.co.zw/jobs/shacman-6x-4tipper-operators-68450/",
       "image": "https://mutapatimes.com/img/cards/jobs/e9adefdddb41.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Auxin Mining Services Zimbabwe — Chinese Translators",
-      "link": "https://vacancymail.co.zw/jobs/chinese-translators-68449/",
-      "image": "https://mutapatimes.com/img/cards/jobs/336f0fda1b64.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Auxin Mining Services Zimbabwe — Business Procurement Assistant - Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/business-procurement-assistant-graduate-trainee-68448/",
-      "image": "https://mutapatimes.com/img/cards/jobs/00e189d635b7.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MERL Officer",
-      "link": "https://vacancymail.co.zw/jobs/merl-officer-68447/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e914b62bc2ac.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CARDENCE INVESTMENTS PVT LTD — DRIVERS X 3",
-      "link": "https://vacancymail.co.zw/jobs/drivers-x-3-68446/",
-      "image": "https://mutapatimes.com/img/cards/jobs/93db734ec105.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "The Avenues Clinic — Commissionaire x1",
-      "link": "https://vacancymail.co.zw/jobs/commissionaire-x1-68445/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ef399da533f4.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Mine Surveyor: Mutapa Gold Resources",
-      "link": "https://vacancymail.co.zw/jobs/mine-surveyor-mutapa-gold-resources-68444/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d4a29f881d8.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Agribusiness Management Assistant",
-      "link": "https://vacancymail.co.zw/jobs/agribusiness-management-assistant-68443/",
-      "image": "https://mutapatimes.com/img/cards/jobs/75f48808b7ec.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Estate Manager",
-      "link": "https://vacancymail.co.zw/jobs/assistant-estate-manager-68442/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dcb313a6771a.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ASSISTANT SECURITY, FRAUD CONTROL AND INVESTIGATIONS OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/assistant-security-fraud-control-and-investigations-officer-68441/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2b52c2f4b0f4.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "SCHEME BUSINESS COORDINATORS",
-      "link": "https://vacancymail.co.zw/jobs/scheme-business-coordinators-68440/",
-      "image": "https://mutapatimes.com/img/cards/jobs/165b4905d2ca.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "INFORMATION COMMUNICATION TECHNOLOGY ATTACHEE",
-      "link": "https://vacancymail.co.zw/jobs/information-communication-technology-attachee-68439/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ec34e0b8205a.png",
-      "pubDate": "2026-07-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "GENERAL MANAGER",
-      "link": "https://vacancymail.co.zw/jobs/general-manager-68438/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1ad04fb7f838.png",
       "pubDate": "2026-07-24T22:00:00+00:00",
       "category": "Jobs"
     }
