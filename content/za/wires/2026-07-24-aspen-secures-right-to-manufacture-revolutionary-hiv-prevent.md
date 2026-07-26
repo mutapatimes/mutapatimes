@@ -1,0 +1,16 @@
+---
+title: "Aspen secures right to manufacture revolutionary HIV prevention drug once approved"
+date: 2026-07-24T15:12:43.000Z
+author: News24
+category: Tech
+image: 
+summary: "Aspen secures right to manufacture revolutionary HIV prevention drug once approved"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcktrTDl1dndmTk9VelRXX1pRRVhHVUR1d1EwbnhObXR4c0NSVWx3d21KNW11QWRmeGhWMmZnMWNGT3JkSlVZa2VEZGFSR2lpdExoSjF1ZTFESWc0MVlXU1l4aWRKVDFCdTVaOV9UX2hoVVNoLVBwcjZjNUdlVVZNc0hNbW9ISmNpQ25tSGN1YVIzbDlNWnI4YWEtV09MVmhaZkVGcy1kamZDMW81ckt2NzBZeWlwLWJBS1kwQTMxckxGSWdCOVRmNmw5eFZoaU5EWTZGRg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcktrTDl1dndmTk9VelRXX1pRRVhHVUR1d1EwbnhObXR4c0NSVWx3d21KNW11QWRmeGhWMmZnMWNGT3JkSlVZa2VEZGFSR2lpdExoSjF1ZTFESWc0MVlXU1l4aWRKVDFCdTVaOV9UX2hoVVNoLVBwcjZjNUdlVVZNc0hNbW9ISmNpQ25tSGN1YVIzbDlNWnI4YWEtV09MVmhaZkVGcy1kamZDMW81ckt2NzBZeWlwLWJBS1kwQTMxckxGSWdCOVRmNmw5eFZoaU5EWTZGRg?oc=5)
