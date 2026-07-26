@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-25",
+  "fetched_at": "2026-07-26",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -381,18 +381,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1298,
+        "price": 1322,
         "airline": "FA",
-        "departure_at": "2026-08-02",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1298,
+        "price": 1322,
         "airline": "FA",
-        "departure_at": "2026-08-02",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -409,9 +409,9 @@
           "currency": ""
         },
         {
-          "price": 1298,
+          "price": 1322,
           "airline": "FA",
-          "departure_at": "2026-08-02",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -427,10 +427,10 @@
           "currency": ""
         },
         {
-          "price": 4636,
+          "price": 4242,
           "airline": "FN",
-          "departure_at": "2026-12-17",
-          "return_at": "2026-12-28",
+          "departure_at": "2026-12-16",
+          "return_at": "2027-01-07",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -438,19 +438,19 @@
       ],
       "by_airline": [
         {
-          "price": 1298,
+          "price": 1322,
           "airline": "FA",
-          "departure_at": "2026-08-02",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 4636,
+          "price": 4242,
           "airline": "FN",
-          "departure_at": "2026-12-17",
-          "return_at": "2026-12-28",
+          "departure_at": "2026-12-16",
+          "return_at": "2027-01-07",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -460,7 +460,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 7,
+          "n": 8,
           "error": null
         },
         {
@@ -482,7 +482,7 @@
           "error": null
         }
       ],
-      "observations": 11
+      "observations": 12
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -717,6 +717,15 @@
           "stops": 3,
           "duration": 1710,
           "currency": ""
+        },
+        {
+          "price": 569,
+          "airline": "D8",
+          "departure_at": "2026-11-06",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2615,
+          "currency": ""
         }
       ],
       "by_airline": [
@@ -739,6 +748,24 @@
           "currency": ""
         },
         {
+          "price": 569,
+          "airline": "D8",
+          "departure_at": "2026-11-06",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2615,
+          "currency": ""
+        },
+        {
+          "price": 573,
+          "airline": "EI",
+          "departure_at": "2026-11-06",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2390,
+          "currency": ""
+        },
+        {
           "price": 1195,
           "airline": "KL",
           "departure_at": "2026-07-30",
@@ -752,7 +779,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -776,7 +803,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -798,7 +825,7 @@
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 6
     }
   }
 }
