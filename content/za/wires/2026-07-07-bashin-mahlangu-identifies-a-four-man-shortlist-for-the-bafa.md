@@ -1,0 +1,16 @@
+---
+title: "Bashin Mahlangu identifies a four-man shortlist for the Bafana Bafana coaching job - 'Having those coaches around players will be continuation'"
+date: 2026-07-07T07:00:00.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Bashin Mahlangu identifies a four-man shortlist for the Bafana Bafana coaching job - 'Having those coaches around players will be continuation'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxQamRaSkdRaWVvYWRDTVdZUWNpSkZIM01RSzZBT0VwMnh6Y1laRkNwU2hvZFd2Q0xyOEhOaTZ1bFZxWE5ia0IzMUpXN2EwOU1HdHRGcnpvZWt6R28zZ2N0YzNxd0lFVGdFWXc4QnBBNEQ5Vm90bDI5aW9CeDdGdElNOHB3R0xCeENwdGdkeXM1TmNycThwaDJTRXlweXhPMFB4N0VWS0UwVE9zVXliYVhOY3NfbDVHSWVBX3E1MDJuWlIwbUVwOS1vbWZ5ZXdzVWx0Qkx1M0lPMHA2NUtEUW1nM0puRk1oN1Z2d2U1RkRhTWRxbzJicEdWN1R5M2tKS0RkYUJTdnp6OW1XRTFST1VlSEl2S1dHX044T3RuZg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMinAJBVV95cUxQamRaSkdRaWVvYWRDTVdZUWNpSkZIM01RSzZBT0VwMnh6Y1laRkNwU2hvZFd2Q0xyOEhOaTZ1bFZxWE5ia0IzMUpXN2EwOU1HdHRGcnpvZWt6R28zZ2N0YzNxd0lFVGdFWXc4QnBBNEQ5Vm90bDI5aW9CeDdGdElNOHB3R0xCeENwdGdkeXM1TmNycThwaDJTRXlweXhPMFB4N0VWS0UwVE9zVXliYVhOY3NfbDVHSWVBX3E1MDJuWlIwbUVwOS1vbWZ5ZXdzVWx0Qkx1M0lPMHA2NUtEUW1nM0puRk1oN1Z2d2U1RkRhTWRxbzJicEdWN1R5M2tKS0RkYUJTdnp6OW1XRTFST1VlSEl2S1dHX044T3RuZg?oc=5)
