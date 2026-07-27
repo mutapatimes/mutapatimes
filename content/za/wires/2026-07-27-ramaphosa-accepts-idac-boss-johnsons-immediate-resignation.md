@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa accepts IDAC boss Johnson’s immediate resignation"
+date: 2026-07-27T03:11:55.000Z
+author: News24
+category: Business
+image: 
+summary: "Ramaphosa accepts IDAC boss Johnson’s immediate resignation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQXlSTy00UnowZXFwb2hPWk05SFB3MGJZZlByODNnZGNPeHhtUDVzOHo2TlY1MGNkbjRReUhyOE5LNFRBNUY1NGl3dkNROU0wZUNCVldBVHNfamExZGlNaXR5SUNOS3hBY0xfNkxycm1oemQyYTRJdkFDYzFWNFVmNlN3Um5QVlNIN1d6N0ZyalNqS0FUREJscjEwcHpNX2prak9jeFU2X0paZlBFYzRESk14YmU1VHgyMnF6OEdnQ2I0UFV3SDZUbUY5NU9oS2FTY3B4NENNeTdLYW5jTm93?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQXlSTy00UnowZXFwb2hPWk05SFB3MGJZZlByODNnZGNPeHhtUDVzOHo2TlY1MGNkbjRReUhyOE5LNFRBNUY1NGl3dkNROU0wZUNCVldBVHNfamExZGlNaXR5SUNOS3hBY0xfNkxycm1oemQyYTRJdkFDYzFWNFVmNlN3Um5QVlNIN1d6N0ZyalNqS0FUREJscjEwcHpNX2prak9jeFU2X0paZlBFYzRESk14YmU1VHgyMnF6OEdnQ2I0UFV3SDZUbUY5NU9oS2FTY3B4NENNeTdLYW5jTm93?oc=5)
