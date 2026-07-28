@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-27",
+  "fetched_at": "2026-07-28",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -38,7 +38,7 @@
           "currency": ""
         },
         {
-          "price": 570,
+          "price": 571,
           "airline": "QR",
           "departure_at": "2026-09-09",
           "return_at": "2026-09-22",
@@ -158,7 +158,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 10,
+          "n": 9,
           "error": null
         },
         {
@@ -176,13 +176,13 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 13,
+          "n": 12,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 10,
+          "n": 9,
           "error": null
         },
         {
@@ -198,7 +198,7 @@
           "error": null
         }
       ],
-      "observations": 41
+      "observations": 38
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -381,7 +381,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1316,
+        "price": 1318,
         "airline": "FA",
         "departure_at": "2026-08-20",
         "return_at": "",
@@ -390,7 +390,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1316,
+        "price": 1318,
         "airline": "FA",
         "departure_at": "2026-08-20",
         "return_at": "",
@@ -409,7 +409,7 @@
           "currency": ""
         },
         {
-          "price": 1316,
+          "price": 1318,
           "airline": "FA",
           "departure_at": "2026-08-20",
           "return_at": "",
@@ -438,7 +438,7 @@
       ],
       "by_airline": [
         {
-          "price": 1316,
+          "price": 1318,
           "airline": "FA",
           "departure_at": "2026-08-20",
           "return_at": "",
