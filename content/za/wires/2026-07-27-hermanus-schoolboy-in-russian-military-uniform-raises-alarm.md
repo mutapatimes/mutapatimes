@@ -1,0 +1,16 @@
+---
+title: "Hermanus schoolboy in Russian military uniform raises alarm"
+date: 2026-07-27T20:32:02.000Z
+author: Daily Maverick
+category: Education
+image: 
+summary: "Hermanus schoolboy in Russian military uniform raises alarm"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWHVEVWZjVS1pd2o5VC05YlJmbG5MTVRvaks2bWFkWHg0a2JxVFRCUHFEaVJoU2ZLd3dZWFhXU1hNTXloOENaYVlPZUdwR0U0aGsyTzR5SVBJRThfTGdSc2pRYzhKUzdwWVlrQVR6cUZFa0NnVm1kTjk0WmZZMkx0a21sVlhpVnVKcy02bEdSYzNwMmlkai1CUml6RkdkMDVyRWRnRjUyZkV1YXFyVkFGd2Y5VlRwakhlbUF6WjNvSnBBZTRqanZtaE1vNk1HY1FrOWtSbmdkNGhmTGZyY1dnUE5uaEVJMTIxTktiOXpWc0lTZklwQzd3QmpvZmpDOXlQV0F1YmoxdHM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWHVEVWZjVS1pd2o5VC05YlJmbG5MTVRvaks2bWFkWHg0a2JxVFRCUHFEaVJoU2ZLd3dZWFhXU1hNTXloOENaYVlPZUdwR0U0aGsyTzR5SVBJRThfTGdSc2pRYzhKUzdwWVlrQVR6cUZFa0NnVm1kTjk0WmZZMkx0a21sVlhpVnVKcy02bEdSYzNwMmlkai1CUml6RkdkMDVyRWRnRjUyZkV1YXFyVkFGd2Y5VlRwakhlbUF6WjNvSnBBZTRqanZtaE1vNk1HY1FrOWtSbmdkNGhmTGZyY1dnUE5uaEVJMTIxTktiOXpWc0lTZklwQzd3QmpvZmpDOXlQV0F1YmoxdHM?oc=5)
