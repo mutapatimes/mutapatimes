@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 13:58:05 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 14:30:42 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -41,18 +41,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/49edf3982a54.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/49edf3982a54.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/49edf3982a54.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 25,000 — Affordable 2-Bed Flat at Flamingo Flats, Norton (Norton)</title>
-      <link>https://mutapatimes.com/property-landing/7f60ade9f576.html</link>
-      <description>USD 25,000 — Norton. 2 beds, 1 bath. Affordable 2-Bed Flat at Flamingo Flats, Norton. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 28 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/7f60ade9f576.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/7f60ade9f576.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 46,000 — Chitungwiza house for sale (Chitungwiza)</title>
@@ -223,9 +211,9 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/a2693015ed60.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 43,000 — Mufakose Ext 4-Bed House – Borehole, Walled Yard &amp; Security Gate (Mufakose, Harare High Density)</title>
+      <title>USD 42,000 — Mufakose Ext 4-Bed House – Borehole, Walled Yard &amp; Security Gate (Mufakose, Harare High Density)</title>
       <link>https://mutapatimes.com/property-landing/d0b8e154885f.html</link>
-      <description>USD 43,000 — Mufakose, Harare High Density. 4 beds, 2 baths. Mufakose Ext 4-Bed House – Borehole, Walled Yard &amp; Security Gate. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <description>USD 42,000 — Mufakose, Harare High Density. 4 beds, 2 baths. Mufakose Ext 4-Bed House – Borehole, Walled Yard &amp; Security Gate. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Tue, 28 Jul 2026 22:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mutapatimes.com/property-landing/d0b8e154885f.html</guid>
       <category>Property</category>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/ab2624d844ae.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 450,000 — Spacious Family Home (Glen Lorne, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/f96059b36de8.html</link>
+      <description>USD 450,000 — Glen Lorne, Harare North. 5 beds, 4 baths. Spacious Family Home. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 28 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/f96059b36de8.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/f96059b36de8.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f96059b36de8.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/f96059b36de8.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
