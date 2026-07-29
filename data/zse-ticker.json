@@ -1,25 +1,9 @@
 {
-  "fetched_at": "2026-07-28T16:49:56.902115+00:00",
+  "fetched_at": "2026-07-29T16:38:34.503687+00:00",
   "source": "https://www.african-markets.com/en/stock-markets/zse/listed-companies",
   "exchange": "ZSE",
   "currency": "ZWG",
   "tickers": [
-    {
-      "company": "CBZ Holdings",
-      "sector": "Financials",
-      "price": "40.0354",
-      "day_change": "+1.58%",
-      "ytd": "+248.13%",
-      "mcap_b": 20.92
-    },
-    {
-      "company": "British American Tobacco Zimbabwe",
-      "sector": "Consumer Goods",
-      "price": "189.899",
-      "day_change": "",
-      "ytd": "+95.01%",
-      "mcap_b": 3.91
-    },
     {
       "company": "RioZim",
       "sector": "Basic Materials",
@@ -37,36 +21,68 @@
       "mcap_b": 0.63
     },
     {
-      "company": "Delta Corporation",
-      "sector": "Consumer Goods",
-      "price": "31.9523",
-      "day_change": "0.15%",
-      "ytd": "+54.35%",
-      "mcap_b": 43.06
-    },
-    {
       "company": "FBC Holdings",
       "sector": "Financials",
-      "price": "12.2625",
-      "day_change": "+12.50%",
-      "ytd": "-1.51%",
-      "mcap_b": 8.23
+      "price": "13",
+      "day_change": "+6.01%",
+      "ytd": "+4.42%",
+      "mcap_b": 8.73
     },
     {
-      "company": "Hippo Valley Estates",
+      "company": "CBZ Holdings",
+      "sector": "Financials",
+      "price": "40.5",
+      "day_change": "+1.16%",
+      "ytd": "+252.17%",
+      "mcap_b": 21.16
+    },
+    {
+      "company": "British American Tobacco Zimbabwe",
       "sector": "Consumer Goods",
-      "price": "11.9799",
+      "price": "189.899",
       "day_change": "",
-      "ytd": "+46.65%",
-      "mcap_b": 2.31
+      "ytd": "+95.01%",
+      "mcap_b": 3.91
+    },
+    {
+      "company": "Zimre Holdings",
+      "sector": "Financials",
+      "price": "0.931746",
+      "day_change": "6.83%",
+      "ytd": "-6.82%",
+      "mcap_b": 1.69
     },
     {
       "company": "Meikles",
       "sector": "Consumer Services",
-      "price": "2.74",
-      "day_change": "+5.38%",
-      "ytd": "-12.63%",
+      "price": "2.749828",
+      "day_change": "+0.36%",
+      "ytd": "-12.32%",
       "mcap_b": 0.7
+    },
+    {
+      "company": "OK Zimbabwe",
+      "sector": "Consumer Services",
+      "price": "0.113694",
+      "day_change": "",
+      "ytd": "-12.54%",
+      "mcap_b": 0.36
+    },
+    {
+      "company": "ZB Financial Holdings",
+      "sector": "Financials",
+      "price": "6.9",
+      "day_change": "+15.00%",
+      "ytd": "+53.33%",
+      "mcap_b": 1.2
+    },
+    {
+      "company": "Delta Corporation",
+      "sector": "Consumer Goods",
+      "price": "31.9186",
+      "day_change": "0.11%",
+      "ytd": "+54.18%",
+      "mcap_b": 43.01
     },
     {
       "company": "Old Mutual",
@@ -77,36 +93,20 @@
       "mcap_b": 5.36
     },
     {
-      "company": "ZB Financial Holdings",
-      "sector": "Financials",
-      "price": "6",
-      "day_change": "",
-      "ytd": "+33.33%",
-      "mcap_b": 1.05
-    },
-    {
-      "company": "Zimre Holdings",
-      "sector": "Financials",
-      "price": "1",
-      "day_change": "4.76%",
-      "ytd": "+0.01%",
-      "mcap_b": 1.81
-    },
-    {
       "company": "First Mutual Holdings",
       "sector": "Financials",
-      "price": "3.2025",
-      "day_change": "",
-      "ytd": "+12.37%",
-      "mcap_b": 2.21
+      "price": "3.033167",
+      "day_change": "5.29%",
+      "ytd": "+6.43%",
+      "mcap_b": 2.09
     },
     {
-      "company": "OK Zimbabwe",
-      "sector": "Consumer Services",
-      "price": "0.113694",
+      "company": "Hippo Valley Estates",
+      "sector": "Consumer Goods",
+      "price": "11.9799",
       "day_change": "",
-      "ytd": "-12.54%",
-      "mcap_b": 0.36
+      "ytd": "+46.65%",
+      "mcap_b": 2.31
     },
     {
       "company": "Lafarge Cement Zimbabwe",
@@ -128,7 +128,7 @@
       "company": "Mashonaland Holdings",
       "sector": "Financials",
       "price": "1.8",
-      "day_change": "5.26%",
+      "day_change": "",
       "ytd": "+7.95%",
       "mcap_b": 3.03
     },
