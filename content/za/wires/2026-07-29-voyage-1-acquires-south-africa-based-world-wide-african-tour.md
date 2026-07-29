@@ -1,0 +1,16 @@
+---
+title: "Voyage 1 acquires South Africa-based World Wide African Tours to expand African footprint"
+date: 2026-07-29T13:42:05.000Z
+author: ET TravelWorld
+category: Tech
+image: 
+summary: "Voyage 1 acquires South Africa-based World Wide African Tours to expand African footprint"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxPOUdkaTdYalFtZHREZ0FlTHN2T1lxdkFERTczWlpFTjBUb1pNd2xuZ2hvamM1R19oSnpfMlYtYUVCZUlvVV82WHd6UkxLTWx0djdqZTJKSFllckh4QS1qY0tiblBEb2pKODRlSWsxYXFpSWstdXV0MHc3cHAydjdNcXVyX1pLOG5PbTJybGxUbllWeF96ZkRqd0JWbTYzWm5QZUpQS3ZVcU5GQms0eEtXamc5akh0SWtmZklaOWZoNXppdjhFd3QtaFYtLWI5UjlyTEdfWnBWaWlPLVVkRFlOVnhPU1RSTm9OMFhaeGNrRHIzb3ZWdGpNTXd4UExYbFdL?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by ET TravelWorld.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxPOUdkaTdYalFtZHREZ0FlTHN2T1lxdkFERTczWlpFTjBUb1pNd2xuZ2hvamM1R19oSnpfMlYtYUVCZUlvVV82WHd6UkxLTWx0djdqZTJKSFllckh4QS1qY0tiblBEb2pKODRlSWsxYXFpSWstdXV0MHc3cHAydjdNcXVyX1pLOG5PbTJybGxUbllWeF96ZkRqd0JWbTYzWm5QZUpQS3ZVcU5GQms0eEtXamc5akh0SWtmZklaOWZoNXppdjhFd3QtaFYtLWI5UjlyTEdfWnBWaWlPLVVkRFlOVnhPU1RSTm9OMFhaeGNrRHIzb3ZWdGpNTXd4UExYbFdL?oc=5)
