@@ -9,87 +9,87 @@
  "capped": true,
  "table": [
   {
-   "rank": 2,
-   "team": "CAPS United",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
-   "played": 17,
-   "win": 9,
-   "draw": 5,
-   "loss": 3,
-   "gf": 20,
-   "ga": 13,
-   "gd": 7,
-   "points": 32
+   "rank": 1,
+   "team": "Scottland",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/c6powa1740628657.png/tiny",
+   "played": 24,
+   "win": 15,
+   "draw": 7,
+   "loss": 2,
+   "gf": 39,
+   "ga": 8,
+   "gd": 31,
+   "points": 52
   },
   {
    "rank": 3,
-   "team": "Scottland",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/c6powa1740628657.png/tiny",
-   "played": 16,
-   "win": 8,
-   "draw": 7,
-   "loss": 1,
-   "gf": 20,
-   "ga": 6,
-   "gd": 14,
-   "points": 31
+   "team": "Dynamos",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
+   "played": 24,
+   "win": 11,
+   "draw": 11,
+   "loss": 2,
+   "gf": 36,
+   "ga": 18,
+   "gd": 18,
+   "points": 44
   },
   {
    "rank": 4,
    "team": "Herentals",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
-   "played": 17,
-   "win": 8,
-   "draw": 5,
-   "loss": 4,
-   "gf": 22,
-   "ga": 17,
+   "played": 25,
+   "win": 12,
+   "draw": 6,
+   "loss": 7,
+   "gf": 27,
+   "ga": 22,
    "gd": 5,
-   "points": 29
+   "points": 42
   },
   {
    "rank": 5,
    "team": "Ngezi Platinum",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/7n93nc1645561915.png/tiny",
-   "played": 17,
-   "win": 7,
-   "draw": 8,
-   "loss": 2,
-   "gf": 21,
-   "ga": 15,
-   "gd": 6,
-   "points": 29
+   "played": 25,
+   "win": 10,
+   "draw": 11,
+   "loss": 4,
+   "gf": 30,
+   "ga": 23,
+   "gd": 7,
+   "points": 41
   },
   {
    "rank": 6,
-   "team": "Dynamos",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
-   "played": 16,
-   "win": 7,
-   "draw": 8,
-   "loss": 2,
-   "gf": 23,
-   "ga": 16,
-   "gd": 7,
-   "points": 26
+   "team": "CAPS United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
+   "played": 25,
+   "win": 10,
+   "draw": 9,
+   "loss": 6,
+   "gf": 28,
+   "ga": 22,
+   "gd": 6,
+   "points": 39
   }
  ],
  "results": [
   {
-   "date": "2026-07-21",
-   "home": "Herentals",
-   "away": "Manica Diamonds",
-   "hs": 1,
-   "as": 0
+   "date": "2026-07-26",
+   "home": "Dynamos",
+   "away": "Scottland",
+   "hs": null,
+   "as": null
   }
  ],
  "fixtures": [
   {
-   "date": "2026-07-22",
+   "date": "2026-07-31",
    "time": "13:00",
-   "home": "Chicken Inn",
+   "home": "Herentals",
    "away": "TelOne"
   }
  ],
- "updated": "2026-07-22T06:43:51+00:00"
+ "updated": "2026-07-30T10:35:26+00:00"
 }

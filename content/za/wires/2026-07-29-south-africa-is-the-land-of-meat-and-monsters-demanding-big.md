@@ -1,0 +1,16 @@
+---
+title: "South Africa is the land of meat and monsters demanding big men in order to conquer"
+date: 2026-07-29T07:43:05.000Z
+author: ESPN
+category: Sport
+image: 
+summary: "South Africa is the land of meat and monsters demanding big men in order to conquer"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikAJBVV95cUxNdVlkUnQxekNad1BkZ0ppajlnMXZVWDVYODVTUGdRRDNkRGRPZl95NkJhYzBxS1FMcUhWZXJ3TGZDT1RnWGVvclU0b21QRm8yZldZVTU2d3AtZTRRWE16Vy1VWTFhMGY0RmVkSmVxYkt4eGxiNnJET0JoRk9OZDFYb0hGX3FfRkp3aHV4dUd0cDl0QVBRRjdpaC15TEY1MXIzNFRLWHllTHNFTTFRRzlJVTFhS0w4ODZra21IZkMxMFB4SFpES1FHc1JaWlhrTjYyMnQ2eG9ENndrdHhqNmQ1dDJWMkRpMVFEa045NXR4ZmpjMW5uc0lURDVGTjg2VHNHR2JnaHNLU3lvM0UyMllDUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by ESPN.*
+[Read original article](https://news.google.com/rss/articles/CBMikAJBVV95cUxNdVlkUnQxekNad1BkZ0ppajlnMXZVWDVYODVTUGdRRDNkRGRPZl95NkJhYzBxS1FMcUhWZXJ3TGZDT1RnWGVvclU0b21QRm8yZldZVTU2d3AtZTRRWE16Vy1VWTFhMGY0RmVkSmVxYkt4eGxiNnJET0JoRk9OZDFYb0hGX3FfRkp3aHV4dUd0cDl0QVBRRjdpaC15TEY1MXIzNFRLWHllTHNFTTFRRzlJVTFhS0w4ODZra21IZkMxMFB4SFpES1FHc1JaWlhrTjYyMnQ2eG9ENndrdHhqNmQ1dDJWMkRpMVFEa045NXR4ZmpjMW5uc0lURDVGTjg2VHNHR2JnaHNLU3lvM0UyMllDUQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Why is Uganda experiencing a food crisis?"
+date: 2026-07-29T11:26:15.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "Why is Uganda experiencing a food crisis?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYmNRdnJ3b0x5cmkxdVUydHBNYTh3RUkyWW5XN2NZTEwwUGd6MHBBUHVaYXJqN3d4YkJZWTkyQUt2dllsZW1mUWJ6TmhRVjcwb1JSbW5Xa2ttR2d4S2xRQzBmeExDakhYUDNUZGdOUUxtUG5jbWQ0cXVHQXFtdkNucEdIcXZQSnlG0gGOAUFVX3lxTE9KUjVzQTV6TFM3V012SHJkWkpsSGk5NUxhNUdaeE9KS3BvRzJ5RFJYQ2U2MkVGRXI1V0JiSkZRTTR0QlQ4S1lETFI2YlZuUHpBQlRLZmM1NmJhLTlMTVQ2RXRlVkxkSklwU1hQdEV5SlAweDdlT09PZFY1amZtQnFVbVNDOUdRc2xRN1FnR2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYmNRdnJ3b0x5cmkxdVUydHBNYTh3RUkyWW5XN2NZTEwwUGd6MHBBUHVaYXJqN3d4YkJZWTkyQUt2dllsZW1mUWJ6TmhRVjcwb1JSbW5Xa2ttR2d4S2xRQzBmeExDakhYUDNUZGdOUUxtUG5jbWQ0cXVHQXFtdkNucEdIcXZQSnlG0gGOAUFVX3lxTE9KUjVzQTV6TFM3V012SHJkWkpsSGk5NUxhNUdaeE9KS3BvRzJ5RFJYQ2U2MkVGRXI1V0JiSkZRTTR0QlQ4S1lETFI2YlZuUHpBQlRLZmM1NmJhLTlMTVQ2RXRlVkxkSklwU1hQdEV5SlAweDdlT09PZFY1amZtQnFVbVNDOUdRc2xRN1FnR2c?oc=5)

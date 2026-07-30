@@ -1,0 +1,16 @@
+---
+title: "Springboks squad: 10 stars return including Sacha and Siya Kolisi as Rassie Erasmus releases five before All Blacks and Argentina showdowns"
+date: 2026-07-22T12:43:37.000Z
+author: Planet Rugby
+category: Sport
+image: 
+summary: "Springboks squad: 10 stars return including Sacha and Siya Kolisi as Rassie Erasmus releases five before All Blacks and Argentina showdowns"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxNdm9GQllvZkEzTWlSUWhUbW9WZmtfTGd6cVB0RlhQS1VQMjFlOHQ3NUZNcWVyeE9PWUhNaXcwU3ZQeW4wMV9YMFNIVkxPa0JDRjFodkpON2d6WmhGUWFyQ0pyc3BEQlozNnBZMS04SXhOLVN1TUVpWHpacnI5OGVQd1JnQ0U0RzJSbDZuQmlONENJQm5GS2toVDM5NjBkcy1XVFdjcHhwbTQ3R196MWVTRUtfWmZ3LTdJM0JHRWRXNHMxc3lGVUttSGhDVV9HLXVSOUJyZl92RmNvN2FtVUpRSkVocWk5cG13YUo5aFE5Tk80aWJ3OXQtVGF1amd5b0gz?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Planet Rugby.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxNdm9GQllvZkEzTWlSUWhUbW9WZmtfTGd6cVB0RlhQS1VQMjFlOHQ3NUZNcWVyeE9PWUhNaXcwU3ZQeW4wMV9YMFNIVkxPa0JDRjFodkpON2d6WmhGUWFyQ0pyc3BEQlozNnBZMS04SXhOLVN1TUVpWHpacnI5OGVQd1JnQ0U0RzJSbDZuQmlONENJQm5GS2toVDM5NjBkcy1XVFdjcHhwbTQ3R196MWVTRUtfWmZ3LTdJM0JHRWRXNHMxc3lGVUttSGhDVV9HLXVSOUJyZl92RmNvN2FtVUpRSkVocWk5cG13YUo5aFE5Tk80aWJ3OXQtVGF1amd5b0gz?oc=5)

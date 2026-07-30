@@ -1,0 +1,16 @@
+---
+title: "SEE | South African film The Trek premieres in Cape Town after international recognition"
+date: 2026-07-24T15:07:22.000Z
+author: News24
+category: Culture
+image: 
+summary: "SEE | South African film The Trek premieres in Cape Town after international recognition"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPcHlXMl85M2h3NVpydjlKTVM4RXR6MTV2RzNZdHMxVEEzY3JTUldteW1uRXV6R3g1b09qcVJFeE4yc1hzZUt0M3VCek9xNHFXY01zSmVOdmRfMGgwbEhxYkR1YTQ0cGVrNVZkMkdKbU9ZRlBPbTlqS01NcUhfbTNxdzM3WWtQSkhvOU1ucmJCNGhIc2V1aVk1YnFhM2FzQ2taNVFuLWVSUE1qR2xyTExlWXVKVU4tYlFFMTdJdVNfSklSMGQ3TTdZQTVZQWlxUXZGYzI5UExKZWhKWTVPbnAtS2pJdjJXOC1zUnFqRA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPcHlXMl85M2h3NVpydjlKTVM4RXR6MTV2RzNZdHMxVEEzY3JTUldteW1uRXV6R3g1b09qcVJFeE4yc1hzZUt0M3VCek9xNHFXY01zSmVOdmRfMGgwbEhxYkR1YTQ0cGVrNVZkMkdKbU9ZRlBPbTlqS01NcUhfbTNxdzM3WWtQSkhvOU1ucmJCNGhIc2V1aVk1YnFhM2FzQ2taNVFuLWVSUE1qR2xyTExlWXVKVU4tYlFFMTdJdVNfSklSMGQ3TTdZQTVZQWlxUXZGYzI5UExKZWhKWTVPbnAtS2pJdjJXOC1zUnFqRA?oc=5)

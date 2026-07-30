@@ -1,0 +1,16 @@
+---
+title: "SA runways to Africa’s beauty queens: Andiswa Manxiwa joins Miss Universe Kenya as judge"
+date: 2026-07-24T17:36:23.000Z
+author: News24
+category: Business
+image: 
+summary: "SA runways to Africa’s beauty queens: Andiswa Manxiwa joins Miss Universe Kenya as judge"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQekJTVVNrczdPN01XZ2M2TXlmUVZKWUxzV2tjQ1Nmamh0bW5jVERHLU9EMTlNVHBQWUlYXzdfM2tKT0hnN1NkMmpnQkRrZjRGaHBuMGtxUWswUnZzWVhyek1XblBnOGxKX3hjVVJ5UFdsbXVGaHhjZW94ZlJyRGJGdEJleW0wa3ZDN2xfWkVIb1pVbEtJTlJjcGFNakZQZWZnUGV1eG1say0tLUtORFVxWVhuSVVEdEtvc1ZvNnRFYVJ1T0VaQlpEOUZpdER4NmtWZ25aSFA1aHc1akFlZVp0Z2xGUE9VeFExaDZnQ21RU3A2eFRTWlNV?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxQekJTVVNrczdPN01XZ2M2TXlmUVZKWUxzV2tjQ1Nmamh0bW5jVERHLU9EMTlNVHBQWUlYXzdfM2tKT0hnN1NkMmpnQkRrZjRGaHBuMGtxUWswUnZzWVhyek1XblBnOGxKX3hjVVJ5UFdsbXVGaHhjZW94ZlJyRGJGdEJleW0wa3ZDN2xfWkVIb1pVbEtJTlJjcGFNakZQZWZnUGV1eG1say0tLUtORFVxWVhuSVVEdEtvc1ZvNnRFYVJ1T0VaQlpEOUZpdER4NmtWZ25aSFA1aHc1akFlZVp0Z2xGUE9VeFExaDZnQ21RU3A2eFRTWlNV?oc=5)

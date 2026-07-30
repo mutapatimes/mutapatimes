@@ -1,0 +1,16 @@
+---
+title: "Gayton McKenzie slams 'humiliating' fan abuse surrounding Bafana Bafana - 'It is time people decide whether they are hooligans or football supporters'"
+date: 2026-07-26T12:47:29.000Z
+author: Goal.com
+category: Culture
+image: 
+summary: "Gayton McKenzie slams 'humiliating' fan abuse surrounding Bafana Bafana - 'It is time people decide whether they are hooligans or football supporters'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiowJBVV95cUxPb1A5Qms1RmVweEdPc1o1eVk1VnMwcDd5alBVdmRZbkZjclRxTVVnQW5NLXhnMDdJVXMxMTBOaFE5MzNIRXItSERmSGpVU25yR0J1ZU0tLUNRd2tZSGtqLV9RR0tRU0RLYzhsWk9ZVWprOHpOQ0VtSWJzenlab2VQU0hFSkdkOWFwVXpsWXRsY3hYY2djSzUzZXo0RVBIU1IyTk1FRmN6Skp0S2tTb3ZFTVZWN2N2cUkyYVZzVFpldjVnNllaR1FEQTROZVNHNXd4aWdtMVRCVmphcGF4eUxmT0IzSXBCRWRnTGdnZ1dsaW9OcXN0M3hmYzZhSUJmMGt4dHJnTGJFR2I2Um5nbkZRUWRCVHVSbEhQeFZBdE0xaFA1QzA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMiowJBVV95cUxPb1A5Qms1RmVweEdPc1o1eVk1VnMwcDd5alBVdmRZbkZjclRxTVVnQW5NLXhnMDdJVXMxMTBOaFE5MzNIRXItSERmSGpVU25yR0J1ZU0tLUNRd2tZSGtqLV9RR0tRU0RLYzhsWk9ZVWprOHpOQ0VtSWJzenlab2VQU0hFSkdkOWFwVXpsWXRsY3hYY2djSzUzZXo0RVBIU1IyTk1FRmN6Skp0S2tTb3ZFTVZWN2N2cUkyYVZzVFpldjVnNllaR1FEQTROZVNHNXd4aWdtMVRCVmphcGF4eUxmT0IzSXBCRWRnTGdnZ1dsaW9OcXN0M3hmYzZhSUJmMGt4dHJnTGJFR2I2Um5nbkZRUWRCVHVSbEhQeFZBdE0xaFA1QzA?oc=5)

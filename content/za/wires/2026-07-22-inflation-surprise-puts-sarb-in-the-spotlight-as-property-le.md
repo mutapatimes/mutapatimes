@@ -1,0 +1,16 @@
+---
+title: "Inflation surprise puts Sarb in the spotlight as property leaders warn against another rate increase"
+date: 2026-07-22T13:00:00.000Z
+author: IOL
+category: Policy
+image: 
+summary: "Inflation surprise puts Sarb in the spotlight as property leaders warn against another rate increase"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOE15VEVrMGxSa3owU0txUHRhQXl5bVRSZmxsNkM0eFZrMXRZWVZkbTc0c0hwQmVRTWlXSzh1aWhXQ0J4VWhobVJ4dnFsQmRiVEptanAybTlXZUpERFlxVUxGT3Q3bmFjTUFWdmZMVzR5NHpJOXN1b3padGN6Smc3ampiSmlkS3BmaHlYWGlLeEhXWXRRVy14YjhIN2JOdVJKWVp4cnVYRXFFM05jQXByOWFyeGQzV0t4NGxob1EyVWRfZm5tTEMzSC01NElCbHpucU5XZDNIVFZITUhRdzdyTUhNeFJhbEIxRkE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOE15VEVrMGxSa3owU0txUHRhQXl5bVRSZmxsNkM0eFZrMXRZWVZkbTc0c0hwQmVRTWlXSzh1aWhXQ0J4VWhobVJ4dnFsQmRiVEptanAybTlXZUpERFlxVUxGT3Q3bmFjTUFWdmZMVzR5NHpJOXN1b3padGN6Smc3ampiSmlkS3BmaHlYWGlLeEhXWXRRVy14YjhIN2JOdVJKWVp4cnVYRXFFM05jQXByOWFyeGQzV0t4NGxob1EyVWRfZm5tTEMzSC01NElCbHpucU5XZDNIVFZITUhRdzdyTUhNeFJhbEIxRkE?oc=5)

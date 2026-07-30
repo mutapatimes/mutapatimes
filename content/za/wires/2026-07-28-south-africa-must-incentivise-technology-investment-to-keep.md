@@ -1,0 +1,16 @@
+---
+title: "South Africa must incentivise technology investment to keep local manufacturing competitive"
+date: 2026-07-28T13:36:42.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South Africa must incentivise technology investment to keep local manufacturing competitive"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbnlUNkF4X2tsdEhCVzhnRDdPMUtFWXlKTlptVVJTd1dhd2R3S05jLWc5eDU1NEtvMlM4cGJ6TDNQZ3JKU2htRDJTYkFlTlpNc2FmZUtIRE9fdEowRkR6d1plRk1JRWdOWmxSX3hxMjNhck9DbmdUbnZ5aHlzQVBrRlg1S3ZNeWtXLXA2WXVDUlFneUdrb3VDT1JKS2lEY01qRzVpel9SZ1doc3ItcHJOdGp4b2pjUXRGTUR0dkhPRkxZU0wtY1kyY2FoS0lyOUtlcmQzY3ljRFZneHZ2dlBKOQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbnlUNkF4X2tsdEhCVzhnRDdPMUtFWXlKTlptVVJTd1dhd2R3S05jLWc5eDU1NEtvMlM4cGJ6TDNQZ3JKU2htRDJTYkFlTlpNc2FmZUtIRE9fdEowRkR6d1plRk1JRWdOWmxSX3hxMjNhck9DbmdUbnZ5aHlzQVBrRlg1S3ZNeWtXLXA2WXVDUlFneUdrb3VDT1JKS2lEY01qRzVpel9SZ1doc3ItcHJOdGp4b2pjUXRGTUR0dkhPRkxZU0wtY1kyY2FoS0lyOUtlcmQzY3ljRFZneHZ2dlBKOQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Zimbabwe’s descent into dictatorship and the peril of African leaders’ apathy"
+date: 2026-07-25T14:56:04.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Zimbabwe’s descent into dictatorship and the peril of African leaders’ apathy"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwJBVV95cUxPVnV1WWpQUDM2NVgwRlk4al92aEY3R2EzTW52YTd2R1k4TXc0V3BsYjZtaWRVOWZGUGQ3eGt3b3doSXJ2MVZhZ1dzeWdkanNrc0toUHlpekEyUUJYeUM5UmVKaUNwY2Z0SkZEbHFKYk1EdlFzN1hldS1GVmtvNnNGeWtVaVc0YUpWQ2ZRWGwyR0N1VURqb0Q1MDBXZDdjOFF0bXZzTU1UV004aWlURmRFbDBndEhqamJ2NzRTU0R0cnlBVFhKLTdSOTA5YXYwRTZfUi1nN1ZnMUpQVkJCd3d4cmhpOFpjUUYtS1pyNTVLQ2Mtb2syRmxaWFJTeGFGS253SldENFNremRmQ0tSYzdsa2dvNzdQdzQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilwJBVV95cUxPVnV1WWpQUDM2NVgwRlk4al92aEY3R2EzTW52YTd2R1k4TXc0V3BsYjZtaWRVOWZGUGQ3eGt3b3doSXJ2MVZhZ1dzeWdkanNrc0toUHlpekEyUUJYeUM5UmVKaUNwY2Z0SkZEbHFKYk1EdlFzN1hldS1GVmtvNnNGeWtVaVc0YUpWQ2ZRWGwyR0N1VURqb0Q1MDBXZDdjOFF0bXZzTU1UV004aWlURmRFbDBndEhqamJ2NzRTU0R0cnlBVFhKLTdSOTA5YXYwRTZfUi1nN1ZnMUpQVkJCd3d4cmhpOFpjUUYtS1pyNTVLQ2Mtb2syRmxaWFJTeGFGS253SldENFNremRmQ0tSYzdsa2dvNzdQdzQ?oc=5)
