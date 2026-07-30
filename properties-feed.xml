@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jul 2026 17:59:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 19:51:16 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -151,6 +151,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/acfa0608db53.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>USD 160,000 — Close to the Roundabout (Crowhill Views, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/47980ae1347c.html</link>
+      <description>USD 160,000 — Crowhill Views, Harare North. 4 beds, 2 baths. Close to the Roundabout. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 29 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/47980ae1347c.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/47980ae1347c.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/47980ae1347c.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/47980ae1347c.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>USD 1,300,000 — Paradise in Christon Bank. Reduced to 1.3mil. (Christon Bank)</title>
       <link>https://mutapatimes.com/property-landing/21b0ffc36472.html</link>
       <description>USD 1,300,000 — Christon Bank. 5 beds, 4 baths. Paradise in Christon Bank. Reduced to 1.3mil.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/2c453cb44247.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/2c453cb44247.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/2c453cb44247.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 250,000 — Spacious Family Home (Marlborough, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/050d4b49099f.html</link>
-      <description>USD 250,000 — Marlborough, Harare West. 4 beds, 2 baths. Spacious Family Home. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 29 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/050d4b49099f.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/050d4b49099f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/050d4b49099f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/050d4b49099f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
