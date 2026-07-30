@@ -35,6 +35,7 @@ def render(src_rel, out_rel):
     author = meta.get("author", "")
     category = meta.get("category", "")
     image = meta.get("image", "")
+    image_mobile = meta.get("image_mobile", "").strip()
     date_str = meta.get("date", "")
     read_minutes = meta.get("read_minutes", "")
     hero_credit = meta.get("hero_image_credit", "")
@@ -51,10 +52,17 @@ def render(src_rel, out_rel):
     p.append('\n  <main>\n    <article class="article-full article-longform">')
 
     if image:
+        if image_mobile:
+            hero_media = (f'<picture>'
+                          f'<source media="(max-width: 640px)" srcset="{B.esc(image_mobile)}">'
+                          f'<img src="{B.esc(image)}" alt="{B.esc(title)}" class="article-longform-hero-img">'
+                          f'</picture>')
+        else:
+            hero_media = f'<img src="{B.esc(image)}" alt="{B.esc(title)}" class="article-longform-hero-img">'
         p.append(f'''
       <header class="article-longform-header">
         <div class="article-longform-hero">
-          <img src="{B.esc(image)}" alt="{B.esc(title)}" class="article-longform-hero-img">
+          {hero_media}
           <div class="article-longform-hero-overlay"></div>
           <div class="article-longform-hero-inner">
             <h1 class="article-longform-title">{B.esc(title)}</h1>

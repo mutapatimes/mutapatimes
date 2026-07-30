@@ -4,6 +4,7 @@ date: 2026-07-30T12:00:00.000Z
 author: Tendai Kuwanda
 category: Health
 image: /img/uploads/dr-rumbi/lead.jpg
+image_mobile: /img/uploads/dr-rumbi/lead-mobile.jpg
 summary: "On the frontlines of healthcare, and the strategy table. A cool July afternoon at the Wellcome Collection with the Zimbabwean-British doctor and founder of the women's-health venture Glacie Health, on calling, on education as a form of medicine, and on carrying what the West knows back home to the women who need it."
 longform: true
 read_minutes: 12
@@ -141,7 +142,7 @@ I'm a vision-board person, I like to plan and imagine what my life could look li
 
 ## The final walk
 
-<figure class="article-fullbleed">
+<figure class="article-fullbleed article-fullbleed--landscape">
   <div class="article-fullbleed-frame">
     <img class="article-fullbleed-media" src="/img/uploads/dr-rumbi/embassy-walk.jpg" alt="Anatomical model at the Wellcome Collection" loading="lazy">
   </div>
