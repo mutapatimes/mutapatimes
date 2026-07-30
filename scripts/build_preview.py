@@ -49,10 +49,6 @@ def render(src_rel, out_rel):
                          "article", og_image, depth=depth, robots="noindex, nofollow", pfx=""))
     p.append(B.page_nav("articles", depth=depth, body_class="longform-page", pfx="", region="zw"))
     p.append('\n  <main>\n    <article class="article-full article-longform">')
-    p.append('      <div style="max-width:720px;margin:1.2rem auto 0;padding:.65rem 1rem;'
-             'background:#fff8e1;border:1px solid #e6c200;border-radius:6px;font-size:.82rem;'
-             'color:#7a5c00;text-align:center;">PRIVATE PREVIEW, not published. Shared with '
-             'Dr Rumbi for review and approval.</div>')
 
     if image:
         p.append(f'''

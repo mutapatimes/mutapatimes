@@ -3,18 +3,27 @@ title: "Meet Dr Rumbi"
 date: 2026-07-30T12:00:00.000Z
 author: Tendai Kuwanda
 category: Health
-image: /img/uploads/dr-rumbi/hero.jpg
+image: /img/uploads/dr-rumbi/lead.jpg
 summary: "On the frontlines of healthcare, and the strategy table. A cool July afternoon at the Wellcome Collection with the Zimbabwean-British doctor and founder of the women's-health venture Glacie Health, on calling, on education as a form of medicine, and on carrying what the West knows back home to the women who need it."
 longform: true
 read_minutes: 12
 hero_eyebrow: "IN CONVERSATION"
-hero_image_credit: "Zimbabwe House, London. Words and portraits by Tendai Kuwanda."
+hero_image_credit: ""
 draft: true
 ---
 
 London had finally begun to exhale. After a fortnight of relentless heat, two solid weeks of thirty degrees and climbing that left the whole city wilting, the mercury had eased back to a merciful twenty-five. On any ordinary summer's day that would register as plainly warm; after the heatwave it felt almost cool, cool enough to fully justify Dr Rumbi's long beige trench coat. A British classic, though on a woman who is, in every sense, a Swiss Army knife, or, given the day job, a Swiss surgeon's knife, it took on a distinctly Inspector Gadget quality; I would not have been the least bit surprised to learn the sleeves came with a built-in stethoscope. That word, I should admit, I only learned that afternoon, I had gestured at the cliché thing doctors wear round their necks in photoshoots, and she, ever the educator, supplied "stethoscope" on the spot. We had agreed to meet at the Wellcome Collection on Euston Road, a building I keep returning to even though I have no training in medicine. It sits, quite deliberately, at the intersection of art, science and technology, and there is always something there worth standing still in front of.
 
 It is a fitting place to meet her, because the institution was built on exactly that instinct. It grew out of the private obsession of Sir Henry Wellcome, a pharmacist, entrepreneur and collector who amassed more than a million objects tracing the art and science of healing across every culture and century he could reach. He opened his Historical Medical Museum to medical students in 1913; the neoclassical building on Euston Road was raised to his specifications in the 1930s; and since 2007 it has been a free public museum exploring, in its own words, the connections between medicine, life and art. Behind the galleries sits the larger, quieter engine, a research foundation that has spent the better part of a century funding the science that moves medicine forward. Roughly speaking, what the public sees is a fraction of what the place actually does.
+
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media" src="/img/uploads/dr-rumbi/wellcome.webp" alt="The Wellcome Collection on Euston Road, London" loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">The Wellcome Collection on Euston Road, where art, science and technology are made to sit side by side.</span>
+  </figcaption>
+</figure>
 
 So it seemed only right to meet a woman who seems to carry the same mission in a single body. Dr Rumbi Mutenga is a practising NHS GP, but that title undersells her. She is, above all, an educator and the founder and CEO of Glacie Health, a women's-health venture built to close the gap between good intentions and measurable impact in the care women actually receive. A former midwife who has also served as Chief Strategy Officer at the sexual-and-reproductive-health non-profit Shake Africa, she has spent her career moving between the frontline and the strategy table, convinced that people cannot reach for care they have never been taught to recognise. She had come to London, in part, to do precisely that kind of work: she had been invited by His Excellency Ambassador Katsande to deliver a "Healthcare in the Workplace" session at the Zimbabwean Embassy, at Zimbabwe House, all part of a broader mission to carry innovative, dignified healthcare across her motherland.
 
@@ -24,7 +33,7 @@ And then the conversation simply overflowed. It ran up through the floors of the
 
 <figure class="article-portrait-figure" style="margin:2.6rem auto;max-width:560px;">
   <img src="/img/uploads/dr-rumbi/portrait.jpg" alt="Dr Rumbi Mutenga outside Zimbabwe House, London" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
-  <figcaption style="font-size:.8rem;color:#777;margin-top:.6rem;text-align:center;">Outside Zimbabwe House, London. Portrait by Tendai Kuwanda.</figcaption>
+  <figcaption style="font-size:.8rem;color:#777;margin-top:.6rem;text-align:center;">Outside Zimbabwe House, London.</figcaption>
 </figure>
 
 <section class="article-dark-section">
@@ -60,7 +69,6 @@ I took a year out, and it was the best thing I ever did. Your friend went to loo
 
 <figure class="article-portrait-figure" style="margin:2.6rem auto;max-width:520px;">
   <img src="/img/uploads/dr-rumbi/facade.jpg" alt="Dr Rumbi Mutenga at Zimbabwe House" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
-  <figcaption style="font-size:.8rem;color:#777;margin-top:.6rem;text-align:center;">Portrait by Tendai Kuwanda.</figcaption>
 </figure>
 
 ## Education is the medicine
@@ -103,7 +111,6 @@ By being honest that the grass isn't greener, it's just different grass. One of 
 
 <figure class="article-portrait-figure" style="margin:2.6rem auto;max-width:520px;">
   <img src="/img/uploads/dr-rumbi/window.jpg" alt="Dr Rumbi Mutenga at the Zimbabwe Tourist Information Centre window" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
-  <figcaption style="font-size:.8rem;color:#777;margin-top:.6rem;text-align:center;">Portrait by Tendai Kuwanda.</figcaption>
 </figure>
 
 ## Five times more
@@ -134,6 +141,13 @@ I'm a vision-board person, I like to plan and imagine what my life could look li
 
 ## The final walk
 
-By this point we had drifted up to the anatomical models, and Dr Rumbi, who trained at a university that still teaches on donated cadavers, was quietly turning a familiar thought over. "It reminded me how fragile we are," she said of that first dissection. "We walk around full of life, but ultimately we're protein and some cells." I asked whether mortality frightened her. "It's a reminder of my humanity," she said, "and it makes nothing feel like too big a risk. A bit of embarrassment, a failure, who cares? We're all going to die anyway. Take the risk."
+<figure class="article-fullbleed">
+  <div class="article-fullbleed-frame">
+    <img class="article-fullbleed-media" src="/img/uploads/dr-rumbi/embassy-walk.jpg" alt="Anatomical model at the Wellcome Collection" loading="lazy">
+  </div>
+  <figcaption class="article-fullbleed-caption">
+    <span class="desc">The anatomical models at the Wellcome Collection.</span>
+  </figcaption>
+</figure>
 
-We tested each other on the organ models like a couple of overgrown students, she got eleven of twelve, misidentifying only the caecum, and was quietly, delightfully competitive about it. Then we stepped back out into the afternoon and walked towards the embassy. It struck me, again, that this is the whole point of someone like her: to go and gather what can be learned here, and to carry it, patiently, back to the soil that made her.
+By this point we had drifted up to the anatomical models, and Dr Rumbi, explained how despite having been trained at university using donated cadavers (another new word I learnt), mortality was still somewhat a challenging thought. "It reminded me how fragile we are," she said of that first dissection. "We walk around full of life, but ultimately we're protein and some cells." I asked whether mortality frightened her. "It's a reminder of my humanity," she said, "and it makes nothing feel like too big a risk. A bit of embarrassment, a failure, who cares? We're all going to die anyway. Take the risk." I tested her on the organ models like a couple of overgrown students, she got eleven of twelve, misidentifying only the cecum, and was quietly, competitive about it. Then we stepped back out into the afternoon and walked towards the embassy. It struck me, again, that this is the whole point of someone like her: to go and gather what can be learned here, and to carry it, patiently, back to the soil that made her.
