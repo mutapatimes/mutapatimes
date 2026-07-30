@@ -68,7 +68,7 @@ I'm really happy, genuinely. But it wasn't a straight line. I didn't get into me
 I took a year out, and it was the best thing I ever did. Your friend went to look for greener pastures; I stepped off to see what life looked like outside all of this. I grew back into myself, and I came back thinking, actually, it's not that bad. As a GP I get to do the part I love: people. I love talking to people, I love listening to their stories. Someone comes to me with a problem, and I might never solve it, but I do my best, and most days I get to meet lovely people and have a lovely day. It's almost the perfect job for me.
 
 <figure class="article-portrait-figure" style="margin:2.6rem auto;max-width:520px;">
-  <img src="/img/uploads/dr-rumbi/facade.jpg" alt="Dr Rumbi Mutenga at Zimbabwe House" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
+  <img src="/img/uploads/dr-rumbi/facade.jpg" alt="Dr Rumbi Mutenga at the Zimbabwe sculpture gallery, London" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
 </figure>
 
 ## Education is the medicine
@@ -85,7 +85,7 @@ We're already doing it. One of our clients is a consumer brand, BeYou, which mak
   <div class="article-dark-section-inner">
     <span class="article-dark-section-eyebrow">IN FOCUS · THE SALLY MUGABE FERTILITY CLINIC</span>
     <img src="/img/uploads/dr-rumbi/sally-mugabe.jpg" alt="Sally Mugabe Central Hospital, Harare" style="width:100%;border-radius:4px;margin:0 0 1.1rem;display:block;">
-    <p>The clinic Dr Mutenga describes is real, and its story reads like a proof of concept for everything else in this conversation. Reactivated at Sally Mugabe Central Hospital in Harare, and initiated by nurse-midwife Tinotenda Manyere, now an IVF specialist nurse, the public fertility clinic offers low-cost, science-based evaluation: ovulation tracking and induction, transvaginal scans and other locally available diagnostics, for women who might otherwise spend years and thousands of dollars on prophets and traditional healers.</p>
+    <p>The clinic reads like a proof of concept for everything else in this conversation. Reactivated at Sally Mugabe Central Hospital in Harare, and initiated by nurse-midwife Tinotenda Manyere, who continues to practise, now as an IVF specialist nurse, the public fertility clinic offers low-cost, science-based evaluation: ovulation tracking and induction, transvaginal scans and other locally available diagnostics, for women who might otherwise spend years and thousands of dollars on prophets and traditional healers.</p>
     <p>A July 2026 report in The Herald followed women like Fadzai Kamuti, who conceived after a thirteen-year ordeal once doctors finally diagnosed and treated her polycystic ovary syndrome. Clinicians there press the same point Glacie builds into its campaigns, that infertility is not a woman's problem alone; in roughly half of couples the man is a factor. The hospital's stated ambition is Zimbabwe's first fully equipped fertility clinic, supported through diaspora skills-transfer and exchange programmes. Glacie Health is backing the reactivation and has called on partners with fertility resources to help.</p>
   </div>
 </section>
@@ -110,7 +110,7 @@ By being honest that the grass isn't greener, it's just different grass. One of 
 </aside>
 
 <figure class="article-portrait-figure" style="margin:2.6rem auto;max-width:520px;">
-  <img src="/img/uploads/dr-rumbi/window.jpg" alt="Dr Rumbi Mutenga at the Zimbabwe Tourist Information Centre window" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
+  <img src="/img/uploads/dr-rumbi/window.jpg" alt="A prepared syringe" style="width:100%;height:auto;display:block;border-radius:2px;" loading="lazy">
 </figure>
 
 ## Five times more
@@ -137,7 +137,7 @@ I have no desire to practise private medicine, particularly not in the UK. The d
 
 **Picture yourself in ten years. Are you still a GP?**
 
-I'm a vision-board person, I like to plan and imagine what my life could look like. In ten years I want a life with purpose, with flexibility, and with financial reward attached to it. As an NHS doctor there are real limits on that flexibility. When my uncle passed away, I let work know I was flying to Zimbabwe the following evening, and they asked whether I could still come in and do the morning clinic first. I did, I saw the patients and drove straight from there to Heathrow. I don't want that. That was a real turning point for me. So: still working hard, because I'd feel unfulfilled if I weren't, but flexible with my time, and financially free enough to choose.
+I'm a vision-board person, I like to plan and imagine what my life could look like. In ten years I want a life with purpose, with flexibility, and with financial reward attached to it. As an NHS doctor there are real limits on that flexibility. When my uncle passed away, I let work know I was flying to Zimbabwe the following evening and they asked me if I could do the morning clinic. That was a real turning point for me. So: still working hard, because I'd feel unfulfilled if I weren't, but flexible with my time, and financially free enough to choose.
 
 ## The final walk
 
