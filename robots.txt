@@ -13,6 +13,8 @@ Disallow: /article$
 Disallow: /article?
 Disallow: /zb-demo/
 Disallow: /zb-demo
+# Private preview/approval pages (unguessable URLs, noindex) — keep out of search.
+Disallow: /preview/
 
 Sitemap: https://mutapatimes.com/sitemap.xml
 Sitemap: https://mutapatimes.com/news-sitemap.xml
