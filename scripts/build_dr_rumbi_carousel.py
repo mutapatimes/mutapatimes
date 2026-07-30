@@ -39,11 +39,12 @@ GOLD = (224, 194, 120)
 # 'cta' = close. theme 'green' flips to the forest set-piece palette.
 SLIDES = [
     {"kind": "cover", "eyebrow": "IN CONVERSATION",
-     "text": "Meet Dr Rumbi"},
+     "text": "Meet Dr Rumbi",
+     "subtitle": "NHS GP, educator, and founder of Glacie Health."},
     {"kind": "body", "eyebrow": "WHO SHE IS",
      "text": "Dr Rumbi Mutenga is a practising NHS GP, an educator, and the founder and CEO of Glacie Health, a women's-health venture built to close the gap between good intentions and the care women actually receive."},
     {"kind": "body", "eyebrow": "THE AFTERNOON",
-     "text": "A cool July afternoon at the Wellcome Collection, where art, science and technology sit side by side. She flew in from Toronto to teach at the Zimbabwean Embassy, part of a mission to carry dignified healthcare home."},
+     "text": "A cool July afternoon at the Wellcome Collection, where art, science and technology sit side by side. She had come to teach at the Zimbabwean Embassy, part of a mission to carry dignified healthcare home."},
     {"kind": "body", "theme": "green", "eyebrow": "ABOUT GLACIE HEALTH",
      "text": "A women's-health venture with a single organising idea: closing the gap between intention and measurable impact, so care is designed around women's real needs rather than assumed for them."},
     {"kind": "body", "theme": "green", "eyebrow": "GLACIE HEALTH",
@@ -54,11 +55,11 @@ SLIDES = [
      "text": "The Sally Mugabe Fertility Clinic. Reactivated in Harare, it offers low-cost, science-based care for women who might otherwise spend years and thousands of dollars searching elsewhere."},
     {"kind": "body", "theme": "green", "eyebrow": "SALLY MUGABE FERTILITY CLINIC",
      "text": "The point the clinic makes, and Glacie builds into its campaigns: infertility is not a woman's problem alone. In roughly half of couples the man is a factor. Glacie Health is backing the reactivation."},
-    {"kind": "body", "eyebrow": "\"IT'S YOUR COMPETITIVE ADVANTAGE\"",
-     "text": "\"When you've trained here and you go back, there is an advantage waiting for you. It is, quite literally, your competitive advantage. Nobody loses if it brings investment and expertise home.\""},
-    {"kind": "cta", "eyebrow": "THE FULL PROFILE",
-     "text": "On calling, on education as medicine, and on carrying what the West knows back home.",
-     "cta": "Read the interview at mutapatimes.com"},
+    {"kind": "body", "eyebrow": "IN HER WORDS",
+     "text": "\"It's a reminder of my humanity, and it makes nothing feel like too big a risk. A bit of embarrassment, a failure, who cares? We're all going to die anyway. Take the risk.\""},
+    {"kind": "cta", "eyebrow": "MEET DR RUMBI",
+     "text": "Read the full article.",
+     "cta": "Link in bio · mutapatimes.com"},
 ]
 
 
@@ -85,6 +86,33 @@ def _fit(draw, text, font_role, max_size, min_size, max_width, max_lines):
     return font, wrap_text(text, font, max_width, draw), min_size
 
 
+def _fit_one_line(draw, text, font_role, max_size, min_size, max_width):
+    """Largest size at which `text` fits on a single line within max_width."""
+    for size in range(max_size, min_size - 1, -2):
+        font = load_font(font_role, size)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        if bbox[2] - bbox[0] <= max_width:
+            return font, size
+    return load_font(font_role, min_size), min_size
+
+
+def _render_cover(d, slide, pal, card_h, pad, maxw):
+    font, size = _fit_one_line(d, slide["text"], "serif_bold", 132, 64, maxw)
+    lh = int(size * 1.14)
+    sub = slide.get("subtitle", "")
+    subfont = load_font("sans", 40)
+    sublines = wrap_text(sub, subfont, maxw, d) if sub else []
+    sub_lh = int(40 * 1.4)
+    gap = 34 if sub else 0
+    block_h = lh + gap + len(sublines) * sub_lh
+    y = _centre_block_y(card_h, block_h)
+    d.text((pad, y), slide["text"], font=font, fill=pal["fg"])
+    y += lh + gap
+    for sl in sublines:
+        d.text((pad, y), sl, font=subfont, fill=pal["muted"])
+        y += sub_lh
+
+
 def render_slide(slide, card_h, path):
     pal = _palette(slide)
     img = Image.new("RGB", (W, card_h), pal["bg"])
@@ -100,18 +128,17 @@ def render_slide(slide, card_h, path):
     # Eyebrow
     d.text((pad, 200), slide["eyebrow"], font=load_font("sans_bold", 26), fill=pal["eyebrow"])
 
-    # Main copy — bigger for the cover slide
+    # Main copy — cover gets a one-line title + subtitle; others wrap.
     if slide["kind"] == "cover":
-        font, lines, size = _fit(d, slide["text"], "serif_bold", 128, 72, maxw, 4)
-        lh = int(size * 1.14)
+        _render_cover(d, slide, pal, card_h, pad, maxw)
     else:
         font, lines, size = _fit(d, slide["text"], "serif_bold", 70, 38, maxw, 9)
         lh = int(size * 1.3)
-    block_h = len(lines) * lh
-    y = _centre_block_y(card_h, block_h)
-    for ln in lines:
-        d.text((pad, y), ln, font=font, fill=pal["fg"])
-        y += lh
+        block_h = len(lines) * lh
+        y = _centre_block_y(card_h, block_h)
+        for ln in lines:
+            d.text((pad, y), ln, font=font, fill=pal["fg"])
+            y += lh
 
     # Footer
     footer_y = card_h - 140
