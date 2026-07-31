@@ -1,0 +1,16 @@
+---
+title: "Oprah Winfrey school in Gauteng to close after 20 years, with plans for a scholarship programme"
+date: 2026-07-30T09:42:55.000Z
+author: News24
+category: Education
+image: 
+summary: "Oprah Winfrey school in Gauteng to close after 20 years, with plans for a scholarship programme"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxPdVdobl9lbWt4M1E2R1NkWWJJeUZoTTFoX3NoZ3V0bEp2SkQ3U3hpYUhfbS1mY2NoMDlJSElWbE5GcGJyQkpXNzNHaHB5VVNsZEZwWmF3Q2g3YVdYZi1BU0haYXJPcjlMT1dzNWVhNExBY3E0TzdHSTllRzVxN0hpNEoyUHdSbEpJV0hCeUZuVk1JbVdMUHVyUU91dXRoNVR0bmo2ZWxRQnpsYzJJRzMyVnRFTWNudGhrTVdzTjYwSnlWOTlKcVhtQ1ZlemY3VHhwTi1DalhJNTdxLUtodXB3eHlNcEdiSVRNZ0U4Ti1MZE1zemhLRVlrWjk5ZzVPaW9L?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxPdVdobl9lbWt4M1E2R1NkWWJJeUZoTTFoX3NoZ3V0bEp2SkQ3U3hpYUhfbS1mY2NoMDlJSElWbE5GcGJyQkpXNzNHaHB5VVNsZEZwWmF3Q2g3YVdYZi1BU0haYXJPcjlMT1dzNWVhNExBY3E0TzdHSTllRzVxN0hpNEoyUHdSbEpJV0hCeUZuVk1JbVdMUHVyUU91dXRoNVR0bmo2ZWxRQnpsYzJJRzMyVnRFTWNudGhrTVdzTjYwSnlWOTlKcVhtQ1ZlemY3VHhwTi1DalhJNTdxLUtodXB3eHlNcEdiSVRNZ0U4Ti1MZE1zemhLRVlrWjk5ZzVPaW9L?oc=5)
