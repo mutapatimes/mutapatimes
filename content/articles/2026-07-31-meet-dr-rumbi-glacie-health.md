@@ -16,7 +16,7 @@ spotlight_title: "Meet Dr Rumbi: carrying dignified care home"
 spotlight_image: /img/uploads/dr-rumbi/lead.jpg
 longform: true
 paywall: true
-paywall_at: 20
+paywall_at: 35
 feature_story: true
 read_minutes: 12
 hero_eyebrow: "IN CONVERSATION"
