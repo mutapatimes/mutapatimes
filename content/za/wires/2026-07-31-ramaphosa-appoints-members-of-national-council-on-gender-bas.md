@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa appoints members of National Council on Gender-Based Violence and Femicide"
+date: 2026-07-31T07:33:00.000Z
+author: TimesLIVE
+category: Tech
+image: 
+summary: "Ramaphosa appoints members of National Council on Gender-Based Violence and Femicide"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV2FtSVdjaUdKSmhQcTNNQ2dycnU4d2lCY01KR2dkY2Z0Y1JNQTBKX09ENHV4LWdmTml4d3NDRndVYklRYzdDdUhlV2lXcmNCVXFrXzRfM3Z1TktrenM5bVZLaVJ3dWpOeUZjblpIVTBuV0hKYktMMkYxVU5jczZnX1NNMWJWbGRPT3p1QmJtTEhuMFY5czFGTkx4Z3lHcjFVMDBVemkzZkVFQTBpQ2lqblBWZlJoc0hNM1dVZ0pReXkzUnhRVkZNYUZkNjN5SThVWm5hQnVsQ0VESndrd3lR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV2FtSVdjaUdKSmhQcTNNQ2dycnU4d2lCY01KR2dkY2Z0Y1JNQTBKX09ENHV4LWdmTml4d3NDRndVYklRYzdDdUhlV2lXcmNCVXFrXzRfM3Z1TktrenM5bVZLaVJ3dWpOeUZjblpIVTBuV0hKYktMMkYxVU5jczZnX1NNMWJWbGRPT3p1QmJtTEhuMFY5czFGTkx4Z3lHcjFVMDBVemkzZkVFQTBpQ2lqblBWZlJoc0hNM1dVZ0pReXkzUnhRVkZNYUZkNjN5SThVWm5hQnVsQ0VESndrd3lR?oc=5)
