@@ -40,9 +40,9 @@ GOLD = (224, 194, 120)
 SLIDES = [
     {"kind": "cover", "eyebrow": "IN CONVERSATION",
      "text": "Meet Dr Rumbi",
-     "subtitle": "NHS GP, educator, and founder of Glacie Health."},
+     "subtitle": "NHS doctor, educator, and founder of Glacie Health."},
     {"kind": "body", "eyebrow": "WHO SHE IS",
-     "text": "Dr Rumbi Mutenga is a practising NHS GP, an educator, and the founder and CEO of Glacie Health, a women's-health venture built to close the gap between good intentions and the care women actually receive."},
+     "text": "Dr Rumbi Mutenga is a practising NHS doctor working in general practice, an educator, and the founder and CEO of Glacie Health, a women's-health venture built to close the gap between good intentions and the care women actually receive."},
     {"kind": "body", "eyebrow": "THE AFTERNOON",
      "text": "A cool July afternoon at the Wellcome Collection, where art, science and technology sit side by side. She had come to teach at the Zimbabwean Embassy, part of a mission to carry dignified healthcare home."},
     {"kind": "body", "theme": "green", "eyebrow": "ABOUT GLACIE HEALTH",
