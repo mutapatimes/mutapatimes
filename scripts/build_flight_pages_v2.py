@@ -467,23 +467,26 @@ def page_head(title, canonical, desc, og_desc, schemas_inline, depth=2):
 
 CORRIDORS = {
     "london-to-harare": {
-        "title":  f"Cheap flights London to Harare — {MONTH_YEAR} fares from £700",
+        "title":  f"Direct flights London to Harare: {MONTH_YEAR} fares from £700",
         "h1":     "Cheap flights London to Harare",
-        "stand":  ("There are no direct flights between London and Harare; every routing is one-stop via the Gulf or Africa. "
-                   "Live prices in GBP below, and the practical guide to who flies the route, when fares move, and what to budget."),
+        "stand":  ("Air Zimbabwe flies between London and Harare nonstop again, a wide-body Airbus A330 service operated by Plus Ultra "
+                   "that reopened the corridor on 1 July 2026 after more than a decade. One-stop routings via the Gulf and Africa still "
+                   "compete hard on price. Live prices in GBP below, plus the practical guide to who flies the route, when fares move, and what to budget."),
         "flag_from": "🇬🇧", "flag_to": "🇿🇼",
         "origin_short": "London", "origin_full": "London (LON)",
         "dest_short": "Harare",  "dest_full": "Harare (HRE)",
         "currency_lbl": "GBP", "currency_sym": "£",
         "widget_key": "london-harare",
-        "distance": "8,200 km", "flight_time": "13–15 hrs", "stops": "1 (no direct)",
+        "distance": "8,200 km", "flight_time": "11 hrs nonstop / 13–15 via hub", "stops": "Nonstop or 1-stop",
         "low_fare": 700, "high_fare": 2200,
         "fare_range_label": "£700–£2,200",
-        "lead": (f"London to Harare is the diaspora's busiest corridor, but it has not had a direct flight for years. Every itinerary involves "
-                 f"one stop — Dubai, Doha, Addis Ababa, Nairobi or Johannesburg — and your choice of hub matters more than your choice of airline. "
-                 f"In {MONTH_YEAR}, Qatar via Doha and Ethiopian via Addis Ababa are the cheapest reliable options at the £700–£900 mark for typical "
-                 f"low-season weeks. Emirates via Dubai costs more but offers the most consistent schedule."),
+        "lead": (f"London to Harare is the diaspora's busiest corridor, and for the first time in over a decade it has a direct flight again. "
+                 f"Since 1 July 2026, Air Zimbabwe has flown the route nonstop on a wide-body Airbus A330, operated by the Spanish carrier Plus Ultra "
+                 f"under a 13-month wet-lease, several times a week. The one-stop alternatives via Dubai, Doha, Addis Ababa, Nairobi or Johannesburg "
+                 f"still matter, and often win on price. In {MONTH_YEAR}, Qatar via Doha and Ethiopian via Addis Ababa remain the cheapest reliable "
+                 f"options around the £700 to £900 mark for typical low-season weeks. Choose the nonstop for time, or a hub connection for the lowest fare."),
         "airlines": [
+            ("Air Zimbabwe (operated by Plus Ultra)", "Nonstop",   "See live fares", "The only direct London to Harare service. Wide-body A330, several times a week, since 1 July 2026."),
             ("Qatar Airways",      "Doha (DOH)",          "£720–£950",  "Often the cheapest reliable option from the UK. Good lounge access in Doha."),
             ("Ethiopian Airlines", "Addis Ababa (ADD)",   "£700–£900",  "Cheapest of the five. Busier hub at ADD; allow 3+ hours."),
             ("Emirates",           "Dubai (DXB)",         "£850–£1,150","Most reliable schedule. Premium product. Skywards lounge access from Silver tier."),
@@ -511,9 +514,9 @@ CORRIDORS = {
             ("How much is a flight from London to Harare today?",
              "Typical return fares are £700–£1,200 in low season (February to May, September to early November) and £1,400–£2,200 in high season (mid-December to mid-January, July, Easter week). Live prices for your specific dates are in the search widget above."),
             ("Are there any direct flights from London to Harare?",
-             "No. There are currently no non-stop services between London and Harare. Every itinerary involves one stop at the carrier's hub (Dubai, Doha, Addis Ababa, Nairobi or Johannesburg)."),
+             "Yes. Since 1 July 2026, Air Zimbabwe operates a nonstop London to Harare service again: a wide-body Airbus A330 flown by Plus Ultra under a 13-month wet-lease, several times a week. It is the first direct service on the corridor in over a decade. One-stop alternatives via Dubai, Doha, Addis Ababa, Nairobi and Johannesburg still run and are often cheaper."),
             ("How long is the flight from London to Harare?",
-             "13 to 15 hours including the stop, depending on routing. Emirates via Dubai is about 13.5 hours door to door; Ethiopian via Addis is around 14 hours; Kenya Airways via Nairobi is 14–15 hours. The pure flight time across both legs is about 10–11 hours; the rest is the layover."),
+             "About 11 hours nonstop on the Air Zimbabwe A330. Via a hub it is 13 to 15 hours including the stop: Emirates via Dubai is about 13.5 hours door to door, Ethiopian via Addis is around 14 hours, and Kenya Airways via Nairobi is 14 to 15 hours."),
             ("When should I book?",
              "Eight to twelve weeks ahead for the cheaper end of the range. For Christmas travel, book by August at the latest. Last-minute fares in December and July regularly exceed £2,000 return."),
             ("What is the cheapest month to fly from London to Harare?",
@@ -527,7 +530,7 @@ CORRIDORS = {
             ("Do I need a visa to fly from London to Zimbabwe?",
              "British passport holders need a visa, but it's issued on arrival at Harare International for US$55 cash (single entry) or US$50 for the KAZA UniVisa (Zimbabwe + Zambia). No advance application is required."),
             ("Is it safe to fly to Harare?",
-             "Yes. All five carriers (Emirates, Qatar, Ethiopian, Kenya Airways, SAA/BA) maintain standard international safety records on the route. Harare's airport (HRE) was extensively renovated in 2017–2022 and meets ICAO standards."),
+             "Yes. The nonstop service is operated by Plus Ultra, a Spanish long-haul carrier, on a modern Airbus A330 under the Air Zimbabwe code. The one-stop carriers (Emirates, Qatar, Ethiopian, Kenya Airways, SAA/BA) all maintain standard international safety records on the route. Harare's airport (HRE) was extensively renovated in 2017–2022 and meets ICAO standards."),
         ],
         "related": [
             ("Flights from Harare",         "/flights/from-harare/",                       "Returning to London"),
@@ -966,10 +969,13 @@ CORRIDORS = {
         "distance": "varies", "flight_time": "varies by route", "stops": "1+",
         "low_fare": 700, "high_fare": 2500,
         "fare_range_label": "$700–$2,500",
-        "lead": (f"Harare is well-connected for a southern African hub: five major carriers operate daily long-haul departures, each routing through "
-                 f"their hub (Dubai, Doha, Addis Ababa, Nairobi or Johannesburg) before fanning out to the diaspora's home cities. In {MONTH_YEAR}, "
-                 f"outbound fares are tracking towards their low-season floor — book within the next 6–10 weeks for the cheaper end of the range."),
+        "lead": (f"Harare is well-connected for a southern African hub. Since 1 July 2026, Air Zimbabwe flies nonstop to London again on a "
+                 f"wide-body Airbus A330, operated by Plus Ultra under a 13-month wet-lease, several times a week. Alongside it, five major carriers "
+                 f"operate daily long-haul departures, each routing through their hub (Dubai, Doha, Addis Ababa, Nairobi or Johannesburg) before "
+                 f"fanning out to the diaspora's home cities. In {MONTH_YEAR}, outbound fares are tracking towards their low-season floor, so book "
+                 f"within the next 6–10 weeks for the cheaper end of the range."),
         "airlines": [
+            ("Air Zimbabwe (Plus Ultra)", "Nonstop to London",  "to UK",                     "The only direct Harare to London service. Wide-body A330, several times a week, since 1 July 2026."),
             ("Emirates",           "via Dubai (DXB)",          "to UK, EU, USA, Australia", "Reliable schedule, premium product, generous baggage."),
             ("Qatar Airways",      "via Doha (DOH)",           "to UK, EU, USA",            "Cheapest of the Gulf options to the UK."),
             ("Ethiopian Airlines", "via Addis Ababa (ADD)",    "to USA, Canada, EU, Asia",  "Cheapest to North America."),
@@ -992,11 +998,11 @@ CORRIDORS = {
         "pullout": "Tuesday and Wednesday departures from Harare are routinely $80–$200 cheaper than Friday/Sunday on the long-haul corridors.",
         "faqs": [
             ("How much is a flight from Harare to London?",
-             "Typically US$900–US$1,800 return, with the cheap end in January–February and August. Emirates via Dubai and Qatar via Doha are the most-flown options; Kenya Airways via Nairobi is often a few hundred USD cheaper."),
+             "Typically US$900–US$1,800 return, with the cheap end in January–February and August. Since 1 July 2026 there is a nonstop option again: Air Zimbabwe flies Harare to London direct on an Airbus A330 (operated by Plus Ultra), several times a week. The one-stop carriers, Emirates via Dubai and Qatar via Doha, remain the most-flown options, and Kenya Airways via Nairobi is often a few hundred USD cheaper."),
             ("What's the cheapest flight from Harare to the USA?",
              "Ethiopian via Addis Ababa is consistently the cheapest to the US East Coast (US$1,100–US$1,900 return to NYC/Washington). For the West Coast, the same routing applies but adds another connection."),
             ("Which airlines fly from Harare?",
-             "Five main carriers operate daily out of Harare International (HRE): Emirates (DXB), Qatar Airways (DOH), Ethiopian Airlines (ADD), Kenya Airways (NBO) and South African Airways / Airlink (JNB)."),
+             "Air Zimbabwe now flies nonstop to London (an Airbus A330 operated by Plus Ultra, several times a week since 1 July 2026). For everywhere else, five main carriers operate daily out of Harare International (HRE): Emirates (DXB), Qatar Airways (DOH), Ethiopian Airlines (ADD), Kenya Airways (NBO) and South African Airways / Airlink (JNB)."),
             ("When is the cheapest time to fly out of Harare?",
              "January–February (after the Christmas inbound rush), August (after July returns to school) and November (before the December inbound)."),
             ("Can I fly out of Harare tomorrow?",
@@ -1042,6 +1048,7 @@ AIRPORTS = {
             ("Runways", "1 (05/23)"),
         ],
         "airlines_outbound": [
+            ("Air Zimbabwe (Plus Ultra)", "UM","London",          "Nonstop A330, several weekly (since Jul 2026)"),
             ("Emirates",           "EK",  "Dubai (DXB)",          "Daily, ~01:00"),
             ("Qatar Airways",      "QR",  "Doha (DOH)",           "Daily, ~02:00"),
             ("Ethiopian Airlines", "ET",  "Addis Ababa (ADD)",    "Daily, ~03:00"),
@@ -1072,7 +1079,7 @@ AIRPORTS = {
             ("What is Harare airport's code?",
              "IATA code HRE, ICAO code FVHA. Some older sources still use the colonial-era 'FVHA' designator; both refer to Robert Gabriel Mugabe International, Zimbabwe's main international gateway."),
             ("Which airlines fly to Harare?",
-             "Emirates (Dubai), Qatar Airways (Doha), Ethiopian Airlines (Addis Ababa), Kenya Airways (Nairobi), South African Airways and Airlink (Johannesburg/Cape Town), FastJet (regional), Air Zimbabwe (domestic). Five major long-haul carriers plus several regional and domestic operators."),
+             "Air Zimbabwe flies nonstop to and from London (an Airbus A330 operated by Plus Ultra, several times a week since 1 July 2026). The one-stop long-haul carriers are Emirates (Dubai), Qatar Airways (Doha), Ethiopian Airlines (Addis Ababa), Kenya Airways (Nairobi) and South African Airways and Airlink (Johannesburg/Cape Town), plus FastJet (regional) and Air Zimbabwe (domestic)."),
             ("How far is Harare airport from the city?",
              "15 km southeast of central Harare. A taxi to the CBD is USD 25–40 and takes about 25 minutes in normal traffic."),
             ("What time do international flights leave Harare?",
