@@ -853,6 +853,11 @@ def build_articles(region="zw"):
         # full-bleed hero, the LONG READ badge, count-up animations,
         # scroll-reveal sections and longer body line-height.
         longform = meta.get("longform", "").lower() == "true"
+        # Subscriber gate: when `paywall: true`, js/article-gate.js frosts the
+        # page and shows a "subscribe to continue" card after the reader scrolls
+        # past `paywall_at` percent (default 20). Opt-in per article.
+        paywall = meta.get("paywall", "").strip().lower() == "true"
+        paywall_at = meta.get("paywall_at", "").strip() or "20"
         hero_eyebrow = meta.get("hero_eyebrow", "FEATURE")
         hero_image_credit = meta.get("hero_image_credit", "")
         read_minutes = meta.get("read_minutes", "")
@@ -994,10 +999,11 @@ def build_articles(region="zw"):
         html_parts.append(
             '  <div id="stories-rail" aria-label="Story highlights"></div>'
         )
+        _pw_attr = f' data-paywall="1" data-paywall-at="{esc(paywall_at)}"' if paywall else ''
         html_parts.append(f"""
   <!-- Single article view -->
   <main>
-    <article class="article-full{' article-longform' if longform else ''}">""")
+    <article class="article-full{' article-longform' if longform else ''}"{_pw_attr}>""")
 
         # Breadcrumb nav (always)
         html_parts.append(f"""
@@ -1144,6 +1150,8 @@ def build_articles(region="zw"):
             extra_scripts += '\n  <script defer src="/js/stay-longform.js?v=1"></script>'
         if "data-timeline" in body_html:
             extra_scripts += '\n  <script defer src="/js/timeline.js?v=1"></script>'
+        if paywall:
+            extra_scripts += '\n  <script defer src="/js/article-gate.js?v=1"></script>'
         html_parts.append(page_footer(depth=depth, extra_scripts=extra_scripts, pfx=pfx, region=region))
 
         # Write file
