@@ -65,7 +65,7 @@
           "currency": ""
         },
         {
-          "price": 720,
+          "price": 713,
           "airline": "KQ",
           "departure_at": "2027-01-09",
           "return_at": "2027-02-01",
@@ -80,15 +80,6 @@
           "return_at": "",
           "stops": 3,
           "duration": 2520,
-          "currency": ""
-        },
-        {
-          "price": 747,
-          "airline": "WB",
-          "departure_at": "2027-04-01",
-          "return_at": "2027-04-29",
-          "stops": 1,
-          "duration": null,
           "currency": ""
         }
       ],
@@ -149,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -173,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -189,45 +180,13 @@
           "error": null
         }
       ],
-      "observations": 28
+      "observations": 27
     },
     "sydney-to-harare": {
       "origin": "SYD",
       "destination": "HRE",
       "currency": "AUD",
       "currency_sym": "A$",
-      "cheapest_overall": {
-        "price": 1803,
-        "airline": "EY",
-        "departure_at": "2026-08-20",
-        "return_at": "2026-09-13",
-        "stops": 2,
-        "duration": null,
-        "currency": ""
-      },
-      "cheapest_direct": null,
-      "monthly": [
-        {
-          "price": 1803,
-          "airline": "EY",
-          "departure_at": "2026-08-20",
-          "return_at": "2026-09-13",
-          "stops": 2,
-          "duration": null,
-          "currency": ""
-        }
-      ],
-      "by_airline": [
-        {
-          "price": 1803,
-          "airline": "EY",
-          "departure_at": "2026-08-20",
-          "return_at": "2026-09-13",
-          "stops": 2,
-          "duration": null,
-          "currency": ""
-        }
-      ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
@@ -238,7 +197,7 @@
         {
           "endpoint": "monthly",
           "origin": "SYD",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -254,7 +213,7 @@
           "error": null
         }
       ],
-      "observations": 1
+      "observations": 0
     },
     "cape-town-to-harare": {
       "origin": "CPT",
@@ -291,21 +250,12 @@
           "currency": ""
         },
         {
-          "price": 7704,
+          "price": 3514,
           "airline": "FA",
-          "departure_at": "2026-11-21",
-          "return_at": "2026-11-27",
+          "departure_at": "2026-11-28",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
-          "currency": ""
-        },
-        {
-          "price": 8826,
-          "airline": "4Z",
-          "departure_at": "2027-02-01",
-          "return_at": "2027-02-08",
-          "stops": 1,
-          "duration": null,
+          "duration": 715,
           "currency": ""
         }
       ],
@@ -317,15 +267,6 @@
           "return_at": "",
           "stops": 1,
           "duration": 715,
-          "currency": ""
-        },
-        {
-          "price": 8826,
-          "airline": "4Z",
-          "departure_at": "2027-02-01",
-          "return_at": "2027-02-08",
-          "stops": 1,
-          "duration": null,
           "currency": ""
         }
       ],
@@ -339,7 +280,7 @@
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 3,
+          "n": 2,
           "error": null
         },
         {
@@ -355,7 +296,7 @@
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 5
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -382,9 +323,9 @@
       },
       "monthly": [
         {
-          "price": 3830,
-          "airline": "FN",
-          "departure_at": "2026-07-30",
+          "price": 4940,
+          "airline": "4Z",
+          "departure_at": "2026-07-31",
           "return_at": "2026-08-03",
           "stops": 0,
           "duration": null,
@@ -429,9 +370,18 @@
           "currency": ""
         },
         {
-          "price": 3830,
+          "price": 4221,
           "airline": "FN",
-          "departure_at": "2026-07-30",
+          "departure_at": "2026-12-16",
+          "return_at": "2027-01-07",
+          "stops": 0,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 4940,
+          "airline": "4Z",
+          "departure_at": "2026-07-31",
           "return_at": "2026-08-03",
           "stops": 0,
           "duration": null,
@@ -442,7 +392,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 11,
+          "n": 10,
           "error": null
         },
         {
@@ -464,7 +414,7 @@
           "error": null
         }
       ],
-      "observations": 15
+      "observations": 14
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -683,15 +633,6 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1122,
-          "airline": "FR",
-          "departure_at": "2026-07-30",
-          "return_at": "2026-08-06",
-          "stops": 3,
-          "duration": null,
-          "currency": ""
-        },
-        {
           "price": 446,
           "airline": "FR",
           "departure_at": "2026-09-09",
@@ -746,15 +687,6 @@
           "stops": 3,
           "duration": 2390,
           "currency": ""
-        },
-        {
-          "price": 1213,
-          "airline": "EK",
-          "departure_at": "2026-07-30",
-          "return_at": "2026-08-06",
-          "stops": 2,
-          "duration": null,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
@@ -767,7 +699,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -791,7 +723,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 1,
+          "n": 0,
           "error": null
         },
         {
@@ -807,7 +739,7 @@
           "error": null
         }
       ],
-      "observations": 6
+      "observations": 4
     }
   }
 }
