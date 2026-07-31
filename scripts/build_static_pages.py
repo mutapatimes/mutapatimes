@@ -1151,7 +1151,7 @@ def build_articles(region="zw"):
         if "data-timeline" in body_html:
             extra_scripts += '\n  <script defer src="/js/timeline.js?v=1"></script>'
         if paywall:
-            extra_scripts += '\n  <script defer src="/js/article-gate.js?v=1"></script>'
+            extra_scripts += '\n  <script defer src="/js/article-gate.js?v=2"></script>'
         html_parts.append(page_footer(depth=depth, extra_scripts=extra_scripts, pfx=pfx, region=region))
 
         # Write file

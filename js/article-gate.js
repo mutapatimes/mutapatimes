@@ -55,7 +55,8 @@
       "  color: #fff; background: var(--accent, #c41e1e); border: 0; border-radius: 8px;",
       "  cursor: pointer; font-family: inherit; letter-spacing: .01em; }",
       ".mt-gate-btn:hover { filter: brightness(1.06); }",
-      ".mt-gate-fine { font-size: .72rem; opacity: .6; margin: 14px 0 0; }",
+      ".mt-gate-fine { font-size: .72rem; opacity: .68; margin: 14px 0 0; line-height: 1.5; }",
+      ".mt-gate-fine a { color: var(--accent, #c41e1e); text-decoration: underline; text-underline-offset: 2px; }",
       "@media (prefers-color-scheme: dark) { .mt-gate-card { border-color: rgba(255,255,255,.12); }",
       "  .mt-gate-input { background: #14201a; color: #f4ede0; border-color: rgba(255,255,255,.2); } }"
     ].join("\n");
@@ -87,7 +88,8 @@
             'autocomplete="email" placeholder="you@example.com" aria-label="Email address">' +
           '<button class="mt-gate-btn" type="submit">Subscribe &amp; continue reading</button>' +
         '</form>' +
-        '<p class="mt-gate-fine">Free forever. Unsubscribe anytime.</p>' +
+        '<p class="mt-gate-fine">Free forever. Unsubscribe anytime. We handle your email in line with our ' +
+          '<a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>' +
         '<iframe name="mt-gate-frame" title="Subscription confirmation" style="display:none" aria-hidden="true"></iframe>' +
       '</div>';
     document.body.appendChild(ov);
