@@ -1021,10 +1021,20 @@ def build_articles(region="zw"):
         if longform and image:
             # NYT-style longform hero: full-bleed image with headline,
             # eyebrow, byline overlaid. Image credit in bottom corner.
+            # An optional image_mobile swaps in a portrait/square crop on
+            # phones via <picture> (styling stays on the <img>).
+            _img_mobile = meta.get("image_mobile", "").strip()
+            if _img_mobile:
+                _hero_media = (f'<picture>'
+                               f'<source media="(max-width: 640px)" srcset="{esc(_img_mobile)}">'
+                               f'<img src="{esc(image)}" alt="{esc(title)}" class="article-longform-hero-img">'
+                               f'</picture>')
+            else:
+                _hero_media = f'<img src="{esc(image)}" alt="{esc(title)}" class="article-longform-hero-img">'
             html_parts.append(f"""
       <header class="article-longform-header">
         <div class="article-longform-hero">
-          <img src="{esc(image)}" alt="{esc(title)}" class="article-longform-hero-img">
+          {_hero_media}
           <div class="article-longform-hero-overlay"></div>
           <div class="article-longform-hero-inner">
             <h1 class="article-longform-title">{esc(title)}</h1>

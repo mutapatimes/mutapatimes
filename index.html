@@ -304,6 +304,8 @@
 
   <!-- Main layout: stories + sidebar -->
   <main>
+  <!-- Dominant lead: Feature Story of the Week (js/feature-story.js). -->
+  <div id="feature-story-slot" class="home-feature-lead"></div>
   <div class="content-layout">
     <div class="main-column">
       <div class="category-filter" role="navigation" aria-label="Filter news by category">
@@ -403,9 +405,6 @@
         <span class="home-stay-pin-cta">Read the guide &rarr;</span>
       </div>
     </a>
-
-    <!-- Feature Story of the Week (rendered by js/feature-story.js if active). -->
-    <div id="feature-story-slot"></div>
 
     <!-- Scene Report carousel — promoted series of curated articles.
          Filled by js/series.js from /data/series-<key>.json. -->
