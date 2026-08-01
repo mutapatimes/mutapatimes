@@ -47,11 +47,11 @@
           "currency": ""
         },
         {
-          "price": 850,
-          "airline": "KQ",
-          "departure_at": "2026-12-02",
-          "return_at": "2026-12-30",
-          "stops": 2,
+          "price": 957,
+          "airline": "U2",
+          "departure_at": "2026-12-09",
+          "return_at": "2027-01-07",
+          "stops": 3,
           "duration": null,
           "currency": ""
         },
@@ -244,12 +244,12 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 3208,
+        "price": 3427,
         "airline": "FA",
-        "departure_at": "2026-09-19",
+        "departure_at": "2026-08-26",
         "return_at": "",
         "stops": 1,
-        "duration": 715,
+        "duration": 790,
         "currency": ""
       },
       "cheapest_direct": null,
@@ -264,15 +264,6 @@
           "currency": ""
         },
         {
-          "price": 3208,
-          "airline": "FA",
-          "departure_at": "2026-09-19",
-          "return_at": "",
-          "stops": 1,
-          "duration": 715,
-          "currency": ""
-        },
-        {
           "price": 3514,
           "airline": "FA",
           "departure_at": "2026-11-28",
@@ -284,12 +275,30 @@
       ],
       "by_airline": [
         {
-          "price": 3208,
+          "price": 3427,
           "airline": "FA",
-          "departure_at": "2026-09-19",
+          "departure_at": "2026-08-26",
+          "return_at": "",
+          "stops": 1,
+          "duration": 790,
+          "currency": ""
+        },
+        {
+          "price": 3819,
+          "airline": "4Z",
+          "departure_at": "2026-11-21",
           "return_at": "",
           "stops": 1,
           "duration": 715,
+          "currency": ""
+        },
+        {
+          "price": 11916,
+          "airline": "Kupi.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1340,
           "currency": ""
         }
       ],
@@ -303,7 +312,7 @@
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -315,11 +324,11 @@
         {
           "endpoint": "v2",
           "origin": "CPT",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 6
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -327,18 +336,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1318,
+        "price": 1329,
         "airline": "FA",
-        "departure_at": "2026-08-20",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1318,
+        "price": 1329,
         "airline": "FA",
-        "departure_at": "2026-08-20",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -346,9 +355,9 @@
       },
       "monthly": [
         {
-          "price": 1318,
+          "price": 1329,
           "airline": "FA",
-          "departure_at": "2026-08-20",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -384,9 +393,9 @@
       ],
       "by_airline": [
         {
-          "price": 1318,
+          "price": 1329,
           "airline": "FA",
-          "departure_at": "2026-08-20",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -406,7 +415,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 14,
+          "n": 15,
           "error": null
         },
         {
@@ -428,7 +437,7 @@
           "error": null
         }
       ],
-      "observations": 17
+      "observations": 18
     },
     "new-york-to-harare": {
       "origin": "NYC",
