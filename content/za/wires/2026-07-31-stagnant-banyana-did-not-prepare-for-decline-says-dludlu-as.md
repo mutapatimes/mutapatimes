@@ -1,0 +1,16 @@
+---
+title: "Stagnant Banyana did not prepare for decline, says Dludlu as Wafcon hints at a power shift"
+date: 2026-07-31T03:04:03.000Z
+author: News24
+category: Business
+image: 
+summary: "Stagnant Banyana did not prepare for decline, says Dludlu as Wafcon hints at a power shift"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdl9nXzhFcmRUd2VfV2RBZDhqNVh2VGtadDNnNkZjaVdBYVdoN01UaHc1UURZN0Z1QkREYThkQkloSDhNbUtfWnBYLVBfMTVES3NnT1lfd0kxMmFGWmJ1T1VINm5jeVd6cVViYTRiSDVYX1BJekR4dHVFYjNmeUFhOHNKYmVENzd0NEg3ZUJVVE95aU9HaVBPeXRGWHoxeFhDTUNPaDh2WVViaU9TdVVieFp1SUhkempvSk5kUjhNLU5MUERsSmktd1RVNmV4bHBTOV96aDJFcUhGVUlTbnhKdzJUbG04NldzQlV1SnFSQm5VWmdLUDlnWHZmbTZsMmNic1pj?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMigwJBVV95cUxQdl9nXzhFcmRUd2VfV2RBZDhqNVh2VGtadDNnNkZjaVdBYVdoN01UaHc1UURZN0Z1QkREYThkQkloSDhNbUtfWnBYLVBfMTVES3NnT1lfd0kxMmFGWmJ1T1VINm5jeVd6cVViYTRiSDVYX1BJekR4dHVFYjNmeUFhOHNKYmVENzd0NEg3ZUJVVE95aU9HaVBPeXRGWHoxeFhDTUNPaDh2WVViaU9TdVVieFp1SUhkempvSk5kUjhNLU5MUERsSmktd1RVNmV4bHBTOV96aDJFcUhGVUlTbnhKdzJUbG04NldzQlV1SnFSQm5VWmdLUDlnWHZmbTZsMmNic1pj?oc=5)

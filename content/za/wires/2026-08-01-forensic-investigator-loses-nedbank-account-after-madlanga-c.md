@@ -1,0 +1,16 @@
+---
+title: "Forensic investigator loses Nedbank account after Madlanga Commission testimony"
+date: 2026-08-01T02:36:13.000Z
+author: News24
+category: Business
+image: 
+summary: "Forensic investigator loses Nedbank account after Madlanga Commission testimony"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNExxUFNobjU3eENIOW9Vd1BRaW01bEtxU1NfXzZENktiUUstMlBSbEZZUy1oRC02YUZDclM4SHctZ2FtR0J1QlpSNnZVSm9Sa2VpUjBjWEdHeUNKM01nQ3lNZGE3Y0VwSGY4S1RTVlA0aUtxakpranpSOW0waHp0OVlSb3VqM3lhLVp1aDgzaTVKZlFubEtxTURCd1dmZkpkOHdHOEtxaUU1MnJka3hSb0RLWjRfOUIzdHg3MlJxaF9SdkFXRXhpOTJKX0JIVVpoOGdqTFEwNmxjcHNQalE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNExxUFNobjU3eENIOW9Vd1BRaW01bEtxU1NfXzZENktiUUstMlBSbEZZUy1oRC02YUZDclM4SHctZ2FtR0J1QlpSNnZVSm9Sa2VpUjBjWEdHeUNKM01nQ3lNZGE3Y0VwSGY4S1RTVlA0aUtxakpranpSOW0waHp0OVlSb3VqM3lhLVp1aDgzaTVKZlFubEtxTURCd1dmZkpkOHdHOEtxaUU1MnJka3hSb0RLWjRfOUIzdHg3MlJxaF9SdkFXRXhpOTJKX0JIVVpoOGdqTFEwNmxjcHNQalE?oc=5)
