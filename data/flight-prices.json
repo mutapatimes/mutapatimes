@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-31",
+  "fetched_at": "2026-08-01",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -20,12 +20,12 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 408,
-          "airline": "QR",
-          "departure_at": "2026-08-03",
+          "price": 485,
+          "airline": "FR",
+          "departure_at": "2026-08-07",
           "return_at": "",
-          "stops": 2,
-          "duration": 1495,
+          "stops": 3,
+          "duration": 2080,
           "currency": ""
         },
         {
@@ -85,30 +85,12 @@
           "currency": ""
         },
         {
-          "price": 408,
-          "airline": "QR",
-          "departure_at": "2026-08-03",
-          "return_at": "",
-          "stops": 2,
-          "duration": 1495,
-          "currency": ""
-        },
-        {
           "price": 496,
           "airline": "AL",
           "departure_at": "2026-08-06",
           "return_at": "",
           "stops": 4,
           "duration": 1770,
-          "currency": ""
-        },
-        {
-          "price": 526,
-          "airline": "EI",
-          "departure_at": "2026-08-08",
-          "return_at": "",
-          "stops": 3,
-          "duration": 2630,
           "currency": ""
         },
         {
@@ -119,13 +101,31 @@
           "stops": 4,
           "duration": 1785,
           "currency": ""
+        },
+        {
+          "price": 549,
+          "airline": "SK",
+          "departure_at": "2026-10-13",
+          "return_at": "",
+          "stops": 3,
+          "duration": 1760,
+          "currency": ""
+        },
+        {
+          "price": 571,
+          "airline": "QR",
+          "departure_at": "2026-09-09",
+          "return_at": "2026-09-22",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 6,
+          "n": 3,
           "error": null
         },
         {
@@ -149,7 +149,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 6,
+          "n": 3,
           "error": null
         },
         {
@@ -171,18 +171,50 @@
           "error": null
         }
       ],
-      "observations": 22
+      "observations": 17
     },
     "sydney-to-harare": {
       "origin": "SYD",
       "destination": "HRE",
       "currency": "AUD",
       "currency_sym": "A$",
+      "cheapest_overall": {
+        "price": 1402,
+        "airline": "QR",
+        "departure_at": "2026-09-25",
+        "return_at": "",
+        "stops": 2,
+        "duration": 2110,
+        "currency": ""
+      },
+      "cheapest_direct": null,
+      "monthly": [
+        {
+          "price": 1402,
+          "airline": "QR",
+          "departure_at": "2026-09-25",
+          "return_at": "",
+          "stops": 2,
+          "duration": 2110,
+          "currency": ""
+        }
+      ],
+      "by_airline": [
+        {
+          "price": 1402,
+          "airline": "QR",
+          "departure_at": "2026-09-25",
+          "return_at": "",
+          "stops": 2,
+          "duration": 2110,
+          "currency": ""
+        }
+      ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "SYD",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
@@ -204,7 +236,7 @@
           "error": null
         }
       ],
-      "observations": 0
+      "observations": 1
     },
     "cape-town-to-harare": {
       "origin": "CPT",
@@ -332,7 +364,7 @@
           "currency": ""
         },
         {
-          "price": 1515,
+          "price": 1517,
           "airline": "FA",
           "departure_at": "2026-10-02",
           "return_at": "",
@@ -541,7 +573,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 7,
+          "n": 6,
           "error": null
         },
         {
@@ -563,7 +595,7 @@
           "error": null
         }
       ],
-      "observations": 10
+      "observations": 9
     },
     "toronto-to-harare": {
       "origin": "YYZ",
