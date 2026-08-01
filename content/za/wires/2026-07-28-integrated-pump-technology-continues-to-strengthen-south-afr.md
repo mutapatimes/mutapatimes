@@ -1,0 +1,16 @@
+---
+title: "Integrated pump technology continues to strengthen South African mining support"
+date: 2026-07-28T13:32:09.000Z
+author: Mining Weekly
+category: Business
+image: 
+summary: "Integrated pump technology continues to strengthen South African mining support"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxOUnliV2RGd3RIQm1HQkdKVnhKWU45WHVpTjR4T0JiTFFmdEpnUFdlc3htSFd6aXRQdmVnTk1ZZjV5bU0xYVVJUDcxTHN1ZGYybjBYNTN0cXhjSFVkSVpmdG5sMEp6RGozenlyUzJfSlhxeXdFNlA3MkNjWDROeHh5WWxYZmExSk5kSUdYbUFYYm1GWXRFeVF1TDRCMXhDeXpDRHp6M2N1blZDX0RISGZIVlVuMFpBNE5TM3FiWENOUFA5SHdWQnp2ZG02MVd1NXlPSmtwNk8wYm82Wm5DM0NGWGsyYTlaVmtqUWdSZUh1eEhiY2dwYlhrcW5xZFFEeldJUGlsNUJRTDlNRnp0Tl9ob0ZnWQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Weekly.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxOUnliV2RGd3RIQm1HQkdKVnhKWU45WHVpTjR4T0JiTFFmdEpnUFdlc3htSFd6aXRQdmVnTk1ZZjV5bU0xYVVJUDcxTHN1ZGYybjBYNTN0cXhjSFVkSVpmdG5sMEp6RGozenlyUzJfSlhxeXdFNlA3MkNjWDROeHh5WWxYZmExSk5kSUdYbUFYYm1GWXRFeVF1TDRCMXhDeXpDRHp6M2N1blZDX0RISGZIVlVuMFpBNE5TM3FiWENOUFA5SHdWQnp2ZG02MVd1NXlPSmtwNk8wYm82Wm5DM0NGWGsyYTlaVmtqUWdSZUh1eEhiY2dwYlhrcW5xZFFEeldJUGlsNUJRTDlNRnp0Tl9ob0ZnWQ?oc=5)

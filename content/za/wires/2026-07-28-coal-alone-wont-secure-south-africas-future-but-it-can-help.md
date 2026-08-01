@@ -1,0 +1,16 @@
+---
+title: "Coal alone won’t secure South Africa’s future – but it can help build it"
+date: 2026-07-28T06:26:28.000Z
+author: Mining Review Africa
+category: Business
+image: 
+summary: "Coal alone won’t secure South Africa’s future – but it can help build it"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUxwNTViejJ6Tll2NWxRa2hmUW42b2trUHg4c2NXbE1wMmtJQ3ZsR2NuMUNqQ0k0bWxwMk50aEh1QWYxd1EyZkJ3cFNoWlpXR0VEZmxISDczNnRqeUQ3ZHhwQmJzVUhoWnZJdC15ei1BOXJ5LVRrUkFlVUY5RTNfTTZEMWd1aFR4YzdxZkZCZUdVaUV0UzFNQXJwVdIBowFBVV95cUxQZktlZFlLdDJfenB0NC10R25ZdTZVLU11MkdZUUlUMHdXVUpYVzd5N2IxSWNnck9xT3h4Z2J4RmxTaFBGdkNhNjFWSnFBMF91S3ZYWkY5TXFtdjVaaDVaNTdmLWI2ejd2TEZvdGdHTERlSlpvWmtqTVBLUnhDZHluVWppRjJDUV9jeUttcGpJbmRrS2F6NFZfTlNYUTRFb0pocHJB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Review Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUxwNTViejJ6Tll2NWxRa2hmUW42b2trUHg4c2NXbE1wMmtJQ3ZsR2NuMUNqQ0k0bWxwMk50aEh1QWYxd1EyZkJ3cFNoWlpXR0VEZmxISDczNnRqeUQ3ZHhwQmJzVUhoWnZJdC15ei1BOXJ5LVRrUkFlVUY5RTNfTTZEMWd1aFR4YzdxZkZCZUdVaUV0UzFNQXJwVdIBowFBVV95cUxQZktlZFlLdDJfenB0NC10R25ZdTZVLU11MkdZUUlUMHdXVUpYVzd5N2IxSWNnck9xT3h4Z2J4RmxTaFBGdkNhNjFWSnFBMF91S3ZYWkY5TXFtdjVaaDVaNTdmLWI2ejd2TEZvdGdHTERlSlpvWmtqTVBLUnhDZHluVWppRjJDUV9jeUttcGpJbmRrS2F6NFZfTlNYUTRFb0pocHJB?oc=5)
