@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Aug 2026 08:33:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 08:36:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>STORES CLERK</title>
+      <link>https://mutapatimes.com/stories/7a1ecb4ec5e4.html</link>
+      <description>Our client is looking for a responsible, organised and trustworthy candidate to fill the position of Stores Clerk. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 31 Jul 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/7a1ecb4ec5e4.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/7a1ecb4ec5e4.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7a1ecb4ec5e4.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/7a1ecb4ec5e4.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zimbabwe German Society — Multilingual Language Teacher</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/16607d0bd264.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/16607d0bd264.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/16607d0bd264.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Old Mutual Zimbabwe — Facilities Administration</title>
-      <link>https://mutapatimes.com/stories/3f9befd6a1a6.html</link>
-      <description>The Facilities Administrator is responsible for coordinating the day-to-day administration of facilities management services to ensure that building operations, maintenance, contractor performance, s… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 31 Jul 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/3f9befd6a1a6.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Old Mutual Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/3f9befd6a1a6.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3f9befd6a1a6.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/3f9befd6a1a6.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
