@@ -23,6 +23,19 @@
   },
   {
    "rank": 3,
+   "team": "Herentals",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
+   "played": 26,
+   "win": 13,
+   "draw": 6,
+   "loss": 7,
+   "gf": 29,
+   "ga": 22,
+   "gd": 7,
+   "points": 45
+  },
+  {
+   "rank": 4,
    "team": "Dynamos",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
    "played": 24,
@@ -33,19 +46,6 @@
    "ga": 18,
    "gd": 18,
    "points": 44
-  },
-  {
-   "rank": 4,
-   "team": "Herentals",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
-   "played": 25,
-   "win": 12,
-   "draw": 6,
-   "loss": 7,
-   "gf": 27,
-   "ga": 22,
-   "gd": 5,
-   "points": 42
   },
   {
    "rank": 5,
@@ -91,5 +91,5 @@
    "away": "Bulawayo Chiefs"
   }
  ],
- "updated": "2026-08-01T06:42:02+00:00"
+ "updated": "2026-08-01T10:12:06+00:00"
 }
