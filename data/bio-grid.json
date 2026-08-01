@@ -1,7 +1,79 @@
 {
-  "fetched_at": "2026-08-01T05:51:28+00:00",
+  "fetched_at": "2026-08-01T15:57:51+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Afreximbank Loans US$190 million to Zimbabwe's CBZ Bank",
+      "link": "https://mutapatimes.com/articles/2026-08-01-afreximbank-loans-us190-million-to-zimbabwes-cbz-bank",
+      "image": "https://mutapatimes.com/img/cards/news/919fa67a8062.png",
+      "pubDate": "2026-08-01T06:51:39+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa hails Chinese investment in lithium beneficiation",
+      "link": "https://mutapatimes.com/news/2026-08-01-mnangagwa-hails-chinese-investment-in-lithium-beneficiation-a42a37",
+      "image": "https://mutapatimes.com/img/cards/news/120d8c4e1b01.png",
+      "pubDate": "2026-08-01T03:51:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Funding cut to spur HIV surge",
+      "link": "https://mutapatimes.com/articles/2026-07-31-funding-cut-to-spur-hiv-surge",
+      "image": "https://mutapatimes.com/img/cards/news/968cbe01a5ee.png",
+      "pubDate": "2026-07-31T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "March And March Leader Jacinta Ngobese-Zuma Blasts Zimbabweans After July 31 Protest Fizzles",
+      "link": "https://mutapatimes.com/news/2026-07-31-march-and-march-leader-jacinta-ngobese-zuma-blasts-zimbabweans-after-july-31-69364e",
+      "image": "https://mutapatimes.com/img/cards/news/ed0dc545d97f.png",
+      "pubDate": "2026-07-31T23:41:55+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Car Rental Fraudster Jailed 20 Years After Using Fake IDs To Steal Rental Cars",
+      "link": "https://mutapatimes.com/news/2026-07-31-car-rental-fraudster-jailed-20-years-after-using-fake-ids-to-steal-rental-cars-8c3135",
+      "image": "https://mutapatimes.com/img/cards/news/c6cc2a7a53bd.png",
+      "pubDate": "2026-07-31T23:10:17+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZCTU slams proposed Municipal Bill for criminalising poverty",
+      "link": "https://mutapatimes.com/news/2026-07-31-zctu-slams-proposed-municipal-bill-for-criminalising-poverty-16cf08",
+      "image": "https://mutapatimes.com/img/cards/news/0031e8058530.png",
+      "pubDate": "2026-07-31T23:07:16+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "US court orders Zimbabwe to pay US$270m in compensation to family that lost property during land reform programme",
+      "link": "https://mutapatimes.com/news/2026-07-31-us-court-orders-zimbabwe-to-pay-us-270m-in-compensation-to-family-that-lost-5a0854",
+      "image": "https://mutapatimes.com/img/cards/news/f0465c3db79b.png",
+      "pubDate": "2026-07-31T23:01:31+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chamisa’s UK consultation tour draws large crowds, sparks political debate",
+      "link": "https://mutapatimes.com/news/2026-07-31-chamisa-s-uk-consultation-tour-draws-large-crowds-sparks-political-debate-4414ac",
+      "image": "https://mutapatimes.com/img/cards/news/44083ffde24f.png",
+      "pubDate": "2026-07-31T23:01:23+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mthuli Ncube Rejects ‘Spending Spree’ Claims On 143% OPC Budget Utilisation",
+      "link": "https://mutapatimes.com/news/2026-07-31-mthuli-ncube-rejects-spending-spree-claims-on-143-opc-budget-utilisation-08ba80",
+      "image": "https://mutapatimes.com/img/cards/news/e353dcf416b9.png",
+      "pubDate": "2026-07-31T23:01:14+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim education sector: $768M in 2025 Q4, 4.0% of GDP.",
@@ -20,7 +92,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 1 Aug: Harare clear sky · high 22° / low 10°",
+      "title": "Zim weather 1 Aug: Harare overcast · high 19° / low 8°",
       "link": "https://mutapatimes.com/weather?d=2026-08-01",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-01",
       "pubDate": "2026-07-31T22:00:00+00:00",
@@ -57,6 +129,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-07-31T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "STORES CLERK",
+      "link": "https://vacancymail.co.zw/jobs/stores-clerk-68598/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7a1ecb4ec5e4.png",
+      "pubDate": "2026-07-31T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -399,86 +479,6 @@
       "title": "Black Shark Protection Services — Security Officer",
       "link": "https://vacancymail.co.zw/jobs/security-officer-68542/",
       "image": "https://mutapatimes.com/img/cards/jobs/49461bfbc4b0.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — SERGEANT",
-      "link": "https://vacancymail.co.zw/jobs/sergeant-68541/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e148dbb4379e.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Premiercredit Zimbabwe — SALES ASSOCIATE",
-      "link": "https://vacancymail.co.zw/jobs/sales-associate-68540/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1f0c7a3514df.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mother Touch Group of Schools — Boarding Master",
-      "link": "https://vacancymail.co.zw/jobs/boarding-master-68539/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4be0182f7267.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mother Touch Group of Schools — History and Bible Studies Teacher",
-      "link": "https://vacancymail.co.zw/jobs/history-and-bible-studies-teacher-68538/",
-      "image": "https://mutapatimes.com/img/cards/jobs/237b32a08aaa.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Printflow Private Limited — Customer Service Assistant",
-      "link": "https://vacancymail.co.zw/jobs/customer-service-assistant-68537/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6ec648ea4229.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Printflow Private Limited — Warehouse Administrator",
-      "link": "https://vacancymail.co.zw/jobs/warehouse-administrator-68536/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a2250739479c.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Printflow Private Limited — Dispatch Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/dispatch-supervisor-68535/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cadaa2c0c085.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TV Sales — Transport Dispatch Clerk",
-      "link": "https://vacancymail.co.zw/jobs/transport-dispatch-clerk-68534/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a419402e5fb.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Business Development Manager",
-      "link": "https://vacancymail.co.zw/jobs/business-development-manager-68533/",
-      "image": "https://mutapatimes.com/img/cards/jobs/35d3b70ab045.png",
-      "pubDate": "2026-07-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative: Chanet Investments Pvt Ltd T/A",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-chanet-investments-pvt-ltd-ta-68532/",
-      "image": "https://mutapatimes.com/img/cards/jobs/59452928f3df.png",
       "pubDate": "2026-07-31T22:00:00+00:00",
       "category": "Jobs"
     }
