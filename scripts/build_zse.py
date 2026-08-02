@@ -702,6 +702,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
     <hr class="zse-rule">
   </header>
   {hub_banner_html()}
+  <div id="zse-eod"></div>
   <div class="zse-stats" role="list">
 {stats_html}
   </div>
@@ -813,6 +814,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
   headers.forEach(function(h){{ h.addEventListener('click', function(){{ sort(h.dataset.sort); }}); }});
 }})();
 </script>
+<script defer src="/js/zse-eod.js?v=1"></script>
 </body>
 </html>
 '''
