@@ -12,17 +12,30 @@
    "rank": 1,
    "team": "Scottland",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/c6powa1740628657.png/tiny",
-   "played": 24,
+   "played": 25,
    "win": 15,
-   "draw": 7,
+   "draw": 8,
    "loss": 2,
    "gf": 39,
    "ga": 8,
    "gd": 31,
-   "points": 52
+   "points": 53
   },
   {
    "rank": 3,
+   "team": "Dynamos",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
+   "played": 25,
+   "win": 11,
+   "draw": 12,
+   "loss": 2,
+   "gf": 36,
+   "ga": 18,
+   "gd": 18,
+   "points": 45
+  },
+  {
+   "rank": 4,
    "team": "Herentals",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
    "played": 26,
@@ -35,30 +48,17 @@
    "points": 45
   },
   {
-   "rank": 4,
-   "team": "Dynamos",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/vkut7l1739423099.png/tiny",
-   "played": 24,
-   "win": 11,
-   "draw": 11,
-   "loss": 2,
-   "gf": 36,
-   "ga": 18,
-   "gd": 18,
-   "points": 44
-  },
-  {
    "rank": 5,
    "team": "Ngezi Platinum",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/7n93nc1645561915.png/tiny",
-   "played": 25,
-   "win": 10,
+   "played": 26,
+   "win": 11,
    "draw": 11,
    "loss": 4,
-   "gf": 30,
+   "gf": 31,
    "ga": 23,
-   "gd": 7,
-   "points": 41
+   "gd": 8,
+   "points": 44
   },
   {
    "rank": 6,
@@ -91,5 +91,5 @@
    "away": "Highlanders"
   }
  ],
- "updated": "2026-08-02T06:46:51+00:00"
+ "updated": "2026-08-02T10:09:35+00:00"
 }
