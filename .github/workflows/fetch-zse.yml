@@ -11,22 +11,48 @@ on:
 jobs:
   fetch-zse:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Scrape ZSE daily closes
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Pillow (EOD card render)
+        run: pip install --quiet Pillow
+
+      - name: Scrape ZSE daily closes (ticker)
         run: python3 scripts/fetch_zse.py
 
-      - name: Commit ticker data
+      - name: Fetch ZSE end-of-day Market Activity
+        env:
+          ZSE_API_BASE: ${{ secrets.ZSE_API_BASE }}
+        run: python3 scripts/fetch_zse_market.py
+
+      - name: Render ZSE end-of-day card
+        run: python3 scripts/build_zse_eod_card.py
+
+      - name: Post ZSE end-of-day card (best effort)
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: python3 scripts/post_zse_eod.py
+
+      - name: Commit ZSE data + card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/zse-ticker.json
+          git add data/zse-ticker.json data/zse-market-activity.json \
+                  data/zse-eod-caption.txt data/.posted_zse_eod.json \
+                  img/cards/zse/eod-latest.png img/cards/zse/eod-*.png 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Update ZSE ticker [automated]"
+            git commit -m "Update ZSE data + EOD card [automated]"
             for i in 1 2 3 4 5; do
               if git push; then
                 echo "Pushed on attempt $i"

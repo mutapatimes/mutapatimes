@@ -983,6 +983,93 @@ def build_academy_ad_html():
     )
 
 
+def build_zse_html():
+    """Compact 'ZSE at the close' block from data/zse-market-activity.json.
+    Zimbabwe edition only; skipped if data is missing or more than 5 days old."""
+    path = os.path.join("data", "zse-market-activity.json")
+    if not os.path.isfile(path):
+        return ""
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        return ""
+    as_of = d.get("as_of", "")
+    try:
+        age = (datetime.now(timezone.utc).date() - datetime.strptime(as_of, "%Y-%m-%d").date()).days
+        if age > 5:
+            return ""
+    except Exception:
+        pass
+
+    a = d.get("activity", {})
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    p = as_of.split("-")
+    date_disp = f"{int(p[2])} {months[int(p[1]) - 1]} {p[0]}" if len(p) == 3 else as_of
+
+    def _all_share():
+        for x in d.get("indices", []):
+            if (x.get("name") or "").upper() == "ALL SHARE":
+                return x
+        return {}
+
+    def _big(n):
+        if n is None:
+            return "&mdash;"
+        n = float(n)
+        if n >= 1e9:
+            return f"{n / 1e9:.2f}bn"
+        if n >= 1e6:
+            return f"{n / 1e6:.2f}m"
+        return f"{n:,.0f}"
+
+    def _pct(v):
+        return "" if v is None else f"{'+' if float(v) > 0 else ''}{float(v):.2f}%"
+
+    def _col(v):
+        try:
+            v = float(v)
+        except (TypeError, ValueError):
+            return "#8b8678"
+        return "#1a7f37" if v > 0 else ("#c41e1e" if v < 0 else "#8b8678")
+
+    asx = _all_share()
+    g = (d.get("gainers") or [{}])[0]
+    l = (d.get("losers") or [{}])[0]
+
+    def _stat(lbl, val, sub="", subcol="#8b8678"):
+        subhtml = f'<div style="font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;color:{subcol};margin-top:2px;">{sub}</div>' if sub else ""
+        return (
+            '<td width="25%" style="padding:8px 6px;text-align:center;vertical-align:top;">'
+            f'<div style="font-family:Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#8b8678;">{lbl}</div>'
+            f'<div style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#121212;margin-top:3px;">{val}</div>'
+            f'{subhtml}</td>'
+        )
+
+    return (
+        '<tr><td style="padding:16px 20px 0;">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+        '<td style="border-top:2px solid #c41e1e;padding-top:8px;">'
+        '<span style="font-family:Georgia,serif;font-size:18px;font-weight:700;color:#121212;">ZSE at the close</span>'
+        f'<span style="font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#8b8678;"> &middot; {date_disp} &middot; ZWG</span>'
+        '</td></tr></table></td></tr>'
+        '<tr><td style="padding:8px 14px 4px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+        + _stat("All Share", asx.get("value", "&mdash;"), _pct(asx.get("change_pct")), _col(asx.get("change_pct")))
+        + _stat("Turnover", _big(a.get("turnover")))
+        + _stat("Mkt cap", _big(a.get("market_cap")))
+        + _stat("Trades", a.get("trades", "&mdash;"))
+        + '</tr></table></td></tr>'
+        '<tr><td style="padding:0 20px 8px;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#4a4a44;">'
+        f'Top gainer <strong>{g.get("symbol") or g.get("name") or "&mdash;"}</strong> '
+        f'<span style="color:{_col(g.get("change_pct"))};font-weight:700;">{_pct(g.get("change_pct"))}</span> &middot; '
+        f'top faller <strong>{l.get("symbol") or l.get("name") or "&mdash;"}</strong> '
+        f'<span style="color:{_col(l.get("change_pct"))};font-weight:700;">{_pct(l.get("change_pct"))}</span>'
+        '</td></tr>'
+        '<tr><td style="padding:0 20px 16px;">'
+        f'<a href="{SITE_URL}/zse" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#c41e1e;text-decoration:none;">Full close, indices &amp; notices &rarr;</a>'
+        '</td></tr>'
+    )
+
+
 def build_html(category_articles, wordle=None, tsumo=None, originals=None):
     """Build inline-CSS HTML email matching The Mutapa Times website style."""
     today = datetime.now(timezone.utc)
@@ -1001,6 +1088,7 @@ def build_html(category_articles, wordle=None, tsumo=None, originals=None):
         preheader = f"Top Zimbabwe headlines from foreign press, {date_display}."
 
     wordle_html = build_wordle_html(wordle)
+    zse_html = build_zse_html() if REGION == _DEFAULT_REGION else ""
     stories_rail_html = build_stories_rail_html() if REGION == _DEFAULT_REGION else ""
     tsumo_html = build_tsumo_html(tsumo)
     originals_html = build_originals_html(originals)
@@ -1158,6 +1246,8 @@ def build_html(category_articles, wordle=None, tsumo=None, originals=None):
           {stories_rail_html}
 
           {originals_html}
+
+          {zse_html}
 
           {wordle_html}
 
