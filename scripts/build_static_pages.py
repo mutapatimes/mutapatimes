@@ -168,8 +168,12 @@ def iso_date(date_str):
 # ─── Common HTML fragments ───────────────────────────────────────────────
 
 # depth=1 means inside articles/ or people/ folder  CSS/JS paths go up one level
-def page_head(title, description, canonical_url, og_type, og_image, depth=1, robots="index, follow", pfx=""):
+def page_head(title, description, canonical_url, og_type, og_image, depth=1, robots="index, follow", pfx="", og_w=1080, og_h=1350):
     prefix = "../" * depth
+    # Social scrapers (X/Twitter, Facebook, LinkedIn) require an ABSOLUTE
+    # image URL — a root-relative "/img/..." silently yields no preview card.
+    if og_image and og_image.startswith("/"):
+        og_image = BASE_URL.rstrip("/") + og_image
     return f"""<!doctype html>
 <html class="no-js" lang="en">
 
@@ -209,8 +213,8 @@ def page_head(title, description, canonical_url, og_type, og_image, depth=1, rob
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{esc(og_image)}">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="{og_w}">
+<meta property="og:image:height" content="{og_h}">
 <meta property="og:url" content="{esc(canonical_url)}">
 <meta property="og:site_name" content="The Mutapa Times">
 <!-- Twitter Card -->
@@ -877,6 +881,20 @@ def build_articles(region="zw"):
                 image if image else f"{BASE_URL}/img/brand/og-share.png"
             )
         )
+        # Declare the real image dimensions so the social card renders with the
+        # correct aspect (a wrong width/height can suppress the preview). Feed
+        # cards are 1080x1350; a frontmatter og_image can be any size, so read it.
+        og_w, og_h = 1080, 1350
+        try:
+            from PIL import Image as _PImg
+            _ogp = og_image[len(BASE_URL):] if og_image.startswith(BASE_URL) else og_image
+            if _ogp.startswith("/"):
+                _oglocal = os.path.join(ROOT_DIR, _ogp.lstrip("/"))
+                if os.path.isfile(_oglocal):
+                    with _PImg.open(_oglocal) as _ogi:
+                        og_w, og_h = _ogi.size
+        except Exception:
+            pass
 
         # Never hotlink a major international agency/outlet photo as the hero
         # (image-rights enforcement risk — PicRights et al. act for AFP /
@@ -985,7 +1003,7 @@ def build_articles(region="zw"):
                     robots_val = "noindex, follow"
             except Exception:
                 pass
-        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=depth, robots=robots_val, pfx=pfx))
+        html_parts.append(page_head(page_title, meta_desc, canonical, "article", og_image, depth=depth, robots=robots_val, pfx=pfx, og_w=og_w, og_h=og_h))
         html_parts.append(f"""
 <script type="application/ld+json">
 {json.dumps(schema)}

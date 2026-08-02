@@ -6,7 +6,7 @@ author: Tendai Kuwanda
 category: Health
 image: /img/uploads/dr-rumbi/lead.jpg
 image_mobile: /img/uploads/dr-rumbi/facade.jpg
-og_image: /img/uploads/dr-rumbi/lead.jpg
+og_image: /img/uploads/dr-rumbi/og-card.jpg
 summary: "On the frontlines of healthcare, and the strategy table. A cool July afternoon at the Wellcome Collection with the Zimbabwean-British doctor and founder of the women's-health venture Glacie Health, on calling, on education as a form of medicine, and on carrying what the West knows back home to the women who need it."
 featured: true
 headline_position: 1
