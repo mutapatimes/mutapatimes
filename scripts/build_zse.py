@@ -814,7 +814,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
   headers.forEach(function(h){{ h.addEventListener('click', function(){{ sort(h.dataset.sort); }}); }});
 }})();
 </script>
-<script defer src="/js/zse-eod.js?v=1"></script>
+<script defer src="/js/zse-eod.js?v=2"></script>
 </body>
 </html>
 '''

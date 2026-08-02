@@ -612,7 +612,7 @@ def page_footer(depth=1, extra_scripts="", pfx="", region="zw"):
 {region_js}  <script defer src="{prefix}js/vendor/modernizr-3.8.0.min.js"></script>
   <script defer src="{prefix}js/stories.js?v=5"></script>
   <script defer src="{prefix}js/nav.js"></script>
-  <script defer src="/js/ticker-tape.js?v=1"></script>
+  <script defer src="/js/ticker-tape.js?v=2"></script>
 {_ed_sponsor}  <script defer src="/js/article-parallax.js?v=2"></script>
 {_ed_feature}  <script defer src="/js/quote-share.js?v=2"></script>{extra_scripts}
 

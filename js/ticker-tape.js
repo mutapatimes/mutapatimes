@@ -89,23 +89,35 @@
     });
   }
 
-  function mount(items, asOf) {
-    if (!items.length) return;
+  var lastSig = null;
+
+  function mount(items, asOf, sig) {
+    if (!items.length || sig === lastSig) return;
+    lastSig = sig;
     style();
     var seq = items.join("");
-    var bar = document.createElement("div");
-    bar.id = "mt-ticker";
-    bar.setAttribute("aria-label", "ZSE market ticker");
-    bar.innerHTML =
-      '<a class="mt-tk-tag" href="' + mtUrl("/zse") + '" title="ZSE at the close' +
-        (asOf ? " · " + esc(asOf) : "") + '">ZSE</a>' +
-      '<div class="mt-tk-view"><div class="mt-tk-track">' + seq + seq + "</div></div>";
-    document.body.insertBefore(bar, document.body.firstChild);
+    var track = '<div class="mt-tk-view"><div class="mt-tk-track">' + seq + seq + "</div></div>";
+    var tag = '<a class="mt-tk-tag" href="' + mtUrl("/zse") + '" title="ZSE at the close' +
+      (asOf ? " · " + esc(asOf) + " · end of day" : "") + '">ZSE</a>';
+    var bar = document.getElementById("mt-ticker");
+    if (bar) {
+      bar.innerHTML = tag + track;   // refresh in place
+    } else {
+      bar = document.createElement("div");
+      bar.id = "mt-ticker";
+      bar.setAttribute("aria-label", "ZSE market ticker (end of day)");
+      bar.innerHTML = tag + track;
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
   }
+
+  // Coarse 5-minute cache-bust: everyone in the same window shares one
+  // cached response, but stale data never lingers longer than that.
+  function bust(u) { return u + (u.indexOf("?") < 0 ? "?" : "&") + "t=" + Math.floor(Date.now() / 300000); }
 
   function get(url, cb) {
     var x = new XMLHttpRequest();
-    x.open("GET", url, true);
+    x.open("GET", bust(url), true);
     x.onreadystatechange = function () {
       if (x.readyState !== 4) return;
       if (x.status >= 200 && x.status < 300) {
@@ -116,13 +128,19 @@
     x.send();
   }
 
-  get(dataDir + "/zse-market-activity.json", function (d) {
-    if (d && ((d.indices && d.indices.length) || (d.gainers && d.gainers.length))) {
-      mount(fromActivity(d), d.as_of);
-      return;
-    }
-    get(dataDir + "/zse-ticker.json", function (t) {
-      if (t) mount(fromTicker(t), null);
+  function load() {
+    get(dataDir + "/zse-market-activity.json", function (d) {
+      if (d && ((d.indices && d.indices.length) || (d.gainers && d.gainers.length))) {
+        mount(fromActivity(d), d.as_of, (d.fetched_at || "") + "|" + (d.as_of || ""));
+        return;
+      }
+      get(dataDir + "/zse-ticker.json", function (t) {
+        if (t) mount(fromTicker(t), null, t.fetched_at || "ticker");
+      });
     });
-  });
+  }
+
+  load();
+  // Auto-refresh so a left-open tab picks up the new close without a reload.
+  setInterval(load, 5 * 60 * 1000);
 })();

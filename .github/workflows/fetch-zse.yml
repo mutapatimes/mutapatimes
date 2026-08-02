@@ -1,11 +1,14 @@
 name: Fetch ZSE Ticker
 
-# Weekday daily run, an hour after ZSE close (15:30 CAT = 13:30 UTC).
-# african-markets.com publishes the day's closes by ~17:00 CAT, so we
-# fetch at 17:15 CAT (15:15 UTC) to catch them.
+# Weekdays, hourly through the CAT afternoon. The ZSE's own market-data API
+# publishes the close around 11:30-13:30 UTC; african-markets.com posts its
+# mirror by ~15:00 UTC. Running 11:15-16:15 UTC hourly means we pick up the
+# close within the hour and keep the site current through the afternoon. Each
+# run only commits when the data actually changed, and the social post is
+# deduped by trading day, so extra runs are cheap no-ops.
 on:
   schedule:
-    - cron: '15 15 * * 1-5'
+    - cron: '15 11-16 * * 1-5'
   workflow_dispatch:
 
 jobs:

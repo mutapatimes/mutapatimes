@@ -133,12 +133,27 @@
       '</section>';
   }
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", DATA_URL, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== 4) return;
-    if (xhr.status < 200 || xhr.status >= 300) return;
-    try { render(JSON.parse(xhr.responseText)); } catch (e) {}
-  };
-  xhr.send();
+  var lastSig = null;
+  // Coarse 5-minute cache-bust so the close refreshes promptly without
+  // hammering the origin (everyone in the same window shares one response).
+  function bust(u) { return u + (u.indexOf("?") < 0 ? "?" : "&") + "t=" + Math.floor(Date.now() / 300000); }
+
+  function load() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", bust(DATA_URL), true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState !== 4) return;
+      if (xhr.status < 200 || xhr.status >= 300) return;
+      try {
+        var d = JSON.parse(xhr.responseText);
+        var sig = (d.fetched_at || "") + "|" + (d.as_of || "");
+        if (sig !== lastSig) { lastSig = sig; render(d); }
+      } catch (e) {}
+    };
+    xhr.send();
+  }
+
+  load();
+  // Live-update a left-open tab when a fresh close lands.
+  setInterval(load, 5 * 60 * 1000);
 })();
