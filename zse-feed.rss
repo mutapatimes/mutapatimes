@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>The Mutapa Times — ZSE End of Day</title>
+    <link>https://mutapatimes.com</link>
+    <description>Zimbabwe Stock Exchange end-of-day Market Activity — All Share and sector indices, turnover, market cap, and the day's biggest movers. One item per trading day for the Mutapa Times ZSE autolist.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Aug 2026 18:51:41 +0000</lastBuildDate>
+    <atom:link href="https://mutapatimes.com/zse-feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <title>The Mutapa Times</title>
+      <url>https://mutapatimes.com/img/brand/mark-512.png</url>
+      <link>https://mutapatimes.com</link>
+    </image>
+    <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
+    <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
+    <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>ZSE close 31 Jul 2026: All Share 480.81 (+0.44%)</title>
+      <link>https://mutapatimes.com/zse?d=2026-07-31</link>
+      <description>Turnover ZWG 7.35m across 59 trades. Market cap ZWG 107.71bn. Top gainer SEED.ZW +14.39%, top faller DZL.ZW -10.85%. Full close, indices and notices at mutapatimes.com/zse #Zimbabwe #ZimbabweNews</description>
+      <pubDate>Fri, 31 Jul 2026 13:30:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/zse?d=2026-07-31</guid>
+      <category>Markets</category>
+      <dc:creator>The Mutapa Times</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-07-31" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-07-31"/>
+      <enclosure url="https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-07-31" type="image/jpeg" length="200000"/>
+    </item>
+  </channel>
+</rss>

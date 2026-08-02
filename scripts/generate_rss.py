@@ -1339,6 +1339,7 @@ def write_bio_grid(base):
     # 1. Daily dedicated cards (FX, weather, economy) — pin these up top
     for builder, kind in (
         (build_economy_snapshot_item, "economy"),
+        (build_zse_snapshot_item, "zse"),
         (build_fx_snapshot_item, "fx"),
         (build_weather_snapshot_item, "weather"),
     ):
@@ -1470,6 +1471,111 @@ def write_wordle_feed(base):
     return True
 
 
+def build_zse_snapshot_item(base):
+    """Build today's ZSE end-of-day item for /zse-feed.xml from
+    data/zse-market-activity.json. The link + image are tagged with the
+    market's `as_of` date (not today) so Metricool's URL dedupe posts once
+    per TRADING day and never reposts the same close over the weekend."""
+    path = os.path.join(base, "data", "zse-market-activity.json")
+    if not os.path.exists(path):
+        print("  zse-feed.xml SKIPPED — data/zse-market-activity.json missing")
+        return None
+    try:
+        d = json.load(open(path))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+    as_of = d.get("as_of", "")
+    try:
+        y, m, day = (int(x) for x in as_of.split("-"))
+        age = (datetime.now(timezone.utc).date() - datetime(y, m, day).date()).days
+        if age > 5:
+            print(f"  zse-feed.xml SKIPPED — data stale ({as_of})")
+            return None
+        # Anchor pubDate to the close (15:30 CAT) on the as_of day so reruns
+        # are bit-identical.
+        pub = datetime(y, m, day, 15, 30, tzinfo=timezone(timedelta(hours=2))).astimezone(timezone.utc)
+    except (ValueError, AttributeError):
+        return None
+
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    pretty = f"{day} {months[m - 1]} {y}"
+    a = d.get("activity", {}) or {}
+
+    def _all_share():
+        for x in d.get("indices", []):
+            if (x.get("name") or "").upper() == "ALL SHARE":
+                return x
+        return {}
+
+    def _big(n):
+        if n is None:
+            return "n/a"
+        n = float(n)
+        if n >= 1e9:
+            return f"ZWG {n / 1e9:.2f}bn"
+        if n >= 1e6:
+            return f"ZWG {n / 1e6:.2f}m"
+        return f"ZWG {n:,.0f}"
+
+    def _pct(v):
+        return "" if v is None else f"{'+' if float(v) > 0 else ''}{float(v):.2f}%"
+
+    asx = _all_share()
+    g = (d.get("gainers") or [{}])[0]
+    l = (d.get("losers") or [{}])[0]
+
+    # Straight phrasing, no apostrophes/em dashes (Metricool escapes them).
+    title = f"ZSE close {pretty}: All Share {asx.get('value', 'n/a')} ({_pct(asx.get('change_pct'))})"
+    desc_bits = [
+        f"Turnover {_big(a.get('turnover'))} across {a.get('trades', 'n/a')} trades.",
+        f"Market cap {_big(a.get('market_cap'))}.",
+    ]
+    if g.get("symbol") or g.get("name"):
+        desc_bits.append(
+            f"Top gainer {g.get('symbol') or g.get('name')} {_pct(g.get('change_pct'))}, "
+            f"top faller {l.get('symbol') or l.get('name')} {_pct(l.get('change_pct'))}."
+        )
+    desc_bits.append("Full close, indices and notices at mutapatimes.com/zse")
+
+    return {
+        "title": title,
+        "link": f"{BASE_URL}/zse?d={as_of}",
+        "description": " ".join(desc_bits),
+        "pubDate": pub,
+        "category": "Markets",
+        "author": "The Mutapa Times",
+        "image": f"{BASE_URL}/img/cards/zse/eod-latest.png?v={as_of}",
+    }
+
+
+def write_zse_feed(base):
+    """Write /zse-feed.xml as a single-item daily feed for a dedicated
+    Mutapa Times ZSE autolist (its own template + cadence in Metricool)."""
+    item = build_zse_snapshot_item(base)
+    if not item:
+        return False
+    rss = build_rss([item])
+    rss = rss.replace(
+        "<title>The Mutapa Times</title>",
+        "<title>The Mutapa Times — ZSE End of Day</title>",
+        1,
+    ).replace(
+        f'<atom:link href="{FEED_URL}"',
+        f'<atom:link href="{BASE_URL}/zse-feed.xml"',
+        1,
+    ).replace(
+        "<description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>",
+        "<description>Zimbabwe Stock Exchange end-of-day Market Activity — All Share and sector indices, turnover, market cap, and the day's biggest movers. One item per trading day for the Mutapa Times ZSE autolist.</description>",
+        1,
+    )
+    out = os.path.join(base, "zse-feed.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  zse-feed.xml written ({item['title'][:80]}…)")
+    return True
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser()
@@ -1513,6 +1619,7 @@ def main():
         write_fx_feed(base)
         write_weather_feed(base)
         write_economy_feed(base)
+        write_zse_feed(base)
         write_business_feed(base)
         write_jobs_feed(base)
         write_properties_feed(base)
