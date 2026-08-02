@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-02T08:36:25.811818+00:00",
+  "fetched_at": "2026-08-02T13:53:05.589188+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -121,6 +121,15 @@
       "baths": "1"
     },
     {
+      "title": "Luxury Defined",
+      "url": "https://www.property.co.zw/for-sale/townhouses-pgp252671",
+      "price": "USD 335,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/d8/e5/aa/d8e5aa24-7dc3-49fc-940b-c0fc41b296f9_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
       "title": "Prime Commercial Corner Stand - Lomagundi Road - Westgate Round About",
       "url": "https://www.property.co.zw/for-sale/houses-gat250183",
       "price": "USD 1,700,000",
@@ -175,6 +184,15 @@
       "baths": "2"
     },
     {
+      "title": "3-Bed Home with Cozy Lounge & Tiled Bath – Crowhill Views",
+      "url": "https://www.property.co.zw/for-sale/houses-leg252678",
+      "price": "USD 55,000",
+      "location": "Crowhill Views, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/d4/8c/19/d48c199d-0010-4465-bc35-e4f47a5512d8_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
       "title": "Sandton Park: 5-Bed Home with Island Kitchen & Borehole",
       "url": "https://www.property.co.zw/for-sale/houses-jspp251627",
       "price": "USD 240,000",
@@ -182,24 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/8a/66/ba/8a66bac7-7abe-40a9-bdd6-2164623fb67d_thumbnail591.webp",
       "beds": "5",
       "baths": "6"
-    },
-    {
-      "title": "Montgomery Property For Sale. Good Buy.",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp247409",
-      "price": "USD 85,000",
-      "location": "Glengarry, Bulawayo North",
-      "image": "https://www.property.co.zw/uploadedfiles/df/7b/b4/df7bb4e1-f18a-40a9-b0b0-accec8b4c4bb_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Incomplete Budiriro Cabs- Home — title deeds",
-      "url": "https://www.property.co.zw/for-sale/houses-tpr252247",
-      "price": "USD 47,000",
-      "location": "Budiriro, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/a9/a4/87/a9a487b9-b4ec-4df0-ba9d-d7e5a5ebd4f3_thumbnail591.webp",
-      "beds": "4",
-      "baths": "1"
     }
   ]
 }
