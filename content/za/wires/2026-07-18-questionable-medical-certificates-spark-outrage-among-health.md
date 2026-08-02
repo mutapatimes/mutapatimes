@@ -1,0 +1,16 @@
+---
+title: "Questionable medical certificates spark outrage among healthcare professionals"
+date: 2026-07-18T07:00:00.000Z
+author: IOL
+category: Health
+image: 
+summary: "Questionable medical certificates spark outrage among healthcare professionals"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSzdpN3U1TDl4cUdvUTNQeXlHZnE4aHBOWlFRWGpFTW04WFA3akIySmdMXzEydGsyNTB0WHpkc1BUMXNTUEwzdjU3dUZ6Z3pqakdnbWxBV0dWQ295ZDhVNy1XVmJjRmlxSUtFOXh1QTNqVmZ1ZFpiS28zTjhlbWw3RGpGbUlpME94bks2U0xDYnJuVUszYWprbjFHbUJjcU1nUkNKLVIzM19kVzhZY0trQzdDOExuVXl5a1RLUGVDM0tkMi0y?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMixAFBVV95cUxNSzdpN3U1TDl4cUdvUTNQeXlHZnE4aHBOWlFRWGpFTW04WFA3akIySmdMXzEydGsyNTB0WHpkc1BUMXNTUEwzdjU3dUZ6Z3pqakdnbWxBV0dWQ295ZDhVNy1XVmJjRmlxSUtFOXh1QTNqVmZ1ZFpiS28zTjhlbWw3RGpGbUlpME94bks2U0xDYnJuVUszYWprbjFHbUJjcU1nUkNKLVIzM19kVzhZY0trQzdDOExuVXl5a1RLUGVDM0tkMi0y?oc=5)
