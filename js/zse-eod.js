@@ -4,7 +4,8 @@
  * Renders /data/zse-market-activity.json (written weekdays by
  * scripts/fetch_zse_market.py from the ZSE public market-data API) into any
  * element with id "zse-eod". Self-contained: injects its own styles using the
- * site's design tokens, so it drops onto the /zse hub and /economy page alike.
+ * site's design tokens (Playfair/Inter, --paper/--ink/--accent), so it drops
+ * onto the /zse hub and /economy page alike. Auto-refreshes open tabs.
  */
 (function () {
   "use strict";
@@ -21,7 +22,7 @@
     if (n == null || isNaN(n)) return "—";
     return Number(n).toLocaleString("en-GB", { minimumFractionDigits: dp || 0, maximumFractionDigits: dp || 0 });
   }
-  function big(n) { // 107711087205 -> "107.71bn"
+  function big(n) {
     if (n == null || isNaN(n)) return "—";
     n = Number(n);
     if (n >= 1e9) return (n / 1e9).toFixed(2) + "bn";
@@ -33,8 +34,8 @@
     var v = Number(p);
     return (v > 0 ? "+" : "") + v.toFixed(2) + "%";
   }
-  function dir(p) { return p > 0 ? "up" : (p < 0 ? "down" : "flat"); }
-  function arrow(d) { return d === "up" ? "▲" : (d === "down" ? "▼" : "■"); }
+  function dir(p) { p = Number(p); return p > 0 ? "up" : (p < 0 ? "down" : "flat"); }
+  function arrow(d) { return d === "up" ? "▲" : (d === "down" ? "▼" : "—"); }
   function niceDate(iso) {
     if (!iso) return "";
     var p = iso.split("-");
@@ -42,39 +43,64 @@
     var mo = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     return Number(p[2]) + " " + mo[Number(p[1]) - 1] + " " + p[0];
   }
+  // Source indices are ALL CAPS; title-case them but keep ZSE/ETF/ICT acronyms.
+  function label(name) {
+    var keep = { ZSE: 1, ETF: 1, TOP: 0 };
+    return String(name || "").toLowerCase().replace(/\b([a-z0-9]+)\b/g, function (w) {
+      var u = w.toUpperCase();
+      if (u === "ZSE" || u === "ETF" || u === "ICT") return u;
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    });
+  }
 
   function style() {
     if (document.getElementById("zse-eod-style")) return;
     var s = document.createElement("style");
     s.id = "zse-eod-style";
     s.textContent = [
-      ".zeod{max-width:1100px;margin:18px auto 8px;padding:0 20px;font-family:'Inter',system-ui,sans-serif;color:var(--ink,#1a1a1a);}",
-      ".zeod-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:3px solid var(--accent,#c41e1e);padding-top:10px;flex-wrap:wrap;}",
-      ".zeod-h{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(1.3rem,2.6vw,1.7rem);margin:0;}",
-      ".zeod-asof{font-size:.8rem;opacity:.62;font-weight:600;letter-spacing:.02em;}",
-      ".zeod-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0 4px;}",
-      ".zeod-kpi{border:1px solid rgba(0,0,0,.12);border-radius:10px;padding:12px 14px;background:var(--paper,#fafaf7);}",
-      ".zeod-kpi .lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;opacity:.6;font-weight:700;}",
-      ".zeod-kpi .val{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:1.35rem;margin-top:3px;line-height:1.05;font-variant-numeric:tabular-nums;}",
-      ".zeod-kpi .sub{font-size:.72rem;font-weight:700;margin-top:2px;}",
-      ".up{color:#1a7f37;}.down{color:#c41e1e;}.flat{opacity:.6;}",
-      ".zeod-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-top:16px;}",
-      ".zeod-col-h{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;opacity:.6;margin:0 0 8px;}",
-      ".zeod-idx{display:grid;grid-template-columns:1fr auto auto;gap:2px 10px;font-size:.86rem;}",
-      ".zeod-idx .nm{padding:4px 0;border-top:1px solid rgba(0,0,0,.06);}",
-      ".zeod-idx .vv{padding:4px 0;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-variant-numeric:tabular-nums;}",
-      ".zeod-idx .cc{padding:4px 0;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}",
-      ".zeod-ml{display:grid;grid-template-columns:1fr;gap:14px;}",
-      ".zeod-mv{font-size:.84rem;}",
-      ".zeod-mv .row{display:flex;justify-content:space-between;gap:8px;padding:4px 0;border-top:1px solid rgba(0,0,0,.06);}",
-      ".zeod-mv .sym{font-weight:700;}.zeod-mv .ch{font-weight:700;font-variant-numeric:tabular-nums;}",
-      ".zeod-notices{margin-top:16px;}",
-      ".zeod-notices a{display:block;text-decoration:none;color:var(--ink,#1a1a1a);padding:6px 0;border-top:1px solid rgba(0,0,0,.06);font-size:.86rem;}",
-      ".zeod-notices a:hover{color:var(--accent,#c41e1e);}",
-      ".zeod-notices .nd{font-size:.68rem;opacity:.55;font-weight:700;letter-spacing:.03em;}",
-      ".zeod-note{font-size:.72rem;opacity:.55;margin:14px 0 2px;border-left:2px solid var(--accent,#c41e1e);padding-left:8px;}",
-      "@media(max-width:720px){.zeod-kpis{grid-template-columns:repeat(2,1fr);}.zeod-grid{grid-template-columns:1fr;}}",
-      "@media(prefers-color-scheme:dark){.zeod-kpi,.zeod-idx .nm,.zeod-idx .vv,.zeod-idx .cc,.zeod-mv .row,.zeod-notices a{border-color:rgba(255,255,255,.12);} .up{color:#4ade80;}}"
+      ".zeod{max-width:1100px;margin:20px auto 10px;padding:0 20px;font-family:'Inter',system-ui,sans-serif;color:var(--ink,#1a1a1a);}",
+      /* header */
+      ".zeod-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:3px solid var(--accent,#c41e1e);padding-top:12px;margin-bottom:16px;}",
+      ".zeod-h{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(1.35rem,2.7vw,1.8rem);margin:0;line-height:1;}",
+      ".zeod-asof{display:flex;align-items:center;gap:8px;font-size:.8rem;opacity:.7;font-weight:600;}",
+      ".zeod-eod{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent,#c41e1e);border:1px solid currentColor;border-radius:999px;padding:2px 8px;opacity:.9;}",
+      /* KPI tiles */
+      ".zeod-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}",
+      ".zeod-kpi{border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:14px 16px;background:var(--paper,#fafaf7);}",
+      ".zeod-kpi .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;opacity:.55;font-weight:800;}",
+      ".zeod-kpi .val{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:1.5rem;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums;}",
+      ".zeod-kpi .sub{font-size:.74rem;font-weight:800;margin-top:4px;font-variant-numeric:tabular-nums;}",
+      ".up{color:#1a7f37;}.down{color:#c41e1e;}.flat{opacity:.5;}",
+      /* layout */
+      ".zeod-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;align-items:start;}",
+      ".zeod-panel{border:1px solid rgba(0,0,0,.1);border-radius:12px;background:var(--paper,#fafaf7);padding:14px 16px 6px;margin-bottom:18px;}",
+      ".zeod-ph{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;opacity:.55;margin:0 0 8px;}",
+      /* indices — two responsive columns of aligned rows */
+      ".zeod-idx{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;}",
+      ".zeod-idx .r{display:grid;grid-template-columns:1fr auto 4.6rem;align-items:baseline;gap:8px;padding:7px 0;border-top:1px solid rgba(0,0,0,.07);}",
+      ".zeod-idx .r:first-child,.zeod-idx .r:nth-child(2){border-top:0;}",
+      ".zeod-idx .n{font-size:.82rem;line-height:1.2;opacity:.82;}",
+      ".zeod-idx .v{font-size:.86rem;font-weight:600;text-align:right;font-variant-numeric:tabular-nums;}",
+      ".zeod-idx .c{font-size:.82rem;font-weight:700;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}",
+      /* movers */
+      ".zeod-mv{list-style:none;margin:0;padding:0;}",
+      ".zeod-mv li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid rgba(0,0,0,.07);}",
+      ".zeod-mv li:first-child{border-top:0;}",
+      ".zeod-mv .s{font-weight:700;font-size:.9rem;letter-spacing:.01em;}",
+      ".zeod-mv .p{font-size:.72rem;opacity:.55;margin-left:6px;font-weight:500;font-variant-numeric:tabular-nums;}",
+      ".zeod-mv .c{font-weight:800;font-size:.9rem;font-variant-numeric:tabular-nums;white-space:nowrap;}",
+      /* notices */
+      ".zeod-notices a{display:block;text-decoration:none;color:var(--ink,#1a1a1a);padding:9px 0;border-top:1px solid rgba(0,0,0,.07);}",
+      ".zeod-notices a:first-of-type{border-top:0;}",
+      ".zeod-notices a:hover .nt{color:var(--accent,#c41e1e);}",
+      ".zeod-notices .nd{display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-weight:800;margin-bottom:3px;}",
+      ".zeod-notices .nt{display:block;font-size:.9rem;line-height:1.35;}",
+      ".zeod-note{font-size:.72rem;opacity:.5;margin:14px 0 2px;border-left:2px solid var(--accent,#c41e1e);padding-left:9px;}",
+      /* responsive */
+      "@media(max-width:820px){.zeod-grid{grid-template-columns:1fr;}}",
+      "@media(max-width:620px){.zeod-kpis{grid-template-columns:repeat(2,1fr);}.zeod-idx{grid-template-columns:1fr;}}",
+      "@media(prefers-color-scheme:dark){.zeod-kpi,.zeod-panel{border-color:rgba(255,255,255,.12);}",
+      "  .zeod-idx .r,.zeod-mv li,.zeod-notices a{border-color:rgba(255,255,255,.1);} .up{color:#4ade80;}}"
     ].join("\n");
     document.head.appendChild(s);
   }
@@ -87,10 +113,12 @@
   }
 
   function moverRows(list) {
-    return (list || []).map(function (m) {
+    if (!list || !list.length) return '<li class="flat" style="opacity:.5">No data</li>';
+    return list.map(function (m) {
       var d = dir(m.change_pct);
-      return '<div class="row"><span class="sym">' + esc(m.symbol || m.name) + '</span>' +
-        '<span class="ch ' + d + '">' + esc(pct(m.change_pct)) + '</span></div>';
+      var price = m.price != null ? '<span class="p">' + esc(commas(m.price, 2)) + "</span>" : "";
+      return '<li><span class="s">' + esc(m.symbol || m.name) + price + "</span>" +
+        '<span class="c ' + d + '">' + arrow(d) + " " + esc(pct(m.change_pct)) + "</span></li>";
     }).join("");
   }
 
@@ -98,44 +126,45 @@
     style();
     var a = d.activity || {};
     var as = allShare(d);
+
     var idxRows = (d.indices || []).map(function (x) {
-      return '<span class="nm">' + esc(x.name) + '</span>' +
-        '<span class="vv">' + esc(commas(x.value, 2)) + '</span>' +
-        '<span class="cc ' + esc(x.direction) + '">' + esc(arrow(x.direction)) + " " + esc(pct(x.change_pct)) + '</span>';
+      return '<div class="r"><span class="n">' + esc(label(x.name)) + '</span>' +
+        '<span class="v">' + esc(commas(x.value, 2)) + '</span>' +
+        '<span class="c ' + esc(x.direction) + '">' + arrow(x.direction) + " " + esc(pct(x.change_pct)) + "</span></div>";
     }).join("");
+
     var notices = (d.notices || []).slice(0, 6).map(function (n) {
-      var href = n.url ? ' href="' + esc(n.url) + '" target="_blank" rel="noopener"' : "";
-      return "<a" + href + '><span class="nd">' + esc(niceDate(n.date)) +
-        (n.category ? " · " + esc(n.category) : "") + '</span>' + esc(n.title) + "</a>";
+      var meta = niceDate(n.date) + (n.category ? " · " + n.category : "");
+      var open = n.url ? '<a href="' + esc(n.url) + '" target="_blank" rel="noopener">' : "<a>";
+      return open + '<span class="nd">' + esc(meta) + '</span><span class="nt">' + esc(n.title) + "</span></a>";
     }).join("");
 
     slot.innerHTML =
       '<section class="zeod" aria-label="ZSE end of day">' +
         '<div class="zeod-head"><h2 class="zeod-h">ZSE at the close</h2>' +
-          '<span class="zeod-asof">' + esc(niceDate(d.as_of)) + ' · ' + esc(d.currency || "ZWG") + '</span></div>' +
+          '<span class="zeod-asof">' + esc(niceDate(d.as_of)) + ' · ' + esc(d.currency || "ZWG") +
+            ' <span class="zeod-eod">End of day</span></span></div>' +
         '<div class="zeod-kpis">' +
           '<div class="zeod-kpi"><div class="lbl">Trades</div><div class="val">' + esc(commas(a.trades, 0)) + '</div></div>' +
           '<div class="zeod-kpi"><div class="lbl">Turnover</div><div class="val">' + esc(commas(a.turnover, 0)) + '</div></div>' +
           '<div class="zeod-kpi"><div class="lbl">Market cap</div><div class="val">' + esc(big(a.market_cap)) + '</div></div>' +
           '<div class="zeod-kpi"><div class="lbl">All Share</div><div class="val">' + (as ? esc(commas(as.value, 2)) : "—") +
-            '</div>' + (as ? '<div class="sub ' + esc(as.direction) + '">' + esc(arrow(as.direction) + " " + pct(as.change_pct)) + '</div>' : "") + '</div>' +
+            '</div>' + (as ? '<div class="sub ' + esc(as.direction) + '">' + arrow(as.direction) + " " + esc(pct(as.change_pct)) + '</div>' : "") + '</div>' +
         '</div>' +
         '<div class="zeod-grid">' +
-          '<div><p class="zeod-col-h">Indices</p><div class="zeod-idx">' + idxRows + '</div></div>' +
-          '<div><p class="zeod-col-h">Movers</p><div class="zeod-ml">' +
-            '<div class="zeod-mv"><p class="zeod-col-h">Gainers</p>' + moverRows(d.gainers) + '</div>' +
-            '<div class="zeod-mv"><p class="zeod-col-h">Losers</p>' + moverRows(d.losers) + '</div>' +
-          '</div></div>' +
+          '<div class="zeod-panel"><p class="zeod-ph">Indices</p><div class="zeod-idx">' + idxRows + '</div></div>' +
+          '<div class="zeod-side">' +
+            '<div class="zeod-panel"><p class="zeod-ph">Top gainers</p><ol class="zeod-mv">' + moverRows(d.gainers) + '</ol></div>' +
+            '<div class="zeod-panel"><p class="zeod-ph">Top losers</p><ol class="zeod-mv">' + moverRows(d.losers) + '</ol></div>' +
+          '</div>' +
         '</div>' +
-        (notices ? '<div class="zeod-notices"><p class="zeod-col-h">ZSE announcements &amp; notices</p>' + notices + '</div>' : "") +
+        (notices ? '<div class="zeod-panel zeod-notices"><p class="zeod-ph">Announcements &amp; notices</p>' + notices + '</div>' : "") +
         '<p class="zeod-note">Source: Zimbabwe Stock Exchange, end of day. Figures in ' + esc(d.currency || "ZWG") +
           '. Editorial reference, not investment advice.</p>' +
       '</section>';
   }
 
   var lastSig = null;
-  // Coarse 5-minute cache-bust so the close refreshes promptly without
-  // hammering the origin (everyone in the same window shares one response).
   function bust(u) { return u + (u.indexOf("?") < 0 ? "?" : "&") + "t=" + Math.floor(Date.now() / 300000); }
 
   function load() {
@@ -154,6 +183,5 @@
   }
 
   load();
-  // Live-update a left-open tab when a fresh close lands.
   setInterval(load, 5 * 60 * 1000);
 })();
