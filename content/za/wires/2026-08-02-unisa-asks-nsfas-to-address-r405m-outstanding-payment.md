@@ -1,0 +1,16 @@
+---
+title: "Unisa asks NSFAS to address R405m outstanding payment"
+date: 2026-08-02T19:44:31.000Z
+author: News24
+category: Business
+image: 
+summary: "Unisa asks NSFAS to address R405m outstanding payment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdVIwNkJHdFpEcUZNV1h2WEY1Q256ZXRYdXZhUFVkcC1oeko5UkU2MUxiRUxXX2F0aGk1TmFpMjhGS0JFelZjVjJSdXFfcThVY1RpeUt0QXFhMXgySFFpcUhGclZGSHNxQlhwLTFuend6U1JUSnd1bWRBM3p6NEpHQ1lUNU0xVTRBS3NNajNqSDBxQThmdHdvS2ZVLU1YX2xBeDk0S3Y0ZWJ0R0VzeFI1ZE9fcGVhMVFtM2VFM2Z5cEIyaE1SSDJzbDBkdTl5R3NsOS1SWGtoM1M1dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdVIwNkJHdFpEcUZNV1h2WEY1Q256ZXRYdXZhUFVkcC1oeko5UkU2MUxiRUxXX2F0aGk1TmFpMjhGS0JFelZjVjJSdXFfcThVY1RpeUt0QXFhMXgySFFpcUhGclZGSHNxQlhwLTFuend6U1JUSnd1bWRBM3p6NEpHQ1lUNU0xVTRBS3NNajNqSDBxQThmdHdvS2ZVLU1YX2xBeDk0S3Y0ZWJ0R0VzeFI1ZE9fcGVhMVFtM2VFM2Z5cEIyaE1SSDJzbDBkdTl5R3NsOS1SWGtoM1M1dw?oc=5)

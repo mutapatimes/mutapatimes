@@ -1,0 +1,16 @@
+---
+title: "PALI LEHOHLA | Why South Africa’s big-picture economics keep failing local communities"
+date: 2026-08-03T02:30:13.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "PALI LEHOHLA | Why South Africa’s big-picture economics keep failing local communities"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPN3RPd3l4Q3lEQVQyc0ZmVHQ3TDlkdjhJRzhEd3VkQnRhdE43S05jQVFyZXlyVThvemZ2UElodE5rUFRITm5TWXcyb3Rwd0UxS3l3bWY2aW9UVzNJOVRSVEVUQTJMakhPSFhpWFdXRnN6ZW52X2FOeVVLXzFrZWxtZkdTTG5vdmtGMWoyNWVwOFh6bHIwS1AwaU5ieTh2M2hlTll1YzhtNEZRd1hJd0RtaFcwUVp4Z09KMlh4MEh6Mkc5ZVk5X3hFVkZTYUZXTmdsM1BSdzJ0M0JranJacVZMNnljWGxySGVsZ0NsMg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPN3RPd3l4Q3lEQVQyc0ZmVHQ3TDlkdjhJRzhEd3VkQnRhdE43S05jQVFyZXlyVThvemZ2UElodE5rUFRITm5TWXcyb3Rwd0UxS3l3bWY2aW9UVzNJOVRSVEVUQTJMakhPSFhpWFdXRnN6ZW52X2FOeVVLXzFrZWxtZkdTTG5vdmtGMWoyNWVwOFh6bHIwS1AwaU5ieTh2M2hlTll1YzhtNEZRd1hJd0RtaFcwUVp4Z09KMlh4MEh6Mkc5ZVk5X3hFVkZTYUZXTmdsM1BSdzJ0M0JranJacVZMNnljWGxySGVsZ0NsMg?oc=5)

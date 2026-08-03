@@ -1,0 +1,16 @@
+---
+title: "Why linguistic profiling in an era of migration and tension makes no sense"
+date: 2026-08-02T10:29:49.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Why linguistic profiling in an era of migration and tension makes no sense"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijwJBVV95cUxQeFZBVUllM0Q2MWZCX0JPQjFWY1hKcXE1YmJ4NnF1MTIwQnVOSlgza1lGeVFvcjhBOGoyWmVUdm8xSWhYTkFiNWp0dWgwYzQwNVhDaklDZ1lqV09QUGJfWjNPUEwyeFl0RHVTNm5Uc2FrRElXazNqa18yOWdIMThQblZWNzVNNFltODdFUUxpYkFCUnhKYUV5OFh4SXcxS1BGRElMbTBHcjZMYjJUek56WWxiSnRyWGNsSzg2OVhheEtJcGRTNDgwQVoyVV9lSS1jNjBKdkdhOHVjQXVaSUtRUEt4ZWVESWtjSDE5dEYwZ2VzbEZ3Z3JqWk54LThYSVdjeFhJMTJsNEI5endNNEs0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijwJBVV95cUxQeFZBVUllM0Q2MWZCX0JPQjFWY1hKcXE1YmJ4NnF1MTIwQnVOSlgza1lGeVFvcjhBOGoyWmVUdm8xSWhYTkFiNWp0dWgwYzQwNVhDaklDZ1lqV09QUGJfWjNPUEwyeFl0RHVTNm5Uc2FrRElXazNqa18yOWdIMThQblZWNzVNNFltODdFUUxpYkFCUnhKYUV5OFh4SXcxS1BGRElMbTBHcjZMYjJUek56WWxiSnRyWGNsSzg2OVhheEtJcGRTNDgwQVoyVV9lSS1jNjBKdkdhOHVjQXVaSUtRUEt4ZWVESWtjSDE5dEYwZ2VzbEZ3Z3JqWk54LThYSVdjeFhJMTJsNEI5endNNEs0?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Hundreds of foreign pupils gone from Gauteng schools after anti-migrant protests"
+date: 2026-08-02T23:32:13.000Z
+author: News24
+category: Education
+image: 
+summary: "Hundreds of foreign pupils gone from Gauteng schools after anti-migrant protests"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS3pnNDkzMVN2SUExdW1UeU9RTzlnSTVVRXkzZzg0OGlWSUNkeUZ5Y3RUcnA0cU9KUkJ4a1MzSkZ1dmpPVXkxc2VHQzY1WTJxYk4yaHYxTVFxZFFZVzh1anBlc0tiNE9UcHRaMHRLRmdhSlRqMUVzNmRocmx0RU9xVDdWNWxLYUZ6ZEdLN0o3azN2X0xFdHR5TWZjNFJvWE5CS3JtU05PYTUzSktRZzNJRnN4cVA2VUthbkpxMnRwejZxcmtTNmNTSVljaXYyQmJiWFlpd0djeGVvUURmQmplUg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS3pnNDkzMVN2SUExdW1UeU9RTzlnSTVVRXkzZzg0OGlWSUNkeUZ5Y3RUcnA0cU9KUkJ4a1MzSkZ1dmpPVXkxc2VHQzY1WTJxYk4yaHYxTVFxZFFZVzh1anBlc0tiNE9UcHRaMHRLRmdhSlRqMUVzNmRocmx0RU9xVDdWNWxLYUZ6ZEdLN0o3azN2X0xFdHR5TWZjNFJvWE5CS3JtU05PYTUzSktRZzNJRnN4cVA2VUthbkpxMnRwejZxcmtTNmNTSVljaXYyQmJiWFlpd0djeGVvUURmQmplUg?oc=5)
