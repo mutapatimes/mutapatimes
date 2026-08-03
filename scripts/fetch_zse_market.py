@@ -31,6 +31,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5) AppleWebKit/605.1.15 "
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 OUT = os.path.join(ROOT, "data", "zse-market-activity.json")
+HIST = os.path.join(ROOT, "data", "zse-history.json")
 
 
 def _get(path):
@@ -166,6 +167,40 @@ def build():
     return payload
 
 
+def append_history(payload):
+    """Upsert the day's closes into data/zse-history.json (one entry per
+    trading day) so 1M/3M/6M/YTD/all-time charts can be built. There is no
+    public ZSE history endpoint, so the series is accumulated forward from
+    each end-of-day snapshot."""
+    d = payload.get("as_of")
+    if not d:
+        return
+    hist = {"updated": "", "series": []}
+    if os.path.isfile(HIST):
+        try:
+            hist = json.load(open(HIST, encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            hist = {"updated": "", "series": []}
+    idx = {}
+    for x in payload.get("indices", []):
+        if x.get("name") and x.get("value") is not None:
+            idx[x["name"]] = x["value"]
+    entry = {
+        "d": d,
+        "idx": idx,
+        "turnover": payload.get("activity", {}).get("turnover"),
+        "mcap": payload.get("activity", {}).get("market_cap"),
+    }
+    series = [e for e in hist.get("series", []) if e.get("d") != d]  # upsert by date
+    series.append(entry)
+    series.sort(key=lambda e: e.get("d", ""))
+    hist["series"] = series
+    hist["updated"] = datetime.now(timezone.utc).isoformat()
+    with open(HIST, "w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"  history: {len(series)} trading day(s) in {os.path.relpath(HIST, ROOT)}")
+
+
 def main():
     try:
         payload = build()
@@ -180,6 +215,7 @@ def main():
 
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
+    append_history(payload)
     print(f"Wrote {os.path.relpath(OUT, ROOT)}  (as of {payload['as_of']})")
     print(f"  trades={act['trades']}  turnover={act['turnover']}  mcap={act['market_cap']}")
     print(f"  indices={len(payload['indices'])}  gainers={len(payload['gainers'])}  "

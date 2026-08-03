@@ -703,6 +703,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
   </header>
   {hub_banner_html()}
   <div id="zse-eod"></div>
+  <div id="zse-chart"></div>
   <div class="zse-stats" role="list">
 {stats_html}
   </div>
@@ -815,6 +816,7 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
 }})();
 </script>
 <script defer src="/js/zse-eod.js?v=3"></script>
+<script defer src="/js/zse-chart.js?v=1"></script>
 </body>
 </html>
 '''
