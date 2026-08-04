@@ -1,0 +1,16 @@
+---
+title: "‘Football and education can coexist’: Siphiwe Tshabalala on leading by example, prioritising books beyond the pitch"
+date: 2026-08-04T17:38:07.000Z
+author: News24
+category: Sport
+image: 
+summary: "‘Football and education can coexist’: Siphiwe Tshabalala on leading by example, prioritising books beyond the pitch"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwJBVV95cUxPcWdmTmdvNkYzbGpqREFuaWFCQzEzWE8yVlJxLTZUMXFMLVdvVl95VVdVMzYydWFYcnpjb3ZjMTB2Ul9ual9RUkM4VWdBaUYwRGtiWW5Gd3BhMkoyQ2dCTGRaVVpsa3U4X01QS0JXazJRZnZPaEhudGZDcEhlbDJJQXd6S2xBclMzRlFkdGJlbzlhUjRtMVNqLUNZNldMcFk0cDA1RVNBR1VtZ0hWelJSMjJPeXlWMmdkaE9MYk82bkZabWhlLWZQS0c3WlJXNXJ0R19IY3ctVUNRcTh0T0RKSEp0dDNXMzZMR2I1dXBPbVhWZG9XWlc1ZWk2WlhheDliUFVtYXpZSTJSSnRDbDFXYUh4dW9qcnc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMilwJBVV95cUxPcWdmTmdvNkYzbGpqREFuaWFCQzEzWE8yVlJxLTZUMXFMLVdvVl95VVdVMzYydWFYcnpjb3ZjMTB2Ul9ual9RUkM4VWdBaUYwRGtiWW5Gd3BhMkoyQ2dCTGRaVVpsa3U4X01QS0JXazJRZnZPaEhudGZDcEhlbDJJQXd6S2xBclMzRlFkdGJlbzlhUjRtMVNqLUNZNldMcFk0cDA1RVNBR1VtZ0hWelJSMjJPeXlWMmdkaE9MYk82bkZabWhlLWZQS0c3WlJXNXJ0R19IY3ctVUNRcTh0T0RKSEp0dDNXMzZMR2I1dXBPbVhWZG9XWlc1ZWk2WlhheDliUFVtYXpZSTJSSnRDbDFXYUh4dW9qcnc?oc=5)

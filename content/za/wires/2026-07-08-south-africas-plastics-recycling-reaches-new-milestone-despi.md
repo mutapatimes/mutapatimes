@@ -1,0 +1,16 @@
+---
+title: "South Africa's Plastics Recycling Reaches New Milestone Despite Manufacturing Slowdown"
+date: 2026-07-08T07:00:00.000Z
+author: Engineering News
+category: Business
+image: 
+summary: "South Africa's Plastics Recycling Reaches New Milestone Despite Manufacturing Slowdown"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUTYzWEgyazJpTTZ4T0pCdGdaeFRhallpU3hwclFMV3RLMXlTN1FpdkNEaFBITV9SRDg4MlN4RV81NXVkN1NaYk9OR05UekF1UnhYY1BxMGRFWW15dmtTQ25iQ21SU29acHIzWm1HdU4xMjBqSENvSWJydGN4SnhtTFpNSjRjcHNtQU9BZDVsUFJMUHZtbjZVRkNqclVwV21ldXpoNjMtZU9qMzhrVWFLVmVsWnNfVG5Ud2dfdlVUczhUbkNSZ0diTGliWlZ1ZERYd0VWYw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Engineering News.*
+[Read original article](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUTYzWEgyazJpTTZ4T0pCdGdaeFRhallpU3hwclFMV3RLMXlTN1FpdkNEaFBITV9SRDg4MlN4RV81NXVkN1NaYk9OR05UekF1UnhYY1BxMGRFWW15dmtTQ25iQ21SU29acHIzWm1HdU4xMjBqSENvSWJydGN4SnhtTFpNSjRjcHNtQU9BZDVsUFJMUHZtbjZVRkNqclVwV21ldXpoNjMtZU9qMzhrVWFLVmVsWnNfVG5Ud2dfdlVUczhUbkNSZ0diTGliWlZ1ZERYd0VWYw?oc=5)

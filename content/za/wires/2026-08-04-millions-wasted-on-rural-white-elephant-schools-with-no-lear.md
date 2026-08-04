@@ -1,0 +1,16 @@
+---
+title: "Millions wasted on rural white elephant schools with no learners"
+date: 2026-08-04T19:41:40.000Z
+author: Daily Maverick
+category: Education
+image: 
+summary: "Millions wasted on rural white elephant schools with no learners"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMioAJBVV95cUxOOUc1ZzJTWVpueE44dDdLZU5NMjIxSUNld3pTZU1LRlZfRlRwYTdTVW1IZ2Q0MXVpVzZZWlRjakNTNVB6X1V1Z3dJdjJWdUMzTnlMWkNBTUVFRWUtSlVFaEtPMDJ2bGw3dmpxeUNldU80SFhqQTNNYnd3RVZLMmxSaFdZMkxWQTI0dzVoWldNSmxSa19XZEF2RVN3NXI0VXJQVFNHSGVxX3hyXzlVMDlRMGlXOGNoY29vZkc3SFBjd3ZFV2NkdU1JVS1OZXdGT0pzQXJkQWxFa1VKUVVyY3lsRWVpVUx6UDhSdVZMem5IbDRZQjJpeDJfbGY0LVdCVEItcFdWY21fTzJEQUJod3F5MWk4dENWXzJSdERJR3hYUF8?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMioAJBVV95cUxOOUc1ZzJTWVpueE44dDdLZU5NMjIxSUNld3pTZU1LRlZfRlRwYTdTVW1IZ2Q0MXVpVzZZWlRjakNTNVB6X1V1Z3dJdjJWdUMzTnlMWkNBTUVFRWUtSlVFaEtPMDJ2bGw3dmpxeUNldU80SFhqQTNNYnd3RVZLMmxSaFdZMkxWQTI0dzVoWldNSmxSa19XZEF2RVN3NXI0VXJQVFNHSGVxX3hyXzlVMDlRMGlXOGNoY29vZkc3SFBjd3ZFV2NkdU1JVS1OZXdGT0pzQXJkQWxFa1VKUVVyY3lsRWVpVUx6UDhSdVZMem5IbDRZQjJpeDJfbGY0LVdCVEItcFdWY21fTzJEQUJod3F5MWk4dENWXzJSdERJR3hYUF8?oc=5)

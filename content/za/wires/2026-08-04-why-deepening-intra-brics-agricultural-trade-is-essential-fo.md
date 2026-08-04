@@ -1,0 +1,16 @@
+---
+title: "Why deepening intra-BRICS agricultural trade is essential for SA"
+date: 2026-08-04T18:28:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Why deepening intra-BRICS agricultural trade is essential for SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQMnJ1MERjYWZQZWpqdGVCNUdOZllmV1hBMjhoWUhnZDlWcnJQWHc3aEtJRG11QjZLbndUUlpKODVfUXlKanJrY0J4bk1XVWxPazhuTU90UlZsY2lMWHFLT3k5d2NaYTVMUkNud0p4eFNlcEUwSFNyWW4yUktXS3ozcS1FSU92bk1jQzhhd3M0WmtfWUFrZGJ6elpzWmN4VzhkMmpPbGxWTjVfWkx0dkp5YUtnWUJTX19tSlBKSFBJdXpxZ2RycE56OU5wVFBDd2dsR2hlR3RnVmhFclFCaWZzMXJDQVJkYmQ0Q2xlOVAwMnlyT09JN1FORlhVNl9mOUd6WDR5d3lLb2JHelRyV3A1TDQydzJoSzZRWmRacnM5QkRHV0xBNkMwTWZ3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxQMnJ1MERjYWZQZWpqdGVCNUdOZllmV1hBMjhoWUhnZDlWcnJQWHc3aEtJRG11QjZLbndUUlpKODVfUXlKanJrY0J4bk1XVWxPazhuTU90UlZsY2lMWHFLT3k5d2NaYTVMUkNud0p4eFNlcEUwSFNyWW4yUktXS3ozcS1FSU92bk1jQzhhd3M0WmtfWUFrZGJ6elpzWmN4VzhkMmpPbGxWTjVfWkx0dkp5YUtnWUJTX19tSlBKSFBJdXpxZ2RycE56OU5wVFBDd2dsR2hlR3RnVmhFclFCaWZzMXJDQVJkYmQ0Q2xlOVAwMnlyT09JN1FORlhVNl9mOUd6WDR5d3lLb2JHelRyV3A1TDQydzJoSzZRWmRacnM5QkRHV0xBNkMwTWZ3?oc=5)

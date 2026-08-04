@@ -1,0 +1,16 @@
+---
+title: "Ominous signs as referees named for All Blacks-Springboks tests"
+date: 2026-08-04T18:25:03.000Z
+author: NZ Herald
+category: Sport
+image: 
+summary: "Ominous signs as referees named for All Blacks-Springboks tests"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbU81aFhhZGc1RUgxdC1FUWFuWlpibWVuaWQyeHVmZDQ2RXdhNGVHTnNvVHlhSjV4TGMxRHVNV1hWZXhDTm05VjRlUGU1SmhEOXNFMWNoSXJSN1Q3cWF2WkZwdUVqS3RJZ1I0Y01jSTFFeV9PQ292cWVTa2RrUDdzdkJJUU9KM0E0aGk5RG93MndBUzNFWE5UWXhhcW9oSnVrd1VFUGtaWU5TU01KUFFJTXpMYThIYzJuWFVFWDhyaGdiS0p4d0pqODU0RVZPYWlZRk02U25fSFZfSWNiSG1Vc1oyUHI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by NZ Herald.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbU81aFhhZGc1RUgxdC1FUWFuWlpibWVuaWQyeHVmZDQ2RXdhNGVHTnNvVHlhSjV4TGMxRHVNV1hWZXhDTm05VjRlUGU1SmhEOXNFMWNoSXJSN1Q3cWF2WkZwdUVqS3RJZ1I0Y01jSTFFeV9PQ292cWVTa2RrUDdzdkJJUU9KM0E0aGk5RG93MndBUzNFWE5UWXhhcW9oSnVrd1VFUGtaWU5TU01KUFFJTXpMYThIYzJuWFVFWDhyaGdiS0p4d0pqODU0RVZPYWlZRk02U25fSFZfSWNiSG1Vc1oyUHI?oc=5)
