@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-04T09:06:33.281725+00:00",
+  "fetched_at": "2026-08-04T14:38:26.904292+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -92,6 +92,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/f8/80/26/f8802640-2bd1-4d2a-9e65-2db5e721710a_thumbnail591.webp",
       "beds": "3",
       "baths": "1"
+    },
+    {
+      "title": "Finish To Your Own Taste- Bluffhill Property Up For Grabs",
+      "url": "https://www.property.co.zw/for-sale/houses-smy238731",
+      "price": "USD 235,000",
+      "location": "Bluff Hill, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/77/45/6b/77456bc6-d718-48f1-8271-96dcaaeb2db8_thumbnail591.webp",
+      "beds": "6",
+      "baths": "3"
     },
     {
       "title": "Norton Ngoni house for sale",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/ae/7f/57/ae7f5746-b75f-4a4c-a42d-2b68ef78deb0_thumbnail591.webp",
       "beds": "5",
       "baths": "5"
-    },
-    {
-      "title": "5 bed house in Norton",
-      "url": "https://www.property.co.zw/for-sale/houses-hee230942",
-      "price": "USD 35,000",
-      "location": "Norton",
-      "image": "https://www.property.co.zw/uploadedfiles/b2/03/80/b2038021-7e9d-46c0-9636-80f57aeed0ac_thumbnail591.webp",
-      "beds": "5",
-      "baths": "1"
     }
   ]
 }

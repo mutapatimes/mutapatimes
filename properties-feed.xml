@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 13:58:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 14:38:33 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -137,6 +137,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/d00b2d36dc6e.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 235,000 — Finish To Your Own Taste- Bluffhill Property Up For Grabs (Bluff Hill, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/2c89de9499a7.html</link>
+      <description>USD 235,000 — Bluff Hill, Harare West. 6 beds, 3 baths. Finish To Your Own Taste- Bluffhill Property Up For Grabs. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 03 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/2c89de9499a7.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/2c89de9499a7.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/2c89de9499a7.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/2c89de9499a7.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 60,000 — Norton Ngoni house for sale (Norton)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 35,000 — 5 bed house in Norton (Norton)</title>
-      <link>https://mutapatimes.com/property-landing/130dd22b7bf5.html</link>
-      <description>USD 35,000 — Norton. 5 beds, 1 bath. 5 bed house in Norton. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 03 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/130dd22b7bf5.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/130dd22b7bf5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/130dd22b7bf5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/130dd22b7bf5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
