@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 18:17:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 19:55:42 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/68c68c57e298.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 100,000 — Aspindale Park 4-Bed House with Flatlet, Paved Parking &amp; Verandah (Aspindale Park, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/bca2ea1c7356.html</link>
+      <description>USD 100,000 — Aspindale Park, Harare West. 4 beds, 2 baths. Aspindale Park 4-Bed House with Flatlet, Paved Parking &amp; Verandah. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 03 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/bca2ea1c7356.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/bca2ea1c7356.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/bca2ea1c7356.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/bca2ea1c7356.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 130,000 — 5-Bedroom Home with Borehole in Crowhill Views, Harare North (Crowhill Views, Harare North)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/92453a55d4c1.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/92453a55d4c1.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/92453a55d4c1.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 650,000 — Helensvale Executive House for Sale (Helensvale, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/10efdde0b9dc.html</link>
-      <description>USD 650,000 — Helensvale, Harare North. 5 beds, 5 baths. Helensvale Executive House for Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 03 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/10efdde0b9dc.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/10efdde0b9dc.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
