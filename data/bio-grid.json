@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-04T05:43:15+00:00",
+  "fetched_at": "2026-08-04T08:29:09+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Inside Zimbabwe’s $60bn ‘Cyber City’: Luxury, Power and the Politics of Land",
+      "link": "https://mutapatimes.com/news/2026-08-04-inside-zimbabwe-s-60bn-cyber-city-luxury-power-and-the-politics-of-land-754e8f",
+      "image": "https://mutapatimes.com/img/cards/news/5b1dc1ae44c9.png",
+      "pubDate": "2026-08-04T07:05:57+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim health & social work sector: $385M in 2025 Q4, 2.0% of GDP.",
@@ -20,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 4 Aug: Harare partly cloudy · high 21° / low 8°",
+      "title": "Zim weather 4 Aug: Harare partly cloudy · high 21° / low 9°",
       "link": "https://mutapatimes.com/weather?d=2026-08-04",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-04",
       "pubDate": "2026-08-03T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Trócaire — TERMS OF REFERENCE LEARNING INITIATIVE ON SCALING INCLUSIVE AGROECOLOGICAL PRACTICES Irish Civil Society Partnership",
       "link": "https://vacancymail.co.zw/jobs/terms-of-reference-learning-initiative-on-scaling-inclusive-agroecological-practices-irish-civil-society-partnership-68580/",
       "image": "https://mutapatimes.com/img/cards/jobs/825efa382579.png",
-      "pubDate": "2026-08-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Kamativi Mining Company — Human Resources Assistant",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-assistant-68579/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b9f2c1611fb6.png",
       "pubDate": "2026-08-03T22:00:00+00:00",
       "category": "Jobs"
     }
