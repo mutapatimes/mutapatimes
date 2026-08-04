@@ -974,12 +974,6 @@ def render_detail(c):
   <div class="zse-prose">
 {profile_html}
 {rel_html}
-    <h2>Where this data comes from</h2>
-    <p>Closing prices, daily change, year-to-date returns and market
-      capitalisation are drawn from <a href="https://www.african-markets.com/en/stock-markets/zse/listed-companies" rel="noopener" target="_blank">African Markets</a>,
-      with a one trading-day delay. Company profile data is drawn from
-      Wikipedia where a verified article exists. This page is editorial
-      reference, not investment advice.</p>
   </div>
   <section class="zse-sources" aria-label="Sources">
     <h2>Sources</h2>
