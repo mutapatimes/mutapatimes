@@ -19,6 +19,7 @@ CloudFront host can change if the ZSE redeploys — override with ZSE_API_BASE.
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
@@ -34,11 +35,25 @@ OUT = os.path.join(ROOT, "data", "zse-market-activity.json")
 HIST = os.path.join(ROOT, "data", "zse-history.json")
 
 
-def _get(path):
+def _get(path, retries=3, backoff=3):
+    """Fetch + parse JSON, retrying on transient failures. The ZSE CloudFront
+    endpoint is flaky during the afternoon publish window (the exact time this
+    job runs) — a truncated body, an HTML error page, or a 5xx makes json.loads
+    raise. Because GitHub throttles this schedule to ~one run/day, a single
+    un-retried hiccup leaves the site stale for a whole day, so retry here."""
     url = f"{API_BASE}{path}"
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=25) as resp:
-        return json.loads(resp.read().decode("utf-8", errors="replace"))
+    last = None
+    for attempt in range(1, retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=25) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="replace"))
+        except (urllib.error.URLError, urllib.error.HTTPError, ValueError, TimeoutError) as e:
+            last = e
+            if attempt < retries:
+                print(f"  fetch {path} attempt {attempt}/{retries} failed ({e}); retrying in {backoff}s")
+                time.sleep(backoff)
+    raise last
 
 
 def _data(payload):
