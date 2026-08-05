@@ -25,8 +25,12 @@ import urllib.error
 from datetime import datetime, timezone
 
 # Public API base the zse.co.zw bundle calls (no auth). Overridable in case the
-# CloudFront distribution id rotates on a ZSE redeploy.
-API_BASE = os.environ.get("ZSE_API_BASE", "https://ds88jcmqc11je.cloudfront.net").rstrip("/")
+# CloudFront distribution id rotates on a ZSE redeploy. `or` (not .get's default)
+# because the workflow always sets this env var from a secret that may be
+# unconfigured, which GitHub Actions renders as an empty string, not absent —
+# .get's default only kicks in when the var is missing entirely, so an unset
+# secret was silently blanking the working default and breaking every request.
+API_BASE = (os.environ.get("ZSE_API_BASE") or "https://ds88jcmqc11je.cloudfront.net").rstrip("/")
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5) AppleWebKit/605.1.15 "
       "(KHTML, like Gecko) Version/16.6 Safari/605.1.15")
 
