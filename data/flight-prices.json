@@ -38,12 +38,12 @@
           "currency": ""
         },
         {
-          "price": 419,
+          "price": 406,
           "airline": "FR",
           "departure_at": "2026-10-13",
           "return_at": "",
           "stops": 3,
-          "duration": 2330,
+          "duration": 2070,
           "currency": ""
         },
         {
@@ -121,21 +121,21 @@
           "currency": ""
         },
         {
+          "price": 509,
+          "airline": "EY",
+          "departure_at": "2026-10-13",
+          "return_at": "",
+          "stops": 2,
+          "duration": 1575,
+          "currency": ""
+        },
+        {
           "price": 655,
           "airline": "ET",
           "departure_at": "2026-09-17",
           "return_at": "2026-09-29",
           "stops": 1,
           "duration": null,
-          "currency": ""
-        },
-        {
-          "price": 664,
-          "airline": "EC",
-          "departure_at": "2026-08-07",
-          "return_at": "",
-          "stops": 3,
-          "duration": 1955,
           "currency": ""
         }
       ],
@@ -282,7 +282,7 @@
           "currency": ""
         },
         {
-          "price": 8481,
+          "price": 8463,
           "airline": "ET",
           "departure_at": "2026-09-01",
           "return_at": "2026-09-23",
@@ -360,7 +360,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 10,
+          "n": 9,
           "error": null
         },
         {
@@ -382,7 +382,7 @@
           "error": null
         }
       ],
-      "observations": 12
+      "observations": 11
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -465,7 +465,7 @@
           "currency": ""
         },
         {
-          "price": 4697,
+          "price": 4717,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -576,9 +576,9 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1261,
+          "price": 1266,
           "airline": "KQ",
-          "departure_at": "2026-08-27",
+          "departure_at": "2026-08-20",
           "return_at": "",
           "stops": 2,
           "duration": 1820,
@@ -614,9 +614,9 @@
           "currency": ""
         },
         {
-          "price": 1261,
+          "price": 1266,
           "airline": "KQ",
-          "departure_at": "2026-08-27",
+          "departure_at": "2026-08-20",
           "return_at": "",
           "stops": 2,
           "duration": 1820,
@@ -636,7 +636,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -658,7 +658,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 6
     },
     "toronto-to-harare": {
       "origin": "YYZ",
