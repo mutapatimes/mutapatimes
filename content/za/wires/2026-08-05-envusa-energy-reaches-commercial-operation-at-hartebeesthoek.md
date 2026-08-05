@@ -1,0 +1,16 @@
+---
+title: "Envusa Energy reaches commercial operation at Hartebeesthoek completing South Africa's first integrated renewable energy portfolio"
+date: 2026-08-05T10:11:55.000Z
+author: Novus Press Bulletin
+category: Business
+image: 
+summary: "Envusa Energy reaches commercial operation at Hartebeesthoek completing South Africa's first integrated renewable energy portfolio"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPX3BxOVVsVkdmT2pycmVRZENzN0xyTld2MnNYa21qRkZ3Mmw4VGY4c0xaaG9qT1NXQXEzdXdDWVhkaHZkVG91OC1jeFVDTjczN1VzSG5BSHJwdE9ZOW1pSy1mRjhibzBXY0tKWG1GekNUand2MUtLQTRTSkp6Q0Q2NzlhTU00X21EbTVoZ2ZiLXFvd2U5WUN3MEFjYm4tbk5Fb1pLbFFLU0k5MUVPaEQ5RXR5S0RLZ05BVC10TlRXeHQxT0JjdEF4NzNKSGhRNlZHdTJqeklGa25ObVpCOHFEeC01YzMzUVIyTkcwUi00QVhTcmVveTJJbTdQUHI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Novus Press Bulletin.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxPX3BxOVVsVkdmT2pycmVRZENzN0xyTld2MnNYa21qRkZ3Mmw4VGY4c0xaaG9qT1NXQXEzdXdDWVhkaHZkVG91OC1jeFVDTjczN1VzSG5BSHJwdE9ZOW1pSy1mRjhibzBXY0tKWG1GekNUand2MUtLQTRTSkp6Q0Q2NzlhTU00X21EbTVoZ2ZiLXFvd2U5WUN3MEFjYm4tbk5Fb1pLbFFLU0k5MUVPaEQ5RXR5S0RLZ05BVC10TlRXeHQxT0JjdEF4NzNKSGhRNlZHdTJqeklGa25ObVpCOHFEeC01YzMzUVIyTkcwUi00QVhTcmVveTJJbTdQUHI?oc=5)

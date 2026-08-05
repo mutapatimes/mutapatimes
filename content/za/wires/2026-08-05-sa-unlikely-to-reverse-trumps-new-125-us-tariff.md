@@ -1,0 +1,16 @@
+---
+title: "SA unlikely to reverse Trump’s new 12.5% US tariff"
+date: 2026-08-05T10:46:24.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA unlikely to reverse Trump’s new 12.5% US tariff"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX3pIdXN1UXNtZElYOEQwTUUzOEVyMkRGNHJBbVY4blJlMzh6a2dJc0xUTlUzMGZqMktQUmRCUXBvbUVVbVZDSFZHWkpVVjVmclF4cUtZemh0T1JLbnRPNHVDUFp0c2NsRDZ4Ymh6M2o4T0JxTkZsRG1La1BvbDkyc3pJUExTb0ZkbVJ6UXM3WXkwSzFkUTV2VHQ0a1ktRVZrclBWdzR0eWp1NU81MEUxNXJ3U3JucHJqS1dJNmdySnVQOWVjeEo2dlBZTk1yM05hWkhRSUdpTUlFM3RFZlhYOVB5WHhEdG5rdHJUX0Rzc09RY3BrM1ZiM2JnTzF5aTZ6aTdPM2dB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihgJBVV95cUxNX3pIdXN1UXNtZElYOEQwTUUzOEVyMkRGNHJBbVY4blJlMzh6a2dJc0xUTlUzMGZqMktQUmRCUXBvbUVVbVZDSFZHWkpVVjVmclF4cUtZemh0T1JLbnRPNHVDUFp0c2NsRDZ4Ymh6M2o4T0JxTkZsRG1La1BvbDkyc3pJUExTb0ZkbVJ6UXM3WXkwSzFkUTV2VHQ0a1ktRVZrclBWdzR0eWp1NU81MEUxNXJ3U3JucHJqS1dJNmdySnVQOWVjeEo2dlBZTk1yM05hWkhRSUdpTUlFM3RFZlhYOVB5WHhEdG5rdHJUX0Rzc09RY3BrM1ZiM2JnTzF5aTZ6aTdPM2dB?oc=5)
