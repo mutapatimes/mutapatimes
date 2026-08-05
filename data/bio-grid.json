@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-08-05T13:55:55+00:00",
+  "fetched_at": "2026-08-05T16:29:10+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "[SMM Express] Zimbabwe's Ministry of Mines and Mining Development used",
+      "link": "https://mutapatimes.com/articles/2026-08-05-smm-express-zimbabwes-ministry-of-mines-and-mining-developme",
+      "image": "https://mutapatimes.com/img/cards/news/40b2e8f9c351.png",
+      "pubDate": "2026-08-05T16:09:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "[SMM Express] Zimbabwe's Ministry of Mines and Mining Development used",
+      "link": "https://mutapatimes.com/news/2026-08-05-smm-express-zimbabwe-s-ministry-of-mines-and-mining-development-used-5182dd",
+      "image": "https://mutapatimes.com/img/cards/news/e156fbf62d8c.png",
+      "pubDate": "2026-08-05T16:09:12+00:00",
+      "category": "Business"
+    },
     {
       "kind": "zse",
       "title": "ZSE close 5 Aug 2026: All Share 480.31 (-0.13%)",
@@ -9,14 +25,6 @@
       "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-05",
       "pubDate": "2026-08-05T13:30:00+00:00",
       "category": "Markets"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Rules Out Standalone Currency Until Inflation Steadies",
-      "link": "https://mutapatimes.com/articles/2026-08-05-zimbabwe-rules-out-standalone-currency-until-inflation-stead",
-      "image": "https://mutapatimes.com/img/cards/news/d229a1ad0e36.png",
-      "pubDate": "2026-08-05T12:00:40+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -36,11 +44,35 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe buys FMD vaccines, moves buffaloes",
-      "link": "https://mutapatimes.com/articles/2026-08-04-zimbabwe-buys-fmd-vaccines-moves-buffaloes",
-      "image": "https://mutapatimes.com/img/cards/news/efcf2d8e914e.png",
-      "pubDate": "2026-08-04T23:56:00+00:00",
-      "category": "Health"
+      "title": "Whitby Town complete signing of Zimbabwe international Joey Phuthi after impressive trial period",
+      "link": "https://mutapatimes.com/news/2026-08-05-whitby-town-complete-signing-of-zimbabwe-international-joey-phuthi-after-b2e16c",
+      "image": "https://mutapatimes.com/img/cards/news/0bc970544e91.png",
+      "pubDate": "2026-08-05T04:18:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabweans flee xenophobic violence in South Africa. What next?",
+      "link": "https://mutapatimes.com/articles/2026-08-05-zimbabweans-flee-xenophobic-violence-in-south-africa-what-ne",
+      "image": "https://mutapatimes.com/img/cards/news/0132498793f8.png",
+      "pubDate": "2026-08-05T03:16:39+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe farmers feed ARVs to chickens in bid to boost growth",
+      "link": "https://mutapatimes.com/articles/2026-08-05-zimbabwe-farmers-feed-arvs-to-chickens-in-bid-to-boost-growt",
+      "image": "https://mutapatimes.com/img/cards/news/a49d0552652e.png",
+      "pubDate": "2026-08-05T03:00:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Meikles narrows losses as operational recovery gathers pace",
+      "link": "https://mutapatimes.com/articles/2026-08-05-meikles-narrows-losses-as-operational-recovery-gathers-pace",
+      "image": "https://mutapatimes.com/img/cards/news/f530bfdb3363.png",
+      "pubDate": "2026-08-05T02:57:50+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -121,6 +153,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-04T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Semi-Skilled Boilermaker",
+      "link": "https://vacancymail.co.zw/jobs/semi-skilled-boilermaker-68683/",
+      "image": "https://mutapatimes.com/img/cards/jobs/52998a642a28.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "EmpowerBank Limited — LOANS OFFICER - HARARE",
+      "link": "https://vacancymail.co.zw/jobs/loans-officer-harare-68682/",
+      "image": "https://mutapatimes.com/img/cards/jobs/616dd6112500.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Harare Institute of Public Health — Diploma Lecturer – Chemistry and Biological Sciences",
+      "link": "https://vacancymail.co.zw/jobs/diploma-lecturer-chemistry-and-biological-sciences-68681/",
+      "image": "https://mutapatimes.com/img/cards/jobs/01b4640c1aed.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Harare Institute of Public Health — Diploma Lecturer – Applied Chemical Technology",
+      "link": "https://vacancymail.co.zw/jobs/diploma-lecturer-applied-chemical-technology-68680/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5f0c0a9fefaf.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Harare Institute of Public Health — Lecturer – Paramedics",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-paramedics-68679/",
+      "image": "https://mutapatimes.com/img/cards/jobs/efe4c01554b6.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Harare Institute of Public Health — Lecturer – Mortuary Sciences",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-mortuary-sciences-68678/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f94000383976.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — SIL Volunteer X 1",
+      "link": "https://vacancymail.co.zw/jobs/sil-volunteer-x-1-68677/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8ab74ab9ddf9.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Cell Insurance Group — Graduate Trainee Internal Audit",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-internal-audit-68676/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8c55c0588d15.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — Community Development Volunteer X 1",
+      "link": "https://vacancymail.co.zw/jobs/community-development-volunteer-x-1-68675/",
+      "image": "https://mutapatimes.com/img/cards/jobs/061b6465b1a5.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Harare Institute of Public Health — Diploma Lecturer – Marketing",
+      "link": "https://vacancymail.co.zw/jobs/diploma-lecturer-marketing-68674/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1152a664b097.png",
+      "pubDate": "2026-08-04T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -367,118 +479,6 @@
       "title": "Junior Accountant (Finance & Administration)",
       "link": "https://vacancymail.co.zw/jobs/junior-accountant-finance-administration-68635/",
       "image": "https://mutapatimes.com/img/cards/jobs/cda63852908c.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "SECURICO Security Services — Dog Master",
-      "link": "https://vacancymail.co.zw/jobs/dog-master-68634/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6d3a74891cfc.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — Electronic Banking Specialist",
-      "link": "https://vacancymail.co.zw/jobs/electronic-banking-specialist-68633/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91b6139f6f9d.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cell Insurance Group — Pharmacists",
-      "link": "https://vacancymail.co.zw/jobs/pharmacists-68632/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4646fc239eac.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CBZ Holdings — Factoring Manager – Corporate Banking Division",
-      "link": "https://vacancymail.co.zw/jobs/factoring-manager-corporate-banking-division-68631/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c92f6e1c9f35.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Exchange Control Team Leader",
-      "link": "https://vacancymail.co.zw/jobs/exchange-control-team-leader-68630/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0f4b827ff634.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Compliance Data Analyst",
-      "link": "https://vacancymail.co.zw/jobs/compliance-data-analyst-68629/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d2abe3833599.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Assistant Compliance Officer",
-      "link": "https://vacancymail.co.zw/jobs/assistant-compliance-officer-68628/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3dece9c4561b.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Graduate Trainee (4 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-4-posts-68627/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c5c16f07b184.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Laboratory Assistant (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/laboratory-assistant-1-post-68626/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0a8aaa16657a.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Technician (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/technician-1-post-68625/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7b3737bd451a.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Senior Laboratory Technician (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/senior-laboratory-technician-1-post-68624/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6bea81a852c7.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Laboratory Technician (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/laboratory-technician-1-post-68623/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b4cf7bd0a6d1.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Department of Animal Science and Rangeland Management Lectureship/Senior Lectureship/Associate Professorship/Professorship (1 Post) Full-time",
-      "link": "https://vacancymail.co.zw/jobs/department-of-animal-science-and-rangeland-management-lectureshipsenior-lectureshipassociate-professorshipprofessorship-1-post-full-time-68622/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5c207f867ebb.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lupane State University — Lectureship/Senior Lectureship/Associate Professorship/Professorship (1 Post) For Environmental Science (Full-time)",
-      "link": "https://vacancymail.co.zw/jobs/lectureshipsenior-lectureshipassociate-professorshipprofessorship-1-post-for-environmental-science-full-time-68621/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b39a91aecd7.png",
       "pubDate": "2026-08-04T22:00:00+00:00",
       "category": "Jobs"
     }
