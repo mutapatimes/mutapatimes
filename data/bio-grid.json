@@ -1,13 +1,29 @@
 {
-  "fetched_at": "2026-08-05T11:16:42+00:00",
+  "fetched_at": "2026-08-05T13:55:55+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 5 Aug 2026: All Share 480.31 (-0.13%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-05",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-05",
+      "pubDate": "2026-08-05T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "France and the UK step in to help resolve a $2.7 billion problem distressing Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-08-05-france-and-the-uk-step-in-to-help-resolve-a-27-billion-probl",
-      "image": "https://mutapatimes.com/img/cards/news/865fe0851511.png",
-      "pubDate": "2026-08-05T09:25:39+00:00",
+      "title": "Zimbabwe Rules Out Standalone Currency Until Inflation Steadies",
+      "link": "https://mutapatimes.com/articles/2026-08-05-zimbabwe-rules-out-standalone-currency-until-inflation-stead",
+      "image": "https://mutapatimes.com/img/cards/news/d229a1ad0e36.png",
+      "pubDate": "2026-08-05T12:00:40+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe confident of achieving 2026 growth target: finance minister",
+      "link": "https://mutapatimes.com/news/2026-08-05-zimbabwe-confident-of-achieving-2026-growth-target-finance-minister-87598b",
+      "image": "https://mutapatimes.com/img/cards/news/e77d20b38cac.png",
+      "pubDate": "2026-08-05T11:43:00+00:00",
       "category": "Business"
     },
     {
@@ -17,6 +33,14 @@
       "image": "https://mutapatimes.com/img/cards/news/a3e9eea49ee9.png",
       "pubDate": "2026-08-05T09:25:39+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe buys FMD vaccines, moves buffaloes",
+      "link": "https://mutapatimes.com/articles/2026-08-04-zimbabwe-buys-fmd-vaccines-moves-buffaloes",
+      "image": "https://mutapatimes.com/img/cards/news/efcf2d8e914e.png",
+      "pubDate": "2026-08-04T23:56:00+00:00",
+      "category": "Health"
     },
     {
       "kind": "news",
@@ -33,14 +57,6 @@
       "image": "https://mutapatimes.com/img/cards/news/e579544e226a.png",
       "pubDate": "2026-08-04T22:35:12+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Slain Wife’s Family Says Ndodana Tshuma’s Relatives Showed No Remorse & Never Apologised",
-      "link": "https://mutapatimes.com/articles/2026-08-04-slain-wifes-family-says-ndodana-tshumas-relatives-showed-no",
-      "image": "https://mutapatimes.com/img/cards/news/798e2ee66942.png",
-      "pubDate": "2026-08-04T22:14:44+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -463,22 +479,6 @@
       "title": "Lupane State University — Lectureship/Senior Lectureship/Associate Professorship/Professorship (1 Post) For Environmental Science (Full-time)",
       "link": "https://vacancymail.co.zw/jobs/lectureshipsenior-lectureshipassociate-professorshipprofessorship-1-post-for-environmental-science-full-time-68621/",
       "image": "https://mutapatimes.com/img/cards/jobs/6b39a91aecd7.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Workshop and Fleet Manager : Escom Logistics",
-      "link": "https://vacancymail.co.zw/jobs/workshop-and-fleet-manager-escom-logistics-68600/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4cd047d2edf1.png",
-      "pubDate": "2026-08-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Delta Beverages — Assistant Accountant",
-      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-68599/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fb803fea3863.png",
       "pubDate": "2026-08-04T22:00:00+00:00",
       "category": "Jobs"
     }
