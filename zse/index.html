@@ -220,6 +220,52 @@ body { background: #fff !important; }
   <a href="/" class="topbar-brand"><em>The Mutapa Times</em></a>
   <a href="/subscribe" class="topbar-cta">Subscribe</a>
 </div>
+<div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Site navigation">
+  <button class="nav-drawer-close" type="button" data-close-drawer aria-label="Close menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+  <form class="nav-drawer-search" action="/articles" method="get" role="search">
+    <input type="search" name="q" placeholder="Search The Mutapa Times" aria-label="Search The Mutapa Times">
+  </form>
+  <nav class="nav-drawer-main" aria-label="Sections">
+    <a href="/">News</a>
+    <a href="/economy">Economy</a>
+    <a href="/fx/">FX</a>
+    <a href="/markets">Markets</a>
+    <a href="/property">Property</a>
+    <a href="/jobs">Jobs</a>
+    <a href="/articles">Articles</a>
+    <a href="/originals">Originals</a>
+  </nav>
+  <span class="nav-drawer-section">Directories</span>
+  <nav class="nav-drawer-info" aria-label="Directories">
+    <a href="/weather">Weather</a>
+    <a href="/flights/">Flights</a>
+    <a href="/schools/">Schools</a>
+    <a href="/zse/">ZSE companies</a>
+    <a href="/mining/">Mining</a>
+    <a href="/academy/">Academy</a>
+    <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
+  </nav>
+  <span class="nav-drawer-section">Cities</span>
+  <nav class="nav-drawer-cities" aria-label="Cities">
+    <a href="/harare-news">Harare</a>
+    <a href="/bulawayo-news">Bulawayo</a>
+    <a href="/mutare-news">Mutare</a>
+    <a href="/gweru-news">Gweru</a>
+    <a href="/masvingo-news">Masvingo</a>
+    <a href="/victoria-falls-news">Victoria Falls</a>
+  </nav>
+  <span class="nav-drawer-section">Information</span>
+  <nav class="nav-drawer-info" aria-label="Information">
+    <a href="/about">About</a>
+    <a href="/advertising">Advertising</a>
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+  </nav>
+</aside>
+
 <main>
   <header class="zse-section-header">
     <p class="zse-section-eyebrow">Mutapa Times &middot; Markets</p>
@@ -232,11 +278,12 @@ body { background: #fff !important; }
   </header>
   <figure class="zse-hub-img"><div class="zse-hub-img-inner"><img src="/img/zse/_hero.jpg" alt="" loading="eager"></div></figure>
   <div id="zse-eod"></div>
+  <div id="zse-chart"></div>
   <div class="zse-stats" role="list">
     <div class="zse-stat"><p class="zse-stat-label">Listed equities</p><p class="zse-stat-value">48</p></div>
     <div class="zse-stat"><p class="zse-stat-label">ETFs &amp; REITs</p><p class="zse-stat-value">5</p></div>
     <div class="zse-stat"><p class="zse-stat-label">Sectors</p><p class="zse-stat-value">9</p></div>
-    <div class="zse-stat"><p class="zse-stat-label">Combined market cap</p><p class="zse-stat-value">ZWG 127.9B</p></div>
+    <div class="zse-stat"><p class="zse-stat-label">Combined market cap</p><p class="zse-stat-value">ZWG 126.6B</p></div>
   </div>
   <div class="zse-filterbar">
     <input type="search" class="zse-search" id="zseSearch"
@@ -274,18 +321,18 @@ body { background: #fff !important; }
       <td><a href="./ariston-holdings.html">Ariston Holdings</a></td>
       <td><span class="sect">Consumer Goods</span></td>
       <td class="num">0.076</td>
-      <td class="num pos">+0.22%</td>
+      <td class="num ">—</td>
       <td class="num pos">+140.51%</td>
       <td class="num">0.12</td>
     </tr>
     <tr data-name="art corporation"
         data-sector="industrials"
-        data-mcap="0.09" data-ytd="182.05" data-price="0.22">
+        data-mcap="0.09" data-ytd="181.98" data-price="0.219942">
       <td><a href="./art-corporation.html">ART Corporation</a></td>
       <td><span class="sect">Industrials</span></td>
-      <td class="num">0.22</td>
-      <td class="num ">—</td>
-      <td class="num pos">+182.05%</td>
+      <td class="num">0.219942</td>
+      <td class="num neg">-0.03%</td>
+      <td class="num pos">+181.98%</td>
       <td class="num">0.09</td>
     </tr>
     <tr data-name="astra industries"
@@ -330,13 +377,13 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="cbz holdings"
         data-sector="financials"
-        data-mcap="21.16" data-ytd="252.17" data-price="40.5">
+        data-mcap="21.15" data-ytd="251.91" data-price="40.47">
       <td><a href="./cbz-holdings.html">CBZ Holdings</a></td>
       <td><span class="sect">Financials</span></td>
-      <td class="num">40.5</td>
-      <td class="num pos">+0.15%</td>
-      <td class="num pos">+252.17%</td>
-      <td class="num">21.16</td>
+      <td class="num">40.47</td>
+      <td class="num neg">-0.07%</td>
+      <td class="num pos">+251.91%</td>
+      <td class="num">21.15</td>
     </tr>
     <tr data-name="celsys"
         data-sector="technology"
@@ -380,33 +427,33 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="delta corporation"
         data-sector="consumer goods"
-        data-mcap="43.2" data-ytd="54.87" data-price="32.0604">
+        data-mcap="43.16" data-ytd="54.7" data-price="32.0264">
       <td><a href="./delta-corporation.html">Delta Corporation</a></td>
       <td><span class="sect">Consumer Goods</span></td>
-      <td class="num">32.0604</td>
-      <td class="num pos">+0.18%</td>
-      <td class="num pos">+54.87%</td>
-      <td class="num">43.20</td>
+      <td class="num">32.0264</td>
+      <td class="num neg">-0.11%</td>
+      <td class="num pos">+54.70%</td>
+      <td class="num">43.16</td>
     </tr>
     <tr data-name="dairibord holdings"
         data-sector="consumer goods"
-        data-mcap="2.04" data-ytd="200.12" data-price="5.702262">
+        data-mcap="1.79" data-ytd="163.24" data-price="5.001597">
       <td><a href="./dairibord-holdings.html">Dairibord Holdings</a></td>
       <td><span class="sect">Consumer Goods</span></td>
-      <td class="num">5.7023</td>
-      <td class="num neg">-10.85%</td>
-      <td class="num pos">+200.12%</td>
-      <td class="num">2.04</td>
+      <td class="num">5.0016</td>
+      <td class="num neg">-12.29%</td>
+      <td class="num pos">+163.24%</td>
+      <td class="num">1.79</td>
     </tr>
     <tr data-name="fbc holdings"
         data-sector="financials"
-        data-mcap="9.07" data-ytd="8.43" data-price="13.5">
+        data-mcap="8.04" data-ytd="-3.88" data-price="11.9667">
       <td><a href="./fbc-holdings.html">FBC Holdings</a></td>
       <td><span class="sect">Financials</span></td>
-      <td class="num">13.5</td>
-      <td class="num ">—</td>
-      <td class="num pos">+8.43%</td>
-      <td class="num">9.07</td>
+      <td class="num">11.9667</td>
+      <td class="num neg">-11.36%</td>
+      <td class="num neg">-3.88%</td>
+      <td class="num">8.04</td>
     </tr>
     <tr data-name="fidelity life assurance"
         data-sector="financials"
@@ -420,13 +467,13 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="first mutual holdings"
         data-sector="financials"
-        data-mcap="2.3" data-ytd="17.44" data-price="3.347088">
+        data-mcap="2.31" data-ytd="17.54" data-price="3.35">
       <td><a href="./first-mutual-holdings.html">First Mutual Holdings</a></td>
       <td><span class="sect">Financials</span></td>
-      <td class="num">3.3471</td>
-      <td class="num ">—</td>
-      <td class="num pos">+17.44%</td>
-      <td class="num">2.30</td>
+      <td class="num">3.35</td>
+      <td class="num pos">+0.09%</td>
+      <td class="num pos">+17.54%</td>
+      <td class="num">2.31</td>
     </tr>
     <tr data-name="general beltings holdings"
         data-sector="industrials"
@@ -434,7 +481,7 @@ body { background: #fff !important; }
       <td><a href="./general-beltings-holdings.html">General Beltings Holdings</a></td>
       <td><span class="sect">Industrials</span></td>
       <td class="num">0.1235</td>
-      <td class="num neg">-1.98%</td>
+      <td class="num ">—</td>
       <td class="num pos">+23.50%</td>
       <td class="num">0.06</td>
     </tr>
@@ -500,13 +547,13 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="meikles"
         data-sector="consumer services"
-        data-mcap="0.74" data-ytd="-7.53" data-price="2.9">
+        data-mcap="0.7" data-ytd="-12.31" data-price="2.75">
       <td><a href="./meikles.html">Meikles</a></td>
       <td><span class="sect">Consumer Services</span></td>
-      <td class="num">2.9</td>
-      <td class="num ">—</td>
-      <td class="num neg">-7.53%</td>
-      <td class="num">0.74</td>
+      <td class="num">2.75</td>
+      <td class="num neg">-5.17%</td>
+      <td class="num neg">-12.31%</td>
+      <td class="num">0.70</td>
     </tr>
     <tr data-name="nicoz diamond insurance"
         data-sector="financials"
@@ -530,13 +577,13 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="nampak zimbabwe"
         data-sector="industrials"
-        data-mcap="0.7" data-ytd="17.16" data-price="0.937273">
+        data-mcap="0.71" data-ytd="18.75" data-price="0.95">
       <td><a href="./nampak-zimbabwe.html">Nampak Zimbabwe</a></td>
       <td><span class="sect">Industrials</span></td>
-      <td class="num">0.937273</td>
-      <td class="num pos">+11.58%</td>
-      <td class="num pos">+17.16%</td>
-      <td class="num">0.70</td>
+      <td class="num">0.95</td>
+      <td class="num pos">+1.36%</td>
+      <td class="num pos">+18.75%</td>
+      <td class="num">0.71</td>
     </tr>
     <tr data-name="national tyre services"
         data-sector="consumer goods"
@@ -594,29 +641,29 @@ body { background: #fff !important; }
       <td><a href="./rainbow-tourism-group.html">Rainbow Tourism Group</a></td>
       <td><span class="sect">Consumer Services</span></td>
       <td class="num">1.5414</td>
-      <td class="num pos">+6.40%</td>
+      <td class="num ">—</td>
       <td class="num pos">+7.04%</td>
       <td class="num">3.84</td>
     </tr>
     <tr data-name="starafrica corporation"
         data-sector="consumer goods"
-        data-mcap="0.18" data-ytd="55.31" data-price="0.038982">
+        data-mcap="0.18" data-ytd="56.83" data-price="0.039364">
       <td><a href="./starafrica-corporation.html">Starafrica Corporation</a></td>
       <td><span class="sect">Consumer Goods</span></td>
-      <td class="num">0.038982</td>
-      <td class="num neg">-2.30%</td>
-      <td class="num pos">+55.31%</td>
+      <td class="num">0.039364</td>
+      <td class="num pos">+0.98%</td>
+      <td class="num pos">+56.83%</td>
       <td class="num">0.18</td>
     </tr>
     <tr data-name="seed co"
         data-sector="consumer goods"
-        data-mcap="1.34" data-ytd="47.64" data-price="5.323333">
+        data-mcap="1.35" data-ytd="48.11" data-price="5.340372">
       <td><a href="./seed-co.html">Seed Co</a></td>
       <td><span class="sect">Consumer Goods</span></td>
-      <td class="num">5.3233</td>
-      <td class="num pos">+14.39%</td>
-      <td class="num pos">+47.64%</td>
-      <td class="num">1.34</td>
+      <td class="num">5.3404</td>
+      <td class="num pos">+0.32%</td>
+      <td class="num pos">+48.11%</td>
+      <td class="num">1.35</td>
     </tr>
     <tr data-name="turnall holdings"
         data-sector="industrials"
@@ -640,13 +687,13 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="willdale"
         data-sector="industrials"
-        data-mcap="0.08" data-ytd="66.67" data-price="0.05">
+        data-mcap="0.09" data-ytd="70.0" data-price="0.051">
       <td><a href="./willdale.html">Willdale</a></td>
       <td><span class="sect">Industrials</span></td>
-      <td class="num">0.05</td>
-      <td class="num neg">-4.52%</td>
-      <td class="num pos">+66.67%</td>
-      <td class="num">0.08</td>
+      <td class="num">0.051</td>
+      <td class="num pos">+2.00%</td>
+      <td class="num pos">+70.00%</td>
+      <td class="num">0.09</td>
     </tr>
     <tr data-name="zb financial holdings"
         data-sector="financials"
@@ -654,7 +701,7 @@ body { background: #fff !important; }
       <td><a href="./zb-financial-holdings.html">ZB Financial Holdings</a></td>
       <td><span class="sect">Financials</span></td>
       <td class="num">7</td>
-      <td class="num pos">+1.30%</td>
+      <td class="num ">—</td>
       <td class="num pos">+55.56%</td>
       <td class="num">1.22</td>
     </tr>
@@ -674,7 +721,7 @@ body { background: #fff !important; }
       <td><a href="./zimre-holdings.html">Zimre Holdings</a></td>
       <td><span class="sect">Financials</span></td>
       <td class="num">0.89</td>
-      <td class="num neg">-4.48%</td>
+      <td class="num ">—</td>
       <td class="num neg">-10.99%</td>
       <td class="num">1.61</td>
     </tr>
@@ -710,23 +757,23 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="tn cybertech investments holdings"
         data-sector="telecom"
-        data-mcap="1.37" data-ytd="181.43" data-price="0.327875">
+        data-mcap="1.17" data-ytd="139.68" data-price="0.279229">
       <td><a href="./tn-cybertech-investments-holdings.html">TN CyberTech Investments Holdings</a></td>
       <td><span class="sect">Telecom</span></td>
-      <td class="num">0.327875</td>
-      <td class="num pos">+9.11%</td>
-      <td class="num pos">+181.43%</td>
-      <td class="num">1.37</td>
+      <td class="num">0.279229</td>
+      <td class="num neg">-14.84%</td>
+      <td class="num pos">+139.68%</td>
+      <td class="num">1.17</td>
     </tr>
     <tr data-name="tanganda tea company"
         data-sector="consumer goods"
-        data-mcap="1.72" data-ytd="438.51" data-price="3.284923">
+        data-mcap="1.97" data-ytd="518.03" data-price="3.77">
       <td><a href="./tanganda-tea-company.html">Tanganda Tea Company</a></td>
       <td><span class="sect">Consumer Goods</span></td>
-      <td class="num">3.2849</td>
-      <td class="num ">—</td>
-      <td class="num pos">+438.51%</td>
-      <td class="num">1.72</td>
+      <td class="num">3.77</td>
+      <td class="num pos">+14.77%</td>
+      <td class="num pos">+518.03%</td>
+      <td class="num">1.97</td>
     </tr>
     <tr data-name="cass saddle agriculture etf"
         data-sector="etf"
@@ -780,11 +827,11 @@ body { background: #fff !important; }
     </tr>
     <tr data-name="tigere property fund"
         data-sector="financials"
-        data-mcap="2.02" data-ytd="-23.74" data-price="1.100784">
+        data-mcap="2.02" data-ytd="-23.74" data-price="1.100797">
       <td><a href="./tigere-property-fund.html">Tigere Property Fund</a></td>
       <td><span class="sect">Financials</span></td>
       <td class="num">1.1008</td>
-      <td class="num neg">-1.29%</td>
+      <td class="num ">—</td>
       <td class="num neg">-23.74%</td>
       <td class="num">2.02</td>
     </tr>
@@ -794,7 +841,7 @@ body { background: #fff !important; }
       <td><a href="./revitus-property-opportunities-reit.html">Revitus Property Opportunities REIT</a></td>
       <td><span class="sect">Financials</span></td>
       <td class="num">1.98</td>
-      <td class="num neg">-0.13%</td>
+      <td class="num ">—</td>
       <td class="num pos">+52.31%</td>
       <td class="num">0.72</td>
     </tr>
@@ -818,9 +865,55 @@ body { background: #fff !important; }
       <li><a href="https://www.african-markets.com/en/stock-markets/zse/listed-companies" rel="noopener" target="_blank">African Markets &mdash; ZSE listings</a> (price, market cap, sector)</li>
       <li><a href="https://www.zse.co.zw/" rel="noopener" target="_blank">Zimbabwe Stock Exchange</a> (official source)</li>
     </ul>
-    <p class="zse-sources-note">Last reviewed 2026-05-22. The Mutapa Times is
+    <p class="zse-sources-note">Last reviewed 2026-08-06. The Mutapa Times is
       editorially independent and earns no commission from any listed company.</p>
   </section>
+<style>
+.rr-rail { max-width: 1100px; margin: 40px auto; padding: 0 20px;
+  font-family: 'Inter', system-ui, sans-serif; }
+.rr-rail-label { font-size: 0.72em; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--text-light); font-weight: 700; margin: 0 0 16px; }
+.rr-grid { display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.rr-card { display: flex; flex-direction: column; padding: 18px 20px;
+  background: #fff; border: 1px solid var(--rule, #d4d4d4); border-radius: 10px;
+  text-decoration: none; color: var(--text, #1a1a1a);
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; }
+.rr-card:hover { border-color: var(--accent, #c41e1e); transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06); text-decoration: none; color: inherit; }
+.rr-card-tag { font-size: 0.66em; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--accent, #c41e1e); font-weight: 700; margin: 0 0 6px; }
+.rr-card-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700;
+  font-size: 1.08em; line-height: 1.2; color: var(--ink, #121212); margin: 0 0 6px;
+  letter-spacing: -0.01em; }
+.rr-card-meta { font-size: 0.85em; line-height: 1.45; color: var(--text-mid, #333);
+  margin: 0; }
+</style>
+<section class="rr-rail" data-related-rail aria-label="Related across The Mutapa Times">
+  <p class="rr-rail-label">Read next across the site</p>
+  <div class="rr-grid">
+      <a class="rr-card" href="/fx/">
+        <p class="rr-card-tag">MONEY</p>
+        <h3 class="rr-card-title">Send money to Zimbabwe</h3>
+        <p class="rr-card-meta">Compare Wise, WorldRemit, Mukuru &middot; live FX</p>
+      </a>
+      <a class="rr-card" href="/airports/">
+        <p class="rr-card-tag">TRAVEL</p>
+        <h3 class="rr-card-title">Live arrivals + departures</h3>
+        <p class="rr-card-meta">HRE &middot; BUQ &middot; VFA in real time</p>
+      </a>
+      <a class="rr-card" href="/flights/london-to-harare/">
+        <p class="rr-card-tag">FLIGHTS</p>
+        <h3 class="rr-card-title">London → Harare flights</h3>
+        <p class="rr-card-meta">From £700 &middot; airline comparison + live prices</p>
+      </a>
+      <a class="rr-card" href="/cooking/">
+        <p class="rr-card-tag">FOOD</p>
+        <h3 class="rr-card-title">Zimbabwean recipes</h3>
+        <p class="rr-card-meta">Sadza, muriwo, kapenta &middot; full method</p>
+      </a>
+  </div>
+</section>
 </main>
 <footer class="atlantic-foot">
   <div class="atlantic-foot-inner">
@@ -913,5 +1006,7 @@ body { background: #fff !important; }
 </script>
 <script defer src="/js/ticker-tape.js?v=1"></script>
 <script defer src="/js/zse-eod.js?v=4"></script>
+<script defer src="/js/zse-chart.js?v=1"></script>
+<script defer src="/js/nav.js"></script>
 </body>
 </html>

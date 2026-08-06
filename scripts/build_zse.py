@@ -17,14 +17,26 @@ TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 # --- Scrape -----------------------------------------------------------------
 
-def scrape_african_markets():
+def scrape_african_markets(retries=3, backoff=3):
     url = "https://www.african-markets.com/en/stock-markets/zse/listed-companies"
     req = urllib.request.Request(url, headers={
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
         "Accept": "text/html",
     })
-    with urllib.request.urlopen(req, timeout=25) as r:
-        h = r.read().decode("utf-8", errors="replace")
+    last = None
+    h = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                h = r.read().decode("utf-8", errors="replace")
+            break
+        except Exception as e:
+            last = e
+            if attempt < retries:
+                print(f"  fetch attempt {attempt}/{retries} failed ({e}); retrying in {backoff}s")
+                time.sleep(backoff)
+    if h is None:
+        raise last
     tables = re.findall(r'<table[^>]*>(.*?)</table>', h, re.S)
     target = max(tables, key=lambda t: len(re.findall(r'<tr', t)))
     rows = re.findall(r'<tr[^>]*>(.*?)</tr>', target, re.S)
