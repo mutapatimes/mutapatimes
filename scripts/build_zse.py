@@ -2,9 +2,10 @@
 """Scrape the ZSE listed-companies table from african-markets, enrich with
 Wikipedia data, generate /zse/ microsite. Mirrors the /schools/ pattern."""
 import json, re, html, urllib.request, time
+from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "zse"
 OUT.mkdir(exist_ok=True)
 DATA = ROOT / "data" / "zse-companies.json"
@@ -12,7 +13,7 @@ IMG_DIR = ROOT / "img" / "zse"
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
 UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
-TODAY = "2026-05-22"
+TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 # --- Scrape -----------------------------------------------------------------
 
@@ -96,15 +97,37 @@ WP_MAP = {
     "Dawn Properties":               "Dawn_Properties",
 }
 
-def http_get_json(url):
+def http_get_json(url, retries=3, backoff=2):
+    """A single failed request used to silently drop a whole company's
+    Wikipedia enrichment for the run (enrich() swallows the exception and
+    returns {}), which -- since this script overwrites rather than merges --
+    quietly regressed dozens of already-good profiles on a run with a few
+    transient hiccups. Retry before giving up."""
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
+    last = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return json.load(r)
+        except Exception as e:
+            last = e
+            if attempt < retries:
+                time.sleep(backoff)
+    raise last
 
-def http_download(url, dest):
+def http_download(url, dest, retries=3, backoff=2):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        dest.write_bytes(r.read())
+    last = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                dest.write_bytes(r.read())
+                return
+        except Exception as e:
+            last = e
+            if attempt < retries:
+                time.sleep(backoff)
+    raise last
 
 # infobox parser identical to school enricher
 def fetch_wikitext(title):
@@ -322,11 +345,34 @@ print(f"  -> {len(companies)} entries scraped")
 for c in companies:
     c["slug"] = slugify(c["company"])
 
+# Prior good enrichment, keyed by company name, so a transient fetch
+# failure this run doesn't wipe out real, previously-verified profile data
+# -- this script overwrites data/zse-companies.json wholesale each run, so
+# without this a single flaky Wikipedia request quietly regresses a profile
+# that took a real fetch to populate.
+prev_wp = {}
+if DATA.exists():
+    try:
+        for pc in json.loads(DATA.read_text(encoding="utf-8")).get("companies", []):
+            if pc.get("wp"):
+                prev_wp[pc["company"]] = pc["wp"]
+    except Exception:
+        prev_wp = {}
+
 print("Enriching with Wikipedia (mapped entries only)…")
 for c in companies:
     if c["company"] in WP_MAP:
         print(f"  - {c['company']}")
-        c["wp"] = enrich(c["company"])
+        fresh = enrich(c["company"])
+        prior = prev_wp.get(c["company"])
+        if prior:
+            merged = dict(prior)
+            merged.update(fresh)  # fresh values win field-by-field; gaps fall back to prior
+            if not fresh:
+                print("    (fetch failed this run -- kept previous profile)")
+            c["wp"] = merged
+        else:
+            c["wp"] = fresh
         time.sleep(0.5)
     else:
         c["wp"] = {}
@@ -742,14 +788,14 @@ f'''    <tr data-name="{html.escape(c["company"].lower())}"
 {recent_news_html}
     </div>
   </section>
-  <section class="zse-sources" aria-label="About this directory">
-    <h2>About this directory</h2>
+  <section class="zse-sources" aria-label="Sources">
+    <h2>Sources</h2>
     <ul>
-      <li>Price, daily change, YTD and market cap from <a href="https://www.african-markets.com/en/stock-markets/zse/listed-companies" rel="noopener" target="_blank">African Markets</a>, refreshed daily.</li>
-      <li>Company profile detail (founded, headquarters, key people, industry) is drawn from Wikipedia where a verified article exists.</li>
-      <li>This is editorial reference, not investment advice. ZSE quotes are not real-time and have at least one trading day's delay.</li>
+      <li><a href="https://www.african-markets.com/en/stock-markets/zse/listed-companies" rel="noopener" target="_blank">African Markets &mdash; ZSE listings</a> (price, market cap, sector)</li>
+      <li><a href="https://www.zse.co.zw/" rel="noopener" target="_blank">Zimbabwe Stock Exchange</a> (official source)</li>
     </ul>
-    <p class="zse-sources-note">Last data refresh: {TODAY}. Spot an error? Email <a href="mailto:news@mutapatimes.com?subject=ZSE%20directory%20update">news@mutapatimes.com</a>.</p>
+    <p class="zse-sources-note">Last reviewed {TODAY}. The Mutapa Times is
+      editorially independent and earns no commission from any listed company.</p>
   </section>
 </main>
 {FOOTER}
