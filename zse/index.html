@@ -72,9 +72,11 @@ body { background: #fff !important; }
 .zse-rule { width: 48px; height: 3px; background: var(--accent); border: 0; margin: 8px 0 0; }
 
 .zse-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px; max-width: 1100px; margin: 20px auto 8px; padding: 0 20px; }
+  gap: 12px; max-width: 1100px; margin: 32px auto 8px; padding: 0 20px; }
 .zse-stat { padding: 14px 16px; background: var(--paper); border: 1px solid var(--rule);
-  border-radius: 8px; }
+  border-radius: 8px; transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease; }
+.zse-stat:hover { border-color: var(--accent); box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  transform: translateY(-1px); }
 .zse-stat-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light);
   margin: 0 0 4px; font-weight: 600; }
@@ -148,7 +150,9 @@ body { background: #fff !important; }
 .zse-pricerow { max-width: 1000px; margin: 18px auto 24px; padding: 0 20px;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
 .zse-pricecell { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px;
-  padding: 14px 16px; }
+  padding: 14px 16px; transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease; }
+.zse-pricecell:hover { border-color: var(--accent); box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  transform: translateY(-1px); }
 .zse-pricecell-label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.68em;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light);
   font-weight: 600; margin: 0 0 4px; }
@@ -908,6 +912,6 @@ body { background: #fff !important; }
 })();
 </script>
 <script defer src="/js/ticker-tape.js?v=1"></script>
-<script defer src="/js/zse-eod.js?v=1"></script>
+<script defer src="/js/zse-eod.js?v=4"></script>
 </body>
 </html>

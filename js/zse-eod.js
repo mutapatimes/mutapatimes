@@ -66,14 +66,16 @@
       ".zeod-eod{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent,#c41e1e);border:1px solid currentColor;border-radius:999px;padding:2px 8px;opacity:.9;}",
       /* KPI tiles */
       ".zeod-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}",
-      ".zeod-kpi{border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:14px 16px;background:var(--paper,#fafaf7);}",
+      ".zeod-kpi{border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:14px 16px;background:var(--paper,#fafaf7);transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease;}",
+      ".zeod-kpi:hover{border-color:var(--accent,#c41e1e);box-shadow:0 6px 22px rgba(0,0,0,.06);transform:translateY(-1px);}",
       ".zeod-kpi .lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;opacity:.55;font-weight:800;}",
       ".zeod-kpi .val{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:1.5rem;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums;}",
       ".zeod-kpi .sub{font-size:.74rem;font-weight:800;margin-top:4px;font-variant-numeric:tabular-nums;}",
       ".up{color:#1a7f37;}.down{color:#c41e1e;}.flat{opacity:.5;}",
       /* layout */
       ".zeod-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;align-items:start;}",
-      ".zeod-panel{border:1px solid rgba(0,0,0,.1);border-radius:12px;background:var(--paper,#fafaf7);padding:14px 16px 6px;margin-bottom:18px;}",
+      ".zeod-panel{border:1px solid rgba(0,0,0,.1);border-radius:12px;background:var(--paper,#fafaf7);padding:14px 16px 6px;margin-bottom:18px;transition:border-color .15s ease,box-shadow .15s ease;}",
+      ".zeod-panel:hover{border-color:var(--accent,#c41e1e);box-shadow:0 6px 22px rgba(0,0,0,.06);}",
       ".zeod-ph{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;opacity:.55;margin:0 0 8px;}",
       /* indices — two responsive columns of aligned rows */
       ".zeod-idx{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;}",
