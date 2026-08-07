@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 00:14:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:18:58 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>TIMB — Graduate Trainee - Internal Audit</title>
+      <link>https://mutapatimes.com/stories/67226bb9fc77.html</link>
+      <description>GRADUATE TRAINEE – INTERNAL AUDIT An exciting opportunity has arisen for a young, ambitious, highly motivated and qualified graduate to join TIMB. The successful candidate will undergo an intensive g… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/67226bb9fc77.html</guid>
+      <category>Jobs</category>
+      <dc:creator>TIMB</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Electronics Technician</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/91b6139f6f9d.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/91b6139f6f9d.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/91b6139f6f9d.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Cell Insurance Group — Pharmacists</title>
-      <link>https://mutapatimes.com/stories/4646fc239eac.html</link>
-      <description>PHARMACISTS (2 POSITIONS) Highlands, Zvishavane (1) Ngezi (1) Nectacare (Pvt) Ltd is seeking two dynamic, business driven Pharmacists to join our growing healthcare services team. We are looking for… Zvishavane · Full Time · To be disclosed to … (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/4646fc239eac.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Cell Insurance Group</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/4646fc239eac.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4646fc239eac.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/4646fc239eac.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
