@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Aug 2026 14:39:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:14:33 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 6 Aug: Harare clear sky · high 22° / low 9°</title>
-      <link>https://mutapatimes.com/weather?d=2026-08-06</link>
-      <description>Harare: high 22°, low 9° (clear sky) · Bulawayo: high 23°, low 10° (mainly clear) · Mutare: high 21°, low 8° (partly cloudy) · Gweru: high 22°, low 9° (mainly clear) · Masvingo: high 23°, low 8° (clear sky) · Victoria Falls: high 27°, low 12° (clear sky) Tsumo yezuva: Wakurumidza kumedza, kutsenga uchada. (You rushed ahead before finishing what was behind.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Wed, 05 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-08-06</guid>
+      <title>Zim weather 7 Aug: Harare clear sky · high 22° / low 9°</title>
+      <link>https://mutapatimes.com/weather?d=2026-08-07</link>
+      <description>Harare: high 22°, low 9° (clear sky) · Bulawayo: high 23°, low 10° (mainly clear) · Mutare: high 21°, low 8° (partly cloudy) · Gweru: high 22°, low 9° (mainly clear) · Masvingo: high 23°, low 8° (clear sky) · Victoria Falls: high 27°, low 12° (clear sky) Tsumo yezuva: Yadeuka yadeuka mvura yemuguchu haidyorerwi. (What has happened cannot be undone.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
+      <pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-08-07</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-06" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-06"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-06" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-07" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-07"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-07" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
