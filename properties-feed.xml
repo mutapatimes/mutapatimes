@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 11:26:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 13:37:56 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -259,6 +259,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/c425f9871675.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>USD 700,000 — Pomona Vainona House For Sale (Pomona, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/2b34cf76b2cb.html</link>
+      <description>USD 700,000 — Pomona, Harare North. 4 beds. Pomona Vainona House For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/2b34cf76b2cb.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/2b34cf76b2cb.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/2b34cf76b2cb.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/2b34cf76b2cb.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>USD 240,000 — Investment Opportunity in mt pleasant heights! (Mt Pleasant Heights, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/3d1055dc40c8.html</link>
       <description>USD 240,000 — Mt Pleasant Heights, Harare West. 4 beds, 2 baths. Investment Opportunity in mt pleasant heights!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/3d1055dc40c8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3d1055dc40c8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/3d1055dc40c8.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 620,000 — Chisipite House for sale (Chisipite, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/de3637ec5092.html</link>
-      <description>USD 620,000 — Chisipite, Harare North. 3 beds, 2 baths. Chisipite House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/de3637ec5092.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/de3637ec5092.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/de3637ec5092.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/de3637ec5092.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
