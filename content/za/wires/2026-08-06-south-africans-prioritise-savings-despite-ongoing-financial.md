@@ -1,0 +1,16 @@
+---
+title: "South Africans prioritise savings despite ongoing financial pressure"
+date: 2026-08-06T22:03:39.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "South Africans prioritise savings despite ongoing financial pressure"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUjBpQkRvc3I3OHRWMGUzNkxvdXZ3emFHOXk1TEp3dlhZemNfakZlX29iRGM2eVZCQTFCUXp0Ql8tVzBkeV9kaGxSUmxpVDFlZ3hjcnVOQzF3S09HbFVNUlR0Q2VPMHRjQVdwOV9GRDJpdTQ3SjJ6SmhpeTRvY1RJOFlFcXhIa05GaHRkX19PZEV4ZV94ZnZmRHJxc2RYTExvN3RVS3RNSkRsYWJqaldIM2pEQkFKd0laOGNjbTRRR0hCOUg5NFZQOEJZZ29UdDBSLWNv?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUjBpQkRvc3I3OHRWMGUzNkxvdXZ3emFHOXk1TEp3dlhZemNfakZlX29iRGM2eVZCQTFCUXp0Ql8tVzBkeV9kaGxSUmxpVDFlZ3hjcnVOQzF3S09HbFVNUlR0Q2VPMHRjQVdwOV9GRDJpdTQ3SjJ6SmhpeTRvY1RJOFlFcXhIa05GaHRkX19PZEV4ZV94ZnZmRHJxc2RYTExvN3RVS3RNSkRsYWJqaldIM2pEQkFKd0laOGNjbTRRR0hCOUg5NFZQOEJZZ29UdDBSLWNv?oc=5)
