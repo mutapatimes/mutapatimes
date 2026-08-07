@@ -20,12 +20,12 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 459,
-          "airline": "FR",
+          "price": 477,
+          "airline": "PC",
           "departure_at": "2026-08-20",
           "return_at": "",
           "stops": 3,
-          "duration": 2090,
+          "duration": 1840,
           "currency": ""
         },
         {
@@ -74,15 +74,6 @@
           "currency": ""
         },
         {
-          "price": 739,
-          "airline": "WB",
-          "departure_at": "2027-03-24",
-          "return_at": "2027-03-31",
-          "stops": 1,
-          "duration": null,
-          "currency": ""
-        },
-        {
           "price": 637,
           "airline": "QR",
           "departure_at": "2027-04-10",
@@ -112,12 +103,21 @@
           "currency": ""
         },
         {
-          "price": 509,
-          "airline": "EI",
+          "price": 477,
+          "airline": "PC",
           "departure_at": "2026-08-20",
           "return_at": "",
           "stops": 3,
-          "duration": 3530,
+          "duration": 1840,
+          "currency": ""
+        },
+        {
+          "price": 509,
+          "airline": "EI",
+          "departure_at": "2026-11-15",
+          "return_at": "",
+          "stops": 3,
+          "duration": 3370,
           "currency": ""
         },
         {
@@ -127,15 +127,6 @@
           "return_at": "",
           "stops": 2,
           "duration": 1575,
-          "currency": ""
-        },
-        {
-          "price": 608,
-          "airline": "ET",
-          "departure_at": "2026-10-01",
-          "return_at": "2026-10-28",
-          "stops": 1,
-          "duration": null,
           "currency": ""
         }
       ],
@@ -149,7 +140,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -173,7 +164,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 8,
+          "n": 7,
           "error": null
         },
         {
@@ -189,7 +180,7 @@
           "error": null
         }
       ],
-      "observations": 25
+      "observations": 24
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -381,18 +372,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1326,
+        "price": 1327,
         "airline": "FA",
-        "departure_at": "2026-08-27",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1326,
+        "price": 1327,
         "airline": "FA",
-        "departure_at": "2026-08-27",
+        "departure_at": "2026-08-28",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -400,9 +391,9 @@
       },
       "monthly": [
         {
-          "price": 1326,
+          "price": 1327,
           "airline": "FA",
-          "departure_at": "2026-08-27",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -438,9 +429,9 @@
       ],
       "by_airline": [
         {
-          "price": 1326,
+          "price": 1327,
           "airline": "FA",
-          "departure_at": "2026-08-27",
+          "departure_at": "2026-08-28",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -456,7 +447,7 @@
           "currency": ""
         },
         {
-          "price": 4737,
+          "price": 4738,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
