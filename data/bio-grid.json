@@ -1,7 +1,95 @@
 {
-  "fetched_at": "2026-08-07T02:25:00+00:00",
+  "fetched_at": "2026-08-07T15:51:38+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "zse",
+      "title": "ZSE close 7 Aug 2026: All Share 479.41 (+0.02%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-07",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-07",
+      "pubDate": "2026-08-07T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Dollar Bourse Plans Venture Board, Eyes $5 Billion Market Value",
+      "link": "https://mutapatimes.com/articles/2026-08-07-zimbabwe-dollar-bourse-plans-venture-board-eyes-5-billion-ma",
+      "image": "https://mutapatimes.com/img/cards/news/175925e18689.png",
+      "pubDate": "2026-08-07T04:15:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘I am ZANU PF’: AFM president Madawo declares allegiance to ruling party, backs Mnangagwa’s extended rule",
+      "link": "https://mutapatimes.com/news/2026-08-07-i-am-zanu-pf-afm-president-madawo-declares-allegiance-to-ruling-party-backs-73228e",
+      "image": "https://mutapatimes.com/img/cards/news/fb0d68088181.png",
+      "pubDate": "2026-08-07T03:17:21+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "No More Kickbacks: Anti-Corruption Commission Warns Aviation Authority",
+      "link": "https://mutapatimes.com/news/2026-08-07-no-more-kickbacks-anti-corruption-commission-warns-aviation-authority-72f577",
+      "image": "https://mutapatimes.com/img/cards/news/a40f72f8d52b.png",
+      "pubDate": "2026-08-07T02:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Aurora Lighting Zim–Leader in smart building solutions",
+      "link": "https://mutapatimes.com/articles/2026-08-06-aurora-lighting-zimleader-in-smart-building-solutions",
+      "image": "https://mutapatimes.com/img/cards/news/7e07d89775a2.png",
+      "pubDate": "2026-08-06T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Virulent flu lashes Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-06-virulent-flu-lashes-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/192e308f83d8.png",
+      "pubDate": "2026-08-06T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Senate orders Mines ministry to halt illegal mining at Christmas Pass, Marlborough",
+      "link": "https://mutapatimes.com/news/2026-08-06-senate-orders-mines-ministry-to-halt-illegal-mining-at-christmas-pass-3d5c86",
+      "image": "https://mutapatimes.com/img/cards/news/75299dbdc2b2.png",
+      "pubDate": "2026-08-06T23:15:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe moves to review intersex laws after landmark court challenge",
+      "link": "https://mutapatimes.com/news/2026-08-06-zimbabwe-moves-to-review-intersex-laws-after-landmark-court-challenge-c2194a",
+      "image": "https://mutapatimes.com/img/cards/news/54897729addd.png",
+      "pubDate": "2026-08-06T23:10:54+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean man found guilty of sexually assaulting two women in Norwich nightclub",
+      "link": "https://mutapatimes.com/news/2026-08-06-zimbabwean-man-found-guilty-of-sexually-assaulting-two-women-in-norwich-4b82fa",
+      "image": "https://mutapatimes.com/img/cards/news/325ebb09ede3.png",
+      "pubDate": "2026-08-06T23:06:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe ends 2026 tobacco marketing season with record harvest",
+      "link": "https://mutapatimes.com/articles/2026-08-06-zimbabwe-ends-2026-tobacco-marketing-season-with-record-harv",
+      "image": "https://mutapatimes.com/img/cards/news/49afb6724e13.png",
+      "pubDate": "2026-08-06T23:05:27+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe ends 2026 tobacco marketing season with record harvest",
+      "link": "https://mutapatimes.com/news/2026-08-06-zimbabwe-ends-2026-tobacco-marketing-season-with-record-harvest-be1902",
+      "image": "https://mutapatimes.com/img/cards/news/858ddd4b1440.png",
+      "pubDate": "2026-08-06T23:05:27+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim trade balance 2025 Q4: $486M trade surplus. Exports $3.2B, imports $2.7B.",
@@ -12,7 +100,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 7 Aug 2026: 1 USD = 26.63 ZWG · best from UK £100 → $131.52 via Wise",
+      "title": "Zim FX snapshot 7 Aug 2026: 1 USD = 26.62 ZWG · best from UK £100 → $131.43 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-08-07",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-08-07",
       "pubDate": "2026-08-06T22:00:00+00:00",
@@ -20,7 +108,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 7 Aug: Harare clear sky · high 22° / low 9°",
+      "title": "Zim weather 7 Aug: Harare clear sky · high 22° / low 10°",
       "link": "https://mutapatimes.com/weather?d=2026-08-07",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-07",
       "pubDate": "2026-08-06T22:00:00+00:00",
@@ -57,6 +145,158 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-06T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Supply Attachee",
+      "link": "https://vacancymail.co.zw/jobs/supply-attachee-68719/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4d0300215c59.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Human Resources Consultants(2) (Free Lance on Commission)",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-consultants2-free-lance-on-commission-68717/",
+      "image": "https://mutapatimes.com/img/cards/jobs/359dbf020d8a.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Safemode Security — Security Administrator",
+      "link": "https://vacancymail.co.zw/jobs/security-administrator-68716/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8d874f14c24e.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Business Development Team Leader",
+      "link": "https://vacancymail.co.zw/jobs/business-development-team-leader-68715/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ab46ebcd5f05.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "School Administration Officer (Junior & High School)",
+      "link": "https://vacancymail.co.zw/jobs/school-administration-officer-junior-high-school-68714/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0cbca05a9242.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Magamba Network — Fired Up Officer",
+      "link": "https://vacancymail.co.zw/jobs/fired-up-officer-68713/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fab98a7619f8.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Professor/Associate Professor/Senior Lecturer/Lecturer – 1 Post",
+      "link": "https://vacancymail.co.zw/jobs/professorassociate-professorsenior-lecturerlecturer-1-post-68712/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0da7fcc87bd8.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Class 1 Painter",
+      "link": "https://vacancymail.co.zw/jobs/class-1-painter-68711/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3f53f39bca23.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Class 1 Bricklayer",
+      "link": "https://vacancymail.co.zw/jobs/class-1-bricklayer-68710/",
+      "image": "https://mutapatimes.com/img/cards/jobs/95a6408e7f54.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Stock Controller",
+      "link": "https://vacancymail.co.zw/jobs/stock-controller-68709/",
+      "image": "https://mutapatimes.com/img/cards/jobs/062ed0bb76c4.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "CIMAS — Marketing Officer – Cimas Health Group (Pvt) Ltd",
+      "link": "https://vacancymail.co.zw/jobs/marketing-officer-cimas-health-group-pvt-ltd-68705/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fa7317ceccbc.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accouncts Intern / Attachee",
+      "link": "https://vacancymail.co.zw/jobs/accouncts-intern-attachee-68704/",
+      "image": "https://mutapatimes.com/img/cards/jobs/37a4ae676534.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "World Vision — Communications Assistant (Re-Advertised)",
+      "link": "https://vacancymail.co.zw/jobs/communications-assistant-re-advertised-68703/",
+      "image": "https://mutapatimes.com/img/cards/jobs/557957e91a3e.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Turner and Townsend — Senior Quantity Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/senior-quantity-surveyor-68702/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e8716d8e572c.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rainbow Tourism Group — Restaurant Cashier",
+      "link": "https://vacancymail.co.zw/jobs/restaurant-cashier-68701/",
+      "image": "https://mutapatimes.com/img/cards/jobs/20bcc06cb94d.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Digital Marketing",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-digital-marketing-68700/",
+      "image": "https://mutapatimes.com/img/cards/jobs/97016204e7ac.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TV Sales — Sales Persons: Bindura and Masvingo",
+      "link": "https://vacancymail.co.zw/jobs/sales-persons-bindura-and-masvingo-68699/",
+      "image": "https://mutapatimes.com/img/cards/jobs/39bd5f527b46.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimnat — Internal Auditor",
+      "link": "https://vacancymail.co.zw/jobs/internal-auditor-68698/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5d7367946a00.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimnat — Recoveries Officers",
+      "link": "https://vacancymail.co.zw/jobs/recoveries-officers-68697/",
+      "image": "https://mutapatimes.com/img/cards/jobs/70818c702694.png",
+      "pubDate": "2026-08-06T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -239,246 +479,6 @@
       "title": "Harare Institute of Public Health — Diploma Lecturer – Marketing",
       "link": "https://vacancymail.co.zw/jobs/diploma-lecturer-marketing-68674/",
       "image": "https://mutapatimes.com/img/cards/jobs/1152a664b097.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Head Marketing & Brand – Cimas Health Group (Pvt) Ltd",
-      "link": "https://vacancymail.co.zw/jobs/head-marketing-brand-cimas-health-group-pvt-ltd-68666/",
-      "image": "https://mutapatimes.com/img/cards/jobs/35506197bbb3.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Branch Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/branch-supervisor-68665/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a342ed405352.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutoko Rural District Council — Industrial Attachment Programme",
-      "link": "https://vacancymail.co.zw/jobs/industrial-attachment-programme-68664/",
-      "image": "https://mutapatimes.com/img/cards/jobs/089e8d50f7a8.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Finance & Administration Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-administration-manager-68663/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f47f1ee6801b.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Projects Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/projects-coordinator-68662/",
-      "image": "https://mutapatimes.com/img/cards/jobs/21e2ff6b7f77.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tow Truck Driver: Ontime Recovery",
-      "link": "https://vacancymail.co.zw/jobs/tow-truck-driver-ontime-recovery-68661/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6447b1f0ee94.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing Officer",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-68660/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5e1d41408707.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mejrkh Communications & Media Advisory — FINANCE & ACCOUNTING ATTACHMENT STUDENTS (2 POSITIONS)",
-      "link": "https://vacancymail.co.zw/jobs/finance-accounting-attachment-students-2-positions-68659/",
-      "image": "https://mutapatimes.com/img/cards/jobs/44fbd745082c.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Monitoring and Evaluation Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/monitoring-and-evaluation-graduate-trainee-68658/",
-      "image": "https://mutapatimes.com/img/cards/jobs/63a269d263a0.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Agricultural Finance Company Holdings (AFC) — Finance Clerk",
-      "link": "https://vacancymail.co.zw/jobs/finance-clerk-68657/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3076894b8b26.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accountant",
-      "link": "https://vacancymail.co.zw/jobs/accountant-68656/",
-      "image": "https://mutapatimes.com/img/cards/jobs/88cea1f9c8e2.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dominican Convent — Physical Education and Sports Teacher",
-      "link": "https://vacancymail.co.zw/jobs/physical-education-and-sports-teacher-68655/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a8252f30d7f1.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dominican Convent — Junior Teacher",
-      "link": "https://vacancymail.co.zw/jobs/junior-teacher-68654/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b2ddd3a2073d.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dominican Convent — Infant Teacher",
-      "link": "https://vacancymail.co.zw/jobs/infant-teacher-68653/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cc7f25f3822b.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AMA-Agricultural Marketing Authority — Marketing and Value Chain Expert",
-      "link": "https://vacancymail.co.zw/jobs/marketing-and-value-chain-expert-68652/",
-      "image": "https://mutapatimes.com/img/cards/jobs/69f2f44c8b40.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AMA-Agricultural Marketing Authority — Market and Standards Expert",
-      "link": "https://vacancymail.co.zw/jobs/market-and-standards-expert-68651/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f16acb24f03d.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AMA-Agricultural Marketing Authority — Projects / Business and Advisory Manager",
-      "link": "https://vacancymail.co.zw/jobs/projects-business-and-advisory-manager-68650/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3c4e8546f530.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Airports Company of Zimbabwe Private Limited — PERSONAL ASSISTANT TO BUSINESS DEVELOPMENT DIRECTOR x 1",
-      "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-business-development-director-x-1-68649/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1bb761f3582e.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Airports Company of Zimbabwe Private Limited — Registry Assistant",
-      "link": "https://vacancymail.co.zw/jobs/registry-assistant-68648/",
-      "image": "https://mutapatimes.com/img/cards/jobs/21e2a3644c1b.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Airports Company of Zimbabwe Private Limited — Accounting Assistant",
-      "link": "https://vacancymail.co.zw/jobs/accounting-assistant-68647/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4adf2436cc69.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chief Underwriter",
-      "link": "https://vacancymail.co.zw/jobs/chief-underwriter-68646/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bc06c966ce0d.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Tipper Truck Operator",
-      "link": "https://vacancymail.co.zw/jobs/tipper-truck-operator-68645/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d51357b9a773.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Strauss Logistics — Driver Trainer",
-      "link": "https://vacancymail.co.zw/jobs/driver-trainer-68644/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3e28b301dffb.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Administration Officer - Fitment Centre",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-administration-officer-fitment-centre-68643/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7b1a90a37098.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ixar Mobile ~~ 0 — Information Technology / Telecommunications Trainer",
-      "link": "https://vacancymail.co.zw/jobs/information-technology-telecommunications-trainer-68642/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8a8094b5e68b.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ixar Mobile ~~ 0 — Refrigeration & Air Conditioning Trainer",
-      "link": "https://vacancymail.co.zw/jobs/refrigeration-air-conditioning-trainer-68641/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7982e0f2a321.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Officers (Legal Aid Cover, Funeral Cover, Medical Aid, Loans, Cash Savings Plan)",
-      "link": "https://vacancymail.co.zw/jobs/sales-officers-legal-aid-cover-funeral-cover-medical-aid-loans-cash-savings-plan-68640/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a66528b656e0.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Shop Assistant",
-      "link": "https://vacancymail.co.zw/jobs/shop-assistant-68638/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a2bd676e508c.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mother Touch Group of Schools — Bursar",
-      "link": "https://vacancymail.co.zw/jobs/bursar-68637/",
-      "image": "https://mutapatimes.com/img/cards/jobs/698caca35b49.png",
-      "pubDate": "2026-08-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — Internal Auditor",
-      "link": "https://vacancymail.co.zw/jobs/internal-auditor-68636/",
-      "image": "https://mutapatimes.com/img/cards/jobs/df094d202d63.png",
       "pubDate": "2026-08-06T22:00:00+00:00",
       "category": "Jobs"
     }
