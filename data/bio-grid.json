@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-08T06:42:14+00:00",
+  "fetched_at": "2026-08-08T09:32:40+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe to Cap Gold-Buying Support at $300 Million This Year",
+      "link": "https://mutapatimes.com/articles/2026-08-08-zimbabwe-to-cap-gold-buying-support-at-300-million-this-year",
+      "image": "https://mutapatimes.com/img/cards/news/024aa944acfe.png",
+      "pubDate": "2026-08-08T08:28:08+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Agriculture is the fastest-growing sector at +22.6% YoY.",
@@ -57,6 +65,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-07T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rainbow Tourism Group — Human Resources Graduate Trainee",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-graduate-trainee-68734/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4e8a5daca4bd.png",
+      "pubDate": "2026-08-07T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -463,22 +479,6 @@
       "title": "SOS Children's Villages Zimbabwe — Community Development Volunteer X 1",
       "link": "https://vacancymail.co.zw/jobs/community-development-volunteer-x-1-68675/",
       "image": "https://mutapatimes.com/img/cards/jobs/061b6465b1a5.png",
-      "pubDate": "2026-08-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Harare Institute of Public Health — Diploma Lecturer – Marketing",
-      "link": "https://vacancymail.co.zw/jobs/diploma-lecturer-marketing-68674/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1152a664b097.png",
-      "pubDate": "2026-08-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Head Marketing & Brand – Cimas Health Group (Pvt) Ltd",
-      "link": "https://vacancymail.co.zw/jobs/head-marketing-brand-cimas-health-group-pvt-ltd-68666/",
-      "image": "https://mutapatimes.com/img/cards/jobs/35506197bbb3.png",
       "pubDate": "2026-08-07T22:00:00+00:00",
       "category": "Jobs"
     }
