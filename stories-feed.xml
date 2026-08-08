@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 07:13:57 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 07:19:58 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Rainbow Tourism Group — Human Resources Graduate Trainee</title>
+      <link>https://mutapatimes.com/stories/4e8a5daca4bd.html</link>
+      <description>An exciting opportunity has arisen for vibrant, young, highly driven, ambitious and exceptional individuals to become part of the Rainbow Tourism Group Graduate Development Programme. We are inviting… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 07 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/4e8a5daca4bd.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Rainbow Tourism Group</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/4e8a5daca4bd.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4e8a5daca4bd.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/4e8a5daca4bd.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Cresta Hotels — Banqueting Supervisor</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/089e8d50f7a8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/089e8d50f7a8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/089e8d50f7a8.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Finance &amp; Administration Manager</title>
-      <link>https://mutapatimes.com/stories/f47f1ee6801b.html</link>
-      <description>Job Title: Finance &amp; Administration Manager Job Type: Full-time Job Purpose To provide integrated oversight of the mine-level finance, stores, and IT functions so as to ensure accurate financial repo… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 07 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/f47f1ee6801b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/f47f1ee6801b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f47f1ee6801b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/f47f1ee6801b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
