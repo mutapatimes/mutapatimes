@@ -1,0 +1,16 @@
+---
+title: "Jack’s Wife Freda serves the taste of home"
+date: 2026-08-05T09:59:24.000Z
+author: South African Jewish Report
+category: Culture
+image: 
+summary: "Jack’s Wife Freda serves the taste of home"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMic0FVX3lxTE9hYkJEbEQzVFBBaEJjZXdVemYyTFM1WDNBRlA5dkczRXVfLVUzNGZtSVptQ0l3X2lSd2tQUkdFUW9LVHZuRGozWWdEMGVTX2xnSkVESHZCSHI5RHRFVXFxalg3MG1hQkhPNGlUR1ZZbE5VS2PSAXhBVV95cUxONEJYcFFSdEpqb19oM1QtbUd2Nm5UQXo0SW1JSFhLTVhKRjVoZkdFWEtqWnduT3ZEelRGY1Vwam5EVTRuTmpIUDdYLXBud2xxSVZnRHpvX0tqMUl4cUxmcktELU1pV3ctN05GTUE0OEtRWEhjS0UzcDY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by South African Jewish Report.*
+[Read original article](https://news.google.com/rss/articles/CBMic0FVX3lxTE9hYkJEbEQzVFBBaEJjZXdVemYyTFM1WDNBRlA5dkczRXVfLVUzNGZtSVptQ0l3X2lSd2tQUkdFUW9LVHZuRGozWWdEMGVTX2xnSkVESHZCSHI5RHRFVXFxalg3MG1hQkhPNGlUR1ZZbE5VS2PSAXhBVV95cUxONEJYcFFSdEpqb19oM1QtbUd2Nm5UQXo0SW1JSFhLTVhKRjVoZkdFWEtqWnduT3ZEelRGY1Vwam5EVTRuTmpIUDdYLXBud2xxSVZnRHpvX0tqMUl4cUxmcktELU1pV3ctN05GTUE0OEtRWEhjS0UzcDY?oc=5)

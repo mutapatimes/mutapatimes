@@ -1,0 +1,16 @@
+---
+title: "SAFA to appoint Pitso Mosimane as Bafana Bafana coach for a second spell"
+date: 2026-08-08T14:22:33.000Z
+author: News24
+category: Tech
+image: 
+summary: "SAFA to appoint Pitso Mosimane as Bafana Bafana coach for a second spell"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOVk1qbmVhN2Q3VGNlbnM4SzRkcHRDVmJQTmxOQzRGcDN4eTlmazRNMlE3QmMxamtaQWJfbHFfcWN2OWNlTXVjejZ6ZXFObkVmaVlrd2dORmVoMnFqbjZGWHdYRER6QktGRzJDeGRmeHVYWkxqdkJpYW5nbFFBcHVxSGc4a0otcWZJTXF5V2lRSHdiRXJjQ3RrbEVBRFR2cHNXazdfb2R0WGN4OFBMaW5ObHFVWXBrT0QxM2xlcVZiV2MxZ1QxQmRlSXUwY3Z1b3RrWFVSRno3d3BNbkZ4bEROODVlaTFqU3pxT0JrUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxOVk1qbmVhN2Q3VGNlbnM4SzRkcHRDVmJQTmxOQzRGcDN4eTlmazRNMlE3QmMxamtaQWJfbHFfcWN2OWNlTXVjejZ6ZXFObkVmaVlrd2dORmVoMnFqbjZGWHdYRER6QktGRzJDeGRmeHVYWkxqdkJpYW5nbFFBcHVxSGc4a0otcWZJTXF5V2lRSHdiRXJjQ3RrbEVBRFR2cHNXazdfb2R0WGN4OFBMaW5ObHFVWXBrT0QxM2xlcVZiV2MxZ1QxQmRlSXUwY3Z1b3RrWFVSRno3d3BNbkZ4bEROODVlaTFqU3pxT0JrUQ?oc=5)
