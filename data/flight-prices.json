@@ -38,12 +38,12 @@
           "currency": ""
         },
         {
-          "price": 437,
-          "airline": "FR",
-          "departure_at": "2026-10-13",
+          "price": 398,
+          "airline": "W4",
+          "departure_at": "2026-10-01",
           "return_at": "",
           "stops": 3,
-          "duration": 1880,
+          "duration": 2410,
           "currency": ""
         },
         {
@@ -94,21 +94,21 @@
           "currency": ""
         },
         {
+          "price": 398,
+          "airline": "W4",
+          "departure_at": "2026-10-01",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2410,
+          "currency": ""
+        },
+        {
           "price": 474,
           "airline": "PC",
           "departure_at": "2026-08-20",
           "return_at": "",
           "stops": 3,
           "duration": 1575,
-          "currency": ""
-        },
-        {
-          "price": 509,
-          "airline": "EI",
-          "departure_at": "2026-11-15",
-          "return_at": "",
-          "stops": 3,
-          "duration": 3370,
           "currency": ""
         },
         {
@@ -261,15 +261,6 @@
           "currency": ""
         },
         {
-          "price": 3047,
-          "airline": "GE",
-          "departure_at": "2026-08-26",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1410,
-          "currency": ""
-        },
-        {
           "price": 6790,
           "airline": "RN",
           "departure_at": "2026-11-22",
@@ -301,7 +292,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 4,
+          "n": 3,
           "error": null
         },
         {
@@ -323,7 +314,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 6
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -331,18 +322,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1366,
+        "price": 1363,
         "airline": "FA",
-        "departure_at": "2026-08-25",
+        "departure_at": "2026-09-01",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1366,
+        "price": 1363,
         "airline": "FA",
-        "departure_at": "2026-08-25",
+        "departure_at": "2026-09-01",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -350,7 +341,7 @@
       },
       "monthly": [
         {
-          "price": 1366,
+          "price": 1365,
           "airline": "FA",
           "departure_at": "2026-08-25",
           "return_at": "",
@@ -359,7 +350,7 @@
           "currency": ""
         },
         {
-          "price": 1366,
+          "price": 1363,
           "airline": "FA",
           "departure_at": "2026-09-01",
           "return_at": "",
@@ -388,19 +379,28 @@
       ],
       "by_airline": [
         {
-          "price": 1366,
+          "price": 1363,
           "airline": "FA",
-          "departure_at": "2026-08-25",
+          "departure_at": "2026-09-01",
           "return_at": "",
           "stops": 0,
           "duration": 110,
           "currency": ""
         },
         {
-          "price": 3875,
+          "price": 3764,
+          "airline": "Mytrip.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 210,
+          "currency": ""
+        },
+        {
+          "price": 3989,
           "airline": "FN",
-          "departure_at": "2026-09-24",
-          "return_at": "2026-09-28",
+          "departure_at": "2027-01-10",
+          "return_at": "2027-02-01",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -428,11 +428,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 16
+      "observations": 17
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -526,7 +526,7 @@
           "currency": ""
         },
         {
-          "price": 2417,
+          "price": 2421,
           "airline": "TC",
           "departure_at": "2026-12-19",
           "return_at": "2027-01-02",
@@ -559,7 +559,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -581,7 +581,7 @@
           "error": null
         }
       ],
-      "observations": 5
+      "observations": 6
     },
     "toronto-to-harare": {
       "origin": "YYZ",
