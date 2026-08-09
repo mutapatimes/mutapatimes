@@ -1,0 +1,16 @@
+---
+title: "Surviving the El Niño Heatwave: Vital skincare tips for South Africa’s expected hot summer"
+date: 2026-08-09T05:41:30.000Z
+author: News24
+category: Business
+image: 
+summary: "Surviving the El Niño Heatwave: Vital skincare tips for South Africa’s expected hot summer"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQZWpyWUkyaDZDSWxaakxQTmhIOUNPQnJhQlJyVUJSMzJpRDI1cmJZV1FPUjVzRVdvdW1VR2hXeU9MdnpjUXRGeFE4VTdsdno5VjNFZFpVRDVuZFZ5b2liWUtyZ3VtS1YxZy0wNzQ1T2M5SGlMcGgyc25oZDFTSDB2NjFGcDl2T0JJWnh4RUVxUEhGellObGNCSHZFeVFLRHZQdXByZU1POTRZMEFtRThTTXMtME91bzdkVVN1LXNDVjFDTndPbVNfdXVlV1d2UGZhd1pOZjBZeGRWZlBEUWJfMjQybXhGWENqU0J4OTlkNEg5X0EyM3BsZnRB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi-gFBVV95cUxQZWpyWUkyaDZDSWxaakxQTmhIOUNPQnJhQlJyVUJSMzJpRDI1cmJZV1FPUjVzRVdvdW1VR2hXeU9MdnpjUXRGeFE4VTdsdno5VjNFZFpVRDVuZFZ5b2liWUtyZ3VtS1YxZy0wNzQ1T2M5SGlMcGgyc25oZDFTSDB2NjFGcDl2T0JJWnh4RUVxUEhGellObGNCSHZFeVFLRHZQdXByZU1POTRZMEFtRThTTXMtME91bzdkVVN1LXNDVjFDTndPbVNfdXVlV1d2UGZhd1pOZjBZeGRWZlBEUWJfMjQybXhGWENqU0J4OTlkNEg5X0EyM3BsZnRB?oc=5)

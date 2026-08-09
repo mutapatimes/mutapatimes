@@ -1,0 +1,16 @@
+---
+title: "Six Chinese firms to set up Gauteng factories for transmission infrastructure, Ramokgopa says"
+date: 2026-08-07T02:06:41.000Z
+author: News24
+category: Business
+image: 
+summary: "Six Chinese firms to set up Gauteng factories for transmission infrastructure, Ramokgopa says"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSEU1UXkzeEJ6UWRHcjNyUWxKYWF3MjlkUlV6bEx4aW9lN0JhV2E3b0FKNm96UDVqV2NxYlhucTV4UWZadVVZVkFzN1BZUi1KME5nbGhEUjRBbS03eWNSLXJPaWo0Wk1LSjNKOWN5dndFLWVYc2M3VUViQklHTUtnckZPYk9Qem03Q2xvdjZCSE5kZ1ZlMXNuaUh4V2Y3elV4R3JNcjlqclBhSzhnZE1uZDZrdWtNUzhBX0l5cThmcjJULTJ3UmIzWlN4dHdHc2x5MnZfMm9uM2VzWjRKVWZzNm9yVHM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSEU1UXkzeEJ6UWRHcjNyUWxKYWF3MjlkUlV6bEx4aW9lN0JhV2E3b0FKNm96UDVqV2NxYlhucTV4UWZadVVZVkFzN1BZUi1KME5nbGhEUjRBbS03eWNSLXJPaWo0Wk1LSjNKOWN5dndFLWVYc2M3VUViQklHTUtnckZPYk9Qem03Q2xvdjZCSE5kZ1ZlMXNuaUh4V2Y3elV4R3JNcjlqclBhSzhnZE1uZDZrdWtNUzhBX0l5cThmcjJULTJ3UmIzWlN4dHdHc2x5MnZfMm9uM2VzWjRKVWZzNm9yVHM?oc=5)
