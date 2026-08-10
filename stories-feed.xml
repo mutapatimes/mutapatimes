@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 19:15:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 19:25:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -113,6 +113,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Nutrition Action Zimbabwe ~~ 0 — FINANCE OFFICER</title>
+      <link>https://mutapatimes.com/stories/22665348b8d5.html</link>
+      <description>Nutrition Action Zimbabwe is a local registered PVO operating in Zimbabwe since 2014. The organization’s primary focus is combating malnutrition in all its forms, through effective implementation of… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 09 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/22665348b8d5.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Nutrition Action Zimbabwe ~~ 0</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/22665348b8d5.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/22665348b8d5.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/22665348b8d5.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Tsuro Trust — Terms Of Reference: Towards Sustainable Use of Resources Organisation (TSURO)</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/70818c702694.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/70818c702694.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/70818c702694.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>TIMB — Graduate Trainee - Internal Audit</title>
-      <link>https://mutapatimes.com/stories/67226bb9fc77.html</link>
-      <description>GRADUATE TRAINEE – INTERNAL AUDIT An exciting opportunity has arisen for a young, ambitious, highly motivated and qualified graduate to join TIMB. The successful candidate will undergo an intensive g… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 09 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/67226bb9fc77.html</guid>
-      <category>Jobs</category>
-      <dc:creator>TIMB</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/67226bb9fc77.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
