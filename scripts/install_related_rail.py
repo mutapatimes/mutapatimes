@@ -23,6 +23,7 @@ def gather_targets():
     paths += sorted((ROOT / "cooking").rglob("index.html"))
     paths += sorted((ROOT / "schools").glob("*.html"))
     paths += sorted((ROOT / "zse").glob("*.html"))
+    paths += sorted((ROOT / "vfex").glob("*.html"))
     paths += sorted((ROOT / "mining").glob("*.html"))
     paths += sorted((ROOT / "moving-to-zimbabwe").glob("*.html"))
     seen = set(); out = []

@@ -34,6 +34,7 @@ DRAWER = """<div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true
     <a href="/flights/">Flights</a>
     <a href="/schools/">Schools</a>
     <a href="/zse/">ZSE companies</a>
+    <a href="/vfex/">VFEX companies</a>
     <a href="/mining/">Mining</a>
     <a href="/academy/">Academy</a>
     <a href="/moving-to-zimbabwe/">Moving to Zimbabwe</a>
@@ -69,6 +70,7 @@ def gather_targets():
     paths += sorted((ROOT / "fx").rglob("index.html"))   # /fx/<slug>/index.html
     paths += sorted((ROOT / "schools").glob("*.html"))
     paths += sorted((ROOT / "zse").glob("*.html"))
+    paths += sorted((ROOT / "vfex").glob("*.html"))
     paths += sorted((ROOT / "mining").glob("*.html"))
     paths += sorted((ROOT / "cooking").rglob("index.html"))  # /cooking/<recipe>/index.html
     paths += sorted((ROOT / "airports").rglob("index.html"))  # /airports/<airport>/index.html

@@ -1,0 +1,280 @@
+{
+  "fetched_at": "2026-08-10",
+  "source": "ZSE/VFEX official issuer registry (public API)",
+  "count": 16,
+  "companies": [
+    {
+      "name": "Axia Corporation Limited",
+      "symbol": "AXIA.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.us-east-1.amazonaws.com/websites/1770369676.jpg",
+      "address": "8 Cambridge Avenue Newlands Harare, Zimbabwe",
+      "website": "https://axiacorpltd.com/",
+      "email": "finance@axiaops.com",
+      "phone": "+263242776998 | +263242776273",
+      "slug": "axia-corporation-limited",
+      "price": {
+        "name": "Axia Corporation Limited",
+        "symbol": "AXIA.VX",
+        "price": 15.44,
+        "change_pct": -0.45
+      },
+      "wp": {}
+    },
+    {
+      "name": "Bindura Nickel Corporation Limited",
+      "symbol": "BIND.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7b8f65dfd_1774943119_image_%2861%29.png",
+      "address": "Trojan Mine Road Bindura, Zimbabwe",
+      "website": "https://binduranickel.co.zw/",
+      "email": "investorrelations@bnc.co.zw",
+      "phone": "+263 772 185 650/1  | +263 772 185 652/3",
+      "slug": "bindura-nickel-corporation-limited",
+      "price": null,
+      "wp": {
+        "summary": "Bindura Nickel Corporation (BNC) is a mining company based in Zimbabwe's Mashonaland Central.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bindura_Nickel_Corporation"
+      }
+    },
+    {
+      "name": "Caledonia Mining Corporation Limited",
+      "symbol": "CMCL.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7afe8f801_1774942974_image_%2860%29.png",
+      "address": "Caledonia Mining Corporation Plc 2 Mulcaster Street St Helier Jersey JE2 3NJ",
+      "website": "http://caledoniamining.com",
+      "email": "info@caledoniamining.com",
+      "phone": "+44 1534 679800",
+      "slug": "caledonia-mining-corporation-limited",
+      "price": null,
+      "wp": {}
+    },
+    {
+      "name": "Distributed Power Africa Limited t/a Econet InfraCo",
+      "symbol": "INFR.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/6a06e894e9c65_1778837652_Picture1.png",
+      "address": "No. 2 Old Mutare Road, Msasa, Harare, Zimbabwe",
+      "website": "https://econetinfraco.co.zw/",
+      "email": "",
+      "phone": "+263 772 222 500; +263 242 486121/6",
+      "slug": "distributed-power-africa-limited-t-a-econet-infraco",
+      "price": {
+        "name": "Econet Infraco",
+        "symbol": "INFR.VX",
+        "price": 24.66,
+        "change_pct": 7.4
+      },
+      "wp": {}
+    },
+    {
+      "name": "Edgars Stores Limited",
+      "symbol": "EDGR.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7ac1c7db7_1774942913_image_%2859%29.png",
+      "address": "9th Avenue and H. Chitepo Street Bulawayo  Zimbabwe",
+      "website": "https://edgars.co.zw/",
+      "email": "info@edgars.co.zw",
+      "phone": "+263 (29) 2881626",
+      "slug": "edgars-stores-limited",
+      "price": {
+        "name": "Edgars Stores Limited",
+        "symbol": "EDGR.VX",
+        "price": 2.03,
+        "change_pct": -2.4
+      },
+      "wp": {}
+    },
+    {
+      "name": "First Capital Bank Limited",
+      "symbol": "FCA.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.us-east-1.amazonaws.com/websites/1770369749.jpg",
+      "address": "2nd Floor, Barclays House  Corner First Street and Jason Moyo  Harare, Zimbabwe",
+      "website": "https://firstcapitalbank.co.zw/",
+      "email": "customer-service@firstcapitalbank.co.zw",
+      "phone": "+263-8677-007335 | 242 758280-9 | 242 758314/24",
+      "slug": "first-capital-bank-limited",
+      "price": {
+        "name": "First Capital Bank Limited",
+        "symbol": "FCA.VX",
+        "price": 14.98,
+        "change_pct": -0.13
+      },
+      "wp": {}
+    },
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7a6aa31bb_1774942826_image_%2858%29.png",
+      "address": "Edward Building Corner 1st Street /Nelson Mandela Avenue Harare, Zimbabwe",
+      "website": "http://innscorafrica.com",
+      "email": "admin@innscorafrica.com",
+      "phone": "+263 (24) 2496886/496790/443808/9",
+      "slug": "innscor-africa-limited",
+      "price": {
+        "name": "Innscor Africa Limited",
+        "symbol": "INN.VX",
+        "price": 142.65,
+        "change_pct": -7.87
+      },
+      "wp": {}
+    },
+    {
+      "name": "Invictus Energy Limited",
+      "symbol": "INV.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb790f45a24_1774942479_image_%2856%29.png",
+      "address": "Invictus Energy Limited Level 1, 10 Outram Street West Perth WA 6005 Australia",
+      "website": "https://invictusenergy.com",
+      "email": "info@invictusenergy.com",
+      "phone": "+61-8-6102 5055",
+      "slug": "invictus-energy-limited",
+      "price": null,
+      "wp": {}
+    },
+    {
+      "name": "Kavango Resources PLC",
+      "symbol": "KAV.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69ccd99cca648_1775032732_image_%2863%29.png",
+      "address": "Kavango Resources Plc Salisbury House,   Suite 425 London Wall London EC2M 5PS",
+      "website": "https://www.kavangoresources.com",
+      "email": "shareholders@kavangoresources.com",
+      "phone": "+46 7697 406 06",
+      "slug": "kavango-resources-plc",
+      "price": {
+        "name": "Kavango Resources Plc",
+        "symbol": "KAV.VX",
+        "price": 2.0,
+        "change_pct": 4.71
+      },
+      "wp": {}
+    },
+    {
+      "name": "Nedbank Group Limited",
+      "symbol": "NED.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb77813a15d_1774942081_image_%2854%29.png",
+      "address": "2nd Floor ZB BANK Kwame Nkhruma Avenue/1st Street Harare Zimbabwe",
+      "website": "https://www.corpserveregistrars.com",
+      "email": "corpserve@escrowgroup.org",
+      "phone": "+263 (24) 2751559-61",
+      "slug": "nedbank-group-limited",
+      "price": null,
+      "wp": {
+        "industry": "Financial services",
+        "key_people": "Jason Quinn (CEO); Daniel Mminele (Chairman)",
+        "revenue": "R75.9 billion (2018)",
+        "operating_income": "R51.1 billion (2018)",
+        "net_income": "R28.8 billion (2018)",
+        "assets": "R1.04 trillion (2018)",
+        "equity": "R91.3 billion (2018)",
+        "summary": "Nedbank Group is a South African financial services group offering wholesale and retail banking services as well as insurance, asset management, and wealth management. Nedbank Limited is a wholly-owned subsidiary of Nedbank Group.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nedbank_Group",
+        "image": {
+          "filename": "Nedbank_Regional_Office_in_Cape_Town.jpg",
+          "license": "CC-BY-SA-4.0",
+          "artist": "User:Husskeyy",
+          "commons_page": "https://commons.wikimedia.org/wiki/File:Nedbank_Regional_Office_in_Cape_Town.jpg",
+          "local": "/img/vfex/nedbank-group-limited.jpg"
+        }
+      }
+    },
+    {
+      "name": "Padenga Holdings Limited",
+      "symbol": "PHL.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7706b52f8_1774941958_image_%2853%29.png",
+      "address": "121 Borrowdale Road, Gunhill  Harare, Zimbabwe",
+      "website": "https://padenga.com",
+      "email": "kmurau@padenga.com",
+      "phone": "+263772436573",
+      "slug": "padenga-holdings-limited",
+      "price": {
+        "name": "Padenga Holdings Ltd",
+        "symbol": "PHL.VX",
+        "price": 139.83,
+        "change_pct": 3.76
+      },
+      "wp": {}
+    },
+    {
+      "name": "Seed Co International Limited",
+      "symbol": "SCIL.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb76c921709_1774941897_image_%2852%29.png",
+      "address": "Seed Co International Limited  Seed Co House,  33 Georgian Crescent,  Bryanston East,  Sandton Gauteng, South Africa",
+      "website": "https://seedcogroup.com",
+      "email": "seedco@seedcogroup.com",
+      "phone": "+267 7210 1087",
+      "slug": "seed-co-international-limited",
+      "price": {
+        "name": "Seed Co International",
+        "symbol": "",
+        "price": 41.6,
+        "change_pct": 12.28
+      },
+      "wp": {}
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7660a97ec_1774941792_image_%2851%29.png",
+      "address": "1 Edwards Building,   1st Street/Nelson Mandela Avenue  Harare, Zimbabwe",
+      "website": "http://simbisabrands.com",
+      "email": "admin@zw-simbisa.com",
+      "phone": "+263 (24) 2744 202",
+      "slug": "simbisa-brands-limited",
+      "price": {
+        "name": "Simbisa Brands Limited",
+        "symbol": "SIM.VX",
+        "price": 74.79,
+        "change_pct": 3.53
+      },
+      "wp": {}
+    },
+    {
+      "name": "TSL Limited",
+      "symbol": "TSL.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/6a4d0800324ae_1783433216_Picture1.png",
+      "address": "2 Auckland Road, Southerton, Harare",
+      "website": "https://tsl.co.zw/",
+      "email": "",
+      "phone": "+263 772131301 / +263 772131302",
+      "slug": "tsl-limited",
+      "price": null,
+      "wp": {}
+    },
+    {
+      "name": "West Properties Holdings Limited",
+      "symbol": "WPHL.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb7625b6c4a_1774941733_image_%2850%29.png",
+      "address": "null",
+      "website": "https://westproperty.co.zw",
+      "email": "sales@westpropertyzim.com",
+      "phone": "+263 242-794-841",
+      "slug": "west-properties-holdings-limited",
+      "price": null,
+      "wp": {}
+    },
+    {
+      "name": "Zimplow Holdings Limited",
+      "symbol": "ZIMW.VX",
+      "status": "active",
+      "logo": "https://zseh-direct-uploads.s3.amazonaws.com/Images/69cb75e25c5e7_1774941666_image_%2849%29.png",
+      "address": "36 Steelworks Road, Steeldale,  Bulawayo, Zimbabwe",
+      "website": "https://zimplow.co.zw/",
+      "email": "info@zimplow.co.zw",
+      "phone": "+263 8677007182 | 242 754612-19",
+      "slug": "zimplow-holdings-limited",
+      "price": null,
+      "wp": {}
+    }
+  ]
+}
