@@ -204,20 +204,39 @@
       </p>
     </section>
 
-    <!-- VFEX block — placeholder until we add a dedicated VFEX feed -->
+    <!-- VFEX block -->
     <section class="markets-band markets-vfex" aria-label="Victoria Falls Stock Exchange">
       <h2 class="markets-section-h">Victoria Falls Stock Exchange · VFEX</h2>
-      <p class="markets-foot-note">
-        The VFEX is Zimbabwe&rsquo;s USD-denominated dollar bourse,
-        launched in 2020 from Victoria Falls. Daily close coverage for
-        VFEX-listed names ships next — currently the major listings
-        you&rsquo;ll find here are Caledonia Mining, Padenga Holdings,
-        Bindura Nickel, Innscor and Simbisa, which migrated from the
-        ZSE to dollarise their shareholding.
+      <p class="markets-foot-note markets-foot-note--lead">
+        Zimbabwe&rsquo;s USD-denominated dollar bourse, launched in 2020 from
+        Victoria Falls. <span id="marketsVfexAsOf"></span>
       </p>
+      <div id="vfex-ticker" class="markets-vfex-ticker"></div>
+      <div class="markets-vfex-kpis" id="marketsVfexStats">
+        <p class="loading-msg">Loading VFEX activity&hellip;</p>
+      </div>
+      <div class="markets-table-wrap">
+        <table class="markets-table" id="marketsVfexTable">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Symbol</th>
+              <th class="markets-right">Price (US$)</th>
+              <th class="markets-right">Change</th>
+            </tr>
+          </thead>
+          <tbody id="marketsVfexRows">
+            <tr><td colspan="4" class="loading-msg">Loading VFEX movers&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="marketsVfexNotices" class="markets-vfex-notices"></div>
       <p class="markets-foot-note">
-        Source: <a href="https://www.vfex.exchange" target="_blank" rel="noopener">vfex.exchange</a>
-        and reseller bulletins from IH Securities &amp; Imara.
+        Source: <a href="https://www.zse.co.zw" target="_blank" rel="noopener">ZSE/VFEX public market-data API</a>,
+        same-day close, published weekday afternoons. Gainers/losers shown
+        above are the whole per-company picture VFEX publishes daily — unlike
+        the ZSE, it doesn&rsquo;t yet publish a full price list for every
+        listed name. <a href="https://www.vfex.exchange" target="_blank" rel="noopener">vfex.exchange</a>
       </p>
     </section>
 
@@ -241,6 +260,7 @@
 <script defer src="/js/sponsors.js"></script>
 <script defer src="/js/shopify-ads.js"></script>
 <script defer src="js/markets.js"></script>
+<script defer src="js/vfex-ticker-tape.js"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); });

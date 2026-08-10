@@ -121,6 +121,81 @@
     }
   }
 
+  // ── VFEX stats + movers ─────────────────────────────────────
+  function commas(n, dp) {
+    if (n == null || isNaN(n)) return '—';
+    return Number(n).toLocaleString('en-GB', { minimumFractionDigits: dp || 0, maximumFractionDigits: dp || 0 });
+  }
+  function big(n) {
+    if (n == null || isNaN(n)) return '—';
+    n = Number(n);
+    if (n >= 1e9) return (n / 1e9).toFixed(2) + 'bn';
+    if (n >= 1e6) return (n / 1e6).toFixed(2) + 'm';
+    return commas(n, 0);
+  }
+  function allShareIndex(data) {
+    return (data.indices || [])[0] || null;
+  }
+  function renderVfexStats(data) {
+    var wrap = document.getElementById('marketsVfexStats');
+    if (!wrap) return;
+    var a = data.activity || {};
+    var as = allShareIndex(data);
+    wrap.innerHTML = '';
+    var tiles = [
+      ['Trades', commas(a.trades, 0), null],
+      ['Turnover', 'US$' + commas(a.turnover, 0), null],
+      ['Market cap', 'US$' + big(a.market_cap), null],
+      ['VFEX All Share', as ? commas(as.value, 2) : '—', as ? { pct: as.change_pct, dir: as.direction } : null],
+    ];
+    tiles.forEach(function (t) {
+      var card = el('div', { class: 'markets-vfex-kpi' });
+      card.appendChild(el('div', { class: 'lbl', text: t[0] }));
+      card.appendChild(el('div', { class: 'val', text: t[1] }));
+      if (t[2]) {
+        card.appendChild(el('div', { class: 'sub ' + changeClass(t[2].pct),
+          text: (t[2].dir === 'up' ? '▲ ' : t[2].dir === 'down' ? '▼ ' : '· ') + formatChange(t[2].pct) }));
+      }
+      wrap.appendChild(card);
+    });
+  }
+  function renderVfexMovers(data) {
+    var tbody = document.getElementById('marketsVfexRows');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    var rows = (data.gainers || []).concat(data.losers || []);
+    rows.forEach(function (m) {
+      var tr = el('tr');
+      tr.appendChild(el('td', { class: 'markets-table-co', text: m.name || '' }));
+      tr.appendChild(el('td', { class: 'markets-table-sector', text: m.symbol || '' }));
+      tr.appendChild(el('td', { class: 'markets-right', text: m.price != null ? 'US$' + commas(m.price, 2) : '—' }));
+      tr.appendChild(el('td', { class: 'markets-right ' + changeClass(m.change_pct), text: formatChange(m.change_pct) }));
+      tbody.appendChild(tr);
+    });
+    if (!tbody.children.length) {
+      tbody.appendChild(el('tr', null, [
+        el('td', { class: 'loading-msg', colspan: '4', text: 'VFEX data unavailable.' }),
+      ]));
+    }
+  }
+  function renderVfexNotices(data) {
+    var wrap = document.getElementById('marketsVfexNotices');
+    if (!wrap) return;
+    var notices = (data.notices || []).slice(0, 3);
+    if (!notices.length) return;
+    wrap.innerHTML = '';
+    notices.forEach(function (n) {
+      var row = el('a', { class: 'markets-vfex-notice', href: n.url || '#', target: '_blank', rel: 'noopener' });
+      row.appendChild(el('span', { class: 'markets-vfex-notice-date', text: n.date || '' }));
+      row.appendChild(el('span', { class: 'markets-vfex-notice-title', text: n.title || '' }));
+      wrap.appendChild(row);
+    });
+  }
+  function renderVfexAsOf(data) {
+    var el2 = document.getElementById('marketsVfexAsOf');
+    if (el2 && data.as_of) el2.textContent = 'Last close: ' + data.as_of;
+  }
+
   fetch(mtUrl('/data/markets-indices.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderIndices(d); })
@@ -134,5 +209,16 @@
   fetch(mtUrl('/data/zse-ticker.json'), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { if (d) renderZse(d); })
+    .catch(function () {});
+
+  fetch(mtUrl('/data/vfex-market-activity.json'), { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      if (!d) return;
+      renderVfexStats(d);
+      renderVfexMovers(d);
+      renderVfexNotices(d);
+      renderVfexAsOf(d);
+    })
     .catch(function () {});
 })();

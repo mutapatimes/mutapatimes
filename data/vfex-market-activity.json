@@ -1,0 +1,130 @@
+{
+  "fetched_at": "2026-08-10T19:09:33.186734+00:00",
+  "as_of": "2026-08-07",
+  "source": "Victoria Falls Stock Exchange (public market-data API)",
+  "source_url": "https://www.vfex.exchange",
+  "currency": "USD",
+  "activity": {
+    "trades": 174,
+    "turnover": 559778.24,
+    "volume": 532512.0,
+    "market_cap": 4160646237.62
+  },
+  "indices": [
+    {
+      "name": "VFEX ALLSHARE",
+      "value": 265.96,
+      "change_pct": 1.13,
+      "change_points": 2.98,
+      "direction": "up"
+    }
+  ],
+  "gainers": [
+    {
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 41.6,
+      "change_pct": 12.28
+    },
+    {
+      "name": "Econet Infraco",
+      "symbol": "INFR.VX",
+      "price": 24.66,
+      "change_pct": 7.4
+    },
+    {
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 2.0,
+      "change_pct": 4.71
+    },
+    {
+      "name": "Padenga Holdings Ltd",
+      "symbol": "PHL.VX",
+      "price": 139.83,
+      "change_pct": 3.76
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 74.79,
+      "change_pct": 3.53
+    }
+  ],
+  "losers": [
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "price": 142.65,
+      "change_pct": -7.87
+    },
+    {
+      "name": "Edgars Stores Limited",
+      "symbol": "EDGR.VX",
+      "price": 2.03,
+      "change_pct": -2.4
+    },
+    {
+      "name": "Axia Corporation Limited",
+      "symbol": "AXIA.VX",
+      "price": 15.44,
+      "change_pct": -0.45
+    },
+    {
+      "name": "First Capital Bank Limited",
+      "symbol": "FCA.VX",
+      "price": 14.98,
+      "change_pct": -0.13
+    }
+  ],
+  "notices": [
+    {
+      "date": "2026-08-04",
+      "title": "Press Announcement Listing of Old Mutual Limited",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/292/download"
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Press Announcement Old Mutual Limited",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/285/download"
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Press Release TSL Limited Listing",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/284/download"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Notice to VFEX Issuers - Ext of Waiver for HY Results review by external auditors",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/276/download"
+    },
+    {
+      "date": "2026-05-21",
+      "title": "Memo-ZSE Holdings Proffessional ICT Services",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/272/download"
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Press Release: First Mutual Wealth Gold ETF Listing",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/271/download"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "ZSE & VFEX Joint Practice Note 2",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/268/download"
+    },
+    {
+      "date": "2026-03-20",
+      "title": "VFEX Notice - Appointment of VFEX Board",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/27/download"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
-name: Fetch ZSE Ticker
+name: Fetch ZSE & VFEX Market Data
 
-# Weekdays. Official ZSE hours: pre-open 09:00-09:30 CAT, market 09:30-13:00
-# CAT, post-close 13:00-14:30 CAT (07:00-12:30 UTC) -- but the market-data
-# API's actual publish lands later than that in practice; observed 13:00-13:30
-# UTC (15:00-15:30 CAT), 30-60min past the official post-close end. So we run
-# every 15min through that observed window to keep site latency low, plus
-# sparser bookend checks either side in case a day's publish is early or
-# unusually late. Each run only commits when the data actually changed, and
-# the social post is deduped by trading day, so extra runs are cheap no-ops.
+# Weekdays. Official ZSE/VFEX hours: pre-open 09:00-09:30 CAT, market
+# 09:30-13:00 CAT, post-close 13:00-14:30 CAT (07:00-12:30 UTC) -- but the
+# market-data API's actual publish lands later than that in practice;
+# observed 13:00-13:30 UTC (15:00-15:30 CAT), 30-60min past the official
+# post-close end. So we run every 15min through that observed window to keep
+# site latency low, plus sparser bookend checks either side in case a day's
+# publish is early or unusually late. Each run only commits when the data
+# actually changed, and the social post is deduped by trading day, so extra
+# runs are cheap no-ops. VFEX shares the ZSE's own market-data API (same
+# CloudFront host, exchange=VFEX) so it rides the same schedule.
 on:
   schedule:
     - cron: '15 11 * * 1-5'        # early check, well ahead of the usual window
@@ -39,6 +41,11 @@ jobs:
           ZSE_API_BASE: ${{ secrets.ZSE_API_BASE }}
         run: python3 scripts/fetch_zse_market.py
 
+      - name: Fetch VFEX end-of-day Market Activity
+        env:
+          VFEX_API_BASE: ${{ secrets.VFEX_API_BASE }}
+        run: python3 scripts/fetch_vfex_market.py
+
       - name: Render ZSE end-of-day card
         run: python3 scripts/build_zse_eod_card.py
 
@@ -51,16 +58,17 @@ jobs:
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: python3 scripts/post_zse_eod.py
 
-      - name: Commit ZSE data + card
+      - name: Commit ZSE + VFEX data + card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/zse-ticker.json data/zse-market-activity.json \
                   data/zse-history.json \
                   data/zse-eod-caption.txt data/.posted_zse_eod.json \
+                  data/vfex-market-activity.json data/vfex-history.json \
                   img/cards/zse/eod-latest.png img/cards/zse/eod-*.png 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Update ZSE data + EOD card [automated]"
+            git commit -m "Update ZSE + VFEX data + card [automated]"
             for i in 1 2 3 4 5; do
               if git push; then
                 echo "Pushed on attempt $i"
