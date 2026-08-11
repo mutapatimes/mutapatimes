@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-08-11T04:15:38+00:00",
+  "fetched_at": "2026-08-11T06:58:04+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Modern Chinese film wins young hearts in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-08-11-modern-chinese-film-wins-young-hearts-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/a1c390ad06d7.png",
-      "pubDate": "2026-08-11T01:52:11+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "Modern Chinese film wins young hearts in Zimbabwe",
@@ -36,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 11 Aug: Harare overcast · high 23° / low 12°",
+      "title": "Zim weather 11 Aug: Harare light drizzle · high 24° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-08-11",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-11",
       "pubDate": "2026-08-10T22:00:00+00:00",
@@ -479,6 +471,14 @@
       "title": "Zimnat — Internal Auditor",
       "link": "https://vacancymail.co.zw/jobs/internal-auditor-68698/",
       "image": "https://mutapatimes.com/img/cards/jobs/5d7367946a00.png",
+      "pubDate": "2026-08-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimnat — Recoveries Officers",
+      "link": "https://vacancymail.co.zw/jobs/recoveries-officers-68697/",
+      "image": "https://mutapatimes.com/img/cards/jobs/70818c702694.png",
       "pubDate": "2026-08-10T22:00:00+00:00",
       "category": "Jobs"
     }
