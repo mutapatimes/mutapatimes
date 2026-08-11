@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 19:25:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 02:27:53 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 10 Aug: Harare overcast · high 23° / low 12°</title>
-      <link>https://mutapatimes.com/weather?d=2026-08-10</link>
-      <description>Harare: high 23°, low 12° (overcast) · Bulawayo: high 26°, low 12° (overcast) · Mutare: high 26°, low 12° (overcast) · Gweru: high 25°, low 11° (overcast) · Masvingo: high 27°, low 13° (overcast) · Victoria Falls: high 30°, low 13° (mainly clear) Tsumo yezuva: Zizi harina nyanga. (Things are not what they seem.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Sun, 09 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-08-10</guid>
+      <title>Zim weather 11 Aug: Harare overcast · high 23° / low 12°</title>
+      <link>https://mutapatimes.com/weather?d=2026-08-11</link>
+      <description>Harare: high 23°, low 12° (overcast) · Bulawayo: high 26°, low 12° (overcast) · Mutare: high 26°, low 12° (overcast) · Gweru: high 25°, low 11° (overcast) · Masvingo: high 27°, low 13° (overcast) · Victoria Falls: high 30°, low 13° (mainly clear) Tsumo yezuva: Zviuya hazviwanani. (Perfect people rarely find each other.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
+      <pubDate>Mon, 10 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-08-11</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-10" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-10"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-10" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-11" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-11"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-11" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
