@@ -1,0 +1,16 @@
+---
+title: "StudioCanal CEO Anna Marsh on finding African stories with global resonance"
+date: 2026-08-11T05:36:49.000Z
+author: News24
+category: Business
+image: 
+summary: "StudioCanal CEO Anna Marsh on finding African stories with global resonance"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQXRWTFQ4NmtmZi0wN3V5a3NkV1NJYi1jUHRXdWVYWEl1SXFMV2RrSVhocHV0VkFQckRXeUI5QnRScG50V0J1cVV0bXpBVHNOZlI1Um1PcElKTVZZNERnemEwU1FiVGI3cnRNWTdvZjlycFVBZ2lHYzVpNzdQR0doU0VRTm1tejYxNkRyQy1pNkRYazBRZ25rcXgyMDlxN3lRY0FYTzZHMVF1T0ZLTkc0Z0paWmNSQjR3RHhPWHowa1pzZi13d2NQU2hDRldsXzN0MTFQZXZrZnlHQU04R0E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQXRWTFQ4NmtmZi0wN3V5a3NkV1NJYi1jUHRXdWVYWEl1SXFMV2RrSVhocHV0VkFQckRXeUI5QnRScG50V0J1cVV0bXpBVHNOZlI1Um1PcElKTVZZNERnemEwU1FiVGI3cnRNWTdvZjlycFVBZ2lHYzVpNzdQR0doU0VRTm1tejYxNkRyQy1pNkRYazBRZ25rcXgyMDlxN3lRY0FYTzZHMVF1T0ZLTkc0Z0paWmNSQjR3RHhPWHowa1pzZi13d2NQU2hDRldsXzN0MTFQZXZrZnlHQU04R0E?oc=5)
