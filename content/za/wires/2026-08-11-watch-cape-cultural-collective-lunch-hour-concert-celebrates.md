@@ -1,0 +1,16 @@
+---
+title: "WATCH: Cape Cultural Collective Lunch Hour Concert celebrates South African talent at Artscape"
+date: 2026-08-11T12:31:01.000Z
+author: CapeTowner
+category: Culture
+image: 
+summary: "WATCH: Cape Cultural Collective Lunch Hour Concert celebrates South African talent at Artscape"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNN2pUMlVkMlU5WGxjTTV0UE1ndDJtRjRveFJ6U1hyT1VjQlRwcjhHVXNwaWlKZnk0aUl6YnFYZVZQbkpnZjVMSk4yZ3dDWUpOek96UGhXbW1Yb1JUdnl5a0w5OG1OV0hHbUV3N1JuZWRscHdyNTd4Y0pELTRRbkVBRTVWUWU2TXhONEF6NEdIRFM3SjVmT1N1Zlc5MkZxNWVKRlI2NkV1MHdsNU1FMVNya3Y3Z2xVY0dVTWdveV9hWklOOURFX0dJOWhuVWRMeEs5SWpQdTBhN0xJR0tRWUNkNw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by CapeTowner.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNN2pUMlVkMlU5WGxjTTV0UE1ndDJtRjRveFJ6U1hyT1VjQlRwcjhHVXNwaWlKZnk0aUl6YnFYZVZQbkpnZjVMSk4yZ3dDWUpOek96UGhXbW1Yb1JUdnl5a0w5OG1OV0hHbUV3N1JuZWRscHdyNTd4Y0pELTRRbkVBRTVWUWU2TXhONEF6NEdIRFM3SjVmT1N1Zlc5MkZxNWVKRlI2NkV1MHdsNU1FMVNya3Y3Z2xVY0dVTWdveV9hWklOOURFX0dJOWhuVWRMeEs5SWpQdTBhN0xJR0tRWUNkNw?oc=5)

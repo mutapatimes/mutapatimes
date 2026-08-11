@@ -1,0 +1,16 @@
+---
+title: "South Africa-China Electricity and Energy Investment Conference Opens at POWERCHINA Headquarters to Advance Long-Term Energy Partnerships"
+date: 2026-08-11T11:17:00.000Z
+author: PR Newswire
+category: Culture
+image: 
+summary: "South Africa-China Electricity and Energy Investment Conference Opens at POWERCHINA Headquarters to Advance Long-Term Energy Partnerships"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingJBVV95cUxNUXV2czFsaWljSEtFVzQ3VWVoU2pHY2UzZzQtNjhycjBnY3RxYzl1SU51dGJGSFd1b3F1TnhnUXJnQkotT0JEMnczZmRnZkRrUE1VN3liLWFaeUFtSHBOZnpibkRHTC1Ga2ZaUUJrZTZ3cC14YlpnRnFzNEtncUJOWkpMYXdjck4wcVhpZjR3NkpyNFdXSXA3WjVvcTVwdWlFQzhXLWhFSkoyNGYxWnBRWU1rY09rRDdXczd0TUxZYTNHMlZIb0p4RXQ5QUpwODhhTmxCRC1fWFF4R3pjNm1DZVltZFpMSlNDY0VJVTd4S0thNG44U0pBU2dGSFhNNzRYN0pkZmthMk5oOUhXMUd0SW1iTGxwQTBMSkdQRFZR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by PR Newswire.*
+[Read original article](https://news.google.com/rss/articles/CBMingJBVV95cUxNUXV2czFsaWljSEtFVzQ3VWVoU2pHY2UzZzQtNjhycjBnY3RxYzl1SU51dGJGSFd1b3F1TnhnUXJnQkotT0JEMnczZmRnZkRrUE1VN3liLWFaeUFtSHBOZnpibkRHTC1Ga2ZaUUJrZTZ3cC14YlpnRnFzNEtncUJOWkpMYXdjck4wcVhpZjR3NkpyNFdXSXA3WjVvcTVwdWlFQzhXLWhFSkoyNGYxWnBRWU1rY09rRDdXczd0TUxZYTNHMlZIb0p4RXQ5QUpwODhhTmxCRC1fWFF4R3pjNm1DZVltZFpMSlNDY0VJVTd4S0thNG44U0pBU2dGSFhNNzRYN0pkZmthMk5oOUhXMUd0SW1iTGxwQTBMSkdQRFZR?oc=5)
