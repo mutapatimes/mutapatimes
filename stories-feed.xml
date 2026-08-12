@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 07:50:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 07:55:52 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -101,6 +101,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>The Crocodile Motel and Conferencing — Hotel Manager - Rusape</title>
+      <link>https://mutapatimes.com/stories/9deeccb2ab4f.html</link>
+      <description>VACANCY: HOTEL MANAGER – RUSAPE Crocodile Motel &amp; Conference Centre, Rusape, is seeking to employ an experienced HOTEL MANAGER. Rusape · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Tue, 11 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/9deeccb2ab4f.html</guid>
+      <category>Jobs</category>
+      <dc:creator>The Crocodile Motel and Conferencing</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Customer Service Representative</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/e8716d8e572c.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e8716d8e572c.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/e8716d8e572c.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Rainbow Tourism Group — Restaurant Cashier</title>
-      <link>https://mutapatimes.com/stories/20bcc06cb94d.html</link>
-      <description>Job Type: Permanent Job Location: Harare Closing Date2026-08-17 Applications are invited from suitably qualified personnel to fill in the position of Restaurant Cashiers.The successful candidate w… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 11 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/20bcc06cb94d.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Rainbow Tourism Group</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/20bcc06cb94d.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/20bcc06cb94d.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/20bcc06cb94d.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
