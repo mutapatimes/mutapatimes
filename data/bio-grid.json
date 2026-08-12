@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-12T01:25:09+00:00",
+  "fetched_at": "2026-08-12T07:16:53+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "At least 15 dead, dozens missing as ferry capsizes in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-12-at-least-15-dead-dozens-missing-as-ferry-capsizes-in-zimbabw",
+      "image": "https://mutapatimes.com/img/cards/news/d5239870b653.png",
+      "pubDate": "2026-08-12T06:34:05+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Boat sinks in Zimbabwe's Lake Kariba with 95 people on board",
+      "link": "https://mutapatimes.com/articles/2026-08-12-boat-sinks-in-zimbabwes-lake-kariba-with-95-people-on-board",
+      "image": "https://mutapatimes.com/img/cards/news/678853790ed2.png",
+      "pubDate": "2026-08-12T06:21:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Dozens dead and missing after ferry capsizes in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-12-dozens-dead-and-missing-after-ferry-capsizes-in-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/078b25b8f6a9.png",
+      "pubDate": "2026-08-12T02:48:02+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim balance-of-payments residual 2025 Q3: net errors & omissions −$1.0B against current account $791M.",
@@ -12,7 +36,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 12 Aug 2026: 1 USD = 26.60 ZWG · best from UK £100 → $131.90 via Wise",
+      "title": "Zim FX snapshot 12 Aug 2026: 1 USD = 26.60 ZWG · best from UK £100 → $131.89 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-08-12",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-08-12",
       "pubDate": "2026-08-11T22:00:00+00:00",
@@ -20,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 12 Aug: Harare light drizzle · high 24° / low 14°",
+      "title": "Zim weather 12 Aug: Harare light showers · high 21° / low 11°",
       "link": "https://mutapatimes.com/weather?d=2026-08-12",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-12",
       "pubDate": "2026-08-11T22:00:00+00:00",
@@ -455,30 +479,6 @@
       "title": "Accouncts Intern / Attachee",
       "link": "https://vacancymail.co.zw/jobs/accouncts-intern-attachee-68704/",
       "image": "https://mutapatimes.com/img/cards/jobs/37a4ae676534.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "World Vision — Communications Assistant (Re-Advertised)",
-      "link": "https://vacancymail.co.zw/jobs/communications-assistant-re-advertised-68703/",
-      "image": "https://mutapatimes.com/img/cards/jobs/557957e91a3e.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Turner and Townsend — Senior Quantity Surveyor",
-      "link": "https://vacancymail.co.zw/jobs/senior-quantity-surveyor-68702/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e8716d8e572c.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rainbow Tourism Group — Restaurant Cashier",
-      "link": "https://vacancymail.co.zw/jobs/restaurant-cashier-68701/",
-      "image": "https://mutapatimes.com/img/cards/jobs/20bcc06cb94d.png",
       "pubDate": "2026-08-11T22:00:00+00:00",
       "category": "Jobs"
     }
