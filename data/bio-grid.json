@@ -1,30 +1,246 @@
 {
-  "fetched_at": "2026-08-12T09:57:14+00:00",
+  "fetched_at": "2026-08-12T21:40:10+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Fifteen bodies recovered from lake where Zimbabwe passenger ferry capsized",
-      "link": "https://mutapatimes.com/articles/2026-08-12-fifteen-bodies-recovered-from-lake-where-zimbabwe-passenger",
-      "image": "https://mutapatimes.com/img/cards/news/6e6e341f5be5.png",
-      "pubDate": "2026-08-12T08:12:54+00:00",
+      "title": "Today in Africa — August 12, 2026: South Africa Seeks Deportation Cost Refunds, Zimbabwe Ferry Disaster Kills 44",
+      "link": "https://mutapatimes.com/articles/2026-08-12-today-in-africa-august-12-2026-south-africa-seeks-deportatio",
+      "image": "https://mutapatimes.com/img/cards/news/64ab048a4fd3.png",
+      "pubDate": "2026-08-12T16:28:50+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Today in Africa — August 12, 2026: South Africa Seeks Deportation Cost Refunds, Zimbabwe Ferry Disaster Kills 44",
+      "link": "https://mutapatimes.com/news/2026-08-12-today-in-africa-august-12-2026-south-africa-seeks-deportation-cost-refunds-2a11de",
+      "image": "https://mutapatimes.com/img/cards/news/cbf1dd0416aa.png",
+      "pubDate": "2026-08-12T16:28:50+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Survivors describe pleading to turn back before ferry capsized on Zimbabwe lake and killed 44",
+      "link": "https://mutapatimes.com/articles/2026-08-12-survivors-describe-pleading-to-turn-back-before-ferry-capsiz",
+      "image": "https://mutapatimes.com/img/cards/news/798bb0e6278d.png",
+      "pubDate": "2026-08-12T15:56:00+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Lake Kariba tragedy: At least 15 die as Zimbabwe boat sinks with dozens on board",
-      "link": "https://mutapatimes.com/articles/2026-08-12-lake-kariba-tragedy-at-least-15-die-as-zimbabwe-boat-sinks-w",
-      "image": "https://mutapatimes.com/img/cards/news/84de388c3e45.png",
-      "pubDate": "2026-08-12T07:16:44+00:00",
+      "title": "Death toll rises to 44 after ferry capsizes on Zimbabwe lake",
+      "link": "https://mutapatimes.com/articles/2026-08-12-death-toll-rises-to-44-after-ferry-capsizes-on-zimbabwe-lake",
+      "image": "https://mutapatimes.com/img/cards/news/43213c6142b0.png",
+      "pubDate": "2026-08-12T14:25:54+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Đurić: Serbia and Zimbabwe Continue to Strengthen Their Traditionally Friendly Relations",
+      "link": "https://mutapatimes.com/articles/2026-08-12-đurić-serbia-and-zimbabwe-continue-to-strengthen-their-tradi",
+      "image": "https://mutapatimes.com/img/cards/news/305caf988fc6.png",
+      "pubDate": "2026-08-12T14:06:00+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Đurić: Serbia and Zimbabwe Continue to Strengthen Their Traditionally Friendly Relations",
+      "link": "https://mutapatimes.com/news/2026-08-12-uri-serbia-and-zimbabwe-continue-to-strengthen-their-traditionally-friendly-6c4c13",
+      "image": "https://mutapatimes.com/img/cards/news/970a138b1106.png",
+      "pubDate": "2026-08-12T14:06:00+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "WWF Zimbabwe Supports National Dialogue to Reimagine Community-Based Natural Resource Managemen",
+      "link": "https://mutapatimes.com/articles/2026-08-12-wwf-zimbabwe-supports-national-dialogue-to-reimagine-communi",
+      "image": "https://mutapatimes.com/img/cards/news/a301db51a1d0.png",
+      "pubDate": "2026-08-12T14:01:27+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "WWF Zimbabwe Supports National Dialogue to Reimagine Community-Based Natural Resource Managemen",
+      "link": "https://mutapatimes.com/news/2026-08-12-wwf-zimbabwe-supports-national-dialogue-to-reimagine-community-based-natural-6edf3d",
+      "image": "https://mutapatimes.com/img/cards/news/f450eee2345a.png",
+      "pubDate": "2026-08-12T14:01:27+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "At least 44 die as ferry sinks in Zimbabwe's Lake Kariba",
+      "link": "https://mutapatimes.com/articles/2026-08-12-at-least-44-die-as-ferry-sinks-in-zimbabwes-lake-kariba",
+      "image": "https://mutapatimes.com/img/cards/news/b04215af9544.png",
+      "pubDate": "2026-08-12T13:55:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "zse",
+      "title": "ZSE close 12 Aug 2026: All Share 476.31 (-0.65%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-12",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-12",
+      "pubDate": "2026-08-12T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
+      "kind": "news",
+      "title": "At least 44 drown after ferry overturns on Zimbabwe's Lake Kariba",
+      "link": "https://mutapatimes.com/articles/2026-08-12-at-least-44-drown-after-ferry-overturns-on-zimbabwes-lake-ka",
+      "image": "https://mutapatimes.com/img/cards/news/84ba5583e59f.png",
+      "pubDate": "2026-08-12T12:30:18+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "At least 44 drown after ferry overturns on Zimbabwe's Lake Kariba",
+      "link": "https://mutapatimes.com/news/2026-08-12-at-least-44-drown-after-ferry-overturns-on-zimbabwe-s-lake-kariba-fc86fb",
+      "image": "https://mutapatimes.com/img/cards/news/909c25b1de30.png",
+      "pubDate": "2026-08-12T12:30:18+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "WATCH: Boat disaster in neighbouring Zim leaves at least 15 dead",
+      "link": "https://mutapatimes.com/articles/2026-08-12-watch-boat-disaster-in-neighbouring-zim-leaves-at-least-15-d",
+      "image": "https://mutapatimes.com/img/cards/news/9e42941006f9.png",
+      "pubDate": "2026-08-12T12:23:03+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "WATCH: Boat disaster in neighbouring Zim leaves at least 15 dead",
+      "link": "https://mutapatimes.com/news/2026-08-12-watch-boat-disaster-in-neighbouring-zim-leaves-at-least-15-dead-29d91b",
+      "image": "https://mutapatimes.com/img/cards/news/e3f11cd94e15.png",
+      "pubDate": "2026-08-12T12:23:03+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "At least 44 dead after overcrowded ferry capsizes on Lake Kariba in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-12-at-least-44-dead-after-overcrowded-ferry-capsizes-on-lake-ka",
+      "image": "https://mutapatimes.com/img/cards/news/c1e30b7edae5.png",
+      "pubDate": "2026-08-12T12:21:08+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "At least 15 people dead after ferry overturns in Zimbabwe's Lake Kariba",
-      "link": "https://mutapatimes.com/articles/2026-08-12-at-least-15-people-dead-after-ferry-overturns-in-zimbabwes-l",
-      "image": "https://mutapatimes.com/img/cards/news/b0cce6d0d0a6.png",
-      "pubDate": "2026-08-12T06:56:56+00:00",
+      "title": "Hwange National Park: elephants, savanna and sky-wide horizons",
+      "link": "https://mutapatimes.com/articles/2026-08-12-hwange-national-park-elephants-savanna-and-sky-wide-horizons",
+      "image": "https://mutapatimes.com/img/cards/news/c015ef9c4652.png",
+      "pubDate": "2026-08-12T12:19:39+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Hwange National Park: elephants, savanna and sky-wide horizons",
+      "link": "https://mutapatimes.com/news/2026-08-12-hwange-national-park-elephants-savanna-and-sky-wide-horizons-0d7605",
+      "image": "https://mutapatimes.com/img/cards/news/99aa5caaa35b.png",
+      "pubDate": "2026-08-12T12:19:39+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe boat accident death toll rises to 44",
+      "link": "https://mutapatimes.com/articles/2026-08-12-zimbabwe-boat-accident-death-toll-rises-to-44",
+      "image": "https://mutapatimes.com/img/cards/news/d980f5770a56.png",
+      "pubDate": "2026-08-12T11:46:11+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "When Disaster Comes to the Water: Zimbabwe Mourns the Lake Kariba Ferry Tragedy",
+      "link": "https://mutapatimes.com/articles/2026-08-12-when-disaster-comes-to-the-water-zimbabwe-mourns-the-lake-ka",
+      "image": "https://mutapatimes.com/img/cards/news/cd2cb2c8ffd9.png",
+      "pubDate": "2026-08-12T09:11:52+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "When Disaster Comes to the Water: Zimbabwe Mourns the Lake Kariba Ferry Tragedy",
+      "link": "https://mutapatimes.com/news/2026-08-12-when-disaster-comes-to-the-water-zimbabwe-mourns-the-lake-kariba-ferry-tragedy-05bb2f",
+      "image": "https://mutapatimes.com/img/cards/news/24d7f448e64e.png",
+      "pubDate": "2026-08-12T09:11:52+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean prodigy joins Manchester City",
+      "link": "https://mutapatimes.com/articles/2026-08-12-zimbabwean-prodigy-joins-manchester-city",
+      "image": "https://mutapatimes.com/img/cards/news/12d2d3b5796e.png",
+      "pubDate": "2026-08-12T09:09:13+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean prodigy joins Manchester City",
+      "link": "https://mutapatimes.com/news/2026-08-12-zimbabwean-prodigy-joins-manchester-city-c0bd0a",
+      "image": "https://mutapatimes.com/img/cards/news/baa1d1dc1459.png",
+      "pubDate": "2026-08-12T09:09:13+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "153 people were on board the Lake Kariba Ferry – RIDA Security officer confirms",
+      "link": "https://mutapatimes.com/articles/2026-08-12-153-people-were-on-board-the-lake-kariba-ferry-rida-security",
+      "image": "https://mutapatimes.com/img/cards/news/e19f1480a93b.png",
+      "pubDate": "2026-08-12T08:54:57+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "153 people were on board the Lake Kariba Ferry – RIDA Security officer confirms",
+      "link": "https://mutapatimes.com/news/2026-08-12-153-people-were-on-board-the-lake-kariba-ferry-rida-security-officer-confirms-f56cea",
+      "image": "https://mutapatimes.com/img/cards/news/5d04d6f2a579.png",
+      "pubDate": "2026-08-12T08:54:57+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Heroes Day Tragedy: Police Constable Dies After Entertaining Guests At Harare Heroes Acre",
+      "link": "https://mutapatimes.com/news/2026-08-12-heroes-day-tragedy-police-constable-dies-after-entertaining-guests-at-harare-8b5a5f",
+      "image": "https://mutapatimes.com/img/cards/news/7a88567db7d2.png",
+      "pubDate": "2026-08-12T08:28:16+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Kariba boat tragedy: Was Rural Infrastructural Development Agency’s insurance warning issued weeks earlier clairvoyance or mere coincidence?",
+      "link": "https://mutapatimes.com/articles/2026-08-12-kariba-boat-tragedy-was-rural-infrastructural-development-ag",
+      "image": "https://mutapatimes.com/img/cards/news/86e5958563b2.png",
+      "pubDate": "2026-08-12T08:20:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Kariba boat tragedy: Was Rural Infrastructural Development Agency’s insurance warning issued weeks earlier clairvoyance or mere coincidence?",
+      "link": "https://mutapatimes.com/news/2026-08-12-kariba-boat-tragedy-was-rural-infrastructural-development-agency-s-insurance-1ed675",
+      "image": "https://mutapatimes.com/img/cards/news/db033677e52e.png",
+      "pubDate": "2026-08-12T08:20:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "1.1 million traffic fines as AI cameras now detect speeding, red-robot violations, illegal turns, mobile-phone use & missing seatbelts",
+      "link": "https://mutapatimes.com/news/2026-08-12-1-1-million-traffic-fines-as-ai-cameras-now-detect-speeding-red-robot-1dca40",
+      "image": "https://mutapatimes.com/img/cards/news/f96a6a43725f.png",
+      "pubDate": "2026-08-12T07:34:29+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "90-Seat Mbuya Nehanda vessel capsizes in Lake Kariba: It was carrying 119 adults, 15 DEAD, 27 people nowhere to be found!",
+      "link": "https://mutapatimes.com/articles/2026-08-12-90-seat-mbuya-nehanda-vessel-capsizes-in-lake-kariba-it-was",
+      "image": "https://mutapatimes.com/img/cards/news/f9a4fc31b827.png",
+      "pubDate": "2026-08-12T07:06:13+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "90-Seat Mbuya Nehanda vessel capsizes in Lake Kariba: It was carrying 119 adults, 15 DEAD, 27 people nowhere to be found!",
+      "link": "https://mutapatimes.com/news/2026-08-12-90-seat-mbuya-nehanda-vessel-capsizes-in-lake-kariba-it-was-carrying-119-adults-7358cb",
+      "image": "https://mutapatimes.com/img/cards/news/c49d691a2206.png",
+      "pubDate": "2026-08-12T07:06:13+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -81,6 +297,78 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-11T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — Design and Technology Teacher",
+      "link": "https://vacancymail.co.zw/jobs/design-and-technology-teacher-68771/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b531530fda5c.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "HR Graduate Trainee",
+      "link": "https://vacancymail.co.zw/jobs/hr-graduate-trainee-68770/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f52e0ae993d7.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Loans Officer- Gweru",
+      "link": "https://vacancymail.co.zw/jobs/loans-officer-gweru-68769/",
+      "image": "https://mutapatimes.com/img/cards/jobs/cb0bc11a9d5c.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accountant",
+      "link": "https://vacancymail.co.zw/jobs/accountant-68768/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a607d7116ce3.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Black Shark Protection Services — SERGEANT (RIDER)",
+      "link": "https://vacancymail.co.zw/jobs/sergeant-rider-68767/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d99f9343473e.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marketing Personnel",
+      "link": "https://vacancymail.co.zw/jobs/marketing-personnel-68766/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1e654daa9de9.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "PROCUREMENT SPECIALIST",
+      "link": "https://vacancymail.co.zw/jobs/procurement-specialist-68765/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6cfba81ae61f.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "PROCUREMENT OFFICER",
+      "link": "https://vacancymail.co.zw/jobs/procurement-officer-68764/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ab56265250fa.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Videographer",
+      "link": "https://vacancymail.co.zw/jobs/videographer-68763/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d190ae36f5a2.png",
+      "pubDate": "2026-08-11T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -191,294 +479,6 @@
       "title": "Structural Engineer",
       "link": "https://vacancymail.co.zw/jobs/structural-engineer-68749/",
       "image": "https://mutapatimes.com/img/cards/jobs/5ee594528048.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Civil Engineer",
-      "link": "https://vacancymail.co.zw/jobs/civil-engineer-68748/",
-      "image": "https://mutapatimes.com/img/cards/jobs/636c10d787cf.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Petrozim Line (Pvt) Ltd — Handyman",
-      "link": "https://vacancymail.co.zw/jobs/handyman-68747/",
-      "image": "https://mutapatimes.com/img/cards/jobs/981cd7f6518b.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Petrozim Line (Pvt) Ltd — Stores Controller",
-      "link": "https://vacancymail.co.zw/jobs/stores-controller-68746/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cec359841131.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Monitoring and Evaluation Officer",
-      "link": "https://vacancymail.co.zw/jobs/monitoring-and-evaluation-officer-68745/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f476610d4dc0.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Gender Officer",
-      "link": "https://vacancymail.co.zw/jobs/gender-officer-68744/",
-      "image": "https://mutapatimes.com/img/cards/jobs/44936eec1ccf.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EMA - Environmental Management Agency — Finance and Administrative Officer",
-      "link": "https://vacancymail.co.zw/jobs/finance-and-administrative-officer-68743/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0dfe02266197.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Production Manager (Rotomoulding & Manufacturing)",
-      "link": "https://vacancymail.co.zw/jobs/production-manager-rotomoulding-manufacturing-68742/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4e53321666d3.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lancet Clinical Laboratories — Marketing Coordinator X1",
-      "link": "https://vacancymail.co.zw/jobs/marketing-coordinator-x1-68741/",
-      "image": "https://mutapatimes.com/img/cards/jobs/37290ae1b8d0.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Site Foreman",
-      "link": "https://vacancymail.co.zw/jobs/site-foreman-68740/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e496986caec7.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sino-Zimbabwe Cement Company (Pvt) Ltd — Assistant Administration Officer",
-      "link": "https://vacancymail.co.zw/jobs/assistant-administration-officer-68739/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3eb43535866c.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sino-Zimbabwe Cement Company (Pvt) Ltd — Electrician",
-      "link": "https://vacancymail.co.zw/jobs/electrician-68738/",
-      "image": "https://mutapatimes.com/img/cards/jobs/74fe0cfb8298.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "AIDS HEALTHCARE FOUNDATION — Linkage and Retention Officer: AIDS HEALTHCARE FOUNDATION (Mt Darwin)",
-      "link": "https://vacancymail.co.zw/jobs/linkage-and-retention-officer-aids-healthcare-foundation-mt-darwin-68737/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bccc5a82dc4d.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tow Truck Driver",
-      "link": "https://vacancymail.co.zw/jobs/tow-truck-driver-68736/",
-      "image": "https://mutapatimes.com/img/cards/jobs/51a8673cf627.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-68735/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c533a3d6bd4b.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rainbow Tourism Group — Human Resources Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-graduate-trainee-68734/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4e8a5daca4bd.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cresta Hotels — Banqueting Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/banqueting-supervisor-68733/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c3d16b405011.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cresta Hotels — Accounting Officer",
-      "link": "https://vacancymail.co.zw/jobs/accounting-officer-68732/",
-      "image": "https://mutapatimes.com/img/cards/jobs/44ee15f9ba06.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cresta Hotels — Stores Clerk",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-68731/",
-      "image": "https://mutapatimes.com/img/cards/jobs/75e92a21186e.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZINARA — SAP Basis Administrator",
-      "link": "https://vacancymail.co.zw/jobs/sap-basis-administrator-68730/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a9805290c534.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ZINARA — Provincial Technicians x5",
-      "link": "https://vacancymail.co.zw/jobs/provincial-technicians-x5-68729/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d96e4671ad9.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hwange Colliery Company Limited — Digital Records Assistant",
-      "link": "https://vacancymail.co.zw/jobs/digital-records-assistant-68728/",
-      "image": "https://mutapatimes.com/img/cards/jobs/209e50eadb27.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hwange Colliery Company Limited — Archivist",
-      "link": "https://vacancymail.co.zw/jobs/archivist-68727/",
-      "image": "https://mutapatimes.com/img/cards/jobs/56e0241ae041.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hwange Colliery Company Limited — Records Assistant",
-      "link": "https://vacancymail.co.zw/jobs/records-assistant-68726/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91a64e6f5cd1.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Project Manager",
-      "link": "https://vacancymail.co.zw/jobs/project-manager-68725/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e4942737b180.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Base Metals — Metallurgist",
-      "link": "https://vacancymail.co.zw/jobs/metallurgist-68724/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b89ac54f6c32.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Supply Attachee",
-      "link": "https://vacancymail.co.zw/jobs/supply-attachee-68719/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4d0300215c59.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Human Resources Consultants(2) (Free Lance on Commission)",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-consultants2-free-lance-on-commission-68717/",
-      "image": "https://mutapatimes.com/img/cards/jobs/359dbf020d8a.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Safemode Security — Security Administrator",
-      "link": "https://vacancymail.co.zw/jobs/security-administrator-68716/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d874f14c24e.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Business Development Team Leader",
-      "link": "https://vacancymail.co.zw/jobs/business-development-team-leader-68715/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ab46ebcd5f05.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "School Administration Officer (Junior & High School)",
-      "link": "https://vacancymail.co.zw/jobs/school-administration-officer-junior-high-school-68714/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0cbca05a9242.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Magamba Network — Fired Up Officer",
-      "link": "https://vacancymail.co.zw/jobs/fired-up-officer-68713/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fab98a7619f8.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Professor/Associate Professor/Senior Lecturer/Lecturer – 1 Post",
-      "link": "https://vacancymail.co.zw/jobs/professorassociate-professorsenior-lecturerlecturer-1-post-68712/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0da7fcc87bd8.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Class 1 Painter",
-      "link": "https://vacancymail.co.zw/jobs/class-1-painter-68711/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3f53f39bca23.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Class 1 Bricklayer",
-      "link": "https://vacancymail.co.zw/jobs/class-1-bricklayer-68710/",
-      "image": "https://mutapatimes.com/img/cards/jobs/95a6408e7f54.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Stock Controller",
-      "link": "https://vacancymail.co.zw/jobs/stock-controller-68709/",
-      "image": "https://mutapatimes.com/img/cards/jobs/062ed0bb76c4.png",
-      "pubDate": "2026-08-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Marketing Officer – Cimas Health Group (Pvt) Ltd",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-cimas-health-group-pvt-ltd-68705/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fa7317ceccbc.png",
       "pubDate": "2026-08-11T22:00:00+00:00",
       "category": "Jobs"
     }
