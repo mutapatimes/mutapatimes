@@ -1,71 +1,89 @@
 {
-  "fetched_at": "2026-08-13T12:43:59.392159+00:00",
-  "as_of": "2026-08-12",
+  "fetched_at": "2026-08-13T14:08:25.213694+00:00",
+  "as_of": "2026-08-13",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 260,
-    "turnover": 493482.7,
-    "volume": 1585203.0,
-    "market_cap": 0.0
+    "trades": 220,
+    "turnover": 1015157.92,
+    "volume": 1813751.0,
+    "market_cap": 7744508261.68
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 258.87,
-      "change_pct": -2.67,
-      "change_points": -7.09,
-      "direction": "down"
+      "value": 264.1,
+      "change_pct": 2.02,
+      "change_points": 5.23,
+      "direction": "up"
     }
   ],
   "gainers": [
     {
-      "name": "Zimplow Holdings Limited",
-      "symbol": "ZIMW.VX",
-      "price": 10.77,
-      "change_pct": 6.11
-    },
-    {
-      "name": "Seed Co International",
-      "symbol": "",
-      "price": 41.7,
-      "change_pct": 0.24
-    }
-  ],
-  "losers": [
-    {
-      "name": "Axia Corporation Limited",
-      "symbol": "AXIA.VX",
-      "price": 13.16,
-      "change_pct": -14.77
+      "name": "Econet Infraco",
+      "symbol": "INFR.VX",
+      "price": 26.18,
+      "change_pct": 14.37
     },
     {
       "name": "Nedbank Group Limited Depository Receipts",
       "symbol": "",
-      "price": 1487.04,
-      "change_pct": -9.88
+      "price": 1616.67,
+      "change_pct": 8.72
     },
     {
-      "name": "Econet Infraco",
-      "symbol": "INFR.VX",
-      "price": 22.89,
-      "change_pct": -7.18
+      "name": "Axia Corporation Limited",
+      "symbol": "AXIA.VX",
+      "price": 14.02,
+      "change_pct": 6.53
     },
     {
-      "name": "Caledonia Mining Corporation Plc",
-      "symbol": "CMCL.VX",
-      "price": 3995.7,
-      "change_pct": -6.73
+      "name": "Old Mutual Limited",
+      "symbol": "OMU.VX",
+      "price": 80.28,
+      "change_pct": 2.7
     },
     {
       "name": "Simbisa Brands Limited",
       "symbol": "SIM.VX",
-      "price": 72.99,
-      "change_pct": -2.41
+      "price": 74.95,
+      "change_pct": 2.69
+    }
+  ],
+  "losers": [
+    {
+      "name": "Padenga Holdings Ltd",
+      "symbol": "PHL.VX",
+      "price": 133.07,
+      "change_pct": -2.87
+    },
+    {
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 1.97,
+      "change_pct": -1.01
+    },
+    {
+      "name": "Edgars Stores Limited",
+      "symbol": "EDGR.VX",
+      "price": 2.0,
+      "change_pct": -0.5
+    },
+    {
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 41.63,
+      "change_pct": -0.17
     }
   ],
   "notices": [
+    {
+      "date": "2026-08-13",
+      "title": "Public Notice - VFEX Market Capitalisation Computation",
+      "category": "Public Notices",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/294/download"
+    },
     {
       "date": "2026-08-04",
       "title": "Press Announcement Listing of Old Mutual Limited",
@@ -107,12 +125,6 @@
       "title": "ZSE & VFEX Joint Practice Note 2",
       "category": "",
       "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/268/download"
-    },
-    {
-      "date": "2026-03-20",
-      "title": "VFEX Notice - Appointment of VFEX Board",
-      "category": "",
-      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/27/download"
     }
   ]
 }
