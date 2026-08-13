@@ -1,0 +1,16 @@
+---
+title: "South Africa’s Herotel plans satellite internet service backed by Amazon Leo"
+date: 2026-07-16T05:24:43.000Z
+author: Developing Telecoms
+category: Tech
+image: 
+summary: "South Africa’s Herotel plans satellite internet service backed by Amazon Leo"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNdTFsMWZVWnU4RmhBNDRzX1Z0MjB0VWROWTh4YW1kREVmSU9qaW9MZ0lib1hlcFpLbUVMbUZBRkVobWxCcTNvYVZlQmc1Skx0M0s1OXlrOERaYVI3dDVGM0RDbnVSWS1sNjNNVTVsck44bzR1eDVzbzJxVlg2dE1WVTlLTnZONDl5VXItV1lpd21LQVNQR0diMXgtN1NRcTFvQ0JkOGhzSXpkTkFIMURDeWV0cVExcHpOV21hMEJzenR3X054TmVIV2RMTHZWeWhlMlZ5dlFTRzZhaGJBeDIxMGs1UmtEOERiazNsRHdaaHhSRjRnc0otVWN4NVNKeUE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Developing Telecoms.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxNdTFsMWZVWnU4RmhBNDRzX1Z0MjB0VWROWTh4YW1kREVmSU9qaW9MZ0lib1hlcFpLbUVMbUZBRkVobWxCcTNvYVZlQmc1Skx0M0s1OXlrOERaYVI3dDVGM0RDbnVSWS1sNjNNVTVsck44bzR1eDVzbzJxVlg2dE1WVTlLTnZONDl5VXItV1lpd21LQVNQR0diMXgtN1NRcTFvQ0JkOGhzSXpkTkFIMURDeWV0cVExcHpOV21hMEJzenR3X054TmVIV2RMTHZWeWhlMlZ5dlFTRzZhaGJBeDIxMGs1UmtEOERiazNsRHdaaHhSRjRnc0otVWN4NVNKeUE?oc=5)

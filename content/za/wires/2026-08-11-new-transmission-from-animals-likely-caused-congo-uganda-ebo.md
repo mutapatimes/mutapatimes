@@ -1,0 +1,16 @@
+---
+title: "New transmission from animals likely caused Congo-Uganda Ebola outbreak, study says"
+date: 2026-08-11T13:15:43.000Z
+author: Reuters
+category: Health
+image: 
+summary: "New transmission from animals likely caused Congo-Uganda Ebola outbreak, study says"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOd1U2aUloR0p0a1VmSUhaZjh3RGllRjBscTBvNkxWeXBqRUdVRUpDUTNNakszRlFaci02UXJrVldFMEZiZVJZY1oxc1VtelRZLXhxRUhHWGNjaklkMjdjcllfTGdTOXR4ZGFBQVo1R3lOc0dPSDA1MWlia29FRjN4YlUwaG5DclkzWExoY0tZN0tkV3pJb3JDUE5tRnJWSlpPaUdHN2QzMHJ2b1FxQXk3TjBYTzRSMXVaTlJkOWluVW9VT1FHWXdQTU1uQlBxc0hSLVloUzZIY3l6UHpONWxPcHNlZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Reuters.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxOd1U2aUloR0p0a1VmSUhaZjh3RGllRjBscTBvNkxWeXBqRUdVRUpDUTNNakszRlFaci02UXJrVldFMEZiZVJZY1oxc1VtelRZLXhxRUhHWGNjaklkMjdjcllfTGdTOXR4ZGFBQVo1R3lOc0dPSDA1MWlia29FRjN4YlUwaG5DclkzWExoY0tZN0tkV3pJb3JDUE5tRnJWSlpPaUdHN2QzMHJ2b1FxQXk3TjBYTzRSMXVaTlJkOWluVW9VT1FHWXdQTU1uQlBxc0hSLVloUzZIY3l6UHpONWxPcHNlZw?oc=5)
