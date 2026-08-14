@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 11:23:26 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 13:41:14 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -43,9 +43,9 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/20a23fcfb048.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 215,000 — Reduced to GO!!! (Arlington, Harare South)</title>
+      <title>USD 220,000 — Reduced to GO!!! (Arlington, Harare South)</title>
       <link>https://mutapatimes.com/property-landing/9cb5c26f536b.html</link>
-      <description>USD 215,000 — Arlington, Harare South. 4 beds, 2 baths. Reduced to GO!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <description>USD 220,000 — Arlington, Harare South. 4 beds, 2 baths. Reduced to GO!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Thu, 13 Aug 2026 22:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mutapatimes.com/property-landing/9cb5c26f536b.html</guid>
       <category>Property</category>
@@ -125,18 +125,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/78ce4ef68a06.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/78ce4ef68a06.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/78ce4ef68a06.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 550,000 — Spacious 7-Bed Chisipite Home with Borehole-550k (Chisipite, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/80ac09326202.html</link>
-      <description>USD 550,000 — Chisipite, Harare North. 7 beds, 4 baths. Spacious 7-Bed Chisipite Home with Borehole-550k. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 13 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/80ac09326202.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/80ac09326202.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/80ac09326202.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/80ac09326202.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 172,000 — Avonlea 3-Bed Home with Pool &amp; Large Paved Drive (Avonlea, Harare West)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/a57d6969fe1a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a57d6969fe1a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/a57d6969fe1a.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 250,000 — Gated 4-Bed Sandton Park Home with Designer Kitchen (Sandton Park, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/8f63df0de403.html</link>
+      <description>USD 250,000 — Sandton Park, Harare West. 4 beds, 2 baths. Gated 4-Bed Sandton Park Home with Designer Kitchen. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 13 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/8f63df0de403.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/8f63df0de403.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8f63df0de403.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/8f63df0de403.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
