@@ -1,0 +1,16 @@
+---
+title: "South Africans urged to comment on new laws targeting illegal mining, trusts and legal practice"
+date: 2026-08-12T08:17:00.000Z
+author: Oudtshoorn Courant
+category: Business
+image: 
+summary: "South Africans urged to comment on new laws targeting illegal mining, trusts and legal practice"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOMlBTX2pQMWNGTk0tYVUyelE0Yl9pOFViU2NlLTFZTFRVdHFrcUxrN1VJNldLdmhmeG93RUxjSVlMVXhLVWlsd3FpSkJGQ3FhcFZLMU1famNrcFZXR0swTFh1V2lSbW5mUENwVmp6bG0xMkpFV3BVWG1mRUdJM1l3c2xYU2lHTEFhVUxYYXhQNUgzUWFQYzFVLU1RN2hyalRXWEpuT3J2VnFwMVRWeEdScVFrMmdXd2toQVhoeUgwS3Brc1E0M1JvZ2Q1TGxRMjcwLTFhTE1UTnVDd3h5eGRzbW05UzhQRE1VVDdjb3FyQWh5WEJxQ21TbF9LZFc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Oudtshoorn Courant.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxOMlBTX2pQMWNGTk0tYVUyelE0Yl9pOFViU2NlLTFZTFRVdHFrcUxrN1VJNldLdmhmeG93RUxjSVlMVXhLVWlsd3FpSkJGQ3FhcFZLMU1famNrcFZXR0swTFh1V2lSbW5mUENwVmp6bG0xMkpFV3BVWG1mRUdJM1l3c2xYU2lHTEFhVUxYYXhQNUgzUWFQYzFVLU1RN2hyalRXWEpuT3J2VnFwMVRWeEdScVFrMmdXd2toQVhoeUgwS3Brc1E0M1JvZ2Q1TGxRMjcwLTFhTE1UTnVDd3h5eGRzbW05UzhQRE1VVDdjb3FyQWh5WEJxQ21TbF9LZFc?oc=5)
