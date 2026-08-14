@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13",
+  "fetched_at": "2026-08-14",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -18,7 +18,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1021,
+        "price": 1017,
         "airline": "Farera",
         "departure_at": "",
         "return_at": "",
@@ -82,12 +82,12 @@
           "currency": ""
         },
         {
-          "price": 691,
+          "price": 573,
           "airline": "EY",
-          "departure_at": "2027-07-01",
-          "return_at": "2027-07-30",
+          "departure_at": "2027-07-26",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
+          "duration": 2000,
           "currency": ""
         }
       ],
@@ -142,7 +142,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -160,7 +160,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 21,
+          "n": 22,
           "error": null
         },
         {
@@ -184,11 +184,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 21,
+          "n": 22,
           "error": null
         }
       ],
-      "observations": 58
+      "observations": 60
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -227,7 +227,7 @@
           "currency": ""
         },
         {
-          "price": 2674,
+          "price": 2659,
           "airline": "Lucky2Go",
           "departure_at": "",
           "return_at": "",
@@ -236,7 +236,7 @@
           "currency": ""
         },
         {
-          "price": 2733,
+          "price": 2718,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -328,7 +328,7 @@
           "currency": ""
         },
         {
-          "price": 7128,
+          "price": 7068,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -346,7 +346,7 @@
           "currency": ""
         },
         {
-          "price": 8459,
+          "price": 8388,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -426,7 +426,7 @@
           "currency": ""
         },
         {
-          "price": 4214,
+          "price": 4211,
           "airline": "FN",
           "departure_at": "2026-11-25",
           "return_at": "2027-01-15",
@@ -455,7 +455,7 @@
           "currency": ""
         },
         {
-          "price": 3481,
+          "price": 3451,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -464,7 +464,7 @@
           "currency": ""
         },
         {
-          "price": 3816,
+          "price": 3784,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -482,7 +482,7 @@
           "currency": ""
         },
         {
-          "price": 4096,
+          "price": 4061,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -513,11 +513,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 13,
+          "n": 15,
           "error": null
         }
       ],
-      "observations": 29
+      "observations": 31
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -574,7 +574,7 @@
           "currency": ""
         },
         {
-          "price": 943,
+          "price": 938,
           "airline": "Skytripfare",
           "departure_at": "",
           "return_at": "",
@@ -717,7 +717,7 @@
           "currency": ""
         },
         {
-          "price": 2435,
+          "price": 2421,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
@@ -726,7 +726,7 @@
           "currency": ""
         },
         {
-          "price": 2439,
+          "price": 2426,
           "airline": "Turna.com",
           "departure_at": "",
           "return_at": "",
