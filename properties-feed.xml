@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2026 16:55:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 18:47:08 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -137,18 +137,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/ba750caf5f2f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ba750caf5f2f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/ba750caf5f2f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 180,000 — Newly Built -Vacant! (Greendale, Harare East)</title>
-      <link>https://mutapatimes.com/property-landing/a979677d8491.html</link>
-      <description>USD 180,000 — Greendale, Harare East. 3 beds, 2 baths. Newly Built -Vacant!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Fri, 14 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/a979677d8491.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/a979677d8491.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a979677d8491.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/a979677d8491.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 70,000 — Zimre Park incomplete house with Title Deed for sale $70k (Zimre Park, Harare East)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/69f4603a68cc.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/69f4603a68cc.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/69f4603a68cc.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 900,000 — Attractive 5 bedroom home on two and a half acres. Great location and good water. (Greendale North, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/bc309dfe695f.html</link>
+      <description>USD 900,000 — Greendale North, Harare North. 5 beds, 3 baths. Attractive 5 bedroom home on two and a half acres. Great location and good water.. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Fri, 14 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/bc309dfe695f.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/bc309dfe695f.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/bc309dfe695f.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/bc309dfe695f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

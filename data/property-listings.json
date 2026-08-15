@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T12:58:08.976610+00:00",
+  "fetched_at": "2026-08-15T18:47:00.270576+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -92,15 +92,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/a2/18/67/a21867f6-815a-47fe-868b-fb49faf186a5_thumbnail591.webp",
       "beds": "3",
       "baths": "1"
-    },
-    {
-      "title": "Newly Built -Vacant!",
-      "url": "https://www.property.co.zw/for-sale/townhouses-rws214399",
-      "price": "USD 180,000",
-      "location": "Greendale, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/03/fd/a0/03fda0bb-6291-4416-bb1f-8a4ae2201faf_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
     },
     {
       "title": "Zimre Park incomplete house with Title Deed for sale $70k",
@@ -199,6 +190,15 @@
       "location": "Borrowdale, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/ed/9c/0a/ed9c0aa6-ad8f-4ebb-8e78-6cbf3a33bd96_thumbnail591.webp",
       "beds": "4",
+      "baths": "3"
+    },
+    {
+      "title": "Attractive 5 bedroom home on two and a half acres. Great location and good water.",
+      "url": "https://www.property.co.zw/for-sale/houses-knp250210",
+      "price": "USD 900,000",
+      "location": "Greendale North, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/6d/f8/08/6df80815-c91d-4594-9b50-4221fd54cbcb_thumbnail591.webp",
+      "beds": "5",
       "baths": "3"
     }
   ]
