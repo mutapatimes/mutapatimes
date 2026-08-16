@@ -1,22 +1,14 @@
 {
-  "fetched_at": "2026-08-16T18:21:11+00:00",
+  "fetched_at": "2026-08-16T21:15:03+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Death toll from Zimbabwe capsized ferry accident rises to 80",
-      "link": "https://mutapatimes.com/articles/2026-08-16-death-toll-from-zimbabwe-capsized-ferry-accident-rises-to-80",
-      "image": "https://mutapatimes.com/img/cards/news/3846e4f4a861.png",
+      "title": "Death toll from Zimbabwe capsized ferry accident rises to 84",
+      "link": "https://mutapatimes.com/articles/2026-08-16-death-toll-from-zimbabwe-capsized-ferry-accident-rises-to-84",
+      "image": "https://mutapatimes.com/img/cards/news/cfdbea792d16.png",
       "pubDate": "2026-08-16T14:01:56+00:00",
       "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Solar-powered community gardens offer lifeline in drought-hit Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-08-16-solar-powered-community-gardens-offer-lifeline-in-drought-hi",
-      "image": "https://mutapatimes.com/img/cards/news/5ba758a09234.png",
-      "pubDate": "2026-08-16T12:53:38+00:00",
-      "category": "Culture"
     },
     {
       "kind": "news",
@@ -29,14 +21,6 @@
     {
       "kind": "news",
       "title": "Death toll from Zimbabwean boat capsize rises to 80",
-      "link": "https://mutapatimes.com/articles/2026-08-16-death-toll-from-zimbabwean-boat-capsize-rises-to-80",
-      "image": "https://mutapatimes.com/img/cards/news/b14f16f97a74.png",
-      "pubDate": "2026-08-16T12:34:10+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Death toll from Zimbabwean boat capsize rises to 80",
       "link": "https://mutapatimes.com/news/2026-08-16-death-toll-from-zimbabwean-boat-capsize-rises-to-80-d27f85",
       "image": "https://mutapatimes.com/img/cards/news/9ed7e4a1fd06.png",
       "pubDate": "2026-08-16T12:34:10+00:00",
@@ -44,11 +28,59 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe ferry disaster death toll rises to 72",
-      "link": "https://mutapatimes.com/articles/2026-08-16-zimbabwe-ferry-disaster-death-toll-rises-to-72",
-      "image": "https://mutapatimes.com/img/cards/news/a94a3b615628.png",
-      "pubDate": "2026-08-16T06:24:58+00:00",
+      "title": "Lake Kariba ferry death toll rises to 72",
+      "link": "https://mutapatimes.com/articles/2026-08-16-lake-kariba-ferry-death-toll-rises-to-72",
+      "image": "https://mutapatimes.com/img/cards/news/14bdcd824db6.png",
+      "pubDate": "2026-08-16T08:50:30+00:00",
       "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Lake Kariba ferry death toll rises to 72",
+      "link": "https://mutapatimes.com/news/2026-08-16-lake-kariba-ferry-death-toll-rises-to-72-a196a5",
+      "image": "https://mutapatimes.com/img/cards/news/b14f66fb36a3.png",
+      "pubDate": "2026-08-16T08:50:30+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Nurses, health workers warn of job action over stalled allowance review",
+      "link": "https://mutapatimes.com/articles/2026-08-16-nurses-health-workers-warn-of-job-action-over-stalled-allowa",
+      "image": "https://mutapatimes.com/img/cards/news/a00627dbf146.png",
+      "pubDate": "2026-08-16T08:44:54+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "How they used his wife to catch him: Deadly armed robber who escaped from Mutimurefu prison re-arrested after shootout with police",
+      "link": "https://mutapatimes.com/news/2026-08-16-how-they-used-his-wife-to-catch-him-deadly-armed-robber-who-escaped-from-5ef0a2",
+      "image": "https://mutapatimes.com/img/cards/news/88f4594c4d2d.png",
+      "pubDate": "2026-08-16T07:38:53+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Batoka Gorge moves toward formal procurement with $440m of state equity behind it",
+      "link": "https://mutapatimes.com/articles/2026-08-16-batoka-gorge-moves-toward-formal-procurement-with-440m-of-st",
+      "image": "https://mutapatimes.com/img/cards/news/6453f99511b5.png",
+      "pubDate": "2026-08-16T06:31:14+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Batoka Gorge Procurement for Zambia and Zimbabwe’s Future",
+      "link": "https://mutapatimes.com/articles/2026-08-16-batoka-gorge-procurement-for-zambia-and-zimbabwes-future",
+      "image": "https://mutapatimes.com/img/cards/news/a4421dcf385d.png",
+      "pubDate": "2026-08-16T06:28:30+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "BUSSW Researchers Lead a Global Conversation on Women’s Entrepreneurship | Boston University School of Social Work",
+      "link": "https://mutapatimes.com/articles/2026-08-16-bussw-researchers-lead-a-global-conversation-on-womens-entre",
+      "image": "https://mutapatimes.com/img/cards/news/6c8aab27f65f.png",
+      "pubDate": "2026-08-16T06:26:40+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -57,46 +89,6 @@
       "image": "https://mutapatimes.com/img/cards/news/146cfa052ea4.png",
       "pubDate": "2026-08-16T06:24:58+00:00",
       "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Capsized ferry leaves over 70 dead in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-08-16-capsized-ferry-leaves-over-70-dead-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/a40f2a3c4971.png",
-      "pubDate": "2026-08-16T06:16:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Kunzvi Dam: 278 houses ready for displaced families",
-      "link": "https://mutapatimes.com/articles/2026-08-16-kunzvi-dam-278-houses-ready-for-displaced-families",
-      "image": "https://mutapatimes.com/img/cards/news/02e83208206c.png",
-      "pubDate": "2026-08-16T06:12:06+00:00",
-      "category": "Environment"
-    },
-    {
-      "kind": "news",
-      "title": "Ministry targets rural health worker shortages with new system",
-      "link": "https://mutapatimes.com/articles/2026-08-16-ministry-targets-rural-health-worker-shortages-with-new-syst",
-      "image": "https://mutapatimes.com/img/cards/news/ed2b6bd2b7c7.png",
-      "pubDate": "2026-08-16T06:04:17+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Kariba ferry disaster death toll rises to 73",
-      "link": "https://mutapatimes.com/articles/2026-08-16-kariba-ferry-disaster-death-toll-rises-to-73",
-      "image": "https://mutapatimes.com/img/cards/news/c5b2ecd5a540.png",
-      "pubDate": "2026-08-16T06:02:00+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Sports: Junior Cranes learn costly lessons from Zimbabwe def",
-      "link": "https://mutapatimes.com/articles/2026-08-16-sports-junior-cranes-learn-costly-lessons-from-zimbabwe-def",
-      "image": "https://mutapatimes.com/img/cards/news/753ce595f959.png",
-      "pubDate": "2026-08-16T06:00:05+00:00",
-      "category": "Sport"
     },
     {
       "kind": "news",
@@ -479,6 +471,14 @@
       "title": "ICT Assistant",
       "link": "https://vacancymail.co.zw/jobs/ict-assistant-68786/",
       "image": "https://mutapatimes.com/img/cards/jobs/c2927eecdd6b.png",
+      "pubDate": "2026-08-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounts Assistant",
+      "link": "https://vacancymail.co.zw/jobs/accounts-assistant-68785/",
+      "image": "https://mutapatimes.com/img/cards/jobs/12af1e263fa9.png",
       "pubDate": "2026-08-15T22:00:00+00:00",
       "category": "Jobs"
     }
