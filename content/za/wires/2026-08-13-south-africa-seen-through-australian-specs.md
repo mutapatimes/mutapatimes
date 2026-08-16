@@ -1,0 +1,16 @@
+---
+title: "South Africa seen through Australian specs"
+date: 2026-08-13T19:27:16.000Z
+author: South African Jewish Report
+category: Culture
+image: 
+summary: "South Africa seen through Australian specs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMidEFVX3lxTE1FcnowOXJXVmduSVZoNDl0eVBIWXNqemdoYUl0cWdsTVlDWHFOMjFzYVBlb3R5NmJWQ0pJQkhEUVZzcU5hVFg3UWxxTFZVNWRtRW4xcDBhZEFqWERBRDFZLWpjeVFvaFZwY0hONmhUX29PX1Rk0gF6QVVfeXFMTkJndW5IWFU3WFQ5TFpab3VmUlFXakE0YXA2cXdaY1FsZUx5NlN1TVZ2cmFueTNxYjB4dF91MlI0WVhnQlZ3bzh2RHNhUlZpYWhXcXpmbmFDS2Q4cnVua2VUeTM5cUlVVktrVHlMUGhGOEZQVnppaHZlYmc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by South African Jewish Report.*
+[Read original article](https://news.google.com/rss/articles/CBMidEFVX3lxTE1FcnowOXJXVmduSVZoNDl0eVBIWXNqemdoYUl0cWdsTVlDWHFOMjFzYVBlb3R5NmJWQ0pJQkhEUVZzcU5hVFg3UWxxTFZVNWRtRW4xcDBhZEFqWERBRDFZLWpjeVFvaFZwY0hONmhUX29PX1Rk0gF6QVVfeXFMTkJndW5IWFU3WFQ5TFpab3VmUlFXakE0YXA2cXdaY1FsZUx5NlN1TVZ2cmFueTNxYjB4dF91MlI0WVhnQlZ3bzh2RHNhUlZpYWhXcXpmbmFDS2Q4cnVua2VUeTM5cUlVVktrVHlMUGhGOEZQVnppaHZlYmc?oc=5)
