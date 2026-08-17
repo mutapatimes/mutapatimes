@@ -1,0 +1,16 @@
+---
+title: "Ghanaian Evacuee Dies Shortly After Landing in Accra From South Africa, Autopsy Ordered"
+date: 2026-08-16T11:25:44.000Z
+author: Modern Ghana
+category: Health
+image: 
+summary: "Ghanaian Evacuee Dies Shortly After Landing in Accra From South Africa, Autopsy Ordered"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVUlVTS1HZDNBR1Z3SUM4dmNubHBldllJMXBGV1ZaT1I4UjdmMWJyR0phNkJHbFFKNUloWmNqQ2h2OUIwWG5fUVBwYU5nOXYzazltZ0Z3c1JILTNLZFNWUUpXSTNzcHBMa1BMT2VhZ0lYRkdscThyZm4zNmRGN21CWk9IQWtPUC1ocnhHSklZeXlQbWJjcGhz0gGWAUFVX3lxTE8wdExzbFktNkZfYkp5SkY4Z1RXU3Q3UHZXZmxQTDRUYm5TblNVYW1DSmlsUk5oQzJvODBLWXlMNHBmZkJqOXZoYXpLZk4ydEdaMHAtbFdhSUdpa1dicEdyaWNZMkJ0WnJ4cDNzYUJOdXZWMlEwUC1nZmIzdno5ZDVlSDhaMHU1dnN3bUFKSEdzb2pOYzJBUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Modern Ghana.*
+[Read original article](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVUlVTS1HZDNBR1Z3SUM4dmNubHBldllJMXBGV1ZaT1I4UjdmMWJyR0phNkJHbFFKNUloWmNqQ2h2OUIwWG5fUVBwYU5nOXYzazltZ0Z3c1JILTNLZFNWUUpXSTNzcHBMa1BMT2VhZ0lYRkdscThyZm4zNmRGN21CWk9IQWtPUC1ocnhHSklZeXlQbWJjcGhz0gGWAUFVX3lxTE8wdExzbFktNkZfYkp5SkY4Z1RXU3Q3UHZXZmxQTDRUYm5TblNVYW1DSmlsUk5oQzJvODBLWXlMNHBmZkJqOXZoYXpLZk4ydEdaMHAtbFdhSUdpa1dicEdyaWNZMkJ0WnJ4cDNzYUJOdXZWMlEwUC1nZmIzdno5ZDVlSDhaMHU1dnN3bUFKSEdzb2pOYzJBUQ?oc=5)
