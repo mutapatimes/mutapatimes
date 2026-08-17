@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 07:16:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:27:04 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Marist Brothers High School, Dete — School Nurse</title>
+      <link>https://mutapatimes.com/stories/526d3db0bedd.html</link>
+      <description>Attend to students who are not feeling well Hwange · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 16 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/526d3db0bedd.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Marist Brothers High School, Dete</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/526d3db0bedd.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/526d3db0bedd.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/526d3db0bedd.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Nedbank — Digital Marketing &amp; Communications Manager</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/d190ae36f5a2.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d190ae36f5a2.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/d190ae36f5a2.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>The Crocodile Motel and Conferencing — Hotel Manager - Rusape</title>
-      <link>https://mutapatimes.com/stories/9deeccb2ab4f.html</link>
-      <description>VACANCY: HOTEL MANAGER – RUSAPE Crocodile Motel &amp; Conference Centre, Rusape, is seeking to employ an experienced HOTEL MANAGER. Rusape · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 16 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/9deeccb2ab4f.html</guid>
-      <category>Jobs</category>
-      <dc:creator>The Crocodile Motel and Conferencing</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/9deeccb2ab4f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
