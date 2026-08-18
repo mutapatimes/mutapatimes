@@ -1,16 +1,23 @@
 {
-  "fetched_at": "2026-08-18T13:17:03.689205+00:00",
+  "fetched_at": "2026-08-18T14:03:40.360472+00:00",
   "as_of": "2026-08-18",
   "source": "Zimbabwe Stock Exchange (public market-data API)",
   "source_url": "https://www.zse.co.zw",
   "currency": "ZWG",
   "activity": {
-    "trades": 51,
-    "turnover": 5815362.5,
-    "volume": 908500.0,
-    "market_cap": 108611525542.51
+    "trades": 60,
+    "turnover": 4120966.0,
+    "volume": 682700.0,
+    "market_cap": 107497664470.26
   },
   "indices": [
+    {
+      "name": "ALL SHARE",
+      "value": 479.69,
+      "change_pct": -1.02,
+      "change_points": -4.92,
+      "direction": "down"
+    },
     {
       "name": "ZSE TOP 10",
       "value": 486.07,
@@ -111,9 +118,9 @@
     },
     {
       "name": "ZIM NATIONAL",
-      "value": 183.15,
-      "change_pct": -0.94,
-      "change_points": -1.74,
+      "value": 183.89,
+      "change_pct": -0.54,
+      "change_points": -1.0,
       "direction": "down"
     },
     {
@@ -121,13 +128,6 @@
       "value": 336.83,
       "change_pct": -0.83,
       "change_points": -2.82,
-      "direction": "down"
-    },
-    {
-      "name": "ZSE ALLSHARE INDEX",
-      "value": 479.69,
-      "change_pct": -1.02,
-      "change_points": -4.92,
       "direction": "down"
     },
     {
@@ -147,54 +147,54 @@
   ],
   "gainers": [
     {
-      "name": "Cbz Holdings Limited",
-      "symbol": "CBZ.ZW",
-      "price": 4151.43,
-      "change_pct": 11.97
-    },
-    {
-      "name": "Zimbabwe Stock Exchange Holdings Limited",
-      "symbol": "ZSEH.ZW",
-      "price": 229.0,
-      "change_pct": 9.05
-    },
-    {
-      "name": "Afdis Distillers Limited",
-      "symbol": "AFDS.ZW",
-      "price": 1550.71,
-      "change_pct": 3.21
+      "name": "Ariston Holdings Limited",
+      "symbol": "ARIS.ZW",
+      "price": 7.6,
+      "change_pct": 1.01
     },
     {
       "name": "Tn Cybertech Investments Holdings Limited",
       "symbol": "TNCI.ZW",
-      "price": 30.05,
-      "change_pct": 1.38
+      "price": 30.16,
+      "change_pct": 0.38
     },
     {
-      "name": "Proplastics Limited",
-      "symbol": "PROL.ZW",
-      "price": 134.94,
-      "change_pct": 0.7
+      "name": "Seed Co Limited",
+      "symbol": "SEED.ZW",
+      "price": 491.94,
+      "change_pct": 0.09
     }
   ],
   "losers": [
     {
-      "name": "Dairibord Holdings Limited",
-      "symbol": "DZL.ZW",
-      "price": 385.77,
-      "change_pct": -7.73
+      "name": "Proplastics Limited",
+      "symbol": "PROL.ZW",
+      "price": 115.31,
+      "change_pct": -14.55
     },
     {
-      "name": "Ariston Holdings Limited",
-      "symbol": "ARIS.ZW",
-      "price": 7.52,
-      "change_pct": -1.05
+      "name": "Masimba Holdings Limited",
+      "symbol": "MSHL.ZW",
+      "price": 230.0,
+      "change_pct": -8.0
     },
     {
-      "name": "Delta Corporation Limited",
-      "symbol": "DLTA.ZW",
-      "price": 3239.99,
-      "change_pct": -0.03
+      "name": "General Beltings Holdings Limited",
+      "symbol": "GBH.ZW",
+      "price": 10.05,
+      "change_pct": -4.29
+    },
+    {
+      "name": "Cbz Holdings Limited",
+      "symbol": "CBZ.ZW",
+      "price": 3992.21,
+      "change_pct": -3.84
+    },
+    {
+      "name": "British American Tobacco Zimbabwe Limited",
+      "symbol": "BAT.ZW",
+      "price": 18400.0,
+      "change_pct": -3.1
     }
   ],
   "notices": [
