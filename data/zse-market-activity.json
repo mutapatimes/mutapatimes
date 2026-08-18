@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-08-18T12:22:41.535606+00:00",
-  "as_of": "2026-08-17",
+  "fetched_at": "2026-08-18T13:17:03.689205+00:00",
+  "as_of": "2026-08-18",
   "source": "Zimbabwe Stock Exchange (public market-data API)",
   "source_url": "https://www.zse.co.zw",
   "currency": "ZWG",
@@ -12,31 +12,24 @@
   },
   "indices": [
     {
-      "name": "ALL SHARE",
-      "value": 484.61,
-      "change_pct": 1.89,
-      "change_points": 8.99,
-      "direction": "up"
-    },
-    {
       "name": "ZSE TOP 10",
-      "value": 491.51,
-      "change_pct": 2.32,
-      "change_points": 11.14,
-      "direction": "up"
+      "value": 486.07,
+      "change_pct": -1.11,
+      "change_points": -5.44,
+      "direction": "down"
     },
     {
       "name": "ZSE TOP 15",
-      "value": 502.87,
-      "change_pct": 2.18,
-      "change_points": 10.73,
-      "direction": "up"
+      "value": 497.78,
+      "change_pct": -1.01,
+      "change_points": -5.09,
+      "direction": "down"
     },
     {
       "name": "MID CAP INDEX",
-      "value": 485.17,
-      "change_pct": -0.02,
-      "change_points": -0.12,
+      "value": 482.34,
+      "change_pct": -0.58,
+      "change_points": -2.83,
       "direction": "down"
     },
     {
@@ -55,17 +48,17 @@
     },
     {
       "name": "CONSUMER STAPLES INDEX",
-      "value": 328.68,
-      "change_pct": -0.09,
-      "change_points": -0.31,
+      "value": 327.83,
+      "change_pct": -0.26,
+      "change_points": -0.85,
       "direction": "down"
     },
     {
       "name": "FINANCIALS INDEX",
-      "value": 550.02,
-      "change_pct": 6.24,
-      "change_points": 32.3,
-      "direction": "up"
+      "value": 538.29,
+      "change_pct": -2.13,
+      "change_points": -11.73,
+      "direction": "down"
     },
     {
       "name": "INFORMATION, COMMUNICATION AND TECHNOLOGY INDEX",
@@ -76,10 +69,10 @@
     },
     {
       "name": "MATERIALS INDEX",
-      "value": 198.7,
-      "change_pct": 0.21,
-      "change_points": 0.41,
-      "direction": "up"
+      "value": 190.21,
+      "change_pct": -4.27,
+      "change_points": -8.49,
+      "direction": "down"
     },
     {
       "name": "MINING INDEX",
@@ -90,59 +83,66 @@
     },
     {
       "name": "MODIFIED CONSUMER STAPLES",
-      "value": 433.7,
-      "change_pct": -0.13,
-      "change_points": -0.56,
+      "value": 433.39,
+      "change_pct": -0.07,
+      "change_points": -0.31,
       "direction": "down"
     },
     {
       "name": "NEW INDUSTRIAL INDEX",
-      "value": 176.19,
-      "change_pct": 0.0,
-      "change_points": 0.0,
-      "direction": "flat"
+      "value": 171.21,
+      "change_pct": -2.83,
+      "change_points": -4.98,
+      "direction": "down"
     },
     {
       "name": "OLD INDUSTRIAL INDEX",
-      "value": 476.51,
-      "change_pct": 1.9,
-      "change_points": 8.88,
-      "direction": "up"
+      "value": 471.65,
+      "change_pct": -1.02,
+      "change_points": -4.86,
+      "direction": "down"
     },
     {
       "name": "REAL ESTATE INDEX",
-      "value": 701.67,
-      "change_pct": -2.54,
-      "change_points": -18.28,
+      "value": 696.68,
+      "change_pct": -0.71,
+      "change_points": -4.99,
       "direction": "down"
     },
     {
       "name": "ZIM NATIONAL",
-      "value": 184.89,
-      "change_pct": 0.72,
-      "change_points": 1.33,
-      "direction": "up"
+      "value": 183.15,
+      "change_pct": -0.94,
+      "change_points": -1.74,
+      "direction": "down"
     },
     {
       "name": "ZSE AGRICULTURE INDEX",
-      "value": 339.65,
-      "change_pct": -0.73,
-      "change_points": -2.51,
+      "value": 336.83,
+      "change_pct": -0.83,
+      "change_points": -2.82,
+      "direction": "down"
+    },
+    {
+      "name": "ZSE ALLSHARE INDEX",
+      "value": 479.69,
+      "change_pct": -1.02,
+      "change_points": -4.92,
       "direction": "down"
     },
     {
       "name": "ZSE ETF INDEX",
       "value": 622.61,
-      "change_pct": 0.46,
-      "change_points": 2.85,
-      "direction": "up"
+      "change_pct": 0.0,
+      "change_points": 0.0,
+      "direction": "flat"
     },
     {
       "name": "ZSE TOP 25",
-      "value": 526.26,
-      "change_pct": 1.93,
-      "change_points": 9.98,
-      "direction": "up"
+      "value": 520.97,
+      "change_pct": -1.01,
+      "change_points": -5.29,
+      "direction": "down"
     }
   ],
   "gainers": [
