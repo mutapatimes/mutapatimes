@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-18T00:55:56+00:00",
+  "fetched_at": "2026-08-18T03:40:02+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "SADC Renews Call for Removal of Sanctions on Zimbabwe, Says Restrictions Limit Economic Potential",
+      "link": "https://mutapatimes.com/articles/2026-08-18-sadc-renews-call-for-removal-of-sanctions-on-zimbabwe-says-r",
+      "image": "https://mutapatimes.com/img/cards/news/db4a09a45521.png",
+      "pubDate": "2026-08-18T03:07:36+00:00",
+      "category": "Policy"
+    },
     {
       "kind": "economy",
       "title": "Zim current account 2025 Q4: $821M. Trailing four quarters: $1.9B.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 18 Aug 2026: 1 USD = 26.57 ZWG · best from UK £100 → $132.24 via Wise",
+      "title": "Zim FX snapshot 18 Aug 2026: 1 USD = 26.70 ZWG · best from UK £100 → $132.35 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-08-18",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-08-18",
       "pubDate": "2026-08-17T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "ICT Assistant",
       "link": "https://vacancymail.co.zw/jobs/ict-assistant-68786/",
       "image": "https://mutapatimes.com/img/cards/jobs/c2927eecdd6b.png",
-      "pubDate": "2026-08-17T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Assistant",
-      "link": "https://vacancymail.co.zw/jobs/accounts-assistant-68785/",
-      "image": "https://mutapatimes.com/img/cards/jobs/12af1e263fa9.png",
       "pubDate": "2026-08-17T22:00:00+00:00",
       "category": "Jobs"
     }
