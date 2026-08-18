@@ -76,8 +76,10 @@
   <script>
   (function () {
     "use strict";
-    // Set this to the same Worker URL used on the landing page.
-    var PAY_ENDPOINT = "";
+    // Same Worker URL used on the landing page (academy/index.html) and
+    // the unlock page (academy/welcome/index.html) -- this admin page was
+    // shipped without it ever being filled in.
+    var PAY_ENDPOINT = "https://academy-pay.mutapatimes.workers.dev";
 
     var keyEl = document.getElementById("key");
     var remember = document.getElementById("remember");
