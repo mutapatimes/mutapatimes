@@ -1,0 +1,16 @@
+---
+title: "SARB probes DA's Burke over R4B crypto transfers"
+date: 2026-08-18T15:35:16.000Z
+author: Billionaires.Africa
+category: Policy
+image: 
+summary: "SARB probes DA's Burke over R4B crypto transfers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOeC04X190RkFEcHRNVmd2ZnpIeDc2d3VQdXFyelIxRDNCclBpMXh0UF9hS3UzbldXX3ZPV0Jwbi1EQzFZV0NPY1VkWkRmODNmVmNGb0g4dFRzVkhRTDIwUFh0cHo5QW0xWmMtNlMyVXI4MWdPTDdESWxVckhyQ1BLRHRNcV9XRHFuYjB3ZGdaajRoaDM4VHVJS1dlMTBFSmE0cFE5aXhCNjQycTR2NVlWU1R3TTVEVEM1ak1HbFJRUU9VeUNHYWZJeDZlekNGMXhyUGlQZU52MUdjYUw4MGt1cHI2TW8taXc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Billionaires.Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOeC04X190RkFEcHRNVmd2ZnpIeDc2d3VQdXFyelIxRDNCclBpMXh0UF9hS3UzbldXX3ZPV0Jwbi1EQzFZV0NPY1VkWkRmODNmVmNGb0g4dFRzVkhRTDIwUFh0cHo5QW0xWmMtNlMyVXI4MWdPTDdESWxVckhyQ1BLRHRNcV9XRHFuYjB3ZGdaajRoaDM4VHVJS1dlMTBFSmE0cFE5aXhCNjQycTR2NVlWU1R3TTVEVEM1ak1HbFJRUU9VeUNHYWZJeDZlekNGMXhyUGlQZU52MUdjYUw4MGt1cHI2TW8taXc?oc=5)

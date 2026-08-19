@@ -1,0 +1,16 @@
+---
+title: "How experiential safety and wellness interventions are reshaping risk culture in South African workplaces"
+date: 2026-08-18T13:25:48.000Z
+author: African Mining Market
+category: Culture
+image: 
+summary: "How experiential safety and wellness interventions are reshaping risk culture in South African workplaces"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRUw1QW0zYUlFOVNYZktmZV9VNjNJUGc5RXJQbnR3Q0hqWkFQMVdOTTRkckVRZU9Za3dKT2dQV0dsamF0RVlPTXlnUVhaM2NzQllWMXFfSVhwZnNUUnY2QVBUMkt0N2JVbHRFSzR2eFdxa1ZXbUxRb1MyUXFITmdNcUVsUWlCZEtTS0NmRm53TTZPNXRtRm5DS1FZUDRJOGZSbmpWaE5faVdianhFMVNRTEVBWnk5RnBLcHJvM1I4OXU3TlhQdnFLd1hMRDJPQzlnby1YOXBEUUxUcE11?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by African Mining Market.*
+[Read original article](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRUw1QW0zYUlFOVNYZktmZV9VNjNJUGc5RXJQbnR3Q0hqWkFQMVdOTTRkckVRZU9Za3dKT2dQV0dsamF0RVlPTXlnUVhaM2NzQllWMXFfSVhwZnNUUnY2QVBUMkt0N2JVbHRFSzR2eFdxa1ZXbUxRb1MyUXFITmdNcUVsUWlCZEtTS0NmRm53TTZPNXRtRm5DS1FZUDRJOGZSbmpWaE5faVdianhFMVNRTEVBWnk5RnBLcHJvM1I4OXU3TlhQdnFLd1hMRDJPQzlnby1YOXBEUUxUcE11?oc=5)

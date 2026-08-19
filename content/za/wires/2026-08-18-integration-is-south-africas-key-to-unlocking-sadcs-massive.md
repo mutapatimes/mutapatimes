@@ -1,0 +1,16 @@
+---
+title: "Integration is South Africa’s key to unlocking SADC’s massive economic potential"
+date: 2026-08-18T11:01:45.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Integration is South Africa’s key to unlocking SADC’s massive economic potential"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxOdU1UQXhNdjdneHBQS3dzdlV4SjdobC1aT1NaVEhRd2xQQzhNX2tnTFdxQmQ0cC1IRWdtWW5WMFB4bFZ3UVhSQkNud3lSU1RDUE1ZQU5WZkNEcHBmeFRVYVJxbzFVRjAtOHJsT1hVU3JrUkFSbXFIRWI5cmFyblZPX3EwdmhvX2g5V2hpUzJ3QzdfQ3lxSnlJSFFseExfY3Faa1dIV1VzM3lBclhMVkxYdGtHWFREUy1NbUZaRkJDQjlpcmxMdTktWjNPaGdkcm5OODFRZU40U2RicUxrVTQwenZYeUxxV2ZfT3ZDM0lDYmRSQ0xsdVJPc2YtTlJ3RDhqU28tTnZ5VE1uNWszaUdJaUdnTWVIazF2eHJqSHNUc3RpWmxEQ19XckJRdjl3ODFZZ1gwcUVDOXFFT3ptTVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxOdU1UQXhNdjdneHBQS3dzdlV4SjdobC1aT1NaVEhRd2xQQzhNX2tnTFdxQmQ0cC1IRWdtWW5WMFB4bFZ3UVhSQkNud3lSU1RDUE1ZQU5WZkNEcHBmeFRVYVJxbzFVRjAtOHJsT1hVU3JrUkFSbXFIRWI5cmFyblZPX3EwdmhvX2g5V2hpUzJ3QzdfQ3lxSnlJSFFseExfY3Faa1dIV1VzM3lBclhMVkxYdGtHWFREUy1NbUZaRkJDQjlpcmxMdTktWjNPaGdkcm5OODFRZU40U2RicUxrVTQwenZYeUxxV2ZfT3ZDM0lDYmRSQ0xsdVJPc2YtTlJ3RDhqU28tTnZ5VE1uNWszaUdJaUdnTWVIazF2eHJqSHNUc3RpWmxEQ19XckJRdjl3ODFZZ1gwcUVDOXFFT3ptTVE?oc=5)

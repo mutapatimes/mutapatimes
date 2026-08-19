@@ -1,0 +1,16 @@
+---
+title: "Rugby’s fiercest rivalry resumes: Springboks play All Blacks in first 4-test series in 50 years"
+date: 2026-08-18T21:16:09.000Z
+author: Beloit Daily News
+category: Sport
+image: 
+summary: "Rugby’s fiercest rivalry resumes: Springboks play All Blacks in first 4-test series in 50 years"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxQcnhiUVp3c3J4QzRpSVhfWkJLRC0wLWpEUGc2Y1RqSDVkd0NGU1BocHpERGZDR3JLbmJ4WmJOb3pRenhaTktWZ3hHS3NtM2M5ZEpBSUNiYXBPSlJJYzRTMnNRY2ZQZmZpVmRvWjJlWGZYWHJZWXMweXdZSjBNVjN3QXpwR2NSX2VFbW1BZ2Fwdm1BUEIzMUk1OTRhSnBQNXBjNUcxMmJqVU5hcDJDVElrT2x1SjhOWTJMSGdSMG1LSnJ6ZDZTbXoyQmFkOFZCa2xVSk9nUC01QXJ1QWxPN1llRWlyUXh1ZG1VcGdfZWhmRjBsN29NazJSVkl4RUYwbzFuQ3VNNUNNRWt5bXY4NkhHWm84VQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Beloit Daily News.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxQcnhiUVp3c3J4QzRpSVhfWkJLRC0wLWpEUGc2Y1RqSDVkd0NGU1BocHpERGZDR3JLbmJ4WmJOb3pRenhaTktWZ3hHS3NtM2M5ZEpBSUNiYXBPSlJJYzRTMnNRY2ZQZmZpVmRvWjJlWGZYWHJZWXMweXdZSjBNVjN3QXpwR2NSX2VFbW1BZ2Fwdm1BUEIzMUk1OTRhSnBQNXBjNUcxMmJqVU5hcDJDVElrT2x1SjhOWTJMSGdSMG1LSnJ6ZDZTbXoyQmFkOFZCa2xVSk9nUC01QXJ1QWxPN1llRWlyUXh1ZG1VcGdfZWhmRjBsN29NazJSVkl4RUYwbzFuQ3VNNUNNRWt5bXY4NkhHWm84VQ?oc=5)

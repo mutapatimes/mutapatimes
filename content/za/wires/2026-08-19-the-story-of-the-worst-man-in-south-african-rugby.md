@@ -1,0 +1,16 @@
+---
+title: "The story of the worst man in South African rugby"
+date: 2026-08-19T03:24:06.000Z
+author: NZ Herald
+category: Sport
+image: 
+summary: "The story of the worst man in South African rugby"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingJBVV95cUxPcTBxZGdrOHk4ZDlhNmxJU0tUVm54WjBUMWtFSGJMV255YmZwaXdRdTZ6UUlCUF9hQUtkUGlWc0VwUE1ZelczaGdVX3dHQk16QURyS3VFOGZCdlVIRzlQQnZqdlVFVXBTRmdkZWFMcW9IOWxfNFZpamNETHZoSXJoS2tTNWsxeVpQSUx2ZEhDakhndm5Qd1lRU19LM01uRVRMQ3FPb0x6M2hodDZTTktnNjF2aDBhNFIxbmJMdGtuUUZjUjFmX0luSngyWnlaS1BfZV92UmhOUnVIWEJUR0lTVk03eXJQOHA1LU1YMVY1SkZqZUZNTUk1YlNWREd1RFE4MDZQSlM5UFliV3ZycTJZczVDZlk1eE1CM0FyOU5n?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by NZ Herald.*
+[Read original article](https://news.google.com/rss/articles/CBMingJBVV95cUxPcTBxZGdrOHk4ZDlhNmxJU0tUVm54WjBUMWtFSGJMV255YmZwaXdRdTZ6UUlCUF9hQUtkUGlWc0VwUE1ZelczaGdVX3dHQk16QURyS3VFOGZCdlVIRzlQQnZqdlVFVXBTRmdkZWFMcW9IOWxfNFZpamNETHZoSXJoS2tTNWsxeVpQSUx2ZEhDakhndm5Qd1lRU19LM01uRVRMQ3FPb0x6M2hodDZTTktnNjF2aDBhNFIxbmJMdGtuUUZjUjFmX0luSngyWnlaS1BfZV92UmhOUnVIWEJUR0lTVk03eXJQOHA1LU1YMVY1SkZqZUZNTUk1YlNWREd1RFE4MDZQSlM5UFliV3ZycTJZczVDZlk1eE1CM0FyOU5n?oc=5)
