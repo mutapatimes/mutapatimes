@@ -1,0 +1,16 @@
+---
+title: "Ford South Africa Names Angela Weathers Plant Manager for Silverton Manufacturing Operations"
+date: 2026-08-19T03:31:03.000Z
+author: infrastructurenews.co.za
+category: Culture
+image: 
+summary: "Ford South Africa Names Angela Weathers Plant Manager for Silverton Manufacturing Operations"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQX092SXZVQTFidEYzWm1rMHoxMTBKUE54S184U1NZWjVqeVlZWVVpNEkxdmU2VkxkU05DTlJJLUZQem11TlJuajczbUNTd0pJaUFKZG9KbXZWSWVSeWJZUWFPOTVoempEV3hvWDRNUGxkMmNmYUVpeWRFMjJKaVM5WFFrQUhXTlY3ZEl5OWxDeFRCTnFMOEhTZFIzMWhiUlJaZm9pVUc0QmVrZTdUVnpENDdLeFNLaFRoNUFkTGZLSGpnRERROWtuWmkyenh2VGhhQWd3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by infrastructurenews.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQX092SXZVQTFidEYzWm1rMHoxMTBKUE54S184U1NZWjVqeVlZWVVpNEkxdmU2VkxkU05DTlJJLUZQem11TlJuajczbUNTd0pJaUFKZG9KbXZWSWVSeWJZUWFPOTVoempEV3hvWDRNUGxkMmNmYUVpeWRFMjJKaVM5WFFrQUhXTlY3ZEl5OWxDeFRCTnFMOEhTZFIzMWhiUlJaZm9pVUc0QmVrZTdUVnpENDdLeFNLaFRoNUFkTGZLSGpnRERROWtuWmkyenh2VGhhQWd3?oc=5)
