@@ -26,11 +26,13 @@ on:
       - 'img/cooking/**'
       - 'img/airports/**'
       - 'data/ats-schools.json'
-      - 'data/ats-schools-wp.json'
       - 'data/zse-companies.json'
       - 'data/mines.json'
+      - 'data/mines-roster.json'
       - 'data/travelpayouts-widgets.json'
       - 'data/flight-prices.json'
+      - 'content/schools-wp/**'
+      - 'content/mines-wp/**'
       - 'scripts/build_schools.py'
       - 'scripts/build_zse.py'
       - 'scripts/build_mining.py'
@@ -61,6 +63,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Python deps
+        run: pip install --quiet pyyaml
+
       - name: Detect which microsites need rebuilding
         id: detect
         run: |
@@ -80,13 +85,13 @@ jobs:
           if echo "$CHANGED" | grep -qE '^img/flights/|^img/airports/|^data/travelpayouts-widgets\.json|^data/flight-prices\.json|^scripts/build_flight_pages_v2\.py'; then
             REBUILD_FLIGHTS=true
           fi
-          if echo "$CHANGED" | grep -qE '^img/schools/|^img/uk-guide/|^data/ats-schools.*\.json|^scripts/build_schools\.py'; then
+          if echo "$CHANGED" | grep -qE '^img/schools/|^img/uk-guide/|^data/ats-schools.*\.json|^content/schools-wp/|^scripts/build_schools\.py'; then
             REBUILD_SCHOOLS=true
           fi
           if echo "$CHANGED" | grep -qE '^img/zse/|^data/zse-companies\.json|^scripts/build_zse\.py'; then
             REBUILD_ZSE=true
           fi
-          if echo "$CHANGED" | grep -qE '^img/mining/|^data/mines\.json|^scripts/build_mining\.py'; then
+          if echo "$CHANGED" | grep -qE '^img/mining/|^data/mines(-roster)?\.json|^content/mines-wp/|^scripts/build_mining\.py'; then
             REBUILD_MINING=true
           fi
           if echo "$CHANGED" | grep -qE '^img/cooking/|^scripts/build_cooking\.py'; then
@@ -148,7 +153,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add flights/ airports/ schools/ zse/ mining/ cooking/ moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
+          git add flights/ airports/ schools/ zse/ mining/ cooking/ data/mines.json moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Nothing to commit — builders produced no HTML diff."
           else

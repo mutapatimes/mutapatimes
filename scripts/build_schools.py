@@ -2,8 +2,9 @@
 """Generate /schools/ microsite from data/ats-schools.json."""
 import json, os, re, html, math
 from pathlib import Path
+import yaml
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "schools"
 OUT.mkdir(exist_ok=True)
 
@@ -11,11 +12,19 @@ OUT.mkdir(exist_ok=True)
 data = json.loads((ROOT / "data" / "ats-schools.json").read_text())
 schools = data["schools"]
 
-# Load optional Wikipedia enrichment (only schools with verified WP articles)
+# Load Wikipedia/editorial enrichment -- one YAML file per school, named by
+# slug, under content/schools-wp/ (edited via the Pages CMS "School profiles"
+# collection). Keyed by name here since the rest of this script looks WP up
+# by school name.
 WP = {}
-wp_file = ROOT / "data" / "ats-schools-wp.json"
-if wp_file.exists():
-    WP = json.loads(wp_file.read_text())
+wp_dir = ROOT / "content" / "schools-wp"
+slug_to_name = {s["slug"]: s["name"] for s in schools}
+if wp_dir.is_dir():
+    for f in wp_dir.glob("*.yml"):
+        meta = yaml.safe_load(f.read_text()) or {}
+        name = slug_to_name.get(f.stem) or meta.get("name")
+        if name:
+            WP[name] = meta
 
 # --- City/region inference from coordinates -------------------------------
 # Each entry: (city, (lat_min, lat_max), (lon_min, lon_max), province)

@@ -6,13 +6,14 @@ free-licensed images (CC-BY-*, CC0, Public Domain). Fair-use crests/logos are
 skipped — we cannot redistribute those from our own server.
 
 Outputs:
-  img/schools/<slug>.jpg                    — downloaded image
-  data/ats-schools-wp.json (in-place)       — updated with image metadata
+  img/schools/<slug>.jpg                       — downloaded image
+  content/schools-wp/<slug>.yml (in-place)      — updated with image metadata
 """
 import json, urllib.request, urllib.parse, time, re
 from pathlib import Path
+import yaml
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 IMG_DIR = ROOT / "img" / "schools"
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -113,47 +114,49 @@ def ext_for_mime(mime, url):
     return ("." + m.group(1).lower()) if m else ".jpg"
 
 if __name__ == "__main__":
-    wp_path = ROOT / "data" / "ats-schools-wp.json"
-    wp = json.loads(wp_path.read_text())
+    wp_dir = ROOT / "content" / "schools-wp"
+    profiles = {}  # ats_name -> (slug, data, file_path)
+    for f in wp_dir.glob("*.yml"):
+        data = yaml.safe_load(f.read_text()) or {}
+        name = data.get("name")
+        if name:
+            profiles[name] = (f.stem, data, f)
 
     # Need ATS-name -> WP-title mapping (same as enrich script)
     mapping_titles = {}
-    for name, data in wp.items():
+    for name, (slug, data, f) in profiles.items():
         # Reconstruct WP title from the wikipedia URL
         m = re.search(r"wikipedia\.org/wiki/(.+)$", data.get("wikipedia",""))
         if m: mapping_titles[name] = m.group(1)
 
-    # Need slug for filenames — load from ats-schools.json
-    schools_data = json.loads((ROOT / "data" / "ats-schools.json").read_text())
-    slug_for = {s["name"]: s["slug"] for s in schools_data["schools"]}
+    slug_for = {name: slug for name, (slug, data, f) in profiles.items()}
 
     n_free = 0
     n_skip_license = 0
     n_no_image = 0
     for name, wp_title in mapping_titles.items():
+        slug, data, f = profiles[name]
         print(f"  {name}  <-  {wp_title}")
         img = fetch_article_image(wp_title)
         if not img:
             print("    no image")
             n_no_image += 1
-            wp[name].pop("image", None)
+            data.pop("image", None)
+            f.write_text(yaml.dump(data, allow_unicode=True, sort_keys=False, width=1000))
             continue
         if not img["is_free"]:
             print(f"    SKIP (license: {img['license']!r}, usage: {img['usage_terms'][:60]!r})")
             n_skip_license += 1
             # Still store metadata so we can show a "View on Wikipedia" link
-            wp[name]["image"] = {**img, "local": None}
-            continue
-        slug = slug_for.get(name)
-        if not slug:
-            print(f"    no slug — skipping save")
+            data["image"] = {**img, "local": None}
+            f.write_text(yaml.dump(data, allow_unicode=True, sort_keys=False, width=1000))
             continue
         ext = ext_for_mime(img["mime"], img["url"])
         local = IMG_DIR / f"{slug}{ext}"
         try:
             http_download(img["url"], local)
             print(f"    saved {local.name}  ({local.stat().st_size//1024}KB, {img['license']})")
-            wp[name]["image"] = {
+            data["image"] = {
                 "filename": img["filename"],
                 "license": img["license"],
                 "artist": img["artist"],
@@ -161,10 +164,10 @@ if __name__ == "__main__":
                 "commons_page": img["commons_page"],
                 "local": f"/img/schools/{local.name}",
             }
+            f.write_text(yaml.dump(data, allow_unicode=True, sort_keys=False, width=1000))
             n_free += 1
         except Exception as e:
             print(f"    download err: {e}")
         time.sleep(0.6)
 
-    wp_path.write_text(json.dumps(wp, indent=2, ensure_ascii=False))
     print(f"\nDone. free={n_free}  license-skip={n_skip_license}  no-image={n_no_image}")

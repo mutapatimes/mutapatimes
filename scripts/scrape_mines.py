@@ -6,7 +6,7 @@ import re, json, urllib.request, time
 from pathlib import Path
 
 UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 
 CATEGORIES = [
     ("Mines_in_Zimbabwe",            "General"),
@@ -87,8 +87,9 @@ for name, commodity, slug in EXTRA:
     if name not in aggregated:
         aggregated[name] = {"commodity": commodity, "wp_slug": slug}
 
-# Save raw roster
-out_file = Path("/tmp/mines-roster.json")
+# Save raw roster (persisted, not /tmp — build_mining.py reads this on every
+# run, including in CI, where /tmp is never populated by this script)
+out_file = ROOT / "data" / "mines-roster.json"
 out_file.write_text(json.dumps(aggregated, indent=2))
 print(f"\nTotal unique mines: {len(aggregated)}")
 print(f"saved {out_file}")

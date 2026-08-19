@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
-"""Fetch Wikipedia infobox + summary for ATS schools and save to data/ats-schools-wp.json.
+"""Fetch Wikipedia infobox + summary for ATS schools and save one YAML file
+per school under content/schools-wp/ (the Pages CMS "School profiles"
+collection).
 
 Only entries in the verified mapping below are fetched. We do not auto-match by
 fuzzy name; we want to be sure the Wikipedia article is actually about the same
 school (ATS sometimes has multiple schools with similar names — e.g. Petra
-College vs. Petra High School)."""
+College vs. Petra High School).
+
+Schools that already have a content/schools-wp/<slug>.yml file are skipped:
+once a profile exists it's presumed editor-owned via the CMS, and re-running
+this script must not clobber a manual correction."""
 import json, re, urllib.request, urllib.parse, time
 from pathlib import Path
+import yaml
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 
 # Verified ATS-name -> Wikipedia-title mapping. Confirmed by reading the
 # Wikipedia article title-line and the published location of the ATS school.
@@ -172,16 +179,29 @@ def extract(title):
     return out
 
 if __name__ == "__main__":
-    enriched = {}
+    schools = json.loads((ROOT / "data" / "ats-schools.json").read_text())["schools"]
+    slug_for = {s["name"]: s["slug"] for s in schools}
+    out_dir = ROOT / "content" / "schools-wp"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    written = skipped = 0
     for ats_name, wp_title in MAPPING.items():
+        slug = slug_for.get(ats_name)
+        if not slug:
+            print(f"  {ats_name}: no ATS slug, skipping")
+            continue
+        dest = out_dir / f"{slug}.yml"
+        if dest.exists():
+            skipped += 1
+            continue
         print(f"  fetching {ats_name} <- {wp_title}")
         try:
             data = extract(wp_title)
-            if data:
-                enriched[ats_name] = data
         except Exception as e:
             print(f"    error: {e}")
+            continue
+        if data:
+            dest.write_text(yaml.dump({"name": ats_name, **data}, allow_unicode=True, sort_keys=False, width=1000))
+            written += 1
         time.sleep(0.4)  # be polite
-    out_file = ROOT / "data" / "ats-schools-wp.json"
-    out_file.write_text(json.dumps(enriched, indent=2, ensure_ascii=False))
-    print(f"\nwrote {len(enriched)} enrichments -> {out_file}")
+    print(f"\nwrote {written} new profiles, skipped {skipped} already-existing -> {out_dir}")

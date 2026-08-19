@@ -297,6 +297,70 @@ content:
       - { name: deck,     label: Deck (sub-headline), type: text, required: false }
       - { name: body,     label: Body,              type: rich-text, required: false }
 
+  # ─── SCHOOL PROFILES ────────────────────────────────────────────
+  # Editorial facts for the /schools/ directory (founding year, type,
+  # motto, head, enrolment, etc). One file per school, named by its
+  # ATS slug — cross-referenced against data/ats-schools.json which
+  # holds the auto-scraped registry (location, category, boarding)
+  # and is not itself CMS-edited. Saving here triggers a rebuild of
+  # that school's page within a few minutes (see
+  # .github/workflows/rebuild-microsites.yml). To profile a school
+  # that doesn't have a file yet, add one named <slug>.yml matching
+  # its slug in data/ats-schools.json.
+  - name: schools_wp
+    label: School profiles
+    type: collection
+    path: content/schools-wp
+    format: yaml
+    extension: yml
+    view:
+      fields: [name, type, established]
+      primary: name
+      sort: [name]
+    fields:
+      - { name: name,          label: School name (must match ATS registry exactly), type: string, required: true }
+      - { name: established,   label: Founded / established,        type: string, required: false }
+      - { name: type,          label: Type,                         type: string, required: false, description: "e.g. Private, day and boarding school" }
+      - { name: gender,        label: Intake,                       type: string, required: false, description: "e.g. Girls, Boys, Co-educational" }
+      - { name: denomination,  label: Religious affiliation,        type: string, required: false }
+      - { name: motto,         label: Motto,                        type: string, required: false }
+      - { name: head,          label: Head's name,                  type: string, required: false }
+      - { name: head_title,    label: Head's title,                 type: string, required: false, description: "e.g. Headmistress, Principal, Rector" }
+      - { name: enrollment,    label: Enrolment,                    type: string, required: false, description: "e.g. 522 (2016)" }
+      - { name: grades,        label: Grades / year groups,         type: string, required: false }
+      - { name: houses,        label: School houses,                type: string, required: false }
+      - { name: colours,       label: Colours,                      type: string, required: false }
+      - { name: mascot,        label: Mascot,                       type: string, required: false }
+      - { name: sports,        label: Sports offered,                type: string, required: false }
+      - { name: summary,       label: Summary,                      type: text, required: false, description: "1-2 sentences for the profile section." }
+      - { name: wikipedia,     label: Wikipedia URL,                type: string, required: false }
+
+  # ─── MINE PROFILES ──────────────────────────────────────────────
+  # Editorial corrections for the /mining/ directory's operator name,
+  # location, product mix and summary. One file per mine, named by
+  # its slug in data/mines.json. These override (not replace) the
+  # Wikipedia-sourced defaults build_mining.py fetches automatically
+  # — coordinates and photos stay auto-managed. To profile a mine
+  # without a file yet, add one named <slug>.yml matching its slug
+  # in data/mines.json.
+  - name: mines_wp
+    label: Mine profiles
+    type: collection
+    path: content/mines-wp
+    format: yaml
+    extension: yml
+    view:
+      fields: [name, products]
+      primary: name
+      sort: [name]
+    fields:
+      - { name: name,           label: Mine name (must match data/mines.json exactly), type: string, required: true }
+      - { name: operator_label, label: Operator / owner,             type: string, required: false }
+      - { name: location_label, label: Location,                     type: string, required: false }
+      - { name: products,       label: Products / commodities,       type: string, required: false }
+      - { name: summary,        label: Summary,                      type: text, required: false, description: "1-2 sentences for the profile section." }
+      - { name: wikipedia,      label: Wikipedia URL,                type: string, required: false }
+
   # ─── AUTHORS ───────────────────────────────────────────────────
   - name: authors
     label: Authors & Bylines

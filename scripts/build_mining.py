@@ -2,21 +2,38 @@
 """Build /mining/ microsite from aggregated Zimbabwean mines roster.
 Mirrors the schools/zse build pattern."""
 import json, re, html, urllib.request, urllib.parse, time
+from datetime import datetime, timezone
 from pathlib import Path
+import yaml
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "mining"
 OUT.mkdir(exist_ok=True)
 IMG  = ROOT / "img" / "mining"
 IMG.mkdir(parents=True, exist_ok=True)
 
 UA = "MutapaTimes/1.0 (https://mutapatimes.com; news@mutapatimes.com)"
-TODAY = "2026-05-22"
+TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 # Load raw roster + dedupe known title variants (Wikipedia sometimes has two
 # articles for the same mine, e.g. "Mimosa Mine" + "Mimosa mine" as separate
 # redirects/articles).
-roster = json.loads(Path("/tmp/mines-roster.json").read_text())
+# scrape_mines.py (run occasionally, not part of the regular rebuild) writes a
+# fresh discovery roster to data/mines-roster.json. On a clean checkout (CI,
+# or before that script has ever been run) that file won't exist yet, so fall
+# back to rebuilding the roster from the last enriched dataset -- this keeps
+# CMS edits to data/mines.json's "wp" fields, and routine rebuilds in
+# general, working without requiring a fresh Wikipedia discovery pass.
+roster_file = ROOT / "data" / "mines-roster.json"
+if roster_file.exists():
+    roster = json.loads(roster_file.read_text())
+else:
+    existing_file = ROOT / "data" / "mines.json"
+    existing = json.loads(existing_file.read_text()) if existing_file.exists() else {"mines": []}
+    roster = {
+        m["name"]: {"commodity": m["commodity"], "wp_slug": m["wp_slug"]}
+        for m in existing["mines"]
+    }
 
 # Canonicalise: lowercase variants of duplicate mines map to the canonical
 DUPES = {
@@ -242,6 +259,27 @@ for name, meta in mines.items():
     meta["wp"] = wp
     meta["slug"] = slugify(name)
     time.sleep(0.4)
+
+# Manual editorial overrides -- one YAML file per mine, named by slug, under
+# content/mines-wp/ (edited via the Pages CMS "Mine profiles" collection).
+# These win over the auto-fetched Wikipedia text so an editor can correct an
+# operator name or summary without it being clobbered by the next Wikipedia
+# re-fetch. Coordinates and images stay auto-managed (not in this layer).
+wp_dir = ROOT / "content" / "mines-wp"
+OVERRIDE_KEYS = ["operator_label", "location_label", "products", "summary", "wikipedia"]
+if wp_dir.is_dir():
+    for f in wp_dir.glob("*.yml"):
+        override = yaml.safe_load(f.read_text()) or {}
+        meta = mines.get(override.get("name") or "")
+        if not meta:
+            # Fall back to slug match in case the name in the file drifted
+            meta = next((m for m in mines.values() if m.get("slug") == f.stem), None)
+        if not meta:
+            continue
+        meta.setdefault("wp", {})
+        for k in OVERRIDE_KEYS:
+            if override.get(k):
+                meta["wp"][k] = override[k]
 
 # Save enriched dataset
 data_file = ROOT / "data" / "mines.json"
