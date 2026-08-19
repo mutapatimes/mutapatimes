@@ -58,6 +58,11 @@ jobs:
           # Use the workflow token so subsequent commits don't re-trigger
           # this action infinitely.
           token: ${{ secrets.GITHUB_TOKEN }}
+          # fetch-depth 1 (the default) leaves no parent commit to diff
+          # against, so `git diff HEAD^ HEAD` below silently fails and every
+          # microsite gets skipped on every run -- this was the real reason
+          # schools/mining rebuilds stopped firing.
+          fetch-depth: 2
 
       - uses: actions/setup-python@v5
         with:
