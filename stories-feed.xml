@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 07:06:01 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 07:09:28 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Gokwe North Rural District Council — Executive Officer Housing and Social Services</title>
+      <link>https://mutapatimes.com/stories/1b4db06bb140.html</link>
+      <description>Applications are invited to fill in the following critical posts which have arise in the following departments. EXECUTIVE OFFICER HOUSING AND SOCIAL SERVICES: (GRADE 10) Gokwe · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Tue, 18 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/1b4db06bb140.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Gokwe North Rural District Council</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Claremont Business School — Personal Assistant to the Managing Director</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/82cebaece0ff.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/82cebaece0ff.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/82cebaece0ff.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Corporate 24 Hospital Group — Account Relationship Officer</title>
-      <link>https://mutapatimes.com/stories/6c91dd5bd62b.html</link>
-      <description>Applications are invited from competent suitably qualified and experienced persons to fill in the position based at Corporate 24 Hospital along Josiah Tongogara Street between 8th and 9th Avenue. Job… Bulawayo · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 18 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/6c91dd5bd62b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Corporate 24 Hospital Group</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/6c91dd5bd62b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/6c91dd5bd62b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/6c91dd5bd62b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
