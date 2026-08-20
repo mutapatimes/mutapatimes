@@ -26,6 +26,38 @@
     }
   } catch (e) {}
 
+  // ── Haptics ──────────────────────────────────────────────────────────
+  // Light tap feedback on any button/link. Cheap, and it's the difference
+  // between the UI *looking* native (CSS-styled to match) and *feeling*
+  // native, which a reviewer notices within seconds of tapping around.
+  var Haptics = P.Haptics;
+  function tapFeedback() {
+    if (!Haptics) return;
+    try { Haptics.impact({ style: "LIGHT" }); } catch (e) {}
+  }
+  if (Haptics) {
+    document.addEventListener("touchend", function (e) {
+      if (e.target.closest && e.target.closest("a, button")) tapFeedback();
+    }, { passive: true });
+  }
+
+  // ── Native share sheet ───────────────────────────────────────────────
+  // The site's primary share affordance is a WhatsApp-only button that
+  // opens wa.me in a new tab -- inside the app's WKWebView that's a dead
+  // end (no tab to open). Swap it for the real iOS share sheet, which
+  // WKWebView supports natively via the Web Share API and which includes
+  // WhatsApp as one of several options anyway.
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest && e.target.closest(".whatsapp-btn");
+    if (!btn || !navigator.share) return;
+    e.preventDefault();
+    e.stopPropagation();
+    tapFeedback();
+    var url = btn.getAttribute("data-share-url") || window.location.href;
+    var title = btn.getAttribute("data-share-title") || document.title;
+    navigator.share({ title: title, url: url }).catch(function () {});
+  }, true);
+
   // ── Push notifications (breaking-news alerts) ───────────────────────────
   // Primary: OneSignal (one service for both APNs + FCM, with a send
   // dashboard). Paste your OneSignal App ID below once the app is created.

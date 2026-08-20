@@ -1009,6 +1009,11 @@ var IMAGE_SHARE_ICON_SVG = '<svg viewBox="0 0 24 24" width="12" height="12" fill
 
 function createWhatsAppBtn(title, url) {
   var btn = $('<button class="whatsapp-btn" title="Share on WhatsApp">').html(WHATSAPP_ICON_SVG);
+  // Exposed as data attributes so the native app shell (js/native-bridge.js)
+  // can read the real title/url and hand off to the native share sheet
+  // instead of this button's wa.me link, which the app's WebView can't open.
+  btn.attr('data-share-title', title);
+  btn.attr('data-share-url', url);
   btn.on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
