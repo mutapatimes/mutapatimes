@@ -296,9 +296,11 @@
       "name": "Ngezi mine",
       "slug": "ngezi-mine",
       "wp": {
-        "products": "platinum",
+        "products": "Platinum, palladium, rhodium and other PGMs; nickel, copper and cobalt",
         "summary": "The Ngezi mine is a collection of underground mines located in the northern part of Zimbabwe in Mashonaland West Province. Ngezi represents one of the largest platinum reserves in Southern Africa having estimated reserves of 107.4 million oz of platinum. The mine produces around 200,000 oz of platinum/year.",
-        "wikipedia": "https://en.wikipedia.org/wiki/Ngezi_mine"
+        "wikipedia": "https://en.wikipedia.org/wiki/Ngezi_mine",
+        "operator_label": "Zimplats / Implats Group",
+        "location_label": "Ngezi, near Selous, Mashonaland West Province"
       }
     },
     {
