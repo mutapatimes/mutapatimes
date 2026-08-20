@@ -12,7 +12,7 @@ nightly cron updates the data file.
 import json, re, html
 from pathlib import Path
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "fx"
 OUT.mkdir(exist_ok=True)
 TODAY = "2026-05-22"

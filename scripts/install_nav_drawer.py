@@ -7,7 +7,7 @@ Idempotent: skip pages that already contain `id="navDrawer"`.
 import re
 from pathlib import Path
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 
 # Drawer markup — uses absolute /paths so it works at any directory depth.
 DRAWER = """<div class="nav-drawer-backdrop" data-close-drawer aria-hidden="true"></div>

@@ -19,7 +19,7 @@ Run:
 import json, html, datetime
 from pathlib import Path
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "flights"
 AIRPORTS_OUT = ROOT / "airports"   # airports moved out of /flights/ in May 2026
 AIRPORTS_OUT.mkdir(exist_ok=True)

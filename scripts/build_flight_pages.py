@@ -4,7 +4,7 @@ and update the /flights/ hub. Mirrors /flights/london-to-harare/ template."""
 import json, html
 from pathlib import Path
 
-ROOT = Path("/Users/valentineeluwasi/Documents/GitHub/mutapatimes")
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "flights"
 TODAY = "2026-05-23"
 
