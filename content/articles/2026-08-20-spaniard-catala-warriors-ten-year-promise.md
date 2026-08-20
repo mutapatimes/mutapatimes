@@ -51,7 +51,7 @@ Asked why the association reached for Spanish technical leadership, ZIFA pointed
 
 Catalá, for his part, said he was ready to embrace the responsibility of leading Zimbabwe and to work with the country's football structures to build a Warriors side capable of competing with the best on the continent.
 
-## What the CV actually shows
+## What the CV shows
 
 ZIFA credits its new man with more than three decades across Europe, Africa, Asia and the Middle East, citing "previous roles involving Celta Vigo, Espanyol, Real Zaragoza and Dynamo Kyiv," and adding that he "has also coached Nicaragua and held technical roles with Libya."
 
