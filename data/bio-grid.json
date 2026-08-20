@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-08-20T12:36:54+00:00",
+  "fetched_at": "2026-08-20T15:28:34+00:00",
   "count": 60,
   "tiles": [
     {
-      "kind": "news",
-      "title": "Passenger Ferry Capsizes On Zimbabwe’s Lake Kariba, Killing 94 In Country’s Deadliest Transport Disaster",
-      "link": "https://mutapatimes.com/articles/2026-08-20-passenger-ferry-capsizes-on-zimbabwes-lake-kariba-killing-94",
-      "image": "https://mutapatimes.com/img/cards/news/34c53781de4a.png",
-      "pubDate": "2026-08-20T09:27:40+00:00",
-      "category": "Tech"
+      "kind": "zse",
+      "title": "ZSE close 20 Aug 2026: All Share 479.9 (+0.20%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-20",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-20",
+      "pubDate": "2026-08-20T13:30:00+00:00",
+      "category": "Markets"
     },
     {
       "kind": "news",
@@ -20,22 +20,6 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe ferry disaster under scrutiny as death toll rises to 94",
-      "link": "https://mutapatimes.com/articles/2026-08-20-zimbabwe-ferry-disaster-under-scrutiny-as-death-toll-rises-t",
-      "image": "https://mutapatimes.com/img/cards/news/7aedda9a0c82.png",
-      "pubDate": "2026-08-20T09:09:29+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Hwange National Park’s wide horizons and restless wildlife",
-      "link": "https://mutapatimes.com/articles/2026-08-20-hwange-national-parks-wide-horizons-and-restless-wildlife",
-      "image": "https://mutapatimes.com/img/cards/news/afe46ad4addf.png",
-      "pubDate": "2026-08-20T06:26:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
       "title": "Hwange National Park’s wide horizons and restless wildlife",
       "link": "https://mutapatimes.com/news/2026-08-20-hwange-national-park-s-wide-horizons-and-restless-wildlife-49871c",
       "image": "https://mutapatimes.com/img/cards/news/1e1927c88db4.png",
@@ -44,10 +28,10 @@
     },
     {
       "kind": "news",
-      "title": "‘Not our war’: African families search for relatives recruited to Russia",
-      "link": "https://mutapatimes.com/articles/2026-08-19-not-our-war-african-families-search-for-relatives-recruited",
-      "image": "https://mutapatimes.com/img/cards/news/31295094e7a9.png",
-      "pubDate": "2026-08-19T23:10:00+00:00",
+      "title": "STANBIC BANK LAUNCHES CONVENIENT MOBILE WALLET PLATFORM.",
+      "link": "https://mutapatimes.com/articles/2026-08-19-stanbic-bank-launches-convenient-mobile-wallet-platform",
+      "image": "https://mutapatimes.com/img/cards/news/63d07aa427fc.png",
+      "pubDate": "2026-08-19T23:40:00+00:00",
       "category": "Business"
     },
     {
@@ -129,6 +113,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-19T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "St Anne's Hospital — MIDWIFE",
+      "link": "https://vacancymail.co.zw/jobs/midwife-68939/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fdb7dd062e8f.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SHR ENGINEERING (Graniteside)",
+      "link": "https://vacancymail.co.zw/jobs/shr-engineering-graniteside-68938/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f9f08d6592f8.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SHR Engineering (Graniteside)",
+      "link": "https://vacancymail.co.zw/jobs/shr-engineering-graniteside-68937/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b8c97877d26d.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "First Mutual Holdings Limited — Undertaker",
+      "link": "https://vacancymail.co.zw/jobs/undertaker-68936/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d7aeef902354.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "First Mutual Holdings Limited — Funeral Consultants",
+      "link": "https://vacancymail.co.zw/jobs/funeral-consultants-68935/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c8ae9f703d27.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimswitch Technologies — Marketing Assistant",
+      "link": "https://vacancymail.co.zw/jobs/marketing-assistant-68934/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9f4286e540db.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Auto Electrician",
+      "link": "https://vacancymail.co.zw/jobs/auto-electrician-68933/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c4588be60ee5.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Class 2 Builder",
+      "link": "https://vacancymail.co.zw/jobs/class-2-builder-68932/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1b48591a2f30.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Senior Assistant Librarian (4 posts) (Kwekwe Campus 2 posts, Zvishavane Campus 1 post, Gweru Campus 1 post)",
+      "link": "https://vacancymail.co.zw/jobs/senior-assistant-librarian-4-posts-kwekwe-campus-2-posts-zvishavane-campus-1-post-gweru-campus-1-post-68931/",
+      "image": "https://mutapatimes.com/img/cards/jobs/bb4185d1ff12.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Senior Library Assistant (2 posts)",
+      "link": "https://vacancymail.co.zw/jobs/senior-library-assistant-2-posts-68930/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d2ff53531cf0.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Zimbabwe Agricultural Development Trust — Terms of Reference (ToR) for the Consultancy Work to Conduct Access to Finance Institutional Diagnostic and Barrier Assessment of Participating Financial Institutions",
       "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-for-the-consultancy-work-to-conduct-access-to-finance-institutional-diagnostic-and-barrier-assessment-of-participating-financial-institutions-68865/",
       "image": "https://mutapatimes.com/img/cards/jobs/f80ddabb1dae.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "STORES CLERK",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-68864/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4bf7074f11e0.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Young Africa Zimbabwe — Procurement Officer",
-      "link": "https://vacancymail.co.zw/jobs/procurement-officer-68863/",
-      "image": "https://mutapatimes.com/img/cards/jobs/31afd88dcbb2.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Young Africa Zimbabwe — Finance Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-manager-68862/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f9d5cd101a2c.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "LEGAL AND COMPLIANCE OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/legal-and-compliance-officer-68861/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3c478baf476c.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Foods Holdings Limited — Unit Manager- Pasta Business Unit",
-      "link": "https://vacancymail.co.zw/jobs/unit-manager-pasta-business-unit-68860/",
-      "image": "https://mutapatimes.com/img/cards/jobs/130cb83ea34e.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mejrkh Communications & Media Advisory — Digital Media & IT Intern",
-      "link": "https://vacancymail.co.zw/jobs/digital-media-it-intern-68859/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1a3ac570bbf8.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CHENGETEDZAI DEPOSITORY COMPANY — GRADUATE TRAINEE POSITION FINANCE AND ADMIN",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-position-finance-and-admin-68858/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6e253c1b80e7.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Truck Driver",
-      "link": "https://vacancymail.co.zw/jobs/truck-driver-68857/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e554a86ded79.png",
       "pubDate": "2026-08-19T22:00:00+00:00",
       "category": "Jobs"
     }
