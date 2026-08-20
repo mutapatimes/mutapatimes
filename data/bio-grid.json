@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-08-20T18:31:13+00:00",
+  "fetched_at": "2026-08-20T21:22:53+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Zimbabwe Confident of Hitting IMF Targets Under Monitoring Pact",
-      "link": "https://mutapatimes.com/articles/2026-08-20-zimbabwe-confident-of-hitting-imf-targets-under-monitoring-p",
-      "image": "https://mutapatimes.com/img/cards/news/7ece24a91830.png",
-      "pubDate": "2026-08-20T15:18:51+00:00",
-      "category": "Business"
-    },
     {
       "kind": "zse",
       "title": "ZSE close 20 Aug 2026: All Share 479.9 (+0.20%)",
@@ -28,11 +20,83 @@
     },
     {
       "kind": "news",
-      "title": "Chief Murinye celebrates as Riverton Academy dispute takes another turn, vows to expose the chilling ‘Sabhuku Deal’",
-      "link": "https://mutapatimes.com/articles/2026-08-20-chief-murinye-celebrates-as-riverton-academy-dispute-takes-a",
-      "image": "https://mutapatimes.com/img/cards/news/f5a8ae73254e.png",
-      "pubDate": "2026-08-20T06:30:58+00:00",
+      "title": "Former Cabinet Minister shot dead by state security as political turmoil turns deadly",
+      "link": "https://mutapatimes.com/news/2026-08-20-former-cabinet-minister-shot-dead-by-state-security-as-political-turmoil-turns-957d94",
+      "image": "https://mutapatimes.com/img/cards/news/142142bc78b7.png",
+      "pubDate": "2026-08-20T08:56:22+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Police launch massive manhunt as Bulawayo man steals 16 cars worth over US$161,000",
+      "link": "https://mutapatimes.com/news/2026-08-20-police-launch-massive-manhunt-as-bulawayo-man-steals-16-cars-worth-over-us-161-0bd945",
+      "image": "https://mutapatimes.com/img/cards/news/468fe8b35e37.png",
+      "pubDate": "2026-08-20T08:21:09+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Gold moves to integrate artisanal miners at Freda Rebecca",
+      "link": "https://mutapatimes.com/articles/2026-08-20-mutapa-gold-moves-to-integrate-artisanal-miners-at-freda-reb",
+      "image": "https://mutapatimes.com/img/cards/news/19a197d8b1e7.png",
+      "pubDate": "2026-08-20T08:01:50+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Spaniard Catalá Handed the Warriors, and a Ten-Year Promise",
+      "link": "https://mutapatimes.com/articles/2026-08-20-spaniard-catala-warriors-ten-year-promise",
+      "image": "https://mutapatimes.com/img/cards/news/7adc3b13e68c.png",
+      "pubDate": "2026-08-20T08:00:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Chamisa - Setting the record straight",
+      "link": "https://mutapatimes.com/news/2026-08-20-chamisa-setting-the-record-straight-6a25de",
+      "image": "https://mutapatimes.com/img/cards/news/34dba2fbb9f2.png",
+      "pubDate": "2026-08-20T07:01:49+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mwonzora says Zimbabwe opposition unity is a 'myth'",
+      "link": "https://mutapatimes.com/news/2026-08-20-mwonzora-says-zimbabwe-opposition-unity-is-a-myth-1a651f",
+      "image": "https://mutapatimes.com/img/cards/news/ef7d9c9d773a.png",
+      "pubDate": "2026-08-20T06:54:44+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Tynwald Worker Faces ZAR260,000 Theft Charge Over Ford Ranger Deal",
+      "link": "https://mutapatimes.com/news/2026-08-20-tynwald-worker-faces-zar260-000-theft-charge-over-ford-ranger-deal-e0ea80",
+      "image": "https://mutapatimes.com/img/cards/news/011197335625.png",
+      "pubDate": "2026-08-20T06:52:49+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mugabe was a baby when it comes to dictatorship and tyranny, says Chamisa",
+      "link": "https://mutapatimes.com/news/2026-08-20-mugabe-was-a-baby-when-it-comes-to-dictatorship-and-tyranny-says-chamisa-b320da",
+      "image": "https://mutapatimes.com/img/cards/news/28da5d30dba6.png",
+      "pubDate": "2026-08-20T06:39:54+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe drivers request minimum qualification for driving",
+      "link": "https://mutapatimes.com/news/2026-08-20-zimbabwe-drivers-request-minimum-qualification-for-driving-250315",
+      "image": "https://mutapatimes.com/img/cards/news/8c187f6027ac.png",
+      "pubDate": "2026-08-20T06:37:12+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Cop arrested after violent clash with council policeman",
+      "link": "https://mutapatimes.com/news/2026-08-20-cop-arrested-after-violent-clash-with-council-policeman-3d1991",
+      "image": "https://mutapatimes.com/img/cards/news/a4f8c1e5f9d6.png",
+      "pubDate": "2026-08-20T06:36:31+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -61,34 +125,10 @@
     {
       "kind": "news",
       "title": "Pope Leo XIV sends condolences to Zimbabwe after Lake Kariba ferry disaster",
-      "link": "https://mutapatimes.com/articles/2026-08-20-pope-leo-xiv-sends-condolences-to-zimbabwe-after-lake-kariba",
-      "image": "https://mutapatimes.com/img/cards/news/326925e50575.png",
-      "pubDate": "2026-08-20T06:11:36+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Pope Leo XIV sends condolences to Zimbabwe after Lake Kariba ferry disaster",
       "link": "https://mutapatimes.com/news/2026-08-20-pope-leo-xiv-sends-condolences-to-zimbabwe-after-lake-kariba-ferry-disaster-077eba",
       "image": "https://mutapatimes.com/img/cards/news/92cea0830e38.png",
       "pubDate": "2026-08-20T06:11:36+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "One body remains unclaimed at Kariba Hospital two weeks after Kariba ferry disaster",
-      "link": "https://mutapatimes.com/articles/2026-08-20-one-body-remains-unclaimed-at-kariba-hospital-two-weeks-afte",
-      "image": "https://mutapatimes.com/img/cards/news/24da7e55081d.png",
-      "pubDate": "2026-08-20T06:10:38+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Zim PSL 2026 Matchday 27 fixture info: Simba Bhora host Scottland",
-      "link": "https://mutapatimes.com/articles/2026-08-20-zim-psl-2026-matchday-27-fixture-info-simba-bhora-host-scott",
-      "image": "https://mutapatimes.com/img/cards/news/97eeb78fe836.png",
-      "pubDate": "2026-08-20T06:10:00+00:00",
-      "category": "Sport"
     },
     {
       "kind": "news",
@@ -97,14 +137,6 @@
       "image": "https://mutapatimes.com/img/cards/news/7f0121053395.png",
       "pubDate": "2026-08-20T06:10:00+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "VP Mohadi calls for specialist medical investment",
-      "link": "https://mutapatimes.com/articles/2026-08-20-vp-mohadi-calls-for-specialist-medical-investment",
-      "image": "https://mutapatimes.com/img/cards/news/48a3a4705f1c.png",
-      "pubDate": "2026-08-20T06:02:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -185,6 +217,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-19T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Administrative Assistant/ Receptionist",
+      "link": "https://vacancymail.co.zw/jobs/administrative-assistant-receptionist-68942/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9efdc096b563.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "MSF Médecins Sans Frontières International — Nurse Mentor",
+      "link": "https://vacancymail.co.zw/jobs/nurse-mentor-68941/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e116f3e866c9.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Samrec Vermiculite Zimbabwe (Pvt) Ltd — Class 1 Diesel Plant Fitter",
+      "link": "https://vacancymail.co.zw/jobs/class-1-diesel-plant-fitter-68940/",
+      "image": "https://mutapatimes.com/img/cards/jobs/62f00aa76d4a.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Admin Assistant",
+      "link": "https://vacancymail.co.zw/jobs/admin-assistant-68938/",
+      "image": "https://mutapatimes.com/img/cards/jobs/229c1a588886.png",
+      "pubDate": "2026-08-19T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Quantity Surveyor",
       "link": "https://vacancymail.co.zw/jobs/quantity-surveyor-68897/",
       "image": "https://mutapatimes.com/img/cards/jobs/009fb1883620.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gokwe North Rural District Council — Executive Officer Housing and Social Services",
-      "link": "https://vacancymail.co.zw/jobs/executive-officer-housing-and-social-services-68881/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b4db06bb140.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Claremont Business School — Personal Assistant to the Managing Director",
-      "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-the-managing-director-68880/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ea409e2d560.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Marketing Officer- Agricultural Equipment",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-officer-agricultural-equipment-68879/",
-      "image": "https://mutapatimes.com/img/cards/jobs/47547cd161df.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Nurse Counsellor",
-      "link": "https://vacancymail.co.zw/jobs/nurse-counsellor-68878/",
-      "image": "https://mutapatimes.com/img/cards/jobs/51ab2e3d1668.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MEMBERSHIP AND BILLING CLERK",
-      "link": "https://vacancymail.co.zw/jobs/membership-and-billing-clerk-68877/",
-      "image": "https://mutapatimes.com/img/cards/jobs/36702085eafe.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TechVista Academy — PERSONAL ASSISTANT TO THE MANAGING DIRECTOR",
-      "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-the-managing-director-68876/",
-      "image": "https://mutapatimes.com/img/cards/jobs/64ed773c9140.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CLAIMS CLERK / ADJUDICATOR",
-      "link": "https://vacancymail.co.zw/jobs/claims-clerk-adjudicator-68875/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ebbc64be2198.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Receptionist/ Cashier",
-      "link": "https://vacancymail.co.zw/jobs/receptionist-cashier-68874/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7a95b219aa8b.png",
       "pubDate": "2026-08-19T22:00:00+00:00",
       "category": "Jobs"
     }
