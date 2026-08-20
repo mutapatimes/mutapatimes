@@ -157,8 +157,11 @@
       "name": "Globe and Phoenix Mine",
       "slug": "globe-and-phoenix-mine",
       "wp": {
-        "summary": "Globe and Phoenix Mine is a gold mine in Zimbabwe. It is just outside Kwekwe CBD.",
-        "wikipedia": "https://en.wikipedia.org/wiki/Globe_and_Phoenix_Mine"
+        "summary": "One of Zimbabwe's most famous historic gold mines. It produced more than 4.2 million ounces of gold over its lifetime and is closely associated with the development of Kwekwe. ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Globe_and_Phoenix_Mine",
+        "operator_label": "Globe and Phoenix Mining Company",
+        "location_label": " Kwekwe ,Midlands Province",
+        "products": "gold"
       }
     },
     {
