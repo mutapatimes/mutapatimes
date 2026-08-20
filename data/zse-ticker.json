@@ -1,9 +1,17 @@
 {
-  "fetched_at": "2026-08-20T15:51:03.039563+00:00",
+  "fetched_at": "2026-08-20T16:53:58.491118+00:00",
   "source": "https://www.african-markets.com/en/stock-markets/zse/listed-companies",
   "exchange": "ZSE",
   "currency": "ZWG",
   "tickers": [
+    {
+      "company": "RioZim",
+      "sector": "Basic Materials",
+      "price": "0.8525",
+      "day_change": "",
+      "ytd": "+31.15%",
+      "mcap_b": 0.1
+    },
     {
       "company": "CBZ Holdings",
       "sector": "Financials",
@@ -13,36 +21,12 @@
       "mcap_b": 20.86
     },
     {
-      "company": "Delta Corporation",
-      "sector": "Consumer Goods",
-      "price": "32.372",
-      "day_change": "0.09%",
-      "ytd": "+56.37%",
-      "mcap_b": 43.62
-    },
-    {
-      "company": "First Mutual Holdings",
+      "company": "ZB Financial Holdings",
       "sector": "Financials",
-      "price": "3.35",
-      "day_change": "",
-      "ytd": "+17.54%",
-      "mcap_b": 2.31
-    },
-    {
-      "company": "OK Zimbabwe",
-      "sector": "Consumer Services",
-      "price": "0.113694",
-      "day_change": "",
-      "ytd": "-12.54%",
-      "mcap_b": 0.36
-    },
-    {
-      "company": "Nampak Zimbabwe",
-      "sector": "Industrials",
-      "price": "0.9595",
-      "day_change": "",
-      "ytd": "+19.94%",
-      "mcap_b": 0.72
+      "price": "6.815",
+      "day_change": "2.32%",
+      "ytd": "+51.44%",
+      "mcap_b": 1.19
     },
     {
       "company": "Meikles",
@@ -51,22 +35,6 @@
       "day_change": "",
       "ytd": "-20.28%",
       "mcap_b": 0.64
-    },
-    {
-      "company": "Hippo Valley Estates",
-      "sector": "Consumer Goods",
-      "price": "10.75",
-      "day_change": "",
-      "ytd": "+31.60%",
-      "mcap_b": 2.07
-    },
-    {
-      "company": "FBC Holdings",
-      "sector": "Financials",
-      "price": "13.5",
-      "day_change": "",
-      "ytd": "+8.43%",
-      "mcap_b": 9.07
     },
     {
       "company": "British American Tobacco Zimbabwe",
@@ -85,20 +53,36 @@
       "mcap_b": 5.36
     },
     {
-      "company": "ZB Financial Holdings",
-      "sector": "Financials",
-      "price": "6.815",
-      "day_change": "2.32%",
-      "ytd": "+51.44%",
-      "mcap_b": 1.19
+      "company": "OK Zimbabwe",
+      "sector": "Consumer Services",
+      "price": "0.113694",
+      "day_change": "",
+      "ytd": "-12.54%",
+      "mcap_b": 0.36
     },
     {
-      "company": "RioZim",
-      "sector": "Basic Materials",
-      "price": "0.8525",
+      "company": "Nampak Zimbabwe",
+      "sector": "Industrials",
+      "price": "0.9595",
       "day_change": "",
-      "ytd": "+31.15%",
-      "mcap_b": 0.1
+      "ytd": "+19.94%",
+      "mcap_b": 0.72
+    },
+    {
+      "company": "First Mutual Holdings",
+      "sector": "Financials",
+      "price": "3.35",
+      "day_change": "",
+      "ytd": "+17.54%",
+      "mcap_b": 2.31
+    },
+    {
+      "company": "Hippo Valley Estates",
+      "sector": "Consumer Goods",
+      "price": "10.75",
+      "day_change": "",
+      "ytd": "+31.60%",
+      "mcap_b": 2.07
     },
     {
       "company": "Zimre Holdings",
@@ -107,6 +91,22 @@
       "day_change": "",
       "ytd": "-4.99%",
       "mcap_b": 1.72
+    },
+    {
+      "company": "FBC Holdings",
+      "sector": "Financials",
+      "price": "13.5",
+      "day_change": "",
+      "ytd": "+8.43%",
+      "mcap_b": 9.07
+    },
+    {
+      "company": "Delta Corporation",
+      "sector": "Consumer Goods",
+      "price": "32.372",
+      "day_change": "0.09%",
+      "ytd": "+56.37%",
+      "mcap_b": 43.62
     },
     {
       "company": "Lafarge Cement Zimbabwe",
