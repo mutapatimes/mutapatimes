@@ -23,7 +23,7 @@
       "name": "Bikita Minerals",
       "slug": "bikita-minerals",
       "wp": {
-        "products": "Lithium",
+        "products": "Lithium, tantalum, beryllium, rubidium",
         "summary": "The Bikita mine is the largest lithium mine in Zimbabwe. The privately owned company holds the world’s largest-known deposit of lithium at approximately 11 million tonnes. The mine is located in southern Zimbabwe in Masvingo Province. The Bikita mine has reserves amounting to 10.8 million tonnes of lithium ore grading 1.4% lithium thus resulting 0.15 million tonnes of lithium.",
         "wikipedia": "https://en.wikipedia.org/wiki/Bikita_mine",
         "image": {
@@ -32,7 +32,9 @@
           "artist": "Kaethe17",
           "commons_page": "https://commons.wikimedia.org/wiki/File:Bikitait.jpg",
           "local": "/img/mining/bikita-minerals.jpg"
-        }
+        },
+        "operator_label": "Sinomine Resource Group / Bikita Minerals (Private) Limited",
+        "location_label": "Masvingo Province, Zimbabwe"
       }
     },
     {
