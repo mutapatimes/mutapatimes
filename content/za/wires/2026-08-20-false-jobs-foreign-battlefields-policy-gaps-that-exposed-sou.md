@@ -1,0 +1,16 @@
+---
+title: "False jobs, foreign battlefields: Policy gaps that exposed South Africans"
+date: 2026-08-20T20:38:26.000Z
+author: Daily Maverick
+category: Policy
+image: 
+summary: "False jobs, foreign battlefields: Policy gaps that exposed South Africans"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirwJBVV95cUxNYTI3WE96ZXhCUDdwcGNGLUJnNXN5OUwxVk9RS1Q1MEJxeGptOFdnS1p6dGw5ZWNTQ2daZ2Rua2MzOFJNa1RzYjIzaDhyemk4ek1jUHBiak1FMDVIRlQzSTBHakNXUFNHZ1FQcDhkMUk3XzNuT2ZZaG92Mno1c0RzYzdpNWZiQmJ4Zi01ejY5TkZLTTc5N0hZczhZamJJZFpjeXl5bHJjODFnUzdfMHBFTEowT3p5ZXd1ckJzSFhBMkNGNzczcjVoSTJhQVNxWTR6TDJVM2hmQ01iWkJXZE9CbTBqMnVkVm5EUUxGaVUzLWtVMDN1eTVRbUs1WjBjaVJDcmFmV3R1bGkwZHd4NnFrMGdZV1NrRDRaaXFxV1pha2FIMlFycTdaXzJsWndZS2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirwJBVV95cUxNYTI3WE96ZXhCUDdwcGNGLUJnNXN5OUwxVk9RS1Q1MEJxeGptOFdnS1p6dGw5ZWNTQ2daZ2Rua2MzOFJNa1RzYjIzaDhyemk4ek1jUHBiak1FMDVIRlQzSTBHakNXUFNHZ1FQcDhkMUk3XzNuT2ZZaG92Mno1c0RzYzdpNWZiQmJ4Zi01ejY5TkZLTTc5N0hZczhZamJJZFpjeXl5bHJjODFnUzdfMHBFTEowT3p5ZXd1ckJzSFhBMkNGNzczcjVoSTJhQVNxWTR6TDJVM2hmQ01iWkJXZE9CbTBqMnVkVm5EUUxGaVUzLWtVMDN1eTVRbUs1WjBjaVJDcmFmV3R1bGkwZHd4NnFrMGdZV1NrRDRaaXFxV1pha2FIMlFycTdaXzJsWndZS2c?oc=5)
