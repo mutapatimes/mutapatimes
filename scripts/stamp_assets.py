@@ -16,10 +16,12 @@ Usage:  python3 scripts/stamp_assets.py
 import os
 import re
 import sys
+import json
 import hashlib
 import glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CACHE_FILE = os.path.join(ROOT, "data", "asset-versions.json")
 
 # asset path (relative to repo root)  ->  reference substring used in HTML
 ASSETS = {
@@ -65,6 +67,25 @@ def main():
         print("No assets to stamp.")
         return
     print("Asset versions:", ", ".join(f"{k}={v}" for k, v in versions.items()))
+
+    # This script is the unconditional last step of four different CI
+    # workflows (fetch-news, fetch-news-regions, rebuild-articles,
+    # rebuild-microsites), each running many times a day. A full walk over
+    # every HTML file in the repo (30,000+, growing) took 3+ minutes locally
+    # and was silently eating most of each workflow's timeout budget on CI's
+    # slower runners -- rebuild-microsites was getting killed by its 10-minute
+    # timeout on every single run before it ever reached the commit step.
+    # Since the substitution is a guaranteed no-op whenever these hashes
+    # haven't changed since the last run, skip the walk entirely in that case.
+    try:
+        with open(CACHE_FILE) as f:
+            cached = json.load(f)
+    except (OSError, ValueError):
+        cached = None
+    if cached == versions:
+        print("Asset versions unchanged since last run -- nothing to stamp.")
+        return
+
     pats = build_patterns(versions)
 
     changed = scanned = 0
@@ -86,6 +107,10 @@ def main():
                 open(fp, "w", encoding="utf-8").write(new)
                 changed += 1
     print(f"Done. Scanned {scanned} HTML files, stamped {changed}.")
+
+    os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
+    with open(CACHE_FILE, "w") as f:
+        json.dump(versions, f, indent=2)
 
 
 if __name__ == "__main__":

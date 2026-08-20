@@ -158,7 +158,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add flights/ airports/ schools/ zse/ mining/ cooking/ data/mines.json moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
+          git add flights/ airports/ schools/ zse/ mining/ cooking/ data/mines.json data/asset-versions.json moving-to-zimbabwe/sim-card-and-mobile.html 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Nothing to commit — builders produced no HTML diff."
           else

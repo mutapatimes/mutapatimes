@@ -81,7 +81,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           R="${{ matrix.region }}"
-          git add "data/$R/" "content/$R/" "$R/" "img/cards/$R/"
+          git add "data/$R/" "content/$R/" "$R/" "img/cards/$R/" data/asset-versions.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update $R news data + feed cards [automated]"
             # stamp_assets rewrites ALL HTML (incl. Zimbabwe's) but we only
