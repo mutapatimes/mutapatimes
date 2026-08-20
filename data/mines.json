@@ -346,8 +346,11 @@
       "name": "Shabanie Mine",
       "slug": "shabanie-mine",
       "wp": {
-        "summary": "Shabanie Mine is a Zimbabwean football club based in Zvishavane. They play in the ZIFA Division One Central Region.",
-        "wikipedia": "https://en.wikipedia.org/wiki/Shabanie_Mine"
+        "summary": "Historically one of Zimbabwe and Africa's major asbestos mines. Production declined substantially because of financial, operational and market difficulties",
+        "wikipedia": "https://en.wikipedia.org/wiki/Shabanie_Mine",
+        "operator_label": "Shabanie-Mashava Mines / historical government-associated operators",
+        "location_label": "Zvishavane, Midlands Province",
+        "products": "Chrysotile asbestos"
       }
     },
     {
