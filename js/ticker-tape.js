@@ -37,7 +37,11 @@
     s.textContent = [
       "#mt-ticker{background:#141414;color:#f5e8c8;overflow:hidden;position:relative;",
       "  border-bottom:1px solid rgba(245,232,200,.14);font-family:'Inter',system-ui,sans-serif;",
-      "  height:34px;display:flex;align-items:center;}",
+      "  height:34px;display:flex;align-items:center;",
+      // Clears the iOS status bar/notch when this page loads inside the
+      // native app's edge-to-edge WKWebView (viewport-fit=cover). Resolves
+      // to 0 in a normal browser, so this is always safe to include.
+      "  padding-top:env(safe-area-inset-top,0px);box-sizing:content-box;}",
       "#mt-ticker .mt-tk-tag{flex:0 0 auto;z-index:2;background:#c41e1e;color:#fff;font-weight:800;",
       "  font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:0 12px;height:34px;",
       "  display:flex;align-items:center;text-decoration:none;}",
