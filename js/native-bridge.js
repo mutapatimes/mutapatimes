@@ -14,6 +14,18 @@
   // Status bar to match the dark masthead.
   try { P.StatusBar && P.StatusBar.setStyle({ style: "DARK" }); } catch (e) {}
 
+  // The cookie-consent banner's copy is written for the website ("this
+  // site") and is baked as static HTML into every page, so it reads wrong
+  // inside the app shell. Reword it here instead of hand-editing every page.
+  try {
+    var consentP = document.querySelector("#cookieConsent p");
+    if (consentP) {
+      consentP.innerHTML = consentP.innerHTML
+        .replace("This site uses cookies", "This app uses cookies")
+        .replace("continuing to use this site", "continuing to use this app");
+    }
+  } catch (e) {}
+
   // ── Push notifications (breaking-news alerts) ───────────────────────────
   // Primary: OneSignal (one service for both APNs + FCM, with a send
   // dashboard). Paste your OneSignal App ID below once the app is created.
