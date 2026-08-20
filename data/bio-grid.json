@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-20T15:28:34+00:00",
+  "fetched_at": "2026-08-20T18:31:13+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Confident of Hitting IMF Targets Under Monitoring Pact",
+      "link": "https://mutapatimes.com/articles/2026-08-20-zimbabwe-confident-of-hitting-imf-targets-under-monitoring-p",
+      "image": "https://mutapatimes.com/img/cards/news/7ece24a91830.png",
+      "pubDate": "2026-08-20T15:18:51+00:00",
+      "category": "Business"
+    },
     {
       "kind": "zse",
       "title": "ZSE close 20 Aug 2026: All Share 479.9 (+0.20%)",
@@ -20,6 +28,30 @@
     },
     {
       "kind": "news",
+      "title": "Chief Murinye celebrates as Riverton Academy dispute takes another turn, vows to expose the chilling ‘Sabhuku Deal’",
+      "link": "https://mutapatimes.com/articles/2026-08-20-chief-murinye-celebrates-as-riverton-academy-dispute-takes-a",
+      "image": "https://mutapatimes.com/img/cards/news/f5a8ae73254e.png",
+      "pubDate": "2026-08-20T06:30:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chief Murinye celebrates as Riverton Academy dispute takes another turn, vows to expose the chilling ‘Sabhuku Deal’",
+      "link": "https://mutapatimes.com/news/2026-08-20-chief-murinye-celebrates-as-riverton-academy-dispute-takes-another-turn-vows-to-768dd7",
+      "image": "https://mutapatimes.com/img/cards/news/3a158f35ef80.png",
+      "pubDate": "2026-08-20T06:30:58+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa caps 3,495 at CUT graduation; Home Affairs minister Kazembe, Prisons boss Chihobvu earn PhDs",
+      "link": "https://mutapatimes.com/news/2026-08-20-mnangagwa-caps-3-495-at-cut-graduation-home-affairs-minister-kazembe-prisons-d7c18d",
+      "image": "https://mutapatimes.com/img/cards/news/7c54d405499e.png",
+      "pubDate": "2026-08-20T06:26:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
       "title": "Hwange National Park’s wide horizons and restless wildlife",
       "link": "https://mutapatimes.com/news/2026-08-20-hwange-national-park-s-wide-horizons-and-restless-wildlife-49871c",
       "image": "https://mutapatimes.com/img/cards/news/1e1927c88db4.png",
@@ -28,10 +60,50 @@
     },
     {
       "kind": "news",
-      "title": "STANBIC BANK LAUNCHES CONVENIENT MOBILE WALLET PLATFORM.",
-      "link": "https://mutapatimes.com/articles/2026-08-19-stanbic-bank-launches-convenient-mobile-wallet-platform",
-      "image": "https://mutapatimes.com/img/cards/news/63d07aa427fc.png",
-      "pubDate": "2026-08-19T23:40:00+00:00",
+      "title": "Pope Leo XIV sends condolences to Zimbabwe after Lake Kariba ferry disaster",
+      "link": "https://mutapatimes.com/articles/2026-08-20-pope-leo-xiv-sends-condolences-to-zimbabwe-after-lake-kariba",
+      "image": "https://mutapatimes.com/img/cards/news/326925e50575.png",
+      "pubDate": "2026-08-20T06:11:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Pope Leo XIV sends condolences to Zimbabwe after Lake Kariba ferry disaster",
+      "link": "https://mutapatimes.com/news/2026-08-20-pope-leo-xiv-sends-condolences-to-zimbabwe-after-lake-kariba-ferry-disaster-077eba",
+      "image": "https://mutapatimes.com/img/cards/news/92cea0830e38.png",
+      "pubDate": "2026-08-20T06:11:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "One body remains unclaimed at Kariba Hospital two weeks after Kariba ferry disaster",
+      "link": "https://mutapatimes.com/articles/2026-08-20-one-body-remains-unclaimed-at-kariba-hospital-two-weeks-afte",
+      "image": "https://mutapatimes.com/img/cards/news/24da7e55081d.png",
+      "pubDate": "2026-08-20T06:10:38+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zim PSL 2026 Matchday 27 fixture info: Simba Bhora host Scottland",
+      "link": "https://mutapatimes.com/articles/2026-08-20-zim-psl-2026-matchday-27-fixture-info-simba-bhora-host-scott",
+      "image": "https://mutapatimes.com/img/cards/news/97eeb78fe836.png",
+      "pubDate": "2026-08-20T06:10:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Zim PSL 2026 Matchday 27 fixture info: Simba Bhora host Scottland",
+      "link": "https://mutapatimes.com/news/2026-08-20-zim-psl-2026-matchday-27-fixture-info-simba-bhora-host-scottland-5a31db",
+      "image": "https://mutapatimes.com/img/cards/news/7f0121053395.png",
+      "pubDate": "2026-08-20T06:10:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "VP Mohadi calls for specialist medical investment",
+      "link": "https://mutapatimes.com/articles/2026-08-20-vp-mohadi-calls-for-specialist-medical-investment",
+      "image": "https://mutapatimes.com/img/cards/news/48a3a4705f1c.png",
+      "pubDate": "2026-08-20T06:02:00+00:00",
       "category": "Business"
     },
     {
@@ -407,78 +479,6 @@
       "title": "Receptionist/ Cashier",
       "link": "https://vacancymail.co.zw/jobs/receptionist-cashier-68874/",
       "image": "https://mutapatimes.com/img/cards/jobs/7a95b219aa8b.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CMED Private Limited — Booking Clerk x 1 – Gwanda Station Grade: 6",
-      "link": "https://vacancymail.co.zw/jobs/booking-clerk-x-1-gwanda-station-grade-6-68873/",
-      "image": "https://mutapatimes.com/img/cards/jobs/45a47e29e8d8.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing, Communications & Partnerships Assistant",
-      "link": "https://vacancymail.co.zw/jobs/marketing-communications-partnerships-assistant-68872/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3b6428eb10ee.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "World Wide Fund for Nature (WWF) — Wildlife Intern (GIS remote sensing and Citizen Science)",
-      "link": "https://vacancymail.co.zw/jobs/wildlife-intern-gis-remote-sensing-and-citizen-science-68871/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6079ea37127e.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tsuro Trust — Participatory Action Research (PAR) Accompaniment Consultancy",
-      "link": "https://vacancymail.co.zw/jobs/participatory-action-research-par-accompaniment-consultancy-68870/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3fd2d38bf9b7.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Warehouse Clerk",
-      "link": "https://vacancymail.co.zw/jobs/warehouse-clerk-68869/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2939fd6b1b1b.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales & Digital Marketer",
-      "link": "https://vacancymail.co.zw/jobs/sales-digital-marketer-68868/",
-      "image": "https://mutapatimes.com/img/cards/jobs/16e84376b162.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "STUDENT ATTACHEE – LIVESTOCK PRODUCTION AND DEVELOPMENT",
-      "link": "https://vacancymail.co.zw/jobs/student-attachee-livestock-production-and-development-68867/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7c2b18cdd73e.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Digital Marketing Graduate Trainee: Bulawayo",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-digital-marketing-graduate-trainee-bulawayo-68866/",
-      "image": "https://mutapatimes.com/img/cards/jobs/94a9b4014df9.png",
-      "pubDate": "2026-08-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Agricultural Development Trust — Terms of Reference (ToR) for the Consultancy Work to Conduct Access to Finance Institutional Diagnostic and Barrier Assessment of Participating Financial Institutions",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-for-the-consultancy-work-to-conduct-access-to-finance-institutional-diagnostic-and-barrier-assessment-of-participating-financial-institutions-68865/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f80ddabb1dae.png",
       "pubDate": "2026-08-19T22:00:00+00:00",
       "category": "Jobs"
     }
