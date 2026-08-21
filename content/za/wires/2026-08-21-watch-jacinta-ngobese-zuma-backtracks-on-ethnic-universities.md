@@ -1,0 +1,16 @@
+---
+title: "WATCH | Jacinta Ngobese-Zuma backtracks on ethnic universities proposal after backlash"
+date: 2026-08-21T10:34:41.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "WATCH | Jacinta Ngobese-Zuma backtracks on ethnic universities proposal after backlash"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPM2lYNUhRLUJwal9LRU5lc3IxTFVJNEZmaFZzU0VjQ0g2WC1sMDBKMDU0R2V1VGd5ZjE1ZXRzMzJhb1RKazRfa3k0SGVRTjVOeUZLaWpxOUNiZlFGRlltSFRwWGVHRURkQ1pUX2dib0lyZ0tsWnhiQWxMczlXbXhHSE11cHAyWHB4OVNWQlBFTGRfUHVscVlFMDVXSF9vVzc0OTAwejVpekFvUHFjakZVVWQxWHhMMzVQWTVha0EzRGRXdmtlc3luTGFrWU5Da1NjcG1zaHV2eDY0dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPM2lYNUhRLUJwal9LRU5lc3IxTFVJNEZmaFZzU0VjQ0g2WC1sMDBKMDU0R2V1VGd5ZjE1ZXRzMzJhb1RKazRfa3k0SGVRTjVOeUZLaWpxOUNiZlFGRlltSFRwWGVHRURkQ1pUX2dib0lyZ0tsWnhiQWxMczlXbXhHSE11cHAyWHB4OVNWQlBFTGRfUHVscVlFMDVXSF9vVzc0OTAwejVpekFvUHFjakZVVWQxWHhMMzVQWTVha0EzRGRXdmtlc3luTGFrWU5Da1NjcG1zaHV2eDY0dw?oc=5)
