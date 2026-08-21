@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 18:29:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 18:55:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -199,18 +199,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/192fefa72243.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 120,000 — Mainway Meadows (Mainway Meadows, Harare South)</title>
-      <link>https://mutapatimes.com/property-landing/791d053049f5.html</link>
-      <description>USD 120,000 — Mainway Meadows, Harare South. 4 beds. Mainway Meadows. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 20 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/791d053049f5.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/791d053049f5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/791d053049f5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/791d053049f5.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 390,000 — Prime location (Belvedere, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/54d6f81b627b.html</link>
       <description>USD 390,000 — Belvedere, Harare West. 4 beds, 3 baths. Prime location. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/52d671bed9c8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/52d671bed9c8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/52d671bed9c8.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 200,000 — 3 Bedroomed House in Newton West for sale (Newton West, Bulawayo South)</title>
+      <link>https://mutapatimes.com/property-landing/f40af265a745.html</link>
+      <description>USD 200,000 — Newton West, Bulawayo South. 3 beds, 1 bath. 3 Bedroomed House in Newton West for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 20 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/f40af265a745.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/f40af265a745.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f40af265a745.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/f40af265a745.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
