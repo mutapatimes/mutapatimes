@@ -1,0 +1,16 @@
+---
+title: "Forty years of Graceland: How Paul Simon and the SA music industry created a masterpiece"
+date: 2026-08-19T07:00:00.000Z
+author: Daily Maverick
+category: Culture
+image: 
+summary: "Forty years of Graceland: How Paul Simon and the SA music industry created a masterpiece"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMingJBVV95cUxNcTczeU9uQlB6OGhQRmZxNkRNVlA4N0NjNVNOS3l2Z1R2UFg0RXVma1hTTno2bEtGcU51MVpiOTg3dEhZY1JNQ2ZNN0sxTWY5cDhxbGRWQXdDd3RwVmlYc0VuRmNGWE5WRDlaYW1QRFNmRlZXV3lCdHRIUjFQd0RYNFQtdHpVaGJOcEtaMjhlbmJ6WFVwb1B2cTlIU3BKVmpKemVzelM2RTZSclUyaVMzNk1rNlpmbWI0QjViMUNfblZVc2NWTFoxMVZzeHNiR1Nyc2ZmT056cGFzelZXRXoyQjY1dXF6WUV5dGE0SzZvUUFKclh3S2RGR2VZUzA1S1ZQUkQ1VEo1ZlhWdGljamEtaXhvenZlSkJWaWpYcll3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMingJBVV95cUxNcTczeU9uQlB6OGhQRmZxNkRNVlA4N0NjNVNOS3l2Z1R2UFg0RXVma1hTTno2bEtGcU51MVpiOTg3dEhZY1JNQ2ZNN0sxTWY5cDhxbGRWQXdDd3RwVmlYc0VuRmNGWE5WRDlaYW1QRFNmRlZXV3lCdHRIUjFQd0RYNFQtdHpVaGJOcEtaMjhlbmJ6WFVwb1B2cTlIU3BKVmpKemVzelM2RTZSclUyaVMzNk1rNlpmbWI0QjViMUNfblZVc2NWTFoxMVZzeHNiR1Nyc2ZmT056cGFzelZXRXoyQjY1dXF6WUV5dGE0SzZvUUFKclh3S2RGR2VZUzA1S1ZQUkQ1VEo1ZlhWdGljamEtaXhvenZlSkJWaWpYcll3?oc=5)
