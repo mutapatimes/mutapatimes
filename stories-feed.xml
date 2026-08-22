@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Aug 2026 18:52:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 21:17:58 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Ramaphosa praises Zimbabwe’s infrastructure drive, urges stronger trade ties</title>
+      <link>https://mutapatimes.com/stories/766c364ca605.html</link>
+      <description>Ramaphosa praises Zimbabwe’s infrastructure progress and calls for stronger trade ties between South Africa and its northern neighbour. The post Ramaphosa praises Zimbabwe’s infrastructure drive, urges stronger trade ties appeared first on iHarare News. #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Sat, 22 Aug 2026 07:59:06 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/766c364ca605.html</guid>
+      <category>Business</category>
+      <dc:creator>Iharare News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/766c364ca605.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/766c364ca605.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/766c364ca605.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Proposed 640MW power plant to bolster Zimbabwe’s energy security @zimsituation</title>
       <link>https://mutapatimes.com/stories/9e40cdf93875.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/009fb1883620.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/009fb1883620.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/009fb1883620.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Gokwe North Rural District Council — Executive Officer Housing and Social Services</title>
-      <link>https://mutapatimes.com/stories/1b4db06bb140.html</link>
-      <description>Applications are invited to fill in the following critical posts which have arise in the following departments. EXECUTIVE OFFICER HOUSING AND SOCIAL SERVICES: (GRADE 10) Gokwe · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 21 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/1b4db06bb140.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Gokwe North Rural District Council</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/1b4db06bb140.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
