@@ -56,10 +56,10 @@
           "currency": ""
         },
         {
-          "price": 837,
-          "airline": "KQ",
-          "departure_at": "2026-12-27",
-          "return_at": "2027-01-15",
+          "price": 863,
+          "airline": "WB",
+          "departure_at": "2026-12-07",
+          "return_at": "2026-12-31",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -143,7 +143,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 18,
+          "n": 19,
           "error": null
         },
         {
@@ -167,11 +167,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 18,
+          "n": 19,
           "error": null
         }
       ],
-      "observations": 48
+      "observations": 51
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -533,6 +533,15 @@
           "stops": 1,
           "duration": 645,
           "currency": ""
+        },
+        {
+          "price": 2184,
+          "airline": "WB",
+          "departure_at": "2026-12-11",
+          "return_at": "2027-01-02",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "by_airline": [
@@ -553,19 +562,28 @@
           "stops": 1,
           "duration": 980,
           "currency": ""
+        },
+        {
+          "price": 2185,
+          "airline": "Mytrip.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1790,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
@@ -577,11 +595,11 @@
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 4
+      "observations": 7
     },
     "toronto-to-harare": {
       "origin": "YYZ",
