@@ -1,0 +1,16 @@
+---
+title: "The cost of winning: The big business of SA schoolboy rugby comes with red flags"
+date: 2026-08-23T09:12:03.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "The cost of winning: The big business of SA schoolboy rugby comes with red flags"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAJBVV95cUxOMVVVQlh0djE5TzUtLTU0QzVkX19yWXd0OTZ6cXlMNkhqajdrSG0yQnBLdVh6SEdzRVNLNXBrM0VVNEVkdXRBdHEzZ1FQekdGVVhib3F2aHp4OU1QS1dxRTNVbi1YZFNMa1lPQU55WHl5M3FWa19NX0JqMHFEdmUtaG5XUEJUVE11UHIzVkhxVjBsaTBVWmlfRW9COWxmd2QtY3Bvekd6Y0dKUHVkalppY1lxbV92azlhWmxNUFdySklZYkZrOV80dDlpLUtVLTF5NTl4UjNYQXBWd3RSbWJRWHdxMWtqajZrc1AyZG9IVGE2V3lzNWRvYk10VFJ6eXZkajl6eGVfaTk4cDRRSjIyb2w0YUs?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilAJBVV95cUxOMVVVQlh0djE5TzUtLTU0QzVkX19yWXd0OTZ6cXlMNkhqajdrSG0yQnBLdVh6SEdzRVNLNXBrM0VVNEVkdXRBdHEzZ1FQekdGVVhib3F2aHp4OU1QS1dxRTNVbi1YZFNMa1lPQU55WHl5M3FWa19NX0JqMHFEdmUtaG5XUEJUVE11UHIzVkhxVjBsaTBVWmlfRW9COWxmd2QtY3Bvekd6Y0dKUHVkalppY1lxbV92azlhWmxNUFdySklZYkZrOV80dDlpLUtVLTF5NTl4UjNYQXBWd3RSbWJRWHdxMWtqajZrc1AyZG9IVGE2V3lzNWRvYk10VFJ6eXZkajl6eGVfaTk4cDRRSjIyb2w0YUs?oc=5)
