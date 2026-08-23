@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-08-23T03:45:45+00:00",
+  "fetched_at": "2026-08-23T06:32:16+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "World Rugby chair and African continent leadership expected in Zimbabwe as part of Sables' World Cup preparations assessment",
+      "link": "https://mutapatimes.com/articles/2026-08-23-world-rugby-chair-and-african-continent-leadership-expected",
+      "image": "https://mutapatimes.com/img/cards/news/e1ccab578dcd.png",
+      "pubDate": "2026-08-23T04:43:02+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "World Rugby chair and African continent leadership expected in Zimbabwe as part of Sables' World Cup preparations assessment",
+      "link": "https://mutapatimes.com/news/2026-08-23-world-rugby-chair-and-african-continent-leadership-expected-in-zimbabwe-as-part-95db92",
+      "image": "https://mutapatimes.com/img/cards/news/b089bc1fa5ba.png",
+      "pubDate": "2026-08-23T04:43:02+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "economy",
       "title": "Zim finance & insurance sector produced $2.0B in 2025 Q4 — 10.7% of GDP.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 23 Aug: Harare clear sky · high 24° / low 13°",
+      "title": "Zim weather 23 Aug: Harare mainly clear · high 27° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-08-23",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-23",
       "pubDate": "2026-08-22T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Sales and Marketing Officer- Agricultural Equipment",
       "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-officer-agricultural-equipment-68879/",
       "image": "https://mutapatimes.com/img/cards/jobs/47547cd161df.png",
-      "pubDate": "2026-08-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Nurse Counsellor",
-      "link": "https://vacancymail.co.zw/jobs/nurse-counsellor-68878/",
-      "image": "https://mutapatimes.com/img/cards/jobs/51ab2e3d1668.png",
-      "pubDate": "2026-08-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MEMBERSHIP AND BILLING CLERK",
-      "link": "https://vacancymail.co.zw/jobs/membership-and-billing-clerk-68877/",
-      "image": "https://mutapatimes.com/img/cards/jobs/36702085eafe.png",
       "pubDate": "2026-08-22T22:00:00+00:00",
       "category": "Jobs"
     }
