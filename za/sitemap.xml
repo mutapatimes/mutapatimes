@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-08-23T18:51:39+00:00</lastmod>
+    <lastmod>2026-08-23T21:38:57+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -11509,6 +11509,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-20-all-blacks-named-for-first-south-africa-test-in-johannesburg.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-20-all-blacks-team-v-springboks-five-takeaways-as-dave-rennie-w.html</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -13939,7 +13945,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-all-blacks-call-up-more-reinforcements-after-double-blow-in.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-all-blacks-send-injury-sos-ahead-of-second-test-against-boks.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-all-blacks-wary-of-springbok-backlash-in-cape-town.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13952,6 +13970,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-at-least-100-firearms-seized-from-soweto-security-company-fo.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-back-to-what-works-rassie-will-name-springbok-team-for-2nd-a.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13987,7 +14011,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-france-links-sharp-rise-in-drownings-to-prolonged-heatwaves.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-fred-arendse-abandoned-mines-the-missing-piece-in-the-fight.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-friends-first-mckenzie-deploys-19-pa-linked-figures-to-arts.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-from-die-kantoor-to-landmyn-the-winners-of-the-2026-silwersk.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-how-the-wild-coast-was-won-community-rights-defeat-corporate.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14059,6 +14107,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-public-works-unveils-major-pivot-focusing-on-municipal-infra.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-ramaphosa-says-anc-has-done-well-in-transforming-lives-of-bl.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -14078,6 +14132,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-ruthless-all-blacks-punish-wasteful-boks.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-sa-agricultural-jobs-hold-steady-despite-intense-immigration.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14155,6 +14215,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-uct-study-challenges-claims-that-high-tax-drives-south-afric.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-victorious-all-blacks-call-up-forward-replacements-to-south.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -14186,6 +14252,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-23-will-whatsapps-rising-costs-expose-south-africas-digital-dep.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-23-zolani-last-born-tete-a-champion-who-fought-for-more-than-be.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -24757,6 +24829,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-23-all-blacks-named-for-first-south-africa-test-in-johannesburg-ee3012</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-08-23-all-blacks-team-v-springboks-five-takeaways-as-dave-rennie-welcomes-back-cold-de4ac2</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -24866,6 +24944,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-23-fmd-outbreak-what-it-means-for-south-africa-s-meat-supply-and-prices-36ed82</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-23-former-world-champion-boxer-zolani-tete-killed-in-south-africa-99dd02</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -25099,6 +25183,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-23-south-africa-publishes-draft-mobile-spectrum-roadmap-f74f03</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-08-23-south-africa-s-5-8-billion-green-hydrogen-ammonia-project-is-going-really-well-ec5570</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -25130,6 +25220,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-23-south-africa-s-fraud-problem-is-persuasion-not-hacking-7ede98</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-23-south-africa-s-healthcare-crisis-over-1-500-medical-positions-remain-unfilled-5347d9</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

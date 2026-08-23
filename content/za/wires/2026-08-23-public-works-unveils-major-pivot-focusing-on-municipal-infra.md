@@ -1,0 +1,16 @@
+---
+title: "Public Works unveils major pivot focusing on municipal infrastructure and building regulations"
+date: 2026-08-23T20:17:03.000Z
+author: Daily Maverick
+category: Policy
+image: 
+summary: "Public Works unveils major pivot focusing on municipal infrastructure and building regulations"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNLW9ucUl2MzlYcERDaWFVUThIeTk1Z1VOeXVkZnNTNVl1RVdZWmVfRHFpWXg1b293dUc1NUR0ZlFfTTVCQmdUZFNyMWxJblRCSDZJSjFwSWZIZEc0TDNsNGJFM1pWc3YyRTJKalQtUXVCeERQSGVDZHNSSUV0ckFheFc1VmhCN3dMREItc2ZkNE1TcUNURGJFMjlFY3dEX29PenpjcVluaGMyTTluU3Z1ZHpWd2FfV1J2aElHWXo1Znk0ekJFSDhBbkdVdWJ0ZXh4YWhodHJtUkpJRzlDeUJsME1PZEU3akxMRHhHNjczZ2k4a19hWll2M2M1eW95ZWF0blBtV0Y5ODFwejR3WDZVcmc3c2FEUGgxNUtnNnZUdEdYSFpMenZEag?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqAJBVV95cUxNLW9ucUl2MzlYcERDaWFVUThIeTk1Z1VOeXVkZnNTNVl1RVdZWmVfRHFpWXg1b293dUc1NUR0ZlFfTTVCQmdUZFNyMWxJblRCSDZJSjFwSWZIZEc0TDNsNGJFM1pWc3YyRTJKalQtUXVCeERQSGVDZHNSSUV0ckFheFc1VmhCN3dMREItc2ZkNE1TcUNURGJFMjlFY3dEX29PenpjcVluaGMyTTluU3Z1ZHpWd2FfV1J2aElHWXo1Znk0ekJFSDhBbkdVdWJ0ZXh4YWhodHJtUkpJRzlDeUJsME1PZEU3akxMRHhHNjczZ2k4a19hWll2M2M1eW95ZWF0blBtV0Y5ODFwejR3WDZVcmc3c2FEUGgxNUtnNnZUdEdYSFpMenZEag?oc=5)
