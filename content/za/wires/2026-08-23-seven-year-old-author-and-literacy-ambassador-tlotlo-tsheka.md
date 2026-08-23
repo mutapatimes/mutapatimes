@@ -1,0 +1,16 @@
+---
+title: "Seven-year-old author and literacy ambassador Tlotlo Tsheka dies after sudden illness"
+date: 2026-08-23T12:34:55.000Z
+author: TimesLIVE
+category: Education
+image: 
+summary: "Seven-year-old author and literacy ambassador Tlotlo Tsheka dies after sudden illness"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTENEVndCTi1oWTdoRk93ODlVRVgwMjZ2OHhDR3hDOU9jcnNvNXh6U25KdWE2NGRvZXpQWU5NZlViUDRzUFBVZFJUdzcwQjJxbGlQRHZ3NjRuYzZYX01jeE1CZkdiaTU3TWhTYmxJX29sR1NaVUpNQ1d1MF9hX1BNUXVyd0JSTEFTWW5xTEdBalVDemdXTlB1eGc3aVF0bm53d2F2NjUwNDh5cU5wTm5lZW1Sbm15dXBUMExUS2c5ZTBTTURQTDl1Mks4RzlBNV9GS1p1d0lTaG9ONDA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTENEVndCTi1oWTdoRk93ODlVRVgwMjZ2OHhDR3hDOU9jcnNvNXh6U25KdWE2NGRvZXpQWU5NZlViUDRzUFBVZFJUdzcwQjJxbGlQRHZ3NjRuYzZYX01jeE1CZkdiaTU3TWhTYmxJX29sR1NaVUpNQ1d1MF9hX1BNUXVyd0JSTEFTWW5xTEdBalVDemdXTlB1eGc3aVF0bm53d2F2NjUwNDh5cU5wTm5lZW1Sbm15dXBUMExUS2c5ZTBTTURQTDl1Mks4RzlBNV9GS1p1d0lTaG9ONDA?oc=5)
