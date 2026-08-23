@@ -1,0 +1,16 @@
+---
+title: "PETER VAN BINSBERGEN | Charging stations key to sparking EV adoption in South Africa"
+date: 2026-08-22T22:11:03.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "PETER VAN BINSBERGEN | Charging stations key to sparking EV adoption in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOb2lrWEt4OGc1OHBYUW9lZU83MUF6NjlWU2I5RE9BLWtKYmVPc1QyRWxRSGxtR09QTDNmbjVhSWs1bDhEMDg4NzlKWmNzOVNXczI3RzVQRk9JemFaODFETGtkNWNzSWUtaHJ5TEVwdnFEZ1p4RUNMVHhmUVU0QjlUX20taFFmckV2aDBBZE0zMXZtSHpHMjU4R2hfZVZhMkZCenF1M1NaM1N0alRQc1JoWnJNRmZqMzNtS1AtVkxMdVdEeFNQT1c0N0F5bzNQckctZXpkZU0tTTBZTDhzSFJvNGVwa3VMN1hUblRr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOb2lrWEt4OGc1OHBYUW9lZU83MUF6NjlWU2I5RE9BLWtKYmVPc1QyRWxRSGxtR09QTDNmbjVhSWs1bDhEMDg4NzlKWmNzOVNXczI3RzVQRk9JemFaODFETGtkNWNzSWUtaHJ5TEVwdnFEZ1p4RUNMVHhmUVU0QjlUX20taFFmckV2aDBBZE0zMXZtSHpHMjU4R2hfZVZhMkZCenF1M1NaM1N0alRQc1JoWnJNRmZqMzNtS1AtVkxMdVdEeFNQT1c0N0F5bzNQckctZXpkZU0tTTBZTDhzSFJvNGVwa3VMN1hUblRr?oc=5)
