@@ -1,0 +1,16 @@
+---
+title: "Approved in the dark — the hidden environmental toll of SA’s data centre boom"
+date: 2026-08-24T09:22:03.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Approved in the dark — the hidden environmental toll of SA’s data centre boom"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirwJBVV95cUxNOWlLSUxTc0ZETzBrZmcyUUVPYnNPSVduX0RZVjJuc0IxZUFlOW9naEJxYTg0cF82QUF4MG4xbUg0VlJZYmxJZVhuc25lb21ZU2p6TV8xRWFUQ0l2dW9xWnhQaTh5R0RlU3RyOGR6anNhV2NMa3RsWENlekxZWTFGQTVMd25pVURHRnVOemZBWllFR1RzWTlEcFpvdFVBYWJMX1JnV2pTS3FHOXYzR1J3dkF5bTk0Tl9xa1Vha1F2SjBzcUstYnJBak11MUFkOHJ2WlQyZDFTOG4wYjR0dzd2TjZQamtqSms0VXh1TTNVTEZmZnJlV2oyb3pkTzVJYzBSdjNSNmxFTEM2QjZEem9wQWZKdTZIVWszd0ZHVGJ0Qkw1YTg0WXRCb0ItbTVFdlU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirwJBVV95cUxNOWlLSUxTc0ZETzBrZmcyUUVPYnNPSVduX0RZVjJuc0IxZUFlOW9naEJxYTg0cF82QUF4MG4xbUg0VlJZYmxJZVhuc25lb21ZU2p6TV8xRWFUQ0l2dW9xWnhQaTh5R0RlU3RyOGR6anNhV2NMa3RsWENlekxZWTFGQTVMd25pVURHRnVOemZBWllFR1RzWTlEcFpvdFVBYWJMX1JnV2pTS3FHOXYzR1J3dkF5bTk0Tl9xa1Vha1F2SjBzcUstYnJBak11MUFkOHJ2WlQyZDFTOG4wYjR0dzd2TjZQamtqSms0VXh1TTNVTEZmZnJlV2oyb3pkTzVJYzBSdjNSNmxFTEM2QjZEem9wQWZKdTZIVWszd0ZHVGJ0Qkw1YTg0WXRCb0ItbTVFdlU?oc=5)

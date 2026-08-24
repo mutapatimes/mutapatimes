@@ -1,0 +1,16 @@
+---
+title: "The one thing South Africa’s top companies have in common"
+date: 2026-08-24T09:02:03.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "The one thing South Africa’s top companies have in common"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgJBVV95cUxNbWREXzZ3VGpKWFJwTDZPcDJDVmRKTDNHU21LNGYyaDZqc3Vva2hHX3p4M1JDYk15bjdidGE4WDlCWU1QY2VObGZzYmtfaUIwZ3ZZWklHNlU0ZEtIVmlwbWR0cnlxWnMyNjNrYVVwbEVPYkJEOVRuN2x2cEdVRFpsRy1HZFdNeEVkTXlZX25La0FPLVJUbTIxd1drQ0pYV18wb2RCcHItWWpWU3BBV0lHSDRudDR6UlVEc1ptbXZGUWZac1IzQTlPNnB3Z1c1UEtvdDZ1cmI3M2owVFV3bmlkUDhzZzNSTnY4dkpzMUlwRkpwclczTjBwakpQR2kzWExmRG8xeGtYOHBWUFpOMkNjVGdR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikgJBVV95cUxNbWREXzZ3VGpKWFJwTDZPcDJDVmRKTDNHU21LNGYyaDZqc3Vva2hHX3p4M1JDYk15bjdidGE4WDlCWU1QY2VObGZzYmtfaUIwZ3ZZWklHNlU0ZEtIVmlwbWR0cnlxWnMyNjNrYVVwbEVPYkJEOVRuN2x2cEdVRFpsRy1HZFdNeEVkTXlZX25La0FPLVJUbTIxd1drQ0pYV18wb2RCcHItWWpWU3BBV0lHSDRudDR6UlVEc1ptbXZGUWZac1IzQTlPNnB3Z1c1UEtvdDZ1cmI3M2owVFV3bmlkUDhzZzNSTnY4dkpzMUlwRkpwclczTjBwakpQR2kzWExmRG8xeGtYOHBWUFpOMkNjVGdR?oc=5)
