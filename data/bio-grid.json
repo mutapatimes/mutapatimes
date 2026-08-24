@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-08-24T03:50:28+00:00",
+  "fetched_at": "2026-08-24T06:45:33+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Cancer outreach draws hundreds in rural Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-24-cancer-outreach-draws-hundreds-in-rural-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/921a05d5eea7.png",
+      "pubDate": "2026-08-24T05:27:57+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Cancer outreach draws hundreds in rural Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-08-24-cancer-outreach-draws-hundreds-in-rural-zimbabwe-94daad",
+      "image": "https://mutapatimes.com/img/cards/news/19ce409b9b08.png",
+      "pubDate": "2026-08-24T05:27:57+00:00",
+      "category": "Health"
+    },
     {
       "kind": "economy",
       "title": "Zim export mix 2025 Q4: 95.9% of $3.3B exports are physical goods.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 24 Aug: Harare mainly clear · high 27° / low 14°",
+      "title": "Zim weather 24 Aug: Harare mainly clear · high 25° / low 12°",
       "link": "https://mutapatimes.com/weather?d=2026-08-24",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-24",
       "pubDate": "2026-08-23T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Stores Clerk / Officer",
       "link": "https://vacancymail.co.zw/jobs/stores-clerk-officer-68904/",
       "image": "https://mutapatimes.com/img/cards/jobs/82d66684d8b7.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrative / Executive Assistant",
-      "link": "https://vacancymail.co.zw/jobs/administrative-executive-assistant-68903/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a5ce2bc3d2e.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Aluminium Fabricator",
-      "link": "https://vacancymail.co.zw/jobs/aluminium-fabricator-68902/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3a2896e86599.png",
       "pubDate": "2026-08-23T22:00:00+00:00",
       "category": "Jobs"
     }
