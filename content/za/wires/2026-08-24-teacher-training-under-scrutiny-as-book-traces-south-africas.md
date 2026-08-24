@@ -1,0 +1,16 @@
+---
+title: "Teacher training under scrutiny as book traces South Africa’s literacy crisis to classroom preparation"
+date: 2026-08-24T02:30:53.000Z
+author: TimesLIVE
+category: Education
+image: 
+summary: "Teacher training under scrutiny as book traces South Africa’s literacy crisis to classroom preparation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZzlESWtMZElVVEswUFpqeUdNajFwTEdfSUVuMERCYzBFbjRJWFRzMW5WalBXMEhpdGFQR2xjMXdGLXo4TUVnX3FkcEhZdkVKaS1ISHdXRnREMnVTbF9BMVRGRDBVS0dlRG1sYlJKSUpSdUFKcl96WWVlZkgxYVA0OWdndm9WUkJUd3B0NlktOFBNZjBnd2xSRDFZR0cyaTVTZS00VEowaUNpNDVGM18tUEVQOGYwTC1wTVNQbHdaSS14MFVlbm00TFQ0TVZsN1dVNkE0RnF4Y21RazUzR1JTVW5faDJvSm5LQTF2TW84cw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZzlESWtMZElVVEswUFpqeUdNajFwTEdfSUVuMERCYzBFbjRJWFRzMW5WalBXMEhpdGFQR2xjMXdGLXo4TUVnX3FkcEhZdkVKaS1ISHdXRnREMnVTbF9BMVRGRDBVS0dlRG1sYlJKSUpSdUFKcl96WWVlZkgxYVA0OWdndm9WUkJUd3B0NlktOFBNZjBnd2xSRDFZR0cyaTVTZS00VEowaUNpNDVGM18tUEVQOGYwTC1wTVNQbHdaSS14MFVlbm00TFQ0TVZsN1dVNkE0RnF4Y21RazUzR1JTVW5faDJvSm5LQTF2TW84cw?oc=5)
