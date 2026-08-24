@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Aug 2026 12:38:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 13:12:08 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -175,18 +175,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/9a85c2c206d5.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 370,000 — Mount Pleasant Heights: 6-Bed Townhouse Complex with Brick Yard &amp; Borehole (Mount Pleasant Heights, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/a9cd774341e3.html</link>
-      <description>USD 370,000 — Mount Pleasant Heights, Harare North. 6 beds, 4 baths. Mount Pleasant Heights: 6-Bed Townhouse Complex with Brick Yard &amp; Borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 23 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/a9cd774341e3.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/a9cd774341e3.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a9cd774341e3.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/a9cd774341e3.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 170,000 — House for sale (Arlington, Harare South)</title>
       <link>https://mutapatimes.com/property-landing/87c1270687a5.html</link>
       <description>USD 170,000 — Arlington, Harare South. 3 beds, 2 baths. House for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/da3731139e83.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/da3731139e83.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/da3731139e83.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 33,000 — Zengeza 2 house for sale (Zengeza, Chitungwiza)</title>
+      <link>https://mutapatimes.com/property-landing/687da9b42777.html</link>
+      <description>USD 33,000 — Zengeza, Chitungwiza. 4 beds, 1 bath. Zengeza 2 house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 23 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/687da9b42777.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/687da9b42777.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/687da9b42777.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/687da9b42777.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
