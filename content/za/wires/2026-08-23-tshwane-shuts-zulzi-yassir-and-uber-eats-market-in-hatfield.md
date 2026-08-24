@@ -1,0 +1,16 @@
+---
+title: "Tshwane shuts Zulzi, Yassir and Uber Eats Market in Hatfield over alleged compliance failures"
+date: 2026-08-23T10:33:44.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Tshwane shuts Zulzi, Yassir and Uber Eats Market in Hatfield over alleged compliance failures"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTXdEMkUydUZsTFJWNE5FZG5DYTVCblRzWGNaX21IN1E3WW1oZkh6Ml9jY2cweDRJQU02QmQ2WjExYlY0cl9wbXRSMmpyV01lTXprNGVFTU9uZTJzdjNYbExqTzlJdFVxaWtqcWM1R1U0SVQ1ZjNud3dKVXRiR3VrYUFMVEhEbGFiWjZiWG9BN2o1QVN1bEVnU0Jac3dEWFB3LUlLVzFwbEhETl9pc1RURURXNGpZNHU1Z2t4eVZKV1FkSFljcVhOR01hb2RuQlpOMllneHAyOEhuYXRlaC13eUdIcG0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTXdEMkUydUZsTFJWNE5FZG5DYTVCblRzWGNaX21IN1E3WW1oZkh6Ml9jY2cweDRJQU02QmQ2WjExYlY0cl9wbXRSMmpyV01lTXprNGVFTU9uZTJzdjNYbExqTzlJdFVxaWtqcWM1R1U0SVQ1ZjNud3dKVXRiR3VrYUFMVEhEbGFiWjZiWG9BN2o1QVN1bEVnU0Jac3dEWFB3LUlLVzFwbEhETl9pc1RURURXNGpZNHU1Z2t4eVZKV1FkSFljcVhOR01hb2RuQlpOMllneHAyOEhuYXRlaC13eUdIcG0?oc=5)
