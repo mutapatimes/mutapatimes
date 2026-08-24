@@ -1,0 +1,16 @@
+---
+title: "From ownership to operations, women are leading Fastway’s depots across South Africa"
+date: 2026-08-24T11:37:03.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "From ownership to operations, women are leading Fastway’s depots across South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxQSERWNDR4OXJlbHZCd1lRTTN4bEZadkk3ckJlNmtJVG1kLXU3MVdoNVhtVUMyQ012ckYzZXZFLWE4SWFWS3p0MTUxR2NoQlV6V3hmWWpmaUowbmtjVnNUVTB3b1ZESjRIM0FVN01PUnFvYndvei02MDZROHppS1AwUEoyeHRiOVBwS3NLNi1iai13TFFiV0VIbFN1M3hqUnpYQ1RiUHJqQnpra2lYWnNXZTdUamtsUWEyZ09wVkR5dDc3WUhNU3ZfVTA3ZWVJZndybE5tNHlNWXZtckRucW9ESURVMllkMDI0OFJadi1jNkczVjVvS3M5UWs0MFE3dm5HSG9WNkZaUzk3aDlyNzY4Qnk3czN1QmJIX2dRbUNRNjBaZWc5cmZvck5XWUcxa2Y2M2NuMQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxQSERWNDR4OXJlbHZCd1lRTTN4bEZadkk3ckJlNmtJVG1kLXU3MVdoNVhtVUMyQ012ckYzZXZFLWE4SWFWS3p0MTUxR2NoQlV6V3hmWWpmaUowbmtjVnNUVTB3b1ZESjRIM0FVN01PUnFvYndvei02MDZROHppS1AwUEoyeHRiOVBwS3NLNi1iai13TFFiV0VIbFN1M3hqUnpYQ1RiUHJqQnpra2lYWnNXZTdUamtsUWEyZ09wVkR5dDc3WUhNU3ZfVTA3ZWVJZndybE5tNHlNWXZtckRucW9ESURVMllkMDI0OFJadi1jNkczVjVvS3M5UWs0MFE3dm5HSG9WNkZaUzk3aDlyNzY4Qnk3czN1QmJIX2dRbUNRNjBaZWc5cmZvck5XWUcxa2Y2M2NuMQ?oc=5)
