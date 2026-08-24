@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-24T12:38:47+00:00",
+  "fetched_at": "2026-08-24T15:34:47+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "zse",
+      "title": "ZSE close 24 Aug 2026: All Share 478.0 (+0.65%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-24",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-24",
+      "pubDate": "2026-08-24T13:30:00+00:00",
+      "category": "Markets"
+    },
     {
       "kind": "news",
       "title": "Three Killed, Six Injured in Mutare-Masvingo Road Crash",
@@ -73,6 +81,62 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-23T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "The Buffalo Brewing Company — Sales And Trade Marketing Officer",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-trade-marketing-officer-68983/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3d987cb1b699.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "The Buffalo Brewing Company — Territory Leader /Area Manager",
+      "link": "https://vacancymail.co.zw/jobs/territory-leader-area-manager-68982/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f756b084e086.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Allied Timbers Zimbabwe (Pvt) Ltd — Chief Operations Officer (COO)",
+      "link": "https://vacancymail.co.zw/jobs/chief-operations-officer-coo-68981/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e30305ef193a.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Allied Timbers Zimbabwe (Pvt) Ltd — Graduate Traineeship 2026 - 2028",
+      "link": "https://vacancymail.co.zw/jobs/graduate-traineeship-2026-2028-68980/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d9809fb386c8.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Plan International Zimbabwe — Community Mobiliser (BRIDGE)",
+      "link": "https://vacancymail.co.zw/jobs/community-mobiliser-bridge-68979/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fdbf64da95d1.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Plan International Zimbabwe — MERL Officer-BRIDGE",
+      "link": "https://vacancymail.co.zw/jobs/merl-officer-bridge-68978/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d7e05bd6fd4f.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutapa Base Metals — Diamond Driller",
+      "link": "https://vacancymail.co.zw/jobs/diamond-driller-68977/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3879d1850d18.png",
+      "pubDate": "2026-08-23T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Midlands State University MSU — Senior Library Assistant (2 posts)",
       "link": "https://vacancymail.co.zw/jobs/senior-library-assistant-2-posts-68930/",
       "image": "https://mutapatimes.com/img/cards/jobs/d2ff53531cf0.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "LEGAL AND COMPLIANCE OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/legal-and-compliance-officer-68915/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1a6ce8209e4a.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "LEGAL AND COMPLIANCE OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/legal-and-compliance-officer-68914/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc2eae0cf31f.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PROCUREMENT OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/procurement-officer-68913/",
-      "image": "https://mutapatimes.com/img/cards/jobs/af3b4ed3dc09.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PROPERTY SALES NEGOTIATOR",
-      "link": "https://vacancymail.co.zw/jobs/property-sales-negotiator-68912/",
-      "image": "https://mutapatimes.com/img/cards/jobs/369fc6675023.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Ignatius College — Assistant Cook",
-      "link": "https://vacancymail.co.zw/jobs/assistant-cook-68911/",
-      "image": "https://mutapatimes.com/img/cards/jobs/38f9b18cc645.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Associated Belts and Bearings — AREA OPERATIONS MANAGER",
-      "link": "https://vacancymail.co.zw/jobs/area-operations-manager-68910/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b9b1c7ad90ef.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mejrkh Communications & Media Advisory — CALL FOR DIGITAL WARRIORS",
-      "link": "https://vacancymail.co.zw/jobs/call-for-digital-warriors-68909/",
-      "image": "https://mutapatimes.com/img/cards/jobs/256022330f30.png",
-      "pubDate": "2026-08-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimpost Pvt Ltd — RISK OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/risk-officer-68908/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6aa1316248ca.png",
       "pubDate": "2026-08-23T22:00:00+00:00",
       "category": "Jobs"
     }
