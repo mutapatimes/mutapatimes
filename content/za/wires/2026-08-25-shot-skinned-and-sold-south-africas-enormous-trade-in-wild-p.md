@@ -1,0 +1,16 @@
+---
+title: "Shot, skinned and sold: South Africa’s enormous trade in wild primates"
+date: 2026-08-25T17:35:33.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Shot, skinned and sold: South Africa’s enormous trade in wild primates"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipgJBVV95cUxQTTRwTmVBcGc2Skg3b1B1dENnX2k0TFFTOGI5anY4RkFmeGJtU25HdzUzWU9QWVAtWUxtWDU5TUJwaXFtMzVIeUdoTV82c3NBZ0NsWGtBeU9hSzFQdlJmRkNFVVFwbWR2VkkyX1RGZGZMZTVNaWNVb1lGcGNZQTlOMllSYl9FcFB4MjF1SlczZ2JMaDI5SDhOZjdGUkpycFlOSDRxdkdxTkRwT29OSlo1T3U4akFLc01xRVU3aU9NT3VITFlCUHRpZTBSVGliZ3RndzAyeFpfV3hxeEVIVUtxeml3YjZlUVpDWW5hRjk4UGU0eXk5ZklkcXVYNDg1Q3gxa2Z4NjVtUjlNVlMxYWZTMDl6R0MtWGlTbk1GQWU4RUFCbGYxNEE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipgJBVV95cUxQTTRwTmVBcGc2Skg3b1B1dENnX2k0TFFTOGI5anY4RkFmeGJtU25HdzUzWU9QWVAtWUxtWDU5TUJwaXFtMzVIeUdoTV82c3NBZ0NsWGtBeU9hSzFQdlJmRkNFVVFwbWR2VkkyX1RGZGZMZTVNaWNVb1lGcGNZQTlOMllSYl9FcFB4MjF1SlczZ2JMaDI5SDhOZjdGUkpycFlOSDRxdkdxTkRwT29OSlo1T3U4akFLc01xRVU3aU9NT3VITFlCUHRpZTBSVGliZ3RndzAyeFpfV3hxeEVIVUtxeml3YjZlUVpDWW5hRjk4UGU0eXk5ZklkcXVYNDg1Q3gxa2Z4NjVtUjlNVlMxYWZTMDl6R0MtWGlTbk1GQWU4RUFCbGYxNEE?oc=5)
