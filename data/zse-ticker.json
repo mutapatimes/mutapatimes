@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25T11:40:15.074258+00:00",
+  "fetched_at": "2026-08-25T12:25:43.998159+00:00",
   "source": "https://www.african-markets.com/en/stock-markets/zse/listed-companies",
   "exchange": "ZSE",
   "currency": "ZWG",
@@ -13,22 +13,6 @@
       "mcap_b": 42.41
     },
     {
-      "company": "First Mutual Holdings",
-      "sector": "Financials",
-      "price": "3.35",
-      "day_change": "",
-      "ytd": "+17.54%",
-      "mcap_b": 2.31
-    },
-    {
-      "company": "RioZim",
-      "sector": "Basic Materials",
-      "price": "0.98",
-      "day_change": "+14.96%",
-      "ytd": "+50.77%",
-      "mcap_b": 0.11
-    },
-    {
       "company": "OK Zimbabwe",
       "sector": "Consumer Services",
       "price": "0.113694",
@@ -37,28 +21,12 @@
       "mcap_b": 0.36
     },
     {
-      "company": "Zimre Holdings",
+      "company": "Old Mutual",
       "sector": "Financials",
-      "price": "0.949743",
+      "price": "81.9906",
       "day_change": "",
-      "ytd": "-5.02%",
-      "mcap_b": 1.72
-    },
-    {
-      "company": "British American Tobacco Zimbabwe",
-      "sector": "Consumer Goods",
-      "price": "184",
-      "day_change": "",
-      "ytd": "+88.95%",
-      "mcap_b": 3.79
-    },
-    {
-      "company": "Hippo Valley Estates",
-      "sector": "Consumer Goods",
-      "price": "10.75",
-      "day_change": "",
-      "ytd": "+31.60%",
-      "mcap_b": 2.07
+      "ytd": "-",
+      "mcap_b": 5.36
     },
     {
       "company": "ZB Financial Holdings",
@@ -69,12 +37,12 @@
       "mcap_b": 1.19
     },
     {
-      "company": "Nampak Zimbabwe",
-      "sector": "Industrials",
-      "price": "1",
+      "company": "First Mutual Holdings",
+      "sector": "Financials",
+      "price": "3.35",
       "day_change": "",
-      "ytd": "+25.00%",
-      "mcap_b": 0.75
+      "ytd": "+17.54%",
+      "mcap_b": 2.31
     },
     {
       "company": "Meikles",
@@ -85,12 +53,20 @@
       "mcap_b": 0.62
     },
     {
-      "company": "CBZ Holdings",
-      "sector": "Financials",
-      "price": "39.99",
+      "company": "RioZim",
+      "sector": "Basic Materials",
+      "price": "0.98",
+      "day_change": "+14.96%",
+      "ytd": "+50.77%",
+      "mcap_b": 0.11
+    },
+    {
+      "company": "British American Tobacco Zimbabwe",
+      "sector": "Consumer Goods",
+      "price": "184",
       "day_change": "",
-      "ytd": "+247.74%",
-      "mcap_b": 20.9
+      "ytd": "+88.95%",
+      "mcap_b": 3.79
     },
     {
       "company": "FBC Holdings",
@@ -101,12 +77,36 @@
       "mcap_b": 9.07
     },
     {
-      "company": "Old Mutual",
+      "company": "CBZ Holdings",
       "sector": "Financials",
-      "price": "81.9906",
+      "price": "39.99",
       "day_change": "",
-      "ytd": "-",
-      "mcap_b": 5.36
+      "ytd": "+247.74%",
+      "mcap_b": 20.9
+    },
+    {
+      "company": "Nampak Zimbabwe",
+      "sector": "Industrials",
+      "price": "1",
+      "day_change": "",
+      "ytd": "+25.00%",
+      "mcap_b": 0.75
+    },
+    {
+      "company": "Hippo Valley Estates",
+      "sector": "Consumer Goods",
+      "price": "10.75",
+      "day_change": "",
+      "ytd": "+31.60%",
+      "mcap_b": 2.07
+    },
+    {
+      "company": "Zimre Holdings",
+      "sector": "Financials",
+      "price": "0.949743",
+      "day_change": "",
+      "ytd": "-5.02%",
+      "mcap_b": 1.72
     },
     {
       "company": "Lafarge Cement Zimbabwe",
