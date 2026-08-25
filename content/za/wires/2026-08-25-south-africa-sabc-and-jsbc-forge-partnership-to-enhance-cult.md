@@ -1,0 +1,16 @@
+---
+title: "South Africa: SABC And JSBC Forge Partnership To Enhance Cultural Exchange And Broadcasting Cooperation"
+date: 2026-08-25T06:35:40.000Z
+author: Broadcast Media Africa
+category: Culture
+image: 
+summary: "South Africa: SABC And JSBC Forge Partnership To Enhance Cultural Exchange And Broadcasting Cooperation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNWFNnMFJzTkJacF9nWlJuN2RDcDNJdlM1cjJBZFJaQTFSYkphUnBDMlBWUHA3RkM5UG1OajlOWWZZdXZERExFV0FYeUVCRUtQRXMwOUgzMk45OWtYbHhsbUdIUml3VWg5MjloZ3h5NWt0YU05QlB5MmZRTWd2TlItY0NzQ21icmlxSVBOYWE2b2p1X1FPRW56QVpmVVQ4aF8tNVFJU05nNWpkQXRCZUEtVjZlbXJfa2RwM3d6bUtqTzJ5SHV0RFYtMTVnelhmZ2p4RUdKd0hUeG9aekRlT0xncElHemNHUjA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Broadcast Media Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxNWFNnMFJzTkJacF9nWlJuN2RDcDNJdlM1cjJBZFJaQTFSYkphUnBDMlBWUHA3RkM5UG1OajlOWWZZdXZERExFV0FYeUVCRUtQRXMwOUgzMk45OWtYbHhsbUdIUml3VWg5MjloZ3h5NWt0YU05QlB5MmZRTWd2TlItY0NzQ21icmlxSVBOYWE2b2p1X1FPRW56QVpmVVQ4aF8tNVFJU05nNWpkQXRCZUEtVjZlbXJfa2RwM3d6bUtqTzJ5SHV0RFYtMTVnelhmZ2p4RUdKd0hUeG9aekRlT0xncElHemNHUjA?oc=5)
