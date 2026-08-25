@@ -1,0 +1,16 @@
+---
+title: "Horn & Heat Launches Chef-Crafted Hot Sauce Line With South African Roots and Rhino Conservation Mission"
+date: 2026-08-25T13:07:24.000Z
+author: Specialty Food Association
+category: Tech
+image: 
+summary: "Horn & Heat Launches Chef-Crafted Hot Sauce Line With South African Roots and Rhino Conservation Mission"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxOUk9uX2JVNC10UDhRellLZHE5TWNpUENiVXkzMllrY2g3U1Voc19NOU5mSVpORGlSTHJsMkFJQ2p5QUtiaTFTZ2F2UHlxd0gzVXY3aTFJaWtGZXlJVzh6c2xwYzBCY0dPSmRpaW8weVUxd0hWYVRidEFHOWVnUHZFakF5TTIxODBqMU11ZjFzUGZWNlhKOWQ1RUlPNVJ6YjkyZWx3YXZKa3hoTEJuY3BhdTRyR3E2alVIZGVveXJxMk9vZnlfYTktaUdhTURUeDBJSG53dnV5NUpSTU16a3AzSzF4eDJ1dl9DOUVobk9yTXhhVDMyeHZEbWxrQmtHNGN5ODFrd0hNOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Specialty Food Association.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxOUk9uX2JVNC10UDhRellLZHE5TWNpUENiVXkzMllrY2g3U1Voc19NOU5mSVpORGlSTHJsMkFJQ2p5QUtiaTFTZ2F2UHlxd0gzVXY3aTFJaWtGZXlJVzh6c2xwYzBCY0dPSmRpaW8weVUxd0hWYVRidEFHOWVnUHZFakF5TTIxODBqMU11ZjFzUGZWNlhKOWQ1RUlPNVJ6YjkyZWx3YXZKa3hoTEJuY3BhdTRyR3E2alVIZGVveXJxMk9vZnlfYTktaUdhTURUeDBJSG53dnV5NUpSTU16a3AzSzF4eDJ1dl9DOUVobk9yTXhhVDMyeHZEbWxrQmtHNGN5ODFrd0hNOA?oc=5)

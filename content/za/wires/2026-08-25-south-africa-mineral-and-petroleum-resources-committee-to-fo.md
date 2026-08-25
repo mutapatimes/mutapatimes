@@ -1,0 +1,16 @@
+---
+title: "South Africa: Mineral and Petroleum Resources Committee To Follow up on Petition Concerns"
+date: 2026-08-25T14:11:00.000Z
+author: Zawya
+category: Business
+image: 
+summary: "South Africa: Mineral and Petroleum Resources Committee To Follow up on Petition Concerns"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQVTdKWjRmUXJKdFY1QnZvNEswQk9LUGQtbFdKNFBPY0R5OFVjZU5jSkczLThtbHlBbHFWNDdUVWNLb25ZOFdTOHRwX2J4V2dJdnJ3NENUQ0tGSWthT2ZCQWJPMS1GUkxhRjBBa3JIQ2hDQTdSNjQ5UFpvbzJ1dFZYcUFGOFJzRFRGTm90Tk5WNVFTRlM4YTI2bUJseS1ONDE1MDNtc1pvQ2xpOTY1ZElzeHVRZDVfSlA0UmduY004VlFaUF9YcUd0NUc5U05BczZLMFBuQ0dZTGVrMXJWR3ljVVhHNERYRXRPc0FEMQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Zawya.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxQVTdKWjRmUXJKdFY1QnZvNEswQk9LUGQtbFdKNFBPY0R5OFVjZU5jSkczLThtbHlBbHFWNDdUVWNLb25ZOFdTOHRwX2J4V2dJdnJ3NENUQ0tGSWthT2ZCQWJPMS1GUkxhRjBBa3JIQ2hDQTdSNjQ5UFpvbzJ1dFZYcUFGOFJzRFRGTm90Tk5WNVFTRlM4YTI2bUJseS1ONDE1MDNtc1pvQ2xpOTY1ZElzeHVRZDVfSlA0UmduY004VlFaUF9YcUd0NUc5U05BczZLMFBuQ0dZTGVrMXJWR3ljVVhHNERYRXRPc0FEMQ?oc=5)
