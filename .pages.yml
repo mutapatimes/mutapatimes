@@ -312,12 +312,15 @@ content:
     type: collection
     path: content/schools-wp
     format: yaml
-    extension: yml
+    filename:
+      template: "{fields.slug | slugify}.yml"
+      field: slug
     view:
       fields: [name, type, established]
       primary: name
       sort: [name]
     fields:
+      - { name: slug,          label: "Slug (must match the school's slug in data/ats-schools.json exactly, e.g. arundel-school)", type: string, required: true }
       - { name: name,          label: School name (must match ATS registry exactly), type: string, required: true }
       - { name: established,   label: Founded / established,        type: string, required: false }
       - { name: type,          label: Type,                         type: string, required: false, description: "e.g. Private, day and boarding school" }
@@ -348,12 +351,15 @@ content:
     type: collection
     path: content/mines-wp
     format: yaml
-    extension: yml
+    filename:
+      template: "{fields.slug | slugify}.yml"
+      field: slug
     view:
       fields: [name, products]
       primary: name
       sort: [name]
     fields:
+      - { name: slug,           label: "Slug (must match the mine's slug in data/mines.json exactly, e.g. bikita-minerals)", type: string, required: true }
       - { name: name,           label: Mine name (must match data/mines.json exactly), type: string, required: true }
       - { name: operator_label, label: Operator / owner,             type: string, required: false }
       - { name: location_label, label: Location,                     type: string, required: false }
