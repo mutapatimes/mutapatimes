@@ -1,13 +1,29 @@
 {
-  "fetched_at": "2026-08-26T12:41:35+00:00",
+  "fetched_at": "2026-08-26T16:14:13+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 26 Aug 2026: All Share 477.75 (-0.71%)",
+      "link": "https://mutapatimes.com/zse?d=2026-08-26",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-08-26",
+      "pubDate": "2026-08-26T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "Zimbabwe's chrome production fell 61.7% year-on-year in Q1 2026, dropp",
-      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwes-chrome-production-fell-617-year-on-year-in-q1-2026",
-      "image": "https://mutapatimes.com/img/cards/news/b92f6de9a329.png",
-      "pubDate": "2026-08-26T10:22:07+00:00",
+      "title": "How Zimbabwe went from hyperinflation to one of Africa’s lowest inflation rates",
+      "link": "https://mutapatimes.com/articles/2026-08-26-how-zimbabwe-went-from-hyperinflation-to-one-of-africas-lowe",
+      "image": "https://mutapatimes.com/img/cards/news/1a38c5672533.png",
+      "pubDate": "2026-08-26T12:39:53+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "How Zimbabwe went from hyperinflation to one of Africa’s lowest inflation rates",
+      "link": "https://mutapatimes.com/news/2026-08-26-how-zimbabwe-went-from-hyperinflation-to-one-of-africa-s-lowest-inflation-rates-ed9c84",
+      "image": "https://mutapatimes.com/img/cards/news/3cc8f5d6f1e0.png",
+      "pubDate": "2026-08-26T12:39:53+00:00",
       "category": "Business"
     },
     {
@@ -21,14 +37,6 @@
     {
       "kind": "news",
       "title": "Zimbabwe is restricting raw lithium exports, but a Chinese mining company just got an extra 300,000 tons",
-      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwe-is-restricting-raw-lithium-exports-but-a-chinese-mi",
-      "image": "https://mutapatimes.com/img/cards/news/f0249de62acc.png",
-      "pubDate": "2026-08-26T09:45:11+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe is restricting raw lithium exports, but a Chinese mining company just got an extra 300,000 tons",
       "link": "https://mutapatimes.com/news/2026-08-26-zimbabwe-is-restricting-raw-lithium-exports-but-a-chinese-mining-company-just-5fce2b",
       "image": "https://mutapatimes.com/img/cards/news/55dda5c02f34.png",
       "pubDate": "2026-08-26T09:45:11+00:00",
@@ -36,51 +44,35 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe Performs First Bone Marrow Transplant at Parirenyatwa Hospital",
-      "link": "https://mutapatimes.com/news/2026-08-26-zimbabwe-performs-first-bone-marrow-transplant-at-parirenyatwa-hospital-98ccab",
-      "image": "https://mutapatimes.com/img/cards/news/205038c7cde7.png",
-      "pubDate": "2026-08-26T06:19:19+00:00",
-      "category": "Health"
+      "title": "Zimbabwe: Months Before Kariba Tragedy, RIDA Captain Had Already Battled Dangerous Waters",
+      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwe-months-before-kariba-tragedy-rida-captain-had-alrea",
+      "image": "https://mutapatimes.com/img/cards/news/c40d734e6e52.png",
+      "pubDate": "2026-08-26T04:47:10+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
-      "title": "President Mnangagwa Moves to Dismantle Cartels Strangling Zimbabwe's Healthcare",
-      "link": "https://mutapatimes.com/news/2026-08-26-president-mnangagwa-moves-to-dismantle-cartels-strangling-zimbabwe-s-healthcare-57bb8a",
-      "image": "https://mutapatimes.com/img/cards/news/cbd2fc77ab71.png",
-      "pubDate": "2026-08-26T06:08:38+00:00",
-      "category": "Health"
+      "title": "AFM leader Madawo backtracks on ZANU PF support, insists church is non-partisan after Mnangagwa praise",
+      "link": "https://mutapatimes.com/news/2026-08-26-afm-leader-madawo-backtracks-on-zanu-pf-support-insists-church-is-non-partisan-a376a6",
+      "image": "https://mutapatimes.com/img/cards/news/8a9403d52998.png",
+      "pubDate": "2026-08-26T04:11:56+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe performs first-ever bone marrow transplant",
-      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwe-performs-first-ever-bone-marrow-transplant",
-      "image": "https://mutapatimes.com/img/cards/news/5cb57a4e053f.png",
-      "pubDate": "2026-08-26T05:49:19+00:00",
-      "category": "Health"
+      "title": "ZWG annual inflation rate falls to 2,9% in August",
+      "link": "https://mutapatimes.com/articles/2026-08-26-zwg-annual-inflation-rate-falls-to-29-in-august",
+      "image": "https://mutapatimes.com/img/cards/news/752a94505c7d.png",
+      "pubDate": "2026-08-26T04:03:32+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe performs first-ever bone marrow transplant",
-      "link": "https://mutapatimes.com/news/2026-08-26-zimbabwe-performs-first-ever-bone-marrow-transplant-d44ad4",
-      "image": "https://mutapatimes.com/img/cards/news/7a6b68388599.png",
-      "pubDate": "2026-08-26T05:49:19+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe hospitals battle drug shortages",
-      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwe-hospitals-battle-drug-shortages",
-      "image": "https://mutapatimes.com/img/cards/news/56ce6c96bae1.png",
-      "pubDate": "2026-08-26T05:48:03+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe hospitals battle drug shortages",
-      "link": "https://mutapatimes.com/news/2026-08-26-zimbabwe-hospitals-battle-drug-shortages-436c04",
-      "image": "https://mutapatimes.com/img/cards/news/168352374e74.png",
-      "pubDate": "2026-08-26T05:48:03+00:00",
-      "category": "Health"
+      "title": "ZWG annual inflation rate falls to 2,9% in August",
+      "link": "https://mutapatimes.com/news/2026-08-26-zwg-annual-inflation-rate-falls-to-2-9-in-august-15a12f",
+      "image": "https://mutapatimes.com/img/cards/news/5fbf229df6ff.png",
+      "pubDate": "2026-08-26T04:03:32+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -88,6 +80,30 @@
       "link": "https://mutapatimes.com/news/2026-08-26-three-artisanal-miners-killed-in-mutare-shaft-collapse-cc65a4",
       "image": "https://mutapatimes.com/img/cards/news/d42f06afeb3c.png",
       "pubDate": "2026-08-26T03:55:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Three artisanal miners killed in Mutare shaft collapse",
+      "link": "https://mutapatimes.com/news/2026-08-26-three-artisanal-miners-killed-in-mutare-shaft-collapse-77f152",
+      "image": "https://mutapatimes.com/img/cards/news/a85828db4894.png",
+      "pubDate": "2026-08-26T03:53:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "CBZ property expansion push targets urban corridors",
+      "link": "https://mutapatimes.com/articles/2026-08-26-cbz-property-expansion-push-targets-urban-corridors",
+      "image": "https://mutapatimes.com/img/cards/news/d3a19cb711c8.png",
+      "pubDate": "2026-08-26T03:21:53+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Dispute over farm infrastructure rages on",
+      "link": "https://mutapatimes.com/articles/2026-08-26-dispute-over-farm-infrastructure-rages-on",
+      "image": "https://mutapatimes.com/img/cards/news/c851f2d2edf4.png",
+      "pubDate": "2026-08-26T03:21:22+00:00",
       "category": "Business"
     },
     {
@@ -108,22 +124,6 @@
     },
     {
       "kind": "news",
-      "title": "Zas 2026: Time to harness agro-innovation",
-      "link": "https://mutapatimes.com/articles/2026-08-26-zas-2026-time-to-harness-agro-innovation",
-      "image": "https://mutapatimes.com/img/cards/news/70d238526dde.png",
-      "pubDate": "2026-08-26T00:00:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Zida approves US$1.5b investment projects",
-      "link": "https://mutapatimes.com/articles/2026-08-25-zida-approves-us15b-investment-projects",
-      "image": "https://mutapatimes.com/img/cards/news/c504ff1f1f64.png",
-      "pubDate": "2026-08-25T23:57:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
       "title": "Military broadcaster’s property to go under the hammer as it fails to settle salary debt",
       "link": "https://mutapatimes.com/news/2026-08-25-military-broadcaster-s-property-to-go-under-the-hammer-as-it-fails-to-settle-6fc375",
       "image": "https://mutapatimes.com/img/cards/news/31babd6db526.png",
@@ -137,22 +137,6 @@
       "image": "https://mutapatimes.com/img/cards/news/cdf493bf19aa.png",
       "pubDate": "2026-08-25T23:01:44+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Tsingshan may triple output at its Zimbabwe steel plant",
-      "link": "https://mutapatimes.com/news/2026-08-25-tsingshan-may-triple-output-at-its-zimbabwe-steel-plant-84f3e3",
-      "image": "https://mutapatimes.com/img/cards/news/cefd2a1558cf.png",
-      "pubDate": "2026-08-25T23:00:43+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zim performs first-ever bone marrow transplant",
-      "link": "https://mutapatimes.com/articles/2026-08-25-zim-performs-first-ever-bone-marrow-transplant",
-      "image": "https://mutapatimes.com/img/cards/news/82709842e856.png",
-      "pubDate": "2026-08-25T22:15:44+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -209,6 +193,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-25T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Lightguard Security — Accounting intern",
+      "link": "https://vacancymail.co.zw/jobs/accounting-intern-69025/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c73922d7b96f.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe School of Mines ~~ 0 — Registry Intern",
+      "link": "https://vacancymail.co.zw/jobs/registry-intern-69024/",
+      "image": "https://mutapatimes.com/img/cards/jobs/44b523c7e739.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Spoton Towing & Recovery — Truck Driver",
+      "link": "https://vacancymail.co.zw/jobs/truck-driver-69023/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d1602e082651.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — PUMP FITTER",
+      "link": "https://vacancymail.co.zw/jobs/pump-fitter-69022/",
+      "image": "https://mutapatimes.com/img/cards/jobs/97c2e4f2ea95.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Old Mutual Zimbabwe — Client Service Consultant",
+      "link": "https://vacancymail.co.zw/jobs/client-service-consultant-69021/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c4d43ffbbce1.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mukuru — Retail Sales & Operations Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/retail-sales-operations-supervisor-69020/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b389d40f742a.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Adult RApe Clinic — Finance Intern",
+      "link": "https://vacancymail.co.zw/jobs/finance-intern-69019/",
+      "image": "https://mutapatimes.com/img/cards/jobs/86ca0772c98c.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "FAO - Food and Agriculture Organization Zimbabwe — National One Health and Antimicrobial Resistance (AMR) Coordinator",
+      "link": "https://vacancymail.co.zw/jobs/national-one-health-and-antimicrobial-resistance-amr-coordinator-69018/",
+      "image": "https://mutapatimes.com/img/cards/jobs/aaad87f438cf.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "FAO - Food and Agriculture Organization Zimbabwe — Veterinary Epidemiologist",
+      "link": "https://vacancymail.co.zw/jobs/veterinary-epidemiologist-69017/",
+      "image": "https://mutapatimes.com/img/cards/jobs/21e60e1ebc40.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Assistant Loan Officer",
+      "link": "https://vacancymail.co.zw/jobs/assistant-loan-officer-69016/",
+      "image": "https://mutapatimes.com/img/cards/jobs/362ce57b5d87.png",
+      "pubDate": "2026-08-25T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Mine Captain",
       "link": "https://vacancymail.co.zw/jobs/mine-captain-68973/",
       "image": "https://mutapatimes.com/img/cards/jobs/6dbc697c8652.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Territory Sales Representative (2posts): Crusaders Credit",
-      "link": "https://vacancymail.co.zw/jobs/territory-sales-representative-2posts-crusaders-credit-68972/",
-      "image": "https://mutapatimes.com/img/cards/jobs/db30476e2ba2.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rusape Town Council — Audit Assistant",
-      "link": "https://vacancymail.co.zw/jobs/audit-assistant-68971/",
-      "image": "https://mutapatimes.com/img/cards/jobs/166cdc903a38.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rusape Town Council — Assistant Electrician",
-      "link": "https://vacancymail.co.zw/jobs/assistant-electrician-68970/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5b4d3e9b53a7.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rusape Town Council — Human Capital & Administration Assistant",
-      "link": "https://vacancymail.co.zw/jobs/human-capital-administration-assistant-68969/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4527b79f54ed.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nurses Council Of Zimbabwe — Temporary Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/temporary-accounts-clerk-68968/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8f435c468a0b.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Manpower Development Fund (ZIMDEF) — SAP Workflow Developer",
-      "link": "https://vacancymail.co.zw/jobs/sap-workflow-developer-68967/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f4b4824018ba.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Manpower Development Fund (ZIMDEF) — Administration Assistant",
-      "link": "https://vacancymail.co.zw/jobs/administration-assistant-68966/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a71001d422a0.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gokwe Town Council — Committee Clerk",
-      "link": "https://vacancymail.co.zw/jobs/committee-clerk-68965/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9e8bb72923cd.png",
       "pubDate": "2026-08-25T22:00:00+00:00",
       "category": "Jobs"
     }
