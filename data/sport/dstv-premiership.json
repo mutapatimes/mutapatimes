@@ -12,14 +12,14 @@
    "rank": 1,
    "team": "Orlando Pirates",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
-   "played": 3,
-   "win": 2,
+   "played": 4,
+   "win": 3,
    "draw": 1,
    "loss": 0,
-   "gf": 6,
+   "gf": 8,
    "ga": 1,
-   "gd": 5,
-   "points": 7
+   "gd": 7,
+   "points": 10
   },
   {
    "rank": 2,
@@ -62,15 +62,15 @@
   },
   {
    "rank": 5,
-   "team": "Sekhukhune United",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/5yxcni1705638809.png/tiny",
+   "team": "Milford",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
    "played": 3,
    "win": 2,
    "draw": 0,
    "loss": 1,
    "gf": 3,
-   "ga": 2,
-   "gd": 1,
+   "ga": 3,
+   "gd": 0,
    "points": 6
   }
  ],
@@ -91,5 +91,5 @@
    "away": "Stellenbosch"
   }
  ],
- "updated": "2026-08-26T07:10:51+00:00"
+ "updated": "2026-08-26T09:04:55+00:00"
 }
