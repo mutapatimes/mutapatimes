@@ -1,0 +1,16 @@
+---
+title: "MTN Nigeria Backs Economic Integration as Official Sponsor of Nigeria-South Africa Chamber Of Commerce August Forum"
+date: 2026-08-25T23:12:33.000Z
+author: Nigeria Communications Week
+category: Tech
+image: 
+summary: "MTN Nigeria Backs Economic Integration as Official Sponsor of Nigeria-South Africa Chamber Of Commerce August Forum"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaVc2QVk1ZkdwOVlwdDg2WDJNOTlvRHQyUnNRNklOOXgtS0VmTVpUV2c5Qm5udVNsWlBFMkxNbnBwZGhTejRVdEQwb0hyQUxFUC1JSVNQUkV0VFk3VGRMMHY2aU5rX01ZZ25xQjNPb2VHd0hKcjJtRExhVmhfT2Q4Y3ZZUHlMcTlmZlJ6RTFxOVRkSnZmV0NPdW9KVVgzQjY2RlAtdUNhOEVyLU9CY0swV0ZKVHl0Mmg4OUVacTNMYzBMVlUzVTNwZ1hvMUNNM1FJZkpmdjdnSDBkOUN2M3JaT3RLcUFyb1BZLUw4MDNHbUJQbkgyUXZhMm50QzlUMDZB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Nigeria Communications Week.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxNaVc2QVk1ZkdwOVlwdDg2WDJNOTlvRHQyUnNRNklOOXgtS0VmTVpUV2c5Qm5udVNsWlBFMkxNbnBwZGhTejRVdEQwb0hyQUxFUC1JSVNQUkV0VFk3VGRMMHY2aU5rX01ZZ25xQjNPb2VHd0hKcjJtRExhVmhfT2Q4Y3ZZUHlMcTlmZlJ6RTFxOVRkSnZmV0NPdW9KVVgzQjY2RlAtdUNhOEVyLU9CY0swV0ZKVHl0Mmg4OUVacTNMYzBMVlUzVTNwZ1hvMUNNM1FJZkpmdjdnSDBkOUN2M3JaT3RLcUFyb1BZLUw4MDNHbUJQbkgyUXZhMm50QzlUMDZB?oc=5)
