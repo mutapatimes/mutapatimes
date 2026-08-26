@@ -1,86 +1,86 @@
 {
-  "fetched_at": "2026-08-26T13:33:38.314300+00:00",
-  "as_of": "2026-08-25",
+  "fetched_at": "2026-08-26T14:25:08.499845+00:00",
+  "as_of": "2026-08-26",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 167,
-    "turnover": 1309360.66,
-    "volume": 910316.0,
-    "market_cap": 8069730239.36
+    "trades": 166,
+    "turnover": 461153.03,
+    "volume": 1333795.0,
+    "market_cap": 8033078152.15
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 253.26,
-      "change_pct": -0.67,
-      "change_points": -1.72,
-      "direction": "down"
+      "value": 254.78,
+      "change_pct": 0.6,
+      "change_points": 1.52,
+      "direction": "up"
     }
   ],
   "gainers": [
     {
-      "name": "Edgars Stores Limited",
-      "symbol": "EDGR.VX",
-      "price": 2.4,
-      "change_pct": 20.0
-    },
-    {
-      "name": "Kavango Resources Plc",
-      "symbol": "KAV.VX",
-      "price": 2.0,
-      "change_pct": 5.26
+      "name": "First Capital Bank Limited",
+      "symbol": "FCA.VX",
+      "price": 14.86,
+      "change_pct": 5.24
     },
     {
       "name": "Econet Infraco",
       "symbol": "INFR.VX",
-      "price": 22.68,
-      "change_pct": 5.19
+      "price": 22.94,
+      "change_pct": 1.15
     },
-    {
-      "name": "Old Mutual Limited",
-      "symbol": "OMU.VX",
-      "price": 91.43,
-      "change_pct": 1.24
-    },
-    {
-      "name": "Zimplow Holdings Limited",
-      "symbol": "ZIMW.VX",
-      "price": 11.5,
-      "change_pct": 0.7
-    }
-  ],
-  "losers": [
     {
       "name": "Padenga Holdings Ltd",
       "symbol": "PHL.VX",
-      "price": 125.49,
-      "change_pct": -5.35
-    },
-    {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 69.63,
-      "change_pct": -1.29
+      "price": 126.24,
+      "change_pct": 0.6
     },
     {
       "name": "Seed Co International",
       "symbol": "",
-      "price": 37.54,
-      "change_pct": -1.21
-    },
-    {
-      "name": "First Capital Bank Limited",
-      "symbol": "FCA.VX",
-      "price": 14.12,
-      "change_pct": -0.84
+      "price": 37.68,
+      "change_pct": 0.37
     },
     {
       "name": "Caledonia Mining Corporation Plc",
       "symbol": "CMCL.VX",
-      "price": 3202.77,
-      "change_pct": -0.22
+      "price": 3203.82,
+      "change_pct": 0.03
+    }
+  ],
+  "losers": [
+    {
+      "name": "Old Mutual Limited",
+      "symbol": "OMU.VX",
+      "price": 90.02,
+      "change_pct": -1.54
+    },
+    {
+      "name": "Axia Corporation Limited",
+      "symbol": "AXIA.VX",
+      "price": 14.04,
+      "change_pct": -1.4
+    },
+    {
+      "name": "Zimplow Holdings Limited",
+      "symbol": "ZIMW.VX",
+      "price": 11.38,
+      "change_pct": -1.04
+    },
+    {
+      "name": "Tsl Limited",
+      "symbol": "TSL.VX",
+      "price": 20.87,
+      "change_pct": -0.62
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 69.4,
+      "change_pct": -0.33
     }
   ],
   "notices": [
