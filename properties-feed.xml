@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 19:43:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 20:02:16 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,6 +53,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/9690f7ce60a5.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9690f7ce60a5.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/9690f7ce60a5.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 550,000 — Stylish 5-Bed Double-Storey in Vainona — Garage &amp; Balcony (Vainona, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/8d860cea7c1a.html</link>
+      <description>USD 550,000 — Vainona, Harare North. 5 beds, 6 baths. Stylish 5-Bed Double-Storey in Vainona — Garage &amp; Balcony. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 25 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/8d860cea7c1a.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/8d860cea7c1a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8d860cea7c1a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/8d860cea7c1a.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 620,000 — Charming Colonial Style Home Built In 1914 (Mcloughlin Avenue, Avondale, Harare North)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/13a165a8659f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/13a165a8659f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/13a165a8659f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 100,000 — 3-Bedroom House For Sale in Aspindale Park (Aspindale Park, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/b829bf96bcef.html</link>
-      <description>USD 100,000 — Aspindale Park, Harare West. 3 beds, 2 baths. 3-Bedroom House For Sale in Aspindale Park. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 25 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b829bf96bcef.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/b829bf96bcef.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b829bf96bcef.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/b829bf96bcef.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

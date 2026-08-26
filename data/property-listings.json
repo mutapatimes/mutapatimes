@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-26T13:16:17.684481+00:00",
+  "fetched_at": "2026-08-26T20:02:04.180286+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -29,6 +29,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/17/c0/47/17c04736-5dfa-46ce-9a2a-f11a7599727f_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
+    },
+    {
+      "title": "Stylish 5-Bed Double-Storey in Vainona — Garage & Balcony",
+      "url": "https://www.property.co.zw/for-sale/townhouses-cami248729",
+      "price": "USD 550,000",
+      "location": "Vainona, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/8e/ce/f5/8ecef5bd-6eaa-4e06-8491-e9516a5f828f_thumbnail591.webp",
+      "beds": "5",
+      "baths": "6"
     },
     {
       "title": "Charming Colonial Style Home Built In 1914",
@@ -190,15 +199,6 @@
       "location": "Mabvuku, Harare High Density",
       "image": "https://www.property.co.zw/uploadedfiles/c6/cc/a1/c6cca162-6e9b-4a8c-8bf4-7048d0217a3e_thumbnail591.webp",
       "beds": "5",
-      "baths": "2"
-    },
-    {
-      "title": "3-Bedroom House For Sale in Aspindale Park",
-      "url": "https://www.property.co.zw/for-sale/houses-gat253401",
-      "price": "USD 100,000",
-      "location": "Aspindale Park, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/a8/23/b6/a823b641-4983-4570-84f2-ec0236eb7f9f_thumbnail591.webp",
-      "beds": "3",
       "baths": "2"
     }
   ]
