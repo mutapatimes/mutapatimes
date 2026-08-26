@@ -2,7 +2,7 @@
 title: "VFEX Surpasses US$8 Billion as Dollar Market Expands"
 seo_title: "VFEX Market Cap Tops US$8 Billion | The Mutapa Times"
 date: 2026-08-15T09:00:00.000Z
-author: Nigel Chapwanya
+author: Nigel Njini Chapwanya
 category: Business
 image:
 summary: "The Victoria Falls Stock Exchange has surpassed US$8 billion in market capitalisation, but a methodology change and Old Mutual's return account for most of the jump, and the figure needs to be read against how little is actually trading."

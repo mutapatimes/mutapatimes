@@ -1,9 +1,9 @@
 ---
 name: Thrive Tinarwo
 slug: thrive-tinarwo
-role: Research Contributor
-beat: Business, economy
-bio: "Research contributor supporting business and economy coverage for The Mutapa Times."
+role: Contributor
+beat: Business, local economics
+bio: "Thrive Tinarwo covers business and local economics, focusing on the fees, licensing and municipal decisions that determine whether a Zimbabwean business survives."
 photo: ""
 location: ""
 twitter: ""
@@ -14,3 +14,4 @@ website: ""
 order: 51
 active: true
 ---
+Thrive Tinarwo covers business and local economics, focusing on the fees, licensing and municipal decisions that determine whether a Zimbabwean business survives.

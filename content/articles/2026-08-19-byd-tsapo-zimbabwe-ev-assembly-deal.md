@@ -2,7 +2,7 @@
 title: "BYD, Tsapo Deal Puts Zimbabwe's EV Assembly Ambitions on the Road"
 seo_title: "BYD, Tsapo Sign Zimbabwe EV Assembly Deal | The Mutapa Times"
 date: 2026-08-19T09:00:00.000Z
-author: Nigel Chapwanya
+author: Nigel Njini Chapwanya
 category: Business
 image:
 summary: "BYD and Tsapo Group have signed an agreement expected to begin with bus assembly before expanding into electric vehicles, backed by a skills-transfer programme and a planned nationwide charging network."
