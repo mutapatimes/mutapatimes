@@ -1,0 +1,16 @@
+---
+title: "Treasury proposes central administrator for R88.6bn in unclaimed assets"
+date: 2026-08-26T16:44:45.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Treasury proposes central administrator for R88.6bn in unclaimed assets"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOX2JaTFJqNWpBeTI2VU9ORjBKdjViaHJ4TXIzNk1odzJkUHFEUWZrZmtwNXpmZDdfUXgySnBldlVUU1BuOTV0NVlvRFM2cVRoelUwTDZVMmcwa3JGZmNGemZRbUMwRUZyNzZCVkVSVEFpdHZ3RzZNOHNMdThkNWdidG8za19qTGduZkluYVl5QUFGVWd0cnJ0MDI4YmYzMF9oVDdCVzVVWWxmVE1aSzZoSERtRnBXWDg0Y2swZDE5eW5GZ0dzTm9ma2JMaVQzQWhXdTZJX0xJVG9GdEhPYU53cHBkdkQ0bzlaUFB5TWt2OHpmWERPZGdBbGNLRVkzS3BoUERfemJZOVM5Nmc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiiwJBVV95cUxOX2JaTFJqNWpBeTI2VU9ORjBKdjViaHJ4TXIzNk1odzJkUHFEUWZrZmtwNXpmZDdfUXgySnBldlVUU1BuOTV0NVlvRFM2cVRoelUwTDZVMmcwa3JGZmNGemZRbUMwRUZyNzZCVkVSVEFpdHZ3RzZNOHNMdThkNWdidG8za19qTGduZkluYVl5QUFGVWd0cnJ0MDI4YmYzMF9oVDdCVzVVWWxmVE1aSzZoSERtRnBXWDg0Y2swZDE5eW5GZ0dzTm9ma2JMaVQzQWhXdTZJX0xJVG9GdEhPYU53cHBkdkQ0bzlaUFB5TWt2OHpmWERPZGdBbGNLRVkzS3BoUERfemJZOVM5Nmc?oc=5)
