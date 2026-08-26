@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25",
+  "fetched_at": "2026-08-26",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -18,7 +18,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 628,
+        "price": 620,
         "airline": "",
         "departure_at": "",
         "return_at": "",
@@ -46,7 +46,7 @@
           "currency": ""
         },
         {
-          "price": 395,
+          "price": 394,
           "airline": "PC",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -73,6 +73,15 @@
           "currency": ""
         },
         {
+          "price": 624,
+          "airline": "KQ",
+          "departure_at": "2027-01-09",
+          "return_at": "2027-02-01",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
           "price": 637,
           "airline": "QR",
           "departure_at": "2027-02-12",
@@ -93,7 +102,7 @@
           "currency": ""
         },
         {
-          "price": 395,
+          "price": 394,
           "airline": "PC",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -139,7 +148,7 @@
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 5,
+          "n": 7,
           "error": null
         },
         {
@@ -151,7 +160,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 28,
+          "n": 24,
           "error": null
         },
         {
@@ -163,7 +172,7 @@
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 5,
+          "n": 7,
           "error": null
         },
         {
@@ -179,7 +188,7 @@
           "error": null
         }
       ],
-      "observations": 47
+      "observations": 51
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -322,10 +331,10 @@
       },
       "monthly": [
         {
-          "price": 3773,
+          "price": 4005,
           "airline": "FN",
-          "departure_at": "2026-08-29",
-          "return_at": "2026-09-05",
+          "departure_at": "2026-08-30",
+          "return_at": "2026-09-01",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -358,7 +367,7 @@
           "currency": ""
         },
         {
-          "price": 1735,
+          "price": 1733,
           "airline": "FN",
           "departure_at": "2027-05-13",
           "return_at": "",
@@ -378,7 +387,7 @@
           "currency": ""
         },
         {
-          "price": 1735,
+          "price": 1733,
           "airline": "FN",
           "departure_at": "2027-05-13",
           "return_at": "",
@@ -387,7 +396,7 @@
           "currency": ""
         },
         {
-          "price": 3604,
+          "price": 3558,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -396,7 +405,7 @@
           "currency": ""
         },
         {
-          "price": 3614,
+          "price": 3567,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -405,12 +414,12 @@
           "currency": ""
         },
         {
-          "price": 3793,
+          "price": 3750,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 210,
+          "duration": 205,
           "currency": ""
         }
       ],
@@ -436,11 +445,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 23,
+          "n": 20,
           "error": null
         }
       ],
-      "observations": 35
+      "observations": 33
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -563,7 +572,7 @@
           "currency": ""
         },
         {
-          "price": 2210,
+          "price": 2179,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -610,7 +619,7 @@
           "endpoint": "v3",
           "origin": "YYZ",
           "n": 0,
-          "error": null
+          "error": "<urlopen error [Errno 104] Connection reset by peer>"
         },
         {
           "endpoint": "monthly",
