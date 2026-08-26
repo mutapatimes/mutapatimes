@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 03:50:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 06:39:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Three artisanal miners killed in Mutare shaft collapse</title>
+      <link>https://mutapatimes.com/stories/fe41c617a8c3.html</link>
+      <description>via NewZimbabwe.com #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Wed, 26 Aug 2026 03:55:28 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/fe41c617a8c3.html</guid>
+      <category>Business</category>
+      <dc:creator>NewZimbabwe.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/fe41c617a8c3.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fe41c617a8c3.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/fe41c617a8c3.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/229c1a588886.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/229c1a588886.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/229c1a588886.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>St Anne’s Hospital — MIDWIFE</title>
-      <link>https://mutapatimes.com/stories/fdb7dd062e8f.html</link>
-      <description>The Midwife is responsible for providing comprehensive, safe and compassionate maternity care to women throughout pregnancy, labour, delivery and the postpartum period. The role includes supporting m… Harare · Contractor (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Tue, 25 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/fdb7dd062e8f.html</guid>
-      <category>Jobs</category>
-      <dc:creator>St Anne's Hospital</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/fdb7dd062e8f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fdb7dd062e8f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/fdb7dd062e8f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

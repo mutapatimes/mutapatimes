@@ -1,7 +1,47 @@
 {
-  "fetched_at": "2026-08-26T03:50:26+00:00",
+  "fetched_at": "2026-08-26T06:39:21+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Performs First Bone Marrow Transplant at Parirenyatwa Hospital",
+      "link": "https://mutapatimes.com/articles/2026-08-26-zimbabwe-performs-first-bone-marrow-transplant-at-parirenyat",
+      "image": "https://mutapatimes.com/img/cards/news/dcfa1668e4f4.png",
+      "pubDate": "2026-08-26T06:19:19+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Performs First Bone Marrow Transplant at Parirenyatwa Hospital",
+      "link": "https://mutapatimes.com/news/2026-08-26-zimbabwe-performs-first-bone-marrow-transplant-at-parirenyatwa-hospital-98ccab",
+      "image": "https://mutapatimes.com/img/cards/news/205038c7cde7.png",
+      "pubDate": "2026-08-26T06:19:19+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "President Mnangagwa Moves to Dismantle Cartels Strangling Zimbabwe's Healthcare",
+      "link": "https://mutapatimes.com/news/2026-08-26-president-mnangagwa-moves-to-dismantle-cartels-strangling-zimbabwe-s-healthcare-57bb8a",
+      "image": "https://mutapatimes.com/img/cards/news/cbd2fc77ab71.png",
+      "pubDate": "2026-08-26T06:08:38+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Three artisanal miners killed in Mutare shaft collapse",
+      "link": "https://mutapatimes.com/articles/2026-08-26-three-artisanal-miners-killed-in-mutare-shaft-collapse",
+      "image": "https://mutapatimes.com/img/cards/news/fe41c617a8c3.png",
+      "pubDate": "2026-08-26T03:55:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Three artisanal miners killed in Mutare shaft collapse",
+      "link": "https://mutapatimes.com/news/2026-08-26-three-artisanal-miners-killed-in-mutare-shaft-collapse-cc65a4",
+      "image": "https://mutapatimes.com/img/cards/news/d42f06afeb3c.png",
+      "pubDate": "2026-08-26T03:55:28+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Sinomine Secures Additional Zimbabwe Lithium Export Quota",
@@ -28,7 +68,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 26 Aug: Harare mainly clear · high 24° / low 11°",
+      "title": "Zim weather 26 Aug: Harare clear sky · high 25° / low 12°",
       "link": "https://mutapatimes.com/weather?d=2026-08-26",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-26",
       "pubDate": "2026-08-25T22:00:00+00:00",
@@ -439,46 +479,6 @@
       "title": "Harare Institute of Technology HIT — SCHOOL OF ALLIED HEALTH SCIENCES Assistant Registrar (1 Post)",
       "link": "https://vacancymail.co.zw/jobs/school-of-allied-health-sciences-assistant-registrar-1-post-68947/",
       "image": "https://mutapatimes.com/img/cards/jobs/faf8ee95cd9d.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Harare Institute of Technology HIT — (SCHOOL OF ENGINEERING AND TECHNOLOGY ) BIOMEDICAL ENGINEERING DEPARTMENT Lecturer (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/school-of-engineering-and-technology-biomedical-engineering-department-lecturer-1-post-68946/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a90798327c75.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "GIS ATTACHEE",
-      "link": "https://vacancymail.co.zw/jobs/gis-attachee-68945/",
-      "image": "https://mutapatimes.com/img/cards/jobs/86a459e7ac93.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Harare Institute of Technology HIT — SCHOOL OF INFORMATION SCIENCE AND TECHNOLOGY ) SOFTWARE ENGINEERING DEPARTMENT Lecturer/Senior Lecturer/Associate Professor/Professor (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/school-of-information-science-and-technology-software-engineering-department-lecturersenior-lecturerassociate-professorprofessor-1-post-68944/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b8dad3122c3b.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chief Financial Officer",
-      "link": "https://vacancymail.co.zw/jobs/chief-financial-officer-68943/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ddc717097279.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrative Assistant/ Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/administrative-assistant-receptionist-68942/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9efdc096b563.png",
       "pubDate": "2026-08-25T22:00:00+00:00",
       "category": "Jobs"
     }
