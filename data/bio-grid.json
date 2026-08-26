@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-26T00:59:49+00:00",
+  "fetched_at": "2026-08-26T03:50:26+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Sinomine Secures Additional Zimbabwe Lithium Export Quota",
+      "link": "https://mutapatimes.com/news/2026-08-26-sinomine-secures-additional-zimbabwe-lithium-export-quota-15bdd4",
+      "image": "https://mutapatimes.com/img/cards/news/c88a9cc8cfed.png",
+      "pubDate": "2026-08-26T01:09:54+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Admin & support is the steepest-declining sector at −8.8% YoY.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 26 Aug 2026: 1 USD = 26.63 ZWG · best from UK £100 → $133.15 via Wise",
+      "title": "Zim FX snapshot 26 Aug 2026: 1 USD = 26.63 ZWG · best from UK £100 → $133.22 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-08-26",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-08-26",
       "pubDate": "2026-08-25T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Administrative Assistant/ Receptionist",
       "link": "https://vacancymail.co.zw/jobs/administrative-assistant-receptionist-68942/",
       "image": "https://mutapatimes.com/img/cards/jobs/9efdc096b563.png",
-      "pubDate": "2026-08-25T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MSF Médecins Sans Frontières International — Nurse Mentor",
-      "link": "https://vacancymail.co.zw/jobs/nurse-mentor-68941/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e116f3e866c9.png",
       "pubDate": "2026-08-25T22:00:00+00:00",
       "category": "Jobs"
     }
