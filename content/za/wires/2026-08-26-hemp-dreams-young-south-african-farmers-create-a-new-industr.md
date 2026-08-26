@@ -1,0 +1,16 @@
+---
+title: "Hemp dreams — young South African farmers create a new industry against all odds"
+date: 2026-08-26T10:19:50.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Hemp dreams — young South African farmers create a new industry against all odds"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxPbGljOFNTQzkzeFByclo3S1lzMnhFUGVlRHBfb0VKVGZyUFoxNmRtS3RPdC1rUXdTQ0l3WVFUTGFFQm5lSkR6bU5pOFg4ZDRRVEpDVDNtNkV6QjhYUUxjb2FMRjJlZ0M4aFczZzlfR2pqSG9Yckp4cWRDODNXc0E0OFBiR2lkTm5WSU9mcms0V0FZRXRvUHBYX1NLOVFkcTVfZE5lbzZEZzJ5RXFJY2N4M0xKRDFOQWoxbkJ3TVpPVHpMNHM4c2lXSFh5T3U2YmJMSW5LZGd5TEROOUxETDd4a1JzdDdOQlAyR1VMWlJ4eThDMThGNzhiNmlUcmd5dnhkbTloc05XLWVlM0VWS0lRWTFkX3BsUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxPbGljOFNTQzkzeFByclo3S1lzMnhFUGVlRHBfb0VKVGZyUFoxNmRtS3RPdC1rUXdTQ0l3WVFUTGFFQm5lSkR6bU5pOFg4ZDRRVEpDVDNtNkV6QjhYUUxjb2FMRjJlZ0M4aFczZzlfR2pqSG9Yckp4cWRDODNXc0E0OFBiR2lkTm5WSU9mcms0V0FZRXRvUHBYX1NLOVFkcTVfZE5lbzZEZzJ5RXFJY2N4M0xKRDFOQWoxbkJ3TVpPVHpMNHM4c2lXSFh5T3U2YmJMSW5LZGd5TEROOUxETDd4a1JzdDdOQlAyR1VMWlJ4eThDMThGNzhiNmlUcmd5dnhkbTloc05XLWVlM0VWS0lRWTFkX3BsUQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "The three most powerful women in South African telecoms received a combined R134 million pay package"
+date: 2026-08-26T10:16:50.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "The three most powerful women in South African telecoms received a combined R134 million pay package"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSHFjQ3ZHSmdaLUFGLUJ6bXpuZnliQU1KR2FpS3puMWU1YlRIVGJ2XzNwT2xHdzJlMXBpQlhqcUY0dGE5akx5UU9wRm9rVTdzTmxFYUtyTjhlT1pERnZGSVNfNy1NSmxMUGJhLThrTGw2QUY0cE9teGhMRHM5ODF3SDJxRkhmZXkyZ0FUenkzbk9ONlNwNEdWNGw3WFZkNktFNDdtbnJrclBzRmhOWXRrRzd0RERiWHJnYmhCRXI5ZWdma0MweExtcDFKQVg2Q3c1UTZQQm12NjZSaUpCRUN6MXlIX2VwdjJiQU5F?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSHFjQ3ZHSmdaLUFGLUJ6bXpuZnliQU1KR2FpS3puMWU1YlRIVGJ2XzNwT2xHdzJlMXBpQlhqcUY0dGE5akx5UU9wRm9rVTdzTmxFYUtyTjhlT1pERnZGSVNfNy1NSmxMUGJhLThrTGw2QUY0cE9teGhMRHM5ODF3SDJxRkhmZXkyZ0FUenkzbk9ONlNwNEdWNGw3WFZkNktFNDdtbnJrclBzRmhOWXRrRzd0RERiWHJnYmhCRXI5ZWdma0MweExtcDFKQVg2Q3c1UTZQQm12NjZSaUpCRUN6MXlIX2VwdjJiQU5F?oc=5)
