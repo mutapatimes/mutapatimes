@@ -1,0 +1,16 @@
+---
+title: "Closing South Africa’s Level 9 implementation gap Why technology alone will not deliver sustainable collision prevention performance"
+date: 2026-08-26T12:47:00.000Z
+author: Mining Weekly
+category: Business
+image: 
+summary: "Closing South Africa’s Level 9 implementation gap Why technology alone will not deliver sustainable collision prevention performance"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNR1BPZUt0WlFsdG5JOU1XSEhaZzZsZ3dZYWVMT1VUMkt3WV9pOGZITmlxZEUxbnhSdTl4UG8zaWxjNVpGNFN6SVhkdm8zdllZeFhoRzVOSUgzTnZ0Q250QmZ0eDR1RldtQXM0dDIzNjlvTXRSaXhEX0s4MjhnbUpvS2pob3BpSUFFTXhOTGk0ZmZNd2E0b2kyWWtoc3lvbC1jTnU2cU5zSlR4eGJaNldjWTNwdTFhV24wSW1TWjBTdXhJUVFuZXAxYTNQQlg2M0NUSWJCb0E3MWZobmJKdXF3cGZMTnRacmRHMWtUcnUzLVhJT0Jjalczd25hdWJqY2tRU2RmZk9ZVHFWUE0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Weekly.*
+[Read original article](https://news.google.com/rss/articles/CBMiiwJBVV95cUxNR1BPZUt0WlFsdG5JOU1XSEhaZzZsZ3dZYWVMT1VUMkt3WV9pOGZITmlxZEUxbnhSdTl4UG8zaWxjNVpGNFN6SVhkdm8zdllZeFhoRzVOSUgzTnZ0Q250QmZ0eDR1RldtQXM0dDIzNjlvTXRSaXhEX0s4MjhnbUpvS2pob3BpSUFFTXhOTGk0ZmZNd2E0b2kyWWtoc3lvbC1jTnU2cU5zSlR4eGJaNldjWTNwdTFhV24wSW1TWjBTdXhJUVFuZXAxYTNQQlg2M0NUSWJCb0E3MWZobmJKdXF3cGZMTnRacmRHMWtUcnUzLVhJT0Jjalczd25hdWJqY2tRU2RmZk9ZVHFWUE0?oc=5)
