@@ -1,0 +1,16 @@
+---
+title: "South Africa needs an emergency food plan — now"
+date: 2026-08-26T20:19:52.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South Africa needs an emergency food plan — now"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxNbHhpQm43MExXMkgzTHFsMDZ1QjJucFpDNlQyaTJONi15R3ZGZm5EVkRsamoxTDg4WVlrbVZINjJMX3F3RW9wMi1IRm53bzFjd3JlLXZXVTJtVFVuODlZU1pxNzIyUGpZcXo2bGFZU1E4NUtlbVlSM0Y1V0tzNzhlQ1JSZW9teHRNMV9JamxMdmJQR3hBTS1GbHZHVlVPUXlhbndCdFA2dUtSMFg2RmVBbkhWSXh4dDFUMTFpaDRtZE8wUFBSQ3hOVm01dXJnVnNaMDlaVmNQYUhNQktGT0RSUVBSTkFBQzI3MEQ1UFlQMjBlX2duWS1relowRkQ4enExbmpnQ3dpOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxNbHhpQm43MExXMkgzTHFsMDZ1QjJucFpDNlQyaTJONi15R3ZGZm5EVkRsamoxTDg4WVlrbVZINjJMX3F3RW9wMi1IRm53bzFjd3JlLXZXVTJtVFVuODlZU1pxNzIyUGpZcXo2bGFZU1E4NUtlbVlSM0Y1V0tzNzhlQ1JSZW9teHRNMV9JamxMdmJQR3hBTS1GbHZHVlVPUXlhbndCdFA2dUtSMFg2RmVBbkhWSXh4dDFUMTFpaDRtZE8wUFBSQ3hOVm01dXJnVnNaMDlaVmNQYUhNQktGT0RSUVBSTkFBQzI3MEQ1UFlQMjBlX2duWS1relowRkQ4enExbmpnQ3dpOA?oc=5)
