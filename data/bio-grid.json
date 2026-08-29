@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-08-28T23:49:53+00:00",
+  "fetched_at": "2026-08-29T05:18:24+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Is Zimbabwe’s economy finally turning the corner?",
+      "link": "https://mutapatimes.com/articles/2026-08-29-is-zimbabwes-economy-finally-turning-the-corner",
+      "image": "https://mutapatimes.com/img/cards/news/b1298761823f.png",
+      "pubDate": "2026-08-29T02:40:30+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Mining leads on extractive vs industrial — mining $2.9B, manufacturing $2.8B.",
@@ -471,14 +479,6 @@
       "title": "Car Detailer",
       "link": "https://vacancymail.co.zw/jobs/car-detailer-69006/",
       "image": "https://mutapatimes.com/img/cards/jobs/b15e970a37bc.png",
-      "pubDate": "2026-08-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Business Development Officer",
-      "link": "https://vacancymail.co.zw/jobs/business-development-officer-69005/",
-      "image": "https://mutapatimes.com/img/cards/jobs/be87c9fa285e.png",
       "pubDate": "2026-08-28T22:00:00+00:00",
       "category": "Jobs"
     }
