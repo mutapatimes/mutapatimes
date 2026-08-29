@@ -1,0 +1,16 @@
+---
+title: "MAKHUDU SEFARA | We can’t allow the spectre of violence to undermine South Africa’s democratic freedoms"
+date: 2026-08-29T22:04:15.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "MAKHUDU SEFARA | We can’t allow the spectre of violence to undermine South Africa’s democratic freedoms"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdmdHSnB6SUZfYW1iaFFxQWt4Y2xNVnNGdW5QUVdqc2ozZExVekFCM1JsN1FxQjNYQ3pQVUZqU1Axc2dSRWctX3MxZlhQR184VzFrTVFYVnRqLVF3ZnY2NjYzS2JTVm9xNmdYSTc5aEZRWnpoSE1QbDUtVVYwNXRGQ2hYZDdkSE5Bc04zdUwyYmZ5VnQyM3Jjcy1od24yZXpuVVlBOTdDYXZ4Ml8wTVJjU0NHa0cyY3BlcTFvcTc3cHp2dzVQYlVoWGFsajVDMVRXR0NUcmtJWHZlOVdOSDNuTVg1SGxDOXd6NjB5NjVCU2dicko3M1VMVXRScG14UC1ZTUlmY0ZleC1FUU1k?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMijAJBVV95cUxNdmdHSnB6SUZfYW1iaFFxQWt4Y2xNVnNGdW5QUVdqc2ozZExVekFCM1JsN1FxQjNYQ3pQVUZqU1Axc2dSRWctX3MxZlhQR184VzFrTVFYVnRqLVF3ZnY2NjYzS2JTVm9xNmdYSTc5aEZRWnpoSE1QbDUtVVYwNXRGQ2hYZDdkSE5Bc04zdUwyYmZ5VnQyM3Jjcy1od24yZXpuVVlBOTdDYXZ4Ml8wTVJjU0NHa0cyY3BlcTFvcTc3cHp2dzVQYlVoWGFsajVDMVRXR0NUcmtJWHZlOVdOSDNuTVg1SGxDOXd6NjB5NjVCU2dicko3M1VMVXRScG14UC1ZTUlmY0ZleC1FUU1k?oc=5)
