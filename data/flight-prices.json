@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-29",
+  "fetched_at": "2026-08-30",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -287,7 +287,7 @@
           "currency": ""
         },
         {
-          "price": 8367,
+          "price": 8421,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -349,6 +349,15 @@
       },
       "monthly": [
         {
+          "price": 4994,
+          "airline": "FN",
+          "departure_at": "2026-08-31",
+          "return_at": "2026-09-30",
+          "stops": 0,
+          "duration": null,
+          "currency": ""
+        },
+        {
           "price": 1588,
           "airline": "FA",
           "departure_at": "2026-09-15",
@@ -405,7 +414,7 @@
           "currency": ""
         },
         {
-          "price": 3673,
+          "price": 3697,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -414,7 +423,7 @@
           "currency": ""
         },
         {
-          "price": 3725,
+          "price": 3749,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -423,12 +432,12 @@
           "currency": ""
         },
         {
-          "price": 4645,
-          "airline": "Trip.com",
+          "price": 4986,
+          "airline": "Авиасейлс",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 220,
+          "duration": 205,
           "currency": ""
         }
       ],
@@ -442,19 +451,19 @@
         {
           "endpoint": "monthly",
           "origin": "JNB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
           "endpoint": "calendar",
           "origin": "JNB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 13,
+          "n": 12,
           "error": null
         }
       ],
@@ -534,12 +543,21 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1176,
+          "price": 2183,
           "airline": "KQ",
-          "departure_at": "2026-09-01",
+          "departure_at": "2026-08-31",
+          "return_at": "2026-09-30",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 1195,
+          "airline": "WB",
+          "departure_at": "2026-09-27",
           "return_at": "",
-          "stops": 2,
-          "duration": 730,
+          "stops": 1,
+          "duration": 980,
           "currency": ""
         },
         {
@@ -590,7 +608,16 @@
           "currency": ""
         },
         {
-          "price": 2205,
+          "price": 2180,
+          "airline": "Авиасейлс",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1215,
+          "currency": ""
+        },
+        {
+          "price": 2195,
           "airline": "Kupi.com",
           "departure_at": "",
           "return_at": "",
@@ -599,7 +626,7 @@
           "currency": ""
         },
         {
-          "price": 2224,
+          "price": 2214,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -612,29 +639,29 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 3,
+          "n": 2,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "DXB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
           "endpoint": "calendar",
           "origin": "DXB",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 2,
+          "n": 3,
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 8
     },
     "toronto-to-harare": {
       "origin": "YYZ",
