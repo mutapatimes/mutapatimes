@@ -1,22 +1,62 @@
 {
-  "fetched_at": "2026-08-30T03:11:42+00:00",
+  "fetched_at": "2026-08-30T11:05:57+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Heritage-based products are Zim’s next export frontier",
-      "link": "https://mutapatimes.com/articles/2026-08-30-heritage-based-products-are-zims-next-export-frontier",
-      "image": "https://mutapatimes.com/img/cards/news/40145c34eb49.png",
-      "pubDate": "2026-08-30T00:35:52+00:00",
-      "category": "Culture"
+      "title": "Zimbabwe: At least 27 people dead after minibus and truck collide head on",
+      "link": "https://mutapatimes.com/articles/2026-08-30-zimbabwe-at-least-27-people-dead-after-minibus-and-truck-col",
+      "image": "https://mutapatimes.com/img/cards/news/fdc96ca1d45e.png",
+      "pubDate": "2026-08-30T07:39:33+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Heritage-based products are Zim’s next export frontier",
-      "link": "https://mutapatimes.com/news/2026-08-30-heritage-based-products-are-zim-s-next-export-frontier-9f68bd",
-      "image": "https://mutapatimes.com/img/cards/news/6cc15fe00c4d.png",
-      "pubDate": "2026-08-30T00:35:52+00:00",
+      "title": "Zimbabwe - DRC war - reflections as DRC commemorates its anniversary",
+      "link": "https://mutapatimes.com/articles/2026-08-30-zimbabwe-drc-war-reflections-as-drc-commemorates-its-anniver",
+      "image": "https://mutapatimes.com/img/cards/news/3951f9b096ea.png",
+      "pubDate": "2026-08-30T04:00:00+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe - DRC war - reflections as DRC commemorates its anniversary",
+      "link": "https://mutapatimes.com/news/2026-08-30-zimbabwe-drc-war-reflections-as-drc-commemorates-its-anniversary-25c9f2",
+      "image": "https://mutapatimes.com/img/cards/news/a6fae4655a4c.png",
+      "pubDate": "2026-08-30T04:00:00+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Grow for the shelves, retailers urge farmers",
+      "link": "https://mutapatimes.com/articles/2026-08-29-grow-for-the-shelves-retailers-urge-farmers",
+      "image": "https://mutapatimes.com/img/cards/news/591be8533b14.png",
+      "pubDate": "2026-08-29T22:11:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Grow for the shelves, retailers urge farmers",
+      "link": "https://mutapatimes.com/news/2026-08-29-grow-for-the-shelves-retailers-urge-farmers-957890",
+      "image": "https://mutapatimes.com/img/cards/news/66a96871cad6.png",
+      "pubDate": "2026-08-29T22:11:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s improved risk profile to attract more capital",
+      "link": "https://mutapatimes.com/articles/2026-08-29-zimbabwes-improved-risk-profile-to-attract-more-capital",
+      "image": "https://mutapatimes.com/img/cards/news/79b2ed3cc0f4.png",
+      "pubDate": "2026-08-29T22:06:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Sesame: Climate-smart crop with a growing market",
+      "link": "https://mutapatimes.com/articles/2026-08-29-sesame-climate-smart-crop-with-a-growing-market",
+      "image": "https://mutapatimes.com/img/cards/news/dba6adfd2d2d.png",
+      "pubDate": "2026-08-29T22:06:42+00:00",
+      "category": "Business"
     },
     {
       "kind": "economy",
@@ -36,7 +76,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 30 Aug: Harare overcast · high 22° / low 9°",
+      "title": "Zim weather 30 Aug: Harare overcast · high 22° / low 11°",
       "link": "https://mutapatimes.com/weather?d=2026-08-30",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-30",
       "pubDate": "2026-08-29T22:00:00+00:00",
@@ -73,6 +113,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-29T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Repoquad Investments Pty ltd — Warehouse Controller- Only For Candidates Based in Vic Falls",
+      "link": "https://vacancymail.co.zw/jobs/warehouse-controller-only-for-candidates-based-in-vic-falls-69067/",
+      "image": "https://mutapatimes.com/img/cards/jobs/28359d51310c.png",
+      "pubDate": "2026-08-29T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Repoquad Investments Pty ltd — Administration & Accounts Assistant - Bulawayo Based Only Candidates Need to Apply",
+      "link": "https://vacancymail.co.zw/jobs/administration-accounts-assistant-bulawayo-based-only-candidates-need-to-apply-69066/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7d221dbdf1ff.png",
+      "pubDate": "2026-08-29T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marketing/ Digital Marketing Officer",
+      "link": "https://vacancymail.co.zw/jobs/marketing-digital-marketing-officer-69065/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9d0cca8dfa60.png",
+      "pubDate": "2026-08-29T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Assistant Loan Officer",
       "link": "https://vacancymail.co.zw/jobs/assistant-loan-officer-69016/",
       "image": "https://mutapatimes.com/img/cards/jobs/362ce57b5d87.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fidelity Life Assurance — Forensic Officer",
-      "link": "https://vacancymail.co.zw/jobs/forensic-officer-69015/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8c4d03247157.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Technician - ZTrack",
-      "link": "https://vacancymail.co.zw/jobs/technician-ztrack-69014/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1269ef73d1ff.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TV Sales — Salesperson",
-      "link": "https://vacancymail.co.zw/jobs/salesperson-69013/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0419445fa010.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Duly Holdings — Business Unit Manager - Dulys Bulawayo",
-      "link": "https://vacancymail.co.zw/jobs/business-unit-manager-dulys-bulawayo-69012/",
-      "image": "https://mutapatimes.com/img/cards/jobs/35ba8c414511.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Doctor",
-      "link": "https://vacancymail.co.zw/jobs/doctor-69011/",
-      "image": "https://mutapatimes.com/img/cards/jobs/98f0e8dced91.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Driver",
-      "link": "https://vacancymail.co.zw/jobs/driver-69010/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ea943cc596e4.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Billing Clerk",
-      "link": "https://vacancymail.co.zw/jobs/billing-clerk-69009/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4b29f122e341.png",
-      "pubDate": "2026-08-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Black Shark Protection Services — SHEQ OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/sheq-officer-69007/",
-      "image": "https://mutapatimes.com/img/cards/jobs/006de7c6b4b0.png",
       "pubDate": "2026-08-29T22:00:00+00:00",
       "category": "Jobs"
     }
