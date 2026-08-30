@@ -1,0 +1,16 @@
+---
+title: "‘The Terminator’ has surprising implications for SA’s platinum group metals industry"
+date: 2026-08-30T14:08:33.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "‘The Terminator’ has surprising implications for SA’s platinum group metals industry"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimgJBVV95cUxQU2hPT2dOSU5nUFJDVmF2SVZ1M3lEb1dZMjlza2dyUVd4M3BTeDlSUFRUeERab29uNV9IZkJGX0pjV0pGWTByZWNrRlpMRXJEeWR4LS1vSnpXbWdaMFgySTVNcHZLSnd2RVFXVWZoS1M3LWVTemhUTW4xWXJtcjRBSE00OFliUlktN3dOaU8tS05TNWROWmFDV3FrNV9ZZXlPVThSRVE0SVVkSWxKWk1uN29UemtjOFk5LWx0WmZJZTVYbGw1RnVCaWJ6YlA5aml6UHgwRjlTYkVDUEJNREEtYURkUWlidEtfMnFmekRuV19Wa1BPUG1JZHNyeXB4LXRUQXhWN0dMUE9paXhXelFtMkwwRTQtQlFKaWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMimgJBVV95cUxQU2hPT2dOSU5nUFJDVmF2SVZ1M3lEb1dZMjlza2dyUVd4M3BTeDlSUFRUeERab29uNV9IZkJGX0pjV0pGWTByZWNrRlpMRXJEeWR4LS1vSnpXbWdaMFgySTVNcHZLSnd2RVFXVWZoS1M3LWVTemhUTW4xWXJtcjRBSE00OFliUlktN3dOaU8tS05TNWROWmFDV3FrNV9ZZXlPVThSRVE0SVVkSWxKWk1uN29UemtjOFk5LWx0WmZJZTVYbGw1RnVCaWJ6YlA5aml6UHgwRjlTYkVDUEJNREEtYURkUWlidEtfMnFmekRuV19Wa1BPUG1JZHNyeXB4LXRUQXhWN0dMUE9paXhXelFtMkwwRTQtQlFKaWc?oc=5)
