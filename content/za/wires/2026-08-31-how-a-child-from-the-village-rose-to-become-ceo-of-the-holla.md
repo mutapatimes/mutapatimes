@@ -1,0 +1,16 @@
+---
+title: "How ‘a child from the village’ rose to become CEO of the Hollard Foundation"
+date: 2026-08-31T20:48:47.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "How ‘a child from the village’ rose to become CEO of the Hollard Foundation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxQX2UwYi1hZWRNMEloeHo4X0hFR3ZDZExsNWdhb3YwZTdadUVMNlhXT2VvRmppME1FYnF3V1IzcmtVRWFzd3Z0M0x1TmdWTTJLNmkxdk44WlJrVTVPbjFxZnlMc3BqdFFDSUtWNnE1TTJyUmh0eHhuMHZLTExXaHFSczZQeHZ2Q3J6RjBodTRiS3liSGtkX25CU1pLV3l3UC1iaF9HVHFZZWRKNGk4SjVWS1gxYi1xZzVyMk90XzAyZmwtWW52QUVoRk94elVjWXd6Y2pNVnZBcHh3Vi13MksydXZmZUpWUU9TUGE2UjZ3Y3lzZ2FNdElzbXNNZ3ppQk5OMXZQVEJSWVRGRko0OUs3X013eE55SnUzcjI3NnRGMjNCSzgxZk1QZHNqUzIzZnFXV2w4eXR5aXBOb2dhY3c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxQX2UwYi1hZWRNMEloeHo4X0hFR3ZDZExsNWdhb3YwZTdadUVMNlhXT2VvRmppME1FYnF3V1IzcmtVRWFzd3Z0M0x1TmdWTTJLNmkxdk44WlJrVTVPbjFxZnlMc3BqdFFDSUtWNnE1TTJyUmh0eHhuMHZLTExXaHFSczZQeHZ2Q3J6RjBodTRiS3liSGtkX25CU1pLV3l3UC1iaF9HVHFZZWRKNGk4SjVWS1gxYi1xZzVyMk90XzAyZmwtWW52QUVoRk94elVjWXd6Y2pNVnZBcHh3Vi13MksydXZmZUpWUU9TUGE2UjZ3Y3lzZ2FNdElzbXNNZ3ppQk5OMXZQVEJSWVRGRko0OUs3X013eE55SnUzcjI3NnRGMjNCSzgxZk1QZHNqUzIzZnFXV2w4eXR5aXBOb2dhY3c?oc=5)

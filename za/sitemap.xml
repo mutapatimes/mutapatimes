@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-08-31T13:56:14+00:00</lastmod>
+    <lastmod>2026-08-31T20:53:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -15925,7 +15925,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-30-marcus-rashfords-manchester-united-return-feels-like-a-marri.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-30-meet-the-badger-sas-newest-world-boxing-champion.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-30-michael-carrick-hails-manchester-uniteds-grit-after-rout-of.html</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16069,6 +16081,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-30-springboks-beat-all-blacks-33-26-in-cape-town-in-second-test.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-30-sugar-tariff-benchmark-rises-to-us785-but-industry-says-more.html</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -16165,7 +16183,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-aa-backs-move-for-tougher-car-safety-standards-in-sa.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-acsa-under-fire-for-unfairly-favouring-state-capture-accused.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-ailing-novak-djokovic-falls-in-us-open-first-round-for-earli.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-airlink-defends-rugby-match-flypast-that-sparked-safety-deba.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-airlink-flyover-was-the-low-pass-over-dhl-stadium-too-risky.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-all-blacks-need-answer-to-south-africas-power-game-barrett.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16178,6 +16226,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-as-south-african-military-falters-private-arms-makers-go-glo.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-bidvest-earmarks-r25bn-for-freight-capex-flags-confidence-in.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16196,6 +16250,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-cape-town-fiasco-thousands-of-all-blacks-fans-left-without-t.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-cardoso-versus-the-calendar-round-two-south-africa-will-say.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16237,6 +16297,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-deon-fourie-and-wife-jean-marie-celebrate-his-record-breakin.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-dramatically-low-flyby-by-passenger-jets-over-packed-south-a.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-eskom-doubles-profit-after-ending-south-african-power-outage.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-eskom-records-second-year-in-the-green.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-fighting-for-equal-opportunity-colleen-mcauslands-blueprint.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-g20-finance-officials-gather-in-us-as-iran-war-grips-global.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16244,6 +16334,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-hallyu-fans-in-africa-surge-196-fold-as-kotra-pushes-k-consu.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-how-a-child-from-the-village-rose-to-become-ceo-of-the-holla.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16267,6 +16363,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-jakkie-cilliers-opens-up-about-a-lifetime-spent-studying-afr.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-joburgs-dirtiest-river-may-lose-its-only-champion.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16285,6 +16387,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-kzn-hawks-officer-denies-having-personal-relationship-with-t.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-lets-talk-about-that-nail-biting-airlink-flyover.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16292,6 +16400,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-lorenzo-davids-coloured-party-leaders-betray-their-own-peopl.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-manchester-city-gazump-spurs-over-iliman-ndiaye-and-eye-enzo.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16339,7 +16453,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-new-sugar-tariff-lands-between-dismayed-producers-and-bevera.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-opinion-sa-is-one-step-closer-to-a-new-tb-vaccine-but-there.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-pots-of-gold-at-the-end-of-championship-rainbows.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16351,7 +16477,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-ramaphosa-meets-eskom-board-on-energy-reform-path.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-rescue-efforts-continue-on-both-sides-of-nepal-tibet-border.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-rip-joggie-jansen-how-his-springbok-journey-began-at-just-16.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-sa-brazil-trade-pact-favours-brazil-blsa-chief-busi-mavuso-w.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16375,7 +16519,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-sa-rugby-pay-tribute-to-bok-centre-joggie-jansen.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-sa-tennis-ace-lloyd-harris-cruises-into-us-open-second-round.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-sarb-launches-new-r2-coins-honouring-charlotte-maxeke-and-19.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16405,6 +16561,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-silver-sprint-hamish-lovemore-claims-5000m-medal-in-poznan.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-sindiswe-chikunga-clarifies-2023-meeting-with-taxi-boss-joe.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16412,6 +16574,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-soccershopbet-south-africa-login.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-south-africa-make-one-change-to-squad-for-third-test-v-new-z.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16459,6 +16627,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-state-slams-mapisa-nqakulas-discharge-bid-as-fishing-expedit.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-the-former-discovery-executive-who-paid-r16-billion-for-stak.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16477,6 +16651,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-tinubu-on-xenophobic-attacks-in-south-africa-tinubu-report-x.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-up-financially-supported-58-of-spring-graduates.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -16484,6 +16664,36 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-08-31-uwc-honours-changemakers-with-honorary-doctorates.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-we-give-the-lowdown-on-airlinks-flyover-fuel-price-hike-loom.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-what-sars-knows-about-your-financial-affairs.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-why-628-of-young-south-africans-cannot-find-work.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-zanzibar-bags-three-top-african-tourism-titles.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-08-31-zuma-mbeki-bid-to-have-justice-khampepe-recuse-herself-from.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -29167,6 +29377,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-hospersa-unemployed-doctors-can-remedy-south-africa-s-healthcare-crisis-98bf4c</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-how-a-south-african-town-cleaned-up-its-polluted-river-using-stones-wood-and-00dcd3</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-inside-the-rooms-where-johannesburg-s-rap-culture-lives-4f6ab5</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -29228,6 +29450,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-ndb-and-south-africa-sign-us-405m-loan-agreements-for-infrastructure-projects-f181f3</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-neo-energy-metals-secures-key-regulatory-approval-for-south-african-mining-aa5618</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -29365,6 +29593,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-south-africa-says-goodbye-to-its-beloved-monkey-man-steve-smit-b200a0</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-south-africa-scam-alert-south-african-police-service-not-offering-entry-level-04e527</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -29384,6 +29618,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-south-african-ballet-competition-inspires-a-new-generation-of-young-dancers-b395ad</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-south-african-coach-sudesh-singh-helps-malawi-make-history-in-morocco-bd4396</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -29420,6 +29660,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-springboks-aims-to-reclaim-world-no-1-ranking-against-all-blacks-b5f7b5</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-springboks-beat-all-blacks-33-26-in-cape-town-in-second-test-thriller-9673ec</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -29486,6 +29732,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-08-31-unemployed-doctors-could-alleviate-pressure-on-south-africa-s-public-healthcare-6c16da</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-08-31-what-happens-to-elephants-that-stray-from-kruger-park-south-african-policy-0db1e0</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
