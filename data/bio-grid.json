@@ -1,7 +1,63 @@
 {
-  "fetched_at": "2026-08-31T03:05:53+00:00",
+  "fetched_at": "2026-08-31T12:29:36+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "10 businesses in Zimbabwean billionaire Simon Rudland's empire, from cigarettes to trucks",
+      "link": "https://mutapatimes.com/articles/2026-08-31-10-businesses-in-zimbabwean-billionaire-simon-rudlands-empir",
+      "image": "https://mutapatimes.com/img/cards/news/0801dbca4f45.png",
+      "pubDate": "2026-08-31T08:43:29+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Govt Declares State of Disaster After Highway Crash Claims 27 Lives",
+      "link": "https://mutapatimes.com/news/2026-08-31-zimbabwe-govt-declares-state-of-disaster-after-highway-crash-claims-27-lives-0f4d43",
+      "image": "https://mutapatimes.com/img/cards/news/867116ac2555.png",
+      "pubDate": "2026-08-31T04:19:54+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Church body alerts on road safety",
+      "link": "https://mutapatimes.com/articles/2026-08-30-church-body-alerts-on-road-safety",
+      "image": "https://mutapatimes.com/img/cards/news/1e42d2fade78.png",
+      "pubDate": "2026-08-30T23:58:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Legal Discussions with Vengai Madzima: Data Protection Compliance in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-08-30-legal-discussions-with-vengai-madzima-data-protection-compli",
+      "image": "https://mutapatimes.com/img/cards/news/0bd39f02da18.png",
+      "pubDate": "2026-08-30T23:30:00+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Legal Discussions with Vengai Madzima: Data Protection Compliance in Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-08-30-legal-discussions-with-vengai-madzima-data-protection-compliance-in-zimbabwe-556c4c",
+      "image": "https://mutapatimes.com/img/cards/news/5a402d9bb496.png",
+      "pubDate": "2026-08-30T23:30:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s fragmented ESG laws create compliance burden for companies, legal expert warns",
+      "link": "https://mutapatimes.com/articles/2026-08-30-zimbabwes-fragmented-esg-laws-create-compliance-burden-for-c",
+      "image": "https://mutapatimes.com/img/cards/news/f416b6db2e2c.png",
+      "pubDate": "2026-08-30T23:05:57+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s fragmented ESG laws create compliance burden for companies, legal expert warns",
+      "link": "https://mutapatimes.com/news/2026-08-30-zimbabwe-s-fragmented-esg-laws-create-compliance-burden-for-companies-legal-f655db",
+      "image": "https://mutapatimes.com/img/cards/news/1738661d6907.png",
+      "pubDate": "2026-08-30T23:05:57+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim current account in 2025: $1.8B. Five-year trend shows persistent near-balance.",
@@ -20,7 +76,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 31 Aug: Harare overcast · high 22° / low 11°",
+      "title": "Zim weather 31 Aug: Harare overcast · high 25° / low 13°",
       "link": "https://mutapatimes.com/weather?d=2026-08-31",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-08-31",
       "pubDate": "2026-08-30T22:00:00+00:00",
@@ -57,6 +113,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-30T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited — Strucutral Mechanical Platework and Pipework Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/strucutral-mechanical-platework-and-pipework-supervisor-69081/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e93b9dbb00e1.png",
+      "pubDate": "2026-08-30T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited — Electricial & Instruments and Control Supervior C5",
+      "link": "https://vacancymail.co.zw/jobs/electricial-instruments-and-control-supervior-c5-69080/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b331c3c35640.png",
+      "pubDate": "2026-08-30T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited — Senior Officer IT",
+      "link": "https://vacancymail.co.zw/jobs/senior-officer-it-69079/",
+      "image": "https://mutapatimes.com/img/cards/jobs/395502584372.png",
+      "pubDate": "2026-08-30T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -399,86 +479,6 @@
       "title": "Mashambanzou Care Trust — Graduate Finance Intern",
       "link": "https://vacancymail.co.zw/jobs/graduate-finance-intern-69030/",
       "image": "https://mutapatimes.com/img/cards/jobs/925bd21a436a.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-69029/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4e682f79fe0e.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing Officer",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-69028/",
-      "image": "https://mutapatimes.com/img/cards/jobs/580d60e45079.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ICT Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/ict-graduate-trainee-69027/",
-      "image": "https://mutapatimes.com/img/cards/jobs/addc5432653e.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Procurement Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/procurement-graduate-trainee-69026/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2bdfb866c1e2.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Lightguard Security — Accounting intern",
-      "link": "https://vacancymail.co.zw/jobs/accounting-intern-69025/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c73922d7b96f.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe School of Mines ~~ 0 — Registry Intern",
-      "link": "https://vacancymail.co.zw/jobs/registry-intern-69024/",
-      "image": "https://mutapatimes.com/img/cards/jobs/44b523c7e739.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Spoton Towing & Recovery — Truck Driver",
-      "link": "https://vacancymail.co.zw/jobs/truck-driver-69023/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d1602e082651.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — PUMP FITTER",
-      "link": "https://vacancymail.co.zw/jobs/pump-fitter-69022/",
-      "image": "https://mutapatimes.com/img/cards/jobs/97c2e4f2ea95.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Client Service Consultant",
-      "link": "https://vacancymail.co.zw/jobs/client-service-consultant-69021/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c4d43ffbbce1.png",
-      "pubDate": "2026-08-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mukuru — Retail Sales & Operations Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/retail-sales-operations-supervisor-69020/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b389d40f742a.png",
       "pubDate": "2026-08-30T22:00:00+00:00",
       "category": "Jobs"
     }
