@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-31T05:32:17.002082+00:00",
+  "fetched_at": "2026-08-31T13:46:58.484238+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -157,6 +157,33 @@
       "baths": "2"
     },
     {
+      "title": "Charming 3-Bed Brick Home with Borehole & Lapa",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp254283",
+      "price": "USD 85,000",
+      "location": "Mahatshula, Bulawayo North",
+      "image": "https://www.property.co.zw/uploadedfiles/74/e7/d3/74e7d3d4-776a-4f39-8fc7-cc6b8133587c_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "Arlington 4BR Home with Modern Kitchen & Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-cami249349",
+      "price": "USD 350,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/50/e4/5e/50e45e1a-1c02-4861-9b67-7ba9d60d1965_thumbnail591.webp",
+      "beds": "4",
+      "baths": "4"
+    },
+    {
+      "title": "Ruwa Springvale house for sale by private treaty",
+      "url": "https://www.property.co.zw/for-sale/houses-grm248685",
+      "price": "",
+      "location": "Springvale, Ruwa",
+      "image": "https://www.property.co.zw/uploadedfiles/ac/6d/ef/ac6def19-be60-4405-b2a1-1817f6ac98da_thumbnail591.webp",
+      "beds": "3",
+      "baths": ""
+    },
+    {
       "title": "Erasmus Park Ruwa GEM",
       "url": "https://www.property.co.zw/for-sale/houses-rws253678",
       "price": "USD 80,000",
@@ -173,33 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/77/45/6b/77456bc6-d718-48f1-8271-96dcaaeb2db8_thumbnail591.webp",
       "beds": "6",
       "baths": "3"
-    },
-    {
-      "title": "Exquisite 2-Acre Property",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp178895",
-      "price": "USD 220,000",
-      "location": "Glengarry, Bulawayo North",
-      "image": "https://www.property.co.zw/uploadedfiles/5d/34/7c/5d347cba-fa4e-4d72-a101-a2271d53d1a2_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
-    },
-    {
-      "title": "Spacious 4-Bedroom Home For Sale In Knowe Phase 2, Norton",
-      "url": "https://www.property.co.zw/for-sale/houses-trz254112",
-      "price": "USD 105,000",
-      "location": "Knowe, Norton",
-      "image": "https://www.property.co.zw/uploadedfiles/f2/c4/a9/f2c4a9f0-fa01-483a-aef9-0871375a2c10_thumbnail591.webp",
-      "beds": "4",
-      "baths": ""
-    },
-    {
-      "title": "fully furnished house/lodge in kariba",
-      "url": "https://www.property.co.zw/for-sale/houses-mac249317",
-      "price": "USD 200,000",
-      "location": "Kariba",
-      "image": "https://www.property.co.zw/uploadedfiles/79/c6/20/79c620fe-5e80-4bcf-b8fb-b3a57f807c06_thumbnail591.webp",
-      "beds": "4",
-      "baths": "4"
     }
   ]
 }
