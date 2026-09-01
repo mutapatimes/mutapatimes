@@ -1,0 +1,16 @@
+---
+title: "Rising violence against cyclists threatens Stellenbosch’s reputation as SA’s bike mecca"
+date: 2026-09-01T02:33:52.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Rising violence against cyclists threatens Stellenbosch’s reputation as SA’s bike mecca"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX2VLc29iR1E3enhSUEFRQ19xYkhqRXBRMmQ5c1JLdldJaVY5UC1KNlE1Skp5andnemdzZVJBVzRtUWZMOVFQOElLNjlpTHJGSzFqUGJRdDd5MWRNZkdMT3Zrd2RDdHJxVkd4RzYtS1hHeWpYd2VzM0JOWDQ0a0NmUHc1V1hTZER6bVdQWGtmLXNfY21CUlh5bHJKU2dwcnNiQjFxWDJROTRUeGZ5UDJuVDRoNG5GZnZnSjFnQTJjUUlPZUJFbTVubl9hUUZzd3F5dkw5RWRfZXB0bmF0b3FISWNTejc4UQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX2VLc29iR1E3enhSUEFRQ19xYkhqRXBRMmQ5c1JLdldJaVY5UC1KNlE1Skp5andnemdzZVJBVzRtUWZMOVFQOElLNjlpTHJGSzFqUGJRdDd5MWRNZkdMT3Zrd2RDdHJxVkd4RzYtS1hHeWpYd2VzM0JOWDQ0a0NmUHc1V1hTZER6bVdQWGtmLXNfY21CUlh5bHJKU2dwcnNiQjFxWDJROTRUeGZ5UDJuVDRoNG5GZnZnSjFnQTJjUUlPZUJFbTVubl9hUUZzd3F5dkw5RWRfZXB0bmF0b3FISWNTejc4UQ?oc=5)

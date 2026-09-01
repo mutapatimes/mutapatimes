@@ -1,0 +1,16 @@
+---
+title: "All Blacks v Springboks: Rassie Erasmus has turned rugby mind games into misconduct"
+date: 2026-09-01T07:32:14.000Z
+author: NZ Herald
+category: Sport
+image: 
+summary: "All Blacks v Springboks: Rassie Erasmus has turned rugby mind games into misconduct"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaU5wcDVHUmRvb1dLQXN5SnhsdmZveGozVUJiYlVfeGQxcHA0VmRGSXloYS1uNTRpd1Vxei1OcFBiejM5RlQ4Ui1POE9XNTFRNGpiT0lYdVEwM05zdFBWUl90cVZLN1V3cWlRanJqMXc1R3NraWRzQXA4MUlCX3NveWVaUXpGenVsRVVoY1pBVVN3blpLckVtRVZaal92Z1JMcUpqWnYzNGJ4Y2hMV3RjSHNrQ2JjcTBnOTJJRUlpUVByYnRhSnBwUkZUMFZhdnd6WUczUmt3S0o4S1AwbzlqYXlFM3BkTjJ3cXhqQVdJcUJ0Vy1TMFVqejJGOTY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by NZ Herald.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaU5wcDVHUmRvb1dLQXN5SnhsdmZveGozVUJiYlVfeGQxcHA0VmRGSXloYS1uNTRpd1Vxei1OcFBiejM5RlQ4Ui1POE9XNTFRNGpiT0lYdVEwM05zdFBWUl90cVZLN1V3cWlRanJqMXc1R3NraWRzQXA4MUlCX3NveWVaUXpGenVsRVVoY1pBVVN3blpLckVtRVZaal92Z1JMcUpqWnYzNGJ4Y2hMV3RjSHNrQ2JjcTBnOTJJRUlpUVByYnRhSnBwUkZUMFZhdnd6WUczUmt3S0o4S1AwbzlqYXlFM3BkTjJ3cXhqQVdJcUJ0Vy1TMFVqejJGOTY?oc=5)

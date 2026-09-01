@@ -1,0 +1,16 @@
+---
+title: "South Africa v New Zealand investigation announced as key data handed over"
+date: 2026-09-01T06:20:00.000Z
+author: Wales Online
+category: Sport
+image: 
+summary: "South Africa v New Zealand investigation announced as key data handed over"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWUdrUE4yQzlNa3RyVWY4QWo3NXBiUWZOVFFBRHhKTnhnbllMck1tTnFvTU9SbE9yTkEyRWlaY3I0Z2FSS2ZDUG1KSmpTM1dhcHIxdTJRX0NXM2kwTjl1U2JqTVR0SWlrSnpmaFFWWHNjdGVZQkJERmpqeXh3UU5qVk1yOVFSUE1XUlE5c2NMb3Jfd9IBlwFBVV95cUxOVEJCZ013ZWd1YzNsU2p6RkNyWHJfN0dRNEZ2Z2tIS3pBNENtM3FDNVB3WGs1Q295cTJVVUxCUjE4bWlhd3J4WHA0ZVRPXzlhaWxuc2RvbElvUV9ZWFhwTlQyOGVnblV3YXFMRVpEOHdZakpSTUMyNDNuMlg5RW9TU1lkdVBJMHhxbUU4N1lmYzd1TG1GTTJr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Wales Online.*
+[Read original article](https://news.google.com/rss/articles/CBMikgFBVV95cUxPWUdrUE4yQzlNa3RyVWY4QWo3NXBiUWZOVFFBRHhKTnhnbllMck1tTnFvTU9SbE9yTkEyRWlaY3I0Z2FSS2ZDUG1KSmpTM1dhcHIxdTJRX0NXM2kwTjl1U2JqTVR0SWlrSnpmaFFWWHNjdGVZQkJERmpqeXh3UU5qVk1yOVFSUE1XUlE5c2NMb3Jfd9IBlwFBVV95cUxOVEJCZ013ZWd1YzNsU2p6RkNyWHJfN0dRNEZ2Z2tIS3pBNENtM3FDNVB3WGs1Q295cTJVVUxCUjE4bWlhd3J4WHA0ZVRPXzlhaWxuc2RvbElvUV9ZWFhwTlQyOGVnblV3YXFMRVpEOHdZakpSTUMyNDNuMlg5RW9TU1lkdVBJMHhxbUU4N1lmYzd1TG1GTTJr?oc=5)
