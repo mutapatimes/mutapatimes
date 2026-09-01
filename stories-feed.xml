@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 21:01:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:08:03 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -281,6 +281,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Associated Belts and Bearings — Systems Administrator-Junior / Middle-Level</title>
+      <link>https://mutapatimes.com/stories/29ad2bf7f266.html</link>
+      <description>We are seeking a motivated and detail-oriented Junior/Middle-Level Systems Administrator to support the management of our ERP and inventory systems, cloud workspace, email and DNS services, and overa… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Mon, 31 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/29ad2bf7f266.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Associated Belts and Bearings</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/29ad2bf7f266.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/29ad2bf7f266.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/29ad2bf7f266.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Secondary Book Press — Sales and Marketing Industrial Attachment</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/a66d4def3bcc.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/a66d4def3bcc.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/a66d4def3bcc.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited — Documents Controller C3</title>
-      <link>https://mutapatimes.com/stories/5b1ded14b5bc.html</link>
-      <description>Zimbabwe Platinum Mines (Pvt) Limited (ZIMPLATS) is the largest producer of platinum group metals in Zimbabwe It owns and operates the Ngezi Underground Mines, the Ngezi Concentrator Plant, and the S… Selous · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 31 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/5b1ded14b5bc.html</guid>
-      <category>Jobs</category>
-      <dc:creator>ZIMPLATS Zimbabwe Platinum Mines (Pvt) Limited</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/5b1ded14b5bc.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5b1ded14b5bc.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/5b1ded14b5bc.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
