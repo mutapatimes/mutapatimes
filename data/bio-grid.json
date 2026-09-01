@@ -1,7 +1,55 @@
 {
-  "fetched_at": "2026-09-01T00:20:06+00:00",
+  "fetched_at": "2026-09-01T08:14:02+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Samoa vs Zimbabwe | Zimbabwe vs Samoa | World Rugby Nations Cup Live",
+      "link": "https://mutapatimes.com/articles/2026-09-01-samoa-vs-zimbabwe-zimbabwe-vs-samoa-world-rugby-nations-cup",
+      "image": "https://mutapatimes.com/img/cards/news/76efda716212.png",
+      "pubDate": "2026-09-01T06:46:21+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Samoa vs Zimbabwe | Zimbabwe vs Samoa | World Rugby Nations Cup Live",
+      "link": "https://mutapatimes.com/news/2026-09-01-samoa-vs-zimbabwe-zimbabwe-vs-samoa-world-rugby-nations-cup-live-bef888",
+      "image": "https://mutapatimes.com/img/cards/news/a7170428485a.png",
+      "pubDate": "2026-09-01T06:46:21+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Pressure mounts on struggling Marnus Labuschagne after Australia ODI axe falls",
+      "link": "https://mutapatimes.com/articles/2026-09-01-pressure-mounts-on-struggling-marnus-labuschagne-after-austr",
+      "image": "https://mutapatimes.com/img/cards/news/e0c3d3f081d1.png",
+      "pubDate": "2026-09-01T01:04:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Australia axe Labuschagne for Zimbabwe, South Africa ODI series",
+      "link": "https://mutapatimes.com/articles/2026-09-01-australia-axe-labuschagne-for-zimbabwe-south-africa-odi-seri",
+      "image": "https://mutapatimes.com/img/cards/news/31f28ebd47d9.png",
+      "pubDate": "2026-09-01T00:18:11+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Australia axe Labuschagne for Zimbabwe, South Africa ODI series",
+      "link": "https://mutapatimes.com/news/2026-09-01-australia-axe-labuschagne-for-zimbabwe-south-africa-odi-series-6bb2ad",
+      "image": "https://mutapatimes.com/img/cards/news/452debfa1889.png",
+      "pubDate": "2026-09-01T00:18:11+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Australia drop Labuschagne from ODI squad for Zimbabwe, S. Africa tour",
+      "link": "https://mutapatimes.com/articles/2026-08-31-australia-drop-labuschagne-from-odi-squad-for-zimbabwe-s-afr",
+      "image": "https://mutapatimes.com/img/cards/news/6f736423146a.png",
+      "pubDate": "2026-08-31T23:53:44+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim education sector: $768M in 2025 Q4, 4.0% of GDP.",
@@ -12,7 +60,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 1 Sep 2026: 1 USD = 26.50 ZWG · best from UK £100 → $132.28 via Wise",
+      "title": "Zim FX snapshot 1 Sep 2026: 1 USD = 26.67 ZWG · best from UK £100 → $132.27 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-01",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-01",
       "pubDate": "2026-08-31T22:00:00+00:00",
@@ -57,6 +105,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-08-31T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Agricultural Inputs Sales Support Officers",
+      "link": "https://vacancymail.co.zw/jobs/agricultural-inputs-sales-support-officers-69094/",
+      "image": "https://mutapatimes.com/img/cards/jobs/912a3451aaeb.png",
+      "pubDate": "2026-08-31T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -423,62 +479,6 @@
       "title": "Unidev Engineering (Pvt) Ltd — Electronic and Fire Systems Technician",
       "link": "https://vacancymail.co.zw/jobs/electronic-and-fire-systems-technician-69041/",
       "image": "https://mutapatimes.com/img/cards/jobs/9559cfe8f4f9.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plus Five Pharmaceuticals — Accounting Intern",
-      "link": "https://vacancymail.co.zw/jobs/accounting-intern-69040/",
-      "image": "https://mutapatimes.com/img/cards/jobs/129da7c54a63.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Varichem Pharmaceuticals (Pvt) Ltd — Pharmaceutical Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/pharmaceutical-sales-representative-69039/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5b401f08a8fc.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Women's Bureau — Field Officer",
-      "link": "https://vacancymail.co.zw/jobs/field-officer-69038/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c56c44908156.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Securities and Exchange Commission of Zimbabwe — Legal Manager",
-      "link": "https://vacancymail.co.zw/jobs/legal-manager-69037/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c9c2a9aa70cc.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Architect (Managerial Level)",
-      "link": "https://vacancymail.co.zw/jobs/architect-managerial-level-69036/",
-      "image": "https://mutapatimes.com/img/cards/jobs/392b2ae8a34e.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — ELECTRICIAN",
-      "link": "https://vacancymail.co.zw/jobs/electrician-69035/",
-      "image": "https://mutapatimes.com/img/cards/jobs/83952b2b50ae.png",
-      "pubDate": "2026-08-31T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "InstaToll Zimbabwe (Pty) Ltd — RRM Foreman",
-      "link": "https://vacancymail.co.zw/jobs/rrm-foreman-69034/",
-      "image": "https://mutapatimes.com/img/cards/jobs/278d5272b616.png",
       "pubDate": "2026-08-31T22:00:00+00:00",
       "category": "Jobs"
     }
