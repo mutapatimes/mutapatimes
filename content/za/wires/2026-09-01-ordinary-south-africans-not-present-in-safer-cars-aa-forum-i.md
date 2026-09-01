@@ -1,0 +1,16 @@
+---
+title: "Ordinary South Africans not present in safer cars AA forum — it’s a problem"
+date: 2026-09-01T19:19:12.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Ordinary South Africans not present in safer cars AA forum — it’s a problem"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijAJBVV95cUxPNVRZZ3g2MUNWS21mQW1NZ2RKMGhtb2NGYnVMRlVEWXpfS1p0Uy1pemRsM3dGeG1xeU9zQnFJd3lxTTJta3NaVlhhSFlCYmFvX2RXazY3c0pQanlOTzVaY3VnaGFSMC1YVXVfaGtjZE5HLXRieFZmRnZfRGVtS3FGWldmZWJVNlk0WEU3ckNxSTFXbkpOclFzY2hURkJGeTBiSW1SUFNMQ1R4OTR5dHNuaTZTcVp0X1FuWjZHa2Fsbndyc1M3R1JPNHh1TXhLcHhPNVZiN29QUDJ1ekMxeUpiMGY5R0VXaGF6aFQ3cUFQRmxlb3c0QWdWSDQyOG8xUFpmRW9JQlBRUW92b0xu?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijAJBVV95cUxPNVRZZ3g2MUNWS21mQW1NZ2RKMGhtb2NGYnVMRlVEWXpfS1p0Uy1pemRsM3dGeG1xeU9zQnFJd3lxTTJta3NaVlhhSFlCYmFvX2RXazY3c0pQanlOTzVaY3VnaGFSMC1YVXVfaGtjZE5HLXRieFZmRnZfRGVtS3FGWldmZWJVNlk0WEU3ckNxSTFXbkpOclFzY2hURkJGeTBiSW1SUFNMQ1R4OTR5dHNuaTZTcVp0X1FuWjZHa2Fsbndyc1M3R1JPNHh1TXhLcHhPNVZiN29QUDJ1ekMxeUpiMGY5R0VXaGF6aFQ3cUFQRmxlb3c0QWdWSDQyOG8xUFpmRW9JQlBRUW92b0xu?oc=5)
