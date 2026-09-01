@@ -1,0 +1,16 @@
+---
+title: "Compliance blitz targets undocumented persons and unregulated Pietermaritzburg businesses"
+date: 2026-09-01T13:46:13.000Z
+author: EWN
+category: Business
+image: 
+summary: "Compliance blitz targets undocumented persons and unregulated Pietermaritzburg businesses"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRHdDalpORlB6c2pLcmloMUp5dzhSZkhvYVpQMENUVncycFh3YVFmb3B6ejZPQnA0U0xYYXJLdnIwak1ETC03dGJuTWFuVU5pVng1VEZzalhUMy1uREtPdXlYZVZfc2o4Q0tsU2lFSzNvdFBSQTVqbU5pRDlIblh6MEluTzN6d3pYLXhucHMxT2MtY2Y3QlB1bmRqOE03RUd1d0pnZW5MdHE0MnFxWXM0NzRhZkpKX2xGb2Z1Y2V2QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by EWN.*
+[Read original article](https://news.google.com/rss/articles/CBMivwFBVV95cUxNRHdDalpORlB6c2pLcmloMUp5dzhSZkhvYVpQMENUVncycFh3YVFmb3B6ejZPQnA0U0xYYXJLdnIwak1ETC03dGJuTWFuVU5pVng1VEZzalhUMy1uREtPdXlYZVZfc2o4Q0tsU2lFSzNvdFBSQTVqbU5pRDlIblh6MEluTzN6d3pYLXhucHMxT2MtY2Y3QlB1bmRqOE03RUd1d0pnZW5MdHE0MnFxWXM0NzRhZkpKX2xGb2Z1Y2V2QQ?oc=5)
