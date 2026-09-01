@@ -1,0 +1,16 @@
+---
+title: "SAFA Technical Director Molefi Ntseki praises Pitso Mosimane's class after Bafana Bafana appointment - 'You appreciate your predecessor and thank you for that'"
+date: 2026-09-01T17:02:32.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "SAFA Technical Director Molefi Ntseki praises Pitso Mosimane's class after Bafana Bafana appointment - 'You appreciate your predecessor and thank you for that'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMisgJBVV95cUxNUHduNjJ5S3NJckxqTWNkRHR3XzNoQlVqcXBIOXJfMXAzRDBJNU9uWWJxd05RdTk2MTBYdU1wR2hnWEUyUE8teThyUEo5ZTRydWg1Y1NZOUVJT1Q5emJRZUU1THMtRXdhUWhsSGxCZ0lQMjhzbEk4Z05iM2VrVWRVTFBWUFBERkVkWjRmSkxRamxSd0xhRzlJQ2lPR3cyQkgxMXhKZlNQNjZNRzE0eXB2ckp5cC1qc2Vnel80Y2Vob0ZsZ3EzbklwVUM5MlZmRHRzS3dCTHdrNHExcnBiT1lTMHFGSGRIbklUcUpWbW02VFYwMjJvbHotc2pQZGhuTEVsVVNReEFtTWJUeFV2NVRYVUNtM1RvVEtXekJ6MW5TYktodi11QVBWTWptV2M4ZEs2TlE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMisgJBVV95cUxNUHduNjJ5S3NJckxqTWNkRHR3XzNoQlVqcXBIOXJfMXAzRDBJNU9uWWJxd05RdTk2MTBYdU1wR2hnWEUyUE8teThyUEo5ZTRydWg1Y1NZOUVJT1Q5emJRZUU1THMtRXdhUWhsSGxCZ0lQMjhzbEk4Z05iM2VrVWRVTFBWUFBERkVkWjRmSkxRamxSd0xhRzlJQ2lPR3cyQkgxMXhKZlNQNjZNRzE0eXB2ckp5cC1qc2Vnel80Y2Vob0ZsZ3EzbklwVUM5MlZmRHRzS3dCTHdrNHExcnBiT1lTMHFGSGRIbklUcUpWbW02VFYwMjJvbHotc2pQZGhuTEVsVVNReEFtTWJUeFV2NVRYVUNtM1RvVEtXekJ6MW5TYktodi11QVBWTWptV2M4ZEs2TlE?oc=5)
