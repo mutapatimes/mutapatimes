@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 13:53:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 16:39:07 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -187,18 +187,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/a3108ff7b1e8.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 115,000 — Golden-Oldie (Cranborne, Harare South)</title>
-      <link>https://mutapatimes.com/property-landing/2b6b3e839448.html</link>
-      <description>USD 115,000 — Cranborne, Harare South. 3 beds, 1 bath. Golden-Oldie. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 31 Aug 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/2b6b3e839448.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/2b6b3e839448.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/2b6b3e839448.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/2b6b3e839448.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 925,000 — Gracious family home in Colne Valley (Chisipite, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/c1ef04a0485e.html</link>
       <description>USD 925,000 — Chisipite, Harare North. 4 beds, 2 baths. Gracious family home in Colne Valley. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/f36f7c32e306.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f36f7c32e306.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/f36f7c32e306.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 415,000 — Spacious 5-Bedroom Modern Home (Mt Pleasant Heights, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/3c0d81252764.html</link>
+      <description>USD 415,000 — Mt Pleasant Heights, Harare West. 5 beds, 4 baths. Spacious 5-Bedroom Modern Home. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 31 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/3c0d81252764.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/3c0d81252764.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3c0d81252764.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/3c0d81252764.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

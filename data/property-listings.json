@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-01T11:37:47.177236+00:00",
+  "fetched_at": "2026-09-01T16:38:53.036039+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -130,15 +130,6 @@
       "baths": "4"
     },
     {
-      "title": "Golden-Oldie",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp249777",
-      "price": "USD 115,000",
-      "location": "Cranborne, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/83/da/1e/83da1ea8-82bf-4df1-b40e-8982958ed12d_thumbnail591.webp",
-      "beds": "3",
-      "baths": "1"
-    },
-    {
       "title": "Gracious family home in Colne Valley",
       "url": "https://www.property.co.zw/for-sale/houses-knp252204",
       "price": "USD 925,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/ef/bc/d9/efbcd9c6-5cea-4e64-bbd4-23bc66e6ff3d_thumbnail591.webp",
       "beds": "5",
       "baths": "2"
+    },
+    {
+      "title": "Spacious 5-Bedroom Modern Home",
+      "url": "https://www.property.co.zw/for-sale/houses-forz239276",
+      "price": "USD 415,000",
+      "location": "Mt Pleasant Heights, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/7a/56/fe/7a56feea-f345-40e9-9ca1-573228814b76_thumbnail591.webp",
+      "beds": "5",
+      "baths": "4"
     }
   ]
 }
