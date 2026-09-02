@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-09-01T22:57:22+00:00",
+  "fetched_at": "2026-09-02T02:30:59+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Rockwell Automation advances mining cybersecurity at Mimosa Mine in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-09-02-rockwell-automation-advances-mining-cybersecurity-at-mimosa",
+      "image": "https://mutapatimes.com/img/cards/news/f055e8a79e91.png",
+      "pubDate": "2026-09-02T01:18:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Rockwell Automation advances mining cybersecurity at Mimosa Mine in Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-09-02-rockwell-automation-advances-mining-cybersecurity-at-mimosa-mine-in-zimbabwe-3d3cb9",
+      "image": "https://mutapatimes.com/img/cards/news/087f51c9a2eb.png",
+      "pubDate": "2026-09-02T01:18:45+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim import dependency 2025 Q4: trailing-4Q goods imports are 13.0% of GDP.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 2 Sep 2026: 1 USD = 26.67 ZWG · best from UK £100 → $132.27 via Wise",
+      "title": "Zim FX snapshot 2 Sep 2026: 1 USD = 26.80 ZWG · best from UK £100 → $132.08 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-02",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-02",
       "pubDate": "2026-09-01T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "DRIVER CLASS 2",
       "link": "https://vacancymail.co.zw/jobs/driver-class-2-69064/",
       "image": "https://mutapatimes.com/img/cards/jobs/774a33646536.png",
-      "pubDate": "2026-09-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Secondary Book Press — Warehouse Picker Packer",
-      "link": "https://vacancymail.co.zw/jobs/warehouse-picker-packer-69063/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2a4df9a20b8f.png",
-      "pubDate": "2026-09-01T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hotspeck Enterprises (Pvt) Ltd — Procurement Manager",
-      "link": "https://vacancymail.co.zw/jobs/procurement-manager-69062/",
-      "image": "https://mutapatimes.com/img/cards/jobs/db334742ba48.png",
       "pubDate": "2026-09-01T22:00:00+00:00",
       "category": "Jobs"
     }
