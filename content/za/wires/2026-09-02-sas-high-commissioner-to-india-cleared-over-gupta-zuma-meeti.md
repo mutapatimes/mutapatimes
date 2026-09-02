@@ -1,0 +1,16 @@
+---
+title: "SA’s high commissioner to India cleared over Gupta, Zuma meeting"
+date: 2026-09-02T13:09:47.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA’s high commissioner to India cleared over Gupta, Zuma meeting"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinwJBVV95cUxQaFN0N3hFeHZURlkwM1RIaGtJa0hEaXQzRHJ3QjV5MDJTSWRwZ291V2kwdWE5bU5BdGlhYnFrb3p1UkNPUzVFTURnQkNKN3owMGFTVjIxVEItbmVtUXNoTFNZMWxTZDY5aDViUVFiQkN5RUhId29NREJ4ZmJUZWJVSklxN0NDWGpRaTRlM1NRaFBmLXpJaVBLdUpZTTR6VmJMUTlNRnZoWFl4YWVPZXVRM0xBNlM3OWluV2xORm5peWJJbUxLYmREdi1YYjhJd2JnbUIwVGp1SG1Lc3dtRTd3aWpKbHNkYk1BN0tTZFJXYVBhTEs3TTFPMWd5aEFWUjBtb1FwcEZ2bEc4N1lVUTFXLU1WdklEQTFzQllQLXlBRQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinwJBVV95cUxQaFN0N3hFeHZURlkwM1RIaGtJa0hEaXQzRHJ3QjV5MDJTSWRwZ291V2kwdWE5bU5BdGlhYnFrb3p1UkNPUzVFTURnQkNKN3owMGFTVjIxVEItbmVtUXNoTFNZMWxTZDY5aDViUVFiQkN5RUhId29NREJ4ZmJUZWJVSklxN0NDWGpRaTRlM1NRaFBmLXpJaVBLdUpZTTR6VmJMUTlNRnZoWFl4YWVPZXVRM0xBNlM3OWluV2xORm5peWJJbUxLYmREdi1YYjhJd2JnbUIwVGp1SG1Lc3dtRTd3aWpKbHNkYk1BN0tTZFJXYVBhTEs3TTFPMWd5aEFWUjBtb1FwcEZ2bEc4N1lVUTFXLU1WdklEQTFzQllQLXlBRQ?oc=5)

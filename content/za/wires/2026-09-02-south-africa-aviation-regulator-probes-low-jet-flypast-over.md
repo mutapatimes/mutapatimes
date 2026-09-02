@@ -1,0 +1,16 @@
+---
+title: "South Africa aviation regulator probes low jet flypast over Cape Town stadium"
+date: 2026-09-02T16:06:16.000Z
+author: SoMdNews.com
+category: Health
+image: 
+summary: "South Africa aviation regulator probes low jet flypast over Cape Town stadium"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUE4wLTRZQ2xnQkQ1SWNsSkhQM05Pb2M0UG9WVVllNmk4YlFZN3h6WWdLU3RMd2hSXzVrcVJMM3g1R05CUlhQamRLWFhqdGZ4cjNoQks4a2R4bURvblpFVG1RMlpXQ0trZHNXd0lXdE54ZENMXzhaSDBpUDFHWEg5T3lLWVpSeVhGYXhfTEpCeXUyckU1Vkt3T1VXY3dqRlFrYkJrcVhmakZlUVlTWDlYdVhQcGc3MXU2ZEtpWkJyckVqS05WR3ROVkU3NFFUTkJzRVF4cHFaYUVpczlFU1NJLWYxSXhLd0x1alhFeUFnVVdWZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by SoMdNews.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUE4wLTRZQ2xnQkQ1SWNsSkhQM05Pb2M0UG9WVVllNmk4YlFZN3h6WWdLU3RMd2hSXzVrcVJMM3g1R05CUlhQamRLWFhqdGZ4cjNoQks4a2R4bURvblpFVG1RMlpXQ0trZHNXd0lXdE54ZENMXzhaSDBpUDFHWEg5T3lLWVpSeVhGYXhfTEpCeXUyckU1Vkt3T1VXY3dqRlFrYkJrcVhmakZlUVlTWDlYdVhQcGc3MXU2ZEtpWkJyckVqS05WR3ROVkU3NFFUTkJzRVF4cHFaYUVpczlFU1NJLWYxSXhLd0x1alhFeUFnVVdWZw?oc=5)
