@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2026 18:22:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 21:02:38 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -77,6 +77,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/6865270b8eff.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/6865270b8eff.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/6865270b8eff.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 400,000 — Townhouse for Sale along Hebert Chitepo (Avenues, Harare CBD)</title>
+      <link>https://mutapatimes.com/property-landing/98892ffeab55.html</link>
+      <description>USD 400,000 — Avenues, Harare CBD. 4 beds, 2 baths. Townhouse for Sale along Hebert Chitepo. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 01 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/98892ffeab55.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 190,000 — Stunning 4-Bedroom Townhouse Terms Accepted (Marlborough, Harare West)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 100,000 — Modern 3-bed House in Mabvazuva, Ruwa (Mabvazuva, Ruwa)</title>
-      <link>https://mutapatimes.com/property-landing/4b8106255d1c.html</link>
-      <description>USD 100,000 — Mabvazuva, Ruwa. 3 beds, 2 baths. Modern 3-bed House in Mabvazuva, Ruwa. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 01 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/4b8106255d1c.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/4b8106255d1c.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/4b8106255d1c.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/4b8106255d1c.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
