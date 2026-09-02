@@ -1,0 +1,16 @@
+---
+title: "AfriForum wants fuel price investigated after petrol and diesel increases in South Africa"
+date: 2026-09-02T13:24:51.000Z
+author: MyBroadband
+category: Policy
+image: 
+summary: "AfriForum wants fuel price investigated after petrol and diesel increases in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSWJPSlEwWlNFY1NLY1ZpbUxCZGE1WFJOU19WR2tLMUF1U1JlUHZIaHp5VzN4eC1JWXBTNmdIRzNUMlNZY0UwczJLdDdCOXA2RWZoX1JuQ1VCSjdyWFdNQ0pleWt1ZHJhTDgzUXZKV0xyMG5VeEVqWVozYnBEN1ExLVRjSUJ6bjljYjAtdS13Znl0U2dYcTN4LUYtaFZMWWp5d2dEYU9uZFZXeUhJOEkzT1ZGYV9IRlJoTENWZ3lXZ2FWZHpINFlnejlxMUkwZHB6elczdktEQnc4Zw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSWJPSlEwWlNFY1NLY1ZpbUxCZGE1WFJOU19WR2tLMUF1U1JlUHZIaHp5VzN4eC1JWXBTNmdIRzNUMlNZY0UwczJLdDdCOXA2RWZoX1JuQ1VCSjdyWFdNQ0pleWt1ZHJhTDgzUXZKV0xyMG5VeEVqWVozYnBEN1ExLVRjSUJ6bjljYjAtdS13Znl0U2dYcTN4LUYtaFZMWWp5d2dEYU9uZFZXeUhJOEkzT1ZGYV9IRlJoTENWZ3lXZ2FWZHpINFlnejlxMUkwZHB6elczdktEQnc4Zw?oc=5)
