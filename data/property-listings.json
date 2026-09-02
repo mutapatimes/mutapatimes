@@ -1,23 +1,23 @@
 {
-  "fetched_at": "2026-09-02T04:31:44.828776+00:00",
+  "fetched_at": "2026-09-02T11:16:57.003295+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Renovators Delight Or Developers Dream",
+      "url": "https://www.property.co.zw/for-sale/houses-clrp253772",
+      "price": "USD 420,000",
+      "location": "Mandara, Harare East",
+      "image": "https://www.property.co.zw/uploadedfiles/a3/c9/fc/a3c9fc57-d1a3-48e7-b99b-583939340f30_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
     {
       "title": "Spacious 4-Bedroom Family Home in Rockview — Finish to Your Taste",
       "url": "https://www.property.co.zw/for-sale/houses-gat253656",
       "price": "USD 130,000",
       "location": "Rockview, Harare East",
       "image": "https://www.property.co.zw/uploadedfiles/67/41/9a/67419a5c-ef06-499c-b343-3f6761ec99a7_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Reduced to Sell! - Double Entrance Corner Property With Potential",
-      "url": "https://www.property.co.zw/for-sale/houses-prl252664",
-      "price": "USD 325,000",
-      "location": "Greendale, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/26/c3/92/26c392b6-2d78-4037-a034-ae040fac9e94_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     },
@@ -184,15 +184,6 @@
       "baths": "1"
     },
     {
-      "title": "Renovators Delight Or Developers Dream",
-      "url": "https://www.property.co.zw/for-sale/houses-clrp253772",
-      "price": "USD 420,000",
-      "location": "Mandara, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/a3/c9/fc/a3c9fc57-d1a3-48e7-b99b-583939340f30_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Luxury meets self sufficient!!",
       "url": "https://www.property.co.zw/for-sale/houses-rws241484",
       "price": "USD 280,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/49/94/78/49947862-b1a1-4d2a-8825-725d26fdf9f9_thumbnail591.webp",
       "beds": "4",
       "baths": "5"
+    },
+    {
+      "title": "Modern 3-bed House in Mabvazuva, Ruwa",
+      "url": "https://www.property.co.zw/for-sale/houses-rvl242145",
+      "price": "USD 100,000",
+      "location": "Mabvazuva, Ruwa",
+      "image": "https://www.property.co.zw/uploadedfiles/58/26/ee/5826eec9-4d8f-4fbe-b59e-73ee130714a5_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     }
   ]
 }
