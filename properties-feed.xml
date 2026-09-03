@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 13:12:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 16:24:43 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -137,6 +137,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/7ef7481d77aa.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7ef7481d77aa.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/7ef7481d77aa.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 32,000 — Family home!!! (Warren Park, Harare High Density)</title>
+      <link>https://mutapatimes.com/property-landing/b1a16574e34b.html</link>
+      <description>USD 32,000 — Warren Park, Harare High Density. 3 beds, 1 bath. Family home!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 02 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b1a16574e34b.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/b1a16574e34b.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b1a16574e34b.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/b1a16574e34b.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 210,000 — Arlington Estates (Arlington, Harare South)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/6f3f27324762.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/6f3f27324762.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/6f3f27324762.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 995,000 — Where Family memories meet Luxury living! (Philadelphia, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/06639d9e2763.html</link>
-      <description>USD 995,000 — Philadelphia, Harare North. 6 beds, 4 baths. Where Family memories meet Luxury living!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 02 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/06639d9e2763.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/06639d9e2763.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/06639d9e2763.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/06639d9e2763.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
