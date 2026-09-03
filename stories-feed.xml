@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 11:24:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 13:12:01 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>K9 unit flown by Emirates SkyCargo to Zimbabwe begins frontline operations</title>
+      <link>https://mutapatimes.com/stories/b56db91feaeb.html</link>
+      <description>via Adaderana Biz English #Zimbabwe #Tech #AfricaTech #ZimbabweNews</description>
+      <pubDate>Thu, 03 Sep 2026 10:25:20 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/b56db91feaeb.html</guid>
+      <category>Tech</category>
+      <dc:creator>Adaderana Biz English</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/b56db91feaeb.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b56db91feaeb.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/b56db91feaeb.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/69407654fa9e.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/69407654fa9e.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/69407654fa9e.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Bartenders</title>
-      <link>https://mutapatimes.com/stories/e94856a81cb4.html</link>
-      <description>*WE ARE HIRING – BARTENDERS* We are looking for experienced, energetic and customer-focused Bartenders to join our team. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 02 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/e94856a81cb4.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/e94856a81cb4.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e94856a81cb4.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/e94856a81cb4.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
