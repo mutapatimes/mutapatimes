@@ -1,0 +1,16 @@
+---
+title: "Carenet Health and Response Open New Durban Facility Built for Complex Healthcare Engagement"
+date: 2026-09-03T13:00:00.000Z
+author: Business Wire
+category: Health
+image: 
+summary: "Carenet Health and Response Open New Durban Facility Built for Complex Healthcare Engagement"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU3lEbHdJajRwemFDWVZNOGtXR3c1QmVFeVRtZE1WUjRMazBsRVNDTjR4TzczTF93Sjd3N2UtNlJZUGRWdG1jVWQ0QzZEYzZLZkVsSGJBX2I0bnA0dkh1MDhkaWlzSW1jSGtWVXNHLTJENW5ycWdKN2hHalc3UUR2WHdtY09HenNlVFAwRFhJVnQ3c0dGR3RkTElhYkl2UEpwV1Jwa1J2ZUViWDNEZ1RMMXN0U1lyYnNTUm0yWnBnLW1KcktESDcwMzVrRUFLaVUwLUtBdDYwY0pCelh3bTNaVzlQUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Business Wire.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU3lEbHdJajRwemFDWVZNOGtXR3c1QmVFeVRtZE1WUjRMazBsRVNDTjR4TzczTF93Sjd3N2UtNlJZUGRWdG1jVWQ0QzZEYzZLZkVsSGJBX2I0bnA0dkh1MDhkaWlzSW1jSGtWVXNHLTJENW5ycWdKN2hHalc3UUR2WHdtY09HenNlVFAwRFhJVnQ3c0dGR3RkTElhYkl2UEpwV1Jwa1J2ZUViWDNEZ1RMMXN0U1lyYnNTUm0yWnBnLW1KcktESDcwMzVrRUFLaVUwLUtBdDYwY0pCelh3bTNaVzlQUQ?oc=5)
