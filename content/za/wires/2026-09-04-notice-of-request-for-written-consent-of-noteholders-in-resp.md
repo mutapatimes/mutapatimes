@@ -1,0 +1,16 @@
+---
+title: "Notice of request for written consent of noteholders in respect of the proposed amendment and restatement of the applicable pricing supplements pertaining to the RN2027 and RN2035 notes"
+date: 2026-09-04T06:00:00.000Z
+author: Moneyweb
+category: Policy
+image: 
+summary: "Notice of request for written consent of noteholders in respect of the proposed amendment and restatement of the applicable pricing supplements pertaining to the RN2027 and RN2035 notes"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMixAJBVV95cUxNS01wUmFtbHgzZnctQWY5U1kzTTdpSHdiUEo4UnVBZHBFYW50RzBqY2wtLXo4bUkxbTFoc2FUYzBhNWRKY2FuMUkwMmZPTlhYZzV6Z2cxVVU1Qi00eWl4SGJJNlV0SEUzZ0xDVjhpSklYcjQ0cTY2LVN1Uk5jLVJ5WDhLVXowbm9abFpoejJzSFpzYW8wR1ZpYkc2Z1JOcTBaUy1ocDh3UXBlUmJIRHNwWkxsRUNyME9QWlQwdUY2WHZ6STdIOFNXbTM3dVQ0cTB6MnAwejlwYjRtWlVwVHJkd0N3TGprRkNybW0yM285R2hyTTlLVUxsTGItRmRuRzR0c3ZGbzQydXlrcU9ET19qM1NDc0xLMWp5R25TdVdQWFljel9MNmc5N3VzSGNjNEN6MjVlcXBidUhFNFB4dHZqbGl4cUc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMixAJBVV95cUxNS01wUmFtbHgzZnctQWY5U1kzTTdpSHdiUEo4UnVBZHBFYW50RzBqY2wtLXo4bUkxbTFoc2FUYzBhNWRKY2FuMUkwMmZPTlhYZzV6Z2cxVVU1Qi00eWl4SGJJNlV0SEUzZ0xDVjhpSklYcjQ0cTY2LVN1Uk5jLVJ5WDhLVXowbm9abFpoejJzSFpzYW8wR1ZpYkc2Z1JOcTBaUy1ocDh3UXBlUmJIRHNwWkxsRUNyME9QWlQwdUY2WHZ6STdIOFNXbTM3dVQ0cTB6MnAwejlwYjRtWlVwVHJkd0N3TGprRkNybW0yM285R2hyTTlLVUxsTGItRmRuRzR0c3ZGbzQydXlrcU9ET19qM1NDc0xLMWp5R25TdVdQWFljel9MNmc5N3VzSGNjNEN6MjVlcXBidUhFNFB4dHZqbGl4cUc?oc=5)
