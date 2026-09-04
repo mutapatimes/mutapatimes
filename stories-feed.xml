@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 16:28:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 18:00:57 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,6 +53,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/94284111f6b1.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/94284111f6b1.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/94284111f6b1.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwe Must Leverage Macroeconomic Stability To Accelerate Growth And Create 230,000 New Jobs By 2040</title>
+      <link>https://mutapatimes.com/stories/fde365350b72.html</link>
+      <description>(MENAFN - African Press Organization) Download logo Following recent progress on macroeconomic stabilization, Zimbabwe has a timely opportunity to build long-term economic momentum and expand... #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Fri, 04 Sep 2026 05:09:06 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/fde365350b72.html</guid>
+      <category>Business</category>
+      <dc:creator>Menafn</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/fde365350b72.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fde365350b72.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/fde365350b72.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Diaspora investors turn attention to Bulawayo opportunities @HeraldZimbabwe</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Population Services Zimbabwe — Nurse Aide</title>
-      <link>https://mutapatimes.com/stories/e6e1fbc79dd8.html</link>
-      <description>1. NURSE AIDE Location: Shamva Shamva · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 03 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/e6e1fbc79dd8.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Population Services Zimbabwe</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/e6e1fbc79dd8.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e6e1fbc79dd8.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/e6e1fbc79dd8.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
