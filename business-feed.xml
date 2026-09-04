@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Strictly Zimbabwe business, finance, mining, investment and economic-policy stories — curated from foreign press and policy press. Each item ships with a branded headline card for social autolists.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 05:02:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 07:38:44 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/business-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -53,6 +53,18 @@
       <media:content url="https://mutapatimes.com/img/cards/news/0c0617e3add2.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/0c0617e3add2.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/0c0617e3add2.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwe’s gold push: Can formalisation curb smuggling and damage?</title>
+      <link>https://mutapatimes.com/news/2026-09-04-zimbabwe-s-gold-push-can-formalisation-curb-smuggling-and-damage-2538c9</link>
+      <description>Zimbabwe’s gold push: Can formalisation curb smuggling and damage? — via theafricareport.com #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Thu, 27 Aug 2026 13:07:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/news/2026-09-04-zimbabwe-s-gold-push-can-formalisation-curb-smuggling-and-damage-2538c9</guid>
+      <category>Business</category>
+      <dc:creator>theafricareport.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/news/8bc66b07e5de.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/news/8bc66b07e5de.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/news/8bc66b07e5de.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zimbabwe is restricting raw lithium exports, but a Chinese mining company just got an extra 300,000 tons</title>
@@ -101,18 +113,6 @@
       <media:content url="https://mutapatimes.com/img/cards/news/e3b77793f68e.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/e3b77793f68e.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/e3b77793f68e.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Kavango starts commissioning Zimbabwe gold mine</title>
-      <link>https://mutapatimes.com/news/2026-09-04-kavango-starts-commissioning-zimbabwe-gold-mine-43a134</link>
-      <description>Kavango starts commissioning Zimbabwe gold mine — via Mining.com #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
-      <pubDate>Tue, 04 Aug 2026 07:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/news/2026-09-04-kavango-starts-commissioning-zimbabwe-gold-mine-43a134</guid>
-      <category>Business</category>
-      <dc:creator>Mining.com</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/a33f03a1555d.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/a33f03a1555d.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/a33f03a1555d.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

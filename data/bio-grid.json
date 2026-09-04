@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-09-04T02:34:28+00:00",
+  "fetched_at": "2026-09-04T07:38:45+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Emirates SkyCargo Flies K9 Unit to Zimbabwe for Frontline Duty",
+      "link": "https://mutapatimes.com/articles/2026-09-04-emirates-skycargo-flies-k9-unit-to-zimbabwe-for-frontline-du",
+      "image": "https://mutapatimes.com/img/cards/news/94284111f6b1.png",
+      "pubDate": "2026-09-04T07:07:03+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Emirates SkyCargo Flies K9 Unit to Zimbabwe for Frontline Duty",
+      "link": "https://mutapatimes.com/news/2026-09-04-emirates-skycargo-flies-k9-unit-to-zimbabwe-for-frontline-duty-df86f5",
+      "image": "https://mutapatimes.com/img/cards/news/7ffc0a10af97.png",
+      "pubDate": "2026-09-04T07:07:03+00:00",
+      "category": "Science"
+    },
     {
       "kind": "economy",
       "title": "Zim health & social work sector: $385M in 2025 Q4, 2.0% of GDP.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 4 Sep 2026: 1 USD = 26.72 ZWG · best from UK £100 → $131.69 via Wise",
+      "title": "Zim FX snapshot 4 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $132.00 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-04",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-04",
       "pubDate": "2026-09-03T22:00:00+00:00",
@@ -57,6 +73,54 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-03T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "PAYROLL LENDING - LEAD",
+      "link": "https://vacancymail.co.zw/jobs/payroll-lending-lead-69174/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1d8e9305801c.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Motorbike Delivery Driver",
+      "link": "https://vacancymail.co.zw/jobs/motorbike-delivery-driver-69173/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b73ab12bd71a.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "STORES INTERN",
+      "link": "https://vacancymail.co.zw/jobs/stores-intern-69172/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c016657bd7a8.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "DESK SALES REP",
+      "link": "https://vacancymail.co.zw/jobs/desk-sales-rep-69171/",
+      "image": "https://mutapatimes.com/img/cards/jobs/56a049b60afb.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marketing officer",
+      "link": "https://vacancymail.co.zw/jobs/marketing-officer-69170/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0a4c26ced0d2.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe National Boxing and Wrestling Control Board (ZNBWCB) — Provincial Coordinator",
+      "link": "https://vacancymail.co.zw/jobs/provincial-coordinator-69169/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1b1372c16039.png",
+      "pubDate": "2026-09-03T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Greenwood Pharmacy — Pre-Reg Pharmacist",
       "link": "https://vacancymail.co.zw/jobs/pre-reg-pharmacist-69111/",
       "image": "https://mutapatimes.com/img/cards/jobs/3de1d21b17f6.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Greenwood Pharmacy — Pre-Reg Pharmacist",
-      "link": "https://vacancymail.co.zw/jobs/pre-reg-pharmacist-69110/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b76f2abb79ac.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "KPMG — Senior Tax Consultant",
-      "link": "https://vacancymail.co.zw/jobs/senior-tax-consultant-69109/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f55f7ef2eb0a.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "KPMG — HR Intern",
-      "link": "https://vacancymail.co.zw/jobs/hr-intern-69108/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6caa6a86a4c8.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hivos — Finance Officer – THRIVE (Zimbabwe)",
-      "link": "https://vacancymail.co.zw/jobs/finance-officer-thrive-zimbabwe-69107/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8abd73c9851c.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hivos — Project Officer – THRIVE (Zimbabwe)",
-      "link": "https://vacancymail.co.zw/jobs/project-officer-thrive-zimbabwe-69106/",
-      "image": "https://mutapatimes.com/img/cards/jobs/962b7ad2a519.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NUST - National University of Science & Technology — Multi-Media Communicator (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/multi-media-communicator-1-post-69104/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d89b166b4594.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NUST - National University of Science & Technology — Marketing Manager (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/marketing-manager-1-post-69103/",
-      "image": "https://mutapatimes.com/img/cards/jobs/67da7e06a46c.png",
-      "pubDate": "2026-09-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NUST - National University of Science & Technology — Events Coordinator (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/events-coordinator-1-post-69102/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ddaf758b94f2.png",
       "pubDate": "2026-09-03T22:00:00+00:00",
       "category": "Jobs"
     }
