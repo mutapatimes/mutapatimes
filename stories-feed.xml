@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 18:00:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 20:41:02 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -41,6 +41,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/1d0a178f3f5a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1d0a178f3f5a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/1d0a178f3f5a.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>EU Ambassador to Zimbabwe Katrin Hagemann has died @3menonaboat</title>
+      <link>https://mutapatimes.com/stories/f93c0accbd1e.html</link>
+      <description>Hagemann began her duty in Zimbabwe this past December. &lt;p&gt;The post EU Ambassador to Zimbabwe Katrin Hagemann has died first appeared on Three Men On a Boat.&lt;/p&gt; via Three Men On Boat #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Fri, 04 Sep 2026 07:19:05 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/f93c0accbd1e.html</guid>
+      <category>Business</category>
+      <dc:creator>Three Men On Boat</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/f93c0accbd1e.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f93c0accbd1e.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/f93c0accbd1e.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Emirates SkyCargo Flies K9 Unit to Zimbabwe for Frontline Duty</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/04e5b70003d6.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/04e5b70003d6.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/04e5b70003d6.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Marist Brothers High School, Dete — MOTOR MECHANIC TEACHER</title>
-      <link>https://mutapatimes.com/stories/508c0f8ed835.html</link>
-      <description>Marist Brothers High School - Dete is looking for a Motor Mechanics Hwange · Part Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 03 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/508c0f8ed835.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Marist Brothers High School, Dete</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/508c0f8ed835.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
