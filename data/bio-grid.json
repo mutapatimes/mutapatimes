@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-09-05T07:19:27+00:00",
+  "fetched_at": "2026-09-05T12:18:23+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "US$200 Fine For Harare Woman After Cocaine Possession Conviction",
+      "link": "https://mutapatimes.com/news/2026-09-05-us-200-fine-for-harare-woman-after-cocaine-possession-conviction-a206ef",
+      "image": "https://mutapatimes.com/img/cards/news/dd2f3b25e0d3.png",
+      "pubDate": "2026-09-05T00:03:32+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Arts & entertainment is the smallest tracked sector at $24M.",
@@ -20,7 +28,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 5 Sep: Harare partly cloudy · high 28° / low 15°",
+      "title": "Zim weather 5 Sep: Harare light drizzle · high 27° / low 17°",
       "link": "https://mutapatimes.com/weather?d=2026-09-05",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-05",
       "pubDate": "2026-09-04T22:00:00+00:00",
@@ -57,6 +65,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-04T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Braford Investments — Piggery Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/piggery-supervisor-69209/",
+      "image": "https://mutapatimes.com/img/cards/jobs/498ca72ba9b4.png",
+      "pubDate": "2026-09-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ESTATE MANAGER",
+      "link": "https://vacancymail.co.zw/jobs/estate-manager-69208/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a4d9d8bd6d98.png",
+      "pubDate": "2026-09-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "PROVINCIAL AGRONOMIST",
+      "link": "https://vacancymail.co.zw/jobs/provincial-agronomist-69207/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3d18a307c454.png",
+      "pubDate": "2026-09-04T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "National Tyre Services Limited — Tyre Countersales Person",
+      "link": "https://vacancymail.co.zw/jobs/tyre-countersales-person-69206/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9c5f276b86d4.png",
+      "pubDate": "2026-09-04T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "kwikbucks investments — Sales Agents",
       "link": "https://vacancymail.co.zw/jobs/sales-agents-69148/",
       "image": "https://mutapatimes.com/img/cards/jobs/04e5b70003d6.png",
-      "pubDate": "2026-09-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marist Brothers High School, Dete — MOTOR MECHANIC TEACHER",
-      "link": "https://vacancymail.co.zw/jobs/motor-mechanic-teacher-69147/",
-      "image": "https://mutapatimes.com/img/cards/jobs/508c0f8ed835.png",
-      "pubDate": "2026-09-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Services Zimbabwe — Nurse Aide",
-      "link": "https://vacancymail.co.zw/jobs/nurse-aide-69146/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e6e1fbc79dd8.png",
-      "pubDate": "2026-09-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Reception and Admin Attachee",
-      "link": "https://vacancymail.co.zw/jobs/reception-and-admin-attachee-69145/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7969539baa52.png",
-      "pubDate": "2026-09-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Broadcasting Authority of Zimbabwe (Baz) — Interim Legal Clerk",
-      "link": "https://vacancymail.co.zw/jobs/interim-legal-clerk-69144/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a4434ddf0e6.png",
-      "pubDate": "2026-09-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Broadcasting Authority of Zimbabwe (Baz) — ICT Intern",
-      "link": "https://vacancymail.co.zw/jobs/ict-intern-69143/",
-      "image": "https://mutapatimes.com/img/cards/jobs/36496f23db7e.png",
       "pubDate": "2026-09-04T22:00:00+00:00",
       "category": "Jobs"
     }
