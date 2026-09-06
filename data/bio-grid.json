@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-09-06T17:28:25+00:00",
+  "fetched_at": "2026-09-06T19:54:25+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy",
-      "link": "https://mutapatimes.com/articles/2026-09-06-south-africa-beat-zimbabwe-by-48-runs-to-lift-tri-series-tro",
-      "image": "https://mutapatimes.com/img/cards/news/cef24e990b39.png",
-      "pubDate": "2026-09-06T15:36:48+00:00",
-      "category": "Business"
-    },
     {
       "kind": "news",
       "title": "Zimbabwe's Manufacturers Are More Confident. So Why Is Production Falling?",
@@ -36,6 +28,30 @@
     },
     {
       "kind": "news",
+      "title": "WATCH: Zimbabwe hospitality charms international buyers",
+      "link": "https://mutapatimes.com/articles/2026-09-06-watch-zimbabwe-hospitality-charms-international-buyers",
+      "image": "https://mutapatimes.com/img/cards/news/4bfdcb2d9967.png",
+      "pubDate": "2026-09-06T07:30:07+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Chibuku Super Cup 2026 – QUARTER FINAL FIXTURES",
+      "link": "https://mutapatimes.com/articles/2026-09-06-chibuku-super-cup-2026-quarter-final-fixtures",
+      "image": "https://mutapatimes.com/img/cards/news/a1e0342b241a.png",
+      "pubDate": "2026-09-06T07:03:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chibuku Super Cup 2026 – QUARTER FINAL FIXTURES",
+      "link": "https://mutapatimes.com/news/2026-09-06-chibuku-super-cup-2026-quarter-final-fixtures-6a692b",
+      "image": "https://mutapatimes.com/img/cards/news/8601dc7464c5.png",
+      "pubDate": "2026-09-06T07:03:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
       "title": "Air Zimbabwe Launches Direct Harare to Masvingo and Chiredzi Flights Ahead of Tourism Expo 2026",
       "link": "https://mutapatimes.com/news/2026-09-06-air-zimbabwe-launches-direct-harare-to-masvingo-and-chiredzi-flights-ahead-of-830f6e",
       "image": "https://mutapatimes.com/img/cards/news/a914009ea5e3.png",
@@ -44,59 +60,43 @@
     },
     {
       "kind": "news",
-      "title": "Two walls, two civilisations, one heritage: Finding Great Zimbabwe in the Great Wall of China",
-      "link": "https://mutapatimes.com/articles/2026-09-06-two-walls-two-civilisations-one-heritage-finding-great-zimba",
-      "image": "https://mutapatimes.com/img/cards/news/27bfb2a0b709.png",
-      "pubDate": "2026-09-06T04:45:45+00:00",
+      "title": "Road traffic accident exposes 279kg dagga haul",
+      "link": "https://mutapatimes.com/news/2026-09-06-road-traffic-accident-exposes-279kg-dagga-haul-63c71a",
+      "image": "https://mutapatimes.com/img/cards/news/f668511349bf.png",
+      "pubDate": "2026-09-06T06:14:42+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Five arrested for spate of armed robberies in Kariba",
+      "link": "https://mutapatimes.com/news/2026-09-06-five-arrested-for-spate-of-armed-robberies-in-kariba-e0cbcf",
+      "image": "https://mutapatimes.com/img/cards/news/d5c5a8a79339.png",
+      "pubDate": "2026-09-06T06:12:01+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "SAFIRE Unveils Five-Year Plan to Restore 50,000 Hectares, Empower 90,000 Zimbabweans",
+      "link": "https://mutapatimes.com/articles/2026-09-06-safire-unveils-five-year-plan-to-restore-50000-hectares-empo",
+      "image": "https://mutapatimes.com/img/cards/news/82ebec96e82a.png",
+      "pubDate": "2026-09-06T06:01:50+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "NDEBELE IDENTITY: Who are the Ndebele of Zimbabwe?",
-      "link": "https://mutapatimes.com/articles/2026-09-06-ndebele-identity-who-are-the-ndebele-of-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/8c398d1671cd.png",
-      "pubDate": "2026-09-06T04:40:37+00:00",
-      "category": "Health"
+      "title": "SAFIRE Unveils Five-Year Plan to Restore 50,000 Hectares, Empower 90,000 Zimbabweans",
+      "link": "https://mutapatimes.com/news/2026-09-06-safire-unveils-five-year-plan-to-restore-50-000-hectares-empower-90-000-122c31",
+      "image": "https://mutapatimes.com/img/cards/news/53ed105fcf04.png",
+      "pubDate": "2026-09-06T06:01:50+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
-      "title": "OK Zim’s corporate rescue gains traction",
-      "link": "https://mutapatimes.com/articles/2026-09-06-ok-zims-corporate-rescue-gains-traction",
-      "image": "https://mutapatimes.com/img/cards/news/37295690f5a0.png",
-      "pubDate": "2026-09-06T04:24:48+00:00",
+      "title": "AirZim introduces Masvingo expo flights",
+      "link": "https://mutapatimes.com/articles/2026-09-06-airzim-introduces-masvingo-expo-flights",
+      "image": "https://mutapatimes.com/img/cards/news/50f4b56e64b5.png",
+      "pubDate": "2026-09-06T05:52:41+00:00",
       "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "When the Sky Breaks Twice in Three Years",
-      "link": "https://mutapatimes.com/articles/2026-09-06-when-the-sky-breaks-twice-in-three-years",
-      "image": "https://mutapatimes.com/img/cards/news/091bef5d2831.png",
-      "pubDate": "2026-09-06T04:23:12+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "46 intersections in Harare’s CBD to get new traffic lights",
-      "link": "https://mutapatimes.com/articles/2026-09-06-46-intersections-in-harares-cbd-to-get-new-traffic-lights",
-      "image": "https://mutapatimes.com/img/cards/news/9acba9795ddf.png",
-      "pubDate": "2026-09-06T04:15:22+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Air Zim introduces direct flights to Masvingo",
-      "link": "https://mutapatimes.com/articles/2026-09-06-air-zim-introduces-direct-flights-to-masvingo",
-      "image": "https://mutapatimes.com/img/cards/news/076b104945a5.png",
-      "pubDate": "2026-09-06T04:13:42+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Major Dubai developer eyes luxury hotels in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-09-06-major-dubai-developer-eyes-luxury-hotels-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/e2726147747a.png",
-      "pubDate": "2026-09-06T04:00:34+00:00",
-      "category": "Tech"
     },
     {
       "kind": "news",
