@@ -1,14 +1,22 @@
 {
-  "fetched_at": "2026-09-06T12:33:51+00:00",
+  "fetched_at": "2026-09-06T17:28:25+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Dubai Hotels Are Struggling. Why Is Burj Khalifa Developer Mohamed Alabbar Betting on Zimbabwe?",
-      "link": "https://mutapatimes.com/articles/2026-09-06-dubai-hotels-are-struggling-why-is-burj-khalifa-developer-mo",
-      "image": "https://mutapatimes.com/img/cards/news/79ef5d9bed4d.png",
-      "pubDate": "2026-09-06T08:41:01+00:00",
-      "category": "Culture"
+      "title": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy",
+      "link": "https://mutapatimes.com/articles/2026-09-06-south-africa-beat-zimbabwe-by-48-runs-to-lift-tri-series-tro",
+      "image": "https://mutapatimes.com/img/cards/news/cef24e990b39.png",
+      "pubDate": "2026-09-06T15:36:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's Manufacturers Are More Confident. So Why Is Production Falling?",
+      "link": "https://mutapatimes.com/articles/2026-09-06-zimbabwe-manufacturers-confident-production-falling",
+      "image": "https://mutapatimes.com/img/cards/news/8117c3ec63aa.png",
+      "pubDate": "2026-09-06T09:00:00+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -20,6 +28,14 @@
     },
     {
       "kind": "news",
+      "title": "Zimbabwe's Prices Were Flat in August. But Food Got Cheaper in US Dollars",
+      "link": "https://mutapatimes.com/articles/2026-09-06-zimbabwe-august-inflation-flat-food-cheaper-us-dollars",
+      "image": "https://mutapatimes.com/img/cards/news/cb03a92cc8ec.png",
+      "pubDate": "2026-09-06T08:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
       "title": "Air Zimbabwe Launches Direct Harare to Masvingo and Chiredzi Flights Ahead of Tourism Expo 2026",
       "link": "https://mutapatimes.com/news/2026-09-06-air-zimbabwe-launches-direct-harare-to-masvingo-and-chiredzi-flights-ahead-of-830f6e",
       "image": "https://mutapatimes.com/img/cards/news/a914009ea5e3.png",
@@ -28,35 +44,67 @@
     },
     {
       "kind": "news",
+      "title": "Two walls, two civilisations, one heritage: Finding Great Zimbabwe in the Great Wall of China",
+      "link": "https://mutapatimes.com/articles/2026-09-06-two-walls-two-civilisations-one-heritage-finding-great-zimba",
+      "image": "https://mutapatimes.com/img/cards/news/27bfb2a0b709.png",
+      "pubDate": "2026-09-06T04:45:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "NDEBELE IDENTITY: Who are the Ndebele of Zimbabwe?",
+      "link": "https://mutapatimes.com/articles/2026-09-06-ndebele-identity-who-are-the-ndebele-of-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/8c398d1671cd.png",
+      "pubDate": "2026-09-06T04:40:37+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "OK Zim’s corporate rescue gains traction",
+      "link": "https://mutapatimes.com/articles/2026-09-06-ok-zims-corporate-rescue-gains-traction",
+      "image": "https://mutapatimes.com/img/cards/news/37295690f5a0.png",
+      "pubDate": "2026-09-06T04:24:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "When the Sky Breaks Twice in Three Years",
+      "link": "https://mutapatimes.com/articles/2026-09-06-when-the-sky-breaks-twice-in-three-years",
+      "image": "https://mutapatimes.com/img/cards/news/091bef5d2831.png",
+      "pubDate": "2026-09-06T04:23:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "46 intersections in Harare’s CBD to get new traffic lights",
+      "link": "https://mutapatimes.com/articles/2026-09-06-46-intersections-in-harares-cbd-to-get-new-traffic-lights",
+      "image": "https://mutapatimes.com/img/cards/news/9acba9795ddf.png",
+      "pubDate": "2026-09-06T04:15:22+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Air Zim introduces direct flights to Masvingo",
+      "link": "https://mutapatimes.com/articles/2026-09-06-air-zim-introduces-direct-flights-to-masvingo",
+      "image": "https://mutapatimes.com/img/cards/news/076b104945a5.png",
+      "pubDate": "2026-09-06T04:13:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Major Dubai developer eyes luxury hotels in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-09-06-major-dubai-developer-eyes-luxury-hotels-in-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/e2726147747a.png",
+      "pubDate": "2026-09-06T04:00:34+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
       "title": "Proteas face Zimbabwe in Windhoek final",
       "link": "https://mutapatimes.com/news/2026-09-06-proteas-face-zimbabwe-in-windhoek-final-8c3f57",
       "image": "https://mutapatimes.com/img/cards/news/0ea74b7bab94.png",
       "pubDate": "2026-09-06T03:52:00+00:00",
       "category": "Sports"
-    },
-    {
-      "kind": "news",
-      "title": "Zim in swap deal with Zimplats",
-      "link": "https://mutapatimes.com/articles/2026-09-06-zim-in-swap-deal-with-zimplats",
-      "image": "https://mutapatimes.com/img/cards/news/de0877b6f79b.png",
-      "pubDate": "2026-09-06T00:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zim steps up money laundering fight",
-      "link": "https://mutapatimes.com/articles/2026-09-05-zim-steps-up-money-laundering-fight",
-      "image": "https://mutapatimes.com/img/cards/news/1d6b4401ff67.png",
-      "pubDate": "2026-09-05T23:56:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zim, China deepen co-operation in infrastructure, mineral beneficiation",
-      "link": "https://mutapatimes.com/articles/2026-09-05-zim-china-deepen-co-operation-in-infrastructure-mineral-bene",
-      "image": "https://mutapatimes.com/img/cards/news/600b01e2ec6f.png",
-      "pubDate": "2026-09-05T23:06:30+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -73,14 +121,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b5d25edbaff7.png",
       "pubDate": "2026-09-05T22:50:20+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Català opens new Warriors chapter with bold Afcon squad",
-      "link": "https://mutapatimes.com/articles/2026-09-05-catala-opens-new-warriors-chapter-with-bold-afcon-squad",
-      "image": "https://mutapatimes.com/img/cards/news/7b6c467a08dd.png",
-      "pubDate": "2026-09-05T22:40:46+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -153,6 +193,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-05T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Anglican Diocese of Harare — Diocesan Education Secretary",
+      "link": "https://vacancymail.co.zw/jobs/diocesan-education-secretary-69240/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7e54e71ecdae.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Chief Executive Officer",
+      "link": "https://vacancymail.co.zw/jobs/chief-executive-officer-69239/",
+      "image": "https://mutapatimes.com/img/cards/jobs/75701b7a46c3.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe Mining Development Corporation — Buyer",
+      "link": "https://vacancymail.co.zw/jobs/buyer-69238/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fed53a7ccbd9.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Petrotrade (Private) Limited — Sales Leaders x 17",
+      "link": "https://vacancymail.co.zw/jobs/sales-leaders-x-17-69237/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ec9fcc2934ba.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rural Electrification Agency (REA) — Driver",
+      "link": "https://vacancymail.co.zw/jobs/driver-69236/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f3492a6bb677.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rural Electrification Agency (REA) — Administration Clerk",
+      "link": "https://vacancymail.co.zw/jobs/administration-clerk-69235/",
+      "image": "https://mutapatimes.com/img/cards/jobs/20b103859c70.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rural Electrification Agency (REA) — Provincial Accountant",
+      "link": "https://vacancymail.co.zw/jobs/provincial-accountant-69234/",
+      "image": "https://mutapatimes.com/img/cards/jobs/63440149c30a.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Rural Electrification Agency (REA) — Corporate Accountant",
+      "link": "https://vacancymail.co.zw/jobs/corporate-accountant-69233/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a164a20cd7e9.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gokwe South Rural District Council — Excavator Operator",
+      "link": "https://vacancymail.co.zw/jobs/excavator-operator-69232/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0b54483c81e1.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe Media Commission — Gender Mainstreaming and Inclusivity Officer",
+      "link": "https://vacancymail.co.zw/jobs/gender-mainstreaming-and-inclusivity-officer-69231/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4ea7a60741cb.png",
+      "pubDate": "2026-09-05T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -359,126 +479,6 @@
       "title": "Trainee Claims Administrator",
       "link": "https://vacancymail.co.zw/jobs/trainee-claims-administrator-69188/",
       "image": "https://mutapatimes.com/img/cards/jobs/5bcdbb0e28df.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Personnel : Intel Solar & Metering Solutions",
-      "link": "https://vacancymail.co.zw/jobs/sales-personnel-intel-solar-metering-solutions-69187/",
-      "image": "https://mutapatimes.com/img/cards/jobs/78d658504d67.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Electronics and Security Systems Professional",
-      "link": "https://vacancymail.co.zw/jobs/electronics-and-security-systems-professional-69186/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c9e8bad24da9.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Accountant",
-      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-69185/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bc5f97b39202.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Oxfam — Tender Title: Supply of 3 x Double Cab Vehicles",
-      "link": "https://vacancymail.co.zw/jobs/tender-title-supply-of-3-x-double-cab-vehicles-69184/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f5e507d14d93.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Operating Theatre Nurse Aide",
-      "link": "https://vacancymail.co.zw/jobs/operating-theatre-nurse-aide-69183/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ed756f831a9.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Valtera Platinum — Section Engineer Smelter",
-      "link": "https://vacancymail.co.zw/jobs/section-engineer-smelter-69182/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d735bcd57358.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Territory Manager",
-      "link": "https://vacancymail.co.zw/jobs/territory-manager-69181/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3e09093dcd50.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Radiographer – Cimas Jason Moyo Radiology",
-      "link": "https://vacancymail.co.zw/jobs/radiographer-cimas-jason-moyo-radiology-69180/",
-      "image": "https://mutapatimes.com/img/cards/jobs/25b7df062bb6.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PAYROLL LENDING - LEAD",
-      "link": "https://vacancymail.co.zw/jobs/payroll-lending-lead-69174/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1d8e9305801c.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Motorbike Delivery Driver",
-      "link": "https://vacancymail.co.zw/jobs/motorbike-delivery-driver-69173/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b73ab12bd71a.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "STORES INTERN",
-      "link": "https://vacancymail.co.zw/jobs/stores-intern-69172/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c016657bd7a8.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "DESK SALES REP",
-      "link": "https://vacancymail.co.zw/jobs/desk-sales-rep-69171/",
-      "image": "https://mutapatimes.com/img/cards/jobs/56a049b60afb.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing officer",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-69170/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0a4c26ced0d2.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe National Boxing and Wrestling Control Board (ZNBWCB) — Provincial Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/provincial-coordinator-69169/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b1372c16039.png",
-      "pubDate": "2026-09-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Handyman",
-      "link": "https://vacancymail.co.zw/jobs/handyman-69168/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0e11665159f7.png",
       "pubDate": "2026-09-05T22:00:00+00:00",
       "category": "Jobs"
     }
