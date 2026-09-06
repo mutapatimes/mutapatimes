@@ -1,0 +1,16 @@
+---
+title: "South Africa records 15 rabies deaths as Agriculture Department urges vaccination"
+date: 2026-09-03T09:45:00.000Z
+author: George Herald
+category: Tech
+image: 
+summary: "South Africa records 15 rabies deaths as Agriculture Department urges vaccination"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSmxkN2ZQNGJYS0pUcjhmWXczMmNiRW5jVGFZNjR1NjJ6WXdBNGtadXZTLXNXSTBWVjkwbkhRNXBkWlhvSTZlWHdod2FQWDVfWVdvRy1Ya2hoWWdkekp2TE1ZNlVDMFB4NWdyZnZ6MmluZlF3SEpWZklqalctYThxNTZfLXRCcTJRdlhLN1FaQ254SVNoWV9oWWxlNUZxMl9EanZ5TkYweExGaW1DNXFrVk5NQmdmOWN4MVNmYW9LTFVqQUozNHNCdVhhYjJUNWRrYUxsQ3JiYXJhTkMzRkl2cVRn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by George Herald.*
+[Read original article](https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSmxkN2ZQNGJYS0pUcjhmWXczMmNiRW5jVGFZNjR1NjJ6WXdBNGtadXZTLXNXSTBWVjkwbkhRNXBkWlhvSTZlWHdod2FQWDVfWVdvRy1Ya2hoWWdkekp2TE1ZNlVDMFB4NWdyZnZ6MmluZlF3SEpWZklqalctYThxNTZfLXRCcTJRdlhLN1FaQ254SVNoWV9oWWxlNUZxMl9EanZ5TkYweExGaW1DNXFrVk5NQmdmOWN4MVNmYW9LTFVqQUozNHNCdVhhYjJUNWRrYUxsQ3JiYXJhTkMzRkl2cVRn?oc=5)
