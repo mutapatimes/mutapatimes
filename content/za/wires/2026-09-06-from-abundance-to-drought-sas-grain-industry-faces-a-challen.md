@@ -1,0 +1,16 @@
+---
+title: "From abundance to drought — SA’s grain industry faces a challenging summer"
+date: 2026-09-06T20:37:30.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "From abundance to drought — SA’s grain industry faces a challenging summer"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirwJBVV95cUxOZnVGMTZjU3NfZ2gwdmNPTU50aTNFOGxrRmU2Zko1T2JKci1yOUt3Q0Q3X3BKR19kTHdZUmJvLXhZOXFCLTUzRWJQcGl3SXhpTUJqeGN2cFVtTkJlRmd2cnpPUlgwUWNMZGFvX0plSXVKRWs0NkE5WVVDdXc5akZyc0ZmZl9tSmV5X2Ztc3A1a01vd2ZLbTRzUW10NjRxY0RLMFYxTHdJYTQ5ZC1TcUpfM0FUOHRZVllxY3BwbjRVem85N3p6V2ZfSWFCcDZBSnJRdm16WnhFckVZZVptSXQ5TXBBTzVzRnBTWHZYY3R6ZU93ZGtJdlBCWUg3VGI0R09RNjN2dVdCLWlXazYzamF2MWttMUp1NzdvSjhNMFVORW1tZDRNeWcxRHk3Q05KSTQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirwJBVV95cUxOZnVGMTZjU3NfZ2gwdmNPTU50aTNFOGxrRmU2Zko1T2JKci1yOUt3Q0Q3X3BKR19kTHdZUmJvLXhZOXFCLTUzRWJQcGl3SXhpTUJqeGN2cFVtTkJlRmd2cnpPUlgwUWNMZGFvX0plSXVKRWs0NkE5WVVDdXc5akZyc0ZmZl9tSmV5X2Ztc3A1a01vd2ZLbTRzUW10NjRxY0RLMFYxTHdJYTQ5ZC1TcUpfM0FUOHRZVllxY3BwbjRVem85N3p6V2ZfSWFCcDZBSnJRdm16WnhFckVZZVptSXQ5TXBBTzVzRnBTWHZYY3R6ZU93ZGtJdlBCWUg3VGI0R09RNjN2dVdCLWlXazYzamF2MWttMUp1NzdvSjhNMFVORW1tZDRNeWcxRHk3Q05KSTQ?oc=5)
