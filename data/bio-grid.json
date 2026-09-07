@@ -1,7 +1,79 @@
 {
-  "fetched_at": "2026-09-07T07:49:36+00:00",
+  "fetched_at": "2026-09-07T14:43:05+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s US$99m Zimplats Deal Solves One Problem — But Exposes a Bigger One",
+      "link": "https://mutapatimes.com/articles/2026-09-07-",
+      "image": "https://mutapatimes.com/img/cards/news/b9efa2912824.png",
+      "pubDate": "2026-09-07T13:41:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘Zimbabwe must boost domestic medicine production’",
+      "link": "https://mutapatimes.com/articles/2026-09-06-zimbabwe-must-boost-domestic-medicine-production",
+      "image": "https://mutapatimes.com/img/cards/news/5a4925e7c56b.png",
+      "pubDate": "2026-09-06T23:57:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Construction sector seeks resilience, stronger partnerships",
+      "link": "https://mutapatimes.com/articles/2026-09-06-construction-sector-seeks-resilience-stronger-partnerships",
+      "image": "https://mutapatimes.com/img/cards/news/fbdd699ec71b.png",
+      "pubDate": "2026-09-06T22:39:34+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Construction sector seeks resilience, stronger partnerships",
+      "link": "https://mutapatimes.com/news/2026-09-06-construction-sector-seeks-resilience-stronger-partnerships-c368d0",
+      "image": "https://mutapatimes.com/img/cards/news/120dde908655.png",
+      "pubDate": "2026-09-06T22:39:34+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Handball juniors team in losing start",
+      "link": "https://mutapatimes.com/news/2026-09-06-handball-juniors-team-in-losing-start-2e211a",
+      "image": "https://mutapatimes.com/img/cards/news/1efad4363f95.png",
+      "pubDate": "2026-09-06T22:37:43+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo vendors’ group in India to build trade links",
+      "link": "https://mutapatimes.com/articles/2026-09-06-bulawayo-vendors-group-in-india-to-build-trade-links",
+      "image": "https://mutapatimes.com/img/cards/news/bdc504386a02.png",
+      "pubDate": "2026-09-06T22:34:08+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo vendors’ group in India to build trade links",
+      "link": "https://mutapatimes.com/news/2026-09-06-bulawayo-vendors-group-in-india-to-build-trade-links-9d560c",
+      "image": "https://mutapatimes.com/img/cards/news/05864208320f.png",
+      "pubDate": "2026-09-06T22:34:08+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo netball targets coaching revolution",
+      "link": "https://mutapatimes.com/articles/2026-09-06-bulawayo-netball-targets-coaching-revolution",
+      "image": "https://mutapatimes.com/img/cards/news/e1b9dcc6d51a.png",
+      "pubDate": "2026-09-06T22:32:03+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Econet Ai nears completion of Ndebele-speaking chatbot",
+      "link": "https://mutapatimes.com/articles/2026-09-06-econet-ai-nears-completion-of-ndebele-speaking-chatbot",
+      "image": "https://mutapatimes.com/img/cards/news/0cb5f2ec6899.png",
+      "pubDate": "2026-09-06T22:30:49+00:00",
+      "category": "Tech"
+    },
     {
       "kind": "economy",
       "title": "Zim trade balance 2025 Q4: $486M trade surplus. Exports $3.2B, imports $2.7B.",
@@ -20,7 +92,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 7 Sep: Harare light drizzle · high 24° / low 15°",
+      "title": "Zim weather 7 Sep: Harare overcast · high 26° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-09-07",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-07",
       "pubDate": "2026-09-06T22:00:00+00:00",
@@ -57,6 +129,22 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-06T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Strike Security — Training Officer",
+      "link": "https://vacancymail.co.zw/jobs/training-officer-69243/",
+      "image": "https://mutapatimes.com/img/cards/jobs/35d05b2052b5.png",
+      "pubDate": "2026-09-06T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Caritas Zimbabwe Mutare — Internship",
+      "link": "https://vacancymail.co.zw/jobs/internship-69242/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7081258f61c8.png",
+      "pubDate": "2026-09-06T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -391,94 +479,6 @@
       "title": "St Anne's Hospital — Operating Theatre Nurse Aide",
       "link": "https://vacancymail.co.zw/jobs/operating-theatre-nurse-aide-69183/",
       "image": "https://mutapatimes.com/img/cards/jobs/2ed756f831a9.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Valtera Platinum — Section Engineer Smelter",
-      "link": "https://vacancymail.co.zw/jobs/section-engineer-smelter-69182/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d735bcd57358.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Territory Manager",
-      "link": "https://vacancymail.co.zw/jobs/territory-manager-69181/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3e09093dcd50.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CIMAS — Radiographer – Cimas Jason Moyo Radiology",
-      "link": "https://vacancymail.co.zw/jobs/radiographer-cimas-jason-moyo-radiology-69180/",
-      "image": "https://mutapatimes.com/img/cards/jobs/25b7df062bb6.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PAYROLL LENDING - LEAD",
-      "link": "https://vacancymail.co.zw/jobs/payroll-lending-lead-69174/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1d8e9305801c.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Motorbike Delivery Driver",
-      "link": "https://vacancymail.co.zw/jobs/motorbike-delivery-driver-69173/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b73ab12bd71a.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "STORES INTERN",
-      "link": "https://vacancymail.co.zw/jobs/stores-intern-69172/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c016657bd7a8.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "DESK SALES REP",
-      "link": "https://vacancymail.co.zw/jobs/desk-sales-rep-69171/",
-      "image": "https://mutapatimes.com/img/cards/jobs/56a049b60afb.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing officer",
-      "link": "https://vacancymail.co.zw/jobs/marketing-officer-69170/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0a4c26ced0d2.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe National Boxing and Wrestling Control Board (ZNBWCB) — Provincial Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/provincial-coordinator-69169/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1b1372c16039.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Handyman",
-      "link": "https://vacancymail.co.zw/jobs/handyman-69168/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0e11665159f7.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Ezekiel Guti University — DEAN -FACULTY OF HERITAGE, HUMANITIES AND SOCIETAL ADVANCEMENT(1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/dean-faculty-of-heritage-humanities-and-societal-advancement1-post-69167/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d6a8c8d851bd.png",
       "pubDate": "2026-09-06T22:00:00+00:00",
       "category": "Jobs"
     }
