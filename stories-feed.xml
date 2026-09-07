@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 12:30:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 12:45:23 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,30 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Strike Security — Training Officer</title>
+      <link>https://mutapatimes.com/stories/35d05b2052b5.html</link>
+      <description>🚨 VACANCY: TRAINING OFFICER – SECURITY COMPANY 🚨 We are looking for a highly competent, disciplined and experienced Male Training Officer to join our security team. The ideal candidate must be confid… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 06 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/35d05b2052b5.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Strike Security</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/35d05b2052b5.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/35d05b2052b5.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/35d05b2052b5.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Caritas Zimbabwe Mutare — Internship</title>
+      <link>https://mutapatimes.com/stories/7081258f61c8.html</link>
+      <description>Caritas Mutare is offering a 3 months Internship. Makoni · Internship (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 06 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/7081258f61c8.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Caritas Zimbabwe Mutare</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/7081258f61c8.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7081258f61c8.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/7081258f61c8.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Loans Officer</title>
@@ -713,30 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/4f811f2e23e5.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4f811f2e23e5.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/4f811f2e23e5.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Green Fuel — Auto Electrician x 2 - Turbo Energy</title>
-      <link>https://mutapatimes.com/stories/a92d4c4f962a.html</link>
-      <description>To competently carryout out all auto-electrical fleet maintenance activities by ensuring consistent service availability to user departments by inspecting, carrying out routine, preventative and sche… Hwange · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 06 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/a92d4c4f962a.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Green Fuel</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/a92d4c4f962a.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/a92d4c4f962a.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/a92d4c4f962a.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Sales person</title>
-      <link>https://mutapatimes.com/stories/0a1ece150d19.html</link>
-      <description>To generate new business, manage customer relationships and convert sales opportunities into revenue by actively prospecting, presenting Convex Cybersecurity Services solutions, preparing quotations… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 06 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/0a1ece150d19.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/0a1ece150d19.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/0a1ece150d19.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/0a1ece150d19.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
