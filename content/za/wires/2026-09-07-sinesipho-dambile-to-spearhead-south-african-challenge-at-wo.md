@@ -1,0 +1,16 @@
+---
+title: "Sinesipho Dambile to spearhead South African challenge at World Athletics ultimate championships"
+date: 2026-09-07T17:22:47.000Z
+author: TimesLIVE
+category: Sport
+image: 
+summary: "Sinesipho Dambile to spearhead South African challenge at World Athletics ultimate championships"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWER2UzEyak9uVTFPcWEta213cnZLeHVmU3RxaVNVR3hvN1BFSUxhc2ZDWkd5YjBHZ0ZTZjBGTWdCS1ZqNHlTU2V3RlZoYXQ2MUpwTC03R0dSWF9JWmstTmFwU2xwbVZRbXcxSUZLalpwQVRuWlYzQUN2eGdXdHhaV1pUcE9abTFRZEZaM3ZXdGlMaXNxbGc5bkNTbTdjLVMzNnJnSF9LZnIzRUlGRC1MZ3lLQ2ZCbmR2TjYwNXBDdkcxUXA2UlpzV1pFMzFNZXdFeGV0WVZYVFptUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWER2UzEyak9uVTFPcWEta213cnZLeHVmU3RxaVNVR3hvN1BFSUxhc2ZDWkd5YjBHZ0ZTZjBGTWdCS1ZqNHlTU2V3RlZoYXQ2MUpwTC03R0dSWF9JWmstTmFwU2xwbVZRbXcxSUZLalpwQVRuWlYzQUN2eGdXdHhaV1pUcE9abTFRZEZaM3ZXdGlMaXNxbGc5bkNTbTdjLVMzNnJnSF9LZnIzRUlGRC1MZ3lLQ2ZCbmR2TjYwNXBDdkcxUXA2UlpzV1pFMzFNZXdFeGV0WVZYVFptUQ?oc=5)

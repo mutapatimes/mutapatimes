@@ -1,0 +1,16 @@
+---
+title: "More champagne for a few, no water for All: SA’s water-tankering disaster"
+date: 2026-09-07T21:09:58.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "More champagne for a few, no water for All: SA’s water-tankering disaster"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNdFdQUzZaVlNmN0Q1S2RyQVFBMDNiWDB2U2Q4TDZBYi1DZzVfZ0thMHRXV1lYZ1pxOE5sQ0NmeHlqQkhzTk9sSUNXU1pJbXBaMVZrbHB3cWZoVERFOHZrSEk3bUlUNWp4OXg0SEJiWTNrTHlWRzA5dDNpNk1ZREl0d0xHdnFJOWE4Y1V2VTBuRjdLekRvSmpsbGlNMlRNcUIxWlB2NldfZ01SQjNtZDJvVFRCazJxNGctUjBuaV8waXNtUTFzV2ZMN3B6MjIyNXhpTTB0X01kTXhlQ3VlWmR2ZUU3V21UY3k0eGFHNFlVbXprUFBnQTZoUmZ2bmxsLUI4QjNzTk9QbG45UC1fM3dLVkdRUW94MlpkRHY4Mk1wZjk1SFpiQlVzejF3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxNdFdQUzZaVlNmN0Q1S2RyQVFBMDNiWDB2U2Q4TDZBYi1DZzVfZ0thMHRXV1lYZ1pxOE5sQ0NmeHlqQkhzTk9sSUNXU1pJbXBaMVZrbHB3cWZoVERFOHZrSEk3bUlUNWp4OXg0SEJiWTNrTHlWRzA5dDNpNk1ZREl0d0xHdnFJOWE4Y1V2VTBuRjdLekRvSmpsbGlNMlRNcUIxWlB2NldfZ01SQjNtZDJvVFRCazJxNGctUjBuaV8waXNtUTFzV2ZMN3B6MjIyNXhpTTB0X01kTXhlQ3VlWmR2ZUU3V21UY3k0eGFHNFlVbXprUFBnQTZoUmZ2bmxsLUI4QjNzTk9QbG45UC1fM3dLVkdRUW94MlpkRHY4Mk1wZjk1SFpiQlVzejF3?oc=5)
