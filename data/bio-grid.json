@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-07T14:43:05+00:00",
+  "fetched_at": "2026-09-07T18:58:25+00:00",
   "count": 60,
   "tiles": [
     {
@@ -11,20 +11,124 @@
       "category": "Business"
     },
     {
+      "kind": "zse",
+      "title": "ZSE close 7 Sep 2026: All Share 453.0 (-1.31%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-07",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-07",
+      "pubDate": "2026-09-07T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "‘Zimbabwe must boost domestic medicine production’",
-      "link": "https://mutapatimes.com/articles/2026-09-06-zimbabwe-must-boost-domestic-medicine-production",
-      "image": "https://mutapatimes.com/img/cards/news/5a4925e7c56b.png",
-      "pubDate": "2026-09-06T23:57:00+00:00",
+      "title": "Econet AI to launch Ndebele-speaking customer chatbot",
+      "link": "https://mutapatimes.com/articles/2026-09-07-econet-ai-to-launch-ndebele-speaking-customer-chatbot",
+      "image": "https://mutapatimes.com/img/cards/news/9b87d1729e69.png",
+      "pubDate": "2026-09-07T06:54:25+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Econet AI to launch Ndebele-speaking customer chatbot",
+      "link": "https://mutapatimes.com/news/2026-09-07-econet-ai-to-launch-ndebele-speaking-customer-chatbot-fb66b3",
+      "image": "https://mutapatimes.com/img/cards/news/9c6d17c490d6.png",
+      "pubDate": "2026-09-07T06:54:25+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "'Mugabe true revolutionary of unassailable credentials'",
+      "link": "https://mutapatimes.com/news/2026-09-07-mugabe-true-revolutionary-of-unassailable-credentials-d0f0d4",
+      "image": "https://mutapatimes.com/img/cards/news/9be8636168b4.png",
+      "pubDate": "2026-09-07T06:53:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe minister warns cross-dressing comedian",
+      "link": "https://mutapatimes.com/news/2026-09-07-zimbabwe-minister-warns-cross-dressing-comedian-27326b",
+      "image": "https://mutapatimes.com/img/cards/news/d8fc34ab06d6.png",
+      "pubDate": "2026-09-07T06:52:58+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Evans’ heroics in vain as Zimbabwe fall in tri-series final",
+      "link": "https://mutapatimes.com/articles/2026-09-07-evans-heroics-in-vain-as-zimbabwe-fall-in-tri-series-final",
+      "image": "https://mutapatimes.com/img/cards/news/4b2a13c1c011.png",
+      "pubDate": "2026-09-07T06:42:58+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Construction sector seeks resilience, stronger partnerships",
-      "link": "https://mutapatimes.com/articles/2026-09-06-construction-sector-seeks-resilience-stronger-partnerships",
-      "image": "https://mutapatimes.com/img/cards/news/fbdd699ec71b.png",
-      "pubDate": "2026-09-06T22:39:34+00:00",
+      "title": "Evans’ heroics in vain as Zimbabwe fall in tri-series final",
+      "link": "https://mutapatimes.com/news/2026-09-07-evans-heroics-in-vain-as-zimbabwe-fall-in-tri-series-final-0a4a9c",
+      "image": "https://mutapatimes.com/img/cards/news/910df60bd775.png",
+      "pubDate": "2026-09-07T06:42:58+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZESA Appoints New Board Following Major Group Restructuring",
+      "link": "https://mutapatimes.com/articles/2026-09-07-zesa-appoints-new-board-following-major-group-restructuring",
+      "image": "https://mutapatimes.com/img/cards/news/f5b2b322fa0f.png",
+      "pubDate": "2026-09-07T06:25:15+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "ZESA Appoints New Board Following Major Group Restructuring",
+      "link": "https://mutapatimes.com/news/2026-09-07-zesa-appoints-new-board-following-major-group-restructuring-3b7d86",
+      "image": "https://mutapatimes.com/img/cards/news/d901ddf12fec.png",
+      "pubDate": "2026-09-07T06:25:15+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zacc 'pressuring' councillors to implicate Deputy Mayor?",
+      "link": "https://mutapatimes.com/news/2026-09-07-zacc-pressuring-councillors-to-implicate-deputy-mayor-6688a6",
+      "image": "https://mutapatimes.com/img/cards/news/9062b9bbf601.png",
+      "pubDate": "2026-09-07T05:48:31+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Fears grow over drought relief fund looting",
+      "link": "https://mutapatimes.com/news/2026-09-07-fears-grow-over-drought-relief-fund-looting-b35219",
+      "image": "https://mutapatimes.com/img/cards/news/dd553e0969bc.png",
+      "pubDate": "2026-09-07T05:47:45+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Too much lula lula, too many morning-after pills: Apostle Godfrey Kudita’s son in rape scandal involving his 14-year-old sister",
+      "link": "https://mutapatimes.com/news/2026-09-07-too-much-lula-lula-too-many-morning-after-pills-apostle-godfrey-kudita-s-son-in-c878b4",
+      "image": "https://mutapatimes.com/img/cards/news/b38cb16b5ebd.png",
+      "pubDate": "2026-09-07T05:47:20+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chevrons lose T20 Tri Series final to South Africa’s Proteas",
+      "link": "https://mutapatimes.com/articles/2026-09-07-chevrons-lose-t20-tri-series-final-to-south-africas-proteas",
+      "image": "https://mutapatimes.com/img/cards/news/94750925839c.png",
+      "pubDate": "2026-09-07T05:19:35+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chevrons lose T20 Tri Series final to South Africa’s Proteas",
+      "link": "https://mutapatimes.com/news/2026-09-07-chevrons-lose-t20-tri-series-final-to-south-africa-s-proteas-5af9d6",
+      "image": "https://mutapatimes.com/img/cards/news/7812151da94d.png",
+      "pubDate": "2026-09-07T05:19:35+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Forestry Commission impounds 20 trucks, seizes 4 000 bags of charcoal in Harare sweep to nip deforestation",
+      "link": "https://mutapatimes.com/news/2026-09-07-forestry-commission-impounds-20-trucks-seizes-4-000-bags-of-charcoal-in-harare-a0a6e7",
+      "image": "https://mutapatimes.com/img/cards/news/595ccc2a461f.png",
+      "pubDate": "2026-09-07T05:13:05+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -45,34 +149,10 @@
     {
       "kind": "news",
       "title": "Bulawayo vendors’ group in India to build trade links",
-      "link": "https://mutapatimes.com/articles/2026-09-06-bulawayo-vendors-group-in-india-to-build-trade-links",
-      "image": "https://mutapatimes.com/img/cards/news/bdc504386a02.png",
-      "pubDate": "2026-09-06T22:34:08+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Bulawayo vendors’ group in India to build trade links",
       "link": "https://mutapatimes.com/news/2026-09-06-bulawayo-vendors-group-in-india-to-build-trade-links-9d560c",
       "image": "https://mutapatimes.com/img/cards/news/05864208320f.png",
       "pubDate": "2026-09-06T22:34:08+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Bulawayo netball targets coaching revolution",
-      "link": "https://mutapatimes.com/articles/2026-09-06-bulawayo-netball-targets-coaching-revolution",
-      "image": "https://mutapatimes.com/img/cards/news/e1b9dcc6d51a.png",
-      "pubDate": "2026-09-06T22:32:03+00:00",
-      "category": "Sport"
-    },
-    {
-      "kind": "news",
-      "title": "Econet Ai nears completion of Ndebele-speaking chatbot",
-      "link": "https://mutapatimes.com/articles/2026-09-06-econet-ai-nears-completion-of-ndebele-speaking-chatbot",
-      "image": "https://mutapatimes.com/img/cards/news/0cb5f2ec6899.png",
-      "pubDate": "2026-09-06T22:30:49+00:00",
-      "category": "Tech"
     },
     {
       "kind": "economy",
@@ -399,86 +479,6 @@
       "title": "Tsebo Servcor — Junior Section Cooks × 8",
       "link": "https://vacancymail.co.zw/jobs/junior-section-cooks-8-69194/",
       "image": "https://mutapatimes.com/img/cards/jobs/1f680f4330f8.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tsebo Servcor — Senior Section Cooks × 6",
-      "link": "https://vacancymail.co.zw/jobs/senior-section-cooks-6-69193/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5f8ac1ddea17.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tsebo Servcor — Production Chefs × 4",
-      "link": "https://vacancymail.co.zw/jobs/production-chefs-4-69192/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e486822c5aea.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tsebo Servcor — Catering Managers / Head Chefs × 5",
-      "link": "https://vacancymail.co.zw/jobs/catering-managers-head-chefs-5-69191/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8c925b9766bd.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Student On Attachment - Underwriting Department",
-      "link": "https://vacancymail.co.zw/jobs/student-on-attachment-underwriting-department-69189/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d12fd95e925.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Trainee Claims Administrator",
-      "link": "https://vacancymail.co.zw/jobs/trainee-claims-administrator-69188/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5bcdbb0e28df.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Personnel : Intel Solar & Metering Solutions",
-      "link": "https://vacancymail.co.zw/jobs/sales-personnel-intel-solar-metering-solutions-69187/",
-      "image": "https://mutapatimes.com/img/cards/jobs/78d658504d67.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Electronics and Security Systems Professional",
-      "link": "https://vacancymail.co.zw/jobs/electronics-and-security-systems-professional-69186/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c9e8bad24da9.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Accountant",
-      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-69185/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bc5f97b39202.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Oxfam — Tender Title: Supply of 3 x Double Cab Vehicles",
-      "link": "https://vacancymail.co.zw/jobs/tender-title-supply-of-3-x-double-cab-vehicles-69184/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f5e507d14d93.png",
-      "pubDate": "2026-09-06T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Operating Theatre Nurse Aide",
-      "link": "https://vacancymail.co.zw/jobs/operating-theatre-nurse-aide-69183/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ed756f831a9.png",
       "pubDate": "2026-09-06T22:00:00+00:00",
       "category": "Jobs"
     }
