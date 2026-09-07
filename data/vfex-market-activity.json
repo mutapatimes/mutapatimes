@@ -1,86 +1,80 @@
 {
-  "fetched_at": "2026-09-04T18:28:31.404010+00:00",
-  "as_of": "2026-09-04",
+  "fetched_at": "2026-09-07T16:26:42.502133+00:00",
+  "as_of": "2026-09-07",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 163,
-    "turnover": 401995.01,
-    "volume": 861886.0,
-    "market_cap": 8048202702.56
+    "trades": 164,
+    "turnover": 264158.84,
+    "volume": 594127.0,
+    "market_cap": 8177909430.86
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 264.38,
-      "change_pct": -0.53,
-      "change_points": -1.4,
+      "value": 264.3,
+      "change_pct": -0.03,
+      "change_points": -0.08,
       "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "Seed Co International",
-      "symbol": "",
-      "price": 45.0,
-      "change_pct": 7.14
-    },
-    {
-      "name": "Invictus Energy Limited Depository Receipts",
-      "symbol": "",
-      "price": 14.21,
-      "change_pct": 5.49
-    },
-    {
-      "name": "Tsl Limited",
-      "symbol": "TSL.VX",
-      "price": 25.0,
-      "change_pct": 4.56
-    },
-    {
-      "name": "Kavango Resources Plc",
-      "symbol": "KAV.VX",
-      "price": 2.46,
-      "change_pct": 2.93
-    },
-    {
-      "name": "Econet Infraco",
-      "symbol": "INFR.VX",
-      "price": 22.48,
-      "change_pct": 0.54
-    }
-  ],
-  "losers": [
-    {
-      "name": "Edgars Stores Limited",
-      "symbol": "EDGR.VX",
-      "price": 2.14,
-      "change_pct": -14.74
-    },
-    {
       "name": "Caledonia Mining Corporation Plc",
       "symbol": "CMCL.VX",
-      "price": 3201.41,
-      "change_pct": -11.01
+      "price": 3640.0,
+      "change_pct": 13.7
+    },
+    {
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 47.26,
+      "change_pct": 5.02
     },
     {
       "name": "Old Mutual Limited",
       "symbol": "OMU.VX",
-      "price": 86.86,
-      "change_pct": -2.69
+      "price": 89.66,
+      "change_pct": 3.22
     },
     {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 72.17,
-      "change_pct": -2.16
+      "name": "Econet Infraco",
+      "symbol": "INFR.VX",
+      "price": 22.89,
+      "change_pct": 1.82
+    },
+    {
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 2.5,
+      "change_pct": 1.63
+    }
+  ],
+  "losers": [
+    {
+      "name": "Invictus Energy Limited Depository Receipts",
+      "symbol": "",
+      "price": 13.01,
+      "change_pct": -8.44
     },
     {
       "name": "Padenga Holdings Ltd",
       "symbol": "PHL.VX",
-      "price": 140.52,
-      "change_pct": -1.36
+      "price": 138.37,
+      "change_pct": -1.53
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 71.76,
+      "change_pct": -0.57
+    },
+    {
+      "name": "Tsl Limited",
+      "symbol": "TSL.VX",
+      "price": 24.98,
+      "change_pct": -0.08
     }
   ],
   "notices": [
