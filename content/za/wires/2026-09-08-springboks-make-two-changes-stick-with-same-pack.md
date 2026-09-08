@@ -1,0 +1,16 @@
+---
+title: "Springboks make two changes, stick with same pack"
+date: 2026-09-08T00:15:07.000Z
+author: NZ Herald
+category: Sport
+image: 
+summary: "Springboks make two changes, stick with same pack"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMmMwUHAwcThKeWVWUHJxNHFvZ0szRjJTamYxOEJ4QzNqY1hKVTdzenJiQW1xeHlyV1VRd0FkczFBQ2VqSm5IdlVWcWxKZ2VKUE03alBFSDBHMWVNRlJlaThrYlp3d0dEa1cwTjFaLXByLUs5VFJycUh0YS1PenJzT1BtLXQyMTJzdGtiZE1JN0hpLTI0MnlQWlY0b2RJcloxN0czOE9UbGpDdjF4TVktRnVtb0dtN01laDI0UzJXdU5jMmtCYlYtMTU4T2dNeGNycmd6NFg1YjJ3c3FYUVVQMTNUSGI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by NZ Herald.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMmMwUHAwcThKeWVWUHJxNHFvZ0szRjJTamYxOEJ4QzNqY1hKVTdzenJiQW1xeHlyV1VRd0FkczFBQ2VqSm5IdlVWcWxKZ2VKUE03alBFSDBHMWVNRlJlaThrYlp3d0dEa1cwTjFaLXByLUs5VFJycUh0YS1PenJzT1BtLXQyMTJzdGtiZE1JN0hpLTI0MnlQWlY0b2RJcloxN0czOE9UbGpDdjF4TVktRnVtb0dtN01laDI0UzJXdU5jMmtCYlYtMTU4T2dNeGNycmd6NFg1YjJ3c3FYUVVQMTNUSGI?oc=5)
