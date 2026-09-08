@@ -1,0 +1,16 @@
+---
+title: "OLD MUTUAL LIMITED – Appointment of Ranen Thakurdin as Group Chief Financial Officer Designate of Old Mutual Limited and Old Mutual Life Assurance Company (South Africa) Limited"
+date: 2026-09-08T05:10:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "OLD MUTUAL LIMITED – Appointment of Ranen Thakurdin as Group Chief Financial Officer Designate of Old Mutual Limited and Old Mutual Life Assurance Company (South Africa) Limited"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxOQ2pFTzZSUjFodS01aHhHaFAtQ1lyYWQ5dEF0Zk54YjhWRUo3Szhadl9HWEpCdnYzMkpYaEt2ZTBpSk5oWGZOVlE3bkhKTHZvZjN6S0N0c3owZ0J0MWFTQWRlUU9ITVpIWWFuTTVfLVc2ZV9EWjhWaENjc05YUUs2VGJYVkxJZWlVdkU4d0h4cElBNm9TTm9tS1VkWG5HRW1IZ0F4T0M5SUhpTHM4ZWhhQWNlc2hvYXNHV19fbWhmVVloakN3N0V4UW12SHhONFliZlpKSllveGJWWjdJQVc2MmVuR3lpb1pUckRhcWRvdm5vN0hLN19XcTJoSUdFYnc3eW16Ym55TVg3aUgtd1d6NWdrWXdzaFdnWTk0WnB5RkpIME9TOW5BdGlTRS1sMWFUWU5XWA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxOQ2pFTzZSUjFodS01aHhHaFAtQ1lyYWQ5dEF0Zk54YjhWRUo3Szhadl9HWEpCdnYzMkpYaEt2ZTBpSk5oWGZOVlE3bkhKTHZvZjN6S0N0c3owZ0J0MWFTQWRlUU9ITVpIWWFuTTVfLVc2ZV9EWjhWaENjc05YUUs2VGJYVkxJZWlVdkU4d0h4cElBNm9TTm9tS1VkWG5HRW1IZ0F4T0M5SUhpTHM4ZWhhQWNlc2hvYXNHV19fbWhmVVloakN3N0V4UW12SHhONFliZlpKSllveGJWWjdJQVc2MmVuR3lpb1pUckRhcWRvdm5vN0hLN19XcTJoSUdFYnc3eW16Ym55TVg3aUgtd1d6NWdrWXdzaFdnWTk0WnB5RkpIME9TOW5BdGlTRS1sMWFUWU5XWA?oc=5)

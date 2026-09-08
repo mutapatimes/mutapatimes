@@ -1,0 +1,16 @@
+---
+title: "Takealot announces exclusive partnership with global beauty platform Thirteen Lune"
+date: 2026-09-08T07:38:11.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Takealot announces exclusive partnership with global beauty platform Thirteen Lune"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVWZFWHJlN2xXZ1N6azZFbnpNTkRQb3ZfSDI5VFpnMnJBNmRpT0Rfdl8wWGZIcmx3MTNGejdva0g2bVNJUU1zbGdiT1YzSUR4MTJRb2RwV2NTNXNORTUtN0hWNlNaeTREQkJ3eXdvZVQ2ZTJiQm96ODByRzcwY1lsbXZWN3ZseGREOE1Mdkxlbi1vdnVqaHdHenlLcTFhX0FpRURoS0daQS1QeHZCcWJCbXpEanF6c191YVFfMlZKbUhzUWVpVW1jMjBSel9TY0NTVGpDUEtsRXBWQzlwWnhR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVWZFWHJlN2xXZ1N6azZFbnpNTkRQb3ZfSDI5VFpnMnJBNmRpT0Rfdl8wWGZIcmx3MTNGejdva0g2bVNJUU1zbGdiT1YzSUR4MTJRb2RwV2NTNXNORTUtN0hWNlNaeTREQkJ3eXdvZVQ2ZTJiQm96ODByRzcwY1lsbXZWN3ZseGREOE1Mdkxlbi1vdnVqaHdHenlLcTFhX0FpRURoS0daQS1QeHZCcWJCbXpEanF6c191YVFfMlZKbUhzUWVpVW1jMjBSel9TY0NTVGpDUEtsRXBWQzlwWnhR?oc=5)
