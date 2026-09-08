@@ -1,0 +1,16 @@
+---
+title: "‘Sex worker? No, I am a content creator’ — inside SA’s R6bn OnlyFans boom"
+date: 2026-09-08T18:39:36.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "‘Sex worker? No, I am a content creator’ — inside SA’s R6bn OnlyFans boom"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQV09hQjAyQmYxRk45dVpnTHJqZXI0QXdYUjNQUWxpclZRS2I4QzFWUnRfQlJnTlFJOTBOQkRhWVpERHBXYVlRSjExS0ZzSmJoVWc3X2VfWGZkLUY0MWc5T19JaHN1dXF5cWltVmpOSkxUVHQ4TnVtbl9EODRrc3o3cFBZOGJIdmlHckVWQjI3YnhJZ2FxUFB5WTV6Tk1rQmJDOVFNUmdGeEpIQkdPWlpFU01GS0lic0dPN053TWpKX0g2aThFQmpBTFdicXE3aWdidXl5STh5d3BQV25BcmlMNFpZU0djalZaUVFaZDVaMzk1UHdrdkh1OTFNUXR6dlNTdHF4UUhDUEtEZWlYdnFudDN6Z2RZRkhyb2ZYajBtczNTeW9XYXFIZVNB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxQV09hQjAyQmYxRk45dVpnTHJqZXI0QXdYUjNQUWxpclZRS2I4QzFWUnRfQlJnTlFJOTBOQkRhWVpERHBXYVlRSjExS0ZzSmJoVWc3X2VfWGZkLUY0MWc5T19JaHN1dXF5cWltVmpOSkxUVHQ4TnVtbl9EODRrc3o3cFBZOGJIdmlHckVWQjI3YnhJZ2FxUFB5WTV6Tk1rQmJDOVFNUmdGeEpIQkdPWlpFU01GS0lic0dPN053TWpKX0g2aThFQmpBTFdicXE3aWdidXl5STh5d3BQV25BcmlMNFpZU0djalZaUVFaZDVaMzk1UHdrdkh1OTFNUXR6dlNTdHF4UUhDUEtEZWlYdnFudDN6Z2RZRkhyb2ZYajBtczNTeW9XYXFIZVNB?oc=5)

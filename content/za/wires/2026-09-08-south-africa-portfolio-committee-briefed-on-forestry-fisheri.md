@@ -1,0 +1,16 @@
+---
+title: "South Africa: Portfolio Committee Briefed on Forestry, Fisheries and Environment Commemorates International Day of Clean Air for Blue Skies"
+date: 2026-09-08T19:23:00.000Z
+author: Zawya
+category: Culture
+image: 
+summary: "South Africa: Portfolio Committee Briefed on Forestry, Fisheries and Environment Commemorates International Day of Clean Air for Blue Skies"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgJBVV95cUxPT1lDaDJ0NE9Ic0E1Z0FkR2lvaXdxZG9QaXY1Z0c5ZmtocU5Ua2ZCc1V0OHlZWEdCODBUend5c01QcDFDN1ZFNW5DVFMwSG1EWVE5WEZVZ0JmdmxlTXZHaHk4OTFianhybHBWWkp3R2FPTDVEUHR1WXh0WEppUGRZemdhWi03cEgtWnl6NERQd3NFSzJ4c2N3SUZZUnlIejdtNW5oRWdaVEo3LV9pblVYVVlxZDZZZWYxZ3p3dVVQb3NGUmdxSk1RbzY0U0dNZmJfM2tCcUxQaHJZSC13NGJOUktmaDlSVE9Jc3BjSk1mSWIzYWZkdHFDc1c4SEFaVTIzZDBIdC0zRFZzM2N5MUxYYkNjLW1wc2lMaThrTkYyZVMyajRBWTk1SnZZTHcwUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Zawya.*
+[Read original article](https://news.google.com/rss/articles/CBMirgJBVV95cUxPT1lDaDJ0NE9Ic0E1Z0FkR2lvaXdxZG9QaXY1Z0c5ZmtocU5Ua2ZCc1V0OHlZWEdCODBUend5c01QcDFDN1ZFNW5DVFMwSG1EWVE5WEZVZ0JmdmxlTXZHaHk4OTFianhybHBWWkp3R2FPTDVEUHR1WXh0WEppUGRZemdhWi03cEgtWnl6NERQd3NFSzJ4c2N3SUZZUnlIejdtNW5oRWdaVEo3LV9pblVYVVlxZDZZZWYxZ3p3dVVQb3NGUmdxSk1RbzY0U0dNZmJfM2tCcUxQaHJZSC13NGJOUktmaDlSVE9Jc3BjSk1mSWIzYWZkdHFDc1c4SEFaVTIzZDBIdC0zRFZzM2N5MUxYYkNjLW1wc2lMaThrTkYyZVMyajRBWTk1SnZZTHcwUQ?oc=5)
