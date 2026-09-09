@@ -1,0 +1,16 @@
+---
+title: "Former Mrs SA Joani Jacobs takes the Miss Supranational SA reins from Bokang Montjane-Tshabalala"
+date: 2026-09-09T14:46:30.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Former Mrs SA Joani Jacobs takes the Miss Supranational SA reins from Bokang Montjane-Tshabalala"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAJBVV95cUxQVjdWNXVURlZaRWdTYkYwUTFFejZzRERNajRqMUNMcVhlQ3FoSDhQRVFkbFRLNy1WLUtHWGN6Ni10S3NDLVhKeXN6bk9IYUdybVE3ZEttZjV1QnFLbHIxcS04NEVGdEdnZ1VReHVGaWpmZkFJM1ZEaFVWdzg1ZkRlVWV0Q0xROXBzUUhsODFJUzN5MHFUdlI1WGZ3NDNLaXIxU3VpMHB2TzZVMUxuLVRBZmlpei10eUZpYUJ4RXFKNlc2RzJWNjRHSWVzRXkzTm9ObE5VM2ZCUURMN0dIMmpvd3FFSUF0SXF0a2piN091QWEtTDNHMnhqX0ZCRlRnRkpyMEFVcw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMihAJBVV95cUxQVjdWNXVURlZaRWdTYkYwUTFFejZzRERNajRqMUNMcVhlQ3FoSDhQRVFkbFRLNy1WLUtHWGN6Ni10S3NDLVhKeXN6bk9IYUdybVE3ZEttZjV1QnFLbHIxcS04NEVGdEdnZ1VReHVGaWpmZkFJM1ZEaFVWdzg1ZkRlVWV0Q0xROXBzUUhsODFJUzN5MHFUdlI1WGZ3NDNLaXIxU3VpMHB2TzZVMUxuLVRBZmlpei10eUZpYUJ4RXFKNlc2RzJWNjRHSWVzRXkzTm9ObE5VM2ZCUURMN0dIMmpvd3FFSUF0SXF0a2piN091QWEtTDNHMnhqX0ZCRlRnRkpyMEFVcw?oc=5)
