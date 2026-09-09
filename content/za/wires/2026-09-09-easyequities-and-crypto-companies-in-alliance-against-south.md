@@ -1,0 +1,16 @@
+---
+title: "EasyEquities and crypto companies in alliance against South African Reserve Bank and National Treasury"
+date: 2026-09-09T05:00:00.000Z
+author: MyBroadband
+category: Policy
+image: 
+summary: "EasyEquities and crypto companies in alliance against South African Reserve Bank and National Treasury"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNzVEWjN1TjZGYXRjNzhIcGlpVlZaaFNZQnZ1bjJpZ0FFWU9uVmlDY1oxOGRucThJV3B6MlFmeHZ3SFFGMnRKNzRVcFU0ZG9VQ2JDUDE3UGdDVUJfZ2dQRjdjWjc4aXc5RDByeklzTTgtQm9sY2t4bExMdEpxT2pxMGQ5aFpzZ2Zhay1QeGFJc1dnSzI2SWRPc09HYThJem5KWlJ1Skg0eUJKeERNZE53V3JTYk9UM2pEV2U2em40Q2lQcVZ0VUU5MkZ6SzZVQ2F3clRzQmY4bkhNMHNtZWhYQVB3UU02LVN5S3JCTFlDWVB5QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNzVEWjN1TjZGYXRjNzhIcGlpVlZaaFNZQnZ1bjJpZ0FFWU9uVmlDY1oxOGRucThJV3B6MlFmeHZ3SFFGMnRKNzRVcFU0ZG9VQ2JDUDE3UGdDVUJfZ2dQRjdjWjc4aXc5RDByeklzTTgtQm9sY2t4bExMdEpxT2pxMGQ5aFpzZ2Zhay1QeGFJc1dnSzI2SWRPc09HYThJem5KWlJ1Skg0eUJKeERNZE53V3JTYk9UM2pEV2U2em40Q2lQcVZ0VUU5MkZ6SzZVQ2F3clRzQmY4bkhNMHNtZWhYQVB3UU02LVN5S3JCTFlDWVB5QQ?oc=5)

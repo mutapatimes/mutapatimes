@@ -1,0 +1,16 @@
+---
+title: "Drones and bodycams to bolster border infrastructure as Treasury plans new funding"
+date: 2026-09-09T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Drones and bodycams to bolster border infrastructure as Treasury plans new funding"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPb1lobU8yb0lWekdFbnFhRzVkcGJvR2tQSjktQ09UR3RPTmc1Y3czd1N4N3dmQjF0VEVuZzJyalNMVjdFMnpnSzRqcmZHUTRSOFdFZnpRS1JtNXVHRkI2cjltWVpJbEpYV1czZ2kzUGdzcUJuQjRfcmNaVHFtVVBudEtZZktQTHB6ZHNQSXZKdklIS1ZiV2ZlMlo0TW1tLVR6aXNtamdFLW5OclVYM1pvMk9STUF4S0pOZkVicTl6anJIMlBMNE1nQzRPT3l5cmp1emg1bW1tbw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPb1lobU8yb0lWekdFbnFhRzVkcGJvR2tQSjktQ09UR3RPTmc1Y3czd1N4N3dmQjF0VEVuZzJyalNMVjdFMnpnSzRqcmZHUTRSOFdFZnpRS1JtNXVHRkI2cjltWVpJbEpYV1czZ2kzUGdzcUJuQjRfcmNaVHFtVVBudEtZZktQTHB6ZHNQSXZKdklIS1ZiV2ZlMlo0TW1tLVR6aXNtamdFLW5OclVYM1pvMk9STUF4S0pOZkVicTl6anJIMlBMNE1nQzRPT3l5cmp1emg1bW1tbw?oc=5)
