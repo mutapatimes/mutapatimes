@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2026 13:20:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 16:37:38 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -235,18 +235,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/a3e4b31ca9a9.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 135,000 — Madokero home for sale (Madokero, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/1014fac73de9.html</link>
-      <description>USD 135,000 — Madokero, Harare West. 3 beds, 2 baths. Madokero home for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 08 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/1014fac73de9.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/1014fac73de9.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/1014fac73de9.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/1014fac73de9.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 325,000 — Double-Storey Masterpiece – Mount Pleasant Heights | (Mount Pleasant Heights, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/c837c3c5e5ad.html</link>
       <description>USD 325,000 — Mount Pleasant Heights, Harare North. 9 beds, 8 baths. Double-Storey Masterpiece – Mount Pleasant Heights |. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/f1442144b9e7.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f1442144b9e7.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/f1442144b9e7.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 250,000 — L-shaped red-tiled 4-bed Kadoma Home 1.9ha + Borehole (Kadoma)</title>
+      <link>https://mutapatimes.com/property-landing/d4328ba835e7.html</link>
+      <description>USD 250,000 — Kadoma. 4 beds, 3 baths. L-shaped red-tiled 4-bed Kadoma Home 1.9ha + Borehole. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 08 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d4328ba835e7.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/d4328ba835e7.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d4328ba835e7.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/d4328ba835e7.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

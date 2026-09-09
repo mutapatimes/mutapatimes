@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-09T11:20:56.594201+00:00",
+  "fetched_at": "2026-09-09T16:37:19.793769+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -166,15 +166,6 @@
       "baths": "6"
     },
     {
-      "title": "Madokero home for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-gpp250455",
-      "price": "USD 135,000",
-      "location": "Madokero, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/7a/57/23/7a572389-7bfe-4486-927e-fce91e5e6de8_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "Double-Storey Masterpiece – Mount Pleasant Heights |",
       "url": "https://www.property.co.zw/for-sale/houses-rws253435",
       "price": "USD 325,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/7a/89/17/7a8917a2-c57c-4607-84a8-bf12742d7436_thumbnail591.webp",
       "beds": "5",
       "baths": "1"
+    },
+    {
+      "title": "L-shaped red-tiled 4-bed Kadoma Home 1.9ha + Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-cac249968",
+      "price": "USD 250,000",
+      "location": "Kadoma",
+      "image": "https://www.property.co.zw/uploadedfiles/7e/c2/ac/7ec2ace8-9517-4c3c-abf4-ab02e839c6c4_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     }
   ]
 }
