@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Sep 2026 16:31:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 18:00:59 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/83a0adada1ab.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/83a0adada1ab.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/83a0adada1ab.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwe calls for UN reforms, sanctions removal @zimsituation</title>
+      <link>https://mutapatimes.com/stories/60296fe745f3.html</link>
+      <description>Ivan Zhakata-Herald Correspondent ZIMBABWE has called for urgent reform of the United Nations system, including the Security Council and international financial institutions, saying the changes are critical to creating a more inclusive, representative and equitable global order. via Zimbabwe Situation #Zimbabwe #Policy #ZimbabwePolicy #ZimbabweNews</description>
+      <pubDate>Thu, 10 Sep 2026 04:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/60296fe745f3.html</guid>
+      <category>Policy</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/60296fe745f3.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/60296fe745f3.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/60296fe745f3.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Grim mirror to Zim violence in homes</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/eadc01c7e98d.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/eadc01c7e98d.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/eadc01c7e98d.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimbabwe Project Trust (ZimPro) — Terms of Reference - Consultancy: Development of Zimbabwe Project Trust(ZimPro)’s Strategic Plan (2027 – 2030)</title>
-      <link>https://mutapatimes.com/stories/3d8d54f2b83b.html</link>
-      <description>Terms of Reference Consultancy: Development of Zimbabwe Project Trust(ZimPro)’s Strategic Plan (2027 – 2030) Deadline: 15 September 2026 1. Background Zimbabwe Project Trust (ZimPro) is a registered… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 09 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/3d8d54f2b83b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zimbabwe Project Trust (ZimPro)</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/3d8d54f2b83b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3d8d54f2b83b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/3d8d54f2b83b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

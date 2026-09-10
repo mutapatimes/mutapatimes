@@ -1,22 +1,14 @@
 {
-  "fetched_at": "2026-09-10T13:17:44+00:00",
+  "fetched_at": "2026-09-10T18:01:00+00:00",
   "count": 60,
   "tiles": [
     {
-      "kind": "news",
-      "title": "Pleas for help as 300 Zimbabweans stuck at Joburg consulate in wake of anti-immigrant protests",
-      "link": "https://mutapatimes.com/articles/2026-09-10-pleas-for-help-as-300-zimbabweans-stuck-at-joburg-consulate",
-      "image": "https://mutapatimes.com/img/cards/news/cdf09aa65310.png",
-      "pubDate": "2026-09-10T11:16:25+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Afghanistan v Bangladesh & Zimbabwe (in UAE) 2026",
-      "link": "https://mutapatimes.com/articles/2026-09-10-afghanistan-v-bangladesh-zimbabwe-in-uae-2026",
-      "image": "https://mutapatimes.com/img/cards/news/0e943e2aa2c2.png",
-      "pubDate": "2026-09-10T09:17:14+00:00",
-      "category": "Business"
+      "kind": "zse",
+      "title": "ZSE close 10 Sep 2026: All Share 451.27 (+1.04%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-10",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-10",
+      "pubDate": "2026-09-10T13:30:00+00:00",
+      "category": "Markets"
     },
     {
       "kind": "news",
@@ -29,14 +21,6 @@
     {
       "kind": "news",
       "title": "Zimbabwe: Akashinga's Women Rangers Take Zimbabwe to the Wildlife Ranger Challenge",
-      "link": "https://mutapatimes.com/articles/2026-09-10-zimbabwe-akashingas-women-rangers-take-zimbabwe-to-the-wildl",
-      "image": "https://mutapatimes.com/img/cards/news/83a0adada1ab.png",
-      "pubDate": "2026-09-10T05:45:25+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe: Akashinga's Women Rangers Take Zimbabwe to the Wildlife Ranger Challenge",
       "link": "https://mutapatimes.com/news/2026-09-10-zimbabwe-akashinga-s-women-rangers-take-zimbabwe-to-the-wildlife-ranger-f0e07e",
       "image": "https://mutapatimes.com/img/cards/news/6fb757883c1d.png",
       "pubDate": "2026-09-10T05:45:25+00:00",
@@ -44,11 +28,35 @@
     },
     {
       "kind": "news",
-      "title": "Grim mirror to Zim violence in homes",
-      "link": "https://mutapatimes.com/articles/2026-09-10-grim-mirror-to-zim-violence-in-homes",
-      "image": "https://mutapatimes.com/img/cards/news/400cd74b9e59.png",
-      "pubDate": "2026-09-10T00:00:00+00:00",
-      "category": "Business"
+      "title": "Foul Play Suspected: Missing Roman Catholic Priest Father Regis Chikuni found dead",
+      "link": "https://mutapatimes.com/news/2026-09-10-foul-play-suspected-missing-roman-catholic-priest-father-regis-chikuni-found-6bc0a5",
+      "image": "https://mutapatimes.com/img/cards/news/dbaaf5379f9a.png",
+      "pubDate": "2026-09-10T05:37:20+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘I will still be around’, Mnangagwa hints at staying in power until 2035",
+      "link": "https://mutapatimes.com/news/2026-09-10-i-will-still-be-around-mnangagwa-hints-at-staying-in-power-until-2035-a6cc7b",
+      "image": "https://mutapatimes.com/img/cards/news/48d505653c5a.png",
+      "pubDate": "2026-09-10T04:59:40+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe calls for UN reforms, sanctions removal",
+      "link": "https://mutapatimes.com/articles/2026-09-10-zimbabwe-calls-for-un-reforms-sanctions-removal",
+      "image": "https://mutapatimes.com/img/cards/news/60296fe745f3.png",
+      "pubDate": "2026-09-10T04:17:31+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Msendami rejoins Marumo Gallants on season-long loan from Orlando Pirates",
+      "link": "https://mutapatimes.com/news/2026-09-10-msendami-rejoins-marumo-gallants-on-season-long-loan-from-orlando-pirates-6c4400",
+      "image": "https://mutapatimes.com/img/cards/news/53423bf61c26.png",
+      "pubDate": "2026-09-10T04:09:53+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -56,14 +64,6 @@
       "link": "https://mutapatimes.com/news/2026-09-10-zimbabwe-lohum-ships-first-lithium-ore-cargo-4b4d72",
       "image": "https://mutapatimes.com/img/cards/news/dcc6a233a258.png",
       "pubDate": "2026-09-09T23:38:16+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "300 Zimbabweans stranded at Joburg consulate await repatriation",
-      "link": "https://mutapatimes.com/articles/2026-09-09-300-zimbabweans-stranded-at-joburg-consulate-await-repatriat",
-      "image": "https://mutapatimes.com/img/cards/news/3b45d5e260bf.png",
-      "pubDate": "2026-09-09T23:28:41+00:00",
       "category": "Business"
     },
     {
@@ -93,26 +93,10 @@
     {
       "kind": "news",
       "title": "POSB to host third Exporters Seminar as Zimbabwe pushes export growth",
-      "link": "https://mutapatimes.com/articles/2026-09-09-posb-to-host-third-exporters-seminar-as-zimbabwe-pushes-expo",
-      "image": "https://mutapatimes.com/img/cards/news/072601515c94.png",
-      "pubDate": "2026-09-09T23:00:41+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "POSB to host third Exporters Seminar as Zimbabwe pushes export growth",
       "link": "https://mutapatimes.com/news/2026-09-09-posb-to-host-third-exporters-seminar-as-zimbabwe-pushes-export-growth-be3f0b",
       "image": "https://mutapatimes.com/img/cards/news/c3e9c2b34b99.png",
       "pubDate": "2026-09-09T23:00:41+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "ZIMURA fights in Fungisai Mashavave’s corner amid copyright dispute with Intotal Band",
-      "link": "https://mutapatimes.com/articles/2026-09-09-zimura-fights-in-fungisai-mashavaves-corner-amid-copyright-d",
-      "image": "https://mutapatimes.com/img/cards/news/fdfec10613f8.png",
-      "pubDate": "2026-09-09T23:00:30+00:00",
-      "category": "Tech"
     },
     {
       "kind": "news",
@@ -125,26 +109,10 @@
     {
       "kind": "news",
       "title": "South African side names Simbarashe Gondo new head coach",
-      "link": "https://mutapatimes.com/articles/2026-09-09-south-african-side-names-simbarashe-gondo-new-head-coach",
-      "image": "https://mutapatimes.com/img/cards/news/55da15cd6fe7.png",
-      "pubDate": "2026-09-09T23:00:10+00:00",
-      "category": "Sport"
-    },
-    {
-      "kind": "news",
-      "title": "South African side names Simbarashe Gondo new head coach",
       "link": "https://mutapatimes.com/news/2026-09-09-south-african-side-names-simbarashe-gondo-new-head-coach-83c51b",
       "image": "https://mutapatimes.com/img/cards/news/801e36d50600.png",
       "pubDate": "2026-09-09T23:00:10+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "‘Bhekumuzi’s spirit lives in him’: Khuzani hails Umfoka Jele",
-      "link": "https://mutapatimes.com/articles/2026-09-09-bhekumuzis-spirit-lives-in-him-khuzani-hails-umfoka-jele",
-      "image": "https://mutapatimes.com/img/cards/news/69af4d5db956.png",
-      "pubDate": "2026-09-09T22:30:31+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -201,6 +169,46 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-09T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Hospital Receptionist | Full time",
+      "link": "https://vacancymail.co.zw/jobs/hospital-receptionist-full-time-69302/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1d91e1a2554d.png",
+      "pubDate": "2026-09-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midwife – Full time",
+      "link": "https://vacancymail.co.zw/jobs/midwife-full-time-69301/",
+      "image": "https://mutapatimes.com/img/cards/jobs/02f49be0f74f.png",
+      "pubDate": "2026-09-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Henkik Investments — WORKSHOP CLERK X 1",
+      "link": "https://vacancymail.co.zw/jobs/workshop-clerk-x-1-69300/",
+      "image": "https://mutapatimes.com/img/cards/jobs/10f3665118cd.png",
+      "pubDate": "2026-09-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "damofalls investments — Projects Engineer",
+      "link": "https://vacancymail.co.zw/jobs/projects-engineer-69299/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5f89b2025c0a.png",
+      "pubDate": "2026-09-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TRIVETY GLOBAL MEDIA — SALES REPRESENTATIVE",
+      "link": "https://vacancymail.co.zw/jobs/sales-representative-69298/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f323acb3bf90.png",
+      "pubDate": "2026-09-09T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -471,14 +479,6 @@
       "title": "SOUTH MINING PVT LTD — Cost Accountant",
       "link": "https://vacancymail.co.zw/jobs/cost-accountant-69259/",
       "image": "https://mutapatimes.com/img/cards/jobs/0d649c52fa0e.png",
-      "pubDate": "2026-09-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Finance Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-manager-69258/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c511fde63ae0.png",
       "pubDate": "2026-09-09T22:00:00+00:00",
       "category": "Jobs"
     }
