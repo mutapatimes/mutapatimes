@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa to provide ‘timely’ reply to Trump’s five asks"
+date: 2026-09-10T21:27:45.000Z
+author: dailymaverick.co.za
+category: Business
+image: 
+summary: "Ramaphosa to provide ‘timely’ reply to Trump’s five asks"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMlhJcnl0S0ZzVU9OWkl1V2tZTVdEWWhiNFRoYW5IZi0ySzdiS1h5QUZWc2hMSkpTN3RjYksxOWVQaHdpMzNJbWdJN2tDUHJjR2t5YXdKQndkeTBFblg4T0N4UVh3VUZ1ZDh1MTBiN2pNZmZudWVfM3prSjFKSWNsX1ZsSF9MTnJpY3NHdFF5QXRmekNCSk01RldDdlZJZ1JMblVqLTJiVjZfejRyOWhvTmZfWlFaR2c3TDUxeTM3RVRlUFJoYkZhLWh3X2dYTmlob0N3MHEyNVFzSDEwN0xNc2lZaVBEUHFXeWMyb2ZiUk9WeG8?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dailymaverick.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMlhJcnl0S0ZzVU9OWkl1V2tZTVdEWWhiNFRoYW5IZi0ySzdiS1h5QUZWc2hMSkpTN3RjYksxOWVQaHdpMzNJbWdJN2tDUHJjR2t5YXdKQndkeTBFblg4T0N4UVh3VUZ1ZDh1MTBiN2pNZmZudWVfM3prSjFKSWNsX1ZsSF9MTnJpY3NHdFF5QXRmekNCSk01RldDdlZJZ1JMblVqLTJiVjZfejRyOWhvTmZfWlFaR2c3TDUxeTM3RVRlUFJoYkZhLWh3X2dYTmlob0N3MHEyNVFzSDEwN0xNc2lZaVBEUHFXeWMyb2ZiUk9WeG8?oc=5)
