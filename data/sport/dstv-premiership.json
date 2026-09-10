@@ -10,6 +10,19 @@
  "table": [
   {
    "rank": 1,
+   "team": "Mamelodi Sundowns",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
+   "played": 7,
+   "win": 6,
+   "draw": 1,
+   "loss": 0,
+   "gf": 18,
+   "ga": 6,
+   "gd": 12,
+   "points": 19
+  },
+  {
+   "rank": 2,
    "team": "Orlando Pirates",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
    "played": 5,
@@ -22,20 +35,20 @@
    "points": 13
   },
   {
-   "rank": 2,
-   "team": "Mamelodi Sundowns",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
+   "rank": 3,
+   "team": "Kaizer Chiefs",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
    "played": 5,
-   "win": 4,
-   "draw": 1,
+   "win": 3,
+   "draw": 2,
    "loss": 0,
-   "gf": 13,
-   "ga": 5,
-   "gd": 8,
-   "points": 13
+   "gf": 11,
+   "ga": 6,
+   "gd": 5,
+   "points": 11
   },
   {
-   "rank": 3,
+   "rank": 4,
    "team": "Amazulu",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/xcb9e71784744424.png/tiny",
    "played": 5,
@@ -48,30 +61,17 @@
    "points": 10
   },
   {
-   "rank": 4,
-   "team": "Kaizer Chiefs",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
-   "played": 4,
-   "win": 2,
-   "draw": 2,
-   "loss": 0,
-   "gf": 8,
-   "ga": 4,
-   "gd": 4,
-   "points": 8
-  },
-  {
    "rank": 5,
    "team": "Milford",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
-   "played": 5,
+   "played": 6,
    "win": 2,
-   "draw": 1,
+   "draw": 2,
    "loss": 2,
    "gf": 3,
    "ga": 5,
    "gd": -2,
-   "points": 7
+   "points": 8
   }
  ],
  "results": [
@@ -91,5 +91,5 @@
    "away": "Sekhukhune United"
   }
  ],
- "updated": "2026-09-10T04:50:06+00:00"
+ "updated": "2026-09-10T11:23:43+00:00"
 }
