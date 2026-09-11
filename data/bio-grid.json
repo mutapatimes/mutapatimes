@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-09-11T13:11:32+00:00",
+  "fetched_at": "2026-09-11T18:08:07+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "zse",
+      "title": "ZSE close 11 Sep 2026: All Share 453.25 (+0.44%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-11",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-11",
+      "pubDate": "2026-09-11T13:30:00+00:00",
+      "category": "Markets"
+    },
     {
       "kind": "news",
       "title": "Econet Zimbabwe to phase out 3G network by end of 2027",
@@ -9,6 +17,30 @@
       "image": "https://mutapatimes.com/img/cards/news/6fd96f307fbb.png",
       "pubDate": "2026-09-11T06:54:15+00:00",
       "category": "Technology"
+    },
+    {
+      "kind": "news",
+      "title": "ZPC trusts Chivayo with Gwanda Solar Project again – gives him two year ultimatum",
+      "link": "https://mutapatimes.com/news/2026-09-11-zpc-trusts-chivayo-with-gwanda-solar-project-again-gives-him-two-year-ultimatum-4a28f3",
+      "image": "https://mutapatimes.com/img/cards/news/6e9c0118a0c2.png",
+      "pubDate": "2026-09-11T06:02:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Good news for all Econet smartphone users (up to 1Gbps speeds) and bad news to everyone with a kambudzi phone!",
+      "link": "https://mutapatimes.com/articles/2026-09-11-good-news-for-all-econet-smartphone-users-up-to-1gbps-speeds",
+      "image": "https://mutapatimes.com/img/cards/news/5c8b2f265cd3.png",
+      "pubDate": "2026-09-11T05:50:28+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Good news for all Econet smartphone users (up to 1Gbps speeds) and bad news to everyone with a kambudzi phone!",
+      "link": "https://mutapatimes.com/news/2026-09-11-good-news-for-all-econet-smartphone-users-up-to-1gbps-speeds-and-bad-news-to-88ab61",
+      "image": "https://mutapatimes.com/img/cards/news/c1330e72782e.png",
+      "pubDate": "2026-09-11T05:50:28+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -20,43 +52,35 @@
     },
     {
       "kind": "news",
+      "title": "Zimbabwe fits 6 elephants with satellite collars to boost conservation",
+      "link": "https://mutapatimes.com/news/2026-09-11-zimbabwe-fits-6-elephants-with-satellite-collars-to-boost-conservation-3825a0",
+      "image": "https://mutapatimes.com/img/cards/news/c24ce912421d.png",
+      "pubDate": "2026-09-11T04:31:34+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘Drunk with power,’ Chamisa slams Mnangagwa’s birthday holiday, 2035 power bid",
+      "link": "https://mutapatimes.com/news/2026-09-11-drunk-with-power-chamisa-slams-mnangagwa-s-birthday-holiday-2035-power-bid-e22d6f",
+      "image": "https://mutapatimes.com/img/cards/news/2c0d3396a366.png",
+      "pubDate": "2026-09-11T04:12:55+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "BancABC unveils upgraded digital platform",
+      "link": "https://mutapatimes.com/articles/2026-09-11-bancabc-unveils-upgraded-digital-platform",
+      "image": "https://mutapatimes.com/img/cards/news/62898cc98fcd.png",
+      "pubDate": "2026-09-11T03:57:56+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
       "title": "Emirates SkyCargo flies conservation dogs to Zimbabwe to combat poaching",
       "link": "https://mutapatimes.com/news/2026-09-11-emirates-skycargo-flies-conservation-dogs-to-zimbabwe-to-combat-poaching-9c1779",
       "image": "https://mutapatimes.com/img/cards/news/2ed1cd2d79f7.png",
       "pubDate": "2026-09-11T02:30:00+00:00",
       "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "Econet set to sunset 3G network",
-      "link": "https://mutapatimes.com/articles/2026-09-11-econet-set-to-sunset-3g-network",
-      "image": "https://mutapatimes.com/img/cards/news/2ae088bafa9a.png",
-      "pubDate": "2026-09-11T00:00:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Holistic action needed to halt domestic harm",
-      "link": "https://mutapatimes.com/articles/2026-09-11-holistic-action-needed-to-halt-domestic-harm",
-      "image": "https://mutapatimes.com/img/cards/news/c0125dff00e7.png",
-      "pubDate": "2026-09-11T00:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe drafts child social media ban",
-      "link": "https://mutapatimes.com/articles/2026-09-10-zimbabwe-drafts-child-social-media-ban",
-      "image": "https://mutapatimes.com/img/cards/news/0e66046e3ba7.png",
-      "pubDate": "2026-09-10T23:58:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwean matric candidates likely to go back to SA for 2026 exams",
-      "link": "https://mutapatimes.com/articles/2026-09-10-zimbabwean-matric-candidates-likely-to-go-back-to-sa-for-202",
-      "image": "https://mutapatimes.com/img/cards/news/aadab86cd0a0.png",
-      "pubDate": "2026-09-10T23:20:50+00:00",
-      "category": "Education"
     },
     {
       "kind": "news",
@@ -77,26 +101,10 @@
     {
       "kind": "news",
       "title": "Team captain Nkomo bounces back as Lady Chevrons squad to face South Africa is named",
-      "link": "https://mutapatimes.com/articles/2026-09-10-team-captain-nkomo-bounces-back-as-lady-chevrons-squad-to-fa",
-      "image": "https://mutapatimes.com/img/cards/news/9055f95aa1e0.png",
-      "pubDate": "2026-09-10T23:00:19+00:00",
-      "category": "Sport"
-    },
-    {
-      "kind": "news",
-      "title": "Team captain Nkomo bounces back as Lady Chevrons squad to face South Africa is named",
       "link": "https://mutapatimes.com/news/2026-09-10-team-captain-nkomo-bounces-back-as-lady-chevrons-squad-to-face-south-africa-is-436099",
       "image": "https://mutapatimes.com/img/cards/news/4e3f621d5bdb.png",
       "pubDate": "2026-09-10T23:00:19+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "ZIMBABWE DRUG WAR INVADES ZAMBIA! Youth crusaders take the fight across borders",
-      "link": "https://mutapatimes.com/articles/2026-09-10-zimbabwe-drug-war-invades-zambia-youth-crusaders-take-the-fi",
-      "image": "https://mutapatimes.com/img/cards/news/3eb812b5055a.png",
-      "pubDate": "2026-09-10T22:22:58+00:00",
-      "category": "Health"
     },
     {
       "kind": "news",
@@ -161,6 +169,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-10T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Call Centre & Sales Representative",
+      "link": "https://vacancymail.co.zw/jobs/call-centre-sales-representative-69336/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c4b0cb9c760f.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Delivery & Collection Officer!",
+      "link": "https://vacancymail.co.zw/jobs/delivery-collection-officer-69335/",
+      "image": "https://mutapatimes.com/img/cards/jobs/70e2806565fa.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Loan Officer : Gweru X2, Harare X2, Bulawayo X1 ,Gokwe X1",
+      "link": "https://vacancymail.co.zw/jobs/loan-officer-gweru-x2-harare-x2-bulawayo-x1-gokwe-x1-69334/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f48a4f05af71.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — Kitchen Porter",
+      "link": "https://vacancymail.co.zw/jobs/kitchen-porter-69333/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4bcc5f95f11e.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — Secretary x 10",
+      "link": "https://vacancymail.co.zw/jobs/secretary-x-10-69332/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8deaa12736fa.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — TEACHING ASSISTANT-DEPARTMENT OF ACCOUNTING (2 POSTS)",
+      "link": "https://vacancymail.co.zw/jobs/teaching-assistant-department-of-accounting-2-posts-69331/",
+      "image": "https://mutapatimes.com/img/cards/jobs/616f4e0c6e01.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — Teaching Assistant: Metallurgical Engineering",
+      "link": "https://vacancymail.co.zw/jobs/teaching-assistant-metallurgical-engineering-69330/",
+      "image": "https://mutapatimes.com/img/cards/jobs/380cd135d7cd.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — PROCUREMENT OFFICER (1 Post)",
+      "link": "https://vacancymail.co.zw/jobs/procurement-officer-1-post-69329/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5303268b687f.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — Procurement Assistant",
+      "link": "https://vacancymail.co.zw/jobs/procurement-assistant-69328/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5c60f0c13ed2.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Gwanda State University — Assistant Registrar, Human Resources",
+      "link": "https://vacancymail.co.zw/jobs/assistant-registrar-human-resources-69327/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e6927ab3886c.png",
+      "pubDate": "2026-09-10T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -391,94 +479,6 @@
       "title": "African Unicorn ~~ 0 — Software Development Interns",
       "link": "https://vacancymail.co.zw/jobs/software-development-interns-69283/",
       "image": "https://mutapatimes.com/img/cards/jobs/da8f19355b36.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Secondary Book Press — Editors",
-      "link": "https://vacancymail.co.zw/jobs/editors-69282/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a7980fefebc9.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Secondary Book Press — Designer",
-      "link": "https://vacancymail.co.zw/jobs/designer-69281/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fa83d8e0973c.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69280/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d0255fe7be1.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69279/",
-      "image": "https://mutapatimes.com/img/cards/jobs/562005e3788e.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69278/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dda94a5c1b2e.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69277/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b15476edc33.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Audit Student",
-      "link": "https://vacancymail.co.zw/jobs/audit-student-69276/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc9a9b2d1595.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hivos — Portfolio Manager – Africa",
-      "link": "https://vacancymail.co.zw/jobs/portfolio-manager-africa-69275/",
-      "image": "https://mutapatimes.com/img/cards/jobs/19a57c2d0fc8.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Front End Loader Operator",
-      "link": "https://vacancymail.co.zw/jobs/front-end-loader-operator-69274/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b3edeb78a6d1.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sinapis Investment Holdings — Stores Clerk X1",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-x1-69273/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2bb31d43f2e5.png",
-      "pubDate": "2026-09-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Intelligence Analyst",
-      "link": "https://vacancymail.co.zw/jobs/junior-intelligence-analyst-69272/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a15e8df3e221.png",
       "pubDate": "2026-09-10T22:00:00+00:00",
       "category": "Jobs"
     }
