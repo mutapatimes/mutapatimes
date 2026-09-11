@@ -1,0 +1,16 @@
+---
+title: "Idac faces a crucial test as new leadership takes on institutional dysfunction"
+date: 2026-09-11T11:20:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Idac faces a crucial test as new leadership takes on institutional dysfunction"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNSlA0TUVnMFIxdENueGIyVzhvV20tcTZPMGl5bUxWNEx1cFptZFhxbzlkRUhORGppOXRsZDhDUzZfWlNVQ0NhOUhjLURPV21pamNRUjNaU1VPVW1kSzduZVowZkFoRXZnYjdabDl0dEEyalNsXzczQ1Jfbk5fcUpZelAzQWpzanREQ21RQWNmN01aUXBXOGhIdWZnc240SkVtTjhrNE9EN1MwNVdxOXA2SjB0VzVZck9DMGVXLTFBSGE1ZU9fQlJXVEpGQkl5N1lhLTV0My1DZDdjX2FER0VzeklaSjVBcW1nRFpCZWwxcHU0alBoTVgwNldZRjdLVFYzTHlQNjVBdUhsYXF6bWdLOTBCaFZReGQ4MmhkZjROR3JCaVR1N0J3eTREMjRrVkRweXNvREhDYWk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiuAJBVV95cUxNSlA0TUVnMFIxdENueGIyVzhvV20tcTZPMGl5bUxWNEx1cFptZFhxbzlkRUhORGppOXRsZDhDUzZfWlNVQ0NhOUhjLURPV21pamNRUjNaU1VPVW1kSzduZVowZkFoRXZnYjdabDl0dEEyalNsXzczQ1Jfbk5fcUpZelAzQWpzanREQ21RQWNmN01aUXBXOGhIdWZnc240SkVtTjhrNE9EN1MwNVdxOXA2SjB0VzVZck9DMGVXLTFBSGE1ZU9fQlJXVEpGQkl5N1lhLTV0My1DZDdjX2FER0VzeklaSjVBcW1nRFpCZWwxcHU0alBoTVgwNldZRjdLVFYzTHlQNjVBdUhsYXF6bWdLOTBCaFZReGQ4MmhkZjROR3JCaVR1N0J3eTREMjRrVkRweXNvREhDYWk?oc=5)
