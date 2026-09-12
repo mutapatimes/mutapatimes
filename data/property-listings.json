@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T04:33:01.100440+00:00",
+  "fetched_at": "2026-09-12T10:44:24.667654+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -38,6 +38,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/b9/68/19/b96819d9-6707-415b-acd6-11c7d8997a79_thumbnail591.webp",
       "beds": "5",
       "baths": "4"
+    },
+    {
+      "title": "Captivating 3-Bedroom Cluster for Sale in Emerald Hill",
+      "url": "https://www.property.co.zw/for-sale/townhouses-mac252034",
+      "price": "USD 200,000",
+      "location": "Emerald Hill, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/0d/96/e7/0d96e799-d0d7-42b1-b610-8fb026b30ca8_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     },
     {
       "title": "3 Bed Cottage For Sale In Mt Pleasant Heights",
@@ -166,6 +175,15 @@
       "baths": "8"
     },
     {
+      "title": "4 Bed home for sale in Westgate",
+      "url": "https://www.property.co.zw/for-sale/houses-mac254472",
+      "price": "USD 195,000",
+      "location": "Westgate, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/eb/4c/e3/eb4ce3ae-70e3-478d-bc25-cdfd799a0adf_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
       "title": "Mount Pleasant Heights House For Sale",
       "url": "https://www.property.co.zw/for-sale/houses-rws252421",
       "price": "USD 320,000",
@@ -182,24 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/ed/3a/1f/ed3a1fac-371b-40b2-8e00-d9d428cf6e45_thumbnail591.webp",
       "beds": "5",
       "baths": ""
-    },
-    {
-      "title": "Zimre Park 3 Bedroomed House For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-chas254743",
-      "price": "USD 100,000",
-      "location": "Zimre Park, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/0d/d8/86/0dd886c6-2796-40f4-bfbc-66e881a753bb_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Stylish 5-Bed Double-Storey in Vainona — Garage & Balcony",
-      "url": "https://www.property.co.zw/for-sale/townhouses-cami248729",
-      "price": "USD 550,000",
-      "location": "Vainona, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/8e/ce/f5/8ecef5bd-6eaa-4e06-8491-e9516a5f828f_thumbnail591.webp",
-      "beds": "5",
-      "baths": "6"
     }
   ]
 }
