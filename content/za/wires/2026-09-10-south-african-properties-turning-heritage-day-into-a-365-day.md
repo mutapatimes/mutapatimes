@@ -1,0 +1,16 @@
+---
+title: "South African properties turning Heritage Day into a 365-day commitment"
+date: 2026-09-10T14:05:35.000Z
+author: Glamour SA
+category: Culture
+image: 
+summary: "South African properties turning Heritage Day into a 365-day commitment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPU0VuMV9XM3ZIOTlGNjI4R2lrcjFYYUpudlpWRTFHeHpQRko1Y0tESjM3TXBrTjRmMHpCaTB2WEtZak5TNGZLdVJtS2w0NmNIU2FoZ0Zta2F0LU9KdDZxRHczMjlyUkNEakszVm00U2oyVGpycUt4bHZoNzRac3FYMmJQRWpUUy1VUExnVzNNVF9vVGhaRXJzSmhLRHhuMktqTjZaMjFwVHNGZ1gzVjlkdExQNDF0YXljNC04bW1nOERQV0hKZHBUOFVYQTFmcUlhNE5qaWJvbmVFcl9CaUswZHdrR1FVUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour SA.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPU0VuMV9XM3ZIOTlGNjI4R2lrcjFYYUpudlpWRTFHeHpQRko1Y0tESjM3TXBrTjRmMHpCaTB2WEtZak5TNGZLdVJtS2w0NmNIU2FoZ0Zta2F0LU9KdDZxRHczMjlyUkNEakszVm00U2oyVGpycUt4bHZoNzRac3FYMmJQRWpUUy1VUExnVzNNVF9vVGhaRXJzSmhLRHhuMktqTjZaMjFwVHNGZ1gzVjlkdExQNDF0YXljNC04bW1nOERQV0hKZHBUOFVYQTFmcUlhNE5qaWJvbmVFcl9CaUswZHdrR1FVUQ?oc=5)
