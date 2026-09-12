@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-09-12T07:37:41+00:00",
+  "fetched_at": "2026-09-12T12:35:56+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Businesswoman Makes Explosive Claims About Muduva’s Wife After Fatal Axe Attack",
+      "link": "https://mutapatimes.com/articles/2026-09-11-businesswoman-makes-explosive-claims-about-muduvas-wife-afte",
+      "image": "https://mutapatimes.com/img/cards/news/12267d69a18a.png",
+      "pubDate": "2026-09-11T22:36:55+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Businesswoman Makes Explosive Claims About Muduva’s Wife After Fatal Axe Attack",
+      "link": "https://mutapatimes.com/news/2026-09-11-businesswoman-makes-explosive-claims-about-muduva-s-wife-after-fatal-axe-attack-0b3f62",
+      "image": "https://mutapatimes.com/img/cards/news/dcd61a6f9587.png",
+      "pubDate": "2026-09-11T22:36:55+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim balance-of-payments residual 2025 Q3: net errors & omissions −$1.0B against current account $791M.",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 12 Sep: Harare partly cloudy · high 23° / low 10°",
+      "title": "Zim weather 12 Sep: Harare overcast · high 26° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-09-12",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-12",
       "pubDate": "2026-09-11T22:00:00+00:00",
@@ -57,6 +73,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-11T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Stock Takers - Harare",
+      "link": "https://vacancymail.co.zw/jobs/stock-takers-harare-69339/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a24e3c417cc3.png",
+      "pubDate": "2026-09-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Stock Tackers - Bulawayo",
+      "link": "https://vacancymail.co.zw/jobs/stock-tackers-bulawayo-69338/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6393e5d062f6.png",
+      "pubDate": "2026-09-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Cresta Hotels — Deputy General Manager",
+      "link": "https://vacancymail.co.zw/jobs/deputy-general-manager-69337/",
+      "image": "https://mutapatimes.com/img/cards/jobs/465e3d7a7cee.png",
+      "pubDate": "2026-09-11T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Green Fuel — Front End Loader Operator",
       "link": "https://vacancymail.co.zw/jobs/front-end-loader-operator-69274/",
       "image": "https://mutapatimes.com/img/cards/jobs/b3edeb78a6d1.png",
-      "pubDate": "2026-09-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sinapis Investment Holdings — Stores Clerk X1",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-x1-69273/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2bb31d43f2e5.png",
-      "pubDate": "2026-09-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Intelligence Analyst",
-      "link": "https://vacancymail.co.zw/jobs/junior-intelligence-analyst-69272/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a15e8df3e221.png",
-      "pubDate": "2026-09-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Friendship Bench — Research Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/research-coordinator-69271/",
-      "image": "https://mutapatimes.com/img/cards/jobs/561481580cdb.png",
-      "pubDate": "2026-09-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Terms of Reference for External Audit of MAP2",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-for-external-audit-of-map2-69269/",
-      "image": "https://mutapatimes.com/img/cards/jobs/51b692bb9e52.png",
-      "pubDate": "2026-09-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Safemode Security — Contracts & Quality Systems Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/contracts-quality-systems-coordinator-69268/",
-      "image": "https://mutapatimes.com/img/cards/jobs/231d0a953c0b.png",
       "pubDate": "2026-09-11T22:00:00+00:00",
       "category": "Jobs"
     }

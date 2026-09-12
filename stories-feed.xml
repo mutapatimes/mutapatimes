@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2026 10:56:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 12:35:55 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Businesswoman Makes Explosive Claims About Muduva’s Wife After Fatal Axe Attack</title>
+      <link>https://mutapatimes.com/stories/12267d69a18a.html</link>
+      <description>Martin Muduva’s Marriage Comes Under Spotlight After Businesswoman’s Explosive Claims Businesswoman Hazel Silibaziso Mafu has made fresh claims about the marriage of slain Zimbabwe Human Rights Commission (ZHRC) Commissioner Martin Muduva, alleging that his wife, Lyliosa Chirara, via Iharare News #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Fri, 11 Sep 2026 22:36:55 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/12267d69a18a.html</guid>
+      <category>Business</category>
+      <dc:creator>Iharare News</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/12267d69a18a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/12267d69a18a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/12267d69a18a.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/51b692bb9e52.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/51b692bb9e52.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/51b692bb9e52.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Safemode Security — Contracts &amp; Quality Systems Coordinator</title>
-      <link>https://mutapatimes.com/stories/231d0a953c0b.html</link>
-      <description>RE-ADVERT Our organisation is seeking an organized and detail-oriented Contracts and Quality Systems Coordinator who shall manage commercial compliance and quality management systems (QMS) across the… Harare · Contractor (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 11 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/231d0a953c0b.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Safemode Security</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/231d0a953c0b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/231d0a953c0b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/231d0a953c0b.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
