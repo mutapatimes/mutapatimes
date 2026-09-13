@@ -1,0 +1,16 @@
+---
+title: "South Africa vs New Zealand: Rassie Erasmus urges Springboks to risk more as All Blacks series finale looms in Baltimore"
+date: 2026-09-13T04:40:22.000Z
+author: Sky Sports
+category: Sport
+image: 
+summary: "South Africa vs New Zealand: Rassie Erasmus urges Springboks to risk more as All Blacks series finale looms in Baltimore"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxONzQtWVV2T1g5YnR4S1BDZC1MRDUtT1hweGt6eE5jWVFLWWZLSGdoTTJGM2J4NjN3bzFJWGN5YkhSamFqdWVTUUhvOGhuRjc1X0wxeVNqbW1WcDVVSDZXTzNsa0pFTGF6c21CTU0talNyUlFuejBaclBLbmw4UUl1OVBlVElPMkR2LWJMeXB5VDJvYkRaTm84Q2x3c0l2Q01FWElXYms0STlqRzRQQVFvcFBOd0czXzJSbkxoQVZfTm0zTHFyeG0zNFB3QlFSRndBbl8wdTFEdVN0U3Bld2plbjlFdnZuT2NsekNDRVVRbUVsZjB6OEdCQWJQdnRTV2lnTnBxZFVNTHU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Sky Sports.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxONzQtWVV2T1g5YnR4S1BDZC1MRDUtT1hweGt6eE5jWVFLWWZLSGdoTTJGM2J4NjN3bzFJWGN5YkhSamFqdWVTUUhvOGhuRjc1X0wxeVNqbW1WcDVVSDZXTzNsa0pFTGF6c21CTU0talNyUlFuejBaclBLbmw4UUl1OVBlVElPMkR2LWJMeXB5VDJvYkRaTm84Q2x3c0l2Q01FWElXYms0STlqRzRQQVFvcFBOd0czXzJSbkxoQVZfTm0zTHFyeG0zNFB3QlFSRndBbl8wdTFEdVN0U3Bld2plbjlFdnZuT2NsekNDRVVRbUVsZjB6OEdCQWJQdnRTV2lnTnBxZFVNTHU?oc=5)
