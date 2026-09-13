@@ -1,7 +1,47 @@
 {
-  "fetched_at": "2026-09-13T07:56:04+00:00",
+  "fetched_at": "2026-09-13T13:36:23+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Millers outline bold plan to avert famine",
+      "link": "https://mutapatimes.com/articles/2026-09-13-millers-outline-bold-plan-to-avert-famine",
+      "image": "https://mutapatimes.com/img/cards/news/781d1eec3456.png",
+      "pubDate": "2026-09-13T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Crush SA-style heists now",
+      "link": "https://mutapatimes.com/articles/2026-09-13-crush-sa-style-heists-now",
+      "image": "https://mutapatimes.com/img/cards/news/4b314da28dd5.png",
+      "pubDate": "2026-09-13T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "PREPARE OR PERISH: Super El Niño jolts nation to the brink",
+      "link": "https://mutapatimes.com/articles/2026-09-13-prepare-or-perish-super-el-nino-jolts-nation-to-the-brink",
+      "image": "https://mutapatimes.com/img/cards/news/cc46197e8f05.png",
+      "pubDate": "2026-09-13T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s fertiliser paradox... Spending US$2bn on imports yet sitting on two million tonnes of capacity",
+      "link": "https://mutapatimes.com/articles/2026-09-12-zimbabwes-fertiliser-paradox-spending-us2bn-on-imports-yet-s",
+      "image": "https://mutapatimes.com/img/cards/news/08e3506ddf81.png",
+      "pubDate": "2026-09-12T22:20:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zim, China set for new investment drive",
+      "link": "https://mutapatimes.com/news/2026-09-12-zim-china-set-for-new-investment-drive-eac5bb",
+      "image": "https://mutapatimes.com/img/cards/news/d22579ea01e6.png",
+      "pubDate": "2026-09-12T22:17:11+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim mining sector has moved +35.3% since the 2024 rebase quarter — now $2.9B per quarter.",
@@ -20,7 +60,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 13 Sep: Harare overcast · high 26° / low 14°",
+      "title": "Zim weather 13 Sep: Harare partly cloudy · high 27° / low 13°",
       "link": "https://mutapatimes.com/weather?d=2026-09-13",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-13",
       "pubDate": "2026-09-12T22:00:00+00:00",
@@ -57,6 +97,14 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-12T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Simukai Child Protection Programme — House Parent",
+      "link": "https://vacancymail.co.zw/jobs/house-parent-69340/",
+      "image": "https://mutapatimes.com/img/cards/jobs/31da3c0cc0e2.png",
+      "pubDate": "2026-09-12T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -431,54 +479,6 @@
       "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
       "link": "https://vacancymail.co.zw/jobs/marketing-student-69278/",
       "image": "https://mutapatimes.com/img/cards/jobs/dda94a5c1b2e.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69277/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b15476edc33.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Audit Student",
-      "link": "https://vacancymail.co.zw/jobs/audit-student-69276/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc9a9b2d1595.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hivos — Portfolio Manager – Africa",
-      "link": "https://vacancymail.co.zw/jobs/portfolio-manager-africa-69275/",
-      "image": "https://mutapatimes.com/img/cards/jobs/19a57c2d0fc8.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Front End Loader Operator",
-      "link": "https://vacancymail.co.zw/jobs/front-end-loader-operator-69274/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b3edeb78a6d1.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sinapis Investment Holdings — Stores Clerk X1",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-x1-69273/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2bb31d43f2e5.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Junior Intelligence Analyst",
-      "link": "https://vacancymail.co.zw/jobs/junior-intelligence-analyst-69272/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a15e8df3e221.png",
       "pubDate": "2026-09-12T22:00:00+00:00",
       "category": "Jobs"
     }
