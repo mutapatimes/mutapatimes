@@ -1,14 +1,62 @@
 {
-  "fetched_at": "2026-09-13T17:53:06+00:00",
+  "fetched_at": "2026-09-13T20:10:53+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "‘Colonialists, you have lost’: Zimbabweans spark debate in UK",
-      "link": "https://mutapatimes.com/articles/2026-09-13-colonialists-you-have-lost-zimbabweans-spark-debate-in-uk",
-      "image": "https://mutapatimes.com/img/cards/news/f0642d4ed3b6.png",
-      "pubDate": "2026-09-13T05:09:16+00:00",
+      "title": "Zimbabwe says education system has been too supply-driven",
+      "link": "https://mutapatimes.com/news/2026-09-13-zimbabwe-says-education-system-has-been-too-supply-driven-858651",
+      "image": "https://mutapatimes.com/img/cards/news/a7c6e2c06f18.png",
+      "pubDate": "2026-09-13T07:35:18+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Beyond remittances: Turning Zimbabwe’s diaspora billions into wealth",
+      "link": "https://mutapatimes.com/articles/2026-09-13-beyond-remittances-turning-zimbabwes-diaspora-billions-into",
+      "image": "https://mutapatimes.com/img/cards/news/6822868390a3.png",
+      "pubDate": "2026-09-13T06:43:26+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Beyond remittances: Turning Zimbabwe’s diaspora billions into wealth",
+      "link": "https://mutapatimes.com/news/2026-09-13-beyond-remittances-turning-zimbabwe-s-diaspora-billions-into-wealth-2ad267",
+      "image": "https://mutapatimes.com/img/cards/news/f85400737e93.png",
+      "pubDate": "2026-09-13T06:43:26+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "US$1.4m Dorowa pumps never delivered as MPs allege procurement rot",
+      "link": "https://mutapatimes.com/articles/2026-09-13-us14m-dorowa-pumps-never-delivered-as-mps-allege-procurement",
+      "image": "https://mutapatimes.com/img/cards/news/2328f7f8aa7a.png",
+      "pubDate": "2026-09-13T06:29:42+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "US$1.4m Dorowa pumps never delivered as MPs allege procurement rot",
+      "link": "https://mutapatimes.com/news/2026-09-13-us-1-4m-dorowa-pumps-never-delivered-as-mps-allege-procurement-rot-536e28",
+      "image": "https://mutapatimes.com/img/cards/news/1ae3e0f53887.png",
+      "pubDate": "2026-09-13T06:29:42+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "SA facilitates return of Zimbabwean and Nigerian foreign nationals",
+      "link": "https://mutapatimes.com/news/2026-09-13-sa-facilitates-return-of-zimbabwean-and-nigerian-foreign-nationals-044942",
+      "image": "https://mutapatimes.com/img/cards/news/142d7fce978c.png",
+      "pubDate": "2026-09-13T06:21:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe imports US$2.1bn fertiliser as local factories sit idle",
+      "link": "https://mutapatimes.com/news/2026-09-13-zimbabwe-imports-us-2-1bn-fertiliser-as-local-factories-sit-idle-af6488",
+      "image": "https://mutapatimes.com/img/cards/news/287c365642d5.png",
+      "pubDate": "2026-09-13T06:03:06+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -21,42 +69,10 @@
     {
       "kind": "news",
       "title": "Health ministry recalls two batches of hypertension medicine Nifedipine",
-      "link": "https://mutapatimes.com/articles/2026-09-13-health-ministry-recalls-two-batches-of-hypertension-medicine",
-      "image": "https://mutapatimes.com/img/cards/news/0acf970495a9.png",
-      "pubDate": "2026-09-13T04:31:09+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Health ministry recalls two batches of hypertension medicine Nifedipine",
       "link": "https://mutapatimes.com/news/2026-09-13-health-ministry-recalls-two-batches-of-hypertension-medicine-nifedipine-374259",
       "image": "https://mutapatimes.com/img/cards/news/45ee089f0405.png",
       "pubDate": "2026-09-13T04:31:09+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Skills audit targets 65 455 Zimbabweans returning from South Africa",
-      "link": "https://mutapatimes.com/articles/2026-09-13-skills-audit-targets-65-455-zimbabweans-returning-from-south",
-      "image": "https://mutapatimes.com/img/cards/news/3748217dc3a3.png",
-      "pubDate": "2026-09-13T04:19:21+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Nyaradzo Group proves true sahwira spirit in Kariba, Chivhu tragedies",
-      "link": "https://mutapatimes.com/articles/2026-09-13-nyaradzo-group-proves-true-sahwira-spirit-in-kariba-chivhu-t",
-      "image": "https://mutapatimes.com/img/cards/news/c340d11ed75b.png",
-      "pubDate": "2026-09-13T04:15:56+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "‘We’re eyeing bigger share of US$1 trillion COMESA market’",
-      "link": "https://mutapatimes.com/articles/2026-09-13-were-eyeing-bigger-share-of-us1-trillion-comesa-market",
-      "image": "https://mutapatimes.com/img/cards/news/fd86451b0452.png",
-      "pubDate": "2026-09-13T04:07:43+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -463,22 +479,6 @@
       "title": "Secondary Book Press — Editors",
       "link": "https://vacancymail.co.zw/jobs/editors-69282/",
       "image": "https://mutapatimes.com/img/cards/jobs/a7980fefebc9.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Secondary Book Press — Designer",
-      "link": "https://vacancymail.co.zw/jobs/designer-69281/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fa83d8e0973c.png",
-      "pubDate": "2026-09-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69280/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8d0255fe7be1.png",
       "pubDate": "2026-09-12T22:00:00+00:00",
       "category": "Jobs"
     }
