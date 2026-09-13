@@ -1,0 +1,16 @@
+---
+title: "Stop funding failure: Why SA’s utilities need a radical economic reset"
+date: 2026-09-13T17:54:17.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Stop funding failure: Why SA’s utilities need a radical economic reset"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRjh3N2IzVFFGMzAtVkFDa01URXM4Qlp4NjRnMkNhcXJUb2dXa1pnWjBiQTNSeTJNUUZ1UFhmNFpYbjJqTE5remhMZEhHclBtZ0RpcU02UHJJRk03emQ5WjFFZnB3enhRa2hyWHJpaTRfY2NtOU9XcEt2Yzd6cXZxM296cVZnM2oyQmVWaUpsaEVKMGIzTFU2VW4wUzhxcXF3NktPNkhfMi1zNE1aT0RjakRKRVJPRFNaT1hLZjdFTEZkelFGTUVNMWxsdGNxZW4zanZicGdod25YNlFjcGVDeG12R1FxanNhT0s1Z2kzS1F0VWw1VlpjV21NdGVTRGRhMm9ZNkhibXFSQmtOSWhqTkJmMkU4NUR5allodEhxWF95bF91R2hvSUlUNA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRjh3N2IzVFFGMzAtVkFDa01URXM4Qlp4NjRnMkNhcXJUb2dXa1pnWjBiQTNSeTJNUUZ1UFhmNFpYbjJqTE5remhMZEhHclBtZ0RpcU02UHJJRk03emQ5WjFFZnB3enhRa2hyWHJpaTRfY2NtOU9XcEt2Yzd6cXZxM296cVZnM2oyQmVWaUpsaEVKMGIzTFU2VW4wUzhxcXF3NktPNkhfMi1zNE1aT0RjakRKRVJPRFNaT1hLZjdFTEZkelFGTUVNMWxsdGNxZW4zanZicGdod25YNlFjcGVDeG12R1FxanNhT0s1Z2kzS1F0VWw1VlpjV21NdGVTRGRhMm9ZNkhibXFSQmtOSWhqTkJmMkU4NUR5allodEhxWF95bF91R2hvSUlUNA?oc=5)

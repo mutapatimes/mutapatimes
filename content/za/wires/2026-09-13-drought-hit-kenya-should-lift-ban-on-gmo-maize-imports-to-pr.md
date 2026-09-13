@@ -1,0 +1,16 @@
+---
+title: "Drought-hit Kenya should lift ban on GMO maize imports to prioritise its food security needs"
+date: 2026-09-13T18:14:42.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Drought-hit Kenya should lift ban on GMO maize imports to prioritise its food security needs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMixgJBVV95cUxQLVFKMWdQaWVvOW1YalM5WnRNaW80eU1XenVNbVdzUlNueDJjMUhDTkJxckJkOGpJZ21PRUFUZ0Nud2dKaXM4SGZzRFpJWGVZSUx3TS1jNklfbC1lRXBDMUtGZmdoRU5uelNmSTYxdTFmdnUyZTRlRDBaSnROUHM4dlBGUG1LZWljeVV2MFIzTDk5ZE5LM2tuWHF0WHFYWTNzTm1RLWVwWng0TkVIaUN3WmZoSlR0M1hTTURzRTJkS1J2RjN1T2tqSUxONndWeWxOUUw3bDBTalFkNDB3RFBxRjBfcEZ5NW5sS0F5YjVnZUxuNHItMHVpbm5Va19RV1UxMDlxRW1oTU9pV051dm9wZjF4bjNNQ2FnYUVEQnNBTTl1d3ZzMnBVc245RGkxOEYyS05uUG1ucUhONTMzbzkzcGhDc1VMUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMixgJBVV95cUxQLVFKMWdQaWVvOW1YalM5WnRNaW80eU1XenVNbVdzUlNueDJjMUhDTkJxckJkOGpJZ21PRUFUZ0Nud2dKaXM4SGZzRFpJWGVZSUx3TS1jNklfbC1lRXBDMUtGZmdoRU5uelNmSTYxdTFmdnUyZTRlRDBaSnROUHM4dlBGUG1LZWljeVV2MFIzTDk5ZE5LM2tuWHF0WHFYWTNzTm1RLWVwWng0TkVIaUN3WmZoSlR0M1hTTURzRTJkS1J2RjN1T2tqSUxONndWeWxOUUw3bDBTalFkNDB3RFBxRjBfcEZ5NW5sS0F5YjVnZUxuNHItMHVpbm5Va19RV1UxMDlxRW1oTU9pV051dm9wZjF4bjNNQ2FnYUVEQnNBTTl1d3ZzMnBVc245RGkxOEYyS05uUG1ucUhONTMzbzkzcGhDc1VMUQ?oc=5)
