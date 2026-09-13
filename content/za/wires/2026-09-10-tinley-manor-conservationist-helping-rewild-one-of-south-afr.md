@@ -1,0 +1,16 @@
+---
+title: "Tinley Manor conservationist helping rewild one of South Africa’s biodiversity hotspots"
+date: 2026-09-10T04:27:04.000Z
+author: The Citizen
+category: Tech
+image: 
+summary: "Tinley Manor conservationist helping rewild one of South Africa’s biodiversity hotspots"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWDBnSHV4U015TUhRS0NBSUkxWmhjM09xSTdiTDF5NWdrXzVGZVpQN0taTE5TdWJ6bVpKTF91bkhUZ2NzbGVWTjI5ZGVuUElqcFhQS2w4blREbmRpeERqektfMVRWczl0Q3hYXzBOZVdJZ1pmMndSNWlzcTVjSl9MNXZwel9FWGNDQ3RWQ2xQODV1VExfNk93ZE1iRGVYWkhhVW1LM2YzRmpTRFFKU09JbHlLTUlhQ25CeGVQbGI5OEJUSVVXSnhlWEk2ZFAxMzVZb1pWcVhXTEhPRWRjemNwT1lRbFdmRm9pQklpTkNUN201UU9TaHAtSjdXS3B4S0k?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Citizen.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWDBnSHV4U015TUhRS0NBSUkxWmhjM09xSTdiTDF5NWdrXzVGZVpQN0taTE5TdWJ6bVpKTF91bkhUZ2NzbGVWTjI5ZGVuUElqcFhQS2w4blREbmRpeERqektfMVRWczl0Q3hYXzBOZVdJZ1pmMndSNWlzcTVjSl9MNXZwel9FWGNDQ3RWQ2xQODV1VExfNk93ZE1iRGVYWkhhVW1LM2YzRmpTRFFKU09JbHlLTUlhQ25CeGVQbGI5OEJUSVVXSnhlWEk2ZFAxMzVZb1pWcVhXTEhPRWRjemNwT1lRbFdmRm9pQklpTkNUN201UU9TaHAtSjdXS3B4S0k?oc=5)
