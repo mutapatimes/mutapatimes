@@ -12,14 +12,14 @@
    "rank": 1,
    "team": "Mamelodi Sundowns",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
-   "played": 7,
+   "played": 8,
    "win": 6,
-   "draw": 1,
+   "draw": 2,
    "loss": 0,
-   "gf": 18,
-   "ga": 6,
+   "gf": 19,
+   "ga": 7,
    "gd": 12,
-   "points": 19
+   "points": 20
   },
   {
    "rank": 2,
@@ -36,29 +36,29 @@
   },
   {
    "rank": 3,
-   "team": "Kaizer Chiefs",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
-   "played": 5,
-   "win": 3,
-   "draw": 2,
-   "loss": 0,
-   "gf": 11,
-   "ga": 6,
-   "gd": 5,
-   "points": 11
+   "team": "Amazulu",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/xcb9e71784744424.png/tiny",
+   "played": 6,
+   "win": 4,
+   "draw": 1,
+   "loss": 1,
+   "gf": 9,
+   "ga": 7,
+   "gd": 2,
+   "points": 13
   },
   {
    "rank": 4,
-   "team": "Amazulu",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/xcb9e71784744424.png/tiny",
-   "played": 5,
+   "team": "Kaizer Chiefs",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
+   "played": 6,
    "win": 3,
-   "draw": 1,
-   "loss": 1,
-   "gf": 8,
+   "draw": 3,
+   "loss": 0,
+   "gf": 12,
    "ga": 7,
-   "gd": 1,
-   "points": 10
+   "gd": 5,
+   "points": 12
   },
   {
    "rank": 5,
@@ -91,5 +91,5 @@
    "away": "Richards Bay"
   }
  ],
- "updated": "2026-09-13T04:52:33+00:00"
+ "updated": "2026-09-13T11:56:17+00:00"
 }
