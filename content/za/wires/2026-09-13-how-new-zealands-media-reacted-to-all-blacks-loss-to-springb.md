@@ -1,0 +1,16 @@
+---
+title: "How New Zealand’s media reacted to All Blacks’ loss to Springboks"
+date: 2026-09-13T18:58:01.000Z
+author: Planet Rugby
+category: Sport
+image: 
+summary: "How New Zealand’s media reacted to All Blacks’ loss to Springboks"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijgJBVV95cUxNbTVKNUstN1N1NnhzS0w0R3RaZ1FSY2t4bzgtbkhqelJmUUFBVU1VTDlvZFlTaVBaWVRuQTFQSHY1d2dfR2k0ME1SNm5aNUx5QlZfZU9jcUR4dXI4by1UQm5UeDRnbW5WVlpnVl8tU3N0RGZDbnNwNVFHcFlSdzlmSFhnOXhEeWtxTEJGSFNLWFExOXBJTVFLYVRCa1FGdWw5eWkyQV9sNXNFSTd5YmR4dm02b1lBbUZSV3FPWjd5RUh3RmdSckN5UUpZVzNVdGhpV0hoVnlEazdGajBna1JSV0I1WDNiYkRkNzBFSVpDUy03TVRNYTY4QXp1UkdvQzctTDdXSWpkck5pNzZFRHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Planet Rugby.*
+[Read original article](https://news.google.com/rss/articles/CBMijgJBVV95cUxNbTVKNUstN1N1NnhzS0w0R3RaZ1FSY2t4bzgtbkhqelJmUUFBVU1VTDlvZFlTaVBaWVRuQTFQSHY1d2dfR2k0ME1SNm5aNUx5QlZfZU9jcUR4dXI4by1UQm5UeDRnbW5WVlpnVl8tU3N0RGZDbnNwNVFHcFlSdzlmSFhnOXhEeWtxTEJGSFNLWFExOXBJTVFLYVRCa1FGdWw5eWkyQV9sNXNFSTd5YmR4dm02b1lBbUZSV3FPWjd5RUh3RmdSckN5UUpZVzNVdGhpV0hoVnlEazdGajBna1JSV0I1WDNiYkRkNzBFSVpDUy03TVRNYTY4QXp1UkdvQzctTDdXSWpkck5pNzZFRHc?oc=5)

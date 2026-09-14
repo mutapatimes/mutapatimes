@@ -1,0 +1,16 @@
+---
+title: "If citizens stay away, democracy must listen"
+date: 2026-09-14T12:09:18.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "If citizens stay away, democracy must listen"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAJBVV95cUxQT2ZxV0p0U0JqdGNQWi01Rkozam93OU9aX2pvWUpwLVdnYmxqRlZoeXVYcXA4Zm1NekpTLWlPVDR4SkdNLXJuWXBkWmlmWHdmaW9QNFd0R0xaRHBvYVFEVnJGcjFlOEtKMEF5N0lnWXJkRDEwaTd0V2NvMzJpcWwzOHV0ZEt6eVQ4SExEcmtWcWtfb3BHYUxKcDZhVkNZc3ZvczAwUHZjZHB0M3JiNlZBV0ZpTU1NeVBnclZETlN6MHE4QjZKejFlS2xpUU1JdUhBVVQyb1NuRHhTenFnNEpsOTRLVWYzMUV0TUVrZ1phUGNNaVIzeEZzWGJsMDRYOU44WFBtMA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihAJBVV95cUxQT2ZxV0p0U0JqdGNQWi01Rkozam93OU9aX2pvWUpwLVdnYmxqRlZoeXVYcXA4Zm1NekpTLWlPVDR4SkdNLXJuWXBkWmlmWHdmaW9QNFd0R0xaRHBvYVFEVnJGcjFlOEtKMEF5N0lnWXJkRDEwaTd0V2NvMzJpcWwzOHV0ZEt6eVQ4SExEcmtWcWtfb3BHYUxKcDZhVkNZc3ZvczAwUHZjZHB0M3JiNlZBV0ZpTU1NeVBnclZETlN6MHE4QjZKejFlS2xpUU1JdUhBVVQyb1NuRHhTenFnNEpsOTRLVWYzMUV0TUVrZ1phUGNNaVIzeEZzWGJsMDRYOU44WFBtMA?oc=5)

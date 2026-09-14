@@ -1,0 +1,16 @@
+---
+title: "Body of missing Kempton Park runner Elizabeth ‘Tsontso’ Moselakgomo positively identified"
+date: 2026-09-14T11:54:55.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Body of missing Kempton Park runner Elizabeth ‘Tsontso’ Moselakgomo positively identified"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMlV1MDE0ejZtZF9FcEtmQlFheHdjUzNLMWxHbjBEdzM0RmdXWlZhZlZRU2MtdDB4UkJZNzJaRG11ckhLZmJLMThfSmJOYXNWODBoM2JhYU1zT0tINzh3VXVjTnFId19TdG41Q2h5TUpHajdaZG1OUDBMUV9ZejViREhHTldjLWdlX2dKLVpORXplOHRsYXlVbklDMExPM0FxcjZxT2ZDNTRVT2xQa3dzV3BYaklqcmhFV29ST3I3SFhqRTVyTnF4dnZ5ZnVjdExRbUJkZFlmdnIwdUNyOENyU2Zmb2g5M2o0UkE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMlV1MDE0ejZtZF9FcEtmQlFheHdjUzNLMWxHbjBEdzM0RmdXWlZhZlZRU2MtdDB4UkJZNzJaRG11ckhLZmJLMThfSmJOYXNWODBoM2JhYU1zT0tINzh3VXVjTnFId19TdG41Q2h5TUpHajdaZG1OUDBMUV9ZejViREhHTldjLWdlX2dKLVpORXplOHRsYXlVbklDMExPM0FxcjZxT2ZDNTRVT2xQa3dzV3BYaklqcmhFV29ST3I3SFhqRTVyTnF4dnZ5ZnVjdExRbUJkZFlmdnIwdUNyOENyU2Zmb2g5M2o0UkE?oc=5)
