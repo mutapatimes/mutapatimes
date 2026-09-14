@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-09-14T03:00:28+00:00",
+  "fetched_at": "2026-09-14T08:46:21+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe, Uganda school sides to grace Safari Sevens",
+      "link": "https://mutapatimes.com/articles/2026-09-14-zimbabwe-uganda-school-sides-to-grace-safari-sevens",
+      "image": "https://mutapatimes.com/img/cards/news/34032a7c0186.png",
+      "pubDate": "2026-09-14T04:30:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe, Uganda school sides to grace Safari Sevens",
+      "link": "https://mutapatimes.com/news/2026-09-14-zimbabwe-uganda-school-sides-to-grace-safari-sevens-0542d6",
+      "image": "https://mutapatimes.com/img/cards/news/9f286f4c7790.png",
+      "pubDate": "2026-09-14T04:30:00+00:00",
+      "category": "Sports"
+    },
     {
       "kind": "economy",
       "title": "Zim goods exports (4Q trailing to 2025 Q4): $10.0B, +10.2% vs prior period.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 14 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $132.07 via Wise",
+      "title": "Zim FX snapshot 14 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $132.06 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-14",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-14",
       "pubDate": "2026-09-13T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
       "link": "https://vacancymail.co.zw/jobs/marketing-student-69278/",
       "image": "https://mutapatimes.com/img/cards/jobs/dda94a5c1b2e.png",
-      "pubDate": "2026-09-13T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Marketing Student",
-      "link": "https://vacancymail.co.zw/jobs/marketing-student-69277/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b15476edc33.png",
-      "pubDate": "2026-09-13T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TEECHERZ HOME AND OFFICE — Audit Student",
-      "link": "https://vacancymail.co.zw/jobs/audit-student-69276/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc9a9b2d1595.png",
       "pubDate": "2026-09-13T22:00:00+00:00",
       "category": "Jobs"
     }
