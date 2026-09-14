@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T04:54:16.554136+00:00",
+  "fetched_at": "2026-09-14T12:43:39.824003+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -13,13 +13,13 @@
       "baths": "3"
     },
     {
-      "title": "Prime Location Main Road Frontage Golden Stairs Rd",
-      "url": "https://www.property.co.zw/for-sale/houses-prl254459",
-      "price": "USD 550,000",
-      "location": "Emerald Hill, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/3f/4a/6b/3f4a6b51-72de-45dc-a75b-0a9d5652b0e6_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
+      "title": "Income-Producing Asset On One Acre - Arundel, Mt Pleasant With Deed",
+      "url": "https://www.property.co.zw/for-sale/houses-gat255110",
+      "price": "USD 950,000",
+      "location": "Mount Pleasant, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/7c/60/d6/7c60d680-e4ad-4ee9-94c9-1cc881528cb5_thumbnail591.webp",
+      "beds": "8",
+      "baths": ""
     },
     {
       "title": "Investment opportunity",
@@ -139,15 +139,6 @@
       "baths": "3"
     },
     {
-      "title": "Prime Location close to Harare Drive",
-      "url": "https://www.property.co.zw/for-sale/houses-rws221905",
-      "price": "USD 300,000",
-      "location": "Pomona, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/3f/43/76/3f4376c1-1b73-4753-85eb-1f092fd0e8cd_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Mt pleasant (groom bridge area)",
       "url": "https://www.property.co.zw/for-sale/townhouses-dsi240981",
       "price": "USD 310,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/65/00/ff/6500ffbe-2e6e-4d09-beec-c904bcdd9358_thumbnail591.webp",
       "beds": "4",
       "baths": ""
+    },
+    {
+      "title": "Modern, sustainable and exclusive",
+      "url": "https://www.property.co.zw/for-sale/townhouses-pgp246504",
+      "price": "USD 130,000",
+      "location": "Burnside, Bulawayo East",
+      "image": "https://www.property.co.zw/uploadedfiles/29/46/bf/2946bf8f-a5ab-4a36-a88f-d230c4315f5d_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
     }
   ]
 }
