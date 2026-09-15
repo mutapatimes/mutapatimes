@@ -1,0 +1,16 @@
+---
+title: "R2.8 billion hospital in South Africa standing empty after 10-year build delayed"
+date: 2026-09-15T11:03:48.000Z
+author: businesstech.co.za
+category: Health
+image: 
+summary: "R2.8 billion hospital in South Africa standing empty after 10-year build delayed"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTWZpUThuRXBHdVBhcThqUk94YmdfRkY5YzdiTWZaWEFlcWw2bXZuWDRhMjVEaTdURXhtWGZCQnlVa2dybm5ZdzJYZndkdWM1ajBtR3ZpbFZhWUVLZE5BM05VbGZvR1dwd2g1SmtWNzNIQk5DVVBSOEtnTjZ2dEZTTTFva1JOa3lRS2VMSlRacHh5WHJvc2lkTk44emtaQ0o2Z1Zfc0dLVlhLdzgweG1HUU50SUxTWkwwTGotVzlWbl9UbzVEWE1KdExoUFJ3TzA5a3NVaUZ2NTZ5Vk0wa2l0WVFkd3c4VHVURmZQb0FFMmNPWUl0amJLLVN3VjVSeVRNQ1I4NC1INA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by businesstech.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxQTWZpUThuRXBHdVBhcThqUk94YmdfRkY5YzdiTWZaWEFlcWw2bXZuWDRhMjVEaTdURXhtWGZCQnlVa2dybm5ZdzJYZndkdWM1ajBtR3ZpbFZhWUVLZE5BM05VbGZvR1dwd2g1SmtWNzNIQk5DVVBSOEtnTjZ2dEZTTTFva1JOa3lRS2VMSlRacHh5WHJvc2lkTk44emtaQ0o2Z1Zfc0dLVlhLdzgweG1HUU50SUxTWkwwTGotVzlWbl9UbzVEWE1KdExoUFJ3TzA5a3NVaUZ2NTZ5Vk0wa2l0WVFkd3c4VHVURmZQb0FFMmNPWUl0amJLLVN3VjVSeVRNQ1I4NC1INA?oc=5)

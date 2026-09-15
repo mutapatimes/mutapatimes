@@ -1,0 +1,16 @@
+---
+title: "Majodina apologises after swearing at disabled man during Kouga community meeting"
+date: 2026-09-15T14:59:01.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Majodina apologises after swearing at disabled man during Kouga community meeting"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNk5KZjQ0RjBLTHZxVGZhRWF5SllPVUdEbUd5UU9tZHJyaDdCY08wR1A2OE9hT3h6WkdfZ3NLb1A0WDVGTkRTblFhdUlHQWhva0pvNnpxNmJacktZNzNvdGotOGt2X2t2NnVoNVM3aUtpRk9vb0NySHBmSVl3RDV3MThRVnBjaktzN3diOHJXaVBfa2tXUjhDMFdtRHFDWTl2dzdCRFFtQlFSLW9Vckp5dGphVTZ2b1FmVXJDaVdsXzRUNHNwWEgyLTdPZldYRVJJTjZCVmtn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNk5KZjQ0RjBLTHZxVGZhRWF5SllPVUdEbUd5UU9tZHJyaDdCY08wR1A2OE9hT3h6WkdfZ3NLb1A0WDVGTkRTblFhdUlHQWhva0pvNnpxNmJacktZNzNvdGotOGt2X2t2NnVoNVM3aUtpRk9vb0NySHBmSVl3RDV3MThRVnBjaktzN3diOHJXaVBfa2tXUjhDMFdtRHFDWTl2dzdCRFFtQlFSLW9Vckp5dGphVTZ2b1FmVXJDaVdsXzRUNHNwWEgyLTdPZldYRVJJTjZCVmtn?oc=5)
