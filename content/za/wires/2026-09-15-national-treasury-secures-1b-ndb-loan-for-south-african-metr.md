@@ -1,0 +1,16 @@
+---
+title: "National treasury secures $1b NDB loan for South African metro services"
+date: 2026-09-15T11:02:11.000Z
+author: The Citizen
+category: Policy
+image: 
+summary: "National treasury secures $1b NDB loan for South African metro services"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPU1FsY0FyeWJjdE83Yjl2REVJQ0M4dEpGdkFDd1VwbXNmbGFpM2o4YzlfZm1BT2MwSExmTUxrN2Y1NnRzazdqLUYzZG9ZV2Vjdl9hdjN3U0FueldjSVZtMDFlZTFOak9TV2dla3NOajVkcENsTnBPVUQ1X2Y5NnNPNkQ4bjFraVFHT3p5emVZcXJfbnBiMkp4TnlqWGh4ajM4STlfZzBndWtOVFhOWnM4dVRxQWtkVUtqMGMxU3RPR1YwSUxVZVhCcElteDlkS2pvSDlXdXkxYzktU0pYUTFmOG5BZEIwR1U?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Citizen.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPU1FsY0FyeWJjdE83Yjl2REVJQ0M4dEpGdkFDd1VwbXNmbGFpM2o4YzlfZm1BT2MwSExmTUxrN2Y1NnRzazdqLUYzZG9ZV2Vjdl9hdjN3U0FueldjSVZtMDFlZTFOak9TV2dla3NOajVkcENsTnBPVUQ1X2Y5NnNPNkQ4bjFraVFHT3p5emVZcXJfbnBiMkp4TnlqWGh4ajM4STlfZzBndWtOVFhOWnM4dVRxQWtkVUtqMGMxU3RPR1YwSUxVZVhCcElteDlkS2pvSDlXdXkxYzktU0pYUTFmOG5BZEIwR1U?oc=5)
