@@ -203,7 +203,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 6643,
+        "price": 6640,
         "airline": "",
         "departure_at": "",
         "return_at": "",
@@ -260,7 +260,7 @@
           "currency": ""
         },
         {
-          "price": 6558,
+          "price": 6554,
           "airline": "Vayama",
           "departure_at": "",
           "return_at": "",
@@ -269,7 +269,7 @@
           "currency": ""
         },
         {
-          "price": 6729,
+          "price": 6725,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -278,7 +278,7 @@
           "currency": ""
         },
         {
-          "price": 7022,
+          "price": 7018,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -405,17 +405,8 @@
           "currency": ""
         },
         {
-          "price": 2786,
+          "price": 2784,
           "airline": "Farera",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 0,
-          "duration": 210,
-          "currency": ""
-        },
-        {
-          "price": 3132,
-          "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
@@ -429,6 +420,15 @@
           "return_at": "2027-01-15",
           "stops": 0,
           "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 4428,
+          "airline": "Mytrip.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 220,
           "currency": ""
         }
       ],
@@ -454,11 +454,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 17,
+          "n": 14,
           "error": null
         }
       ],
-      "observations": 29
+      "observations": 26
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -532,7 +532,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 2082,
+        "price": 2080,
         "airline": "",
         "departure_at": "",
         "return_at": "",
@@ -542,10 +542,10 @@
       },
       "monthly": [
         {
-          "price": 2259,
+          "price": 1953,
           "airline": "KQ",
-          "departure_at": "2026-09-17",
-          "return_at": "2026-09-23",
+          "departure_at": "2026-09-28",
+          "return_at": "2026-10-02",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -598,7 +598,16 @@
           "currency": ""
         },
         {
-          "price": 1997,
+          "price": 1949,
+          "airline": "Trip.com",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 1,
+          "duration": 2750,
+          "currency": ""
+        },
+        {
+          "price": 1996,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
@@ -607,21 +616,12 @@
           "currency": ""
         },
         {
-          "price": 2082,
+          "price": 2080,
           "airline": "Авиасейлс",
           "departure_at": "",
           "return_at": "",
           "stops": 1,
           "duration": 1580,
-          "currency": ""
-        },
-        {
-          "price": 2256,
-          "airline": "Trip.com",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 1,
-          "duration": 2390,
           "currency": ""
         }
       ],
@@ -647,11 +647,11 @@
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 5,
+          "n": 6,
           "error": null
         }
       ],
-      "observations": 10
+      "observations": 11
     },
     "toronto-to-harare": {
       "origin": "YYZ",
@@ -659,7 +659,7 @@
       "currency": "CAD",
       "currency_sym": "C$",
       "cheapest_overall": {
-        "price": 2036,
+        "price": 2034,
         "airline": "Turna.com",
         "departure_at": "",
         "return_at": "",
@@ -690,7 +690,7 @@
       ],
       "by_airline": [
         {
-          "price": 2036,
+          "price": 2034,
           "airline": "Turna.com",
           "departure_at": "",
           "return_at": "",
@@ -708,7 +708,7 @@
           "currency": ""
         },
         {
-          "price": 2107,
+          "price": 2106,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
