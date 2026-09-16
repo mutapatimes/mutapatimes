@@ -1,0 +1,16 @@
+---
+title: "Refilwe Modiselle takes Zizi’s World on a literacy and awareness tour across schools in South Africa"
+date: 2026-09-16T13:09:57.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "Refilwe Modiselle takes Zizi’s World on a literacy and awareness tour across schools in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxQZVZkTDBMOVFSR1VXSlNXZEMtSVUxSXJJVjMtOC0taFcyTkQ4bjljMlBuM2FEUmNaRzJSZHVqdHozc2tZeU42RUNkZ1FydXJjR0V4a250c1RuQkRTNjkwQTZnVEt3S3lQYlFSSVRhYXF5NHp3TXltanhUOVNlT2hnT002dWtsSmkwZlRVRGFJbDlrR2Vuemt5Um5PNkRET2dZWFJLYWl2elpYQzNaZnJicVQ4cTl1NGRHazVqRWQ2U2RFTU1xaEhRWHhScGRZeE0zcTNqRHpmMjgydURCX3FsSUNIXy1HdzQ2OFlkakJTSGNqQ1g2WnZnUEZIczdYdUtyaElzOF9nT2xqVVBwdzNEU3dUSkZpUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxQZVZkTDBMOVFSR1VXSlNXZEMtSVUxSXJJVjMtOC0taFcyTkQ4bjljMlBuM2FEUmNaRzJSZHVqdHozc2tZeU42RUNkZ1FydXJjR0V4a250c1RuQkRTNjkwQTZnVEt3S3lQYlFSSVRhYXF5NHp3TXltanhUOVNlT2hnT002dWtsSmkwZlRVRGFJbDlrR2Vuemt5Um5PNkRET2dZWFJLYWl2elpYQzNaZnJicVQ4cTl1NGRHazVqRWQ2U2RFTU1xaEhRWHhScGRZeE0zcTNqRHpmMjgydURCX3FsSUNIXy1HdzQ2OFlkakJTSGNqQ1g2WnZnUEZIczdYdUtyaElzOF9nT2xqVVBwdzNEU3dUSkZpUQ?oc=5)
