@@ -1,0 +1,16 @@
+---
+title: "South Africa now probing deaths of 8 women near Johannesburg"
+date: 2026-09-15T19:41:31.000Z
+author: DW.com
+category: Culture
+image: 
+summary: "South Africa now probing deaths of 8 women near Johannesburg"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYjVURjdxb0JfaE9RNGhOVWJ4ZFJGX1FYQzN5RDFPd2R1bXRZZW9pUWNjejhtSS1yOG1hcDBqWmRyMVloTHZkRzE3TWFYdXplNVgyMlFNMGFleWYtRzFZLVBnLWJyRVFCQkRyS08zTm1XY2xOTEVmNWMtSjFPY1lFM3IzdjJKbHViLVRGTml5U3lBbEhOUHMwbNIBmAFBVV95cUxNVFFPWUx6UWJoVG5SZmZlR2hjUjVheDUwTThwSEt1aFFlUU12VW5hSUtUVVhvYVRMWWtyZXFYbWR0OEtTSTF3Y1U3bTdPdFM4LVF3c1EwMHdfN1FuWlR6aDFBcGdCR2dOQ0otclV1MHBjRmNEOWFBU3J1cmY0eFpONXV4ck01OXlnYXl5OHVPQzl3WkF4SERtbg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by DW.com.*
+[Read original article](https://news.google.com/rss/articles/CBMimAFBVV95cUxPYjVURjdxb0JfaE9RNGhOVWJ4ZFJGX1FYQzN5RDFPd2R1bXRZZW9pUWNjejhtSS1yOG1hcDBqWmRyMVloTHZkRzE3TWFYdXplNVgyMlFNMGFleWYtRzFZLVBnLWJyRVFCQkRyS08zTm1XY2xOTEVmNWMtSjFPY1lFM3IzdjJKbHViLVRGTml5U3lBbEhOUHMwbNIBmAFBVV95cUxNVFFPWUx6UWJoVG5SZmZlR2hjUjVheDUwTThwSEt1aFFlUU12VW5hSUtUVVhvYVRMWWtyZXFYbWR0OEtTSTF3Y1U3bTdPdFM4LVF3c1EwMHdfN1FuWlR6aDFBcGdCR2dOQ0otclV1MHBjRmNEOWFBU3J1cmY0eFpONXV4ck01OXlnYXl5OHVPQzl3WkF4SERtbg?oc=5)

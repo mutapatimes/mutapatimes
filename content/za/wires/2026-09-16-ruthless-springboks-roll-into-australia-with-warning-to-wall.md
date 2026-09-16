@@ -1,0 +1,16 @@
+---
+title: "Ruthless Springboks roll into Australia with warning to Wallabies"
+date: 2026-09-16T01:06:41.000Z
+author: Nine.com.au
+category: Sport
+image: 
+summary: "Ruthless Springboks roll into Australia with warning to Wallabies"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMVlWV2RKaDFCU1ByTGNvTlZmX1FoVTNlRFhvX0hyX1ZzbVJyRzI0aXBoV2NubzdWMDNuNG1oNVV3X3BoOHdzd1Zra3I1R1RjdTFiOHhZOFdiYkIyYWM5dnR5NnRxcWFUbW54QjBPMHI4RXp0SG1hR0tFVmpiTmF0bjRfN1JLVkI4R3hNX2VDUXd4UlZvOUdHb0Z5OW9xQTc5UlRCN3hTbks5dUp4WHhqVkktZ3V6NEI5VjRXU2NuTndZMFZ0MWJIZzVFSlBia25SOEsxeU1SY24tdEFUaFczWV9PZnFPSjA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Nine.com.au.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMVlWV2RKaDFCU1ByTGNvTlZmX1FoVTNlRFhvX0hyX1ZzbVJyRzI0aXBoV2NubzdWMDNuNG1oNVV3X3BoOHdzd1Zra3I1R1RjdTFiOHhZOFdiYkIyYWM5dnR5NnRxcWFUbW54QjBPMHI4RXp0SG1hR0tFVmpiTmF0bjRfN1JLVkI4R3hNX2VDUXd4UlZvOUdHb0Z5OW9xQTc5UlRCN3hTbks5dUp4WHhqVkktZ3V6NEI5VjRXU2NuTndZMFZ0MWJIZzVFSlBia25SOEsxeU1SY24tdEFUaFczWV9PZnFPSjA?oc=5)
