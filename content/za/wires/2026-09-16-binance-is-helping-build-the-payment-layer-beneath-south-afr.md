@@ -1,0 +1,16 @@
+---
+title: "Binance is helping build the payment layer beneath South Africa’s smart cities"
+date: 2026-09-16T07:24:22.000Z
+author: dailymaverick.co.za
+category: Business
+image: 
+summary: "Binance is helping build the payment layer beneath South Africa’s smart cities"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMixAJBVV95cUxPMnlEMUY0NUdjTVk2UENiblhyYWRfdzhnSW0zMFNFYnFmdHNQb2NjMnMyOFI5UHpRa3pqQVUwWk45LXp3dGpMWjdNTVQtOVJJVlBWb29OMDJ6ZmJmOXktV0tMMHNUblRxTHFhZkpXUXdIdlRJRkZZdGlXQl9DX2NLX2o1VDhueXNlTGhvVm9LZUxaQkpKNXM5WGRqdmNWNG9BY0lWR3QxdTd4RTUtOHZ4SUNTY0dRVGJlUHh4dUg4N2FvZElLZzdRREUtaldZc3ltLXNsdERnd1haMXYzSUNuOUZhT1JOWUNGOXNBdllKZ1pEYjlRWUdBcjRFdnVkbkhwSy1xZHpUWEo5XzFkei10UFYxb3RFQjFKUm5LVlF1aXlhc2F1NEUyM0Nkazc5YTlISS01cmVkZmJIeFFBMFlwZGJRTUo?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dailymaverick.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMixAJBVV95cUxPMnlEMUY0NUdjTVk2UENiblhyYWRfdzhnSW0zMFNFYnFmdHNQb2NjMnMyOFI5UHpRa3pqQVUwWk45LXp3dGpMWjdNTVQtOVJJVlBWb29OMDJ6ZmJmOXktV0tMMHNUblRxTHFhZkpXUXdIdlRJRkZZdGlXQl9DX2NLX2o1VDhueXNlTGhvVm9LZUxaQkpKNXM5WGRqdmNWNG9BY0lWR3QxdTd4RTUtOHZ4SUNTY0dRVGJlUHh4dUg4N2FvZElLZzdRREUtaldZc3ltLXNsdERnd1haMXYzSUNuOUZhT1JOWUNGOXNBdllKZ1pEYjlRWUdBcjRFdnVkbkhwSy1xZHpUWEo5XzFkei10UFYxb3RFQjFKUm5LVlF1aXlhc2F1NEUyM0Nkazc5YTlISS01cmVkZmJIeFFBMFlwZGJRTUo?oc=5)

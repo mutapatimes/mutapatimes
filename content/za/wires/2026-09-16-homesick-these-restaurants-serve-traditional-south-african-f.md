@@ -1,0 +1,16 @@
+---
+title: "Homesick? These restaurants serve traditional South African food that tastes like home"
+date: 2026-09-16T08:02:29.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "Homesick? These restaurants serve traditional South African food that tastes like home"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObnFUQVFGY3hXR3l5eF84blpGaUp4ak1HY252ZHpvdWRHSDYycVBRbThGRVlPaXc0bnlnVWctUm8waHVhV0YxTXN6NDc2djVsLUhtUV80cE9rVWxTMzU4eDNHQ21wc1BuemhLeEs2U191dHN6YzI5WTJfbXBCZnJpVldDVFk5b3pCc0NMOFRyWGdwOGJqSEJTcUFwQUVfQ21XMWtBR3NzWXNFMmo1dHJPeG1HelFuVjZ5Z1hLQl81QWNuMEh3OWloQmI5T21UeE4zNlZ0QlJLbDFrV1ppMEh3Nk9tbm1hQjB5MUNrM2VvS1J3c3J5b1YtdWptdnF3dw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi_gFBVV95cUxObnFUQVFGY3hXR3l5eF84blpGaUp4ak1HY252ZHpvdWRHSDYycVBRbThGRVlPaXc0bnlnVWctUm8waHVhV0YxTXN6NDc2djVsLUhtUV80cE9rVWxTMzU4eDNHQ21wc1BuemhLeEs2U191dHN6YzI5WTJfbXBCZnJpVldDVFk5b3pCc0NMOFRyWGdwOGJqSEJTcUFwQUVfQ21XMWtBR3NzWXNFMmo1dHJPeG1HelFuVjZ5Z1hLQl81QWNuMEh3OWloQmI5T21UeE4zNlZ0QlJLbDFrV1ppMEh3Nk9tbm1hQjB5MUNrM2VvS1J3c3J5b1YtdWptdnF3dw?oc=5)

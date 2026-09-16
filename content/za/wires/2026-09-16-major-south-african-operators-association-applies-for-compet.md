@@ -1,0 +1,16 @@
+---
+title: "Major South African operators' association applies for competition immunity to expand rural connectivity"
+date: 2026-09-16T09:58:02.000Z
+author: Telecompaper
+category: Tech
+image: 
+summary: "Major South African operators' association applies for competition immunity to expand rural connectivity"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSUloSWcwckFRWHFJZWs1bW16YlV1VWhMb3I1NGJKT1ZJMHhPdVRlQ2hQTWhUcFpqZ2NhM0VFLXV2dlcyYkdycFR1dmJwTUYxU1NxQkxMWFdVMDJiQ1IyZV9TYy1NWXNDVFdJQjZaX3ZuSlRVdWFjSkZSX1libFlNcG80UEdRYnBveTNxWEh5NFlsU2lJVUtoR3hLYUlXS1J3eVBSQ3BYeVp3ZFoyWFBXc3Z6eEE1eGJva05YN0VhZXVwYm9fYzZ0LXh3bXF0OHFreVRVNVQ1NUxQZjR0S0w4?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Telecompaper.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSUloSWcwckFRWHFJZWs1bW16YlV1VWhMb3I1NGJKT1ZJMHhPdVRlQ2hQTWhUcFpqZ2NhM0VFLXV2dlcyYkdycFR1dmJwTUYxU1NxQkxMWFdVMDJiQ1IyZV9TYy1NWXNDVFdJQjZaX3ZuSlRVdWFjSkZSX1libFlNcG80UEdRYnBveTNxWEh5NFlsU2lJVUtoR3hLYUlXS1J3eVBSQ3BYeVp3ZFoyWFBXc3Z6eEE1eGJva05YN0VhZXVwYm9fYzZ0LXh3bXF0OHFreVRVNVQ1NUxQZjR0S0w4?oc=5)
