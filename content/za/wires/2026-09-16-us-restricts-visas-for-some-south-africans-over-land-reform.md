@@ -1,0 +1,16 @@
+---
+title: "US restricts visas for some South Africans over land reform"
+date: 2026-09-16T14:09:28.000Z
+author: The Nation Newspaper
+category: Policy
+image: 
+summary: "US restricts visas for some South Africans over land reform"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGNLUGRuNV9QV0Z5WGJGZjhZNnJNU3pJdzVMUU10VDl2aDI5VGRZRXlKeFdxRndSUUw5S1RORWVJVWFQc3lOaUNBc1M1eVZ1ZWZIbVNhWTdwUGozUGswbmkwZXNsMkJ1bGhGOGRVSHpsX1laUDRpVk56a1FlbkhjemNCMzFqOTBIbFdBSnMyR0lnUUw10gGaAUFVX3lxTE9iOTVkUXp5X0JSMXVhcEE1NkM3R05NZGVaQzR4RXRWUktpd2ZoQUI0N3ZOR1VfWkFyTFBsNTRxMHNCaEZaQklQSFRIV1JSbnEwWU00aWw4MjNuMVJLTUE3LXB5Q0VEd1ZnczJzdU5raGFNZEUzQkdDbDhsVWNEMUdsTDh4eTRrOG9JWGtFYUpFSTdscWdxZkNNc1E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Nation Newspaper.*
+[Read original article](https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGNLUGRuNV9QV0Z5WGJGZjhZNnJNU3pJdzVMUU10VDl2aDI5VGRZRXlKeFdxRndSUUw5S1RORWVJVWFQc3lOaUNBc1M1eVZ1ZWZIbVNhWTdwUGozUGswbmkwZXNsMkJ1bGhGOGRVSHpsX1laUDRpVk56a1FlbkhjemNCMzFqOTBIbFdBSnMyR0lnUUw10gGaAUFVX3lxTE9iOTVkUXp5X0JSMXVhcEE1NkM3R05NZGVaQzR4RXRWUktpd2ZoQUI0N3ZOR1VfWkFyTFBsNTRxMHNCaEZaQklQSFRIV1JSbnEwWU00aWw4MjNuMVJLTUE3LXB5Q0VEd1ZnczJzdU5raGFNZEUzQkdDbDhsVWNEMUdsTDh4eTRrOG9JWGtFYUpFSTdscWdxZkNNc1E?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Win a dream week in Zanzibar + a share of R50,000 in cash!"
+date: 2026-09-16T11:04:04.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Win a dream week in Zanzibar + a share of R50,000 in cash!"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxNR2J6UXRkX1RneGc5VEltbWVINjJaMkVlVTNValVFV3Vyanc1djVoOVhKc21jNWExYkxUa2ROdjA1aGw5eVV4SkN4aURIbF9Rd2dfNG02NUtzcjI3UXRLSGI3MHNpak1kVDZMc0RzY1FiYXB2NVBPaVVULU5nQXlPekNrM2xDSVpQSnlqT2IxenRzQ0EtdmdLWG1NREs1eEdZOTF0OFhwdnkyTWNTeGN6UjVXOWRGT0tYaWpiMnNQUHY4Y3RtSEFaMnpUSHdFV25Eak5DU1lLbHZ1VzRRMzJxdDg5OUlpTmxrMTRSeEpWTERRWWxTcVpvYV9OSWFKZVZLNjJTUXdVbmNvaWZmZjNoa2h6NA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxNR2J6UXRkX1RneGc5VEltbWVINjJaMkVlVTNValVFV3Vyanc1djVoOVhKc21jNWExYkxUa2ROdjA1aGw5eVV4SkN4aURIbF9Rd2dfNG02NUtzcjI3UXRLSGI3MHNpak1kVDZMc0RzY1FiYXB2NVBPaVVULU5nQXlPekNrM2xDSVpQSnlqT2IxenRzQ0EtdmdLWG1NREs1eEdZOTF0OFhwdnkyTWNTeGN6UjVXOWRGT0tYaWpiMnNQUHY4Y3RtSEFaMnpUSHdFV25Eak5DU1lLbHZ1VzRRMzJxdDg5OUlpTmxrMTRSeEpWTERRWWxTcVpvYV9OSWFKZVZLNjJTUXdVbmNvaWZmZjNoa2h6NA?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Bats and Nearby Wild Habitat Cut Insect Damage in Macadamia Orchards, South African Field Study Finds"
+date: 2026-09-16T14:55:18.000Z
+author: Global Agriculture
+category: Tech
+image: 
+summary: "Bats and Nearby Wild Habitat Cut Insect Damage in Macadamia Orchards, South African Field Study Finds"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZGpUOTJNcjJnUWpjM2drTmdPcWJ5Y2VOWVFrRU5CZTNHeFZIaUkyMU5uQUttWEEtck02eHZYVlJwUmhPWkU3U2d4ZlNkbUg0WUU3QlVwNi1CMU5RczBHNW03S2w1aDctcG5kdmRDS3k5YXNEWDlkM084aWRWOHFIRDRJbXR5LXZjN2JxMVFRNm5LS0FEajRvU0NaU1ZmVUFyWDJlNEJUV09GWnNjSGNnMmtheGY0UzhBSkUxWkJWLW5SSHUzbWZmRExSWVRRaXU0a1JEV3RNSWpUWGNxRjNzVk85Wmg5NjN4M19MTy1fZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Global Agriculture.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZGpUOTJNcjJnUWpjM2drTmdPcWJ5Y2VOWVFrRU5CZTNHeFZIaUkyMU5uQUttWEEtck02eHZYVlJwUmhPWkU3U2d4ZlNkbUg0WUU3QlVwNi1CMU5RczBHNW03S2w1aDctcG5kdmRDS3k5YXNEWDlkM084aWRWOHFIRDRJbXR5LXZjN2JxMVFRNm5LS0FEajRvU0NaU1ZmVUFyWDJlNEJUV09GWnNjSGNnMmtheGY0UzhBSkUxWkJWLW5SSHUzbWZmRExSWVRRaXU0a1JEV3RNSWpUWGNxRjNzVk85Wmg5NjN4M19MTy1fZw?oc=5)
