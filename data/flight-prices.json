@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-15",
+  "fetched_at": "2026-09-16",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -47,10 +47,28 @@
           "currency": ""
         },
         {
+          "price": 358,
+          "airline": "QR",
+          "departure_at": "2027-01-25",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1855,
+          "currency": ""
+        },
+        {
           "price": 549,
           "airline": "ET",
           "departure_at": "2027-02-01",
           "return_at": "2027-02-15",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
+        },
+        {
+          "price": 575,
+          "airline": "WB",
+          "departure_at": "2027-03-18",
+          "return_at": "2027-03-30",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -64,6 +82,15 @@
           "return_at": "",
           "stops": 4,
           "duration": 1920,
+          "currency": ""
+        },
+        {
+          "price": 358,
+          "airline": "QR",
+          "departure_at": "2027-01-25",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1855,
           "currency": ""
         },
         {
@@ -92,28 +119,19 @@
           "stops": 3,
           "duration": 1600,
           "currency": ""
-        },
-        {
-          "price": 498,
-          "airline": "EY",
-          "departure_at": "2026-10-13",
-          "return_at": "",
-          "stops": 2,
-          "duration": 2025,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 5,
+          "n": 6,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LON",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -125,19 +143,19 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 14,
+          "n": 15,
           "error": null
         },
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 5,
+          "n": 6,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "LHR",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -149,11 +167,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 14,
+          "n": 15,
           "error": null
         }
       ],
-      "observations": 41
+      "observations": 44
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -203,7 +221,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 6640,
+        "price": 6648,
         "airline": "",
         "departure_at": "",
         "return_at": "",
@@ -260,7 +278,7 @@
           "currency": ""
         },
         {
-          "price": 6554,
+          "price": 6562,
           "airline": "Vayama",
           "departure_at": "",
           "return_at": "",
@@ -269,7 +287,7 @@
           "currency": ""
         },
         {
-          "price": 6725,
+          "price": 6733,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -278,7 +296,7 @@
           "currency": ""
         },
         {
-          "price": 7018,
+          "price": 7026,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -321,18 +339,18 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1335,
+        "price": 1361,
         "airline": "FA",
-        "departure_at": "2026-09-16",
+        "departure_at": "2026-11-05",
         "return_at": "",
         "stops": 0,
         "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1335,
+        "price": 1361,
         "airline": "FA",
-        "departure_at": "2026-09-16",
+        "departure_at": "2026-11-05",
         "return_at": "",
         "stops": 0,
         "duration": 110,
@@ -340,9 +358,9 @@
       },
       "monthly": [
         {
-          "price": 1335,
+          "price": 1365,
           "airline": "FA",
-          "departure_at": "2026-09-16",
+          "departure_at": "2026-09-19",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -387,9 +405,9 @@
       ],
       "by_airline": [
         {
-          "price": 1335,
+          "price": 1361,
           "airline": "FA",
-          "departure_at": "2026-09-16",
+          "departure_at": "2026-11-05",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -405,7 +423,7 @@
           "currency": ""
         },
         {
-          "price": 2784,
+          "price": 2787,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -423,7 +441,7 @@
           "currency": ""
         },
         {
-          "price": 4428,
+          "price": 4433,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -532,7 +550,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 2080,
+        "price": 2074,
         "airline": "",
         "departure_at": "",
         "return_at": "",
@@ -598,7 +616,7 @@
           "currency": ""
         },
         {
-          "price": 1949,
+          "price": 1943,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -607,7 +625,7 @@
           "currency": ""
         },
         {
-          "price": 1996,
+          "price": 1989,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
@@ -616,7 +634,7 @@
           "currency": ""
         },
         {
-          "price": 2080,
+          "price": 2074,
           "airline": "Авиасейлс",
           "departure_at": "",
           "return_at": "",
@@ -659,7 +677,7 @@
       "currency": "CAD",
       "currency_sym": "C$",
       "cheapest_overall": {
-        "price": 2034,
+        "price": 2033,
         "airline": "Turna.com",
         "departure_at": "",
         "return_at": "",
@@ -690,7 +708,7 @@
       ],
       "by_airline": [
         {
-          "price": 2034,
+          "price": 2033,
           "airline": "Turna.com",
           "departure_at": "",
           "return_at": "",
@@ -708,7 +726,7 @@
           "currency": ""
         },
         {
-          "price": 2106,
+          "price": 2104,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
