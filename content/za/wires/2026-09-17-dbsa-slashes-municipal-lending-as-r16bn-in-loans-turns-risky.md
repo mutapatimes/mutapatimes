@@ -1,0 +1,16 @@
+---
+title: "DBSA slashes municipal lending as R16bn in loans turns risky"
+date: 2026-09-17T02:03:20.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "DBSA slashes municipal lending as R16bn in loans turns risky"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOM2cwRGU0aEo0WlNwdGVRVlVSd3ZXM0VHZnZZRzhSaU5IZ3l6NlFOenVPcmRYTFZNaHRJeXlCV0FXYlZTaktYcGd5b0h0ckJrUUNQUnRIbldGRUp1X2s1QTM5M05zbzVkZWNfbVJfWThjSVdhSXplVGp5SzZScDJrNkRrRFlYcVFrdlA0c2l3R2tJNlNfUGRIMkJRdXFGSHpWeDJldXQ3MWNxaWJpTGlDUldCRkhaZHNxWC1CNGtkcWU4a0dJT28zYnlEQ3dxSHY2ZjdnQkE3SWY3cE5sX3dRRUxKNWc3d0NWbzFuRnE2VEw0a3pvYXFRMg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi-AFBVV95cUxOM2cwRGU0aEo0WlNwdGVRVlVSd3ZXM0VHZnZZRzhSaU5IZ3l6NlFOenVPcmRYTFZNaHRJeXlCV0FXYlZTaktYcGd5b0h0ckJrUUNQUnRIbldGRUp1X2s1QTM5M05zbzVkZWNfbVJfWThjSVdhSXplVGp5SzZScDJrNkRrRFlYcVFrdlA0c2l3R2tJNlNfUGRIMkJRdXFGSHpWeDJldXQ3MWNxaWJpTGlDUldCRkhaZHNxWC1CNGtkcWU4a0dJT28zYnlEQ3dxSHY2ZjdnQkE3SWY3cE5sX3dRRUxKNWc3d0NWbzFuRnE2VEw0a3pvYXFRMg?oc=5)
