@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2026 04:52:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 05:00:17 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Project Manager</title>
+      <link>https://mutapatimes.com/stories/c1dfcff06f06.html</link>
+      <description>WE ARE HIRING | PROJECT MANAGER We are looking for a strong, dynamic Project Manager to join our growing team. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Wed, 16 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/c1dfcff06f06.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/c1dfcff06f06.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c1dfcff06f06.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/c1dfcff06f06.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>ST-ONE Machinery — Content Creator &amp; Social Media Specialist</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/f323acb3bf90.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f323acb3bf90.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/f323acb3bf90.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Personal Assistant To The Managing Director : HoneyPeak Capital (Pvt) Ltd</title>
-      <link>https://mutapatimes.com/stories/ec1418f82dd5.html</link>
-      <description>JOB ADVERT *HONEYPEAK CAPITAL (Pvt) Ltd* _Investment &amp; Capital Growth_ *VACANCY: PERSONAL ASSISTANT TO THE MANAGING DIRECTOR* HoneyPeak Capital (Pvt) Ltd is seeking to recruit a dynamic, proactive, a… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 16 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/ec1418f82dd5.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/ec1418f82dd5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ec1418f82dd5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/ec1418f82dd5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
