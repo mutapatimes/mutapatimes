@@ -1,13 +1,69 @@
 {
-  "fetched_at": "2026-09-17T10:51:22+00:00",
+  "fetched_at": "2026-09-17T16:05:57+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Chizarira vultures travel 19 000km across Southern Africa",
-      "link": "https://mutapatimes.com/articles/2026-09-16-chizarira-vultures-travel-19-000km-across-southern-africa",
-      "image": "https://mutapatimes.com/img/cards/news/f10016b20c0d.png",
-      "pubDate": "2026-09-16T22:30:29+00:00",
+      "title": "Chinese embassy in Zimbabwe marks 77th founding anniversary of PRC",
+      "link": "https://mutapatimes.com/news/2026-09-17-chinese-embassy-in-zimbabwe-marks-77th-founding-anniversary-of-prc-128867",
+      "image": "https://mutapatimes.com/img/cards/news/12b77b7fc5a9.png",
+      "pubDate": "2026-09-17T13:45:15+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "zse",
+      "title": "ZSE close 17 Sep 2026: All Share 456.15 (-0.70%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-17",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-17",
+      "pubDate": "2026-09-17T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe seeks $115 million Afreximbank loan for state rail operator",
+      "link": "https://mutapatimes.com/articles/2026-09-17-zimbabwe-seeks-115-million-afreximbank-loan-for-state-rail-o",
+      "image": "https://mutapatimes.com/img/cards/news/f5f28ed5f372.png",
+      "pubDate": "2026-09-17T13:09:37+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe farmers brace for El Niño by saving water",
+      "link": "https://mutapatimes.com/articles/2026-09-17-zimbabwe-farmers-brace-for-el-niño-by-saving-water",
+      "image": "https://mutapatimes.com/img/cards/news/db5b66e3cc91.png",
+      "pubDate": "2026-09-17T13:03:15+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Council unable to fund Ngozi Mine waste plant, Coltart says",
+      "link": "https://mutapatimes.com/articles/2026-09-17-council-unable-to-fund-ngozi-mine-waste-plant-coltart-says",
+      "image": "https://mutapatimes.com/img/cards/news/bd56f6cbb6be.png",
+      "pubDate": "2026-09-17T04:02:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Nurses threaten showdown over government’s failure to review allowances",
+      "link": "https://mutapatimes.com/news/2026-09-17-nurses-threaten-showdown-over-government-s-failure-to-review-allowances-5813d4",
+      "image": "https://mutapatimes.com/img/cards/news/3639fc90952f.png",
+      "pubDate": "2026-09-17T03:53:29+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Netherlands to close Harare Embassy, cites geopolitical developments",
+      "link": "https://mutapatimes.com/news/2026-09-17-netherlands-to-close-harare-embassy-cites-geopolitical-developments-bb9999",
+      "image": "https://mutapatimes.com/img/cards/news/f70b0725876a.png",
+      "pubDate": "2026-09-17T03:46:13+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "RBZ: Mono-currency return will be market-led and condition-based, not date-driven",
+      "link": "https://mutapatimes.com/articles/2026-09-17-rbz-mono-currency-return-will-be-market-led-and-condition-ba",
+      "image": "https://mutapatimes.com/img/cards/news/189273d5b6db.png",
+      "pubDate": "2026-09-17T03:29:52+00:00",
       "category": "Business"
     },
     {
@@ -65,6 +121,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-16T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Farm Manager",
+      "link": "https://vacancymail.co.zw/jobs/farm-manager-69396/",
+      "image": "https://mutapatimes.com/img/cards/jobs/22167fee357d.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "OPHID — Software Developer (Neotree Project)",
+      "link": "https://vacancymail.co.zw/jobs/software-developer-neotree-project-69395/",
+      "image": "https://mutapatimes.com/img/cards/jobs/04f193620136.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "RIDBRAVO INVESTMENTS — FREIGHT CONTROLLER JOHANNESBURG BASED",
+      "link": "https://vacancymail.co.zw/jobs/freight-controller-johannesburg-based-69394/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5574f441aa3a.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Chef",
+      "link": "https://vacancymail.co.zw/jobs/chef-69393/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6960754da667.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Total Energies — Depot Accountant",
+      "link": "https://vacancymail.co.zw/jobs/depot-accountant-69392/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d317cdda44be.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Total Energies — Key Account Manager",
+      "link": "https://vacancymail.co.zw/jobs/key-account-manager-69391/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a46af6b7df36.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "DHL — Warehouse Agent",
+      "link": "https://vacancymail.co.zw/jobs/warehouse-agent-69390/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0f3db29eb4a9.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Nutrition Action Zimbabwe — ENUMERATORS [ Pool recruitment] | Muzarabani",
+      "link": "https://vacancymail.co.zw/jobs/enumerators-pool-recruitment-muzarabani-69389/",
+      "image": "https://mutapatimes.com/img/cards/jobs/964f2d831911.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Registered General Nurse : Baines Intercare Medical Centre",
+      "link": "https://vacancymail.co.zw/jobs/registered-general-nurse-baines-intercare-medical-centre-69388/",
+      "image": "https://mutapatimes.com/img/cards/jobs/27a21f22099c.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Nengo builders — Class 1 Electric Diesel Plant Mechanic / Journeyman",
+      "link": "https://vacancymail.co.zw/jobs/class-1-electric-diesel-plant-mechanic-journeyman-69387/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c9676e70e9cf.png",
+      "pubDate": "2026-09-16T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -343,142 +479,6 @@
       "title": "Gwanda State University — Teaching Assistant: Metallurgical Engineering",
       "link": "https://vacancymail.co.zw/jobs/teaching-assistant-metallurgical-engineering-69330/",
       "image": "https://mutapatimes.com/img/cards/jobs/380cd135d7cd.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gwanda State University — PROCUREMENT OFFICER (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/procurement-officer-1-post-69329/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5303268b687f.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gwanda State University — Procurement Assistant",
-      "link": "https://vacancymail.co.zw/jobs/procurement-assistant-69328/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5c60f0c13ed2.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Gwanda State University — Assistant Registrar, Human Resources",
-      "link": "https://vacancymail.co.zw/jobs/assistant-registrar-human-resources-69327/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e6927ab3886c.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-69320/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9e6fe25050d6.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PSI - Population Services International Zimbabwe — Deputy Country Technical Lead/Technical Advisor- HIV Prevention, Diagnostics & Health Innovation",
-      "link": "https://vacancymail.co.zw/jobs/deputy-country-technical-leadtechnical-advisor-hiv-prevention-diagnostics-health-innovation-69319/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7f49a8db591c.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bronte Hotel — Housekeeping supervisor/receptionist",
-      "link": "https://vacancymail.co.zw/jobs/housekeeping-supervisorreceptionist-69318/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c55ccb1d6bfc.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Engineer - Rope Testing and Manufacturing",
-      "link": "https://vacancymail.co.zw/jobs/engineer-rope-testing-and-manufacturing-69317/",
-      "image": "https://mutapatimes.com/img/cards/jobs/bf5b7eeb6d55.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimnat — Agriculture Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/agriculture-graduate-trainee-69316/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c9a8fc725567.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Stores Assistant (2 Posts Gweru Campus, 1 Post Kwekwe Campus)",
-      "link": "https://vacancymail.co.zw/jobs/stores-assistant-2-posts-gweru-campus-1-post-kwekwe-campus-69315/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3c8539691d67.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Impala Car Rental — Part-Time Chauffeur Drivers",
-      "link": "https://vacancymail.co.zw/jobs/part-time-chauffeur-drivers-69314/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2f9718749275.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Team Members",
-      "link": "https://vacancymail.co.zw/jobs/sales-team-members-69313/",
-      "image": "https://mutapatimes.com/img/cards/jobs/439ae6bd998c.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Impala Car Rental — Vehicle Cleaner",
-      "link": "https://vacancymail.co.zw/jobs/vehicle-cleaner-69312/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2a379e659632.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Sub-Librarian – Library Client Services",
-      "link": "https://vacancymail.co.zw/jobs/sub-librarian-library-client-services-69311/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f75c130e5f03.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Maranatha Preparatory Schools — DR YOLZ TAILORING IS HIRING 1.Fashion Designer - Must have 5+ years experience in garment design, pattern making & fashion trends 2.⁠ ⁠Experienced Tailors- Must be skilled in cutting, sewing, alter",
-      "link": "https://vacancymail.co.zw/jobs/dr-yolz-tailoring-is-hiring-1fashion-designer-must-have-5-years-experience-in-garment-design-pattern-making-fashion-trends-2-experienced-tailors-must-be-skilled-in-cutting-sewing-alter-69305/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ac9189d48d76.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "KPMG — Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-69304/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b3644db5480.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Electrical Engineering Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/electrical-engineering-graduate-trainee-69303/",
-      "image": "https://mutapatimes.com/img/cards/jobs/929f90c8f8f4.png",
-      "pubDate": "2026-09-16T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hospital Receptionist | Full time",
-      "link": "https://vacancymail.co.zw/jobs/hospital-receptionist-full-time-69302/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1d91e1a2554d.png",
       "pubDate": "2026-09-16T22:00:00+00:00",
       "category": "Jobs"
     }
