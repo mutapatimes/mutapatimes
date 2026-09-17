@@ -1,0 +1,16 @@
+---
+title: "What are all the sanctions Iran is under?"
+date: 2026-09-17T15:05:21.000Z
+author: Al Jazeera
+category: Policy
+image: 
+summary: "What are all the sanctions Iran is under?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcDNSdWU2Z3NCQWhfNU03dG5CcTc1bmxlZnZmaUdCbmRPRTRER19GTGQwWHIxUnppa0lVZkRhY2RqWDkwcnc5d1puMzc5Z2JYTzJNYUFfREp1VUdTd1VoN0Z4M3oyankwYzR4Y1hXV01BZ3ExdVY4VXNqS3J1ZDd2VHhic1A0dTNX0gGOAUFVX3lxTE80ZjJiVEE5MzRaWldZYmFjNU5iNkNmbFc5M1J2bUhySUQ3ME1MNDF1UGhqUS05aUMzNW9DZE5FdTlpNDdGLUNjdGZLbEIxUzdaQWFGSHA1SEFjeTdqTzJkZHliRUZxMEpwRkdISmFJZ3VOeEdqYmFRN2YyaEhoZ04tSW1vVVByamJ6VGhyR2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcDNSdWU2Z3NCQWhfNU03dG5CcTc1bmxlZnZmaUdCbmRPRTRER19GTGQwWHIxUnppa0lVZkRhY2RqWDkwcnc5d1puMzc5Z2JYTzJNYUFfREp1VUdTd1VoN0Z4M3oyankwYzR4Y1hXV01BZ3ExdVY4VXNqS3J1ZDd2VHhic1A0dTNX0gGOAUFVX3lxTE80ZjJiVEE5MzRaWldZYmFjNU5iNkNmbFc5M1J2bUhySUQ3ME1MNDF1UGhqUS05aUMzNW9DZE5FdTlpNDdGLUNjdGZLbEIxUzdaQWFGSHA1SEFjeTdqTzJkZHliRUZxMEpwRkdISmFJZ3VOeEdqYmFRN2YyaEhoZ04tSW1vVVByamJ6VGhyR2c?oc=5)

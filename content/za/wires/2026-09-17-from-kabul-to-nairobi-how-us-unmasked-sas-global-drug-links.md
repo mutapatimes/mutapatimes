@@ -1,0 +1,16 @@
+---
+title: "From Kabul to Nairobi — how US unmasked SA’s global drug links"
+date: 2026-09-17T21:13:38.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "From Kabul to Nairobi — how US unmasked SA’s global drug links"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinwJBVV95cUxOMUhhaW1vMFpmbWpnMDg5ZlY3eTdTbUtwOEMyYzA1b3hONGEwZXJSVVJyalBOeVJIS3NKWUc0aDVVc290b3V3TWx0SEktLWFLNG14blltVHdhNnVBQmRoZEpsU1JIb0FxVXA5dkt0MmdMVmxnQlJ3N3JyemFJUE4wOGlVNzhvSGlQZzZOeXMySjZSLXdnNzlkNUdPTTc1YVJHdjNuUmF6a3JpLVhvdnNaVGpzVy0ycWtOdVFXMGstQk5WdHNNQmV5QmdTbVcweEVkdDVUQW5VTWRlT1hyMUJDX3lKUmdKT1laYjEzNEtVVlRLZkRUZTFOZHBrdmtBV3lMeVFSSDZheG95WXlBT1V0MU9kSVl4azlYNldkZl94aw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinwJBVV95cUxOMUhhaW1vMFpmbWpnMDg5ZlY3eTdTbUtwOEMyYzA1b3hONGEwZXJSVVJyalBOeVJIS3NKWUc0aDVVc290b3V3TWx0SEktLWFLNG14blltVHdhNnVBQmRoZEpsU1JIb0FxVXA5dkt0MmdMVmxnQlJ3N3JyemFJUE4wOGlVNzhvSGlQZzZOeXMySjZSLXdnNzlkNUdPTTc1YVJHdjNuUmF6a3JpLVhvdnNaVGpzVy0ycWtOdVFXMGstQk5WdHNNQmV5QmdTbVcweEVkdDVUQW5VTWRlT1hyMUJDX3lKUmdKT1laYjEzNEtVVlRLZkRUZTFOZHBrdmtBV3lMeVFSSDZheG95WXlBT1V0MU9kSVl4azlYNldkZl94aw?oc=5)

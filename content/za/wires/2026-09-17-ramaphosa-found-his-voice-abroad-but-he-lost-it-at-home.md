@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa found his voice abroad, but he lost it at home"
+date: 2026-09-17T19:16:12.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Ramaphosa found his voice abroad, but he lost it at home"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxQT3cwelpULVI0SzBDR0p2aENUWDhFNVU4Y1hCWTMwTGlKSkpfVnkxM3pGek0zdXRoM1NzZERkM2lUc01wZ01hN0pxZllvTkVWT0VzV2Jldkk2OUNDQ3ZoUkQ3UmFSckpfTHZ3TGlXalJVWXRza3oxRnV0R2p2RG1HdDFiVjVxUEE4a2wxVVduN3NuZXcwaUtsaFFNb1RtcHp5SDdPWDUtMzV5RWdhUnU4RUJlOEhrYkdsNzYwRGljVVZZcXkzZGhmQnY0QXg3TFdFWXBLMk1nZEk2UTVySHVPVjVjWHZEWWJKcG45Q3UzNjk1TWRzd1ZfYTE2OS1YcXpPWXc1RlBNZElvUEw4Y1FFYVVjZVVKUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxQT3cwelpULVI0SzBDR0p2aENUWDhFNVU4Y1hCWTMwTGlKSkpfVnkxM3pGek0zdXRoM1NzZERkM2lUc01wZ01hN0pxZllvTkVWT0VzV2Jldkk2OUNDQ3ZoUkQ3UmFSckpfTHZ3TGlXalJVWXRza3oxRnV0R2p2RG1HdDFiVjVxUEE4a2wxVVduN3NuZXcwaUtsaFFNb1RtcHp5SDdPWDUtMzV5RWdhUnU4RUJlOEhrYkdsNzYwRGljVVZZcXkzZGhmQnY0QXg3TFdFWXBLMk1nZEk2UTVySHVPVjVjWHZEWWJKcG45Q3UzNjk1TWRzd1ZfYTE2OS1YcXpPWXc1RlBNZElvUEw4Y1FFYVVjZVVKUQ?oc=5)

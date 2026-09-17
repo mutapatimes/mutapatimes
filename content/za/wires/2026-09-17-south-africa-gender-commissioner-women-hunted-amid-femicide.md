@@ -1,0 +1,16 @@
+---
+title: "South Africa gender commissioner: women ‘hunted’ amid femicide crisis"
+date: 2026-09-17T18:19:01.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "South Africa gender commissioner: women ‘hunted’ amid femicide crisis"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcldIbFF1M09Xa3dlR29rLURRdFk2cnZqdUxDVnB1c3NrWFFhTnpvOGN4ai1qSDdabXZqamJ0bmtwRWZFaVpRWndFMHlrbnpNWkV4c05kSjZkYnhaX0lXQk5PZGZuWWVmRm5ibWcwMkpDTkNyYmc0czMyNmtFWmNCZjJSWWJkN0ZfeFVnUTJDQktRQdIBlwFBVV95cUxNWXEtazBnWGZSOHJmcmtvU2NWeGFGUFpMTGNUX19UNGRLMkVTamlyTGkwVmtOLU1ZeVNPMUlLM1N2UjVkWTdTYllwTnNsMjMyai0zWTd1ZWtRVUVVX3VaQWpxaWk0RXNNaUNBU0thZFJJR2lJWWpXNm9nM01EbFVuZnMyV0lka1lOcWpEZi0xSkQxRlhoblRF?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMikgFBVV95cUxNcldIbFF1M09Xa3dlR29rLURRdFk2cnZqdUxDVnB1c3NrWFFhTnpvOGN4ai1qSDdabXZqamJ0bmtwRWZFaVpRWndFMHlrbnpNWkV4c05kSjZkYnhaX0lXQk5PZGZuWWVmRm5ibWcwMkpDTkNyYmc0czMyNmtFWmNCZjJSWWJkN0ZfeFVnUTJDQktRQdIBlwFBVV95cUxNWXEtazBnWGZSOHJmcmtvU2NWeGFGUFpMTGNUX19UNGRLMkVTamlyTGkwVmtOLU1ZeVNPMUlLM1N2UjVkWTdTYllwTnNsMjMyai0zWTd1ZWtRVUVVX3VaQWpxaWk0RXNNaUNBU0thZFJJR2lJWWpXNm9nM01EbFVuZnMyV0lka1lOcWpEZi0xSkQxRlhoblRF?oc=5)
