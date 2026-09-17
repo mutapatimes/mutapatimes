@@ -1,0 +1,16 @@
+---
+title: "Black Sash flooded with calls over SASSA grant review delays and suspensions"
+date: 2026-09-17T12:36:36.000Z
+author: EWN
+category: Environment
+image: 
+summary: "Black Sash flooded with calls over SASSA grant review delays and suspensions"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLWdHRF9tRER5c19hblRleFgxNW5hRXItVFdhcFRLdlJJeWpuX3V4THJwakM1a1U0RHlVelQ0NW9NMEpELW5OMXNMUWhkYVYzeVNNS3k4ODlEM0M0YmpIdUZhMm9weG1KcXpHVktSX1p5M1FvZzFxZnNzdXR5ZXE2ZFg1ckRweFlMcm92d2tNZnFVWWIwV0RaOENOUnZqNzI1RkR1U1dOZnAtOExFeXdXRmt3b0RUUk1kWHVkaUphVVJmRllhWFQtY19zVW1xLWpMYktocXhzSjlBMzNKSlF3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by EWN.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLWdHRF9tRER5c19hblRleFgxNW5hRXItVFdhcFRLdlJJeWpuX3V4THJwakM1a1U0RHlVelQ0NW9NMEpELW5OMXNMUWhkYVYzeVNNS3k4ODlEM0M0YmpIdUZhMm9weG1KcXpHVktSX1p5M1FvZzFxZnNzdXR5ZXE2ZFg1ckRweFlMcm92d2tNZnFVWWIwV0RaOENOUnZqNzI1RkR1U1dOZnAtOExFeXdXRmt3b0RUUk1kWHVkaUphVVJmRllhWFQtY19zVW1xLWpMYktocXhzSjlBMzNKSlF3?oc=5)
