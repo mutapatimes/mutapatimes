@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2026 16:05:57 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 17:00:18 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -187,18 +187,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/06ddcb5b9994.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 160,000 — Arlington 4-Bed Townhouse Complex ,Borehole, Solar &amp; 24hr Security (Arlington, Harare South)</title>
-      <link>https://mutapatimes.com/property-landing/9075688719ca.html</link>
-      <description>USD 160,000 — Arlington, Harare South. 4 beds, 3 baths. Arlington 4-Bed Townhouse Complex,Borehole, Solar &amp; 24hr Security. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 16 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/9075688719ca.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/9075688719ca.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9075688719ca.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/9075688719ca.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 220,000 — Residential house for sale (Eastlea, Harare East)</title>
       <link>https://mutapatimes.com/property-landing/6077c6b8bd94.html</link>
       <description>USD 220,000 — Eastlea, Harare East. 3 beds, 2 baths. Residential house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/98892ffeab55.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 280,000 — Douglasdale multi-structure Investment Opportunity (Douglasdale, Bulawayo East)</title>
+      <link>https://mutapatimes.com/property-landing/3868831e61c4.html</link>
+      <description>USD 280,000 — Douglasdale, Bulawayo East. 3 beds, 2 baths. Douglasdale multi-structure Investment Opportunity. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 16 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/3868831e61c4.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/3868831e61c4.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3868831e61c4.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/3868831e61c4.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
