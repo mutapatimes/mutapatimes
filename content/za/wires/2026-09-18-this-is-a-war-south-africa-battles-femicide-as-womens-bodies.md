@@ -1,0 +1,16 @@
+---
+title: "‘This is a war’: South Africa battles femicide as women’s bodies pile up"
+date: 2026-09-18T09:52:16.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "‘This is a war’: South Africa battles femicide as women’s bodies pile up"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYTQxWE1xUDNnVHZZLTUwUU5seEV2YUhEM1dqbVp2TlJPR2g2QlhFYTNJOVdRZVpxUmVscFRHUG5YSEJYQWlyRHJvWDFqOTNjMElLTTVKRGwxUmZkTkZ6aGtucmVnbzRoeG5hNTJiSngzeHItRlkyLTY5MmEtTlZWaVp5QmRJZG5BcGkyU1FuOThVX29xVHFCVWdiZl9aMTIzS1hiU0FHUERvaDZFMkHSAbMBQVVfeXFMUDhHNC1XOEJBb2kzUU1Fa3pza0pHbGJjMEtEcmhmby1RTVdZZVNWamlXc2l5U2xNV2dmZG50U2xLWklJQzBRd0l5XzNRXzJpODE5WWJFQ1ZHN3BwYW43ZkVLXzdkMzQ4VFp4TlJhWkJheVVsb2lkLVNrRUI5QUpfU2NYZUJKaDltNTFSejVzNUJGNTZoeHA1Rk5UV1o5N05oMWJvNXgwdl9TNkxJUVFYZ3RicTA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMirgFBVV95cUxOYTQxWE1xUDNnVHZZLTUwUU5seEV2YUhEM1dqbVp2TlJPR2g2QlhFYTNJOVdRZVpxUmVscFRHUG5YSEJYQWlyRHJvWDFqOTNjMElLTTVKRGwxUmZkTkZ6aGtucmVnbzRoeG5hNTJiSngzeHItRlkyLTY5MmEtTlZWaVp5QmRJZG5BcGkyU1FuOThVX29xVHFCVWdiZl9aMTIzS1hiU0FHUERvaDZFMkHSAbMBQVVfeXFMUDhHNC1XOEJBb2kzUU1Fa3pza0pHbGJjMEtEcmhmby1RTVdZZVNWamlXc2l5U2xNV2dmZG50U2xLWklJQzBRd0l5XzNRXzJpODE5WWJFQ1ZHN3BwYW43ZkVLXzdkMzQ4VFp4TlJhWkJheVVsb2lkLVNrRUI5QUpfU2NYZUJKaDltNTFSejVzNUJGNTZoeHA1Rk5UV1o5N05oMWJvNXgwdl9TNkxJUVFYZ3RicTA?oc=5)

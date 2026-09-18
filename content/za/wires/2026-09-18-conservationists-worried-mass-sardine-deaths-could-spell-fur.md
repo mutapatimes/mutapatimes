@@ -1,0 +1,16 @@
+---
+title: "Conservationists worried mass sardine deaths could spell further trouble for critically endangered African penguins"
+date: 2026-09-18T14:13:13.000Z
+author: EWN
+category: Environment
+image: 
+summary: "Conservationists worried mass sardine deaths could spell further trouble for critically endangered African penguins"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSi10TTk5ODJiUmtGcjVtM1Bva21fNEdka1pjM2VJbkh0NC14XzByNFh4STVDM19sRVkwTUhLeFRLUW1oRTJTdy1zQ2t2REItMFI5WU1BQlRGQy1OR3NpV2szSHYzcGNoZkRJMVY2UTNoWGFyTEIxUzJCM1ZGMUg2b0M4ZmJHdUpNQV9WV3dqMU84dFBpdkFxQVowc0hPQ1FOYW9hYnkwblM4TnJOV1hIdGphVERadXM1aGhMWDQwaExUS3BDWlJXblFwUHFpd3VGdWFVYmNrRHhwcHJBcmdFZmRn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by EWN.*
+[Read original article](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSi10TTk5ODJiUmtGcjVtM1Bva21fNEdka1pjM2VJbkh0NC14XzByNFh4STVDM19sRVkwTUhLeFRLUW1oRTJTdy1zQ2t2REItMFI5WU1BQlRGQy1OR3NpV2szSHYzcGNoZkRJMVY2UTNoWGFyTEIxUzJCM1ZGMUg2b0M4ZmJHdUpNQV9WV3dqMU84dFBpdkFxQVowc0hPQ1FOYW9hYnkwblM4TnJOV1hIdGphVERadXM1aGhMWDQwaExUS3BDWlJXblFwUHFpd3VGdWFVYmNrRHhwcHJBcmdFZmRn?oc=5)
