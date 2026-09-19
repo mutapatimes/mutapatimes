@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Sep 2026 20:49:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 22:38:04 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 19 Sep: Harare partly cloudy · high 25° / low 14°</title>
-      <link>https://mutapatimes.com/weather?d=2026-09-19</link>
+      <title>Zim weather 20 Sep: Harare partly cloudy · high 25° / low 14°</title>
+      <link>https://mutapatimes.com/weather?d=2026-09-20</link>
       <description>Harare: high 25°, low 14° (partly cloudy) · Bulawayo: high 27°, low 14° (clear sky) · Mutare: high 24°, low 14° (overcast) · Gweru: high 26°, low 14° (clear sky) · Masvingo: high 26°, low 14° (overcast) · Victoria Falls: high 33°, low 22° (mainly clear) Tsumo yezuva: Chikuriri chine chimwe. (What is great now will be smaller than another.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Fri, 18 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-09-19</guid>
+      <pubDate>Sat, 19 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-09-20</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-19" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-19"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-19" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-20" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-20"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-20" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
