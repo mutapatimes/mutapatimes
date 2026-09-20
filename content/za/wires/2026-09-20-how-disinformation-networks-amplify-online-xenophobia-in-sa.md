@@ -1,0 +1,16 @@
+---
+title: "How disinformation networks amplify online xenophobia in SA"
+date: 2026-09-20T22:08:47.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "How disinformation networks amplify online xenophobia in SA"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinwJBVV95cUxNaEdWWEt1UHFkbHdPc3lFMl9XaExSOHdpVmVDdmJMekN5Z3VHaFNNUFU2MG1MQWpLVmE2ajVnaHJmdE12TFdVRXdidTJLajNCM3JUaEVxVmx1RGdMazFMMVk4OWNxZUgzaURneTRxZm1SN3ZsYkY2V01qdmhTUFBTSzlkNzFmUDlHUFhBT2wtaGVwb2V2eFNxY1F5dEVLOEQ3Q185U3ExYXI4dUJVMU9DU0JVcVdnRHpFMUl5R1NlTUZsTm41RmJnSHRwQUVybVNBOUhjTnB6UHhqR0preWxYZk9oTzZkTG8yVUU4QTZoUU81dlNxNTF1dnFfMzU3MDc5Zmc1QlQ2dTNRa0pwX3k2Wmk2d3lFQ181ODdrdEh5bw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinwJBVV95cUxNaEdWWEt1UHFkbHdPc3lFMl9XaExSOHdpVmVDdmJMekN5Z3VHaFNNUFU2MG1MQWpLVmE2ajVnaHJmdE12TFdVRXdidTJLajNCM3JUaEVxVmx1RGdMazFMMVk4OWNxZUgzaURneTRxZm1SN3ZsYkY2V01qdmhTUFBTSzlkNzFmUDlHUFhBT2wtaGVwb2V2eFNxY1F5dEVLOEQ3Q185U3ExYXI4dUJVMU9DU0JVcVdnRHpFMUl5R1NlTUZsTm41RmJnSHRwQUVybVNBOUhjTnB6UHhqR0preWxYZk9oTzZkTG8yVUU4QTZoUU81dlNxNTF1dnFfMzU3MDc5Zmc1QlQ2dTNRa0pwX3k2Wmk2d3lFQ181ODdrdEh5bw?oc=5)
