@@ -1,0 +1,16 @@
+---
+title: "Creecy orders Sanral probe into contractor linked to man who threatened women at Sandton restaurant"
+date: 2026-09-20T08:09:13.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "Creecy orders Sanral probe into contractor linked to man who threatened women at Sandton restaurant"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUXZadTJVYmNDUGVjZmIwN3Q3NUx5MU9JUzVfSjM1cmc1c0pBeHNVbDAxa1hvR2RZbDBaMU4xSHNBczRVTXpQXzQzd3BzU09sdE5LSTJHVHNVbEpnTnM1bzlGUnNfWGtRUUtpN01PSzVVWVE2em80T21OMDJRT29qU0trSDRoTWctV2laeE9TdlRGaGZmVWQyZHExSHBBNjdvNTFydkVHZ2d6ajd4aGljREM4SjhPTlNKWG5rVEdJbHdINjRFdzIxb05ZVTV4QmpwX2UwbU9aMms3WUhQR1R4SmVEQmtSSU52WFZBLWt3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUXZadTJVYmNDUGVjZmIwN3Q3NUx5MU9JUzVfSjM1cmc1c0pBeHNVbDAxa1hvR2RZbDBaMU4xSHNBczRVTXpQXzQzd3BzU09sdE5LSTJHVHNVbEpnTnM1bzlGUnNfWGtRUUtpN01PSzVVWVE2em80T21OMDJRT29qU0trSDRoTWctV2laeE9TdlRGaGZmVWQyZHExSHBBNjdvNTFydkVHZ2d6ajd4aGljREM4SjhPTlNKWG5rVEdJbHdINjRFdzIxb05ZVTV4QmpwX2UwbU9aMms3WUhQR1R4SmVEQmtSSU52WFZBLWt3?oc=5)
