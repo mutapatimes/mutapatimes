@@ -1,8 +1,17 @@
 {
-  "fetched_at": "2026-09-20T04:52:43.418476+00:00",
+  "fetched_at": "2026-09-20T11:21:27.093331+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
+    {
+      "title": "Hatfield house for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-dsi245759",
+      "price": "USD 70,000",
+      "location": "Hatfield, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/44/91/0f/44910f0e-6205-4057-b934-c4548b41c6d4_thumbnail591.webp",
+      "beds": "5",
+      "baths": "2"
+    },
     {
       "title": "EMERALD HILL | SUBSTANTIAL 5-BEDROOM RESIDENCE ON 2000m²",
       "url": "https://www.property.co.zw/for-sale/houses-gat255398",
@@ -11,15 +20,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/e8/7d/75/e87d75a5-3ac7-454a-a632-12d7ce4ec6d8_thumbnail591.webp",
       "beds": "5",
       "baths": "5"
-    },
-    {
-      "title": "Arlington 4-Bed Single-Storey Townhouse w/ Borehole",
-      "url": "https://www.property.co.zw/for-sale/townhouses-sef253479",
-      "price": "USD 160,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/36/6f/55/366f5503-bf9c-4f90-bf2c-ec4189b9e16e_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
     },
     {
       "title": "Location! Location! Location!",
@@ -166,6 +166,15 @@
       "baths": "1"
     },
     {
+      "title": "House for sale",
+      "url": "https://www.property.co.zw/for-sale/townhouses-pgp255524",
+      "price": "USD 380,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/74/04/c7/7404c767-588a-4bfe-ac9d-fd7f88527479_thumbnail591.webp",
+      "beds": "8",
+      "baths": "7"
+    },
+    {
       "title": "Pomona, Nyeredzi Ridge",
       "url": "https://www.property.co.zw/for-sale/townhouses-rws253744",
       "price": "USD 275,000",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/3b/f9/5e/3bf95ec7-5fd1-4943-9b13-151bd0bef9d5_thumbnail591.webp",
       "beds": "5",
       "baths": "2"
-    },
-    {
-      "title": "5 Bedroom House for Sale in Borrowdale",
-      "url": "https://www.property.co.zw/for-sale/houses-psp248419",
-      "price": "USD 890,000",
-      "location": "Pomona, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/f2/11/0a/f2110aec-6ce3-4eaf-8c41-fa67d91f4a32_thumbnail591.webp",
-      "beds": "5",
-      "baths": "5"
     }
   ]
 }
