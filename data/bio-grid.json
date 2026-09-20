@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-09-20T03:00:28+00:00",
+  "fetched_at": "2026-09-20T08:28:22+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe wins toss, elects to bat against Australia in third ODI",
+      "link": "https://mutapatimes.com/articles/2026-09-20-zimbabwe-wins-toss-elects-to-bat-against-australia-in-third",
+      "image": "https://mutapatimes.com/img/cards/news/4f288206508a.png",
+      "pubDate": "2026-09-20T07:34:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim goods imports (4Q trailing to 2025 Q4): $9.7B, +23.9% vs prior period.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 20 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $130.54 via Wise",
+      "title": "Zim FX snapshot 20 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $130.57 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-20",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-20",
       "pubDate": "2026-09-19T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Peri-Urban Farm Manager",
       "link": "https://vacancymail.co.zw/jobs/peri-urban-farm-manager-69352/",
       "image": "https://mutapatimes.com/img/cards/jobs/808c2a8da376.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Customer Service Representative",
-      "link": "https://vacancymail.co.zw/jobs/customer-service-representative-69351/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e85fb0436497.png",
       "pubDate": "2026-09-19T22:00:00+00:00",
       "category": "Jobs"
     }
