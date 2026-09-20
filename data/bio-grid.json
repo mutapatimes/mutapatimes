@@ -1,14 +1,54 @@
 {
-  "fetched_at": "2026-09-20T08:28:22+00:00",
+  "fetched_at": "2026-09-20T13:25:36+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe wins toss, elects to bat against Australia in third ODI",
-      "link": "https://mutapatimes.com/articles/2026-09-20-zimbabwe-wins-toss-elects-to-bat-against-australia-in-third",
-      "image": "https://mutapatimes.com/img/cards/news/4f288206508a.png",
-      "pubDate": "2026-09-20T07:34:00+00:00",
+      "title": "Journalist dies after being struck by Harare waste collection truck",
+      "link": "https://mutapatimes.com/articles/2026-09-19-journalist-dies-after-being-struck-by-harare-waste-collectio",
+      "image": "https://mutapatimes.com/img/cards/news/db4066f3d34c.png",
+      "pubDate": "2026-09-19T23:24:41+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Journalist dies after being struck by Harare waste collection truck",
+      "link": "https://mutapatimes.com/news/2026-09-19-journalist-dies-after-being-struck-by-harare-waste-collection-truck-864d0c",
+      "image": "https://mutapatimes.com/img/cards/news/fda6de06f922.png",
+      "pubDate": "2026-09-19T23:24:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimsec enhances security features to prevent cheating",
+      "link": "https://mutapatimes.com/articles/2026-09-19-zimsec-enhances-security-features-to-prevent-cheating",
+      "image": "https://mutapatimes.com/img/cards/news/be86fa6d47ce.png",
+      "pubDate": "2026-09-19T22:40:46+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Two homes, one husband... The changing face of polygamy",
+      "link": "https://mutapatimes.com/articles/2026-09-19-two-homes-one-husband-the-changing-face-of-polygamy",
+      "image": "https://mutapatimes.com/img/cards/news/f6e8ec7b8830.png",
+      "pubDate": "2026-09-19T22:30:54+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘President has restored our national pride and self-belief’",
+      "link": "https://mutapatimes.com/news/2026-09-19-president-has-restored-our-national-pride-and-self-belief-26d7ff",
+      "image": "https://mutapatimes.com/img/cards/news/0b403e1c0320.png",
+      "pubDate": "2026-09-19T22:19:28+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Traceable question papers, personalised answer sheets for this year’s exams",
+      "link": "https://mutapatimes.com/news/2026-09-19-traceable-question-papers-personalised-answer-sheets-for-this-year-s-exams-76e06a",
+      "image": "https://mutapatimes.com/img/cards/news/6a72afc21c59.png",
+      "pubDate": "2026-09-19T22:18:59+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -28,7 +68,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 20 Sep: Harare partly cloudy · high 25° / low 14°",
+      "title": "Zim weather 20 Sep: Harare overcast · high 26° / low 13°",
       "link": "https://mutapatimes.com/weather?d=2026-09-20",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-20",
       "pubDate": "2026-09-19T22:00:00+00:00",
@@ -65,6 +105,62 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-19T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "City of Harare — Trainee Parking Supervisor/ Patrolman/woman (38 Positions)",
+      "link": "https://vacancymail.co.zw/jobs/trainee-parking-supervisor-patrolmanwoman-38-positions-69432/",
+      "image": "https://mutapatimes.com/img/cards/jobs/997913679b98.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "City of Harare — Registered General Nurses (150 Positions)",
+      "link": "https://vacancymail.co.zw/jobs/registered-general-nurses-150-positions-69431/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fdd496226148.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe Mining Development Corporation — Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/surveyor-69430/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a51d3f35a510.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Petrozim Line (Pvt) Ltd — Mechanical Fitter",
+      "link": "https://vacancymail.co.zw/jobs/mechanical-fitter-69429/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2006ddd72ced.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Petrozim Line (Pvt) Ltd — Station Superintendent",
+      "link": "https://vacancymail.co.zw/jobs/station-superintendent-69428/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d069dffa03d9.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Action for Youth Foundation Trust — Program Coordinator (Volunteer)",
+      "link": "https://vacancymail.co.zw/jobs/program-coordinator-volunteer-69427/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6f202df9a351.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "MEGA MARKET (PVT) LTD — Service Advisor",
+      "link": "https://vacancymail.co.zw/jobs/service-advisor-69426/",
+      "image": "https://mutapatimes.com/img/cards/jobs/984150532851.png",
+      "pubDate": "2026-09-19T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -383,102 +479,6 @@
       "title": "Project Manager",
       "link": "https://vacancymail.co.zw/jobs/project-manager-69364/",
       "image": "https://mutapatimes.com/img/cards/jobs/c1dfcff06f06.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Content Creator & Social Media Specialist",
-      "link": "https://vacancymail.co.zw/jobs/content-creator-social-media-specialist-69363/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4ad5e12ba0d7.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ST-ONE Machinery — Sales Manager – Electric Vehicles & Maxus Range",
-      "link": "https://vacancymail.co.zw/jobs/sales-manager-electric-vehicles-maxus-range-69362/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3424e953b40b.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ICT Operations and Business Development Manager",
-      "link": "https://vacancymail.co.zw/jobs/ict-operations-and-business-development-manager-69361/",
-      "image": "https://mutapatimes.com/img/cards/jobs/231e4ec31ecc.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Auction Operations Manager",
-      "link": "https://vacancymail.co.zw/jobs/auction-operations-manager-69360/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ffc9f78397f4.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — DIGITAL MARKETING & CUSTOMER EXPERIENCE OFFICER",
-      "link": "https://vacancymail.co.zw/jobs/digital-marketing-customer-experience-officer-69359/",
-      "image": "https://mutapatimes.com/img/cards/jobs/585ff770ddc7.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Cashier",
-      "link": "https://vacancymail.co.zw/jobs/cashier-69358/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4eaf91e8377b.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Senior Stock Controller",
-      "link": "https://vacancymail.co.zw/jobs/senior-stock-controller-69357/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8c826c45870e.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Marketing, Graphic Designing, Social Media Handler",
-      "link": "https://vacancymail.co.zw/jobs/marketing-graphic-designing-social-media-handler-69356/",
-      "image": "https://mutapatimes.com/img/cards/jobs/884a7b9dc82f.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Marketing Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/marketing-graduate-trainee-69355/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4547e6ff5112.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CBZ Holdings — Head Bancassurance",
-      "link": "https://vacancymail.co.zw/jobs/head-bancassurance-69354/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d7aa24179aec.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Agents : Supreme Brands",
-      "link": "https://vacancymail.co.zw/jobs/sales-agents-supreme-brands-69353/",
-      "image": "https://mutapatimes.com/img/cards/jobs/68406f17702c.png",
-      "pubDate": "2026-09-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Peri-Urban Farm Manager",
-      "link": "https://vacancymail.co.zw/jobs/peri-urban-farm-manager-69352/",
-      "image": "https://mutapatimes.com/img/cards/jobs/808c2a8da376.png",
       "pubDate": "2026-09-19T22:00:00+00:00",
       "category": "Jobs"
     }
