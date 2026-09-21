@@ -1,0 +1,16 @@
+---
+title: "Managing Migration Together: Making South Africa’s Five-Point Plan Work Through Regional and International Cooperation"
+date: 2026-09-21T11:56:48.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Managing Migration Together: Making South Africa’s Five-Point Plan Work Through Regional and International Cooperation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdjNseUplM1lFV1dILXVyVGVPVGZCTjRIbXNZSjQza0pYNzhxVGJEODgyM1o1ZnVudG9DYzBEeWFrTDctZk1ZU1h1SjR2SkhnSnNrYng2bWxuUjJIWmdDWEhYMS05eEctVWo4ZU9tNVdtT19DY1R1MWRqNk9acXRYTlhxaFB6cWxrVEtNZk5ieXpLSl9SeDJ0bWtJandwbFpqVnVoSHdYa3JVdmFETGF2eGNYamZpOTd2X29OMHVZVHlyTU5oNDI3M1gxSEVlQlFuenNWZVMzR1JpNWtLOTlXWUZabHNnTUxFbWdyd2hWYTdFSTQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdjNseUplM1lFV1dILXVyVGVPVGZCTjRIbXNZSjQza0pYNzhxVGJEODgyM1o1ZnVudG9DYzBEeWFrTDctZk1ZU1h1SjR2SkhnSnNrYng2bWxuUjJIWmdDWEhYMS05eEctVWo4ZU9tNVdtT19DY1R1MWRqNk9acXRYTlhxaFB6cWxrVEtNZk5ieXpLSl9SeDJ0bWtJandwbFpqVnVoSHdYa3JVdmFETGF2eGNYamZpOTd2X29OMHVZVHlyTU5oNDI3M1gxSEVlQlFuenNWZVMzR1JpNWtLOTlXWUZabHNnTUxFbWdyd2hWYTdFSTQ?oc=5)
