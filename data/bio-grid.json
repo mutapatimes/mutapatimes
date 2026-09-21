@@ -1,14 +1,62 @@
 {
-  "fetched_at": "2026-09-21T08:37:47+00:00",
+  "fetched_at": "2026-09-21T15:36:08+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Australia will take lessons from Zimbabwe win into World Cup, says Inglis",
-      "link": "https://mutapatimes.com/articles/2026-09-21-australia-will-take-lessons-from-zimbabwe-win-into-world-cup",
-      "image": "https://mutapatimes.com/img/cards/news/cceeb1413d42.png",
-      "pubDate": "2026-09-21T05:59:00+00:00",
+      "title": "Chinese experts honored for contributions to Zimbabwe’s agriculture",
+      "link": "https://mutapatimes.com/news/2026-09-21-chinese-experts-honored-for-contributions-to-zimbabwe-s-agriculture-bba565",
+      "image": "https://mutapatimes.com/img/cards/news/6b36a977975b.png",
+      "pubDate": "2026-09-21T00:05:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimura pays US$200k in royalties",
+      "link": "https://mutapatimes.com/articles/2026-09-21-zimura-pays-us200k-in-royalties",
+      "image": "https://mutapatimes.com/img/cards/news/2b3d22027462.png",
+      "pubDate": "2026-09-21T00:00:00+00:00",
       "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "South Africa dash Gems’ hopes of third successive Netball World Cup berth",
+      "link": "https://mutapatimes.com/articles/2026-09-21-south-africa-dash-gems-hopes-of-third-successive-netball-wor",
+      "image": "https://mutapatimes.com/img/cards/news/338646557757.png",
+      "pubDate": "2026-09-21T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Woman (27) robbed, gang-raped after falling for fake WhatsApp job offer in Harare",
+      "link": "https://mutapatimes.com/news/2026-09-21-woman-27-robbed-gang-raped-after-falling-for-fake-whatsapp-job-offer-in-harare-9050b0",
+      "image": "https://mutapatimes.com/img/cards/news/2e9e54c7415d.png",
+      "pubDate": "2026-09-21T00:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "South Africa dash Gems’ hopes of third successive Netball World Cup berth",
+      "link": "https://mutapatimes.com/news/2026-09-21-south-africa-dash-gems-hopes-of-third-successive-netball-world-cup-berth-3905a2",
+      "image": "https://mutapatimes.com/img/cards/news/344e88940aa4.png",
+      "pubDate": "2026-09-21T00:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "UAE chamber forges bold Zimbabwe trade alliance",
+      "link": "https://mutapatimes.com/articles/2026-09-20-uae-chamber-forges-bold-zimbabwe-trade-alliance",
+      "image": "https://mutapatimes.com/img/cards/news/8650e5b9171e.png",
+      "pubDate": "2026-09-20T23:56:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Young Warriors troop into camp for Olympic qualifier",
+      "link": "https://mutapatimes.com/articles/2026-09-20-young-warriors-troop-into-camp-for-olympic-qualifier",
+      "image": "https://mutapatimes.com/img/cards/news/becde1350c0f.png",
+      "pubDate": "2026-09-20T22:30:24+00:00",
+      "category": "Sport"
     },
     {
       "kind": "economy",
@@ -28,7 +76,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 21 Sep: Harare overcast · high 26° / low 13°",
+      "title": "Zim weather 21 Sep: Harare overcast · high 27° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-09-21",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-09-21",
       "pubDate": "2026-09-20T22:00:00+00:00",
@@ -65,6 +113,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-20T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "I Love Black People — Project Manager",
+      "link": "https://vacancymail.co.zw/jobs/project-manager-69477/",
+      "image": "https://mutapatimes.com/img/cards/jobs/dfe4e98c52e2.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Marketing Person - ICT Sector",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-ict-sector-69476/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fc88ee4af6c4.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Plan International Zimbabwe — SDDC Project Coordinator",
+      "link": "https://vacancymail.co.zw/jobs/sddc-project-coordinator-69475/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0ab30a0ee8d8.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Turner and Townsend — Senior Quantity Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/senior-quantity-surveyor-69474/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9b9d15d745c6.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SECURICO Security Services — Logistics Attachee",
+      "link": "https://vacancymail.co.zw/jobs/logistics-attachee-69473/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f5c57e69e40e.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Marketing and Communications Manager",
+      "link": "https://vacancymail.co.zw/jobs/marketing-and-communications-manager-69472/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d0880aa11cd2.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mission Support Supervisor- Bulawayo",
+      "link": "https://vacancymail.co.zw/jobs/mission-support-supervisor-bulawayo-69471/",
+      "image": "https://mutapatimes.com/img/cards/jobs/27042c77212f.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounts Clerk",
+      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-69470/",
+      "image": "https://mutapatimes.com/img/cards/jobs/cee1b42191cc.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Physics and Chemistry Teacher",
+      "link": "https://vacancymail.co.zw/jobs/physics-and-chemistry-teacher-69469/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3144868535b7.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Computer Science and Combined Science Teacher",
+      "link": "https://vacancymail.co.zw/jobs/computer-science-and-combined-science-teacher-69468/",
+      "image": "https://mutapatimes.com/img/cards/jobs/eed5a5b124c0.png",
+      "pubDate": "2026-09-20T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -351,134 +479,6 @@
       "title": "Plant Supervisor – Production Line",
       "link": "https://vacancymail.co.zw/jobs/plant-supervisor-production-line-69406/",
       "image": "https://mutapatimes.com/img/cards/jobs/5b32f00fe022.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Market Acquisition Officer",
-      "link": "https://vacancymail.co.zw/jobs/market-acquisition-officer-69405/",
-      "image": "https://mutapatimes.com/img/cards/jobs/24bae2dba966.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Company Chef",
-      "link": "https://vacancymail.co.zw/jobs/company-chef-69404/",
-      "image": "https://mutapatimes.com/img/cards/jobs/72ca33028a6c.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fleet Clerk",
-      "link": "https://vacancymail.co.zw/jobs/fleet-clerk-69403/",
-      "image": "https://mutapatimes.com/img/cards/jobs/16e952736ed8.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cropping & Horticulture Manager",
-      "link": "https://vacancymail.co.zw/jobs/cropping-horticulture-manager-69402/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c52fc2574389.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Manager - Farm Operations",
-      "link": "https://vacancymail.co.zw/jobs/general-manager-farm-operations-69401/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6732b9005792.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hatchery Manager",
-      "link": "https://vacancymail.co.zw/jobs/hatchery-manager-69400/",
-      "image": "https://mutapatimes.com/img/cards/jobs/23262e46d508.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Loans Officer",
-      "link": "https://vacancymail.co.zw/jobs/assistant-loans-officer-69399/",
-      "image": "https://mutapatimes.com/img/cards/jobs/73eecec041e3.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Operations Manager",
-      "link": "https://vacancymail.co.zw/jobs/operations-manager-69398/",
-      "image": "https://mutapatimes.com/img/cards/jobs/59141ad46e3c.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee x 2 Horticulture (2 Year Traineeship)",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-x-2-horticulture-2-year-traineeship-69397/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2934e6f539fb.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Farm Manager",
-      "link": "https://vacancymail.co.zw/jobs/farm-manager-69396/",
-      "image": "https://mutapatimes.com/img/cards/jobs/22167fee357d.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "OPHID — Software Developer (Neotree Project)",
-      "link": "https://vacancymail.co.zw/jobs/software-developer-neotree-project-69395/",
-      "image": "https://mutapatimes.com/img/cards/jobs/04f193620136.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "RIDBRAVO INVESTMENTS — FREIGHT CONTROLLER JOHANNESBURG BASED",
-      "link": "https://vacancymail.co.zw/jobs/freight-controller-johannesburg-based-69394/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5574f441aa3a.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chef",
-      "link": "https://vacancymail.co.zw/jobs/chef-69393/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6960754da667.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Depot Accountant",
-      "link": "https://vacancymail.co.zw/jobs/depot-accountant-69392/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d317cdda44be.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Key Account Manager",
-      "link": "https://vacancymail.co.zw/jobs/key-account-manager-69391/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a46af6b7df36.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "DHL — Warehouse Agent",
-      "link": "https://vacancymail.co.zw/jobs/warehouse-agent-69390/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0f3db29eb4a9.png",
       "pubDate": "2026-09-20T22:00:00+00:00",
       "category": "Jobs"
     }
