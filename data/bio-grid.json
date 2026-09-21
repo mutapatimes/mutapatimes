@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-09-21T02:57:58+00:00",
+  "fetched_at": "2026-09-21T08:37:47+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Australia will take lessons from Zimbabwe win into World Cup, says Inglis",
+      "link": "https://mutapatimes.com/articles/2026-09-21-australia-will-take-lessons-from-zimbabwe-win-into-world-cup",
+      "image": "https://mutapatimes.com/img/cards/news/cceeb1413d42.png",
+      "pubDate": "2026-09-21T05:59:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: wholesale & retail trade produced $2.1B, 11.1% of GDP.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 21 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $130.57 via Wise",
+      "title": "Zim FX snapshot 21 Sep 2026: 1 USD = 26.65 ZWG · best from UK £100 → $130.66 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-09-21",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-09-21",
       "pubDate": "2026-09-20T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "DHL — Warehouse Agent",
       "link": "https://vacancymail.co.zw/jobs/warehouse-agent-69390/",
       "image": "https://mutapatimes.com/img/cards/jobs/0f3db29eb4a9.png",
-      "pubDate": "2026-09-20T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Nutrition Action Zimbabwe — ENUMERATORS [ Pool recruitment] | Muzarabani",
-      "link": "https://vacancymail.co.zw/jobs/enumerators-pool-recruitment-muzarabani-69389/",
-      "image": "https://mutapatimes.com/img/cards/jobs/964f2d831911.png",
       "pubDate": "2026-09-20T22:00:00+00:00",
       "category": "Jobs"
     }
