@@ -1,0 +1,16 @@
+---
+title: "LUCKY MATHEBULA | South Africa must return to the basics of public administration"
+date: 2026-09-21T02:30:29.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "LUCKY MATHEBULA | South Africa must return to the basics of public administration"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPUHRPR3hlR2VUQkZMZG55TE95WjJnUXhpbWMyOUI0SlE0R21veEgwYVdqT21JaEFBTmxudlVRRXhSaE0wMWtPaTEtYnU0Z0phTFFaTmJHUWlPQ1BtaXhRd0RLYU5IaWhma3VRTkRHYUNlSnJBOUVjS1VlMk1ZWnRiQ2NvekhqZlJsZHFSUUgxWUtNS2dKckN2UzdLSjFielJpazFuRmNWaXQtWTVHUnJaTWdFU0N2THJxblVtM0hwMFgtWEQzbnNjR0Y3OFkweHI2YUw1TE1Bb1BTdjRKajhqaUQ2NXdVbHMzZkFSb1J3aW9iZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxPUHRPR3hlR2VUQkZMZG55TE95WjJnUXhpbWMyOUI0SlE0R21veEgwYVdqT21JaEFBTmxudlVRRXhSaE0wMWtPaTEtYnU0Z0phTFFaTmJHUWlPQ1BtaXhRd0RLYU5IaWhma3VRTkRHYUNlSnJBOUVjS1VlMk1ZWnRiQ2NvekhqZlJsZHFSUUgxWUtNS2dKckN2UzdLSjFielJpazFuRmNWaXQtWTVHUnJaTWdFU0N2THJxblVtM0hwMFgtWEQzbnNjR0Y3OFkweHI2YUw1TE1Bb1BTdjRKajhqaUQ2NXdVbHMzZkFSb1J3aW9iZw?oc=5)
