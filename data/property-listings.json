@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-22T11:36:15.054823+00:00",
+  "fetched_at": "2026-09-22T16:56:54.427296+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -65,15 +65,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/f8/ad/43/f8ad43ce-2661-4503-8a83-c0f0ef3f8060_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
-    },
-    {
-      "title": "Luxury Living in Murambi East: 7-Bedroom Mansion",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp251865",
-      "price": "USD 550,000",
-      "location": "Murambi, Mutare",
-      "image": "https://www.property.co.zw/uploadedfiles/28/9f/cc/289fcccf-71e2-4b36-b21c-4038b3649e1c_thumbnail591.webp",
-      "beds": "7",
-      "baths": "9"
     },
     {
       "title": "Superb opportunity in Avondale",
@@ -193,13 +184,22 @@
       "baths": "2"
     },
     {
-      "title": "Upmarket Real Estate",
-      "url": "https://www.property.co.zw/for-sale/houses-fpc252531",
-      "price": "USD 630,000",
-      "location": "Hogerty Hill, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/a8/3b/b8/a83bb841-792a-4a03-8945-7c2f4e6edf26_thumbnail591.webp",
-      "beds": "5",
-      "baths": "4"
+      "title": "Arlington 4-Bed Townhouse Complex ,Borehole, Solar & 24hr Security",
+      "url": "https://www.property.co.zw/for-sale/townhouses-cami249353",
+      "price": "USD 160,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/4b/73/22/4b73224b-06eb-4115-b4db-6baa58368a88_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
+    {
+      "title": "Modern 3-bedroom townhouses in Hillside!",
+      "url": "https://www.property.co.zw/for-sale/townhouses-red245474",
+      "price": "USD 220,000",
+      "location": "Hillside, Bulawayo South",
+      "image": "https://www.property.co.zw/uploadedfiles/d6/86/08/d6860841-9279-44dc-9d2e-5070a983c78e_thumbnail591.webp",
+      "beds": "3",
+      "baths": "3"
     }
   ]
 }

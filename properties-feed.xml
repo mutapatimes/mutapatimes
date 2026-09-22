@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 13:51:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 16:57:02 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -101,18 +101,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/43b100f8d646.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/43b100f8d646.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/43b100f8d646.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 550,000 — Luxury Living in Murambi East: 7-Bedroom Mansion (Murambi, Mutare)</title>
-      <link>https://mutapatimes.com/property-landing/b7f8010b6e4b.html</link>
-      <description>USD 550,000 — Murambi, Mutare. 7 beds, 9 baths. Luxury Living in Murambi East: 7-Bedroom Mansion. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b7f8010b6e4b.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/b7f8010b6e4b.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b7f8010b6e4b.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/b7f8010b6e4b.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 250,000 — Superb opportunity in Avondale (Avondale West, Harare West)</title>
@@ -271,16 +259,28 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/5a1187e05649.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 630,000 — Upmarket Real Estate (Hogerty Hill, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/a7b44b5883d2.html</link>
-      <description>USD 630,000 — Hogerty Hill, Harare North. 5 beds, 4 baths. Upmarket Real Estate. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <title>USD 160,000 — Arlington 4-Bed Townhouse Complex ,Borehole, Solar &amp; 24hr Security (Arlington, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/9075688719ca.html</link>
+      <description>USD 160,000 — Arlington, Harare South. 4 beds, 3 baths. Arlington 4-Bed Townhouse Complex,Borehole, Solar &amp; 24hr Security. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/a7b44b5883d2.html</guid>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/9075688719ca.html</guid>
       <category>Property</category>
       <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/a7b44b5883d2.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a7b44b5883d2.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/a7b44b5883d2.png" type="image/png" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/properties/9075688719ca.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9075688719ca.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/9075688719ca.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 220,000 — Modern 3-bedroom townhouses in Hillside! (Hillside, Bulawayo South)</title>
+      <link>https://mutapatimes.com/property-landing/d799d11e2175.html</link>
+      <description>USD 220,000 — Hillside, Bulawayo South. 3 beds, 3 baths. Modern 3-bedroom townhouses in Hillside!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/d799d11e2175.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/d799d11e2175.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/d799d11e2175.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/d799d11e2175.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
