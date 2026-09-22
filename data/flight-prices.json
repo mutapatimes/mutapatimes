@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-21",
+  "fetched_at": "2026-09-22",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -94,7 +94,7 @@
           "currency": ""
         },
         {
-          "price": 534,
+          "price": 535,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -203,7 +203,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 2914,
+        "price": 2913,
         "airline": "FA",
         "departure_at": "2026-10-17",
         "return_at": "",
@@ -223,7 +223,7 @@
           "currency": ""
         },
         {
-          "price": 2914,
+          "price": 2913,
           "airline": "FA",
           "departure_at": "2026-10-17",
           "return_at": "",
@@ -243,7 +243,7 @@
       ],
       "by_airline": [
         {
-          "price": 2914,
+          "price": 2913,
           "airline": "FA",
           "departure_at": "2026-10-17",
           "return_at": "",
@@ -261,7 +261,7 @@
           "currency": ""
         },
         {
-          "price": 7363,
+          "price": 7370,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -270,7 +270,7 @@
           "currency": ""
         },
         {
-          "price": 8146,
+          "price": 8154,
           "airline": "Kupi.com",
           "departure_at": "",
           "return_at": "",
@@ -279,7 +279,7 @@
           "currency": ""
         },
         {
-          "price": 8254,
+          "price": 8262,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -341,7 +341,7 @@
       },
       "monthly": [
         {
-          "price": 1409,
+          "price": 1408,
           "airline": "FA",
           "departure_at": "2026-09-24",
           "return_at": "",
@@ -404,7 +404,7 @@
           "currency": ""
         },
         {
-          "price": 4064,
+          "price": 4063,
           "airline": "FN",
           "departure_at": "2027-07-21",
           "return_at": "2027-08-31",
@@ -433,7 +433,7 @@
           "currency": ""
         },
         {
-          "price": 3030,
+          "price": 3033,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -451,8 +451,8 @@
           "currency": ""
         },
         {
-          "price": 3792,
-          "airline": "Mytrip.com",
+          "price": 3144,
+          "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
@@ -464,7 +464,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 13,
+          "n": 15,
           "error": null
         },
         {
@@ -482,11 +482,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 12,
+          "n": 13,
           "error": null
         }
       ],
-      "observations": 32
+      "observations": 35
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -609,7 +609,7 @@
           "currency": ""
         },
         {
-          "price": 1938,
+          "price": 1942,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -618,7 +618,7 @@
           "currency": ""
         },
         {
-          "price": 2037,
+          "price": 2041,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -627,7 +627,7 @@
           "currency": ""
         },
         {
-          "price": 2041,
+          "price": 2045,
           "airline": "Turna.com",
           "departure_at": "",
           "return_at": "",
