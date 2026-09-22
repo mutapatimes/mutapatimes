@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 05:08:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 08:18:19 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -29,6 +29,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/b9dd0fdcf5b6.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b9dd0fdcf5b6.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/b9dd0fdcf5b6.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwean farmers adopt drought-tolerant crops for resilience</title>
+      <link>https://mutapatimes.com/stories/c0c805a70cd4.html</link>
+      <description>via NewZimbabwe.com #Zimbabwe #Culture #ZimbabweCulture #ZimbabweNews</description>
+      <pubDate>Mon, 21 Sep 2026 23:05:50 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/c0c805a70cd4.html</guid>
+      <category>Culture</category>
+      <dc:creator>NewZimbabwe.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/c0c805a70cd4.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c0c805a70cd4.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/c0c805a70cd4.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/16e952736ed8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/16e952736ed8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/16e952736ed8.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Cropping &amp; Horticulture Manager</title>
-      <link>https://mutapatimes.com/stories/c52fc2574389.html</link>
-      <description>HAMARA GROUP Growing Together for a Better Tomorrow WE ARE HIRING! CROPPING &amp; HORTICULTURE MANAGER Location: Bulawayo, Zimbabwe Employment Type: Full-time position Join a purpose-driven team and help… Bulawayo · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c52fc2574389.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c52fc2574389.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c52fc2574389.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c52fc2574389.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
