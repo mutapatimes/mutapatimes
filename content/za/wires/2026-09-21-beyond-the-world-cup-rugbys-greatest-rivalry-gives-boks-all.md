@@ -1,0 +1,16 @@
+---
+title: "Beyond the World Cup — Rugby’s Greatest Rivalry gives Boks, All Blacks cash lifeline"
+date: 2026-09-21T18:42:33.000Z
+author: Daily Maverick
+category: Sport
+image: 
+summary: "Beyond the World Cup — Rugby’s Greatest Rivalry gives Boks, All Blacks cash lifeline"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwJBVV95cUxPWUlRR05CVUFZY1IwZ1JxWVNveHBac2FFdEJnSEVnNldZSzhxeTNDeHR3cV9oR0hWeWNLRkFndWZIZVJNS0tKdHdaUHYwcHE1WTlsYXV6XzYteVc2TXFuTTR2eDJIUWlmWHJ2RkNUbUdRMlhRODB3N3JZVks3c2RJTzVOUHFGTEhUdnhLUmd6WnAtYVltLVltblBxcjV2RFNYTG1CeFZnd2NDVi1FSUJQbEoxcmFkYURyd3V4cEFyNG5XZGlzWFdaZ3ptNHg3UENFVEJRTFNUdGtjOXkySjRnMmluUlZtb0FJTy05d3NUeDNPYVB6dkl3XzJ3MDdWRlY5Q2VLLTVRUnRPSjY0Z3JiNHF1QlE0ZEZOSk5ZOHZ1aUhvSHhJWVhDU2ZmTXBpWkVpTWZQN0ZoOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitwJBVV95cUxPWUlRR05CVUFZY1IwZ1JxWVNveHBac2FFdEJnSEVnNldZSzhxeTNDeHR3cV9oR0hWeWNLRkFndWZIZVJNS0tKdHdaUHYwcHE1WTlsYXV6XzYteVc2TXFuTTR2eDJIUWlmWHJ2RkNUbUdRMlhRODB3N3JZVks3c2RJTzVOUHFGTEhUdnhLUmd6WnAtYVltLVltblBxcjV2RFNYTG1CeFZnd2NDVi1FSUJQbEoxcmFkYURyd3V4cEFyNG5XZGlzWFdaZ3ptNHg3UENFVEJRTFNUdGtjOXkySjRnMmluUlZtb0FJTy05d3NUeDNPYVB6dkl3XzJ3MDdWRlY5Q2VLLTVRUnRPSjY0Z3JiNHF1QlE0ZEZOSk5ZOHZ1aUhvSHhJWVhDU2ZmTXBpWkVpTWZQN0ZoOA?oc=5)
