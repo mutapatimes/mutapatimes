@@ -1,0 +1,16 @@
+---
+title: "Botswana’s first lady launches GBV fund as Carol Bouwer’s African Odyssey marks 10 years"
+date: 2026-09-22T10:38:58.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Botswana’s first lady launches GBV fund as Carol Bouwer’s African Odyssey marks 10 years"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVk9MWTdYa3liV2F1QW9MMGZkajVIUDdiSE9MeGpYTjZUelBabHMxaWZsZVF1NzM1SlY3OGt4ZTR6SzloRGp2a01aZm93NVB6TFFGTjNTbUk2U0NVY1hKTk9QbTJSWWRCdm9hWk1CNXdGLTNWclBpYnBXbFAzVVQxUDFRVm1rQ0E4TWx2Y3JoMzJEbnp5SEtOVFhsMWljY0pwNktlbzFLVmRibEJIN2NyUlZvYll6ZnVDZjBGc1pBNmNmSEhfRmlTQXhzc25zNTBYaWh2b3JfQ2doOTZ2YWs1RVE0ZE5tQXd3UXhPWXdKZzFneDhiNEE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVk9MWTdYa3liV2F1QW9MMGZkajVIUDdiSE9MeGpYTjZUelBabHMxaWZsZVF1NzM1SlY3OGt4ZTR6SzloRGp2a01aZm93NVB6TFFGTjNTbUk2U0NVY1hKTk9QbTJSWWRCdm9hWk1CNXdGLTNWclBpYnBXbFAzVVQxUDFRVm1rQ0E4TWx2Y3JoMzJEbnp5SEtOVFhsMWljY0pwNktlbzFLVmRibEJIN2NyUlZvYll6ZnVDZjBGc1pBNmNmSEhfRmlTQXhzc25zNTBYaWh2b3JfQ2doOTZ2YWs1RVE0ZE5tQXd3UXhPWXdKZzFneDhiNEE?oc=5)

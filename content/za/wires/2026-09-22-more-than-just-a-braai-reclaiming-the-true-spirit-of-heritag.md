@@ -1,0 +1,16 @@
+---
+title: "More than just a braai: Reclaiming the true spirit of Heritage Day"
+date: 2026-09-22T10:57:34.000Z
+author: Daily Maverick
+category: Culture
+image: 
+summary: "More than just a braai: Reclaiming the true spirit of Heritage Day"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxQNGZ4aU1NV21oaE1Wd1ZzNGxzQzl4bFpJY1h3YWREYkhUMzlxa1hNbkc5bG45VGhkSzBvSkZZbnJwNGF2Q2VCc1BQeDNLa3gtWS1NZVFQZUNPd2l6Nld4YVdTLWc3RlV0UDltN1ZHcW1zSld1XzQway1iTUY4U0NNbUxQUng0bHpOS1RVY1dZdHdIeFlzUnIxb2UtTkd3MENYQTRsYVh0SjVuUFNMbWdfek91eHRuZFl6bFo0MDV6dXV2OGd2N045akx2UWROZ3ViOTNZVWx1N0JTU2dRUXJqU0x5S1JhM3gzU2ZoZ0F3eWYxQnc3NVdsOHpFa2x2ZUF2RUNEdHdjUjM4aFBqTXoxbjFkN0NfTm5aZWpuc244MjFUdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxQNGZ4aU1NV21oaE1Wd1ZzNGxzQzl4bFpJY1h3YWREYkhUMzlxa1hNbkc5bG45VGhkSzBvSkZZbnJwNGF2Q2VCc1BQeDNLa3gtWS1NZVFQZUNPd2l6Nld4YVdTLWc3RlV0UDltN1ZHcW1zSld1XzQway1iTUY4U0NNbUxQUng0bHpOS1RVY1dZdHdIeFlzUnIxb2UtTkd3MENYQTRsYVh0SjVuUFNMbWdfek91eHRuZFl6bFo0MDV6dXV2OGd2N045akx2UWROZ3ViOTNZVWx1N0JTU2dRUXJqU0x5S1JhM3gzU2ZoZ0F3eWYxQnc3NVdsOHpFa2x2ZUF2RUNEdHdjUjM4aFBqTXoxbjFkN0NfTm5aZWpuc244MjFUdw?oc=5)
