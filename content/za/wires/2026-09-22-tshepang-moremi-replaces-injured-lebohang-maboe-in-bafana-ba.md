@@ -1,0 +1,16 @@
+---
+title: "Tshepang Moremi replaces injured Lebohang Maboe in Bafana Bafana squad"
+date: 2026-09-22T14:28:52.000Z
+author: news24.com
+category: Sport
+image: 
+summary: "Tshepang Moremi replaces injured Lebohang Maboe in Bafana Bafana squad"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOeTZTSVZHd0s3eS1lZjZVdGo0dHE4a21CdFVvOC1kcEdLMUpDdGZoWkxKYlk5aDFBWHZVaHpvQjNwLTZTVnN5RDRCMXNxakcxOVBjc1lwcVVMNjlVamZyMmZWUWdlcnFxTWJsQjFpdjFoeFVwN2dSWk55SkxrS3lxSndRanA2SFd5dnFFVFNrU1F6c2RzaXVaRzRSdDVNSzhQam9UYmJvUlRQTFlOY2VwRkhxN0UyQjJ5N1Q5NEY1cEdZU1UzQ3RtTG9Ob0VJQjhONjlYR1NPeFMxMER4ZW8ySjVJSGlva1RSWEE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxOeTZTSVZHd0s3eS1lZjZVdGo0dHE4a21CdFVvOC1kcEdLMUpDdGZoWkxKYlk5aDFBWHZVaHpvQjNwLTZTVnN5RDRCMXNxakcxOVBjc1lwcVVMNjlVamZyMmZWUWdlcnFxTWJsQjFpdjFoeFVwN2dSWk55SkxrS3lxSndRanA2SFd5dnFFVFNrU1F6c2RzaXVaRzRSdDVNSzhQam9UYmJvUlRQTFlOY2VwRkhxN0UyQjJ5N1Q5NEY1cEdZU1UzQ3RtTG9Ob0VJQjhONjlYR1NPeFMxMER4ZW8ySjVJSGlva1RSWEE?oc=5)
