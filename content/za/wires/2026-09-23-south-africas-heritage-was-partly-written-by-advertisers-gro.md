@@ -1,0 +1,16 @@
+---
+title: "South Africa's heritage was partly written by advertisers, Growth and Performance Director at Alkemi Collective, Emma Rijkers, weighs in..."
+date: 2026-09-23T08:56:59.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "South Africa's heritage was partly written by advertisers, Growth and Performance Director at Alkemi Collective, Emma Rijkers, weighs in..."
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgJBVV95cUxQVld0bndwRUFmU3dPU1FFYjRfMC1QQnpZenhTaWhQX29LN042SXFUWUNnYjB2MkJGQU1MSkk0N3h6ekF5NlZTanc3TGZDeTFoTjEzck9WMWw3RFFnbEk5MDBNanMzbGRvT1BsMnlieVFKZThpaVhHaEZCZlE4VS1IdURnVDY5a2hWS1RnWnZrMEZON1NWb0IyWi1sTFZ5TkNuaXJSRUNiQ0xhdnQyWGM5RFR0ZHQ3LXdTZXNHWi04SW16LWV2a3NRb2FhSjlNaDdaeXhQSWRJUmdnd1pMS2NmaUhzTktiMU5kRUJvTWFxTzdrR2ZpRDVyZGNwcHJBYVVJSDdVMDUxcXhWMlVMNmJuZXVqQUZhdG5HWkhfNGZUU1JNajNaczF3czhMQ3VhZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMirgJBVV95cUxQVld0bndwRUFmU3dPU1FFYjRfMC1QQnpZenhTaWhQX29LN042SXFUWUNnYjB2MkJGQU1MSkk0N3h6ekF5NlZTanc3TGZDeTFoTjEzck9WMWw3RFFnbEk5MDBNanMzbGRvT1BsMnlieVFKZThpaVhHaEZCZlE4VS1IdURnVDY5a2hWS1RnWnZrMEZON1NWb0IyWi1sTFZ5TkNuaXJSRUNiQ0xhdnQyWGM5RFR0ZHQ3LXdTZXNHWi04SW16LWV2a3NRb2FhSjlNaDdaeXhQSWRJUmdnd1pMS2NmaUhzTktiMU5kRUJvTWFxTzdrR2ZpRDVyZGNwcHJBYVVJSDdVMDUxcXhWMlVMNmJuZXVqQUZhdG5HWkhfNGZUU1JNajNaczF3czhMQ3VhZw?oc=5)

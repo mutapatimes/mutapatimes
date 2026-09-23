@@ -1,0 +1,16 @@
+---
+title: "South Africa: 11 killed in attack on house party"
+date: 2026-09-23T07:39:35.000Z
+author: dw.com
+category: Health
+image: 
+summary: "South Africa: 11 killed in attack on house party"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdDVJcXhPclMtTm5uc1IxZEF6c2haVS1vY0UzQXlMcFFxQlR6eTB5Z25ZZV9SYUN4aUNkOWw2WW1rUW1xeExQVGU5WC0zZVp3V2tNcXFYN3paNnJZNDM4cndkSW4tQThOLThFZ3hwdzZTd2FZMVVKank0Z09OdkJBaGwzbnhfQXPSAYcBQVVfeXFMTzhQSXBYREhrUzNheThRTkRWSGVsZDRLV0g0c0pVcGYtWlpXbUE0cnlqd04zV0FMRnNSRjRWME1nTVVUZzJRNXQ0RnVfQ0UtSHIycVRKcmxpLWlNaUpYMzFUSm92ZlR0SlZOZ19NSlZIYUdRSjlsSUhTbVV2T0xfeV93VnFGSFg4?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dw.com.*
+[Read original article](https://news.google.com/rss/articles/CBMihwFBVV95cUxQdDVJcXhPclMtTm5uc1IxZEF6c2haVS1vY0UzQXlMcFFxQlR6eTB5Z25ZZV9SYUN4aUNkOWw2WW1rUW1xeExQVGU5WC0zZVp3V2tNcXFYN3paNnJZNDM4cndkSW4tQThOLThFZ3hwdzZTd2FZMVVKank0Z09OdkJBaGwzbnhfQXPSAYcBQVVfeXFMTzhQSXBYREhrUzNheThRTkRWSGVsZDRLV0g0c0pVcGYtWlpXbUE0cnlqd04zV0FMRnNSRjRWME1nTVVUZzJRNXQ0RnVfQ0UtSHIycVRKcmxpLWlNaUpYMzFUSm92ZlR0SlZOZ19NSlZIYUdRSjlsSUhTbVV2T0xfeV93VnFGSFg4?oc=5)

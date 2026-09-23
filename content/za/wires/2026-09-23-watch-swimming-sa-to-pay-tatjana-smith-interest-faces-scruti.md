@@ -1,0 +1,16 @@
+---
+title: "Watch – Swimming SA to pay Tatjana Smith interest, faces scrutiny over kit’s deal"
+date: 2026-09-23T09:49:33.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Watch – Swimming SA to pay Tatjana Smith interest, faces scrutiny over kit’s deal"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOMUR6U0l5cEFCaTQxZ3lLRHZJM2kyS1lJRkZpRkJWd3FKSi1mSmpCLWZBOWtSS2FqbmNXV1hxQXZoNnBFa1pnWGpmMG1HYWFkcHNBVWh1b3VHcEQtMVRoU0ItYzUyaWhHdGtuZGpSS3BlNXlEM3RweGNjNVBlcjNKbTQxdVkzOXNjRC1OMHkwOHFfcDdrQ3piS1k0TWhRT1BmOG42djFKU3VNcVREVUcxUGdTN09iQnE1WlowMnJvOTYyUlU0NHY5WTJhYlJLbzEtbHQ0S19tSUVuUDFFYU1xcl9RZnBvd2dhZkxVWkRMQzhTajhoRnRDRGdkMGxZMDY5R3psVmhaRHQwWG13dlFmajZVOGNxUGc2YmowV3hRZ3FzRlM4amY1YkN3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxOMUR6U0l5cEFCaTQxZ3lLRHZJM2kyS1lJRkZpRkJWd3FKSi1mSmpCLWZBOWtSS2FqbmNXV1hxQXZoNnBFa1pnWGpmMG1HYWFkcHNBVWh1b3VHcEQtMVRoU0ItYzUyaWhHdGtuZGpSS3BlNXlEM3RweGNjNVBlcjNKbTQxdVkzOXNjRC1OMHkwOHFfcDdrQ3piS1k0TWhRT1BmOG42djFKU3VNcVREVUcxUGdTN09iQnE1WlowMnJvOTYyUlU0NHY5WTJhYlJLbzEtbHQ0S19tSUVuUDFFYU1xcl9RZnBvd2dhZkxVWkRMQzhTajhoRnRDRGdkMGxZMDY5R3psVmhaRHQwWG13dlFmajZVOGNxUGc2YmowV3hRZ3FzRlM4amY1YkN3?oc=5)

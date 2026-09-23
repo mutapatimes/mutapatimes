@@ -1,0 +1,16 @@
+---
+title: "Australia vs South Africa: Springboks coach Rassie Erasmus makes 13 changes to starting side for Perth Test after series win over All Blacks"
+date: 2026-09-23T10:27:51.000Z
+author: Sky Sports
+category: Sport
+image: 
+summary: "Australia vs South Africa: Springboks coach Rassie Erasmus makes 13 changes to starting side for Perth Test after series win over All Blacks"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwJBVV95cUxPa2ZxVm5uSkIwbmZHbzdWT2tOYlAxTDEwWHhudnViLWU1VVZtS0pteWdFZUpKeXE0dS1XUDFObHBpcm43ZkVQV3VMODgyRGtBSjVTZDdGQjFteGZUX2VHd2xFVG5zcGdkOVRvQTRxX0RDMWl4YmFCazdDbW9adGxnb19GMF8zT2R1UTlsQ3FsSWs1V0xQUm1Na2ZTTjlOQzBFNkhXMFFKT0k3d1Z2S1BzbVNqbkR3OURfV2U2QUdCOHR5WEl0cEttLUE2S3Jwc1RXX0hzVml3dENud3g4VS1yOUhzRUExa3pYeWNGaGYweGJZN2wyWkJnbU5jT3lsd0V3UTN4a0x5ODU1MFdMMkZuQ05JUE16YkR1WjZv?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Sky Sports.*
+[Read original article](https://news.google.com/rss/articles/CBMimwJBVV95cUxPa2ZxVm5uSkIwbmZHbzdWT2tOYlAxTDEwWHhudnViLWU1VVZtS0pteWdFZUpKeXE0dS1XUDFObHBpcm43ZkVQV3VMODgyRGtBSjVTZDdGQjFteGZUX2VHd2xFVG5zcGdkOVRvQTRxX0RDMWl4YmFCazdDbW9adGxnb19GMF8zT2R1UTlsQ3FsSWs1V0xQUm1Na2ZTTjlOQzBFNkhXMFFKT0k3d1Z2S1BzbVNqbkR3OURfV2U2QUdCOHR5WEl0cEttLUE2S3Jwc1RXX0hzVml3dENud3g4VS1yOUhzRUExa3pYeWNGaGYweGJZN2wyWkJnbU5jT3lsd0V3UTN4a0x5ODU1MFdMMkZuQ05JUE16YkR1WjZv?oc=5)

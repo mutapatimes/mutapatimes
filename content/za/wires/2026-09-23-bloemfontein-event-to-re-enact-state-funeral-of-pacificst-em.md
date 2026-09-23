@@ -1,0 +1,16 @@
+---
+title: "Bloemfontein event to re-enact state funeral of pacificst Emily Hobhouse 100 years later"
+date: 2026-09-23T10:34:33.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Bloemfontein event to re-enact state funeral of pacificst Emily Hobhouse 100 years later"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxNSWV5eHFiMVIyZ2tYbjZ1U1A2c1piRU5ieV9vall0MW1IT3ZUSTN5bVRJMWxpQkl6T2FBZzRkZXRMRU80aHl0T2xvVGRkSHRjMnJoRXJxZUdEdk93QVhSTFJZeGMtOUg1VmtFQVRxdXAwb2NJNUl0TlFIbjV3UlJjMzJHaEFDN25Ea1h1M3laV1JSVk9SZHZVSEZnSzhjLXFYQ1UzMjNXMEtrLUJVT1Y2UUJpX1hRTGFrakFOdWFLTEVtQmxiVjFXeXFESXhVSlg0Ny1oUlpuUXhWWjBGQjl5cDJUeWpDaXIyWDFjTzRmM28wT0IxMzc3QldES3RZLTRuZnlkZS0zUVZUQkZFeWFYeDB2aFJfRGN0M0xsV0JlaFBGejloX2JTYWNhcm9FMUh3emRBVHBwZVF2LUtyLVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxNSWV5eHFiMVIyZ2tYbjZ1U1A2c1piRU5ieV9vall0MW1IT3ZUSTN5bVRJMWxpQkl6T2FBZzRkZXRMRU80aHl0T2xvVGRkSHRjMnJoRXJxZUdEdk93QVhSTFJZeGMtOUg1VmtFQVRxdXAwb2NJNUl0TlFIbjV3UlJjMzJHaEFDN25Ea1h1M3laV1JSVk9SZHZVSEZnSzhjLXFYQ1UzMjNXMEtrLUJVT1Y2UUJpX1hRTGFrakFOdWFLTEVtQmxiVjFXeXFESXhVSlg0Ny1oUlpuUXhWWjBGQjl5cDJUeWpDaXIyWDFjTzRmM28wT0IxMzc3QldES3RZLTRuZnlkZS0zUVZUQkZFeWFYeDB2aFJfRGN0M0xsV0JlaFBGejloX2JTYWNhcm9FMUh3emRBVHBwZVF2LUtyLVE?oc=5)

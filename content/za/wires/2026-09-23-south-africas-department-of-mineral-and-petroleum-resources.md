@@ -1,0 +1,16 @@
+---
+title: "South Africa's Department of Mineral and Petroleum Resources (DMPR) is"
+date: 2026-09-23T09:22:00.000Z
+author: Shanghai Metals Market
+category: Business
+image: 
+summary: "South Africa's Department of Mineral and Petroleum Resources (DMPR) is"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNeVFLUUZlRjJuYktDT3YxYkVOZVN2dl94dnNHQXFKRU1sVVBRWVk0YlU3SEs3alUxY1I0Ym1TNmQxZEphSXRjbGxtZDljT0xGSkV0dXB6RzZIaDdoM1BrU0pNeXo2eXJnak1zcGVyQlV3Mmk3ZUlFWEwyVUpRRVhtRkRqNUpPZlJ6dFRFUGJET2lsbHlySXFUWldNbmg4dVNUbl91RV93Z1p3WVNEcldvMFJ3bFJDdDNwYXdJbEFiR3ZCSjY0Q2xrQU5Qc0VxSTdvZDE2eVAwenJlWWUxQXhFSXRQdzVPWVRpTUVPdHFB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Shanghai Metals Market.*
+[Read original article](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNeVFLUUZlRjJuYktDT3YxYkVOZVN2dl94dnNHQXFKRU1sVVBRWVk0YlU3SEs3alUxY1I0Ym1TNmQxZEphSXRjbGxtZDljT0xGSkV0dXB6RzZIaDdoM1BrU0pNeXo2eXJnak1zcGVyQlV3Mmk3ZUlFWEwyVUpRRVhtRkRqNUpPZlJ6dFRFUGJET2lsbHlySXFUWldNbmg4dVNUbl91RV93Z1p3WVNEcldvMFJ3bFJDdDNwYXdJbEFiR3ZCSjY0Q2xrQU5Qc0VxSTdvZDE2eVAwenJlWWUxQXhFSXRQdzVPWVRpTUVPdHFB?oc=5)

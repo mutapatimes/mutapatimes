@@ -1,0 +1,16 @@
+---
+title: "South African Conservation Documentary ‘SPOILED’ Wins Top Sustainability Award At International Film Festival In Spain"
+date: 2026-09-23T07:00:02.000Z
+author: Africa.com
+category: Culture
+image: 
+summary: "South African Conservation Documentary ‘SPOILED’ Wins Top Sustainability Award At International Film Festival In Spain"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPXzEwdUNldF9JcXJmak9ETDZKeWJEMHZfNG9QSUptRVlGTzVuRldvc3F1bW1EOUFlOVl6WUppYmhxRENqcURPZjYyWW5RcFpKM0pLZVdwTjF3V1IzQnBpZjVfbjB4REdpREx4b3EwcnVWbm9idS1CcHFCOXI5TGVTU25sSkJ1VWw1YlNXS3dJME91Vm1iUkYzOVk5TU9XeVEwalZKOGJscWNzRTRpUFVJb3JYaVF1dVphYWhCbm9ZNEkwUTVFOGFPLWl4VkVCY21iQ1loLXhQbi0tNm1rMlNmTDZadWplNTg0MVRxNVZyWDlJUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Africa.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxPXzEwdUNldF9JcXJmak9ETDZKeWJEMHZfNG9QSUptRVlGTzVuRldvc3F1bW1EOUFlOVl6WUppYmhxRENqcURPZjYyWW5RcFpKM0pLZVdwTjF3V1IzQnBpZjVfbjB4REdpREx4b3EwcnVWbm9idS1CcHFCOXI5TGVTU25sSkJ1VWw1YlNXS3dJME91Vm1iUkYzOVk5TU9XeVEwalZKOGJscWNzRTRpUFVJb3JYaVF1dVphYWhCbm9ZNEkwUTVFOGFPLWl4VkVCY21iQ1loLXhQbi0tNm1rMlNmTDZadWplNTg0MVRxNVZyWDlJUQ?oc=5)
