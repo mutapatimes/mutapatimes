@@ -1,13 +1,29 @@
 {
-  "fetched_at": "2026-09-23T14:02:40+00:00",
+  "fetched_at": "2026-09-23T18:48:02+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 23 Sep 2026: All Share 454.58 (+0.04%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-23",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-23",
+      "pubDate": "2026-09-23T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "Indian company targets 40 million tonnes of Zimbabwe lithium in $100 million push beyond China",
-      "link": "https://mutapatimes.com/articles/2026-09-23-indian-company-targets-40-million-tonnes-of-zimbabwe-lithium",
-      "image": "https://mutapatimes.com/img/cards/news/21dde3f89956.png",
-      "pubDate": "2026-09-23T12:30:00+00:00",
+      "title": "Powering mines – C&I Energy+Storage Zimbabwe tackles the power challenge behind mining growth",
+      "link": "https://mutapatimes.com/articles/2026-09-23-powering-mines-ci-energystorage-zimbabwe-tackles-the-power-c",
+      "image": "https://mutapatimes.com/img/cards/news/2e20dfb9067d.png",
+      "pubDate": "2026-09-23T13:03:49+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Powering mines – C&I Energy+Storage Zimbabwe tackles the power challenge behind mining growth",
+      "link": "https://mutapatimes.com/news/2026-09-23-powering-mines-c-i-energy-storage-zimbabwe-tackles-the-power-challenge-behind-ee2a80",
+      "image": "https://mutapatimes.com/img/cards/news/a7868cf1cae0.png",
+      "pubDate": "2026-09-23T13:03:49+00:00",
       "category": "Business"
     },
     {
@@ -21,34 +37,10 @@
     {
       "kind": "news",
       "title": "U.S. to End Health Funding in Zimbabwe After Rejected Deal",
-      "link": "https://mutapatimes.com/articles/2026-09-23-us-to-end-health-funding-in-zimbabwe-after-rejected-deal",
-      "image": "https://mutapatimes.com/img/cards/news/ccebd86d5adb.png",
-      "pubDate": "2026-09-23T11:48:45+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "U.S. to End Health Funding in Zimbabwe After Rejected Deal",
       "link": "https://mutapatimes.com/news/2026-09-23-u-s-to-end-health-funding-in-zimbabwe-after-rejected-deal-5ff74d",
       "image": "https://mutapatimes.com/img/cards/news/3ecdbe337598.png",
-      "pubDate": "2026-09-23T11:48:45+00:00",
+      "pubDate": "2026-09-23T11:50:22+00:00",
       "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "SA cannot tackle migration while ignoring Zimbabwean democratic backsliding",
-      "link": "https://mutapatimes.com/articles/2026-09-23-sa-cannot-tackle-migration-while-ignoring-zimbabwean-democra",
-      "image": "https://mutapatimes.com/img/cards/news/04f5d2a8bbbe.png",
-      "pubDate": "2026-09-23T10:00:56+00:00",
-      "category": "Policy"
-    },
-    {
-      "kind": "news",
-      "title": "New Rabies Prevention Project Protects Dogs in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-09-23-new-rabies-prevention-project-protects-dogs-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/a563d0e67d0d.png",
-      "pubDate": "2026-09-23T08:45:03+00:00",
-      "category": "Tech"
     },
     {
       "kind": "news",
@@ -61,18 +53,50 @@
     {
       "kind": "news",
       "title": "Zimbabwe: U.S. Announces End to All Health Funding in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-09-23-zimbabwe-us-announces-end-to-all-health-funding-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/cba1ba4a4b9e.png",
+      "link": "https://mutapatimes.com/news/2026-09-23-zimbabwe-u-s-announces-end-to-all-health-funding-in-zimbabwe-6cc045",
+      "image": "https://mutapatimes.com/img/cards/news/0eb421e8bb5c.png",
       "pubDate": "2026-09-23T07:33:15+00:00",
       "category": "Health"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe: U.S. Announces End to All Health Funding in Zimbabwe",
-      "link": "https://mutapatimes.com/news/2026-09-23-zimbabwe-u-s-announces-end-to-all-health-funding-in-zimbabwe-6cc045",
-      "image": "https://mutapatimes.com/img/cards/news/0eb421e8bb5c.png",
-      "pubDate": "2026-09-23T07:33:15+00:00",
-      "category": "Health"
+      "title": "Bindura water pipeline commissioned after 34-year wait",
+      "link": "https://mutapatimes.com/articles/2026-09-23-bindura-water-pipeline-commissioned-after-34-year-wait",
+      "image": "https://mutapatimes.com/img/cards/news/79ab115d5a6a.png",
+      "pubDate": "2026-09-23T06:07:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Bindura water pipeline commissioned after 34-year wait",
+      "link": "https://mutapatimes.com/news/2026-09-23-bindura-water-pipeline-commissioned-after-34-year-wait-9adc17",
+      "image": "https://mutapatimes.com/img/cards/news/e602dee19dee.png",
+      "pubDate": "2026-09-23T06:07:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Uriri's rejection of Chivayo's gifts exposes Zimbabwe's integrity crisis",
+      "link": "https://mutapatimes.com/articles/2026-09-23-uriris-rejection-of-chivayos-gifts-exposes-zimbabwes-integri",
+      "image": "https://mutapatimes.com/img/cards/news/be9abce1c9b5.png",
+      "pubDate": "2026-09-23T05:51:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Uriri's rejection of Chivayo's gifts exposes Zimbabwe's integrity crisis",
+      "link": "https://mutapatimes.com/news/2026-09-23-uriri-s-rejection-of-chivayo-s-gifts-exposes-zimbabwe-s-integrity-crisis-398c28",
+      "image": "https://mutapatimes.com/img/cards/news/7cd94e407fbc.png",
+      "pubDate": "2026-09-23T05:51:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe secures funding for over $65 million Chirundu border upgrade to ease delays on vital copperbelt trade route",
+      "link": "https://mutapatimes.com/news/2026-09-23-zimbabwe-secures-funding-for-over-65-million-chirundu-border-upgrade-to-ease-130c82",
+      "image": "https://mutapatimes.com/img/cards/news/ee3af880b242.png",
+      "pubDate": "2026-09-23T05:31:32+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -84,18 +108,42 @@
     },
     {
       "kind": "news",
-      "title": "Nama opens submissions for Silver Jubilee edition",
-      "link": "https://mutapatimes.com/articles/2026-09-22-nama-opens-submissions-for-silver-jubilee-edition",
-      "image": "https://mutapatimes.com/img/cards/news/8c7c90a727d2.png",
-      "pubDate": "2026-09-22T23:59:00+00:00",
+      "title": "Prominent Ruwa mbinga and ZERA board chairperson loses US$150,000 hidden in her bedroom in clean cash heist",
+      "link": "https://mutapatimes.com/news/2026-09-23-prominent-ruwa-mbinga-and-zera-board-chairperson-loses-us-150-000-hidden-in-her-04e945",
+      "image": "https://mutapatimes.com/img/cards/news/ae075a37a6db.png",
+      "pubDate": "2026-09-23T05:27:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "NBS fined US$10,000 for defying court order over US$5m Treasury Bill",
+      "link": "https://mutapatimes.com/news/2026-09-23-nbs-fined-us-10-000-for-defying-court-order-over-us-5m-treasury-bill-ec246e",
+      "image": "https://mutapatimes.com/img/cards/news/ffe389aacf34.png",
+      "pubDate": "2026-09-23T05:25:57+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "America announces end to all health funding in Zimbabwe – says it respects government decision to decline MoU",
+      "link": "https://mutapatimes.com/news/2026-09-23-america-announces-end-to-all-health-funding-in-zimbabwe-says-it-respects-7c3869",
+      "image": "https://mutapatimes.com/img/cards/news/3474b30ffd47.png",
+      "pubDate": "2026-09-23T05:10:54+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Marondera commissions modern vendors’ market",
+      "link": "https://mutapatimes.com/articles/2026-09-23-marondera-commissions-modern-vendors-market",
+      "image": "https://mutapatimes.com/img/cards/news/396c6402ea46.png",
+      "pubDate": "2026-09-23T03:44:14+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "HIV injections every eight weeks more effective than daily pills for adolescents – study",
-      "link": "https://mutapatimes.com/articles/2026-09-22-hiv-injections-every-eight-weeks-more-effective-than-daily-p",
-      "image": "https://mutapatimes.com/img/cards/news/22b434d86cbe.png",
-      "pubDate": "2026-09-22T23:08:31+00:00",
+      "title": "New Chilonga bridge set for commissioning",
+      "link": "https://mutapatimes.com/articles/2026-09-23-new-chilonga-bridge-set-for-commissioning",
+      "image": "https://mutapatimes.com/img/cards/news/1d3e0684e86e.png",
+      "pubDate": "2026-09-23T03:43:53+00:00",
       "category": "Business"
     },
     {
@@ -113,14 +161,6 @@
       "image": "https://mutapatimes.com/img/cards/news/8cdffb8259ab.png",
       "pubDate": "2026-09-22T23:05:19+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "‘Education must align with dynamic skills’",
-      "link": "https://mutapatimes.com/articles/2026-09-22-education-must-align-with-dynamic-skills",
-      "image": "https://mutapatimes.com/img/cards/news/8bdf1c6ae5b2.png",
-      "pubDate": "2026-09-22T22:30:48+00:00",
-      "category": "Education"
     },
     {
       "kind": "news",
@@ -185,6 +225,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-22T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Probfix Financial Services (Pvt) Ltd — DEALER (Business Development Role / Topline Driver)",
+      "link": "https://vacancymail.co.zw/jobs/dealer-business-development-role-topline-driver-69525/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f2a8a90b7afe.png",
+      "pubDate": "2026-09-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "MOTORBIKE RIDER ( CLASS 3 DRIVERS LICENCE)",
+      "link": "https://vacancymail.co.zw/jobs/motorbike-rider-class-3-drivers-licence-69523/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f4bc16c00eba.png",
+      "pubDate": "2026-09-22T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Glenrise — Finance Intern",
+      "link": "https://vacancymail.co.zw/jobs/finance-intern-69522/",
+      "image": "https://mutapatimes.com/img/cards/jobs/291b2f844861.png",
+      "pubDate": "2026-09-22T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "African Unicorn ~~ 0 — Business Development, Sales & Marketing Interns",
       "link": "https://vacancymail.co.zw/jobs/business-development-sales-marketing-interns-69482/",
       "image": "https://mutapatimes.com/img/cards/jobs/f68b37f29061.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "PA /Receptionist",
-      "link": "https://vacancymail.co.zw/jobs/pa-receptionist-69481/",
-      "image": "https://mutapatimes.com/img/cards/jobs/812170b56acb.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — LOANS OFFICER - HARARE",
-      "link": "https://vacancymail.co.zw/jobs/loans-officer-harare-69480/",
-      "image": "https://mutapatimes.com/img/cards/jobs/221a9f2bc8e6.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "EmpowerBank Limited — LOANS OFFICER - BULAWAYO",
-      "link": "https://vacancymail.co.zw/jobs/loans-officer-bulawayo-69479/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f875d5c0e7b4.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Travel Consultant",
-      "link": "https://vacancymail.co.zw/jobs/travel-consultant-69478/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6052173cd28f.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "I Love Black People — Project Manager",
-      "link": "https://vacancymail.co.zw/jobs/project-manager-69477/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dfe4e98c52e2.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Marketing Person - ICT Sector",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-ict-sector-69476/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fc88ee4af6c4.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plan International Zimbabwe — SDDC Project Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/sddc-project-coordinator-69475/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0ab30a0ee8d8.png",
-      "pubDate": "2026-09-22T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Turner and Townsend — Senior Quantity Surveyor",
-      "link": "https://vacancymail.co.zw/jobs/senior-quantity-surveyor-69474/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9b9d15d745c6.png",
       "pubDate": "2026-09-22T22:00:00+00:00",
       "category": "Jobs"
     }
