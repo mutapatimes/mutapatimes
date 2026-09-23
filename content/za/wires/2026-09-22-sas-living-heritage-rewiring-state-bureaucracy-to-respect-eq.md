@@ -1,0 +1,16 @@
+---
+title: "SA’s living heritage — rewiring state bureaucracy to respect equal citizenship"
+date: 2026-09-22T21:29:45.000Z
+author: Daily Maverick
+category: Culture
+image: 
+summary: "SA’s living heritage — rewiring state bureaucracy to respect equal citizenship"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipwJBVV95cUxQcnU3QkZtNUp5cEhVWU1acURCcTE2Rlk3UXlpVVplakhIVUZCVi1BSUpmOWtwOEtJallTdDJqcmdiWk1YV3RRc3BRdGtQbmduRkpmQ0toTUlkMnA2ZU5HaVNSbFpCVHpJNFJONjNZclpVV21QOUJmSjRKek04WUY5T2dNZk8wSzNzTWJLbzVRNUhsa0FkTXVHbHdienRLZkIzRUM3ZVp2U2w2X09MVk55UDFsMHA0VUZZVFh3WlFrbnN5WVlUdmlCM0lXU21kaTNrelctWHo3Nk44Q3l4NWhPNExKT0xxWTJSUVhpbHVpQTdpV1U5RDlZc1FqNEdQTDJZdHI5eS1iMGZpOTdEaUpGS2NqcnZna29oLVRpSEFhR1RuM1VlX0xz?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipwJBVV95cUxQcnU3QkZtNUp5cEhVWU1acURCcTE2Rlk3UXlpVVplakhIVUZCVi1BSUpmOWtwOEtJallTdDJqcmdiWk1YV3RRc3BRdGtQbmduRkpmQ0toTUlkMnA2ZU5HaVNSbFpCVHpJNFJONjNZclpVV21QOUJmSjRKek04WUY5T2dNZk8wSzNzTWJLbzVRNUhsa0FkTXVHbHdienRLZkIzRUM3ZVp2U2w2X09MVk55UDFsMHA0VUZZVFh3WlFrbnN5WVlUdmlCM0lXU21kaTNrelctWHo3Nk44Q3l4NWhPNExKT0xxWTJSUVhpbHVpQTdpV1U5RDlZc1FqNEdQTDJZdHI5eS1iMGZpOTdEaUpGS2NqcnZna29oLVRpSEFhR1RuM1VlX0xz?oc=5)

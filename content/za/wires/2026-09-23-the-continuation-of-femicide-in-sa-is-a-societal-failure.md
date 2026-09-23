@@ -1,0 +1,16 @@
+---
+title: "The continuation of femicide in SA is a societal failure"
+date: 2026-09-23T02:15:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "The continuation of femicide in SA is a societal failure"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxPbGNKRF95akhBdHZwazg4RDRFMkUwRHpPazdIUEVUQ2xBX05iZjVoRWhiUXhZUVplSjNFcklNalB5M0pDTXJLQ2t0S2wyWlZRT1d6TDJ6WWtrMVR2VFVjakxVTTZGTUU2Ry1LYlIxZi1lM1FfM2NUQlBhLVBkMXdGQUM0WlBaMDNGcTdJMEtzWWstUl9STGNjRndJeEt1MUFKNk4ybnBhbU9QY2hoWkdyai1lTXh6NnJxQV9hbEtqTzJVaE1FM3JrX25UcVBjTEhZTmtvWHU4QlNITkhsY2llX2hjZEh0VDRsQlNaT254dlljUDcwTnZIT1BqX29zSFdyc3RrMXRNSjBiaDJxZnZ1ZHJxM2ZJQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxPbGNKRF95akhBdHZwazg4RDRFMkUwRHpPazdIUEVUQ2xBX05iZjVoRWhiUXhZUVplSjNFcklNalB5M0pDTXJLQ2t0S2wyWlZRT1d6TDJ6WWtrMVR2VFVjakxVTTZGTUU2Ry1LYlIxZi1lM1FfM2NUQlBhLVBkMXdGQUM0WlBaMDNGcTdJMEtzWWstUl9STGNjRndJeEt1MUFKNk4ybnBhbU9QY2hoWkdyai1lTXh6NnJxQV9hbEtqTzJVaE1FM3JrX25UcVBjTEhZTmtvWHU4QlNITkhsY2llX2hjZEh0VDRsQlNaT254dlljUDcwTnZIT1BqX29zSFdyc3RrMXRNSjBiaDJxZnZ1ZHJxM2ZJQQ?oc=5)
