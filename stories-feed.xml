@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 17:18:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 18:48:38 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -29,6 +29,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/fe55170e50a7.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fe55170e50a7.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/fe55170e50a7.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Air Zimbabwe Appoints Simba Travel as UK Sales Agent @263Chat</title>
+      <link>https://mutapatimes.com/stories/5bd031791d38.html</link>
+      <description>The airline resumed direct Gatwick-Harare services in late July, operating three flights a week. The service is being operated with an Airbus A330-300 leased from Spanish carrier Plus Ultra Líneas Aéreas. The post Air Zimbabwe Appoints Simba Travel as UK Sales Agent appeared fi via 263chat #Zimbabwe #Tech #AfricaTech #ZimbabweNews</description>
+      <pubDate>Thu, 24 Sep 2026 05:22:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/5bd031791d38.html</guid>
+      <category>Tech</category>
+      <dc:creator>263chat</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/5bd031791d38.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5bd031791d38.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/5bd031791d38.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Warriors face Sierra Leone in AFCON qualifier opener</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/e33a23ae26d5.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e33a23ae26d5.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/e33a23ae26d5.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Nutrition Action Zimbabwe ~~ 0 — ENUMERATORS [Pool recruitment]</title>
-      <link>https://mutapatimes.com/stories/07d298f721cd.html</link>
-      <description>Nutrition Action Zimbabwe is a locally registered PVO that has been operating in Zimbabwe since 2014. The organization’s primary focus is combating malnutrition in all its forms, through effective im… Mutoko · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 23 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/07d298f721cd.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Nutrition Action Zimbabwe ~~ 0</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/07d298f721cd.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/07d298f721cd.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/07d298f721cd.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
