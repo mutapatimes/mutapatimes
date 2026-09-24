@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa uses Heritage Day address to condemn gender-based violence after Ekurhuleni killings"
+date: 2026-09-24T13:32:47.000Z
+author: dailymaverick.co.za
+category: Business
+image: 
+summary: "Ramaphosa uses Heritage Day address to condemn gender-based violence after Ekurhuleni killings"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOGhQOE5nakxyWnR0OGJEV2pIdlIwaDlDOTJHQVVpRXNMb1dYcnpUZGNvekFPXzZFWC1DWmR6QzRybkhUZ3I2Z01KUlJXRl9FcmlMRUtMbjg4cC1Db0NQQVdWRTRQZ212WlhWMDdiWXJYRW4tNE9oOXYyVlpTdkhRSlllOEhkd3ROaFNLcVhNOV9RT3hiNmRmTktLeFJGZ1p6X2NlcWN5ckl2UEs1T2plazltektmQ0JMUlBhMm5LUi1hclVWZndWamVGcmt5bzQ5ZHJDY0NfeXIwNEJ5RHVv?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dailymaverick.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOGhQOE5nakxyWnR0OGJEV2pIdlIwaDlDOTJHQVVpRXNMb1dYcnpUZGNvekFPXzZFWC1DWmR6QzRybkhUZ3I2Z01KUlJXRl9FcmlMRUtMbjg4cC1Db0NQQVdWRTRQZ212WlhWMDdiWXJYRW4tNE9oOXYyVlpTdkhRSlllOEhkd3ROaFNLcVhNOV9RT3hiNmRmTktLeFJGZ1p6X2NlcWN5ckl2UEs1T2plazltektmQ0JMUlBhMm5LUi1hclVWZndWamVGcmt5bzQ5ZHJDY0NfeXIwNEJ5RHVv?oc=5)
