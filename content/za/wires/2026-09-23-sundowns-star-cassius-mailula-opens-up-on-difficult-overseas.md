@@ -1,0 +1,16 @@
+---
+title: "Sundowns star Cassius Mailula opens up on difficult overseas spell as he returns to Bafana Bafana under Pitso Mosimane"
+date: 2026-09-23T12:42:05.000Z
+author: Hollywoodbets Blog
+category: Sport
+image: 
+summary: "Sundowns star Cassius Mailula opens up on difficult overseas spell as he returns to Bafana Bafana under Pitso Mosimane"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxNM0cxZ1F6U1Q5NHNRUVFpVEstaW93SGFQR2RISFBLYWg5bDdHMGdjelVjbHRzMF9ZRnh0aDBLeFV3TGxDUllGQ28wV0dQclZYV2NDeUtLWTdzUTkxZUR4N3A0VFg2MFd5Y0FFLWFOWjlIMFFGcEZWWkhVNnFGMkhDSjNZNVlfdmozbzNvMXo4dzVNZ1lrLTY2YWFUR0QwS2c0aWhSZ1NMM3ZXY0pScU54UFlENWMxN1lpc3REUVEzeG83VDFhSi0yeldyTnZhend1ODBKYUpGQks5U3BvcGlkX1dic1VxZHFGZ2k4alZuUVBUTXRBYjlrajhzQzd3MkIt?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Hollywoodbets Blog.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxNM0cxZ1F6U1Q5NHNRUVFpVEstaW93SGFQR2RISFBLYWg5bDdHMGdjelVjbHRzMF9ZRnh0aDBLeFV3TGxDUllGQ28wV0dQclZYV2NDeUtLWTdzUTkxZUR4N3A0VFg2MFd5Y0FFLWFOWjlIMFFGcEZWWkhVNnFGMkhDSjNZNVlfdmozbzNvMXo4dzVNZ1lrLTY2YWFUR0QwS2c0aWhSZ1NMM3ZXY0pScU54UFlENWMxN1lpc3REUVEzeG83VDFhSi0yeldyTnZhend1ODBKYUpGQks5U3BvcGlkX1dic1VxZHFGZ2k4alZuUVBUTXRBYjlrajhzQzd3MkIt?oc=5)

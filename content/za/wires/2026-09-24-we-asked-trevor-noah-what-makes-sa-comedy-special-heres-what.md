@@ -1,0 +1,16 @@
+---
+title: "We asked Trevor Noah what makes SA comedy special — here’s what he said"
+date: 2026-09-24T05:03:21.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "We asked Trevor Noah what makes SA comedy special — here’s what he said"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipgJBVV95cUxNcF8xbnBheGxuZE9lbXNVNThjVUpfXzVwbWdkME9oQkF1aGotakZET1pMV0JYNmx0MEZUcHpmUGw4dFU2ZGM5akZscFZZX01kLU54SlFzdFl3N3d4VDdXWUdDeXJSc0YxZVYzZlRVTGNfU3NGOGdCaTdET1YzUjhjUnZBSUtydDJ1b3BZcFUtV05yUWdmYmpfbzVzY2RldXZ2RzQwcGFnWnlrVktwXzNTUjhuaTdmM3dxaTNRZGdZNVRJYUZraHpIU3oyMUJqcC1ReFBEcjZncEpVT3RFeVlvY1UzMkFkeWFpT1VuMUdMcVJpRmZ0Y2M2WXVsSVUtSUhfTXcyakxjUTlaR0M3ejNUWXVOSEcyUkF3Z25XdmNxY2JkZlRsMXc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipgJBVV95cUxNcF8xbnBheGxuZE9lbXNVNThjVUpfXzVwbWdkME9oQkF1aGotakZET1pMV0JYNmx0MEZUcHpmUGw4dFU2ZGM5akZscFZZX01kLU54SlFzdFl3N3d4VDdXWUdDeXJSc0YxZVYzZlRVTGNfU3NGOGdCaTdET1YzUjhjUnZBSUtydDJ1b3BZcFUtV05yUWdmYmpfbzVzY2RldXZ2RzQwcGFnWnlrVktwXzNTUjhuaTdmM3dxaTNRZGdZNVRJYUZraHpIU3oyMUJqcC1ReFBEcjZncEpVT3RFeVlvY1UzMkFkeWFpT1VuMUdMcVJpRmZ0Y2M2WXVsSVUtSUhfTXcyakxjUTlaR0M3ejNUWXVOSEcyUkF3Z25XdmNxY2JkZlRsMXc?oc=5)
