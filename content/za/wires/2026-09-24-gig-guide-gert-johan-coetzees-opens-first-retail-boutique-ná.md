@@ -1,0 +1,16 @@
+---
+title: "Gig Guide: Gert-Johan Coetzee’s opens first retail boutique, Nádine and Bo release We Are the Fire, Ndu Shezi releases Gugu Lami, Bafunny Bafunny brings the laughs and Comic Con Africa comes to Johannesburg"
+date: 2026-09-24T22:06:39.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Gig Guide: Gert-Johan Coetzee’s opens first retail boutique, Nádine and Bo release We Are the Fire, Ndu Shezi releases Gugu Lami, Bafunny Bafunny brings the laughs and Comic Con Africa comes to Johannesburg"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNc0VIMElnd25mNWd2XzlOaFNtY2VDMmtpYldxUmtmTGZrYzY4T3lqaWg3cFpibTE5VzZxR3M1QXk3ZmItbk1aeGJkUm1oZ3lqYWRHcllUM01MMC1zc0loQ3BpRFBWTXBKYVByT0pndlZtRUk0b3ZyUWdZaHo2bW1yM2FwNGRDY3N4REJxeWZ3UnVLNC1FdXVLTFBOM2tLbjR2T3NiYWpMcEdEZUJhYmU3N2JkRnFXeC0tY0N0bUgwd2ZHV01aTkJvZVdPQW1HUWNROVBRTDhSUXpiVnlCQ2hpRF9LVk5Gc1NpbDlkWHJrY0h3eGZ5T2l6RC1vNjQ0N2pLSld3U1JWU2g3R0hqUU1ZUHpmYjZhb0hubzdtMVZGQ25ETy00ejNFRUNEZEZOY1FDWGF2TVZMbVZISFZ4QXdUcXFqX0l4YjBjZUh1emZDS1pteThZcVBINVVB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gJBVV95cUxNc0VIMElnd25mNWd2XzlOaFNtY2VDMmtpYldxUmtmTGZrYzY4T3lqaWg3cFpibTE5VzZxR3M1QXk3ZmItbk1aeGJkUm1oZ3lqYWRHcllUM01MMC1zc0loQ3BpRFBWTXBKYVByT0pndlZtRUk0b3ZyUWdZaHo2bW1yM2FwNGRDY3N4REJxeWZ3UnVLNC1FdXVLTFBOM2tLbjR2T3NiYWpMcEdEZUJhYmU3N2JkRnFXeC0tY0N0bUgwd2ZHV01aTkJvZVdPQW1HUWNROVBRTDhSUXpiVnlCQ2hpRF9LVk5Gc1NpbDlkWHJrY0h3eGZ5T2l6RC1vNjQ0N2pLSld3U1JWU2g3R0hqUU1ZUHpmYjZhb0hubzdtMVZGQ25ETy00ejNFRUNEZEZOY1FDWGF2TVZMbVZISFZ4QXdUcXFqX0l4YjBjZUh1emZDS1pteThZcVBINVVB?oc=5)
