@@ -1,0 +1,16 @@
+---
+title: "Breetzke brilliance and spin twins mask Proteas missing stars in triumph over Australia"
+date: 2026-09-25T03:09:35.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Breetzke brilliance and spin twins mask Proteas missing stars in triumph over Australia"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUE9iLVo5dzlFYVl1M1hrY1FzUXM3VW5kMmhXcmc0WnFielJ5OHNQeHlOZXhGbnhJNnRLYVpPUi1GT1RXdHpiNXN4WmozRVJiNUxkdmt3bGVlV2lSNl9xbmwtTVdZSVB6NzJ2LUVQaS1Yd0s0aG45U3Jfb0c4R3hGYllLeG5jaHd2dVRPSm1HRkVSUFJPWUk1N05FSDVpNTdva2ZVUXdVM2hnZjNNd1VFVXc2QXRCcDR2WGZ6QWloX2p3SFlzQ1Vuc1BXNjgyU2JhakQya1o0SmJyR2trZVg4ZlNGeEZ4c2dq?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUE9iLVo5dzlFYVl1M1hrY1FzUXM3VW5kMmhXcmc0WnFielJ5OHNQeHlOZXhGbnhJNnRLYVpPUi1GT1RXdHpiNXN4WmozRVJiNUxkdmt3bGVlV2lSNl9xbmwtTVdZSVB6NzJ2LUVQaS1Yd0s0aG45U3Jfb0c4R3hGYllLeG5jaHd2dVRPSm1HRkVSUFJPWUk1N05FSDVpNTdva2ZVUXdVM2hnZjNNd1VFVXc2QXRCcDR2WGZ6QWloX2p3SFlzQ1Vuc1BXNjgyU2JhakQya1o0SmJyR2trZVg4ZlNGeEZ4c2dq?oc=5)

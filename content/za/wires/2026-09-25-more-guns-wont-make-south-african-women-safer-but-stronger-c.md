@@ -1,0 +1,16 @@
+---
+title: "More guns won’t make South African women safer, but stronger controls will"
+date: 2026-09-25T11:20:59.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "More guns won’t make South African women safer, but stronger controls will"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOVlJxb3VrUVJQTHU1NWJZbVVURmF1NXZPOTR5NVJFRTRjd1YxYmVsWVN0Zl95U05TajNSUklKVFl6eTl2S3VrTkNCUVFWWmx4TDFMWVdTYzNqOE5pRmxQeS1fRnZuRlpVQXdvdWctRW9FXzVIUWxlaUxmQUMtRXdOU2k2RFRTLUdtQkVORFRYOGxQVmljVjNTbHBuLUxfQTR3M1lEZmVyVHpKT2kzMGRJWjB5WF8tUGc5eE81Tl8xaUxxVS1KalpVTDFjNTgwRUhIaFd5Nk5YSmVCU1NQOFVObUU3UHF1eVBDSlFkendadGVIN2FZMEs3VUo0cDg5Wmt0MjEwZjRiczR5akhJaGQ2eDBQT1JiUmxpemQyRFhaeEdEeDNnRTNBbXkxVQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqwJBVV95cUxOVlJxb3VrUVJQTHU1NWJZbVVURmF1NXZPOTR5NVJFRTRjd1YxYmVsWVN0Zl95U05TajNSUklKVFl6eTl2S3VrTkNCUVFWWmx4TDFMWVdTYzNqOE5pRmxQeS1fRnZuRlpVQXdvdWctRW9FXzVIUWxlaUxmQUMtRXdOU2k2RFRTLUdtQkVORFRYOGxQVmljVjNTbHBuLUxfQTR3M1lEZmVyVHpKT2kzMGRJWjB5WF8tUGc5eE81Tl8xaUxxVS1KalpVTDFjNTgwRUhIaFd5Nk5YSmVCU1NQOFVObUU3UHF1eVBDSlFkendadGVIN2FZMEs3VUo0cDg5Wmt0MjEwZjRiczR5akhJaGQ2eDBQT1JiUmxpemQyRFhaeEdEeDNnRTNBbXkxVQ?oc=5)
