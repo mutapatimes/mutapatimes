@@ -1,0 +1,16 @@
+---
+title: "UCT leads R95m African research programme to tackle deadly infectious diseases"
+date: 2026-09-25T14:20:59.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "UCT leads R95m African research programme to tackle deadly infectious diseases"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZDZxZGNVTGhMQTF2OVVLNVRBQnpxVWtYeGdaTVFDZG4zR2pHMV94STBmVW5oZlBsYjlZdVdNbklHZ25MVEx3RDFFcGtyWE9BRjhzWlYwb2VENnpzTTI1bHJ5eFRYLTZMVkV6eFJKQ2tVTE1Cd2RTQVlvaTZIaXZfOUJlQmkwX29HRFlpV0FjaUxsNy1vR1NvaHFBRWtjR2NQd3g0ZTJ2eVZsS1dILWc3Q3M4bUg2SXdkeEg0MGtDTk94NGlTVWlDYWJjZnZJWmJzZVE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZDZxZGNVTGhMQTF2OVVLNVRBQnpxVWtYeGdaTVFDZG4zR2pHMV94STBmVW5oZlBsYjlZdVdNbklHZ25MVEx3RDFFcGtyWE9BRjhzWlYwb2VENnpzTTI1bHJ5eFRYLTZMVkV6eFJKQ2tVTE1Cd2RTQVlvaTZIaXZfOUJlQmkwX29HRFlpV0FjaUxsNy1vR1NvaHFBRWtjR2NQd3g0ZTJ2eVZsS1dILWc3Q3M4bUg2SXdkeEg0MGtDTk94NGlTVWlDYWJjZnZJWmJzZVE?oc=5)
