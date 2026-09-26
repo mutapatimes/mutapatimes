@@ -1,0 +1,16 @@
+---
+title: "JACOB TSEKO MOFOKENG | Why we must fundamentally alter our cultural relationship with power"
+date: 2026-09-26T22:03:56.000Z
+author: TimesLIVE
+category: Environment
+image: 
+summary: "JACOB TSEKO MOFOKENG | Why we must fundamentally alter our cultural relationship with power"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPcVV6LUttWXhtQVZfbWhoREVieTFhcllxcjduSkN2bGpxYl9MdVVrMDg4V3dVWkUxSlFha3VCQ3pOaWY4am1WeUNYeFV2LUVaTTFrcGlWQ1Vtb0dkZ2dyM18tRU9XOVNJV2JFcDJGM1RMY0VjVW1RUHBnTUJveHpfS3VDOHQ1dGFleXc1clRNcFhPYXUyRENUS010OTJsR3hOeFpQeTJqeVZhRml6Y2p1ak1kMUlOcS1IaUpqNGxVVWZ1TnRQTVFxUnBaUXVUYmxOMjhFcjdEZzIzLXJTLUF6NDI0Z2p6WHBlQzJ1Q1lSTXFBSEZwVnUwa1RFZTJscFk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi_wFBVV95cUxPcVV6LUttWXhtQVZfbWhoREVieTFhcllxcjduSkN2bGpxYl9MdVVrMDg4V3dVWkUxSlFha3VCQ3pOaWY4am1WeUNYeFV2LUVaTTFrcGlWQ1Vtb0dkZ2dyM18tRU9XOVNJV2JFcDJGM1RMY0VjVW1RUHBnTUJveHpfS3VDOHQ1dGFleXc1clRNcFhPYXUyRENUS010OTJsR3hOeFpQeTJqeVZhRml6Y2p1ak1kMUlOcS1IaUpqNGxVVWZ1TnRQTVFxUnBaUXVUYmxOMjhFcjdEZzIzLXJTLUF6NDI0Z2p6WHBlQzJ1Q1lSTXFBSEZwVnUwa1RFZTJscFk?oc=5)
