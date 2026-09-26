@@ -1,0 +1,16 @@
+---
+title: "Breetzke, Maharaj spearhead dramatic Proteas’ victory"
+date: 2026-09-24T18:58:01.000Z
+author: supersport.com
+category: Sport
+image: 
+summary: "Breetzke, Maharaj spearhead dramatic Proteas’ victory"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdzVuaDNkbjJmSFh4VktVb0JqLV85aC11aFN0X005RFlTUzVjUzVMclZKNUpUZTQ5NTVRMlNwTlNuMXlWNThPMmxqcnVFZUJMd0Q2MWgxVHd2THFvcXBBUnBXS0Y1NF80b2MxU0tRdU9RekZHOEExRUNmTzlCZ0FwRHU1MU94NFJsZWt0ZDI5R0VyRkJMdHk5bFVOWi1CeE5MbmM5LWRzOThXd1I5WnlmQTlwYmJmMkhuOVpDTkc1ZXZ0czBRZzlzcGZ3Vk5oeXJiTEg0Uzh0RjVKQnZvLVZn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by supersport.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdzVuaDNkbjJmSFh4VktVb0JqLV85aC11aFN0X005RFlTUzVjUzVMclZKNUpUZTQ5NTVRMlNwTlNuMXlWNThPMmxqcnVFZUJMd0Q2MWgxVHd2THFvcXBBUnBXS0Y1NF80b2MxU0tRdU9RekZHOEExRUNmTzlCZ0FwRHU1MU94NFJsZWt0ZDI5R0VyRkJMdHk5bFVOWi1CeE5MbmM5LWRzOThXd1I5WnlmQTlwYmJmMkhuOVpDTkc1ZXZ0czBRZzlzcGZ3Vk5oeXJiTEg0Uzh0RjVKQnZvLVZn?oc=5)
