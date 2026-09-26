@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-26T15:36:53+00:00",
+  "fetched_at": "2026-09-26T20:35:01+00:00",
   "count": 60,
   "tiles": [
     {
@@ -60,10 +60,26 @@
     },
     {
       "kind": "news",
-      "title": "Warriors back home, shift focus to fixture against DRC",
-      "link": "https://mutapatimes.com/articles/2026-09-26-warriors-back-home-shift-focus-to-fixture-against-drc",
-      "image": "https://mutapatimes.com/img/cards/news/37b90cebee0f.png",
-      "pubDate": "2026-09-26T03:35:20+00:00",
+      "title": "Fine & Country Zimbabwe Launches “Property Passport” to Demystify Real Estate For Zimbabweans At Home and Abroad",
+      "link": "https://mutapatimes.com/articles/2026-09-26-fine-country-zimbabwe-launches-property-passport-to-demystif",
+      "image": "https://mutapatimes.com/img/cards/news/30b14ec0fc89.png",
+      "pubDate": "2026-09-26T06:16:01+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Fine & Country Zimbabwe Launches “Property Passport” to Demystify Real Estate For Zimbabweans At Home and Abroad",
+      "link": "https://mutapatimes.com/news/2026-09-26-fine-country-zimbabwe-launches-property-passport-to-demystify-real-estate-for-b564fc",
+      "image": "https://mutapatimes.com/img/cards/news/5d5eb77ff13b.png",
+      "pubDate": "2026-09-26T06:16:01+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ruwa intensifies enforcement against illegal vending",
+      "link": "https://mutapatimes.com/articles/2026-09-26-ruwa-intensifies-enforcement-against-illegal-vending",
+      "image": "https://mutapatimes.com/img/cards/news/2c649582afcc.png",
+      "pubDate": "2026-09-26T04:06:28+00:00",
       "category": "Business"
     },
     {
@@ -93,25 +109,9 @@
     {
       "kind": "news",
       "title": "Sandawana relocations of 104 families commence as new community developments take shape",
-      "link": "https://mutapatimes.com/articles/2026-09-26-sandawana-relocations-of-104-families-commence-as-new-commun",
-      "image": "https://mutapatimes.com/img/cards/news/25acf8f52c0f.png",
-      "pubDate": "2026-09-26T02:52:52+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Sandawana relocations of 104 families commence as new community developments take shape",
       "link": "https://mutapatimes.com/news/2026-09-26-sandawana-relocations-of-104-families-commence-as-new-community-developments-cb672c",
       "image": "https://mutapatimes.com/img/cards/news/1fa78035344a.png",
       "pubDate": "2026-09-26T02:52:52+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "High Court orders land developer to complete servicing at Alex Brook following impasse over contract",
-      "link": "https://mutapatimes.com/news/2026-09-26-high-court-orders-land-developer-to-complete-servicing-at-alex-brook-following-98fc18",
-      "image": "https://mutapatimes.com/img/cards/news/ba03abefbf61.png",
-      "pubDate": "2026-09-26T02:46:13+00:00",
       "category": "News"
     },
     {
@@ -137,22 +137,6 @@
       "image": "https://mutapatimes.com/img/cards/news/efc853da38f3.png",
       "pubDate": "2026-09-26T01:00:00+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Apama Styles dates Malawi",
-      "link": "https://mutapatimes.com/articles/2026-09-25-apama-styles-dates-malawi",
-      "image": "https://mutapatimes.com/img/cards/news/5fce33a55a68.png",
-      "pubDate": "2026-09-25T23:59:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "‘We are not the enemy’…Zimura chair confronts royalties storm",
-      "link": "https://mutapatimes.com/articles/2026-09-25-we-are-not-the-enemyzimura-chair-confronts-royalties-storm",
-      "image": "https://mutapatimes.com/img/cards/news/6181afb97469.png",
-      "pubDate": "2026-09-25T23:58:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -479,6 +463,22 @@
       "title": "Glenrise — Finance Intern",
       "link": "https://vacancymail.co.zw/jobs/finance-intern-69522/",
       "image": "https://mutapatimes.com/img/cards/jobs/291b2f844861.png",
+      "pubDate": "2026-09-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Wisrod Investments — Managing Director",
+      "link": "https://vacancymail.co.zw/jobs/managing-director-69521/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2026f5fb99d7.png",
+      "pubDate": "2026-09-25T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Runner / General Assistant",
+      "link": "https://vacancymail.co.zw/jobs/runner-general-assistant-69520/",
+      "image": "https://mutapatimes.com/img/cards/jobs/93b45f60b956.png",
       "pubDate": "2026-09-25T22:00:00+00:00",
       "category": "Jobs"
     }
