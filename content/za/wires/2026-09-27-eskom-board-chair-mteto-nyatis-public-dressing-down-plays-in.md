@@ -1,0 +1,16 @@
+---
+title: "Eskom board chair Mteto Nyati’s public dressing-down plays into an old racial trope"
+date: 2026-09-27T20:25:45.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Eskom board chair Mteto Nyati’s public dressing-down plays into an old racial trope"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxNcENQOHZxM3NwWko2VXdXd0JxVnhOUXhkeWtpZC1KNDdCWU9SSmRJczF0UXFhQS1WX1BXeVpYajJrUWgxclZ0YzNTNEI1MkkzZHdET3p4OVQycUk4b3pvUkllMEJPUkNOY1hBTmdZUzBlQkdzcWRLUTdKZVlBUDNuM1o0bld6ZmR3UUFoRW5fRG42RGRaMEhlYXhqdHRySlpFWWpzTkRrSGZBZ0JjSnA1cGJ5a2h1VVZYWUFCd0Jvd0xhWU9ZQkU3MVh6eUlneGU5WkJ1NG5UWGFFcm9mdGhNQXViUkFBZXE2S3ZJVFJoRmRpQVgzS3RTanp2b1hBVV82N0lWTWdtSWhYM2pxdFJGeE9naDdIWDg3akFXZnd0OHJtM0dlY1BqZ0dlVUlmSUk5Q1FKTGw0TFNQWEQ0T1E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxNcENQOHZxM3NwWko2VXdXd0JxVnhOUXhkeWtpZC1KNDdCWU9SSmRJczF0UXFhQS1WX1BXeVpYajJrUWgxclZ0YzNTNEI1MkkzZHdET3p4OVQycUk4b3pvUkllMEJPUkNOY1hBTmdZUzBlQkdzcWRLUTdKZVlBUDNuM1o0bld6ZmR3UUFoRW5fRG42RGRaMEhlYXhqdHRySlpFWWpzTkRrSGZBZ0JjSnA1cGJ5a2h1VVZYWUFCd0Jvd0xhWU9ZQkU3MVh6eUlneGU5WkJ1NG5UWGFFcm9mdGhNQXViUkFBZXE2S3ZJVFJoRmRpQVgzS3RTanp2b1hBVV82N0lWTWdtSWhYM2pxdFJGeE9naDdIWDg3akFXZnd0OHJtM0dlY1BqZ0dlVUlmSUk5Q1FKTGw0TFNQWEQ0T1E?oc=5)
