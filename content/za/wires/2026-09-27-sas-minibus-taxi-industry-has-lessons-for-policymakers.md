@@ -1,0 +1,16 @@
+---
+title: "SA’s minibus taxi industry has lessons for policymakers"
+date: 2026-09-27T02:00:38.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "SA’s minibus taxi industry has lessons for policymakers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVVJZdzVMNHN6SEdWWFhZMEw2YjJ0QUtGNTNvRktWUVBzNnZUdWo4RjN0Tkp3dmZaVjRMQ0hCMGw3YWpndExiUkljdmJ3MkJLQTNIQm9FRWo3VTlXeGd6Mkp3QXNtWmlZSm50Rm55QXhUSTMzZ1pfSXNTTlJXTDJsSmtVRWZ0eVJDcjBueHZOUE82TXdQUVpTb0ZIUm9kdzQzSmMyZm9memc5OXRlMDJ6cUk1Yksyc0FJN1BGYjMyWWpRc295aTdwZTNWSUtEdGQ4VjQ3eWZn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVVJZdzVMNHN6SEdWWFhZMEw2YjJ0QUtGNTNvRktWUVBzNnZUdWo4RjN0Tkp3dmZaVjRMQ0hCMGw3YWpndExiUkljdmJ3MkJLQTNIQm9FRWo3VTlXeGd6Mkp3QXNtWmlZSm50Rm55QXhUSTMzZ1pfSXNTTlJXTDJsSmtVRWZ0eVJDcjBueHZOUE82TXdQUVpTb0ZIUm9kdzQzSmMyZm9memc5OXRlMDJ6cUk1Yksyc0FJN1BGYjMyWWpRc295aTdwZTNWSUtEdGQ4VjQ3eWZn?oc=5)
