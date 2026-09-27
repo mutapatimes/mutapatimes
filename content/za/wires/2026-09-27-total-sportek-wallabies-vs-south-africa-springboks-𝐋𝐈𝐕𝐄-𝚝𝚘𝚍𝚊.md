@@ -1,0 +1,16 @@
+---
+title: "!$+?(-TOTAL_SPORTEK-) Wallabies vs South Africa Springboks 𝐋𝐈𝐕𝐄 𝚝𝚘𝚍𝚊𝚢 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 27 september 2026"
+date: 2026-09-27T10:35:25.000Z
+author: czechinvest.gov.cz
+category: Sport
+image: 
+summary: "!$+?(-TOTAL_SPORTEK-) Wallabies vs South Africa Springboks 𝐋𝐈𝐕𝐄 𝚝𝚘𝚍𝚊𝚢 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 27 september 2026"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wJBVV95cUxPd2hNMS1JRXhWVlVUY19yUTJ1S0pjSDB6QWVEZ3BlMTEySTlGejRQd1I0cFRaOFZkWmZfRk5WRFpTSlk3eGZJcGR3S2lEdloxS1JRajFxUEJMcjlGOXJGQWRGMFJrb3RBaGhBekJYNmpzWlQ2cV9WbHR0QnU1TmtSUTBtZWhRVWMxNTdaRDhmWE40cVlYbzkyenZwOVRaVkNZU3NBTmNOcktMbnZNcXVlUnVvT2VkdjNSSTR1ZHdzOXMtaE54OGk0STRoWmZHUnE4bTJDZFZ4azktQzFJUkRvbWhiVnZKb2d0R1oyOGFFZDFWb3JLeS14VlF0WWVQRHFDUXRTTVFNUVhfTGNKQ21rQTVVbmY1bjBPaDhiZkRmTnQwSnh5RzdXN2hfbkNzekJxWDQ4Z0YwQUtGVm4tc0JaTlZ1bVdUNzNoeTdvczl3SzJTdXZCeVdJMDdRbkNvYWdVRDJwd1FJTXZnSjZnZ3J3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by czechinvest.gov.cz.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wJBVV95cUxPd2hNMS1JRXhWVlVUY19yUTJ1S0pjSDB6QWVEZ3BlMTEySTlGejRQd1I0cFRaOFZkWmZfRk5WRFpTSlk3eGZJcGR3S2lEdloxS1JRajFxUEJMcjlGOXJGQWRGMFJrb3RBaGhBekJYNmpzWlQ2cV9WbHR0QnU1TmtSUTBtZWhRVWMxNTdaRDhmWE40cVlYbzkyenZwOVRaVkNZU3NBTmNOcktMbnZNcXVlUnVvT2VkdjNSSTR1ZHdzOXMtaE54OGk0STRoWmZHUnE4bTJDZFZ4azktQzFJUkRvbWhiVnZKb2d0R1oyOGFFZDFWb3JLeS14VlF0WWVQRHFDUXRTTVFNUVhfTGNKQ21rQTVVbmY1bjBPaDhiZkRmTnQwSnh5RzdXN2hfbkNzekJxWDQ4Z0YwQUtGVm4tc0JaTlZ1bVdUNzNoeTdvczl3SzJTdXZCeVdJMDdRbkNvYWdVRDJwd1FJTXZnSjZnZ3J3?oc=5)

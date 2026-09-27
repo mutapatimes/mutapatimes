@@ -1,0 +1,16 @@
+---
+title: "South African teen has Formula 1 seat in her sights"
+date: 2026-09-27T07:40:54.000Z
+author: dailymaverick.co.za
+category: Business
+image: 
+summary: "South African teen has Formula 1 seat in her sights"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijwJBVV95cUxQbHBMOXVDYzNFVFdJLUVvNUpYUlhkZFA3UGNjVVhaSmltUzJSUUlfZ0JBY0dkSzQwYnk5dHltb1ZEVzQ3R1dQem1ZS3I4YThxWTBtMWtYcHBGYXcxcW1XdDZKQUF4UzJFR1dZdG11bWNwYVVNbjRPZGVjS0hMazRnQmFRY0swUUVCNEZsVTVBODNaTUNJR3VuWERVdWYtNVFLbFZsVFloLTEwTEROS0pDWXU0MEdtLVdCU1g2MXdKRlRsRGhjS3BmWWhyT0hQQzRHc3ZwQU9ka3BEcEJMUEZpdE9MUWtsME5JRzFJTVduN0xQV19LSTJSMzZxTDNUU1o0UXVoc1dEVVQ1bHJLclVR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by dailymaverick.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMijwJBVV95cUxQbHBMOXVDYzNFVFdJLUVvNUpYUlhkZFA3UGNjVVhaSmltUzJSUUlfZ0JBY0dkSzQwYnk5dHltb1ZEVzQ3R1dQem1ZS3I4YThxWTBtMWtYcHBGYXcxcW1XdDZKQUF4UzJFR1dZdG11bWNwYVVNbjRPZGVjS0hMazRnQmFRY0swUUVCNEZsVTVBODNaTUNJR3VuWERVdWYtNVFLbFZsVFloLTEwTEROS0pDWXU0MEdtLVdCU1g2MXdKRlRsRGhjS3BmWWhyT0hQQzRHc3ZwQU9ka3BEcEJMUEZpdE9MUWtsME5JRzFJTVduN0xQV19LSTJSMzZxTDNUU1o0UXVoc1dEVVQ1bHJLclVR?oc=5)

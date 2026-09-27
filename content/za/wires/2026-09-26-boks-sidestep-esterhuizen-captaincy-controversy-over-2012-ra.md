@@ -1,0 +1,16 @@
+---
+title: "Boks sidestep Esterhuizen captaincy controversy over 2012 racial incident"
+date: 2026-09-26T09:03:45.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Boks sidestep Esterhuizen captaincy controversy over 2012 racial incident"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcjZhaXhyQzZ4YTctVmdpcU5fTVlfNWdrcFlFSjcwX3dUd1VHcnFOYnBjRDdVa3VXMWQzWU9ubXFoMEhjR1lzcHMyT1JtMlVWMkNMS2c0LTUwTWIxZzQ0cV9TTnhqNUFtZ3hKMVlfaERra0gxYnRJdUVCY3RHazVfT2VLdnlhclNFdTNENFhtU3JDM0J6TTFRb19NRkFMOEJlM0g5TnZZZENsaHJ0QS04SXkwOGlCYlBPX3o3MzRsMWtnNTJpbGhrYmZvQld0UQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMizgFBVV95cUxQcjZhaXhyQzZ4YTctVmdpcU5fTVlfNWdrcFlFSjcwX3dUd1VHcnFOYnBjRDdVa3VXMWQzWU9ubXFoMEhjR1lzcHMyT1JtMlVWMkNMS2c0LTUwTWIxZzQ0cV9TTnhqNUFtZ3hKMVlfaERra0gxYnRJdUVCY3RHazVfT2VLdnlhclNFdTNENFhtU3JDM0J6TTFRb19NRkFMOEJlM0g5TnZZZENsaHJ0QS04SXkwOGlCYlBPX3o3MzRsMWtnNTJpbGhrYmZvQld0UQ?oc=5)
