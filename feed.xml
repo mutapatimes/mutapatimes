@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2026 05:47:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 11:08:34 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -737,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/news/7c93dd07d2c6.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/7c93dd07d2c6.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/7c93dd07d2c6.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Econet targets Zim enterprise cloud market</title>
-      <link>https://mutapatimes.com/news/2026-09-28-econet-targets-zim-enterprise-cloud-market-949aef</link>
-      <description>Econet targets Zim enterprise cloud market — via ITWeb Africa #Zimbabwe #ZimbabweNews</description>
-      <pubDate>Fri, 28 Aug 2026 07:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/news/2026-09-28-econet-targets-zim-enterprise-cloud-market-949aef</guid>
-      <category>Technology</category>
-      <dc:creator>ITWeb Africa</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/878e9d5c7023.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/878e9d5c7023.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/878e9d5c7023.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
