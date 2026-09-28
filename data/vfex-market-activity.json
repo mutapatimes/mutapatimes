@@ -1,83 +1,95 @@
 {
-  "fetched_at": "2026-09-25T19:17:36.231956+00:00",
-  "as_of": "2026-09-25",
+  "fetched_at": "2026-09-28T18:35:48.522093+00:00",
+  "as_of": "2026-09-28",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 139,
-    "turnover": 2159649.32,
-    "volume": 1607027.0,
-    "market_cap": 8284079493.54
+    "trades": 203,
+    "turnover": 4550034.89,
+    "volume": 92519961.0,
+    "market_cap": 8368379146.26
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 273.37,
-      "change_pct": 1.23,
-      "change_points": 3.33,
-      "direction": "up"
+      "value": 270.77,
+      "change_pct": -0.95,
+      "change_points": -2.6,
+      "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "First Capital Bank Limited",
-      "symbol": "FCA.VX",
-      "price": 15.87,
-      "change_pct": 4.41
+      "name": "Old Mutual Limited",
+      "symbol": "OMU.VX",
+      "price": 91.79,
+      "change_pct": 2.81
     },
     {
-      "name": "Padenga Holdings Ltd",
-      "symbol": "PHL.VX",
-      "price": 150.29,
-      "change_pct": 2.31
-    },
-    {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 71.82,
-      "change_pct": 1.2
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 2.25,
+      "change_pct": 2.27
     },
     {
       "name": "Caledonia Mining Corporation Plc",
       "symbol": "CMCL.VX",
-      "price": 3960.0,
+      "price": 3994.46,
+      "change_pct": 0.87
+    },
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "price": 150.7,
+      "change_pct": 0.43
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 72.0,
       "change_pct": 0.25
     }
   ],
   "losers": [
     {
-      "name": "Kavango Resources Plc",
-      "symbol": "KAV.VX",
-      "price": 2.2,
-      "change_pct": -3.93
+      "name": "Tsl Limited",
+      "symbol": "TSL.VX",
+      "price": 23.17,
+      "change_pct": -6.95
     },
     {
-      "name": "Old Mutual Limited",
-      "symbol": "OMU.VX",
-      "price": 89.28,
+      "name": "First Capital Bank Limited",
+      "symbol": "FCA.VX",
+      "price": 15.53,
+      "change_pct": -2.14
+    },
+    {
+      "name": "Padenga Holdings Ltd",
+      "symbol": "PHL.VX",
+      "price": 147.56,
+      "change_pct": -1.82
+    },
+    {
+      "name": "Edgars Stores Limited",
+      "symbol": "EDGR.VX",
+      "price": 2.48,
       "change_pct": -0.8
     },
     {
-      "name": "Axia Corporation Limited",
-      "symbol": "AXIA.VX",
-      "price": 15.95,
-      "change_pct": -0.31
-    },
-    {
-      "name": "Innscor Africa Limited",
-      "symbol": "INN.VX",
-      "price": 150.05,
-      "change_pct": -0.25
-    },
-    {
-      "name": "Econet Infraco",
-      "symbol": "INFR.VX",
-      "price": 22.83,
-      "change_pct": -0.13
+      "name": "Zimplow Holdings Limited",
+      "symbol": "ZIMW.VX",
+      "price": 11.96,
+      "change_pct": -0.33
     }
   ],
   "notices": [
+    {
+      "date": "2026-09-28",
+      "title": "Notice of Termination of Listing of Edgars Stores Limited",
+      "category": "",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/296/download"
+    },
     {
       "date": "2026-08-13",
       "title": "Public Notice - VFEX Market Capitalisation Computation",
@@ -119,12 +131,6 @@
       "title": "Press Release: First Mutual Wealth Gold ETF Listing",
       "category": "",
       "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/271/download"
-    },
-    {
-      "date": "2026-04-02",
-      "title": "ZSE & VFEX Joint Practice Note 2",
-      "category": "",
-      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/268/download"
     }
   ]
 }
