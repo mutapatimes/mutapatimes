@@ -1,0 +1,16 @@
+---
+title: "SA to pay the price of doing nothing as US runs out of patience"
+date: 2026-09-28T18:47:10.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA to pay the price of doing nothing as US runs out of patience"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgJBVV95cUxNN0dhWC1Lel9lUFU3VThYcVBaSEFVcE5sdkxzSW1KLXhIdnhPSFhhc1lCOWxWb3Yzd2k4cHNFX3djMTdnV3N1Zm5ZdndCclV2RDFtdnlSWmRpN2R6ZnIzbGhfYldPSnZ5R2ZFZ1g4bGJGZGJNeEtMOHlBZzZZYnBPZVc3WTFURkdjWEsxeDBuaGdkRVJPTWlST3VKeV9adEhlS1B2azdMS2dveldza1luUjZXbk9VTG5qNTY5Vk5ydW1QVWxTM0xYUVFZVlZERXpuY2dDbS1Fb2x4NFNBMk43N0tPYVVwYjN6R1VtdnBONUZCVm5QUTlUV05hQUkzd0hWdFJGRExMVGhmcUZ5aDMzNElsaHJHTmpXQmN5cXVMSDBvTk00MDMteXhfMU1Vdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirgJBVV95cUxNN0dhWC1Lel9lUFU3VThYcVBaSEFVcE5sdkxzSW1KLXhIdnhPSFhhc1lCOWxWb3Yzd2k4cHNFX3djMTdnV3N1Zm5ZdndCclV2RDFtdnlSWmRpN2R6ZnIzbGhfYldPSnZ5R2ZFZ1g4bGJGZGJNeEtMOHlBZzZZYnBPZVc3WTFURkdjWEsxeDBuaGdkRVJPTWlST3VKeV9adEhlS1B2azdMS2dveldza1luUjZXbk9VTG5qNTY5Vk5ydW1QVWxTM0xYUVFZVlZERXpuY2dDbS1Fb2x4NFNBMk43N0tPYVVwYjN6R1VtdnBONUZCVm5QUTlUV05hQUkzd0hWdFJGRExMVGhmcUZ5aDMzNElsaHJHTmpXQmN5cXVMSDBvTk00MDMteXhfMU1Vdw?oc=5)

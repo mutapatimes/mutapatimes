@@ -1,0 +1,16 @@
+---
+title: "Paint-stripping petrol, bad deals and secret debts — the real cost of PetroSA’s collapse"
+date: 2026-09-28T20:51:13.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Paint-stripping petrol, bad deals and secret debts — the real cost of PetroSA’s collapse"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiugJBVV95cUxPeU9ER0NZMzR2dlZiU0JzUUlUOUdrQnVOWUZQRDB1R256Y241Slc1Q0xKWFp2N1l6M0t4N19Sb2F4NGZ4a25CT3lKUWhUb3ZDclhhQVVEb2dZbkN0VEJJdkJLUDVYbkFGRk1Bc3lEeTZWN2ZocWJQT1FEaW1UdUZ2WGNXM0NFWl9lX3gzNUpoQ016alcwSzQyTU4tdUFfLVhxWll3ZmlfcjlEcnROTllNMU0wZ0tFTElBYUw5cTVydGg4V2hmdnhGOFVVQm5TWDVNc1NsNVYzSV82aG1OcE9QTVlFcVJRTHVpbzhtalNtNW5ybTBnbjRwUGViSFdzNXZlUEE4ajJwSzFxNjhiNUZJNXdqblVTNW4ySWMxSC1GUDJNRVo4R3BxU1psZkZGMGJqeDBZTTlIZy1LZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiugJBVV95cUxPeU9ER0NZMzR2dlZiU0JzUUlUOUdrQnVOWUZQRDB1R256Y241Slc1Q0xKWFp2N1l6M0t4N19Sb2F4NGZ4a25CT3lKUWhUb3ZDclhhQVVEb2dZbkN0VEJJdkJLUDVYbkFGRk1Bc3lEeTZWN2ZocWJQT1FEaW1UdUZ2WGNXM0NFWl9lX3gzNUpoQ016alcwSzQyTU4tdUFfLVhxWll3ZmlfcjlEcnROTllNMU0wZ0tFTElBYUw5cTVydGg4V2hmdnhGOFVVQm5TWDVNc1NsNVYzSV82aG1OcE9QTVlFcVJRTHVpbzhtalNtNW5ybTBnbjRwUGViSFdzNXZlUEE4ajJwSzFxNjhiNUZJNXdqblVTNW4ySWMxSC1GUDJNRVo4R3BxU1psZkZGMGJqeDBZTTlIZy1LZw?oc=5)

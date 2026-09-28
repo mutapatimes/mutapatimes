@@ -1,0 +1,16 @@
+---
+title: "Belgium vs France – Nations League: Team line-ups, head-to-head, Mbappe"
+date: 2026-09-28T08:22:34.000Z
+author: Al Jazeera
+category: Tech
+image: 
+summary: "Belgium vs France – Nations League: Team line-ups, head-to-head, Mbappe"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRlUzRGxIaU5obFVVSUE0WVYtVzhoa2hGdWdmb1c5a0o3anl4NXZWN0I5LXRlczJKa2tRcm1XRTl3MlJmUG9kZ0VTWXV6LXNSNG1FNF9GbnBpU1JZcXU1bXNIa2R1VHEwZ0RDTDNWTFlSMnlrcVR2NHQ4NHdodkViV2lobTJoajNyaE43eFVKRG1OQW1wVFg0U004N2c0UUt5NEVpWlBfajJKRHfSAbABQVVfeXFMTWVaUnp2YVd2M0F3a0ZtamlfdHN3LWdnRi1hMFNXZE1IOUZqcXNISGd0bzczZGRNU1V3V3RPeHdMOHBpMVNqRjZZem9WWEhweWI1MjRES0o3TXRtc1FrTjM2aFpfZzRoT2N3UUQzQUlpZFNTZm1xNzNDNzJ3NjhzdGFBMDVaMnF2emdYdnMyTXNBNWZ5eEhfNHJyLXUycXpRY3B4ZFBJT2pkREgyb2NKSEU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRlUzRGxIaU5obFVVSUE0WVYtVzhoa2hGdWdmb1c5a0o3anl4NXZWN0I5LXRlczJKa2tRcm1XRTl3MlJmUG9kZ0VTWXV6LXNSNG1FNF9GbnBpU1JZcXU1bXNIa2R1VHEwZ0RDTDNWTFlSMnlrcVR2NHQ4NHdodkViV2lobTJoajNyaE43eFVKRG1OQW1wVFg0U004N2c0UUt5NEVpWlBfajJKRHfSAbABQVVfeXFMTWVaUnp2YVd2M0F3a0ZtamlfdHN3LWdnRi1hMFNXZE1IOUZqcXNISGd0bzczZGRNU1V3V3RPeHdMOHBpMVNqRjZZem9WWEhweWI1MjRES0o3TXRtc1FrTjM2aFpfZzRoT2N3UUQzQUlpZFNTZm1xNzNDNzJ3NjhzdGFBMDVaMnF2emdYdnMyTXNBNWZ5eEhfNHJyLXUycXpRY3B4ZFBJT2pkREgyb2NKSEU?oc=5)

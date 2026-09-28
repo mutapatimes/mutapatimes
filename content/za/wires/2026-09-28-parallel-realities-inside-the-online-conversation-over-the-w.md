@@ -1,0 +1,16 @@
+---
+title: "Parallel realities — inside the online conversation over the White Cross Project"
+date: 2026-09-28T20:50:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Parallel realities — inside the online conversation over the White Cross Project"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiswJBVV95cUxPSXY1UFVLWHV4andrcl9NWjMzUVZibnozMWlEdUxJUXREUHJ1TUktMUVtOXBUZE9Td190UnRmdWVkRXE0YjBZaFRzQ0VncktHSzZOb3MxN1lsQUNpUmdQbkl6TWREdE81V1VSWFVPVzJoOHJKV1VEeVg3eDFiazVZdnIwc2FrVlZTT3dldVpvWW1xMXVIZkxBdjV6N0Y0WFBIa2lqRHc1Z0hUaGtQc0Y0eldqUjJDcTRWSlBlSFhZbTJXVXJQYVN0MHpaeTMtaXpYQmZVRGRrUVV2REJTWFJSQWRXWmhFS3JFZXdRUUtVMlItcnh4UnlnT1dNQ0dzLUViUUxpak1DQVZvN3VvYVlpR0ZoZUtTTU5QcWJCNU9hOVFBMGtQZ2dua0lSa2g5VW1jZkRr?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiswJBVV95cUxPSXY1UFVLWHV4andrcl9NWjMzUVZibnozMWlEdUxJUXREUHJ1TUktMUVtOXBUZE9Td190UnRmdWVkRXE0YjBZaFRzQ0VncktHSzZOb3MxN1lsQUNpUmdQbkl6TWREdE81V1VSWFVPVzJoOHJKV1VEeVg3eDFiazVZdnIwc2FrVlZTT3dldVpvWW1xMXVIZkxBdjV6N0Y0WFBIa2lqRHc1Z0hUaGtQc0Y0eldqUjJDcTRWSlBlSFhZbTJXVXJQYVN0MHpaeTMtaXpYQmZVRGRrUVV2REJTWFJSQWRXWmhFS3JFZXdRUUtVMlItcnh4UnlnT1dNQ0dzLUViUUxpak1DQVZvN3VvYVlpR0ZoZUtTTU5QcWJCNU9hOVFBMGtQZ2dua0lSa2g5VW1jZkRr?oc=5)

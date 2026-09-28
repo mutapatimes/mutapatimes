@@ -1,0 +1,16 @@
+---
+title: "Dominic Cull regulatory advisor to South Africa’s Internet Service Providers’ Association (ISPA)"
+date: 2026-09-27T13:39:27.000Z
+author: IT News Africa
+category: Tech
+image: 
+summary: "Dominic Cull regulatory advisor to South Africa’s Internet Service Providers’ Association (ISPA)"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxOcFYzNWQ5WHJKQWcwblRQSkpvN0xTcWpzVlV6RnFZWTZrcU4zZS1ZbDZzdnI5bW5CR0xOR3FNYkF4VEdTamk5c0NsclRtSy0xNXRHSVVkWVZVRlROUjd1ZV9lNkJnU3dwQ29LVDA3TTJmelpNU3dDMHRERWlUZi14MVNHaklhUVktTWU3ZzRybVVsTjdGTTdaaW1JUTJVR0RXVlRnSHRBTGRPanJjbXhuZjc4emJ2RXd2QXRrYV9wZ0ljWUdjOU9DdVhyLVhFcjFGcHZBQTZ5WGlLUlBkWHdUdWt5anI1UmFfM3RUMVRmUmhuSmRROVZKbVFBNUdMczhXV2trMUtnMVdxZ3MzaXh4S3lSbkpIN3lmMGgxUC1KWE16azJlYmtiZEVoQVk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IT News Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxOcFYzNWQ5WHJKQWcwblRQSkpvN0xTcWpzVlV6RnFZWTZrcU4zZS1ZbDZzdnI5bW5CR0xOR3FNYkF4VEdTamk5c0NsclRtSy0xNXRHSVVkWVZVRlROUjd1ZV9lNkJnU3dwQ29LVDA3TTJmelpNU3dDMHRERWlUZi14MVNHaklhUVktTWU3ZzRybVVsTjdGTTdaaW1JUTJVR0RXVlRnSHRBTGRPanJjbXhuZjc4emJ2RXd2QXRrYV9wZ0ljWUdjOU9DdVhyLVhFcjFGcHZBQTZ5WGlLUlBkWHdUdWt5anI1UmFfM3RUMVRmUmhuSmRROVZKbVFBNUdMczhXV2trMUtnMVdxZ3MzaXh4S3lSbkpIN3lmMGgxUC1KWE16azJlYmtiZEVoQVk?oc=5)

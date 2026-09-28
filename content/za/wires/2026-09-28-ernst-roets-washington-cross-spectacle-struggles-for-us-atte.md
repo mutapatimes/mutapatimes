@@ -1,0 +1,16 @@
+---
+title: "Ernst Roets’ Washington cross spectacle struggles for US attention"
+date: 2026-09-28T20:50:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Ernst Roets’ Washington cross spectacle struggles for US attention"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxOYmY0Sm5vdmNVM0VlSUVEQXAzVHl4Z1hIY3h0bl9LT2VYa0E1OWhWeHZ3UFd5QmpEY3VwT0JWODduT294T2p1c1JGdlE2c3o1OFE3aGlPeUdNVlg5MFVwY2l4TVItZlg4R0l1SGo5NVByUDM4Ujk4bF9FazR4Z1A2WFRhNWY3NWtYWTRVUm92bVZtYWl5WGdQVjJqQ3A1X1RhWUhIYWcyeEt1ek02ZTVXVmpUa3ZCLVNpa3pHQ1Nzcm1fVHFtNHVWcHN6MU5KQTAyU2Q3U0ZQcHpTaUVZS2ZBNFpBNkJPOW1kUmVIRTVuT3YzLXhHQlotRXRuRnI0UjdMNDhQVkRkTUVmOS1yeTI0SjhTYUdrVDBoSmhBaXo0ZTBRUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxOYmY0Sm5vdmNVM0VlSUVEQXAzVHl4Z1hIY3h0bl9LT2VYa0E1OWhWeHZ3UFd5QmpEY3VwT0JWODduT294T2p1c1JGdlE2c3o1OFE3aGlPeUdNVlg5MFVwY2l4TVItZlg4R0l1SGo5NVByUDM4Ujk4bF9FazR4Z1A2WFRhNWY3NWtYWTRVUm92bVZtYWl5WGdQVjJqQ3A1X1RhWUhIYWcyeEt1ek02ZTVXVmpUa3ZCLVNpa3pHQ1Nzcm1fVHFtNHVWcHN6MU5KQTAyU2Q3U0ZQcHpTaUVZS2ZBNFpBNkJPOW1kUmVIRTVuT3YzLXhHQlotRXRuRnI0UjdMNDhQVkRkTUVmOS1yeTI0SjhTYUdrVDBoSmhBaXo0ZTBRUQ?oc=5)
