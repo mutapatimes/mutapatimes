@@ -1,0 +1,16 @@
+---
+title: "Researchers say eating spekboom"
+date: 2026-09-25T11:41:46.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Researchers say eating spekboom"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSlFQc0tKMlhtMHJ0NElFWEp1WXVOMVUyZWRLWHQwa0RuZ0lsbFhYVlBqTmo0NGNVZW1wLWl3NmxESHkzM01SMVptZjlvMUJlWjMxTjJyX3JPMjBxS0hJaWwtNm1CenRLUFlJZDgxeEdkTy15cGoxNlA2aExwdXd0eXc4eHB3T292czJ4OEt0blVRWUtXUF9DSnAteVk3azhBdG9IeTdHVmpBWUJkX2ZJcm5YNHNSSE9RNDBSQndQQ1FQWkJERGpwTG9WejJMQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMizgFBVV95cUxPSlFQc0tKMlhtMHJ0NElFWEp1WXVOMVUyZWRLWHQwa0RuZ0lsbFhYVlBqTmo0NGNVZW1wLWl3NmxESHkzM01SMVptZjlvMUJlWjMxTjJyX3JPMjBxS0hJaWwtNm1CenRLUFlJZDgxeEdkTy15cGoxNlA2aExwdXd0eXc4eHB3T292czJ4OEt0blVRWUtXUF9DSnAteVk3azhBdG9IeTdHVmpBWUJkX2ZJcm5YNHNSSE9RNDBSQndQQ1FQWkJERGpwTG9WejJMQQ?oc=5)

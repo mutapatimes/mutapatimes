@@ -1,0 +1,16 @@
+---
+title: "Our constitutional values are part of our common heritage"
+date: 2026-09-28T11:20:33.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Our constitutional values are part of our common heritage"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMioAJBVV95cUxOZUNjZ2NsdHNaT0xGclB4T1lOeFI1RGpZVUY2dXliYUhFS1RXc3lvck9EMkJpN1FnT191TnBfajFRTGd5OGNVZTZPdG1ta1NPV1NjanprLTZtVzZkNm1ob3lhbEVVMVBCeTc4SHZZaVgtN2c3V24zQXBZVGJUNGhMQ2Z3WmNydkhPS1pyTkx0ZFV5b2Vzbk50MnhxdGJIYm1EcjVDeW1WVU5BZDZ5LTd6N0JmcXlUVl9KWE5halpoOWppdExqajBUbFpmdWIyZ2t3RWNGQ1pIMmlQWEtJaGlBVUxnR3YyMngtSkhJWVRXMnlEblIzOFNBMXc1S0l4aUZkOVNUbDhGaUxMOUhVT3JFVXJKcTU5S1hRTWx1RVlXT3A?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMioAJBVV95cUxOZUNjZ2NsdHNaT0xGclB4T1lOeFI1RGpZVUY2dXliYUhFS1RXc3lvck9EMkJpN1FnT191TnBfajFRTGd5OGNVZTZPdG1ta1NPV1NjanprLTZtVzZkNm1ob3lhbEVVMVBCeTc4SHZZaVgtN2c3V24zQXBZVGJUNGhMQ2Z3WmNydkhPS1pyTkx0ZFV5b2Vzbk50MnhxdGJIYm1EcjVDeW1WVU5BZDZ5LTd6N0JmcXlUVl9KWE5halpoOWppdExqajBUbFpmdWIyZ2t3RWNGQ1pIMmlQWEtJaGlBVUxnR3YyMngtSkhJWVRXMnlEblIzOFNBMXc1S0l4aUZkOVNUbDhGaUxMOUhVT3JFVXJKcTU5S1hRTWx1RVlXT3A?oc=5)
