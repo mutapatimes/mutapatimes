@@ -1,30 +1,94 @@
 {
-  "fetched_at": "2026-09-29T12:00:31+00:00",
+  "fetched_at": "2026-09-29T17:57:53+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Powering Zimbabwe's Mines | Closing the energy gap",
-      "link": "https://mutapatimes.com/articles/2026-09-29-powering-zimbabwes-mines-closing-the-energy-gap",
-      "image": "https://mutapatimes.com/img/cards/news/c2532654dd10.png",
-      "pubDate": "2026-09-29T09:31:41+00:00",
+      "title": "Zimbabwe compensates displaced white farmers – but not for their land",
+      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwe-compensates-displaced-white-farmers-but-not-for-the",
+      "image": "https://mutapatimes.com/img/cards/news/a52b31d632f8.png",
+      "pubDate": "2026-09-29T15:39:57+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "zse",
+      "title": "ZSE close 29 Sep 2026: All Share 462.23 (+1.50%)",
+      "link": "https://mutapatimes.com/zse?d=2026-09-29",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-09-29",
+      "pubDate": "2026-09-29T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
+      "kind": "news",
+      "title": "Powering Zimbabwe’s Mines | Closing the energy gap: Enabling energy continuity & cost certainty",
+      "link": "https://mutapatimes.com/articles/2026-09-29-powering-zimbabwes-mines-closing-the-energy-gap-enabling-ene",
+      "image": "https://mutapatimes.com/img/cards/news/d398a69d3d92.png",
+      "pubDate": "2026-09-29T09:32:03+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Powering Zimbabwe's Mines | Closing the energy gap",
-      "link": "https://mutapatimes.com/news/2026-09-29-powering-zimbabwe-s-mines-closing-the-energy-gap-b3116f",
-      "image": "https://mutapatimes.com/img/cards/news/ea81b2ce0722.png",
-      "pubDate": "2026-09-29T09:31:41+00:00",
+      "title": "Powering Zimbabwe’s Mines | Closing the energy gap: Enabling energy continuity & cost certainty",
+      "link": "https://mutapatimes.com/news/2026-09-29-powering-zimbabwe-s-mines-closing-the-energy-gap-enabling-energy-continuity-b3116f",
+      "image": "https://mutapatimes.com/img/cards/news/f65b4437ec55.png",
+      "pubDate": "2026-09-29T09:32:03+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Fan dies in National Sports Stadium stampede during Warriors, DRC clash",
-      "link": "https://mutapatimes.com/articles/2026-09-29-fan-dies-in-national-sports-stadium-stampede-during-warriors",
-      "image": "https://mutapatimes.com/img/cards/news/5bac77e9d579.png",
-      "pubDate": "2026-09-29T04:02:38+00:00",
-      "category": "Culture"
+      "title": "Brookings Wildlife Federation discussion to center on Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-09-29-brookings-wildlife-federation-discussion-to-center-on-zimbab",
+      "image": "https://mutapatimes.com/img/cards/news/f0ce3c58ed73.png",
+      "pubDate": "2026-09-29T07:25:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Brookings Wildlife Federation discussion to center on Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-09-29-brookings-wildlife-federation-discussion-to-center-on-zimbabwe-3083fb",
+      "image": "https://mutapatimes.com/img/cards/news/c708a91ae902.png",
+      "pubDate": "2026-09-29T07:25:00+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s trade surplus rises to US$526.5 mln in August",
+      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwes-trade-surplus-rises-to-us5265-mln-in-august",
+      "image": "https://mutapatimes.com/img/cards/news/d28fdc56a538.png",
+      "pubDate": "2026-09-29T05:49:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s trade surplus rises to US$526.5 mln in August",
+      "link": "https://mutapatimes.com/news/2026-09-29-zimbabwe-s-trade-surplus-rises-to-us-526-5-mln-in-august-0e18f2",
+      "image": "https://mutapatimes.com/img/cards/news/7b95e46a08d0.png",
+      "pubDate": "2026-09-29T05:49:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "He tried messing with a talented police sniper: How notorious drug dealer was finally captured after high-speed chase",
+      "link": "https://mutapatimes.com/news/2026-09-29-he-tried-messing-with-a-talented-police-sniper-how-notorious-drug-dealer-was-0adeef",
+      "image": "https://mutapatimes.com/img/cards/news/c9abd252a922.png",
+      "pubDate": "2026-09-29T04:25:29+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "GettyImages-2296813689",
+      "link": "https://mutapatimes.com/articles/2026-09-29-gettyimages-2296813689",
+      "image": "https://mutapatimes.com/img/cards/news/00611f7dca2d.png",
+      "pubDate": "2026-09-29T04:25:11+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Webster Rusere claims inaugural Bard Santner Coastal Classic in Cape Town",
+      "link": "https://mutapatimes.com/articles/2026-09-29-webster-rusere-claims-inaugural-bard-santner-coastal-classic",
+      "image": "https://mutapatimes.com/img/cards/news/f86628c2fce0.png",
+      "pubDate": "2026-09-29T04:15:07+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -33,14 +97,6 @@
       "image": "https://mutapatimes.com/img/cards/news/eb2bba61c83a.png",
       "pubDate": "2026-09-29T04:02:38+00:00",
       "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe land SVNS 3 qualification with Rugby Africa 7s title",
-      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwe-land-svns-3-qualification-with-rugby-africa-7s-titl",
-      "image": "https://mutapatimes.com/img/cards/news/1305c3e73b6f.png",
-      "pubDate": "2026-09-29T03:51:48+00:00",
-      "category": "Sport"
     },
     {
       "kind": "news",
@@ -65,14 +121,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b61fc85ded52.png",
       "pubDate": "2026-09-29T02:48:40+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe’s mining industry: Heading towards a high-stakes, transformative period",
-      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwes-mining-industry-heading-towards-a-high-stakes-tran",
-      "image": "https://mutapatimes.com/img/cards/news/393ca55b6e4a.png",
-      "pubDate": "2026-09-29T02:31:49+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -137,22 +185,6 @@
       "image": "https://mutapatimes.com/img/cards/news/57b6532fef4f.png",
       "pubDate": "2026-09-29T00:08:54+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe musicians set for Dubai",
-      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwe-musicians-set-for-dubai",
-      "image": "https://mutapatimes.com/img/cards/news/cc98407497c6.png",
-      "pubDate": "2026-09-29T00:00:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Leopards spoil Warriors’ party",
-      "link": "https://mutapatimes.com/articles/2026-09-29-leopards-spoil-warriors-party",
-      "image": "https://mutapatimes.com/img/cards/news/6fd6e3107e17.png",
-      "pubDate": "2026-09-29T00:00:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -241,6 +273,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-09-28T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Core Banking (Mifos) Data Engineering & BI Specialist (Microbank)",
+      "link": "https://vacancymail.co.zw/jobs/core-banking-mifos-data-engineering-bi-specialist-microbank-69620/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3959da13503f.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Head Chef / Mine Catering Chef",
+      "link": "https://vacancymail.co.zw/jobs/head-chef-mine-catering-chef-69619/",
+      "image": "https://mutapatimes.com/img/cards/jobs/83a558ba6da6.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Private Chef",
+      "link": "https://vacancymail.co.zw/jobs/private-chef-69618/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d01251ea074d.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "LEGAL AND COMPLIANCE SPECIALIST",
+      "link": "https://vacancymail.co.zw/jobs/legal-and-compliance-specialist-69617/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c5e170749f55.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "TRUCK DRIVERS",
+      "link": "https://vacancymail.co.zw/jobs/truck-drivers-69616/",
+      "image": "https://mutapatimes.com/img/cards/jobs/089068e76004.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "ICT GRADUATE TRAINEE",
+      "link": "https://vacancymail.co.zw/jobs/ict-graduate-trainee-69615/",
+      "image": "https://mutapatimes.com/img/cards/jobs/77293d55bfc1.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Manager/Assistant Estate Manager",
+      "link": "https://vacancymail.co.zw/jobs/managerassistant-estate-manager-69614/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e7c1f5dfd757.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Business Development Officer",
+      "link": "https://vacancymail.co.zw/jobs/business-development-officer-69613/",
+      "image": "https://mutapatimes.com/img/cards/jobs/712104236380.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — PLANNED MAINTENANCE OFFICER x1",
+      "link": "https://vacancymail.co.zw/jobs/planned-maintenance-officer-x1-69612/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6a376791e7b4.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "CeSHHAR Zimbabwe — Early Career Research Innovation Research and Innovation Symposium 2026 Registration and Call for Abstracts",
+      "link": "https://vacancymail.co.zw/jobs/early-career-research-innovation-research-and-innovation-symposium-2026-registration-and-call-for-abstracts-69611/",
+      "image": "https://mutapatimes.com/img/cards/jobs/af2d712e11e6.png",
+      "pubDate": "2026-09-28T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -367,118 +479,6 @@
       "title": "2027 Apprenticeship Intake",
       "link": "https://vacancymail.co.zw/jobs/2027-apprenticeship-intake-69584/",
       "image": "https://mutapatimes.com/img/cards/jobs/9d0a5fe19c90.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Officer Administrator / Executive Assistant",
-      "link": "https://vacancymail.co.zw/jobs/officer-administrator-executive-assistant-69583/",
-      "image": "https://mutapatimes.com/img/cards/jobs/74a49f6dde1a.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Plant Operator x2",
-      "link": "https://vacancymail.co.zw/jobs/assistant-plant-operator-x2-69582/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f196fd372193.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Morgan Zintec College — Lecturer - Research",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-research-69581/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7ce4a1e13294.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Morgan Zintec College — Lecturer - Special Needs (with specialization in hearing impairment)",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-special-needs-with-specialization-in-hearing-impairment-69580/",
-      "image": "https://mutapatimes.com/img/cards/jobs/43832cfa6904.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Morgan Zintec College — Lecturer- Agriculture",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-agriculture-69579/",
-      "image": "https://mutapatimes.com/img/cards/jobs/026dd4769793.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Morgan Zintec College — Lecturer – Mathematics",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-mathematics-69578/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a5f808c5c820.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Morgan Zintec College — Lecturer – Early Childhood Development",
-      "link": "https://vacancymail.co.zw/jobs/lecturer-early-childhood-development-69577/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cb1b5a62bd48.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Enthuse Afrika — Sales Representative B2B",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-b2b-69572/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0444e3933070.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Enthuse Afrika — Sales & Partnerships",
-      "link": "https://vacancymail.co.zw/jobs/sales-partnerships-69571/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4b77ebb55a50.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Enthuse Afrika — Sales & Partnerships",
-      "link": "https://vacancymail.co.zw/jobs/sales-partnerships-69570/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a0dfa6f9fa1f.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hwange Colliery Company Limited — Apprenticeship Intake 2027",
-      "link": "https://vacancymail.co.zw/jobs/apprenticeship-intake-2027-69569/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8256552cdd3c.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Associated Belts and Bearings — Class 1 Mechanic",
-      "link": "https://vacancymail.co.zw/jobs/class-1-mechanic-69568/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4da132262b4a.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — Cake Decorator (Cake Fairy Byo)",
-      "link": "https://vacancymail.co.zw/jobs/cake-decorator-cake-fairy-byo-69567/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ae2669af45e0.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Secondary Book Press — Sales and Marketing Graduate Trainee Mutare Branch",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-graduate-trainee-mutare-branch-69566/",
-      "image": "https://mutapatimes.com/img/cards/jobs/62a28ed22b73.png",
       "pubDate": "2026-09-28T22:00:00+00:00",
       "category": "Jobs"
     }
