@@ -1,0 +1,16 @@
+---
+title: "Ukraine hoping SA will announce progress on returning abducted children"
+date: 2026-09-29T09:55:39.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Ukraine hoping SA will announce progress on returning abducted children"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirwJBVV95cUxPZWpTTnpFTWZYS0xrZmtUdWh5bTRadDFPM2VCVmlXS2hpUzdpTEdGbXl1eTZyWXJUNHZXNFplclpJOWxXUUw4SGQzWWItUmVCQmljR2Frc0VZLXhmMms4QUl3bTlFbUZqeTJ5SFJMX3JCMklfbXA5ZUlWTmtQM0dKYmpqRjZtMm5EaVlkQmc2aVRHY3JrWmlwMEV0Um9Qc3MxMjZHMDQ1Yl9jbjdHSF9YMTQ3YXo0aDNBWEJlbE9CV0g3dllVSW9DMDZjSzdqV2N2YjFISWpxak02VVlZTUdlYVEwNGg1bERfLWxrUGJMUzBzdThNS3pKWHpfUmFHR2YxTXBUQ19DaWhvVmpDOWFOUTF2QVZQTENfZmR1U2syc05LNDFzMzdmWE9HWmNmRVk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirwJBVV95cUxPZWpTTnpFTWZYS0xrZmtUdWh5bTRadDFPM2VCVmlXS2hpUzdpTEdGbXl1eTZyWXJUNHZXNFplclpJOWxXUUw4SGQzWWItUmVCQmljR2Frc0VZLXhmMms4QUl3bTlFbUZqeTJ5SFJMX3JCMklfbXA5ZUlWTmtQM0dKYmpqRjZtMm5EaVlkQmc2aVRHY3JrWmlwMEV0Um9Qc3MxMjZHMDQ1Yl9jbjdHSF9YMTQ3YXo0aDNBWEJlbE9CV0g3dllVSW9DMDZjSzdqV2N2YjFISWpxak02VVlZTUdlYVEwNGg1bERfLWxrUGJMUzBzdThNS3pKWHpfUmFHR2YxTXBUQ19DaWhvVmpDOWFOUTF2QVZQTENfZmR1U2syc05LNDFzMzdmWE9HWmNmRVk?oc=5)
