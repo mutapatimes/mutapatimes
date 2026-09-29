@@ -1,0 +1,16 @@
+---
+title: "McCarthy Reveals Why Kenya Can Beat South Africa"
+date: 2026-09-29T07:54:11.000Z
+author: Soccer Laduma
+category: Sport
+image: 
+summary: "McCarthy Reveals Why Kenya Can Beat South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTWVCa25hT2U1eFM4ajlwWjhzcjl2X3dWLXA5REhqWmpyTlZXY2xZTUNZTFVjN08wdUY3MDh5SE9taHR5MVhZRUo3eWJaZ1k4eFBtaUdDeGlCU1JKT2xoaVJzUHFwZ2NiakZiYkcwN1hTb3ZYNllvUGE2bUp6YmN6MUR6M0hIdm53TTczdGJTWngtTWhPOVQ3ZEZhT0lmT0lyWjAzcHl1TlhoYnBEWU8zOUUzUjBOcUxxVDhySHI1ZkNxZ2VURjcweTZueENRNUY3ZW9SX1p5dnRrV0VXeXAyMnBWYlJyRFk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Soccer Laduma.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTWVCa25hT2U1eFM4ajlwWjhzcjl2X3dWLXA5REhqWmpyTlZXY2xZTUNZTFVjN08wdUY3MDh5SE9taHR5MVhZRUo3eWJaZ1k4eFBtaUdDeGlCU1JKT2xoaVJzUHFwZ2NiakZiYkcwN1hTb3ZYNllvUGE2bUp6YmN6MUR6M0hIdm53TTczdGJTWngtTWhPOVQ3ZEZhT0lmT0lyWjAzcHl1TlhoYnBEWU8zOUUzUjBOcUxxVDhySHI1ZkNxZ2VURjcweTZueENRNUY3ZW9SX1p5dnRrV0VXeXAyMnBWYlJyRFk?oc=5)
