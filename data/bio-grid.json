@@ -1,13 +1,125 @@
 {
-  "fetched_at": "2026-09-29T17:57:53+00:00",
+  "fetched_at": "2026-09-29T21:53:38+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe compensates displaced white farmers – but not for their land",
-      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwe-compensates-displaced-white-farmers-but-not-for-the",
-      "image": "https://mutapatimes.com/img/cards/news/a52b31d632f8.png",
-      "pubDate": "2026-09-29T15:39:57+00:00",
+      "title": "Zimbabwe’s 750bps rate cuts in 2026 still leave borrowing costs highest in Africa - Africa & Europe",
+      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwes-750bps-rate-cuts-in-2026-still-leave-borrowing-cos",
+      "image": "https://mutapatimes.com/img/cards/news/981606045d98.png",
+      "pubDate": "2026-09-29T21:21:18+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s 750bps rate cuts in 2026 still leave borrowing costs highest in Africa - Africa & Europe",
+      "link": "https://mutapatimes.com/news/2026-09-29-zimbabwe-s-750bps-rate-cuts-in-2026-still-leave-borrowing-costs-highest-in-167e87",
+      "image": "https://mutapatimes.com/img/cards/news/161f844e6b07.png",
+      "pubDate": "2026-09-29T21:21:18+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Kariba residents drag govt to court over ferry crisis after 97 die in Mbuya Nehanda disaster - Africa & Europe",
+      "link": "https://mutapatimes.com/news/2026-09-29-kariba-residents-drag-govt-to-court-over-ferry-crisis-after-97-die-in-mbuya-9e7507",
+      "image": "https://mutapatimes.com/img/cards/news/21041a099677.png",
+      "pubDate": "2026-09-29T21:01:33+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "CMCL: Bilboes project drives ambitious production growth, backed by strong economics and funding",
+      "link": "https://mutapatimes.com/articles/2026-09-29-cmcl-bilboes-project-drives-ambitious-production-growth-back",
+      "image": "https://mutapatimes.com/img/cards/news/2eed72676a2d.png",
+      "pubDate": "2026-09-29T20:40:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Why hybrids could put PGMs in the fast lane",
+      "link": "https://mutapatimes.com/articles/2026-09-29-why-hybrids-could-put-pgms-in-the-fast-lane",
+      "image": "https://mutapatimes.com/img/cards/news/2ab99225542d.png",
+      "pubDate": "2026-09-29T20:30:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Why hybrids could put PGMs in the fast lane",
+      "link": "https://mutapatimes.com/news/2026-09-29-why-hybrids-could-put-pgms-in-the-fast-lane-62469d",
+      "image": "https://mutapatimes.com/img/cards/news/6c2e34af55eb.png",
+      "pubDate": "2026-09-29T20:30:36+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Best Southern African songs of 2026: New music from Zambia, Zimbabwe and South Africa - Africa & Europe",
+      "link": "https://mutapatimes.com/articles/2026-09-29-best-southern-african-songs-of-2026-new-music-from-zambia-zi",
+      "image": "https://mutapatimes.com/img/cards/news/81c12171bbab.png",
+      "pubDate": "2026-09-29T20:14:10+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Best Southern African songs of 2026: New music from Zambia, Zimbabwe and South Africa - Africa & Europe",
+      "link": "https://mutapatimes.com/news/2026-09-29-best-southern-african-songs-of-2026-new-music-from-zambia-zimbabwe-and-south-4f871b",
+      "image": "https://mutapatimes.com/img/cards/news/d261aae796e5.png",
+      "pubDate": "2026-09-29T20:14:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "The Best Southern African Songs Right Now",
+      "link": "https://mutapatimes.com/articles/2026-09-29-the-best-southern-african-songs-right-now",
+      "image": "https://mutapatimes.com/img/cards/news/5f742a3bc48e.png",
+      "pubDate": "2026-09-29T19:15:46+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "The Best Southern African Songs Right Now",
+      "link": "https://mutapatimes.com/news/2026-09-29-the-best-southern-african-songs-right-now-905c09",
+      "image": "https://mutapatimes.com/img/cards/news/fe3b6fd24f3e.png",
+      "pubDate": "2026-09-29T19:15:46+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "African Development Fund's Climate Action Window Advances East and Southern Africa Projects Toward Financing",
+      "link": "https://mutapatimes.com/articles/2026-09-29-african-development-funds-climate-action-window-advances-eas",
+      "image": "https://mutapatimes.com/img/cards/news/46aea83811c4.png",
+      "pubDate": "2026-09-29T19:09:32+00:00",
+      "category": "Environment"
+    },
+    {
+      "kind": "news",
+      "title": "Fan dies in National Sports Stadium stampede during Warriors, DRC clash",
+      "link": "https://mutapatimes.com/news/2026-09-29-fan-dies-in-national-sports-stadium-stampede-during-warriors-drc-clash-3d6c9b",
+      "image": "https://mutapatimes.com/img/cards/news/eb2bba61c83a.png",
+      "pubDate": "2026-09-29T18:52:42+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Why BII Is Betting $65 Million on Zambia and Zimbabwe Right Now",
+      "link": "https://mutapatimes.com/articles/2026-09-29-why-bii-is-betting-65-million-on-zambia-and-zimbabwe-right-n",
+      "image": "https://mutapatimes.com/img/cards/news/87695c366767.png",
+      "pubDate": "2026-09-29T18:52:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Why BII Is Betting $65 Million on Zambia and Zimbabwe Right Now",
+      "link": "https://mutapatimes.com/news/2026-09-29-why-bii-is-betting-65-million-on-zambia-and-zimbabwe-right-now-2884c7",
+      "image": "https://mutapatimes.com/img/cards/news/8cd5da186b03.png",
+      "pubDate": "2026-09-29T18:52:28+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Powering Zimbabwe’s Mines | Closing the energy gap: Enabling energy continuity & cost certainty",
+      "link": "https://mutapatimes.com/news/2026-09-29-powering-zimbabwe-s-mines-closing-the-energy-gap-enabling-energy-continuity-b3116f",
+      "image": "https://mutapatimes.com/img/cards/news/f65b4437ec55.png",
+      "pubDate": "2026-09-29T15:31:40+00:00",
       "category": "Business"
     },
     {
@@ -20,83 +132,35 @@
     },
     {
       "kind": "news",
-      "title": "Powering Zimbabwe’s Mines | Closing the energy gap: Enabling energy continuity & cost certainty",
-      "link": "https://mutapatimes.com/articles/2026-09-29-powering-zimbabwes-mines-closing-the-energy-gap-enabling-ene",
-      "image": "https://mutapatimes.com/img/cards/news/d398a69d3d92.png",
-      "pubDate": "2026-09-29T09:32:03+00:00",
+      "title": "Zimbabwe 1-2 DR Congo: Wissa Spoils Warriors’ Emotional Harare Homecoming",
+      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwe-1-2-dr-congo-wissa-spoils-warriors-emotional-harare",
+      "image": "https://mutapatimes.com/img/cards/news/7cd50ba7f3cb.png",
+      "pubDate": "2026-09-29T09:42:00+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Powering Zimbabwe’s Mines | Closing the energy gap: Enabling energy continuity & cost certainty",
-      "link": "https://mutapatimes.com/news/2026-09-29-powering-zimbabwe-s-mines-closing-the-energy-gap-enabling-energy-continuity-b3116f",
-      "image": "https://mutapatimes.com/img/cards/news/f65b4437ec55.png",
-      "pubDate": "2026-09-29T09:32:03+00:00",
+      "title": "Inside Jah Prayzah’s massive wedding as Charles ‘CNN’ Mabika lines up 30 musicians!",
+      "link": "https://mutapatimes.com/articles/2026-09-29-inside-jah-prayzahs-massive-wedding-as-charles-cnn-mabika-li",
+      "image": "https://mutapatimes.com/img/cards/news/8810a7795201.png",
+      "pubDate": "2026-09-29T09:12:39+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Mupachikwa, Ndhlovu move up ICC Women’s rankings",
+      "link": "https://mutapatimes.com/articles/2026-09-29-mupachikwa-ndhlovu-move-up-icc-womens-rankings",
+      "image": "https://mutapatimes.com/img/cards/news/a8803c2b6a44.png",
+      "pubDate": "2026-09-29T09:08:30+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Got an idea for one of Zimbabwe’s big problems? There’s $5,000 on the table",
+      "link": "https://mutapatimes.com/articles/2026-09-29-got-an-idea-for-one-of-zimbabwes-big-problems-theres-5000-on",
+      "image": "https://mutapatimes.com/img/cards/news/5b0405bf1174.png",
+      "pubDate": "2026-09-29T07:39:11+00:00",
       "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Brookings Wildlife Federation discussion to center on Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-09-29-brookings-wildlife-federation-discussion-to-center-on-zimbab",
-      "image": "https://mutapatimes.com/img/cards/news/f0ce3c58ed73.png",
-      "pubDate": "2026-09-29T07:25:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Brookings Wildlife Federation discussion to center on Zimbabwe",
-      "link": "https://mutapatimes.com/news/2026-09-29-brookings-wildlife-federation-discussion-to-center-on-zimbabwe-3083fb",
-      "image": "https://mutapatimes.com/img/cards/news/c708a91ae902.png",
-      "pubDate": "2026-09-29T07:25:00+00:00",
-      "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe’s trade surplus rises to US$526.5 mln in August",
-      "link": "https://mutapatimes.com/articles/2026-09-29-zimbabwes-trade-surplus-rises-to-us5265-mln-in-august",
-      "image": "https://mutapatimes.com/img/cards/news/d28fdc56a538.png",
-      "pubDate": "2026-09-29T05:49:36+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe’s trade surplus rises to US$526.5 mln in August",
-      "link": "https://mutapatimes.com/news/2026-09-29-zimbabwe-s-trade-surplus-rises-to-us-526-5-mln-in-august-0e18f2",
-      "image": "https://mutapatimes.com/img/cards/news/7b95e46a08d0.png",
-      "pubDate": "2026-09-29T05:49:36+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "He tried messing with a talented police sniper: How notorious drug dealer was finally captured after high-speed chase",
-      "link": "https://mutapatimes.com/news/2026-09-29-he-tried-messing-with-a-talented-police-sniper-how-notorious-drug-dealer-was-0adeef",
-      "image": "https://mutapatimes.com/img/cards/news/c9abd252a922.png",
-      "pubDate": "2026-09-29T04:25:29+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "GettyImages-2296813689",
-      "link": "https://mutapatimes.com/articles/2026-09-29-gettyimages-2296813689",
-      "image": "https://mutapatimes.com/img/cards/news/00611f7dca2d.png",
-      "pubDate": "2026-09-29T04:25:11+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Webster Rusere claims inaugural Bard Santner Coastal Classic in Cape Town",
-      "link": "https://mutapatimes.com/articles/2026-09-29-webster-rusere-claims-inaugural-bard-santner-coastal-classic",
-      "image": "https://mutapatimes.com/img/cards/news/f86628c2fce0.png",
-      "pubDate": "2026-09-29T04:15:07+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Fan dies in National Sports Stadium stampede during Warriors, DRC clash",
-      "link": "https://mutapatimes.com/news/2026-09-29-fan-dies-in-national-sports-stadium-stampede-during-warriors-drc-clash-3d6c9b",
-      "image": "https://mutapatimes.com/img/cards/news/eb2bba61c83a.png",
-      "pubDate": "2026-09-29T04:02:38+00:00",
-      "category": "Entertainment"
     },
     {
       "kind": "news",
@@ -184,38 +248,6 @@
       "link": "https://mutapatimes.com/news/2026-09-29-gwanzura-leads-zimbabwe-women-to-historic-win-s-africa-europe-c0a320",
       "image": "https://mutapatimes.com/img/cards/news/57b6532fef4f.png",
       "pubDate": "2026-09-29T00:08:54+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe stun Windies as Gwanzura stars with bat and ball - Africa & Europe",
-      "link": "https://mutapatimes.com/news/2026-09-28-zimbabwe-stun-windies-as-gwanzura-stars-with-bat-and-ball-africa-europe-88b8c7",
-      "image": "https://mutapatimes.com/img/cards/news/a90342b24652.png",
-      "pubDate": "2026-09-28T23:47:42+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Australia Defeats Zimbabwe by 1 Wicket to Clinch Series 3-0",
-      "link": "https://mutapatimes.com/news/2026-09-28-australia-defeats-zimbabwe-by-1-wicket-to-clinch-series-3-0-1201ef",
-      "image": "https://mutapatimes.com/img/cards/news/4b9dff70fadf.png",
-      "pubDate": "2026-09-28T23:35:43+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Wissa spoils Zimbabwe homecoming as DR Congo win Afcon qualifier - Sport - Africa & Europe",
-      "link": "https://mutapatimes.com/news/2026-09-28-wissa-spoils-zimbabwe-homecoming-as-dr-congo-win-afcon-qualifier-sport-africa-fc2f4f",
-      "image": "https://mutapatimes.com/img/cards/news/295883938d3c.png",
-      "pubDate": "2026-09-28T23:21:17+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe: MSD Warns of Heavy Rains, Lightning and Strong Winds - Africa & Europe",
-      "link": "https://mutapatimes.com/news/2026-09-28-zimbabwe-msd-warns-of-heavy-rains-lightning-and-strong-winds-africa-europe-5308b2",
-      "image": "https://mutapatimes.com/img/cards/news/e8858c287400.png",
-      "pubDate": "2026-09-28T22:59:18+00:00",
       "category": "News"
     },
     {
@@ -447,38 +479,6 @@
       "title": "Mkoba Teachers College — Mathematics Lecturer x1 post",
       "link": "https://vacancymail.co.zw/jobs/mathematics-lecturer-x1-post-69588/",
       "image": "https://mutapatimes.com/img/cards/jobs/2b823b347b29.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mkoba Teachers College — Citizenry for National Development (Entrepreneurship) Lecturer x1 post",
-      "link": "https://vacancymail.co.zw/jobs/citizenry-for-national-development-entrepreneurship-lecturer-x1-post-69587/",
-      "image": "https://mutapatimes.com/img/cards/jobs/88e59d632d05.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mkoba Teachers College — Citizenry for National Development (History) Lecturer x1 post",
-      "link": "https://vacancymail.co.zw/jobs/citizenry-for-national-development-history-lecturer-x1-post-69586/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c6e9cd564a75.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mkoba Teachers College — Accountant",
-      "link": "https://vacancymail.co.zw/jobs/accountant-69585/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d568b7888fca.png",
-      "pubDate": "2026-09-28T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "2027 Apprenticeship Intake",
-      "link": "https://vacancymail.co.zw/jobs/2027-apprenticeship-intake-69584/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9d0a5fe19c90.png",
       "pubDate": "2026-09-28T22:00:00+00:00",
       "category": "Jobs"
     }
