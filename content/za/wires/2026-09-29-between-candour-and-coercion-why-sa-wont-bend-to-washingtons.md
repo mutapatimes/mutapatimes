@@ -1,0 +1,16 @@
+---
+title: "Between candour and coercion — why SA won’t bend to Washington’s dictates"
+date: 2026-09-29T21:30:42.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Between candour and coercion — why SA won’t bend to Washington’s dictates"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxQZGFaeUgxOVllU1lRWUN3U0RPVVhYNU9NdXhTamdtQWk3UzUtS25uemJ2OTdiTmpYcDNWUUlkR1ppeWRpVzBGMVZ0RDFRcHBKbjhnNDFhanZKYzRmbGgyQU9Rb01lVFZPQmVkcTU4c2RHMEptWDQxcjU1TFJnR1Rrbm5CaTRYM1lVVE4xSE1xdTBWZDYxVkpPRkJnV2ZkUjh0N2QxXzNkTl9wS2RrQWdvZjdxbk1vSDZOSUNETngtbzZHVTZjOGxXQWcxT3VIaXBLOGZxVFdoVVl6VFFsU1BpcU10eU05T05kSzNubnEzb25hMjhNWmd5bnNRZmxITkJZUi1PTnl4STVYY3Z2ZmJvenllOHp4TFVfVGo1SXphNDlmeHdiWkl4bE9VcEU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxQZGFaeUgxOVllU1lRWUN3U0RPVVhYNU9NdXhTamdtQWk3UzUtS25uemJ2OTdiTmpYcDNWUUlkR1ppeWRpVzBGMVZ0RDFRcHBKbjhnNDFhanZKYzRmbGgyQU9Rb01lVFZPQmVkcTU4c2RHMEptWDQxcjU1TFJnR1Rrbm5CaTRYM1lVVE4xSE1xdTBWZDYxVkpPRkJnV2ZkUjh0N2QxXzNkTl9wS2RrQWdvZjdxbk1vSDZOSUNETngtbzZHVTZjOGxXQWcxT3VIaXBLOGZxVFdoVVl6VFFsU1BpcU10eU05T05kSzNubnEzb25hMjhNWmd5bnNRZmxITkJZUi1PTnl4STVYY3Z2ZmJvenllOHp4TFVfVGo1SXphNDlmeHdiWkl4bE9VcEU?oc=5)

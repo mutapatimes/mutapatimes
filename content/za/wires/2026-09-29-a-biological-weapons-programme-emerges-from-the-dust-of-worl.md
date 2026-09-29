@@ -1,0 +1,16 @@
+---
+title: "A biological weapons programme emerges from the dust of World War 2"
+date: 2026-09-29T19:45:40.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "A biological weapons programme emerges from the dust of World War 2"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxNM1lTSkllYm0wMG83b1pNZmsxUnB2b3VJVVJRazdqTDFnUXFGNWl1TXoybElITWx0M1lzZzktUU5uWGVKbHRDYkxDOHR2Z1JXc2JDZ21zdnZpcDMzam9RcUFxaktheWR1dm5UOUdoNS1IS2ZVb0V0NlROWHlTYldYQ2ZlU1pxSDFuX3pwMklSbmNwbE00RTRHZS01YmxXcGhpQU1hWkRuQjBhNnBVb1NlaDFIUlJQTDlxVUhiUng3ZWdLelFNRWZiTFRfRkJZdzdRdGQ4UURCV1RQYURvbmNEZTM2Z3lGQ25GS0NtNzdmblRNYXB3YzhLd3JkU1dvbWlVWDJRV2tLSVYyenFzblgzNUhyWFVfaHJOTXhjREhBMEdxR3piM0dBbmJaamlHR0N5QTZiRg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxNM1lTSkllYm0wMG83b1pNZmsxUnB2b3VJVVJRazdqTDFnUXFGNWl1TXoybElITWx0M1lzZzktUU5uWGVKbHRDYkxDOHR2Z1JXc2JDZ21zdnZpcDMzam9RcUFxaktheWR1dm5UOUdoNS1IS2ZVb0V0NlROWHlTYldYQ2ZlU1pxSDFuX3pwMklSbmNwbE00RTRHZS01YmxXcGhpQU1hWkRuQjBhNnBVb1NlaDFIUlJQTDlxVUhiUng3ZWdLelFNRWZiTFRfRkJZdzdRdGQ4UURCV1RQYURvbmNEZTM2Z3lGQ25GS0NtNzdmblRNYXB3YzhLd3JkU1dvbWlVWDJRV2tLSVYyenFzblgzNUhyWFVfaHJOTXhjREhBMEdxR3piM0dBbmJaamlHR0N5QTZiRg?oc=5)
