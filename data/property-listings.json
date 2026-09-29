@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-29T05:42:31.286353+00:00",
+  "fetched_at": "2026-09-29T12:50:51.939197+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -38,6 +38,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/89/38/a5/8938a5db-da74-4869-8c7d-c3d05be3b2c3_thumbnail591.webp",
       "beds": "2",
       "baths": "1"
+    },
+    {
+      "title": "Belgravia Main Road Property For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-apgp256088",
+      "price": "USD 1,250,000",
+      "location": "Belgravia, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/e0/ae/39/e0ae3991-46e0-497e-9dba-c6cd5d46be66_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     },
     {
       "title": "House in Luveve Bulawayo For Sale",
@@ -157,15 +166,6 @@
       "baths": ""
     },
     {
-      "title": "Gletwyn House For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-apgp237909",
-      "price": "USD 395,000",
-      "location": "Gletwin Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/9e/89/96/9e8996de-7395-496e-b7d0-8ea25496a0e3_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Pumula South45",
       "url": "https://www.property.co.zw/for-sale/houses-rdr255774",
       "price": "USD 45,000",
@@ -173,6 +173,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/fe/07/a7/fe07a7e8-0de1-406b-81a8-6ea0a9e8bf20_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
+    },
+    {
+      "title": "Charming 4 Bedroom Thatched Home",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp256111",
+      "price": "USD 185,000",
+      "location": "Burnside, Bulawayo East",
+      "image": "https://www.property.co.zw/uploadedfiles/77/88/19/7788190d-4b93-4574-9d97-fcb60e090fdc_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     },
     {
       "title": "Fine Living in the Highlands Park Neighbourhood",
@@ -190,15 +199,6 @@
       "location": "Marlborough, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/c4/d4/fe/c4d4fedf-36c2-4e7d-978b-830aabaf9647_thumbnail591.webp",
       "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Tranquil 2-Bedroom Haven with Outdoor Entertainment Space",
-      "url": "https://www.property.co.zw/for-sale/houses-lcre249156",
-      "price": "USD 190,000",
-      "location": "Sentosa, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/72/8b/9d/728b9d6c-a728-4006-a552-129c29c09aab_thumbnail591.webp",
-      "beds": "2",
       "baths": "2"
     }
   ]
