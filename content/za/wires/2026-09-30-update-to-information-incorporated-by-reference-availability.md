@@ -1,0 +1,16 @@
+---
+title: "Update to information incorporated by reference: Availability of the Quarterly Bulletin published by the South African Reserve Bank"
+date: 2026-09-30T12:25:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "Update to information incorporated by reference: Availability of the Quarterly Bulletin published by the South African Reserve Bank"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQd2hJdUpyZFBPdktCTVBxcU5kS3pNTUY1ajR5b0R3aVg4bkFWQVJwcGljak0wNDRXS3dhY3VZR0xjTHpybTJpbVhnOGVnOUNfem5mS0kwS1p2Y2FaaE5vVWpyQ0tYNlR4aWpCTlhUYW1ROG5OS2lUM1RadjVKTU9iY3ozRnZPQ2JYT3FJVkpnSFlkRzNyY3V4MWxrbklTM2xoUExDdlRibjFSVkhaanVJYnpDLWE5RkcxZmVWX1NuRFNBVl9aX3ZMU05oM2lxeXppeGxPV0dzMnBTVlh0aEtubGFwUkM5c0I0VGJIUWVGanZzSnFQRWFBRGlLdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi-wFBVV95cUxQd2hJdUpyZFBPdktCTVBxcU5kS3pNTUY1ajR5b0R3aVg4bkFWQVJwcGljak0wNDRXS3dhY3VZR0xjTHpybTJpbVhnOGVnOUNfem5mS0kwS1p2Y2FaaE5vVWpyQ0tYNlR4aWpCTlhUYW1ROG5OS2lUM1RadjVKTU9iY3ozRnZPQ2JYT3FJVkpnSFlkRzNyY3V4MWxrbklTM2xoUExDdlRibjFSVkhaanVJYnpDLWE5RkcxZmVWX1NuRFNBVl9aX3ZMU05oM2lxeXppeGxPV0dzMnBTVlh0aEtubGFwUkM5c0I0VGJIUWVGanZzSnFQRWFBRGlLdw?oc=5)
