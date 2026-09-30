@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 22:16:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 22:23:17 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Caritas Zimbabwe Mutare — Bore hole drilling quotation</title>
+      <link>https://mutapatimes.com/stories/1443195096cc.html</link>
+      <description>Caritas Mutare intends to improve access to reliable water for communities and productive livelihoods in Ward 30, Makoni District. Caritas therefore seeks a qualified contractor to undertake hydrogeo… Makoni · Contractor (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Wed, 30 Sep 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/1443195096cc.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Caritas Zimbabwe Mutare</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/1443195096cc.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/1443195096cc.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/1443195096cc.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Recoveries Officer</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/4da132262b4a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4da132262b4a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/4da132262b4a.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Cake Fairy ~~ 0 — Cake Decorator (Cake Fairy Byo)</title>
-      <link>https://mutapatimes.com/stories/ae2669af45e0.html</link>
-      <description>Cake Fairy is looking for a skilled, artistic, hardworking and passionate cake decorator to fill in the open post in the Company. Bulawayo · Contractor · negotiable (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 30 Sep 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/ae2669af45e0.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Cake Fairy ~~ 0</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/ae2669af45e0.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ae2669af45e0.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/ae2669af45e0.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
