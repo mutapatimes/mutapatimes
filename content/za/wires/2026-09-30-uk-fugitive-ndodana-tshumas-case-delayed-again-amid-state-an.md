@@ -1,0 +1,16 @@
+---
+title: "UK fugitive Ndodana Tshuma’s case delayed again amid State and defence disagreements"
+date: 2026-09-30T14:02:57.000Z
+author: news24.com
+category: Business
+image: 
+summary: "UK fugitive Ndodana Tshuma’s case delayed again amid State and defence disagreements"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR01ucGpMUzlSenkwSHBIbnFYSU91cFhlY214RlBVczc2dlhQZUFFbV8xRXJoVzktWnBKdm9xbkY5Z3BHMzlsYWFMN192V0s1X0dsZThCTTRZb3RZUTFiM2t6NnE0d3lHMzJ3U3J2aHUwdmhTRmpIOENxZnUyaFR6N3VMMG9tY0tjbjdlb3llRklEMHNXdk9sbVFROUFiM3BtanVPaDVQTlhhRzNjOXROcTRvbktfelJ0X3FsOFRXYzhIVmw3NXZQakRwTlVPbW41MXpfY0ZsTklBMzVrTEh0cmljOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR01ucGpMUzlSenkwSHBIbnFYSU91cFhlY214RlBVczc2dlhQZUFFbV8xRXJoVzktWnBKdm9xbkY5Z3BHMzlsYWFMN192V0s1X0dsZThCTTRZb3RZUTFiM2t6NnE0d3lHMzJ3U3J2aHUwdmhTRmpIOENxZnUyaFR6N3VMMG9tY0tjbjdlb3llRklEMHNXdk9sbVFROUFiM3BtanVPaDVQTlhhRzNjOXROcTRvbktfelJ0X3FsOFRXYzhIVmw3NXZQakRwTlVPbW41MXpfY0ZsTklBMzVrTEh0cmljOA?oc=5)

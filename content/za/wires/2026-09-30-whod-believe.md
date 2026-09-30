@@ -1,0 +1,16 @@
+---
+title: "Who’d believe"
+date: 2026-09-30T18:05:43.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Who’d believe"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRDYzLXRaY3I2TjUwaml4UXEyck9Qb2t5V3kybUVqSnN6R19KN3BYUGFIMTdHM2dvbEFOSmpqVEJtakUzVW02YTg5czNSX2FyeG5nS3lJOGFCaW44ZUNsQkhMSDdidkZSVGNwVTV1MVdFWS1KTzQ1bURDQUpmMzNxaXFYMTQtMFNhU1VxaGwtZnRGWnV5MWU1U1p4bUFzQjhvN1pFR3owSHNfZTc0dnFjQlhnd0pKMDRaTkw2Q0RrVnNzSF85WXhKcDZkZ2ppRjNDQXo5MnlIR1VTYWNaSGxR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRDYzLXRaY3I2TjUwaml4UXEyck9Qb2t5V3kybUVqSnN6R19KN3BYUGFIMTdHM2dvbEFOSmpqVEJtakUzVW02YTg5czNSX2FyeG5nS3lJOGFCaW44ZUNsQkhMSDdidkZSVGNwVTV1MVdFWS1KTzQ1bURDQUpmMzNxaXFYMTQtMFNhU1VxaGwtZnRGWnV5MWU1U1p4bUFzQjhvN1pFR3owSHNfZTc0dnFjQlhnd0pKMDRaTkw2Q0RrVnNzSF85WXhKcDZkZ2ppRjNDQXo5MnlIR1VTYWNaSGxR?oc=5)

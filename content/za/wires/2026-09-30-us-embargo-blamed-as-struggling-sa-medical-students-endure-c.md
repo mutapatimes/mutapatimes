@@ -1,0 +1,16 @@
+---
+title: "US embargo blamed as struggling SA medical students endure Cuba misery"
+date: 2026-09-30T18:50:43.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "US embargo blamed as struggling SA medical students endure Cuba misery"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipAJBVV95cUxPRzNVcXV3R0M0SWhTbzhpQTNVWjNiUUdWUVkyaUFsTlFRZlBndkRIX0tUYzh3TUxaRkQydWZPRnB6enZ1RzNYMUpUMjEzdzV4OUE4VHlza1ZDcGlXeDhid3Jrc1lHaXI5TjZQQ2ZIbDlmUVQtZ01zNTRyUWs5ZzRqaWRQSWNQejBYNVlLU0ZCS0dOMkt2UjJtT2t3RWdEVnlNd2JKVFZMUGlQZ29mbXRxQ2VQU3VfcXlLeDQ0aVdXdEQ3VlFwQzFnckNvUUw1ZTRYc1FaeUtzSTQ5d2c0dEowcEhpRDJGeEljTEpxS3B5LWw2U3BtVEdLelBQUjNKdFlYNzBVLUVQd1lnd3pFODZ3RGhYbmNIVjZGUXdlaFhrZFdlM2wz?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipAJBVV95cUxPRzNVcXV3R0M0SWhTbzhpQTNVWjNiUUdWUVkyaUFsTlFRZlBndkRIX0tUYzh3TUxaRkQydWZPRnB6enZ1RzNYMUpUMjEzdzV4OUE4VHlza1ZDcGlXeDhid3Jrc1lHaXI5TjZQQ2ZIbDlmUVQtZ01zNTRyUWs5ZzRqaWRQSWNQejBYNVlLU0ZCS0dOMkt2UjJtT2t3RWdEVnlNd2JKVFZMUGlQZ29mbXRxQ2VQU3VfcXlLeDQ0aVdXdEQ3VlFwQzFnckNvUUw1ZTRYc1FaeUtzSTQ5d2c0dEowcEhpRDJGeEljTEpxS3B5LWw2U3BtVEdLelBQUjNKdFlYNzBVLUVQd1lnd3pFODZ3RGhYbmNIVjZGUXdlaFhrZFdlM2wz?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Eritrea 0-5 Bafana Bafana: 'Bathusi Aubaas is faking injury live on TV, Relebohile Mofokeng has brace; pain landed in Marabastad, Orlando Pirates fans were found shaking'"
+date: 2026-09-30T19:41:15.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Eritrea 0-5 Bafana Bafana: 'Bathusi Aubaas is faking injury live on TV, Relebohile Mofokeng has brace; pain landed in Marabastad, Orlando Pirates fans were found shaking'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivgJBVV95cUxObXBXTFFTZC1UWjRsZ3FyQ2VlT1ZsTmpRV09VY2U0Qkw1ZGJZSkhwTlhaUXlaS1JLN1dHcnJyMlliMkRDN3lvSFNSNnBQUkVMTUE0ZG8yV1ZvbUVpam5VR0hYbEhjWWZTLWlJZDFHMXpmbnBweGRnZzRMYzhRdEhaaVhkWkpJelFrckktVWpWRFd0LXBLQzZwOG1HSENpVUViWWZEQjZuYzFVYzBjNGwzeTA3aHRuQndrcTVHcHVVZ3ZHajI4QURDdW5RbUFfaEYzMXpMZENuT0RjOWZYNXFRWmx1eHBMNkltQzZJckVKbUszSVVPbkRQZG54UkN5TGVvR1lUZnBZNFJDYzdTN0dwaHRqWTd4UkotWWVpS0h6UDM0c1F6bVlVclFjbUJlN1p2bm9wbU1pT09JMk1uVlE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMivgJBVV95cUxObXBXTFFTZC1UWjRsZ3FyQ2VlT1ZsTmpRV09VY2U0Qkw1ZGJZSkhwTlhaUXlaS1JLN1dHcnJyMlliMkRDN3lvSFNSNnBQUkVMTUE0ZG8yV1ZvbUVpam5VR0hYbEhjWWZTLWlJZDFHMXpmbnBweGRnZzRMYzhRdEhaaVhkWkpJelFrckktVWpWRFd0LXBLQzZwOG1HSENpVUViWWZEQjZuYzFVYzBjNGwzeTA3aHRuQndrcTVHcHVVZ3ZHajI4QURDdW5RbUFfaEYzMXpMZENuT0RjOWZYNXFRWmx1eHBMNkltQzZJckVKbUszSVVPbkRQZG54UkN5TGVvR1lUZnBZNFJDYzdTN0dwaHRqWTd4UkotWWVpS0h6UDM0c1F6bVlVclFjbUJlN1p2bm9wbU1pT09JMk1uVlE?oc=5)

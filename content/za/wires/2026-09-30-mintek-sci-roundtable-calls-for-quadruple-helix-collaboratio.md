@@ -1,0 +1,16 @@
+---
+title: "Mintek-Sci Roundtable Calls for Quadruple Helix Collaboration to Commercialise South African Mining Research"
+date: 2026-09-30T12:52:23.000Z
+author: IndexBox
+category: Business
+image: 
+summary: "Mintek-Sci Roundtable Calls for Quadruple Helix Collaboration to Commercialise South African Mining Research"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVc5SVNpd3Q2OXpGQk52TldYcEF1YnFqUUFpSjBrUUF6VGRENlR3OE5fWVN3RW5Jc1k2WnFoQlB0M0hTSW9FQ3BXQy1QelY1c2NPMTJtUzJKeXd0V1lLZC1ZSVhuQi1yWlBfQVo3Q3F0WlR4UmMxZTBkUzhFNWhfT18yZVVpQ1pkMHJ0TUd4RHU1VjN2RV9YeU13NHpNSDFycGJZNlRYYjVCcE9vM0pST1RxTmIxcktUTXlxb19wYVhtd1R5WlY5U2xkZEo1bHlHc213dg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IndexBox.*
+[Read original article](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVc5SVNpd3Q2OXpGQk52TldYcEF1YnFqUUFpSjBrUUF6VGRENlR3OE5fWVN3RW5Jc1k2WnFoQlB0M0hTSW9FQ3BXQy1QelY1c2NPMTJtUzJKeXd0V1lLZC1ZSVhuQi1yWlBfQVo3Q3F0WlR4UmMxZTBkUzhFNWhfT18yZVVpQ1pkMHJ0TUd4RHU1VjN2RV9YeU13NHpNSDFycGJZNlRYYjVCcE9vM0pST1RxTmIxcktUTXlxb19wYVhtd1R5WlY5U2xkZEo1bHlHc213dg?oc=5)
