@@ -1,0 +1,16 @@
+---
+title: "Public protector finds Mashazi’s conduct improper over Ekurhuleni appointment"
+date: 2026-10-01T15:20:09.000Z
+author: TimesLIVE
+category: Tech
+image: 
+summary: "Public protector finds Mashazi’s conduct improper over Ekurhuleni appointment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWkFLVko3cVo1WUkzUFhWMjZkN1VocVFZeE14dGNYV0MxMmI5YjJFY0JXdzY0blJLdDhLUUlGQ2dxSTZ0Ykk2WjFFRm1yWW84RjB0WXp3d3pYaU1GR05ZV2RXMWFFVXJkUGdGc2VGVGFpcEhTWjBKMV9qQmFrN1FpS2xJQlRXZUpMdGlfa2VsZVRfRklPVC00ajZDNzNlcGIyUXFndEx3ZzBkWWJraTF2MlVwNnFLRFQ4cklTV09jemUtVzlmUi1xSTdWTHdxVGM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMizwFBVV95cUxOWkFLVko3cVo1WUkzUFhWMjZkN1VocVFZeE14dGNYV0MxMmI5YjJFY0JXdzY0blJLdDhLUUlGQ2dxSTZ0Ykk2WjFFRm1yWW84RjB0WXp3d3pYaU1GR05ZV2RXMWFFVXJkUGdGc2VGVGFpcEhTWjBKMV9qQmFrN1FpS2xJQlRXZUpMdGlfa2VsZVRfRklPVC00ajZDNzNlcGIyUXFndEx3ZzBkWWJraTF2MlVwNnFLRFQ4cklTV09jemUtVzlmUi1xSTdWTHdxVGM?oc=5)
