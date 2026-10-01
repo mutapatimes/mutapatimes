@@ -1,0 +1,16 @@
+---
+title: "Dirco’s démarche"
+date: 2026-09-30T21:41:19.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Dirco’s démarche"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOS3Jyd2J6YUZ4SldsdE10OU8yRVhoN1BMNkRKWFhwdUlLUVh6UGlieWttSmN3ZmNYTnktRDNldGxNSnNPR1ZGU3h1YlFRV2ZYM3c3ZGtUMV84UmJrNG9RWDh4YW9HaWhMcWlQS3VSb1JhMnZnZGdvMmdES0s5M1lqYmgwYlJEVDAtM3hlS2RSdlZVU1RCY3FGaFpyRmZOZnBuR0NvZzhNZFFURXMyZndNSVA0WGVRZHcxN1ZYNzhPSVk4ZDVCUHFyTzI0MDNVczlxVzFCclY5NWl6Vm9xUGk0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOS3Jyd2J6YUZ4SldsdE10OU8yRVhoN1BMNkRKWFhwdUlLUVh6UGlieWttSmN3ZmNYTnktRDNldGxNSnNPR1ZGU3h1YlFRV2ZYM3c3ZGtUMV84UmJrNG9RWDh4YW9HaWhMcWlQS3VSb1JhMnZnZGdvMmdES0s5M1lqYmgwYlJEVDAtM3hlS2RSdlZVU1RCY3FGaFpyRmZOZnBuR0NvZzhNZFFURXMyZndNSVA0WGVRZHcxN1ZYNzhPSVk4ZDVCUHFyTzI0MDNVczlxVzFCclY5NWl6Vm9xUGk0?oc=5)
