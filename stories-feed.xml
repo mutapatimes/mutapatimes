@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2026 22:41:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 22:46:23 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,6 +89,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>First Capital Bank Zimbabwe Limited — Graduate Trainee Programme 2027</title>
+      <link>https://mutapatimes.com/stories/04b34ddb574f.html</link>
+      <description>FIRST CAPITAL BANK ZIMBABWE CAREER OPPORTUNITY Graduate Trainee Programme 2027 | Developing Tomorrow’s Banking Leaders First Capital Bank Zimbabwe is a regional consumer, corporate and institutional… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 01 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/04b34ddb574f.html</guid>
+      <category>Jobs</category>
+      <dc:creator>First Capital Bank Zimbabwe Limited</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/04b34ddb574f.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/04b34ddb574f.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/04b34ddb574f.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Local NGO — TERMS OF REFERENCE (TOR) URBAN FUTURES PROGRAMME CONDUCTING RESEARCH ON POLICIES FOR GREEN BUSINESS, CLIMATE AND FOOD SYSTEMS AND SUSTAINABLE PRACTICES AND TECHNOLOGIES THAT SUPPORT SMART FARMING…</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Morgan Zintec College — Lecturer - Special Needs (with specialization in hearing impairment)</title>
-      <link>https://mutapatimes.com/stories/43832cfa6904.html</link>
-      <description>Applications are invited from suitably qualified persons to fill the following posts in the Tertiary Education Service Council at Morgan Zintec College. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 01 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/43832cfa6904.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Morgan Zintec College</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/43832cfa6904.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/43832cfa6904.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/43832cfa6904.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
