@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Oct 2026 05:35:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 05:50:29 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -89,6 +89,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Assistant Farm Manager</title>
+      <link>https://mutapatimes.com/stories/4d0f1ab83c02.html</link>
+      <description>Wanted is self motivated and passionate Assistant Farm Manager Location: Murehwa Murehwa · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 01 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/4d0f1ab83c02.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/4d0f1ab83c02.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4d0f1ab83c02.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/4d0f1ab83c02.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>First Capital Bank Zimbabwe Limited — Graduate Trainee Programme 2027</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/f196fd372193.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f196fd372193.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/f196fd372193.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Morgan Zintec College — Lecturer - Research</title>
-      <link>https://mutapatimes.com/stories/7ce4a1e13294.html</link>
-      <description>Applications are invited from suitably qualified persons to fill the following posts in the Tertiary Education Service Council at Morgan Zintec College. Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 01 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/7ce4a1e13294.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Morgan Zintec College</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/7ce4a1e13294.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
