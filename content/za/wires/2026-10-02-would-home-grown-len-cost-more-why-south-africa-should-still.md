@@ -1,0 +1,16 @@
+---
+title: "Would home-grown LEN cost more? Why South Africa should still make the HIV prevention jab"
+date: 2026-10-02T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Would home-grown LEN cost more? Why South Africa should still make the HIV prevention jab"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOU0xocDUxcmZmSC10RzZ3bWtqT2JkWEU4ZjBJMzZJM1VjMEdIbklpN0JYSk5rN0U2aVBWeDlmTENlOEx5bXlfWXJ1bXB5cUJyemFVbjBMX3pHLUw4ZjdzV1VZNXRRbFB6WkRXcl9HcExBYmpCa2d1VmlOTktoRWEtTDRkWHFlcDBaUlVaa1gxd2JiRUdLeC1WQ3Q3RmU3bklENGJLVktydVNWWFBqUzZfSzVWTE14bVVtYkJPWlU2NXNuWHo3Z2pVeXh6S3NUWmtZQ2NFRkFGbHV0cTJLbEZ0OFhMbTFmWW5KMU5hV2N6RmM0eENqQ2NTVUtETTAzdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi_gFBVV95cUxOU0xocDUxcmZmSC10RzZ3bWtqT2JkWEU4ZjBJMzZJM1VjMEdIbklpN0JYSk5rN0U2aVBWeDlmTENlOEx5bXlfWXJ1bXB5cUJyemFVbjBMX3pHLUw4ZjdzV1VZNXRRbFB6WkRXcl9HcExBYmpCa2d1VmlOTktoRWEtTDRkWHFlcDBaUlVaa1gxd2JiRUdLeC1WQ3Q3RmU3bklENGJLVktydVNWWFBqUzZfSzVWTE14bVVtYkJPWlU2NXNuWHo3Z2pVeXh6S3NUWmtZQ2NFRkFGbHV0cTJLbEZ0OFhMbTFmWW5KMU5hV2N6RmM0eENqQ2NTVUtETTAzdw?oc=5)

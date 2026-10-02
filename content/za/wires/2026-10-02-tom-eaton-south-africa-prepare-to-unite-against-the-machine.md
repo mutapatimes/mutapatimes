@@ -1,0 +1,16 @@
+---
+title: "TOM EATON | South Africa, prepare to unite against the machine Tucker Carlson is jumpstarting"
+date: 2026-10-02T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "TOM EATON | South Africa, prepare to unite against the machine Tucker Carlson is jumpstarting"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxNOHlTc2VPc1loWm5GdzQwWE9YRjY1WGRwRDE1cVFMVEdvWUhjMk5kWUNjQjhTVmlCcVQwU0Z3SUdDRnBieE5MOHBMR1Byelh1MndoZ1lHU1JaR1FrNzhCeU1RLVp5ZnlQN0YtcnZ3bktwV3hham5FTVJ1cnZ6c2o2NFREQTVlMHFFM3VKZEZUUW5HZmxjQkVWVUw4aTVKTmZOMEhCNWQ2S25tYWs1eXBKaDljR1BfRUJuT0VVRGZkd0N4U0hpSGlkY3ZGaXBXdXIzZ3ZVUDM4VDNGd0pORS0xcGlZWTJvTU9SUGc3aG12dWY1RGR2eUhzR1l2TDlWR2ll?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxNOHlTc2VPc1loWm5GdzQwWE9YRjY1WGRwRDE1cVFMVEdvWUhjMk5kWUNjQjhTVmlCcVQwU0Z3SUdDRnBieE5MOHBMR1Byelh1MndoZ1lHU1JaR1FrNzhCeU1RLVp5ZnlQN0YtcnZ3bktwV3hham5FTVJ1cnZ6c2o2NFREQTVlMHFFM3VKZEZUUW5HZmxjQkVWVUw4aTVKTmZOMEhCNWQ2S25tYWs1eXBKaDljR1BfRUJuT0VVRGZkd0N4U0hpSGlkY3ZGaXBXdXIzZ3ZVUDM4VDNGd0pORS0xcGlZWTJvTU9SUGc3aG12dWY1RGR2eUhzR1l2TDlWR2ll?oc=5)

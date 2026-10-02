@@ -1,0 +1,16 @@
+---
+title: "Gig Guide: SA Fashion Week is upon us, Kayla Praise has released Inhliziyo, Poetry Africa reveals full programme, Origins Centre presents Henrietta Scholtz in Planetary Cognitive Ecologies: Gondwana and Espacio Dios returns with I Am You"
+date: 2026-10-02T03:47:03.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Gig Guide: SA Fashion Week is upon us, Kayla Praise has released Inhliziyo, Poetry Africa reveals full programme, Origins Centre presents Henrietta Scholtz in Planetary Cognitive Ecologies: Gondwana and Espacio Dios returns with I Am You"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiggNBVV95cUxPNTlsUXdZRHU0ZXp6Z21aUFN3TUZUN3RPbllteTNKYWJjVDdmM0xVMHp5di1iWERkb2FLR2lpTDQ0UU1nTUZ0MVNZbk9hM3pVTm5jS202RUYteGdQSFF0dGFwOG1fbmdHVmFwWGRnYXJsMmJnYzIybWRHR0RwMDdOVzRtbUV2aVlGLUc1M09vakZqQTVHNEhDak9zaGlvSE4zdUdTajFPQmhKUXdKcXo5MmV0Wk5ELVNwUm4xV25iZFY3WDE0YzV5MUhCRTVKa0ZXR0JMYm5JaEhNS3pvOG8wcFJCNlpBN0F1ODY1cVQxZURZSk5IN2lhTDJnUE8zTkNpeFU5WjgwV2RxdmJkN2FMN1p1VS04NFdfMVZYeXFGZlVwV29PcGNBaG1HbHBMa2pjWF80ckNBMHJkME9ic3ktMkczM2JJRUQ5b2RmTk5ORXdIRjZsallKUlBJbFJFeUxReEs1Q1NfQmhnelljQkRmZ0h3Rmc2djh4eTFBajBkUTFVdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMiggNBVV95cUxPNTlsUXdZRHU0ZXp6Z21aUFN3TUZUN3RPbllteTNKYWJjVDdmM0xVMHp5di1iWERkb2FLR2lpTDQ0UU1nTUZ0MVNZbk9hM3pVTm5jS202RUYteGdQSFF0dGFwOG1fbmdHVmFwWGRnYXJsMmJnYzIybWRHR0RwMDdOVzRtbUV2aVlGLUc1M09vakZqQTVHNEhDak9zaGlvSE4zdUdTajFPQmhKUXdKcXo5MmV0Wk5ELVNwUm4xV25iZFY3WDE0YzV5MUhCRTVKa0ZXR0JMYm5JaEhNS3pvOG8wcFJCNlpBN0F1ODY1cVQxZURZSk5IN2lhTDJnUE8zTkNpeFU5WjgwV2RxdmJkN2FMN1p1VS04NFdfMVZYeXFGZlVwV29PcGNBaG1HbHBMa2pjWF80ckNBMHJkME9ic3ktMkczM2JJRUQ5b2RmTk5ORXdIRjZsallKUlBJbFJFeUxReEs1Q1NfQmhnelljQkRmZ0h3Rmc2djh4eTFBajBkUTFVdw?oc=5)
