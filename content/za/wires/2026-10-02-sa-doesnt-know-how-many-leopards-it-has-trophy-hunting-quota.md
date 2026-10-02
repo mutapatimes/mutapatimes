@@ -1,0 +1,16 @@
+---
+title: "SA doesn’t know how many leopards it has. Trophy hunting quotas are set"
+date: 2026-10-02T17:20:54.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA doesn’t know how many leopards it has. Trophy hunting quotas are set"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipwJBVV95cUxPbVQzQk5PM1gzN3BVanYtc0tCczZXbS01alBBUmhvVHZiS0F2UEZYdWtjaUprb3haNEY4M3NJdl9reUdXQzJFNGowVS1BMkZrRGFWTWQtU3VWbWdQRWZudzhveEpacGdWTFUzYmJMZ1ZkVjZKNllUeUdvZERlUWFiTDR3NUdvd2IyLUF4Y1Y1WTBMbnYtcnE1aE5XdHFPVE12MjUwMVphbko2dlFwSHpFWlpOMjVBNHZhbGR4Y2pTZFJ2RUdNajk0VWtpMk5aLVlQaUJ2WDdkVFlpbUFlX0ZWNFhBZ2xEeWRZQ3ItT3JQZUNRMk9lazBpcUItOGhDZXlEeERZUUxqSDk0OWFUdkNCYlBUX09HNEU1Uy1hQkJOR3JWZjIwQk1F?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipwJBVV95cUxPbVQzQk5PM1gzN3BVanYtc0tCczZXbS01alBBUmhvVHZiS0F2UEZYdWtjaUprb3haNEY4M3NJdl9reUdXQzJFNGowVS1BMkZrRGFWTWQtU3VWbWdQRWZudzhveEpacGdWTFUzYmJMZ1ZkVjZKNllUeUdvZERlUWFiTDR3NUdvd2IyLUF4Y1Y1WTBMbnYtcnE1aE5XdHFPVE12MjUwMVphbko2dlFwSHpFWlpOMjVBNHZhbGR4Y2pTZFJ2RUdNajk0VWtpMk5aLVlQaUJ2WDdkVFlpbUFlX0ZWNFhBZ2xEeWRZQ3ItT3JQZUNRMk9lazBpcUItOGhDZXlEeERZUUxqSDk0OWFUdkNCYlBUX09HNEU1Uy1hQkJOR3JWZjIwQk1F?oc=5)
