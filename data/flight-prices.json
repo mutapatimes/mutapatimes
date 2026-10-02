@@ -111,7 +111,7 @@
           "currency": ""
         },
         {
-          "price": 541,
+          "price": 540,
           "airline": "MS",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -151,7 +151,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 13,
+          "n": 10,
           "error": null
         },
         {
@@ -175,11 +175,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 13,
+          "n": 10,
           "error": null
         }
       ],
-      "observations": 37
+      "observations": 32
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -287,7 +287,7 @@
           "currency": ""
         },
         {
-          "price": 7458,
+          "price": 7482,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -305,7 +305,7 @@
           "currency": ""
         },
         {
-          "price": 7871,
+          "price": 7897,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
@@ -318,7 +318,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 3,
+          "n": 4,
           "error": null
         },
         {
@@ -340,7 +340,7 @@
           "error": null
         }
       ],
-      "observations": 12
+      "observations": 13
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -423,7 +423,7 @@
           "currency": ""
         },
         {
-          "price": 2774,
+          "price": 2783,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -432,7 +432,7 @@
           "currency": ""
         },
         {
-          "price": 3277,
+          "price": 3288,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -441,7 +441,7 @@
           "currency": ""
         },
         {
-          "price": 4392,
+          "price": 4406,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -454,7 +454,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 6,
+          "n": 8,
           "error": null
         },
         {
@@ -472,11 +472,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 16,
+          "n": 17,
           "error": null
         }
       ],
-      "observations": 25
+      "observations": 28
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -590,7 +590,7 @@
           "currency": ""
         },
         {
-          "price": 1880,
+          "price": 1886,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -599,7 +599,7 @@
           "currency": ""
         },
         {
-          "price": 1927,
+          "price": 1933,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -608,7 +608,7 @@
           "currency": ""
         },
         {
-          "price": 2037,
+          "price": 2044,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -651,7 +651,7 @@
       "currency": "CAD",
       "currency_sym": "C$",
       "cheapest_overall": {
-        "price": 952,
+        "price": 953,
         "airline": "ET",
         "departure_at": "2027-01-01",
         "return_at": "",
@@ -662,7 +662,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 952,
+          "price": 953,
           "airline": "ET",
           "departure_at": "2027-01-01",
           "return_at": "",
@@ -673,7 +673,7 @@
       ],
       "by_airline": [
         {
-          "price": 952,
+          "price": 953,
           "airline": "ET",
           "departure_at": "2027-01-01",
           "return_at": "",
@@ -747,7 +747,7 @@
           "currency": ""
         },
         {
-          "price": 785,
+          "price": 788,
           "airline": "Gotogate",
           "departure_at": "",
           "return_at": "",
