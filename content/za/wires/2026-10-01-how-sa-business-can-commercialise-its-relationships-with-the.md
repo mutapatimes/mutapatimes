@@ -1,0 +1,16 @@
+---
+title: "How SA business can commercialise its relationships with the BRICS economies"
+date: 2026-10-01T20:36:15.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "How SA business can commercialise its relationships with the BRICS economies"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipAJBVV95cUxNai1keTVqY2pQd0ZTTGhTSjBTS2NOQWtzcXIxdXo1R0JqVnR3eks2cENZRy1HeTk2Ql9aVmJlQTVKRk10Smp0RVNyQlFYUE52eUpWTmx1OVdjOWpDNGRxTFhYRk8yUU9IMXpiS2xPVTYwOExSVnJZSmhhQW5GOVIxVGRERDR6TG9oRV9QZ0pNNHdFZFoyYkE5N0U0dlZzdDhLRW5UcHJmSEYtdGJYTU5fa2RBekRqbndXVTdLOTNyeXJYYzllOXppSmJuM3hIazFxTmFZczRlNFhYbG9HdUFNWGQ1WEI5WTFpNDFzS2pneENXSTE1QVJyOFpMejkyOWl1elVtbHJXT0JUYXBOMjNJOHF4dE50N0lZWWxLMDFmN3NCQXV5?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipAJBVV95cUxNai1keTVqY2pQd0ZTTGhTSjBTS2NOQWtzcXIxdXo1R0JqVnR3eks2cENZRy1HeTk2Ql9aVmJlQTVKRk10Smp0RVNyQlFYUE52eUpWTmx1OVdjOWpDNGRxTFhYRk8yUU9IMXpiS2xPVTYwOExSVnJZSmhhQW5GOVIxVGRERDR6TG9oRV9QZ0pNNHdFZFoyYkE5N0U0dlZzdDhLRW5UcHJmSEYtdGJYTU5fa2RBekRqbndXVTdLOTNyeXJYYzllOXppSmJuM3hIazFxTmFZczRlNFhYbG9HdUFNWGQ1WEI5WTFpNDFzS2pneENXSTE1QVJyOFpMejkyOWl1elVtbHJXT0JUYXBOMjNJOHF4dE50N0lZWWxLMDFmN3NCQXV5?oc=5)

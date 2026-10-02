@@ -1,0 +1,16 @@
+---
+title: "Online schools are growing faster than South Africa’s rules"
+date: 2026-10-01T20:07:12.000Z
+author: Daily Maverick
+category: Education
+image: 
+summary: "Online schools are growing faster than South Africa’s rules"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxORzlENEpnT25PSTM4VW5ZWlBjWUNPeVhzQ18tczc3ajBFX1RfanZLdWpQZ1VWVEViWlpobFVSMnlQMUVYcl9OX083VWVhZnBlSmx1STJPYURQM0QxZm5mTEF1ZWc0TGsyMTVUbWN2RVdJeW1OTXN1dHQ2Sks1V3ZiLWtUSThRaHJOV3l3cnFkVUViWk0yTGZzMmVkMy1Ec2lLelVhQ3g3VTYweGtJRko1Wnd3WG1vckQxMDZvdk1ETWdsdUlJazgydlFvVEdCZ2pvT1lMZ1h0cUkzc3AtMzA2WC1GemZrR05KUGVzcDFiY1dXcjA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi8wFBVV95cUxORzlENEpnT25PSTM4VW5ZWlBjWUNPeVhzQ18tczc3ajBFX1RfanZLdWpQZ1VWVEViWlpobFVSMnlQMUVYcl9OX083VWVhZnBlSmx1STJPYURQM0QxZm5mTEF1ZWc0TGsyMTVUbWN2RVdJeW1OTXN1dHQ2Sks1V3ZiLWtUSThRaHJOV3l3cnFkVUViWk0yTGZzMmVkMy1Ec2lLelVhQ3g3VTYweGtJRko1Wnd3WG1vckQxMDZvdk1ETWdsdUlJazgydlFvVEdCZ2pvT1lMZ1h0cUkzc3AtMzA2WC1GemZrR05KUGVzcDFiY1dXcjA?oc=5)

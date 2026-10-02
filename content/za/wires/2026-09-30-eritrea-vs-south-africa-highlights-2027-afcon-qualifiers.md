@@ -1,0 +1,16 @@
+---
+title: "Eritrea vs South Africa | Highlights | 2027 AFCON Qualifiers"
+date: 2026-09-30T19:55:57.000Z
+author: beIN SPORTS
+category: Sport
+image: 
+summary: "Eritrea vs South Africa | Highlights | 2027 AFCON Qualifiers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNVFY5Y2pvTi1KcXBjMURucnBYV05fWXBoVHVYSlZNVFZUV09YOE42WUd3cmdlclZNdW1jdTRWUjFZYmRwdHRRS3JmTGZtZUJqNTNFSHhJVE9PZlViNE0zMUJka2FMWFpaRHJNMlNIelBJYjByUUlrbzRRUEM4bHF2WHY2VG1vWEczMWNfQzBqTERweE9aQnQ0bXNwMGs2Qno4RWhPczIxc0JEZF93b2ljSmF4ZjU4X2FBOE4yVkRsLWpGdnRUX2RwWDRZdDhoSnhFbncydkZiT3h2eXFCcE5WcS02c2h1OVROQ243ckVLX1pXVnVKVy1NV3ZTOA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by beIN SPORTS.*
+[Read original article](https://news.google.com/rss/articles/CBMi-wFBVV95cUxNVFY5Y2pvTi1KcXBjMURucnBYV05fWXBoVHVYSlZNVFZUV09YOE42WUd3cmdlclZNdW1jdTRWUjFZYmRwdHRRS3JmTGZtZUJqNTNFSHhJVE9PZlViNE0zMUJka2FMWFpaRHJNMlNIelBJYjByUUlrbzRRUEM4bHF2WHY2VG1vWEczMWNfQzBqTERweE9aQnQ0bXNwMGs2Qno4RWhPczIxc0JEZF93b2ljSmF4ZjU4X2FBOE4yVkRsLWpGdnRUX2RwWDRZdDhoSnhFbncydkZiT3h2eXFCcE5WcS02c2h1OVROQ243ckVLX1pXVnVKVy1NV3ZTOA?oc=5)
