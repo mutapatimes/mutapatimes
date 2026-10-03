@@ -441,12 +441,12 @@
           "currency": ""
         },
         {
-          "price": 4472,
-          "airline": "Mytrip.com",
+          "price": 3363,
+          "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 225,
+          "duration": 220,
           "currency": ""
         }
       ],
@@ -472,11 +472,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 16,
+          "n": 18,
           "error": null
         }
       ],
-      "observations": 22
+      "observations": 24
     },
     "new-york-to-harare": {
       "origin": "NYC",
