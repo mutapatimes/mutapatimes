@@ -1,0 +1,16 @@
+---
+title: "What happened in SA — Afrikaner ‘refugees’ return, tearjerker onion prices and more"
+date: 2026-10-03T10:00:54.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "What happened in SA — Afrikaner ‘refugees’ return, tearjerker onion prices and more"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwJBVV95cUxNcmhsTFZGb2ZVNER3V3hWQVM2azVpbXZiUHVQX05VWjU4NThBdmZaVHNJUllXbzVIM1lvTXFObEl5eVNNdUxObm9ILW5qZGVablV6a1QtZzVZeTFSZWpvUEVrb0FoVlBjZk5helEzYklxY2hDN2t4RmM3LVhWWEdhX2FQLW15M3pQVWQwMXhTWklhc21wMThydHd3TUNZS3g2M2U2M1hoWmR4QVB6WXVQYUFTaFJLTnRVcXZXcXhIWTc0bnhVYndwLUhPbE0yVXZsU2pTVTRmMUxta0VzU1UzWmd3TzREMzJ2RTk0QkpjcUcwbUtoUktDVC1HWEpVa2cyQ1FXbE5GS3BBeDByNWp1enNDWFpjQkxDWnc0Q1hpbTd1ejYyNnJxLWFvOVhGRW5yc1djRDAtZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitwJBVV95cUxNcmhsTFZGb2ZVNER3V3hWQVM2azVpbXZiUHVQX05VWjU4NThBdmZaVHNJUllXbzVIM1lvTXFObEl5eVNNdUxObm9ILW5qZGVablV6a1QtZzVZeTFSZWpvUEVrb0FoVlBjZk5helEzYklxY2hDN2t4RmM3LVhWWEdhX2FQLW15M3pQVWQwMXhTWklhc21wMThydHd3TUNZS3g2M2U2M1hoWmR4QVB6WXVQYUFTaFJLTnRVcXZXcXhIWTc0bnhVYndwLUhPbE0yVXZsU2pTVTRmMUxta0VzU1UzWmd3TzREMzJ2RTk0QkpjcUcwbUtoUktDVC1HWEpVa2cyQ1FXbE5GS3BBeDByNWp1enNDWFpjQkxDWnc0Q1hpbTd1ejYyNnJxLWFvOVhGRW5yc1djRDAtZw?oc=5)
