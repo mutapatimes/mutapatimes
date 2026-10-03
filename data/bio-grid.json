@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-10-03T10:59:55+00:00",
+  "fetched_at": "2026-10-03T15:36:42+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Chivayo was my friend – Mnangagwa",
+      "link": "https://mutapatimes.com/news/2026-10-03-chivayo-was-my-friend-mnangagwa-f120c1",
+      "image": "https://mutapatimes.com/img/cards/news/da3173938689.png",
+      "pubDate": "2026-10-03T03:32:58+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "MSUAS cashes in on innovation to drive Vision 2030",
+      "link": "https://mutapatimes.com/articles/2026-10-03-msuas-cashes-in-on-innovation-to-drive-vision-2030",
+      "image": "https://mutapatimes.com/img/cards/news/c90d2931eb68.png",
+      "pubDate": "2026-10-03T02:05:26+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Afreximbank unit ATDC opens Harare operations",
+      "link": "https://mutapatimes.com/articles/2026-10-03-afreximbank-unit-atdc-opens-harare-operations",
+      "image": "https://mutapatimes.com/img/cards/news/ee7e76d3a9a1.png",
+      "pubDate": "2026-10-03T02:04:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "news",
       "title": "Zimbabwe Launches National Campaign For Expo 2027, Targets Trade, Investment And Global Economic Partnerships",
@@ -455,30 +479,6 @@
       "title": "Manager/Assistant Estate Manager",
       "link": "https://vacancymail.co.zw/jobs/managerassistant-estate-manager-69614/",
       "image": "https://mutapatimes.com/img/cards/jobs/e7c1f5dfd757.png",
-      "pubDate": "2026-10-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Business Development Officer",
-      "link": "https://vacancymail.co.zw/jobs/business-development-officer-69613/",
-      "image": "https://mutapatimes.com/img/cards/jobs/712104236380.png",
-      "pubDate": "2026-10-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — PLANNED MAINTENANCE OFFICER x1",
-      "link": "https://vacancymail.co.zw/jobs/planned-maintenance-officer-x1-69612/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a376791e7b4.png",
-      "pubDate": "2026-10-02T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Early Career Research Innovation Research and Innovation Symposium 2026 Registration and Call for Abstracts",
-      "link": "https://vacancymail.co.zw/jobs/early-career-research-innovation-research-and-innovation-symposium-2026-registration-and-call-for-abstracts-69611/",
-      "image": "https://mutapatimes.com/img/cards/jobs/af2d712e11e6.png",
       "pubDate": "2026-10-02T22:00:00+00:00",
       "category": "Jobs"
     }
