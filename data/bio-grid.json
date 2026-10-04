@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-10-03T23:29:22+00:00",
+  "fetched_at": "2026-10-04T03:56:09+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabweans struggle to rebuild after fleeing xenophobia in South Africa",
+      "link": "https://mutapatimes.com/articles/2026-10-04-zimbabweans-struggle-to-rebuild-after-fleeing-xenophobia-in",
+      "image": "https://mutapatimes.com/img/cards/news/3d505b06e862.png",
+      "pubDate": "2026-10-04T01:56:27+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim real estate sector: $469M in 2025 Q4, +2.4% YoY.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 4 Oct 2026: 1 USD = 26.77 ZWG · best from UK £100 → $129.13 via Wise",
+      "title": "Zim FX snapshot 4 Oct 2026: 1 USD = 26.77 ZWG · best from UK £100 → $129.11 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-04",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-04",
       "pubDate": "2026-10-03T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "CeSHHAR Zimbabwe — Early Career Research Innovation Research and Innovation Symposium 2026 Registration and Call for Abstracts",
       "link": "https://vacancymail.co.zw/jobs/early-career-research-innovation-research-and-innovation-symposium-2026-registration-and-call-for-abstracts-69611/",
       "image": "https://mutapatimes.com/img/cards/jobs/af2d712e11e6.png",
-      "pubDate": "2026-10-03T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ixar Mobile ~~ 0 — Administrative Assistant",
-      "link": "https://vacancymail.co.zw/jobs/administrative-assistant-69599/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b752007cc6d2.png",
       "pubDate": "2026-10-03T22:00:00+00:00",
       "category": "Jobs"
     }
