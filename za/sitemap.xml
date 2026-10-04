@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mutapatimes.com/za/</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/economy</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/fx</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/markets</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/weather</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/property</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/jobs</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/johannesburg-news</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/cape-town-news</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/durban-news</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/pretoria-news</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mutapatimes.com/za/gqeberha-news</loc>
-    <lastmod>2026-10-04T12:26:56+00:00</lastmod>
+    <lastmod>2026-10-04T18:42:35+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -18391,6 +18391,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-01-icasa-launches-new-investigation-into-high-mobile-data-price.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-01-its-not-me-burning-buses-sibanyoni-tells-inquiry-about-putco.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -19597,8 +19603,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-03-zanele-salman-shaping-manufacturings-future-on-the-lathe-of.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-03-zimbabwes-flamboyant-sir-wicknell-chivayo-leaves-chequered-l.html</loc>
     <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-alan-winde-advises-diplomacy-reset-as-western-cape-exports-t.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-bahrain-grand-prix-in-malaysia-harry-benjamins-driver-rating.html</loc>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -19615,7 +19639,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-criminal-justice-system-under-scrutiny-by-experts.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-04-durban-and-joburg-worst-hit-by-water-outages.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-higher-educations-irregular-spending-soars-to-almost-half-a.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-history-high-stakes-and-var-drama-a-look-back-at-bafana-bafa.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19634,6 +19676,30 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-04-look-up-south-africa-wounded-yes-but-still-breathin.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-metier-re-ups-on-south-africas-frogfoot-and-vox-for-fibre-pu.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-mondays-weather-isolated-showers-thundershowers-in-7-provinc.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-msizi-myeza-training-cannot-fix-unethical-conduct-and-incomp.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-neetu-chetty-if-gbvf-is-a-national-disaster-why-do-we-still.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19681,6 +19747,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-south-africas-zille-leads-in-race-for-johannesburg-mayor-pol.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-04-technical-problems-interrupt-electricity-supply-to-central-s.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -19706,6 +19778,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/articles/2026-10-04-zimbabweans-struggle-to-rebuild-after-fleeing-xenophobia-in.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/articles/2026-10-04-zimbabwes-chivayo-who-died-in-helicopter-crash-linked-to-r80.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -38281,6 +38359,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-dominic-cull-regulatory-advisor-to-south-africa-s-internet-service-providers-58f39c</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-end-of-a-30-year-era-for-kpmg-in-south-africa-a64bc1</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -38305,7 +38389,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-heritage-day-how-south-africans-are-reclaiming-and-redefining-its-meaning-cd4013</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-higher-education-s-irregular-spending-soars-to-almost-half-a-billion-rand-df6028</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-how-south-africa-became-a-mining-country-again-f64f4b</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-icasa-launches-new-investigation-into-high-mobile-data-prices-in-south-africa-bda9df</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -38330,6 +38432,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-meet-the-wolves-brought-by-apartheid-era-south-africa-to-brutalize-natives-54b2bf</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-metier-re-ups-on-south-africa-s-frogfoot-and-vox-for-fibre-push-51e492</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -38383,6 +38491,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-orlando-stadium-to-host-bafana-s-opening-afcon-2027-qualifier-against-guinea-6666bc</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-pitso-s-second-act-starts-with-bafana-bang-62558b</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -38390,6 +38504,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-r2-8-billion-hospital-in-south-africa-standing-empty-after-10-year-build-delayed-dfef99</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-r750m-spent-on-boreholes-but-many-don-t-produce-water-fea5ec</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -38426,6 +38546,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-south-africa-s-competition-commission-backs-mtn-s-ihs-tower-deal-with-conditions-c3d635</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-south-africa-s-economy-contracts-as-manufacturing-mining-and-trade-take-a-hit-772559</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -38588,6 +38714,12 @@
   </url>
   <url>
     <loc>https://mutapatimes.com/za/news/2026-10-04-world-animal-day-2026-four-paws-urges-south-africans-to-see-the-world-through-c673cd</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mutapatimes.com/za/news/2026-10-04-zoo-lake-a-microcosm-of-the-grating-littering-scourge-across-sa-s-public-parks-857562</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
