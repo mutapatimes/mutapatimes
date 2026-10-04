@@ -1,0 +1,16 @@
+---
+title: "JMPD increases patrols at Fourways intersection after women report harassment by beggar"
+date: 2026-10-04T10:11:31.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "JMPD increases patrols at Fourways intersection after women report harassment by beggar"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWXZLX1ZmRF9xUEVYRnFBQ1p5Z002dWRkMGpOSjY0c2VEV1JwVk9IN3ZCMnRCZDZzTVNWeVZ1UVJWaDdaUzVhRGx5Wk5TVmdQaTNkdjJLVkJqc2stbVFuS0lRR09TeGRKVjdWXzRDM1JfSU9yNGw3NndmS2htU1VQdEpXYTV2YWQ2Z3RmZWY5OGdCNFhNSzQ2UXFLTmRBbE9OYms3bGVrNUFwaHRtbG9PRXN6ZGlKUzdDSnlKOTNjay03Qzl4MUtDVFBCaGV1NlRPQzB2ZWdqZDAxdEhRSUE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWXZLX1ZmRF9xUEVYRnFBQ1p5Z002dWRkMGpOSjY0c2VEV1JwVk9IN3ZCMnRCZDZzTVNWeVZ1UVJWaDdaUzVhRGx5Wk5TVmdQaTNkdjJLVkJqc2stbVFuS0lRR09TeGRKVjdWXzRDM1JfSU9yNGw3NndmS2htU1VQdEpXYTV2YWQ2Z3RmZWY5OGdCNFhNSzQ2UXFLTmRBbE9OYms3bGVrNUFwaHRtbG9PRXN6ZGlKUzdDSnlKOTNjay03Qzl4MUtDVFBCaGV1NlRPQzB2ZWdqZDAxdEhRSUE?oc=5)
