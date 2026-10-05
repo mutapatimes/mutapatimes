@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Business and intelligence newspaper delivering curated Zimbabwean news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 06:09:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 11:44:56 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -761,18 +761,6 @@
       <media:content url="https://mutapatimes.com/img/cards/news/cb03a92cc8ec.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/news/cb03a92cc8ec.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/news/cb03a92cc8ec.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimbabwe’s internet traffic jumps 57%</title>
-      <link>https://mutapatimes.com/news/2026-10-05-zimbabwe-s-internet-traffic-jumps-57-5baefc</link>
-      <description>Zimbabwe’s internet traffic jumps 57% — via ITWeb Africa #Zimbabwe #ZimbabweNews</description>
-      <pubDate>Fri, 04 Sep 2026 07:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/news/2026-10-05-zimbabwe-s-internet-traffic-jumps-57-5baefc</guid>
-      <category>Technology</category>
-      <dc:creator>ITWeb Africa</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/news/1fe47022bb62.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/news/1fe47022bb62.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/news/1fe47022bb62.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
