@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 13:24:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 14:34:50 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -223,18 +223,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/98ef9d94ae3b.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 280,000 — 4 Bedroomed house in Parklands for sale (Parklands, Bulawayo East)</title>
-      <link>https://mutapatimes.com/property-landing/e96fa5b9b584.html</link>
-      <description>USD 280,000 — Parklands, Bulawayo East. 4 beds, 2 baths. 4 Bedroomed house in Parklands for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sun, 04 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/e96fa5b9b584.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/e96fa5b9b584.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/e96fa5b9b584.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/e96fa5b9b584.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 450,000 — Borrowdale Sam Levy Off Piers Road 3 Beds Townhouse For Sale!! (Borrowdale, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/b7eb0b01fd1f.html</link>
       <description>USD 450,000 — Borrowdale, Harare North. 3 beds, 2 baths. Borrowdale Sam Levy Off Piers Road 3 Beds Townhouse For Sale!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/9d8a8f420543.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9d8a8f420543.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/9d8a8f420543.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 105,000 — Unlock Your Opportunity In Belvedere West (Belvedere, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/3b740a5d8394.html</link>
+      <description>USD 105,000 — Belvedere, Harare West. 2 beds, 1 bath. Unlock Your Opportunity In Belvedere West. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sun, 04 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/3b740a5d8394.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/3b740a5d8394.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/3b740a5d8394.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/3b740a5d8394.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

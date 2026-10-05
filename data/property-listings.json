@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05T05:37:08.664545+00:00",
+  "fetched_at": "2026-10-05T14:34:44.268383+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -157,15 +157,6 @@
       "baths": "5"
     },
     {
-      "title": "4 Bedroomed house in Parklands for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-sbre250647",
-      "price": "USD 280,000",
-      "location": "Parklands, Bulawayo East",
-      "image": "https://www.property.co.zw/uploadedfiles/d4/36/99/d4369930-b1b4-45cc-a78f-129cb555f57d_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Borrowdale Sam Levy Off Piers Road 3 Beds Townhouse For Sale!!",
       "url": "https://www.property.co.zw/for-sale/townhouses-rws256370",
       "price": "USD 450,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/98/1a/b5/981ab531-4c55-4d4a-a5b6-c8bf09cff531_thumbnail591.webp",
       "beds": "4",
       "baths": "4"
+    },
+    {
+      "title": "Unlock Your Opportunity In Belvedere West",
+      "url": "https://www.property.co.zw/for-sale/houses-sby252622",
+      "price": "USD 105,000",
+      "location": "Belvedere, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/72/07/a4/7207a4f2-1d4e-4c03-aa58-6b76f16384bb_thumbnail591.webp",
+      "beds": "2",
+      "baths": "1"
     }
   ]
 }
