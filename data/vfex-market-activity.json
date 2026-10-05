@@ -1,89 +1,95 @@
 {
-  "fetched_at": "2026-10-02T19:59:38.098809+00:00",
-  "as_of": "2026-10-02",
+  "fetched_at": "2026-10-05T19:47:04.117387+00:00",
+  "as_of": "2026-10-05",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 269,
-    "turnover": 40775644.92,
-    "volume": 173455860.0,
-    "market_cap": 8387654779.38
+    "trades": 215,
+    "turnover": 1976704.21,
+    "volume": 4253495.0,
+    "market_cap": 9153592803.23
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 272.85,
-      "change_pct": 1.47,
-      "change_points": 3.94,
+      "value": 275.55,
+      "change_pct": 0.99,
+      "change_points": 2.7,
       "direction": "up"
     }
   ],
   "gainers": [
     {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 79.71,
-      "change_pct": 11.14
+      "name": "West Prop Holdings Limited",
+      "symbol": "WPHL.VX",
+      "price": 1200.0,
+      "change_pct": 20.0
+    },
+    {
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 40.05,
+      "change_pct": 11.1
     },
     {
       "name": "First Capital Bank Limited",
       "symbol": "FCA.VX",
-      "price": 15.46,
-      "change_pct": 2.11
+      "price": 15.64,
+      "change_pct": 1.16
     },
     {
       "name": "Invictus Energy Limited Depository Receipts",
       "symbol": "",
-      "price": 13.04,
-      "change_pct": 1.01
+      "price": 13.13,
+      "change_pct": 0.69
     },
     {
       "name": "Zimplow Holdings Limited",
       "symbol": "ZIMW.VX",
-      "price": 11.96,
-      "change_pct": 0.34
-    },
-    {
-      "name": "Caledonia Mining Corporation Plc",
-      "symbol": "CMCL.VX",
-      "price": 3994.4,
+      "price": 12.0,
       "change_pct": 0.33
     }
   ],
   "losers": [
     {
-      "name": "Econet Infraco",
-      "symbol": "INFR.VX",
-      "price": 22.65,
-      "change_pct": -1.39
-    },
-    {
       "name": "Kavango Resources Plc",
       "symbol": "KAV.VX",
-      "price": 2.47,
-      "change_pct": -0.8
+      "price": 2.18,
+      "change_pct": -11.74
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 77.38,
+      "change_pct": -2.92
+    },
+    {
+      "name": "Caledonia Mining Corporation Plc",
+      "symbol": "CMCL.VX",
+      "price": 3929.88,
+      "change_pct": -1.62
+    },
+    {
+      "name": "Padenga Holdings Ltd",
+      "symbol": "PHL.VX",
+      "price": 149.53,
+      "change_pct": -0.26
     },
     {
       "name": "Old Mutual Limited",
       "symbol": "OMU.VX",
-      "price": 89.05,
-      "change_pct": -0.78
-    },
-    {
-      "name": "Tsl Limited",
-      "symbol": "TSL.VX",
-      "price": 21.15,
-      "change_pct": -0.56
-    },
-    {
-      "name": "Innscor Africa Limited",
-      "symbol": "INN.VX",
-      "price": 150.06,
-      "change_pct": -0.53
+      "price": 89.0,
+      "change_pct": -0.06
     }
   ],
   "notices": [
+    {
+      "date": "2026-10-05",
+      "title": "Appointment of ZSE Holdings Group CEO as ASEA Vice President",
+      "category": "Press Releases",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/297/download"
+    },
     {
       "date": "2026-09-28",
       "title": "Notice of Termination of Listing of Edgars Stores Limited",
@@ -125,12 +131,6 @@
       "title": "Memo-ZSE Holdings Proffessional ICT Services",
       "category": "",
       "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/272/download"
-    },
-    {
-      "date": "2026-05-08",
-      "title": "Press Release: First Mutual Wealth Gold ETF Listing",
-      "category": "",
-      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/271/download"
     }
   ]
 }
