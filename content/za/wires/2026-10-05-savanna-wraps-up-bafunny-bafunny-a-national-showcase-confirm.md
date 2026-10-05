@@ -1,0 +1,16 @@
+---
+title: "Savanna wraps up Bafunny Bafunny: a national showcase confirming South Ahh as the world capital of comedy"
+date: 2026-10-05T16:15:47.000Z
+author: news24.com
+category: Business
+image: 
+summary: "Savanna wraps up Bafunny Bafunny: a national showcase confirming South Ahh as the world capital of comedy"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMk84QWFTcE5HTFpmdFdTZld1dXpFNVhqTXc2T2JPNHdoVDBTWjZERVEwblFGOEF0V2s3eWlhYWduaTVjT1VUTTgxQUdMYzJjY0ZPZXdtNTRVdUpPTkpEYURiTFliYXY0Tm5mUDZQQXVwcGRoZmRUOVEyVEJmaFltYVFnVnpwUWh5ME1VMU9sVDhCdVJaem5ueDJiWUNfT1JMTWNJM3FxWkRBOXVSd0tRQ0gxTWFySTBmZUlUaDhhb1RNTDVmUnBqYjMtZF9BWFdDbjJ6aFFqanNKUWdNcVdycm40SERod2xEY1pUZXd0Ym1wMWV2YlNTei1aVnE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by news24.com.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMk84QWFTcE5HTFpmdFdTZld1dXpFNVhqTXc2T2JPNHdoVDBTWjZERVEwblFGOEF0V2s3eWlhYWduaTVjT1VUTTgxQUdMYzJjY0ZPZXdtNTRVdUpPTkpEYURiTFliYXY0Tm5mUDZQQXVwcGRoZmRUOVEyVEJmaFltYVFnVnpwUWh5ME1VMU9sVDhCdVJaem5ueDJiWUNfT1JMTWNJM3FxWkRBOXVSd0tRQ0gxTWFySTBmZUlUaDhhb1RNTDVmUnBqYjMtZF9BWFdDbjJ6aFFqanNKUWdNcVdycm40SERod2xEY1pUZXd0Ym1wMWV2YlNTei1aVnE?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "We may need to rethink our worrying wheat industry"
+date: 2026-10-05T20:37:58.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "We may need to rethink our worrying wheat industry"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxOQUhwLU1NV0RyVWFMdjFnczB5SDR3Vl9OZGw0TTd6MFpRRk1yVzlvZGVGOWdEaXlUMllhZTBiRVpXdUtHTVhfc2pOUEpjUW9KempyMlNwdFVEZkRDcXFYUUlXUzNqYU5KZlBtTk1hcUVfWklzck5sejM3Sk5XSEdPaERfN01jQjFuU3NQU0wyc2NNNW0wYnhXNGRTUFQ1RWEtWU1VR29HMDItZW9Vby0tWFY0N1JOb2lCcjQ4Wi1UaUdzQkVFb1dHT1d1OHJSSHV2eC1KTmtQQU4yRkJfaHJ5Um0tbVNqX3BQX0hzcEphUTZQMXVKYzB5WFE0Z2o5OFc2X3VVb0tubHlfcVQzbExrODBtWWhRV0Vya2tpbXd6TXhhOFhmR2VmMTRPZ2U?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxOQUhwLU1NV0RyVWFMdjFnczB5SDR3Vl9OZGw0TTd6MFpRRk1yVzlvZGVGOWdEaXlUMllhZTBiRVpXdUtHTVhfc2pOUEpjUW9KempyMlNwdFVEZkRDcXFYUUlXUzNqYU5KZlBtTk1hcUVfWklzck5sejM3Sk5XSEdPaERfN01jQjFuU3NQU0wyc2NNNW0wYnhXNGRTUFQ1RWEtWU1VR29HMDItZW9Vby0tWFY0N1JOb2lCcjQ4Wi1UaUdzQkVFb1dHT1d1OHJSSHV2eC1KTmtQQU4yRkJfaHJ5Um0tbVNqX3BQX0hzcEphUTZQMXVKYzB5WFE0Z2o5OFc2X3VVb0tubHlfcVQzbExrODBtWWhRV0Vya2tpbXd6TXhhOFhmR2VmMTRPZ2U?oc=5)

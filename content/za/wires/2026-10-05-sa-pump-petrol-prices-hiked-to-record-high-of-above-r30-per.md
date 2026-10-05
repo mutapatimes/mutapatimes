@@ -1,0 +1,16 @@
+---
+title: "SA pump petrol prices hiked to record high of above R30 per litre"
+date: 2026-10-05T18:56:15.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA pump petrol prices hiked to record high of above R30 per litre"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUWlyeXVDZFVyRVl4alVnYnF1eV9uUFFIVmFKSHduM0Zia0dHNzg3SzVvVnNEVW94RzRITmFPRkxJV2lnNkxoajZPd05NdHdRUVE3RjlMNTVXUjl3RnQzQ0cwcmVHTXVPVy1UMFdxZW43UzB0M2QyWDFMVzdCa24tTGd3VWZhcDhMNExESFc0R00tazVTLS1HTGRhem54ZHpPMGROVEI5aFpSeEctSkplYzEyWjllWlhiNWZWekNYYTZQakJ6WFpfaWtDb1hHYW83bVgyX3p1eGlvcDVOQUhfNnBvQ2JhWUFHdEFzdk5jbw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUWlyeXVDZFVyRVl4alVnYnF1eV9uUFFIVmFKSHduM0Zia0dHNzg3SzVvVnNEVW94RzRITmFPRkxJV2lnNkxoajZPd05NdHdRUVE3RjlMNTVXUjl3RnQzQ0cwcmVHTXVPVy1UMFdxZW43UzB0M2QyWDFMVzdCa24tTGd3VWZhcDhMNExESFc0R00tazVTLS1HTGRhem54ZHpPMGROVEI5aFpSeEctSkplYzEyWjllWlhiNWZWekNYYTZQakJ6WFpfaWtDb1hHYW83bVgyX3p1eGlvcDVOQUhfNnBvQ2JhWUFHdEFzdk5jbw?oc=5)
