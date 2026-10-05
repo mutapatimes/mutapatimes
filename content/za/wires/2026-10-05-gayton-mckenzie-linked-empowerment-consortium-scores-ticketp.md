@@ -1,0 +1,16 @@
+---
+title: "Gayton McKenzie-linked empowerment consortium scores Ticketpro deal ahead of 2027 Cricket World Cup"
+date: 2026-10-05T02:36:54.000Z
+author: Daily Maverick
+category: Sport
+image: 
+summary: "Gayton McKenzie-linked empowerment consortium scores Ticketpro deal ahead of 2027 Cricket World Cup"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPZWpSV1NpdXpVblFVV25lNkpKcnhSSzUzQ1VSSkY5Uk9aM29NNU51Q210eGxFSTFFR3lPSTNlTTNobm1VQmJCS0x1R0ZIeFlxdTFISU9adG5qVTdIdnN3WWNiODVwUVhlaE9lczZESkV3OEZJVW5CNS15MldiWUVYMGEtWlJJS2pEYWZ6aW8yeGl6M1NhQjZHX1RraDA2UEZpbGNVOXRvQ24yVlBPdC1JRU5CWmRoUkthR3Z0VFdfQmJnNjZreE1TVnVwX1pkSHV3Q2Y1WGJiTFdzZW40c2RFSHBTcV8tT2JGY0lFdV9HbkU1ekd6OTdoTnhDTG1NTGVlNDNyb2hBZFM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxPZWpSV1NpdXpVblFVV25lNkpKcnhSSzUzQ1VSSkY5Uk9aM29NNU51Q210eGxFSTFFR3lPSTNlTTNobm1VQmJCS0x1R0ZIeFlxdTFISU9adG5qVTdIdnN3WWNiODVwUVhlaE9lczZESkV3OEZJVW5CNS15MldiWUVYMGEtWlJJS2pEYWZ6aW8yeGl6M1NhQjZHX1RraDA2UEZpbGNVOXRvQ24yVlBPdC1JRU5CWmRoUkthR3Z0VFdfQmJnNjZreE1TVnVwX1pkSHV3Q2Y1WGJiTFdzZW40c2RFSHBTcV8tT2JGY0lFdV9HbkU1ekd6OTdoTnhDTG1NTGVlNDNyb2hBZFM?oc=5)
