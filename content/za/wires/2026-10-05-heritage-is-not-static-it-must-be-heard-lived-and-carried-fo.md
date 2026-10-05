@@ -1,0 +1,16 @@
+---
+title: "Heritage is not static: It must be heard, lived and carried forward"
+date: 2026-10-05T06:30:55.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Heritage is not static: It must be heard, lived and carried forward"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxNbVZKcllKaExLQ0dPcU5BbVZ1TnMwQ0N4NEMxMGRINWNHYlJuOFBwUGNfOTk3RDcycHRJQ1J5QnNMSkY1NEJPZ0NOUkc5akVQWTBiOXU0cFJqUzdIM1poY2tGUTdPZmZDVHo3Qk0tejZBOTZlVFhNckJDTDdkRzBlQlVEbFpENU10X1hrUXpBcl90cTZRRkVEcWlDQy1NbEg0a3VDZWVLZk05d1J2VGVEMFdiTjJqNmpqN0VlUzVSaThQTGZZLUxTWXcyYTZLSlVtLUNMSHUxLW1kNnppYXZ4T2V2V3BaNTFydVFSUW9haTR1WHZtM0tVY2NLQzJlYXdHWjBHR3BndG81S3kwMjl1dmJ3R1d4VXpLNkNDT2ZGZGo5QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxNbVZKcllKaExLQ0dPcU5BbVZ1TnMwQ0N4NEMxMGRINWNHYlJuOFBwUGNfOTk3RDcycHRJQ1J5QnNMSkY1NEJPZ0NOUkc5akVQWTBiOXU0cFJqUzdIM1poY2tGUTdPZmZDVHo3Qk0tejZBOTZlVFhNckJDTDdkRzBlQlVEbFpENU10X1hrUXpBcl90cTZRRkVEcWlDQy1NbEg0a3VDZWVLZk05d1J2VGVEMFdiTjJqNmpqN0VlUzVSaThQTGZZLUxTWXcyYTZLSlVtLUNMSHUxLW1kNnppYXZ4T2V2V3BaNTFydVFSUW9haTR1WHZtM0tVY2NLQzJlYXdHWjBHR3BndG81S3kwMjl1dmJ3R1d4VXpLNkNDT2ZGZGo5QQ?oc=5)
