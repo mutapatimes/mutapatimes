@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 00:03:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:09:14 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Marketing Officer @ZSE_ZW</title>
+      <link>https://mutapatimes.com/stories/612e58a1675a.html</link>
+      <description>We are a leading manufacturing firm listed on the Zimbabwe Stock Exchange (ZSE), with an established reputation for quality, innovation, and operational excellence within our sector. As part of our c… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Mon, 05 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/612e58a1675a.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/612e58a1675a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/612e58a1675a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/612e58a1675a.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>OPHID — Clinical Coordinator</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/fce926047d74.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/fce926047d74.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/fce926047d74.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Head of Service – Joseph Roberts Capital</title>
-      <link>https://mutapatimes.com/stories/7140ca4163f0.html</link>
-      <description>VACANCY Head of Service – Joseph Roberts Capital Unit: Joseph Roberts Capital - Micro-Finance Location: Harare, Zimbabwe (with oversight across the country) Website: www.josephrobertscapital.com Repo… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 05 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/7140ca4163f0.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/7140ca4163f0.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/7140ca4163f0.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/7140ca4163f0.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
