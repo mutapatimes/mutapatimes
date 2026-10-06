@@ -1,0 +1,16 @@
+---
+title: "Hisense marks 30 years in South Africa with commitment to local growth and innovation"
+date: 2026-10-06T13:14:51.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Hisense marks 30 years in South Africa with commitment to local growth and innovation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMivAJBVV95cUxNY0duTnhrZHpTR1dHaU44QWtNR1F4dkxPNGNxY1ZpWm5xSktwOEcwcllzWDVhaGZ5VWNFXzY0SjU4TVp1eDdtVGNfcG9GT01oMldGWmRGbHdTMGxpWEdVY2JOLWlFUkRwRlc4VG95MWpsZUhfaDA4dVR5MldyTmk5ZDJGTUdld2ZSbF9INDdHQTFvYnJjR0ZaZ3hxeERLVFRhOE5Fc1VqYWxza1NsMkduMmZfZ2M1bmNWRmRScHEtZkFsc2JyM2lucUdPQWx2WldrY1drWEwyN3czczJ0ZXBUSk1hTXBTc1hrRVROUzc0dmJSVFFhMFhJYTFNOE0wRjlobHlDRGp0dlpIUDk5YTV4Qk90SXdKZUVtUzdSZm9TaTg3eXhOTl94MVNPTkNETzBxaDV2WVpMQndpSlEy?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMivAJBVV95cUxNY0duTnhrZHpTR1dHaU44QWtNR1F4dkxPNGNxY1ZpWm5xSktwOEcwcllzWDVhaGZ5VWNFXzY0SjU4TVp1eDdtVGNfcG9GT01oMldGWmRGbHdTMGxpWEdVY2JOLWlFUkRwRlc4VG95MWpsZUhfaDA4dVR5MldyTmk5ZDJGTUdld2ZSbF9INDdHQTFvYnJjR0ZaZ3hxeERLVFRhOE5Fc1VqYWxza1NsMkduMmZfZ2M1bmNWRmRScHEtZkFsc2JyM2lucUdPQWx2WldrY1drWEwyN3czczJ0ZXBUSk1hTXBTc1hrRVROUzc0dmJSVFFhMFhJYTFNOE0wRjlobHlDRGp0dlpIUDk5YTV4Qk90SXdKZUVtUzdSZm9TaTg3eXhOTl94MVNPTkNETzBxaDV2WVpMQndpSlEy?oc=5)

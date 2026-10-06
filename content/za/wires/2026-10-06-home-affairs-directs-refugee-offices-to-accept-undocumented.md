@@ -1,0 +1,16 @@
+---
+title: "Home affairs directs refugee offices to accept undocumented asylum applicants"
+date: 2026-10-06T07:18:30.000Z
+author: TimesLIVE
+category: Tech
+image: 
+summary: "Home affairs directs refugee offices to accept undocumented asylum applicants"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZDR2YUtjbXJpSzJPQ0lNemN1UFJwNzdhOXhYMzVpb0lYSGNaQ1FtZWhrcU1KYWdOMlAtUTdkMWczNkpiSFVpMVpXbWt3MzZDZFEzdldzYUtmZmh0TlQtS3NWRlJ3Wjh5VVd2YWpYTkpwQ29RU1BWcjA5eFlDb21WQ3lBdVkyWl9TRXhYazRwTmhsWGYxRkZjNnVEWWE2RTB2TlRLOGhaT3dTN0p4MnBaWTBvdlNDLVhkNkNlck15M0hEdDdla04tMkpOdGZjVnI4?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZDR2YUtjbXJpSzJPQ0lNemN1UFJwNzdhOXhYMzVpb0lYSGNaQ1FtZWhrcU1KYWdOMlAtUTdkMWczNkpiSFVpMVpXbWt3MzZDZFEzdldzYUtmZmh0TlQtS3NWRlJ3Wjh5VVd2YWpYTkpwQ29RU1BWcjA5eFlDb21WQ3lBdVkyWl9TRXhYazRwTmhsWGYxRkZjNnVEWWE2RTB2TlRLOGhaT3dTN0p4MnBaWTBvdlNDLVhkNkNlck15M0hEdDdla04tMkpOdGZjVnI4?oc=5)

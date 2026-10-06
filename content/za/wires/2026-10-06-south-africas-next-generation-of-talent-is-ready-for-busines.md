@@ -1,0 +1,16 @@
+---
+title: "South Africa’s next generation of talent is ready for business"
+date: 2026-10-06T08:54:01.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South Africa’s next generation of talent is ready for business"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxNV2MwRkd5eGdudVl5aG1ZMmRHTmxTSVdwMVcyOHZWc0NwYjVXbTJuQjV5LW5RUFRSSWhYaVFOemV0ZGd6My1NQXpObDhfcUZGQ1hRUnRwZE1uRldGU0lHaEUtUE9tZnNmdUZwYy1ybTE4Umx2VjdYSWI1Q2t1NUFUbTNQRGFuVlRDaHlHSURHZ0E3QXZkdmQ5aW9KekN5NDBEX2ZCd003dEthaW1Vd1htNlcwaUhZN3hiWjdkVjNJRHJRb0xQVXR1a211dVRFWTd6SEF0MDFfZnBUekRlTkZNQ1pRbFpIa2RoNjJ1VW55NGtjUndxSGZYWkhjbm1CQWNSeVVoS2VaYjR3ZnVMRVNOZW5YYmxzS19lUERIRg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinAJBVV95cUxNV2MwRkd5eGdudVl5aG1ZMmRHTmxTSVdwMVcyOHZWc0NwYjVXbTJuQjV5LW5RUFRSSWhYaVFOemV0ZGd6My1NQXpObDhfcUZGQ1hRUnRwZE1uRldGU0lHaEUtUE9tZnNmdUZwYy1ybTE4Umx2VjdYSWI1Q2t1NUFUbTNQRGFuVlRDaHlHSURHZ0E3QXZkdmQ5aW9KekN5NDBEX2ZCd003dEthaW1Vd1htNlcwaUhZN3hiWjdkVjNJRHJRb0xQVXR1a211dVRFWTd6SEF0MDFfZnBUekRlTkZNQ1pRbFpIa2RoNjJ1VW55NGtjUndxSGZYWkhjbm1CQWNSeVVoS2VaYjR3ZnVMRVNOZW5YYmxzS19lUERIRg?oc=5)
