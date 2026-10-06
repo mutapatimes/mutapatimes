@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T06:18:33.252289+00:00",
+  "fetched_at": "2026-10-06T18:21:02.594169+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -38,15 +38,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/b0/a3/64/b0a36486-7776-4951-8b8b-4335e966ee52_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
-    },
-    {
-      "title": "Spacious 5-Bedroom Home on a 200m² Stand",
-      "url": "https://www.property.co.zw/for-sale/houses-gat252496",
-      "price": "USD 55,000",
-      "location": "Kuwadzana, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/e6/32/d8/e632d865-076d-40bc-8421-bcc84ecf08fe_thumbnail591.webp",
-      "beds": "5",
-      "baths": ""
     },
     {
       "title": "Exceptional Family Estate On Nearly 4 Acres",
@@ -121,6 +112,15 @@
       "baths": "2"
     },
     {
+      "title": "Superb opportunity in Pomona",
+      "url": "https://www.property.co.zw/for-sale/houses-rws256545",
+      "price": "USD 300,000",
+      "location": "Pomona, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/bb/64/d5/bb64d573-c9eb-4793-aa19-6c9432991a1e_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
       "title": "House for sale",
       "url": "https://www.property.co.zw/for-sale/houses-pgp253003",
       "price": "USD 420,000",
@@ -128,6 +128,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/c9/f8/8f/c9f88fcd-dfbd-4809-8890-21d8db29537a_thumbnail591.webp",
       "beds": "5",
       "baths": "3"
+    },
+    {
+      "title": "Cold Comfort Housefor Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-syr256561",
+      "price": "USD 115,000",
+      "location": "Cold Comfort, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/d4/85/42/d4854250-a60d-433c-ac48-9eab568e3d0d_thumbnail591.webp",
+      "beds": "4",
+      "baths": "1"
     },
     {
       "title": "Mabvazuva 4 bedroom House For Sale",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/e3/39/57/e33957ed-e0b7-411d-8487-19c56f1d7667_thumbnail591.webp",
       "beds": "6",
       "baths": "6"
-    },
-    {
-      "title": "Walled incomplete 5-Bed Main House with a 3 beds cottage Home on 1901m² in Waterfalls",
-      "url": "https://www.property.co.zw/for-sale/houses-drf254804",
-      "price": "USD 135,000",
-      "location": "Waterfalls, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/7b/76/76/7b767636-6002-4ec6-ac58-e9d4e75bc174_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
     }
   ]
 }
