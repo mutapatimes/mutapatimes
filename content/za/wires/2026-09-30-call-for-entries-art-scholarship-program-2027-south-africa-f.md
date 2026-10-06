@@ -1,0 +1,16 @@
+---
+title: "Call for Entries: Art Scholarship Program 2027 (South Africa) - fundsforNGOs"
+date: 2026-09-30T07:00:00.000Z
+author: Grants and Resources for Sustainability
+category: Policy
+image: 
+summary: "Call for Entries: Art Scholarship Program 2027 (South Africa) - fundsforNGOs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiowFBVV95cUxNV0xFYjFHc0F0UDRhdS1kN002QVV0bkxfSlR6cXoza1ZHR0VPQkEyNVpuaUkzY2xQdXRiNVpSdVBCRlR5bGRZekVSMVFWNGNlbU5PdG9nY0lpcTR6eWdqSlg0d08zNllYRFNHM3NWMjU2MWxJZEVHOGpfQld4N190WEFIb1NKQ1FCZ0wyY1RhbGhNQUtIVjRYWXdiVm9JbEozaUhn0gGoAUFVX3lxTE5xc3QzcUZXMjZUUmFDVjJDbDVKV0pqNlZrMVU1YnR1TzdsaFR0Q0NndHFGN2doNUhkLXhISElJYlgycUNqc0pPbUZneDJ3YXNPNmd5Nk5hTWdmNTQtRXBLSjYyVHRjQWtlNk15NHVQVEhVd0FlYmZzc2VVSDZKa1puRlpESmd1eW1aODFMMW5tX0JBYVUwYTgwWlVhUDVYZGJrczdKaTZreQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Grants and Resources for Sustainability.*
+[Read original article](https://news.google.com/rss/articles/CBMiowFBVV95cUxNV0xFYjFHc0F0UDRhdS1kN002QVV0bkxfSlR6cXoza1ZHR0VPQkEyNVpuaUkzY2xQdXRiNVpSdVBCRlR5bGRZekVSMVFWNGNlbU5PdG9nY0lpcTR6eWdqSlg0d08zNllYRFNHM3NWMjU2MWxJZEVHOGpfQld4N190WEFIb1NKQ1FCZ0wyY1RhbGhNQUtIVjRYWXdiVm9JbEozaUhn0gGoAUFVX3lxTE5xc3QzcUZXMjZUUmFDVjJDbDVKV0pqNlZrMVU1YnR1TzdsaFR0Q0NndHFGN2doNUhkLXhISElJYlgycUNqc0pPbUZneDJ3YXNPNmd5Nk5hTWdmNTQtRXBLSjYyVHRjQWtlNk15NHVQVEhVd0FlYmZzc2VVSDZKa1puRlpESmd1eW1aODFMMW5tX0JBYVUwYTgwWlVhUDVYZGJrczdKaTZreQ?oc=5)
