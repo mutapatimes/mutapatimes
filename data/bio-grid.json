@@ -1,14 +1,62 @@
 {
-  "fetched_at": "2026-10-06T12:38:57+00:00",
+  "fetched_at": "2026-10-06T19:58:19+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 6 Oct 2026: All Share 477.71 (-2.08%)",
+      "link": "https://mutapatimes.com/zse?d=2026-10-06",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-06",
+      "pubDate": "2026-10-06T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "CAF sanctions Zimbabwe over fan death, pitch invasion at National Sports Stadium",
-      "link": "https://mutapatimes.com/articles/2026-10-06-caf-sanctions-zimbabwe-over-fan-death-pitch-invasion-at-nati",
-      "image": "https://mutapatimes.com/img/cards/news/40e2c7111819.png",
-      "pubDate": "2026-10-06T06:46:57+00:00",
-      "category": "Culture"
+      "title": "Young Electronics Traders Turn to E-Waste Management at Copacabana",
+      "link": "https://mutapatimes.com/news/2026-10-06-young-electronics-traders-turn-to-e-waste-management-at-copacabana-5dae46",
+      "image": "https://mutapatimes.com/img/cards/news/cf5bab2dd084.png",
+      "pubDate": "2026-10-06T07:50:12+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe prepares nationwide Lenacapavir roll-out",
+      "link": "https://mutapatimes.com/articles/2026-10-06-zimbabwe-prepares-nationwide-lenacapavir-roll-out",
+      "image": "https://mutapatimes.com/img/cards/news/0ec9e688c108.png",
+      "pubDate": "2026-10-06T07:46:15+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Former RBZ Senior Adviser Munyaradzi Kereke Dies",
+      "link": "https://mutapatimes.com/articles/2026-10-06-former-rbz-senior-adviser-munyaradzi-kereke-dies",
+      "image": "https://mutapatimes.com/img/cards/news/3871df2de9d1.png",
+      "pubDate": "2026-10-06T07:29:22+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Former RBZ Senior Adviser Munyaradzi Kereke Dies",
+      "link": "https://mutapatimes.com/news/2026-10-06-former-rbz-senior-adviser-munyaradzi-kereke-dies-4839e0",
+      "image": "https://mutapatimes.com/img/cards/news/b8422aa7d94e.png",
+      "pubDate": "2026-10-06T07:29:22+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Warriors’ Next Home Match To Be Played Behind Closed Doors After CAF Sanction",
+      "link": "https://mutapatimes.com/articles/2026-10-06-warriors-next-home-match-to-be-played-behind-closed-doors-af",
+      "image": "https://mutapatimes.com/img/cards/news/23161b22e8f3.png",
+      "pubDate": "2026-10-06T07:05:10+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Warriors’ Next Home Match To Be Played Behind Closed Doors After CAF Sanction",
+      "link": "https://mutapatimes.com/news/2026-10-06-warriors-next-home-match-to-be-played-behind-closed-doors-after-caf-sanction-9f2f23",
+      "image": "https://mutapatimes.com/img/cards/news/978fc44f448e.png",
+      "pubDate": "2026-10-06T07:05:10+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -20,11 +68,27 @@
     },
     {
       "kind": "news",
-      "title": "West Indies women crush Zimbabwe by eight wickets to seal T20I series",
-      "link": "https://mutapatimes.com/articles/2026-10-06-west-indies-women-crush-zimbabwe-by-eight-wickets-to-seal-t2",
-      "image": "https://mutapatimes.com/img/cards/news/29e9e1c0752f.png",
-      "pubDate": "2026-10-06T04:06:45+00:00",
-      "category": "Culture"
+      "title": "CAF orders Zimbabwe to play next home match behind closed doors",
+      "link": "https://mutapatimes.com/articles/2026-10-06-caf-orders-zimbabwe-to-play-next-home-match-behind-closed-do",
+      "image": "https://mutapatimes.com/img/cards/news/3cee9d889a8a.png",
+      "pubDate": "2026-10-06T06:26:52+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "CAF orders Zimbabwe to play next home match behind closed doors",
+      "link": "https://mutapatimes.com/news/2026-10-06-caf-orders-zimbabwe-to-play-next-home-match-behind-closed-doors-6523f1",
+      "image": "https://mutapatimes.com/img/cards/news/22f1d17b6648.png",
+      "pubDate": "2026-10-06T06:26:52+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Seven accused in AKA murder case plead not guilty",
+      "link": "https://mutapatimes.com/news/2026-10-06-seven-accused-in-aka-murder-case-plead-not-guilty-361adc",
+      "image": "https://mutapatimes.com/img/cards/news/8e37e88ab34c.png",
+      "pubDate": "2026-10-06T05:07:26+00:00",
+      "category": "Entertainment"
     },
     {
       "kind": "news",
@@ -45,34 +109,10 @@
     {
       "kind": "news",
       "title": "Premier African Minerals to raise £1.2m for Zimbabwe project",
-      "link": "https://mutapatimes.com/articles/2026-10-05-premier-african-minerals-to-raise-12m-for-zimbabwe-project",
-      "image": "https://mutapatimes.com/img/cards/news/6dd57ab28f17.png",
-      "pubDate": "2026-10-05T23:00:15+00:00",
-      "category": "Culture"
-    },
-    {
-      "kind": "news",
-      "title": "Premier African Minerals to raise £1.2m for Zimbabwe project",
       "link": "https://mutapatimes.com/news/2026-10-05-premier-african-minerals-to-raise-1-2m-for-zimbabwe-project-8466a0",
       "image": "https://mutapatimes.com/img/cards/news/14d4bc17bad4.png",
       "pubDate": "2026-10-05T23:00:15+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Premier African Minerals to raise £1.2m for Zimbabwe project",
-      "link": "https://mutapatimes.com/news/2026-10-06-premier-african-minerals-to-raise-1-2m-for-zimbabwe-project-41935e",
-      "image": "https://mutapatimes.com/img/cards/news/3a58db815879.png",
-      "pubDate": "2026-10-05T23:00:15+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "IDBZ calls for large-scale private capital to drive infrastructure boom",
-      "link": "https://mutapatimes.com/articles/2026-10-05-idbz-calls-for-large-scale-private-capital-to-drive-infrastr",
-      "image": "https://mutapatimes.com/img/cards/news/f5d37625b235.png",
-      "pubDate": "2026-10-05T22:23:31+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -137,6 +177,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-05T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mining Engineering",
+      "link": "https://vacancymail.co.zw/jobs/mining-engineering-69734/",
+      "image": "https://mutapatimes.com/img/cards/jobs/60c84d5b59cb.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Graduate Trainee Mining Engineering",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-mining-engineering-69733/",
+      "image": "https://mutapatimes.com/img/cards/jobs/36dfff9464bd.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sale Representative",
+      "link": "https://vacancymail.co.zw/jobs/sale-representative-69732/",
+      "image": "https://mutapatimes.com/img/cards/jobs/6d18017166a3.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounts Attachee /Intern",
+      "link": "https://vacancymail.co.zw/jobs/accounts-attachee-intern-69731/",
+      "image": "https://mutapatimes.com/img/cards/jobs/10d505712917.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Marketing Attachés",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-attaches-69730/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ec5c41fd74dc.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Counter Sales Representative",
+      "link": "https://vacancymail.co.zw/jobs/counter-sales-representative-69729/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e2cfd5d956cb.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Simbisa Brands — Refrigeration Technician",
+      "link": "https://vacancymail.co.zw/jobs/refrigeration-technician-69728/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d9087182b811.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "APPLE VALLEY SCHOOL — Accounts Officer",
+      "link": "https://vacancymail.co.zw/jobs/accounts-officer-69727/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3877facba0e4.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "APPLE VALLEY SCHOOL — Accounts intern",
+      "link": "https://vacancymail.co.zw/jobs/accounts-intern-69726/",
+      "image": "https://mutapatimes.com/img/cards/jobs/53986be02679.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "World Vision — INVITATION TO TENDER TENDER FOR HYDROGEOLOGICAL SURVEY, MUD BOREHOLE",
+      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-tender-for-hydrogeological-survey-mud-borehole-69725/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c962d6738849.png",
+      "pubDate": "2026-10-05T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -359,126 +479,6 @@
       "title": "In-House Content Creator",
       "link": "https://vacancymail.co.zw/jobs/in-house-content-creator-69669/",
       "image": "https://mutapatimes.com/img/cards/jobs/0387208bbe55.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — Request for Quotations: Professional full-stack website design",
-      "link": "https://vacancymail.co.zw/jobs/request-for-quotations-professional-full-stack-website-design-69668/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7887f7da3e58.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Energy Regulatory Authority ZERA — Interns",
-      "link": "https://vacancymail.co.zw/jobs/interns-69667/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ccdec01cd884.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Blood Service Zimbabwe — Mobile Team Driver",
-      "link": "https://vacancymail.co.zw/jobs/mobile-team-driver-69666/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b7b90d191c92.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Olivine Oil — Stores Clerk",
-      "link": "https://vacancymail.co.zw/jobs/stores-clerk-69665/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4b0b199358d8.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Buy Zimbabwe ~~ 1 — FINANCE & ACCOUNTING ATTACHMENT STUDENTS (1 POSITION)",
-      "link": "https://vacancymail.co.zw/jobs/finance-accounting-attachment-students-1-position-69664/",
-      "image": "https://mutapatimes.com/img/cards/jobs/68a813b7061c.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Old Mutual Zimbabwe — Process Engineer",
-      "link": "https://vacancymail.co.zw/jobs/process-engineer-69663/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ddacc997a850.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Stock Exchange — Human Resources & People Partner",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-people-partner-69662/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fa4448c3a594.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Stock Exchange — Head Of ZSE & ZEEX Markets",
-      "link": "https://vacancymail.co.zw/jobs/head-of-zse-zeex-markets-69661/",
-      "image": "https://mutapatimes.com/img/cards/jobs/581d18176c4b.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Stock Exchange — Head Of ZSE & ZEEX Markets",
-      "link": "https://vacancymail.co.zw/jobs/head-of-zse-zeex-markets-69660/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d07ad53c4d7f.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Farm Manager",
-      "link": "https://vacancymail.co.zw/jobs/assistant-farm-manager-69655/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4d0f1ab83c02.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "First Capital Bank Zimbabwe Limited — Graduate Trainee Programme 2027",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-2027-69654/",
-      "image": "https://mutapatimes.com/img/cards/jobs/04b34ddb574f.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — TERMS OF REFERENCE (TOR) URBAN FUTURES PROGRAMME CONDUCTING RESEARCH ON POLICIES FOR GREEN BUSINESS, CLIMATE AND FOOD SYSTEMS AND SUSTAINABLE PRACTICES AND TECHNOLOGIES THAT SUPPORT SMART FARMING…",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-urban-futures-programme-conducting-research-on-policies-for-green-business-climate-and-food-systems-and-sustainable-practices-and-technologies-that-support-smart-farming-69653/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2153d9ca58d1.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — TERMS OF REFERENCE (TOR) URBAN FUTURES PROGRAMME CONDUCTING RESEARCH ON POLICIES FOR GREEN BUSINESS, CLIMATE AND FOOD SYSTEMS AND SUSTAINABLE PRACTICES AND TECHNOLOGIES THAT SUPPORT SMART FARMING…",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-urban-futures-programme-conducting-research-on-policies-for-green-business-climate-and-food-systems-and-sustainable-practices-and-technologies-that-support-smart-farming-69652/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c3057a75121f.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — Expert Policy Briefs on Incentives for Local Beneficiation and Green Industrialisation for selected SADC Countries",
-      "link": "https://vacancymail.co.zw/jobs/expert-policy-briefs-on-incentives-for-local-beneficiation-and-green-industrialisation-for-selected-sadc-countries-69651/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ede3dad2d4a1.png",
-      "pubDate": "2026-10-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — DRIP IRRIGATION MAINTENANCE FOREMAN",
-      "link": "https://vacancymail.co.zw/jobs/drip-irrigation-maintenance-foreman-69650/",
-      "image": "https://mutapatimes.com/img/cards/jobs/56a1196f8e28.png",
       "pubDate": "2026-10-05T22:00:00+00:00",
       "category": "Jobs"
     }
