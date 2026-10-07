@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-07T05:57:52.607132+00:00",
+  "fetched_at": "2026-10-07T13:20:36.700961+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -166,15 +166,6 @@
       "baths": "1"
     },
     {
-      "title": "House For Sale In Norton, Knowe",
-      "url": "https://www.property.co.zw/for-sale/houses-prn242284",
-      "price": "USD 145,000",
-      "location": "Knowe, Norton",
-      "image": "https://www.property.co.zw/uploadedfiles/db/5c/2e/db5c2e21-4ce9-4b30-b5c9-50d79df69a5e_thumbnail591.webp",
-      "beds": "4",
-      "baths": ""
-    },
-    {
       "title": "Pomona, Nyeredzi Ridge",
       "url": "https://www.property.co.zw/for-sale/townhouses-rws253744",
       "price": "USD 275,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/12/b5/d6/12b5d6f1-c6bc-4fdd-9957-44c4d37524ba_thumbnail591.webp",
       "beds": "5",
       "baths": "3"
+    },
+    {
+      "title": "House for sale in Bushmead Masvingo",
+      "url": "https://www.property.co.zw/for-sale/houses-bnjr244701",
+      "price": "USD 200,000",
+      "location": "Masvingo",
+      "image": "https://www.property.co.zw/uploadedfiles/6f/0b/fd/6f0bfd1c-eed8-4412-a56a-4d8ffdb74678_thumbnail591.webp",
+      "beds": "4",
+      "baths": ""
     }
   ]
 }

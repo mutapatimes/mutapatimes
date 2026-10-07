@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Oct 2026 11:16:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 13:20:45 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -235,18 +235,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/b09c5e348fee.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 145,000 — House For Sale In Norton, Knowe (Knowe, Norton)</title>
-      <link>https://mutapatimes.com/property-landing/6f39756fa696.html</link>
-      <description>USD 145,000 — Knowe, Norton. 4 beds. House For Sale In Norton, Knowe. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 06 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/6f39756fa696.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/6f39756fa696.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/6f39756fa696.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/6f39756fa696.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 275,000 — Pomona, Nyeredzi Ridge (Pomona, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/faafffb5d083.html</link>
       <description>USD 275,000 — Pomona, Harare North. 4 beds, 2 baths. Pomona, Nyeredzi Ridge. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/a69e3291320f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a69e3291320f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/a69e3291320f.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 200,000 — House for sale in Bushmead Masvingo (Masvingo)</title>
+      <link>https://mutapatimes.com/property-landing/2bc9312e59b5.html</link>
+      <description>USD 200,000 — Masvingo. 4 beds. House for sale in Bushmead Masvingo. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 06 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/2bc9312e59b5.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/2bc9312e59b5.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/2bc9312e59b5.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/2bc9312e59b5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
