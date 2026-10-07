@@ -1,0 +1,16 @@
+---
+title: "South Africa’s infrastructure future depends on fixing bankability, not capital allocation."
+date: 2026-10-07T10:20:29.000Z
+author: News24
+category: Business
+image: 
+summary: "South Africa’s infrastructure future depends on fixing bankability, not capital allocation."
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLXBBQzFpZGFIR0RYX2s4MXVOQnNkRVVOeTdnTUVyczhiZXpqWVpBRlFFeVpOOEIwR1lVWXlCT3J2eG5yRjZnZFBwT2pOejc3U0o5YkxPNV9xNVIyeE85aVhNUHlWNm1pSXpuYllGWFpKTWtCLWRWSWpsVlp1UWF5X1ZqNnpWSl9UdlJEdjhGZXhkNWRfNC1qcHJYMFBobm9ZZm4wZ1JwNVNTWmNFMmUtdl82c0xPTEVHNFUzeTNpWmVYWE1zeFd5YmthcWNFSktOblJCRTJjTTNQd2RxOS1OTWRSNjlrWE0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLXBBQzFpZGFIR0RYX2s4MXVOQnNkRVVOeTdnTUVyczhiZXpqWVpBRlFFeVpOOEIwR1lVWXlCT3J2eG5yRjZnZFBwT2pOejc3U0o5YkxPNV9xNVIyeE85aVhNUHlWNm1pSXpuYllGWFpKTWtCLWRWSWpsVlp1UWF5X1ZqNnpWSl9UdlJEdjhGZXhkNWRfNC1qcHJYMFBobm9ZZm4wZ1JwNVNTWmNFMmUtdl82c0xPTEVHNFUzeTNpWmVYWE1zeFd5YmthcWNFSktOblJCRTJjTTNQd2RxOS1OTWRSNjlrWE0?oc=5)

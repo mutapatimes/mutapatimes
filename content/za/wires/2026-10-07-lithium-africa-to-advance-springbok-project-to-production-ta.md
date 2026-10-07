@@ -1,0 +1,16 @@
+---
+title: "Lithium Africa to Advance Springbok Project to Production Targeted for 2027"
+date: 2026-10-07T11:12:44.000Z
+author: Junior Mining Network
+category: Business
+image: 
+summary: "Lithium Africa to Advance Springbok Project to Production Targeted for 2027"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPRlFaRjFHTHpZQnE2eWxJamRhb2VqalVfcXI1REdFUm1VNkhndEVKSFRrN25iTkd4aGdTTlh5MjJ5T2ZPSzFib3lMSUtEaFpPQ2FPSmRtUzk4RU5GVThwcTIzVjFHbHF4VU4xOFl1VHBpM3RJcHlWYTBNM2lhaV9JZGVKZkRqU1ZjMmZSN2Q5YnZ3aDI1bEF6QXJpYk1mcGFJNVlNQjZEUERQZWotT1k5WklzZXRHRENqMUo5cnVNZ3VNeDQxbV9fVjFoY1pEelNkRjVhR2M4anIzX1NQdkRncEVlaU5lVWNHajVzbEFKSTdpQkdSdHVCWmhVaE1vOHFmN1hBVko1S3o?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Junior Mining Network.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxPRlFaRjFHTHpZQnE2eWxJamRhb2VqalVfcXI1REdFUm1VNkhndEVKSFRrN25iTkd4aGdTTlh5MjJ5T2ZPSzFib3lMSUtEaFpPQ2FPSmRtUzk4RU5GVThwcTIzVjFHbHF4VU4xOFl1VHBpM3RJcHlWYTBNM2lhaV9JZGVKZkRqU1ZjMmZSN2Q5YnZ3aDI1bEF6QXJpYk1mcGFJNVlNQjZEUERQZWotT1k5WklzZXRHRENqMUo5cnVNZ3VNeDQxbV9fVjFoY1pEelNkRjVhR2M4anIzX1NQdkRncEVlaU5lVWNHajVzbEFKSTdpQkdSdHVCWmhVaE1vOHFmN1hBVko1S3o?oc=5)
