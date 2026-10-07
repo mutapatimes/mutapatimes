@@ -1,0 +1,16 @@
+---
+title: "AGSA flags irregular expenditure and weak IT controls in human settlements portfolio"
+date: 2026-10-07T14:58:07.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "AGSA flags irregular expenditure and weak IT controls in human settlements portfolio"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYmhNbDJHQW1zYm93QmtDS1NGYmN6OUo1UWJhY2N1U3J1cE9YSVoxQk5OOUVHaHlUR0xxNnhha1RLTXFuYTh5NHl1STFiYnRiSm9qOUwxVEJUMkVYdW5hYnBfSzhOZjQzR1hGbGdybnBldjFRVktjLU5ZSXNNS0xIZGdGbVgzVXFrdFVPc0dXU1FKQzZ0TmN2Q1Y1czNKdWFQUjNidThxQjdnOWptMlBWNlAwS0NSWXJHNFczazdfY0pqX1JWcWk3WDNfbWF6U1lBWlp1U0RJdHhEZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYmhNbDJHQW1zYm93QmtDS1NGYmN6OUo1UWJhY2N1U3J1cE9YSVoxQk5OOUVHaHlUR0xxNnhha1RLTXFuYTh5NHl1STFiYnRiSm9qOUwxVEJUMkVYdW5hYnBfSzhOZjQzR1hGbGdybnBldjFRVktjLU5ZSXNNS0xIZGdGbVgzVXFrdFVPc0dXU1FKQzZ0TmN2Q1Y1czNKdWFQUjNidThxQjdnOWptMlBWNlAwS0NSWXJHNFczazdfY0pqX1JWcWk3WDNfbWF6U1lBWlp1U0RJdHhEZw?oc=5)

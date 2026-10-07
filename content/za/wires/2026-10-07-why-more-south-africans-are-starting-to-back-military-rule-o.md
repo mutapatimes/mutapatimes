@@ -1,0 +1,16 @@
+---
+title: "Why more South Africans are starting to back military rule over constitutional democracy"
+date: 2026-10-07T16:27:21.000Z
+author: News24
+category: Business
+image: 
+summary: "Why more South Africans are starting to back military rule over constitutional democracy"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPOUJMdUJyRm9LVXJRTXB3WGFxLUFsWGpaenU3MGc3RHJOeVhfeU9fWUlBejRUcU8yQmFJSllSdDNTUDA0N1dDZjd0UVBUbklndG16ZEpEbFFjZlNfMTFKZ0FmdW0teXlFd2V0RVdqLWkxTkhZelg2MmZxLWZqa3U2d1NQSDNiVkl0NjUyVjJ5N0J4QnA0ZmIySXlLbmwwSnVIdlZGRk5XRllzeHFZdW03Q2JDY0lWb1NaN1ZOQ3hyZjNGc29LdjBFVnNMVGwyV3NCVjRVN3pzQ0xXelU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPOUJMdUJyRm9LVXJRTXB3WGFxLUFsWGpaenU3MGc3RHJOeVhfeU9fWUlBejRUcU8yQmFJSllSdDNTUDA0N1dDZjd0UVBUbklndG16ZEpEbFFjZlNfMTFKZ0FmdW0teXlFd2V0RVdqLWkxTkhZelg2MmZxLWZqa3U2d1NQSDNiVkl0NjUyVjJ5N0J4QnA0ZmIySXlLbmwwSnVIdlZGRk5XRllzeHFZdW03Q2JDY0lWb1NaN1ZOQ3hyZjNGc29LdjBFVnNMVGwyV3NCVjRVN3pzQ0xXelU?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "SA takes pharmaceutical development, production into its own hands with CSIR’s FuturePharma"
+date: 2026-10-07T17:53:14.000Z
+author: News24
+category: Business
+image: 
+summary: "SA takes pharmaceutical development, production into its own hands with CSIR’s FuturePharma"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZ1VtVkVINWt5b252Uk5CNlNpd2ZSU0dLRmlyWXdIWktxUmJyZEJreVRRV09QNnR2Vzc3OGhkUC1HN1VXUUg4Y0VqNzRjMzR1UTlDeHZncUF3bTFuLWpuSEFnUmNQV0I0TW9CR0VtdU9Bb0lmTTdIZlloNWxiTWZDaGJCRTk3OGVsTnBFNVNKY1FzQnRhT0NXMjItRXpmSUJQbzlHUGF0bEZEVm9oSHRVVUlIZGdFYXVPZktETHYwUWZ2MGRScjFILVpJMk15YzNzSE9sWDgtbkVDZ0c2OHRUMTBKeF8?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZ1VtVkVINWt5b252Uk5CNlNpd2ZSU0dLRmlyWXdIWktxUmJyZEJreVRRV09QNnR2Vzc3OGhkUC1HN1VXUUg4Y0VqNzRjMzR1UTlDeHZncUF3bTFuLWpuSEFnUmNQV0I0TW9CR0VtdU9Bb0lmTTdIZlloNWxiTWZDaGJCRTk3OGVsTnBFNVNKY1FzQnRhT0NXMjItRXpmSUJQbzlHUGF0bEZEVm9oSHRVVUlIZGdFYXVPZktETHYwUWZ2MGRScjFILVpJMk15YzNzSE9sWDgtbkVDZ0c2OHRUMTBKeF8?oc=5)
