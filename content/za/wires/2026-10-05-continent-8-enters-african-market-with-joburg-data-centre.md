@@ -1,0 +1,16 @@
+---
+title: "Continent 8 enters African market with Joburg data centre"
+date: 2026-10-05T15:06:53.000Z
+author: Developing Telecoms
+category: Tech
+image: 
+summary: "Continent 8 enters African market with Joburg data centre"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUWpuRnF0cEtXajBhYzZMa1BxX2dVYWppQThhWXdDalpoS3l3TC15VFVLdkVMWllrYkFfZDJUT0VhcGNVOFJZbE90WTJYZlBGVEI0TWR3MGRRbjl1bzUyTlpVeld6QndRZnJlbmV3dUJ3a0JhcWxCUDNtbVdSbWF1R1E3NjgtdWwxN3ZKdXhKeUdVQ3g4RXB3ejJyN3dPR0ttdV90TVZHaUFJVFpsYXZ4S0FLTzlNbGVuQkVKYXdUUWFXNHNTVXp1SGxtSDZjR1lISlpjS282VQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Developing Telecoms.*
+[Read original article](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUWpuRnF0cEtXajBhYzZMa1BxX2dVYWppQThhWXdDalpoS3l3TC15VFVLdkVMWllrYkFfZDJUT0VhcGNVOFJZbE90WTJYZlBGVEI0TWR3MGRRbjl1bzUyTlpVeld6QndRZnJlbmV3dUJ3a0JhcWxCUDNtbVdSbWF1R1E3NjgtdWwxN3ZKdXhKeUdVQ3g4RXB3ejJyN3dPR0ttdV90TVZHaUFJVFpsYXZ4S0FLTzlNbGVuQkVKYXdUUWFXNHNTVXp1SGxtSDZjR1lISlpjS282VQ?oc=5)
