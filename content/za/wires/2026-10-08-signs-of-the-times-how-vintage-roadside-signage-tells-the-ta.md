@@ -1,0 +1,16 @@
+---
+title: "Signs of the times — how vintage roadside signage tells the tale of SA history"
+date: 2026-10-08T05:13:53.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Signs of the times — how vintage roadside signage tells the tale of SA history"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMisgJBVV95cUxPSll6Nk1VdUR5SHBhYjBJVGI1Rl9NYm5xanBYRFI5blhfdm1ZYkVEZ0dVc1RvRVM4SkxBVTNKZ0NUT0ZLRkg2ckk4ZkxlSE9GSXBfRm90WWxVTkxjRlZsNnpSMGNMSzdUaHIzbU1VNmg5NnhfcG1lTUd0SUkwaVo3QmQ1UDlyem44cmMzN1lBRXZUMFp0ZXYtemphbXcyRzg5TFFLS1BvOWZ3V0Q4aWNrYkJaYlJ5anFnSWhhM3RvRnBzZ0pRWmprQVpxUzgyampJNkhCd3k1d1R0eGFWS0FYSGdSVjdlU3U0bW9CSGFFVFdmTDRNdklaeXA2d2Vrcno0RzQtYzNaZFUxMHVTMWZWbjZIM3JNTnpCXzRLMDBtTDk4eVRYcjJiVXl2NS1vRXJKaHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMisgJBVV95cUxPSll6Nk1VdUR5SHBhYjBJVGI1Rl9NYm5xanBYRFI5blhfdm1ZYkVEZ0dVc1RvRVM4SkxBVTNKZ0NUT0ZLRkg2ckk4ZkxlSE9GSXBfRm90WWxVTkxjRlZsNnpSMGNMSzdUaHIzbU1VNmg5NnhfcG1lTUd0SUkwaVo3QmQ1UDlyem44cmMzN1lBRXZUMFp0ZXYtemphbXcyRzg5TFFLS1BvOWZ3V0Q4aWNrYkJaYlJ5anFnSWhhM3RvRnBzZ0pRWmprQVpxUzgyampJNkhCd3k1d1R0eGFWS0FYSGdSVjdlU3U0bW9CSGFFVFdmTDRNdklaeXA2d2Vrcno0RzQtYzNaZFUxMHVTMWZWbjZIM3JNTnpCXzRLMDBtTDk4eVRYcjJiVXl2NS1vRXJKaHc?oc=5)

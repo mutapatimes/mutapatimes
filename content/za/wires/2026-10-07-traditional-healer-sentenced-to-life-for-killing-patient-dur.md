@@ -1,0 +1,16 @@
+---
+title: "Traditional healer sentenced to life for killing patient during ‘cleansing ceremony’ in North West"
+date: 2026-10-07T15:22:04.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "Traditional healer sentenced to life for killing patient during ‘cleansing ceremony’ in North West"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOTJxbzV5Qlk2TVZWOS1USnZRbDZ3ckhMWkpUdGVIdHdvRUNkYUpoMm8xTUdQX3JmOUxVb3l5U0x4ZndrRHNMNXE5dDE1NXVaems2blRLMWZWMURGXzZIVklQOU1jVDM0RzhWeE1IWGN3RXZuSGh1ZmhBSEdsT3hBcGNyaFNwVEh6RTdVS1BpWXM3Z2RSeHN5TjRmUGdxdUxLcGZOM29BSjRQWDdZSGZNNWxvZkFmMmQ0RjZTSXdhRUxzcW1CSkh3Sk9MQllHWkdHN3VfZEhSUnZ6bC1SU1FCbUlKa3F2V1h0dHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOTJxbzV5Qlk2TVZWOS1USnZRbDZ3ckhMWkpUdGVIdHdvRUNkYUpoMm8xTUdQX3JmOUxVb3l5U0x4ZndrRHNMNXE5dDE1NXVaems2blRLMWZWMURGXzZIVklQOU1jVDM0RzhWeE1IWGN3RXZuSGh1ZmhBSEdsT3hBcGNyaFNwVEh6RTdVS1BpWXM3Z2RSeHN5TjRmUGdxdUxLcGZOM29BSjRQWDdZSGZNNWxvZkFmMmQ0RjZTSXdhRUxzcW1CSkh3Sk9MQllHWkdHN3VfZEhSUnZ6bC1SU1FCbUlKa3F2V1h0dHc?oc=5)
