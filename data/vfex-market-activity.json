@@ -1,62 +1,68 @@
 {
-  "fetched_at": "2026-10-07T20:40:14.141381+00:00",
-  "as_of": "2026-10-07",
+  "fetched_at": "2026-10-08T17:52:01.171479+00:00",
+  "as_of": "2026-10-08",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 248,
-    "turnover": 6552120.54,
-    "volume": 5327940.0,
-    "market_cap": 9018115100.94
+    "trades": 190,
+    "turnover": 1037142.57,
+    "volume": 2692136.0,
+    "market_cap": 9012922907.37
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 269.81,
-      "change_pct": -1.73,
-      "change_points": -4.74,
+      "value": 269.02,
+      "change_pct": -0.29,
+      "change_points": -0.79,
       "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "Tsl Limited",
-      "symbol": "TSL.VX",
-      "price": 22.58,
-      "change_pct": 3.44
-    }
-  ],
-  "losers": [
-    {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 70.57,
-      "change_pct": -3.17
-    },
-    {
-      "name": "Innscor Africa Limited",
-      "symbol": "INN.VX",
-      "price": 145.01,
-      "change_pct": -3.09
+      "name": "Caledonia Mining Corporation Plc",
+      "symbol": "CMCL.VX",
+      "price": 3839.93,
+      "change_pct": 2.32
     },
     {
       "name": "Padenga Holdings Ltd",
       "symbol": "PHL.VX",
-      "price": 145.33,
-      "change_pct": -2.89
+      "price": 148.51,
+      "change_pct": 2.19
+    }
+  ],
+  "losers": [
+    {
+      "name": "Tsl Limited",
+      "symbol": "TSL.VX",
+      "price": 21.03,
+      "change_pct": -6.86
     },
     {
-      "name": "Caledonia Mining Corporation Plc",
-      "symbol": "CMCL.VX",
-      "price": 3752.96,
-      "change_pct": -2.68
+      "name": "Invictus Energy Limited Depository Receipts",
+      "symbol": "",
+      "price": 12.05,
+      "change_pct": -3.83
     },
     {
       "name": "Axia Corporation Limited",
       "symbol": "AXIA.VX",
-      "price": 15.94,
-      "change_pct": -1.73
+      "price": 15.5,
+      "change_pct": -2.76
+    },
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "price": 143.44,
+      "change_pct": -1.08
+    },
+    {
+      "name": "Econet Infraco",
+      "symbol": "INFR.VX",
+      "price": 22.32,
+      "change_pct": -1.06
     }
   ],
   "notices": [
