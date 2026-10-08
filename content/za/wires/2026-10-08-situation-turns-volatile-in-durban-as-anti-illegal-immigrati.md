@@ -1,0 +1,16 @@
+---
+title: "Situation turns volatile in Durban as anti-illegal immigration protesters torch several vehicles and looted shops"
+date: 2026-10-08T15:52:30.000Z
+author: Mail & Guardian
+category: Business
+image: 
+summary: "Situation turns volatile in Durban as anti-illegal immigration protesters torch several vehicles and looted shops"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVW1sWFlxTVJGOThNdlg5T0g4TUw5UjFtUWw3MHBYY3hVaXZ5ZWVDUzAyd2xnR2lOTjk5eWJkNHgtd2xFZVE5cGNPMnFrMUVzaE9rOGJQV2RkdWo0cy1icnJsYm9LYXdELWh1Rm0yWUFPb2R5OXlRRTIybldUekQzRFV2M1gyVUpxU0d5WFZGUnFHMm5kQTE5TXJSTGNJaHJwYVNHWlV3MUQyd0VoOGZmVlRHcXFWYTlJOG9CTW9zUDUydUNzLVBnTDMzQ2Rmbi1obTBoeWk3WVBxRXlyQVZGbTBDTnBhZUZ6ckFxRG5mS0d3QQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVW1sWFlxTVJGOThNdlg5T0g4TUw5UjFtUWw3MHBYY3hVaXZ5ZWVDUzAyd2xnR2lOTjk5eWJkNHgtd2xFZVE5cGNPMnFrMUVzaE9rOGJQV2RkdWo0cy1icnJsYm9LYXdELWh1Rm0yWUFPb2R5OXlRRTIybldUekQzRFV2M1gyVUpxU0d5WFZGUnFHMm5kQTE5TXJSTGNJaHJwYVNHWlV3MUQyd0VoOGZmVlRHcXFWYTlJOG9CTW9zUDUydUNzLVBnTDMzQ2Rmbi1obTBoeWk3WVBxRXlyQVZGbTBDTnBhZUZ6ckFxRG5mS0d3QQ?oc=5)
