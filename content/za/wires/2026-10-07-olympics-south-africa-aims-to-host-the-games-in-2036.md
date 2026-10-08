@@ -1,0 +1,16 @@
+---
+title: "Olympics: South Africa aims to host the Games in 2036"
+date: 2026-10-07T16:36:14.000Z
+author: Africanews
+category: Sport
+image: 
+summary: "Olympics: South Africa aims to host the Games in 2036"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZnRHM0lWeXFmWC1EU1FaOVV6cExaUG8wbGV0ekdjZFdpckVTeml6RWJuaTNqLWc4bVI4eUhvZ2syWUpBWjNHMXIyUl9zem1lSkJPT2N3eldTLWVjdVBUUGo5bEZpQ3lrUE1ROXU1QlRneEhOYWlGZEIwalJvcGxmME0xMFA0VVZBdTRNQ1g4MWhUdFc5THfSAZsBQVVfeXFMTXJONVlObmF6S2NmM3ZUWnVTZWlfdUdjMlBrQ1dRUUx4bUpwSm9UeGNRb1ZJQnJoQzRrWWpUSWRaTm9QTHpVMUc4RXd3WVZKVXp3UUxMcEdhMUFDVHp0NEx2dFJTV1JTZ3pnRE81dnotOVZQTy1MV0t2Rk4tOGpBd1R5cmZqc2JHWHRkRUtTVGFrZjFOSURWSnBCMkk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Africanews.*
+[Read original article](https://news.google.com/rss/articles/CBMilgFBVV95cUxPZnRHM0lWeXFmWC1EU1FaOVV6cExaUG8wbGV0ekdjZFdpckVTeml6RWJuaTNqLWc4bVI4eUhvZ2syWUpBWjNHMXIyUl9zem1lSkJPT2N3eldTLWVjdVBUUGo5bEZpQ3lrUE1ROXU1QlRneEhOYWlGZEIwalJvcGxmME0xMFA0VVZBdTRNQ1g4MWhUdFc5THfSAZsBQVVfeXFMTXJONVlObmF6S2NmM3ZUWnVTZWlfdUdjMlBrQ1dRUUx4bUpwSm9UeGNRb1ZJQnJoQzRrWWpUSWRaTm9QTHpVMUc4RXd3WVZKVXp3UUxMcEdhMUFDVHp0NEx2dFJTV1JTZ3pnRE81dnotOVZQTy1MV0t2Rk4tOGpBd1R5cmZqc2JHWHRkRUtTVGFrZjFOSURWSnBCMkk?oc=5)
