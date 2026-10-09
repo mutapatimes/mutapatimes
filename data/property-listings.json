@@ -1,17 +1,8 @@
 {
-  "fetched_at": "2026-10-09T06:06:43.141964+00:00",
+  "fetched_at": "2026-10-09T13:14:43.639747+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
-    {
-      "title": "westwood house for sale",
-      "url": "https://www.property.co.zw/for-sale/houses-bls248717",
-      "price": "USD 120,000",
-      "location": "Westwood, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/be/3d/73/be3d73d9-b91e-426d-8441-980c3031a034_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
     {
       "title": "SHAWASHA HILLS | 3-BEDROOM COTTAGE ON 2,090m²",
       "url": "https://www.property.co.zw/for-sale/houses-gat255837",
@@ -22,6 +13,15 @@
       "baths": ""
     },
     {
+      "title": "Arlington 4-Bed Townhouse Complex — Tiled Patio & Fitted Kitchen",
+      "url": "https://www.property.co.zw/for-sale/townhouses-cami253367",
+      "price": "USD 175,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/5d/eb/00/5deb002c-4db8-47f5-b9f8-52dbb0cca224_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
+    {
       "title": "Unleash Luxury Living: Executive Double-Storey Masterpiece in Hogerty Hill",
       "url": "https://www.property.co.zw/for-sale/houses-sef252223",
       "price": "USD 330,000",
@@ -29,6 +29,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/b6/49/8c/b6498c0e-05f6-4696-8859-356f35748d90_thumbnail591.webp",
       "beds": "6",
       "baths": ""
+    },
+    {
+      "title": "4 Bedroom Townhouse, Kabot Villas for sale",
+      "url": "https://www.property.co.zw/for-sale/townhouses-sbre233667",
+      "price": "USD 170,000",
+      "location": "Buena Vista, Bulawayo East",
+      "image": "https://www.property.co.zw/uploadedfiles/89/e6/09/89e6093e-0a8c-4826-8b78-886e5bdedd44_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
     },
     {
       "title": "Neat Mabvazuva House",
@@ -67,15 +76,6 @@
       "baths": "3"
     },
     {
-      "title": "Sunlit 3-Bed Flat with Open Plan Living & Carport in Waterfalls",
-      "url": "https://www.property.co.zw/for-sale/houses-prf239912",
-      "price": "USD 85,000",
-      "location": "Waterfalls, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/80/8d/de/808dde5a-d9af-4af5-b65c-61040aeb34d3_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
       "title": "Brand-New 4-Bedroom Family Home, Walled with an Electric Gate",
       "url": "https://www.property.co.zw/for-sale/houses-kwrz256460",
       "price": "USD 96,000",
@@ -110,6 +110,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/18/f5/60/18f5605b-78da-4557-98b4-63503ab529a0_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
+    },
+    {
+      "title": "Beautiful Family Home",
+      "url": "https://www.property.co.zw/for-sale/houses-sby256900",
+      "price": "USD 330,000",
+      "location": "Highlands, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/6d/9e/43/6d9e43f7-4b89-4836-888e-038d83404b6f_thumbnail591.webp",
+      "beds": "4",
+      "baths": ""
     },
     {
       "title": "Kuwadzana 2-Bed Home with Veg Garden & Outdoor Sink",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/9a/a5/74/9aa574c7-1f4e-404f-8e65-4fe695dc5364_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
-    },
-    {
-      "title": "4-Bed Unfinished Home in Fidelity (240m²) with Borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-leg256174",
-      "price": "USD 45,000",
-      "location": "Fidelity, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/d3/9b/32/d39b329d-cc7f-484c-ae1d-a9f969ede9b3_thumbnail591.webp",
-      "beds": "4",
-      "baths": "1"
     }
   ]
 }
