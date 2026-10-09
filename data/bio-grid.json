@@ -1,22 +1,94 @@
 {
-  "fetched_at": "2026-10-09T09:55:55+00:00",
+  "fetched_at": "2026-10-09T17:53:28+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 9 Oct 2026: All Share 476.22 (-0.96%)",
+      "link": "https://mutapatimes.com/zse?d=2026-10-09",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-09",
+      "pubDate": "2026-10-09T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "Zimbabwe Says No Justification to Delay Lithium Export Ban",
-      "link": "https://mutapatimes.com/articles/2026-10-09-zimbabwe-says-no-justification-to-delay-lithium-export-ban",
-      "image": "https://mutapatimes.com/img/cards/news/6ec25b081034.png",
-      "pubDate": "2026-10-09T07:25:16+00:00",
+      "title": "Zimbabwe’s mobile clinic helps teenagers access contraception amid aid cuts",
+      "link": "https://mutapatimes.com/articles/2026-10-09-zimbabwes-mobile-clinic-helps-teenagers-access-contraception",
+      "image": "https://mutapatimes.com/img/cards/news/273619678d8f.png",
+      "pubDate": "2026-10-09T11:57:40+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "'The Blue Fighter': Zimbabwean author Kundizeza wins 2026 Caine Prize",
+      "link": "https://mutapatimes.com/articles/2026-10-09-the-blue-fighter-zimbabwean-author-kundizeza-wins-2026-caine",
+      "image": "https://mutapatimes.com/img/cards/news/0aa4e75bbdfe.png",
+      "pubDate": "2026-10-09T11:21:03+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwean tycoon who died in helicopter crash laid to rest",
-      "link": "https://mutapatimes.com/articles/2026-10-09-zimbabwean-tycoon-who-died-in-helicopter-crash-laid-to-rest",
-      "image": "https://mutapatimes.com/img/cards/news/9d8d8d31f5c1.png",
-      "pubDate": "2026-10-09T05:10:30+00:00",
-      "category": "Health"
+      "title": "US$5 million Gwanda solar project funds blown on Dubai shoes, America spending spree — Chivayo’s brother",
+      "link": "https://mutapatimes.com/news/2026-10-09-us-5-million-gwanda-solar-project-funds-blown-on-dubai-shoes-america-spending-3b6768",
+      "image": "https://mutapatimes.com/img/cards/news/c85893a6b693.png",
+      "pubDate": "2026-10-09T05:05:39+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean man admits trying to murder wife with saucepan and boiling water in UK",
+      "link": "https://mutapatimes.com/news/2026-10-09-zimbabwean-man-admits-trying-to-murder-wife-with-saucepan-and-boiling-water-in-5ed8df",
+      "image": "https://mutapatimes.com/img/cards/news/e14e8ab3cad6.png",
+      "pubDate": "2026-10-09T05:00:41+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZIDO urges shift from remittances to diaspora investment in Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-10-09-zido-urges-shift-from-remittances-to-diaspora-investment-in",
+      "image": "https://mutapatimes.com/img/cards/news/6a5c2ce9e942.png",
+      "pubDate": "2026-10-09T04:53:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "ZIDO urges shift from remittances to diaspora investment in Zimbabwe",
+      "link": "https://mutapatimes.com/news/2026-10-09-zido-urges-shift-from-remittances-to-diaspora-investment-in-zimbabwe-4a157d",
+      "image": "https://mutapatimes.com/img/cards/news/6ef7b55759bd.png",
+      "pubDate": "2026-10-09T04:53:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Release him immediately: High Court declares after Ex-Old Mutual boss was jailed 15 years over 2 rounds of lula lula with UZ student",
+      "link": "https://mutapatimes.com/news/2026-10-09-release-him-immediately-high-court-declares-after-ex-old-mutual-boss-was-jailed-6bd7e4",
+      "image": "https://mutapatimes.com/img/cards/news/6f2d8e1cc3c2.png",
+      "pubDate": "2026-10-09T04:53:03+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ex-war veterans leader Mhlanga off the hook over ‘smuggled’ T-Shirts",
+      "link": "https://mutapatimes.com/articles/2026-10-09-ex-war-veterans-leader-mhlanga-off-the-hook-over-smuggled-t",
+      "image": "https://mutapatimes.com/img/cards/news/91e902cd0b54.png",
+      "pubDate": "2026-10-09T04:36:51+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Portsmouth forward Elisha Pfupa announces himself with stunning Young Warriors hat-trick",
+      "link": "https://mutapatimes.com/articles/2026-10-09-portsmouth-forward-elisha-pfupa-announces-himself-with-stunn",
+      "image": "https://mutapatimes.com/img/cards/news/1085d802f7f9.png",
+      "pubDate": "2026-10-09T04:36:43+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Portsmouth forward Elisha Pfupa announces himself with stunning Young Warriors hat-trick",
+      "link": "https://mutapatimes.com/news/2026-10-09-portsmouth-forward-elisha-pfupa-announces-himself-with-stunning-young-warriors-b7d29d",
+      "image": "https://mutapatimes.com/img/cards/news/013871f73018.png",
+      "pubDate": "2026-10-09T04:36:43+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -36,7 +108,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 9 Oct: Harare light drizzle · high 25° / low 16°",
+      "title": "Zim weather 9 Oct: Harare light drizzle · high 27° / low 16°",
       "link": "https://mutapatimes.com/weather?d=2026-10-09",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-09",
       "pubDate": "2026-10-08T22:00:00+00:00",
@@ -73,6 +145,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-08T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Finance Graduate Trainee",
+      "link": "https://vacancymail.co.zw/jobs/finance-graduate-trainee-69765/",
+      "image": "https://mutapatimes.com/img/cards/jobs/45800d515b48.png",
+      "pubDate": "2026-10-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Recoveries Officer",
+      "link": "https://vacancymail.co.zw/jobs/recoveries-officer-69764/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5ce75c575376.png",
+      "pubDate": "2026-10-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Khayah Cement Limited — Marketing Intern",
+      "link": "https://vacancymail.co.zw/jobs/marketing-intern-69763/",
+      "image": "https://mutapatimes.com/img/cards/jobs/737aba3dc2cf.png",
+      "pubDate": "2026-10-08T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Programmes Assistant: Rafiki Girls Centre",
+      "link": "https://vacancymail.co.zw/jobs/programmes-assistant-rafiki-girls-centre-69762/",
+      "image": "https://mutapatimes.com/img/cards/jobs/448ceaaa7817.png",
+      "pubDate": "2026-10-08T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -375,110 +479,6 @@
       "title": "Sandvik — Artisan - DPF",
       "link": "https://vacancymail.co.zw/jobs/artisan-dpf-69706/",
       "image": "https://mutapatimes.com/img/cards/jobs/6dd8b11ae330.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Hwange Colliery Company Limited — Graduate Leaner - Radiographer Intake 2026",
-      "link": "https://vacancymail.co.zw/jobs/graduate-leaner-radiographer-intake-2026-69705/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2ec0fb694908.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Belvedere Technical Teachers' College — Information Technology Lecturer",
-      "link": "https://vacancymail.co.zw/jobs/information-technology-lecturer-69704/",
-      "image": "https://mutapatimes.com/img/cards/jobs/70ad7ea5d560.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Belvedere Technical Teachers' College — Mathematics Lecturer",
-      "link": "https://vacancymail.co.zw/jobs/mathematics-lecturer-69703/",
-      "image": "https://mutapatimes.com/img/cards/jobs/633f40b9f588.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Belvedere Technical Teachers' College — Physics Lecturer",
-      "link": "https://vacancymail.co.zw/jobs/physics-lecturer-69702/",
-      "image": "https://mutapatimes.com/img/cards/jobs/58f5a59d5cb0.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chinhoyi University of Technology — Block-Lick and Medicinal Feed Factory Manager",
-      "link": "https://vacancymail.co.zw/jobs/block-lick-and-medicinal-feed-factory-manager-69701/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6537e628e682.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Chinhoyi University of Technology — Dairy Production & Milk Processing Manager : CUT-Agro Pvt Ltd",
-      "link": "https://vacancymail.co.zw/jobs/dairy-production-milk-processing-manager-cut-agro-pvt-ltd-69700/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1e77dc965f73.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Transport Clerk – Human Resources and Administration",
-      "link": "https://vacancymail.co.zw/jobs/transport-clerk-human-resources-and-administration-69699/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6c94811738dd.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Assistant Accountant – Finance Planning",
-      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-finance-planning-69698/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0fb8a25e8d7e.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Key Account Representative – Enterprise Business Unit (EBU)",
-      "link": "https://vacancymail.co.zw/jobs/key-account-representative-enterprise-business-unit-ebu-69697/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a538cf2c9fd7.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Timely Toolbox — ACCOUNTS GRADUATE TRAINEE",
-      "link": "https://vacancymail.co.zw/jobs/accounts-graduate-trainee-69675/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b2de9170da3a.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Small and Medium Enterprise Development Corporation SMEDCO — FINANCE INTERN",
-      "link": "https://vacancymail.co.zw/jobs/finance-intern-69674/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c9d5db8e9cfa.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Small and Medium Enterprise Development Corporation SMEDCO — ADMINISTRATIVE ASSISTANT (X4)Bulawayo, Gweru, Bindura,Masvingo",
-      "link": "https://vacancymail.co.zw/jobs/administrative-assistant-x4bulawayo-gweru-binduramasvingo-69673/",
-      "image": "https://mutapatimes.com/img/cards/jobs/267d3618bd01.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Small and Medium Enterprise Development Corporation SMEDCO — SYSTEMS ANALYST",
-      "link": "https://vacancymail.co.zw/jobs/systems-analyst-69672/",
-      "image": "https://mutapatimes.com/img/cards/jobs/374ef22d839f.png",
       "pubDate": "2026-10-08T22:00:00+00:00",
       "category": "Jobs"
     }
