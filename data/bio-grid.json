@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-10-09T00:56:45+00:00",
+  "fetched_at": "2026-10-09T09:55:55+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Says No Justification to Delay Lithium Export Ban",
+      "link": "https://mutapatimes.com/articles/2026-10-09-zimbabwe-says-no-justification-to-delay-lithium-export-ban",
+      "image": "https://mutapatimes.com/img/cards/news/6ec25b081034.png",
+      "pubDate": "2026-10-09T07:25:16+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean tycoon who died in helicopter crash laid to rest",
+      "link": "https://mutapatimes.com/articles/2026-10-09-zimbabwean-tycoon-who-died-in-helicopter-crash-laid-to-rest",
+      "image": "https://mutapatimes.com/img/cards/news/9d8d8d31f5c1.png",
+      "pubDate": "2026-10-09T05:10:30+00:00",
+      "category": "Health"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: Agriculture is the fastest-growing sector at +22.6% YoY.",
@@ -463,22 +479,6 @@
       "title": "Small and Medium Enterprise Development Corporation SMEDCO — SYSTEMS ANALYST",
       "link": "https://vacancymail.co.zw/jobs/systems-analyst-69672/",
       "image": "https://mutapatimes.com/img/cards/jobs/374ef22d839f.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "St Anne's Hospital — Dispensary Assistant (Pharmacy)",
-      "link": "https://vacancymail.co.zw/jobs/dispensary-assistant-pharmacy-69671/",
-      "image": "https://mutapatimes.com/img/cards/jobs/468757c0e619.png",
-      "pubDate": "2026-10-08T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Payables Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-payables-clerk-69670/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e1f91ef60cd4.png",
       "pubDate": "2026-10-08T22:00:00+00:00",
       "category": "Jobs"
     }
