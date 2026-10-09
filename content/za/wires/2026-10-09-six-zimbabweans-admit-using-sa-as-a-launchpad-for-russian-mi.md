@@ -1,0 +1,16 @@
+---
+title: "Six Zimbabweans admit using SA as a launchpad for Russian military recruitment"
+date: 2026-10-09T02:29:06.000Z
+author: News24
+category: Business
+image: 
+summary: "Six Zimbabweans admit using SA as a launchpad for Russian military recruitment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc0psQldPd2hrcFEwdFFQMHFfdURGUVdhUUtrYldKUUF2UG1KN1o3NE5JamZGbVdZRDJGSlFmbkdvN1o1RmNqUnBFTFh6VHBMeXVYcnJvRnpoUXNEVHZiSnVIV3g4aGJsZEx6WkY2bWFBR2tlcnNCUV9RaXlBZ2NqUnNZbFpPcmlMbGJGMGV2ZnR0bzdXb2RaQUU2NFNyRWFManB0cUVVUUhaYUU4WWFOM1JiWHJrWk51cUZVODJRYjFxTVY5T0s5MTZBZDJNZVc0VHFZZFB6a0lVQksy?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc0psQldPd2hrcFEwdFFQMHFfdURGUVdhUUtrYldKUUF2UG1KN1o3NE5JamZGbVdZRDJGSlFmbkdvN1o1RmNqUnBFTFh6VHBMeXVYcnJvRnpoUXNEVHZiSnVIV3g4aGJsZEx6WkY2bWFBR2tlcnNCUV9RaXlBZ2NqUnNZbFpPcmlMbGJGMGV2ZnR0bzdXb2RaQUU2NFNyRWFManB0cUVVUUhaYUU4WWFOM1JiWHJrWk51cUZVODJRYjFxTVY5T0s5MTZBZDJNZVc0VHFZZFB6a0lVQksy?oc=5)
