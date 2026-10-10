@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-10-10T03:59:01+00:00",
+  "fetched_at": "2026-10-10T11:47:41+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "CDC Closes Angola and South Sudan Offices, with Zimbabwe Next as U.S. Ties Health Aid to Country Deals",
+      "link": "https://mutapatimes.com/articles/2026-10-10-cdc-closes-angola-and-south-sudan-offices-with-zimbabwe-next",
+      "image": "https://mutapatimes.com/img/cards/news/6d05213f8ca0.png",
+      "pubDate": "2026-10-10T06:03:36+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "CDC Closes Angola and South Sudan Offices, with Zimbabwe Next as U.S. Ties Health Aid to Country Deals",
+      "link": "https://mutapatimes.com/news/2026-10-10-cdc-closes-angola-and-south-sudan-offices-with-zimbabwe-next-as-u-s-ties-health-17afa0",
+      "image": "https://mutapatimes.com/img/cards/news/113cb0baa3f6.png",
+      "pubDate": "2026-10-10T06:03:36+00:00",
+      "category": "Health"
+    },
     {
       "kind": "economy",
       "title": "Zim remittances 2025 Q4: diaspora sent $839M home officially. Trailing four quarters: $2.9B.",
@@ -12,7 +28,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 10 Oct 2026: 1 USD = 26.71 ZWG · best from UK £100 → $129.09 via Wise",
+      "title": "Zim FX snapshot 10 Oct 2026: 1 USD = 26.69 ZWG · best from UK £100 → $129.21 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-10",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-10",
       "pubDate": "2026-10-09T22:00:00+00:00",
@@ -20,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 10 Oct: Harare light drizzle · high 27° / low 16°",
+      "title": "Zim weather 10 Oct: Harare overcast · high 27° / low 16°",
       "link": "https://mutapatimes.com/weather?d=2026-10-10",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-10",
       "pubDate": "2026-10-09T22:00:00+00:00",
@@ -463,22 +479,6 @@
       "title": "Chinhoyi University of Technology — Dairy Production & Milk Processing Manager : CUT-Agro Pvt Ltd",
       "link": "https://vacancymail.co.zw/jobs/dairy-production-milk-processing-manager-cut-agro-pvt-ltd-69700/",
       "image": "https://mutapatimes.com/img/cards/jobs/1e77dc965f73.png",
-      "pubDate": "2026-10-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Transport Clerk – Human Resources and Administration",
-      "link": "https://vacancymail.co.zw/jobs/transport-clerk-human-resources-and-administration-69699/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6c94811738dd.png",
-      "pubDate": "2026-10-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — Assistant Accountant – Finance Planning",
-      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-finance-planning-69698/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0fb8a25e8d7e.png",
       "pubDate": "2026-10-09T22:00:00+00:00",
       "category": "Jobs"
     }
