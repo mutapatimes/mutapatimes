@@ -9,12 +9,12 @@
       "currency": "GBP",
       "currency_sym": "£",
       "cheapest_overall": {
-        "price": 387,
-        "airline": "UR",
-        "departure_at": "2026-10-11",
+        "price": 447,
+        "airline": "AL",
+        "departure_at": "2026-10-28",
         "return_at": "",
-        "stops": 1,
-        "duration": 1720,
+        "stops": 3,
+        "duration": 1665,
         "currency": ""
       },
       "cheapest_direct": {
@@ -28,12 +28,12 @@
       },
       "monthly": [
         {
-          "price": 387,
-          "airline": "UR",
-          "departure_at": "2026-10-11",
+          "price": 447,
+          "airline": "AL",
+          "departure_at": "2026-10-28",
           "return_at": "",
-          "stops": 1,
-          "duration": 1720,
+          "stops": 3,
+          "duration": 1665,
           "currency": ""
         },
         {
@@ -75,25 +75,16 @@
       ],
       "by_airline": [
         {
-          "price": 387,
-          "airline": "UR",
-          "departure_at": "2026-10-11",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1720,
-          "currency": ""
-        },
-        {
-          "price": 458,
-          "airline": "U2",
+          "price": 447,
+          "airline": "AL",
           "departure_at": "2026-10-28",
           "return_at": "",
           "stops": 3,
-          "duration": 1490,
+          "duration": 1665,
           "currency": ""
         },
         {
-          "price": 461,
+          "price": 460,
           "airline": "KQ",
           "departure_at": "2026-10-13",
           "return_at": "",
@@ -118,13 +109,22 @@
           "stops": 3,
           "duration": 2290,
           "currency": ""
+        },
+        {
+          "price": 508,
+          "airline": "TP",
+          "departure_at": "2026-10-28",
+          "return_at": "",
+          "stops": 3,
+          "duration": 1580,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -148,7 +148,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 5,
+          "n": 4,
           "error": null
         },
         {
@@ -170,7 +170,7 @@
           "error": null
         }
       ],
-      "observations": 31
+      "observations": 29
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -291,7 +291,7 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 5,
+          "n": 6,
           "error": null
         },
         {
@@ -313,7 +313,7 @@
           "error": null
         }
       ],
-      "observations": 7
+      "observations": 8
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -378,6 +378,15 @@
           "currency": ""
         },
         {
+          "price": 3174,
+          "airline": "Farera",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 220,
+          "currency": ""
+        },
+        {
           "price": 3313,
           "airline": "Trip.com",
           "departure_at": "",
@@ -396,21 +405,12 @@
           "currency": ""
         },
         {
-          "price": 3326,
-          "airline": "SA",
-          "departure_at": "2026-10-20",
-          "return_at": "2026-11-14",
-          "stops": 0,
-          "duration": null,
-          "currency": ""
-        },
-        {
-          "price": 3340,
-          "airline": "Farera",
+          "price": 3677,
+          "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 220,
+          "duration": 210,
           "currency": ""
         }
       ],
@@ -621,11 +621,11 @@
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 5,
+          "n": 4,
           "error": null
         }
       ],
-      "observations": 13
+      "observations": 12
     },
     "toronto-to-harare": {
       "origin": "YYZ",
