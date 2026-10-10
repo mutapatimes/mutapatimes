@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09",
+  "fetched_at": "2026-10-10",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -18,12 +18,12 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1159,
-        "airline": "Ubfly",
-        "departure_at": "",
-        "return_at": "",
+        "price": 1162,
+        "airline": "UM",
+        "departure_at": "2026-12-24",
+        "return_at": "2027-01-01",
         "stops": 0,
-        "duration": 1260,
+        "duration": null,
         "currency": ""
       },
       "monthly": [
@@ -93,12 +93,12 @@
           "currency": ""
         },
         {
-          "price": 465,
-          "airline": "FR",
+          "price": 461,
+          "airline": "KQ",
           "departure_at": "2026-10-13",
           "return_at": "",
-          "stops": 3,
-          "duration": 2065,
+          "stops": 2,
+          "duration": 1800,
           "currency": ""
         },
         {
@@ -142,7 +142,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 9,
+          "n": 8,
           "error": null
         },
         {
@@ -166,11 +166,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 9,
+          "n": 8,
           "error": null
         }
       ],
-      "observations": 32
+      "observations": 31
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -211,7 +211,7 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 3205,
+        "price": 3207,
         "airline": "FA",
         "departure_at": "2026-10-15",
         "return_at": "",
@@ -222,7 +222,7 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 3205,
+          "price": 3207,
           "airline": "FA",
           "departure_at": "2026-10-15",
           "return_at": "",
@@ -240,7 +240,7 @@
           "currency": ""
         },
         {
-          "price": 3631,
+          "price": 3634,
           "airline": "SA",
           "departure_at": "2026-12-23",
           "return_at": "",
@@ -260,7 +260,7 @@
       ],
       "by_airline": [
         {
-          "price": 3205,
+          "price": 3207,
           "airline": "FA",
           "departure_at": "2026-10-15",
           "return_at": "",
@@ -269,7 +269,7 @@
           "currency": ""
         },
         {
-          "price": 3631,
+          "price": 3634,
           "airline": "SA",
           "departure_at": "2026-12-23",
           "return_at": "",
@@ -278,7 +278,7 @@
           "currency": ""
         },
         {
-          "price": 8268,
+          "price": 8297,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -321,28 +321,28 @@
       "currency": "ZAR",
       "currency_sym": "R",
       "cheapest_overall": {
-        "price": 1493,
+        "price": 1472,
         "airline": "FA",
-        "departure_at": "2026-11-25",
+        "departure_at": "2026-10-29",
         "return_at": "",
         "stops": 0,
-        "duration": 120,
+        "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 1493,
+        "price": 1472,
         "airline": "FA",
-        "departure_at": "2026-11-25",
+        "departure_at": "2026-10-29",
         "return_at": "",
         "stops": 0,
-        "duration": 120,
+        "duration": 110,
         "currency": ""
       },
       "monthly": [
         {
-          "price": 1498,
+          "price": 1472,
           "airline": "FA",
-          "departure_at": "2026-10-15",
+          "departure_at": "2026-10-29",
           "return_at": "",
           "stops": 0,
           "duration": 110,
@@ -369,16 +369,16 @@
       ],
       "by_airline": [
         {
-          "price": 1493,
+          "price": 1472,
           "airline": "FA",
-          "departure_at": "2026-11-25",
+          "departure_at": "2026-10-29",
           "return_at": "",
           "stops": 0,
-          "duration": 120,
+          "duration": 110,
           "currency": ""
         },
         {
-          "price": 3302,
+          "price": 3313,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -387,7 +387,7 @@
           "currency": ""
         },
         {
-          "price": 3313,
+          "price": 3325,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -405,12 +405,12 @@
           "currency": ""
         },
         {
-          "price": 3395,
+          "price": 3340,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 210,
+          "duration": 220,
           "currency": ""
         }
       ],
@@ -563,21 +563,12 @@
           "currency": ""
         },
         {
-          "price": 1906,
+          "price": 1918,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
           "stops": 1,
           "duration": 1920,
-          "currency": ""
-        },
-        {
-          "price": 2079,
-          "airline": "Wingie",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 2,
-          "duration": 1790,
           "currency": ""
         },
         {
@@ -590,12 +581,21 @@
           "currency": ""
         },
         {
-          "price": 2648,
-          "airline": "City.Travel",
+          "price": 2093,
+          "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
+          "stops": 2,
+          "duration": 1790,
+          "currency": ""
+        },
+        {
+          "price": 2660,
+          "airline": "ET",
+          "departure_at": "2026-10-17",
+          "return_at": "2026-10-27",
           "stops": 1,
-          "duration": 1170,
+          "duration": null,
           "currency": ""
         }
       ],
@@ -706,7 +706,7 @@
           "currency": ""
         },
         {
-          "price": 851,
+          "price": 855,
           "airline": "Gotogate",
           "departure_at": "",
           "return_at": "",
@@ -724,7 +724,7 @@
           "currency": ""
         },
         {
-          "price": 1056,
+          "price": 1062,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
