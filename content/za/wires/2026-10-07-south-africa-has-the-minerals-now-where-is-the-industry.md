@@ -1,0 +1,16 @@
+---
+title: "South Africa has the minerals. Now where is the industry?"
+date: 2026-10-07T07:03:02.000Z
+author: Mining Review Africa
+category: Business
+image: 
+summary: "South Africa has the minerals. Now where is the industry?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNVhJaTdoSm9FSWJXdXg5UW4yRWhMZFlkenVNTGlVcTdpRlZuYnpkTG9ITXFQaExydEpNc0haZWRsd28xdnRoV0Jid210Yms4QjctYVZTaElSMV85UDJwblc1cUVMUkRtcUZWSnhfYXNIQUdRdnhTdXNPLUtrTE1RR1dmSGRkeEtyMkdGYTFyNUdKM01M0gGcAUFVX3lxTE1XZEdVdXY2bExOalUzNnBYVUN4VW1QZVprMkgybzcxaUlBNXE3TThqaWJqQW94SFEtYno0c0NEa083cl9BRk8wcXBMMkFUS0RGaF9pT1BTVy0xNkU0TEN1aXBhQjgtSld4VW8xcDYyTWdzNXhUOVUxb3V4c2x5VDI5ZEx0blRrRDM0c2huZklKSVBDQ09Na0llaFVJag?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Review Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMilAFBVV95cUxPNVhJaTdoSm9FSWJXdXg5UW4yRWhMZFlkenVNTGlVcTdpRlZuYnpkTG9ITXFQaExydEpNc0haZWRsd28xdnRoV0Jid210Yms4QjctYVZTaElSMV85UDJwblc1cUVMUkRtcUZWSnhfYXNIQUdRdnhTdXNPLUtrTE1RR1dmSGRkeEtyMkdGYTFyNUdKM01M0gGcAUFVX3lxTE1XZEdVdXY2bExOalUzNnBYVUN4VW1QZVprMkgybzcxaUlBNXE3TThqaWJqQW94SFEtYno0c0NEa083cl9BRk8wcXBMMkFUS0RGaF9pT1BTVy0xNkU0TEN1aXBhQjgtSld4VW8xcDYyTWdzNXhUOVUxb3V4c2x5VDI5ZEx0blRrRDM0c2huZklKSVBDQ09Na0llaFVJag?oc=5)
