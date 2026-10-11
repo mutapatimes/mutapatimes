@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-11T05:44:33.935118+00:00",
+  "fetched_at": "2026-10-11T12:47:23.871450+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -112,15 +112,6 @@
       "baths": "2"
     },
     {
-      "title": "Walled incomplete 5-Bed Main House with a 3 beds cottage Home on 1901m² in Waterfalls",
-      "url": "https://www.property.co.zw/for-sale/houses-drf254804",
-      "price": "USD 135,000",
-      "location": "Waterfalls, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/7b/76/76/7b767636-6002-4ec6-ac58-e9d4e75bc174_thumbnail591.webp",
-      "beds": "5",
-      "baths": "3"
-    },
-    {
       "title": "Victoria Falls semi finished House for Sale.",
       "url": "https://www.property.co.zw/for-sale/houses-pgp255727",
       "price": "USD 150,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/25/1a/53/251a5369-c7bc-45f9-bc51-eae3cc678c28_thumbnail591.webp",
       "beds": "4",
       "baths": "1"
+    },
+    {
+      "title": "Exceptional Residence",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp254610",
+      "price": "USD 2,100,000",
+      "location": "Borrowdale Brooke, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/36/d8/8c/36d88c40-1234-4256-a9f5-fd6d0df9963b_thumbnail591.webp",
+      "beds": "4",
+      "baths": "4"
     }
   ]
 }
