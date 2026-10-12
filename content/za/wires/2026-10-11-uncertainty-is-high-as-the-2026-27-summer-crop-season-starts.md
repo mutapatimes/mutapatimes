@@ -1,0 +1,16 @@
+---
+title: "Uncertainty is high as the 2026-27 summer crop season starts"
+date: 2026-10-11T17:28:30.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Uncertainty is high as the 2026-27 summer crop season starts"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigAJBVV95cUxPWXdDS0FCLThsVkVobE85MWU1a2Rta1RDVUtPejUyc044T0hEamtBazRoaE5uZWk5NFRYcjJyRElidFVKNWlvcHVzNDlxdjcyWHZEdU56NGp2TDRRRGx1ZnpjUVc4eTRGc3BWdENHenA1bjE0aFZ0bzNYUmxkWkdkejh2R2Jrek1RUkRqOWkxQlVnR0VfdHN0VWxGSXV2ZFdYeW5BV0hXOUkzTVJjcFBSWDB1UHlEdldsUXlxMHJsODVzb2pZQ2NzRlFJLVZCM012bnNRbmtlbHpndm1YbVhKT09vUjFQT01vLUs2a2Z3bnBHUVJDSTRrci1scUpLeEZa?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMigAJBVV95cUxPWXdDS0FCLThsVkVobE85MWU1a2Rta1RDVUtPejUyc044T0hEamtBazRoaE5uZWk5NFRYcjJyRElidFVKNWlvcHVzNDlxdjcyWHZEdU56NGp2TDRRRGx1ZnpjUVc4eTRGc3BWdENHenA1bjE0aFZ0bzNYUmxkWkdkejh2R2Jrek1RUkRqOWkxQlVnR0VfdHN0VWxGSXV2ZFdYeW5BV0hXOUkzTVJjcFBSWDB1UHlEdldsUXlxMHJsODVzb2pZQ2NzRlFJLVZCM012bnNRbmtlbHpndm1YbVhKT09vUjFQT01vLUs2a2Z3bnBHUVJDSTRrci1scUpLeEZa?oc=5)
