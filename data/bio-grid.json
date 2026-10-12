@@ -1,7 +1,47 @@
 {
-  "fetched_at": "2026-10-12T03:57:16+00:00",
+  "fetched_at": "2026-10-12T14:14:09+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe operations lift PPC earnings",
+      "link": "https://mutapatimes.com/articles/2026-10-12-zimbabwe-operations-lift-ppc-earnings",
+      "image": "https://mutapatimes.com/img/cards/news/94cb6339ed24.png",
+      "pubDate": "2026-10-12T01:26:46+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe operations lift PPC earnings",
+      "link": "https://mutapatimes.com/news/2026-10-12-zimbabwe-operations-lift-ppc-earnings-2fdfd3",
+      "image": "https://mutapatimes.com/img/cards/news/af1bb96e1de7.png",
+      "pubDate": "2026-10-12T01:26:46+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe says no justification to delay lithium export ban",
+      "link": "https://mutapatimes.com/news/2026-10-12-zimbabwe-says-no-justification-to-delay-lithium-export-ban-8699f1",
+      "image": "https://mutapatimes.com/img/cards/news/e8a98cd22fdc.png",
+      "pubDate": "2026-10-11T22:52:59+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Why Are More Students Sitting O And A Levels This Year?",
+      "link": "https://mutapatimes.com/articles/2026-10-11-why-are-more-students-sitting-o-and-a-levels-this-year",
+      "image": "https://mutapatimes.com/img/cards/news/f785473afb80.png",
+      "pubDate": "2026-10-11T22:45:50+00:00",
+      "category": "Education"
+    },
+    {
+      "kind": "news",
+      "title": "Why Are More Students Sitting O And A Levels This Year?",
+      "link": "https://mutapatimes.com/news/2026-10-11-why-are-more-students-sitting-o-and-a-levels-this-year-94f078",
+      "image": "https://mutapatimes.com/img/cards/news/a0063b586d8d.png",
+      "pubDate": "2026-10-11T22:45:50+00:00",
+      "category": "News"
+    },
     {
       "kind": "economy",
       "title": "Zim services trade 2025 Q4: $449M deficit. Sold $134M, bought $584M.",
@@ -12,7 +52,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 12 Oct 2026: 1 USD = 26.69 ZWG · best from UK £100 → $129.19 via Wise",
+      "title": "Zim FX snapshot 12 Oct 2026: 1 USD = 26.69 ZWG · best from UK £100 → $129.25 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-12",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-12",
       "pubDate": "2026-10-11T22:00:00+00:00",
@@ -20,7 +60,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 12 Oct: Harare clear sky · high 28° / low 14°",
+      "title": "Zim weather 12 Oct: Harare clear sky · high 29° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-10-12",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-12",
       "pubDate": "2026-10-11T22:00:00+00:00",
@@ -439,46 +479,6 @@
       "title": "Graduate Trainee Mining Engineering",
       "link": "https://vacancymail.co.zw/jobs/graduate-trainee-mining-engineering-69733/",
       "image": "https://mutapatimes.com/img/cards/jobs/36dfff9464bd.png",
-      "pubDate": "2026-10-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sale Representative",
-      "link": "https://vacancymail.co.zw/jobs/sale-representative-69732/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6d18017166a3.png",
-      "pubDate": "2026-10-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Attachee /Intern",
-      "link": "https://vacancymail.co.zw/jobs/accounts-attachee-intern-69731/",
-      "image": "https://mutapatimes.com/img/cards/jobs/10d505712917.png",
-      "pubDate": "2026-10-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales and Marketing Attachés",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-attaches-69730/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ec5c41fd74dc.png",
-      "pubDate": "2026-10-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Counter Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/counter-sales-representative-69729/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e2cfd5d956cb.png",
-      "pubDate": "2026-10-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Simbisa Brands — Refrigeration Technician",
-      "link": "https://vacancymail.co.zw/jobs/refrigeration-technician-69728/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d9087182b811.png",
       "pubDate": "2026-10-11T22:00:00+00:00",
       "category": "Jobs"
     }
