@@ -49,6 +49,19 @@
   },
   {
    "rank": 5,
+   "team": "CAPS United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
+   "played": 30,
+   "win": 12,
+   "draw": 12,
+   "loss": 6,
+   "gf": 34,
+   "ga": 25,
+   "gd": 9,
+   "points": 48
+  },
+  {
+   "rank": 6,
    "team": "Herentals",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/rdw18a1645561896.png/tiny",
    "played": 30,
@@ -59,19 +72,6 @@
    "ga": 28,
    "gd": 3,
    "points": 48
-  },
-  {
-   "rank": 6,
-   "team": "CAPS United",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/zd5j841645561872.png/tiny",
-   "played": 29,
-   "win": 12,
-   "draw": 11,
-   "loss": 6,
-   "gf": 34,
-   "ga": 25,
-   "gd": 9,
-   "points": 47
   }
  ],
  "results": [
@@ -91,5 +91,5 @@
    "away": "Ngezi Platinum"
   }
  ],
- "updated": "2026-10-12T06:02:47+00:00"
+ "updated": "2026-10-12T15:32:25+00:00"
 }
