@@ -1,0 +1,16 @@
+---
+title: "Amid many challenges there are also ‘major wins’ — the case of cervical cancer"
+date: 2026-10-12T19:43:06.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Amid many challenges there are also ‘major wins’ — the case of cervical cancer"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirgJBVV95cUxOM3Z5c3YzSzAtdEhiM1pEbEFMdjFBUTZFU2ZuaGJVOFdweVFCbTl1YjY1VzlXU1BnVjNWdFpJZ0gwQWRRRFFIUGNULTVZQnlhX2JPLXR5NjAxVnE1RGwySkRPcy1xWlJFRWk4WHJWZ0REYzZWeWN6ZWZxNnNmM0I0bWRWYUh3S18xaXRKdWpwTENaXzhsamFmaXp5VXJPd0R1TDZHM0c5Qlp5TTRnQzNBTTNiajNzVzk1MEhfcS12MWthcUFJMW9VeFJ3dDEzLWpPY3pPcE5GOGF2djRyd3gtUkZjd1lPWWYyZlNCT1hDa2d6MEY5UXNsaVpsSi1QWnZKMW1tYU1rWnotbFVvQmdrMDA2Y3o1N1pUWDRqekE1aUM5d1JpbmpmZkVIdnFrQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirgJBVV95cUxOM3Z5c3YzSzAtdEhiM1pEbEFMdjFBUTZFU2ZuaGJVOFdweVFCbTl1YjY1VzlXU1BnVjNWdFpJZ0gwQWRRRFFIUGNULTVZQnlhX2JPLXR5NjAxVnE1RGwySkRPcy1xWlJFRWk4WHJWZ0REYzZWeWN6ZWZxNnNmM0I0bWRWYUh3S18xaXRKdWpwTENaXzhsamFmaXp5VXJPd0R1TDZHM0c5Qlp5TTRnQzNBTTNiajNzVzk1MEhfcS12MWthcUFJMW9VeFJ3dDEzLWpPY3pPcE5GOGF2djRyd3gtUkZjd1lPWWYyZlNCT1hDa2d6MEY5UXNsaVpsSi1QWnZKMW1tYU1rWnotbFVvQmdrMDA2Y3o1N1pUWDRqekE1aUM5d1JpbmpmZkVIdnFrQQ?oc=5)
