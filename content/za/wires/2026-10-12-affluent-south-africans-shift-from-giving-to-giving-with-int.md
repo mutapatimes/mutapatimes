@@ -1,0 +1,16 @@
+---
+title: "Affluent South Africans shift from giving to giving with intention, finds Nedbank Giving Report"
+date: 2026-10-12T07:50:02.000Z
+author: News24
+category: Business
+image: 
+summary: "Affluent South Africans shift from giving to giving with intention, finds Nedbank Giving Report"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWXhKRU9INlZnaE5sTHRpYWtIMkRfOGswdHVCemtaTzlFOFktdTBPNFc2SVJYQ1Z0dlN2dElWZDRsUU9wMzJud3VlcDNsSkFYUXRYVjd6amYzWi1oekRiWHlsNG1jN011NnZqRXVUWVc4a0VpYk9FWGQ4Q0pCS202bDJENlBEMS1uNDIxMVRzSjIxWlFhTUJrajdrNThkalV2b2FiREtINXFGaUZnTVhlV0x1UlRLRFpsejdKOFB2bzJWQU5KVGdGVG5qczhuUTMyY1FwdmxHREh6VFFQOWZab3licmFpTnFFQlY2Nm5saw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWXhKRU9INlZnaE5sTHRpYWtIMkRfOGswdHVCemtaTzlFOFktdTBPNFc2SVJYQ1Z0dlN2dElWZDRsUU9wMzJud3VlcDNsSkFYUXRYVjd6amYzWi1oekRiWHlsNG1jN011NnZqRXVUWVc4a0VpYk9FWGQ4Q0pCS202bDJENlBEMS1uNDIxMVRzSjIxWlFhTUJrajdrNThkalV2b2FiREtINXFGaUZnTVhlV0x1UlRLRFpsejdKOFB2bzJWQU5KVGdGVG5qczhuUTMyY1FwdmxHREh6VFFQOWZab3licmFpTnFFQlY2Nm5saw?oc=5)

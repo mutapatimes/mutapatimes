@@ -1,0 +1,16 @@
+---
+title: "STANDARD BANK GROUP LIMITED – Voluntary announcement: Strategic investment in and partnership with OPay to advance financial services access in Africa"
+date: 2026-10-12T06:00:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "STANDARD BANK GROUP LIMITED – Voluntary announcement: Strategic investment in and partnership with OPay to advance financial services access in Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgJBVV95cUxNbHR1VkJHX3ByLVNqeVoyYUJDZkpKa2tTcUlXSi1jbnhjUFhDS2xGOWFzbGZoRWZFM2RoTGE1czBySkpiMjZyTzdzaXozeGFjTjMwMENwSW5reEp3VEJzdC1zM0FCX2h3SGtwNU85ZHVSc2RpYWFWZ1ZUOEx4Ykgzb0pzcUJEd0h5aUltRnlyekhkOWp5NGhHR1N6UUtxNUd1dWtLbGlFYW9TSG5pQzVLbXRIU1NxcVluYmN3ZXhIbm1fWFUwRU0zZVVqRmRidUZaX2c1dW5ub1BWOVFGaE0xUXc2aGdBa05JeWx3V0tPR2NtS1ljNnNCMERsLVNjRDhQaE94eGVNd3ZyV3lqMlNuT3dR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMikgJBVV95cUxNbHR1VkJHX3ByLVNqeVoyYUJDZkpKa2tTcUlXSi1jbnhjUFhDS2xGOWFzbGZoRWZFM2RoTGE1czBySkpiMjZyTzdzaXozeGFjTjMwMENwSW5reEp3VEJzdC1zM0FCX2h3SGtwNU85ZHVSc2RpYWFWZ1ZUOEx4Ykgzb0pzcUJEd0h5aUltRnlyekhkOWp5NGhHR1N6UUtxNUd1dWtLbGlFYW9TSG5pQzVLbXRIU1NxcVluYmN3ZXhIbm1fWFUwRU0zZVVqRmRidUZaX2c1dW5ub1BWOVFGaE0xUXc2aGdBa05JeWx3V0tPR2NtS1ljNnNCMERsLVNjRDhQaE94eGVNd3ZyV3lqMlNuT3dR?oc=5)
