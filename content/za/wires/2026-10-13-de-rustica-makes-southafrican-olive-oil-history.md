@@ -1,0 +1,16 @@
+---
+title: "De Rustica makes SouthAfrican olive oil history"
+date: 2026-10-13T11:23:32.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "De Rustica makes SouthAfrican olive oil history"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiigJBVV95cUxOU1c3QjNZYVhvNTNSYUlJdVhIRHkzU2RJTHNpbC1PeDQ2UHpsc0Q5MFpqUlVGQ3RfUXpCeGUxNHAyYkdUMDBiWGhvTHNhd0hocm5nZEpxQ3lhd2FEMmFHVUt5TmJXTDFKeXBVMHNSbmlLaDRRTGVYZUhUM0xtMENLYmhqLTJfdURWOUJnanhUeXBzMm1WY0RtUjlXNVNPRndSSF9HT3VqQkoxTktham9sVkg4WEVTbXBabVNyWUhlemhpcGZDeFE1b1VhT1pNMEVCN2lJZ2lhYVRmTGwtX0U1TUZTWThIYWwyV00xS0pSWEp1MnRKU2NoYk5SZlMwY1VwdnNqYnVVUWZfUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiigJBVV95cUxOU1c3QjNZYVhvNTNSYUlJdVhIRHkzU2RJTHNpbC1PeDQ2UHpsc0Q5MFpqUlVGQ3RfUXpCeGUxNHAyYkdUMDBiWGhvTHNhd0hocm5nZEpxQ3lhd2FEMmFHVUt5TmJXTDFKeXBVMHNSbmlLaDRRTGVYZUhUM0xtMENLYmhqLTJfdURWOUJnanhUeXBzMm1WY0RtUjlXNVNPRndSSF9HT3VqQkoxTktham9sVkg4WEVTbXBabVNyWUhlemhpcGZDeFE1b1VhT1pNMEVCN2lJZ2lhYVRmTGwtX0U1TUZTWThIYWwyV00xS0pSWEp1MnRKU2NoYk5SZlMwY1VwdnNqYnVVUWZfUQ?oc=5)
