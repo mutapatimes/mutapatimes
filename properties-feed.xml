@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 09:40:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 11:49:36 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -223,6 +223,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/b45307df8799.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>USD 330,000 — Well Maintained Borrowdale Villa For Sale (Borrowdale, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/b496cb356909.html</link>
+      <description>USD 330,000 — Borrowdale, Harare North. 4 beds, 1 bath. Well Maintained Borrowdale Villa For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 13 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b496cb356909.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/b496cb356909.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b496cb356909.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/b496cb356909.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>USD 150,000 — 4-Bedroom Family Home for Sale in Bloomingdale – Title Deed | US$150,000 (Bloomingdale, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/f0136aca96fb.html</link>
       <description>USD 150,000 — Bloomingdale, Harare West. 4 beds, 2 baths. 4-Bedroom Family Home for Sale in Bloomingdale – Title Deed | US$150,000. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/a1897861f28a.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/a1897861f28a.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/a1897861f28a.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 250,000 — Opportunity (finish to your taste ) (Shawasha Hills, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/1b3ea34c0658.html</link>
-      <description>USD 250,000 — Shawasha Hills, Harare North. 4 beds. Opportunity (finish to your taste ). Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 13 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/1b3ea34c0658.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/1b3ea34c0658.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/1b3ea34c0658.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/1b3ea34c0658.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

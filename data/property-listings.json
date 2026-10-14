@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-14T04:51:16.114772+00:00",
+  "fetched_at": "2026-10-14T11:49:31.233779+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -157,6 +157,15 @@
       "baths": "3"
     },
     {
+      "title": "Well Maintained Borrowdale Villa For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-syr256674",
+      "price": "USD 330,000",
+      "location": "Borrowdale, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/ee/65/e3/ee65e3f3-3243-4459-bd36-2620328d35dc_thumbnail591.webp",
+      "beds": "4",
+      "baths": "1"
+    },
+    {
       "title": "4-Bedroom Family Home for Sale in Bloomingdale – Title Deed | US$150,000",
       "url": "https://www.property.co.zw/for-sale/houses-hlx251723",
       "price": "USD 150,000",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/cc/c8/ed/ccc8edc7-39ea-44af-8dd4-2de227cc2d7d_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
-    },
-    {
-      "title": "Opportunity (finish to your taste )",
-      "url": "https://www.property.co.zw/for-sale/houses-dfp247161",
-      "price": "USD 250,000",
-      "location": "Shawasha Hills, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/b2/ff/b5/b2ffb502-9f2e-40ea-b820-342f67e6ff63_thumbnail591.webp",
-      "beds": "4",
-      "baths": ""
     }
   ]
 }
