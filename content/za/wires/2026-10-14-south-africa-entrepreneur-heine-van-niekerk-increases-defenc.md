@@ -1,0 +1,16 @@
+---
+title: "South Africa • Entrepreneur Heine van Niekerk increases defence sector influence"
+date: 2026-10-14T08:15:00.000Z
+author: Africa Intelligence
+category: Business
+image: 
+summary: "South Africa • Entrepreneur Heine van Niekerk increases defence sector influence"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcVpVeE1MT3VQRXdCbG9Db2FoWkdCTGpQWldqa1VnTnIyWGN1VUVaSzZVWk8ycUo5aE9jM1gyM2RMSUZjaUliaDlSNl9lTUtRaFBORkhoR2x6RTBkb3Jjc0p5aVk2R1BXVzJSbkhWT1ZwU2N5ZWxTMVNYa0RSYlhzNDlJcmprWFNmTXRsaGJBOWVDUk82Ukk0TkYxOHJQNHlreDdUT20zS3JyLVpTdEg3SE0tN3J4RjdJb2ZlSGRSVUZFWFZVTzVHRFZXMkJ1aFROOGhIbzNnOTVCRnFEX0JDUDZoajZ2cEp3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Africa Intelligence.*
+[Read original article](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcVpVeE1MT3VQRXdCbG9Db2FoWkdCTGpQWldqa1VnTnIyWGN1VUVaSzZVWk8ycUo5aE9jM1gyM2RMSUZjaUliaDlSNl9lTUtRaFBORkhoR2x6RTBkb3Jjc0p5aVk2R1BXVzJSbkhWT1ZwU2N5ZWxTMVNYa0RSYlhzNDlJcmprWFNmTXRsaGJBOWVDUk82Ukk0TkYxOHJQNHlreDdUT20zS3JyLVpTdEg3SE0tN3J4RjdJb2ZlSGRSVUZFWFZVTzVHRFZXMkJ1aFROOGhIbzNnOTVCRnFEX0JDUDZoajZ2cEp3?oc=5)

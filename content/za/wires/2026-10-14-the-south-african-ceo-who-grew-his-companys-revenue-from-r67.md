@@ -1,0 +1,16 @@
+---
+title: "The South African CEO who grew his company’s revenue from R67 billion to R168 billion and created a global telecommunications powerhouse"
+date: 2026-10-14T07:00:00.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "The South African CEO who grew his company’s revenue from R67 billion to R168 billion and created a global telecommunications powerhouse"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxPcjB6cV9HdXU0dU1iQVBOUjBteHRJV0kwZzNob1R2N1UySkJ0TmpOTk15TWxFdTlyX1p2VTBKQWx6SkVNWjg1RzRWbkI0Y0d4cEVwa3RMOTZuQ3NYakctWU92LXk3RnY4MDROREI2bTZoOTRMamhqYzdMZGxRSktqX1BEYjllRTl5VHh0cm9SYkxDM3dYd2xiY0JJcXRDbWl6MmE3bDhidWlpaGpHYndsV09lZEoxd3BFRlhOVXNlVXVxcEFuZkhaakc2VTRmVmtwRUpXWG9iSFFONnNrcGtKaFdrVmtIeThIZkNDNndma25fTWRudXBtR1JZdzlaZG8wdFpGalRWbElnRS05Z1ZfekZJcEV5eVRON2ptSlVuMklQUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxPcjB6cV9HdXU0dU1iQVBOUjBteHRJV0kwZzNob1R2N1UySkJ0TmpOTk15TWxFdTlyX1p2VTBKQWx6SkVNWjg1RzRWbkI0Y0d4cEVwa3RMOTZuQ3NYakctWU92LXk3RnY4MDROREI2bTZoOTRMamhqYzdMZGxRSktqX1BEYjllRTl5VHh0cm9SYkxDM3dYd2xiY0JJcXRDbWl6MmE3bDhidWlpaGpHYndsV09lZEoxd3BFRlhOVXNlVXVxcEFuZkhaakc2VTRmVmtwRUpXWG9iSFFONnNrcGtKaFdrVmtIeThIZkNDNndma25fTWRudXBtR1JZdzlaZG8wdFpGalRWbElnRS05Z1ZfekZJcEV5eVRON2ptSlVuMklQUQ?oc=5)
