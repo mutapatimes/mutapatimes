@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 13:52:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 16:59:22 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -113,18 +113,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/551a2447a0ff.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/551a2447a0ff.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/551a2447a0ff.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 198,000 — New Marlborough’s Finest- MOVE-IN READY 4-BEDROOM FAMILY HOME (New Marlborough, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/c3222f2512b6.html</link>
-      <description>USD 198,000 — New Marlborough, Harare West. 4 beds, 3 baths. New Marlborough’s Finest- MOVE-IN READY 4-BEDROOM FAMILY HOME. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/c3222f2512b6.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/c3222f2512b6.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/c3222f2512b6.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/c3222f2512b6.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 345,000 — Family Home For Sale In Victoria Falls (Victoria Falls)</title>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 650,000 — Luxury Mansion in Glen Lorne Folly John (Glen Lorne, Harare North)</title>
+      <link>https://mutapatimes.com/property-landing/5132d8f00095.html</link>
+      <description>USD 650,000 — Glen Lorne, Harare North. 6 beds, 6 baths. Luxury Mansion in Glen Lorne Folly John. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/5132d8f00095.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/5132d8f00095.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/5132d8f00095.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/5132d8f00095.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
