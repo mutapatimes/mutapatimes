@@ -1,0 +1,16 @@
+---
+title: "Centurion home of Dalai Lama’s SA representative firebombed"
+date: 2026-10-15T09:14:07.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Centurion home of Dalai Lama’s SA representative firebombed"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNakFZTDVsc3RoZ1VMRHNsblktMlJuTE1tcjdZUEVPaUJVel95YUtyNDhram5CTDZHdnF4YWJXNFppTDhMSTlRdkRxRDliTWRQMnpaWkhFdDBicUVzdzRKaDRDR3Mzb2lGUUNiYlN2N25iRVNka09WNzJZVzdRZ2FDN3F3SVJtNmNmQVJpZ3ZZUzJnM1FHbEF1eEZ1M1JaZ3pNSml2QmpsRVBmSVQweURoUEZFWWVTY0F1MFlCM1BSSnh5N2VNWnRfMXIxOE1uaEJoQ1FKaUtfT0dQRnBfUktFTFlxVFJBVGtsQ3ZBSktLLU9KUENoVUhrZTN3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi-gFBVV95cUxNakFZTDVsc3RoZ1VMRHNsblktMlJuTE1tcjdZUEVPaUJVel95YUtyNDhram5CTDZHdnF4YWJXNFppTDhMSTlRdkRxRDliTWRQMnpaWkhFdDBicUVzdzRKaDRDR3Mzb2lGUUNiYlN2N25iRVNka09WNzJZVzdRZ2FDN3F3SVJtNmNmQVJpZ3ZZUzJnM1FHbEF1eEZ1M1JaZ3pNSml2QmpsRVBmSVQweURoUEZFWWVTY0F1MFlCM1BSSnh5N2VNWnRfMXIxOE1uaEJoQ1FKaUtfT0dQRnBfUktFTFlxVFJBVGtsQ3ZBSktLLU9KUENoVUhrZTN3?oc=5)
