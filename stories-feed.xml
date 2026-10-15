@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 21:22:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 21:31:20 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -185,6 +185,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>kwikbucks investments — Clerk</title>
+      <link>https://mutapatimes.com/stories/d1a7be99bf08.html</link>
+      <description>Kwikbucks Investments is seeking a highly organised, detail-oriented and trustworthy Clerk to join its team in Harare. The successful candidate will provide clerical and administrative support to the… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d1a7be99bf08.html</guid>
+      <category>Jobs</category>
+      <dc:creator>kwikbucks investments</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d1a7be99bf08.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d1a7be99bf08.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d1a7be99bf08.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Branch Manager : Security</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/001bc2704cdb.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/001bc2704cdb.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/001bc2704cdb.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>MeDRA - Methodist Development and Relief Agency — Call for Additional Supplier`s Registration for the period (October 2026 to December 2028)</title>
-      <link>https://mutapatimes.com/stories/5db0709e3102.html</link>
-      <description>Methodist Development and Relief AGENCY (MeDRA) Call for Additional Supplier`s Registration for the period (October 2026 to December 2028) Prospective suppliers are invited to participate in MEDRA su… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/5db0709e3102.html</guid>
-      <category>Jobs</category>
-      <dc:creator>MeDRA - Methodist Development and Relief Agency</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/5db0709e3102.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/5db0709e3102.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/5db0709e3102.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
