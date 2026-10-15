@@ -1,0 +1,16 @@
+---
+title: "The intoxicating lie of white genocide — how US refugee policy weaponises SA’s pain"
+date: 2026-10-15T19:10:29.000Z
+author: Daily Maverick
+category: Policy
+image: 
+summary: "The intoxicating lie of white genocide — how US refugee policy weaponises SA’s pain"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPS3ZFQUpfWFBkeHRXSk1fNFR2MG12MmFheFBCb3piOGh1RU5lN1V2bTNGU0EzTGZTZzBGUGhCSEZSekFnWmZUSHg5bWJoYmZtYTNiNXFOOFhBZWdQTmhCN1VTLTF3MS1lUTdwYkNOWi1iY3psWkVoWWNEM09nSi0ySF85a3J0MEdVd1VfcldtR0V5amhZdDUwN095WUVHMnllQ3dtOXpyN3ZxQWtuUjFKZkNwRlVOd3FlSmpQWlhlY0xHbHkyUHUyRWxLTEFXLWVRNE1ISVFWUkkyRmxWQ1ZlZ0VpbXBmUzVqLWp6NHNBejNMbTBMbFV1X1J6LWNWSzg0aEVZS3lUQ0RldU42clhaakVsZjhiZXRJbmZjLTBrQ1dzeU5SZkxoemZ2bktjUFB2OXpzd0dVMEg5NXNzZElYSw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiwAJBVV95cUxPS3ZFQUpfWFBkeHRXSk1fNFR2MG12MmFheFBCb3piOGh1RU5lN1V2bTNGU0EzTGZTZzBGUGhCSEZSekFnWmZUSHg5bWJoYmZtYTNiNXFOOFhBZWdQTmhCN1VTLTF3MS1lUTdwYkNOWi1iY3psWkVoWWNEM09nSi0ySF85a3J0MEdVd1VfcldtR0V5amhZdDUwN095WUVHMnllQ3dtOXpyN3ZxQWtuUjFKZkNwRlVOd3FlSmpQWlhlY0xHbHkyUHUyRWxLTEFXLWVRNE1ISVFWUkkyRmxWQ1ZlZ0VpbXBmUzVqLWp6NHNBejNMbTBMbFV1X1J6LWNWSzg0aEVZS3lUQ0RldU42clhaakVsZjhiZXRJbmZjLTBrQ1dzeU5SZkxoemZ2bktjUFB2OXpzd0dVMEg5NXNzZElYSw?oc=5)
