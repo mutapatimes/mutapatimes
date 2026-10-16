@@ -1,125 +1,29 @@
 {
-  "fetched_at": "2026-10-16T18:35:31+00:00",
+  "fetched_at": "2026-10-16T23:13:20+00:00",
   "count": 60,
   "tiles": [
     {
-      "kind": "zse",
-      "title": "ZSE close 16 Oct 2026: All Share 475.3 (-0.55%)",
-      "link": "https://mutapatimes.com/zse?d=2026-10-16",
-      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-16",
-      "pubDate": "2026-10-16T13:30:00+00:00",
-      "category": "Markets"
-    },
-    {
-      "kind": "news",
-      "title": "14-year-old photographer wins one of wildlife photography's biggest awards with image of a dung beetle on a mission to roll its precious cargo up a sandy slope, captured on a family game drive in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-10-16-14-year-old-photographer-wins-one-of-wildlife-photographys-b",
-      "image": "https://mutapatimes.com/img/cards/news/dfa9407988be.png",
-      "pubDate": "2026-10-16T10:33:54+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "14-year-old photographer wins one of wildlife photography's biggest awards with image of a dung beetle on a mission to roll its precious cargo up a sandy slope, captured on a family game drive in Zimbabwe",
-      "link": "https://mutapatimes.com/news/2026-10-16-14-year-old-photographer-wins-one-of-wildlife-photography-s-biggest-awards-with-2c7bec",
-      "image": "https://mutapatimes.com/img/cards/news/c83ff69ac0e1.png",
-      "pubDate": "2026-10-16T10:33:54+00:00",
-      "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "50-year-old Chitungwiza landlord beaten to death by his female tenant for asking about unpaid rent (VIDEO)",
-      "link": "https://mutapatimes.com/articles/2026-10-16-50-year-old-chitungwiza-landlord-beaten-to-death-by-his-fema",
-      "image": "https://mutapatimes.com/img/cards/news/40af4aa668b9.png",
-      "pubDate": "2026-10-16T06:33:19+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "50-year-old Chitungwiza landlord beaten to death by his female tenant for asking about unpaid rent (VIDEO)",
-      "link": "https://mutapatimes.com/news/2026-10-16-50-year-old-chitungwiza-landlord-beaten-to-death-by-his-female-tenant-for-ca2161",
-      "image": "https://mutapatimes.com/img/cards/news/b9e2ea7df30e.png",
-      "pubDate": "2026-10-16T06:33:19+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Why Simba Makoni’s presidential bid collapsed despite Solomon Mujuru’s backing",
-      "link": "https://mutapatimes.com/news/2026-10-16-why-simba-makoni-s-presidential-bid-collapsed-despite-solomon-mujuru-s-backing-8c979c",
-      "image": "https://mutapatimes.com/img/cards/news/9051081dff15.png",
-      "pubDate": "2026-10-16T06:14:11+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Dead Sungura Legend Tongai Moyo Comes To Me in My Dreams: Musician First Farai Reveals",
-      "link": "https://mutapatimes.com/articles/2026-10-16-dead-sungura-legend-tongai-moyo-comes-to-me-in-my-dreams-mus",
-      "image": "https://mutapatimes.com/img/cards/news/4c266a200f7b.png",
-      "pubDate": "2026-10-16T05:46:53+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Dead Sungura Legend Tongai Moyo Comes To Me in My Dreams: Musician First Farai Reveals",
-      "link": "https://mutapatimes.com/news/2026-10-16-dead-sungura-legend-tongai-moyo-comes-to-me-in-my-dreams-musician-first-farai-e11279",
-      "image": "https://mutapatimes.com/img/cards/news/961fd9b0adcd.png",
-      "pubDate": "2026-10-16T05:46:53+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Harare’s revamped Hills championship golf course to open in March 2027",
-      "link": "https://mutapatimes.com/articles/2026-10-16-harares-revamped-hills-championship-golf-course-to-open-in-m",
-      "image": "https://mutapatimes.com/img/cards/news/61ce796e0fd0.png",
-      "pubDate": "2026-10-16T05:20:33+00:00",
-      "category": "Sport"
-    },
-    {
-      "kind": "news",
-      "title": "Harare’s revamped Hills championship golf course to open in March 2027",
-      "link": "https://mutapatimes.com/news/2026-10-16-harare-s-revamped-hills-championship-golf-course-to-open-in-march-2027-1c9e35",
-      "image": "https://mutapatimes.com/img/cards/news/1e0f4db11671.png",
-      "pubDate": "2026-10-16T05:20:33+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Revealed: Government lawyers warn mandatory heritage curriculum may be unlawful",
-      "link": "https://mutapatimes.com/news/2026-10-16-revealed-government-lawyers-warn-mandatory-heritage-curriculum-may-be-unlawful-f6a3d6",
-      "image": "https://mutapatimes.com/img/cards/news/1e235e0b6dda.png",
-      "pubDate": "2026-10-16T05:02:28+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwean author denies using AI to write award-winning story",
-      "link": "https://mutapatimes.com/articles/2026-10-16-zimbabwean-author-denies-using-ai-to-write-award-winning-sto",
-      "image": "https://mutapatimes.com/img/cards/news/0ca2e81a77dd.png",
-      "pubDate": "2026-10-16T04:17:47+00:00",
-      "category": "Tech"
-    },
-    {
       "kind": "economy",
-      "title": "Zim economy 2025 Q4: top three sectors are 41.0% of GDP.",
-      "link": "https://mutapatimes.com/economy?d=2026-10-16",
-      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-10-16",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "title": "Zim remittances 2025: diaspora sent $2.9B home — +78.7% over five years.",
+      "link": "https://mutapatimes.com/economy?d=2026-10-17",
+      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-10-17",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Economy"
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 16 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $129.51 via Wise",
-      "link": "https://mutapatimes.com/fx?d=2026-10-16",
-      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-16",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "title": "Zim FX snapshot 17 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $129.51 via Wise",
+      "link": "https://mutapatimes.com/fx?d=2026-10-17",
+      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-17",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "FX"
     },
     {
       "kind": "weather",
-      "title": "Zim weather 16 Oct: Harare clear sky · high 28° / low 16°",
-      "link": "https://mutapatimes.com/weather?d=2026-10-16",
-      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-16",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "title": "Zim weather 17 Oct: Harare clear sky · high 28° / low 16°",
+      "link": "https://mutapatimes.com/weather?d=2026-10-17",
+      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-17",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Weather"
     },
     {
@@ -127,7 +31,7 @@
       "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-social-media-assistant.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -135,7 +39,7 @@
       "title": "Junior Editorial Coordinator — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-editorial-coordinator",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-editorial-coordinator.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -143,7 +47,7 @@
       "title": "Junior Data Analyst — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-data-analyst",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-data-analyst.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -151,7 +55,7 @@
       "title": "Business Development Associate — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#business-development-associate",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -159,7 +63,7 @@
       "title": "Cake Fairy ~~ 0 — Stock Controller (Fairy Holdings)",
       "link": "https://vacancymail.co.zw/jobs/stock-controller-fairy-holdings-69893/",
       "image": "https://mutapatimes.com/img/cards/jobs/66c2fad5924b.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -167,7 +71,7 @@
       "title": "Sabi Gold Mine — Garage Foreman",
       "link": "https://vacancymail.co.zw/jobs/garage-foreman-69892/",
       "image": "https://mutapatimes.com/img/cards/jobs/2a11e33fcd8d.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -175,7 +79,7 @@
       "title": "Sabi Gold Mine — SHEQ Officer",
       "link": "https://vacancymail.co.zw/jobs/sheq-officer-69891/",
       "image": "https://mutapatimes.com/img/cards/jobs/e39460bf814f.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -183,7 +87,7 @@
       "title": "Sabi Gold Mine — Plant Metallurgist",
       "link": "https://vacancymail.co.zw/jobs/plant-metallurgist-69890/",
       "image": "https://mutapatimes.com/img/cards/jobs/1f70d2562cac.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -191,7 +95,7 @@
       "title": "Sabi Gold Mine — Human Resources Development Officer",
       "link": "https://vacancymail.co.zw/jobs/human-resources-development-officer-69889/",
       "image": "https://mutapatimes.com/img/cards/jobs/3d9cbfd61322.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -199,7 +103,7 @@
       "title": "Pharmacist",
       "link": "https://vacancymail.co.zw/jobs/pharmacist-69888/",
       "image": "https://mutapatimes.com/img/cards/jobs/c009214639fe.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -207,7 +111,7 @@
       "title": "Green Fuel — Maintenance Fitter",
       "link": "https://vacancymail.co.zw/jobs/maintenance-fitter-69887/",
       "image": "https://mutapatimes.com/img/cards/jobs/7390bc76a9d4.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -215,7 +119,7 @@
       "title": "Population Solutions for Health — Terms of Reference: End of Program Evaluation for PREVENT (Preventing HIV for Sustained Epidemic Control) Program in Zimbabwe",
       "link": "https://vacancymail.co.zw/jobs/terms-of-reference-end-of-program-evaluation-for-prevent-preventing-hiv-for-sustained-epidemic-control-program-in-zimbabwe-69886/",
       "image": "https://mutapatimes.com/img/cards/jobs/b8791650b06d.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -223,7 +127,7 @@
       "title": "Corporate 24 Hospital Group — SECURITY GUARD (GWERU)",
       "link": "https://vacancymail.co.zw/jobs/security-guard-gweru-69885/",
       "image": "https://mutapatimes.com/img/cards/jobs/c8ddf7b7b53c.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -231,7 +135,7 @@
       "title": "Corporate 24 Hospital Group — Sales Agent (Gweru, Kwekwe, Gwanda and Masvingo",
       "link": "https://vacancymail.co.zw/jobs/sales-agent-gweru-kwekwe-gwanda-and-masvingo-69884/",
       "image": "https://mutapatimes.com/img/cards/jobs/402f5fd8eaf3.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -239,7 +143,7 @@
       "title": "Corporate 24 Hospital Group — Sales Agent (Bulawayo)",
       "link": "https://vacancymail.co.zw/jobs/sales-agent-bulawayo-69883/",
       "image": "https://mutapatimes.com/img/cards/jobs/e97a5f63a161.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -247,7 +151,7 @@
       "title": "Sales Representative",
       "link": "https://vacancymail.co.zw/jobs/sales-representative-69882/",
       "image": "https://mutapatimes.com/img/cards/jobs/ad4c04fcbf39.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -255,7 +159,7 @@
       "title": "Procurement Officer",
       "link": "https://vacancymail.co.zw/jobs/procurement-officer-69881/",
       "image": "https://mutapatimes.com/img/cards/jobs/449a2e32857e.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -263,7 +167,7 @@
       "title": "Electrician",
       "link": "https://vacancymail.co.zw/jobs/electrician-69880/",
       "image": "https://mutapatimes.com/img/cards/jobs/c2054696b146.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -271,7 +175,7 @@
       "title": "Personal Assistant To The Managing Director",
       "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-the-managing-director-69879/",
       "image": "https://mutapatimes.com/img/cards/jobs/030aa64578bd.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -279,7 +183,7 @@
       "title": "Ponai Medical Centre - Avondale Urgent Care Clinic — Midwife",
       "link": "https://vacancymail.co.zw/jobs/midwife-69878/",
       "image": "https://mutapatimes.com/img/cards/jobs/197843cca804.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -287,7 +191,7 @@
       "title": "Factory Supervisor (Textiles and Clothing)",
       "link": "https://vacancymail.co.zw/jobs/factory-supervisor-textiles-and-clothing-69877/",
       "image": "https://mutapatimes.com/img/cards/jobs/93e2d54ee723.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -295,7 +199,7 @@
       "title": "kwikbucks investments — Clerk",
       "link": "https://vacancymail.co.zw/jobs/clerk-69873/",
       "image": "https://mutapatimes.com/img/cards/jobs/d1a7be99bf08.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -303,7 +207,7 @@
       "title": "Branch Manager : Security",
       "link": "https://vacancymail.co.zw/jobs/branch-manager-security-69872/",
       "image": "https://mutapatimes.com/img/cards/jobs/dac14c6a8306.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -311,7 +215,7 @@
       "title": "Defcorp (Pvt) Ltd — Patrol Officer",
       "link": "https://vacancymail.co.zw/jobs/patrol-officer-69871/",
       "image": "https://mutapatimes.com/img/cards/jobs/2b357342956c.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -319,7 +223,7 @@
       "title": "Defcorp (Pvt) Ltd — Administration & Sales Personnel",
       "link": "https://vacancymail.co.zw/jobs/administration-sales-personnel-69870/",
       "image": "https://mutapatimes.com/img/cards/jobs/dc6626c769f1.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -327,7 +231,7 @@
       "title": "National Fencing — Accounting Graduate Trainee",
       "link": "https://vacancymail.co.zw/jobs/accounting-graduate-trainee-69869/",
       "image": "https://mutapatimes.com/img/cards/jobs/95b67d144ffd.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -335,7 +239,7 @@
       "title": "Zimpost Pvt Ltd — STORESPERSON",
       "link": "https://vacancymail.co.zw/jobs/storesperson-69868/",
       "image": "https://mutapatimes.com/img/cards/jobs/d7ada4b7a573.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -343,7 +247,7 @@
       "title": "Zimpost Pvt Ltd — RECORDS ASSISTANT",
       "link": "https://vacancymail.co.zw/jobs/records-assistant-69867/",
       "image": "https://mutapatimes.com/img/cards/jobs/4654652b8454.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -351,7 +255,7 @@
       "title": "Zimpost Pvt Ltd — ACCOUNTS CLERKS",
       "link": "https://vacancymail.co.zw/jobs/accounts-clerks-69866/",
       "image": "https://mutapatimes.com/img/cards/jobs/1e159838b722.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -359,7 +263,7 @@
       "title": "Zimpost Pvt Ltd — DIGITAL MARKETING OFFICER",
       "link": "https://vacancymail.co.zw/jobs/digital-marketing-officer-69865/",
       "image": "https://mutapatimes.com/img/cards/jobs/646aac5e3bb6.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -367,7 +271,7 @@
       "title": "Zimpost Pvt Ltd — ASSISTANT ACCOUNTANT- BUDGETING AND COSTING",
       "link": "https://vacancymail.co.zw/jobs/assistant-accountant-budgeting-and-costing-69864/",
       "image": "https://mutapatimes.com/img/cards/jobs/610a115f7fa0.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -375,7 +279,7 @@
       "title": "Zimpost Pvt Ltd — BUSINESS APPLICATIONS SUPPORT SPECIALIST",
       "link": "https://vacancymail.co.zw/jobs/business-applications-support-specialist-69863/",
       "image": "https://mutapatimes.com/img/cards/jobs/d1c4fd8b8689.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -383,7 +287,7 @@
       "title": "CMED Private Limited — 2027 Apprenticeship Training Programme with CMED (Private) Limited in the",
       "link": "https://vacancymail.co.zw/jobs/2027-apprenticeship-training-programme-with-cmed-private-limited-in-the-69862/",
       "image": "https://mutapatimes.com/img/cards/jobs/2d5cdd9697c7.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -391,7 +295,7 @@
       "title": "Class 2 Driver + Defensive",
       "link": "https://vacancymail.co.zw/jobs/class-2-driver-defensive-69850/",
       "image": "https://mutapatimes.com/img/cards/jobs/62b4bb1d48ec.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -399,7 +303,7 @@
       "title": "UNDP - United Nations Development Programme — Senior Nurse",
       "link": "https://vacancymail.co.zw/jobs/senior-nurse-69849/",
       "image": "https://mutapatimes.com/img/cards/jobs/126d753be0c5.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -407,7 +311,7 @@
       "title": "Sales Agents",
       "link": "https://vacancymail.co.zw/jobs/sales-agents-69848/",
       "image": "https://mutapatimes.com/img/cards/jobs/d2b563aacc1b.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -415,7 +319,7 @@
       "title": "Graphic Designer",
       "link": "https://vacancymail.co.zw/jobs/graphic-designer-69847/",
       "image": "https://mutapatimes.com/img/cards/jobs/8b88b36941ff.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -423,7 +327,7 @@
       "title": "Bronte Hotel — Supply Chain intern",
       "link": "https://vacancymail.co.zw/jobs/supply-chain-intern-69846/",
       "image": "https://mutapatimes.com/img/cards/jobs/0eb147635b9c.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -431,7 +335,7 @@
       "title": "Green Fuel — Pool Vehicle Drivers",
       "link": "https://vacancymail.co.zw/jobs/pool-vehicle-drivers-69845/",
       "image": "https://mutapatimes.com/img/cards/jobs/71571ff445dd.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -439,7 +343,7 @@
       "title": "Green Fuel — DIESEL MECHANIC MANAGER",
       "link": "https://vacancymail.co.zw/jobs/diesel-mechanic-manager-69843/",
       "image": "https://mutapatimes.com/img/cards/jobs/899431ad83e3.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -447,7 +351,7 @@
       "title": "Cospharm — Warehouse Supervisor",
       "link": "https://vacancymail.co.zw/jobs/warehouse-supervisor-69842/",
       "image": "https://mutapatimes.com/img/cards/jobs/cd4e2278653b.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -455,7 +359,7 @@
       "title": "Medicines Control Authority of Zimbabwe — Analyst – 2 Posts",
       "link": "https://vacancymail.co.zw/jobs/analyst-2-posts-69841/",
       "image": "https://mutapatimes.com/img/cards/jobs/4baaa3581943.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -463,7 +367,7 @@
       "title": "Medicines Control Authority of Zimbabwe — Laboratory Technician – 2 Posts",
       "link": "https://vacancymail.co.zw/jobs/laboratory-technician-2-posts-69840/",
       "image": "https://mutapatimes.com/img/cards/jobs/b9e761bf1f39.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -471,7 +375,7 @@
       "title": "Parrogate Zimbabwe (PVT) Ltd — COMMERCIAL DIRECTOR - WHEAT & MAIZE MILLING",
       "link": "https://vacancymail.co.zw/jobs/commercial-director-wheat-maize-milling-69839/",
       "image": "https://mutapatimes.com/img/cards/jobs/3e5470e4b5af.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -479,7 +383,103 @@
       "title": "Parrogate Zimbabwe (PVT) Ltd — COMMERCIAL DIRECTOR - STOCK FEED DIVISION",
       "link": "https://vacancymail.co.zw/jobs/commercial-director-stock-feed-division-69838/",
       "image": "https://mutapatimes.com/img/cards/jobs/03e3e460661d.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Marketing Person",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-69837/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d5fc26ec2267.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Fence Installers",
+      "link": "https://vacancymail.co.zw/jobs/fence-installers-69836/",
+      "image": "https://mutapatimes.com/img/cards/jobs/3fecf67a5fa7.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Welder / Steel Fabricator",
+      "link": "https://vacancymail.co.zw/jobs/welder-steel-fabricator-69835/",
+      "image": "https://mutapatimes.com/img/cards/jobs/124b5a4c0c42.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Water & Sanitation Engineer",
+      "link": "https://vacancymail.co.zw/jobs/water-sanitation-engineer-69834/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1eec66c06a69.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales and Marketing Person",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-69833/",
+      "image": "https://mutapatimes.com/img/cards/jobs/4e351bdbfbd8.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "My Voice in Zimbabwe — Teachers",
+      "link": "https://vacancymail.co.zw/jobs/teachers-69825/",
+      "image": "https://mutapatimes.com/img/cards/jobs/90ce8b74c527.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "CFAO Motors Zimbabwe — Apprentice Recruitment 2026",
+      "link": "https://vacancymail.co.zw/jobs/apprentice-recruitment-2026-69824/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e7205ce5bfe4.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Site Quantity Surveyor",
+      "link": "https://vacancymail.co.zw/jobs/site-quantity-surveyor-69823/",
+      "image": "https://mutapatimes.com/img/cards/jobs/18848d38139d.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Assistant Accountant",
+      "link": "https://vacancymail.co.zw/jobs/assistant-accountant-69822/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1851d577d5c9.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Debtors Clerk",
+      "link": "https://vacancymail.co.zw/jobs/debtors-clerk-69821/",
+      "image": "https://mutapatimes.com/img/cards/jobs/840d73d450e4.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mejrkh Communications & Media Advisory — STUDENT ON ATTACHMENT - FINANCE",
+      "link": "https://vacancymail.co.zw/jobs/student-on-attachment-finance-69820/",
+      "image": "https://mutapatimes.com/img/cards/jobs/88e806aad0c7.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Digital Marketing & Brand Steward",
+      "link": "https://vacancymail.co.zw/jobs/digital-marketing-brand-steward-69819/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1cb3733ce7fb.png",
+      "pubDate": "2026-10-16T22:00:00+00:00",
       "category": "Jobs"
     }
   ]
