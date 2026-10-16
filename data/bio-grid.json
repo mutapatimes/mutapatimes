@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-10-16T07:50:19+00:00",
+  "fetched_at": "2026-10-16T13:43:39+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimra’s new plan to widen tax base... as authority sets its sights on 50 000 informal traders",
+      "link": "https://mutapatimes.com/articles/2026-10-16-zimras-new-plan-to-widen-tax-base-as-authority-sets-its-sigh",
+      "image": "https://mutapatimes.com/img/cards/news/b5f61bcbe877.png",
+      "pubDate": "2026-10-16T00:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe battles Zambia for youth summit",
+      "link": "https://mutapatimes.com/articles/2026-10-15-zimbabwe-battles-zambia-for-youth-summit",
+      "image": "https://mutapatimes.com/img/cards/news/6f0f119d8496.png",
+      "pubDate": "2026-10-15T23:59:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe moves to tighten tax compliance",
+      "link": "https://mutapatimes.com/articles/2026-10-15-zimbabwe-moves-to-tighten-tax-compliance",
+      "image": "https://mutapatimes.com/img/cards/news/0c5675da5c6b.png",
+      "pubDate": "2026-10-15T23:59:00+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: top three sectors are 41.0% of GDP.",
@@ -20,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 16 Oct: Harare mainly clear · high 29° / low 18°",
+      "title": "Zim weather 16 Oct: Harare clear sky · high 28° / low 16°",
       "link": "https://mutapatimes.com/weather?d=2026-10-16",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-16",
       "pubDate": "2026-10-15T22:00:00+00:00",
@@ -57,6 +81,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-15T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Population Solutions for Health — Terms of Reference: End of Program Evaluation for PREVENT (Preventing HIV for Sustained Epidemic Control) Program in Zimbabwe",
+      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-end-of-program-evaluation-for-prevent-preventing-hiv-for-sustained-epidemic-control-program-in-zimbabwe-69886/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b8791650b06d.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Corporate 24 Hospital Group — SECURITY GUARD (GWERU)",
+      "link": "https://vacancymail.co.zw/jobs/security-guard-gweru-69885/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c8ddf7b7b53c.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Corporate 24 Hospital Group — Sales Agent (Gweru, Kwekwe, Gwanda and Masvingo",
+      "link": "https://vacancymail.co.zw/jobs/sales-agent-gweru-kwekwe-gwanda-and-masvingo-69884/",
+      "image": "https://mutapatimes.com/img/cards/jobs/402f5fd8eaf3.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Corporate 24 Hospital Group — Sales Agent (Bulawayo)",
+      "link": "https://vacancymail.co.zw/jobs/sales-agent-bulawayo-69883/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e97a5f63a161.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Sales Representative",
+      "link": "https://vacancymail.co.zw/jobs/sales-representative-69882/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ad4c04fcbf39.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Procurement Officer",
+      "link": "https://vacancymail.co.zw/jobs/procurement-officer-69881/",
+      "image": "https://mutapatimes.com/img/cards/jobs/449a2e32857e.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Electrician",
+      "link": "https://vacancymail.co.zw/jobs/electrician-69880/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c2054696b146.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Personal Assistant To The Managing Director",
+      "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-the-managing-director-69879/",
+      "image": "https://mutapatimes.com/img/cards/jobs/030aa64578bd.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Ponai Medical Centre - Avondale Urgent Care Clinic — Midwife",
+      "link": "https://vacancymail.co.zw/jobs/midwife-69878/",
+      "image": "https://mutapatimes.com/img/cards/jobs/197843cca804.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Factory Supervisor (Textiles and Clothing)",
+      "link": "https://vacancymail.co.zw/jobs/factory-supervisor-textiles-and-clothing-69877/",
+      "image": "https://mutapatimes.com/img/cards/jobs/93e2d54ee723.png",
+      "pubDate": "2026-10-15T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -375,110 +479,6 @@
       "title": "Radical Systems (Pvt) Ltd — Software Engineering Intern",
       "link": "https://vacancymail.co.zw/jobs/software-engineering-intern-69815/",
       "image": "https://mutapatimes.com/img/cards/jobs/5f3d968f53bf.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "FMCG DISTRIBUTIONS — Commission Sales Rep",
-      "link": "https://vacancymail.co.zw/jobs/commission-sales-rep-69814/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7e3fcd43600a.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Associated Belts and Bearings — Personal Driver-Female",
-      "link": "https://vacancymail.co.zw/jobs/personal-driver-female-69813/",
-      "image": "https://mutapatimes.com/img/cards/jobs/43016df8c668.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Clinic Manager",
-      "link": "https://vacancymail.co.zw/jobs/clinic-manager-69812/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5abc8cd716bd.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cashbook Clerk",
-      "link": "https://vacancymail.co.zw/jobs/cashbook-clerk-69811/",
-      "image": "https://mutapatimes.com/img/cards/jobs/99a70d36fa12.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Semi-Skilled Diesel Plant Fitter (Tractor and Implements)",
-      "link": "https://vacancymail.co.zw/jobs/semi-skilled-diesel-plant-fitter-tractor-and-implements-69810/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3eec8c38bb65.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Creditors Clerk",
-      "link": "https://vacancymail.co.zw/jobs/creditors-clerk-69809/",
-      "image": "https://mutapatimes.com/img/cards/jobs/001bc2704cdb.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MeDRA - Methodist Development and Relief Agency — Call for Additional Supplier`s Registration for the period (October 2026 to December 2028)",
-      "link": "https://vacancymail.co.zw/jobs/call-for-additional-suppliers-registration-for-the-period-october-2026-to-december-2028-69807/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5db0709e3102.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Oxfam — Call For Expression Of Interest: Annual Survey for Ireland Civil Society Partnership (ICSP) Project",
-      "link": "https://vacancymail.co.zw/jobs/call-for-expression-of-interest-annual-survey-for-ireland-civil-society-partnership-icsp-project-69806/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7bdc568971dc.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Turnpick Timbers — WELDER",
-      "link": "https://vacancymail.co.zw/jobs/welder-69805/",
-      "image": "https://mutapatimes.com/img/cards/jobs/610ff8498285.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Loan Officers : Ashcash (Gweru)",
-      "link": "https://vacancymail.co.zw/jobs/loan-officers-ashcash-gweru-69804/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d49dede9c832.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Porter (4 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/porter-4-posts-69803/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8c6d58df60ac.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Waiter/Waitresses (2 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/waiterwaitresses-2-posts-69802/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0d746ec36e1c.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Chef /Cook (2 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/chef-cook-2-posts-69801/",
-      "image": "https://mutapatimes.com/img/cards/jobs/018cebaea4eb.png",
       "pubDate": "2026-10-15T22:00:00+00:00",
       "category": "Jobs"
     }
