@@ -1,0 +1,16 @@
+---
+title: "Motus and YES mark six years of driving youth employment across South Africa’s automotive"
+date: 2026-10-16T13:00:44.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Motus and YES mark six years of driving youth employment across South Africa’s automotive"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNLTRJNjlDM08yYnIzNXRiaTVabEpVaXIzb085NXl4dUNVZFNmMGE4dzdBNHVMQmVueGxNRElkTEdKSDFxQVIwQm5aZjZGQzJ1dkg2X0lrUTlSN2YxbmxvQ3RVTjd5MkxLT0FqUjhYMTFEZVBnVGFuMi1iellIU081WU42T1pyQzZRZndpVU5yRGZnS1dfcFB1aEplV0JCaUNGaFFBZXgtbDRvUlNnaUQ5T1lld3hXUlItbmhSVzJzR3VYTWV0TlV5NFRXUk5za2xld0NIZTB2a3dWaHA2YXAyd2xTUExVQzdWUkk2aEdSem85X2tIZGh6dGdFeWJCbXJEaERSaTZ4U2FMSmEwbkJyREtnNld4S25rNFpmeHI2WEwtdFBRYXBaZGl3WjZWdzVuS0RyY1FYOUE5T2lydmoxTA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiwAJBVV95cUxNLTRJNjlDM08yYnIzNXRiaTVabEpVaXIzb085NXl4dUNVZFNmMGE4dzdBNHVMQmVueGxNRElkTEdKSDFxQVIwQm5aZjZGQzJ1dkg2X0lrUTlSN2YxbmxvQ3RVTjd5MkxLT0FqUjhYMTFEZVBnVGFuMi1iellIU081WU42T1pyQzZRZndpVU5yRGZnS1dfcFB1aEplV0JCaUNGaFFBZXgtbDRvUlNnaUQ5T1lld3hXUlItbmhSVzJzR3VYTWV0TlV5NFRXUk5za2xld0NIZTB2a3dWaHA2YXAyd2xTUExVQzdWUkk2aEdSem85X2tIZGh6dGdFeWJCbXJEaERSaTZ4U2FMSmEwbkJyREtnNld4S25rNFpmeHI2WEwtdFBRYXBaZGl3WjZWdzVuS0RyY1FYOUE5T2lydmoxTA?oc=5)
