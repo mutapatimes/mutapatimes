@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-10-15T23:31:31+00:00",
+  "fetched_at": "2026-10-16T02:50:05+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Can Zimbabwe’s ZiG win trust and replace the US dollar?",
+      "link": "https://mutapatimes.com/articles/2026-10-16-can-zimbabwes-zig-win-trust-and-replace-the-us-dollar",
+      "image": "https://mutapatimes.com/img/cards/news/423e898255aa.png",
+      "pubDate": "2026-10-16T01:14:37+00:00",
+      "category": "Business"
+    },
     {
       "kind": "economy",
       "title": "Zim economy 2025 Q4: top three sectors are 41.0% of GDP.",
@@ -12,7 +20,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 16 Oct 2026: 1 USD = 26.60 ZWG · best from UK £100 → $129.15 via Wise",
+      "title": "Zim FX snapshot 16 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $129.51 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-16",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-16",
       "pubDate": "2026-10-15T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "Midlands State University MSU — Waiter/Waitresses (2 Posts)",
       "link": "https://vacancymail.co.zw/jobs/waiterwaitresses-2-posts-69802/",
       "image": "https://mutapatimes.com/img/cards/jobs/0d746ec36e1c.png",
-      "pubDate": "2026-10-15T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Chef /Cook (2 Posts)",
-      "link": "https://vacancymail.co.zw/jobs/chef-cook-2-posts-69801/",
-      "image": "https://mutapatimes.com/img/cards/jobs/018cebaea4eb.png",
       "pubDate": "2026-10-15T22:00:00+00:00",
       "category": "Jobs"
     }
