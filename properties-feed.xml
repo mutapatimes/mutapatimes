@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 09:11:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 11:21:15 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,18 +18,6 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
-    <item>
-      <title>USD 210,000 — Luxury Townhouses for Sale in Marlborough (Marlborough, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/ffe8db9beafe.html</link>
-      <description>USD 210,000 — Marlborough, Harare West. 3 beds. Luxury Townhouses for Sale in Marlborough. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 15 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ffe8db9beafe.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png" type="image/png" length="200000"/>
-    </item>
     <item>
       <title>USD 250,000 — Chadcombe 3-Bed house with Chiremba road frontage 4 990samcan be used for commercial purposes (Chadcombe, Harare South)</title>
       <link>https://mutapatimes.com/property-landing/82d2760e61ec.html</link>
@@ -41,6 +29,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/82d2760e61ec.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/82d2760e61ec.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/82d2760e61ec.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 210,000 — Luxury Townhouses for Sale in Marlborough (Marlborough, Harare West)</title>
+      <link>https://mutapatimes.com/property-landing/ffe8db9beafe.html</link>
+      <description>USD 210,000 — Marlborough, Harare West. 3 beds. Luxury Townhouses for Sale in Marlborough. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 15 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/ffe8db9beafe.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/ffe8db9beafe.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 120,000 — House for sale (Mainway Meadows, Harare South)</title>
