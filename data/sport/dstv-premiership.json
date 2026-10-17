@@ -49,6 +49,19 @@
   },
   {
    "rank": 4,
+   "team": "Milford",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
+   "played": 9,
+   "win": 4,
+   "draw": 3,
+   "loss": 2,
+   "gf": 10,
+   "ga": 7,
+   "gd": 3,
+   "points": 15
+  },
+  {
+   "rank": 5,
    "team": "Kaizer Chiefs",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
    "played": 8,
@@ -59,37 +72,24 @@
    "ga": 8,
    "gd": 5,
    "points": 14
-  },
-  {
-   "rank": 5,
-   "team": "Milford",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
-   "played": 8,
-   "win": 3,
-   "draw": 3,
-   "loss": 2,
-   "gf": 9,
-   "ga": 7,
-   "gd": 2,
-   "points": 12
   }
  ],
  "results": [
   {
    "date": "2026-10-17",
-   "home": "Chippa United",
-   "away": "Kruger United",
-   "hs": 0,
+   "home": "Sekhukhune United",
+   "away": "Marumo Gallants",
+   "hs": 2,
    "as": 1
   }
  ],
  "fixtures": [
   {
-   "date": "2026-10-17",
-   "time": "16:00",
-   "home": "Sekhukhune United",
-   "away": "Marumo Gallants"
+   "date": "2026-10-18",
+   "time": "13:30",
+   "home": "Siwelele",
+   "away": "Polokwane City"
   }
  ],
- "updated": "2026-10-17T15:38:44+00:00"
+ "updated": "2026-10-17T18:32:40+00:00"
 }
