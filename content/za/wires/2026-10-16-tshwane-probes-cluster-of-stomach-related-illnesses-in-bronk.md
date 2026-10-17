@@ -1,0 +1,16 @@
+---
+title: "Tshwane probes cluster of stomach-related illnesses in Bronkhorstspruit"
+date: 2026-10-16T05:30:52.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Tshwane probes cluster of stomach-related illnesses in Bronkhorstspruit"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVkRGc0NYRnJaQVZaYXhzWVROaWt3X1dxZUVkSkFCTmU0ZzJBc3JyWV9mcEkwMkhjejdzRXJqQUhxa0dXOEVfR283YnZRWEJicTFXMmcyMjlxdWJxNGhyT3MyZ1hXZGtvTmxKS1d0eUhWSjktVE1fTi1jeDVkcDhxRFY0WnhoNFlSeXY0SjNKSXRRNk9JX1NPRFppclJZb3ZXcXhjdUZYNkc4VXBZQ0Exc1hJN3BJUTBHaElzUlFWamJCZ2J3MzVfbQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVkRGc0NYRnJaQVZaYXhzWVROaWt3X1dxZUVkSkFCTmU0ZzJBc3JyWV9mcEkwMkhjejdzRXJqQUhxa0dXOEVfR283YnZRWEJicTFXMmcyMjlxdWJxNGhyT3MyZ1hXZGtvTmxKS1d0eUhWSjktVE1fTi1jeDVkcDhxRFY0WnhoNFlSeXY0SjNKSXRRNk9JX1NPRFppclJZb3ZXcXhjdUZYNkc4VXBZQ0Exc1hJN3BJUTBHaElzUlFWamJCZ2J3MzVfbQ?oc=5)
