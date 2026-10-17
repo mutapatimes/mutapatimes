@@ -1,0 +1,16 @@
+---
+title: "Looking beyond South Africa: Why more investors are taking their money into global markets"
+date: 2026-10-17T04:04:58.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Looking beyond South Africa: Why more investors are taking their money into global markets"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOaGcycEhKS2NCbk9rVTNrTjhZRmQwcXVXQnpOdFF1ODdFYzlDS3QxYjZFd25MMVBvb1VBU3BpLWI4aWZfNzczSU5JZkVSRWpUMlo5T2RjaUFPcVVhNm1LbFBGOHB1SDlISnYyNVh2WGlqTjJRYUd2d3NudTQ3aVYxbU1jem9HbEl2THJPeTViZGhlUGZuZ0xNOXlKc3ZMQWpIdVpoX2VWQVhiODZsMnVFYndTMF9rRWN3UVRWNFlCMzdCS2gtTDl0UjhKU0l6M2M5VjdOZ3ZFNEpzdVJzTTJEeXFiVUUxUGpfRWRkQ2lxcGtfX2J5QzMxYnVsVHhwVXExcVoxVUE0RGQxRjQwQkVJRTE5M2JKdHhscm9nb05vcGJPT1hMaXdiY2ZvWXk3NHl4QnduTUdzWHA0TlBEc1ozRmN3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiwgJBVV95cUxOaGcycEhKS2NCbk9rVTNrTjhZRmQwcXVXQnpOdFF1ODdFYzlDS3QxYjZFd25MMVBvb1VBU3BpLWI4aWZfNzczSU5JZkVSRWpUMlo5T2RjaUFPcVVhNm1LbFBGOHB1SDlISnYyNVh2WGlqTjJRYUd2d3NudTQ3aVYxbU1jem9HbEl2THJPeTViZGhlUGZuZ0xNOXlKc3ZMQWpIdVpoX2VWQVhiODZsMnVFYndTMF9rRWN3UVRWNFlCMzdCS2gtTDl0UjhKU0l6M2M5VjdOZ3ZFNEpzdVJzTTJEeXFiVUUxUGpfRWRkQ2lxcGtfX2J5QzMxYnVsVHhwVXExcVoxVUE0RGQxRjQwQkVJRTE5M2JKdHhscm9nb05vcGJPT1hMaXdiY2ZvWXk3NHl4QnduTUdzWHA0TlBEc1ozRmN3?oc=5)
