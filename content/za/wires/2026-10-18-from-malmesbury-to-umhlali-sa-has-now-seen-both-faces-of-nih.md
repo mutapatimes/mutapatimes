@@ -1,0 +1,16 @@
+---
+title: "From Malmesbury to Umhlali, SA has now seen both faces of nihilistic violence"
+date: 2026-10-18T21:10:25.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "From Malmesbury to Umhlali, SA has now seen both faces of nihilistic violence"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwgJBVV95cUxONDc5blNRY0w3eFZ2WDhwbENlRlpXeDNPRDExcmdsZFA4c1Z0aW1LZnFkZ0o0Z2ZtOElqejkzVzNPdHFfd0xXZ0U5MTg0WlZWRFY0ZXE3VHVtZExfaC04VHhreDBwWkhrb0hnTjVkMjVRa2dwWHBKVFhUc0U1TloxZ0ZuWWF0T21wbTljM01uSmo5azlpQWllZmQ3QmFtbWJyWTNnWXBmQWwxSFJiUlQ5WkpzVWZQYWV3UzdkZWl4d20xSnJQS3h4QVRxVGUxYmtsdGlHN2ppSDM5NnZRSDUzWTdhRlRwUFc0bHRNT2pmS09qVG9VX2ZMNFR0VFp6Njl3RHk2LTRRbXZ6NTg0OVJlcGYwV0dZemJjTEQ1N1ktWjVrN2g1eHRZNm5sZXZDZkJPNWh4aldILVU5TGktMFJJYXpR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiwgJBVV95cUxONDc5blNRY0w3eFZ2WDhwbENlRlpXeDNPRDExcmdsZFA4c1Z0aW1LZnFkZ0o0Z2ZtOElqejkzVzNPdHFfd0xXZ0U5MTg0WlZWRFY0ZXE3VHVtZExfaC04VHhreDBwWkhrb0hnTjVkMjVRa2dwWHBKVFhUc0U1TloxZ0ZuWWF0T21wbTljM01uSmo5azlpQWllZmQ3QmFtbWJyWTNnWXBmQWwxSFJiUlQ5WkpzVWZQYWV3UzdkZWl4d20xSnJQS3h4QVRxVGUxYmtsdGlHN2ppSDM5NnZRSDUzWTdhRlRwUFc0bHRNT2pmS09qVG9VX2ZMNFR0VFp6Njl3RHk2LTRRbXZ6NTg0OVJlcGYwV0dZemJjTEQ1N1ktWjVrN2g1eHRZNm5sZXZDZkJPNWh4aldILVU5TGktMFJJYXpR?oc=5)
