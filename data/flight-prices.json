@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17",
+  "fetched_at": "2026-10-18",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -18,7 +18,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 732,
+        "price": 753,
         "airline": "Vayama",
         "departure_at": "",
         "return_at": "",
@@ -28,21 +28,21 @@
       },
       "monthly": [
         {
-          "price": 473,
-          "airline": "U2",
-          "departure_at": "2026-10-28",
+          "price": 480,
+          "airline": "KQ",
+          "departure_at": "2026-10-22",
           "return_at": "",
-          "stops": 3,
-          "duration": 1490,
+          "stops": 2,
+          "duration": 1820,
           "currency": ""
         },
         {
-          "price": 573,
-          "airline": "ET",
+          "price": 424,
+          "airline": "FR",
           "departure_at": "2026-11-02",
-          "return_at": "2026-11-09",
-          "stops": 1,
-          "duration": null,
+          "return_at": "",
+          "stops": 3,
+          "duration": 2315,
           "currency": ""
         },
         {
@@ -93,21 +93,21 @@
           "currency": ""
         },
         {
+          "price": 424,
+          "airline": "FR",
+          "departure_at": "2026-11-02",
+          "return_at": "",
+          "stops": 3,
+          "duration": 2315,
+          "currency": ""
+        },
+        {
           "price": 430,
           "airline": "W9",
           "departure_at": "2027-03-18",
           "return_at": "",
           "stops": 4,
           "duration": 2890,
-          "currency": ""
-        },
-        {
-          "price": 473,
-          "airline": "U2",
-          "departure_at": "2026-10-28",
-          "return_at": "",
-          "stops": 3,
-          "duration": 1490,
           "currency": ""
         },
         {
@@ -120,12 +120,12 @@
           "currency": ""
         },
         {
-          "price": 502,
-          "airline": "BA",
-          "departure_at": "2027-03-18",
+          "price": 494,
+          "airline": "EI",
+          "departure_at": "2026-11-02",
           "return_at": "",
-          "stops": 4,
-          "duration": 1855,
+          "stops": 3,
+          "duration": 2495,
           "currency": ""
         }
       ],
@@ -133,7 +133,7 @@
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -157,7 +157,7 @@
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -179,7 +179,7 @@
           "error": null
         }
       ],
-      "observations": 53
+      "observations": 55
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -231,15 +231,6 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 3515,
-          "airline": "FA",
-          "departure_at": "2026-10-18",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1615,
-          "currency": ""
-        },
-        {
           "price": 3320,
           "airline": "SA",
           "departure_at": "2026-11-02",
@@ -256,6 +247,15 @@
           "stops": 1,
           "duration": 1055,
           "currency": ""
+        },
+        {
+          "price": 7582,
+          "airline": "SA",
+          "departure_at": "2027-02-02",
+          "return_at": "2027-02-27",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "by_airline": [
@@ -269,12 +269,12 @@
           "currency": ""
         },
         {
-          "price": 3515,
-          "airline": "FA",
-          "departure_at": "2026-10-18",
+          "price": 7720,
+          "airline": "Flightnetwork",
+          "departure_at": "",
           "return_at": "",
           "stops": 1,
-          "duration": 1615,
+          "duration": 950,
           "currency": ""
         }
       ],
@@ -282,13 +282,13 @@
         {
           "endpoint": "v3",
           "origin": "CPT",
-          "n": 3,
+          "n": 2,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "CPT",
-          "n": 0,
+          "n": 1,
           "error": null
         },
         {
@@ -300,11 +300,11 @@
         {
           "endpoint": "v2",
           "origin": "CPT",
-          "n": 0,
+          "n": 1,
           "error": null
         }
       ],
-      "observations": 3
+      "observations": 4
     },
     "johannesburg-to-harare": {
       "origin": "JNB",
@@ -387,15 +387,6 @@
           "currency": ""
         },
         {
-          "price": 3022,
-          "airline": "Farera",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 0,
-          "duration": 210,
-          "currency": ""
-        },
-        {
           "price": 3081,
           "airline": "SA",
           "departure_at": "2026-10-29",
@@ -405,7 +396,16 @@
           "currency": ""
         },
         {
-          "price": 3673,
+          "price": 3118,
+          "airline": "Farera",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 0,
+          "duration": 210,
+          "currency": ""
+        },
+        {
+          "price": 3789,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -445,11 +445,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 13,
+          "n": 15,
           "error": null
         }
       ],
-      "observations": 21
+      "observations": 24
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -572,15 +572,6 @@
           "currency": ""
         },
         {
-          "price": 1835,
-          "airline": "Farera",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 2,
-          "duration": 1335,
-          "currency": ""
-        },
-        {
           "price": 1862,
           "airline": "KQ",
           "departure_at": "2026-11-21",
@@ -590,20 +581,29 @@
           "currency": ""
         },
         {
-          "price": 1960,
-          "airline": "Tickets",
+          "price": 1896,
+          "airline": "Farera",
           "departure_at": "",
           "return_at": "",
-          "stops": 1,
-          "duration": 2445,
+          "stops": 2,
+          "duration": 1335,
           "currency": ""
         },
         {
-          "price": 2226,
+          "price": 2300,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
           "stops": 1,
+          "duration": 2500,
+          "currency": ""
+        },
+        {
+          "price": 2341,
+          "airline": "Wingie",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 2,
           "duration": 2500,
           "currency": ""
         }
