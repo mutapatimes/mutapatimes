@@ -1,86 +1,74 @@
 {
-  "fetched_at": "2026-10-16T18:50:49.344731+00:00",
-  "as_of": "2026-10-16",
+  "fetched_at": "2026-10-19T17:27:47.701418+00:00",
+  "as_of": "2026-10-19",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 154,
-    "turnover": 1714872.51,
-    "volume": 1986585.0,
-    "market_cap": 8970967044.69
+    "trades": 145,
+    "turnover": 455865.38,
+    "volume": 404719.0,
+    "market_cap": 9089327003.39
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 271.75,
-      "change_pct": 0.67,
-      "change_points": 1.8,
+      "value": 273.16,
+      "change_pct": 0.52,
+      "change_points": 1.41,
       "direction": "up"
     }
   ],
   "gainers": [
     {
-      "name": "Zimplow Holdings Limited",
-      "symbol": "ZIMW.VX",
-      "price": 12.0,
-      "change_pct": 20.0
+      "name": "Tsl Limited",
+      "symbol": "TSL.VX",
+      "price": 24.09,
+      "change_pct": 14.71
     },
     {
-      "name": "Seed Co International",
-      "symbol": "",
-      "price": 40.59,
-      "change_pct": 4.88
+      "name": "Old Mutual Limited",
+      "symbol": "OMU.VX",
+      "price": 90.75,
+      "change_pct": 3.71
     },
     {
-      "name": "West Prop Holdings Limited",
-      "symbol": "WPHL.VX",
-      "price": 1400.0,
-      "change_pct": 3.7
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 2.29,
+      "change_pct": 2.23
     },
     {
       "name": "Simbisa Brands Limited",
       "symbol": "SIM.VX",
-      "price": 68.25,
-      "change_pct": 3.27
+      "price": 69.21,
+      "change_pct": 1.41
     },
     {
-      "name": "Econet Infraco",
-      "symbol": "INFR.VX",
-      "price": 23.01,
-      "change_pct": 1.54
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 41.0,
+      "change_pct": 1.01
     }
   ],
   "losers": [
     {
-      "name": "Invictus Energy Limited Depository Receipts",
-      "symbol": "",
-      "price": 12.32,
-      "change_pct": -17.09
+      "name": "Axia Corporation Limited",
+      "symbol": "AXIA.VX",
+      "price": 16.58,
+      "change_pct": -9.4
     },
     {
       "name": "Caledonia Mining Corporation Plc",
       "symbol": "CMCL.VX",
-      "price": 3550.38,
-      "change_pct": -6.2
+      "price": 3385.35,
+      "change_pct": -4.65
     },
     {
-      "name": "Tsl Limited",
-      "symbol": "TSL.VX",
-      "price": 21.0,
-      "change_pct": -2.55
-    },
-    {
-      "name": "Nedbank Group Limited Depository Receipts",
-      "symbol": "",
-      "price": 1666.67,
-      "change_pct": -1.96
-    },
-    {
-      "name": "Axia Corporation Limited",
-      "symbol": "AXIA.VX",
-      "price": 18.3,
-      "change_pct": -0.71
+      "name": "Econet Infraco",
+      "symbol": "INFR.VX",
+      "price": 22.66,
+      "change_pct": -1.52
     }
   ],
   "notices": [
