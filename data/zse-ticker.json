@@ -1,64 +1,16 @@
 {
-  "fetched_at": "2026-10-19T17:27:41.462960+00:00",
+  "fetched_at": "2026-10-19T17:55:32.394844+00:00",
   "source": "https://www.african-markets.com/en/stock-markets/zse/listed-companies",
   "exchange": "ZSE",
   "currency": "ZWG",
   "tickers": [
     {
-      "company": "RioZim",
-      "sector": "Basic Materials",
-      "price": "0.95",
-      "day_change": "",
-      "ytd": "+46.15%",
-      "mcap_b": 0.11
-    },
-    {
-      "company": "Zimre Holdings",
-      "sector": "Financials",
-      "price": "0.8",
-      "day_change": "+10.73%",
-      "ytd": "-19.99%",
-      "mcap_b": 1.45
-    },
-    {
-      "company": "British American Tobacco Zimbabwe",
+      "company": "Delta Corporation",
       "sector": "Consumer Goods",
-      "price": "190",
-      "day_change": "",
-      "ytd": "+95.11%",
-      "mcap_b": 3.92
-    },
-    {
-      "company": "Hippo Valley Estates",
-      "sector": "Consumer Goods",
-      "price": "10",
-      "day_change": "",
-      "ytd": "+22.42%",
-      "mcap_b": 1.93
-    },
-    {
-      "company": "Meikles",
-      "sector": "Consumer Services",
-      "price": "2.7",
-      "day_change": "+7.98%",
-      "ytd": "-13.91%",
-      "mcap_b": 0.69
-    },
-    {
-      "company": "FBC Holdings",
-      "sector": "Financials",
-      "price": "13.45",
-      "day_change": "+0.05%",
-      "ytd": "+8.03%",
-      "mcap_b": 9.03
-    },
-    {
-      "company": "First Mutual Holdings",
-      "sector": "Financials",
-      "price": "3.516",
-      "day_change": "",
-      "ytd": "+23.37%",
-      "mcap_b": 2.42
+      "price": "32.5957",
+      "day_change": "+0.24%",
+      "ytd": "+57.45%",
+      "mcap_b": 43.93
     },
     {
       "company": "ZB Financial Holdings",
@@ -69,14 +21,6 @@
       "mcap_b": 1.22
     },
     {
-      "company": "Old Mutual",
-      "sector": "Financials",
-      "price": "81.9906",
-      "day_change": "",
-      "ytd": "-",
-      "mcap_b": 5.36
-    },
-    {
       "company": "OK Zimbabwe",
       "sector": "Consumer Services",
       "price": "0.113694",
@@ -85,12 +29,12 @@
       "mcap_b": 0.36
     },
     {
-      "company": "Delta Corporation",
-      "sector": "Consumer Goods",
-      "price": "32.5957",
-      "day_change": "+0.24%",
-      "ytd": "+57.45%",
-      "mcap_b": 43.93
+      "company": "Zimre Holdings",
+      "sector": "Financials",
+      "price": "0.8",
+      "day_change": "+10.73%",
+      "ytd": "-19.99%",
+      "mcap_b": 1.45
     },
     {
       "company": "Nampak Zimbabwe",
@@ -101,12 +45,68 @@
       "mcap_b": 0.75
     },
     {
+      "company": "FBC Holdings",
+      "sector": "Financials",
+      "price": "13.45",
+      "day_change": "+0.05%",
+      "ytd": "+8.03%",
+      "mcap_b": 9.03
+    },
+    {
+      "company": "Old Mutual",
+      "sector": "Financials",
+      "price": "81.9906",
+      "day_change": "",
+      "ytd": "-",
+      "mcap_b": 5.36
+    },
+    {
+      "company": "Hippo Valley Estates",
+      "sector": "Consumer Goods",
+      "price": "10",
+      "day_change": "",
+      "ytd": "+22.42%",
+      "mcap_b": 1.93
+    },
+    {
       "company": "CBZ Holdings",
       "sector": "Financials",
       "price": "32.7",
       "day_change": "3.77%",
       "ytd": "+184.35%",
       "mcap_b": 17.09
+    },
+    {
+      "company": "British American Tobacco Zimbabwe",
+      "sector": "Consumer Goods",
+      "price": "190",
+      "day_change": "",
+      "ytd": "+95.11%",
+      "mcap_b": 3.92
+    },
+    {
+      "company": "RioZim",
+      "sector": "Basic Materials",
+      "price": "0.95",
+      "day_change": "",
+      "ytd": "+46.15%",
+      "mcap_b": 0.11
+    },
+    {
+      "company": "Meikles",
+      "sector": "Consumer Services",
+      "price": "2.7",
+      "day_change": "+7.98%",
+      "ytd": "-13.91%",
+      "mcap_b": 0.69
+    },
+    {
+      "company": "First Mutual Holdings",
+      "sector": "Financials",
+      "price": "3.516",
+      "day_change": "",
+      "ytd": "+23.37%",
+      "mcap_b": 2.42
     },
     {
       "company": "Lafarge Cement Zimbabwe",
