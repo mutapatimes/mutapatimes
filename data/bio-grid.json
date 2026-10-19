@@ -1,38 +1,22 @@
 {
-  "fetched_at": "2026-10-19T08:25:16+00:00",
+  "fetched_at": "2026-10-19T16:08:09+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "200 people, some chained together, rescued from illegal SA rehab centre",
-      "link": "https://mutapatimes.com/articles/2026-10-19-200-people-some-chained-together-rescued-from-illegal-sa-reh",
-      "image": "https://mutapatimes.com/img/cards/news/7f08ca888649.png",
-      "pubDate": "2026-10-19T07:48:06+00:00",
+      "title": "Hospital accountant demoted for failing to detect US$19,000 fraud despite exposing theft",
+      "link": "https://mutapatimes.com/news/2026-10-19-hospital-accountant-demoted-for-failing-to-detect-us-19-000-fraud-despite-310eab",
+      "image": "https://mutapatimes.com/img/cards/news/bff4f8df284d.png",
+      "pubDate": "2026-10-19T07:41:56+00:00",
       "category": "Health"
     },
     {
       "kind": "news",
-      "title": "200 people, some chained together, rescued from illegal SA rehab centre",
-      "link": "https://mutapatimes.com/news/2026-10-19-200-people-some-chained-together-rescued-from-illegal-sa-rehab-centre-27934b",
-      "image": "https://mutapatimes.com/img/cards/news/64d70c8aa445.png",
-      "pubDate": "2026-10-19T07:48:06+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Manchester United co-owner Jim Ratcliffe gushes at ‘magnificent’ Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-10-19-manchester-united-co-owner-jim-ratcliffe-gushes-at-magnifice",
-      "image": "https://mutapatimes.com/img/cards/news/55013df41ba1.png",
-      "pubDate": "2026-10-19T06:43:19+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Manchester United co-owner Jim Ratcliffe gushes at ‘magnificent’ Zimbabwe",
-      "link": "https://mutapatimes.com/news/2026-10-19-manchester-united-co-owner-jim-ratcliffe-gushes-at-magnificent-zimbabwe-9d4746",
-      "image": "https://mutapatimes.com/img/cards/news/d533cf48c6d4.png",
-      "pubDate": "2026-10-19T06:43:19+00:00",
-      "category": "Science"
+      "title": "Joshua Nkomo sports science conference targets new direction for Zimbabwe sport",
+      "link": "https://mutapatimes.com/articles/2026-10-19-joshua-nkomo-sports-science-conference-targets-new-direction",
+      "image": "https://mutapatimes.com/img/cards/news/dc30b337ffb5.png",
+      "pubDate": "2026-10-19T03:43:38+00:00",
+      "category": "Business"
     },
     {
       "kind": "economy",
@@ -52,7 +36,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 19 Oct: Harare mainly clear · high 30° / low 17°",
+      "title": "Zim weather 19 Oct: Harare mainly clear · high 32° / low 18°",
       "link": "https://mutapatimes.com/weather?d=2026-10-19",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-19",
       "pubDate": "2026-10-18T22:00:00+00:00",
@@ -89,6 +73,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-18T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Traverze Travel — Airport Lounge Kitchen Assistant Chef",
+      "link": "https://vacancymail.co.zw/jobs/airport-lounge-kitchen-assistant-chef-69914/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a133449f4ed2.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Business Relations Adviser (Zimbabwe)",
+      "link": "https://vacancymail.co.zw/jobs/business-relations-adviser-zimbabwe-69913/",
+      "image": "https://mutapatimes.com/img/cards/jobs/04f67521dd04.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Family Driver & Household Assistant",
+      "link": "https://vacancymail.co.zw/jobs/family-driver-household-assistant-69912/",
+      "image": "https://mutapatimes.com/img/cards/jobs/06767ab1acd7.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Factory Supervisor (Textiles and Clothing)",
+      "link": "https://vacancymail.co.zw/jobs/factory-supervisor-textiles-and-clothing-69911/",
+      "image": "https://mutapatimes.com/img/cards/jobs/10880d7a1207.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mine Site Nurse Aide",
+      "link": "https://vacancymail.co.zw/jobs/mine-site-nurse-aide-69910/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0147ad2d924f.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Southsea Investments Pvt Ltd — SALES REPRESENTATIVE (Commission Based)",
+      "link": "https://vacancymail.co.zw/jobs/sales-representative-commission-based-69909/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7e15334c040f.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mine Site Nurse",
+      "link": "https://vacancymail.co.zw/jobs/mine-site-nurse-69908/",
+      "image": "https://mutapatimes.com/img/cards/jobs/34084fa02927.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Standards Association of Zimbabwe — Standards Support Officer",
+      "link": "https://vacancymail.co.zw/jobs/standards-support-officer-69907/",
+      "image": "https://mutapatimes.com/img/cards/jobs/d52b3fe24221.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Intrachem (Private) Limited — Motor Mechanics (Artisan Class 1)",
+      "link": "https://vacancymail.co.zw/jobs/motor-mechanics-artisan-class-1-69906/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9375dac05c95.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Videographer",
+      "link": "https://vacancymail.co.zw/jobs/videographer-69905/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f02094fe4395.png",
+      "pubDate": "2026-10-18T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -415,70 +479,6 @@
       "title": "Graphic Designer",
       "link": "https://vacancymail.co.zw/jobs/graphic-designer-69847/",
       "image": "https://mutapatimes.com/img/cards/jobs/8b88b36941ff.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bronte Hotel — Supply Chain intern",
-      "link": "https://vacancymail.co.zw/jobs/supply-chain-intern-69846/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0eb147635b9c.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Pool Vehicle Drivers",
-      "link": "https://vacancymail.co.zw/jobs/pool-vehicle-drivers-69845/",
-      "image": "https://mutapatimes.com/img/cards/jobs/71571ff445dd.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — DIESEL MECHANIC MANAGER",
-      "link": "https://vacancymail.co.zw/jobs/diesel-mechanic-manager-69843/",
-      "image": "https://mutapatimes.com/img/cards/jobs/899431ad83e3.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cospharm — Warehouse Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/warehouse-supervisor-69842/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cd4e2278653b.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Medicines Control Authority of Zimbabwe — Analyst – 2 Posts",
-      "link": "https://vacancymail.co.zw/jobs/analyst-2-posts-69841/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4baaa3581943.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Medicines Control Authority of Zimbabwe — Laboratory Technician – 2 Posts",
-      "link": "https://vacancymail.co.zw/jobs/laboratory-technician-2-posts-69840/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b9e761bf1f39.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Parrogate Zimbabwe (PVT) Ltd — COMMERCIAL DIRECTOR - WHEAT & MAIZE MILLING",
-      "link": "https://vacancymail.co.zw/jobs/commercial-director-wheat-maize-milling-69839/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3e5470e4b5af.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Parrogate Zimbabwe (PVT) Ltd — COMMERCIAL DIRECTOR - STOCK FEED DIVISION",
-      "link": "https://vacancymail.co.zw/jobs/commercial-director-stock-feed-division-69838/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03e3e460661d.png",
       "pubDate": "2026-10-18T22:00:00+00:00",
       "category": "Jobs"
     }
