@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-10-18T22:43:46+00:00",
+  "fetched_at": "2026-10-19T02:55:36+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Sir Jim rates Zim hospitality top-notch",
+      "link": "https://mutapatimes.com/articles/2026-10-18-sir-jim-rates-zim-hospitality-top-notch",
+      "image": "https://mutapatimes.com/img/cards/news/d0d93a59c1ff.png",
+      "pubDate": "2026-10-18T22:18:31+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Sir Jim rates Zim hospitality top-notch",
+      "link": "https://mutapatimes.com/news/2026-10-19-sir-jim-rates-zim-hospitality-top-notch-5e77e0",
+      "image": "https://mutapatimes.com/img/cards/news/065d0ee42d35.png",
+      "pubDate": "2026-10-18T22:18:31+00:00",
+      "category": "Science"
+    },
     {
       "kind": "economy",
       "title": "Zim current account 2025 Q4: $821M. Trailing four quarters: $1.9B.",
@@ -463,22 +479,6 @@
       "title": "Fence Installers",
       "link": "https://vacancymail.co.zw/jobs/fence-installers-69836/",
       "image": "https://mutapatimes.com/img/cards/jobs/3fecf67a5fa7.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Welder / Steel Fabricator",
-      "link": "https://vacancymail.co.zw/jobs/welder-steel-fabricator-69835/",
-      "image": "https://mutapatimes.com/img/cards/jobs/124b5a4c0c42.png",
-      "pubDate": "2026-10-18T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Water & Sanitation Engineer",
-      "link": "https://vacancymail.co.zw/jobs/water-sanitation-engineer-69834/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1eec66c06a69.png",
       "pubDate": "2026-10-18T22:00:00+00:00",
       "category": "Jobs"
     }
