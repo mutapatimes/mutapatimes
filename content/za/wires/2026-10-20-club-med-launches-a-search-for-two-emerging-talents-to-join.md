@@ -1,0 +1,16 @@
+---
+title: "Club Med launches a search for two emerging talents to join the cinematic residence at its new South Africa Resort"
+date: 2026-10-20T11:23:23.000Z
+author: Glamour South Africa
+category: Tech
+image: 
+summary: "Club Med launches a search for two emerging talents to join the cinematic residence at its new South Africa Resort"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxPRGxaYnBLZG9VY2pHcjYxbllpQ29mc3BiU3JteUR4Ml9ybDg1RXdaMVQ1N2JENXpnM3lmT1J0dW0tXzRyZ2ZFSjVtemFBZFFKUU1WYl9WbnNVM0ozRDhid2k5YnhXSnBwZF9DWU9Nc0lmdGo2bFVBRWZieERuZ1F6WHBDLUN1b1FhV01YVFZmbTdtWU5nazZIdjdDZTdYSDJfREJfekJneHl4Y3BIN084cGRkZU5UQ1gzNEE2RDlablhPZ3lKX2paeVd4b2taem1xTGktOXRkSlJKQmlYdjdneDdabU83a0xMdUtGQTZJWUtaVThoZ2JmSGJtZFBGa1BUSkFEYmp0Z3R2c29rS1ZtUmxBNEJzZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxPRGxaYnBLZG9VY2pHcjYxbllpQ29mc3BiU3JteUR4Ml9ybDg1RXdaMVQ1N2JENXpnM3lmT1J0dW0tXzRyZ2ZFSjVtemFBZFFKUU1WYl9WbnNVM0ozRDhid2k5YnhXSnBwZF9DWU9Nc0lmdGo2bFVBRWZieERuZ1F6WHBDLUN1b1FhV01YVFZmbTdtWU5nazZIdjdDZTdYSDJfREJfekJneHl4Y3BIN084cGRkZU5UQ1gzNEE2RDlablhPZ3lKX2paeVd4b2taem1xTGktOXRkSlJKQmlYdjdneDdabU83a0xMdUtGQTZJWUtaVThoZ2JmSGJtZFBGa1BUSkFEYmp0Z3R2c29rS1ZtUmxBNEJzZw?oc=5)
