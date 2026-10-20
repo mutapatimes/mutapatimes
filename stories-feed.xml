@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 05:00:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 10:50:31 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>‘Break trade barriers’... Zimbabwe rallies African countries @HeraldZimbabwe</title>
+      <link>https://mutapatimes.com/stories/6965e3ff3173.html</link>
+      <description>Mukudzei Chingwere, Senior Zimpapers Reporter ZIMBABWE has rallied fellow African countries within the Common Market for Eastern and Southern Africa (COMESA) bloc… via The Herald #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Mon, 19 Oct 2026 22:07:35 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/6965e3ff3173.html</guid>
+      <category>Business</category>
+      <dc:creator>The Herald</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/6965e3ff3173.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/6965e3ff3173.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/6965e3ff3173.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)</title>
       <link>https://mutapatimes.com/stories/75a4437378b0.html</link>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/610a115f7fa0.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/610a115f7fa0.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/610a115f7fa0.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zimpost Pvt Ltd — BUSINESS APPLICATIONS SUPPORT SPECIALIST</title>
-      <link>https://mutapatimes.com/stories/d1c4fd8b8689.html</link>
-      <description>The incumbent will be reporting to the Database Systems Administrator and will be responsible for the following among other duties; Test, maintain and administer applicable business systems. Identi… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 19 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/d1c4fd8b8689.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zimpost Pvt Ltd</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/d1c4fd8b8689.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d1c4fd8b8689.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/d1c4fd8b8689.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

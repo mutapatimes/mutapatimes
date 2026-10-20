@@ -1,22 +1,30 @@
 {
-  "fetched_at": "2026-10-20T03:05:42+00:00",
+  "fetched_at": "2026-10-20T10:50:31+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "China, Zimbabwe plan joint lab for traditional medicine",
-      "link": "https://mutapatimes.com/articles/2026-10-20-china-zimbabwe-plan-joint-lab-for-traditional-medicine",
-      "image": "https://mutapatimes.com/img/cards/news/c599917354bd.png",
-      "pubDate": "2026-10-20T01:44:24+00:00",
-      "category": "Health"
+      "title": "Zimbabwe’s tourist arrivals decline 17% in the first quarter",
+      "link": "https://mutapatimes.com/news/2026-10-20-zimbabwe-s-tourist-arrivals-decline-17-in-the-first-quarter-75a884",
+      "image": "https://mutapatimes.com/img/cards/news/f504bf0b7dcc.png",
+      "pubDate": "2026-10-20T09:53:29+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
       "title": "China, Zimbabwe plan joint lab for traditional medicine",
-      "link": "https://mutapatimes.com/news/2026-10-20-china-zimbabwe-plan-joint-lab-for-traditional-medicine-ec868e",
-      "image": "https://mutapatimes.com/img/cards/news/b8b86d4604cd.png",
+      "link": "https://mutapatimes.com/news/2026-10-20-china-zimbabwe-plan-joint-lab-for-traditional-medicine-188ec8",
+      "image": "https://mutapatimes.com/img/cards/news/37052bc02707.png",
       "pubDate": "2026-10-20T01:44:24+00:00",
       "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "‘Break trade barriers’... Zimbabwe rallies African countries",
+      "link": "https://mutapatimes.com/articles/2026-10-19-break-trade-barriers-zimbabwe-rallies-african-countries",
+      "image": "https://mutapatimes.com/img/cards/news/6965e3ff3173.png",
+      "pubDate": "2026-10-19T22:07:35+00:00",
+      "category": "Business"
     },
     {
       "kind": "economy",
@@ -28,7 +36,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 20 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $130.16 via Wise",
+      "title": "Zim FX snapshot 20 Oct 2026: 1 USD = 26.63 ZWG · best from UK £100 → $130.02 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-20",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-20",
       "pubDate": "2026-10-19T22:00:00+00:00",
@@ -36,7 +44,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 20 Oct: Harare mainly clear · high 32° / low 18°",
+      "title": "Zim weather 20 Oct: Harare drizzle · high 33° / low 20°",
       "link": "https://mutapatimes.com/weather?d=2026-10-20",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-20",
       "pubDate": "2026-10-19T22:00:00+00:00",
@@ -471,14 +479,6 @@
       "title": "National Fencing — Accounting Graduate Trainee",
       "link": "https://vacancymail.co.zw/jobs/accounting-graduate-trainee-69869/",
       "image": "https://mutapatimes.com/img/cards/jobs/95b67d144ffd.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimpost Pvt Ltd — STORESPERSON",
-      "link": "https://vacancymail.co.zw/jobs/storesperson-69868/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d7ada4b7a573.png",
       "pubDate": "2026-10-19T22:00:00+00:00",
       "category": "Jobs"
     }
