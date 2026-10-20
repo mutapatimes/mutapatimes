@@ -1,0 +1,16 @@
+---
+title: "Shark kills woman swimming off South Africa’s Eastern Cape, beaches closed"
+date: 2026-10-20T15:39:16.000Z
+author: FOX 8 News
+category: Tech
+image: 
+summary: "Shark kills woman swimming off South Africa’s Eastern Cape, beaches closed"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXo4SUhPTXpsd2JndlFYNkxYTkxONngxTWwyc0VnMEU0Y2NUS1drYjRWUnhMRUtubkJmMWVBdnpaQWU5TmhCYV9KbnluYUVieXl6WDVvRmVNdXhFcWRVVmhEdi1QN1BRUjdHQ2lHQXNIRXFYZGxxNlUxSWN6eDZSSUgtTU9rOVdRNUJNTG9odjM1emFUTUNUQmdhc9IBoAFBVV95cUxPWGlaSnBEX3pBbGtXRmltdGlIeWRWei1ZemMtTnZYV3lUb2xWUDBFR0EzVTd4MC1yRkg1V09nWm1DUVhvN3lDY0VkYjJ5d1hZZWxuZXUtTTBsRTFzbE5yZGU2WnFTMFhDanRNckNjNTdDZjRibWlhbVRGdjhEYUhRV2QxUDJnY19tWVd0U2c2anFndzR0TFlYRlEyb1JrY21u?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by FOX 8 News.*
+[Read original article](https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXo4SUhPTXpsd2JndlFYNkxYTkxONngxTWwyc0VnMEU0Y2NUS1drYjRWUnhMRUtubkJmMWVBdnpaQWU5TmhCYV9KbnluYUVieXl6WDVvRmVNdXhFcWRVVmhEdi1QN1BRUjdHQ2lHQXNIRXFYZGxxNlUxSWN6eDZSSUgtTU9rOVdRNUJNTG9odjM1emFUTUNUQmdhc9IBoAFBVV95cUxPWGlaSnBEX3pBbGtXRmltdGlIeWRWei1ZemMtTnZYV3lUb2xWUDBFR0EzVTd4MC1yRkg1V09nWm1DUVhvN3lDY0VkYjJ5d1hZZWxuZXUtTTBsRTFzbE5yZGU2WnFTMFhDanRNckNjNTdDZjRibWlhbVRGdjhEYUhRV2QxUDJnY19tWVd0U2c2anFndzR0TFlYRlEyb1JrY21u?oc=5)
