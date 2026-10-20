@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-10-20T10:50:31+00:00",
+  "fetched_at": "2026-10-20T16:14:22+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe's lithium and gold drive economic reform",
+      "link": "https://mutapatimes.com/articles/2026-10-20-zimbabwes-lithium-and-gold-drive-economic-reform",
+      "image": "https://mutapatimes.com/img/cards/news/5681a412f12c.png",
+      "pubDate": "2026-10-20T14:08:47+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe's lithium and gold drive economic reform",
+      "link": "https://mutapatimes.com/news/2026-10-20-zimbabwe-s-lithium-and-gold-drive-economic-reform-38aadc",
+      "image": "https://mutapatimes.com/img/cards/news/20377692cba0.png",
+      "pubDate": "2026-10-20T14:08:47+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "zse",
+      "title": "ZSE close 20 Oct 2026: All Share 478.21 (+0.91%)",
+      "link": "https://mutapatimes.com/zse?d=2026-10-20",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-20",
+      "pubDate": "2026-10-20T13:30:00+00:00",
+      "category": "Markets"
+    },
     {
       "kind": "news",
       "title": "Zimbabwe’s tourist arrivals decline 17% in the first quarter",
@@ -12,19 +36,67 @@
     },
     {
       "kind": "news",
+      "title": "Two killed, others injured in Bindura mine blasting accident",
+      "link": "https://mutapatimes.com/news/2026-10-20-two-killed-others-injured-in-bindura-mine-blasting-accident-9165ad",
+      "image": "https://mutapatimes.com/img/cards/news/6a8689fce5b4.png",
+      "pubDate": "2026-10-20T04:03:44+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Treasury mulls further cut on electronic transaction tax",
+      "link": "https://mutapatimes.com/news/2026-10-20-treasury-mulls-further-cut-on-electronic-transaction-tax-035425",
+      "image": "https://mutapatimes.com/img/cards/news/9e405d6171f7.png",
+      "pubDate": "2026-10-20T04:00:16+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "It will never end well, Go home and play with your kids: Kuda Tagwirei strongly warned!",
+      "link": "https://mutapatimes.com/news/2026-10-20-it-will-never-end-well-go-home-and-play-with-your-kids-kuda-tagwirei-strongly-8bbda6",
+      "image": "https://mutapatimes.com/img/cards/news/caad0ddf99b3.png",
+      "pubDate": "2026-10-20T04:00:08+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘Don’t Panic’: Police Assure Motorists as Electronic Traffic Crackdown Begins",
+      "link": "https://mutapatimes.com/news/2026-10-20-don-t-panic-police-assure-motorists-as-electronic-traffic-crackdown-begins-7eda87",
+      "image": "https://mutapatimes.com/img/cards/news/4856040cb7ec.png",
+      "pubDate": "2026-10-20T04:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Invictus hits new oil, gas drilling milestone",
+      "link": "https://mutapatimes.com/articles/2026-10-20-invictus-hits-new-oil-gas-drilling-milestone",
+      "image": "https://mutapatimes.com/img/cards/news/b102724c1494.png",
+      "pubDate": "2026-10-20T03:50:31+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa grants month-long amnesty for illegal firearms",
+      "link": "https://mutapatimes.com/news/2026-10-20-mnangagwa-grants-month-long-amnesty-for-illegal-firearms-4a4848",
+      "image": "https://mutapatimes.com/img/cards/news/855dd0972e0e.png",
+      "pubDate": "2026-10-20T03:48:19+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Tobacco exports clock US$986m as volume rises",
+      "link": "https://mutapatimes.com/articles/2026-10-20-tobacco-exports-clock-us986m-as-volume-rises",
+      "image": "https://mutapatimes.com/img/cards/news/9f28da56229c.png",
+      "pubDate": "2026-10-20T03:48:15+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
       "title": "China, Zimbabwe plan joint lab for traditional medicine",
       "link": "https://mutapatimes.com/news/2026-10-20-china-zimbabwe-plan-joint-lab-for-traditional-medicine-188ec8",
       "image": "https://mutapatimes.com/img/cards/news/37052bc02707.png",
       "pubDate": "2026-10-20T01:44:24+00:00",
       "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "‘Break trade barriers’... Zimbabwe rallies African countries",
-      "link": "https://mutapatimes.com/articles/2026-10-19-break-trade-barriers-zimbabwe-rallies-african-countries",
-      "image": "https://mutapatimes.com/img/cards/news/6965e3ff3173.png",
-      "pubDate": "2026-10-19T22:07:35+00:00",
-      "category": "Business"
     },
     {
       "kind": "economy",
@@ -81,6 +153,62 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-19T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "BDO Zimbabwe Chartered Accountants — Graduate Trainee I.T.",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-it-69932/",
+      "image": "https://mutapatimes.com/img/cards/jobs/dc287ef8f140.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — LECTURER : APPLIED GEOGRAPHIC INFORMATION SCIENCE AND EARTH - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-applied-geographic-information-science-and-earth-full-time-teaching-post-69931/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7a0f06e22aa4.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — LECTURER: RISK MANAGEMENT AND INSURANCE - FULL TIME POST",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-risk-management-and-insurance-full-time-post-69930/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0f74246cfee1.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — BANKING AND FINANCE (LECTURESHIP) - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/banking-and-finance-lectureship-full-time-teaching-post-69929/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7f2178d24c09.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mining Geologist",
+      "link": "https://vacancymail.co.zw/jobs/mining-geologist-69928/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2f539afaedb4.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Purchasing & Stores Clerk - BU Innovations",
+      "link": "https://vacancymail.co.zw/jobs/purchasing-stores-clerk-bu-innovations-69927/",
+      "image": "https://mutapatimes.com/img/cards/jobs/390437c66b96.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Till Operator - BU Innovation",
+      "link": "https://vacancymail.co.zw/jobs/till-operator-bu-innovation-69926/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1cf2c1e9cb3c.png",
+      "pubDate": "2026-10-19T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -351,134 +479,6 @@
       "title": "Pharmacist",
       "link": "https://vacancymail.co.zw/jobs/pharmacist-69888/",
       "image": "https://mutapatimes.com/img/cards/jobs/c009214639fe.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Green Fuel — Maintenance Fitter",
-      "link": "https://vacancymail.co.zw/jobs/maintenance-fitter-69887/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7390bc76a9d4.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Population Solutions for Health — Terms of Reference: End of Program Evaluation for PREVENT (Preventing HIV for Sustained Epidemic Control) Program in Zimbabwe",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-end-of-program-evaluation-for-prevent-preventing-hiv-for-sustained-epidemic-control-program-in-zimbabwe-69886/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b8791650b06d.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Corporate 24 Hospital Group — SECURITY GUARD (GWERU)",
-      "link": "https://vacancymail.co.zw/jobs/security-guard-gweru-69885/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c8ddf7b7b53c.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Corporate 24 Hospital Group — Sales Agent (Gweru, Kwekwe, Gwanda and Masvingo",
-      "link": "https://vacancymail.co.zw/jobs/sales-agent-gweru-kwekwe-gwanda-and-masvingo-69884/",
-      "image": "https://mutapatimes.com/img/cards/jobs/402f5fd8eaf3.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Corporate 24 Hospital Group — Sales Agent (Bulawayo)",
-      "link": "https://vacancymail.co.zw/jobs/sales-agent-bulawayo-69883/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e97a5f63a161.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-69882/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ad4c04fcbf39.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Procurement Officer",
-      "link": "https://vacancymail.co.zw/jobs/procurement-officer-69881/",
-      "image": "https://mutapatimes.com/img/cards/jobs/449a2e32857e.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Electrician",
-      "link": "https://vacancymail.co.zw/jobs/electrician-69880/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c2054696b146.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Personal Assistant To The Managing Director",
-      "link": "https://vacancymail.co.zw/jobs/personal-assistant-to-the-managing-director-69879/",
-      "image": "https://mutapatimes.com/img/cards/jobs/030aa64578bd.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Ponai Medical Centre - Avondale Urgent Care Clinic — Midwife",
-      "link": "https://vacancymail.co.zw/jobs/midwife-69878/",
-      "image": "https://mutapatimes.com/img/cards/jobs/197843cca804.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Factory Supervisor (Textiles and Clothing)",
-      "link": "https://vacancymail.co.zw/jobs/factory-supervisor-textiles-and-clothing-69877/",
-      "image": "https://mutapatimes.com/img/cards/jobs/93e2d54ee723.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "kwikbucks investments — Clerk",
-      "link": "https://vacancymail.co.zw/jobs/clerk-69873/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d1a7be99bf08.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Branch Manager : Security",
-      "link": "https://vacancymail.co.zw/jobs/branch-manager-security-69872/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dac14c6a8306.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Defcorp (Pvt) Ltd — Patrol Officer",
-      "link": "https://vacancymail.co.zw/jobs/patrol-officer-69871/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2b357342956c.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Defcorp (Pvt) Ltd — Administration & Sales Personnel",
-      "link": "https://vacancymail.co.zw/jobs/administration-sales-personnel-69870/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dc6626c769f1.png",
-      "pubDate": "2026-10-19T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Fencing — Accounting Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/accounting-graduate-trainee-69869/",
-      "image": "https://mutapatimes.com/img/cards/jobs/95b67d144ffd.png",
       "pubDate": "2026-10-19T22:00:00+00:00",
       "category": "Jobs"
     }
