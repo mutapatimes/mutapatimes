@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 10:50:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 11:33:46 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -187,18 +187,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/738fbe0eb82f.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 190,000 — Great investment (Gletwin Park, Harare North)</title>
-      <link>https://mutapatimes.com/property-landing/28e6cb1bd235.html</link>
-      <description>USD 190,000 — Gletwin Park, Harare North. 3 beds, 1 bath. Great investment. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Mon, 19 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/28e6cb1bd235.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/28e6cb1bd235.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/28e6cb1bd235.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/28e6cb1bd235.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 330,000 — Reduced for a quick sale - Modern Borrowdale Villa!!! (Borrowdale, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/4f5d87cd144b.html</link>
       <description>USD 330,000 — Borrowdale, Harare North. 4 beds, 3 baths. Reduced for a quick sale - Modern Borrowdale Villa!!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/c6994d3fe3f8.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/c6994d3fe3f8.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/c6994d3fe3f8.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 200,000 — Located In A Gated Community (Arlington, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/8cb1cd8b0381.html</link>
+      <description>USD 200,000 — Arlington, Harare South. 4 beds, 2 baths. Located In A Gated Community. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Mon, 19 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/8cb1cd8b0381.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>

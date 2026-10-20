@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-20T04:48:02.062408+00:00",
+  "fetched_at": "2026-10-20T11:33:39.682363+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -130,15 +130,6 @@
       "baths": "2"
     },
     {
-      "title": "Great investment",
-      "url": "https://www.property.co.zw/for-sale/houses-thre254354",
-      "price": "USD 190,000",
-      "location": "Gletwin Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/79/59/e6/7959e6a6-a544-495e-ad0d-a8e0e516697f_thumbnail591.webp",
-      "beds": "3",
-      "baths": "1"
-    },
-    {
       "title": "Reduced for a quick sale - Modern Borrowdale Villa!!!",
       "url": "https://www.property.co.zw/for-sale/houses-pnt255883",
       "price": "USD 330,000",
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/fe/b0/0a/feb00a17-42cf-421c-ad01-1dd936ca79a6_thumbnail591.webp",
       "beds": "7",
       "baths": "3"
+    },
+    {
+      "title": "Located In A Gated Community",
+      "url": "https://www.property.co.zw/for-sale/houses-tsk248866",
+      "price": "USD 200,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/20/52/78/2052785b-d655-4487-ad8c-b73be2fa2c69_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
     }
   ]
 }
