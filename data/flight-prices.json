@@ -18,7 +18,7 @@
         "currency": ""
       },
       "cheapest_direct": {
-        "price": 729,
+        "price": 726,
         "airline": "Vayama",
         "departure_at": "",
         "return_at": "",
@@ -151,7 +151,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 17,
+          "n": 14,
           "error": null
         },
         {
@@ -175,11 +175,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 17,
+          "n": 14,
           "error": null
         }
       ],
-      "observations": 50
+      "observations": 45
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -296,7 +296,7 @@
           "currency": ""
         },
         {
-          "price": 7469,
+          "price": 7437,
           "airline": "Flightnetwork",
           "departure_at": "",
           "return_at": "",
@@ -350,19 +350,19 @@
       "cheapest_overall": {
         "price": 1538,
         "airline": "FA",
-        "departure_at": "2026-11-17",
+        "departure_at": "2026-11-15",
         "return_at": "",
         "stops": 0,
-        "duration": 120,
+        "duration": 110,
         "currency": ""
       },
       "cheapest_direct": {
         "price": 1538,
         "airline": "FA",
-        "departure_at": "2026-11-17",
+        "departure_at": "2026-11-15",
         "return_at": "",
         "stops": 0,
-        "duration": 120,
+        "duration": 110,
         "currency": ""
       },
       "monthly": [
@@ -378,10 +378,10 @@
         {
           "price": 1538,
           "airline": "FA",
-          "departure_at": "2026-11-17",
+          "departure_at": "2026-11-15",
           "return_at": "",
           "stops": 0,
-          "duration": 120,
+          "duration": 110,
           "currency": ""
         },
         {
@@ -416,14 +416,14 @@
         {
           "price": 1538,
           "airline": "FA",
-          "departure_at": "2026-11-17",
+          "departure_at": "2026-11-15",
           "return_at": "",
           "stops": 0,
-          "duration": 120,
+          "duration": 110,
           "currency": ""
         },
         {
-          "price": 3016,
+          "price": 3003,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -441,7 +441,7 @@
           "currency": ""
         },
         {
-          "price": 3461,
+          "price": 3446,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -463,7 +463,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 6,
+          "n": 8,
           "error": null
         },
         {
@@ -481,11 +481,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 18,
+          "n": 19,
           "error": null
         }
       ],
-      "observations": 26
+      "observations": 29
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -599,7 +599,7 @@
           "currency": ""
         },
         {
-          "price": 1847,
+          "price": 1840,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -608,7 +608,7 @@
           "currency": ""
         },
         {
-          "price": 2270,
+          "price": 2260,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -626,7 +626,7 @@
           "currency": ""
         },
         {
-          "price": 3059,
+          "price": 3046,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
@@ -639,7 +639,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 6,
+          "n": 7,
           "error": null
         },
         {
@@ -661,7 +661,7 @@
           "error": null
         }
       ],
-      "observations": 13
+      "observations": 14
     },
     "toronto-to-harare": {
       "origin": "YYZ",
