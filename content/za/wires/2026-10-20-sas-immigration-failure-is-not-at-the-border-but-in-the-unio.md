@@ -1,0 +1,16 @@
+---
+title: "SA’s immigration failure is not at the border, but in the Union Buildings"
+date: 2026-10-20T22:49:44.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA’s immigration failure is not at the border, but in the Union Buildings"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxPY2hTXzNFSU1wdWVpRUhNMzBYWmVDaTUzY1UzalJrdmplRWVvY3BlSmtmNmswc085dmlwQmxrM0dacFRKSE5aUDhjMkZ1a1Nnc01rZGU0ZjBURUVlLWN2OG9PbnBTUjFhNmhnR3dsXzhYRGpBaDFGZFR3T3pEVUFBOUpxZHp1X1RJZUdhMDBic3g1d21hSkhBUXZESVZ4YTVBSU5aaWRVd3AzdXdqbDVzVVMyZXdwdV85NWdDdnZvV2s1eUJNeTNNcm5lTTl5UGtMR1g3UmRRV2RlVF9qVHBwd0ZULW5KQnVCa1JZM200Ui1kNlJBNmFKTjJkeXkwemtTOUpzWENVLWdxUnVmaHdPMXZOODFmS2QxQldfUHpLZXRDcEFVYkdlY19naU0zc29GQVJPWg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxPY2hTXzNFSU1wdWVpRUhNMzBYWmVDaTUzY1UzalJrdmplRWVvY3BlSmtmNmswc085dmlwQmxrM0dacFRKSE5aUDhjMkZ1a1Nnc01rZGU0ZjBURUVlLWN2OG9PbnBTUjFhNmhnR3dsXzhYRGpBaDFGZFR3T3pEVUFBOUpxZHp1X1RJZUdhMDBic3g1d21hSkhBUXZESVZ4YTVBSU5aaWRVd3AzdXdqbDVzVVMyZXdwdV85NWdDdnZvV2s1eUJNeTNNcm5lTTl5UGtMR1g3UmRRV2RlVF9qVHBwd0ZULW5KQnVCa1JZM200Ui1kNlJBNmFKTjJkeXkwemtTOUpzWENVLWdxUnVmaHdPMXZOODFmS2QxQldfUHpLZXRDcEFVYkdlY19naU0zc29GQVJPWg?oc=5)
