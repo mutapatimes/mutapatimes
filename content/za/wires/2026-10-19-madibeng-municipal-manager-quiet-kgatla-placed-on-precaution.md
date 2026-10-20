@@ -1,0 +1,16 @@
+---
+title: "Madibeng municipal manager Quiet Kgatla placed on precautionary suspension"
+date: 2026-10-19T15:53:13.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Madibeng municipal manager Quiet Kgatla placed on precautionary suspension"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRkpHa2xmZWt1a2NHaXR0YnQyQXBLVFhNMkJLMi1jc1htZ2pDdVFDLVJVbnZwM05lczNSX2lJdGxyLU04SXFUNUJYd3U5aXdSV3l2bGNXRmYwdkZZMWJ3aHNJek5QMXVBWENXZ1dmNUlRdDFRYzlNaXRqdkVPZkpFMld3NWlpVzIza1liNWFRLWltb1FsSFhpNUxWajR3aGdEazZ0dWg5QXJSRnBtdHlwRGtxeVFTWm9MMXdaNm11YjJRQklxSHpFYTZ3VXY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMizAFBVV95cUxQRkpHa2xmZWt1a2NHaXR0YnQyQXBLVFhNMkJLMi1jc1htZ2pDdVFDLVJVbnZwM05lczNSX2lJdGxyLU04SXFUNUJYd3U5aXdSV3l2bGNXRmYwdkZZMWJ3aHNJek5QMXVBWENXZ1dmNUlRdDFRYzlNaXRqdkVPZkpFMld3NWlpVzIza1liNWFRLWltb1FsSFhpNUxWajR3aGdEazZ0dWg5QXJSRnBtdHlwRGtxeVFTWm9MMXdaNm11YjJRQklxSHpFYTZ3VXY?oc=5)

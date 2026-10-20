@@ -1,0 +1,16 @@
+---
+title: "Jill Scott breaks South African hearts as Cape Town and Pretoria shows are cancelled"
+date: 2026-10-19T20:04:34.000Z
+author: News24
+category: Business
+image: 
+summary: "Jill Scott breaks South African hearts as Cape Town and Pretoria shows are cancelled"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcmM3cU9IMmNlNTJ4Z0RlVjZYT0ZnOUZSWmQ0aTZpaFdJTDhuTGtzRlVJZ0F6Y0dQQWw5Z3BEMG05Z2ZmeHpJU0VFc3o5SXZLYllMMkR4ZlhhX3NTSU1tc3NNU3lyVndUeXNzcDNCOXJGeEFHdmFhXzU0dVJiZDVNZ1V6SFZsUUg1QTNya0J1UlhDQmxXcjVfM25RTDhCY0M3MlJxM2xIbXppM2xLYmpUSDYydGJKckFRYmpUSzVUV3QyQXFiX3dGVHFqeldrU1VTMGF0dGdoV1NFcDQzeHFaXzl2WGpEQXJhajRN?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcmM3cU9IMmNlNTJ4Z0RlVjZYT0ZnOUZSWmQ0aTZpaFdJTDhuTGtzRlVJZ0F6Y0dQQWw5Z3BEMG05Z2ZmeHpJU0VFc3o5SXZLYllMMkR4ZlhhX3NTSU1tc3NNU3lyVndUeXNzcDNCOXJGeEFHdmFhXzU0dVJiZDVNZ1V6SFZsUUg1QTNya0J1UlhDQmxXcjVfM25RTDhCY0M3MlJxM2xIbXppM2xLYmpUSDYydGJKckFRYmpUSzVUV3QyQXFiX3dGVHFqeldrU1VTMGF0dGdoV1NFcDQzeHFaXzl2WGpEQXJhajRN?oc=5)
