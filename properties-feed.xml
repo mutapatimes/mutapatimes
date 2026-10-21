@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Oct 2026 09:31:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 11:46:48 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -91,9 +91,21 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/eaee8b4e812f.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 120,000 — Built For Family Living (Madokero, Harare West)</title>
+      <title>USD 650,000 — Greendale North double Storey house for sale (Greendale, Harare East)</title>
+      <link>https://mutapatimes.com/property-landing/7680712019a7.html</link>
+      <description>USD 650,000 — Greendale, Harare East. 4 beds, 2 baths. Greendale North double Storey house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/7680712019a7.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/7680712019a7.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/7680712019a7.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/7680712019a7.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 130,000 — Built For Family Living (Madokero, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/ad8c141eaeda.html</link>
-      <description>USD 120,000 — Madokero, Harare West. 4 beds, 3 baths. Built For Family Living. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <description>USD 130,000 — Madokero, Harare West. 4 beds, 3 baths. Built For Family Living. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mutapatimes.com/property-landing/ad8c141eaeda.html</guid>
       <category>Property</category>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/119b80ef8046.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/119b80ef8046.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/119b80ef8046.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 180,000 — Manresa Townhouse Complex on 3300 m² — Solar &amp; Flatlet (Manresa, Harare East)</title>
-      <link>https://mutapatimes.com/property-landing/f9c39d1b68a6.html</link>
-      <description>USD 180,000 — Manresa, Harare East. 3 beds, 2 baths. Manresa Townhouse Complex on 3300 m² — Solar &amp; Flatlet. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/f9c39d1b68a6.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/f9c39d1b68a6.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f9c39d1b68a6.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/f9c39d1b68a6.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
