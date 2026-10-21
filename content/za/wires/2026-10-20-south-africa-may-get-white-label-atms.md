@@ -1,0 +1,16 @@
+---
+title: "South Africa May Get White-Label ATMs"
+date: 2026-10-20T09:14:50.000Z
+author: TechFinancials
+category: Policy
+image: 
+summary: "South Africa May Get White-Label ATMs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMnpabXVyVUZEZ2MyQzJiTTFDMmQ1SjR5UTJObVhmUUlLR0NUdGhZRWV0bTFPQl9EaTFrZGZyajFiN181TENLU2pkTndmY0Fuc2ZoVHZJSnN4RUw4YXhndWJ6d2lqQncwclJkWkFDN3NocTJWa2d3bnFUaDcyTFBoUUVLc2zSAYwBQVVfeXFMTnhJalFGRnpOR2VPRy00QjFmODF6M0pPcDVkMWVMcjR1SjRqZEx1amZDVlJ4UVVYaEt3elhjOUR0a0NQbDBQZ2pSZUhhZURlR0c3U3dpZzRlM294R2psWHNBWW5NVFBlRmxqa3pXUlhXODBzempvUFRCRzdiMG5Td1hFT0ZKTGZGWHhwVi0?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TechFinancials.*
+[Read original article](https://news.google.com/rss/articles/CBMihAFBVV95cUxPMnpabXVyVUZEZ2MyQzJiTTFDMmQ1SjR5UTJObVhmUUlLR0NUdGhZRWV0bTFPQl9EaTFrZGZyajFiN181TENLU2pkTndmY0Fuc2ZoVHZJSnN4RUw4YXhndWJ6d2lqQncwclJkWkFDN3NocTJWa2d3bnFUaDcyTFBoUUVLc2zSAYwBQVVfeXFMTnhJalFGRnpOR2VPRy00QjFmODF6M0pPcDVkMWVMcjR1SjRqZEx1amZDVlJ4UVVYaEt3elhjOUR0a0NQbDBQZ2pSZUhhZURlR0c3U3dpZzRlM294R2psWHNBWW5NVFBlRmxqa3pXUlhXODBzempvUFRCRzdiMG5Td1hFT0ZKTGZGWHhwVi0?oc=5)
