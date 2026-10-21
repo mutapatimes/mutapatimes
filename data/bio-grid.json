@@ -1,237 +1,29 @@
 {
-  "fetched_at": "2026-10-21T19:05:17+00:00",
+  "fetched_at": "2026-10-21T23:53:06+00:00",
   "count": 60,
   "tiles": [
     {
-      "kind": "news",
-      "title": "Experts call for fair practices in mining sector",
-      "link": "https://mutapatimes.com/articles/2026-10-21-experts-call-for-fair-practices-in-mining-sector",
-      "image": "https://mutapatimes.com/img/cards/news/cdc6728451cf.png",
-      "pubDate": "2026-10-21T18:16:22+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Experts call for fair practices in mining sector",
-      "link": "https://mutapatimes.com/news/2026-10-21-experts-call-for-fair-practices-in-mining-sector-339bd1",
-      "image": "https://mutapatimes.com/img/cards/news/781794ff418d.png",
-      "pubDate": "2026-10-21T18:16:22+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "ANALYSIS | Southern Africa’s next drought is already on the calendar",
-      "link": "https://mutapatimes.com/articles/2026-10-21-analysis-southern-africas-next-drought-is-already-on-the-cal",
-      "image": "https://mutapatimes.com/img/cards/news/e58fdbf3120e.png",
-      "pubDate": "2026-10-21T16:21:49+00:00",
-      "category": "Environment"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe's WhatsApp hacks: Who's behind them?",
-      "link": "https://mutapatimes.com/articles/2026-10-21-zimbabwes-whatsapp-hacks-whos-behind-them",
-      "image": "https://mutapatimes.com/img/cards/news/b6b16e84540b.png",
-      "pubDate": "2026-10-21T14:40:11+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "zse",
-      "title": "ZSE close 21 Oct 2026: All Share 478.86 (+0.14%)",
-      "link": "https://mutapatimes.com/zse?d=2026-10-21",
-      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-21",
-      "pubDate": "2026-10-21T13:30:00+00:00",
-      "category": "Markets"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Faces Prolonged Fuel Cost Pressure As Oil Price Relief Unlikely Before 2028",
-      "link": "https://mutapatimes.com/articles/2026-10-21-zimbabwe-faces-prolonged-fuel-cost-pressure-as-oil-price-rel",
-      "image": "https://mutapatimes.com/img/cards/news/f81208ce27b3.png",
-      "pubDate": "2026-10-21T12:13:52+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe: Delta's Non-Alcoholic Drinks Business Contributes U.S.$473m to Economy",
-      "link": "https://mutapatimes.com/articles/2026-10-21-zimbabwe-deltas-non-alcoholic-drinks-business-contributes-us",
-      "image": "https://mutapatimes.com/img/cards/news/922bfd326390.png",
-      "pubDate": "2026-10-21T12:04:52+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Leyla Aliyeva meets with First Lady of Zimbabwe in Samarkand",
-      "link": "https://mutapatimes.com/news/2026-10-21-leyla-aliyeva-meets-with-first-lady-of-zimbabwe-in-samarkand-8f7abc",
-      "image": "https://mutapatimes.com/img/cards/news/34e61fdea1ce.png",
-      "pubDate": "2026-10-21T11:31:00+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Faces Cereal Shortfall As El Niño Fears Mount",
-      "link": "https://mutapatimes.com/articles/2026-10-21-zimbabwe-faces-cereal-shortfall-as-el-niño-fears-mount",
-      "image": "https://mutapatimes.com/img/cards/news/b16ae2c150cc.png",
-      "pubDate": "2026-10-21T07:34:52+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Four Schoolgirls Drown in Chegutu Dam",
-      "link": "https://mutapatimes.com/news/2026-10-21-four-schoolgirls-drown-in-chegutu-dam-c1ffcf",
-      "image": "https://mutapatimes.com/img/cards/news/88f91324008b.png",
-      "pubDate": "2026-10-21T06:52:07+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "EXCLUSIVE: The mine is becoming Southern Africa’s anchor power buyer",
-      "link": "https://mutapatimes.com/news/2026-10-21-exclusive-the-mine-is-becoming-southern-africa-s-anchor-power-buyer-17a520",
-      "image": "https://mutapatimes.com/img/cards/news/137e6380fc01.png",
-      "pubDate": "2026-10-21T06:37:31+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Children left behind: The silent victims of Zimbabwe’s rising intimate partner tragedies",
-      "link": "https://mutapatimes.com/news/2026-10-21-children-left-behind-the-silent-victims-of-zimbabwe-s-rising-intimate-partner-012fb6",
-      "image": "https://mutapatimes.com/img/cards/news/e7c3d9670566.png",
-      "pubDate": "2026-10-21T06:22:58+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Drug Crackdown Nets 3 839 Suspects in Four Months",
-      "link": "https://mutapatimes.com/news/2026-10-21-drug-crackdown-nets-3-839-suspects-in-four-months-1749fd",
-      "image": "https://mutapatimes.com/img/cards/news/081d661283eb.png",
-      "pubDate": "2026-10-21T06:00:28+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "The Digital Eye Is Welcome, But Did We Put The Cart Before The Horse?",
-      "link": "https://mutapatimes.com/news/2026-10-21-the-digital-eye-is-welcome-but-did-we-put-the-cart-before-the-horse-f2f3b4",
-      "image": "https://mutapatimes.com/img/cards/news/b12508e621bd.png",
-      "pubDate": "2026-10-21T05:42:09+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe’s South Africa Repatriations Decline",
-      "link": "https://mutapatimes.com/news/2026-10-21-zimbabwe-s-south-africa-repatriations-decline-d8db88",
-      "image": "https://mutapatimes.com/img/cards/news/b08a42ded932.png",
-      "pubDate": "2026-10-21T05:42:00+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Morejoy Saineti — The Zimbabwean Nursing Expert Who Devoted Her Life to Healing, Faith and Humanity",
-      "link": "https://mutapatimes.com/articles/2026-10-21-morejoy-saineti-the-zimbabwean-nursing-expert-who-devoted-he",
-      "image": "https://mutapatimes.com/img/cards/news/7821628e0884.png",
-      "pubDate": "2026-10-21T05:21:27+00:00",
-      "category": "Health"
-    },
-    {
-      "kind": "news",
-      "title": "Morejoy Saineti — The Zimbabwean Nursing Expert Who Devoted Her Life to Healing, Faith and Humanity",
-      "link": "https://mutapatimes.com/news/2026-10-21-morejoy-saineti-the-zimbabwean-nursing-expert-who-devoted-her-life-to-healing-a28e01",
-      "image": "https://mutapatimes.com/img/cards/news/49127df3f575.png",
-      "pubDate": "2026-10-21T05:21:27+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Culture and tourism move together, says Rwodzi",
-      "link": "https://mutapatimes.com/news/2026-10-21-culture-and-tourism-move-together-says-rwodzi-a717ab",
-      "image": "https://mutapatimes.com/img/cards/news/9667f1d961f1.png",
-      "pubDate": "2026-10-21T05:03:21+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "South Africa, Namibia and Zimbabwe to host 2027 Cricket World Cup",
-      "link": "https://mutapatimes.com/news/2026-10-21-south-africa-namibia-and-zimbabwe-to-host-2027-cricket-world-cup-e4bbe2",
-      "image": "https://mutapatimes.com/img/cards/news/d777708fdddb.png",
-      "pubDate": "2026-10-21T04:47:01+00:00",
-      "category": "Entertainment"
-    },
-    {
-      "kind": "news",
-      "title": "Chief Chireya arrested for murder as 2 ZRP cops raid family at night, order everyone to lie down at gunpoint, then kill 72-year-old man",
-      "link": "https://mutapatimes.com/news/2026-10-21-chief-chireya-arrested-for-murder-as-2-zrp-cops-raid-family-at-night-order-7ac81a",
-      "image": "https://mutapatimes.com/img/cards/news/e82294c1bd72.png",
-      "pubDate": "2026-10-21T04:41:57+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Police shoot dead armed robber in early morning raid as 2 Mukuru cash heist robbers get 9 years in jail",
-      "link": "https://mutapatimes.com/news/2026-10-21-police-shoot-dead-armed-robber-in-early-morning-raid-as-2-mukuru-cash-heist-de62c5",
-      "image": "https://mutapatimes.com/img/cards/news/e82f0d7f0b1c.png",
-      "pubDate": "2026-10-21T04:17:08+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Chivayo owed luxury car dealers $5 million as questions mount over estate",
-      "link": "https://mutapatimes.com/articles/2026-10-21-chivayo-owed-luxury-car-dealers-5-million-as-questions-mount",
-      "image": "https://mutapatimes.com/img/cards/news/c2f903dc1ba7.png",
-      "pubDate": "2026-10-21T04:14:26+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Teachers slam ZANU PF over resolution to influence government job recruitment",
-      "link": "https://mutapatimes.com/news/2026-10-20-teachers-slam-zanu-pf-over-resolution-to-influence-government-job-recruitment-b0df81",
-      "image": "https://mutapatimes.com/img/cards/news/9f01eb06002a.png",
-      "pubDate": "2026-10-20T23:03:09+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Petro de Luanda sack coach after Scottland FC defeat",
-      "link": "https://mutapatimes.com/news/2026-10-20-petro-de-luanda-sack-coach-after-scottland-fc-defeat-6249c0",
-      "image": "https://mutapatimes.com/img/cards/news/49504f60d551.png",
-      "pubDate": "2026-10-20T23:00:58+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Mnangagwa urges COMESA states to boost regional trade",
-      "link": "https://mutapatimes.com/news/2026-10-20-mnangagwa-urges-comesa-states-to-boost-regional-trade-4be357",
-      "image": "https://mutapatimes.com/img/cards/news/61ccc3109328.png",
-      "pubDate": "2026-10-20T23:00:36+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Taking action for nature: Zimbabwe’s road to COP17",
-      "link": "https://mutapatimes.com/news/2026-10-21-taking-action-for-nature-zimbabwe-s-road-to-cop17-c3ddc0",
-      "image": "https://mutapatimes.com/img/cards/news/e695e6801ee8.png",
-      "pubDate": "2026-10-20T22:04:01+00:00",
-      "category": "Science"
-    },
-    {
       "kind": "economy",
-      "title": "Zim goods imports (4Q trailing to 2025 Q4): $9.7B, +23.9% vs prior period.",
-      "link": "https://mutapatimes.com/economy?d=2026-10-21",
-      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-10-21",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "title": "Zim economy 2025 Q4: wholesale & retail trade produced $2.1B, 11.1% of GDP.",
+      "link": "https://mutapatimes.com/economy?d=2026-10-22",
+      "image": "https://mutapatimes.com/img/cards/economy-snapshot.png?v=2026-10-22",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Economy"
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 21 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $130.50 via Wise",
-      "link": "https://mutapatimes.com/fx?d=2026-10-21",
-      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-21",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "title": "Zim FX snapshot 22 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $130.50 via Wise",
+      "link": "https://mutapatimes.com/fx?d=2026-10-22",
+      "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-22",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "FX"
     },
     {
       "kind": "weather",
-      "title": "Zim weather 21 Oct: Harare drizzle · high 33° / low 21°",
-      "link": "https://mutapatimes.com/weather?d=2026-10-21",
-      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-21",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "title": "Zim weather 22 Oct: Harare drizzle · high 33° / low 21°",
+      "link": "https://mutapatimes.com/weather?d=2026-10-22",
+      "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-22",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Weather"
     },
     {
@@ -239,7 +31,7 @@
       "title": "Junior Social Media Assistant — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-social-media-assistant",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-social-media-assistant.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -247,7 +39,7 @@
       "title": "Junior Editorial Coordinator — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-editorial-coordinator",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-editorial-coordinator.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -255,7 +47,7 @@
       "title": "Junior Data Analyst — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#junior-data-analyst",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-junior-data-analyst.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -263,7 +55,7 @@
       "title": "Business Development Associate — The Mutapa Times (Remote · 3 days/week · 3 months)",
       "link": "https://mutapatimes.com/jobs#business-development-associate",
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Internship"
     },
     {
@@ -271,7 +63,7 @@
       "title": "Plus Five Pharmaceuticals — Packer",
       "link": "https://vacancymail.co.zw/jobs/packer-69987/",
       "image": "https://mutapatimes.com/img/cards/jobs/da2a631e9467.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -279,7 +71,7 @@
       "title": "Recoveries Officer x 2",
       "link": "https://vacancymail.co.zw/jobs/recoveries-officer-x-2-69986/",
       "image": "https://mutapatimes.com/img/cards/jobs/e5259cebc30a.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -287,7 +79,7 @@
       "title": "Loans Officer x 2",
       "link": "https://vacancymail.co.zw/jobs/loans-officer-x-2-69985/",
       "image": "https://mutapatimes.com/img/cards/jobs/452f43637451.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -295,7 +87,7 @@
       "title": "Plus Five Pharmaceuticals — Accounting graduate trainee",
       "link": "https://vacancymail.co.zw/jobs/accounting-graduate-trainee-69984/",
       "image": "https://mutapatimes.com/img/cards/jobs/d72844f39815.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -303,7 +95,7 @@
       "title": "Natwecraft Investments — SHEQ OFFICER / SITE CLERK",
       "link": "https://vacancymail.co.zw/jobs/sheq-officer-site-clerk-69983/",
       "image": "https://mutapatimes.com/img/cards/jobs/7a0536f66dfc.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -311,7 +103,7 @@
       "title": "Natwecraft Investments — PLUMBER OR DRAINLAYER",
       "link": "https://vacancymail.co.zw/jobs/plumber-or-drainlayer-69982/",
       "image": "https://mutapatimes.com/img/cards/jobs/daf8e887a07d.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -319,7 +111,7 @@
       "title": "Natwecraft Investments — CIVIL ENGINEERING TECHNICIAN-ROADS AND DRAINAGE",
       "link": "https://vacancymail.co.zw/jobs/civil-engineering-technician-roads-and-drainage-69981/",
       "image": "https://mutapatimes.com/img/cards/jobs/9c466c401934.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -327,7 +119,7 @@
       "title": "Natwecraft Investments — CIVIL ENGINEERING TECHNICIAN-SEWER AND WATER",
       "link": "https://vacancymail.co.zw/jobs/civil-engineering-technician-sewer-and-water-69980/",
       "image": "https://mutapatimes.com/img/cards/jobs/0e2d270891da.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -335,7 +127,7 @@
       "title": "Natwecraft Investments — PROJECT ADMINISTRATOR / COORDINATOR",
       "link": "https://vacancymail.co.zw/jobs/project-administrator-coordinator-69979/",
       "image": "https://mutapatimes.com/img/cards/jobs/6a53ba08aa3e.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -343,7 +135,7 @@
       "title": "Natwecraft Investments — PROJECT ENGINEER/ SITE MANAGER",
       "link": "https://vacancymail.co.zw/jobs/project-engineer-site-manager-69978/",
       "image": "https://mutapatimes.com/img/cards/jobs/e793128a824d.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -351,7 +143,7 @@
       "title": "Braford Investments — OPERATOR",
       "link": "https://vacancymail.co.zw/jobs/operator-69969/",
       "image": "https://mutapatimes.com/img/cards/jobs/06a5cc608276.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -359,7 +151,7 @@
       "title": "Request for Expressions of Interest (EOI) Individual Consultant Consultancy Services for the Review of Food Safety Legislation in Zimbabwe",
       "link": "https://vacancymail.co.zw/jobs/request-for-expressions-of-interest-eoi-individual-consultant-consultancy-services-for-the-review-of-food-safety-legislation-in-zimbabwe-69968/",
       "image": "https://mutapatimes.com/img/cards/jobs/5028957c1c1d.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -367,7 +159,7 @@
       "title": "Great Zimbabwe University- GZU — LABORATORY TECHNICIAN, FOOD SCIENCE AND TECHNOLOGY",
       "link": "https://vacancymail.co.zw/jobs/laboratory-technician-food-science-and-technology-69967/",
       "image": "https://mutapatimes.com/img/cards/jobs/f1f7b4fabc1b.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -375,7 +167,7 @@
       "title": "Great Zimbabwe University- GZU — Secretary x 8",
       "link": "https://vacancymail.co.zw/jobs/secretary-x-8-69966/",
       "image": "https://mutapatimes.com/img/cards/jobs/3609f39bffd9.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -383,7 +175,7 @@
       "title": "Great Zimbabwe University- GZU — CLIMATE SCIENCE (LECTURESHIP)",
       "link": "https://vacancymail.co.zw/jobs/climate-science-lectureship-69965/",
       "image": "https://mutapatimes.com/img/cards/jobs/fac4edc38881.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -391,7 +183,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - NDAU",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-ndau-69964/",
       "image": "https://mutapatimes.com/img/cards/jobs/cd39332eaa3b.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -399,7 +191,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - SUPPLY CHAIN MANAGEMENT (6 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-supply-chain-management-6-posts-69963/",
       "image": "https://mutapatimes.com/img/cards/jobs/86891f7b0d48.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -407,7 +199,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - BUSINESS ADMINISTRATION (10 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-business-administration-10-posts-69962/",
       "image": "https://mutapatimes.com/img/cards/jobs/9d907c072e7d.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -415,7 +207,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - STRATEGIC MANAGEMENT (5 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-strategic-management-5-posts-69961/",
       "image": "https://mutapatimes.com/img/cards/jobs/2023c26294fc.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -423,7 +215,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - ENVIRONMENTAL AND DEVELOPMENT ECONOMICS (2 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-environmental-and-development-economics-2-posts-69960/",
       "image": "https://mutapatimes.com/img/cards/jobs/ee7854863c97.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -431,7 +223,7 @@
       "title": "Great Zimbabwe University- GZU — SOCIAL WORK DEPARTMENT - STAFF DEVELOPMENT FELLOWS ( 3 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/social-work-department-staff-development-fellows-3-posts-69947/",
       "image": "https://mutapatimes.com/img/cards/jobs/1406f1bdbbe4.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -439,7 +231,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - MINING ENGINEERING ( 1 POST)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-mining-engineering-1-post-69946/",
       "image": "https://mutapatimes.com/img/cards/jobs/b54844fd359b.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -447,7 +239,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - CIVIL ENGINEERING ( 1 POST)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-civil-engineering-1-post-69945/",
       "image": "https://mutapatimes.com/img/cards/jobs/d367e593a06e.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -455,7 +247,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - IRRIGATION AND WATER MANAGEMENT (1 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-irrigation-and-water-management-1-posts-69944/",
       "image": "https://mutapatimes.com/img/cards/jobs/c97478e1aef4.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -463,7 +255,7 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - SOIL SCIENCE (1 POST)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-soil-science-1-post-69943/",
       "image": "https://mutapatimes.com/img/cards/jobs/5c00b6809901.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -471,7 +263,7 @@
       "title": "Great Zimbabwe University- GZU — BANKING AND FINANCE (LECTURESHIP) - FULL TIME TEACHING POST",
       "link": "https://vacancymail.co.zw/jobs/banking-and-finance-lectureship-full-time-teaching-post-69942/",
       "image": "https://mutapatimes.com/img/cards/jobs/55182a823db6.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     },
     {
@@ -479,7 +271,215 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - BIOLOGY (1 POST)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-biology-1-post-69941/",
       "image": "https://mutapatimes.com/img/cards/jobs/f74fadfbe741.png",
-      "pubDate": "2026-10-20T22:00:00+00:00",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — FOOD SCIENCE AND TECHNOLOGY (LECTURESHIP) (2 POSTS) FULL TIME TEACHING POSTS",
+      "link": "https://vacancymail.co.zw/jobs/food-science-and-technology-lectureship-2-posts-full-time-teaching-posts-69940/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1bcf75bca2cb.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — ENVIRONMENTAL CHEMISTRY (LECTURESHIP) (1 POST) - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/environmental-chemistry-lectureship-1-post-full-time-teaching-post-69939/",
+      "image": "https://mutapatimes.com/img/cards/jobs/61abe568f035.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — PHYSICAL CHEMISTRY (1 POST) - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/physical-chemistry-1-post-full-time-teaching-post-69938/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1ee8a424d7d1.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — GEOGRAPHY AND ENVIRONMENTAL SCIENCE (1 POST) - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/geography-and-environmental-science-1-post-full-time-teaching-post-69937/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5c32f7d132ac.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — BIOSCIENCES AND BIOTECHNOLOGY (LECTURESHIP)",
+      "link": "https://vacancymail.co.zw/jobs/biosciences-and-biotechnology-lectureship-69936/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e94b267061b3.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - CROP SCIENCE (1 POST)",
+      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-crop-science-1-post-69935/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f8cd27540d2c.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Farm Manager",
+      "link": "https://vacancymail.co.zw/jobs/farm-manager-69934/",
+      "image": "https://mutapatimes.com/img/cards/jobs/30d6ea8cf2f6.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Senior Loans Officer",
+      "link": "https://vacancymail.co.zw/jobs/senior-loans-officer-69933/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f4df141c60aa.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "BDO Zimbabwe Chartered Accountants — Graduate Trainee I.T.",
+      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-it-69932/",
+      "image": "https://mutapatimes.com/img/cards/jobs/dc287ef8f140.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — LECTURER : APPLIED GEOGRAPHIC INFORMATION SCIENCE AND EARTH - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-applied-geographic-information-science-and-earth-full-time-teaching-post-69931/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7a0f06e22aa4.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — LECTURER: RISK MANAGEMENT AND INSURANCE - FULL TIME POST",
+      "link": "https://vacancymail.co.zw/jobs/lecturer-risk-management-and-insurance-full-time-post-69930/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0f74246cfee1.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Great Zimbabwe University- GZU — BANKING AND FINANCE (LECTURESHIP) - FULL TIME TEACHING POST",
+      "link": "https://vacancymail.co.zw/jobs/banking-and-finance-lectureship-full-time-teaching-post-69929/",
+      "image": "https://mutapatimes.com/img/cards/jobs/7f2178d24c09.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mining Geologist",
+      "link": "https://vacancymail.co.zw/jobs/mining-geologist-69928/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2f539afaedb4.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Purchasing & Stores Clerk - BU Innovations",
+      "link": "https://vacancymail.co.zw/jobs/purchasing-stores-clerk-bu-innovations-69927/",
+      "image": "https://mutapatimes.com/img/cards/jobs/390437c66b96.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Bindura University of Science Education — Till Operator - BU Innovation",
+      "link": "https://vacancymail.co.zw/jobs/till-operator-bu-innovation-69926/",
+      "image": "https://mutapatimes.com/img/cards/jobs/1cf2c1e9cb3c.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Aluminium Fabrication Engineering Artisan: Alubuild Construction",
+      "link": "https://vacancymail.co.zw/jobs/aluminium-fabrication-engineering-artisan-alubuild-construction-69925/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8f15b7e5f99e.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mega Market — Assistant Welder",
+      "link": "https://vacancymail.co.zw/jobs/assistant-welder-69924/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8fa3f4b713c3.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mega Market — Junior Engineer",
+      "link": "https://vacancymail.co.zw/jobs/junior-engineer-69923/",
+      "image": "https://mutapatimes.com/img/cards/jobs/b8af0ab2a244.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — Laboratory Technician/ Scientist",
+      "link": "https://vacancymail.co.zw/jobs/laboratory-technician-scientist-69922/",
+      "image": "https://mutapatimes.com/img/cards/jobs/acd52f2ef069.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — Senior Health Information Clerk",
+      "link": "https://vacancymail.co.zw/jobs/senior-health-information-clerk-69921/",
+      "image": "https://mutapatimes.com/img/cards/jobs/676ca4621aec.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — Community Nursing Officer",
+      "link": "https://vacancymail.co.zw/jobs/community-nursing-officer-69920/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c2ec187a1fac.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — Clinical In Charge",
+      "link": "https://vacancymail.co.zw/jobs/clinical-in-charge-69919/",
+      "image": "https://mutapatimes.com/img/cards/jobs/5c68e7356dc1.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — Dispensary Assistant",
+      "link": "https://vacancymail.co.zw/jobs/dispensary-assistant-69918/",
+      "image": "https://mutapatimes.com/img/cards/jobs/da9f2da7c0ae.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — IRRIGATION GRADUATE TRAINEE",
+      "link": "https://vacancymail.co.zw/jobs/irrigation-graduate-trainee-69917/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ee5749661d2b.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mutare City Council — PRINCIPAL ACCOUNTANT (TAX AND REPORTING)",
+      "link": "https://vacancymail.co.zw/jobs/principal-accountant-tax-and-reporting-69916/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ad0c35b481c6.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Traverze Travel — Airport Lounge Kitchen Assistant Chef",
+      "link": "https://vacancymail.co.zw/jobs/airport-lounge-kitchen-assistant-chef-69914/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a133449f4ed2.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     }
   ]
