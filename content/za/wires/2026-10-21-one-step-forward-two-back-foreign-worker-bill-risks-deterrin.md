@@ -1,0 +1,16 @@
+---
+title: "One step forward, two back? Foreign worker Bill risks deterring skills that create jobs"
+date: 2026-10-21T11:15:44.000Z
+author: Daily Maverick
+category: Policy
+image: 
+summary: "One step forward, two back? Foreign worker Bill risks deterring skills that create jobs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitgJBVV95cUxOY2ladGNRVkwzT2tSS1ZXNGhxQk52R1FDZXY0aUtyUDlHcllaV2ZzZnBwMUs4bjZqOTZRWkxtdG93MjlxVjFobksxODRQQm1BX0s0WlJENkVGRUhQZzBFUi02VjBUNTQyQnctUTZQYlRpMGJSbXlrZ1Z4VmNpUU1YbVFNLVM4OV81ZFdiUllCWkRFNlJuRGI5aXBvb1pvT1VpeXdTUDhPRnB2SFE0YWVMSTliYzlDQV9DWXVRLXl1Y2dWVXh0VmQ3NHpTVWVLNElJTUhpSW8tLW85UHVBemV1ekxwclRsWC1ETk1Vc21wZUFDYmlLQjEybmc3WFhOVDNSRXJBUEhUbTZoTjNXaTZJX2Y3djNCQ09ZX05wckRyNzdKVFNwOXVZUDN4RHhzV3FyZEVmaUZB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitgJBVV95cUxOY2ladGNRVkwzT2tSS1ZXNGhxQk52R1FDZXY0aUtyUDlHcllaV2ZzZnBwMUs4bjZqOTZRWkxtdG93MjlxVjFobksxODRQQm1BX0s0WlJENkVGRUhQZzBFUi02VjBUNTQyQnctUTZQYlRpMGJSbXlrZ1Z4VmNpUU1YbVFNLVM4OV81ZFdiUllCWkRFNlJuRGI5aXBvb1pvT1VpeXdTUDhPRnB2SFE0YWVMSTliYzlDQV9DWXVRLXl1Y2dWVXh0VmQ3NHpTVWVLNElJTUhpSW8tLW85UHVBemV1ekxwclRsWC1ETk1Vc21wZUFDYmlLQjEybmc3WFhOVDNSRXJBUEhUbTZoTjNXaTZJX2Y3djNCQ09ZX05wckRyNzdKVFNwOXVZUDN4RHhzV3FyZEVmaUZB?oc=5)
