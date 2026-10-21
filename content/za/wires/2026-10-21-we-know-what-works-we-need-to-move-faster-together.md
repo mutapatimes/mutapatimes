@@ -1,0 +1,16 @@
+---
+title: "We know what works. We need to move faster, together"
+date: 2026-10-21T07:56:24.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "We know what works. We need to move faster, together"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxPUU9xTFNBSmdOV1dqQ1RkYnN5VDJsMGJRR2NxTGdEZ3lqQmhDbC1GMi1ITTg3c0tudEtVTmRhUDhVV3VnRXVwUDBYYjJkb3EtcW5VQWFCdUctN3FYVEpQX042T0lKbk5Icmd5OFBJYUF3dDVzNlJfc092RlZLTW9FSTZhb0ltWWZ0eW1Xcml4UW1mUUJEa0ZrNjhKdWtMcVpHaEhsVnZZNXYzVFNnSHBNSlRnS2NQeDk3Nkh4Y1hWZ3hPS0Mtd2ZFcGlWalk2M1NnUFVoQVk2RjlFS0d5ZEJoUlRpWk5pVlpUTUkzRUVoa1VhNEcyMFBMM0g0dHdpZktHZ3R5eHAyMW9BRVpVX0VkVFhSRGppNWkwbmtLOFc5NU1ZUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxPUU9xTFNBSmdOV1dqQ1RkYnN5VDJsMGJRR2NxTGdEZ3lqQmhDbC1GMi1ITTg3c0tudEtVTmRhUDhVV3VnRXVwUDBYYjJkb3EtcW5VQWFCdUctN3FYVEpQX042T0lKbk5Icmd5OFBJYUF3dDVzNlJfc092RlZLTW9FSTZhb0ltWWZ0eW1Xcml4UW1mUUJEa0ZrNjhKdWtMcVpHaEhsVnZZNXYzVFNnSHBNSlRnS2NQeDk3Nkh4Y1hWZ3hPS0Mtd2ZFcGlWalk2M1NnUFVoQVk2RjlFS0d5ZEJoUlRpWk5pVlpUTUkzRUVoa1VhNEcyMFBMM0g0dHdpZktHZ3R5eHAyMW9BRVpVX0VkVFhSRGppNWkwbmtLOFc5NU1ZUQ?oc=5)

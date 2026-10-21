@@ -1,0 +1,16 @@
+---
+title: "SACBM and SAPCC sign landmark partnership to strengthen business cooperation between South Africa and Mozambique"
+date: 2026-10-21T06:46:36.000Z
+author: Club of Mozambique
+category: Culture
+image: 
+summary: "SACBM and SAPCC sign landmark partnership to strengthen business cooperation between South Africa and Mozambique"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQW4xM21WU2hoSnZfOWw1dzQtU0Ywd2lWRnEtaXc3LUhWSHE5OHFFR0V3N3NlMnZqUmhhcm5fRVFqOHFMbEprYTlrVEJQa0lYQVpMQ0FKWVJtUzR6WF9MaE9zcVljNWVNMXRTLXRSNkJCNzhGbXp4UzJDM1I2Um5MYUczVmt2LVJRQVVHbUdrVFJMWXNDbEg4NXltbkxrbVpETS05dl8yaFN0c3d3bnlpdkpaaWI0MzIzTlk5LWFaak1BNW5JUk54U0hDejAxdnd2Wkh2UWhMOUVnSnR2WTF6LQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Club of Mozambique.*
+[Read original article](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQW4xM21WU2hoSnZfOWw1dzQtU0Ywd2lWRnEtaXc3LUhWSHE5OHFFR0V3N3NlMnZqUmhhcm5fRVFqOHFMbEprYTlrVEJQa0lYQVpMQ0FKWVJtUzR6WF9MaE9zcVljNWVNMXRTLXRSNkJCNzhGbXp4UzJDM1I2Um5MYUczVmt2LVJRQVVHbUdrVFJMWXNDbEg4NXltbkxrbVpETS05dl8yaFN0c3d3bnlpdkpaaWI0MzIzTlk5LWFaak1BNW5JUk54U0hDejAxdnd2Wkh2UWhMOUVnSnR2WTF6LQ?oc=5)

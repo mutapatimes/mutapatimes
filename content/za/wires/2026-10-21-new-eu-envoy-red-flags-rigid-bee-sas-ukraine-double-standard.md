@@ -1,0 +1,16 @@
+---
+title: "New EU envoy red-flags rigid BEE, SA’s Ukraine ‘double standard’, but hails ‘deeper’ ties"
+date: 2026-10-21T10:35:34.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "New EU envoy red-flags rigid BEE, SA’s Ukraine ‘double standard’, but hails ‘deeper’ ties"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQMEs4ZkpJZ0FqNHhpelNWclowM1Z6VC1ucUNma1VhNGxLOFRWUkRWNHRkemlEMXlSTm4tcnA2VUNOWFRoOGlJQ2ZaNjVfRTkxU016cGZwVm85RFh4dzBzamlRajZxRjNNOTVGNU5RUC1rb3BDRDRUdjZJYVlIMzI3cFkyZ0lsTVNrYlVuOV9MMnZLc1lSVGhnalQzR3NtRElEeXJWSlRycVNlUmVGdWUzZUh4Nmc2ZnRPUFBUdkNqOUJ0bzB6NmgyWkZVLU1RbTZnelBDa2VyWDlaZER0VzhwRUVYcXY3LXEzenZiUEk4QWJ5aFBoc2hhUThnTksySzVUQzVNWGlLU0RIbktsdG4weFVLZ2xzUlJIOEhuSXhoX3lzcWpuaGxJV3Fta2dkOU55V2pTc1oxMFo?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiuAJBVV95cUxQMEs4ZkpJZ0FqNHhpelNWclowM1Z6VC1ucUNma1VhNGxLOFRWUkRWNHRkemlEMXlSTm4tcnA2VUNOWFRoOGlJQ2ZaNjVfRTkxU016cGZwVm85RFh4dzBzamlRajZxRjNNOTVGNU5RUC1rb3BDRDRUdjZJYVlIMzI3cFkyZ0lsTVNrYlVuOV9MMnZLc1lSVGhnalQzR3NtRElEeXJWSlRycVNlUmVGdWUzZUh4Nmc2ZnRPUFBUdkNqOUJ0bzB6NmgyWkZVLU1RbTZnelBDa2VyWDlaZER0VzhwRUVYcXY3LXEzenZiUEk4QWJ5aFBoc2hhUThnTksySzVUQzVNWGlLU0RIbktsdG4weFVLZ2xzUlJIOEhuSXhoX3lzcWpuaGxJV3Fta2dkOU55V2pTc1oxMFo?oc=5)

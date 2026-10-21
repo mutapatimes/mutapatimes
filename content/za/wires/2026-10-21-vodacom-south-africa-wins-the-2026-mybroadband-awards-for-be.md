@@ -1,0 +1,16 @@
+---
+title: "Vodacom South Africa wins the 2026 MyBroadband Awards for Best 5G Network and Best Voice Network in South Africa"
+date: 2026-10-21T09:00:00.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "Vodacom South Africa wins the 2026 MyBroadband Awards for Best 5G Network and Best Voice Network in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOWUFxc3h0MTRuNl9xZ1lnMzk2emdycDF0cko2Ym1fOTRNTFBIeWt1R2J6UWhWeDRwS0phUjZfai1hU3NSVy0wNWdwY2JPbWNkWkRmeHlGd0tSaU5wTTc4YlV5emZDV1dwQmFyMzdwYUhEZndUQk1FSXFNeXJxbm5aNkNPTXRxZXl5cjBTSTN0TF9VU2E3TDNJb3JyWHNjWGdMQWhRdWgxQ2FibDlHT1k4SjlvUWhTdmtsdmUwZkJoNFRrUUhTSlB4S2FWbmNKYXR4d2J0eWV4REFTTkNSeGExY1dacVctcFM2NDRpTzdkQWIzUUdrR1JR?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxOWUFxc3h0MTRuNl9xZ1lnMzk2emdycDF0cko2Ym1fOTRNTFBIeWt1R2J6UWhWeDRwS0phUjZfai1hU3NSVy0wNWdwY2JPbWNkWkRmeHlGd0tSaU5wTTc4YlV5emZDV1dwQmFyMzdwYUhEZndUQk1FSXFNeXJxbm5aNkNPTXRxZXl5cjBTSTN0TF9VU2E3TDNJb3JyWHNjWGdMQWhRdWgxQ2FibDlHT1k4SjlvUWhTdmtsdmUwZkJoNFRrUUhTSlB4S2FWbmNKYXR4d2J0eWV4REFTTkNSeGExY1dacVctcFM2NDRpTzdkQWIzUUdrR1JR?oc=5)

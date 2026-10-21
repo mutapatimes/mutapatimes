@@ -1,0 +1,16 @@
+---
+title: "Bafana Bafana star Mbekezeli Mbokazi dominates MLS 22 Under 22 rankings as Chicago Fire defender 'leads the class with 15 senior caps'"
+date: 2026-10-21T10:57:18.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Bafana Bafana star Mbekezeli Mbokazi dominates MLS 22 Under 22 rankings as Chicago Fire defender 'leads the class with 15 senior caps'"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxNeVBZa0tFRmh6Nnk5dVVJY1dsZE5nQ19PcEg5RGJsRmxCeHRkaHhlVk1YRmU2UkhWcmpRZ2U4YU5ReWdURWp6ay1oa1lpY2NOWVNXVTNLdUFGUXRaVzBqdWJPZGN3S0tnYS1IZXpWbXNkeE5QSXZwZUUxaGR2UzUwZHVjRVpyQVVraFBhMXByb0I4Tnk0RzJ2NE00YjNFTUlVOFA1alVYS2pkZnItSXIzY3Bld2kySjRFOVZ5UXVqRHFlSkhoeEFkRlJ3ZXJZc2d1SkkwUlo5R3RQdEJFY3JKRWJncVEya1pQcFRkUlVNR2xPVE5hVG51MVgzRUpJTms1X2syOHgwbWdkLWJCTUpfMXNpWQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxNeVBZa0tFRmh6Nnk5dVVJY1dsZE5nQ19PcEg5RGJsRmxCeHRkaHhlVk1YRmU2UkhWcmpRZ2U4YU5ReWdURWp6ay1oa1lpY2NOWVNXVTNLdUFGUXRaVzBqdWJPZGN3S0tnYS1IZXpWbXNkeE5QSXZwZUUxaGR2UzUwZHVjRVpyQVVraFBhMXByb0I4Tnk0RzJ2NE00YjNFTUlVOFA1alVYS2pkZnItSXIzY3Bld2kySjRFOVZ5UXVqRHFlSkhoeEFkRlJ3ZXJZc2d1SkkwUlo5R3RQdEJFY3JKRWJncVEya1pQcFRkUlVNR2xPVE5hVG51MVgzRUpJTms1X2syOHgwbWdkLWJCTUpfMXNpWQ?oc=5)
