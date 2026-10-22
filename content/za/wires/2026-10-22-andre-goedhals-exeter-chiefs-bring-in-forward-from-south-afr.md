@@ -1,0 +1,16 @@
+---
+title: "Andre Goedhals: Exeter Chiefs bring in forward from South Africa"
+date: 2026-10-22T11:00:21.000Z
+author: BBC
+category: Business
+image: 
+summary: "Andre Goedhals: Exeter Chiefs bring in forward from South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQcmlOWk54dDhFbGtiR2tMNHVrZXJpaVdaejd5ZzRIcS0ycVVaNU1SNVZNTWt0cWVWSklYMEhjTVhSMC1HSEZZZHdTbFlJdW54aXZJOWxCUUFib2dWXzFpWHVqLXpGam1TbElIRkx1X0RRQVFRSHJKUjlnWl95U1R5WU1vLU0yZWhScTc5c2E0ekFCZG1HdGstN2ZHZ2ptcDhDQlo2R2dhX2hkanlkcFNsemxRbXppN1lRZERzVU8tRURTX0ZHcVZqdDBUbGZwSTkzQkt3UUdZcXZZZm04UW9ReWN3ZW1fcW9ycUpxWmRSSmlva1lyaFE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by BBC.*
+[Read original article](https://news.google.com/rss/articles/CBMi9gFBVV95cUxQcmlOWk54dDhFbGtiR2tMNHVrZXJpaVdaejd5ZzRIcS0ycVVaNU1SNVZNTWt0cWVWSklYMEhjTVhSMC1HSEZZZHdTbFlJdW54aXZJOWxCUUFib2dWXzFpWHVqLXpGam1TbElIRkx1X0RRQVFRSHJKUjlnWl95U1R5WU1vLU0yZWhScTc5c2E0ekFCZG1HdGstN2ZHZ2ptcDhDQlo2R2dhX2hkanlkcFNsemxRbXppN1lRZERzVU8tRURTX0ZHcVZqdDBUbGZwSTkzQkt3UUdZcXZZZm04UW9ReWN3ZW1fcW9ycUpxWmRSSmlva1lyaFE?oc=5)
