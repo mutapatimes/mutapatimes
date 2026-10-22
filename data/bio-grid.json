@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-10-22T14:18:42+00:00",
+  "fetched_at": "2026-10-22T19:01:44+00:00",
   "count": 60,
   "tiles": [
     {
-      "kind": "news",
-      "title": "Squad named for Zimbabwe Rugby test",
-      "link": "https://mutapatimes.com/articles/2026-10-22-squad-named-for-zimbabwe-rugby-test",
-      "image": "https://mutapatimes.com/img/cards/news/f6a90ef0b92c.png",
-      "pubDate": "2026-10-22T10:42:52+00:00",
-      "category": "Sport"
+      "kind": "zse",
+      "title": "ZSE close 22 Oct 2026: All Share 478.81 (-0.01%)",
+      "link": "https://mutapatimes.com/zse?d=2026-10-22",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-10-22",
+      "pubDate": "2026-10-22T13:30:00+00:00",
+      "category": "Markets"
     },
     {
       "kind": "news",
@@ -20,10 +20,74 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe’s Lithium Pivot: Promises and Pitfalls of Mining",
-      "link": "https://mutapatimes.com/articles/2026-10-22-zimbabwes-lithium-pivot-promises-and-pitfalls-of-mining",
-      "image": "https://mutapatimes.com/img/cards/news/988d9afbacea.png",
-      "pubDate": "2026-10-22T03:29:51+00:00",
+      "title": "Vumba Mountain Run Builds Momentum as Old Mutual Prepares to Welcome 1500 Participants",
+      "link": "https://mutapatimes.com/articles/2026-10-22-vumba-mountain-run-builds-momentum-as-old-mutual-prepares-to",
+      "image": "https://mutapatimes.com/img/cards/news/035dfe59dca1.png",
+      "pubDate": "2026-10-22T06:56:26+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Vumba Mountain Run Builds Momentum as Old Mutual Prepares to Welcome 1500 Participants",
+      "link": "https://mutapatimes.com/news/2026-10-22-vumba-mountain-run-builds-momentum-as-old-mutual-prepares-to-welcome-1500-30bca0",
+      "image": "https://mutapatimes.com/img/cards/news/a10a6521481b.png",
+      "pubDate": "2026-10-22T06:56:26+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "WATCH: Zimbabwe Health Minister on Ebola preparedness",
+      "link": "https://mutapatimes.com/news/2026-10-22-watch-zimbabwe-health-minister-on-ebola-preparedness-f654f0",
+      "image": "https://mutapatimes.com/img/cards/news/bdeb53033cac.png",
+      "pubDate": "2026-10-22T05:56:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Attempted murder trial of Chiwenga’s ex-wife set for fresh start",
+      "link": "https://mutapatimes.com/news/2026-10-22-attempted-murder-trial-of-chiwenga-s-ex-wife-set-for-fresh-start-4c964d",
+      "image": "https://mutapatimes.com/img/cards/news/9066a7b51d97.png",
+      "pubDate": "2026-10-22T05:51:09+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Africa Cup Masters: Over 50s Cricket Championship returns to Harare",
+      "link": "https://mutapatimes.com/articles/2026-10-22-africa-cup-masters-over-50s-cricket-championship-returns-to",
+      "image": "https://mutapatimes.com/img/cards/news/432eb2f5d4af.png",
+      "pubDate": "2026-10-22T05:41:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Africa Cup Masters: Over 50s Cricket Championship returns to Harare",
+      "link": "https://mutapatimes.com/news/2026-10-22-africa-cup-masters-over-50s-cricket-championship-returns-to-harare-081bad",
+      "image": "https://mutapatimes.com/img/cards/news/660bf4b614cf.png",
+      "pubDate": "2026-10-22T05:41:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa in-laws to stand two-day trial in November",
+      "link": "https://mutapatimes.com/news/2026-10-22-mnangagwa-in-laws-to-stand-two-day-trial-in-november-6d8348",
+      "image": "https://mutapatimes.com/img/cards/news/0b6c016f6491.png",
+      "pubDate": "2026-10-22T05:18:33+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "6 armed robbers arrested in movie-style as mbinga foils daylight cash heist by South Africa-based thieves",
+      "link": "https://mutapatimes.com/news/2026-10-22-6-armed-robbers-arrested-in-movie-style-as-mbinga-foils-daylight-cash-heist-by-742fc1",
+      "image": "https://mutapatimes.com/img/cards/news/e0ce887927ef.png",
+      "pubDate": "2026-10-22T04:49:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Kenya moves to deepen trade ties",
+      "link": "https://mutapatimes.com/articles/2026-10-22-kenya-moves-to-deepen-trade-ties",
+      "image": "https://mutapatimes.com/img/cards/news/aaf0442b0e5d.png",
+      "pubDate": "2026-10-22T04:01:57+00:00",
       "category": "Business"
     },
     {
@@ -37,26 +101,10 @@
     {
       "kind": "news",
       "title": "UK-based engineer launches Topa to help diasporans make direct payments to schools, businesses, councils in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-10-22-uk-based-engineer-launches-topa-to-help-diasporans-make-dire",
-      "image": "https://mutapatimes.com/img/cards/news/bdf897ec27bc.png",
-      "pubDate": "2026-10-22T02:00:00+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "UK-based engineer launches Topa to help diasporans make direct payments to schools, businesses, councils in Zimbabwe",
       "link": "https://mutapatimes.com/news/2026-10-22-uk-based-engineer-launches-topa-to-help-diasporans-make-direct-payments-to-2c84de",
       "image": "https://mutapatimes.com/img/cards/news/8c8025632c21.png",
       "pubDate": "2026-10-22T02:00:00+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe economy 14th largest in Africa",
-      "link": "https://mutapatimes.com/articles/2026-10-22-zimbabwe-economy-14th-largest-in-africa",
-      "image": "https://mutapatimes.com/img/cards/news/b183689bdc71.png",
-      "pubDate": "2026-10-22T01:59:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -84,35 +132,11 @@
     },
     {
       "kind": "news",
-      "title": "US needs a new approach to Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-10-22-us-needs-a-new-approach-to-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/77aecbbb0b9a.png",
-      "pubDate": "2026-10-22T00:00:00+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "He is my son – says Mapfumo on reconciling with Makore, reveals cremation wish",
-      "link": "https://mutapatimes.com/articles/2026-10-21-he-is-my-son-says-mapfumo-on-reconciling-with-makore-reveals",
-      "image": "https://mutapatimes.com/img/cards/news/885af5c25b3a.png",
-      "pubDate": "2026-10-21T23:05:54+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
       "title": "He is my son – says Mapfumo on reconciling with Makore, reveals cremation wish",
       "link": "https://mutapatimes.com/news/2026-10-21-he-is-my-son-says-mapfumo-on-reconciling-with-makore-reveals-cremation-wish-3100d9",
       "image": "https://mutapatimes.com/img/cards/news/af8be23433d4.png",
       "pubDate": "2026-10-21T23:05:54+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe’s Mushangwe extends Adelaide Strikers deal ahead of WBBL",
-      "link": "https://mutapatimes.com/articles/2026-10-21-zimbabwes-mushangwe-extends-adelaide-strikers-deal-ahead-of",
-      "image": "https://mutapatimes.com/img/cards/news/cc4accc712d8.png",
-      "pubDate": "2026-10-21T23:00:41+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -129,14 +153,6 @@
       "image": "https://mutapatimes.com/img/cards/news/7cc353724982.png",
       "pubDate": "2026-10-21T22:43:44+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "More than just a DJ: Ash T steps out from behind the decks with Ngomane EP",
-      "link": "https://mutapatimes.com/articles/2026-10-21-more-than-just-a-dj-ash-t-steps-out-from-behind-the-decks-wi",
-      "image": "https://mutapatimes.com/img/cards/news/00effb0d60bd.png",
-      "pubDate": "2026-10-21T22:30:54+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -201,6 +217,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "National Cranes & Equipments — EXPERIENCED CRANE OPERATOR",
+      "link": "https://vacancymail.co.zw/jobs/experienced-crane-operator-70009/",
+      "image": "https://mutapatimes.com/img/cards/jobs/9f10375661e2.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Part-Time Accountant",
+      "link": "https://vacancymail.co.zw/jobs/part-time-accountant-70008/",
+      "image": "https://mutapatimes.com/img/cards/jobs/37bdd3a43905.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Green Fuel — Class 1 Painter",
+      "link": "https://vacancymail.co.zw/jobs/class-1-painter-70007/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fe6dea64ddd4.png",
+      "pubDate": "2026-10-21T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - BUSINESS ADMINISTRATION (10 POSTS)",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-business-administration-10-posts-69962/",
       "image": "https://mutapatimes.com/img/cards/jobs/9d907c072e7d.png",
-      "pubDate": "2026-10-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - STRATEGIC MANAGEMENT (5 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-strategic-management-5-posts-69961/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2023c26294fc.png",
-      "pubDate": "2026-10-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - ENVIRONMENTAL AND DEVELOPMENT ECONOMICS (2 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-environmental-and-development-economics-2-posts-69960/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ee7854863c97.png",
-      "pubDate": "2026-10-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — SOCIAL WORK DEPARTMENT - STAFF DEVELOPMENT FELLOWS ( 3 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/social-work-department-staff-development-fellows-3-posts-69947/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1406f1bdbbe4.png",
-      "pubDate": "2026-10-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - MINING ENGINEERING ( 1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-mining-engineering-1-post-69946/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b54844fd359b.png",
-      "pubDate": "2026-10-21T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - CIVIL ENGINEERING ( 1 POST)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-civil-engineering-1-post-69945/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d367e593a06e.png",
       "pubDate": "2026-10-21T22:00:00+00:00",
       "category": "Jobs"
     }
