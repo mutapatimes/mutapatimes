@@ -1,0 +1,16 @@
+---
+title: "MTBPS keeps SA diplomacy afloat, but structural rot remains"
+date: 2026-10-22T21:27:25.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "MTBPS keeps SA diplomacy afloat, but structural rot remains"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitgJBVV95cUxPUE93b25vZlF4UldJd1E2ZjgydWtja2hqVkdqb3ZkNDJYaXRwZjBnY2pQMm9ERWY0ZTgtT3lZOEt0VlpDWGNKeHd6LUprOGdKQlpzN0QwYm41QlVCZHZYS1MwSFNlRHhjajhkV1hjMUc4M21ScTRGblRZalZQUV93R2MzZnlhaEdmZmltWndaYzltNXNVeVZnenFPWDVuLTlYazVEVHdHRmt3NzFHOTlpRVg5dW40UGJmZWNNSEg4QnA5aFYxdDFnWHRFR2g1MkRhV0w5Y1U3c05oRDhPR3A2NXZKLTZxazlMMXJ0X2MwdVFrTnlwSTIxSnpyMlhIYkJzb2wxOWVFb01HQ0o5c3FheXNEQmhEal9pLWluaUJSZmZ5OHZESlZweFQ2OFpaaXZIZEtyRTZ3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitgJBVV95cUxPUE93b25vZlF4UldJd1E2ZjgydWtja2hqVkdqb3ZkNDJYaXRwZjBnY2pQMm9ERWY0ZTgtT3lZOEt0VlpDWGNKeHd6LUprOGdKQlpzN0QwYm41QlVCZHZYS1MwSFNlRHhjajhkV1hjMUc4M21ScTRGblRZalZQUV93R2MzZnlhaEdmZmltWndaYzltNXNVeVZnenFPWDVuLTlYazVEVHdHRmt3NzFHOTlpRVg5dW40UGJmZWNNSEg4QnA5aFYxdDFnWHRFR2g1MkRhV0w5Y1U3c05oRDhPR3A2NXZKLTZxazlMMXJ0X2MwdVFrTnlwSTIxSnpyMlhIYkJzb2wxOWVFb01HQ0o5c3FheXNEQmhEal9pLWluaUJSZmZ5OHZESlZweFQ2OFpaaXZIZEtyRTZ3?oc=5)
