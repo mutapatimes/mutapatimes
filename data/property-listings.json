@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-22T04:41:43.482786+00:00",
+  "fetched_at": "2026-10-22T11:49:40.226242+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -139,6 +139,15 @@
       "baths": "1"
     },
     {
+      "title": "Excellent Renovation and Development Potential – Arcturus Road",
+      "url": "https://www.property.co.zw/for-sale/houses-pgp257852",
+      "price": "USD 450,000",
+      "location": "Greendale North, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/23/b7/3a/23b73a7a-c7bc-4a8d-9d61-bc9bcf51a856_thumbnail591.webp",
+      "beds": "3",
+      "baths": "1"
+    },
+    {
       "title": "Spacious 4,823m² Stand with 3-Bed Cottage in Waterford",
       "url": "https://www.property.co.zw/for-sale/houses-nwgp256117",
       "price": "USD 110,000",
@@ -184,22 +193,13 @@
       "baths": "2"
     },
     {
-      "title": "3 Bed House For Sale In Arlington",
-      "url": "https://www.property.co.zw/for-sale/townhouses-gat231309",
-      "price": "USD 300,000",
-      "location": "Arlington, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/32/89/6a/32896a80-e844-410e-b894-878a1efe0445_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Versatile Property For Sale In New Marimba",
-      "url": "https://www.property.co.zw/for-sale/houses-kwrz256456",
-      "price": "USD 160,000",
-      "location": "Marimba Park, Harare High Density",
-      "image": "https://www.property.co.zw/uploadedfiles/1e/79/b2/1e79b2b4-7a33-4ead-8b40-eba88b379f7d_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
+      "title": "8-Bed Student Accommodation + 3-Bed Cottage For Sale – Gweru, Adelaide Park Senga",
+      "url": "https://www.property.co.zw/for-sale/houses-gat257858",
+      "price": "USD 135,000",
+      "location": "Senga, Gweru",
+      "image": "https://www.property.co.zw/uploadedfiles/25/3d/5e/253d5e76-aeb4-4e03-a6c6-db6bcd7d7a50_thumbnail591.webp",
+      "beds": "8",
+      "baths": ""
     }
   ]
 }
