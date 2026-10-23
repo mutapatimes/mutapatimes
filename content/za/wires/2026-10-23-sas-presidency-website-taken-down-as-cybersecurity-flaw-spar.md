@@ -1,0 +1,16 @@
+---
+title: "SA’s Presidency website taken down as cybersecurity flaw sparks warnings across the world"
+date: 2026-10-23T17:02:11.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "SA’s Presidency website taken down as cybersecurity flaw sparks warnings across the world"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPWUxwNS1TWEhQOS1MbTlmLWFUcnpodVZSWXUxMnJVT3prbDNSVmNhNzAzM2JNSWJSYmZ5WmNkVTlUemprZkJTczFyUWlaYWlsNTZlNGJZRklJMVBZVVBvdGluTU1pVlY2cVBQX1NvdDVLT2JIbnlqckFxQ2NoWmpFa3lMa0MtY2FtNTlnTTZUMjhqZ0Z6WVVSOEVMdUl5enBjRmtHa1Y0VzBhc3dVcjJjOXFjV3VwYnZNY1hMWVB2ZnFlcnZiNTNqd0M5dVRsMll2MG9JNWVPXzFyamdvdzdxaGF6Y2VUQkFvcnA1ZUJja3VrWjNzbFlQaWZ6QjlBb0NJYjR2cFdEa1BHLVhVMUo2a2U0VmpaVUlFZFcyQzRFM0kwTXh1cWdTTzR2SWZaZUNCNlo2a0FWT0NkaVZabUlZaA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiwAJBVV95cUxPWUxwNS1TWEhQOS1MbTlmLWFUcnpodVZSWXUxMnJVT3prbDNSVmNhNzAzM2JNSWJSYmZ5WmNkVTlUemprZkJTczFyUWlaYWlsNTZlNGJZRklJMVBZVVBvdGluTU1pVlY2cVBQX1NvdDVLT2JIbnlqckFxQ2NoWmpFa3lMa0MtY2FtNTlnTTZUMjhqZ0Z6WVVSOEVMdUl5enBjRmtHa1Y0VzBhc3dVcjJjOXFjV3VwYnZNY1hMWVB2ZnFlcnZiNTNqd0M5dVRsMll2MG9JNWVPXzFyamdvdzdxaGF6Y2VUQkFvcnA1ZUJja3VrWjNzbFlQaWZ6QjlBb0NJYjR2cFdEa1BHLVhVMUo2a2U0VmpaVUlFZFcyQzRFM0kwTXh1cWdTTzR2SWZaZUNCNlo2a0FWT0NkaVZabUlZaA?oc=5)

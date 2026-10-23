@@ -1,0 +1,16 @@
+---
+title: "Weather service sounds El Niño alarm for Kruger Park and surrounds"
+date: 2026-10-23T14:56:11.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Weather service sounds El Niño alarm for Kruger Park and surrounds"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijgJBVV95cUxOa0xldVB4V0N0QUprcVR4MTdlVkIwejBNX3R6SkpyR21IblZNZmtDODl6cW5aRkxDUDhXcUdHQTR5NGxsdWdGNHp6Tko3MXhMbWVhRGNKcGhmU2NxaEdSZUItVTBXQ19LWlJyLXJjM0g1TGZSUWdIVlNoLXQxNUtkdXV0UmU3V2wzOTdqYjhNVE9BU1ZmRW1VSWNRNFVtZWpGZkNPY3dwRmJhdkotenFwZ2p0NXRBaUhMcVBiQ1FMZVZuWVJIbFlZZHJlUEpMYmRvNUpEMXQ5dEFEUDVmQlVIM1YxZG9MZFF3ME9sRmcwTUR5OFVFVmFMaFJRWXpfZnlpQkI0M1ZmeEVKdHdUNHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMijgJBVV95cUxOa0xldVB4V0N0QUprcVR4MTdlVkIwejBNX3R6SkpyR21IblZNZmtDODl6cW5aRkxDUDhXcUdHQTR5NGxsdWdGNHp6Tko3MXhMbWVhRGNKcGhmU2NxaEdSZUItVTBXQ19LWlJyLXJjM0g1TGZSUWdIVlNoLXQxNUtkdXV0UmU3V2wzOTdqYjhNVE9BU1ZmRW1VSWNRNFVtZWpGZkNPY3dwRmJhdkotenFwZ2p0NXRBaUhMcVBiQ1FMZVZuWVJIbFlZZHJlUEpMYmRvNUpEMXQ5dEFEUDVmQlVIM1YxZG9MZFF3ME9sRmcwTUR5OFVFVmFMaFJRWXpfZnlpQkI0M1ZmeEVKdHdUNHc?oc=5)
