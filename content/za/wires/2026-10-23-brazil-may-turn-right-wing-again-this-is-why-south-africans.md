@@ -1,0 +1,16 @@
+---
+title: "Brazil may turn right-wing again — this is why South Africans should care"
+date: 2026-10-23T06:56:50.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Brazil may turn right-wing again — this is why South Africans should care"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxPajNDWUd4VkNqLXg1OEJSX1pYUUdIV1dYSS1qa0w4WVFPOVFyRkpsOGZhWS1kek91YVJVMUNNZDJUZ0JycU1UcFZ5NXZUeHBFRnlUcHo5N1R2LVNXWXV1NUl2eENWbWtIWndGbWtGRTdFU08yNGdlZHRHcmVjLUFRaWpjeTZ4OUlaWlZ1NEpuOU1QRVg4WHFialBnX2Q2WkZaWjFQYzdabWVydTBabk9nLVFDZXVRZmFNYndVZ3dqSDE0cEhBZ25xUTN4LTNYY3M1Wm5kdGRSaGtaRkVMZmVybkxYNkxMSkQ0RURLRWtVY0lpTEJELTZsSnQ3QmdSU05MbTBwSW9mV05VcFNaUjM2R1I3YXBCZGNGUHdmYW1kRXI0VFhZaWNFVWdhdXRUUmlpVUxKTA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxPajNDWUd4VkNqLXg1OEJSX1pYUUdIV1dYSS1qa0w4WVFPOVFyRkpsOGZhWS1kek91YVJVMUNNZDJUZ0JycU1UcFZ5NXZUeHBFRnlUcHo5N1R2LVNXWXV1NUl2eENWbWtIWndGbWtGRTdFU08yNGdlZHRHcmVjLUFRaWpjeTZ4OUlaWlZ1NEpuOU1QRVg4WHFialBnX2Q2WkZaWjFQYzdabWVydTBabk9nLVFDZXVRZmFNYndVZ3dqSDE0cEhBZ25xUTN4LTNYY3M1Wm5kdGRSaGtaRkVMZmVybkxYNkxMSkQ0RURLRWtVY0lpTEJELTZsSnQ3QmdSU05MbTBwSW9mV05VcFNaUjM2R1I3YXBCZGNGUHdmYW1kRXI0VFhZaWNFVWdhdXRUUmlpVUxKTA?oc=5)
