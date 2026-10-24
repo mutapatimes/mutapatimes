@@ -38,27 +38,27 @@
    "rank": 3,
    "team": "Ngezi Platinum",
    "badge": "https://www.thesportsdb.com/images/media/team/badge/pi3qwe1792292598.png/tiny",
-   "played": 31,
+   "played": 32,
    "win": 14,
-   "draw": 13,
+   "draw": 14,
    "loss": 4,
-   "gf": 38,
-   "ga": 25,
+   "gf": 39,
+   "ga": 26,
    "gd": 13,
-   "points": 55
+   "points": 56
   },
   {
    "rank": 4,
    "team": "Dynamos",
    "badge": "https://www.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
-   "played": 31,
+   "played": 32,
    "win": 12,
-   "draw": 15,
+   "draw": 16,
    "loss": 4,
-   "gf": 40,
-   "ga": 23,
+   "gf": 41,
+   "ga": 24,
    "gd": 17,
-   "points": 51
+   "points": 52
   },
   {
    "rank": 5,
@@ -79,8 +79,8 @@
    "date": "2026-10-24",
    "home": "Ngezi Platinum",
    "away": "Dynamos",
-   "hs": null,
-   "as": null
+   "hs": 1,
+   "as": 1
   }
  ],
  "fixtures": [
@@ -91,5 +91,5 @@
    "away": "Bulawayo Chiefs"
   }
  ],
- "updated": "2026-10-24T16:00:12+00:00"
+ "updated": "2026-10-24T18:49:17+00:00"
 }
