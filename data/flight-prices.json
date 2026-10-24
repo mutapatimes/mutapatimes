@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23",
+  "fetched_at": "2026-10-24",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -38,11 +38,11 @@
           "currency": ""
         },
         {
-          "price": 795,
-          "airline": "ET",
-          "departure_at": "2026-12-29",
-          "return_at": "2027-01-13",
-          "stops": 1,
+          "price": 898,
+          "airline": "FR",
+          "departure_at": "2026-12-11",
+          "return_at": "2026-12-22",
+          "stops": 3,
           "duration": null,
           "currency": ""
         },
@@ -121,12 +121,12 @@
           "currency": ""
         },
         {
-          "price": 550,
-          "airline": "Farera",
+          "price": 547,
+          "airline": "Vayama",
           "departure_at": "",
           "return_at": "",
           "stops": 1,
-          "duration": 2350,
+          "duration": 1885,
           "currency": ""
         }
       ],
@@ -152,7 +152,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 16,
+          "n": 17,
           "error": null
         },
         {
@@ -176,7 +176,7 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 16,
+          "n": 17,
           "error": null
         }
       ],
@@ -306,7 +306,7 @@
           "currency": ""
         },
         {
-          "price": 7288,
+          "price": 7328,
           "airline": "Gotogate",
           "departure_at": "",
           "return_at": "",
@@ -315,7 +315,7 @@
           "currency": ""
         },
         {
-          "price": 7395,
+          "price": 7435,
           "airline": "Flightnetwork",
           "departure_at": "",
           "return_at": "",
@@ -433,7 +433,7 @@
           "currency": ""
         },
         {
-          "price": 3232,
+          "price": 3250,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -451,7 +451,7 @@
           "currency": ""
         },
         {
-          "price": 3795,
+          "price": 3816,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -464,7 +464,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 9,
+          "n": 8,
           "error": null
         },
         {
@@ -482,11 +482,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 18,
+          "n": 17,
           "error": null
         }
       ],
-      "observations": 31
+      "observations": 29
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -571,21 +571,12 @@
           "currency": ""
         },
         {
-          "price": 1197,
+          "price": 1226,
           "airline": "KQ",
-          "departure_at": "2026-11-20",
+          "departure_at": "2026-11-18",
           "return_at": "",
           "stops": 1,
-          "duration": 1815,
-          "currency": ""
-        },
-        {
-          "price": 1202,
-          "airline": "KQ",
-          "departure_at": "2026-12-04",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1815,
+          "duration": 1810,
           "currency": ""
         },
         {
@@ -595,6 +586,15 @@
           "return_at": "",
           "stops": 1,
           "duration": 635,
+          "currency": ""
+        },
+        {
+          "price": 1308,
+          "airline": "KQ",
+          "departure_at": "2027-03-06",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1815,
           "currency": ""
         }
       ],
@@ -618,7 +618,7 @@
           "currency": ""
         },
         {
-          "price": 2259,
+          "price": 2256,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -627,7 +627,7 @@
           "currency": ""
         },
         {
-          "price": 2497,
+          "price": 2493,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -636,7 +636,7 @@
           "currency": ""
         },
         {
-          "price": 3044,
+          "price": 3040,
           "airline": "City.Travel",
           "departure_at": "",
           "return_at": "",
@@ -649,7 +649,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 5,
+          "n": 7,
           "error": null
         },
         {
@@ -671,7 +671,7 @@
           "error": null
         }
       ],
-      "observations": 12
+      "observations": 14
     },
     "toronto-to-harare": {
       "origin": "YYZ",
