@@ -1,30 +1,38 @@
 {
-  "fetched_at": "2026-10-24T07:59:38+00:00",
+  "fetched_at": "2026-10-24T13:04:01+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe face Namibia as international rugby returns to Harare after two decades",
-      "link": "https://mutapatimes.com/articles/2026-10-24-zimbabwe-face-namibia-as-international-rugby-returns-to-hara",
-      "image": "https://mutapatimes.com/img/cards/news/65322279c807.png",
-      "pubDate": "2026-10-24T06:53:18+00:00",
+      "title": "African Union Calls for Immediate Lifting of Sanctions on Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-10-24-african-union-calls-for-immediate-lifting-of-sanctions-on-zi",
+      "image": "https://mutapatimes.com/img/cards/news/679c0215925e.png",
+      "pubDate": "2026-10-24T12:03:02+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe win on Fifa U15 World Cup debut",
+      "link": "https://mutapatimes.com/articles/2026-10-24-zimbabwe-win-on-fifa-u15-world-cup-debut",
+      "image": "https://mutapatimes.com/img/cards/news/3246acc553f6.png",
+      "pubDate": "2026-10-24T08:35:48+00:00",
       "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe win on Fifa U15 World Cup debut",
+      "link": "https://mutapatimes.com/news/2026-10-24-zimbabwe-win-on-fifa-u15-world-cup-debut-bc5aa3",
+      "image": "https://mutapatimes.com/img/cards/news/2d69dce50b0e.png",
+      "pubDate": "2026-10-24T08:35:48+00:00",
+      "category": "Sports"
     },
     {
       "kind": "news",
       "title": "Zimbabwe face Namibia as international rugby returns to Harare after two decades",
       "link": "https://mutapatimes.com/news/2026-10-24-zimbabwe-face-namibia-as-international-rugby-returns-to-harare-after-two-decades-d2c45b",
       "image": "https://mutapatimes.com/img/cards/news/deec6826d16e.png",
-      "pubDate": "2026-10-24T06:53:18+00:00",
+      "pubDate": "2026-10-24T06:54:09+00:00",
       "category": "Sports"
-    },
-    {
-      "kind": "news",
-      "title": "She drove 60km on Christmas Day just in case a patient needed help",
-      "link": "https://mutapatimes.com/articles/2026-10-24-she-drove-60km-on-christmas-day-just-in-case-a-patient-neede",
-      "image": "https://mutapatimes.com/img/cards/news/493533107f29.png",
-      "pubDate": "2026-10-24T06:31:41+00:00",
-      "category": "Health"
     },
     {
       "kind": "news",
@@ -36,11 +44,19 @@
     },
     {
       "kind": "news",
-      "title": "African Union renews call for unconditional lifting of Zimbabwe sanctions",
-      "link": "https://mutapatimes.com/articles/2026-10-24-african-union-renews-call-for-unconditional-lifting-of-zimba",
-      "image": "https://mutapatimes.com/img/cards/news/8483b714b80b.png",
-      "pubDate": "2026-10-24T04:37:40+00:00",
-      "category": "Policy"
+      "title": "Wicknell’s Generosity on Credit: When the Gift Arrives Before the Money…",
+      "link": "https://mutapatimes.com/articles/2026-10-24-wicknells-generosity-on-credit-when-the-gift-arrives-before",
+      "image": "https://mutapatimes.com/img/cards/news/6239da3c295d.png",
+      "pubDate": "2026-10-24T01:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Wicknell’s Generosity on Credit: When the Gift Arrives Before the Money…",
+      "link": "https://mutapatimes.com/news/2026-10-24-wicknell-s-generosity-on-credit-when-the-gift-arrives-before-the-money-21f205",
+      "image": "https://mutapatimes.com/img/cards/news/f8c6e8aae6f7.png",
+      "pubDate": "2026-10-24T01:00:00+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -60,7 +76,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 24 Oct: Harare light showers · high 34° / low 20°",
+      "title": "Zim weather 24 Oct: Harare drizzle · high 30° / low 18°",
       "link": "https://mutapatimes.com/weather?d=2026-10-24",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-24",
       "pubDate": "2026-10-23T22:00:00+00:00",
@@ -97,6 +113,30 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-10-23T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "EXECUTIVE ASSISTANT – OFFICE OF THE EXECUTIVE SECRETARY",
+      "link": "https://vacancymail.co.zw/jobs/executive-assistant-office-of-the-executive-secretary-70027/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0bebf4d9ffbc.png",
+      "pubDate": "2026-10-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Office Assistant",
+      "link": "https://vacancymail.co.zw/jobs/office-assistant-70026/",
+      "image": "https://mutapatimes.com/img/cards/jobs/434e2a04ad03.png",
+      "pubDate": "2026-10-23T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Manager - Legal Advice",
+      "link": "https://vacancymail.co.zw/jobs/manager-legal-advice-70025/",
+      "image": "https://mutapatimes.com/img/cards/jobs/46ff0c4ae20e.png",
+      "pubDate": "2026-10-23T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -439,46 +479,6 @@
       "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - NDAU",
       "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-ndau-69964/",
       "image": "https://mutapatimes.com/img/cards/jobs/cd39332eaa3b.png",
-      "pubDate": "2026-10-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - SUPPLY CHAIN MANAGEMENT (6 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-supply-chain-management-6-posts-69963/",
-      "image": "https://mutapatimes.com/img/cards/jobs/86891f7b0d48.png",
-      "pubDate": "2026-10-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - BUSINESS ADMINISTRATION (10 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-business-administration-10-posts-69962/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9d907c072e7d.png",
-      "pubDate": "2026-10-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - STRATEGIC MANAGEMENT (5 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-strategic-management-5-posts-69961/",
-      "image": "https://mutapatimes.com/img/cards/jobs/2023c26294fc.png",
-      "pubDate": "2026-10-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — PART TIME TEACHING POSTS - ENVIRONMENTAL AND DEVELOPMENT ECONOMICS (2 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/part-time-teaching-posts-environmental-and-development-economics-2-posts-69960/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ee7854863c97.png",
-      "pubDate": "2026-10-23T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Great Zimbabwe University- GZU — SOCIAL WORK DEPARTMENT - STAFF DEVELOPMENT FELLOWS ( 3 POSTS)",
-      "link": "https://vacancymail.co.zw/jobs/social-work-department-staff-development-fellows-3-posts-69947/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1406f1bdbbe4.png",
       "pubDate": "2026-10-23T22:00:00+00:00",
       "category": "Jobs"
     }
