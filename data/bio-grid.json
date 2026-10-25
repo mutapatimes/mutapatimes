@@ -1,22 +1,78 @@
 {
-  "fetched_at": "2026-10-25T08:03:22+00:00",
+  "fetched_at": "2026-10-25T13:31:47+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Sanctions continue to hurt ordinary Zimbabweans, says Chitepo School official",
-      "link": "https://mutapatimes.com/articles/2026-10-24-sanctions-continue-to-hurt-ordinary-zimbabweans-says-chitepo",
-      "image": "https://mutapatimes.com/img/cards/news/8370d944d4c1.png",
-      "pubDate": "2026-10-24T22:34:24+00:00",
-      "category": "Policy"
+      "title": "She drove 60km on Christmas Day just in case a patient needed help",
+      "link": "https://mutapatimes.com/news/2026-10-25-she-drove-60km-on-christmas-day-just-in-case-a-patient-needed-help-ff1099",
+      "image": "https://mutapatimes.com/img/cards/news/2b43bbd93c74.png",
+      "pubDate": "2026-10-25T09:17:44+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Cimas honours Zim’s first female doctor",
+      "link": "https://mutapatimes.com/articles/2026-10-24-cimas-honours-zims-first-female-doctor",
+      "image": "https://mutapatimes.com/img/cards/news/93aa3ebac0fc.png",
+      "pubDate": "2026-10-24T23:58:00+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zinara secures US$400million for strategic highways",
+      "link": "https://mutapatimes.com/articles/2026-10-24-zinara-secures-us400million-for-strategic-highways",
+      "image": "https://mutapatimes.com/img/cards/news/d3fab3579805.png",
+      "pubDate": "2026-10-24T22:32:29+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Illegal gas outlets flood Bulawayo suburbs... put properties at increased risk of fire",
+      "link": "https://mutapatimes.com/articles/2026-10-24-illegal-gas-outlets-flood-bulawayo-suburbs-put-properties-at",
+      "image": "https://mutapatimes.com/img/cards/news/e6a0805e3248.png",
+      "pubDate": "2026-10-24T22:31:14+00:00",
+      "category": "Environment"
+    },
+    {
+      "kind": "news",
+      "title": "Illegal gas outlets flood Bulawayo suburbs . . . put properties at increased risk of fire",
+      "link": "https://mutapatimes.com/news/2026-10-24-illegal-gas-outlets-flood-bulawayo-suburbs-put-properties-at-increased-risk-of-5a2ed6",
+      "image": "https://mutapatimes.com/img/cards/news/fce2475b9c4a.png",
+      "pubDate": "2026-10-24T22:31:14+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "SABLES WIN IN THRILLER...Zimbabwe continue dominance over Namibia",
+      "link": "https://mutapatimes.com/articles/2026-10-24-sables-win-in-thrillerzimbabwe-continue-dominance-over-namib",
+      "image": "https://mutapatimes.com/img/cards/news/9124cdee3f52.png",
+      "pubDate": "2026-10-24T22:30:48+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
       "title": "‘We’re in an era of irreversible progress and self-reliance’",
-      "link": "https://mutapatimes.com/articles/2026-10-24-were-in-an-era-of-irreversible-progress-and-self-reliance",
-      "image": "https://mutapatimes.com/img/cards/news/729bf0a0761a.png",
+      "link": "https://mutapatimes.com/news/2026-10-24-we-re-in-an-era-of-irreversible-progress-and-self-reliance-3bd8ed",
+      "image": "https://mutapatimes.com/img/cards/news/3560a6e11a3a.png",
       "pubDate": "2026-10-24T22:20:02+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘Sanctions failed to blunt our ambitions’",
+      "link": "https://mutapatimes.com/articles/2026-10-24-sanctions-failed-to-blunt-our-ambitions",
+      "image": "https://mutapatimes.com/img/cards/news/0aba52a80482.png",
+      "pubDate": "2026-10-24T22:19:58+00:00",
       "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "‘Sanctions failed to blunt our ambitions’",
+      "link": "https://mutapatimes.com/news/2026-10-24-sanctions-failed-to-blunt-our-ambitions-63e725",
+      "image": "https://mutapatimes.com/img/cards/news/831a2d9e9ca3.png",
+      "pubDate": "2026-10-24T22:19:58+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -36,7 +92,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 25 Oct: Harare drizzle · high 30° / low 18°",
+      "title": "Zim weather 25 Oct: Harare overcast · high 29° / low 16°",
       "link": "https://mutapatimes.com/weather?d=2026-10-25",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-25",
       "pubDate": "2026-10-24T22:00:00+00:00",
@@ -423,62 +479,6 @@
       "title": "Natwecraft Investments — SHEQ OFFICER / SITE CLERK",
       "link": "https://vacancymail.co.zw/jobs/sheq-officer-site-clerk-69983/",
       "image": "https://mutapatimes.com/img/cards/jobs/7a0536f66dfc.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Natwecraft Investments — PLUMBER OR DRAINLAYER",
-      "link": "https://vacancymail.co.zw/jobs/plumber-or-drainlayer-69982/",
-      "image": "https://mutapatimes.com/img/cards/jobs/daf8e887a07d.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Natwecraft Investments — CIVIL ENGINEERING TECHNICIAN-ROADS AND DRAINAGE",
-      "link": "https://vacancymail.co.zw/jobs/civil-engineering-technician-roads-and-drainage-69981/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9c466c401934.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Natwecraft Investments — CIVIL ENGINEERING TECHNICIAN-SEWER AND WATER",
-      "link": "https://vacancymail.co.zw/jobs/civil-engineering-technician-sewer-and-water-69980/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0e2d270891da.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Natwecraft Investments — PROJECT ADMINISTRATOR / COORDINATOR",
-      "link": "https://vacancymail.co.zw/jobs/project-administrator-coordinator-69979/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a53ba08aa3e.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Natwecraft Investments — PROJECT ENGINEER/ SITE MANAGER",
-      "link": "https://vacancymail.co.zw/jobs/project-engineer-site-manager-69978/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e793128a824d.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Braford Investments — OPERATOR",
-      "link": "https://vacancymail.co.zw/jobs/operator-69969/",
-      "image": "https://mutapatimes.com/img/cards/jobs/06a5cc608276.png",
-      "pubDate": "2026-10-24T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Request for Expressions of Interest (EOI) Individual Consultant Consultancy Services for the Review of Food Safety Legislation in Zimbabwe",
-      "link": "https://vacancymail.co.zw/jobs/request-for-expressions-of-interest-eoi-individual-consultant-consultancy-services-for-the-review-of-food-safety-legislation-in-zimbabwe-69968/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5028957c1c1d.png",
       "pubDate": "2026-10-24T22:00:00+00:00",
       "category": "Jobs"
     }
