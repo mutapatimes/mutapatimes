@@ -1,0 +1,16 @@
+---
+title: "Baobab trees seized in Durban ship warehouse probe"
+date: 2026-10-25T10:04:11.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Baobab trees seized in Durban ship warehouse probe"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNLVRjak9HNWN2anpnOGsweDliamphTExSU3hCSEF4djloeVZETWRQRE5ib1pYSGNScHI2eE00eDN6TnBKMXNSd0hoS0xqVndMRDhwRldzVEl2MG9kUEk4cFc4ejZtRlBPZm14a1BGWk5YN2FEcVNzQTBuRGZxYTdkSnJ6WmtqRHV5VzRoRmQ4SWtPWGFSUXBNdGhfeV9xaThuOGdid2dwMzZ3ampWeFJMUWhaSGgtdE1FRVhjV01HakdfdjZmUXllMFhodVo2dlg1YUtJY2xiTm92X3hZRV9aMXFHVTdJT2VVMi1pZF81Zw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxNLVRjak9HNWN2anpnOGsweDliamphTExSU3hCSEF4djloeVZETWRQRE5ib1pYSGNScHI2eE00eDN6TnBKMXNSd0hoS0xqVndMRDhwRldzVEl2MG9kUEk4cFc4ejZtRlBPZm14a1BGWk5YN2FEcVNzQTBuRGZxYTdkSnJ6WmtqRHV5VzRoRmQ4SWtPWGFSUXBNdGhfeV9xaThuOGdid2dwMzZ3ampWeFJMUWhaSGgtdE1FRVhjV01HakdfdjZmUXllMFhodVo2dlg1YUtJY2xiTm92X3hZRV9aMXFHVTdJT2VVMi1pZF81Zw?oc=5)

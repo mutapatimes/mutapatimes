@@ -1,0 +1,16 @@
+---
+title: "Gayton Mckenzie’s gift of the gab is both his blessing and his curse"
+date: 2026-10-25T09:09:11.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Gayton Mckenzie’s gift of the gab is both his blessing and his curse"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinwJBVV95cUxOZXh6c1F0V0h0V1UxZTMxM181UjZybnpjb0VaYlNJbDdaS0Vma2dKZUJrVEdPa1ltOEZwbjB6TWF5QnI1OWotUG85V2xvMlJTZl9ZNks2cTZ1U2llWFp0aWtiR25JZW52dEthSXJfWThya2xWLXhMYWJVSE9yVnRWT0U4TUM1LUZYdjM4Rmx3SXV1cGQtc3d5ZUxkbGgwelpBUUFXQlRLVUFRWGI3WldqaDRtajVUVWJKZ0ZhMnJocTg2REtJTnh1YjlsTHAyUTB5WFlpQ0JMN3FJcEY4cC1KdmxpRDUta2RHM2h0SmJ5czV0cUxoR1RGdkNPSjFuLV9VTFhGaWhyUGk2cHVoNGFsdXRYa0VzMEl6SVdDMEF3aw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinwJBVV95cUxOZXh6c1F0V0h0V1UxZTMxM181UjZybnpjb0VaYlNJbDdaS0Vma2dKZUJrVEdPa1ltOEZwbjB6TWF5QnI1OWotUG85V2xvMlJTZl9ZNks2cTZ1U2llWFp0aWtiR25JZW52dEthSXJfWThya2xWLXhMYWJVSE9yVnRWT0U4TUM1LUZYdjM4Rmx3SXV1cGQtc3d5ZUxkbGgwelpBUUFXQlRLVUFRWGI3WldqaDRtajVUVWJKZ0ZhMnJocTg2REtJTnh1YjlsTHAyUTB5WFlpQ0JMN3FJcEY4cC1KdmxpRDUta2RHM2h0SmJ5czV0cUxoR1RGdkNPSjFuLV9VTFhGaWhyUGk2cHVoNGFsdXRYa0VzMEl6SVdDMEF3aw?oc=5)
