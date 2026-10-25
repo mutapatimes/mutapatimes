@@ -1,0 +1,16 @@
+---
+title: "Settling up: The state of digital payments in South Africa"
+date: 2026-10-25T20:09:15.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Settling up: The state of digital payments in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilwJBVV95cUxPc0JCWGFhLVVpNi1MOWxUSDVqajJJU0ZTcFl0cDRQT3NaOThxSVlKemJ5SEZzc3hUclBNZnVLSFY5VkFFVVNzWFhyTFd4M1JhSVVvdno5R0VuLUNPVFZZQWlGY1ZGUlZiWWtJUVROeWFTaWFXYXhveFMxLXFxcG5tUS01M2R4cHRJUGkydU1hOFFVZERVVmgzc2FhQXd1a2hodkZIY043ZTRGamdWNVJUVHltNTlpQWl0cWVuaG9oTjdxcEVFd1lZaDJHT1NsRzUxNWY4WWl5RWdJamFoYzUwb2JGdUpiT1lMUkoxU3lYVHlKT19HTTlERzlQeV9lZW8zMWVpVzFjQkU5enc1TmJmelRfWTlHOWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilwJBVV95cUxPc0JCWGFhLVVpNi1MOWxUSDVqajJJU0ZTcFl0cDRQT3NaOThxSVlKemJ5SEZzc3hUclBNZnVLSFY5VkFFVVNzWFhyTFd4M1JhSVVvdno5R0VuLUNPVFZZQWlGY1ZGUlZiWWtJUVROeWFTaWFXYXhveFMxLXFxcG5tUS01M2R4cHRJUGkydU1hOFFVZERVVmgzc2FhQXd1a2hodkZIY043ZTRGamdWNVJUVHltNTlpQWl0cWVuaG9oTjdxcEVFd1lZaDJHT1NsRzUxNWY4WWl5RWdJamFoYzUwb2JGdUpiT1lMUkoxU3lYVHlKT19HTTlERzlQeV9lZW8zMWVpVzFjQkU5enc1TmJmelRfWTlHOWc?oc=5)

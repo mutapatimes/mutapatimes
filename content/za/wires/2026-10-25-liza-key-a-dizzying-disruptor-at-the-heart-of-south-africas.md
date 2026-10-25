@@ -1,0 +1,16 @@
+---
+title: "Liza Key — a ‘dizzying disruptor’ at the heart of South Africa’s film scene"
+date: 2026-10-25T18:59:15.000Z
+author: Daily Maverick
+category: Culture
+image: 
+summary: "Liza Key — a ‘dizzying disruptor’ at the heart of South Africa’s film scene"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPbGswcm9zMXp4YU5ZZmxsYzB1c1M5dmswRmZIMnE5eTZvUXJLRkp6c0txT3hMNG03VF9RanU4VVQybjhvQ3k3V3Q3VXVxUEphc1BDR1d4MldxZ1NIVzJaSnZ6YWJqRTZ3M0xSY1JETHhuczhrR3hGZnZuakhfcTdGdzRkR2Z6NVYxU1lCUkNpNUw1ajBpZUFNM2pUUWRsdTA0Sm9CYXRpNUtxWVJya1JWVjdLZlp0czVDSGEzMGMtWlZWd19aaDJCM3RiQUw3RVZ5amVmMFcxRUh6Q09NZDF4eld1LW4xYkxtUEdDMmxWOGNSS0EzT1RLczk2T0luQktlUHdiS3VsYWdTUzNvQzV6Vm5yYW1rcDgwVDAxSXJvbVNlUGljZlJqUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqAJBVV95cUxPbGswcm9zMXp4YU5ZZmxsYzB1c1M5dmswRmZIMnE5eTZvUXJLRkp6c0txT3hMNG03VF9RanU4VVQybjhvQ3k3V3Q3VXVxUEphc1BDR1d4MldxZ1NIVzJaSnZ6YWJqRTZ3M0xSY1JETHhuczhrR3hGZnZuakhfcTdGdzRkR2Z6NVYxU1lCUkNpNUw1ajBpZUFNM2pUUWRsdTA0Sm9CYXRpNUtxWVJya1JWVjdLZlp0czVDSGEzMGMtWlZWd19aaDJCM3RiQUw3RVZ5amVmMFcxRUh6Q09NZDF4eld1LW4xYkxtUEdDMmxWOGNSS0EzT1RLczk2T0luQktlUHdiS3VsYWdTUzNvQzV6Vm5yYW1rcDgwVDAxSXJvbVNlUGljZlJqUQ?oc=5)

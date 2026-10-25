@@ -1,0 +1,16 @@
+---
+title: "The investment tide has gone out in South African retail"
+date: 2026-10-25T17:54:10.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "The investment tide has gone out in South African retail"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQnBQV1haZjEtb01KcFFNUUFtZmZLTGQzRGwtb0ppa3FpTXFILXloQk5PVjlrZXgxR3VwaFhYRlZkeVNFMngwSlNPRm5aYmVJaG5lTlF3azl4eXUzNlN4U0Y5eUNiOXZIUU9NVmxKT1NJVnVEMHJqRURZN29XWHRGcnRHXzR0YWxGVWdNWkJDQlVXSFBHR0ppbkxLODhtbko0MnhZcjFlMnRmX1BwQm5zS0RvY3BGaTZOMlRrN0R2dGNpeGRzZDl0UjJwTlFQR3VWMEFNbE1zSGpjSnZLODRSSDc2OGRidGJBWHdiWk52WFBPVjZoNmV3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQnBQV1haZjEtb01KcFFNUUFtZmZLTGQzRGwtb0ppa3FpTXFILXloQk5PVjlrZXgxR3VwaFhYRlZkeVNFMngwSlNPRm5aYmVJaG5lTlF3azl4eXUzNlN4U0Y5eUNiOXZIUU9NVmxKT1NJVnVEMHJqRURZN29XWHRGcnRHXzR0YWxGVWdNWkJDQlVXSFBHR0ppbkxLODhtbko0MnhZcjFlMnRmX1BwQm5zS0RvY3BGaTZOMlRrN0R2dGNpeGRzZDl0UjJwTlFQR3VWMEFNbE1zSGpjSnZLODRSSDc2OGRidGJBWHdiWk52WFBPVjZoNmV3?oc=5)
