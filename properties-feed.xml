@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2026 18:03:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 20:49:35 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -125,6 +125,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/37844de9c69f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/37844de9c69f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/37844de9c69f.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 270,000 — Arlington East | Luxury Cluster Living At Its Finest – (Arlington, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/018a03b9b659.html</link>
+      <description>USD 270,000 — Arlington, Harare South. 4 beds, 5 baths. Arlington East | Luxury Cluster Living At Its Finest –. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sat, 24 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/018a03b9b659.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/018a03b9b659.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/018a03b9b659.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/018a03b9b659.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 38,000 — Quick Sale! Affordable 8-Room House for Sale in Mufakose near Harare - Council Cession (Mufakose, Harare High Density)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/738fbe0eb82f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/738fbe0eb82f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/738fbe0eb82f.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 250,000 — Prime Residential Opportunity – Sherwood Park, Mabelreign (Mabelreign, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/643b7685e542.html</link>
-      <description>USD 250,000 — Mabelreign, Harare West. 3 beds, 3 baths. Prime Residential Opportunity – Sherwood Park, Mabelreign. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sat, 24 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/643b7685e542.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/643b7685e542.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/643b7685e542.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/643b7685e542.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
