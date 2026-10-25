@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com/za</link>
     <description>Business and intelligence newspaper delivering curated South African news from foreign press for the diaspora.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2026 20:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 23:20:52 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/za/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>South African union demands stronger hospital security after clash — Daily Maverick</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-south-african-union-demands-stronger-hospital-security-after</link>
+      <description>South African union demands stronger hospital security after clash — Daily Maverick #SouthAfrica #Health #SouthAfricaHealth #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 20:10:13 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-south-african-union-demands-stronger-hospital-security-after</guid>
+      <category>Health</category>
+      <dc:creator>UA.NEWS</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/7c729eea50bc.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/7c729eea50bc.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/7c729eea50bc.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Settling up: The state of digital payments in South Africa</title>
       <link>https://mutapatimes.com/za/articles/2026-10-25-settling-up-the-state-of-digital-payments-in-south-africa</link>
@@ -127,6 +139,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/za/news/ed02fa55db33.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>Marathon cancelled and parks closed as storm hits</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-marathon-cancelled-and-parks-closed-as-storm-hits</link>
+      <description>Marathon cancelled and parks closed as storm hits #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 11:42:38 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-marathon-cancelled-and-parks-closed-as-storm-hits</guid>
+      <category>Business</category>
+      <dc:creator>BBC</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/964aec9099dd.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/964aec9099dd.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/964aec9099dd.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>Missing Gqeberha cake baker Anathi Maguga found dead</title>
       <link>https://mutapatimes.com/za/articles/2026-10-25-missing-gqeberha-cake-baker-anathi-maguga-found-dead</link>
       <description>Missing Gqeberha cake baker Anathi Maguga found dead #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
@@ -161,6 +185,30 @@
       <media:content url="https://mutapatimes.com/img/cards/za/news/116de165aa88.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/116de165aa88.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/za/news/116de165aa88.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Route 67 shows how Nelson Mandela Bay gets in its own way</title>
+      <link>https://mutapatimes.com/za/news/2026-10-25-route-67-shows-how-nelson-mandela-bay-gets-in-its-own-way-dfd963</link>
+      <description>Nelson Mandela Bay has spent millions on its Route 67 heritage trail, but crime, neglect and broken facilities are keeping visitors away from the historic centre. Many of the fixes are straightforward. Getting the municipality to act is proving harder. (via Daily Maverick) #SouthAfrica #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 11:08:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/news/2026-10-25-route-67-shows-how-nelson-mandela-bay-gets-in-its-own-way-dfd963</guid>
+      <category>News</category>
+      <dc:creator>Daily Maverick</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/9a7cee987985.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/9a7cee987985.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/9a7cee987985.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Newlands Test to provide test of more than bat and ball for Australia</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-newlands-test-to-provide-test-of-more-than-bat-and-ball-for</link>
+      <description>Tourists return to site of one of their darkest days, where Sandpapergate occurred #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 11:05:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-newlands-test-to-provide-test-of-more-than-bat-and-ball-for</guid>
+      <category>Business</category>
+      <dc:creator>Timeslive</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/803f9f35536f.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/803f9f35536f.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/803f9f35536f.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Nahoon Beach still closed after another shark sighting</title>
@@ -209,6 +257,30 @@
       <media:content url="https://mutapatimes.com/img/cards/za/news/aea0045a9b4d.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/aea0045a9b4d.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/za/news/aea0045a9b4d.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zille Issues Warning To ANC As DA Demands Reinstatement Of Cilliers Brink As Tshwane Mayor</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-zille-issues-warning-to-anc-as-da-demands-reinstatement-of-c</link>
+      <description>Zille Issues Warning To ANC As DA Demands Reinstatement Of Cilliers Brink As Tshwane Mayor #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 09:22:29 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-zille-issues-warning-to-anc-as-da-demands-reinstatement-of-c</guid>
+      <category>Business</category>
+      <dc:creator>Surgezirc</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/162b431638f1.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/162b431638f1.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/162b431638f1.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Smart ID cards now available at almost 700 bank branches in South Africa</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-smart-id-cards-now-available-at-almost-700-bank-branches-in</link>
+      <description>Home Affairs has expanded its list of participating bank branches which offer Smart ID services to 696 branches across the country. #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 09:18:22 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-smart-id-cards-now-available-at-almost-700-bank-branches-in</guid>
+      <category>Business</category>
+      <dc:creator>South African</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/53d6409325a8.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/53d6409325a8.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/53d6409325a8.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Gayton Mckenzie’s gift of the gab is both his blessing and his curse @GaytonMcK</title>
@@ -293,6 +365,18 @@
       <media:content url="https://mutapatimes.com/img/cards/za/news/dfa4360d772b.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/dfa4360d772b.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/za/news/dfa4360d772b.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Gavin and Stacey star Laura Aikman revealed show twist to Strictly Come Dancing’s Sarah Hadland</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-25-gavin-and-stacey-star-laura-aikman-revealed-show-twist-to-st</link>
+      <description>Gavin and Stacey star Laura Aikman revealed show twist to Strictly Come Dancing’s Sarah Hadland #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Sun, 25 Oct 2026 07:26:02 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-25-gavin-and-stacey-star-laura-aikman-revealed-show-twist-to-st</guid>
+      <category>Business</category>
+      <dc:creator>BBC</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/dd2a4fcd2534.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/dd2a4fcd2534.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/dd2a4fcd2534.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Strictly judge Anton Du Beke shares Sussex dance roots in memoir</title>
@@ -1169,6 +1253,18 @@
       <media:content url="https://mutapatimes.com/img/cards/za/news/c6b1932533aa.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/c6b1932533aa.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/za/news/c6b1932533aa.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>south african human rights commission</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-23-south-african-human-rights-commission</link>
+      <description>south african human rights commission #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Fri, 23 Oct 2026 23:48:13 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-23-south-african-human-rights-commission</guid>
+      <category>Business</category>
+      <dc:creator>EWN</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/45c99a3f5157.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/45c99a3f5157.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/45c99a3f5157.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Elysian Fields: A Cape Town villa with its head in the stars</title>
@@ -5599,6 +5695,18 @@
       <enclosure url="https://mutapatimes.com/img/cards/za/news/fb4426448bcd.png" type="image/png" length="200000"/>
     </item>
     <item>
+      <title>Mining’s role in South Africa’s energy transition extends beyond power generation</title>
+      <link>https://mutapatimes.com/za/articles/2026-10-21-minings-role-in-south-africas-energy-transition-extends-beyo</link>
+      <description>Mining’s role in South Africa’s energy transition extends beyond power generation #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-21-minings-role-in-south-africas-energy-transition-extends-beyo</guid>
+      <category>Business</category>
+      <dc:creator>thenational.co.za</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/za/news/d0f728dd7748.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/d0f728dd7748.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/za/news/d0f728dd7748.png" type="image/png" length="200000"/>
+    </item>
+    <item>
       <title>South Africa’s digital ID system and green book phase-out</title>
       <link>https://mutapatimes.com/za/articles/2026-10-21-south-africas-digital-id-system-and-green-book-phase-out</link>
       <description>South Africa’s digital ID system and green book phase-out #SouthAfrica #Tech #AfricaTech #SouthAfricaNews</description>
@@ -5909,114 +6017,6 @@
       <media:content url="https://mutapatimes.com/img/cards/za/news/895f45cfeff6.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/895f45cfeff6.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/za/news/895f45cfeff6.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Bavuma’s career-best 179 puts Proteas on top</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-bavumas-career-best-179-puts-proteas-on-top</link>
-      <description>Bavuma’s career-best 179 puts Proteas on top #SouthAfrica #Sport #SouthAfricaSport #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 21:20:46 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-bavumas-career-best-179-puts-proteas-on-top</guid>
-      <category>Sport</category>
-      <dc:creator>Scrolla.Africa</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/9d55ade5b7ef.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/9d55ade5b7ef.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/9d55ade5b7ef.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zibi Urges Ramaphosa To Dismiss ‘Spineless’ Motshekga And SANDF Chief</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-zibi-urges-ramaphosa-to-dismiss-spineless-motshekga-and-sand</link>
-      <description>Zibi Urges Ramaphosa To Dismiss ‘Spineless’ Motshekga And SANDF Chief #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 21:15:02 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-zibi-urges-ramaphosa-to-dismiss-spineless-motshekga-and-sand</guid>
-      <category>Business</category>
-      <dc:creator>Surgezirc</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/0223f4c232df.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/0223f4c232df.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/0223f4c232df.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Audit regulator looking into Manchester City accounting @ManCity</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-audit-regulator-looking-into-manchester-city-accounting</link>
-      <description>Audit regulator looking into Manchester City accounting #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 20:56:53 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-audit-regulator-looking-into-manchester-city-accounting</guid>
-      <category>Business</category>
-      <dc:creator>BBC</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/1842f751b9aa.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/1842f751b9aa.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/1842f751b9aa.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>People can see the DA difference</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-people-can-see-the-da-difference</link>
-      <description>Geordin Hill-Lewis says residents of Cape Town see a govt working for them #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 20:27:03 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-people-can-see-the-da-difference</guid>
-      <category>Business</category>
-      <dc:creator>Politicsweb</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/b3c6a1570057.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/b3c6a1570057.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/b3c6a1570057.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Why Nedbank is betting on East Africa</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-why-nedbank-is-betting-on-east-africa</link>
-      <description>Why Nedbank is betting on East Africa #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 20:04:34 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-why-nedbank-is-betting-on-east-africa</guid>
-      <category>Business</category>
-      <dc:creator>Moneyweb</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/66be0e26823e.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/66be0e26823e.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/66be0e26823e.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>South Africa’s Central Bank wants to make ATM withdrawals free and build a shared cash network</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-south-africas-central-bank-wants-to-make-atm-withdrawals-fre</link>
-      <description>South Africa’s Central Bank wants to make ATM withdrawals free and build a shared cash network #SouthAfrica #Policy #SouthAfricaPolicy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 19:53:52 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-south-africas-central-bank-wants-to-make-atm-withdrawals-fre</guid>
-      <category>Policy</category>
-      <dc:creator>Innovation Village</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/4bdd60974102.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/4bdd60974102.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/4bdd60974102.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Warner jabs Aussie selectors, rips ‘pathetic’ sight as Proteas flip script</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-warner-jabs-aussie-selectors-rips-pathetic-sight-as-proteas</link>
-      <description>Warner jabs Aussie selectors, rips ‘pathetic’ sight as Proteas flip script #SouthAfrica #Sport #SouthAfricaSport #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 19:45:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-warner-jabs-aussie-selectors-rips-pathetic-sight-as-proteas</guid>
-      <category>Sport</category>
-      <dc:creator>Nine.com.au</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/929e05fe5a1e.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/929e05fe5a1e.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/929e05fe5a1e.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Bavuma battles adversity to put South Africa in control @Reuters</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-bavuma-battles-adversity-to-put-south-africa-in-control</link>
-      <description>Bavuma battles adversity to put South Africa in control #SouthAfrica #Business #SouthAfricaEconomy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 19:29:43 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-bavuma-battles-adversity-to-put-south-africa-in-control</guid>
-      <category>Business</category>
-      <dc:creator>Reuters</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/cd3e9d3d7eda.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/cd3e9d3d7eda.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/cd3e9d3d7eda.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Transport Month | AA Warns South Africa’s Broken Public Transport System Is Trapping Workers in Poverty</title>
-      <link>https://mutapatimes.com/za/articles/2026-10-20-transport-month-aa-warns-south-africas-broken-public-transpo</link>
-      <description>Transport Month | AA Warns South Africa’s Broken Public Transport System Is Trapping Workers in Poverty #SouthAfrica #Policy #SouthAfricaPolicy #SouthAfricaNews</description>
-      <pubDate>Tue, 20 Oct 2026 19:27:42 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/za/articles/2026-10-20-transport-month-aa-warns-south-africas-broken-public-transpo</guid>
-      <category>Policy</category>
-      <dc:creator>Central News South Africa</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/za/news/dace96ac2903.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/za/news/dace96ac2903.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/za/news/dace96ac2903.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
