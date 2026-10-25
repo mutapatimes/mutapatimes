@@ -1,0 +1,16 @@
+---
+title: "The fundamental flaw in SA’s water financing model"
+date: 2026-10-25T14:54:53.000Z
+author: Daily Maverick
+category: Environment
+image: 
+summary: "The fundamental flaw in SA’s water financing model"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMW5jUVRzTGs2dEtXRjlKdkNOYkFiOE1KRnNsWFpOaXJLdDJ4ejJfbFhFaFhnZWc4b3ZaMFQzWDBmc3N5VWxuaExIU0lxaFNqZ2JITnFKd1pFMmJWdFV0bG9LNDRuZ0UtYy1FdzY3S3pKNkdBSy03cURHa3ZwM3NGZDhLbDJGTnJsUGdmai1pU2d6TmdXaWk2WU1KVlBVTVFxa1ROSkFGRXhXMkpmMWtOc1hyOFV2aUc1N0tYTmMtZ0U2dEhfUTRCYjAtbUQ3WXBDYnlVSVNBUWpaT2dwVEw0WkduZElOY0Z4c1c5ZWd3MjJmZ29pYTIyRlZkdm1yU1JIZ0RkendIRUtVTUFuZmJ5RFl3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikgJBVV95cUxQMW5jUVRzTGs2dEtXRjlKdkNOYkFiOE1KRnNsWFpOaXJLdDJ4ejJfbFhFaFhnZWc4b3ZaMFQzWDBmc3N5VWxuaExIU0lxaFNqZ2JITnFKd1pFMmJWdFV0bG9LNDRuZ0UtYy1FdzY3S3pKNkdBSy03cURHa3ZwM3NGZDhLbDJGTnJsUGdmai1pU2d6TmdXaWk2WU1KVlBVTVFxa1ROSkFGRXhXMkpmMWtOc1hyOFV2aUc1N0tYTmMtZ0U2dEhfUTRCYjAtbUQ3WXBDYnlVSVNBUWpaT2dwVEw0WkduZElOY0Z4c1c5ZWd3MjJmZ29pYTIyRlZkdm1yU1JIZ0RkendIRUtVTUFuZmJ5RFl3?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "South Africa’s AI strategy must be pro-employment"
+date: 2026-10-25T14:39:37.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "South Africa’s AI strategy must be pro-employment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikAJBVV95cUxQY01PMmxJWUVDbEwwa20yYnVoTloxc3gwdEc5X1hwTmdwcWduMWROOFQwS21KV0w5NFlVYUdmZ0Jnc0NIMXZRcG1tUGZ5MXpjclEzbnZvRFJNTm1EY2s1RFg1RVotMUp4aGNVWHpCaVRGZldra3QxRWpxdHJZZGtyQlhaSTBqSFBQWlo5WDJ5RWV4WFNZSW94WVkxa0tpM0xhZTZid01zN2NOcUZLRFZtaWVLc3FZTUNrR2NibUs1MWZkUmhieEFPcFE4Ml9oLWNTdVlBUkJKODFZX3B0UEE1anZPUUdqQUN0Skp6RzFjRlFEbGY1enNsamZxNG1WM2lLdW95TVRtNEJvdFhVeDRoLQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMikAJBVV95cUxQY01PMmxJWUVDbEwwa20yYnVoTloxc3gwdEc5X1hwTmdwcWduMWROOFQwS21KV0w5NFlVYUdmZ0Jnc0NIMXZRcG1tUGZ5MXpjclEzbnZvRFJNTm1EY2s1RFg1RVotMUp4aGNVWHpCaVRGZldra3QxRWpxdHJZZGtyQlhaSTBqSFBQWlo5WDJ5RWV4WFNZSW94WVkxa0tpM0xhZTZid01zN2NOcUZLRFZtaWVLc3FZTUNrR2NibUs1MWZkUmhieEFPcFE4Ml9oLWNTdVlBUkJKODFZX3B0UEE1anZPUUdqQUN0Skp6RzFjRlFEbGY1enNsamZxNG1WM2lLdW95TVRtNEJvdFhVeDRoLQ?oc=5)
