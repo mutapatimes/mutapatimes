@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-25T11:24:29.104526+00:00",
+  "fetched_at": "2026-10-25T16:15:28.755442+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -91,6 +91,15 @@
       "location": "Mufakose, Harare High Density",
       "image": "https://www.property.co.zw/uploadedfiles/4d/78/35/4d78357a-ce9e-4aff-8ca2-bb58bda8b8d9_thumbnail591.webp",
       "beds": "6",
+      "baths": "2"
+    },
+    {
+      "title": "Budiriro 5 | 3-Bedroom House For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-kha257641",
+      "price": "USD 60,000",
+      "location": "Budiriro, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/12/a9/ec/12a9ec10-ee93-4c60-94a2-78fd4eb3eac8_thumbnail591.webp",
+      "beds": "5",
       "baths": "2"
     },
     {
@@ -190,15 +199,6 @@
       "location": "Mabelreign, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/99/d5/c1/99d5c172-4d56-4a06-a7e1-be59088e7a34_thumbnail591.webp",
       "beds": "3",
-      "baths": "3"
-    },
-    {
-      "title": "4-Bed Fairview Home with Borehole — Modern Living",
-      "url": "https://www.property.co.zw/for-sale/houses-leg253123",
-      "price": "USD 210,000",
-      "location": "Fairview, Harare West",
-      "image": "https://www.property.co.zw/uploadedfiles/50/69/91/506991a9-8ee1-46c8-8a5c-b446e790a236_thumbnail591.webp",
-      "beds": "4",
       "baths": "3"
     }
   ]

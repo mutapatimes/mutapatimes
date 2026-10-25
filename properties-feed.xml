@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2026 13:31:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 16:15:37 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -137,6 +137,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/f5f47575d69f.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/f5f47575d69f.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/f5f47575d69f.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 60,000 — Budiriro 5 | 3-Bedroom House For Sale (Budiriro, Harare High Density)</title>
+      <link>https://mutapatimes.com/property-landing/b8a7c30c8953.html</link>
+      <description>USD 60,000 — Budiriro, Harare High Density. 5 beds, 2 baths. Budiriro 5 | 3-Bedroom House For Sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Sat, 24 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/b8a7c30c8953.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/b8a7c30c8953.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/b8a7c30c8953.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/b8a7c30c8953.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>USD 600,000 — Luxury meets self sufficient!! (Gletwin Park, Harare North)</title>
@@ -269,18 +281,6 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/643b7685e542.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/643b7685e542.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/643b7685e542.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>USD 210,000 — 4-Bed Fairview Home with Borehole — Modern Living (Fairview, Harare West)</title>
-      <link>https://mutapatimes.com/property-landing/8ba7d550cfc9.html</link>
-      <description>USD 210,000 — Fairview, Harare West. 4 beds, 3 baths. 4-Bed Fairview Home with Borehole — Modern Living. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Sat, 24 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/8ba7d550cfc9.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/8ba7d550cfc9.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8ba7d550cfc9.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/8ba7d550cfc9.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
