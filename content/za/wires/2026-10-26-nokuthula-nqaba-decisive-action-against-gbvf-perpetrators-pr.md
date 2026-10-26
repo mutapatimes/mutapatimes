@@ -1,0 +1,16 @@
+---
+title: "NOKUTHULA NQABA | Decisive action against GBVF perpetrators protects women and children"
+date: 2026-10-26T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "NOKUTHULA NQABA | Decisive action against GBVF perpetrators protects women and children"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNLXM3b0E4MkZ2QXUwSWMtSGNheVNtV2FmV0ctako4UzE0eEtBVGhnZVk4OFEtVnJMMXVVQnlTbnIyTTNaUWcxMDc3cldjYW5BM0RyUlpzSmJEejRDUHVad2xQNzdmNEtjdjQ4YVFqdURHOHlFQkxfdFVqUlVHVVZuTGJTcndhVkJ3X0E3SFM1UFNCbjFzZE9INXNvdzJXX3JSeUtqZ1loSUx4b2VleXlfUUlQVjE3ZXY2bEJBYUFKT09vZGQwYjdHaWt2dUdTSm1TaFZsQkNBMTBmNkxka1RiWDYweFZRUmxiOGlhclNYRXR3NkVSX1h6RHhn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi-gFBVV95cUxNLXM3b0E4MkZ2QXUwSWMtSGNheVNtV2FmV0ctako4UzE0eEtBVGhnZVk4OFEtVnJMMXVVQnlTbnIyTTNaUWcxMDc3cldjYW5BM0RyUlpzSmJEejRDUHVad2xQNzdmNEtjdjQ4YVFqdURHOHlFQkxfdFVqUlVHVVZuTGJTcndhVkJ3X0E3SFM1UFNCbjFzZE9INXNvdzJXX3JSeUtqZ1loSUx4b2VleXlfUUlQVjE3ZXY2bEJBYUFKT09vZGQwYjdHaWt2dUdTSm1TaFZsQkNBMTBmNkxka1RiWDYweFZRUmxiOGlhclNYRXR3NkVSX1h6RHhn?oc=5)
