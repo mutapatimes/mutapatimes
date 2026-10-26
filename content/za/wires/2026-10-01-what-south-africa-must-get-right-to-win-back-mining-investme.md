@@ -1,0 +1,16 @@
+---
+title: "What South Africa must get right to win back mining investment"
+date: 2026-10-01T07:00:00.000Z
+author: Cliffe Dekker Hofmeyr
+category: Business
+image: 
+summary: "What South Africa must get right to win back mining investment"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAJBVV95cUxNblZLZ0RscEhZcVZUc2o3ZTlETHQzSkYzLXBaRFhRSVJneS1NX3JVQ0puRVNXX250cDdYaGZIZXdYRDNxTUJoa21WaTFJd1U4MWJPMGlQR1VRNWo1Y1JDOHdYUlBSOHc3RFM3OXBCUmVXTjl5SnVSTjNuemVQOXZGVTU5N2VMT0dVclRmaXk4a3hsTWRQeVJueElTZUVwR3gwSFJwMV9ubUFZYVRDRzkyMWZlY09xaGRqY010bHlxaDdnSDZtUXpDeGJEOHJNN2p2eG5uZl9tN3RVcFBEYVNHZHV6emZKdG9nQk1CekZPNExuQXhpUm5mOXJCdFVkSHJkUGJucWZGUXV4Z2tadkpTS0pnVTE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Cliffe Dekker Hofmeyr.*
+[Read original article](https://news.google.com/rss/articles/CBMilAJBVV95cUxNblZLZ0RscEhZcVZUc2o3ZTlETHQzSkYzLXBaRFhRSVJneS1NX3JVQ0puRVNXX250cDdYaGZIZXdYRDNxTUJoa21WaTFJd1U4MWJPMGlQR1VRNWo1Y1JDOHdYUlBSOHc3RFM3OXBCUmVXTjl5SnVSTjNuemVQOXZGVTU5N2VMT0dVclRmaXk4a3hsTWRQeVJueElTZUVwR3gwSFJwMV9ubUFZYVRDRzkyMWZlY09xaGRqY010bHlxaDdnSDZtUXpDeGJEOHJNN2p2eG5uZl9tN3RVcFBEYVNHZHV6emZKdG9nQk1CekZPNExuQXhpUm5mOXJCdFVkSHJkUGJucWZGUXV4Z2tadkpTS0pnVTE?oc=5)
