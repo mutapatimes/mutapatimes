@@ -1,0 +1,16 @@
+---
+title: "SA has moved on from Trump’s G20 summit snub, says Ambassador Roelf Meyer"
+date: 2026-10-26T20:09:29.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA has moved on from Trump’s G20 summit snub, says Ambassador Roelf Meyer"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNdGhGZ0FfYm5CTkpubTNqcFNwbTNNRi1oOFZvbktyNThZLUZ0ZkFBRUxfdmhnU0tmc05rTnZMQ3l3R3NUZm9EMGg2ME5tMEdWdURqWjdMU0U0SzRrWVdBcVc4a1lvTGhuY0VKSDZrd3BpWDNqNEZrTnc5cVZjTW5pdnRlMkVIOGw4ZW5YUWoyOUM2elRIWUpMYldTQmlWRVJ5bHlyS0pQUTFObm8xWC1MdHQ3TGxFY2xTT2psdUdBN1ZhYS1yUl83aGZlR3drY2s0ekQwVUVmNnlPYnRsaEU2S0ZXNXpVc280YVdHLXRTRmFjTWc2OUpNd2dVSjVGN3BmRXExYkFwRnpObkZnaC1kenFjNXE5ZGRRQjFUNUhISHRRSGctd1RST2Jn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqgJBVV95cUxNdGhGZ0FfYm5CTkpubTNqcFNwbTNNRi1oOFZvbktyNThZLUZ0ZkFBRUxfdmhnU0tmc05rTnZMQ3l3R3NUZm9EMGg2ME5tMEdWdURqWjdMU0U0SzRrWVdBcVc4a1lvTGhuY0VKSDZrd3BpWDNqNEZrTnc5cVZjTW5pdnRlMkVIOGw4ZW5YUWoyOUM2elRIWUpMYldTQmlWRVJ5bHlyS0pQUTFObm8xWC1MdHQ3TGxFY2xTT2psdUdBN1ZhYS1yUl83aGZlR3drY2s0ekQwVUVmNnlPYnRsaEU2S0ZXNXpVc280YVdHLXRTRmFjTWc2OUpNd2dVSjVGN3BmRXExYkFwRnpObkZnaC1kenFjNXE5ZGRRQjFUNUhISHRRSGctd1RST2Jn?oc=5)

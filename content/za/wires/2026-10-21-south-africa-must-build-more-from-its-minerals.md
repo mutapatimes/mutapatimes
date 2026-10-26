@@ -1,0 +1,16 @@
+---
+title: "South Africa must build more from its minerals"
+date: 2026-10-21T07:13:27.000Z
+author: Mining Review Africa
+category: Business
+image: 
+summary: "South Africa must build more from its minerals"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMDRnbGtLRFNlbHFiQ0k5RUNhTnBDejU5aWNQYXgwU3RydC16RWg2Ym9YaUQydG9KUnVzemJRWXROc0V6Q0h3eWlEZzF4UVlDcXFiakdBcnpEeHpYUGIyUU5DVFVJcGw4SU5XZUp3ZW1sa29oWWRCZThQcU41MzBHN0kwRWZQcUx10gGQAUFVX3lxTE9keml4OGxFcUlEQTVUVTlqcWxzR0UyRHdueV92VlRrYm1EdlR2ZVJ1VkFzUW9BMmlZN0tSLVFfU2dBNGRGWTF5ZDIzVEw0LTFzU2I5c1I5VnZPUlFJY0hKSXU2YjJaM2wyS1I4VGc1dWJLYTdtckVLcHpNUDNDeGhHRmNzQ1FaM3pnNU5MVnJ3Sg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Review Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMDRnbGtLRFNlbHFiQ0k5RUNhTnBDejU5aWNQYXgwU3RydC16RWg2Ym9YaUQydG9KUnVzemJRWXROc0V6Q0h3eWlEZzF4UVlDcXFiakdBcnpEeHpYUGIyUU5DVFVJcGw4SU5XZUp3ZW1sa29oWWRCZThQcU41MzBHN0kwRWZQcUx10gGQAUFVX3lxTE9keml4OGxFcUlEQTVUVTlqcWxzR0UyRHdueV92VlRrYm1EdlR2ZVJ1VkFzUW9BMmlZN0tSLVFfU2dBNGRGWTF5ZDIzVEw0LTFzU2I5c1I5VnZPUlFJY0hKSXU2YjJaM2wyS1I4VGc1dWJLYTdtckVLcHpNUDNDeGhHRmNzQ1FaM3pnNU5MVnJ3Sg?oc=5)

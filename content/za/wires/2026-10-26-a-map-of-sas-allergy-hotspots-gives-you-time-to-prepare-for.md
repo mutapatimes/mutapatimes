@@ -1,0 +1,16 @@
+---
+title: "A map of SA’s allergy hotspots gives you time to prepare for pollen season"
+date: 2026-10-26T17:14:28.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "A map of SA’s allergy hotspots gives you time to prepare for pollen season"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMirAJBVV95cUxPb2p5WGNhYUY0WW1uRGJYTmgwS2tvRXh1OHo3WlZZRXFuTF85RkgyMUhNM1JkbzFZenc2Rm9UVFh6VWJJSk1xbm02eXhweVZHS29POG9EVlhpeHhZNEVnNzVISVFMVE1mdFNTVzl3VFRiVVdocTdZdEtHbzVVaHpYd2VnNFhGT3VaeURlX3R3dzRRd1RpbGx3YW1LSk4yWU53NWR2S29jWWdTVkNrbmc1SEg2RFZfaDRDNXV0WGFCblNVY0RRZ3pHR0hOWlN6S1hVa2pyZVM3NEJoZWZ3amJGdW5RV2EyTnIxek5ramQ0aF92THh1MmQ2YlJwMW5qMVptWnpMSk9JTUEtRTlCdGhBU2JFeTZkbDlKVERrY2tJZXh0MDlSWEljcDVxbzM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMirAJBVV95cUxPb2p5WGNhYUY0WW1uRGJYTmgwS2tvRXh1OHo3WlZZRXFuTF85RkgyMUhNM1JkbzFZenc2Rm9UVFh6VWJJSk1xbm02eXhweVZHS29POG9EVlhpeHhZNEVnNzVISVFMVE1mdFNTVzl3VFRiVVdocTdZdEtHbzVVaHpYd2VnNFhGT3VaeURlX3R3dzRRd1RpbGx3YW1LSk4yWU53NWR2S29jWWdTVkNrbmc1SEg2RFZfaDRDNXV0WGFCblNVY0RRZ3pHR0hOWlN6S1hVa2pyZVM3NEJoZWZ3amJGdW5RV2EyTnIxek5ramQ0aF92THh1MmQ2YlJwMW5qMVptWnpMSk9JTUEtRTlCdGhBU2JFeTZkbDlKVERrY2tJZXh0MDlSWEljcDVxbzM?oc=5)
