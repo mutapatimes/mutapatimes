@@ -1,0 +1,16 @@
+---
+title: "Liquid Intelligent Technologies and Microsoft South Africa support school digital skills lab"
+date: 2026-10-26T11:14:21.000Z
+author: Telecompaper
+category: Tech
+image: 
+summary: "Liquid Intelligent Technologies and Microsoft South Africa support school digital skills lab"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTmF3Uk1FNEFZV25fNVJULVFoaGlqdXRoTnE4RjZiMU5Ob1N1RW5xZjF2UDY3andOSExfdTBVZXVUcXFkX2pvdGZMWnFrRVdQWkt3ak5XbzFTZ2RfOTIzR1dWZWREUGFXbVBsQUtMbTJvNlRMVHBTU21RUFMxcUlnWWYzOEtxQ1Z1bW12UkFNNHNJTWItclR5M3g1bXZCdzhYMk8wczJLcXFMbXpiQTFQSnhiaUlyczBhOWEyMXJDTGlxcWF4emJyYkExeVZVdjhI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Telecompaper.*
+[Read original article](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTmF3Uk1FNEFZV25fNVJULVFoaGlqdXRoTnE4RjZiMU5Ob1N1RW5xZjF2UDY3andOSExfdTBVZXVUcXFkX2pvdGZMWnFrRVdQWkt3ak5XbzFTZ2RfOTIzR1dWZWREUGFXbVBsQUtMbTJvNlRMVHBTU21RUFMxcUlnWWYzOEtxQ1Z1bW12UkFNNHNJTWItclR5M3g1bXZCdzhYMk8wczJLcXFMbXpiQTFQSnhiaUlyczBhOWEyMXJDTGlxcWF4emJyYkExeVZVdjhI?oc=5)

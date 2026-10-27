@@ -1,0 +1,16 @@
+---
+title: "Good news about South African network operators after critical security vulnerabilities exposed thousands of Internet servers"
+date: 2026-10-27T07:32:48.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "Good news about South African network operators after critical security vulnerabilities exposed thousands of Internet servers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNZk1pMElJYllxOEloT0hvOFE2OTBxV0Y1UWVWUzJCN3U2RXBseXdORU9PanctbEp1X2RldkZ4U1JhQWxydlNXYVNtZ2tobWp5WkFsZlJfZFkwVkhPSUR5MUU5REdhOUVweDlnODRPZVZUM0dudzBUVTFRY1d3MV9Kc1N1enpISENEbkJ1a3pNV1RXT0dEa29TVzFSWFpuZ0E5ek1HTFV2TzdTX21SdEE5TE5td2RsLW91WkxkbGJORDgwODZTZ1FaYlNBRnp2V1F5NDFxcXFvaTMyWjNHUXItenNMV1hzOUFtbjZVdHlHZUR4OVFHb3RRWUljTkl1TDVTcFhBaFI3RFc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMiiAJBVV95cUxNZk1pMElJYllxOEloT0hvOFE2OTBxV0Y1UWVWUzJCN3U2RXBseXdORU9PanctbEp1X2RldkZ4U1JhQWxydlNXYVNtZ2tobWp5WkFsZlJfZFkwVkhPSUR5MUU5REdhOUVweDlnODRPZVZUM0dudzBUVTFRY1d3MV9Kc1N1enpISENEbkJ1a3pNV1RXT0dEa29TVzFSWFpuZ0E5ek1HTFV2TzdTX21SdEE5TE5td2RsLW91WkxkbGJORDgwODZTZ1FaYlNBRnp2V1F5NDFxcXFvaTMyWjNHUXItenNMV1hzOUFtbjZVdHlHZUR4OVFHb3RRWUljTkl1TDVTcFhBaFI3RFc?oc=5)
