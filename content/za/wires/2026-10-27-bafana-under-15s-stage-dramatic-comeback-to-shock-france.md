@@ -1,0 +1,16 @@
+---
+title: "Bafana Under-15s Stage Dramatic Comeback To Shock France"
+date: 2026-10-27T14:39:57.000Z
+author: Soccer Laduma
+category: Sport
+image: 
+summary: "Bafana Under-15s Stage Dramatic Comeback To Shock France"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQ3NTYVpDdnJsZFYtck5fQk5SaWZUandFYXBBS0xNQmtEX3N3LUZyZFVnRUczNXlfT29GY3djeXBjME5zbGg5dWRneXFLMlYxM2dya1V5ekFsSlh6R0FqcDhpVnpyUXBNZHpoZVFHc1VlMzduZjRlTGZKSmN5TDR5OHlkelZqWkZ1Q3pkNlljT3dicmZITmEzbDlzNXFjSnlBUHlmMDNyWm5EbWN4NjhmajhIOWF2RUQ0RDB0dWpvSWZvWG9KN1J4YXFjQzNHeFNiU0NTYVlrYWYzUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Soccer Laduma.*
+[Read original article](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQ3NTYVpDdnJsZFYtck5fQk5SaWZUandFYXBBS0xNQmtEX3N3LUZyZFVnRUczNXlfT29GY3djeXBjME5zbGg5dWRneXFLMlYxM2dya1V5ekFsSlh6R0FqcDhpVnpyUXBNZHpoZVFHc1VlMzduZjRlTGZKSmN5TDR5OHlkelZqWkZ1Q3pkNlljT3dicmZITmEzbDlzNXFjSnlBUHlmMDNyWm5EbWN4NjhmajhIOWF2RUQ0RDB0dWpvSWZvWG9KN1J4YXFjQzNHeFNiU0NTYVlrYWYzUQ?oc=5)

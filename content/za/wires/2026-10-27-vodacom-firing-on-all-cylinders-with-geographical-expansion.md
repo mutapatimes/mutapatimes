@@ -1,0 +1,16 @@
+---
+title: "Vodacom firing on all cylinders with geographical expansion and South African services growth"
+date: 2026-10-27T12:03:50.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "Vodacom firing on all cylinders with geographical expansion and South African services growth"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVXdqaGZia0hwaTlIcHpZOWs2UGxyb3E0dlhSVzZyc0xHUWJXeWg3UWxjaGxZLXllYV9JbHJvRXpoOXB5Zmp2T2F1emZIRDQxMEtTcHhQSUc4aHhrSlJrVEVscDhxM3NndGszRDdCSVNJX1NIeGlkWHJoRUlua0QtTG9HYTMtdzMyUm5uQlNJMkt1U0hoUFowdGlmQWluN0hRQnVZNmJaSzBZM3BRRlhKTkpseGZKOE9pZG44bVJrcVRHOW5rcklYNE1QU2dacGR4X0g0RGdkNkhhSjlfVVB2QS1sNDk2MzRETUE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVXdqaGZia0hwaTlIcHpZOWs2UGxyb3E0dlhSVzZyc0xHUWJXeWg3UWxjaGxZLXllYV9JbHJvRXpoOXB5Zmp2T2F1emZIRDQxMEtTcHhQSUc4aHhrSlJrVEVscDhxM3NndGszRDdCSVNJX1NIeGlkWHJoRUlua0QtTG9HYTMtdzMyUm5uQlNJMkt1U0hoUFowdGlmQWluN0hRQnVZNmJaSzBZM3BRRlhKTkpseGZKOE9pZG44bVJrcVRHOW5rcklYNE1QU2dacGR4X0g0RGdkNkhhSjlfVVB2QS1sNDk2MzRETUE?oc=5)

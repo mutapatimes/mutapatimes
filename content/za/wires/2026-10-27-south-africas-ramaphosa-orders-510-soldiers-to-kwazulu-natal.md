@@ -1,0 +1,16 @@
+---
+title: "South Africa's Ramaphosa orders 510 soldiers to KwaZulu-Natal after asylum ruling violence"
+date: 2026-10-27T14:17:52.000Z
+author: Bozeman Daily Chronicle
+category: Business
+image: 
+summary: "South Africa's Ramaphosa orders 510 soldiers to KwaZulu-Natal after asylum ruling violence"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxONkNNU2t3SmQySFc4VnZjWDZFWWJud0lsOW5lR2xSM29nVTY5TFB4bU5wYkNndDAwamlPbVBzd1N3OTltOTU0QktTdDkwWFNxbTBqV2piQmMxV05oZF8xb0gtcnNud0hLVlY4UXVOVU9zLU5VTEdmOFVTUDJPVXNLcmhiZ2I4QkkyT2p4TGRBTmtyQ2pPeHplN3ZFQVNTMkgxSFA0RDdnbWpGX3Q3aUxSdC0xWXZXdTJ2b3pFdHQzb0JVZFdOdDd2Vjlqd1JCbEtmZklILWxicmhmM0ctaUxtLThYbXZ2ekJBZnVWb0ZSa1NQR1poMEJlSW1PVzNXYWNxQVdvN0tYR0ZxVTJyY2RxQ2RORVYzQUxzRENqQTNpZFQtdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Bozeman Daily Chronicle.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxONkNNU2t3SmQySFc4VnZjWDZFWWJud0lsOW5lR2xSM29nVTY5TFB4bU5wYkNndDAwamlPbVBzd1N3OTltOTU0QktTdDkwWFNxbTBqV2piQmMxV05oZF8xb0gtcnNud0hLVlY4UXVOVU9zLU5VTEdmOFVTUDJPVXNLcmhiZ2I4QkkyT2p4TGRBTmtyQ2pPeHplN3ZFQVNTMkgxSFA0RDdnbWpGX3Q3aUxSdC0xWXZXdTJ2b3pFdHQzb0JVZFdOdDd2Vjlqd1JCbEtmZklILWxicmhmM0ctaUxtLThYbXZ2ekJBZnVWb0ZSa1NQR1poMEJlSW1PVzNXYWNxQVdvN0tYR0ZxVTJyY2RxQ2RORVYzQUxzRENqQTNpZFQtdw?oc=5)

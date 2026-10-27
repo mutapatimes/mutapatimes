@@ -1,0 +1,16 @@
+---
+title: "South Africa’s Ekurhuleni launches r360 million solar project as municipalities expand private power procurement"
+date: 2026-10-27T09:33:51.000Z
+author: Africa Sustainability Matters
+category: Policy
+image: 
+summary: "South Africa’s Ekurhuleni launches r360 million solar project as municipalities expand private power procurement"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPa0pXQ0tBazVkTVV1blYzMmxDUFpta2lHU1BKOWFuMzhtQ1ptOE41d1NRREVQRDBTY0ZteVoySXhOV0xrekVBUmpnR2NtSW03MHpDNDE2WXQ3SjBGWE02TXZDVjhQQXFDZ0JNXzlvNG1uQy1sc3RQbXZXbk5HTGJDb0hGdE8tRkVKaXpaZ1BWYURqSWZRc2xqdDJNQWVZX0lUU1FGSEFucVdWdkhrWTVabTRfb2x5T1EtVjVxNzJwYVdYcGJXRE9nVndWWk91b2NZTFhrdkFDSFZUdEtpWHV5YzVnYnFTMFk?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Africa Sustainability Matters.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPa0pXQ0tBazVkTVV1blYzMmxDUFpta2lHU1BKOWFuMzhtQ1ptOE41d1NRREVQRDBTY0ZteVoySXhOV0xrekVBUmpnR2NtSW03MHpDNDE2WXQ3SjBGWE02TXZDVjhQQXFDZ0JNXzlvNG1uQy1sc3RQbXZXbk5HTGJDb0hGdE8tRkVKaXpaZ1BWYURqSWZRc2xqdDJNQWVZX0lUU1FGSEFucVdWdkhrWTVabTRfb2x5T1EtVjVxNzJwYVdYcGJXRE9nVndWWk91b2NZTFhrdkFDSFZUdEtpWHV5YzVnYnFTMFk?oc=5)

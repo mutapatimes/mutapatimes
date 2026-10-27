@@ -1,0 +1,16 @@
+---
+title: "More than R380k raised for Pinetown father who protected his children during hijacking attempt"
+date: 2026-10-27T11:31:54.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "More than R380k raised for Pinetown father who protected his children during hijacking attempt"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZUpLWC0wNFpBdVBFS1k2N3FLeG5xVDNvRlp5WjdObVM1cFFtdUpNTDlaWkR4UFRlNnA3QmtoUmVRVVdlb1I4LVdqd0FyRzJNNUozclZTR0Jfd3dKOTFFbk9nQ2xSUHZEbW5tQlBhOHE1WmplNFJFUnlvbEs5cVkteWlPajZ0UzdGT0dHZzV4M1p2ZzcxUlMteHdJaVp0UzRUaXpGY0lyOWJJMTd2anpoblRRTldYaFpzV0xWNHJPX253aHphNHFseWYwam9HYVYxS254cnBfellVZVNMN2I3R29ZdkxVTDQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZUpLWC0wNFpBdVBFS1k2N3FLeG5xVDNvRlp5WjdObVM1cFFtdUpNTDlaWkR4UFRlNnA3QmtoUmVRVVdlb1I4LVdqd0FyRzJNNUozclZTR0Jfd3dKOTFFbk9nQ2xSUHZEbW5tQlBhOHE1WmplNFJFUnlvbEs5cVkteWlPajZ0UzdGT0dHZzV4M1p2ZzcxUlMteHdJaVp0UzRUaXpGY0lyOWJJMTd2anpoblRRTldYaFpzV0xWNHJPX253aHphNHFseWYwam9HYVYxS254cnBfellVZVNMN2I3R29ZdkxVTDQ?oc=5)

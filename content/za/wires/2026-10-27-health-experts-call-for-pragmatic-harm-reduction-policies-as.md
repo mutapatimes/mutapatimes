@@ -1,0 +1,16 @@
+---
+title: "Health experts call for pragmatic harm reduction policies as South Africa confronts healthcare and economic pressures"
+date: 2026-10-27T12:51:18.000Z
+author: Lifestyle & Tech
+category: Health
+image: 
+summary: "Health experts call for pragmatic harm reduction policies as South Africa confronts healthcare and economic pressures"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijAJBVV95cUxPTEQ1YWxEMnpxX2c3MnJBSUo2MExGN2VwSkpSTHJNN0ZTWFlKd1lqSlRpLU0zZGlBMFEtdUhkYzhGM1d1TzJMU0xldkctVlRXLXluRXp4N3k2bExsbm1ZVE12dHE0WTNLQThQS0hVRElRazNlOEJJX24ySXhQQW5QOVEzSjN1ZWJNRm9wQzJhWjJGMk1pd3J1aFdsNWZvUHIybDZWR0REcUNWZWN1emFuQmR1S3QxVzI1NXBaem5kU2ZFQ21DY3JRd21rcEdjdm5sSXFtMGdXVFFUTHRTcU5BQXBndEttaTd1YlJOVXl1emI4RHkxMS1aQnJfN2RoTU5TUVU4YU8yanRQQ252?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Lifestyle & Tech.*
+[Read original article](https://news.google.com/rss/articles/CBMijAJBVV95cUxPTEQ1YWxEMnpxX2c3MnJBSUo2MExGN2VwSkpSTHJNN0ZTWFlKd1lqSlRpLU0zZGlBMFEtdUhkYzhGM1d1TzJMU0xldkctVlRXLXluRXp4N3k2bExsbm1ZVE12dHE0WTNLQThQS0hVRElRazNlOEJJX24ySXhQQW5QOVEzSjN1ZWJNRm9wQzJhWjJGMk1pd3J1aFdsNWZvUHIybDZWR0REcUNWZWN1emFuQmR1S3QxVzI1NXBaem5kU2ZFQ21DY3JRd21rcEdjdm5sSXFtMGdXVFFUTHRTcU5BQXBndEttaTd1YlJOVXl1emI4RHkxMS1aQnJfN2RoTU5TUVU4YU8yanRQQ252?oc=5)
