@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26",
+  "fetched_at": "2026-10-27",
   "source": "Travelpayouts Data API (v3 prices_for_dates, v2 latest, v1 monthly, v1 calendar)",
   "status": "ok",
   "corridors": {
@@ -9,7 +9,7 @@
       "currency": "GBP",
       "currency_sym": "£",
       "cheapest_overall": {
-        "price": 554,
+        "price": 555,
         "airline": "ET",
         "departure_at": "2026-11-03",
         "return_at": "2026-11-25",
@@ -29,7 +29,7 @@
           "currency": ""
         },
         {
-          "price": 554,
+          "price": 555,
           "airline": "ET",
           "departure_at": "2026-11-03",
           "return_at": "2026-11-25",
@@ -76,7 +76,7 @@
       ],
       "by_airline": [
         {
-          "price": 554,
+          "price": 555,
           "airline": "ET",
           "departure_at": "2026-11-03",
           "return_at": "2026-11-25",
@@ -85,7 +85,7 @@
           "currency": ""
         },
         {
-          "price": 556,
+          "price": 557,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -103,7 +103,7 @@
           "currency": ""
         },
         {
-          "price": 561,
+          "price": 562,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -112,12 +112,12 @@
           "currency": ""
         },
         {
-          "price": 573,
-          "airline": "Wingie",
-          "departure_at": "",
-          "return_at": "",
+          "price": 579,
+          "airline": "WB",
+          "departure_at": "2027-02-15",
+          "return_at": "2027-03-24",
           "stops": 1,
-          "duration": 1830,
+          "duration": null,
           "currency": ""
         }
       ],
@@ -143,7 +143,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 19,
+          "n": 18,
           "error": null
         },
         {
@@ -167,11 +167,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 19,
+          "n": 18,
           "error": null
         }
       ],
-      "observations": 43
+      "observations": 41
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -252,7 +252,7 @@
           "currency": ""
         },
         {
-          "price": 7553,
+          "price": 7588,
           "airline": "Gotogate",
           "departure_at": "",
           "return_at": "",
@@ -261,7 +261,7 @@
           "currency": ""
         },
         {
-          "price": 7602,
+          "price": 7637,
           "airline": "Flightnetwork",
           "departure_at": "",
           "return_at": "",
@@ -279,7 +279,7 @@
           "currency": ""
         },
         {
-          "price": 8463,
+          "price": 8503,
           "airline": "Vayama",
           "departure_at": "",
           "return_at": "",
@@ -341,12 +341,12 @@
       },
       "monthly": [
         {
-          "price": 1580,
-          "airline": "FA",
-          "departure_at": "2026-10-28",
+          "price": 1672,
+          "airline": "FN",
+          "departure_at": "2026-10-31",
           "return_at": "",
           "stops": 0,
-          "duration": 110,
+          "duration": 105,
           "currency": ""
         },
         {
@@ -424,7 +424,7 @@
           "currency": ""
         },
         {
-          "price": 3068,
+          "price": 3082,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -433,12 +433,12 @@
           "currency": ""
         },
         {
-          "price": 3886,
-          "airline": "Mytrip.com",
+          "price": 3732,
+          "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
-          "duration": 210,
+          "duration": 220,
           "currency": ""
         }
       ],
@@ -446,13 +446,13 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 15,
+          "n": 17,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "JNB",
-          "n": 4,
+          "n": 5,
           "error": null
         },
         {
@@ -464,11 +464,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 19,
+          "n": 22,
           "error": null
         }
       ],
-      "observations": 38
+      "observations": 44
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -535,10 +535,10 @@
       "cheapest_overall": {
         "price": 1188,
         "airline": "KQ",
-        "departure_at": "2026-11-18",
+        "departure_at": "2027-02-21",
         "return_at": "",
         "stops": 1,
-        "duration": 1810,
+        "duration": 635,
         "currency": ""
       },
       "cheapest_direct": null,
@@ -553,12 +553,12 @@
           "currency": ""
         },
         {
-          "price": 1188,
+          "price": 1208,
           "airline": "KQ",
-          "departure_at": "2026-11-18",
+          "departure_at": "2026-11-19",
           "return_at": "",
-          "stops": 1,
-          "duration": 1810,
+          "stops": 2,
+          "duration": 645,
           "currency": ""
         },
         {
@@ -575,10 +575,10 @@
         {
           "price": 1188,
           "airline": "KQ",
-          "departure_at": "2026-11-18",
+          "departure_at": "2027-02-21",
           "return_at": "",
           "stops": 1,
-          "duration": 1810,
+          "duration": 635,
           "currency": ""
         },
         {
@@ -600,7 +600,7 @@
           "currency": ""
         },
         {
-          "price": 2421,
+          "price": 2424,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -609,7 +609,7 @@
           "currency": ""
         },
         {
-          "price": 2505,
+          "price": 2508,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -663,15 +663,6 @@
       "cheapest_direct": null,
       "monthly": [
         {
-          "price": 1587,
-          "airline": "KL",
-          "departure_at": "2026-11-30",
-          "return_at": "",
-          "stops": 2,
-          "duration": 2315,
-          "currency": ""
-        },
-        {
           "price": 867,
           "airline": "ET",
           "departure_at": "2027-01-01",
@@ -690,22 +681,13 @@
           "stops": 1,
           "duration": 1205,
           "currency": ""
-        },
-        {
-          "price": 1587,
-          "airline": "KL",
-          "departure_at": "2026-11-30",
-          "return_at": "",
-          "stops": 2,
-          "duration": 2315,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "YYZ",
-          "n": 2,
+          "n": 1,
           "error": null
         },
         {
@@ -727,7 +709,7 @@
           "error": null
         }
       ],
-      "observations": 2
+      "observations": 1
     },
     "london-to-victoria-falls": {
       "origin": "LON",
