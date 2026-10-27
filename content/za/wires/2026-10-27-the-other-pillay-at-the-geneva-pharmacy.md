@@ -1,0 +1,16 @@
+---
+title: "The other Pillay at the Geneva pharmacy"
+date: 2026-10-27T19:50:29.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "The other Pillay at the Geneva pharmacy"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxPLXVsREptZk8xS1RoRmFxNlUwR0ZVZGw0cUNYSkdDMGFrRnI5YzUzbzNuSGViclVBMHpLSndYTTFwZ1o3M3NIbXV1cjJTR0VHVkxDSHRPRDZoSGduSjhWYzZBV3B1WElKRGJJRzZCTmt5Y1BhQ0t2SkpUU1YyYzRvOC03bHowcFZHZUR3NDdjS1hYY25BX0pNVVF4Y3hMZ2xodVhLRWNJQllHOHFsZVpHT0RJbDh3dER1SXlBd2tqVGNQM2pmcFFQam81UzFxRFgtdGIyQURnTGtjZXVmeFNfLUlOXzdIU3E5QlpsWDJFTmhPcDk5TTVLUy11cWFZbjRUemN5VjRQUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxPLXVsREptZk8xS1RoRmFxNlUwR0ZVZGw0cUNYSkdDMGFrRnI5YzUzbzNuSGViclVBMHpLSndYTTFwZ1o3M3NIbXV1cjJTR0VHVkxDSHRPRDZoSGduSjhWYzZBV3B1WElKRGJJRzZCTmt5Y1BhQ0t2SkpUU1YyYzRvOC03bHowcFZHZUR3NDdjS1hYY25BX0pNVVF4Y3hMZ2xodVhLRWNJQllHOHFsZVpHT0RJbDh3dER1SXlBd2tqVGNQM2pmcFFQam81UzFxRFgtdGIyQURnTGtjZXVmeFNfLUlOXzdIU3E5QlpsWDJFTmhPcDk5TTVLUy11cWFZbjRUemN5VjRQUQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Killed while livestreaming — the blogger who exposed Mozambique’s chromium pollution road"
+date: 2026-10-27T21:14:44.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Killed while livestreaming — the blogger who exposed Mozambique’s chromium pollution road"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPblY2SjFkMFBRSmxJWXV1WnZtTnRaZkNHUVZSeFpJRWU0TTFhZGVzeGRUeng4WWpBMkxaZkYwWlhaS1VEMGlBR1VaVlVGR0pTcmJFMHFOZjY0VmY3anZLRklsWGRMSjdkNC1DYWNhcFNKVU9SVno3dkVFUU9fN3VfV0Zya09idUxuZWVTYi0tUnhoZEpxRG9SbU5JT0NiMElnLUk2QjFlaktNZW44RGZqcksxTEkzay1oMW45bTQ1NHp6WlNodFJ4em5KRjlyRTdvdzhnSUYzZGQwMnB0RldyTlZ1UUF4QS1lbHdhYUdhdjBqMER4MmVUVzlNSU40OEhOeTVJZWMxRnM5UFlJVm9sZ3R3UzFMdDhNZ2xSdk1BRllxTTJFYWNRQw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiqAJBVV95cUxPblY2SjFkMFBRSmxJWXV1WnZtTnRaZkNHUVZSeFpJRWU0TTFhZGVzeGRUeng4WWpBMkxaZkYwWlhaS1VEMGlBR1VaVlVGR0pTcmJFMHFOZjY0VmY3anZLRklsWGRMSjdkNC1DYWNhcFNKVU9SVno3dkVFUU9fN3VfV0Zya09idUxuZWVTYi0tUnhoZEpxRG9SbU5JT0NiMElnLUk2QjFlaktNZW44RGZqcksxTEkzay1oMW45bTQ1NHp6WlNodFJ4em5KRjlyRTdvdzhnSUYzZGQwMnB0RldyTlZ1UUF4QS1lbHdhYUdhdjBqMER4MmVUVzlNSU40OEhOeTVJZWMxRnM5UFlJVm9sZ3R3UzFMdDhNZ2xSdk1BRllxTTJFYWNRQw?oc=5)

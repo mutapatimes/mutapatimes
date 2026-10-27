@@ -1,0 +1,16 @@
+---
+title: "ICASA is considering industry feedback to make it easier to launch new network operators in South Africa"
+date: 2026-10-27T15:02:46.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "ICASA is considering industry feedback to make it easier to launch new network operators in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOM3dqaU9id1hkUzBYLUF2N0ZWbHlaYS1wUEVQOFJlS2NLeTZQLWtxX3RvcGpWVmVrRmE0OFVJZmtCeWcxMUFFWHFuamdscXNZSjJKRWo4MUZvYVhpbzdVTnNYdl91LWo3bHRmWGhFMTk4OGdTZ1N4QV91TjU5Y3Jva2xBSUk2cWh5SV9UWVZBV211Nnh1bFBJMjIzR0E5QUpsMmVHemxVTnM0NzdxZW9zVk4ySjBUNk52YUFDN2d4YTZYajkxYUlJQjYzRnpsdldMRm1XMWxQT1BsZThpdV8wQUVIMGhocDBMYzV1dA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMi7AFBVV95cUxOM3dqaU9id1hkUzBYLUF2N0ZWbHlaYS1wUEVQOFJlS2NLeTZQLWtxX3RvcGpWVmVrRmE0OFVJZmtCeWcxMUFFWHFuamdscXNZSjJKRWo4MUZvYVhpbzdVTnNYdl91LWo3bHRmWGhFMTk4OGdTZ1N4QV91TjU5Y3Jva2xBSUk2cWh5SV9UWVZBV211Nnh1bFBJMjIzR0E5QUpsMmVHemxVTnM0NzdxZW9zVk4ySjBUNk52YUFDN2d4YTZYajkxYUlJQjYzRnpsdldMRm1XMWxQT1BsZThpdV8wQUVIMGhocDBMYzV1dA?oc=5)

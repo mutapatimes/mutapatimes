@@ -1,0 +1,16 @@
+---
+title: "As it happened: Starc's six bowls out Proteas"
+date: 2026-10-27T19:18:45.000Z
+author: cricket.com.au
+category: Sport
+image: 
+summary: "As it happened: Starc's six bowls out Proteas"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRXdndVBYemFYbzZYNFl1cHM4V0FKYndVaVozS3RyMnpWOFFIbm5IM0U5M1V4Zkh5S0JRUGliVmV4LTNoc1hwWHRDSmlyajdZVkg2bk55dkgwVmwxZzF6RmtfYUduUzcxd01BT2duTm5jbGc3cUttUFA2MmNCY1gtdDdtMHF6Qzh2bTNUelU5QkdVejFnVmtPaWMwU3Z1b1lEMnBmT25Zd2hRNHE5M01DOFFESmtCd29QNHUzV2VXd3gxdXlTZUplS2poRFVRbkxIbUp2elJqZ0Y4ZGQ4OEFsLTJmTWY3MjJ0QXZnOUJIQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by cricket.com.au.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRXdndVBYemFYbzZYNFl1cHM4V0FKYndVaVozS3RyMnpWOFFIbm5IM0U5M1V4Zkh5S0JRUGliVmV4LTNoc1hwWHRDSmlyajdZVkg2bk55dkgwVmwxZzF6RmtfYUduUzcxd01BT2duTm5jbGc3cUttUFA2MmNCY1gtdDdtMHF6Qzh2bTNUelU5QkdVejFnVmtPaWMwU3Z1b1lEMnBmT25Zd2hRNHE5M01DOFFESmtCd29QNHUzV2VXd3gxdXlTZUplS2poRFVRbkxIbUp2elJqZ0Y4ZGQ4OEFsLTJmTWY3MjJ0QXZnOUJIQQ?oc=5)
