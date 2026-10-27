@@ -56,10 +56,10 @@
           "currency": ""
         },
         {
-          "price": 561,
-          "airline": "KQ",
-          "departure_at": "2027-02-15",
-          "return_at": "2027-03-24",
+          "price": 556,
+          "airline": "ET",
+          "departure_at": "2027-02-01",
+          "return_at": "2027-02-17",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -85,7 +85,7 @@
           "currency": ""
         },
         {
-          "price": 557,
+          "price": 555,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -94,16 +94,16 @@
           "currency": ""
         },
         {
-          "price": 561,
-          "airline": "KQ",
-          "departure_at": "2027-02-15",
-          "return_at": "2027-03-24",
+          "price": 556,
+          "airline": "Vayama",
+          "departure_at": "",
+          "return_at": "",
           "stops": 1,
-          "duration": null,
+          "duration": 1830,
           "currency": ""
         },
         {
-          "price": 562,
+          "price": 560,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
@@ -114,8 +114,8 @@
         {
           "price": 579,
           "airline": "WB",
-          "departure_at": "2027-02-15",
-          "return_at": "2027-03-24",
+          "departure_at": "2027-02-01",
+          "return_at": "2027-02-17",
           "stops": 1,
           "duration": null,
           "currency": ""
@@ -143,7 +143,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 18,
+          "n": 19,
           "error": null
         },
         {
@@ -167,11 +167,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 18,
+          "n": 19,
           "error": null
         }
       ],
-      "observations": 41
+      "observations": 43
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -252,7 +252,7 @@
           "currency": ""
         },
         {
-          "price": 7588,
+          "price": 7564,
           "airline": "Gotogate",
           "departure_at": "",
           "return_at": "",
@@ -261,7 +261,7 @@
           "currency": ""
         },
         {
-          "price": 7637,
+          "price": 7612,
           "airline": "Flightnetwork",
           "departure_at": "",
           "return_at": "",
@@ -279,7 +279,7 @@
           "currency": ""
         },
         {
-          "price": 8503,
+          "price": 8476,
           "airline": "Vayama",
           "departure_at": "",
           "return_at": "",
@@ -424,7 +424,7 @@
           "currency": ""
         },
         {
-          "price": 3082,
+          "price": 3072,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -433,7 +433,7 @@
           "currency": ""
         },
         {
-          "price": 3732,
+          "price": 3720,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -446,7 +446,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 17,
+          "n": 15,
           "error": null
         },
         {
@@ -468,7 +468,7 @@
           "error": null
         }
       ],
-      "observations": 44
+      "observations": 42
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -600,7 +600,7 @@
           "currency": ""
         },
         {
-          "price": 2424,
+          "price": 2416,
           "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
@@ -609,7 +609,7 @@
           "currency": ""
         },
         {
-          "price": 2508,
+          "price": 2500,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -622,7 +622,7 @@
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 8,
+          "n": 9,
           "error": null
         },
         {
@@ -644,7 +644,7 @@
           "error": null
         }
       ],
-      "observations": 14
+      "observations": 15
     },
     "toronto-to-harare": {
       "origin": "YYZ",
