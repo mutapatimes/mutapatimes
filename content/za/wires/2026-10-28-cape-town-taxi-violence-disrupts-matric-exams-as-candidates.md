@@ -1,0 +1,16 @@
+---
+title: "Cape Town taxi violence disrupts matric exams as candidates diverted to alternative centres"
+date: 2026-10-28T14:22:09.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Cape Town taxi violence disrupts matric exams as candidates diverted to alternative centres"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUxOWFlsXzE1RWlhbldLWjMySHMtSnZvT0tscXdrWml5VWxYeE00TVNualA4VW16b3lOSzFDSXE1R3UzRkRQZmJFNkVsZjNicUhvQmszY3RUelc4TXRIdVRhRl9iLXhjWEM0NDZQN28td0FtZV9FOEl0OFBMUndvTjdGQnFwOEZYbGp1dlA4N0V5N1RrMVFPdVo2UEpmTGkxd2NGSG8yN3RLWnFrWWdCYVlFczl2WHp1UWgxeFJvaEJXV2x0R2RLQVJ6aFJUaVB6NG00bmo3dEMtTGFSOGVvSmFsZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUxOWFlsXzE1RWlhbldLWjMySHMtSnZvT0tscXdrWml5VWxYeE00TVNualA4VW16b3lOSzFDSXE1R3UzRkRQZmJFNkVsZjNicUhvQmszY3RUelc4TXRIdVRhRl9iLXhjWEM0NDZQN28td0FtZV9FOEl0OFBMUndvTjdGQnFwOEZYbGp1dlA4N0V5N1RrMVFPdVo2UEpmTGkxd2NGSG8yN3RLWnFrWWdCYVlFczl2WHp1UWgxeFJvaEJXV2x0R2RLQVJ6aFJUaVB6NG00bmo3dEMtTGFSOGVvSmFsZw?oc=5)
