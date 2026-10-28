@@ -1,0 +1,16 @@
+---
+title: "Sputnik (International News Agency And Radio Service) Officially Opens Editorial Centres In Tanzania And South Africa"
+date: 2026-10-28T11:47:57.000Z
+author: Broadcast Media Africa
+category: Culture
+image: 
+summary: "Sputnik (International News Agency And Radio Service) Officially Opens Editorial Centres In Tanzania And South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijwJBVV95cUxPcmp2ZDhXb1dYSXk1MVVmU1V3M08xbnJoQjVDM1VSVmtteS04b3BkUjhuMDZUU0hqTWxLUlZtcUJKSllwZnZRR1pxWmJPVzN3SWRYSGFkdEV1dTEwMVdiNEVSR2J3ZHJxbFp3SWJmdzN2aERkb0h6VDR2STR2ZTNDWGRVWV9ocTh0OGlZMlpzdVN3aTdTeEJ4VkN2UVhSMEQ2cXZnRU50VllIS0diWVhLWnJpbTRYM1BnaDVMeW4za0hrbGMxc05TYVpwSDlDdkNEaWpidGktMVZQQThrOW9DTmtWdU1iQngtU2FOeU1BZ29FMFg2SWdzNkw0VTV6SmxMM2JoaWZRU3RuRVJNX3ZN?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Broadcast Media Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMijwJBVV95cUxPcmp2ZDhXb1dYSXk1MVVmU1V3M08xbnJoQjVDM1VSVmtteS04b3BkUjhuMDZUU0hqTWxLUlZtcUJKSllwZnZRR1pxWmJPVzN3SWRYSGFkdEV1dTEwMVdiNEVSR2J3ZHJxbFp3SWJmdzN2aERkb0h6VDR2STR2ZTNDWGRVWV9ocTh0OGlZMlpzdVN3aTdTeEJ4VkN2UVhSMEQ2cXZnRU50VllIS0diWVhLWnJpbTRYM1BnaDVMeW4za0hrbGMxc05TYVpwSDlDdkNEaWpidGktMVZQQThrOW9DTmtWdU1iQngtU2FOeU1BZ29FMFg2SWdzNkw0VTV6SmxMM2JoaWZRU3RuRVJNX3ZN?oc=5)
