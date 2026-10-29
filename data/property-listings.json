@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-29T05:45:54.511968+00:00",
+  "fetched_at": "2026-10-29T12:58:09.886426+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -28,15 +28,6 @@
       "location": "Kadoma",
       "image": "https://www.property.co.zw/uploadedfiles/00/4d/e8/004de82b-8e4b-444b-9d78-90d39159311f_thumbnail591.webp",
       "beds": "3",
-      "baths": "2"
-    },
-    {
-      "title": "Spacious 5-Bed Home with Flatlet on 1100m² in Waterfalls",
-      "url": "https://www.property.co.zw/for-sale/houses-tpr257900",
-      "price": "USD 93,000",
-      "location": "Waterfalls, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/40/68/9d/40689d2f-071f-4362-a8b3-408a00f4cda8_thumbnail591.webp",
-      "beds": "5",
       "baths": "2"
     },
     {
@@ -200,6 +191,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/32/fc/df/32fcdfaa-e64d-4314-a951-f637c013988e_thumbnail591.webp",
       "beds": "4",
       "baths": "3"
+    },
+    {
+      "title": "Carrick House For Sale",
+      "url": "https://www.property.co.zw/for-sale/houses-rws256032",
+      "price": "USD 600,000",
+      "location": "Carrick Creagh, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/6a/4b/48/6a4b4834-b147-4f7d-b4bc-f5202902b39a_thumbnail591.webp",
+      "beds": "6",
+      "baths": "6"
     }
   ]
 }
