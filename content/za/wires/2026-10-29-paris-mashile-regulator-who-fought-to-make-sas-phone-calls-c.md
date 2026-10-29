@@ -1,0 +1,16 @@
+---
+title: "Paris Mashile — regulator who fought to make SA’s phone calls cheaper"
+date: 2026-10-29T17:30:28.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Paris Mashile — regulator who fought to make SA’s phone calls cheaper"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipgJBVV95cUxQc3g2WjA4ekREMmJvdGxtNFJRTU0xOWhFeWZwRF8zNUlwOWdFV0Fpc1dWZDQxS0dIZmhkVmJPS3JtODVxNnlUcWt5V2RXbUZBbldia2RtTVFoUVoxNXNRNXJ1SUdYbUdkSmE4T3NDMlJRX2E4Y3cxVjRtMkhaaXZhRWZhMDJIa0czRXdRQ2dPQXJZTFY4endsRGpEZ3FyZ3RmUnBxbno2akZHcUYyZUNjYUxJM3l2X2lUTVRzb25Id01Geko4RzhySDBGWWFHOXNtVzdwQ3FOQ3JzSXJPUWZJQjh0N3JNcFcwWUljLXlxeGpOS0dNX3ZSZkgzUzltZU00dlBESnlCLTBiREhEdTQ3RFdDbkVQdG8zY0ExUjNBMnFVblNCR0E?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipgJBVV95cUxQc3g2WjA4ekREMmJvdGxtNFJRTU0xOWhFeWZwRF8zNUlwOWdFV0Fpc1dWZDQxS0dIZmhkVmJPS3JtODVxNnlUcWt5V2RXbUZBbldia2RtTVFoUVoxNXNRNXJ1SUdYbUdkSmE4T3NDMlJRX2E4Y3cxVjRtMkhaaXZhRWZhMDJIa0czRXdRQ2dPQXJZTFY4endsRGpEZ3FyZ3RmUnBxbno2akZHcUYyZUNjYUxJM3l2X2lUTVRzb25Id01Geko4RzhySDBGWWFHOXNtVzdwQ3FOQ3JzSXJPUWZJQjh0N3JNcFcwWUljLXlxeGpOS0dNX3ZSZkgzUzltZU00dlBESnlCLTBiREhEdTQ3RFdDbkVQdG8zY0ExUjNBMnFVblNCR0E?oc=5)

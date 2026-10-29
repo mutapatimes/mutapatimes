@@ -1,0 +1,16 @@
+---
+title: "Western Cape seeks urgent national intervention over medicine shortages"
+date: 2026-10-29T14:18:41.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Western Cape seeks urgent national intervention over medicine shortages"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbEY5TXAya3BrSXd1NHNDZEpjamFHWE5kT0xodHV5UlNHN0N0SXNSZnQxcU1uZUZRZFN0dndVazQ0MEtYYnhCZHpQNmZpd3dydm9DaFMydmxiY3pTZ2t4aVdyWWpaMDhabXZzMkYxRkFHX1lORHBwbHRkRzI5LXBaZC1PMU5DU1NYZVJGdUNYeWNTZWcxVFU4MTVwOHhoNW1TWV84X1daUHJ3X21VcnZ1LWgzNUttdDNFMEVONUxSTWRTdG55YlRQcA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbEY5TXAya3BrSXd1NHNDZEpjamFHWE5kT0xodHV5UlNHN0N0SXNSZnQxcU1uZUZRZFN0dndVazQ0MEtYYnhCZHpQNmZpd3dydm9DaFMydmxiY3pTZ2t4aVdyWWpaMDhabXZzMkYxRkFHX1lORHBwbHRkRzI5LXBaZC1PMU5DU1NYZVJGdUNYeWNTZWcxVFU4MTVwOHhoNW1TWV84X1daUHJ3X21VcnZ1LWgzNUttdDNFMEVONUxSTWRTdG55YlRQcA?oc=5)
