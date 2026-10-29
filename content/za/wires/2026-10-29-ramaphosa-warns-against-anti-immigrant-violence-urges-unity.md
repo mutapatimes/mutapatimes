@@ -1,0 +1,16 @@
+---
+title: "Ramaphosa warns against anti-immigrant violence, urges unity in Durban"
+date: 2026-10-29T04:24:33.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Ramaphosa warns against anti-immigrant violence, urges unity in Durban"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeXZhN3M3TE9BVWxPa3FOOHBtLWlUNWp4ZGVvbHEtQzZZTW1mcFNYSlpodGc1M0xkaWxEVV9sSk01UHZIeTNQQUZBNDBpUzRlQ1ozYTZxaGN5Tlg1TU9qSXU3bDVBS2VwRzdjUFJHSjhxc2JTb1dMWW9tbVVCbDFtUGVhYTdjTFZwUHN2OTh5QjdReFNPeEN3MWZ4bk01N3oxVXdHelR1bDl5QUtuSU5TMldQN2xPeU9ScW1ZanZMby1aU3JFTlhndzI0RERKWVF6ektEd1I4SQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeXZhN3M3TE9BVWxPa3FOOHBtLWlUNWp4ZGVvbHEtQzZZTW1mcFNYSlpodGc1M0xkaWxEVV9sSk01UHZIeTNQQUZBNDBpUzRlQ1ozYTZxaGN5Tlg1TU9qSXU3bDVBS2VwRzdjUFJHSjhxc2JTb1dMWW9tbVVCbDFtUGVhYTdjTFZwUHN2OTh5QjdReFNPeEN3MWZ4bk01N3oxVXdHelR1bDl5QUtuSU5TMldQN2xPeU9ScW1ZanZMby1aU3JFTlhndzI0RERKWVF6ektEd1I4SQ?oc=5)

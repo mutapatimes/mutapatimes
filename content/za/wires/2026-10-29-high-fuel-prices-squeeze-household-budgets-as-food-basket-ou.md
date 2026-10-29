@@ -1,0 +1,16 @@
+---
+title: "High fuel prices squeeze household budgets as food basket outpaces South Africa’s SRD grant"
+date: 2026-10-29T09:30:53.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "High fuel prices squeeze household budgets as food basket outpaces South Africa’s SRD grant"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwJBVV95cUxPZGZPTlQ2bGtTY1FHcVZtUGZHMm1qY1hBU2NueUV1b3pId29aRk0tU0JuRkszWWVxMVZkSEMzWnUyUDFQblY4akdmM2phcHVnRVZZeFdHcHF1c2Y2aE83RGUyMkdQbHVtcDY0TjV6SjZGS1Z1NkZfZ0czbGpGUTVOSVcwalhkNk9ocW5rUmRUakRGOV8weWVLMFoxbmR3d2RPRURqQ0wxcDdDUlN2c3hyRFl4X2FmZzZzekVBM2dRM3ZpRlFyVDFCWElKUTlQMEZJOS1nZFRQSnBGUmhFY1FIeE42Y3lsdEtLLWtWV2ZiWnlHMFFRaU9TTjZXYmxOdV9NMW9mbG1CZ1BVd21zdUlHblE4dk00WHA0bXVLM0MtREdkN3Z0QjcyQk5yWlJaOV9fLTZlMXh0RQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitwJBVV95cUxPZGZPTlQ2bGtTY1FHcVZtUGZHMm1qY1hBU2NueUV1b3pId29aRk0tU0JuRkszWWVxMVZkSEMzWnUyUDFQblY4akdmM2phcHVnRVZZeFdHcHF1c2Y2aE83RGUyMkdQbHVtcDY0TjV6SjZGS1Z1NkZfZ0czbGpGUTVOSVcwalhkNk9ocW5rUmRUakRGOV8weWVLMFoxbmR3d2RPRURqQ0wxcDdDUlN2c3hyRFl4X2FmZzZzekVBM2dRM3ZpRlFyVDFCWElKUTlQMEZJOS1nZFRQSnBGUmhFY1FIeE42Y3lsdEtLLWtWV2ZiWnlHMFFRaU9TTjZXYmxOdV9NMW9mbG1CZ1BVd21zdUlHblE4dk00WHA0bXVLM0MtREdkN3Z0QjcyQk5yWlJaOV9fLTZlMXh0RQ?oc=5)
