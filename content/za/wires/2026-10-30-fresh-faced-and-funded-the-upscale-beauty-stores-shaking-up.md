@@ -1,0 +1,16 @@
+---
+title: "Fresh-faced and funded: the upscale beauty stores shaking up SA’s retail landscape"
+date: 2026-10-30T14:36:47.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Fresh-faced and funded: the upscale beauty stores shaking up SA’s retail landscape"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwJBVV95cUxQd3BjVGlFZlBFZzA3bHZMY25FcC1NUnVHNjB2NG9sY3J6eW5fLUZvZkM0R0JxcGtMRmFDX3ZXYlpGRzNaWkk2WnlSaDl1Nl94d3lkaktNVFh0Vld4NWxHcXIyakY3VHRmb0ROSXQzMVliQmZBSzM4UVNsd2VGNHUyNGFaUzBxTzIyb3dLMXRZRl9LWnVHUGFpXzQ1QV94SnhZekl1OWJEVUNCR0JuLWVVZGY2UHkwdHpNN3BtdWtsSGJFalJoVlhmZnBvMHNaVDI3T3BMZzBrbXpDel9VdlpMWWxpTG9iLWE3bUpRbThLa1VtenI2QnAwTDdrMTNudmh1X1RUVlk4c1N4c2ZZeU9TYlhTOEF4bUNBWm13?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMimwJBVV95cUxQd3BjVGlFZlBFZzA3bHZMY25FcC1NUnVHNjB2NG9sY3J6eW5fLUZvZkM0R0JxcGtMRmFDX3ZXYlpGRzNaWkk2WnlSaDl1Nl94d3lkaktNVFh0Vld4NWxHcXIyakY3VHRmb0ROSXQzMVliQmZBSzM4UVNsd2VGNHUyNGFaUzBxTzIyb3dLMXRZRl9LWnVHUGFpXzQ1QV94SnhZekl1OWJEVUNCR0JuLWVVZGY2UHkwdHpNN3BtdWtsSGJFalJoVlhmZnBvMHNaVDI3T3BMZzBrbXpDel9VdlpMWWxpTG9iLWE3bUpRbThLa1VtenI2QnAwTDdrMTNudmh1X1RUVlk4c1N4c2ZZeU9TYlhTOEF4bUNBWm13?oc=5)

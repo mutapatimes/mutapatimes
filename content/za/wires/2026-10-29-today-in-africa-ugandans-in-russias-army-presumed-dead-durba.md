@@ -1,0 +1,16 @@
+---
+title: "Today in Africa: Ugandans in Russia's army presumed dead, Durban marches halted"
+date: 2026-10-29T17:46:00.000Z
+author: OkayAfrica
+category: Culture
+image: 
+summary: "Today in Africa: Ugandans in Russia's army presumed dead, Durban marches halted"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiggJBVV95cUxNRWJCbzZPdFk1Q3lrTVhKcmpZSHUtUDVXZUNzUDQ4NEM0MHRXeW5HbTVfZ3diQVJxTmFKTWxpWWt1MlI0TFhWakZqMTdmTkxuNFV2QzVoV21QOHRpUnplUG9qTllIWEoxTTdnWU82QWs4UGh6ZWJ5bkJ6X0tXY1JnYkttdWZnN2ZCLWFCQlRYOGx6dHk0Q1FrY1Q4NG1jRTVrWC1xenV2LTM3NmEzb3NSemI1VEhsNzFKdnI0NVFNTDlDOWFnNzVkZVpYVzJOX2YtbnFSOTRUNFgwSDhLRE0yRzA3VGRSVndqQjBkY0lIQzhmazB2V3lwNXNfS00taG9JSnc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by OkayAfrica.*
+[Read original article](https://news.google.com/rss/articles/CBMiggJBVV95cUxNRWJCbzZPdFk1Q3lrTVhKcmpZSHUtUDVXZUNzUDQ4NEM0MHRXeW5HbTVfZ3diQVJxTmFKTWxpWWt1MlI0TFhWakZqMTdmTkxuNFV2QzVoV21QOHRpUnplUG9qTllIWEoxTTdnWU82QWs4UGh6ZWJ5bkJ6X0tXY1JnYkttdWZnN2ZCLWFCQlRYOGx6dHk0Q1FrY1Q4NG1jRTVrWC1xenV2LTM3NmEzb3NSemI1VEhsNzFKdnI0NVFNTDlDOWFnNzVkZVpYVzJOX2YtbnFSOTRUNFgwSDhLRE0yRzA3VGRSVndqQjBkY0lIQzhmazB2V3lwNXNfS00taG9JSnc?oc=5)
