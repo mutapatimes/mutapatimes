@@ -1,38 +1,286 @@
 {
-  "fetched_at": "2026-10-30T04:02:49+00:00",
+  "fetched_at": "2026-10-30T12:01:06+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe tourism sector benefits from China market",
-      "link": "https://mutapatimes.com/articles/2026-10-30-zimbabwe-tourism-sector-benefits-from-china-market",
-      "image": "https://mutapatimes.com/img/cards/news/2956aec59773.png",
-      "pubDate": "2026-10-30T01:53:06+00:00",
-      "category": "Tech"
+      "title": "Jemimah Rodrigues recovers from hamstring injury, boosts India before South Africa tour",
+      "link": "https://mutapatimes.com/news/2026-10-30-jemimah-rodrigues-recovers-from-hamstring-injury-boosts-india-before-south-c13cbb",
+      "image": "https://mutapatimes.com/img/cards/news/54a83b826d5e.png",
+      "pubDate": "2026-10-30T16:17:42+05:30",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Jemimah Rodrigues recovers from hamstring injury, boosts India before South Africa tour",
+      "link": "https://mutapatimes.com/articles/2026-10-30-jemimah-rodrigues-recovers-from-hamstring-injury-boosts-indi",
+      "image": "https://mutapatimes.com/img/cards/news/b408fb297dc6.png",
+      "pubDate": "2026-10-30T16:17:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Mutare Supervisor Jailed for U.S.$16k Workplace Fraud - Africa & Europe",
+      "link": "https://mutapatimes.com/news/2026-10-30-zimbabwe-mutare-supervisor-jailed-for-u-s-16k-workplace-fraud-africa-europe-d5758b",
+      "image": "https://mutapatimes.com/img/cards/news/3a9de104d96f.png",
+      "pubDate": "2026-10-30T11:44:13+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Beira Corridor Expansion Offers Hope for Southern Africa’s Fuel Security",
+      "link": "https://mutapatimes.com/articles/2026-10-30-beira-corridor-expansion-offers-hope-for-southern-africas-fu",
+      "image": "https://mutapatimes.com/img/cards/news/604733ce392d.png",
+      "pubDate": "2026-10-30T11:21:26+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Beira Corridor Expansion Offers Hope for Southern Africa’s Fuel Security",
+      "link": "https://mutapatimes.com/news/2026-10-30-beira-corridor-expansion-offers-hope-for-southern-africa-s-fuel-security-2c3ee2",
+      "image": "https://mutapatimes.com/img/cards/news/a631593a8ff5.png",
+      "pubDate": "2026-10-30T11:21:26+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Harare urges residents to pay rates as city battles service delivery challenges ⋆ Pindula News",
+      "link": "https://mutapatimes.com/articles/2026-10-30-harare-urges-residents-to-pay-rates-as-city-battles-service",
+      "image": "https://mutapatimes.com/img/cards/news/9a5efd6b663d.png",
+      "pubDate": "2026-10-30T11:09:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Harare urges residents to pay rates as city battles service delivery challenges ⋆ Pindula News",
+      "link": "https://mutapatimes.com/news/2026-10-30-harare-urges-residents-to-pay-rates-as-city-battles-service-delivery-challenges-5b0353",
+      "image": "https://mutapatimes.com/img/cards/news/3a64d9483652.png",
+      "pubDate": "2026-10-30T11:09:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Harare Bets U.S.$818m Budget On Water, Roads and Better Services - Africa & Europe",
+      "link": "https://mutapatimes.com/articles/2026-10-30-zimbabwe-harare-bets-us818m-budget-on-water-roads-and-better",
+      "image": "https://mutapatimes.com/img/cards/news/60ffb6fac4a2.png",
+      "pubDate": "2026-10-30T11:02:12+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Harare Bets U.S.$818m Budget On Water, Roads and Better Services - Africa & Europe",
+      "link": "https://mutapatimes.com/news/2026-10-30-zimbabwe-harare-bets-u-s-818m-budget-on-water-roads-and-better-services-africa-1f5032",
+      "image": "https://mutapatimes.com/img/cards/news/10d16858b77f.png",
+      "pubDate": "2026-10-30T11:02:12+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "ZiG Snubbed: 77% Of Business Sales In US Dollars As Confidence In Local Currency Collapses",
+      "link": "https://mutapatimes.com/articles/2026-10-30-zig-snubbed-77-of-business-sales-in-us-dollars-as-confidence",
+      "image": "https://mutapatimes.com/img/cards/news/570971990596.png",
+      "pubDate": "2026-10-30T11:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "ZiG Snubbed: 77% Of Business Sales In US Dollars As Confidence In Local Currency Collapses",
+      "link": "https://mutapatimes.com/news/2026-10-30-zig-snubbed-77-of-business-sales-in-us-dollars-as-confidence-in-local-currency-0c9846",
+      "image": "https://mutapatimes.com/img/cards/news/0cfdecbcd3b3.png",
+      "pubDate": "2026-10-30T11:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ariana Resources reports high-grade gold drilling at Dokwe as cash position strengthens to £17.3m",
+      "link": "https://mutapatimes.com/articles/2026-10-30-ariana-resources-reports-high-grade-gold-drilling-at-dokwe-a",
+      "image": "https://mutapatimes.com/img/cards/news/af435ab0917c.png",
+      "pubDate": "2026-10-30T10:48:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Ariana Resources reports high-grade gold drilling at Dokwe as cash position strengthens to £17.3m",
+      "link": "https://mutapatimes.com/news/2026-10-30-ariana-resources-reports-high-grade-gold-drilling-at-dokwe-as-cash-position-a015ef",
+      "image": "https://mutapatimes.com/img/cards/news/325a5cdf8f5e.png",
+      "pubDate": "2026-10-30T10:48:58+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Rashid Khan makes history, becomes first bowler to claim 200 T20I wickets",
+      "link": "https://mutapatimes.com/articles/2026-10-30-rashid-khan-makes-history-becomes-first-bowler-to-claim-200",
+      "image": "https://mutapatimes.com/img/cards/news/19ed0a6187cc.png",
+      "pubDate": "2026-10-30T10:40:00+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Rashid Khan makes history, becomes first bowler to claim 200 T20I wickets",
+      "link": "https://mutapatimes.com/news/2026-10-30-rashid-khan-makes-history-becomes-first-bowler-to-claim-200-t20i-wickets-1e06d6",
+      "image": "https://mutapatimes.com/img/cards/news/311e26388000.png",
+      "pubDate": "2026-10-30T10:40:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mudenda slams ZTV and Star FM programming ⋆ Pindula News",
+      "link": "https://mutapatimes.com/articles/2026-10-30-mudenda-slams-ztv-and-star-fm-programming-pindula-news",
+      "image": "https://mutapatimes.com/img/cards/news/0353eb83e033.png",
+      "pubDate": "2026-10-30T10:23:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mudenda slams ZTV and Star FM programming ⋆ Pindula News",
+      "link": "https://mutapatimes.com/news/2026-10-30-mudenda-slams-ztv-and-star-fm-programming-pindula-news-a7e960",
+      "image": "https://mutapatimes.com/img/cards/news/a22a5222a6f3.png",
+      "pubDate": "2026-10-30T10:23:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "‘Dream On’: CAA3 Implementation Gathers Pace",
+      "link": "https://mutapatimes.com/articles/2026-10-30-dream-on-caa3-implementation-gathers-pace",
+      "image": "https://mutapatimes.com/img/cards/news/c5f6db43dcf1.png",
+      "pubDate": "2026-10-30T10:10:02+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "‘Dream On’: CAA3 Implementation Gathers Pace",
+      "link": "https://mutapatimes.com/news/2026-10-30-dream-on-caa3-implementation-gathers-pace-f8af32",
+      "image": "https://mutapatimes.com/img/cards/news/785fc48a224d.png",
+      "pubDate": "2026-10-30T10:10:02+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Hell on Earth? Zimbabwe's October heatwave revealed",
+      "link": "https://mutapatimes.com/articles/2026-10-30-hell-on-earth-zimbabwes-october-heatwave-revealed",
+      "image": "https://mutapatimes.com/img/cards/news/d3b9e25934e7.png",
+      "pubDate": "2026-10-30T10:04:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Hell on Earth? Zimbabwe's October heatwave revealed",
+      "link": "https://mutapatimes.com/news/2026-10-30-hell-on-earth-zimbabwe-s-october-heatwave-revealed-18033d",
+      "image": "https://mutapatimes.com/img/cards/news/3f8663ca4022.png",
+      "pubDate": "2026-10-30T10:04:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Beira Corridor Forum Calls for Stronger Regional Partnerships to Secure Southern Africa’s Energy Future",
+      "link": "https://mutapatimes.com/articles/2026-10-30-beira-corridor-forum-calls-for-stronger-regional-partnership",
+      "image": "https://mutapatimes.com/img/cards/news/f574688dc924.png",
+      "pubDate": "2026-10-30T10:00:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Beira Corridor Forum Calls for Stronger Regional Partnerships to Secure Southern Africa’s Energy Future",
+      "link": "https://mutapatimes.com/news/2026-10-30-beira-corridor-forum-calls-for-stronger-regional-partnerships-to-secure-cacef5",
+      "image": "https://mutapatimes.com/img/cards/news/374a94da6ff7.png",
+      "pubDate": "2026-10-30T10:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "WATCH: 88 psychiatric nurses graduate at Ingutsheni Hospital",
+      "link": "https://mutapatimes.com/articles/2026-10-30-watch-88-psychiatric-nurses-graduate-at-ingutsheni-hospital",
+      "image": "https://mutapatimes.com/img/cards/news/a65ec5585bce.png",
+      "pubDate": "2026-10-30T09:18:37+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "WATCH: 88 psychiatric nurses graduate at Ingutsheni Hospital",
+      "link": "https://mutapatimes.com/news/2026-10-30-watch-88-psychiatric-nurses-graduate-at-ingutsheni-hospital-43cb3d",
+      "image": "https://mutapatimes.com/img/cards/news/a455236d1eee.png",
+      "pubDate": "2026-10-30T09:18:37+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Very unpalatable to hear - Mudenda slams ZTV, Star FM over ‘pedantic and pedestrian’ content",
+      "link": "https://mutapatimes.com/articles/2026-10-30-very-unpalatable-to-hear-mudenda-slams-ztv-star-fm-over-peda",
+      "image": "https://mutapatimes.com/img/cards/news/48a14c795485.png",
+      "pubDate": "2026-10-30T08:52:52+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Very unpalatable to hear - Mudenda slams ZTV, Star FM over ‘pedantic and pedestrian’ content",
+      "link": "https://mutapatimes.com/news/2026-10-30-very-unpalatable-to-hear-mudenda-slams-ztv-star-fm-over-pedantic-and-pedestrian-92f173",
+      "image": "https://mutapatimes.com/img/cards/news/377557a1772f.png",
+      "pubDate": "2026-10-30T08:52:52+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Readies New Policy That Will Entrench Property Rights",
+      "link": "https://mutapatimes.com/articles/2026-10-30-zimbabwe-readies-new-policy-that-will-entrench-property-righ",
+      "image": "https://mutapatimes.com/img/cards/news/2a145d7ae2ea.png",
+      "pubDate": "2026-10-30T08:48:58+00:00",
+      "category": "Policy"
     },
     {
       "kind": "news",
       "title": "Zimbabwe tourism sector benefits from China market",
-      "link": "https://mutapatimes.com/news/2026-10-30-zimbabwe-tourism-sector-benefits-from-china-market-ad55eb",
-      "image": "https://mutapatimes.com/img/cards/news/005d9e72d9d7.png",
+      "link": "https://mutapatimes.com/news/2026-10-30-zimbabwe-tourism-sector-benefits-from-china-market-1264ba",
+      "image": "https://mutapatimes.com/img/cards/news/97433e68dd1a.png",
       "pubDate": "2026-10-30T01:53:06+00:00",
       "category": "Science"
     },
     {
       "kind": "news",
-      "title": "Devolution driving development closer to communities",
-      "link": "https://mutapatimes.com/articles/2026-10-29-devolution-driving-development-closer-to-communities",
-      "image": "https://mutapatimes.com/img/cards/news/f8ef8a1939d3.png",
-      "pubDate": "2026-10-29T22:12:33+00:00",
-      "category": "Policy"
+      "title": "Zimsec battling serious distress",
+      "link": "https://mutapatimes.com/articles/2026-10-30-zimsec-battling-serious-distress",
+      "image": "https://mutapatimes.com/img/cards/news/4daeecdb8671.png",
+      "pubDate": "2026-10-30T00:00:00+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Sanctions and the rural child: When economic restrictions threaten educational dreams",
-      "link": "https://mutapatimes.com/articles/2026-10-29-sanctions-and-the-rural-child-when-economic-restrictions-thr",
-      "image": "https://mutapatimes.com/img/cards/news/fe14d5b78937.png",
-      "pubDate": "2026-10-29T22:10:35+00:00",
-      "category": "Policy"
+      "title": "RBZ Says US Dollar Savings Will Remain Untouched As Zimbabwe Eyes Single Currency",
+      "link": "https://mutapatimes.com/articles/2026-10-29-rbz-says-us-dollar-savings-will-remain-untouched-as-zimbabwe",
+      "image": "https://mutapatimes.com/img/cards/news/5ac0ca7f570d.png",
+      "pubDate": "2026-10-29T22:43:52+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "RBZ Says US Dollar Savings Will Remain Untouched As Zimbabwe Eyes Single Currency",
+      "link": "https://mutapatimes.com/news/2026-10-29-rbz-says-us-dollar-savings-will-remain-untouched-as-zimbabwe-eyes-single-0f7010",
+      "image": "https://mutapatimes.com/img/cards/news/3dafd42e472a.png",
+      "pubDate": "2026-10-29T22:43:52+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Road Crashes Claim 1,979 Lives In Nine Months As 94% Figure Emerges",
+      "link": "https://mutapatimes.com/news/2026-10-29-zimbabwe-road-crashes-claim-1-979-lives-in-nine-months-as-94-figure-emerges-1821a5",
+      "image": "https://mutapatimes.com/img/cards/news/4baa7b021399.png",
+      "pubDate": "2026-10-29T22:21:33+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Raza makes history with a century, but Zimbabwe fall short in Sharjah",
+      "link": "https://mutapatimes.com/articles/2026-10-29-raza-makes-history-with-a-century-but-zimbabwe-fall-short-in",
+      "image": "https://mutapatimes.com/img/cards/news/35f5e14db6f6.png",
+      "pubDate": "2026-10-29T22:03:13+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Raza makes history with a century, but Zimbabwe fall short in Sharjah",
+      "link": "https://mutapatimes.com/news/2026-10-29-raza-makes-history-with-a-century-but-zimbabwe-fall-short-in-sharjah-bb643b",
+      "image": "https://mutapatimes.com/img/cards/news/2a9e6e8bc829.png",
+      "pubDate": "2026-10-29T22:03:13+00:00",
+      "category": "News"
     },
     {
       "kind": "economy",
@@ -44,7 +292,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 30 Oct 2026: 1 USD = 26.56 ZWG · best from UK £100 → $129.95 via Wise",
+      "title": "Zim FX snapshot 30 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $130.36 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-30",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-30",
       "pubDate": "2026-10-29T22:00:00+00:00",
@@ -52,7 +300,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 30 Oct: Harare light drizzle · high 28° / low 17°",
+      "title": "Zim weather 30 Oct: Harare overcast · high 27° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-10-30",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-30",
       "pubDate": "2026-10-29T22:00:00+00:00",
@@ -231,254 +479,6 @@
       "title": "Mining Engineer",
       "link": "https://vacancymail.co.zw/jobs/mining-engineer-70080/",
       "image": "https://mutapatimes.com/img/cards/jobs/9ab9f0d2b232.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "City of Harare — Skilled Worker (4-2) Fitter & Turner",
-      "link": "https://vacancymail.co.zw/jobs/skilled-worker-4-2-fitter-turner-70079/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8b8f8238cab5.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — TERMS OF REFERENCE (TOR) Production of a Project short Documentary Film for Bikita and Insiza Districts",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-production-of-a-project-short-documentary-film-for-bikita-and-insiza-districts-70078/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e80fc45ec52.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Oxfam — Terms of Reference (ToR) to produce a Documentary Film and High-Resolution Photography for the Empowering and Safeguarding Girls' Rights through Education (BEH) Project in Zimbabwe",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-tor-to-produce-a-documentary-film-and-high-resolution-photography-for-the-empowering-and-safeguarding-girls-rights-through-education-beh-project-in-zimbabwe-70077/",
-      "image": "https://mutapatimes.com/img/cards/jobs/957660e83b72.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bronte Hotel — Senior Waiter",
-      "link": "https://vacancymail.co.zw/jobs/senior-waiter-70076/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c079f43ae167.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-70075/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c04be717e65f.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-70074/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5d3c05b21315.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Croco Holdings — Apprenticeship Opportunities",
-      "link": "https://vacancymail.co.zw/jobs/apprenticeship-opportunities-70073/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8b7e3c4cb1ec.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Graduate Trainee Opportunity 2027 - Mining Industry",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-opportunity-2027-mining-industry-70072/",
-      "image": "https://mutapatimes.com/img/cards/jobs/69e45f66a88b.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Falcon College — Executive Assistant To The Headmaster",
-      "link": "https://vacancymail.co.zw/jobs/executive-assistant-to-the-headmaster-70071/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f76d72b018a5.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Falcon College — House Master",
-      "link": "https://vacancymail.co.zw/jobs/house-master-70070/",
-      "image": "https://mutapatimes.com/img/cards/jobs/66f5dde8ccaa.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tractor Mechanic",
-      "link": "https://vacancymail.co.zw/jobs/tractor-mechanic-70069/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9a25c2f8f9eb.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Women's Coalition of Zimbabwe — Business and Enterprise Development Officer",
-      "link": "https://vacancymail.co.zw/jobs/business-and-enterprise-development-officer-70068/",
-      "image": "https://mutapatimes.com/img/cards/jobs/03a4b19f1d69.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zimbabwe Media Commission — Manager : Public Information Compliance",
-      "link": "https://vacancymail.co.zw/jobs/manager-public-information-compliance-70067/",
-      "image": "https://mutapatimes.com/img/cards/jobs/652e26afc308.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-70066/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9567fbfcee08.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Biotechnology Authority — Senior Research Officer-Molecular Biology",
-      "link": "https://vacancymail.co.zw/jobs/senior-research-officer-molecular-biology-70065/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dbb4a81b45ae.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-70064/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3a0d0a293d6f.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Pharmacist",
-      "link": "https://vacancymail.co.zw/jobs/pharmacist-70063/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4069835f10c6.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Millennium Homes — Sales & Marketing representatives",
-      "link": "https://vacancymail.co.zw/jobs/sales-marketing-representatives-70062/",
-      "image": "https://mutapatimes.com/img/cards/jobs/64395172bc8c.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Driver (Shurugwi)",
-      "link": "https://vacancymail.co.zw/jobs/driver-shurugwi-70061/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b0f5ebcbca18.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Research Nurses (Shurugwi) x4",
-      "link": "https://vacancymail.co.zw/jobs/research-nurses-shurugwi-x4-70060/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e85ba32cee2f.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — 2 x Programmers (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/2-x-programmers-harare-70059/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3cf5313e930b.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Data Officers",
-      "link": "https://vacancymail.co.zw/jobs/data-officers-70058/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9959727fb5d8.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "INTERNAL AUDIT GRADUATE TRAINEE",
-      "link": "https://vacancymail.co.zw/jobs/internal-audit-graduate-trainee-70057/",
-      "image": "https://mutapatimes.com/img/cards/jobs/14fd0923eee2.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "HEAD - RISK, STRATEGY, MONITORING AND EVALUATION",
-      "link": "https://vacancymail.co.zw/jobs/head-risk-strategy-monitoring-and-evaluation-70056/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e1916dd8837.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Data Management Coordinator (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/data-management-coordinator-harare-70055/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9f5988757e62.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "ICT Services Manager",
-      "link": "https://vacancymail.co.zw/jobs/ict-services-manager-70054/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ddd9df986ca3.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Corporate Account Manager",
-      "link": "https://vacancymail.co.zw/jobs/corporate-account-manager-70053/",
-      "image": "https://mutapatimes.com/img/cards/jobs/811cb007ea77.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "World Vision — TENDER FOR HYDROGEOLOGICAL SURVEY, BOREHOLE DRILLING AND YIELD CAPACITY TESTING",
-      "link": "https://vacancymail.co.zw/jobs/tender-for-hydrogeological-survey-borehole-drilling-and-yield-capacity-testing-70052/",
-      "image": "https://mutapatimes.com/img/cards/jobs/73423e0d0d36.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Gallery of Zimbabwe — Tour Guide-Harare",
-      "link": "https://vacancymail.co.zw/jobs/tour-guide-harare-70051/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3f8d7c638f79.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Gallery of Zimbabwe — Tour Guide-Bulawayo",
-      "link": "https://vacancymail.co.zw/jobs/tour-guide-bulawayo-70050/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e78bfed6d56a.png",
-      "pubDate": "2026-10-29T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-70049/",
-      "image": "https://mutapatimes.com/img/cards/jobs/ae9525d11ceb.png",
       "pubDate": "2026-10-29T22:00:00+00:00",
       "category": "Jobs"
     }
