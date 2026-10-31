@@ -1,7 +1,23 @@
 {
-  "fetched_at": "2026-10-31T03:47:01+00:00",
+  "fetched_at": "2026-10-31T11:35:39+00:00",
   "count": 60,
   "tiles": [
+    {
+      "kind": "news",
+      "title": "Zimbabwe Soldiers Forced To Borrow Ceremonial Uniforms As Treasury Funding Crisis Deepens",
+      "link": "https://mutapatimes.com/articles/2026-10-31-zimbabwe-soldiers-forced-to-borrow-ceremonial-uniforms-as-tr",
+      "image": "https://mutapatimes.com/img/cards/news/a07947d2c98e.png",
+      "pubDate": "2026-10-31T05:49:37+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Soldiers Forced To Borrow Ceremonial Uniforms As Treasury Funding Crisis Deepens",
+      "link": "https://mutapatimes.com/news/2026-10-31-zimbabwe-soldiers-forced-to-borrow-ceremonial-uniforms-as-treasury-funding-db0cf4",
+      "image": "https://mutapatimes.com/img/cards/news/c4f36a75545f.png",
+      "pubDate": "2026-10-31T05:49:37+00:00",
+      "category": "Health"
+    },
     {
       "kind": "news",
       "title": "Zimbabwe Accelerates Tourism Growth as China Drives New Interest in African Safaris and Cultural Holidays",
@@ -9,14 +25,6 @@
       "image": "https://mutapatimes.com/img/cards/news/8352d5d97cb3.png",
       "pubDate": "2026-10-31T04:58:17+05:30",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe Accelerates Tourism Growth as China Drives New Interest in African Safaris and Cultural Holidays",
-      "link": "https://mutapatimes.com/articles/2026-10-31-zimbabwe-accelerates-tourism-growth-as-china-drives-new-inte",
-      "image": "https://mutapatimes.com/img/cards/news/22f0e3c1e4ae.png",
-      "pubDate": "2026-10-31T04:58:17+00:00",
-      "category": "Environment"
     },
     {
       "kind": "news",
@@ -29,18 +37,66 @@
     {
       "kind": "news",
       "title": "Why ZIFA roped in foreign referees for CAPS vs Scottland clash - NewZimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-10-31-why-zifa-roped-in-foreign-referees-for-caps-vs-scottland-cla",
-      "image": "https://mutapatimes.com/img/cards/news/6711bd508f70.png",
-      "pubDate": "2026-10-31T03:20:39+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Why ZIFA roped in foreign referees for CAPS vs Scottland clash - NewZimbabwe",
       "link": "https://mutapatimes.com/news/2026-10-31-why-zifa-roped-in-foreign-referees-for-caps-vs-scottland-clash-newzimbabwe-69b59d",
       "image": "https://mutapatimes.com/img/cards/news/6f32be1b18b2.png",
       "pubDate": "2026-10-31T03:20:39+00:00",
       "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Gold posts 57% profit growth on strong gold prices",
+      "link": "https://mutapatimes.com/articles/2026-10-30-mutapa-gold-posts-57-profit-growth-on-strong-gold-prices",
+      "image": "https://mutapatimes.com/img/cards/news/32cc82f8c260.png",
+      "pubDate": "2026-10-30T22:55:24+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Gold posts 57% profit growth on strong gold prices",
+      "link": "https://mutapatimes.com/news/2026-10-30-mutapa-gold-posts-57-profit-growth-on-strong-gold-prices-007bdc",
+      "image": "https://mutapatimes.com/img/cards/news/09305f16de4a.png",
+      "pubDate": "2026-10-30T22:55:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Rewriting Zimbabwe’s investment story",
+      "link": "https://mutapatimes.com/articles/2026-10-30-rewriting-zimbabwes-investment-story",
+      "image": "https://mutapatimes.com/img/cards/news/a390aeed111a.png",
+      "pubDate": "2026-10-30T22:41:52+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Rewriting Zimbabwe’s investment story",
+      "link": "https://mutapatimes.com/news/2026-10-30-rewriting-zimbabwe-s-investment-story-6606a8",
+      "image": "https://mutapatimes.com/img/cards/news/ebd261a7f3e8.png",
+      "pubDate": "2026-10-30T22:41:52+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Saints set sights on premiership return",
+      "link": "https://mutapatimes.com/articles/2026-10-30-saints-set-sights-on-premiership-return",
+      "image": "https://mutapatimes.com/img/cards/news/09c38c786f81.png",
+      "pubDate": "2026-10-30T22:30:27+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Tanganda seeks VFEX listing",
+      "link": "https://mutapatimes.com/articles/2026-10-30-tanganda-seeks-vfex-listing",
+      "image": "https://mutapatimes.com/img/cards/news/3c354a06521a.png",
+      "pubDate": "2026-10-30T22:24:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Fidelity Life diversifies as profits slide",
+      "link": "https://mutapatimes.com/articles/2026-10-30-fidelity-life-diversifies-as-profits-slide",
+      "image": "https://mutapatimes.com/img/cards/news/3e02b6201ea5.png",
+      "pubDate": "2026-10-30T22:20:03+00:00",
+      "category": "Business"
     },
     {
       "kind": "economy",
@@ -52,7 +108,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 31 Oct 2026: 1 USD = 26.61 ZWG · best from UK £100 → $130.36 via Wise",
+      "title": "Zim FX snapshot 31 Oct 2026: 1 USD = 26.57 ZWG · best from UK £100 → $130.72 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-10-31",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-10-31",
       "pubDate": "2026-10-30T22:00:00+00:00",
@@ -60,7 +116,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 31 Oct: Harare overcast · high 27° / low 14°",
+      "title": "Zim weather 31 Oct: Harare overcast · high 28° / low 13°",
       "link": "https://mutapatimes.com/weather?d=2026-10-31",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-10-31",
       "pubDate": "2026-10-30T22:00:00+00:00",
@@ -423,62 +479,6 @@
       "title": "Millennium Homes — Sales & Marketing representatives",
       "link": "https://vacancymail.co.zw/jobs/sales-marketing-representatives-70062/",
       "image": "https://mutapatimes.com/img/cards/jobs/64395172bc8c.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Driver (Shurugwi)",
-      "link": "https://vacancymail.co.zw/jobs/driver-shurugwi-70061/",
-      "image": "https://mutapatimes.com/img/cards/jobs/b0f5ebcbca18.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Research Nurses (Shurugwi) x4",
-      "link": "https://vacancymail.co.zw/jobs/research-nurses-shurugwi-x4-70060/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e85ba32cee2f.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — 2 x Programmers (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/2-x-programmers-harare-70059/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3cf5313e930b.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Data Officers",
-      "link": "https://vacancymail.co.zw/jobs/data-officers-70058/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9959727fb5d8.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "INTERNAL AUDIT GRADUATE TRAINEE",
-      "link": "https://vacancymail.co.zw/jobs/internal-audit-graduate-trainee-70057/",
-      "image": "https://mutapatimes.com/img/cards/jobs/14fd0923eee2.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "HEAD - RISK, STRATEGY, MONITORING AND EVALUATION",
-      "link": "https://vacancymail.co.zw/jobs/head-risk-strategy-monitoring-and-evaluation-70056/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e1916dd8837.png",
-      "pubDate": "2026-10-30T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Zvitambo Institute for Maternal and Child Health Research — Data Management Coordinator (Harare)",
-      "link": "https://vacancymail.co.zw/jobs/data-management-coordinator-harare-70055/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9f5988757e62.png",
       "pubDate": "2026-10-30T22:00:00+00:00",
       "category": "Jobs"
     }
