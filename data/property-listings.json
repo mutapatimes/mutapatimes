@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T05:38:02.167873+00:00",
+  "fetched_at": "2026-10-31T12:24:22.842479+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -139,6 +139,15 @@
       "baths": "6"
     },
     {
+      "title": "Dzivarasekwa 4 house for sale",
+      "url": "https://www.property.co.zw/for-sale/houses-thre258466",
+      "price": "USD 58,000",
+      "location": "Dzivarasekwa, Harare High Density",
+      "image": "https://www.property.co.zw/uploadedfiles/ab/dc/48/abdc48d2-b95b-4b89-bc81-faf2ba9cab94_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
+    },
+    {
       "title": "Investment opportunity",
       "url": "https://www.property.co.zw/for-sale/houses-rws258216",
       "price": "USD 65,000",
@@ -191,15 +200,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/a5/d0/7d/a5d07d2f-6aa9-4962-976c-2fdecc85e250_thumbnail591.webp",
       "beds": "5",
       "baths": "2"
-    },
-    {
-      "title": "Excellent Renovation and Development Potential – Arcturus Road",
-      "url": "https://www.property.co.zw/for-sale/houses-pgp257851",
-      "price": "USD 450,000",
-      "location": "Greendale North, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/9b/16/40/9b1640b0-27dd-4058-a658-68e984002e99_thumbnail591.webp",
-      "beds": "3",
-      "baths": "1"
     }
   ]
 }
