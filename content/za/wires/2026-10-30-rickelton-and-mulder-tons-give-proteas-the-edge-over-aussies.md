@@ -1,0 +1,16 @@
+---
+title: "Rickelton and Mulder tons give Proteas the edge over Aussies despite dramatic post-tea collapse"
+date: 2026-10-30T17:12:54.000Z
+author: News24
+category: Business
+image: 
+summary: "Rickelton and Mulder tons give Proteas the edge over Aussies despite dramatic post-tea collapse"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSWJKNUhrSy1pRTFiSDB2X05ucGtiMTJTUXVkMWN6TGljdzdxOE1ZVlZicklUM0MwejRXU2tQWUwtVWZVUUJFX0Z3X3ZYdkRGVFEybTdaQ0xrQzZ6X29JUUxHWU04SFFOS3B0QmVMYkZEaUdGYTBGNjNzWEYtRUNzXzNMS250VF9rZE5HSnRvWVRsWTMtVU1XXzlkV2dReEpRRERPWWJST01TWnY4M0V0a1Q0Z29JbzhKR3IzNVpPSUJ0d291YV9ORF93OC1IaEhnTnd4NS00bDBldVB6V1o1eW9xZHdMeGNYcHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSWJKNUhrSy1pRTFiSDB2X05ucGtiMTJTUXVkMWN6TGljdzdxOE1ZVlZicklUM0MwejRXU2tQWUwtVWZVUUJFX0Z3X3ZYdkRGVFEybTdaQ0xrQzZ6X29JUUxHWU04SFFOS3B0QmVMYkZEaUdGYTBGNjNzWEYtRUNzXzNMS250VF9rZE5HSnRvWVRsWTMtVU1XXzlkV2dReEpRRERPWWJST01TWnY4M0V0a1Q0Z29JbzhKR3IzNVpPSUJ0d291YV9ORF93OC1IaEhnTnd4NS00bDBldVB6V1o1eW9xZHdMeGNYcHc?oc=5)
