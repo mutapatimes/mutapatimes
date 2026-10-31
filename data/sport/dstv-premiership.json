@@ -10,6 +10,19 @@
  "table": [
   {
    "rank": 1,
+   "team": "Orlando Pirates",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
+   "played": 9,
+   "win": 8,
+   "draw": 1,
+   "loss": 0,
+   "gf": 21,
+   "ga": 2,
+   "gd": 19,
+   "points": 25
+  },
+  {
+   "rank": 2,
    "team": "Mamelodi Sundowns",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
    "played": 9,
@@ -22,74 +35,61 @@
    "points": 23
   },
   {
-   "rank": 2,
-   "team": "Orlando Pirates",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
-   "played": 8,
-   "win": 7,
-   "draw": 1,
-   "loss": 0,
-   "gf": 19,
-   "ga": 1,
-   "gd": 18,
-   "points": 22
-  },
-  {
    "rank": 3,
    "team": "Amazulu",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/xcb9e71784744424.png/tiny",
-   "played": 8,
-   "win": 6,
+   "played": 9,
+   "win": 7,
    "draw": 1,
    "loss": 1,
-   "gf": 12,
+   "gf": 13,
    "ga": 8,
-   "gd": 4,
-   "points": 19
+   "gd": 5,
+   "points": 22
   },
   {
    "rank": 4,
    "team": "Milford",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
-   "played": 9,
-   "win": 4,
+   "played": 10,
+   "win": 5,
    "draw": 3,
    "loss": 2,
-   "gf": 10,
+   "gf": 11,
    "ga": 7,
-   "gd": 3,
-   "points": 15
+   "gd": 4,
+   "points": 18
   },
   {
    "rank": 5,
    "team": "Kaizer Chiefs",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
-   "played": 8,
+   "played": 9,
    "win": 3,
    "draw": 5,
-   "loss": 0,
-   "gf": 13,
-   "ga": 8,
-   "gd": 5,
+   "loss": 1,
+   "gf": 14,
+   "ga": 10,
+   "gd": 4,
    "points": 14
   }
  ],
  "results": [
   {
-   "date": "2026-10-30",
-   "home": "Marumo Gallants",
-   "away": "Siwelele",
-   "hs": 3,
-   "as": 2
+   "date": "2026-10-31",
+   "home": "Mamelodi Sundowns",
+   "away": "Durban City",
+   "hs": 0,
+   "as": 0
   }
  ],
  "fixtures": [
   {
-   "date": "2026-10-31",
-   "time": "13:30",
-   "home": "Orlando Pirates",
-   "away": "Kaizer Chiefs"
+   "date": "2026-11-04",
+   "time": "17:30",
+   "home": "Golden Arrows",
+   "away": "Marumo Gallants"
   }
  ],
- "updated": "2026-10-31T12:37:35+00:00"
+ "updated": "2026-10-31T18:35:32+00:00"
 }
