@@ -10,6 +10,19 @@
  "table": [
   {
    "rank": 1,
+   "team": "Mamelodi Sundowns",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
+   "played": 10,
+   "win": 8,
+   "draw": 2,
+   "loss": 0,
+   "gf": 27,
+   "ga": 9,
+   "gd": 18,
+   "points": 26
+  },
+  {
+   "rank": 2,
    "team": "Orlando Pirates",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
    "played": 9,
@@ -20,19 +33,6 @@
    "ga": 2,
    "gd": 19,
    "points": 25
-  },
-  {
-   "rank": 2,
-   "team": "Mamelodi Sundowns",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
-   "played": 9,
-   "win": 7,
-   "draw": 2,
-   "loss": 0,
-   "gf": 23,
-   "ga": 8,
-   "gd": 15,
-   "points": 23
   },
   {
    "rank": 3,
@@ -79,8 +79,8 @@
    "date": "2026-10-31",
    "home": "Mamelodi Sundowns",
    "away": "Durban City",
-   "hs": 0,
-   "as": 0
+   "hs": 4,
+   "as": 1
   }
  ],
  "fixtures": [
@@ -91,5 +91,5 @@
    "away": "Marumo Gallants"
   }
  ],
- "updated": "2026-10-31T18:35:32+00:00"
+ "updated": "2026-10-31T23:25:38+00:00"
 }
