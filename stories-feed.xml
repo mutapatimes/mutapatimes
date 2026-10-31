@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Oct 2026 21:32:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 21:43:41 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -209,6 +209,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Africa Trade and Distribution Co — Finance Manager</title>
+      <link>https://mutapatimes.com/stories/166d8ecf30d4.html</link>
+      <description>An exciting and challenging career opportunity has arisen within ATDC Zimbabwe for the position of Finance manager under the finance risk and compliance department. If you are willing to join a team… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 30 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/166d8ecf30d4.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Africa Trade and Distribution Co</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/166d8ecf30d4.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/166d8ecf30d4.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/166d8ecf30d4.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Accounts Clerk</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/b0f5ebcbca18.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/b0f5ebcbca18.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/b0f5ebcbca18.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Zvitambo Institute for Maternal and Child Health Research — Research Nurses (Shurugwi) x4</title>
-      <link>https://mutapatimes.com/stories/e85ba32cee2f.html</link>
-      <description>Position: 4 x Research Nurses (Shurugwi) Full time: 12 months Job Purpose Zvitambo is seeking four experienced research nurses to conduct the LIFE-ED cohort study. LIFE-ED will undertake 1-day assess… Shurugwi · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 30 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/e85ba32cee2f.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Zvitambo Institute for Maternal and Child Health Research</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/e85ba32cee2f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e85ba32cee2f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/e85ba32cee2f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
