@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Oct 2026 12:24:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:46:23 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -149,6 +149,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Accounts Clerk</title>
+      <link>https://mutapatimes.com/stories/e7883dd810cf.html</link>
+      <description>We are seeking a reliable and detail-oriented Accounts Clerk to support daily accounting and bookkeeping activities and help maintain accurate financial records.This is not a role for someone who onl… Harare · Full Time · 350 (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 30 Oct 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/e7883dd810cf.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/e7883dd810cf.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e7883dd810cf.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/e7883dd810cf.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Henkik Investments — ROLLER/COMPACTER OPERATOR X 1</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/9f5988757e62.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/9f5988757e62.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/9f5988757e62.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>ICT Services Manager</title>
-      <link>https://mutapatimes.com/stories/ddd9df986ca3.html</link>
-      <description>ICT SERVICES MANAGER Location: Harare, Zimbabwe Job type: Full-time Closing date: 06 November 2026 Position Overview The company seeks a seasoned ICT Services Manager to take full charge of its techn… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 30 Oct 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/ddd9df986ca3.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/ddd9df986ca3.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/ddd9df986ca3.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/ddd9df986ca3.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
