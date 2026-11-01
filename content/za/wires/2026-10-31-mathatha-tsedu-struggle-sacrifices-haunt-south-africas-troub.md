@@ -1,0 +1,16 @@
+---
+title: "MATHATHA TSEDU | Struggle sacrifices haunt South Africa’s troubled present"
+date: 2026-10-31T23:40:52.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "MATHATHA TSEDU | Struggle sacrifices haunt South Africa’s troubled present"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQUduZ3dwa2RpeWVYSjhzVWxMZHcta0pkSXpFQkxrdWNUMHoxSU1YVWRaTl9jcTdSZl9aZ3NYQU13RXlLSnQ5blZGaGsxYlFSTkM4b0lUSGVOSm8wWlRwaVA1RkVBaHZzdDdqbEVmcW5KTUMxa2ZaNlE1U3dzYVdnVnpIRzI1U01ERGpJSjhpQWlIRjBzdU9vS0VUazVmSGNWUnNURTV5MEZ3WnJyaVp0NVBFQWN4clNKWUtjd0VjbnRuTm5ld2JWUjVSR0hFbEZIMF8wWlBhUlNkeDZyY3M5R2d3S2puTzA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQUduZ3dwa2RpeWVYSjhzVWxMZHcta0pkSXpFQkxrdWNUMHoxSU1YVWRaTl9jcTdSZl9aZ3NYQU13RXlLSnQ5blZGaGsxYlFSTkM4b0lUSGVOSm8wWlRwaVA1RkVBaHZzdDdqbEVmcW5KTUMxa2ZaNlE1U3dzYVdnVnpIRzI1U01ERGpJSjhpQWlIRjBzdU9vS0VUazVmSGNWUnNURTV5MEZ3WnJyaVp0NVBFQWN4clNKWUtjd0VjbnRuTm5ld2JWUjVSR0hFbEZIMF8wWlBhUlNkeDZyY3M5R2d3S2puTzA?oc=5)
