@@ -1,0 +1,16 @@
+---
+title: "South Africa’s unfinished Lula Moment — lessons from Brazil"
+date: 2026-11-02T21:08:13.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "South Africa’s unfinished Lula Moment — lessons from Brazil"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimgJBVV95cUxOUnI0Y0xQeEVLODdLb0draE5JMGRZNVNtb0NHQVktMUtXWTdMRWRSNDRfcnNIUGdFU0ROc3QwdWZRN0Q4ZzZtWWpPUjE3WkllZXpfQ3lHVDVobEdYdzhZM1ZDYkdkRndiV2VfaHdwbVV0MV9uM1puWXdyOW9oSm0tclQ3bXBkWlpyYmNRY1JpZk1uRVJ4XzhOVXZnVDdWLWRfLWVyaFR2V3Z6MDdldnFfU1JSSm5FSGZWQnM3Z3pJMUx2WGZYRFV4cl9aZE80Z01MdHVIRk45M0RuZ0xLa0xtVmJwYnFmMGViY3VEOFp3WU9Xb19RVGxEZHBaNGdUOHdvWWQyNkFQbmRQUlh1Ni1LUHhPTXItMHcxamc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMimgJBVV95cUxOUnI0Y0xQeEVLODdLb0draE5JMGRZNVNtb0NHQVktMUtXWTdMRWRSNDRfcnNIUGdFU0ROc3QwdWZRN0Q4ZzZtWWpPUjE3WkllZXpfQ3lHVDVobEdYdzhZM1ZDYkdkRndiV2VfaHdwbVV0MV9uM1puWXdyOW9oSm0tclQ3bXBkWlpyYmNRY1JpZk1uRVJ4XzhOVXZnVDdWLWRfLWVyaFR2V3Z6MDdldnFfU1JSSm5FSGZWQnM3Z3pJMUx2WGZYRFV4cl9aZE80Z01MdHVIRk45M0RuZ0xLa0xtVmJwYnFmMGViY3VEOFp3WU9Xb19RVGxEZHBaNGdUOHdvWWQyNkFQbmRQUlh1Ni1LUHhPTXItMHcxamc?oc=5)

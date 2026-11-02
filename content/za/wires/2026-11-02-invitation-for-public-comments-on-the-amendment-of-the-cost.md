@@ -1,0 +1,16 @@
+---
+title: "Invitation for public comments on the amendment of the cost recovery rules for independent transmission providers"
+date: 2026-11-02T13:49:42.000Z
+author: Mail & Guardian
+category: Policy
+image: 
+summary: "Invitation for public comments on the amendment of the cost recovery rules for independent transmission providers"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMEVPeFFNX2NOcjZ2ZWg5azdKNVFEU01LYWJSbzc1RkQ5WW0tSGk2ZTdEX3dpdVE1Sl9WeHpNSEh1dzI5NFhWWl9hSHczS3pTSTNsOFdrOGZFblVobXFNRG9IQ3BibWRIUm1GNVJzRTEtbm1NZTBhWFRpNkNuOC1aWkNENl9wNl95YUtjejRfdk5XLTZaOFlXMEg4cXl0S0k4LTJhZGthZ1EtcXhFWFZabHY0OUFtem5JTW9UQi1DX0lZM05LM1B5UUhYRlVIX3JmR08tb054cVAyZEQ0QWgxNEZnYl9lTFFyOFRtTkI0TQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMEVPeFFNX2NOcjZ2ZWg5azdKNVFEU01LYWJSbzc1RkQ5WW0tSGk2ZTdEX3dpdVE1Sl9WeHpNSEh1dzI5NFhWWl9hSHczS3pTSTNsOFdrOGZFblVobXFNRG9IQ3BibWRIUm1GNVJzRTEtbm1NZTBhWFRpNkNuOC1aWkNENl9wNl95YUtjejRfdk5XLTZaOFlXMEg4cXl0S0k4LTJhZGthZ1EtcXhFWFZabHY0OUFtem5JTW9UQi1DX0lZM05LM1B5UUhYRlVIX3JmR08tb054cVAyZEQ0QWgxNEZnYl9lTFFyOFRtTkI0TQ?oc=5)
