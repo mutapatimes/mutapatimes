@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:57:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 01:05:01 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Millennium Homes — Security Officers</title>
+      <link>https://mutapatimes.com/stories/e2fb9f3e1494.html</link>
+      <description>To protect property, staff, and visitors by monitoring premises, patrolling areas, controlling access, and reporting irregularities. Core duties include surveillance, enforcing rules, removing trespa… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Mon, 02 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/e2fb9f3e1494.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Millennium Homes</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/e2fb9f3e1494.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e2fb9f3e1494.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/e2fb9f3e1494.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Accounts Clerk</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/dbb4a81b45ae.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/dbb4a81b45ae.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/dbb4a81b45ae.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Accounts Clerk</title>
-      <link>https://mutapatimes.com/stories/3a0d0a293d6f.html</link>
-      <description>Support the launch and day-to-day operations of M&amp;J Africa in Malawi through accurate accounting, timely financial administration and practical support for clients implementing and using accounting s… Malawi · Full Time · 350 (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Mon, 02 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/3a0d0a293d6f.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/3a0d0a293d6f.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/3a0d0a293d6f.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/3a0d0a293d6f.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
