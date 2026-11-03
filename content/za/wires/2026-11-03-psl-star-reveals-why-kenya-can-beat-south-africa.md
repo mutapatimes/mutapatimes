@@ -1,0 +1,16 @@
+---
+title: "PSL Star Reveals Why Kenya Can Beat South Africa"
+date: 2026-11-03T10:49:00.000Z
+author: Soccer Laduma
+category: Sport
+image: 
+summary: "PSL Star Reveals Why Kenya Can Beat South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbWYzS3VSN2U5MUV6aHdvQTBYaGZYNDROWlNRZFNRSEhvbjdHemtmTzhsTGkxZ3NHaklBRnVIYW9EZDE0WGpldjI0dmVydjBpcDhoczkyVGdJb3J6eF9SS1N4YTBiUEt4NVJSN0ZLMTN4cGJfOEQwMmNrQUZxZ1FEajJKMDVWOG5aUWdBLS03SW54a0R6Y0dCV05zT0M2YUUyTU5BcDdFNjVKdlVXaFNmNGtEVkVnYnZQUklTUW43VkxxNHR1c3Y0TURkZENDNkhNTWxDZ3lSSmpzeFFnMFFqaU5HWjRnUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Soccer Laduma.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbWYzS3VSN2U5MUV6aHdvQTBYaGZYNDROWlNRZFNRSEhvbjdHemtmTzhsTGkxZ3NHaklBRnVIYW9EZDE0WGpldjI0dmVydjBpcDhoczkyVGdJb3J6eF9SS1N4YTBiUEt4NVJSN0ZLMTN4cGJfOEQwMmNrQUZxZ1FEajJKMDVWOG5aUWdBLS03SW54a0R6Y0dCV05zT0M2YUUyTU5BcDdFNjVKdlVXaFNmNGtEVkVnYnZQUklTUW43VkxxNHR1c3Y0TURkZENDNkhNTWxDZ3lSSmpzeFFnMFFqaU5HWjRnUQ?oc=5)
