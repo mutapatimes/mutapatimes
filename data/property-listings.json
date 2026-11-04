@@ -1,17 +1,8 @@
 {
-  "fetched_at": "2026-11-04T06:16:23.389264+00:00",
+  "fetched_at": "2026-11-04T19:44:03.567396+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
-    {
-      "title": "Exceptional Executive Home For Sale",
-      "url": "https://www.property.co.zw/for-sale/houses-key256484",
-      "price": "USD 900,000",
-      "location": "Greystone Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/04/c3/b4/04c3b458-25b6-4a2e-94fa-c56f305927bc_thumbnail591.webp",
-      "beds": "7",
-      "baths": "6"
-    },
     {
       "title": "4 Bedroomed House For Sale",
       "url": "https://www.property.co.zw/for-sale/houses-gbr246778",
@@ -22,9 +13,18 @@
       "baths": "2"
     },
     {
+      "title": "4 bedroom Townhouse for sale in Borrowdale Off-plan",
+      "url": "https://www.property.co.zw/for-sale/townhouses-plzp252952",
+      "price": "USD 340,000",
+      "location": "Borrowdale, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/a9/4d/e1/a94de1ba-b774-44bb-b82b-7b145a9e6d58_thumbnail591.webp",
+      "beds": "4",
+      "baths": "3"
+    },
+    {
       "title": "Developers Dream",
       "url": "https://www.property.co.zw/for-sale/houses-rws255517",
-      "price": "USD 50,000",
+      "price": "USD 45,000",
       "location": "Kuwadzana, Harare High Density",
       "image": "https://www.property.co.zw/uploadedfiles/f9/65/42/f96542b3-6dc7-42d3-b0ac-763cbb5ec3d0_thumbnail591.webp",
       "beds": "5",
