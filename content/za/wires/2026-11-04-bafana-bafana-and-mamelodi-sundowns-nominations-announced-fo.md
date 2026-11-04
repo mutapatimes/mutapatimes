@@ -1,0 +1,16 @@
+---
+title: "Bafana Bafana and Mamelodi Sundowns nominations announced for CAF Awards as Teboho Mokoena up for African Player of the Year"
+date: 2026-11-04T12:15:06.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Bafana Bafana and Mamelodi Sundowns nominations announced for CAF Awards as Teboho Mokoena up for African Player of the Year"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxPcVNYa25JUTFVLVVibnJEdHVuNEN5VjhNeXpPNE1EN3FsVlh1c3JhLTktdld4Vkx4aEpfT0F4U3pXbG1DSDJ1bkVIMHhOSnZLZjhIbVBuTGh6bnItMC1IRUJ3OXh1X0hIcGRGTzl0M08yTTRJUHNhRTlyUnRrTnhwamlZYkRHVVh3Uno3RE1zaTZyTzhrcVZCVFhkUVZsZ2lVQlhBTUJxanUzZ3dWc0l2SW93Ri1nWndtVUhyY19WZU5RRVd4REJpZ1U0MnI1MklWcE0yUDdlSnZBUVVIZjNjNGc1Yi0xMl93YUxKVGV4cTFOYTBLbW8wSEpnZ0RPa1o5c3FYcjRiYw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxPcVNYa25JUTFVLVVibnJEdHVuNEN5VjhNeXpPNE1EN3FsVlh1c3JhLTktdld4Vkx4aEpfT0F4U3pXbG1DSDJ1bkVIMHhOSnZLZjhIbVBuTGh6bnItMC1IRUJ3OXh1X0hIcGRGTzl0M08yTTRJUHNhRTlyUnRrTnhwamlZYkRHVVh3Uno3RE1zaTZyTzhrcVZCVFhkUVZsZ2lVQlhBTUJxanUzZ3dWc0l2SW93Ri1nWndtVUhyY19WZU5RRVd4REJpZ1U0MnI1MklWcE0yUDdlSnZBUVVIZjNjNGc1Yi0xMl93YUxKVGV4cTFOYTBLbW8wSEpnZ0RPa1o5c3FYcjRiYw?oc=5)

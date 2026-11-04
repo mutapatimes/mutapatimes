@@ -1,0 +1,16 @@
+---
+title: "IEC official rushed to hospital after collapsing at Kempton Park voting station"
+date: 2026-11-04T10:42:27.000Z
+author: The Citizen
+category: Health
+image: 
+summary: "IEC official rushed to hospital after collapsing at Kempton Park voting station"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMV9rQ1F1c190UGd6NlhOMnpYaFJ1Vk9INFFIU2lmQXZ1bzhRZ0Fjd3p6NDhWT1hGMmJsa1pzVmpBc3NHYW9ra0RHWGRJQzlaMHRPNWNZUXdXTmYya0dwVW5taEh4M1NsY2g0bFpIc09iSENMcE4zTFJrNnNUcERRQXo5WGl2M3ZQSGlUd3pRV2lTRlE0UFNpd0FWTTBkZ24zaFJOal9iVWNsMjVIMDA4SDU4YzNYeVhaUElneF9LNTh1M3dTaExsV280Qk01VWZfVGdVSkM4MnN1d3ZSeVlTWHllbDN6SXVQX2FQNW5yOWFNd1FIekdOS21WS1hJQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Citizen.*
+[Read original article](https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMV9rQ1F1c190UGd6NlhOMnpYaFJ1Vk9INFFIU2lmQXZ1bzhRZ0Fjd3p6NDhWT1hGMmJsa1pzVmpBc3NHYW9ra0RHWGRJQzlaMHRPNWNZUXdXTmYya0dwVW5taEh4M1NsY2g0bFpIc09iSENMcE4zTFJrNnNUcERRQXo5WGl2M3ZQSGlUd3pRV2lTRlE0UFNpd0FWTTBkZ24zaFJOal9iVWNsMjVIMDA4SDU4YzNYeVhaUElneF9LNTh1M3dTaExsV280Qk01VWZfVGdVSkM4MnN1d3ZSeVlTWHllbDN6SXVQX2FQNW5yOWFNd1FIekdOS21WS1hJQQ?oc=5)
