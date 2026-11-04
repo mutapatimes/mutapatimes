@@ -11,7 +11,7 @@
   {
    "rank": 1,
    "team": "Hardrock",
-   "badge": "https://www.thesportsdb.com/images/media/team/badge/pcxw361792294441.png/tiny",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/pcxw361792294441.png/tiny",
    "played": 32,
    "win": 21,
    "draw": 6,
@@ -25,19 +25,19 @@
    "rank": 2,
    "team": "Scottland",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/kez5cn1788670202.png/tiny",
-   "played": 31,
+   "played": 32,
    "win": 18,
-   "draw": 10,
+   "draw": 11,
    "loss": 3,
    "gf": 46,
    "ga": 11,
    "gd": 35,
-   "points": 64
+   "points": 65
   },
   {
    "rank": 3,
    "team": "Ngezi Platinum",
-   "badge": "https://www.thesportsdb.com/images/media/team/badge/pi3qwe1792292598.png/tiny",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/pi3qwe1792292598.png/tiny",
    "played": 32,
    "win": 14,
    "draw": 14,
@@ -50,7 +50,7 @@
   {
    "rank": 4,
    "team": "Dynamos",
-   "badge": "https://www.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
    "played": 32,
    "win": 12,
    "draw": 16,
@@ -63,7 +63,7 @@
   {
    "rank": 5,
    "team": "CAPS United",
-   "badge": "https://www.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
    "played": 32,
    "win": 13,
    "draw": 12,
@@ -76,20 +76,20 @@
  ],
  "results": [
   {
-   "date": "2026-10-29",
-   "home": "CAPS United",
-   "away": "Scottland",
+   "date": "2026-11-04",
+   "home": "Scottland",
+   "away": "Chicken Inn",
    "hs": 0,
-   "as": 1
+   "as": 0
   }
  ],
  "fixtures": [
   {
-   "date": "2026-11-04",
+   "date": "2026-11-07",
    "time": "13:00",
-   "home": "Scottland",
-   "away": "Chicken Inn"
+   "home": "Dynamos",
+   "away": "Manica Diamonds"
   }
  ],
- "updated": "2026-11-04T12:11:47+00:00"
+ "updated": "2026-11-04T19:48:28+00:00"
 }
