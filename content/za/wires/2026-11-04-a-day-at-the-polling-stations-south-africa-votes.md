@@ -1,0 +1,16 @@
+---
+title: "A day at the polling stations — South Africa votes"
+date: 2026-11-04T17:11:57.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "A day at the polling stations — South Africa votes"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOaXRQWE92NzIzQlNjTFJ0cTY5ZkE5NjhFakpfZURYV3FGUnRoZTVFNjRPcFJnSWM2NUxlUHpSQnk5SkdvQmgxaHVROWh0Z09NTjFNZTVSeGdNLVNDRHlWMUg1cnJ0ZXVSQTZjQXZ2RENQWnFTSEJGaTNiLVl0ZkZYX2dERXUwRlZaUXJ0bEVtOWNFVEVJcW9vVTZEMDlkdmV0Y3hydUtuYzZJUUhFbG9EWkN2RF9XRE9Vd1FmNllYbUN4Z3B6Zl92YTEzUEZhd004bXVQS1NuaHZ0QVphRWJyb1hrSW1lcnA0REh2N3QyS293bk5rZU5icGxJTjFCSnBra0hzemtBWUJXRDg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiiwJBVV95cUxOaXRQWE92NzIzQlNjTFJ0cTY5ZkE5NjhFakpfZURYV3FGUnRoZTVFNjRPcFJnSWM2NUxlUHpSQnk5SkdvQmgxaHVROWh0Z09NTjFNZTVSeGdNLVNDRHlWMUg1cnJ0ZXVSQTZjQXZ2RENQWnFTSEJGaTNiLVl0ZkZYX2dERXUwRlZaUXJ0bEVtOWNFVEVJcW9vVTZEMDlkdmV0Y3hydUtuYzZJUUhFbG9EWkN2RF9XRE9Vd1FmNllYbUN4Z3B6Zl92YTEzUEZhd004bXVQS1NuaHZ0QVphRWJyb1hrSW1lcnA0REh2N3QyS293bk5rZU5icGxJTjFCSnBra0hzemtBWUJXRDg?oc=5)
