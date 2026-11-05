@@ -1,0 +1,16 @@
+---
+title: "MedicalAid.ai: How Artificial Intelligence Is Revolutionising Medical Aid Comparisons in South Africa"
+date: 2026-11-05T08:06:12.000Z
+author: Lifestyle & Tech
+category: Health
+image: 
+summary: "MedicalAid.ai: How Artificial Intelligence Is Revolutionising Medical Aid Comparisons in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNaEppc1hRZmNZaTZzTzZoXzQ5c3BZVk91ZnpKMjgwWFVGTzBpaEs5TG5fdFlHUU16UEdOTXpKTTVYU1ktMXoxWG9KNnpuNWtDdU5SX2tqWnBjWkZxTVFwVGNCbkxkU2xwdFZKYkJaMjJXeVRjVkd0Q1NoeE9xTjA4ZDRhMTBjU243b2FtandFLVBvM0d4RUQ2NURTNDIxckFtQ1JGTzlNQmo1R2tSc3BkbV82Uk1sY05ieVhOVnZqU3g3VHpaTS1GLTczOWlDMHg4ZG1qWDdyOXFOUGdEVGxNeHlRcXc2WG9MbjQ2RHRtVTI?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Lifestyle & Tech.*
+[Read original article](https://news.google.com/rss/articles/CBMi8AFBVV95cUxNaEppc1hRZmNZaTZzTzZoXzQ5c3BZVk91ZnpKMjgwWFVGTzBpaEs5TG5fdFlHUU16UEdOTXpKTTVYU1ktMXoxWG9KNnpuNWtDdU5SX2tqWnBjWkZxTVFwVGNCbkxkU2xwdFZKYkJaMjJXeVRjVkd0Q1NoeE9xTjA4ZDRhMTBjU243b2FtandFLVBvM0d4RUQ2NURTNDIxckFtQ1JGTzlNQmo1R2tSc3BkbV82Uk1sY05ieVhOVnZqU3g3VHpaTS1GLTczOWlDMHg4ZG1qWDdyOXFOUGdEVGxNeHlRcXc2WG9MbjQ2RHRtVTI?oc=5)

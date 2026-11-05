@@ -1,0 +1,16 @@
+---
+title: "THE STANDARD BANK OF SOUTH AFRICA LIMITED – NOTICE OF EXPIRY OF STANDARD BANK WARRANTS"
+date: 2026-11-05T07:00:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "THE STANDARD BANK OF SOUTH AFRICA LIMITED – NOTICE OF EXPIRY OF STANDARD BANK WARRANTS"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRG9PaWpqRkZoS1Q2cldMalAxNmF1QnBDUDVuUGozYjRjbmVXZVFuRlRNX053bnhkak9YaDVpODY0WFdGX29lNWpFZkNxeDlIRHI0N0NyQzBhSVNxTHJ1VE9pM2o3QWxic3FwTUExbkJsT2U4N0FYX2pCQkxhNVB0X1N5Nl9uYkoteUVjVklRczVQOWdHZllscER4Wm1LV2VLa0JkWGVnUnJJVzB1YzN6Q3BGOTE0M1VlRXNvU2ttRzU?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRG9PaWpqRkZoS1Q2cldMalAxNmF1QnBDUDVuUGozYjRjbmVXZVFuRlRNX053bnhkak9YaDVpODY0WFdGX29lNWpFZkNxeDlIRHI0N0NyQzBhSVNxTHJ1VE9pM2o3QWxic3FwTUExbkJsT2U4N0FYX2pCQkxhNVB0X1N5Nl9uYkoteUVjVklRczVQOWdHZllscER4Wm1LV2VLa0JkWGVnUnJJVzB1YzN6Q3BGOTE0M1VlRXNvU2ttRzU?oc=5)

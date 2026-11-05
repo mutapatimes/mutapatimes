@@ -1,0 +1,16 @@
+---
+title: "NTL HEALTHCARE Proposes AI Cervical Cancer Screening Cooperation at Korea-South Africa Future Dialogue"
+date: 2026-11-05T08:00:00.000Z
+author: PR Newswire
+category: Health
+image: 
+summary: "NTL HEALTHCARE Proposes AI Cervical Cancer Screening Cooperation at Korea-South Africa Future Dialogue"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUm4wQlBXQmhwbTRYT2RKWWlkcGtreUd5dkp1akJLUlFqSUVrUm5qZlp3LW94am5Id3VFLThaa1YzNmJhS0JjRXB4SUJ0R19nQmJBcEJYTktGNjU5aTFjT2dwUFBDU2pSTGdWT2dWRDVIQUM4eDF2cTNGbS1QUmlGb2VVMWR4SWZxeUxWakVtUnNPQjRZSE9sa2F0OGRNN0VlWXh4UDJoSXozVk4yNXNlWG5yVnZSaXgzeV9IdmdrM0NxZmxubldRaHc3WHVfVVBlaDJJbDJwZkRIVWlkRldTQ01MelVKczdjb3pTelFHVQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by PR Newswire.*
+[Read original article](https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUm4wQlBXQmhwbTRYT2RKWWlkcGtreUd5dkp1akJLUlFqSUVrUm5qZlp3LW94am5Id3VFLThaa1YzNmJhS0JjRXB4SUJ0R19nQmJBcEJYTktGNjU5aTFjT2dwUFBDU2pSTGdWT2dWRDVIQUM4eDF2cTNGbS1QUmlGb2VVMWR4SWZxeUxWakVtUnNPQjRZSE9sa2F0OGRNN0VlWXh4UDJoSXozVk4yNXNlWG5yVnZSaXgzeV9IdmdrM0NxZmxubldRaHc3WHVfVVBlaDJJbDJwZkRIVWlkRldTQ01MelVKczdjb3pTelFHVQ?oc=5)
