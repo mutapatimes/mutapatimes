@@ -1,38 +1,94 @@
 {
-  "fetched_at": "2026-11-05T10:14:31+00:00",
+  "fetched_at": "2026-11-05T19:24:11+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 5 Nov 2026: All Share 477.37 (-3.13%)",
+      "link": "https://mutapatimes.com/zse?d=2026-11-05",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-11-05",
+      "pubDate": "2026-11-05T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "Zimbabwe: Stanbic Bank Launches Evolve Account for Women",
-      "link": "https://mutapatimes.com/articles/2026-11-05-zimbabwe-stanbic-bank-launches-evolve-account-for-women",
-      "image": "https://mutapatimes.com/img/cards/news/f766060453df.png",
-      "pubDate": "2026-11-05T10:04:33+00:00",
+      "title": "Zimbabwe: ZHRC Urges Humane Approach As Demolitions Leave Families Facing Displacement",
+      "link": "https://mutapatimes.com/articles/2026-11-05-zimbabwe-zhrc-urges-humane-approach-as-demolitions-leave-fam",
+      "image": "https://mutapatimes.com/img/cards/news/87ede671964c.png",
+      "pubDate": "2026-11-05T12:19:54+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Naqvi debuts, Cremer returns as Zimbabwe bat in opening Test",
+      "link": "https://mutapatimes.com/articles/2026-11-05-naqvi-debuts-cremer-returns-as-zimbabwe-bat-in-opening-test",
+      "image": "https://mutapatimes.com/img/cards/news/769c339c7383.png",
+      "pubDate": "2026-11-05T06:18:43+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe: Reckless Driving Blamed for Zimbabwe's Rising Road Deaths",
-      "link": "https://mutapatimes.com/articles/2026-11-05-zimbabwe-reckless-driving-blamed-for-zimbabwes-rising-road-d",
-      "image": "https://mutapatimes.com/img/cards/news/dece18a4925c.png",
-      "pubDate": "2026-11-05T04:17:28+00:00",
+      "title": "Naqvi debuts, Cremer returns as Zimbabwe bat in opening Test",
+      "link": "https://mutapatimes.com/news/2026-11-05-naqvi-debuts-cremer-returns-as-zimbabwe-bat-in-opening-test-a93547",
+      "image": "https://mutapatimes.com/img/cards/news/43b6993d8ed0.png",
+      "pubDate": "2026-11-05T06:18:43+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Stanbic Bank Launches Evolve Account for Women",
+      "link": "https://mutapatimes.com/articles/2026-11-05-stanbic-bank-launches-evolve-account-for-women",
+      "image": "https://mutapatimes.com/img/cards/news/6c92a7d7b164.png",
+      "pubDate": "2026-11-05T05:40:00+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zim, Moza step up connectivity",
-      "link": "https://mutapatimes.com/articles/2026-11-04-zim-moza-step-up-connectivity",
-      "image": "https://mutapatimes.com/img/cards/news/7cd4c3cc16b0.png",
-      "pubDate": "2026-11-04T22:12:32+00:00",
+      "title": "Stanbic Bank Launches Evolve Account for Women",
+      "link": "https://mutapatimes.com/news/2026-11-05-stanbic-bank-launches-evolve-account-for-women-22c2a9",
+      "image": "https://mutapatimes.com/img/cards/news/18d0c2f41a8d.png",
+      "pubDate": "2026-11-05T05:40:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "FULL DETAILS: Wicknell Chivayo’s Ex-Wife Sonja and Sister Strike Deal Over Late Mbinga’s Fortune as $25 Million Court Fight Still Hangs",
+      "link": "https://mutapatimes.com/news/2026-11-05-full-details-wicknell-chivayo-s-ex-wife-sonja-and-sister-strike-deal-over-late-cbb64a",
+      "image": "https://mutapatimes.com/img/cards/news/26f57679b184.png",
+      "pubDate": "2026-11-05T05:26:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Another Kariba ferry death as sabhuku calls for more rituals: Police Sub-Aqua divers recover body 25 metres underwater (VIDEOS)",
+      "link": "https://mutapatimes.com/news/2026-11-05-another-kariba-ferry-death-as-sabhuku-calls-for-more-rituals-police-sub-aqua-df7967",
+      "image": "https://mutapatimes.com/img/cards/news/3a31eddd8312.png",
+      "pubDate": "2026-11-05T05:14:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "MPs Demand Suspension Of ZRP Smart Traffic Fines Until System Problems Are Fixed",
+      "link": "https://mutapatimes.com/news/2026-11-05-mps-demand-suspension-of-zrp-smart-traffic-fines-until-system-problems-are-fixed-248b8e",
+      "image": "https://mutapatimes.com/img/cards/news/9c14d9522e29.png",
+      "pubDate": "2026-11-05T05:07:39+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "CPC secures 1 873 convictions in counterfeit goods crackdown",
+      "link": "https://mutapatimes.com/articles/2026-11-05-cpc-secures-1-873-convictions-in-counterfeit-goods-crackdown",
+      "image": "https://mutapatimes.com/img/cards/news/57e609ef6420.png",
+      "pubDate": "2026-11-05T04:59:51+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Govt moves to reduce rice imports",
-      "link": "https://mutapatimes.com/articles/2026-11-04-govt-moves-to-reduce-rice-imports",
-      "image": "https://mutapatimes.com/img/cards/news/cfed1521e624.png",
-      "pubDate": "2026-11-04T22:10:41+00:00",
-      "category": "Business"
+      "title": "A clinic to end decades of long walks for healthcare",
+      "link": "https://mutapatimes.com/articles/2026-11-05-a-clinic-to-end-decades-of-long-walks-for-healthcare",
+      "image": "https://mutapatimes.com/img/cards/news/e7ff2bf832f4.png",
+      "pubDate": "2026-11-05T04:59:39+00:00",
+      "category": "Health"
     },
     {
       "kind": "news",
@@ -76,22 +132,6 @@
     },
     {
       "kind": "news",
-      "title": "Naqvi set for long-awaited Zim debut",
-      "link": "https://mutapatimes.com/articles/2026-11-04-naqvi-set-for-long-awaited-zim-debut",
-      "image": "https://mutapatimes.com/img/cards/news/704f3e8a19cd.png",
-      "pubDate": "2026-11-04T22:02:54+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Making AI speak, preserve our languages in tech era",
-      "link": "https://mutapatimes.com/articles/2026-11-04-making-ai-speak-preserve-our-languages-in-tech-era",
-      "image": "https://mutapatimes.com/img/cards/news/aa21dde4ac97.png",
-      "pubDate": "2026-11-04T22:02:09+00:00",
-      "category": "Culture"
-    },
-    {
-      "kind": "news",
       "title": "Making AI speak, preserve our languages in tech era",
       "link": "https://mutapatimes.com/news/2026-11-05-making-ai-speak-preserve-our-languages-in-tech-era-36067f",
       "image": "https://mutapatimes.com/img/cards/news/8a9d17ec2d66.png",
@@ -116,7 +156,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 5 Nov: Harare overcast · high 32° / low 19°",
+      "title": "Zim weather 5 Nov: Harare overcast · high 32° / low 18°",
       "link": "https://mutapatimes.com/weather?d=2026-11-05",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-05",
       "pubDate": "2026-11-04T22:00:00+00:00",
@@ -439,46 +479,6 @@
       "title": "HR, Admin & Social Services : Uzumba Maramba Pfungwe Zvataida Rural District Council.",
       "link": "https://vacancymail.co.zw/jobs/hr-admin-social-services-uzumba-maramba-pfungwe-zvataida-rural-district-council-70109/",
       "image": "https://mutapatimes.com/img/cards/jobs/caab341a8151.png",
-      "pubDate": "2026-11-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — 2027 GRADUATE TRAINEE DEVELOPMENT PROGRAMME",
-      "link": "https://vacancymail.co.zw/jobs/2027-graduate-trainee-development-programme-70108/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cfd99c4daa7a.png",
-      "pubDate": "2026-11-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mine Gang Leader/Shift Boss",
-      "link": "https://vacancymail.co.zw/jobs/mine-gang-leadershift-boss-70107/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7f585acceced.png",
-      "pubDate": "2026-11-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-70106/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a85aa6397f15.png",
-      "pubDate": "2026-11-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Africa Trade and Distribution Co — Finance Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-manager-70105/",
-      "image": "https://mutapatimes.com/img/cards/jobs/166d8ecf30d4.png",
-      "pubDate": "2026-11-04T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-70104/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e7883dd810cf.png",
       "pubDate": "2026-11-04T22:00:00+00:00",
       "category": "Jobs"
     }

@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2026 10:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 19:24:10 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -18,6 +18,18 @@
     <copyright>Copyright 2020-2026 The Mutapa Times</copyright>
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
+    <item>
+      <title>Zimbabwe: ZHRC Urges Humane Approach As Demolitions Leave Families Facing Displacement</title>
+      <link>https://mutapatimes.com/stories/87ede671964c.html</link>
+      <description>via allAfrica.com #Zimbabwe #Tech #AfricaTech #ZimbabweNews</description>
+      <pubDate>Thu, 05 Nov 2026 12:19:54 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/87ede671964c.html</guid>
+      <category>Tech</category>
+      <dc:creator>allAfrica.com</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/87ede671964c.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/87ede671964c.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/87ede671964c.png" type="image/png" length="200000"/>
+    </item>
     <item>
       <title>Zimbabwe: Stanbic Bank Launches Evolve Account for Women</title>
       <link>https://mutapatimes.com/stories/f766060453df.html</link>
@@ -29,6 +41,42 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/f766060453df.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f766060453df.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/f766060453df.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Naqvi debuts, Cremer returns as Zimbabwe bat in opening Test</title>
+      <link>https://mutapatimes.com/stories/769c339c7383.html</link>
+      <description>Afghanistan handed a debut to middle-order batter Rahmanullah via Espncricinfo #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Thu, 05 Nov 2026 06:18:43 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/769c339c7383.html</guid>
+      <category>Business</category>
+      <dc:creator>Espncricinfo</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/769c339c7383.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/769c339c7383.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/769c339c7383.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Stanbic Bank Launches Evolve Account for Women @263Chat</title>
+      <link>https://mutapatimes.com/stories/6c92a7d7b164.html</link>
+      <description>Stanbic Bank Zimbabwe has launched the Evolve Account for Women as it continues to advance financial inclusion across gender, sectors and socio-economic groups. The Stanbic Bank Evolve Account for Women was launched in partnership with Plan International Zimbabwe and is designed via 263chat #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Thu, 05 Nov 2026 05:40:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/6c92a7d7b164.html</guid>
+      <category>Business</category>
+      <dc:creator>263chat</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/6c92a7d7b164.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/6c92a7d7b164.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/6c92a7d7b164.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>CPC secures 1 873 convictions in counterfeit goods crackdown @zimsituation</title>
+      <link>https://mutapatimes.com/stories/57e609ef6420.html</link>
+      <description>Precious Manomano-Herald Reporter THE Consumer Protection Commission has secured 1 873 successful prosecutions and removed 15 200 counterfeit product units from circulation as it intensifies its crackdown on fake goods and deceptive business practices. The counterfeit products in via Zimbabwe Situation #Zimbabwe #Business #ZimbabweEconomy #ZimbabweNews</description>
+      <pubDate>Thu, 05 Nov 2026 04:59:51 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/57e609ef6420.html</guid>
+      <category>Business</category>
+      <dc:creator>Zimbabwe Situation</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/57e609ef6420.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/57e609ef6420.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/57e609ef6420.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Zimbabwe: Reckless Driving Blamed for Zimbabwe’s Rising Road Deaths</title>
@@ -689,54 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/72aa3324db9b.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/72aa3324db9b.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/72aa3324db9b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Henkik Investments — FRONT END LOADER OPERATOR X 2</title>
-      <link>https://mutapatimes.com/stories/c6cc4778ff63.html</link>
-      <description>We are currently seeking for Front-End Loader Operators with great communication skills, excellent team players who are highly safety conscious and self-motivated. These individuals will be responsib… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 04 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c6cc4778ff63.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Henkik Investments</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c6cc4778ff63.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c6cc4778ff63.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c6cc4778ff63.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Dental Therapist</title>
-      <link>https://mutapatimes.com/stories/4880f78a4646.html</link>
-      <description>KEY KPI 95% Patient Satisfaction Human skills: Good communication Harare · Full Time · To be announced to … (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 04 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/4880f78a4646.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/4880f78a4646.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/4880f78a4646.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/4880f78a4646.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Pharmacist</title>
-      <link>https://mutapatimes.com/stories/8a8d4ef7f4b0.html</link>
-      <description>KEY KPI: 100% Dispensing accuracy Human Skills:Analytical thinking Harare · Full Time · To be announced to … (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 04 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/8a8d4ef7f4b0.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/8a8d4ef7f4b0.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/8a8d4ef7f4b0.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/8a8d4ef7f4b0.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Croco Holdings — Procurement Officer</title>
-      <link>https://mutapatimes.com/stories/93d77401edb5.html</link>
-      <description>CROCO HOLDINGS EMPLOYMENT OPPORTUNITY PROCUREMENT OFFICER We are seeking a highly motivated and experienced Procurement Officer to join our team. The successful candidate will be responsible for mana… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Wed, 04 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/93d77401edb5.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Croco Holdings</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/93d77401edb5.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/93d77401edb5.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/93d77401edb5.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
