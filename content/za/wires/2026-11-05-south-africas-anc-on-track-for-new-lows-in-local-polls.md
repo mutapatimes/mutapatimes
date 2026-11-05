@@ -1,0 +1,16 @@
+---
+title: "South Africa’s ANC on track for new lows in local polls"
+date: 2026-11-05T21:52:15.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "South Africa’s ANC on track for new lows in local polls"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYnBFOVNmdTJMTW5EYThLRGpYblN1YnhBVlRoTXZoUWN3WDhUbDlDOUxCaEJYVnZxZWxZdHd2TWh6ZjVGRXM3QnRUNzd5YU5GRHFUVnhXMldtZUhkaXhVN08tVHZWalBvY3FsR3VMSWNZTTNISGZUOFZReHF1cVVIWU8zcGNKMmZ1LW4zZ3EwM0pIOGtHd1c1U1pqZ9IBoAFBVV95cUxNUjRHNTVDUzRSWTJ0Ty1QbjhOSFhJaDI1Y3RFdGloUHBNVW9oZjJHUlVKMUNZR0paUGgtcFlvTGRBVWNtTDVLcXBOa2hMUVlJYVVYZWR2YXJralZENkNVVlJ4T1FvUmFMaFVMQTNCZGgtTGZiejZVa3A2MnUzLXJfcG5QWjhzVUpLN2hRbnhvTTJoMEFueUpYM1lxejhDd3Ni?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMimwFBVV95cUxNYnBFOVNmdTJMTW5EYThLRGpYblN1YnhBVlRoTXZoUWN3WDhUbDlDOUxCaEJYVnZxZWxZdHd2TWh6ZjVGRXM3QnRUNzd5YU5GRHFUVnhXMldtZUhkaXhVN08tVHZWalBvY3FsR3VMSWNZTTNISGZUOFZReHF1cVVIWU8zcGNKMmZ1LW4zZ3EwM0pIOGtHd1c1U1pqZ9IBoAFBVV95cUxNUjRHNTVDUzRSWTJ0Ty1QbjhOSFhJaDI1Y3RFdGloUHBNVW9oZjJHUlVKMUNZR0paUGgtcFlvTGRBVWNtTDVLcXBOa2hMUVlJYVVYZWR2YXJralZENkNVVlJ4T1FvUmFMaFVMQTNCZGgtTGZiejZVa3A2MnUzLXJfcG5QWjhzVUpLN2hRbnhvTTJoMEFueUpYM1lxejhDd3Ni?oc=5)
