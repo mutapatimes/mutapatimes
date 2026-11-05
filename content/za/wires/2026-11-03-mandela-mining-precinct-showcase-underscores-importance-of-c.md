@@ -1,0 +1,16 @@
+---
+title: "Mandela Mining Precinct showcase underscores importance of collaboration, innovation"
+date: 2026-11-03T14:43:00.000Z
+author: Mining Weekly
+category: Business
+image: 
+summary: "Mandela Mining Precinct showcase underscores importance of collaboration, innovation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiywFBVV95cUxOX3hYc213UW1UTjdkQXI3cWZpMlRELWRROVJXRWxPel9xdm9jTGRGYWV6T1cyZU4wdHFHX20tVG9fdWYtNi1uSHV3dFUtQ0xHOU9QUG5zXzhfMnd1RFVPWFZma19Zdm5CVENuVTkyUzBUeXJzaGNONE0zdjV1OW9IU3RpUHBFZktJaUFpZXpoeUdMa2RlckZaeWNsd29wUXRuLVpsSDhxdlY0VXlrYlR3c1BReTVfZlFGSUU5aW52Tm1EWUJaM1d0alVlbw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Weekly.*
+[Read original article](https://news.google.com/rss/articles/CBMiywFBVV95cUxOX3hYc213UW1UTjdkQXI3cWZpMlRELWRROVJXRWxPel9xdm9jTGRGYWV6T1cyZU4wdHFHX20tVG9fdWYtNi1uSHV3dFUtQ0xHOU9QUG5zXzhfMnd1RFVPWFZma19Zdm5CVENuVTkyUzBUeXJzaGNONE0zdjV1OW9IU3RpUHBFZktJaUFpZXpoeUdMa2RlckZaeWNsd29wUXRuLVpsSDhxdlY0VXlrYlR3c1BReTVfZlFGSUU5aW52Tm1EWUJaM1d0alVlbw?oc=5)

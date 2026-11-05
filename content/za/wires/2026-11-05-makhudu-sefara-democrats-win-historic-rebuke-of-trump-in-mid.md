@@ -1,0 +1,16 @@
+---
+title: "MAKHUDU SEFARA | Democrats win historic rebuke of Trump in midterms, but will this ease pressure on South Africa?"
+date: 2026-11-05T02:30:00.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "MAKHUDU SEFARA | Democrats win historic rebuke of Trump in midterms, but will this ease pressure on South Africa?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimgJBVV95cUxQVEwzTDdVaEZZVGZGeVgzTFBuWmh6OHVFclZ5T05UejFSbEdzLUQtREo5Q0lSZzNKbmNERXBmc255cEFCalVDUUstWWFSLUdtS2MzczRQNjNtOXh3UERkYnBicjVFdFBMby1DeTNaZTREOGR6Vm9MclFBVHY1ZjZweGFpOGE4bjNmcW5XZGdZR2VIb2dETjZwekt5UC1aVmZYTjFoa0s2VEZnYUI5ZnMtaXVIWEdRbTIzTkxoaXdiNDY3Z1dTYUNwTXFlUkdEYTljZXpBQ0ZZeXI2TEZEX0VmTEY1V01YM3NWMmczdzlWU3RralNyUWpJQmI5LWJQWXdRZVRvdFI5Z1hMWnlLN0tTM3FDTkhSWXlCdXc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMimgJBVV95cUxQVEwzTDdVaEZZVGZGeVgzTFBuWmh6OHVFclZ5T05UejFSbEdzLUQtREo5Q0lSZzNKbmNERXBmc255cEFCalVDUUstWWFSLUdtS2MzczRQNjNtOXh3UERkYnBicjVFdFBMby1DeTNaZTREOGR6Vm9MclFBVHY1ZjZweGFpOGE4bjNmcW5XZGdZR2VIb2dETjZwekt5UC1aVmZYTjFoa0s2VEZnYUI5ZnMtaXVIWEdRbTIzTkxoaXdiNDY3Z1dTYUNwTXFlUkdEYTljZXpBQ0ZZeXI2TEZEX0VmTEY1V01YM3NWMmczdzlWU3RralNyUWpJQmI5LWJQWXdRZVRvdFI5Z1hMWnlLN0tTM3FDTkhSWXlCdXc?oc=5)
