@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Nov 2026 18:47:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 19:23:48 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -223,18 +223,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/ecae19835f86.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 600,000 — Burnside - Reduced -Executive Sanctuary of Light, Space and Privacy (Burnside, Bulawayo East)</title>
-      <link>https://mutapatimes.com/property-landing/eda519f786d4.html</link>
-      <description>USD 600,000 — Burnside, Bulawayo East. 4 beds, 2 baths. Burnside - Reduced -Executive Sanctuary of Light, Space and Privacy. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Thu, 05 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/eda519f786d4.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/eda519f786d4.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/eda519f786d4.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/eda519f786d4.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 770,000 — Immaculate Family Home With Commercial &amp; Office Rights (Gunhill, Harare North)</title>
       <link>https://mutapatimes.com/property-landing/8dbf6db49269.html</link>
       <description>USD 770,000 — Gunhill, Harare North. 4 beds, 2 baths. Immaculate Family Home With Commercial &amp; Office Rights. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/cab414c4885d.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/cab414c4885d.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/cab414c4885d.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 280,000 — Luxury meets self sufficient!! (Arlington, Harare South)</title>
+      <link>https://mutapatimes.com/property-landing/9e935ed8b035.html</link>
+      <description>USD 280,000 — Arlington, Harare South. 4 beds, 5 baths. Luxury meets self sufficient!!. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Thu, 05 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/9e935ed8b035.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/9e935ed8b035.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
