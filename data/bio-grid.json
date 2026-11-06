@@ -1,14 +1,70 @@
 {
-  "fetched_at": "2026-11-06T10:18:12+00:00",
+  "fetched_at": "2026-11-06T18:47:43+00:00",
   "count": 60,
   "tiles": [
     {
+      "kind": "zse",
+      "title": "ZSE close 6 Nov 2026: All Share 472.71 (-0.98%)",
+      "link": "https://mutapatimes.com/zse?d=2026-11-06",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-11-06",
+      "pubDate": "2026-11-06T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "Zimbabwe woos Chinese investors as bilateral trade moves above US$5 billion",
-      "link": "https://mutapatimes.com/articles/2026-11-06-zimbabwe-woos-chinese-investors-as-bilateral-trade-moves-abo",
-      "image": "https://mutapatimes.com/img/cards/news/c9af8eef9cd8.png",
-      "pubDate": "2026-11-06T08:05:25+00:00",
-      "category": "Tech"
+      "title": "Zimbabwe: Manhunt for Chitungwiza Man Accused of Killing Mother",
+      "link": "https://mutapatimes.com/articles/2026-11-06-zimbabwe-manhunt-for-chitungwiza-man-accused-of-killing-moth",
+      "image": "https://mutapatimes.com/img/cards/news/c75740f04bdb.png",
+      "pubDate": "2026-11-06T13:17:57+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "How Zimbabwe, led by Hilton Mudariki and hot-stepper Eddie Siguake are desperate to make up for lost time",
+      "link": "https://mutapatimes.com/articles/2026-11-06-how-zimbabwe-led-by-hilton-mudariki-and-hot-stepper-eddie-si",
+      "image": "https://mutapatimes.com/img/cards/news/2655ae5c390f.png",
+      "pubDate": "2026-11-06T12:23:55+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "How Zimbabwe, led by Hilton Mudariki and hot-stepper Eddie Siguake are desperate to make up for lost time",
+      "link": "https://mutapatimes.com/news/2026-11-06-how-zimbabwe-led-by-hilton-mudariki-and-hot-stepper-eddie-siguake-are-desperate-cd1032",
+      "image": "https://mutapatimes.com/img/cards/news/99eb212fff99.png",
+      "pubDate": "2026-11-06T12:23:55+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean sommelier Makadzange reaches quarter-finals of world contest",
+      "link": "https://mutapatimes.com/articles/2026-11-06-zimbabwean-sommelier-makadzange-reaches-quarter-finals-of-wo",
+      "image": "https://mutapatimes.com/img/cards/news/2db417eaab42.png",
+      "pubDate": "2026-11-06T11:41:23+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwean sommelier Makadzange reaches quarter-finals of world contest",
+      "link": "https://mutapatimes.com/news/2026-11-06-zimbabwean-sommelier-makadzange-reaches-quarter-finals-of-world-contest-f405d9",
+      "image": "https://mutapatimes.com/img/cards/news/7f10d1109556.png",
+      "pubDate": "2026-11-06T11:41:23+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Smallholder Farmers Raise Climate Change Concerns, Call for Stronger Policy Action",
+      "link": "https://mutapatimes.com/articles/2026-11-06-zimbabwe-smallholder-farmers-raise-climate-change-concerns-c",
+      "image": "https://mutapatimes.com/img/cards/news/093613711b0d.png",
+      "pubDate": "2026-11-06T11:07:25+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Smallholder Farmers Raise Climate Change Concerns, Call for Stronger Policy Action",
+      "link": "https://mutapatimes.com/news/2026-11-06-zimbabwe-smallholder-farmers-raise-climate-change-concerns-call-for-stronger-59020f",
+      "image": "https://mutapatimes.com/img/cards/news/c8b277afa822.png",
+      "pubDate": "2026-11-06T11:07:25+00:00",
+      "category": "Entertainment"
     },
     {
       "kind": "news",
@@ -20,6 +76,54 @@
     },
     {
       "kind": "news",
+      "title": "Confusion erupts as Ethan Sutherland included in both Zimbabwe and Scotland squads",
+      "link": "https://mutapatimes.com/articles/2026-11-06-confusion-erupts-as-ethan-sutherland-included-in-both-zimbab",
+      "image": "https://mutapatimes.com/img/cards/news/c973f0be4c33.png",
+      "pubDate": "2026-11-06T06:07:48+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Confusion erupts as Ethan Sutherland included in both Zimbabwe and Scotland squads",
+      "link": "https://mutapatimes.com/news/2026-11-06-confusion-erupts-as-ethan-sutherland-included-in-both-zimbabwe-and-scotland-d8b5d1",
+      "image": "https://mutapatimes.com/img/cards/news/092f164b66fb.png",
+      "pubDate": "2026-11-06T06:07:48+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Bringing Nutrition Closer to Home for Families in Domboramwari and Overspill, Epworth, Zimbabwe",
+      "link": "https://mutapatimes.com/articles/2026-11-06-bringing-nutrition-closer-to-home-for-families-in-domboramwa",
+      "image": "https://mutapatimes.com/img/cards/news/5beafa3c8aef.png",
+      "pubDate": "2026-11-06T04:52:35+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo residents face 50% tariff hike, new levies in 2027",
+      "link": "https://mutapatimes.com/articles/2026-11-06-bulawayo-residents-face-50-tariff-hike-new-levies-in-2027",
+      "image": "https://mutapatimes.com/img/cards/news/186fadbc9b01.png",
+      "pubDate": "2026-11-06T04:46:07+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mutapa Energy boosts ICT education in rural Mberengwa schools",
+      "link": "https://mutapatimes.com/articles/2026-11-06-mutapa-energy-boosts-ict-education-in-rural-mberengwa-school",
+      "image": "https://mutapatimes.com/img/cards/news/e7343adfb127.png",
+      "pubDate": "2026-11-06T04:42:35+00:00",
+      "category": "Education"
+    },
+    {
+      "kind": "news",
+      "title": "Caught red-handed by official husband: Man beaten to death for enjoying all-night lula lula in married girlfriend’s bedroom",
+      "link": "https://mutapatimes.com/news/2026-11-06-caught-red-handed-by-official-husband-man-beaten-to-death-for-enjoying-all-07595e",
+      "image": "https://mutapatimes.com/img/cards/news/31a73c1e8b1e.png",
+      "pubDate": "2026-11-06T04:38:57+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
       "title": "Zimbabwe Police Admit Traffic Cameras Are Sending Fines To The Wrong Motorists",
       "link": "https://mutapatimes.com/news/2026-11-06-zimbabwe-police-admit-traffic-cameras-are-sending-fines-to-the-wrong-motorists-cf4997",
       "image": "https://mutapatimes.com/img/cards/news/4b765001943e.png",
@@ -28,11 +132,43 @@
     },
     {
       "kind": "news",
+      "title": "Manu Samoa name starting XV for Zimbabwe Test",
+      "link": "https://mutapatimes.com/articles/2026-11-06-manu-samoa-name-starting-xv-for-zimbabwe-test",
+      "image": "https://mutapatimes.com/img/cards/news/a39852130c25.png",
+      "pubDate": "2026-11-06T01:22:21+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Manu Samoa name starting XV for Zimbabwe Test",
+      "link": "https://mutapatimes.com/news/2026-11-06-manu-samoa-name-starting-xv-for-zimbabwe-test-3efb3a",
+      "image": "https://mutapatimes.com/img/cards/news/a9334fb25ed5.png",
+      "pubDate": "2026-11-06T01:22:21+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
       "title": "Two ex-All Blacks among four debutants for Manu Samoa against Zimbabwe",
       "link": "https://mutapatimes.com/news/2026-11-06-two-ex-all-blacks-among-four-debutants-for-manu-samoa-against-zimbabwe-445a04",
       "image": "https://mutapatimes.com/img/cards/news/80375a50771a.png",
       "pubDate": "2026-11-05T22:07:17+00:00",
       "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo eyes investment surge after Sanganai/Hlanganani Expo",
+      "link": "https://mutapatimes.com/articles/2026-11-05-bulawayo-eyes-investment-surge-after-sanganaihlanganani-expo",
+      "image": "https://mutapatimes.com/img/cards/news/589a7aabc7cc.png",
+      "pubDate": "2026-11-05T22:05:48+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Bulawayo eyes investment surge after Sanganai/Hlanganani Expo",
+      "link": "https://mutapatimes.com/news/2026-11-06-bulawayo-eyes-investment-surge-after-sanganai-hlanganani-expo-04826f",
+      "image": "https://mutapatimes.com/img/cards/news/fea619348361.png",
+      "pubDate": "2026-11-05T22:05:48+00:00",
+      "category": "Entertainment"
     },
     {
       "kind": "news",
@@ -343,142 +479,6 @@
       "title": "Oxfam — Call for Expression of Interest : Consultancy for Research on Strengthening Markets and Value Chains for Women's Economic Empowerment",
       "link": "https://vacancymail.co.zw/jobs/call-for-expression-of-interest-consultancy-for-research-on-strengthening-markets-and-value-chains-for-womens-economic-empowerment-70127/",
       "image": "https://mutapatimes.com/img/cards/jobs/5f480e23af91.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Millennium Homes — Security Officers",
-      "link": "https://vacancymail.co.zw/jobs/security-officers-70122/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e2fb9f3e1494.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Accounts Clerk",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-70121/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f0aae42dac36.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cresta Hotels — Restaurant Supervisor.",
-      "link": "https://vacancymail.co.zw/jobs/restaurant-supervisor-70120/",
-      "image": "https://mutapatimes.com/img/cards/jobs/baf0877f2575.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Person : Ridesure Auto Imports",
-      "link": "https://vacancymail.co.zw/jobs/sales-person-ridesure-auto-imports-70119/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c811e831162c.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Group Mine Planning Manager",
-      "link": "https://vacancymail.co.zw/jobs/group-mine-planning-manager-70118/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c865eb41fdb9.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Catholic Relief Services — Finance Graduate Intern (Harare Based)",
-      "link": "https://vacancymail.co.zw/jobs/finance-graduate-intern-harare-based-70117/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e669a4be4070.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Telecom Tower Rigger",
-      "link": "https://vacancymail.co.zw/jobs/telecom-tower-rigger-70116/",
-      "image": "https://mutapatimes.com/img/cards/jobs/faa553b917b1.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Structural Engineer - Telecommunications",
-      "link": "https://vacancymail.co.zw/jobs/structural-engineer-telecommunications-70115/",
-      "image": "https://mutapatimes.com/img/cards/jobs/757122bdf04a.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Gallery of Zimbabwe — Security Officer",
-      "link": "https://vacancymail.co.zw/jobs/security-officer-70114/",
-      "image": "https://mutapatimes.com/img/cards/jobs/29162183759d.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Oil Infrastructure Company of Zimbabwe (NOIC) — Sales Manager",
-      "link": "https://vacancymail.co.zw/jobs/sales-manager-70113/",
-      "image": "https://mutapatimes.com/img/cards/jobs/788a602f948f.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mbire Rural District Council — EXECUTIVE OFFICER PLANNING AND LAND MANAGEMENT (GRADE 10)",
-      "link": "https://vacancymail.co.zw/jobs/executive-officer-planning-and-land-management-grade-10-70112/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6b081a8b487f.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Planning Technician : Uzumba Maramba Pfungwe Zvataida Rural District Council.",
-      "link": "https://vacancymail.co.zw/jobs/planning-technician-uzumba-maramba-pfungwe-zvataida-rural-district-council-70110/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9dc9714155ce.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "HR, Admin & Social Services : Uzumba Maramba Pfungwe Zvataida Rural District Council.",
-      "link": "https://vacancymail.co.zw/jobs/hr-admin-social-services-uzumba-maramba-pfungwe-zvataida-rural-district-council-70109/",
-      "image": "https://mutapatimes.com/img/cards/jobs/caab341a8151.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NetOne — 2027 GRADUATE TRAINEE DEVELOPMENT PROGRAMME",
-      "link": "https://vacancymail.co.zw/jobs/2027-graduate-trainee-development-programme-70108/",
-      "image": "https://mutapatimes.com/img/cards/jobs/cfd99c4daa7a.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mine Gang Leader/Shift Boss",
-      "link": "https://vacancymail.co.zw/jobs/mine-gang-leadershift-boss-70107/",
-      "image": "https://mutapatimes.com/img/cards/jobs/7f585acceced.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-70106/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a85aa6397f15.png",
-      "pubDate": "2026-11-05T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Africa Trade and Distribution Co — Finance Manager",
-      "link": "https://vacancymail.co.zw/jobs/finance-manager-70105/",
-      "image": "https://mutapatimes.com/img/cards/jobs/166d8ecf30d4.png",
       "pubDate": "2026-11-05T22:00:00+00:00",
       "category": "Jobs"
     }
