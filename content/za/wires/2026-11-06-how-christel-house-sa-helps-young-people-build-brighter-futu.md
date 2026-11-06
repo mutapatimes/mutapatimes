@@ -1,0 +1,16 @@
+---
+title: "How Christel House SA helps young people build brighter futures and why multi-tiered support is crucial"
+date: 2026-11-06T08:30:30.000Z
+author: News24
+category: Business
+image: 
+summary: "How Christel House SA helps young people build brighter futures and why multi-tiered support is crucial"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZ285U2drSFU5cTRuN3FyaWdHXzZ6a3c5c2t6bGJxUXdFbHlQa3o2aVVjQVRoNURNX1J5Y19Sd09wX0x4ZGdUX2dlT1hPMkxNTG9ITjZLMzMyRFNHRHdxZEs4d3ZPVUQtQUs4Z1FFT1l4bFdUdE9iaVNlUUFzaVVHMGIyLWVqQ3hESU5WeTdrMUgyUTBNVkIyMk03Q3JqMm1pLXdmdWdLalBvQWg1UFlZMGxYWkphS2Y4VEYyUnBlS3BjSW1aaHJnOFgtQ3JGWkV0c3dSYnU3b1VBVG03WDItZDNVMHhIbWRIOFdXemo2a3V1N0R0MkJKZVZQMA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZ285U2drSFU5cTRuN3FyaWdHXzZ6a3c5c2t6bGJxUXdFbHlQa3o2aVVjQVRoNURNX1J5Y19Sd09wX0x4ZGdUX2dlT1hPMkxNTG9ITjZLMzMyRFNHRHdxZEs4d3ZPVUQtQUs4Z1FFT1l4bFdUdE9iaVNlUUFzaVVHMGIyLWVqQ3hESU5WeTdrMUgyUTBNVkIyMk03Q3JqMm1pLXdmdWdLalBvQWg1UFlZMGxYWkphS2Y4VEYyUnBlS3BjSW1aaHJnOFgtQ3JGWkV0c3dSYnU3b1VBVG03WDItZDNVMHhIbWRIOFdXemo2a3V1N0R0MkJKZVZQMA?oc=5)

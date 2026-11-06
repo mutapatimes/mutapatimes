@@ -1,0 +1,16 @@
+---
+title: "Fibre-ready homes connect South Africa’s housing and digital ambitions"
+date: 2026-11-06T10:21:55.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "Fibre-ready homes connect South Africa’s housing and digital ambitions"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMipwJBVV95cUxOc2VocjBqd2dOX0hvQjF5TWQ4ajBtdEYyN0I2MlRHRXpMZ0JuMm5PaXdxRl9RUFM0VzZxX25uS1RPTURaLWZLaTdqc0VRWl9sQlhTdHd6bHBiUXhtZGFzdlBoRUdtMzRYc1BVNGQ5Y2ljVjEtdmg3ZUFMbDAzTnRkb2x2eldvWmlfUTNzUEY4WFNIRHhZcmwyQldPU2tiYldiOTVaX0gzTXYwaUJlYy1jUU1kalF3V0NEUVpXUml4SzJhbTB4NHV5cGJrNUVWdHVXMHo5ODdheTItTTVvc0wyT09zNlZQWE8tcmpwUDY4dmJjWU1rV1V2eFlrSFNlLXRTOW5wUzRrVlVnZnh6UWFSbnNKaWF5Qjh1ODRvSWZNMkIxLUcxN2pB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMipwJBVV95cUxOc2VocjBqd2dOX0hvQjF5TWQ4ajBtdEYyN0I2MlRHRXpMZ0JuMm5PaXdxRl9RUFM0VzZxX25uS1RPTURaLWZLaTdqc0VRWl9sQlhTdHd6bHBiUXhtZGFzdlBoRUdtMzRYc1BVNGQ5Y2ljVjEtdmg3ZUFMbDAzTnRkb2x2eldvWmlfUTNzUEY4WFNIRHhZcmwyQldPU2tiYldiOTVaX0gzTXYwaUJlYy1jUU1kalF3V0NEUVpXUml4SzJhbTB4NHV5cGJrNUVWdHVXMHo5ODdheTItTTVvc0wyT09zNlZQWE8tcmpwUDY4dmJjWU1rV1V2eFlrSFNlLXRTOW5wUzRrVlVnZnh6UWFSbnNKaWF5Qjh1ODRvSWZNMkIxLUcxN2pB?oc=5)
