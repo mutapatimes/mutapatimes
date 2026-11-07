@@ -12,43 +12,56 @@
    "rank": 1,
    "team": "Hardrock",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/pcxw361792294441.png/tiny",
-   "played": 32,
+   "played": 33,
    "win": 21,
-   "draw": 6,
+   "draw": 7,
    "loss": 5,
    "gf": 57,
    "ga": 21,
    "gd": 36,
-   "points": 69
+   "points": 70
   },
   {
    "rank": 2,
    "team": "Scottland",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/kez5cn1788670202.png/tiny",
-   "played": 32,
-   "win": 18,
+   "played": 33,
+   "win": 19,
    "draw": 11,
    "loss": 3,
-   "gf": 46,
+   "gf": 50,
    "ga": 11,
-   "gd": 35,
-   "points": 65
+   "gd": 39,
+   "points": 68
   },
   {
    "rank": 3,
    "team": "Ngezi Platinum",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/pi3qwe1792292598.png/tiny",
-   "played": 32,
-   "win": 14,
+   "played": 33,
+   "win": 15,
    "draw": 14,
    "loss": 4,
-   "gf": 39,
+   "gf": 40,
    "ga": 26,
-   "gd": 13,
-   "points": 56
+   "gd": 14,
+   "points": 59
   },
   {
    "rank": 4,
+   "team": "CAPS United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
+   "played": 33,
+   "win": 14,
+   "draw": 12,
+   "loss": 7,
+   "gf": 37,
+   "ga": 26,
+   "gd": 11,
+   "points": 54
+  },
+  {
+   "rank": 5,
    "team": "Dynamos",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
    "played": 32,
@@ -59,19 +72,6 @@
    "ga": 24,
    "gd": 17,
    "points": 52
-  },
-  {
-   "rank": 5,
-   "team": "CAPS United",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
-   "played": 32,
-   "win": 13,
-   "draw": 12,
-   "loss": 7,
-   "gf": 36,
-   "ga": 26,
-   "gd": 10,
-   "points": 51
   }
  ],
  "results": [
@@ -91,5 +91,5 @@
    "away": "TelOne"
   }
  ],
- "updated": "2026-11-07T16:29:12+00:00"
+ "updated": "2026-11-07T21:54:20+00:00"
 }
