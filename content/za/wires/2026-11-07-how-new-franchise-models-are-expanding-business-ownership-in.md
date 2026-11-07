@@ -1,0 +1,16 @@
+---
+title: "How new franchise models are expanding business ownership in South Africa and beyond"
+date: 2026-11-07T05:00:10.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "How new franchise models are expanding business ownership in South Africa and beyond"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitgJBVV95cUxPdWdsWHR0N2FCNVVCS2pKWXhMbjBlSXhYUWZxVEJVaDRac3RjeUFYdU1VLTBrcjhpejBDVzh4YWdIYml3eDNYWkpsQllJV2ZNM1phMWR6RS04RngwanROcDdNNjlkd25DZ1ByYlVmc2pnTFlidkxmX3ZqV2cxUWRSN1Nsc05aT2Q1clpiSmtjMjhZVERibHMtNC1NdnVyN2dFUW5JaUIzMmVTd2xmZFpQcENkaUdyQjhCZ3F3NEEwbFJ5a3YxN0p4VUw3cFNnOV85NnpQZ1IySUpWVnZ6SXo5VGtVQThJaXp6d243QVN2cTdOQU1Yc29SUmtHODlkRzFEOXdmSVZia2k4M09LVTZ0cmpMbTJiczlYSEZ4bmxxd1Ata3NnNUhpYi1Ma3RfYnM0NHNRRUpB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitgJBVV95cUxPdWdsWHR0N2FCNVVCS2pKWXhMbjBlSXhYUWZxVEJVaDRac3RjeUFYdU1VLTBrcjhpejBDVzh4YWdIYml3eDNYWkpsQllJV2ZNM1phMWR6RS04RngwanROcDdNNjlkd25DZ1ByYlVmc2pnTFlidkxmX3ZqV2cxUWRSN1Nsc05aT2Q1clpiSmtjMjhZVERibHMtNC1NdnVyN2dFUW5JaUIzMmVTd2xmZFpQcENkaUdyQjhCZ3F3NEEwbFJ5a3YxN0p4VUw3cFNnOV85NnpQZ1IySUpWVnZ6SXo5VGtVQThJaXp6d243QVN2cTdOQU1Yc29SUmtHODlkRzFEOXdmSVZia2k4M09LVTZ0cmpMbTJiczlYSEZ4bmxxd1Ata3NnNUhpYi1Ma3RfYnM0NHNRRUpB?oc=5)
