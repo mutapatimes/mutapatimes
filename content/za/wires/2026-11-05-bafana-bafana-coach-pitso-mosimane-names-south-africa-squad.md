@@ -1,0 +1,16 @@
+---
+title: "Bafana Bafana coach Pitso Mosimane names South Africa squad for crucial AFCON qualifying double-header against Benni McCarthy's Kenya"
+date: 2026-11-05T11:21:28.000Z
+author: Goal.com
+category: Sport
+image: 
+summary: "Bafana Bafana coach Pitso Mosimane names South Africa squad for crucial AFCON qualifying double-header against Benni McCarthy's Kenya"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxPQ0QxQ0k0LV9OT3pKOXVJWHBRVEl5UV9MZ016YWNSTV9qV2hOZXE0MnVBQjFtbEdsOHJleW56WEhjbUMzR3VMUzdlM1loV1o4QUZpVDdXbGhzR294dm9FVEhzQlJKMHBwbXBJd19obS02US16NURpNFU4SE5NdTBtZE5obnhRMnJES1ZsQmh5R0NZNkJMb1hZOVJNRjZkQU1ROWg4M1EwZXhyRm5OS1g5QTZiNU1EVTV4ZEoybVhVZzRFYTRuQzJ6RTZURlZYOFlzaWh5NVA3M0paaHl1Rl9JeVRHQlhaTGc5VTZ1ci1LU184N1hrTkNkSW5idG44VkVmenpaaVU4WnNrV01fVlNFcGFhNA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Goal.com.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxPQ0QxQ0k0LV9OT3pKOXVJWHBRVEl5UV9MZ016YWNSTV9qV2hOZXE0MnVBQjFtbEdsOHJleW56WEhjbUMzR3VMUzdlM1loV1o4QUZpVDdXbGhzR294dm9FVEhzQlJKMHBwbXBJd19obS02US16NURpNFU4SE5NdTBtZE5obnhRMnJES1ZsQmh5R0NZNkJMb1hZOVJNRjZkQU1ROWg4M1EwZXhyRm5OS1g5QTZiNU1EVTV4ZEoybVhVZzRFYTRuQzJ6RTZURlZYOFlzaWh5NVA3M0paaHl1Rl9JeVRHQlhaTGc5VTZ1ci1LU184N1hrTkNkSW5idG44VkVmenpaaVU4WnNrV01fVlNFcGFhNA?oc=5)

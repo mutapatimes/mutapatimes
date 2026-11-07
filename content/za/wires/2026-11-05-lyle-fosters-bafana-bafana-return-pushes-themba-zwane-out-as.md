@@ -1,0 +1,16 @@
+---
+title: "Lyle Foster’s Bafana Bafana return pushes Themba Zwane out as Pitso Mosimane announces squad to face Benni McCarthy’s Kenya"
+date: 2026-11-05T12:02:42.000Z
+author: Hollywoodbets Sports Blog
+category: Sport
+image: 
+summary: "Lyle Foster’s Bafana Bafana return pushes Themba Zwane out as Pitso Mosimane announces squad to face Benni McCarthy’s Kenya"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdUluX0tiVGNkWlFLa19TN1VIUVl6T3gyQ3piN0RjUGp3N2pPQl9YenZ6Q3lkcGc1RkRra2dVQ0o5SE9JMy1FdTNlQ1dJc0htNDltTzI5S3ZDNVpOLURFem1Sd3RVNkFHLVdHMDNEVFJ4OHFYdDZMaGF0VVlEY1UyaG1PTWVWdHVMNUJaWXlHckRkR042NnVRN0VPRFdrMThtOW9YSHI0WVVDb0ZHODNVNUdUZEJyV3ppMWU5d1I3WGtKTWozOHBydjNGeG1yOWtDTlBYSVR0dkU0aTFQV2VKNkRBM2JKLUhRSDJnYkdyWU1qSVpKc2IyQ1o0ZHh2TGZlSEZyeg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Hollywoodbets Sports Blog.*
+[Read original article](https://news.google.com/rss/articles/CBMihAJBVV95cUxQdUluX0tiVGNkWlFLa19TN1VIUVl6T3gyQ3piN0RjUGp3N2pPQl9YenZ6Q3lkcGc1RkRra2dVQ0o5SE9JMy1FdTNlQ1dJc0htNDltTzI5S3ZDNVpOLURFem1Sd3RVNkFHLVdHMDNEVFJ4OHFYdDZMaGF0VVlEY1UyaG1PTWVWdHVMNUJaWXlHckRkR042NnVRN0VPRFdrMThtOW9YSHI0WVVDb0ZHODNVNUdUZEJyV3ppMWU5d1I3WGtKTWozOHBydjNGeG1yOWtDTlBYSVR0dkU0aTFQV2VKNkRBM2JKLUhRSDJnYkdyWU1qSVpKc2IyQ1o0ZHh2TGZlSEZyeg?oc=5)
