@@ -1,0 +1,16 @@
+---
+title: "Small South African towns that have banned streetlights and some perimeter security fences"
+date: 2026-11-08T14:02:48.000Z
+author: BusinessTech
+category: Tech
+image: 
+summary: "Small South African towns that have banned streetlights and some perimeter security fences"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTUV3MUFacXBNMlAwbGNRbUFfY3ZSSlYxSkJ6MW93a2JRRzhoWV90REE5QzkwdDQwZVVSSmkxTWVnaDlFdm5wYWxpajFHbnZJZEhsQTdia1ZXZHVfcFVZX29DbUNrTEE2aUlPYzFHYm1Kc0VYYko2Qi1HbEY3Ny12M2Y1dTFnQVlSbERJVmU2akJkWl9Edm1rMW13d2dfWmM0OE9NSmlDWWs4eHRMUkIwRlAyeHk2dllYZ2p1WEFuVHpXVUN3ckVFZXdXT18yWUhJZG9VTU4zQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by BusinessTech.*
+[Read original article](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTUV3MUFacXBNMlAwbGNRbUFfY3ZSSlYxSkJ6MW93a2JRRzhoWV90REE5QzkwdDQwZVVSSmkxTWVnaDlFdm5wYWxpajFHbnZJZEhsQTdia1ZXZHVfcFVZX29DbUNrTEE2aUlPYzFHYm1Kc0VYYko2Qi1HbEY3Ny12M2Y1dTFnQVlSbERJVmU2akJkWl9Edm1rMW13d2dfWmM0OE9NSmlDWWs4eHRMUkIwRlAyeHk2dllYZ2p1WEFuVHpXVUN3ckVFZXdXT18yWUhJZG9VTU4zQQ?oc=5)
