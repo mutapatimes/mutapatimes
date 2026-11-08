@@ -1,0 +1,16 @@
+---
+title: "Mosimane vs McCarthy: The battle of the South African mavericks with a point to prove"
+date: 2026-11-08T02:08:53.000Z
+author: News24
+category: Business
+image: 
+summary: "Mosimane vs McCarthy: The battle of the South African mavericks with a point to prove"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQOG1rX1RPMHhJaURnZlYyeWNhM0ctRXpGMlBjWjZjYThTaDItSlNfV3NTY0lpdmVRM200ZHR2bmkyVVp5SXlZdm03eUNURHZuMXExLW54dUdQNXRwaFVoQzlNbm1iekdtSjNVcE43ZFA0N2ttZHVkR1NScEdwWDQ5dnk5MXNKT2o4VlJSdlBqQXFOWUlSdlpLOVVnT2xlXzVtdld1LVpoTEZPS3NFdkhETXZYaXk2LWlnSlVhbVpTcXEtcjEyMDY2enNEaWk4SnA5LXZYcXZPa1pjMnBHZ2Vvbm1sTTRHWHNmNm5XNDRRREpITE9kM2FsMk9CQlY?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQOG1rX1RPMHhJaURnZlYyeWNhM0ctRXpGMlBjWjZjYThTaDItSlNfV3NTY0lpdmVRM200ZHR2bmkyVVp5SXlZdm03eUNURHZuMXExLW54dUdQNXRwaFVoQzlNbm1iekdtSjNVcE43ZFA0N2ttZHVkR1NScEdwWDQ5dnk5MXNKT2o4VlJSdlBqQXFOWUlSdlpLOVVnT2xlXzVtdld1LVpoTEZPS3NFdkhETXZYaXk2LWlnSlVhbVpTcXEtcjEyMDY2enNEaWk4SnA5LXZYcXZPa1pjMnBHZ2Vvbm1sTTRHWHNmNm5XNDRRREpITE9kM2FsMk9CQlY?oc=5)

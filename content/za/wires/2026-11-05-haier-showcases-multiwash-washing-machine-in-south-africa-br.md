@@ -1,0 +1,16 @@
+---
+title: "Haier Showcases MultiWash Washing Machine in South Africa, Bringing Greater Flexibility to Everyday Laundry"
+date: 2026-11-05T13:12:23.000Z
+author: IOL
+category: Culture
+image: 
+summary: "Haier Showcases MultiWash Washing Machine in South Africa, Bringing Greater Flexibility to Everyday Laundry"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWmhHNWZrYWdwbGJSZDdpenA1c0RpYWhkcEpBZDVjeDV6T3hWdFpnQXpqU25Nb1drVVhqclZZYndhMWRSalptdElTYmU0dS1VcGRUUTlXZzI3VlRfQWxNV2kyeGRBRE0tcGQzUVpLMExmbi15anVUa2NIWV9MSGtRWWFobDhkODBSdU9sQXg2cEo5WVB6VjUtOGo0RE5jSU1pZnVITjlGMWhjeDQtM2dJS29zMkRwb3k1ZXlHUzhzaGg3NDJ1c3AwaWtFZGIwUFFxbVFtQWxOQUoyLUlDaWRF?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by IOL.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWmhHNWZrYWdwbGJSZDdpenA1c0RpYWhkcEpBZDVjeDV6T3hWdFpnQXpqU25Nb1drVVhqclZZYndhMWRSalptdElTYmU0dS1VcGRUUTlXZzI3VlRfQWxNV2kyeGRBRE0tcGQzUVpLMExmbi15anVUa2NIWV9MSGtRWWFobDhkODBSdU9sQXg2cEo5WVB6VjUtOGo0RE5jSU1pZnVITjlGMWhjeDQtM2dJS29zMkRwb3k1ZXlHUzhzaGg3NDJ1c3AwaWtFZGIwUFFxbVFtQWxOQUoyLUlDaWRF?oc=5)
