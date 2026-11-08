@@ -1,30 +1,46 @@
 {
-  "fetched_at": "2026-11-08T03:59:31+00:00",
+  "fetched_at": "2026-11-08T12:39:13+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Molecular Surveillance Reveals Multiple Rabies Virus Lineages Circulating Across Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-11-08-molecular-surveillance-reveals-multiple-rabies-virus-lineage",
-      "image": "https://mutapatimes.com/img/cards/news/5fbe1bc4021f.png",
-      "pubDate": "2026-11-08T01:30:00+00:00",
-      "category": "Tech"
+      "title": "Ziyambi Ziyambi Blames Corruption As Medicines Disappear From Zimbabwean Hospitals",
+      "link": "https://mutapatimes.com/news/2026-11-08-ziyambi-ziyambi-blames-corruption-as-medicines-disappear-from-zimbabwean-e0030b",
+      "image": "https://mutapatimes.com/img/cards/news/ef48d06725be.png",
+      "pubDate": "2026-11-08T11:05:09+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "ESWATINI COMPANIES PURSUE NEW AGRICULTURAL PARTNERSHIPS AT ZIMBABWE EXPORT WEEK",
+      "link": "https://mutapatimes.com/articles/2026-11-08-eswatini-companies-pursue-new-agricultural-partnerships-at-z",
+      "image": "https://mutapatimes.com/img/cards/news/564afbe8194c.png",
+      "pubDate": "2026-11-08T11:01:14+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Sables suffer 43-7 defeat to Samoa in Nations Cup opener",
+      "link": "https://mutapatimes.com/articles/2026-11-08-sables-suffer-43-7-defeat-to-samoa-in-nations-cup-opener",
+      "image": "https://mutapatimes.com/img/cards/news/b7f28e8771e5.png",
+      "pubDate": "2026-11-08T05:26:06+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Sables suffer 43-7 defeat to Samoa in Nations Cup opener",
+      "link": "https://mutapatimes.com/news/2026-11-08-sables-suffer-43-7-defeat-to-samoa-in-nations-cup-opener-11eda8",
+      "image": "https://mutapatimes.com/img/cards/news/207431cd5bb0.png",
+      "pubDate": "2026-11-08T05:26:06+00:00",
+      "category": "Sports"
     },
     {
       "kind": "news",
       "title": "Molecular Surveillance Reveals Multiple Rabies Virus Lineages Circulating Across Zimbabwe",
       "link": "https://mutapatimes.com/news/2026-11-08-molecular-surveillance-reveals-multiple-rabies-virus-lineages-circulating-c40eb6",
       "image": "https://mutapatimes.com/img/cards/news/6d85bf9d6bec.png",
-      "pubDate": "2026-11-08T01:30:00+00:00",
+      "pubDate": "2026-11-08T01:35:30+00:00",
       "category": "Science"
-    },
-    {
-      "kind": "news",
-      "title": "Manu Samoa run in seven tries to beat Zimbabwe 43-7",
-      "link": "https://mutapatimes.com/articles/2026-11-07-manu-samoa-run-in-seven-tries-to-beat-zimbabwe-43-7",
-      "image": "https://mutapatimes.com/img/cards/news/a24360048131.png",
-      "pubDate": "2026-11-07T23:22:21+00:00",
-      "category": "Sport"
     },
     {
       "kind": "news",
@@ -33,6 +49,38 @@
       "image": "https://mutapatimes.com/img/cards/news/6b4245c44eef.png",
       "pubDate": "2026-11-07T23:22:21+00:00",
       "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "10k youths, graduates targeted for skills training",
+      "link": "https://mutapatimes.com/articles/2026-11-07-10k-youths-graduates-targeted-for-skills-training",
+      "image": "https://mutapatimes.com/img/cards/news/6c911f3fb757.png",
+      "pubDate": "2026-11-07T22:20:17+00:00",
+      "category": "Education"
+    },
+    {
+      "kind": "news",
+      "title": "10k youths, graduates targeted for skills training",
+      "link": "https://mutapatimes.com/news/2026-11-07-10k-youths-graduates-targeted-for-skills-training-131cf6",
+      "image": "https://mutapatimes.com/img/cards/news/541a2bf9679e.png",
+      "pubDate": "2026-11-07T22:20:17+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe wheat harvest hits another all-time record",
+      "link": "https://mutapatimes.com/articles/2026-11-07-zimbabwe-wheat-harvest-hits-another-all-time-record",
+      "image": "https://mutapatimes.com/img/cards/news/f8297f6da319.png",
+      "pubDate": "2026-11-07T22:18:58+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s wheat harvest hits new record...Institutional farms boost self-sufficiency drive",
+      "link": "https://mutapatimes.com/articles/2026-11-07-zimbabwes-wheat-harvest-hits-new-recordinstitutional-farms-b",
+      "image": "https://mutapatimes.com/img/cards/news/1161754e59e7.png",
+      "pubDate": "2026-11-07T22:06:38+00:00",
+      "category": "Business"
     },
     {
       "kind": "news",
@@ -60,7 +108,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 8 Nov: Harare partly cloudy · high 33° / low 20°",
+      "title": "Zim weather 8 Nov: Harare drizzle · high 31° / low 19°",
       "link": "https://mutapatimes.com/weather?d=2026-11-08",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-08",
       "pubDate": "2026-11-07T22:00:00+00:00",
@@ -431,54 +479,6 @@
       "title": "Cashier : Papa’s Freshly Baked",
       "link": "https://vacancymail.co.zw/jobs/cashier-papas-freshly-baked-70134/",
       "image": "https://mutapatimes.com/img/cards/jobs/e9d207960781.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dairibord Zimbabwe Pvt Ltd — Fitter and Turner",
-      "link": "https://vacancymail.co.zw/jobs/fitter-and-turner-70133/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5e126f39cccc.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Dog Trainer - Private Security",
-      "link": "https://vacancymail.co.zw/jobs/dog-trainer-private-security-70132/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91ef01a942a7.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Econet Wireless Zimbabwe — Refueling Drivers x6: (Harare x 1, Masvingo x 2, Gweru x 1, Mutare x 1 & Bulawayo x 1)",
-      "link": "https://vacancymail.co.zw/jobs/refueling-drivers-x6-harare-x-1-masvingo-x-2-gweru-x-1-mutare-x-1-bulawayo-x-1-70131/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fe3267213845.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Econet Wireless Zimbabwe — Refueling Assistants x 2: (Mutare x 1 & Bulawayo x 1)",
-      "link": "https://vacancymail.co.zw/jobs/refueling-assistants-x-2-mutare-x-1-bulawayo-x-1-70130/",
-      "image": "https://mutapatimes.com/img/cards/jobs/65447ff72b23.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sino-Zimbabwe Cement Company (Pvt) Ltd — Chemical Engineer",
-      "link": "https://vacancymail.co.zw/jobs/chemical-engineer-70129/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3e39d625f0db.png",
-      "pubDate": "2026-11-07T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "MUNICIPALITY OF MARONDERA — Environmental Health Manager",
-      "link": "https://vacancymail.co.zw/jobs/environmental-health-manager-70128/",
-      "image": "https://mutapatimes.com/img/cards/jobs/65ab4695a708.png",
       "pubDate": "2026-11-07T22:00:00+00:00",
       "category": "Jobs"
     }
