@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2026 22:02:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 22:16:04 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>School Administrator/ Project Coordinator</title>
+      <link>https://mutapatimes.com/stories/e6b070e6326e.html</link>
+      <description># VACANCY: SCHOOL ADMINISTRATOR / PROJECT COORDINATOR **Location: Harare, Zimbabwe** We are looking for a **dynamic, experienced and self-driven Administrator** to spearhead the establishment and man… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Sun, 08 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/e6b070e6326e.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/e6b070e6326e.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e6b070e6326e.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/e6b070e6326e.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Cake Fairy ~~ 0 — RESTAURANT MANAGER (Fairy Cafe Harare)</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/e669a4be4070.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/e669a4be4070.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/e669a4be4070.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Telecom Tower Rigger</title>
-      <link>https://mutapatimes.com/stories/faa553b917b1.html</link>
-      <description>TELECOM TOWER RIGGER Role: Carry out tower erection and rigging; install antennas, feeders, transmission equipment and associated infrastructure; inspect sites and report defects while meeting safety… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Sun, 08 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/faa553b917b1.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/faa553b917b1.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/faa553b917b1.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/faa553b917b1.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
