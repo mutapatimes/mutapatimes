@@ -49,6 +49,19 @@
   },
   {
    "rank": 4,
+   "team": "Dynamos",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
+   "played": 33,
+   "win": 13,
+   "draw": 16,
+   "loss": 4,
+   "gf": 42,
+   "ga": 24,
+   "gd": 18,
+   "points": 55
+  },
+  {
+   "rank": 5,
    "team": "CAPS United",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
    "played": 33,
@@ -59,19 +72,6 @@
    "ga": 26,
    "gd": 11,
    "points": 54
-  },
-  {
-   "rank": 5,
-   "team": "Dynamos",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
-   "played": 32,
-   "win": 12,
-   "draw": 16,
-   "loss": 4,
-   "gf": 41,
-   "ga": 24,
-   "gd": 17,
-   "points": 52
   }
  ],
  "results": [
@@ -84,5 +84,5 @@
   }
  ],
  "fixtures": [],
- "updated": "2026-11-08T22:09:41+00:00"
+ "updated": "2026-11-09T01:45:26+00:00"
 }
