@@ -1,0 +1,16 @@
+---
+title: "VALTERRA PLATINUM LIMITED – Notice of Disposal of Beneficial Interests in the Securities of the Company in Terms of Section 122 of the Companies Act, South Africa"
+date: 2026-11-09T13:00:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "VALTERRA PLATINUM LIMITED – Notice of Disposal of Beneficial Interests in the Securities of the Company in Terms of Section 122 of the Companies Act, South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxOVnJpbmd1THFtRFRUWWxWQ1R2N1NuRFpEVV9uYUg1d0g5dHZNaFVid0xTUHRqYmtMbmQ4Z1AxcFJaekxEeGdzSXVwUnBHaDBTTVpBbDJVOEMzeFA2OXR0Zk83VTV1ak4wTzI4aWpZVTRqUS1fd3RkTVVBS29rdVhrRWo0RzBvOEdZeHFuY3plWmV4azhBMlZvREZ4c0hOa1pKdnUzWEdmSjhYZy1zMXdndE9zZnhkZEZ2TVloSlR2QUVBbHVYNndVdzFoRlNfSENQM2RfUndEMWdEc0pUUGc3Y1gwVTZhM1VZYlNYYndTZk5GZWJQNjJSa1JDTEVsNzZsRUZpUm5pQmcwU1JadFR5bWp1aS1VdGRmdmdlaFlSdllqZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxOVnJpbmd1THFtRFRUWWxWQ1R2N1NuRFpEVV9uYUg1d0g5dHZNaFVid0xTUHRqYmtMbmQ4Z1AxcFJaekxEeGdzSXVwUnBHaDBTTVpBbDJVOEMzeFA2OXR0Zk83VTV1ak4wTzI4aWpZVTRqUS1fd3RkTVVBS29rdVhrRWo0RzBvOEdZeHFuY3plWmV4azhBMlZvREZ4c0hOa1pKdnUzWEdmSjhYZy1zMXdndE9zZnhkZEZ2TVloSlR2QUVBbHVYNndVdzFoRlNfSENQM2RfUndEMWdEc0pUUGc3Y1gwVTZhM1VZYlNYYndTZk5GZWJQNjJSa1JDTEVsNzZsRUZpUm5pQmcwU1JadFR5bWp1aS1VdGRmdmdlaFlSdllqZw?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Motlanthe urges cops to ‘target traffickers, not users’ in evolving global drug scene"
+date: 2026-11-09T19:45:49.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Motlanthe urges cops to ‘target traffickers, not users’ in evolving global drug scene"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNNWFoRUYxV01yYzF3eUVManlkUEM4UHliM2FxSGhTTGdyQXhRQ19GMm9lUlJxX0dhU2RNME9EbFdOMnlZZXc0NEo0d1JVWVRGaUJ1VUtpMC1oZFpURmIwb0dHLUQ5M0lsYkFiN3NKZkdSa0lIZzV6RnJ2aVRSUjhYTFNaNTRKTXRuQTQ3Smk1RGlEWlNrVG5lN0xYMjZuUklHYndxaS1aMEdhRnMyYjhKXzRwaWd1OXg2MjJCdklqenJrZzZEODFMYnc1NEl6c1U4LXBnS3JEZ0t3S2dfMG1fbWFZOEU0RUV6eFVZbWlGWGRPbG1GOVNld1JxZUpfcVltd1lDZ1U1ZUNfN0tIendycTNOSEtzY2VnQVVUWjBMUlFTRFROZmFJbFVfWlREaFpSd1VUVnFRZEN1RXc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiuwJBVV95cUxNNWFoRUYxV01yYzF3eUVManlkUEM4UHliM2FxSGhTTGdyQXhRQ19GMm9lUlJxX0dhU2RNME9EbFdOMnlZZXc0NEo0d1JVWVRGaUJ1VUtpMC1oZFpURmIwb0dHLUQ5M0lsYkFiN3NKZkdSa0lIZzV6RnJ2aVRSUjhYTFNaNTRKTXRuQTQ3Smk1RGlEWlNrVG5lN0xYMjZuUklHYndxaS1aMEdhRnMyYjhKXzRwaWd1OXg2MjJCdklqenJrZzZEODFMYnc1NEl6c1U4LXBnS3JEZ0t3S2dfMG1fbWFZOEU0RUV6eFVZbWlGWGRPbG1GOVNld1JxZUpfcVltd1lDZ1U1ZUNfN0tIendycTNOSEtzY2VnQVVUWjBMUlFTRFROZmFJbFVfWlREaFpSd1VUVnFRZEN1RXc?oc=5)

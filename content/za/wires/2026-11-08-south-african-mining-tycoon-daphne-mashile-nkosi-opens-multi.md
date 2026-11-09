@@ -1,0 +1,16 @@
+---
+title: "South African mining tycoon Daphne Mashile-Nkosi opens multimillion-rand community centre in Soweto"
+date: 2026-11-08T13:31:09.000Z
+author: Billionaires.Africa
+category: Business
+image: 
+summary: "South African mining tycoon Daphne Mashile-Nkosi opens multimillion-rand community centre in Soweto"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQzNGTWNQLVBLY1c3Z1ZoUFhuUDBMbjRCcUNrdUxMUnpORmNCRk9tOFpvSm1yaXBaQTFqT1o3UU9UUlRXdy1aUWQ4azdyR0I3YTg1eHRibWJNYlpoMV9fR0lEYWJGNnBHQ3ZWUkQzNzR2djRheDRyM3N5Q0s4NzdpdHg1VkpQbzlveVUtZTFXQmZpbkRNTlZidVptVDBxVWxPM1RfQkdwNVo1am1XV2dyZnRrLVAwWjVPd1J4ZzV1OUVUcXFvNV9kM016Vi1HYmlMZUUwQUJwMnJubTQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Billionaires.Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQzNGTWNQLVBLY1c3Z1ZoUFhuUDBMbjRCcUNrdUxMUnpORmNCRk9tOFpvSm1yaXBaQTFqT1o3UU9UUlRXdy1aUWQ4azdyR0I3YTg1eHRibWJNYlpoMV9fR0lEYWJGNnBHQ3ZWUkQzNzR2djRheDRyM3N5Q0s4NzdpdHg1VkpQbzlveVUtZTFXQmZpbkRNTlZidVptVDBxVWxPM1RfQkdwNVo1am1XV2dyZnRrLVAwWjVPd1J4ZzV1OUVUcXFvNV9kM016Vi1HYmlMZUUwQUJwMnJubTQ?oc=5)

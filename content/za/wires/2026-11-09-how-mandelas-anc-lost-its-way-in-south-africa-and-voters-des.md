@@ -1,0 +1,16 @@
+---
+title: "How Mandela's ANC lost its way in South Africa and voters deserted it - ABC News"
+date: 2026-11-09T18:13:22.000Z
+author: Breaking News, Latest News and Videos
+category: Health
+image: 
+summary: "How Mandela's ANC lost its way in South Africa and voters deserted it - ABC News"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2thQXlnYUtBMEpYb1NHZVdNTy1MY1l1cGdISVc0NXpLWmI2d1d3alZoNnJ4dTBhaGpvWWZ1dndSb3VUUm1wY2hiaFp2cDFQTS11WHdBcWYyMGdEcHIyNTNpWndtc1ZMbVZGcEoxWi1hdFZPaHYxRS1iNDY4eHl5LUJPcDNwOExkRlNIX0loaEo4SnlpT0xXbVZXcmIxUW9DQWfSAacBQVVfeXFMTjF2X3N2dmduQU90N2k3b2ZGbkc3bVdrcGFXWW5LLW1ZT3pQNlcyWEpnaVd3Z0o1S3VneC1WbVBHWXVZSF9KV19Rb3Z0N2tlMHNmdjFwUkphZ1ZVMUttaHhOSzRsVFBPcVVXNjdBSndlclJkNU1tRzd5ZFExUERsWm1xRnhfNWgzUjJPanpKRFVJVnREU2FhTXNIVTdET1FXaTRZOVBTdGM?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Breaking News, Latest News and Videos.*
+[Read original article](https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2thQXlnYUtBMEpYb1NHZVdNTy1MY1l1cGdISVc0NXpLWmI2d1d3alZoNnJ4dTBhaGpvWWZ1dndSb3VUUm1wY2hiaFp2cDFQTS11WHdBcWYyMGdEcHIyNTNpWndtc1ZMbVZGcEoxWi1hdFZPaHYxRS1iNDY4eHl5LUJPcDNwOExkRlNIX0loaEo4SnlpT0xXbVZXcmIxUW9DQWfSAacBQVVfeXFMTjF2X3N2dmduQU90N2k3b2ZGbkc3bVdrcGFXWW5LLW1ZT3pQNlcyWEpnaVd3Z0o1S3VneC1WbVBHWXVZSF9KV19Rb3Z0N2tlMHNmdjFwUkphZ1ZVMUttaHhOSzRsVFBPcVVXNjdBSndlclJkNU1tRzd5ZFExUERsWm1xRnhfNWgzUjJPanpKRFVJVnREU2FhTXNIVTdET1FXaTRZOVBTdGM?oc=5)

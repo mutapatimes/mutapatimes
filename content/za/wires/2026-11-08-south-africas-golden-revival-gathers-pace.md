@@ -1,0 +1,16 @@
+---
+title: "South Africa’s golden revival gathers pace"
+date: 2026-11-08T20:26:42.000Z
+author: The Australian
+category: Business
+image: 
+summary: "South Africa’s golden revival gathers pace"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxQSkYzWHlTbExLZktLZ0NISXFzNDR5Y25UZWk1WXFCT1E0LWdUelZUWVcyMlFVVE16NHIzR0JkM202SDRmQjl5ZGVYSFUtVC05cGZpOHBfTlgwOFdPT2IxNEdPOTlpVlRsNE1iSUtJdG02Q0VwNjI2Y2EtX2x5bnJKQ1FRcUxobTNOTXJmX0hYTDE2dzdxa01teFI3Y0hLWXdFa25zUFo0Q3NOR2kzZzJBc0NsOXYtYlMwWGFOQzR2ZFRGT3dfYVVHbElKVHp6TjNfWXVMLXhGWFlIWC1DNVZIbm90WVRVYjFqcHoxRzZVcGRRWnp4b1A2QmtjMEVIWWdjSGl4Vmg5NA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by The Australian.*
+[Read original article](https://news.google.com/rss/articles/CBMihwJBVV95cUxQSkYzWHlTbExLZktLZ0NISXFzNDR5Y25UZWk1WXFCT1E0LWdUelZUWVcyMlFVVE16NHIzR0JkM202SDRmQjl5ZGVYSFUtVC05cGZpOHBfTlgwOFdPT2IxNEdPOTlpVlRsNE1iSUtJdG02Q0VwNjI2Y2EtX2x5bnJKQ1FRcUxobTNOTXJmX0hYTDE2dzdxa01teFI3Y0hLWXdFa25zUFo0Q3NOR2kzZzJBc0NsOXYtYlMwWGFOQzR2ZFRGT3dfYVVHbElKVHp6TjNfWXVMLXhGWFlIWC1DNVZIbm90WVRVYjFqcHoxRzZVcGRRWnp4b1A2QmtjMEVIWWdjSGl4Vmg5NA?oc=5)

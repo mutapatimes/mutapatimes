@@ -1,0 +1,16 @@
+---
+title: "SACAP launches Master of Psychology in Counselling Psychology"
+date: 2026-11-09T08:01:35.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SACAP launches Master of Psychology in Counselling Psychology"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxOY2I5ZFhJbjFxSVhTcW54NG1RcDJrUnZid1ZpZ05ESVIwZGozNHlNVkFoZnZsOWZieHZtWFpuMjRhYVYwdHBWSDQ0ZjFiQnNhbW1Oc05Wbm9ia1R5LW1SOTVZY25JcjhFZlFYOFVPS1hwMWo3bkFCZmlhNXNjbXJ2djctcFd1VzJ3eXhaaGdheTVCNFo3WFpTWFBzbmd6cE1DcXA1cEJBRnZwbnNJZ3h1OEE4S2psczN1cXQtWUE5dmVOQjViYndfYW0zRDJGUHl3TXRhaE1tVjhfanVkaXVGT0tSQkx0T2poOVNTdmZJS0ZtUGxPMmJQTk8ySEhxbm14cGNXTjkyQm4wRkZvVzBWWklrclNBdVhGaWlKag?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMinAJBVV95cUxOY2I5ZFhJbjFxSVhTcW54NG1RcDJrUnZid1ZpZ05ESVIwZGozNHlNVkFoZnZsOWZieHZtWFpuMjRhYVYwdHBWSDQ0ZjFiQnNhbW1Oc05Wbm9ia1R5LW1SOTVZY25JcjhFZlFYOFVPS1hwMWo3bkFCZmlhNXNjbXJ2djctcFd1VzJ3eXhaaGdheTVCNFo3WFpTWFBzbmd6cE1DcXA1cEJBRnZwbnNJZ3h1OEE4S2psczN1cXQtWUE5dmVOQjViYndfYW0zRDJGUHl3TXRhaE1tVjhfanVkaXVGT0tSQkx0T2poOVNTdmZJS0ZtUGxPMmJQTk8ySEhxbm14cGNXTjkyQm4wRkZvVzBWWklrclNBdVhGaWlKag?oc=5)
