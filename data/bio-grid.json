@@ -1,22 +1,94 @@
 {
-  "fetched_at": "2026-11-10T14:11:19+00:00",
+  "fetched_at": "2026-11-10T21:10:42+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe: Miss Universe Zimbabwe Roseanna Hall Stranded in South Africa Due to Visa Delay Ahead of Global Beauty Finale",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-miss-universe-zimbabwe-roseanna-hall-stranded-in-so",
-      "image": "https://mutapatimes.com/img/cards/news/f7f39d222eaf.png",
-      "pubDate": "2026-11-10T10:00:21+00:00",
+      "title": "Zimbabwe: African Distillers Sales Volumes Surge As Revenue Hits U.S.$56.5m",
+      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-african-distillers-sales-volumes-surge-as-revenue-h",
+      "image": "https://mutapatimes.com/img/cards/news/760b86c32823.png",
+      "pubDate": "2026-11-10T16:02:41+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe showcases dryland restoration success at COP31",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-showcases-dryland-restoration-success-at-cop31",
-      "image": "https://mutapatimes.com/img/cards/news/82719b2b16c9.png",
-      "pubDate": "2026-11-10T07:56:23+00:00",
-      "category": "Tech"
+      "title": "Wildsky Resources trading halt continues pending Zimbabwe acquisition review By Investing.com",
+      "link": "https://mutapatimes.com/articles/2026-11-10-wildsky-resources-trading-halt-continues-pending-zimbabwe-ac",
+      "image": "https://mutapatimes.com/img/cards/news/dfab803fa0e1.png",
+      "pubDate": "2026-11-10T14:14:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Wildsky Resources trading halt continues pending Zimbabwe acquisition review By Investing.com",
+      "link": "https://mutapatimes.com/news/2026-11-10-wildsky-resources-trading-halt-continues-pending-zimbabwe-acquisition-review-by-b9652e",
+      "image": "https://mutapatimes.com/img/cards/news/7f65818e7bf4.png",
+      "pubDate": "2026-11-10T14:14:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "zse",
+      "title": "ZSE close 10 Nov 2026: All Share 479.72 (+0.43%)",
+      "link": "https://mutapatimes.com/zse?d=2026-11-10",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-11-10",
+      "pubDate": "2026-11-10T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
+      "kind": "news",
+      "title": "Thunderstorms Hit Zimbabwe: Met Dept warns of more rains, wind and hail this week in these areas (SEE DETAILS)",
+      "link": "https://mutapatimes.com/articles/2026-11-10-thunderstorms-hit-zimbabwe-met-dept-warns-of-more-rains-wind",
+      "image": "https://mutapatimes.com/img/cards/news/1f3822d528a4.png",
+      "pubDate": "2026-11-10T09:00:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Thunderstorms Hit Zimbabwe: Met Dept warns of more rains, wind and hail this week in these areas (SEE DETAILS)",
+      "link": "https://mutapatimes.com/news/2026-11-10-thunderstorms-hit-zimbabwe-met-dept-warns-of-more-rains-wind-and-hail-this-week-91314f",
+      "image": "https://mutapatimes.com/img/cards/news/8588647d4a65.png",
+      "pubDate": "2026-11-10T09:00:42+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe targets Chinese market through horticultural export drive",
+      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-targets-chinese-market-through-horticultural-export",
+      "image": "https://mutapatimes.com/img/cards/news/2bbd947a2613.png",
+      "pubDate": "2026-11-10T08:53:10+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Joint SDG Fund expands renewable energy and social protection in Zimbabwe through UN-led system financing",
+      "link": "https://mutapatimes.com/articles/2026-11-10-joint-sdg-fund-expands-renewable-energy-and-social-protectio",
+      "image": "https://mutapatimes.com/img/cards/news/fa0790c35bc8.png",
+      "pubDate": "2026-11-10T08:43:31+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Joint SDG Fund expands renewable energy and social protection in Zimbabwe through UN-led system financing",
+      "link": "https://mutapatimes.com/news/2026-11-10-joint-sdg-fund-expands-renewable-energy-and-social-protection-in-zimbabwe-1e831e",
+      "image": "https://mutapatimes.com/img/cards/news/e1e7c75d53c9.png",
+      "pubDate": "2026-11-10T08:43:31+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "ZSE, VFEX deliver strong returns as investor confidence improves",
+      "link": "https://mutapatimes.com/articles/2026-11-10-zse-vfex-deliver-strong-returns-as-investor-confidence-impro",
+      "image": "https://mutapatimes.com/img/cards/news/a4dfc06269b1.png",
+      "pubDate": "2026-11-10T08:33:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimra Intercepts 7 Pistols As 2017 Coup Guns Haunt The Nation",
+      "link": "https://mutapatimes.com/news/2026-11-10-zimra-intercepts-7-pistols-as-2017-coup-guns-haunt-the-nation-0f72c4",
+      "image": "https://mutapatimes.com/img/cards/news/29b35ce13d25.png",
+      "pubDate": "2026-11-10T08:21:16+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -28,11 +100,59 @@
     },
     {
       "kind": "news",
-      "title": "Ethnographic Study Evaluates Forces Shaping Hip Fracture Care in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-11-10-ethnographic-study-evaluates-forces-shaping-hip-fracture-car",
-      "image": "https://mutapatimes.com/img/cards/news/ebf047e20460.png",
-      "pubDate": "2026-11-10T05:48:57+00:00",
-      "category": "Health"
+      "title": "Zimbabwe and Afghanistan draw after historic Test performances in Sharjah",
+      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-and-afghanistan-draw-after-historic-test-performanc",
+      "image": "https://mutapatimes.com/img/cards/news/867f19fc7f20.png",
+      "pubDate": "2026-11-10T07:18:50+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe and Afghanistan draw after historic Test performances in Sharjah",
+      "link": "https://mutapatimes.com/news/2026-11-10-zimbabwe-and-afghanistan-draw-after-historic-test-performances-in-sharjah-b33ec3",
+      "image": "https://mutapatimes.com/img/cards/news/b7fdd9b54b5d.png",
+      "pubDate": "2026-11-10T07:18:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s Smart Traffic System Built On A Broken Database",
+      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwes-smart-traffic-system-built-on-a-broken-database",
+      "image": "https://mutapatimes.com/img/cards/news/0258d25944c1.png",
+      "pubDate": "2026-11-10T07:06:11+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s Smart Traffic System Built On A Broken Database",
+      "link": "https://mutapatimes.com/news/2026-11-10-zimbabwe-s-smart-traffic-system-built-on-a-broken-database-d4b720",
+      "image": "https://mutapatimes.com/img/cards/news/3addf49a4af3.png",
+      "pubDate": "2026-11-10T07:06:11+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Weather update: Bikita records 91mm as heavy rains hit several areas",
+      "link": "https://mutapatimes.com/articles/2026-11-10-weather-update-bikita-records-91mm-as-heavy-rains-hit-severa",
+      "image": "https://mutapatimes.com/img/cards/news/6921680732c0.png",
+      "pubDate": "2026-11-10T06:57:23+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Weather update: Bikita records 91mm as heavy rains hit several areas",
+      "link": "https://mutapatimes.com/news/2026-11-10-weather-update-bikita-records-91mm-as-heavy-rains-hit-several-areas-2995e1",
+      "image": "https://mutapatimes.com/img/cards/news/22a00ef40b75.png",
+      "pubDate": "2026-11-10T06:57:23+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe police issue fresh warning as firearms amnesty nears deadline",
+      "link": "https://mutapatimes.com/news/2026-11-10-zimbabwe-police-issue-fresh-warning-as-firearms-amnesty-nears-deadline-fb792b",
+      "image": "https://mutapatimes.com/img/cards/news/76f328cd99d0.png",
+      "pubDate": "2026-11-10T06:52:55+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -44,27 +164,11 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe: Zupco Set for 500 New Buses in Major Transport Revamp",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-zupco-set-for-500-new-buses-in-major-transport-reva",
-      "image": "https://mutapatimes.com/img/cards/news/89d1e0a410ef.png",
-      "pubDate": "2026-11-10T05:23:53+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zimbabwe: Govt Calls for Citizen-Centred AI to Transform Public Service Delivery",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-govt-calls-for-citizen-centred-ai-to-transform-publ",
-      "image": "https://mutapatimes.com/img/cards/news/77b5102a1ec5.png",
-      "pubDate": "2026-11-10T05:18:42+00:00",
-      "category": "Tech"
-    },
-    {
-      "kind": "news",
-      "title": "Equatorial Guinea vs Zimbabwe Preview & Prediction | 2027 Africa Cup of Nations Qualifying",
-      "link": "https://mutapatimes.com/news/2026-11-10-equatorial-guinea-vs-zimbabwe-preview-prediction-2027-africa-cup-of-nations-ef3712",
-      "image": "https://mutapatimes.com/img/cards/news/1221cfe9bba5.png",
-      "pubDate": "2026-11-10T03:31:00+00:00",
-      "category": "Sports"
+      "title": "9 Zimbabweans Arrested In South Africa Over Alleged Russia-Ukraine War Recruitment",
+      "link": "https://mutapatimes.com/news/2026-11-10-9-zimbabweans-arrested-in-south-africa-over-alleged-russia-ukraine-war-91570e",
+      "image": "https://mutapatimes.com/img/cards/news/12a245f27e98.png",
+      "pubDate": "2026-11-10T05:41:43+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -84,43 +188,11 @@
     },
     {
       "kind": "news",
-      "title": "First Test between Afghanistan and Zimbabwe produces over 1500 runs but ends in a draw",
-      "link": "https://mutapatimes.com/articles/2026-11-10-first-test-between-afghanistan-and-zimbabwe-produces-over-15",
-      "image": "https://mutapatimes.com/img/cards/news/c629de5c04db.png",
-      "pubDate": "2026-11-10T00:06:11+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "First Test between Afghanistan and Zimbabwe produces over 1500 runs but ends in a draw",
-      "link": "https://mutapatimes.com/news/2026-11-10-first-test-between-afghanistan-and-zimbabwe-produces-over-1500-runs-but-ends-in-4b2757",
-      "image": "https://mutapatimes.com/img/cards/news/7fedfed22e16.png",
-      "pubDate": "2026-11-10T00:06:11+00:00",
-      "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Could Starlink cut off some users in Zimbabwe?",
-      "link": "https://mutapatimes.com/articles/2026-11-10-could-starlink-cut-off-some-users-in-zimbabwe",
-      "image": "https://mutapatimes.com/img/cards/news/331b0ccb6a9f.png",
-      "pubDate": "2026-11-10T00:04:37+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
       "title": "Could Starlink cut off some users in Zimbabwe?",
       "link": "https://mutapatimes.com/news/2026-11-10-could-starlink-cut-off-some-users-in-zimbabwe-3c54bb",
       "image": "https://mutapatimes.com/img/cards/news/856bb92370ef.png",
       "pubDate": "2026-11-10T00:04:37+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Zim & USA agree cooperation pact",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zim-usa-agree-cooperation-pact",
-      "image": "https://mutapatimes.com/img/cards/news/9e3335471d67.png",
-      "pubDate": "2026-11-10T00:00:00+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -185,6 +257,86 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-11-09T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "TSG Projects — Sales Assistant",
+      "link": "https://vacancymail.co.zw/jobs/sales-assistant-70218/",
+      "image": "https://mutapatimes.com/img/cards/jobs/8e51dc92ca42.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — Welder",
+      "link": "https://vacancymail.co.zw/jobs/welder-70217/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f389c3e8a1b1.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — Overall Projects Supervisor",
+      "link": "https://vacancymail.co.zw/jobs/overall-projects-supervisor-70216/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e57441eb77f4.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — OPERATIONS SUPERVISOR",
+      "link": "https://vacancymail.co.zw/jobs/operations-supervisor-70215/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e8e72486913a.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — PROJECTS ASSISTANT",
+      "link": "https://vacancymail.co.zw/jobs/projects-assistant-70214/",
+      "image": "https://mutapatimes.com/img/cards/jobs/a8365e8ae50c.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — Sales and Marketing Person",
+      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-70213/",
+      "image": "https://mutapatimes.com/img/cards/jobs/da78b9fb3f0e.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Satewave Technologies — Finance Officers",
+      "link": "https://vacancymail.co.zw/jobs/finance-officers-70212/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f999c35bc21f.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Local NGO — Invitation To Tender For Procurement Of Medical Supplies and Medical Equipment",
+      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-for-procurement-of-medical-supplies-and-medical-equipment-70211/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fdb609691be0.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Solusi University — Dean of Faculty: Theology and Chaplaincy",
+      "link": "https://vacancymail.co.zw/jobs/dean-of-faculty-theology-and-chaplaincy-70210/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c85b3c6f9165.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Valtera Platinum — Charge Hand",
+      "link": "https://vacancymail.co.zw/jobs/charge-hand-70209/",
+      "image": "https://mutapatimes.com/img/cards/jobs/461b6299b238.png",
+      "pubDate": "2026-11-09T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -327,158 +479,6 @@
       "title": "Plant Operator",
       "link": "https://vacancymail.co.zw/jobs/plant-operator-70186/",
       "image": "https://mutapatimes.com/img/cards/jobs/209b591389ed.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/assistant-fitter-70185/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5048db08aa8f.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fitter",
-      "link": "https://vacancymail.co.zw/jobs/fitter-70184/",
-      "image": "https://mutapatimes.com/img/cards/jobs/174354a073da.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Welder",
-      "link": "https://vacancymail.co.zw/jobs/general-welder-70183/",
-      "image": "https://mutapatimes.com/img/cards/jobs/01f25ca5c717.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Coded Welder",
-      "link": "https://vacancymail.co.zw/jobs/coded-welder-70182/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9cc075ebb0bc.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Senior Boilermakers x3",
-      "link": "https://vacancymail.co.zw/jobs/senior-boilermakers-x3-70181/",
-      "image": "https://mutapatimes.com/img/cards/jobs/be8370bf55fc.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Program Manager x1, Harare",
-      "link": "https://vacancymail.co.zw/jobs/program-manager-x1-harare-70180/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6308cddfc668.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Research Assistantsx3,Harare,Gweru",
-      "link": "https://vacancymail.co.zw/jobs/research-assistantsx3hararegweru-70179/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1ad3f00514bb.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Finance Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/finance-graduate-trainee-70178/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4aa34a78f28d.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — SHEQ Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/sheq-graduate-trainee-70177/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a74e8249dbbf.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Human Resources Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-graduate-trainee-70176/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9b5aaaea9e70.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Electrical Engineering Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/electrical-engineering-graduate-trainee-70175/",
-      "image": "https://mutapatimes.com/img/cards/jobs/406211557d70.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Survey Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/survey-graduate-trainee-70174/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e396488820e6.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Geology Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/geology-graduate-trainee-70173/",
-      "image": "https://mutapatimes.com/img/cards/jobs/de3d10ff519a.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Mine Planning Engineering Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/mine-planning-engineering-graduate-trainee-70172/",
-      "image": "https://mutapatimes.com/img/cards/jobs/63dc27ee3bf5.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Mining Engineering Graduate Trainee-",
-      "link": "https://vacancymail.co.zw/jobs/mining-engineering-graduate-trainee-70171/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0ef0dab2f8d1.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Programs Director : Lesedi Schools & Clinic",
-      "link": "https://vacancymail.co.zw/jobs/programs-director-lesedi-schools-clinic-70156/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e9483d94c72a.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Repoquad Investments Pty ltd — Accounts Clerk : Bulawayo Based candidates",
-      "link": "https://vacancymail.co.zw/jobs/accounts-clerk-bulawayo-based-candidates-70155/",
-      "image": "https://mutapatimes.com/img/cards/jobs/0d5c6cdfef27.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Administrator: Rusape Leisure Resort",
-      "link": "https://vacancymail.co.zw/jobs/administrator-rusape-leisure-resort-70154/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f909ac3516be.png",
-      "pubDate": "2026-11-09T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Events Planner : Rusape Leisure Resort",
-      "link": "https://vacancymail.co.zw/jobs/events-planner-rusape-leisure-resort-70153/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9d70ff628a7d.png",
       "pubDate": "2026-11-09T22:00:00+00:00",
       "category": "Jobs"
     }
