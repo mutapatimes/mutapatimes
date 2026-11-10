@@ -1,0 +1,16 @@
+---
+title: "Green hydrogen or corporate camouflage — who really decides SA’s energy future?"
+date: 2026-11-10T14:51:59.000Z
+author: Daily Maverick
+category: Health
+image: 
+summary: "Green hydrogen or corporate camouflage — who really decides SA’s energy future?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitwJBVV95cUxNV2NjdjREellvbG1taFUwSUtlcnRSS1FQQmZ1RnFIamdwcVRXM09rRXlNMG02MmFfZndaT08yQTJaTEpvNkhLdjZPUG11WnRHeFdIajhfM1NvQjUyaXJ4QUpHVXlyTnptb0tQaVQza1BLcFB0am5WeGZWZFpyb3dWazFwazZaaDRQNmRDc3JPbnh2cVl3clhwd0dKdEptcDhsU2h0MFYyRC1GQnQ1THUyc25QRnF0SVZYVTdpUkd4aFJZSEVjMXBHXzJTbmhjWmJiYWsteTh5bmdTdmplelFjV01TNk1GUjdjbnBEU09wWFBvUzJ5U3FIc0dOdnYxb0JOWkZSTk9Nelp5QUJVMzdjakUwVUEwQW04ZlEzVGFfenQ4cTNzLXdZX0NUYk81cHVValpCUFZFcw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMitwJBVV95cUxNV2NjdjREellvbG1taFUwSUtlcnRSS1FQQmZ1RnFIamdwcVRXM09rRXlNMG02MmFfZndaT08yQTJaTEpvNkhLdjZPUG11WnRHeFdIajhfM1NvQjUyaXJ4QUpHVXlyTnptb0tQaVQza1BLcFB0am5WeGZWZFpyb3dWazFwazZaaDRQNmRDc3JPbnh2cVl3clhwd0dKdEptcDhsU2h0MFYyRC1GQnQ1THUyc25QRnF0SVZYVTdpUkd4aFJZSEVjMXBHXzJTbmhjWmJiYWsteTh5bmdTdmplelFjV01TNk1GUjdjbnBEU09wWFBvUzJ5U3FIc0dOdnYxb0JOWkZSTk9Nelp5QUJVMzdjakUwVUEwQW04ZlEzVGFfenQ4cTNzLXdZX0NUYk81cHVValpCUFZFcw?oc=5)

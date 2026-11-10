@@ -1,0 +1,16 @@
+---
+title: "The billionaire who co-founded a South African tech business which was created in 24 hours and has signed its first contract within a week"
+date: 2026-11-10T09:43:47.000Z
+author: MyBroadband
+category: Business
+image: 
+summary: "The billionaire who co-founded a South African tech business which was created in 24 hours and has signed its first contract within a week"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimgJBVV95cUxPNlU0UnRnbkQ4dTZLcEc5ZXRNR3JvU2xVd2lUR2VkX044ajRwb2Frbm9pTGY1Nno0cllhRGtXUVZ3MGl2b1E3SW10X2RBMm1wVjR5c01qM1RRa0IwSW9yYV9oVlNILXRaRWNBa1ZrcFNla2RMYzg2SGhad2l5RjV4TTVzX21xTV94TWItVE5DUzE5WGRBb29uc0loMElFRnhBMlpxREFXXzl2d1Y0TlR0bExOVnZjanFsam9yWktldzc0a0V2S0VnY2xyMUtGWjktTG9saDJxTnJrbnJpRjBqT2EyeS1fbFFYRzlKQ0FQVjBEaEE5Qm55UmtTQ2Z2SGlhWmNJQWhVYUtPd1ZaVlJ2WEtNc1dkT08wcFE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMimgJBVV95cUxPNlU0UnRnbkQ4dTZLcEc5ZXRNR3JvU2xVd2lUR2VkX044ajRwb2Frbm9pTGY1Nno0cllhRGtXUVZ3MGl2b1E3SW10X2RBMm1wVjR5c01qM1RRa0IwSW9yYV9oVlNILXRaRWNBa1ZrcFNla2RMYzg2SGhad2l5RjV4TTVzX21xTV94TWItVE5DUzE5WGRBb29uc0loMElFRnhBMlpxREFXXzl2d1Y0TlR0bExOVnZjanFsam9yWktldzc0a0V2S0VnY2xyMUtGWjktTG9saDJxTnJrbnJpRjBqT2EyeS1fbFFYRzlKQ0FQVjBEaEE5Qm55UmtTQ2Z2SGlhWmNJQWhVYUtPd1ZaVlJ2WEtNc1dkT08wcFE?oc=5)

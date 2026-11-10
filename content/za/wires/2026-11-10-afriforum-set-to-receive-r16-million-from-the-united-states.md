@@ -1,0 +1,16 @@
+---
+title: "AfriForum set to receive R16 million from the United States to address hateful rhetoric and violent acts against minority communities in South Africa"
+date: 2026-11-10T07:31:08.000Z
+author: newsday.co.za
+category: Culture
+image: 
+summary: "AfriForum set to receive R16 million from the United States to address hateful rhetoric and violent acts against minority communities in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMimwJBVV95cUxQTlc1S2dRYnYxeEZ1a3M2cFpzNGpBNlRZRnFRaTJFSVlJTms5YnhOR2JyVHJNZTNGUFdsenBHMzdYYThiWVBVYVhqYzI3MXA5ZzlPYkViR3p6a2MwX2tjMVRkeHp4NTVEQkJsWEFtWmhZdlBvMHNiMTBjWDRzYXFxS0FYTV9rdUxFWEV0UWpmVzlITS1ZeC1RZHI5TWdXZDJBN3N0bWp3YndXR1FBdjhfU1NKNzY2WlBsVkJUZElRMC1EZFZ1Z19oakJaUm92Y1RrLWxPaGVINURHVms1TGZoWFUyc1FCYWxRY1VCTHk0NDVNZlNKZDZTMmRTVFRfYnFhQmVYNks1dzVUOUo0ZjVaY25yaVBseTRCRVRn?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by newsday.co.za.*
+[Read original article](https://news.google.com/rss/articles/CBMimwJBVV95cUxQTlc1S2dRYnYxeEZ1a3M2cFpzNGpBNlRZRnFRaTJFSVlJTms5YnhOR2JyVHJNZTNGUFdsenBHMzdYYThiWVBVYVhqYzI3MXA5ZzlPYkViR3p6a2MwX2tjMVRkeHp4NTVEQkJsWEFtWmhZdlBvMHNiMTBjWDRzYXFxS0FYTV9rdUxFWEV0UWpmVzlITS1ZeC1RZHI5TWdXZDJBN3N0bWp3YndXR1FBdjhfU1NKNzY2WlBsVkJUZElRMC1EZFZ1Z19oakJaUm92Y1RrLWxPaGVINURHVms1TGZoWFUyc1FCYWxRY1VCTHk0NDVNZlNKZDZTMmRTVFRfYnFhQmVYNks1dzVUOUo0ZjVaY25yaVBseTRCRVRn?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Zikhona Sodlaka launches The Art Circle, bringing South African creatives together"
+date: 2026-11-10T11:55:20.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "Zikhona Sodlaka launches The Art Circle, bringing South African creatives together"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNWElkcFZNXzRCbTd4bUstSEZ1bjVPc295bENHVmF2RFR0WlRjbTBkMXB2N2wyMWVPNWRBTEx1a2FMTW96eWdwYW16bEg2a0E1MEZTNDhqU2xuZTJGMlZjd2NzUlBSY2lyUXJWNFZERXk3UTFqSy01TERtXy1TNnF2SDZNSXJtb0lZU3pPelhVV01vdkZsbjY5WnNObG1LSkhJSkFNY0U0ZXlWeklsblBEbDlydmQ4N25WcHRucG9WWEs1UE9kMENUT3NZNkRRLTBuOXp4cHJxT1B5ZFFFWVdReThUaVRtck1TT3YtNW9SQ2Q?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi8AFBVV95cUxNWElkcFZNXzRCbTd4bUstSEZ1bjVPc295bENHVmF2RFR0WlRjbTBkMXB2N2wyMWVPNWRBTEx1a2FMTW96eWdwYW16bEg2a0E1MEZTNDhqU2xuZTJGMlZjd2NzUlBSY2lyUXJWNFZERXk3UTFqSy01TERtXy1TNnF2SDZNSXJtb0lZU3pPelhVV01vdkZsbjY5WnNObG1LSkhJSkFNY0U0ZXlWeklsblBEbDlydmQ4N25WcHRucG9WWEs1UE9kMENUT3NZNkRRLTBuOXp4cHJxT1B5ZFFFWVdReThUaVRtck1TT3YtNW9SQ2Q?oc=5)

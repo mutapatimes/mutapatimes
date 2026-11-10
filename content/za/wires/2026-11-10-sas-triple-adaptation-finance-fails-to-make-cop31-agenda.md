@@ -1,0 +1,16 @@
+---
+title: "SA’s triple adaptation finance fails to make COP31 agenda"
+date: 2026-11-10T14:26:17.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "SA’s triple adaptation finance fails to make COP31 agenda"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilgJBVV95cUxORDJuSFkwV2J3eEhiQ3h3NmRZM0pvOFYwa094YkJ2QUFRVVRfamV2SVZoZWY1VkFucnpvSXhmSl82YnVVbmxNTFRRVmRxMlp1Rk1NajlmMVp5RmZqNzJtQTlCNm9MZXdsWk5UaFhLQUkzUnZQX1BocFJfQW9wQUROc2VsamdDS1ZDV1V1Q1Z2TmRCZHFhNV9WMTVxLWJ0TDJDb2Q4WlZjX2hBeFBaQmt1R0VMclRGanBQZjJHUGRrQ05nVHZGWkRKQnFwUk5wZFprQ0VrY1o3a3JrN05GVXE3VzE0ME1ESWZFTnB0UkdDdzdoVmNaQkhGcjY4SzE5SGlKUTQ1Z1d2bnFBMktiVkthY1dNNmRnQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMilgJBVV95cUxORDJuSFkwV2J3eEhiQ3h3NmRZM0pvOFYwa094YkJ2QUFRVVRfamV2SVZoZWY1VkFucnpvSXhmSl82YnVVbmxNTFRRVmRxMlp1Rk1NajlmMVp5RmZqNzJtQTlCNm9MZXdsWk5UaFhLQUkzUnZQX1BocFJfQW9wQUROc2VsamdDS1ZDV1V1Q1Z2TmRCZHFhNV9WMTVxLWJ0TDJDb2Q4WlZjX2hBeFBaQmt1R0VMclRGanBQZjJHUGRrQ05nVHZGWkRKQnFwUk5wZFprQ0VrY1o3a3JrN05GVXE3VzE0ME1ESWZFTnB0UkdDdzdoVmNaQkhGcjY4SzE5SGlKUTQ1Z1d2bnFBMktiVkthY1dNNmRnQQ?oc=5)
