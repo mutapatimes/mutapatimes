@@ -1,0 +1,16 @@
+---
+title: "The small South African village which once had pioneering gold-mining operation making millions is now a dilapidated mess"
+date: 2026-11-10T19:00:00.000Z
+author: MyBroadband
+category: Business
+image: 
+summary: "The small South African village which once had pioneering gold-mining operation making millions is now a dilapidated mess"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMigwJBVV95cUxON3FXVG03UEJIT19BczdFTVNOU3Z2bEhCOGpVVS1OX0lVWnZobnRMN0RnNUxJdkkxN2EwU09WTF9GMV9PTUhFb1JzNV83LXpiUFprQW11RzVUMTd5S210UkRfYjVpU2Y3V2ExMV91REVia0VnSUxsUDBwMWhlSk80RDVmVjM5LUpSUkVmMzdvLXZycHhlWjcyb1pqdVY1MHRONEFzMTBWOXJia0VTMUxyUVNtT1FkdEdibTFSRExodkJXTlhWUEZVTTFTSE1mZDZIYW5mVTBieG9ISlBSUWJpZ01BdEpLclRfeGRydlJlR1lETWJnNHpFVXNMZVRmLWc3UzBB?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMigwJBVV95cUxON3FXVG03UEJIT19BczdFTVNOU3Z2bEhCOGpVVS1OX0lVWnZobnRMN0RnNUxJdkkxN2EwU09WTF9GMV9PTUhFb1JzNV83LXpiUFprQW11RzVUMTd5S210UkRfYjVpU2Y3V2ExMV91REVia0VnSUxsUDBwMWhlSk80RDVmVjM5LUpSUkVmMzdvLXZycHhlWjcyb1pqdVY1MHRONEFzMTBWOXJia0VTMUxyUVNtT1FkdEdibTFSRExodkJXTlhWUEZVTTFTSE1mZDZIYW5mVTBieG9ISlBSUWJpZ01BdEpLclRfeGRydlJlR1lETWJnNHpFVXNMZVRmLWc3UzBB?oc=5)
