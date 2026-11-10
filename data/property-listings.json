@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-11-10T07:14:55.757387+00:00",
+  "fetched_at": "2026-11-10T19:42:38.633319+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
     {
       "title": "Modern 3-Bed Townhouse with Borehole in Greendale North, Harare North",
       "url": "https://www.property.co.zw/for-sale/townhouses-cami246295",
-      "price": "USD 220,000",
+      "price": "USD 250,000",
       "location": "Greendale North, Harare North",
       "image": "https://www.property.co.zw/uploadedfiles/49/88/78/49887812-a36c-4794-b040-b574b4a28233_thumbnail591.webp",
       "beds": "3",
@@ -130,15 +130,6 @@
       "baths": ""
     },
     {
-      "title": "Spacious 4-Bed Home in Zimre Park with Borehole",
-      "url": "https://www.property.co.zw/for-sale/houses-leg257598",
-      "price": "USD 97,000",
-      "location": "Zimre Park, Harare East",
-      "image": "https://www.property.co.zw/uploadedfiles/42/6d/85/426d858c-265f-4ce3-89b3-f8615bac7eca_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
       "title": "Lots of Yardspace",
       "url": "https://www.property.co.zw/for-sale/houses-hvn258398",
       "price": "USD 475,000",
@@ -198,6 +189,15 @@
       "price": "USD 365,000",
       "location": "Avondale West, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/dc/81/45/dc814560-c91c-4852-980f-9e8580de9cd5_thumbnail591.webp",
+      "beds": "3",
+      "baths": "2"
+    },
+    {
+      "title": "A Versatile 3 Bedroomed in Hillside - IDEAL HOME & BUSINESS",
+      "url": "https://www.property.co.zw/for-sale/houses-ptd246817",
+      "price": "USD 260,000",
+      "location": "Hillside, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/45/97/2b/45972bd3-3e9c-4c0b-87b1-07b6d38a8182_thumbnail591.webp",
       "beds": "3",
       "baths": "2"
     }
