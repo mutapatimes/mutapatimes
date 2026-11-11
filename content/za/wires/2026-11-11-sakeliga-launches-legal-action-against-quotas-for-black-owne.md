@@ -1,0 +1,16 @@
+---
+title: "Sakeliga launches legal action against quotas for black ownership of Internet service providers and network operators in South Africa"
+date: 2026-11-11T11:54:41.000Z
+author: MyBroadband
+category: Tech
+image: 
+summary: "Sakeliga launches legal action against quotas for black ownership of Internet service providers and network operators in South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMikwJBVV95cUxNNlp6a3QzTnVONWVvZ01yMVFuVE4tZm4tV0JZcG41Z3FlR1dVNFNBMDc2bVYxNXU2WTdTVG85OXZBVFhHd0JlcjJHNUtDZUtkOW03ckVZNlg1eDhnaVdLaUQtUUdWTnFpaHhWbGhVYS1Pdm5GZElMRE54aUROUjVOOUdROUFfdmVDSVdJeDdtZXlJRjM5LUVtRDh2bE9rZWFXbTltSEJEZkVRSUJFbGxheENaRWE2TGRRZGdHY3R2NHpkMHFUTlVvWGFlOE43Uzk1WmtFTUJRTUhqRVVQR3YzdlhzOThKb0YxNXZyT0xncC1RZ1dMWWNzQUhQZllrNGFiSmRuNVQ4aUtiVFJKQVZadkY3NA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by MyBroadband.*
+[Read original article](https://news.google.com/rss/articles/CBMikwJBVV95cUxNNlp6a3QzTnVONWVvZ01yMVFuVE4tZm4tV0JZcG41Z3FlR1dVNFNBMDc2bVYxNXU2WTdTVG85OXZBVFhHd0JlcjJHNUtDZUtkOW03ckVZNlg1eDhnaVdLaUQtUUdWTnFpaHhWbGhVYS1Pdm5GZElMRE54aUROUjVOOUdROUFfdmVDSVdJeDdtZXlJRjM5LUVtRDh2bE9rZWFXbTltSEJEZkVRSUJFbGxheENaRWE2TGRRZGdHY3R2NHpkMHFUTlVvWGFlOE43Uzk1WmtFTUJRTUhqRVVQR3YzdlhzOThKb0YxNXZyT0xncC1RZ1dMWWNzQUhQZllrNGFiSmRuNVQ4aUtiVFJKQVZadkY3NA?oc=5)

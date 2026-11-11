@@ -1,0 +1,16 @@
+---
+title: "ASPEN PHARMACARE HOLDINGS LIMITED – Regulatory Approvals for Aspen’s Generic Injectable Semaglutide in Brazil and South Africa"
+date: 2026-11-11T07:00:00.000Z
+author: Moneyweb
+category: Tech
+image: 
+summary: "ASPEN PHARMACARE HOLDINGS LIMITED – Regulatory Approvals for Aspen’s Generic Injectable Semaglutide in Brazil and South Africa"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZHVnWXpMZlVYcFl2aUJaWEpGRmRsLXMxSWE1amVqNzBoX3FWekp6UklybUJ4YlJXUGlQSU42MG9sQl9va2xPb2FpTHdXa0tYX3pBcFZjamUxVk1qZFNNdW1YdWlweVBJRlZkOHIyX3Q4NURrdVYyNmZtSVNFZ29janZZbnBTMjJRZDNyUU9FdldhU3ZhVDdEdDlrTEhPYVJ4VFlPR0ZBWmY4Z3lLanRCSW1ESkU2bW93UWM5NDNLT3hqbVN0U0h4RlhOYVJ1U19kQmJaYUNuclJ2bmN2OXprZ0pCTDR0cHdwZWJ0WWxwWUw3UQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZHVnWXpMZlVYcFl2aUJaWEpGRmRsLXMxSWE1amVqNzBoX3FWekp6UklybUJ4YlJXUGlQSU42MG9sQl9va2xPb2FpTHdXa0tYX3pBcFZjamUxVk1qZFNNdW1YdWlweVBJRlZkOHIyX3Q4NURrdVYyNmZtSVNFZ29janZZbnBTMjJRZDNyUU9FdldhU3ZhVDdEdDlrTEhPYVJ4VFlPR0ZBWmY4Z3lLanRCSW1ESkU2bW93UWM5NDNLT3hqbVN0U0h4RlhOYVJ1U19kQmJaYUNuclJ2bmN2OXprZ0pCTDR0cHdwZWJ0WWxwWUw3UQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Community schemes ombud gets new administrator after Simelane dissolves board"
+date: 2026-11-11T14:35:02.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Community schemes ombud gets new administrator after Simelane dissolves board"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYTlGM0o2SU42RHFSZHpEaWZ3d0RjTlRSUjBDUWpTOW8tRGllWldXblE0aTJzbzJpR19lTWtQZ1RxaGk1eWhjZ0tBYUItbS0xWUFJVXUydTl4MExxTTdwZDJ0YVFZSTlZNWdEV2dRYS1Pb29PU0JiOFByV3pQZnlMYmJ1TUV4bjJ2aUNJaFBpU1FpTzNnNC1MbTFadWpKeFVwNG1VSmxzVldyNzQ0VWNVcHFWazc3ZG1mdzlzcGwtd0poMWZmRE1Lb1czV3o5TWhC?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYTlGM0o2SU42RHFSZHpEaWZ3d0RjTlRSUjBDUWpTOW8tRGllWldXblE0aTJzbzJpR19lTWtQZ1RxaGk1eWhjZ0tBYUItbS0xWUFJVXUydTl4MExxTTdwZDJ0YVFZSTlZNWdEV2dRYS1Pb29PU0JiOFByV3pQZnlMYmJ1TUV4bjJ2aUNJaFBpU1FpTzNnNC1MbTFadWpKeFVwNG1VSmxzVldyNzQ0VWNVcHFWazc3ZG1mdzlzcGwtd0poMWZmRE1Lb1czV3o5TWhC?oc=5)

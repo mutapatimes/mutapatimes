@@ -1,0 +1,16 @@
+---
+title: "The architecture of trust: Why South Africa’s AI accountability framework is fragmented, not failing"
+date: 2026-11-11T08:41:31.000Z
+author: Daily Maverick
+category: Tech
+image: 
+summary: "The architecture of trust: Why South Africa’s AI accountability framework is fragmented, not failing"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizAJBVV95cUxNRDRwbjU4OW95S1lZZWdlV0RwTVlwYkNXOHBBRnRlN2tBT2tVNUlDVG1zMzhWN05fMlNTakZvWWJrT29mN0FGWGdLcm5na0NwWDI5Zkh5WE9XX1hoeTNfeTlFa1NCTmFFMDBLanh1T2xEUHFPakZDWGw4WVMwQXNQYlRjelpBUXZDdG1rQThydkNBTnFpQ0xNLXB5Y2piYWpLRFNGeXFJVzY3YjBxaGRxang3alZSaEs4a0VXY3dqWVFSUWQ3cTZNdS1jcU9icVBNMjF3SVNKUXkwRnZDdG83ajFUUlJMcElzVmllRDg2dThLOURBbkRBamxaOFdOZ0dlN1J2cDhVSnBBWWZNb0hKci1EQ0F6X3FGeWZtSWpZUVg3Q2w2YkdQTHNsTy1nWUlWRGZsRDB6bTR6REN1WmRrbnVIYlBoUFdTWTQycQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMizAJBVV95cUxNRDRwbjU4OW95S1lZZWdlV0RwTVlwYkNXOHBBRnRlN2tBT2tVNUlDVG1zMzhWN05fMlNTakZvWWJrT29mN0FGWGdLcm5na0NwWDI5Zkh5WE9XX1hoeTNfeTlFa1NCTmFFMDBLanh1T2xEUHFPakZDWGw4WVMwQXNQYlRjelpBUXZDdG1rQThydkNBTnFpQ0xNLXB5Y2piYWpLRFNGeXFJVzY3YjBxaGRxang3alZSaEs4a0VXY3dqWVFSUWQ3cTZNdS1jcU9icVBNMjF3SVNKUXkwRnZDdG83ajFUUlJMcElzVmllRDg2dThLOURBbkRBamxaOFdOZ0dlN1J2cDhVSnBBWWZNb0hKci1EQ0F6X3FGeWZtSWpZUVg3Q2w2YkdQTHNsTy1nWUlWRGZsRDB6bTR6REN1WmRrbnVIYlBoUFdTWTQycQ?oc=5)
