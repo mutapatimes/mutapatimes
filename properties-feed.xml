@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Live Zimbabwe property listings with branded hybrid cards — photo on top, price and specs on the brand strip. One item per active listing for the Mutapa Times properties autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:27:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:24:53 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/properties-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -79,18 +79,6 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/8ba7d550cfc9.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 200,000 — Located In A Gated Community (Arlington, Harare South)</title>
-      <link>https://mutapatimes.com/property-landing/8cb1cd8b0381.html</link>
-      <description>USD 200,000 — Arlington, Harare South. 4 beds, 2 baths. Located In A Gated Community. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
-      <pubDate>Tue, 10 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/property-landing/8cb1cd8b0381.html</guid>
-      <category>Property</category>
-      <dc:creator>Property.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/properties/8cb1cd8b0381.png" type="image/png" length="200000"/>
-    </item>
-    <item>
       <title>USD 650,000 — Greendale North double Storey house for sale (Greendale, Harare East)</title>
       <link>https://mutapatimes.com/property-landing/7680712019a7.html</link>
       <description>USD 650,000 — Greendale, Harare East. 4 beds, 2 baths. Greendale North double Storey house for sale. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
@@ -151,9 +139,9 @@
       <enclosure url="https://mutapatimes.com/img/cards/properties/005a51700bbe.png" type="image/png" length="200000"/>
     </item>
     <item>
-      <title>USD 158,000 — Opportunity (Fairview, Harare West)</title>
+      <title>USD 152,000 — Opportunity (Fairview, Harare West)</title>
       <link>https://mutapatimes.com/property-landing/ea4f8ab9c0e0.html</link>
-      <description>USD 158,000 — Fairview, Harare West. 4 beds, 4 baths. Opportunity. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <description>USD 152,000 — Fairview, Harare West. 4 beds, 4 baths. Opportunity. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
       <pubDate>Tue, 10 Nov 2026 22:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mutapatimes.com/property-landing/ea4f8ab9c0e0.html</guid>
       <category>Property</category>
@@ -281,6 +269,18 @@
       <media:content url="https://mutapatimes.com/img/cards/properties/be73d284afa9.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/properties/be73d284afa9.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/properties/be73d284afa9.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>USD 110,000 — Waterford Bulawayo Property (Waterford, Bulawayo East)</title>
+      <link>https://mutapatimes.com/property-landing/5b7d9a26ab68.html</link>
+      <description>USD 110,000 — Waterford, Bulawayo East. 3 beds, 1 bath. Waterford Bulawayo Property. Browse all listings at mutapatimes.com/property #Zimbabwe #Property #ZimbabweProperty #RealEstate #ZimbabweNews</description>
+      <pubDate>Tue, 10 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/property-landing/5b7d9a26ab68.html</guid>
+      <category>Property</category>
+      <dc:creator>Property.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/properties/5b7d9a26ab68.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/properties/5b7d9a26ab68.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/properties/5b7d9a26ab68.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
