@@ -1,14 +1,198 @@
 {
-  "fetched_at": "2026-11-11T04:18:54+00:00",
+  "fetched_at": "2026-11-11T13:27:37+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "How a 25-year partnership is protecting wildlife and communities in Zimbabwe",
-      "link": "https://mutapatimes.com/articles/2026-11-11-how-a-25-year-partnership-is-protecting-wildlife-and-communi",
-      "image": "https://mutapatimes.com/img/cards/news/1a0537bbfd9b.png",
-      "pubDate": "2026-11-11T03:12:00+00:00",
+      "title": "Zimbabwe: Nssa's Dairibord Stake Purchase Clouds Varun Beverages Takeover",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-nssas-dairibord-stake-purchase-clouds-varun-beverag",
+      "image": "https://mutapatimes.com/img/cards/news/1be770f873aa.png",
+      "pubDate": "2026-11-11T12:18:01+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Zimplats Appoints Mining Executive Clara Sadomba to Board",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-zimplats-appoints-mining-executive-clara-sadomba-to",
+      "image": "https://mutapatimes.com/img/cards/news/9ca7ee37acbf.png",
+      "pubDate": "2026-11-11T12:18:01+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Five Zimbabwe Revenue Authority (ZIMRA) officials arrested for criminal abuse of office.",
+      "link": "https://mutapatimes.com/news/2026-11-11-five-zimbabwe-revenue-authority-zimra-officials-arrested-for-criminal-abuse-of-05a44f",
+      "image": "https://mutapatimes.com/img/cards/news/36cc10d47ccd.png",
+      "pubDate": "2026-11-11T12:10:03+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Seeks Entry Into MSCI Frontier Markets Index for Dollar Stocks",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-seeks-entry-into-msci-frontier-markets-index-for-do",
+      "image": "https://mutapatimes.com/img/cards/news/0b18e8dea879.png",
+      "pubDate": "2026-11-11T11:32:28+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Sables coach Pieter Benade names his team for the World Rugby Nations Cup game against Uruguay",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-sables-coach-pieter-benade-names-his-team-for-the-w",
+      "image": "https://mutapatimes.com/img/cards/news/93a163f46235.png",
+      "pubDate": "2026-11-11T11:27:03+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Sables coach Pieter Benade names his team for the World Rugby Nations Cup game against Uruguay",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-sables-coach-pieter-benade-names-his-team-for-the-world-rugby-nations-a79ee4",
+      "image": "https://mutapatimes.com/img/cards/news/2edce1c23ea2.png",
+      "pubDate": "2026-11-11T11:27:03+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "6 000 cadets recruited for trainining under the Zimbabwe Youth Service programme",
+      "link": "https://mutapatimes.com/articles/2026-11-11-6-000-cadets-recruited-for-trainining-under-the-zimbabwe-you",
+      "image": "https://mutapatimes.com/img/cards/news/df6a0a66c8a2.png",
+      "pubDate": "2026-11-11T10:14:46+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "6 000 cadets recruited for trainining under the Zimbabwe Youth Service programme",
+      "link": "https://mutapatimes.com/news/2026-11-11-6-000-cadets-recruited-for-trainining-under-the-zimbabwe-youth-service-programme-999fa3",
+      "image": "https://mutapatimes.com/img/cards/news/789d663b04ec.png",
+      "pubDate": "2026-11-11T10:14:46+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "ZBFH profits tumble 31% despite growth in core earnings",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zbfh-profits-tumble-31-despite-growth-in-core-earnings",
+      "image": "https://mutapatimes.com/img/cards/news/9db54dc36cf7.png",
+      "pubDate": "2026-11-11T08:22:45+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimplats appoints mining executive Clara Sadomba to board",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimplats-appoints-mining-executive-clara-sadomba-to-board",
+      "image": "https://mutapatimes.com/img/cards/news/1520a6d12d52.png",
+      "pubDate": "2026-11-11T07:48:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimplats appoints mining executive Clara Sadomba to board",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimplats-appoints-mining-executive-clara-sadomba-to-board-bb2b07",
+      "image": "https://mutapatimes.com/img/cards/news/b44e13824909.png",
+      "pubDate": "2026-11-11T07:48:36+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Looks to Russia for Cancer Treatment Technology and Expertise",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-looks-to-russia-for-cancer-treatment-technology-and",
+      "image": "https://mutapatimes.com/img/cards/news/9d2800281b0f.png",
+      "pubDate": "2026-11-11T07:18:42+00:00",
       "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Drone Footage Reveals Troubling River Disruption Around Richbasin Granite Mine",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-drone-footage-reveals-troubling-river-disruption-ar",
+      "image": "https://mutapatimes.com/img/cards/news/0aa92b1b4402.png",
+      "pubDate": "2026-11-11T07:18:42+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Targets Full BRICS Membership As Country Secures Entry Into US$100 Billion Development Bank",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-targets-full-brics-membership-as-country-secures-en",
+      "image": "https://mutapatimes.com/img/cards/news/a13880578a01.png",
+      "pubDate": "2026-11-11T07:18:19+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Targets Full BRICS Membership As Country Secures Entry Into US$100 Billion Development Bank",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-targets-full-brics-membership-as-country-secures-entry-into-us-100-2493db",
+      "image": "https://mutapatimes.com/img/cards/news/e02c2db83056.png",
+      "pubDate": "2026-11-11T07:18:19+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Drone Footage Reveals Troubling River Disruption Around Richbasin Granite Mine",
+      "link": "https://mutapatimes.com/articles/2026-11-11-drone-footage-reveals-troubling-river-disruption-around-rich",
+      "image": "https://mutapatimes.com/img/cards/news/630feb3d2cc4.png",
+      "pubDate": "2026-11-11T06:21:09+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Drone Footage Reveals Troubling River Disruption Around Richbasin Granite Mine",
+      "link": "https://mutapatimes.com/news/2026-11-11-drone-footage-reveals-troubling-river-disruption-around-richbasin-granite-mine-007c87",
+      "image": "https://mutapatimes.com/img/cards/news/8e6b3979f321.png",
+      "pubDate": "2026-11-11T06:21:09+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Ropafadzo Muzondo Wins Zimbabwe’s First-Ever Youth Olympic Gold",
+      "link": "https://mutapatimes.com/articles/2026-11-11-ropafadzo-muzondo-wins-zimbabwes-first-ever-youth-olympic-go",
+      "image": "https://mutapatimes.com/img/cards/news/fe8f67197d46.png",
+      "pubDate": "2026-11-11T06:11:38+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Ropafadzo Muzondo Wins Zimbabwe’s First-Ever Youth Olympic Gold",
+      "link": "https://mutapatimes.com/news/2026-11-11-ropafadzo-muzondo-wins-zimbabwe-s-first-ever-youth-olympic-gold-a6962c",
+      "image": "https://mutapatimes.com/img/cards/news/23d22b7b92e3.png",
+      "pubDate": "2026-11-11T06:11:38+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe: Without Action, Climate Change Could Push Women Further Behind By 2050, CGIAR Warns",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-without-action-climate-change-could-push-women-furt",
+      "image": "https://mutapatimes.com/img/cards/news/88e7d2f18dc2.png",
+      "pubDate": "2026-11-11T04:52:28+00:00",
+      "category": "Environment"
+    },
+    {
+      "kind": "news",
+      "title": "AFCON 2027: Zimbabwe Warriors get new bus ahead of Equatorial Guinea qualifiers",
+      "link": "https://mutapatimes.com/articles/2026-11-11-afcon-2027-zimbabwe-warriors-get-new-bus-ahead-of-equatorial",
+      "image": "https://mutapatimes.com/img/cards/news/9788d4e3bb85.png",
+      "pubDate": "2026-11-11T04:47:57+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "AFCON 2027: Zimbabwe Warriors get new bus ahead of Equatorial Guinea qualifiers",
+      "link": "https://mutapatimes.com/news/2026-11-11-afcon-2027-zimbabwe-warriors-get-new-bus-ahead-of-equatorial-guinea-qualifiers-ca1446",
+      "image": "https://mutapatimes.com/img/cards/news/7e4f9ab227bf.png",
+      "pubDate": "2026-11-11T04:47:57+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe taps Russian tech to boost telemedicine",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwe-taps-russian-tech-to-boost-telemedicine",
+      "image": "https://mutapatimes.com/img/cards/news/7cf4b7333753.png",
+      "pubDate": "2026-11-11T04:43:04+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe taps Russian tech to boost telemedicine",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-taps-russian-tech-to-boost-telemedicine-ca02eb",
+      "image": "https://mutapatimes.com/img/cards/news/d0c015836ef7.png",
+      "pubDate": "2026-11-11T04:43:04+00:00",
+      "category": "Health"
     },
     {
       "kind": "news",
@@ -21,26 +205,66 @@
     {
       "kind": "news",
       "title": "Zimbabwe investors offered Ariana stake",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-investors-offered-ariana-stake",
-      "image": "https://mutapatimes.com/img/cards/news/64fb02846b93.png",
-      "pubDate": "2026-11-10T23:31:51+00:00",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-investors-offered-ariana-stake-8bd4c6",
+      "image": "https://mutapatimes.com/img/cards/news/cdeddd3be437.png",
+      "pubDate": "2026-11-11T00:22:39+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe investors offered Ariana stake",
-      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-investors-offered-ariana-stake-d98060",
-      "image": "https://mutapatimes.com/img/cards/news/f5b58e9464f6.png",
-      "pubDate": "2026-11-10T23:31:51+00:00",
+      "title": "Zimbabwean auditors can now practise in the UK under new agreement",
+      "link": "https://mutapatimes.com/articles/2026-11-11-zimbabwean-auditors-can-now-practise-in-the-uk-under-new-agr",
+      "image": "https://mutapatimes.com/img/cards/news/9a0fd88999a9.png",
+      "pubDate": "2026-11-11T00:09:50+00:00",
       "category": "Business"
     },
     {
       "kind": "news",
-      "title": "Zimbabwe moves closer to full BRICS membership",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-moves-closer-to-full-brics-membership",
-      "image": "https://mutapatimes.com/img/cards/news/926f6e611135.png",
-      "pubDate": "2026-11-10T22:31:16+00:00",
-      "category": "Culture"
+      "title": "Zimbabwean auditors can now practise in the UK under new agreement",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwean-auditors-can-now-practise-in-the-uk-under-new-agreement-970795",
+      "image": "https://mutapatimes.com/img/cards/news/37366cf3d83c.png",
+      "pubDate": "2026-11-11T00:09:50+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "UK-Zimbabwe relations in ‘very good space’, says new British Ambassador",
+      "link": "https://mutapatimes.com/news/2026-11-11-uk-zimbabwe-relations-in-very-good-space-says-new-british-ambassador-1d752e",
+      "image": "https://mutapatimes.com/img/cards/news/05e8854cd388.png",
+      "pubDate": "2026-11-11T00:09:35+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe builds 600,000-tonne grain reserve ahead of forecast El Niño drought",
+      "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-builds-600-000-tonne-grain-reserve-ahead-of-forecast-el-ni-o-drought-65be32",
+      "image": "https://mutapatimes.com/img/cards/news/e5bf42d0ce8a.png",
+      "pubDate": "2026-11-11T00:03:24+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Pay paradox: why next rise must be earned",
+      "link": "https://mutapatimes.com/articles/2026-11-10-pay-paradox-why-next-rise-must-be-earned",
+      "image": "https://mutapatimes.com/img/cards/news/837425d5f843.png",
+      "pubDate": "2026-11-10T23:21:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Pay paradox: why next rise must be earned",
+      "link": "https://mutapatimes.com/news/2026-11-10-pay-paradox-why-next-rise-must-be-earned-066c2d",
+      "image": "https://mutapatimes.com/img/cards/news/5e8e0ff4fc64.png",
+      "pubDate": "2026-11-10T23:21:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Comesa has entered the boardroom",
+      "link": "https://mutapatimes.com/news/2026-11-10-comesa-has-entered-the-boardroom-f6f9d6",
+      "image": "https://mutapatimes.com/img/cards/news/8184d15c90a4.png",
+      "pubDate": "2026-11-10T23:12:16+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -53,26 +277,10 @@
     {
       "kind": "news",
       "title": "Vic Falls financial hub targets $10bn assets to drive regional growth",
-      "link": "https://mutapatimes.com/articles/2026-11-10-vic-falls-financial-hub-targets-10bn-assets-to-drive-regiona",
-      "image": "https://mutapatimes.com/img/cards/news/4fb97571e7d6.png",
-      "pubDate": "2026-11-10T22:30:13+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Vic Falls financial hub targets $10bn assets to drive regional growth",
       "link": "https://mutapatimes.com/news/2026-11-11-vic-falls-financial-hub-targets-10bn-assets-to-drive-regional-growth-e5b586",
       "image": "https://mutapatimes.com/img/cards/news/a7e2847da0a0.png",
       "pubDate": "2026-11-10T22:30:13+00:00",
       "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "The man behind the lens …how Thembani Phakathi brings Magriza’s stories to life",
-      "link": "https://mutapatimes.com/articles/2026-11-10-the-man-behind-the-lens-how-thembani-phakathi-brings-magriza",
-      "image": "https://mutapatimes.com/img/cards/news/8390fb6b7a6e.png",
-      "pubDate": "2026-11-10T22:30:04+00:00",
-      "category": "Culture"
     },
     {
       "kind": "news",
@@ -85,14 +293,6 @@
     {
       "kind": "news",
       "title": "Zim pushes for BRICS full membership",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zim-pushes-for-brics-full-membership",
-      "image": "https://mutapatimes.com/img/cards/news/1ea8f3fd9c61.png",
-      "pubDate": "2026-11-10T22:13:46+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zim pushes for BRICS full membership",
       "link": "https://mutapatimes.com/news/2026-11-11-zim-pushes-for-brics-full-membership-0128c1",
       "image": "https://mutapatimes.com/img/cards/news/a4cc6cc85e2c.png",
       "pubDate": "2026-11-10T22:13:46+00:00",
@@ -100,11 +300,11 @@
     },
     {
       "kind": "news",
-      "title": "Zimbabwe, UK seek stronger trade ties",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zimbabwe-uk-seek-stronger-trade-ties",
-      "image": "https://mutapatimes.com/img/cards/news/6028cc41877e.png",
-      "pubDate": "2026-11-10T22:07:43+00:00",
-      "category": "Business"
+      "title": "Vice President Chiwenga leads Zimbabwe delegation at COP31",
+      "link": "https://mutapatimes.com/news/2026-11-11-vice-president-chiwenga-leads-zimbabwe-delegation-at-cop31-3ea3ef",
+      "image": "https://mutapatimes.com/img/cards/news/f5702564926b.png",
+      "pubDate": "2026-11-10T22:11:24+00:00",
+      "category": "Science"
     },
     {
       "kind": "news",
@@ -112,14 +312,6 @@
       "link": "https://mutapatimes.com/news/2026-11-11-zimbabwe-uk-seek-stronger-trade-ties-9b9765",
       "image": "https://mutapatimes.com/img/cards/news/35cce230be24.png",
       "pubDate": "2026-11-10T22:07:43+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Calling on diaspora not to miss opportunities home",
-      "link": "https://mutapatimes.com/articles/2026-11-10-calling-on-diaspora-not-to-miss-opportunities-home",
-      "image": "https://mutapatimes.com/img/cards/news/5c9adcc630e9.png",
-      "pubDate": "2026-11-10T22:02:56+00:00",
       "category": "Business"
     },
     {
@@ -133,26 +325,10 @@
     {
       "kind": "news",
       "title": "Zim firms eye bigger export deals after Chinese expo",
-      "link": "https://mutapatimes.com/articles/2026-11-10-zim-firms-eye-bigger-export-deals-after-chinese-expo",
-      "image": "https://mutapatimes.com/img/cards/news/545ae8849ccb.png",
-      "pubDate": "2026-11-10T22:02:17+00:00",
-      "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Zim firms eye bigger export deals after Chinese expo",
       "link": "https://mutapatimes.com/news/2026-11-11-zim-firms-eye-bigger-export-deals-after-chinese-expo-1e4500",
       "image": "https://mutapatimes.com/img/cards/news/280e665b4e20.png",
       "pubDate": "2026-11-10T22:02:17+00:00",
       "category": "Business"
-    },
-    {
-      "kind": "news",
-      "title": "Sibanda backs Sables’ revival",
-      "link": "https://mutapatimes.com/articles/2026-11-10-sibanda-backs-sables-revival",
-      "image": "https://mutapatimes.com/img/cards/news/602cd3e66271.png",
-      "pubDate": "2026-11-10T22:02:06+00:00",
-      "category": "Sport"
     },
     {
       "kind": "news",
@@ -180,7 +356,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 11 Nov: Harare overcast · high 26° / low 15°",
+      "title": "Zim weather 11 Nov: Harare overcast · high 27° / low 15°",
       "link": "https://mutapatimes.com/weather?d=2026-11-11",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-11",
       "pubDate": "2026-11-10T22:00:00+00:00",
@@ -303,182 +479,6 @@
       "title": "REDAN — CONVENIENCE STORE SALES ASSOCIATES/ SHOP CASHIERS",
       "link": "https://vacancymail.co.zw/jobs/convenience-store-sales-associates-shop-cashiers-70203/",
       "image": "https://mutapatimes.com/img/cards/jobs/6a140cc76a43.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "REDAN — FORECOURT CASHIERS",
-      "link": "https://vacancymail.co.zw/jobs/forecourt-cashiers-70202/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9534d7af7ab8.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Block man",
-      "link": "https://vacancymail.co.zw/jobs/block-man-70201/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8eeacc698be9.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — Invitation To Tender: Procurement Of Hospital Furniture - Human Impact Hub",
-      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-procurement-of-hospital-furniture-human-impact-hub-70200/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c6bbfbc6ad6c.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Carcass Cutter / Saw Man Cutter (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/carcass-cutter-saw-man-cutter-1-post-70199/",
-      "image": "https://mutapatimes.com/img/cards/jobs/76c6aa3d349b.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NUST - National University of Science & Technology — DIRECTOR OF CENTRE FOR CONTINUING EDUCATION (CCE) 1 POST",
-      "link": "https://vacancymail.co.zw/jobs/director-of-centre-for-continuing-education-cce-1-post-70198/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e3e77a2af951.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Executive Assistant x1, Harare",
-      "link": "https://vacancymail.co.zw/jobs/executive-assistant-x1-harare-70197/",
-      "image": "https://mutapatimes.com/img/cards/jobs/634a15e19058.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "VIRL Financial Services — Loan Officer - Chinhoyi",
-      "link": "https://vacancymail.co.zw/jobs/loan-officer-chinhoyi-70196/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6871fbed2d8c.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative x 3",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-x-3-70195/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8ba8a2b2001e.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Leonard Cheshire Disability Zimbabwe — Terms of Reference Mid-Term Evaluation Strengthening the Civil Society Regional Partnerships in favour of the ratification, domestication and implementation of the African Disability Protocol (ADP)",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-mid-term-evaluation-strengthening-the-civil-society-regional-partnerships-in-favour-of-the-ratification-domestication-and-implementation-of-the-african-disability-protocol-adp-70194/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6101f2402790.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Recruiter",
-      "link": "https://vacancymail.co.zw/jobs/recruiter-70193/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a18eb4df61ff.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Sales Officer",
-      "link": "https://vacancymail.co.zw/jobs/sales-officer-70192/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91551dad77f4.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Graphic Designer (Internship)",
-      "link": "https://vacancymail.co.zw/jobs/graphic-designer-internship-70191/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c27e7959389d.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "School Administrator/ Project Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/school-administrator-project-coordinator-70190/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e6b070e6326e.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — RESTAURANT MANAGER (Fairy Cafe Harare)",
-      "link": "https://vacancymail.co.zw/jobs/restaurant-manager-fairy-cafe-harare-70189/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d1dc6880ebca.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Probfix Financial Services (Pvt) Ltd — GRADUATE TRAINEE PROGRAMME 2027/2028 - 2 YEAR ON-THE-JOB TRAINING",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-20272028-2-year-on-the-job-training-70188/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e9e0e15d8c52.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rigger/Crane Operator",
-      "link": "https://vacancymail.co.zw/jobs/riggercrane-operator-70187/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d47515f97f28.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plant Operator",
-      "link": "https://vacancymail.co.zw/jobs/plant-operator-70186/",
-      "image": "https://mutapatimes.com/img/cards/jobs/209b591389ed.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/assistant-fitter-70185/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5048db08aa8f.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fitter",
-      "link": "https://vacancymail.co.zw/jobs/fitter-70184/",
-      "image": "https://mutapatimes.com/img/cards/jobs/174354a073da.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Welder",
-      "link": "https://vacancymail.co.zw/jobs/general-welder-70183/",
-      "image": "https://mutapatimes.com/img/cards/jobs/01f25ca5c717.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Coded Welder",
-      "link": "https://vacancymail.co.zw/jobs/coded-welder-70182/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9cc075ebb0bc.png",
-      "pubDate": "2026-11-10T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Senior Boilermakers x3",
-      "link": "https://vacancymail.co.zw/jobs/senior-boilermakers-x3-70181/",
-      "image": "https://mutapatimes.com/img/cards/jobs/be8370bf55fc.png",
       "pubDate": "2026-11-10T22:00:00+00:00",
       "category": "Jobs"
     }
