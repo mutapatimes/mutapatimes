@@ -1,0 +1,16 @@
+---
+title: "NTCSA appoints Andrew Etzinger as Chief Market Operator Officer as South Africa prepares for wholesale electricity market"
+date: 2026-11-11T01:00:20.000Z
+author: Green Building Africa
+category: Policy
+image: 
+summary: "NTCSA appoints Andrew Etzinger as Chief Market Operator Officer as South Africa prepares for wholesale electricity market"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZjBpVy02MzRDamRKM0VlUExFUzFXeUtsSnMyQng1czJMbjNFWk90dWZEMlg0QzE1Zjd4amNmbEg5NmY2dHBxb0daOFh2dTFGUnItd0x1ejJHY2Y1bjFZVGZ3WENpVE1PYnh0Rk1lUUxRLWtHOGNvRFlXTktDeU1fei1jYW9PZVc1YVJQTTlDWGhONnF1YUVXZTJoZHFNQy1wMnY5VElvVXppMzMtVFN6SUd2Y2llY1BqSmtNX3FGTnF3eXc1TXJGSV8wM3RqWElaaGx3ZXZCaUVRTHlXN05DMHNEZlBNSzdUaGVNeDZCdWZwUQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Green Building Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZjBpVy02MzRDamRKM0VlUExFUzFXeUtsSnMyQng1czJMbjNFWk90dWZEMlg0QzE1Zjd4amNmbEg5NmY2dHBxb0daOFh2dTFGUnItd0x1ejJHY2Y1bjFZVGZ3WENpVE1PYnh0Rk1lUUxRLWtHOGNvRFlXTktDeU1fei1jYW9PZVc1YVJQTTlDWGhONnF1YUVXZTJoZHFNQy1wMnY5VElvVXppMzMtVFN6SUd2Y2llY1BqSmtNX3FGTnF3eXc1TXJGSV8wM3RqWElaaGx3ZXZCaUVRTHlXN05DMHNEZlBNSzdUaGVNeDZCdWZwUQ?oc=5)
