@@ -1,13 +1,165 @@
 {
-  "fetched_at": "2026-11-12T05:28:46+00:00",
+  "fetched_at": "2026-11-12T14:31:26+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Gold deliveries hit 41,4t in 10 months",
-      "link": "https://mutapatimes.com/articles/2026-11-11-gold-deliveries-hit-414t-in-10-months",
-      "image": "https://mutapatimes.com/img/cards/news/7ef463f1ae6f.png",
-      "pubDate": "2026-11-11T22:14:06+00:00",
+      "title": "Zimbabwean author Simbarashe Kundizeza cleared of using AI to write prize-winning story",
+      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwean-author-simbarashe-kundizeza-cleared-of-using-ai-t",
+      "image": "https://mutapatimes.com/img/cards/news/bf89dacc05c9.png",
+      "pubDate": "2026-11-12T13:16:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Nyaradzo Group celebrates partnership with the Sables on road to Rugby World Cup",
+      "link": "https://mutapatimes.com/articles/2026-11-12-nyaradzo-group-celebrates-partnership-with-the-sables-on-roa",
+      "image": "https://mutapatimes.com/img/cards/news/eeaa068e26d9.png",
+      "pubDate": "2026-11-12T11:32:18+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "Nyaradzo Group celebrates partnership with the Sables on road to Rugby World Cup",
+      "link": "https://mutapatimes.com/news/2026-11-12-nyaradzo-group-celebrates-partnership-with-the-sables-on-road-to-rugby-world-cup-78f092",
+      "image": "https://mutapatimes.com/img/cards/news/889e1fd07420.png",
+      "pubDate": "2026-11-12T11:32:18+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe portfolio committee proposes annual levy on idle farms",
+      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwe-portfolio-committee-proposes-annual-levy-on-idle-fa",
+      "image": "https://mutapatimes.com/img/cards/news/c388103392b1.png",
+      "pubDate": "2026-11-12T11:00:20+00:00",
+      "category": "Policy"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe portfolio committee proposes annual levy on idle farms",
+      "link": "https://mutapatimes.com/news/2026-11-12-zimbabwe-portfolio-committee-proposes-annual-levy-on-idle-farms-a9299b",
+      "image": "https://mutapatimes.com/img/cards/news/99a34d0843e5.png",
+      "pubDate": "2026-11-12T11:00:20+00:00",
+      "category": "Science"
+    },
+    {
+      "kind": "news",
+      "title": "Stanbic Bank donates 8 incubators worth US$98 000 to boost newborns care at Parirenyatwa Group of Hospitals",
+      "link": "https://mutapatimes.com/articles/2026-11-12-stanbic-bank-donates-8-incubators-worth-us98-000-to-boost-ne",
+      "image": "https://mutapatimes.com/img/cards/news/48ec656cdb3d.png",
+      "pubDate": "2026-11-12T10:59:07+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "Stanbic Bank donates 8 incubators worth US$98 000 to boost newborns care at Parirenyatwa Group of Hospitals",
+      "link": "https://mutapatimes.com/news/2026-11-12-stanbic-bank-donates-8-incubators-worth-us-98-000-to-boost-newborns-care-at-21710c",
+      "image": "https://mutapatimes.com/img/cards/news/9aaa8f0db7d5.png",
+      "pubDate": "2026-11-12T10:59:07+00:00",
+      "category": "Health"
+    },
+    {
+      "kind": "news",
+      "title": "MultiChoice Zimbabwe launches new DStv package line-up",
+      "link": "https://mutapatimes.com/articles/2026-11-12-multichoice-zimbabwe-launches-new-dstv-package-line-up",
+      "image": "https://mutapatimes.com/img/cards/news/83b3026dcac8.png",
+      "pubDate": "2026-11-12T09:33:50+00:00",
+      "category": "Sport"
+    },
+    {
+      "kind": "news",
+      "title": "MultiChoice Zimbabwe launches new DStv package line-up",
+      "link": "https://mutapatimes.com/news/2026-11-12-multichoice-zimbabwe-launches-new-dstv-package-line-up-b29995",
+      "image": "https://mutapatimes.com/img/cards/news/34ba09d943ed.png",
+      "pubDate": "2026-11-12T09:33:50+00:00",
+      "category": "Sports"
+    },
+    {
+      "kind": "news",
+      "title": "Caine Prize clears Zimbabwean author of AI writing allegations and adds new rules",
+      "link": "https://mutapatimes.com/articles/2026-11-12-caine-prize-clears-zimbabwean-author-of-ai-writing-allegatio",
+      "image": "https://mutapatimes.com/img/cards/news/2ebb73eb1fb9.png",
+      "pubDate": "2026-11-12T09:07:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe promises mining reforms as communities decry damage",
+      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwe-promises-mining-reforms-as-communities-decry-damage",
+      "image": "https://mutapatimes.com/img/cards/news/a6b3cbdd8533.png",
+      "pubDate": "2026-11-12T07:21:37+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe promises mining reforms as communities decry damage",
+      "link": "https://mutapatimes.com/news/2026-11-12-zimbabwe-promises-mining-reforms-as-communities-decry-damage-a829e5",
+      "image": "https://mutapatimes.com/img/cards/news/d65d3fa2d11d.png",
+      "pubDate": "2026-11-12T07:21:37+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s ride-hailing crackdown could hit driver incomes",
+      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwes-ride-hailing-crackdown-could-hit-driver-incomes",
+      "image": "https://mutapatimes.com/img/cards/news/a3843291f04d.png",
+      "pubDate": "2026-11-12T07:00:00+00:00",
+      "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe’s ride-hailing crackdown could hit driver incomes",
+      "link": "https://mutapatimes.com/news/2026-11-12-zimbabwe-s-ride-hailing-crackdown-could-hit-driver-incomes-8954ca",
+      "image": "https://mutapatimes.com/img/cards/news/c33978486952.png",
+      "pubDate": "2026-11-12T07:00:00+00:00",
+      "category": "Technology"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Agricultural Sector Survey on today",
+      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwe-agricultural-sector-survey-on-today",
+      "image": "https://mutapatimes.com/img/cards/news/36253d6acdbf.png",
+      "pubDate": "2026-11-12T01:58:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Agricultural Sector Survey on today",
+      "link": "https://mutapatimes.com/news/2026-11-12-zimbabwe-agricultural-sector-survey-on-today-1bfb93",
+      "image": "https://mutapatimes.com/img/cards/news/0eec20b34c56.png",
+      "pubDate": "2026-11-12T01:58:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Ramaphosa Praises Beitbridge Border Efficiency Despite Corruption Allegations",
+      "link": "https://mutapatimes.com/news/2026-11-12-ramaphosa-praises-beitbridge-border-efficiency-despite-corruption-allegations-8612db",
+      "image": "https://mutapatimes.com/img/cards/news/827d9a386cc0.png",
+      "pubDate": "2026-11-12T01:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Police issue warning over pupils’ planned Waterfalls Vuzu party",
+      "link": "https://mutapatimes.com/news/2026-11-12-police-issue-warning-over-pupils-planned-waterfalls-vuzu-party-6dfb26",
+      "image": "https://mutapatimes.com/img/cards/news/0777e381c9b4.png",
+      "pubDate": "2026-11-12T00:02:10+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Delta’s US$97m ZIMRA tax dispute continues",
+      "link": "https://mutapatimes.com/news/2026-11-12-delta-s-us-97m-zimra-tax-dispute-continues-5812ba",
+      "image": "https://mutapatimes.com/img/cards/news/3084fb142bae.png",
+      "pubDate": "2026-11-12T00:00:47+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Victoria Falls financial hub targets US$10bn",
+      "link": "https://mutapatimes.com/articles/2026-11-12-victoria-falls-financial-hub-targets-us10bn",
+      "image": "https://mutapatimes.com/img/cards/news/d4305fcc08cb.png",
+      "pubDate": "2026-11-12T00:00:00+00:00",
       "category": "Business"
     },
     {
@@ -52,7 +204,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 12 Nov: Harare overcast · high 27° / low 15°",
+      "title": "Zim weather 12 Nov: Harare overcast · high 29° / low 14°",
       "link": "https://mutapatimes.com/weather?d=2026-11-12",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-12",
       "pubDate": "2026-11-11T22:00:00+00:00",
@@ -89,6 +241,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-11-11T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Zimbabwe National Statistics Agency - Zimstat — Director – Human Resources",
+      "link": "https://vacancymail.co.zw/jobs/director-human-resources-70230/",
+      "image": "https://mutapatimes.com/img/cards/jobs/e56fe8f8d183.png",
+      "pubDate": "2026-11-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Southsea Investments Pvt Ltd — ASSISTANT ADMINISTRATION MANAGER – CAMPS",
+      "link": "https://vacancymail.co.zw/jobs/assistant-administration-manager-camps-70229/",
+      "image": "https://mutapatimes.com/img/cards/jobs/656a4f1184f4.png",
+      "pubDate": "2026-11-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "St Anne's Hospital — Human Resources Intern",
+      "link": "https://vacancymail.co.zw/jobs/human-resources-intern-70228/",
+      "image": "https://mutapatimes.com/img/cards/jobs/77109fa11921.png",
+      "pubDate": "2026-11-11T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Traverze Travel — FOUNDATION MANAGER",
+      "link": "https://vacancymail.co.zw/jobs/foundation-manager-70227/",
+      "image": "https://mutapatimes.com/img/cards/jobs/2d87ee742d71.png",
+      "pubDate": "2026-11-11T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -295,190 +479,6 @@
       "title": "VIRL Financial Services — Loan Officer - Chinhoyi",
       "link": "https://vacancymail.co.zw/jobs/loan-officer-chinhoyi-70196/",
       "image": "https://mutapatimes.com/img/cards/jobs/6871fbed2d8c.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative x 3",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-x-3-70195/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8ba8a2b2001e.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Leonard Cheshire Disability Zimbabwe — Terms of Reference Mid-Term Evaluation Strengthening the Civil Society Regional Partnerships in favour of the ratification, domestication and implementation of the African Disability Protocol (ADP)",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-mid-term-evaluation-strengthening-the-civil-society-regional-partnerships-in-favour-of-the-ratification-domestication-and-implementation-of-the-african-disability-protocol-adp-70194/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6101f2402790.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Recruiter",
-      "link": "https://vacancymail.co.zw/jobs/recruiter-70193/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a18eb4df61ff.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Sales Officer",
-      "link": "https://vacancymail.co.zw/jobs/sales-officer-70192/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91551dad77f4.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Graphic Designer (Internship)",
-      "link": "https://vacancymail.co.zw/jobs/graphic-designer-internship-70191/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c27e7959389d.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "School Administrator/ Project Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/school-administrator-project-coordinator-70190/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e6b070e6326e.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — RESTAURANT MANAGER (Fairy Cafe Harare)",
-      "link": "https://vacancymail.co.zw/jobs/restaurant-manager-fairy-cafe-harare-70189/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d1dc6880ebca.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Probfix Financial Services (Pvt) Ltd — GRADUATE TRAINEE PROGRAMME 2027/2028 - 2 YEAR ON-THE-JOB TRAINING",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-20272028-2-year-on-the-job-training-70188/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e9e0e15d8c52.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Rigger/Crane Operator",
-      "link": "https://vacancymail.co.zw/jobs/riggercrane-operator-70187/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d47515f97f28.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Plant Operator",
-      "link": "https://vacancymail.co.zw/jobs/plant-operator-70186/",
-      "image": "https://mutapatimes.com/img/cards/jobs/209b591389ed.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Assistant Fitter",
-      "link": "https://vacancymail.co.zw/jobs/assistant-fitter-70185/",
-      "image": "https://mutapatimes.com/img/cards/jobs/5048db08aa8f.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Fitter",
-      "link": "https://vacancymail.co.zw/jobs/fitter-70184/",
-      "image": "https://mutapatimes.com/img/cards/jobs/174354a073da.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "General Welder",
-      "link": "https://vacancymail.co.zw/jobs/general-welder-70183/",
-      "image": "https://mutapatimes.com/img/cards/jobs/01f25ca5c717.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Coded Welder",
-      "link": "https://vacancymail.co.zw/jobs/coded-welder-70182/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9cc075ebb0bc.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Senior Boilermakers x3",
-      "link": "https://vacancymail.co.zw/jobs/senior-boilermakers-x3-70181/",
-      "image": "https://mutapatimes.com/img/cards/jobs/be8370bf55fc.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Program Manager x1, Harare",
-      "link": "https://vacancymail.co.zw/jobs/program-manager-x1-harare-70180/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6308cddfc668.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Research Assistantsx3,Harare,Gweru",
-      "link": "https://vacancymail.co.zw/jobs/research-assistantsx3hararegweru-70179/",
-      "image": "https://mutapatimes.com/img/cards/jobs/1ad3f00514bb.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Finance Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/finance-graduate-trainee-70178/",
-      "image": "https://mutapatimes.com/img/cards/jobs/4aa34a78f28d.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — SHEQ Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/sheq-graduate-trainee-70177/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a74e8249dbbf.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Human Resources Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/human-resources-graduate-trainee-70176/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9b5aaaea9e70.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Electrical Engineering Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/electrical-engineering-graduate-trainee-70175/",
-      "image": "https://mutapatimes.com/img/cards/jobs/406211557d70.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Survey Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/survey-graduate-trainee-70174/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e396488820e6.png",
-      "pubDate": "2026-11-11T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Mutapa Gold Resources — Geology Graduate Trainee",
-      "link": "https://vacancymail.co.zw/jobs/geology-graduate-trainee-70173/",
-      "image": "https://mutapatimes.com/img/cards/jobs/de3d10ff519a.png",
       "pubDate": "2026-11-11T22:00:00+00:00",
       "category": "Jobs"
     }
