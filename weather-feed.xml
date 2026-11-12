@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2026 21:42:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:41:14 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 11 Nov: Harare overcast · high 27° / low 15°</title>
-      <link>https://mutapatimes.com/weather?d=2026-11-11</link>
-      <description>Harare: high 27°, low 15° (overcast) · Bulawayo: high 27°, low 15° (overcast) · Mutare: high 27°, low 15° (overcast) · Gweru: high 26°, low 15° (overcast) · Masvingo: high 27°, low 15° (overcast) · Victoria Falls: high 34°, low 22° (overcast) Tsumo yezuva: Zano ndega akasiya jira mumasese. (Going it alone means losing what you valued.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Tue, 10 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-11-11</guid>
+      <title>Zim weather 12 Nov: Harare overcast · high 27° / low 15°</title>
+      <link>https://mutapatimes.com/weather?d=2026-11-12</link>
+      <description>Harare: high 27°, low 15° (overcast) · Bulawayo: high 27°, low 15° (overcast) · Mutare: high 27°, low 15° (overcast) · Gweru: high 26°, low 15° (overcast) · Masvingo: high 27°, low 15° (overcast) · Victoria Falls: high 34°, low 22° (overcast) Tsumo yezuva: Zizi harina nyanga. (Things are not what they seem.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
+      <pubDate>Wed, 11 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-11-12</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-11" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-11"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-11" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-12" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-12"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-12" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
