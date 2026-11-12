@@ -1,0 +1,16 @@
+---
+title: "Can South Africa regain economic momentum in 2027?"
+date: 2026-11-11T08:07:24.000Z
+author: Mining Review Africa
+category: Policy
+image: 
+summary: "Can South Africa regain economic momentum in 2027?"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFZ3S3liU2JnbzZ6STJycHFlZ0xMVy00RXUzRGJlYWxXNG1GQ0pUM0RVVmJDcEtHYzY2alFIZGJEdTVqdlU1Y1BnbGRLQ1ludmdaX1VieUpXREVuVEJPN1k2b0k0YkJRU2lnZTF6bGtVSzJLa3BCOUp4VHdKTjdIWEVHMDU4aWx3VFVnOdIBlAFBVV95cUxNQzBLYU0yQy1rVURDRnNtV05QMHVCaFV4NHhUQThWTnBWRXdKcUZvNUVsQWNFU3hCTzBmaldKRkxoRkh4cG55dGRjT3k0UjVyN3diZmRpcGdLQ2VFa2RLWEthMEFtb2Z5YXd4SVJ2cVNrbFZjTnlhWFE3ODNoNmNPQ0ZXbkF2eHM4N3lvQ0dEMTRSekhp?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mining Review Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFZ3S3liU2JnbzZ6STJycHFlZ0xMVy00RXUzRGJlYWxXNG1GQ0pUM0RVVmJDcEtHYzY2alFIZGJEdTVqdlU1Y1BnbGRLQ1ludmdaX1VieUpXREVuVEJPN1k2b0k0YkJRU2lnZTF6bGtVSzJLa3BCOUp4VHdKTjdIWEVHMDU4aWx3VFVnOdIBlAFBVV95cUxNQzBLYU0yQy1rVURDRnNtV05QMHVCaFV4NHhUQThWTnBWRXdKcUZvNUVsQWNFU3hCTzBmaldKRkxoRkh4cG55dGRjT3k0UjVyN3diZmRpcGdLQ2VFa2RLWEthMEFtb2Z5YXd4SVJ2cVNrbFZjTnlhWFE3ODNoNmNPQ0ZXbkF2eHM4N3lvQ0dEMTRSekhp?oc=5)

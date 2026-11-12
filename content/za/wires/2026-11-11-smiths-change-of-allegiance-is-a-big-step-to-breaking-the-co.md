@@ -1,0 +1,16 @@
+---
+title: "Smith’s change of allegiance is a big step to breaking the code of silence"
+date: 2026-11-11T17:57:23.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Smith’s change of allegiance is a big step to breaking the code of silence"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiowJBVV95cUxPNEhRZDNraUhiclMzUDlmTzZlVzRkejJMbnMyQi1RVFFZTEdMTE9GaVdPNnBmY0EwT2wtVHpTRlUxZ0xQY2E3UWRaM09Ya3YyOXczSGJOR1dZLVlZWGVZNzBvYzE4MTV4blNJVEE2YktkZ01XQW1PalRqYUE2SVlLSUV0dDlNZEdZMnJQSmxYZWpQQ2FUNm40OG12ZWkxUFprZGJmT3F0RHNiYmZYVGNRRFAwTWVjVjZ0TEpVc0tGYlROWnRxYW12UTZJSTdRSkFtZ0pfOWt2ZVdUOS1DTzZxanRwZ0Z4N2pZT19uQ3NOTnlLd2FvWEJyUmJqdkFUT1RRLXBNS0FNRGdaU3JMdGI4UXNfSWlOWmtYMEF6aVVxb0ozZ2s?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiowJBVV95cUxPNEhRZDNraUhiclMzUDlmTzZlVzRkejJMbnMyQi1RVFFZTEdMTE9GaVdPNnBmY0EwT2wtVHpTRlUxZ0xQY2E3UWRaM09Ya3YyOXczSGJOR1dZLVlZWGVZNzBvYzE4MTV4blNJVEE2YktkZ01XQW1PalRqYUE2SVlLSUV0dDlNZEdZMnJQSmxYZWpQQ2FUNm40OG12ZWkxUFprZGJmT3F0RHNiYmZYVGNRRFAwTWVjVjZ0TEpVc0tGYlROWnRxYW12UTZJSTdRSkFtZ0pfOWt2ZVdUOS1DTzZxanRwZ0Z4N2pZT19uQ3NOTnlLd2FvWEJyUmJqdkFUT1RRLXBNS0FNRGdaU3JMdGI4UXNfSWlOWmtYMEF6aVVxb0ozZ2s?oc=5)

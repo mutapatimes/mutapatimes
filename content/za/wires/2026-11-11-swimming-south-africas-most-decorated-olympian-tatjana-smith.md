@@ -1,0 +1,16 @@
+---
+title: "Swimming: South Africa's most decorated Olympian Tatjana Smith switches allegiance to Netherlands"
+date: 2026-11-11T23:13:02.000Z
+author: Graphic Online
+category: Culture
+image: 
+summary: "Swimming: South Africa's most decorated Olympian Tatjana Smith switches allegiance to Netherlands"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWjRtN29haHNnTG9RbWJlTGFVSHdseVRzMDhMN0pEZDJDWlJ4UDNLcTU2aG5YcDBLdWxQcVBIMDRWcWZ2dlJBVUJ1SWY2ZUhwYjJHVERFcjJUdkhlY2c0c0FXbDdLYWo3cElOUVZkWERucHIwRFoyNnNtdkVYdHgtb2ZJUW5uNzAxb0hvRWdxaVM0bVBfNzZwMzVxcWlLVG9sQ0RiU2VZSUtwYnQyX2dTME82YmpVNVVGU3hvalVTUjhhTzc1eWFzMTFzUmU4cVBvOHlyVjl3dWI2MzdQY09j?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Graphic Online.*
+[Read original article](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWjRtN29haHNnTG9RbWJlTGFVSHdseVRzMDhMN0pEZDJDWlJ4UDNLcTU2aG5YcDBLdWxQcVBIMDRWcWZ2dlJBVUJ1SWY2ZUhwYjJHVERFcjJUdkhlY2c0c0FXbDdLYWo3cElOUVZkWERucHIwRFoyNnNtdkVYdHgtb2ZJUW5uNzAxb0hvRWdxaVM0bVBfNzZwMzVxcWlLVG9sQ0RiU2VZSUtwYnQyX2dTME82YmpVNVVGU3hvalVTUjhhTzc1eWFzMTFzUmU4cVBvOHlyVjl3dWI2MzdQY09j?oc=5)
