@@ -1,0 +1,16 @@
+---
+title: "Durban City star Brooklyn Poggenpoel believes every PSL player gets a fair chance at Bafana Bafana under Pitso Mosimane"
+date: 2026-11-11T13:00:03.000Z
+author: Hollywoodbets Sports Blog
+category: Sport
+image: 
+summary: "Durban City star Brooklyn Poggenpoel believes every PSL player gets a fair chance at Bafana Bafana under Pitso Mosimane"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiggJBVV95cUxQY240OHluZHZKcVVUU0VMTjhoYnpJN1ozMEFOdkoybzlRb3BDYWlsN3A4ZjdIbWRLQlZ5cHRMeVEtMW9PVUZqaWJ4WTliNXA0TElTWUxSNmRqcGlDU2RjTTRjT08tUFVvUWVsOWt1ak42QVdjb0RQSXFXR3poZVBQQzh0T1hKWXo1akhOMVlDOVdjZDAwTF8yanhjSTNIQVQzeHVMOVVra2tJcWpQUWN0TnZNNlZPTzlqazlpOUtnY3RhN2tLMll1XzQ5cEUtZ21wOGhIWmNySER1WnRpNzAyNTNYVjFKOGlaVHpkMktRVXVTMHlZT1hVaGJNd05XbFY3RWc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Hollywoodbets Sports Blog.*
+[Read original article](https://news.google.com/rss/articles/CBMiggJBVV95cUxQY240OHluZHZKcVVUU0VMTjhoYnpJN1ozMEFOdkoybzlRb3BDYWlsN3A4ZjdIbWRLQlZ5cHRMeVEtMW9PVUZqaWJ4WTliNXA0TElTWUxSNmRqcGlDU2RjTTRjT08tUFVvUWVsOWt1ak42QVdjb0RQSXFXR3poZVBQQzh0T1hKWXo1akhOMVlDOVdjZDAwTF8yanhjSTNIQVQzeHVMOVVra2tJcWpQUWN0TnZNNlZPTzlqazlpOUtnY3RhN2tLMll1XzQ5cEUtZ21wOGhIWmNySER1WnRpNzAyNTNYVjFKOGlaVHpkMktRVXVTMHlZT1hVaGJNd05XbFY3RWc?oc=5)

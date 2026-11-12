@@ -1,0 +1,16 @@
+---
+title: "GLAMOUR Exclusive: Founder&CEO of Soweto Fashion Week, Stephen Manzini on the future of African fashion"
+date: 2026-11-11T10:18:49.000Z
+author: Glamour South Africa
+category: Culture
+image: 
+summary: "GLAMOUR Exclusive: Founder&CEO of Soweto Fashion Week, Stephen Manzini on the future of African fashion"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTTVoMXpILWFUZHZhM3M4eFZ4a0tMS0J2VWhqVEt5V1ZkaGxHeGlJTjJWSUcxUU1nU29NMWdWOG05cVllU0xHcWRVZnlPQXZvc3hIWno3eVI3M2RFOHZlMzJuV29jNTRsUHlrc1NWQ1BzZFE1Z2tZV3RYWXRfVDFwYzJ0c24xOE1Na1hhVjdJZFBfbFlqZUJEWS0xQTdjcTZmOTYxd3BvWjdnZlRYYVRCMUgtTkg5bHB2RlpZS3JXSlVZM1plVVJSVzN5NW5UZW5LTzZXVFpaRUpydGJQSmNZN3BvNHpjTDhMNHBGNDJTZlhfVldsV2gwbHhUc3NnTVh1OXdjUng3NjlzQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Glamour South Africa.*
+[Read original article](https://news.google.com/rss/articles/CBMiigJBVV95cUxOTTVoMXpILWFUZHZhM3M4eFZ4a0tMS0J2VWhqVEt5V1ZkaGxHeGlJTjJWSUcxUU1nU29NMWdWOG05cVllU0xHcWRVZnlPQXZvc3hIWno3eVI3M2RFOHZlMzJuV29jNTRsUHlrc1NWQ1BzZFE1Z2tZV3RYWXRfVDFwYzJ0c24xOE1Na1hhVjdJZFBfbFlqZUJEWS0xQTdjcTZmOTYxd3BvWjdnZlRYYVRCMUgtTkg5bHB2RlpZS3JXSlVZM1plVVJSVzN5NW5UZW5LTzZXVFpaRUpydGJQSmNZN3BvNHpjTDhMNHBGNDJTZlhfVldsV2gwbHhUc3NnTVh1OXdjUng3NjlzQQ?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "ArcelorMittal takeover could make SA pay twice for its steel"
+date: 2026-11-12T09:47:36.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "ArcelorMittal takeover could make SA pay twice for its steel"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMioAJBVV95cUxNNW16YTRJNW1Hdk54bWxGUW1HQV9fYWZaVC1lbmZ6R25KMjBrXzAzQ3pWczNfYUZPVWozV1pBN1ZpbEoyMXdRcGpodXNfRUVJVm1BN3lPX1FsNjZ6Q05ZTml1VGFDcUpwN1RBU2lrZ2ZFRklnN2xmTG9KbnkxcDQ5OXJiZzZkbFZxR3EyZDY1SW1PckhLWjVUUzdpS2lDZ2RXX1ZlZzFqRUt5d3A3Q0F1Tm0yNjJUOGdxVmdHVjJkejlVNno3SFFpZEtHRkVPazBGaWlvQTJZMHYyVG9yRm5XZWtWWnFFcGt4bUd0QWVpN2xHbTFkOGNYazZBcnRIVEVkeVhTNG1Mem92SzhobFBBRGFFaGUtSXQ4VEthYmY0aW8?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMioAJBVV95cUxNNW16YTRJNW1Hdk54bWxGUW1HQV9fYWZaVC1lbmZ6R25KMjBrXzAzQ3pWczNfYUZPVWozV1pBN1ZpbEoyMXdRcGpodXNfRUVJVm1BN3lPX1FsNjZ6Q05ZTml1VGFDcUpwN1RBU2lrZ2ZFRklnN2xmTG9KbnkxcDQ5OXJiZzZkbFZxR3EyZDY1SW1PckhLWjVUUzdpS2lDZ2RXX1ZlZzFqRUt5d3A3Q0F1Tm0yNjJUOGdxVmdHVjJkejlVNno3SFFpZEtHRkVPazBGaWlvQTJZMHYyVG9yRm5XZWtWWnFFcGt4bUd0QWVpN2xHbTFkOGNYazZBcnRIVEVkeVhTNG1Mem92SzhobFBBRGFFaGUtSXQ4VEthYmY0aW8?oc=5)

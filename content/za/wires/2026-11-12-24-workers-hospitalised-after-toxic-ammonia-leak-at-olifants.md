@@ -1,0 +1,16 @@
+---
+title: "24 workers hospitalised after toxic ammonia leak at Olifantsfontein chicken plant"
+date: 2026-11-12T10:04:49.000Z
+author: TimesLIVE
+category: Health
+image: 
+summary: "24 workers hospitalised after toxic ammonia leak at Olifantsfontein chicken plant"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRVd1LWpQYXNWMmktdGdraTJIaXpaSFRncjlLTGZzQU83NmxSTHk3a1VjNmlkdC1hNHE4LUtVWWU0X2c0eUltaGQ4cUhPWHMxQ0dZbEpjZWNvMVlSMnpoaGY4QWJJTjliMDNVd1dMY0xkNUVZTmtuaHVKYzVzTjh3eUQyMWRXWDV3ZXU4S3VHUHl6TU9Fc0RrNE40Z1JCVS01T3RVd3FPblZIRnBZa3hzVTNSekQwMnp1NWF4QWJIRVRWb0EyeU9pTDJwT2xOT3VDUFZzM19B?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRVd1LWpQYXNWMmktdGdraTJIaXpaSFRncjlLTGZzQU83NmxSTHk3a1VjNmlkdC1hNHE4LUtVWWU0X2c0eUltaGQ4cUhPWHMxQ0dZbEpjZWNvMVlSMnpoaGY4QWJJTjliMDNVd1dMY0xkNUVZTmtuaHVKYzVzTjh3eUQyMWRXWDV3ZXU4S3VHUHl6TU9Fc0RrNE40Z1JCVS01T3RVd3FPblZIRnBZa3hzVTNSekQwMnp1NWF4QWJIRVRWb0EyeU9pTDJwT2xOT3VDUFZzM19B?oc=5)
