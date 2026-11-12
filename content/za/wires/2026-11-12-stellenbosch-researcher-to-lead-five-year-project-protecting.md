@@ -1,0 +1,16 @@
+---
+title: "Stellenbosch researcher to lead five-year project protecting South Africa's vulnerable desert plants from climate change"
+date: 2026-11-12T10:09:37.000Z
+author: Getaway Magazine
+category: Tech
+image: 
+summary: "Stellenbosch researcher to lead five-year project protecting South Africa's vulnerable desert plants from climate change"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNDdnSkgtZ2FuWVg0c0FkaEM0UGZqWkEtTlZWOV9LZkh4SUdlOU1LQm5WblJyZ0ZEOU1RR1VJOXNwVlJiWkVlUmw2eVk1WkUtTUFYRTB1eE8ydDY0TnlLU2F0OEJ6MzM5WjdLbWx5NmFxNHhTaDlkS2QzQl8tZjVxVUpoWHlDcE9qNXVMZ2h3dVRvNzVQY08xN1djbGRFUEZDd3BndFhCQ1loRE5pYm50RW5PV3duc3o4amR1TW84ZVlBaVBWTTNmcXlzWjhVcW5XWHZBRUFKQmZQVE9WaExGZk9rTTBmdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Getaway Magazine.*
+[Read original article](https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNDdnSkgtZ2FuWVg0c0FkaEM0UGZqWkEtTlZWOV9LZkh4SUdlOU1LQm5WblJyZ0ZEOU1RR1VJOXNwVlJiWkVlUmw2eVk1WkUtTUFYRTB1eE8ydDY0TnlLU2F0OEJ6MzM5WjdLbWx5NmFxNHhTaDlkS2QzQl8tZjVxVUpoWHlDcE9qNXVMZ2h3dVRvNzVQY08xN1djbGRFUEZDd3BndFhCQ1loRE5pYm50RW5PV3duc3o4amR1TW84ZVlBaVBWTTNmcXlzWjhVcW5XWHZBRUFKQmZQVE9WaExGZk9rTTBmdw?oc=5)

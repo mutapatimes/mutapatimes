@@ -1,0 +1,16 @@
+---
+title: "US-China battle for African connectivity comes to Cape Town"
+date: 2026-11-12T18:37:08.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "US-China battle for African connectivity comes to Cape Town"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiswJBVV95cUxOckpEQmZwMTVwQnJlQWY0Rktkb1pZNnhSek1QczBTZWU5WWFWVFRidUJ3SXotVmdsdmVKeWxMSGFaZW5ENW9YeGlsYVRENkNhcVo3TnZUYlJta0hjZFpQTElQdWs0N1RBN3FQSWRsYW5GckdqRHAyLTRmUGN5YUxkQzVKSkE5ZUZac29VRmlyV1UtRzZvS21tRG9SZ0FyVmVvTjJTLXNCc182YV82TXRaR3hMaVlUbnVPallGbTRQV0UtTUxGUmprWHdZRFNoMVlWQ1pzZXd1R3RieUdjcGEtbXV5aW92RFBKQ1Nod1FSODFxYldnQV9YeElNbTVKN3RkdnR0WmdKWkVTcmhuRE92NWQ1Ymh0RXlnenVzTjRTMlNqajdZVXdQcUpFOE1DMGlJWW1z?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMiswJBVV95cUxOckpEQmZwMTVwQnJlQWY0Rktkb1pZNnhSek1QczBTZWU5WWFWVFRidUJ3SXotVmdsdmVKeWxMSGFaZW5ENW9YeGlsYVRENkNhcVo3TnZUYlJta0hjZFpQTElQdWs0N1RBN3FQSWRsYW5GckdqRHAyLTRmUGN5YUxkQzVKSkE5ZUZac29VRmlyV1UtRzZvS21tRG9SZ0FyVmVvTjJTLXNCc182YV82TXRaR3hMaVlUbnVPallGbTRQV0UtTUxGUmprWHdZRFNoMVlWQ1pzZXd1R3RieUdjcGEtbXV5aW92RFBKQ1Nod1FSODFxYldnQV9YeElNbTVKN3RkdnR0WmdKWkVTcmhuRE92NWQ1Ymh0RXlnenVzTjRTMlNqajdZVXdQcUpFOE1DMGlJWW1z?oc=5)

@@ -1,0 +1,16 @@
+---
+title: "Traditional health and beauty retailers facing increasing competition from supermarkets and township traders"
+date: 2026-11-12T17:15:58.000Z
+author: EWN
+category: Business
+image: 
+summary: "Traditional health and beauty retailers facing increasing competition from supermarkets and township traders"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYnZMalNXeTE1M3hyRGtGMzFZWE5jTDM3TjhTT2k2anhqanR0ZVlJLWZNQVJkUU8xb3pkZnZ1LVdrS1lvaE1PdUNFOExtWHFseWo0aXc3WE55RjlJMG5SM1Z5OEJHVURvSE1mVlctRWpTSW5WWFRZSmh0ZkczVFpONGNmaXRNOTg0X2E5NU1ibWMtZzhXSkljWkZaSS1vOHd1aFlwaS14eEd1SXAyQjJqYmtHRnVNUjdkeGRhZEdHM2FhN1c3YUliQVoycExaWTFBR2pjRnZZS3Q?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by EWN.*
+[Read original article](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYnZMalNXeTE1M3hyRGtGMzFZWE5jTDM3TjhTT2k2anhqanR0ZVlJLWZNQVJkUU8xb3pkZnZ1LVdrS1lvaE1PdUNFOExtWHFseWo0aXc3WE55RjlJMG5SM1Z5OEJHVURvSE1mVlctRWpTSW5WWFRZSmh0ZkczVFpONGNmaXRNOTg0X2E5NU1ibWMtZzhXSkljWkZaSS1vOHd1aFlwaS14eEd1SXAyQjJqYmtHRnVNUjdkeGRhZEdHM2FhN1c3YUliQVoycExaWTFBR2pjRnZZS3Q?oc=5)

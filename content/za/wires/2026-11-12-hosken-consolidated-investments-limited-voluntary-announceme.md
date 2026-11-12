@@ -1,0 +1,16 @@
+---
+title: "HOSKEN CONSOLIDATED INVESTMENTS LIMITED – Voluntary Announcement – Restructure of South African Oil and Gas Interests Completed"
+date: 2026-11-12T14:10:00.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "HOSKEN CONSOLIDATED INVESTMENTS LIMITED – Voluntary Announcement – Restructure of South African Oil and Gas Interests Completed"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbWdVZ0RVRzU4MnJqcjFRdWJmVTNLQkFNcUtkeWd0V2NiRmJTNnFoOWlfNXd6R1JUVklSeFNoSHV2TmdTekt2N0RfZ3BfaXFHSWtSWEFsY1JJVWpMZmNkZUZ0TmxKb1l6MWJ5VkFFcXZPQTF1M2ljaTRZYnk1d1RiWXNHNEFaX2h5MFNQUjFLQTlsU1ZvQTcydnAyTS0xaVpGM2xZd2ZaSWwwNEdhMWNQVHkwX0dYSzhJNzk5SWxYaFZRSkd0Q1ZyQ2hTanY4Mm1tRV9WOFVZNTVMSVpJSW5xcEZ1Nk95LVo2d1pkcUdqallvdw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbWdVZ0RVRzU4MnJqcjFRdWJmVTNLQkFNcUtkeWd0V2NiRmJTNnFoOWlfNXd6R1JUVklSeFNoSHV2TmdTekt2N0RfZ3BfaXFHSWtSWEFsY1JJVWpMZmNkZUZ0TmxKb1l6MWJ5VkFFcXZPQTF1M2ljaTRZYnk1d1RiWXNHNEFaX2h5MFNQUjFLQTlsU1ZvQTcydnAyTS0xaVpGM2xZd2ZaSWwwNEdhMWNQVHkwX0dYSzhJNzk5SWxYaFZRSkd0Q1ZyQ2hTanY4Mm1tRV9WOFVZNTVMSVpJSW5xcEZ1Nk95LVo2d1pkcUdqallvdw?oc=5)
