@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T06:41:36.916237+00:00",
+  "fetched_at": "2026-11-13T19:40:07.612337+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
@@ -51,7 +51,7 @@
     {
       "title": "Msasa park house for sale",
       "url": "https://www.property.co.zw/for-sale/houses-rws248513",
-      "price": "USD 85,000",
+      "price": "USD 83,000",
       "location": "Msasa, Harare East",
       "image": "https://www.property.co.zw/uploadedfiles/23/4e/6c/234e6cc8-ce64-46a0-a119-275efdb14067_thumbnail591.webp",
       "beds": "3",
@@ -130,6 +130,15 @@
       "baths": "1"
     },
     {
+      "title": "Madokero 3-Bed/3-Bath Home — Garage, Modern Kitchen & Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-leg259459",
+      "price": "USD 155,000",
+      "location": "Madokero, Harare West",
+      "image": "https://www.property.co.zw/uploadedfiles/d1/41/e6/d141e615-44aa-425e-9b0e-c5671675ea06_thumbnail591.webp",
+      "beds": "3",
+      "baths": "3"
+    },
+    {
       "title": "House For Sale In Sunway City",
       "url": "https://www.property.co.zw/for-sale/houses-gat248813",
       "price": "USD 160,000",
@@ -189,15 +198,6 @@
       "price": "USD 220,000",
       "location": "Westgate, Harare West",
       "image": "https://www.property.co.zw/uploadedfiles/ca/42/3b/ca423b04-5e72-4af7-9e04-62e57a2389ed_thumbnail591.webp",
-      "beds": "4",
-      "baths": "2"
-    },
-    {
-      "title": "Gletwin Chishawahsa",
-      "url": "https://www.property.co.zw/for-sale/houses-liz252999",
-      "price": "USD 325,000",
-      "location": "Gletwin Park, Harare North",
-      "image": "https://www.property.co.zw/uploadedfiles/ec/6b/8e/ec6b8ed7-ffa1-460e-b335-ac4d1ad5b18c_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
     }
