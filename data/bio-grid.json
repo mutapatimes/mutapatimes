@@ -1,14 +1,62 @@
 {
-  "fetched_at": "2026-11-13T04:44:44+00:00",
+  "fetched_at": "2026-11-13T13:49:53+00:00",
   "count": 60,
   "tiles": [
     {
       "kind": "news",
-      "title": "Zimbabwe Conference of Parties (ZCOP): An urgent call",
-      "link": "https://mutapatimes.com/articles/2026-11-12-zimbabwe-conference-of-parties-zcop-an-urgent-call",
-      "image": "https://mutapatimes.com/img/cards/news/dc3a2e19db66.png",
-      "pubDate": "2026-11-12T22:46:40+00:00",
+      "title": "Zimbabwe turns culinary heritage into tourism growth opportunity",
+      "link": "https://mutapatimes.com/articles/2026-11-13-zimbabwe-turns-culinary-heritage-into-tourism-growth-opportu",
+      "image": "https://mutapatimes.com/img/cards/news/238f4e5f8dd1.png",
+      "pubDate": "2026-11-13T13:39:44+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe turns culinary heritage into tourism growth opportunity",
+      "link": "https://mutapatimes.com/news/2026-11-13-zimbabwe-turns-culinary-heritage-into-tourism-growth-opportunity-788b24",
+      "image": "https://mutapatimes.com/img/cards/news/0800d456ee21.png",
+      "pubDate": "2026-11-13T13:39:44+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "DHL, Zimbabwe train digital youth",
+      "link": "https://mutapatimes.com/articles/2026-11-13-dhl-zimbabwe-train-digital-youth",
+      "image": "https://mutapatimes.com/img/cards/news/688732ab767c.png",
+      "pubDate": "2026-11-13T08:09:25+00:00",
       "category": "Tech"
+    },
+    {
+      "kind": "news",
+      "title": "DHL, Zimbabwe train digital youth",
+      "link": "https://mutapatimes.com/news/2026-11-13-dhl-zimbabwe-train-digital-youth-21b2d6",
+      "image": "https://mutapatimes.com/img/cards/news/76750355b888.png",
+      "pubDate": "2026-11-13T08:09:25+00:00",
+      "category": "Technology"
+    },
+    {
+      "kind": "news",
+      "title": "Mnangagwa Government Faces Questions As US$17 Million Monthly ZINARA Collections Contrast With Crumbling Roads",
+      "link": "https://mutapatimes.com/news/2026-11-13-mnangagwa-government-faces-questions-as-us-17-million-monthly-zinara-2e27f7",
+      "image": "https://mutapatimes.com/img/cards/news/6ee728263f85.png",
+      "pubDate": "2026-11-13T01:00:00+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Chivhu Eco City emerges as Zimbabwe’s next major investment hub",
+      "link": "https://mutapatimes.com/articles/2026-11-13-chivhu-eco-city-emerges-as-zimbabwes-next-major-investment-h",
+      "image": "https://mutapatimes.com/img/cards/news/7fc7bba39e96.png",
+      "pubDate": "2026-11-13T00:00:27+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chivhu Eco City emerges as Zimbabwe’s next major investment hub",
+      "link": "https://mutapatimes.com/news/2026-11-13-chivhu-eco-city-emerges-as-zimbabwe-s-next-major-investment-hub-5eb359",
+      "image": "https://mutapatimes.com/img/cards/news/5ee90b5736f1.png",
+      "pubDate": "2026-11-13T00:00:27+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -20,11 +68,11 @@
     },
     {
       "kind": "news",
-      "title": "Sables want to feel the love in UK",
-      "link": "https://mutapatimes.com/articles/2026-11-12-sables-want-to-feel-the-love-in-uk",
-      "image": "https://mutapatimes.com/img/cards/news/4aa95fd5f4ee.png",
-      "pubDate": "2026-11-12T22:02:41+00:00",
-      "category": "Sport"
+      "title": "President clarifies roles of economic ministries",
+      "link": "https://mutapatimes.com/news/2026-11-12-president-clarifies-roles-of-economic-ministries-dd14ce",
+      "image": "https://mutapatimes.com/img/cards/news/59bae93d5bee.png",
+      "pubDate": "2026-11-12T22:40:29+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -33,14 +81,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b181e5a681cd.png",
       "pubDate": "2026-11-12T22:02:41+00:00",
       "category": "Sports"
-    },
-    {
-      "kind": "news",
-      "title": "EDITORIAL COMMENT: A landmark surgery, a new era for health care in Manicaland",
-      "link": "https://mutapatimes.com/articles/2026-11-12-editorial-comment-a-landmark-surgery-a-new-era-for-health-ca",
-      "image": "https://mutapatimes.com/img/cards/news/475c42ea5e3c.png",
-      "pubDate": "2026-11-12T22:01:42+00:00",
-      "category": "Health"
     },
     {
       "kind": "news",
@@ -60,7 +100,7 @@
     },
     {
       "kind": "fx",
-      "title": "Zim FX snapshot 13 Nov 2026: 1 USD = 26.56 ZWG · best from UK £100 → $129.79 via Wise",
+      "title": "Zim FX snapshot 13 Nov 2026: 1 USD = 26.54 ZWG · best from UK £100 → $129.32 via Wise",
       "link": "https://mutapatimes.com/fx?d=2026-11-13",
       "image": "https://mutapatimes.com/img/cards/fx-snapshot.png?v=2026-11-13",
       "pubDate": "2026-11-12T22:00:00+00:00",
@@ -68,7 +108,7 @@
     },
     {
       "kind": "weather",
-      "title": "Zim weather 13 Nov: Harare overcast · high 29° / low 14°",
+      "title": "Zim weather 13 Nov: Harare light drizzle · high 30° / low 17°",
       "link": "https://mutapatimes.com/weather?d=2026-11-13",
       "image": "https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-13",
       "pubDate": "2026-11-12T22:00:00+00:00",
@@ -105,6 +145,38 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-11-12T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Local NGO — Administrative Intern",
+      "link": "https://vacancymail.co.zw/jobs/administrative-intern-70243/",
+      "image": "https://mutapatimes.com/img/cards/jobs/507b2b4edd55.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — Laboratory Assistant - SOS Secondary School",
+      "link": "https://vacancymail.co.zw/jobs/laboratory-assistant-sos-secondary-school-70242/",
+      "image": "https://mutapatimes.com/img/cards/jobs/77117dcd4b09.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — Cleaner - SOS Secondary School",
+      "link": "https://vacancymail.co.zw/jobs/cleaner-sos-secondary-school-70241/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ba729457f141.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "SOS Children's Villages Zimbabwe — SIL Volunteer",
+      "link": "https://vacancymail.co.zw/jobs/sil-volunteer-70240/",
+      "image": "https://mutapatimes.com/img/cards/jobs/011ba812e9c1.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -407,78 +479,6 @@
       "title": "CeSHHAR Zimbabwe — Executive Assistant x1, Harare",
       "link": "https://vacancymail.co.zw/jobs/executive-assistant-x1-harare-70197/",
       "image": "https://mutapatimes.com/img/cards/jobs/634a15e19058.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "VIRL Financial Services — Loan Officer - Chinhoyi",
-      "link": "https://vacancymail.co.zw/jobs/loan-officer-chinhoyi-70196/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6871fbed2d8c.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative x 3",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-x-3-70195/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8ba8a2b2001e.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Leonard Cheshire Disability Zimbabwe — Terms of Reference Mid-Term Evaluation Strengthening the Civil Society Regional Partnerships in favour of the ratification, domestication and implementation of the African Disability Protocol (ADP)",
-      "link": "https://vacancymail.co.zw/jobs/terms-of-reference-mid-term-evaluation-strengthening-the-civil-society-regional-partnerships-in-favour-of-the-ratification-domestication-and-implementation-of-the-african-disability-protocol-adp-70194/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6101f2402790.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Recruiter",
-      "link": "https://vacancymail.co.zw/jobs/recruiter-70193/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a18eb4df61ff.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Sales Officer",
-      "link": "https://vacancymail.co.zw/jobs/sales-officer-70192/",
-      "image": "https://mutapatimes.com/img/cards/jobs/91551dad77f4.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Tinkat Web and Print Solutions — Graphic Designer (Internship)",
-      "link": "https://vacancymail.co.zw/jobs/graphic-designer-internship-70191/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c27e7959389d.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "School Administrator/ Project Coordinator",
-      "link": "https://vacancymail.co.zw/jobs/school-administrator-project-coordinator-70190/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e6b070e6326e.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Cake Fairy ~~ 0 — RESTAURANT MANAGER (Fairy Cafe Harare)",
-      "link": "https://vacancymail.co.zw/jobs/restaurant-manager-fairy-cafe-harare-70189/",
-      "image": "https://mutapatimes.com/img/cards/jobs/d1dc6880ebca.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Probfix Financial Services (Pvt) Ltd — GRADUATE TRAINEE PROGRAMME 2027/2028 - 2 YEAR ON-THE-JOB TRAINING",
-      "link": "https://vacancymail.co.zw/jobs/graduate-trainee-programme-20272028-2-year-on-the-job-training-70188/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e9e0e15d8c52.png",
       "pubDate": "2026-11-12T22:00:00+00:00",
       "category": "Jobs"
     }
