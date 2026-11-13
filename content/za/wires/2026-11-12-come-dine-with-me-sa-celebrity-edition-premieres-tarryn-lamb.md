@@ -1,0 +1,16 @@
+---
+title: "Come Dine With Me SA celebrity edition premieres, Tarryn Lamb drops new single and Nespresso partners with Swarovski"
+date: 2026-11-12T22:03:33.000Z
+author: Mail & Guardian
+category: Culture
+image: 
+summary: "Come Dine With Me SA celebrity edition premieres, Tarryn Lamb drops new single and Nespresso partners with Swarovski"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiogJBVV95cUxNSmpWVWVIeHRjX3htMFZDU1pvcm5TeGhFZkpUS3hNXzBBVG5vQ1VyaWl6OUVjcFk5RGY4N25zZ1NjY3k0dlJVS1RtejA1QVRXdlQ2RlAwQjRhNnkwRUY1X2FjbG9JY0l1LXpjcnlrbGhIeGoxRUdjbVVHNV82SEdzTmJJa0VEeHVERUI5VHZpdEI2MFJ4aTdUOGg4N0g1bXR6RVZwMERac3pKQlN3dmFVT01NTmx4T0J5M2x2Vmg5VlA5T3FQc25IR2lTcUdZVGNWZUNLdlozQmV6ZTczVXJsZXpVWV9RVmx4X2k4dTJzSUdIZ1BEb3B4bVVDNk9SYlJ1U2ZVOXl0ZzdVb09menIxU3g2TmhrdWlFVFhEQjRwWTNfQQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Mail & Guardian.*
+[Read original article](https://news.google.com/rss/articles/CBMiogJBVV95cUxNSmpWVWVIeHRjX3htMFZDU1pvcm5TeGhFZkpUS3hNXzBBVG5vQ1VyaWl6OUVjcFk5RGY4N25zZ1NjY3k0dlJVS1RtejA1QVRXdlQ2RlAwQjRhNnkwRUY1X2FjbG9JY0l1LXpjcnlrbGhIeGoxRUdjbVVHNV82SEdzTmJJa0VEeHVERUI5VHZpdEI2MFJ4aTdUOGg4N0g1bXR6RVZwMERac3pKQlN3dmFVT01NTmx4T0J5M2x2Vmg5VlA5T3FQc25IR2lTcUdZVGNWZUNLdlozQmV6ZTczVXJsZXpVWV9RVmx4X2k4dTJzSUdIZ1BEb3B4bVVDNk9SYlJ1U2ZVOXl0ZzdVb09menIxU3g2TmhrdWlFVFhEQjRwWTNfQQ?oc=5)
