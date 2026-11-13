@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-11-13T13:49:53+00:00",
+  "fetched_at": "2026-11-13T21:09:23+00:00",
   "count": 60,
   "tiles": [
-    {
-      "kind": "news",
-      "title": "Zimbabwe turns culinary heritage into tourism growth opportunity",
-      "link": "https://mutapatimes.com/articles/2026-11-13-zimbabwe-turns-culinary-heritage-into-tourism-growth-opportu",
-      "image": "https://mutapatimes.com/img/cards/news/238f4e5f8dd1.png",
-      "pubDate": "2026-11-13T13:39:44+00:00",
-      "category": "Culture"
-    },
     {
       "kind": "news",
       "title": "Zimbabwe turns culinary heritage into tourism growth opportunity",
@@ -19,12 +11,84 @@
       "category": "Entertainment"
     },
     {
+      "kind": "zse",
+      "title": "ZSE close 13 Nov 2026: All Share 499.4 (+0.38%)",
+      "link": "https://mutapatimes.com/zse?d=2026-11-13",
+      "image": "https://mutapatimes.com/img/cards/zse/eod-latest.png?v=2026-11-13",
+      "pubDate": "2026-11-13T13:30:00+00:00",
+      "category": "Markets"
+    },
+    {
       "kind": "news",
-      "title": "DHL, Zimbabwe train digital youth",
-      "link": "https://mutapatimes.com/articles/2026-11-13-dhl-zimbabwe-train-digital-youth",
-      "image": "https://mutapatimes.com/img/cards/news/688732ab767c.png",
-      "pubDate": "2026-11-13T08:09:25+00:00",
-      "category": "Tech"
+      "title": "ZIMBABWE-HARARE-ZIMBABWEAN ACUPUNCTURIST-TCM",
+      "link": "https://mutapatimes.com/articles/2026-11-13-zimbabwe-harare-zimbabwean-acupuncturist-tcm",
+      "image": "https://mutapatimes.com/img/cards/news/25e017ebaeff.png",
+      "pubDate": "2026-11-13T10:49:00+00:00",
+      "category": "Culture"
+    },
+    {
+      "kind": "news",
+      "title": "ZIMBABWE-HARARE-ZIMBABWEAN ACUPUNCTURIST-TCM",
+      "link": "https://mutapatimes.com/news/2026-11-13-zimbabwe-harare-zimbabwean-acupuncturist-tcm-411309",
+      "image": "https://mutapatimes.com/img/cards/news/78929ed2b312.png",
+      "pubDate": "2026-11-13T10:49:00+00:00",
+      "category": "Entertainment"
+    },
+    {
+      "kind": "news",
+      "title": "President Mnangagwa Celebrates Ropafadzo Mzondo’s Historic Youth Olympic Games Victory",
+      "link": "https://mutapatimes.com/news/2026-11-13-president-mnangagwa-celebrates-ropafadzo-mzondo-s-historic-youth-olympic-games-36e522",
+      "image": "https://mutapatimes.com/img/cards/news/635f6a151ac3.png",
+      "pubDate": "2026-11-13T08:31:22+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Mazvitorera leads Zimbabwe ‘A’ fight with four Irish scalps",
+      "link": "https://mutapatimes.com/articles/2026-11-13-mazvitorera-leads-zimbabwe-a-fight-with-four-irish-scalps",
+      "image": "https://mutapatimes.com/img/cards/news/764a281a017b.png",
+      "pubDate": "2026-11-13T08:30:08+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Mazvitorera leads Zimbabwe ‘A’ fight with four Irish scalps",
+      "link": "https://mutapatimes.com/news/2026-11-13-mazvitorera-leads-zimbabwe-a-fight-with-four-irish-scalps-3e077b",
+      "image": "https://mutapatimes.com/img/cards/news/d1597639ec7b.png",
+      "pubDate": "2026-11-13T08:30:08+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Catala demands more from Zimbabwe Warriors after draw with Equatorial Guinea",
+      "link": "https://mutapatimes.com/articles/2026-11-13-catala-demands-more-from-zimbabwe-warriors-after-draw-with-e",
+      "image": "https://mutapatimes.com/img/cards/news/0bfb391d20fa.png",
+      "pubDate": "2026-11-13T08:24:39+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Catala demands more from Zimbabwe Warriors after draw with Equatorial Guinea",
+      "link": "https://mutapatimes.com/news/2026-11-13-catala-demands-more-from-zimbabwe-warriors-after-draw-with-equatorial-guinea-6239b5",
+      "image": "https://mutapatimes.com/img/cards/news/f7b97ad2de4c.png",
+      "pubDate": "2026-11-13T08:24:39+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Benny Enock Chitofu Steals A Car In SA, Crosses To Zim",
+      "link": "https://mutapatimes.com/articles/2026-11-13-benny-enock-chitofu-steals-a-car-in-sa-crosses-to-zim",
+      "image": "https://mutapatimes.com/img/cards/news/2c25859c8e4a.png",
+      "pubDate": "2026-11-13T08:13:10+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Benny Enock Chitofu Steals A Car In SA, Crosses To Zim",
+      "link": "https://mutapatimes.com/news/2026-11-13-benny-enock-chitofu-steals-a-car-in-sa-crosses-to-zim-bda8d5",
+      "image": "https://mutapatimes.com/img/cards/news/66c8eb2b7248.png",
+      "pubDate": "2026-11-13T08:13:10+00:00",
+      "category": "News"
     },
     {
       "kind": "news",
@@ -36,19 +100,75 @@
     },
     {
       "kind": "news",
+      "title": "Young Zimbabwean Artists Turn to Arts to Fight Gender-Based Violence",
+      "link": "https://mutapatimes.com/news/2026-11-13-young-zimbabwean-artists-turn-to-arts-to-fight-gender-based-violence-624952",
+      "image": "https://mutapatimes.com/img/cards/news/5bd85ca58bd8.png",
+      "pubDate": "2026-11-13T08:05:09+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe to Install More Traffic Cameras on Highways and Intersections as Automated Fines System Expands",
+      "link": "https://mutapatimes.com/articles/2026-11-13-zimbabwe-to-install-more-traffic-cameras-on-highways-and-int",
+      "image": "https://mutapatimes.com/img/cards/news/80408c49961e.png",
+      "pubDate": "2026-11-13T08:04:07+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe to Install More Traffic Cameras on Highways and Intersections as Automated Fines System Expands",
+      "link": "https://mutapatimes.com/news/2026-11-13-zimbabwe-to-install-more-traffic-cameras-on-highways-and-intersections-as-2a10a7",
+      "image": "https://mutapatimes.com/img/cards/news/f10ec5e75b72.png",
+      "pubDate": "2026-11-13T08:04:07+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Op-ed: Why Zimbabwe’s Constitutional Court must invalidate Constitutional Amendment No. 3 (CAA 3)",
+      "link": "https://mutapatimes.com/news/2026-11-13-op-ed-why-zimbabwe-s-constitutional-court-must-invalidate-constitutional-d58c07",
+      "image": "https://mutapatimes.com/img/cards/news/470f8b6f7a71.png",
+      "pubDate": "2026-11-13T08:02:15+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "Zimbabwe Moves to Rebuild Local Bond Market After ZiG Chaos",
+      "link": "https://mutapatimes.com/articles/2026-11-13-zimbabwe-moves-to-rebuild-local-bond-market-after-zig-chaos",
+      "image": "https://mutapatimes.com/img/cards/news/8ef8ceb92b27.png",
+      "pubDate": "2026-11-13T07:44:00+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chivhu Eco City attracts strong interest as Founders Phase nears sell-out",
+      "link": "https://mutapatimes.com/articles/2026-11-13-chivhu-eco-city-attracts-strong-interest-as-founders-phase-n",
+      "image": "https://mutapatimes.com/img/cards/news/18a18e6aa45c.png",
+      "pubDate": "2026-11-13T07:12:56+00:00",
+      "category": "Business"
+    },
+    {
+      "kind": "news",
+      "title": "Chivhu Eco City attracts strong interest as Founders Phase nears sell-out",
+      "link": "https://mutapatimes.com/news/2026-11-13-chivhu-eco-city-attracts-strong-interest-as-founders-phase-nears-sell-out-384f2d",
+      "image": "https://mutapatimes.com/img/cards/news/53097e5e3995.png",
+      "pubDate": "2026-11-13T07:12:56+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
+      "title": "President Mnangagwa Gazettes Ministerial Responsibilities for Mthuli Ncube and Kuda Tagwirei",
+      "link": "https://mutapatimes.com/news/2026-11-13-president-mnangagwa-gazettes-ministerial-responsibilities-for-mthuli-ncube-and-5c80e6",
+      "image": "https://mutapatimes.com/img/cards/news/7ede303f9b75.png",
+      "pubDate": "2026-11-13T07:02:44+00:00",
+      "category": "News"
+    },
+    {
+      "kind": "news",
       "title": "Mnangagwa Government Faces Questions As US$17 Million Monthly ZINARA Collections Contrast With Crumbling Roads",
       "link": "https://mutapatimes.com/news/2026-11-13-mnangagwa-government-faces-questions-as-us-17-million-monthly-zinara-2e27f7",
       "image": "https://mutapatimes.com/img/cards/news/6ee728263f85.png",
       "pubDate": "2026-11-13T01:00:00+00:00",
       "category": "News"
-    },
-    {
-      "kind": "news",
-      "title": "Chivhu Eco City emerges as Zimbabwe’s next major investment hub",
-      "link": "https://mutapatimes.com/articles/2026-11-13-chivhu-eco-city-emerges-as-zimbabwes-next-major-investment-h",
-      "image": "https://mutapatimes.com/img/cards/news/7fc7bba39e96.png",
-      "pubDate": "2026-11-13T00:00:27+00:00",
-      "category": "Business"
     },
     {
       "kind": "news",
@@ -81,14 +201,6 @@
       "image": "https://mutapatimes.com/img/cards/news/b181e5a681cd.png",
       "pubDate": "2026-11-12T22:02:41+00:00",
       "category": "Sports"
-    },
-    {
-      "kind": "news",
-      "title": "EDITORIAL COMMENT: A landmark surgery, a new era for health care in Manicaland",
-      "link": "https://mutapatimes.com/news/2026-11-13-editorial-comment-a-landmark-surgery-a-new-era-for-health-care-in-manicaland-8ad0b0",
-      "image": "https://mutapatimes.com/img/cards/news/1e2774901be5.png",
-      "pubDate": "2026-11-12T22:01:42+00:00",
-      "category": "Health"
     },
     {
       "kind": "economy",
@@ -145,6 +257,78 @@
       "image": "https://mutapatimes.com/img/cards/jobs/internship-business-development-associate.png",
       "pubDate": "2026-11-12T22:00:00+00:00",
       "category": "Internship"
+    },
+    {
+      "kind": "jobs",
+      "title": "Accounting Teacher - Advanced Level",
+      "link": "https://vacancymail.co.zw/jobs/accounting-teacher-advanced-level-70252/",
+      "image": "https://mutapatimes.com/img/cards/jobs/ecb142cb7a6f.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Nyanga Rural District Council — Casual Roving Development Control Clerk: Nyanga South",
+      "link": "https://vacancymail.co.zw/jobs/casual-roving-development-control-clerk-nyanga-south-70251/",
+      "image": "https://mutapatimes.com/img/cards/jobs/0610d31c8138.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Nyanga Rural District Council — Motorized Grader Operator",
+      "link": "https://vacancymail.co.zw/jobs/motorized-grader-operator-70250/",
+      "image": "https://mutapatimes.com/img/cards/jobs/f24db5ad7559.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Midlands State University MSU — Data Analytics Developer (1 Post)",
+      "link": "https://vacancymail.co.zw/jobs/data-analytics-developer-1-post-70249/",
+      "image": "https://mutapatimes.com/img/cards/jobs/45e77bf6ed70.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Mashambanzou Care Trust — MCT Mental Health Training Manual Development Consultancy",
+      "link": "https://vacancymail.co.zw/jobs/mct-mental-health-training-manual-development-consultancy-70248/",
+      "image": "https://mutapatimes.com/img/cards/jobs/53e9c96ab7c5.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Enterprise Accounting Services — Temp Audit Clerk",
+      "link": "https://vacancymail.co.zw/jobs/temp-audit-clerk-70247/",
+      "image": "https://mutapatimes.com/img/cards/jobs/c0f0253661f5.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Nyanga Rural District Council — Casual Roving Development Control Clerk",
+      "link": "https://vacancymail.co.zw/jobs/casual-roving-development-control-clerk-70246/",
+      "image": "https://mutapatimes.com/img/cards/jobs/fd4d3c829e35.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Class 2 Driver x2",
+      "link": "https://vacancymail.co.zw/jobs/class-2-driver-x2-70245/",
+      "image": "https://mutapatimes.com/img/cards/jobs/84af2290c973.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
+    },
+    {
+      "kind": "jobs",
+      "title": "Telesales Representatives",
+      "link": "https://vacancymail.co.zw/jobs/telesales-representatives-70244/",
+      "image": "https://mutapatimes.com/img/cards/jobs/80c2561face7.png",
+      "pubDate": "2026-11-12T22:00:00+00:00",
+      "category": "Jobs"
     },
     {
       "kind": "jobs",
@@ -295,190 +479,6 @@
       "title": "Procurement Officer",
       "link": "https://vacancymail.co.zw/jobs/procurement-officer-70225/",
       "image": "https://mutapatimes.com/img/cards/jobs/9531dad9ce7b.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Total Energies — Supply Assistant",
-      "link": "https://vacancymail.co.zw/jobs/supply-assistant-70224/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e286e0e2124a.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Night Club Operators and Compliance Monitors",
-      "link": "https://vacancymail.co.zw/jobs/night-club-operators-and-compliance-monitors-70223/",
-      "image": "https://mutapatimes.com/img/cards/jobs/73f4db5e2086.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "National Foods Holdings Limited — ELECTRICIAN (X2) & FITTER TURNER (X1)",
-      "link": "https://vacancymail.co.zw/jobs/electrician-x2-fitter-turner-x1-70222/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f22782bfa18f.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Trainee Research & Development Chemist",
-      "link": "https://vacancymail.co.zw/jobs/trainee-research-development-chemist-70221/",
-      "image": "https://mutapatimes.com/img/cards/jobs/611f1906fd44.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Bata Shoe Company — Environmental Heath and Safety Officer",
-      "link": "https://vacancymail.co.zw/jobs/environmental-heath-and-safety-officer-70220/",
-      "image": "https://mutapatimes.com/img/cards/jobs/3dc33896062a.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Sales Representative (Bulawayo Based)",
-      "link": "https://vacancymail.co.zw/jobs/sales-representative-bulawayo-based-70219/",
-      "image": "https://mutapatimes.com/img/cards/jobs/dab8b1cfefaa.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "TSG Projects — Sales Assistant",
-      "link": "https://vacancymail.co.zw/jobs/sales-assistant-70218/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8e51dc92ca42.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — Welder",
-      "link": "https://vacancymail.co.zw/jobs/welder-70217/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f389c3e8a1b1.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — Overall Projects Supervisor",
-      "link": "https://vacancymail.co.zw/jobs/overall-projects-supervisor-70216/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e57441eb77f4.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — OPERATIONS SUPERVISOR",
-      "link": "https://vacancymail.co.zw/jobs/operations-supervisor-70215/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e8e72486913a.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — PROJECTS ASSISTANT",
-      "link": "https://vacancymail.co.zw/jobs/projects-assistant-70214/",
-      "image": "https://mutapatimes.com/img/cards/jobs/a8365e8ae50c.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — Sales and Marketing Person",
-      "link": "https://vacancymail.co.zw/jobs/sales-and-marketing-person-70213/",
-      "image": "https://mutapatimes.com/img/cards/jobs/da78b9fb3f0e.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Satewave Technologies — Finance Officers",
-      "link": "https://vacancymail.co.zw/jobs/finance-officers-70212/",
-      "image": "https://mutapatimes.com/img/cards/jobs/f999c35bc21f.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — Invitation To Tender For Procurement Of Medical Supplies and Medical Equipment",
-      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-for-procurement-of-medical-supplies-and-medical-equipment-70211/",
-      "image": "https://mutapatimes.com/img/cards/jobs/fdb609691be0.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Solusi University — Dean of Faculty: Theology and Chaplaincy",
-      "link": "https://vacancymail.co.zw/jobs/dean-of-faculty-theology-and-chaplaincy-70210/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c85b3c6f9165.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Valtera Platinum — Charge Hand",
-      "link": "https://vacancymail.co.zw/jobs/charge-hand-70209/",
-      "image": "https://mutapatimes.com/img/cards/jobs/461b6299b238.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "REDAN — CONVENIENCE STORE SALES ASSOCIATES/ SHOP CASHIERS",
-      "link": "https://vacancymail.co.zw/jobs/convenience-store-sales-associates-shop-cashiers-70203/",
-      "image": "https://mutapatimes.com/img/cards/jobs/6a140cc76a43.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "REDAN — FORECOURT CASHIERS",
-      "link": "https://vacancymail.co.zw/jobs/forecourt-cashiers-70202/",
-      "image": "https://mutapatimes.com/img/cards/jobs/9534d7af7ab8.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Block man",
-      "link": "https://vacancymail.co.zw/jobs/block-man-70201/",
-      "image": "https://mutapatimes.com/img/cards/jobs/8eeacc698be9.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Local NGO — Invitation To Tender: Procurement Of Hospital Furniture - Human Impact Hub",
-      "link": "https://vacancymail.co.zw/jobs/invitation-to-tender-procurement-of-hospital-furniture-human-impact-hub-70200/",
-      "image": "https://mutapatimes.com/img/cards/jobs/c6bbfbc6ad6c.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "Midlands State University MSU — Carcass Cutter / Saw Man Cutter (1 Post)",
-      "link": "https://vacancymail.co.zw/jobs/carcass-cutter-saw-man-cutter-1-post-70199/",
-      "image": "https://mutapatimes.com/img/cards/jobs/76c6aa3d349b.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "NUST - National University of Science & Technology — DIRECTOR OF CENTRE FOR CONTINUING EDUCATION (CCE) 1 POST",
-      "link": "https://vacancymail.co.zw/jobs/director-of-centre-for-continuing-education-cce-1-post-70198/",
-      "image": "https://mutapatimes.com/img/cards/jobs/e3e77a2af951.png",
-      "pubDate": "2026-11-12T22:00:00+00:00",
-      "category": "Jobs"
-    },
-    {
-      "kind": "jobs",
-      "title": "CeSHHAR Zimbabwe — Executive Assistant x1, Harare",
-      "link": "https://vacancymail.co.zw/jobs/executive-assistant-x1-harare-70197/",
-      "image": "https://mutapatimes.com/img/cards/jobs/634a15e19058.png",
       "pubDate": "2026-11-12T22:00:00+00:00",
       "category": "Jobs"
     }
