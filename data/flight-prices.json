@@ -151,7 +151,7 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 14,
+          "n": 13,
           "error": null
         },
         {
@@ -175,11 +175,11 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 14,
+          "n": 13,
           "error": null
         }
       ],
-      "observations": 35
+      "observations": 33
     },
     "sydney-to-harare": {
       "origin": "SYD",
@@ -417,10 +417,10 @@
           "currency": ""
         },
         {
-          "price": 3876,
+          "price": 3956,
           "airline": "FN",
-          "departure_at": "2026-12-24",
-          "return_at": "2027-01-06",
+          "departure_at": "2026-12-26",
+          "return_at": "2027-01-07",
           "stops": 0,
           "duration": null,
           "currency": ""
@@ -504,7 +504,7 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 9,
+          "n": 10,
           "error": null
         },
         {
@@ -522,11 +522,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 15,
+          "n": 16,
           "error": null
         }
       ],
-      "observations": 25
+      "observations": 27
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -717,15 +717,6 @@
           "currency": ""
         },
         {
-          "price": 1368,
-          "airline": "WB",
-          "departure_at": "2026-11-15",
-          "return_at": "",
-          "stops": 1,
-          "duration": 980,
-          "currency": ""
-        },
-        {
           "price": 1432,
           "airline": "TC",
           "departure_at": "2026-11-17",
@@ -742,13 +733,22 @@
           "stops": 1,
           "duration": 1405,
           "currency": ""
+        },
+        {
+          "price": 2439,
+          "airline": "ET",
+          "departure_at": "2026-11-21",
+          "return_at": "2026-12-04",
+          "stops": 1,
+          "duration": null,
+          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "DXB",
-          "n": 10,
+          "n": 9,
           "error": null
         },
         {
@@ -770,7 +770,7 @@
           "error": null
         }
       ],
-      "observations": 12
+      "observations": 11
     },
     "toronto-to-harare": {
       "origin": "YYZ",
