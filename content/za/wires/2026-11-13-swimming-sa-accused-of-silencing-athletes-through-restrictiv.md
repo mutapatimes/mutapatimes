@@ -1,0 +1,16 @@
+---
+title: "Swimming SA accused of silencing athletes through restrictive contracts"
+date: 2026-11-13T14:21:18.000Z
+author: Moneyweb
+category: Sport
+image: 
+summary: "Swimming SA accused of silencing athletes through restrictive contracts"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWHlFZE1zejdSOXZKczRzdlFlYkZQSVZlV3JyeGFWbUxhdDl5QndNU3EyeHpROUV4V3lUMnNmRWtYbVA2dzdMVkV4UmY4TUx5c2ZZUUtYaXRLWnAtVXVhVjJkUXp5VUxZbzhxN24xS1U1QUthNmk4cWlXbnZrYTlEa290elM3VnB1T0NtbFhIbEI4RnZkUGM5eDFqSXBKUkNDSVBxcnU3NkpuRzVKcG1DWW04LUw1dEN2bTFoU3loV3A0NXhQaktrNVJUZzExZw?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMizgFBVV95cUxNWHlFZE1zejdSOXZKczRzdlFlYkZQSVZlV3JyeGFWbUxhdDl5QndNU3EyeHpROUV4V3lUMnNmRWtYbVA2dzdMVkV4UmY4TUx5c2ZZUUtYaXRLWnAtVXVhVjJkUXp5VUxZbzhxN24xS1U1QUthNmk4cWlXbnZrYTlEa290elM3VnB1T0NtbFhIbEI4RnZkUGM5eDFqSXBKUkNDSVBxcnU3NkpuRzVKcG1DWW04LUw1dEN2bTFoU3loV3A0NXhQaktrNVJUZzExZw?oc=5)
