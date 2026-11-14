@@ -1,0 +1,16 @@
+---
+title: "The Microsoft outage that’s hit state agencies and business alike"
+date: 2026-11-13T04:27:06.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "The Microsoft outage that’s hit state agencies and business alike"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbEdrNEZoWVR2NlBVWE5yZGs3WGxjQkxzSDdIT0pTS0NOT1dKb3NRU3JpRW1sYU5BMFR5WUNrcjlwM1ctZUZ0YjJQY3RTZVhuT0IwVGRzRHhPOTdIUGdCaVZNU204N1FjWWVzSW95UTBhb2xybG9EeWMzSnhVZ0dfTG5YVHNkS3JvOGU2TGxvLUFSVDd6cVFGMlg5R0t1TXFuLU5jY00xX2s4OGVjR2dtLVE0ZnZjWTVVNDJoaUZ2aDkzX0psOHBHeGU4V3ZYVkNQS0M4enpmc1dBdlo5NHc?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbEdrNEZoWVR2NlBVWE5yZGs3WGxjQkxzSDdIT0pTS0NOT1dKb3NRU3JpRW1sYU5BMFR5WUNrcjlwM1ctZUZ0YjJQY3RTZVhuT0IwVGRzRHhPOTdIUGdCaVZNU204N1FjWWVzSW95UTBhb2xybG9EeWMzSnhVZ0dfTG5YVHNkS3JvOGU2TGxvLUFSVDd6cVFGMlg5R0t1TXFuLU5jY00xX2s4OGVjR2dtLVE0ZnZjWTVVNDJoaUZ2aDkzX0psOHBHeGU4V3ZYVkNQS0M4enpmc1dBdlo5NHc?oc=5)

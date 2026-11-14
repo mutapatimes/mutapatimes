@@ -1,0 +1,16 @@
+---
+title: "Retired general details irregularities flagged in SANDF repatriations contract"
+date: 2026-11-13T11:52:04.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Retired general details irregularities flagged in SANDF repatriations contract"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPb2J5Z3pjMHg1RlVmRTNMNmozMXNxeEx2M3p2WTlCQ1dPbDVCSTRsVktSRWZONERBZnQ1RG82UXhmTU12UXN1T2xTcXIyaTE5S3gzSVdnY1dDUFlZRjFJYUVpc3ViOWh5aUlTSlNxQ2NrTXZCbmsyOUxIVVg2cGxvQ1p1YURMTzl2eGlPbmJ5QUVFWHFHcDhtNGkwWGNudHVZa24wV0FoS0RndkVsQ1UyTi0xVHNqNG43VGM3VUtpR0NlTnUzWWZfLU4wbmxMNVJlV2c?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPb2J5Z3pjMHg1RlVmRTNMNmozMXNxeEx2M3p2WTlCQ1dPbDVCSTRsVktSRWZONERBZnQ1RG82UXhmTU12UXN1T2xTcXIyaTE5S3gzSVdnY1dDUFlZRjFJYUVpc3ViOWh5aUlTSlNxQ2NrTXZCbmsyOUxIVVg2cGxvQ1p1YURMTzl2eGlPbmJ5QUVFWHFHcDhtNGkwWGNudHVZa24wV0FoS0RndkVsQ1UyTi0xVHNqNG43VGM3VUtpR0NlTnUzWWZfLU4wbmxMNVJlV2c?oc=5)
