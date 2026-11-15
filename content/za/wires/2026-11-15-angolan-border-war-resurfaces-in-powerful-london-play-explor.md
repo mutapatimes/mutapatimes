@@ -1,0 +1,16 @@
+---
+title: "Angolan border war resurfaces in powerful London play exploring race and reconciliation"
+date: 2026-11-15T10:10:46.000Z
+author: Daily Maverick
+category: Business
+image: 
+summary: "Angolan border war resurfaces in powerful London play exploring race and reconciliation"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNE1oNlF2SkFiOU9NM29mOEZzMWxRYXJ5NFpXVUgxWkZjeHdKcXhRUFgwWXlfVGFHMW5uQlpScTNFZ1p4TGpDaGFRRDh0Slc0bFpvd3JBZHVDUDRUd1F6LWh4ck4xYkcwM2YtblFHR3kySkdKZ3NlS1A3RHpTblhaZHE1Z0x2OWdWUFZTSDJieVdMQ3VDcllYbE03Y29ReVFNQ2M2TS11OTFqZHl0akY1V09SWlE1eTFQcS15d1phZy1nTnotMHlOaGNCRURlVlNsZHY3Q3F3?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Daily Maverick.*
+[Read original article](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNE1oNlF2SkFiOU9NM29mOEZzMWxRYXJ5NFpXVUgxWkZjeHdKcXhRUFgwWXlfVGFHMW5uQlpScTNFZ1p4TGpDaGFRRDh0Slc0bFpvd3JBZHVDUDRUd1F6LWh4ck4xYkcwM2YtblFHR3kySkdKZ3NlS1A3RHpTblhaZHE1Z0x2OWdWUFZTSDJieVdMQ3VDcllYbE03Y29ReVFNQ2M2TS11OTFqZHl0akY1V09SWlE1eTFQcS15d1phZy1nTnotMHlOaGNCRURlVlNsZHY3Q3F3?oc=5)
