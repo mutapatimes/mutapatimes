@@ -1,0 +1,16 @@
+---
+title: "South African Framework Integrates Environmental Sustainability Into Paediatric Surgical Training Programs"
+date: 2026-11-14T21:50:21.000Z
+author: Bioengineer.org
+category: Health
+image: 
+summary: "South African Framework Integrates Environmental Sustainability Into Paediatric Surgical Training Programs"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiywFBVV95cUxQa2w2bTBQc0E1YXhhczhoU0ZrWExSWmM0dU1mVGQxUHZLM1NDQkZ4YmFBcXhjUEU0bjNLUGllNnNGWExxak45YUh1dHZzRk1JdS1RRVR4N2s3MFZieWlvbnAxMXJLZUFWYnBfdmhRSWNyUjJScnAxMWVkVnZxcmNrNkpwaFVzTUNsT3RhNE9yeTFTX3BXU3lqRVFpdGY2OEtkV25FRVRQdzNITHNjd0xWWnNRR1F0b29vZU9TOU9FWGFqRFFEWlZuT2hMVQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Bioengineer.org.*
+[Read original article](https://news.google.com/rss/articles/CBMiywFBVV95cUxQa2w2bTBQc0E1YXhhczhoU0ZrWExSWmM0dU1mVGQxUHZLM1NDQkZ4YmFBcXhjUEU0bjNLUGllNnNGWExxak45YUh1dHZzRk1JdS1RRVR4N2s3MFZieWlvbnAxMXJLZUFWYnBfdmhRSWNyUjJScnAxMWVkVnZxcmNrNkpwaFVzTUNsT3RhNE9yeTFTX3BXU3lqRVFpdGY2OEtkV25FRVRQdzNITHNjd0xWWnNRR1F0b29vZU9TOU9FWGFqRFFEWlZuT2hMVQ?oc=5)

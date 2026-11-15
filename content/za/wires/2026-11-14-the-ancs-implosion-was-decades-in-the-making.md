@@ -1,0 +1,16 @@
+---
+title: "The ANC’s implosion was decades in the making"
+date: 2026-11-14T06:59:38.000Z
+author: Al Jazeera
+category: Business
+image: 
+summary: "The ANC’s implosion was decades in the making"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxObk9rOVVXWjBhLTFkMkFQSDlEUHUzeDVMTnFTYmFjYUN6YVdRSFRWd0d1T1ZLWGZOOHcyNktXS1JqSWhmVGZmUF9fOE93WVVMdVUzS2toVHlLN2Y4QkZ2Q2lmQTV0NGx5ZzhUNkU2d1JMci0wbDFRUkNFSzhpbmdPNWVoUk14SnNOeGlzUDhUaUxWaGRD0gGaAUFVX3lxTE81WFJ6SkdRSG5IRE9BaGxQUTdBalZKTnFGSjBTUjJRakt0MkU5dERWLVNrWEFuYWV5aUROaXU3NEg5WS1GdVhYTXFMMjRJM2ZkMVgzcXRNb3ZKZVI1aHFIM0dwUzh0Zl9JTzliOE1xNTI0UnRWQ1k1UHpFN1NSOWxsb0E1MjZDd1I2RUFydURsQUduWTkxRlM5MUE?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Al Jazeera.*
+[Read original article](https://news.google.com/rss/articles/CBMilAFBVV95cUxObk9rOVVXWjBhLTFkMkFQSDlEUHUzeDVMTnFTYmFjYUN6YVdRSFRWd0d1T1ZLWGZOOHcyNktXS1JqSWhmVGZmUF9fOE93WVVMdVUzS2toVHlLN2Y4QkZ2Q2lmQTV0NGx5ZzhUNkU2d1JMci0wbDFRUkNFSzhpbmdPNWVoUk14SnNOeGlzUDhUaUxWaGRD0gGaAUFVX3lxTE81WFJ6SkdRSG5IRE9BaGxQUTdBalZKTnFGSjBTUjJRakt0MkU5dERWLVNrWEFuYWV5aUROaXU3NEg5WS1GdVhYTXFMMjRJM2ZkMVgzcXRNb3ZKZVI1aHFIM0dwUzh0Zl9JTzliOE1xNTI0UnRWQ1k1UHpFN1NSOWxsb0E1MjZDd1I2RUFydURsQUduWTkxRlM5MUE?oc=5)
