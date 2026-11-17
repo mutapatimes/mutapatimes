@@ -1,0 +1,16 @@
+---
+title: "Benni McCarthy unbothered by possibly denying Bafana Bafana a place at 2027 Afcon"
+date: 2026-11-17T02:45:15.000Z
+author: News24
+category: Sport
+image: 
+summary: "Benni McCarthy unbothered by possibly denying Bafana Bafana a place at 2027 Afcon"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOT0FmOWhuTUlERUpKandqMjZVVXVnNjAwR3FJYmI0T0U2Tjh0U0FUQVIzMXNYVzBnT1hOaXVHY1l6TmRCNS1aaU5ZVEc1WE9IcEVFdm1xZE1QLUFadzVtRkJjQnEyay1SR2RRVjI0bFlGQUEyN3FVamdfN3FKTk5tUnFPVmVfWk1udGYyckFSTlEzMEVFNHFoaHlDS2U4SXlnN0R5TWgxWWt5LU5UZHozWWlxOUMzbVA2aHB1ZWhMcWNVOHZtYTFnZ2ZrbFFQVXlQWHRvNVF6TEtOUW5yY1QwTVZ1M0hmSkdIQk9SNXFsWkNJV0o0MlhSMg?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by News24.*
+[Read original article](https://news.google.com/rss/articles/CBMi-AFBVV95cUxOT0FmOWhuTUlERUpKandqMjZVVXVnNjAwR3FJYmI0T0U2Tjh0U0FUQVIzMXNYVzBnT1hOaXVHY1l6TmRCNS1aaU5ZVEc1WE9IcEVFdm1xZE1QLUFadzVtRkJjQnEyay1SR2RRVjI0bFlGQUEyN3FVamdfN3FKTk5tUnFPVmVfWk1udGYyckFSTlEzMEVFNHFoaHlDS2U4SXlnN0R5TWgxWWt5LU5UZHozWWlxOUMzbVA2aHB1ZWhMcWNVOHZtYTFnZ2ZrbFFQVXlQWHRvNVF6TEtOUW5yY1QwTVZ1M0hmSkdIQk9SNXFsWkNJV0o0MlhSMg?oc=5)

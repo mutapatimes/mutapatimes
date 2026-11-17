@@ -1,0 +1,16 @@
+---
+title: "OLD MUTUAL LIMITED – Disposal of Old Mutual’s South African Policyholder Retail Property Portfolio to Vukile Property Fund Limited"
+date: 2026-11-16T15:45:29.000Z
+author: Moneyweb
+category: Policy
+image: 
+summary: "OLD MUTUAL LIMITED – Disposal of Old Mutual’s South African Policyholder Retail Property Portfolio to Vukile Property Fund Limited"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbzdMV3RlNTVYUkVyMnE1V1N4cFhSbXU3NEpXQTFYNVV5Z0h0ZGtMaVFRNmh1TFE2YVM2MWgwU3Q1Sjk3eHZmWHc3aVFHSW04c2c5cEFBTERSRXJoRGhqck9vaEFLYVNsS25iaDdMc1A4bF9keUhlb2ViWGw4SmxDSk9nUm9KV0QwbEpGZlF5a0FiQjF5dW9lc0hRTEpROFdoSjNOWnlsY01kZGtBWkVGZmROZXB6aFc1WEU0OHE0X3c4aFprTXViaURUNXBSMTZSZ29FeG16YUNOT1VXQWpvcm1CY3V5azF5bGtOQXBYMDJJaDdNalhz?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbzdMV3RlNTVYUkVyMnE1V1N4cFhSbXU3NEpXQTFYNVV5Z0h0ZGtMaVFRNmh1TFE2YVM2MWgwU3Q1Sjk3eHZmWHc3aVFHSW04c2c5cEFBTERSRXJoRGhqck9vaEFLYVNsS25iaDdMc1A4bF9keUhlb2ViWGw4SmxDSk9nUm9KV0QwbEpGZlF5a0FiQjF5dW9lc0hRTEpROFdoSjNOWnlsY01kZGtBWkVGZmROZXB6aFc1WEU0OHE0X3c4aFprTXViaURUNXBSMTZSZ29FeG16YUNOT1VXQWpvcm1CY3V5azF5bGtOQXBYMDJJaDdNalhz?oc=5)

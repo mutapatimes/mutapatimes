@@ -1,0 +1,16 @@
+---
+title: "Investigator accused of misleading magistrate about Mdluli search warrant"
+date: 2026-11-16T15:46:56.000Z
+author: TimesLIVE
+category: Business
+image: 
+summary: "Investigator accused of misleading magistrate about Mdluli search warrant"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVJjWW42RElXcHVFN2NQRHVzbkRNZ1EyVGhYUS1QUGFvbHRSV1otNlRHQWRJc2lzVTZJVEJJZU1VNktWdldRUHloUTJlTFdoSXplcmQ0V094TEwzb3ExY3NjNkN4dDhiczVMSHBhelNybDdGNm5neGRhN3hmS0k0VlJtT3RzYkt4TGxFTDkzOEZ3a1lVLVhkZEFlSVV0aUNPSERfMFFGNWY3c2VNYTBUTGY5YXpoel9EaXlYXzdHZlVwaUsxYnRLWndhNA?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by TimesLIVE.*
+[Read original article](https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVJjWW42RElXcHVFN2NQRHVzbkRNZ1EyVGhYUS1QUGFvbHRSV1otNlRHQWRJc2lzVTZJVEJJZU1VNktWdldRUHloUTJlTFdoSXplcmQ0V094TEwzb3ExY3NjNkN4dDhiczVMSHBhelNybDdGNm5neGRhN3hmS0k0VlJtT3RzYkt4TGxFTDkzOEZ3a1lVLVhkZEFlSVV0aUNPSERfMFFGNWY3c2VNYTBUTGY5YXpoel9EaXlYXzdHZlVwaUsxYnRLWndhNA?oc=5)

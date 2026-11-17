@@ -1,0 +1,16 @@
+---
+title: "VUKILE PROPERTY FUND LIMITED – Strategic acquisition of a portfolio of landmark South African retail properties from Old Mutual Real Estate Holding Company Proprietary Limited"
+date: 2026-11-16T15:37:02.000Z
+author: Moneyweb
+category: Business
+image: 
+summary: "VUKILE PROPERTY FUND LIMITED – Strategic acquisition of a portfolio of landmark South African retail properties from Old Mutual Real Estate Holding Company Proprietary Limited"
+featured: false
+headline_position: 0
+source_url: "https://news.google.com/rss/articles/CBMitAJBVV95cUxNVzExYlhBMlpBWC1JUk1iRjVzUVhQbmtvemtSSzR1NDI0X0VpdjRXa0JEcU05SlEtSmJFWnl3UXI5NmNxemtQSnRmbEJzV0hQZXZvQ01YLTlWcmszN1J1ejFHTmJ3UUZmWFJHZGw2aDRQeHlfM1JFN3haT20tdExoY254RjRzWll4MUdjTUpCcmdKejdOSU1lZVYyc3BHQTg3ZTQ2cWx0bXFOZ2FQX1dBT1pVTE96VTdZaGt3Mzlib0U5SzJ4aG1xRGlWYV95NXU0V1Y1TmkxRjVjN2JsSHVIdF9EUTlQeFU3WW9NN21NQVFkb3BWaXVIcnJsdDk5aVR0aWhRR2hucWtyU2xhdHJyQnFycnp3US1RRFVYb3dUbU9xUTZ0a0o0Y0NEX2VuTF9tenJQLQ?oc=5"
+source_type: wire
+spotlight: false
+---
+
+*Originally published by Moneyweb.*
+[Read original article](https://news.google.com/rss/articles/CBMitAJBVV95cUxNVzExYlhBMlpBWC1JUk1iRjVzUVhQbmtvemtSSzR1NDI0X0VpdjRXa0JEcU05SlEtSmJFWnl3UXI5NmNxemtQSnRmbEJzV0hQZXZvQ01YLTlWcmszN1J1ejFHTmJ3UUZmWFJHZGw2aDRQeHlfM1JFN3haT20tdExoY254RjRzWll4MUdjTUpCcmdKejdOSU1lZVYyc3BHQTg3ZTQ2cWx0bXFOZ2FQX1dBT1pVTE96VTdZaGt3Mzlib0U5SzJ4aG1xRGlWYV95NXU0V1Y1TmkxRjVjN2JsSHVIdF9EUTlQeFU3WW9NN21NQVFkb3BWaXVIcnJsdDk5aVR0aWhRR2hucWtyU2xhdHJyQnFycnp3US1RRFVYb3dUbU9xUTZ0a0o0Y0NEX2VuTF9tenJQLQ?oc=5)
