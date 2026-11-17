@@ -13,7 +13,7 @@ headline_position: 1
 source_type: original
 spotlight: false
 feature_story: false
-draft: true
+draft: false
 longform: true
 hero_eyebrow: "TRAVEL · WHERE TO EAT · HARARE"
 hero_image_credit: "Photograph supplied"
@@ -65,7 +65,7 @@ This is our ranking for 2026: ten restaurants, in order, with the area, a price 
   <h2>The Kitchen at the Meikles</h2>
   <p class="rl-meta">Corner of Third Street and Jason Moyo Avenue, city centre · US$20 to 60 a head · Zimbabwean-inflected global</p>
   <p>The best reason to eat in the central business district is on the ground floor of Hyatt Regency Harare The Meikles, in what used to be the Mirabel conference room, now opened to the avenue through a wall of glass. The idea is global classics threaded with Zimbabwean ingredients, and it lands as intention rather than gimmick.</p>
-  <p>Fresh pita and caponata arrive while you read the menu. The oxtail pasta is closer to a rich stew over pasta than an Italian plate, and all the better for it; the tilapia and the ribs are the safe hands. The gin is infused with moringa, and the baobab crème brûlée is the dessert the city will talk about once the kitchen sharpens it. There is a weekend brunch, and the heated pool upstairs is part of the appeal of a long lunch. <a href="/preview/hyatt-meikles-review-7d2e9b4c1a63.html">Our review of the hotel</a> covers the rest of the building.</p>
+  <p>Fresh pita and caponata arrive while you read the menu. The oxtail pasta is closer to a rich stew over pasta than an Italian plate, and all the better for it; the tilapia and the ribs are the safe hands. The gin is infused with moringa, and the baobab crème brûlée is the dessert the city will talk about once the kitchen sharpens it. There is a weekend brunch, and the heated pool upstairs is part of the appeal of a long lunch.</p>
   <p class="rl-order">Order: the oxtail pasta, and the baobab crème brûlée to argue about.</p>
 </section>
 
