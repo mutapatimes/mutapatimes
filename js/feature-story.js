@@ -28,9 +28,47 @@
     } catch (e) { return ''; }
   }
 
+  // Sponsored takeover: full-bleed image card with the partner named in
+  // the eyebrow. Used only on the main homepage slot; compact slots keep
+  // the editorial card so article pages never carry the takeover.
+  function renderTakeover(feature) {
+    var href = feature.url || mtUrl('/articles/' + feature.slug);
+    var partner = feature.partner || '';
+    var label = (feature.partner_label || 'In partnership with') + ' ' + partner;
+    var cat = feature.category ? esc(feature.category).toUpperCase() : '';
+    var tag = feature.takeover_tagline ? esc(feature.takeover_tagline) : '';
+    var read = feature.read_minutes ? '<span>' + esc(String(feature.read_minutes)) + ' min read</span>' : '';
+    var img = feature.image
+      ? '<img class="feature-takeover-img" src="' + esc(feature.image) + '" alt="" loading="eager">'
+      : '';
+    return (
+      '<aside class="feature-story-banner feature-story-banner--takeover">' +
+        '<div class="feature-takeover-eyebrow">' +
+          '<span>' + esc(label) + '</span>' +
+          (feature.partner_url ? '<a class="feature-takeover-partner" href="' + esc(feature.partner_url) + '" target="_blank" rel="noopener sponsored">Visit the hotel</a>' : '') +
+        '</div>' +
+        '<a class="feature-takeover-card" href="' + esc(href) + '">' +
+          img +
+          '<div class="feature-takeover-shade"></div>' +
+          '<div class="feature-takeover-body">' +
+            (tag || cat ? '<span class="feature-takeover-tag">' + (tag || cat) + '</span>' : '') +
+            '<h2 class="feature-takeover-title">' + esc(feature.title || '') + '</h2>' +
+            '<p class="feature-takeover-summary">' + esc((feature.summary || '').slice(0, 220)) + '</p>' +
+            '<div class="feature-takeover-meta">' +
+              (feature.author ? '<span>' + esc(feature.author) + '</span>' : '') +
+              read +
+              '<span class="feature-takeover-cta">Read the review</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>' +
+      '</aside>'
+    );
+  }
+
   function render(feature, opts) {
     opts = opts || {};
     var isCompact = !!opts.compact;
+    if (feature.takeover && feature.partner && !isCompact) return renderTakeover(feature);
     var label = opts.label || 'Feature Story of the Week';
     var img = feature.image
       ? '<div class="feature-story-image"><img src="' + esc(feature.image) + '" alt="' + esc(feature.title || '') + '" loading="lazy"></div>'

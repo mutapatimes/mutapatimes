@@ -958,9 +958,62 @@ def build_articles(region="zw"):
             iso = iso_date(date_str)
             if iso:
                 schema["datePublished"] = iso
-                schema["dateModified"] = iso
+                # `modified:` in front matter lets an updated piece declare a
+                # fresher dateModified than its publish date.
+                schema["dateModified"] = iso_date(meta.get("modified", "")) or iso
         if category:
             schema["articleSection"] = category
+
+        # Review rich result (hotel, restaurant, product reviews). Emitted only
+        # when `review_rating` is set in front matter. The item reviewed is a
+        # third party, which keeps it eligible for Google's review snippet.
+        review_schema = None
+        _rr = (meta.get("review_rating") or "").strip()
+        if _rr:
+            _item = {
+                "@type": (meta.get("review_item_type") or "Hotel").strip(),
+                "name": (meta.get("review_item_name") or "").strip() or title,
+            }
+            if (meta.get("review_item_url") or "").strip():
+                _item["url"] = meta.get("review_item_url").strip()
+            _item_img = (meta.get("review_item_image") or "").strip() or image
+            if _item_img:
+                _item["image"] = _item_img if _item_img.startswith("http") else f"{BASE_URL}{_item_img}"
+            _street = (meta.get("review_item_street") or "").strip()
+            _locality = (meta.get("review_item_locality") or "").strip()
+            _country = (meta.get("review_item_country") or "").strip()
+            if _street or _locality or _country:
+                _addr = {"@type": "PostalAddress"}
+                if _street:
+                    _addr["streetAddress"] = _street
+                if _locality:
+                    _addr["addressLocality"] = _locality
+                if _country:
+                    _addr["addressCountry"] = _country
+                _item["address"] = _addr
+            if (meta.get("review_item_telephone") or "").strip():
+                _item["telephone"] = meta.get("review_item_telephone").strip()
+            review_schema = {
+                "@context": "https://schema.org",
+                "@type": "Review",
+                "url": canonical,
+                "name": title,
+                "itemReviewed": _item,
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": _rr,
+                    "bestRating": (meta.get("review_best") or "5").strip(),
+                    "worstRating": "1",
+                },
+                "publisher": {"@type": "Organization", "name": "The Mutapa Times"},
+                "inLanguage": "en",
+            }
+            if author:
+                review_schema["author"] = {"@type": "Person", "name": author}
+            if schema.get("datePublished"):
+                review_schema["datePublished"] = schema["datePublished"]
+            if summary:
+                review_schema["reviewBody"] = summary
 
         breadcrumb = {
             "@context": "https://schema.org",
@@ -1011,6 +1064,11 @@ def build_articles(region="zw"):
 </script>
 <script type="application/ld+json">
 {json.dumps(breadcrumb)}
+</script>""")
+        if review_schema:
+            html_parts.append(f"""
+<script type="application/ld+json">
+{json.dumps(review_schema)}
 </script>""")
         html_parts.append(page_nav("articles", depth=depth, body_class=body_class, pfx=pfx, region=region))
         # Stories rail  same IG-style highlight strip used on home + /articles.
@@ -1098,6 +1156,17 @@ def build_articles(region="zw"):
             if image:
                 html_parts.append(f'      <img src="{esc(image)}" alt="{esc(title)}" class="article-hero-img">')
 
+        # Partner line: one hairline sentence under the header on sponsored
+        # pieces ("In partnership with X"). Driven by front matter so the
+        # CMS owns it; never a banner.
+        _partner = (meta.get("partner") or "").strip()
+        if _partner:
+            _partner_url = (meta.get("partner_url") or "").strip()
+            _partner_label = (meta.get("partner_label") or "In partnership with").strip()
+            _partner_name = (f'<a href="{esc(_partner_url)}" target="_blank" rel="noopener sponsored">{esc(_partner)}</a>'
+                             if _partner_url else esc(_partner))
+            html_parts.append(f'      <p class="article-partner-line">{esc(_partner_label)} {_partner_name}</p>')
+
         # Article body
         body_cls = "article-body article-body-longform" if longform else "article-body"
         html_parts.append(f'      <div class="{body_cls}">{body_html}</div>')
@@ -1169,6 +1238,8 @@ def build_articles(region="zw"):
             extra_scripts += '\n  <script defer src="/js/stay-longform.js?v=1"></script>'
         if "data-timeline" in body_html:
             extra_scripts += '\n  <script defer src="/js/timeline.js?v=1"></script>'
+        if "data-booking-widget" in body_html:
+            extra_scripts += '\n  <script defer src="/js/hotel-booking.js?v=1"></script>'
         if paywall:
             extra_scripts += '\n  <script defer src="/js/article-gate.js?v=2"></script>'
         html_parts.append(page_footer(depth=depth, extra_scripts=extra_scripts, pfx=pfx, region=region))

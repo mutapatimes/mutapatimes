@@ -64,11 +64,19 @@ def find_feature():
         return None
     candidates.sort(reverse=True)
     _, slug, fm = candidates[0]
+    image = fm.get("image", "")
+    if not image:
+        # Imageless longforms get a generated gradient hero from
+        # build_static_pages (scripts/gradient_hero.py); use it for the
+        # card too so the lead slot never renders without a picture.
+        auto = os.path.join(ROOT, "img", "articles", "auto", f"{slug}.jpg")
+        if os.path.exists(auto):
+            image = f"/img/articles/auto/{slug}.jpg"
     return {
         "slug": slug,
         "title": fm.get("title", ""),
         "summary": fm.get("summary", ""),
-        "image": fm.get("image", ""),
+        "image": image,
         "author": fm.get("author", "The Mutapa Times"),
         "category": fm.get("category", ""),
         "date": fm.get("date", ""),
@@ -77,6 +85,15 @@ def find_feature():
         "url": f"/articles/{slug}",
         "spotlight_title": fm.get("spotlight_title", ""),
         "spotlight_image": fm.get("spotlight_image", ""),
+        # Sponsored takeover of the lead slot: the homepage card switches to
+        # the full-bleed "In partnership with X" treatment when takeover is
+        # true (see js/feature-story.js). Fields come from the article's
+        # front matter so the CMS stays the single place to edit.
+        "takeover": fm.get("takeover", "").lower() == "true",
+        "partner": fm.get("partner", ""),
+        "partner_url": fm.get("partner_url", ""),
+        "partner_label": fm.get("partner_label", ""),
+        "takeover_tagline": fm.get("takeover_tagline", ""),
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00"),
     }
 

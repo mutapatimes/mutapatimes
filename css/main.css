@@ -11849,3 +11849,395 @@ body.series-page .topbar-brand::after {
 }
 .jobs-loadmore:hover { border-color: var(--ink, #1a1a1a); background: #faf9f6; }
 .jobs-loadmore span { color: #8a8a8a; font-weight: 500; margin-left: 4px; }
+
+/* ───── Hotel review longform (Travel) ─────
+   Components used inside the longform body of a hotel review:
+   at-a-glance facts, a photo gallery, an "ask a local" box, the
+   checklist table, the booking box and the disclosure line.
+   Same paper, ink, rule and accent as the rest of the paper. */
+.article-partner-line {
+  max-width: 720px;
+  margin: 28px auto -24px;
+  padding: 0 16px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.86rem;
+  color: var(--text-mid);
+}
+.article-partner-line a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+.article-body-longform .hr-wrap { margin: 2.6em 0; }
+
+.hr-glance,
+.hr-local,
+.hr-book {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 28px 30px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.article-body-longform .hr-glance-title,
+.article-body-longform .hr-local-title,
+.article-body-longform .hr-book-title,
+.hr-glance-title,
+.hr-local-title,
+.hr-book-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+.hr-glance-grid,
+.hr-local-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+  margin: 0;
+}
+.hr-glance-grid > div,
+.hr-local-grid > div { margin: 0; }
+.hr-glance-grid dt,
+.hr-local-grid dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin: 0 0 4px;
+}
+.hr-glance-grid dd,
+.hr-local-grid dd {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.hr-local-who {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  margin: -8px 0 20px;
+}
+
+/* Gallery breaks out of the text column into a wide band */
+.article-body-longform .hr-gallery {
+  width: min(1180px, 94vw);
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.hr-gallery figure { margin: 0; }
+.hr-gallery img {
+  width: 100%;
+  height: auto; /* beats the width/height attributes so aspect-ratio rules */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--bg);
+  border-radius: 4px;
+}
+.hr-gallery figcaption {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+/* The checklist */
+.article-body-longform .hr-check {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8em 0 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+.hr-check th,
+.hr-check td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  line-height: 1.5;
+}
+.hr-check th {
+  width: 32%;
+  font-weight: 600;
+  color: var(--ink);
+  padding-right: 18px;
+}
+.hr-check td { color: var(--text-mid); }
+.hr-check tr:last-child th,
+.hr-check tr:last-child td { border-bottom: 1px solid var(--rule); }
+
+/* Booking box */
+.hr-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+.hr-book-title { color: #fff; margin-bottom: 8px; }
+.hr-book-line { margin: 0; font-size: 0.92rem; line-height: 1.5; color: rgba(255,255,255,0.8); }
+.hr-book-cta {
+  flex-shrink: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  background: #fff;
+  color: var(--ink) !important;
+  border-radius: 4px;
+  text-decoration: none !important;
+}
+.hr-book-cta:hover { background: var(--accent); color: #fff !important; }
+.article-body-longform .hr-disclosure {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-mid);
+  margin: 16px 0 0;
+}
+
+@media (max-width: 760px) {
+  .hr-glance, .hr-local, .hr-book { padding: 22px 20px; }
+  .hr-glance-grid, .hr-local-grid { grid-template-columns: 1fr; gap: 14px; }
+  .article-body-longform .hr-gallery { grid-template-columns: 1fr; }
+  .hr-book { flex-direction: column; align-items: flex-start; }
+  .hr-check th { width: 38%; }
+}
+
+/* ───── Homepage takeover: sponsored Feature Story lead ─────
+   Full-bleed image, headline over a shade, partner named in the
+   eyebrow. The editorial feature card is untouched; this only renders
+   when the active feature has takeover: true in its front matter. */
+.feature-story-banner--takeover { max-width: 1200px; }
+.feature-takeover-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.86rem;
+  color: var(--text-mid);
+  padding: 0 2px 12px;
+}
+.feature-takeover-eyebrow > span::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.feature-takeover-partner {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.feature-takeover-card {
+  position: relative;
+  display: block;
+  min-height: 560px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0c1410;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.feature-takeover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transition: transform 900ms var(--ease-soft);
+}
+.feature-takeover-card:hover .feature-takeover-img { transform: scale(1.03); }
+.feature-takeover-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12,20,16,0.05) 0%, rgba(12,20,16,0.35) 45%, rgba(12,20,16,0.92) 100%);
+}
+.feature-takeover-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 560px;
+  padding: clamp(28px, 5vw, 64px);
+  max-width: 820px;
+}
+.feature-takeover-tag {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 14px;
+}
+.feature-takeover-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 4.6vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  color: #fff;
+}
+.feature-takeover-summary {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 24px;
+  max-width: 62ch;
+}
+.feature-takeover-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.8);
+}
+.feature-takeover-cta {
+  margin-left: auto;
+  padding: 10px 18px;
+  background: #fff;
+  color: var(--ink);
+  border-radius: 4px;
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  .feature-takeover-card, .feature-takeover-body { min-height: 440px; }
+  .feature-takeover-eyebrow { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .feature-takeover-cta { margin-left: 0; }
+}
+
+/* Hotel review: gallery variants, the rating graphic and the booking widget */
+.article-body-longform .hr-gallery--two { grid-template-columns: repeat(2, 1fr); }
+.article-body-longform .hr-gallery--one { grid-template-columns: 1fr; width: min(1180px, 94vw); }
+.hr-gallery--one img { aspect-ratio: 16 / 10; }
+.hr-gallery--two img { aspect-ratio: 16 / 10; }
+
+.hr-score {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 32px 48px;
+  align-items: center;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 6px;
+  padding: 40px 44px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.hr-score-overall { display: flex; flex-direction: column; align-items: flex-start; }
+.hr-score-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(5rem, 9vw, 7.5rem);
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+}
+.hr-score-of {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin: 10px 0 14px;
+}
+.hr-score-stars { display: inline-flex; gap: 4px; margin-bottom: 18px; }
+.hr-score-stars svg { width: 22px; height: 22px; fill: var(--accent); }
+.article-body-longform .hr-score-line {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: rgba(255,255,255,0.92);
+  margin: 0;
+  max-width: 24ch;
+}
+.hr-score-rows { margin: 0; }
+.hr-score-rows > div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+.hr-score-rows > div:last-child { border-bottom: 1px solid rgba(255,255,255,0.14); }
+.hr-score-rows dt { font-size: 0.88rem; color: rgba(255,255,255,0.85); }
+.hr-score-rows dd { margin: 0; display: flex; align-items: center; gap: 14px; }
+.hr-score-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255,255,255,0.16);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.hr-score-bar i { display: block; height: 100%; background: var(--accent); }
+.hr-score-rows b { font-size: 0.9rem; font-weight: 600; min-width: 2ch; text-align: right; }
+
+.hr-booking {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 30px 32px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.article-body-longform .hr-booking-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.article-body-longform .hr-booking-sub { font-size: 0.88rem; color: var(--text-mid); margin: 0 0 20px; }
+.hr-booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+.hr-booking-field { display: flex; flex-direction: column; gap: 6px; font-size: 0.8rem; color: var(--text-mid); }
+.hr-booking-field input,
+.hr-booking-field select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 10px 12px;
+  min-height: 44px;
+}
+.hr-booking-field input:focus,
+.hr-booking-field select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.hr-booking-cta {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0 22px;
+  min-height: 44px;
+  background: var(--ink);
+  color: #fff;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.hr-booking-cta:hover { background: var(--accent); border-color: var(--accent); }
+.article-body-longform .hr-booking-address { font-size: 0.82rem; color: var(--text-mid); margin: 16px 0 0; }
+
+@media (max-width: 760px) {
+  .article-body-longform .hr-gallery--two { grid-template-columns: 1fr; }
+  .hr-score { grid-template-columns: 1fr; padding: 28px 22px; gap: 24px; }
+  .hr-score-rows > div { grid-template-columns: 120px 1fr; }
+  .hr-booking { padding: 22px 18px; }
+  .hr-booking-form { grid-template-columns: 1fr 1fr; }
+  .hr-booking-cta { grid-column: 1 / -1; }
+}
