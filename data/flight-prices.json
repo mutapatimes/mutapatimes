@@ -9,12 +9,12 @@
       "currency": "GBP",
       "currency_sym": "£",
       "cheapest_overall": {
-        "price": 501,
-        "airline": "UM",
-        "departure_at": "2026-12-24",
+        "price": 355,
+        "airline": "QR",
+        "departure_at": "2027-04-15",
         "return_at": "",
-        "stops": 0,
-        "duration": 630,
+        "stops": 1,
+        "duration": 1505,
         "currency": ""
       },
       "cheapest_direct": {
@@ -55,6 +55,15 @@
           "currency": ""
         },
         {
+          "price": 355,
+          "airline": "QR",
+          "departure_at": "2027-04-15",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1505,
+          "currency": ""
+        },
+        {
           "price": 642,
           "airline": "QR",
           "departure_at": "2027-07-13",
@@ -74,6 +83,24 @@
         }
       ],
       "by_airline": [
+        {
+          "price": 355,
+          "airline": "QR",
+          "departure_at": "2027-04-15",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1505,
+          "currency": ""
+        },
+        {
+          "price": 381,
+          "airline": "EY",
+          "departure_at": "2027-04-15",
+          "return_at": "",
+          "stops": 1,
+          "duration": 1235,
+          "currency": ""
+        },
         {
           "price": 501,
           "airline": "UM",
@@ -100,31 +127,13 @@
           "stops": 1,
           "duration": 1980,
           "currency": ""
-        },
-        {
-          "price": 590,
-          "airline": "Farera",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1830,
-          "currency": ""
-        },
-        {
-          "price": 634,
-          "airline": "Vayama",
-          "departure_at": "",
-          "return_at": "",
-          "stops": 1,
-          "duration": 1980,
-          "currency": ""
         }
       ],
       "endpoints_tried": [
         {
           "endpoint": "v3",
           "origin": "LON",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -142,13 +151,13 @@
         {
           "endpoint": "v2",
           "origin": "LON",
-          "n": 13,
+          "n": 12,
           "error": null
         },
         {
           "endpoint": "v3",
           "origin": "LHR",
-          "n": 1,
+          "n": 2,
           "error": null
         },
         {
@@ -166,7 +175,7 @@
         {
           "endpoint": "v2",
           "origin": "LHR",
-          "n": 13,
+          "n": 12,
           "error": null
         }
       ],
@@ -310,7 +319,7 @@
           "currency": ""
         },
         {
-          "price": 9176,
+          "price": 9172,
           "airline": "Trip.com",
           "departure_at": "",
           "return_at": "",
@@ -428,7 +437,7 @@
           "currency": ""
         },
         {
-          "price": 3901,
+          "price": 3899,
           "airline": "Farera",
           "departure_at": "",
           "return_at": "",
@@ -446,12 +455,21 @@
           "currency": ""
         },
         {
-          "price": 4024,
+          "price": 4022,
           "airline": "Mytrip.com",
           "departure_at": "",
           "return_at": "",
           "stops": 0,
           "duration": 210,
+          "currency": ""
+        },
+        {
+          "price": 7831,
+          "airline": "Clickavia",
+          "departure_at": "",
+          "return_at": "",
+          "stops": 2,
+          "duration": 1530,
           "currency": ""
         }
       ],
@@ -459,13 +477,13 @@
         {
           "endpoint": "v3",
           "origin": "JNB",
-          "n": 16,
+          "n": 15,
           "error": null
         },
         {
           "endpoint": "monthly",
           "origin": "JNB",
-          "n": 2,
+          "n": 3,
           "error": null
         },
         {
@@ -477,11 +495,11 @@
         {
           "endpoint": "v2",
           "origin": "JNB",
-          "n": 12,
+          "n": 14,
           "error": null
         }
       ],
-      "observations": 28
+      "observations": 30
     },
     "new-york-to-harare": {
       "origin": "NYC",
@@ -566,7 +584,7 @@
           "currency": ""
         },
         {
-          "price": 2584,
+          "price": 2585,
           "airline": "ET",
           "departure_at": "2026-12-27",
           "return_at": "2027-01-26",
@@ -631,12 +649,12 @@
           "currency": ""
         },
         {
-          "price": 2436,
-          "airline": "Farera",
+          "price": 2511,
+          "airline": "Wingie",
           "departure_at": "",
           "return_at": "",
           "stops": 1,
-          "duration": 1480,
+          "duration": 1270,
           "currency": ""
         }
       ],
@@ -662,11 +680,11 @@
         {
           "endpoint": "v2",
           "origin": "DXB",
-          "n": 4,
+          "n": 5,
           "error": null
         }
       ],
-      "observations": 11
+      "observations": 12
     },
     "toronto-to-harare": {
       "origin": "YYZ",
@@ -747,7 +765,7 @@
           "currency": ""
         },
         {
-          "price": 1257,
+          "price": 1256,
           "airline": "Kiwi.com",
           "departure_at": "",
           "return_at": "",
@@ -765,7 +783,7 @@
           "currency": ""
         },
         {
-          "price": 1519,
+          "price": 1518,
           "airline": "Tickets",
           "departure_at": "",
           "return_at": "",
