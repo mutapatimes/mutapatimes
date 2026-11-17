@@ -12241,3 +12241,56 @@ body.series-page .topbar-brand::after {
   .hr-booking-form { grid-template-columns: 1fr 1fr; }
   .hr-booking-cta { grid-column: 1 / -1; }
 }
+
+/* Ranked restaurant list (Travel) */
+.rl-index-list { margin: 0; padding: 0; list-style: none; counter-reset: rl; }
+.rl-index-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 9px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.98rem;
+}
+.rl-index-list li::before {
+  counter-increment: rl;
+  content: counter(rl);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  min-width: 1.6ch;
+  color: var(--accent);
+}
+.rl-index-list a { color: var(--ink); text-decoration: none; }
+.rl-index-list a:hover { text-decoration: underline; }
+.rl-index-list span { margin-left: auto; font-size: 0.85rem; color: var(--text-mid); text-align: right; }
+.rl-entry { position: relative; }
+.article-body-longform .rl-rank {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 5vw, 4.4rem);
+  line-height: 0.9;
+  color: var(--accent);
+  margin: 2.4em 0 0;
+}
+.article-body-longform .rl-entry h2 { margin-top: 0.3em; }
+.article-body-longform .rl-meta {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin: -0.4em 0 1.4em;
+}
+.article-body-longform .rl-order {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+@media (max-width: 760px) {
+  .rl-index-list li { flex-wrap: wrap; }
+  .rl-index-list span { margin-left: 0; flex-basis: 100%; padding-left: calc(1.6ch + 14px); text-align: left; }
+}
