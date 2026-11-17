@@ -136,7 +136,7 @@ In May 2024 the name on the canopy changed. After a US$30 million refurbishment 
   <aside class="hr-booking" data-booking-widget aria-label="Book a stay">
     <div class="hr-booking-head">
       <h2 class="hr-booking-title">Book a stay</h2>
-      <p class="hr-booking-sub">Live rates and availability from Hyatt. Opens in a new tab.</p>
+      <p class="hr-booking-sub">Live rates and availability from Hyatt.</p>
     </div>
     <form class="hr-booking-form" action="https://www.hyatt.com/shop/rooms/hrerh" method="get" target="_blank" rel="noopener">
       <label class="hr-booking-field"><span>Check in</span><input type="date" name="checkinDate" required></label>
@@ -155,5 +155,4 @@ In May 2024 the name on the canopy changed. After a US$30 million refurbishment 
     </form>
     <p class="hr-booking-address">Hyatt Regency Harare The Meikles, Jason Moyo Avenue at Third Street, Harare</p>
   </aside>
-  <p class="hr-disclosure">Published in partnership with Hyatt Regency Harare The Meikles. Written from the hotel's briefing, its photographs and our own knowledge of the city. Rates come live from Hyatt.</p>
 </section>
