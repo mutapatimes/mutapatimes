@@ -6,8 +6,8 @@ author: Tendai Kuwanda
 category: Travel
 image: /img/articles/harare-restaurants/small-plates.jpg
 og_image: /img/articles/harare-restaurants/og.jpg
-summary: "Flying home for December? Ten Harare restaurants worth a night of your holiday, ranked. Who to bring, how to book and what to order."
-meta_description: "A diaspora guide to Harare's best restaurants for the December holidays: Victoria 22, Amanzi, The Kitchen at the Meikles, Mozambik, Tongfu and more. Booking, payment and what to order."
+summary: "Flying home for December? Ten Harare restaurants worth a night of your holiday. Who to bring, how to book and what to order."
+meta_description: "A diaspora guide to Harare's best restaurants for the December holidays. Ten places ranked. How to book and pay and what to order."
 featured: false
 headline_position: 1
 source_type: original
