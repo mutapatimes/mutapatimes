@@ -1,7 +1,7 @@
 ---
 title: "The ten best restaurants in Harare this December"
 seo_title: "Best Restaurants in Harare, December 2026 | The Mutapa Times"
-date: 2026-11-18T08:00:00.000Z
+date: 2026-11-30T08:00:00.000Z
 author: Tendai Kuwanda
 category: Travel
 image: /img/articles/harare-restaurants/small-plates.jpg
@@ -18,7 +18,7 @@ longform: true
 hero_eyebrow: "TRAVEL · RESTAURANTS · HARARE"
 hero_image_credit: "Photograph supplied"
 read_minutes: 8
-modified: 2026-11-18T14:00:00.000Z
+modified: 2026-11-30T08:00:00.000Z
 ---
 Christmas is Harare's busiest season. The diaspora comes home. Suburbs fill with hired cars and borrowed ones. Every table worth sitting at is booked by someone who waited twelve months for it. If you are flying in for December the city will feed you well. It always could. Spend your few nights well.
 
