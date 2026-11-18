@@ -12294,3 +12294,28 @@ body.series-page .topbar-brand::after {
   .rl-index-list li { flex-wrap: wrap; }
   .rl-index-list span { margin-left: 0; flex-basis: 100%; padding-left: calc(1.6ch + 14px); text-align: left; }
 }
+.article-body-longform .rl-bring {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  margin: 0 0 10px;
+}
+.article-body-longform .rl-howto {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-mid);
+  margin: 0 0 12px;
+}
+.article-body-longform .rl-pay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem;
+  margin: 0 0 14px;
+}
+.rl-pay b { font-weight: 600; margin-right: 4px; color: var(--text-mid); }
+.rl-pay span { padding: 3px 9px; border-radius: 999px; border: 1px solid var(--ink); color: var(--ink); background: #fff; }
+.rl-pay span.is-ask { border-style: dashed; border-color: #b5b3ad; color: var(--text-mid); background: transparent; }
