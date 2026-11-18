@@ -1,17 +1,8 @@
 {
-  "fetched_at": "2026-11-18T07:24:34.810441+00:00",
+  "fetched_at": "2026-11-18T20:29:35.733293+00:00",
   "source": "https://www.property.co.zw/houses-for-sale",
   "count": 22,
   "listings": [
-    {
-      "title": "Ideal For Re-Developement",
-      "url": "https://www.property.co.zw/for-sale/houses-gsre257502",
-      "price": "USD 190,000",
-      "location": "Hatfield, Harare South",
-      "image": "https://www.property.co.zw/uploadedfiles/22/55/13/2255134b-0918-4192-bcba-073d9244536b_thumbnail591.webp",
-      "beds": "3",
-      "baths": "2"
-    },
     {
       "title": "House for sale",
       "url": "https://www.property.co.zw/for-sale/houses-pgp251366",
@@ -20,6 +11,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/f2/b8/d8/f2b8d801-fc52-4e05-900f-d466a0f5d947_thumbnail591.webp",
       "beds": "10",
       "baths": "7"
+    },
+    {
+      "title": "Modern 4 Bed Villas In Northwood",
+      "url": "https://www.property.co.zw/for-sale/townhouses-pgp259484",
+      "price": "USD 320,000",
+      "location": "Northwood, Harare North",
+      "image": "https://www.property.co.zw/uploadedfiles/70/fb/44/70fb44fe-7d3b-44f3-8767-ed78ff48b90a_thumbnail591.webp",
+      "beds": "4",
+      "baths": "2"
     },
     {
       "title": "18 Exclusive 3 Bedroom Townhouses",
@@ -38,6 +38,15 @@
       "image": "https://www.property.co.zw/uploadedfiles/93/8e/bc/938ebc60-a5b5-4149-9bb3-cb2776988b94_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
+    },
+    {
+      "title": "Spacious 6-Bed Arlington Home on 2777m² with Borehole",
+      "url": "https://www.property.co.zw/for-sale/houses-cami249233",
+      "price": "USD 380,000",
+      "location": "Arlington, Harare South",
+      "image": "https://www.property.co.zw/uploadedfiles/f3/f7/95/f3f7954d-6bf7-45c7-9a29-b2270a7dbc7d_thumbnail591.webp",
+      "beds": "6",
+      "baths": "5"
     },
     {
       "title": "House For Sale – Glen View 1 | Us$48,000",
@@ -155,15 +164,6 @@
       "image": "https://www.property.co.zw/uploadedfiles/53/6a/93/536a935d-0a8f-4103-a897-ff66819ccd3f_thumbnail591.webp",
       "beds": "4",
       "baths": "2"
-    },
-    {
-      "title": "Compact 1-room Corehouse on 240m² Plot in Norton",
-      "url": "https://www.property.co.zw/for-sale/houses-tpr259520",
-      "price": "USD 18,000",
-      "location": "Norton",
-      "image": "https://www.property.co.zw/uploadedfiles/2e/47/18/2e47185b-17a1-4d4c-aca0-be59b39125cf_thumbnail591.webp",
-      "beds": "1",
-      "baths": "1"
     },
     {
       "title": "Northend House For-Sale $120 000",
