@@ -1,12 +1,12 @@
 ---
-title: "Home for the holidays: ten tables in Harare"
-seo_title: "Best Restaurants in Harare for the Holidays 2026: A Diaspora Guide | The Mutapa Times"
+title: "The ten best restaurants in Harare this December"
+seo_title: "Best Restaurants in Harare, December 2026 | The Mutapa Times"
 date: 2026-11-18T08:00:00.000Z
 author: Tendai Kuwanda
 category: Travel
 image: /img/articles/harare-restaurants/small-plates.jpg
 og_image: /img/articles/harare-restaurants/og.jpg
-summary: "Ten Harare restaurants worth a night of your December, ranked."
+summary: "Harare's ten best restaurants for the December holidays, ranked."
 meta_description: "Harare's ten best restaurants for the December holidays, ranked for the diaspora. Victoria 22, Amanzi, The Kitchen at the Meikles, Mozambik and more."
 featured: false
 headline_position: 1
@@ -15,7 +15,7 @@ spotlight: false
 feature_story: false
 draft: true
 longform: true
-hero_eyebrow: "TRAVEL · HOME FOR THE HOLIDAYS · HARARE"
+hero_eyebrow: "TRAVEL · RESTAURANTS · HARARE"
 hero_image_credit: "Photograph supplied"
 read_minutes: 8
 modified: 2026-11-18T14:00:00.000Z
