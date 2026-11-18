@@ -6,8 +6,8 @@ author: Tendai Kuwanda
 category: Travel
 image: /img/articles/harare-restaurants/small-plates.jpg
 og_image: /img/articles/harare-restaurants/og.jpg
-summary: "Harare's ten best restaurants for the December holidays, ranked."
-meta_description: "Harare's ten best restaurants for the December holidays, ranked for the diaspora. Victoria 22, Amanzi, The Kitchen at the Meikles, Mozambik and more."
+summary: "Harare's ten best restaurants for the December holidays."
+meta_description: "Harare's ten best restaurants for the December holidays. Victoria 22, Amanzi, The Kitchen at the Meikles, Mozambik and more."
 featured: false
 headline_position: 1
 source_type: original
@@ -24,7 +24,7 @@ Christmas is Harare's busiest season. The diaspora comes home. Suburbs fill with
 
 Harare has no restaurant quarter and no critics. Its good tables hide where the city keeps everything else. Behind suburban walls. Inside a golf club. In a converted house with a pool at its centre. One sits on the ground floor of a hotel that has held its corner since 1915. Produce ties them together. Beef here is grass-fed. Vegetables taste of soil. The best kitchens stay out of the way.
 
-Ten restaurants follow in order. Prices are US dollars.
+Prices are US dollars.
 
 <section class="hr-wrap" data-stay-section data-stay-label="The basics" id="rl-basics">
   <aside class="hr-glance" aria-label="The basics">
