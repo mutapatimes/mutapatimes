@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Daily weather forecast for Zimbabwe's main cities plus the Tsumo yezuva (proverb of the day). One item per day, dedicated for the Mutapa Times weather autolist.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 20:41:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 07:22:43 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/weather-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -19,16 +19,16 @@
     <managingEditor>news@mutapatimes.com (The Mutapa Times)</managingEditor>
     <webMaster>news@mutapatimes.com (The Mutapa Times)</webMaster>
     <item>
-      <title>Zim weather 18 Nov: Gweru thunderstorm · high 26° / low 17°</title>
-      <link>https://mutapatimes.com/weather?d=2026-11-18</link>
-      <description>Gweru: high 26°, low 17° (thunderstorm) · Masvingo: high 27°, low 19° (drizzle) · Victoria Falls: high 34°, low 22° (partly cloudy) Tsumo yezuva: Kudzidza hakuperi. (Learning never ends.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
-      <pubDate>Tue, 17 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-11-18</guid>
+      <title>Zim weather 19 Nov: Gweru thunderstorm · high 26° / low 17°</title>
+      <link>https://mutapatimes.com/weather?d=2026-11-19</link>
+      <description>Gweru: high 26°, low 17° (thunderstorm) · Masvingo: high 27°, low 19° (drizzle) · Victoria Falls: high 34°, low 22° (partly cloudy) Tsumo yezuva: Rume rimwe harikombi churu. (One man cannot surround an anthill.) #Zimbabwe #Weather #ZimbabweWeather #ZimbabweNews</description>
+      <pubDate>Wed, 18 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/weather?d=2026-11-19</guid>
       <category>Weather</category>
       <dc:creator>The Mutapa Times</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-18" medium="image" type="image/jpeg"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-18"/>
-      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-18" type="image/jpeg" length="200000"/>
+      <media:content url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-19" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-19"/>
+      <enclosure url="https://mutapatimes.com/img/cards/weather-snapshot.png?v=2026-11-19" type="image/jpeg" length="200000"/>
     </item>
   </channel>
 </rss>
