@@ -4,92 +4,11 @@
  "short": "PSL · SA",
  "country": "South Africa",
  "flag": "🇿🇦",
- "season": "2026-2027",
+ "season": "",
  "provider": "thesportsdb",
  "capped": true,
- "table": [
-  {
-   "rank": 1,
-   "team": "Mamelodi Sundowns",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
-   "played": 10,
-   "win": 8,
-   "draw": 2,
-   "loss": 0,
-   "gf": 27,
-   "ga": 9,
-   "gd": 18,
-   "points": 26
-  },
-  {
-   "rank": 2,
-   "team": "Orlando Pirates",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
-   "played": 9,
-   "win": 8,
-   "draw": 1,
-   "loss": 0,
-   "gf": 21,
-   "ga": 2,
-   "gd": 19,
-   "points": 25
-  },
-  {
-   "rank": 3,
-   "team": "Amazulu",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/xcb9e71784744424.png/tiny",
-   "played": 9,
-   "win": 7,
-   "draw": 1,
-   "loss": 1,
-   "gf": 13,
-   "ga": 8,
-   "gd": 5,
-   "points": 22
-  },
-  {
-   "rank": 4,
-   "team": "Milford",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/mhng2d1784744401.png/tiny",
-   "played": 10,
-   "win": 5,
-   "draw": 3,
-   "loss": 2,
-   "gf": 11,
-   "ga": 7,
-   "gd": 4,
-   "points": 18
-  },
-  {
-   "rank": 5,
-   "team": "Kaizer Chiefs",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/akwtlr1583614121.png/tiny",
-   "played": 9,
-   "win": 3,
-   "draw": 5,
-   "loss": 1,
-   "gf": 14,
-   "ga": 10,
-   "gd": 4,
-   "points": 14
-  }
- ],
- "results": [
-  {
-   "date": "2026-11-04",
-   "home": "Siwelele",
-   "away": "Orlando Pirates",
-   "hs": null,
-   "as": null
-  }
- ],
- "fixtures": [
-  {
-   "date": "2026-11-27",
-   "time": "17:30",
-   "home": "Stellenbosch",
-   "away": "TS Galaxy"
-  }
- ],
- "updated": "2026-11-21T12:42:30+00:00"
+ "table": [],
+ "results": [],
+ "fixtures": [],
+ "updated": "2026-11-21T20:33:15+00:00"
 }
