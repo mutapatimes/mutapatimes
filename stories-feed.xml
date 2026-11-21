@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 07:04:32 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 07:24:00 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,30 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Sales and Marketing Manager</title>
+      <link>https://mutapatimes.com/stories/80342b8ee84a.html</link>
+      <description>OVERVIEW BR Consultants is one of Zimbabwe’s leading business consulting firms, dedicated to delivering innovative solutions that drive sustainable business growth. The firm provides integrated, prac… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 20 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/80342b8ee84a.html</guid>
+      <category>Jobs</category>
+      <dc:creator>vacancymail.co.zw</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/80342b8ee84a.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/80342b8ee84a.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/80342b8ee84a.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Zimbabwe Gender Commission — Office Assistant</title>
+      <link>https://mutapatimes.com/stories/c213e3b663fe.html</link>
+      <description>WE ARE HIRING | OFFICE ASSISTANT (x2) The Zimbabwe Gender Commission is inviting applications from suitably qualified and experienced persons to fill two Office Assistant vacancies. Stations: * Masvi… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Fri, 20 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/c213e3b663fe.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Zimbabwe Gender Commission</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/c213e3b663fe.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c213e3b663fe.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/c213e3b663fe.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Local NGO — Head of Community Programming – Awe Nature Zimbabwe</title>
@@ -713,30 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/a0bdd3b9148b.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/a0bdd3b9148b.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/a0bdd3b9148b.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Hurungwe Rural District Council — Chief Executive Officer</title>
-      <link>https://mutapatimes.com/stories/aa7d2834a5c3.html</link>
-      <description>HURUNGWE RURAL DISTRICT COUNCIL VACANCY Applications are invited from suitably qualified, experienced, self-driven and results oriented individuals to fill the following position that has arisen with… Karoi · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 20 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/aa7d2834a5c3.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Hurungwe Rural District Council</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/aa7d2834a5c3.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/aa7d2834a5c3.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/aa7d2834a5c3.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Branch Manager</title>
-      <link>https://mutapatimes.com/stories/c1f5604a859a.html</link>
-      <description>BRANCH MANAGER – BINDURA &amp; MUTARE Healthcare Services Industry | Medical Insurance A leading organisation in the Healthcare Service Industry is seeking to recruit highly qualified individuals to join… Mutare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Fri, 20 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/c1f5604a859a.html</guid>
-      <category>Jobs</category>
-      <dc:creator>vacancymail.co.zw</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/c1f5604a859a.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/c1f5604a859a.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/c1f5604a859a.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
