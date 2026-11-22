@@ -49,6 +49,19 @@
   },
   {
    "rank": 4,
+   "team": "CAPS United",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
+   "played": 34,
+   "win": 15,
+   "draw": 12,
+   "loss": 7,
+   "gf": 38,
+   "ga": 26,
+   "gd": 12,
+   "points": 57
+  },
+  {
+   "rank": 5,
    "team": "Dynamos",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/piw9ub1792292258.png/tiny",
    "played": 34,
@@ -59,37 +72,24 @@
    "ga": 25,
    "gd": 18,
    "points": 56
-  },
-  {
-   "rank": 5,
-   "team": "CAPS United",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/h2k7dd1792294409.png/tiny",
-   "played": 33,
-   "win": 14,
-   "draw": 12,
-   "loss": 7,
-   "gf": 37,
-   "ga": 26,
-   "gd": 11,
-   "points": 54
   }
  ],
  "results": [
   {
-   "date": "2026-11-21",
-   "home": "Hunters Marondera",
-   "away": "Dynamos",
+   "date": "2026-11-22",
+   "home": "CAPS United",
+   "away": "Chicken Inn",
    "hs": 1,
-   "as": 1
+   "as": 0
   }
  ],
  "fixtures": [
   {
-   "date": "2026-11-22",
-   "time": "13:00",
-   "home": "CAPS United",
-   "away": "Chicken Inn"
+   "date": "2026-11-25",
+   "time": "12:00",
+   "home": "Herentals",
+   "away": "Kariba"
   }
  ],
- "updated": "2026-11-22T09:50:49+00:00"
+ "updated": "2026-11-22T17:51:34+00:00"
 }
