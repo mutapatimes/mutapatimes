@@ -1,42 +1,42 @@
 {
-  "fetched_at": "2026-11-24T02:15:25.730221+00:00",
-  "as_of": "2026-11-23",
+  "fetched_at": "2026-11-24T21:08:29.953022+00:00",
+  "as_of": "2026-11-24",
   "source": "Zimbabwe Stock Exchange (public market-data API)",
   "source_url": "https://www.zse.co.zw",
   "currency": "ZWG",
   "activity": {
-    "trades": 95,
-    "turnover": 5675352.65,
-    "volume": 1362500.0,
-    "market_cap": 119674742825.64
+    "trades": 78,
+    "turnover": 53109704.88,
+    "volume": 1818100.0,
+    "market_cap": 114605812426.54
   },
   "indices": [
     {
       "name": "ALL SHARE",
-      "value": 515.23,
-      "change_pct": 2.75,
-      "change_points": 13.8,
-      "direction": "up"
+      "value": 504.79,
+      "change_pct": -2.03,
+      "change_points": -10.44,
+      "direction": "down"
     },
     {
       "name": "ZSE TOP 10",
-      "value": 509.12,
-      "change_pct": 3.05,
-      "change_points": 15.06,
-      "direction": "up"
+      "value": 493.48,
+      "change_pct": -3.07,
+      "change_points": -15.64,
+      "direction": "down"
     },
     {
       "name": "ZSE TOP 15",
-      "value": 519.58,
-      "change_pct": 2.94,
-      "change_points": 14.83,
-      "direction": "up"
+      "value": 506.66,
+      "change_pct": -2.49,
+      "change_points": -12.92,
+      "direction": "down"
     },
     {
       "name": "MID CAP INDEX",
-      "value": 575.03,
-      "change_pct": 1.57,
-      "change_points": 8.88,
+      "value": 587.08,
+      "change_pct": 2.1,
+      "change_points": 12.05,
       "direction": "up"
     },
     {
@@ -48,37 +48,37 @@
     },
     {
       "name": "CONSUMER DISCRETIONARY INDEX",
-      "value": 552.57,
-      "change_pct": 13.4,
-      "change_points": 65.3,
+      "value": 576.92,
+      "change_pct": 4.41,
+      "change_points": 24.35,
       "direction": "up"
     },
     {
       "name": "CONSUMER STAPLES INDEX",
-      "value": 356.97,
-      "change_pct": 0.71,
-      "change_points": 2.5,
-      "direction": "up"
+      "value": 348.31,
+      "change_pct": -2.43,
+      "change_points": -8.66,
+      "direction": "down"
     },
     {
       "name": "FINANCIALS INDEX",
-      "value": 594.44,
-      "change_pct": 5.87,
-      "change_points": 32.97,
-      "direction": "up"
+      "value": 578.23,
+      "change_pct": -2.73,
+      "change_points": -16.21,
+      "direction": "down"
     },
     {
       "name": "INFORMATION, COMMUNICATION AND TECHNOLOGY INDEX",
       "value": 400.34,
-      "change_pct": -2.5,
-      "change_points": -10.27,
-      "direction": "down"
+      "change_pct": 0.0,
+      "change_points": 0.0,
+      "direction": "flat"
     },
     {
       "name": "MATERIALS INDEX",
-      "value": 186.35,
-      "change_pct": 4.0,
-      "change_points": 7.17,
+      "value": 198.12,
+      "change_pct": 6.32,
+      "change_points": 11.77,
       "direction": "up"
     },
     {
@@ -90,126 +90,132 @@
     },
     {
       "name": "MODIFIED CONSUMER STAPLES",
-      "value": 470.34,
-      "change_pct": 0.76,
-      "change_points": 3.57,
-      "direction": "up"
+      "value": 457.4,
+      "change_pct": -2.75,
+      "change_points": -12.94,
+      "direction": "down"
     },
     {
       "name": "NEW INDUSTRIAL INDEX",
-      "value": 188.75,
-      "change_pct": 1.05,
-      "change_points": 1.96,
+      "value": 199.97,
+      "change_pct": 5.94,
+      "change_points": 11.22,
       "direction": "up"
     },
     {
       "name": "OLD INDUSTRIAL INDEX",
-      "value": 506.56,
-      "change_pct": 2.77,
-      "change_points": 13.63,
-      "direction": "up"
+      "value": 495.78,
+      "change_pct": -2.13,
+      "change_points": -10.78,
+      "direction": "down"
     },
     {
       "name": "REAL ESTATE INDEX",
-      "value": 700.01,
-      "change_pct": 0.15,
-      "change_points": 1.08,
+      "value": 700.38,
+      "change_pct": 0.05,
+      "change_points": 0.37,
       "direction": "up"
     },
     {
       "name": "ZIM NATIONAL",
-      "value": 192.08,
-      "change_pct": 1.07,
-      "change_points": 2.03,
-      "direction": "up"
+      "value": 189.15,
+      "change_pct": -1.53,
+      "change_points": -2.93,
+      "direction": "down"
     },
     {
       "name": "ZSE AGRICULTURE INDEX",
-      "value": 391.87,
-      "change_pct": 1.37,
-      "change_points": 5.29,
-      "direction": "up"
+      "value": 390.84,
+      "change_pct": -0.26,
+      "change_points": -1.03,
+      "direction": "down"
     },
     {
       "name": "ZSE ETF INDEX",
       "value": 542.06,
-      "change_pct": 3.25,
-      "change_points": 17.08,
-      "direction": "up"
+      "change_pct": 0.0,
+      "change_points": 0.0,
+      "direction": "flat"
     },
     {
       "name": "ZSE TOP 25",
-      "value": 558.98,
-      "change_pct": 2.83,
-      "change_points": 15.38,
-      "direction": "up"
+      "value": 547.03,
+      "change_pct": -2.14,
+      "change_points": -11.95,
+      "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "Proplastics Limited",
-      "symbol": "PROL.ZW",
-      "price": 143.68,
-      "change_pct": 14.95
+      "name": "Afdis Distillers Limited",
+      "symbol": "AFDS.ZW",
+      "price": 2415.0,
+      "change_pct": 15.0
+    },
+    {
+      "name": "Turnall Holdings Limited",
+      "symbol": "TURN.ZW",
+      "price": 12.65,
+      "change_pct": 15.0
+    },
+    {
+      "name": "Unifreight Africa Limited",
+      "symbol": "UNIF.ZW",
+      "price": 275.0,
+      "change_pct": 13.64
+    },
+    {
+      "name": "Masimba Holdings Limited",
+      "symbol": "MSHL.ZW",
+      "price": 307.03,
+      "change_pct": 11.65
     },
     {
       "name": "Rainbow Tourism Group Limited",
       "symbol": "RTG.ZW",
-      "price": 110.0,
-      "change_pct": 13.4
-    },
-    {
-      "name": "Cbz Holdings Limited",
-      "symbol": "CBZ.ZW",
-      "price": 3999.85,
-      "change_pct": 11.83
-    },
-    {
-      "name": "Zb Financial Holdings Limited",
-      "symbol": "ZBFH.ZW",
-      "price": 830.0,
-      "change_pct": 9.21
-    },
-    {
-      "name": "Hippo Valley Estates Limited",
-      "symbol": "HIPO.ZW",
-      "price": 1500.0,
-      "change_pct": 7.15
+      "price": 114.85,
+      "change_pct": 4.41
     }
   ],
   "losers": [
     {
-      "name": "Willdale Limited",
-      "symbol": "WILD.ZW",
-      "price": 5.18,
-      "change_pct": -5.61
+      "name": "Cbz Holdings Limited",
+      "symbol": "CBZ.ZW",
+      "price": 3791.15,
+      "change_pct": -5.22
     },
     {
-      "name": "Ariston Holdings Limited",
-      "symbol": "ARIS.ZW",
-      "price": 12.01,
-      "change_pct": -4.75
+      "name": "Delta Corporation Limited",
+      "symbol": "DLTA.ZW",
+      "price": 3262.11,
+      "change_pct": -4.25
+    },
+    {
+      "name": "Seed Co Limited",
+      "symbol": "SEED.ZW",
+      "price": 441.29,
+      "change_pct": -3.72
+    },
+    {
+      "name": "First Mutual Holdings Limited",
+      "symbol": "FML.ZW",
+      "price": 335.0,
+      "change_pct": -3.35
     },
     {
       "name": "Meikles Limited",
       "symbol": "MEIK.ZW",
-      "price": 258.18,
-      "change_pct": -4.36
-    },
-    {
-      "name": "Zimbabwe Newspapers (1980) Limited",
-      "symbol": "ZIMP.ZW",
-      "price": 7.02,
-      "change_pct": -2.5
-    },
-    {
-      "name": "Zimre Holdings Limited",
-      "symbol": "ZIMR.ZW",
-      "price": 64.01,
-      "change_pct": -1.53
+      "price": 255.95,
+      "change_pct": -0.86
     }
   ],
   "notices": [
+    {
+      "date": "2026-11-24",
+      "title": "Notice of TANG.zw Termination of Listing",
+      "category": "Public Notices",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/307/download"
+    },
     {
       "date": "2026-11-20",
       "title": "Notice of OKZ.zw Termination of Listing",
@@ -251,12 +257,6 @@
       "title": "Joint Press Announcement: ZSE & Lloyd Capital",
       "category": "Public Notices",
       "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/291/download"
-    },
-    {
-      "date": "2026-07-28",
-      "title": "Press Release: The official launch of the Zimbabwe Entrepreneurship Exchange",
-      "category": "Press Releases",
-      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/290/download"
     }
   ]
 }

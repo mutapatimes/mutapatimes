@@ -1,71 +1,95 @@
 {
-  "fetched_at": "2026-11-24T02:15:28.712275+00:00",
-  "as_of": "2026-11-23",
+  "fetched_at": "2026-11-24T21:08:32.632601+00:00",
+  "as_of": "2026-11-24",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 164,
-    "turnover": 712693.76,
-    "volume": 2288883.0,
-    "market_cap": 8897666598.51
+    "trades": 229,
+    "turnover": 1274262.89,
+    "volume": 1925141.0,
+    "market_cap": 8820681527.29
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 262.14,
-      "change_pct": 2.37,
-      "change_points": 6.08,
-      "direction": "up"
+      "value": 256.38,
+      "change_pct": -2.2,
+      "change_points": -5.76,
+      "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "Invictus Energy Limited Depository Receipts",
-      "symbol": "",
-      "price": 12.97,
-      "change_pct": 18.23
+      "name": "Zimplow Holdings Limited",
+      "symbol": "ZIMW.VX",
+      "price": 9.8,
+      "change_pct": 11.11
     },
     {
-      "name": "Tsl Limited",
-      "symbol": "TSL.VX",
-      "price": 23.5,
-      "change_pct": 7.01
-    },
-    {
-      "name": "Innscor Africa Limited",
-      "symbol": "INN.VX",
-      "price": 151.67,
-      "change_pct": 6.92
-    },
-    {
-      "name": "Old Mutual Limited",
-      "symbol": "OMU.VX",
-      "price": 91.0,
-      "change_pct": 6.2
+      "name": "Caledonia Mining Corporation Plc",
+      "symbol": "CMCL.VX",
+      "price": 3251.3,
+      "change_pct": 5.68
     },
     {
       "name": "Econet Infraco",
       "symbol": "INFR.VX",
-      "price": 24.64,
-      "change_pct": 4.14
+      "price": 25.37,
+      "change_pct": 2.96
+    },
+    {
+      "name": "Padenga Holdings Ltd",
+      "symbol": "PHL.VX",
+      "price": 139.68,
+      "change_pct": 0.5
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 65.29,
+      "change_pct": 0.34
     }
   ],
   "losers": [
     {
-      "name": "Simbisa Brands Limited",
-      "symbol": "SIM.VX",
-      "price": 65.07,
-      "change_pct": -9.2
+      "name": "Invictus Energy Limited Depository Receipts",
+      "symbol": "",
+      "price": 11.0,
+      "change_pct": -15.19
     },
     {
-      "name": "Axia Corporation Limited",
-      "symbol": "AXIA.VX",
-      "price": 17.91,
-      "change_pct": -0.5
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 38.63,
+      "change_pct": -14.04
+    },
+    {
+      "name": "West Prop Holdings Limited",
+      "symbol": "WPHL.VX",
+      "price": 20.56,
+      "change_pct": -13.72
+    },
+    {
+      "name": "Tanganda Tea Company Limited",
+      "symbol": "TANG.VX",
+      "price": 15.01,
+      "change_pct": -11.76
+    },
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "price": 140.21,
+      "change_pct": -7.56
     }
   ],
   "notices": [
+    {
+      "date": "2026-11-24",
+      "title": "Press Release Tanganga Tea Company Listing",
+      "category": "Public Notices",
+      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/308/download"
+    },
     {
       "date": "2026-10-05",
       "title": "Appointment of ZSE Holdings Group CEO as ASEA Vice President",
@@ -107,12 +131,6 @@
       "title": "Notice to VFEX Issuers - Ext of Waiver for HY Results review by external auditors",
       "category": "",
       "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/276/download"
-    },
-    {
-      "date": "2026-05-21",
-      "title": "Memo-ZSE Holdings Proffessional ICT Services",
-      "category": "",
-      "url": "http://ds88jcmqc11je.cloudfront.net/api/notices/272/download"
     }
   ]
 }
