@@ -10,6 +10,19 @@
  "table": [
   {
    "rank": 1,
+   "team": "Orlando Pirates",
+   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
+   "played": 10,
+   "win": 9,
+   "draw": 1,
+   "loss": 0,
+   "gf": 23,
+   "ga": 2,
+   "gd": 21,
+   "points": 28
+  },
+  {
+   "rank": 2,
    "team": "Mamelodi Sundowns",
    "badge": "https://r2.thesportsdb.com/images/media/team/badge/u3md311784744590.png/tiny",
    "played": 10,
@@ -20,19 +33,6 @@
    "ga": 9,
    "gd": 18,
    "points": 26
-  },
-  {
-   "rank": 2,
-   "team": "Orlando Pirates",
-   "badge": "https://r2.thesportsdb.com/images/media/team/badge/y6dbv61583616330.png/tiny",
-   "played": 9,
-   "win": 8,
-   "draw": 1,
-   "loss": 0,
-   "gf": 21,
-   "ga": 2,
-   "gd": 19,
-   "points": 25
   },
   {
    "rank": 3,
@@ -91,5 +91,5 @@
    "away": "TS Galaxy"
   }
  ],
- "updated": "2026-11-25T02:32:17+00:00"
+ "updated": "2026-11-25T14:27:06+00:00"
 }
