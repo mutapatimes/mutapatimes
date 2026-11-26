@@ -1,80 +1,86 @@
 {
-  "fetched_at": "2026-11-25T23:40:22.447344+00:00",
-  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-26T20:08:22.449887+00:00",
+  "as_of": "2026-11-26",
   "source": "Victoria Falls Stock Exchange (public market-data API)",
   "source_url": "https://www.vfex.exchange",
   "currency": "USD",
   "activity": {
-    "trades": 179,
-    "turnover": 197626.0,
-    "volume": 543529.0,
-    "market_cap": 8646696591.67
+    "trades": 163,
+    "turnover": 479007.62,
+    "volume": 391925.0,
+    "market_cap": 8721534481.04
   },
   "indices": [
     {
       "name": "VFEX ALLSHARE",
-      "value": 252.53,
-      "change_pct": -1.5,
-      "change_points": -3.85,
-      "direction": "down"
+      "value": 256.83,
+      "change_pct": 1.7,
+      "change_points": 4.3,
+      "direction": "up"
     }
   ],
   "gainers": [
     {
-      "name": "Old Mutual Limited",
-      "symbol": "OMU.VX",
-      "price": 89.3,
-      "change_pct": 0.39
-    },
-    {
-      "name": "Innscor Africa Limited",
-      "symbol": "INN.VX",
-      "price": 140.69,
-      "change_pct": 0.34
-    },
-    {
-      "name": "Zimplow Holdings Limited",
-      "symbol": "ZIMW.VX",
-      "price": 9.82,
-      "change_pct": 0.2
-    },
-    {
-      "name": "First Capital Bank Limited",
-      "symbol": "FCA.VX",
-      "price": 16.05,
-      "change_pct": 0.19
-    }
-  ],
-  "losers": [
-    {
       "name": "Caledonia Mining Corporation Plc",
       "symbol": "CMCL.VX",
-      "price": 2621.32,
-      "change_pct": -19.38
-    },
-    {
-      "name": "Invictus Energy Limited Depository Receipts",
-      "symbol": "",
-      "price": 10.33,
-      "change_pct": -6.09
+      "price": 2820.89,
+      "change_pct": 7.61
     },
     {
       "name": "Econet Infraco",
       "symbol": "INFR.VX",
-      "price": 24.37,
-      "change_pct": -3.94
+      "price": 25.87,
+      "change_pct": 6.16
     },
     {
-      "name": "Axia Corporation Limited",
-      "symbol": "AXIA.VX",
-      "price": 17.22,
-      "change_pct": -3.26
+      "name": "Seed Co International",
+      "symbol": "",
+      "price": 39.92,
+      "change_pct": 5.66
+    },
+    {
+      "name": "Innscor Africa Limited",
+      "symbol": "INN.VX",
+      "price": 146.05,
+      "change_pct": 3.81
+    },
+    {
+      "name": "Simbisa Brands Limited",
+      "symbol": "SIM.VX",
+      "price": 67.46,
+      "change_pct": 3.66
+    }
+  ],
+  "losers": [
+    {
+      "name": "Invictus Energy Limited Depository Receipts",
+      "symbol": "",
+      "price": 10.05,
+      "change_pct": -2.71
+    },
+    {
+      "name": "Kavango Resources Plc",
+      "symbol": "KAV.VX",
+      "price": 1.97,
+      "change_pct": -1.5
+    },
+    {
+      "name": "Old Mutual Limited",
+      "symbol": "OMU.VX",
+      "price": 88.11,
+      "change_pct": -1.33
     },
     {
       "name": "Padenga Holdings Ltd",
       "symbol": "PHL.VX",
-      "price": 135.82,
-      "change_pct": -2.76
+      "price": 134.99,
+      "change_pct": -0.61
+    },
+    {
+      "name": "First Capital Bank Limited",
+      "symbol": "FCA.VX",
+      "price": 16.0,
+      "change_pct": -0.31
     }
   ],
   "notices": [

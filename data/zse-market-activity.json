@@ -1,43 +1,43 @@
 {
-  "fetched_at": "2026-11-25T23:40:19.623659+00:00",
-  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-26T20:08:19.873498+00:00",
+  "as_of": "2026-11-26",
   "source": "Zimbabwe Stock Exchange (public market-data API)",
   "source_url": "https://www.zse.co.zw",
   "currency": "ZWG",
   "activity": {
-    "trades": 78,
-    "turnover": 20640329.87,
-    "volume": 990900.0,
-    "market_cap": 116754533027.43
+    "trades": 103,
+    "turnover": 26897801.11,
+    "volume": 2426500.0,
+    "market_cap": 113191900150.16
   },
   "indices": [
     {
       "name": "ALL SHARE",
-      "value": 512.89,
-      "change_pct": 1.6,
-      "change_points": 8.1,
-      "direction": "up"
+      "value": 496.4,
+      "change_pct": -3.22,
+      "change_points": -16.49,
+      "direction": "down"
     },
     {
       "name": "ZSE TOP 10",
-      "value": 503.03,
-      "change_pct": 1.94,
-      "change_points": 9.55,
-      "direction": "up"
+      "value": 483.41,
+      "change_pct": -3.9,
+      "change_points": -19.62,
+      "direction": "down"
     },
     {
       "name": "ZSE TOP 15",
-      "value": 515.6,
-      "change_pct": 1.76,
-      "change_points": 8.94,
-      "direction": "up"
+      "value": 496.66,
+      "change_pct": -3.67,
+      "change_points": -18.94,
+      "direction": "down"
     },
     {
       "name": "MID CAP INDEX",
-      "value": 588.41,
-      "change_pct": 0.23,
-      "change_points": 1.33,
-      "direction": "up"
+      "value": 586.58,
+      "change_pct": -0.31,
+      "change_points": -1.83,
+      "direction": "down"
     },
     {
       "name": "SMALL CAP INDEX",
@@ -49,23 +49,23 @@
     {
       "name": "CONSUMER DISCRETIONARY INDEX",
       "value": 602.81,
-      "change_pct": 4.49,
-      "change_points": 25.89,
-      "direction": "up"
+      "change_pct": 0.0,
+      "change_points": 0.0,
+      "direction": "flat"
     },
     {
       "name": "CONSUMER STAPLES INDEX",
-      "value": 348.36,
-      "change_pct": 0.01,
-      "change_points": 0.05,
-      "direction": "up"
+      "value": 326.88,
+      "change_pct": -6.17,
+      "change_points": -21.48,
+      "direction": "down"
     },
     {
       "name": "FINANCIALS INDEX",
-      "value": 600.43,
-      "change_pct": 3.84,
-      "change_points": 22.2,
-      "direction": "up"
+      "value": 600.19,
+      "change_pct": -0.04,
+      "change_points": -0.24,
+      "direction": "down"
     },
     {
       "name": "INFORMATION, COMMUNICATION AND TECHNOLOGY INDEX",
@@ -76,9 +76,9 @@
     },
     {
       "name": "MATERIALS INDEX",
-      "value": 208.09,
-      "change_pct": 5.03,
-      "change_points": 9.97,
+      "value": 216.05,
+      "change_pct": 3.83,
+      "change_points": 7.96,
       "direction": "up"
     },
     {
@@ -90,123 +90,123 @@
     },
     {
       "name": "MODIFIED CONSUMER STAPLES",
-      "value": 457.6,
-      "change_pct": 0.04,
-      "change_points": 0.2,
-      "direction": "up"
+      "value": 431.56,
+      "change_pct": -5.69,
+      "change_points": -26.04,
+      "direction": "down"
     },
     {
       "name": "NEW INDUSTRIAL INDEX",
-      "value": 202.26,
-      "change_pct": 1.15,
-      "change_points": 2.29,
-      "direction": "up"
+      "value": 202.25,
+      "change_pct": -0.0,
+      "change_points": -0.01,
+      "direction": "down"
     },
     {
       "name": "OLD INDUSTRIAL INDEX",
-      "value": 503.37,
-      "change_pct": 1.53,
-      "change_points": 7.59,
-      "direction": "up"
+      "value": 487.2,
+      "change_pct": -3.21,
+      "change_points": -16.17,
+      "direction": "down"
     },
     {
       "name": "REAL ESTATE INDEX",
-      "value": 704.22,
-      "change_pct": 0.55,
-      "change_points": 3.84,
-      "direction": "up"
+      "value": 700.13,
+      "change_pct": -0.58,
+      "change_points": -4.09,
+      "direction": "down"
     },
     {
       "name": "ZIM NATIONAL",
-      "value": 189.25,
-      "change_pct": 0.05,
-      "change_points": 0.1,
-      "direction": "up"
+      "value": 186.8,
+      "change_pct": -1.29,
+      "change_points": -2.45,
+      "direction": "down"
     },
     {
       "name": "ZSE AGRICULTURE INDEX",
-      "value": 391.01,
-      "change_pct": 0.04,
-      "change_points": 0.17,
-      "direction": "up"
+      "value": 364.67,
+      "change_pct": -6.74,
+      "change_points": -26.34,
+      "direction": "down"
     },
     {
       "name": "ZSE ETF INDEX",
       "value": 542.79,
-      "change_pct": 0.13,
-      "change_points": 0.73,
-      "direction": "up"
+      "change_pct": 0.0,
+      "change_points": 0.0,
+      "direction": "flat"
     },
     {
       "name": "ZSE TOP 25",
-      "value": 555.86,
-      "change_pct": 1.61,
-      "change_points": 8.83,
-      "direction": "up"
+      "value": 537.61,
+      "change_pct": -3.28,
+      "change_points": -18.25,
+      "direction": "down"
     }
   ],
   "gainers": [
     {
-      "name": "Fidelity Life Assurance Limited",
-      "symbol": "FIDL.ZW",
-      "price": 115.0,
-      "change_pct": 15.0
-    },
-    {
       "name": "Turnall Holdings Limited",
       "symbol": "TURN.ZW",
-      "price": 14.0,
-      "change_pct": 10.67
-    },
-    {
-      "name": "Unifreight Africa Limited",
-      "symbol": "UNIF.ZW",
-      "price": 300.0,
-      "change_pct": 9.09
+      "price": 15.0,
+      "change_pct": 7.14
     },
     {
       "name": "Cbz Holdings Limited",
       "symbol": "CBZ.ZW",
-      "price": 4099.04,
-      "change_pct": 8.12
+      "price": 4364.11,
+      "change_pct": 6.47
     },
     {
-      "name": "Rainbow Tourism Group Limited",
-      "symbol": "RTG.ZW",
-      "price": 120.0,
-      "change_pct": 4.49
+      "name": "Willdale Limited",
+      "symbol": "WILD.ZW",
+      "price": 5.39,
+      "change_pct": 4.69
+    },
+    {
+      "name": "Zimre Holdings Limited",
+      "symbol": "ZIMR.ZW",
+      "price": 67.0,
+      "change_pct": 4.69
+    },
+    {
+      "name": "Ariston Holdings Limited",
+      "symbol": "ARIS.ZW",
+      "price": 12.49,
+      "change_pct": 0.34
     }
   ],
   "losers": [
     {
-      "name": "Starafricacorporation Limited",
-      "symbol": "SACL.ZW",
-      "price": 4.5,
-      "change_pct": -9.77
+      "name": "Hippo Valley Estates Limited",
+      "symbol": "HIPO.ZW",
+      "price": 1280.38,
+      "change_pct": -14.64
     },
     {
-      "name": "General Beltings Holdings Limited",
-      "symbol": "GBH.ZW",
-      "price": 7.52,
-      "change_pct": -8.83
+      "name": "British American Tobacco Zimbabwe Limited",
+      "symbol": "BAT.ZW",
+      "price": 18781.25,
+      "change_pct": -14.63
     },
     {
-      "name": "Meikles Limited",
-      "symbol": "MEIK.ZW",
-      "price": 240.0,
-      "change_pct": -6.23
-    },
-    {
-      "name": "First Mutual Holdings Limited",
-      "symbol": "FML.ZW",
-      "price": 333.57,
-      "change_pct": -0.43
+      "name": "Nmbz Holdings Limited",
+      "symbol": "NMB.ZW",
+      "price": 836.71,
+      "change_pct": -14.21
     },
     {
       "name": "Fbc Holdings Limited",
       "symbol": "FBC.ZW",
-      "price": 1319.0,
-      "change_pct": -0.08
+      "price": 1199.17,
+      "change_pct": -9.08
+    },
+    {
+      "name": "Delta Corporation Limited",
+      "symbol": "DLTA.ZW",
+      "price": 3076.55,
+      "change_pct": -5.83
     }
   ],
   "notices": [
