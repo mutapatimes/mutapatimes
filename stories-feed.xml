@@ -8,7 +8,7 @@
     <link>https://mutapatimes.com</link>
     <description>Packed Instagram-Story autolist — business, property, jobs and internships in one feed. Each item ships with a 1080×1920 story card and a 'Read more on Mutapa Times' CTA.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:26:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:47:21 +0000</lastBuildDate>
     <atom:link href="https://mutapatimes.com/stories-feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <title>The Mutapa Times</title>
@@ -65,6 +65,18 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/278c2748c0ac.png" type="image/png" length="200000"/>
+    </item>
+    <item>
+      <title>Local NGO — INVITATION TO TENDER FOR THE SUPPLY AND DELIVERY OF SOLAR EQUIPMENT AND SOLAR POWERED AGRICULTURAL EQUIPMENT AND ACCESSORIES</title>
+      <link>https://mutapatimes.com/stories/d3c806e8ce31.html</link>
+      <description>A local company specialising in the supply of solar products, irrigation equipment and agricultural supplies invites eligible, reputable and suitably qualified suppliers to submit competitive bids at… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
+      <pubDate>Thu, 26 Nov 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mutapatimes.com/stories/d3c806e8ce31.html</guid>
+      <category>Jobs</category>
+      <dc:creator>Local NGO</dc:creator>
+      <media:content url="https://mutapatimes.com/img/cards/stories/d3c806e8ce31.png" medium="image" type="image/png"/>
+      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/d3c806e8ce31.png"/>
+      <enclosure url="https://mutapatimes.com/img/cards/stories/d3c806e8ce31.png" type="image/png" length="200000"/>
     </item>
     <item>
       <title>Supply &amp; Marketing Coordinator</title>
@@ -725,18 +737,6 @@
       <media:content url="https://mutapatimes.com/img/cards/stories/599abfa03d2c.png" medium="image" type="image/png"/>
       <media:thumbnail url="https://mutapatimes.com/img/cards/stories/599abfa03d2c.png"/>
       <enclosure url="https://mutapatimes.com/img/cards/stories/599abfa03d2c.png" type="image/png" length="200000"/>
-    </item>
-    <item>
-      <title>Civil Aviation Authority of Zimbabwe (CAAZ) — Accounting Assistant - Debtors</title>
-      <link>https://mutapatimes.com/stories/f7f2f89d9a64.html</link>
-      <description>CIVIL AVIATION AUTHORITY OF ZIMBABWE VACANCY NOTICE VACANCY NOTICE REF: CAAZ/11/2026 POSITION: ACCOUNTING ASSISTANT – DEBTORS REPORTING TO: The Credit Controller LOCATION: Head Office JOB PURPOSE The… Harare · Full Time (via vacancymail.co.zw) #Zimbabwe #Jobs #ZimbabweJobs #Hiring #ZimbabweNews</description>
-      <pubDate>Thu, 26 Nov 2026 22:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mutapatimes.com/stories/f7f2f89d9a64.html</guid>
-      <category>Jobs</category>
-      <dc:creator>Civil Aviation Authority of Zimbabwe (CAAZ)</dc:creator>
-      <media:content url="https://mutapatimes.com/img/cards/stories/f7f2f89d9a64.png" medium="image" type="image/png"/>
-      <media:thumbnail url="https://mutapatimes.com/img/cards/stories/f7f2f89d9a64.png"/>
-      <enclosure url="https://mutapatimes.com/img/cards/stories/f7f2f89d9a64.png" type="image/png" length="200000"/>
     </item>
   </channel>
 </rss>
